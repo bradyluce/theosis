@@ -1,0 +1,118 @@
+{
+  "generatedFor": "Theosis",
+  "lastReviewed": "2026-03-09",
+  "categories": [
+    {
+      "id": "daily-calendar",
+      "label": "Daily commemorations and readings",
+      "status": "planned",
+      "priority": "high",
+      "needs": [
+        "saint of the day coverage",
+        "feast and fast metadata",
+        "daily scripture assignments",
+        "troparion and kontakion sources"
+      ],
+      "candidateSources": [
+        {
+          "name": "Orthodox sources (OCA / GOARCH style calendars)",
+          "kind": "web",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "bible-translations",
+      "label": "Bible translations and original languages",
+      "status": "planned",
+      "priority": "high",
+      "needs": [
+        "primary English translation",
+        "secondary translation for comparison",
+        "Orthodox canon coverage",
+        "Greek Septuagint text",
+        "Hebrew text for Old Testament comparison"
+      ],
+      "candidateSources": [
+        {
+          "name": "Structured text imports",
+          "kind": "file",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "direct-commentary",
+      "label": "Direct patristic commentary",
+      "status": "planned",
+      "priority": "critical",
+      "needs": [
+        "verse-linked commentary",
+        "chapter-level commentary",
+        "source attribution",
+        "collection metadata"
+      ],
+      "candidateSources": [
+        {
+          "name": "Orthodox collections and public PDFs",
+          "kind": "pdf",
+          "status": "not-started"
+        },
+        {
+          "name": "New Advent",
+          "kind": "web",
+          "status": "not-started"
+        },
+        {
+          "name": "CCEL",
+          "kind": "web",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "related-writings",
+      "label": "Related Orthodox writings",
+      "status": "planned",
+      "priority": "high",
+      "needs": [
+        "topic-linked excerpts",
+        "later saints and theologians",
+        "work metadata",
+        "readable parsed text"
+      ],
+      "candidateSources": [
+        {
+          "name": "Orthodox publishers and public archives",
+          "kind": "web",
+          "status": "not-started"
+        },
+        {
+          "name": "Public PDFs",
+          "kind": "pdf",
+          "status": "not-started"
+        }
+      ]
+    },
+    {
+      "id": "user-data",
+      "label": "User notes and personalization",
+      "status": "scaffolded",
+      "priority": "medium",
+      "needs": [
+        "saved verses",
+        "notes",
+        "highlights",
+        "patron saint preference",
+        "reading history"
+      ],
+      "candidateSources": [
+        {
+          "name": "App-managed persistence",
+          "kind": "internal",
+          "status": "phase-1-mock"
+        }
+      ]
+    }
+  ]
+}
