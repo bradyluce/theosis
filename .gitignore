@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local ingestion artifacts / data (do not commit)
+/_tmp_*.html
+/get-diff.txt
+/content/generated/
+/content/raw/
