@@ -650,9 +650,12 @@ type ParsedComment = {
   text: string;
 };
 
+type VerseRange = { start: number; end: number };
+
 type ParsedSection = {
   chapterNum: number;
   verseStart: number;
+  verseEnd: number;
   comments: ParsedComment[];
 };
 
@@ -680,17 +683,29 @@ function cleanCommentaryText(text: string): string {
 }
 
 function makeVerseRefRe(chapterNum: number): RegExp {
-  // Matches "N:M" not preceded by "(" (inline citation) or a digit (continuation of a number)
-  return new RegExp(`(?<![\\(\\d])${chapterNum}:(\\d+)`, "g");
+  // "N:M" or "N:M–E". When the range end E runs into the verse text (e.g.
+  // "1:9–119.") it's followed by a repeat of the start (the verse text starts
+  // with "M. text"); the backreference lookahead disambiguates the non-greedy
+  // end capture. When the header sits on its own line (clean block format) the
+  // end is followed by whitespace/dot/end-of-string instead.
+  // Lookbehind blocks inline citations ("(Mal. 3:1)") and digit continuations.
+  return new RegExp(
+    `(?<![\\(\\d])${chapterNum}:(\\d+)(?:[–-](\\d+?)(?=\\1|[\\s.]|$))?`,
+    "g",
+  );
 }
 
-function findFirstVerseRef(segment: string, re: RegExp): number | null {
+function findLastVerseRef(segment: string, re: RegExp): VerseRange | null {
   re.lastIndex = 0;
   let match: RegExpExecArray | null;
-  let found: number | null = null;
+  let found: VerseRange | null = null;
   while ((match = re.exec(segment)) !== null) {
     const before = segment.slice(Math.max(0, match.index - 1), match.index);
-    if (before !== "(") found = Number.parseInt(match[1], 10);
+    if (before !== "(") {
+      const start = Number.parseInt(match[1], 10);
+      const end = match[2] ? Number.parseInt(match[2], 10) : start;
+      found = { start, end };
+    }
   }
   return found;
 }
@@ -698,16 +713,18 @@ function findFirstVerseRef(segment: string, re: RegExp): number | null {
 function splitAtFirstVerseRef(
   segment: string,
   re: RegExp,
-): { before: string; verseNum: number | null } {
+): { before: string; range: VerseRange | null } {
   re.lastIndex = 0;
   let match: RegExpExecArray | null;
   while ((match = re.exec(segment)) !== null) {
     const before = segment.slice(Math.max(0, match.index - 1), match.index);
     if (before !== "(") {
-      return { before: segment.slice(0, match.index), verseNum: Number.parseInt(match[1], 10) };
+      const start = Number.parseInt(match[1], 10);
+      const end = match[2] ? Number.parseInt(match[2], 10) : start;
+      return { before: segment.slice(0, match.index), range: { start, end } };
     }
   }
-  return { before: segment, verseNum: null };
+  return { before: segment, range: null };
 }
 
 function makeComment(authorName: string, rawText: string): ParsedComment | null {
@@ -728,12 +745,17 @@ function parseInlineFormat(text: string, chapterNum: number): ParsedSection[] {
 
   const verseRefRe = makeVerseRefRe(chapterNum);
   const sections: ParsedSection[] = [];
-  let currentVerse: number | null = findFirstVerseRef(parts[0], verseRefRe);
+  let currentRange: VerseRange | null = findLastVerseRef(parts[0], verseRefRe);
   let pendingComments: ParsedComment[] = [];
 
   function flushSection() {
-    if (pendingComments.length > 0 && currentVerse !== null) {
-      sections.push({ chapterNum, verseStart: currentVerse, comments: pendingComments });
+    if (pendingComments.length > 0 && currentRange !== null) {
+      sections.push({
+        chapterNum,
+        verseStart: currentRange.start,
+        verseEnd: currentRange.end,
+        comments: pendingComments,
+      });
     }
     pendingComments = [];
   }
@@ -741,17 +763,17 @@ function parseInlineFormat(text: string, chapterNum: number): ParsedSection[] {
   for (let i = 1; i < parts.length; i += 2) {
     const authorName = parts[i];
     const rawCommentary = parts[i + 1] ?? "";
-    const { before: commentBefore, verseNum: nextVerse } = splitAtFirstVerseRef(
+    const { before: commentBefore, range: nextRange } = splitAtFirstVerseRef(
       rawCommentary,
       verseRefRe,
     );
-    if (currentVerse !== null) {
+    if (currentRange !== null) {
       const comment = makeComment(authorName, commentBefore);
       if (comment) pendingComments.push(comment);
     }
-    if (nextVerse !== null) {
+    if (nextRange !== null) {
       flushSection();
-      currentVerse = nextVerse;
+      currentRange = nextRange;
     }
   }
 
@@ -765,12 +787,22 @@ function parseBlockFormat(text: string, chapterNum: number): ParsedSection[] {
   const paragraphs = text.split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
 
   const sections: ParsedSection[] = [];
-  let currentVerse: number | null = null;
+  let currentStart: number | null = null;
+  let currentEnd: number | null = null;
   let pendingComments: ParsedComment[] = [];
 
   function flushSection() {
-    if (pendingComments.length > 0 && currentVerse !== null) {
-      sections.push({ chapterNum, verseStart: currentVerse, comments: pendingComments });
+    if (
+      pendingComments.length > 0 &&
+      currentStart !== null &&
+      currentEnd !== null
+    ) {
+      sections.push({
+        chapterNum,
+        verseStart: currentStart,
+        verseEnd: currentEnd,
+        comments: pendingComments,
+      });
     }
     pendingComments = [];
   }
@@ -778,15 +810,21 @@ function parseBlockFormat(text: string, chapterNum: number): ParsedSection[] {
   for (const para of paragraphs) {
     const firstLine = para.split("\n")[0].trim();
 
-    // Verse section header line: "N:M" or "N:M–P" where N must equal chapterNum
-    const verseLine = firstLine.match(/^(\d+):(\d+)/);
+    // Verse section header: "N:M" or "N:M–E". Some files merge the verse text
+    // onto the same line ("12:41–4441. text") so we use the same backreference
+    // trick as the inline regex — match end non-greedily and require it to be
+    // followed by a start-repeat, whitespace, ".", or end-of-string.
+    const verseLine = firstLine.match(
+      /^(\d+):(\d+)(?:[–-](\d+?)(?=\2|[\s.]|$))?/,
+    );
     if (verseLine && Number.parseInt(verseLine[1], 10) === chapterNum) {
       flushSection();
-      currentVerse = Number.parseInt(verseLine[2], 10);
+      currentStart = Number.parseInt(verseLine[2], 10);
+      currentEnd = verseLine[3] ? Number.parseInt(verseLine[3], 10) : currentStart;
       continue;
     }
 
-    if (currentVerse === null) continue;
+    if (currentStart === null) continue;
 
     // Commentary paragraph: starts with ALL_CAPS author name (≥4 chars) followed by ". "
     const authorLine = para.match(/^([A-Z][A-Z\s\-\.]{2,}[A-Z])\. ([\s\S]*)/);
@@ -899,27 +937,37 @@ export function parseCatenaGospel(config: GospelParseConfig): CommentaryBundleV2
   const seenPersonIds = new Set<string>();
   let counter = 0;
 
+  const bookLabel = spec.bookSlug.charAt(0).toUpperCase() + spec.bookSlug.slice(1);
+
   for (const section of allSections) {
-    const { chapterNum, verseStart, comments } = section;
-    const targetVerseId = `${config.verseTranslationPrefix}:${spec.bookSlug}.${chapterNum}.${verseStart}`;
+    const { chapterNum, verseStart, verseEnd, comments } = section;
+    const rangeLabel =
+      verseStart === verseEnd ? `${verseStart}` : `${verseStart}–${verseEnd}`;
 
     for (const comment of comments) {
       const { authorInfo, text } = comment;
       counter += 1;
-      entries.push({
-        id: `${spec.entryPrefix}-${counter.toString().padStart(4, "0")}`,
-        relation: "verse",
-        targetVerseId,
-        topicSlugs: [],
-        personId: authorInfo.personId,
-        workId: spec.workId,
-        title: `On ${spec.bookSlug.charAt(0).toUpperCase() + spec.bookSlug.slice(1)} ${chapterNum}:${verseStart}`,
-        excerpt: text,
-        takeaway: "",
-        sourceId: spec.sourceId,
-        rank: authorInfo.rank,
-        tags: ["catena-aurea", "patristic", spec.bookSlug],
-      });
+      const baseId = `${spec.entryPrefix}-${counter.toString().padStart(4, "0")}`;
+
+      // Emit one entry per verse in the range so each verse in the section gets
+      // its own commentary dot and click target.
+      for (let v = verseStart; v <= verseEnd; v++) {
+        const targetVerseId = `${config.verseTranslationPrefix}:${spec.bookSlug}.${chapterNum}.${v}`;
+        entries.push({
+          id: verseStart === verseEnd ? baseId : `${baseId}-v${v}`,
+          relation: "verse",
+          targetVerseId,
+          topicSlugs: [],
+          personId: authorInfo.personId,
+          workId: spec.workId,
+          title: `On ${bookLabel} ${chapterNum}:${rangeLabel}`,
+          excerpt: text,
+          takeaway: "",
+          sourceId: spec.sourceId,
+          rank: authorInfo.rank,
+          tags: ["catena-aurea", "patristic", spec.bookSlug],
+        });
+      }
       seenPersonIds.add(authorInfo.personId);
     }
   }

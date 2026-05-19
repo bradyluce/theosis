@@ -29,23 +29,29 @@ import { useStudyState } from "@/lib/user/use-study-state";
 import { cn } from "@/lib/utils";
 
 type ReaderTab = "commentary" | "related" | "cross-references" | "actions";
-type TextSize = "sm" | "md" | "lg";
 
 type ReaderExperienceProps = {
   model: ReaderModel;
 };
 
-const TEXT_SIZE_OPTIONS: { value: TextSize; label: string }[] = [
-  { value: "sm", label: "S" },
-  { value: "md", label: "M" },
-  { value: "lg", label: "L" },
+// 8-step text-size scale. Step 0 is intentionally small so a verse list can be
+// scanned at a glance; step 7 is large-print. Step 4 is the default.
+const SIZE_STEPS: {
+  verseFont: string;
+  verseLeading: string;
+  excerptFont: string;
+  excerptLeading: string;
+}[] = [
+  { verseFont: "0.78rem", verseLeading: "1.2rem",  excerptFont: "0.7rem",  excerptLeading: "1.05rem" },
+  { verseFont: "0.88rem", verseLeading: "1.35rem", excerptFont: "0.75rem", excerptLeading: "1.15rem" },
+  { verseFont: "1rem",    verseLeading: "1.5rem",  excerptFont: "0.8rem",  excerptLeading: "1.25rem" },
+  { verseFont: "1.12rem", verseLeading: "1.65rem", excerptFont: "0.85rem", excerptLeading: "1.35rem" },
+  { verseFont: "1.25rem", verseLeading: "1.85rem", excerptFont: "0.9rem",  excerptLeading: "1.45rem" },
+  { verseFont: "1.4rem",  verseLeading: "2rem",    excerptFont: "1rem",    excerptLeading: "1.6rem" },
+  { verseFont: "1.55rem", verseLeading: "2.2rem",  excerptFont: "1.1rem",  excerptLeading: "1.75rem" },
+  { verseFont: "1.75rem", verseLeading: "2.4rem",  excerptFont: "1.2rem",  excerptLeading: "1.9rem" },
 ];
-
-const VERSE_TEXT_CLASSES: Record<TextSize, string> = {
-  sm: "font-serif text-[0.95rem] leading-7 text-ink sm:text-[1.05rem] sm:leading-7",
-  md: "font-serif text-[1.22rem] leading-8 text-ink sm:text-[1.34rem] sm:leading-9",
-  lg: "font-serif text-[1.4rem] leading-9 text-ink sm:text-[1.55rem] sm:leading-10",
-};
+const DEFAULT_SIZE_STEP = 4;
 
 function groupCommentaryByPerson(items: ReaderCommentaryCard[]): {
   personName: string;
@@ -72,18 +78,6 @@ function groupCommentaryByPerson(items: ReaderCommentaryCard[]): {
   return order.map((k) => groups.get(k)!);
 }
 
-const EXCERPT_TEXT_CLASSES: Record<TextSize, string> = {
-  sm: "text-xs leading-6 text-ink-muted",
-  md: "text-sm leading-7 text-ink-muted",
-  lg: "text-base leading-8 text-ink-muted",
-};
-
-const TAKEAWAY_TEXT_CLASSES: Record<TextSize, string> = {
-  sm: "rounded-[8px] bg-surface px-3 py-3 text-xs leading-6 text-ink",
-  md: "rounded-[8px] bg-surface px-3 py-3 text-sm leading-7 text-ink",
-  lg: "rounded-[8px] bg-surface px-3 py-3 text-base leading-8 text-ink",
-};
-
 function FatherCommentaryGroup({
   personName,
   personSlug,
@@ -93,9 +87,11 @@ function FatherCommentaryGroup({
   personName: string;
   personSlug: string;
   entries: ReaderCommentaryCard[];
-  textSize: TextSize;
+  textSize: number;
 }) {
   const [open, setOpen] = useState(false);
+  const step = SIZE_STEPS[textSize] ?? SIZE_STEPS[DEFAULT_SIZE_STEP];
+  const excerptStyle = { fontSize: step.excerptFont, lineHeight: step.excerptLeading };
   return (
     <div className="overflow-hidden rounded-[12px] border border-line bg-surface">
       <button
@@ -128,9 +124,16 @@ function FatherCommentaryGroup({
                 {entry.title}
                 {entry.sourceLabel ? ` · ${entry.sourceLabel}` : ""}
               </p>
-              <p className={EXCERPT_TEXT_CLASSES[textSize]}>{entry.excerpt}</p>
+              <p className="text-ink-muted" style={excerptStyle}>
+                {entry.excerpt}
+              </p>
               {entry.takeaway ? (
-                <p className={TAKEAWAY_TEXT_CLASSES[textSize]}>{entry.takeaway}</p>
+                <p
+                  className="rounded-[8px] bg-surface px-3 py-3 text-ink"
+                  style={excerptStyle}
+                >
+                  {entry.takeaway}
+                </p>
               ) : null}
               {entry.workSlug ? (
                 <Link
@@ -186,10 +189,12 @@ function StudyPanel({
 }: {
   selectedVerse: ReaderVerseCard | undefined;
   chapterCommentary: ReaderCommentaryCard[];
-  textSize: TextSize;
+  textSize: number;
   onClose?: () => void;
   mobile?: boolean;
 }) {
+  const step = SIZE_STEPS[textSize] ?? SIZE_STEPS[DEFAULT_SIZE_STEP];
+  const verseStyle = { fontSize: step.verseFont, lineHeight: step.verseLeading };
   const savedVerses = useStudyState((state) => state.savedVerses);
   const highlights = useStudyState((state) => state.highlights);
   const notes = useStudyState((state) => state.notes);
@@ -272,7 +277,12 @@ function StudyPanel({
       <div className="flex items-start justify-between gap-4">
         <div className="space-y-2">
           <Pill variant="accent">{currentVerse.referenceLabel}</Pill>
-          <p className={VERSE_TEXT_CLASSES[textSize]}>{currentVerse.text}</p>
+          <p
+            className="font-serif tracking-tight text-ink"
+            style={verseStyle}
+          >
+            {currentVerse.text}
+          </p>
         </div>
         {mobile && onClose ? (
           <button
@@ -479,17 +489,27 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
   const recordReadingHistory = useStudyState((state) => state.recordReadingHistory);
   const [selectedVerseId, setSelectedVerseId] = useState<string | null>(null);
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
-  const [textSize, setTextSize] = useState<TextSize>("md");
+  const [textSize, setTextSize] = useState<number>(DEFAULT_SIZE_STEP);
 
   const selectedVerse = model.verses.find((item) => item.verse.id === selectedVerseId);
+  const verseStyle = {
+    fontSize: SIZE_STEPS[textSize].verseFont,
+    lineHeight: SIZE_STEPS[textSize].verseLeading,
+  };
 
   useEffect(() => {
     const stored = window.localStorage.getItem("reader-text-size");
-    if (stored === "sm" || stored === "md" || stored === "lg") setTextSize(stored);
+    if (stored === null) return;
+    // Migrate legacy string values
+    if (stored === "sm") return setTextSize(2);
+    if (stored === "md") return setTextSize(DEFAULT_SIZE_STEP);
+    if (stored === "lg") return setTextSize(5);
+    const n = Number.parseInt(stored, 10);
+    if (Number.isFinite(n) && n >= 0 && n < SIZE_STEPS.length) setTextSize(n);
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("reader-text-size", textSize);
+    window.localStorage.setItem("reader-text-size", String(textSize));
   }, [textSize]);
 
   useEffect(() => {
@@ -586,23 +606,21 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                 <span className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">
                   Text
                 </span>
-                <div className="inline-flex rounded-[10px] border border-line bg-surface p-1">
-                  {TEXT_SIZE_OPTIONS.map((option) => (
-                    <button
-                      key={option.value}
-                      type="button"
-                      onClick={() => setTextSize(option.value)}
-                      className={cn(
-                        "rounded-[6px] px-2.5 py-1 text-xs font-medium tracking-[0.08em] transition-colors duration-200",
-                        textSize === option.value
-                          ? "bg-surface-strong text-ink"
-                          : "text-ink-soft hover:text-ink",
-                      )}
-                      aria-pressed={textSize === option.value}
-                    >
-                      {option.label}
-                    </button>
-                  ))}
+                <div className="flex items-center gap-2 rounded-[10px] border border-line bg-surface px-3 py-2">
+                  <span className="font-mono text-[0.6rem] text-ink-soft">A</span>
+                  <input
+                    type="range"
+                    min={0}
+                    max={SIZE_STEPS.length - 1}
+                    step={1}
+                    value={textSize}
+                    onChange={(event) =>
+                      setTextSize(Number.parseInt(event.target.value, 10))
+                    }
+                    className="h-1.5 w-24 cursor-pointer appearance-none rounded-full bg-line accent-accent"
+                    aria-label="Reading text size"
+                  />
+                  <span className="font-mono text-[0.9rem] text-ink-soft">A</span>
                 </div>
               </div>
           </div>
@@ -674,7 +692,10 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                       />
                     </div>
                     <div className="flex-1 space-y-3">
-                      <p className={VERSE_TEXT_CLASSES[textSize]}>
+                      <p
+                        className="font-serif tracking-tight text-ink"
+                        style={verseStyle}
+                      >
                         {item.verse.text}
                       </p>
                       <div className="flex flex-wrap gap-2">

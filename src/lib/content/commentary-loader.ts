@@ -109,10 +109,19 @@ export function getCommentaryEntriesForWork(workId: string): WorkCommentaryEntry
   const personById = buildLookup(seedPeople, generated?.people ?? []);
   const sourceById = buildLookup(seedSources, generated?.sources ?? []);
 
+  // Catena entries on a verse range are emitted once per verse with IDs like
+  // "catena-mark-0001-v41", "catena-mark-0001-v42", etc. Dedupe by base ID so
+  // the work page shows each commentary once, keeping the lowest-numbered verse.
+  const seenBaseIds = new Set<string>();
   const result: WorkCommentaryEntry[] = [];
+
   for (const entry of allEntries) {
     if (entry.workId !== workId) continue;
     if (!entry.targetVerseId) continue;
+    const baseId = entry.id.replace(/-v\d+$/, "");
+    if (seenBaseIds.has(baseId)) continue;
+    seenBaseIds.add(baseId);
+
     const location = verseLocationKey(entry.targetVerseId);
     const [bookSlug, chapterStr, verseStr] = location.split(".");
     const chapterNumber = Number.parseInt(chapterStr ?? "", 10);
@@ -127,7 +136,6 @@ export function getCommentaryEntriesForWork(workId: string): WorkCommentaryEntry
       verseNumber,
     });
   }
-  // Sort by chapter, then verse, then rank desc to keep top-rated first within a verse
   result.sort((a, b) => {
     if (a.chapterNumber !== b.chapterNumber) return a.chapterNumber - b.chapterNumber;
     if (a.verseNumber !== b.verseNumber) return a.verseNumber - b.verseNumber;

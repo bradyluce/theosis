@@ -617,23 +617,28 @@ export function parseCatenaAurea(config: CatenaParseConfig): CommentaryBundleV2 
       const { authorInfo, text } = comment;
       const excerpt = truncateToWordBoundary(text, MAX_EXCERPT);
 
-      const targetVerseId = `${config.verseTranslationPrefix}:matthew.${chapterNum}.${firstVerse}`;
-
       counter += 1;
-      entries.push({
-        id: `catena-matt-${counter.toString().padStart(4, "0")}`,
-        relation: "verse",
-        targetVerseId,
-        topicSlugs: [],
-        personId: authorInfo.personId,
-        workId: WORK_ID,
-        title: `On Matt ${chapterNum}:${verseRangeLabel}`,
-        excerpt,
-        takeaway: "",
-        sourceId: SOURCE_ID,
-        rank: authorInfo.rank,
-        tags: ["catena-aurea", "patristic", "matthew"],
-      });
+      const baseId = `catena-matt-${counter.toString().padStart(4, "0")}`;
+
+      // Emit one entry per verse in the range so every verse in the section
+      // gets a commentary dot and clicking any of them surfaces this comment.
+      for (const verseNum of verseNumbers) {
+        const targetVerseId = `${config.verseTranslationPrefix}:matthew.${chapterNum}.${verseNum}`;
+        entries.push({
+          id: verseNumbers.length === 1 ? baseId : `${baseId}-v${verseNum}`,
+          relation: "verse",
+          targetVerseId,
+          topicSlugs: [],
+          personId: authorInfo.personId,
+          workId: WORK_ID,
+          title: `On Matt ${chapterNum}:${verseRangeLabel}`,
+          excerpt,
+          takeaway: "",
+          sourceId: SOURCE_ID,
+          rank: authorInfo.rank,
+          tags: ["catena-aurea", "patristic", "matthew"],
+        });
+      }
 
       seenPersonIds.add(authorInfo.personId);
     }
