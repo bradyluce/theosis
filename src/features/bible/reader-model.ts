@@ -3,18 +3,22 @@ import type {
   BibleChapter,
   BibleTranslation,
   BibleVerse,
+  CommentaryEntry,
   CrossReference,
+  Person,
+  SourceRecord,
+  Work,
 } from "@/domain/content/types";
-import {
-  getChapterCommentary,
-  getCrossReferencesForVerse,
-  getDirectCommentaryForVerse,
-  getPersonById,
-  getRelatedEntriesForVerse,
-  getSourceById,
-  getVerseComparisons,
-  getWorkById,
-} from "@/lib/content";
+import { getCrossReferencesForVerse, getVerseComparisons } from "@/lib/content";
+
+export type ChapterCommentaryView = {
+  directByLocation: Map<string, CommentaryEntry[]>;
+  relatedByLocation: Map<string, CommentaryEntry[]>;
+  chapterLevel: CommentaryEntry[];
+  personById: Map<string, Person>;
+  workById: Map<string, Work>;
+  sourceById: Map<string, SourceRecord>;
+};
 
 export type ReaderCommentaryCard = {
   id: string;
@@ -68,11 +72,14 @@ export type ReaderModel = {
   verses: ReaderVerseCard[];
 };
 
-function resolveCommentaryCards(entries: ReturnType<typeof getDirectCommentaryForVerse>) {
+function resolveCommentaryCards(
+  entries: CommentaryEntry[],
+  view: ChapterCommentaryView,
+): ReaderCommentaryCard[] {
   return entries.map((entry) => {
-    const person = getPersonById(entry.personId);
-    const work = getWorkById(entry.workId);
-    const source = getSourceById(entry.sourceId);
+    const person = view.personById.get(entry.personId);
+    const work = view.workById.get(entry.workId);
+    const source = view.sourceById.get(entry.sourceId);
 
     return {
       id: entry.id,
@@ -86,6 +93,10 @@ function resolveCommentaryCards(entries: ReturnType<typeof getDirectCommentaryFo
       sourceLabel: source?.collection ?? "Seeded source",
     };
   });
+}
+
+function verseLocationKey(bookSlug: string, chapterNumber: number, verseNumber: number) {
+  return `${bookSlug}.${chapterNumber}.${verseNumber}`;
 }
 
 function resolveWitnesses(
@@ -135,10 +146,11 @@ export type BibleChapterData = {
   chapter: BibleChapter;
   verses: BibleVerse[];
   allTranslations: BibleTranslation[];
+  commentary: ChapterCommentaryView;
 };
 
 export function buildReaderModel(data: BibleChapterData): ReaderModel {
-  const { translation, book, chapter, verses, allTranslations } = data;
+  const { translation, book, chapter, verses, allTranslations, commentary } = data;
 
   const availableTranslations = allTranslations.map((candidate) => ({
     slug: candidate.slug,
@@ -148,8 +160,15 @@ export function buildReaderModel(data: BibleChapterData): ReaderModel {
   }));
 
   const verseCards: ReaderVerseCard[] = verses.map((verse) => {
-    const directCommentary = resolveCommentaryCards(getDirectCommentaryForVerse(verse.id));
-    const relatedEntries = resolveCommentaryCards(getRelatedEntriesForVerse(verse.id));
+    const location = verseLocationKey(verse.bookSlug, verse.chapterNumber, verse.verseNumber);
+    const directCommentary = resolveCommentaryCards(
+      commentary.directByLocation.get(location) ?? [],
+      commentary,
+    );
+    const relatedEntries = resolveCommentaryCards(
+      commentary.relatedByLocation.get(location) ?? [],
+      commentary,
+    );
     const crossReferences = resolveCrossReferences(verse.id, translation.slug);
 
     return {
@@ -164,9 +183,7 @@ export function buildReaderModel(data: BibleChapterData): ReaderModel {
     };
   });
 
-  const chapterCommentary = resolveCommentaryCards(
-    getChapterCommentary(book.slug, chapter.chapterNumber),
-  );
+  const chapterCommentary = resolveCommentaryCards(commentary.chapterLevel, commentary);
 
   return {
     translation,

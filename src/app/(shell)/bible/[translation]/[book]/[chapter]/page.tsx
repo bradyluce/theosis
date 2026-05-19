@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { BibleReaderExperience } from "@/features/bible/reader-experience";
 import { buildReaderModel } from "@/features/bible/reader-model";
+import { loadChapterCommentary } from "@/lib/content/commentary-loader";
 import { loadChapterData } from "@/lib/content/loader";
 
 type BibleReaderPageProps = {
@@ -25,7 +26,8 @@ export default async function BibleReaderPage({ params }: BibleReaderPageProps) 
     notFound();
   }
 
-  const model = buildReaderModel(data);
+  const commentary = loadChapterCommentary(data.book.slug, data.chapter.chapterNumber);
+  const model = buildReaderModel({ ...data, commentary });
 
   return <BibleReaderExperience model={model} />;
 }
