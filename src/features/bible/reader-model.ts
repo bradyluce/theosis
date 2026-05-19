@@ -3,26 +3,27 @@ import type {
   BibleChapter,
   BibleTranslation,
   BibleVerse,
+  CommentaryEntry,
   CrossReference,
+  Person,
+  SourceRecord,
+  Work,
 } from "@/domain/content/types";
+import { getCrossReferencesForVerse } from "@/lib/content";
 import {
-  getChapterCommentary,
-  getCrossReferencesForVerse,
-  getDirectCommentaryForVerse,
-  getPersonById,
-  getRelatedEntriesForVerse,
-  getSourceById,
-  getWorkById,
-} from "@/lib/content";
-import {
-  getAvailableTranslations,
-  getBookBySlug,
-  getChapterSummary,
-  getChapterVerses,
-  getTranslationBySlug,
-  getVerseComparisons,
   getAvailableBooks,
+  getChapterSummary,
+  getVerseComparisons,
 } from "@/lib/bible/server-store";
+
+export type ChapterCommentaryView = {
+  directByLocation: Map<string, CommentaryEntry[]>;
+  relatedByLocation: Map<string, CommentaryEntry[]>;
+  chapterLevel: CommentaryEntry[];
+  personById: Map<string, Person>;
+  workById: Map<string, Work>;
+  sourceById: Map<string, SourceRecord>;
+};
 
 export type ReaderCommentaryCard = {
   id: string;
@@ -61,12 +62,6 @@ export type ReaderVerseCard = {
   crossReferences: ReaderCrossReference[];
 };
 
-export type ReaderJumpLink = {
-  label: string;
-  description: string;
-  href: string;
-};
-
 export type ReaderModel = {
   translation: BibleTranslation;
   book: BibleBook;
@@ -79,7 +74,6 @@ export type ReaderModel = {
     caption: string;
     href: string;
   }>;
-  availablePassages: ReaderJumpLink[];
   booksForPicker: Array<{
     slug: string;
     name: string;
@@ -89,11 +83,14 @@ export type ReaderModel = {
   verses: ReaderVerseCard[];
 };
 
-function resolveCommentaryCards(entries: ReturnType<typeof getDirectCommentaryForVerse>) {
+function resolveCommentaryCards(
+  entries: CommentaryEntry[],
+  view: ChapterCommentaryView,
+): ReaderCommentaryCard[] {
   return entries.map((entry) => {
-    const person = getPersonById(entry.personId);
-    const work = getWorkById(entry.workId);
-    const source = getSourceById(entry.sourceId);
+    const person = view.personById.get(entry.personId);
+    const work = view.workById.get(entry.workId);
+    const source = view.sourceById.get(entry.sourceId);
 
     return {
       id: entry.id,
@@ -109,9 +106,14 @@ function resolveCommentaryCards(entries: ReturnType<typeof getDirectCommentaryFo
   });
 }
 
+function verseLocationKey(bookSlug: string, chapterNumber: number, verseNumber: number) {
+  return `${bookSlug}.${chapterNumber}.${verseNumber}`;
+}
+
 function resolveWitnesses(
   translation: BibleTranslation,
   verse: BibleVerse,
+  allTranslations: BibleTranslation[],
 ): ReaderWitness[] {
   return getVerseComparisons(
     verse.bookSlug,
@@ -120,7 +122,7 @@ function resolveWitnesses(
   )
     .filter((item) => item.translationId !== translation.id)
     .map((item) => {
-      const witnessTranslation = getAvailableTranslations().find(
+      const witnessTranslation = allTranslations.find(
         (candidate) => candidate.id === item.translationId,
       );
 
@@ -128,9 +130,10 @@ function resolveWitnesses(
         id: item.id,
         translationId: item.translationId,
         label: witnessTranslation?.abbreviation ?? item.translationId.toUpperCase(),
-        caption: witnessTranslation?.kind === "original"
-          ? witnessTranslation.scriptLabel
-          : witnessTranslation?.name ?? "Comparison",
+        caption:
+          witnessTranslation?.kind === "original"
+            ? witnessTranslation.scriptLabel
+            : (witnessTranslation?.name ?? "Comparison"),
         kind: witnessTranslation?.kind ?? "translation",
         direction: witnessTranslation?.direction ?? "ltr",
         text: item.text,
@@ -138,90 +141,60 @@ function resolveWitnesses(
     });
 }
 
-function resolveCrossReferences(verseId: string): ReaderCrossReference[] {
+function resolveCrossReferences(
+  verseId: string,
+  translationSlug: string,
+): ReaderCrossReference[] {
   return getCrossReferencesForVerse(verseId).map((entry) => ({
     ...entry,
-    href: `/bible/kjva/${entry.target.bookSlug}/${entry.target.chapterNumber}`,
+    href: `/bible/${translationSlug}/${entry.target.bookSlug}/${entry.target.chapterNumber}`,
   }));
 }
 
-function getPassageLinks(): ReaderJumpLink[] {
-  return [
-    {
-      label: "John 1",
-      description: "The eternal Word and the Incarnation.",
-      href: "/bible/kjva/john/1",
-    },
-    {
-      label: "Genesis 1",
-      description: "Creation, light, and the beginning.",
-      href: "/bible/kjva/genesis/1",
-    },
-    {
-      label: "2 Peter 1",
-      description: "Partakers of the divine nature.",
-      href: "/bible/kjva/second-peter/1",
-    },
-    {
-      label: "Wisdom 7",
-      description: "Wisdom imagery and divine light.",
-      href: "/bible/kjva/wisdom/7",
-    },
-  ];
-}
+export type BibleChapterData = {
+  translation: BibleTranslation;
+  book: BibleBook;
+  chapter: BibleChapter;
+  verses: BibleVerse[];
+  allTranslations: BibleTranslation[];
+  commentary: ChapterCommentaryView;
+};
 
-export function buildReaderModel(
-  translationSlug: string,
-  bookSlug: string,
-  chapterNumber: number,
-): ReaderModel | null {
-  const translation = getTranslationBySlug(translationSlug);
-  const book = getBookBySlug(bookSlug);
+export function buildReaderModel(data: BibleChapterData): ReaderModel {
+  const { translation, book, chapter, verses, allTranslations, commentary } = data;
 
-  if (!translation || !book) {
-    return null;
-  }
-
-  const chapter = getChapterSummary(translation.id, book.slug, chapterNumber);
-  const verses = getChapterVerses(translation.id, book.slug, chapterNumber);
-
-  if (!chapter || verses.length === 0) {
-    return null;
-  }
-
-  const availableTranslations = getAvailableTranslations()
-    .filter((candidate) =>
-      Boolean(getChapterSummary(candidate.id, book.slug, chapterNumber)),
-    )
-    .map((candidate) => ({
-      slug: candidate.slug,
-      label: candidate.abbreviation,
-      caption: candidate.kind === "original" ? candidate.scriptLabel : "Reader",
-      href: `/bible/${candidate.slug}/${book.slug}/${chapterNumber}`,
-    }));
+  const availableTranslations = allTranslations.map((candidate) => ({
+    slug: candidate.slug,
+    label: candidate.abbreviation,
+    caption: candidate.kind === "original" ? candidate.scriptLabel : "Reader",
+    href: `/bible/${candidate.slug}/${book.slug}/${chapter.chapterNumber}`,
+  }));
 
   const verseCards: ReaderVerseCard[] = verses.map((verse) => {
+    const location = verseLocationKey(verse.bookSlug, verse.chapterNumber, verse.verseNumber);
     const directCommentary = resolveCommentaryCards(
-      getDirectCommentaryForVerse(verse.id),
+      commentary.directByLocation.get(location) ?? [],
+      commentary,
     );
-    const relatedEntries = resolveCommentaryCards(getRelatedEntriesForVerse(verse.id));
-    const crossReferences = resolveCrossReferences(verse.id);
+    const relatedEntries = resolveCommentaryCards(
+      commentary.relatedByLocation.get(location) ?? [],
+      commentary,
+    );
+    const crossReferences = resolveCrossReferences(verse.id, translation.slug);
 
     return {
       verse,
       hasDirectCommentary: directCommentary.length > 0,
       hasRelatedEntries: relatedEntries.length > 0,
       hasCrossReferences: crossReferences.length > 0,
-      witnesses: resolveWitnesses(translation, verse),
+      witnesses: resolveWitnesses(translation, verse, allTranslations),
       directCommentary,
       relatedEntries,
       crossReferences,
     };
   });
 
-  const chapterCommentary = resolveCommentaryCards(
-    getChapterCommentary(book.slug, chapterNumber),
-  );
+  const chapterCommentary = resolveCommentaryCards(commentary.chapterLevel, commentary);
 
   const booksForPicker = getAvailableBooks()
     .filter((candidate) =>
@@ -238,10 +211,9 @@ export function buildReaderModel(
     translation,
     book,
     chapter,
-    chapterLabel: `${book.name} ${chapterNumber}`,
+    chapterLabel: `${book.name} ${chapter.chapterNumber}`,
     chapterCommentary,
     availableTranslations,
-    availablePassages: getPassageLinks(),
     booksForPicker,
     verses: verseCards,
   };

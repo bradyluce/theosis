@@ -4,6 +4,7 @@ import type {
   DailyCommemoration,
   Person,
 } from "@/domain/content/types";
+import { canonEntryToBook, getAllBooks as getCanonBooks, getCanonBySlug } from "@/lib/content/book-canon";
 import { createChapterId } from "@/lib/content/reference";
 import { dailyCommemorations, hymnTexts, readingAssignments } from "@/lib/content/seed/daily";
 import {
@@ -16,7 +17,6 @@ import {
 } from "@/lib/content/seed/library";
 import { userProfileSeed } from "@/lib/content/seed/profile";
 import {
-  bibleBooks,
   bibleChapters,
   bibleTranslations,
   bibleVerses,
@@ -32,11 +32,12 @@ export function getTranslationBySlug(slug: string) {
 }
 
 export function getBookBySlug(slug: string) {
-  return bibleBooks.find((book) => book.slug === slug);
+  const entry = getCanonBySlug(slug);
+  return entry ? canonEntryToBook(entry) : undefined;
 }
 
 export function getAvailableBooks() {
-  return bibleBooks;
+  return getCanonBooks();
 }
 
 export function getAvailableTranslations() {
@@ -154,7 +155,11 @@ export function getSourceById(sourceId: string) {
 }
 
 export function getTodayCommemoration() {
-  return dailyCommemorations[0];
+  const today = new Date().toISOString().slice(0, 10);
+  return (
+    dailyCommemorations.find((item) => item.isoDate === today) ??
+    dailyCommemorations[0]
+  );
 }
 
 export function getAllDailyCommemorations() {
