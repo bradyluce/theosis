@@ -16,12 +16,13 @@ export default function BibleLandingPage() {
     );
   }
 
+  const translationSlug = primaryTranslation.slug;
   const oldTestament = allBooks.filter((b) => b.canonDivision === "old-testament");
   const deuterocanon = allBooks.filter((b) => b.canonDivision === "deuterocanon");
   const newTestament = allBooks.filter((b) => b.canonDivision === "new-testament");
 
   function bookHref(bookSlug: string) {
-    return `/bible/${primaryTranslation.slug}/${bookSlug}/1`;
+    return `/bible/${translationSlug}/${bookSlug}/1`;
   }
 
   return (
