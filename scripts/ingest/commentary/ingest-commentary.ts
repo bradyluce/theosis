@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { parseAzkoul } from "./parse-azkoul";
 import { parseCatenaAurea } from "./parse-catena-aurea";
+import { parseCatenaGospel } from "./parse-catena-gospels";
 
 // When running from a git worktree (.claude/worktrees/<name>), the main repo
 // root is 3 levels up. Identify by presence of the content/raw directory,
@@ -65,6 +66,30 @@ function main() {
   console.log(
     `[catena] ${catena.entries.length} commentary entries across Matthew from ${fatherCount} Fathers.`,
   );
+
+  // ── Catena Aurea on Mark, Luke, John ─────────────────────────────────────────
+  for (const gospel of ["mark", "luke", "john"] as const) {
+    const bundle = parseCatenaGospel({
+      gospel,
+      rawDir: RAW_DIRECTORY,
+      verseTranslationPrefix: "kjva",
+    });
+
+    if (bundle.entries.length === 0) {
+      throw new Error(`[catena-${gospel}] No commentary entries parsed.`);
+    }
+
+    writeFileSync(
+      join(OUTPUT_DIRECTORY, `catena-aurea-${gospel}.json`),
+      `${JSON.stringify(bundle, null, 2)}\n`,
+      "utf8",
+    );
+
+    const fathers = bundle.people.length - 1;
+    console.log(
+      `[catena-${gospel}] ${bundle.entries.length} entries across ${gospel} from ${fathers} Fathers.`,
+    );
+  }
 }
 
 main();
