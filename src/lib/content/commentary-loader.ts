@@ -17,13 +17,23 @@ import {
 
 const GENERATED_DIR = path.join(process.cwd(), "content/generated/commentary");
 
-type CommentaryBundle = {
+type CommentaryBundleV1 = {
   version: "1";
   person: Person;
   work: Work;
   source: SourceRecord;
   entries: CommentaryEntry[];
 };
+
+type CommentaryBundleV2 = {
+  version: "2";
+  people: Person[];
+  works: Work[];
+  sources: SourceRecord[];
+  entries: CommentaryEntry[];
+};
+
+type CommentaryBundle = CommentaryBundleV1 | CommentaryBundleV2;
 
 type AggregatedCommentary = {
   entries: CommentaryEntry[];
@@ -58,9 +68,15 @@ function loadAll(): AggregatedCommentary | null {
       const raw = fs.readFileSync(path.join(GENERATED_DIR, fileName), "utf8");
       const bundle = JSON.parse(raw) as CommentaryBundle;
       entries.push(...bundle.entries);
-      people.push(bundle.person);
-      works.push(bundle.work);
-      sources.push(bundle.source);
+      if (bundle.version === "1") {
+        people.push(bundle.person);
+        works.push(bundle.work);
+        sources.push(bundle.source);
+      } else {
+        people.push(...bundle.people);
+        works.push(...bundle.works);
+        sources.push(...bundle.sources);
+      }
     } catch (error) {
       console.warn(`[commentary-loader] failed to read ${fileName}:`, error);
     }
