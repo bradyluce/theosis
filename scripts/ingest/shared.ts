@@ -73,8 +73,12 @@ function sortByCanonicalOrder<T extends { bookSlug: string; chapterNumber: numbe
     return left.chapterNumber - right.chapterNumber;
   }
 
-  const leftVerseNumber = "verseNumber" in left ? left.verseNumber : 0;
-  const rightVerseNumber = "verseNumber" in right ? right.verseNumber : 0;
+  const leftVerseNumber = "verseNumber" in left
+    ? (left as Record<"verseNumber", number>).verseNumber
+    : 0;
+  const rightVerseNumber = "verseNumber" in right
+    ? (right as Record<"verseNumber", number>).verseNumber
+    : 0;
 
   return leftVerseNumber - rightVerseNumber;
 }

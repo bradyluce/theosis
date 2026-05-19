@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
+  ArrowLeft,
+  ArrowRight,
   ArrowSquareOut,
   BookmarkSimple,
+  CaretLeft,
   Copy,
   HighlighterCircle,
   LinkSimple,
@@ -429,40 +432,38 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
             onChange={(nextHref) => router.push(nextHref)}
           />
 
-          <div className="flex flex-wrap gap-2">
-            {model.availablePassages.map((passage) => {
-              const isActive = passage.href === pathname;
-
-              return (
-                <Link
-                  key={passage.href}
-                  href={passage.href}
-                  className={cn(
-                    "inline-flex items-center rounded-full border px-3 py-1.5 text-[0.7rem] uppercase tracking-[0.18em] transition-colors duration-200",
-                    isActive
-                      ? "border-accent/25 bg-accent-soft text-accent"
-                      : "border-line bg-surface text-ink-soft hover:text-ink",
-                  )}
-                >
-                  {passage.label}
-                </Link>
-              );
-            })}
+          <div className="flex items-center gap-2">
+            <Link
+              href="/bible"
+              className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft transition-colors duration-200 hover:text-ink"
+            >
+              <CaretLeft size={10} />
+              Books
+            </Link>
+            {model.chapter.chapterNumber > 1 ? (
+              <Link
+                href={`/bible/${model.translation.slug}/${model.book.slug}/${model.chapter.chapterNumber - 1}`}
+                className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft transition-colors duration-200 hover:text-ink"
+              >
+                <ArrowLeft size={10} />
+                Ch {model.chapter.chapterNumber - 1}
+              </Link>
+            ) : null}
+            {model.chapter.chapterNumber < model.book.chapterCount ? (
+              <Link
+                href={`/bible/${model.translation.slug}/${model.book.slug}/${model.chapter.chapterNumber + 1}`}
+                className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1.5 text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft transition-colors duration-200 hover:text-ink"
+              >
+                Ch {model.chapter.chapterNumber + 1}
+                <ArrowRight size={10} />
+              </Link>
+            ) : null}
           </div>
         </div>
       </header>
 
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.95fr)]">
         <div className="space-y-4">
-          <Surface tone="accent" className="space-y-3">
-            <Pill variant="accent">Reader notes</Pill>
-            <p className="text-sm leading-7 text-ink-muted">
-              Commentary is seeded on selected verses in this chapter. Tap the verse
-              number to open direct commentary, related writings, cross references,
-              and local study actions.
-            </p>
-          </Surface>
-
           <Surface className="space-y-2">
             {model.verses.map((item) => {
               const selected = item.verse.id === selectedVerseId;

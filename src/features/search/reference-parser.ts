@@ -1,28 +1,8 @@
 import type { SearchIntent } from "@/domain/search/types";
+import { getReferenceBookAliases, normalizeCanonAlias } from "@/lib/content/book-canon";
 import { createReference } from "@/lib/content/reference";
 
-const bookAliases = [
-  {
-    slug: "genesis",
-    name: "Genesis",
-    aliases: ["genesis", "gen", "gn"],
-  },
-  {
-    slug: "john",
-    name: "John",
-    aliases: ["john", "jn", "jhn"],
-  },
-  {
-    slug: "second-peter",
-    name: "2 Peter",
-    aliases: ["2 peter", "ii peter", "second peter", "2 pet", "2pet", "ii pet"],
-  },
-  {
-    slug: "wisdom",
-    name: "Wisdom of Solomon",
-    aliases: ["wisdom", "wis", "wisdom of solomon"],
-  },
-];
+const canonAliases = getReferenceBookAliases();
 
 export function parseReferenceQuery(
   query: string,
@@ -37,8 +17,8 @@ export function parseReferenceQuery(
   }
 
   const [, bookGroup, chapterGroup, verseStartGroup, verseEndGroup] = match;
-  const normalizedBook = bookGroup.replace(/\s+/g, " ").trim();
-  const book = bookAliases.find((candidate) =>
+  const normalizedBook = normalizeCanonAlias(bookGroup);
+  const book = canonAliases.find((candidate) =>
     candidate.aliases.includes(normalizedBook),
   );
 

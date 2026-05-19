@@ -50,7 +50,8 @@ export function parseUan(config: UanParseConfig): ParsedTranslationData {
       const rawText = cleanUanVerseText(currentParts.join(" "));
       const text = transliterateAsciiGreek(rawText, "uan");
 
-      collector.addVerse(entry, currentChapter, currentVerseNumber, text, {
+      // entry is guaranteed non-null here — the outer loop continues on undefined
+      collector.addVerse(entry!, currentChapter, currentVerseNumber, text, {
         paragraphStart: currentVerseNumber === 1,
       });
 

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { BibleReaderExperience } from "@/features/bible/reader-experience";
 import { buildReaderModel } from "@/features/bible/reader-model";
+import { loadChapterData } from "@/lib/content/loader";
 
 type BibleReaderPageProps = {
   params: Promise<{
@@ -10,9 +11,7 @@ type BibleReaderPageProps = {
   }>;
 };
 
-export default async function BibleReaderPage({
-  params,
-}: BibleReaderPageProps) {
+export default async function BibleReaderPage({ params }: BibleReaderPageProps) {
   const resolvedParams = await params;
   const chapterNumber = Number.parseInt(resolvedParams.chapter, 10);
 
@@ -20,15 +19,13 @@ export default async function BibleReaderPage({
     notFound();
   }
 
-  const model = buildReaderModel(
-    resolvedParams.translation,
-    resolvedParams.book,
-    chapterNumber,
-  );
+  const data = loadChapterData(resolvedParams.translation, resolvedParams.book, chapterNumber);
 
-  if (!model) {
+  if (!data) {
     notFound();
   }
+
+  const model = buildReaderModel(data);
 
   return <BibleReaderExperience model={model} />;
 }

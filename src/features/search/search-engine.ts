@@ -50,16 +50,7 @@ const verseDocuments: SearchDocument[] = primaryVerses.map((verse) => ({
   searchText: `${verse.referenceLabel} ${verse.text} ${verse.emphasisLabel ?? ""}`,
 }));
 
-const commentaryDocuments: SearchDocument[] = people.flatMap((person) => {
-  return getAllWorks()
-    .flatMap((work) => {
-      if (work.personId !== person.id) {
-        return [];
-      }
-
-      return [];
-    });
-});
+const commentaryDocuments: SearchDocument[] = [];
 
 const commentaryIndexDocuments: SearchDocument[] = [
   ...primaryVerses.flatMap((verse) => {
