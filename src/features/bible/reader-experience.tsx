@@ -681,34 +681,22 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                       <span className="font-mono text-xs text-accent">
                         {item.verse.verseNumber}
                       </span>
-                      <span
-                        className={cn(
-                          "mt-2 h-1.5 w-1.5 rounded-full bg-transparent",
-                          item.hasDirectCommentary && "bg-accent",
-                          !item.hasDirectCommentary &&
-                            item.hasRelatedEntries &&
-                            "bg-ink-soft",
-                        )}
-                      />
+                      <span className="mt-2 flex items-center gap-1">
+                        {item.hasDirectCommentary ? (
+                          <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                        ) : null}
+                        {item.hasRelatedEntries ? (
+                          <span className="h-1.5 w-1.5 rounded-full bg-ink-soft" />
+                        ) : null}
+                      </span>
                     </div>
-                    <div className="flex-1 space-y-3">
+                    <div className="flex-1">
                       <p
                         className="font-serif tracking-tight text-ink"
                         style={verseStyle}
                       >
                         {item.verse.text}
                       </p>
-                      <div className="flex flex-wrap gap-2">
-                        {item.hasDirectCommentary ? (
-                          <Pill variant="accent">Patristic commentary</Pill>
-                        ) : null}
-                        {item.hasRelatedEntries ? (
-                          <Pill variant="subtle">Related writing</Pill>
-                        ) : null}
-                        {item.hasCrossReferences ? (
-                          <Pill variant="subtle">Cross references</Pill>
-                        ) : null}
-                      </div>
                     </div>
                   </div>
                 </button>
