@@ -90,6 +90,60 @@ export function getGeneratedCommentary(): AggregatedCommentary | null {
   return loadAll();
 }
 
+export type WorkCommentaryEntry = {
+  entry: CommentaryEntry;
+  person: Person | undefined;
+  source: SourceRecord | undefined;
+  // Canonical "bookSlug.chapter.verse" parsed off the entry's targetVerseId
+  bookSlug: string;
+  chapterNumber: number;
+  verseNumber: number;
+};
+
+export function getCommentaryEntriesForWork(workId: string): WorkCommentaryEntry[] {
+  const generated = loadAll();
+  const allEntries = generated
+    ? [...seedCommentary, ...generated.entries]
+    : [...seedCommentary];
+
+  const personById = buildLookup(seedPeople, generated?.people ?? []);
+  const sourceById = buildLookup(seedSources, generated?.sources ?? []);
+
+  const result: WorkCommentaryEntry[] = [];
+  for (const entry of allEntries) {
+    if (entry.workId !== workId) continue;
+    if (!entry.targetVerseId) continue;
+    const location = verseLocationKey(entry.targetVerseId);
+    const [bookSlug, chapterStr, verseStr] = location.split(".");
+    const chapterNumber = Number.parseInt(chapterStr ?? "", 10);
+    const verseNumber = Number.parseInt(verseStr ?? "", 10);
+    if (!bookSlug || Number.isNaN(chapterNumber) || Number.isNaN(verseNumber)) continue;
+    result.push({
+      entry,
+      person: personById.get(entry.personId),
+      source: sourceById.get(entry.sourceId),
+      bookSlug,
+      chapterNumber,
+      verseNumber,
+    });
+  }
+  // Sort by chapter, then verse, then rank desc to keep top-rated first within a verse
+  result.sort((a, b) => {
+    if (a.chapterNumber !== b.chapterNumber) return a.chapterNumber - b.chapterNumber;
+    if (a.verseNumber !== b.verseNumber) return a.verseNumber - b.verseNumber;
+    return b.entry.rank - a.entry.rank;
+  });
+  return result;
+}
+
+export function getWorkBySlugFromAll(slug: string): Work | undefined {
+  const generated = loadAll();
+  return (
+    generated?.works.find((w) => w.slug === slug) ??
+    seedWorks.find((w) => w.slug === slug)
+  );
+}
+
 // Extract the canonical location suffix from any verseId.
 // Verse IDs come in the form `{translationId}:{bookSlug}.{chapter}.{verse}`.
 // Two verses across translations share the same trailing location.

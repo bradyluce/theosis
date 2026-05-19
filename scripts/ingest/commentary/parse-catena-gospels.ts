@@ -673,7 +673,9 @@ function stripECatholicHeaders(raw: string): string {
 function cleanCommentaryText(text: string): string {
   return text
     .replace(/\s+/g, " ")
-    .replace(/^\([^)]{0,120}\)\s*/, "") // strip leading "(citation) "
+    .replace(/^[.,;:\s]+/, "") // leading punctuation left by author-marker split
+    .replace(/^\([^)]{0,120}\)\s*/, "") // leading "(citation) "
+    .replace(/^[.,;:\s]+/, "") // any residual punctuation after citation
     .trim();
 }
 

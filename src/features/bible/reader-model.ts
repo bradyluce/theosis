@@ -163,12 +163,16 @@ export type BibleChapterData = {
 export function buildReaderModel(data: BibleChapterData): ReaderModel {
   const { translation, book, chapter, verses, allTranslations, commentary } = data;
 
-  const availableTranslations = allTranslations.map((candidate) => ({
-    slug: candidate.slug,
-    label: candidate.abbreviation,
-    caption: candidate.kind === "original" ? candidate.scriptLabel : "Reader",
-    href: `/bible/${candidate.slug}/${book.slug}/${chapter.chapterNumber}`,
-  }));
+  const availableTranslations = allTranslations
+    .filter((candidate) =>
+      Boolean(getChapterSummary(candidate.id, book.slug, chapter.chapterNumber)),
+    )
+    .map((candidate) => ({
+      slug: candidate.slug,
+      label: candidate.abbreviation,
+      caption: candidate.kind === "original" ? candidate.scriptLabel : "Reader",
+      href: `/bible/${candidate.slug}/${book.slug}/${chapter.chapterNumber}`,
+    }));
 
   const verseCards: ReaderVerseCard[] = verses.map((verse) => {
     const location = verseLocationKey(verse.bookSlug, verse.chapterNumber, verse.verseNumber);

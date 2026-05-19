@@ -9,6 +9,10 @@ import {
   getWorkBySlug,
   getWorkSections,
 } from "@/lib/content";
+import {
+  getCommentaryEntriesForWork,
+  getWorkBySlugFromAll,
+} from "@/lib/content/commentary-loader";
 
 type WorkPageProps = {
   params: Promise<{
@@ -16,9 +20,23 @@ type WorkPageProps = {
   }>;
 };
 
+const BOOK_DISPLAY_NAMES: Record<string, string> = {
+  matthew: "Matthew",
+  mark: "Mark",
+  luke: "Luke",
+  john: "John",
+};
+
+function bookLabel(bookSlug: string): string {
+  return (
+    BOOK_DISPLAY_NAMES[bookSlug] ??
+    bookSlug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())
+  );
+}
+
 export default async function WorkPage({ params }: WorkPageProps) {
   const { slug } = await params;
-  const work = getWorkBySlug(slug);
+  const work = getWorkBySlug(slug) ?? getWorkBySlugFromAll(slug);
 
   if (!work) {
     notFound();
@@ -26,7 +44,37 @@ export default async function WorkPage({ params }: WorkPageProps) {
 
   const person = getPersonById(work.personId);
   const source = getSourceById(work.sourceId);
-  const sections = getWorkSections(work.id);
+  const seedSections = getWorkSections(work.id);
+  const commentaryEntries = getCommentaryEntriesForWork(work.id);
+
+  // Group commentary entries by chapter for rendering
+  type ChapterGroup = {
+    chapterNumber: number;
+    bookSlug: string;
+    entries: typeof commentaryEntries;
+  };
+  const chapterGroups: ChapterGroup[] = [];
+  let currentGroup: ChapterGroup | null = null;
+  for (const item of commentaryEntries) {
+    if (
+      !currentGroup ||
+      currentGroup.chapterNumber !== item.chapterNumber ||
+      currentGroup.bookSlug !== item.bookSlug
+    ) {
+      currentGroup = {
+        chapterNumber: item.chapterNumber,
+        bookSlug: item.bookSlug,
+        entries: [],
+      };
+      chapterGroups.push(currentGroup);
+    }
+    currentGroup.entries.push(item);
+  }
+
+  const hasCommentary = chapterGroups.length > 0;
+  const totalEntries = commentaryEntries.length;
+  const uniqueFathers = new Set(commentaryEntries.map((e) => e.entry.personId)).size;
+  const firstBookSlug = commentaryEntries[0]?.bookSlug;
 
   return (
     <div className="space-y-8">
@@ -59,23 +107,49 @@ export default async function WorkPage({ params }: WorkPageProps) {
             <p className="text-sm leading-7 text-ink-muted">
               {source?.collection ?? "Seeded source"}
             </p>
+            {source?.url ? (
+              <Link
+                href={source.url}
+                className="text-xs font-medium text-accent transition-colors duration-200 hover:text-ink"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open source ↗
+              </Link>
+            ) : null}
           </div>
-          <div className="space-y-2">
-            <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-              Linked passages
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {work.verseRefs.map((reference) => (
-                <Pill key={reference.label} variant="subtle">
-                  {reference.label}
-                </Pill>
-              ))}
+          {hasCommentary ? (
+            <div className="space-y-2">
+              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+                Corpus
+              </p>
+              <p className="text-sm leading-7 text-ink-muted">
+                {totalEntries.toLocaleString()} commentary entries from{" "}
+                {uniqueFathers} {uniqueFathers === 1 ? "Father" : "Fathers"} across{" "}
+                {chapterGroups.length}{" "}
+                {chapterGroups.length === 1 ? "chapter" : "chapters"}
+                {firstBookSlug ? ` of ${bookLabel(firstBookSlug)}` : ""}.
+              </p>
             </div>
-          </div>
+          ) : null}
+          {work.verseRefs.length > 0 ? (
+            <div className="space-y-2">
+              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+                Linked passages
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {work.verseRefs.map((reference) => (
+                  <Pill key={reference.label} variant="subtle">
+                    {reference.label}
+                  </Pill>
+                ))}
+              </div>
+            </div>
+          ) : null}
         </Surface>
 
         <div className="space-y-4">
-          {sections.map((section) => (
+          {seedSections.map((section) => (
             <Surface key={section.id} className="space-y-3">
               <Pill>{section.label}</Pill>
               <p className="font-serif text-2xl leading-9 tracking-tight text-ink">
@@ -88,6 +162,71 @@ export default async function WorkPage({ params }: WorkPageProps) {
               ) : null}
             </Surface>
           ))}
+
+          {hasCommentary ? (
+            <div className="space-y-3">
+              {chapterGroups.map((group) => (
+                <details
+                  key={`${group.bookSlug}-${group.chapterNumber}`}
+                  className="group rounded-[12px] border border-line bg-surface"
+                >
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-[12px] px-4 py-3 transition-colors duration-200 hover:bg-surface-strong">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-serif text-lg tracking-tight text-ink">
+                        {bookLabel(group.bookSlug)} {group.chapterNumber}
+                      </p>
+                      <p className="text-[0.65rem] uppercase tracking-[0.18em] text-ink-soft">
+                        {group.entries.length} entries
+                      </p>
+                    </div>
+                    <span className="shrink-0 text-ink-soft transition-transform duration-200 group-open:rotate-180">
+                      ▾
+                    </span>
+                  </summary>
+                  <div className="space-y-4 border-t border-line bg-background px-4 py-4">
+                    {group.entries.map(({ entry, person: entryPerson, verseNumber }) => (
+                      <article
+                        key={entry.id}
+                        className="space-y-2 border-b border-line/60 pb-4 last:border-b-0 last:pb-0"
+                      >
+                        <div className="flex flex-wrap items-baseline justify-between gap-2">
+                          <p className="font-mono text-xs tracking-wide text-accent">
+                            v. {verseNumber}
+                          </p>
+                          {entryPerson ? (
+                            <Link
+                              href={`/library/people/${entryPerson.slug}`}
+                              className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft transition-colors duration-200 hover:text-ink"
+                            >
+                              {entryPerson.honorific
+                                ? `${entryPerson.honorific} ${entryPerson.name}`
+                                : entryPerson.name}
+                            </Link>
+                          ) : (
+                            <span className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+                              {entry.personId}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-sm leading-7 text-ink-muted">
+                          {entry.excerpt}
+                        </p>
+                      </article>
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
+          ) : seedSections.length === 0 ? (
+            <Surface tone="quiet" className="space-y-2 px-4 py-4">
+              <h3 className="font-serif text-2xl tracking-tight text-ink">
+                No content seeded for this work yet.
+              </h3>
+              <p className="text-sm leading-7 text-ink-muted">
+                Sections will appear here as the work is built out.
+              </p>
+            </Surface>
+          ) : null}
         </div>
       </div>
     </div>

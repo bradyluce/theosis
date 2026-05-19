@@ -72,14 +72,28 @@ function groupCommentaryByPerson(items: ReaderCommentaryCard[]): {
   return order.map((k) => groups.get(k)!);
 }
 
+const EXCERPT_TEXT_CLASSES: Record<TextSize, string> = {
+  sm: "text-xs leading-6 text-ink-muted",
+  md: "text-sm leading-7 text-ink-muted",
+  lg: "text-base leading-8 text-ink-muted",
+};
+
+const TAKEAWAY_TEXT_CLASSES: Record<TextSize, string> = {
+  sm: "rounded-[8px] bg-surface px-3 py-3 text-xs leading-6 text-ink",
+  md: "rounded-[8px] bg-surface px-3 py-3 text-sm leading-7 text-ink",
+  lg: "rounded-[8px] bg-surface px-3 py-3 text-base leading-8 text-ink",
+};
+
 function FatherCommentaryGroup({
   personName,
   personSlug,
   entries,
+  textSize,
 }: {
   personName: string;
   personSlug: string;
   entries: ReaderCommentaryCard[];
+  textSize: TextSize;
 }) {
   const [open, setOpen] = useState(false);
   return (
@@ -114,11 +128,9 @@ function FatherCommentaryGroup({
                 {entry.title}
                 {entry.sourceLabel ? ` · ${entry.sourceLabel}` : ""}
               </p>
-              <p className="text-sm leading-7 text-ink-muted">{entry.excerpt}</p>
+              <p className={EXCERPT_TEXT_CLASSES[textSize]}>{entry.excerpt}</p>
               {entry.takeaway ? (
-                <p className="rounded-[8px] bg-surface px-3 py-3 text-sm leading-7 text-ink">
-                  {entry.takeaway}
-                </p>
+                <p className={TAKEAWAY_TEXT_CLASSES[textSize]}>{entry.takeaway}</p>
               ) : null}
               {entry.workSlug ? (
                 <Link
@@ -168,11 +180,13 @@ function ActionButton({
 function StudyPanel({
   selectedVerse,
   chapterCommentary,
+  textSize,
   onClose,
   mobile,
 }: {
   selectedVerse: ReaderVerseCard | undefined;
   chapterCommentary: ReaderCommentaryCard[];
+  textSize: TextSize;
   onClose?: () => void;
   mobile?: boolean;
 }) {
@@ -258,9 +272,7 @@ function StudyPanel({
       <div className="flex items-start justify-between gap-4">
         <div className="space-y-2">
           <Pill variant="accent">{currentVerse.referenceLabel}</Pill>
-          <p className="font-serif text-[1.45rem] leading-8 tracking-tight text-ink">
-            {currentVerse.text}
-          </p>
+          <p className={VERSE_TEXT_CLASSES[textSize]}>{currentVerse.text}</p>
         </div>
         {mobile && onClose ? (
           <button
@@ -293,6 +305,7 @@ function StudyPanel({
                 personName={group.personName}
                 personSlug={group.personSlug}
                 entries={group.entries}
+                textSize={textSize}
               />
             ))
           ) : (
@@ -318,6 +331,7 @@ function StudyPanel({
                 personName={group.personName}
                 personSlug={group.personSlug}
                 entries={group.entries}
+                textSize={textSize}
               />
             ))
           ) : (
@@ -501,18 +515,25 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
         </div>
 
         <div className="space-y-3">
-          <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
-            <SegmentedControl
-              items={model.availableTranslations.map((item) => ({
-                value: item.href,
-                label: item.label,
-                caption: item.caption,
-              }))}
-              value={`/bible/${model.translation.slug}/${model.book.slug}/${model.chapter.chapterNumber}`}
-              onChange={(nextHref) => router.push(nextHref)}
-            />
+          <div className="flex flex-wrap gap-3">
+              <div className="flex items-center gap-2">
+                <span className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">
+                  Translation
+                </span>
+                <select
+                  value={`/bible/${model.translation.slug}/${model.book.slug}/${model.chapter.chapterNumber}`}
+                  onChange={(event) => router.push(event.target.value)}
+                  className="rounded-[10px] border border-line bg-surface px-3 py-2 text-sm text-ink outline-none transition-colors duration-200 hover:border-line-strong"
+                >
+                  {model.availableTranslations.map((item) => (
+                    <option key={item.slug} value={item.href}>
+                      {item.label}
+                      {item.caption ? ` — ${item.caption}` : ""}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-            <div className="flex flex-wrap gap-3">
               <div className="flex items-center gap-2">
                 <span className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">
                   Book
@@ -584,7 +605,6 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                   ))}
                 </div>
               </div>
-            </div>
           </div>
 
           <div className="flex items-center gap-2">
@@ -682,6 +702,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
               key={selectedVerse?.verse.id ?? "empty-desktop"}
               selectedVerse={selectedVerse}
               chapterCommentary={model.chapterCommentary}
+              textSize={textSize}
             />
           </div>
         </div>
@@ -705,6 +726,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                   key={selectedVerse?.verse.id ?? "empty-mobile"}
                   selectedVerse={selectedVerse}
                   chapterCommentary={model.chapterCommentary}
+                  textSize={textSize}
                   mobile
                   onClose={() => setMobileDrawerOpen(false)}
                 />
