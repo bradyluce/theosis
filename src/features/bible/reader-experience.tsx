@@ -7,6 +7,7 @@ import {
   ArrowRight,
   ArrowSquareOut,
   BookmarkSimple,
+  CaretDown,
   CaretLeft,
   Copy,
   HighlighterCircle,
@@ -28,36 +29,111 @@ import { useStudyState } from "@/lib/user/use-study-state";
 import { cn } from "@/lib/utils";
 
 type ReaderTab = "commentary" | "related" | "cross-references" | "actions";
+type TextSize = "sm" | "md" | "lg";
 
 type ReaderExperienceProps = {
   model: ReaderModel;
 };
 
-function CommentaryBlock({ entry }: { entry: ReaderCommentaryCard }) {
+const TEXT_SIZE_OPTIONS: { value: TextSize; label: string }[] = [
+  { value: "sm", label: "S" },
+  { value: "md", label: "M" },
+  { value: "lg", label: "L" },
+];
+
+const VERSE_TEXT_CLASSES: Record<TextSize, string> = {
+  sm: "font-serif text-[0.95rem] leading-7 text-ink sm:text-[1.05rem] sm:leading-7",
+  md: "font-serif text-[1.22rem] leading-8 text-ink sm:text-[1.34rem] sm:leading-9",
+  lg: "font-serif text-[1.4rem] leading-9 text-ink sm:text-[1.55rem] sm:leading-10",
+};
+
+function groupCommentaryByPerson(items: ReaderCommentaryCard[]): {
+  personName: string;
+  personSlug: string;
+  entries: ReaderCommentaryCard[];
+}[] {
+  const order: string[] = [];
+  const groups = new Map<
+    string,
+    { personName: string; personSlug: string; entries: ReaderCommentaryCard[] }
+  >();
+  for (const item of items) {
+    const key = item.personSlug || item.personName;
+    if (!groups.has(key)) {
+      groups.set(key, {
+        personName: item.personName,
+        personSlug: item.personSlug,
+        entries: [],
+      });
+      order.push(key);
+    }
+    groups.get(key)!.entries.push(item);
+  }
+  return order.map((k) => groups.get(k)!);
+}
+
+function FatherCommentaryGroup({
+  personName,
+  personSlug,
+  entries,
+}: {
+  personName: string;
+  personSlug: string;
+  entries: ReaderCommentaryCard[];
+}) {
+  const [open, setOpen] = useState(false);
   return (
-    <article className="space-y-3 rounded-[12px] border border-line bg-surface px-4 py-4">
-      <div className="space-y-1">
-        <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-          {entry.personName} / {entry.sourceLabel}
-        </p>
-        <h3 className="font-serif text-2xl tracking-tight text-ink">
-          {entry.title}
-        </h3>
-      </div>
-      <p className="text-sm leading-7 text-ink-muted">{entry.excerpt}</p>
-      <p className="rounded-[8px] bg-background px-3 py-3 text-sm leading-7 text-ink">
-        {entry.takeaway}
-      </p>
-      {entry.workSlug ? (
-        <Link
-          href={`/library/works/${entry.workSlug}`}
-          className="inline-flex items-center gap-1 text-sm font-medium text-accent transition-colors duration-200 hover:text-ink"
-        >
-          Open {entry.workTitle}
-          <ArrowSquareOut size={16} />
-        </Link>
+    <div className="overflow-hidden rounded-[12px] border border-line bg-surface">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition-colors duration-200 hover:bg-surface-strong"
+      >
+        <div className="min-w-0 flex-1">
+          <p className="truncate font-serif text-lg tracking-tight text-ink">
+            {personName}
+          </p>
+          <p className="text-[0.65rem] uppercase tracking-[0.18em] text-ink-soft">
+            {entries.length} {entries.length === 1 ? "entry" : "entries"}
+          </p>
+        </div>
+        <CaretDown
+          size={14}
+          weight="bold"
+          className={cn(
+            "shrink-0 text-ink-soft transition-transform duration-200",
+            open && "rotate-180",
+          )}
+        />
+      </button>
+      {open ? (
+        <div className="space-y-4 border-t border-line bg-background px-4 py-4">
+          {entries.map((entry) => (
+            <article key={entry.id} className="space-y-2">
+              <p className="text-[0.65rem] uppercase tracking-[0.18em] text-ink-soft">
+                {entry.title}
+                {entry.sourceLabel ? ` · ${entry.sourceLabel}` : ""}
+              </p>
+              <p className="text-sm leading-7 text-ink-muted">{entry.excerpt}</p>
+              {entry.takeaway ? (
+                <p className="rounded-[8px] bg-surface px-3 py-3 text-sm leading-7 text-ink">
+                  {entry.takeaway}
+                </p>
+              ) : null}
+              {entry.workSlug ? (
+                <Link
+                  href={`/library/works/${entry.workSlug}`}
+                  className="inline-flex items-center gap-1 text-xs font-medium text-accent transition-colors duration-200 hover:text-ink"
+                >
+                  Open {entry.workTitle}
+                  <ArrowSquareOut size={14} />
+                </Link>
+              ) : null}
+            </article>
+          ))}
+        </div>
       ) : null}
-    </article>
+    </div>
   );
 }
 
@@ -209,10 +285,15 @@ function StudyPanel({
       />
 
       {tab === "commentary" ? (
-        <div className="space-y-4">
+        <div className="space-y-3">
           {commentaryItems.length > 0 ? (
-            commentaryItems.map((entry) => (
-              <CommentaryBlock key={entry.id} entry={entry} />
+            groupCommentaryByPerson(commentaryItems).map((group) => (
+              <FatherCommentaryGroup
+                key={group.personSlug || group.personName}
+                personName={group.personName}
+                personSlug={group.personSlug}
+                entries={group.entries}
+              />
             ))
           ) : (
             <Surface tone="quiet" className="space-y-2 px-4 py-4">
@@ -229,10 +310,15 @@ function StudyPanel({
       ) : null}
 
       {tab === "related" ? (
-        <div className="space-y-4">
+        <div className="space-y-3">
           {selectedVerse.relatedEntries.length > 0 ? (
-            selectedVerse.relatedEntries.map((entry) => (
-              <CommentaryBlock key={entry.id} entry={entry} />
+            groupCommentaryByPerson(selectedVerse.relatedEntries).map((group) => (
+              <FatherCommentaryGroup
+                key={group.personSlug || group.personName}
+                personName={group.personName}
+                personSlug={group.personSlug}
+                entries={group.entries}
+              />
             ))
           ) : (
             <Surface tone="quiet" className="space-y-2 px-4 py-4">
@@ -379,8 +465,18 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
   const recordReadingHistory = useStudyState((state) => state.recordReadingHistory);
   const [selectedVerseId, setSelectedVerseId] = useState<string | null>(null);
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [textSize, setTextSize] = useState<TextSize>("md");
 
   const selectedVerse = model.verses.find((item) => item.verse.id === selectedVerseId);
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem("reader-text-size");
+    if (stored === "sm" || stored === "md" || stored === "lg") setTextSize(stored);
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("reader-text-size", textSize);
+  }, [textSize]);
 
   useEffect(() => {
     recordReadingHistory({
@@ -464,6 +560,30 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                   ))}
                 </select>
               </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">
+                  Text
+                </span>
+                <div className="inline-flex rounded-[10px] border border-line bg-surface p-1">
+                  {TEXT_SIZE_OPTIONS.map((option) => (
+                    <button
+                      key={option.value}
+                      type="button"
+                      onClick={() => setTextSize(option.value)}
+                      className={cn(
+                        "rounded-[6px] px-2.5 py-1 text-xs font-medium tracking-[0.08em] transition-colors duration-200",
+                        textSize === option.value
+                          ? "bg-surface-strong text-ink"
+                          : "text-ink-soft hover:text-ink",
+                      )}
+                      aria-pressed={textSize === option.value}
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -534,7 +654,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                       />
                     </div>
                     <div className="flex-1 space-y-3">
-                      <p className="font-serif text-[1.22rem] leading-8 text-ink sm:text-[1.34rem] sm:leading-9">
+                      <p className={VERSE_TEXT_CLASSES[textSize]}>
                         {item.verse.text}
                       </p>
                       <div className="flex flex-wrap gap-2">
@@ -557,7 +677,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
         </div>
 
         <div className="hidden xl:block">
-          <div className="sticky top-8">
+          <div className="sticky top-8 max-h-[calc(100vh-4rem)] overflow-y-auto pr-1">
             <StudyPanel
               key={selectedVerse?.verse.id ?? "empty-desktop"}
               selectedVerse={selectedVerse}
