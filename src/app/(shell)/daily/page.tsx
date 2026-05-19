@@ -2,18 +2,18 @@ import Link from "next/link";
 import { PageHeader } from "@/components/layout/page-header";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
+import { getPeopleByIds } from "@/lib/content";
 import {
-  getHymnsForDaily,
-  getPeopleByIds,
-  getReadingsForDaily,
-  getTodayCommemoration,
-} from "@/lib/content";
+  getDailyCommemoration,
+  getDailyHymns,
+  getDailyReadings,
+} from "@/lib/calendar";
 
 export default function DailyPage() {
-  const daily = getTodayCommemoration();
+  const daily = getDailyCommemoration();
   const saints = getPeopleByIds(daily.saintIds);
-  const readings = getReadingsForDaily(daily);
-  const hymns = getHymnsForDaily(daily);
+  const readings = getDailyReadings();
+  const hymns = getDailyHymns();
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
     month: "long",

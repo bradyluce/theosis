@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "description": "Orthodox lectionary readings for the Daily Office and Divine Liturgy. Two indexed cycles: 'movable' is keyed by paschal-day offset (pdist), 'fixed' is keyed by canonical Menaion month-day (MM-DD). The composer applies a precedence rule (Great-Feast movable overrides Menaion; otherwise both layer).",
+    "license": "Reading references (book + chapter + verse) are scriptural pointers — not copyrightable. Verse text comes from Theosis's own Bible content.",
+    "coverage": "Movable cycle: principal named days (Pascha through All Saints). Fixed cycle: major feasts within May. Weekday cycles outside named days are deferred to a later slice."
+  },
+  "movable": {
+    "-7": [
+      { "kind": "epistle", "bookSlug": "philippians", "bookName": "Philippians", "chapter": 4, "verseStart": 4, "verseEnd": 9, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 12, "verseStart": 1, "verseEnd": 18, "label": "Gospel" }
+    ],
+    "-2": [
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 27, "verseStart": 1, "verseEnd": 56, "label": "Gospel" }
+    ],
+    "0": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 1, "verseStart": 1, "verseEnd": 8, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 1, "verseStart": 1, "verseEnd": 17, "label": "Gospel" }
+    ],
+    "1": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 1, "verseStart": 12, "verseEnd": 17, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 1, "verseStart": 18, "verseEnd": 28, "label": "Gospel" }
+    ],
+    "2": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 2, "verseStart": 14, "verseEnd": 21, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 24, "verseStart": 12, "verseEnd": 35, "label": "Gospel" }
+    ],
+    "7": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 5, "verseStart": 12, "verseEnd": 20, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 20, "verseStart": 19, "verseEnd": 31, "label": "Gospel" }
+    ],
+    "14": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 6, "verseStart": 1, "verseEnd": 7, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 15, "verseStart": 43, "verseEnd": 47, "label": "Gospel" }
+    ],
+    "21": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 9, "verseStart": 32, "verseEnd": 42, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 5, "verseStart": 1, "verseEnd": 15, "label": "Gospel" }
+    ],
+    "24": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 14, "verseStart": 6, "verseEnd": 18, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 7, "verseStart": 14, "verseEnd": 30, "label": "Gospel" }
+    ],
+    "28": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 11, "verseStart": 19, "verseEnd": 26, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 4, "verseStart": 5, "verseEnd": 42, "label": "Gospel" }
+    ],
+    "35": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 16, "verseStart": 16, "verseEnd": 34, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 9, "verseStart": 1, "verseEnd": 38, "label": "Gospel" }
+    ],
+    "39": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 1, "verseStart": 1, "verseEnd": 12, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 24, "verseStart": 36, "verseEnd": 53, "label": "Gospel" }
+    ],
+    "42": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 20, "verseStart": 16, "verseEnd": 18, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 17, "verseStart": 1, "verseEnd": 13, "label": "Gospel" }
+    ],
+    "49": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 2, "verseStart": 1, "verseEnd": 11, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 7, "verseStart": 37, "verseEnd": 52, "label": "Gospel" }
+    ],
+    "50": [
+      { "kind": "epistle", "bookSlug": "ephesians", "bookName": "Ephesians", "chapter": 5, "verseStart": 8, "verseEnd": 19, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 18, "verseStart": 10, "verseEnd": 20, "label": "Gospel" }
+    ],
+    "56": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 11, "verseStart": 33, "verseEnd": 40, "label": "Epistle" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 10, "verseStart": 32, "verseEnd": 38, "label": "Gospel" }
+    ]
+  },
+  "fixed": {
+    "05-08": [
+      { "kind": "epistle", "bookSlug": "first-john", "bookName": "1 John", "chapter": 1, "verseStart": 1, "verseEnd": 7, "label": "Epistle of the Apostle" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 19, "verseStart": 25, "verseEnd": 27, "label": "Gospel of the Apostle" }
+    ],
+    "05-11": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 7, "verseStart": 26, "verseEnd": 28, "label": "Epistle of the Equals-to-the-Apostles" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 10, "verseStart": 9, "verseEnd": 16, "label": "Gospel of the Equals-to-the-Apostles" }
+    ],
+    "05-21": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 26, "verseStart": 1, "verseEnd": 20, "label": "Epistle of the Holy Sovereigns" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 10, "verseStart": 1, "verseEnd": 9, "label": "Gospel of the Holy Sovereigns" }
+    ],
+    "05-25": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 4, "verseStart": 6, "verseEnd": 15, "label": "Epistle of the Forerunner" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 11, "verseStart": 2, "verseEnd": 15, "label": "Gospel of the Forerunner" }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "_meta": {
+    "description": "Orthodox movable cycle (Triodion + Pentecostarion). Keyed by integer day-offset from Pascha (pdist). Negative = before Pascha, positive = after. pdist=0 is Pascha Sunday itself.",
+    "license": "Theosis-owned editorial content. Names and structure are historical/liturgical facts; summary prose is original.",
+    "coverage": "Major named days only; ordinary days within Lent/Bright Week/Pentecostarion are not enumerated and inherit from the Menaion lookup."
+  },
+  "entries": {
+    "-77": {
+      "pdist": -77,
+      "title": "Sunday of Zacchaeus",
+      "summary": "The Gospel reading announces the approach of the Triodion: Zacchaeus the tax collector climbs the sycamore to see Christ and is met instead by Christ's call to come down and welcome Him home.",
+      "season": "triodion"
+    },
+    "-70": {
+      "pdist": -70,
+      "title": "Sunday of the Publican and Pharisee",
+      "summary": "The opening Sunday of the Triodion. The parable contrasts the prayer of the proud Pharisee with the humble cry of the publican, setting humility as the keynote of the journey toward Pascha.",
+      "season": "triodion"
+    },
+    "-63": {
+      "pdist": -63,
+      "title": "Sunday of the Prodigal Son",
+      "summary": "The second Sunday of the Triodion. The parable of the son who returns home calls us to recognize our own exile and the readiness of the Father to receive every repentant heart.",
+      "season": "triodion"
+    },
+    "-56": {
+      "pdist": -56,
+      "title": "Meatfare Sunday — Sunday of the Last Judgment",
+      "summary": "The final day for eating meat before Great Lent. The Gospel of the Last Judgment frames Lent as preparation to meet Christ the Judge in the persons of the hungry, the stranger, the sick, and the prisoner.",
+      "season": "triodion"
+    },
+    "-49": {
+      "pdist": -49,
+      "title": "Cheesefare Sunday — Forgiveness Sunday",
+      "summary": "The remembrance of the expulsion of Adam from Paradise. Great Lent begins this evening with the rite of mutual forgiveness; we step into the fast asking pardon of one another.",
+      "season": "triodion"
+    },
+    "-48": {
+      "pdist": -48,
+      "title": "Clean Monday — First Day of Great Lent",
+      "summary": "Great Lent begins with strict fasting and the first reading of the Great Canon of St. Andrew of Crete in the evening.",
+      "season": "great-lent"
+    },
+    "-42": {
+      "pdist": -42,
+      "title": "Sunday of Orthodoxy — Triumph of Orthodoxy",
+      "summary": "The first Sunday of Great Lent commemorates the restoration of the holy icons in 843, and with it the affirmation that Christ truly took flesh and may be depicted in His humanity.",
+      "season": "great-lent"
+    },
+    "-35": {
+      "pdist": -35,
+      "title": "Sunday of St. Gregory Palamas",
+      "summary": "The second Sunday of Great Lent commemorates the fourteenth-century hierarch and theologian of the divine energies, whose witness affirmed that prayer can become real participation in God's uncreated light.",
+      "season": "great-lent"
+    },
+    "-28": {
+      "pdist": -28,
+      "title": "Sunday of the Veneration of the Cross",
+      "summary": "The mid-point of Great Lent. The Cross is brought into the center of the church for veneration, refreshing the strength of those who fast as a tree beside cool water.",
+      "season": "great-lent"
+    },
+    "-21": {
+      "pdist": -21,
+      "title": "Sunday of St. John Climacus",
+      "summary": "The fourth Sunday of Great Lent commemorates the seventh-century abbot of Sinai, author of The Ladder of Divine Ascent — a thirty-step rule of life rising from renunciation to love.",
+      "season": "great-lent"
+    },
+    "-14": {
+      "pdist": -14,
+      "title": "Sunday of St. Mary of Egypt",
+      "summary": "The fifth Sunday of Great Lent commemorates the desert ascetic whose long repentance in the wilderness beyond the Jordan stands as the icon of Lenten transformation.",
+      "season": "great-lent"
+    },
+    "-8": {
+      "pdist": -8,
+      "title": "Lazarus Saturday",
+      "summary": "Christ raises Lazarus, the friend He loved, four days dead. The Saturday before Palm Sunday breaks the lenten gloom with the first proclamation that He is the Resurrection and the Life.",
+      "season": "great-lent"
+    },
+    "-7": {
+      "pdist": -7,
+      "title": "Palm Sunday — Entry into Jerusalem",
+      "summary": "Christ enters Jerusalem on the foal of a donkey; the children cry Hosanna. The Church begins Holy Week with palms and willow branches in hand.",
+      "season": "great-lent",
+      "feastRank": "great"
+    },
+    "-6": {
+      "pdist": -6,
+      "title": "Holy Monday",
+      "summary": "Holy Week opens with the remembrance of Joseph the Patriarch, sold by his brothers, and of the barren fig tree cursed by the Lord on His way to Jerusalem.",
+      "season": "holy-week"
+    },
+    "-5": {
+      "pdist": -5,
+      "title": "Holy Tuesday",
+      "summary": "The day commemorates the parable of the Ten Virgins and the call to keep the lamps of the soul filled with the oil of mercy and watchfulness.",
+      "season": "holy-week"
+    },
+    "-4": {
+      "pdist": -4,
+      "title": "Holy Wednesday",
+      "summary": "The sinful woman anoints Christ's feet at Bethany while Judas departs to betray Him; the Church receives Holy Unction in remembrance of healing for body and soul.",
+      "season": "holy-week"
+    },
+    "-3": {
+      "pdist": -3,
+      "title": "Holy Thursday",
+      "summary": "The Mystical Supper. Christ washes the feet of His disciples and institutes the Eucharist, the food of immortality offered to the Church through all generations.",
+      "season": "holy-week"
+    },
+    "-2": {
+      "pdist": -2,
+      "title": "Holy Friday — Great and Holy Friday",
+      "summary": "The Crucifixion. The royal hours, vespers with the descent from the Cross, and the lamentations at the tomb fill the day with the Church's mourning of her Bridegroom.",
+      "season": "holy-week",
+      "feastRank": "great"
+    },
+    "-1": {
+      "pdist": -1,
+      "title": "Holy Saturday — Great and Holy Saturday",
+      "summary": "Christ rests in the tomb in body and harrows hell in His divinity, leading forth the souls of the righteous. The liturgy of Great Saturday is the threshold of the Resurrection.",
+      "season": "holy-week"
+    },
+    "0": {
+      "pdist": 0,
+      "title": "Holy Pascha — The Resurrection of Christ",
+      "summary": "Christ is risen from the dead, trampling down death by death, and to those in the tombs bestowing life. The feast of feasts and the festival of festivals; the center of the Christian year.",
+      "season": "pascha",
+      "feastRank": "great"
+    },
+    "1": {
+      "pdist": 1,
+      "title": "Bright Monday",
+      "summary": "The second day of Pascha. The Paschal liturgy continues; the Royal Doors of the iconostasis remain open throughout the week as a sign of the empty tomb.",
+      "season": "bright-week"
+    },
+    "2": {
+      "pdist": 2,
+      "title": "Bright Tuesday",
+      "summary": "The third day of Pascha. In many traditions this is the day of the Iveron icon procession.",
+      "season": "bright-week"
+    },
+    "3": { "pdist": 3, "title": "Bright Wednesday", "summary": "The fourth day of Pascha.", "season": "bright-week" },
+    "4": { "pdist": 4, "title": "Bright Thursday", "summary": "The fifth day of Pascha.", "season": "bright-week" },
+    "5": { "pdist": 5, "title": "Bright Friday", "summary": "The sixth day of Pascha, dedicated to the Theotokos of the Life-Giving Spring.", "season": "bright-week" },
+    "6": { "pdist": 6, "title": "Bright Saturday", "summary": "The seventh day of Pascha. The artos baked at Pascha is broken and distributed.", "season": "bright-week" },
+    "7": {
+      "pdist": 7,
+      "title": "Antipascha — Sunday of St. Thomas",
+      "summary": "The eighth day from Pascha: Christ appears again to His disciples, this time with Thomas present. The doubt becomes confession: 'My Lord and my God.'",
+      "season": "pentecostarion"
+    },
+    "9": {
+      "pdist": 9,
+      "title": "Radonitsa — Commemoration of the Departed",
+      "summary": "The Tuesday after Thomas Sunday, kept in Slavic tradition as the first day after Pascha on which the Church visits the graves of her departed to share the Paschal greeting.",
+      "season": "pentecostarion"
+    },
+    "14": {
+      "pdist": 14,
+      "title": "Sunday of the Myrrh-Bearing Women",
+      "summary": "The third Sunday of Pascha honors the women who came to the tomb at dawn with myrrh, and the noble Joseph who buried the body of Christ.",
+      "season": "pentecostarion"
+    },
+    "21": {
+      "pdist": 21,
+      "title": "Sunday of the Paralytic",
+      "summary": "The fourth Sunday of Pascha. By the Sheep's Pool at Bethesda, Christ tells the man paralyzed thirty-eight years to rise, take up his bed, and walk.",
+      "season": "pentecostarion"
+    },
+    "24": {
+      "pdist": 24,
+      "title": "Mid-Pentecost",
+      "summary": "The Wednesday at the midpoint between Pascha and Pentecost. Christ teaches in the Temple at the Feast of Tabernacles: 'If anyone thirst, let him come to Me and drink.'",
+      "season": "pentecostarion"
+    },
+    "28": {
+      "pdist": 28,
+      "title": "Sunday of the Samaritan Woman",
+      "summary": "The fifth Sunday of Pascha. At Jacob's well, Christ asks a Samaritan woman for water and gives her instead the well of living water that springs up to eternal life.",
+      "season": "pentecostarion"
+    },
+    "35": {
+      "pdist": 35,
+      "title": "Sunday of the Blind Man",
+      "summary": "The sixth Sunday of Pascha. Christ heals the man born blind, anointing his eyes with clay and sending him to wash in the pool of Siloam — a sign of the new sight given in Baptism.",
+      "season": "pentecostarion"
+    },
+    "39": {
+      "pdist": 39,
+      "title": "Ascension of the Lord",
+      "summary": "Forty days after Pascha. Christ leads His disciples out to Bethany, blesses them, and is taken up into heaven; angels promise that He will come again in the same manner.",
+      "season": "pentecostarion",
+      "feastRank": "great"
+    },
+    "42": {
+      "pdist": 42,
+      "title": "Sunday of the Holy Fathers of the First Ecumenical Council",
+      "summary": "The seventh Sunday of Pascha commemorates the 318 fathers of Nicaea (325) who confessed the Son consubstantial with the Father — the rock on which the Creed is built.",
+      "season": "pentecostarion"
+    },
+    "49": {
+      "pdist": 49,
+      "title": "Pentecost — The Descent of the Holy Spirit",
+      "summary": "Fifty days after Pascha. The Holy Spirit descends upon the apostles as tongues of fire; the Church is born and goes out to the nations. Vespers of kneeling follows the liturgy.",
+      "season": "pentecostarion",
+      "feastRank": "great"
+    },
+    "50": {
+      "pdist": 50,
+      "title": "Day of the Holy Spirit",
+      "summary": "The Monday after Pentecost honors the Holy Spirit Himself, completing the celebration of the Trinity made known in the descent.",
+      "season": "pentecostarion"
+    },
+    "56": {
+      "pdist": 56,
+      "title": "Sunday of All Saints",
+      "summary": "The first Sunday after Pentecost. The Church remembers all her saints together — the harvest of the Spirit's labor in every age, named and unnamed.",
+      "season": "pentecostarion"
+    }
+  }
+}

@@ -1,12 +1,7 @@
-import type {
-  BibleVerse,
-  CommentaryEntry,
-  DailyCommemoration,
-  Person,
-} from "@/domain/content/types";
+import type { BibleVerse, CommentaryEntry, Person } from "@/domain/content/types";
 import { canonEntryToBook, getAllBooks as getCanonBooks, getCanonBySlug } from "@/lib/content/book-canon";
 import { createChapterId } from "@/lib/content/reference";
-import { dailyCommemorations, hymnTexts, readingAssignments } from "@/lib/content/seed/daily";
+import { dailyCommemorations } from "@/lib/content/seed/daily";
 import {
   commentaryEntries,
   people,
@@ -154,24 +149,8 @@ export function getSourceById(sourceId: string) {
   return sourceRecords.find((source) => source.id === sourceId);
 }
 
-export function getTodayCommemoration() {
-  const today = new Date().toISOString().slice(0, 10);
-  return (
-    dailyCommemorations.find((item) => item.isoDate === today) ??
-    dailyCommemorations[0]
-  );
-}
-
 export function getAllDailyCommemorations() {
   return dailyCommemorations;
-}
-
-export function getReadingsForDaily(item: DailyCommemoration) {
-  return readingAssignments.filter((reading) => item.readingIds.includes(reading.id));
-}
-
-export function getHymnsForDaily(item: DailyCommemoration) {
-  return hymnTexts.filter((hymn) => item.hymnIds.includes(hymn.id));
 }
 
 export function getProfileSeed() {

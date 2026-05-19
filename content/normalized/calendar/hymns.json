@@ -1,0 +1,189 @@
+{
+  "_meta": {
+    "description": "Apolytikia (troparia) and kontakia for movable feasts and major fixed-cycle saints. Same dual-key shape as lectionary: 'movable' keyed by pdist, 'fixed' keyed by canonical Menaion MM-DD.",
+    "license": "Texts are original English translations of public-domain Greek/Slavonic hymnody. Theosis owns these English renderings.",
+    "coverage": "Major movable feasts (Palm Sunday, Pascha, Ascension, Pentecost, All Saints) plus principal May fixed feasts. Long tail of saints/feasts populated incrementally."
+  },
+  "movable": {
+    "-7": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of Palm Sunday",
+        "text": "Confirming the universal Resurrection before Thy Passion, Thou didst raise Lazarus from the dead, O Christ our God. Therefore, like the children, we also bear emblems of victory and cry to Thee, the Conqueror of death: Hosanna in the highest, blessed is He that cometh in the name of the Lord."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 6",
+        "title": "Kontakion of Palm Sunday",
+        "text": "Borne upon a throne in heaven, and upon a foal upon the earth, O Christ our God, Thou didst accept the praise of angels and the hymn of children crying out: Blessed art Thou that comest to call back Adam."
+      }
+    ],
+    "-2": [
+      {
+        "type": "troparion",
+        "tone": "Tone 2",
+        "title": "Troparion of Holy Friday",
+        "text": "The noble Joseph, taking Thy most pure Body down from the Tree, wrapped it in clean linen with sweet spices and laid it in a new tomb. But on the third day Thou didst rise, O Lord, granting the world great mercy."
+      }
+    ],
+    "0": [
+      {
+        "type": "troparion",
+        "tone": "Tone 5",
+        "title": "Paschal Troparion",
+        "text": "Christ is risen from the dead, trampling down death by death, and to those in the tombs bestowing life."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 8",
+        "title": "Paschal Kontakion",
+        "text": "Though Thou didst descend into the grave, O Immortal One, yet didst Thou destroy the power of Hades, and didst rise as a victor, O Christ our God; Thou didst greet the myrrh-bearing women saying, Rejoice! and grant peace unto Thine apostles, Thou who givest resurrection to the fallen."
+      }
+    ],
+    "7": [
+      {
+        "type": "troparion",
+        "tone": "Tone 7",
+        "title": "Troparion of Thomas Sunday",
+        "text": "While the tomb was sealed, Thou, O Life, didst shine forth from the grave, O Christ God; and when the doors were shut, Thou didst come unto Thy disciples, the Resurrection of all, renewing through them an upright Spirit in us, according to Thy great mercy."
+      }
+    ],
+    "21": [
+      {
+        "type": "kontakion",
+        "tone": "Tone 3",
+        "title": "Kontakion of the Paralytic",
+        "text": "By Thy divine intervention, O Lord, raise up my soul which is grievously paralyzed by sins of every kind and by unseemly deeds, even as Thou didst of old raise up the paralytic, that being saved I may cry unto Thee: Glory to Thy power, O compassionate Christ."
+      }
+    ],
+    "24": [
+      {
+        "type": "troparion",
+        "tone": "Tone 8",
+        "title": "Troparion of Mid-Pentecost",
+        "text": "At the midpoint of the feast, O Saviour, water my thirsty soul with the streams of true piety, for to all Thou didst cry out: Whosoever thirsteth, let him come to Me and drink. O Christ God, the Wellspring of life, glory to Thee."
+      }
+    ],
+    "28": [
+      {
+        "type": "kontakion",
+        "tone": "Tone 8",
+        "title": "Kontakion of the Samaritan Woman",
+        "text": "The Samaritan woman, having come in faith unto the well, beheld Thee, the Water of Wisdom. Drinking thereof abundantly, she inherited the Kingdom on high; therefore, she is forever exalted."
+      }
+    ],
+    "39": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Ascension",
+        "text": "Thou hast ascended in glory, O Christ our God, granting joy to Thy disciples by the promise of the Holy Spirit. Through the blessing they were assured that Thou art the Son of God, the Redeemer of the world."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 6",
+        "title": "Kontakion of the Ascension",
+        "text": "When Thou hadst fulfilled the dispensation for our sake, and united things on earth with the things in heaven, Thou didst ascend in glory, O Christ our God, in no wise departing from us, but remaining inseparable, and crying unto those who love Thee: I am with you, and there is none against you."
+      }
+    ],
+    "49": [
+      {
+        "type": "troparion",
+        "tone": "Tone 8",
+        "title": "Troparion of Pentecost",
+        "text": "Blessed art Thou, O Christ our God, who hast made the fishermen wise, by sending down upon them the Holy Spirit, and through them drawing the world into Thy net. O Lover of mankind, glory to Thee."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 8",
+        "title": "Kontakion of Pentecost",
+        "text": "When the Most High came down and confused the tongues, He divided the nations; but when He distributed the tongues of fire, He called all to unity. With one accord, therefore, let us glorify the all-Holy Spirit."
+      }
+    ],
+    "56": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of All Saints",
+        "text": "Adorned in the blood of Thy martyrs throughout all the world as in purple and fine linen, Thy Church, through them, doth cry unto Thee, O Christ God: send down Thy compassion upon Thy people; grant peace to Thy commonwealth, and to our souls great mercy."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 8",
+        "title": "Kontakion of All Saints",
+        "text": "To Thee, O Lord, the Author of creation, the world doth offer the God-bearing martyrs as first-fruits of nature. By their entreaties keep Thy Church, Thine own commonwealth, in deep peace, through the Theotokos, O Thou greatly merciful."
+      }
+    ]
+  },
+  "fixed": {
+    "05-02": [
+      {
+        "type": "troparion",
+        "tone": "Tone 3",
+        "title": "Troparion of St. Athanasius the Great",
+        "text": "O thou who art a pillar of Orthodoxy, who didst confirm the Church through divine doctrines, hierarch Athanasius, thou hast been shown forth to be a sage of God; for by proclaiming the Son co-essential with the Father, thou didst put to shame the impious Arius. O righteous father, pray to Christ God to grant great mercy unto us."
+      }
+    ],
+    "05-08": [
+      {
+        "type": "troparion",
+        "tone": "Tone 2",
+        "title": "Troparion of the Apostle and Evangelist John",
+        "text": "O Beloved Apostle of Christ our God, hasten to deliver thy defenseless people. He upon whose breast thou didst lean accepteth thee as thou kneelest before Him. Beseech Him, O Theologian, to scatter the persisting cloud of the heathen and ask for us peace and great mercy."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 2",
+        "title": "Kontakion of the Apostle and Evangelist John",
+        "text": "Who can recount thy mighty works, O Virgin Apostle? For thou pourest forth miracles and effusions of healings, and prayest for our souls as Theologian and Friend of Christ."
+      }
+    ],
+    "05-09": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Translation of the Relics of St. Nicholas",
+        "text": "The day of bright festival is come; the city of Bari rejoiceth, and with her the whole world doth exult in hymns and psalms. For today is the sacred feast of the translation of the precious and much-healing relics of the hierarch Nicholas the wonderworker. Like a never-setting sun, having risen, he illumineth the faithful with the brilliance of his miracles."
+      }
+    ],
+    "05-11": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of Sts. Cyril and Methodius",
+        "text": "O holy Equals-to-the-Apostles, illumined of the Slavic lands, fathers Cyril and Methodius wise in God: entreat the Master of all to confirm all Orthodox peoples in the true Faith and concord, granting peace unto the world and great mercy to our souls."
+      }
+    ],
+    "05-15": [
+      {
+        "type": "troparion",
+        "tone": "Tone 8",
+        "title": "Troparion of St. Pachomius the Great",
+        "text": "Thou didst prove to be a citizen of the desert, an angel in the flesh, and a wonderworker, O Pachomius our God-bearing father. Having received gifts from heaven through fasting, vigil, and prayer, thou didst heal the sick and the souls of those who turned to thee in faith. Glory to Him who gave thee strength; glory to Him who crowned thee; glory to Him who through thee worketh healings for all."
+      }
+    ],
+    "05-21": [
+      {
+        "type": "troparion",
+        "tone": "Tone 8",
+        "title": "Troparion of Sts. Constantine and Helen",
+        "text": "Having seen the image of Thy Cross in heaven, and like Paul having received the call not from men, Thine apostle among kings entrusted the imperial city to Thy hand. Save us always in peace, through the prayers of the Theotokos, O only Lover of mankind."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 3",
+        "title": "Kontakion of Sts. Constantine and Helen",
+        "text": "Today Constantine and his mother Helen reveal the Cross, the all-precious wood. It is a shame to all the Jews, and a weapon of faithful kings against the adversary. For our sake hath appeared this mighty sign and awesome in war."
+      }
+    ],
+    "05-25": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Third Finding of the Head of the Forerunner",
+        "text": "The Forerunner's sacred head, having dawned forth from the earth, doth send forth incorrupt rays of healing to the faithful. From on high it gathereth the choir of angels, and from below it summoneth the company of mankind to send up with one voice glory unto Christ God."
+      }
+    ]
+  }
+}

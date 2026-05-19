@@ -44,4 +44,13 @@ next-env.d.ts
 /_tmp_*.html
 /get-diff.txt
 /content/generated/
-/content/raw/
+# Raw source material: ignore everything inside, but keep the directory tree
+# and surface the README + PROVENANCE files so layout/license posture lives in git.
+/content/raw/**
+!/content/raw/**/
+!/content/raw/**/README.md
+!/content/raw/**/PROVENANCE.json
+!/content/raw/.gitkeep
+
+# Claude Code per-developer local config
+/.claude/settings.local.json

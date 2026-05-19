@@ -1,0 +1,18 @@
+{
+  "source": "orthocal-python by Brian Glass",
+  "url": "https://github.com/brianglass/orthocal-python",
+  "license": "MIT",
+  "licenseUrl": "https://github.com/brianglass/orthocal-python/blob/master/LICENSE",
+  "fetchedAt": "2026-05-19",
+  "promotableToNormalized": true,
+  "attribution": "Algorithm structure and movable-cycle taxonomy derived from orthocal-python (Brian Glass, MIT-licensed). The implementation in src/lib/calendar/ is a clean-room TypeScript reimplementation of the Gauss Paschalion algorithm and a Theosis-authored editorial Menaion. The orthocal.info site content is separately licensed CC BY-NC-SA 4.0 and is not used here.",
+  "usage": [
+    "Conceptual reference for the 'pdist' (paschal-day offset) abstraction.",
+    "Cross-validation of named movable-cycle days against orthocal-python's day.py and year.py.",
+    "Future port target: lectionary tables (Phase A.2) and fasting-rule logic (Phase F)."
+  ],
+  "notReused": [
+    "orthocal.info site content (CC BY-NC-SA — incompatible with commercial App Store distribution).",
+    "John Brady abbamoses.com saint biographies (cited as orthocal.info content source 'by permission')."
+  ]
+}

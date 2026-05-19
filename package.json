@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "ingest:bibles": "tsx scripts/ingest/ingest.ts",
-    "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts"
+    "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
+    "test:calendar": "tsx scripts/test/calendar.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1007.0",
