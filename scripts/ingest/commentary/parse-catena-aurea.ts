@@ -617,7 +617,7 @@ export function parseCatenaAurea(config: CatenaParseConfig): CommentaryBundleV2 
       const { authorInfo, text } = comment;
       const excerpt = truncateToWordBoundary(text, MAX_EXCERPT);
 
-      const targetVerseId = `${config.verseTranslationPrefix}:matt.${chapterNum}.${firstVerse}`;
+      const targetVerseId = `${config.verseTranslationPrefix}:matthew.${chapterNum}.${firstVerse}`;
 
       counter += 1;
       entries.push({
