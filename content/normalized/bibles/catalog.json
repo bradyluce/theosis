@@ -1,0 +1,955 @@
+{
+  "translations": [
+    {
+      "id": "kjva",
+      "slug": "kjva",
+      "abbreviation": "KJVA",
+      "name": "King James Version with Apocrypha",
+      "languageCode": "en",
+      "scriptLabel": "Latin",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "English translation",
+      "description": "Full Bible with apocryphal/deuterocanonical books parsed from OSIS.",
+      "isPrimary": true
+    },
+    {
+      "id": "rsv",
+      "slug": "rsv",
+      "abbreviation": "RSV",
+      "name": "Revised Standard Version",
+      "languageCode": "en",
+      "scriptLabel": "Latin",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "Formal English translation",
+      "description": "Structured XML import of the Revised Standard Version Old and New Testaments."
+    },
+    {
+      "id": "lxxe",
+      "slug": "lxxe",
+      "abbreviation": "LXXE",
+      "name": "Brenton's English Septuagint",
+      "languageCode": "en",
+      "scriptLabel": "Latin",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "English Septuagint",
+      "description": "OSIS import of Brenton's English Septuagint."
+    },
+    {
+      "id": "brenton",
+      "slug": "brenton",
+      "abbreviation": "Brenton",
+      "name": "Brenton Septuagint (Text Conversion)",
+      "languageCode": "en",
+      "scriptLabel": "Latin",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "English Septuagint",
+      "description": "PDF-to-text import of Brenton's Septuagint with heuristic cleanup."
+    },
+    {
+      "id": "eob",
+      "slug": "eob",
+      "abbreviation": "EOB",
+      "name": "Eastern Greek Orthodox Bible NT",
+      "languageCode": "en",
+      "scriptLabel": "Latin",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "Orthodox English New Testament",
+      "description": "PDF-to-text import of the Eastern Greek Orthodox Bible New Testament."
+    },
+    {
+      "id": "gnt",
+      "slug": "gnt",
+      "abbreviation": "GNT",
+      "name": "Greek New Testament",
+      "languageCode": "grc",
+      "scriptLabel": "Greek",
+      "kind": "original",
+      "direction": "ltr",
+      "traditionLabel": "Greek witness",
+      "description": "Greek New Testament parsed from the uploaded Nestle 1904 plaintext source."
+    },
+    {
+      "id": "lxx-greek",
+      "slug": "lxx-greek",
+      "abbreviation": "LXX-GR",
+      "name": "Septuagint Greek",
+      "languageCode": "grc",
+      "scriptLabel": "Greek",
+      "kind": "original",
+      "direction": "ltr",
+      "traditionLabel": "Greek Septuagint witness",
+      "description": "Greek Septuagint parsed from the uploaded plaintext source."
+    },
+    {
+      "id": "byz",
+      "slug": "byz",
+      "abbreviation": "BYZ",
+      "name": "Byzantine Textform",
+      "languageCode": "grc",
+      "scriptLabel": "Greek",
+      "kind": "original",
+      "direction": "ltr",
+      "traditionLabel": "Byzantine Greek witness",
+      "description": "Robinson-Pierpont Byzantine text transliterated from ASCII source files."
+    },
+    {
+      "id": "ant1904",
+      "slug": "ant1904",
+      "abbreviation": "ANT 1904",
+      "name": "Antoniades 1904 Patriarchal Text",
+      "languageCode": "grc",
+      "scriptLabel": "Greek",
+      "kind": "original",
+      "direction": "ltr",
+      "traditionLabel": "Patriarchal Greek witness",
+      "description": "Antoniades 1904 Patriarchal text transliterated from parsed UAN files."
+    }
+  ],
+  "books": [
+    {
+      "id": "genesis",
+      "slug": "genesis",
+      "name": "Genesis",
+      "shortName": "Gen",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 50,
+      "order": 1
+    },
+    {
+      "id": "exodus",
+      "slug": "exodus",
+      "name": "Exodus",
+      "shortName": "Exod",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 40,
+      "order": 2
+    },
+    {
+      "id": "leviticus",
+      "slug": "leviticus",
+      "name": "Leviticus",
+      "shortName": "Lev",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 27,
+      "order": 3
+    },
+    {
+      "id": "numbers",
+      "slug": "numbers",
+      "name": "Numbers",
+      "shortName": "Num",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 36,
+      "order": 4
+    },
+    {
+      "id": "deuteronomy",
+      "slug": "deuteronomy",
+      "name": "Deuteronomy",
+      "shortName": "Deut",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 34,
+      "order": 5
+    },
+    {
+      "id": "joshua",
+      "slug": "joshua",
+      "name": "Joshua",
+      "shortName": "Josh",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 24,
+      "order": 6
+    },
+    {
+      "id": "judges",
+      "slug": "judges",
+      "name": "Judges",
+      "shortName": "Judg",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 21,
+      "order": 7
+    },
+    {
+      "id": "ruth",
+      "slug": "ruth",
+      "name": "Ruth",
+      "shortName": "Ruth",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 4,
+      "order": 8
+    },
+    {
+      "id": "first-samuel",
+      "slug": "first-samuel",
+      "name": "1 Samuel",
+      "shortName": "1 Sam",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 31,
+      "order": 9
+    },
+    {
+      "id": "second-samuel",
+      "slug": "second-samuel",
+      "name": "2 Samuel",
+      "shortName": "2 Sam",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 24,
+      "order": 10
+    },
+    {
+      "id": "first-kings",
+      "slug": "first-kings",
+      "name": "1 Kings",
+      "shortName": "1 Kgs",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 22,
+      "order": 11
+    },
+    {
+      "id": "second-kings",
+      "slug": "second-kings",
+      "name": "2 Kings",
+      "shortName": "2 Kgs",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 25,
+      "order": 12
+    },
+    {
+      "id": "first-chronicles",
+      "slug": "first-chronicles",
+      "name": "1 Chronicles",
+      "shortName": "1 Chr",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 29,
+      "order": 13
+    },
+    {
+      "id": "second-chronicles",
+      "slug": "second-chronicles",
+      "name": "2 Chronicles",
+      "shortName": "2 Chr",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 36,
+      "order": 14
+    },
+    {
+      "id": "ezra",
+      "slug": "ezra",
+      "name": "Ezra",
+      "shortName": "Ezra",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 10,
+      "order": 15
+    },
+    {
+      "id": "nehemiah",
+      "slug": "nehemiah",
+      "name": "Nehemiah",
+      "shortName": "Neh",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 13,
+      "order": 16
+    },
+    {
+      "id": "esther",
+      "slug": "esther",
+      "name": "Esther",
+      "shortName": "Esth",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 10,
+      "order": 17
+    },
+    {
+      "id": "job",
+      "slug": "job",
+      "name": "Job",
+      "shortName": "Job",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 42,
+      "order": 18
+    },
+    {
+      "id": "psalms",
+      "slug": "psalms",
+      "name": "Psalms",
+      "shortName": "Ps",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 150,
+      "order": 19
+    },
+    {
+      "id": "proverbs",
+      "slug": "proverbs",
+      "name": "Proverbs",
+      "shortName": "Prov",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 31,
+      "order": 20
+    },
+    {
+      "id": "ecclesiastes",
+      "slug": "ecclesiastes",
+      "name": "Ecclesiastes",
+      "shortName": "Eccl",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 12,
+      "order": 21
+    },
+    {
+      "id": "song-of-solomon",
+      "slug": "song-of-solomon",
+      "name": "Song of Solomon",
+      "shortName": "Song",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 8,
+      "order": 22
+    },
+    {
+      "id": "isaiah",
+      "slug": "isaiah",
+      "name": "Isaiah",
+      "shortName": "Isa",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 66,
+      "order": 23
+    },
+    {
+      "id": "jeremiah",
+      "slug": "jeremiah",
+      "name": "Jeremiah",
+      "shortName": "Jer",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 52,
+      "order": 24
+    },
+    {
+      "id": "lamentations",
+      "slug": "lamentations",
+      "name": "Lamentations",
+      "shortName": "Lam",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 5,
+      "order": 25
+    },
+    {
+      "id": "ezekiel",
+      "slug": "ezekiel",
+      "name": "Ezekiel",
+      "shortName": "Ezek",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 48,
+      "order": 26
+    },
+    {
+      "id": "daniel",
+      "slug": "daniel",
+      "name": "Daniel",
+      "shortName": "Dan",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 12,
+      "order": 27
+    },
+    {
+      "id": "hosea",
+      "slug": "hosea",
+      "name": "Hosea",
+      "shortName": "Hos",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 14,
+      "order": 28
+    },
+    {
+      "id": "joel",
+      "slug": "joel",
+      "name": "Joel",
+      "shortName": "Joel",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 3,
+      "order": 29
+    },
+    {
+      "id": "amos",
+      "slug": "amos",
+      "name": "Amos",
+      "shortName": "Amos",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 9,
+      "order": 30
+    },
+    {
+      "id": "obadiah",
+      "slug": "obadiah",
+      "name": "Obadiah",
+      "shortName": "Obad",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 1,
+      "order": 31
+    },
+    {
+      "id": "jonah",
+      "slug": "jonah",
+      "name": "Jonah",
+      "shortName": "Jonah",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 4,
+      "order": 32
+    },
+    {
+      "id": "micah",
+      "slug": "micah",
+      "name": "Micah",
+      "shortName": "Mic",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 7,
+      "order": 33
+    },
+    {
+      "id": "nahum",
+      "slug": "nahum",
+      "name": "Nahum",
+      "shortName": "Nah",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 3,
+      "order": 34
+    },
+    {
+      "id": "habakkuk",
+      "slug": "habakkuk",
+      "name": "Habakkuk",
+      "shortName": "Hab",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 3,
+      "order": 35
+    },
+    {
+      "id": "zephaniah",
+      "slug": "zephaniah",
+      "name": "Zephaniah",
+      "shortName": "Zeph",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 3,
+      "order": 36
+    },
+    {
+      "id": "haggai",
+      "slug": "haggai",
+      "name": "Haggai",
+      "shortName": "Hag",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 2,
+      "order": 37
+    },
+    {
+      "id": "zechariah",
+      "slug": "zechariah",
+      "name": "Zechariah",
+      "shortName": "Zech",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 14,
+      "order": 38
+    },
+    {
+      "id": "malachi",
+      "slug": "malachi",
+      "name": "Malachi",
+      "shortName": "Mal",
+      "canonDivision": "old-testament",
+      "testamentLabel": "Old Testament",
+      "chapterCount": 4,
+      "order": 39
+    },
+    {
+      "id": "first-esdras",
+      "slug": "first-esdras",
+      "name": "1 Esdras",
+      "shortName": "1 Esd",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 9,
+      "order": 40
+    },
+    {
+      "id": "second-esdras",
+      "slug": "second-esdras",
+      "name": "2 Esdras",
+      "shortName": "2 Esd",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 16,
+      "order": 41
+    },
+    {
+      "id": "tobit",
+      "slug": "tobit",
+      "name": "Tobit",
+      "shortName": "Tob",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 14,
+      "order": 42
+    },
+    {
+      "id": "judith",
+      "slug": "judith",
+      "name": "Judith",
+      "shortName": "Jdt",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 16,
+      "order": 43
+    },
+    {
+      "id": "esther-greek",
+      "slug": "esther-greek",
+      "name": "Esther (Greek)",
+      "shortName": "Esth Gr",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 16,
+      "order": 44
+    },
+    {
+      "id": "wisdom",
+      "slug": "wisdom",
+      "name": "Wisdom of Solomon",
+      "shortName": "Wis",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 19,
+      "order": 45
+    },
+    {
+      "id": "sirach",
+      "slug": "sirach",
+      "name": "Sirach",
+      "shortName": "Sir",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 51,
+      "order": 46
+    },
+    {
+      "id": "baruch",
+      "slug": "baruch",
+      "name": "Baruch",
+      "shortName": "Bar",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 5,
+      "order": 47
+    },
+    {
+      "id": "epistle-of-jeremiah",
+      "slug": "epistle-of-jeremiah",
+      "name": "Epistle of Jeremiah",
+      "shortName": "Ep Jer",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 1,
+      "order": 48
+    },
+    {
+      "id": "prayer-of-azariah",
+      "slug": "prayer-of-azariah",
+      "name": "Prayer of Azariah",
+      "shortName": "Pr Azar",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 1,
+      "order": 49
+    },
+    {
+      "id": "susanna",
+      "slug": "susanna",
+      "name": "Susanna",
+      "shortName": "Sus",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 1,
+      "order": 50
+    },
+    {
+      "id": "bel-and-the-dragon",
+      "slug": "bel-and-the-dragon",
+      "name": "Bel and the Dragon",
+      "shortName": "Bel",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 1,
+      "order": 51
+    },
+    {
+      "id": "prayer-of-manasseh",
+      "slug": "prayer-of-manasseh",
+      "name": "Prayer of Manasseh",
+      "shortName": "Pr Man",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 1,
+      "order": 52
+    },
+    {
+      "id": "first-maccabees",
+      "slug": "first-maccabees",
+      "name": "1 Maccabees",
+      "shortName": "1 Macc",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 16,
+      "order": 53
+    },
+    {
+      "id": "second-maccabees",
+      "slug": "second-maccabees",
+      "name": "2 Maccabees",
+      "shortName": "2 Macc",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 15,
+      "order": 54
+    },
+    {
+      "id": "third-maccabees",
+      "slug": "third-maccabees",
+      "name": "3 Maccabees",
+      "shortName": "3 Macc",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 7,
+      "order": 55
+    },
+    {
+      "id": "fourth-maccabees",
+      "slug": "fourth-maccabees",
+      "name": "4 Maccabees",
+      "shortName": "4 Macc",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 18,
+      "order": 56
+    },
+    {
+      "id": "psalm-151",
+      "slug": "psalm-151",
+      "name": "Psalm 151",
+      "shortName": "Ps 151",
+      "canonDivision": "deuterocanon",
+      "testamentLabel": "Deuterocanon",
+      "chapterCount": 1,
+      "order": 57
+    },
+    {
+      "id": "matthew",
+      "slug": "matthew",
+      "name": "Matthew",
+      "shortName": "Matt",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 28,
+      "order": 58
+    },
+    {
+      "id": "mark",
+      "slug": "mark",
+      "name": "Mark",
+      "shortName": "Mark",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 16,
+      "order": 59
+    },
+    {
+      "id": "luke",
+      "slug": "luke",
+      "name": "Luke",
+      "shortName": "Luke",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 24,
+      "order": 60
+    },
+    {
+      "id": "john",
+      "slug": "john",
+      "name": "John",
+      "shortName": "John",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 21,
+      "order": 61
+    },
+    {
+      "id": "acts",
+      "slug": "acts",
+      "name": "Acts",
+      "shortName": "Acts",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 28,
+      "order": 62
+    },
+    {
+      "id": "romans",
+      "slug": "romans",
+      "name": "Romans",
+      "shortName": "Rom",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 16,
+      "order": 63
+    },
+    {
+      "id": "first-corinthians",
+      "slug": "first-corinthians",
+      "name": "1 Corinthians",
+      "shortName": "1 Cor",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 16,
+      "order": 64
+    },
+    {
+      "id": "second-corinthians",
+      "slug": "second-corinthians",
+      "name": "2 Corinthians",
+      "shortName": "2 Cor",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 13,
+      "order": 65
+    },
+    {
+      "id": "galatians",
+      "slug": "galatians",
+      "name": "Galatians",
+      "shortName": "Gal",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 6,
+      "order": 66
+    },
+    {
+      "id": "ephesians",
+      "slug": "ephesians",
+      "name": "Ephesians",
+      "shortName": "Eph",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 6,
+      "order": 67
+    },
+    {
+      "id": "philippians",
+      "slug": "philippians",
+      "name": "Philippians",
+      "shortName": "Phil",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 4,
+      "order": 68
+    },
+    {
+      "id": "colossians",
+      "slug": "colossians",
+      "name": "Colossians",
+      "shortName": "Col",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 4,
+      "order": 69
+    },
+    {
+      "id": "first-thessalonians",
+      "slug": "first-thessalonians",
+      "name": "1 Thessalonians",
+      "shortName": "1 Thess",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 5,
+      "order": 70
+    },
+    {
+      "id": "second-thessalonians",
+      "slug": "second-thessalonians",
+      "name": "2 Thessalonians",
+      "shortName": "2 Thess",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 3,
+      "order": 71
+    },
+    {
+      "id": "first-timothy",
+      "slug": "first-timothy",
+      "name": "1 Timothy",
+      "shortName": "1 Tim",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 6,
+      "order": 72
+    },
+    {
+      "id": "second-timothy",
+      "slug": "second-timothy",
+      "name": "2 Timothy",
+      "shortName": "2 Tim",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 4,
+      "order": 73
+    },
+    {
+      "id": "titus",
+      "slug": "titus",
+      "name": "Titus",
+      "shortName": "Titus",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 3,
+      "order": 74
+    },
+    {
+      "id": "philemon",
+      "slug": "philemon",
+      "name": "Philemon",
+      "shortName": "Phlm",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 1,
+      "order": 75
+    },
+    {
+      "id": "hebrews",
+      "slug": "hebrews",
+      "name": "Hebrews",
+      "shortName": "Heb",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 13,
+      "order": 76
+    },
+    {
+      "id": "james",
+      "slug": "james",
+      "name": "James",
+      "shortName": "Jas",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 5,
+      "order": 77
+    },
+    {
+      "id": "first-peter",
+      "slug": "first-peter",
+      "name": "1 Peter",
+      "shortName": "1 Pet",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 5,
+      "order": 78
+    },
+    {
+      "id": "second-peter",
+      "slug": "second-peter",
+      "name": "2 Peter",
+      "shortName": "2 Pet",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 3,
+      "order": 79
+    },
+    {
+      "id": "first-john",
+      "slug": "first-john",
+      "name": "1 John",
+      "shortName": "1 John",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 5,
+      "order": 80
+    },
+    {
+      "id": "second-john",
+      "slug": "second-john",
+      "name": "2 John",
+      "shortName": "2 John",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 1,
+      "order": 81
+    },
+    {
+      "id": "third-john",
+      "slug": "third-john",
+      "name": "3 John",
+      "shortName": "3 John",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 1,
+      "order": 82
+    },
+    {
+      "id": "jude",
+      "slug": "jude",
+      "name": "Jude",
+      "shortName": "Jude",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 1,
+      "order": 83
+    },
+    {
+      "id": "revelation",
+      "slug": "revelation",
+      "name": "Revelation",
+      "shortName": "Rev",
+      "canonDivision": "new-testament",
+      "testamentLabel": "New Testament",
+      "chapterCount": 22,
+      "order": 84
+    }
+  ]
+}

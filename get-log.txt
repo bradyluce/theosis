@@ -1,0 +1,109 @@
+﻿commit 4dc5485b47f22a0bf94ab3919d50a749bd0a6ade
+Author: Brady Luce <bkluce@icloud.com>
+Date:   Wed Mar 11 11:59:10 2026 -0500
+
+    Add ingestion scripts and ignore raw data
+    
+    Made-with: Cursor
+
+ .gitignore                          |    6 +
+ package-lock.json                   |  520 ++++++++++++++
+ package.json                        |    1 +
+ scripts/ingest/ingest.ts            |  258 +++++++
+ scripts/ingest/parse-brenton-txt.ts |  160 +++++
+ scripts/ingest/parse-byz-txt.ts     |   57 ++
+ scripts/ingest/parse-eob-txt.ts     |  200 ++++++
+ scripts/ingest/parse-greek-txt.ts   |  107 +++
+ scripts/ingest/parse-osis-xml.ts    |   97 +++
+ scripts/ingest/parse-rsv-xml.ts     |   46 ++
+ scripts/ingest/parse-uan.ts         |   86 +++
+ scripts/ingest/shared.ts            |  200 ++++++
+ src/lib/content/book-canon.ts       | 1346 +++++++++++++++++++++++++++++++++++
+ 13 files changed, 3084 insertions(+)
+
+commit 952ae4a1f3ef69af337b9cd7435c4ec22f01b6e9
+Author: Brady Luce <bkluce@icloud.com>
+Date:   Mon Mar 9 21:34:14 2026 -0500
+
+    Document content ingestion changes
+
+ README.md                                          |  92 +++-
+ content/acquisition/checklist.json                 | 118 +++++
+ content/mock/.gitkeep                              |   1 +
+ content/normalized/.gitkeep                        |   1 +
+ content/raw/.gitkeep                               |   1 +
+ docs/architecture.md                               | 108 ++++
+ docs/content-ingestion.md                          |  67 +++
+ docs/mock-vs-real.md                               |  32 ++
+ docs/product-plan.md                               |  64 +++
+ next.config.ts                                     |   4 +-
+ package-lock.json                                  |  84 ++-
+ package.json                                       |   8 +-
+ scripts/ingest/README.md                           |  12 +
+ .../bible/[translation]/[book]/[chapter]/page.tsx  |  34 ++
+ src/app/(shell)/bible/page.tsx                     |   5 +
+ src/app/(shell)/daily/page.tsx                     | 160 ++++++
+ src/app/(shell)/layout.tsx                         |   6 +
+ src/app/(shell)/library/page.tsx                   |  15 +
+ src/app/(shell)/library/people/[slug]/page.tsx     | 114 +++++
+ src/app/(shell)/library/works/[slug]/page.tsx      |  95 ++++
+ src/app/(shell)/profile/page.tsx                   |   5 +
+ src/app/(shell)/search/page.tsx                    |  13 +
+ src/app/globals.css                                |  71 ++-
+ src/app/layout.tsx                                 |  36 +-
+ src/app/page.tsx                                   |  66 +--
+ src/components/layout/app-shell.tsx                |  31 ++
+ src/components/layout/bottom-nav.tsx               |  41 ++
+ src/components/layout/brand-mark.tsx               |  25 +
+ src/components/layout/desktop-rail.tsx             |  63 +++
+ src/components/layout/navigation-items.ts          |  40 ++
+ src/components/layout/page-header.tsx              |  34 ++
+ src/components/primitives/button.tsx               |  30 ++
+ src/components/primitives/pill.tsx                 |  25 +
+ src/components/primitives/segmented-control.tsx    |  48 ++
+ src/components/primitives/surface.tsx              |  25 +
+ src/domain/content/types.ts                        | 170 ++++++
+ src/domain/search/types.ts                         |  33 ++
+ src/domain/user/types.ts                           |  59 +++
+ src/features/bible/reader-experience.tsx           | 569 +++++++++++++++++++++
+ src/features/bible/reader-model.ts                 | 227 ++++++++
+ src/features/library/library-explorer.tsx          | 431 ++++++++++++++++
+ src/features/profile/profile-dashboard.tsx         | 211 ++++++++
+ src/features/search/reference-parser.ts            |  67 +++
+ src/features/search/search-engine.ts               | 298 +++++++++++
+ src/features/search/search-experience.tsx          | 189 +++++++
+ src/lib/content/index.ts                           |   6 +
+ src/lib/content/queries.ts                         | 211 ++++++++
+ src/lib/content/reference.ts                       |  36 ++
+ src/lib/content/seed/daily.ts                      |  66 +++
+ src/lib/content/seed/library.ts                    | 421 +++++++++++++++
+ src/lib/content/seed/profile.ts                    |  87 ++++
+ src/lib/content/seed/scripture.ts                  | 325 ++++++++++++
+ src/lib/user/use-study-state.ts                    | 178 +++++++
+ src/lib/utils.ts                                   |   6 +
+ 54 files changed, 5047 insertions(+), 117 deletions(-)
+
+commit 62629af46f1432670f8c94154f53830e4a376f10
+Author: Brady Luce <bkluce@icloud.com>
+Date:   Mon Mar 9 15:05:54 2026 -0500
+
+    Initial commit from Create Next App
+
+ .gitignore          |   41 +
+ README.md           |   36 +
+ eslint.config.mjs   |   18 +
+ next.config.ts      |    7 +
+ package-lock.json   | 6603 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ package.json        |   26 +
+ postcss.config.mjs  |    7 +
+ public/file.svg     |    1 +
+ public/globe.svg    |    1 +
+ public/next.svg     |    1 +
+ public/vercel.svg   |    1 +
+ public/window.svg   |    1 +
+ src/app/favicon.ico |  Bin 0 -> 25931 bytes
+ src/app/globals.css |   26 +
+ src/app/layout.tsx  |   34 +
+ src/app/page.tsx    |   65 +
+ tsconfig.json       |   34 +
+ 17 files changed, 6902 insertions(+)

@@ -35,6 +35,7 @@ export function parseUan(config: UanParseConfig): ParsedTranslationData {
       console.warn(`[${config.translationId}] Skipping unknown UAN prefix ${prefix}.`);
       continue;
     }
+    const canonEntry = entry;
 
     const lines = readFileSync(join(config.directoryPath, fileName), "utf8").split(/\r?\n/);
     let currentChapter = 0;
@@ -50,7 +51,7 @@ export function parseUan(config: UanParseConfig): ParsedTranslationData {
       const rawText = cleanUanVerseText(currentParts.join(" "));
       const text = transliterateAsciiGreek(rawText, "uan");
 
-      collector.addVerse(entry, currentChapter, currentVerseNumber, text, {
+      collector.addVerse(canonEntry, currentChapter, currentVerseNumber, text, {
         paragraphStart: currentVerseNumber === 1,
       });
 

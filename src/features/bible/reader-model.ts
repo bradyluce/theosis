@@ -6,20 +6,23 @@ import type {
   CrossReference,
 } from "@/domain/content/types";
 import {
-  getAvailableTranslations,
-  getBookBySlug,
   getChapterCommentary,
-  getChapterSummary,
-  getChapterVerses,
   getCrossReferencesForVerse,
   getDirectCommentaryForVerse,
   getPersonById,
   getRelatedEntriesForVerse,
   getSourceById,
-  getTranslationBySlug,
-  getVerseComparisons,
   getWorkById,
 } from "@/lib/content";
+import {
+  getAvailableTranslations,
+  getBookBySlug,
+  getChapterSummary,
+  getChapterVerses,
+  getTranslationBySlug,
+  getVerseComparisons,
+  getAvailableBooks,
+} from "@/lib/bible/server-store";
 
 export type ReaderCommentaryCard = {
   id: string;
@@ -77,6 +80,12 @@ export type ReaderModel = {
     href: string;
   }>;
   availablePassages: ReaderJumpLink[];
+  booksForPicker: Array<{
+    slug: string;
+    name: string;
+    testamentLabel: BibleBook["testamentLabel"];
+    chapterCount: number;
+  }>;
   verses: ReaderVerseCard[];
 };
 
@@ -132,7 +141,7 @@ function resolveWitnesses(
 function resolveCrossReferences(verseId: string): ReaderCrossReference[] {
   return getCrossReferencesForVerse(verseId).map((entry) => ({
     ...entry,
-    href: `/bible/osb/${entry.target.bookSlug}/${entry.target.chapterNumber}`,
+    href: `/bible/kjva/${entry.target.bookSlug}/${entry.target.chapterNumber}`,
   }));
 }
 
@@ -141,22 +150,22 @@ function getPassageLinks(): ReaderJumpLink[] {
     {
       label: "John 1",
       description: "The eternal Word and the Incarnation.",
-      href: "/bible/osb/john/1",
+      href: "/bible/kjva/john/1",
     },
     {
       label: "Genesis 1",
       description: "Creation, light, and the beginning.",
-      href: "/bible/osb/genesis/1",
+      href: "/bible/kjva/genesis/1",
     },
     {
       label: "2 Peter 1",
       description: "Partakers of the divine nature.",
-      href: "/bible/osb/second-peter/1",
+      href: "/bible/kjva/second-peter/1",
     },
     {
       label: "Wisdom 7",
       description: "Wisdom imagery and divine light.",
-      href: "/bible/osb/wisdom/7",
+      href: "/bible/kjva/wisdom/7",
     },
   ];
 }
@@ -214,6 +223,17 @@ export function buildReaderModel(
     getChapterCommentary(book.slug, chapterNumber),
   );
 
+  const booksForPicker = getAvailableBooks()
+    .filter((candidate) =>
+      Boolean(getChapterSummary(translation.id, candidate.slug, 1)),
+    )
+    .map((candidate) => ({
+      slug: candidate.slug,
+      name: candidate.name,
+      testamentLabel: candidate.testamentLabel,
+      chapterCount: candidate.chapterCount,
+    }));
+
   return {
     translation,
     book,
@@ -222,6 +242,7 @@ export function buildReaderModel(
     chapterCommentary,
     availableTranslations,
     availablePassages: getPassageLinks(),
+    booksForPicker,
     verses: verseCards,
   };
 }

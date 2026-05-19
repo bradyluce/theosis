@@ -1,0 +1,240 @@
+{
+  "corpus_id": "catena_aurea_matthew",
+  "title": "Catena Aurea on the Gospel of Matthew",
+  "author": "Thomas Aquinas (compiler)",
+  "translation": "John Henry Parker / J.G.F. and J. Rivington, London, 1842",
+  "source": {
+    "primary": "Christian Classics Ethereal Library (CCEL)",
+    "base_url": "https://www.ccel.org/ccel/aquinas/catena1/",
+    "url_pattern": "catena1.ii.{roman_numeral}.html",
+    "license_note": "Public domain text (1842 translation). CCEL digitization freely accessible.",
+    "retrieved_date": "2026-05-19"
+  },
+  "content": {
+    "book": "Matthew",
+    "chapters": 28,
+    "chapter_urls": {
+      "1": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.i.html",
+      "2": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.ii.html",
+      "3": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.iii.html",
+      "4": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.iv.html",
+      "5": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.v.html",
+      "6": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.vi.html",
+      "7": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.vii.html",
+      "8": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.viii.html",
+      "9": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.ix.html",
+      "10": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.x.html",
+      "11": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xi.html",
+      "12": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xii.html",
+      "13": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xiii.html",
+      "14": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xiv.html",
+      "15": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xv.html",
+      "16": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xvi.html",
+      "17": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xvii.html",
+      "18": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xviii.html",
+      "19": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xix.html",
+      "20": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xx.html",
+      "21": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxi.html",
+      "22": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxii.html",
+      "23": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxiii.html",
+      "24": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxiv.html",
+      "25": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxv.html",
+      "26": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxvi.html",
+      "27": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxvii.html",
+      "28": "https://www.ccel.org/ccel/aquinas/catena1/catena1.ii.xxviii.html"
+    }
+  },
+  "html_structure": {
+    "chapter_heading": "## Chapter N (line starting with ##)",
+    "page_numbers": "standalone integer lines embedded from 1842 print edition",
+    "verse_sections": "grouped by consecutive verse text lines before each --- separator",
+    "verse_format": "N. Verse text here.",
+    "section_separator": "--- (horizontal rule)",
+    "author_attribution_format": "Author_Name[, Abbreviated_Work[, ref]]: Commentary text.",
+    "author_examples": [
+      "Jerome: text",
+      "Chrys., Hom. 4: text",
+      "Aug., de Serm. Dom. in Mont. i. 1: text",
+      "Pseudo-Chrys.: text",
+      "Remig.: text",
+      "Gloss. interlin.: text"
+    ],
+    "editorial_footnotes": "[ed. note: ...] inline",
+    "bible_xrefs": "[[Book N:N](ccel_url)] inline"
+  },
+  "known_authors": [
+    "Augustine",
+    "Chrysostom",
+    "Jerome",
+    "Ambrose",
+    "Hilary",
+    "Bede",
+    "Rabanus",
+    "Remigius",
+    "Gregory",
+    "Gloss",
+    "Pseudo-Chrysostom",
+    "Pseudo-Athanasius",
+    "Cyril of Alexandria",
+    "Leo",
+    "Isidore",
+    "Theodotus"
+  ],
+  "parsing_challenges": [
+    "Print page numbers (standalone integer lines) must be stripped",
+    "Some verse sections group multiple verses before the --- separator",
+    "Continuation paragraphs: occasional author-less paragraphs continue previous author",
+    "Editorial footnotes [ed. note:] embedded inline in commentary text",
+    "Author abbreviations are inconsistent (Aug. vs Augustine vs Aug)",
+    "Bible cross-reference links must be cleaned to keep ref text only"
+  ],
+  "raw_files": {
+    "1": {
+      "filename": "chapter_01.txt",
+      "size_bytes": 108465,
+      "verse_sections": 21
+    },
+    "2": {
+      "filename": "chapter_02.txt",
+      "size_bytes": 70819,
+      "verse_sections": 20
+    },
+    "3": {
+      "filename": "chapter_03.txt",
+      "size_bytes": 61501,
+      "verse_sections": 14
+    },
+    "4": {
+      "filename": "chapter_04.txt",
+      "size_bytes": 63779,
+      "verse_sections": 14
+    },
+    "5": {
+      "filename": "chapter_05.txt",
+      "size_bytes": 115935,
+      "verse_sections": 36
+    },
+    "6": {
+      "filename": "chapter_06.txt",
+      "size_bytes": 115661,
+      "verse_sections": 40
+    },
+    "7": {
+      "filename": "chapter_07.txt",
+      "size_bytes": 76106,
+      "verse_sections": 20
+    },
+    "8": {
+      "filename": "chapter_08.txt",
+      "size_bytes": 78386,
+      "verse_sections": 14
+    },
+    "9": {
+      "filename": "chapter_09.txt",
+      "size_bytes": 70557,
+      "verse_sections": 15
+    },
+    "10": {
+      "filename": "chapter_10.txt",
+      "size_bytes": 94513,
+      "verse_sections": 28
+    },
+    "11": {
+      "filename": "chapter_11.txt",
+      "size_bytes": 64436,
+      "verse_sections": 18
+    },
+    "12": {
+      "filename": "chapter_12.txt",
+      "size_bytes": 110151,
+      "verse_sections": 29
+    },
+    "13": {
+      "filename": "chapter_13.txt",
+      "size_bytes": 98981,
+      "verse_sections": 23
+    },
+    "14": {
+      "filename": "chapter_14.txt",
+      "size_bytes": 58016,
+      "verse_sections": 11
+    },
+    "15": {
+      "filename": "chapter_15.txt",
+      "size_bytes": 57914,
+      "verse_sections": 12
+    },
+    "16": {
+      "filename": "chapter_16.txt",
+      "size_bytes": 59552,
+      "verse_sections": 12
+    },
+    "17": {
+      "filename": "chapter_17.txt",
+      "size_bytes": 52425,
+      "verse_sections": 13
+    },
+    "18": {
+      "filename": "chapter_18.txt",
+      "size_bytes": 63601,
+      "verse_sections": 11
+    },
+    "19": {
+      "filename": "chapter_19.txt",
+      "size_bytes": 67669,
+      "verse_sections": 13
+    },
+    "20": {
+      "filename": "chapter_20.txt",
+      "size_bytes": 56914,
+      "verse_sections": 9
+    },
+    "21": {
+      "filename": "chapter_21.txt",
+      "size_bytes": 81533,
+      "verse_sections": 12
+    },
+    "22": {
+      "filename": "chapter_22.txt",
+      "size_bytes": 68045,
+      "verse_sections": 9
+    },
+    "23": {
+      "filename": "chapter_23.txt",
+      "size_bytes": 72078,
+      "verse_sections": 21
+    },
+    "24": {
+      "filename": "chapter_24.txt",
+      "size_bytes": 104574,
+      "verse_sections": 24
+    },
+    "25": {
+      "filename": "chapter_25.txt",
+      "size_bytes": 72264,
+      "verse_sections": 6
+    },
+    "26": {
+      "filename": "chapter_26.txt",
+      "size_bytes": 113930,
+      "verse_sections": 26
+    },
+    "27": {
+      "filename": "chapter_27.txt",
+      "size_bytes": 98440,
+      "verse_sections": 20
+    },
+    "28": {
+      "filename": "chapter_28.txt",
+      "size_bytes": 8632,
+      "verse_sections": 7
+    }
+  },
+  "status": "raw_archive_complete",
+  "stats": {
+    "total_chapters": 28,
+    "total_size_bytes": 2164877,
+    "total_verse_sections": 498,
+    "retrieved_date": "2026-05-19"
+  }
+}

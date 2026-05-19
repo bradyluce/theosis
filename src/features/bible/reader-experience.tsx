@@ -418,16 +418,68 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
-          <SegmentedControl
-            items={model.availableTranslations.map((item) => ({
-              value: item.href,
-              label: item.label,
-              caption: item.caption,
-            }))}
-            value={`/bible/${model.translation.slug}/${model.book.slug}/${model.chapter.chapterNumber}`}
-            onChange={(nextHref) => router.push(nextHref)}
-          />
+        <div className="space-y-3">
+          <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
+            <SegmentedControl
+              items={model.availableTranslations.map((item) => ({
+                value: item.href,
+                label: item.label,
+                caption: item.caption,
+              }))}
+              value={`/bible/${model.translation.slug}/${model.book.slug}/${model.chapter.chapterNumber}`}
+              onChange={(nextHref) => router.push(nextHref)}
+            />
+
+            <div className="flex flex-wrap gap-3">
+              <div className="flex items-center gap-2">
+                <span className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">
+                  Book
+                </span>
+                <select
+                  value={model.book.slug}
+                  onChange={(event) => {
+                    const nextBookSlug = event.target.value;
+                    router.push(
+                      `/bible/${model.translation.slug}/${nextBookSlug}/1`,
+                    );
+                  }}
+                  className="rounded-[10px] border border-line bg-surface px-3 py-2 text-sm text-ink outline-none transition-colors duration-200 hover:border-line-strong"
+                >
+                  {model.booksForPicker.map((bookOption) => (
+                    <option key={bookOption.slug} value={bookOption.slug}>
+                      {bookOption.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-[0.7rem] uppercase tracking-[0.18em] text-ink-soft">
+                  Chapter
+                </span>
+                <select
+                  value={model.chapter.chapterNumber}
+                  onChange={(event) => {
+                    const nextChapter = Number.parseInt(event.target.value, 10);
+                    if (Number.isNaN(nextChapter)) return;
+                    router.push(
+                      `/bible/${model.translation.slug}/${model.book.slug}/${nextChapter}`,
+                    );
+                  }}
+                  className="rounded-[10px] border border-line bg-surface px-3 py-2 text-sm text-ink outline-none transition-colors duration-200 hover:border-line-strong"
+                >
+                  {Array.from(
+                    { length: model.book.chapterCount },
+                    (_value, index) => index + 1,
+                  ).map((chapterNumber) => (
+                    <option key={chapterNumber} value={chapterNumber}>
+                      {chapterNumber}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          </div>
 
           <div className="flex flex-wrap gap-2">
             {model.availablePassages.map((passage) => {

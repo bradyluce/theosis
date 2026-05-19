@@ -309,7 +309,7 @@ export const commentaryEntries: CommentaryEntry[] = [
   {
     id: "commentary-chrysostom-john-1-1",
     relation: "verse",
-    targetVerseId: createVerseId("osb", "john", 1, 1),
+    targetVerseId: createVerseId("kjva", "john", 1, 1),
     topicSlugs: ["logos"],
     personId: "john-chrysostom",
     workId: "homilies-on-john",
@@ -325,7 +325,7 @@ export const commentaryEntries: CommentaryEntry[] = [
   {
     id: "commentary-cyril-john-1-1",
     relation: "verse",
-    targetVerseId: createVerseId("osb", "john", 1, 1),
+    targetVerseId: createVerseId("kjva", "john", 1, 1),
     topicSlugs: ["logos"],
     personId: "cyril-of-alexandria",
     workId: "commentary-on-john",
@@ -357,7 +357,7 @@ export const commentaryEntries: CommentaryEntry[] = [
   {
     id: "commentary-theophylact-john-1-14",
     relation: "verse",
-    targetVerseId: createVerseId("osb", "john", 1, 14),
+    targetVerseId: createVerseId("kjva", "john", 1, 14),
     topicSlugs: ["incarnation"],
     personId: "theophylact-of-ohrid",
     workId: "explanation-of-john",
@@ -373,7 +373,7 @@ export const commentaryEntries: CommentaryEntry[] = [
   {
     id: "commentary-chrysostom-john-1-4",
     relation: "verse",
-    targetVerseId: createVerseId("osb", "john", 1, 4),
+    targetVerseId: createVerseId("kjva", "john", 1, 4),
     topicSlugs: ["light"],
     personId: "john-chrysostom",
     workId: "homilies-on-john",
@@ -389,7 +389,7 @@ export const commentaryEntries: CommentaryEntry[] = [
   {
     id: "related-athanasius-second-peter-1-4",
     relation: "related-topic",
-    targetVerseId: createVerseId("osb", "second-peter", 1, 4),
+    targetVerseId: createVerseId("kjva", "second-peter", 1, 4),
     topicSlugs: ["theosis", "incarnation"],
     personId: "athanasius-the-great",
     workId: "on-the-incarnation",
@@ -405,7 +405,7 @@ export const commentaryEntries: CommentaryEntry[] = [
   {
     id: "related-palamas-second-peter-1-4",
     relation: "related-topic",
-    targetVerseId: createVerseId("osb", "second-peter", 1, 4),
+    targetVerseId: createVerseId("kjva", "second-peter", 1, 4),
     topicSlugs: ["theosis", "light"],
     personId: "gregory-palamas",
     workId: "triads",

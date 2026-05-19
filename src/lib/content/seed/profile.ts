@@ -5,14 +5,14 @@ export const userProfileSeed: UserProfileSnapshot = {
   savedVerses: [
     {
       id: "saved-john-1-14",
-      verseId: createVerseId("osb", "john", 1, 14),
-      translationId: "osb",
+      verseId: createVerseId("kjva", "john", 1, 14),
+      translationId: "kjva",
       savedAt: "2026-03-07T09:15:00.000Z",
     },
     {
       id: "saved-second-peter-1-4",
-      verseId: createVerseId("osb", "second-peter", 1, 4),
-      translationId: "osb",
+      verseId: createVerseId("kjva", "second-peter", 1, 4),
+      translationId: "kjva",
       savedAt: "2026-03-08T20:45:00.000Z",
     },
   ],
@@ -30,7 +30,7 @@ export const userProfileSeed: UserProfileSnapshot = {
     {
       id: "note-john-1-1",
       targetType: "verse",
-      targetId: createVerseId("osb", "john", 1, 1),
+      targetId: createVerseId("kjva", "john", 1, 1),
       title: "Beginning and eternity",
       body: "The opening refuses to let me reduce Christ to an inspired teacher. John starts where creation cannot reach.",
       updatedAt: "2026-03-08T21:00:00.000Z",
@@ -68,8 +68,8 @@ export const userProfileSeed: UserProfileSnapshot = {
   readingHistory: [
     {
       id: "history-john-1",
-      label: "John 1 in OSB",
-      href: "/bible/osb/john/1",
+      label: "John 1 in KJVA",
+      href: "/bible/kjva/john/1",
       visitedAt: "2026-03-09T07:40:00.000Z",
     },
     {
@@ -81,7 +81,7 @@ export const userProfileSeed: UserProfileSnapshot = {
   ],
   preferences: {
     calendarPreference: "new-calendar",
-    primaryTranslationId: "osb",
+    primaryTranslationId: "kjva",
     patronSaintPersonId: "john-chrysostom",
   },
 };
