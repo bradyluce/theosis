@@ -85,6 +85,110 @@
     "05-25": [
       { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 4, "verseStart": 6, "verseEnd": 15, "label": "Epistle of the Forerunner" },
       { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 11, "verseStart": 2, "verseEnd": 15, "label": "Gospel of the Forerunner" }
+    ],
+    "06-24": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 13, "verseStart": 11, "verseEnd": 14, "label": "Epistle of the Forerunner's Nativity" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 1, "verseStart": 1, "verseEnd": 25, "label": "Gospel of the Forerunner's Nativity" }
+    ],
+    "06-29": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 11, "verseStart": 21, "verseEnd": 33, "label": "Epistle of the Chief Apostles" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 16, "verseStart": 13, "verseEnd": 19, "label": "Gospel of the Chief Apostles" }
+    ],
+    "07-20": [
+      { "kind": "epistle", "bookSlug": "james", "bookName": "James", "chapter": 5, "verseStart": 10, "verseEnd": 20, "label": "Epistle of the Prophet" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 4, "verseStart": 22, "verseEnd": 30, "label": "Gospel of the Prophet" }
+    ],
+    "07-22": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 9, "verseStart": 2, "verseEnd": 12, "label": "Epistle of the Equal-to-the-Apostles" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 8, "verseStart": 1, "verseEnd": 3, "label": "Gospel of the Equal-to-the-Apostles" }
+    ],
+    "08-06": [
+      { "kind": "epistle", "bookSlug": "second-peter", "bookName": "2 Peter", "chapter": 1, "verseStart": 10, "verseEnd": 19, "label": "Epistle of the Transfiguration" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 17, "verseStart": 1, "verseEnd": 9, "label": "Gospel of the Transfiguration" }
+    ],
+    "08-15": [
+      { "kind": "epistle", "bookSlug": "philippians", "bookName": "Philippians", "chapter": 2, "verseStart": 5, "verseEnd": 11, "label": "Epistle of the Dormition" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 10, "verseStart": 38, "verseEnd": 42, "label": "Gospel of the Dormition" }
+    ],
+    "08-29": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 13, "verseStart": 25, "verseEnd": 32, "label": "Epistle of the Beheading" },
+      { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 6, "verseStart": 14, "verseEnd": 30, "label": "Gospel of the Beheading" }
+    ],
+    "09-08": [
+      { "kind": "epistle", "bookSlug": "philippians", "bookName": "Philippians", "chapter": 2, "verseStart": 5, "verseEnd": 11, "label": "Epistle of the Nativity of the Theotokos" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 10, "verseStart": 38, "verseEnd": 42, "label": "Gospel of the Nativity of the Theotokos" }
+    ],
+    "09-14": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 1, "verseStart": 18, "verseEnd": 24, "label": "Epistle of the Cross" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 19, "verseStart": 6, "verseEnd": 35, "label": "Gospel of the Cross" }
+    ],
+    "11-08": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 2, "verseStart": 2, "verseEnd": 10, "label": "Epistle of the Bodiless Powers" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 10, "verseStart": 16, "verseEnd": 21, "label": "Gospel of the Bodiless Powers" }
+    ],
+    "11-21": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 9, "verseStart": 1, "verseEnd": 7, "label": "Epistle of the Entrance" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 10, "verseStart": 38, "verseEnd": 42, "label": "Gospel of the Entrance" }
+    ],
+    "11-30": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 4, "verseStart": 9, "verseEnd": 16, "label": "Epistle of the First-Called" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 1, "verseStart": 35, "verseEnd": 51, "label": "Gospel of the First-Called" }
+    ],
+    "12-06": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 13, "verseStart": 17, "verseEnd": 21, "label": "Epistle of the Wonderworker" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 6, "verseStart": 17, "verseEnd": 23, "label": "Gospel of the Wonderworker" }
+    ],
+    "12-25": [
+      { "kind": "epistle", "bookSlug": "galatians", "bookName": "Galatians", "chapter": 4, "verseStart": 4, "verseEnd": 7, "label": "Epistle of the Nativity of Christ" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 2, "verseStart": 1, "verseEnd": 12, "label": "Gospel of the Nativity of Christ" }
+    ],
+    "12-27": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 6, "verseStart": 8, "verseEnd": 15, "label": "Epistle of the Protomartyr" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 21, "verseStart": 33, "verseEnd": 42, "label": "Gospel of the Protomartyr" }
+    ],
+    "01-01": [
+      { "kind": "epistle", "bookSlug": "colossians", "bookName": "Colossians", "chapter": 2, "verseStart": 8, "verseEnd": 12, "label": "Epistle of the Circumcision" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 2, "verseStart": 20, "verseEnd": 21, "label": "Gospel of the Circumcision" }
+    ],
+    "01-06": [
+      { "kind": "epistle", "bookSlug": "titus", "bookName": "Titus", "chapter": 2, "verseStart": 11, "verseEnd": 14, "label": "Epistle of the Theophany" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 3, "verseStart": 13, "verseEnd": 17, "label": "Gospel of the Theophany" }
+    ],
+    "01-07": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 19, "verseStart": 1, "verseEnd": 8, "label": "Epistle of the Forerunner" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 1, "verseStart": 29, "verseEnd": 34, "label": "Gospel of the Forerunner" }
+    ],
+    "01-17": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 13, "verseStart": 17, "verseEnd": 21, "label": "Epistle of St. Anthony" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 6, "verseStart": 17, "verseEnd": 23, "label": "Gospel of St. Anthony" }
+    ],
+    "01-25": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 12, "verseStart": 7, "verseEnd": 11, "label": "Epistle of the Theologian" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 10, "verseStart": 9, "verseEnd": 16, "label": "Gospel of the Theologian" }
+    ],
+    "01-30": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 13, "verseStart": 7, "verseEnd": 16, "label": "Epistle of the Three Hierarchs" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 5, "verseStart": 14, "verseEnd": 19, "label": "Gospel of the Three Hierarchs" }
+    ],
+    "02-02": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 7, "verseStart": 7, "verseEnd": 17, "label": "Epistle of the Meeting" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 2, "verseStart": 22, "verseEnd": 40, "label": "Gospel of the Meeting" }
+    ],
+    "03-09": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 12, "verseStart": 1, "verseEnd": 10, "label": "Epistle of the Forty Martyrs" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 20, "verseStart": 1, "verseEnd": 16, "label": "Gospel of the Forty Martyrs" }
+    ],
+    "03-25": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 2, "verseStart": 11, "verseEnd": 18, "label": "Epistle of the Annunciation" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 1, "verseStart": 24, "verseEnd": 38, "label": "Gospel of the Annunciation" }
+    ],
+    "04-23": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 12, "verseStart": 1, "verseEnd": 11, "label": "Epistle of St. George" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 15, "verseStart": 17, "verseEnd": 27, "label": "Gospel of St. George" }
+    ],
+    "04-25": [
+      { "kind": "epistle", "bookSlug": "first-peter", "bookName": "1 Peter", "chapter": 5, "verseStart": 6, "verseEnd": 14, "label": "Epistle of the Evangelist Mark" },
+      { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 6, "verseStart": 7, "verseEnd": 13, "label": "Gospel of the Evangelist Mark" }
     ]
   }
 }

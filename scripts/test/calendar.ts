@@ -20,6 +20,7 @@ import {
 import { composeDailyCommemoration } from "../../src/lib/calendar/composer";
 import { composeDailyReadings } from "../../src/lib/calendar/readings";
 import { composeDailyHymns } from "../../src/lib/calendar/hymns";
+import { composeDailyFast } from "../../src/lib/calendar/fasts";
 import type { CalendarData } from "../../src/lib/calendar/types";
 
 // Load the normalized data directly — bypasses the server-only data.ts wrapper
@@ -138,16 +139,12 @@ assertEqual(
 const may19 = composeDailyCommemoration(utc(2026, 4, 19), data);
 assertEqual("May 19 2026 -> Menaion primary", may19.title, "Hieromartyr Patrick, Bishop of Prusa");
 
-// A day genuinely outside both the Menaion and the paschal cycle:
-// June 21 2026 (pdist = 70, past All Saints at +56) with no Menaion entry yet.
-const june21 = composeDailyCommemoration(utc(2026, 5, 21), data);
-assertEqual(
-  "June 21 -> fallback when neither cycle has an entry",
-  june21.title,
-  "A quiet day in the Church year",
-);
 // Sanity check on the cycle-exit math itself.
 assertEqual("pdist(2026-06-21) = 70 (outside cycle)", paschalDayOffset(utc(2026, 5, 21)), 70);
+// June 21 is outside the paschal cycle but now has a Menaion entry — composer
+// falls through to that.
+const june21 = composeDailyCommemoration(utc(2026, 5, 21), data);
+assertEqual("June 21 -> Menaion when outside paschal cycle", june21.title, "Martyr Julian of Tarsus");
 
 // --- Lectionary ---
 
@@ -187,6 +184,57 @@ assertEqual(
 
 const may19Hymns = composeDailyHymns(utc(2026, 4, 19), data);
 assertEqual("May 19 2026 -> empty hymns (no entries)", may19Hymns.length, 0);
+
+// --- Fasting rules ---
+
+// Pascha 2026 = Apr 12. Bright Week pdist 1-6 = fast-free.
+assertEqual("Bright Monday 2026 -> no fast", composeDailyFast(utc(2026, 3, 13)), undefined);
+// Pentecost week (pdist 50-56) = fast-free.
+assertEqual("Day after Pentecost 2026 -> no fast", composeDailyFast(utc(2026, 5, 1)), undefined);
+// Wednesday in ordinary time = weekly Wed fast.
+assertEqual("Sept 16 2026 (Wed) -> weekly fast", composeDailyFast(utc(2026, 8, 16)), "Wednesday and Friday Fast");
+// Friday during Bright Week = fast-free overrides weekly Wed/Fri.
+assertEqual("Bright Friday 2026 -> no fast (overrides weekly)", composeDailyFast(utc(2026, 3, 17)), undefined);
+// Aug 5 2026 -> Dormition Fast
+assertEqual("Aug 5 2026 -> Dormition Fast", composeDailyFast(utc(2026, 7, 5)), "Dormition Fast");
+// Dec 1 -> Nativity Fast
+assertEqual("Dec 1 2026 -> Nativity Fast", composeDailyFast(utc(2026, 11, 1)), "Nativity Fast");
+// Dec 25 -> no fast (Sviatki begins)
+assertEqual("Dec 25 -> no fast (Sviatki)", composeDailyFast(utc(2026, 11, 25)), undefined);
+// Feb 24 2026 = Tuesday, pdist = (2026-04-12 minus 2026-02-24) = -47, Great Lent
+assertEqual("Feb 24 2026 -> Great Lent", composeDailyFast(utc(2026, 1, 24)), "Great Lent");
+// April 8 2026 = Holy Wednesday (pdist -4)
+assertEqual("Holy Wed 2026 -> Holy Week", composeDailyFast(utc(2026, 3, 8)), "Holy Week");
+// Sept 8 2026 (Nativity of Theotokos) is a Tuesday — not Wed/Fri, no major fast → no fast
+assertEqual("Sept 8 2026 (Tue, no major fast) -> undefined", composeDailyFast(utc(2026, 8, 8)), undefined);
+
+// --- Year-coverage smoke tests across months ---
+
+// Pick one day in each month and confirm we get a real Menaion title.
+const sampleDates: [string, Date, string][] = [
+  ["Sept 8 -> Nativity of Theotokos", utc(2026, 8, 8), "The Nativity of Our Most Holy Lady the Theotokos and Ever-Virgin Mary"],
+  ["Sept 14 -> Exaltation of the Cross", utc(2026, 8, 14), "The Universal Exaltation of the Precious and Life-giving Cross"],
+  ["Nov 21 -> Entrance of the Theotokos", utc(2026, 10, 21), "The Entrance of the Most Holy Theotokos into the Temple"],
+  ["Dec 25 -> Nativity of Christ", utc(2026, 11, 25), "The Nativity in the Flesh of Our Lord, God, and Saviour Jesus Christ"],
+  ["Jan 6 -> Theophany", utc(2026, 0, 6), "The Holy Theophany of Our Lord, God, and Saviour Jesus Christ"],
+  ["Feb 2 -> Meeting of the Lord", utc(2026, 1, 2), "The Meeting of Our Lord, God, and Saviour Jesus Christ in the Temple"],
+  ["Mar 25 -> Annunciation", utc(2026, 2, 25), "The Annunciation to Our Most Holy Lady the Theotokos and Ever-Virgin Mary"],
+  ["Aug 6 -> Transfiguration", utc(2026, 7, 6), "Holy Transfiguration of Our Lord, God, and Saviour Jesus Christ"],
+  ["Aug 15 -> Dormition", utc(2026, 7, 15), "The Dormition of Our Most Holy Lady the Theotokos and Ever-Virgin Mary"],
+  ["Dec 6 -> St. Nicholas", utc(2026, 11, 6), "St. Nicholas the Wonderworker, Archbishop of Myra in Lycia"],
+  ["Jan 17 -> St. Anthony", utc(2026, 0, 17), "St. Anthony the Great, father of monks"],
+  ["Jan 30 -> Three Hierarchs", utc(2026, 0, 30), "The Three Holy Hierarchs: Basil the Great, Gregory the Theologian, John Chrysostom"],
+  ["April 23 -> St. George", utc(2026, 3, 23), "Great-martyr George the Trophy-bearer"],
+];
+for (const [label, date, expectedTitle] of sampleDates) {
+  const c = composeDailyCommemoration(date, data);
+  assertEqual(`Menaion: ${label}`, c.title, expectedTitle);
+}
+
+// Spot-check a Great-Feast hymn made it through.
+const nativityHymns = composeDailyHymns(utc(2026, 11, 25), data);
+assertEqual("Nativity of Christ -> 2 hymns", nativityHymns.length, 2);
+assertEqual("Nativity Troparion", nativityHymns[0].title, "Troparion of the Nativity of Christ");
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed.`);

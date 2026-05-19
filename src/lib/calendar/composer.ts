@@ -1,4 +1,5 @@
 import type { DailyCommemoration } from "@/domain/content/types";
+import { composeDailyFast } from "@/lib/calendar/fasts";
 import {
   getPaschaDate,
   gregorianMonthDay,
@@ -55,9 +56,9 @@ export function composeDailyCommemoration(
     summary,
     saintIds: [], // Saint Person records are populated in Phase E (editorial).
     feastLabel,
-    fastLabel: undefined, // Fasting rules are a Phase B/F slice.
-    readingIds: [], // Lectionary mapping is the next slice (Phase A.2).
-    hymnIds: [], // Hymn corpus arrives in Phase D.
+    fastLabel: composeDailyFast(date, { calendarSystem }),
+    readingIds: [], // Lectionary is composed separately via composeDailyReadings.
+    hymnIds: [], // Hymns are composed separately via composeDailyHymns.
     lifeExcerpt,
     sourceId: "source-calendar-normalized",
   };
