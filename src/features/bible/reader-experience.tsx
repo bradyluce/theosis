@@ -197,23 +197,6 @@ function StudyPanel({
         ) : null}
       </div>
 
-      {selectedVerse.witnesses.length > 0 ? (
-        <div className="grid gap-3">
-          {selectedVerse.witnesses.map((witness) => (
-            <div
-              key={witness.id}
-              className="rounded-[12px] border border-line bg-background px-4 py-4"
-              dir={witness.direction}
-            >
-              <p className="mb-2 text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                {witness.label} / {witness.caption}
-              </p>
-              <p className="font-serif text-lg leading-8 text-ink">{witness.text}</p>
-            </div>
-          ))}
-        </div>
-      ) : null}
-
       <SegmentedControl
         items={[
           { value: "commentary", label: "Commentary" },
@@ -563,13 +546,6 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                         ) : null}
                         {item.hasCrossReferences ? (
                           <Pill variant="subtle">Cross references</Pill>
-                        ) : null}
-                        {item.witnesses.length > 0 ? (
-                          <Pill variant="subtle">
-                            {item.witnesses.some((witness) => witness.kind === "original")
-                              ? "Original language"
-                              : "Comparison"}
-                          </Pill>
                         ) : null}
                       </div>
                     </div>
