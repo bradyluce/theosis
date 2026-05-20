@@ -29,8 +29,14 @@ function parseDateParam(raw: string | undefined): Date | undefined {
   return new Date(Date.UTC(year, month - 1, day));
 }
 
+// Today's ISO date in the user's local timezone (not UTC) — matches what a
+// human means by "today" when they click the picker's Today shortcut.
 function todayIso(): string {
-  return new Date().toISOString().slice(0, 10);
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 }
 
 export default async function DailyPage({ searchParams }: DailyPageProps) {
@@ -41,11 +47,15 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
   const saints = getPeopleByIds(daily.saintIds);
   const readings = getDailyReadings(date);
   const hymns = getDailyHymns(date);
+  // Format in UTC so the displayed weekday matches the ISO date we resolved
+  // from the URL — otherwise users west of UTC see the previous day's label
+  // when the underlying ISO is parsed as UTC midnight.
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
     month: "long",
     day: "numeric",
     year: "numeric",
+    timeZone: "UTC",
   }).format(new Date(daily.isoDate));
 
   return (

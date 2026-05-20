@@ -18,11 +18,15 @@ type MenaionEntry = {
 };
 type MenaionFile = { _meta: unknown; entries: Record<string, MenaionEntry> };
 
-// For each Gregorian MM-DD, optionally override `also` (replacing any
-// existing list) and/or `saintIds`. Either field may be omitted to leave
-// the existing value alone. The script always recomputes saintIds as the
-// de-duped union of (declared saintIds) + (saintId pulled from each also).
+// For each Gregorian MM-DD, optionally override fields of the menaion entry.
+// `title` and `summary` replace the primary commemoration outright (used when
+// a major saint should be promoted ahead of the older minor entry the bulk
+// menaion writer assigned). `also` replaces the additional-commemorations list.
+// `saintIds` is recomputed as the de-duped union of (declared saintIds) +
+// (saintId pulled from each also).
 type Enrichment = {
+  title?: string;
+  summary?: string;
   saintIds?: string[];
   also?: Commemoration[];
 };
@@ -252,22 +256,28 @@ const ENRICHMENTS: Record<string, Enrichment> = {
   },
   "06-19": { saintIds: ["apostle-jude"] },
   "07-11": {
+    title: "Holy Equal-to-the-Apostles Great Princess Olga of Kiev",
+    summary: "Princess of Kiev who in her old age traveled to Constantinople and was baptized by the patriarch, taking the name Helen. The first Christian ruler of the Rus', whose grandson Vladimir would complete the conversion of the land she had begun.",
     saintIds: ["olga-of-kiev"],
     also: [
-      { name: "Holy Equal-to-the-Apostles Great Princess Olga of Kiev", saintId: "olga-of-kiev", summary: "Grandmother of St. Vladimir, the first Christian ruler of the Rus'." },
+      { name: "Martyr Euphemia of Chalcedon (commemoration of her confirmation of the Tome at the Fourth Council)" },
     ],
   },
   "07-15": {
+    title: "Holy Equal-to-the-Apostles Great Prince Vladimir of Kiev",
+    summary: "Grandson of Olga, baptized at Cherson in 988 and called the Enlightener of the Rus' for bringing the whole nation into the Christian faith. He abolished capital punishment and opened the storehouses of his treasury to the poor.",
     saintIds: ["vladimir-of-kiev"],
     also: [
-      { name: "Holy Great Prince Vladimir of Kiev, Equal-to-the-Apostles", saintId: "vladimir-of-kiev", summary: "Enlightener of the Rus' who in 988 brought the whole nation into the Christian faith." },
+      { name: "Martyrs Cyricus and his mother Julitta", summary: "A widow of Iconium and her three-year-old son, martyred at Tarsus under Diocletian." },
     ],
   },
   "07-21": { saintIds: ["prophet-ezekiel"] },
   "07-24": {
+    title: "Holy Passion-Bearers Boris and Gleb",
+    summary: "Sons of Great Prince Vladimir, who at his death refused to take up arms against their elder brother Sviatopolk for fear of shedding kindred blood. Both were murdered by Sviatopolk's men. The first canonized saints of the Russian Church and the icon of non-resistance to evil.",
     saintIds: ["boris-and-gleb"],
     also: [
-      { name: "Holy Passion-Bearers Boris and Gleb", saintId: "boris-and-gleb", summary: "First canonized saints of the Russian Church, sons of Great Prince Vladimir who refused to take up arms against their brother." },
+      { name: "Great-martyr Christina of Tyre", summary: "A noble maiden of Tyre under Diocletian whose three rounds of torture ended in her piercing through with arrows." },
     ],
   },
   "08-09": {
@@ -312,11 +322,20 @@ const ENRICHMENTS: Record<string, Enrichment> = {
       { name: "St. Theophan the Recluse", saintId: "theophan-the-recluse", summary: "Nineteenth-century Russian recluse-bishop and great translator of the Philokalia into Russian." },
     ],
   },
-  "01-14": { saintIds: ["nina-of-georgia"] },
+  "01-14": {
+    title: "Holy Equal-to-the-Apostles Nina of Georgia",
+    summary: "A young woman of Cappadocia who in the early fourth century brought the Gospel to Georgia by way of Armenia, healing the Iberian queen Nana and converting King Mirian. With her cross made of vine wood bound by her own hair, she is the apostle of the Georgians.",
+    saintIds: ["nina-of-georgia"],
+    also: [
+      { name: "Holy Fathers slain at the monasteries of Sinai and Raithou", summary: "Fourth- and fifth-century monks killed by Bedouins while at prayer in their cells." },
+    ],
+  },
   "01-24": {
+    title: "Blessed Xenia of St. Petersburg, Fool-for-Christ",
+    summary: "Wife of a Russian colonel widowed young, who gave her wealth to the poor and took up the unkempt clothes and behavior of a fool-for-Christ, wandering St. Petersburg for forty-five years in voluntary poverty and unceasing prayer. The patroness of the homeless and of those who pray for their husbands.",
     saintIds: ["xenia-of-petersburg"],
     also: [
-      { name: "Blessed Xenia of St. Petersburg, Fool-for-Christ", saintId: "xenia-of-petersburg", summary: "Eighteenth-century Russian noblewoman who became a fool-for-Christ in Saint Petersburg after her husband's death." },
+      { name: "St. Xenia of Rome", summary: "A fifth-century Roman noblewoman who fled her arranged marriage to found a convent in Caria under an assumed name." },
     ],
   },
   "02-01": { saintIds: ["tryphon-the-martyr"] },
@@ -339,6 +358,8 @@ function main() {
       continue;
     }
 
+    if (enrichment.title !== undefined) entry.title = enrichment.title;
+    if (enrichment.summary !== undefined) entry.summary = enrichment.summary;
     if (enrichment.also !== undefined) {
       entry.also = enrichment.also;
     }

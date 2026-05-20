@@ -391,6 +391,28 @@ assertEqual(
   "Holy Equal-to-the-Apostles Constantine and his mother Helena",
 );
 
+// Enrichment-promoted primaries: when a major saint is the principal
+// commemoration of a day, the enrichment script overrides the bulk-written
+// Menaion title.
+const vladimirDay = composeDailyCommemoration(utc(2026, 6, 15), data);
+assertEqual(
+  "July 15 -> Vladimir of Kiev is the primary title",
+  vladimirDay.title,
+  "Holy Equal-to-the-Apostles Great Prince Vladimir of Kiev",
+);
+assertEqual(
+  "July 15 -> Cyricus and Julitta demoted to additionalCommemorations",
+  vladimirDay.additionalCommemorations[0].name,
+  "Martyrs Cyricus and his mother Julitta",
+);
+
+const borisGlebDay = composeDailyCommemoration(utc(2026, 6, 24), data);
+assertEqual(
+  "July 24 -> Boris and Gleb is the primary title",
+  borisGlebDay.title,
+  "Holy Passion-Bearers Boris and Gleb",
+);
+
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed.`);
   process.exit(1);
