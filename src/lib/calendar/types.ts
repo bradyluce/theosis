@@ -18,6 +18,10 @@ export type MenaionEntry = {
   also?: string[];
   // Optional feast classification — left soft until `Feast` becomes a first-class entity.
   feastRank?: "great" | "vigil" | "polyeleos" | "doxology" | "simple";
+  // Ids of `Person` records (in src/lib/content/seed/library.ts) commemorated
+  // on this day. Drives the saint-card panel on the Daily page; empty/absent
+  // means the day's saint has no library entry yet.
+  saintIds?: string[];
 };
 
 // One record per paschal-cycle day. pdist is the integer day offset from Pascha:
@@ -28,6 +32,7 @@ export type MovableCycleEntry = {
   summary: string;
   season?: "triodion" | "great-lent" | "holy-week" | "pascha" | "bright-week" | "pentecostarion";
   feastRank?: "great" | "vigil" | "polyeleos" | "doxology" | "simple";
+  saintIds?: string[];
 };
 
 // One scriptural reading slot in the lectionary. Keeps book + chapter + verses

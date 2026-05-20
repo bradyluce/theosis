@@ -49,12 +49,18 @@ export function composeDailyCommemoration(
     menaionEntry,
   );
 
+  // Union saint-Person ids from both layers (de-duped, preserving order).
+  const saintIds = uniquePreservingOrder([
+    ...(movableEntry?.saintIds ?? []),
+    ...(menaionEntry?.saintIds ?? []),
+  ]);
+
   return {
     id: `daily-${isoDate}`,
     isoDate,
     title,
     summary,
-    saintIds: [], // Saint Person records are populated in Phase E (editorial).
+    saintIds,
     feastLabel,
     fastLabel: composeDailyFast(date, { calendarSystem }),
     readingIds: [], // Lectionary is composed separately via composeDailyReadings.
@@ -124,6 +130,18 @@ function pickPrimary(
     lifeExcerpt: "Calendar coverage is being filled in incrementally; full-year content arrives in a later slice.",
     feastLabel: undefined,
   };
+}
+
+function uniquePreservingOrder<T>(values: readonly T[]): T[] {
+  const seen = new Set<T>();
+  const out: T[] = [];
+  for (const value of values) {
+    if (!seen.has(value)) {
+      seen.add(value);
+      out.push(value);
+    }
+  }
+  return out;
 }
 
 function formatIso(date: Date): string {

@@ -324,6 +324,29 @@ assertEqual("Mid-Pentecost gospel = John 7:14-30", midPent[1].scripture.label, "
 const satSouls = composeDailyReadings(utc(2026, 4, 30), data);
 assertEqual("Saturday of Souls -> Acts 28:1-31", satSouls[0].scripture.label, "Acts 28:1-31");
 
+// --- Saint linking (composer passes through Menaion saintIds) ---
+
+const nicholas = composeDailyCommemoration(utc(2026, 11, 6), data);
+assertEqual("Dec 6 saintIds = [nicholas-of-myra]", nicholas.saintIds, ["nicholas-of-myra"]);
+
+const threeHierarchs = composeDailyCommemoration(utc(2026, 0, 30), data);
+assertEqual(
+  "Jan 30 saintIds = [basil, gregory-theologian, chrysostom]",
+  threeHierarchs.saintIds,
+  ["basil-the-great", "gregory-the-theologian", "john-chrysostom"],
+);
+
+const peterPaul = composeDailyCommemoration(utc(2026, 5, 29), data);
+assertEqual(
+  "June 29 saintIds = [peter, paul]",
+  peterPaul.saintIds,
+  ["apostle-peter", "apostle-paul"],
+);
+
+// A day without a Person link returns empty saintIds (does not crash).
+const mayNineteen = composeDailyCommemoration(utc(2026, 4, 19), data);
+assertEqual("May 19 (no linked Person) -> saintIds empty", mayNineteen.saintIds, []);
+
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed.`);
   process.exit(1);
