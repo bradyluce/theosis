@@ -351,6 +351,14 @@ assertEqual(
   "Philippians 1:1-7",
 );
 
+// pdist 239 = Mon week 28 = Dec 7, 2026 (Hebrews begins)
+const week28Mon = composeDailyReadings(utc(2026, 11, 7), data);
+assertEqual(
+  "Week 28 Mon epistle = Hebrews 3:5-11",
+  week28Mon[0].scripture.label,
+  "Hebrews 3:5-11",
+);
+
 // pdist 116 = Thu week 10 (transition to 2 Cor) = Aug 6, 2026
 // — but Aug 6 is also Transfiguration (fixed), so readings layer.
 const aug6 = composeDailyReadings(utc(2026, 7, 6), data);
