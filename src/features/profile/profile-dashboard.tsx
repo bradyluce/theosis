@@ -5,8 +5,9 @@ import { useMemo } from "react";
 import { PageHeader } from "@/components/layout/page-header";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
-import { getPersonById, getVerseById } from "@/lib/content";
+import { getAllSaints, getPersonById, getVerseById } from "@/lib/content";
 import { useStudyState } from "@/lib/user/use-study-state";
+import { PatronSaintPicker } from "@/features/profile/patron-saint-picker";
 
 export function ProfileDashboard() {
   const savedVerses = useStudyState((state) => state.savedVerses);
@@ -34,6 +35,7 @@ export function ProfileDashboard() {
   );
 
   const patronSaint = getPersonById(preferences.patronSaintPersonId);
+  const allSaints = useMemo(() => getAllSaints(), []);
 
   return (
     <div className="space-y-8">
@@ -194,14 +196,23 @@ export function ProfileDashboard() {
                     : "Old calendar"}
                 </p>
               </div>
-              <div className="rounded-[12px] border border-line bg-background px-4 py-4">
-                <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                  Patron saint
-                </p>
-                <p className="mt-2 text-sm leading-7 text-ink-muted">
-                  {patronSaint?.name ?? "Not selected"}
-                </p>
-              </div>
+              <PatronSaintPicker
+                saints={allSaints}
+                currentPatronId={preferences.patronSaintPersonId}
+              />
+              {patronSaint ? (
+                <Link
+                  href={`/library/people/${patronSaint.slug}`}
+                  className="rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
+                >
+                  <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+                    About {patronSaint.honorific ? `${patronSaint.honorific} ` : ""}{patronSaint.name.split(",")[0]}
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-ink-muted">
+                    {patronSaint.summary}
+                  </p>
+                </Link>
+              ) : null}
             </div>
           </Surface>
         </div>

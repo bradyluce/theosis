@@ -27,8 +27,8 @@ Not yet shipped:
 
 - **Phase C — Saint metadata via Wikidata SPARQL** (decision: editorial Tier-A prose only — Wikidata still useful for QID cross-links and structured facts).
 - **Phase E — Long-form saint biographies** — current Menaion summaries are 1-2 sentences and Person summaries are paragraph-length; deeper hagiographical articles still owed.
-- **Person coverage expansion** — 55 records cover the major patron-saint choices and ancestors; the long tail (regional saints, Russian/Slavic wonderworkers, lesser martyrs) still has commemoration titles but no Person record / saint card.
-- **Patron-saint UI** — `patronSaintPersonId` is in the profile data model; the picker UI on the Profile page is the natural next step.
+- **Person coverage expansion** — 85 records cover the principal Apostles, hierarchs, monastics, prophets, Russian/Slavic saints, and modern wonderworkers; the long tail (regional saints, lesser martyrs) is still light.
+- **Patron-saint UI** ✅ — picker on Profile page (search + select), `setPatronSaint` action in Zustand, dedicated `/library/saints` browse list.
 - **Post-Pentecost weekday lectionary** — Monday–Saturday Romans/Corinthians/Matthew/Luke daily cycles for ordinary time. ~210 reading slots; Lukan jump rules are the subtle bit. (Pentecostarion weekdays are done.)
 - **Old Calendar mode + jurisdiction switching** — data model carries the axis; UI surface is deferred.
 - **Fasting depth** — current `fastLabel` is a string; could split into a richer record (strictness levels, daily exceptions like Annunciation in Lent, Theophany eve).

@@ -8,7 +8,10 @@
     "05-01": {
       "monthDay": "05-01",
       "title": "Prophet Jeremiah",
-      "summary": "The weeping prophet of Jerusalem, who foretold the captivity of his people and the new covenant written on the heart. Stoned by the exiles in Egypt for his witness."
+      "summary": "The weeping prophet of Jerusalem, who foretold the captivity of his people and the new covenant written on the heart. Stoned by the exiles in Egypt for his witness.",
+      "saintIds": [
+        "prophet-jeremiah"
+      ]
     },
     "05-02": {
       "monthDay": "05-02",
@@ -45,7 +48,10 @@
     "05-06": {
       "monthDay": "05-06",
       "title": "Righteous Job the Long-suffering",
-      "summary": "The patriarch of Uz, who lost his children, his health, and all his goods in a single day and yet would not curse God. The Church reads from his book on Holy Friday, the day of patient suffering."
+      "summary": "The patriarch of Uz, who lost his children, his health, and all his goods in a single day and yet would not curse God. The Church reads from his book on Holy Friday, the day of patient suffering.",
+      "saintIds": [
+        "job-the-long-suffering"
+      ]
     },
     "05-07": {
       "monthDay": "05-07",
@@ -65,13 +71,17 @@
       "title": "Translation of the Relics of St. Nicholas the Wonderworker to Bari",
       "summary": "In 1087, sailors translated the relics of St. Nicholas, archbishop of Myra, from his violated tomb to the city of Bari in Italy, where they remain and continue to issue myrrh.",
       "saintIds": [
-        "nicholas-of-myra"
+        "nicholas-of-myra",
+        "prophet-isaiah"
       ]
     },
     "05-10": {
       "monthDay": "05-10",
       "title": "Apostle Simon the Zealot",
-      "summary": "One of the Twelve, called the Zealot in distinction from Simon Peter. Tradition sends him preaching as far as Britain, where he received the crown of martyrdom."
+      "summary": "One of the Twelve, called the Zealot in distinction from Simon Peter. Tradition sends him preaching as far as Britain, where he received the crown of martyrdom.",
+      "saintIds": [
+        "apostle-simon-zealot"
+      ]
     },
     "05-11": {
       "monthDay": "05-11",
@@ -276,7 +286,14 @@
       "also": [
         {
           "name": "St. Barlaam of Khutyn, Wonderworker of Novgorod"
+        },
+        {
+          "name": "Apostle Bartholomew",
+          "saintId": "apostle-bartholomew"
         }
+      ],
+      "saintIds": [
+        "apostle-bartholomew"
       ]
     },
     "06-12": {
@@ -323,7 +340,10 @@
     "06-19": {
       "monthDay": "06-19",
       "title": "Holy Apostle Jude, brother of the Lord",
-      "summary": "Author of the Epistle of Jude and one of the Twelve, called the kinsman of the Lord. He preached through Mesopotamia and Persia and met his end by martyrdom in Armenia."
+      "summary": "Author of the Epistle of Jude and one of the Twelve, called the kinsman of the Lord. He preached through Mesopotamia and Persia and met his end by martyrdom in Armenia.",
+      "saintIds": [
+        "apostle-jude"
+      ]
     },
     "06-20": {
       "monthDay": "06-20",
@@ -501,7 +521,17 @@
     "07-11": {
       "monthDay": "07-11",
       "title": "Great-martyr Euphemia the All-praised — Council of Chalcedon",
-      "summary": "The fourth-century martyr of Chalcedon whose relics in 451 received and confirmed the Tome of the Orthodox at the Fourth Ecumenical Council, holding it in her hand as the heretical scroll lay at her feet."
+      "summary": "The fourth-century martyr of Chalcedon whose relics in 451 received and confirmed the Tome of the Orthodox at the Fourth Ecumenical Council, holding it in her hand as the heretical scroll lay at her feet.",
+      "also": [
+        {
+          "name": "Holy Equal-to-the-Apostles Great Princess Olga of Kiev",
+          "saintId": "olga-of-kiev",
+          "summary": "Grandmother of St. Vladimir, the first Christian ruler of the Rus'."
+        }
+      ],
+      "saintIds": [
+        "olga-of-kiev"
+      ]
     },
     "07-12": {
       "monthDay": "07-12",
@@ -521,7 +551,17 @@
     "07-15": {
       "monthDay": "07-15",
       "title": "Martyrs Cyricus and his mother Julitta",
-      "summary": "A widow of Iconium and her three-year-old son, who under Diocletian fled to Tarsus and there confessed Christ; the child was dashed against the steps for refusing the prefect's caresses, and the mother followed him in death."
+      "summary": "A widow of Iconium and her three-year-old son, who under Diocletian fled to Tarsus and there confessed Christ; the child was dashed against the steps for refusing the prefect's caresses, and the mother followed him in death.",
+      "also": [
+        {
+          "name": "Holy Great Prince Vladimir of Kiev, Equal-to-the-Apostles",
+          "saintId": "vladimir-of-kiev",
+          "summary": "Enlightener of the Rus' who in 988 brought the whole nation into the Christian faith."
+        }
+      ],
+      "saintIds": [
+        "vladimir-of-kiev"
+      ]
     },
     "07-16": {
       "monthDay": "07-16",
@@ -558,7 +598,10 @@
     "07-21": {
       "monthDay": "07-21",
       "title": "Sts. Symeon the Fool-for-Christ and John",
-      "summary": "Two sixth-century friends who began as pilgrims at the Jordan and separated for a life of solitude; Symeon returned to Emesa playing the holy fool to hide his virtues, John remained an unknown ascetic."
+      "summary": "Two sixth-century friends who began as pilgrims at the Jordan and separated for a life of solitude; Symeon returned to Emesa playing the holy fool to hide his virtues, John remained an unknown ascetic.",
+      "saintIds": [
+        "prophet-ezekiel"
+      ]
     },
     "07-22": {
       "monthDay": "07-22",
@@ -576,7 +619,17 @@
     "07-24": {
       "monthDay": "07-24",
       "title": "Great-martyr Christina of Tyre",
-      "summary": "A noble maiden of Tyre under Diocletian who broke the gold idols of her father and threw them to the poor; after three rounds of torments under three judges, she was finally pierced through with arrows."
+      "summary": "A noble maiden of Tyre under Diocletian who broke the gold idols of her father and threw them to the poor; after three rounds of torments under three judges, she was finally pierced through with arrows.",
+      "also": [
+        {
+          "name": "Holy Passion-Bearers Boris and Gleb",
+          "saintId": "boris-and-gleb",
+          "summary": "First canonized saints of the Russian Church, sons of Great Prince Vladimir who refused to take up arms against their brother."
+        }
+      ],
+      "saintIds": [
+        "boris-and-gleb"
+      ]
     },
     "07-25": {
       "monthDay": "07-25",
@@ -676,7 +729,18 @@
     "08-09": {
       "monthDay": "08-09",
       "title": "Holy Apostle Matthias",
-      "summary": "Chosen by lot to fill the place of Judas among the Twelve, he preached the Gospel in Judea, Cappadocia, and on the shores of the Caspian Sea, and was stoned and beheaded for the faith."
+      "summary": "Chosen by lot to fill the place of Judas among the Twelve, he preached the Gospel in Judea, Cappadocia, and on the shores of the Caspian Sea, and was stoned and beheaded for the faith.",
+      "also": [
+        {
+          "name": "Glorification of St. Herman of Alaska, Wonderworker of America",
+          "saintId": "herman-of-alaska",
+          "summary": "Monk of Valaam who came with the first Orthodox mission to Alaska in 1794."
+        }
+      ],
+      "saintIds": [
+        "apostle-matthias",
+        "herman-of-alaska"
+      ]
     },
     "08-10": {
       "monthDay": "08-10",
@@ -781,7 +845,10 @@
     "08-28": {
       "monthDay": "08-28",
       "title": "St. Moses the Black of Scetis",
-      "summary": "A formerly Ethiopian highway robber who in repentance fled to the Scetis desert, struggled long under the guidance of Macarius, and became a priest whose meekness drew his own former companions to Christ."
+      "summary": "A formerly Ethiopian highway robber who in repentance fled to the Scetis desert, struggled long under the guidance of Macarius, and became a priest whose meekness drew his own former companions to Christ.",
+      "saintIds": [
+        "moses-the-black"
+      ]
     },
     "08-29": {
       "monthDay": "08-29",
@@ -935,7 +1002,10 @@
     "09-20": {
       "monthDay": "09-20",
       "title": "Great-martyr Eustathius Placidas, his wife Theopiste, and his children",
-      "summary": "A Roman general under Trajan converted by the vision of a Cross between the antlers of a stag on the hunt; reduced to poverty, separated from his family, then restored to command, he and his household were finally roasted alive in a brazen bull."
+      "summary": "A Roman general under Trajan converted by the vision of a Cross between the antlers of a stag on the hunt; reduced to poverty, separated from his family, then restored to command, he and his household were finally roasted alive in a brazen bull.",
+      "saintIds": [
+        "eustathius-placidas"
+      ]
     },
     "09-21": {
       "monthDay": "09-21",
@@ -958,7 +1028,10 @@
     "09-24": {
       "monthDay": "09-24",
       "title": "Protomartyr and Equal-to-the-Apostles Thecla",
-      "summary": "A noblewoman of Iconium converted by the apostle Paul whose witness she followed through fire, beasts, and exile; she labored as an evangelist and reposed in old age in a cave at Seleucia."
+      "summary": "A noblewoman of Iconium converted by the apostle Paul whose witness she followed through fire, beasts, and exile; she labored as an evangelist and reposed in old age in a cave at Seleucia.",
+      "saintIds": [
+        "thekla-of-iconium"
+      ]
     },
     "09-25": {
       "monthDay": "09-25",
@@ -1140,7 +1213,10 @@
       "monthDay": "10-23",
       "title": "Holy Apostle James the Brother of the Lord, first Bishop of Jerusalem",
       "summary": "The son of Joseph by his first marriage who presided over the council of the apostles at Jerusalem and composed the most ancient eucharistic liturgy. He was thrown from the pinnacle of the Temple and clubbed by a Jewish mob.",
-      "feastRank": "polyeleos"
+      "feastRank": "polyeleos",
+      "saintIds": [
+        "apostle-james-brother-of-lord"
+      ]
     },
     "10-24": {
       "monthDay": "10-24",
@@ -1169,7 +1245,10 @@
     "10-28": {
       "monthDay": "10-28",
       "title": "Martyrs Terence and Neonilla, with their seven children",
-      "summary": "A Christian family of Syria under Decius who refused the sacrifice together; the parents and all seven children were tortured and finally beheaded as one."
+      "summary": "A Christian family of Syria under Decius who refused the sacrifice together; the parents and all seven children were tortured and finally beheaded as one.",
+      "saintIds": [
+        "paraskeva-friday"
+      ]
     },
     "10-29": {
       "monthDay": "10-29",
@@ -1301,7 +1380,18 @@
     "11-14": {
       "monthDay": "11-14",
       "title": "Holy Apostle Philip",
-      "summary": "One of the Twelve, who brought Nathanael to Christ and at the feeding of the five thousand counted the cost; he preached through Phrygia and was crucified head-downward at Hierapolis."
+      "summary": "One of the Twelve, who brought Nathanael to Christ and at the feeding of the five thousand counted the cost; he preached through Phrygia and was crucified head-downward at Hierapolis.",
+      "also": [
+        {
+          "name": "St. Gregory Palamas, Archbishop of Thessalonica",
+          "saintId": "gregory-palamas",
+          "summary": "Fourteenth-century defender of the divine energies (his Sunday is the Second of Great Lent)."
+        }
+      ],
+      "saintIds": [
+        "apostle-philip-twelve",
+        "gregory-palamas"
+      ]
     },
     "11-15": {
       "monthDay": "11-15",
@@ -1310,7 +1400,15 @@
       "also": [
         {
           "name": "Confessors Gurias, Samonas, and Habib of Edessa"
+        },
+        {
+          "name": "St. Paisius Velichkovsky",
+          "saintId": "paisius-velichkovsky",
+          "summary": "Eighteenth-century elder who translated the Philokalia into Slavonic and seeded the Russian elder tradition."
         }
+      ],
+      "saintIds": [
+        "paisius-velichkovsky"
       ]
     },
     "11-16": {
@@ -1325,7 +1423,10 @@
     "11-17": {
       "monthDay": "11-17",
       "title": "St. Gregory the Wonderworker, Bishop of Neo-Caesarea",
-      "summary": "A third-century disciple of Origen who found his see at Neo-Caesarea with seventeen Christians and left it with seventeen pagans, having converted the city by miracles, by teaching, and by a creed received in vision from St. John the Theologian."
+      "summary": "A third-century disciple of Origen who found his see at Neo-Caesarea with seventeen Christians and left it with seventeen pagans, having converted the city by miracles, by teaching, and by a creed received in vision from St. John the Theologian.",
+      "saintIds": [
+        "gregory-the-wonderworker"
+      ]
     },
     "11-18": {
       "monthDay": "11-18",
@@ -1514,7 +1615,14 @@
         },
         {
           "name": "Martyr Orestes"
+        },
+        {
+          "name": "St. Herman of Alaska, Wonderworker of America",
+          "saintId": "herman-of-alaska"
         }
+      ],
+      "saintIds": [
+        "herman-of-alaska"
       ]
     },
     "12-14": {
@@ -1585,7 +1693,10 @@
     "12-22": {
       "monthDay": "12-22",
       "title": "Great-martyr Anastasia the Deliverer-from-bonds",
-      "summary": "A noble of fourth-century Sirmium who took her wealth to the prisons of Aquileia and Sirmium to ransom and serve the Christians there; after the slaughter she was bound, starved, and finally burned together with three sisters of her household."
+      "summary": "A noble of fourth-century Sirmium who took her wealth to the prisons of Aquileia and Sirmium to ransom and serve the Christians there; after the slaughter she was bound, starved, and finally burned together with three sisters of her household.",
+      "saintIds": [
+        "anastasia-the-deliverer"
+      ]
     },
     "12-23": {
       "monthDay": "12-23",
@@ -1732,7 +1843,15 @@
       "title": "St. Gregory of Nyssa",
       "summary": "The fourth-century Cappadocian father, younger brother of Basil the Great, whose meditations on the soul's ascent to God remain among the deepest in the Christian tradition — 'every end is a new beginning.'",
       "saintIds": [
-        "gregory-of-nyssa"
+        "gregory-of-nyssa",
+        "theophan-the-recluse"
+      ],
+      "also": [
+        {
+          "name": "St. Theophan the Recluse",
+          "saintId": "theophan-the-recluse",
+          "summary": "Nineteenth-century Russian recluse-bishop and great translator of the Philokalia into Russian."
+        }
       ]
     },
     "01-11": {
@@ -1756,7 +1875,10 @@
     "01-14": {
       "monthDay": "01-14",
       "title": "Holy Fathers slain at Sinai and Raithou",
-      "summary": "The monks of Sinai and the seaside lavra of Raithou near the Red Sea, killed in raids by the Bedouins of the fourth and fifth centuries while remaining faithful in their cells at prayer."
+      "summary": "The monks of Sinai and the seaside lavra of Raithou near the Red Sea, killed in raids by the Bedouins of the fourth and fifth centuries while remaining faithful in their cells at prayer.",
+      "saintIds": [
+        "nina-of-georgia"
+      ]
     },
     "01-15": {
       "monthDay": "01-15",
@@ -1827,7 +1949,17 @@
     "01-24": {
       "monthDay": "01-24",
       "title": "St. Xenia of Rome",
-      "summary": "A noble of fifth-century Rome who on the day before her betrothal fled to Mylasa in Caria with two maidservants, took the name Xenia (the stranger), and founded a convent disguised in poverty."
+      "summary": "A noble of fifth-century Rome who on the day before her betrothal fled to Mylasa in Caria with two maidservants, took the name Xenia (the stranger), and founded a convent disguised in poverty.",
+      "also": [
+        {
+          "name": "Blessed Xenia of St. Petersburg, Fool-for-Christ",
+          "saintId": "xenia-of-petersburg",
+          "summary": "Eighteenth-century Russian noblewoman who became a fool-for-Christ in Saint Petersburg after her husband's death."
+        }
+      ],
+      "saintIds": [
+        "xenia-of-petersburg"
+      ]
     },
     "01-25": {
       "monthDay": "01-25",
@@ -1898,6 +2030,9 @@
         {
           "name": "Martyr Tryphon of Lampsacus"
         }
+      ],
+      "saintIds": [
+        "tryphon-the-martyr"
       ]
     },
     "02-02": {
@@ -1919,7 +2054,10 @@
     "02-05": {
       "monthDay": "02-05",
       "title": "Martyr Agatha of Sicily",
-      "summary": "A young noblewoman of third-century Catania whom the Roman governor Quintianus pursued for her wealth and beauty; refused, he had her breasts torn off and at last killed her in prison — the apostle Peter appeared to heal her in her cell."
+      "summary": "A young noblewoman of third-century Catania whom the Roman governor Quintianus pursued for her wealth and beauty; refused, he had her breasts torn off and at last killed her in prison — the apostle Peter appeared to heal her in her cell.",
+      "saintIds": [
+        "agatha-of-sicily"
+      ]
     },
     "02-06": {
       "monthDay": "02-06",
@@ -2091,7 +2229,10 @@
     "03-05": {
       "monthDay": "03-05",
       "title": "Martyr Conon the Gardener of Isauria",
-      "summary": "A simple gardener of Isauria under Decius, baptized by Michael the Archangel and known for his quiet boldness; he was burned alive in a fire he calmly walked into himself."
+      "summary": "A simple gardener of Isauria under Decius, baptized by Michael the Archangel and known for his quiet boldness; he was burned alive in a fire he calmly walked into himself.",
+      "saintIds": [
+        "mark-the-ascetic"
+      ]
     },
     "03-06": {
       "monthDay": "03-06",
@@ -2396,7 +2537,11 @@
     "04-30": {
       "monthDay": "04-30",
       "title": "Holy Apostle James, brother of John the Theologian",
-      "summary": "One of the sons of Zebedee, who left his boats with his brother at the Lord's call and stood with him on Tabor; the first apostle to be martyred, slain by Herod at Jerusalem in the year 44."
+      "summary": "One of the sons of Zebedee, who left his boats with his brother at the Lord's call and stood with him on Tabor; the first apostle to be martyred, slain by Herod at Jerusalem in the year 44.",
+      "saintIds": [
+        "apostle-james-zebedee",
+        "ignatius-brianchaninov"
+      ]
     }
   }
 }

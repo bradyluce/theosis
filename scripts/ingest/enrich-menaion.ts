@@ -47,7 +47,6 @@ const ENRICHMENTS: Record<string, Enrichment> = {
   "04-25": { saintIds: ["apostle-mark"] },
   "05-02": { saintIds: ["athanasius-the-great"] },
   "05-08": { saintIds: ["apostle-john-the-theologian"] },
-  "05-09": { saintIds: ["nicholas-of-myra"] },
   "05-15": { saintIds: ["pachomius-the-great"] },
   "05-25": { saintIds: ["john-the-forerunner"] },
   "06-09": { saintIds: ["cyril-of-alexandria"] },
@@ -91,11 +90,7 @@ const ENRICHMENTS: Record<string, Enrichment> = {
       { name: "St. Theodore the Bishop of Cyrenia" },
     ],
   },
-  "06-11": {
-    also: [
-      { name: "St. Barlaam of Khutyn, Wonderworker of Novgorod" },
-    ],
-  },
+  // (06-11 enrichment moved below — now includes Apostle Bartholomew Person link.)
   "06-12": {
     also: [
       { name: "St. Peter of Mount Athos", summary: "Ninth-century desert ascetic of Athos, the holy mountain's first known hermit." },
@@ -152,11 +147,7 @@ const ENRICHMENTS: Record<string, Enrichment> = {
       { name: "St. Nektarios of Aegina", summary: "Late-nineteenth century Greek hierarch and modern wonderworker.", saintId: "nektarios-of-aegina" },
     ],
   },
-  "11-15": {
-    also: [
-      { name: "Confessors Gurias, Samonas, and Habib of Edessa" },
-    ],
-  },
+  // (11-15 enrichment moved below — now includes Paisius Velichkovsky Person link.)
   "11-23": {
     also: [
       { name: "St. Gregory of Acragas, Bishop of Sicily" },
@@ -175,14 +166,7 @@ const ENRICHMENTS: Record<string, Enrichment> = {
       { name: "Martyr Eugraphus" },
     ],
   },
-  "12-13": {
-    also: [
-      { name: "Martyr Auxentius" },
-      { name: "Martyr Eugene" },
-      { name: "Martyr Mardarius" },
-      { name: "Martyr Orestes" },
-    ],
-  },
+  // (12-13 enrichment moved below — now includes St. Herman of Alaska Person link.)
   "12-14": {
     also: [
       { name: "Martyr Leucius" },
@@ -207,7 +191,7 @@ const ENRICHMENTS: Record<string, Enrichment> = {
       { name: "Venerable Theoctistus, abbot of Cucumo in Sicily" },
     ],
   },
-  "01-10": { saintIds: ["gregory-of-nyssa"] },
+  // (01-10 enrichment moved below — now includes Theophan the Recluse Person link.)
   "01-12": { saintIds: ["tatiana-of-rome"] },
   "02-06": { saintIds: ["photios-the-great"] },
   "02-08": { saintIds: ["theodore-the-general"] },
@@ -252,6 +236,92 @@ const ENRICHMENTS: Record<string, Enrichment> = {
     ],
   },
   "11-01": { saintIds: ["cosmas-and-damian-of-asia"] },
+
+  // --- Remaining Twelve Apostles + Russian / Slavic saints + others ---
+  "04-30": { saintIds: ["apostle-james-zebedee", "ignatius-brianchaninov"] },
+  "05-01": { saintIds: ["prophet-jeremiah"] },
+  "05-06": { saintIds: ["job-the-long-suffering"] },
+  "05-09": { saintIds: ["nicholas-of-myra", "prophet-isaiah"] },
+  "05-10": { saintIds: ["apostle-simon-zealot"] },
+  "06-11": {
+    saintIds: ["apostle-bartholomew"],
+    also: [
+      { name: "St. Barlaam of Khutyn, Wonderworker of Novgorod" },
+      { name: "Apostle Bartholomew", saintId: "apostle-bartholomew" },
+    ],
+  },
+  "06-19": { saintIds: ["apostle-jude"] },
+  "07-11": {
+    saintIds: ["olga-of-kiev"],
+    also: [
+      { name: "Holy Equal-to-the-Apostles Great Princess Olga of Kiev", saintId: "olga-of-kiev", summary: "Grandmother of St. Vladimir, the first Christian ruler of the Rus'." },
+    ],
+  },
+  "07-15": {
+    saintIds: ["vladimir-of-kiev"],
+    also: [
+      { name: "Holy Great Prince Vladimir of Kiev, Equal-to-the-Apostles", saintId: "vladimir-of-kiev", summary: "Enlightener of the Rus' who in 988 brought the whole nation into the Christian faith." },
+    ],
+  },
+  "07-21": { saintIds: ["prophet-ezekiel"] },
+  "07-24": {
+    saintIds: ["boris-and-gleb"],
+    also: [
+      { name: "Holy Passion-Bearers Boris and Gleb", saintId: "boris-and-gleb", summary: "First canonized saints of the Russian Church, sons of Great Prince Vladimir who refused to take up arms against their brother." },
+    ],
+  },
+  "08-09": {
+    saintIds: ["apostle-matthias", "herman-of-alaska"],
+    also: [
+      { name: "Glorification of St. Herman of Alaska, Wonderworker of America", saintId: "herman-of-alaska", summary: "Monk of Valaam who came with the first Orthodox mission to Alaska in 1794." },
+    ],
+  },
+  "08-28": { saintIds: ["moses-the-black"] },
+  "09-20": { saintIds: ["eustathius-placidas"] },
+  "09-24": { saintIds: ["thekla-of-iconium"] },
+  "10-23": { saintIds: ["apostle-james-brother-of-lord"] },
+  "10-28": { saintIds: ["paraskeva-friday"] },
+  "11-14": {
+    saintIds: ["apostle-philip-twelve", "gregory-palamas"],
+    also: [
+      { name: "St. Gregory Palamas, Archbishop of Thessalonica", saintId: "gregory-palamas", summary: "Fourteenth-century defender of the divine energies (his Sunday is the Second of Great Lent)." },
+    ],
+  },
+  "11-15": {
+    saintIds: ["paisius-velichkovsky"],
+    also: [
+      { name: "Confessors Gurias, Samonas, and Habib of Edessa" },
+      { name: "St. Paisius Velichkovsky", saintId: "paisius-velichkovsky", summary: "Eighteenth-century elder who translated the Philokalia into Slavonic and seeded the Russian elder tradition." },
+    ],
+  },
+  "11-17": { saintIds: ["gregory-the-wonderworker"] },
+  "12-13": {
+    saintIds: ["herman-of-alaska"],
+    also: [
+      { name: "Martyr Auxentius" },
+      { name: "Martyr Eugene" },
+      { name: "Martyr Mardarius" },
+      { name: "Martyr Orestes" },
+      { name: "St. Herman of Alaska, Wonderworker of America", saintId: "herman-of-alaska" },
+    ],
+  },
+  "12-22": { saintIds: ["anastasia-the-deliverer"] },
+  "01-10": {
+    saintIds: ["gregory-of-nyssa", "theophan-the-recluse"],
+    also: [
+      { name: "St. Theophan the Recluse", saintId: "theophan-the-recluse", summary: "Nineteenth-century Russian recluse-bishop and great translator of the Philokalia into Russian." },
+    ],
+  },
+  "01-14": { saintIds: ["nina-of-georgia"] },
+  "01-24": {
+    saintIds: ["xenia-of-petersburg"],
+    also: [
+      { name: "Blessed Xenia of St. Petersburg, Fool-for-Christ", saintId: "xenia-of-petersburg", summary: "Eighteenth-century Russian noblewoman who became a fool-for-Christ in Saint Petersburg after her husband's death." },
+    ],
+  },
+  "02-01": { saintIds: ["tryphon-the-martyr"] },
+  "02-05": { saintIds: ["agatha-of-sicily"] },
+  "03-05": { saintIds: ["mark-the-ascetic"] },
 };
 
 function main() {

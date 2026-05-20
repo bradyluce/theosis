@@ -30,6 +30,7 @@ type StudyState = UserProfileSnapshot & {
   addRecentSearch: (query: string) => void;
   recordReadingHistory: (entry: Omit<ReadingHistoryEntry, "id" | "visitedAt">) => void;
   toggleFavoritePerson: (personId: string) => void;
+  setPatronSaint: (personId: string) => void;
 };
 
 function nextSavedVerse(verseId: string, translationId: string): SavedVerse {
@@ -164,6 +165,10 @@ export const useStudyState = create<StudyState>()(
               : [nextFavorite(personId), ...state.favoritePeople],
           };
         }),
+      setPatronSaint: (personId) =>
+        set((state) => ({
+          preferences: { ...state.preferences, patronSaintPersonId: personId },
+        })),
     }),
     {
       name: "theosis-study-state",
