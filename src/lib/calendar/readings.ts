@@ -7,14 +7,13 @@ import type {
   LectionarySlot,
 } from "@/lib/calendar/types";
 
-const PASCHAL_CYCLE_MIN_PDIST = -77;
-const PASCHAL_CYCLE_MAX_PDIST = 56;
-
 type Options = { calendarSystem?: CalendarSystem };
 
 // Compose the day's lectionary readings. Movable readings (pdist-keyed) are
-// listed first; fixed-cycle additions (MM-DD-keyed) follow. A future slice can
-// add the precedence rules that suppress Menaion readings on Great Feast days.
+// listed first; fixed-cycle additions (MM-DD-keyed) follow. Unlike the movable
+// *commemoration* lookup (which is bounded to the Triodion/Pentecostarion span),
+// readings extend through the whole post-Pentecost Sunday cycle — the pdist
+// lookup is unbounded, and absence is the only signal of "no appointed reading."
 export function composeDailyReadings(
   date: Date,
   data: CalendarData,
@@ -26,10 +25,8 @@ export function composeDailyReadings(
   const slots: LectionarySlot[] = [];
 
   const { pdist } = resolvePaschalAnchor(date);
-  if (pdist >= PASCHAL_CYCLE_MIN_PDIST && pdist <= PASCHAL_CYCLE_MAX_PDIST) {
-    const movable = data.lectionary.movable[String(pdist)];
-    if (movable) slots.push(...movable);
-  }
+  const movable = data.lectionary.movable[String(pdist)];
+  if (movable) slots.push(...movable);
 
   const menaionKey = calendarSystem === "new" ? gregorianMonthDay(date) : julianKey(date);
   const fixed = data.lectionary.fixed[menaionKey];

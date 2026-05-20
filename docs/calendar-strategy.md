@@ -15,7 +15,8 @@ Shipped to master:
 
 - **Phase A — Paschalion + structural data** ✅ — Gauss algorithm in [src/lib/calendar/paschalion.ts](src/lib/calendar/paschalion.ts) (years 1900–2099); 38 named movable-cycle days in [content/normalized/calendar/movable-cycle.json](content/normalized/calendar/movable-cycle.json); composer wired into [src/app/(shell)/daily/page.tsx](src/app/(shell)/daily/page.tsx).
 - **Phase B — Full-year Menaion** ✅ — 365 entries (one per calendar day) in [content/normalized/calendar/menaion.json](content/normalized/calendar/menaion.json), with editorial summaries grounded in well-documented historical/liturgical facts.
-- **Phase A.2 — Lectionary** ✅ (partial) — daily readings keyed by pdist (movable) and Gregorian MM-DD (fixed) in [content/normalized/calendar/lectionary.json](content/normalized/calendar/lectionary.json). Coverage: major Pentecostarion days + all twelve Great Feasts + ~10 other principal saints. Weekday cycles outside named days deferred.
+- **Phase A.2 — Lectionary** ✅ (Sundays complete) — daily readings keyed by pdist (movable) and Gregorian MM-DD (fixed) in [content/normalized/calendar/lectionary.json](content/normalized/calendar/lectionary.json). Coverage: Pentecostarion + Triodion + all Lenten Sundays + post-Pentecost Sundays 1-31 + all twelve Great Feasts + ~15 other principal saints. Weekday cycles outside named days deferred to a follow-up slice.
+- **Paschal anchor: next-year switch** ✅ — `resolvePaschalAnchor` (in [src/lib/calendar/paschalion.ts](src/lib/calendar/paschalion.ts)) now hands off from the current Pascha to the next one once a date enters next year's Triodion window. Lets Triodion readings resolve correctly without manual year wrangling.
 - **Phase D — Troparia/kontakia** ✅ (partial) — original-translation English hymn texts in [content/normalized/calendar/hymns.json](content/normalized/calendar/hymns.json) for movable feasts + all fixed-cycle Great Feasts + ~12 other principal saints.
 - **Phase F — Fasting rules** ✅ — Great Lent / Holy Week / Cheesefare / Apostles' Fast / Dormition Fast / Nativity Fast / Sviatki / weekly Wed-Fri logic in [src/lib/calendar/fasts.ts](src/lib/calendar/fasts.ts).
 - **Test suite** ✅ — 56 unit tests in `npm run test:calendar` cover Paschalion correctness, helper symmetry, composer behavior, reading/hymn layering, fasting precedence, and Menaion coverage across all twelve months.
@@ -24,7 +25,7 @@ Not yet shipped:
 
 - **Phase C — Saint metadata via Wikidata SPARQL** (decision: editorial Tier-A prose only — Wikidata still useful for QID cross-links and structured facts).
 - **Phase E — Long-form saint biographies** — current Menaion summaries are 1-2 sentences; deeper hagiographical articles still owed.
-- **Lectionary expansion** — weekday cycles outside named days, Lukan jump rules, post-Pentecost Sunday cycle.
+- **Weekday lectionary** — Monday–Saturday Romans/Corinthians/Matthew/Luke daily cycles. Higher data volume (~250 reading slots); Lukan jump rules are the subtle bit.
 - **Old Calendar mode + jurisdiction switching** — data model carries the axis; UI surface is deferred.
 - **Fasting depth** — current `fastLabel` is a string; could split into a richer record (strictness levels, daily exceptions like Annunciation in Lent, Theophany eve).
 

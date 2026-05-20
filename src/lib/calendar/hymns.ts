@@ -2,14 +2,12 @@ import type { HymnText } from "@/domain/content/types";
 import { gregorianMonthDay, resolvePaschalAnchor } from "@/lib/calendar/paschalion";
 import type { CalendarData, CalendarSystem, HymnSlot } from "@/lib/calendar/types";
 
-const PASCHAL_CYCLE_MIN_PDIST = -77;
-const PASCHAL_CYCLE_MAX_PDIST = 56;
-
 type Options = { calendarSystem?: CalendarSystem };
 
 // Compose the day's hymns (troparia + kontakia). Movable-cycle hymns layer
-// before fixed-cycle hymns. When no hymns are appointed for either index the
-// result is an empty array; the Daily page already renders that gracefully.
+// before fixed-cycle hymns. Pdist lookup is unbounded so that post-Pentecost
+// cycle hymns (when added) can resolve outside the Triodion/Pentecostarion
+// span; absence is the only signal of "no hymn appointed."
 export function composeDailyHymns(
   date: Date,
   data: CalendarData,
@@ -21,10 +19,8 @@ export function composeDailyHymns(
   const slots: HymnSlot[] = [];
 
   const { pdist } = resolvePaschalAnchor(date);
-  if (pdist >= PASCHAL_CYCLE_MIN_PDIST && pdist <= PASCHAL_CYCLE_MAX_PDIST) {
-    const movable = data.hymns.movable[String(pdist)];
-    if (movable) slots.push(...movable);
-  }
+  const movable = data.hymns.movable[String(pdist)];
+  if (movable) slots.push(...movable);
 
   const menaionKey = calendarSystem === "new" ? gregorianMonthDay(date) : julianKey(date);
   const fixed = data.hymns.fixed[menaionKey];

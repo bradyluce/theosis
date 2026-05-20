@@ -80,17 +80,27 @@ export function paschalDayOffset(date: Date): number {
   return daysBetween(getPaschaDate(year), date);
 }
 
-// Resolve the paschal-cycle anchor for `date`: which year's Pascha it belongs to
-// and the signed day offset within that cycle. The cycle's natural span is
-// roughly Zacchaeus Sunday (pdist=-77) through All Saints Sunday (pdist=+56);
-// dates outside that window receive their nearest Pascha's anchor anyway, and
-// the composer decides whether the movable-cycle lookup applies.
+// Resolve the paschal-cycle anchor for `date`: which year's Pascha it belongs
+// to and the signed day offset within that cycle. The Orthodox lectionary year
+// runs roughly from Zacchaeus Sunday (pdist=-77) of one Pascha through the
+// Zacchaeus Sunday of the next, with post-Pentecost Sundays (pdist > 56)
+// belonging to *this* Pascha and Triodion days (pdist >= -77 of next Pascha)
+// belonging to the next.
 export function resolvePaschalAnchor(date: Date): { paschaYear: number; pdist: number } {
   const year = date.getUTCFullYear();
   const thisYearPascha = getPaschaDate(year);
   const pdistThis = daysBetween(thisYearPascha, date);
 
-  // If we're very early in the year, the previous year's Pascha may be closer.
+  // Post-All-Saints date: if we've entered next year's Triodion, switch anchor.
+  if (pdistThis > 56 && year < MAX_SUPPORTED_YEAR) {
+    const nextPascha = getPaschaDate(year + 1);
+    const pdistNext = daysBetween(nextPascha, date);
+    if (pdistNext >= -77) {
+      return { paschaYear: year + 1, pdist: pdistNext };
+    }
+  }
+
+  // Pre-Triodion date: still in the post-Pentecost tail of the prior Pascha.
   if (pdistThis < -77 && year > MIN_SUPPORTED_YEAR) {
     const prevPascha = getPaschaDate(year - 1);
     const pdistPrev = daysBetween(prevPascha, date);

@@ -236,6 +236,72 @@ const nativityHymns = composeDailyHymns(utc(2026, 11, 25), data);
 assertEqual("Nativity of Christ -> 2 hymns", nativityHymns.length, 2);
 assertEqual("Nativity Troparion", nativityHymns[0].title, "Troparion of the Nativity of Christ");
 
+// --- Paschal-anchor: next-year switch ---
+
+// Feb 14, 2027 = Zacchaeus Sunday of Pascha 2027 (May 2). Anchor should switch.
+assertEqual(
+  "resolvePaschalAnchor(2027-02-14) -> next year's Pascha",
+  resolvePaschalAnchor(utc(2027, 1, 14)),
+  { paschaYear: 2027, pdist: -77 },
+);
+// Feb 7, 2027 is one day too early (pdist -78 of next Pascha) — stays on 2026.
+assertEqual(
+  "resolvePaschalAnchor(2027-02-07) -> still 2026 tail",
+  resolvePaschalAnchor(utc(2027, 1, 7)),
+  { paschaYear: 2026, pdist: 301 },
+);
+// Dec 13, 2026 (a Sunday) is well past pdist 56 but well before next Triodion.
+assertEqual(
+  "resolvePaschalAnchor(2026-12-13) -> 2026 post-Pentecost tail",
+  resolvePaschalAnchor(utc(2026, 11, 13)),
+  { paschaYear: 2026, pdist: 245 },
+);
+
+// --- Sunday lectionary: post-Pentecost cycle ---
+
+// June 14, 2026 (Sunday) = pdist 63 = 2nd Sunday after Pentecost.
+const sun2 = composeDailyReadings(utc(2026, 5, 14), data);
+assertEqual("2nd Sunday after Pentecost -> 2 readings", sun2.length, 2);
+assertEqual("2nd Sunday epistle = Romans 2:10-16", sun2[0].scripture.label, "Romans 2:10-16");
+assertEqual("2nd Sunday gospel = Matthew 4:18-23", sun2[1].scripture.label, "Matthew 4:18-23");
+
+// July 26, 2026 (Sunday) = pdist 105 = 8th Sunday after Pentecost.
+const sun8 = composeDailyReadings(utc(2026, 6, 26), data);
+assertEqual("8th Sunday epistle = 1 Cor 1:10-18", sun8[0].scripture.label, "1 Corinthians 1:10-18");
+
+// Sept 27, 2026 (Sunday) = pdist 168 = 17th Sunday (last Matthew before Lukan cycle).
+const sun17 = composeDailyReadings(utc(2026, 8, 27), data);
+assertEqual("17th Sunday gospel = Matt 15:21-28", sun17[1].scripture.label, "Matthew 15:21-28");
+
+// Oct 4, 2026 (Sunday) = pdist 175 = 18th Sunday = 1st Sunday of Luke.
+const sun18 = composeDailyReadings(utc(2026, 9, 4), data);
+assertEqual("18th Sunday gospel = Luke 5:1-11", sun18[1].scripture.label, "Luke 5:1-11");
+
+// Dec 13, 2026 (Sunday) = pdist 245 = 28th Sunday.
+const sun28 = composeDailyReadings(utc(2026, 11, 13), data);
+assertEqual("28th Sunday gospel = Luke 14:16-24", sun28[1].scripture.label, "Luke 14:16-24");
+
+// Feb 14, 2027 (Sunday) = Zacchaeus = anchor switched to Pascha 2027. Readings present.
+const zacchaeus = composeDailyReadings(utc(2027, 1, 14), data);
+assertEqual("Zacchaeus 2027 -> 2 readings via next-year anchor", zacchaeus.length, 2);
+assertEqual("Zacchaeus gospel = Luke 19:1-10", zacchaeus[1].scripture.label, "Luke 19:1-10");
+
+// --- Triodion and Lenten Sundays ---
+
+// Pascha 2026 was Apr 12. 2026 Triodion Sundays anchored to 2026:
+//   pdist -77 = Zacchaeus = Jan 25, 2026
+//   pdist -70 = Publican & Pharisee = Feb 1, 2026
+const pubPhar = composeDailyReadings(utc(2026, 1, 1), data);
+assertEqual("Publican and Pharisee 2026 -> Luke 18:10-14", pubPhar[1].scripture.label, "Luke 18:10-14");
+
+// Sunday of Orthodoxy 2026 = Pascha 2026 - 42 = March 1, 2026
+const orthodoxy = composeDailyReadings(utc(2026, 2, 1), data);
+assertEqual("Sunday of Orthodoxy gospel = John 1:43-51", orthodoxy[1].scripture.label, "John 1:43-51");
+
+// Lazarus Saturday = Pascha 2026 - 8 = April 4, 2026
+const lazarus = composeDailyReadings(utc(2026, 3, 4), data);
+assertEqual("Lazarus Saturday gospel = John 11:1-45", lazarus[1].scripture.label, "John 11:1-45");
+
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed.`);
   process.exit(1);

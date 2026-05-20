@@ -5,6 +5,50 @@
     "coverage": "Movable cycle: principal named days (Pascha through All Saints). Fixed cycle: major feasts within May. Weekday cycles outside named days are deferred to a later slice."
   },
   "movable": {
+    "-77": [
+      { "kind": "epistle", "bookSlug": "first-timothy", "bookName": "1 Timothy", "chapter": 4, "verseStart": 9, "verseEnd": 15, "label": "Epistle of Zacchaeus Sunday" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 19, "verseStart": 1, "verseEnd": 10, "label": "Gospel of Zacchaeus" }
+    ],
+    "-70": [
+      { "kind": "epistle", "bookSlug": "second-timothy", "bookName": "2 Timothy", "chapter": 3, "verseStart": 10, "verseEnd": 15, "label": "Epistle of the Publican and Pharisee" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 18, "verseStart": 10, "verseEnd": 14, "label": "Gospel of the Publican and Pharisee" }
+    ],
+    "-63": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 6, "verseStart": 12, "verseEnd": 20, "label": "Epistle of the Prodigal Son" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 15, "verseStart": 11, "verseEnd": 32, "label": "Gospel of the Prodigal Son" }
+    ],
+    "-56": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 8, "verseStart": 8, "verseEnd": 13, "label": "Epistle of Meatfare Sunday" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 25, "verseStart": 31, "verseEnd": 46, "label": "Gospel of the Last Judgment" }
+    ],
+    "-49": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 13, "verseStart": 11, "verseEnd": 14, "label": "Epistle of Cheesefare Sunday" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 6, "verseStart": 14, "verseEnd": 21, "label": "Gospel of Forgiveness" }
+    ],
+    "-42": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 11, "verseStart": 24, "verseEnd": 26, "label": "Epistle of Orthodoxy Sunday" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 1, "verseStart": 43, "verseEnd": 51, "label": "Gospel of Orthodoxy Sunday" }
+    ],
+    "-35": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 1, "verseStart": 10, "verseEnd": 14, "label": "Epistle of St. Gregory Palamas" },
+      { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 2, "verseStart": 1, "verseEnd": 12, "label": "Gospel of St. Gregory Palamas" }
+    ],
+    "-28": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 4, "verseStart": 14, "verseEnd": 16, "label": "Epistle of the Veneration of the Cross" },
+      { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 8, "verseStart": 34, "verseEnd": 38, "label": "Gospel of the Veneration of the Cross" }
+    ],
+    "-21": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 6, "verseStart": 13, "verseEnd": 20, "label": "Epistle of St. John Climacus" },
+      { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 9, "verseStart": 17, "verseEnd": 31, "label": "Gospel of St. John Climacus" }
+    ],
+    "-14": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 9, "verseStart": 11, "verseEnd": 14, "label": "Epistle of St. Mary of Egypt" },
+      { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 10, "verseStart": 32, "verseEnd": 45, "label": "Gospel of St. Mary of Egypt" }
+    ],
+    "-8": [
+      { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 12, "verseStart": 28, "verseEnd": 29, "label": "Epistle of Lazarus Saturday" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 11, "verseStart": 1, "verseEnd": 45, "label": "Gospel of the Raising of Lazarus" }
+    ],
     "-7": [
       { "kind": "epistle", "bookSlug": "philippians", "bookName": "Philippians", "chapter": 4, "verseStart": 4, "verseEnd": 9, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 12, "verseStart": 1, "verseEnd": 18, "label": "Gospel" }
@@ -67,6 +111,126 @@
     "56": [
       { "kind": "epistle", "bookSlug": "hebrews", "bookName": "Hebrews", "chapter": 11, "verseStart": 33, "verseEnd": 40, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 10, "verseStart": 32, "verseEnd": 38, "label": "Gospel" }
+    ],
+    "63": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 2, "verseStart": 10, "verseEnd": 16, "label": "Epistle of the 2nd Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 4, "verseStart": 18, "verseEnd": 23, "label": "Gospel of the 2nd Sunday after Pentecost" }
+    ],
+    "70": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 5, "verseStart": 1, "verseEnd": 10, "label": "Epistle of the 3rd Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 6, "verseStart": 22, "verseEnd": 33, "label": "Gospel of the 3rd Sunday after Pentecost" }
+    ],
+    "77": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 6, "verseStart": 18, "verseEnd": 23, "label": "Epistle of the 4th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 8, "verseStart": 5, "verseEnd": 13, "label": "Gospel of the 4th Sunday after Pentecost" }
+    ],
+    "84": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 10, "verseStart": 1, "verseEnd": 10, "label": "Epistle of the 5th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 8, "verseStart": 28, "verseEnd": 34, "label": "Gospel of the 5th Sunday after Pentecost" }
+    ],
+    "91": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 12, "verseStart": 6, "verseEnd": 14, "label": "Epistle of the 6th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 9, "verseStart": 1, "verseEnd": 8, "label": "Gospel of the 6th Sunday after Pentecost" }
+    ],
+    "98": [
+      { "kind": "epistle", "bookSlug": "romans", "bookName": "Romans", "chapter": 15, "verseStart": 1, "verseEnd": 7, "label": "Epistle of the 7th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 9, "verseStart": 27, "verseEnd": 35, "label": "Gospel of the 7th Sunday after Pentecost" }
+    ],
+    "105": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 1, "verseStart": 10, "verseEnd": 18, "label": "Epistle of the 8th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 14, "verseStart": 14, "verseEnd": 22, "label": "Gospel of the 8th Sunday after Pentecost" }
+    ],
+    "112": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 3, "verseStart": 9, "verseEnd": 17, "label": "Epistle of the 9th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 14, "verseStart": 22, "verseEnd": 34, "label": "Gospel of the 9th Sunday after Pentecost" }
+    ],
+    "119": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 4, "verseStart": 9, "verseEnd": 16, "label": "Epistle of the 10th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 17, "verseStart": 14, "verseEnd": 23, "label": "Gospel of the 10th Sunday after Pentecost" }
+    ],
+    "126": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 9, "verseStart": 2, "verseEnd": 12, "label": "Epistle of the 11th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 18, "verseStart": 23, "verseEnd": 35, "label": "Gospel of the 11th Sunday after Pentecost" }
+    ],
+    "133": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 15, "verseStart": 1, "verseEnd": 11, "label": "Epistle of the 12th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 19, "verseStart": 16, "verseEnd": 26, "label": "Gospel of the 12th Sunday after Pentecost" }
+    ],
+    "140": [
+      { "kind": "epistle", "bookSlug": "first-corinthians", "bookName": "1 Corinthians", "chapter": 16, "verseStart": 13, "verseEnd": 24, "label": "Epistle of the 13th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 21, "verseStart": 33, "verseEnd": 42, "label": "Gospel of the 13th Sunday after Pentecost" }
+    ],
+    "147": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 1, "verseStart": 21, "verseEnd": 24, "label": "Epistle of the 14th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 22, "verseStart": 1, "verseEnd": 14, "label": "Gospel of the 14th Sunday after Pentecost" }
+    ],
+    "154": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 4, "verseStart": 6, "verseEnd": 15, "label": "Epistle of the 15th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 22, "verseStart": 35, "verseEnd": 46, "label": "Gospel of the 15th Sunday after Pentecost" }
+    ],
+    "161": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 6, "verseStart": 1, "verseEnd": 10, "label": "Epistle of the 16th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 25, "verseStart": 14, "verseEnd": 30, "label": "Gospel of the 16th Sunday after Pentecost" }
+    ],
+    "168": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 6, "verseStart": 16, "verseEnd": 18, "label": "Epistle of the 17th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "matthew", "bookName": "Matthew", "chapter": 15, "verseStart": 21, "verseEnd": 28, "label": "Gospel of the 17th Sunday after Pentecost" }
+    ],
+    "175": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 9, "verseStart": 6, "verseEnd": 11, "label": "Epistle of the 18th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 5, "verseStart": 1, "verseEnd": 11, "label": "Gospel of the 1st Sunday of Luke" }
+    ],
+    "182": [
+      { "kind": "epistle", "bookSlug": "second-corinthians", "bookName": "2 Corinthians", "chapter": 11, "verseStart": 31, "verseEnd": 33, "label": "Epistle of the 19th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 6, "verseStart": 31, "verseEnd": 36, "label": "Gospel of the 2nd Sunday of Luke" }
+    ],
+    "189": [
+      { "kind": "epistle", "bookSlug": "galatians", "bookName": "Galatians", "chapter": 1, "verseStart": 11, "verseEnd": 19, "label": "Epistle of the 20th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 7, "verseStart": 11, "verseEnd": 16, "label": "Gospel of the 3rd Sunday of Luke" }
+    ],
+    "196": [
+      { "kind": "epistle", "bookSlug": "galatians", "bookName": "Galatians", "chapter": 2, "verseStart": 16, "verseEnd": 20, "label": "Epistle of the 21st Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 8, "verseStart": 5, "verseEnd": 15, "label": "Gospel of the Sower" }
+    ],
+    "203": [
+      { "kind": "epistle", "bookSlug": "galatians", "bookName": "Galatians", "chapter": 6, "verseStart": 11, "verseEnd": 18, "label": "Epistle of the 22nd Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 16, "verseStart": 19, "verseEnd": 31, "label": "Gospel of the Rich Man and Lazarus" }
+    ],
+    "210": [
+      { "kind": "epistle", "bookSlug": "ephesians", "bookName": "Ephesians", "chapter": 2, "verseStart": 4, "verseEnd": 10, "label": "Epistle of the 23rd Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 8, "verseStart": 26, "verseEnd": 39, "label": "Gospel of the Gadarene Demoniac" }
+    ],
+    "217": [
+      { "kind": "epistle", "bookSlug": "ephesians", "bookName": "Ephesians", "chapter": 2, "verseStart": 14, "verseEnd": 22, "label": "Epistle of the 24th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 8, "verseStart": 41, "verseEnd": 56, "label": "Gospel of Jairus's Daughter" }
+    ],
+    "224": [
+      { "kind": "epistle", "bookSlug": "ephesians", "bookName": "Ephesians", "chapter": 4, "verseStart": 1, "verseEnd": 6, "label": "Epistle of the 25th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 10, "verseStart": 25, "verseEnd": 37, "label": "Gospel of the Good Samaritan" }
+    ],
+    "231": [
+      { "kind": "epistle", "bookSlug": "ephesians", "bookName": "Ephesians", "chapter": 5, "verseStart": 9, "verseEnd": 19, "label": "Epistle of the 26th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 12, "verseStart": 16, "verseEnd": 21, "label": "Gospel of the Rich Fool" }
+    ],
+    "238": [
+      { "kind": "epistle", "bookSlug": "ephesians", "bookName": "Ephesians", "chapter": 6, "verseStart": 10, "verseEnd": 17, "label": "Epistle of the 27th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 13, "verseStart": 10, "verseEnd": 17, "label": "Gospel of the Bowed Woman" }
+    ],
+    "245": [
+      { "kind": "epistle", "bookSlug": "colossians", "bookName": "Colossians", "chapter": 1, "verseStart": 12, "verseEnd": 18, "label": "Epistle of the 28th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 14, "verseStart": 16, "verseEnd": 24, "label": "Gospel of the Great Banquet" }
+    ],
+    "252": [
+      { "kind": "epistle", "bookSlug": "colossians", "bookName": "Colossians", "chapter": 3, "verseStart": 4, "verseEnd": 11, "label": "Epistle of the 29th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 17, "verseStart": 12, "verseEnd": 19, "label": "Gospel of the Ten Lepers" }
+    ],
+    "259": [
+      { "kind": "epistle", "bookSlug": "colossians", "bookName": "Colossians", "chapter": 3, "verseStart": 12, "verseEnd": 16, "label": "Epistle of the 30th Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 18, "verseStart": 18, "verseEnd": 27, "label": "Gospel of the Rich Young Ruler" }
+    ],
+    "266": [
+      { "kind": "epistle", "bookSlug": "first-timothy", "bookName": "1 Timothy", "chapter": 1, "verseStart": 15, "verseEnd": 17, "label": "Epistle of the 31st Sunday after Pentecost" },
+      { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 18, "verseStart": 35, "verseEnd": 43, "label": "Gospel of the Blind Man of Jericho" }
     ]
   },
   "fixed": {
