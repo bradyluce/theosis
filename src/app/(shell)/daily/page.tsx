@@ -8,16 +8,44 @@ import {
   getDailyHymns,
   getDailyReadings,
 } from "@/lib/calendar";
+import { DatePicker } from "@/app/(shell)/daily/date-picker";
 
-export default function DailyPage() {
-  const daily = getDailyCommemoration();
+type DailyPageProps = {
+  searchParams: Promise<{ date?: string }>;
+};
+
+// Parse a `?date=YYYY-MM-DD` query param into a UTC Date. Returns undefined
+// for missing or malformed input — the composer treats that as "today".
+function parseDateParam(raw: string | undefined): Date | undefined {
+  if (!raw) return undefined;
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(raw);
+  if (!match) return undefined;
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  if (year < 1900 || year > 2099) return undefined;
+  if (month < 1 || month > 12) return undefined;
+  if (day < 1 || day > 31) return undefined;
+  return new Date(Date.UTC(year, month - 1, day));
+}
+
+function todayIso(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+export default async function DailyPage({ searchParams }: DailyPageProps) {
+  const { date: rawDate } = await searchParams;
+  const date = parseDateParam(rawDate);
+
+  const daily = getDailyCommemoration(date);
   const saints = getPeopleByIds(daily.saintIds);
-  const readings = getDailyReadings();
-  const hymns = getDailyHymns();
+  const readings = getDailyReadings(date);
+  const hymns = getDailyHymns(date);
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     weekday: "long",
     month: "long",
     day: "numeric",
+    year: "numeric",
   }).format(new Date(daily.isoDate));
 
   return (
@@ -27,6 +55,8 @@ export default function DailyPage() {
         title={daily.title}
         description={daily.summary}
       />
+
+      <DatePicker value={daily.isoDate} today={todayIso()} />
 
       <div className="grid gap-4 xl:grid-cols-[1.2fr_0.8fr]">
         <Surface className="space-y-4">
