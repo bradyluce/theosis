@@ -1,18 +1,20 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
-import type { Person } from "@/domain/content/types";
+import type { IconRef, Person } from "@/domain/content/types";
 import { useStudyState } from "@/lib/user/use-study-state";
 
 type Props = {
   saints: Person[];
   currentPatronId: string | undefined;
+  icons?: Record<string, IconRef>;
 };
 
 // Search-and-pick UI for the user's patron saint. Opens an inline picker
 // from the Profile preferences panel; selecting a saint updates the Zustand
 // store, which persists to localStorage on its own.
-export function PatronSaintPicker({ saints, currentPatronId }: Props) {
+export function PatronSaintPicker({ saints, currentPatronId, icons }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const setPatronSaint = useStudyState((state) => state.setPatronSaint);
@@ -34,6 +36,8 @@ export function PatronSaintPicker({ saints, currentPatronId }: Props) {
     );
   }, [saints, query]);
 
+  const currentPatronIcon = currentPatron ? icons?.[currentPatron.id] : undefined;
+
   if (!isOpen) {
     return (
       <div className="rounded-[12px] border border-line bg-background px-4 py-4">
@@ -41,15 +45,26 @@ export function PatronSaintPicker({ saints, currentPatronId }: Props) {
           Patron saint
         </p>
         <div className="mt-2 flex items-start justify-between gap-3">
-          <div>
-            <p className="font-serif text-xl tracking-tight text-ink">
-              {currentPatron?.name ?? "Not selected"}
-            </p>
-            {currentPatron?.feastDayLabel ? (
-              <p className="mt-1 text-xs uppercase tracking-[0.18em] text-ink-soft">
-                {currentPatron.feastDayLabel}
-              </p>
+          <div className="flex items-center gap-3">
+            {currentPatronIcon ? (
+              <Image
+                src={currentPatronIcon.src}
+                alt={currentPatronIcon.alt}
+                width={currentPatronIcon.width}
+                height={currentPatronIcon.height}
+                className="h-14 w-14 shrink-0 rounded-full border border-line object-cover"
+              />
             ) : null}
+            <div>
+              <p className="font-serif text-xl tracking-tight text-ink">
+                {currentPatron?.name ?? "Not selected"}
+              </p>
+              {currentPatron?.feastDayLabel ? (
+                <p className="mt-1 text-xs uppercase tracking-[0.18em] text-ink-soft">
+                  {currentPatron.feastDayLabel}
+                </p>
+              ) : null}
+            </div>
           </div>
           <button
             type="button"
@@ -98,6 +113,7 @@ export function PatronSaintPicker({ saints, currentPatronId }: Props) {
       >
         {filtered.map((saint) => {
           const isSelected = saint.id === currentPatronId;
+          const icon = icons?.[saint.id];
           return (
             <li key={saint.id}>
               <button
@@ -109,17 +125,30 @@ export function PatronSaintPicker({ saints, currentPatronId }: Props) {
                   setIsOpen(false);
                   setQuery("");
                 }}
-                className={`w-full rounded-md border px-3 py-2 text-left transition-colors duration-200 ${
+                className={`flex w-full items-center gap-3 rounded-md border px-3 py-2 text-left transition-colors duration-200 ${
                   isSelected
                     ? "border-gold bg-surface-strong"
                     : "border-line bg-background hover:bg-surface-strong"
                 }`}
               >
-                <p className="font-medium text-ink">{saint.name}</p>
-                <p className="mt-0.5 text-xs uppercase tracking-[0.18em] text-ink-soft">
-                  {saint.eraLabel}
-                  {saint.feastDayLabel ? ` · ${saint.feastDayLabel}` : null}
-                </p>
+                {icon ? (
+                  <Image
+                    src={icon.src}
+                    alt={icon.alt}
+                    width={icon.width}
+                    height={icon.height}
+                    className="h-10 w-10 shrink-0 rounded-full border border-line object-cover"
+                  />
+                ) : (
+                  <div className="h-10 w-10 shrink-0" aria-hidden="true" />
+                )}
+                <div className="min-w-0">
+                  <p className="truncate font-medium text-ink">{saint.name}</p>
+                  <p className="mt-0.5 text-xs uppercase tracking-[0.18em] text-ink-soft">
+                    {saint.eraLabel}
+                    {saint.feastDayLabel ? ` · ${saint.feastDayLabel}` : null}
+                  </p>
+                </div>
               </button>
             </li>
           );
