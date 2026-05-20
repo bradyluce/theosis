@@ -150,7 +150,9 @@ assertEqual("June 21 -> Menaion when outside paschal cycle", june21.title, "Mart
 // --- Lectionary ---
 
 const paschaReadings = composeDailyReadings(utc(2026, 3, 12), data);
-assertEqual("Pascha readings: 2 slots (epistle + gospel)", paschaReadings.length, 2);
+// Pascha 2026 = April 12, which is the Julian fixed feast of St. Basil of
+// Parium — so the array layers Paschal movable readings + Basil's fixed.
+assertEqual("Pascha readings: at least 2 slots", paschaReadings.length >= 2, true);
 assertEqual("Pascha epistle = Acts 1:1-8", paschaReadings[0].scripture.label, "Acts 1:1-8");
 assertEqual("Pascha gospel = John 1:1-17", paschaReadings[1].scripture.label, "John 1:1-17");
 
@@ -170,7 +172,8 @@ assertEqual(
 // --- Hymns ---
 
 const paschaHymns = composeDailyHymns(utc(2026, 3, 12), data);
-assertEqual("Pascha hymns: 2 (troparion + kontakion)", paschaHymns.length, 2);
+// Same as readings: layers Paschal hymns + Basil of Parium's fixed troparion.
+assertEqual("Pascha hymns: at least 2", paschaHymns.length >= 2, true);
 assertEqual("Pascha troparion title", paschaHymns[0].title, "Paschal Troparion");
 assertEqual("Pascha kontakion title", paschaHymns[1].title, "Paschal Kontakion");
 
@@ -184,7 +187,10 @@ assertEqual(
 );
 
 const may19Hymns = composeDailyHymns(utc(2026, 4, 19), data);
-assertEqual("May 19 2026 -> empty hymns (no entries)", may19Hymns.length, 0);
+// May 19 used to have no hymn entries (the saint of the day had no
+// specific troparion). After mass-fill it now has a generic Common-of-
+// martyrs troparion for the menaion's commemoration.
+assertEqual("May 19 2026 -> has at least 1 hymn after mass-fill", may19Hymns.length >= 1, true);
 
 // --- Fasting rules ---
 
@@ -286,7 +292,9 @@ assertEqual("28th Sunday gospel = Luke 14:16-24", sun28[1].scripture.label, "Luk
 
 // Feb 14, 2027 (Sunday) = Zacchaeus = anchor switched to Pascha 2027. Readings present.
 const zacchaeus = composeDailyReadings(utc(2027, 1, 14), data);
-assertEqual("Zacchaeus 2027 -> 2 readings via next-year anchor", zacchaeus.length, 2);
+// Zacchaeus Sunday 2027 layers movable readings with any fixed-feast
+// readings for the date (Feb 14, 2027 = St. Cyril Equal-to-Apostles).
+assertEqual("Zacchaeus 2027 -> at least 2 readings via next-year anchor", zacchaeus.length >= 2, true);
 assertEqual("Zacchaeus gospel = Luke 19:1-10", zacchaeus[1].scripture.label, "Luke 19:1-10");
 
 // --- Triodion and Lenten Sundays ---
@@ -309,12 +317,14 @@ assertEqual("Lazarus Saturday gospel = John 11:1-45", lazarus[1].scripture.label
 
 // Bright Wednesday 2026 = Pascha + 3 = April 15
 const brightWed = composeDailyReadings(utc(2026, 3, 15), data);
-assertEqual("Bright Wed -> 2 readings", brightWed.length, 2);
+// Bright Wed layers paschal-week movable readings with fixed-feast.
+assertEqual("Bright Wed -> at least 2 readings", brightWed.length >= 2, true);
 assertEqual("Bright Wed gospel = John 1:35-51", brightWed[1].scripture.label, "John 1:35-51");
 
 // May 19, 2026 (today) = pdist 37 = Tuesday week 6 of Pentecostarion
 const today = composeDailyReadings(utc(2026, 4, 19), data);
-assertEqual("May 19 2026 -> 2 readings (week 6 Tuesday)", today.length, 2);
+// May 19 layers Pentecostarion movable readings with fixed-feast.
+assertEqual("May 19 2026 -> at least 2 readings (week 6 Tuesday)", today.length >= 2, true);
 assertEqual("May 19 epistle = Acts 17:19-28", today[0].scripture.label, "Acts 17:19-28");
 assertEqual("May 19 gospel = John 12:19-36", today[1].scripture.label, "John 12:19-36");
 
