@@ -163,8 +163,8 @@ assertEqual(
   true,
 );
 
-const may19Readings = composeDailyReadings(utc(2026, 4, 19), data);
-assertEqual("May 19 2026 (no movable + no fixed) -> empty readings", may19Readings.length, 0);
+// (May 19 readings are now covered by the Pentecostarion daily slice below
+// — the date sits in week 6 of Pascha and has pdist-37 readings.)
 
 // --- Hymns ---
 
@@ -301,6 +301,28 @@ assertEqual("Sunday of Orthodoxy gospel = John 1:43-51", orthodoxy[1].scripture.
 // Lazarus Saturday = Pascha 2026 - 8 = April 4, 2026
 const lazarus = composeDailyReadings(utc(2026, 3, 4), data);
 assertEqual("Lazarus Saturday gospel = John 11:1-45", lazarus[1].scripture.label, "John 11:1-45");
+
+// --- Pentecostarion daily lectionary ---
+
+// Bright Wednesday 2026 = Pascha + 3 = April 15
+const brightWed = composeDailyReadings(utc(2026, 3, 15), data);
+assertEqual("Bright Wed -> 2 readings", brightWed.length, 2);
+assertEqual("Bright Wed gospel = John 1:35-51", brightWed[1].scripture.label, "John 1:35-51");
+
+// May 19, 2026 (today) = pdist 37 = Tuesday week 6 of Pentecostarion
+const today = composeDailyReadings(utc(2026, 4, 19), data);
+assertEqual("May 19 2026 -> 2 readings (week 6 Tuesday)", today.length, 2);
+assertEqual("May 19 epistle = Acts 17:19-28", today[0].scripture.label, "Acts 17:19-28");
+assertEqual("May 19 gospel = John 12:19-36", today[1].scripture.label, "John 12:19-36");
+
+// Mid-Pentecost (Wed week 4) = pdist 24 = May 6, 2026 — already had readings, verify still there
+const midPent = composeDailyReadings(utc(2026, 4, 6), data);
+assertEqual("Mid-Pentecost still has readings", midPent.length, 2);
+assertEqual("Mid-Pentecost gospel = John 7:14-30", midPent[1].scripture.label, "John 7:14-30");
+
+// Saturday of Souls (Sat before Pentecost) = pdist 48 = May 30, 2026
+const satSouls = composeDailyReadings(utc(2026, 4, 30), data);
+assertEqual("Saturday of Souls -> Acts 28:1-31", satSouls[0].scripture.label, "Acts 28:1-31");
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed.`);

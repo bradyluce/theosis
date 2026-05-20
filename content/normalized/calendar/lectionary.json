@@ -68,37 +68,189 @@
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 2, "verseStart": 14, "verseEnd": 21, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 24, "verseStart": 12, "verseEnd": 35, "label": "Gospel" }
     ],
+    "3": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 2, "verseStart": 22, "verseEnd": 36, "label": "Epistle of Bright Wednesday" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 1, "verseStart": 35, "verseEnd": 51, "label": "Gospel of Bright Wednesday" }
+    ],
+    "4": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 2, "verseStart": 38, "verseEnd": 43, "label": "Epistle of Bright Thursday" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 3, "verseStart": 1, "verseEnd": 15, "label": "Gospel of Bright Thursday" }
+    ],
+    "5": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 3, "verseStart": 1, "verseEnd": 8, "label": "Epistle of Bright Friday" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 2, "verseStart": 12, "verseEnd": 22, "label": "Gospel of Bright Friday" }
+    ],
+    "6": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 3, "verseStart": 11, "verseEnd": 16, "label": "Epistle of Bright Saturday" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 3, "verseStart": 22, "verseEnd": 33, "label": "Gospel of Bright Saturday" }
+    ],
     "7": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 5, "verseStart": 12, "verseEnd": 20, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 20, "verseStart": 19, "verseEnd": 31, "label": "Gospel" }
+    ],
+    "8": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 3, "verseStart": 19, "verseEnd": 26, "label": "Epistle of Monday after Thomas" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 2, "verseStart": 1, "verseEnd": 11, "label": "Gospel of Monday after Thomas" }
+    ],
+    "9": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 4, "verseStart": 1, "verseEnd": 10, "label": "Epistle of Radonitsa" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 3, "verseStart": 16, "verseEnd": 21, "label": "Gospel of Radonitsa" }
+    ],
+    "10": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 4, "verseStart": 13, "verseEnd": 22, "label": "Epistle of Wednesday week 2" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 5, "verseStart": 17, "verseEnd": 24, "label": "Gospel of Wednesday week 2" }
+    ],
+    "11": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 4, "verseStart": 23, "verseEnd": 31, "label": "Epistle of Thursday week 2" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 5, "verseStart": 24, "verseEnd": 30, "label": "Gospel of Thursday week 2" }
+    ],
+    "12": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 5, "verseStart": 1, "verseEnd": 11, "label": "Epistle of Friday week 2" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 5, "verseStart": 30, "verseEnd": 47, "label": "Gospel of Friday week 2" }
+    ],
+    "13": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 5, "verseStart": 21, "verseEnd": 33, "label": "Epistle of Saturday week 2" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 6, "verseStart": 14, "verseEnd": 27, "label": "Gospel of Saturday week 2" }
     ],
     "14": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 6, "verseStart": 1, "verseEnd": 7, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "mark", "bookName": "Mark", "chapter": 15, "verseStart": 43, "verseEnd": 47, "label": "Gospel" }
     ],
+    "15": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 6, "verseStart": 8, "verseEnd": 15, "label": "Epistle of Monday week 3" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 4, "verseStart": 46, "verseEnd": 54, "label": "Gospel of Monday week 3" }
+    ],
+    "16": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 8, "verseStart": 5, "verseEnd": 17, "label": "Epistle of Tuesday week 3" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 6, "verseStart": 27, "verseEnd": 33, "label": "Gospel of Tuesday week 3" }
+    ],
+    "17": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 8, "verseStart": 18, "verseEnd": 25, "label": "Epistle of Wednesday week 3" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 6, "verseStart": 35, "verseEnd": 39, "label": "Gospel of Wednesday week 3" }
+    ],
+    "18": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 8, "verseStart": 26, "verseEnd": 39, "label": "Epistle of Thursday week 3" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 6, "verseStart": 40, "verseEnd": 44, "label": "Gospel of Thursday week 3" }
+    ],
+    "19": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 8, "verseStart": 40, "verseEnd": 47, "label": "Epistle of Friday week 3" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 6, "verseStart": 48, "verseEnd": 54, "label": "Gospel of Friday week 3" }
+    ],
+    "20": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 9, "verseStart": 20, "verseEnd": 31, "label": "Epistle of Saturday week 3" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 15, "verseStart": 17, "verseEnd": 27, "label": "Gospel of Saturday week 3" }
+    ],
     "21": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 9, "verseStart": 32, "verseEnd": 42, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 5, "verseStart": 1, "verseEnd": 15, "label": "Gospel" }
+    ],
+    "22": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 10, "verseStart": 1, "verseEnd": 16, "label": "Epistle of Monday week 4" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 6, "verseStart": 56, "verseEnd": 69, "label": "Gospel of Monday week 4" }
+    ],
+    "23": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 10, "verseStart": 21, "verseEnd": 33, "label": "Epistle of Tuesday week 4" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 7, "verseStart": 1, "verseEnd": 13, "label": "Gospel of Tuesday week 4" }
     ],
     "24": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 14, "verseStart": 6, "verseEnd": 18, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 7, "verseStart": 14, "verseEnd": 30, "label": "Gospel" }
     ],
+    "25": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 10, "verseStart": 34, "verseEnd": 43, "label": "Epistle of Thursday week 4" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 8, "verseStart": 12, "verseEnd": 20, "label": "Gospel of Thursday week 4" }
+    ],
+    "26": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 10, "verseStart": 44, "verseEnd": 48, "label": "Epistle of Friday week 4" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 8, "verseStart": 21, "verseEnd": 30, "label": "Gospel of Friday week 4" }
+    ],
+    "27": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 12, "verseStart": 1, "verseEnd": 11, "label": "Epistle of Saturday week 4" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 8, "verseStart": 31, "verseEnd": 42, "label": "Gospel of Saturday week 4" }
+    ],
     "28": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 11, "verseStart": 19, "verseEnd": 26, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 4, "verseStart": 5, "verseEnd": 42, "label": "Gospel" }
+    ],
+    "29": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 12, "verseStart": 12, "verseEnd": 17, "label": "Epistle of Monday week 5" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 8, "verseStart": 42, "verseEnd": 51, "label": "Gospel of Monday week 5" }
+    ],
+    "30": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 12, "verseStart": 25, "verseEnd": 30, "label": "Epistle of Tuesday week 5" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 8, "verseStart": 51, "verseEnd": 59, "label": "Gospel of Tuesday week 5" }
+    ],
+    "31": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 13, "verseStart": 13, "verseEnd": 24, "label": "Epistle of Wednesday week 5" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 6, "verseStart": 5, "verseEnd": 14, "label": "Gospel of Wednesday week 5" }
+    ],
+    "32": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 14, "verseStart": 20, "verseEnd": 27, "label": "Epistle of Thursday week 5" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 9, "verseStart": 39, "verseEnd": 41, "label": "Gospel of Thursday week 5" }
+    ],
+    "33": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 15, "verseStart": 5, "verseEnd": 34, "label": "Epistle of Friday week 5" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 10, "verseStart": 17, "verseEnd": 28, "label": "Gospel of Friday week 5" }
+    ],
+    "34": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 15, "verseStart": 35, "verseEnd": 41, "label": "Epistle of Saturday week 5" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 10, "verseStart": 27, "verseEnd": 38, "label": "Gospel of Saturday week 5" }
     ],
     "35": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 16, "verseStart": 16, "verseEnd": 34, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 9, "verseStart": 1, "verseEnd": 38, "label": "Gospel" }
     ],
+    "36": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 17, "verseStart": 1, "verseEnd": 15, "label": "Epistle of Monday week 6" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 11, "verseStart": 47, "verseEnd": 57, "label": "Gospel of Monday week 6" }
+    ],
+    "37": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 17, "verseStart": 19, "verseEnd": 28, "label": "Epistle of Tuesday week 6" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 12, "verseStart": 19, "verseEnd": 36, "label": "Gospel of Tuesday week 6" }
+    ],
+    "38": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 18, "verseStart": 22, "verseEnd": 28, "label": "Epistle of Leavetaking of Pascha" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 12, "verseStart": 36, "verseEnd": 47, "label": "Gospel of Leavetaking of Pascha" }
+    ],
     "39": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 1, "verseStart": 1, "verseEnd": 12, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "luke", "bookName": "Luke", "chapter": 24, "verseStart": 36, "verseEnd": 53, "label": "Gospel" }
     ],
+    "40": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 19, "verseStart": 1, "verseEnd": 8, "label": "Epistle of Friday after Ascension" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 14, "verseStart": 1, "verseEnd": 11, "label": "Gospel of Friday after Ascension" }
+    ],
+    "41": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 20, "verseStart": 7, "verseEnd": 12, "label": "Epistle of Saturday after Ascension" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 14, "verseStart": 10, "verseEnd": 21, "label": "Gospel of Saturday after Ascension" }
+    ],
     "42": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 20, "verseStart": 16, "verseEnd": 18, "label": "Epistle" },
       { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 17, "verseStart": 1, "verseEnd": 13, "label": "Gospel" }
+    ],
+    "43": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 21, "verseStart": 8, "verseEnd": 14, "label": "Epistle of Monday week 7" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 14, "verseStart": 27, "verseEnd": 31, "label": "Gospel of Monday week 7" }
+    ],
+    "44": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 21, "verseStart": 26, "verseEnd": 32, "label": "Epistle of Tuesday week 7" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 16, "verseStart": 2, "verseEnd": 13, "label": "Gospel of Tuesday week 7" }
+    ],
+    "45": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 23, "verseStart": 1, "verseEnd": 11, "label": "Epistle of Wednesday week 7" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 16, "verseStart": 15, "verseEnd": 23, "label": "Gospel of Wednesday week 7" }
+    ],
+    "46": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 25, "verseStart": 13, "verseEnd": 19, "label": "Epistle of Thursday week 7" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 16, "verseStart": 23, "verseEnd": 33, "label": "Gospel of Thursday week 7" }
+    ],
+    "47": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 27, "verseStart": 1, "verseEnd": 12, "label": "Epistle of Friday week 7" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 17, "verseStart": 18, "verseEnd": 26, "label": "Gospel of Friday week 7" }
+    ],
+    "48": [
+      { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 28, "verseStart": 1, "verseEnd": 31, "label": "Epistle of Saturday of Souls" },
+      { "kind": "gospel", "bookSlug": "john", "bookName": "John", "chapter": 21, "verseStart": 14, "verseEnd": 25, "label": "Gospel of Saturday of Souls" }
     ],
     "49": [
       { "kind": "epistle", "bookSlug": "acts", "bookName": "Acts", "chapter": 2, "verseStart": 1, "verseEnd": 11, "label": "Epistle" },
