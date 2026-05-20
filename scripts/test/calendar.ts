@@ -261,8 +261,10 @@ assertEqual(
 // --- Sunday lectionary: post-Pentecost cycle ---
 
 // June 14, 2026 (Sunday) = pdist 63 = 2nd Sunday after Pentecost.
+// (In 2026 this also happens to be the fixed feast of the Prophet Elisha,
+// so the readings array layers movable + fixed.)
 const sun2 = composeDailyReadings(utc(2026, 5, 14), data);
-assertEqual("2nd Sunday after Pentecost -> 2 readings", sun2.length, 2);
+assertEqual("2nd Sunday after Pentecost -> at least 2 readings", sun2.length >= 2, true);
 assertEqual("2nd Sunday epistle = Romans 2:10-16", sun2[0].scripture.label, "Romans 2:10-16");
 assertEqual("2nd Sunday gospel = Matthew 4:18-23", sun2[1].scripture.label, "Matthew 4:18-23");
 
@@ -318,7 +320,9 @@ assertEqual("May 19 gospel = John 12:19-36", today[1].scripture.label, "John 12:
 
 // Mid-Pentecost (Wed week 4) = pdist 24 = May 6, 2026 — already had readings, verify still there
 const midPent = composeDailyReadings(utc(2026, 4, 6), data);
-assertEqual("Mid-Pentecost still has readings", midPent.length, 2);
+// In 2026 Mid-Pentecost (May 6) coincides with the fixed feast of righteous Job,
+// so the array layers Mid-Pentecost (Acts + John) on top of Job (James + Luke).
+assertEqual("Mid-Pentecost still has at least 2 readings", midPent.length >= 2, true);
 assertEqual("Mid-Pentecost gospel = John 7:14-30", midPent[1].scripture.label, "John 7:14-30");
 
 // Saturday of Souls (Sat before Pentecost) = pdist 48 = May 30, 2026
@@ -398,6 +402,22 @@ const anthonyCavesDay = composeDailyReadings(utc(2026, 6, 10), data);
 assertEqual(
   "Jul 10 (Anthony of the Caves) includes Galatians 5:22-26",
   anthonyCavesDay.some((r) => r.scripture.label === "Galatians 5:22-26"),
+  true,
+);
+
+// Sep 22 = Prophet Jonah (round 4 addition)
+const jonahDay = composeDailyReadings(utc(2026, 8, 22), data);
+assertEqual(
+  "Sep 22 (Prophet Jonah) includes Matthew 12:38-45",
+  jonahDay.some((r) => r.scripture.label === "Matthew 12:38-45"),
+  true,
+);
+
+// Feb 26 = Photini the Samaritan (round 4 addition)
+const photiniDay = composeDailyReadings(utc(2026, 1, 26), data);
+assertEqual(
+  "Feb 26 (Photini) includes John 4:5-42",
+  photiniDay.some((r) => r.scripture.label === "John 4:5-42"),
   true,
 );
 
