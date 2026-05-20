@@ -43,7 +43,10 @@
     "05-05": {
       "monthDay": "05-05",
       "title": "Great-martyr Irene of Macedonia",
-      "summary": "Born to a pagan king and called from idols to Christ in girlhood; her courage under torture brought thousands to faith. Her feast is kept with particular joy in the Greek tradition."
+      "summary": "Born to a pagan king and called from idols to Christ in girlhood; her courage under torture brought thousands to faith. Her feast is kept with particular joy in the Greek tradition.",
+      "saintIds": [
+        "martyr-irene"
+      ]
     },
     "05-06": {
       "monthDay": "05-06",
@@ -51,6 +54,12 @@
       "summary": "The patriarch of Uz, who lost his children, his health, and all his goods in a single day and yet would not curse God. The Church reads from his book on Holy Friday, the day of patient suffering.",
       "saintIds": [
         "job-the-long-suffering"
+      ],
+      "also": [
+        {
+          "name": "Prophet Job the Long-suffering",
+          "saintId": "job-the-long-suffering"
+        }
       ]
     },
     "05-07": {
@@ -71,8 +80,7 @@
       "title": "Translation of the Relics of St. Nicholas the Wonderworker to Bari",
       "summary": "In 1087, sailors translated the relics of St. Nicholas, archbishop of Myra, from his violated tomb to the city of Bari in Italy, where they remain and continue to issue myrrh.",
       "saintIds": [
-        "nicholas-of-myra",
-        "prophet-isaiah"
+        "nicholas-of-myra"
       ]
     },
     "05-10": {
@@ -183,7 +191,10 @@
     "05-24": {
       "monthDay": "05-24",
       "title": "St. Symeon the Stylite of the Wonderful Mountain",
-      "summary": "The sixth-century Antiochene ascetic who lived sixty-eight years on a pillar near Antioch, gathering crowds with his prophetic counsel and miracles of healing."
+      "summary": "The sixth-century Antiochene ascetic who lived sixty-eight years on a pillar near Antioch, gathering crowds with his prophetic counsel and miracles of healing.",
+      "saintIds": [
+        "symeon-the-stylite"
+      ]
     },
     "05-25": {
       "monthDay": "05-25",
@@ -315,7 +326,10 @@
     "06-14": {
       "monthDay": "06-14",
       "title": "Prophet Elisha",
-      "summary": "The disciple of Elijah who received a double portion of his spirit; he raised the Shunammite's son, cleansed Naaman the Syrian, and from his very grave brought a dead man back to life."
+      "summary": "The disciple of Elijah who received a double portion of his spirit; he raised the Shunammite's son, cleansed Naaman the Syrian, and from his very grave brought a dead man back to life.",
+      "saintIds": [
+        "prophet-elisha"
+      ]
     },
     "06-15": {
       "monthDay": "06-15",
@@ -325,7 +339,10 @@
     "06-16": {
       "monthDay": "06-16",
       "title": "St. Tikhon the Wonderworker, Bishop of Amathus",
-      "summary": "A fifth-century bishop of Cyprus, beloved by the poor and revered for his gift of healing and the steady wisdom by which he governed his see."
+      "summary": "A fifth-century bishop of Cyprus, beloved by the poor and revered for his gift of healing and the steady wisdom by which he governed his see.",
+      "saintIds": [
+        "tikhon-of-moscow"
+      ]
     },
     "06-17": {
       "monthDay": "06-17",
@@ -348,7 +365,10 @@
     "06-20": {
       "monthDay": "06-20",
       "title": "Hieromartyr Methodius, Bishop of Patara",
-      "summary": "An early-fourth-century bishop and theologian whose dialogue The Symposium remains one of the earliest Christian works on virginity. He was beheaded for the faith under Maximinus."
+      "summary": "An early-fourth-century bishop and theologian whose dialogue The Symposium remains one of the earliest Christian works on virginity. He was beheaded for the faith under Maximinus.",
+      "saintIds": [
+        "methodius-equal-to-apostles"
+      ]
     },
     "06-21": {
       "monthDay": "06-21",
@@ -392,7 +412,10 @@
     "06-28": {
       "monthDay": "06-28",
       "title": "Translation of the Relics of the Unmercenaries Cyrus and John",
-      "summary": "The fourth-century Egyptian physicians who healed without payment and were beheaded under Diocletian; their relics were brought to Manuthi near Alexandria to drive out the cult of an idol."
+      "summary": "The fourth-century Egyptian physicians who healed without payment and were beheaded under Diocletian; their relics were brought to Manuthi near Alexandria to drive out the cult of an idol.",
+      "saintIds": [
+        "cyrus-and-john-unmercenaries"
+      ]
     },
     "06-29": {
       "monthDay": "06-29",
@@ -462,13 +485,23 @@
         "apostle-andrew",
         "apostle-john-the-theologian",
         "apostle-thomas",
-        "apostle-matthew"
+        "apostle-matthew",
+        "apostle-james-zebedee",
+        "apostle-philip-twelve",
+        "apostle-bartholomew",
+        "apostle-jude",
+        "apostle-simon-zealot",
+        "apostle-matthias",
+        "apostle-james-brother-of-lord"
       ]
     },
     "07-01": {
       "monthDay": "07-01",
       "title": "Unmercenaries Cosmas and Damian of Rome",
-      "summary": "Brothers and physicians of third-century Rome who healed the sick and refused all payment, declaring that they had received freely and so must freely give. They reposed in peace after long labors."
+      "summary": "Brothers and physicians of third-century Rome who healed the sick and refused all payment, declaring that they had received freely and so must freely give. They reposed in peace after long labors.",
+      "saintIds": [
+        "cosmas-and-damian-of-asia"
+      ]
     },
     "07-02": {
       "monthDay": "07-02",
@@ -486,12 +519,22 @@
       "summary": "The seventh-century author of the Great Canon read in Great Lent — a masterpiece of penitential poetry that walks the soul through the whole of Scripture in the voice of personal contrition.",
       "saintIds": [
         "andrew-of-crete"
+      ],
+      "also": [
+        {
+          "name": "St. Andrew of Crete, Archbishop",
+          "summary": "Hymnographer of the Great Canon.",
+          "saintId": "andrew-of-crete"
+        }
       ]
     },
     "07-05": {
       "monthDay": "07-05",
       "title": "St. Athanasius of Mount Athos",
-      "summary": "The tenth-century founder of the Great Lavra and organizer of cenobitic monasticism on Athos under Nicephorus Phocas, reposed when the dome of his church collapsed upon him as he inspected its construction."
+      "summary": "The tenth-century founder of the Great Lavra and organizer of cenobitic monasticism on Athos under Nicephorus Phocas, reposed when the dome of his church collapsed upon him as he inspected its construction.",
+      "saintIds": [
+        "athanasius-of-athos"
+      ]
     },
     "07-06": {
       "monthDay": "07-06",
@@ -534,12 +577,22 @@
     "07-12": {
       "monthDay": "07-12",
       "title": "Martyrs Proclus and Hilary",
-      "summary": "Uncle and nephew of Callipolis in Asia Minor who under Trajan refused the imperial sacrifices and were beheaded together for the confession of Christ."
+      "summary": "Uncle and nephew of Callipolis in Asia Minor who under Trajan refused the imperial sacrifices and were beheaded together for the confession of Christ.",
+      "also": [
+        {
+          "name": "St. Paisios the Athonite",
+          "summary": "Twentieth-century elder of Mount Athos.",
+          "saintId": "paisios-the-athonite"
+        }
+      ]
     },
     "07-13": {
       "monthDay": "07-13",
       "title": "Synaxis of the Holy Archangel Gabriel",
-      "summary": "The summer feast of the archangel who proclaimed the conception of the Forerunner to Zacharias, the conception of the Lord to the Virgin, and stands ever near the throne of the Most High."
+      "summary": "The summer feast of the archangel who proclaimed the conception of the Forerunner to Zacharias, the conception of the Lord to the Virgin, and stands ever near the throne of the Most High.",
+      "saintIds": [
+        "archangel-gabriel"
+      ]
     },
     "07-14": {
       "monthDay": "07-14",
@@ -568,12 +621,29 @@
     "07-17": {
       "monthDay": "07-17",
       "title": "Great-martyr Marina of Antioch in Pisidia",
-      "summary": "A fifteen-year-old who under Diocletian endured monstrous torments and visions of the demon in serpent form, defeating him by the sign of the Cross before being beheaded — the icon of victory over the powers."
+      "summary": "A fifteen-year-old who under Diocletian endured monstrous torments and visions of the demon in serpent form, defeating him by the sign of the Cross before being beheaded — the icon of victory over the powers.",
+      "saintIds": [
+        "martyr-marina"
+      ],
+      "also": [
+        {
+          "name": "Holy Royal Martyrs of Russia",
+          "summary": "Tsar Nicholas II, Tsarina Alexandra, and their five children, slain at Yekaterinburg in 1918.",
+          "saintId": "royal-martyrs-of-russia"
+        }
+      ]
     },
     "07-18": {
       "monthDay": "07-18",
       "title": "Martyr Emilian of Silistria",
-      "summary": "A young Christian slave in Thrace who under Julian the Apostate publicly broke the idols of his master's town and, refusing to deny it, was burned at the stake on the banks of the Danube."
+      "summary": "A young Christian slave in Thrace who under Julian the Apostate publicly broke the idols of his master's town and, refusing to deny it, was burned at the stake on the banks of the Danube.",
+      "also": [
+        {
+          "name": "Holy New Martyr Grand Duchess Elizabeth",
+          "summary": "Founder of the Convent of Martha and Mary in Moscow; cast alive into a mine-shaft at Alapayevsk.",
+          "saintId": "elizabeth-the-new-martyr"
+        }
+      ]
     },
     "07-19": {
       "monthDay": "07-19",
@@ -581,6 +651,13 @@
       "summary": "The eldest sister and spiritual teacher of the great Cappadocian fathers, whose life under her mother Emmelia at Annisi shaped the household from which Basil, Gregory of Nyssa, and Peter of Sebaste came forth.",
       "saintIds": [
         "macrina-the-younger"
+      ],
+      "also": [
+        {
+          "name": "St. Seraphim of Sarov",
+          "summary": "Uncovering of his relics in 1903.",
+          "saintId": "seraphim-of-sarov"
+        }
       ]
     },
     "07-20": {
@@ -689,7 +766,10 @@
     "08-02": {
       "monthDay": "08-02",
       "title": "Translation of the Relics of the Protomartyr and Archdeacon Stephen",
-      "summary": "The body of the first martyr, hidden after his stoning in Jerusalem, was recovered in the fifth century through the vision of the priest Lucian and translated to a church on Mount Zion."
+      "summary": "The body of the first martyr, hidden after his stoning in Jerusalem, was recovered in the fifth century through the vision of the priest Lucian and translated to a church on Mount Zion.",
+      "saintIds": [
+        "protomartyr-stephen"
+      ]
     },
     "08-03": {
       "monthDay": "08-03",
@@ -741,7 +821,10 @@
     "08-10": {
       "monthDay": "08-10",
       "title": "Hieromartyr and Archdeacon Lawrence of Rome",
-      "summary": "The archdeacon of Pope Sixtus II at Rome under Valerian; entrusted with the goods of the Church, he distributed them to the poor and presented those poor to the prefect as the true treasure of the Church, for which he was roasted alive on a gridiron."
+      "summary": "The archdeacon of Pope Sixtus II at Rome under Valerian; entrusted with the goods of the Church, he distributed them to the poor and presented those poor to the prefect as the true treasure of the Church, for which he was roasted alive on a gridiron.",
+      "saintIds": [
+        "lawrence-the-archdeacon"
+      ]
     },
     "08-11": {
       "monthDay": "08-11",
@@ -756,7 +839,10 @@
     "08-13": {
       "monthDay": "08-13",
       "title": "St. Tikhon, Bishop of Voronezh and Zadonsk",
-      "summary": "An eighteenth-century Russian hierarch and spiritual writer whose simple counsel — 'be silent, and let God act' — formed generations of Russian piety. His relics rest at Zadonsk."
+      "summary": "An eighteenth-century Russian hierarch and spiritual writer whose simple counsel — 'be silent, and let God act' — formed generations of Russian piety. His relics rest at Zadonsk.",
+      "saintIds": [
+        "tikhon-of-moscow"
+      ]
     },
     "08-14": {
       "monthDay": "08-14",
@@ -767,7 +853,10 @@
       "monthDay": "08-15",
       "title": "The Dormition of Our Most Holy Lady the Theotokos and Ever-Virgin Mary",
       "summary": "The end of the earthly life of the Mother of God. The apostles, gathered miraculously to her bedside, accompanied her body to Gethsemane; on the third day, when Thomas came, the tomb was found empty, for she had been taken up by her Son to the place He had prepared.",
-      "feastRank": "great"
+      "feastRank": "great",
+      "saintIds": [
+        "theotokos"
+      ]
     },
     "08-16": {
       "monthDay": "08-16",
@@ -826,7 +915,10 @@
     "08-25": {
       "monthDay": "08-25",
       "title": "Return of the Relics of the Apostle Bartholomew; Apostle Titus of the Seventy",
-      "summary": "The body of Bartholomew, cast into the sea, came in time to rest at Beneventum. Also commemorated: Titus, fellow worker of Paul and first bishop of the Cretans, to whom one of Paul's letters is addressed."
+      "summary": "The body of Bartholomew, cast into the sea, came in time to rest at Beneventum. Also commemorated: Titus, fellow worker of Paul and first bishop of the Cretans, to whom one of Paul's letters is addressed.",
+      "saintIds": [
+        "apostle-bartholomew"
+      ]
     },
     "08-26": {
       "monthDay": "08-26",
@@ -844,6 +936,12 @@
       "summary": "A formerly Ethiopian highway robber who in repentance fled to the Scetis desert, struggled long under the guidance of Macarius, and became a priest whose meekness drew his own former companions to Christ.",
       "saintIds": [
         "moses-the-black"
+      ],
+      "also": [
+        {
+          "name": "St. Moses the Black of Scetis",
+          "saintId": "moses-the-black"
+        }
       ]
     },
     "08-29": {
@@ -858,7 +956,10 @@
     "08-30": {
       "monthDay": "08-30",
       "title": "Sts. Alexander, John, and Paul the New, Patriarchs of Constantinople",
-      "summary": "Three hierarchs of Constantinople, all defenders of Orthodoxy: Alexander against Arius at Nicaea; John (Chrysostom's successor of like name) against the Origenists; Paul the New against iconoclasm."
+      "summary": "Three hierarchs of Constantinople, all defenders of Orthodoxy: Alexander against Arius at Nicaea; John (Chrysostom's successor of like name) against the Origenists; Paul the New against iconoclasm.",
+      "saintIds": [
+        "apostle-paul"
+      ]
     },
     "08-31": {
       "monthDay": "08-31",
@@ -871,12 +972,24 @@
       "summary": "The first day of the ecclesiastical year, blessed in the church and asking God's mercy upon the year to come. Also commemorated: the fifth-century Syrian ascetic who lived thirty-seven years atop a pillar at Telanissos, drawing the world up to Christ from on high.",
       "saintIds": [
         "symeon-the-stylite"
+      ],
+      "also": [
+        {
+          "name": "St. Symeon the Stylite the Elder",
+          "saintId": "symeon-the-stylite"
+        },
+        {
+          "name": "Indiction: Beginning of the Church Year"
+        }
       ]
     },
     "09-02": {
       "monthDay": "09-02",
       "title": "Martyr Mamas of Caesarea",
-      "summary": "An orphaned shepherd-boy of Cappadocia in the third century whose lambs and wild animals lived together at his feet; under Aurelian he was given to the beasts and finally pierced through with a trident."
+      "summary": "An orphaned shepherd-boy of Cappadocia in the third century whose lambs and wild animals lived together at his feet; under Aurelian he was given to the beasts and finally pierced through with a trident.",
+      "saintIds": [
+        "mamas-of-caesarea"
+      ]
     },
     "09-03": {
       "monthDay": "09-03",
@@ -906,7 +1019,10 @@
     "09-06": {
       "monthDay": "09-06",
       "title": "Commemoration of the Miracle of the Archangel Michael at Chonae",
-      "summary": "When pagans turned a river to flood the church and shrine of the Archangel at Chonae in Phrygia, the deacon Archippus prayed; the Archangel struck the rock with his staff and the waters were swallowed up."
+      "summary": "When pagans turned a river to flood the church and shrine of the Archangel at Chonae in Phrygia, the deacon Archippus prayed; the Archangel struck the rock with his staff and the waters were swallowed up.",
+      "saintIds": [
+        "archangel-michael"
+      ]
     },
     "09-07": {
       "monthDay": "09-07",
@@ -917,7 +1033,10 @@
       "monthDay": "09-08",
       "title": "The Nativity of Our Most Holy Lady the Theotokos and Ever-Virgin Mary",
       "summary": "The birth of the Mother of God to the aged Joachim and Anna of Nazareth, the answer to long prayer and the breaking of barrenness. Today the gate is built through which the Sun of righteousness will come into the world.",
-      "feastRank": "great"
+      "feastRank": "great",
+      "saintIds": [
+        "theotokos"
+      ]
     },
     "09-09": {
       "monthDay": "09-09",
@@ -982,7 +1101,14 @@
         },
         {
           "name": "Martyr Love"
+        },
+        {
+          "name": "Sophia and her Daughters Faith, Hope, and Love",
+          "saintId": "sophia-and-three-daughters"
         }
+      ],
+      "saintIds": [
+        "sophia-and-three-daughters"
       ]
     },
     "09-18": {
@@ -1001,6 +1127,12 @@
       "summary": "A Roman general under Trajan converted by the vision of a Cross between the antlers of a stag on the hunt; reduced to poverty, separated from his family, then restored to command, he and his household were finally roasted alive in a brazen bull.",
       "saintIds": [
         "eustathius-placidas"
+      ],
+      "also": [
+        {
+          "name": "Great-martyr Eustathius Placidas",
+          "saintId": "eustathius-placidas"
+        }
       ]
     },
     "09-21": {
@@ -1011,7 +1143,13 @@
     "09-22": {
       "monthDay": "09-22",
       "title": "Hieromartyr Phocas of Sinope",
-      "summary": "A bishop of Sinope in the second century who, hearing that soldiers had come to seize him, dug his own grave the night before, set them a meal in his house, and at dawn revealed himself to be the man they sought."
+      "summary": "A bishop of Sinope in the second century who, hearing that soldiers had come to seize him, dug his own grave the night before, set them a meal in his house, and at dawn revealed himself to be the man they sought.",
+      "also": [
+        {
+          "name": "Prophet Jonah",
+          "saintId": "prophet-jonah"
+        }
+      ]
     },
     "09-23": {
       "monthDay": "09-23",
@@ -1026,7 +1164,8 @@
       "title": "Protomartyr and Equal-to-the-Apostles Thecla",
       "summary": "A noblewoman of Iconium converted by the apostle Paul whose witness she followed through fire, beasts, and exile; she labored as an evangelist and reposed in old age in a cave at Seleucia.",
       "saintIds": [
-        "thekla-of-iconium"
+        "thekla-of-iconium",
+        "silouan-the-athonite"
       ]
     },
     "09-25": {
@@ -1084,13 +1223,17 @@
         }
       ],
       "saintIds": [
-        "romanos-the-melodist"
+        "romanos-the-melodist",
+        "theotokos"
       ]
     },
     "10-02": {
       "monthDay": "10-02",
       "title": "Hieromartyr Cyprian and Martyr Justina",
-      "summary": "A former pagan magician of Antioch converted when his spells against the virgin Justina were broken by her prayer; bishop and virgin alike were beheaded together at Nicomedia."
+      "summary": "A former pagan magician of Antioch converted when his spells against the virgin Justina were broken by her prayer; bishop and virgin alike were beheaded together at Nicomedia.",
+      "saintIds": [
+        "cyprian-of-carthage"
+      ]
     },
     "10-03": {
       "monthDay": "10-03",
@@ -1134,7 +1277,10 @@
     "10-09": {
       "monthDay": "10-09",
       "title": "Holy Apostle James, son of Alphaeus",
-      "summary": "One of the Twelve, brother of Matthew the Evangelist, who preached through Judea and Syria. He was crucified at Ostracine in Egypt, where he had labored in his old age."
+      "summary": "One of the Twelve, brother of Matthew the Evangelist, who preached through Judea and Syria. He was crucified at Ostracine in Egypt, where he had labored in his old age.",
+      "saintIds": [
+        "apostle-james-zebedee"
+      ]
     },
     "10-10": {
       "monthDay": "10-10",
@@ -1144,7 +1290,10 @@
     "10-11": {
       "monthDay": "10-11",
       "title": "Holy Apostle Philip, one of the Seven Deacons",
-      "summary": "Not the apostle of the Twelve but one of the seven appointed by the apostles to serve the Hellenist widows in Acts; he baptized the Ethiopian eunuch and Simon Magus, and was bishop of Tralles in Asia Minor."
+      "summary": "Not the apostle of the Twelve but one of the seven appointed by the apostles to serve the Hellenist widows in Acts; he baptized the Ethiopian eunuch and Simon Magus, and was bishop of Tralles in Asia Minor.",
+      "saintIds": [
+        "apostle-philip-twelve"
+      ]
     },
     "10-12": {
       "monthDay": "10-12",
@@ -1174,7 +1323,14 @@
     "10-17": {
       "monthDay": "10-17",
       "title": "Holy Prophet Hosea",
-      "summary": "The eighth-century BC prophet of the northern kingdom whose own marriage to Gomer became the parable of God's love for unfaithful Israel — a love that does not let go."
+      "summary": "The eighth-century BC prophet of the northern kingdom whose own marriage to Gomer became the parable of God's love for unfaithful Israel — a love that does not let go.",
+      "also": [
+        {
+          "name": "St. Lazarus the Four-Days-Dead",
+          "summary": "Bishop of Kition on Cyprus, friend of the Lord.",
+          "saintId": "lazarus-of-bethany"
+        }
+      ]
     },
     "10-18": {
       "monthDay": "10-18",
@@ -1198,7 +1354,10 @@
     "10-21": {
       "monthDay": "10-21",
       "title": "St. Hilarion the Great",
-      "summary": "A native of Gaza and the disciple of Anthony, who brought the desert life from Egypt to Palestine and afterwards to Cyprus, where he reposed in the wilderness at Paphos."
+      "summary": "A native of Gaza and the disciple of Anthony, who brought the desert life from Egypt to Palestine and afterwards to Cyprus, where he reposed in the wilderness at Paphos.",
+      "saintIds": [
+        "hilarion-the-great"
+      ]
     },
     "10-22": {
       "monthDay": "10-22",
@@ -1244,6 +1403,12 @@
       "summary": "A Christian family of Syria under Decius who refused the sacrifice together; the parents and all seven children were tortured and finally beheaded as one.",
       "saintIds": [
         "paraskeva-friday"
+      ],
+      "also": [
+        {
+          "name": "Great-martyr Paraskeva",
+          "saintId": "paraskeva-friday"
+        }
       ]
     },
     "10-29": {
@@ -1267,6 +1432,12 @@
       "summary": "Two brothers of third-century Asia Minor, sons of the Christian Theodota, who having received the gift of healing freely gave to all who came. They reposed in peace at Pheremma.",
       "saintIds": [
         "cosmas-and-damian-of-asia"
+      ],
+      "also": [
+        {
+          "name": "Cosmas and Damian, Unmercenaries of Asia",
+          "saintId": "cosmas-and-damian-of-asia"
+        }
       ]
     },
     "11-02": {
@@ -1292,7 +1463,10 @@
     "11-06": {
       "monthDay": "11-06",
       "title": "St. Paul the Confessor, Archbishop of Constantinople",
-      "summary": "A fourth-century hierarch driven from his see three times by the Arian party and at last strangled with his own omophorion at Cucusus in Armenia, where he had been sent in exile."
+      "summary": "A fourth-century hierarch driven from his see three times by the Arian party and at last strangled with his own omophorion at Cucusus in Armenia, where he had been sent in exile.",
+      "saintIds": [
+        "apostle-paul"
+      ]
     },
     "11-07": {
       "monthDay": "11-07",
@@ -1322,7 +1496,14 @@
         },
         {
           "name": "Archangel Barachiel"
+        },
+        {
+          "name": "Archangel Michael",
+          "saintId": "archangel-michael"
         }
+      ],
+      "saintIds": [
+        "archangel-michael"
       ]
     },
     "11-09": {
@@ -1422,6 +1603,12 @@
       "summary": "A third-century disciple of Origen who found his see at Neo-Caesarea with seventeen Christians and left it with seventeen pagans, having converted the city by miracles, by teaching, and by a creed received in vision from St. John the Theologian.",
       "saintIds": [
         "gregory-the-wonderworker"
+      ],
+      "also": [
+        {
+          "name": "Gregory the Wonderworker, Bishop of Neo-Caesarea",
+          "saintId": "gregory-the-wonderworker"
+        }
       ]
     },
     "11-18": {
@@ -1482,7 +1669,10 @@
     "11-27": {
       "monthDay": "11-27",
       "title": "Great-martyr James the Persian",
-      "summary": "A nobleman of fifth-century Persia who had denied Christ to please King Yazdegerd; reproached by his Christian mother and wife, he confessed openly, and was hacked apart limb by limb."
+      "summary": "A nobleman of fifth-century Persia who had denied Christ to please King Yazdegerd; reproached by his Christian mother and wife, he confessed openly, and was hacked apart limb by limb.",
+      "saintIds": [
+        "apostle-james-zebedee"
+      ]
     },
     "11-28": {
       "monthDay": "11-28",
@@ -1511,7 +1701,10 @@
     "12-02": {
       "monthDay": "12-02",
       "title": "Holy Prophet Habakkuk",
-      "summary": "The prophet who watched on his tower for the answer of God to his question 'How long?' and received the word that became the keynote of Pauline theology: 'The righteous shall live by his faith.'"
+      "summary": "The prophet who watched on his tower for the answer of God to his question 'How long?' and received the word that became the keynote of Pauline theology: 'The righteous shall live by his faith.'",
+      "saintIds": [
+        "prophet-habakkuk"
+      ]
     },
     "12-03": {
       "monthDay": "12-03",
@@ -1615,6 +1808,10 @@
         {
           "name": "St. Herman of Alaska, Wonderworker of America",
           "saintId": "herman-of-alaska"
+        },
+        {
+          "name": "St. Herman of Alaska",
+          "saintId": "herman-of-alaska"
         }
       ],
       "saintIds": [
@@ -1656,17 +1853,32 @@
       "summary": "The four young captives of Babylon: Daniel who in the lions' den was kept by God, and the three who in the fiery furnace sang the hymn that the Church still chants in the eighth ode of every canon.",
       "saintIds": [
         "prophet-daniel"
+      ],
+      "also": [
+        {
+          "name": "Prophet Daniel and the Three Holy Youths",
+          "saintId": "prophet-daniel"
+        }
       ]
     },
     "12-18": {
       "monthDay": "12-18",
       "title": "Martyr Sebastian and his companions at Rome",
-      "summary": "A captain of the Praetorian Guard under Diocletian who secretly strengthened the imprisoned Christians, was discovered, shot through with arrows, and finally clubbed to death — the soldier-saint of the Western tradition."
+      "summary": "A captain of the Praetorian Guard under Diocletian who secretly strengthened the imprisoned Christians, was discovered, shot through with arrows, and finally clubbed to death — the soldier-saint of the Western tradition.",
+      "saintIds": [
+        "martyr-sebastian"
+      ]
     },
     "12-19": {
       "monthDay": "12-19",
       "title": "Martyr Boniface of Tarsus",
-      "summary": "A Roman official sent by his mistress Aglaida to bring back relics of the martyrs, who in Tarsus was so moved by their courage that he confessed Christ himself and joined them in the boiling pitch — Aglaida received his body and became a recluse."
+      "summary": "A Roman official sent by his mistress Aglaida to bring back relics of the martyrs, who in Tarsus was so moved by their courage that he confessed Christ himself and joined them in the boiling pitch — Aglaida received his body and became a recluse.",
+      "also": [
+        {
+          "name": "Martyrs Boniface and Righteous Aglaida of Rome",
+          "saintId": "boniface-and-aglaida"
+        }
+      ]
     },
     "12-20": {
       "monthDay": "12-20",
@@ -1675,6 +1887,14 @@
       "also": [
         {
           "name": "Hieromartyr Ignatius the God-bearer, Bishop of Antioch"
+        },
+        {
+          "name": "Hieromartyr Ignatius the God-bearer of Antioch",
+          "saintId": "ignatius-of-antioch"
+        },
+        {
+          "name": "St. John of Kronstadt",
+          "saintId": "john-of-kronstadt"
         }
       ],
       "saintIds": [
@@ -1692,6 +1912,12 @@
       "summary": "A noble of fourth-century Sirmium who took her wealth to the prisons of Aquileia and Sirmium to ransom and serve the Christians there; after the slaughter she was bound, starved, and finally burned together with three sisters of her household.",
       "saintIds": [
         "anastasia-the-deliverer"
+      ],
+      "also": [
+        {
+          "name": "Great-martyr Anastasia the Deliverer-from-bonds",
+          "saintId": "anastasia-the-deliverer"
+        }
       ]
     },
     "12-23": {
@@ -1751,7 +1977,10 @@
     "12-29": {
       "monthDay": "12-29",
       "title": "The 14,000 Holy Innocents slain by Herod at Bethlehem",
-      "summary": "The children of two years and under whom Herod, in his rage at the magi, slew at Bethlehem and in all its borders. The Church names them the first martyrs for Christ — slain not for confession but in His place."
+      "summary": "The children of two years and under whom Herod, in his rage at the magi, slew at Bethlehem and in all its borders. The Church names them the first martyrs for Christ — slain not for confession but in His place.",
+      "saintIds": [
+        "innocent-of-alaska"
+      ]
     },
     "12-30": {
       "monthDay": "12-30",
@@ -1832,7 +2061,13 @@
     "01-09": {
       "monthDay": "01-09",
       "title": "Martyr Polyeuctus of Melitene in Armenia",
-      "summary": "A Roman officer of third-century Melitene whose conversion came suddenly through the witness of his Christian friend Nearchus; he was beheaded for tearing up the imperial edict."
+      "summary": "A Roman officer of third-century Melitene whose conversion came suddenly through the witness of his Christian friend Nearchus; he was beheaded for tearing up the imperial edict.",
+      "also": [
+        {
+          "name": "St. Philip the Confessor, Metropolitan of Moscow",
+          "saintId": "philip-of-moscow"
+        }
+      ]
     },
     "01-10": {
       "monthDay": "01-10",
@@ -1879,6 +2114,10 @@
         {
           "name": "Holy Fathers slain at the monasteries of Sinai and Raithou",
           "summary": "Fourth- and fifth-century monks killed by Bedouins while at prayer in their cells."
+        },
+        {
+          "name": "St. Sava, First Archbishop of Serbia",
+          "saintId": "sava-of-serbia"
         }
       ]
     },
@@ -1890,12 +2129,18 @@
         {
           "name": "St. John the Hut-dweller"
         }
+      ],
+      "saintIds": [
+        "apostle-paul"
       ]
     },
     "01-16": {
       "monthDay": "01-16",
       "title": "Veneration of the Honorable Chains of the Apostle Peter",
-      "summary": "The chains by which Herod bound Peter and from which the angel loosed him were brought from Jerusalem to Rome and from there to Constantinople, where they continued to heal the sick."
+      "summary": "The chains by which Herod bound Peter and from which the angel loosed him were brought from Jerusalem to Rome and from there to Constantinople, where they continued to heal the sick.",
+      "saintIds": [
+        "apostle-peter"
+      ]
     },
     "01-17": {
       "monthDay": "01-17",
@@ -1911,19 +2156,39 @@
       "title": "Sts. Athanasius and Cyril, Archbishops of Alexandria",
       "summary": "Two of the great pillars of Christology: Athanasius (4th c.) who through five exiles upheld the Son consubstantial with the Father, and Cyril (5th c.) who at Ephesus defended the title Theotokos against Nestorius.",
       "saintIds": [
-        "athanasius-the-great"
+        "athanasius-the-great",
+        "cyril-of-alexandria",
+        "cyril-equal-to-apostles"
       ]
     },
     "01-19": {
       "monthDay": "01-19",
       "title": "St. Macarius the Great of Egypt",
-      "summary": "A fourth-century desert father of the Scetis, disciple of Anthony, whose Fifty Spiritual Homilies opened to the East the inner life of unceasing prayer — the lamp of the hesychast tradition."
+      "summary": "A fourth-century desert father of the Scetis, disciple of Anthony, whose Fifty Spiritual Homilies opened to the East the inner life of unceasing prayer — the lamp of the hesychast tradition.",
+      "saintIds": [
+        "macarius-the-great"
+      ],
+      "also": [
+        {
+          "name": "St. Macarius the Great of Egypt",
+          "saintId": "macarius-the-great"
+        }
+      ]
     },
     "01-20": {
       "monthDay": "01-20",
       "title": "St. Euthymius the Great",
       "summary": "The fifth-century Armenian-born monk of Palestine whose lavra outside Jerusalem trained Sabbas, Theoctistus, and a generation of saints, and whose stand at the Council of Chalcedon held the Holy Land in Orthodoxy.",
-      "feastRank": "polyeleos"
+      "feastRank": "polyeleos",
+      "saintIds": [
+        "euthymius-the-great"
+      ],
+      "also": [
+        {
+          "name": "St. Euthymius the Great",
+          "saintId": "euthymius-the-great"
+        }
+      ]
     },
     "01-21": {
       "monthDay": "01-21",
@@ -1931,6 +2196,16 @@
       "summary": "The seventh-century monk and theologian whose long defense of the two wills of Christ against the monothelites cost him his tongue, his right hand, and finally his life in exile in Lazica.",
       "saintIds": [
         "maximus-the-confessor"
+      ],
+      "also": [
+        {
+          "name": "St. Maximus the Confessor",
+          "saintId": "maximus-the-confessor"
+        },
+        {
+          "name": "St. Maximus the Greek",
+          "saintId": "maximus-the-greek"
+        }
       ]
     },
     "01-22": {
@@ -1979,7 +2254,10 @@
     "01-27": {
       "monthDay": "01-27",
       "title": "Translation of the Relics of St. John Chrysostom",
-      "summary": "Thirty years after his death in exile at Comana, the body of Chrysostom was brought back to Constantinople by his disciple-emperor Theodosius II, who laid his cheek against the coffin and asked forgiveness in the name of his mother Eudoxia."
+      "summary": "Thirty years after his death in exile at Comana, the body of Chrysostom was brought back to Constantinople by his disciple-emperor Theodosius II, who laid his cheek against the coffin and asked forgiveness in the name of his mother Eudoxia.",
+      "saintIds": [
+        "source-oca-daily"
+      ]
     },
     "01-28": {
       "monthDay": "01-28",
@@ -2021,7 +2299,10 @@
     "01-31": {
       "monthDay": "01-31",
       "title": "Holy Unmercenaries and Wonderworkers Cyrus and John",
-      "summary": "The Egyptian physician-monks of the early fourth century who from their cell near Alexandria healed the bodies and souls of all who came; under Diocletian they were beheaded with three holy women they had encouraged."
+      "summary": "The Egyptian physician-monks of the early fourth century who from their cell near Alexandria healed the bodies and souls of all who came; under Diocletian they were beheaded with three holy women they had encouraged.",
+      "saintIds": [
+        "cyrus-and-john-unmercenaries"
+      ]
     },
     "02-01": {
       "monthDay": "02-01",
@@ -2045,7 +2326,20 @@
     "02-03": {
       "monthDay": "02-03",
       "title": "Righteous Symeon the God-receiver and Anna the Prophetess",
-      "summary": "The day after the Meeting honors the elder to whom it had been revealed that he would not see death until he had seen the Lord's Christ, and the widow of fourscore years and four who served God day and night in the Temple."
+      "summary": "The day after the Meeting honors the elder to whom it had been revealed that he would not see death until he had seen the Lord's Christ, and the widow of fourscore years and four who served God day and night in the Temple.",
+      "saintIds": [
+        "anna-the-prophetess"
+      ],
+      "also": [
+        {
+          "name": "Simeon the God-Receiver",
+          "saintId": "simeon-the-god-receiver"
+        },
+        {
+          "name": "Anna the Prophetess",
+          "saintId": "anna-the-prophetess"
+        }
+      ]
     },
     "02-04": {
       "monthDay": "02-04",
@@ -2058,6 +2352,12 @@
       "summary": "A young noblewoman of third-century Catania whom the Roman governor Quintianus pursued for her wealth and beauty; refused, he had her breasts torn off and at last killed her in prison — the apostle Peter appeared to heal her in her cell.",
       "saintIds": [
         "agatha-of-sicily"
+      ],
+      "also": [
+        {
+          "name": "Martyr Agatha of Sicily",
+          "saintId": "agatha-of-sicily"
+        }
       ]
     },
     "02-06": {
@@ -2067,6 +2367,14 @@
       "also": [
         {
           "name": "St. Bucolus of Smyrna"
+        },
+        {
+          "name": "Photios the Great, Patriarch of Constantinople",
+          "saintId": "photios-the-great"
+        },
+        {
+          "name": "Blessed Xenia of St. Petersburg, Fool-for-Christ",
+          "saintId": "xenia-of-petersburg"
         }
       ],
       "saintIds": [
@@ -2097,6 +2405,12 @@
       "summary": "A bishop of second-century Magnesia in Thessaly who at one hundred and thirteen years old endured many torments under Septimius Severus and converted his judges before being beheaded.",
       "saintIds": [
         "charalampias"
+      ],
+      "also": [
+        {
+          "name": "Hieromartyr Charalampias of Magnesia",
+          "saintId": "charalampias"
+        }
       ]
     },
     "02-11": {
@@ -2112,6 +2426,10 @@
         {
           "name": "St. Alexis, Metropolitan of Moscow",
           "summary": "Fourteenth-century hierarch who healed the wife of the Tatar khan and held the Russian Church together."
+        },
+        {
+          "name": "St. Alexius, Metropolitan of Moscow",
+          "saintId": "alexius-of-moscow"
         }
       ]
     },
@@ -2177,6 +2495,12 @@
       "summary": "The disciple of John the Theologian and bishop of Smyrna for sixty-five years, who under Marcus Aurelius answered the proconsul's demand to revile Christ: 'Eighty and six years have I served Him, and He has done me no wrong; how then can I blaspheme my King who saved me?'",
       "saintIds": [
         "polycarp-of-smyrna"
+      ],
+      "also": [
+        {
+          "name": "Hieromartyr Polycarp of Smyrna",
+          "saintId": "polycarp-of-smyrna"
+        }
       ]
     },
     "02-24": {
@@ -2195,7 +2519,13 @@
     "02-26": {
       "monthDay": "02-26",
       "title": "St. Porphyrius, Bishop of Gaza",
-      "summary": "A fifth-century bishop who through the long-prayed labor of years uprooted the entrenched paganism of Gaza, bringing down the great temple of Marnas by imperial decree after a famine breaks at his intercession."
+      "summary": "A fifth-century bishop who through the long-prayed labor of years uprooted the entrenched paganism of Gaza, bringing down the great temple of Marnas by imperial decree after a famine breaks at his intercession.",
+      "also": [
+        {
+          "name": "Photini the Samaritan Woman",
+          "saintId": "photini-the-samaritan"
+        }
+      ]
     },
     "02-27": {
       "monthDay": "02-27",
@@ -2233,6 +2563,12 @@
       "summary": "A simple gardener of Isauria under Decius, baptized by Michael the Archangel and known for his quiet boldness; he was burned alive in a fire he calmly walked into himself.",
       "saintIds": [
         "mark-the-ascetic"
+      ],
+      "also": [
+        {
+          "name": "St. Mark the Ascetic",
+          "saintId": "mark-the-ascetic"
+        }
       ]
     },
     "03-06": {
@@ -2275,6 +2611,12 @@
       "summary": "A ninth-century chronicler-monk of Bithynia whose Chronographia preserves the events of his age, and who under Leo the Armenian was beaten and exiled to Samothrace for the holy icons, dying there of his torments.",
       "saintIds": [
         "symeon-the-new-theologian"
+      ],
+      "also": [
+        {
+          "name": "St. Symeon the New Theologian",
+          "saintId": "symeon-the-new-theologian"
+        }
       ]
     },
     "03-13": {
@@ -2308,6 +2650,16 @@
       "summary": "The fourth-century catechist of the newly baptized whose lectures from the Anastasis preserve the rites and teaching of the Jerusalem church; exiled three times by Arian opposition, restored by the Second Ecumenical Council.",
       "saintIds": [
         "cyril-of-jerusalem"
+      ],
+      "also": [
+        {
+          "name": "St. Cyril of Jerusalem",
+          "saintId": "cyril-of-jerusalem"
+        },
+        {
+          "name": "St. Nikolai of Žiča and Ohrid",
+          "saintId": "nikolai-of-zica"
+        }
       ]
     },
     "03-19": {
@@ -2323,7 +2675,10 @@
     "03-21": {
       "monthDay": "03-21",
       "title": "St. James the Confessor, Bishop of Catania",
-      "summary": "A ninth-century monk of the Studion monastery in Constantinople, raised to the see of Catania in Sicily, who endured beating, imprisonment, and exile under Leo the Armenian for the holy icons."
+      "summary": "A ninth-century monk of the Studion monastery in Constantinople, raised to the see of Catania in Sicily, who endured beating, imprisonment, and exile under Leo the Armenian for the holy icons.",
+      "saintIds": [
+        "apostle-james-zebedee"
+      ]
     },
     "03-22": {
       "monthDay": "03-22",
@@ -2344,12 +2699,18 @@
       "monthDay": "03-25",
       "title": "The Annunciation to Our Most Holy Lady the Theotokos and Ever-Virgin Mary",
       "summary": "Today is the beginning of our salvation, and the revelation of the eternal mystery. The Son of God becomes the Son of the Virgin, and Gabriel proclaims the good tidings of grace.",
-      "feastRank": "great"
+      "feastRank": "great",
+      "saintIds": [
+        "theotokos"
+      ]
     },
     "03-26": {
       "monthDay": "03-26",
       "title": "The Synaxis of the Archangel Gabriel",
-      "summary": "The day after the Annunciation honors the one who first declared the mystery — Gabriel, who told Zacharias of John, and the Virgin of her Son, and now is called the announcing Archangel of the great counsel of God."
+      "summary": "The day after the Annunciation honors the one who first declared the mystery — Gabriel, who told Zacharias of John, and the Virgin of her Son, and now is called the announcing Archangel of the great counsel of God.",
+      "saintIds": [
+        "archangel-gabriel"
+      ]
     },
     "03-27": {
       "monthDay": "03-27",
@@ -2364,7 +2725,10 @@
     "03-29": {
       "monthDay": "03-29",
       "title": "Hieromartyrs Mark of Arethusa and Cyril the Deacon",
-      "summary": "A bishop in Syria under Julian the Apostate who in his youth had broken a pagan temple, and the deacon Cyril of Heliopolis; both were tortured by their enraged neighbors when Julian came to power, neither yielding to the smear of incense."
+      "summary": "A bishop in Syria under Julian the Apostate who in his youth had broken a pagan temple, and the deacon Cyril of Heliopolis; both were tortured by their enraged neighbors when Julian came to power, neither yielding to the smear of incense.",
+      "saintIds": [
+        "cyril-equal-to-apostles"
+      ]
     },
     "03-30": {
       "monthDay": "03-30",
@@ -2377,7 +2741,13 @@
     "03-31": {
       "monthDay": "03-31",
       "title": "Hieromartyr Hypatius, Bishop of Gangra",
-      "summary": "A fourth-century bishop of Paphlagonia who took part in the First Ecumenical Council at Nicaea, and on his return journey was set upon by Novatian heretics and stoned to death."
+      "summary": "A fourth-century bishop of Paphlagonia who took part in the First Ecumenical Council at Nicaea, and on his return journey was set upon by Novatian heretics and stoned to death.",
+      "also": [
+        {
+          "name": "St. Innocent of Alaska, Apostle of America",
+          "saintId": "innocent-of-alaska"
+        }
+      ]
     },
     "04-01": {
       "monthDay": "04-01",
@@ -2385,6 +2755,12 @@
       "summary": "The fifth-century desert ascetic whose long penitence in the wilderness beyond the Jordan is the icon of Lenten transformation; she lived forty-seven years unseen until the priest Zosimas found her, gave her communion, and buried her.",
       "saintIds": [
         "mary-of-egypt"
+      ],
+      "also": [
+        {
+          "name": "St. Justin Popović of Ćelije",
+          "saintId": "justin-popovich"
+        }
       ]
     },
     "04-02": {
@@ -2542,6 +2918,12 @@
       "saintIds": [
         "apostle-james-zebedee",
         "ignatius-brianchaninov"
+      ],
+      "also": [
+        {
+          "name": "St. Ignatius Brianchaninov",
+          "saintId": "ignatius-brianchaninov"
+        }
       ]
     }
   }

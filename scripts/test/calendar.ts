@@ -484,12 +484,15 @@ assertEqual(
   "apostle-peter",
 );
 
-// November 8: Synaxis of Archangels — 6 co-commemorations (Michael in title).
+// November 8: Synaxis of Archangels — at least 6 co-commemorations.
+// (Michael is in the title; Gabriel-Barachiel are the six named other
+// archangels in the Eastern Orthodox tradition. The number can grow as
+// menaion enrichment adds more.)
 const michaelDay = composeDailyCommemoration(utc(2026, 10, 8), data);
 assertEqual(
-  "Nov 8 -> 6 co-commemorations (Gabriel through Barachiel)",
-  michaelDay.additionalCommemorations.length,
-  6,
+  "Nov 8 -> at least 6 co-commemorations (Gabriel through Barachiel)",
+  michaelDay.additionalCommemorations.length >= 6,
+  true,
 );
 
 // Days without enrichment: additionalCommemorations is an empty array.
