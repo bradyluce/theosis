@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { PageHeader } from "@/components/layout/page-header";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
 import { getPeopleByIds, getPrimaryTranslation } from "@/lib/content";
@@ -8,6 +8,10 @@ import {
   getDailyHymns,
   getDailyReadings,
 } from "@/lib/calendar";
+import {
+  getIconForPerson,
+  getPrimaryIconForDay,
+} from "@/lib/content/icon-store";
 import { DatePicker } from "@/app/(shell)/daily/date-picker";
 
 type DailyPageProps = {
@@ -48,6 +52,11 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
   const readings = getDailyReadings(date);
   const hymns = getDailyHymns(date);
   const translationSlug = getPrimaryTranslation().slug;
+  const primaryIcon = getPrimaryIconForDay(daily, saints);
+  const saintIcons = new Map(
+    saints.map((saint) => [saint.id, getIconForPerson(saint)] as const),
+  );
+  const anyIconShown = primaryIcon || Array.from(saintIcons.values()).some(Boolean);
   // The first linked Person that carries an extendedSummary is the source
   // for the inline "Read more" disclosure. Days that don't have one fall
   // back to just the short summary — no Read more button.
@@ -64,12 +73,12 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
   }).format(new Date(daily.isoDate));
 
   return (
-    <div className="space-y-8">
-      <PageHeader
-        eyebrow={formattedDate}
-        title={daily.title}
-        description={daily.summary}
-      />
+    <div className="space-y-6">
+      <div className="rounded-[12px] border border-line bg-surface px-5 py-4 text-center">
+        <p className="text-[0.72rem] font-medium uppercase tracking-[0.24em] text-ink-soft">
+          {formattedDate}
+        </p>
+      </div>
 
       <DatePicker value={daily.isoDate} today={todayIso()} />
 
@@ -81,6 +90,18 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
           </div>
 
           <div className="space-y-3">
+            {primaryIcon ? (
+              <div className="flex justify-center pt-1">
+                <Image
+                  src={primaryIcon.src}
+                  alt={primaryIcon.alt}
+                  width={primaryIcon.width}
+                  height={primaryIcon.height}
+                  className="h-44 w-auto rounded-[6px] border border-line shadow-sm sm:h-52"
+                  priority
+                />
+              </div>
+            ) : null}
             <h2 className="font-serif text-4xl tracking-tight text-ink">
               {daily.title}
             </h2>
@@ -111,20 +132,34 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
 
           {saints.length > 0 ? (
             <div className="flex flex-wrap gap-3">
-              {saints.map((saint) => (
-                <Link
-                  key={saint.id}
-                  href={`/library/people/${saint.slug}`}
-                  className="rounded-[12px] border border-line bg-background px-4 py-3 transition-colors duration-200 hover:bg-surface-strong"
-                >
-                  <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                    {saint.kind}
-                  </p>
-                  <p className="mt-1 font-serif text-2xl tracking-tight text-ink">
-                    {saint.name}
-                  </p>
-                </Link>
-              ))}
+              {saints.map((saint) => {
+                const icon = saintIcons.get(saint.id);
+                return (
+                  <Link
+                    key={saint.id}
+                    href={`/library/people/${saint.slug}`}
+                    className="flex items-center gap-3 rounded-[12px] border border-line bg-background px-4 py-3 transition-colors duration-200 hover:bg-surface-strong"
+                  >
+                    {icon ? (
+                      <Image
+                        src={icon.src}
+                        alt={icon.alt}
+                        width={icon.width}
+                        height={icon.height}
+                        className="h-12 w-12 shrink-0 rounded-full border border-line object-cover"
+                      />
+                    ) : null}
+                    <div>
+                      <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+                        {saint.kind}
+                      </p>
+                      <p className="mt-1 font-serif text-2xl tracking-tight text-ink">
+                        {saint.name}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           ) : null}
 
@@ -158,6 +193,12 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
                 })}
               </ul>
             </div>
+          ) : null}
+
+          {anyIconShown ? (
+            <p className="pt-1 text-[0.62rem] italic tracking-wide text-ink-soft">
+              Icons in the public domain, via Wikimedia Commons.
+            </p>
           ) : null}
         </Surface>
 

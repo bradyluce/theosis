@@ -1,19 +1,21 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
-import type { Person } from "@/domain/content/types";
+import type { IconRef, Person } from "@/domain/content/types";
 
 type Props = {
   saints: Person[];
+  icons?: Record<string, IconRef>;
 };
 
 // Searchable browse view for the saint corpus. Used as the standalone
 // /library/saints page and as a candidate-list pattern that the patron
 // saint picker (in Profile) also draws from conceptually.
-export function SaintsBrowser({ saints }: Props) {
+export function SaintsBrowser({ saints, icons }: Props) {
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
@@ -48,26 +50,40 @@ export function SaintsBrowser({ saints }: Props) {
       </Surface>
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {filtered.map((saint) => (
-          <Link
-            key={saint.id}
-            href={`/library/people/${saint.slug}`}
-            className="block rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
-          >
-            <Pill variant="subtle">{saint.eraLabel}</Pill>
-            <h3 className="mt-3 font-serif text-2xl tracking-tight text-ink">
-              {saint.name}
-            </h3>
-            {saint.feastDayLabel ? (
-              <p className="mt-1 text-xs uppercase tracking-[0.18em] text-ink-soft">
-                {saint.feastDayLabel}
+        {filtered.map((saint) => {
+          const icon = icons?.[saint.id];
+          return (
+            <Link
+              key={saint.id}
+              href={`/library/people/${saint.slug}`}
+              className="block rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
+            >
+              <div className="flex items-start justify-between gap-3">
+                <Pill variant="subtle">{saint.eraLabel}</Pill>
+                {icon ? (
+                  <Image
+                    src={icon.src}
+                    alt={icon.alt}
+                    width={icon.width}
+                    height={icon.height}
+                    className="h-14 w-14 shrink-0 rounded-full border border-line object-cover"
+                  />
+                ) : null}
+              </div>
+              <h3 className="mt-3 font-serif text-2xl tracking-tight text-ink">
+                {saint.name}
+              </h3>
+              {saint.feastDayLabel ? (
+                <p className="mt-1 text-xs uppercase tracking-[0.18em] text-ink-soft">
+                  {saint.feastDayLabel}
+                </p>
+              ) : null}
+              <p className="mt-3 text-sm leading-6 text-ink-muted">
+                {saint.summary}
               </p>
-            ) : null}
-            <p className="mt-3 text-sm leading-6 text-ink-muted">
-              {saint.summary}
-            </p>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
         {filtered.length === 0 ? (
           <Surface>
             <p className="text-sm text-ink-soft">No saints match your search.</p>

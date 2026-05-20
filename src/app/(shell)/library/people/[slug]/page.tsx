@@ -1,13 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageHeader } from "@/components/layout/page-header";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
+import { getAllTopics } from "@/lib/content";
 import {
-  getAllTopics,
-  getPersonBySlug,
-  getWorksForPerson,
-} from "@/lib/content";
+  getPersonBySlugFromAll,
+  getWorksForPersonFromAll,
+} from "@/lib/content/commentary-loader";
+import { getIconForPerson } from "@/lib/content/icon-store";
 
 type PersonPageProps = {
   params: Promise<{
@@ -17,14 +19,15 @@ type PersonPageProps = {
 
 export default async function PersonPage({ params }: PersonPageProps) {
   const { slug } = await params;
-  const person = getPersonBySlug(slug);
+  const person = getPersonBySlugFromAll(slug);
 
   if (!person) {
     notFound();
   }
 
   const topics = getAllTopics();
-  const works = getWorksForPerson(person.id);
+  const works = getWorksForPersonFromAll(person.id);
+  const icon = getIconForPerson(person);
 
   return (
     <div className="space-y-8">
@@ -33,6 +36,23 @@ export default async function PersonPage({ params }: PersonPageProps) {
         title={person.honorific ? `${person.honorific} ${person.name}` : person.name}
         description={person.summary}
       />
+
+      {icon ? (
+        <div className="flex flex-col items-center gap-2">
+          <Image
+            src={icon.src}
+            alt={icon.alt}
+            width={icon.width}
+            height={icon.height}
+            className="h-64 w-auto rounded-[6px] border border-line shadow-sm sm:h-72"
+            priority
+          />
+          <p className="text-[0.62rem] italic tracking-wide text-ink-soft">
+            {icon.caption ? `${icon.caption} — ` : ""}
+            {icon.attribution}
+          </p>
+        </div>
+      ) : null}
 
       {person.extendedSummary ? (
         <Surface className="space-y-4">

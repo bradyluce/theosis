@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "ingest:bibles": "tsx scripts/ingest/ingest.ts",
+    "ingest:icons": "tsx scripts/ingest/icons/fetch-wikimedia.ts",
     "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
     "test:calendar": "tsx scripts/test/calendar.ts"
   },

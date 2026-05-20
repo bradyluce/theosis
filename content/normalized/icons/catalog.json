@@ -1,0 +1,273 @@
+{
+  "_meta": {
+    "description": "Orthodox icon catalog. Each entry resolves an iconId referenced from Person, DailyCommemoration, or DailyCommemorationItem. Image files live under public/icons/ and are served as static assets by Next.js — the IconRef.src field is the public URL (e.g. /icons/icon-theotokos-vladimir.jpg). Curated via scripts/ingest/icons/fetch-wikimedia.ts from Wikimedia Commons.",
+    "license": "Image files are public-domain or CC0 only. Attribution strings are factual provenance; captions are Theosis-owned editorial prose.",
+    "coverage": "24 icons (Phase 1): Christ Pantocrator, Theotokos of Vladimir, Rublev Trinity, the Twelve Great Feasts, and 8 major saints (Nicholas, John Chrysostom, Basil the Great, Mary of Egypt, Seraphim of Sarov, Sergius of Radonezh, Anthony the Great, George the Trophy-Bearer). Traditional Byzantine/Russian style; PD or CC0 only."
+  },
+  "icons": [
+    {
+      "id": "icon-christ-pantocrator-sinai",
+      "src": "/icons/icon-christ-pantocrator-sinai.jpg",
+      "alt": "Sixth-century encaustic icon of Christ Pantocrator from St Catherine's Monastery, Sinai.",
+      "width": 801,
+      "height": 1528,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChrist_Icon_Sinai_6th_century.jpg",
+      "license": "public-domain",
+      "caption": "Christ Pantocrator, Sinai (6th century)"
+    },
+    {
+      "id": "icon-feast-annunciation",
+      "src": "/icons/icon-feast-annunciation.jpg",
+      "alt": "Orthodox icon of the Annunciation of the Theotokos.",
+      "width": 800,
+      "height": 1067,
+      "attribution": "CC0. Wikivorker. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAnnunciation._Orthodox_icon.jpg",
+      "license": "cc0",
+      "caption": "Annunciation of the Theotokos"
+    },
+    {
+      "id": "icon-feast-ascension",
+      "src": "/icons/icon-feast-ascension.jpg",
+      "alt": "Seventeenth-century Antiochian icon of the Ascension of the Lord.",
+      "width": 800,
+      "height": 1021,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAscension_of_Jesus_icon%2C_Lattakia_(1667).jpg",
+      "license": "public-domain",
+      "caption": "Ascension of the Lord"
+    },
+    {
+      "id": "icon-feast-dormition",
+      "src": "/icons/icon-feast-dormition.jpg",
+      "alt": "Icon of the Dormition of the Theotokos by Andreas Ritzos.",
+      "width": 800,
+      "height": 1006,
+      "attribution": "Public domain. Andreas Ritzos. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADormition_of_Theotokos_Andreas_Ritzos.jpg",
+      "license": "public-domain",
+      "caption": "Dormition of the Theotokos"
+    },
+    {
+      "id": "icon-feast-entry-jerusalem",
+      "src": "/icons/icon-feast-entry-jerusalem.jpg",
+      "alt": "Russian icon of the Entry of the Lord into Jerusalem.",
+      "width": 960,
+      "height": 1200,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARussian_School_-_Icon_with_Entry_into_Jerusalem_-_FA001223_-_Brighton_Museum_%5E_Art_Gallery.jpg",
+      "license": "public-domain",
+      "caption": "Entry into Jerusalem"
+    },
+    {
+      "id": "icon-feast-exaltation-cross",
+      "src": "/icons/icon-feast-exaltation-cross.jpg",
+      "alt": "Palekh-school icon of the Exaltation of the Holy Cross.",
+      "width": 800,
+      "height": 945,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AExaltation_of_the_Cross_-_Palekh_icon_(19_c%2C_priv.coll).jpg",
+      "license": "public-domain",
+      "caption": "Exaltation of the Holy Cross"
+    },
+    {
+      "id": "icon-feast-meeting-of-lord",
+      "src": "/icons/icon-feast-meeting-of-lord.jpg",
+      "alt": "Novgorod-school icon of the Meeting of the Lord — the Presentation of Christ in the Temple.",
+      "width": 800,
+      "height": 988,
+      "attribution": "Public domain. Novgorod school. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANovgorod_School_-_The_Presentation_of_Christ_in_the_Temple_-_NG.M.02382_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg",
+      "license": "public-domain",
+      "caption": "Meeting of the Lord"
+    },
+    {
+      "id": "icon-feast-nativity-christ",
+      "src": "/icons/icon-feast-nativity-christ.png",
+      "alt": "Icon of the Nativity of Christ after Dionysius of Fourna.",
+      "width": 926,
+      "height": 1254,
+      "attribution": "Public domain. Dionysius of Fourna. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Nativity_of_Christ_Dionysius_of_Fourna.png",
+      "license": "public-domain",
+      "caption": "Nativity of Christ"
+    },
+    {
+      "id": "icon-feast-nativity-theotokos",
+      "src": "/icons/icon-feast-nativity-theotokos.jpg",
+      "alt": "Nineteenth-century icon of the Nativity of the Theotokos.",
+      "width": 800,
+      "height": 1135,
+      "attribution": "Public domain. Nikola Obrazopisov. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANikola-Obrazopisov-Belyova-church-Nativity-of-the-Theotokos-icon-1863.jpg",
+      "license": "public-domain",
+      "caption": "Nativity of the Theotokos"
+    },
+    {
+      "id": "icon-feast-pentecost",
+      "src": "/icons/icon-feast-pentecost.png",
+      "alt": "Icon of Holy Pentecost after Dionysius of Fourna.",
+      "width": 846,
+      "height": 1156,
+      "attribution": "Public domain. Dionysius of Fourna. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APentecost_Dionysius_of_Fourna.png",
+      "license": "public-domain",
+      "caption": "Holy Pentecost"
+    },
+    {
+      "id": "icon-feast-presentation-theotokos",
+      "src": "/icons/icon-feast-presentation-theotokos.jpg",
+      "alt": "Fourteenth-century icon of the Entrance of the Theotokos into the Temple, Ohrid.",
+      "width": 708,
+      "height": 923,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APresentation_of_Mary%2C_II_Half_of_XIV_Century%2C_St_Mary_Perivleptos_Church%2C_Ohrid_Icon_Gallery.jpg",
+      "license": "public-domain",
+      "caption": "Entrance of the Theotokos into the Temple"
+    },
+    {
+      "id": "icon-feast-resurrection",
+      "src": "/icons/icon-feast-resurrection.jpg",
+      "alt": "Icon of the Resurrection of Christ — the Anastasis — by Toma Vishanov.",
+      "width": 391,
+      "height": 567,
+      "attribution": "Public domain. Toma Vishanov. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AResurrection_of_Christ_Icon_by_Toma_Vishanov_from_Holy_Trinity_Church_in_Bansko.jpg",
+      "license": "public-domain",
+      "caption": "Resurrection of Christ (Anastasis)"
+    },
+    {
+      "id": "icon-feast-theophany",
+      "src": "/icons/icon-feast-theophany.jpg",
+      "alt": "Russian icon of the Theophany — the Baptism of Christ in the Jordan.",
+      "width": 477,
+      "height": 600,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABogojavlenie.jpg",
+      "license": "public-domain",
+      "caption": "Theophany"
+    },
+    {
+      "id": "icon-feast-transfiguration",
+      "src": "/icons/icon-feast-transfiguration.jpg",
+      "alt": "Greek icon of the Transfiguration of Christ on Mount Tabor.",
+      "width": 800,
+      "height": 1011,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreek_-_Transfiguration_of_Christ_-_Walters_371081.jpg",
+      "license": "public-domain",
+      "caption": "Transfiguration of Christ"
+    },
+    {
+      "id": "icon-rublev-trinity",
+      "src": "/icons/icon-rublev-trinity.jpg",
+      "alt": "Andrei Rublev's icon of the Holy Trinity, c. 1410.",
+      "width": 800,
+      "height": 996,
+      "attribution": "Public domain. Andrei Rublev. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAngelsatmamre-trinity-rublev-1410.jpg",
+      "license": "public-domain",
+      "caption": "Rublev, Holy Trinity"
+    },
+    {
+      "id": "icon-st-anthony-the-great",
+      "src": "/icons/icon-st-anthony-the-great.jpg",
+      "alt": "Icon of Saint Anthony the Great, father of monastics.",
+      "width": 800,
+      "height": 1017,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAnthony_the_Great_icon_(lebanon).jpg",
+      "license": "public-domain",
+      "caption": "Saint Anthony the Great"
+    },
+    {
+      "id": "icon-st-basil-the-great",
+      "src": "/icons/icon-st-basil-the-great.jpg",
+      "alt": "Novgorod-school icon of Saint Basil the Great.",
+      "width": 800,
+      "height": 2424,
+      "attribution": "Public domain. Novgorod school. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANovgorod_School_-_Saint_Basil_the_Great_-_NG.M.01523_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg",
+      "license": "public-domain",
+      "caption": "Saint Basil the Great"
+    },
+    {
+      "id": "icon-st-george-trophy-bearer",
+      "src": "/icons/icon-st-george-trophy-bearer.jpg",
+      "alt": "Fifteenth-century Novgorod-school icon of Saint George the Trophy-Bearer.",
+      "width": 800,
+      "height": 1060,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASaint_George_icon._Novgorod_icon-painting_school%2C_15th_cent..%2C_Veliky_Novgorod%2C_Russia._Tretyakov_Gallery.jpg",
+      "license": "public-domain",
+      "caption": "Saint George the Trophy-Bearer"
+    },
+    {
+      "id": "icon-st-john-chrysostom",
+      "src": "/icons/icon-st-john-chrysostom.jpg",
+      "alt": "Icon of Saint John Chrysostom by Dionisius.",
+      "width": 400,
+      "height": 1067,
+      "attribution": "Public domain. Dionisius. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJohn_Chrysostom_(Dionisius).jpg",
+      "license": "public-domain",
+      "caption": "Saint John Chrysostom"
+    },
+    {
+      "id": "icon-st-mary-of-egypt",
+      "src": "/icons/icon-st-mary-of-egypt.jpg",
+      "alt": "Mstera-school icon of Saint Mary of Egypt.",
+      "width": 800,
+      "height": 956,
+      "attribution": "Public domain. Russian (Mstera). Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AIcon_of_Mary_of_Egypt_(Mstera%2C_19th_c.).jpg",
+      "license": "public-domain",
+      "caption": "Saint Mary of Egypt"
+    },
+    {
+      "id": "icon-st-nicholas-myra",
+      "src": "/icons/icon-st-nicholas-myra.jpg",
+      "alt": "Russian icon of Saint Nicholas the Wonderworker, Archbishop of Myra.",
+      "width": 902,
+      "height": 1024,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARussian_-_Icon_of_Saint_Nicholas_-_Walters_44648.jpg",
+      "license": "public-domain",
+      "caption": "Saint Nicholas of Myra"
+    },
+    {
+      "id": "icon-st-seraphim-of-sarov",
+      "src": "/icons/icon-st-seraphim-of-sarov.jpg",
+      "alt": "Russian icon of Saint Seraphim of Sarov.",
+      "width": 800,
+      "height": 965,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASeraphim_of_Sarov_(after_1903%2C_priv.coll).jpg",
+      "license": "public-domain",
+      "caption": "Saint Seraphim of Sarov"
+    },
+    {
+      "id": "icon-st-sergius-of-radonezh",
+      "src": "/icons/icon-st-sergius-of-radonezh.jpg",
+      "alt": "Seventeenth-century vita icon of Saint Sergius of Radonezh.",
+      "width": 800,
+      "height": 1153,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASergius_of_Radonezh_vita_icon_(17_c.%2C_Yaroslavl_museum).jpg",
+      "license": "public-domain",
+      "caption": "Saint Sergius of Radonezh"
+    },
+    {
+      "id": "icon-theotokos-vladimir",
+      "src": "/icons/icon-theotokos-vladimir.jpg",
+      "alt": "Twelfth-century Byzantine icon of the Theotokos of Vladimir.",
+      "width": 456,
+      "height": 681,
+      "attribution": "Public domain. Via Wikimedia Commons.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AVladimirskaya.jpg",
+      "license": "public-domain",
+      "caption": "Theotokos of Vladimir"
+    }
+  ]
+}

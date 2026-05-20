@@ -85,6 +85,27 @@ export type TopicTag = {
   summary: string;
 };
 
+// One Orthodox icon (image asset). Catalogued in
+// content/normalized/icons/catalog.json and referenced by id from Person,
+// DailyCommemoration, and DailyCommemorationItem. Files live under
+// content/normalized/icons/files/ and are served as static assets.
+// Editorial policy: only public-domain or CC0 sources — never CC-BY-SA prose
+// or images carrying ShareAlike obligations on derivatives.
+export type IconLicense = "public-domain" | "cc0" | "cc-by";
+
+export type IconRef = {
+  id: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  attribution: string;
+  sourceUrl: string;
+  license: IconLicense;
+  // Short Theosis-owned caption. Do not lift Wikimedia file descriptions.
+  caption?: string;
+};
+
 export type Person = {
   id: string;
   slug: string;
@@ -103,6 +124,10 @@ export type Person = {
   topicSlugs: string[];
   featuredWorkIds: string[];
   feastDayLabel?: string;
+  // Optional icon for this saint/father. Resolved against the icon catalog
+  // (content/normalized/icons/catalog.json) at render time. Optional so the
+  // long tail of un-iconed Persons degrades gracefully in UI.
+  iconId?: string;
 };
 
 export type Work = {
@@ -169,6 +194,7 @@ export type DailyCommemorationItem = {
   name: string;
   summary?: string;
   saintId?: string;
+  iconId?: string;
 };
 
 export type DailyCommemoration = {
@@ -186,4 +212,8 @@ export type DailyCommemoration = {
   hymnIds: string[];
   lifeExcerpt: string;
   sourceId: string;
+  // Primary icon for the day — usually a feast icon when feastLabel is set,
+  // or the lead saint's icon otherwise. The reader page may also show
+  // per-saint icons via DailyCommemorationItem.iconId / Person.iconId.
+  iconId?: string;
 };
