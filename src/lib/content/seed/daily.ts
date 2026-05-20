@@ -51,6 +51,7 @@ export const dailyCommemorations: DailyCommemoration[] = [
     summary:
       "A Lenten commemoration marked by endurance, brotherhood, and the radiant steadiness of confession under trial.",
     saintIds: ["forty-martyrs-of-sebaste"],
+    additionalCommemorations: [],
     feastLabel: "Commemoration of the Forty Martyrs",
     fastLabel: "Great Lent",
     readingIds: [

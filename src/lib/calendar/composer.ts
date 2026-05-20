@@ -1,4 +1,4 @@
-import type { DailyCommemoration } from "@/domain/content/types";
+import type { DailyCommemoration, DailyCommemorationItem } from "@/domain/content/types";
 import { composeDailyFast } from "@/lib/calendar/fasts";
 import {
   getPaschaDate,
@@ -55,12 +55,24 @@ export function composeDailyCommemoration(
     ...(menaionEntry?.saintIds ?? []),
   ]);
 
+  // Co-commemorations:
+  //   - If movable wins primary AND there's a Menaion entry, the Menaion's
+  //     title becomes a co-commemoration (the day's saint still matters
+  //     alongside the great feast).
+  //   - Plus everything in menaion.also, de-duped against the primary.
+  const additionalCommemorations = collectAdditionalCommemorations(
+    menaionEntry,
+    /* primaryName */ title,
+    /* movableIsPrimary */ Boolean(movableEntry),
+  );
+
   return {
     id: `daily-${isoDate}`,
     isoDate,
     title,
     summary,
     saintIds,
+    additionalCommemorations,
     feastLabel,
     fastLabel: composeDailyFast(date, { calendarSystem }),
     readingIds: [], // Lectionary is composed separately via composeDailyReadings.
@@ -106,11 +118,10 @@ function pickPrimary(
   feastLabel: string | undefined;
 } {
   if (movable) {
-    const alsoLine = menaion ? ` Today the Menaion also commemorates ${menaion.title}.` : "";
     return {
       title: movable.title,
       summary: movable.summary,
-      lifeExcerpt: movable.summary + alsoLine,
+      lifeExcerpt: movable.summary,
       feastLabel: movable.feastRank === "great" ? movable.title : undefined,
     };
   }
@@ -141,6 +152,33 @@ function uniquePreservingOrder<T>(values: readonly T[]): T[] {
       out.push(value);
     }
   }
+  return out;
+}
+
+function collectAdditionalCommemorations(
+  menaionEntry: MenaionEntry | undefined,
+  primaryName: string,
+  movableIsPrimary: boolean,
+): DailyCommemorationItem[] {
+  if (!menaionEntry) return [];
+
+  const seen = new Set<string>([primaryName]);
+  const out: DailyCommemorationItem[] = [];
+
+  // When a movable feast outranks the Menaion entry, promote the Menaion's
+  // own title into the additional list so the day's saint isn't lost.
+  if (movableIsPrimary && !seen.has(menaionEntry.title)) {
+    seen.add(menaionEntry.title);
+    const saintId = menaionEntry.saintIds?.[0];
+    out.push({ name: menaionEntry.title, summary: menaionEntry.summary, saintId });
+  }
+
+  for (const item of menaionEntry.also ?? []) {
+    if (seen.has(item.name)) continue;
+    seen.add(item.name);
+    out.push({ name: item.name, summary: item.summary, saintId: item.saintId });
+  }
+
   return out;
 }
 

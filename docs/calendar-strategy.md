@@ -19,14 +19,16 @@ Shipped to master:
 - **Paschal anchor: next-year switch** ✅ — `resolvePaschalAnchor` (in [src/lib/calendar/paschalion.ts](src/lib/calendar/paschalion.ts)) now hands off from the current Pascha to the next one once a date enters next year's Triodion window. Lets Triodion readings resolve correctly without manual year wrangling.
 - **Phase D — Troparia/kontakia** ✅ (partial) — original-translation English hymn texts in [content/normalized/calendar/hymns.json](content/normalized/calendar/hymns.json) for movable feasts + all fixed-cycle Great Feasts + ~12 other principal saints.
 - **Phase F — Fasting rules** ✅ — Great Lent / Holy Week / Cheesefare / Apostles' Fast / Dormition Fast / Nativity Fast / Sviatki / weekly Wed-Fri logic in [src/lib/calendar/fasts.ts](src/lib/calendar/fasts.ts).
-- **Phase C/E — Saint Person records** ✅ (partial) — 25 new `Person` entries in [src/lib/content/seed/library.ts](src/lib/content/seed/library.ts) for the principal apostles, evangelists, hierarchs, monastics, and equal-to-the-apostles. `MenaionEntry.saintIds` field added; 43 days now link to library Person records; composer unions saintIds across both layers. Daily-page saint cards now activate for those dates.
+- **Phase C/E — Saint Person records** ✅ (expanding) — 55 `Person` entries (was 7 before this work) covering apostles, evangelists, hierarchs, monastics, equal-to-the-apostles, great-martyrs, modern saints, and OT prophets. `getAllSaints()` returns the saint subset sorted by name for patron-saint browsing; `getPatronSaint()` resolves the profile-stored id.
+- **Multi-saint days** ✅ — `MenaionEntry.also` is now `Commemoration[]` (was `string[]`), each entry optionally carrying a saintId link and a short summary. New `DailyCommemoration.additionalCommemorations[]` surfaces every saint commemorated on a date, with movable feasts auto-promoting the Menaion entry into the additional list so the day's saint isn't lost behind a Great Feast. The Daily page renders the list with clickable links where a Person record exists. 81 days carry enrichments.
 - **Test suite** ✅ — 56 unit tests in `npm run test:calendar` cover Paschalion correctness, helper symmetry, composer behavior, reading/hymn layering, fasting precedence, and Menaion coverage across all twelve months.
 
 Not yet shipped:
 
 - **Phase C — Saint metadata via Wikidata SPARQL** (decision: editorial Tier-A prose only — Wikidata still useful for QID cross-links and structured facts).
 - **Phase E — Long-form saint biographies** — current Menaion summaries are 1-2 sentences and Person summaries are paragraph-length; deeper hagiographical articles still owed.
-- **Person coverage expansion** — 25 records cover the principal commemorations; the long tail (Old Testament prophets, lesser martyrs, monastic fathers) still has commemoration titles but no Person record / saint card.
+- **Person coverage expansion** — 55 records cover the major patron-saint choices and ancestors; the long tail (regional saints, Russian/Slavic wonderworkers, lesser martyrs) still has commemoration titles but no Person record / saint card.
+- **Patron-saint UI** — `patronSaintPersonId` is in the profile data model; the picker UI on the Profile page is the natural next step.
 - **Post-Pentecost weekday lectionary** — Monday–Saturday Romans/Corinthians/Matthew/Luke daily cycles for ordinary time. ~210 reading slots; Lukan jump rules are the subtle bit. (Pentecostarion weekdays are done.)
 - **Old Calendar mode + jurisdiction switching** — data model carries the axis; UI surface is deferred.
 - **Fasting depth** — current `fastLabel` is a string; could split into a richer record (strictness levels, daily exceptions like Annunciation in Lent, Theophany eve).

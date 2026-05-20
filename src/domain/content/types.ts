@@ -155,12 +155,25 @@ export type HymnText = {
   sourceId: string;
 };
 
+// One saint or feast commemorated on a single day. Multiple of these can
+// appear under DailyCommemoration.additionalCommemorations alongside the
+// primary title — Orthodox tradition typically commemorates several saints
+// per day, and the Daily page shows every one of them.
+export type DailyCommemorationItem = {
+  name: string;
+  summary?: string;
+  saintId?: string;
+};
+
 export type DailyCommemoration = {
   id: string;
   isoDate: string;
   title: string;
   summary: string;
   saintIds: string[];
+  // Co-commemorations beyond the primary (title/summary). Often name-only;
+  // when a saintId is set the Daily page can link to a library Person.
+  additionalCommemorations: DailyCommemorationItem[];
   feastLabel?: string;
   fastLabel?: string;
   readingIds: string[];

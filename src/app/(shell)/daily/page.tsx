@@ -60,6 +60,38 @@ export default function DailyPage() {
               </Link>
             ))}
           </div>
+
+          {daily.additionalCommemorations.length > 0 ? (
+            <div className="space-y-2">
+              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+                Also commemorated
+              </p>
+              <ul className="space-y-1 text-sm leading-6 text-ink-muted">
+                {daily.additionalCommemorations.map((item, index) => {
+                  const linkedSaint = item.saintId
+                    ? saints.find((saint) => saint.id === item.saintId)
+                    : undefined;
+                  return (
+                    <li key={`${item.name}-${index}`}>
+                      {linkedSaint ? (
+                        <Link
+                          href={`/library/people/${linkedSaint.slug}`}
+                          className="text-ink transition-colors duration-200 hover:text-gold"
+                        >
+                          {item.name}
+                        </Link>
+                      ) : (
+                        item.name
+                      )}
+                      {item.summary ? (
+                        <span className="text-ink-soft"> — {item.summary}</span>
+                      ) : null}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ) : null}
         </Surface>
 
         <Surface className="space-y-4">

@@ -128,10 +128,11 @@ assertEqual(
   constantineHelena.title,
   "Ascension of the Lord",
 );
-// And the Menaion entry should be folded into the life excerpt as "also".
+// And the Menaion entry now lives in additionalCommemorations (instead of
+// being folded into lifeExcerpt as in the original composer).
 assertEqual(
-  "May 21 lifeExcerpt mentions Constantine and Helena",
-  constantineHelena.lifeExcerpt.includes("Constantine"),
+  "May 21 additionalCommemorations[0] mentions Constantine and Helena",
+  constantineHelena.additionalCommemorations[0]?.name.includes("Constantine"),
   true,
 );
 
@@ -346,6 +347,49 @@ assertEqual(
 // A day without a Person link returns empty saintIds (does not crash).
 const mayNineteen = composeDailyCommemoration(utc(2026, 4, 19), data);
 assertEqual("May 19 (no linked Person) -> saintIds empty", mayNineteen.saintIds, []);
+
+// --- Multi-saint days surface additionalCommemorations ---
+
+// June 30: Synaxis of the Twelve Apostles — 12 named co-commemorations.
+const twelveApostles = composeDailyCommemoration(utc(2026, 5, 30), data);
+assertEqual(
+  "June 30 Synaxis of Twelve Apostles -> 12 co-commemorations",
+  twelveApostles.additionalCommemorations.length,
+  12,
+);
+// First listed co-commemoration is Apostle Peter, with the saintId set.
+assertEqual(
+  "June 30 first co-commemoration is Apostle Peter",
+  twelveApostles.additionalCommemorations[0].name,
+  "Apostle Peter",
+);
+assertEqual(
+  "June 30 Apostle Peter has saintId",
+  twelveApostles.additionalCommemorations[0].saintId,
+  "apostle-peter",
+);
+
+// November 8: Synaxis of Archangels — 6 co-commemorations (Michael in title).
+const michaelDay = composeDailyCommemoration(utc(2026, 10, 8), data);
+assertEqual(
+  "Nov 8 -> 6 co-commemorations (Gabriel through Barachiel)",
+  michaelDay.additionalCommemorations.length,
+  6,
+);
+
+// Days without enrichment: additionalCommemorations is an empty array.
+const justMay19 = composeDailyCommemoration(utc(2026, 4, 19), data);
+assertEqual("May 19 -> 0 co-commemorations", justMay19.additionalCommemorations.length, 0);
+
+// When a movable feast outranks the Menaion, the Menaion entry becomes a
+// co-commemoration so the day's saint isn't lost.
+// May 21 2026 = Ascension (pdist 39, movable wins) + Sts. Constantine & Helen (Menaion).
+const ascensionDay = composeDailyCommemoration(utc(2026, 4, 21), data);
+assertEqual(
+  "Ascension day promotes the Menaion entry into additionalCommemorations",
+  ascensionDay.additionalCommemorations[0].name,
+  "Holy Equal-to-the-Apostles Constantine and his mother Helena",
+);
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed.`);

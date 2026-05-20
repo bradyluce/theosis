@@ -117,6 +117,22 @@ export function getAllPeople() {
   return people;
 }
 
+// Saints suitable as patron-saint choices: all Person records whose `kind`
+// is "saint". Sorted alphabetically by name for the picker UI.
+export function getAllSaints(): Person[] {
+  return people
+    .filter((person) => person.kind === "saint")
+    .slice()
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Resolves the user's selected patron saint (from ProfilePreferences) to
+// its Person record, or undefined if the id has no match.
+export function getPatronSaint(): Person | undefined {
+  const id = userProfileSeed.preferences.patronSaintPersonId;
+  return id ? getPersonById(id) : undefined;
+}
+
 export function getWorkById(workId: string) {
   return works.find((work) => work.id === workId);
 }
