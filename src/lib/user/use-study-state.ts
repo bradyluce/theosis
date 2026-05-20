@@ -31,6 +31,9 @@ type StudyState = UserProfileSnapshot & {
   recordReadingHistory: (entry: Omit<ReadingHistoryEntry, "id" | "visitedAt">) => void;
   toggleFavoritePerson: (personId: string) => void;
   setPatronSaint: (personId: string) => void;
+  togglePreferredFather: (personId: string) => void;
+  togglehiddenFather: (personId: string) => void;
+  movePreferredFather: (personId: string, direction: "up" | "down") => void;
 };
 
 function nextSavedVerse(verseId: string, translationId: string): SavedVerse {
@@ -169,6 +172,56 @@ export const useStudyState = create<StudyState>()(
         set((state) => ({
           preferences: { ...state.preferences, patronSaintPersonId: personId },
         })),
+      togglePreferredFather: (personId) =>
+        set((state) => {
+          const preferred = state.preferences.preferredFatherIds;
+          const exists = preferred.includes(personId);
+          // Adding a preferred father implicitly un-hides them; the two
+          // lists are mutually exclusive in practice.
+          const hidden = state.preferences.hiddenFatherIds.filter(
+            (id) => id !== personId,
+          );
+          return {
+            preferences: {
+              ...state.preferences,
+              preferredFatherIds: exists
+                ? preferred.filter((id) => id !== personId)
+                : [...preferred, personId],
+              hiddenFatherIds: hidden,
+            },
+          };
+        }),
+      togglehiddenFather: (personId) =>
+        set((state) => {
+          const hidden = state.preferences.hiddenFatherIds;
+          const exists = hidden.includes(personId);
+          // Hiding a father implicitly removes them from the preferred list.
+          const preferred = state.preferences.preferredFatherIds.filter(
+            (id) => id !== personId,
+          );
+          return {
+            preferences: {
+              ...state.preferences,
+              hiddenFatherIds: exists
+                ? hidden.filter((id) => id !== personId)
+                : [...hidden, personId],
+              preferredFatherIds: preferred,
+            },
+          };
+        }),
+      movePreferredFather: (personId, direction) =>
+        set((state) => {
+          const list = state.preferences.preferredFatherIds;
+          const index = list.indexOf(personId);
+          if (index < 0) return {};
+          const swapWith = direction === "up" ? index - 1 : index + 1;
+          if (swapWith < 0 || swapWith >= list.length) return {};
+          const next = list.slice();
+          [next[index], next[swapWith]] = [next[swapWith], next[index]];
+          return {
+            preferences: { ...state.preferences, preferredFatherIds: next },
+          };
+        }),
     }),
     {
       name: "theosis-study-state",

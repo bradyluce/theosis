@@ -34,6 +34,48 @@ type ReaderExperienceProps = {
   model: ReaderModel;
 };
 
+// Apply the user's profile preferences for Fathers in the commentary panel:
+// hide entries from blocked persons, and sort entries by preferred-list
+// position (first listed appears first). Entries from people not on either
+// list keep their natural rank-based order behind the preferred ones.
+function applyFatherPreferences(
+  items: ReaderCommentaryCard[],
+  preferredIds: string[],
+  hiddenIds: string[],
+): ReaderCommentaryCard[] {
+  if (preferredIds.length === 0 && hiddenIds.length === 0) return items;
+  const filtered = hiddenIds.length === 0
+    ? items
+    : items.filter((entry) => !hiddenIds.includes(entry.personId));
+  if (preferredIds.length === 0) return filtered;
+  const rank = new Map<string, number>();
+  preferredIds.forEach((id, index) => rank.set(id, index));
+  return filtered.slice().sort((a, b) => {
+    const ra = rank.has(a.personId) ? rank.get(a.personId)! : Number.MAX_SAFE_INTEGER;
+    const rb = rank.has(b.personId) ? rank.get(b.personId)! : Number.MAX_SAFE_INTEGER;
+    return ra - rb;
+  });
+}
+
+// Threshold above which we collapse commentary excerpts to a teaser sentence
+// in the reader. The full text lives on the library work page.
+const COMMENTARY_TEASER_THRESHOLD = 220;
+
+// Truncate to the first sentence (or first ~220 chars at a word boundary)
+// when the excerpt would otherwise dominate the verse panel. Short excerpts
+// pass through untouched so brief ancient sayings stay whole.
+function teaserOf(excerpt: string): string {
+  const trimmed = excerpt.trim();
+  if (trimmed.length <= COMMENTARY_TEASER_THRESHOLD) return trimmed;
+  const sentenceEnd = trimmed.search(/[.!?](?:\s|$)/);
+  if (sentenceEnd > 0 && sentenceEnd < COMMENTARY_TEASER_THRESHOLD) {
+    return trimmed.slice(0, sentenceEnd + 1);
+  }
+  const slice = trimmed.slice(0, COMMENTARY_TEASER_THRESHOLD);
+  const lastSpace = slice.lastIndexOf(" ");
+  return lastSpace > 0 ? slice.slice(0, lastSpace) : slice;
+}
+
 // 8-step text-size scale. Step 0 is intentionally small so a verse list can be
 // scanned at a glance; step 7 is large-print. Step 4 is the default.
 const SIZE_STEPS: {
@@ -118,34 +160,39 @@ function FatherCommentaryGroup({
       </button>
       {open ? (
         <div className="space-y-4 border-t border-line bg-background px-4 py-4">
-          {entries.map((entry) => (
-            <article key={entry.id} className="space-y-2">
-              <p className="text-[0.65rem] uppercase tracking-[0.18em] text-ink-soft">
-                {entry.title}
-                {entry.sourceLabel ? ` · ${entry.sourceLabel}` : ""}
-              </p>
-              <p className="text-ink-muted" style={excerptStyle}>
-                {entry.excerpt}
-              </p>
-              {entry.takeaway ? (
-                <p
-                  className="rounded-[8px] bg-surface px-3 py-3 text-ink"
-                  style={excerptStyle}
-                >
-                  {entry.takeaway}
+          {entries.map((entry) => {
+            const teaser = teaserOf(entry.excerpt);
+            const truncated = teaser !== entry.excerpt;
+            return (
+              <article key={entry.id} className="space-y-2">
+                <p className="text-[0.65rem] uppercase tracking-[0.18em] text-ink-soft">
+                  {entry.title}
+                  {entry.sourceLabel ? ` · ${entry.sourceLabel}` : ""}
                 </p>
-              ) : null}
-              {entry.workSlug ? (
-                <Link
-                  href={`/library/works/${entry.workSlug}`}
-                  className="inline-flex items-center gap-1 text-xs font-medium text-accent transition-colors duration-200 hover:text-ink"
-                >
-                  Open {entry.workTitle}
-                  <ArrowSquareOut size={14} />
-                </Link>
-              ) : null}
-            </article>
-          ))}
+                <p className="text-ink-muted" style={excerptStyle}>
+                  {teaser}
+                  {truncated ? <span className="text-ink-soft"> …</span> : null}
+                </p>
+                {entry.takeaway && !truncated ? (
+                  <p
+                    className="rounded-[8px] bg-surface px-3 py-3 text-ink"
+                    style={excerptStyle}
+                  >
+                    {entry.takeaway}
+                  </p>
+                ) : null}
+                {entry.workSlug ? (
+                  <Link
+                    href={`/library/works/${entry.workSlug}`}
+                    className="inline-flex items-center gap-1 text-xs font-medium text-accent transition-colors duration-200 hover:text-ink"
+                  >
+                    {truncated ? `Read the full passage in ${entry.workTitle}` : `Open ${entry.workTitle}`}
+                    <ArrowSquareOut size={14} />
+                  </Link>
+                ) : null}
+              </article>
+            );
+          })}
         </div>
       ) : null}
     </div>
@@ -202,6 +249,13 @@ function StudyPanel({
   const toggleHighlight = useStudyState((state) => state.toggleHighlight);
   const upsertNote = useStudyState((state) => state.upsertNote);
 
+  const preferredFatherIds = useStudyState(
+    (state) => state.preferences.preferredFatherIds,
+  );
+  const hiddenFatherIds = useStudyState(
+    (state) => state.preferences.hiddenFatherIds,
+  );
+
   const existingNote = selectedVerse
     ? notes.find(
         (item) =>
@@ -236,10 +290,13 @@ function StudyPanel({
   const isHighlighted = highlights.some(
     (item) => item.targetType === "verse" && item.targetId === currentVerse.id,
   );
-  const commentaryItems =
+  const commentaryItems = applyFatherPreferences(
     selectedVerse.directCommentary.length > 0
       ? selectedVerse.directCommentary
-      : chapterCommentary;
+      : chapterCommentary,
+    preferredFatherIds,
+    hiddenFatherIds,
+  );
 
   async function copyVerseText() {
     try {
@@ -657,7 +714,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
 
       <div className="grid gap-6 xl:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.95fr)]">
         <div className="space-y-4">
-          <Surface className="space-y-2">
+          <Surface>
             {model.verses.map((item) => {
               const selected = item.verse.id === selectedVerseId;
 
@@ -671,17 +728,17 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                     setMobileDrawerOpen(true);
                   }}
                   className={cn(
-                    "w-full rounded-[12px] px-3 py-4 text-left transition-colors duration-200",
+                    "w-full rounded-[8px] px-3 py-1.5 text-left transition-colors duration-200",
                     selected ? "bg-accent-soft/55" : "hover:bg-surface-strong",
-                    item.verse.paragraphStart && "mt-2",
+                    item.verse.paragraphStart && "mt-3",
                   )}
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="flex w-8 shrink-0 flex-col items-center pt-1">
+                  <div className="flex items-start gap-3">
+                    <div className="flex w-7 shrink-0 flex-col items-center pt-0.5">
                       <span className="font-mono text-xs text-accent">
                         {item.verse.verseNumber}
                       </span>
-                      <span className="mt-2 flex items-center gap-1">
+                      <span className="mt-1 flex items-center gap-1">
                         {item.hasDirectCommentary ? (
                           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                         ) : null}

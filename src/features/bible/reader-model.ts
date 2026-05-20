@@ -30,6 +30,7 @@ export type ReaderCommentaryCard = {
   title: string;
   excerpt: string;
   takeaway: string;
+  personId: string;
   personName: string;
   personSlug: string;
   workTitle: string;
@@ -97,6 +98,7 @@ function resolveCommentaryCards(
       title: entry.title,
       excerpt: entry.excerpt,
       takeaway: entry.takeaway,
+      personId: entry.personId,
       personName: person?.name ?? "Unknown source",
       personSlug: person?.slug ?? "",
       workTitle: work?.title ?? "Unknown work",

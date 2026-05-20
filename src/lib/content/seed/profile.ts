@@ -83,5 +83,7 @@ export const userProfileSeed: UserProfileSnapshot = {
     calendarPreference: "new-calendar",
     primaryTranslationId: "kjva",
     patronSaintPersonId: "john-chrysostom",
+    preferredFatherIds: [],
+    hiddenFatherIds: [],
   },
 };

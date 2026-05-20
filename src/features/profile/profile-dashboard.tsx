@@ -5,9 +5,10 @@ import { useMemo } from "react";
 import { PageHeader } from "@/components/layout/page-header";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
-import { getAllSaints, getPersonById, getVerseById } from "@/lib/content";
+import { getAllPeople, getAllSaints, getPersonById, getVerseById } from "@/lib/content";
 import { useStudyState } from "@/lib/user/use-study-state";
 import { PatronSaintPicker } from "@/features/profile/patron-saint-picker";
+import { FatherPreferences } from "@/features/profile/father-preferences";
 
 export function ProfileDashboard() {
   const savedVerses = useStudyState((state) => state.savedVerses);
@@ -36,6 +37,16 @@ export function ProfileDashboard() {
 
   const patronSaint = getPersonById(preferences.patronSaintPersonId);
   const allSaints = useMemo(() => getAllSaints(), []);
+  // Fathers + theologians are the natural pool for commentary ranking.
+  // Pure saints are excluded since they typically don't author commentary.
+  const allFathers = useMemo(
+    () =>
+      getAllPeople()
+        .filter((person) => person.kind === "father" || person.kind === "theologian")
+        .slice()
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    [],
+  );
 
   return (
     <div className="space-y-8">
@@ -170,7 +181,6 @@ export function ProfileDashboard() {
                   className="rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
                 >
                   <p className="font-medium text-ink">{item.label}</p>
-                  <p className="mt-1 text-sm text-ink-soft">{item.href}</p>
                 </Link>
               ))}
             </div>
@@ -200,6 +210,7 @@ export function ProfileDashboard() {
                 saints={allSaints}
                 currentPatronId={preferences.patronSaintPersonId}
               />
+              <FatherPreferences fathers={allFathers} />
               {patronSaint ? (
                 <Link
                   href={`/library/people/${patronSaint.slug}`}

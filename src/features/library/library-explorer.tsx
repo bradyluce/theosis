@@ -28,28 +28,37 @@ const sourceOptions = Array.from(
   ),
 );
 
-function FilterChip({
-  active,
+// Compact native-select wrapper used by the library's filter row. A native
+// dropdown gives us the "press to pick" UX the user asked for without
+// requiring custom popover state, and is fully accessible / mobile-friendly.
+function FilterSelect({
   label,
-  onClick,
+  value,
+  options,
+  onChange,
 }: {
-  active: boolean;
   label: string;
-  onClick: () => void;
+  value: string;
+  options: Array<{ value: string; label: string }>;
+  onChange: (next: string) => void;
 }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={cn(
-        "rounded-full border px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] transition-colors duration-200",
-        active
-          ? "border-accent/25 bg-accent-soft text-accent"
-          : "border-line bg-surface text-ink-soft hover:text-ink",
-      )}
-    >
-      {label}
-    </button>
+    <label className="flex flex-col gap-1">
+      <span className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+        {label}
+      </span>
+      <select
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        className="rounded-[10px] border border-line bg-surface px-3 py-2 text-sm text-ink outline-none transition-colors duration-200 hover:border-line-strong focus:border-line-strong"
+      >
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </label>
   );
 }
 
@@ -170,113 +179,72 @@ export function LibraryExplorer() {
         </Surface>
       </div>
 
-      <Surface className="space-y-4">
-        <div className="space-y-2">
-          <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-            Topic
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <FilterChip active={topic === "all"} label="All topics" onClick={() => setTopic("all")} />
-            {topics.map((item) => (
-              <FilterChip
-                key={item.slug}
-                active={topic === item.slug}
-                label={item.label}
-                onClick={() => setTopic(item.slug)}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-            Era
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <FilterChip active={era === "all"} label="All eras" onClick={() => setEra("all")} />
-            {eraOptions.map((item) => (
-              <FilterChip
-                key={item}
-                active={era === item}
-                label={item}
-                onClick={() => setEra(item)}
-              />
-            ))}
-          </div>
-        </div>
-
+      <Surface className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <FilterSelect
+          label="Topic"
+          value={topic}
+          onChange={setTopic}
+          options={[
+            { value: "all", label: "All topics" },
+            ...topics.map((item) => ({ value: item.slug, label: item.label })),
+          ]}
+        />
+        <FilterSelect
+          label="Era"
+          value={era}
+          onChange={setEra}
+          options={[
+            { value: "all", label: "All eras" },
+            ...eraOptions.map((item) => ({ value: item, label: item })),
+          ]}
+        />
         {collection !== "works" ? (
-          <div className="space-y-2">
-            <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-              Figure type
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {["all", "father", "saint", "theologian"].map((item) => (
-                <FilterChip
-                  key={item}
-                  active={personKind === item}
-                  label={item === "all" ? "All figures" : item}
-                  onClick={() => setPersonKind(item)}
-                />
-              ))}
-            </div>
-          </div>
+          <FilterSelect
+            label="Figure type"
+            value={personKind}
+            onChange={setPersonKind}
+            options={[
+              { value: "all", label: "All figures" },
+              { value: "father", label: "Father" },
+              { value: "saint", label: "Saint" },
+              { value: "theologian", label: "Theologian" },
+            ]}
+          />
         ) : null}
-
         {collection !== "people" ? (
           <>
-            <div className="space-y-2">
-              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                Work type
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["all", "commentary", "homily", "treatise", "life"].map((item) => (
-                  <FilterChip
-                    key={item}
-                    active={workType === item}
-                    label={item === "all" ? "All works" : item}
-                    onClick={() => setWorkType(item)}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                Length
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {["all", "short", "medium", "long"].map((item) => (
-                  <FilterChip
-                    key={item}
-                    active={length === item}
-                    label={item === "all" ? "All lengths" : item}
-                    onClick={() => setLength(item)}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                Source
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <FilterChip
-                  active={source === "all"}
-                  label="All sources"
-                  onClick={() => setSource("all")}
-                />
-                {sourceOptions.map((item) => (
-                  <FilterChip
-                    key={item}
-                    active={source === item}
-                    label={item}
-                    onClick={() => setSource(item)}
-                  />
-                ))}
-              </div>
-            </div>
+            <FilterSelect
+              label="Work type"
+              value={workType}
+              onChange={setWorkType}
+              options={[
+                { value: "all", label: "All works" },
+                { value: "commentary", label: "Commentary" },
+                { value: "homily", label: "Homily" },
+                { value: "treatise", label: "Treatise" },
+                { value: "life", label: "Life" },
+              ]}
+            />
+            <FilterSelect
+              label="Length"
+              value={length}
+              onChange={setLength}
+              options={[
+                { value: "all", label: "All lengths" },
+                { value: "short", label: "Short" },
+                { value: "medium", label: "Medium" },
+                { value: "long", label: "Long" },
+              ]}
+            />
+            <FilterSelect
+              label="Source"
+              value={source}
+              onChange={setSource}
+              options={[
+                { value: "all", label: "All sources" },
+                ...sourceOptions.map((item) => ({ value: item, label: item })),
+              ]}
+            />
           </>
         ) : null}
       </Surface>

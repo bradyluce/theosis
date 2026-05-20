@@ -46,6 +46,12 @@ export type ProfilePreferences = {
   calendarPreference: "new-calendar" | "old-calendar";
   primaryTranslationId: string;
   patronSaintPersonId: string;
+  // Person ids whose commentary should always appear first in the reader,
+  // in the order listed. Use the toggle-and-reorder actions on the study
+  // store rather than editing this directly.
+  preferredFatherIds: string[];
+  // Person ids whose commentary should be hidden from the reader entirely.
+  hiddenFatherIds: string[];
 };
 
 export type UserProfileSnapshot = {
