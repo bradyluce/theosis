@@ -34,6 +34,19 @@ export default async function PersonPage({ params }: PersonPageProps) {
         description={person.summary}
       />
 
+      {person.extendedSummary ? (
+        <Surface className="space-y-4">
+          <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+            Life
+          </p>
+          <div className="space-y-3 text-base leading-8 text-ink">
+            {person.extendedSummary.split("\n\n").map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </Surface>
+      ) : null}
+
       <div className="grid gap-4 xl:grid-cols-[0.9fr_1.1fr]">
         <Surface className="space-y-4">
           <Pill variant="accent">{person.eraLabel}</Pill>

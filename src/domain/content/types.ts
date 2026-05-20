@@ -92,7 +92,13 @@ export type Person = {
   honorific?: string;
   kind: PersonKind;
   eraLabel: string;
+  // 1-2 sentence summary shown by default in cards and on the Daily page.
   summary: string;
+  // Optional longer biographical narrative, rendered behind a "Read more"
+  // disclosure on the Daily page and as the full body of the saint's
+  // library page. Original prose; Wikipedia is fine as a fact reference
+  // but the words here are owned by Theosis.
+  extendedSummary?: string;
   traditions: string[];
   topicSlugs: string[];
   featuredWorkIds: string[];

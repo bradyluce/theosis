@@ -2,6 +2,7 @@ import type { BibleVerse, CommentaryEntry, Person } from "@/domain/content/types
 import { canonEntryToBook, getAllBooks as getCanonBooks, getCanonBySlug } from "@/lib/content/book-canon";
 import { createChapterId } from "@/lib/content/reference";
 import { dailyCommemorations } from "@/lib/content/seed/daily";
+import { saintBios } from "@/lib/content/seed/saint-bios";
 import {
   commentaryEntries,
   people,
@@ -101,16 +102,28 @@ export function getCrossReferencesForVerse(verseId: string) {
   return crossReferences.filter((item) => item.fromVerseId === verseId);
 }
 
+// Merges a long-form bio from saint-bios.ts into the Person record where one
+// exists for that id. Lets bios live in a separate file (keeping library.ts
+// scannable) without changing the Person shape callers see.
+function attachBio(person: Person | undefined): Person | undefined {
+  if (!person) return person;
+  const bio = saintBios[person.id];
+  if (!bio || person.extendedSummary) return person;
+  return { ...person, extendedSummary: bio };
+}
+
 export function getPersonById(personId: string) {
-  return people.find((person) => person.id === personId);
+  return attachBio(people.find((person) => person.id === personId));
 }
 
 export function getPersonBySlug(slug: string) {
-  return people.find((person) => person.slug === slug);
+  return attachBio(people.find((person) => person.slug === slug));
 }
 
 export function getPeopleByIds(personIds: string[]) {
-  return people.filter((person) => personIds.includes(person.id));
+  return people
+    .filter((person) => personIds.includes(person.id))
+    .map((person) => attachBio(person) as Person);
 }
 
 export function getAllPeople() {
