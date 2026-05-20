@@ -385,6 +385,22 @@ assertEqual(
   true,
 );
 
+// Sep 9 = Joachim and Anna (round 3 addition)
+const joachimAnnaDay = composeDailyReadings(utc(2026, 8, 9), data);
+assertEqual(
+  "Sep 9 (Joachim & Anna) includes Galatians 4:22-31",
+  joachimAnnaDay.some((r) => r.scripture.label === "Galatians 4:22-31"),
+  true,
+);
+
+// Jul 10 = Anthony of the Caves (round 3 addition)
+const anthonyCavesDay = composeDailyReadings(utc(2026, 6, 10), data);
+assertEqual(
+  "Jul 10 (Anthony of the Caves) includes Galatians 5:22-26",
+  anthonyCavesDay.some((r) => r.scripture.label === "Galatians 5:22-26"),
+  true,
+);
+
 // pdist 116 = Thu week 10 (transition to 2 Cor) = Aug 6, 2026
 // — but Aug 6 is also Transfiguration (fixed), so readings layer.
 const aug6 = composeDailyReadings(utc(2026, 7, 6), data);
