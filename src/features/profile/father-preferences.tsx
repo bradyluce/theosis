@@ -12,11 +12,13 @@ type Props = {
 // reader's commentary panel) and Hidden Fathers (excluded from the panel
 // entirely). The Zustand store handles persistence.
 export function FatherPreferences({ fathers }: Props) {
+  // Fall back to empty arrays for the first render or for pre-migration
+  // persisted states that haven't been touched by the migration yet.
   const preferredFatherIds = useStudyState(
-    (state) => state.preferences.preferredFatherIds,
+    (state) => state.preferences.preferredFatherIds ?? [],
   );
   const hiddenFatherIds = useStudyState(
-    (state) => state.preferences.hiddenFatherIds,
+    (state) => state.preferences.hiddenFatherIds ?? [],
   );
   const togglePreferred = useStudyState((state) => state.togglePreferredFather);
   const toggleHidden = useStudyState((state) => state.togglehiddenFather);

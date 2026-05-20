@@ -174,13 +174,13 @@ export const useStudyState = create<StudyState>()(
         })),
       togglePreferredFather: (personId) =>
         set((state) => {
-          const preferred = state.preferences.preferredFatherIds;
+          // Defensive defaults — older persisted states pre-date these fields.
+          const preferred = state.preferences.preferredFatherIds ?? [];
+          const hiddenSource = state.preferences.hiddenFatherIds ?? [];
           const exists = preferred.includes(personId);
           // Adding a preferred father implicitly un-hides them; the two
           // lists are mutually exclusive in practice.
-          const hidden = state.preferences.hiddenFatherIds.filter(
-            (id) => id !== personId,
-          );
+          const hidden = hiddenSource.filter((id) => id !== personId);
           return {
             preferences: {
               ...state.preferences,
@@ -193,12 +193,10 @@ export const useStudyState = create<StudyState>()(
         }),
       togglehiddenFather: (personId) =>
         set((state) => {
-          const hidden = state.preferences.hiddenFatherIds;
+          const hidden = state.preferences.hiddenFatherIds ?? [];
+          const preferredSource = state.preferences.preferredFatherIds ?? [];
           const exists = hidden.includes(personId);
-          // Hiding a father implicitly removes them from the preferred list.
-          const preferred = state.preferences.preferredFatherIds.filter(
-            (id) => id !== personId,
-          );
+          const preferred = preferredSource.filter((id) => id !== personId);
           return {
             preferences: {
               ...state.preferences,
@@ -211,7 +209,7 @@ export const useStudyState = create<StudyState>()(
         }),
       movePreferredFather: (personId, direction) =>
         set((state) => {
-          const list = state.preferences.preferredFatherIds;
+          const list = state.preferences.preferredFatherIds ?? [];
           const index = list.indexOf(personId);
           if (index < 0) return {};
           const swapWith = direction === "up" ? index - 1 : index + 1;
@@ -226,6 +224,26 @@ export const useStudyState = create<StudyState>()(
     {
       name: "theosis-study-state",
       storage: createJSONStorage(() => localStorage),
+      // Bump this when the persisted shape gains required fields and supply
+      // a migration below. Without it, returning users whose localStorage
+      // predates the new fields rehydrate with `undefined` slots and crash
+      // on first read.
+      version: 1,
+      migrate: (persistedState, _version) => {
+        if (!persistedState || typeof persistedState !== "object") {
+          return persistedState as UserProfileSnapshot;
+        }
+        const state = persistedState as Partial<UserProfileSnapshot>;
+        // v0 -> v1: ensure father-preference arrays exist on preferences.
+        const prefs = state.preferences ?? userProfileSeed.preferences;
+        state.preferences = {
+          ...userProfileSeed.preferences,
+          ...prefs,
+          preferredFatherIds: prefs.preferredFatherIds ?? [],
+          hiddenFatherIds: prefs.hiddenFatherIds ?? [],
+        };
+        return state as UserProfileSnapshot;
+      },
       onRehydrateStorage: () => (state) => {
         if (state) {
           state.hasHydrated = true;

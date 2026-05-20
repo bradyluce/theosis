@@ -249,11 +249,13 @@ function StudyPanel({
   const toggleHighlight = useStudyState((state) => state.toggleHighlight);
   const upsertNote = useStudyState((state) => state.upsertNote);
 
+  // Empty-array fallbacks survive older persisted states that pre-date
+  // the father-preference fields, before the persist migration runs.
   const preferredFatherIds = useStudyState(
-    (state) => state.preferences.preferredFatherIds,
+    (state) => state.preferences.preferredFatherIds ?? [],
   );
   const hiddenFatherIds = useStudyState(
-    (state) => state.preferences.hiddenFatherIds,
+    (state) => state.preferences.hiddenFatherIds ?? [],
   );
 
   const existingNote = selectedVerse
