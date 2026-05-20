@@ -159,6 +159,62 @@ const READINGS: WeekdayReading[] = [
   { pdist: 151, weekLabel: "Week 15", dayLabel: "Thursday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 1, from: 1, to: 9 }, gospel: { book: "mark", bookName: "Mark", chapter: 7, from: 24, to: 30 } },
   { pdist: 152, weekLabel: "Week 15", dayLabel: "Friday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 1, from: 7, to: 17 }, gospel: { book: "mark", bookName: "Mark", chapter: 8, from: 1, to: 10 } },
   { pdist: 153, weekLabel: "Week 15", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 4, from: 17, to: 21 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 24, from: 1, to: 13 } },
+
+  // Week 16 — Ephesians continues; Mark gospel
+  { pdist: 155, weekLabel: "Week 16", dayLabel: "Monday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 1, from: 22, to: 23 }, gospel: { book: "mark", bookName: "Mark", chapter: 10, from: 46, to: 52 } },
+  { pdist: 156, weekLabel: "Week 16", dayLabel: "Tuesday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 2, from: 19, to: 22 }, gospel: { book: "mark", bookName: "Mark", chapter: 11, from: 11, to: 23 } },
+  { pdist: 157, weekLabel: "Week 16", dayLabel: "Wednesday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 3, from: 8, to: 21 }, gospel: { book: "mark", bookName: "Mark", chapter: 11, from: 23, to: 26 } },
+  { pdist: 158, weekLabel: "Week 16", dayLabel: "Thursday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 4, from: 14, to: 19 }, gospel: { book: "mark", bookName: "Mark", chapter: 11, from: 27, to: 33 } },
+  { pdist: 159, weekLabel: "Week 16", dayLabel: "Friday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 4, from: 17, to: 25 }, gospel: { book: "mark", bookName: "Mark", chapter: 12, from: 1, to: 12 } },
+  { pdist: 160, weekLabel: "Week 16", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 10, from: 23, to: 28 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 24, from: 34, to: 44 } },
+
+  // Week 17 — Lukan jump: Gospel switches to Luke; Apostle continues Ephesians
+  { pdist: 162, weekLabel: "Week 17", dayLabel: "Monday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 4, from: 25, to: 32 }, gospel: { book: "luke", bookName: "Luke", chapter: 3, from: 19, to: 22 } },
+  { pdist: 163, weekLabel: "Week 17", dayLabel: "Tuesday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 5, from: 20, to: 26 }, gospel: { book: "luke", bookName: "Luke", chapter: 3, from: 23, to: 38 } },
+  { pdist: 164, weekLabel: "Week 17", dayLabel: "Wednesday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 5, from: 25, to: 33 }, gospel: { book: "luke", bookName: "Luke", chapter: 4, from: 1, to: 15 } },
+  { pdist: 165, weekLabel: "Week 17", dayLabel: "Thursday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 5, from: 33, to: 33 }, gospel: { book: "luke", bookName: "Luke", chapter: 4, from: 16, to: 22 } },
+  { pdist: 166, weekLabel: "Week 17", dayLabel: "Friday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 6, from: 18, to: 24 }, gospel: { book: "luke", bookName: "Luke", chapter: 4, from: 22, to: 30 } },
+  { pdist: 167, weekLabel: "Week 17", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 15, from: 58, to: 58 }, gospel: { book: "luke", bookName: "Luke", chapter: 5, from: 17, to: 26 } },
+
+  // Week 18 — Philippians begins; Luke continues
+  { pdist: 169, weekLabel: "Week 18", dayLabel: "Monday", epistle: { book: "philippians", bookName: "Philippians", chapter: 1, from: 1, to: 7 }, gospel: { book: "luke", bookName: "Luke", chapter: 4, from: 38, to: 44 } },
+  { pdist: 170, weekLabel: "Week 18", dayLabel: "Tuesday", epistle: { book: "philippians", bookName: "Philippians", chapter: 1, from: 8, to: 14 }, gospel: { book: "luke", bookName: "Luke", chapter: 5, from: 12, to: 16 } },
+  { pdist: 171, weekLabel: "Week 18", dayLabel: "Wednesday", epistle: { book: "philippians", bookName: "Philippians", chapter: 1, from: 12, to: 20 }, gospel: { book: "luke", bookName: "Luke", chapter: 5, from: 33, to: 39 } },
+  { pdist: 172, weekLabel: "Week 18", dayLabel: "Thursday", epistle: { book: "philippians", bookName: "Philippians", chapter: 1, from: 20, to: 27 }, gospel: { book: "luke", bookName: "Luke", chapter: 6, from: 12, to: 19 } },
+  { pdist: 173, weekLabel: "Week 18", dayLabel: "Friday", epistle: { book: "philippians", bookName: "Philippians", chapter: 1, from: 27, to: 30 }, gospel: { book: "luke", bookName: "Luke", chapter: 6, from: 17, to: 23 } },
+  { pdist: 174, weekLabel: "Week 18", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 14, from: 20, to: 25 }, gospel: { book: "luke", bookName: "Luke", chapter: 5, from: 27, to: 32 } },
+
+  // Week 19 — Philippians continues; Luke continues
+  { pdist: 176, weekLabel: "Week 19", dayLabel: "Monday", epistle: { book: "philippians", bookName: "Philippians", chapter: 2, from: 12, to: 16 }, gospel: { book: "luke", bookName: "Luke", chapter: 6, from: 24, to: 30 } },
+  { pdist: 177, weekLabel: "Week 19", dayLabel: "Tuesday", epistle: { book: "philippians", bookName: "Philippians", chapter: 2, from: 16, to: 23 }, gospel: { book: "luke", bookName: "Luke", chapter: 6, from: 37, to: 45 } },
+  { pdist: 178, weekLabel: "Week 19", dayLabel: "Wednesday", epistle: { book: "philippians", bookName: "Philippians", chapter: 2, from: 24, to: 30 }, gospel: { book: "luke", bookName: "Luke", chapter: 6, from: 46, to: 49 } },
+  { pdist: 179, weekLabel: "Week 19", dayLabel: "Thursday", epistle: { book: "philippians", bookName: "Philippians", chapter: 3, from: 1, to: 8 }, gospel: { book: "luke", bookName: "Luke", chapter: 7, from: 17, to: 30 } },
+  { pdist: 180, weekLabel: "Week 19", dayLabel: "Friday", epistle: { book: "philippians", bookName: "Philippians", chapter: 3, from: 8, to: 19 }, gospel: { book: "luke", bookName: "Luke", chapter: 7, from: 31, to: 35 } },
+  { pdist: 181, weekLabel: "Week 19", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 15, from: 39, to: 45 }, gospel: { book: "luke", bookName: "Luke", chapter: 6, from: 1, to: 10 } },
+
+  // Week 20 — Colossians begins; Luke continues
+  { pdist: 183, weekLabel: "Week 20", dayLabel: "Monday", epistle: { book: "colossians", bookName: "Colossians", chapter: 1, from: 1, to: 11 }, gospel: { book: "luke", bookName: "Luke", chapter: 7, from: 36, to: 50 } },
+  { pdist: 184, weekLabel: "Week 20", dayLabel: "Tuesday", epistle: { book: "colossians", bookName: "Colossians", chapter: 1, from: 12, to: 18 }, gospel: { book: "luke", bookName: "Luke", chapter: 8, from: 1, to: 3 } },
+  { pdist: 185, weekLabel: "Week 20", dayLabel: "Wednesday", epistle: { book: "colossians", bookName: "Colossians", chapter: 1, from: 18, to: 23 }, gospel: { book: "luke", bookName: "Luke", chapter: 8, from: 22, to: 25 } },
+  { pdist: 186, weekLabel: "Week 20", dayLabel: "Thursday", epistle: { book: "colossians", bookName: "Colossians", chapter: 1, from: 24, to: 29 }, gospel: { book: "luke", bookName: "Luke", chapter: 9, from: 7, to: 11 } },
+  { pdist: 187, weekLabel: "Week 20", dayLabel: "Friday", epistle: { book: "colossians", bookName: "Colossians", chapter: 2, from: 1, to: 7 }, gospel: { book: "luke", bookName: "Luke", chapter: 9, from: 12, to: 18 } },
+  { pdist: 188, weekLabel: "Week 20", dayLabel: "Saturday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 1, from: 8, to: 11 }, gospel: { book: "luke", bookName: "Luke", chapter: 7, from: 1, to: 10 } },
+
+  // Week 21 — Colossians continues; Luke continues
+  { pdist: 190, weekLabel: "Week 21", dayLabel: "Monday", epistle: { book: "colossians", bookName: "Colossians", chapter: 2, from: 13, to: 20 }, gospel: { book: "luke", bookName: "Luke", chapter: 9, from: 18, to: 22 } },
+  { pdist: 191, weekLabel: "Week 21", dayLabel: "Tuesday", epistle: { book: "colossians", bookName: "Colossians", chapter: 2, from: 20, to: 23 }, gospel: { book: "luke", bookName: "Luke", chapter: 9, from: 23, to: 27 } },
+  { pdist: 192, weekLabel: "Week 21", dayLabel: "Wednesday", epistle: { book: "colossians", bookName: "Colossians", chapter: 3, from: 17, to: 25 }, gospel: { book: "luke", bookName: "Luke", chapter: 9, from: 44, to: 50 } },
+  { pdist: 193, weekLabel: "Week 21", dayLabel: "Thursday", epistle: { book: "colossians", bookName: "Colossians", chapter: 4, from: 2, to: 9 }, gospel: { book: "luke", bookName: "Luke", chapter: 9, from: 49, to: 56 } },
+  { pdist: 194, weekLabel: "Week 21", dayLabel: "Friday", epistle: { book: "colossians", bookName: "Colossians", chapter: 4, from: 10, to: 18 }, gospel: { book: "luke", bookName: "Luke", chapter: 10, from: 1, to: 15 } },
+  { pdist: 195, weekLabel: "Week 21", dayLabel: "Saturday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 3, from: 12, to: 18 }, gospel: { book: "luke", bookName: "Luke", chapter: 8, from: 16, to: 21 } },
+
+  // Week 22 — 1 Thessalonians begins; Luke continues
+  { pdist: 197, weekLabel: "Week 22", dayLabel: "Monday", epistle: { book: "first-thessalonians", bookName: "1 Thessalonians", chapter: 1, from: 1, to: 5 }, gospel: { book: "luke", bookName: "Luke", chapter: 10, from: 22, to: 24 } },
+  { pdist: 198, weekLabel: "Week 22", dayLabel: "Tuesday", epistle: { book: "first-thessalonians", bookName: "1 Thessalonians", chapter: 1, from: 6, to: 10 }, gospel: { book: "luke", bookName: "Luke", chapter: 11, from: 1, to: 10 } },
+  { pdist: 199, weekLabel: "Week 22", dayLabel: "Wednesday", epistle: { book: "first-thessalonians", bookName: "1 Thessalonians", chapter: 2, from: 1, to: 8 }, gospel: { book: "luke", bookName: "Luke", chapter: 11, from: 9, to: 13 } },
+  { pdist: 200, weekLabel: "Week 22", dayLabel: "Thursday", epistle: { book: "first-thessalonians", bookName: "1 Thessalonians", chapter: 2, from: 9, to: 14 }, gospel: { book: "luke", bookName: "Luke", chapter: 11, from: 14, to: 23 } },
+  { pdist: 201, weekLabel: "Week 22", dayLabel: "Friday", epistle: { book: "first-thessalonians", bookName: "1 Thessalonians", chapter: 2, from: 14, to: 19 }, gospel: { book: "luke", bookName: "Luke", chapter: 11, from: 23, to: 26 } },
+  { pdist: 202, weekLabel: "Week 22", dayLabel: "Saturday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 5, from: 1, to: 10 }, gospel: { book: "luke", bookName: "Luke", chapter: 9, from: 1, to: 6 } },
 ];
 
 function buildSlots(reading: WeekdayReading): LectionarySlot[] {

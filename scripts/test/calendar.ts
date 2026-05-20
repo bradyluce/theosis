@@ -335,6 +335,22 @@ assertEqual("Pentecost week Tue -> Rom 1:1-17", week1Tue[0].scripture.label, "Ro
 const week3Mon = composeDailyReadings(utc(2026, 5, 15), data);
 assertEqual("Week 3 Mon -> Rom 7:1-13", week3Mon[0].scripture.label, "Romans 7:1-13");
 
+// pdist 162 = Mon week 17 = Sep 21, 2026 (Lukan jump: gospel switches to Luke)
+const week17Mon = composeDailyReadings(utc(2026, 8, 21), data);
+assertEqual(
+  "Week 17 Mon (Lukan jump) gospel = Luke 3:19-22",
+  week17Mon[1].scripture.label,
+  "Luke 3:19-22",
+);
+
+// pdist 169 = Mon week 18 = Sep 28, 2026 (Philippians begins)
+const week18Mon = composeDailyReadings(utc(2026, 8, 28), data);
+assertEqual(
+  "Week 18 Mon epistle = Philippians 1:1-7",
+  week18Mon[0].scripture.label,
+  "Philippians 1:1-7",
+);
+
 // pdist 116 = Thu week 10 (transition to 2 Cor) = Aug 6, 2026
 // — but Aug 6 is also Transfiguration (fixed), so readings layer.
 const aug6 = composeDailyReadings(utc(2026, 7, 6), data);
