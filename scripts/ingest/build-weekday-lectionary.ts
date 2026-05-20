@@ -119,6 +119,46 @@ const READINGS: WeekdayReading[] = [
   { pdist: 116, weekLabel: "Week 10", dayLabel: "Thursday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 1, from: 1, to: 7 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 21, from: 43, to: 46 } },
   { pdist: 117, weekLabel: "Week 10", dayLabel: "Friday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 1, from: 12, to: 20 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 22, from: 23, to: 33 } },
   { pdist: 118, weekLabel: "Week 10", dayLabel: "Saturday", epistle: { book: "romans", bookName: "Romans", chapter: 15, from: 30, to: 33 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 17, from: 24, to: 27 } },
+
+  // Week 11
+  { pdist: 120, weekLabel: "Week 11", dayLabel: "Monday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 2, from: 3, to: 15 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 23, from: 13, to: 22 } },
+  { pdist: 121, weekLabel: "Week 11", dayLabel: "Tuesday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 2, from: 14, to: 17 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 23, from: 23, to: 28 } },
+  { pdist: 122, weekLabel: "Week 11", dayLabel: "Wednesday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 3, from: 4, to: 11 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 23, from: 29, to: 39 } },
+  { pdist: 123, weekLabel: "Week 11", dayLabel: "Thursday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 4, from: 1, to: 6 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 24, from: 13, to: 28 } },
+  { pdist: 124, weekLabel: "Week 11", dayLabel: "Friday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 4, from: 13, to: 18 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 24, from: 27, to: 33 } },
+  { pdist: 125, weekLabel: "Week 11", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 1, from: 3, to: 9 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 19, from: 3, to: 12 } },
+
+  // Week 12
+  { pdist: 127, weekLabel: "Week 12", dayLabel: "Monday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 5, from: 10, to: 15 }, gospel: { book: "mark", bookName: "Mark", chapter: 1, from: 9, to: 15 } },
+  { pdist: 128, weekLabel: "Week 12", dayLabel: "Tuesday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 5, from: 15, to: 21 }, gospel: { book: "mark", bookName: "Mark", chapter: 1, from: 16, to: 22 } },
+  { pdist: 129, weekLabel: "Week 12", dayLabel: "Wednesday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 6, from: 11, to: 16 }, gospel: { book: "mark", bookName: "Mark", chapter: 1, from: 23, to: 28 } },
+  { pdist: 130, weekLabel: "Week 12", dayLabel: "Thursday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 7, from: 1, to: 10 }, gospel: { book: "mark", bookName: "Mark", chapter: 1, from: 29, to: 35 } },
+  { pdist: 131, weekLabel: "Week 12", dayLabel: "Friday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 7, from: 10, to: 16 }, gospel: { book: "mark", bookName: "Mark", chapter: 2, from: 18, to: 22 } },
+  { pdist: 132, weekLabel: "Week 12", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 1, from: 26, to: 29 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 20, from: 29, to: 34 } },
+
+  // Week 13
+  { pdist: 134, weekLabel: "Week 13", dayLabel: "Monday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 8, from: 7, to: 15 }, gospel: { book: "mark", bookName: "Mark", chapter: 3, from: 6, to: 12 } },
+  { pdist: 135, weekLabel: "Week 13", dayLabel: "Tuesday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 8, from: 16, to: 24 }, gospel: { book: "mark", bookName: "Mark", chapter: 3, from: 13, to: 19 } },
+  { pdist: 136, weekLabel: "Week 13", dayLabel: "Wednesday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 9, from: 12, to: 15 }, gospel: { book: "mark", bookName: "Mark", chapter: 3, from: 20, to: 27 } },
+  { pdist: 137, weekLabel: "Week 13", dayLabel: "Thursday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 10, from: 7, to: 18 }, gospel: { book: "mark", bookName: "Mark", chapter: 3, from: 28, to: 35 } },
+  { pdist: 138, weekLabel: "Week 13", dayLabel: "Friday", epistle: { book: "second-corinthians", bookName: "2 Corinthians", chapter: 11, from: 5, to: 21 }, gospel: { book: "mark", bookName: "Mark", chapter: 4, from: 1, to: 9 } },
+  { pdist: 139, weekLabel: "Week 13", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 2, from: 6, to: 9 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 22, from: 15, to: 22 } },
+
+  // Week 14
+  { pdist: 141, weekLabel: "Week 14", dayLabel: "Monday", epistle: { book: "galatians", bookName: "Galatians", chapter: 2, from: 11, to: 16 }, gospel: { book: "mark", bookName: "Mark", chapter: 5, from: 24, to: 34 } },
+  { pdist: 142, weekLabel: "Week 14", dayLabel: "Tuesday", epistle: { book: "galatians", bookName: "Galatians", chapter: 2, from: 21, to: 21 }, gospel: { book: "mark", bookName: "Mark", chapter: 6, from: 1, to: 7 } },
+  { pdist: 143, weekLabel: "Week 14", dayLabel: "Wednesday", epistle: { book: "galatians", bookName: "Galatians", chapter: 3, from: 15, to: 22 }, gospel: { book: "mark", bookName: "Mark", chapter: 6, from: 7, to: 13 } },
+  { pdist: 144, weekLabel: "Week 14", dayLabel: "Thursday", epistle: { book: "galatians", bookName: "Galatians", chapter: 3, from: 23, to: 29 }, gospel: { book: "mark", bookName: "Mark", chapter: 6, from: 30, to: 45 } },
+  { pdist: 145, weekLabel: "Week 14", dayLabel: "Friday", epistle: { book: "galatians", bookName: "Galatians", chapter: 4, from: 8, to: 21 }, gospel: { book: "mark", bookName: "Mark", chapter: 6, from: 45, to: 53 } },
+  { pdist: 146, weekLabel: "Week 14", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 4, from: 1, to: 5 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 23, from: 1, to: 12 } },
+
+  // Week 15
+  { pdist: 148, weekLabel: "Week 15", dayLabel: "Monday", epistle: { book: "galatians", bookName: "Galatians", chapter: 4, from: 28, to: 31 }, gospel: { book: "mark", bookName: "Mark", chapter: 6, from: 54, to: 56 } },
+  { pdist: 149, weekLabel: "Week 15", dayLabel: "Tuesday", epistle: { book: "galatians", bookName: "Galatians", chapter: 5, from: 11, to: 21 }, gospel: { book: "mark", bookName: "Mark", chapter: 7, from: 5, to: 16 } },
+  { pdist: 150, weekLabel: "Week 15", dayLabel: "Wednesday", epistle: { book: "galatians", bookName: "Galatians", chapter: 6, from: 2, to: 10 }, gospel: { book: "mark", bookName: "Mark", chapter: 7, from: 14, to: 24 } },
+  { pdist: 151, weekLabel: "Week 15", dayLabel: "Thursday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 1, from: 1, to: 9 }, gospel: { book: "mark", bookName: "Mark", chapter: 7, from: 24, to: 30 } },
+  { pdist: 152, weekLabel: "Week 15", dayLabel: "Friday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 1, from: 7, to: 17 }, gospel: { book: "mark", bookName: "Mark", chapter: 8, from: 1, to: 10 } },
+  { pdist: 153, weekLabel: "Week 15", dayLabel: "Saturday", epistle: { book: "first-corinthians", bookName: "1 Corinthians", chapter: 4, from: 17, to: 21 }, gospel: { book: "matthew", bookName: "Matthew", chapter: 24, from: 1, to: 13 } },
 ];
 
 function buildSlots(reading: WeekdayReading): LectionarySlot[] {
