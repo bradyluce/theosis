@@ -5,28 +5,6 @@
     "coverage": "Major movable feasts (Palm Sunday, Pascha, Ascension, Pentecost, All Saints) plus principal May fixed feasts. Long tail of saints/feasts populated incrementally."
   },
   "movable": {
-    "-7": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of Palm Sunday",
-        "text": "Confirming the universal Resurrection before Thy Passion, Thou didst raise Lazarus from the dead, O Christ our God. Therefore, like the children, we also bear emblems of victory and cry to Thee, the Conqueror of death: Hosanna in the highest, blessed is He that cometh in the name of the Lord."
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 6",
-        "title": "Kontakion of Palm Sunday",
-        "text": "Borne upon a throne in heaven, and upon a foal upon the earth, O Christ our God, Thou didst accept the praise of angels and the hymn of children crying out: Blessed art Thou that comest to call back Adam."
-      }
-    ],
-    "-2": [
-      {
-        "type": "troparion",
-        "tone": "Tone 2",
-        "title": "Troparion of Holy Friday",
-        "text": "The noble Joseph, taking Thy most pure Body down from the Tree, wrapped it in clean linen with sweet spices and laid it in a new tomb. But on the third day Thou didst rise, O Lord, granting the world great mercy."
-      }
-    ],
     "0": [
       {
         "type": "troparion",
@@ -114,9 +92,245 @@
         "title": "Kontakion of All Saints",
         "text": "To Thee, O Lord, the Author of creation, the world doth offer the God-bearing martyrs as first-fruits of nature. By their entreaties keep Thy Church, Thine own commonwealth, in deep peace, through the Theotokos, O Thou greatly merciful."
       }
+    ],
+    "-7": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of Palm Sunday",
+        "text": "Confirming the universal Resurrection before Thy Passion, Thou didst raise Lazarus from the dead, O Christ our God. Therefore, like the children, we also bear emblems of victory and cry to Thee, the Conqueror of death: Hosanna in the highest, blessed is He that cometh in the name of the Lord."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 6",
+        "title": "Kontakion of Palm Sunday",
+        "text": "Borne upon a throne in heaven, and upon a foal upon the earth, O Christ our God, Thou didst accept the praise of angels and the hymn of children crying out: Blessed art Thou that comest to call back Adam."
+      }
+    ],
+    "-2": [
+      {
+        "type": "troparion",
+        "tone": "Tone 2",
+        "title": "Troparion of Holy Friday",
+        "text": "The noble Joseph, taking Thy most pure Body down from the Tree, wrapped it in clean linen with sweet spices and laid it in a new tomb. But on the third day Thou didst rise, O Lord, granting the world great mercy."
+      }
     ]
   },
   "fixed": {
+    "01-01": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of the Circumcision",
+        "text": "Without leaving the bosom of the Father, the Lord of all hath come down upon the earth, and from a holy Virgin, having put on our flesh and becoming subject to the Law, was circumcised on the eighth day. Wherefore Saint Basil, who in this day was named by thee, doth join us in praising thee."
+      },
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of St. Basil the Great",
+        "text": "Thy proclamation hath gone forth into all the earth, which was divinely taught by hearing thy voice. Thou didst expound the nature of creatures, ennoble the manners of men, and royal priesthood, O righteous Father. Pray to Christ God to save our souls."
+      }
+    ],
+    "01-02": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of St. Seraphim of Sarov",
+        "text": "From thy youth thou didst love Christ, O blessed one, and longing to work for Him alone, thou didst struggle in the wilderness with constant prayer and labor. With penitent heart and great love for Christ thou wast favored by the Mother of God. Wherefore we cry to thee: Save us by thy prayers, O Seraphim, our righteous Father."
+      }
+    ],
+    "01-06": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of the Theophany",
+        "text": "When Thou, O Lord, wast baptized in the Jordan, the worship of the Trinity was made manifest, for the voice of the Father gave witness to Thee, calling Thee His beloved Son. And the Spirit, in the form of a dove, confirmed the truthfulness of His word. O Christ our God, who hast appeared and enlightened the world, glory to Thee."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 4",
+        "title": "Kontakion of the Theophany",
+        "text": "On this day Thou hast appeared unto the whole world, and Thy light, O Lord, hath been signed upon us, who with knowledge sing Thy praises: Thou hast come and revealed Thyself, the Light Unapproachable."
+      }
+    ],
+    "01-10": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of St. Gregory of Nyssa",
+        "text": "O God of our fathers, who dost ever deal with us according to Thy gentleness: take not Thy mercy from us, but by the intercessions of Gregory the hierarch, guide our life in peace."
+      }
+    ],
+    "01-12": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Martyr Tatiana",
+        "text": "Thy lamb Tatiana cries out to Thee, O Jesus, with a great voice: I love Thee, O my Bridegroom, and seeking Thee I run to Thee. I am crucified with Thee and baptized into Thy death; I suffer for Thy sake that I may reign with Thee, and I die for Thee that I may live in Thee. By her prayers, as a spotless sacrifice, save our souls, O Thou who lovest mankind."
+      }
+    ],
+    "01-14": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of St. Nina of Georgia",
+        "text": "O handmaid of the Word of God, who in preaching did equal the first-called Andrew and the other Apostles, the enlightener of Iberia and reed-pipe of the Holy Spirit, holy Equal-to-the-Apostles Nina, pray to Christ God to save our souls."
+      }
+    ],
+    "01-17": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of St. Anthony the Great",
+        "text": "Emulating the ways of Elijah the zealot, and following the straight paths of John the Baptist, O Father Anthony, thou didst become a dweller of the wilderness and didst confirm the world by thy prayers. Wherefore intercede with Christ God that our souls be saved."
+      }
+    ],
+    "01-18": [
+      {
+        "type": "troparion",
+        "tone": "Tone 3",
+        "title": "Troparion of Sts. Athanasius and Cyril of Alexandria",
+        "text": "O works of piety and lights of Orthodoxy, you both shone forth as defenders of the truth — by your divine teaching you scattered the darkness of heresy. Pray to Christ God, O wise Athanasius and Cyril, that He may grant us great mercy."
+      }
+    ],
+    "01-21": [
+      {
+        "type": "troparion",
+        "tone": "Tone 8",
+        "title": "Troparion of St. Maximus the Confessor",
+        "text": "Champion of Orthodoxy, teacher of purity and of true worship, the enlightener of the universe and the adornment of hierarchs, all-wise father Maximus, thy teachings have gleamed forth on all things like the rays of the sun, intercede with Christ God to save our souls."
+      }
+    ],
+    "01-24": [
+      {
+        "type": "troparion",
+        "tone": "Tone 7",
+        "title": "Troparion of Blessed Xenia of St. Petersburg",
+        "text": "Having renounced the vanity of the earthly world, thou didst take up the cross of a homeless life of wandering. Thou didst not fear grief, privation, nor the mockery of men, and didst know the love of Christ; nourished by it, now in heavenly joy, O Blessed Xenia, pray to Christ God that our souls may be saved."
+      }
+    ],
+    "01-25": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of St. Gregory the Theologian",
+        "text": "The pastoral pipe of thy theology overcame the trumpets of the rhetoricians, for the depths of the Spirit having been searched out by thee, the beauty of the word was added to thee. Intercede with Christ God, O Father Gregory, that our souls be saved."
+      }
+    ],
+    "01-29": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Translation of the Relics of St. Ignatius the God-bearer",
+        "text": "Sharing the way of life of the Apostles, and successor to their throne, inspired by God, thou didst find the way to divine contemplation through the practice of virtue. Wherefore, ministering the Word of truth without error, thou didst contend for the Faith even to the shedding of thy blood. O hieromartyr Ignatius, entreat Christ God to save our souls."
+      }
+    ],
+    "01-30": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of the Three Hierarchs",
+        "text": "As the Apostles equal in honor and the teachers of the world, intercede with the Master of all to grant peace to the world and to our souls great mercy."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 2",
+        "title": "Kontakion of the Three Hierarchs",
+        "text": "Thou hast taken to Thyself, O Lord, the divinely-eloquent and sacred heralds, the foremost teachers, into the enjoyment of Thy good things and into Thy rest: for Thou hast accepted their labors and their death above every offering, O Thou who alone glorifiest Thy saints."
+      }
+    ],
+    "02-02": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of the Meeting of the Lord",
+        "text": "Rejoice, O Virgin Theotokos, full of grace, for from thee hath risen the Sun of Righteousness, Christ our God, enlightening those who sat in darkness. Be glad also, O righteous Elder, for thou didst bear in thine arms the Liberator of our souls, who granteth us also the resurrection."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 1",
+        "title": "Kontakion of the Meeting of the Lord",
+        "text": "Thou who by Thy birth didst sanctify the womb of the Virgin, and who didst bless the hands of Simeon as was meet, by anticipation hast even now saved us, O Christ God. But give peace in the midst of wars unto Thy commonwealth, and strengthen the rulers whom Thou hast loved, O only Lover of mankind."
+      }
+    ],
+    "02-08": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of Great-martyr Theodore the General",
+        "text": "Resplendent in the bravery of thy soul and the truth of thy faith, holy great-martyr Theodore, thou didst contend with valor; before thy passion thou didst slay the dragon with the spear of the Cross. Wherefore intercede with Christ God for our souls."
+      }
+    ],
+    "02-17": [
+      {
+        "type": "troparion",
+        "tone": "Tone 2",
+        "title": "Troparion of Great-martyr Theodore the Tyro",
+        "text": "Great are the achievements of faith! In the fountain of flame, as in refreshing water, the holy martyr Theodore rejoiced; for, having been wholly consumed as sweet-smelling bread by the fire, he was offered as a precious sacrifice unto the Holy Trinity. By his intercessions, O Christ God, save our souls."
+      }
+    ],
+    "02-23": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Hieromartyr Polycarp of Smyrna",
+        "text": "Thou wast a companion of the apostles in their way of life and didst occupy their thrones, O divinely-inspired bishop; through the practice of virtues thou didst attain to the height of divine contemplation. Imparting the word of truth without error, thou didst contest for the faith even to the shedding of thy blood. O Hieromartyr Polycarp, entreat Christ God to save our souls."
+      }
+    ],
+    "03-09": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of the Forty Martyrs",
+        "text": "Through the sufferings which Thy holy Forty Martyrs endured for Thy sake, O Lord, we beseech Thee, O Lover of mankind: heal all our infirmities."
+      }
+    ],
+    "03-25": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Annunciation",
+        "text": "Today is the beginning of our salvation, the revelation of the eternal mystery! The Son of God becomes the Son of the Virgin as Gabriel announces the coming of Grace. Together with him let us cry to the Theotokos: Rejoice, O Full of Grace, the Lord is with thee!"
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 8",
+        "title": "Kontakion of the Annunciation",
+        "text": "To thee the Champion Leader we, thy servants, dedicate a feast of victory and thanksgiving as ones rescued out of sufferings, O Theotokos: but as thou art one with might which is invincible, from all dangers that can be, do thou deliver us, that we may cry unto thee: Rejoice, O Bride unwedded."
+      }
+    ],
+    "03-30": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of St. John Climacus",
+        "text": "Dweller of the desert and angel in the body, thou wast shown to be a wonderworker, our God-bearing father John. Thou didst receive heavenly gifts through fasting, vigil, and prayer: healing the sick and the souls of those drawn to thee by faith. Glory to Him that gave thee strength; glory to Him that crowned thee; glory to Him that worketh healings for all through thee."
+      }
+    ],
+    "04-01": [
+      {
+        "type": "troparion",
+        "tone": "Tone 8",
+        "title": "Troparion of St. Mary of Egypt",
+        "text": "The image of God was truly preserved in thee, O Mother, for thou didst take up the Cross and follow Christ. By thy actions thou didst teach us to despise the flesh, for it passeth away, but to care instead for the soul, since it is immortal. Wherefore thy spirit, O holy Mother Mary, rejoiceth with the angels."
+      }
+    ],
+    "04-23": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of Great-martyr George",
+        "text": "As the deliverer of captives and the protector of the poor, as the healer of the sick and the champion of kings, victorious great-martyr George, intercede with Christ God for the salvation of our souls."
+      }
+    ],
+    "04-25": [
+      {
+        "type": "troparion",
+        "tone": "Tone 3",
+        "title": "Troparion of the Apostle and Evangelist Mark",
+        "text": "Thou wast the disciple and companion of the chief of the Apostles; in proclaiming the Gospel, thou didst illumine Egypt with the light of the knowledge of God. O Apostle and Evangelist Mark, intercede with Christ God to grant great mercy unto our souls."
+      }
+    ],
     "05-02": [
       {
         "type": "troparion",
@@ -185,6 +399,14 @@
         "text": "The Forerunner's sacred head, having dawned forth from the earth, doth send forth incorrupt rays of healing to the faithful. From on high it gathereth the choir of angels, and from below it summoneth the company of mankind to send up with one voice glory unto Christ God."
       }
     ],
+    "06-01": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Martyr Justin the Philosopher",
+        "text": "Receiving godly wisdom through love of Christ and the radiance of the Holy Spirit, thou didst illumine the souls of the faithful with thy words and didst shame the demons of heathen sophistry. Pray to Christ God for our souls, O philosopher Justin."
+      }
+    ],
     "06-24": [
       {
         "type": "troparion",
@@ -207,6 +429,52 @@
         "text": "O Lord, Thou hast received the steadfast and divinely-inspired heralds, the chief among Thine Apostles, into the enjoyment of Thy good things and into Thy rest, for Thou hast accepted their labors and their death as above every burnt offering, O Thou who alone knowest the hearts of men."
       }
     ],
+    "07-04": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of St. Andrew of Crete",
+        "text": "By thy holy life thou didst shine forth as a star in the firmament of the Church, O Father Andrew; thou didst pour forth like a fountain the sweetness of psalmody, and didst nourish the faithful through hymns of penitence. Pray to Christ God to save our souls."
+      }
+    ],
+    "07-11": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of St. Olga of Kiev, Equal-to-the-Apostles",
+        "text": "Giving wings of mind to the knowledge of God, thou hast spread thy great desires to look upon Christ. Thou hast also led thy beloved grandson Vladimir along the path which thou hast trod. Wherefore, O Olga, equal-to-the-apostles, we celebrate thy honored memory before Christ God, asking forgiveness of our sins."
+      }
+    ],
+    "07-15": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of St. Vladimir of Kiev, Equal-to-the-Apostles",
+        "text": "Thou wast like a merchant seeking a goodly pearl, O sovereign Vladimir, sitting upon the high throne of the mother of the cities of God, the God-saved Kiev. For having tested and sent forth thine envoys to the Imperial City to behold the Orthodox Faith, thou didst find the priceless pearl, even Christ, who from eternity chose thee as another Paul, and shook off all blindness, both spiritual and bodily, in the holy font. Therefore, we thy children celebrate thy repose: entreat Christ to save the Russian land and to grant our souls great mercy."
+      }
+    ],
+    "07-17": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Great-martyr Marina",
+        "text": "Thy lamb Marina, O Jesus, crieth out with a loud voice: I love thee, my Bridegroom, and seeking thee I contest. I am crucified with thee, and in thy baptism am buried with thee. I suffer for thy sake, that I might reign with thee; I die for thee, that I might live in thee. Receive me, then, an unblemished sacrifice that I have offered to thee in love. By her prayers save our souls, O thou who art merciful."
+      },
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Royal Martyrs of Russia",
+        "text": "Most-noble and right-believing passion-bearers, gentle Tsar Nicholas and his most-pious consort Alexandra, with their God-beloved children Olga, Tatiana, Maria, Anastasia, and the Tsarevich Alexei: ye were martyred for Christ by the godless, the icons of every Russian Christian household to come. Pray to the merciful Master for our country, that we may walk in His paths and find rest with you in His mercy."
+      }
+    ],
+    "07-19": [
+      {
+        "type": "troparion",
+        "tone": "Tone 8",
+        "title": "Troparion of St. Macrina",
+        "text": "In thee, O Mother, was carefully preserved what was according to the image; for taking up thy cross, thou didst follow Christ. By so doing, thou didst teach us to disregard the flesh, for it passeth away, but to care for the soul as a thing immortal. Wherefore, O righteous Macrina, thy spirit rejoiceth with the angels."
+      }
+    ],
     "07-20": [
       {
         "type": "troparion",
@@ -221,6 +489,22 @@
         "tone": "Tone 1",
         "title": "Troparion of St. Mary Magdalene",
         "text": "Christ, who was born of the Virgin for our sake, did Thou deliver from Whom didst expel seven demons, holy Mary Magdalene. Thou didst become the first to behold the divine Resurrection, and as the equal-to-the-Apostles, thou didst preach Him risen from the dead unto all the ends of the earth."
+      }
+    ],
+    "07-24": [
+      {
+        "type": "troparion",
+        "tone": "Tone 2",
+        "title": "Troparion of the Holy Passion-Bearers Boris and Gleb",
+        "text": "True passion-bearers and observers of the gospel commandments, blessed Boris and Gleb, you did not resist the attacks of your brother, your enemy; he killed your bodies, yet was unable to touch your souls. Therefore let evil rulers tremble, while the choirs of angels rejoice, praising the pair who pleased God. Together, intercede that our country may be saved and our souls find great mercy."
+      }
+    ],
+    "07-27": [
+      {
+        "type": "troparion",
+        "tone": "Tone 3",
+        "title": "Troparion of the Great-martyr Panteleimon",
+        "text": "O holy prize-winner and healer Panteleimon, intercede with our merciful God to grant our souls forgiveness of sins."
       }
     ],
     "08-06": [
@@ -259,6 +543,14 @@
         "text": "The just man is remembered with songs of praise, but for thee the testimony of the Lord is sufficient, O Forerunner. Truly thou wast revealed more honorable than the prophets, for thou wast deemed worthy to baptize in the Jordan Him whom they had preached. Therefore having contested for the truth, thou didst rejoice to bring the good tidings even to those in hell — that God hath appeared in the flesh, taking away the sin of the world and granting us great mercy."
       }
     ],
+    "09-01": [
+      {
+        "type": "troparion",
+        "tone": "Tone 1",
+        "title": "Troparion of St. Symeon the Stylite",
+        "text": "Thou didst prove to be a pillar of patience and didst emulate the Forefathers, O righteous one: Job in his sufferings, Joseph in his temptations, the angelic life among them in the flesh. O Symeon, our righteous Father, intercede with Christ our God that our souls may be saved."
+      }
+    ],
     "09-08": [
       {
         "type": "troparion",
@@ -285,350 +577,6 @@
         "tone": "Tone 4",
         "title": "Kontakion of the Exaltation of the Cross",
         "text": "O Christ our God, Thou wast lifted up upon the Cross of Thine own will. Therefore grant Thy mercies unto Thy new commonwealth which is called by Thy name. By Thy power gladden the Orthodox Christians, and grant them victory over every adversary, having as an ally that weapon of peace, the trophy invincible."
-      }
-    ],
-    "11-08": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Bodiless Powers",
-        "text": "O Captains of the heavenly armies, we who are unworthy ever beseech you to deliver us by your supplications from terrors and to cover us with the protection of the wings of your immaterial glory, even as we fall down and cry to you: deliver us from danger, O captains of the angelic hosts."
-      }
-    ],
-    "11-21": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Entrance of the Theotokos",
-        "text": "Today is the prelude of God's good will and the proclamation of mankind's salvation. The Virgin appeareth openly in the temple of God, and foretelleth Christ to all. Unto her, then, let us also cry aloud: Rejoice, O fulfillment of the Creator's counsel."
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 4",
-        "title": "Kontakion of the Entrance of the Theotokos",
-        "text": "The most pure temple of the Saviour, the very precious bridal chamber and Virgin, the holy treasure of the glory of God, is led on this day into the house of the Lord, bringing with her the grace of the Divine Spirit. Of her doth the angels of God sing: 'Behold the heavenly tabernacle.'"
-      }
-    ],
-    "11-30": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the First-Called Apostle Andrew",
-        "text": "O Apostle Andrew, first-called of all the Twelve and brother of him who was foremost of the chief Apostles, beseech the Master of all to grant peace to the world and to our souls great mercy."
-      }
-    ],
-    "12-06": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of St. Nicholas",
-        "text": "The truth of things hath revealed thee to thy flock as a rule of faith, an icon of meekness, and a teacher of temperance; for which cause thou hast achieved the heights by humility, riches by poverty. O Father and Hierarch Nicholas, intercede with Christ God that our souls may be saved."
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 3",
-        "title": "Kontakion of St. Nicholas",
-        "text": "Thou wast a true minister at Myra, O Saint Nicholas, and didst fulfill Christ's Gospel, laying down thy life for thy people and saving the innocent from death. Therefore thou hast been sanctified, as a great minister of the grace of God."
-      }
-    ],
-    "12-25": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Nativity of Christ",
-        "text": "Thy Nativity, O Christ our God, hath shone forth upon the world the light of knowledge; for thereby they that worshipped the stars were taught by a star to worship Thee, the Sun of Righteousness, and to know Thee, the Dayspring from on high. O Lord, glory to Thee."
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 3",
-        "title": "Kontakion of the Nativity of Christ",
-        "text": "Today the Virgin giveth birth to Him who is transcendent in essence, and the earth offereth a cave to Him who is unapproachable. Angels with shepherds give glory, and Magi journey with a star, for to us is born a young Child, the pre-eternal God."
-      }
-    ],
-    "12-27": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Protomartyr Stephen",
-        "text": "O Protomartyr and servant of Christ, thou didst conquer in struggle and didst overthrow the wickedness of the enemies. As the first to be crowned, glorious Stephen, thou prayest now to Christ for the salvation of our souls."
-      }
-    ],
-    "01-01": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of the Circumcision",
-        "text": "Without leaving the bosom of the Father, the Lord of all hath come down upon the earth, and from a holy Virgin, having put on our flesh and becoming subject to the Law, was circumcised on the eighth day. Wherefore Saint Basil, who in this day was named by thee, doth join us in praising thee."
-      },
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of St. Basil the Great",
-        "text": "Thy proclamation hath gone forth into all the earth, which was divinely taught by hearing thy voice. Thou didst expound the nature of creatures, ennoble the manners of men, and royal priesthood, O righteous Father. Pray to Christ God to save our souls."
-      }
-    ],
-    "01-06": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of the Theophany",
-        "text": "When Thou, O Lord, wast baptized in the Jordan, the worship of the Trinity was made manifest, for the voice of the Father gave witness to Thee, calling Thee His beloved Son. And the Spirit, in the form of a dove, confirmed the truthfulness of His word. O Christ our God, who hast appeared and enlightened the world, glory to Thee."
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 4",
-        "title": "Kontakion of the Theophany",
-        "text": "On this day Thou hast appeared unto the whole world, and Thy light, O Lord, hath been signed upon us, who with knowledge sing Thy praises: Thou hast come and revealed Thyself, the Light Unapproachable."
-      }
-    ],
-    "01-17": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of St. Anthony the Great",
-        "text": "Emulating the ways of Elijah the zealot, and following the straight paths of John the Baptist, O Father Anthony, thou didst become a dweller of the wilderness and didst confirm the world by thy prayers. Wherefore intercede with Christ God that our souls be saved."
-      }
-    ],
-    "01-25": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of St. Gregory the Theologian",
-        "text": "The pastoral pipe of thy theology overcame the trumpets of the rhetoricians, for the depths of the Spirit having been searched out by thee, the beauty of the word was added to thee. Intercede with Christ God, O Father Gregory, that our souls be saved."
-      }
-    ],
-    "01-30": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of the Three Hierarchs",
-        "text": "As the Apostles equal in honor and the teachers of the world, intercede with the Master of all to grant peace to the world and to our souls great mercy."
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 2",
-        "title": "Kontakion of the Three Hierarchs",
-        "text": "Thou hast taken to Thyself, O Lord, the divinely-eloquent and sacred heralds, the foremost teachers, into the enjoyment of Thy good things and into Thy rest: for Thou hast accepted their labors and their death above every offering, O Thou who alone glorifiest Thy saints."
-      }
-    ],
-    "02-02": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of the Meeting of the Lord",
-        "text": "Rejoice, O Virgin Theotokos, full of grace, for from thee hath risen the Sun of Righteousness, Christ our God, enlightening those who sat in darkness. Be glad also, O righteous Elder, for thou didst bear in thine arms the Liberator of our souls, who granteth us also the resurrection."
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 1",
-        "title": "Kontakion of the Meeting of the Lord",
-        "text": "Thou who by Thy birth didst sanctify the womb of the Virgin, and who didst bless the hands of Simeon as was meet, by anticipation hast even now saved us, O Christ God. But give peace in the midst of wars unto Thy commonwealth, and strengthen the rulers whom Thou hast loved, O only Lover of mankind."
-      }
-    ],
-    "03-09": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of the Forty Martyrs",
-        "text": "Through the sufferings which Thy holy Forty Martyrs endured for Thy sake, O Lord, we beseech Thee, O Lover of mankind: heal all our infirmities."
-      }
-    ],
-    "03-25": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Annunciation",
-        "text": "Today is the beginning of our salvation, the revelation of the eternal mystery! The Son of God becomes the Son of the Virgin as Gabriel announces the coming of Grace. Together with him let us cry to the Theotokos: Rejoice, O Full of Grace, the Lord is with thee!"
-      },
-      {
-        "type": "kontakion",
-        "tone": "Tone 8",
-        "title": "Kontakion of the Annunciation",
-        "text": "To thee the Champion Leader we, thy servants, dedicate a feast of victory and thanksgiving as ones rescued out of sufferings, O Theotokos: but as thou art one with might which is invincible, from all dangers that can be, do thou deliver us, that we may cry unto thee: Rejoice, O Bride unwedded."
-      }
-    ],
-    "04-23": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of Great-martyr George",
-        "text": "As the deliverer of captives and the protector of the poor, as the healer of the sick and the champion of kings, victorious great-martyr George, intercede with Christ God for the salvation of our souls."
-      }
-    ],
-    "04-25": [
-      {
-        "type": "troparion",
-        "tone": "Tone 3",
-        "title": "Troparion of the Apostle and Evangelist Mark",
-        "text": "Thou wast the disciple and companion of the chief of the Apostles; in proclaiming the Gospel, thou didst illumine Egypt with the light of the knowledge of God. O Apostle and Evangelist Mark, intercede with Christ God to grant great mercy unto our souls."
-      }
-    ],
-    "01-02": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of St. Seraphim of Sarov",
-        "text": "From thy youth thou didst love Christ, O blessed one, and longing to work for Him alone, thou didst struggle in the wilderness with constant prayer and labor. With penitent heart and great love for Christ thou wast favored by the Mother of God. Wherefore we cry to thee: Save us by thy prayers, O Seraphim, our righteous Father."
-      }
-    ],
-    "01-10": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of St. Gregory of Nyssa",
-        "text": "O God of our fathers, who dost ever deal with us according to Thy gentleness: take not Thy mercy from us, but by the intercessions of Gregory the hierarch, guide our life in peace."
-      }
-    ],
-    "01-12": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Martyr Tatiana",
-        "text": "Thy lamb Tatiana cries out to Thee, O Jesus, with a great voice: I love Thee, O my Bridegroom, and seeking Thee I run to Thee. I am crucified with Thee and baptized into Thy death; I suffer for Thy sake that I may reign with Thee, and I die for Thee that I may live in Thee. By her prayers, as a spotless sacrifice, save our souls, O Thou who lovest mankind."
-      }
-    ],
-    "01-14": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of St. Nina of Georgia",
-        "text": "O handmaid of the Word of God, who in preaching did equal the first-called Andrew and the other Apostles, the enlightener of Iberia and reed-pipe of the Holy Spirit, holy Equal-to-the-Apostles Nina, pray to Christ God to save our souls."
-      }
-    ],
-    "01-18": [
-      {
-        "type": "troparion",
-        "tone": "Tone 3",
-        "title": "Troparion of Sts. Athanasius and Cyril of Alexandria",
-        "text": "O works of piety and lights of Orthodoxy, you both shone forth as defenders of the truth — by your divine teaching you scattered the darkness of heresy. Pray to Christ God, O wise Athanasius and Cyril, that He may grant us great mercy."
-      }
-    ],
-    "01-21": [
-      {
-        "type": "troparion",
-        "tone": "Tone 8",
-        "title": "Troparion of St. Maximus the Confessor",
-        "text": "Champion of Orthodoxy, teacher of purity and of true worship, the enlightener of the universe and the adornment of hierarchs, all-wise father Maximus, thy teachings have gleamed forth on all things like the rays of the sun, intercede with Christ God to save our souls."
-      }
-    ],
-    "01-24": [
-      {
-        "type": "troparion",
-        "tone": "Tone 7",
-        "title": "Troparion of Blessed Xenia of St. Petersburg",
-        "text": "Having renounced the vanity of the earthly world, thou didst take up the cross of a homeless life of wandering. Thou didst not fear grief, privation, nor the mockery of men, and didst know the love of Christ; nourished by it, now in heavenly joy, O Blessed Xenia, pray to Christ God that our souls may be saved."
-      }
-    ],
-    "01-29": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Translation of the Relics of St. Ignatius the God-bearer",
-        "text": "Sharing the way of life of the Apostles, and successor to their throne, inspired by God, thou didst find the way to divine contemplation through the practice of virtue. Wherefore, ministering the Word of truth without error, thou didst contend for the Faith even to the shedding of thy blood. O hieromartyr Ignatius, entreat Christ God to save our souls."
-      }
-    ],
-    "02-08": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of Great-martyr Theodore the General",
-        "text": "Resplendent in the bravery of thy soul and the truth of thy faith, holy great-martyr Theodore, thou didst contend with valor; before thy passion thou didst slay the dragon with the spear of the Cross. Wherefore intercede with Christ God for our souls."
-      }
-    ],
-    "02-17": [
-      {
-        "type": "troparion",
-        "tone": "Tone 2",
-        "title": "Troparion of Great-martyr Theodore the Tyro",
-        "text": "Great are the achievements of faith! In the fountain of flame, as in refreshing water, the holy martyr Theodore rejoiced; for, having been wholly consumed as sweet-smelling bread by the fire, he was offered as a precious sacrifice unto the Holy Trinity. By his intercessions, O Christ God, save our souls."
-      }
-    ],
-    "02-23": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Hieromartyr Polycarp of Smyrna",
-        "text": "Thou wast a companion of the apostles in their way of life and didst occupy their thrones, O divinely-inspired bishop; through the practice of virtues thou didst attain to the height of divine contemplation. Imparting the word of truth without error, thou didst contest for the faith even to the shedding of thy blood. O Hieromartyr Polycarp, entreat Christ God to save our souls."
-      }
-    ],
-    "03-30": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of St. John Climacus",
-        "text": "Dweller of the desert and angel in the body, thou wast shown to be a wonderworker, our God-bearing father John. Thou didst receive heavenly gifts through fasting, vigil, and prayer: healing the sick and the souls of those drawn to thee by faith. Glory to Him that gave thee strength; glory to Him that crowned thee; glory to Him that worketh healings for all through thee."
-      }
-    ],
-    "04-01": [
-      {
-        "type": "troparion",
-        "tone": "Tone 8",
-        "title": "Troparion of St. Mary of Egypt",
-        "text": "The image of God was truly preserved in thee, O Mother, for thou didst take up the Cross and follow Christ. By thy actions thou didst teach us to despise the flesh, for it passeth away, but to care instead for the soul, since it is immortal. Wherefore thy spirit, O holy Mother Mary, rejoiceth with the angels."
-      }
-    ],
-    "06-01": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of the Martyr Justin the Philosopher",
-        "text": "Receiving godly wisdom through love of Christ and the radiance of the Holy Spirit, thou didst illumine the souls of the faithful with thy words and didst shame the demons of heathen sophistry. Pray to Christ God for our souls, O philosopher Justin."
-      }
-    ],
-    "07-04": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of St. Andrew of Crete",
-        "text": "By thy holy life thou didst shine forth as a star in the firmament of the Church, O Father Andrew; thou didst pour forth like a fountain the sweetness of psalmody, and didst nourish the faithful through hymns of penitence. Pray to Christ God to save our souls."
-      }
-    ],
-    "07-11": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of St. Olga of Kiev, Equal-to-the-Apostles",
-        "text": "Giving wings of mind to the knowledge of God, thou hast spread thy great desires to look upon Christ. Thou hast also led thy beloved grandson Vladimir along the path which thou hast trod. Wherefore, O Olga, equal-to-the-apostles, we celebrate thy honored memory before Christ God, asking forgiveness of our sins."
-      }
-    ],
-    "07-15": [
-      {
-        "type": "troparion",
-        "tone": "Tone 4",
-        "title": "Troparion of St. Vladimir of Kiev, Equal-to-the-Apostles",
-        "text": "Thou wast like a merchant seeking a goodly pearl, O sovereign Vladimir, sitting upon the high throne of the mother of the cities of God, the God-saved Kiev. For having tested and sent forth thine envoys to the Imperial City to behold the Orthodox Faith, thou didst find the priceless pearl, even Christ, who from eternity chose thee as another Paul, and shook off all blindness, both spiritual and bodily, in the holy font. Therefore, we thy children celebrate thy repose: entreat Christ to save the Russian land and to grant our souls great mercy."
-      }
-    ],
-    "07-19": [
-      {
-        "type": "troparion",
-        "tone": "Tone 8",
-        "title": "Troparion of St. Macrina",
-        "text": "In thee, O Mother, was carefully preserved what was according to the image; for taking up thy cross, thou didst follow Christ. By so doing, thou didst teach us to disregard the flesh, for it passeth away, but to care for the soul as a thing immortal. Wherefore, O righteous Macrina, thy spirit rejoiceth with the angels."
-      }
-    ],
-    "07-24": [
-      {
-        "type": "troparion",
-        "tone": "Tone 2",
-        "title": "Troparion of the Holy Passion-Bearers Boris and Gleb",
-        "text": "True passion-bearers and observers of the gospel commandments, blessed Boris and Gleb, you did not resist the attacks of your brother, your enemy; he killed your bodies, yet was unable to touch your souls. Therefore let evil rulers tremble, while the choirs of angels rejoice, praising the pair who pleased God. Together, intercede that our country may be saved and our souls find great mercy."
-      }
-    ],
-    "07-27": [
-      {
-        "type": "troparion",
-        "tone": "Tone 3",
-        "title": "Troparion of the Great-martyr Panteleimon",
-        "text": "O holy prize-winner and healer Panteleimon, intercede with our merciful God to grant our souls forgiveness of sins."
-      }
-    ],
-    "09-01": [
-      {
-        "type": "troparion",
-        "tone": "Tone 1",
-        "title": "Troparion of St. Symeon the Stylite",
-        "text": "Thou didst prove to be a pillar of patience and didst emulate the Forefathers, O righteous one: Job in his sufferings, Joseph in his temptations, the angelic life among them in the flesh. O Symeon, our righteous Father, intercede with Christ our God that our souls may be saved."
       }
     ],
     "09-20": [
@@ -669,6 +617,14 @@
         "tone": "Tone 3",
         "title": "Troparion of the Apostle Thomas",
         "text": "Holy Apostle Thomas, intercede with the merciful God that He grant unto our souls forgiveness of sins."
+      }
+    ],
+    "10-17": [
+      {
+        "type": "troparion",
+        "tone": "Tone 3",
+        "title": "Troparion of Lazarus the Four-Days-Dead",
+        "text": "Giving us before thy Passion an assurance of the general resurrection, thou didst raise Lazarus from the dead, O Christ our God. Wherefore, like the children of old, we also bear before thee the symbols of triumph and cry to thee, the Vanquisher of death: Hosanna in the highest; blessed is he that cometh in the name of the Lord."
       }
     ],
     "10-18": [
@@ -717,6 +673,14 @@
         "text": "O holy Unmercenaries and wonderworkers Cosmas and Damian, visit our infirmities; freely you have received, freely give to us."
       }
     ],
+    "11-08": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Bodiless Powers",
+        "text": "O Captains of the heavenly armies, we who are unworthy ever beseech you to deliver us by your supplications from terrors and to cover us with the protection of the wings of your immaterial glory, even as we fall down and cry to you: deliver us from danger, O captains of the angelic hosts."
+      }
+    ],
     "11-13": [
       {
         "type": "troparion",
@@ -741,12 +705,34 @@
         "text": "With zealous following thou didst hearken to Christ the Master who called thee, and having spurned the income of the custom-house thou didst show forth as a most-praised apostle and evangelist. Therefore, all-praised Matthew, entreat Christ God to grant remission of sins to those who honor thy memory."
       }
     ],
+    "11-21": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Entrance of the Theotokos",
+        "text": "Today is the prelude of God's good will and the proclamation of mankind's salvation. The Virgin appeareth openly in the temple of God, and foretelleth Christ to all. Unto her, then, let us also cry aloud: Rejoice, O fulfillment of the Creator's counsel."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 4",
+        "title": "Kontakion of the Entrance of the Theotokos",
+        "text": "The most pure temple of the Saviour, the very precious bridal chamber and Virgin, the holy treasure of the glory of God, is led on this day into the house of the Lord, bringing with her the grace of the Divine Spirit. Of her doth the angels of God sing: 'Behold the heavenly tabernacle.'"
+      }
+    ],
     "11-24": [
       {
         "type": "troparion",
         "tone": "Tone 4",
         "title": "Troparion of the Great-martyr Catherine",
         "text": "Let us praise the most-honorable bride of Christ, the divine Catherine, protectress of Sinai; for she silenced the eloquence of the impious by the power of the Spirit, and being crowned as a martyr, she now asks for all great mercy."
+      }
+    ],
+    "11-30": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the First-Called Apostle Andrew",
+        "text": "O Apostle Andrew, first-called of all the Twelve and brother of him who was foremost of the chief Apostles, beseech the Master of all to grant peace to the world and to our souls great mercy."
       }
     ],
     "12-04": [
@@ -771,6 +757,20 @@
         "text": "Thou didst prove to be a citizen of the desert, an angel in the flesh, and a wonderworker, O Sabbas, our God-bearing father. By fasting, vigil, and prayer thou didst obtain heavenly gifts, and thou healest the sick and the souls of those who turn to thee in faith. Glory to Him who gave thee strength; glory to Him who crowned thee; glory to Him who worketh healings for all through thee."
       }
     ],
+    "12-06": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of St. Nicholas",
+        "text": "The truth of things hath revealed thee to thy flock as a rule of faith, an icon of meekness, and a teacher of temperance; for which cause thou hast achieved the heights by humility, riches by poverty. O Father and Hierarch Nicholas, intercede with Christ God that our souls may be saved."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 3",
+        "title": "Kontakion of St. Nicholas",
+        "text": "Thou wast a true minister at Myra, O Saint Nicholas, and didst fulfill Christ's Gospel, laying down thy life for thy people and saving the innocent from death. Therefore thou hast been sanctified, as a great minister of the grace of God."
+      }
+    ],
     "12-13": [
       {
         "type": "troparion",
@@ -779,12 +779,56 @@
         "text": "Joyful North Star of the Church of Christ, guiding all people to the Heavenly Kingdom; teacher and apostle of the True Faith; intercessor and defender of the oppressed; adornment of the Orthodox Church in America: Blessed Father Herman of Alaska, pray to our Lord Jesus Christ to save our souls."
       }
     ],
+    "12-17": [
+      {
+        "type": "troparion",
+        "tone": "Tone 2",
+        "title": "Troparion of the Prophet Daniel and the Three Youths",
+        "text": "Great are the achievements of faith! In the fountain of flame, as on the waters of rest, the three holy youths rejoiced. And the prophet Daniel was shown to be a shepherd of lions, as of sheep. Through their prayers, O Christ God, save our souls."
+      }
+    ],
+    "12-20": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Hieromartyr Ignatius",
+        "text": "Sharing the ways of the apostles and successor to their thrones, O God-inspired, thou hast found in active life the path to divine contemplation. Wherefore, ordering rightly the word of truth, thou didst contest for the faith even unto blood, O Hieromartyr Ignatius. Intercede with Christ God that our souls may be saved."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 4",
+        "title": "Kontakion of the Hieromartyr Ignatius",
+        "text": "From the East today hath the radiant star arisen, illumining the faithful with the splendor of his miracles. Wherefore let us crown with hymns Ignatius the God-bearer, the heavenly worshipper."
+      }
+    ],
     "12-22": [
       {
         "type": "troparion",
         "tone": "Tone 4",
         "title": "Troparion of the Great-martyr Anastasia",
         "text": "Thy lamb Anastasia cries out to Thee, O Jesus, with a great voice: I love Thee, my Bridegroom, and seeking Thee I run to Thee. I am crucified with Thee and baptized into Thy death; I suffer for Thy sake that I may reign with Thee, and die for Thee that I may live in Thee. As a spotless sacrifice receive her who with love is sacrificed for Thee. By her prayers, as Thou art merciful, save our souls."
+      }
+    ],
+    "12-25": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Nativity of Christ",
+        "text": "Thy Nativity, O Christ our God, hath shone forth upon the world the light of knowledge; for thereby they that worshipped the stars were taught by a star to worship Thee, the Sun of Righteousness, and to know Thee, the Dayspring from on high. O Lord, glory to Thee."
+      },
+      {
+        "type": "kontakion",
+        "tone": "Tone 3",
+        "title": "Kontakion of the Nativity of Christ",
+        "text": "Today the Virgin giveth birth to Him who is transcendent in essence, and the earth offereth a cave to Him who is unapproachable. Angels with shepherds give glory, and Magi journey with a star, for to us is born a young Child, the pre-eternal God."
+      }
+    ],
+    "12-27": [
+      {
+        "type": "troparion",
+        "tone": "Tone 4",
+        "title": "Troparion of the Protomartyr Stephen",
+        "text": "O Protomartyr and servant of Christ, thou didst conquer in struggle and didst overthrow the wickedness of the enemies. As the first to be crowned, glorious Stephen, thou prayest now to Christ for the salvation of our souls."
       }
     ]
   }

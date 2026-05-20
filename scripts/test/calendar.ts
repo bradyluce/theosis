@@ -367,6 +367,24 @@ assertEqual(
   "1 Peter 1:1-9",
 );
 
+// --- Fixed-feast lectionary spot-checks (round 2 additions) ---
+
+// Sep 20 = Eustathius Placidas (added in round 2 fixed-feast slice)
+const eustathiusDay = composeDailyReadings(utc(2026, 8, 20), data);
+assertEqual(
+  "Sep 20 (Eustathius) includes Ephesians 6:10-17",
+  eustathiusDay.some((r) => r.scripture.label === "Ephesians 6:10-17"),
+  true,
+);
+
+// Dec 17 = Daniel and the Three Holy Youths
+const danielDay = composeDailyReadings(utc(2026, 11, 17), data);
+assertEqual(
+  "Dec 17 (Daniel) includes Hebrews 11:33-40",
+  danielDay.some((r) => r.scripture.label === "Hebrews 11:33-40"),
+  true,
+);
+
 // pdist 116 = Thu week 10 (transition to 2 Cor) = Aug 6, 2026
 // — but Aug 6 is also Transfiguration (fixed), so readings layer.
 const aug6 = composeDailyReadings(utc(2026, 7, 6), data);
