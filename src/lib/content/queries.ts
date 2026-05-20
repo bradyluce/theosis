@@ -130,11 +130,14 @@ export function getAllPeople() {
   return people;
 }
 
-// Saints suitable as patron-saint choices: all Person records whose `kind`
-// is "saint". Sorted alphabetically by name for the picker UI.
+// Saints suitable as patron-saint choices: every canonized Person record,
+// whether catalogued as "saint" or "father" (since Fathers like Chrysostom,
+// Basil, and Athanasius are commonly chosen as patrons). "theologian" is
+// excluded because that label is used for non-canonized commentators.
+// Sorted alphabetically by name for the picker UI.
 export function getAllSaints(): Person[] {
   return people
-    .filter((person) => person.kind === "saint")
+    .filter((person) => person.kind === "saint" || person.kind === "father")
     .slice()
     .sort((a, b) => a.name.localeCompare(b.name));
 }
