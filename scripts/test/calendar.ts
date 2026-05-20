@@ -359,6 +359,14 @@ assertEqual(
   "Hebrews 3:5-11",
 );
 
+// pdist 267 = Mon week 32 = Jan 4, 2027 (1 Peter begins)
+const week32Mon = composeDailyReadings(utc(2027, 0, 4), data);
+assertEqual(
+  "Week 32 Mon epistle = 1 Peter 1:1-9",
+  week32Mon[0].scripture.label,
+  "1 Peter 1:1-9",
+);
+
 // pdist 116 = Thu week 10 (transition to 2 Cor) = Aug 6, 2026
 // — but Aug 6 is also Transfiguration (fixed), so readings layer.
 const aug6 = composeDailyReadings(utc(2026, 7, 6), data);

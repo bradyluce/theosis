@@ -279,6 +279,30 @@ const READINGS: WeekdayReading[] = [
   { pdist: 256, weekLabel: "Week 30", dayLabel: "Thursday", epistle: { book: "james", bookName: "James", chapter: 1, from: 1, to: 18 }, gospel: { book: "mark", bookName: "Mark", chapter: 10, from: 17, to: 27 } },
   { pdist: 257, weekLabel: "Week 30", dayLabel: "Friday", epistle: { book: "james", bookName: "James", chapter: 1, from: 19, to: 27 }, gospel: { book: "mark", bookName: "Mark", chapter: 10, from: 23, to: 32 } },
   { pdist: 258, weekLabel: "Week 30", dayLabel: "Saturday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 5, from: 1, to: 8 }, gospel: { book: "luke", bookName: "Luke", chapter: 14, from: 1, to: 11 } },
+
+  // Week 31 — James continues then 2 Peter begins; Mark continues
+  { pdist: 260, weekLabel: "Week 31", dayLabel: "Monday", epistle: { book: "james", bookName: "James", chapter: 2, from: 14, to: 26 }, gospel: { book: "mark", bookName: "Mark", chapter: 10, from: 46, to: 52 } },
+  { pdist: 261, weekLabel: "Week 31", dayLabel: "Tuesday", epistle: { book: "james", bookName: "James", chapter: 3, from: 1, to: 10 }, gospel: { book: "mark", bookName: "Mark", chapter: 11, from: 11, to: 23 } },
+  { pdist: 262, weekLabel: "Week 31", dayLabel: "Wednesday", epistle: { book: "james", bookName: "James", chapter: 3, from: 11, to: 18 }, gospel: { book: "mark", bookName: "Mark", chapter: 11, from: 23, to: 26 } },
+  { pdist: 263, weekLabel: "Week 31", dayLabel: "Thursday", epistle: { book: "james", bookName: "James", chapter: 4, from: 7, to: 17 }, gospel: { book: "mark", bookName: "Mark", chapter: 11, from: 27, to: 33 } },
+  { pdist: 264, weekLabel: "Week 31", dayLabel: "Friday", epistle: { book: "james", bookName: "James", chapter: 5, from: 7, to: 20 }, gospel: { book: "mark", bookName: "Mark", chapter: 12, from: 1, to: 12 } },
+  { pdist: 265, weekLabel: "Week 31", dayLabel: "Saturday", epistle: { book: "ephesians", bookName: "Ephesians", chapter: 5, from: 8, to: 19 }, gospel: { book: "luke", bookName: "Luke", chapter: 14, from: 16, to: 24 } },
+
+  // Week 32 — 1-2 Peter; Mark continues
+  { pdist: 267, weekLabel: "Week 32", dayLabel: "Monday", epistle: { book: "first-peter", bookName: "1 Peter", chapter: 1, from: 1, to: 9 }, gospel: { book: "mark", bookName: "Mark", chapter: 12, from: 13, to: 17 } },
+  { pdist: 268, weekLabel: "Week 32", dayLabel: "Tuesday", epistle: { book: "first-peter", bookName: "1 Peter", chapter: 1, from: 10, to: 25 }, gospel: { book: "mark", bookName: "Mark", chapter: 12, from: 18, to: 27 } },
+  { pdist: 269, weekLabel: "Week 32", dayLabel: "Wednesday", epistle: { book: "first-peter", bookName: "1 Peter", chapter: 2, from: 1, to: 10 }, gospel: { book: "mark", bookName: "Mark", chapter: 12, from: 28, to: 37 } },
+  { pdist: 270, weekLabel: "Week 32", dayLabel: "Thursday", epistle: { book: "first-peter", bookName: "1 Peter", chapter: 2, from: 21, to: 25 }, gospel: { book: "mark", bookName: "Mark", chapter: 12, from: 38, to: 44 } },
+  { pdist: 271, weekLabel: "Week 32", dayLabel: "Friday", epistle: { book: "first-peter", bookName: "1 Peter", chapter: 3, from: 1, to: 12 }, gospel: { book: "mark", bookName: "Mark", chapter: 13, from: 1, to: 8 } },
+  { pdist: 272, weekLabel: "Week 32", dayLabel: "Saturday", epistle: { book: "first-thessalonians", bookName: "1 Thessalonians", chapter: 5, from: 14, to: 23 }, gospel: { book: "luke", bookName: "Luke", chapter: 17, from: 3, to: 10 } },
+
+  // Week 33 — 2 Peter, then 1 John begins; Mark continues
+  { pdist: 274, weekLabel: "Week 33", dayLabel: "Monday", epistle: { book: "second-peter", bookName: "2 Peter", chapter: 1, from: 20, to: 21 }, gospel: { book: "mark", bookName: "Mark", chapter: 13, from: 9, to: 13 } },
+  { pdist: 275, weekLabel: "Week 33", dayLabel: "Tuesday", epistle: { book: "second-peter", bookName: "2 Peter", chapter: 2, from: 9, to: 22 }, gospel: { book: "mark", bookName: "Mark", chapter: 13, from: 14, to: 23 } },
+  { pdist: 276, weekLabel: "Week 33", dayLabel: "Wednesday", epistle: { book: "second-peter", bookName: "2 Peter", chapter: 3, from: 1, to: 18 }, gospel: { book: "mark", bookName: "Mark", chapter: 13, from: 24, to: 31 } },
+  { pdist: 277, weekLabel: "Week 33", dayLabel: "Thursday", epistle: { book: "first-john", bookName: "1 John", chapter: 1, from: 8, to: 10 }, gospel: { book: "mark", bookName: "Mark", chapter: 13, from: 31, to: 37 } },
+  { pdist: 278, weekLabel: "Week 33", dayLabel: "Friday", epistle: { book: "first-john", bookName: "1 John", chapter: 2, from: 7, to: 17 }, gospel: { book: "mark", bookName: "Mark", chapter: 14, from: 3, to: 9 } },
+  { pdist: 279, weekLabel: "Week 33", dayLabel: "Saturday", epistle: { book: "second-timothy", bookName: "2 Timothy", chapter: 2, from: 11, to: 19 }, gospel: { book: "luke", bookName: "Luke", chapter: 18, from: 2, to: 8 } },
 ];
 
 function buildSlots(reading: WeekdayReading): LectionarySlot[] {
