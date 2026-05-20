@@ -325,6 +325,25 @@ assertEqual("Mid-Pentecost gospel = John 7:14-30", midPent[1].scripture.label, "
 const satSouls = composeDailyReadings(utc(2026, 4, 30), data);
 assertEqual("Saturday of Souls -> Acts 28:1-31", satSouls[0].scripture.label, "Acts 28:1-31");
 
+// --- Post-Pentecost weekday lectionary spot-checks ---
+
+// Pascha 2026 = Apr 12 → Tuesday after Pentecost (pdist 51) = June 2, 2026
+const week1Tue = composeDailyReadings(utc(2026, 5, 2), data);
+assertEqual("Pentecost week Tue -> Rom 1:1-17", week1Tue[0].scripture.label, "Romans 1:1-17");
+
+// pdist 64 = Mon week 3 = June 15, 2026
+const week3Mon = composeDailyReadings(utc(2026, 5, 15), data);
+assertEqual("Week 3 Mon -> Rom 7:1-13", week3Mon[0].scripture.label, "Romans 7:1-13");
+
+// pdist 116 = Thu week 10 (transition to 2 Cor) = Aug 6, 2026
+// — but Aug 6 is also Transfiguration (fixed), so readings layer.
+const aug6 = composeDailyReadings(utc(2026, 7, 6), data);
+assertEqual(
+  "Aug 6 (Transfiguration + weekday) -> includes 2 Peter 1:10-19 (fixed Transfiguration)",
+  aug6.some((r) => r.scripture.label === "2 Peter 1:10-19"),
+  true,
+);
+
 // --- Saint linking (composer passes through Menaion saintIds) ---
 
 const nicholas = composeDailyCommemoration(utc(2026, 11, 6), data);
