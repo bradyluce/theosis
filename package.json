@@ -15,7 +15,9 @@
     "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
     "normalize:commentary": "tsx scripts/normalize/normalize-commentary.ts",
     "push:commentary:s3": "tsx scripts/push/push-commentary-to-s3.ts",
-    "test:calendar": "tsx scripts/test/calendar.ts"
+    "test:calendar": "tsx scripts/test/calendar.ts",
+    "mobile": "npm --prefix apps/mobile run start --",
+    "mobile:clean": "npm --prefix apps/mobile run start -- --clear"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1007.0",
