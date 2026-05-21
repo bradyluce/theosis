@@ -101,47 +101,95 @@ function parseDemonstrationFile(rawHtml: string, filePath: string): {
   let paragraphCount = 0;
   let m: RegExpExecArray | null;
 
+  // Highest chapter number opened so far — used to validate that embedded
+  // "N. " markers really are chapter starts (must be lastChapter + 1).
+  let lastChapter = 0;
+
+  // Split a cleaned text/html pair on any embedded chapter markers, returning
+  // segments paired with their chapter number (or null if it's a continuation
+  // of the current chapter). Handles the case where Robinson's typesetting
+  // ran two chapters together in a single <P> block (e.g. chapter 25 is
+  // inlined into the tail of chapter 24's paragraph).
+  function splitOnChapterMarkers(
+    text: string,
+    html: string,
+  ): { chapterNum: number | null; text: string; html: string }[] {
+    const out: { chapterNum: number | null; text: string; html: string }[] = [];
+    let cursorText = text;
+    let cursorHtml = html;
+
+    // Leading chapter marker?
+    const leading = cursorText.match(/^\s*(\d{1,3})\.\s+/);
+    let prevChapter: number | null = null;
+    if (leading) {
+      const n = Number(leading[1]);
+      if (n >= 1 && n <= 100 && n === lastChapter + 1) {
+        prevChapter = n;
+        lastChapter = n;
+        cursorText = cursorText.replace(/^\s*\d{1,3}\.\s+/, "");
+        cursorHtml = cursorHtml.replace(/^\s*\d{1,3}\.\s+/, "");
+      }
+    }
+
+    // Now scan for embedded markers " N. " where N is the next chapter.
+    while (true) {
+      const next = lastChapter + 1;
+      if (next > 100) break;
+      const pattern = new RegExp(`\\s${next}\\.\\s+`);
+      const idxText = cursorText.search(pattern);
+      if (idxText === -1) break;
+      // Emit the text up to (but not including) the marker.
+      const headText = cursorText.slice(0, idxText).trim();
+      // Find the same marker in cursorHtml (HTML mirrors text up to italics).
+      const idxHtml = cursorHtml.search(pattern);
+      const headHtml = idxHtml === -1 ? headText : cursorHtml.slice(0, idxHtml).trim();
+      out.push({ chapterNum: prevChapter, text: headText, html: headHtml });
+      // Advance past the marker.
+      cursorText = cursorText.slice(idxText).replace(pattern, "").trim();
+      cursorHtml =
+        idxHtml === -1 ? cursorText : cursorHtml.slice(idxHtml).replace(pattern, "").trim();
+      prevChapter = next;
+      lastChapter = next;
+    }
+    if (cursorText.length > 0) {
+      out.push({ chapterNum: prevChapter, text: cursorText, html: cursorHtml });
+    }
+    return out;
+  }
+
   while ((m = paragraphRegex.exec(mainText)) !== null) {
     const cleaned = cleanParagraphHtml(m[1]);
     if (!cleaned.text) continue;
 
-    // Does this paragraph open a new chapter? Look for a leading "N. " where
-    // N is between 1 and 100.
-    const chapterStart = cleaned.text.match(/^(\d{1,3})\.\s/);
-    const chapterNum = chapterStart ? Number(chapterStart[1]) : null;
-    const isValidChapter =
-      chapterNum !== null && chapterNum >= 1 && chapterNum <= 100;
+    const segments = splitOnChapterMarkers(cleaned.text, cleaned.html);
+    for (const seg of segments) {
+      if (!seg.text) continue;
 
-    if (isValidChapter) {
-      // Flush previous section.
-      if (current && (current.heading || current.paragraphs.length > 0)) {
-        sections.push(current);
-      }
-      const bodyText = stripLeadingChapterNumber(cleaned.text);
-      const bodyHtml = stripLeadingChapterNumber(cleaned.html);
       const paragraph: WorkChapterParagraph = {
-        number: chapterNum!,
-        text: bodyText,
+        text: seg.text,
       };
-      if (/<(em|q|strong|blockquote)\b/i.test(bodyHtml)) {
-        paragraph.html = bodyHtml;
+      if (/<(em|q|strong|blockquote)\b/i.test(seg.html)) {
+        paragraph.html = seg.html;
       }
-      current = {
-        heading: `Chapter ${chapterNum}`,
-        paragraphs: [paragraph],
-      };
-      paragraphCount += 1;
-    } else if (current) {
-      // Continuation paragraph inside the current chapter.
-      const paragraph: WorkChapterParagraph = { text: cleaned.text };
-      if (/<(em|q|strong|blockquote)\b/i.test(cleaned.html)) {
-        paragraph.html = cleaned.html;
+
+      if (seg.chapterNum !== null) {
+        // Opens a new chapter — flush previous and start fresh.
+        if (current && (current.heading || current.paragraphs.length > 0)) {
+          sections.push(current);
+        }
+        paragraph.number = seg.chapterNum;
+        current = {
+          heading: `Chapter ${seg.chapterNum}`,
+          paragraphs: [paragraph],
+        };
+      } else if (current) {
+        // Continuation paragraph inside the current chapter.
+        current.paragraphs.push(paragraph);
       }
-      current.paragraphs.push(paragraph);
+      // Orphan segments before the first chapter (front matter / page
+      // headers) are silently dropped.
       paragraphCount += 1;
     }
-    // Skip orphan paragraphs that appear before the first chapter (front
-    // matter, page headers, etc.).
   }
   if (current && (current.heading || current.paragraphs.length > 0)) {
     sections.push(current);

@@ -17,10 +17,14 @@ import {
 import { parseAugustineTrinity } from "./parse-augustine-trinity";
 import { parseBasil } from "./parse-basil";
 import { parseChrysostom } from "./parse-chrysostom";
+import { parseChrysostomAdversusJudaeos } from "./parse-chrysostom-adversus-judaeos";
+import { parseDionysiusAreopagite } from "./parse-dionysius-areopagite";
+import { parseMacariusEgyptian } from "./parse-macarius-egyptian";
 import { parseIgnatius } from "./parse-ignatius";
 import { parseAphrahat } from "./parse-aphrahat";
 import { parseEphraimSyrian } from "./parse-ephraim-syrian";
 import { parseJohnDamascus } from "./parse-john-damascus";
+import { parseJohnDamascusDivineImages } from "./parse-john-damascus-divine-images";
 import { parseCyrilJerusalem } from "./parse-cyril-jerusalem";
 import { parseGregoryNazianzenLetters } from "./parse-gregory-nazianzen-letters";
 import { parseGregoryNazianzenOrations } from "./parse-gregory-nazianzen-orations";
@@ -454,6 +458,73 @@ function main() {
     `[chrysostom] ${chrysostom.works.length} works, ${chrysostom.chapters.length} chapters, ${chrysostomParagraphs} paragraphs, ${chrysostom.entries.length} verse-keyed entries (NT head-verse linking).`,
   );
 
+  // ── Chrysostom — Adversus Judaeos (tertullian.org) ──────────────────────────
+  const advJudaeos = parseChrysostomAdversusJudaeos({
+    rawDir: join(FATHERS_DIRECTORY, "chrysostom", "adversus-judaeos"),
+  });
+  if (!advJudaeos.chapters || advJudaeos.chapters.length === 0) {
+    throw new Error("[chrysostom-adversus-judaeos] No homilies parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "chrysostom-adversus-judaeos.json"),
+    `${JSON.stringify(advJudaeos, null, 2)}\n`,
+    "utf8",
+  );
+  const advJudaeosParagraphs = advJudaeos.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[chrysostom-adversus-judaeos] ${advJudaeos.chapters.length} homilies, ${advJudaeosParagraphs} paragraphs.`,
+  );
+
+  // ── Dionysius the Areopagite — Parker 1897/1899 (archive.org OCR) ──────────
+  const dionysius = parseDionysiusAreopagite({
+    rawDir: join(FATHERS_DIRECTORY, "dionysius-areopagite"),
+  });
+  if (!dionysius.chapters || dionysius.chapters.length === 0) {
+    throw new Error("[dionysius-areopagite] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "dionysius-areopagite.json"),
+    `${JSON.stringify(dionysius, null, 2)}\n`,
+    "utf8",
+  );
+  const dionysiusSections = dionysius.chapters.reduce(
+    (sum, chapter) => sum + chapter.sections.length,
+    0,
+  );
+  const dionysiusParagraphs = dionysius.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[dionysius-areopagite] ${dionysius.works.length} works, ${dionysiusSections} chapter/letter sections, ${dionysiusParagraphs} paragraphs.`,
+  );
+
+  // ── Macarius the Egyptian — Mason 1921 Fifty Spiritual Homilies ─────────────
+  const macarius = parseMacariusEgyptian({
+    rawDir: join(FATHERS_DIRECTORY, "macarius-egyptian"),
+  });
+  if (!macarius.chapters || macarius.chapters.length === 0) {
+    throw new Error("[macarius-egyptian] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "macarius-egyptian.json"),
+    `${JSON.stringify(macarius, null, 2)}\n`,
+    "utf8",
+  );
+  const macariusParagraphs = macarius.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[macarius-egyptian] ${macarius.chapters.length} homilies, ${macariusParagraphs} paragraphs.`,
+  );
+
   // ── Ignatius of Antioch — ANF Vol. 1 ────────────────────────────────────────
   const ignatius = parseIgnatius({
     rawDir: join(FATHERS_DIRECTORY, "ignatius"),
@@ -494,6 +565,27 @@ function main() {
   );
   console.log(
     `[john-damascus] ${johnDamascus.works.length} works, ${johnDamascus.chapters.length} chapters, ${johnDamascusParagraphs} paragraphs.`,
+  );
+
+  // ── John of Damascus — Three Treatises on the Divine Images (Allies 1898) ──
+  const divineImages = parseJohnDamascusDivineImages({
+    rawDir: join(FATHERS_DIRECTORY, "john-damascus", "divine-images"),
+  });
+  if (!divineImages.chapters || divineImages.chapters.length === 0) {
+    throw new Error("[john-damascus-divine-images] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "john-damascus-divine-images.json"),
+    `${JSON.stringify(divineImages, null, 2)}\n`,
+    "utf8",
+  );
+  const divineImagesParagraphs = divineImages.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[john-damascus-divine-images] ${divineImages.works.length} works (3 apologiai + 3 sermons), ${divineImagesParagraphs} paragraphs.`,
   );
 
   // ── Ephraim the Syrian — NPNF Series II, Vol. 13 ────────────────────────────

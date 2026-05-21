@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   BookmarkSimple,
@@ -14,7 +15,11 @@ import {
   getDailyHymns,
   getDailyReadings,
 } from "@/lib/calendar";
-import { getPeopleByIds } from "@/lib/content";
+import { getPeopleByIds, getPersonById } from "@/lib/content";
+import {
+  getIconForPerson,
+  getPrimaryIconForDay,
+} from "@/lib/content/icon-store";
 
 // Placeholder name until auth is wired in. The user mentioned wanting a
 // toggle to display the patron-saint name instead of the personal name —
@@ -38,6 +43,10 @@ export default function HomePage() {
   const primarySaint = saints[0];
   const readings = getDailyReadings();
   const hymns = getDailyHymns();
+  const commemorationIcon = getPrimaryIconForDay(daily, saints);
+  // The "Continue" section currently hard-codes a Chrysostom feature card —
+  // surface his icon there too while it's still hard-coded.
+  const chrysostomIcon = getIconForPerson(getPersonById("john-chrysostom"));
 
   // Prefer the Gospel reading; fall back to the first reading of the day.
   const gospelReading =
@@ -143,10 +152,20 @@ export default function HomePage() {
         href="/daily"
         className="flex items-center gap-4 rounded-[16px] border border-line/40 bg-surface p-4 transition-colors duration-200 hover:bg-surface-strong"
       >
-        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-accent/30 bg-accent-soft font-serif text-2xl text-accent">
-          {primarySaint?.name.replace(/^(St\.|the |of )/, "").trim().slice(0, 1) ??
-            "✝"}
-        </span>
+        {commemorationIcon ? (
+          <Image
+            src={commemorationIcon.src}
+            alt={commemorationIcon.alt}
+            width={commemorationIcon.width}
+            height={commemorationIcon.height}
+            className="h-14 w-14 shrink-0 rounded-full border border-line object-cover"
+          />
+        ) : (
+          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-accent/30 bg-accent-soft font-serif text-2xl text-accent">
+            {primarySaint?.name.replace(/^(St\.|the |of )/, "").trim().slice(0, 1) ??
+              "✝"}
+          </span>
+        )}
         <div className="min-w-0 flex-1 space-y-1">
           <p className="text-[10px] uppercase tracking-[0.18em] text-ink-soft">
             Commemoration
@@ -199,6 +218,10 @@ export default function HomePage() {
             kicker="Fathers"
             title="St. John Chrysostom"
             subtitle="Archbishop of Constantinople"
+            iconSrc={chrysostomIcon?.src}
+            iconAlt={chrysostomIcon?.alt}
+            iconWidth={chrysostomIcon?.width}
+            iconHeight={chrysostomIcon?.height}
           />
           <FeatureCard
             href="/library?topic=theosis"
@@ -263,20 +286,39 @@ function FeatureCard({
   kicker,
   title,
   subtitle,
+  iconSrc,
+  iconAlt,
+  iconWidth,
+  iconHeight,
 }: {
   href: string;
   kicker: string;
   title: string;
   subtitle: string;
+  iconSrc?: string;
+  iconAlt?: string;
+  iconWidth?: number;
+  iconHeight?: number;
 }) {
   return (
     <Link
       href={href}
       className="block rounded-[16px] border border-line/40 bg-surface p-5 transition-colors duration-200 hover:bg-surface-strong"
     >
-      <p className="text-[10px] uppercase tracking-[0.22em] text-accent">
-        {kicker}
-      </p>
+      <div className="flex items-start justify-between gap-3">
+        <p className="text-[10px] uppercase tracking-[0.22em] text-accent">
+          {kicker}
+        </p>
+        {iconSrc && iconAlt && iconWidth && iconHeight ? (
+          <Image
+            src={iconSrc}
+            alt={iconAlt}
+            width={iconWidth}
+            height={iconHeight}
+            className="h-12 w-12 shrink-0 rounded-full border border-line object-cover"
+          />
+        ) : null}
+      </div>
       <h3 className="mt-2 font-serif text-xl tracking-tight text-ink">
         {title}
       </h3>
