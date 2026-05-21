@@ -360,15 +360,26 @@ export function LibraryExplorer({
           <div className="grid gap-3">
             {filteredWorks.slice(0, 20).map((work) => {
               const author = people.find((p) => p.id === work.personId);
+              const authorIcon = author ? personIcons?.[author.id] : undefined;
               return (
                 <Link
                   key={work.id}
                   href={`/library/works/${work.slug}`}
                   className="flex items-center gap-4 rounded-[14px] border border-line/40 bg-surface p-4 transition-colors duration-200 hover:bg-surface-strong"
                 >
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[10px] border border-accent/20 bg-accent-soft text-accent">
-                    <Star size={20} weight="fill" />
-                  </div>
+                  {authorIcon ? (
+                    <Image
+                      src={authorIcon.src}
+                      alt={authorIcon.alt}
+                      width={authorIcon.width}
+                      height={authorIcon.height}
+                      className="h-14 w-14 shrink-0 rounded-[10px] border border-line/60 object-cover"
+                    />
+                  ) : (
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[10px] border border-accent/20 bg-accent-soft text-accent">
+                      <Star size={20} weight="fill" />
+                    </div>
+                  )}
                   <div className="min-w-0 flex-1 space-y-1">
                     <p className="text-[10px] uppercase tracking-[0.16em] text-ink-soft">
                       {work.workType} · {work.lengthLabel}

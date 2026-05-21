@@ -131,6 +131,99 @@ export const iconSources: IconSource[] = [
     caption: "Sunday of the Holy Fathers",
   },
 
+  // --- Movable cycle / Lenten Triodion & Pentecostarion ---
+  {
+    id: "icon-feast-publican-pharisee",
+    wikimediaTitle: "File:Pharisee and the Publican.png",
+    alt: "Icon of the Parable of the Publican and the Pharisee.",
+    caption: "Sunday of the Publican and the Pharisee",
+  },
+  {
+    id: "icon-feast-last-judgment",
+    wikimediaTitle: "File:Last Judgment by F.Kavertzas (1640-41).jpg",
+    alt: "Seventeenth-century icon of the Last Judgment by Franghias Kavertzas.",
+    caption: "Sunday of the Last Judgment",
+  },
+  {
+    id: "icon-feast-expulsion-of-adam",
+    wikimediaTitle:
+      "File:041 Expulsion from the Garden of Eden Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of the Expulsion of Adam and Eve from Paradise.",
+    caption: "Forgiveness Sunday — Expulsion of Adam",
+  },
+  {
+    id: "icon-feast-sunday-orthodoxy",
+    wikimediaTitle: "File:Triumph orthodoxy.jpg",
+    alt: "Icon of the Triumph of Orthodoxy — the restoration of the holy icons.",
+    caption: "Sunday of Orthodoxy",
+  },
+  {
+    id: "icon-feast-veneration-cross",
+    wikimediaTitle:
+      "File:Veneration of a Cross by I.Saltanov (1677-8, Kremlin museum).jpg",
+    alt: "Icon of the Veneration of the Precious Cross by Ivan Saltanov, Kremlin Museum.",
+    caption: "Sunday of the Veneration of the Cross",
+  },
+  {
+    id: "icon-feast-ladder-of-divine-ascent",
+    wikimediaTitle: "File:The Ladder of Divine Ascent-Sinai.jpg",
+    alt: "Twelfth-century Sinai icon of the Ladder of Divine Ascent.",
+    caption: "Sunday of St. John Climacus",
+  },
+  {
+    id: "icon-feast-raising-of-lazarus",
+    wikimediaTitle:
+      "File:The Lazarus Raising. Novgorod icon-painting school, 15th cent., Kirillo-Belozersky Monastery. Saint-Petersburg, Russia.jpg",
+    alt: "Fifteenth-century Novgorod-school icon of the Raising of Lazarus.",
+    caption: "Lazarus Saturday",
+  },
+  {
+    id: "icon-feast-crucifixion",
+    wikimediaTitle: "File:Icon of Passion of Jesus Christ, Novgorod.jpg",
+    alt: "Novgorod icon of the Passion and Crucifixion of Christ.",
+    caption: "Holy and Great Friday",
+  },
+  {
+    id: "icon-feast-thomas-sunday",
+    wikimediaTitle:
+      "File:061 Incredulity of Thomas Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of the Incredulity of Thomas, kept on Antipascha.",
+    caption: "Sunday of Thomas (Antipascha)",
+  },
+  {
+    id: "icon-feast-myrrhbearers",
+    wikimediaTitle:
+      "File:0662Ha. Hermitage Museum (Hall 143). Icon of the Myrrh-Bearing Women at the Tomb.jpg",
+    alt: "Icon of the Myrrh-Bearing Women at the empty tomb of Christ.",
+    caption: "Sunday of the Myrrh-Bearing Women",
+  },
+  {
+    id: "icon-feast-mid-pentecost",
+    wikimediaTitle:
+      "File:007 Mid-Pentecost Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of Mid-Pentecost, Christ teaching among the doctors in the Temple.",
+    caption: "Mid-Pentecost",
+  },
+  {
+    id: "icon-feast-samaritan-woman",
+    wikimediaTitle:
+      "File:013 Sunday of the Samaritan Woman Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of Christ and the Samaritan Woman at Jacob's Well.",
+    caption: "Sunday of the Samaritan Woman",
+  },
+  {
+    id: "icon-feast-blind-man",
+    wikimediaTitle: "File:Jesus healing the blind XIX c. Brashlyan.jpg",
+    alt: "Icon of Christ healing the man born blind.",
+    caption: "Sunday of the Blind Man",
+  },
+  {
+    id: "icon-feast-zacchaeus",
+    wikimediaTitle: "File:Saint Zacchaeus - Orthodox Icon.png",
+    alt: "Orthodox icon of Zacchaeus the publican in the sycamore tree.",
+    caption: "Sunday of Zacchaeus",
+  },
+
   // --- Major saints ---
   {
     id: "icon-st-nicholas-myra",

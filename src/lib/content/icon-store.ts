@@ -87,6 +87,27 @@ const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
   // Sunday-of-the-Holy-Fathers commemorations across the year all share the
   // same iconographic type (council fathers seated around an icon of Christ).
   [/(holy fathers.*ecumenical council|ecumenical council|sunday of the (holy )?fathers)/i, "icon-feast-first-ecumenical-council"],
+  // Lenten Triodion preparatory weeks.
+  [/zacchaeus/i, "icon-feast-zacchaeus"],
+  [/publican and (the )?pharisee/i, "icon-feast-publican-pharisee"],
+  // Skip Prodigal Son until a clean PD icon is curated.
+  [/last judgment|meatfare sunday/i, "icon-feast-last-judgment"],
+  [/cheesefare|forgiveness sunday|expulsion of adam/i, "icon-feast-expulsion-of-adam"],
+  // Sundays of Great Lent.
+  [/sunday of orthodoxy|triumph of orthodoxy/i, "icon-feast-sunday-orthodoxy"],
+  [/veneration of the cross|sunday of the (holy )?cross/i, "icon-feast-veneration-cross"],
+  [/john climacus|john of the ladder|ladder of divine ascent/i, "icon-feast-ladder-of-divine-ascent"],
+  // (Sunday of St. Mary of Egypt resolves to her saint icon via getIconForPerson.)
+  // (Sunday of St. Gregory Palamas resolves to his saint icon via getIconForPerson.)
+  // Holy Week.
+  [/lazarus saturday|raising of lazarus/i, "icon-feast-raising-of-lazarus"],
+  [/holy (and great )?friday|crucifixion/i, "icon-feast-crucifixion"],
+  // Pentecostarion.
+  [/antipascha|sunday of (st\.?\s*)?thomas|thomas sunday|incredulity of thomas/i, "icon-feast-thomas-sunday"],
+  [/myrrh.bearing women|myrrhbearing women|sunday of the myrrh/i, "icon-feast-myrrhbearers"],
+  [/mid.pentecost/i, "icon-feast-mid-pentecost"],
+  [/samaritan woman/i, "icon-feast-samaritan-woman"],
+  [/sunday of the blind|blind man/i, "icon-feast-blind-man"],
 ];
 
 export function getIconForPerson(person: Person | undefined): IconRef | undefined {
