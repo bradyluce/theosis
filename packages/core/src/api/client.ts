@@ -23,6 +23,7 @@ import type {
   DailyResponse,
   LibraryCatalog,
   LibraryPeopleResponse,
+  SearchResponse,
   VersionResponse,
 } from "./types";
 
@@ -67,6 +68,7 @@ export type TheosisApi = {
     chapterNumber: number,
   ) => Promise<ByChapterFile>;
   fetchWorkChapter: (workId: string, order: number) => Promise<ByWorkFile>;
+  search: (query: string) => Promise<SearchResponse>;
 };
 
 export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
@@ -121,5 +123,7 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
       getJson<ByWorkFile>(
         `/api/library/by-work/${encodeURIComponent(workId)}/${order}`,
       ),
+    search: (query) =>
+      getJson<SearchResponse>(`/api/search?q=${encodeURIComponent(query)}`),
   };
 }

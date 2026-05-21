@@ -14,6 +14,7 @@ import type {
   IconRef,
   Person,
   ReadingAssignment,
+  ScriptureReference,
   SourceRecord,
   Work,
   WorkChapter,
@@ -110,6 +111,47 @@ export type DailyResponse = {
   translationSlug: string;
   primaryIcon: IconRef | null;
   saintIcons: Record<string, IconRef | null>;
+};
+
+// --- /api/search -----------------------------------------------------------
+
+export type SearchResultKind =
+  | "verse"
+  | "commentary"
+  | "work"
+  | "person"
+  | "topic"
+  | "daily";
+
+export type SearchResult = {
+  id: string;
+  kind: SearchResultKind;
+  title: string;
+  // Web-app href. Mobile parses this to derive its own navigation
+  // (e.g. /library/people/<slug> → router.push(`/people/${slug}`)).
+  href: string;
+  kicker: string;
+  snippet: string;
+  highlightTerms: string[];
+  weight: number;
+};
+
+export type SearchIntent =
+  | {
+      kind: "reference";
+      rawQuery: string;
+      normalizedQuery: string;
+      reference: ScriptureReference;
+    }
+  | {
+      kind: "keyword";
+      rawQuery: string;
+      normalizedQuery: string;
+    };
+
+export type SearchResponse = {
+  intent: SearchIntent | null;
+  results: SearchResult[];
 };
 
 // --- /api/version ----------------------------------------------------------
