@@ -66,6 +66,20 @@ async function searchCommons(query: string): Promise<SearchResult[]> {
   return data.query?.search ?? [];
 }
 
+async function listCategoryFiles(category: string): Promise<SearchResult[]> {
+  const url =
+    "https://commons.wikimedia.org/w/api.php" +
+    "?action=query&format=json&list=categorymembers&cmtype=file&cmlimit=15" +
+    "&cmtitle=" +
+    encodeURIComponent(category);
+  const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+  if (!res.ok) return [];
+  const data = (await res.json()) as {
+    query?: { categorymembers?: Array<{ title: string }> };
+  };
+  return (data.query?.categorymembers ?? []).map((m) => ({ title: m.title }));
+}
+
 async function imageInfo(title: string): Promise<ImageInfo | null> {
   const url =
     "https://commons.wikimedia.org/w/api.php" +
@@ -144,8 +158,9 @@ function matchesSaintName(title: string, name: string): boolean {
 
 async function findIcon(name: string): Promise<ImageInfo | null> {
   const cleaned = cleanNameForSearch(name);
-  const queries = [`${cleaned} icon`, `${cleaned} orthodox`];
-  for (const q of queries) {
+
+  // Strategy 1: free-text search, then strict name + icon-genre filter.
+  for (const q of [`${cleaned} icon`, `${cleaned} orthodox`]) {
     let results: SearchResult[];
     try {
       results = await searchCommons(q);
@@ -156,6 +171,43 @@ async function findIcon(name: string): Promise<ImageInfo | null> {
     const candidates = results.filter(
       (r) => looksLikeIcon(r.title) && matchesSaintName(r.title, name),
     );
+    for (const candidate of candidates.slice(0, 5)) {
+      const info = await imageInfo(candidate.title);
+      await sleep(300);
+      if (info && isAcceptable(info.license)) return info;
+    }
+    await sleep(400);
+  }
+
+  // Strategy 2: Commons category lookup. Many famous saints have curated
+  // categories ("Category:Icons of Saint Paul") that index real icons directly,
+  // so we can skip the name-token check and just need looksLikeIcon + license.
+  // Try the cleaned full name first, then the first significant token alone
+  // (e.g. "Paul" for "Paul, Apostle to the Nations").
+  const firstToken = cleaned
+    .split(/[\s,()'-]+/)
+    .filter((w) => w.length > 3 && !NAME_STOPWORDS.has(w.toLowerCase()))[0];
+  const categories = [
+    `Category:Icons of Saint ${cleaned}`,
+    `Category:Icons of ${cleaned}`,
+    `Category:Saint ${cleaned}`,
+    ...(firstToken && firstToken !== cleaned
+      ? [
+          `Category:Icons of Saint ${firstToken}`,
+          `Category:Icons of ${firstToken}`,
+          `Category:Saint ${firstToken}`,
+        ]
+      : []),
+  ];
+  for (const cat of categories) {
+    let files: SearchResult[];
+    try {
+      files = await listCategoryFiles(cat);
+    } catch {
+      await sleep(1000);
+      continue;
+    }
+    const candidates = files.filter((r) => looksLikeIcon(r.title));
     for (const candidate of candidates.slice(0, 5)) {
       const info = await imageInfo(candidate.title);
       await sleep(300);

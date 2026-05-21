@@ -21,6 +21,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Ambrose of Milan"
   },
   {
+    "id": "icon-ambrose-of-optina",
+    "personId": "ambrose-of-optina",
+    "wikimediaTitle": "File:Athonite Fresco Icon of Saint Ambrose of Milan.jpg",
+    "alt": "Orthodox icon of Ambrose of Optina.",
+    "caption": "Ambrose of Optina"
+  },
+  {
     "id": "icon-andrew-of-crete",
     "personId": "andrew-of-crete",
     "wikimediaTitle": "File:Rila Mon. - Fresco mir. icon 022 Andrew bishop of Crete.jpg",
@@ -40,6 +47,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Cretan Icon of Saint Anthony the Great and Temptations.jpg",
     "alt": "Orthodox icon of Anthony the Great.",
     "caption": "Anthony the Great"
+  },
+  {
+    "id": "icon-apostle-andrew",
+    "personId": "apostle-andrew",
+    "wikimediaTitle": "File:038 Saint Andrew Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Andrew the First-Called.",
+    "caption": "Andrew the First-Called"
   },
   {
     "id": "icon-apostle-bartholomew",
@@ -91,11 +105,32 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Matthias the Apostle"
   },
   {
+    "id": "icon-apostle-paul",
+    "personId": "apostle-paul",
+    "wikimediaTitle": "File:086 Paul the Apostle Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Paul, Apostle to the Nations.",
+    "caption": "Paul, Apostle to the Nations"
+  },
+  {
+    "id": "icon-apostle-peter",
+    "personId": "apostle-peter",
+    "wikimediaTitle": "File:085 Peter the Apostle Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Peter, Chief of the Apostles.",
+    "caption": "Peter, Chief of the Apostles"
+  },
+  {
     "id": "icon-apostle-philip-twelve",
     "personId": "apostle-philip-twelve",
     "wikimediaTitle": "File:Apostle Philip bulgaria icon.png",
     "alt": "Orthodox icon of Philip the Apostle.",
     "caption": "Philip the Apostle"
+  },
+  {
+    "id": "icon-apostle-simon-zealot",
+    "personId": "apostle-simon-zealot",
+    "wikimediaTitle": "File:Cretan Icon of the Apostle Simon.jpg",
+    "alt": "Orthodox icon of Simon the Zealot.",
+    "caption": "Simon the Zealot"
   },
   {
     "id": "icon-apostle-thomas",
@@ -126,11 +161,25 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Michael the Archangel"
   },
   {
+    "id": "icon-athanasius-of-athos",
+    "personId": "athanasius-of-athos",
+    "wikimediaTitle": "File:104 Saint Athanasius Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Athanasius of Mount Athos.",
+    "caption": "Athanasius of Mount Athos"
+  },
+  {
     "id": "icon-athanasius-the-great",
     "personId": "athanasius-the-great",
     "wikimediaTitle": "File:Saints George, Demetrius, Pantaleon, Theodores, Anthony Icon from Saint Athanasius Church in Thessaloniki 14-15 Century.jpg",
     "alt": "Orthodox icon of Athanasius the Great.",
     "caption": "Athanasius the Great"
+  },
+  {
+    "id": "icon-barbara-great-martyr",
+    "personId": "barbara-great-martyr",
+    "wikimediaTitle": "File:060 Saint John Damaskinos with Saint Juliana and Saint Barbara Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Barbara the Great-martyr.",
+    "caption": "Barbara the Great-martyr"
   },
   {
     "id": "icon-boris-and-gleb",
@@ -159,6 +208,20 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Serbian Fresco Icon of Saint Cyril of Jerusalem 2.jpg",
     "alt": "Orthodox icon of Cyril of Jerusalem.",
     "caption": "Cyril of Jerusalem"
+  },
+  {
+    "id": "icon-demetrius-of-rostov",
+    "personId": "demetrius-of-rostov",
+    "wikimediaTitle": "File:22 Saint Demetrius Icon from Saint Paraskevi Church in Adam.jpg",
+    "alt": "Orthodox icon of Demetrius of Rostov.",
+    "caption": "Demetrius of Rostov"
+  },
+  {
+    "id": "icon-demetrius-of-thessalonica",
+    "personId": "demetrius-of-thessalonica",
+    "wikimediaTitle": "File:22 Saint Demetrius Icon from Saint Paraskevi Church in Adam.jpg",
+    "alt": "Orthodox icon of Demetrius the Myrrh-streamer.",
+    "caption": "Demetrius the Myrrh-streamer"
   },
   {
     "id": "icon-eusebius-caesarea",
@@ -224,6 +287,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Jerome"
   },
   {
+    "id": "icon-joachim-and-anna",
+    "personId": "joachim-and-anna",
+    "wikimediaTitle": "File:Russian School - Icon with Scenes from the Life of the Virgin Mary - FA001100 - Brighton Museum ^ Art Gallery.jpg",
+    "alt": "Orthodox icon of Joachim and Anna, the Holy God-bearing Ancestors.",
+    "caption": "Joachim and Anna, the Holy God-bearing Ancestors"
+  },
+  {
     "id": "icon-john-of-damascus",
     "personId": "john-of-damascus",
     "wikimediaTitle": "File:Icon of Saint John of Damascus - Emmanouel Tzanes.jpg",
@@ -252,11 +322,25 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Macarius the Great"
   },
   {
+    "id": "icon-mark-the-ascetic",
+    "personId": "mark-the-ascetic",
+    "wikimediaTitle": "File:029 Saint Mark Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Mark the Ascetic.",
+    "caption": "Mark the Ascetic"
+  },
+  {
     "id": "icon-martyr-irene",
     "personId": "martyr-irene",
     "wikimediaTitle": "File:Rila Mon. - Fresco mir. icon 021 Irene of Macedonia.jpg",
     "alt": "Orthodox icon of Irene of Macedonia.",
     "caption": "Irene of Macedonia"
+  },
+  {
+    "id": "icon-martyr-marina",
+    "personId": "martyr-marina",
+    "wikimediaTitle": "File:Cretan Icon of Saint Marina from the Saint Marina Monastery in Andros.jpg",
+    "alt": "Orthodox icon of Marina of Antioch in Pisidia.",
+    "caption": "Marina of Antioch in Pisidia"
   },
   {
     "id": "icon-martyr-mercurius",
@@ -301,11 +385,25 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Peter, Metropolitan of Moscow"
   },
   {
+    "id": "icon-philip-of-moscow",
+    "personId": "philip-of-moscow",
+    "wikimediaTitle": "File:014 Saint Philip Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Philip the Confessor, Metropolitan of Moscow.",
+    "caption": "Philip the Confessor, Metropolitan of Moscow"
+  },
+  {
     "id": "icon-prophet-daniel",
     "personId": "prophet-daniel",
     "wikimediaTitle": "File:Icon of the Prophet Daniel and the Three Holy Youths.jpg",
     "alt": "Orthodox icon of Daniel the Prophet and the Three Holy Youths.",
     "caption": "Daniel the Prophet and the Three Holy Youths"
+  },
+  {
+    "id": "icon-prophet-david-king",
+    "personId": "prophet-david-king",
+    "wikimediaTitle": "File:Amgueddfa Cymru - Braslun ar gyfer mosaig Dewi Sant - Sketch for the St. David mosaic - 137895.jpeg",
+    "alt": "Orthodox icon of David the King and Prophet.",
+    "caption": "David the King and Prophet"
   },
   {
     "id": "icon-prophet-elisha",
@@ -341,6 +439,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Prophet Samuel, Russian Icon, private gallery, London.jpg",
     "alt": "Orthodox icon of Samuel the Prophet.",
     "caption": "Samuel the Prophet"
+  },
+  {
+    "id": "icon-protomartyr-stephen",
+    "personId": "protomartyr-stephen",
+    "wikimediaTitle": "File:012 Saint Stephen Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Stephen the Protomartyr and Archdeacon.",
+    "caption": "Stephen the Protomartyr and Archdeacon"
   },
   {
     "id": "icon-sabbas-the-sanctified",
@@ -385,6 +490,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Symeon the New Theologian"
   },
   {
+    "id": "icon-tatiana-of-rome",
+    "personId": "tatiana-of-rome",
+    "wikimediaTitle": "File:BabushinIcons1681.jpg",
+    "alt": "Orthodox icon of Tatiana of Rome.",
+    "caption": "Tatiana of Rome"
+  },
+  {
     "id": "icon-theodore-the-general",
     "personId": "theodore-the-general",
     "wikimediaTitle": "File:Theodore Stratelates. Iprari church fresco. 1096.jpg",
@@ -397,5 +509,12 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Icon of Saints Peter the Metropolitan, Leonty of Rostov, and Theodosius of the Caves. Novgorod School of Iconography, late 15th – early 16th century. Tretyakov Gallery, Russia.jpg",
     "alt": "Orthodox icon of Theodosius of the Caves of Kiev.",
     "caption": "Theodosius of the Caves of Kiev"
+  },
+  {
+    "id": "icon-tryphon-the-martyr",
+    "personId": "tryphon-the-martyr",
+    "wikimediaTitle": "File:068 Saint Tryphon Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Tryphon of Lampsacus.",
+    "caption": "Tryphon of Lampsacus"
   }
 ];
