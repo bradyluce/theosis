@@ -86,3 +86,9 @@ Adding a new commentary source: write a parser in `scripts/ingest/commentary/par
 - The commentary loader's repo-root discovery walks up three levels when run from `.claude/worktrees/<name>` — preserve that behavior if you refactor it.
 - Saint long-form bios live in `src/lib/content/seed/saint-bios.ts` keyed by `person.id` and are merged onto `Person.extendedSummary` lazily by `attachBio()` in `queries.ts` — keep bios in that file, not in `library.ts`.
 - Editorial-content policy (from `docs/calendar-strategy.md`): Theosis owns its prose. Use Wikidata (CC0) for facts and Hapgood (public domain) for hymns; **do not ingest CC-BY-SA prose** from OrthodoxWiki or the Prologue from Ohrid.
+
+## Git policy
+
+- When the user asks you to commit, **also push** the resulting commits to `origin` on the same branch without asking — the default Claude Code "don't push autonomously" rule is overridden for this repo. Still ask first for destructive operations (force push, reset --hard, branch deletion).
+- Never force-push to `master`. Other branches are fine if the user asks.
+- Don't push commits the user didn't ask you to make. "Commit" implies push; "make this change" without "commit" does not.
