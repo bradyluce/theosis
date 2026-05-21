@@ -79,11 +79,13 @@ export const userProfileSeed: UserProfileSnapshot = {
       visitedAt: "2026-03-09T08:00:00.000Z",
     },
   ],
+  readingList: [],
   preferences: {
     calendarPreference: "new-calendar",
     primaryTranslationId: "kjva",
     patronSaintPersonId: "john-chrysostom",
     preferredFatherIds: [],
     hiddenFatherIds: [],
+    location: "Tyler",
   },
 };

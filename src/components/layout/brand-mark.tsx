@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 export function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <Link
-      href="/bible"
+      href="/home"
       className="inline-flex items-center gap-3 rounded-[12px] text-ink transition-colors duration-200 hover:text-accent"
     >
       <span className="flex h-9 w-9 items-center justify-center rounded-[12px] border border-line-strong bg-surface-strong">

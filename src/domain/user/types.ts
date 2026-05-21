@@ -29,6 +29,21 @@ export type FavoritePerson = {
   addedAt: string;
 };
 
+// A user-curated reading list entry. A `Work` lives in one of three buckets:
+// "read-later" (queued), "reading" (currently in progress), or "read" (done).
+// Status is moved by the user — there's no automatic completion logic yet.
+export type ReadingListStatus = "read-later" | "reading" | "read";
+
+export type ReadingListItem = {
+  id: string;
+  workId: string;
+  status: ReadingListStatus;
+  addedAt: string;
+  // Updated whenever the status changes, so "Reading" can be sorted
+  // most-recent-first without reaching back into addedAt.
+  updatedAt: string;
+};
+
 export type SavedSearch = {
   id: string;
   query: string;
@@ -52,6 +67,9 @@ export type ProfilePreferences = {
   preferredFatherIds: string[];
   // Person ids whose commentary should be hidden from the reader entirely.
   hiddenFatherIds: string[];
+  // Free-text location displayed on the You tab ("Tyler", "Brooklyn", etc.).
+  // Optional; the You tab renders nothing when empty.
+  location?: string;
 };
 
 export type UserProfileSnapshot = {
@@ -61,5 +79,6 @@ export type UserProfileSnapshot = {
   favoritePeople: FavoritePerson[];
   recentSearches: SavedSearch[];
   readingHistory: ReadingHistoryEntry[];
+  readingList: ReadingListItem[];
   preferences: ProfilePreferences;
 };

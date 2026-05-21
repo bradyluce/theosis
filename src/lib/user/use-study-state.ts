@@ -5,6 +5,8 @@ import { createJSONStorage, persist } from "zustand/middleware";
 import type {
   FavoritePerson,
   ReadingHistoryEntry,
+  ReadingListItem,
+  ReadingListStatus,
   SavedHighlight,
   SavedNote,
   SavedSearch,
@@ -31,6 +33,10 @@ type StudyState = UserProfileSnapshot & {
   recordReadingHistory: (entry: Omit<ReadingHistoryEntry, "id" | "visitedAt">) => void;
   toggleFavoritePerson: (personId: string) => void;
   setPatronSaint: (personId: string) => void;
+  setLocation: (location: string) => void;
+  // Reading list actions
+  setReadingListStatus: (workId: string, status: ReadingListStatus) => void;
+  removeFromReadingList: (workId: string) => void;
   togglePreferredFather: (personId: string) => void;
   togglehiddenFather: (personId: string) => void;
   movePreferredFather: (personId: string, direction: "up" | "down") => void;
@@ -172,6 +178,36 @@ export const useStudyState = create<StudyState>()(
         set((state) => ({
           preferences: { ...state.preferences, patronSaintPersonId: personId },
         })),
+      setLocation: (location) =>
+        set((state) => ({
+          preferences: { ...state.preferences, location: location.trim() },
+        })),
+      setReadingListStatus: (workId, status) =>
+        set((state) => {
+          const existing = (state.readingList ?? []).find(
+            (item) => item.workId === workId,
+          );
+          const now = new Date().toISOString();
+          const nextItem: ReadingListItem = existing
+            ? { ...existing, status, updatedAt: now }
+            : {
+                id: `reading-list-${workId}`,
+                workId,
+                status,
+                addedAt: now,
+                updatedAt: now,
+              };
+          const without = (state.readingList ?? []).filter(
+            (item) => item.workId !== workId,
+          );
+          return { readingList: [nextItem, ...without] };
+        }),
+      removeFromReadingList: (workId) =>
+        set((state) => ({
+          readingList: (state.readingList ?? []).filter(
+            (item) => item.workId !== workId,
+          ),
+        })),
       togglePreferredFather: (personId) =>
         set((state) => {
           // Defensive defaults — older persisted states pre-date these fields.
@@ -228,7 +264,7 @@ export const useStudyState = create<StudyState>()(
       // a migration below. Without it, returning users whose localStorage
       // predates the new fields rehydrate with `undefined` slots and crash
       // on first read.
-      version: 1,
+      version: 2,
       migrate: (persistedState, _version) => {
         if (!persistedState || typeof persistedState !== "object") {
           return persistedState as UserProfileSnapshot;
@@ -242,6 +278,8 @@ export const useStudyState = create<StudyState>()(
           preferredFatherIds: prefs.preferredFatherIds ?? [],
           hiddenFatherIds: prefs.hiddenFatherIds ?? [],
         };
+        // v1 -> v2: readingList field is now required.
+        if (!state.readingList) state.readingList = [];
         return state as UserProfileSnapshot;
       },
       onRehydrateStorage: () => (state) => {

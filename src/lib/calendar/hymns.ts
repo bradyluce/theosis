@@ -24,7 +24,18 @@ export function composeDailyHymns(
 
   const menaionKey = calendarSystem === "new" ? gregorianMonthDay(date) : julianKey(date);
   const fixed = data.hymns.fixed[menaionKey];
-  if (fixed) slots.push(...fixed);
+  // Same rule as readings: during Holy Week + Bright Week + Pentecostarion
+  // (pdist -8 to 49), movable hymns supersede the saint's troparion —
+  // unless the saint's feast is polyeleos/vigil/great rank.
+  const inPaschalCycle = pdist >= -8 && pdist <= 49;
+  const fixedFeastRank = data.menaion[menaionKey]?.feastRank;
+  const isMajorFixedFeast =
+    fixedFeastRank === "great" ||
+    fixedFeastRank === "vigil" ||
+    fixedFeastRank === "polyeleos";
+  if (fixed && !(inPaschalCycle && movable && !isMajorFixedFeast)) {
+    slots.push(...fixed);
+  }
 
   return slots.map((slot, index) => slotToHymnText(slot, isoDate, index));
 }

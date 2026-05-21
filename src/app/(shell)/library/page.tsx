@@ -1,15 +1,23 @@
-import { PageHeader } from "@/components/layout/page-header";
 import { LibraryExplorer } from "@/features/library/library-explorer";
+import { getAllTopics } from "@/lib/content";
+import {
+  getAllPeopleFromAll,
+  getAllSourcesFromAll,
+  getAllWorksFromAll,
+} from "@/lib/content/commentary-loader";
 
 export default function LibraryPage() {
+  const people = getAllPeopleFromAll();
+  const works = getAllWorksFromAll();
+  const topics = getAllTopics();
+  const sources = getAllSourcesFromAll();
+
   return (
-    <div className="space-y-8">
-      <PageHeader
-        eyebrow="Corpus"
-        title="Library"
-        description="One reading library for Fathers, saints, theologians, and works, with enough structure to grow into a serious Orthodox research surface."
-      />
-      <LibraryExplorer />
-    </div>
+    <LibraryExplorer
+      people={people}
+      works={works}
+      topics={topics}
+      sources={sources}
+    />
   );
 }

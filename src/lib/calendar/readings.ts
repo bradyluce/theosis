@@ -30,7 +30,22 @@ export function composeDailyReadings(
 
   const menaionKey = calendarSystem === "new" ? gregorianMonthDay(date) : julianKey(date);
   const fixed = data.lectionary.fixed[menaionKey];
-  if (fixed) slots.push(...fixed);
+  // Byzantine typikon: during Holy Week and the Pentecostarion (Lazarus
+  // Saturday through Pentecost = pdist -8 to 49), the movable readings
+  // supersede ordinary saint commemorations and the saint's readings are
+  // deferred. Polyeleos/vigil/great-rank feasts are the exception — they
+  // retain their readings even within the paschal cycle.
+  // Outside this window (Triodion through post-Pentecost weekdays), the
+  // saint's readings layer with the day's weekday/Sunday reading as usual.
+  const inPaschalCycle = pdist >= -8 && pdist <= 49;
+  const fixedFeastRank = data.menaion[menaionKey]?.feastRank;
+  const isMajorFixedFeast =
+    fixedFeastRank === "great" ||
+    fixedFeastRank === "vigil" ||
+    fixedFeastRank === "polyeleos";
+  if (fixed && !(inPaschalCycle && movable && !isMajorFixedFeast)) {
+    slots.push(...fixed);
+  }
 
   return slots.map((slot, index) => slotToReadingAssignment(slot, isoDate, index));
 }

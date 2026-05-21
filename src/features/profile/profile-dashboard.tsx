@@ -1,233 +1,320 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo } from "react";
-import { PageHeader } from "@/components/layout/page-header";
-import { Pill } from "@/components/primitives/pill";
-import { Surface } from "@/components/primitives/surface";
-import { getAllPeople, getAllSaints, getPersonById, getVerseById } from "@/lib/content";
+import {
+  BookOpen,
+  BookmarkSimple,
+  Camera,
+  Gear,
+  HandsPraying,
+  List,
+  MapPin,
+  NotePencil,
+  Plus,
+  Trophy,
+} from "@phosphor-icons/react";
+import { useMemo, useState } from "react";
 import { useStudyState } from "@/lib/user/use-study-state";
-import { PatronSaintPicker } from "@/features/profile/patron-saint-picker";
-import { FatherPreferences } from "@/features/profile/father-preferences";
+import { cn } from "@/lib/utils";
+
+type ActivityTab = "all" | "highlights" | "notes" | "saved";
 
 export function ProfileDashboard() {
   const savedVerses = useStudyState((state) => state.savedVerses);
   const highlights = useStudyState((state) => state.highlights);
   const notes = useStudyState((state) => state.notes);
   const favoritePeople = useStudyState((state) => state.favoritePeople);
-  const recentSearches = useStudyState((state) => state.recentSearches);
-  const readingHistory = useStudyState((state) => state.readingHistory);
-  const preferences = useStudyState((state) => state.preferences);
+  const location = useStudyState((state) => state.preferences.location ?? "");
 
-  const resolvedSavedVerses = useMemo(
-    () =>
-      savedVerses
-        .map((item) => getVerseById(item.verseId))
-        .filter((value): value is NonNullable<ReturnType<typeof getVerseById>> => Boolean(value)),
-    [savedVerses],
-  );
+  const [activityTab, setActivityTab] = useState<ActivityTab>("all");
 
-  const resolvedFavorites = useMemo(
-    () =>
-      favoritePeople
-        .map((item) => getPersonById(item.personId))
-        .filter((value): value is NonNullable<ReturnType<typeof getPersonById>> => Boolean(value)),
-    [favoritePeople],
-  );
+  // Placeholders — wire to auth + reading-history once they exist.
+  const personName = "Brady";
+  const streak = 1;
+  const badgeCount = 3 + favoritePeople.length;
 
-  const patronSaint = getPersonById(preferences.patronSaintPersonId);
-  const allSaints = useMemo(() => getAllSaints(), []);
-  // Fathers + theologians are the natural pool for commentary ranking.
-  // Pure saints are excluded since they typically don't author commentary.
-  const allFathers = useMemo(
-    () =>
-      getAllPeople()
-        .filter((person) => person.kind === "father" || person.kind === "theologian")
-        .slice()
-        .sort((a, b) => a.name.localeCompare(b.name)),
-    [],
-  );
+  const activityItems = useMemo(() => {
+    const items: Array<{
+      id: string;
+      kind: ActivityTab;
+      label: string;
+      date: string;
+    }> = [];
+    for (const verse of savedVerses) {
+      items.push({
+        id: verse.id,
+        kind: "saved",
+        label: `Saved a verse`,
+        date: verse.savedAt.slice(0, 10),
+      });
+    }
+    for (const note of notes) {
+      items.push({
+        id: note.id,
+        kind: "notes",
+        label: note.title,
+        date: note.updatedAt.slice(0, 10),
+      });
+    }
+    for (const highlight of highlights) {
+      items.push({
+        id: highlight.id,
+        kind: "highlights",
+        label: highlight.excerpt,
+        date: highlight.createdAt.slice(0, 10),
+      });
+    }
+    return items
+      .filter((item) => activityTab === "all" || item.kind === activityTab)
+      .sort((a, b) => (a.date < b.date ? 1 : -1));
+  }, [activityTab, highlights, notes, savedVerses]);
 
   return (
-    <div className="space-y-8">
-      <PageHeader
-        eyebrow="Profile"
-        title="Profile"
-        description="Local-first study state for saved verses, notes, highlights, favorites, reading history, and future account-backed preferences."
-      />
-
-      <div className="grid gap-4 sm:grid-cols-3">
-        <Surface className="space-y-1">
-          <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-            Saved verses
-          </p>
-          <p className="font-serif text-3xl tracking-tight text-ink">
-            {savedVerses.length}
-          </p>
-        </Surface>
-        <Surface className="space-y-1">
-          <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-            Notes
-          </p>
-          <p className="font-serif text-3xl tracking-tight text-ink">{notes.length}</p>
-        </Surface>
-        <Surface className="space-y-1">
-          <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-            Highlights
-          </p>
-          <p className="font-serif text-3xl tracking-tight text-ink">
-            {highlights.length}
-          </p>
-        </Surface>
-      </div>
-
-      <div className="grid gap-4 xl:grid-cols-[1.05fr_0.95fr]">
-        <Surface className="space-y-4">
-          <div className="space-y-1">
-            <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-              Saved study
-            </p>
-            <h2 className="font-serif text-3xl tracking-tight text-ink">
-              Verses and notes
-            </h2>
-          </div>
-          <div className="grid gap-3">
-            {resolvedSavedVerses.map((verse) => (
-              <Link
-                key={verse.id}
-                href={`/bible/${verse.translationId}/${verse.bookSlug}/${verse.chapterNumber}#${verse.id}`}
-                className="rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
-              >
-                <Pill variant="subtle">{verse.referenceLabel}</Pill>
-                <p className="mt-3 font-serif text-2xl leading-9 tracking-tight text-ink">
-                  {verse.text}
-                </p>
-              </Link>
-            ))}
-            {resolvedSavedVerses.length === 0 ? (
-              <p className="text-sm leading-7 text-ink-muted">
-                Save verses from the reader to populate this section.
-              </p>
-            ) : null}
-          </div>
-
-          <div className="grid gap-3">
-            {notes.map((note) => (
-              <div
-                key={note.id}
-                className="rounded-[12px] border border-line bg-background px-4 py-4"
-              >
-                <Pill>{note.title}</Pill>
-                <p className="mt-3 text-sm leading-7 text-ink-muted">{note.body}</p>
-              </div>
-            ))}
-          </div>
-        </Surface>
-
-        <div className="space-y-4">
-          <Surface className="space-y-4">
-            <div className="space-y-1">
-              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                Favorite figures
-              </p>
-              <h2 className="font-serif text-3xl tracking-tight text-ink">
-                People you return to
-              </h2>
-            </div>
-            <div className="grid gap-3">
-              {resolvedFavorites.map((person) => (
-                <Link
-                  key={person.id}
-                  href={`/library/people/${person.slug}`}
-                  className="rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
-                >
-                  <Pill>{person.kind}</Pill>
-                  <h3 className="mt-3 font-serif text-2xl tracking-tight text-ink">
-                    {person.name}
-                  </h3>
-                  <p className="mt-2 text-sm leading-7 text-ink-muted">
-                    {person.summary}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </Surface>
-
-          <Surface className="space-y-4">
-            <div className="space-y-1">
-              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                Activity
-              </p>
-              <h2 className="font-serif text-3xl tracking-tight text-ink">
-                Searches and reading history
-              </h2>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {recentSearches.map((item) => (
-                <Link
-                  key={item.id}
-                  href={`/search?q=${encodeURIComponent(item.query)}`}
-                  className="rounded-full border border-line bg-background px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] text-ink-soft transition-colors duration-200 hover:text-ink"
-                >
-                  {item.query}
-                </Link>
-              ))}
-            </div>
-            <div className="grid gap-3">
-              {readingHistory.map((item) => (
-                <Link
-                  key={item.id}
-                  href={item.href}
-                  className="rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
-                >
-                  <p className="font-medium text-ink">{item.label}</p>
-                </Link>
-              ))}
-            </div>
-          </Surface>
-
-          <Surface className="space-y-4">
-            <div className="space-y-1">
-              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                Preferences
-              </p>
-              <h2 className="font-serif text-3xl tracking-tight text-ink">
-                Personal setup
-              </h2>
-            </div>
-            <div className="grid gap-3">
-              <div className="rounded-[12px] border border-line bg-background px-4 py-4">
-                <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                  Calendar
-                </p>
-                <p className="mt-2 text-sm leading-7 text-ink-muted">
-                  {preferences.calendarPreference === "new-calendar"
-                    ? "New calendar"
-                    : "Old calendar"}
-                </p>
-              </div>
-              <PatronSaintPicker
-                saints={allSaints}
-                currentPatronId={preferences.patronSaintPersonId}
-              />
-              <FatherPreferences fathers={allFathers} />
-              {patronSaint ? (
-                <Link
-                  href={`/library/people/${patronSaint.slug}`}
-                  className="rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
-                >
-                  <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
-                    About {patronSaint.honorific ? `${patronSaint.honorific} ` : ""}{patronSaint.name.split(",")[0]}
-                  </p>
-                  <p className="mt-2 text-sm leading-7 text-ink-muted">
-                    {patronSaint.summary}
-                  </p>
-                </Link>
-              ) : null}
-            </div>
-          </Surface>
+    <div className="space-y-6 px-4 sm:px-6">
+      {/* Top icon row — menu + settings (settings goes to /you/settings) */}
+      <div className="flex justify-end pt-2">
+        <div className="flex items-center gap-1 rounded-full border border-line/60 bg-surface px-2 py-1.5">
+          <Link
+            href="/you/settings"
+            aria-label="All sections"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
+          >
+            <List size={18} />
+          </Link>
+          <Link
+            href="/you/settings"
+            aria-label="Settings"
+            className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
+          >
+            <Gear size={18} />
+          </Link>
         </div>
       </div>
+
+      {/* Identity header */}
+      <header className="flex items-start justify-between gap-4">
+        <div className="space-y-3">
+          <h1 className="font-serif text-4xl font-semibold tracking-tight text-ink">
+            {personName} Luce
+          </h1>
+          <div className="flex items-center gap-2">
+            <CountPill label="Friends" count={0} />
+            <CountPill label="Following" count={0} />
+          </div>
+          {location ? (
+            <div className="flex items-center gap-1 text-sm text-ink-muted">
+              <MapPin size={14} weight="fill" />
+              <span>{location}</span>
+            </div>
+          ) : (
+            <Link
+              href="/you/settings"
+              className="inline-flex items-center gap-1 text-sm text-ink-soft underline underline-offset-2"
+            >
+              <MapPin size={14} weight="regular" />
+              <span>Set your location</span>
+            </Link>
+          )}
+        </div>
+        <button className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-full border-2 border-line-strong/60 bg-surface text-2xl font-serif text-ink-muted">
+          {personName.slice(0, 1)}
+          <span className="absolute -bottom-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full border-2 border-background bg-surface-elevated text-ink-muted">
+            <Camera size={13} weight="fill" />
+          </span>
+        </button>
+      </header>
+
+      {/* Add Your Parish */}
+      <button className="flex w-full items-center justify-center gap-2 rounded-full border border-line/60 bg-surface px-5 py-3 text-sm font-medium text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink">
+        <Plus size={16} weight="bold" />
+        Add Your Parish
+      </button>
+
+      {/* Quick action tiles */}
+      <div className="grid grid-cols-4 gap-2 sm:gap-3">
+        <QuickTile
+          href="/you/settings"
+          icon={<BookmarkSimple size={22} weight="fill" />}
+          label="Saved"
+        />
+        <QuickTile
+          href="/prayer"
+          icon={<HandsPraying size={22} weight="fill" />}
+          label="Prayer"
+        />
+        <QuickTile
+          href="/you/reading-list"
+          icon={<BookOpen size={22} weight="fill" />}
+          label="Reading"
+        />
+        <QuickTile
+          href="/you/settings"
+          icon={<Trophy size={22} weight="fill" />}
+          label="Favorites"
+        />
+      </div>
+
+      {/* App Streak card */}
+      <div className="flex items-center justify-between rounded-[16px] border border-line/40 bg-surface px-5 py-5">
+        <div>
+          <p className="font-serif text-4xl font-semibold tracking-tight text-ink">
+            {streak}
+          </p>
+          <p className="mt-1 text-sm text-ink-muted">App Streak</p>
+        </div>
+        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-soft text-accent">
+          <Trophy size={24} weight="fill" />
+        </span>
+      </div>
+
+      {/* Badges card */}
+      <div className="space-y-3 rounded-[16px] border border-line/40 bg-surface px-5 py-5">
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="font-serif text-3xl font-semibold tracking-tight text-ink">
+              {badgeCount}
+            </p>
+            <p className="text-sm text-ink-muted">Badges</p>
+          </div>
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-surface-strong text-ink-muted">
+            <Trophy size={18} weight="regular" />
+          </span>
+        </div>
+        <div className="grid grid-cols-3 gap-3 pt-2">
+          <BadgeMedallion label="Reader" />
+          <BadgeMedallion label="Scholar" />
+          <BadgeMedallion label="Scribe" />
+        </div>
+      </div>
+
+      {/* Activity */}
+      <section className="space-y-3 pt-2">
+        <h2 className="font-serif text-2xl font-semibold tracking-tight text-ink">
+          Activity
+        </h2>
+        <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:-mx-6 sm:px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <ActivityFilter
+            active={activityTab === "all"}
+            onClick={() => setActivityTab("all")}
+            label="All"
+          />
+          <ActivityFilter
+            active={activityTab === "highlights"}
+            onClick={() => setActivityTab("highlights")}
+            icon={<NotePencil size={14} weight="bold" />}
+            label="Highlights"
+          />
+          <ActivityFilter
+            active={activityTab === "notes"}
+            onClick={() => setActivityTab("notes")}
+            icon={<NotePencil size={14} weight="bold" />}
+            label="Notes"
+          />
+          <ActivityFilter
+            active={activityTab === "saved"}
+            onClick={() => setActivityTab("saved")}
+            icon={<BookmarkSimple size={14} weight="bold" />}
+            label="Saved"
+          />
+        </div>
+
+        <div className="space-y-2">
+          {activityItems.length === 0 ? (
+            <p className="rounded-[12px] border border-line/40 bg-surface px-4 py-6 text-center text-sm text-ink-soft">
+              No activity yet in this filter.
+            </p>
+          ) : (
+            activityItems.map((item) => (
+              <div
+                key={item.id}
+                className="flex items-center gap-3 rounded-[14px] border border-line/40 bg-surface px-4 py-3"
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line-strong bg-surface-strong text-ink-muted">
+                  {personName.slice(0, 1)}
+                </span>
+                <p className="min-w-0 flex-1 truncate text-sm text-ink">
+                  {item.label}
+                </p>
+                <span className="shrink-0 text-xs text-ink-soft">
+                  {item.date}
+                </span>
+              </div>
+            ))
+          )}
+        </div>
+      </section>
     </div>
+  );
+}
+
+function CountPill({ label, count }: { label: string; count: number }) {
+  return (
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-line/60 bg-surface px-3 py-1 text-xs">
+      <span className="text-ink-muted">{label}</span>
+      <span className="font-semibold text-ink">{count}</span>
+    </span>
+  );
+}
+
+function QuickTile({
+  href,
+  icon,
+  label,
+}: {
+  href: string;
+  icon: React.ReactNode;
+  label: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="flex flex-col items-center justify-center gap-2 rounded-[14px] border border-line/40 bg-surface py-5 text-ink transition-colors duration-200 hover:bg-surface-strong"
+    >
+      <span className="text-ink-muted">{icon}</span>
+      <span className="text-sm font-medium">{label}</span>
+    </Link>
+  );
+}
+
+function BadgeMedallion({ label }: { label: string }) {
+  return (
+    <div className="flex flex-col items-center gap-2">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-accent/30 bg-accent-soft shadow-inner">
+        <Trophy size={22} weight="fill" className="text-accent" />
+      </div>
+      <div className="h-1 w-12 overflow-hidden rounded-full bg-surface-strong">
+        <div className="h-full w-1/3 rounded-full bg-accent" />
+      </div>
+      <span className="text-[10px] uppercase tracking-[0.14em] text-ink-soft">
+        {label}
+      </span>
+    </div>
+  );
+}
+
+function ActivityFilter({
+  active,
+  onClick,
+  icon,
+  label,
+}: {
+  active: boolean;
+  onClick: () => void;
+  icon?: React.ReactNode;
+  label: string;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        "inline-flex shrink-0 items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm transition-colors duration-200",
+        active
+          ? "border-ink bg-ink text-background"
+          : "border-line-strong/60 bg-transparent text-ink-muted hover:text-ink",
+      )}
+    >
+      {icon}
+      <span>{label}</span>
+    </button>
   );
 }

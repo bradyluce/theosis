@@ -38,7 +38,11 @@ export default async function BibleReaderPage({ params }: BibleReaderPageProps) 
   const verses = getChapterVerses(translation.id, book.slug, chapterNumber);
   const allTranslations = getAvailableTranslations();
 
-  const commentary = loadChapterCommentary(book.slug, chapterNumber);
+  const commentary = loadChapterCommentary(
+    book.slug,
+    chapterNumber,
+    translation.psalterScheme,
+  );
 
   const model = buildReaderModel({
     translation,

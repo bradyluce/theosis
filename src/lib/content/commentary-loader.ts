@@ -4,10 +4,12 @@ import path from "node:path";
 import type {
   CommentaryEntry,
   Person,
+  PsalterScheme,
   SourceRecord,
   Work,
+  WorkChapter,
 } from "@/domain/content/types";
-import { createChapterId } from "@/lib/content/reference";
+import { toEntryChapterNumbers } from "@/lib/content/psalter-numbering";
 import {
   commentaryEntries as seedCommentary,
   people as seedPeople,
@@ -31,6 +33,9 @@ type CommentaryBundleV2 = {
   works: Work[];
   sources: SourceRecord[];
   entries: CommentaryEntry[];
+  // Optional long-form reading content for treatises and homilies that ship
+  // as full prose alongside (or instead of) verse-keyed commentary entries.
+  chapters?: WorkChapter[];
 };
 
 type CommentaryBundle = CommentaryBundleV1 | CommentaryBundleV2;
@@ -40,6 +45,7 @@ type AggregatedCommentary = {
   people: Person[];
   works: Work[];
   sources: SourceRecord[];
+  chapters: WorkChapter[];
 };
 
 let cache: AggregatedCommentary | null | undefined = undefined;
@@ -62,6 +68,7 @@ function loadAll(): AggregatedCommentary | null {
   const people: Person[] = [];
   const works: Work[] = [];
   const sources: SourceRecord[] = [];
+  const chapters: WorkChapter[] = [];
 
   for (const fileName of files) {
     try {
@@ -76,14 +83,35 @@ function loadAll(): AggregatedCommentary | null {
         people.push(...bundle.people);
         works.push(...bundle.works);
         sources.push(...bundle.sources);
+        if (bundle.chapters) chapters.push(...bundle.chapters);
       }
     } catch (error) {
       console.warn(`[commentary-loader] failed to read ${fileName}:`, error);
     }
   }
 
-  cache = { entries, people, works, sources };
+  cache = { entries, people, works, sources, chapters };
   return cache;
+}
+
+export function getChaptersForWork(workId: string): WorkChapter[] {
+  const generated = loadAll();
+  if (!generated) return [];
+  return generated.chapters
+    .filter((chapter) => chapter.workId === workId)
+    .sort((left, right) => left.order - right.order);
+}
+
+export function getPersonByIdFromAll(personId: string): Person | undefined {
+  const generated = loadAll();
+  if (!generated) return undefined;
+  return generated.people.find((person) => person.id === personId);
+}
+
+export function getSourceByIdFromAll(sourceId: string): SourceRecord | undefined {
+  const generated = loadAll();
+  if (!generated) return undefined;
+  return generated.sources.find((source) => source.id === sourceId);
 }
 
 export function getGeneratedCommentary(): AggregatedCommentary | null {
@@ -152,6 +180,76 @@ export function getWorkBySlugFromAll(slug: string): Work | undefined {
   );
 }
 
+// Like getWorksForPerson in queries.ts but pulls from both seed and generated
+// bundles, so works ingested from raw corpora (Augustine NPNF, Gregory NPNF,
+// Athanasius NPNF, etc.) surface on the person's library card. Dedupes by
+// work id — seed entries win when both are present.
+// Merged people list: seed first, then any additional people declared by
+// generated commentary bundles. Used by the library browser so Fathers like
+// Augustine — who live only in their parsed-bundle Person records — surface
+// in search, filters, and the People grid.
+export function getAllPeopleFromAll(): Person[] {
+  const generated = loadAll();
+  const byId = new Map<string, Person>();
+  for (const person of seedPeople) byId.set(person.id, person);
+  if (generated) {
+    for (const person of generated.people) {
+      if (!byId.has(person.id)) byId.set(person.id, person);
+    }
+  }
+  return Array.from(byId.values());
+}
+
+// Merged works list (same dedupe rules as getAllPeopleFromAll).
+export function getAllWorksFromAll(): Work[] {
+  const generated = loadAll();
+  const byId = new Map<string, Work>();
+  for (const work of seedWorks) byId.set(work.id, work);
+  if (generated) {
+    for (const work of generated.works) {
+      if (!byId.has(work.id)) byId.set(work.id, work);
+    }
+  }
+  return Array.from(byId.values());
+}
+
+// Merged sources list.
+export function getAllSourcesFromAll(): SourceRecord[] {
+  const generated = loadAll();
+  const byId = new Map<string, SourceRecord>();
+  for (const source of seedSources) byId.set(source.id, source);
+  if (generated) {
+    for (const source of generated.sources) {
+      if (!byId.has(source.id)) byId.set(source.id, source);
+    }
+  }
+  return Array.from(byId.values());
+}
+
+export function getPersonBySlugFromAll(slug: string): Person | undefined {
+  const generated = loadAll();
+  return (
+    seedPeople.find((p) => p.slug === slug) ??
+    generated?.people.find((p) => p.slug === slug)
+  );
+}
+
+export function getWorksForPersonFromAll(personId: string): Work[] {
+  const generated = loadAll();
+  const byId = new Map<string, Work>();
+  for (const work of seedWorks) {
+    if (work.personId === personId) byId.set(work.id, work);
+  }
+  if (generated) {
+    for (const work of generated.works) {
+      if (work.personId === personId && !byId.has(work.id)) {
+        byId.set(work.id, work);
+      }
+    }
+  }
+  return Array.from(byId.values());
+}
+
 // Extract the canonical location suffix from any verseId.
 // Verse IDs come in the form `{translationId}:{bookSlug}.{chapter}.{verse}`.
 // Two verses across translations share the same trailing location.
@@ -185,6 +283,7 @@ function buildLookup<T extends { id: string }>(...sources: T[][]): Map<string, T
 export function loadChapterCommentary(
   bookSlug: string,
   chapterNumber: number,
+  readerPsalterScheme?: PsalterScheme,
 ): ChapterCommentaryView {
   const generated = loadAll();
   const allEntries = generated
@@ -195,34 +294,56 @@ export function loadChapterCommentary(
   const workById = buildLookup(seedWorks, generated?.works ?? []);
   const sourceById = buildLookup(seedSources, generated?.sources ?? []);
 
-  const chapterId = createChapterId(bookSlug, chapterNumber);
   const directByLocation = new Map<string, CommentaryEntry[]>();
   const relatedByLocation = new Map<string, CommentaryEntry[]>();
   const chapterLevel: CommentaryEntry[] = [];
 
+  // For the psalter, entries tagged with the opposite scheme need to be
+  // shifted into the reader's numbering. For all other books, scheme is
+  // irrelevant — use a single identity mapping.
+  const isPsalter = bookSlug === "psalms";
+
   for (const entry of allEntries) {
+    const entryScheme = entry.psalterScheme;
+
     if (entry.relation === "chapter") {
-      if (entry.targetChapterId === chapterId) chapterLevel.push(entry);
+      if (!entry.targetChapterId) continue;
+      const [entryBook, entryChapterStr] = entry.targetChapterId.split(".");
+      if (entryBook !== bookSlug) continue;
+      const entryChapter = Number.parseInt(entryChapterStr, 10);
+      if (Number.isNaN(entryChapter)) continue;
+
+      const acceptedChapters = isPsalter
+        ? toEntryChapterNumbers(chapterNumber, readerPsalterScheme, entryScheme)
+        : [chapterNumber];
+      if (acceptedChapters.includes(entryChapter)) chapterLevel.push(entry);
       continue;
     }
 
     if (!entry.targetVerseId) continue;
     const location = verseLocationKey(entry.targetVerseId);
-    // location format: "bookSlug.chapter.verse"
-    const [entryBook, entryChapterStr] = location.split(".");
+    const [entryBook, entryChapterStr, entryVerseStr] = location.split(".");
     if (entryBook !== bookSlug) continue;
-    if (Number.parseInt(entryChapterStr, 10) !== chapterNumber) continue;
+    const entryChapter = Number.parseInt(entryChapterStr, 10);
+    if (Number.isNaN(entryChapter)) continue;
 
+    const acceptedChapters = isPsalter
+      ? toEntryChapterNumbers(chapterNumber, readerPsalterScheme, entryScheme)
+      : [chapterNumber];
+    if (!acceptedChapters.includes(entryChapter)) continue;
+
+    // Key buckets by the reader's chapter number so the UI groups by what the
+    // reader sees, not by the entry's underlying tag.
+    const displayLocation = `${bookSlug}.${chapterNumber}.${entryVerseStr}`;
     const target = entry.relation === "verse" ? directByLocation : relatedByLocation;
-    const existing = target.get(location);
+    const existing = target.get(displayLocation);
     if (existing) {
       existing.push(entry);
     } else {
-      target.set(location, [entry]);
+      target.set(displayLocation, [entry]);
     }
   }
 
-  // Sort each verse bucket by rank descending (matches existing seed query behavior)
   for (const map of [directByLocation, relatedByLocation]) {
     for (const list of map.values()) {
       list.sort((left, right) => right.rank - left.rank);

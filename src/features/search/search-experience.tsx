@@ -1,12 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import { type ReactNode, useDeferredValue, useMemo, useState } from "react";
-import { PageHeader } from "@/components/layout/page-header";
-import { Button } from "@/components/primitives/button";
-import { Pill } from "@/components/primitives/pill";
-import { Surface } from "@/components/primitives/surface";
+import type { IconRef } from "@/domain/content/types";
 import { searchTheosis } from "@/features/search/search-engine";
 import { useStudyState } from "@/lib/user/use-study-state";
 
@@ -15,23 +13,18 @@ function escapeRegExp(value: string) {
 }
 
 function highlightText(text: string, terms: string[]): ReactNode {
-  if (terms.length === 0) {
-    return text;
-  }
-
+  if (terms.length === 0) return text;
   const expression = new RegExp(
     `(${terms.map((term) => escapeRegExp(term)).join("|")})`,
     "gi",
   );
   const parts = text.split(expression);
-
   return parts.map((part, index) => {
     const match = terms.some((term) => part.toLowerCase() === term.toLowerCase());
-
     return match ? (
       <mark
         key={`${part}-${index}`}
-        className="rounded bg-accent-soft px-1 text-inherit"
+        className="rounded bg-accent/30 px-1 text-ink"
       >
         {part}
       </mark>
@@ -41,148 +34,192 @@ function highlightText(text: string, terms: string[]): ReactNode {
   });
 }
 
-export function SearchExperience({ initialQuery }: { initialQuery: string }) {
+// Curated discover tiles — scholarly gold-on-dark. No category colors.
+const TOPIC_TILES: Array<{ query: string; label: string }> = [
+  { query: "theosis", label: "Theosis" },
+  { query: "prayer", label: "Prayer" },
+  { query: "incarnation", label: "Incarnation" },
+  { query: "asceticism", label: "Asceticism" },
+  { query: "martyrdom", label: "Martyrs" },
+  { query: "light", label: "Divine Light" },
+];
+
+type SearchExperienceProps = {
+  initialQuery: string;
+  personIcons?: Record<string, IconRef>;
+};
+
+// Extract the personId from a search result id of shape "person-<id>".
+// Returns undefined for any other result kind.
+function personIdFromResultId(id: string): string | undefined {
+  return id.startsWith("person-") ? id.slice("person-".length) : undefined;
+}
+
+export function SearchExperience({
+  initialQuery,
+  personIcons,
+}: SearchExperienceProps) {
   const recentSearches = useStudyState((state) => state.recentSearches);
   const addRecentSearch = useStudyState((state) => state.addRecentSearch);
-  const [query, setQuery] = useState(
-    initialQuery || recentSearches[0]?.query || "",
-  );
+  const [query, setQuery] = useState(initialQuery);
   const deferredQuery = useDeferredValue(query.trim());
   const searchModel = useMemo(
     () => searchTheosis(deferredQuery),
     [deferredQuery],
   );
 
-  function submitQuery(nextQuery: string) {
-    if (!nextQuery.trim()) {
-      return;
-    }
-
-    addRecentSearch(nextQuery.trim());
-    setQuery(nextQuery);
-  }
+  const isSearching = deferredQuery.length > 0;
 
   return (
-    <div className="space-y-8">
-      <PageHeader
-        eyebrow="Search"
-        title="Search"
-        description="Search any verse, saint, Father, work, or theological topic, with direct commentary ranked ahead of merely related material."
-      />
+    <div className="space-y-6 px-4 sm:px-6">
+      {/* Title */}
+      <h1 className="font-serif text-4xl font-semibold tracking-tight text-ink pt-2">
+        Discover
+      </h1>
 
-      <Surface className="space-y-4">
-        <form
-          onSubmit={(event) => {
-            event.preventDefault();
-            submitQuery(query);
-          }}
-          className="space-y-4"
-        >
-          <div className="relative">
-            <MagnifyingGlass
-              size={18}
-              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-soft"
-            />
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search John 1:1, theosis, Gregory Palamas, or Homilies on John"
-              className="w-full rounded-[12px] border border-line bg-surface-strong px-11 py-4 text-sm text-ink outline-none transition-colors duration-200 placeholder:text-ink-soft focus:border-line-strong"
-            />
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <Button type="submit" variant="secondary">
-              Search
-            </Button>
-            {["John 1:1", "theosis", "Gregory Palamas"].map((item) => (
-              <button
-                key={item}
-                type="button"
-                onClick={() => submitQuery(item)}
-                className="rounded-full border border-line bg-background px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] text-ink-soft transition-colors duration-200 hover:text-ink"
-              >
-                {item}
-              </button>
-            ))}
-          </div>
-        </form>
-
-        <div className="flex flex-wrap gap-2">
-          {recentSearches.map((item) => (
-            <button
-              key={item.id}
-              type="button"
-              onClick={() => setQuery(item.query)}
-              className="rounded-full border border-line bg-surface px-3 py-1.5 text-[0.68rem] uppercase tracking-[0.18em] text-ink-soft transition-colors duration-200 hover:text-ink"
-            >
-              {item.query}
-            </button>
-          ))}
+      {/* Search bar */}
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          if (query.trim()) addRecentSearch(query.trim());
+        }}
+      >
+        <div className="relative">
+          <MagnifyingGlass
+            size={18}
+            className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-soft"
+          />
+          <input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search Scripture, Fathers, topics"
+            className="w-full rounded-full border border-line/60 bg-surface px-11 py-3 text-base text-ink outline-none placeholder:text-ink-soft focus:border-line-strong"
+          />
         </div>
-      </Surface>
+      </form>
 
-      {deferredQuery ? (
-        <>
-          <Surface tone="accent" className="space-y-3">
-            <div className="flex flex-wrap items-center gap-2">
-              <Pill variant="accent">
-                {searchModel.intent.kind === "reference"
-                  ? "Verse reference detected"
-                  : "Keyword search"}
-              </Pill>
-              <Pill variant="subtle">{searchModel.results.length} results</Pill>
-            </div>
-            <p className="text-sm leading-7 text-ink-muted">
-              Direct commentary is intentionally ranked above related writings so
-              verse-first interpretation remains the primary experience.
-            </p>
-          </Surface>
-
-          <div className="grid gap-4">
-            {searchModel.results.map((result) => (
-              <Link
-                key={result.id}
-                href={result.href}
-                onClick={() => addRecentSearch(query.trim())}
-                className="rounded-[12px] border border-line bg-surface px-5 py-5 transition-colors duration-200 hover:bg-surface-strong"
-              >
-                <div className="flex flex-wrap items-center gap-2">
-                  <Pill>{result.kicker}</Pill>
-                  <Pill variant="subtle">{result.kind}</Pill>
-                </div>
-                <h2 className="mt-3 font-serif text-3xl tracking-tight text-ink">
-                  {highlightText(result.title, result.highlightTerms)}
-                </h2>
-                <p className="mt-2 text-sm leading-7 text-ink-muted">
-                  {highlightText(result.snippet, result.highlightTerms)}
-                </p>
-              </Link>
-            ))}
-
-            {searchModel.results.length === 0 ? (
-              <Surface tone="quiet" className="space-y-2">
-                <h2 className="font-serif text-3xl tracking-tight text-ink">
-                  No seeded results matched this query.
-                </h2>
-                <p className="text-sm leading-7 text-ink-muted">
-                  The search engine is ready for a larger corpus once ingestion
-                  starts. Try a verse reference, saint name, or topic such as
-                  &quot;theosis.&quot;
-                </p>
-              </Surface>
-            ) : null}
-          </div>
-        </>
-      ) : (
-        <Surface tone="quiet" className="space-y-2">
-          <h2 className="font-serif text-3xl tracking-tight text-ink">
-            Start with a verse, a Father, or a topic.
-          </h2>
-          <p className="text-sm leading-7 text-ink-muted">
-            The search surface is seeded for verse references, saint names, work
-            titles, and theological topics. Recent searches persist locally.
+      {isSearching ? (
+        // Results state
+        <div className="space-y-3">
+          <p className="text-xs uppercase tracking-[0.18em] text-ink-soft">
+            {searchModel.results.length}{" "}
+            {searchModel.results.length === 1 ? "result" : "results"}
+            {searchModel.intent.kind === "reference" ? " · verse reference" : ""}
           </p>
-        </Surface>
+          {searchModel.results.length === 0 ? (
+            <div className="rounded-[14px] border border-line/40 bg-surface px-4 py-8 text-center">
+              <p className="text-sm text-ink-soft">
+                No results. Try a verse reference, saint name, or topic.
+              </p>
+            </div>
+          ) : (
+            <ul className="space-y-2">
+              {searchModel.results.map((result) => {
+                const personId = personIdFromResultId(result.id);
+                const icon = personId ? personIcons?.[personId] : undefined;
+                return (
+                  <li key={result.id}>
+                    <Link
+                      href={result.href}
+                      onClick={() => addRecentSearch(query.trim())}
+                      className="flex items-start gap-3 rounded-[14px] border border-line/40 bg-surface px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
+                    >
+                      {icon ? (
+                        <Image
+                          src={icon.src}
+                          alt={icon.alt}
+                          width={icon.width}
+                          height={icon.height}
+                          className="h-12 w-12 shrink-0 rounded-full border border-line object-cover"
+                        />
+                      ) : null}
+                      <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+                        <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-ink-soft">
+                          <span>{result.kicker}</span>
+                          <span>·</span>
+                          <span>{result.kind}</span>
+                        </div>
+                        <p className="font-serif text-lg leading-tight tracking-tight text-ink">
+                          {highlightText(result.title, result.highlightTerms)}
+                        </p>
+                        <p className="line-clamp-2 text-sm text-ink-muted">
+                          {highlightText(result.snippet, result.highlightTerms)}
+                        </p>
+                      </div>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
+      ) : (
+        // Browse state
+        <div className="space-y-6">
+          {/* Topical grid */}
+          <section className="space-y-3">
+            <h2 className="font-serif text-2xl tracking-tight text-ink">
+              Browse by topic
+            </h2>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+              {TOPIC_TILES.map((tile) => (
+                <button
+                  key={tile.query}
+                  onClick={() => setQuery(tile.query)}
+                  className="flex h-24 flex-col items-start justify-end rounded-[14px] border border-accent/20 bg-surface p-4 text-left transition-colors duration-200 hover:border-accent/40 hover:bg-surface-strong"
+                >
+                  <span className="text-[10px] uppercase tracking-[0.18em] text-accent">
+                    Topic
+                  </span>
+                  <span className="mt-1 font-serif text-lg tracking-tight text-ink">
+                    {tile.label}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          {/* Recent */}
+          {recentSearches.length > 0 ? (
+            <section className="space-y-3">
+              <h2 className="font-serif text-2xl tracking-tight text-ink">
+                Recent
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {recentSearches.map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => setQuery(item.query)}
+                    className="rounded-full border border-line-strong/60 bg-surface px-4 py-1.5 text-sm text-ink-muted transition-colors duration-200 hover:text-ink"
+                  >
+                    {item.query}
+                  </button>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          {/* Try these */}
+          <section className="space-y-3">
+            <h2 className="font-serif text-2xl tracking-tight text-ink">
+              Try these
+            </h2>
+            <div className="space-y-2">
+              {["John 1:1", "Gregory Palamas", "Confessions", "Theotokos"].map(
+                (suggestion) => (
+                  <button
+                    key={suggestion}
+                    onClick={() => setQuery(suggestion)}
+                    className="flex w-full items-center gap-3 rounded-[14px] border border-line/40 bg-surface px-4 py-3 text-left transition-colors duration-200 hover:bg-surface-strong"
+                  >
+                    <MagnifyingGlass size={16} className="text-ink-soft" />
+                    <span className="text-sm text-ink">{suggestion}</span>
+                  </button>
+                ),
+              )}
+            </div>
+          </section>
+        </div>
       )}
     </div>
   );

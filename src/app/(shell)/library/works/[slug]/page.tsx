@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PageHeader } from "@/components/layout/page-header";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
+import { ReadingListButton } from "@/features/library/reading-list-button";
 import {
   getPersonById,
   getSourceById,
@@ -10,7 +11,10 @@ import {
   getWorkSections,
 } from "@/lib/content";
 import {
+  getChaptersForWork,
   getCommentaryEntriesForWork,
+  getPersonByIdFromAll,
+  getSourceByIdFromAll,
   getWorkBySlugFromAll,
 } from "@/lib/content/commentary-loader";
 
@@ -42,10 +46,11 @@ export default async function WorkPage({ params }: WorkPageProps) {
     notFound();
   }
 
-  const person = getPersonById(work.personId);
-  const source = getSourceById(work.sourceId);
+  const person = getPersonById(work.personId) ?? getPersonByIdFromAll(work.personId);
+  const source = getSourceById(work.sourceId) ?? getSourceByIdFromAll(work.sourceId);
   const seedSections = getWorkSections(work.id);
   const commentaryEntries = getCommentaryEntriesForWork(work.id);
+  const chapters = getChaptersForWork(work.id);
 
   // Group commentary entries by chapter for rendering
   type ChapterGroup = {
@@ -76,12 +81,21 @@ export default async function WorkPage({ params }: WorkPageProps) {
   const uniqueFathers = new Set(commentaryEntries.map((e) => e.entry.personId)).size;
   const firstBookSlug = commentaryEntries[0]?.bookSlug;
 
+  const hasChapters = chapters.length > 0;
+  const totalParagraphs = chapters.reduce(
+    (sum, chapter) =>
+      sum +
+      chapter.sections.reduce((s, section) => s + section.paragraphs.length, 0),
+    0,
+  );
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 px-4 sm:px-6">
       <PageHeader
         eyebrow={work.workType}
         title={work.title}
         description={work.summary}
+        actions={<ReadingListButton workId={work.id} />}
       />
 
       <div className="grid gap-4 xl:grid-cols-[0.9fr_1.1fr]">
@@ -132,6 +146,18 @@ export default async function WorkPage({ params }: WorkPageProps) {
               </p>
             </div>
           ) : null}
+          {hasChapters ? (
+            <div className="space-y-2">
+              <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
+                Text
+              </p>
+              <p className="text-sm leading-7 text-ink-muted">
+                {chapters.length}{" "}
+                {chapters.length === 1 ? "book" : "books"},{" "}
+                {totalParagraphs.toLocaleString()} paragraphs.
+              </p>
+            </div>
+          ) : null}
           {work.verseRefs.length > 0 ? (
             <div className="space-y-2">
               <p className="text-[0.68rem] uppercase tracking-[0.2em] text-ink-soft">
@@ -162,6 +188,67 @@ export default async function WorkPage({ params }: WorkPageProps) {
               ) : null}
             </Surface>
           ))}
+
+          {hasChapters ? (
+            <div className="space-y-3">
+              {chapters.map((chapter) => (
+                <details
+                  key={chapter.id}
+                  className="group rounded-[12px] border border-line bg-surface"
+                >
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-[12px] px-4 py-3 transition-colors duration-200 hover:bg-surface-strong">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-serif text-lg tracking-tight text-ink">
+                        {chapter.label}
+                      </p>
+                      <p className="text-[0.65rem] uppercase tracking-[0.18em] text-ink-soft">
+                        {chapter.sections.reduce(
+                          (sum, section) => sum + section.paragraphs.length,
+                          0,
+                        )}{" "}
+                        paragraphs
+                      </p>
+                    </div>
+                    <span className="shrink-0 text-ink-soft transition-transform duration-200 group-open:rotate-180">
+                      ▾
+                    </span>
+                  </summary>
+                  <div className="space-y-6 border-t border-line bg-background px-5 py-6 sm:px-8 sm:py-8">
+                    {chapter.summary ? (
+                      <p className="border-l-2 border-accent/40 pl-4 font-serif text-base italic leading-7 text-ink-muted">
+                        {chapter.summary}
+                      </p>
+                    ) : null}
+                    {chapter.sections.map((section, sectionIdx) => (
+                      <section
+                        key={`${chapter.id}-section-${sectionIdx}`}
+                        className="space-y-4"
+                      >
+                        {section.heading ? (
+                          <h3 className="font-serif text-lg tracking-tight text-ink">
+                            {section.heading}
+                          </h3>
+                        ) : null}
+                        {section.paragraphs.map((paragraph, paragraphIdx) => (
+                          <p
+                            key={`${chapter.id}-p-${sectionIdx}-${paragraphIdx}`}
+                            className="font-serif text-[15px] leading-8 text-ink"
+                          >
+                            {paragraph.number !== undefined ? (
+                              <sup className="mr-1 font-mono text-[0.65rem] font-medium text-accent">
+                                {paragraph.number}
+                              </sup>
+                            ) : null}
+                            {paragraph.text}
+                          </p>
+                        ))}
+                      </section>
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
+          ) : null}
 
           {hasCommentary ? (
             <div className="space-y-3">
@@ -217,7 +304,7 @@ export default async function WorkPage({ params }: WorkPageProps) {
                 </details>
               ))}
             </div>
-          ) : seedSections.length === 0 ? (
+          ) : !hasChapters && seedSections.length === 0 ? (
             <Surface tone="quiet" className="space-y-2 px-4 py-4">
               <h3 className="font-serif text-2xl tracking-tight text-ink">
                 No content seeded for this work yet.

@@ -82,7 +82,7 @@ function main() {
   let linksAdded = 0;
   let entriesUpdated = 0;
 
-  for (const [date, entry] of Object.entries(menaion)) {
+  for (const entry of Object.values(menaion)) {
     const existingIds = new Set(entry.saintIds ?? []);
     const matches: string[] = [];
 

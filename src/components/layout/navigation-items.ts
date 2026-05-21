@@ -1,17 +1,17 @@
 import {
   BookOpenText,
-  MagnifyingGlass,
+  Compass,
+  House,
   Scroll,
-  SunDim,
   UserCircle,
 } from "@phosphor-icons/react";
 
 export const navigationItems = [
   {
-    href: "/daily",
-    label: "Daily",
-    description: "Commemorations, readings, and the shape of the day.",
-    Icon: SunDim,
+    href: "/home",
+    label: "Home",
+    description: "Verse of the day, today's reading, and devotionals.",
+    Icon: House,
   },
   {
     href: "/bible",
@@ -22,19 +22,19 @@ export const navigationItems = [
   {
     href: "/library",
     label: "Library",
-    description: "Fathers, saints, works, and related Orthodox writings.",
+    description: "Fathers, saints, works, and Orthodox study collections.",
     Icon: Scroll,
   },
   {
-    href: "/search",
-    label: "Search",
-    description: "Verse intent, fuzzy names, and blended results.",
-    Icon: MagnifyingGlass,
+    href: "/discover",
+    label: "Discover",
+    description: "Search, topics, and featured commentary.",
+    Icon: Compass,
   },
   {
-    href: "/profile",
-    label: "Profile",
-    description: "Saved study, notes, history, and preferences.",
+    href: "/you",
+    label: "You",
+    description: "Profile, saved study, streak, and preferences.",
     Icon: UserCircle,
   },
 ] as const;

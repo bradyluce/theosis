@@ -82,7 +82,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["chrys", "chrysostom"],
     {
-      personId: "chrysostom",
+      personId: "john-chrysostom",
       displayName: "John Chrysostom",
       honorific: "St.",
       eraLabel: "4th–5th century",
@@ -156,7 +156,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["ambrose"],
     {
-      personId: "ambrose",
+      personId: "ambrose-of-milan",
       displayName: "Ambrose of Milan",
       honorific: "St.",
       eraLabel: "4th century",
@@ -218,7 +218,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["greg", "gregory"],
     {
-      personId: "gregory-great",
+      personId: "gregory-the-great",
       displayName: "Gregory the Great",
       honorific: "St.",
       eraLabel: "6th century",
@@ -231,7 +231,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["gregory-nazianzen", "gregory-nazianzus", "gregory-of-nazianzus", "nazianzus", "nazianzen"],
     {
-      personId: "gregory-nazianzus",
+      personId: "gregory-the-theologian",
       displayName: "Gregory of Nazianzus",
       honorific: "St.",
       eraLabel: "4th century",
@@ -244,7 +244,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["gregory-of-nyssa", "gregory-nyssa", "nyssa"],
     {
-      personId: "gregory-nyssa",
+      personId: "gregory-of-nyssa",
       displayName: "Gregory of Nyssa",
       honorific: "St.",
       eraLabel: "4th century",
@@ -269,7 +269,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["leo"],
     {
-      personId: "leo-great",
+      personId: "leo-the-great",
       displayName: "Leo the Great",
       honorific: "St.",
       eraLabel: "5th century",
@@ -307,7 +307,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["cyril", "cyril-of-alexandria"],
     {
-      personId: "cyril-alexandria",
+      personId: "cyril-of-alexandria",
       displayName: "Cyril of Alexandria",
       honorific: "St.",
       eraLabel: "4th–5th century",
@@ -320,7 +320,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["cyril-of-jerusalem", "cyril-jerusalem"],
     {
-      personId: "cyril-jerusalem",
+      personId: "cyril-of-jerusalem",
       displayName: "Cyril of Jerusalem",
       honorific: "St.",
       eraLabel: "4th century",
@@ -345,7 +345,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["athanasius"],
     {
-      personId: "athanasius",
+      personId: "athanasius-the-great",
       displayName: "Athanasius of Alexandria",
       honorific: "St.",
       eraLabel: "4th century",
@@ -384,7 +384,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["basil"],
     {
-      personId: "basil-great",
+      personId: "basil-the-great",
       displayName: "Basil the Great",
       honorific: "St.",
       eraLabel: "4th century",
@@ -397,7 +397,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["theophyl", "theophylact"],
     {
-      personId: "theophylact-ohrid",
+      personId: "theophylact-of-ohrid",
       displayName: "Theophylact of Ohrid",
       honorific: "",
       eraLabel: "11th–12th century",
@@ -461,7 +461,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["damascene", "john-of-damascus", "john-damascene"],
     {
-      personId: "john-damascene",
+      personId: "john-of-damascus",
       displayName: "John of Damascus",
       honorific: "St.",
       eraLabel: "7th–8th century",
@@ -474,7 +474,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["maximus"],
     {
-      personId: "maximus-confessor",
+      personId: "maximus-the-confessor",
       displayName: "Maximus the Confessor",
       honorific: "St.",
       eraLabel: "6th–7th century",

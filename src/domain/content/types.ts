@@ -15,6 +15,12 @@ export type ScriptureReference = {
   label: string;
 };
 
+// Psalter numbering convention. LXX combines MT 9+10 into one psalm (and a
+// few other shifts), so commentary on "Psalm 50" means the Miserere in LXX
+// but Asaph in MT. Tagged on translations whose Psalter is present; absent
+// for NT-only translations.
+export type PsalterScheme = "LXX" | "MT";
+
 export type BibleTranslation = {
   id: string;
   slug: string;
@@ -27,6 +33,7 @@ export type BibleTranslation = {
   traditionLabel: string;
   description: string;
   isPrimary?: boolean;
+  psalterScheme?: PsalterScheme;
 };
 
 export type BibleBook = {
@@ -154,6 +161,39 @@ export type WorkSection = {
   verseRef?: ScriptureReference;
 };
 
+// A paragraph of long-form reading prose inside a WorkChapter.
+// `number` is the NPNF/source paragraph number when the source preserves one.
+// `text` is the plain-text body; `html` carries minimal inline markup
+// (<em>, <q>, <strong>, <blockquote>) for renderers that opt in to rich display.
+export type WorkChapterParagraph = {
+  number?: number;
+  text: string;
+  html?: string;
+};
+
+// A section break inside a chapter. For Augustine's Confessions this maps to
+// the inner "Chapter N." headings within each book. For tractates and homilies
+// the work-chapter often has a single un-headed section.
+export type WorkChapterSection = {
+  heading?: string;
+  paragraphs: WorkChapterParagraph[];
+};
+
+// One reading-sized chunk of a long-form library work. For Confessions this is
+// one "Book"; for Tractates on John it's one tractate; for Expositions on the
+// Psalms it's one psalm. Distinct from WorkSection — WorkChapter carries the
+// full prose body, while WorkSection is a short highlight card.
+export type WorkChapter = {
+  id: string;
+  workId: string;
+  order: number;
+  label: string;
+  title: string;
+  summary?: string;
+  sections: WorkChapterSection[];
+  sourceId: string;
+};
+
 export type CommentaryEntry = {
   id: string;
   relation: CommentaryRelation;
@@ -168,6 +208,11 @@ export type CommentaryEntry = {
   sourceId: string;
   rank: number;
   tags: string[];
+  // Declares which Psalter numbering scheme the targetVerseId/targetChapterId
+  // is in. Set only on psalter commentary; the loader cross-shifts entries
+  // when a reader's translation uses the opposite scheme (e.g. an LXX-tagged
+  // entry on psalms.50 = Miserere also surfaces for kjva readers on Ps 51).
+  psalterScheme?: PsalterScheme;
 };
 
 export type ReadingAssignment = {

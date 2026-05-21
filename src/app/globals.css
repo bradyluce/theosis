@@ -1,22 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4f0e6;
-  --surface: #fbf8f1;
-  --surface-strong: #ffffff;
-  --ink: #18253a;
-  --ink-muted: #5b677b;
-  --ink-soft: #7d8898;
-  --line: rgba(24, 37, 58, 0.12);
-  --line-strong: rgba(24, 37, 58, 0.18);
-  --accent: #987321;
-  --accent-soft: #efe3ba;
+  /* Dark scholarly palette — black canvas, layered graphite surfaces,
+     warm gold accent. No category colors. The look is icon-cabinet:
+     wood + gilt + parchment, dimmed for night reading. */
+  --background: #08080b;
+  --surface: #131316;
+  --surface-strong: #1c1c22;
+  --surface-elevated: #24242c;
+  --ink: #f5f5f7;
+  --ink-muted: #b4b4bc;
+  --ink-soft: #75757f;
+  --line: rgba(255, 255, 255, 0.07);
+  --line-strong: rgba(255, 255, 255, 0.14);
+  --accent: #d4a857;
+  --accent-soft: rgba(212, 168, 87, 0.14);
+  --accent-strong: #e6b966;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
   --color-surface-strong: var(--surface-strong);
+  --color-surface-elevated: var(--surface-elevated);
   --color-ink: var(--ink);
   --color-ink-muted: var(--ink-muted);
   --color-ink-soft: var(--ink-soft);
@@ -24,6 +30,7 @@
   --color-line-strong: var(--line-strong);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
+  --color-accent-strong: var(--accent-strong);
   --font-sans: var(--font-instrument-sans);
   --font-serif: var(--font-newsreader);
   --font-mono: var(--font-ibm-plex-mono);
@@ -37,17 +44,16 @@
   html {
     background: var(--background);
     color: var(--ink);
+    color-scheme: dark;
   }
 
   body {
-    background:
-      radial-gradient(circle at top, rgba(255, 255, 255, 0.72), transparent 42%),
-      var(--background);
+    background: var(--background);
     color: var(--ink);
   }
 
   ::selection {
-    background: rgba(152, 115, 33, 0.2);
+    background: rgba(212, 168, 87, 0.35);
     color: var(--ink);
   }
 
@@ -65,5 +71,20 @@
 
   button {
     cursor: pointer;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.14);
   }
 }

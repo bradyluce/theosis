@@ -67,3 +67,4 @@ export function getDailyHymns(
 ): HymnText[] {
   return composeDailyHymns(date, loadCalendarData(), options);
 }
+

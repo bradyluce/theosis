@@ -30,7 +30,7 @@ export default async function PersonPage({ params }: PersonPageProps) {
   const icon = getIconForPerson(person);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 px-4 sm:px-6">
       <PageHeader
         eyebrow={person.kind}
         title={person.honorific ? `${person.honorific} ${person.name}` : person.name}

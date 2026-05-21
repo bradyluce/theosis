@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:mobile": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "ingest:bibles": "tsx scripts/ingest/ingest.ts",
+    "ingest:commentary": "tsx scripts/ingest/commentary/ingest-commentary.ts",
     "ingest:icons": "tsx scripts/ingest/icons/fetch-wikimedia.ts",
     "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
     "test:calendar": "tsx scripts/test/calendar.ts"
@@ -31,6 +33,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "node-html-parser": "^7.1.0",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
     "typescript": "^5"

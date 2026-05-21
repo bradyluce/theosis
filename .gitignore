@@ -54,3 +54,10 @@ next-env.d.ts
 
 # Claude Code per-developer local config
 /.claude/settings.local.json
+
+# Claude Code internals (worktrees + preview launch config)
+.claude/
+
+# Temp test files
+.tmp_*
+tmp_test.txt

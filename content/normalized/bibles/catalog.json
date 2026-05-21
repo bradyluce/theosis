@@ -11,7 +11,8 @@
       "direction": "ltr",
       "traditionLabel": "English translation",
       "description": "Full Bible with apocryphal/deuterocanonical books parsed from OSIS.",
-      "isPrimary": true
+      "isPrimary": true,
+      "psalterScheme": "MT"
     },
     {
       "id": "rsv",
@@ -23,7 +24,8 @@
       "kind": "translation",
       "direction": "ltr",
       "traditionLabel": "Formal English translation",
-      "description": "Structured XML import of the Revised Standard Version Old and New Testaments."
+      "description": "Structured XML import of the Revised Standard Version Old and New Testaments.",
+      "psalterScheme": "MT"
     },
     {
       "id": "lxxe",
@@ -35,7 +37,8 @@
       "kind": "translation",
       "direction": "ltr",
       "traditionLabel": "English Septuagint",
-      "description": "OSIS import of Brenton's English Septuagint."
+      "description": "OSIS import of Brenton's English Septuagint. Psalter re-binned to LXX numbering (LXX 9 = MT 9+10, LXX 50 = Miserere, LXX 113 = MT 114+115, MT 116 split into LXX 114+115, MT 147 split into LXX 146+147).",
+      "psalterScheme": "LXX"
     },
     {
       "id": "brenton",
@@ -47,7 +50,8 @@
       "kind": "translation",
       "direction": "ltr",
       "traditionLabel": "English Septuagint",
-      "description": "PDF-to-text import of Brenton's Septuagint with heuristic cleanup."
+      "description": "PDF-to-text import of Brenton's Septuagint with heuristic cleanup; LXX-numbered Psalter (gaps filled from the OSIS lxxe import).",
+      "psalterScheme": "LXX"
     },
     {
       "id": "eob",
@@ -83,7 +87,8 @@
       "kind": "original",
       "direction": "ltr",
       "traditionLabel": "Greek Septuagint witness",
-      "description": "Greek Septuagint parsed from the uploaded plaintext source."
+      "description": "Greek Septuagint parsed from the uploaded plaintext source. Psalter re-binned to LXX numbering.",
+      "psalterScheme": "LXX"
     },
     {
       "id": "byz",

@@ -69,7 +69,7 @@ export function FatherPreferences({ fathers }: Props) {
           Commentary ranking
         </p>
         <p className="mt-1 text-xs leading-5 text-ink-soft">
-          Preferred Fathers appear first in the reader's commentary panel.
+          Preferred Fathers appear first in the reader&rsquo;s commentary panel.
           Hidden Fathers are removed from that panel entirely.
         </p>
       </div>

@@ -3,38 +3,50 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navigationItems } from "@/components/layout/navigation-items";
+import { useUiState } from "@/lib/user/use-ui-state";
 import { cn } from "@/lib/utils";
 
 export function BottomNav() {
   const pathname = usePathname();
+  const verseSheetOpen = useUiState((state) => state.verseSheetOpen);
 
   return (
-    <nav className="fixed inset-x-4 bottom-4 z-40 lg:hidden">
-      <div className="mx-auto flex max-w-md items-center justify-between rounded-[12px] border border-line-strong bg-surface/95 p-1.5 shadow-[0_8px_24px_rgba(24,37,58,0.08)] backdrop-blur-xl">
-        {navigationItems.map(({ href, label, Icon }) => {
-          const isActive = pathname === href || pathname.startsWith(`${href}/`);
+    <nav
+      className={cn(
+        "fixed inset-x-0 bottom-0 z-40 transition-transform duration-300 ease-out lg:hidden",
+        verseSheetOpen && "pointer-events-none translate-y-full",
+      )}
+      aria-hidden={verseSheetOpen}
+    >
+      <div className="bg-gradient-to-t from-background via-background to-transparent pb-3 pt-6">
+        <div className="mx-auto flex max-w-md items-center justify-around rounded-full border border-line-strong/60 bg-surface-strong/80 px-2 py-2 backdrop-blur-xl">
+          {navigationItems.map(({ href, label, Icon }) => {
+            const isActive =
+              pathname === href || pathname.startsWith(`${href}/`);
 
-          return (
-            <Link
-              key={href}
-              href={href}
-              className={cn(
-                "flex min-w-0 flex-1 flex-col items-center gap-1 rounded-[8px] px-2 py-2.5 text-[11px] font-medium tracking-[0.08em] text-ink-soft transition-colors duration-200",
-                isActive && "bg-accent-soft/65 text-ink",
-              )}
-            >
-              <span
+            return (
+              <Link
+                key={href}
+                href={href}
+                aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "flex h-8 w-8 items-center justify-center rounded-[8px] bg-surface-strong text-ink-soft transition-colors duration-200",
-                  isActive && "bg-background text-accent",
+                  "flex min-w-0 flex-1 flex-col items-center gap-0.5 rounded-full px-1 py-2 text-[10px] font-medium text-ink-muted transition-all duration-200",
+                  isActive && "bg-surface-elevated text-ink",
                 )}
               >
-                <Icon size={18} weight={isActive ? "fill" : "regular"} />
-              </span>
-              <span className="truncate">{label}</span>
-            </Link>
-          );
-        })}
+                <Icon
+                  size={22}
+                  weight={isActive ? "fill" : "regular"}
+                  className={cn(
+                    "transition-colors duration-200",
+                    isActive ? "text-ink" : "text-ink-muted",
+                  )}
+                />
+                <span className="truncate">{label}</span>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );
