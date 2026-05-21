@@ -1,4 +1,4 @@
-import type { PsalterScheme } from "@/domain/content/types";
+import type { PsalterScheme } from "@theosis/core";
 
 // LXX ↔ MT psalm mapping. Tables enumerate which MT psalms each LXX psalm
 // covers (and the inverse) so commentary tagged in one scheme can be shown

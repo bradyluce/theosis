@@ -2,7 +2,7 @@ import "server-only";
 
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import type { BibleBook, BibleChapter, BibleTranslation, BibleVerse } from "@/domain/content/types";
+import type { BibleBook, BibleChapter, BibleTranslation, BibleVerse } from "@theosis/core";
 
 type BibleCatalog = {
   translations: BibleTranslation[];

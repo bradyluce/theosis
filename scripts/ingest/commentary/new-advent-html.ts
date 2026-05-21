@@ -2,7 +2,7 @@ import { type HTMLElement, parse } from "node-html-parser";
 import type {
   WorkChapterParagraph,
   WorkChapterSection,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 
 // ── Entity + text helpers ────────────────────────────────────────────────────
 

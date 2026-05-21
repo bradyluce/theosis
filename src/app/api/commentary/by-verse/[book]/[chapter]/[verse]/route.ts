@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { NextRequest, NextResponse } from "next/server";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import type { CommentaryEntry } from "@/domain/content/types";
+import type { CommentaryEntry } from "@theosis/core";
 
 // Serve one per-verse commentary file. Tries S3 first (so production
 // deploys can update commentary without redeploying the bundle); falls

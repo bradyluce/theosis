@@ -5,7 +5,7 @@ import type {
   DailyCommemoration,
   HymnText,
   ReadingAssignment,
-} from "@/domain/content/types";
+} from "@theosis/core";
 import { composeDailyCommemoration, type ComposeOptions } from "@/lib/calendar/composer";
 import { composeDailyHymns } from "@/lib/calendar/hymns";
 import { composeDailyReadings } from "@/lib/calendar/readings";

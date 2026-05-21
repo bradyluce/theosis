@@ -1,5 +1,5 @@
 import { ReadingListView } from "@/features/profile/reading-list-view";
-import type { Person } from "@/domain/content/types";
+import type { Person } from "@theosis/core";
 import {
   getAllPeopleFromAll,
   getAllWorksFromAll,

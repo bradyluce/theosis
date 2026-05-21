@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { NextRequest, NextResponse } from "next/server";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import type { WorkChapter } from "@/domain/content/types";
+import type { WorkChapter } from "@theosis/core";
 
 // Serve one library/by-work/<workId>/<order>.json file — a single
 // WorkChapter (one Book of Confessions, one homily, one tractate, etc.)

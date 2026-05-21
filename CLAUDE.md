@@ -35,7 +35,7 @@ There is no general test framework. `scripts/test/calendar.ts` runs assertions a
 
 2. **Library content** (people, works, commentary, sources, topics, daily) — seeded TypeScript in `src/lib/content/seed/{library,daily,profile,saint-bios,scripture}.ts`, queried via `src/lib/content/queries.ts` (`getPersonById`, `getDirectCommentaryForVerse`, etc.). On top of seed, `src/lib/content/commentary-loader.ts` **merges in** sliced commentary content from `content/normalized/commentary/` (verse-keyed snippets — Catena Aurea, Augustine sermons, Chrysostom homily heads, Azkoul, ~85 Fathers) and long-form prose from `content/normalized/library/` (full readable WorkChapters — Augustine Confessions, Chrysostom homily bodies, Tertullian treatises, etc.). Each tree has its own `catalog.json` with people/works/sources/index; per-section files are lazy-loaded on demand, cached per key for the process lifetime. The reader page (`src/app/(shell)/bible/[translation]/[book]/[chapter]/page.tsx`) and library work/person pages use this loader; older code paths still call seed-only queries.
 
-The two systems share **domain types** in `src/domain/content/types.ts` (`BibleVerse`, `CommentaryEntry`, `Person`, `Work`, `DailyCommemoration`, `WorkChapter`, etc.). UI consumes these shapes — never raw source text.
+The two systems share **domain types** in `packages/core/src/domain/types.ts`, imported as `@theosis/core` (`BibleVerse`, `CommentaryEntry`, `Person`, `Work`, `DailyCommemoration`, `WorkChapter`, etc.). UI consumes these shapes — never raw source text. The `@theosis/core` workspace package is platform-agnostic so the future Expo mobile app (`apps/mobile/` — not yet scaffolded) can import the same types.
 
 ### Verse and chapter IDs
 

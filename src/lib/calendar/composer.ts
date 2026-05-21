@@ -1,4 +1,4 @@
-import type { DailyCommemoration, DailyCommemorationItem } from "@/domain/content/types";
+import type { DailyCommemoration, DailyCommemorationItem } from "@theosis/core";
 import { composeDailyFast } from "@/lib/calendar/fasts";
 import {
   getPaschaDate,

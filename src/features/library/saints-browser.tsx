@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
-import type { IconRef, Person } from "@/domain/content/types";
+import type { IconRef, Person } from "@theosis/core";
 
 type Props = {
   saints: Person[];

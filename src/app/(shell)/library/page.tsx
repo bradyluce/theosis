@@ -1,4 +1,4 @@
-import type { IconRef } from "@/domain/content/types";
+import type { IconRef } from "@theosis/core";
 import { LibraryExplorer } from "@/features/library/library-explorer";
 import { getAllTopics } from "@/lib/content";
 import {

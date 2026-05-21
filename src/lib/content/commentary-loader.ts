@@ -8,7 +8,7 @@ import type {
   SourceRecord,
   Work,
   WorkChapter,
-} from "@/domain/content/types";
+} from "@theosis/core";
 import { verseLocationKey } from "@/lib/content/reference";
 import { toEntryChapterNumbers } from "@/lib/content/psalter-numbering";
 import {

@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import type { CanonDivision } from "../../src/domain/content/types";
+import type { CanonDivision } from "@theosis/core";
 import { getCanonByGreekHeader } from "../../src/lib/content/book-canon";
 import { createTranslationCollector, type ParsedTranslationData } from "./shared";
 

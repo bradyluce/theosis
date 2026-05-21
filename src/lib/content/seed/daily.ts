@@ -1,4 +1,4 @@
-import type { DailyCommemoration, HymnText, ReadingAssignment } from "@/domain/content/types";
+import type { DailyCommemoration, HymnText, ReadingAssignment } from "@theosis/core";
 import { createReference } from "@/lib/content/reference";
 
 export const readingAssignments: ReadingAssignment[] = [

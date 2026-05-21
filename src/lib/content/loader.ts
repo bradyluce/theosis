@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { BibleChapter, BibleTranslation, BibleVerse } from "@/domain/content/types";
+import type { BibleChapter, BibleTranslation, BibleVerse } from "@theosis/core";
 import { canonEntryToBook, getCanonBySlug } from "@/lib/content/book-canon";
 import {
   getAvailableTranslations,

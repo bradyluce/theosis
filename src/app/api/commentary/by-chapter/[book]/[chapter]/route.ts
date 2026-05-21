@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { NextRequest, NextResponse } from "next/server";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import type { CommentaryEntry } from "@/domain/content/types";
+import type { CommentaryEntry } from "@theosis/core";
 
 // Serve one per-chapter (chapter-level commentary) file. Most chapters
 // have no by-chapter file — only those where a Father wrote on the

@@ -7,7 +7,7 @@ import type {
   Work,
   WorkChapter,
   WorkType,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 import { parseNewAdventPage } from "./new-advent-html";
 
 export type CommentaryBundleV2 = {

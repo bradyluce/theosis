@@ -4,7 +4,7 @@ import type {
   Person,
   SourceRecord,
   Work,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 import { collapseCitationSpaces, extractExcerpt, resolveBookSlug } from "./shared";
 
 export type CommentaryBundle = {

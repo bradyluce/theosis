@@ -9,7 +9,7 @@ import type {
   WorkChapterParagraph,
   WorkChapterSection,
   WorkType,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 import { decodeEntities } from "./new-advent-html";
 
 type CommentaryBundleV2 = {

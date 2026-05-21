@@ -5,7 +5,7 @@ import type {
   Person,
   SourceRecord,
   Work,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 
 export type CommentaryBundleV2 = {
   version: "2";

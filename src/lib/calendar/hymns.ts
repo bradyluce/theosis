@@ -1,4 +1,4 @@
-import type { HymnText } from "@/domain/content/types";
+import type { HymnText } from "@theosis/core";
 import { gregorianMonthDay, resolvePaschalAnchor } from "@/lib/calendar/paschalion";
 import type { CalendarData, CalendarSystem, HymnSlot } from "@/lib/calendar/types";
 

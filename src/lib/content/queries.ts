@@ -1,4 +1,4 @@
-import type { BibleVerse, CommentaryEntry, Person } from "@/domain/content/types";
+import type { BibleVerse, CommentaryEntry, Person } from "@theosis/core";
 import { canonEntryToBook, getAllBooks as getCanonBooks, getCanonBySlug } from "@/lib/content/book-canon";
 import { createChapterId } from "@/lib/content/reference";
 import { dailyCommemorations } from "@/lib/content/seed/daily";

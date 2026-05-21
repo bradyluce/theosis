@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { DailyCommemoration, IconRef, Person } from "@/domain/content/types";
+import type { DailyCommemoration, IconRef, Person } from "@theosis/core";
 
 const CATALOG_PATH = path.join(
   process.cwd(),

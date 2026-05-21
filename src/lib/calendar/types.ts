@@ -1,8 +1,8 @@
 // Calendar-internal types. These describe the shape of the normalized JSON
 // data on disk (Menaion + movable cycle) and the inputs/outputs of the composer.
-// They are deliberately kept out of `src/domain/content/types.ts` because they
-// describe the storage layer, not the app-facing record. The composer translates
-// these into the existing `DailyCommemoration` shape.
+// They are deliberately kept out of `@theosis/core` (packages/core) because
+// they describe the storage layer, not the app-facing record. The composer
+// translates these into the existing `DailyCommemoration` shape.
 
 export type Jurisdiction = "oca" | "goarch" | "antiochian" | "rocor" | "moscow";
 export type CalendarSystem = "new" | "old";

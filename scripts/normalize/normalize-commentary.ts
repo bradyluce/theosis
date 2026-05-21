@@ -41,7 +41,7 @@ import type {
   SourceRecord,
   Work,
   WorkChapter,
-} from "../../src/domain/content/types";
+} from "@theosis/core";
 import { verseLocationKey } from "../../src/lib/content/reference";
 
 type CommentaryBundleV1 = {

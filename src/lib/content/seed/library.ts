@@ -5,7 +5,7 @@ import type {
   TopicTag,
   Work,
   WorkSection,
-} from "@/domain/content/types";
+} from "@theosis/core";
 import { createChapterId, createReference, createVerseId } from "@/lib/content/reference";
 
 export const sourceRecords: SourceRecord[] = [

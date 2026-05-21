@@ -9,7 +9,7 @@ import type {
   WorkChapter,
   WorkChapterParagraph,
   WorkChapterSection,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 import {
   extractContentSlice,
   htmlToPlain,

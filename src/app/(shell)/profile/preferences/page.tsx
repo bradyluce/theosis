@@ -1,4 +1,4 @@
-import type { IconRef } from "@/domain/content/types";
+import type { IconRef } from "@theosis/core";
 import { getAllPeople, getAllSaints } from "@/lib/content";
 import { getIconForPerson } from "@/lib/content/icon-store";
 import { PreferencesPanel } from "@/features/profile/preferences-panel";

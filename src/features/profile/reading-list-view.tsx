@@ -13,7 +13,7 @@ import type {
   ReadingListItem,
   ReadingListStatus,
 } from "@/domain/user/types";
-import type { Person, Work } from "@/domain/content/types";
+import type { Person, Work } from "@theosis/core";
 import { useStudyState } from "@/lib/user/use-study-state";
 import { cn } from "@/lib/utils";
 

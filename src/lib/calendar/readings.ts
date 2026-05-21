@@ -1,4 +1,4 @@
-import type { ReadingAssignment, ScriptureReference } from "@/domain/content/types";
+import type { ReadingAssignment, ScriptureReference } from "@theosis/core";
 import { createReference } from "@/lib/content/reference";
 import { gregorianMonthDay, resolvePaschalAnchor } from "@/lib/calendar/paschalion";
 import type {

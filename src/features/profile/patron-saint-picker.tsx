@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import type { IconRef, Person } from "@/domain/content/types";
+import type { IconRef, Person } from "@theosis/core";
 import { useStudyState } from "@/lib/user/use-study-state";
 
 type Props = {

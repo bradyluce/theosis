@@ -1,4 +1,4 @@
-import type { ScriptureReference } from "@/domain/content/types";
+import type { ScriptureReference } from "@theosis/core";
 
 export function createVerseId(
   translationId: string,

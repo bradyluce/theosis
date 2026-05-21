@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Person } from "@/domain/content/types";
+import type { Person } from "@theosis/core";
 import { useStudyState } from "@/lib/user/use-study-state";
 
 type Props = {

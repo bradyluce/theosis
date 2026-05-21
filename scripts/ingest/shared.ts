@@ -1,4 +1,4 @@
-import type { BibleChapter, BibleVerse } from "../../src/domain/content/types";
+import type { BibleChapter, BibleVerse } from "@theosis/core";
 import type { CanonEntry } from "../../src/lib/content/book-canon";
 import { getCanonBySlug, normalizeCanonAlias } from "../../src/lib/content/book-canon";
 import { createVerseId } from "../../src/lib/content/reference";

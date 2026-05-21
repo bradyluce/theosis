@@ -10,7 +10,7 @@ import type {
   SourceRecord,
   TopicTag,
   Work,
-} from "@/domain/content/types";
+} from "@theosis/core";
 import { cn } from "@/lib/utils";
 
 type LibraryTab = "all" | "fathers" | "saints" | "works" | "saved" | "completed";

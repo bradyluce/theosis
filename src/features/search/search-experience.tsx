@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import { type ReactNode, useDeferredValue, useMemo, useState } from "react";
-import type { IconRef } from "@/domain/content/types";
+import type { IconRef } from "@theosis/core";
 import { searchTheosis } from "@/features/search/search-engine";
 import { useStudyState } from "@/lib/user/use-study-state";
 

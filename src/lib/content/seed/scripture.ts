@@ -4,7 +4,7 @@ import type {
   BibleTranslation,
   BibleVerse,
   CrossReference,
-} from "@/domain/content/types";
+} from "@theosis/core";
 import { createReference, createVerseId } from "@/lib/content/reference";
 
 function buildChapterId(translationId: string, bookSlug: string, chapterNumber: number) {

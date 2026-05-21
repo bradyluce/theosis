@@ -7,7 +7,7 @@ import type {
   Work,
   WorkChapter,
   WorkChapterParagraph,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 
 type CommentaryBundleV2 = {
   version: "2";

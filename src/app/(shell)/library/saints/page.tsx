@@ -1,5 +1,5 @@
 import { PageHeader } from "@/components/layout/page-header";
-import type { IconRef } from "@/domain/content/types";
+import type { IconRef } from "@theosis/core";
 import { getAllSaints } from "@/lib/content";
 import { getIconForPerson } from "@/lib/content/icon-store";
 import { SaintsBrowser } from "@/features/library/saints-browser";

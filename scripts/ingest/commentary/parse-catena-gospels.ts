@@ -5,7 +5,7 @@ import type {
   Person,
   SourceRecord,
   Work,
-} from "../../../src/domain/content/types";
+} from "@theosis/core";
 import type { CommentaryBundleV2 } from "./parse-catena-aurea";
 
 // ── Gospel config ─────────────────────────────────────────────────────────────

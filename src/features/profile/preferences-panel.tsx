@@ -1,7 +1,7 @@
 "use client";
 
 import { Surface } from "@/components/primitives/surface";
-import type { IconRef, Person } from "@/domain/content/types";
+import type { IconRef, Person } from "@theosis/core";
 import { useStudyState } from "@/lib/user/use-study-state";
 import { PatronSaintPicker } from "@/features/profile/patron-saint-picker";
 import { FatherPreferences } from "@/features/profile/father-preferences";

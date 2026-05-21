@@ -8,7 +8,7 @@ import type {
   Person,
   SourceRecord,
   Work,
-} from "@/domain/content/types";
+} from "@theosis/core";
 import { getCrossReferencesForVerse } from "@/lib/content";
 import {
   getAvailableBooks,

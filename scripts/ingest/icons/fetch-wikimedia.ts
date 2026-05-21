@@ -8,7 +8,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { iconSources, type IconSource } from "./sources";
-import type { IconRef, IconLicense } from "../../../src/domain/content/types";
+import type { IconRef, IconLicense } from "@theosis/core";
 
 // Optional: auto-curated sources from auto-curate.ts. Loaded dynamically so
 // the file can be absent (script falls back to hand-curated sources only).

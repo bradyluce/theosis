@@ -1,6 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { BibleBook, BibleChapter, BibleTranslation, BibleVerse } from "../../src/domain/content/types";
+import type { BibleBook, BibleChapter, BibleTranslation, BibleVerse } from "@theosis/core";
 
 type GeneratedCatalog = {
   translations: BibleTranslation[];

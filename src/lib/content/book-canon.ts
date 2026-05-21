@@ -1,4 +1,4 @@
-import type { BibleBook, CanonDivision } from "@/domain/content/types";
+import type { BibleBook, CanonDivision } from "@theosis/core";
 
 type TestamentLabel = "Old Testament" | "New Testament" | "Deuterocanon";
 

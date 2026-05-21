@@ -1,6 +1,6 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { BibleTranslation } from "../../src/domain/content/types";
+import type { BibleTranslation } from "@theosis/core";
 import { getAllBooks } from "../../src/lib/content/book-canon";
 import { parseBrentonTxt } from "./parse-brenton-txt";
 import { parseByzTxt } from "./parse-byz-txt";
