@@ -19,6 +19,8 @@ const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
 
 const s3Client = new S3Client({ region: REGION });
 
+const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
+
 type ByWorkFile = {
   chapter: WorkChapter;
 };
@@ -70,5 +72,7 @@ export async function GET(
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 
-  return NextResponse.json(result);
+  return NextResponse.json(result, {
+    headers: { "Cache-Control": CACHE_CONTROL },
+  });
 }
