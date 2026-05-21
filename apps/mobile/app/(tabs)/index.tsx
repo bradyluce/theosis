@@ -1,14 +1,20 @@
 import { useQuery } from "@tanstack/react-query";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import { ThemedText } from "@/components/themed-text";
+import { ThemedView } from "@/components/themed-view";
 import { getApi, getApiBaseUrl } from "@/lib/api";
 
 // Step-3 Hello screen. Proves the workspace plumbing works end-to-end:
-//   - @theosis/core resolves through the workspace symlink
+//   - @theosis/core resolves via the file: dep
 //   - The typed API client builds a URL against the local dev server
 //   - React Query handles fetch/cache/error states
 //   - Expo Router renders this at the Home tab
+//
+// Uses ThemedText/ThemedView from the SDK 54 template so colors adapt
+// to light/dark mode. (React Native's raw <Text> defaults to BLACK,
+// invisible against React Navigation's DarkTheme dark background.)
 //
 // Step 4 will replace this with the Daily Commemoration screen.
 
@@ -22,51 +28,54 @@ export default function HomeScreen() {
   });
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
-        <Text style={styles.eyebrow}>Theosis</Text>
-        <Text style={styles.headline}>Mobile is alive.</Text>
-        <Text style={styles.muted}>API base: {baseUrl}</Text>
+    <ThemedView style={styles.container}>
+      <SafeAreaView style={styles.safeArea}>
+        <View style={styles.content}>
+          <ThemedText style={styles.eyebrow}>Theosis</ThemedText>
+          <ThemedText style={styles.headline}>Mobile is alive.</ThemedText>
+          <ThemedText style={styles.muted}>API base: {baseUrl}</ThemedText>
 
-        <View style={styles.card}>
-          <Text style={styles.cardLabel}>/api/version</Text>
-          {isLoading ? <ActivityIndicator /> : null}
-          {error ? (
-            <Text style={styles.error}>
-              {error instanceof Error ? error.message : String(error)}
-            </Text>
-          ) : null}
-          {data ? (
-            <View style={styles.kvList}>
-              <KeyValue label="commit" value={data.commit} />
-              <KeyValue label="branch" value={data.branch} />
-              <KeyValue label="environment" value={data.environment} />
-            </View>
-          ) : null}
+          <ThemedView style={styles.card} darkColor="#1a1a1a" lightColor="#f5f5f5">
+            <ThemedText style={styles.cardLabel}>/api/version</ThemedText>
+            {isLoading ? <ActivityIndicator /> : null}
+            {error ? (
+              <ThemedText style={styles.error}>
+                {error instanceof Error ? error.message : String(error)}
+              </ThemedText>
+            ) : null}
+            {data ? (
+              <View style={styles.kvList}>
+                <KeyValue label="commit" value={data.commit} />
+                <KeyValue label="branch" value={data.branch} />
+                <KeyValue label="environment" value={data.environment} />
+              </View>
+            ) : null}
+          </ThemedView>
+
+          <ThemedText style={styles.muted}>
+            {isFetching ? "Fetching…" : "Tap to retry"}
+          </ThemedText>
+          <ThemedText style={styles.linkLike} onPress={() => refetch()}>
+            Retry
+          </ThemedText>
         </View>
-
-        <Text style={styles.muted}>
-          {isFetching ? "Fetching…" : "Tap to retry"}
-        </Text>
-        <Text style={styles.linkLike} onPress={() => refetch()}>
-          Retry
-        </Text>
-      </View>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ThemedView>
   );
 }
 
 function KeyValue({ label, value }: { label: string; value: string }) {
   return (
     <View style={styles.kvRow}>
-      <Text style={styles.kvKey}>{label}</Text>
-      <Text style={styles.kvValue}>{value}</Text>
+      <ThemedText style={styles.kvKey}>{label}</ThemedText>
+      <ThemedText style={styles.kvValue}>{value}</ThemedText>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
+  safeArea: { flex: 1 },
   content: {
     flex: 1,
     paddingHorizontal: 24,
