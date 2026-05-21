@@ -1,29 +1,20 @@
-// Metro config tuned for npm workspaces. Without this, Metro only watches
-// apps/mobile/ and doesn't resolve @theosis/core through the workspace
-// symlink — bundling fails with "Unable to resolve @theosis/core" the first
-// time you import from it.
+// Metro config. apps/mobile is intentionally NOT part of an npm workspace
+// (Expo's babel-plugin-router resolver gets confused inside workspaces), so
+// this stays minimal — Expo's defaults handle everything.
 //
-// Pattern from https://docs.expo.dev/guides/monorepos/. Two adjustments:
-//   1. watchFolders extends the file watcher up to the repo root so changes
-//      to packages/core trigger a re-bundle.
-//   2. nodeModulesPaths lets Metro find hoisted deps in <root>/node_modules
-//      AND any locally-installed-into-apps/mobile deps.
-//   3. disableHierarchicalLookup off-by-default would let Metro climb out of
-//      apps/mobile/node_modules looking for transitive deps; with workspaces
-//      that's the only way it finds hoisted react-native, expo, etc.
+// `@theosis/core` is consumed via file:../../packages/core in package.json,
+// which npm symlinks into apps/mobile/node_modules/@theosis/core. Metro
+// follows the symlink without extra config. If you want hot-reload of
+// @theosis/core changes during dev, set watchFolders to include
+// packages/core; re-running `npm install` after changes also works.
 
 const { getDefaultConfig } = require("expo/metro-config");
 const path = require("node:path");
 
 const projectRoot = __dirname;
-const workspaceRoot = path.resolve(projectRoot, "../..");
-
 const config = getDefaultConfig(projectRoot);
 
-config.watchFolders = [workspaceRoot];
-config.resolver.nodeModulesPaths = [
-  path.resolve(projectRoot, "node_modules"),
-  path.resolve(workspaceRoot, "node_modules"),
-];
+// Watch packages/core so hot-reload picks up shared-type changes during dev.
+config.watchFolders = [path.resolve(projectRoot, "../../packages/core")];
 
 module.exports = config;

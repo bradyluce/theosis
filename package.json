@@ -2,10 +2,6 @@
   "name": "theosis",
   "version": "0.1.0",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
   "scripts": {
     "dev": "next dev",
     "dev:mobile": "next dev -H 0.0.0.0",
@@ -23,7 +19,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1007.0",
-    "@theosis/core": "*",
+    "@theosis/core": "file:packages/core",
     "@phosphor-icons/react": "^2.1.10",
     "clsx": "^2.1.1",
     "fuse.js": "^7.1.0",
