@@ -27,6 +27,17 @@ type HymnFile = HymnData;
 // Cache invalidated 2026-05-20 after hymn duplicate-word fix (round 2).
 let cache: CalendarData | null = null;
 
+// Today as a UTC-midnight Date constructed from the server's *local* Y-M-D.
+// We use this as the default for getDaily*() so that "today" means what the
+// user calls today on their wall clock — not whatever calendar date UTC
+// currently shows. (When the server is in US/Central and the wall clock is
+// 19:00 May 20, raw `new Date()` would be parsed by the composer's
+// `getUTCDate()` as May 21 since UTC has already crossed midnight.)
+function todayUtcMidnight(): Date {
+  const now = new Date();
+  return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+}
+
 function readJsonFile<T>(filePath: string): T {
   return JSON.parse(fs.readFileSync(filePath, "utf8")) as T;
 }
@@ -49,21 +60,21 @@ export function loadCalendarData(): CalendarData {
 // (in-process cache) and applies a pure composer to produce the page's data.
 
 export function getDailyCommemoration(
-  date: Date = new Date(),
+  date: Date = todayUtcMidnight(),
   options: ComposeOptions = {},
 ): DailyCommemoration {
   return composeDailyCommemoration(date, loadCalendarData(), options);
 }
 
 export function getDailyReadings(
-  date: Date = new Date(),
+  date: Date = todayUtcMidnight(),
   options: ComposeOptions = {},
 ): ReadingAssignment[] {
   return composeDailyReadings(date, loadCalendarData(), options);
 }
 
 export function getDailyHymns(
-  date: Date = new Date(),
+  date: Date = todayUtcMidnight(),
   options: ComposeOptions = {},
 ): HymnText[] {
   return composeDailyHymns(date, loadCalendarData(), options);
