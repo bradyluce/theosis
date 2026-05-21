@@ -4,10 +4,11 @@
 // dimmed for night reading).
 //
 // Fonts: the web uses Newsreader (serif), Instrument Sans (sans), and IBM
-// Plex Mono (mono). For now mobile uses platform system fonts — `ui-serif`
-// resolves to New York on iOS, a comparable scholarly serif. Custom fonts
-// can be added later via expo-google-fonts without changing the rest of
-// the design tokens.
+// Plex Mono (mono). Mobile loads Newsreader via @expo-google-fonts/newsreader
+// in app/_layout.tsx and uses the platform system sans + mono. Until the
+// font finishes loading, anything styled with fontFamily: "Newsreader_..."
+// falls back to the OS default — that's why _layout shows a splash until
+// useFonts resolves.
 
 import { Platform } from "react-native";
 
@@ -27,22 +28,20 @@ export const colors = {
   error: "#c43d3d",
 } as const;
 
-const platformFonts = Platform.select({
-  ios: {
-    sans: "system-ui",
-    // `ui-serif` resolves to New York on iOS — closest stock match for
-    // Newsreader's scholarly feel.
-    serif: "ui-serif",
-    mono: "ui-monospace",
-  },
-  android: { sans: "System", serif: "serif", mono: "monospace" },
-  default: { sans: "System", serif: "serif", mono: "monospace" },
-}) as { sans: string; serif: string; mono: string };
+const platformSansAndMono = Platform.select({
+  ios: { sans: "system-ui", mono: "ui-monospace" },
+  android: { sans: "System", mono: "monospace" },
+  default: { sans: "System", mono: "monospace" },
+}) as { sans: string; mono: string };
 
 export const fonts = {
-  sans: platformFonts.sans,
-  serif: platformFonts.serif,
-  mono: platformFonts.mono,
+  sans: platformSansAndMono.sans,
+  // Newsreader is loaded by @expo-google-fonts/newsreader at app start in
+  // app/_layout.tsx. The font name "Newsreader_400Regular" is what useFonts
+  // registers it under — if you change which weight you load there, update
+  // here too.
+  serif: "Newsreader_400Regular",
+  mono: platformSansAndMono.mono,
 } as const;
 
 // Multiples of 4 — matches the web app's vertical rhythm.
