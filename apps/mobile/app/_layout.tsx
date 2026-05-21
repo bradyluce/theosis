@@ -21,6 +21,10 @@ export default function RootLayout() {
             name="modal"
             options={{ presentation: 'modal', title: 'Modal' }}
           />
+          <Stack.Screen
+            name="commentary/[book]/[chapter]/[verse]"
+            options={{ presentation: 'modal', headerShown: false }}
+          />
         </Stack>
         <StatusBar style="light" />
       </ThemeProvider>
