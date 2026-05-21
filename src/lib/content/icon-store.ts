@@ -84,6 +84,9 @@ const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
   [/pentecost/i, "icon-feast-pentecost"],
   [/transfiguration/i, "icon-feast-transfiguration"],
   [/dormition/i, "icon-feast-dormition"],
+  // Sunday-of-the-Holy-Fathers commemorations across the year all share the
+  // same iconographic type (council fathers seated around an icon of Christ).
+  [/(holy fathers.*ecumenical council|ecumenical council|sunday of the (holy )?fathers)/i, "icon-feast-first-ecumenical-council"],
 ];
 
 export function getIconForPerson(person: Person | undefined): IconRef | undefined {

@@ -123,6 +123,13 @@ export const iconSources: IconSource[] = [
     alt: "Icon of the Dormition of the Theotokos by Andreas Ritzos.",
     caption: "Dormition of the Theotokos",
   },
+  {
+    id: "icon-feast-first-ecumenical-council",
+    wikimediaTitle:
+      "File:044 Sunday of the Holy Fathers of the First. Ecumenical Council Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of the Sunday of the Holy Fathers of the First Ecumenical Council.",
+    caption: "Sunday of the Holy Fathers",
+  },
 
   // --- Major saints ---
   {
@@ -174,5 +181,11 @@ export const iconSources: IconSource[] = [
       "File:Saint George icon. Novgorod icon-painting school, 15th cent.., Veliky Novgorod, Russia. Tretyakov Gallery.jpg",
     alt: "Fifteenth-century Novgorod-school icon of Saint George the Trophy-Bearer.",
     caption: "Saint George the Trophy-Bearer",
+  },
+  {
+    id: "icon-symeon-the-stylite",
+    wikimediaTitle: "File:Saint Simeon Stylites the Elder (1664 icon).jpg",
+    alt: "Seventeenth-century icon of Saint Symeon the Stylite the Elder.",
+    caption: "Saint Symeon the Stylite",
   },
 ];

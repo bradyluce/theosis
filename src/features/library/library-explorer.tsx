@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { CaretRight, MagnifyingGlass, Star } from "@phosphor-icons/react";
 import { useDeferredValue, useMemo, useState } from "react";
 import type {
+  IconRef,
   Person,
   SourceRecord,
   TopicTag,
@@ -18,6 +20,7 @@ type LibraryExplorerProps = {
   works: Work[];
   topics: TopicTag[];
   sources: SourceRecord[];
+  personIcons?: Record<string, IconRef>;
 };
 
 // Compact native-select with the dark scholarly treatment.
@@ -57,6 +60,7 @@ export function LibraryExplorer({
   works,
   topics,
   sources,
+  personIcons,
 }: LibraryExplorerProps) {
   const [tab, setTab] = useState<LibraryTab>("all");
   const [query, setQuery] = useState("");
@@ -296,30 +300,45 @@ export function LibraryExplorer({
             </button>
           </div>
           <div className="-mx-4 flex gap-3 overflow-x-auto px-4 pb-1 sm:-mx-6 sm:px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {filteredPeople.slice(0, 24).map((person) => (
-              <Link
-                key={person.id}
-                href={`/library/people/${person.slug}`}
-                className="flex w-44 shrink-0 flex-col gap-3 rounded-[16px] border border-line/40 bg-surface p-4 transition-colors duration-200 hover:bg-surface-strong"
-              >
-                <div className="flex h-28 items-center justify-center rounded-[12px] border border-accent/20 bg-accent-soft font-serif text-3xl text-accent">
-                  {person.name
-                    .replace(/^(St\.|the |of )/, "")
-                    .trim()
-                    .slice(0, 1)}
-                </div>
-                <div className="space-y-1">
-                  <p className="text-[10px] uppercase tracking-[0.16em] text-ink-soft">
-                    {person.eraLabel}
-                  </p>
-                  <p className="line-clamp-2 font-serif text-base font-medium leading-tight text-ink">
-                    {person.honorific
-                      ? `${person.honorific} ${person.name.split(",")[0]}`
-                      : person.name.split(",")[0]}
-                  </p>
-                </div>
-              </Link>
-            ))}
+            {filteredPeople.slice(0, 24).map((person) => {
+              const icon = personIcons?.[person.id];
+              return (
+                <Link
+                  key={person.id}
+                  href={`/library/people/${person.slug}`}
+                  className="flex w-44 shrink-0 flex-col gap-3 rounded-[16px] border border-line/40 bg-surface p-4 transition-colors duration-200 hover:bg-surface-strong"
+                >
+                  {icon ? (
+                    <div className="relative h-28 overflow-hidden rounded-[12px] border border-line/60 bg-surface">
+                      <Image
+                        src={icon.src}
+                        alt={icon.alt}
+                        width={icon.width}
+                        height={icon.height}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-28 items-center justify-center rounded-[12px] border border-accent/20 bg-accent-soft font-serif text-3xl text-accent">
+                      {person.name
+                        .replace(/^(St\.|the |of )/, "")
+                        .trim()
+                        .slice(0, 1)}
+                    </div>
+                  )}
+                  <div className="space-y-1">
+                    <p className="text-[10px] uppercase tracking-[0.16em] text-ink-soft">
+                      {person.eraLabel}
+                    </p>
+                    <p className="line-clamp-2 font-serif text-base font-medium leading-tight text-ink">
+                      {person.honorific
+                        ? `${person.honorific} ${person.name.split(",")[0]}`
+                        : person.name.split(",")[0]}
+                    </p>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
       ) : null}
