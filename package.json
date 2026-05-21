@@ -13,6 +13,7 @@
     "ingest:icons": "tsx scripts/ingest/icons/fetch-wikimedia.ts",
     "ingest:icons:auto-curate": "tsx scripts/ingest/icons/auto-curate.ts",
     "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
+    "normalize:commentary": "tsx scripts/normalize/normalize-commentary.ts",
     "test:calendar": "tsx scripts/test/calendar.ts"
   },
   "dependencies": {
