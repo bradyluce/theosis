@@ -114,7 +114,13 @@ async function imageInfo(title: string): Promise<ImageInfo | null> {
 
 function isAcceptable(license: string): boolean {
   const lower = license.toLowerCase();
-  return lower.includes("public domain") || lower === "pd" || lower.includes("cc0");
+  return (
+    lower.includes("public domain") ||
+    lower === "pd" ||
+    lower.includes("cc0") ||
+    lower.includes("cc by") ||
+    lower.includes("cc-by")
+  );
 }
 
 // Tokens to ignore when checking that the saint's name appears in a result

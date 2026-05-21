@@ -128,7 +128,7 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
     "id": "icon-apostle-simon-zealot",
     "personId": "apostle-simon-zealot",
-    "wikimediaTitle": "File:Cretan Icon of the Apostle Simon.jpg",
+    "wikimediaTitle": "File:18th-century icons of the Apostles Simon and John.jpg",
     "alt": "Orthodox icon of Simon the Zealot.",
     "caption": "Simon the Zealot"
   },
@@ -156,7 +156,7 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
     "id": "icon-archangel-michael",
     "personId": "archangel-michael",
-    "wikimediaTitle": "File:Unknown artist - Icon with Archangel Michael - 855 - Blackburn Museum and Art Gallery.jpg",
+    "wikimediaTitle": "File:Icon of Archangel Michael in Cathedral in the name of Archangel Michael.jpg",
     "alt": "Orthodox icon of Michael the Archangel.",
     "caption": "Michael the Archangel"
   },
@@ -170,7 +170,7 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
     "id": "icon-athanasius-the-great",
     "personId": "athanasius-the-great",
-    "wikimediaTitle": "File:Saints George, Demetrius, Pantaleon, Theodores, Anthony Icon from Saint Athanasius Church in Thessaloniki 14-15 Century.jpg",
+    "wikimediaTitle": "File:Saints Irenaeus of Lyons, Ambrose of Milan, Athanasius the Great, Martin the Merciful, Germanus, Gaudentius and Randoald - Orthodox Icon.jpg",
     "alt": "Orthodox icon of Athanasius the Great.",
     "caption": "Athanasius the Great"
   },
@@ -180,6 +180,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:060 Saint John Damaskinos with Saint Juliana and Saint Barbara Icon from Saint Paraskevi Church in Langadas.jpg",
     "alt": "Orthodox icon of Barbara the Great-martyr.",
     "caption": "Barbara the Great-martyr"
+  },
+  {
+    "id": "icon-basil-the-great",
+    "personId": "basil-the-great",
+    "wikimediaTitle": "File:Iconostasis Ulic Krive detail4 Saint Basil the Great pict taken in 2001.jpg",
+    "alt": "Orthodox icon of Basil the Great.",
+    "caption": "Basil the Great"
   },
   {
     "id": "icon-boris-and-gleb",
@@ -194,6 +201,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:07 Saint Christopher and Saint Tryphon Icon in Assumption of Mary Church in Agios Vasileios.jpg",
     "alt": "Orthodox icon of Christopher.",
     "caption": "Christopher"
+  },
+  {
+    "id": "icon-cyril-equal-to-apostles",
+    "personId": "cyril-equal-to-apostles",
+    "wikimediaTitle": "File:Bulgarian Order of St. St. Apostles Cyril and Methodius - icon.png",
+    "alt": "Orthodox icon of Cyril, Equal-to-the-Apostles.",
+    "caption": "Cyril, Equal-to-the-Apostles"
   },
   {
     "id": "icon-cyril-of-alexandria",
@@ -224,6 +238,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Demetrius the Myrrh-streamer"
   },
   {
+    "id": "icon-elizabeth-mother-of-forerunner",
+    "personId": "elizabeth-mother-of-forerunner",
+    "wikimediaTitle": "File:Clay glaze icons from Nicomedia (10-11, GIM) by shakko.jpg",
+    "alt": "Orthodox icon of Elizabeth, Mother of the Forerunner.",
+    "caption": "Elizabeth, Mother of the Forerunner"
+  },
+  {
     "id": "icon-eusebius-caesarea",
     "personId": "eusebius-caesarea",
     "wikimediaTitle": "File:Eusebius of Caesarea Armenian Gospel Icon.png",
@@ -252,11 +273,25 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "George the Great-martyr"
   },
   {
+    "id": "icon-gregory-of-nyssa",
+    "personId": "gregory-of-nyssa",
+    "wikimediaTitle": "File:St. Gregory Emroidered Icon.jpg",
+    "alt": "Orthodox icon of Gregory of Nyssa.",
+    "caption": "Gregory of Nyssa"
+  },
+  {
     "id": "icon-gregory-palamas",
     "personId": "gregory-palamas",
     "wikimediaTitle": "File:015 Saint Gregory Palamas Icon from Saint Paraskevi Church in Langadas.jpg",
     "alt": "Orthodox icon of Gregory Palamas.",
     "caption": "Gregory Palamas"
+  },
+  {
+    "id": "icon-gregory-the-great",
+    "personId": "gregory-the-great",
+    "wikimediaTitle": "File:Old Saint Mary's Church (Cincinnati, Ohio) - St. Gregory the Great icon.jpg",
+    "alt": "Orthodox icon of Gregory the Great.",
+    "caption": "Gregory the Great"
   },
   {
     "id": "icon-gregory-the-theologian",
@@ -280,6 +315,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Hilarion the Great"
   },
   {
+    "id": "icon-hilary-poitiers",
+    "personId": "hilary-poitiers",
+    "wikimediaTitle": "File:Saints Barnabas, Protasius and Marius of Lausanne, Fridolin of Säckingen, Hilary of Poitiers, Sigisbert and Placidus - Orthodox Icon.jpg",
+    "alt": "Orthodox icon of Hilary of Poitiers.",
+    "caption": "Hilary of Poitiers"
+  },
+  {
     "id": "icon-jerome",
     "personId": "jerome",
     "wikimediaTitle": "File:Beza's Icones, contemporary portraits of reformers of religion and letters - Jerome of Prague on Page 69.jpg",
@@ -289,7 +331,7 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
     "id": "icon-joachim-and-anna",
     "personId": "joachim-and-anna",
-    "wikimediaTitle": "File:Russian School - Icon with Scenes from the Life of the Virgin Mary - FA001100 - Brighton Museum ^ Art Gallery.jpg",
+    "wikimediaTitle": "File:Firenze Palazzo Pitti Interno Museum of Russian Icons 16.jpg",
     "alt": "Orthodox icon of Joachim and Anna, the Holy God-bearing Ancestors.",
     "caption": "Joachim and Anna, the Holy God-bearing Ancestors"
   },
@@ -301,11 +343,39 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "John of Damascus"
   },
   {
+    "id": "icon-joseph-the-all-comely",
+    "personId": "joseph-the-all-comely",
+    "wikimediaTitle": "File:Chiesa Santa Maria Assunta (icons)19.png",
+    "alt": "Orthodox icon of Joseph the All-Comely, Patriarch.",
+    "caption": "Joseph the All-Comely, Patriarch"
+  },
+  {
+    "id": "icon-joseph-the-betrothed",
+    "personId": "joseph-the-betrothed",
+    "wikimediaTitle": "File:Chiesa Santa Maria Assunta (icons)19.png",
+    "alt": "Orthodox icon of Joseph the Betrothed.",
+    "caption": "Joseph the Betrothed"
+  },
+  {
     "id": "icon-justin-the-philosopher",
     "personId": "justin-the-philosopher",
     "wikimediaTitle": "File:Justin Martir in iconic Stroganoff face of the original.jpg",
     "alt": "Orthodox icon of Justin the Philosopher.",
     "caption": "Justin the Philosopher"
+  },
+  {
+    "id": "icon-lazar-of-serbia",
+    "personId": "lazar-of-serbia",
+    "wikimediaTitle": "File:Holy Prince Lazar the Great Martyr fresco in Canada (photo by Vujcic).jpg",
+    "alt": "Orthodox icon of Great Prince Lazar of Serbia.",
+    "caption": "Great Prince Lazar of Serbia"
+  },
+  {
+    "id": "icon-leo-the-great",
+    "personId": "leo-the-great",
+    "wikimediaTitle": "File:Famous Eastern and Oriental Orthodox Christians Mosaic.jpg",
+    "alt": "Orthodox icon of Leo the Great.",
+    "caption": "Leo the Great"
   },
   {
     "id": "icon-macarius-the-egyptian",
@@ -350,11 +420,32 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Mercurius"
   },
   {
+    "id": "icon-martyr-sebastian",
+    "personId": "martyr-sebastian",
+    "wikimediaTitle": "File:Seattle - Our Lady of the Lake - interior 41 - icon of St. Sebastian.jpg",
+    "alt": "Orthodox icon of Sebastian of Rome.",
+    "caption": "Sebastian of Rome"
+  },
+  {
     "id": "icon-mary-of-egypt",
     "personId": "mary-of-egypt",
     "wikimediaTitle": "File:Icon of Mary of Egypt (Mstera, 19th c.).jpg",
     "alt": "Orthodox icon of Mary of Egypt.",
     "caption": "Mary of Egypt"
+  },
+  {
+    "id": "icon-maximus-the-confessor",
+    "personId": "maximus-the-confessor",
+    "wikimediaTitle": "File:Saints Zosimas, Mary of Egypt, Maximus the Confessor, Macarius of Egypt, and Macarius of Alexandria. Icon, 17th century. Pantocrator. Mount Athos..jpg",
+    "alt": "Orthodox icon of Maximus the Confessor.",
+    "caption": "Maximus the Confessor"
+  },
+  {
+    "id": "icon-methodius-equal-to-apostles",
+    "personId": "methodius-equal-to-apostles",
+    "wikimediaTitle": "File:Bulgarian Order of St. St. Apostles Cyril and Methodius - icon.png",
+    "alt": "Orthodox icon of Methodius, Equal-to-the-Apostles.",
+    "caption": "Methodius, Equal-to-the-Apostles"
   },
   {
     "id": "icon-nektarios-of-aegina",
@@ -371,9 +462,16 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Nicholas the Wonderworker"
   },
   {
+    "id": "icon-pachomius-the-great",
+    "personId": "pachomius-the-great",
+    "wikimediaTitle": "File:Blaj Iconostasis Saint Pachomius.jpg",
+    "alt": "Orthodox icon of Pachomius the Great.",
+    "caption": "Pachomius the Great"
+  },
+  {
     "id": "icon-paraskeva-friday",
     "personId": "paraskeva-friday",
-    "wikimediaTitle": "File:St Paraskeva Pezovo 1898 Icon Yosif Radev.jpg",
+    "wikimediaTitle": "File:Icon of Paraskeva Pyatnitsa 2012 Artmuseum Karelia.webm",
     "alt": "Orthodox icon of Paraskeva.",
     "caption": "Paraskeva"
   },
@@ -392,6 +490,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Philip the Confessor, Metropolitan of Moscow"
   },
   {
+    "id": "icon-polycarp-of-smyrna",
+    "personId": "polycarp-of-smyrna",
+    "wikimediaTitle": "File:Izmir St Polycarp Church Icon Miraculously Extinguishing Smyrna Fire.JPG",
+    "alt": "Orthodox icon of Polycarp of Smyrna.",
+    "caption": "Polycarp of Smyrna"
+  },
+  {
     "id": "icon-prophet-daniel",
     "personId": "prophet-daniel",
     "wikimediaTitle": "File:Icon of the Prophet Daniel and the Three Holy Youths.jpg",
@@ -401,7 +506,7 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
     "id": "icon-prophet-david-king",
     "personId": "prophet-david-king",
-    "wikimediaTitle": "File:Amgueddfa Cymru - Braslun ar gyfer mosaig Dewi Sant - Sketch for the St. David mosaic - 137895.jpeg",
+    "wikimediaTitle": "File:Prophet and King David (Orthodox Christian icon).png",
     "alt": "Orthodox icon of David the King and Prophet.",
     "caption": "David the King and Prophet"
   },
@@ -448,6 +553,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Stephen the Protomartyr and Archdeacon"
   },
   {
+    "id": "icon-royal-martyrs-of-russia",
+    "personId": "royal-martyrs-of-russia",
+    "wikimediaTitle": "File:Romanov Family Holy Royal Passion-Bearers and Martyrs Icon.jpg",
+    "alt": "Orthodox icon of Royal Martyrs of Russia.",
+    "caption": "Royal Martyrs of Russia"
+  },
+  {
     "id": "icon-sabbas-the-sanctified",
     "personId": "sabbas-the-sanctified",
     "wikimediaTitle": "File:065 Saint Stylianos and Saint Sabbas Icon from Saint Paraskevi Church in Langadas.jpg",
@@ -460,6 +572,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Saint Sava, fresco from Mileševa.jpg",
     "alt": "Orthodox icon of Sava, First Archbishop of Serbia.",
     "caption": "Sava, First Archbishop of Serbia"
+  },
+  {
+    "id": "icon-seraphim-of-sarov",
+    "personId": "seraphim-of-sarov",
+    "wikimediaTitle": "File:Icon of Seraphim of Sarov - interior of Metropolitan Orthodox Cathedral of St. Mary Magdalene in Warsaw.jpg",
+    "alt": "Orthodox icon of Seraphim of Sarov.",
+    "caption": "Seraphim of Sarov"
   },
   {
     "id": "icon-sergius-of-radonezh",
@@ -476,11 +595,25 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Silouan the Athonite"
   },
   {
+    "id": "icon-simeon-the-god-receiver",
+    "personId": "simeon-the-god-receiver",
+    "wikimediaTitle": "File:Russia, icona col profeta simeone, 1650 ca.jpg",
+    "alt": "Orthodox icon of Simeon the God-Receiver.",
+    "caption": "Simeon the God-Receiver"
+  },
+  {
     "id": "icon-sophia-and-three-daughters",
     "personId": "sophia-and-three-daughters",
     "wikimediaTitle": "File:Icon of Sophia, and her three daughters.jpg",
     "alt": "Orthodox icon of Sophia and her Daughters Faith, Hope, and Love.",
     "caption": "Sophia and her Daughters Faith, Hope, and Love"
+  },
+  {
+    "id": "icon-spyridon-of-trimythous",
+    "personId": "spyridon-of-trimythous",
+    "wikimediaTitle": "File:Icon of the Mother of God Pantanassa with Saint Nicholas and Saint Spyridon in St Nicholas Church Lutsk.webp",
+    "alt": "Orthodox icon of Spyridon the Wonderworker.",
+    "caption": "Spyridon the Wonderworker"
   },
   {
     "id": "icon-symeon-the-new-theologian",

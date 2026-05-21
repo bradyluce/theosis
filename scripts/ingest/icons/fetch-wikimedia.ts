@@ -70,7 +70,11 @@ function classifyLicense(extmeta: Record<string, { value: string }> | undefined)
   if (normalized.includes("cc0")) {
     return { license: "cc0", shortName: shortName || "CC0" };
   }
-  if (normalized.includes("cc by") && !normalized.includes("sa")) {
+  // CC-BY-SA must be checked before CC-BY since the SA suffix is more specific.
+  if (normalized.includes("cc by-sa") || normalized.includes("cc-by-sa")) {
+    return { license: "cc-by-sa", shortName: shortName || "CC BY-SA" };
+  }
+  if (normalized.includes("cc by")) {
     return { license: "cc-by", shortName: shortName || "CC BY" };
   }
   return { license: null, shortName };
@@ -86,7 +90,9 @@ function attributionFor(
       ? "Public domain"
       : license === "cc0"
         ? "CC0"
-        : shortName;
+        : license === "cc-by-sa"
+          ? shortName || "CC BY-SA"
+          : shortName;
   const artistClean = cleanArtist(artist);
   if (artistClean) return `${lead}. ${artistClean}. Via Wikimedia Commons.`;
   return `${lead}. Via Wikimedia Commons.`;

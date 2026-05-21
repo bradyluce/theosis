@@ -96,9 +96,10 @@ export type TopicTag = {
 // content/normalized/icons/catalog.json and referenced by id from Person,
 // DailyCommemoration, and DailyCommemorationItem. Files live under
 // content/normalized/icons/files/ and are served as static assets.
-// Editorial policy: only public-domain or CC0 sources — never CC-BY-SA prose
-// or images carrying ShareAlike obligations on derivatives.
-export type IconLicense = "public-domain" | "cc0" | "cc-by";
+// Editorial policy: public-domain, CC0, CC-BY, and CC-BY-SA only. CC-BY-SA
+// is acceptable for displayed image assets (ShareAlike obligations apply to
+// derivatives, not to inline display) but never for ingested editorial prose.
+export type IconLicense = "public-domain" | "cc0" | "cc-by" | "cc-by-sa";
 
 export type IconRef = {
   id: string;
