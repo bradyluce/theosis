@@ -10,6 +10,22 @@ import path from "node:path";
 import { iconSources, type IconSource } from "./sources";
 import type { IconRef, IconLicense } from "../../../src/domain/content/types";
 
+// Optional: auto-curated sources from auto-curate.ts. Loaded dynamically so
+// the file can be absent (script falls back to hand-curated sources only).
+async function loadAutoSources(): Promise<IconSource[]> {
+  const autoPath = path.join(process.cwd(), "scripts/ingest/icons/sources-auto.ts");
+  if (!fs.existsSync(autoPath)) return [];
+  try {
+    const mod = (await import("./sources-auto.ts")) as {
+      iconSourcesAuto?: IconSource[];
+    };
+    return mod.iconSourcesAuto ?? [];
+  } catch (err) {
+    console.warn("[fetch] could not load sources-auto.ts:", err);
+    return [];
+  }
+}
+
 const REPO_ROOT = process.cwd();
 const CATALOG_PATH = path.join(REPO_ROOT, "content/normalized/icons/catalog.json");
 const FILES_DIR = path.join(REPO_ROOT, "public/icons");
@@ -236,11 +252,18 @@ async function processSource(source: IconSource): Promise<ProcessResult> {
 async function main() {
   const catalog = loadCatalog();
   const byId = new Map<string, IconRef>(catalog.icons.map((i) => [i.id, i]));
+  const autoSources = await loadAutoSources();
+  // Hand-curated first so they take precedence over any auto entry with the
+  // same id. (Shouldn't collide in practice, but be defensive.)
+  const allSources = [...iconSources, ...autoSources];
+  console.log(
+    `Fetching ${allSources.length} sources (${iconSources.length} manual, ${autoSources.length} auto)...\n`,
+  );
 
   let succeeded = 0;
   let failed = 0;
 
-  for (const source of iconSources) {
+  for (const source of allSources) {
     process.stdout.write(`  ${source.id} ... `);
     const result = await processSource(source);
     if (result.ok) {

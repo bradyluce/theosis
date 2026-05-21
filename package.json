@@ -11,6 +11,7 @@
     "ingest:bibles": "tsx scripts/ingest/ingest.ts",
     "ingest:commentary": "tsx scripts/ingest/commentary/ingest-commentary.ts",
     "ingest:icons": "tsx scripts/ingest/icons/fetch-wikimedia.ts",
+    "ingest:icons:auto-curate": "tsx scripts/ingest/icons/auto-curate.ts",
     "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
     "test:calendar": "tsx scripts/test/calendar.ts"
   },

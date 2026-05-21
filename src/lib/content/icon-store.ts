@@ -52,9 +52,10 @@ export function getAllIcons(): IconRef[] {
   return index?.all ?? [];
 }
 
-// Person id → icon id. Hard-coded against the curated Phase 1 catalog; extend
-// as new saints get icons. Keeps the mapping in one place so we don't have to
-// touch every Person seed record when adding icons.
+// Hard-coded person id → icon id overrides for the original manually-curated
+// icons (which were named "icon-st-*" before we adopted the auto-binding
+// convention). Auto-curated icons use the naming convention "icon-{personId}"
+// and don't need an entry here — see the fallback in getIconForPerson below.
 const PERSON_ICON_BINDINGS: Record<string, string> = {
   "anthony-the-great": "icon-st-anthony-the-great",
   "basil-the-great": "icon-st-basil-the-great",
@@ -89,7 +90,11 @@ export function getIconForPerson(person: Person | undefined): IconRef | undefine
   if (!person) return undefined;
   if (person.iconId) return getIconById(person.iconId);
   const bound = PERSON_ICON_BINDINGS[person.id];
-  return bound ? getIconById(bound) : undefined;
+  if (bound) return getIconById(bound);
+  // Convention fallback: auto-curated icons use id "icon-{person.id}". This
+  // lets the auto-curator land hundreds of saint icons without touching this
+  // file — anything in the catalog matching the convention is wired up.
+  return getIconById(`icon-${person.id}`);
 }
 
 export function getIconForFeastTitle(title: string | undefined): IconRef | undefined {
