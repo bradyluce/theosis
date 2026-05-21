@@ -42,6 +42,7 @@ import type {
   Work,
   WorkChapter,
 } from "../../src/domain/content/types";
+import { verseLocationKey } from "../../src/lib/content/reference";
 
 type CommentaryBundleV1 = {
   version: "1";
@@ -79,7 +80,15 @@ type LibraryCatalog = {
   works: Work[];
   sources: SourceRecord[];
   index: {
-    byWork: Record<string, { chapterCount: number; chapterIds: string[] }>;
+    // `chapterIds` and `orders` are parallel arrays, both sorted ascending by
+    // order. `orders` is what the loader needs to find files (filenames use
+    // <order>.json); orders aren't always 1..N — the ecumenical-council
+    // works pin their single chapter at the council's traditional ordinal
+    // (e.g. Chalcedon at order=4) which leaves gaps.
+    byWork: Record<
+      string,
+      { chapterCount: number; chapterIds: string[]; orders: number[] }
+    >;
   };
 };
 
@@ -104,15 +113,6 @@ const ROOT = process.cwd();
 const GENERATED_DIR = join(ROOT, "content", "generated", "commentary");
 const COMMENTARY_DIR = join(ROOT, "content", "normalized", "commentary");
 const LIBRARY_DIR = join(ROOT, "content", "normalized", "library");
-
-// Strip the "<translationId>:" prefix from a targetVerseId.
-// Duplicates verseLocationKey from src/lib/content/commentary-loader.ts.
-// Phase 1 of the normalize migration keeps src/ untouched; Phase 2 will lift
-// this helper into src/lib/content/reference.ts and import it from both sides.
-function verseLocationKey(targetVerseId: string): string {
-  const colonIndex = targetVerseId.indexOf(":");
-  return colonIndex === -1 ? targetVerseId : targetVerseId.slice(colonIndex + 1);
-}
 
 function readJsonFile<T>(absolutePath: string): T {
   return JSON.parse(readFileSync(absolutePath, "utf8")) as T;
@@ -318,7 +318,10 @@ function main() {
   }
 
   // Write library/by-work files.
-  const byWorkIndex: Record<string, { chapterCount: number; chapterIds: string[] }> = {};
+  const byWorkIndex: Record<
+    string,
+    { chapterCount: number; chapterIds: string[]; orders: number[] }
+  > = {};
   let workFilesWritten = 0;
   for (const [workId, byOrder] of chaptersByWork) {
     const ordered = [...byOrder.values()].sort((a, b) => a.order - b.order);
@@ -332,6 +335,7 @@ function main() {
     byWorkIndex[workId] = {
       chapterCount: ordered.length,
       chapterIds: ordered.map((c) => c.id),
+      orders: ordered.map((c) => c.order),
     };
   }
 

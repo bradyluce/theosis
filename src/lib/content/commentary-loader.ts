@@ -9,6 +9,7 @@ import type {
   Work,
   WorkChapter,
 } from "@/domain/content/types";
+import { verseLocationKey } from "@/lib/content/reference";
 import { toEntryChapterNumbers } from "@/lib/content/psalter-numbering";
 import {
   commentaryEntries as seedCommentary,
@@ -17,29 +18,301 @@ import {
   works as seedWorks,
 } from "@/lib/content/seed/library";
 
-const GENERATED_DIR = path.join(process.cwd(), "content/generated/commentary");
+// Reads commentary content from the per-file normalized trees emitted by
+// scripts/normalize/normalize-commentary.ts:
+//
+//   content/normalized/commentary/
+//     catalog.json                                # people/works/sources + { byVerse, byChapter }
+//     by-verse/<book>/<chapter>/<verse>.json
+//     by-chapter/<book>/<chapter>.json
+//
+//   content/normalized/library/
+//     catalog.json                                # people/works/sources + { byWork }
+//     by-work/<workId>/<order>.json
+//
+// Catalogs are read eagerly once and cached for the process lifetime; per-file
+// content is lazy-loaded on demand and cached per key. The seed library
+// (src/lib/content/seed/library.ts) is still merged in, with seed winning on
+// id conflicts so hand-authored Person/Work/Source records stay authoritative.
+// Catalogs duplicate the people/works/sources arrays so each consumer (verse
+// reader vs library reader) is self-contained; the loader picks the commentary
+// catalog as primary because it's the one the bible reader always reads.
 
-type CommentaryBundleV1 = {
+const COMMENTARY_DIR = path.join(process.cwd(), "content/normalized/commentary");
+const LIBRARY_DIR = path.join(process.cwd(), "content/normalized/library");
+
+// --- Catalog + file shapes -------------------------------------------------
+
+type CommentaryCatalog = {
   version: "1";
-  person: Person;
-  work: Work;
-  source: SourceRecord;
-  entries: CommentaryEntry[];
-};
-
-type CommentaryBundleV2 = {
-  version: "2";
   people: Person[];
   works: Work[];
   sources: SourceRecord[];
-  entries: CommentaryEntry[];
-  // Optional long-form reading content for treatises and homilies that ship
-  // as full prose alongside (or instead of) verse-keyed commentary entries.
-  chapters?: WorkChapter[];
+  index: {
+    byVerse: Record<string, Record<string, number[]>>;
+    byChapter: Record<string, number[]>;
+  };
 };
 
-type CommentaryBundle = CommentaryBundleV1 | CommentaryBundleV2;
+type LibraryCatalog = {
+  version: "1";
+  people: Person[];
+  works: Work[];
+  sources: SourceRecord[];
+  index: {
+    byWork: Record<
+      string,
+      { chapterCount: number; chapterIds: string[]; orders: number[] }
+    >;
+  };
+};
 
+type ByVerseFile = {
+  bookSlug: string;
+  chapterNumber: number;
+  verseNumber: number;
+  entries: CommentaryEntry[];
+};
+
+type ByChapterFile = {
+  bookSlug: string;
+  chapterNumber: number;
+  entries: CommentaryEntry[];
+};
+
+type ByWorkFile = {
+  chapter: WorkChapter;
+};
+
+// --- Cached catalog reads --------------------------------------------------
+
+let commentaryCatalogCache: CommentaryCatalog | null | undefined = undefined;
+let libraryCatalogCache: LibraryCatalog | null | undefined = undefined;
+
+function loadCommentaryCatalog(): CommentaryCatalog | null {
+  if (commentaryCatalogCache !== undefined) return commentaryCatalogCache;
+  const filePath = path.join(COMMENTARY_DIR, "catalog.json");
+  if (!fs.existsSync(filePath)) {
+    commentaryCatalogCache = null;
+    return commentaryCatalogCache;
+  }
+  try {
+    commentaryCatalogCache = JSON.parse(
+      fs.readFileSync(filePath, "utf8"),
+    ) as CommentaryCatalog;
+  } catch (error) {
+    console.warn("[commentary-loader] failed to read commentary catalog:", error);
+    commentaryCatalogCache = null;
+  }
+  return commentaryCatalogCache;
+}
+
+function loadLibraryCatalog(): LibraryCatalog | null {
+  if (libraryCatalogCache !== undefined) return libraryCatalogCache;
+  const filePath = path.join(LIBRARY_DIR, "catalog.json");
+  if (!fs.existsSync(filePath)) {
+    libraryCatalogCache = null;
+    return libraryCatalogCache;
+  }
+  try {
+    libraryCatalogCache = JSON.parse(
+      fs.readFileSync(filePath, "utf8"),
+    ) as LibraryCatalog;
+  } catch (error) {
+    console.warn("[commentary-loader] failed to read library catalog:", error);
+    libraryCatalogCache = null;
+  }
+  return libraryCatalogCache;
+}
+
+// Pick whichever catalog has the metadata first. They duplicate identical
+// people/works/sources arrays, so either is authoritative; this prefers the
+// commentary catalog so a degraded environment that has commentary/ but not
+// library/ still surfaces the library metadata for verse-reader pages.
+function getNormalizedPeople(): Person[] {
+  return loadCommentaryCatalog()?.people ?? loadLibraryCatalog()?.people ?? [];
+}
+
+function getNormalizedWorks(): Work[] {
+  return loadCommentaryCatalog()?.works ?? loadLibraryCatalog()?.works ?? [];
+}
+
+function getNormalizedSources(): SourceRecord[] {
+  return loadCommentaryCatalog()?.sources ?? loadLibraryCatalog()?.sources ?? [];
+}
+
+// --- Lazy per-file caches --------------------------------------------------
+
+// All caches hold the same sentinel — an empty array means "we tried, no
+// file" — so a single membership check tells us not to re-touch the disk.
+
+const verseFileCache = new Map<string, CommentaryEntry[]>();
+const chapterFileCache = new Map<string, CommentaryEntry[]>();
+const workChaptersCache = new Map<string, WorkChapter[]>();
+
+function loadVerseEntries(
+  bookSlug: string,
+  chapterNumber: number,
+  verseNumber: number,
+): CommentaryEntry[] {
+  const key = `${bookSlug}.${chapterNumber}.${verseNumber}`;
+  const cached = verseFileCache.get(key);
+  if (cached) return cached;
+
+  const filePath = path.join(
+    COMMENTARY_DIR,
+    "by-verse",
+    bookSlug,
+    String(chapterNumber),
+    `${verseNumber}.json`,
+  );
+  if (!fs.existsSync(filePath)) {
+    verseFileCache.set(key, []);
+    return [];
+  }
+  try {
+    const file = JSON.parse(fs.readFileSync(filePath, "utf8")) as ByVerseFile;
+    verseFileCache.set(key, file.entries);
+    return file.entries;
+  } catch (error) {
+    console.warn(`[commentary-loader] failed to read ${filePath}:`, error);
+    verseFileCache.set(key, []);
+    return [];
+  }
+}
+
+function loadChapterLevelEntries(
+  bookSlug: string,
+  chapterNumber: number,
+): CommentaryEntry[] {
+  const key = `${bookSlug}.${chapterNumber}`;
+  const cached = chapterFileCache.get(key);
+  if (cached) return cached;
+
+  const filePath = path.join(
+    COMMENTARY_DIR,
+    "by-chapter",
+    bookSlug,
+    `${chapterNumber}.json`,
+  );
+  if (!fs.existsSync(filePath)) {
+    chapterFileCache.set(key, []);
+    return [];
+  }
+  try {
+    const file = JSON.parse(fs.readFileSync(filePath, "utf8")) as ByChapterFile;
+    chapterFileCache.set(key, file.entries);
+    return file.entries;
+  } catch (error) {
+    console.warn(`[commentary-loader] failed to read ${filePath}:`, error);
+    chapterFileCache.set(key, []);
+    return [];
+  }
+}
+
+function loadWorkChaptersFromDisk(workId: string): WorkChapter[] {
+  const cached = workChaptersCache.get(workId);
+  if (cached) return cached;
+
+  const catalog = loadLibraryCatalog();
+  const entry = catalog?.index.byWork[workId];
+  if (!entry || entry.orders.length === 0) {
+    workChaptersCache.set(workId, []);
+    return [];
+  }
+
+  const chapters: WorkChapter[] = [];
+  for (const order of entry.orders) {
+    const filePath = path.join(LIBRARY_DIR, "by-work", workId, `${order}.json`);
+    try {
+      const file = JSON.parse(fs.readFileSync(filePath, "utf8")) as ByWorkFile;
+      chapters.push(file.chapter);
+    } catch (error) {
+      console.warn(`[commentary-loader] failed to read ${filePath}:`, error);
+    }
+  }
+  chapters.sort((left, right) => left.order - right.order);
+  workChaptersCache.set(workId, chapters);
+  return chapters;
+}
+
+// --- workId → entries index (option c) -------------------------------------
+//
+// `getCommentaryEntriesForWork` needs every normalized entry that carries a
+// given workId; the catalog indexes by location, not by workId. We build the
+// inverse index on first call by reading every by-verse / by-chapter file the
+// catalog references, then cache for the rest of the process lifetime. Cost
+// is one full scan (~4,623 files, ~50 MB) the first time a library work page
+// is rendered; subsequent calls are O(1). Verse-reader pages never trigger
+// this — they pull only their own (book, chapter) files.
+
+let workIdEntriesCache: Map<string, CommentaryEntry[]> | undefined = undefined;
+
+function getNormalizedEntriesByWorkId(): Map<string, CommentaryEntry[]> {
+  if (workIdEntriesCache !== undefined) return workIdEntriesCache;
+
+  const map = new Map<string, CommentaryEntry[]>();
+  const catalog = loadCommentaryCatalog();
+  if (!catalog) {
+    workIdEntriesCache = map;
+    return map;
+  }
+
+  const push = (workId: string, entry: CommentaryEntry) => {
+    let bucket = map.get(workId);
+    if (!bucket) {
+      bucket = [];
+      map.set(workId, bucket);
+    }
+    bucket.push(entry);
+  };
+
+  for (const [bookSlug, chapters] of Object.entries(catalog.index.byVerse)) {
+    for (const [chapterStr, verses] of Object.entries(chapters)) {
+      const chapterNumber = Number.parseInt(chapterStr, 10);
+      if (Number.isNaN(chapterNumber)) continue;
+      for (const verseNumber of verses) {
+        for (const entry of loadVerseEntries(bookSlug, chapterNumber, verseNumber)) {
+          push(entry.workId, entry);
+        }
+      }
+    }
+  }
+  for (const [bookSlug, chapters] of Object.entries(catalog.index.byChapter)) {
+    for (const chapterNumber of chapters) {
+      for (const entry of loadChapterLevelEntries(bookSlug, chapterNumber)) {
+        push(entry.workId, entry);
+      }
+    }
+  }
+
+  workIdEntriesCache = map;
+  return map;
+}
+
+// --- Public surface --------------------------------------------------------
+//
+// All 11 historical exports preserved in shape and behavior. The only API
+// change is that some calls that were previously O(all bundles) on first hit
+// are now O(small) — verse-reader queries touch a couple of files, work-page
+// queries trigger the one-time workId-index build.
+
+export function getChaptersForWork(workId: string): WorkChapter[] {
+  return loadWorkChaptersFromDisk(workId);
+}
+
+export function getPersonByIdFromAll(personId: string): Person | undefined {
+  return getNormalizedPeople().find((person) => person.id === personId);
+}
+
+export function getSourceByIdFromAll(sourceId: string): SourceRecord | undefined {
+  return getNormalizedSources().find((source) => source.id === sourceId);
+}
+
+// Aggregated view of every normalized entry + chapter + catalog record. Kept
+// for backwards compat with anything that wanted "give me everything"; not
+// called anywhere in the app today. Implemented by triggering every lazy
+// loader, which obviously defeats the lazy benefit — don't add new callers.
 type AggregatedCommentary = {
   entries: CommentaryEntry[];
   people: Person[];
@@ -48,98 +321,54 @@ type AggregatedCommentary = {
   chapters: WorkChapter[];
 };
 
-let cache: AggregatedCommentary | null | undefined = undefined;
-
-function loadAll(): AggregatedCommentary | null {
-  if (cache !== undefined) return cache;
-  if (!fs.existsSync(GENERATED_DIR)) {
-    cache = null;
-    return cache;
-  }
-  const files = fs
-    .readdirSync(GENERATED_DIR)
-    .filter((name) => name.endsWith(".json"));
-  if (files.length === 0) {
-    cache = null;
-    return cache;
-  }
+export function getGeneratedCommentary(): AggregatedCommentary | null {
+  const commentaryCatalog = loadCommentaryCatalog();
+  const libraryCatalog = loadLibraryCatalog();
+  if (!commentaryCatalog && !libraryCatalog) return null;
 
   const entries: CommentaryEntry[] = [];
-  const people: Person[] = [];
-  const works: Work[] = [];
-  const sources: SourceRecord[] = [];
-  const chapters: WorkChapter[] = [];
+  for (const list of getNormalizedEntriesByWorkId().values()) {
+    entries.push(...list);
+  }
 
-  for (const fileName of files) {
-    try {
-      const raw = fs.readFileSync(path.join(GENERATED_DIR, fileName), "utf8");
-      const bundle = JSON.parse(raw) as CommentaryBundle;
-      entries.push(...bundle.entries);
-      if (bundle.version === "1") {
-        people.push(bundle.person);
-        works.push(bundle.work);
-        sources.push(bundle.source);
-      } else {
-        people.push(...bundle.people);
-        works.push(...bundle.works);
-        sources.push(...bundle.sources);
-        if (bundle.chapters) chapters.push(...bundle.chapters);
-      }
-    } catch (error) {
-      console.warn(`[commentary-loader] failed to read ${fileName}:`, error);
+  const chapters: WorkChapter[] = [];
+  if (libraryCatalog) {
+    for (const workId of Object.keys(libraryCatalog.index.byWork)) {
+      chapters.push(...loadWorkChaptersFromDisk(workId));
     }
   }
 
-  cache = { entries, people, works, sources, chapters };
-  return cache;
-}
-
-export function getChaptersForWork(workId: string): WorkChapter[] {
-  const generated = loadAll();
-  if (!generated) return [];
-  return generated.chapters
-    .filter((chapter) => chapter.workId === workId)
-    .sort((left, right) => left.order - right.order);
-}
-
-export function getPersonByIdFromAll(personId: string): Person | undefined {
-  const generated = loadAll();
-  if (!generated) return undefined;
-  return generated.people.find((person) => person.id === personId);
-}
-
-export function getSourceByIdFromAll(sourceId: string): SourceRecord | undefined {
-  const generated = loadAll();
-  if (!generated) return undefined;
-  return generated.sources.find((source) => source.id === sourceId);
-}
-
-export function getGeneratedCommentary(): AggregatedCommentary | null {
-  return loadAll();
+  return {
+    entries,
+    people: getNormalizedPeople(),
+    works: getNormalizedWorks(),
+    sources: getNormalizedSources(),
+    chapters,
+  };
 }
 
 export type WorkCommentaryEntry = {
   entry: CommentaryEntry;
   person: Person | undefined;
   source: SourceRecord | undefined;
-  // Canonical "bookSlug.chapter.verse" parsed off the entry's targetVerseId
   bookSlug: string;
   chapterNumber: number;
   verseNumber: number;
 };
 
 export function getCommentaryEntriesForWork(workId: string): WorkCommentaryEntry[] {
-  const generated = loadAll();
-  const allEntries = generated
-    ? [...seedCommentary, ...generated.entries]
-    : [...seedCommentary];
+  const seedMatches = seedCommentary.filter((entry) => entry.workId === workId);
+  const normalizedMatches = getNormalizedEntriesByWorkId().get(workId) ?? [];
 
-  const personById = buildLookup(seedPeople, generated?.people ?? []);
-  const sourceById = buildLookup(seedSources, generated?.sources ?? []);
+  const personById = buildLookup(seedPeople, getNormalizedPeople());
+  const sourceById = buildLookup(seedSources, getNormalizedSources());
 
   // Catena entries on a verse range are emitted once per verse with IDs like
-  // "catena-mark-0001-v41", "catena-mark-0001-v42", etc. Dedupe by base ID so
-  // the work page shows each commentary once, keeping the lowest-numbered verse.
+  // "catena-mark-0001-v41", "...-v42", etc. Dedupe by base ID so the work
+  // page shows each commentary once, keeping the lowest-numbered verse (which
+  // wins because the seed-then-normalized + sort-by-chapter-then-verse below
+  // surfaces the lowest verse first).
+  const allEntries: CommentaryEntry[] = [...seedMatches, ...normalizedMatches];
   const seenBaseIds = new Set<string>();
   const result: WorkCommentaryEntry[] = [];
 
@@ -173,89 +402,59 @@ export function getCommentaryEntriesForWork(workId: string): WorkCommentaryEntry
 }
 
 export function getWorkBySlugFromAll(slug: string): Work | undefined {
-  const generated = loadAll();
   return (
-    generated?.works.find((w) => w.slug === slug) ??
-    seedWorks.find((w) => w.slug === slug)
+    seedWorks.find((w) => w.slug === slug) ??
+    getNormalizedWorks().find((w) => w.slug === slug)
   );
 }
 
-// Like getWorksForPerson in queries.ts but pulls from both seed and generated
-// bundles, so works ingested from raw corpora (Augustine NPNF, Gregory NPNF,
-// Athanasius NPNF, etc.) surface on the person's library card. Dedupes by
-// work id — seed entries win when both are present.
-// Merged people list: seed first, then any additional people declared by
-// generated commentary bundles. Used by the library browser so Fathers like
-// Augustine — who live only in their parsed-bundle Person records — surface
-// in search, filters, and the People grid.
+// Merged people list: seed first, then any additional people declared in the
+// normalized commentary catalog. Used by the library browser so Fathers who
+// only live in the parsed-bundle records still surface in search, filters,
+// and the People grid.
 export function getAllPeopleFromAll(): Person[] {
-  const generated = loadAll();
   const byId = new Map<string, Person>();
   for (const person of seedPeople) byId.set(person.id, person);
-  if (generated) {
-    for (const person of generated.people) {
-      if (!byId.has(person.id)) byId.set(person.id, person);
-    }
+  for (const person of getNormalizedPeople()) {
+    if (!byId.has(person.id)) byId.set(person.id, person);
   }
   return Array.from(byId.values());
 }
 
-// Merged works list (same dedupe rules as getAllPeopleFromAll).
 export function getAllWorksFromAll(): Work[] {
-  const generated = loadAll();
   const byId = new Map<string, Work>();
   for (const work of seedWorks) byId.set(work.id, work);
-  if (generated) {
-    for (const work of generated.works) {
-      if (!byId.has(work.id)) byId.set(work.id, work);
-    }
+  for (const work of getNormalizedWorks()) {
+    if (!byId.has(work.id)) byId.set(work.id, work);
   }
   return Array.from(byId.values());
 }
 
-// Merged sources list.
 export function getAllSourcesFromAll(): SourceRecord[] {
-  const generated = loadAll();
   const byId = new Map<string, SourceRecord>();
   for (const source of seedSources) byId.set(source.id, source);
-  if (generated) {
-    for (const source of generated.sources) {
-      if (!byId.has(source.id)) byId.set(source.id, source);
-    }
+  for (const source of getNormalizedSources()) {
+    if (!byId.has(source.id)) byId.set(source.id, source);
   }
   return Array.from(byId.values());
 }
 
 export function getPersonBySlugFromAll(slug: string): Person | undefined {
-  const generated = loadAll();
   return (
     seedPeople.find((p) => p.slug === slug) ??
-    generated?.people.find((p) => p.slug === slug)
+    getNormalizedPeople().find((p) => p.slug === slug)
   );
 }
 
 export function getWorksForPersonFromAll(personId: string): Work[] {
-  const generated = loadAll();
   const byId = new Map<string, Work>();
   for (const work of seedWorks) {
     if (work.personId === personId) byId.set(work.id, work);
   }
-  if (generated) {
-    for (const work of generated.works) {
-      if (work.personId === personId && !byId.has(work.id)) {
-        byId.set(work.id, work);
-      }
-    }
+  for (const work of getNormalizedWorks()) {
+    if (work.personId === personId && !byId.has(work.id)) byId.set(work.id, work);
   }
   return Array.from(byId.values());
-}
-
-// Extract the canonical location suffix from any verseId.
-// Verse IDs come in the form `{translationId}:{bookSlug}.{chapter}.{verse}`.
-// Two verses across translations share the same trailing location.
-export function verseLocationKey(verseId: string): string {
-  const colonIndex = verseId.indexOf(":");
-  return colonIndex === -1 ? verseId : verseId.slice(colonIndex + 1);
 }
 
 export type ChapterCommentaryView = {
@@ -264,7 +463,7 @@ export type ChapterCommentaryView = {
   relatedByLocation: Map<string, CommentaryEntry[]>;
   // Commentary targeting the chapter as a whole
   chapterLevel: CommentaryEntry[];
-  // Metadata lookups (seed + generated, merged)
+  // Metadata lookups (seed + normalized, merged)
   personById: Map<string, Person>;
   workById: Map<string, Work>;
   sourceById: Map<string, SourceRecord>;
@@ -280,30 +479,61 @@ function buildLookup<T extends { id: string }>(...sources: T[][]): Map<string, T
   return map;
 }
 
+// Given a reader's (book, chapter, scheme), enumerate the chapter numbers in
+// the entry-scheme that could match. For non-psalter books this is always
+// just [chapter]; for psalms it's the union over the three possible entry
+// schemes (undefined / MT / LXX) so we know which by-verse and by-chapter
+// files to load before applying the per-entry scheme check.
+function candidateEntryChapters(
+  bookSlug: string,
+  readerChapter: number,
+  readerScheme: PsalterScheme | undefined,
+): number[] {
+  if (bookSlug !== "psalms") return [readerChapter];
+  const set = new Set<number>();
+  for (const entryScheme of [undefined, "MT", "LXX"] as const) {
+    for (const candidate of toEntryChapterNumbers(readerChapter, readerScheme, entryScheme)) {
+      set.add(candidate);
+    }
+  }
+  return Array.from(set);
+}
+
 export function loadChapterCommentary(
   bookSlug: string,
   chapterNumber: number,
   readerPsalterScheme?: PsalterScheme,
 ): ChapterCommentaryView {
-  const generated = loadAll();
-  const allEntries = generated
-    ? [...seedCommentary, ...generated.entries]
-    : [...seedCommentary];
-
-  const personById = buildLookup(seedPeople, generated?.people ?? []);
-  const workById = buildLookup(seedWorks, generated?.works ?? []);
-  const sourceById = buildLookup(seedSources, generated?.sources ?? []);
+  const personById = buildLookup(seedPeople, getNormalizedPeople());
+  const workById = buildLookup(seedWorks, getNormalizedWorks());
+  const sourceById = buildLookup(seedSources, getNormalizedSources());
 
   const directByLocation = new Map<string, CommentaryEntry[]>();
   const relatedByLocation = new Map<string, CommentaryEntry[]>();
   const chapterLevel: CommentaryEntry[] = [];
 
-  // For the psalter, entries tagged with the opposite scheme need to be
-  // shifted into the reader's numbering. For all other books, scheme is
-  // irrelevant — use a single identity mapping.
   const isPsalter = bookSlug === "psalms";
+  const candidateChapters = candidateEntryChapters(bookSlug, chapterNumber, readerPsalterScheme);
 
-  for (const entry of allEntries) {
+  // Seed entries are scanned in full — they're hand-authored, small, and
+  // already in memory.
+  const entriesToCheck: CommentaryEntry[] = [...seedCommentary];
+
+  // Normalized entries: load just the files the candidate chapters reference.
+  const catalog = loadCommentaryCatalog();
+  if (catalog) {
+    for (const candidateChapter of candidateChapters) {
+      const verses = catalog.index.byVerse[bookSlug]?.[String(candidateChapter)] ?? [];
+      for (const verseNumber of verses) {
+        entriesToCheck.push(...loadVerseEntries(bookSlug, candidateChapter, verseNumber));
+      }
+      if ((catalog.index.byChapter[bookSlug] ?? []).includes(candidateChapter)) {
+        entriesToCheck.push(...loadChapterLevelEntries(bookSlug, candidateChapter));
+      }
+    }
+  }
+
+  for (const entry of entriesToCheck) {
     const entryScheme = entry.psalterScheme;
 
     if (entry.relation === "chapter") {
