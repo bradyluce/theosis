@@ -80,6 +80,56 @@ async function listCategoryFiles(category: string): Promise<SearchResult[]> {
   return (data.query?.categorymembers ?? []).map((m) => ({ title: m.title }));
 }
 
+type WikidataEntity = {
+  id: string;
+  label: string;
+  description: string;
+};
+
+async function searchWikidata(query: string): Promise<WikidataEntity[]> {
+  const url =
+    "https://www.wikidata.org/w/api.php" +
+    "?action=wbsearchentities&format=json&language=en&type=item&limit=8" +
+    "&search=" +
+    encodeURIComponent(query);
+  const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+  if (!res.ok) return [];
+  const data = (await res.json()) as {
+    search?: Array<{ id: string; label?: string; description?: string }>;
+  };
+  return (data.search ?? []).map((s) => ({
+    id: s.id,
+    label: s.label ?? "",
+    description: s.description ?? "",
+  }));
+}
+
+// Fetch a Wikidata entity's P18 (image) claim value, which is just the bare
+// Commons filename (no "File:" prefix, e.g. "Saint Anthony icon.jpg").
+async function getWikidataImage(qid: string): Promise<string | null> {
+  const url =
+    "https://www.wikidata.org/w/api.php" +
+    "?action=wbgetentities&format=json&props=claims&ids=" +
+    encodeURIComponent(qid);
+  const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+  if (!res.ok) return null;
+  const data = (await res.json()) as {
+    entities?: Record<
+      string,
+      {
+        claims?: {
+          P18?: Array<{
+            mainsnak?: { datavalue?: { value?: string } };
+          }>;
+        };
+      }
+    >;
+  };
+  const entity = data.entities?.[qid];
+  const filename = entity?.claims?.P18?.[0]?.mainsnak?.datavalue?.value;
+  return typeof filename === "string" ? filename : null;
+}
+
 async function imageInfo(title: string): Promise<ImageInfo | null> {
   const url =
     "https://commons.wikimedia.org/w/api.php" +
@@ -133,19 +183,36 @@ const NAME_STOPWORDS = new Set([
   "moscow", "kiev", "rome", "constantinople", "alexandria", "antioch",
 ]);
 
-// Heuristic for "this is actually an Orthodox icon, not a church photo".
-function looksLikeIcon(title: string): boolean {
+// Negative filter: titles that are definitely NOT the icon we want
+// (PDFs, calendar sheets, building surveys). Shared by both strict and
+// relaxed icon detection.
+function isObviouslyNotAnIcon(title: string): boolean {
   const lower = title.toLowerCase();
-  if (lower.endsWith(".pdf")) return false;
-  // Generic Menaion calendar sheets list dozens of saints — never the icon a
-  // reader is looking for. Filenames are "Menaion icon (NN c., TsAK) - Month.jpg".
-  if (/menaion icon\s*\(/i.test(lower)) return false;
+  if (lower.endsWith(".pdf") || lower.endsWith(".djvu")) return true;
+  // Generic Menaion calendar sheets list dozens of saints.
+  if (/menaion icon\s*\(/i.test(lower)) return true;
   // Architectural / HABS surveys of church buildings.
-  if (/^(interior|nave|narthex|iconostas)/i.test(lower)) return false;
-  if (lower.includes("icon")) return true;
-  if (lower.includes("fresco")) return true;
-  if (lower.includes("mosaic")) return true;
+  if (/^(interior|nave|narthex|iconostas)/i.test(lower)) return true;
   return false;
+}
+
+// Strict heuristic for free-text and category search results: title must
+// contain an icon-genre marker. Conservative because search returns lots of
+// unrelated files.
+function looksLikeIcon(title: string): boolean {
+  if (isObviouslyNotAnIcon(title)) return false;
+  const lower = title.toLowerCase();
+  return (
+    lower.includes("icon") ||
+    lower.includes("fresco") ||
+    lower.includes("mosaic")
+  );
+}
+
+// Relaxed heuristic for Wikidata P18 results: the entity's curators already
+// picked this as the canonical image, so we trust it past the obvious rejects.
+function looksLikeIconRelaxed(title: string): boolean {
+  return !isObviouslyNotAnIcon(title);
 }
 
 // Require the saint's FIRST significant name token to appear in the title.
@@ -220,6 +287,39 @@ async function findIcon(name: string): Promise<ImageInfo | null> {
       if (info && isAcceptable(info.license)) return info;
     }
     await sleep(400);
+  }
+
+  // Strategy 3: Wikidata lookup. Search Wikidata for the saint by name,
+  // filter to entities whose description suggests they're a holy person, and
+  // fetch their P18 (image) claim. This catches saints whose canonical icon
+  // doesn't surface in Commons search/categories but is curated in Wikidata.
+  let entities: WikidataEntity[];
+  try {
+    entities = await searchWikidata(cleaned);
+  } catch {
+    return null;
+  }
+  const holyEntities = entities.filter((e) =>
+    /\b(saint|martyr|bishop|patriarch|monk|nun|apostle|prophet|holy|venerable|hieromartyr|monastic|ascetic|equal-to-the-apostles|abbot|abbess|empress|emperor|king|queen|prince|princess|orthodox)\b/i.test(
+      e.description,
+    ),
+  );
+  for (const entity of holyEntities.slice(0, 3)) {
+    let filename: string | null;
+    try {
+      filename = await getWikidataImage(entity.id);
+    } catch {
+      await sleep(800);
+      continue;
+    }
+    await sleep(300);
+    if (!filename) continue;
+    const fileTitle = `File:${filename}`;
+    const info = await imageInfo(fileTitle);
+    await sleep(300);
+    if (info && isAcceptable(info.license) && looksLikeIconRelaxed(fileTitle)) {
+      return info;
+    }
   }
   return null;
 }

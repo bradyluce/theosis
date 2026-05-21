@@ -71,10 +71,12 @@ const PERSON_ICON_BINDINGS: Record<string, string> = {
 // DailyCommemoration's title (and feastLabel) so we surface a feast icon
 // regardless of whether it's tagged feastRank="great".
 const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
-  [/nativity of (the )?theotokos|nativity of the most holy/i, "icon-feast-nativity-theotokos"],
+  [/nativity\b.*\b(theotokos|most holy lady|most holy)/i, "icon-feast-nativity-theotokos"],
   [/exaltation .* cross/i, "icon-feast-exaltation-cross"],
   [/entrance .* theotokos|presentation .* theotokos|entry .* temple/i, "icon-feast-presentation-theotokos"],
-  [/nativity (of (the|our) lord|of christ|of jesus)/i, "icon-feast-nativity-christ"],
+  // "The Nativity in the Flesh of Our Lord" and similar — allow words between
+  // "Nativity" and the "Lord/Christ/Jesus" phrase.
+  [/nativity\b.*\b(of (the|our) lord|of christ|of jesus)/i, "icon-feast-nativity-christ"],
   [/theophany|baptism of (the|our) lord|baptism of christ/i, "icon-feast-theophany"],
   [/meeting of (the|our) lord|presentation of (the )?(lord|christ)/i, "icon-feast-meeting-of-lord"],
   [/annunciation/i, "icon-feast-annunciation"],
@@ -129,9 +131,32 @@ export function getIconForFeastTitle(title: string | undefined): IconRef | undef
   return undefined;
 }
 
-// Resolve the lead icon for a day: prefer a feast icon (matched against the
-// commemoration's title or feastLabel), and fall back to the first saint
-// whose icon is in the catalog. Returns undefined when nothing matches.
+// Fallback: scan every catalog icon and check whether the slug-derived name
+// (e.g. "ambrose of milan" from "icon-ambrose-of-milan") appears in the daily
+// title. Catches days where the menaion entry's saintIds is empty but the
+// title still names a saint whose icon we hold.
+function getIconByNameInTitle(title: string): IconRef | undefined {
+  if (!title) return undefined;
+  const lower = title.toLowerCase();
+  const all = getAllIcons();
+  // Match longer slugs first so "anthony the great" beats "anthony".
+  const candidates = all
+    .filter((i) => i.id.startsWith("icon-"))
+    .filter((i) => !i.id.startsWith("icon-feast-"))
+    .filter((i) => !i.id.startsWith("icon-st-"))
+    .map((i) => ({ icon: i, slug: i.id.slice("icon-".length).replace(/-/g, " ") }))
+    .sort((a, b) => b.slug.length - a.slug.length);
+  for (const { icon, slug } of candidates) {
+    // Word-boundary aware: don't let "icon-anna" match "Susannah".
+    const re = new RegExp(`\\b${slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+    if (re.test(lower)) return icon;
+  }
+  return undefined;
+}
+
+// Resolve the lead icon for a day: prefer a feast/title pattern, then a
+// linked saint, and finally a slug-name match against the title (catches
+// menaion entries with empty saintIds).
 export function getPrimaryIconForDay(
   daily: DailyCommemoration,
   saints: Person[],
@@ -143,5 +168,5 @@ export function getPrimaryIconForDay(
     const icon = getIconForPerson(saint);
     if (icon) return icon;
   }
-  return undefined;
+  return getIconByNameInTitle(daily.title);
 }

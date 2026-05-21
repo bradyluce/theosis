@@ -7,6 +7,13 @@ import type { IconSource } from "./sources";
 
 export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
+    "id": "icon-abraham-the-patriarch",
+    "personId": "abraham-the-patriarch",
+    "wikimediaTitle": "File:Guercino Abramo ripudia Agar (cropped).jpg",
+    "alt": "Orthodox icon of Abraham the Patriarch.",
+    "caption": "Abraham the Patriarch"
+  },
+  {
     "id": "icon-agatha-of-sicily",
     "personId": "agatha-of-sicily",
     "wikimediaTitle": "File:Agatha orthodox icon.jpg",
@@ -238,6 +245,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Demetrius the Myrrh-streamer"
   },
   {
+    "id": "icon-dionysius-the-areopagite",
+    "personId": "dionysius-the-areopagite",
+    "wikimediaTitle": "File:Areopagita.jpg",
+    "alt": "Orthodox icon of Dionysius the Areopagite.",
+    "caption": "Dionysius the Areopagite"
+  },
+  {
     "id": "icon-elizabeth-mother-of-forerunner",
     "personId": "elizabeth-mother-of-forerunner",
     "wikimediaTitle": "File:Clay glaze icons from Nicomedia (10-11, GIM) by shakko.jpg",
@@ -245,11 +259,25 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Elizabeth, Mother of the Forerunner"
   },
   {
+    "id": "icon-ephraim-the-syrian",
+    "personId": "ephraim-the-syrian",
+    "wikimediaTitle": "File:Ephrem the Syrian (mosaic in Nea Moni).jpg",
+    "alt": "Orthodox icon of Ephraim the Syrian.",
+    "caption": "Ephraim the Syrian"
+  },
+  {
     "id": "icon-eusebius-caesarea",
     "personId": "eusebius-caesarea",
     "wikimediaTitle": "File:Eusebius of Caesarea Armenian Gospel Icon.png",
     "alt": "Orthodox icon of Eusebius of Caesarea.",
     "caption": "Eusebius of Caesarea"
+  },
+  {
+    "id": "icon-eustathius-placidas",
+    "personId": "eustathius-placidas",
+    "wikimediaTitle": "File:Saint Eustace, Cretan school, 17 c..jpg",
+    "alt": "Orthodox icon of Eustathius Placidas.",
+    "caption": "Eustathius Placidas"
   },
   {
     "id": "icon-euthymius-the-great",
@@ -322,6 +350,20 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Hilary of Poitiers"
   },
   {
+    "id": "icon-hippolytus-of-rome",
+    "personId": "hippolytus-of-rome",
+    "wikimediaTitle": "File:Hippolytus martyrdom.jpg",
+    "alt": "Orthodox icon of Hippolytus of Rome.",
+    "caption": "Hippolytus of Rome"
+  },
+  {
+    "id": "icon-ignatius-brianchaninov",
+    "personId": "ignatius-brianchaninov",
+    "wikimediaTitle": "File:Ignatiy2.jpg",
+    "alt": "Orthodox icon of Ignatius Brianchaninov.",
+    "caption": "Ignatius Brianchaninov"
+  },
+  {
     "id": "icon-jerome",
     "personId": "jerome",
     "wikimediaTitle": "File:Beza's Icones, contemporary portraits of reformers of religion and letters - Jerome of Prague on Page 69.jpg",
@@ -336,11 +378,32 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Joachim and Anna, the Holy God-bearing Ancestors"
   },
   {
+    "id": "icon-john-cassian",
+    "personId": "john-cassian",
+    "wikimediaTitle": "File:John Cassian.jpeg",
+    "alt": "Orthodox icon of John Cassian.",
+    "caption": "John Cassian"
+  },
+  {
+    "id": "icon-john-chrysostom",
+    "personId": "john-chrysostom",
+    "wikimediaTitle": "File:Johnchrysostom.jpg",
+    "alt": "Orthodox icon of John Chrysostom.",
+    "caption": "John Chrysostom"
+  },
+  {
     "id": "icon-john-of-damascus",
     "personId": "john-of-damascus",
     "wikimediaTitle": "File:Icon of Saint John of Damascus - Emmanouel Tzanes.jpg",
     "alt": "Orthodox icon of John of Damascus.",
     "caption": "John of Damascus"
+  },
+  {
+    "id": "icon-john-of-kronstadt",
+    "personId": "john-of-kronstadt",
+    "wikimediaTitle": "File:Иоанн Кронштадтский.jpg",
+    "alt": "Orthodox icon of John of Kronstadt.",
+    "caption": "John of Kronstadt"
   },
   {
     "id": "icon-joseph-the-all-comely",
@@ -392,11 +455,25 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Macarius the Great"
   },
   {
+    "id": "icon-macrina-the-younger",
+    "personId": "macrina-the-younger",
+    "wikimediaTitle": "File:Macrina the Younger.jpg",
+    "alt": "Orthodox icon of Macrina the Younger.",
+    "caption": "Macrina the Younger"
+  },
+  {
     "id": "icon-mark-the-ascetic",
     "personId": "mark-the-ascetic",
     "wikimediaTitle": "File:029 Saint Mark Icon from Saint Paraskevi Church in Langadas.jpg",
     "alt": "Orthodox icon of Mark the Ascetic.",
     "caption": "Mark the Ascetic"
+  },
+  {
+    "id": "icon-martyr-christina-of-tyre",
+    "personId": "martyr-christina-of-tyre",
+    "wikimediaTitle": "File:Chapel of our Lady of the Rosary of Santi Giovanni e Paolo (Venice) - Martyrdom of St Christina by Sante Peranda.jpg",
+    "alt": "Orthodox icon of Christina of Tyre.",
+    "caption": "Christina of Tyre"
   },
   {
     "id": "icon-martyr-irene",
@@ -441,6 +518,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Maximus the Confessor"
   },
   {
+    "id": "icon-maximus-the-greek",
+    "personId": "maximus-the-greek",
+    "wikimediaTitle": "File:Максим Грек.jpg",
+    "alt": "Orthodox icon of Maximus the Greek.",
+    "caption": "Maximus the Greek"
+  },
+  {
     "id": "icon-methodius-equal-to-apostles",
     "personId": "methodius-equal-to-apostles",
     "wikimediaTitle": "File:Bulgarian Order of St. St. Apostles Cyril and Methodius - icon.png",
@@ -467,6 +551,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Blaj Iconostasis Saint Pachomius.jpg",
     "alt": "Orthodox icon of Pachomius the Great.",
     "caption": "Pachomius the Great"
+  },
+  {
+    "id": "icon-paisius-velichkovsky",
+    "personId": "paisius-velichkovsky",
+    "wikimediaTitle": "File:Paisius.jpg",
+    "alt": "Orthodox icon of Paisius Velichkovsky.",
+    "caption": "Paisius Velichkovsky"
   },
   {
     "id": "icon-paraskeva-friday",
@@ -509,6 +600,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Prophet and King David (Orthodox Christian icon).png",
     "alt": "Orthodox icon of David the King and Prophet.",
     "caption": "David the King and Prophet"
+  },
+  {
+    "id": "icon-prophet-elijah",
+    "personId": "prophet-elijah",
+    "wikimediaTitle": "File:Iliya prorok ikona Pskov.jpg",
+    "alt": "Orthodox icon of Elijah the Tishbite.",
+    "caption": "Elijah the Tishbite"
   },
   {
     "id": "icon-prophet-elisha",
@@ -623,6 +721,13 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "caption": "Symeon the New Theologian"
   },
   {
+    "id": "icon-symeon-the-stylite",
+    "personId": "symeon-the-stylite",
+    "wikimediaTitle": "File:Simeon Stylites icon 1465.jpg",
+    "alt": "Orthodox icon of Symeon the Stylite.",
+    "caption": "Symeon the Stylite"
+  },
+  {
     "id": "icon-tatiana-of-rome",
     "personId": "tatiana-of-rome",
     "wikimediaTitle": "File:BabushinIcons1681.jpg",
@@ -642,6 +747,20 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
     "wikimediaTitle": "File:Icon of Saints Peter the Metropolitan, Leonty of Rostov, and Theodosius of the Caves. Novgorod School of Iconography, late 15th – early 16th century. Tretyakov Gallery, Russia.jpg",
     "alt": "Orthodox icon of Theodosius of the Caves of Kiev.",
     "caption": "Theodosius of the Caves of Kiev"
+  },
+  {
+    "id": "icon-theodosius-the-cenobiarch",
+    "personId": "theodosius-the-cenobiarch",
+    "wikimediaTitle": "File:Theodosius the Cenobiarch (mosaic in Nea Moni).jpg",
+    "alt": "Orthodox icon of Theodosius the Cenobiarch.",
+    "caption": "Theodosius the Cenobiarch"
+  },
+  {
+    "id": "icon-theophan-the-recluse",
+    "personId": "theophan-the-recluse",
+    "wikimediaTitle": "File:Theophan the Recluse.jpg",
+    "alt": "Orthodox icon of Theophan the Recluse.",
+    "caption": "Theophan the Recluse"
   },
   {
     "id": "icon-tryphon-the-martyr",

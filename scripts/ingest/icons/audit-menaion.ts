@@ -107,6 +107,26 @@ function resolvePersonIcon(
   return undefined;
 }
 
+// Mirror of getIconByNameInTitle in icon-store.ts.
+function matchByNameInTitle(
+  title: string,
+  catalogIds: string[],
+): string | undefined {
+  if (!title) return undefined;
+  const lower = title.toLowerCase();
+  const slugged = catalogIds
+    .filter((id) => id.startsWith("icon-"))
+    .filter((id) => !id.startsWith("icon-feast-"))
+    .filter((id) => !id.startsWith("icon-st-"))
+    .map((id) => ({ id, slug: id.slice("icon-".length).replace(/-/g, " ") }))
+    .sort((a, b) => b.slug.length - a.slug.length);
+  for (const { id, slug } of slugged) {
+    const re = new RegExp(`\\b${slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+    if (re.test(lower)) return id;
+  }
+  return undefined;
+}
+
 function main() {
   const catalogIds = loadCatalogIds();
   const autoBindings = loadAutoBindings();
@@ -125,6 +145,8 @@ function main() {
   let uncovered = 0;
   const uncoveredDays: Array<{ monthDay: string; title: string; saintNames: string }> = [];
 
+  const catalogIdList = Array.from(catalogIds);
+
   for (const day of days) {
     let resolved: string | undefined;
 
@@ -140,6 +162,11 @@ function main() {
           break;
         }
       }
+    }
+
+    // 3) Slug-name match against the menaion title
+    if (!resolved) {
+      resolved = matchByNameInTitle(day.title, catalogIdList);
     }
 
     if (resolved) {

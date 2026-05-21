@@ -313,4 +313,188 @@ export const iconSources: IconSource[] = [
     alt: "Icon of Saint John Climacus, author of The Ladder of Divine Ascent.",
     caption: "Saint John Climacus",
   },
+
+  // --- More famous saints curated after Wikidata pass ---
+  {
+    id: "icon-catherine-of-alexandria",
+    wikimediaTitle: "File:Saint Catherine Icon by Toma Vishanov.jpg",
+    alt: "Icon of Saint Catherine the Great-martyr of Alexandria, by Toma Vishanov.",
+    caption: "Saint Catherine of Alexandria",
+  },
+  {
+    id: "icon-constantine-the-great",
+    wikimediaTitle:
+      "File:070 Saints Constantine and Helen Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of the Holy Equal-to-the-Apostles Constantine and Helen.",
+    caption: "Saints Constantine and Helen",
+  },
+  {
+    id: "icon-helen-equal-to-apostles",
+    wikimediaTitle:
+      "File:070 Saints Constantine and Helen Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of the Holy Equal-to-the-Apostles Constantine and Helen.",
+    caption: "Saints Constantine and Helen",
+  },
+  {
+    id: "icon-mary-magdalene",
+    wikimediaTitle: "File:Maria Magdalene icon.jpg",
+    alt: "Icon of Saint Mary Magdalene, the Equal-to-the-Apostles and Myrrh-bearer.",
+    caption: "Saint Mary Magdalene",
+  },
+  {
+    id: "icon-vladimir-of-kiev",
+    wikimediaTitle: "File:Saint Vladimir icon (GTG, 15 c.).jpg",
+    alt: "Fifteenth-century icon of Holy Great Prince Vladimir of Kiev, Equal-to-the-Apostles.",
+    caption: "Saint Vladimir of Kiev",
+  },
+  {
+    id: "icon-olga-of-kiev",
+    wikimediaTitle: "File:Saint Olga of Kiev (19th c.).jpg",
+    alt: "Nineteenth-century icon of Holy Princess Olga of Kiev, Equal-to-the-Apostles.",
+    caption: "Saint Olga of Kiev",
+  },
+  {
+    id: "icon-panteleimon-the-healer",
+    wikimediaTitle: "File:Saint Panteleimon Resurrects a Dead Man Gavril Atanasov 1893.jpg",
+    alt: "Icon of Saint Panteleimon the Healer raising a dead man, by Gavril Atanasov, 1893.",
+    caption: "Saint Panteleimon the Healer",
+  },
+  {
+    id: "icon-ignatius-of-antioch",
+    wikimediaTitle:
+      "File:Ignatius of Antioch by M.Dikarev (1894, Hermitage).jpg",
+    alt: "Icon of the Hieromartyr Ignatius the God-bearer of Antioch by M. Dikarev, 1894.",
+    caption: "Saint Ignatius of Antioch",
+  },
+  {
+    id: "icon-moses-the-black",
+    wikimediaTitle: "File:Saints Poimen, Elijah, and Moses the Black.jpg",
+    alt: "Icon of Saints Poemen the Great, Elijah the Prophet, and Moses the Black of Scetis.",
+    caption: "Saint Moses the Black",
+  },
+  {
+    id: "icon-nina-of-georgia",
+    wikimediaTitle: "File:Saint Nino (Palekh, 20th c., priv.coll).jpg",
+    alt: "Twentieth-century Palekh-school icon of Saint Nina, Equal-to-the-Apostles, Enlightener of Georgia.",
+    caption: "Saint Nina of Georgia",
+  },
+  {
+    id: "icon-xenia-of-petersburg",
+    wikimediaTitle: "File:Ksenia of petersbourg.jpeg",
+    alt: "Icon of Blessed Xenia of Saint Petersburg, Fool-for-Christ.",
+    caption: "Blessed Xenia of Petersburg",
+  },
+  {
+    id: "icon-charalampias",
+    wikimediaTitle:
+      "File:048 Saint Charalambos Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of the Hieromartyr Charalampias, Bishop of Magnesia.",
+    caption: "Saint Charalampias",
+  },
+  {
+    id: "icon-cyprian-of-carthage",
+    wikimediaTitle: "File:Stcyprian.jpg",
+    alt: "Icon of the Hieromartyr Cyprian of Carthage.",
+    caption: "Saint Cyprian of Carthage",
+  },
+  {
+    id: "icon-gregory-the-wonderworker",
+    wikimediaTitle: "File:Gregory Thaumaturgus.jpg",
+    alt: "Icon of Saint Gregory the Wonderworker, Bishop of Neo-Caesarea.",
+    caption: "Saint Gregory the Wonderworker",
+  },
+  {
+    id: "icon-lawrence-the-archdeacon",
+    wikimediaTitle:
+      "File:Lawrence of Rome by M.Dikarev (1897, Hermitage).jpg",
+    alt: "Icon of the Hieromartyr Lawrence the Archdeacon of Rome, by M. Dikarev, 1897.",
+    caption: "Saint Lawrence the Archdeacon",
+  },
+  {
+    id: "icon-theodore-the-tyro",
+    wikimediaTitle:
+      "File:Theodore Tyron by O.Chirikov (1891, Abramov's icon museum).jpg",
+    alt: "Icon of the Great-martyr Theodore the Tyro (the Recruit), by O. Chirikov, 1891.",
+    caption: "Saint Theodore the Tyro",
+  },
+  {
+    id: "icon-cosmas-and-damian-of-asia",
+    wikimediaTitle:
+      "File:011 Saints Cosmas and Damian Icon from Saint Paraskevi Church in Langadas.jpg",
+    alt: "Icon of the Holy Unmercenaries Cosmas and Damian of Asia.",
+    caption: "Saints Cosmas and Damian",
+  },
+  {
+    id: "icon-apostle-jude",
+    wikimediaTitle: "File:Russian Icon of Apostle Jude Thaddeus, Kizhi.jpg",
+    alt: "Russian icon of the Holy Apostle Jude Thaddeus.",
+    caption: "Apostle Jude Thaddeus",
+  },
+  {
+    id: "icon-prophet-jonah",
+    wikimediaTitle: "File:Jonah.jpg",
+    alt: "Icon of the Holy Prophet Jonah.",
+    caption: "Prophet Jonah",
+  },
+  {
+    id: "icon-prophet-habakkuk",
+    wikimediaTitle: "File:Prophet Habakkuk Пророк Аввакум.jpg",
+    alt: "Icon of the Holy Prophet Habakkuk.",
+    caption: "Prophet Habakkuk",
+  },
+  {
+    id: "icon-prophet-moses",
+    wikimediaTitle: "File:Moses-icon.jpg",
+    alt: "Icon of the Holy Prophet Moses the God-Seer.",
+    caption: "Prophet Moses the God-Seer",
+  },
+  {
+    id: "icon-prophet-zechariah-of-twelve",
+    wikimediaTitle: "File:Zechariah (central Russia, 17 c, priv.coll).jpg",
+    alt: "Seventeenth-century Russian icon of the Prophet Zechariah, one of the Twelve.",
+    caption: "Prophet Zechariah of the Twelve",
+  },
+  {
+    id: "icon-tikhon-of-moscow",
+    wikimediaTitle: "File:Tikhon of Moscow.jpg",
+    alt: "Icon of Saint Tikhon, Patriarch and Confessor of Moscow.",
+    caption: "Saint Tikhon of Moscow",
+  },
+  {
+    id: "icon-job-the-long-suffering",
+    wikimediaTitle: "File:Иов Многострадальный. Чтец.jpg",
+    alt: "Icon of the Righteous Job the Long-Suffering.",
+    caption: "Job the Long-Suffering",
+  },
+  {
+    id: "icon-patriarch-jacob",
+    wikimediaTitle: "File:I ForeFather Jacob.jpg",
+    alt: "Icon of the Holy Forefather Jacob.",
+    caption: "Patriarch Jacob",
+  },
+  {
+    id: "icon-patriarch-isaac",
+    wikimediaTitle: "File:John in Korovniki church - patriarch 10 Isaak (c. 1654, Yaroslavl).jpg",
+    alt: "Seventeenth-century Yaroslavl icon of the Holy Forefather Isaac.",
+    caption: "Patriarch Isaac",
+  },
+  {
+    id: "icon-anastasia-the-deliverer",
+    wikimediaTitle:
+      "File:Saint Anastasia Pharmakolytria Icon in Saint Athanasius Church in Livadi, Sterios Dimitriou, 1845.jpg",
+    alt: "Icon of Great-martyr Anastasia the Deliverer-from-bonds (Pharmakolytria).",
+    caption: "Great-martyr Anastasia",
+  },
+  {
+    id: "icon-anna-of-kashin",
+    wikimediaTitle: "File:Anna of Kashin 02.jpg",
+    alt: "Icon of Holy Princess Anna of Kashin.",
+    caption: "Saint Anna of Kashin",
+  },
+  {
+    id: "icon-theotokos",
+    wikimediaTitle: "File:Theotokos Hodegetria XVII c. Nesebar.jpg",
+    alt: "Seventeenth-century icon of the Most Holy Theotokos Hodegetria from Nesebar.",
+    caption: "The Most Holy Theotokos",
+  },
 ];
