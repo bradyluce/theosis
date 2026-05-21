@@ -281,4 +281,36 @@ export const iconSources: IconSource[] = [
     alt: "Seventeenth-century icon of Saint Symeon the Stylite the Elder.",
     caption: "Saint Symeon the Stylite",
   },
+
+  // --- Famous saints the auto-curator missed (name-matching quirks) ---
+  {
+    id: "icon-john-the-forerunner",
+    wikimediaTitle: "File:Icon of John the Baptist (Yaroslavl, 1551).jpg",
+    alt: "Sixteenth-century Yaroslavl icon of Saint John the Forerunner and Baptist.",
+    caption: "Saint John the Forerunner",
+  },
+  {
+    id: "icon-apostle-james-zebedee",
+    wikimediaTitle: "File:James son of Zebedee.jpg",
+    alt: "Icon of Saint James, son of Zebedee, the Apostle.",
+    caption: "Apostle James the Greater",
+  },
+  {
+    id: "icon-joachim-and-anna",
+    wikimediaTitle: "File:The Meeting of Joachim and Anna.jpg",
+    alt: "Icon of the Meeting of the Holy Ancestors Joachim and Anna at the Golden Gate.",
+    caption: "Holy Ancestors Joachim and Anna",
+  },
+  {
+    id: "icon-photini-the-samaritan",
+    wikimediaTitle: "File:Icon of Agia Fotini-Pachia Ammos-Lasithi.JPG",
+    alt: "Icon of Saint Photini the Samaritan, the Equal-to-the-Apostles.",
+    caption: "Saint Photini the Samaritan",
+  },
+  {
+    id: "icon-john-climacus",
+    wikimediaTitle: "File:John Climacus.jpg",
+    alt: "Icon of Saint John Climacus, author of The Ladder of Divine Ascent.",
+    caption: "Saint John Climacus",
+  },
 ];
