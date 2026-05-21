@@ -1,7 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
 import * as Application from "expo-application";
 import Constants from "expo-constants";
-import { Platform, ScrollView, StyleSheet, Text, View } from "react-native";
+import { router } from "expo-router";
+import {
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { Pill } from "@/components/theosis/pill";
@@ -51,6 +59,27 @@ export default function SettingsScreen() {
               and full-text search across centuries of Christian tradition.
             </Text>
           </View>
+        </View>
+
+        <View style={styles.section}>
+          <Text style={styles.sectionLabel}>Practice</Text>
+          <Pressable
+            onPress={() => router.push("/prayer")}
+            style={({ pressed }) => [
+              styles.linkCard,
+              pressed && styles.linkCardPressed,
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Open Prayer Rule"
+          >
+            <View style={styles.linkCardMain}>
+              <Text style={styles.linkCardTitle}>Prayer Rule</Text>
+              <Text style={styles.linkCardSubtitle}>
+                Morning, evening, and the daily canons — coming soon.
+              </Text>
+            </View>
+            <Text style={styles.linkCardChevron}>›</Text>
+          </Pressable>
         </View>
 
         <View style={styles.section}>
@@ -159,6 +188,36 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.lg,
     gap: spacing.md,
+  },
+  linkCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+  },
+  linkCardPressed: {
+    backgroundColor: colors.surfaceStrong,
+  },
+  linkCardMain: { flex: 1, gap: 2 },
+  linkCardTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 18,
+    color: colors.ink,
+    letterSpacing: -0.2,
+  },
+  linkCardSubtitle: {
+    fontSize: 13,
+    color: colors.inkMuted,
+    lineHeight: 18,
+  },
+  linkCardChevron: {
+    fontSize: 22,
+    color: colors.inkSoft,
   },
   body: {
     fontSize: 14,

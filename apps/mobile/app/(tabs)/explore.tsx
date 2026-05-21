@@ -1,8 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { router, useLocalSearchParams } from "expo-router";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ActivityIndicator,
+  Animated,
+  Easing,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -135,6 +137,52 @@ export default function BibleReaderScreen() {
     return new Set(verses);
   }, [catalogQuery.data, bookSlug, chapterNumber]);
 
+  // Scroll-into-view + glow pulse for a highlighted verse. When the
+  // reader loads from a Daily reading deep-link (?highlight=3-12), measure
+  // the first highlighted verse's Y position and scroll it ~80px below
+  // the top header. A one-shot Animated value (1 → 0 over 1.8s) drives a
+  // background-color interpolation on the highlighted verses, mirroring
+  // the .verse-glow keyframe in src/app/globals.css.
+  const scrollRef = useRef<ScrollView>(null);
+  const firstHighlightRef = useRef<View>(null);
+  const glowAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    if (!highlight || !chapterQuery.data) return;
+    glowAnim.setValue(1);
+    Animated.timing(glowAnim, {
+      toValue: 0,
+      duration: 1800,
+      easing: Easing.out(Easing.quad),
+      useNativeDriver: false,
+    }).start();
+
+    // Small delay lets RN finish layout before we ask for measureLayout.
+    const timer = setTimeout(() => {
+      const scrollNode = scrollRef.current;
+      const targetNode = firstHighlightRef.current;
+      if (!scrollNode || !targetNode) return;
+      targetNode.measureLayout(
+        // measureLayout's first arg is the ancestor — we pass the ScrollView
+        // ref directly; in modern RN this works without findNodeHandle.
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        scrollNode as unknown as any,
+        (_x: number, y: number) => {
+          scrollNode.scrollTo({ y: Math.max(0, y - 80), animated: true });
+        },
+        () => {
+          // measure failed (e.g. node unmounted mid-measure) — silent.
+        },
+      );
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [highlight?.start, highlight?.end, chapterQuery.data, glowAnim]);
+
+  const glowBackground = glowAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: [colors.accentSoft, "rgba(212, 168, 87, 0.32)"],
+  });
+
   const onPrevChapter = () => {
     if (chapterNumber > 1) {
       router.setParams({
@@ -206,6 +254,7 @@ export default function BibleReaderScreen() {
       </View>
 
       <ScrollView
+        ref={scrollRef}
         style={styles.scroll}
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
@@ -251,20 +300,11 @@ export default function BibleReaderScreen() {
                 highlight !== null &&
                 verse.verseNumber >= highlight.start &&
                 verse.verseNumber <= highlight.end;
+              const isFirstHighlight =
+                isHighlighted && verse.verseNumber === highlight!.start;
 
-              return (
-                <Pressable
-                  key={verse.id}
-                  onPress={hasCommentary ? () => onVerseTap(verse.verseNumber) : undefined}
-                  style={({ pressed }) => [
-                    styles.verseRow,
-                    isFirstAfterParagraph && styles.verseRowParagraphStart,
-                    isHighlighted && styles.verseRowHighlight,
-                    pressed && hasCommentary && styles.verseRowPressed,
-                  ]}
-                  accessibilityLabel={`Verse ${verse.verseNumber}${hasCommentary ? ", tap for commentary" : ""}${isHighlighted ? ", in today's appointed reading" : ""}`}
-                  accessibilityRole={hasCommentary ? "button" : "text"}
-                >
+              const inner = (
+                <>
                   <Text style={styles.verseInline}>
                     <Text style={styles.verseNumber}>
                       {verse.verseNumber}
@@ -273,6 +313,57 @@ export default function BibleReaderScreen() {
                     <Text style={styles.verseText}>{verse.text}</Text>
                   </Text>
                   {hasCommentary ? <View style={styles.commentaryDot} /> : null}
+                </>
+              );
+
+              if (isHighlighted) {
+                // Highlighted verses use Animated.View so the one-shot glow
+                // pulse can interpolate the background color. The first
+                // highlighted verse also carries the measure ref for
+                // scroll-into-view.
+                return (
+                  <Animated.View
+                    key={verse.id}
+                    ref={isFirstHighlight ? firstHighlightRef : undefined}
+                    style={[
+                      styles.verseRow,
+                      isFirstAfterParagraph && styles.verseRowParagraphStart,
+                      styles.verseRowHighlight,
+                      { backgroundColor: glowBackground },
+                    ]}
+                  >
+                    <Pressable
+                      onPress={
+                        hasCommentary
+                          ? () => onVerseTap(verse.verseNumber)
+                          : undefined
+                      }
+                      style={({ pressed }) => [
+                        styles.verseInnerPressable,
+                        pressed && hasCommentary && { opacity: 0.7 },
+                      ]}
+                      accessibilityLabel={`Verse ${verse.verseNumber}${hasCommentary ? ", tap for commentary" : ""}, in today's appointed reading`}
+                      accessibilityRole={hasCommentary ? "button" : "text"}
+                    >
+                      {inner}
+                    </Pressable>
+                  </Animated.View>
+                );
+              }
+
+              return (
+                <Pressable
+                  key={verse.id}
+                  onPress={hasCommentary ? () => onVerseTap(verse.verseNumber) : undefined}
+                  style={({ pressed }) => [
+                    styles.verseRow,
+                    isFirstAfterParagraph && styles.verseRowParagraphStart,
+                    pressed && hasCommentary && styles.verseRowPressed,
+                  ]}
+                  accessibilityLabel={`Verse ${verse.verseNumber}${hasCommentary ? ", tap for commentary" : ""}`}
+                  accessibilityRole={hasCommentary ? "button" : "text"}
+                >
+                  {inner}
                 </Pressable>
               );
             })}
@@ -376,8 +467,15 @@ const styles = StyleSheet.create({
   verseRowParagraphStart: { marginTop: spacing.md },
   verseRowPressed: { backgroundColor: colors.accentSoft },
   verseRowHighlight: {
-    backgroundColor: colors.accentSoft,
     paddingHorizontal: spacing.md,
+    // backgroundColor is applied dynamically via Animated.Value above so
+    // the one-shot pulse can interpolate from highlight to accent-soft.
+  },
+  verseInnerPressable: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: spacing.sm,
   },
   verseInline: { flex: 1 },
   verseNumber: {

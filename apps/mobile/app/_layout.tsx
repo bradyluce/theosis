@@ -72,6 +72,7 @@ export default function RootLayout() {
           <Stack.Screen name="people/[slug]" />
           <Stack.Screen name="works/[slug]" />
           <Stack.Screen name="reading/[work]/[order]" />
+          <Stack.Screen name="prayer" />
         </Stack>
         <StatusBar style="light" />
       </ThemeProvider>

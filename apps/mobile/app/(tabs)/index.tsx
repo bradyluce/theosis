@@ -1,9 +1,13 @@
+import DateTimePicker, {
+  type DateTimePickerEvent,
+} from "@react-native-community/datetimepicker";
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { router } from "expo-router";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   ActivityIndicator,
+  Platform,
   Pressable,
   RefreshControl,
   ScrollView,
@@ -56,13 +60,52 @@ function formatDate(isoDate: string): string {
   }).format(new Date(isoDate));
 }
 
+// Today's date in YYYY-MM-DD using the user's *local* timezone — matches
+// what a human means by "today" when they tap the Today reset button.
+function todayIso(): string {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+// Convert a JS Date (interpreted in local time) to YYYY-MM-DD for the
+// daily endpoint. The picker returns local dates; the API treats the ISO
+// as UTC midnight, which gives us the right calendar day.
+function dateToIso(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
 export default function DailyScreen() {
   const api = getApi();
+  const [selectedIso, setSelectedIso] = useState<string | undefined>(undefined);
+  const [pickerOpen, setPickerOpen] = useState(false);
+
+  const isToday = !selectedIso || selectedIso === todayIso();
+
   const { data, error, isLoading, refetch, isFetching } = useQuery({
-    queryKey: ["daily"],
-    queryFn: () => api.fetchDaily(),
+    queryKey: ["daily", selectedIso ?? "today"],
+    queryFn: () => api.fetchDaily(selectedIso),
     staleTime: 5 * 60 * 1000,
   });
+
+  const onPickDate = (event: DateTimePickerEvent, picked?: Date) => {
+    // Android dismisses the picker on its own and fires "dismissed" /
+    // "set" events; iOS keeps the inline picker mounted until we close it.
+    if (Platform.OS !== "ios") setPickerOpen(false);
+    if (event.type === "set" && picked) {
+      setSelectedIso(dateToIso(picked));
+    }
+  };
+
+  const resetToToday = () => {
+    setSelectedIso(undefined);
+    setPickerOpen(false);
+  };
 
   // The first linked saint with an extendedSummary becomes the "Read more"
   // source. Matches the web page's logic.
@@ -115,9 +158,52 @@ export default function DailyScreen() {
 
         {data ? (
           <>
-            <View style={styles.dateBanner}>
-              <Text style={styles.dateText}>{formatDate(data.daily.isoDate)}</Text>
-            </View>
+            <Pressable
+              onPress={() => setPickerOpen((open) => !open)}
+              style={({ pressed }) => [
+                styles.dateBanner,
+                pressed && { opacity: 0.7 },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Change date"
+            >
+              <Text style={styles.dateText}>
+                {formatDate(data.daily.isoDate)}
+              </Text>
+              {!isToday ? (
+                <Text style={styles.dateBadge}>Not today</Text>
+              ) : null}
+            </Pressable>
+
+            {!isToday ? (
+              <Pressable
+                onPress={resetToToday}
+                style={({ pressed }) => [
+                  styles.todayResetButton,
+                  pressed && { opacity: 0.6 },
+                ]}
+                accessibilityRole="button"
+              >
+                <Text style={styles.todayResetText}>← Back to today</Text>
+              </Pressable>
+            ) : null}
+
+            {pickerOpen ? (
+              <View style={styles.pickerWrap}>
+                <DateTimePicker
+                  value={new Date(data.daily.isoDate)}
+                  mode="date"
+                  display={Platform.OS === "ios" ? "inline" : "default"}
+                  onChange={onPickDate}
+                  themeVariant="dark"
+                  textColor={colors.ink}
+                  accentColor={colors.accent}
+                  // Allow browsing the full Paschalion window the web uses.
+                  minimumDate={new Date("1900-01-01")}
+                  maximumDate={new Date("2099-12-31")}
+                />
+              </View>
+            ) : null}
 
             <PageHeader
               eyebrow="Daily"
@@ -351,7 +437,8 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.xs,
   },
 
-  // Centered date banner — small uppercase, tracked.
+  // Centered date banner — small uppercase, tracked. Tappable to open the
+  // date picker; shows a "Not today" badge when viewing a non-today date.
   dateBanner: {
     borderRadius: radii.card,
     borderWidth: StyleSheet.hairlineWidth,
@@ -360,6 +447,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.xl,
     paddingVertical: spacing.md,
     alignItems: "center",
+    gap: spacing.xs,
   },
   dateText: {
     fontSize: 11.5,
@@ -367,6 +455,31 @@ const styles = StyleSheet.create({
     color: colors.inkSoft,
     letterSpacing: 2.4,
     textTransform: "uppercase",
+  },
+  dateBadge: {
+    fontSize: 10,
+    color: colors.accent,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+    fontWeight: "600",
+  },
+  todayResetButton: {
+    alignSelf: "center",
+    paddingVertical: spacing.xs,
+    paddingHorizontal: spacing.md,
+  },
+  todayResetText: {
+    fontSize: 13,
+    color: colors.accent,
+    fontWeight: "600",
+  },
+  pickerWrap: {
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.md,
   },
 
   commemorationCard: { gap: spacing.xl },

@@ -73,21 +73,30 @@ export default function CommentaryModal() {
   });
 
   // Build lookup maps from the catalog so each entry can show a father
-  // name + work title without an additional fetch.
+  // name + work title without an additional fetch. `slug` is carried so
+  // the work row can deep-link to /works/[slug] for full TOC + prose.
   const lookups = useMemo(() => {
-    const peopleById = new Map<string, { name: string; honorific?: string }>();
-    const worksById = new Map<string, { title: string; shortTitle: string }>();
+    const peopleById = new Map<
+      string,
+      { name: string; honorific?: string; slug: string }
+    >();
+    const worksById = new Map<
+      string,
+      { title: string; shortTitle: string; slug: string }
+    >();
     if (catalogQuery.data) {
       for (const person of catalogQuery.data.people) {
         peopleById.set(person.id, {
           name: person.name,
           honorific: person.honorific,
+          slug: person.slug,
         });
       }
       for (const work of catalogQuery.data.works) {
         worksById.set(work.id, {
           title: work.title,
           shortTitle: work.shortTitle,
+          slug: work.slug,
         });
       }
     }
@@ -168,15 +177,37 @@ export default function CommentaryModal() {
           return (
             <View key={entry.id} style={styles.entryCard}>
               <View style={styles.entryMeta}>
-                <Text style={styles.entryPerson}>
-                  {person
-                    ? person.honorific
-                      ? `${person.honorific} ${person.name}`
-                      : person.name
-                    : entry.personId}
-                </Text>
+                {person ? (
+                  <Pressable
+                    onPress={() => {
+                      router.dismiss();
+                      router.push(`/people/${person.slug}`);
+                    }}
+                    style={({ pressed }) => [pressed && { opacity: 0.6 }]}
+                    accessibilityRole="button"
+                    accessibilityLabel={`View ${person.name}`}
+                  >
+                    <Text style={styles.entryPerson}>
+                      {person.honorific
+                        ? `${person.honorific} ${person.name}`
+                        : person.name}
+                    </Text>
+                  </Pressable>
+                ) : (
+                  <Text style={styles.entryPerson}>{entry.personId}</Text>
+                )}
                 {work ? (
-                  <Text style={styles.entryWork}>{work.shortTitle}</Text>
+                  <Pressable
+                    onPress={() => {
+                      router.dismiss();
+                      router.push(`/works/${work.slug}`);
+                    }}
+                    style={({ pressed }) => [pressed && { opacity: 0.6 }]}
+                    accessibilityRole="button"
+                    accessibilityLabel={`Open ${work.title}`}
+                  >
+                    <Text style={styles.entryWorkLink}>{work.shortTitle} →</Text>
+                  </Pressable>
                 ) : null}
               </View>
               {entry.title ? (
@@ -283,6 +314,13 @@ const styles = StyleSheet.create({
     color: colors.inkSoft,
     letterSpacing: 1.6,
     textTransform: "uppercase",
+  },
+  entryWorkLink: {
+    fontSize: 11,
+    color: colors.accent,
+    letterSpacing: 1.6,
+    textTransform: "uppercase",
+    fontWeight: "600",
   },
   entryTitle: {
     fontSize: 13,
