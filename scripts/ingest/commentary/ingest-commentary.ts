@@ -24,6 +24,7 @@ import { parseJohnDamascus } from "./parse-john-damascus";
 import { parseCyrilJerusalem } from "./parse-cyril-jerusalem";
 import { parseGregoryNazianzenLetters } from "./parse-gregory-nazianzen-letters";
 import { parseGregoryNazianzenOrations } from "./parse-gregory-nazianzen-orations";
+import { parseIrenaeusDemonstration } from "./parse-irenaeus-demonstration";
 import { parseIrenaeusFragments } from "./parse-irenaeus-fragments";
 import { parseIrenaeusHaereses } from "./parse-irenaeus-haereses";
 import { parseAzkoul } from "./parse-azkoul";
@@ -559,6 +560,31 @@ function main() {
   );
   console.log(
     `[irenaeus-fragments] ${fragmentSections} fragments.`,
+  );
+
+  // ── Irenaeus — Demonstration of the Apostolic Preaching (Robinson 1920) ─────
+  const demonstration = parseIrenaeusDemonstration({
+    rawDir: join(FATHERS_DIRECTORY, "irenaeus", "demonstration"),
+  });
+  if (!demonstration.chapters || demonstration.chapters.length === 0) {
+    throw new Error("[irenaeus-demonstration] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "irenaeus-demonstration.json"),
+    `${JSON.stringify(demonstration, null, 2)}\n`,
+    "utf8",
+  );
+  const demonstrationSections = demonstration.chapters.reduce(
+    (sum, chapter) => sum + chapter.sections.length,
+    0,
+  );
+  const demonstrationParagraphs = demonstration.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[irenaeus-demonstration] ${demonstrationSections} chapters, ${demonstrationParagraphs} paragraphs.`,
   );
 
   // ── Gregory Nazianzen — Orations (NPNF II/7) ────────────────────────────────
