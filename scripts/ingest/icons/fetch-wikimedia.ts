@@ -16,7 +16,7 @@ async function loadAutoSources(): Promise<IconSource[]> {
   const autoPath = path.join(process.cwd(), "scripts/ingest/icons/sources-auto.ts");
   if (!fs.existsSync(autoPath)) return [];
   try {
-    const mod = (await import("./sources-auto.ts")) as {
+    const mod = (await import("./sources-auto")) as {
       iconSourcesAuto?: IconSource[];
     };
     return mod.iconSourcesAuto ?? [];

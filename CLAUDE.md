@@ -33,15 +33,15 @@ There is no general test framework. `scripts/test/calendar.ts` runs assertions a
 
 1. **Bible text** — files on disk. Authoritative store is `content/normalized/bibles/<translationId>/<bookSlug>/<chapterNumber>.json`. Read via `src/lib/bible/server-store.ts` (`getNormalizedChapter`, `getChapterVerses`, etc.) — server-only, with an in-process cache. The API route `/api/bible/[translation]/[book]/[chapter]` (in `src/app/api/bible/.../route.ts`) tries S3 first (`BIBLE_S3_BUCKET` / `BIBLE_S3_REGION`, default `theosis-content` / `us-east-1`) and falls back to the local normalized files.
 
-2. **Library content** (people, works, commentary, sources, topics, daily) — seeded TypeScript in `src/lib/content/seed/{library,daily,profile,saint-bios,scripture}.ts`, queried via `src/lib/content/queries.ts` (`getPersonById`, `getDirectCommentaryForVerse`, etc.). On top of seed, `src/lib/content/commentary-loader.ts` **merges in** generated commentary bundles from `content/generated/commentary/*.json` (Catena Aurea Matthew/Mark/Luke/John, Augustine Confessions, Azkoul). The reader page (`src/app/(shell)/bible/[translation]/[book]/[chapter]/page.tsx`) uses this loader; older code paths still call seed-only queries.
+2. **Library content** (people, works, commentary, sources, topics, daily) — seeded TypeScript in `src/lib/content/seed/{library,daily,profile,saint-bios,scripture}.ts`, queried via `src/lib/content/queries.ts` (`getPersonById`, `getDirectCommentaryForVerse`, etc.). On top of seed, `src/lib/content/commentary-loader.ts` **merges in** sliced commentary content from `content/normalized/commentary/` (verse-keyed snippets — Catena Aurea, Augustine sermons, Chrysostom homily heads, Azkoul, ~85 Fathers) and long-form prose from `content/normalized/library/` (full readable WorkChapters — Augustine Confessions, Chrysostom homily bodies, Tertullian treatises, etc.). Each tree has its own `catalog.json` with people/works/sources/index; per-section files are lazy-loaded on demand, cached per key for the process lifetime. The reader page (`src/app/(shell)/bible/[translation]/[book]/[chapter]/page.tsx`) and library work/person pages use this loader; older code paths still call seed-only queries.
 
 The two systems share **domain types** in `src/domain/content/types.ts` (`BibleVerse`, `CommentaryEntry`, `Person`, `Work`, `DailyCommemoration`, `WorkChapter`, etc.). UI consumes these shapes — never raw source text.
 
 ### Verse and chapter IDs
 
-Verse IDs are `{translationId}:{bookSlug}.{chapter}.{verse}` (e.g. `kjva:matthew.5.3`). Chapter IDs (for chapter-level commentary) are `{bookSlug}.{chapter}` — translation-agnostic. Helpers: `createVerseId`, `createChapterId` in `src/lib/content/reference.ts`.
+Verse IDs are `{translationId}:{bookSlug}.{chapter}.{verse}` (e.g. `kjva:matthew.5.3`). Chapter IDs (for chapter-level commentary) are `{bookSlug}.{chapter}` — translation-agnostic. Helpers: `createVerseId`, `createChapterId`, `verseLocationKey` in `src/lib/content/reference.ts`.
 
-Commentary is indexed against one translation (usually `kjva`) but the loader strips the translation prefix via `verseLocationKey()` so commentary still surfaces when the user reads a different translation. Don't re-bind commentary to other translations — the location suffix is the canonical key.
+Commentary is indexed against one translation (usually `kjva`) but `verseLocationKey()` strips the translation prefix so commentary still surfaces when the user reads a different translation. The normalize step keys per-verse files by `<bookSlug>.<chapter>.<verse>` already (translation-agnostic), and the loader and normalize script both import the same helper. Don't re-bind commentary to other translations — the location suffix is the canonical key.
 
 ### Calendar slice
 
@@ -78,12 +78,11 @@ content/raw/        → content/generated/    → content/normalized/
 
 Adding a new Bible translation: write a parser in `scripts/ingest/parse-*.ts` returning `ParsedTranslationData`, add an entry to `TRANSLATIONS` and `JOBS` in `scripts/ingest/ingest.ts`, then `npm run ingest:bibles && npm run normalize:bibles:demo`. The app picks up new translations from `content/normalized/bibles/catalog.json` automatically.
 
-Adding a new commentary source: write a parser in `scripts/ingest/commentary/parse-*.ts` returning a v2 `CommentaryBundle` (`{ version: "2", people, works, sources, entries, chapters? }`), wire it into `scripts/ingest/commentary/ingest-commentary.ts`, then `npm run ingest:commentary`. The loader merges all bundles in `content/generated/commentary/` automatically. Long-form prose belongs in `chapters` (typed as `WorkChapter[]`); verse-keyed snippets go in `entries`.
+Adding a new commentary source: write a parser in `scripts/ingest/commentary/parse-*.ts` returning a v2 `CommentaryBundle` (`{ version: "2", people, works, sources, entries, chapters? }`), wire it into `scripts/ingest/commentary/ingest-commentary.ts`, then `npm run ingest:commentary && npm run normalize:commentary`. The normalize step fans the generated bundle out into per-section files under `content/normalized/commentary/by-verse/`, `content/normalized/commentary/by-chapter/`, and `content/normalized/library/by-work/`, refreshes both `catalog.json` files, and the loader picks them up automatically. Long-form prose belongs in `chapters` (typed as `WorkChapter[]`) — slices into the library tree; verse-keyed snippets go in `entries` — slice into the commentary tree.
 
 ## Conventions worth knowing
 
 - Server-only modules (`src/lib/bible/server-store.ts`, `src/lib/calendar/data.ts`, `src/lib/content/commentary-loader.ts`, the bible API route) start with `import "server-only";`. Don't import them from client components.
-- The commentary loader's repo-root discovery walks up three levels when run from `.claude/worktrees/<name>` — preserve that behavior if you refactor it.
 - Saint long-form bios live in `src/lib/content/seed/saint-bios.ts` keyed by `person.id` and are merged onto `Person.extendedSummary` lazily by `attachBio()` in `queries.ts` — keep bios in that file, not in `library.ts`.
 - Editorial-content policy (from `docs/calendar-strategy.md`): Theosis owns its prose. Use Wikidata (CC0) for facts and Hapgood (public domain) for hymns; **do not ingest CC-BY-SA prose** from OrthodoxWiki or the Prologue from Ohrid.
 

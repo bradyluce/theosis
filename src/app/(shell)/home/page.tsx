@@ -96,7 +96,7 @@ export default function HomePage() {
       </header>
 
       {/* Gospel Reading hero */}
-      {gospelReading ? (
+      {gospelReading && primaryTranslation ? (
         <Link
           href={`/bible/${primaryTranslation.slug}/${gospelReading.scripture.bookSlug}/${gospelReading.scripture.chapterNumber}#${gospelVerses[0]?.id ?? ""}`}
           className="block overflow-hidden rounded-[20px] border border-accent/15 bg-surface"
