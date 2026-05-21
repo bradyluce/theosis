@@ -4,7 +4,9 @@
 // loader) and the mobile app (HTTP client) need them.
 
 import type {
+  BibleBook,
   BibleChapter,
+  BibleTranslation,
   BibleVerse,
   CommentaryEntry,
   DailyCommemoration,
@@ -67,6 +69,13 @@ export type ByChapterFile = {
 
 export type ByWorkFile = {
   chapter: WorkChapter;
+};
+
+// --- /api/bible/catalog ----------------------------------------------------
+
+export type BibleCatalog = {
+  translations: BibleTranslation[];
+  books: BibleBook[];
 };
 
 // --- /api/bible/[translation]/[book]/[chapter] -----------------------------

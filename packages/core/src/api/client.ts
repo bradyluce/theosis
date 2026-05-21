@@ -14,6 +14,7 @@
 // caching, retries, and stale-while-revalidate behavior on the client.
 
 import type {
+  BibleCatalog,
   BibleChapterFile,
   ByChapterFile,
   ByVerseFile,
@@ -50,6 +51,7 @@ export type TheosisApi = {
   fetchCommentaryCatalog: () => Promise<CommentaryCatalog>;
   fetchLibraryCatalog: () => Promise<LibraryCatalog>;
   fetchLibraryPeople: () => Promise<LibraryPeopleResponse>;
+  fetchBibleCatalog: () => Promise<BibleCatalog>;
   fetchBibleChapter: (
     translationId: string,
     bookSlug: string,
@@ -102,6 +104,7 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
     fetchLibraryCatalog: () => getJson<LibraryCatalog>("/api/library/catalog"),
     fetchLibraryPeople: () =>
       getJson<LibraryPeopleResponse>("/api/library/people"),
+    fetchBibleCatalog: () => getJson<BibleCatalog>("/api/bible/catalog"),
     fetchBibleChapter: (translationId, bookSlug, chapterNumber) =>
       getJson<BibleChapterFile>(
         `/api/bible/${encodeURIComponent(translationId)}/${encodeURIComponent(bookSlug)}/${chapterNumber}`,

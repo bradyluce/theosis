@@ -25,6 +25,10 @@ export default function RootLayout() {
             name="commentary/[book]/[chapter]/[verse]"
             options={{ presentation: 'modal', headerShown: false }}
           />
+          <Stack.Screen
+            name="book-picker"
+            options={{ presentation: 'modal', headerShown: false }}
+          />
           {/* people/[slug] is a stack push (not modal) so the back button
               returns to the Library tab. headerShown is set on the route
               itself so the title is empty but the back arrow shows. */}

@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
+import { router } from "expo-router";
 import { useMemo } from "react";
 import {
   ActivityIndicator,
@@ -16,6 +17,26 @@ import { Pill } from "@/components/theosis/pill";
 import { Surface } from "@/components/theosis/surface";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+
+// Build a Bible-reader URL for an appointed reading. Mirrors
+// src/lib/content/reading-href.ts on the web: `?highlight=3-12` (range)
+// or `?highlight=3` (single verse).
+function readingHref(
+  translation: string,
+  scripture: {
+    bookSlug: string;
+    chapterNumber: number;
+    verseStart: number;
+    verseEnd?: number;
+  },
+): string {
+  const { bookSlug, chapterNumber, verseStart, verseEnd } = scripture;
+  const range =
+    verseEnd && verseEnd !== verseStart
+      ? `${verseStart}-${verseEnd}`
+      : `${verseStart}`;
+  return `/explore?translation=${translation}&book=${bookSlug}&chapter=${chapterNumber}&highlight=${range}`;
+}
 
 // Daily Commemoration screen — mobile port of src/app/(shell)/daily/page.tsx.
 // All data composes server-side via /api/daily; this screen just fetches
@@ -131,6 +152,13 @@ export default function DailyScreen() {
                         {paragraph}
                       </Text>
                     ))}
+                  <Pressable
+                    onPress={() => router.push(`/people/${saintWithBio.slug}`)}
+                    style={({ pressed }) => [pressed && { opacity: 0.6 }]}
+                    accessibilityRole="button"
+                  >
+                    <Text style={styles.bioLink}>Full library entry →</Text>
+                  </Pressable>
                 </View>
               ) : null}
 
@@ -139,7 +167,16 @@ export default function DailyScreen() {
                   {data.saints.map((saint) => {
                     const icon = data.saintIcons[saint.id];
                     return (
-                      <View key={saint.id} style={styles.saintRow}>
+                      <Pressable
+                        key={saint.id}
+                        onPress={() => router.push(`/people/${saint.slug}`)}
+                        style={({ pressed }) => [
+                          styles.saintRow,
+                          pressed && styles.saintRowPressed,
+                        ]}
+                        accessibilityRole="button"
+                        accessibilityLabel={`Open library entry for ${saint.name}`}
+                      >
                         {icon ? (
                           <Image
                             source={{ uri: icon.src }}
@@ -159,7 +196,8 @@ export default function DailyScreen() {
                           <Text style={styles.saintKind}>{saint.kind}</Text>
                           <Text style={styles.saintName}>{saint.name}</Text>
                         </View>
-                      </View>
+                        <Text style={styles.saintChevron}>›</Text>
+                      </Pressable>
                     );
                   })}
                 </View>
@@ -168,14 +206,43 @@ export default function DailyScreen() {
               {data.daily.additionalCommemorations.length > 0 ? (
                 <View style={styles.alsoCommemorated}>
                   <Text style={styles.sectionLabel}>Also commemorated</Text>
-                  {data.daily.additionalCommemorations.map((item, index) => (
-                    <Text key={`${item.name}-${index}`} style={styles.alsoLine}>
-                      <Text style={styles.alsoName}>{item.name}</Text>
-                      {item.summary ? (
-                        <Text style={styles.alsoSummary}> — {item.summary}</Text>
-                      ) : null}
-                    </Text>
-                  ))}
+                  {data.daily.additionalCommemorations.map((item, index) => {
+                    const linkedSaint = item.saintId
+                      ? data.saints.find((s) => s.id === item.saintId)
+                      : undefined;
+                    const content = (
+                      <Text style={styles.alsoLine}>
+                        <Text
+                          style={
+                            linkedSaint ? styles.alsoNameLink : styles.alsoName
+                          }
+                        >
+                          {item.name}
+                        </Text>
+                        {item.summary ? (
+                          <Text style={styles.alsoSummary}>
+                            {" "}
+                            — {item.summary}
+                          </Text>
+                        ) : null}
+                      </Text>
+                    );
+                    return linkedSaint ? (
+                      <Pressable
+                        key={`${item.name}-${index}`}
+                        onPress={() =>
+                          router.push(`/people/${linkedSaint.slug}`)
+                        }
+                        style={({ pressed }) => [
+                          pressed && { opacity: 0.6 },
+                        ]}
+                      >
+                        {content}
+                      </Pressable>
+                    ) : (
+                      <View key={`${item.name}-${index}`}>{content}</View>
+                    );
+                  })}
                 </View>
               ) : null}
             </Surface>
@@ -188,7 +255,20 @@ export default function DailyScreen() {
               {data.readings.length > 0 ? (
                 <View style={styles.readingList}>
                   {data.readings.map((reading) => (
-                    <View key={reading.id} style={styles.readingCard}>
+                    <Pressable
+                      key={reading.id}
+                      onPress={() =>
+                        router.push(
+                          readingHref(data.translationSlug, reading.scripture),
+                        )
+                      }
+                      style={({ pressed }) => [
+                        styles.readingCard,
+                        pressed && styles.readingCardPressed,
+                      ]}
+                      accessibilityRole="button"
+                      accessibilityLabel={`Open ${reading.scripture.label}`}
+                    >
                       <View style={styles.readingTopRow}>
                         <Pill>{reading.label}</Pill>
                         <Text style={styles.readingContext}>
@@ -198,7 +278,7 @@ export default function DailyScreen() {
                       <Text style={styles.readingScripture}>
                         {reading.scripture.label}
                       </Text>
-                    </View>
+                    </Pressable>
                   ))}
                 </View>
               ) : (
@@ -312,6 +392,12 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     color: colors.inkMuted,
   },
+  bioLink: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: colors.accent,
+    paddingTop: spacing.xs,
+  },
 
   saintList: { gap: spacing.md },
   saintRow: {
@@ -324,6 +410,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
+  },
+  saintRowPressed: {
+    backgroundColor: colors.surfaceStrong,
+  },
+  saintChevron: {
+    fontSize: 22,
+    color: colors.inkSoft,
+    marginLeft: spacing.xs,
   },
   saintIcon: {
     width: 48,
@@ -365,6 +459,7 @@ const styles = StyleSheet.create({
   },
   alsoLine: { fontSize: 14, lineHeight: 22 },
   alsoName: { color: colors.ink },
+  alsoNameLink: { color: colors.ink, textDecorationLine: "underline", textDecorationColor: colors.line },
   alsoSummary: { color: colors.inkSoft },
 
   section: { gap: spacing.lg },
@@ -393,6 +488,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.lg,
     gap: spacing.md,
+  },
+  readingCardPressed: {
+    backgroundColor: colors.surfaceStrong,
   },
   readingTopRow: {
     flexDirection: "row",

@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { router } from "expo-router";
-import { useMemo, useState } from "react";
+import { router, useLocalSearchParams } from "expo-router";
+import { useMemo } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -15,13 +15,15 @@ import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 
 // Bible reader — mobile port of src/app/(shell)/bible/[translation]/[book]/[chapter]/page.tsx.
-// Default to Matthew 5 (the Beatitudes) on first open. Prev/Next arrows
-// step through chapters. Verses with commentary get a small accent dot;
-// tap navigates to the commentary modal route.
 //
-// Scoped out of v1: book picker (no way to jump from Matthew → Genesis
-// yet), translation picker, audio playback, highlighted-verse glow, search,
-// last-read persistence. All coming in follow-up commits.
+// Driven by URL search params so Daily reading cards can deep-link with
+// ?book=...&chapter=...&highlight=3-12. Defaults to KJVA Matthew 5 when no
+// params are present (first-time open). Prev/Next arrows update params
+// in-place via router.setParams; tab re-tap restores the previous params.
+//
+// Verses inside the `highlight` range get an accent-tinted background so
+// the reader can scan to "today's appointed verses" at a glance. Full
+// scroll-into-view animation is a follow-up.
 
 const DEFAULT_TRANSLATION = "kjva";
 const DEFAULT_BOOK = "matthew";
@@ -38,6 +40,7 @@ const BOOK_LABELS: Record<string, string> = {
   proverbs: "Proverbs",
   isaiah: "Isaiah",
   romans: "Romans",
+  acts: "Acts",
 };
 function bookLabel(slug: string) {
   return (
@@ -46,16 +49,37 @@ function bookLabel(slug: string) {
   );
 }
 
+// Parse a "highlight" param like "3" or "3-12" into [start, end] or null.
+function parseHighlight(raw: string | undefined): { start: number; end: number } | null {
+  if (!raw) return null;
+  const match = /^(\d+)(?:-(\d+))?$/.exec(raw);
+  if (!match) return null;
+  const start = Number(match[1]);
+  const end = match[2] ? Number(match[2]) : start;
+  if (!Number.isFinite(start) || !Number.isFinite(end) || end < start) return null;
+  return { start, end };
+}
+
 export default function BibleReaderScreen() {
   const api = getApi();
-  const [translation] = useState(DEFAULT_TRANSLATION);
-  const [bookSlug] = useState(DEFAULT_BOOK);
-  const [chapterNumber, setChapterNumber] = useState(DEFAULT_CHAPTER);
+  const params = useLocalSearchParams<{
+    translation?: string;
+    book?: string;
+    chapter?: string;
+    highlight?: string;
+  }>();
+
+  const translation = params.translation || DEFAULT_TRANSLATION;
+  const bookSlug = params.book || DEFAULT_BOOK;
+  const chapterNumber = Number.parseInt(params.chapter ?? "", 10) || DEFAULT_CHAPTER;
+  const highlight = parseHighlight(
+    Array.isArray(params.highlight) ? params.highlight[0] : params.highlight,
+  );
 
   const chapterQuery = useQuery({
     queryKey: ["bible-chapter", translation, bookSlug, chapterNumber],
     queryFn: () => api.fetchBibleChapter(translation, bookSlug, chapterNumber),
-    staleTime: 60 * 60 * 1000, // chapter text is effectively immutable
+    staleTime: 60 * 60 * 1000,
   });
 
   const catalogQuery = useQuery({
@@ -64,7 +88,6 @@ export default function BibleReaderScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  // Verse numbers in this chapter that have commentary, for the dot affordance.
   const versesWithCommentary = useMemo<Set<number>>(() => {
     const verses =
       catalogQuery.data?.index.byVerse[bookSlug]?.[String(chapterNumber)] ?? [];
@@ -72,15 +95,26 @@ export default function BibleReaderScreen() {
   }, [catalogQuery.data, bookSlug, chapterNumber]);
 
   const onPrevChapter = () => {
-    if (chapterNumber > 1) setChapterNumber(chapterNumber - 1);
+    if (chapterNumber > 1) {
+      router.setParams({
+        translation,
+        book: bookSlug,
+        chapter: String(chapterNumber - 1),
+        // Clear highlight when navigating away from the appointed chapter.
+        highlight: "",
+      });
+    }
   };
   const onNextChapter = () => {
-    setChapterNumber(chapterNumber + 1);
+    router.setParams({
+      translation,
+      book: bookSlug,
+      chapter: String(chapterNumber + 1),
+      highlight: "",
+    });
   };
   const onVerseTap = (verseNumber: number) => {
-    router.push(
-      `/commentary/${bookSlug}/${chapterNumber}/${verseNumber}`,
-    );
+    router.push(`/commentary/${bookSlug}/${chapterNumber}/${verseNumber}`);
   };
 
   return (
@@ -99,12 +133,24 @@ export default function BibleReaderScreen() {
           <Text style={styles.headerArrowGlyph}>‹</Text>
         </Pressable>
 
-        <View style={styles.headerCenter}>
+        <Pressable
+          onPress={() =>
+            router.push(`/book-picker?translation=${translation}`)
+          }
+          style={({ pressed }) => [
+            styles.headerCenter,
+            pressed && { opacity: 0.6 },
+          ]}
+          hitSlop={8}
+          accessibilityRole="button"
+          accessibilityLabel="Choose a book"
+        >
           <Text style={styles.headerEyebrow}>{translation.toUpperCase()}</Text>
           <Text style={styles.headerTitle}>
             {bookLabel(bookSlug)} {chapterNumber}
+            <Text style={styles.headerTitleChevron}>  ▾</Text>
           </Text>
-        </View>
+        </Pressable>
 
         <Pressable
           onPress={onNextChapter}
@@ -160,6 +206,10 @@ export default function BibleReaderScreen() {
                 verse.paragraphStart === true ||
                 index === 0 ||
                 chapterQuery.data!.verses[index - 1]?.paragraphStart === true;
+              const isHighlighted =
+                highlight !== null &&
+                verse.verseNumber >= highlight.start &&
+                verse.verseNumber <= highlight.end;
 
               return (
                 <Pressable
@@ -168,15 +218,16 @@ export default function BibleReaderScreen() {
                   style={({ pressed }) => [
                     styles.verseRow,
                     isFirstAfterParagraph && styles.verseRowParagraphStart,
+                    isHighlighted && styles.verseRowHighlight,
                     pressed && hasCommentary && styles.verseRowPressed,
                   ]}
-                  accessibilityLabel={`Verse ${verse.verseNumber}${hasCommentary ? ", tap for commentary" : ""}`}
+                  accessibilityLabel={`Verse ${verse.verseNumber}${hasCommentary ? ", tap for commentary" : ""}${isHighlighted ? ", in today's appointed reading" : ""}`}
                   accessibilityRole={hasCommentary ? "button" : "text"}
                 >
                   <Text style={styles.verseInline}>
                     <Text style={styles.verseNumber}>
                       {verse.verseNumber}
-                      {" "}
+                      {" "}
                     </Text>
                     <Text style={styles.verseText}>{verse.text}</Text>
                   </Text>
@@ -188,7 +239,7 @@ export default function BibleReaderScreen() {
         ) : null}
 
         <Text style={styles.tapHint}>
-          Tap any verse with a gold dot to read the Fathers' commentary.
+          Tap any verse with a gold dot to read the Fathers&apos; commentary.
         </Text>
       </ScrollView>
     </SafeAreaView>
@@ -231,6 +282,10 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: colors.ink,
     letterSpacing: -0.3,
+  },
+  headerTitleChevron: {
+    fontSize: 11,
+    color: colors.inkSoft,
   },
 
   scroll: { flex: 1 },
@@ -277,15 +332,13 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     gap: spacing.sm,
   },
-  verseRowParagraphStart: {
-    marginTop: spacing.md,
-  },
-  verseRowPressed: {
+  verseRowParagraphStart: { marginTop: spacing.md },
+  verseRowPressed: { backgroundColor: colors.accentSoft },
+  verseRowHighlight: {
     backgroundColor: colors.accentSoft,
+    paddingHorizontal: spacing.md,
   },
-  verseInline: {
-    flex: 1,
-  },
+  verseInline: { flex: 1 },
   verseNumber: {
     fontFamily: fonts.mono,
     fontSize: 11,
