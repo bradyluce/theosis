@@ -65,10 +65,13 @@ export default function RootLayout() {
             name="book-picker"
             options={{ presentation: 'modal', headerShown: false }}
           />
-          {/* people/[slug] is a stack push (not modal) so the back button
-              returns to the Library tab. headerShown is set on the route
-              itself so the title is empty but the back arrow shows. */}
+          {/* people/[slug], works/[slug], reading/[work]/[order] are
+              stack pushes (not modals) so the back button chain reads
+              Library → Person → Work → Reading. Each screen sets its
+              own headerShown / headerBackTitle via Stack.Screen. */}
           <Stack.Screen name="people/[slug]" />
+          <Stack.Screen name="works/[slug]" />
+          <Stack.Screen name="reading/[work]/[order]" />
         </Stack>
         <StatusBar style="light" />
       </ThemeProvider>

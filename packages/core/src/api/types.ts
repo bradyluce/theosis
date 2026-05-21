@@ -72,6 +72,15 @@ export type ByWorkFile = {
   chapter: WorkChapter;
 };
 
+// Chapter summary — every WorkChapter field except `sections`. Used by
+// the work-detail screen's table of contents so a 13-book work doesn't
+// download all 500 KB of prose just to render a list of titles.
+export type WorkChapterSummary = Omit<WorkChapter, "sections">;
+
+export type WorkChaptersResponse = {
+  chapters: WorkChapterSummary[];
+};
+
 // --- /api/bible/catalog ----------------------------------------------------
 
 export type BibleCatalog = {

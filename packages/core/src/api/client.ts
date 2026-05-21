@@ -25,6 +25,7 @@ import type {
   LibraryPeopleResponse,
   SearchResponse,
   VersionResponse,
+  WorkChaptersResponse,
 } from "./types";
 
 export class ApiError extends Error {
@@ -68,6 +69,7 @@ export type TheosisApi = {
     chapterNumber: number,
   ) => Promise<ByChapterFile>;
   fetchWorkChapter: (workId: string, order: number) => Promise<ByWorkFile>;
+  fetchWorkChapters: (workId: string) => Promise<WorkChaptersResponse>;
   search: (query: string) => Promise<SearchResponse>;
 };
 
@@ -122,6 +124,10 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
     fetchWorkChapter: (workId, order) =>
       getJson<ByWorkFile>(
         `/api/library/by-work/${encodeURIComponent(workId)}/${order}`,
+      ),
+    fetchWorkChapters: (workId) =>
+      getJson<WorkChaptersResponse>(
+        `/api/library/by-work/${encodeURIComponent(workId)}/chapters`,
       ),
     search: (query) =>
       getJson<SearchResponse>(`/api/search?q=${encodeURIComponent(query)}`),

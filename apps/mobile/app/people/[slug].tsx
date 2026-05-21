@@ -40,10 +40,25 @@ export default function PersonDetailScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
+  // Library catalog gives us the full Work[] alongside Person[] so we can
+  // show this person's works without an extra round-trip.
+  const libraryQuery = useQuery({
+    queryKey: ["library-catalog"],
+    queryFn: () => api.fetchLibraryCatalog(),
+    staleTime: 60 * 60 * 1000,
+  });
+
   const person = useMemo(
     () => peopleQuery.data?.people.find((p) => p.slug === slug),
     [peopleQuery.data, slug],
   );
+
+  const works = useMemo(() => {
+    if (!person || !libraryQuery.data) return [];
+    return libraryQuery.data.works
+      .filter((w) => w.personId === person.id)
+      .sort((a, b) => a.title.localeCompare(b.title));
+  }, [person, libraryQuery.data]);
 
   const bioParagraphs = useMemo(() => {
     if (!person?.extendedSummary) return [];
@@ -140,6 +155,39 @@ export default function PersonDetailScreen() {
                     <Text key={index} style={styles.bioParagraph}>
                       {paragraph}
                     </Text>
+                  ))}
+                </View>
+              ) : null}
+
+              {works.length > 0 ? (
+                <View style={styles.worksBlock}>
+                  <Text style={styles.factLabel}>
+                    Works in the library
+                  </Text>
+                  {works.map((work) => (
+                    <Pressable
+                      key={work.id}
+                      onPress={() => router.push(`/works/${work.slug}`)}
+                      style={({ pressed }) => [
+                        styles.workRow,
+                        pressed && styles.workRowPressed,
+                      ]}
+                      accessibilityRole="button"
+                      accessibilityLabel={`Open ${work.title}`}
+                    >
+                      <View style={styles.workMeta}>
+                        <Pill variant="subtle">{work.workType}</Pill>
+                        <Text style={styles.workLength}>
+                          {work.lengthLabel}
+                        </Text>
+                      </View>
+                      <Text style={styles.workTitle}>{work.title}</Text>
+                      {work.summary ? (
+                        <Text style={styles.workSummary} numberOfLines={3}>
+                          {work.summary}
+                        </Text>
+                      ) : null}
+                    </Pressable>
                   ))}
                 </View>
               ) : null}
@@ -273,5 +321,44 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontStyle: "italic",
     paddingTop: spacing.md,
+  },
+
+  worksBlock: {
+    gap: spacing.md,
+  },
+  workRow: {
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+    gap: spacing.sm,
+  },
+  workRowPressed: {
+    backgroundColor: colors.surfaceStrong,
+  },
+  workMeta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm,
+  },
+  workLength: {
+    fontSize: 11,
+    color: colors.inkSoft,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+  },
+  workTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 18,
+    color: colors.ink,
+    letterSpacing: -0.2,
+    lineHeight: 22,
+  },
+  workSummary: {
+    fontSize: 13,
+    lineHeight: 20,
+    color: colors.inkMuted,
   },
 });
