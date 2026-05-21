@@ -5,7 +5,11 @@
 
 import type {
   CommentaryEntry,
+  DailyCommemoration,
+  HymnText,
+  IconRef,
   Person,
+  ReadingAssignment,
   SourceRecord,
   Work,
   WorkChapter,
@@ -61,6 +65,22 @@ export type ByChapterFile = {
 
 export type ByWorkFile = {
   chapter: WorkChapter;
+};
+
+// --- /api/daily ------------------------------------------------------------
+
+// Pre-composed snapshot of the daily commemoration for the mobile app —
+// bundles getDailyCommemoration + getPeopleByIds + getDailyReadings +
+// getDailyHymns + icon resolution into one response. `primaryIcon` and
+// `saintIcons[*]` are null when no icon is available.
+export type DailyResponse = {
+  daily: DailyCommemoration;
+  saints: Person[];
+  readings: ReadingAssignment[];
+  hymns: HymnText[];
+  translationSlug: string;
+  primaryIcon: IconRef | null;
+  saintIcons: Record<string, IconRef | null>;
 };
 
 // --- /api/version ----------------------------------------------------------

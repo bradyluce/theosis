@@ -1,119 +1,439 @@
 import { useQuery } from "@tanstack/react-query";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { Image } from "expo-image";
+import { useMemo } from "react";
+import {
+  ActivityIndicator,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { ThemedText } from "@/components/themed-text";
-import { ThemedView } from "@/components/themed-view";
-import { getApi, getApiBaseUrl } from "@/lib/api";
+import { PageHeader } from "@/components/theosis/page-header";
+import { Pill } from "@/components/theosis/pill";
+import { Surface } from "@/components/theosis/surface";
+import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
+import { getApi } from "@/lib/api";
 
-// Step-3 Hello screen. Proves the workspace plumbing works end-to-end:
-//   - @theosis/core resolves via the file: dep
-//   - The typed API client builds a URL against the local dev server
-//   - React Query handles fetch/cache/error states
-//   - Expo Router renders this at the Home tab
-//
-// Uses ThemedText/ThemedView from the SDK 54 template so colors adapt
-// to light/dark mode. (React Native's raw <Text> defaults to BLACK,
-// invisible against React Navigation's DarkTheme dark background.)
-//
-// Step 4 will replace this with the Daily Commemoration screen.
+// Daily Commemoration screen — mobile port of src/app/(shell)/daily/page.tsx.
+// All data composes server-side via /api/daily; this screen just fetches
+// once via React Query and renders. Visual design mirrors the web Daily
+// page: dark surface cards, gilt accent pills, serif headlines.
 
-export default function HomeScreen() {
-  const api = getApi();
-  const baseUrl = getApiBaseUrl();
-  const { data, error, isLoading, refetch, isFetching } = useQuery({
-    queryKey: ["version"],
-    queryFn: () => api.fetchVersion(),
-    staleTime: 60 * 1000,
-  });
-
-  return (
-    <ThemedView style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <View style={styles.content}>
-          <ThemedText style={styles.eyebrow}>Theosis</ThemedText>
-          <ThemedText style={styles.headline}>Mobile is alive.</ThemedText>
-          <ThemedText style={styles.muted}>API base: {baseUrl}</ThemedText>
-
-          <ThemedView style={styles.card} darkColor="#1a1a1a" lightColor="#f5f5f5">
-            <ThemedText style={styles.cardLabel}>/api/version</ThemedText>
-            {isLoading ? <ActivityIndicator /> : null}
-            {error ? (
-              <ThemedText style={styles.error}>
-                {error instanceof Error ? error.message : String(error)}
-              </ThemedText>
-            ) : null}
-            {data ? (
-              <View style={styles.kvList}>
-                <KeyValue label="commit" value={data.commit} />
-                <KeyValue label="branch" value={data.branch} />
-                <KeyValue label="environment" value={data.environment} />
-              </View>
-            ) : null}
-          </ThemedView>
-
-          <ThemedText style={styles.muted}>
-            {isFetching ? "Fetching…" : "Tap to retry"}
-          </ThemedText>
-          <ThemedText style={styles.linkLike} onPress={() => refetch()}>
-            Retry
-          </ThemedText>
-        </View>
-      </SafeAreaView>
-    </ThemedView>
-  );
+function formatDate(isoDate: string): string {
+  // Match the web's UTC-based formatter so the displayed weekday agrees
+  // with the resolved ISO date regardless of the user's timezone.
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(isoDate));
 }
 
-function KeyValue({ label, value }: { label: string; value: string }) {
+export default function DailyScreen() {
+  const api = getApi();
+  const { data, error, isLoading, refetch, isFetching } = useQuery({
+    queryKey: ["daily"],
+    queryFn: () => api.fetchDaily(),
+    staleTime: 5 * 60 * 1000,
+  });
+
+  // The first linked saint with an extendedSummary becomes the "Read more"
+  // source. Matches the web page's logic.
+  const saintWithBio = useMemo(
+    () => data?.saints.find((saint) => Boolean(saint.extendedSummary)),
+    [data?.saints],
+  );
+
   return (
-    <View style={styles.kvRow}>
-      <ThemedText style={styles.kvKey}>{label}</ThemedText>
-      <ThemedText style={styles.kvValue}>{value}</ThemedText>
-    </View>
+    <SafeAreaView style={styles.safe} edges={["top"]}>
+      <ScrollView
+        style={styles.scroll}
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {isLoading ? (
+          <View style={styles.loading}>
+            <ActivityIndicator color={colors.accent} />
+          </View>
+        ) : null}
+
+        {error ? (
+          <Surface tone="quiet" style={styles.errorCard}>
+            <Text style={text.eyebrow}>Couldn't load today</Text>
+            <Text style={[text.body, { color: colors.error, marginTop: spacing.sm }]}>
+              {error instanceof Error ? error.message : String(error)}
+            </Text>
+            <Pressable
+              onPress={() => refetch()}
+              style={({ pressed }) => [
+                styles.retry,
+                pressed && { opacity: 0.7 },
+              ]}
+            >
+              <Text style={styles.retryLabel}>
+                {isFetching ? "Retrying…" : "Try again"}
+              </Text>
+            </Pressable>
+          </Surface>
+        ) : null}
+
+        {data ? (
+          <>
+            <View style={styles.dateBanner}>
+              <Text style={styles.dateText}>{formatDate(data.daily.isoDate)}</Text>
+            </View>
+
+            <PageHeader
+              eyebrow="Daily"
+              title={data.daily.title}
+              description={data.daily.summary}
+            />
+
+            <Surface style={styles.commemorationCard}>
+              {(data.daily.feastLabel || data.daily.fastLabel) ? (
+                <View style={styles.pillRow}>
+                  {data.daily.feastLabel ? (
+                    <Pill variant="accent">{data.daily.feastLabel}</Pill>
+                  ) : null}
+                  {data.daily.fastLabel ? (
+                    <Pill variant="subtle">{data.daily.fastLabel}</Pill>
+                  ) : null}
+                </View>
+              ) : null}
+
+              {data.primaryIcon ? (
+                <View style={styles.iconWrap}>
+                  <Image
+                    source={{ uri: data.primaryIcon.src }}
+                    style={styles.icon}
+                    contentFit="contain"
+                    transition={200}
+                    accessibilityLabel={data.primaryIcon.alt}
+                  />
+                </View>
+              ) : null}
+
+              {saintWithBio?.extendedSummary ? (
+                <View style={styles.bioBlock}>
+                  <Text style={styles.bioLabel}>
+                    About {saintWithBio.name.split(",")[0]}
+                  </Text>
+                  {saintWithBio.extendedSummary
+                    .split("\n\n")
+                    .slice(0, 2)
+                    .map((paragraph, index) => (
+                      <Text key={index} style={styles.bioParagraph}>
+                        {paragraph}
+                      </Text>
+                    ))}
+                </View>
+              ) : null}
+
+              {data.saints.length > 0 ? (
+                <View style={styles.saintList}>
+                  {data.saints.map((saint) => {
+                    const icon = data.saintIcons[saint.id];
+                    return (
+                      <View key={saint.id} style={styles.saintRow}>
+                        {icon ? (
+                          <Image
+                            source={{ uri: icon.src }}
+                            style={styles.saintIcon}
+                            contentFit="cover"
+                            transition={200}
+                            accessibilityLabel={icon.alt}
+                          />
+                        ) : (
+                          <View style={[styles.saintIcon, styles.saintIconPlaceholder]}>
+                            <Text style={styles.saintIconLetter}>
+                              {saint.name.charAt(0)}
+                            </Text>
+                          </View>
+                        )}
+                        <View style={styles.saintMeta}>
+                          <Text style={styles.saintKind}>{saint.kind}</Text>
+                          <Text style={styles.saintName}>{saint.name}</Text>
+                        </View>
+                      </View>
+                    );
+                  })}
+                </View>
+              ) : null}
+
+              {data.daily.additionalCommemorations.length > 0 ? (
+                <View style={styles.alsoCommemorated}>
+                  <Text style={styles.sectionLabel}>Also commemorated</Text>
+                  {data.daily.additionalCommemorations.map((item, index) => (
+                    <Text key={`${item.name}-${index}`} style={styles.alsoLine}>
+                      <Text style={styles.alsoName}>{item.name}</Text>
+                      {item.summary ? (
+                        <Text style={styles.alsoSummary}> — {item.summary}</Text>
+                      ) : null}
+                    </Text>
+                  ))}
+                </View>
+              ) : null}
+            </Surface>
+
+            <Surface style={styles.section}>
+              <View style={styles.sectionHeader}>
+                <Text style={styles.sectionEyebrow}>Readings</Text>
+                <Text style={styles.sectionTitle}>Scripture for the day</Text>
+              </View>
+              {data.readings.length > 0 ? (
+                <View style={styles.readingList}>
+                  {data.readings.map((reading) => (
+                    <View key={reading.id} style={styles.readingCard}>
+                      <View style={styles.readingTopRow}>
+                        <Pill>{reading.label}</Pill>
+                        <Text style={styles.readingContext}>
+                          {reading.contextLabel}
+                        </Text>
+                      </View>
+                      <Text style={styles.readingScripture}>
+                        {reading.scripture.label}
+                      </Text>
+                    </View>
+                  ))}
+                </View>
+              ) : (
+                <Text style={text.body}>
+                  No appointed readings for this day yet — weekday lectionary
+                  coverage is still being filled in.
+                </Text>
+              )}
+            </Surface>
+
+            <Surface style={styles.section}>
+              <View style={styles.sectionHeader}>
+                <Text style={styles.sectionEyebrow}>Hymns</Text>
+                <Text style={styles.sectionTitle}>Troparion and kontakion</Text>
+              </View>
+              {data.hymns.length > 0 ? (
+                <View style={styles.hymnList}>
+                  {data.hymns.map((hymn) => (
+                    <View key={hymn.id} style={styles.hymnCard}>
+                      <View style={styles.readingTopRow}>
+                        <Pill variant="subtle">{hymn.type}</Pill>
+                        <Text style={styles.readingContext}>{hymn.tone}</Text>
+                      </View>
+                      <Text style={styles.hymnTitle}>{hymn.title}</Text>
+                      <Text style={styles.hymnText}>{hymn.text}</Text>
+                    </View>
+                  ))}
+                </View>
+              ) : (
+                <Text style={text.body}>
+                  No hymns yet appointed for this day — the corpus is being
+                  filled in with original English translations.
+                </Text>
+              )}
+            </Surface>
+          </>
+        ) : null}
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
-  safeArea: { flex: 1 },
-  content: {
-    flex: 1,
-    paddingHorizontal: 24,
-    paddingVertical: 32,
-    gap: 16,
+  safe: { flex: 1, backgroundColor: colors.background },
+  scroll: { flex: 1 },
+  scrollContent: {
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.md,
+    paddingBottom: spacing["4xl"],
+    gap: spacing["2xl"],
   },
-  eyebrow: {
-    fontSize: 12,
+  loading: { paddingVertical: spacing["3xl"], alignItems: "center" },
+
+  errorCard: { gap: spacing.sm },
+  retry: { marginTop: spacing.md, alignSelf: "flex-start" },
+  retryLabel: {
+    fontSize: 13,
     fontWeight: "600",
-    letterSpacing: 2,
-    textTransform: "uppercase",
-    opacity: 0.6,
+    color: colors.accent,
+    paddingVertical: spacing.xs,
   },
-  headline: { fontSize: 28, fontWeight: "600" },
-  muted: { fontSize: 13, opacity: 0.65 },
-  card: {
-    padding: 16,
-    borderRadius: 12,
+
+  // Centered date banner — small uppercase, tracked.
+  dateBanner: {
+    borderRadius: radii.card,
     borderWidth: StyleSheet.hairlineWidth,
-    borderColor: "rgba(127,127,127,0.4)",
-    gap: 12,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+    paddingHorizontal: spacing.xl,
+    paddingVertical: spacing.md,
+    alignItems: "center",
   },
-  cardLabel: {
-    fontSize: 11,
-    fontWeight: "700",
-    letterSpacing: 1.5,
+  dateText: {
+    fontSize: 11.5,
+    fontWeight: "500",
+    color: colors.inkSoft,
+    letterSpacing: 2.4,
     textTransform: "uppercase",
-    opacity: 0.7,
   },
-  kvList: { gap: 6 },
-  kvRow: { flexDirection: "row", justifyContent: "space-between" },
-  kvKey: { fontSize: 13, opacity: 0.65 },
-  kvValue: { fontSize: 14, fontFamily: "Menlo" },
-  error: { color: "#c43d3d", fontSize: 13 },
-  linkLike: {
-    color: "#3b6cd9",
+
+  commemorationCard: { gap: spacing.xl },
+  pillRow: { flexDirection: "row", flexWrap: "wrap", gap: spacing.sm },
+  iconWrap: { alignItems: "center", paddingVertical: spacing.xs },
+  icon: {
+    width: 200,
+    height: 240,
+    borderRadius: 6,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surfaceStrong,
+  },
+
+  bioBlock: {
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.background,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.lg,
+    gap: spacing.md,
+  },
+  bioLabel: {
+    fontSize: 10.4,
+    fontWeight: "500",
+    color: colors.inkSoft,
+    letterSpacing: 2.4,
+    textTransform: "uppercase",
+  },
+  bioParagraph: {
     fontSize: 14,
-    fontWeight: "600",
-    paddingVertical: 8,
+    lineHeight: 24,
+    color: colors.inkMuted,
+  },
+
+  saintList: { gap: spacing.md },
+  saintRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.background,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+  },
+  saintIcon: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surfaceStrong,
+  },
+  saintIconPlaceholder: { alignItems: "center", justifyContent: "center" },
+  saintIconLetter: {
+    fontFamily: fonts.serif,
+    fontSize: 20,
+    color: colors.accent,
+  },
+  saintMeta: { flex: 1, gap: 4 },
+  saintKind: {
+    fontSize: 10.4,
+    fontWeight: "500",
+    color: colors.inkSoft,
+    letterSpacing: 2.4,
+    textTransform: "uppercase",
+  },
+  saintName: {
+    fontFamily: fonts.serif,
+    fontSize: 20,
+    color: colors.ink,
+    lineHeight: 26,
+    letterSpacing: -0.3,
+  },
+
+  alsoCommemorated: { gap: spacing.sm },
+  sectionLabel: {
+    fontSize: 10.4,
+    fontWeight: "500",
+    color: colors.inkSoft,
+    letterSpacing: 2.4,
+    textTransform: "uppercase",
+  },
+  alsoLine: { fontSize: 14, lineHeight: 22 },
+  alsoName: { color: colors.ink },
+  alsoSummary: { color: colors.inkSoft },
+
+  section: { gap: spacing.lg },
+  sectionHeader: { gap: spacing.xs },
+  sectionEyebrow: {
+    fontSize: 10.4,
+    fontWeight: "500",
+    color: colors.inkSoft,
+    letterSpacing: 2.4,
+    textTransform: "uppercase",
+  },
+  sectionTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 26,
+    color: colors.ink,
+    lineHeight: 32,
+    letterSpacing: -0.3,
+  },
+
+  readingList: { gap: spacing.md },
+  readingCard: {
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.background,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.lg,
+    gap: spacing.md,
+  },
+  readingTopRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: spacing.sm,
+  },
+  readingContext: {
+    fontSize: 11,
+    color: colors.inkSoft,
+    letterSpacing: 1.8,
+    textTransform: "uppercase",
+  },
+  readingScripture: {
+    fontFamily: fonts.serif,
+    fontSize: 22,
+    color: colors.ink,
+    lineHeight: 28,
+    letterSpacing: -0.3,
+  },
+
+  hymnList: { gap: spacing.md },
+  hymnCard: {
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.background,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.lg,
+    gap: spacing.md,
+  },
+  hymnTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 22,
+    color: colors.ink,
+    lineHeight: 28,
+    letterSpacing: -0.3,
+  },
+  hymnText: {
+    fontSize: 14,
+    lineHeight: 24,
+    color: colors.inkMuted,
   },
 });

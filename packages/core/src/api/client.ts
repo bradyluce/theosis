@@ -18,6 +18,7 @@ import type {
   ByVerseFile,
   ByWorkFile,
   CommentaryCatalog,
+  DailyResponse,
   LibraryCatalog,
   VersionResponse,
 } from "./types";
@@ -41,6 +42,9 @@ export type TheosisApiOptions = {
 
 export type TheosisApi = {
   fetchVersion: () => Promise<VersionResponse>;
+  // `isoDate` is optional — omit for today, pass "YYYY-MM-DD" for a specific
+  // calendar date (e.g. peeking at a feast next week).
+  fetchDaily: (isoDate?: string) => Promise<DailyResponse>;
   fetchCommentaryCatalog: () => Promise<CommentaryCatalog>;
   fetchLibraryCatalog: () => Promise<LibraryCatalog>;
   fetchVerseCommentary: (
@@ -79,6 +83,12 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
 
   return {
     fetchVersion: () => getJson<VersionResponse>("/api/version"),
+    fetchDaily: (isoDate) =>
+      getJson<DailyResponse>(
+        isoDate
+          ? `/api/daily?date=${encodeURIComponent(isoDate)}`
+          : "/api/daily",
+      ),
     fetchCommentaryCatalog: () =>
       getJson<CommentaryCatalog>("/api/commentary/catalog"),
     fetchLibraryCatalog: () => getJson<LibraryCatalog>("/api/library/catalog"),
