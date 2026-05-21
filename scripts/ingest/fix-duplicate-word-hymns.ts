@@ -20,27 +20,43 @@ type HymnSlot = {
 // Words that may double up when both the title and the template start
 // with the type designation. The replacement strips the duplicate.
 const DUPLICATE_PATTERNS: Array<[RegExp, string]> = [
-  [/Thy Martyr Martyr /g, "Thy Martyr "],
+  // Singular and plural "Martyr/Martyrs" duplications
+  [/Thy Martyr Martyrs? /g, "Thy Martyrs "],
+  [/Thy Martyrs Martyr /g, "Thy Martyrs "],
+  [/Thy Martyrs Martyrs /g, "Thy Martyrs "],
   [/Thy Martyr Great-martyr /g, "Thy Great-martyr "],
   [/Thy Martyr Great martyr /g, "Thy Great-martyr "],
   [/Thy Martyr Hieromartyr /g, "Thy Hieromartyr "],
+  [/Thy Martyrs Hieromartyrs? /g, "Thy Hieromartyrs "],
   [/Thy Martyr Virgin-martyr /g, "Thy Virgin-martyr "],
   [/Thy Great-martyr Great-martyr /g, "Thy Great-martyr "],
   [/Thy Great-martyr Martyr /g, "Thy Great-martyr "],
   [/Thy Great-martyr Hieromartyr /g, "Thy Hieromartyr "],
-  [/Thy lamb Martyr /g, "Thy lamb "],
-  [/Thy lamb Virgin-martyr /g, "Thy lamb "],
-  [/Thy lamb Great-martyr /g, "Thy lamb "],
-  [/Thy lamb Hieromartyr /g, "Thy lamb "],
+  // Title-prefix duplications inside saint names
+  [/Thy Martyr Holy Prophet /g, "The holy prophet "],
+  [/Thy Martyr Prophet /g, "The holy prophet "],
+  [/Thy Martyr Apostle /g, "The holy apostle "],
+  [/Thy Martyr Holy Apostle /g, "The holy apostle "],
+  // "Thy lamb" templates (female virgin-martyrs)
+  [/Thy lamb (Martyr|Virgin-martyr|Great-martyr|Hieromartyr|Holy Martyr|St\.) /g, "Thy lamb "],
+  // Apostle templates
   [/O Holy Apostle Apostle /g, "O Holy Apostle "],
-  [/O Holy Apostle Holy Apostle /g, "O Holy Apostle "],
-  [/O Holy Apostle Holy Apostles /g, "O Holy Apostle "],
+  [/O Holy Apostle Holy Apostles? /g, "O Holy Apostle "],
+  [/O Holy Apostle Apostles /g, "O Holy Apostles "],
+  // Hierarch templates
   [/Holy Father Hieromartyr /g, "Holy Hieromartyr "],
   [/Holy Father St\. /g, "Holy Father "],
   [/Holy Father Bishop /g, "Holy Hierarch "],
+  [/Holy Father Patriarch /g, "Holy Patriarch "],
+  [/Holy Father Archbishop /g, "Holy Archbishop "],
+  [/Holy Father Metropolitan /g, "Holy Metropolitan "],
+  // Prophet templates
   [/thy prophet Holy Prophet /g, "thy prophet "],
   [/thy prophet Prophet /g, "thy prophet "],
+  // Venerable templates
   [/O Venerable St\. /g, "O Venerable "],
+  [/O Venerable Venerable /g, "O Venerable "],
+  // Wonderworker templates
   [/O Wonderworker St\. /g, "O Wonderworker "],
   [/O Wonderworker Wonderworker /g, "O Wonderworker "],
 ];
@@ -49,6 +65,7 @@ const DUPLICATE_PATTERNS: Array<[RegExp, string]> = [
 const TITLE_PATTERNS: Array<[RegExp, string]> = [
   [/Troparion of Martyr Martyr /g, "Troparion of Martyr "],
   [/Troparion of Great-martyr Great-martyr /g, "Troparion of Great-martyr "],
+  [/Troparion of Holy Apostle Apostle /g, "Troparion of Holy Apostle "],
 ];
 
 function fixText(text: string): string {

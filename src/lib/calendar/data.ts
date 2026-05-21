@@ -24,7 +24,7 @@ type MovableFile = { entries: Record<string, MovableCycleEntry> };
 type LectionaryFile = LectionaryData;
 type HymnFile = HymnData;
 
-// Cache invalidated 2026-05-20 after hymn duplicate-word fix.
+// Cache invalidated 2026-05-20 after hymn duplicate-word fix (round 2).
 let cache: CalendarData | null = null;
 
 function readJsonFile<T>(filePath: string): T {
