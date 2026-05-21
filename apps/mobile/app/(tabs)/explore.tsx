@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { router, useLocalSearchParams } from "expo-router";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -13,6 +13,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import { getLastReadLocation, setLastReadLocation } from "@/lib/preferences";
 
 // Bible reader — mobile port of src/app/(shell)/bible/[translation]/[book]/[chapter]/page.tsx.
 //
@@ -75,6 +76,46 @@ export default function BibleReaderScreen() {
   const highlight = parseHighlight(
     Array.isArray(params.highlight) ? params.highlight[0] : params.highlight,
   );
+
+  // First-launch last-read restore. If the URL has no params (cold start
+  // on this tab, no deep-linking from Daily), look up the persisted
+  // location and replace params with it. `restored` gates the persist
+  // effect below so we don't overwrite saved state with defaults during
+  // the brief async window before AsyncStorage returns.
+  const noParamsPresent = !params.translation && !params.book && !params.chapter;
+  const [restored, setRestored] = useState(false);
+  useEffect(() => {
+    if (!noParamsPresent) {
+      setRestored(true);
+      return;
+    }
+    let canceled = false;
+    getLastReadLocation().then((loc) => {
+      if (canceled) return;
+      if (loc) {
+        router.setParams({
+          translation: loc.translation,
+          book: loc.book,
+          chapter: String(loc.chapter),
+        });
+      }
+      setRestored(true);
+    });
+    return () => {
+      canceled = true;
+    };
+  }, [noParamsPresent]);
+
+  // Persist on every (translation, book, chapter) change. Skip until
+  // restore completes to avoid clobbering saved state with defaults.
+  useEffect(() => {
+    if (!restored) return;
+    setLastReadLocation({
+      translation,
+      book: bookSlug,
+      chapter: chapterNumber,
+    });
+  }, [restored, translation, bookSlug, chapterNumber]);
 
   const chapterQuery = useQuery({
     queryKey: ["bible-chapter", translation, bookSlug, chapterNumber],

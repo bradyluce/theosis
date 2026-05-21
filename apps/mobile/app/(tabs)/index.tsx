@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import {
   ActivityIndicator,
   Pressable,
+  RefreshControl,
   ScrollView,
   StyleSheet,
   Text,
@@ -76,6 +77,15 @@ export default function DailyScreen() {
         style={styles.scroll}
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={isFetching && !isLoading}
+            onRefresh={() => refetch()}
+            tintColor={colors.accent}
+            // Android pulls down a circular spinner — color it gold too.
+            colors={[colors.accent]}
+          />
+        }
       >
         {isLoading ? (
           <View style={styles.loading}>

@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
+  RefreshControl,
   ScrollView,
   StyleSheet,
   Text,
@@ -72,6 +73,14 @@ export default function LibraryScreen() {
         contentContainerStyle={styles.scrollContent}
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={peopleQuery.isFetching && !peopleQuery.isLoading}
+            onRefresh={() => peopleQuery.refetch()}
+            tintColor={colors.accent}
+            colors={[colors.accent]}
+          />
+        }
       >
         {peopleQuery.isLoading ? (
           <View style={styles.loading}>
