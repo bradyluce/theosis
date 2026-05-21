@@ -21,6 +21,7 @@ import type {
   CommentaryCatalog,
   DailyResponse,
   LibraryCatalog,
+  LibraryPeopleResponse,
   VersionResponse,
 } from "./types";
 
@@ -48,6 +49,7 @@ export type TheosisApi = {
   fetchDaily: (isoDate?: string) => Promise<DailyResponse>;
   fetchCommentaryCatalog: () => Promise<CommentaryCatalog>;
   fetchLibraryCatalog: () => Promise<LibraryCatalog>;
+  fetchLibraryPeople: () => Promise<LibraryPeopleResponse>;
   fetchBibleChapter: (
     translationId: string,
     bookSlug: string,
@@ -98,6 +100,8 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
     fetchCommentaryCatalog: () =>
       getJson<CommentaryCatalog>("/api/commentary/catalog"),
     fetchLibraryCatalog: () => getJson<LibraryCatalog>("/api/library/catalog"),
+    fetchLibraryPeople: () =>
+      getJson<LibraryPeopleResponse>("/api/library/people"),
     fetchBibleChapter: (translationId, bookSlug, chapterNumber) =>
       getJson<BibleChapterFile>(
         `/api/bible/${encodeURIComponent(translationId)}/${encodeURIComponent(bookSlug)}/${chapterNumber}`,

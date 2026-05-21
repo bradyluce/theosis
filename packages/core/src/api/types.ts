@@ -76,6 +76,17 @@ export type BibleChapterFile = {
   verses: BibleVerse[];
 };
 
+// --- /api/library/people ---------------------------------------------------
+
+// One Person enriched with their resolved icon (absolute URL, suitable for
+// direct fetch from a mobile client). `icon` is null when no icon is
+// catalogued for this person.
+export type LibraryPerson = Person & { icon: IconRef | null };
+
+export type LibraryPeopleResponse = {
+  people: LibraryPerson[];
+};
+
 // --- /api/daily ------------------------------------------------------------
 
 // Pre-composed snapshot of the daily commemoration for the mobile app —
