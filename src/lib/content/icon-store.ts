@@ -65,13 +65,6 @@ const PERSON_ICON_BINDINGS: Record<string, string> = {
   "nicholas-of-myra": "icon-st-nicholas-myra",
   "seraphim-of-sarov": "icon-st-seraphim-of-sarov",
   "sergius-of-radonezh": "icon-st-sergius-of-radonezh",
-  // Aliases — the generated commentary bundles' people catalog uses slightly
-  // different ids for the same person than the hand-curated icons. Bind both.
-  "cyprian": "icon-cyprian-of-carthage",
-  "gregory-of-nazianzus": "icon-gregory-the-theologian",
-  "gregory-thaumaturgus": "icon-gregory-the-wonderworker",
-  "justin-martyr": "icon-justin-the-philosopher",
-  "porphyrios-of-kafsokalivia": "icon-porphyrios-of-kavsokalyvia",
   // Pseudo-* attributions reuse the real author's icon, since the works are
   // historically conflated with that Father.
   "pseudo-augustine": "icon-augustine",
