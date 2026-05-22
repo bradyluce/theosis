@@ -420,6 +420,98 @@ const MAPPINGS: Array<{
     caption: "Saint John the Russian",
     alt: "Icon of Saint John the Russian, Confessor of Prokopion in Cappadocia.",
   },
+
+  // === 3rd manifest batch: post-consolidation library people ===
+  {
+    sourceFile: "alcuin.jpg",
+    personId: "alcuin",
+    caption: "Alcuin of York",
+    alt: "Manuscript miniature of Rabanus Maurus, Alcuin of York, and Archbishop Otgar, Fulda.",
+  },
+  {
+    sourceFile: "rabanus-maurus.jpg",
+    personId: "rabanus-maurus",
+    caption: "Rabanus Maurus",
+    alt: "Manuscript miniature of Rabanus Maurus and Alcuin of York presenting their work to Archbishop Otgar.",
+  },
+  {
+    sourceFile: "clement-of-rome.jpg",
+    personId: "clement-of-rome",
+    caption: "Saint Clement of Rome",
+    alt: "Fresco of Saint Clement of Rome from the Basilica of San Clemente, Rome.",
+  },
+  {
+    sourceFile: "clement-of-alexandria.jpeg",
+    personId: "clement-of-alexandria",
+    caption: "Saint Clement of Alexandria",
+    alt: "Icon of Saint Clement of Alexandria.",
+  },
+  {
+    sourceFile: "dionysius-of-alexandria.jpg",
+    personId: "dionysius-of-alexandria",
+    caption: "Saint Dionysius the Great of Alexandria",
+    alt: "Icon of Saint Dionysius the Great, Bishop of Alexandria.",
+  },
+  {
+    sourceFile: "mar-jacob-of-sarug.jpg",
+    personId: "mar-jacob-of-sarug",
+    caption: "Saint Mar Jacob of Sarug",
+    alt: "Icon of Saint Jacob of Serugh (Mar Jacob of Sarug), Syriac hymnographer.",
+  },
+  {
+    sourceFile: "moses-of-chorene.jpg",
+    personId: "moses-of-chorene",
+    caption: "Saint Moses of Chorene",
+    alt: "Manuscript miniature of Movses Khorenatsi (Moses of Chorene), Armenian historian.",
+  },
+  {
+    sourceFile: "pamphilus-of-caesarea.jpg",
+    personId: "pamphilus-of-caesarea",
+    caption: "Saint Pamphilus of Caesarea",
+    alt: "Icon of Saint Pamphilus of Caesarea, librarian and martyr.",
+  },
+  {
+    sourceFile: "peter-chrysologus.jpg",
+    personId: "peter-chrysologus",
+    caption: "Saint Peter Chrysologus",
+    alt: "Icon of Saints Peter Chrysologus, Romuald, and Peter Damian by Giuseppe Milani, Ravenna Duomo.",
+  },
+  {
+    sourceFile: "peter-mogila.jpg",
+    personId: "peter-mogila",
+    caption: "Saint Peter Mogila",
+    alt: "Portrait of Saint Peter Mogila (Petro Mohyla), Metropolitan of Kiev.",
+  },
+  {
+    sourceFile: "peter-of-alexandria.jpg",
+    personId: "peter-of-alexandria",
+    caption: "Saint Peter of Alexandria",
+    alt: "Icon of the Vision of Saint Peter of Alexandria, Hieromartyr.",
+  },
+  {
+    sourceFile: "victorinus-pettau.jpg",
+    personId: "victorinus-pettau",
+    caption: "Saint Victorinus of Pettau",
+    alt: "Icon of Saint Victorinus of Pettau by Mihael Napotnik.",
+  },
+  {
+    sourceFile: "theophylact-of-ohrid.jpg",
+    personId: "theophylact-of-ohrid",
+    caption: "Blessed Theophylact of Ohrid",
+    alt: "Icon of Blessed Theophylact the Bulgarian, Archbishop of Ohrid.",
+  },
+  {
+    sourceFile: "philokalia-compilers.jpg",
+    personId: "philokalia-compilers",
+    caption: "Saint Makarios of Corinth",
+    alt: "Icon of Saint Makarios Notaras, Archbishop of Corinth and compiler of the Philokalia.",
+  },
+  {
+    sourceFile: "nikodemos-theophan-scupoli.jpg",
+    personId: "nikodemos-theophan-scupoli",
+    caption: "Saint Nikodemos the Hagiorite",
+    alt: "Icon of Saint Nikodemos the Hagiorite, translator and compiler of the Philokalia and Unseen Warfare.",
+  },
 ];
 
 type CatalogShape = {

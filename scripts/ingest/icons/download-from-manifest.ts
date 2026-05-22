@@ -89,7 +89,12 @@ async function main() {
     process.exit(1);
   }
   const raw = fs.readFileSync(manifestPath, "utf8");
-  const entries = JSON.parse(raw) as ManifestEntry[];
+  const parsed = JSON.parse(raw) as ManifestEntry[] | { icons?: ManifestEntry[] };
+  // Accept both shapes: a bare array (older format) or { icons: [...] } (newer
+  // format with a sibling "missing" list for items the curator couldn't resolve).
+  const entries: ManifestEntry[] = Array.isArray(parsed)
+    ? parsed
+    : (parsed.icons ?? []);
   const outDir = DEFAULT_OUT;
   fs.mkdirSync(outDir, { recursive: true });
 
