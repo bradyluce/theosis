@@ -5,8 +5,9 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { iconSources } from "./sources";
-import { people } from "@/lib/content/seed/library";
+// Note: deliberately doesn't import the Person seed (which transitively
+// imports via "@/*" paths that may be broken by mobile/expo tsconfig changes).
+// Audit works off catalog ids + menaion JSON alone.
 
 type AutoEntry = { id: string; personId: string };
 type MenaionEntry = {
@@ -43,10 +44,10 @@ function loadAutoBindings(): Map<string, string> {
 // Reproduces the regex table in src/lib/content/icon-store.ts. Kept in sync
 // by hand. If you change the icon-store patterns, mirror them here.
 const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
-  [/nativity of (the )?theotokos|nativity of the most holy/i, "icon-feast-nativity-theotokos"],
+  [/nativity\b.*\b(theotokos|most holy lady|most holy)/i, "icon-feast-nativity-theotokos"],
   [/exaltation .* cross/i, "icon-feast-exaltation-cross"],
   [/entrance .* theotokos|presentation .* theotokos|entry .* temple/i, "icon-feast-presentation-theotokos"],
-  [/nativity (of (the|our) lord|of christ|of jesus)/i, "icon-feast-nativity-christ"],
+  [/nativity\b.*\b(of (the|our) lord|of christ|of jesus)/i, "icon-feast-nativity-christ"],
   [/theophany|baptism of (the|our) lord|baptism of christ/i, "icon-feast-theophany"],
   [/meeting of (the|our) lord|presentation of (the )?(lord|christ)/i, "icon-feast-meeting-of-lord"],
   [/annunciation/i, "icon-feast-annunciation"],
@@ -71,6 +72,15 @@ const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
   [/mid.pentecost/i, "icon-feast-mid-pentecost"],
   [/samaritan woman/i, "icon-feast-samaritan-woman"],
   [/sunday of the blind|blind man/i, "icon-feast-blind-man"],
+  [/beheading of (the )?(holy )?(glorious )?(prophet )?(and )?forerunner|beheading of (saint )?john the (baptist|forerunner)/i, "icon-feast-beheading-of-the-forerunner"],
+  [/protection of (the )?theotokos|protection of (the )?most holy theotokos|pokrov/i, "icon-feast-protection-of-the-theotokos"],
+  [/conception of (the )?theotokos|conception by (the )?righteous anna/i, "icon-feast-conception-of-the-theotokos"],
+  [/conception of (the )?(holy )?forerunner|conception of (saint )?john the (baptist|forerunner)/i, "icon-feast-conception-of-the-forerunner"],
+  [/procession of the (precious|honorable|venerable|life-giving)?\s*cross/i, "icon-feast-procession-of-the-cross"],
+  [/translation of the image (not.made.by.hands|of edessa)|image not.made.by.hands|mandylion/i, "icon-feast-translation-of-the-image-not-made-by-hands"],
+  [/synaxis of (the )?(holy )?(glorious )?(prophet )?(and )?forerunner|synaxis of (saint )?john the (baptist|forerunner)/i, "icon-feast-synaxis-of-the-forerunner"],
+  [/synaxis of (the )?(most holy )?theotokos/i, "icon-feast-synaxis-of-the-theotokos"],
+  [/14[,]?000 (holy )?innocents|holy innocents.*bethlehem|innocents slain by herod/i, "icon-feast-holy-innocents-of-bethlehem"],
 ];
 
 function matchFeast(title: string): string | undefined {
@@ -130,7 +140,6 @@ function matchByNameInTitle(
 function main() {
   const catalogIds = loadCatalogIds();
   const autoBindings = loadAutoBindings();
-  const peopleById = new Map(people.map((p) => [p.id, p]));
 
   const raw = fs.readFileSync(MENAION_PATH, "utf8");
   const menaion = JSON.parse(raw) as {
@@ -173,9 +182,7 @@ function main() {
       covered++;
     } else {
       uncovered++;
-      const saintNames = (day.saintIds ?? [])
-        .map((id) => peopleById.get(id)?.name ?? id)
-        .join("; ");
+      const saintNames = (day.saintIds ?? []).join("; ");
       uncoveredDays.push({
         monthDay: day.monthDay,
         title: day.title,

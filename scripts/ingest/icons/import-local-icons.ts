@@ -16,13 +16,18 @@ const DEST_DIR = path.join(REPO_ROOT, "public/icons");
 const CATALOG_PATH = path.join(SRC_DIR, "catalog.json");
 
 // Hand-curated mapping: source filename (in content/normalized/icons/) →
-// person.id from src/lib/content/seed/library.ts. The icon's catalog id
-// becomes "icon-{personId}" so getIconForPerson resolves it via convention.
+// catalog id. Two id namespaces:
+//   - "icon-{personId}" for saints/fathers (binds via convention to a Person
+//     record in src/lib/content/seed/library.ts).
+//   - "icon-feast-{slug}" for feasts/commemorations (matched against the
+//     daily title via FEAST_TITLE_PATTERNS in src/lib/content/icon-store.ts).
+// Set `feast: true` to use the feast namespace; default is saint.
 const MAPPINGS: Array<{
   sourceFile: string;
   personId: string;
   caption: string;
   alt: string;
+  feast?: boolean;
 }> = [
   {
     sourceFile: "LRPSaintPorphyriosofKafsokalivia.webp",
@@ -156,6 +161,258 @@ const MAPPINGS: Array<{
     caption: "Saint Thekla of Iconium",
     alt: "Icon of the Holy First Female Martyr Thekla of Iconium, Equal-to-the-Apostles.",
   },
+
+  // === 2nd batch: manifest-driven download (icons_manifest.json) ===
+  // --- Tier 1: feasts ---
+  {
+    sourceFile: "beheading-of-the-forerunner.jpg",
+    personId: "beheading-of-the-forerunner",
+    caption: "Beheading of John the Forerunner",
+    alt: "Icon of the Beheading of the Holy Glorious Prophet and Forerunner John the Baptist.",
+    feast: true,
+  },
+  {
+    sourceFile: "protection-of-the-theotokos.jpg",
+    personId: "protection-of-the-theotokos",
+    caption: "Protection of the Theotokos (Pokrov)",
+    alt: "Icon of the Protection of the Most Holy Theotokos (Pokrov), Constantinople, 10th century.",
+    feast: true,
+  },
+  {
+    sourceFile: "conception-of-the-theotokos.jpg",
+    personId: "conception-of-the-theotokos",
+    caption: "Conception of the Theotokos by Saint Anna",
+    alt: "Icon of the Conception of the Most Holy Theotokos by the Righteous Anna.",
+    feast: true,
+  },
+  {
+    sourceFile: "conception-of-the-forerunner.jpg",
+    personId: "conception-of-the-forerunner",
+    caption: "Conception of the Forerunner",
+    alt: "Russian icon of the Conception of the Holy Forerunner by Zachariah and Elizabeth.",
+    feast: true,
+  },
+  {
+    sourceFile: "procession-of-the-cross.jpg",
+    personId: "procession-of-the-cross",
+    caption: "Procession of the Precious Cross",
+    alt: "Palekh-school icon of the Procession of the Honorable and Life-Giving Cross.",
+    feast: true,
+  },
+  {
+    sourceFile: "translation-of-the-image-not-made-by-hands.jpg",
+    personId: "translation-of-the-image-not-made-by-hands",
+    caption: "Image Not-Made-by-Hands",
+    alt: "Icon of the Holy Image of Christ Not-Made-by-Hands (the Mandylion of Edessa).",
+    feast: true,
+  },
+  {
+    sourceFile: "synaxis-of-the-forerunner.png",
+    personId: "synaxis-of-the-forerunner",
+    caption: "Synaxis of the Forerunner",
+    alt: "Icon of the Synaxis of the Holy Glorious Prophet and Forerunner John the Baptist.",
+    feast: true,
+  },
+  {
+    sourceFile: "synaxis-of-the-theotokos.jpg",
+    personId: "synaxis-of-the-theotokos",
+    caption: "Synaxis of the Theotokos",
+    alt: "Sixteenth-century Palekh icon of the Synaxis of the Most Holy Theotokos.",
+    feast: true,
+  },
+  {
+    sourceFile: "holy-innocents-of-bethlehem.jpg",
+    personId: "holy-innocents-of-bethlehem",
+    caption: "14,000 Holy Innocents of Bethlehem",
+    alt: "Icon of the 14,000 Holy Innocents slain by Herod at Bethlehem, 1869.",
+    feast: true,
+  },
+
+  // --- Tier 2: famous saints ---
+  {
+    sourceFile: "sisoes-the-great.jpg",
+    personId: "sisoes-the-great",
+    caption: "Saint Sisoes the Great",
+    alt: "Icon of Saint Sisoes the Great facing the tomb of Alexander.",
+  },
+  {
+    sourceFile: "kyriake-of-nicomedia.gif",
+    personId: "kyriake-of-nicomedia",
+    caption: "Great-martyr Kyriake of Nicomedia",
+    alt: "Bulgarian icon of the Holy Great-martyr Kyriake of Nicomedia.",
+  },
+  {
+    sourceFile: "procopius-of-caesarea.jpg",
+    personId: "procopius-of-caesarea",
+    caption: "Great-martyr Procopius of Caesarea",
+    alt: "Icon of the Holy Great-martyr Procopius of Caesarea in Palestine.",
+  },
+  {
+    sourceFile: "seven-youths-of-ephesus.jpg",
+    personId: "seven-youths-of-ephesus",
+    caption: "Seven Holy Youths of Ephesus",
+    alt: "Russian icon of the Seven Holy Youths (Sleepers) of Ephesus.",
+  },
+  {
+    sourceFile: "florus-and-laurus.jpg",
+    personId: "florus-and-laurus",
+    caption: "Martyrs Florus and Laurus",
+    alt: "Novgorod icon of the Archangel Michael blessing the Martyrs Florus and Laurus of Dalmatia.",
+  },
+  {
+    sourceFile: "adrian-and-natalia.jpg",
+    personId: "adrian-and-natalia",
+    caption: "Martyrs Adrian and Natalia",
+    alt: "Icon of the Holy Martyrs Adrian and Natalia of Nicomedia.",
+  },
+  {
+    sourceFile: "poemen-the-great.jpg",
+    personId: "poemen-the-great",
+    caption: "Saint Poemen the Great",
+    alt: "Hosios Loukas vault mosaic of Saint Poemen the Great.",
+  },
+  {
+    sourceFile: "euphemia-the-all-praised.jpg",
+    personId: "euphemia-the-all-praised",
+    caption: "Great-martyr Euphemia",
+    alt: "Icon of the Holy Great-martyr Euphemia the All-praised of Chalcedon.",
+  },
+  {
+    sourceFile: "sergius-and-bacchus.jpg",
+    personId: "sergius-and-bacchus",
+    caption: "Martyrs Sergius and Bacchus",
+    alt: "Early Christian icon of the Holy Martyrs Sergius and Bacchus.",
+  },
+  {
+    sourceFile: "pelagia-the-penitent.jpg",
+    personId: "pelagia-the-penitent",
+    caption: "Saint Pelagia the Penitent",
+    alt: "Icon of Saint Pelagia the Penitent of Antioch.",
+  },
+  {
+    sourceFile: "longinus-the-centurion.jpg",
+    personId: "longinus-the-centurion",
+    caption: "Martyr Longinus the Centurion",
+    alt: "Icon of the Holy Martyr Longinus the Centurion at the foot of the Cross.",
+  },
+  {
+    sourceFile: "joannicius-the-great.jpg",
+    personId: "joannicius-the-great",
+    caption: "Saint Joannicius the Great",
+    alt: "Menologion of Basil II miniature of Saint Joannicius the Great of Bithynia.",
+  },
+  {
+    sourceFile: "menas-of-egypt.jpg",
+    personId: "menas-of-egypt",
+    caption: "Great-martyr Menas of Egypt",
+    alt: "Seventeenth-century icon of the Holy Great-martyr Menas of Egypt by E. Lambardos.",
+  },
+  {
+    sourceFile: "john-the-merciful.jpg",
+    personId: "john-the-merciful",
+    caption: "Saint John the Merciful",
+    alt: "Icon of Saint John the Merciful, Patriarch of Alexandria, with Athanasius and Cyril by Veniamin of Galatista, 1833.",
+  },
+  {
+    sourceFile: "stephen-the-new.jpg",
+    personId: "stephen-the-new",
+    caption: "Saint Stephen the New",
+    alt: "Hosios Loukas mosaic of Saint Stephen the New, Martyr of the Iconoclast Persecution.",
+  },
+
+  // --- Tier 3: minor prophets ---
+  {
+    sourceFile: "prophet-amos.jpg",
+    personId: "prophet-amos",
+    caption: "Prophet Amos",
+    alt: "Mural of the Holy Prophet Amos at the Cathedral of Athens.",
+  },
+  {
+    sourceFile: "prophet-hosea.jpg",
+    personId: "prophet-hosea",
+    caption: "Prophet Hosea",
+    alt: "Menologion of Basil II miniature of the Holy Prophet Hosea.",
+  },
+  {
+    sourceFile: "prophet-joel.jpg",
+    personId: "prophet-joel",
+    caption: "Prophet Joel",
+    alt: "Byzantine mosaic of the Holy Prophet Joel from Fethiye Camii, Istanbul.",
+  },
+  {
+    sourceFile: "prophet-obadiah.jpg",
+    personId: "prophet-obadiah",
+    caption: "Prophet Obadiah",
+    alt: "Menologion of Basil II miniature of the Holy Prophet Obadiah.",
+  },
+  {
+    sourceFile: "prophet-nahum.jpg",
+    personId: "prophet-nahum",
+    caption: "Prophet Nahum",
+    alt: "Pammakaristos Church dome mosaic featuring the Holy Prophet Nahum among the Twelve Prophets.",
+  },
+  {
+    sourceFile: "prophet-zephaniah.jpg",
+    personId: "prophet-zephaniah",
+    caption: "Prophet Zephaniah",
+    alt: "Mural of the Holy Prophet Zephaniah (Sophonias) at the Cathedral of Athens.",
+  },
+  {
+    sourceFile: "prophet-haggai.jpg",
+    personId: "prophet-haggai",
+    caption: "Prophet Haggai",
+    alt: "Menologion of Basil II miniature of the Holy Prophet Haggai.",
+  },
+
+  // --- Tier 4: apostles, hymnographers, hierarchs, ascetics ---
+  {
+    sourceFile: "apostle-timothy.jpg",
+    personId: "apostle-timothy",
+    caption: "Apostle Timothy",
+    alt: "Menologion of Basil II miniature of the Holy Apostle Timothy of the Seventy.",
+  },
+  {
+    sourceFile: "apostle-onesimus.jpg",
+    personId: "apostle-onesimus",
+    caption: "Apostle Onesimus",
+    alt: "Icon of the Holy Apostle Onesimus of the Seventy.",
+  },
+  {
+    sourceFile: "joseph-the-hymnographer.jpg",
+    personId: "joseph-the-hymnographer",
+    caption: "Saint Joseph the Hymnographer",
+    alt: "Icon of the Holy Hymnographers Theophanes and Joseph at Lipljan.",
+  },
+  {
+    sourceFile: "tarasius-of-constantinople.png",
+    personId: "tarasius-of-constantinople",
+    caption: "Saint Tarasius of Constantinople",
+    alt: "Menologion of Basil II miniature of Saint Tarasius, Archbishop of Constantinople.",
+  },
+  {
+    sourceFile: "sophronius-of-jerusalem.jpg",
+    personId: "sophronius-of-jerusalem",
+    caption: "Saint Sophronius of Jerusalem",
+    alt: "Athonite fresco icon of Saint Sophronius, Patriarch of Jerusalem.",
+  },
+  {
+    sourceFile: "onuphrius-the-great.png",
+    personId: "onuphrius-the-great",
+    caption: "Saint Onuphrius the Great",
+    alt: "Icon of Saint Onuphrius the Great by Emmanuel Tzanes.",
+  },
+  {
+    sourceFile: "sampson-the-hospitable.jpeg",
+    personId: "sampson-the-hospitable",
+    caption: "Saint Sampson the Hospitable",
+    alt: "Icon of the Theotokos of Feodorovskaya with Saints Sampson the Hospitable and Mary of Egypt.",
+  },
+  {
+    sourceFile: "alexis-the-man-of-god.jpg",
+    personId: "alexis-the-man-of-god",
+    caption: "Saint Alexis the Man of God",
+    alt: "Icon of Saints Alexis the Man of God and Mary of Egypt, 1648.",
+  },
 ];
 
 type CatalogShape = {
@@ -199,7 +456,7 @@ function main() {
       continue;
     }
     const ext = extensionForOutput(m.sourceFile);
-    const iconId = `icon-${m.personId}`;
+    const iconId = m.feast ? `icon-feast-${m.personId}` : `icon-${m.personId}`;
     const outName = `${iconId}${ext}`;
     const destPath = path.join(DEST_DIR, outName);
 

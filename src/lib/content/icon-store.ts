@@ -110,6 +110,16 @@ const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
   [/mid.pentecost/i, "icon-feast-mid-pentecost"],
   [/samaritan woman/i, "icon-feast-samaritan-woman"],
   [/sunday of the blind|blind man/i, "icon-feast-blind-man"],
+  // 2nd batch (manifest-driven): high-visibility feasts not yet covered.
+  [/beheading of (the )?(holy )?(glorious )?(prophet )?(and )?forerunner|beheading of (saint )?john the (baptist|forerunner)/i, "icon-feast-beheading-of-the-forerunner"],
+  [/protection of (the )?theotokos|protection of (the )?most holy theotokos|pokrov/i, "icon-feast-protection-of-the-theotokos"],
+  [/conception of (the )?theotokos|conception by (the )?righteous anna/i, "icon-feast-conception-of-the-theotokos"],
+  [/conception of (the )?(holy )?forerunner|conception of (saint )?john the (baptist|forerunner)/i, "icon-feast-conception-of-the-forerunner"],
+  [/procession of the (precious|honorable|venerable|life-giving)?\s*cross/i, "icon-feast-procession-of-the-cross"],
+  [/translation of the image (not.made.by.hands|of edessa)|image not.made.by.hands|mandylion/i, "icon-feast-translation-of-the-image-not-made-by-hands"],
+  [/synaxis of (the )?(holy )?(glorious )?(prophet )?(and )?forerunner|synaxis of (saint )?john the (baptist|forerunner)/i, "icon-feast-synaxis-of-the-forerunner"],
+  [/synaxis of (the )?(most holy )?theotokos/i, "icon-feast-synaxis-of-the-theotokos"],
+  [/14[,]?000 (holy )?innocents|holy innocents.*bethlehem|innocents slain by herod/i, "icon-feast-holy-innocents-of-bethlehem"],
 ];
 
 export function getIconForPerson(person: Person | undefined): IconRef | undefined {
