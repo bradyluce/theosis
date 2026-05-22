@@ -96,7 +96,7 @@ function buildPerson(): Person {
     summary:
       "The unnamed author of The Way of a Pilgrim — a 19th-century Russian peasant or wandering layman who, having lost his arm and his family, set out to learn the Jesus Prayer. His four narratives, written in a plain spoken voice, became the most influential popular introduction to hesychast prayer in the Slavic world and beyond.",
     traditions: ["Eastern Orthodox", "Russian Orthodox"],
-    topicSlugs: [],
+    topicSlugs: ["jesus-prayer", "prayer-of-the-heart", "lay-spirituality", "russian-orthodox-tradition"],
     featuredWorkIds: [WORK_ID],
   };
 }
@@ -113,7 +113,7 @@ function buildWork(): Work {
     eraLabel: "first published Kazan, 1884",
     summary:
       "A first-person spiritual classic in four narratives (with three further continuation chapters in the extended edition) about a wandering Russian pilgrim's discovery and practice of the Jesus Prayer. The text moves between travel memoir, devotional manual, and quoted extracts from the Philokalia, and almost single-handedly carried the hesychast prayer-of-the-heart tradition into 19th- and 20th-century lay piety.",
-    topicSlugs: [],
+    topicSlugs: ["jesus-prayer", "prayer-of-the-heart", "lay-spirituality", "russian-orthodox-tradition"],
     sourceId: SOURCE_ID,
     verseRefs: [],
   };

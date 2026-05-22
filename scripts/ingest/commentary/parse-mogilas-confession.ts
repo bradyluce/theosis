@@ -163,9 +163,10 @@ function buildPerson(): Person {
     summary:
       "Metropolitan of Kiev and Galicia (1633–1647) whose Confession of Faith was approved by the Council of Jassy (1642) and ratified by all four Eastern Patriarchs as a normative reply to Protestant and Roman Catholic catechisms entering Ukrainian and Russian Orthodox lands.",
     traditions: ["Eastern Orthodox"],
-    topicSlugs: [],
+    topicSlugs: ["catechesis", "byzantine-tradition", "trinitarian-theology"],
     featuredWorkIds: [WORK_ID],
     feastDayLabel: "December 31",
+    iconId: "icon-peter-mogila",
   };
 }
 
@@ -181,7 +182,7 @@ function buildWork(): Work {
     eraLabel: "1638–1642",
     summary:
       "A three-part catechetical confession structured around the three theological virtues — Faith (the Symbol and articles), Hope (the Lord's Prayer and the Beatitudes), and Love (the virtues, commandments, and vices) — set in 252 question-and-answer pairs. Approved at the Council of Jassy in 1642 and confirmed by the Eastern Patriarchs as a normative Orthodox catechism for the Slavic lands during the Counter-Reformation.",
-    topicSlugs: [],
+    topicSlugs: ["catechesis", "trinitarian-theology", "sacraments", "commandments", "virtues"],
     sourceId: SOURCE_ID,
     verseRefs: [],
   };

@@ -15,8 +15,9 @@ const person: Person = {
   summary:
     "American-born convert from Berkeley intellectual life to Orthodoxy under St. John Maximovitch. Co-founder with Fr. Herman (Podmoshensky) of the St. Herman of Alaska Brotherhood, the Platina (California) skete, and the journal The Orthodox Word. His writings — drawing heavily on the Fathers, especially the ascetic tradition — defined the patristic-revival voice of 20th-century English-language American Orthodoxy.",
   traditions: ["Eastern Orthodox", "Russian Orthodox Outside Russia"],
-  topicSlugs: [],
+  topicSlugs: ["modern-spirituality", "patristic-revival", "russian-orthodox-tradition", "eschatology"],
   featuredWorkIds: [WORK_ID],
+  iconId: "icon-seraphim-rose",
 };
 
 const work: Work = {
@@ -30,7 +31,7 @@ const work: Work = {
   eraLabel: "1980 (rev. 2009)",
   summary:
     "A patristic survey of what the Fathers and the experience of the Church teach about what the soul encounters in the moments and days after bodily death — the toll-houses, the aerial spirits, the role of guardian angels, and the particular judgment. Written explicitly as a corrective to popular post-NDE 'after-life' literature.",
-  topicSlugs: [],
+  topicSlugs: ["eschatology", "afterlife", "patristic-theology", "toll-houses"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

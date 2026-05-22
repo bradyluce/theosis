@@ -26,7 +26,12 @@
         "Eastern Orthodox",
         "Orthodox Church in America"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "sacraments",
+        "liturgical-theology",
+        "modern-spirituality",
+        "eucharist"
+      ],
       "featuredWorkIds": [
         "schmemann-for-the-life-of-the-world"
       ]
@@ -56,7 +61,12 @@
         "Eastern Orthodox",
         "Russian Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "jesus-prayer",
+        "prayer-of-the-heart",
+        "lay-spirituality",
+        "russian-orthodox-tradition"
+      ],
       "featuredWorkIds": [
         "way-of-a-pilgrim"
       ]
@@ -87,7 +97,11 @@
         "Eastern Orthodox",
         "Russian Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer",
+        "modern-spirituality",
+        "russian-orthodox-tradition"
+      ],
       "featuredWorkIds": [
         "bloom-beginning-to-pray"
       ]
@@ -105,12 +119,17 @@
         "Roman Catholic",
         "Coptic Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology",
+        "desert-tradition"
+      ],
       "featuredWorkIds": [
         "philokalia-antony-the-great-intro",
         "philokalia-antony-on-character-of-men"
       ],
-      "feastDayLabel": "January 17"
+      "feastDayLabel": "January 17",
+      "iconId": "icon-anthony-the-great"
     },
     {
       "id": "aphrahat",
@@ -510,7 +529,12 @@
         "Eastern Orthodox",
         "Coptic Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "desert-tradition",
+        "ascetical-theology",
+        "sayings"
+      ],
       "featuredWorkIds": [
         "desert-fathers-sayings"
       ]
@@ -526,7 +550,11 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "jesus-prayer",
+        "ascetical-theology"
+      ],
       "featuredWorkIds": [
         "philokalia-diadochos-of-photiki-intro",
         "philokalia-diadochos-on-spiritual-knowledge"
@@ -675,7 +703,12 @@
         "Eastern Orthodox",
         "Greek Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "patristics",
+        "modern-spirituality",
+        "catechesis",
+        "phronema"
+      ],
       "featuredWorkIds": [
         "constantinou-thinking-orthodox"
       ]
@@ -704,7 +737,12 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology",
+        "passions-and-virtues",
+        "desert-tradition"
+      ],
       "featuredWorkIds": [
         "philokalia-evagrius-ponticus-intro",
         "philokalia-evagrios-on-discrimination",
@@ -785,7 +823,12 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "jesus-prayer",
+        "prayer-of-the-heart",
+        "monasticism"
+      ],
       "featuredWorkIds": [
         "philokalia-gregory-of-sinai-intro",
         "philokalia-gregory-sinai-on-commandments",
@@ -807,7 +850,12 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "theosis",
+        "byzantine-tradition",
+        "mystical-theology"
+      ],
       "featuredWorkIds": [
         "philokalia-gregory-palamas-intro",
         "philokalia-palamas-to-nun-xenia",
@@ -815,7 +863,8 @@
         "philokalia-palamas-topics-natural-theological",
         "philokalia-palamas-hagioretic-tome"
       ],
-      "feastDayLabel": "November 14 (and the Second Sunday of Great Lent)"
+      "feastDayLabel": "November 14 (and the Second Sunday of Great Lent)",
+      "iconId": "icon-gregory-palamas"
     },
     {
       "id": "gregory-thaumaturgus",
@@ -922,7 +971,12 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "nepsis-watchfulness",
+        "jesus-prayer",
+        "monasticism"
+      ],
       "featuredWorkIds": [
         "philokalia-hesychios-on-watchfulness"
       ],
@@ -980,7 +1034,10 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "byzantine-tradition"
+      ],
       "featuredWorkIds": [
         "philokalia-ilias-the-presbyter-intro",
         "philokalia-ilias-gnomic-anthology"
@@ -1058,13 +1115,19 @@
         "Eastern Orthodox",
         "Roman Catholic"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology",
+        "latin-patristics",
+        "desert-tradition"
+      ],
       "featuredWorkIds": [
         "philokalia-john-cassian-intro",
         "philokalia-cassian-on-eight-vices",
         "philokalia-cassian-holy-fathers-discrimination"
       ],
-      "feastDayLabel": "February 29 (leap) · February 28"
+      "feastDayLabel": "February 29 (leap) · February 28",
+      "iconId": "icon-john-cassian"
     },
     {
       "id": "john-chrysostom",
@@ -1092,11 +1155,17 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology",
+        "ladder-of-virtues",
+        "passions-and-virtues"
+      ],
       "featuredWorkIds": [
         "climacus-ladder"
       ],
-      "feastDayLabel": "March 30 (and Fourth Sunday of Great Lent)"
+      "feastDayLabel": "March 30 (and Fourth Sunday of Great Lent)",
+      "iconId": "icon-john-climacus"
     },
     {
       "id": "john-of-damascus",
@@ -1124,7 +1193,10 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology"
+      ],
       "featuredWorkIds": [
         "philokalia-john-of-karpathos-intro",
         "philokalia-karpathos-encouragement-monks-india"
@@ -1242,12 +1314,17 @@
         "Eastern Orthodox",
         "Coptic Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "desert-tradition",
+        "prayer-of-the-heart"
+      ],
       "featuredWorkIds": [
         "philokalia-makarios-of-egypt-intro",
         "philokalia-makarios-macarian-selections"
       ],
-      "feastDayLabel": "January 19"
+      "feastDayLabel": "January 19",
+      "iconId": "icon-macarius-the-egyptian"
     },
     {
       "id": "malchion",
@@ -1298,14 +1375,19 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology",
+        "grace-and-works"
+      ],
       "featuredWorkIds": [
         "philokalia-mark-the-ascetic-intro",
         "philokalia-mark-on-spiritual-law",
         "philokalia-mark-on-those-righteous-by-works",
         "philokalia-mark-letter-to-nicolas"
       ],
-      "feastDayLabel": "March 5"
+      "feastDayLabel": "March 5",
+      "iconId": "icon-mark-the-ascetic"
     },
     {
       "id": "mathetes",
@@ -1413,7 +1495,10 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology"
+      ],
       "featuredWorkIds": [
         "philokalia-neilos-the-ascetic-intro",
         "philokalia-neilos-ascetic-discourse"
@@ -1431,7 +1516,11 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "byzantine-tradition",
+        "ascetical-theology"
+      ],
       "featuredWorkIds": [
         "philokalia-nikitas-stithatos-intro",
         "philokalia-nikitas-on-practice-virtues",
@@ -1450,7 +1539,12 @@
         "Eastern Orthodox",
         "Roman Catholic"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "spiritual-combat",
+        "monastic-spirituality",
+        "passions-and-virtues"
+      ],
       "featuredWorkIds": [
         "unseen-warfare"
       ]
@@ -1497,11 +1591,16 @@
         "Eastern Orthodox",
         "Greek Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "modern-spirituality",
+        "monasticism",
+        "spiritual-counsel"
+      ],
       "featuredWorkIds": [
         "paisios-spiritual-awakening"
       ],
-      "feastDayLabel": "July 12"
+      "feastDayLabel": "July 12",
+      "iconId": "icon-paisios-the-athonite"
     },
     {
       "id": "pamphilus-of-caesarea",
@@ -1570,11 +1669,16 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "catechesis",
+        "byzantine-tradition",
+        "trinitarian-theology"
+      ],
       "featuredWorkIds": [
         "mogila-orthodox-confession"
       ],
-      "feastDayLabel": "December 31"
+      "feastDayLabel": "December 31",
+      "iconId": "icon-peter-mogila"
     },
     {
       "id": "peter-of-alexandria",
@@ -1611,7 +1715,11 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "byzantine-tradition",
+        "passions-and-virtues"
+      ],
       "featuredWorkIds": [
         "philokalia-peter-of-damaskos-intro",
         "philokalia-peter-damaskos-book-1",
@@ -1653,11 +1761,17 @@
         "Eastern Orthodox",
         "Greek Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "modern-spirituality",
+        "monasticism",
+        "spiritual-counsel",
+        "love"
+      ],
       "featuredWorkIds": [
         "porphyrios-wounded-by-love"
       ],
-      "feastDayLabel": "December 2"
+      "feastDayLabel": "December 2",
+      "iconId": "icon-porphyrios-of-kavsokalyvia"
     },
     {
       "id": "pseudo-augustine",
@@ -1767,10 +1881,16 @@
         "Eastern Orthodox",
         "Russian Orthodox Outside Russia"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "modern-spirituality",
+        "patristic-revival",
+        "russian-orthodox-tradition",
+        "apologetics"
+      ],
       "featuredWorkIds": [
         "rose-religion-of-the-future"
-      ]
+      ],
+      "iconId": "icon-seraphim-rose"
     },
     {
       "id": "symeon-metaphrastis",
@@ -1783,7 +1903,10 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hagiography",
+        "byzantine-tradition"
+      ],
       "featuredWorkIds": [
         "philokalia-makarios-macarian-selections"
       ],
@@ -1800,13 +1923,19 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "byzantine-tradition",
+        "theosis",
+        "mystical-theology"
+      ],
       "featuredWorkIds": [
         "philokalia-symeon-the-new-theologian-intro",
         "philokalia-symeon-nt-three-methods-prayer",
         "philokalia-symeon-nt-practical-theological-texts"
       ],
-      "feastDayLabel": "October 12 (March 12 in some traditions)"
+      "feastDayLabel": "October 12 (March 12 in some traditions)",
+      "iconId": "icon-symeon-the-new-theologian"
     },
     {
       "id": "syriac-and-late-documents",
@@ -1921,7 +2050,11 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology",
+        "passions-and-virtues"
+      ],
       "featuredWorkIds": [
         "philokalia-thalassios-the-libyan-intro",
         "philokalia-thalassios-four-centuries"
@@ -1938,7 +2071,10 @@
       "traditions": [
         "Eastern Orthodox"
       ],
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology"
+      ],
       "featuredWorkIds": [
         "philokalia-theodoros-century-spiritual-texts",
         "philokalia-theodoros-theoretikon"
@@ -4099,7 +4235,12 @@
       "lengthLabel": "short",
       "eraLabel": "1970",
       "summary": "A five-chapter introduction to Christian prayer for readers who suspect they may not know how (or whether) to pray. Anthony Bloom begins with the seeming absence of God and works through the discipline of knocking, inwardness, the management of time, and the search for the divine Name, ending in a meditation on the Lord's Prayer.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer",
+        "lay-spirituality",
+        "modern-spirituality",
+        "lords-prayer"
+      ],
       "sourceId": "bloom-beginning-to-pray-source",
       "verseRefs": []
     },
@@ -4883,7 +5024,13 @@
       "lengthLabel": "long",
       "eraLabel": "c. 600",
       "summary": "Thirty steps charting the monastic ascent from renunciation of the world through the heights of dispassion and love. Written for the monks of Raithu and used since the seventh century as the standard guide for both monastic and lay spiritual struggle.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "ascetical-theology",
+        "virtues",
+        "passions-and-virtues",
+        "dispassion"
+      ],
       "sourceId": "climacus-ladder-source",
       "verseRefs": []
     },
@@ -4911,7 +5058,13 @@
       "lengthLabel": "long",
       "eraLabel": "2020",
       "summary": "A contemporary catechetical-cum-academic introduction to the Orthodox phronema (Christian mind) — what it is, how it differs from the Protestant and Roman Catholic intellectual traditions, and how a layperson or seminarian acquires it through the Fathers, Scripture, and Holy Tradition.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "catechesis",
+        "patristics",
+        "phronema",
+        "modern-spirituality",
+        "discernment"
+      ],
       "sourceId": "constantinou-thinking-orthodox-source",
       "verseRefs": []
     },
@@ -5263,7 +5416,13 @@
       "lengthLabel": "short",
       "eraLabel": "4th–5th centuries",
       "summary": "An English selection from the Alphabetical Sayings of the Desert Fathers (Apophthegmata Patrum) — short pithy stories and counsels handed down from the first three generations of Egyptian and Palestinian monastics. Eight Fathers are represented in this edition, organized alphabetically with each Father's sayings grouped together.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "monasticism",
+        "desert-tradition",
+        "ascetical-theology",
+        "sayings",
+        "monastic-spirituality"
+      ],
       "sourceId": "desert-fathers-sayings-source",
       "verseRefs": []
     },
@@ -7185,7 +7344,13 @@
       "lengthLabel": "medium",
       "eraLabel": "1638–1642",
       "summary": "A three-part catechetical confession structured around the three theological virtues — Faith (the Symbol and articles), Hope (the Lord's Prayer and the Beatitudes), and Love (the virtues, commandments, and vices) — set in 252 question-and-answer pairs. Approved at the Council of Jassy in 1642 and confirmed by the Eastern Patriarchs as a normative Orthodox catechism for the Slavic lands during the Counter-Reformation.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "catechesis",
+        "trinitarian-theology",
+        "sacraments",
+        "commandments",
+        "virtues"
+      ],
       "sourceId": "mogila-orthodox-confession-source",
       "verseRefs": []
     },
@@ -7339,7 +7504,12 @@
       "lengthLabel": "long",
       "eraLabel": "Greek 1999 · English 2008",
       "summary": "The second volume of the six-volume Spiritual Counsels series — counsels of Elder Paisios collected and arranged by the nuns of Souroti from cassette recordings and notebooks across the 1980s and early 1990s. Spiritual Awakening focuses on the daily struggle against indifference, the cultivation of devout watchfulness, and the laying-down of one's life for others.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "spiritual-counsel",
+        "modern-spirituality",
+        "monastic-spirituality",
+        "nepsis-watchfulness"
+      ],
       "sourceId": "paisios-spiritual-awakening-source",
       "verseRefs": []
     },
@@ -7426,7 +7596,10 @@
       "lengthLabel": "medium",
       "eraLabel": "3rd–4th century (c. 251–356)",
       "summary": "St. Antony the Great · On the Character of Men and on the Virtuous Life: One Hundred and Seventy Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "virtues"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7454,7 +7627,10 @@
       "lengthLabel": "short",
       "eraLabel": "4th–5th century (c. 360–435)",
       "summary": "St. John Cassian · On the Holy Fathers of Sketis and on Discrimination — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "discernment",
+        "monastic-spirituality"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7468,7 +7644,10 @@
       "lengthLabel": "short",
       "eraLabel": "4th–5th century (c. 360–435)",
       "summary": "St. John Cassian · On the Eight Vices — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "passions-and-virtues",
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7496,7 +7675,11 @@
       "lengthLabel": "medium",
       "eraLabel": "5th century",
       "summary": "St. Diadochos of Photiki · On Spiritual Knowledge and Discrimination: One Hundred Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "jesus-prayer",
+        "discernment",
+        "hesychasm"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7510,7 +7693,10 @@
       "lengthLabel": "short",
       "eraLabel": "4th century (c. 345–399)",
       "summary": "Evagrios the Solitary (Pontikos) · Extracts from the Texts on Watchfulness — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "nepsis-watchfulness",
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7524,7 +7710,10 @@
       "lengthLabel": "short",
       "eraLabel": "4th century (c. 345–399)",
       "summary": "Evagrios the Solitary (Pontikos) · Texts on Discrimination in respect of Passions and Thoughts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "passions-and-virtues",
+        "discernment"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7538,7 +7727,10 @@
       "lengthLabel": "medium",
       "eraLabel": "4th century (c. 345–399)",
       "summary": "Evagrios the Solitary (Pontikos) · On Prayer: One Hundred and Fifty-Three Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer",
+        "contemplative-prayer"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7594,7 +7786,9 @@
       "lengthLabel": "short",
       "eraLabel": "13th–14th century (c. 1268–1346)",
       "summary": "St. Gregory of Sinai · Further Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7608,7 +7802,10 @@
       "lengthLabel": "medium",
       "eraLabel": "13th–14th century (c. 1268–1346)",
       "summary": "St. Gregory of Sinai · On Commandments and Doctrines, Warnings and Promises; on Thoughts, Passions and Virtues, and also on Stillness and Prayer: One Hundred and Thirty-Seven Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "hesychasm"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7622,7 +7819,11 @@
       "lengthLabel": "medium",
       "eraLabel": "13th–14th century (c. 1268–1346)",
       "summary": "St. Gregory of Sinai · On Prayer: Seven Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer",
+        "jesus-prayer",
+        "hesychasm"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7636,7 +7837,10 @@
       "lengthLabel": "short",
       "eraLabel": "13th–14th century (c. 1268–1346)",
       "summary": "St. Gregory of Sinai · On Stillness: Fifteen Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "contemplative-prayer"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7650,7 +7854,10 @@
       "lengthLabel": "short",
       "eraLabel": "13th–14th century (c. 1268–1346)",
       "summary": "St. Gregory of Sinai · On the Signs of Grace and Delusion, Written for the Confessor Longinos: Ten Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "discernment",
+        "hesychasm"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7664,7 +7871,11 @@
       "lengthLabel": "medium",
       "eraLabel": "7th–8th century",
       "summary": "St. Hesychios of Sinai (the Priest) · On Watchfulness and Holiness: Two Hundred and Three Texts (To Theodoulos) — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "nepsis-watchfulness",
+        "jesus-prayer",
+        "hesychasm"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7678,7 +7889,10 @@
       "lengthLabel": "medium",
       "eraLabel": "11th–12th century (?)",
       "summary": "Ilias the Presbyter · A Gnomic Anthology — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "monastic-spirituality"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7734,7 +7948,10 @@
       "lengthLabel": "medium",
       "eraLabel": "7th century",
       "summary": "St. John of Karpathos · For the Encouragement of the Monks in India who had Written to Him: One Hundred Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "monastic-spirituality"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7748,7 +7965,10 @@
       "lengthLabel": "medium",
       "eraLabel": "4th century (c. 300–391)",
       "summary": "St. Makarios of Egypt (Macarius the Great) · Paraphrase of the Homilies of St. Makarios of Egypt: One Hundred and Fifty Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer-of-the-heart",
+        "monastic-spirituality"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7776,7 +7996,10 @@
       "lengthLabel": "short",
       "eraLabel": "5th century",
       "summary": "St. Mark the Ascetic · Letter to Nicolas the Solitary — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "letters"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7790,7 +8013,10 @@
       "lengthLabel": "medium",
       "eraLabel": "5th century",
       "summary": "St. Mark the Ascetic · On the Spiritual Law: Two Hundred Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "grace-and-works",
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7804,7 +8030,10 @@
       "lengthLabel": "medium",
       "eraLabel": "5th century",
       "summary": "St. Mark the Ascetic · On Those who Think that they are Made Righteous by Works: Two Hundred and Twenty-Six Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "grace-and-works",
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7832,7 +8061,11 @@
       "lengthLabel": "short",
       "eraLabel": "7th century (c. 580–662)",
       "summary": "Maximus the Confessor · Four Hundred Texts on Love — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "love",
+        "ascetical-theology",
+        "virtues"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7846,7 +8079,10 @@
       "lengthLabel": "long",
       "eraLabel": "7th century (c. 580–662)",
       "summary": "Maximus the Confessor · A Brief Interpretation of the Lord's Prayer Written for a Certain Friend of God (Written for Thalassios) — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer",
+        "lords-prayer"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7860,7 +8096,10 @@
       "lengthLabel": "short",
       "eraLabel": "7th century (c. 580–662)",
       "summary": "Maximus the Confessor · Two Hundred Texts on Theology and the Incarnate Dispensation of the Son of God — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "theosis",
+        "christology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7874,7 +8113,11 @@
       "lengthLabel": "long",
       "eraLabel": "7th century (c. 580–662)",
       "summary": "Maximus the Confessor · Various Texts on Theology, the Divine Economy, and Virtue and Vice (Five Centuries) — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "passions-and-virtues",
+        "theosis"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7902,7 +8145,10 @@
       "lengthLabel": "medium",
       "eraLabel": "4th–5th century (d. c. 430)",
       "summary": "St. Neilos the Ascetic (of Ancyra) · Ascetic Discourse — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "monastic-spirituality"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7930,7 +8176,10 @@
       "lengthLabel": "medium",
       "eraLabel": "11th century (c. 1005–c. 1090)",
       "summary": "St. Nikitas Stithatos · On the Practice of the Virtues: One Hundred Texts (First Century) — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "virtues",
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7944,7 +8193,10 @@
       "lengthLabel": "medium",
       "eraLabel": "11th century (c. 1005–c. 1090)",
       "summary": "St. Nikitas Stithatos · On Spiritual Knowledge, Love and the Perfection of Living: One Hundred Texts (Third Century) — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "mystical-theology",
+        "love"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7972,7 +8224,11 @@
       "lengthLabel": "short",
       "eraLabel": "14th century (1296–1359)",
       "summary": "St. Gregory Palamas · The Declaration of the Holy Mountain in Defence of Those who Devoutly Practise a Life of Stillness — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "hesychasm",
+        "theosis",
+        "mystical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -7986,7 +8242,10 @@
       "lengthLabel": "short",
       "eraLabel": "14th century (1296–1359)",
       "summary": "St. Gregory Palamas · Three Texts on Prayer and Purity of Heart — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer",
+        "purity-of-heart"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8000,7 +8259,10 @@
       "lengthLabel": "medium",
       "eraLabel": "14th century (1296–1359)",
       "summary": "St. Gregory Palamas · To the Most Reverend Nun Xenia — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "letters"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8014,7 +8276,11 @@
       "lengthLabel": "medium",
       "eraLabel": "14th century (1296–1359)",
       "summary": "St. Gregory Palamas · Topics of Natural and Theological Science and on the Moral and Ascetic Life: One Hundred and Fifty Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "theosis",
+        "mystical-theology",
+        "byzantine-tradition"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8028,7 +8294,11 @@
       "lengthLabel": "long",
       "eraLabel": "11th–12th century",
       "summary": "St. Peter of Damaskos · Book 1: A Treasury of Divine Knowledge — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "virtues",
+        "passions-and-virtues"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8042,7 +8312,10 @@
       "lengthLabel": "medium",
       "eraLabel": "11th–12th century",
       "summary": "St. Peter of Damaskos · Book 2: Twenty-Four Discourses — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "virtues"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8070,7 +8343,11 @@
       "lengthLabel": "medium",
       "eraLabel": "10th–11th century (949–1022)",
       "summary": "St. Symeon the New Theologian · Practical and Theological Texts: One Hundred and Fifty-Three Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "mystical-theology",
+        "theosis",
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8084,7 +8361,11 @@
       "lengthLabel": "short",
       "eraLabel": "10th–11th century (949–1022)",
       "summary": "St. Symeon the New Theologian · The Three Methods of Prayer — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "prayer",
+        "hesychasm",
+        "jesus-prayer"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8112,7 +8393,11 @@
       "lengthLabel": "long",
       "eraLabel": "7th century",
       "summary": "St. Thalassios the Libyan · On Love, Self-control, and Life in accordance with the Intellect: Four Centuries — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "love",
+        "ascetical-theology",
+        "passions-and-virtues"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8140,7 +8425,10 @@
       "lengthLabel": "medium",
       "eraLabel": "9th century (?)",
       "summary": "St. Theodoros the Great Ascetic · A Century of Spiritual Texts — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "ascetical-theology",
+        "monastic-spirituality"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8154,7 +8442,10 @@
       "lengthLabel": "short",
       "eraLabel": "9th century (?)",
       "summary": "St. Theodoros the Great Ascetic · Theoretikon — as included in the Philokalia.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "contemplative-prayer",
+        "ascetical-theology"
+      ],
       "sourceId": "philokalia-source",
       "verseRefs": []
     },
@@ -8196,7 +8487,12 @@
       "lengthLabel": "long",
       "eraLabel": "English ed. 2005",
       "summary": "Counsels, autobiographical recollections, and stories gathered from Elder Porphyrios's own spoken teachings — collected and arranged after his repose by his spiritual children at the Holy Convent of the Transfiguration of the Saviour at Milesi. The book is the most-read introduction to the Elder's gentle, love-centered approach to Orthodox spiritual life.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "spiritual-counsel",
+        "modern-spirituality",
+        "love",
+        "monastic-spirituality"
+      ],
       "sourceId": "porphyrios-wounded-by-love-source",
       "verseRefs": []
     },
@@ -8481,7 +8777,12 @@
       "lengthLabel": "long",
       "eraLabel": "1975 (later editions through 2017)",
       "summary": "A patristic-eyed survey of the spiritual currents Fr. Seraphim diagnosed as competitors to Orthodox Christianity in the second half of the twentieth century — the encounter with non-Christian Eastern religions, the charismatic and ecumenist movements, the literature on UFOs and the paranormal, the New-Age 'sign of the times.' Argued from the Fathers and Holy Scripture as a discernment-of-spirits treatise, not a polemical one.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "apologetics",
+        "discernment",
+        "modern-spirituality",
+        "patristic-theology"
+      ],
       "sourceId": "rose-religion-of-the-future-source",
       "verseRefs": []
     },
@@ -8495,7 +8796,12 @@
       "lengthLabel": "long",
       "eraLabel": "1980 (rev. 2009)",
       "summary": "A patristic survey of what the Fathers and the experience of the Church teach about what the soul encounters in the moments and days after bodily death — the toll-houses, the aerial spirits, the role of guardian angels, and the particular judgment. Written explicitly as a corrective to popular post-NDE 'after-life' literature.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "eschatology",
+        "afterlife",
+        "patristic-theology",
+        "toll-houses"
+      ],
       "sourceId": "rose-soul-after-death-source",
       "verseRefs": []
     },
@@ -8551,7 +8857,13 @@
       "lengthLabel": "medium",
       "eraLabel": "1963 (rev. 1973)",
       "summary": "Schmemann's slim sacramental manifesto — written originally for the National Student Christian Federation — recasts secularism not as a problem of belief but as a failure to receive the world as eucharist. Through the Liturgy, Baptism, marriage, holy orders, anointing, and Pascha, he traces how the Christian life is the world brought back into thanksgiving.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "sacraments",
+        "liturgical-theology",
+        "eucharist",
+        "baptism",
+        "ecclesiology"
+      ],
       "sourceId": "schmemann-for-the-life-of-the-world-source",
       "verseRefs": []
     },
@@ -9278,7 +9590,12 @@
       "lengthLabel": "long",
       "eraLabel": "c. 1589 / 1796 / 1892",
       "summary": "An ascetical handbook for the spiritual combat against the passions and the demons, structured in two parts — Christian struggle and Christian peace. Originally Lorenzo Scupoli's 16th-century Italian Combattimento, reworked and assimilated to Orthodox ascesis by Sts. Nikodemos of the Holy Mountain and Theophan the Recluse.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "spiritual-combat",
+        "ascetical-theology",
+        "passions-and-virtues",
+        "discernment"
+      ],
       "sourceId": "unseen-warfare-source",
       "verseRefs": []
     },
@@ -9348,7 +9665,12 @@
       "lengthLabel": "medium",
       "eraLabel": "first published Kazan, 1884",
       "summary": "A first-person spiritual classic in four narratives (with three further continuation chapters in the extended edition) about a wandering Russian pilgrim's discovery and practice of the Jesus Prayer. The text moves between travel memoir, devotional manual, and quoted extracts from the Philokalia, and almost single-handedly carried the hesychast prayer-of-the-heart tradition into 19th- and 20th-century lay piety.",
-      "topicSlugs": [],
+      "topicSlugs": [
+        "jesus-prayer",
+        "prayer-of-the-heart",
+        "lay-spirituality",
+        "russian-orthodox-tradition"
+      ],
       "sourceId": "way-of-a-pilgrim-source",
       "verseRefs": []
     }

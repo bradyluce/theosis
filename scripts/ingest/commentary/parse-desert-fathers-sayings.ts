@@ -14,7 +14,7 @@ const person: Person = {
   summary:
     "A synthetic anthology Person for the early Egyptian and Palestinian monastic Fathers whose sayings (apophthegmata) were collected by their disciples in the late-fourth and fifth centuries. The Theosis library carries a selected English edition spanning Anthony the Great, Arsenius, Daniel, John the Dwarf, Isidore the Priest, Macarius the Great, Moses (the Ethiopian), and Serapion.",
   traditions: ["Eastern Orthodox", "Coptic Orthodox"],
-  topicSlugs: [],
+  topicSlugs: ["monasticism", "desert-tradition", "ascetical-theology", "sayings"],
   featuredWorkIds: [WORK_ID],
 };
 
@@ -29,7 +29,7 @@ const work: Work = {
   eraLabel: "4th–5th centuries",
   summary:
     "An English selection from the Alphabetical Sayings of the Desert Fathers (Apophthegmata Patrum) — short pithy stories and counsels handed down from the first three generations of Egyptian and Palestinian monastics. Eight Fathers are represented in this edition, organized alphabetically with each Father's sayings grouped together.",
-  topicSlugs: [],
+  topicSlugs: ["monasticism", "desert-tradition", "ascetical-theology", "sayings", "monastic-spirituality"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

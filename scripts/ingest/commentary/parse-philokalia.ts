@@ -7,6 +7,10 @@ import type {
   WorkChapter,
 } from "@theosis/core";
 import { paragraphize, type CommentaryBundleV2 } from "../library/shared";
+import {
+  PHILOKALIA_PERSON_OVERLAYS,
+  PHILOKALIA_WORK_OVERLAYS,
+} from "../library/philokalia-metadata";
 
 const SOURCE_ID = "philokalia-source";
 
@@ -1097,10 +1101,29 @@ export function parsePhilokalia(config: ParsePhilokaliaConfig): CommentaryBundle
   // paraphraser of Makarios's homilies).
   const allPeople = [...peopleWithFeatured, ...ADDITIONAL_PEOPLE];
 
+  // Apply topic-slug + icon overlays from the curated metadata table.
+  const peopleWithOverlays = allPeople.map((p) => {
+    const overlay = PHILOKALIA_PERSON_OVERLAYS[p.id];
+    if (!overlay) return p;
+    return {
+      ...p,
+      topicSlugs: overlay.topicSlugs.length > 0 ? overlay.topicSlugs : p.topicSlugs,
+      ...(overlay.iconId ? { iconId: overlay.iconId } : {}),
+    };
+  });
+  const worksWithOverlays = works.map((w) => {
+    const overlay = PHILOKALIA_WORK_OVERLAYS[w.id];
+    if (!overlay) return w;
+    return {
+      ...w,
+      topicSlugs: overlay.topicSlugs.length > 0 ? overlay.topicSlugs : w.topicSlugs,
+    };
+  });
+
   return {
     version: "2",
-    people: allPeople,
-    works,
+    people: peopleWithOverlays,
+    works: worksWithOverlays,
     sources: [source],
     entries: [],
     chapters,

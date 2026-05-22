@@ -22,7 +22,7 @@ const person: Person = {
   summary:
     "Russian Orthodox émigré priest and dean of St. Vladimir's Seminary (Crestwood, NY) from 1962 until his death. Shaped 20th-century Orthodox theology in America around a liturgical-sacramental vision of the world as sacrament — every act of life as a thanksgiving offered up in the Eucharist.",
   traditions: ["Eastern Orthodox", "Orthodox Church in America"],
-  topicSlugs: [],
+  topicSlugs: ["sacraments", "liturgical-theology", "modern-spirituality", "eucharist"],
   featuredWorkIds: [WORK_ID],
 };
 
@@ -37,7 +37,7 @@ const work: Work = {
   eraLabel: "1963 (rev. 1973)",
   summary:
     "Schmemann's slim sacramental manifesto — written originally for the National Student Christian Federation — recasts secularism not as a problem of belief but as a failure to receive the world as eucharist. Through the Liturgy, Baptism, marriage, holy orders, anointing, and Pascha, he traces how the Christian life is the world brought back into thanksgiving.",
-  topicSlugs: [],
+  topicSlugs: ["sacraments", "liturgical-theology", "eucharist", "baptism", "ecclesiology"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

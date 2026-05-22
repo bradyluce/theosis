@@ -21,7 +21,7 @@ const person: Person = {
   summary:
     "Greek-Orthodox American biblical scholar, attorney, and adjunct professor of theology and biblical studies at the University of San Diego. Convert from the Greek-Orthodox lay world to an academic vocation; author of the multi-volume Search the Scriptures podcast/commentary series and Thinking Orthodox.",
   traditions: ["Eastern Orthodox", "Greek Orthodox"],
-  topicSlugs: [],
+  topicSlugs: ["patristics", "modern-spirituality", "catechesis", "phronema"],
   featuredWorkIds: [WORK_ID],
 };
 
@@ -36,7 +36,7 @@ const work: Work = {
   eraLabel: "2020",
   summary:
     "A contemporary catechetical-cum-academic introduction to the Orthodox phronema (Christian mind) — what it is, how it differs from the Protestant and Roman Catholic intellectual traditions, and how a layperson or seminarian acquires it through the Fathers, Scripture, and Holy Tradition.",
-  topicSlugs: [],
+  topicSlugs: ["catechesis", "patristics", "phronema", "modern-spirituality", "discernment"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

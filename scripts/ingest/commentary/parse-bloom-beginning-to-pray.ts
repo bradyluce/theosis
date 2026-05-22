@@ -15,7 +15,7 @@ const person: Person = {
   summary:
     "Russian-born surgeon turned bishop, Metropolitan of the Russian Orthodox Diocese of Sourozh (Great Britain and Ireland) from 1962 until his death. His broadcast talks on prayer, conversion, and the encounter with God shaped a generation of English-speaking Orthodox lay piety and became modern spiritual classics.",
   traditions: ["Eastern Orthodox", "Russian Orthodox"],
-  topicSlugs: [],
+  topicSlugs: ["prayer", "modern-spirituality", "russian-orthodox-tradition"],
   featuredWorkIds: [WORK_ID],
 };
 
@@ -30,7 +30,7 @@ const work: Work = {
   eraLabel: "1970",
   summary:
     "A five-chapter introduction to Christian prayer for readers who suspect they may not know how (or whether) to pray. Anthony Bloom begins with the seeming absence of God and works through the discipline of knocking, inwardness, the management of time, and the search for the divine Name, ending in a meditation on the Lord's Prayer.",
-  topicSlugs: [],
+  topicSlugs: ["prayer", "lay-spirituality", "modern-spirituality", "lords-prayer"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

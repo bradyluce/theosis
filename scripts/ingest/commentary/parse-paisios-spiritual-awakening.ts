@@ -15,9 +15,10 @@ const person: Person = {
   summary:
     "Born Arsenios Eznepidis in Pharasa, Cappadocia, raised in Konitsa (Greece), tonsured on Mount Athos. Elder of the Holy Mountain in the second half of the twentieth century whose counsel — collected posthumously by the nuns of the Monastery of St. John the Theologian in Souroti — became the most-read spiritual reading in the modern Greek Orthodox world. Glorified by the Ecumenical Patriarchate in January 2015.",
   traditions: ["Eastern Orthodox", "Greek Orthodox"],
-  topicSlugs: [],
+  topicSlugs: ["modern-spirituality", "monasticism", "spiritual-counsel"],
   featuredWorkIds: [WORK_ID],
   feastDayLabel: "July 12",
+  iconId: "icon-paisios-the-athonite",
 };
 
 const work: Work = {
@@ -31,7 +32,7 @@ const work: Work = {
   eraLabel: "Greek 1999 · English 2008",
   summary:
     "The second volume of the six-volume Spiritual Counsels series — counsels of Elder Paisios collected and arranged by the nuns of Souroti from cassette recordings and notebooks across the 1980s and early 1990s. Spiritual Awakening focuses on the daily struggle against indifference, the cultivation of devout watchfulness, and the laying-down of one's life for others.",
-  topicSlugs: [],
+  topicSlugs: ["spiritual-counsel", "modern-spirituality", "monastic-spirituality", "nepsis-watchfulness"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

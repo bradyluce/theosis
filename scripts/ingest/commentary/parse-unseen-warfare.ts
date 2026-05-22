@@ -15,7 +15,7 @@ const person: Person = {
   summary:
     "Composite authorship: Lorenzo Scupoli's Italian Combattimento Spirituale (c. 1589) was revised, expanded, and Christianized for Orthodox practice by St. Nikodemos of the Holy Mountain (Greek, late 18th c.) and then again by St. Theophan the Recluse (Russian, late 19th c.). The Theosis library carries the Theophan recension in English translation.",
   traditions: ["Eastern Orthodox", "Roman Catholic"],
-  topicSlugs: [],
+  topicSlugs: ["ascetical-theology", "spiritual-combat", "monastic-spirituality", "passions-and-virtues"],
   featuredWorkIds: [WORK_ID],
 };
 
@@ -30,7 +30,7 @@ const work: Work = {
   eraLabel: "c. 1589 / 1796 / 1892",
   summary:
     "An ascetical handbook for the spiritual combat against the passions and the demons, structured in two parts — Christian struggle and Christian peace. Originally Lorenzo Scupoli's 16th-century Italian Combattimento, reworked and assimilated to Orthodox ascesis by Sts. Nikodemos of the Holy Mountain and Theophan the Recluse.",
-  topicSlugs: [],
+  topicSlugs: ["spiritual-combat", "ascetical-theology", "passions-and-virtues", "discernment"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

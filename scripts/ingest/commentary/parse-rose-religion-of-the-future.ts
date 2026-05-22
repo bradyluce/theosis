@@ -22,8 +22,9 @@ const person: Person = {
   summary:
     "American-born convert from Berkeley intellectual life to Orthodoxy under St. John Maximovitch. Co-founder with Fr. Herman (Podmoshensky) of the St. Herman of Alaska Brotherhood, the Platina (California) skete, and the journal The Orthodox Word. His writings — drawing heavily on the Fathers, especially the ascetic tradition — defined the patristic-revival voice of 20th-century English-language American Orthodoxy.",
   traditions: ["Eastern Orthodox", "Russian Orthodox Outside Russia"],
-  topicSlugs: [],
+  topicSlugs: ["modern-spirituality", "patristic-revival", "russian-orthodox-tradition", "apologetics"],
   featuredWorkIds: [WORK_ID],
+  iconId: "icon-seraphim-rose",
 };
 
 const work: Work = {
@@ -37,7 +38,7 @@ const work: Work = {
   eraLabel: "1975 (later editions through 2017)",
   summary:
     "A patristic-eyed survey of the spiritual currents Fr. Seraphim diagnosed as competitors to Orthodox Christianity in the second half of the twentieth century — the encounter with non-Christian Eastern religions, the charismatic and ecumenist movements, the literature on UFOs and the paranormal, the New-Age 'sign of the times.' Argued from the Fathers and Holy Scripture as a discernment-of-spirits treatise, not a polemical one.",
-  topicSlugs: [],
+  topicSlugs: ["apologetics", "discernment", "modern-spirituality", "patristic-theology"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

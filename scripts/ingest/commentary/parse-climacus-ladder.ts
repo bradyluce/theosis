@@ -15,9 +15,10 @@ const person: Person = {
   summary:
     "Abbot of Sinai and author of The Ladder of Divine Ascent, the most-read ascetical-theological guide in the Orthodox monastic tradition. Read in church during Lent, ranked with the Philokalia in spiritual authority.",
   traditions: ["Eastern Orthodox"],
-  topicSlugs: [],
+  topicSlugs: ["monasticism", "ascetical-theology", "ladder-of-virtues", "passions-and-virtues"],
   featuredWorkIds: [WORK_ID],
   feastDayLabel: "March 30 (and Fourth Sunday of Great Lent)",
+  iconId: "icon-john-climacus",
 };
 
 const work: Work = {
@@ -31,7 +32,7 @@ const work: Work = {
   eraLabel: "c. 600",
   summary:
     "Thirty steps charting the monastic ascent from renunciation of the world through the heights of dispassion and love. Written for the monks of Raithu and used since the seventh century as the standard guide for both monastic and lay spiritual struggle.",
-  topicSlugs: [],
+  topicSlugs: ["monasticism", "ascetical-theology", "virtues", "passions-and-virtues", "dispassion"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };

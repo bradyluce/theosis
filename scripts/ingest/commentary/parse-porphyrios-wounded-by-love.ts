@@ -22,9 +22,10 @@ const person: Person = {
   summary:
     "Born Evangelos Bairaktaris in Euboea, tonsured at twelve on Mount Athos. Spent decades as confessor at the Polyclinic of Athens, then retired to the Holy Convent of the Transfiguration of the Saviour at Milesi. Known throughout the Greek-speaking world for his gift of clairvoyance, his pastoral gentleness, and his counsels on the cultivation of divine love as the heart of Orthodox spiritual life. Glorified by the Ecumenical Patriarchate in November 2013.",
   traditions: ["Eastern Orthodox", "Greek Orthodox"],
-  topicSlugs: [],
+  topicSlugs: ["modern-spirituality", "monasticism", "spiritual-counsel", "love"],
   featuredWorkIds: [WORK_ID],
   feastDayLabel: "December 2",
+  iconId: "icon-porphyrios-of-kavsokalyvia",
 };
 
 const work: Work = {
@@ -38,7 +39,7 @@ const work: Work = {
   eraLabel: "English ed. 2005",
   summary:
     "Counsels, autobiographical recollections, and stories gathered from Elder Porphyrios's own spoken teachings — collected and arranged after his repose by his spiritual children at the Holy Convent of the Transfiguration of the Saviour at Milesi. The book is the most-read introduction to the Elder's gentle, love-centered approach to Orthodox spiritual life.",
-  topicSlugs: [],
+  topicSlugs: ["spiritual-counsel", "modern-spirituality", "love", "monastic-spirituality"],
   sourceId: SOURCE_ID,
   verseRefs: [],
 };
