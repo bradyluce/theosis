@@ -36,6 +36,12 @@ type CanonicalWork = {
   workType: "treatise" | "commentary" | "homily" | "letter" | "life";
   // Synonyms — case-sensitive chrome strings detected by the parser.
   chromeSynonyms: string[];
+  // When true, pre-first-chrome content (otherwise the editorial "Introductory
+  // Note") is assigned to this Work if no chrome synonym matches. Use for the
+  // FIRST canonical work in an author's catalog when that work has no recurring
+  // page chrome in the PDF (e.g., Theodoros the Great Ascetic's "Century of
+  // Spiritual Texts" precedes "Theoretikon" but has no chrome of its own).
+  firstIfNoChrome?: boolean;
 };
 
 type PhilokaliaAuthor = {
@@ -104,21 +110,34 @@ const AUTHORS: PhilokaliaAuthor[] = [
         title: "Texts on Discrimination in respect of Passions and Thoughts",
         shortTitle: "On Discrimination",
         workType: "treatise",
-        chromeSynonyms: ["Texts on Discrimination", "On Discrimination"],
+        chromeSynonyms: [
+          "Texts on Discrimination in Respect of Passions and Thoughts",
+          "Texts on Discrimination",
+          "On Discrimination",
+        ],
       },
       {
         workSlug: "philokalia-evagrios-extracts-on-watchfulness",
         title: "Extracts from the Texts on Watchfulness",
         shortTitle: "Extracts on Watchfulness",
         workType: "treatise",
-        chromeSynonyms: ["Extracts from the Texts", "Texts on Watchfulness", "Extracts on Watchfulness"],
+        chromeSynonyms: [
+          "Extracts from the Texts on Watchfulness",
+          "Extracts from the Texts",
+          "Texts on Watchfulness",
+          "Extracts on Watchfulness",
+        ],
       },
       {
         workSlug: "philokalia-evagrios-on-prayer",
         title: "On Prayer: One Hundred and Fifty-Three Texts",
         shortTitle: "On Prayer",
         workType: "treatise",
-        chromeSynonyms: ["On Prayer"],
+        chromeSynonyms: [
+          "On Prayer:",
+          "On Prayer",
+          "One Hundred and Fifty-Three Texts",
+        ],
       },
     ],
   },
@@ -306,7 +325,14 @@ const AUTHORS: PhilokaliaAuthor[] = [
         title: "For the Encouragement of the Monks in India who had Written to Him: One Hundred Texts",
         shortTitle: "Encouragement of the Monks in India",
         workType: "treatise",
-        chromeSynonyms: ["For the Encouragement", "Encouragement of the Monks", "Monks in India", "One Hundred and Thirty-Seven Texts"],
+        chromeSynonyms: [
+          "For the Encouragement",
+          "Encouragement of the Monks",
+          "Monks in India",
+          "One Hundred and Thirty-Seven Texts",
+          "One Hundred Texts",
+        ],
+        firstIfNoChrome: true,
       },
       {
         workSlug: "philokalia-karpathos-twenty-four-discourses",
@@ -341,6 +367,7 @@ const AUTHORS: PhilokaliaAuthor[] = [
         shortTitle: "A Century of Spiritual Texts",
         workType: "treatise",
         chromeSynonyms: ["A Century of Spiritual Texts", "Century of Spiritual Texts", "A Century"],
+        firstIfNoChrome: true,
       },
       {
         workSlug: "philokalia-theodoros-theoretikon",
@@ -427,34 +454,10 @@ const AUTHORS: PhilokaliaAuthor[] = [
       },
     ],
   },
-  {
-    personId: "symeon-metaphrastis",
-    emitPerson: true,
-    chrome: "St Symeon Metaphrastis",
-    personRecord: {
-      id: "symeon-metaphrastis",
-      slug: "symeon-metaphrastis",
-      name: "St. Symeon Metaphrastis (Logothete)",
-      honorific: "St.",
-      kind: "father",
-      eraLabel: "10th century",
-      summary:
-        "Byzantine hagiographer and editor of the Menologion; in the Philokalia his role is as paraphrast of the Macarian Homilies. The text attributed to St. Makarios of Egypt in the Philokalia is in fact Metaphrastis's curated, ascetical-text-style rendering of the original Macarian corpus.",
-      traditions: ["Eastern Orthodox"],
-      topicSlugs: [],
-      featuredWorkIds: [],
-      feastDayLabel: "November 9 (or November 28)",
-    },
-    worksCatalog: [
-      {
-        workSlug: "philokalia-metaphrastis-paraphrase-makarios",
-        title: "Paraphrase of the Homilies of St. Makarios of Egypt: One Hundred and Fifty Texts",
-        shortTitle: "Paraphrase of Macarian Homilies",
-        workType: "treatise",
-        chromeSynonyms: ["Paraphrase of the Homilies", "Paraphrase", "One Hundred and Fifty Texts"],
-      },
-    ],
-  },
+  // Symeon Metaphrastis — removed from AUTHORS to avoid carving out a 1-page
+  // slice on his chrome line (his role in the Philokalia is as paraphraser of
+  // Makarios's homilies, so the content rightly belongs in Makarios's range).
+  // His Person record is emitted separately via ADDITIONAL_PEOPLE.
   {
     personId: "makarios-of-egypt",
     emitPerson: true,
@@ -479,10 +482,17 @@ const AUTHORS: PhilokaliaAuthor[] = [
     worksCatalog: [
       {
         workSlug: "philokalia-makarios-macarian-selections",
-        title: "Macarian Selections (via Symeon Metaphrastis's Paraphrase)",
-        shortTitle: "Macarian Selections",
+        title: "Paraphrase of the Homilies of St. Makarios of Egypt: One Hundred and Fifty Texts",
+        shortTitle: "Macarian Selections (Paraphrase)",
         workType: "homily",
-        chromeSynonyms: ["Macarian", "Homilies", "Paraphrase of the Homilies"],
+        chromeSynonyms: [
+          "Paraphrase of the Homilies",
+          "Paraphrase",
+          "One Hundred and Fifty Texts",
+          "Macarian",
+          "Homilies",
+        ],
+        firstIfNoChrome: true,
       },
     ],
   },
@@ -731,9 +741,36 @@ const AUTHORS: PhilokaliaAuthor[] = [
         title: "The Declaration of the Holy Mountain in Defence of Those who Devoutly Practise a Life of Stillness",
         shortTitle: "The Hagioretic Tome",
         workType: "treatise",
-        chromeSynonyms: ["Declaration of the Holy Mountain", "Holy Mountain in Defence", "Hagioretic"],
+        chromeSynonyms: [
+          "Declaration of the Holy Mountain",
+          "Holy Mountain in Defence",
+          "Hagioretic",
+          "In Defense of Those Who Devoutly",
+          "In Defense of Those who Devoutly",
+        ],
       },
     ],
+  },
+];
+
+// Persons referenced editorially by the Philokalia but not given their own
+// section boundary in this PDF — e.g., a paraphraser/editor whose only chrome
+// occurrence is the single transition page before the author he paraphrased.
+// We emit the Person so cross-references resolve, with no Works directly owned.
+const ADDITIONAL_PEOPLE: Person[] = [
+  {
+    id: "symeon-metaphrastis",
+    slug: "symeon-metaphrastis",
+    name: "St. Symeon Metaphrastis (Logothete)",
+    honorific: "St.",
+    kind: "father",
+    eraLabel: "10th century",
+    summary:
+      "Byzantine hagiographer and editor of the Menologion. In the Philokalia his role is as paraphrast of the Macarian Homilies — the Philokalic 'St. Makarios of Egypt' text is his curated, ascetical-text-style rendering of the original Macarian corpus. The text itself is catalogued under Makarios in this library; this Person record exists for cross-reference and biographical context.",
+    traditions: ["Eastern Orthodox"],
+    topicSlugs: [],
+    featuredWorkIds: ["philokalia-makarios-macarian-selections"],
+    feastDayLabel: "November 9 (or November 28)",
   },
 ];
 
@@ -741,7 +778,22 @@ const AUTHORS: PhilokaliaAuthor[] = [
 
 type SubWork = { chrome: string; firstOccurrence: number; occurrences: number };
 
-function detectSubWorks(body: string, authorChrome: string): SubWork[] {
+// Two detection strategies, merged:
+//   (a) frequency-based — any short mixed-case line that recurs ≥3 times within
+//       the author's range is treated as page chrome and considered a sub-work
+//       boundary. Catches both canonical works and editorial subsection
+//       headings (e.g., Peter of Damaskos's per-virtue sub-headings).
+//   (b) known-synonym — for each canonical work in the author's catalog, the
+//       FIRST line-anchored occurrence of any synonym counts as a boundary,
+//       even if it only appears once or twice. This catches short canonical
+//       works whose chrome doesn't recur enough to hit the frequency threshold
+//       (e.g., Evagrius's "Extracts from the Texts on Watchfulness", Palamas's
+//       "In Defense of Those Who Devoutly").
+function detectSubWorks(
+  body: string,
+  authorChrome: string,
+  worksCatalog: CanonicalWork[],
+): SubWork[] {
   const lines = body.split("\n");
   const counts = new Map<string, { first: number; count: number }>();
   let byteOffset = 0;
@@ -751,8 +803,6 @@ function detectSubWorks(body: string, authorChrome: string): SubWork[] {
       trimmed.length >= 4 &&
       trimmed.length <= 60 &&
       // First char A-Z, second alphabetic, rest may include digits/punctuation.
-      // Allow trailing digits (e.g. "Book1", "Part 4") since some chrome
-      // labels in this PDF concatenate book/part numbers with no separator.
       /^[A-Z][A-Za-z][A-Za-z0-9 ,'’.\-:]+$/.test(trimmed) &&
       // Reject lines that look like a page-number prefix (e.g. "47 Some text").
       !/^\d/.test(trimmed) &&
@@ -767,12 +817,24 @@ function detectSubWorks(body: string, authorChrome: string): SubWork[] {
     }
     byteOffset += line.length + 1;
   }
-  const filtered: SubWork[] = [];
+  // (a) Frequency-based — keep chromes that recur ≥3 times.
+  const merged = new Map<string, SubWork>();
   for (const [chrome, info] of counts.entries()) {
     if (info.count < 3) continue;
-    filtered.push({ chrome, firstOccurrence: info.first, occurrences: info.count });
+    merged.set(chrome, { chrome, firstOccurrence: info.first, occurrences: info.count });
   }
-  filtered.sort((a, b) => b.chrome.length - a.chrome.length);
+  // (b) Known-synonym — also include any canonical synonym that appears at
+  // least once at line start, even below the frequency threshold.
+  for (const w of worksCatalog) {
+    for (const synonym of w.chromeSynonyms) {
+      const info = counts.get(synonym);
+      if (info && !merged.has(synonym)) {
+        merged.set(synonym, { chrome: synonym, firstOccurrence: info.first, occurrences: info.count });
+      }
+    }
+  }
+  // Deduplicate near-identical chromes (keep the longest form of each cluster).
+  const filtered = [...merged.values()].sort((a, b) => b.chrome.length - a.chrome.length);
   const kept: SubWork[] = [];
   for (const candidate of filtered) {
     const stripped = candidate.chrome.replace(/[,.'’\-:]\s*$/, "").trim();
@@ -837,7 +899,7 @@ export function parsePhilokalia(config: ParsePhilokaliaConfig): CommentaryBundle
       people.push(author.personRecord);
     }
 
-    const subWorks = detectSubWorks(body, author.chrome);
+    const subWorks = detectSubWorks(body, author.chrome, author.worksCatalog);
 
     // Sequential accumulator: as we walk sub-works in body order, every
     // canonical chrome match becomes the new "current canonical" and starts
@@ -938,6 +1000,25 @@ export function parsePhilokalia(config: ParsePhilokaliaConfig): CommentaryBundle
       }
     }
 
+    // firstIfNoChrome promotion: when a canonical work is marked as the
+    // implicit first work for the author AND it didn't get its own chrome
+    // hit AND there's substantial intro content, reassign the intro
+    // paragraphs to that work instead of emitting an "Introductory Note."
+    const implicitFirst = author.worksCatalog.find((w) => w.firstIfNoChrome);
+    if (
+      implicitFirst &&
+      !canonicalBuckets.has(implicitFirst.workSlug) &&
+      introParagraphs.length >= 30
+    ) {
+      canonicalOrderCounter += 1;
+      canonicalBuckets.set(implicitFirst.workSlug, {
+        paragraphs: introParagraphs.slice(),
+        order: canonicalOrderCounter,
+      });
+      // Clear the intro bucket so we don't double-emit.
+      introParagraphs.length = 0;
+    }
+
     // Emit Introductory Note if non-trivial.
     if (introParagraphs.length >= 2) {
       const introSlug = `philokalia-${author.personId}-intro`;
@@ -1011,9 +1092,14 @@ export function parsePhilokalia(config: ParsePhilokaliaConfig): CommentaryBundle
     featuredWorkIds: featuredByPerson.get(p.id) ?? [],
   }));
 
+  // Append ADDITIONAL_PEOPLE — editorial/cross-reference Persons that don't
+  // get their own section boundary in the PDF (e.g., Symeon Metaphrastis as
+  // paraphraser of Makarios's homilies).
+  const allPeople = [...peopleWithFeatured, ...ADDITIONAL_PEOPLE];
+
   return {
     version: "2",
-    people: peopleWithFeatured,
+    people: allPeople,
     works,
     sources: [source],
     entries: [],
