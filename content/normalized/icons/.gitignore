@@ -1,0 +1,14 @@
+# Hand-collected source images dropped here for the import-local-icons
+# script to consume. The script normalizes them into public/icons/, which
+# is what the app actually serves and git tracks. The originals stay local
+# as backups but aren't committed.
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.tif
+*.tiff
+
+# The catalog itself IS committed — it carries all icon metadata.
+!catalog.json

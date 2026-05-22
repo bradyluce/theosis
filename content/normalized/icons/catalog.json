@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "description": "Orthodox icon catalog. Each entry resolves an iconId referenced from Person, DailyCommemoration, or DailyCommemorationItem. Image files live under public/icons/ and are served as static assets by Next.js — the IconRef.src field is the public URL (e.g. /icons/icon-theotokos-vladimir.jpg). Curated via scripts/ingest/icons/fetch-wikimedia.ts from Wikimedia Commons.",
-    "license": "Image files are public-domain or CC0 only. Attribution strings are factual provenance; captions are Theosis-owned editorial prose.",
-    "coverage": "24 icons (Phase 1): Christ Pantocrator, Theotokos of Vladimir, Rublev Trinity, the Twelve Great Feasts, and 8 major saints (Nicholas, John Chrysostom, Basil the Great, Mary of Egypt, Seraphim of Sarov, Sergius of Radonezh, Anthony the Great, George the Trophy-Bearer). Traditional Byzantine/Russian style; PD or CC0 only."
+    "description": "Orthodox icon catalog. Each entry resolves an iconId referenced from Person, DailyCommemoration, or DailyCommemorationItem. Image files live under public/icons/ and are served as static assets by Next.js — the IconRef.src field is the public URL (e.g. /icons/icon-theotokos-vladimir.jpg). Three import paths: scripts/ingest/icons/fetch-wikimedia.ts (Wikimedia Commons), scripts/ingest/icons/auto-curate.ts (Wikimedia + Wikidata bulk-curation), and scripts/ingest/icons/import-local-icons.ts (hand-collected files dropped into content/normalized/icons/).",
+    "license": "Image files are public-domain, CC0, CC-BY, CC-BY-SA, or hand-curated (provenance unknown). Attribution strings carry per-icon source info.",
+    "coverage": "203 icons covering Christ Pantocrator, Theotokos of Vladimir, Rublev Trinity, the Twelve Great Feasts, ~30 movable-cycle feasts/Sundays, and ~150 saints/fathers across the Person seed."
   },
   "icons": [
     {
@@ -26,6 +26,28 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAgatha_orthodox_icon.jpg",
       "license": "public-domain",
       "caption": "Agatha of Sicily"
+    },
+    {
+      "id": "icon-alexander-of-alexandria",
+      "src": "/icons/icon-alexander-of-alexandria.jpg",
+      "alt": "Icon of Saint Alexander, Patriarch of Alexandria.",
+      "width": 400,
+      "height": 531,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Alexander of Alexandria"
+    },
+    {
+      "id": "icon-alexius-of-moscow",
+      "src": "/icons/icon-alexius-of-moscow.jpg",
+      "alt": "Icon of Saint Alexius, Metropolitan of Moscow and All Russia.",
+      "width": 903,
+      "height": 1200,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Alexius of Moscow"
     },
     {
       "id": "icon-ambrose-of-milan",
@@ -92,6 +114,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AProphetess_Anna_Icon.jpg",
       "license": "public-domain",
       "caption": "Anna the Prophetess"
+    },
+    {
+      "id": "icon-anthony-of-the-caves",
+      "src": "/icons/icon-anthony-of-the-caves.webp",
+      "alt": "Icon of Saint Anthony of the Kiev Caves, founder of Russian monasticism.",
+      "width": 396,
+      "height": 500,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Anthony of the Caves"
     },
     {
       "id": "icon-anthony-the-great",
@@ -347,6 +380,17 @@
       "caption": "Basil the Great"
     },
     {
+      "id": "icon-boniface-and-aglaida",
+      "src": "/icons/icon-boniface-and-aglaida.jpg",
+      "alt": "Icon of the Holy Martyr Boniface and Righteous Aglaida.",
+      "width": 398,
+      "height": 516,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saints Boniface and Aglaida"
+    },
+    {
       "id": "icon-boris-and-gleb",
       "src": "/icons/icon-boris-and-gleb.jpg",
       "alt": "Orthodox icon of Passion-Bearers Boris and Gleb.",
@@ -468,6 +512,17 @@
       "caption": "Cyril of Jerusalem"
     },
     {
+      "id": "icon-cyrus-and-john-unmercenaries",
+      "src": "/icons/icon-cyrus-and-john-unmercenaries.jpg",
+      "alt": "Byzantine icon of the Holy Unmercenaries Cyrus and John.",
+      "width": 332,
+      "height": 432,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saints Cyrus and John the Unmercenaries"
+    },
+    {
       "id": "icon-demetrius-of-rostov",
       "src": "/icons/icon-demetrius-of-rostov.jpg",
       "alt": "Orthodox icon of Demetrius of Rostov.",
@@ -510,6 +565,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AClay_glaze_icons_from_Nicomedia_(10-11%2C_GIM)_by_shakko.jpg",
       "license": "cc-by-sa",
       "caption": "Elizabeth, Mother of the Forerunner"
+    },
+    {
+      "id": "icon-elizabeth-the-new-martyr",
+      "src": "/icons/icon-elizabeth-the-new-martyr.png",
+      "alt": "Icon of Saint Elizabeth the New-martyr, Grand Duchess of Russia.",
+      "width": 874,
+      "height": 1280,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Elizabeth the New-martyr"
     },
     {
       "id": "icon-ephraim-the-syrian",
@@ -1018,6 +1084,17 @@
       "caption": "Saint Ignatius of Antioch"
     },
     {
+      "id": "icon-innocent-of-alaska",
+      "src": "/icons/icon-innocent-of-alaska.webp",
+      "alt": "Icon of Saint Innocent, Enlightener of the Aleuts and Apostle to America.",
+      "width": 225,
+      "height": 298,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Innocent of Alaska"
+    },
+    {
       "id": "icon-jerome",
       "src": "/icons/icon-jerome.jpg",
       "alt": "Orthodox icon of Jerome.",
@@ -1106,6 +1183,17 @@
       "caption": "John of Kronstadt"
     },
     {
+      "id": "icon-john-of-shanghai",
+      "src": "/icons/icon-john-of-shanghai.webp",
+      "alt": "Icon of Saint John (Maximovitch) of Shanghai and San Francisco.",
+      "width": 640,
+      "height": 840,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint John of Shanghai and San Francisco"
+    },
+    {
       "id": "icon-john-the-forerunner",
       "src": "/icons/icon-john-the-forerunner.jpg",
       "alt": "Sixteenth-century Yaroslavl icon of Saint John the Forerunner and Baptist.",
@@ -1137,6 +1225,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChiesa_Santa_Maria_Assunta_(icons)19.png",
       "license": "cc-by-sa",
       "caption": "Joseph the Betrothed"
+    },
+    {
+      "id": "icon-justin-popovich",
+      "src": "/icons/icon-justin-popovich.jpg",
+      "alt": "Icon of Saint Justin (Popovich) of Chelije.",
+      "width": 293,
+      "height": 400,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Justin Popovich"
     },
     {
       "id": "icon-justin-the-philosopher",
@@ -1172,6 +1271,17 @@
       "caption": "Great Prince Lazar of Serbia"
     },
     {
+      "id": "icon-lazarus-of-bethany",
+      "src": "/icons/icon-lazarus-of-bethany.webp",
+      "alt": "Icon of the Righteous Lazarus the Four-Days-Dead, friend of Christ.",
+      "width": 639,
+      "height": 800,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Lazarus of Bethany"
+    },
+    {
       "id": "icon-leo-the-great",
       "src": "/icons/icon-leo-the-great.jpg",
       "alt": "Orthodox icon of Leo the Great.",
@@ -1181,6 +1291,28 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFamous_Eastern_and_Oriental_Orthodox_Christians_Mosaic.jpg",
       "license": "cc-by-sa",
       "caption": "Leo the Great"
+    },
+    {
+      "id": "icon-luke-of-crimea",
+      "src": "/icons/icon-luke-of-crimea.jpg",
+      "alt": "Icon of Saint Luke (Voyno-Yasenetsky), Archbishop of Simferopol and Crimea.",
+      "width": 938,
+      "height": 1280,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Luke of Crimea"
+    },
+    {
+      "id": "icon-macarius-of-optina",
+      "src": "/icons/icon-macarius-of-optina.jpg",
+      "alt": "Icon of Saint Macarius (Ivanov) of Optina, Elder of the Optina Hermitage.",
+      "width": 436,
+      "height": 600,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Macarius of Optina"
     },
     {
       "id": "icon-macarius-the-egyptian",
@@ -1216,6 +1348,17 @@
       "caption": "Macrina the Younger"
     },
     {
+      "id": "icon-mamas-of-caesarea",
+      "src": "/icons/icon-mamas-of-caesarea.jpg",
+      "alt": "Icon of the Holy Martyr Mamas of Caesarea in Cappadocia.",
+      "width": 433,
+      "height": 600,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Mamas of Caesarea"
+    },
+    {
       "id": "icon-mark-the-ascetic",
       "src": "/icons/icon-mark-the-ascetic.jpg",
       "alt": "Orthodox icon of Mark the Ascetic.",
@@ -1225,6 +1368,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A029_Saint_Mark_Icon_from_Saint_Paraskevi_Church_in_Langadas.jpg",
       "license": "public-domain",
       "caption": "Mark the Ascetic"
+    },
+    {
+      "id": "icon-martha-and-mary-of-bethany",
+      "src": "/icons/icon-martha-and-mary-of-bethany.png",
+      "alt": "Icon of the Righteous Martha and Mary of Bethany, sisters of Lazarus.",
+      "width": 908,
+      "height": 1236,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saints Martha and Mary of Bethany"
     },
     {
       "id": "icon-martyr-christina-of-tyre",
@@ -1337,6 +1491,17 @@
       "caption": "Methodius, Equal-to-the-Apostles"
     },
     {
+      "id": "icon-moses-of-hungary",
+      "src": "/icons/icon-moses-of-hungary.jpg",
+      "alt": "Icon of Saint Moses the Hungarian of the Kiev Caves.",
+      "width": 250,
+      "height": 353,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Moses the Hungarian"
+    },
+    {
       "id": "icon-moses-the-black",
       "src": "/icons/icon-moses-the-black.jpg",
       "alt": "Icon of Saints Poemen the Great, Elijah the Prophet, and Moses the Black of Scetis.",
@@ -1370,6 +1535,17 @@
       "caption": "Nicholas the Wonderworker"
     },
     {
+      "id": "icon-nikolai-of-zica",
+      "src": "/icons/icon-nikolai-of-zica.png",
+      "alt": "Icon of Saint Nikolai (Velimirovic) of Žiča and Ohrid.",
+      "width": 966,
+      "height": 1200,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Nikolai of Žiča"
+    },
+    {
       "id": "icon-nina-of-georgia",
       "src": "/icons/icon-nina-of-georgia.jpg",
       "alt": "Twentieth-century Palekh-school icon of Saint Nina, Equal-to-the-Apostles, Enlightener of Georgia.",
@@ -1401,6 +1577,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABlaj_Iconostasis_Saint_Pachomius.jpg",
       "license": "cc-by",
       "caption": "Pachomius the Great"
+    },
+    {
+      "id": "icon-paisios-the-athonite",
+      "src": "/icons/icon-paisios-the-athonite.webp",
+      "alt": "Icon of Saint Paisios the Athonite.",
+      "width": 734,
+      "height": 1024,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Paisios the Athonite"
     },
     {
       "id": "icon-paisius-velichkovsky",
@@ -1491,6 +1678,17 @@
       "caption": "Saint Photini the Samaritan"
     },
     {
+      "id": "icon-photios-the-great",
+      "src": "/icons/icon-photios-the-great.jpg",
+      "alt": "Icon of Saint Photios the Great, Patriarch of Constantinople.",
+      "width": 590,
+      "height": 800,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Photios the Great"
+    },
+    {
       "id": "icon-polycarp-of-smyrna",
       "src": "/icons/icon-polycarp-of-smyrna.jpg",
       "alt": "Orthodox icon of Polycarp of Smyrna.",
@@ -1500,6 +1698,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AIzmir_St_Polycarp_Church_Icon_Miraculously_Extinguishing_Smyrna_Fire.JPG",
       "license": "cc-by-sa",
       "caption": "Polycarp of Smyrna"
+    },
+    {
+      "id": "icon-porphyrios-of-kavsokalyvia",
+      "src": "/icons/icon-porphyrios-of-kavsokalyvia.webp",
+      "alt": "Icon of Saint Porphyrios of Kavsokalyvia, the contemporary Athonite elder.",
+      "width": 1458,
+      "height": 2048,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Porphyrios of Kavsokalyvia"
     },
     {
       "id": "icon-prophet-daniel",
@@ -1643,6 +1852,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A012_Saint_Stephen_Icon_from_Saint_Paraskevi_Church_in_Langadas.jpg",
       "license": "public-domain",
       "caption": "Stephen the Protomartyr and Archdeacon"
+    },
+    {
+      "id": "icon-romanos-the-melodist",
+      "src": "/icons/icon-romanos-the-melodist.webp",
+      "alt": "Icon of Saint Romanos the Melodist, father of Byzantine hymnography.",
+      "width": 623,
+      "height": 800,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Romanos the Melodist"
     },
     {
       "id": "icon-royal-martyrs-of-russia",
@@ -1876,6 +2096,17 @@
       "caption": "Tatiana of Rome"
     },
     {
+      "id": "icon-thekla-of-iconium",
+      "src": "/icons/icon-thekla-of-iconium.webp",
+      "alt": "Icon of the Holy First Female Martyr Thekla of Iconium, Equal-to-the-Apostles.",
+      "width": 360,
+      "height": 483,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Thekla of Iconium"
+    },
+    {
       "id": "icon-theodore-the-general",
       "src": "/icons/icon-theodore-the-general.jpg",
       "alt": "Orthodox icon of Theodore the General (Stratelates).",
@@ -1995,6 +2226,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKsenia_of_petersbourg.jpeg",
       "license": "public-domain",
       "caption": "Blessed Xenia of Petersburg"
+    },
+    {
+      "id": "icon-zacharias-the-priest",
+      "src": "/icons/icon-zacharias-the-priest.jpg",
+      "alt": "Icon of Saint Zachariah the Priest, father of John the Forerunner.",
+      "width": 350,
+      "height": 450,
+      "attribution": "Hand-curated icon.",
+      "sourceUrl": "",
+      "license": "public-domain",
+      "caption": "Saint Zachariah the Priest"
     }
   ]
 }

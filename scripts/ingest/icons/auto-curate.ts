@@ -401,14 +401,26 @@ async function main() {
   const saints = people.filter((p) => p.kind === "saint" || p.kind === "father");
   const { entries, misses } = readExisting();
 
-  // Personas already covered: manual sources binding by personId convention
-  // (id "icon-{personId}"), or in the auto sources, or a known miss.
+  // Personas already covered: previous auto entries, known misses, or already
+  // in catalog.json with an "icon-{personId}" entry (this catches both manual
+  // sources.ts entries AND files imported via import-local-icons.ts, so we
+  // never overwrite a hand-picked icon with an automated guess).
   const coveredPersonIds = new Set<string>();
   for (const e of entries) coveredPersonIds.add(e.personId);
   for (const id of misses) coveredPersonIds.add(id);
-  // Manual sources: map by personId convention — icon ids like "icon-st-foo"
-  // don't match "icon-{personId}" so we conservatively skip people whose
-  // names appear in the manual sources captions.
+  const catalogPath = path.join(REPO_ROOT, "content/normalized/icons/catalog.json");
+  if (fs.existsSync(catalogPath)) {
+    const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8")) as {
+      icons?: Array<{ id: string }>;
+    };
+    for (const icon of catalog.icons ?? []) {
+      if (icon.id.startsWith("icon-")) {
+        coveredPersonIds.add(icon.id.slice("icon-".length));
+      }
+    }
+  }
+  // Manual sources captions: also skip when a hand-curated source.ts entry
+  // with a different naming convention (e.g. "icon-st-foo") covers this saint.
   const manualCaptions = new Set(
     iconSources.map((s) => (s.caption ?? "").toLowerCase()),
   );

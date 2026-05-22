@@ -12,6 +12,7 @@ import {
   getIconForPerson,
   getPrimaryIconForDay,
 } from "@/lib/content/icon-store";
+import { buildReadingHref } from "@/lib/content/reading-href";
 import { DatePicker } from "@/app/(shell)/daily/date-picker";
 
 type DailyPageProps = {
@@ -197,7 +198,7 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
 
           {anyIconShown ? (
             <p className="pt-1 text-[0.62rem] italic tracking-wide text-ink-soft">
-              Icons in the public domain, via Wikimedia Commons.
+              Icons curated from public-domain sources and Wikimedia Commons.
             </p>
           ) : null}
         </Surface>
@@ -216,7 +217,7 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
               {readings.map((reading) => (
                 <Link
                   key={reading.id}
-                  href={`/bible/${translationSlug}/${reading.scripture.bookSlug}/${reading.scripture.chapterNumber}`}
+                  href={buildReadingHref(translationSlug, reading.scripture)}
                   className="rounded-[12px] border border-line bg-background px-4 py-4 transition-colors duration-200 hover:bg-surface-strong"
                 >
                   <div className="flex items-center justify-between gap-3">
