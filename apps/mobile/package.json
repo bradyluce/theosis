@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "expo start",
+    "start": "cross-env EXPO_OFFLINE=1 expo start",
+    "start:online": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "android": "cross-env EXPO_OFFLINE=1 expo start --android",
+    "ios": "cross-env EXPO_OFFLINE=1 expo start --ios",
+    "web": "cross-env EXPO_OFFLINE=1 expo start --web",
     "lint": "expo lint"
   },
   "dependencies": {
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
+    "cross-env": "^10.1.0",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~10.0.0",
     "typescript": "~5.9.2"
