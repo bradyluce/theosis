@@ -413,6 +413,13 @@ const MAPPINGS: Array<{
     caption: "Saint Alexis the Man of God",
     alt: "Icon of Saints Alexis the Man of God and Mary of Egypt, 1648.",
   },
+  // --- The last holdout from the iconless-saints audit ---
+  {
+    sourceFile: "john-russian.jpg",
+    personId: "john-russian",
+    caption: "Saint John the Russian",
+    alt: "Icon of Saint John the Russian, Confessor of Prokopion in Cappadocia.",
+  },
 ];
 
 type CatalogShape = {

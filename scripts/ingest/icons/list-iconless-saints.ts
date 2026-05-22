@@ -1,0 +1,91 @@
+// List every Person in src/lib/content/seed/library.ts whose kind is "saint"
+// or "father" and who does NOT have an icon in the catalog. Works by text-
+// parsing the seed module (avoids the @/ alias breakage from the mobile/expo
+// tsconfig). Compares person.id against catalog ids using the same resolution
+// order as getIconForPerson in src/lib/content/icon-store.ts.
+
+import fs from "node:fs";
+import path from "node:path";
+
+const REPO_ROOT = process.cwd();
+const SEED_PATH = path.join(REPO_ROOT, "src/lib/content/seed/library.ts");
+const CATALOG_PATH = path.join(REPO_ROOT, "content/normalized/icons/catalog.json");
+
+// Mirror of PERSON_ICON_BINDINGS in src/lib/content/icon-store.ts.
+const PERSON_ICON_BINDINGS: Record<string, string> = {
+  "anthony-the-great": "icon-st-anthony-the-great",
+  "basil-the-great": "icon-st-basil-the-great",
+  "george-the-trophy-bearer": "icon-st-george-trophy-bearer",
+  "john-chrysostom": "icon-st-john-chrysostom",
+  "mary-of-egypt": "icon-st-mary-of-egypt",
+  "nicholas-of-myra": "icon-st-nicholas-myra",
+  "seraphim-of-sarov": "icon-st-seraphim-of-sarov",
+  "sergius-of-radonezh": "icon-st-sergius-of-radonezh",
+};
+
+type Person = { id: string; name: string; honorific: string; kind: string };
+
+function parseSeed(): Person[] {
+  const raw = fs.readFileSync(SEED_PATH, "utf8");
+  // Match each Person literal: { id: "...", slug: "...", name: "...",
+  // honorific: "...", kind: "...", ... }. honorific is optional.
+  const personRe = /\{\s*id:\s*"([^"]+)",\s*slug:\s*"[^"]+",\s*name:\s*"([^"]+)",(?:\s*honorific:\s*"([^"]+)",)?\s*kind:\s*"(saint|father|theologian)"/g;
+  const persons: Person[] = [];
+  let match: RegExpExecArray | null;
+  while ((match = personRe.exec(raw)) !== null) {
+    persons.push({
+      id: match[1],
+      name: match[2],
+      honorific: match[3] ?? "",
+      kind: match[4],
+    });
+  }
+  return persons;
+}
+
+function loadCatalogIds(): Set<string> {
+  const raw = fs.readFileSync(CATALOG_PATH, "utf8");
+  const catalog = JSON.parse(raw) as { icons: Array<{ id: string }> };
+  return new Set(catalog.icons.map((i) => i.id));
+}
+
+function hasIcon(person: Person, catalogIds: Set<string>): boolean {
+  // 1) Manual binding
+  const manual = PERSON_ICON_BINDINGS[person.id];
+  if (manual && catalogIds.has(manual)) return true;
+  // 2) Convention
+  if (catalogIds.has(`icon-${person.id}`)) return true;
+  return false;
+}
+
+function main() {
+  const persons = parseSeed();
+  const catalogIds = loadCatalogIds();
+
+  // Only saints + fathers (the user's "library" includes both); skip theologians
+  // who are uncanonized commentators that don't carry icons.
+  const candidates = persons.filter(
+    (p) => p.kind === "saint" || p.kind === "father",
+  );
+  const iconless = candidates.filter((p) => !hasIcon(p, catalogIds));
+
+  console.log(
+    `${iconless.length} of ${candidates.length} saints/fathers in the library have no icon.\n`,
+  );
+
+  // Group by kind for readability
+  const byKind: Record<string, Person[]> = { saint: [], father: [] };
+  for (const p of iconless) byKind[p.kind].push(p);
+
+  for (const kind of ["father", "saint"] as const) {
+    if (byKind[kind].length === 0) continue;
+    console.log(`=== ${kind.toUpperCase()} (${byKind[kind].length}) ===`);
+    for (const p of byKind[kind].sort((a, b) => a.id.localeCompare(b.id))) {
+      const displayName = p.honorific ? `${p.honorific} ${p.name}` : p.name;
+      console.log(`  ${p.id.padEnd(40)}  ${displayName}`);
+    }
+    console.log("");
+  }
+}
+
+main();

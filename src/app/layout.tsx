@@ -40,7 +40,14 @@ export default function RootLayout({
       lang="en"
       className={`${instrumentSans.variable} ${newsreader.variable} ${ibmPlexMono.variable}`}
     >
-      <body className="min-h-dvh bg-background font-sans text-ink antialiased">
+      {/* suppressHydrationWarning silences the cosmetic mismatch from browser
+          extensions (Grammarly etc.) that inject data-* attributes onto <body>
+          before React hydrates. The warning only applies to direct attributes
+          on this element; children still receive normal hydration checks. */}
+      <body
+        className="min-h-dvh bg-background font-sans text-ink antialiased"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
