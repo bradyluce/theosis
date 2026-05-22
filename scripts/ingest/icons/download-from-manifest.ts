@@ -55,6 +55,11 @@ function looksLikeImage(buf: Buffer): boolean {
     buf[11] === 0x50
   )
     return true;
+  // TIFF little-endian ("II*\0") and big-endian ("MM\0*").
+  if (buf[0] === 0x49 && buf[1] === 0x49 && buf[2] === 0x2a && buf[3] === 0x00)
+    return true;
+  if (buf[0] === 0x4d && buf[1] === 0x4d && buf[2] === 0x00 && buf[3] === 0x2a)
+    return true;
   return false;
 }
 
@@ -89,12 +94,34 @@ async function main() {
     process.exit(1);
   }
   const raw = fs.readFileSync(manifestPath, "utf8");
-  const parsed = JSON.parse(raw) as ManifestEntry[] | { icons?: ManifestEntry[] };
-  // Accept both shapes: a bare array (older format) or { icons: [...] } (newer
-  // format with a sibling "missing" list for items the curator couldn't resolve).
-  const entries: ManifestEntry[] = Array.isArray(parsed)
-    ? parsed
-    : (parsed.icons ?? []);
+  let entries: ManifestEntry[];
+  if (manifestPath.endsWith(".tsv")) {
+    // Pipe-delimited format: "date | slug | label | commons_file_or_NONE | license | note"
+    // Rows with commons_file = "NONE" are flagged as unresolvable and skipped.
+    entries = [];
+    for (const line of raw.split(/\r?\n/)) {
+      if (!line.trim() || line.startsWith("#")) continue;
+      const cols = line.split("|").map((c) => c.trim());
+      const [date, slug, label, commonsFile, license] = cols;
+      if (!slug || !commonsFile || commonsFile === "NONE") continue;
+      const saveAs = `${slug}.${(commonsFile.match(/\.([a-z0-9]+)$/i)?.[1] ?? "jpg").toLowerCase()}`;
+      const fileNameForUrl = encodeURIComponent(commonsFile.replace(/ /g, "_"));
+      entries.push({
+        tier: 0,
+        feast_date: date ?? "",
+        slug,
+        label: label ?? slug,
+        save_as: saveAs,
+        license: license ?? "unknown",
+        commons_file: commonsFile,
+        filepath_url: `https://commons.wikimedia.org/wiki/Special:FilePath/${fileNameForUrl}`,
+        file_page_url: `https://commons.wikimedia.org/wiki/File:${commonsFile.replace(/ /g, "_")}`,
+      });
+    }
+  } else {
+    const parsed = JSON.parse(raw) as ManifestEntry[] | { icons?: ManifestEntry[] };
+    entries = Array.isArray(parsed) ? parsed : (parsed.icons ?? []);
+  }
   const outDir = DEFAULT_OUT;
   fs.mkdirSync(outDir, { recursive: true });
 
