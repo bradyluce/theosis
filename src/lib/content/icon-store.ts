@@ -65,6 +65,22 @@ const PERSON_ICON_BINDINGS: Record<string, string> = {
   "nicholas-of-myra": "icon-st-nicholas-myra",
   "seraphim-of-sarov": "icon-st-seraphim-of-sarov",
   "sergius-of-radonezh": "icon-st-sergius-of-radonezh",
+  // Aliases — the generated commentary bundles' people catalog uses slightly
+  // different ids for the same person than the hand-curated icons. Bind both.
+  "cyprian": "icon-cyprian-of-carthage",
+  "gregory-of-nazianzus": "icon-gregory-the-theologian",
+  "gregory-thaumaturgus": "icon-gregory-the-wonderworker",
+  "justin-martyr": "icon-justin-the-philosopher",
+  "porphyrios-of-kafsokalivia": "icon-porphyrios-of-kavsokalyvia",
+  // Pseudo-* attributions reuse the real author's icon, since the works are
+  // historically conflated with that Father.
+  "pseudo-augustine": "icon-augustine",
+  "pseudo-chrysostom": "icon-st-john-chrysostom",
+  "pseudo-dionysius": "icon-dionysius-the-areopagite",
+  "pseudo-jerome": "icon-jerome",
+  // Synthetic collective ids — re-use a sensible group icon.
+  "ecumenical-councils": "icon-feast-first-ecumenical-council",
+  "local-councils": "icon-feast-first-ecumenical-council",
 };
 
 // Feast title patterns → icon id. First match wins. Match against the

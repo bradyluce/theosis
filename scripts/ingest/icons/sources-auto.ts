@@ -7,766 +7,122 @@ import type { IconSource } from "./sources";
 
 export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
-    "id": "icon-abraham-the-patriarch",
-    "personId": "abraham-the-patriarch",
-    "wikimediaTitle": "File:Guercino Abramo ripudia Agar (cropped).jpg",
-    "alt": "Orthodox icon of Abraham the Patriarch.",
-    "caption": "Abraham the Patriarch"
+    "id": "icon-anselm-canterbury",
+    "personId": "anselm-canterbury",
+    "wikimediaTitle": "File:Old Saint Mary's Church (Cincinnati, Ohio) - St. Anselm icon.jpg",
+    "alt": "Orthodox icon of Anselm of Canterbury.",
+    "caption": "Anselm of Canterbury"
   },
   {
-    "id": "icon-agatha-of-sicily",
-    "personId": "agatha-of-sicily",
-    "wikimediaTitle": "File:Agatha orthodox icon.jpg",
-    "alt": "Orthodox icon of Agatha of Sicily.",
-    "caption": "Agatha of Sicily"
+    "id": "icon-augustine",
+    "personId": "augustine",
+    "wikimediaTitle": "File:Saint Augustine by Philippe de Champaigne.jpg",
+    "alt": "Orthodox icon of Augustine of Hippo.",
+    "caption": "Augustine of Hippo"
   },
   {
-    "id": "icon-ambrose-of-milan",
-    "personId": "ambrose-of-milan",
-    "wikimediaTitle": "File:Greek Icon of Saint Ambrose of Milan 1.jpg",
-    "alt": "Orthodox icon of Ambrose of Milan.",
-    "caption": "Ambrose of Milan"
+    "id": "icon-bede",
+    "personId": "bede",
+    "wikimediaTitle": "File:The Venerable Bede translates John 1902.jpg",
+    "alt": "Orthodox icon of Bede the Venerable.",
+    "caption": "Bede the Venerable"
   },
   {
-    "id": "icon-ambrose-of-optina",
-    "personId": "ambrose-of-optina",
-    "wikimediaTitle": "File:Athonite Fresco Icon of Saint Ambrose of Milan.jpg",
-    "alt": "Orthodox icon of Ambrose of Optina.",
-    "caption": "Ambrose of Optina"
+    "id": "icon-cyprian",
+    "personId": "cyprian",
+    "wikimediaTitle": "File:Heiliger Cyprianus.jpg",
+    "alt": "Orthodox icon of Cyprian of Carthage.",
+    "caption": "Cyprian of Carthage"
   },
   {
-    "id": "icon-andrew-of-crete",
-    "personId": "andrew-of-crete",
-    "wikimediaTitle": "File:Rila Mon. - Fresco mir. icon 022 Andrew bishop of Crete.jpg",
-    "alt": "Orthodox icon of Andrew of Crete.",
-    "caption": "Andrew of Crete"
+    "id": "icon-ecumenical-councils",
+    "personId": "ecumenical-councils",
+    "wikimediaTitle": "File:044 Sunday of the Holy Fathers of the First. Ecumenical Council Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Fathers of the Ecumenical Councils.",
+    "caption": "Fathers of the Ecumenical Councils"
   },
   {
-    "id": "icon-anna-the-prophetess",
-    "personId": "anna-the-prophetess",
-    "wikimediaTitle": "File:Prophetess Anna Icon.jpg",
-    "alt": "Orthodox icon of Anna the Prophetess.",
-    "caption": "Anna the Prophetess"
+    "id": "icon-epiphanius-salamis",
+    "personId": "epiphanius-salamis",
+    "wikimediaTitle": "File:Epiphanius-Kosovo.jpg",
+    "alt": "Orthodox icon of Epiphanius of Salamis.",
+    "caption": "Epiphanius of Salamis"
   },
   {
-    "id": "icon-anthony-the-great",
-    "personId": "anthony-the-great",
-    "wikimediaTitle": "File:Cretan Icon of Saint Anthony the Great and Temptations.jpg",
-    "alt": "Orthodox icon of Anthony the Great.",
-    "caption": "Anthony the Great"
+    "id": "icon-gregory-of-nazianzus",
+    "personId": "gregory-of-nazianzus",
+    "wikimediaTitle": "File:Rila Mon. - Fresco mir. icon 019 Gregory of Nazianzus.jpg",
+    "alt": "Orthodox icon of Gregory of Nazianzus.",
+    "caption": "Gregory of Nazianzus"
   },
   {
-    "id": "icon-apostle-andrew",
-    "personId": "apostle-andrew",
-    "wikimediaTitle": "File:038 Saint Andrew Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Andrew the First-Called.",
-    "caption": "Andrew the First-Called"
+    "id": "icon-gregory-thaumaturgus",
+    "personId": "gregory-thaumaturgus",
+    "wikimediaTitle": "File:Grigorii chudotvoretz.jpg",
+    "alt": "Orthodox icon of Gregory Thaumaturgus.",
+    "caption": "Gregory Thaumaturgus"
   },
   {
-    "id": "icon-apostle-bartholomew",
-    "personId": "apostle-bartholomew",
-    "wikimediaTitle": "File:Saint Apostle Bartholomew Icon, Cretan.jpg",
-    "alt": "Orthodox icon of Bartholomew the Apostle.",
-    "caption": "Bartholomew the Apostle"
-  },
-  {
-    "id": "icon-apostle-james-brother-of-lord",
-    "personId": "apostle-james-brother-of-lord",
-    "wikimediaTitle": "File:James the Just - icon.jpeg",
-    "alt": "Orthodox icon of James the Brother of the Lord.",
-    "caption": "James the Brother of the Lord"
-  },
-  {
-    "id": "icon-apostle-john-the-theologian",
-    "personId": "apostle-john-the-theologian",
-    "wikimediaTitle": "File:The Death of the Holy Apostle and Evangelist John the Theologian. Icon. Greece.jpg",
-    "alt": "Orthodox icon of John the Theologian and Evangelist.",
-    "caption": "John the Theologian and Evangelist"
-  },
-  {
-    "id": "icon-apostle-luke",
-    "personId": "apostle-luke",
-    "wikimediaTitle": "File:Saint Luke the Evangelist - icon.jpeg",
-    "alt": "Orthodox icon of Luke the Evangelist.",
-    "caption": "Luke the Evangelist"
-  },
-  {
-    "id": "icon-apostle-mark",
-    "personId": "apostle-mark",
-    "wikimediaTitle": "File:087 Mark the Evangelist Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Mark the Evangelist.",
-    "caption": "Mark the Evangelist"
-  },
-  {
-    "id": "icon-apostle-matthew",
-    "personId": "apostle-matthew",
-    "wikimediaTitle": "File:Matthew the Evangelist - icon.jpeg",
-    "alt": "Orthodox icon of Matthew the Evangelist.",
-    "caption": "Matthew the Evangelist"
-  },
-  {
-    "id": "icon-apostle-matthias",
-    "personId": "apostle-matthias",
-    "wikimediaTitle": "File:Apostel Matthias met bijl in omlijsting met architectuur ornamenten S. Matthias (titel op object) SS. Apostolorum et Evangelistorum Icones (serietitel), RP-P-1904-224.jpg",
-    "alt": "Orthodox icon of Matthias the Apostle.",
-    "caption": "Matthias the Apostle"
-  },
-  {
-    "id": "icon-apostle-paul",
-    "personId": "apostle-paul",
-    "wikimediaTitle": "File:086 Paul the Apostle Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Paul, Apostle to the Nations.",
-    "caption": "Paul, Apostle to the Nations"
-  },
-  {
-    "id": "icon-apostle-peter",
-    "personId": "apostle-peter",
-    "wikimediaTitle": "File:085 Peter the Apostle Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Peter, Chief of the Apostles.",
-    "caption": "Peter, Chief of the Apostles"
-  },
-  {
-    "id": "icon-apostle-philip-twelve",
-    "personId": "apostle-philip-twelve",
-    "wikimediaTitle": "File:Apostle Philip bulgaria icon.png",
-    "alt": "Orthodox icon of Philip the Apostle.",
-    "caption": "Philip the Apostle"
-  },
-  {
-    "id": "icon-apostle-simon-zealot",
-    "personId": "apostle-simon-zealot",
-    "wikimediaTitle": "File:18th-century icons of the Apostles Simon and John.jpg",
-    "alt": "Orthodox icon of Simon the Zealot.",
-    "caption": "Simon the Zealot"
-  },
-  {
-    "id": "icon-apostle-thomas",
-    "personId": "apostle-thomas",
-    "wikimediaTitle": "File:Apostle Thomas - Orthodox icon.jpeg",
-    "alt": "Orthodox icon of Thomas the Apostle.",
-    "caption": "Thomas the Apostle"
-  },
-  {
-    "id": "icon-apostles-addai-and-mari",
-    "personId": "apostles-addai-and-mari",
-    "wikimediaTitle": "File:Icon of Mar Addai and Mari Apostles of the East.jpg",
-    "alt": "Orthodox icon of Addai and Mari, Apostles of the East.",
-    "caption": "Addai and Mari, Apostles of the East"
-  },
-  {
-    "id": "icon-archangel-gabriel",
-    "personId": "archangel-gabriel",
-    "wikimediaTitle": "File:Archangel Gabriel Icon in Blue and Red.png",
-    "alt": "Orthodox icon of Gabriel the Archangel.",
-    "caption": "Gabriel the Archangel"
-  },
-  {
-    "id": "icon-archangel-michael",
-    "personId": "archangel-michael",
-    "wikimediaTitle": "File:Icon of Archangel Michael in Cathedral in the name of Archangel Michael.jpg",
-    "alt": "Orthodox icon of Michael the Archangel.",
-    "caption": "Michael the Archangel"
-  },
-  {
-    "id": "icon-athanasius-of-athos",
-    "personId": "athanasius-of-athos",
-    "wikimediaTitle": "File:104 Saint Athanasius Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Athanasius of Mount Athos.",
-    "caption": "Athanasius of Mount Athos"
-  },
-  {
-    "id": "icon-athanasius-the-great",
-    "personId": "athanasius-the-great",
+    "id": "icon-irenaeus-of-lyons",
+    "personId": "irenaeus-of-lyons",
     "wikimediaTitle": "File:Saints Irenaeus of Lyons, Ambrose of Milan, Athanasius the Great, Martin the Merciful, Germanus, Gaudentius and Randoald - Orthodox Icon.jpg",
-    "alt": "Orthodox icon of Athanasius the Great.",
-    "caption": "Athanasius the Great"
+    "alt": "Orthodox icon of Irenaeus of Lyons.",
+    "caption": "Irenaeus of Lyons"
   },
   {
-    "id": "icon-barbara-great-martyr",
-    "personId": "barbara-great-martyr",
-    "wikimediaTitle": "File:060 Saint John Damaskinos with Saint Juliana and Saint Barbara Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Barbara the Great-martyr.",
-    "caption": "Barbara the Great-martyr"
+    "id": "icon-isidore-pelusium",
+    "personId": "isidore-pelusium",
+    "wikimediaTitle": "File:Isidore of Pelusium.jpg",
+    "alt": "Orthodox icon of Isidore of Pelusium.",
+    "caption": "Isidore of Pelusium"
   },
   {
-    "id": "icon-basil-the-great",
-    "personId": "basil-the-great",
-    "wikimediaTitle": "File:Iconostasis Ulic Krive detail4 Saint Basil the Great pict taken in 2001.jpg",
-    "alt": "Orthodox icon of Basil the Great.",
-    "caption": "Basil the Great"
+    "id": "icon-isidore-seville",
+    "personId": "isidore-seville",
+    "wikimediaTitle": "File:Isidore de Séville.jpg",
+    "alt": "Orthodox icon of Isidore of Seville.",
+    "caption": "Isidore of Seville"
   },
   {
-    "id": "icon-boris-and-gleb",
-    "personId": "boris-and-gleb",
-    "wikimediaTitle": "File:The Holy Blessed Princes and Passion-Bearers Boris and Gleb. Novgorod School of Icon Painting, 14th century.jpg",
-    "alt": "Orthodox icon of Passion-Bearers Boris and Gleb.",
-    "caption": "Passion-Bearers Boris and Gleb"
+    "id": "icon-justin-martyr",
+    "personId": "justin-martyr",
+    "wikimediaTitle": "File:JustinMartyrIconostasis.jpg",
+    "alt": "Orthodox icon of Justin Martyr.",
+    "caption": "Justin Martyr"
   },
   {
-    "id": "icon-christopher-the-martyr",
-    "personId": "christopher-the-martyr",
-    "wikimediaTitle": "File:07 Saint Christopher and Saint Tryphon Icon in Assumption of Mary Church in Agios Vasileios.jpg",
-    "alt": "Orthodox icon of Christopher.",
-    "caption": "Christopher"
+    "id": "icon-methodius-of-olympus",
+    "personId": "methodius-of-olympus",
+    "wikimediaTitle": "File:Icon of Saint Methodius, The Holy Mount of Grabarka.png",
+    "alt": "Orthodox icon of Methodius of Olympus.",
+    "caption": "Methodius of Olympus"
   },
   {
-    "id": "icon-cyril-equal-to-apostles",
-    "personId": "cyril-equal-to-apostles",
-    "wikimediaTitle": "File:Bulgarian Order of St. St. Apostles Cyril and Methodius - icon.png",
-    "alt": "Orthodox icon of Cyril, Equal-to-the-Apostles.",
-    "caption": "Cyril, Equal-to-the-Apostles"
+    "id": "icon-origen",
+    "personId": "origen",
+    "wikimediaTitle": "File:Origen3.jpg",
+    "alt": "Orthodox icon of Origen.",
+    "caption": "Origen"
   },
   {
-    "id": "icon-cyril-of-alexandria",
-    "personId": "cyril-of-alexandria",
-    "wikimediaTitle": "File:Saint Athanasius, John Eleimon and Cyril of Alexandria Icon by Veniamin of Galatista, 1833.jpg",
-    "alt": "Orthodox icon of Cyril of Alexandria.",
-    "caption": "Cyril of Alexandria"
+    "id": "icon-papias-of-hierapolis",
+    "personId": "papias-of-hierapolis",
+    "wikimediaTitle": "File:Papias.png",
+    "alt": "Orthodox icon of Papias of Hierapolis.",
+    "caption": "Papias of Hierapolis"
   },
   {
-    "id": "icon-cyril-of-jerusalem",
-    "personId": "cyril-of-jerusalem",
-    "wikimediaTitle": "File:Serbian Fresco Icon of Saint Cyril of Jerusalem 2.jpg",
-    "alt": "Orthodox icon of Cyril of Jerusalem.",
-    "caption": "Cyril of Jerusalem"
+    "id": "icon-theodotus-ancyra",
+    "personId": "theodotus-ancyra",
+    "wikimediaTitle": "File:Teodot Ankirski.jpg",
+    "alt": "Orthodox icon of Theodotus of Ancyra.",
+    "caption": "Theodotus of Ancyra"
   },
   {
-    "id": "icon-demetrius-of-rostov",
-    "personId": "demetrius-of-rostov",
-    "wikimediaTitle": "File:22 Saint Demetrius Icon from Saint Paraskevi Church in Adam.jpg",
-    "alt": "Orthodox icon of Demetrius of Rostov.",
-    "caption": "Demetrius of Rostov"
+    "id": "icon-theophilus-of-antioch",
+    "personId": "theophilus-of-antioch",
+    "wikimediaTitle": "File:Acheropoietos - Theuofilus fresco, detail, edited.JPG",
+    "alt": "Orthodox icon of Theophilus of Antioch.",
+    "caption": "Theophilus of Antioch"
   },
-  {
-    "id": "icon-demetrius-of-thessalonica",
-    "personId": "demetrius-of-thessalonica",
-    "wikimediaTitle": "File:22 Saint Demetrius Icon from Saint Paraskevi Church in Adam.jpg",
-    "alt": "Orthodox icon of Demetrius the Myrrh-streamer.",
-    "caption": "Demetrius the Myrrh-streamer"
-  },
-  {
-    "id": "icon-dionysius-the-areopagite",
-    "personId": "dionysius-the-areopagite",
-    "wikimediaTitle": "File:Areopagita.jpg",
-    "alt": "Orthodox icon of Dionysius the Areopagite.",
-    "caption": "Dionysius the Areopagite"
-  },
-  {
-    "id": "icon-elizabeth-mother-of-forerunner",
-    "personId": "elizabeth-mother-of-forerunner",
-    "wikimediaTitle": "File:Clay glaze icons from Nicomedia (10-11, GIM) by shakko.jpg",
-    "alt": "Orthodox icon of Elizabeth, Mother of the Forerunner.",
-    "caption": "Elizabeth, Mother of the Forerunner"
-  },
-  {
-    "id": "icon-ephraim-the-syrian",
-    "personId": "ephraim-the-syrian",
-    "wikimediaTitle": "File:Ephrem the Syrian (mosaic in Nea Moni).jpg",
-    "alt": "Orthodox icon of Ephraim the Syrian.",
-    "caption": "Ephraim the Syrian"
-  },
-  {
-    "id": "icon-eusebius-caesarea",
-    "personId": "eusebius-caesarea",
-    "wikimediaTitle": "File:Eusebius of Caesarea Armenian Gospel Icon.png",
-    "alt": "Orthodox icon of Eusebius of Caesarea.",
-    "caption": "Eusebius of Caesarea"
-  },
-  {
-    "id": "icon-eustathius-placidas",
-    "personId": "eustathius-placidas",
-    "wikimediaTitle": "File:Saint Eustace, Cretan school, 17 c..jpg",
-    "alt": "Orthodox icon of Eustathius Placidas.",
-    "caption": "Eustathius Placidas"
-  },
-  {
-    "id": "icon-euthymius-the-great",
-    "personId": "euthymius-the-great",
-    "wikimediaTitle": "File:009 Saint Euthymius Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Euthymius the Great.",
-    "caption": "Euthymius the Great"
-  },
-  {
-    "id": "icon-forty-martyrs-of-sebaste",
-    "personId": "forty-martyrs-of-sebaste",
-    "wikimediaTitle": "File:Forty Martyrs of Sebaste icon, Aleppo.jpg",
-    "alt": "Orthodox icon of Forty Martyrs of Sebaste.",
-    "caption": "Forty Martyrs of Sebaste"
-  },
-  {
-    "id": "icon-george-the-trophy-bearer",
-    "personId": "george-the-trophy-bearer",
-    "wikimediaTitle": "File:Icon of Saint George Great Martyr.jpg",
-    "alt": "Orthodox icon of George the Great-martyr.",
-    "caption": "George the Great-martyr"
-  },
-  {
-    "id": "icon-gregory-of-nyssa",
-    "personId": "gregory-of-nyssa",
-    "wikimediaTitle": "File:St. Gregory Emroidered Icon.jpg",
-    "alt": "Orthodox icon of Gregory of Nyssa.",
-    "caption": "Gregory of Nyssa"
-  },
-  {
-    "id": "icon-gregory-palamas",
-    "personId": "gregory-palamas",
-    "wikimediaTitle": "File:015 Saint Gregory Palamas Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Gregory Palamas.",
-    "caption": "Gregory Palamas"
-  },
-  {
-    "id": "icon-gregory-the-great",
-    "personId": "gregory-the-great",
-    "wikimediaTitle": "File:Old Saint Mary's Church (Cincinnati, Ohio) - St. Gregory the Great icon.jpg",
-    "alt": "Orthodox icon of Gregory the Great.",
-    "caption": "Gregory the Great"
-  },
-  {
-    "id": "icon-gregory-the-theologian",
-    "personId": "gregory-the-theologian",
-    "wikimediaTitle": "File:Gregory Palamas Fresco from Three Saints Church in Kastoria, 1401.jpg",
-    "alt": "Orthodox icon of Gregory the Theologian.",
-    "caption": "Gregory the Theologian"
-  },
-  {
-    "id": "icon-herman-of-alaska",
-    "personId": "herman-of-alaska",
-    "wikimediaTitle": "File:INTERIOR, NAVE, LOOKING EAST AT ICONSTAS, ICONS REMOVED - Saints Sergius and Herman Russian Orthodox Churches, Old Church, Port Graham, Kenai Peninsula Borough, AK HABS AK,9-ENGB,1A-3.tif",
-    "alt": "Orthodox icon of Herman of Alaska.",
-    "caption": "Herman of Alaska"
-  },
-  {
-    "id": "icon-hilarion-the-great",
-    "personId": "hilarion-the-great",
-    "wikimediaTitle": "File:Saints Joasaph and Hilarion Icon. Trinity Lavra of Saint Sergiy.jpg",
-    "alt": "Orthodox icon of Hilarion the Great.",
-    "caption": "Hilarion the Great"
-  },
-  {
-    "id": "icon-hilary-poitiers",
-    "personId": "hilary-poitiers",
-    "wikimediaTitle": "File:Saints Barnabas, Protasius and Marius of Lausanne, Fridolin of Säckingen, Hilary of Poitiers, Sigisbert and Placidus - Orthodox Icon.jpg",
-    "alt": "Orthodox icon of Hilary of Poitiers.",
-    "caption": "Hilary of Poitiers"
-  },
-  {
-    "id": "icon-hippolytus-of-rome",
-    "personId": "hippolytus-of-rome",
-    "wikimediaTitle": "File:Hippolytus martyrdom.jpg",
-    "alt": "Orthodox icon of Hippolytus of Rome.",
-    "caption": "Hippolytus of Rome"
-  },
-  {
-    "id": "icon-ignatius-brianchaninov",
-    "personId": "ignatius-brianchaninov",
-    "wikimediaTitle": "File:Ignatiy2.jpg",
-    "alt": "Orthodox icon of Ignatius Brianchaninov.",
-    "caption": "Ignatius Brianchaninov"
-  },
-  {
-    "id": "icon-jerome",
-    "personId": "jerome",
-    "wikimediaTitle": "File:Beza's Icones, contemporary portraits of reformers of religion and letters - Jerome of Prague on Page 69.jpg",
-    "alt": "Orthodox icon of Jerome.",
-    "caption": "Jerome"
-  },
-  {
-    "id": "icon-joachim-and-anna",
-    "personId": "joachim-and-anna",
-    "wikimediaTitle": "File:Firenze Palazzo Pitti Interno Museum of Russian Icons 16.jpg",
-    "alt": "Orthodox icon of Joachim and Anna, the Holy God-bearing Ancestors.",
-    "caption": "Joachim and Anna, the Holy God-bearing Ancestors"
-  },
-  {
-    "id": "icon-john-cassian",
-    "personId": "john-cassian",
-    "wikimediaTitle": "File:John Cassian.jpeg",
-    "alt": "Orthodox icon of John Cassian.",
-    "caption": "John Cassian"
-  },
-  {
-    "id": "icon-john-chrysostom",
-    "personId": "john-chrysostom",
-    "wikimediaTitle": "File:Johnchrysostom.jpg",
-    "alt": "Orthodox icon of John Chrysostom.",
-    "caption": "John Chrysostom"
-  },
-  {
-    "id": "icon-john-of-damascus",
-    "personId": "john-of-damascus",
-    "wikimediaTitle": "File:Icon of Saint John of Damascus - Emmanouel Tzanes.jpg",
-    "alt": "Orthodox icon of John of Damascus.",
-    "caption": "John of Damascus"
-  },
-  {
-    "id": "icon-john-of-kronstadt",
-    "personId": "john-of-kronstadt",
-    "wikimediaTitle": "File:Иоанн Кронштадтский.jpg",
-    "alt": "Orthodox icon of John of Kronstadt.",
-    "caption": "John of Kronstadt"
-  },
-  {
-    "id": "icon-joseph-the-all-comely",
-    "personId": "joseph-the-all-comely",
-    "wikimediaTitle": "File:Chiesa Santa Maria Assunta (icons)19.png",
-    "alt": "Orthodox icon of Joseph the All-Comely, Patriarch.",
-    "caption": "Joseph the All-Comely, Patriarch"
-  },
-  {
-    "id": "icon-joseph-the-betrothed",
-    "personId": "joseph-the-betrothed",
-    "wikimediaTitle": "File:Chiesa Santa Maria Assunta (icons)19.png",
-    "alt": "Orthodox icon of Joseph the Betrothed.",
-    "caption": "Joseph the Betrothed"
-  },
-  {
-    "id": "icon-justin-the-philosopher",
-    "personId": "justin-the-philosopher",
-    "wikimediaTitle": "File:Justin Martir in iconic Stroganoff face of the original.jpg",
-    "alt": "Orthodox icon of Justin the Philosopher.",
-    "caption": "Justin the Philosopher"
-  },
-  {
-    "id": "icon-lazar-of-serbia",
-    "personId": "lazar-of-serbia",
-    "wikimediaTitle": "File:Holy Prince Lazar the Great Martyr fresco in Canada (photo by Vujcic).jpg",
-    "alt": "Orthodox icon of Great Prince Lazar of Serbia.",
-    "caption": "Great Prince Lazar of Serbia"
-  },
-  {
-    "id": "icon-leo-the-great",
-    "personId": "leo-the-great",
-    "wikimediaTitle": "File:Famous Eastern and Oriental Orthodox Christians Mosaic.jpg",
-    "alt": "Orthodox icon of Leo the Great.",
-    "caption": "Leo the Great"
-  },
-  {
-    "id": "icon-macarius-the-egyptian",
-    "personId": "macarius-the-egyptian",
-    "wikimediaTitle": "File:Macarius the Elder Full Body Length Icon.jpg",
-    "alt": "Orthodox icon of Macarius the Egyptian.",
-    "caption": "Macarius the Egyptian"
-  },
-  {
-    "id": "icon-macarius-the-great",
-    "personId": "macarius-the-great",
-    "wikimediaTitle": "File:Icon of Saint Macarius the Great.jpg",
-    "alt": "Orthodox icon of Macarius the Great.",
-    "caption": "Macarius the Great"
-  },
-  {
-    "id": "icon-macrina-the-younger",
-    "personId": "macrina-the-younger",
-    "wikimediaTitle": "File:Macrina the Younger.jpg",
-    "alt": "Orthodox icon of Macrina the Younger.",
-    "caption": "Macrina the Younger"
-  },
-  {
-    "id": "icon-mark-the-ascetic",
-    "personId": "mark-the-ascetic",
-    "wikimediaTitle": "File:029 Saint Mark Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Mark the Ascetic.",
-    "caption": "Mark the Ascetic"
-  },
-  {
-    "id": "icon-martyr-christina-of-tyre",
-    "personId": "martyr-christina-of-tyre",
-    "wikimediaTitle": "File:Chapel of our Lady of the Rosary of Santi Giovanni e Paolo (Venice) - Martyrdom of St Christina by Sante Peranda.jpg",
-    "alt": "Orthodox icon of Christina of Tyre.",
-    "caption": "Christina of Tyre"
-  },
-  {
-    "id": "icon-martyr-irene",
-    "personId": "martyr-irene",
-    "wikimediaTitle": "File:Rila Mon. - Fresco mir. icon 021 Irene of Macedonia.jpg",
-    "alt": "Orthodox icon of Irene of Macedonia.",
-    "caption": "Irene of Macedonia"
-  },
-  {
-    "id": "icon-martyr-marina",
-    "personId": "martyr-marina",
-    "wikimediaTitle": "File:Cretan Icon of Saint Marina from the Saint Marina Monastery in Andros.jpg",
-    "alt": "Orthodox icon of Marina of Antioch in Pisidia.",
-    "caption": "Marina of Antioch in Pisidia"
-  },
-  {
-    "id": "icon-martyr-mercurius",
-    "personId": "martyr-mercurius",
-    "wikimediaTitle": "File:02 Saint Mercurius and Saint Catherine Icon in Assumption of Mary Church in Agios Vasileios.jpg",
-    "alt": "Orthodox icon of Mercurius.",
-    "caption": "Mercurius"
-  },
-  {
-    "id": "icon-martyr-sebastian",
-    "personId": "martyr-sebastian",
-    "wikimediaTitle": "File:Seattle - Our Lady of the Lake - interior 41 - icon of St. Sebastian.jpg",
-    "alt": "Orthodox icon of Sebastian of Rome.",
-    "caption": "Sebastian of Rome"
-  },
-  {
-    "id": "icon-mary-of-egypt",
-    "personId": "mary-of-egypt",
-    "wikimediaTitle": "File:Icon of Mary of Egypt (Mstera, 19th c.).jpg",
-    "alt": "Orthodox icon of Mary of Egypt.",
-    "caption": "Mary of Egypt"
-  },
-  {
-    "id": "icon-maximus-the-confessor",
-    "personId": "maximus-the-confessor",
-    "wikimediaTitle": "File:Saints Zosimas, Mary of Egypt, Maximus the Confessor, Macarius of Egypt, and Macarius of Alexandria. Icon, 17th century. Pantocrator. Mount Athos..jpg",
-    "alt": "Orthodox icon of Maximus the Confessor.",
-    "caption": "Maximus the Confessor"
-  },
-  {
-    "id": "icon-maximus-the-greek",
-    "personId": "maximus-the-greek",
-    "wikimediaTitle": "File:Максим Грек.jpg",
-    "alt": "Orthodox icon of Maximus the Greek.",
-    "caption": "Maximus the Greek"
-  },
-  {
-    "id": "icon-methodius-equal-to-apostles",
-    "personId": "methodius-equal-to-apostles",
-    "wikimediaTitle": "File:Bulgarian Order of St. St. Apostles Cyril and Methodius - icon.png",
-    "alt": "Orthodox icon of Methodius, Equal-to-the-Apostles.",
-    "caption": "Methodius, Equal-to-the-Apostles"
-  },
-  {
-    "id": "icon-nektarios-of-aegina",
-    "personId": "nektarios-of-aegina",
-    "wikimediaTitle": "File:Saint Nektarios of Aegina Icon.jpg",
-    "alt": "Orthodox icon of Nektarios of Aegina.",
-    "caption": "Nektarios of Aegina"
-  },
-  {
-    "id": "icon-nicholas-of-myra",
-    "personId": "nicholas-of-myra",
-    "wikimediaTitle": "File:Russian icon of 'St. Nicholas the Wonderworker' (half-length), 17th century .JPG",
-    "alt": "Orthodox icon of Nicholas the Wonderworker.",
-    "caption": "Nicholas the Wonderworker"
-  },
-  {
-    "id": "icon-pachomius-the-great",
-    "personId": "pachomius-the-great",
-    "wikimediaTitle": "File:Blaj Iconostasis Saint Pachomius.jpg",
-    "alt": "Orthodox icon of Pachomius the Great.",
-    "caption": "Pachomius the Great"
-  },
-  {
-    "id": "icon-paisius-velichkovsky",
-    "personId": "paisius-velichkovsky",
-    "wikimediaTitle": "File:Paisius.jpg",
-    "alt": "Orthodox icon of Paisius Velichkovsky.",
-    "caption": "Paisius Velichkovsky"
-  },
-  {
-    "id": "icon-paraskeva-friday",
-    "personId": "paraskeva-friday",
-    "wikimediaTitle": "File:Icon of Paraskeva Pyatnitsa 2012 Artmuseum Karelia.webm",
-    "alt": "Orthodox icon of Paraskeva.",
-    "caption": "Paraskeva"
-  },
-  {
-    "id": "icon-peter-of-moscow",
-    "personId": "peter-of-moscow",
-    "wikimediaTitle": "File:Icon of Saints Peter the Metropolitan, Leonty of Rostov, and Theodosius of the Caves. Novgorod School of Iconography, late 15th – early 16th century. Tretyakov Gallery, Russia.jpg",
-    "alt": "Orthodox icon of Peter, Metropolitan of Moscow.",
-    "caption": "Peter, Metropolitan of Moscow"
-  },
-  {
-    "id": "icon-philip-of-moscow",
-    "personId": "philip-of-moscow",
-    "wikimediaTitle": "File:014 Saint Philip Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Philip the Confessor, Metropolitan of Moscow.",
-    "caption": "Philip the Confessor, Metropolitan of Moscow"
-  },
-  {
-    "id": "icon-polycarp-of-smyrna",
-    "personId": "polycarp-of-smyrna",
-    "wikimediaTitle": "File:Izmir St Polycarp Church Icon Miraculously Extinguishing Smyrna Fire.JPG",
-    "alt": "Orthodox icon of Polycarp of Smyrna.",
-    "caption": "Polycarp of Smyrna"
-  },
-  {
-    "id": "icon-prophet-daniel",
-    "personId": "prophet-daniel",
-    "wikimediaTitle": "File:Icon of the Prophet Daniel and the Three Holy Youths.jpg",
-    "alt": "Orthodox icon of Daniel the Prophet and the Three Holy Youths.",
-    "caption": "Daniel the Prophet and the Three Holy Youths"
-  },
-  {
-    "id": "icon-prophet-david-king",
-    "personId": "prophet-david-king",
-    "wikimediaTitle": "File:Prophet and King David (Orthodox Christian icon).png",
-    "alt": "Orthodox icon of David the King and Prophet.",
-    "caption": "David the King and Prophet"
-  },
-  {
-    "id": "icon-prophet-elijah",
-    "personId": "prophet-elijah",
-    "wikimediaTitle": "File:Iliya prorok ikona Pskov.jpg",
-    "alt": "Orthodox icon of Elijah the Tishbite.",
-    "caption": "Elijah the Tishbite"
-  },
-  {
-    "id": "icon-prophet-elisha",
-    "personId": "prophet-elisha",
-    "wikimediaTitle": "File:Kirillo-Belozersky iconostasis 07. Elisha, Zechariah, Joel.jpg",
-    "alt": "Orthodox icon of Elisha the Prophet.",
-    "caption": "Elisha the Prophet"
-  },
-  {
-    "id": "icon-prophet-ezekiel",
-    "personId": "prophet-ezekiel",
-    "wikimediaTitle": "File:Ezekiel-icon.jpg",
-    "alt": "Orthodox icon of Ezekiel the Prophet.",
-    "caption": "Ezekiel the Prophet"
-  },
-  {
-    "id": "icon-prophet-isaiah",
-    "personId": "prophet-isaiah",
-    "wikimediaTitle": "File:Icon of Isaiah (19th c, priv.coll.).jpg",
-    "alt": "Orthodox icon of Isaiah the Prophet.",
-    "caption": "Isaiah the Prophet"
-  },
-  {
-    "id": "icon-prophet-jeremiah",
-    "personId": "prophet-jeremiah",
-    "wikimediaTitle": "File:Prophet Jeremiah Icon.tif",
-    "alt": "Orthodox icon of Jeremiah the Prophet.",
-    "caption": "Jeremiah the Prophet"
-  },
-  {
-    "id": "icon-prophet-samuel",
-    "personId": "prophet-samuel",
-    "wikimediaTitle": "File:Prophet Samuel, Russian Icon, private gallery, London.jpg",
-    "alt": "Orthodox icon of Samuel the Prophet.",
-    "caption": "Samuel the Prophet"
-  },
-  {
-    "id": "icon-protomartyr-stephen",
-    "personId": "protomartyr-stephen",
-    "wikimediaTitle": "File:012 Saint Stephen Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Stephen the Protomartyr and Archdeacon.",
-    "caption": "Stephen the Protomartyr and Archdeacon"
-  },
-  {
-    "id": "icon-royal-martyrs-of-russia",
-    "personId": "royal-martyrs-of-russia",
-    "wikimediaTitle": "File:Romanov Family Holy Royal Passion-Bearers and Martyrs Icon.jpg",
-    "alt": "Orthodox icon of Royal Martyrs of Russia.",
-    "caption": "Royal Martyrs of Russia"
-  },
-  {
-    "id": "icon-sabbas-the-sanctified",
-    "personId": "sabbas-the-sanctified",
-    "wikimediaTitle": "File:065 Saint Stylianos and Saint Sabbas Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Sabbas the Sanctified.",
-    "caption": "Sabbas the Sanctified"
-  },
-  {
-    "id": "icon-sava-of-serbia",
-    "personId": "sava-of-serbia",
-    "wikimediaTitle": "File:Saint Sava, fresco from Mileševa.jpg",
-    "alt": "Orthodox icon of Sava, First Archbishop of Serbia.",
-    "caption": "Sava, First Archbishop of Serbia"
-  },
-  {
-    "id": "icon-seraphim-of-sarov",
-    "personId": "seraphim-of-sarov",
-    "wikimediaTitle": "File:Icon of Seraphim of Sarov - interior of Metropolitan Orthodox Cathedral of St. Mary Magdalene in Warsaw.jpg",
-    "alt": "Orthodox icon of Seraphim of Sarov.",
-    "caption": "Seraphim of Sarov"
-  },
-  {
-    "id": "icon-sergius-of-radonezh",
-    "personId": "sergius-of-radonezh",
-    "wikimediaTitle": "File:Sergius of Radonezh vita icon (17 c., Yaroslavl museum) - detail 01.jpg",
-    "alt": "Orthodox icon of Sergius of Radonezh.",
-    "caption": "Sergius of Radonezh"
-  },
-  {
-    "id": "icon-silouan-the-athonite",
-    "personId": "silouan-the-athonite",
-    "wikimediaTitle": "File:Silouanicon.jpg",
-    "alt": "Orthodox icon of Silouan the Athonite.",
-    "caption": "Silouan the Athonite"
-  },
-  {
-    "id": "icon-simeon-the-god-receiver",
-    "personId": "simeon-the-god-receiver",
-    "wikimediaTitle": "File:Russia, icona col profeta simeone, 1650 ca.jpg",
-    "alt": "Orthodox icon of Simeon the God-Receiver.",
-    "caption": "Simeon the God-Receiver"
-  },
-  {
-    "id": "icon-sophia-and-three-daughters",
-    "personId": "sophia-and-three-daughters",
-    "wikimediaTitle": "File:Icon of Sophia, and her three daughters.jpg",
-    "alt": "Orthodox icon of Sophia and her Daughters Faith, Hope, and Love.",
-    "caption": "Sophia and her Daughters Faith, Hope, and Love"
-  },
-  {
-    "id": "icon-spyridon-of-trimythous",
-    "personId": "spyridon-of-trimythous",
-    "wikimediaTitle": "File:Icon of the Mother of God Pantanassa with Saint Nicholas and Saint Spyridon in St Nicholas Church Lutsk.webp",
-    "alt": "Orthodox icon of Spyridon the Wonderworker.",
-    "caption": "Spyridon the Wonderworker"
-  },
-  {
-    "id": "icon-symeon-the-new-theologian",
-    "personId": "symeon-the-new-theologian",
-    "wikimediaTitle": "File:SYMEON-icon.jpg",
-    "alt": "Orthodox icon of Symeon the New Theologian.",
-    "caption": "Symeon the New Theologian"
-  },
-  {
-    "id": "icon-symeon-the-stylite",
-    "personId": "symeon-the-stylite",
-    "wikimediaTitle": "File:Simeon Stylites icon 1465.jpg",
-    "alt": "Orthodox icon of Symeon the Stylite.",
-    "caption": "Symeon the Stylite"
-  },
-  {
-    "id": "icon-tatiana-of-rome",
-    "personId": "tatiana-of-rome",
-    "wikimediaTitle": "File:BabushinIcons1681.jpg",
-    "alt": "Orthodox icon of Tatiana of Rome.",
-    "caption": "Tatiana of Rome"
-  },
-  {
-    "id": "icon-theodore-the-general",
-    "personId": "theodore-the-general",
-    "wikimediaTitle": "File:Theodore Stratelates. Iprari church fresco. 1096.jpg",
-    "alt": "Orthodox icon of Theodore the General (Stratelates).",
-    "caption": "Theodore the General (Stratelates)"
-  },
-  {
-    "id": "icon-theodosius-of-the-caves",
-    "personId": "theodosius-of-the-caves",
-    "wikimediaTitle": "File:Icon of Saints Peter the Metropolitan, Leonty of Rostov, and Theodosius of the Caves. Novgorod School of Iconography, late 15th – early 16th century. Tretyakov Gallery, Russia.jpg",
-    "alt": "Orthodox icon of Theodosius of the Caves of Kiev.",
-    "caption": "Theodosius of the Caves of Kiev"
-  },
-  {
-    "id": "icon-theodosius-the-cenobiarch",
-    "personId": "theodosius-the-cenobiarch",
-    "wikimediaTitle": "File:Theodosius the Cenobiarch (mosaic in Nea Moni).jpg",
-    "alt": "Orthodox icon of Theodosius the Cenobiarch.",
-    "caption": "Theodosius the Cenobiarch"
-  },
-  {
-    "id": "icon-theophan-the-recluse",
-    "personId": "theophan-the-recluse",
-    "wikimediaTitle": "File:Theophan the Recluse.jpg",
-    "alt": "Orthodox icon of Theophan the Recluse.",
-    "caption": "Theophan the Recluse"
-  },
-  {
-    "id": "icon-tryphon-the-martyr",
-    "personId": "tryphon-the-martyr",
-    "wikimediaTitle": "File:068 Saint Tryphon Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Tryphon of Lampsacus.",
-    "caption": "Tryphon of Lampsacus"
-  }
 ];

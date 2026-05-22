@@ -1,8 +1,9 @@
-// List every Person in src/lib/content/seed/library.ts whose kind is "saint"
-// or "father" and who does NOT have an icon in the catalog. Works by text-
-// parsing the seed module (avoids the @/ alias breakage from the mobile/expo
-// tsconfig). Compares person.id against catalog ids using the same resolution
-// order as getIconForPerson in src/lib/content/icon-store.ts.
+// List every Person the library page surfaces who does NOT have an icon.
+// The displayed list = seed (src/lib/content/seed/library.ts) merged with the
+// generated commentary bundles' people (content/normalized/library/catalog.json
+// + content/normalized/commentary/catalog.json). Deduped by id, kind filter
+// includes saint, father, and theologian. Resolves icons the same way
+// getIconForPerson does in src/lib/content/icon-store.ts.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -10,6 +11,14 @@ import path from "node:path";
 const REPO_ROOT = process.cwd();
 const SEED_PATH = path.join(REPO_ROOT, "src/lib/content/seed/library.ts");
 const CATALOG_PATH = path.join(REPO_ROOT, "content/normalized/icons/catalog.json");
+const NORMALIZED_LIBRARY_CATALOG = path.join(
+  REPO_ROOT,
+  "content/normalized/library/catalog.json",
+);
+const NORMALIZED_COMMENTARY_CATALOG = path.join(
+  REPO_ROOT,
+  "content/normalized/commentary/catalog.json",
+);
 
 // Mirror of PERSON_ICON_BINDINGS in src/lib/content/icon-store.ts.
 const PERSON_ICON_BINDINGS: Record<string, string> = {
@@ -21,14 +30,23 @@ const PERSON_ICON_BINDINGS: Record<string, string> = {
   "nicholas-of-myra": "icon-st-nicholas-myra",
   "seraphim-of-sarov": "icon-st-seraphim-of-sarov",
   "sergius-of-radonezh": "icon-st-sergius-of-radonezh",
+  "cyprian": "icon-cyprian-of-carthage",
+  "gregory-of-nazianzus": "icon-gregory-the-theologian",
+  "gregory-thaumaturgus": "icon-gregory-the-wonderworker",
+  "justin-martyr": "icon-justin-the-philosopher",
+  "porphyrios-of-kafsokalivia": "icon-porphyrios-of-kavsokalyvia",
+  "pseudo-augustine": "icon-augustine",
+  "pseudo-chrysostom": "icon-st-john-chrysostom",
+  "pseudo-dionysius": "icon-dionysius-the-areopagite",
+  "pseudo-jerome": "icon-jerome",
+  "ecumenical-councils": "icon-feast-first-ecumenical-council",
+  "local-councils": "icon-feast-first-ecumenical-council",
 };
 
 type Person = { id: string; name: string; honorific: string; kind: string };
 
 function parseSeed(): Person[] {
   const raw = fs.readFileSync(SEED_PATH, "utf8");
-  // Match each Person literal: { id: "...", slug: "...", name: "...",
-  // honorific: "...", kind: "...", ... }. honorific is optional.
   const personRe = /\{\s*id:\s*"([^"]+)",\s*slug:\s*"[^"]+",\s*name:\s*"([^"]+)",(?:\s*honorific:\s*"([^"]+)",)?\s*kind:\s*"(saint|father|theologian)"/g;
   const persons: Person[] = [];
   let match: RegExpExecArray | null;
@@ -41,6 +59,31 @@ function parseSeed(): Person[] {
     });
   }
   return persons;
+}
+
+type NormalizedCatalog = {
+  people?: Array<{
+    id: string;
+    name: string;
+    honorific?: string;
+    kind: string;
+  }>;
+};
+
+function loadNormalizedPeople(catalogPath: string): Person[] {
+  if (!fs.existsSync(catalogPath)) return [];
+  try {
+    const raw = fs.readFileSync(catalogPath, "utf8");
+    const cat = JSON.parse(raw) as NormalizedCatalog;
+    return (cat.people ?? []).map((p) => ({
+      id: p.id,
+      name: p.name,
+      honorific: p.honorific ?? "",
+      kind: p.kind,
+    }));
+  } catch {
+    return [];
+  }
 }
 
 function loadCatalogIds(): Set<string> {
@@ -59,25 +102,34 @@ function hasIcon(person: Person, catalogIds: Set<string>): boolean {
 }
 
 function main() {
-  const persons = parseSeed();
+  // Merge seed + normalized commentary bundles' people; dedupe by id.
+  const sources = [
+    parseSeed(),
+    loadNormalizedPeople(NORMALIZED_LIBRARY_CATALOG),
+    loadNormalizedPeople(NORMALIZED_COMMENTARY_CATALOG),
+  ];
+  const byId = new Map<string, Person>();
+  for (const list of sources) {
+    for (const p of list) {
+      if (!byId.has(p.id)) byId.set(p.id, p);
+    }
+  }
+  const candidates = Array.from(byId.values());
   const catalogIds = loadCatalogIds();
-
-  // Only saints + fathers (the user's "library" includes both); skip theologians
-  // who are uncanonized commentators that don't carry icons.
-  const candidates = persons.filter(
-    (p) => p.kind === "saint" || p.kind === "father",
-  );
   const iconless = candidates.filter((p) => !hasIcon(p, catalogIds));
 
   console.log(
-    `${iconless.length} of ${candidates.length} saints/fathers in the library have no icon.\n`,
+    `${iconless.length} of ${candidates.length} people in the library have no icon.\n`,
   );
 
-  // Group by kind for readability
-  const byKind: Record<string, Person[]> = { saint: [], father: [] };
-  for (const p of iconless) byKind[p.kind].push(p);
+  // Group by kind for readability.
+  const byKind: Record<string, Person[]> = { saint: [], father: [], theologian: [], other: [] };
+  for (const p of iconless) {
+    if (p.kind in byKind) byKind[p.kind].push(p);
+    else byKind.other.push(p);
+  }
 
-  for (const kind of ["father", "saint"] as const) {
+  for (const kind of ["father", "saint", "theologian", "other"] as const) {
     if (byKind[kind].length === 0) continue;
     console.log(`=== ${kind.toUpperCase()} (${byKind[kind].length}) ===`);
     for (const p of byKind[kind].sort((a, b) => a.id.localeCompare(b.id))) {

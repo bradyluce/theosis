@@ -497,4 +497,36 @@ export const iconSources: IconSource[] = [
     alt: "Seventeenth-century icon of the Most Holy Theotokos Hodegetria from Nesebar.",
     caption: "The Most Holy Theotokos",
   },
+
+  // --- Library people from commentary bundles (auto-curate misses) ---
+  {
+    id: "icon-athenagoras-of-athens",
+    wikimediaTitle: "File:Greek Icon of Saint Athenagoras of Athens.jpg",
+    alt: "Greek icon of Saint Athenagoras the Apologist of Athens.",
+    caption: "Saint Athenagoras of Athens",
+  },
+  {
+    id: "icon-aristides-of-athens",
+    wikimediaTitle: "File:Aristides of Athens by O.Chirikov (Muz.ist.relig).jpg",
+    alt: "Icon of Saint Aristides the Philosopher of Athens by O. Chirikov.",
+    caption: "Saint Aristides of Athens",
+  },
+  {
+    id: "icon-vincent-of-lerins",
+    wikimediaTitle: "File:Викентий Леринский.jpg",
+    alt: "Icon of Saint Vincent of Lérins, the Galician monk and theologian.",
+    caption: "Saint Vincent of Lérins",
+  },
+  {
+    id: "icon-seraphim-rose",
+    wikimediaTitle: "File:Seraphim Rose icon.jpg",
+    alt: "Icon of Hieromonk Seraphim (Rose) of Platina.",
+    caption: "Fr. Seraphim Rose",
+  },
+  {
+    id: "icon-thomas-aquinas",
+    wikimediaTitle: "File:S. Thomas doctor angelicus... - G. A. Wolfgang f. - btv1b8425349f.jpg",
+    alt: "Engraving of Saint Thomas Aquinas (Doctor Angelicus) by G. A. Wolfgang.",
+    caption: "Saint Thomas Aquinas",
+  },
 ];
