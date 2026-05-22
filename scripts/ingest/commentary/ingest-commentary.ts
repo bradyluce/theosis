@@ -20,6 +20,8 @@ import { parseChrysostom } from "./parse-chrysostom";
 import { parseChrysostomAdversusJudaeos } from "./parse-chrysostom-adversus-judaeos";
 import { parseDionysiusAreopagite } from "./parse-dionysius-areopagite";
 import { parseMacariusEgyptian } from "./parse-macarius-egyptian";
+import { parseDesertFathersParadise } from "./parse-desert-fathers-paradise";
+import { parseEvagriusPraktikos } from "./parse-evagrius-praktikos";
 import { parseIgnatius } from "./parse-ignatius";
 import { parseAphrahat } from "./parse-aphrahat";
 import { parseEphraimSyrian } from "./parse-ephraim-syrian";
@@ -67,6 +69,19 @@ import { parseChurchHistorians } from "./parse-church-historians";
 import { parseMonasticTradition } from "./parse-monastic-tradition";
 import { parseRomanPopes } from "./parse-roman-popes";
 import { parseOtherWesternWitnesses } from "./parse-other-western-witnesses";
+import { parseMogilaConfession } from "./parse-mogilas-confession";
+import { parsePilgrim } from "./parse-pilgrim";
+import { parseClimacusLadder } from "./parse-climacus-ladder";
+import { parseBloomBeginningToPray } from "./parse-bloom-beginning-to-pray";
+import { parseUnseenWarfare } from "./parse-unseen-warfare";
+import { parseRoseSoulAfterDeath } from "./parse-rose-soul-after-death";
+import { parseDesertFathersSayings } from "./parse-desert-fathers-sayings";
+import { parseConstantinouThinkingOrthodox } from "./parse-constantinou-thinking-orthodox";
+import { parsePaisiosSpiritualAwakening } from "./parse-paisios-spiritual-awakening";
+import { parseSchmemannForTheLifeOfTheWorld } from "./parse-schmemann-for-the-life-of-the-world";
+import { parsePhilokalia } from "./parse-philokalia";
+import { parsePorphyriosWoundedByLove } from "./parse-porphyrios-wounded-by-love";
+import { parseRoseReligionOfTheFuture } from "./parse-rose-religion-of-the-future";
 
 // When running from a git worktree (.claude/worktrees/<name>), the main repo
 // root is 3 levels up. Identify by presence of the content/raw directory,
@@ -83,6 +98,7 @@ const REPO_ROOT = findRepoRoot();
 const OUTPUT_DIRECTORY = join(REPO_ROOT, "content/generated/commentary");
 const RAW_DIRECTORY = join(REPO_ROOT, "content/raw/commentary");
 const FATHERS_DIRECTORY = join(REPO_ROOT, "content/raw/fathers");
+const LIBRARY_DIRECTORY = join(REPO_ROOT, "content/raw/library");
 const CORPUS_DIRECTORY = join(REPO_ROOT, "corpus");
 
 function main() {
@@ -523,6 +539,56 @@ function main() {
   );
   console.log(
     `[macarius-egyptian] ${macarius.chapters.length} homilies, ${macariusParagraphs} paragraphs.`,
+  );
+
+  // ── The Paradise of the Holy Fathers — Wallis Budge 1907 (archive.org OCR) ──
+  const paradise = parseDesertFathersParadise({
+    rawDir: join(FATHERS_DIRECTORY, "desert-fathers"),
+  });
+  if (!paradise.chapters || paradise.chapters.length === 0) {
+    throw new Error("[desert-fathers-paradise] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "desert-fathers-paradise.json"),
+    `${JSON.stringify(paradise, null, 2)}\n`,
+    "utf8",
+  );
+  const paradiseSections = paradise.chapters.reduce(
+    (sum, chapter) => sum + chapter.sections.length,
+    0,
+  );
+  const paradiseParagraphs = paradise.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[desert-fathers-paradise] ${paradise.chapters.length} volumes, ${paradiseSections} major sections, ${paradiseParagraphs} paragraphs.`,
+  );
+
+  // ── Evagrius Ponticus — Praktikos (Dysinger 1990, evagriusponticus.net) ────
+  const evagrius = parseEvagriusPraktikos({
+    rawDir: join(FATHERS_DIRECTORY, "evagrius-ponticus"),
+  });
+  if (!evagrius.chapters || evagrius.chapters.length === 0) {
+    throw new Error("[evagrius-praktikos] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "evagrius-praktikos.json"),
+    `${JSON.stringify(evagrius, null, 2)}\n`,
+    "utf8",
+  );
+  const evagriusSections = evagrius.chapters.reduce(
+    (sum, chapter) => sum + chapter.sections.length,
+    0,
+  );
+  const evagriusParagraphs = evagrius.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[evagrius-praktikos] ${evagriusSections} sections, ${evagriusParagraphs} paragraphs.`,
   );
 
   // ── Ignatius of Antioch — ANF Vol. 1 ────────────────────────────────────────
@@ -1438,6 +1504,203 @@ function main() {
   );
   console.log(
     `[reference-works] ${referenceWorks.people.length} people, ${referenceWorks.works.length} works, ${referenceWorks.chapters.length} chapters, ${referenceWorksParagraphs} paragraphs.`,
+  );
+
+  // ── Library acquisitions: long-form modern Orthodox texts ──────────────────
+
+  // St. Peter Mogila — Orthodox Confession of Faith (Jassy 1642)
+  const mogila = parseMogilaConfession({
+    rawDir: join(LIBRARY_DIRECTORY, "mogilas-orthodox-confession"),
+  });
+  if (!mogila.chapters || mogila.chapters.length === 0) {
+    throw new Error("[mogila-confession] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "mogila-confession.json"),
+    `${JSON.stringify(mogila, null, 2)}\n`,
+    "utf8",
+  );
+  const mogilaParagraphs = mogila.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[mogila-confession] ${mogila.chapters.length} parts, ${mogilaParagraphs} paragraphs.`,
+  );
+
+  // ── The Way of a Pilgrim — anonymous Russian, modern English ed. ──────────
+  const pilgrim = parsePilgrim({
+    rawDir: join(LIBRARY_DIRECTORY, "way-of-a-pilgrim"),
+  });
+  if (!pilgrim.chapters || pilgrim.chapters.length === 0) {
+    throw new Error("[pilgrim] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "way-of-a-pilgrim.json"),
+    `${JSON.stringify(pilgrim, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[pilgrim] ${pilgrim.chapters.length} chapters, ${pilgrim.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
+  );
+
+  // ── St. John Climacus — The Ladder of Divine Ascent (30 Steps) ────────────
+  const climacus = parseClimacusLadder({
+    rawDir: join(LIBRARY_DIRECTORY, "climacus-ladder"),
+  });
+  if (!climacus.chapters || climacus.chapters.length === 0) {
+    throw new Error("[climacus-ladder] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "climacus-ladder.json"),
+    `${JSON.stringify(climacus, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[climacus-ladder] ${climacus.chapters.length} steps, ${climacus.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
+  );
+
+  // ── Metropolitan Anthony Bloom — Beginning to Pray ────────────────────────
+  const bloom = parseBloomBeginningToPray({
+    rawDir: join(LIBRARY_DIRECTORY, "bloom-beginning-to-pray"),
+  });
+  if (!bloom.chapters || bloom.chapters.length === 0) {
+    throw new Error("[bloom-beginning-to-pray] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "bloom-beginning-to-pray.json"),
+    `${JSON.stringify(bloom, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[bloom-beginning-to-pray] ${bloom.chapters.length} chapters, ${bloom.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
+  );
+
+  // ── Unseen Warfare — Scupoli/Nikodemos/Theophan recension ────────────────
+  const unseen = parseUnseenWarfare({
+    rawDir: join(LIBRARY_DIRECTORY, "unseen-warfare"),
+  });
+  if (!unseen.chapters || unseen.chapters.length === 0) {
+    throw new Error("[unseen-warfare] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "unseen-warfare.json"),
+    `${JSON.stringify(unseen, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[unseen-warfare] ${unseen.chapters.length} chapters, ${unseen.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
+  );
+
+  // ── Fr. Seraphim Rose — The Soul After Death ──────────────────────────────
+  const roseSoul = parseRoseSoulAfterDeath({
+    rawDir: join(LIBRARY_DIRECTORY, "rose-soul-after-death"),
+  });
+  if (!roseSoul.chapters || roseSoul.chapters.length === 0) {
+    throw new Error("[rose-soul-after-death] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "rose-soul-after-death.json"),
+    `${JSON.stringify(roseSoul, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[rose-soul-after-death] ${roseSoul.chapters.length} chapters, ${roseSoul.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
+  );
+
+  // ── Sayings of the Desert Fathers (selected, 8 Abbas) ─────────────────────
+  const desert = parseDesertFathersSayings({
+    rawDir: join(LIBRARY_DIRECTORY, "desert-fathers-sayings"),
+  });
+  if (!desert.chapters || desert.chapters.length === 0) {
+    throw new Error("[desert-fathers-sayings] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "desert-fathers-sayings.json"),
+    `${JSON.stringify(desert, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[desert-fathers-sayings] ${desert.chapters.length} fathers, ${desert.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} sayings paragraphs.`,
+  );
+
+  // ── Constantinou — Thinking Orthodox (single-chapter fallback) ────────────
+  const constantinou = parseConstantinouThinkingOrthodox({
+    rawDir: join(LIBRARY_DIRECTORY, "constantinou-thinking-orthodox"),
+  });
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "constantinou-thinking-orthodox.json"),
+    `${JSON.stringify(constantinou, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[constantinou-thinking-orthodox] ${constantinou.chapters?.length ?? 0} chapters, ${constantinou.chapters?.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0) ?? 0} paragraphs.`,
+  );
+
+  // ── Elder Paisios — Spiritual Awakening (single-chapter fallback) ─────────
+  const paisios = parsePaisiosSpiritualAwakening({
+    rawDir: join(LIBRARY_DIRECTORY, "paisios-spiritual-awakening"),
+  });
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "paisios-spiritual-awakening.json"),
+    `${JSON.stringify(paisios, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[paisios-spiritual-awakening] ${paisios.chapters?.length ?? 0} parts, ${paisios.chapters?.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0) ?? 0} paragraphs.`,
+  );
+
+  // ── Fr. Schmemann — For the Life of the World (single-chapter fallback) ──
+  const schmemann = parseSchmemannForTheLifeOfTheWorld({
+    rawDir: join(LIBRARY_DIRECTORY, "schmemann-for-the-life-of-the-world"),
+  });
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "schmemann-for-the-life-of-the-world.json"),
+    `${JSON.stringify(schmemann, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[schmemann-for-the-life-of-the-world] ${schmemann.chapters?.length ?? 0} chapters, ${schmemann.chapters?.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0) ?? 0} paragraphs.`,
+  );
+
+  // ── The Philokalia (single-chapter stub; deep parsing deferred) ──────────
+  const philokalia = parsePhilokalia({
+    rawDir: join(LIBRARY_DIRECTORY, "philokalia"),
+  });
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "philokalia.json"),
+    `${JSON.stringify(philokalia, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[philokalia] ${philokalia.people.length} new persons, ${philokalia.works.length} works, ${philokalia.chapters?.length ?? 0} chapters, ${philokalia.chapters?.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0) ?? 0} paragraphs.`,
+  );
+
+  // ── Elder Porphyrios — Wounded by Love (OCR-derived) ─────────────────────
+  const porphyrios = parsePorphyriosWoundedByLove({
+    rawDir: join(LIBRARY_DIRECTORY, "porphyrios-wounded-by-love"),
+  });
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "porphyrios-wounded-by-love.json"),
+    `${JSON.stringify(porphyrios, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[porphyrios-wounded-by-love] ${porphyrios.chapters?.length ?? 0} chapters, ${porphyrios.chapters?.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0) ?? 0} paragraphs (OCR-derived).`,
+  );
+
+  // ── Fr. Seraphim Rose — Orthodoxy and the Religion of the Future ──────────
+  const roseReligion = parseRoseReligionOfTheFuture({
+    rawDir: join(LIBRARY_DIRECTORY, "rose-religion-of-the-future"),
+  });
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "rose-religion-of-the-future.json"),
+    `${JSON.stringify(roseReligion, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[rose-religion-of-the-future] ${roseReligion.chapters?.length ?? 0} chapters, ${roseReligion.chapters?.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0) ?? 0} paragraphs (OCR-derived).`,
   );
 }
 

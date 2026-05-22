@@ -12,6 +12,8 @@
     "ingest:commentary": "tsx scripts/ingest/commentary/ingest-commentary.ts",
     "ingest:icons": "tsx scripts/ingest/icons/fetch-wikimedia.ts",
     "ingest:icons:auto-curate": "tsx scripts/ingest/icons/auto-curate.ts",
+    "ingest:media": "tsx scripts/ingest/media/fetch-media.ts",
+    "sync:media": "tsx scripts/media/sync-to-public.ts",
     "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
     "normalize:commentary": "tsx scripts/normalize/normalize-commentary.ts",
     "push:commentary:s3": "tsx scripts/push/push-commentary-to-s3.ts",
