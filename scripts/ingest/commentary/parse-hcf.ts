@@ -145,8 +145,98 @@ function hash8(input: string): string {
   return createHash("sha256").update(input).digest("hex").slice(0, 8);
 }
 
-function workIdFor(personId: string, sourceTitle: string): string {
-  return `hcf:work:${personId}:${slugifyName(sourceTitle)}`;
+// HCF's `source_title` is verse-specific in practice ("COMMENTARY ON
+// MATTHEW 1.5.3", "City of God 20.6", "Sermon 305A"). Without
+// normalization, each unique source_title spawns its own Work, which
+// exploded the catalog from ~500 to 20,000+ Works. This collapses
+// titles back to their parent work ("Sermons", "City of God", "On the
+// Trinity") so the Library shows long-form Works, not per-verse refs.
+function canonicalizeWorkTitle(raw: string): string {
+  let t = (raw || "").trim();
+  if (!t) return "";
+  if (/^untitled/i.test(t)) return "Untitled commentary";
+
+  // Collapse common series — one Work per Father, not one per item.
+  if (/^sermons?\s/i.test(t)) return "Sermons";
+  if (/^letters?\s/i.test(t)) return "Letters";
+  if (/^tractates?\s/i.test(t)) return "Tractates";
+  if (/^homil(y|ies)\s/i.test(t)) return "Homilies";
+  if (/^epistles?\s/i.test(t)) return "Epistles";
+  if (/^discourses?\s/i.test(t)) return "Discourses";
+  if (/^oration[s]?\s/i.test(t)) return "Orations";
+  if (/^fragment[s]?\s/i.test(t)) return "Fragments";
+  if (/^canon[s]?\s/i.test(t)) return "Canons";
+
+  // Strip parenthetical references anywhere ("(46)", "(119)",
+  // "(exposition 1)" inside a title). HCF cites alternate verse
+  // numberings, sermon variants, and exposition-numbers in parens.
+  t = t.replace(/\s*\([^)]*\)\s*/g, " ").replace(/\s+/g, " ").trim();
+
+  // Iterate trailing-ref strips until stable, so combined patterns like
+  // "Explanations of the Psalms 50 .11" (left behind by a mid-title
+  // paren removal) and ", Chapter X" both clear out without ordering
+  // dependencies.
+  let prev: string;
+  do {
+    prev = t;
+
+    // Strip a trailing "- Psalm" / "— Chapter" / etc. (series word with
+    // a dash separator but no following number).
+    t = t.replace(
+      /\s*[-—–]\s*(psalm|chapter|section|verse|book|sermon|homily|tractate|epistle|letter)s?\s*$/i,
+      "",
+    );
+
+    // Strip ", On Psalm/Chapter/Letter X[...]" — comma required so
+    // titles like "On the Spirit and the Letter 12.3" (where "Letter"
+    // is part of the title) don't get truncated. The trailing ref can
+    // be a pure Roman numeral or digits.
+    t = t.replace(
+      /,\s*(on\s+)?(psalm|chapter|section|page|verse|fragment|book|sermon|homily|tractate|epistle|letter|preface|prologue)\s+(?:\d[\w.,:\-/]*|[IVXLCDM]+)\s*$/i,
+      "",
+    );
+
+    // Strip trailing numeric refs: " 1.5.3", " 3:10.19", " 12-13",
+    // " 25", " 36/B.3", " 2.1-3, 5", or a bare " .11" left behind by
+    // earlier paren removal. The first char must be a digit so book
+    // names like "Romans" / "John" / titles like "Christian
+    // Instruction" don't get truncated.
+    t = t.replace(/\s+\d[\w.,:\-/]*(?:\s*,\s*\d[\w.,:\-/]*)*\s*$/, "");
+    t = t.replace(/\s+\.\d[\d.,:\-/]*\s*$/, "");
+
+    // Trailing punctuation that doesn't belong on a title — ":", ",", "-".
+    t = t.replace(/\s*[:,;\-]+\s*$/, "");
+    t = t.trim();
+  } while (t !== prev);
+
+  // Title-case ALL-CAPS variants so they collapse with mixed-case
+  // versions of the same title at the workId step.
+  if (t && t === t.toUpperCase() && /[A-Z]/.test(t)) {
+    t = titleCaseTitle(t);
+  }
+
+  return t || raw.trim();
+}
+
+const TITLECASE_SMALL_WORDS = new Set([
+  "a", "an", "and", "the", "of", "on", "in", "to", "for",
+  "by", "as", "at", "but", "or", "vs", "via",
+]);
+
+function titleCaseTitle(s: string): string {
+  return s
+    .toLowerCase()
+    .split(" ")
+    .map((w, i) =>
+      i > 0 && TITLECASE_SMALL_WORDS.has(w)
+        ? w
+        : w.charAt(0).toUpperCase() + w.slice(1),
+    )
+    .join(" ");
+}
+
+function workIdFor(personId: string, canonicalTitle: string): string {
+  return `hcf:work:${personId}:${slugifyName(canonicalTitle)}`;
 }
 
 function sourceIdFor(sourceUrl: string | undefined, sourceTitle: string): string {
@@ -196,14 +286,18 @@ function upsertWork(
   sourceTitle: string,
   sourceId: string,
 ): string {
-  const workId = workIdFor(personId, sourceTitle);
+  // Use the canonical title for both the workId and the display title so
+  // all variants of the same Work ("SERMON 305A", "Sermon 65A", etc.)
+  // collapse to one record.
+  const canonicalTitle = canonicalizeWorkTitle(sourceTitle);
+  const workId = workIdFor(personId, canonicalTitle);
   if (!works.has(workId)) {
     works.set(workId, {
       id: workId,
-      slug: slugifyName(`${personId}-${sourceTitle}`),
+      slug: slugifyName(`${personId}-${canonicalTitle}`),
       personId,
-      title: sourceTitle,
-      shortTitle: sourceTitle.slice(0, 80),
+      title: canonicalTitle,
+      shortTitle: canonicalTitle.slice(0, 80),
       workType: "commentary",
       lengthLabel: "medium",
       eraLabel: "",
