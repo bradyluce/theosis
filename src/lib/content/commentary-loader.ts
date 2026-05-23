@@ -11,6 +11,7 @@ import type {
 } from "@theosis/core";
 import { verseLocationKey } from "@/lib/content/reference";
 import { toEntryChapterNumbers } from "@/lib/content/psalter-numbering";
+import { isCanonizedSaint } from "@/lib/content/saint-predicate";
 import {
   commentaryEntries as seedCommentary,
   people as seedPeople,
@@ -422,54 +423,42 @@ export function getAllPeopleFromAll(): Person[] {
 }
 
 // Same as getAllPeopleFromAll() but filtered to library-worthy Persons:
-//   - Canonized saints (recognised via honorific, feast day, or kind), OR
-//   - Authors with at least one Work that carries long-form chapters
-//     (listed in the library catalog's index.byWork)
-// Citation-only Persons — those who only appear via HCF-style verse-level
-// commentary entries — are excluded. They still resolve via getPersonById
-// so commentary panels render their attribution; they just don't clutter
-// the Library landing's People grid or "browse by author" surfaces.
+//   - Canonized saints (honorific, feast day, or kind="saint" — see
+//     isCanonizedSaint), OR
+//   - Anyone who authors at least one Work in the merged catalog (with
+//     a real title, not the "Untitled commentary" placeholder)
+// "Author of any Work" is the broader-than-long-form rule the user
+// asked for: after work-title canonicalization, every Work in the
+// catalog represents a real long-form thing (not per-verse cites), so
+// authoring one is enough to merit a Library spot.
+//
+// Citation-only Persons whose only Work is "Untitled commentary" are
+// still excluded — these are HCF entries lacking source_title at all,
+// usually orphaned anonymous-tradition fragments. They still resolve
+// via getPersonById so commentary panels can render their attribution.
 export function getLibraryPeopleFromAll(): Person[] {
   const allPeople = getAllPeopleFromAll();
-  const longFormPersonIds = collectLongFormPersonIds();
+  const realWorkAuthorIds = collectRealWorkAuthorIds();
   return allPeople.filter(
-    (person) => isCanonizedSaint(person) || longFormPersonIds.has(person.id),
+    (person) => isCanonizedSaint(person) || realWorkAuthorIds.has(person.id),
   );
 }
 
-const SAINT_HONORIFIC_PATTERN = /\b(st\.?|saint|holy|blessed|venerable)\b/i;
-
-function isCanonizedSaint(person: Person): boolean {
-  if (person.kind === "saint") return true;
-  if (person.feastDayLabel && person.feastDayLabel.trim().length > 0) return true;
-  if (
-    person.honorific &&
-    SAINT_HONORIFIC_PATTERN.test(person.honorific.trim())
-  ) {
-    return true;
-  }
-  return false;
-}
-
-// PersonIds of authors who own at least one chapter-bearing Work, derived
-// from the library catalog's index.byWork — the authoritative source of
-// "this work has long-form chapters." Cached for the process lifetime.
-let longFormPersonIdsCache: Set<string> | undefined;
-function collectLongFormPersonIds(): Set<string> {
-  if (longFormPersonIdsCache) return longFormPersonIdsCache;
+// PersonIds of authors who own at least one Work with a real title
+// (anything except the "Untitled commentary" placeholder that the HCF
+// parser emits for blocks lacking a source_title). Drawn from the
+// merged seed+catalog Work set so seed-only Works also count. Cached
+// for the process lifetime.
+let realWorkAuthorIdsCache: Set<string> | undefined;
+function collectRealWorkAuthorIds(): Set<string> {
+  if (realWorkAuthorIdsCache) return realWorkAuthorIdsCache;
   const ids = new Set<string>();
-  const libraryCatalog = loadLibraryCatalog();
-  if (libraryCatalog) {
-    const workIdToPerson = new Map<string, string>();
-    for (const work of libraryCatalog.works) {
-      workIdToPerson.set(work.id, work.personId);
-    }
-    for (const workId of Object.keys(libraryCatalog.index.byWork)) {
-      const personId = workIdToPerson.get(workId);
-      if (personId) ids.add(personId);
-    }
+  for (const work of getAllWorksFromAll()) {
+    const title = (work.title ?? "").trim().toLowerCase();
+    if (!title || title === "untitled commentary") continue;
+    ids.add(work.personId);
   }
-  longFormPersonIdsCache = ids;
+  realWorkAuthorIdsCache = ids;
   return ids;
 }
 

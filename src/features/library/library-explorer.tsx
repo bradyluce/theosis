@@ -11,7 +11,17 @@ import type {
   TopicTag,
   Work,
 } from "@theosis/core";
+import { isCanonizedSaint } from "@/lib/content/saint-predicate";
 import { cn } from "@/lib/utils";
+
+// Sort key for the people grid: bare name without honorific or
+// articles, so "St. Augustine" sorts with the A's, not under "S".
+function displayNameForSort(person: Person): string {
+  return person.name
+    .replace(/^(St\.?|Saint|Holy|Blessed|Venerable|The)\s+/i, "")
+    .trim()
+    .toLowerCase();
+}
 
 type LibraryTab = "all" | "fathers" | "saints" | "works" | "saved" | "completed";
 
@@ -113,7 +123,10 @@ export function LibraryExplorer({
     return people.filter((person) => {
       if (tab === "works") return false;
       if (tab === "fathers" && person.kind !== "father") return false;
-      if (tab === "saints" && person.kind !== "saint") return false;
+      // Saints tab uses the broader canonisation heuristic so Doctors
+      // of the Church like Augustine (kind="father", honorific "St.")
+      // and English saints like Bede the Venerable also surface here.
+      if (tab === "saints" && !isCanonizedSaint(person)) return false;
       if (personKind !== "all" && person.kind !== personKind) return false;
       if (topic !== "all" && !person.topicSlugs.includes(topic)) return false;
       if (era !== "all" && person.eraLabel !== era) return false;
@@ -300,7 +313,16 @@ export function LibraryExplorer({
             </button>
           </div>
           <div className="-mx-4 flex gap-3 overflow-x-auto px-4 pb-1 sm:-mx-6 sm:px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {filteredPeople.slice(0, 24).map((person) => {
+            {/* All-tab keeps a 24-card preview ordered by source priority
+                (seed first). Dedicated Fathers/Saints tabs sort the full
+                list alphabetically by display name so users browsing by
+                category get a predictable A→Z scroll. */}
+            {(tab === "all"
+              ? filteredPeople.slice(0, 24)
+              : [...filteredPeople].sort((a, b) =>
+                  displayNameForSort(a).localeCompare(displayNameForSort(b)),
+                )
+            ).map((person) => {
               const icon = personIcons?.[person.id];
               return (
                 <Link
