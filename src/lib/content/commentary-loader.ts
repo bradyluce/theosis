@@ -422,26 +422,37 @@ export function getAllPeopleFromAll(): Person[] {
   return Array.from(byId.values());
 }
 
-// Same as getAllPeopleFromAll() but filtered to library-worthy Persons:
-//   - Canonized saints (honorific, feast day, or kind="saint" — see
-//     isCanonizedSaint), OR
-//   - Anyone who authors at least one Work in the merged catalog (with
-//     a real title, not the "Untitled commentary" placeholder)
-// "Author of any Work" is the broader-than-long-form rule the user
-// asked for: after work-title canonicalization, every Work in the
-// catalog represents a real long-form thing (not per-verse cites), so
-// authoring one is enough to merit a Library spot.
+// HCF parser stamps this exact summary on any Person it creates that
+// has no seed entry and no other parser supplying a real bio — see
+// scripts/ingest/commentary/parse-hcf.ts upsertPerson. Persons whose
+// FINAL (post-seed-merge) summary is still this string are pure
+// HCF-only citation sources with no curated biography. Hidden from
+// the Library since they offer nothing readable beyond an attribution
+// label.
+const HCF_PLACEHOLDER_SUMMARY =
+  "Patristic author whose commentary is indexed in the Historical Christian Faith Commentaries Database.";
+
+// Same as getAllPeopleFromAll() but filtered to library-worthy Persons.
+// A Person stays if BOTH:
+//   1. Their post-merge summary isn't the HCF placeholder (i.e. somebody
+//      — seed, a curated parser, or the catena parsers — supplied a
+//      real biographical sentence), AND
+//   2. At least one of:
+//      - canonised saint (honorific, feast day, or kind="saint"), OR
+//      - has at least one Work with a real title in the merged Work
+//        set (anything except the "Untitled commentary" placeholder)
 //
-// Citation-only Persons whose only Work is "Untitled commentary" are
-// still excluded — these are HCF entries lacking source_title at all,
-// usually orphaned anonymous-tradition fragments. They still resolve
-// via getPersonById so commentary panels can render their attribution.
+// Pure HCF-only Persons (placeholder summary, no chapter-bearing Work,
+// no seed reconciliation) drop out. Their commentary attributions
+// still resolve via getPersonById so the verse-reader caption keeps
+// working; they just don't crowd the Library people grid.
 export function getLibraryPeopleFromAll(): Person[] {
   const allPeople = getAllPeopleFromAll();
   const realWorkAuthorIds = collectRealWorkAuthorIds();
-  return allPeople.filter(
-    (person) => isCanonizedSaint(person) || realWorkAuthorIds.has(person.id),
-  );
+  return allPeople.filter((person) => {
+    if (person.summary === HCF_PLACEHOLDER_SUMMARY) return false;
+    return isCanonizedSaint(person) || realWorkAuthorIds.has(person.id);
+  });
 }
 
 // PersonIds of authors who own at least one Work with a real title
