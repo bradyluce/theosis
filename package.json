@@ -10,6 +10,7 @@
     "lint": "eslint",
     "ingest:bibles": "tsx scripts/ingest/ingest.ts",
     "ingest:commentary": "tsx scripts/ingest/commentary/ingest-commentary.ts",
+    "ingest:commentary:hcf:clone": "tsx scripts/ingest/commentary/hcf/clone-hcf.ts",
     "ingest:icons": "tsx scripts/ingest/icons/fetch-wikimedia.ts",
     "ingest:icons:auto-curate": "tsx scripts/ingest/icons/auto-curate.ts",
     "ingest:media": "tsx scripts/ingest/media/fetch-media.ts",
@@ -30,6 +31,7 @@
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "smol-toml": "^1.6.1",
     "tailwind-merge": "^3.5.0",
     "zod": "^4.3.6",
     "zustand": "^5.0.11"

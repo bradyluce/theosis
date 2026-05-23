@@ -43,6 +43,7 @@ import type {
   WorkChapter,
 } from "@theosis/core";
 import { verseLocationKey } from "../../src/lib/content/reference";
+import { dedupeEntries } from "../ingest/commentary/hcf/dedup";
 
 type CommentaryBundleV1 = {
   version: "1";
@@ -251,6 +252,55 @@ function main() {
       inner.set(chapter.order, chapter);
     }
   }
+
+  // Cross-corpus fuzzy de-duplication. Runs per-bucket (each bucket already
+  // shares a target, so the dedup re-blocks only by personId). When the
+  // same Father's near-identical comment was ingested from multiple sources
+  // (typically the existing curated parsers + the HCF bulk corpus), the
+  // earlier ingest (preferred by the dedup's scorer) wins, and the HCF
+  // version's source ID is folded into the kept entry's provenance array.
+  let dedupEntriesIn = 0;
+  let dedupEntriesOut = 0;
+  let dedupMerges = 0;
+  const dedupSamples: Array<{ keptId: string; droppedId: string; jaccard: number }> = [];
+
+  for (const [location, entries] of byVerseBuckets) {
+    dedupEntriesIn += entries.length;
+    if (entries.length < 2) {
+      dedupEntriesOut += entries.length;
+      continue;
+    }
+    const { kept, report } = dedupeEntries(entries);
+    byVerseBuckets.set(location, kept);
+    dedupEntriesOut += kept.length;
+    dedupMerges += report.duplicatesMerged;
+    if (dedupSamples.length < 20) {
+      dedupSamples.push(...report.samples.slice(0, 20 - dedupSamples.length));
+    }
+  }
+  for (const [location, entries] of byChapterBuckets) {
+    dedupEntriesIn += entries.length;
+    if (entries.length < 2) {
+      dedupEntriesOut += entries.length;
+      continue;
+    }
+    const { kept, report } = dedupeEntries(entries);
+    byChapterBuckets.set(location, kept);
+    dedupEntriesOut += kept.length;
+    dedupMerges += report.duplicatesMerged;
+  }
+
+  // Persist a report so behavior is auditable across runs.
+  const dedupReport = {
+    entriesIn: dedupEntriesIn,
+    entriesOut: dedupEntriesOut,
+    duplicatesMerged: dedupMerges,
+    samples: dedupSamples,
+  };
+  writeJsonFile(join(GENERATED_DIR, "dedup-report.json"), dedupReport);
+  console.log(
+    `[normalize-commentary] dedup: in=${dedupEntriesIn} out=${dedupEntriesOut} merged=${dedupMerges}`,
+  );
 
   // Write commentary/by-verse files. Sort entries within a bucket by rank desc
   // to match the loader's loadChapterCommentary post-sort.
