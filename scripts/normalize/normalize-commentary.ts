@@ -38,11 +38,13 @@ import { join } from "node:path";
 import type {
   CommentaryEntry,
   Person,
+  ScriptureReference,
   SourceRecord,
   Work,
   WorkChapter,
 } from "@theosis/core";
 import { verseLocationKey } from "../../src/lib/content/reference";
+import { resolveBookSlug } from "../ingest/commentary/shared";
 
 type CommentaryBundleV1 = {
   version: "1";
@@ -113,6 +115,7 @@ const ROOT = process.cwd();
 const GENERATED_DIR = join(ROOT, "content", "generated", "commentary");
 const COMMENTARY_DIR = join(ROOT, "content", "normalized", "commentary");
 const LIBRARY_DIR = join(ROOT, "content", "normalized", "library");
+const SEARCH_DIR = join(ROOT, "content", "normalized", "search");
 
 function readJsonFile<T>(absolutePath: string): T {
   return JSON.parse(readFileSync(absolutePath, "utf8")) as T;
@@ -121,6 +124,174 @@ function readJsonFile<T>(absolutePath: string): T {
 function writeJsonFile(absolutePath: string, value: unknown) {
   mkdirSync(join(absolutePath, ".."), { recursive: true });
   writeFileSync(absolutePath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+}
+
+// ─── Scripture-reference extraction ────────────────────────────────────────
+// Scans flowing prose for in-line Scripture citations and resolves them to
+// canonical ScriptureReference records. Used by the normalize step to
+// populate Work.verseRefs[] across the entire catalog.
+
+// Canonical-form labels for book slugs. Drives the human-readable `label`
+// field on each ScriptureReference. Falls back to title-casing the slug
+// for any slug not in the map (numbered books always need this map).
+const BOOK_SLUG_LABEL: Record<string, string> = {
+  genesis: "Genesis", exodus: "Exodus", leviticus: "Leviticus", numbers: "Numbers",
+  deuteronomy: "Deuteronomy", joshua: "Joshua", judges: "Judges", ruth: "Ruth",
+  "first-samuel": "1 Samuel", "second-samuel": "2 Samuel",
+  "first-kings": "1 Kings", "second-kings": "2 Kings",
+  "first-chronicles": "1 Chronicles", "second-chronicles": "2 Chronicles",
+  ezra: "Ezra", nehemiah: "Nehemiah", esther: "Esther", job: "Job",
+  psalms: "Psalms", proverbs: "Proverbs", ecclesiastes: "Ecclesiastes",
+  "song-of-solomon": "Song of Solomon", isaiah: "Isaiah", jeremiah: "Jeremiah",
+  lamentations: "Lamentations", ezekiel: "Ezekiel", daniel: "Daniel",
+  hosea: "Hosea", joel: "Joel", amos: "Amos", obadiah: "Obadiah", jonah: "Jonah",
+  micah: "Micah", nahum: "Nahum", habakkuk: "Habakkuk", zephaniah: "Zephaniah",
+  haggai: "Haggai", zechariah: "Zechariah", malachi: "Malachi",
+  wisdom: "Wisdom", sirach: "Sirach", baruch: "Baruch", tobit: "Tobit",
+  judith: "Judith", "first-maccabees": "1 Maccabees", "second-maccabees": "2 Maccabees",
+  matthew: "Matthew", mark: "Mark", luke: "Luke", john: "John", acts: "Acts",
+  romans: "Romans", "first-corinthians": "1 Corinthians", "second-corinthians": "2 Corinthians",
+  galatians: "Galatians", ephesians: "Ephesians", philippians: "Philippians",
+  colossians: "Colossians", "first-thessalonians": "1 Thessalonians",
+  "second-thessalonians": "2 Thessalonians", "first-timothy": "1 Timothy",
+  "second-timothy": "2 Timothy", titus: "Titus", philemon: "Philemon",
+  hebrews: "Hebrews", james: "James", "first-peter": "1 Peter", "second-peter": "2 Peter",
+  "first-john": "1 John", "second-john": "2 John", "third-john": "3 John",
+  jude: "Jude", revelation: "Revelation",
+};
+
+function labelForBookSlug(slug: string): string {
+  return BOOK_SLUG_LABEL[slug] ?? slug.split("-").map((s) => s[0]!.toUpperCase() + s.slice(1)).join(" ");
+}
+
+// Regex permissive enough to catch the common American/British citation
+// styles in prose: "Matt 5:3", "Matt. 5:3", "Matthew 5:3", "1 Cor 13:1",
+// "I Cor 13:1", "Heb. 11:1-2", "Romans 8:31-39". Captures:
+//   1: book name (with optional 1/2/3 or I/II/III prefix and optional period)
+//   2: chapter number
+//   3: starting verse
+//   4: optional ending verse (range)
+//
+// Validated downstream by calling resolveBookSlug() on the captured book
+// name; matches that don't resolve to a known canonical book are discarded.
+const CITATION_RE =
+  /\b((?:[1-3]\s+|I{1,3}\s+)?(?:[A-Z][a-zé]{1,16}\.?))\s+(\d{1,3}):(\d{1,3})(?:[-–](\d{1,3}))?\b/g;
+
+function extractScriptureRefs(paragraphText: string): ScriptureReference[] {
+  const seen = new Map<string, ScriptureReference>();
+  CITATION_RE.lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = CITATION_RE.exec(paragraphText)) !== null) {
+    const rawBook = (m[1] ?? "").trim();
+    const chapter = Number.parseInt(m[2] ?? "", 10);
+    const verseStart = Number.parseInt(m[3] ?? "", 10);
+    const verseEnd = m[4] ? Number.parseInt(m[4], 10) : undefined;
+    if (!Number.isFinite(chapter) || !Number.isFinite(verseStart)) continue;
+    if (verseEnd !== undefined && (!Number.isFinite(verseEnd) || verseEnd < verseStart)) continue;
+    const slug = resolveBookSlug(rawBook);
+    if (!slug) continue;
+    const bookLabel = labelForBookSlug(slug);
+    const label = verseEnd
+      ? `${bookLabel} ${chapter}:${verseStart}-${verseEnd}`
+      : `${bookLabel} ${chapter}:${verseStart}`;
+    const key = `${slug}.${chapter}.${verseStart}.${verseEnd ?? ""}`;
+    if (!seen.has(key)) {
+      seen.set(key, {
+        bookSlug: slug,
+        chapterNumber: chapter,
+        verseStart,
+        verseEnd,
+        label,
+      });
+    }
+  }
+  return [...seen.values()];
+}
+
+function collectVerseRefsForWork(chapters: WorkChapter[]): ScriptureReference[] {
+  const merged = new Map<string, { ref: ScriptureReference; count: number }>();
+  for (const chapter of chapters) {
+    for (const section of chapter.sections) {
+      for (const paragraph of section.paragraphs) {
+        for (const ref of extractScriptureRefs(paragraph.text)) {
+          const key = `${ref.bookSlug}.${ref.chapterNumber}.${ref.verseStart}.${ref.verseEnd ?? ""}`;
+          const existing = merged.get(key);
+          if (existing) {
+            existing.count += 1;
+          } else {
+            merged.set(key, { ref, count: 1 });
+          }
+        }
+      }
+    }
+  }
+  // Sort by frequency descending, then by canonical book order (alphabetic
+  // slug is good enough — full canonical ordering would need the book-canon
+  // module). Cap at 200 to keep Work records reasonable.
+  return [...merged.values()]
+    .sort((a, b) => {
+      if (b.count !== a.count) return b.count - a.count;
+      if (a.ref.bookSlug !== b.ref.bookSlug) return a.ref.bookSlug.localeCompare(b.ref.bookSlug);
+      if (a.ref.chapterNumber !== b.ref.chapterNumber) return a.ref.chapterNumber - b.ref.chapterNumber;
+      return a.ref.verseStart - b.ref.verseStart;
+    })
+    .slice(0, 200)
+    .map((entry) => entry.ref);
+}
+
+// ─── Search index ──────────────────────────────────────────────────────────
+// Flat per-chapter entries used by src/features/search/search-engine.ts to
+// surface library prose in keyword search. Each entry carries enough metadata
+// for the search-result card to render without extra catalog lookups.
+
+type SearchLibraryEntry = {
+  workId: string;
+  workSlug: string;
+  workTitle: string;
+  chapterId: string;
+  chapterOrder: number;
+  chapterLabel: string;
+  chapterTitle: string;
+  personId: string;
+  personName: string;
+  topicSlugs: string[];
+  excerpt: string;
+};
+
+function truncateExcerpt(text: string, maxLength: number): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= maxLength) return clean;
+  return clean.slice(0, maxLength - 1).trimEnd() + "…";
+}
+
+function buildSearchLibraryEntry(args: {
+  chapter: WorkChapter;
+  work: Work;
+  personName: string;
+}): SearchLibraryEntry {
+  // Excerpt the first paragraph of the first section that has body content.
+  let excerptSource = "";
+  outer: for (const section of args.chapter.sections) {
+    for (const p of section.paragraphs) {
+      if (p.text && p.text.length >= 40) {
+        excerptSource = p.text;
+        break outer;
+      }
+    }
+  }
+  return {
+    workId: args.work.id,
+    workSlug: args.work.slug,
+    workTitle: args.work.title,
+    chapterId: args.chapter.id,
+    chapterOrder: args.chapter.order,
+    chapterLabel: args.chapter.label,
+    chapterTitle: args.chapter.title,
+    personId: args.work.personId,
+    personName: args.personName,
+    topicSlugs: [...args.work.topicSlugs],
+    excerpt: truncateExcerpt(excerptSource, 280),
+  };
 }
 
 type NormalizedBundle = {
@@ -339,6 +510,52 @@ function main() {
     };
   }
 
+  // ── verseRefs population ────────────────────────────────────────────────
+  // Scan every Work's chapter prose for Scripture citations and write the
+  // resulting ScriptureReference[] back to the Work record in worksById, so
+  // the catalog write picks them up. Runs after the by-work files are on
+  // disk but before catalog assembly.
+  let worksWithRefs = 0;
+  let totalRefsCollected = 0;
+  for (const [workId, byOrder] of chaptersByWork) {
+    const chapters = [...byOrder.values()].sort((a, b) => a.order - b.order);
+    if (chapters.length === 0) continue;
+    const refs = collectVerseRefsForWork(chapters);
+    if (refs.length === 0) continue;
+    const work = worksById.get(workId);
+    if (!work) continue;
+    worksById.set(workId, { ...work, verseRefs: refs });
+    worksWithRefs += 1;
+    totalRefsCollected += refs.length;
+  }
+
+  // ── Search index ───────────────────────────────────────────────────────
+  // Emit a flat per-chapter search-index file consumed by the client-side
+  // fuse search engine (src/features/search/search-engine.ts).
+  const searchLibraryEntries: SearchLibraryEntry[] = [];
+  for (const [workId, byOrder] of chaptersByWork) {
+    const work = worksById.get(workId);
+    if (!work) continue;
+    const person = peopleById.get(work.personId);
+    const personName = person?.honorific
+      ? `${person.honorific} ${person.name}`
+      : person?.name ?? "";
+    const chapters = [...byOrder.values()].sort((a, b) => a.order - b.order);
+    for (const chapter of chapters) {
+      searchLibraryEntries.push(
+        buildSearchLibraryEntry({ chapter, work, personName }),
+      );
+    }
+  }
+  searchLibraryEntries.sort((a, b) => {
+    if (a.workId !== b.workId) return a.workId.localeCompare(b.workId);
+    return a.chapterOrder - b.chapterOrder;
+  });
+  writeJsonFile(join(SEARCH_DIR, "library.json"), {
+    version: "1",
+    entries: searchLibraryEntries,
+  });
+
   // Sort catalog arrays by id for stable diffs across re-runs.
   const peopleSorted = [...peopleById.values()].sort((a, b) => a.id.localeCompare(b.id));
   const worksSorted = [...worksById.values()].sort((a, b) => a.id.localeCompare(b.id));
@@ -376,6 +593,12 @@ function main() {
   );
   console.log(`[normalize-commentary] commentary/by-verse:   ${verseFilesWritten}`);
   console.log(`[normalize-commentary] commentary/by-chapter: ${chapterFilesWritten}`);
+  console.log(
+    `[normalize-commentary] verseRefs populated:   ${worksWithRefs}/${worksSorted.length} works (${totalRefsCollected} refs)`,
+  );
+  console.log(
+    `[normalize-commentary] search/library:        ${searchLibraryEntries.length} entries`,
+  );
   console.log(`[normalize-commentary] library/by-work:       ${workFilesWritten}`);
 }
 

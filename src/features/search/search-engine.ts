@@ -17,6 +17,25 @@ import {
 } from "@/lib/content";
 import { bibleVerses } from "@/lib/content/seed/scripture";
 import { parseReferenceQuery } from "@/features/search/reference-parser";
+import librarySearchData from "../../../content/normalized/search/library.json" with { type: "json" };
+
+type LibrarySearchEntry = {
+  workId: string;
+  workSlug: string;
+  workTitle: string;
+  chapterId: string;
+  chapterOrder: number;
+  chapterLabel: string;
+  chapterTitle: string;
+  personId: string;
+  personName: string;
+  topicSlugs: string[];
+  excerpt: string;
+};
+
+const libraryChapters = (
+  librarySearchData as { version: string; entries: LibrarySearchEntry[] }
+).entries;
 
 type SearchDocument = {
   id: string;
@@ -145,12 +164,30 @@ const dailyDocuments: SearchDocument[] = dailies.map((daily) => ({
   searchText: `${daily.title} ${daily.summary}`,
 }));
 
+// Per-chapter documents for every long-form library chapter — surfaces the
+// full normalized library corpus (Philokalia per-author, acquisitions, all
+// patristic ingests) in keyword search. The link routes to the parent work
+// page; downstream rendering can scroll to the chapter via the order or id.
+const libraryChapterDocuments: SearchDocument[] = libraryChapters.map(
+  (entry) => ({
+    id: `chapter-${entry.chapterId}`,
+    kind: "work",
+    title: entry.chapterTitle,
+    href: `/library/works/${entry.workSlug}`,
+    kicker: `${entry.personName} · ${entry.chapterLabel}`,
+    snippet: entry.excerpt,
+    baseWeight: 62,
+    searchText: `${entry.chapterTitle} ${entry.chapterLabel} ${entry.workTitle} ${entry.personName} ${entry.topicSlugs.join(" ")} ${entry.excerpt}`,
+  }),
+);
+
 const documents = [
   ...verseDocuments,
   ...commentaryDocuments,
   ...commentaryIndexDocuments,
   ...personDocuments,
   ...workDocuments,
+  ...libraryChapterDocuments,
   ...topicDocuments,
   ...dailyDocuments,
 ];
