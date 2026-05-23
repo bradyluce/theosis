@@ -97,6 +97,17 @@ export type HcfParseStats = {
   blocksScanned: number;
   blocksDropped: Map<string, number>;
   entriesEmitted: number;
+  // Per-reason samples for the license-dropped audit log — capped to keep
+  // memory and JSON output bounded.
+  licenseDroppedSamples: Array<{
+    author: string;
+    book: string;
+    chapter: number;
+    verse: number;
+    source_title?: string;
+    source_url?: string;
+    reason: string;
+  }>;
 };
 
 // ── filename parsing ───────────────────────────────────────────────────────
@@ -317,7 +328,10 @@ export function parseHcf(config: HcfParseConfig): {
     blocksScanned: 0,
     blocksDropped: new Map(),
     entriesEmitted: 0,
+    licenseDroppedSamples: [],
   };
+
+  const MAX_LICENSE_SAMPLES = 200;
 
   const authorDirs = readdirSync(config.corpusDir)
     .map((name) => ({ name, path: join(config.corpusDir, name) }))
@@ -390,6 +404,17 @@ export function parseHcf(config: HcfParseConfig): {
         const decision: LicenseDecision = decideLicense(effectiveBlock);
         if (!decision.allow) {
           bumpReason(stats.blocksDropped, `license:${decision.reason}`);
+          if (stats.licenseDroppedSamples.length < MAX_LICENSE_SAMPLES) {
+            stats.licenseDroppedSamples.push({
+              author: dirName,
+              book: bookSlug,
+              chapter: location.chapterStart,
+              verse: location.verseStart,
+              source_title: effectiveBlock.source_title,
+              source_url: effectiveBlock.source_url,
+              reason: decision.reason,
+            });
+          }
           continue;
         }
 

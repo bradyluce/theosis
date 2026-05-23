@@ -26,22 +26,29 @@ export type HcfAuthorMapping = {
 // HCF dir name matches our preferred long form already (e.g. "Theophylact
 // of Ohrid" -> "theophylact-of-ohrid"), we still map it explicitly so the
 // person record uses the slug rather than the auto-prefixed hcf-* form.
+//
+// Existing-Theosis IDs were harvested from PERSON_ID constants and
+// personId literals across scripts/ingest/commentary/parse-*.ts. The goal
+// is "if it already has a canonical Theosis ID, surface HCF entries under
+// that same ID so the library Person card aggregates everything."
 export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Ambrose of Milan": { personId: "ambrose-of-milan", canonicalName: "Ambrose of Milan" },
+  "Anselm of Canterbury": { personId: "anselm-canterbury", canonicalName: "Anselm of Canterbury" },
   "Aphrahat the Persian Sage": { personId: "aphrahat", canonicalName: "Aphrahat" },
   "Aristides of Athens": { personId: "aristides-of-athens", canonicalName: "Aristides of Athens" },
   "Athanasius of Alexandria": { personId: "athanasius-the-great", canonicalName: "Athanasius the Great" },
   "Athenagoras of Athens": { personId: "athenagoras-of-athens", canonicalName: "Athenagoras of Athens" },
   "Augustine of Hippo": { personId: "augustine", canonicalName: "Augustine of Hippo" },
   "Basil of Caesarea": { personId: "basil-the-great", canonicalName: "Basil the Great" },
+  "Bede": { personId: "bede", canonicalName: "Venerable Bede" },
   "Clement of Alexandria": { personId: "clement-of-alexandria", canonicalName: "Clement of Alexandria" },
   "Clement of Rome": { personId: "clement-of-rome", canonicalName: "Clement of Rome" },
   "Cyprian": { personId: "cyprian-of-carthage", canonicalName: "Cyprian of Carthage" },
   "Cyril of Alexandria": { personId: "cyril-of-alexandria", canonicalName: "Cyril of Alexandria" },
   "Cyril of Jerusalem": { personId: "cyril-of-jerusalem", canonicalName: "Cyril of Jerusalem" },
-  "Dionysius of Alexandria": { personId: "hcf-dionysius-of-alexandria", canonicalName: "Dionysius of Alexandria" },
   "Ephrem the Syrian": { personId: "ephraim-the-syrian", canonicalName: "Ephraim the Syrian" },
-  "Eusebius of Caesarea": { personId: "hcf-eusebius-of-caesarea", canonicalName: "Eusebius of Caesarea" },
+  "Eusebius of Caesarea": { personId: "eusebius-caesarea", canonicalName: "Eusebius of Caesarea" },
+  "Glossa Ordinaria": { personId: "gloss-ordinaria", canonicalName: "Glossa Ordinaria" },
   "Gregory of Nazianzus": { personId: "gregory-of-nazianzus", canonicalName: "Gregory the Theologian" },
   "Gregory of Nyssa": { personId: "gregory-of-nyssa", canonicalName: "Gregory of Nyssa" },
   "Gregory of Neocaesarea": { personId: "gregory-thaumaturgus", canonicalName: "Gregory the Wonderworker" },
@@ -50,11 +57,13 @@ export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Hippolytus of Rome": { personId: "hippolytus-of-rome", canonicalName: "Hippolytus of Rome" },
   "Ignatius of Antioch": { personId: "ignatius-of-antioch", canonicalName: "Ignatius of Antioch" },
   "Irenaeus": { personId: "irenaeus-of-lyons", canonicalName: "Irenaeus of Lyons" },
+  "Isidore of Seville": { personId: "isidore-seville", canonicalName: "Isidore of Seville" },
   "Jerome": { personId: "jerome", canonicalName: "Jerome" },
   "John Chrysostom": { personId: "john-chrysostom", canonicalName: "John Chrysostom" },
   "John Damascene": { personId: "john-of-damascus", canonicalName: "John of Damascus" },
   "Justin Martyr": { personId: "justin-martyr", canonicalName: "Justin Martyr" },
   "Lucius Caecilius Firmianus Lactantius": { personId: "lactantius", canonicalName: "Lactantius" },
+  "Leo the Great": { personId: "leo-the-great", canonicalName: "Leo the Great" },
   "Macarius of Egypt": { personId: "macarius-the-egyptian", canonicalName: "Macarius the Egyptian" },
   "Marcus Minucius Felix": { personId: "minucius-felix", canonicalName: "Minucius Felix" },
   "Mathetes": { personId: "mathetes", canonicalName: "Mathetes" },
@@ -62,12 +71,20 @@ export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Methodius of Olympus": { personId: "methodius-of-olympus", canonicalName: "Methodius of Olympus" },
   "Origen of Alexandria": { personId: "origen", canonicalName: "Origen" },
   "Papias of Hierapolis": { personId: "papias-of-hierapolis", canonicalName: "Papias of Hierapolis" },
+  "Peter Chrysologus": { personId: "peter-chrysologus", canonicalName: "Peter Chrysologus" },
   "Polycarp of Smyrna": { personId: "polycarp-of-smyrna", canonicalName: "Polycarp of Smyrna" },
+  "Pseudo-Athanasius": { personId: "pseudo-athanasius", canonicalName: "Pseudo-Athanasius" },
+  "Pseudo-Chrysostom": { personId: "pseudo-chrysostom", canonicalName: "Pseudo-Chrysostom" },
+  "Pseudo-Dionysius the Areopagite": { personId: "pseudo-dionysius", canonicalName: "Pseudo-Dionysius the Areopagite" },
+  "Pseudo-Jerome": { personId: "pseudo-jerome", canonicalName: "Pseudo-Jerome" },
+  "Rabanus Maurus": { personId: "rabanus-maurus", canonicalName: "Rabanus Maurus" },
   "Tatian the Assyrian": { personId: "tatian-the-syrian", canonicalName: "Tatian the Syrian" },
-  "Tertullian": { personId: "hcf-tertullian", canonicalName: "Tertullian" },
+  "Tertullian": { personId: "tertullian", canonicalName: "Tertullian" },
   "Theodoret of Cyrus": { personId: "theodoret-of-cyrrhus", canonicalName: "Theodoret of Cyrus" },
-  "Theophilus of Antioch": { personId: "hcf-theophilus-of-antioch", canonicalName: "Theophilus of Antioch" },
+  "Theodotus of Ancyra": { personId: "theodotus-ancyra", canonicalName: "Theodotus of Ancyra" },
+  "Theophilus of Antioch": { personId: "theophilus-of-antioch", canonicalName: "Theophilus of Antioch" },
   "Theophylact of Ohrid": { personId: "theophylact-of-ohrid", canonicalName: "Theophylact of Ohrid" },
+  "Thomas Aquinas": { personId: "thomas-aquinas", canonicalName: "Thomas Aquinas" },
 };
 
 // Top-level HCF dirs that are Bible-book cross-references rather than

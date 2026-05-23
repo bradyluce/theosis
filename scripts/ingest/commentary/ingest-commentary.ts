@@ -1723,9 +1723,36 @@ function main() {
       `${JSON.stringify(hcf, null, 2)}\n`,
       "utf8",
     );
-    console.log(
-      `[hcf] ${stats.entriesEmitted} entries from ${hcf.people.length} authors (${stats.filesParsed} TOML files; ${stats.blocksScanned - stats.entriesEmitted / Math.max(1, stats.entriesEmitted / stats.blocksScanned)} dropped).`,
+
+    // Persist the license-drop audit so the user can review which sources
+    // were filtered and selectively whitelist hosts/titles via
+    // hcf/license-filter.ts. Keys are reason -> count, plus the sample list.
+    const dropCountsByReason: Record<string, number> = {};
+    for (const [reason, count] of stats.blocksDropped.entries()) {
+      dropCountsByReason[reason] = count;
+    }
+    // Audit files live under _reports/ so normalize-commentary doesn't
+    // pick them up as bundles when it scans OUTPUT_DIRECTORY.
+    const REPORTS_DIR = join(OUTPUT_DIRECTORY, "_reports");
+    mkdirSync(REPORTS_DIR, { recursive: true });
+    writeFileSync(
+      join(REPORTS_DIR, "hcf-license-dropped.json"),
+      `${JSON.stringify(
+        {
+          totals: dropCountsByReason,
+          samples: stats.licenseDroppedSamples,
+        },
+        null,
+        2,
+      )}\n`,
+      "utf8",
     );
+
+    console.log(
+      `[hcf] ${stats.entriesEmitted} entries from ${hcf.people.length} authors (${stats.filesParsed} TOML files).`,
+    );
+    const dropTotal = [...stats.blocksDropped.values()].reduce((a, b) => a + b, 0);
+    console.log(`[hcf] dropped ${dropTotal} blocks; see hcf-license-dropped.json.`);
   } else {
     console.log(
       `[hcf] corpus not found at ${hcfCorpusDir} — skipping. Run "npm run ingest:commentary:hcf:clone" to enable.`,

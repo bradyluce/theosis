@@ -290,14 +290,17 @@ function main() {
     dedupMerges += report.duplicatesMerged;
   }
 
-  // Persist a report so behavior is auditable across runs.
+  // Persist a report so behavior is auditable across runs. Reports live
+  // in a sibling _reports/ subdir so the main GENERATED_DIR contains only
+  // commentary bundles (every *.json in GENERATED_DIR is read back as a
+  // bundle on the next run).
   const dedupReport = {
     entriesIn: dedupEntriesIn,
     entriesOut: dedupEntriesOut,
     duplicatesMerged: dedupMerges,
     samples: dedupSamples,
   };
-  writeJsonFile(join(GENERATED_DIR, "dedup-report.json"), dedupReport);
+  writeJsonFile(join(GENERATED_DIR, "_reports", "dedup-report.json"), dedupReport);
   console.log(
     `[normalize-commentary] dedup: in=${dedupEntriesIn} out=${dedupEntriesOut} merged=${dedupMerges}`,
   );
@@ -306,6 +309,11 @@ function main() {
   // to match the loader's loadChapterCommentary post-sort.
   const byVerseIndex: Record<string, Record<string, number[]>> = {};
   let verseFilesWritten = 0;
+  // Soft-warn threshold — if a per-verse file balloons past this, surface
+  // so we know to start sharding. 200 entries is generous; current
+  // corpora produce much smaller files.
+  const SOFT_WARN_ENTRIES = 200;
+  let oversizedFileWarnings = 0;
   for (const [location, entries] of byVerseBuckets) {
     const [bookSlug, chapterStr, verseStr] = location.split(".");
     const chapterNumber = Number.parseInt(chapterStr ?? "", 10);
@@ -318,6 +326,15 @@ function main() {
     }
 
     entries.sort((a, b) => b.rank - a.rank);
+
+    if (entries.length > SOFT_WARN_ENTRIES) {
+      oversizedFileWarnings++;
+      if (oversizedFileWarnings <= 5) {
+        console.warn(
+          `[normalize-commentary] verse file ${location} has ${entries.length} entries (>${SOFT_WARN_ENTRIES}); consider sharding.`,
+        );
+      }
+    }
 
     const filePath = join(
       COMMENTARY_DIR,
@@ -338,6 +355,11 @@ function main() {
     for (const verses of Object.values(chapters)) {
       verses.sort((a, b) => a - b);
     }
+  }
+  if (oversizedFileWarnings > 5) {
+    console.warn(
+      `[normalize-commentary] ... and ${oversizedFileWarnings - 5} more oversized verse files (total ${oversizedFileWarnings}).`,
+    );
   }
 
   // Write commentary/by-chapter files.
