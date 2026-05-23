@@ -294,7 +294,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["isidore-of-pelusium", "isidore-of-peleusium", "isidore-pelusiota"],
     {
-      personId: "isidore-pelusium",
+      personId: "isidore-of-pelusium",
       displayName: "Isidore of Pelusium",
       honorific: "St.",
       eraLabel: "4th–5th century",
@@ -487,7 +487,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["clement", "clement-of-alexandria", "clement-of-alexendria"],
     {
-      personId: "clement-alexandria",
+      personId: "clement-of-alexandria",
       displayName: "Clement of Alexandria",
       honorific: "",
       eraLabel: "2nd–3rd century",
@@ -589,7 +589,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["theodotus"],
     {
-      personId: "theodotus-ancyra",
+      personId: "theodotus-of-ancyra",
       displayName: "Theodotus of Ancyra",
       honorific: "",
       eraLabel: "5th century",

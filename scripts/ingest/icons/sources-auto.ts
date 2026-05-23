@@ -71,7 +71,7 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   },
   {
     "id": "icon-isidore-pelusium",
-    "personId": "isidore-pelusium",
+    "personId": "isidore-of-pelusium",
     "wikimediaTitle": "File:Isidore of Pelusium.jpg",
     "alt": "Orthodox icon of Isidore of Pelusium.",
     "caption": "Isidore of Pelusium"
@@ -113,7 +113,7 @@ export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   },
   {
     "id": "icon-theodotus-ancyra",
-    "personId": "theodotus-ancyra",
+    "personId": "theodotus-of-ancyra",
     "wikimediaTitle": "File:Teodot Ankirski.jpg",
     "alt": "Orthodox icon of Theodotus of Ancyra.",
     "caption": "Theodotus of Ancyra"

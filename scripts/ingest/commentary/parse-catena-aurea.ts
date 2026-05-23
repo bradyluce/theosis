@@ -225,7 +225,7 @@ const AUTHORS: [string[], AuthorInfo][] = [
   [
     ["theodotus"],
     {
-      personId: "theodotus-ancyra",
+      personId: "theodotus-of-ancyra",
       displayName: "Theodotus of Ancyra",
       honorific: "",
       eraLabel: "5th century",

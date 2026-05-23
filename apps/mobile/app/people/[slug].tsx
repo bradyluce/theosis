@@ -1,5 +1,7 @@
+import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
+import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router, useLocalSearchParams } from "expo-router";
 import { useMemo } from "react";
 import {
@@ -12,22 +14,29 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { Pill } from "@/components/theosis/pill";
-import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
+import {
+  Card,
+  Eyebrow,
+  GiltRule,
+  SectionHeader,
+} from "@/components/theosis/primitives";
+import {
+  colors,
+  elevation,
+  fonts,
+  radii,
+  spacing,
+  text,
+} from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 
-// Person detail screen — stack route pushed from the Library tab when a
-// row is tapped. Shows the saint/father's icon, name, kind, era, traditions
-// (as pills), and extendedSummary (split into paragraphs).
+// Person detail — the saint's library entry. Composed like a magazine
+// profile: edge-bleed portrait, dramatic italic name overlay, then an
+// editorial body with life, traditions, feast day, and works.
 //
-// Today this re-uses the /api/library/people response (cached from the
-// Library list) and finds the requested person by slug. That avoids a
-// second fetch for instant transitions, at the cost of "the full list
-// must have loaded first." If you deep-link directly to a person without
-// hitting Library first, React Query will trigger the list fetch on
-// mount; it's just one extra round-trip.
-//
-// Works grid is a follow-up — needs a per-person works endpoint.
+// Re-uses /api/library/people (cached) so transitions from the Library
+// list are instant. If you deep-link directly, the list fetch triggers
+// on mount.
 
 export default function PersonDetailScreen() {
   const params = useLocalSearchParams<{ slug: string }>();
@@ -40,8 +49,6 @@ export default function PersonDetailScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  // Library catalog gives us the full Work[] alongside Person[] so we can
-  // show this person's works without an extra round-trip.
   const libraryQuery = useQuery({
     queryKey: ["library-catalog"],
     queryFn: () => api.fetchLibraryCatalog(),
@@ -55,15 +62,28 @@ export default function PersonDetailScreen() {
 
   const works = useMemo(() => {
     if (!person || !libraryQuery.data) return [];
+    // Only surface works that have long-form chapters. Commentary-only
+    // "works" (HCF source titles that never landed a chapter body) are
+    // still useful for commentary attribution but shouldn't show up in
+    // a person's bibliography — they'd render as dead-end cards.
+    const byWork = libraryQuery.data.index?.byWork;
     return libraryQuery.data.works
-      .filter((w) => w.personId === person.id)
+      .filter((w) => w.personId === person.id && byWork?.[w.id] != null)
       .sort((a, b) => a.title.localeCompare(b.title));
   }, [person, libraryQuery.data]);
 
   const bioParagraphs = useMemo(() => {
     if (!person?.extendedSummary) return [];
-    return person.extendedSummary.split("\n\n").filter((p) => p.trim().length > 0);
+    return person.extendedSummary
+      .split("\n\n")
+      .filter((p) => p.trim().length > 0);
   }, [person?.extendedSummary]);
+
+  const displayName = person
+    ? person.honorific
+      ? `${person.honorific} ${person.name.split(",")[0]}`
+      : person.name.split(",")[0]
+    : "";
 
   return (
     <>
@@ -75,9 +95,20 @@ export default function PersonDetailScreen() {
           headerStyle: { backgroundColor: colors.background },
           headerTintColor: colors.accent,
           headerShadowVisible: false,
+          headerTransparent: true,
         }}
       />
-      <SafeAreaView style={styles.safe} edges={["bottom"]}>
+      <View style={styles.root}>
+        <LinearGradient
+          colors={[
+            "rgba(212, 168, 87, 0.10)",
+            "transparent",
+            colors.background,
+          ]}
+          locations={[0, 0.4, 1]}
+          style={StyleSheet.absoluteFill}
+          pointerEvents="none"
+        />
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}
@@ -90,104 +121,170 @@ export default function PersonDetailScreen() {
           ) : null}
 
           {!peopleQuery.isLoading && !person ? (
-            <View style={styles.emptyCard}>
-              <Text style={text.eyebrow}>Not found</Text>
-              <Text style={text.body}>
+            <View style={styles.notFound}>
+              <Eyebrow tone="oxblood">Not found</Eyebrow>
+              <Text style={styles.notFoundTitle}>No library entry</Text>
+              <Text style={styles.notFoundBody}>
                 We don&apos;t have an entry for &ldquo;{slug}&rdquo; yet.
               </Text>
               <Pressable
                 onPress={() => router.back()}
-                style={({ pressed }) => [pressed && { opacity: 0.6 }]}
+                style={({ pressed }) => [
+                  styles.backCta,
+                  pressed && { opacity: 0.7 },
+                ]}
+                accessibilityRole="button"
               >
-                <Text style={styles.backLink}>← Back to Library</Text>
+                <Feather name="arrow-left" size={14} color={colors.accent} />
+                <Text style={styles.backCtaLabel}>Back to Library</Text>
               </Pressable>
             </View>
           ) : null}
 
           {person ? (
             <>
-              {person.icon ? (
-                <View style={styles.iconWrap}>
+              {/* Editorial portrait — edge-bleed icon with gradient overlay
+                  + the saint's name laid over the bottom in italic
+                  display. Reads like a magazine profile cover. */}
+              <View style={[styles.portrait, elevation.giltGlow]}>
+                {person.icon ? (
                   <Image
                     source={{ uri: person.icon.src }}
-                    style={styles.iconImage}
-                    contentFit="contain"
-                    transition={200}
+                    style={styles.portraitImage}
+                    contentFit="cover"
+                    transition={240}
                     accessibilityLabel={person.icon.alt}
                   />
+                ) : (
+                  <View style={styles.portraitFallback}>
+                    <Text style={styles.portraitFallbackLetter}>
+                      {person.name.charAt(0)}
+                    </Text>
+                  </View>
+                )}
+                <LinearGradient
+                  colors={[
+                    "rgba(10, 9, 8, 0.05)",
+                    "rgba(10, 9, 8, 0.55)",
+                    "rgba(10, 9, 8, 0.95)",
+                  ]}
+                  locations={[0.3, 0.65, 1]}
+                  style={StyleSheet.absoluteFill}
+                  pointerEvents="none"
+                />
+                <View style={styles.portraitOverlay}>
+                  <Eyebrow tone="oxblood">{person.kind}</Eyebrow>
+                  <Text style={styles.portraitName}>{displayName}</Text>
+                  <Text style={styles.portraitEra}>{person.eraLabel}</Text>
                 </View>
-              ) : null}
-
-              <View style={styles.titleBlock}>
-                <Text style={styles.eyebrow}>{person.kind}</Text>
-                <Text style={styles.name}>
-                  {person.honorific ? `${person.honorific} ` : ""}
-                  {person.name}
-                </Text>
-                <Text style={styles.era}>{person.eraLabel}</Text>
               </View>
 
+              {/* Lede — short summary in serif body */}
               {person.summary ? (
-                <Text style={styles.summary}>{person.summary}</Text>
-              ) : null}
-
-              {person.traditions.length > 0 ? (
-                <View style={styles.pillRow}>
-                  {person.traditions.map((tradition) => (
-                    <Pill key={tradition} variant="subtle">
-                      {tradition}
-                    </Pill>
-                  ))}
+                <View style={styles.lede}>
+                  <Text style={styles.ledeText}>{person.summary}</Text>
+                  <GiltRule style={{ marginTop: spacing.lg }} />
                 </View>
               ) : null}
 
-              {person.feastDayLabel ? (
-                <View style={styles.factBlock}>
-                  <Text style={styles.factLabel}>Feast day</Text>
-                  <Text style={styles.factValue}>{person.feastDayLabel}</Text>
+              {/* Quick facts row — feast day + traditions */}
+              {(person.feastDayLabel || person.traditions.length > 0) ? (
+                <View style={styles.factsRow}>
+                  {person.feastDayLabel ? (
+                    <View style={styles.factTile}>
+                      <Eyebrow tone="accent">Feast Day</Eyebrow>
+                      <Text style={styles.factValue}>
+                        {person.feastDayLabel}
+                      </Text>
+                    </View>
+                  ) : null}
+                  {person.traditions.length > 0 ? (
+                    <View style={[styles.factTile, { flex: 1.4 }]}>
+                      <Eyebrow tone="accent">Tradition</Eyebrow>
+                      <View style={styles.traditionRow}>
+                        {person.traditions.map((tradition) => (
+                          <Text key={tradition} style={styles.traditionChip}>
+                            {tradition}
+                          </Text>
+                        ))}
+                      </View>
+                    </View>
+                  ) : null}
                 </View>
               ) : null}
 
+              {/* Life — bio paragraphs as editorial body */}
               {bioParagraphs.length > 0 ? (
-                <View style={styles.bioBlock}>
-                  <Text style={styles.factLabel}>Life</Text>
-                  {bioParagraphs.map((paragraph, index) => (
-                    <Text key={index} style={styles.bioParagraph}>
-                      {paragraph}
-                    </Text>
-                  ))}
+                <View style={styles.cardSlot}>
+                  <Card>
+                    <SectionHeader eyebrow="Synaxis" title="The Life" rule />
+                    <View style={styles.bioParagraphs}>
+                      {bioParagraphs.map((paragraph, index) => (
+                        <Text key={index} style={styles.bioParagraph}>
+                          {paragraph}
+                        </Text>
+                      ))}
+                    </View>
+                  </Card>
                 </View>
               ) : null}
 
-              {works.length > 0 ? (
-                <View style={styles.worksBlock}>
-                  <Text style={styles.factLabel}>
-                    Works in the library
-                  </Text>
-                  {works.map((work) => (
-                    <Pressable
-                      key={work.id}
-                      onPress={() => router.push(`/works/${work.slug}`)}
-                      style={({ pressed }) => [
-                        styles.workRow,
-                        pressed && styles.workRowPressed,
-                      ]}
-                      accessibilityRole="button"
-                      accessibilityLabel={`Open ${work.title}`}
-                    >
-                      <View style={styles.workMeta}>
-                        <Pill variant="subtle">{work.workType}</Pill>
-                        <Text style={styles.workLength}>
-                          {work.lengthLabel}
+              {/* Works — grouped by type, italic titles */}
+              {worksByType.length > 0 ? (
+                <View style={styles.worksSection}>
+                  <SectionHeader
+                    eyebrow="Bibliography"
+                    title="Works in the library"
+                    rule
+                  />
+                  {worksByType.map(([typeKey, list]) => (
+                    <View key={typeKey} style={styles.workGroup}>
+                      <View style={styles.workGroupHeader}>
+                        <Text style={styles.workGroupLabel}>
+                          {typeKey.charAt(0).toUpperCase() + typeKey.slice(1)}
+                        </Text>
+                        <Text style={styles.workGroupCount}>
+                          {list.length}
                         </Text>
                       </View>
-                      <Text style={styles.workTitle}>{work.title}</Text>
-                      {work.summary ? (
-                        <Text style={styles.workSummary} numberOfLines={3}>
-                          {work.summary}
-                        </Text>
-                      ) : null}
-                    </Pressable>
+                      {list.map((work, idx) => (
+                        <Pressable
+                          key={work.id}
+                          onPress={() => router.push(`/works/${work.slug}`)}
+                          style={({ pressed }) => [
+                            styles.workRow,
+                            pressed && { opacity: 0.6 },
+                          ]}
+                          accessibilityRole="button"
+                          accessibilityLabel={`Open ${work.title}`}
+                        >
+                          <Text style={styles.workIndex}>
+                            {String(idx + 1).padStart(2, "0")}
+                          </Text>
+                          <View style={styles.workText}>
+                            <Text style={styles.workTitle} numberOfLines={2}>
+                              {work.title}
+                            </Text>
+                            {work.summary ? (
+                              <Text
+                                style={styles.workSummary}
+                                numberOfLines={2}
+                              >
+                                {work.summary}
+                              </Text>
+                            ) : null}
+                            <Text style={styles.workMeta}>
+                              {work.lengthLabel}
+                            </Text>
+                          </View>
+                          <Feather
+                            name="chevron-right"
+                            size={14}
+                            color={colors.inkSoft}
+                          />
+                        </Pressable>
+                      ))}
+                    </View>
                   ))}
                 </View>
               ) : null}
@@ -200,165 +297,257 @@ export default function PersonDetailScreen() {
             </>
           ) : null}
         </ScrollView>
-      </SafeAreaView>
+      </View>
     </>
   );
 }
 
+const PORTRAIT_HEIGHT = 460;
+
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.background },
+  root: { flex: 1, backgroundColor: colors.background },
   scroll: { flex: 1 },
   scrollContent: {
-    paddingHorizontal: spacing.lg,
-    paddingTop: spacing.md,
-    paddingBottom: spacing["4xl"],
-    gap: spacing.lg,
+    paddingBottom: spacing["4xl"] + spacing["2xl"],
   },
 
-  loading: { paddingVertical: spacing["4xl"], alignItems: "center" },
-  emptyCard: {
-    paddingVertical: spacing["3xl"],
-    paddingHorizontal: spacing.lg,
-    gap: spacing.md,
-  },
-  backLink: {
-    fontSize: 14,
-    color: colors.accent,
-    fontWeight: "600",
-    paddingTop: spacing.sm,
-  },
-
-  iconWrap: { alignItems: "center", paddingTop: spacing.md },
-  iconImage: {
-    width: 220,
-    height: 280,
-    borderRadius: radii.large,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
-  },
-
-  titleBlock: {
-    gap: spacing.xs,
+  loading: {
+    paddingVertical: spacing["6xl"],
     alignItems: "center",
   },
-  eyebrow: {
-    fontSize: 10.4,
-    fontWeight: "500",
-    color: colors.inkSoft,
-    letterSpacing: 2.4,
+
+  notFound: {
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing["6xl"],
+    gap: spacing.sm,
+    alignItems: "flex-start",
+  },
+  notFoundTitle: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 36,
+    color: colors.ink,
+    letterSpacing: -0.5,
+    lineHeight: 40,
+    marginTop: spacing.sm,
+  },
+  notFoundBody: {
+    fontFamily: fonts.serif,
+    fontSize: 15,
+    color: colors.inkMuted,
+    lineHeight: 24,
+    marginBottom: spacing.lg,
+  },
+  backCta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: 1,
+    borderColor: colors.lineGilt,
+  },
+  backCtaLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.6,
     textTransform: "uppercase",
   },
-  name: {
-    fontFamily: fonts.serif,
-    fontSize: 30,
-    color: colors.ink,
-    letterSpacing: -0.4,
-    lineHeight: 36,
-    textAlign: "center",
-  },
-  era: {
-    fontFamily: fonts.serif,
-    fontSize: 14,
-    color: colors.inkMuted,
-    fontStyle: "italic",
-  },
 
-  summary: {
-    fontSize: 15,
-    lineHeight: 25,
-    color: colors.inkMuted,
-    textAlign: "center",
+  // Edge-bleed portrait
+  portrait: {
+    height: PORTRAIT_HEIGHT,
+    width: "100%",
+    overflow: "hidden",
+    borderBottomLeftRadius: radii.xl,
+    borderBottomRightRadius: radii.xl,
   },
-
-  pillRow: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: spacing.xs,
+  portraitImage: { width: "100%", height: "100%" },
+  portraitFallback: {
+    width: "100%",
+    height: "100%",
+    backgroundColor: colors.surfaceStrong,
+    alignItems: "center",
     justifyContent: "center",
   },
+  portraitFallbackLetter: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 140,
+    color: colors.accent,
+  },
+  portraitOverlay: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: spacing.xl,
+    paddingBottom: spacing.xl,
+    gap: spacing.xs,
+  },
+  portraitName: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 40,
+    color: colors.ink,
+    letterSpacing: -0.6,
+    lineHeight: 44,
+    marginTop: spacing.xs,
+  },
+  portraitEra: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 14,
+    color: colors.inkMuted,
+  },
 
-  factBlock: {
+  // Lede
+  lede: {
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.xl,
+    paddingBottom: spacing.sm,
+  },
+  ledeText: {
+    fontFamily: fonts.serif,
+    fontSize: 17,
+    lineHeight: 28,
+    color: colors.ink,
+  },
+
+  // Quick facts
+  factsRow: {
+    flexDirection: "row",
+    gap: spacing.sm,
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.md,
+  },
+  factTile: {
+    flex: 1,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.md,
     borderRadius: radii.card,
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: colors.line,
     backgroundColor: colors.surface,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
     gap: spacing.xs,
-  },
-  factLabel: {
-    fontSize: 10.4,
-    fontWeight: "500",
-    color: colors.inkSoft,
-    letterSpacing: 2.4,
-    textTransform: "uppercase",
   },
   factValue: {
     fontFamily: fonts.serif,
-    fontSize: 18,
+    fontSize: 17,
     color: colors.ink,
+    letterSpacing: -0.2,
+    lineHeight: 22,
+  },
+  traditionRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 4,
+  },
+  traditionChip: {
+    fontFamily: fonts.serif,
+    fontSize: 14,
+    color: colors.ink,
+    letterSpacing: -0.1,
+    lineHeight: 20,
   },
 
-  bioBlock: {
-    borderRadius: radii.card,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.lg,
+  // Bio
+  bioParagraphs: {
+    marginTop: spacing.md,
     gap: spacing.md,
   },
   bioParagraph: {
-    fontSize: 15,
-    lineHeight: 26,
+    fontFamily: fonts.serif,
+    fontSize: 16,
+    lineHeight: 28,
     color: colors.inkMuted,
   },
 
-  attribution: {
-    fontSize: 11,
-    color: colors.inkSoft,
-    textAlign: "center",
-    fontStyle: "italic",
-    paddingTop: spacing.md,
+  // Card placement — Cards have their own padding so wrap them in
+  // padding on the parent.
+  worksSection: {
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.lg,
+    gap: spacing.lg,
   },
-
-  worksBlock: {
-    gap: spacing.md,
-  },
-  workRow: {
-    borderRadius: radii.card,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
-    gap: spacing.sm,
-  },
-  workRowPressed: {
-    backgroundColor: colors.surfaceStrong,
-  },
-  workMeta: {
+  workGroup: { gap: spacing.xs },
+  workGroupHeader: {
     flexDirection: "row",
     alignItems: "center",
-    gap: spacing.sm,
+    justifyContent: "space-between",
+    paddingBottom: spacing.sm,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.lineGilt,
   },
-  workLength: {
+  workGroupLabel: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 20,
+    color: colors.ink,
+    letterSpacing: -0.3,
+    textTransform: "capitalize",
+  },
+  workGroupCount: {
+    fontFamily: fonts.sans,
     fontSize: 11,
-    color: colors.inkSoft,
-    letterSpacing: 1.4,
-    textTransform: "uppercase",
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.6,
   },
+  workRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: spacing.md,
+    paddingVertical: spacing.md,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.line,
+  },
+  workIndex: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 22,
+    color: colors.accent,
+    letterSpacing: -0.5,
+    opacity: 0.85,
+    width: 32,
+    paddingTop: 2,
+  },
+  workText: { flex: 1, gap: 4 },
   workTitle: {
-    fontFamily: fonts.serif,
-    fontSize: 18,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 17,
     color: colors.ink,
     letterSpacing: -0.2,
     lineHeight: 22,
   },
   workSummary: {
+    fontFamily: fonts.serif,
     fontSize: 13,
     lineHeight: 20,
     color: colors.inkMuted,
+  },
+  workMeta: {
+    fontFamily: fonts.sans,
+    fontSize: 10.5,
+    fontWeight: "700",
+    color: colors.inkSoft,
+    letterSpacing: 1.6,
+    textTransform: "uppercase",
+    marginTop: 2,
+  },
+
+  // Cards used by Card primitive — wrap in horizontal padding so they
+  // align with the rest of the editorial body (the portrait above
+  // deliberately bleeds edge-to-edge, but the cards should not).
+  cardSlot: {
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.lg,
+  },
+
+  attribution: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 11,
+    color: colors.inkSoft,
+    textAlign: "center",
+    paddingTop: spacing.lg,
+    paddingHorizontal: spacing.xl,
   },
 });

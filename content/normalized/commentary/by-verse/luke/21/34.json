@@ -212,7 +212,7 @@
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.34",
       "topicSlugs": [],
-      "personId": "clement-alexandria",
+      "personId": "clement-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 21:34–36",
       "excerpt": "Drunkenness is an excessive use of wine; crapula1 is the uneasiness, and nausea attendant on drunkenness, a Greek word so called from the motion of the head. And a little below. As then we must partake of food lest we suffer hunger, so also of drink lest we thirst, but with still greater care to avoid falling into excess. For the indulgence of wine is deceitful, and the soul when free from wine will be the wisest and best, but steeped in the fumes of wine is lost as in a cloud.",
@@ -223,6 +223,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:clement-of-alexandria:luke.21.34:c530f29f:0"
       ]
     },
     {
@@ -281,24 +288,6 @@
       "tags": [
         "hcf",
         "c735"
-      ],
-      "targetVerseId": "kjva:luke.21.34"
-    },
-    {
-      "id": "hcf:clement-of-alexandria:luke.21.34:c530f29f:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "clement-of-alexandria",
-      "workId": "hcf:work:clement-of-alexandria:catena-aurea-by-aquinas",
-      "title": "Catena Aurea by Aquinas on luke 21:34",
-      "excerpt": "(Clem. Al. lib. ii. Pædag. c. 2.) Drunkenness is an excessive use of wine; crapula is the uneasiness, and nausea attendant on drunkenness, a Greek word so called from the motion of the head. And a little below. As then we must partake of food lest we suffer hunger, so also of drink lest we thirst, but with still greater care to avoid falling into excess. For the indulgence of wine is deceitful, and the soul when free from wine will be the wisest and best, but steeped in the fumes of wine is lost as in a cloud.",
-      "takeaway": "",
-      "sourceId": "hcf:source:historicalchristian-faith",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c215",
-        "secondary-quote"
       ],
       "targetVerseId": "kjva:luke.21.34"
     },

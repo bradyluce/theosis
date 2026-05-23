@@ -374,6 +374,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:didymus-blind:john.16.12:0ec49b8b:0"
       ]
     },
     {
@@ -833,24 +840,6 @@
       "tags": [
         "hcf",
         "c444"
-      ],
-      "targetVerseId": "kjva:john.16.12"
-    },
-    {
-      "id": "hcf:hcf-didymus-the-blind:john.16.12:0ec49b8b:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-didymus-the-blind",
-      "workId": "hcf:work:hcf-didymus-the-blind:catena-aurea-by-aquinas",
-      "title": "Catena Aurea by Aquinas on john 16:12",
-      "excerpt": "(Didym. de Sp. Sanct. ii. ult med. inter opera Hieron.) Or He means that His hearers had not yet attained to all those things which for His name's sake they were able to bear: so revealing lesser things, He puts off the greater for a future time, such things as they could not understand till the Cross itself of their crucified Head had been their instruction. As yet they were slaves to the types, and shadows, and images of the Law, and could not bear the truth of which the Law was the shadow. But when the Holy Ghost came, He would lead them by His teaching and discipline into all truth, transferring them from the dead letter to the quickening Spirit, in Whom alone all Scripture truth resides.",
-      "takeaway": "",
-      "sourceId": "hcf:source:historicalchristian-faith",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c398",
-        "secondary-quote"
       ],
       "targetVerseId": "kjva:john.16.12"
     },
