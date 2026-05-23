@@ -82,6 +82,8 @@ import { parseSchmemannForTheLifeOfTheWorld } from "./parse-schmemann-for-the-li
 import { parsePhilokalia } from "./parse-philokalia";
 import { parsePorphyriosWoundedByLove } from "./parse-porphyrios-wounded-by-love";
 import { parseRoseReligionOfTheFuture } from "./parse-rose-religion-of-the-future";
+import { parseKronstadtMyLifeInChrist } from "./parse-kronstadt-my-life-in-christ";
+import { parseWareTheOrthodoxWay } from "./parse-ware-the-orthodox-way";
 
 // When running from a git worktree (.claude/worktrees/<name>), the main repo
 // root is 3 levels up. Identify by presence of the content/raw directory,
@@ -1701,6 +1703,38 @@ function main() {
   );
   console.log(
     `[rose-religion-of-the-future] ${roseReligion.chapters?.length ?? 0} chapters, ${roseReligion.chapters?.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0) ?? 0} paragraphs (OCR-derived).`,
+  );
+
+  // ── St. John of Kronstadt — My Life in Christ (Goulaeff 1897, CCEL) ──────
+  const kronstadt = parseKronstadtMyLifeInChrist({
+    rawDir: join(LIBRARY_DIRECTORY, "kronstadt-my-life-in-christ"),
+  });
+  if (!kronstadt.chapters || kronstadt.chapters.length === 0) {
+    throw new Error("[kronstadt-my-life-in-christ] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "kronstadt-my-life-in-christ.json"),
+    `${JSON.stringify(kronstadt, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[kronstadt-my-life-in-christ] ${kronstadt.chapters.length} parts, ${kronstadt.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
+  );
+
+  // ── Metropolitan Kallistos Ware — The Orthodox Way (1979 ed.) ────────────
+  const ware = parseWareTheOrthodoxWay({
+    rawDir: join(LIBRARY_DIRECTORY, "ware-the-orthodox-way"),
+  });
+  if (!ware.chapters || ware.chapters.length === 0) {
+    throw new Error("[ware-the-orthodox-way] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "ware-the-orthodox-way.json"),
+    `${JSON.stringify(ware, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `[ware-the-orthodox-way] ${ware.chapters.length} chapters, ${ware.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
   );
 }
 

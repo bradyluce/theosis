@@ -158,7 +158,10 @@ async function runSurvey(): Promise<void> {
   console.log(`\n[done] Wrote survey to ${surveyPath}`);
 }
 
-runSurvey().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// IMPORTANT: do NOT add an auto-run line here. This file is import-only.
+// To run the bulk survey across content/acquisition/, invoke survey-all.ts.
+// To extract a single book by slug, invoke extract-one.ts <slug>.
+// (A previous auto-run gate triggered re-extraction during library-module
+//  imports, which destroyed the OCR-derived extracted.txt for the two
+//  scanned PDFs whose text layer is empty.)
+export { runSurvey };

@@ -1203,6 +1203,30 @@
       ]
     },
     {
+      "id": "john-of-kronstadt",
+      "slug": "john-of-kronstadt",
+      "name": "St. John of Kronstadt",
+      "honorific": "St.",
+      "kind": "father",
+      "eraLabel": "19th century (1829–1908)",
+      "summary": "Russian Orthodox priest of the Imperial period, serving for fifty-three years at St. Andrew's Cathedral on the island of Kronstadt outside St. Petersburg. Known throughout the late Russian Empire as a wonder-worker and confessor; his published spiritual diary My Life in Christ became the most-read Russian devotional book of the late nineteenth and early twentieth century. Glorified by the Russian Orthodox Church Outside Russia in 1964 and by the Moscow Patriarchate in 1990.",
+      "traditions": [
+        "Eastern Orthodox",
+        "Russian Orthodox"
+      ],
+      "topicSlugs": [
+        "modern-spirituality",
+        "russian-orthodox-tradition",
+        "spiritual-counsel",
+        "prayer"
+      ],
+      "featuredWorkIds": [
+        "kronstadt-my-life-in-christ"
+      ],
+      "feastDayLabel": "December 20 (and June 1, glorification)",
+      "iconId": "icon-john-of-kronstadt"
+    },
+    {
       "id": "julius-africanus",
       "slug": "julius-africanus",
       "name": "Julius Africanus",
@@ -1246,6 +1270,28 @@
         "justin-discourse-greeks"
       ],
       "feastDayLabel": "June 1"
+    },
+    {
+      "id": "kallistos-ware",
+      "slug": "kallistos-ware",
+      "name": "Metropolitan Kallistos (Ware) of Diokleia",
+      "honorific": "Met.",
+      "kind": "theologian",
+      "eraLabel": "20th–21st century (1934–2022)",
+      "summary": "English-born Oxford theologian who entered the Orthodox Church under the Greek Archdiocese of Thyateira in 1958, was tonsured a monk of the Patmos Monastery of St. John the Theologian in 1966, and served as Spalding Lecturer in Eastern Orthodox Studies at Oxford from 1966 until his retirement in 2001. Consecrated titular Bishop of Diokleia in 1982; raised to Metropolitan in 2007. His two introductory books — The Orthodox Church and The Orthodox Way — together formed the single most influential English-language introduction to Orthodoxy in the second half of the twentieth century.",
+      "traditions": [
+        "Eastern Orthodox",
+        "Ecumenical Patriarchate"
+      ],
+      "topicSlugs": [
+        "modern-spirituality",
+        "patristics",
+        "catechesis",
+        "byzantine-tradition"
+      ],
+      "featuredWorkIds": [
+        "ware-the-orthodox-way"
+      ]
     },
     {
       "id": "lactantius",
@@ -6948,6 +6994,26 @@
       "verseRefs": []
     },
     {
+      "id": "kronstadt-my-life-in-christ",
+      "slug": "kronstadt-my-life-in-christ",
+      "personId": "john-of-kronstadt",
+      "title": "My Life in Christ, or Moments of Spiritual Serenity and Contemplation",
+      "shortTitle": "My Life in Christ",
+      "workType": "treatise",
+      "lengthLabel": "long",
+      "eraLabel": "1856–1907 (Russian edition published in installments)",
+      "summary": "A vast spiritual diary kept over fifty years by St. John of Kronstadt — a sequence of short numbered entries on prayer, the Liturgy, the priesthood, the sacraments, repentance, the inward life, and the encounter with God. Published in installments in Russian beginning in 1893 and reaching final form in two great parts (Part I and Part II), and almost immediately translated into English, French, and other European languages. The single most influential nineteenth-century work of Russian Orthodox lay devotion.",
+      "topicSlugs": [
+        "prayer",
+        "modern-spirituality",
+        "lay-spirituality",
+        "russian-orthodox-tradition",
+        "spiritual-counsel"
+      ],
+      "sourceId": "kronstadt-my-life-in-christ-source",
+      "verseRefs": []
+    },
+    {
       "id": "lactantius-anger-of-god",
       "slug": "lactantius-anger-of-god",
       "personId": "lactantius",
@@ -9653,6 +9719,26 @@
       "summary": "The treatise that contains the Vincentian Canon — \"what has been believed everywhere, always, by all\" — Vincent's compact rule for distinguishing Catholic tradition from novelty, written from the abbey of Lérins.",
       "topicSlugs": [],
       "sourceId": "vincent-commonitory-source",
+      "verseRefs": []
+    },
+    {
+      "id": "ware-the-orthodox-way",
+      "slug": "ware-the-orthodox-way",
+      "personId": "kallistos-ware",
+      "title": "The Orthodox Way",
+      "shortTitle": "The Orthodox Way",
+      "workType": "treatise",
+      "lengthLabel": "medium",
+      "eraLabel": "1979 (rev. 1995)",
+      "summary": "A five-chapter introduction to the Orthodox Christian faith, structured as a tour of the encounter with God — God as Mystery, as Trinity, as Creator, as Man, and as Spirit. Each chapter weaves together patristic citations, contemporary illustration, and quotations from Orthodox liturgical hymnography. Written for the seeker as much as the catechumen.",
+      "topicSlugs": [
+        "catechesis",
+        "modern-spirituality",
+        "trinitarian-theology",
+        "christology",
+        "patristics"
+      ],
+      "sourceId": "ware-the-orthodox-way-source",
       "verseRefs": []
     },
     {
@@ -12530,6 +12616,15 @@
       "isSeeded": false
     },
     {
+      "id": "kronstadt-my-life-in-christ-source",
+      "label": "My Life in Christ — Goulaeff translation (CCEL public-domain edition)",
+      "collection": "Theosis library acquisitions",
+      "sourceType": "pdf",
+      "url": "https://www.ccel.org/ccel/k/kronstadt",
+      "note": "Original Russian text by St. John of Kronstadt, 1856-1907. English translation by E.E. Goulaeff (London, 1897). Both the original and this English translation are in the public domain. PDF transcribed from the Christian Classics Ethereal Library (CCEL.org) edition.",
+      "isSeeded": false
+    },
+    {
       "id": "lactantius-anger-of-god-source",
       "label": "A Treatise on the Anger of God — Ante-Nicene Fathers, Vol. 7 (Roberts/Donaldson/Coxe eds., 1886)",
       "collection": "New Advent (newadvent.org/fathers)",
@@ -13652,6 +13747,15 @@
       "sourceType": "web-collection",
       "url": "https://www.newadvent.org/fathers/3506.htm",
       "note": "Translated by C.A. Heurtley. From Nicene and Post-Nicene Fathers, Second Series, Vol. 11, edited by Philip Schaff and Henry Wace (Buffalo, NY: Christian Literature Publishing Co., 1894). Revised and edited for New Advent by Kevin Knight. Translation public domain; transcription © New Advent LLC.",
+      "isSeeded": false
+    },
+    {
+      "id": "ware-the-orthodox-way-source",
+      "label": "The Orthodox Way — Kallistos Ware (Theosis library acquisition)",
+      "collection": "Theosis library acquisitions",
+      "sourceType": "pdf",
+      "url": "",
+      "note": "Edition transcribed from a PDF in the Theosis acquisitions corpus. The PDF preserves the original 1979 five-chapter edition (Mystery · Trinity · Creator · Man · Spirit) rather than the revised 1995 edition. Chapter 5 is OCR-rendered as 'CHAPTER S' in the heading line; the parser normalizes that. See content/raw/library/ware-the-orthodox-way/PROVENANCE.json for the editorial provenance record.",
       "isSeeded": false
     },
     {
@@ -20890,6 +20994,17 @@
           1
         ]
       },
+      "kronstadt-my-life-in-christ": {
+        "chapterCount": 2,
+        "chapterIds": [
+          "kronstadt-my-life-in-christ-part-1",
+          "kronstadt-my-life-in-christ-part-2"
+        ],
+        "orders": [
+          1,
+          2
+        ]
+      },
       "lactantius-divine-institutes": {
         "chapterCount": 7,
         "chapterIds": [
@@ -24438,6 +24553,23 @@
           78,
           79,
           80
+        ]
+      },
+      "ware-the-orthodox-way": {
+        "chapterCount": 5,
+        "chapterIds": [
+          "ware-the-orthodox-way-chapter-1",
+          "ware-the-orthodox-way-chapter-2",
+          "ware-the-orthodox-way-chapter-3",
+          "ware-the-orthodox-way-chapter-4",
+          "ware-the-orthodox-way-chapter-5"
+        ],
+        "orders": [
+          1,
+          2,
+          3,
+          4,
+          5
         ]
       },
       "way-of-a-pilgrim": {
