@@ -42,7 +42,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "gregory-the-great",
-      "workId": "hcf:work:gregory-the-great:register-of-epistles-book",
+      "workId": "hcf:work:gregory-the-great:register-of-epistles",
       "title": "Register of Epistles, Book 9, Epistle CVI on proverbs 3:9",
       "excerpt": "That we should not, then, try to get anything with sin under pretence of almsgiving we are plainly warned by Holy Scripture, which says, \"The sacrifices of the impious are abominable which are offered of wickedness.\" For whatever in God's sacrifice is offered of wickedness appeases not, but provokes, the anger of Almighty God. Hence again it is written, \"Honour the Lord from thy just labours.\" Whoso, then, takes evilly that he may, as he supposes, give well, it is evident without doubt that he honours not the Lord. Hence also it is said through Solomon, \"Whoso offers a sacrifice of the substance of the poor is as though he slew a son in his father's sight.\" Now let us consider how great is a father's grief if his son be killed in his sight: and hence we easily understand how much God is grieved when a sacrifice is given Him out of pillage.",
       "takeaway": "",
@@ -69,24 +69,14 @@
         "hcf",
         "c435"
       ],
-      "targetVerseId": "kjva:proverbs.3.9"
-    },
-    {
-      "id": "hcf:hcf-john-cassian:proverbs.3.9:6c0e442b:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-john-cassian",
-      "workId": "hcf:work:hcf-john-cassian:conference",
-      "title": "CONFERENCE 21:2 on proverbs 3:9",
-      "excerpt": "\"Honor the Lord from your righteous labors, and offer to him the fruits of your righteousness; that your barns may be full of an abundance of wheat, and your vats may overflow with wine.\" Know that as you are faithfully carrying out this service, you have fulfilled the righteousness of the old law, under which those who then lived if they transgressed it inevitably incurred guilt, while if they fulfilled it they could not attain to the height of perfection.",
-      "takeaway": "",
-      "sourceId": "hcf:source:conference-21-2",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c435"
+      "targetVerseId": "kjva:proverbs.3.9",
+      "provenance": [
+        "hcf:source:conference-21-22",
+        "hcf:source:conference-21-2"
       ],
-      "targetVerseId": "kjva:proverbs.3.9"
+      "alternateIds": [
+        "hcf:hcf-john-cassian:proverbs.3.9:6c0e442b:0"
+      ]
     },
     {
       "id": "hcf:hcf-salvian-the-presbyter:proverbs.3.9:63f17e40:0",

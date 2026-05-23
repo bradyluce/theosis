@@ -54,7 +54,7 @@ Commentary is indexed against one translation (usually `kjva`) but `verseLocatio
 
 ### Routing
 
-App Router with one route group `(shell)` wrapping Daily/Bible/Library/Search/Profile under `AppShell` (`src/components/layout/app-shell.tsx` — bottom nav on mobile, side rail on desktop). `/` redirects to `/bible`. Most pages are server components; `BibleReaderExperience`, `LibraryExplorer`, `SaintsBrowser`, and profile pickers are `"use client"`.
+App Router with one route group `(shell)` wrapping Home/Daily/Bible/Library/Search/Profile under `AppShell` (`src/components/layout/app-shell.tsx` — bottom nav on mobile, side rail on desktop). `/` redirects to `/home`. Most pages are server components; `BibleReaderExperience`, `LibraryExplorer`, `SaintsBrowser`, and profile pickers are `"use client"`.
 
 ### Client state
 

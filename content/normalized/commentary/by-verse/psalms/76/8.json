@@ -8,7 +8,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 76 on psalms 76:8",
       "excerpt": "\"From Heaven You have hurled judgment: the earth has trembled, and has rested\" [Psalm 76:8]. She which now does trouble herself, she which now speaks, has to fear at the end and to rest. Better had she now rested, that at the end she might have rejoiced. Rested? When? \"When God arose unto judgment, that He might save all the meek in heart\" [Psalm 76:9].",
       "takeaway": "",
@@ -35,24 +35,14 @@
         "hcf",
         "c585"
       ],
-      "targetVerseId": "kjva:psalms.76.8"
-    },
-    {
-      "id": "hcf:hcf-cassiodorus:psalms.76.8:7f8f4023:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-cassiodorus",
-      "workId": "hcf:work:hcf-cassiodorus:expositions-of-the-psalms",
-      "title": "EXPOSITIONS OF THE PSALMS 75:9 on psalms 76:8",
-      "excerpt": "\"He has hurled judgment from heaven; the earth trembled and grew quiet.\" Here that very power of judgment is explained, because from that height of power judgment descends in such a way as if it had been a javelin sent by a very strong and unerring hand. But a lance of that kind brings about a temporal ill, but God's judgment will wound the ungodly with an eternal blow. Next come the words \"The earth trembled and grew quiet.\" Here (as often has been mentioned) the earth means the stout and most noxious sinners, who must be condemned by the authority of God's verdict. They will tremble when they hear, \"Go into the eternal fire.\" They will grow quiet when they are received into everlasting damnation. But that sort of quiet is without any rest, for they will make their evil works grow quiet, but they will not be quiet amid their punishment, inasmuch as they must be tortured with the eternal flame.",
-      "takeaway": "",
-      "sourceId": "hcf:source:expositions-of-the-psalms-75-9",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c585"
+      "targetVerseId": "kjva:psalms.76.8",
+      "provenance": [
+        "hcf:source:expositions-of-the-psalms-75-10",
+        "hcf:source:expositions-of-the-psalms-75-9"
       ],
-      "targetVerseId": "kjva:psalms.76.8"
+      "alternateIds": [
+        "hcf:hcf-cassiodorus:psalms.76.8:7f8f4023:0"
+      ]
     },
     {
       "id": "hcf:theodoret-of-cyrrhus:psalms.76.8:51cebd94:0",

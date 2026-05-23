@@ -499,24 +499,14 @@
         "hcf",
         "c420"
       ],
-      "targetVerseId": "kjva:matthew.24.23"
-    },
-    {
-      "id": "hcf:jerome:matthew.24.23:f56b987a:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "hcf:work:jerome:commentary-on-matthew",
-      "title": "Commentary on Matthew on matthew 24:23",
-      "excerpt": "(Verse 23.) Then if anyone says to you, 'Look, here is the Christ!' or 'There!' do not believe it. Many leaders arose during the time of the Jewish captivity who claimed to be the Christ, to the extent that there were three factions inside the besieged Romans. But the end of the world is better understood.",
-      "takeaway": "",
-      "sourceId": "hcf:source:historicalchristian-faith",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c420"
+      "targetVerseId": "kjva:matthew.24.23",
+      "provenance": [
+        "hcf:source:commentary-on-matthew-4-24-23-26",
+        "hcf:source:historicalchristian-faith"
       ],
-      "targetVerseId": "kjva:matthew.24.23"
+      "alternateIds": [
+        "hcf:jerome:matthew.24.23:f56b987a:1"
+      ]
     },
     {
       "id": "hcf:hcf-apostolic-constitutions:matthew.24.23:e85209e6:0",

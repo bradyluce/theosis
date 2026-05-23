@@ -25,7 +25,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
-      "workId": "hcf:work:ambrose-of-milan:interrogation-of-job-and-david-book",
+      "workId": "hcf:work:ambrose-of-milan:interrogation-of-job-and-david",
       "title": "Interrogation of Job and David, Book 2, 1.4 on song-of-solomon 2:12",
       "excerpt": "He is a fine deer, whose mountain is the house of God, to which he runs with such speed that he surpasses the wishes and desires of his bride. Indeed, when he saw him coming from afar, he suddenly recognized that he was present beside him. Hence he says: Behold, he is here behind our wall, looking through the windows, peering through the lattice. My cousin answered and said to me: Arise, come, my nearest one, my beautiful one, my dove; for behold, winter has passed, the rain has gone, it has departed for itself, flowers have appeared on the earth. Winter is the Synagogue: the rain is the Jewish people, who could not see the sun: the apostles are the flowers. And he added: The harvest of the incision has come, the voice of the turtledove was heard in our land. That harvest is the faith of the Church: the voice of the turtledove is chastity.",
       "takeaway": "",
@@ -69,24 +69,14 @@
         "hcf",
         "c444"
       ],
-      "targetVerseId": "kjva:song-of-solomon.2.12"
-    },
-    {
-      "id": "hcf:cyril-of-alexandria:song-of-solomon.2.12:1b993bed:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke",
-      "title": "COMMENTARY ON LUKE, HOMILY 95 on song-of-solomon 2:12",
-      "excerpt": "Also in the Song of Songs we find Christ calling to the bride there described, and who represents the person of the church, in these words: \"Arise, come, my neighbor, my beautiful dove. For lo! the winter is past, and the rain is gone; it has passed away. The flowers appear on the ground. The time of the pruning is come.\" … A certain spring-like calm was about to arise for those who believe in him.",
-      "takeaway": "",
-      "sourceId": "hcf:source:commentary-on-luke-homily-95",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c444"
+      "targetVerseId": "kjva:song-of-solomon.2.12",
+      "provenance": [
+        "hcf:source:commentary-on-luke-homily-3",
+        "hcf:source:commentary-on-luke-homily-95"
       ],
-      "targetVerseId": "kjva:song-of-solomon.2.12"
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:song-of-solomon.2.12:1b993bed:0"
+      ]
     },
     {
       "id": "hcf:hcf-gregory-of-elvira:song-of-solomon.2.12:26c0fb13:0",

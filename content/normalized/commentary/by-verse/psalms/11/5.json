@@ -8,7 +8,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 11 on psalms 11:5",
       "excerpt": "\"The Lord questions the righteous and ungodly\" [Psalm 11:5]. Why then do we fear lest the ungodly should be any hurt to us, if so be they do with insincere heart share the sacraments with us, seeing that He \"questions the righteous and the ungodly.\" \"But whoso loves iniquity, hates his own soul:\" that is, not him who believes God, and puts not his hope in man, but only his own soul does the lover of iniquity hurt.",
       "takeaway": "",
@@ -35,24 +35,14 @@
         "hcf",
         "c542"
       ],
-      "targetVerseId": "kjva:psalms.11.5"
-    },
-    {
-      "id": "hcf:hcf-caesarius-of-arles:psalms.11.5:e6634c41:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-caesarius-of-arles",
-      "workId": "hcf:work:hcf-caesarius-of-arles:sermons",
-      "title": "SERMONS 145:1 on psalms 11:5",
-      "excerpt": "If, then, you hate your own soul by loving iniquity, do you wonder that you hate the Word of God, which wishes well to your soul?",
-      "takeaway": "",
-      "sourceId": "hcf:source:sermons-145-1",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c542"
+      "targetVerseId": "kjva:psalms.11.5",
+      "provenance": [
+        "hcf:source:sermon-227-5",
+        "hcf:source:sermons-145-1"
       ],
-      "targetVerseId": "kjva:psalms.11.5"
+      "alternateIds": [
+        "hcf:hcf-caesarius-of-arles:psalms.11.5:e6634c41:1"
+      ]
     },
     {
       "id": "hcf:hcf-evagrius-ponticus:psalms.11.5:c500b589:0",

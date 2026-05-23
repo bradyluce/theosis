@@ -42,7 +42,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "gregory-the-great",
-      "workId": "hcf:work:gregory-the-great:morals-on-the-book-of-job-book",
+      "workId": "hcf:work:gregory-the-great:morals-on-the-book-of-job",
       "title": "Morals on the Book of Job, Book 18, Section 32 on isaiah 55:13",
       "excerpt": "Of the abatement of this heat it is said to her by Isaiah, by promise of the Lord, \"Instead of the ground willow shall come up the fir-tree, and instead of the nettle shall come up the myrtle tree.\" For 'instead of the ground willow there comes up in her the fir-tree,' when in the heart of the Saints, instead of the sunkenness of earthly thought, the elevation of heavenly contemplation rises up. Now the nettle is altogether of a fiery nature. But the myrtle is said to be of cooling virtue, and therefore 'instead of the nettle there comes up the myrtle tree,' when the minds of the righteous are brought from the irritation and heat of bad habits to coolness and quietness of the thoughts, while they now no longer seek earthly things, while they extinguish the flames of the flesh by heavenly aspirations.",
       "takeaway": "",
@@ -69,24 +69,14 @@
         "hcf",
         "c420"
       ],
-      "targetVerseId": "kjva:isaiah.55.13"
-    },
-    {
-      "id": "hcf:jerome:isaiah.55.13:fb5c6155:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "hcf:work:jerome:commentary-on-isaiah",
-      "title": "COMMENTARY ON ISAIAH 15:17 on isaiah 55:13",
-      "excerpt": "Thus when it is said in the Gospel, \"A good tree cannot bring forth bad fruit,\" in no way does this refer to the property of nature, as the heretics maintain, but to the will of the mind.… From this it is clear that each by his own will can make his soul a good or bad tree, which produced different fruit.",
-      "takeaway": "",
-      "sourceId": "hcf:source:commentary-on-isaiah-15-17",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c420"
+      "targetVerseId": "kjva:isaiah.55.13",
+      "provenance": [
+        "hcf:source:historicalchristian-faith",
+        "hcf:source:commentary-on-isaiah-15-17"
       ],
-      "targetVerseId": "kjva:isaiah.55.13"
+      "alternateIds": [
+        "hcf:jerome:isaiah.55.13:fb5c6155:0"
+      ]
     },
     {
       "id": "hcf:theodoret-of-cyrrhus:isaiah.55.13:95eae523:0",

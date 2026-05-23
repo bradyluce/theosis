@@ -396,7 +396,14 @@
         "hcf",
         "c220"
       ],
-      "targetVerseId": "kjva:john.21.18"
+      "targetVerseId": "kjva:john.21.18",
+      "provenance": [
+        "hcf:source:newadvent-org",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:tertullian:john.21.18:ac3878fa:0"
+      ]
     },
     {
       "id": "hcf:tertullian:john.21.18:78fc9de2:0",
@@ -408,23 +415,6 @@
       "excerpt": "Since, moreover, you are close upon Italy, you have Rome, from which there comes even into our own hands the very authority (of apostles themselves). How happy is its church, on which apostles poured forth all their doctrine along with their blood! Where Peter endures a passion like his Lord's!",
       "takeaway": "",
       "sourceId": "hcf:source:newadvent-org",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c220"
-      ],
-      "targetVerseId": "kjva:john.21.18"
-    },
-    {
-      "id": "hcf:tertullian:john.21.18:ac3878fa:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "tertullian",
-      "workId": "hcf:work:tertullian:scorpiace",
-      "title": "Scorpiace on john 21:18",
-      "excerpt": "We read the lives of the Caesars: At Rome Nero was the first who stained with blood the rising faith. Then is Peter girt by another, when he is made fast to the cross.",
-      "takeaway": "",
-      "sourceId": "hcf:source:historicalchristian-faith",
       "rank": 60,
       "tags": [
         "hcf",

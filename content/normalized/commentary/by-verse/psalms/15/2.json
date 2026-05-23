@@ -42,7 +42,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 15 on psalms 15:2",
       "excerpt": "\"He who walks without stain, and works righteousness\" [Psalm 15:2]. Here he has laid down the proposition; in what follows he sets it forth in detail.",
       "takeaway": "",
@@ -59,7 +59,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "hcf-benedict-of-nursia",
-      "workId": "hcf:work:hcf-benedict-of-nursia:rule-of-st-benedict-prologue",
+      "workId": "hcf:work:hcf-benedict-of-nursia:rule-of-st-benedict",
       "title": "RULE OF ST. BENEDICT, PROLOGUE on psalms 15:2",
       "excerpt": "Brothers, let us hear the Lord's answer to the question, an answer that shows the way to the heavenly tabernacle.… He who drives the tempter and his temptations far from his heart, defeats his malice and dashes his rising thoughts against the Rock Christ. He who fears the Lord without growing proud of his virtue and humbly acknowledges that what is good in him does not proceed from himself. He who gives God his due and with the prophet blesses the work of God in himself: \"Not to us, O Lord, not to us, but to your name give the glory.\" The apostle Paul found nothing of his own to boast of in his preaching: \"By the grace of God [says he] I am what I am,\" and again, \"He who glories, let him glory in the Lord.\"",
       "takeaway": "",
@@ -86,24 +86,14 @@
         "hcf",
         "c585"
       ],
-      "targetVerseId": "kjva:psalms.15.2"
-    },
-    {
-      "id": "hcf:hcf-cassiodorus:psalms.15.2:380ca47b:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-cassiodorus",
-      "workId": "hcf:work:hcf-cassiodorus:explanation-of-the-psalms",
-      "title": "EXPLANATION OF THE PSALMS 15:2 on psalms 15:2",
-      "excerpt": "The Lord Christ … entered the temple in Jerusalem free from all sin. For while others entered the house of God for purification, he alone entered in such a state that he might stand before the face of the Father without sin. He did not do this that the law might grant him something, but so that he, as the best legislator, might bestow something on the law by fulfilling it.",
-      "takeaway": "",
-      "sourceId": "hcf:source:explanation-of-the-psalms-15-2",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c585"
+      "targetVerseId": "kjva:psalms.15.2",
+      "provenance": [
+        "hcf:source:explanation-of-the-psalms-15-3",
+        "hcf:source:explanation-of-the-psalms-15-2"
       ],
-      "targetVerseId": "kjva:psalms.15.2"
+      "alternateIds": [
+        "hcf:hcf-cassiodorus:psalms.15.2:380ca47b:0"
+      ]
     },
     {
       "id": "hcf:jerome:psalms.15.2:2f2d098a:0",

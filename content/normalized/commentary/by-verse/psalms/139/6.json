@@ -8,7 +8,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 139 on psalms 139:6",
       "excerpt": "\"Thy skill hath displayed itself wonderfully in me: it hath waxed mighty: I shall not be able to attain unto it\" (ver. 6). Listen now and hear somewhat, which is obscure indeed, yet bringeth no small pleasure in the understanding thereon. Moses, the holy servant of God, with whom God spake by a cloud, for, speaking after human fashion, He must needs speak to His servant through some work of His hands which He assumed, ...longed and desired to see the true appearance of God, and said to God, who was conversing with him, \"If now I have found grace in Thy sight, show me Thyself.\" When this he desired vehemently, and would extort from God in that sort of friendly familiarity, if we may so speak, wherewith God deigned to treat him, that he might see His Glory and His Face, in such wise as we can speak of God's Face, He said unto him, \"Thou canst not see My Face; for no one hath seen My Face, and lived;\" but I will place thee in a clift of the rock, and will pass by, and will set My hand upon thee; and when I have passed by, thou shalt see My back parts. And from these words there ariseth another enigma, that is, an obscure figure of the truth. \"When I have passed by,\" saith God, \"thou shalt see My back parts;\" as though He hath on one side His face, on another His back. Far be it from us to have any such thoughts of that Majesty! For whoso hath such thoughts of God, what advantageth it him that the temples are closed? He is building an idol in his own heart. In these words then are mighty mysteries. ...They who raged against the Lord, whom they saw, now seek counsel how they may be saved; and it is said to them, \"Repent, and be baptized every one of you in the Name of Jesus Christ, and your sins shall be forgiven you.\" Behold, they saw the back parts of Him, whose face they could not see. For His Hand was upon their eyes, not for ever, but while He passed by. After He had passed He took away His Hand from their eyes. When the hand was taken from their eyes, they say to the disciples, \"What shall we do?\" At first they are fierce, afterwards loving; at first angry, afterwards fearful; at first hard, then pleasant; at first blind, then enlightened. ...",
       "takeaway": "",
@@ -52,24 +52,14 @@
         "hcf",
         "c379"
       ],
-      "targetVerseId": "kjva:psalms.139.6"
-    },
-    {
-      "id": "hcf:basil-the-great:psalms.139.6:7d2386e9:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "hcf:work:basil-the-great:homilies",
-      "title": "HOMILY ON THE WORDS 'GIVE HEED TO THYSELF.' on psalms 139:6",
-      "excerpt": "And so, when you have gone over all these points with suitable reflections on each, when you have, in addition, studied the process of breathing, the manner in which the heart conserves its warmth, the organs of digestion and the veins, you will discern in all of these wonders the inscrutable wisdom of the Creator; so that you will be able to say with the prophet: \"Your knowledge is become wonderful\" from the study of myself. \"Give heed, therefore, to yourself,\" that you may give heed to God, to whom be glory and power forever and ever. Amen.",
-      "takeaway": "",
-      "sourceId": "hcf:source:homily-on-the-words-give-heed-to-thyself",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c379"
+      "targetVerseId": "kjva:psalms.139.6",
+      "provenance": [
+        "hcf:source:homilies-on-the-hexaemeron-9-6",
+        "hcf:source:homily-on-the-words-give-heed-to-thyself"
       ],
-      "targetVerseId": "kjva:psalms.139.6"
+      "alternateIds": [
+        "hcf:basil-the-great:psalms.139.6:7d2386e9:0"
+      ]
     },
     {
       "id": "hcf:john-chrysostom:psalms.139.6:c64a269c:0",
@@ -103,24 +93,14 @@
         "hcf",
         "c458"
       ],
-      "targetVerseId": "kjva:psalms.139.6"
-    },
-    {
-      "id": "hcf:theodoret-of-cyrrhus:psalms.139.6:d9633bcd:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "theodoret-of-cyrrhus",
-      "workId": "hcf:work:theodoret-of-cyrrhus:discourses",
-      "title": "DISCOURSE 4:4 on psalms 139:6",
-      "excerpt": "And so loud is their proclamation that the whole human race hears their voice, \"There are no speeches or utterances where their voices are not heard.\" For every race and every tongue hears the proclamations of day and night. Tongue differs from tongue, but nature is one and derives the same lesson from day and night. Thus the same author, singing the praises of the Creator in another psalm, says, \"Your knowledge was wonderful to me; I was overwhelmed, and I could not reach to it.\"",
-      "takeaway": "",
-      "sourceId": "hcf:source:discourse-4-4",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c458"
+      "targetVerseId": "kjva:psalms.139.6",
+      "provenance": [
+        "hcf:source:discourse-1-39",
+        "hcf:source:discourse-4-4"
       ],
-      "targetVerseId": "kjva:psalms.139.6"
+      "alternateIds": [
+        "hcf:theodoret-of-cyrrhus:psalms.139.6:d9633bcd:1"
+      ]
     }
   ]
 }

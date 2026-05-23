@@ -42,7 +42,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:explanations-of-the-psalms",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "EXPLANATIONS OF THE PSALMS 103:19-21 on isaiah 40:6",
       "excerpt": "Wonder not that you will be a sharer of [Christ's] eternity. For he first became a sharer of your flesh, which is like grass. Will he who assumed from you what was lowly deny to you what is exalted with respect to you?… How great, then, is the hope of the grass since the Word has been made flesh? He who abides forever has not disdained to assume grass, that the grass might not despair of itself.",
       "takeaway": "",
@@ -86,24 +86,14 @@
         "hcf",
         "c379"
       ],
-      "targetVerseId": "kjva:isaiah.40.6"
-    },
-    {
-      "id": "hcf:basil-the-great:isaiah.40.6:562546a3:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "hcf:work:basil-the-great:homilies",
-      "title": "HOMILIES ON THE HEXAMERON 5:2 on isaiah 40:6",
-      "excerpt": "I want the marvel of creation to gain such complete acceptance from you that, wherever you may be found and whatever kind of plants you may chance on, you may receive a clear reminder of the Creator. First, then, whenever you see a grassy plant or a flower, think of human nature, remembering the comparison of the wise Isaiah, that \"all flesh is as grass, and all the glory of humanity as the flower of the grass.\" For the short span of life and the briefly enduring pleasure and joy of human happiness have found a most apt comparison in the words of the prophet. Today he is vigorous in body, grown fleshy from delicacies, with a flowerlike complexion, in the prime of life, fresh and eager, and irresistible in attack. Tomorrow that same one is piteous or wasted with age or weakened by disease.",
-      "takeaway": "",
-      "sourceId": "hcf:source:homilies-on-the-hexameron-5-2",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c379"
+      "targetVerseId": "kjva:isaiah.40.6",
+      "provenance": [
+        "hcf:source:homilies-on-the-psalms-13-3-psalm-28",
+        "hcf:source:homilies-on-the-hexameron-5-2"
       ],
-      "targetVerseId": "kjva:isaiah.40.6"
+      "alternateIds": [
+        "hcf:basil-the-great:isaiah.40.6:562546a3:1"
+      ]
     },
     {
       "id": "hcf:bede:isaiah.40.6:f720bb46:0",
@@ -171,24 +161,14 @@
         "hcf",
         "c420"
       ],
-      "targetVerseId": "kjva:isaiah.40.6"
-    },
-    {
-      "id": "hcf:jerome:isaiah.40.6:e516361a:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "hcf:work:jerome:commentary-on-isaiah",
-      "title": "COMMENTARY ON ISAIAH 11:23 on isaiah 40:6",
-      "excerpt": "Indeed, if anyone regards how weak the flesh is, that we wax and wane with the minutes of the clock and that we do not remain in the same state … there can be no doubt that flesh is rightly called \"grass\" and its glory like the flower of the grass or the rushes of the fields. The one who was once an infant is suddenly a boy; the boy is suddenly a youth and up to old age is changed through stages. A beautiful woman who carries a train of young men behind her becomes wrinkled, her brow all furrowed; she who before was fit for love is afterwards fit for loathing.… But the one who has and guards the image of the heavenly, such humanity discerns the Lord's salvation, is renewed daily in knowledge after the image of the Creator and puts on an incorruptible and immortal body; it changes its glory but not its nature.",
-      "takeaway": "",
-      "sourceId": "hcf:source:commentary-on-isaiah-11-23",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c420"
+      "targetVerseId": "kjva:isaiah.40.6",
+      "provenance": [
+        "hcf:source:historicalchristian-faith",
+        "hcf:source:commentary-on-isaiah-11-23"
       ],
-      "targetVerseId": "kjva:isaiah.40.6"
+      "alternateIds": [
+        "hcf:jerome:isaiah.40.6:e516361a:1"
+      ]
     },
     {
       "id": "hcf:jerome:isaiah.40.6:84c24ee1:0",

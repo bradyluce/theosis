@@ -52,24 +52,14 @@
         "hcf",
         "c534"
       ],
-      "targetVerseId": "kjva:exodus.12.2"
-    },
-    {
-      "id": "hcf:hcf-pseudo-macarius:exodus.12.2:e0875178:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-pseudo-macarius",
-      "workId": "hcf:work:hcf-pseudo-macarius:homilies",
-      "title": "HOMILY 47.3 on exodus 12:2",
-      "excerpt": "After having inflicted the Egyptians with many plagues, he led them out of Egypt in the month of flowers, when the most pleasant spring appears and the sadness of winter passes away.",
-      "takeaway": "",
-      "sourceId": "hcf:source:homily-47-3",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c534"
+      "targetVerseId": "kjva:exodus.12.2",
+      "provenance": [
+        "hcf:source:homily-5-9",
+        "hcf:source:homily-47-3"
       ],
-      "targetVerseId": "kjva:exodus.12.2"
+      "alternateIds": [
+        "hcf:hcf-pseudo-macarius:exodus.12.2:e0875178:0"
+      ]
     }
   ]
 }

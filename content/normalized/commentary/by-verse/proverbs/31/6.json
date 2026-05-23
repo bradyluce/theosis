@@ -69,24 +69,14 @@
         "hcf",
         "c407"
       ],
-      "targetVerseId": "kjva:proverbs.31.6"
-    },
-    {
-      "id": "hcf:john-chrysostom:proverbs.31.6:df6f8dba:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "hcf:work:john-chrysostom:homilies",
-      "title": "HOMILIES ON GENESIS 29:6 on proverbs 31:6",
-      "excerpt": "\"Let people in distress have wine and those in pain strong drink,\" which shows that nothing can prove such a good remedy for depression as recourse to this, aside from the fact that in some cases intemperance undermines the benefit coming from it.",
-      "takeaway": "",
-      "sourceId": "hcf:source:homilies-on-genesis-29-6",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c407"
+      "targetVerseId": "kjva:proverbs.31.6",
+      "provenance": [
+        "hcf:source:homilies-on-ephesians-19-5-17",
+        "hcf:source:homilies-on-genesis-29-6"
       ],
-      "targetVerseId": "kjva:proverbs.31.6"
+      "alternateIds": [
+        "hcf:john-chrysostom:proverbs.31.6:df6f8dba:0"
+      ]
     }
   ]
 }

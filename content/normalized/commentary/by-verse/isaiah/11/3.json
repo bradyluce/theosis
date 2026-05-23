@@ -212,7 +212,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "gregory-the-great",
-      "workId": "hcf:work:gregory-the-great:morals-on-the-book-of-job-book",
+      "workId": "hcf:work:gregory-the-great:morals-on-the-book-of-job",
       "title": "Morals on the Book of Job, Book 1, Section 27 on isaiah 11:3",
       "excerpt": "For there are seven sons born to us, when by the conception of good intent the seven virtues of the holy Spirit spring up in us. Thus the Prophet particularizes this inward offspring, when the Spirit renders the mind fruitful, in these words: \"And the Spirit of the Lord shall rest upon Him, the spirit of wisdom and understanding, the spirit of counsel and might, the spirit of knowledge and piety, and the spirit of the fear of the Lord shall fill him.\" So when by the coming of the Holy Spirit there is engendered in each of us, wisdom, understanding, counsel, might, knowledge, piety, and the fear of the Lord, something like a lasting posterity is begotten in the mind, which preserves the stock of our nobility that is above unto life, for so much the longer as it allies it with the love of eternity.",
       "takeaway": "",
@@ -290,24 +290,14 @@
         "hcf",
         "c258"
       ],
-      "targetVerseId": "kjva:isaiah.11.3"
-    },
-    {
-      "id": "hcf:hcf-novatian:isaiah.11.3:8bb85c6b:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-novatian",
-      "workId": "hcf:work:hcf-novatian:on-the-trinity",
-      "title": "ON THE TRINITY 29:11 on isaiah 11:3",
-      "excerpt": "In Christ alone he dwells fully and entirely, not lacking in any measure or part; but in all his overflowing abundance dispensed and sent forth, so that other men might receive from Christ a first outpouring, as it were, of his graces. For the fountainhead of the entire Holy Spirit abides in Christ, that from him might be drawn streams of grace and wondrous deeds because the Holy Spirit dwells richly in Christ.",
-      "takeaway": "",
-      "sourceId": "hcf:source:on-the-trinity-29-11",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c258"
+      "targetVerseId": "kjva:isaiah.11.3",
+      "provenance": [
+        "hcf:source:on-the-trinity-29",
+        "hcf:source:on-the-trinity-29-11"
       ],
-      "targetVerseId": "kjva:isaiah.11.3"
+      "alternateIds": [
+        "hcf:hcf-novatian:isaiah.11.3:8bb85c6b:1"
+      ]
     },
     {
       "id": "hcf:hcf-paulus-orosius:isaiah.11.3:085ef961:0",

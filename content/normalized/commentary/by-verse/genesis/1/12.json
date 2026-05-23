@@ -39,24 +39,14 @@
         "hcf",
         "c379"
       ],
-      "targetVerseId": "kjva:genesis.1.12"
-    },
-    {
-      "id": "hcf:basil-the-great:genesis.1.12:d1c5291e:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "hcf:work:basil-the-great:hexaemeron",
-      "title": "HEXAEMERON 5.1 on genesis 1:12",
-      "excerpt": "The adornment of the earth is older than the sun, that those who have been misled may cease worshiping the sun as the origin of life.",
-      "takeaway": "",
-      "sourceId": "hcf:source:hexaemeron-5-1",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c379"
+      "targetVerseId": "kjva:genesis.1.12",
+      "provenance": [
+        "hcf:source:hexaemeron-9-1",
+        "hcf:source:hexaemeron-5-1"
       ],
-      "targetVerseId": "kjva:genesis.1.12"
+      "alternateIds": [
+        "hcf:basil-the-great:genesis.1.12:d1c5291e:0"
+      ]
     },
     {
       "id": "hcf:ambrose-of-milan:genesis.1.12:cb901b6c:0",
@@ -141,24 +131,14 @@
         "hcf",
         "c407"
       ],
-      "targetVerseId": "kjva:genesis.1.12"
-    },
-    {
-      "id": "hcf:john-chrysostom:genesis.1.12:2ed20406:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "hcf:work:john-chrysostom:homilies",
-      "title": "HOMILIES ON GENESIS 6.14 on genesis 1:12",
-      "excerpt": "He created the sun on the fourth day lest you think it is the cause of the day.",
-      "takeaway": "",
-      "sourceId": "hcf:source:homilies-on-genesis-6-14",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c407"
+      "targetVerseId": "kjva:genesis.1.12",
+      "provenance": [
+        "hcf:source:homilies-on-genesis-6-12",
+        "hcf:source:homilies-on-genesis-6-14"
       ],
-      "targetVerseId": "kjva:genesis.1.12"
+      "alternateIds": [
+        "hcf:john-chrysostom:genesis.1.12:2ed20406:1"
+      ]
     },
     {
       "id": "hcf:tertullian:genesis.1.12:9d202978:0",

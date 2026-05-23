@@ -42,7 +42,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:explanations-of-the-psalms",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "EXPLANATIONS OF THE PSALMS 68:7 on proverbs 18:3",
       "excerpt": "Confession dies with a dead man, but is always possible for one who is alive. There is this saying, \"When a sinner shall have come into the depth of evil things, he despises [them].\" For it is one thing to long for, another thing to fight against righteousness. It is one thing to desire to be delivered from evil, another thing to defend one's evil doings rather than to confess.",
       "takeaway": "",
@@ -86,24 +86,14 @@
         "hcf",
         "c542"
       ],
-      "targetVerseId": "kjva:proverbs.18.3"
-    },
-    {
-      "id": "hcf:hcf-caesarius-of-arles:proverbs.18.3:cac5598a:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-caesarius-of-arles",
-      "workId": "hcf:work:hcf-caesarius-of-arles:sermons",
-      "title": "SERMON 101:2 on proverbs 18:3",
-      "excerpt": "Believe this devoutly and firmly: God never abandons a person unless he himself has already deserted God. Although a person may have committed serious sins once, twice and a third time, God still looks for him, as he says through the prophet, \"that by his conversion he may live.\" However, when he begins to continue in his sins, despair arises from the multitude of them, and hardening is caused by the despair. While careless people at first despise their own sins because they are small, if these slight offenses increase, crimes are even added; they heap up to finally overwhelm them, and when this happens there is fulfilled what is written: \"With wickedness comes contempt.\"",
-      "takeaway": "",
-      "sourceId": "hcf:source:sermon-101-2",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c542"
+      "targetVerseId": "kjva:proverbs.18.3",
+      "provenance": [
+        "hcf:source:sermon-61-1",
+        "hcf:source:sermon-101-2"
       ],
-      "targetVerseId": "kjva:proverbs.18.3"
+      "alternateIds": [
+        "hcf:hcf-caesarius-of-arles:proverbs.18.3:cac5598a:1"
+      ]
     },
     {
       "id": "hcf:hcf-fulgentius-of-ruspe:proverbs.18.3:a66a1c21:0",

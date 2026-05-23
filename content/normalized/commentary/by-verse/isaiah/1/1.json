@@ -25,7 +25,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
-      "workId": "hcf:work:cyril-of-alexandria:commentary-on-isaiah-introduction",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-isaiah",
       "title": "COMMENTARY ON ISAIAH, INTRODUCTION on isaiah 1:1",
       "excerpt": "The word of the holy prophets is always difficult to surmise. It is filled with hidden meanings and is pregnant with announcements of divine mysteries. The end of the law and prophets is Christ, as Scripture says. Those who want to expound these subtle matters must be diligent, I believe, to work in a logical way to thoroughly examine all of the symbols in the text to gain spiritual insight. First, the interpreter must determine the historical meaning and then interpret the spiritual meaning, in order for readers to derive benefit from every part of the text. The exposition must be clearly seen to be complete in every way.",
       "takeaway": "",
@@ -52,24 +52,14 @@
         "hcf",
         "c339"
       ],
-      "targetVerseId": "kjva:isaiah.1.1"
-    },
-    {
-      "id": "hcf:eusebius-caesarea:isaiah.1.1:771fd03a:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "eusebius-caesarea",
-      "workId": "hcf:work:eusebius-caesarea:commentary-on-isaiah",
-      "title": "COMMENTARY ON ISAIAH 3:18-23 on isaiah 1:1",
-      "excerpt": "A \"vision,\" he says, not ordinary or perceptible with physical eyes, but a prophetic vision of things to come in far distant times; for just as one sees in a great tablet the invasion of enemies, ravagings of countryside, sieges of cities and enslavements of people, represented with the brilliance of color, the same way he seems to see a dream, but not a vision in sleep, when the divine spirit enlightens the soul.",
-      "takeaway": "",
-      "sourceId": "hcf:source:commentary-on-isaiah-3-18-23",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c339"
+      "targetVerseId": "kjva:isaiah.1.1",
+      "provenance": [
+        "hcf:source:commentary-on-isaiah-4-1-3",
+        "hcf:source:commentary-on-isaiah-3-18-23"
       ],
-      "targetVerseId": "kjva:isaiah.1.1"
+      "alternateIds": [
+        "hcf:eusebius-caesarea:isaiah.1.1:771fd03a:0"
+      ]
     },
     {
       "id": "hcf:hippolytus-of-rome:isaiah.1.1:422641ad:1",

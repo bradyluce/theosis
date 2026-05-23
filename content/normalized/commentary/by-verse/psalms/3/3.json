@@ -8,7 +8,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 3 on psalms 3:3",
       "excerpt": "\"But You, O Lord, art my taker.\"  It is said to God in the nature of man, for the taking of man is, the Word made Flesh. \"My glory.\" Even He calls God his glory, whom the Word of God so took, that God became one with Him. Let the proud learn, who unwillingly hear, when it is said to them, \"For what have you that you did not receive? Now if you received it, why do you glory as if you had not received it?\" [1 Corinthians 4:7] \"And the lifter up of my head\" [Psalm 3:3]. I think that this should be here taken of the human mind, which is not unreasonably called the head of the soul;  which so inhered in, and in a sort coalesced with, the supereminent excellency of the Word taking man, that it was not laid aside by so great humiliation of the Passion.",
       "takeaway": "",
@@ -69,24 +69,14 @@
         "hcf",
         "c253"
       ],
-      "targetVerseId": "kjva:psalms.3.3"
-    },
-    {
-      "id": "hcf:origen:psalms.3.3:64826e6b:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "hcf:work:origen:selections-from-the-psalms",
-      "title": "SELECTIONS FROM THE PSALMS 3.2-3 on psalms 3:3",
-      "excerpt": "We readily accept this psalm as spoken from the person of David, as we have noted in its title. According to history, certain men were hurting David, many of whom as their number increased were joining themselves to Absalom.… Those who were oppressing the Savior were Jews who were shouting, \"Away with him; away with him!\" Judas the betrayer and Caiphas rose up against him. The ones who said that there was no deliverance of his life were the same ones passing by him at the time of his suffering who said, \"Come down from the cross and we will believe you.\" … But, one may also understand this passage in this way: all the rulers and teachers of subjects that are foreign to the decrees of Christ who have come against him. The people who cling to them and follow their teaching cause him trial. Finally, they who, neither teaching contrary matters nor instructed by false teaching, believe that there is no divine nature in the teaching of Christ, they say there is no salvation of the soul in God. They say that there is not anything that promises salvation either in the word of his teaching or the historical signs that he relates concerning his advent.",
-      "takeaway": "",
-      "sourceId": "hcf:source:selections-from-the-psalms-3-2-3",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c253"
+      "targetVerseId": "kjva:psalms.3.3",
+      "provenance": [
+        "hcf:source:selections-from-the-psalms-3-4",
+        "hcf:source:selections-from-the-psalms-3-2-3"
       ],
-      "targetVerseId": "kjva:psalms.3.3"
+      "alternateIds": [
+        "hcf:origen:psalms.3.3:64826e6b:0"
+      ]
     },
     {
       "id": "hcf:hcf-theodore-of-mopsuestia:psalms.3.3:ff1b1dbd:0",

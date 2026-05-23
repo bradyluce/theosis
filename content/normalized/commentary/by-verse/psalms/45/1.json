@@ -42,7 +42,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:on-the-psalms",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "ON THE PSALMS, Psalm 45 on psalms 45:1",
       "excerpt": "\"Mine heart hath uttered a good word\" [Psalm 45:1]. Who is the speaker? The Father, or the Prophet? For some understand it to be the Person of the Father, which says, \"Mine heart hath uttered a good word,\" intimating to us a certain unspeakable generation. Lest you should haply think something to have been taken unto Him, out of which God should beget the Son (just as man takes something to himself out of which he begets children, that is to say, an union of marriage, without which man cannot beget offspring), lest then you should think that God stood in need of any nuptial union, to beget \"the Son,\" he says, \"Mine heart hath uttered a good word.\" This very day thine heart, O man, begets a counsel, and requires no wife: by the counsel, so born of thine heart, thou buildest something or other, and before that building subsists, the design subsists; and that which thou art about to produce, exists already in that by which thou art going to produce it; and thou praisest the fabric that as yet is not existing, not yet in the visible form of a building, but on the projecting of a design: nor does any one else praise thy design, unless either thou showest it to him, or he sees what thou hast done. If then by the Word \"all things were made,\" and the Word is of God, consider the fabric reared by the Word, and learn from that building to admire His counsels! What manner of Word is that by which heaven and earth were made; and all the splendour of the heavens; all the fertility of the earth; the expanse of the sea; the wide diffusion of air; the brightness of the constellations; the light of sun and moon? These are visible things: rise above these also; think of the Angels, \"Principalities, Thrones, Dominions, and Powers.\" All were made by Him. How then were these good things made? Because there was \"uttered forth 'a good Word,'\" by which they were to be made...",
       "takeaway": "",
@@ -86,24 +86,14 @@
         "hcf",
         "c407"
       ],
-      "targetVerseId": "kjva:psalms.45.1"
-    },
-    {
-      "id": "hcf:john-chrysostom:psalms.45.1:799d05fa:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "hcf:work:john-chrysostom:commentary-on-the-psalms",
-      "title": "COMMENTARY ON THE PSALMS 45:2 on psalms 45:1",
-      "excerpt": "The one who speaks from his own resources, you see, hesitates and thinks twice about the efforts he makes, handicapped in his composition by ignorance, error and uncertainty, and there are many things that undermine the speed of his utterance. When on the contrary it is the Spirit who moves the mind, there is no obstacle.",
-      "takeaway": "",
-      "sourceId": "hcf:source:commentary-on-the-psalms-45-2",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c407"
+      "targetVerseId": "kjva:psalms.45.1",
+      "provenance": [
+        "hcf:source:commentary-on-the-psalms-45-1",
+        "hcf:source:commentary-on-the-psalms-45-2"
       ],
-      "targetVerseId": "kjva:psalms.45.1"
+      "alternateIds": [
+        "hcf:john-chrysostom:psalms.45.1:799d05fa:1"
+      ]
     },
     {
       "id": "hcf:thomas-aquinas:psalms.45.1:f2cd77b1:0",

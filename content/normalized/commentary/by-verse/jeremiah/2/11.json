@@ -25,7 +25,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "hcf-didascalia-apostolorum",
-      "workId": "hcf:work:hcf-didascalia-apostolorum:didascalia-13-2-60",
+      "workId": "hcf:work:hcf-didascalia-apostolorum:didascalia",
       "title": "DIDASCALIA 13.[2:60] on jeremiah 2:11",
       "excerpt": "Those who are not saved always are taking care of those things that do not profit or benefit them in any way. So what kind of excuse is there for a Christian who withdraws from the assembly of the church? Such a person does not even imitate the Gentiles but by reason of his absence grows indifferent and careless. He stands aloof and does evil. The Lord said, … You have not walked in my statutes or kept my ordinances, and have not even acted according to the rules of the nations that are all around you, \"you were more corrupt than they in all your ways.\" How, then, shall the indifferent excuse himself, since he has no zeal for the assembly of the church? If anyone takes the occasion of worldly business to withdraw, let him know this: the trades of the faithful are called works of surplus, for their true work is religion. Pursue your trades, therefore, as a work of surplus, for your sustenance, but let your true work be religion.",
       "takeaway": "",
@@ -86,24 +86,14 @@
         "hcf",
         "c407"
       ],
-      "targetVerseId": "kjva:jeremiah.2.11"
-    },
-    {
-      "id": "hcf:john-chrysostom:jeremiah.2.11:b3d78849:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "hcf:work:john-chrysostom:homilies",
-      "title": "HOMILIES ON THE GOSPEL OF MATTHEW 17:6 on jeremiah 2:11",
-      "excerpt": "For since you are not persuaded by the Scriptures, I am compelled to shame you by those who are outside your company. God also did this to the Jews when he said, \"Go to the Isles of Kittim and send to Kedar and find out if the nations will change their gods which are no gods.\"",
-      "takeaway": "",
-      "sourceId": "hcf:source:homilies-on-the-gospel-of-matthew-17-6",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c407"
+      "targetVerseId": "kjva:jeremiah.2.11",
+      "provenance": [
+        "hcf:source:homilies-on-titus-3",
+        "hcf:source:homilies-on-the-gospel-of-matthew-17-6"
       ],
-      "targetVerseId": "kjva:jeremiah.2.11"
+      "alternateIds": [
+        "hcf:john-chrysostom:jeremiah.2.11:b3d78849:0"
+      ]
     }
   ]
 }

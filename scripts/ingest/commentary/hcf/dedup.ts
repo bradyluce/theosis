@@ -182,9 +182,26 @@ export function dedupeEntries(
           ? [k.shingles, shingles]
           : [shingles, k.shingles];
         const cont = containment(small, large);
-        // Either signal alone is enough: high symmetric overlap (Jaccard)
-        // or one excerpt nearly contained in the other (containment).
-        if (j >= threshold || (small.size >= SHINGLE_SIZE && cont >= CONTAINMENT_THRESHOLD)) {
+        // Translation-pair signal: two HCF entries on the same target
+        // sharing the same workId (post-canonicalization) but with
+        // different sourceIds are almost always parallel translations
+        // of the same passage — typically one PD print edition and one
+        // web mirror. Their prose differs enough that shingle Jaccard
+        // doesn't catch them, but they're not distinct commentary.
+        // (Multiple legitimate paragraphs from the same source share a
+        // sourceId, so they don't trigger this branch.)
+        const sameHcfWorkDifferentSource =
+          isHcfOrigin(entry) &&
+          isHcfOrigin(k.entry) &&
+          entry.workId === k.entry.workId &&
+          entry.sourceId !== k.entry.sourceId;
+        // Any signal alone is enough: high Jaccard, near-containment, or
+        // the translation-pair pattern.
+        if (
+          j >= threshold ||
+          (small.size >= SHINGLE_SIZE && cont >= CONTAINMENT_THRESHOLD) ||
+          sameHcfWorkDifferentSource
+        ) {
           // Fold this entry into the kept one.
           k.entry.provenance = uniq([
             ...(k.entry.provenance ?? [k.entry.sourceId]),

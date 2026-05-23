@@ -42,7 +42,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "gregory-the-great",
-      "workId": "hcf:work:gregory-the-great:dialogues-book",
+      "workId": "hcf:work:gregory-the-great:dialogues",
       "title": "Dialogues, Book 4, Chapter 4 on ecclesiastes 6:7",
       "excerpt": "A person's true life is not found here on earth, for he claims that it is found elsewhere. This, then, is the great advantage humankind has over the animal: The animal does not live on after death, while a person begins to live only when he has completed this visible life through bodily death.",
       "takeaway": "",
@@ -69,24 +69,14 @@
         "hcf",
         "c420"
       ],
-      "targetVerseId": "kjva:ecclesiastes.6.7"
-    },
-    {
-      "id": "hcf:jerome:ecclesiastes.6.7:5456ab42:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "hcf:work:jerome:commentary-on-ecclesiastes",
-      "title": "COMMENTARY ON ECCLESIASTES 6:7 on ecclesiastes 6:7",
-      "excerpt": "Everything that human labor produces in this world is consumed by the mouth, ground by the teeth, and sent to the stomach for digestion. Even when a bite to eat delights the palate, it seems to give pleasure only for as long as it remains in the mouth, for when it passes into the belly, it can no longer be distinguished from other food. The soul of the diner is afterwards not fulfilled, because he will again desire what he has just eaten, since neither the wise nor the foolish is able to live without food, and the poor seeks nothing other than to sustain his frail body and to avoid starvation. Moreover, the soul derives no benefit from the refreshment of the body. Food is common to both the wise and the foolish, and the poor tend to go where they perceive wealth. It is better to understand this teaching as referring to the ecclesiastical person whose labor is in his mouth because he is learned in the heavenly Scriptures but whose soul is not fulfilled because he desires always to learn more.",
-      "takeaway": "",
-      "sourceId": "hcf:source:commentary-on-ecclesiastes-6-7",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c420"
+      "targetVerseId": "kjva:ecclesiastes.6.7",
+      "provenance": [
+        "hcf:source:historicalchristian-faith",
+        "hcf:source:commentary-on-ecclesiastes-6-7"
       ],
-      "targetVerseId": "kjva:ecclesiastes.6.7"
+      "alternateIds": [
+        "hcf:jerome:ecclesiastes.6.7:5456ab42:0"
+      ]
     },
     {
       "id": "hcf:tertullian:ecclesiastes.6.7:ffe4f8b1:0",

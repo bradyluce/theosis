@@ -421,6 +421,58 @@ export function getAllPeopleFromAll(): Person[] {
   return Array.from(byId.values());
 }
 
+// Same as getAllPeopleFromAll() but filtered to library-worthy Persons:
+//   - Canonized saints (recognised via honorific, feast day, or kind), OR
+//   - Authors with at least one Work that carries long-form chapters
+//     (listed in the library catalog's index.byWork)
+// Citation-only Persons — those who only appear via HCF-style verse-level
+// commentary entries — are excluded. They still resolve via getPersonById
+// so commentary panels render their attribution; they just don't clutter
+// the Library landing's People grid or "browse by author" surfaces.
+export function getLibraryPeopleFromAll(): Person[] {
+  const allPeople = getAllPeopleFromAll();
+  const longFormPersonIds = collectLongFormPersonIds();
+  return allPeople.filter(
+    (person) => isCanonizedSaint(person) || longFormPersonIds.has(person.id),
+  );
+}
+
+const SAINT_HONORIFIC_PATTERN = /\b(st\.?|saint|holy|blessed|venerable)\b/i;
+
+function isCanonizedSaint(person: Person): boolean {
+  if (person.kind === "saint") return true;
+  if (person.feastDayLabel && person.feastDayLabel.trim().length > 0) return true;
+  if (
+    person.honorific &&
+    SAINT_HONORIFIC_PATTERN.test(person.honorific.trim())
+  ) {
+    return true;
+  }
+  return false;
+}
+
+// PersonIds of authors who own at least one chapter-bearing Work, derived
+// from the library catalog's index.byWork — the authoritative source of
+// "this work has long-form chapters." Cached for the process lifetime.
+let longFormPersonIdsCache: Set<string> | undefined;
+function collectLongFormPersonIds(): Set<string> {
+  if (longFormPersonIdsCache) return longFormPersonIdsCache;
+  const ids = new Set<string>();
+  const libraryCatalog = loadLibraryCatalog();
+  if (libraryCatalog) {
+    const workIdToPerson = new Map<string, string>();
+    for (const work of libraryCatalog.works) {
+      workIdToPerson.set(work.id, work.personId);
+    }
+    for (const workId of Object.keys(libraryCatalog.index.byWork)) {
+      const personId = workIdToPerson.get(workId);
+      if (personId) ids.add(personId);
+    }
+  }
+  longFormPersonIdsCache = ids;
+  return ids;
+}
+
 export function getAllWorksFromAll(): Work[] {
   const byId = new Map<string, Work>();
   for (const work of seedWorks) byId.set(work.id, work);

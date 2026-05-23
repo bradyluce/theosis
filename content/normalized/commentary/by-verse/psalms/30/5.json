@@ -25,7 +25,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 30 on psalms 30:5",
       "excerpt": "\"For in His indignation is wrath\" [Psalm 30:5]. For He has avenged against you the first sin, for which you have paid by death. \"And life in His will.\" And life eternal, whereunto you could not return by any strength of your own, has He given, because He so would. \"In the evening weeping will tarry.\" Evening began, when the light of wisdom withdrew from sinful man, when he was condemned to death: from this evening weeping will tarry, as long as God's people are, amid labours and temptations, awaiting the day of the Lord. \"And exultation in the morning.\" Even to the morning, when there will be the exultation of the resurrection, which has shone forth by anticipation in the morning resurrection of the Lord.",
       "takeaway": "",
@@ -35,24 +35,14 @@
         "hcf",
         "c430"
       ],
-      "targetVerseId": "kjva:psalms.30.5"
-    },
-    {
-      "id": "hcf:augustine:psalms.30.5:3d3d1df2:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-1-of-psalm",
-      "title": "EXPOSITION 1 OF PSALM 30:6 on psalms 30:5",
-      "excerpt": "We weep only until that morning of resurrection gladness, looking to the joy that blossomed in advance in the early-morning resurrection of the Lord.",
-      "takeaway": "",
-      "sourceId": "hcf:source:exposition-1-of-psalm-30-6",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c430"
+      "targetVerseId": "kjva:psalms.30.5",
+      "provenance": [
+        "hcf:source:newadvent-org",
+        "hcf:source:exposition-1-of-psalm-30-6"
       ],
-      "targetVerseId": "kjva:psalms.30.5"
+      "alternateIds": [
+        "hcf:augustine:psalms.30.5:3d3d1df2:1"
+      ]
     },
     {
       "id": "hcf:hcf-evagrius-ponticus:psalms.30.5:085239e4:0",

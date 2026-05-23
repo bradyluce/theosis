@@ -8,7 +8,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 10 on psalms 10:14",
       "excerpt": "Then follows, \"For You see toil and considerest anger, to deliver them into Your hands.\" This sentence looks for distinct explanation, wherein if there shall be error it becomes obscure. For thus has the ungodly said in his heart, God will not require it, as though God regarded toil and anger, to deliver them into His hands; that is, as though He feared toil and anger, and for this reason would spare them, lest their punishment be too burdensome to Him, or lest He should be disturbed by the storm of anger: as men generally act, excusing themselves of vengeance, to avoid toil or anger.",
       "takeaway": "",
@@ -35,24 +35,14 @@
         "hcf",
         "c585"
       ],
-      "targetVerseId": "kjva:psalms.10.14"
-    },
-    {
-      "id": "hcf:hcf-cassiodorus:psalms.10.14:996d4d5e:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-cassiodorus",
-      "workId": "hcf:work:hcf-cassiodorus:explanation-of-the-psalms",
-      "title": "EXPLANATION OF THE PSALMS 10:35 on psalms 10:14",
-      "excerpt": "When he says, \"he is left to you as a poor man,\" he shows that the one who is left to him is not cheated of any advantage, for to be left to the devoted Prince is the same as to be handed over to all good things.",
-      "takeaway": "",
-      "sourceId": "hcf:source:explanation-of-the-psalms-10-35",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c585"
+      "targetVerseId": "kjva:psalms.10.14",
+      "provenance": [
+        "hcf:source:explanation-of-the-psalms-10-34",
+        "hcf:source:explanation-of-the-psalms-10-35"
       ],
-      "targetVerseId": "kjva:psalms.10.14"
+      "alternateIds": [
+        "hcf:hcf-cassiodorus:psalms.10.14:996d4d5e:1"
+      ]
     },
     {
       "id": "hcf:hcf-didymus-the-blind:psalms.10.14:2a05b17b:0",

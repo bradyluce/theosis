@@ -25,7 +25,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "gregory-the-great",
-      "workId": "hcf:work:gregory-the-great:commentary-on-1-kings-book",
+      "workId": "hcf:work:gregory-the-great:commentary-on-1-kings",
       "title": "Commentary on 1 Kings, Book 3, Chapter 3 on first-samuel 5:5",
       "excerpt": "4. For they present themselves as priests of Dagon, who do not tread upon the threshold. In these words it must be carefully observed that he did not say \"the threshold,\" but \"upon the threshold,\" so that the head and hands of Dagon are taught to be what must be trampled upon, which are reported to have been cut off upon the threshold. The reason, moreover, that the priests do not tread upon the threshold is that they avoid crushing his severed hands and head with their foot. For the priests of Dagon remain even to this day: because those who sacrifice to the ancient enemy through unclean desires still exist. They indeed refuse to tread upon the threshold of the temple: because they resist neither unclean suggestions nor evil works. Therefore they are priests of Dagon, because even if they do not humble themselves before handmade idols, they nevertheless bow down to the images of their lusts through wicked works. There follows: (Verse 6.) The hand of the Lord was heavy upon the people of Ashdod.",
       "takeaway": "",
@@ -52,24 +52,14 @@
         "hcf",
         "c407"
       ],
-      "targetVerseId": "kjva:first-samuel.5.5"
-    },
-    {
-      "id": "hcf:john-chrysostom:first-samuel.5.5:e3ddf49e:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "hcf:work:john-chrysostom:discourses",
-      "title": "DISCOURSES AGAINST JUDAIZING CHRISTIANS 6.7.1 on first-samuel 5:5",
-      "excerpt": "In short, if you believe the place is holy because the law and the books of prophets are there, then it is time for you to believe that idols and the temples of idols are holy. Once, when the Jews were at war, the people of Ashdod conquered them, took their ark and brought it into their own temple. Did the fact that it contained the ark make their temple a holy place? By no means! It continued to be profane and unclean, as the events immediately proved. For God wanted to teach the enemies of the Jews that the defeat was not due to God's weakness but to the transgressions of those who worshiped him. And so the ark, which had been taken as booty in war, gave proof of its own power in an alien land by twice throwing the idol to the ground so that the idol was broken. The ark was so far from making that temple a holy place that it even openly attacked it.",
-      "takeaway": "",
-      "sourceId": "hcf:source:discourses-against-judaizing-christians-6-7-1",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c407"
+      "targetVerseId": "kjva:first-samuel.5.5",
+      "provenance": [
+        "hcf:source:discourse-on-blessed-babylas-1-6",
+        "hcf:source:discourses-against-judaizing-christians-6-7-1"
       ],
-      "targetVerseId": "kjva:first-samuel.5.5"
+      "alternateIds": [
+        "hcf:john-chrysostom:first-samuel.5.5:e3ddf49e:0"
+      ]
     }
   ]
 }

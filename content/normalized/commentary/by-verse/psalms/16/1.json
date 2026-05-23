@@ -8,7 +8,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 16 on psalms 16:1",
       "excerpt": "Our King in this Psalm speaks in the character of the human nature He assumed, of whom the royal title at the time of His passion was eminently set forth. Now He saith as follows; \"Preserve me, O Lord, for in Thee have I hoped\" (ver. 1): \"I have said to the Lord, Thou art my God, for Thou requirest not my goods\" (ver. 2): for with my goods Thou dost not look to be made blessed.",
       "takeaway": "",
@@ -35,24 +35,14 @@
         "hcf",
         "c585"
       ],
-      "targetVerseId": "kjva:psalms.16.1"
-    },
-    {
-      "id": "hcf:hcf-cassiodorus:psalms.16.1:6248f5b3:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "hcf-cassiodorus",
-      "workId": "hcf:work:hcf-cassiodorus:explanation-of-the-psalms",
-      "title": "EXPLANATION OF THE PSALMS 16:11 on psalms 16:1",
-      "excerpt": "Let us consider how this psalm teaches us about the tremdendous gift of salvation. In times of suffering, it conveys confidence and promises eternal glory in hope, so that by teaching us that our future will be prosperous we do not fear adversity in the present. This psalm is a heavenly school, a source of learning for life, a lecture hall filled with truth, and without doubt a unique teaching which occupies its students with fruitful meanings rather than with the flattery of empty words.",
-      "takeaway": "",
-      "sourceId": "hcf:source:explanation-of-the-psalms-16-11",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c585"
+      "targetVerseId": "kjva:psalms.16.1",
+      "provenance": [
+        "hcf:source:explanation-of-the-psalms-16-1",
+        "hcf:source:explanation-of-the-psalms-16-11"
       ],
-      "targetVerseId": "kjva:psalms.16.1"
+      "alternateIds": [
+        "hcf:hcf-cassiodorus:psalms.16.1:6248f5b3:1"
+      ]
     },
     {
       "id": "hcf:theodoret-of-cyrrhus:psalms.16.1:7f70ceb3:0",

@@ -52,24 +52,14 @@
         "hcf",
         "c420"
       ],
-      "targetVerseId": "kjva:exodus.12.6"
-    },
-    {
-      "id": "hcf:jerome:exodus.12.6:b882b69e:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "hcf:work:jerome:homilies",
-      "title": "HOMILIES ON THE PSALMS 5 on exodus 12:6",
-      "excerpt": "We read in Exodus that on the fourteenth day a lamb is sacrificed; on the fourteenth day when the moon is a full moon, when its light is at its brightest. You see Christ is not immolated except in perfect and full light.",
-      "takeaway": "",
-      "sourceId": "hcf:source:homilies-on-the-psalms-5",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c420"
+      "targetVerseId": "kjva:exodus.12.6",
+      "provenance": [
+        "hcf:source:homily-91",
+        "hcf:source:homilies-on-the-psalms-5"
       ],
-      "targetVerseId": "kjva:exodus.12.6"
+      "alternateIds": [
+        "hcf:jerome:exodus.12.6:b882b69e:0"
+      ]
     }
   ]
 }

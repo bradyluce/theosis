@@ -145,6 +145,63 @@ function hash8(input: string): string {
   return createHash("sha256").update(input).digest("hex").slice(0, 8);
 }
 
+// Manual title remap for translator-variant cases that the regex can't
+// disambiguate (different translators spell the same Father's work
+// differently, e.g. Augustine's Enarrationes in Psalmos surfaces in HCF
+// as "Expositions on/of the Psalms" / "Explanations of the Psalms" /
+// "Commentary on the Psalms" / "Exposition on Psalm" / "On the Psalms",
+// none of which share enough literal tokens for the regex to collapse).
+// Keyed by `<personId>::<canonicalized-title>` so the map is applied
+// AFTER regex canonicalization. Add entries here when the catalog
+// shows obvious translator variants for one underlying work.
+const EXPLICIT_TITLE_REMAP: Record<string, string> = {
+  // Augustine: Enarrationes in Psalmos — collapses 13 HCF variants.
+  "augustine::Commentary on the Psalms": "Expositions on the Psalms",
+  "augustine::Explanation of Psalm": "Expositions on the Psalms",
+  "augustine::Explanation of the Psalms": "Expositions on the Psalms",
+  "augustine::Explanations of the Psalms": "Expositions on the Psalms",
+  "augustine::Exposition 1 of Psalm": "Expositions on the Psalms",
+  "augustine::Exposition 2 of Psalm": "Expositions on the Psalms",
+  "augustine::Exposition 2 of the Psalms": "Expositions on the Psalms",
+  "augustine::Exposition on Psalm": "Expositions on the Psalms",
+  "augustine::Exposition on the Psalms": "Expositions on the Psalms",
+  "augustine::Expositions of the Psalms": "Expositions on the Psalms",
+  "augustine::On the Psalms": "Expositions on the Psalms",
+  "augustine::On the Psalms: Psalm": "Expositions on the Psalms",
+
+  // Augustine: De Doctrina Christiana — three translator titles.
+  "augustine::On Christian Doctrine": "On Christian Doctrine",
+  "augustine::On Christian Teaching": "On Christian Doctrine",
+  "augustine::Christian Instruction": "On Christian Doctrine",
+
+  // Augustine: De Civitate Dei — already "City of God" in HCF.
+
+  // Augustine: De Trinitate — collapses ALL CAPS variants caught by
+  // titleCase, but also dotted-suffix forms still occur.
+  "augustine::On The Trinity": "On the Trinity",
+
+  // Augustine: On the Spirit and the Letter — HCF spells "the" twice.
+  "augustine::On the Spirit and the": "On the Spirit and the Letter",
+
+  // Augustine: Eighty-three Different Questions
+  "augustine::Eighty-three Questions": "Eighty-three Different Questions",
+  "augustine::Eighty-three Different Questions, Question":
+    "Eighty-three Different Questions",
+
+  // Ambrose: Expositio in Lucam — translator variants.
+  "ambrose-of-milan::Exposition of the Holy Gospel According to St. Luke":
+    "Exposition of the Gospel of Luke",
+  "ambrose-of-milan::Expositions on the Gospel of Luke":
+    "Exposition of the Gospel of Luke",
+
+  // Ambrose: Hexaemeron — "Six Days of Creation"
+  "ambrose-of-milan::Six Days of Creation": "Hexaemeron",
+
+  // Ambrose: De Officiis — duties of the clergy.
+  "ambrose-of-milan::On Duties": "On the Duties of the Clergy",
+  "ambrose-of-milan::On the Offices": "On the Duties of the Clergy",
+};
+
 // HCF's `source_title` is verse-specific in practice ("COMMENTARY ON
 // MATTHEW 1.5.3", "City of God 20.6", "Sermon 305A"). Without
 // normalization, each unique source_title spawns its own Work, which
@@ -180,6 +237,16 @@ function canonicalizeWorkTitle(raw: string): string {
   do {
     prev = t;
 
+    // Strip trailing bracketed numeric refs like "[86-87]" or "[N]".
+    t = t.replace(/\s*\[[\d.,:\-/\s]+\]\s*$/, "");
+
+    // Strip trailing standalone section words ("INTRODUCTION",
+    // "PREFACE", "PROLOGUE", "EPILOGUE") with or without leading comma.
+    t = t.replace(
+      /,?\s*(introduction|preface|prologue|epilogue|appendix)\s*$/i,
+      "",
+    );
+
     // Strip a trailing "- Psalm" / "— Chapter" / etc. (series word with
     // a dash separator but no following number).
     t = t.replace(
@@ -190,9 +257,10 @@ function canonicalizeWorkTitle(raw: string): string {
     // Strip ", On Psalm/Chapter/Letter X[...]" — comma required so
     // titles like "On the Spirit and the Letter 12.3" (where "Letter"
     // is part of the title) don't get truncated. The trailing ref can
-    // be a pure Roman numeral or digits.
+    // be a pure Roman numeral, digits, or absent (a bare ", Book" /
+    // ", Chapter" without a following number, common in HCF data).
     t = t.replace(
-      /,\s*(on\s+)?(psalm|chapter|section|page|verse|fragment|book|sermon|homily|tractate|epistle|letter|preface|prologue)\s+(?:\d[\w.,:\-/]*|[IVXLCDM]+)\s*$/i,
+      /,\s*(on\s+)?(psalm|chapter|section|page|verse|fragment|book|sermon|homily|tractate|epistle|letter|preface|prologue|commentary|question)s?(?:\s+(?:\d[\w.,:\-/]*|[IVXLCDM]+))?\s*$/i,
       "",
     );
 
@@ -289,7 +357,9 @@ function upsertWork(
   // Use the canonical title for both the workId and the display title so
   // all variants of the same Work ("SERMON 305A", "Sermon 65A", etc.)
   // collapse to one record.
-  const canonicalTitle = canonicalizeWorkTitle(sourceTitle);
+  let canonicalTitle = canonicalizeWorkTitle(sourceTitle);
+  const remap = EXPLICIT_TITLE_REMAP[`${personId}::${canonicalTitle}`];
+  if (remap) canonicalTitle = remap;
   const workId = workIdFor(personId, canonicalTitle);
   if (!works.has(workId)) {
     works.set(workId, {

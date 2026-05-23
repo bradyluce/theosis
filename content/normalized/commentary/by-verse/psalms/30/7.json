@@ -8,7 +8,7 @@
       "relation": "verse",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "hcf:work:augustine:exposition-on-psalm",
+      "workId": "hcf:work:augustine:expositions-on-the-psalms",
       "title": "Exposition on Psalm 30 on psalms 30:7",
       "excerpt": "\"O Lord, in Your will You have afforded strength unto my beauty\" [Psalm 30:7]. But that this my abundance, O Lord, is not of myself, but that in Your will You have afforded strength unto my beauty, I have learned from this, \" You turned away Your Face from me, and I became troubled;\" for You have sometimes turned away Your Face from the sinner, and I became troubled, when the illumination of Your knowledge withdrew from me.",
       "takeaway": "",
@@ -35,24 +35,14 @@
         "hcf",
         "c379"
       ],
-      "targetVerseId": "kjva:psalms.30.7"
-    },
-    {
-      "id": "hcf:basil-the-great:psalms.30.7:2753948d:1",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "hcf:work:basil-the-great:homilies",
-      "title": "HOMILIES on the PSALMS 14:6 (PS 30) on psalms 30:7",
-      "excerpt": "God is said to turn away his face when in times of troubles he permits us to be delivered up to trials, in order that the strength of him who is struggling may be known.… We pray always for the face of God to shine on us, in order that we may be in a state becoming to a holy person, gentle and untroubled in every way, because of our readiness for the good. \"I am ready,\" he says, \"and am not troubled.\"",
-      "takeaway": "",
-      "sourceId": "hcf:source:homilies-on-the-psalms-14-6-ps-30",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c379"
+      "targetVerseId": "kjva:psalms.30.7",
+      "provenance": [
+        "hcf:source:homilies-on-the-psalms-14-5-ps-30",
+        "hcf:source:homilies-on-the-psalms-14-6-ps-30"
       ],
-      "targetVerseId": "kjva:psalms.30.7"
+      "alternateIds": [
+        "hcf:basil-the-great:psalms.30.7:2753948d:1"
+      ]
     },
     {
       "id": "hcf:thomas-aquinas:psalms.30.7:423a1e0b:0",
