@@ -4,6 +4,24 @@
   "verseNumber": 26,
   "entries": [
     {
+      "id": "catena-luke-3144-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.26",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:24–27",
+      "excerpt": "As if He says, Think not that thy disciple needs you, but that you do not need him. For I who need no one whom all things in heaven and earth need, have condescended to the degree of a servant.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-3139-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.26",
@@ -22,21 +40,28 @@
       ]
     },
     {
-      "id": "catena-luke-3144-v26",
+      "id": "catena-luke-3142-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.26",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:24–27",
-      "excerpt": "As if He says, Think not that thy disciple needs you, but that you do not need him. For I who need no one whom all things in heaven and earth need, have condescended to the degree of a servant.",
+      "excerpt": "But it must be observed, that not every kind of respect and deference to others betokens humility, for you may defer to a person for the world’s sake, for fear of his power, or regard to your own interest. In that case you seek to advance yourself, not to honour another. Therefore there is one form of the precept given to all men, namely, that they boast not about precedence, but strive earnestly for humility.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.22.26:80ad6c50:0"
       ]
     },
     {
@@ -73,6 +98,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.22.26:ae2dc6f8:0"
       ]
     },
     {
@@ -91,24 +123,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.22.26:82a616ec:0"
       ]
     },
     {
-      "id": "catena-luke-3142-v26",
+      "id": "catena-luke-3143-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.26",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:24–27",
-      "excerpt": "But it must be observed, that not every kind of respect and deference to others betokens humility, for you may defer to a person for the world’s sake, for fear of his power, or regard to your own interest. In that case you seek to advance yourself, not to honour another. Therefore there is one form of the precept given to all men, namely, that they boast not about precedence, but strive earnestly for humility.",
+      "excerpt": "In this rule however, given by our Lord, the great have need of no little judgment, that they do not indeed like the kings of the Gentiles delight to tyrannize over their subjects, and be puffed up with their praises, yet notwithstanding that they be provoked with a righteous zeal against the wickedness of offenders. But to the words of the exhortation He subjoins His own example, as it follows, For which is greater, he who sitteth at meat, or he that serveth? But I am among you, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.26:c915d448:0"
       ]
     },
     {
@@ -130,42 +176,6 @@
       ]
     },
     {
-      "id": "catena-luke-3138-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.26",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:24–27",
-      "excerpt": "Rather let us look not what carnal disciples did, but what their spiritual Master commanded; for it follows, And he said unto them, The kings of the Gentiles, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3143-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.26",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:24–27",
-      "excerpt": "In this rule however, given by our Lord, the great have need of no little judgment, that they do not indeed like the kings of the Gentiles delight to tyrannize over their subjects, and be puffed up with their praises, yet notwithstanding that they be provoked with a righteous zeal against the wickedness of offenders. But to the words of the exhortation He subjoins His own example, as it follows, For which is greater, he who sitteth at meat, or he that serveth? But I am among you, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3146-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.26",
@@ -174,6 +184,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:24–27",
       "excerpt": "Or He speaks of that service wherewith, according to John, He their Lord and Master washed their feet. Although by the word itself serving, (John 13:5.) all that He did in the flesh may be implied, but by serving He also signifies that He poureth forth His blood for us.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3138-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.26",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:24–27",
+      "excerpt": "Rather let us look not what carnal disciples did, but what their spiritual Master commanded; for it follows, And he said unto them, The kings of the Gentiles, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -218,6 +246,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.26:512d7bd1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:26",
+      "excerpt": "He tames their agitation with two examples. First, with the example of the Gentiles, whom they considered unclean, declaring that if they think this way, they will be like the Gentiles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.26"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.26:db67378f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-143",
+      "title": "COMMENTARY ON LUKE, HOMILY 143 on luke 22:26",
+      "excerpt": "Let us avoid the love of pride and deliver ourselves from the blame attached to the desire for leadership. To act this way makes us like Christ, who submitted to empty himself for our sakes. Arrogance and haughtiness of mind make us plainly resemble the princes of the Gentiles, who always love to act arrogantly. It may even be fitting in their case. \"They are called,\" he says, \"benefactors that are flattered as such by their inferiors.\" Let them be like this. They are not within the pale of the sacred laws or obedient to the Lord's will. They are the victims of these afflictions. It should not be so with us. Let our exaltation rather consist in humility and our glorying in not loving glory. Let our desire be for those things that please God, while we keep in mind what the wise man says to us, \"The greater you are, humble yourself the more, and you will find grace before the Lord.\" He rejects the proud and counts the boastful as his enemies but crowns with honors the meek and lowly in mind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-143",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.26"
     }
   ]
 }

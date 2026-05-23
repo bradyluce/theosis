@@ -4,6 +4,24 @@
   "verseNumber": 12,
   "entries": [
     {
+      "id": "catena-luke-2255-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.12",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:12–14",
+      "excerpt": "For the humbler our brother is, so much the more does Christ come through him and visit us. For he who entertains a great man does it often from vainglory. And elsewhere, But very often interest is his object, that through such a one he may gain promotion. I could indeed mention many who for this pay court to the most distinguished of the nobles, that through their assistance they may obtain the greater favour from the prince. Let us not then ask those who can recompense us, as it follows, And thou shalt be blessed, for they cannot recompense thee. And let us not be troubled when we receive…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2252-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.12",
@@ -12,6 +30,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:12–14",
       "excerpt": "Many are the sources from which friendships are made. Leaving out all unlawful ones, we shall speak only of those which are natural and moral; the natural are, for instance, between father and son, brother and brother, and such like; which He meant, saying, Nor thy brethren, nor thy kinsmen; the moral, when a man has become your guest or neighbour; and with reference to these He says, nor thy neighbours.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.14.12:d7fbccc2:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2259-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.12",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:12–14",
+      "excerpt": "It would become thee then to receive them above in the best chamber, but if thou shrinkest, at least admit Christ below, where are the menials and servants. Let the poor man be at least thy door keeper. For where there is alms, the devil durst not enter. And if thou sittest not down with them, at any rate send them the dishes from thy table.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -40,24 +83,6 @@
       ]
     },
     {
-      "id": "catena-luke-2255-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.12",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:12–14",
-      "excerpt": "For the humbler our brother is, so much the more does Christ come through him and visit us. For he who entertains a great man does it often from vainglory. And elsewhere, But very often interest is his object, that through such a one he may gain promotion. I could indeed mention many who for this pay court to the most distinguished of the nobles, that through their assistance they may obtain the greater favour from the prince. Let us not then ask those who can recompense us, as it follows, And thou shalt be blessed, for they cannot recompense thee. And let us not be troubled when we receive…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2257-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.12",
@@ -66,24 +91,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:12–14",
       "excerpt": "But thou sayest, the poor are unclean and filthy. Wash him, and make him to sit with thee at table. If he has dirty garments, give him clean ones. Christ comes to thee through him, and dost thou stand trifling?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2259-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.12",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:12–14",
-      "excerpt": "It would become thee then to receive them above in the best chamber, but if thou shrinkest, at least admit Christ below, where are the menials and servants. Let the poor man be at least thy door keeper. For where there is alms, the devil durst not enter. And if thou sittest not down with them, at any rate send them the dishes from thy table.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -127,6 +134,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.14.12:97310bd9:2"
       ]
     },
     {
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.14.12:384dff61:0"
       ]
     },
     {
@@ -182,6 +203,159 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.14.12:ef15535a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 14:12",
+      "excerpt": "At the supper there were two classes of those reclining at table — the hosts and the guests. The Lord first turned with exhortation to the guests, taught them saving humility, and offered them plain fare, and then He pays honor to the one who had invited Him and repays the hospitality with an exhortation, that he should not give feasts for the sake of any human favor and expect immediate recompense. For the fainthearted, when inviting friends or relatives, do so with a view to swift gratitude, and if they do not receive it, they become vexed. But the magnanimous, enduring until the life to come, receive their reward from Him who is truly rich (Eph. 2:4, 7).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:bede:luke.14.12:5383913e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 14:12",
+      "excerpt": "Lest perhaps they also invite you in return, and it may become for you a recompense. He does not say, \"And it may become a sin for you,\" but he says, \"And it may become for you a recompense.\" Like what he says elsewhere: \"If you do good to those who do good to you, what grace is there to you?\" (Luke 6). He does not say here, \"It is a sin for you,\" but, \"What grace is there to you?\" Since even sinners do this. Although there are some mutual banquets of brothers, friends, relatives, and wealthy neighbors, which not only receive recompense in the present but also condemnation in the future. Finally, they are counted among the works of darkness by the Apostle. As he says, \"Let us walk properly as in the day, not in revelries and drunkenness\" (Rom. 13). Indeed, revelries are luxurious banquets which are celebrated either by everyone's contribution or are usually hosted in turns by companions, such that no one is ashamed to say or do anything dishonorable, because it is convened for disgraceful things to be done there, stimulated by an abundance of wine and various pleasure of lust.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:bede:luke.14.12:70249585:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 14:12",
+      "excerpt": "And he said also to the one who had invited him: When you give a luncheon or a dinner, do not call your friends, nor your brothers, nor your relatives, nor your rich neighbors. He does not forbid celebrating feasts with brothers, friends, and the rich, as if it were a crime, but shows that, like other necessary human commerce, where even sinners lend to sinners to receive equal returns, such actions are of no value in acquiring the rewards of heavenly life. Finally, he adds:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.14.12:d56eace8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke",
+      "title": "Exposition of the Gospel of Luke on luke 14:12",
+      "excerpt": "He joins humanity to this, as if at the next threshold. The boundaries of the Lord's saying differentiated this, if it is conferred on the poor and the weak. There is a greedy disposition in those who would be rewarded for hospitality.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.14.12:054f8deb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-2",
+      "title": "The Instructor Book 2 on luke 14:12",
+      "excerpt": "Gatherings for the sake of mirth, and such entertainments as are called by ourselves, we name rightly suppers, dinners, and banquets, after the example of the Lord. But such entertainments the Lord has not called agapae. He says accordingly somewhere, \"When thou art called to a wedding, recline not on the highest couch; but when thou art called, fall into the lowest place;\" and elsewhere, \"When thou makest a dinner or a supper;\" and again, \"But when thou makest an entertainment, call the poor,\" for whose sake chiefly a supper ought to be made. And further, \"A certain man made a great supper, and called many.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.14.12:c7dc6392:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on luke 14:12",
+      "excerpt": "Of the benefit of good works and mercy. In Isaiah: \"Cry aloud,\" saith He, \"and spare not; lift up thy voice like a trumpet; tell my people their sins, and the house of Jacob their wickednesses. They seek me from day to day, and desire to know my ways, as a people which did righteousness, and did not forsake the judgment of God. They ask of me now a righteous judgment, and desire to approach to God, saying, What! because we have fasted, and Thou hast not seen: we have humiliated our souls, and Thou hast not known. For in the days of fasting are found your own wills; for either ye torment those who are subjected to you, or ye fast for strifes and judgments, or ye strike your neighbours with fists. For what do you fast unto me, that to-day your voice should be heard in clamour? This fast I have not chosen, save that a man should humble his soul. And if thou shalt bend thy neck like a ring, and spread under thee sackcloth and ashes, neither thus shall it be called an acceptable fast. Not such a fast have I chosen, saith the Lord; but loose every knot of unrighteousness, let go the chokings of impotent engagements. Send away the harassed into rest, and scatter every unrighteous contract. Break thy bread to the hungry, and bring the houseless poor into thy dwelling. If thou seest the naked, clothe him; and despise not them of thy own seed in thy house. Then shall thy seasonable light break forth, and thy garments shall quickly arise; and righteousness shall go before thee: and the glory of God shall surround thee. Then thou shalt cry out, and God shall hear thee; while thou art yet speaking, He shall say, Here I am.\" Concerning this same thing in Job: \"I have preserved the needy from the hand of the mighty; and I have helped the orphan, to whom there was no helper. The mouth of the widow blessed me, since I was the eye of the blind; I was also the foot of the lame, and the father of the weak.\" Of this same matter in Tobit: \"And I said to Tobias, My son, go and bring whatever poor man thou shalt find out of our brethren, who still has God in mind with his whole heart. Bring him hither, and he shall eat my dinner together with me. Behold, I attend thee, my son, until thou come.\" Also in the same place: \"All the days of thy life, my son, keep God in mind, and transgress not His precepts. Do justice all the days of thy life, and do not walk in the way of unrighteousness; because if thou act truly, there will be respect of thy works. Give alms of thy substance, and turn not thy face from any poor man. So shall it come to pass that the face of God shall not be turned away from thee. Even as thou hast, my son, so do: if thou hast abundant substance, give the more alms therefrom; if thou hast little, communicate even of that little. And do not fear when thou givest alms: thou layest up for thyself a good reward against the day of need; because alms delivereth from death, and does not suffer to go into darkness. Alms is a good office for all who do it in the sight of the most high God.\" On this same subject in Solomon in Proverbs: \"He that hath pity on the poor lendeth unto the Lord.\" Also in the same place: \"He that giveth to the poor shall never want; but he who turns away his eye shall be in much penury.\" Also in the same place: \"Sins are purged away by alms-giving and faith.\" Again, in the same place: \"If thine enemy hunger, feed him; and if he thirst, give him to drink: for by doing this thou shalt scatter live coals upon his head.\" Again, in the same place: \"As water extinguishes fire, so alms-giving extinguishes sin.\" In the same in Proverbs: \"Say not, Go away, and return, to-morrow I will give; when you can do good immediately. For thou knowest not what may happen on the coming day.\" Also in the same place: \"He who stoppeth his ears that he may not hear the weak, shall himself call upon God, and there shall be none to hear him.\" Also in the same place: \"He who has his conversation without reproach in righteousness, leaves blessed children.\" In the same in Ecclesiasticus: \"My son, if thou hast, do good by thyself, and present worthy offerings to God; remember that death delayeth not.\" Also in the same place: \"Shut up alms in the heart of the poor, and this will entreat for thee from all evil.\" Concerning this thing in the thirty-sixth Psalm, that mercy is beneficial also to one's posterity: \"I have been young, and I have also grown old; and I have not seen the righteous forsaken, nor his seed begging their bread. The whole day he is merciful, and lendeth; and his seed is in blessing.\" Of this same thing in the fortieth Psalm: \"Blessed is he who considereth over the poor and needy: in the evil day God will deliver him.\" Also in the cxith Psalm: \"He hath distributed, he hath given to the poor; his righteousness shall remain from generation to generation.\" Of this same thing in Hosea: \"I desire mercy rather than sacrifice, and the knowledge of God more than whole burnt-offerings.\" Of this same thing also in the Gospel according to Matthew: \"Blessed are they who hunger and thirst after righteousness: for they shall be satisfied.\" Also in the same place: \"Blessed are the merciful: for they shall obtain mercy.\" Also in the same place: \"Lay up for yourselves treasures in heaven, where neither moth nor rust doth corrupt, and where thieves do not dig through and steal: for where your treasure is, there will your heart be also.\" Also in the same place: \"The kingdom of heaven is like unto a merchantman seeking goodly pearls: and when he hath found a precious pearl, he went away and sold all that he had, and bought it.\" That even a small work is of advantage, also in the same place: \"And whoever shall give to drink to one of the least of these a cup of cold water in the name of a disciple, verily I say unto you, His reward shall not perish.\" That alms are to be denied to none, also in the same place: \"Give to every one that asketh thee; and from him who would wish to borrow, be not turned away.\" Also in the same place: \"If thou wilt enter into life, keep the commandments. He saith, Which? Jesus saith unto him, Thou shalt not kill, Thou shalt not commit adultery, Thou shalt not bear false witness, Honour thy father and mother: and, Thou shalt love thy neighbour as thyself. The young man saith unto Him, All these things have I observed: what lack I yet? Jesus saith unto him, If thou wilt be perfect, go and sell all that thou hast, and give to the poor, and thou shalt have treasure in heaven; and come, follow me.\" Also in the same place: \"When the Son of man shall come in His majesty, and all the angels with Him, then He shall sit on the throne of His glory: and all nations shall be gathered together before Him; and He shall separate them one from another, even as a shepherd separates the sheep from the goats: and He shall place the sheep on the right hand, but the goats on the left hand. Then shall the King say unto them that are on His right hand, Come, ye blessed of my Father, receive the kingdom prepared for you from the beginning of the world. For I was hungry, and ye gave me to eat: I was thirsty, and ye gave me to drink: I was a stranger, and ye took me in: naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me. Then shall the righteous answer Him, and say, Lord, when saw we Thee a stranger, and took Thee in: naked, and clothed Thee? And when saw we Thee sick, and in prison, and came to Thee? And the King, answering, shall say unto them, Verily I say unto you, Inasmuch as ye did it to one of the least of these my brethren, ye did it unto me. Then shall He say unto them who are on His left hand, Depart from me, ye cursed, into everlasting fire, which my Father hath prepared for the devil and his angels: for I was hungry, and ye gave me not to eat: I was thirsty, and ye gave me not to drink: I was a stranger, and ye took me not in: I was naked, and ye clothed me not: sick, and in prison, and ye visited me not. Then shall they also answer, and say, Lord, when saw we Thee hungry, or thirsty, or a stranger, or naked, or sick, or in prison, and did not minister unto Thee? And He shall answer them, Verily I say unto you, Inasmuch as ye did it not to one of the least of these, ye did it not unto me. And these shall go away into everlasting burning: but the righteous into life eternal.\" Concerning this same matter in the Gospel according to Luke: \"Sell your possessions, and give alms.\" Also in the same place: \"He who made that which is within, made that which is without also. But give alms, and, behold, all things are pure unto you.\" Also in the same place: \"Behold, the half of my substance I give to the poor; and if I have defrauded any one of anything, I restore him fourfold. And Jesus said unto him, that salvation has this day been wrought for this house, since he also is a son of Abraham.\" Of this same thing also in the second Epistle to the Corinthians: \"Let your abundance supply their want, that their abundance also may be the supplement of your want, that there may be equality: as it is written, He who had much had not excess; and he who had little had no lack.\" Also in the same place: \"He who soweth sparingly shall reap also sparingly; and he who soweth in blessing shall reap also of blessing. But let every one do as he has proposed in his heart: not as if sorrowfully, or of necessity: for God loveth a cheerful giver.\" Also in the same place: \"As it is written, He hath dispersed abroad; he hath given to the poor: his righteousness remaineth for ever.\" Likewise in the same place: \"Now he who ministereth seed to the sower, shall both supply bread to be eaten, and shall multiply your seed, and shall increase the growth of the fruits of your righteousness: that in all things ye may be made rich.\" Also in the same place: \"The administration of this service has not only supplied that which is lacking to the saints, but has abounded by much giving of thanks unto God.\" Of this same matter in the Epistle of John: \"Whoso hath this world's substance, and seeth his brother desiring, and shutteth up his bowels from him, how dwelleth the love of God in him? \" Of this same thing in the Gospel according to Luke: \"When thou makest a dinner or a supper, call not thy friends, nor brethren, nor neighbours, nor the rich; lest haply they also invite thee again, and a recompense be made thee. But when thou makest a banquet, call the poor, the weak, the blind, and lame: and thou shalt be blessed; because they have not the means of rewarding thee: but thou I shalt be recompensed in the resurrection of the I just.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:hcf-desert-fathers:luke.14.12:f3124d8c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-desert-fathers",
+      "workId": "hcf:work:hcf-desert-fathers:the-desert-fathers-sayings-of-the-early-christian-monks",
+      "title": "The Desert Fathers, Sayings of the Early Christian Monks on luke 14:12",
+      "excerpt": "A brother asked a hermit, 'My sister is poor. If I give her alms, am I giving alms to the poor?' He said, 'No.' The brother said, 'Why is that, abba?' He replied, 'Because your relationship draws you to prefer her.'",
+      "takeaway": "",
+      "sourceId": "hcf:source:books-google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c500"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.14.12:536e0df1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-v",
+      "title": "Against Heresies Book V on luke 14:12",
+      "excerpt": "And for this reason the Lord declared, \"When thou makest a dinner or a supper, do not call thy friends, nor thy neighbours, nor thy kinsfolk, lest they ask thee in return, and so repay thee. But call the lame, the blind, and the poor, and thou shall be blessed, since they cannot recompense thee, but a recompense shall be made thee at the resurrection of the just.\" And again He says, \"Whosoever shall have left lands, or houses, or parents, or brethren, or children because of Me, he shall receive in this world an hundred-fold, and in that to come he shall inherit eternal life.\" For what are the hundred-fold [rewards] in this word, the entertainments given to the poor, and the suppers for which a return is made? These are [to take place] in the times of the kingdom, that is, upon the seventh day, which has been sanctified, in which God rested from all the works which He created, which is the true Sabbath of the righteous, which they shall not be engaged in any earthly occupation; but shall have a table at hand prepared for them by God, supplying them with all sorts of dishes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
+    },
+    {
+      "id": "hcf:tertullian:luke.14.12:6fab4d78:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 14:12",
+      "excerpt": "What kind of persons does He bid should be invited to a dinner or a supper? Precisely such as he had pointed out by Isaiah: \"Deal thy bread to the hungry man; and the beggars-even such as have no home-bring in to thine house,\" because, no doubt, they are \"unable to recompense\" your act of humanity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.14.12"
     }
   ]
 }

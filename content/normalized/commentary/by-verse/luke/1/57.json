@@ -19,6 +19,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.57:717f8bb1:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0218-v57",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.57",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:57–58",
+      "excerpt": "For the bringing forth of saints causes the rejoicing of many; it is a common blessing; for justice is a public virtue, and therefore at the birth of a just man a sign of his future life is sent beforehand, and the grace of the virtue which is to follow is represented, being foreshadowed by the rejoicing of the neighbours.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.57:602588d4:0"
       ]
     },
     {
@@ -40,22 +72,73 @@
       ]
     },
     {
-      "id": "catena-luke-0218-v57",
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.57:3454cfd4:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.1.57",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:57–58",
-      "excerpt": "For the bringing forth of saints causes the rejoicing of many; it is a common blessing; for justice is a public virtue, and therefore at the birth of a just man a sign of his future life is sent beforehand, and the grace of the virtue which is to follow is represented, being foreshadowed by the rejoicing of the neighbours.",
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:57",
+      "excerpt": "(Metaphrastes.) For it is the custom for virgins to go away when the pregnant woman brings forth. But when she reached her own home, she went to no other place, but abode there until she knew the time of her delivery was at hand. And Joseph doubting, is instructed by an Angel.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.57"
+    },
+    {
+      "id": "hcf:bede:luke.1.57:1313fa2c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:57",
+      "excerpt": "Now Elizabeth's time had come to give birth, and she bore a son. Holy Scripture is accustomed to use the term \"fulfillment\" only in the birth, or condition, or action of good things, which signifies the perfection of life. Hence it is said, \"Elizabeth's time to give birth was fulfilled.\" \"The days were fulfilled for Mary to give birth\" (Luke II). \"Solomon completed building the house of the Lord\" (II Chron. III). \"Abraham, or another of the fathers, died, full of days.\" And, \"when the fullness of time had come, God sent his Son\" (Gal. IV). But on the contrary, the days of the wicked are empty and void. For men of blood and deceit will not live out half their days (Psalm LIV).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.57"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.1.57:ee59f297:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-1-31",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 1.31 on luke 1:57",
+      "excerpt": "The elderly Elizabeth gave birth to the last of the prophets, and Mary, a young girl, to the Lord of the angels. The daughter of Aaron gave birth to the voice in the desert, but the daughter of David to the strong God of the earth. The barren one gave birth to him who remits sins, but the Virgin gave birth to him who takes them away. Elizabeth gave birth to him who reconciled people through repentance, but Mary gave birth to him who purified the lands of uncleanness. The elder one lit a lamp in the house of Jacob, his father, for this lamp itself was John, while the younger one lit the Sun of Justice for all the nations. The angel announced to Zechariah, so that the slain one would proclaim the crucified one and that the hated one would proclaim the envied one. He who was to baptize with water would proclaim him who would baptize with fire and with the Holy Spirit. The light, which was not obscure, would proclaim the Sun of Justice. The one filled with the Spirit would proclaim concerning him who gives the Spirit. The priest calling with the trumpet would proclaim concerning the one who is to come at the sound of the trumpet at the end. The voice would proclaim concerning the Word, and the one who saw the dove would proclaim concerning him upon whom the dove rested, like the lightning before the thunder.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-1-31",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.1.57"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.57:6c00a665:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:57",
+      "excerpt": "It should be noted that concerning sinners it is not said \"the time was fulfilled for her to give birth,\" but this is said only where the one being born is righteous. For the births of sinners are usually imperfect and incomplete, and it would have been better for them if they had not been born.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.57"
     }
   ]
 }

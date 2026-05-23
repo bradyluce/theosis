@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.5.5:abd599cd:0"
       ]
     },
     {
@@ -76,14 +83,14 @@
       ]
     },
     {
-      "id": "catena-luke-0759-v5",
+      "id": "catena-luke-0766-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.5",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:4–7",
-      "excerpt": "Now in a mystery, the ship of Peter, according to Matthew, is beaten about by the waves, (Matt. 8:24.) according to Luke, is filled with fishes, in order that you might understand the Church at first wavering, at last abounding. The ship is not shaken which holds Peter; that is which holds Judas. In each was Peter; but he who trusts in his own merits is disquieted by another’s. Let us beware then of a traitor, lest through one we should many of us be tossed about. Trouble is found there where faith is weak, safety here where love is perfect. Lastly, though to others it is commanded, Let down…",
+      "excerpt": "But Peter beckons to his companions to help them. For many follow the labours of the Apostles, and first those who brought out the writings of the Gospels, next to whom are the other heads and shepherds of the Gospel, and those skilled in the teaching of the truth.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -109,6 +116,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.5.5:df7a4f71:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0759-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.5",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:4–7",
+      "excerpt": "Now in a mystery, the ship of Peter, according to Matthew, is beaten about by the waves, (Matt. 8:24.) according to Luke, is filled with fishes, in order that you might understand the Church at first wavering, at last abounding. The ship is not shaken which holds Peter; that is which holds Judas. In each was Peter; but he who trusts in his own merits is disquieted by another’s. Let us beware then of a traitor, lest through one we should many of us be tossed about. Trouble is found there where faith is weak, safety here where love is perfect. Lastly, though to others it is commanded, Let down…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.5.5:91a7f707:0"
       ]
     },
     {
@@ -141,42 +180,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0766-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.5",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:4–7",
-      "excerpt": "But Peter beckons to his companions to help them. For many follow the labours of the Apostles, and first those who brought out the writings of the Gospels, next to whom are the other heads and shepherds of the Gospel, and those skilled in the teaching of the truth.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0762-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.5",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:4–7",
-      "excerpt": "The net is broken, but the fish escape not, for the Lord preserves His own amid the violence of persecutors.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -220,6 +223,24 @@
       ]
     },
     {
+      "id": "catena-luke-0762-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.5",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:4–7",
+      "excerpt": "The net is broken, but the fish escape not, for the Lord preserves His own amid the violence of persecutors.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0757-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.5",
@@ -235,7 +256,82 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.5.5:94753e97:0"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.5.5:0af05c6d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-12",
+      "title": "COMMENTARY ON LUKE, HOMILY 12 on luke 5:5",
+      "excerpt": "He told Simon and his companions to sail off a little from the land and to let down the net for a draught. But they replied that they had been toiling the whole night and had caught nothing. However, in the name of Christ, they let down the net, and immediately it was full of fish. By a visible sign and by a miraculous type and representation, they were fully convinced that their labor would be rewarded, and the zeal displayed in spreading out the net of the gospel teaching would be fruitful. Within this net they should most certainly catch the shoals of the heathen. But note that neither Simon nor his companions could draw the net to land. Speechless from fright and astonishment—for their wonder had made them mute—they beckoned to their partners, to those who shared their labors in fishing, to come and help them in securing their prey. For many have taken part with the holy apostles in their labors, and still do so, especially those who inquire into the meaning of what is written in the holy Gospels. Yet besides them there are also others: the pastors and teachers and rulers of the people, who are skilled in the doctrines of truth. For the net is still being drawn, while Christ fills it, and calls to conversion those who, according to the Scripture phrase, are in the depths of the sea, that is to say, those who live in the surge and waves of worldly things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.5.5"
+    },
+    {
+      "id": "hcf:bede:luke.5.5:cf379107:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 5:5",
+      "excerpt": "And responding, Simon said to him: Master, we have toiled all night and caught nothing. But at your word, I will let down the net. --Unless the Lord builds the house, those who build it labor in vain (Psalm CXXVI). Unless the Lord illumines the hearts of the listeners, the teacher labors in the night. Unless the instruments of discourse are let down through the word of divine grace, the preacher casts the javelin of his voice in vain. Because the faith of the peoples is not produced by the wisdom of composed words, but by the gift of divine calling.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.5.5"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.5.5:23518dbc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-5-18",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 5.18 on luke 5:5",
+      "excerpt": "We have been toiling all night. This refers symbolically to the prophets. His teaching came down from on high on the world, which stands by way of parable for the sea. The two boats represent the circumcised and the uncircumcised. They made a sign to their companions. This refers symbolically to the seventy-two, for these disciples were too few in number for the catch and the harvest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-5-18",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.5.5"
+    },
+    {
+      "id": "hcf:hcf-maximus-of-turin:luke.5.5:3818753a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-maximus-of-turin",
+      "workId": "hcf:work:hcf-maximus-of-turin:sermon-110-2",
+      "title": "SERMON 110.2 on luke 5:5",
+      "excerpt": "That you may understand that the Lord was speaking of spiritual fishing, however, Peter says, \"Master, we toiled all night and took nothing! But at your word I will let down the nets.\" It is as if he were saying, \"Through the whole night our fishing has brought us nothing, and we have been laboring in vain. Now I will not fish with fishing gear but with grace, not with diligence acquired by skill but with the perseverance acquired by devotion.\" When Peter lets down the nets at the word, therefore, he is in fact letting down the teachings in Christ. When he unfolds the tightly woven and well-ordered nets at the command of the Master, he is really laying out words in the name of the Savior in a fitting and clear fashion. By these words he is able to save not creatures but souls. \"We toiled all night,\" he says, \"and took nothing.\" Peter, who beforehand was unable to see in order to make a catch, enduring darkness without Christ, had indeed toiled through the whole night. But when the Savior's light shone upon him the darkness scattered, and by faith he began to discern in the deep what he could not see with his eyes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-110-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c465"
+      ],
+      "targetVerseId": "kjva:luke.5.5"
     }
   ]
 }

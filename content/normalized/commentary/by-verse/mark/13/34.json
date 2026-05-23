@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:mark.13.34:07d61501:0"
       ]
     },
     {
@@ -69,6 +76,31 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.34:c745668d:0"
+      ]
+    },
+    {
+      "id": "catena-mark-1102-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.34",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "See again that He has not said, I know not when the time will be, but, Ye know not. For the reason why He concealed it was that it was better for us; for if, now that we know not the end, we are careless, what should we do if we knew it? We should keep on our wickednesses even unto the end. Let us therefore attend to His words; for the end comes at even, when a man dies in old age; at midnight, when he dies in the midst of his youth; and at cockcrow, when our reason is perfect within us; for when a child begins to live according to his reason, then the cock cries loud within him, rousing him…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -112,42 +144,6 @@
       ]
     },
     {
-      "id": "catena-mark-1102-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.13.34",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "See again that He has not said, I know not when the time will be, but, Ye know not. For the reason why He concealed it was that it was better for us; for if, now that we know not the end, we are careless, what should we do if we knew it? We should keep on our wickednesses even unto the end. Let us therefore attend to His words; for the end comes at even, when a man dies in old age; at midnight, when he dies in the midst of his youth; and at cockcrow, when our reason is perfect within us; for when a child begins to live according to his reason, then the cock cries loud within him, rousing him…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1097-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.13.34",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "For we must needs watch with our souls before the death of the body.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1101-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.34",
@@ -174,6 +170,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:32–37",
       "excerpt": "He thus concludes His discourse, that the last should hear from those who come first this precept which is common to all; wherefore He adds, But what I say unto you I say unto all, Watch.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1097-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.34",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "For we must needs watch with our souls before the death of the body.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

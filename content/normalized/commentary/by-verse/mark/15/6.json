@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-1282-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.6",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:6–15",
-      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1285-v6",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.6",
@@ -112,6 +94,31 @@
       ]
     },
     {
+      "id": "catena-mark-1282-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.6",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:6–15",
+      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.6:116b7ff6:0"
+      ]
+    },
+    {
       "id": "catena-mark-1287-v6",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.6",
@@ -163,6 +170,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:mark.15.6:24c03ec8:0"
       ]
     },
     {
@@ -181,6 +195,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.6:1b2d6420:0"
       ]
     }
   ]

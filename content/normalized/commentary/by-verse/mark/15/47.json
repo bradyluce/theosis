@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-mark-1358-v47",
+      "id": "catena-mark-1363-v47",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.47",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:42–47",
-      "excerpt": "But it was not an obscure person, nor a man of mean rank, who could come to the governor and obtain the body. There follows: And he bought fine linen, and took him down, and wrapped him in the linen.",
+      "excerpt": "We read in Luke, that His acquaintances and the women who had followed Him stood afar off. When these then who were known to Jesus returned home after the burial of His body, the women alone, who were bound to Him with a closer love, after following the funeral, took care to see how He was laid, that they might be able at a fitting season to offer Him the sacrifice of their devotion. But on the day of the parasceue, that is, of the preparation, the holy women, that is, humble souls, do the same, when they burn with love for the Saviour, and diligently follow the steps of His Passion in this…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.47:ae2070b4:1"
       ]
     },
     {
@@ -58,14 +65,14 @@
       ]
     },
     {
-      "id": "catena-mark-1363-v47",
+      "id": "catena-mark-1358-v47",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.47",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:42–47",
-      "excerpt": "We read in Luke, that His acquaintances and the women who had followed Him stood afar off. When these then who were known to Jesus returned home after the burial of His body, the women alone, who were bound to Him with a closer love, after following the funeral, took care to see how He was laid, that they might be able at a fitting season to offer Him the sacrifice of their devotion. But on the day of the parasceue, that is, of the preparation, the holy women, that is, humble souls, do the same, when they burn with love for the Saviour, and diligently follow the steps of His Passion in this…",
+      "excerpt": "But it was not an obscure person, nor a man of mean rank, who could come to the governor and obtain the body. There follows: And he bought fine linen, and took him down, and wrapped him in the linen.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -94,24 +101,6 @@
       ]
     },
     {
-      "id": "catena-mark-1359-v47",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.47",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:42–47",
-      "excerpt": "Burying the precious body preciously; for being a disciple of our Lord, he knew how greatly the Lord’s body ought to be honoured.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1362-v47",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.47",
@@ -130,6 +119,59 @@
       ]
     },
     {
+      "id": "catena-mark-1359-v47",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.47",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:42–47",
+      "excerpt": "Burying the precious body preciously; for being a disciple of our Lord, he knew how greatly the Lord’s body ought to be honoured.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.15.47:e5186802:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:47",
+      "excerpt": "But Mary Magdalene and Mary the mother of Joseph saw where he was laid. In Luke, we read that all his acquaintances and the women who followed him stood at a distance. Therefore, with Jesus' acquaintances returning to their own homes after his body was laid down, it was only the women who loved more fervently who cared to observe how he was placed, so they might offer him a fitting gift of devotion at an appropriate time. Likewise, until now, holy women on the day of Preparation, that is, the day of Preparation for the Sabbath, do the same, diligently following the footsteps of his passion in this world, where the future rest is to be prepared. And if they might perhaps be able to imitate with pious curiosity, they consider in what order the same passion was completed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.47"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.47:d12f40f1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 15:47",
+      "excerpt": "There follows: And Mary Magdalene and Mary the mother of Joses beheld where he was laid.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.15.47"
+    },
+    {
       "id": "catena-mark-1354-v47",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.47",
@@ -145,6 +187,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1364-v47",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.47",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:42–47",
+      "excerpt": "These things also fit the Jewish people, which finally is believing, which is ennobled by faith to become the child of Abraham. It lays aside its despair, it waits for the kingdom of God, it goes in to the Christians, that it may be baptized; which is implied by the name of Pilate, which is interpreted, ‘One who works with a hammer,’ that is, he who subdues the iron nations, that he may rule them with a rod of iron. It seeks for the sacrifice, that is, the viaticum, which is given to penitents at their last end, and wraps it up in a heart clean and dead to sin; it makes it firm in the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.47:76675a8f:0"
       ]
     },
     {
@@ -174,24 +241,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:42–47",
       "excerpt": "By the burial of Christ we rise again, by His going down into hell we mount up into heaven; here is found the honey in the mouth of the dead lion.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1364-v47",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.47",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:42–47",
-      "excerpt": "These things also fit the Jewish people, which finally is believing, which is ennobled by faith to become the child of Abraham. It lays aside its despair, it waits for the kingdom of God, it goes in to the Christians, that it may be baptized; which is implied by the name of Pilate, which is interpreted, ‘One who works with a hammer,’ that is, he who subdues the iron nations, that he may rule them with a rod of iron. It seeks for the sacrifice, that is, the viaticum, which is given to penitents at their last end, and wraps it up in a heart clean and dead to sin; it makes it firm in the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

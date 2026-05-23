@@ -4,6 +4,31 @@
   "verseNumber": 8,
   "entries": [
     {
+      "id": "catena-john-1465-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.11.8",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 11:6–10",
+      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.11.8:3e088dcd:0"
+      ]
+    },
+    {
       "id": "augustine-john-049-c11-v8",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.8",
@@ -19,24 +44,6 @@
         "augustine",
         "patristic",
         "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1462-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.11.8",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 11:6–10",
-      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
         "john"
       ]
     },
@@ -77,14 +84,14 @@
       ]
     },
     {
-      "id": "catena-john-1465-v8",
+      "id": "catena-john-1466-v8",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.8",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-1466-v8",
+      "id": "catena-john-1462-v8",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.8",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
+      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -147,6 +154,74 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.11.8:47b0d401:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-62",
+      "title": "Homily on the Gospel of John 62 on john 11:8",
+      "excerpt": "\"The Jews of late sought to stone Thee, and goest Thou thither again?\" They therefore had feared for Him also, but for the more part rather for themselves; for they were not yet perfect. So Thomas, shaking with fear, said, \"Let us go, that we also may die with Him,\" because Thomas was weaker and more unbelieving than the rest. But see how Jesus encourageth them by what He saith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.11.8"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.11.8:b28ed301:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 11:8",
+      "excerpt": "Since they were afraid both for Him, for they did not yet have perfect knowledge of Him, and were afraid for themselves, they say to Him: \"The Jews were just now seeking to stone You, and You are going there again?\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.11.8"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.11.8:76b80c15:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-7",
+      "title": "Commentary on the Gospel of John, Book 7 on john 11:8",
+      "excerpt": "But the disciples in their love for Him think it right to try to hinder Him, and moreover as men they suppose that He would be unwilling to put Himself in peril by going amongst the Jews. Wherefore also they remind Him of the madness of the Jews against Him, all but saying: \"Why again dost Thou seek to be amidst the unbelieving and ungrateful people who are not softened either by Thy words or even by Thy works? who even yet are of murderous intent against Thee, and who are boiling with passionate rage?\" Either then they say this, or their language signifies that He is leading them into evident danger. Nevertheless, they are obedient to their Teacher, as to One Who knows what is best.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.11.8"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.11.8:057fd66e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 11:8",
+      "excerpt": "1484 The fear of the disciples is mentioned when the Evangelist says, the disciples said to him, Rabbi, the Jews were but now seeking to stone you, and you are going there again? This was like saying: It seems that you are deliberately going to your death. Yet their fear was unreasonable, because the disciples had God with them as their protector, and one who is with God should not fear: \"Let us stand up together. Who is my adversary?\" (Is 50:8); \"The Lord is my light and my salvation: whom shall I fear?\" (Ps 26:2).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.11.8"
     }
   ]
 }

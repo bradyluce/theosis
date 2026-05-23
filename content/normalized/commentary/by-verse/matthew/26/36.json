@@ -20,53 +20,24 @@
         "patristic",
         "homily",
         "matthew"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-matthew-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.26.36:2f6e2b24:0"
       ]
     },
     {
-      "id": "catena-matt-3813-v36",
+      "id": "catena-matt-3828-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
       "topicSlugs": [],
       "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:36–38",
-      "excerpt": "Gethsemane is interpreted, ‘The rich valley;’ and there He bade His disciples sit a little while, and wait His return whilst He prayed alone for all.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3815-v36",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.36",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:36–38",
-      "excerpt": "He says, “Sit ye here, while I go and pray yonder,” because the disciples adhered inseparably to Christ; but it was His practice to pray apart from them, therein teaching us to study quiet and retirement for our prayers.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3819-v36",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.36",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:36–38",
-      "excerpt": "But we say that passible man was so taken by God the Son, that His Deity remained impassible. Indeed the Son of God suffered, not by imputation but actually, all that Scripture testifies, in respect of that part of Him which could suffer, viz. in respect of the substance that He had taken on Him.",
+      "excerpt": "He is sorrowful not because of death, but “unto death,” until He has set the Apostles free by His Passion. Let those who imagine Jesus to have taken an irrational soul, say how it is that He is thus sorrowful, and knows the season of His sorrow, for though the brute animals have sorrow, yet they know neither the causes of it, nor the time for which it must endure.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -95,6 +66,24 @@
       ]
     },
     {
+      "id": "catena-matt-3819-v36",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.36",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:36–38",
+      "excerpt": "But we say that passible man was so taken by God the Son, that His Deity remained impassible. Indeed the Son of God suffered, not by imputation but actually, all that Scripture testifies, in respect of that part of Him which could suffer, viz. in respect of the substance that He had taken on Him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-3823-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
@@ -103,6 +92,67 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:36–38",
       "excerpt": "Our Lord therefore sorrowed to prove the reality of the Man which He had taken upon Him; but that passion might bear no sway in His mind, “He began to be sorrowful” by pro-passion ; for it is one thing to be sorrowful, and another to be very sorrowful.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3830-v36",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.36",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:36–38",
+      "excerpt": "Or the sleep which He would have them forego is not bodily rest, for which at this critical time there was no room, but mental torpor, the sleep of unbelief.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3813-v36",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.36",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:36–38",
+      "excerpt": "Gethsemane is interpreted, ‘The rich valley;’ and there He bade His disciples sit a little while, and wait His return whilst He prayed alone for all.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.26.36:f6cda0f9:2"
+      ]
+    },
+    {
+      "id": "catena-matt-3815-v36",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.36",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:36–38",
+      "excerpt": "He says, “Sit ye here, while I go and pray yonder,” because the disciples adhered inseparably to Christ; but it was His practice to pray apart from them, therein teaching us to study quiet and retirement for our prayers.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -149,42 +199,6 @@
       ]
     },
     {
-      "id": "catena-matt-3828-v36",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.36",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:36–38",
-      "excerpt": "He is sorrowful not because of death, but “unto death,” until He has set the Apostles free by His Passion. Let those who imagine Jesus to have taken an irrational soul, say how it is that He is thus sorrowful, and knows the season of His sorrow, for though the brute animals have sorrow, yet they know neither the causes of it, nor the time for which it must endure.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3830-v36",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.36",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:36–38",
-      "excerpt": "Or the sleep which He would have them forego is not bodily rest, for which at this critical time there was no room, but mental torpor, the sleep of unbelief.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-3827-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
@@ -203,14 +217,14 @@
       ]
     },
     {
-      "id": "catena-matt-3818-v36",
+      "id": "catena-matt-3820-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
       "topicSlugs": [],
       "personId": "hilary-poitiers",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:36–38",
-      "excerpt": "These words, He began to be sorrowful and very heavy, are interpreted by heretics that fear of death assailed the Son of God, being (as they allege) neither begotten from eternity, nor existing in the Father’s infinite substance, but produced out of nothing by Him who created all things; and that hence He was liable to anguish of grief, and fear of death. And He who can fear death can also die; and He who can die, though He shall exist after death, yet is not eternal through Him who begot Him in past time. Had these faith to receive the Gospels, they would know that the Word was in the…",
+      "excerpt": "I suppose that there are some who offer here no other cause of His fear than His passion and death. I ask those who think thus, whether it stands with reason that He should have feared to die, who banished from the Apostles all fear of death, and exhorted them to the glory of martyrdom? How can we suppose Him to have felt pain and grief in the sacrament of death, who rewards with life those who die for Him? And what pangs of death could He fear, who came to death of the free choice of His own power? And if His Passion was to do Him honour, how could the fear of His Passion make Him sorrowful?",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 75,
@@ -221,14 +235,14 @@
       ]
     },
     {
-      "id": "catena-matt-3820-v36",
+      "id": "catena-matt-3818-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
       "topicSlugs": [],
       "personId": "hilary-poitiers",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:36–38",
-      "excerpt": "I suppose that there are some who offer here no other cause of His fear than His passion and death. I ask those who think thus, whether it stands with reason that He should have feared to die, who banished from the Apostles all fear of death, and exhorted them to the glory of martyrdom? How can we suppose Him to have felt pain and grief in the sacrament of death, who rewards with life those who die for Him? And what pangs of death could He fear, who came to death of the free choice of His own power? And if His Passion was to do Him honour, how could the fear of His Passion make Him sorrowful?",
+      "excerpt": "These words, He began to be sorrowful and very heavy, are interpreted by heretics that fear of death assailed the Son of God, being (as they allege) neither begotten from eternity, nor existing in the Father’s infinite substance, but produced out of nothing by Him who created all things; and that hence He was liable to anguish of grief, and fear of death. And He who can fear death can also die; and He who can die, though He shall exist after death, yet is not eternal through Him who begot Him in past time. Had these faith to receive the Gospels, they would know that the Word was in the…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 75,
@@ -257,6 +271,24 @@
       ]
     },
     {
+      "id": "catena-matt-3829-v36",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.36",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:36–38",
+      "excerpt": "Or otherwise; “My soul is sorrowful even unto death;” as much as to say, Sorrow is begun in me, but not to endure for ever, but only till the hour of death; that when I shall die for sin, I shall die also to all sorrow, whose beginnings only are in me. “Tarry ye here, and watch with me;” as much as to say, The rest I bade sit yonder as weak, removing them from this struggle; but you I have brought hither as being stronger, that ye may toil with me in watching and prayer. But abide you here, that every man may stay in his own rank and station; since all grace, however great, has its superior.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-3814-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
@@ -272,20 +304,27 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.26.36:cc70f8c9:1"
       ]
     },
     {
-      "id": "catena-matt-3829-v36",
+      "id": "catena-matt-3817-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
       "topicSlugs": [],
-      "personId": "origen",
+      "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:36–38",
-      "excerpt": "Or otherwise; “My soul is sorrowful even unto death;” as much as to say, Sorrow is begun in me, but not to endure for ever, but only till the hour of death; that when I shall die for sin, I shall die also to all sorrow, whose beginnings only are in me. “Tarry ye here, and watch with me;” as much as to say, The rest I bade sit yonder as weak, removing them from this struggle; but you I have brought hither as being stronger, that ye may toil with me in watching and prayer. But abide you here, that every man may stay in his own rank and station; since all grace, however great, has its superior.",
+      "excerpt": "He had accepted the disciples’ faith and the devotedness of their will, but He foresaw that they would be troubled and scattered abroad, and therefore bade them sit still in their places; for to sit belongs to one at ease, but they would be grievously troubled that they should have denied Him. In what fashion He went forward it describes, “And taking with him Peter and the two sons of Zebedee, he began to be sorrowful and very heavy;” the same to whom He had shewn His glory in the mount.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -308,17 +347,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.26.36:d1dc9504:0"
       ]
     },
     {
-      "id": "catena-matt-3812-v36",
+      "id": "catena-matt-3824-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
       "topicSlugs": [],
-      "personId": "rabanus-maurus",
+      "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:36–38",
-      "excerpt": "Luke says, “To the mount of Olives,” Luke 22:39 and John, “Went forth over the brook Cedron, where was a garden,” John 18:1 which is the same as this Gethsemane, and is a place where He prayed at the foot of mount Olivet, where is a garden, and a Church now built.",
+      "excerpt": "By this place are overthrown the Manichaeans, who said that He took an unreal body; and those also who said that He had not a real soul, but His Divinity in place of a soul. [marg. note: e.g. Apollinaris]",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -344,17 +390,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.26.36:0c5701eb:0"
       ]
     },
     {
-      "id": "catena-matt-3817-v36",
+      "id": "catena-matt-3812-v36",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.36",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
+      "personId": "rabanus-maurus",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:36–38",
-      "excerpt": "He had accepted the disciples’ faith and the devotedness of their will, but He foresaw that they would be troubled and scattered abroad, and therefore bade them sit still in their places; for to sit belongs to one at ease, but they would be grievously troubled that they should have denied Him. In what fashion He went forward it describes, “And taking with him Peter and the two sons of Zebedee, he began to be sorrowful and very heavy;” the same to whom He had shewn His glory in the mount.",
+      "excerpt": "Luke says, “To the mount of Olives,” Luke 22:39 and John, “Went forth over the brook Cedron, where was a garden,” John 18:1 which is the same as this Gethsemane, and is a place where He prayed at the foot of mount Olivet, where is a garden, and a Church now built.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -365,22 +418,107 @@
       ]
     },
     {
-      "id": "catena-matt-3824-v36",
+      "id": "hcf:jerome:matthew.26.36:d3c58f74:1",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.36",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:36–38",
-      "excerpt": "By this place are overthrown the Manichaeans, who said that He took an unreal body; and those also who said that He had not a real soul, but His Divinity in place of a soul. [marg. note: e.g. Apollinaris]",
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:36",
+      "excerpt": "(Verse 36.) Then Jesus came with them to a village called Gethsemane and said to his disciples, 'Sit here while I go over there and pray.' Gethsemane means 'very fertile valley,' in which he ordered the disciples to sit for a little while and wait for the Lord to return, while he prayed for everyone alone.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.36"
+    },
+    {
+      "id": "hcf:jerome:matthew.26.36:dd817959:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-4-26-37",
+      "title": "COMMENTARY ON MATTHEW 4.26.37 on matthew 26:36",
+      "excerpt": "Gethsemane is interpreted as the \"very fertile valley\" where the Lord ordered his disciples to sit down and wait for him to return while he prayed alone for everyone.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-4-26-37",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.36"
+    },
+    {
+      "id": "hcf:origen:matthew.26.36:4769c5f7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-89-3",
+      "title": "COMMENTARY ON MATTHEW 89.3 on matthew 26:36",
+      "excerpt": "Jesus brought his disciples from the upper room to a garden which was called Gethsemane because, after he was betrayed, he did not want to be arrested in the same place where he and his disciples had eaten the Passover. Even before he was betrayed, however, he thought it fitting to choose to pray in places devoted purely to prayer, for he knew that some locations are holier than others, as it is written: \"The place where you are standing is holy ground.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.26.36"
+    },
+    {
+      "id": "hcf:john-of-damascus:matthew.26.36:bed69c6c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-of-damascus",
+      "workId": "hcf:work:john-of-damascus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 26:36",
+      "excerpt": "(de. Fid. Orth. iii. 24.) But seeing that prayer is the sending up the understanding to God, or the asking of God things fitting, how did the Lord pray? For His understanding needed not to be lifted up to God, having been once united hypostatically to God the Word. Neither could He need to ask of God things fitting, for the One Christ is both God and Man. But giving in Himself a pattern to us, He taught us to ask of God, and to lift up our minds to Him. As He took on Him our passions, that by triumphing over them Himself, He might give us also the victory over them, so now He prays to open to us the way to that lifting up to God, to fulfil for us all righteousness, to reconcile His Father to us, to pay honour to Him as the First Cause, and to show that He is not against God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c749",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.26.36"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.26.36:49eaa541:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:36",
+      "excerpt": "Peter said unto Him, Even if I must die with Thee, yet will I not deny Thee. Likewise also said all the disciples. Then cometh Jesus with them unto a place called Gethsemane, and saith unto the disciples, Sit ye here, while I go away and pray yonder. Wanting to show that he had genuine love, Peter contradicted the Saviour. He had earlier been freed of the fear that he himself might be the betrayer, and now Peter, with great love but also out of a desire for honor, began to rise up against the others and even to oppose Christ. But equally the other disciples, before they had experienced the trials, in ignorance made promises that they would not be able to keep. Jesus went away to pray in private, for prayer requires quiet and solitude.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.26.36"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.26.36:be81e44f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:36",
+      "excerpt": "Then Jesus came with them into a country place which is called Gethsemani. In this part, the preparation by prayer is set forth; and he does three things. First, the intention to pray is set forth; second, the necessity of praying; third, the manner. The second is at and taking with him Peter etc.; the third at and going a little further, he fell upon his face. Concerning the first he does two things. First, the place is set forth; second, he announces his intention: and he said to his disciples. He says therefore then Jesus came with them into a country place which is called Gethsemani. What is said in John 18:1 seems contrary, that Jesus went out and came across the brook Cedron. Hence it should be noted that this country place was at the foot of Mount Olivet, and so it was the same place; and he used to come there after supper as if for a walk. Then he announces his intention to pray: and he said to his disciples: sit you here, till I go yonder and pray. Something similar is found in Gen. 22:5: Abraham said to his servants: stay you here with the ass; I and the boy will go with speed as far as yonder, and after we have worshipped, will return to you. But here Damascene raises a question. Prayer is the ascent of the mind to God, but the intellect of Christ was united to God; how then did God need what he was doing? Hence it should be said that he prayed not for himself, but for our benefit. And this benefit is twofold, because he prayed to give us an example, that in tribulation we should have recourse to the Lord; Ps. 119:1: in my trouble I cried to the Lord. Likewise, to show that he was from another, and that he had from another; hence he says: the Son cannot do anything of himself. And John 8:28: I do nothing of myself. Likewise, to exclude an error, because some said that the power of the Father and the Son was not the same; John 8:49: I honour my Father. He gives therefore an example of praying, and of how one should pray. For the first condition of prayer is that it ought to be humble: which is signified because he went into the valley; Judith 9:16: the prayer of the humble and the meek hath always pleased thee. Likewise, it ought to be devout; hence in Gethsemani, namely in the place of richness; Ps. 62:6: let my soul be filled as with marrow and fatness. Likewise, that it be solitary, as above at 6:6: enter into thy chamber, and having shut the door, pray to thy Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.26.36"
     }
   ]
 }

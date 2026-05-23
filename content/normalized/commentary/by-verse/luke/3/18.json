@@ -40,6 +40,24 @@
       ]
     },
     {
+      "id": "catena-luke-0522-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.3.18",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 3:18–20",
+      "excerpt": "And as in the Gospel according to St. John it is related of Christ that He spoke many other things, so also in this place we must understand Luke to say the same of John the Baptist, since certain things are announced by John too great to be entrusted to writing. But we marvel at John, because among them that are born of women there was not a greater than he, for by his good deeds he had been exalted to so high a fame for virtue, that by many he was supposed to be Christ. But what is much more marvellous he feared not Herod, nor dreaded death, as it follows, But Herod the tetrarch being…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0520-v18",
       "relation": "verse",
       "targetVerseId": "kjva:luke.3.18",
@@ -55,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.3.18:cd729cba:0"
       ]
     },
     {
@@ -73,25 +98,48 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.3.18:517a1ac9:1"
       ]
     },
     {
-      "id": "catena-luke-0522-v18",
+      "id": "hcf:origen:luke.3.18:090fea02:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.3.18",
       "topicSlugs": [],
       "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 3:18–20",
-      "excerpt": "And as in the Gospel according to St. John it is related of Christ that He spoke many other things, so also in this place we must understand Luke to say the same of John the Baptist, since certain things are announced by John too great to be entrusted to writing. But we marvel at John, because among them that are born of women there was not a greater than he, for by his good deeds he had been exalted to so high a fame for virtue, that by many he was supposed to be Christ. But what is much more marvellous he feared not Herod, nor dreaded death, as it follows, But Herod the tetrarch being…",
+      "workId": "hcf:work:origen:homilies-on-the-gospel-of-luke-27-1",
+      "title": "HOMILIES ON THE GOSPEL OF LUKE 27.1 on luke 3:18",
+      "excerpt": "One who teaches the word of the gospel proclaims not just one thing but many.… Therefore John also preached \"other things\" to the people, which have not been recorded. But consider how many things there are that have been recorded. He proclaimed Christ. He pointed him out. He preached the baptism of the Holy Spirit. He taught the tax collectors salvation and the soldiers discipline. He taught that the threshing floor was being cleansed, trees cut down, and the rest, which the account in the Gospel narrates. Hence, apart from these things that have been written down, he is shown to have proclaimed other things which are not written down. For the Scripture says, \"He also proclaimed many other things to the people and encouraged them.\"",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.3.18"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.3.18:4540ce7f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 3:18",
+      "excerpt": "Good teaching is truly consolation and is rightly called the Gospel.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.3.18"
     },
     {
       "id": "catena-luke-0525-v18",

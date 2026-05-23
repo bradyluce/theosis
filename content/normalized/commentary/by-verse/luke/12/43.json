@@ -4,6 +4,24 @@
   "verseNumber": 43,
   "entries": [
     {
+      "id": "catena-luke-2085-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.43",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:41–46",
+      "excerpt": "But our Lord not only by the honours kept in store for the good, but by threats of punishment upon the bad, leads the hearer to correction, as it follows, But if that servant shall say in his heart, My Lord delayeth his coming.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2077-v43",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.43",
@@ -40,24 +58,6 @@
       ]
     },
     {
-      "id": "catena-luke-2085-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.43",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:41–46",
-      "excerpt": "But our Lord not only by the honours kept in store for the good, but by threats of punishment upon the bad, leads the hearer to correction, as it follows, But if that servant shall say in his heart, My Lord delayeth his coming.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2074-v43",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.43",
@@ -66,42 +66,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:41–46",
       "excerpt": "Now to the courageous rightly belong the great and difficult of God’s holy commandments, but to those who have not yet attained to such virtue, belong those things from which all difficulty is excluded. Our Lord therefore uses a very obvious example, to shew that the above-mentioned command is suited to those who have been admitted into the rank of disciples, for it follows, And the Lord said, Who then is that faithful steward?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2075-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.43",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:41–46",
-      "excerpt": "Or else, the form of the first command is a general one adapted to all, but the following example seems to be proposed to the stewards, that is, the priests; and therefore it follows, And the Lord said, Who then is that faithful and wise steward, whom his Lord shall make ruler over his household, to give, them their portion of meat in due season?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2081-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.43",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:41–46",
-      "excerpt": "He says not, ‘doing,’ as if by chance, but so doing. For not only conquest is honourable, but to contend lawfully, which is to perform each thing as we have been commanded.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,6 +91,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.43:a55a5ed8:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2075-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.43",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:41–46",
+      "excerpt": "Or else, the form of the first command is a general one adapted to all, but the following example seems to be proposed to the stewards, that is, the priests; and therefore it follows, And the Lord said, Who then is that faithful and wise steward, whom his Lord shall make ruler over his household, to give, them their portion of meat in due season?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -141,6 +130,49 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2081-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.43",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:41–46",
+      "excerpt": "He says not, ‘doing,’ as if by chance, but so doing. For not only conquest is honourable, but to contend lawfully, which is to perform each thing as we have been commanded.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.12.43:0e2100f1:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2088-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.43",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:41–46",
+      "excerpt": "In this servant is declared the condemnation of all evil rulers, who, forsaking the fear of the Lord, not only give themselves up to pleasures, but also provoke with injuries those who are put under them. Although these words may be also understood figuratively, meaning to corrupt the hearts of the weak by an evil example; and to eat, drink, and be drunken, to be absorbed in the vices and allurements of the world, which overthrow the mind of man. But concerning his punishment it is added, The Lord of that servant will come in a day when he looketh not for him, that is, the day of his judgment…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -181,6 +213,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.12.43:6615326e:1"
       ]
     },
     {
@@ -192,24 +231,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:41–46",
       "excerpt": "Observe that it is counted among the vices of a bad servant that he thought the coming of his Lord slow, yet it is not numbered among the virtues of the good that he hoped it would come quickly, but only that he ministered faithfully. There is nothing then better than to submit patiently to be ignorant of that which can not be known, but to strive only that we be found worthy.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2088-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.43",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:41–46",
-      "excerpt": "In this servant is declared the condemnation of all evil rulers, who, forsaking the fear of the Lord, not only give themselves up to pleasures, but also provoke with injuries those who are put under them. Although these words may be also understood figuratively, meaning to corrupt the hearts of the weak by an evil example; and to eat, drink, and be drunken, to be absorbed in the vices and allurements of the world, which overthrow the mind of man. But concerning his punishment it is added, The Lord of that servant will come in a day when he looketh not for him, that is, the day of his judgment…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -238,14 +259,14 @@
       ]
     },
     {
-      "id": "catena-luke-2072-v43",
+      "id": "catena-luke-2084-v43",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.43",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:41–46",
-      "excerpt": "Peter, to whom the Church had already been committed, as having the care of all things, inquires whether our Lord put forth this parable to all. As it follows, Then Peter said unto him, Lord, speakest thou this parable unto us, or even unto all?",
+      "excerpt": "Or, he will make him ruler over all that he hath, not only over His own household, but that earthly things as well as heavenly shall obey him. As it was with Joshua the son of Nun, and Elias, the one commanding the sun, the other the clouds; and all the Saints as God’s friends use the things of God. Whosoever also passes his life virtuously, and has kept in due submission his servants, that is, anger and desire, supplies to them their portion of food in due season; to anger indeed that he may feel it against those who hate God, but to desire that he may exercise the necessary provision for…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -253,6 +274,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.12.43:c2f1ca99:1"
       ]
     },
     {
@@ -264,6 +292,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:41–46",
       "excerpt": "The above-mentioned parable relates to all the faithful in common, but now hear what suits the Apostles and teachers. For I ask, where will be found the steward, that possesses in himself faithfulness and wisdom? for as in the management of goods, whether a man be careless yet faithful to his master, or else wise yet unfaithful, the things of the master perish; so also in the things of God there is need of faithfulness and wisdom. For I have known many servants of God, and faithful men, who because they were unable to manage ecclesiastical affairs, have destroyed not only possessions, but…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2087-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.43",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:41–46",
+      "excerpt": "Now from not considering the time of our departure, there proceed many evils. For surely if we thought that our Lord was coming, and that the end of our life was at hand, we should sin the less. Hence it follows, And shall begin to strike the man servants and maidens, and to eat and drink and be drunken.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -292,32 +338,14 @@
       ]
     },
     {
-      "id": "catena-luke-2084-v43",
+      "id": "catena-luke-2072-v43",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.43",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:41–46",
-      "excerpt": "Or, he will make him ruler over all that he hath, not only over His own household, but that earthly things as well as heavenly shall obey him. As it was with Joshua the son of Nun, and Elias, the one commanding the sun, the other the clouds; and all the Saints as God’s friends use the things of God. Whosoever also passes his life virtuously, and has kept in due submission his servants, that is, anger and desire, supplies to them their portion of food in due season; to anger indeed that he may feel it against those who hate God, but to desire that he may exercise the necessary provision for…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2087-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.43",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:41–46",
-      "excerpt": "Now from not considering the time of our departure, there proceed many evils. For surely if we thought that our Lord was coming, and that the end of our life was at hand, we should sin the less. Hence it follows, And shall begin to strike the man servants and maidens, and to eat and drink and be drunken.",
+      "excerpt": "Peter, to whom the Church had already been committed, as having the care of all things, inquires whether our Lord put forth this parable to all. As it follows, Then Peter said unto him, Lord, speakest thou this parable unto us, or even unto all?",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -361,7 +389,48 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:isidore-pelusium:luke.12.43:49d48d3c:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.43:ec28fc2e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:43",
+      "excerpt": "If he is found acting in this way, then he is blessed, and the Lord \"will set him over all his possessions,\" not only over servants, but will set him over everything, deeming him worthy of the highest degree, so that earthly and heavenly things will be subject to him, as was the case, for example, with Joshua and Elijah. One of them commanded the sun, and the other the clouds of heaven (Josh. 10:12; 1 Kings 17:1). Indeed, all the saints in general, as friends of God, make use of the possessions of their Friend. And among friends, all things are usually held in common (Acts 4:32). And everyone who, while living a tranquil life, practices active virtue and subjects to himself the slavish passions — anger and desire — giving to each of them its determined measure of nourishment at the proper time: to anger, for example, hatred toward those who hate the Lord and indignation against His enemies (Ps. 139:21); to desire, concern only for what is necessary for the flesh, while directing one's whole aspiration toward God — everyone such as this is blessed: he will attain contemplation as well, and will be set over all the possessions belonging to the Lord; he will be deemed worthy with his contemplative mind to behold and observe all things — not only that which exists not in and of itself, but also that which exists in the proper sense, that is, eternally.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.43"
+    },
+    {
+      "id": "hcf:bede:luke.12.43:e3f7200d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:43",
+      "excerpt": "Blessed is that servant whom, when the Lord comes, He finds so doing. Truly I say to you that He will set him over all His possessions. Just as there is a great difference in merits between good listeners and good teachers, so too is there in rewards. For when He comes and finds these watching, He will make them sit down to eat, and passing by, He will serve them. But those whom He finds faithfully and wisely dispensing the word of food to the family entrusted to them, He will set over all that He possesses, that is, over all the heavenly joys of the kingdom, not that they alone may hold the Lord, but that they may more abundantly enjoy eternal possession with the other saints. For those who are learned shall shine as the brightness of the firmament, and those who instruct many to righteousness as the stars for endless eternities (Dan. XII). And the Apostle says: The elders who rule well are worthy of double honor, especially those who labor in the word and doctrine (I Tim. V).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.43"
     }
   ]
 }

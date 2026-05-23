@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.4.29:7915e82e:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.4.29:98768bf3:0"
       ]
     },
     {
@@ -91,6 +105,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.4.29:0e2de1cb:1"
       ]
     },
     {
@@ -110,6 +131,57 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.4.29:a03787b5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-12",
+      "title": "COMMENTARY ON LUKE, HOMILY 12 on luke 4:29",
+      "excerpt": "So they threw him out of their city, pronouncing by their action their own condemnation. So they confirmed what the Savior had said. They themselves were banished from the city that is above, for not having received Christ. That he might not convict them only of impiety in words, he permitted their disrespect of him to proceed to deeds. Their violence was irrational and their envy untamed. Leading him to the brow of the hill, they sought to throw him from the cliff. But he went through the midst of them without taking any notice, so to say, of their attempt. He did not refuse to suffer—he had come to do that very thing—but to wait for a suitable time. Now at the beginning of his preaching, it would have been the wrong time to have suffered before he had proclaimed the word of truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.4.29"
+    },
+    {
+      "id": "hcf:bede:luke.4.29:514b291b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 4:29",
+      "excerpt": "And they led him, it says, to the brow of the hill on which their city was built, that they might throw him down headlong. But he, passing through the midst of them, went his way. O inheritance worse than the disciples' teacher! The devil tempts the Lord with words, the Jews with deeds. The former says, Throw yourself down; the latter attack to throw him down. Indeed, the Lord had ascended to the brow of the hill to be thrown down, but through the midst of them, with the mind of the furious suddenly changed or stunned, he descended, for he preferred to heal rather than to destroy them, so that seeing their wicked attempts frustrated, they might desist from demanding his death henceforth. For the hour of his passion had not yet come, which was not to be on any Sabbath, but on the Preparation of the Passover. Nor had he yet approached the place of passion, which was not in Nazareth, but prefigured in Jerusalem by the blood of sacrifices. Nor had he chosen the kind of death, which was proclaimed from the beginning as crucifixion. Therefore, he wished not to be thrown down by the Nazarenes, not to be stoned by the Jerusalemites, not to be killed among the Bethlehemite children by Herod, nor to be consummated by any other death. For what sign of regal power would shine forth in such a death, whereby the forehead of the faithful might be armed? But only the banner of the cross was awaited, the figure of which could be traced with the swiftest motion of the right hand against the temptations of the malignant enemy, and the same figure could also be considered a type of singular monarchy. As the Apostle, expounding the triumph of the cross, says: At the name of Jesus every knee should bow, of those in heaven, and on earth, and under the earth (Philippians 2). For this is why the peaks of the same cross extend to the heavens, the depths reach the underworld, and the arms cover the earth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.4.29"
+    },
+    {
+      "id": "hcf:tertullian:luke.4.29:0ee172f7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 4:29",
+      "excerpt": "And yet even at Nazareth He is not remarked as having preached anything new, whilst in another verse He is said to have been rejected by reason of a simple proverb.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.4.29"
     }
   ]
 }

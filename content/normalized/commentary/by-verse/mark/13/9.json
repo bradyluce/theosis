@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-mark-1039-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.13.9",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:9–13",
-      "excerpt": "The Lord shews how Jerusalem and the province of Judæa merited the infliction of such calamities, in the following words: But take heed to yourselves: for they shall deliver you up to councils; and in the synagogues ye shall be beaten. For the greatest cause of destruction to the Jewish people was, that after slaying the Saviour, they also tormented the heralds of His name and faith with wicked cruelty.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1042-v9",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.9",
@@ -55,6 +37,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1039-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.9",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:9–13",
+      "excerpt": "The Lord shews how Jerusalem and the province of Judæa merited the infliction of such calamities, in the following words: But take heed to yourselves: for they shall deliver you up to councils; and in the synagogues ye shall be beaten. For the greatest cause of destruction to the Jewish people was, that after slaying the Saviour, they also tormented the heralds of His name and faith with wicked cruelty.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.9:2c0e8ebb:1"
       ]
     },
     {
@@ -109,6 +116,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.13.9:bb14719a:1"
+      ]
+    },
+    {
+      "id": "catena-mark-1047-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.9",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:9–13",
+      "excerpt": "And this He says, that on hearing it, they might prepare themselves to bear persecutions and ills with greater patience. Then He brings them consolation, saying, And ye shall be hated of all men for my name's sake; for the being hated for Christ's sake is a sufficient reason for suffering persecutions patiently, for it is not the punishment, but the cause, that makes the martyr. Again, that which follows is no small comfort amidst persecution: But he that shall endure unto the end, the same shall be saved.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -130,22 +162,55 @@
       ]
     },
     {
-      "id": "catena-mark-1047-v9",
+      "id": "hcf:bede:mark.13.9:7efc00fb:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.9",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:9",
+      "excerpt": "But watch yourselves, for they will deliver you up to councils, and you will be beaten in synagogues, and you will stand before kings and governors for my sake, for a testimony to them. Indeed, the very fact that the Jewish people, either alone or as the greatest cause, were the cause of their own destruction, because after the killing of the Lord Savior, they tormented the heralds and confessors of his name and faith with impious cruelty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.9:5f14f47c:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:9–13",
-      "excerpt": "And this He says, that on hearing it, they might prepare themselves to bear persecutions and ills with greater patience. Then He brings them consolation, saying, And ye shall be hated of all men for my name's sake; for the being hated for Christ's sake is a sufficient reason for suffering persecutions patiently, for it is not the punishment, but the cause, that makes the martyr. Again, that which follows is no small comfort amidst persecution: But he that shall endure unto the end, the same shall be saved.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:9",
+      "excerpt": "But you, He says, take heed, for they will deliver you up to councils. He introduces the discourse about them at the right moment — that they will be delivered up to councils — so that from the common calamities they might receive some consolation in their own personal afflictions. But when the Lord said, \"before governors and kings you shall be brought for My sake,\" by these words too He gave no small consolation to the disciples, namely that they would suffer for His sake. \"For a testimony against them,\" that is, so that they would be without excuse and would see their own condemnation in this very fact: that while persecuting you, they cannot overcome the truth.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.9"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.13.9:3e6569b0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-35",
+      "title": "Forty Gospel Homilies, Homily 35 on mark 13:9",
+      "excerpt": "But because all these things come not from the injustice of the one striking but from the merit of the world that suffers, the deeds of wicked men are set forth first when it is said: \"But before all these things they will lay their hands upon you and persecute you, and deliver you to synagogues, leading you before kings and governors for my name's sake. But these things will happen to you for a testimony.\" For a testimony, clearly, of whom, unless of those who either inflict death by persecuting or who see and do not imitate? For the death of the just is a help to the good and a testimony against the wicked, so that the perverse may perish without excuse from the very thing whence the elect take an example that they may live.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.13.9"
     },
     {
       "id": "catena-mark-1043-v9",

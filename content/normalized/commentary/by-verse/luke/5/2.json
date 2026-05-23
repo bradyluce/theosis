@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.5.2:44e485d2:0"
       ]
     },
     {
@@ -145,6 +152,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.5.2:378d62da:2"
       ]
     },
     {
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.5.2:60fd5bd6:0"
       ]
     },
     {
@@ -182,6 +203,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.5.2:4be81f7b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 5:2",
+      "excerpt": "But the fishermen had disembarked and were washing their nets. The fishermen are the teachers of the Church, who, having caught us in the net of faith and raised us from the depths to the moon, bring us to the land of the living like fish to the shore. For just as the nets are entwined, so are the words of the preachers, which do not lose those they have caught in faith. Hence, the nets are called \"retenia\" as if they are retaining. But these nets are sometimes let down for a catch, sometimes washed and folded, because not every time is suitable for teaching, but now the teacher's tongue must be exercised, now he must take care of himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.5.2"
+    },
+    {
+      "id": "hcf:bede:luke.5.2:b26d3744:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 5:2",
+      "excerpt": "And He saw two boats standing by the lake. The two boats placed by the lake symbolize the circumcision and the foreskin. It is well said that Jesus saw them, for the Lord knows who are His in both peoples. And He leads their heart from the waves of this world to the tranquility of future life, as if to the solidity of the shore, by living, that is by mercifully avoiding.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.5.2"
     }
   ]
 }

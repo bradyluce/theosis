@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.10.23:ea47ea67:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.10.23:66c2ea2a:0"
       ]
     },
     {
@@ -55,6 +69,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.10.23:56ee8ea5:0"
       ]
     },
     {
@@ -91,6 +112,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.10.23:0d2c06cb:0"
       ]
     },
     {
@@ -128,6 +156,92 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.23:c701dce5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:23",
+      "excerpt": "Turning to the disciples, the Lord blesses them and indeed all who look upon Him with faith as He walks in the flesh and works miracles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.10.23"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.10.23:90df9412:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-67",
+      "title": "COMMENTARY ON LUKE, HOMILY 67 on luke 10:23",
+      "excerpt": "He also gave the holy apostles power and might even to raise the dead, cleanse lepers, heal the sick, and by the laying on of hands to call down from heaven the Holy Spirit on anyone they wanted. He gave them power to bind and to loose people's sins. His words are \"I say to you, whatever you will bind on earth, will be bound in heaven. Whatever you will loose on earth, will be loosed in heaven.\" These are the things we see ourselves possessing. Blessed are our eyes and the eyes of those of all who love him. We have heard his wonderful teaching. He has given us the knowledge of God the Father, and he has shown him to us in his own nature. The things that were by Moses were only types and symbols. Christ has revealed the truth to us. He has taught us that not by blood and smoke, but rather by spiritual sacrifices, we must honor him who is spiritual, immaterial and above all understanding.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-67",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.10.23"
+    },
+    {
+      "id": "hcf:bede:luke.10.23:7eabfbb4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:23",
+      "excerpt": "And turning to his disciples, he said: Blessed are the eyes that see the things you see, etc. Not the eyes of the scribes and Pharisees, who see only the body of the Lord, but those blessed eyes that can recognize his mysteries, about which it is said: And you have revealed them to little children. Blessed are the eyes of the little ones, to whom the Son is worthy to reveal both himself and the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.23"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.10.23:d069bd7e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:23",
+      "excerpt": "But that you may know that as the Son revealed the Father to whom He will, the Father also reveals the Son to whom He will, hear our Lord's words, Blessed art thou, Simon Barjona, for flesh and blood have not revealed it to thee, but my Father which is in heaven.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.23"
+    },
+    {
+      "id": "hcf:tertullian:luke.10.23:6c3450aa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 10:23",
+      "excerpt": "If you look also into the next words, \"Blessed are the eyes which see the things which ye see, for I tell you that prophets have not seen the things which ye see,\" you will find that they follow from the sense above, that no man indeed had come to the knowledge of God as he ought to have done, since even the prophets had not seen the things which were being seen under Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.10.23"
     }
   ]
 }

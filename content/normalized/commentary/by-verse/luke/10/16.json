@@ -4,24 +4,6 @@
   "verseNumber": 16,
   "entries": [
     {
-      "id": "catena-luke-1591-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.16",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:13–16",
-      "excerpt": "Our Lord mourns over these cities for our example, because shedding tears and bitter lamentations over those who are insensible to grief, is no slight antidote, tending both to the correction of the insensible, and to the remedy and consolation of those who mourn over them. Again, He draws them over to what is good, not only by lamenting over them, but also by alarming them. Hence it follows, But it shall be more tolerable for Tyre and Sidon, &c. This we ought also to listen to. For not upon them alone, but upon us also, He hath passed sentence, if we receive not the guests who come to us,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1595-v16",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.16",
@@ -30,6 +12,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:13–16",
       "excerpt": "But if the word of God reaches to us also, and appoints us in the Apostles place, beware of despising us, lest that reach unto Him which you have done unto us.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.10.16:ed797ad7:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1591-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.16",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:13–16",
+      "excerpt": "Our Lord mourns over these cities for our example, because shedding tears and bitter lamentations over those who are insensible to grief, is no slight antidote, tending both to the correction of the insensible, and to the remedy and consolation of those who mourn over them. Again, He draws them over to what is good, not only by lamenting over them, but also by alarming them. Hence it follows, But it shall be more tolerable for Tyre and Sidon, &c. This we ought also to listen to. For not upon them alone, but upon us also, He hath passed sentence, if we receive not the guests who come to us,…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.10.16:aa0e9629:1"
       ]
     },
     {
@@ -146,6 +160,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.10.16:661d8769:2"
       ]
     },
     {
@@ -165,6 +186,297 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.10.16:fa81ebc5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:16",
+      "excerpt": "But he who despises me despises Him who sent me. For without doubt the master is heard in the disciple, and the father is honored in the son. It may also be understood this way: He who despises you despises me. He who does not show mercy to one of my least brothers, does not do it to me, because I too took the form of a servant and the condition of a poor person for their sake. But he who despises me, unwilling to believe in God, and trampling on the Son of God, despises Him who sent me, because I and the Father are one.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:bede:luke.10.16:fd7cbd9e:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:16",
+      "excerpt": "It may also be understood as follows, He who despiseth you, despiseth me, that is, he who shows not mercy to one of the least of My brethren, neither shows it to Me. But he who despiseth me, (refusing to believe on the Son of God,) despiseth him that sent me. (Matt. 25:40.) For I and my Father are one. (John 10:30.)",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:bede:luke.10.16:9ab04f29:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:16",
+      "excerpt": "He who hears you hears me, and he who despises you despises me. So that anyone, by hearing or despising the preacher of the Gospel, would learn that he is not scorning lowly persons, but the Lord the Savior, and indeed the Father Himself. For it follows:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.10.16:0ac5f098:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-63",
+      "title": "COMMENTARY ON LUKE, HOMILY 63 on luke 10:16",
+      "excerpt": "Consider the great authority he gave the holy apostles, how he declared them praiseworthy, and how he decorated them with the highest honors.… \"He that hears you,\" he says, \"hears me, and he that rejects you, rejects me; and he that rejects me, rejects him that sent me.\" O what great honor! What incomparable dignities! O what a gift worthy of God! Although men, the children of earth, he clothes them with a godlike glory. He entrusts his words to them that they who resist anything or venture to reject them may be condemned. When they are rejected, he assures them that he suffers this. Then again, he shows that the guilt of this wickedness, as being committed against him, rises up to God the Father. See with the eyes of the mind how vast a height he raises the sin committed by men in rejecting the saints! What a wall he builds around them! How great security he contrives for them! He makes them such as must be feared and in every way plainly provides for their being uninjured.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-63",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.10.16:c1cae362:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-63",
+      "title": "COMMENTARY ON LUKE, HOMILY 63 on luke 10:16",
+      "excerpt": "Christ gives those who love instruction the assurance that whatever is said concerning him by the holy apostles or evangelists is to be received necessarily without any doubt and to be crowned with the words of truth. He who hears them, hears Christ. For the blessed Paul also said, \"You desire proof that Christ is speaking in me.\" Christ himself somewhere also said to the holy disciples, \"For it is not you that speak, but the Spirit of your Father that speaks in you.\" Christ speaks in them by the consubstantial Spirit. If it is true, and plainly it is, that they speak by Christ, how can they err? He affirms that he who does not hear them, does not hear Christ, and that he who rejects them rejects Christ, and with him the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-63",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.10.16:70976329:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on luke 10:16",
+      "excerpt": "As to a good shepherd, let the lay person honour him, love him, reverence him as his lord, as his master, as the high priest of God, as a teacher of piety. For he that heareth him, heareth Christ; and he that rejecteth him, rejecteth Christ; and he who does not receive Christ, does not receive His God and Father: for, says He, \"He that heareth you, heareth me; and he that rejecteth you, rejecteth me; and he that rejecteth me, rejecteth Him that sent me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.10.16:40c7d46a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-8",
+      "title": "Constitutions of the Holy Apostles Book 8 on luke 10:16",
+      "excerpt": "But now our discourse hastens as to the principal part, that is, the constitution of ecclesiastical affairs, that so, when ye have learned this constitution from us, ye who are ordained bishops by us at the command of Christ, may perform all things according to the commands delivered you, knowing that he that heareth us heareth Christ, and he that heareth Christ heareth His God and Father, to whom be glory for ever. Amen.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.10.16:1cd22b5d:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-8",
+      "title": "Constitutions of the Holy Apostles Book 8 on luke 10:16",
+      "excerpt": "Now this we all in common do charge you, that every one remain in that rank which is appointed him, and do not transgress his proper bounds; for they are not ours, but God's. For says the Lord: \"He that heareth you, heareth me; and he that heareth me, heareth Him that sent me.\" And, \"He that despiseth you, despiseth me; and he that despiseth me, despiseth Him that sent me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.10.16:4d1b34fe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:who-is-the-rich-man-that-shall-be-saved",
+      "title": "Who is the Rich Man that Shall Be Saved? on luke 10:16",
+      "excerpt": "He then is first who loves Christ; and second, he who loves and cares for those who have believed on Him. For whatever is done to a disciple, the Lord accepts as done to Himself, and reckons the whole as His. \"Come, ye blessed of My Father, inherit the kingdom prepared for you from the foundation of the world. For I was an hungered, and ye gave Me to eat: I was thirsty, and ye gave Me to drink: and I was a stranger, and ye took Me in: I was naked and ye clothed Me: I was sick, and ye visited Me: I was in prison, and ye came to Me. Then shall the righteous answer, saying, Lord, when saw we Thee hungry, and fed Thee? or thirsty, and gave Thee drink? And when saw we Thee a stranger, and took Thee in? or naked, and clothed Thee? Or when saw we Thee sick, and visited Thee? or in prison, and came to Thee? And the King answering, shall say to them, Verily I say unto you, in as much as ye have done it unto one of the least of these My brethren, ye have done it unto Me.\"\r\n\r\nAgain, on the opposite side, to those who have not performed these things, \"Verily I say unto you, in as much as ye have not done it unto one of the least of these, ye have not done it to Me.\" And in another place, \"He that receiveth you; receiveth Me; and he that receiveth not you, rejecteth Me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.10.16:ba75512a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-liv",
+      "title": "Epistle LIV on luke 10:16",
+      "excerpt": "For since it is written, \"Neither shall revilers inherit the kingdom of God,\" and again the Lord says in His Gospel, \"Whosoever shall say to his brother, Thou fool; and whosoever shall say, Raca, shall be in danger of the Gehenna of fire,\" how can they evade the rebuke of the Lord the avenger, who heap up such expressions, not only on their brethren, but also on the priests, to whom is granted such honour of the condescension of God, that whosoever should not obey his priest, and him that judgeth here for the time, was immediately to be slain? In Deuteronomy the Lord God speaks, saying, \"And the man that will do presumptuously, and will not hearken unto the priest or to the judge, whosoever he shall be in those days, that man shall die; and all the people, when they hear, shall fear, and shall do no more wickedly.\" Moreover, to Samuel when he was despised by the Jews, God says; \"They have not despised thee, but they have despised me.\" And the Lord also in the Gospel says, \"He that heareth you, heareth me, and Him that sent me; and he that rejecteth you, rejecteth me; and he that rejecteth me, rejecteth Him that sent me.\" And when he had cleansed the leprous man, he said, \"Go, show thyself to the priest.\" And when afterwards, in the time of His passion, He had received a buffet from a servant of the priest, and the servant said to Him, \"Answerest thou the high priest so? \" the Lord said nothing reproachfully against the high priest, nor detracted anything from the priest's honour; but rather asserting His own innocence, and showing it, He says, \"If I have spoken evil, bear witness of the evil; but if well, why smitest thou me? \" Also subsequently, in the Acts of the Apostles, the blessed Apostle Paul, when it was said to him, \"Revilest thou God's priest? \" -although they had begun to be sacrilegious, and impious, and bloody, the Lord having already been crucified, and had no longer retained anything of the priestly honour and authority-yet Paul, considering the name itself, however empty, and the shadow, as it were, of the priest, said, \"I wist not, brethren, that he was the high priest: for it is written, Thou shalt not speak evil of the ruler of thy, people.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.10.16:fb014dc3:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lxviii",
+      "title": "Epistle LXVIII on luke 10:16",
+      "excerpt": "Unless perchance I was a priest to you before the persecution, when you held communion with me, and ceased to be a priest after the persecution! For the persecution, when it came, lifted you to the highest sublimity of martyrdom. But it depressed me with the burden of proscription, since it was publicly declared, \"If any one holds or possesses any of the property of Caecilius Cyprian, bishop of the Christians; \"so that even they who did not believe in God appointing a bishop, could still believe in the devil proscribing a bishop. Nor do I boast of these things, but with grief I bring them forward, since you constitute yourself a judge of God and of Christ, who says to the apostles, and thereby to all chief rulers, who by vicarious ordination succeed to the apostles: \"He that heareth you, heareth me; and he that heareth me, heareth Him that sent me; and he that despiseth you, despiseth me, and Him that sent me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.10.16:c5113cfd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iii",
+      "title": "Against Heresies Book III on luke 10:16",
+      "excerpt": "Faithfully and strenuously shalt thou resist them in defence of the only true and life-giving faith, which the Church has received from the apostles and imparted to her sons. For the Lord of all gave to His apostles the power of the Gospel, through whom also we have known the truth, that is, the doctrine of the Son of God; to whom also did the Lord declare: \"He that heareth you, heareth Me; and he that despiseth you, despiseth Me, and Him that sent Me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:justin-martyr:luke.10.16:1341a176:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "justin-martyr",
+      "workId": "hcf:work:justin-martyr:the-first-apology-chapter-lxiii",
+      "title": "The First Apology, Chapter LXIII on luke 10:16",
+      "excerpt": "And He is called Angel and Apostle; for He declares whatever we ought to know, and is sent forth to declare whatever is revealed; as our Lord Himself says, \"He that heareth Me, heareth Him that sent Me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c165"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:hcf-pope-pontian:luke.10.16:52cfe9c3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pope-pontian",
+      "workId": "hcf:work:hcf-pope-pontian:untitled-commentary",
+      "title": "Commentary on luke 10:16",
+      "excerpt": "And elsewhere: He that heareth you, heareth me; and he that despiseth you, despiseth me; and he that despiseth me, despiseth Him that sent me.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:tertullian:luke.10.16:a7ea0db4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 10:16",
+      "excerpt": "But if their churlishness and inhospitality were to receive no vengeance from Him, for what purpose does He premise a testimony, which surely forbodes some threats? Furthermore, when the Creator also, in the book of Deuteronomy, forbids the reception of the Ammonites and the Moabites into the church, because, when His people came from Egypt, they fraudulently withheld provisions from them with inhumanity and inhospitality, it will be manifest that the prohibition of intercourse descended to Christ from Him. The form of it which He uses-\"He that despiseth you, despiseth me\" -the Creator had also addressed to Moses: \"Not against thee have they murmured, but against me.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.16:efde7822:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:16",
+      "excerpt": "Then, lest those being sent out to preach should say, \"Why then do You send us if some cities will not receive us?\", He says: do not grieve; he who rejects you rejects Me and My Father; therefore the insult does not stop at you, but ascends to God. So let it be a consolation to you that the offense is directed (not at you, but) at God. Likewise, on the other hand, do not boast or exalt yourselves because some listen to you; for this is not your doing, but the work of My grace.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
+    },
+    {
+      "id": "hcf:titus-bostra:luke.10.16:348d2ac6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "titus-bostra",
+      "workId": "hcf:work:titus-bostra:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:16",
+      "excerpt": "But at the same time He herein consoles His disciples, as if He said, Say not why are we about to suffer reproach. Let your speech be with moderation. I give you grace, upon Me your reproaches fall.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c378",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.16"
     }
   ]
 }

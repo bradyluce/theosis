@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.17.7:54009a44:0"
       ]
     },
     {
@@ -55,24 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2578-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.7",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:7–10",
-      "excerpt": "Our Lord teaches us that it is no more than the just and proper right of a master to require, as their bounden duty, subjection from servants, adding, Doth he thank that servant because he did the things that were commanded him? I trow not. Here then is the disease of pride cut away. Why boastest thou thyself? Dost thou know that if thou payest not thy debt, danger is at hand, but if thou payest, thou doest nothing thankworthy? As St. Paul says, For though I preach the Gospel I have nothing to glory of, for necessity is laid upon me, yea, woe is unto me if I preach not the Gospel. (1 Cor.…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.17.7:c4f966ec:0"
       ]
     },
     {
@@ -94,21 +90,28 @@
       ]
     },
     {
-      "id": "catena-luke-2574-v7",
+      "id": "catena-luke-2578-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.7",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:7–10",
-      "excerpt": "Or the servant departs from the field when giving up for a time his work of preaching, the teacher retires into his own conscience, pondering his own words or deeds within himself. To whom our Lord does not at once say, Go from this mortal life, and sit down to meat, that is, refresh thyself in the everlasting resting-place of a blessed life.",
+      "excerpt": "Our Lord teaches us that it is no more than the just and proper right of a master to require, as their bounden duty, subjection from servants, adding, Doth he thank that servant because he did the things that were commanded him? I trow not. Here then is the disease of pride cut away. Why boastest thou thyself? Dost thou know that if thou payest not thy debt, danger is at hand, but if thou payest, thou doest nothing thankworthy? As St. Paul says, For though I preach the Gospel I have nothing to glory of, for necessity is laid upon me, yea, woe is unto me if I preach not the Gospel. (1 Cor.…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.17.7:21c7b83b:0"
       ]
     },
     {
@@ -148,6 +151,31 @@
       ]
     },
     {
+      "id": "catena-luke-2574-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.7",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:7–10",
+      "excerpt": "Or the servant departs from the field when giving up for a time his work of preaching, the teacher retires into his own conscience, pondering his own words or deeds within himself. To whom our Lord does not at once say, Go from this mortal life, and sit down to meat, that is, refresh thyself in the everlasting resting-place of a blessed life.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.17.7:e62aea1b:1"
+      ]
+    },
+    {
       "id": "catena-luke-2572-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.7",
@@ -163,7 +191,82 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.17.7:90647406:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.17.7:4161a174:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:7",
+      "excerpt": "Having said this about faith, the Lord adds another very necessary teaching. What kind? The teaching that one must not be proud of virtuous attainments. Since faith accomplishes much and makes the one who possesses it a fulfiller of the commandments, adorning him also with miracles, and from this a person can easily fall into arrogance, the Lord therefore warns the apostles not to be exalted by their attainments, presenting a fine example. \"Who among you,\" He says, \"having a servant,\" and so forth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.17.7"
+    },
+    {
+      "id": "hcf:bede:luke.17.7:dc435882:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:7",
+      "excerpt": "Who, when he returns from the field, would immediately say to him, \"Come along, sit down,\" and would not say to him, \"Prepare what I may eat\"? The servant returns from the field when, after pausing from the work of preaching for a time, the teacher returns to his conscience, and, retreating from public speaking to the court of his heart, privately reviews his acts or words with himself. To whom the Lord does not immediately say, \"Come along, sit down,\" that is, \"pass from this mortal life, and be refreshed in the blessed abode of eternal life.\" For He will say this later, but in the meantime, after the shepherding and farming, He orders him to prepare what he may eat at home, that is, to display the labor of open speech, as well as the humility of self-reflection. For the Lord deigns to enter such a temple of conscience and desires to partake most willingly of such a meal. For behold, He says, I stand at the door and knock, if anyone hears my voice and opens the door, I will come in to him and dine with him, and he with me (Apoc. III).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.7"
+    },
+    {
+      "id": "hcf:bede:luke.17.7:488290d6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:7",
+      "excerpt": "Which of you, having a servant plowing or tending sheep. This parable teaches that faith, the more excellent it is outwardly in virtues, should become all the more humble within in conscience. For a servant plowing or tending sheep is understood as any teacher of the Church. About whom the Lord said: No one who puts his hand to the plow and looks back is fit for the kingdom of God. And to another who testified his love for Him, He responded for the third time: Feed my sheep.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.7"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.17.7:f76b9c12:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on luke 17:7",
+      "excerpt": "That no one should be uplifted in his labour. In Solomon, in Ecclesiasticus: \"Extol not thyself in doing thy work.\" Also in the Gospel according to Luke: \"Which of you, having a servant ploughing, or a shepherd, says to him when he cometh from the field, Pass forward and recline? But he says to him, Make ready somewhat that I may sup, and gird thyself, and minister to me, until I eat and drink; and afterwards thou shalt eat and drink? Does he thank that servant because he has done what was commanded him? So also ye, when ye shall have done that which is commanded you, say, We are unprofitable servants; we have done what we had to do.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.17.7"
     }
   ]
 }

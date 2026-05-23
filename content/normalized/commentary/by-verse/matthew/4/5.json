@@ -4,24 +4,6 @@
   "verseNumber": 5,
   "entries": [
     {
-      "id": "catena-matt-0451-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.5",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:5–7",
-      "excerpt": "“Took him,” not because the Lord was weak, but the enemy proud; he imputed to a necessity what the Saviour did willingly.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-0460-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
@@ -58,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-matt-0465-v5",
+      "id": "catena-matt-0473-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
-      "excerpt": "Observe that Scripture is brought forward by the Lord only with an apt meaning, but by the Devil irreverently; for that where it is written, “He shall give his Angels charge over thee,” is not an exhortation to cast Himself headlong.",
+      "excerpt": "It should be noted, that the required texts are taken from the book of Deuteronomy only, that He might shew the sacraments of the second Law.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -73,6 +55,31 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0451-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.5",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:5–7",
+      "excerpt": "“Took him,” not because the Lord was weak, but the enemy proud; he imputed to a necessity what the Saviour did willingly.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.4.5:2c9945e2:1"
       ]
     },
     {
@@ -84,6 +91,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
       "excerpt": "The false Scripture darts of the Devil He brands with the true shield of Scripture.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0465-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.5",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:5–7",
+      "excerpt": "Observe that Scripture is brought forward by the Lord only with an apt meaning, but by the Devil irreverently; for that where it is written, “He shall give his Angels charge over thee,” is not an exhortation to cast Himself headlong.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -112,24 +137,6 @@
       ]
     },
     {
-      "id": "catena-matt-0473-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.5",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:5–7",
-      "excerpt": "It should be noted, that the required texts are taken from the book of Deuteronomy only, that He might shew the sacraments of the second Law.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-0454-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
@@ -145,6 +152,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:matthew.4.5:7a9ed1d6:1"
       ]
     },
     {
@@ -184,6 +198,31 @@
       ]
     },
     {
+      "id": "catena-matt-0467-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.5",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:5–7",
+      "excerpt": "It should be noted, that though our Saviour suffered Himself to be placed by the Devil on a pinnacle of the temple, yet refused to come down also at his command, giving us an example, that whosoever bids us ascend the strait way of truth we should obey. But if he would again cast us down from the height of truth and virtue to the depth of error we should not hearken to him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.4.5:f4f202ac:0"
+      ]
+    },
+    {
       "id": "catena-matt-0452-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
@@ -199,17 +238,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.4.5:4147dd3c:0"
       ]
     },
     {
-      "id": "catena-matt-0453-v5",
+      "id": "catena-matt-0471-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
+      "personId": "rabanus-maurus",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
-      "excerpt": "This shews that the Devil lies in wait for Christ’s faithful people even in the sacred places.",
+      "excerpt": "Otherwise, it was a suggestion to Him, as man, that He should seek by requiring some miracle to know the greatness of God’s power.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -235,17 +281,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.4.5:0ccff22d:0"
       ]
     },
     {
-      "id": "catena-matt-0467-v5",
+      "id": "catena-matt-0453-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
       "topicSlugs": [],
-      "personId": "rabanus-maurus",
+      "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
-      "excerpt": "It should be noted, that though our Saviour suffered Himself to be placed by the Devil on a pinnacle of the temple, yet refused to come down also at his command, giving us an example, that whosoever bids us ascend the strait way of truth we should obey. But if he would again cast us down from the height of truth and virtue to the depth of error we should not hearken to him.",
+      "excerpt": "This shews that the Devil lies in wait for Christ’s faithful people even in the sacred places.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -256,17 +309,119 @@
       ]
     },
     {
-      "id": "catena-matt-0471-v5",
+      "id": "hcf:jerome:matthew.4.5:ad9b094a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-1-4-5-7",
+      "title": "COMMENTARY ON MATTHEW 1.4.5-7 on matthew 4:5",
+      "excerpt": "\"Throw yourself down.\" It is the devil's voice by which he desires that everyone should fall down. \"Throw yourself,\" he says. He is able to persuade, but he cannot cast down. \"He will give his angels charge concerning you; and upon their hands they shall bear you up, lest you dash your foot against a stone.\" This we read in the ninetieth psalm. Clearly the prophecy here is not about Christ but about a holy man. The devil therefore is a poor interpreter of the Scriptures. Certainly, if he really knew what was written about the Savior, he should have also said what follows in the same psalm against him: \"You will tread on the lion and the adder, the young lion and the serpent you will trample underfoot.\" Concerning the help of the angels, he speaks as though to a feeble man. Concerning his being trampled underfoot, he is silent like an artful dodger.Jesus said to him, \"It is written further, 'You shall not tempt the Lord your God.' \" The false arrows from the devil's own scriptures he breaks with the true shield of the Scripture. And it should be noted that he cited the necessary testimony from Deuteronomy that he might show the sacraments of the second law.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-1-4-5-7",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.4.5"
+    },
+    {
+      "id": "hcf:jerome:matthew.4.5:43e38b47:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 4:5",
+      "excerpt": "(Verse 5.) Then the devil took him to the holy city. This assumption, which is called, does not come from the weakness of the Lord, but from the pride of the enemy, who thinks that the will of the Savior is a necessity. From this passage, however, it is understood what is meant by what is written in another place: They went into the holy city and appeared to many (Matthew 27:53).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.4.5"
+    },
+    {
+      "id": "hcf:gregory-the-great:matthew.4.5:9bd51c89:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-16",
+      "title": "Forty Gospel Homilies, Homily 16 on matthew 4:5",
+      "excerpt": "But behold, when it is said that God made man was taken up by the devil either onto a high mountain or into the holy city, the mind recoils, human ears are terrified to hear this. Yet we recognize that these things are not incredible if we consider other things that were done to him. Certainly the devil is the head of all the wicked, and all the wicked are members of this head. Was not Pilate a member of the devil? Were not the Jews who persecuted and the soldiers who crucified Christ members of the devil? What wonder is it then if he allowed himself to be led onto a mountain by him, who also allowed himself to be crucified by his members?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:matthew.4.5"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.4.5:20c0df51:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-3-4",
+      "title": "Commentary on Matthew 3.4 on matthew 4:5",
+      "excerpt": "The devil works at temptation by leading the Lord from the highest to the lowest things to reduce him to humiliation. He set him on the pinnacle of the temple, as if towering over the laws and the prophets. He knew indeed that the angels would be prompt to minister to the Son of God, lest he dash his foot against a stone. He could trample underfoot the serpent and the adder and tread on the lion and the dragon. Concerning those lower things which were taken for granted, the devil kept silent, but by mentioning the higher things, he wanted in some way to elicit obedience from the tempted One, hoping to hear an echo of his own glory in a vote of confidence from the Lord of majesty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.4.5"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.4.5:1eb89e3b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 4:5",
+      "excerpt": "Then the devil taketh Him up into the Holy City, and setteth Him on a pinnacle of the temple, and saith unto Him, If Thou be the Son of God, cast Thyself down: for it is written, He shall give His angels charge concerning thee, and in their hands they shall bear thee up, lest at any time thou dash thy foot against a stone. \"If Thou be the Son of God.\" As if he were saying, \"I do not believe the voice from heaven; but if Thou art the Son of God, show me.\" Yet, O foul one, though He is the Son of God, would He have thrown Himself over the precipice? That is the mark of your own savagery, to hurl over the precipice those who are demonized; but it is the mark of God to save. But the words \"In their hands they shall bear thee up\" were not written of Christ, but of the saints who are in need of angelic help (Ps. 90:11-12). Christ, being God, does not need such help.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.4.5"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.4.5:c73786a7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 4:5",
+      "excerpt": "Then the devil took him to the holy city. Having described the first temptation, the second is now presented, namely, about vain glory. The order is fitting, namely, that after the devil saw himself defeated concerning a bodily vice, he should try him on vain glory or pride: \"Because pride lies in wait for good works, to destroy them\" (Augustine in The Rule). Regarding this temptation he does three things: first, the place of the temptation is given, secondly, the attack or endeavor of the temptation (v. 6); thirdly, Christ's resistance (v. 7).\r\n\r\nIt should be noted that Luke makes this the third temptation; here it is the second. But according to Augustine it makes no difference, because everything mentioned here is also mentioned by Luke. Furthermore, neither in Luke nor here is there any indication which was first and which was second. But Rabanus says that Luke is interested in the historical order; consequently, he arranged them as they occurred. Matthew, on the other hand, followed the nature of the temptation, because after the temptations to gluttony and vain glory, the temptation to ambition follows. For that is the way Adam was tempted: first, to gluttony, \"On whatsoever day you shall eat of it, you shall die the death\" (Gen 2:17); secondly, to glory: \"You will be as gods\" (Gen 3:5); thirdly, to greed or ambition: \"Knowing good and evil.\"\r\n\r\nBut why does he say He took him? For this word \"taken\" implies force. Jerome answers that the evangelist was describing the devil's opinion, because what Christ endured through virtue, the devil took as done by his own power. He says holy, either because holy actions were performed there, namely, temporal sacrifices and the like, or on account of the holiness of the fathers of those living there. Hence, from an ancient custom he calls it holy, although it had ceased to be holy: \"How the faithful city has become a harlot, she that was full of justice\" (Is 1:21). But it should be noted that Mark (1:13) says that \"he was in the desert forty days tempted by Satan.\" From this it seems that all the temptations were in the desert. Therefore, it does not seem correct to say then the devil took him... There are two responses to this: some say that all the temptations were in the desert and that they occurred according to imaginal vision, namely, that Christ so imagined and also permitted. Others say that they occurred according to bodily vision and that the devil appeared to him in a bodily form. This seems to be implied, because he says that he took him into the holy city. Some say that the reason this pertains to the desert is that Jerusalem had been deserted by the Lord. But it is better to say that what is stated in Mark (1:13) should not be understood as meaning that all the temptation took place in the desert, for he does not say this, but that he was tempted by Satan. Therefore, one must admit that the first temptation was in the desert and the other two outside the desert. But the question remains: How did the devil take him up? Some say that he carried him; others (and better) that he persuaded him to go; and Christ by the discretion of his wisdom went to Jerusalem.\r\n\r\nAnd set him on the pinnacle of the temple. It should be recalled from 1 Kings (c. 6) that Solomon made three stories in the temple with a flat roof. Next to the temple he made pinnacles by which men could ascend. Concerning this he says here: He set him on the pinnacle of the temple. But whether he went to the first, or second, or third, the evangelist does not say. But it is certain that he did ascend.\r\n\r\nBut did the people not see the devil carrying Christ? The answer according to those who say that he carried him is that Christ by his own power did what others could not see. Or it can be said that the devil was in the shape of a man, and it was a custom for men to ascend that way.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.4.5"
+    },
+    {
+      "id": "catena-matt-0461-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
       "topicSlugs": [],
-      "personId": "rabanus-maurus",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
-      "excerpt": "Otherwise, it was a suggestion to Him, as man, that He should seek by requiring some miracle to know the greatness of God’s power.",
+      "excerpt": "How does he expect to discover by this proposition whether He be the Son of God or not? For to fly through the air is not proper to the Divine nature, for it is not useful to any. If then any were to attempt to fly when challenged to it, he would be acting from ostentation, and would belong rather to the Devil than to God. If it is enough to a wise man to be what he is, and he has no wish to seem what he is not, how much more should the Son of God hold it not necessary to shew what He is; He of whom none can know so much as He is in Himself?",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "rank": 55,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -289,35 +444,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.4.5:5bbc0f12:0"
       ]
     },
     {
-      "id": "catena-matt-0455-v5",
+      "id": "catena-matt-0464-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
       "topicSlugs": [],
-      "personId": "gloss-ordinaria",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
-      "excerpt": "The Devil places us on high places by exalting with pride, that he may dash us to the ground again.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0457-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.5",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:5–7",
-      "excerpt": "Observe here that all these things were done with bodily sense, and by careful comparison of the context it seems probable that the Devil appeared in human form.",
+      "excerpt": "For the Son of God in truth is not borne of Angels, but Himself bears them, or if He be borne in their arms, it is not from weakness, lest He dash His foot against a stone, but for the honour. O thou Devil, thou hast read that the Son of God is borne in Angels’ arms, hast thou not also read that He shall tread upon the asp and basilisk? But the one text he brings forward as proud, the other he omits as crafty.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -346,50 +490,14 @@
       ]
     },
     {
-      "id": "catena-matt-0459-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.5",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:5–7",
-      "excerpt": "He set Him on a pinnacle of the temple when he would tempt Him through ambition, because in this seat of the doctors he had before taken many through the same temptation, and therefore thought that when set in the same seat, He might in like manner be puffed up with vain pride.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0461-v5",
+      "id": "catena-matt-0470-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
-      "excerpt": "How does he expect to discover by this proposition whether He be the Son of God or not? For to fly through the air is not proper to the Divine nature, for it is not useful to any. If then any were to attempt to fly when challenged to it, he would be acting from ostentation, and would belong rather to the Devil than to God. If it is enough to a wise man to be what he is, and he has no wish to seem what he is not, how much more should the Son of God hold it not necessary to shew what He is; He of whom none can know so much as He is in Himself?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0464-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.5",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:5–7",
-      "excerpt": "For the Son of God in truth is not borne of Angels, but Himself bears them, or if He be borne in their arms, it is not from weakness, lest He dash His foot against a stone, but for the honour. O thou Devil, thou hast read that the Son of God is borne in Angels’ arms, hast thou not also read that He shall tread upon the asp and basilisk? But the one text he brings forward as proud, the other he omits as crafty.",
+      "excerpt": "Yet He says not, Thou shalt not tempt me thy Lord God; but, “Thou shalt not tempt the Lord thy God;” which every man of God when tempted by the Devil might say; for whoso tempts a man of God, tempts God.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -418,14 +526,57 @@
       ]
     },
     {
-      "id": "catena-matt-0470-v5",
+      "id": "catena-matt-0459-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.5",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
+      "personId": "gloss-ordinaria",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:5–7",
-      "excerpt": "Yet He says not, Thou shalt not tempt me thy Lord God; but, “Thou shalt not tempt the Lord thy God;” which every man of God when tempted by the Devil might say; for whoso tempts a man of God, tempts God.",
+      "excerpt": "He set Him on a pinnacle of the temple when he would tempt Him through ambition, because in this seat of the doctors he had before taken many through the same temptation, and therefore thought that when set in the same seat, He might in like manner be puffed up with vain pride.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.4.5:89658e76:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0457-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.5",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:5–7",
+      "excerpt": "Observe here that all these things were done with bodily sense, and by careful comparison of the context it seems probable that the Devil appeared in human form.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0455-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.5",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:5–7",
+      "excerpt": "The Devil places us on high places by exalting with pride, that he may dash us to the ground again.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

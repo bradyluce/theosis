@@ -4,14 +4,14 @@
   "verseNumber": 20,
   "entries": [
     {
-      "id": "catena-mark-0227-v20",
+      "id": "catena-mark-0231-v20",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.20",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:19–22",
-      "excerpt": "The Lord leads the Apostles, when they were elected, into a house, as if admonishing them, that after having received the Apostleship, they should retire to look on their own consciences. Wherefore it is said, And they came into a house, and the multitude came together again, so that they could not eat bread.",
+      "excerpt": "Now there is a great difference between those who do not understand the word of God from slowness of intellect, such as those, who are here spoken of, and those who purposely blaspheme, of whom it is added, And the Scribes which came down from Jerusalem, &c. For what they could not deny, they endeavour to pervert by a malicious interpretation, as if they were not the works of God, but of a most unclean spirit, that is, of Beelzebub, who was the God of Ekron. For 'Beel' means Baal himself, and 'zebub' a fly; the meaning of Beelzebub therefore is the man of flies, on account of the filth of the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-0231-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.20",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:19–22",
-      "excerpt": "Now there is a great difference between those who do not understand the word of God from slowness of intellect, such as those, who are here spoken of, and those who purposely blaspheme, of whom it is added, And the Scribes which came down from Jerusalem, &c. For what they could not deny, they endeavour to pervert by a malicious interpretation, as if they were not the works of God, but of a most unclean spirit, that is, of Beelzebub, who was the God of Ekron. For 'Beel' means Baal himself, and 'zebub' a fly; the meaning of Beelzebub therefore is the man of flies, on account of the filth of the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0233-v20",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.20",
@@ -76,6 +58,31 @@
       ]
     },
     {
+      "id": "catena-mark-0227-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.20",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:19–22",
+      "excerpt": "The Lord leads the Apostles, when they were elected, into a house, as if admonishing them, that after having received the Apostleship, they should retire to look on their own consciences. Wherefore it is said, And they came into a house, and the multitude came together again, so that they could not eat bread.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.3.20:a9fe430b:2"
+      ]
+    },
+    {
       "id": "catena-mark-0230-v20",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.20",
@@ -91,7 +98,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.3.20:53e02cd9:1"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.3.20:3e4c2d07:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 3:20",
+      "excerpt": "And again the crowd gathered, so much so that they could not even eat bread. Oh, how happy is the occupation of the Savior, how blessed is the multitude of the gathering crowd, to whom there was so much eagerness to hear the word of God, so much care to obtain salvation, that to the author of salvation and to those who were with Him, not even the hour of eating remained free from the solace of imparting life to the needy! Would that, Lord Jesus, in our times as well, you might grant as much grace to your faithful, who, by their studiousness in learning, hinder their teachers not only from the desire for carnal pleasures but sometimes also from the very reception of daily bread. But let us see how much the external crowd esteems the presence of their relatives...",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.3.20"
+    },
+    {
+      "id": "hcf:bede:mark.3.20:305658f0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 3:20",
+      "excerpt": "And they come to the house. For He led the apostles chosen on the mountain back to the house, as if silently admonishing them that after receiving the rank of apostleship, they should return to their conscience, and that the greater care they have taken on of teaching the people, the more diligently they should consider and penetrate the dwelling places of their own minds, and lest anything be found there that might offend the eyes of the hidden inspector, they should seek it out with diligent examination. For thus, each one rightly governs his neighbor if he first thoroughly explores and purges from his own heart whatever wickedness was within.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.3.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.3.20:fe7643a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:20",
+      "excerpt": "\"And hearing this,\" he says, \"His relatives\" — perhaps people from the same hometown as Him, or even His brothers — \"went out to take hold of Him; for they said that He was out of His mind,\" that is, that He had a demon. Since they heard that He was casting out demons and healing diseases, out of envy they thought that He had a demon and \"was out of His mind,\" which is why they wanted to seize Him, so as to bind Him as one possessed. This is what His relatives thought and intended to do with Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.20"
     },
     {
       "id": "catena-mark-0228-v20",
@@ -109,6 +174,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.3.20:208573b9:0"
       ]
     },
     {
@@ -127,6 +199,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.3.20:c5949720:0"
       ]
     }
   ]

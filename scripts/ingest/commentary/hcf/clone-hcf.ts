@@ -9,8 +9,9 @@
 import { execSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const SCRIPT_DIR = new URL(".", import.meta.url).pathname;
+const SCRIPT_DIR = fileURLToPath(new URL(".", import.meta.url));
 const REPO_ROOT = resolve(SCRIPT_DIR, "../../../..");
 const CORPUS_DIR = join(REPO_ROOT, "corpus", "hcf-commentaries");
 

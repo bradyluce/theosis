@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.1.27:4c043b3f:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.27:78324f0f:0"
       ]
     },
     {
@@ -55,6 +69,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.1.27:4cb3c829:0"
       ]
     },
     {
@@ -73,6 +94,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.1.27:1abde1d8:0"
       ]
     },
     {
@@ -91,6 +119,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.27:0c9e0bda:0"
       ]
     },
     {
@@ -127,6 +162,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.27:dcd57b3e:0"
       ]
     },
     {
@@ -138,24 +180,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:26–27",
       "excerpt": "It was a fit beginning for man’s restoration, that an angel should be sent down from God to consecrate a virgin by a divine birth, for the first cause of man’s perdition was the Devil sending a serpent to deceive a woman by the spirit of pride.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0104-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.27",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:26–27",
-      "excerpt": "Which last applies not only to Joseph, but also to Mary, for the Law commanded that every one should take a wife out of his own tribe or family. It follows, And the virgin’s name was Mary.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -184,6 +208,24 @@
       ]
     },
     {
+      "id": "catena-luke-0104-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.27",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:26–27",
+      "excerpt": "Which last applies not only to Joseph, but also to Mary, for the Law commanded that every one should take a wife out of his own tribe or family. It follows, And the virgin’s name was Mary.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0102-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.27",
@@ -199,7 +241,133 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.1.27:90a1ee35:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.1.27:39f27f79:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:27",
+      "excerpt": "To a virgin betrothed to a man whose name was Joseph of the house of David, and the virgin's name was Mary. For many reasons, the Savior wished to be born not of a simple virgin, but of one betrothed. Firstly, evidently, so that through Joseph's lineage, to whom Mary was a relative, Mary's origin could also be known. For it is not the custom of Scripture to trace the genealogy of women. For it can be understood from both that it is said of the house of David. Next, lest she should be stoned by the Jews as an adulteress, preferring that some should doubt her origin rather than the chastity of the parent. At the same time, it removes the occasion for impudent virgins, lest they say the mother of the Savior was defamed by false suspicions. Thirdly, so that while fleeing to Egypt and then returning, she would have the solace of a husband, who would exist equally as a protector and witness of her intact virginity. Fourthly, lest her birth be exposed to the devil; who if he knew he was born of a virgin, might perhaps fear to hand him over to death as eminently as other men. But Mary is called in Hebrew the star of the sea, and in Syriac lady; and rightly so, because she deserved to give birth to the Lord of the whole world, and the perpetual light for the ages.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.27"
+    },
+    {
+      "id": "hcf:bede:luke.1.27:3c6fede1:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-3",
+      "title": "Homilies on the Gospels 1.3 on luke 1:27",
+      "excerpt": "As to why he wished to be conceived and born not of a simple virgin but of one who was betrothed to a man, several of the Fathers have put forward reasonable answers. The best of these is to prevent her from being condemned as guilty of defilement if she were to bear a son when she had no husband. Then too, in the things the care of a home naturally demands, the woman in labor would be sustained by a husband's care. Therefore blessed Mary had to have a husband who would be both a perfectly sure witness to her integrity and a completely trustworthy foster father for our Lord and Savior, who was born of her. He was a husband who would, in accordance with the law, make sacrificial offerings to the temple for him when he was an infant. He would take him, along with his mother, to Egypt when persecution threatened. He would bring him back and would minister to the many other needs consequent upon the weakness of the humanity which he had assumed. It did no great harm if, for a time, some believed that he was Joseph's son, since from the apostles' preaching after his ascension it would be plainly evident to all believers that he had been born of a virgin.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.27"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.1.27:a405cec8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:27",
+      "excerpt": "Therefore he who undertook to prove the mystery of the Incarnation in its incorrupt state, did not think it necessary to pursue at length the testimony of the Virgin Mary's virginity, lest he should be thought to be a defender rather than an assertor of the mystery. Certainly, when Joseph had made lawful the marriage he was about to contract, he sufficiently showed that the temple of the Holy Ghost, the abode of the mystery, the mother of the Lord could not have been violated.\r\n\r\nWe have learned the series of truth, we have learned the counsel: let us also learn the mystery. Well betrothed, but a virgin; for she is a type of the Church, which is immaculate, but married. The virgin conceives us by the Spirit, the virgin gives birth to us without groaning. And therefore perhaps holy Mary is married to one, filled by another; for indeed individual Churches and souls are filled by the Spirit and grace; yet they are joined to the outward appearance of a temporal priest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.1.27"
+    },
+    {
+      "id": "hcf:jerome:luke.1.27:1722e3a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:st-jerome-commentary-on-daniel-chapter-eight",
+      "title": "St. Jerome, Commentary on Daniel, CHAPTER EIGHT on luke 1:27",
+      "excerpt": "[Daniel 8:16-17] \"And I heard the voice of a man in the midst of the Ulai, and he cried out and said: 'Gabriel, make this vision intelligible (Vulgate: make this man to understand the vision).' And he came and stood near to where I was standing.\" The Jews claim that this man who directed Gabriel to explain the vision to Daniel was Michael. Quite appropriately it was Gabriel, who has been put in charge of battles, to whom this duty was assigned, inasmuch as the vision had to do with battles and contests between kings and even between kingdoms themselves. For Gabriel is translated into our language as \"the strength of, or the mighty one of, God.\" And so at that time also when the Lord was about to be born and to declare war against the demons and to triumph over the world, Gabriel came to Zacharias (Luke 1:11-20) and to Mary (Luke 1:26-27). And then we read in the Psalms concerning the Lord in His triumph: \"Who is this king of glory? The Lord strong and mighty, the Lord mighty in battle; He is the King of glory\" (Psalm 24:8). But whenever it is medicine or healing that is needed, it is Raphael who is sent, for his name is rendered as \"the healing of,\" or \"the medicine of God\" - that is, if one cares to accept the authority of the Book of Tobias (Tobit 12:11-15). And then, when favorable promises are made to the people, and hilasmos, which we might render as \"propitiation\" or \"expiation,\" is the thing required, then it is Michael who is directed to go, for his name means, \"Who is like God?\" Of course the significance of the name indicates the fact that the only true remedy is to be found in God.\r\n\r\n\"And he said to me: 'Son of man, understand that in the time of the end the vision shall be fulfilled.'\" Inasmuch as Ezekiel and Daniel and Zechariah behold themselves to be often in the company of angels, they were reminded of their frailty, lest they should be lifted up in pride and imagine themselves to partake of the nature or dignity of angels. Therefore they are addressed as sons of men, in order that they might realize that they are but human beings.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ccel-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.1.27"
+    },
+    {
+      "id": "hcf:jerome:luke.1.27:aa568ff3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:homily-87",
+      "title": "HOMILY 87 on luke 1:27",
+      "excerpt": "Holy Mary, blessed Mary, mother and virgin, virgin before giving birth, virgin after giving birth! I, for my part, marvel how a virgin is born of a virgin, and how, after the birth of a virgin, the mother is a virgin.Would you like to know how he is born of a virgin and, after his nativity, the mother is still a virgin? \"The doors were closed, and Jesus entered.\" There is no question about that. He who entered through the closed doors was neither a ghost nor a spirit. He was a real man with a real body. Furthermore, what does he say? \"Touch me and see. For a spirit does not have flesh and bones, as you see I have.\" He had flesh and bones, and the doors were closed. How do flesh and bones enter through closed doors? The doors are closed, and he enters, whom we do not see entering. Whence has he entered? Everything is closed up. There is no place through which he may enter. Nevertheless he who has entered is within, and how he entered is not evident. You do not know how his entrance was accomplished, and you attribute it to the power of God. Attribute to the power of God, then, that he was born of a virgin and the virgin herself after bringing forth was a virgin still.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-87",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.1.27"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.27:138e51c1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews",
+      "title": "An Answer to the Jews on luke 1:27",
+      "excerpt": "\" For to none of men was the universal aggregation of spiritual credentials appropriate, except to Christ; paralleled as He is to a \"flower\" by reason of glory, by reason of grace; but accounted \"of the root of Jesse,\" whence His origin is to be deduced,-to wit, through Mary. For He was from the native soil of Bethlehem, and from the house of David; as, among the Romans, Mary is described in the census, of whom is born Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.27"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.27:235a89e3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:27",
+      "excerpt": "The text says that the Virgin was betrothed to a man \"of the house of David\" in order to show that she too was descended from the same lineage of David, for there was a law that both parties (in a marriage) should be from one and the same lineage and from one and the same tribe (Num. 36:6–9).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.27"
     },
     {
       "id": "catena-luke-0096-v27",
@@ -217,6 +385,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.1.27:aacbb3f1:0"
       ]
     },
     {
@@ -235,6 +410,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:luke.1.27:4991633b:0"
       ]
     }
   ]

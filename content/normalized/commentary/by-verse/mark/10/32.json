@@ -4,24 +4,6 @@
   "verseNumber": 32,
   "entries": [
     {
-      "id": "catena-mark-0839-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.10.32",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 10:32–34",
-      "excerpt": "And He enumerates each thing that was to happen to Him; lest if He should pass any thing over, they should be troubled afterwards at suddenly seing it; wherefore he adds, Behold, we go up to Jerusalem, and the Son of Man.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0841-v32",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.32",
@@ -40,6 +22,56 @@
       ]
     },
     {
+      "id": "catena-mark-0839-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.10.32",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 10:32–34",
+      "excerpt": "And He enumerates each thing that was to happen to Him; lest if He should pass any thing over, they should be troubled afterwards at suddenly seing it; wherefore he adds, Behold, we go up to Jerusalem, and the Son of Man.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.10.32:d63ee3da:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0837-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.10.32",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 10:32–34",
+      "excerpt": "Either lest they themselves should perish with Him, or at all events lest He, whose life and ministry was their joy, should fall under the hand of His enemies. But the Lord, foreseeing that the minds of His disciples would be troubled by His Passion, foretels to them both the pain of His Passion, and the glory of His resurrection; wherefore there follows, And he took again the twelve, and began to tell them what things should happen unto him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.10.32:052f9036:3"
+      ]
+    },
+    {
       "id": "catena-mark-0835-v32",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.32",
@@ -55,20 +87,27 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.10.32:183b3c1d:2"
       ]
     },
     {
-      "id": "catena-mark-0837-v32",
+      "id": "catena-mark-0838-v32",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.32",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 10:32–34",
-      "excerpt": "Either lest they themselves should perish with Him, or at all events lest He, whose life and ministry was their joy, should fall under the hand of His enemies. But the Lord, foreseeing that the minds of His disciples would be troubled by His Passion, foretels to them both the pain of His Passion, and the glory of His resurrection; wherefore there follows, And he took again the twelve, and began to tell them what things should happen unto him.",
+      "excerpt": "He did this to confirm the hearts of the disciples, that from hearing these things beforehand, they might the better bear them afterwards, and might not be alarmed at their suddenness, and also in order to shew them that He suffered voluntarily; for he who foreknows a danger, and flies not, though flight is in his power, evidently of his own will gives himself up to suffering. But He takes His disciples apart, because it was fitting that He should reveal the mystery of His Passion to those who were more closely connected with Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -91,25 +130,82 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.10.32:f3c4857e:1"
       ]
     },
     {
-      "id": "catena-mark-0838-v32",
+      "id": "hcf:bede:mark.10.32:92441231:1",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.10.32",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 10:32",
+      "excerpt": "And taking the twelve again, he began to tell them what was going to happen to him. 'Behold, we are going up to Jerusalem, and the Son of Man will be delivered to the chief priests and the scribes, and they will condemn him to death, and will deliver him to the Gentiles, and they will mock him, and will spit on him, and will scourge him, and will kill him, and after three days he will rise again.' Our Redeemer, foreseeing that his passion would disturb the spirits of his disciples, foretold to them both the penalty of his passion and the glory of his resurrection well in advance, so that when they saw him dying (as had been foretold), they might not doubt that he would also rise again. Here he most clearly refutes the madness of the pagans, who are accustomed to ridicule his cross, when he shows both the time of his approaching passion as if he were foreseeing future events, and approaches the place of his death as if he were unafraid.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.10.32"
+    },
+    {
+      "id": "hcf:bede:mark.10.32:4d49c699:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 10:32",
+      "excerpt": "And they were on the way going up to Jerusalem, and Jesus was going ahead of them, and they were amazed, and those who followed were afraid. Therefore, the disciples, proceeding with the Lord towards Jerusalem, were amazed and afraid because they remembered his word in which he had predicted that he would suffer much from the chief priests and scribes and would be killed, fearing that they themselves might be killed with him, or at least that he whose life and teaching they rejoiced in, would fall into the hands of his enemies.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.10.32"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.10.32:17c88086:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 10:32–34",
-      "excerpt": "He did this to confirm the hearts of the disciples, that from hearing these things beforehand, they might the better bear them afterwards, and might not be alarmed at their suddenness, and also in order to shew them that He suffered voluntarily; for he who foreknows a danger, and flies not, though flight is in his power, evidently of his own will gives himself up to suffering. But He takes His disciples apart, because it was fitting that He should reveal the mystery of His Passion to those who were more closely connected with Him.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:32",
+      "excerpt": "Why does Jesus predict to the disciples what will happen to Him? To strengthen their spirit, so that having heard about it beforehand, they would bear it courageously when it came to pass, and not be struck by its suddenness; and at the same time they were to know that He suffers of His own will. For he who foresaw the sufferings could have avoided them, and if he did not flee, it is clear that he voluntarily gives himself over to suffering. But since it was fitting to reveal His suffering only to the closest disciples, He goes ahead of everyone on the road, wishing to separate the disciples from the crowd. Moreover, by going ahead of everyone and by His haste on the road, the Lord also shows that He hastens toward His suffering and does not flee from death for the sake of our salvation.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.32"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.10.32:b1534577:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-2",
+      "title": "Forty Gospel Homilies, Homily 2 on mark 10:32",
+      "excerpt": "Our Redeemer, foreseeing that the souls of the disciples would be troubled by His passion, foretold to them long beforehand both the suffering of that same passion and the glory of His resurrection, so that when they saw Him dying, as had been predicted, they would not doubt that He would also rise again. But because the disciples, still carnal, were by no means able to grasp the words of the mystery, a miracle is performed. Before their eyes a blind man receives light, so that those who could not grasp the words of the heavenly mystery might be strengthened in faith by heavenly deeds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.10.32"
     },
     {
       "id": "catena-mark-0840-v32",

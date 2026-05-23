@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.20.19:9c175ebf:0"
       ]
     },
     {
@@ -30,24 +37,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
       "excerpt": "For they seemed to be trifling, yet were in earnest, forgetful of God, who says, Who is this that hideth his counsel from me? (Job 42:3.) For they come to Christ the Saviour of all, as though He were a common man, as it follows, that they might take him in his speech.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2912-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.19",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:19–26",
-      "excerpt": "Our Lord here teaches us, how cautious we ought to be in our answers to heretics or Jews; as He has said elsewhere, Be ye wise as serpents (Mat. 10:16).",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,17 +65,17 @@
       ]
     },
     {
-      "id": "catena-luke-2907-v19",
+      "id": "catena-luke-2912-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.19",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
-      "excerpt": "And so by seeking to slay Him, they proved the truth of what He had said in the parable. For He Himself is the Heir, whose unjust death He said was to be punished. They are the wicked husbandmen who sought to kill the Son of God. This also is daily committed in the Church when any one, only in name a brother, is ashamed or afraid, because of the many good men with whom he lives, to break into that unity of the Church’s faith and peace which he abhors. And because the chief priests sought to lay hold of our Lord but could not by themselves, they tried to accomplish it by the hands of the…",
+      "excerpt": "Our Lord here teaches us, how cautious we ought to be in our answers to heretics or Jews; as He has said elsewhere, Be ye wise as serpents (Mat. 10:16).",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -112,6 +101,31 @@
       ]
     },
     {
+      "id": "catena-luke-2907-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.19",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:19–26",
+      "excerpt": "And so by seeking to slay Him, they proved the truth of what He had said in the parable. For He Himself is the Heir, whose unjust death He said was to be punished. They are the wicked husbandmen who sought to kill the Son of God. This also is daily committed in the Church when any one, only in name a brother, is ashamed or afraid, because of the many good men with whom he lives, to break into that unity of the Church’s faith and peace which he abhors. And because the chief priests sought to lay hold of our Lord but could not by themselves, they tried to accomplish it by the hands of the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.20.19:ffe699f8:1"
+      ]
+    },
+    {
       "id": "catena-luke-2913-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.19",
@@ -120,24 +134,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
       "excerpt": "Let those who impute the question of our Saviour to ignorance, learn from this place that Jesus was well able to know whose image was on the money; but He asks the question, that He might give a fitting answer to their words; for it follows, They answered and said, Cæsar’s. We must not suppose Augustus is thereby meant, but Tiberius, for all the Roman kings were called Cæsar, from the first Caius Cæsar. But from their answer our Lord easily solves the question, for it follows, And he said unto them, Render unto Cæsar the things which be Cœsar’s, and unto God the things which be God’s.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2915-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.19",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:19–26",
-      "excerpt": "Render also to God the things which be God’s, that is to say, tithes, first fruits, offerings, and sacrifices.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -166,14 +162,32 @@
       ]
     },
     {
-      "id": "catena-luke-2909-v19",
+      "id": "catena-luke-2915-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.19",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:19–26",
+      "excerpt": "Render also to God the things which be God’s, that is to say, tithes, first fruits, offerings, and sacrifices.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2916-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.19",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
-      "excerpt": "They laid snares for our Lord, but got their own feet entangled in them. Listen to their cunning, And they asked Him, saying, Master, we know that thou sayest and teachest rightly.",
+      "excerpt": "And observe that He said not, give, but return. For it is a debt. Thy prince protects thee from enemies, renders thy life tranquil. Surely then thou art bound to pay him tribute. Nay, this very piece of money which thou bringest thou hast from him. Return then to the king the king’s money. God also has given thee understanding and reason, make then a return of these to Him, that thou mayest not be compared to the beasts, but in all things mayest walk wisely.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -202,32 +216,14 @@
       ]
     },
     {
-      "id": "catena-luke-2916-v19",
+      "id": "catena-luke-2909-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.19",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
-      "excerpt": "And observe that He said not, give, but return. For it is a debt. Thy prince protects thee from enemies, renders thy life tranquil. Surely then thou art bound to pay him tribute. Nay, this very piece of money which thou bringest thou hast from him. Return then to the king the king’s money. God also has given thee understanding and reason, make then a return of these to Him, that thou mayest not be compared to the beasts, but in all things mayest walk wisely.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2918-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.19",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:19–26",
-      "excerpt": "Now this place contains a mystery. For there are two images in man, one which he received from God, as it is written, Let us make man in our own image: (Gen. 1:26.) another from the enemy, which he has contracted through disobedience and sin, allured and won by the enticing baits of the prince of this world. For as the penny has the image of the emperor of the world, so he who does the works of the power of darkness, bears the image of Him whose works he doth. He says then, Render unto Cæsar the things which be Cæsar’s, that is, cast away the earthly image, that ye may be able, by putting on…",
+      "excerpt": "They laid snares for our Lord, but got their own feet entangled in them. Listen to their cunning, And they asked Him, saying, Master, we know that thou sayest and teachest rightly.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -256,6 +252,24 @@
       ]
     },
     {
+      "id": "catena-luke-2918-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.19",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:19–26",
+      "excerpt": "Now this place contains a mystery. For there are two images in man, one which he received from God, as it is written, Let us make man in our own image: (Gen. 1:26.) another from the enemy, which he has contracted through disobedience and sin, allured and won by the enticing baits of the prince of this world. For as the penny has the image of the emperor of the world, so he who does the works of the power of darkness, bears the image of Him whose works he doth. He says then, Render unto Cæsar the things which be Cæsar’s, that is, cast away the earthly image, that ye may be able, by putting on…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2914-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.19",
@@ -272,6 +286,57 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.20.19:2004d004:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-135",
+      "title": "COMMENTARY ON LUKE, HOMILY 135 on luke 20:19",
+      "excerpt": "Again the gang of Pharisees is inflamed with unbridled rage. They draw the bow of their envy. They grind their teeth at him who calls them to life. They savagely attack him who seeks to save and who humbled himself from his supreme and godlike glory to our condition. They plot the death of he who became man that he might abolish death. The wise Evangelist shows us the only cause that hindered their shameless pride. He said that they feared the people. He understood, therefore, that they were not restrained by a feeling of piety toward God. The commandment given by Moses that plainly says, \"You shall not kill the holy and the just,\" did not bridle their violence. They had far more respect for the fear of people than the reverence due to God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-135",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.20.19"
+    },
+    {
+      "id": "hcf:bede:luke.20.19:5bf5493c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 20:19",
+      "excerpt": "And the chief priests and scribes sought to lay hands on him at that hour, and they feared the people. For they knew that he had spoken this parable against them. The chief priests and scribes, as if accusing the Lord of lying against them, sought to kill him, but by seeking this they were teaching that what he said was true. For he is the heir, whose unjust death he said would be avenged; they are the wicked tenants, who hesitated a little due to human fear from killing the Son of God until his hour had come, but they were never able to be restrained by divine love. Indeed, in a moral sense, each of the faithful is assigned to tend the mystery of baptism which he exercises in his works, like a vineyard he cultivates. One servant after another is sent to receive the fruit, which is read in the law, the psalms, and the prophecies, following their admonition by doing good. But a sent servant is mistreated or beaten and cast out, when the word heard is either despised or, worse, even blasphemed. He kills the sent heir as much as is in his power, who tramples the Son of God and insults the Spirit of grace by whom he was sanctified. With the bad tenant destroyed, the vineyard is given to another, when each humble person is enriched with the gift of grace which the proud one scorned. And this, too, that the chief priests and scribes, seeking to lay hands on Jesus, are restrained by the fear of the people, is enacted daily in the Church, when anyone refrains from attacking the unity of ecclesiastical faith and peace, which he does not love, either out of shame or fear of the multitude of good brothers living together. Yet, just as the Lord said about the foolish ostrich, when the time comes, will he take flight on high, because by persecuting the Church, he will rejoice in having the Lord crucified and displayed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.20.19"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.20.19:517f3046:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 20:19",
+      "excerpt": "But even then, when they understood that the Lord was speaking this parable against them, they plotted against Him and would have laid hands on Him, had they not feared the people. The Law also says: \"Do not put to death the innocent and the righteous\" (Ex. 23:7); but they do not heed it, and instead fear the wrath of men, and, refraining from openly laying hands on Him, they contrive other snares against Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.20.19"
     }
   ]
 }

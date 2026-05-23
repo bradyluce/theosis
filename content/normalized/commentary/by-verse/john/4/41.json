@@ -42,14 +42,14 @@
       ]
     },
     {
-      "id": "catena-john-0524-v41",
+      "id": "catena-john-0529-v41",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.41",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 4:39–42",
-      "excerpt": "It is now, as it were, harvest time, when the corn is gathered, and a whole floor soon covered with sheaves; And many of the Samaritans of that city believed on Him, for the saying of the woman which testified, He told me all that ever I did. They considered that, the woman would never of her own accord have conceived such admiration for one Who had reproved her offences, unless He were really some great and wonderful person. (Hom. xxxv. 1). And thus relying solely on the testimony of the woman, without any other evidence, they went out to beseech Christ to stay with them: So when the…",
+      "excerpt": "So then they knew Christ first by report of another, afterwards by His own presence; which is still the case of those that are without the fold, and not yet Christians. Christ is announced to them by some charitable Christians, by the report of the woman, i. e. the Church; they come to Christ, they believe on Him, through the instrumentality of that woman; He stays withthem two days, i. e. gives them two precepts of charity. And thenceforth their belief is stronger. They believe that He is indeed the Saviour of the world.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -57,6 +57,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.4.41:735754f2:0"
       ]
     },
     {
@@ -78,35 +85,17 @@
       ]
     },
     {
-      "id": "catena-john-0529-v41",
+      "id": "catena-john-0524-v41",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.41",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 4:39–42",
-      "excerpt": "So then they knew Christ first by report of another, afterwards by His own presence; which is still the case of those that are without the fold, and not yet Christians. Christ is announced to them by some charitable Christians, by the report of the woman, i. e. the Church; they come to Christ, they believe on Him, through the instrumentality of that woman; He stays withthem two days, i. e. gives them two precepts of charity. And thenceforth their belief is stronger. They believe that He is indeed the Saviour of the world.",
+      "excerpt": "It is now, as it were, harvest time, when the corn is gathered, and a whole floor soon covered with sheaves; And many of the Samaritans of that city believed on Him, for the saying of the woman which testified, He told me all that ever I did. They considered that, the woman would never of her own accord have conceived such admiration for one Who had reproved her offences, unless He were really some great and wonderful person. (Hom. xxxv. 1). And thus relying solely on the testimony of the woman, without any other evidence, they went out to beseech Christ to stay with them: So when the…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0523-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.4.41",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-john",
-      "title": "On John 4:39–42",
-      "excerpt": "After this conversation with the disciples, Scripture returns to those who had believed on the testimony of the woman, and were come to see Jesus.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -184,6 +173,92 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "catena-john-0523-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.4.41",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 4:39–42",
+      "excerpt": "After this conversation with the disciples, Scripture returns to those who had believed on the testimony of the woman, and were come to see Jesus.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "hcf:augustine:john.4.41:d1bf449e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-15",
+      "title": "Tractates on John 15 on john 4:41",
+      "excerpt": "\"And many Samaritans of that city believed on Him, because of the saying of the woman, who testified, He told me all that ever I did. And when the Samaritans came to Him, they besought Him that He would tarry with them; and He tarried there two days. And many more believed because of His word; and said to the woman, Now we believe, not because of thy words; for we have heard Him ourselves, and we know that this is indeed the Saviour of the world.\" This also must be slightly noticed, for the lesson is come to an end. The woman first announced Him, and the Samaritans believed her testimony; and they besought Him to stay with them, and He stayed there two days, and many more believed. And when they had believed, they said to the woman, \"Now we believe, not because of thy word; but we are come to know Him ourselves, and we know that this is indeed the Saviour of the world:\" first by report, then by His presence. So it is to-day with them that are without, and are not yet Christians. Christ is made known to them by Christian friends; and just upon the report of that woman, that is, the Church, they come to Christ, they believe through this report. He stays with them two days, that is, gives them two precepts of charity; and many more believe, and more firmly believe, on Him, because He is in truth the Saviour of the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.4.41"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:john.4.41:46aa3181:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv-chapter-ii",
+      "title": "Against Heresies Book IV, Chapter II on john 4:41",
+      "excerpt": "But as many as feared God, and were anxious about His law, these ran to Christ, and were all saved. For He said to His disciples: \"Go ye to the sheep of the house of Israel, which have perished.\" And many more Samaritans, it is said, when the Lord had tarried among them, two days, \"believed because of His words, and said to the woman, Now we believe, not because of thy saying, for we ourselves have heard [Him], and know that this man is truly the Saviour of the world.\" And Paul likewise declares, \"And so all Israel shall be saved;\" but he has also said, that the law was our pedagogue [to bring us] to Christ Jesus. Let them not therefore ascribe to the law the unbelief of certain [among them]. For the law never hindered them from believing in the Son of God; nay, but it even exhorted them so to do, saying that men can be saved in no other way from the old wound of the serpent than by believing in Him who, in the likeness of sinful flesh, is lifted up from the earth upon the tree of martyrdom, and draws all things to Himself, and vivifies the dead.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:john.4.41"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.4.41:d39377f7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 4:41",
+      "excerpt": "Through His teaching an even greater number of them believed. Although the Evangelist does not narrate in detail the wondrous words of His teaching, he gives us to understand the power of His divine teaching from the outcome of the matter. For the Evangelists omit much even of the great deeds, because they write not from motives of vainglory, but for the sake of truth. It is likely that while among the Samaritans the Lord also taught something divine, because they, without having seen any miracle, believe in Him and ask Him to stay. But the Jews, who were granted by Him countless words and miracles, still drove Him away. Truly, \"a man's foes shall be they of his own household\" (Mic. 7:6; Matt. 10:36).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.4.41"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.4.41:2c8e5f2a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 4:41",
+      "excerpt": "Then (v 41), the Evangelist says that the fruit resulting from the witness of the woman was increased by the presence of Christ; and this in three ways. First, in the number of those who believed. Secondly, in their reason for believing. Thirdly, in the truth they believed.\r\n\r\nThe fruit was increased as to the number of those who believed because while many believed in Christ on account of the woman, many more believed in him because of his own words, i.e., Christ's own words. This signifies that although many believed because of the prophets, many more were converted to the faith after Christ came, according to the Psalm (7:7): \"Rise up, O Lord, in the command you have given, and a congregation of people will surround you.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.4.41"
     }
   ]
 }

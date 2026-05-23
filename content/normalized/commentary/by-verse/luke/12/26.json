@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.12.26:2841874f:0"
       ]
     },
     {
@@ -48,24 +55,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:24–26",
       "excerpt": "As before in raising our minds to spiritual boldness, He assured us by the example of the birds, which are counted of little worth, saying, Ye are of more value than many sparrows; so now also from the instance of birds, He conveys to us a firm and undoubting trust, saying, Consider the ravens, for they neither sow nor reap, which neither have storehouse nor barn, and God feedeth them; how much more are ye better than fowls?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2005-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.26",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:24–26",
-      "excerpt": "But it is a great thing to follow up this example in faith. For to the birds of the air who have no labour of tilling, no produce from the fruitfulness of crops, Divine Providence grants an unfailing sustenance. It is true then that the cause of our poverty seems to be covetousness. For they have for this reason a toilless and abundant use of food, because they think not of claiming to themselves by any special right fruits given for common food. We have lost what things were common by claiming them as our own. For neither is any thing a man’s own, where nothing is perpetual, nor is supply…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,6 +83,24 @@
       ]
     },
     {
+      "id": "catena-luke-2005-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.26",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:24–26",
+      "excerpt": "But it is a great thing to follow up this example in faith. For to the birds of the air who have no labour of tilling, no produce from the fruitfulness of crops, Divine Providence grants an unfailing sustenance. It is true then that the cause of our poverty seems to be covetousness. For they have for this reason a toilless and abundant use of food, because they think not of claiming to themselves by any special right fruits given for common food. We have lost what things were common by claiming them as our own. For neither is any thing a man’s own, where nothing is perpetual, nor is supply…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2004-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.26",
@@ -102,6 +109,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:24–26",
       "excerpt": "That is, ye are more precious, because a rational animal like man is of a higher order in the nature of things than irrational things, as the birds are.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2011-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.26",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:24–26",
+      "excerpt": "To Him then leave the care of directing the body, by whose aid you see it to come to pass that you have a body of such a stature.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -145,24 +170,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2011-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.26",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:24–26",
-      "excerpt": "To Him then leave the care of directing the body, by whose aid you see it to come to pass that you have a body of such a stature.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.12.26:c8b9cfba:0"
       ]
     },
     {
@@ -182,6 +196,23 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.26:2c5d3f0c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:26",
+      "excerpt": "And if you cannot add even the least thing, why do you worry about the rest? It is obvious that just as God grants growth in stature, so too will He provide the rest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.26"
     }
   ]
 }

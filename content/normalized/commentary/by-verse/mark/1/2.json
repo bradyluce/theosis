@@ -4,24 +4,6 @@
   "verseNumber": 2,
   "entries": [
     {
-      "id": "catena-mark-0006-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.2",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "But this is not written in Isaiah, but in Malachi, the last of the twelve prophets.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0010-v2",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.2",
@@ -30,6 +12,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "By Malachi, therefore, the voice Πνεύμκτος Ἅγιου of the Holy Spirit resounds to the Father concerning the Son, who is the countenance of the Father by which He has been known.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:mark.1.2:d8103c54:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0006-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.2",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "But this is not written in Isaiah, but in Malachi, the last of the twelve prophets.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 85,
@@ -91,17 +98,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.2:fe7f380e:0"
       ]
     },
     {
-      "id": "catena-mark-0009-v2",
+      "id": "catena-mark-0056",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.2",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "Or otherwise, we must understand, that, although these words are not found in Isaiah, still the sense of them is found in many other places, and most clearly in this which he has subjoined, The voice of one crying in the wilderness. For that which Malachi has called, the angel to be sent before the face of the Lord, to prepare His way, is the same thing as Isaiah has said is to be heard, the voice of one crying in the wilderness, saying, Prepare ye the way of the Lord. But in each sentence alike, the way of the Lord to be prepared is proclaimed. It may be, too, that Isaiah occurred to the…",
+      "title": "On Mark 1:2",
+      "excerpt": "But He retires into the desert that He may teach us that, leaving the allurements of the world, and the company of the wicked, we should in all things obey the Divine commands. He is left alone and tempted by the devil, that He might teach us, that all that will live godly in Christ Jesus shall suffer persecution; (2 Tim. 3:12) whence it follows, And he was in the wilderness forty days and forty nights, and was tempted of Satan. But He was tempted forty days and forty nights, that He might shew us, that as long as we live here and serve God, whether prosperity smile upon us, which is meant by…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -120,6 +134,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "But John is called an angel not by community of nature, according to the heresy of Origena, but by the dignity of his office; for angel in Greek is in Latin, nuntius, (messenger,) by which name that man is rightly called, who was sent by God, that he might bear witness of the light, and announce to the world the Lord, coming in the flesh: since it is evident that all who are priests may by their office of preaching the Gospel be called angels, as the prophet Malachi says, The lips of the priest keep knowledge, and they seek the law at his mouth, because he is the Angel of the Lord of hosts.…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0009-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.2",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "Or otherwise, we must understand, that, although these words are not found in Isaiah, still the sense of them is found in many other places, and most clearly in this which he has subjoined, The voice of one crying in the wilderness. For that which Malachi has called, the angel to be sent before the face of the Lord, to prepare His way, is the same thing as Isaiah has said is to be heard, the voice of one crying in the wilderness, saying, Prepare ye the way of the Lord. But in each sentence alike, the way of the Lord to be prepared is proclaimed. It may be, too, that Isaiah occurred to the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -184,24 +216,6 @@
       ]
     },
     {
-      "id": "catena-mark-0056",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.2",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2",
-      "excerpt": "But He retires into the desert that He may teach us that, leaving the allurements of the world, and the company of the wicked, we should in all things obey the Divine commands. He is left alone and tempted by the devil, that He might teach us, that all that will live godly in Christ Jesus shall suffer persecution; (2 Tim. 3:12) whence it follows, And he was in the wilderness forty days and forty nights, and was tempted of Satan. But He was tempted forty days and forty nights, that He might shew us, that as long as we live here and serve God, whether prosperity smile upon us, which is meant by…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0012-v2",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.2",
@@ -217,6 +231,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.2:268a1bed:0"
       ]
     },
     {
@@ -238,6 +259,143 @@
       ]
     },
     {
+      "id": "hcf:bede:mark.1.2:b713fbe0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:2",
+      "excerpt": "Behold, I send my angel, etc. The angel is called John, not by the association of nature according to the heresy of Origen, but by the dignity of the office. For angel in Greek is called messenger in Latin. By which name, rightly, that man could be called who was sent by God to bear witness to the light (John I), and to announce to the world the Lord coming in the flesh. Nor should it be wondered at mystically that one who is greater than all born of women (Matt. XI) should be called an angel, when it is universally accepted that all who rightly perform the duty of the priestly rank can be called angels because of their duty to evangelize, as the prophet says: The lips of the priest shall keep knowledge, and they shall seek the law at his mouth, for he is the angel of the Lord of hosts (Mal. II).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.2:d5e469c2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:2",
+      "excerpt": "As for the testimony concerning the Forerunner, it is taken from two prophets — from Malachi: \"Behold, I send My messenger, and he shall prepare the way before Me\" (Mal. 3:1), and from Isaiah: \"The voice of one crying in the wilderness\" (Isa. 40:3) and so forth. These are the words of God the Father to the Son. He calls the Forerunner an Angel on account of his angelic and nearly bodiless life and on account of his announcing and pointing out the coming Christ. John prepared the way of the Lord, making ready the souls of the Jews through baptism for the reception of Christ. \"Before Thy face\" means that Thy Angel is close to Thee. By this is signified the kinship of the Forerunner to Christ, since before kings as well it is chiefly relatives who are honored.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
+      "id": "hcf:augustine:mark.1.2:7c583a2f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractate-on-the-gospel-of-john-5-6-2",
+      "title": "TRACTATE ON THE GOSPEL OF JOHN 5.6.2 on mark 1:2",
+      "excerpt": "The efficacy of John's baptism is attested by the holy way he lived as a person. His baptism was in accord with the justice of a just man, yet still a mere man, but one who had received extraordinary grace from the Lord, a grace so great that he was deemed worthy to precede the final Judge of history, and to point him out with his finger, and to fulfill the words of that prophecy: \"The voice of one crying out in the desert, prepare the way for the Lord.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-the-gospel-of-john-5-6-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:mark.1.2:b3c17246:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:proof-of-the-gospel-9-5",
+      "title": "PROOF OF THE GOSPEL 9.5 on mark 1:2",
+      "excerpt": "He emerged from the desert clothed in a strange garment, refusing all ordinary social intercourse. He did not even share their common food. For it is written that from childhood John was in the deserts until the day of his public appearance to Israel. Indeed, his clothing was made of camel's hair! His food locusts and wild honey! … It is understandable that they should have been alarmed when they saw a man with the hair of a Nazarite of God, and a divine face, suddenly appearing from the lonely wilderness dressed in bizarre clothing, who after preaching to them, he disappeared again into the wilderness, without eating or drinking or mingling with the people? Must they not have suspected that he was a little more than human? For how could a human being go without food? And so they understood him to be a divine messenger, the very angel foretold by the prophet.",
+      "takeaway": "",
+      "sourceId": "hcf:source:proof-of-the-gospel-9-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
+      "id": "hcf:hilary-poitiers:mark.1.2:dcaad1cf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:2",
+      "excerpt": "(de Trin. iii. 11) He has testified, that Christ was the Son of God, not in name only, but by His own proper nature. We are the sons of God, but He is not a son as we are; for He is the very and proper Son, by origin, not by adoption; in truth, not in name; by birth, not by creation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:mark.1.2:a6274197:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-3-10-5",
+      "title": "AGAINST HERESIES 3.10.5 on mark 1:2",
+      "excerpt": "How plainly does the beginning of the gospel focus upon the expectations of the holy prophets. At once it points out that the One whom they confessed as God and Lord, the Father of our Lord Jesus Christ, who had also made promise to him, would send his messenger before his face. This was John, crying in the wilderness, in \"the spirit and power of Elijah,\" \"Prepare the way of the Lord, make his paths straight.\" For the prophets did not announce first one God and then another, but one and the same God under complementary aspects, and with many various names.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
+      "id": "hcf:tertullian:mark.1.2:1d0943b5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews",
+      "title": "An Answer to the Jews on mark 1:2",
+      "excerpt": "Now He called him an \"angel,\" on account of the magnitude of the mighty deeds which he was to achieve (which mighty deeds Joshua the son of Nun did, and you yourselves read), and on account of his office of prophet announcing (to wit) the divine will; just as withal the Spirit, speaking in the person of the Father, calls the forerunner of Christ, John, a future \"angel,\" through the prophet: \"Behold, I send mine angel before Thy\"-that is, Christ's-\"face, who shall prepare Thy way before Thee.\" Nor is it a novel practice to the Holy Spirit to call those \"angels\" whom God has appointed as ministers of His power.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
+      "id": "hcf:tertullian:mark.1.2:14028857:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews-9",
+      "title": "AN ANSWER TO THE JEWS 9 on mark 1:2",
+      "excerpt": "Now he called him an \"angel\" on account of the great consequence of the mighty deeds which he was to accomplish, comparable to those mighty deeds of Joshua the son of Nun about whom you have read. John served in the office of a prophet to announce God's will, as the forerunner of the Anointed One. The Spirit, speaking in the voice of the Father, called John an \"angel\" in accord with the promise declared by Malachi: \"Behold, I send my messenger to prepare the way before me.\" It is not a novelty that the Holy Spirit would call those he has appointed ministers of his power \"angels.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.1.2"
+    },
+    {
       "id": "catena-mark-0007-v2",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.2",
@@ -246,6 +404,49 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "But it may be said that it is a mistake of the writer. Otherwise it may be said, that he has compressed into one, two prophecies delivered in different places by two prophets; for in the prophet Isaiah it is written after the story of Hezekiah, The voice of one crying in the wilderness; but in Malachi, Behold, I send mine angel. The Evangelist therefore, taking parts of two prophecies, has put them down as spoken by Isaiah, and refers them here to one passage, without mentioning, however, by whom it is said, Behold, I send mine angel.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.2:e1100d67:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0016-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.2",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "But the prophecy, by saying, In the wilderness, plainly shews that the divine teaching was not in Jerusalem, but in the wilderness, which was fulfilled to the letter by John the Baptist in the wilderness of Jordan, preaching the healthful appearing of the Word of God. (non occ.). The word of prophecy also shews, that besides the wilderness, which was pointed out by Moses, where he made paths, there was another wilderness, in which it proclaimed that the salvation of Christ was present.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0057",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.2",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2",
+      "excerpt": "But He says this to shew of what nature was the wilderness, for it was impassable by man and full of wild beasts. It goes on; and angels ministered unto him. For after temptation, and a victory against the devil, He worked the salvation of man. And thus the Apostle says, Angels are sent to minister for them who shall be heirs of salvation. (Heb.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -264,6 +465,56 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "For knowing that all things are to be referred to their author, he has brought these sayings back to Isaiah, who was the first to intimate the sense. Lastly, after the words of Malachi, he immediately subjoins, The voice of one crying in the wilderness, in order to connect the words of each prophet, belonging as they do to one meaning, under the person of the elder prophet.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-augustine:mark.1.2:90289199:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0019-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.2",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "Or else, Prepare ye the way of the Lord, that is, act out repentance and preach it; make his paths straight, that walking in the royal road, we may love our neighbours as ourselves, and ourselves as our neighbours. For he who loves himself, and loves not his neighbour, turns aside to the right; for many act well, and do not correct their neighbour well, as Eli. He, on the other hand, who, hating himself, loves his neighbour, turns aside to the left; for many, for instance, rebuke well, but act not well themselves, as did the Scribes and Pharisees. Paths are mentioned after the way, because…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.2:dcc414c3:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0015-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.2",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "But it is called the voice of one crying, for we are wont to use a cry to deaf persons, and to those afar off, or when we are indignant, all which things we know applied to the Jews; for salvation is far from the wicked, and they stopped their ears like deaf adders, and deserved to hear indignation, and wrath, and tribulation from Christ.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -292,42 +543,6 @@
       ]
     },
     {
-      "id": "catena-mark-0015-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.2",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "But it is called the voice of one crying, for we are wont to use a cry to deaf persons, and to those afar off, or when we are indignant, all which things we know applied to the Jews; for salvation is far from the wicked, and they stopped their ears like deaf adders, and deserved to hear indignation, and wrath, and tribulation from Christ.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0016-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.2",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "But the prophecy, by saying, In the wilderness, plainly shews that the divine teaching was not in Jerusalem, but in the wilderness, which was fulfilled to the letter by John the Baptist in the wilderness of Jordan, preaching the healthful appearing of the Word of God. (non occ.). The word of prophecy also shews, that besides the wilderness, which was pointed out by Moses, where he made paths, there was another wilderness, in which it proclaimed that the salvation of Christ was present.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0017-v2",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.2",
@@ -336,42 +551,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "Or else the voice and the cry is in the desert, because they were deserted by the Spirit of God, as a house empty, and swept out; deserted also by prophet, priest, and king.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0019-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.2",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "Or else, Prepare ye the way of the Lord, that is, act out repentance and preach it; make his paths straight, that walking in the royal road, we may love our neighbours as ourselves, and ourselves as our neighbours. For he who loves himself, and loves not his neighbour, turns aside to the right; for many act well, and do not correct their neighbour well, as Eli. He, on the other hand, who, hating himself, loves his neighbour, turns aside to the left; for many, for instance, rebuke well, but act not well themselves, as did the Scribes and Pharisees. Paths are mentioned after the way, because…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0057",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.2",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2",
-      "excerpt": "But He says this to shew of what nature was the wilderness, for it was impassable by man and full of wild beasts. It goes on; and angels ministered unto him. For after temptation, and a victory against the devil, He worked the salvation of man. And thus the Apostle says, Angels are sent to minister for them who shall be heirs of salvation. (Heb.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

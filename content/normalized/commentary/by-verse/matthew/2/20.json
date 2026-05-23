@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.2.20:9a0bb52a:0"
       ]
     },
     {
@@ -73,24 +80,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0277-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.2.20",
-      "topicSlugs": [],
-      "personId": "remigius-auxerre",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 2:19–20",
-      "excerpt": "But if they were many who sought his destruction, how came they all to have died in so short a time? As we have related above, all the great men among the Jews were slain at Herod’s death.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-dionysius:matthew.2.20:46a64abe:0"
       ]
     },
     {
@@ -112,6 +108,170 @@
       ]
     },
     {
+      "id": "catena-matt-0277-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.2.20",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 2:19–20",
+      "excerpt": "But if they were many who sought his destruction, how came they all to have died in so short a time? As we have related above, all the great men among the Jews were slain at Herod’s death.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.2.20:803998cb:0"
+      ]
+    },
+    {
+      "id": "hcf:jerome:matthew.2.20:aa88d25d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 2:20",
+      "excerpt": "(Verse 20) For those who sought the child's life are dead. From this we understand that not only Herod, but also the priests and scribes at the same time had planned the death of the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
+      "id": "hcf:jerome:matthew.2.20:ea14942c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 2:20",
+      "excerpt": "But when Herod died, behold, an angel of the Lord appeared in a dream to Joseph in Egypt, saying: Rise, take the child and his mother, and go to the land of Israel.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
+      "id": "hcf:bede:matthew.2.20:04aa9708:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 2:20",
+      "excerpt": "(Hom. in Nat. Innoc.) This slaughter of the infants for the Lord's sake, the death of Herod soon after, and Joseph's return with the Lord and his mother to the land of Israel, is a figure showing that all the persecutions moved against the Church will be avenged by the death of the persecutor, peace restored to the Church, and the saints who had concealed themselves return to their own places. Or the return of Jesus to the land of Israel on the death of Herod shows, that, at the preaching of Enoch and Elijahc, the Jews, when the fire of modern jealousy shall be extinguished, shall receive the true faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:matthew.2.20:2c5e7c3f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 2:20",
+      "excerpt": "(Eccles. Hist. i. 8.) For the sacrilege which Herod had committed against the Saviour, and his wicked slaughter of the infants of the same age, the Divine vengeance hastened his end; and his body, as Josephus relates, was attacked by a strange disease; so that the prophets declared that they were not human ailments, but visitations of Divine vengeance. Filled with mad fury, he gives command to seize and imprison the heads and nobles out of all parts of Judæa; ordering that as soon as ever he should breathe his last, they should be all put to death, that so Judæa though unwillingly might mourn at his decease. Just before he died he murdered his son Antipater, (besides two boys put to death before, Alexander and Aristobulus.) Such was the end of Herod, noticed in those words of the Evangelist, when Herod was dead, and such the punishment inflicted.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.2.20:7ca34663:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-9",
+      "title": "Homily on the Gospel of Matthew 9 on matthew 2:20",
+      "excerpt": "\"But when Herod was dead, behold, an angel of the Lord appeareth in a dream to Joseph saying, Arise, and take the young Child and His mother, and go into the land of Israel.\"\r\n\r\nHe no more saith \"fly,\" but \"go.\" Seest thou again after the temptation refreshment? then after the refreshment danger again? in that he was freed indeed from his banishment, and came back again to his own country; and beheld the murderer of the children brought to the slaughter; but when he hath set foot on his own country, he finds again a remnant of the former perils, the son of the tyrant living, and being king.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
+      "id": "hcf:rabanus-maurus:matthew.2.20:10030bae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "hcf:work:rabanus-maurus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 2:20",
+      "excerpt": "Rachel is well set for a type of the Church, as the word signifies 'a sheep' or 'seeing;' (vid. note i, p. 19.) her whole thought being to fix her eye in contemplation of God; and she is the hundredth sheep that the shepherd layeth on his shoulder.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c856",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.2.20:89fc4ce5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 2:20",
+      "excerpt": "Behold, the angel of the Lord appeareth in a dream to Joseph in Egypt, saying, Arise, and take the young Child and His mother, and go into the land of Israel. He did not say \"flee\" but \"go,\" for there was no longer any need for fear. For they are dead which sought the young Child's soul. Where is Apollinarius, who said that the Lord did not have the soul of a man? For here he is reproved.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.2.20:6955d6e7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 2:20",
+      "excerpt": "(20) The command: Rise, take the child and his mother. He does not say, \"son\" or \"wife\", but child, in order to designate the dignity of the child and the purity of the mother. In this is shown that Joseph was not given to her for the purpose of carnal intercourse but to minister and guard. And he assigns the cause: for those who sought the child's life are dead.\r\n\r\nBut one might ask why he says, are, for Herod alone had died. This is answered in two ways: first, because he had done so much evil that the Jews rejoiced in his death. When he had a foreboding of his death, he commanded his sister to kill the nobler Jews when he died. These had sought the life of the child with Herod: for those who sought the child's life are dead. Or another way: It is the custom of Sacred Scripture to use the plural for the singular: hence, they are dead, i.e. he is dead. Hence, the statement that those who sought the child's life destroys Apollinaris' error, that the godhead was in Christ in place of a soul.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.2.20"
+    },
+    {
       "id": "catena-matt-0275-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.2.20",
@@ -127,6 +287,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.2.20:6aa88c95:0"
       ]
     },
     {

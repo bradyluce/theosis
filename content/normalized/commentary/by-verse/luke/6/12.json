@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.6.12:467bc90e:0"
       ]
     },
     {
@@ -33,60 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0903-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.12",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:12–16",
-      "excerpt": "Let not thy ears be open to deceit, that thou shouldest think that the Son of God prays from want of strength, that He may obtain what He could not perform; for being Himself the Author of power, the Master of obedience, He leads us by His own example to the precepts of virtue.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0904-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.12",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:12–16",
-      "excerpt": "Let us examine then in the actions which Jesus did, how He teaches us to be instant in prayer to God, going apart by ourselves, and in secret, no one seeing us; putting aside also our worldly cares, that the mind may be raised up to the height of divine contemplation; and this we have marked in the fact, that Jesus went in to a mountain apart to pray.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0905-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.12",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:12–16",
-      "excerpt": "Every where also He prays alone, for human wishes comprehend not the wisdom of God; and no one can be a partaker of the secrets of Christ. But not every one who prays ascends a mountain, he only who prays advancing from earthly things to higher, who is not anxious for the riches or honours of the world. All whose minds are raised above the world ascend the mountain. In the Gospel therefore you will find, that the disciples alone ascend the mountain with the Lord. But thou, O Christian, hast now the character given, the form prescribed which thou shouldest imitate; as it follows, And he…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -112,14 +65,39 @@
       ]
     },
     {
-      "id": "catena-luke-0908-v12",
+      "id": "catena-luke-0905-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.12",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:12–16",
-      "excerpt": "But mark the great carefulness of the Evangelist. He not only says that the holy Apostles were chosen, but he enumerates them by name, that no one should dare to insert any others in the catalogue; Simon, whom he also called Peter, and Andrew his brother.",
+      "excerpt": "Every where also He prays alone, for human wishes comprehend not the wisdom of God; and no one can be a partaker of the secrets of Christ. But not every one who prays ascends a mountain, he only who prays advancing from earthly things to higher, who is not anxious for the riches or honours of the world. All whose minds are raised above the world ascend the mountain. In the Gospel therefore you will find, that the disciples alone ascend the mountain with the Lord. But thou, O Christian, hast now the character given, the form prescribed which thou shouldest imitate; as it follows, And he…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.6.12:03b4ab2f:1"
+      ]
+    },
+    {
+      "id": "catena-luke-0903-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.12",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:12–16",
+      "excerpt": "Let not thy ears be open to deceit, that thou shouldest think that the Son of God prays from want of strength, that He may obtain what He could not perform; for being Himself the Author of power, the Master of obedience, He leads us by His own example to the precepts of virtue.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -148,6 +126,49 @@
       ]
     },
     {
+      "id": "catena-luke-0904-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.12",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:12–16",
+      "excerpt": "Let us examine then in the actions which Jesus did, how He teaches us to be instant in prayer to God, going apart by ourselves, and in secret, no one seeing us; putting aside also our worldly cares, that the mind may be raised up to the height of divine contemplation; and this we have marked in the fact, that Jesus went in to a mountain apart to pray.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.6.12:3300da12:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0908-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.12",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:12–16",
+      "excerpt": "But mark the great carefulness of the Evangelist. He not only says that the holy Apostles were chosen, but he enumerates them by name, that no one should dare to insert any others in the catalogue; Simon, whom he also called Peter, and Andrew his brother.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0909-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.12",
@@ -156,6 +177,49 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:12–16",
       "excerpt": "He not only surnamed Peter first, but long before this, when he was brought by Andrew, it is said, Thou shall be called Cephas, which is by interpretation, a stone (John 1:42.). But Luke, wishing to mention the names of the disciples, since it was necessary to call him Peter, wished shortly to imply that this was not his name before, but the Lord had given it to him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0914-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.12",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:12–16",
+      "excerpt": "But in a mystical sense the mountain on which our Lord chose His disciples represents the loftiness of justice in which they were to be instructed, and which they were to preach to others; so also the law was given on a mountain.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.12:efdf5e37:2"
+      ]
+    },
+    {
+      "id": "catena-luke-0911-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.12",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:12–16",
+      "excerpt": "Matthew places himself after his fellow-disciple Thomas, from humility, whereas by the other Evangelists he is put before him. It follows, James the son of Alphæus, and Simon who is called Zelotes.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -184,40 +248,89 @@
       ]
     },
     {
-      "id": "catena-luke-0911-v12",
+      "id": "hcf:ambrose-of-milan:luke.6.12:fe434d28:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.12",
       "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:12–16",
-      "excerpt": "Matthew places himself after his fellow-disciple Thomas, from humility, whereas by the other Evangelists he is put before him. It follows, James the son of Alphæus, and Simon who is called Zelotes.",
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 6:12",
+      "excerpt": "So the Lord prays, not to entreat for himself but to intercede for me. Although the Father placed all things in the power of his Son, yet the Son, in order to fulfill the form of a man, thinks that the Father must be entreated for us, because he is our Advocate.… If he is an Advocate, he must intercede on account of my sins.…It says, \"He passed the whole night in prayer.\" A model is given to you. A form is prescribed which you must imitate.… Unless I am mistaken, it is nowhere found that he prayed with the apostles. Everywhere he entreats alone, for human prayers do not grasp the counsels of God, nor can anyone share with Christ in the inward mysteries.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.6.12"
     },
     {
-      "id": "catena-luke-0914-v12",
+      "id": "hcf:bede:luke.6.12:fa920535:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.12",
       "topicSlugs": [],
       "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:12–16",
-      "excerpt": "But in a mystical sense the mountain on which our Lord chose His disciples represents the loftiness of justice in which they were to be instructed, and which they were to preach to others; so also the law was given on a mountain.",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:12",
+      "excerpt": "But it happened in those days that He went out to the mountain to pray. Not everyone who prays ascends to the mountain. For there is a prayer that brings about sin. But he who prays well, who seeks God in prayer, ascends from earthly things to higher things, reaching the peak of higher concern. But he who earnestly prays about riches, or worldly honor, or even about the death of an enemy, he, lying in the depths, sends vile prayers to God. The Lord, however, prays not for Himself, but to intercede for me. For even if the Father has put all things in the Son's power, the Son still deems it necessary to beseech the Father on our behalf because He is our advocate. For He says, \"We have an advocate with the Father, Jesus Christ\" (1 John 2). If He is an advocate, He must intervene for my sins. Therefore, He pleads not as a weak person, but as a pious one. Do you want to know how capable He is of accomplishing everything He wishes? He is both advocate and judge. In one, the function of piety; in the other, the symbol of power.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.12"
+    },
+    {
+      "id": "hcf:bede:luke.6.12:bb9d5380:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:12",
+      "excerpt": "And He was spending the night in prayer to God. A model is prescribed for you to emulate. What should you do for your own salvation when Christ spends the night in prayer for you? What should you do when you wish to undertake an office of piety, when Christ ensured to pray first before sending the apostles? Do you want to know how, He prayed for me, not for Himself?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.12"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.6.12:0cbc3b0d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-vii",
+      "title": "Epistle VII on luke 6:12",
+      "excerpt": "Let us urgently pray and groan with continual petitions. For know, beloved brethren, that I was not long ago reproached with this also in a vision, that we were sleepy in our prayers, and did not pray with watchfulness; and undoubtedly God, who \"rebukes whom He loves, when He rebukes, rebukes that He may amend, amends that He may preserve. Let us therefore strike off and break away from the bonds of sleep, and pray with urgency and watchfulness, as the Apostle Paul bids us, saying, \"Continue in prayer, and watch in the same.\" For the apostles also ceased not to pray day and night; and the Lord also Himself, the teacher of our discipline, and the way of our example, frequently and watch-fully prayed, as we read in the Gospel: \"He went out into a mountain to pray, and continued all night in prayer to God.\" And assuredly what He prayed for, He prayed for on our behalf, since He was not a sinner, but bore the sins of others. But He so prayed for us, that in another place we read, \"And the Lord said to Peter, Behold, Satan has desired to sift you as wheat: but I have prayed for thee, that thy faith fail not.\" But if for us and for our sins He both laboured and watched and prayed, how much more ought we to be instant in prayers; and, first of all, to pray and to entreat the Lord Himself, and then through Him, to make satisfaction to God the Father! We have an advocate and an intercessor for our sins, Jesus Christ the Lord and our God, if only we repent of our sins past, and confess and acknowledge our sins, whereby we now offend the Lord, and for the time to come engage to walk in His ways, and to fear His commandments. The Father corrects and protects us, if we still stand fast in the faith both in afflictions and perplexities, that is to say, cling closely to His Christ; as it is written, \"Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine or nakedness, or peril, or sword? None of these things can separate believers, nothing can tear away those who are clinging to His body and blood. Persecution of that kind is an examination and searching out of the heart. God wills us to be sifted and proved, as He has always proved His people; and yet in His trials help has never at any time been wanting to believers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.6.12"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.12:09ba775d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 6:12",
+      "excerpt": "Surely to Sion He brings good tidings, and to Jerusalem peace and all blessings; He goes up into a mountain, and there spends a night in prayer, and He is indeed heard by the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.12"
     },
     {
       "id": "catena-luke-0902-v12",
@@ -235,6 +348,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.6.12:309bd8f2:0"
       ]
     },
     {

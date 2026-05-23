@@ -4,14 +4,14 @@
   "verseNumber": 13,
   "entries": [
     {
-      "id": "catena-luke-1181-v13",
+      "id": "catena-luke-1211-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
-      "excerpt": "Now His going, Who is every where, was not local, but through the vail of the flesh He approached us. But Christ fitly denominates His advent, His going forth. For we were aliens from God, and cast out as criminals, and rebels to the king, but he who wishes to reconcile man, going out to them, speaks to them without, until having become meet for the royal presence, He brings them within; so also did Christ.",
+      "excerpt": "And to sum up many things in a few words. Some indeed as careless hearers, some as weak, but others as the very slaves of pleasure and worldly things, hold aloof from what is good. The order of the way side, the rock, and the thorns is well, for we have first need of recollection and caution, next of fortitude, and then of contempt of things present. He therefore places the good ground in opposition to the way, the rock, and the thorns. But that on the good ground are they, which in an honest and good heart, having heard the word, keep it, &c. For they who are on the way side keep not the…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.8.13:328aaddf:0"
       ]
     },
     {
@@ -40,14 +47,14 @@
       ]
     },
     {
-      "id": "catena-luke-1211-v13",
+      "id": "catena-luke-1181-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
-      "excerpt": "And to sum up many things in a few words. Some indeed as careless hearers, some as weak, but others as the very slaves of pleasure and worldly things, hold aloof from what is good. The order of the way side, the rock, and the thorns is well, for we have first need of recollection and caution, next of fortitude, and then of contempt of things present. He therefore places the good ground in opposition to the way, the rock, and the thorns. But that on the good ground are they, which in an honest and good heart, having heard the word, keep it, &c. For they who are on the way side keep not the…",
+      "excerpt": "Now His going, Who is every where, was not local, but through the vail of the flesh He approached us. But Christ fitly denominates His advent, His going forth. For we were aliens from God, and cast out as criminals, and rebels to the king, but he who wishes to reconcile man, going out to them, speaks to them without, until having become meet for the royal presence, He brings them within; so also did Christ.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -112,6 +119,31 @@
       ]
     },
     {
+      "id": "catena-luke-1206-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "For when they enter the Church they gladly wait on the divine mysteries, but with infirmity of purpose. But when they leave the Church they forget the sacred discipline, and as long as Christians are undisturbed, their faith is lasting; but when persecution harasses, their heart fails them, for their faith was without root.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.8.13:4ee17e95:1"
+      ]
+    },
+    {
       "id": "catena-luke-1194-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
@@ -138,60 +170,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
       "excerpt": "Hearing has reference to the understanding. By this then our Lord stirs us up to listen attentively to the meaning of those things which are spoken.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1202-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "But our Lord condescended to explain what He said, that we might know how to seek for explanation in those things which He is unwilling to explain through Himself. For it follows, Now the parable is this: The seed is the word of God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1206-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "For when they enter the Church they gladly wait on the divine mysteries, but with infirmity of purpose. But when they leave the Church they forget the sacred discipline, and as long as Christians are undisturbed, their faith is lasting; but when persecution harasses, their heart fails them, for their faith was without root.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1207-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "Many men propose to begin a good work, but as soon as they have become annoyed by adversity or temptation, they abandon what they had begun. The rocky ground then had no moisture to carry on to constancy fruit which it had put forth.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -238,17 +216,17 @@
       ]
     },
     {
-      "id": "catena-luke-1179-v13",
+      "id": "catena-luke-1202-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
       "topicSlugs": [],
-      "personId": "eusebius-caesarea",
+      "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
-      "excerpt": "Now Christ most fitly puts forth His first parable to the multitude not only of those who then stood by, but of those also who were to come after them, inducing them to listen to His words, saying, A sower went out to sow his seed.",
+      "excerpt": "But our Lord condescended to explain what He said, that we might know how to seek for explanation in those things which He is unwilling to explain through Himself. For it follows, Now the parable is this: The seed is the word of God.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -256,14 +234,39 @@
       ]
     },
     {
-      "id": "catena-luke-1180-v13",
+      "id": "catena-luke-1207-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
-      "excerpt": "The sower we can conceive to be none other but the Son of God, Who going forth from His Father’s bosom whither no creature had attained, came into the world that He might bear witness to the truth. (John 18:37.)",
+      "excerpt": "Many men propose to begin a good work, but as soon as they have become annoyed by adversity or temptation, they abandon what they had begun. The rocky ground then had no moisture to carry on to constancy fruit which it had put forth.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.8.13:c2721acd:1"
+      ]
+    },
+    {
+      "id": "catena-luke-1186-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "He teaches therefore that there are two classes of those who received the seed; the first, of those who have been made worthy of the heavenly calling, but fall from grace through carelessness and sloth; but the second, of those who multiply the seed bearing good fruit. But according to Matthew he makes three divisions in each class. For those who corrupt the seed have not all the same manner of destruction, and those who bear fruit from it do not receive an equal abundance. He wisely sets forth the cases of those who lose the seed. For some though they have not sinned, have lost the good seed…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -292,132 +295,6 @@
       ]
     },
     {
-      "id": "catena-luke-1186-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "eusebius-caesarea",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "He teaches therefore that there are two classes of those who received the seed; the first, of those who have been made worthy of the heavenly calling, but fall from grace through carelessness and sloth; but the second, of those who multiply the seed bearing good fruit. But according to Matthew he makes three divisions in each class. For those who corrupt the seed have not all the same manner of destruction, and those who bear fruit from it do not receive an equal abundance. He wisely sets forth the cases of those who lose the seed. For some though they have not sinned, have lost the good seed…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1189-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "The rock, he says, is the hard and unsubdued heart. Now the moisture at the root of the seed is the same as what is called in another parable, the oil to trim the lamps of the virgins, that is, love and stedfastness in virtue. (Matt. 25.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1190-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "eusebius-caesarea",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "There are also some who through covetousness, the desire of pleasure and worldly cares, which indeed Christ calls thorns, suffer the seed which has been sown in them to be choked.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1193-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "For by fruit a hundredfold, he means perfect fruit. For the number ten is always taken to imply perfection, because in ten precepts is contained the keeping, or the observance of the law. But the number ten multiplied by itself amounts to a hundred; hence by a hundred very great perfection is signified.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1196-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "For as often as the admonition occurs either in the Gospel or the Revelation of St. John, it signifies that there is a mystical meaning in what is said, and we must inquire more closely into it. Hence the disciples who were ignorant ask our Saviour, for it follows, And his disciples asked him, &c. But let no one suppose that as soon as the parable was finished His disciples asked Him, but as Mark says, When he was alone they asked him. (Mark 4:10.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1198-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "eusebius-caesarea",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "But our Lord told them the reason why He spake to the multitudes in parables, as follows, And he said, Unto you it is given to know the mysteries of God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1201-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "Rightly then do they hear in parables, who having closed the senses of their heart, care not to know the truth, forgetful of what the Lord told them. He that hath ears to hear, let him hear.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1203-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
@@ -426,24 +303,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
       "excerpt": "Now He says, that there are three reasons why men destroy the seed implanted in their hearts. For some destroy the seed that is hid in them by lightly giving heed to those that wish to deceive, of whom He adds, Those by the way side are they that hear: then cometh the devil, and taketh away the word out of their hearts.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1204-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "Who in truth deign to receive the word which they hear with no faith, with no understanding, at least with no attempt to test the value of it.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -469,6 +328,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.8.13:70c7dfb0:0"
       ]
     },
     {
@@ -505,6 +371,200 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.8.13:f3b59dd0:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1179-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "Now Christ most fitly puts forth His first parable to the multitude not only of those who then stood by, but of those also who were to come after them, inducing them to listen to His words, saying, A sower went out to sow his seed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1190-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "There are also some who through covetousness, the desire of pleasure and worldly cares, which indeed Christ calls thorns, suffer the seed which has been sown in them to be choked.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1198-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "But our Lord told them the reason why He spake to the multitudes in parables, as follows, And he said, Unto you it is given to know the mysteries of God.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1196-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "For as often as the admonition occurs either in the Gospel or the Revelation of St. John, it signifies that there is a mystical meaning in what is said, and we must inquire more closely into it. Hence the disciples who were ignorant ask our Saviour, for it follows, And his disciples asked him, &c. But let no one suppose that as soon as the parable was finished His disciples asked Him, but as Mark says, When he was alone they asked him. (Mark 4:10.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1193-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "For by fruit a hundredfold, he means perfect fruit. For the number ten is always taken to imply perfection, because in ten precepts is contained the keeping, or the observance of the law. But the number ten multiplied by itself amounts to a hundred; hence by a hundred very great perfection is signified.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1189-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "The rock, he says, is the hard and unsubdued heart. Now the moisture at the root of the seed is the same as what is called in another parable, the oil to trim the lamps of the virgins, that is, love and stedfastness in virtue. (Matt. 25.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.8.13:32544260:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1180-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "The sower we can conceive to be none other but the Son of God, Who going forth from His Father’s bosom whither no creature had attained, came into the world that He might bear witness to the truth. (John 18:37.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1201-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "Rightly then do they hear in parables, who having closed the senses of their heart, care not to know the truth, forgetful of what the Lord told them. He that hath ears to hear, let him hear.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1204-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "Who in truth deign to receive the word which they hear with no faith, with no understanding, at least with no attempt to test the value of it.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1200-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.13",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:4–15",
+      "excerpt": "But to those who are unworthy of such mysteries, they are obscurely spoken. Hence it follows, But to the rest in parables, that seeing they might not see, and hearing they might not understand. For they think they see, but see not, and hear indeed, but do not understand. For this reason Christ hides this from them, lest they should beget a greater prejudice against them, if after they had known the mysteries of Christ, they despised them. For he who understands and afterwards despises, shall be more severely punished.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -526,14 +586,14 @@
       ]
     },
     {
-      "id": "catena-luke-1178-v13",
+      "id": "catena-luke-1187-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
       "topicSlugs": [],
-      "personId": "origen",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
-      "excerpt": "And therefore it is significantly said, When much people were gathered together, and were come to him out of every city. For not many but few there are who walk the strait road, and find the way which leadeth to life. Hence Matthew says, that He taught without the house by parables, but within the house explained the parable to His disciples. (Matt. 13:36.)",
+      "excerpt": "He said not that the sower threw some on the way side, but that it fell by the way side. For he who sows teaches the right word, but the word falls in different ways upon the hearers, so that some of them are called the way side: and it was trodden down, and the birds of the air devoured it.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -580,24 +640,6 @@
       ]
     },
     {
-      "id": "catena-luke-1187-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.13",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:4–15",
-      "excerpt": "He said not that the sower threw some on the way side, but that it fell by the way side. For he who sows teaches the right word, but the word falls in different ways upon the hearers, so that some of them are called the way side: and it was trodden down, and the birds of the air devoured it.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1197-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
@@ -616,14 +658,14 @@
       ]
     },
     {
-      "id": "catena-luke-1200-v13",
+      "id": "catena-luke-1178-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.13",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:4–15",
-      "excerpt": "But to those who are unworthy of such mysteries, they are obscurely spoken. Hence it follows, But to the rest in parables, that seeing they might not see, and hearing they might not understand. For they think they see, but see not, and hear indeed, but do not understand. For this reason Christ hides this from them, lest they should beget a greater prejudice against them, if after they had known the mysteries of Christ, they despised them. For he who understands and afterwards despises, shall be more severely punished.",
+      "excerpt": "And therefore it is significantly said, When much people were gathered together, and were come to him out of every city. For not many but few there are who walk the strait road, and find the way which leadeth to life. Hence Matthew says, that He taught without the house by parables, but within the house explained the parable to His disciples. (Matt. 13:36.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -650,6 +692,57 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.8.13:426a7992:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-41",
+      "title": "COMMENTARY ON LUKE, HOMILY 41 on luke 8:13",
+      "excerpt": "Let us consider those others of whom Christ said, \"And those upon the rock are they who, when they hear, receive the word with joy, and they have no root. These believe for a while and in time of temptation depart away.\" There are men whose faith has not been proved. They depend simply on words and do not apply their minds to examining the mystery. Their piety is sapless and without root. When they enter the churches, they feel pleasure often in seeing so many assembled. They joyfully receive instruction in the mysteries from him whose business it is to teach and laud him with praises. They do this without discretion or judgment, but with unpurified wills. When they go out of the churches, at once they forget the sacred doctrines and go about in their customary course, not having stored up within themselves any thing for their future benefit. If the affairs of Christians go on peacefully and no trial disturbs them, even then they scarcely maintain the faith, and that, so to speak, in a confused and tottering state. When persecution troubles them and the enemies of the truth attack the churches of the Savior, their heart does not love the battle, and their mind throws away the shield and flees.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-41",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.8.13"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.8.13:35a4ca98:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-15",
+      "title": "Forty Gospel Homilies, Homily 15 on luke 8:13",
+      "excerpt": "Take care that rocky ground does not receive the seed and send forth the fruit of good work without the roots of perseverance. For many are pleased by what they hear and propose beginnings of good work; but as soon as they begin to be wearied by adversities, they abandon what they have begun. Rocky ground therefore lacked moisture, which did not bring what had sprouted to the fruit of perseverance. For many, when they hear the word against avarice, detest that same avarice and praise contempt for all things; but as soon as the mind sees what it desires, it forgets what it was praising. Many, when they hear the word against lust, not only do not desire to commit defilements of the flesh, but even blush at those committed; but as soon as the beauty of the flesh appears before their eyes, the mind is so carried away to desires as if nothing had yet been resolved by it against these same desires; and it does condemnable things, which whatever it remembers having done, it has already itself condemned. Often too we are pierced with remorse against sins, and yet after weeping we return to the same sins. So Balaam, having gazed upon the tents of the Israelite people, wept and begged to be made like them in death, saying: Let my soul die the death of the just, and let my last end be like theirs; but as soon as the hour of compunction passed, he burned with the wickedness of avarice. For on account of promised gifts he gave counsel for the death of that people whose death he had wished to resemble; and he forgot what he had lamented, since he was unwilling to extinguish what burned through avarice.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.8.13"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.8.13:728d4910:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-11-14",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 11.14 on luke 8:13",
+      "excerpt": "\"That which fell on the rock …\"  The good Lord revealed his mercy. Although the hardness of the ground was not cultivated, he did not withhold its seed from it. This ground represents those who turn away from his teaching like those who said, \"This word is hard; who can listen to it?\" It is like Judas, who heard his word and flourished through his signs but was without fruit in the moment of testing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-11-14",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.8.13"
     }
   ]
 }

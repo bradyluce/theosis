@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.13.7:7a9f4046:0"
       ]
     },
     {
@@ -76,6 +83,31 @@
       ]
     },
     {
+      "id": "catena-mark-1037-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.7",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:3–8",
+      "excerpt": "That is, the Romans against the Jews, which Josephus relates happened before the destruction of Jerusalem. For when the Jews refused to pay tribute, the Romans arose, in anger; but because at that time they were merciful they took indeed their spoils, but did not destroy Jerusalem. What follows shews that God fought against the Jews, for it is said, And there shall be earthquakes in divers places, and there shall be famines.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.13.7:c5ce707f:1"
+      ]
+    },
+    {
       "id": "catena-mark-1035-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.7",
@@ -94,22 +126,73 @@
       ]
     },
     {
-      "id": "catena-mark-1037-v7",
+      "id": "hcf:bede:mark.13.7:dc58c855:1",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.7",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 13:7",
+      "excerpt": "(ubi sup.) Now from the time of the Passion of our Lord there ceased not amongst the Jewish people, who chose the seditious robber and rejected Christ the Saviour, either external wars or civil discord; wherefore it goes on: And when ye shall hear of wars and rumours of wars, be ye not troubled. And when these come, the Apostles are warned not to be afraid, or to leave Jerusalem and Judæa, because the end was not to come at once, nay was to be put off for forty years. And this is what is added: for such things must needs be; but the end shall not be yet, that is, the desolation of the province, and the last destruction of the city and temple.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.13.7"
+    },
+    {
+      "id": "hcf:bede:mark.13.7:f651aaaa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:7",
+      "excerpt": "But when you hear of wars and rumors of wars, do not be troubled. For such things must happen, but the end is not yet. Wars pertain to enemies, seditions to citizens. Both of these abounded abundantly from the time of the Lord's Passion among the people of the Jews, who chose a seditious robber for themselves instead of the Savior Christ. However, the apostles, as these events draw near, are warned not to be terrified, not to abandon Jerusalem and Judea, because evidently the end, which should rather be deferred until the fortieth year, namely the desolation of the province and the ultimate destruction of the city and temple, is to follow.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.7"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.7:9f289405:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:3–8",
-      "excerpt": "That is, the Romans against the Jews, which Josephus relates happened before the destruction of Jerusalem. For when the Jews refused to pay tribute, the Romans arose, in anger; but because at that time they were merciful they took indeed their spoils, but did not destroy Jerusalem. What follows shews that God fought against the Jews, for it is said, And there shall be earthquakes in divers places, and there shall be famines.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:7",
+      "excerpt": "\"You will hear,\" He says, \"of wars\"; these are the wars about which Josephus Flavius also recounts and which took place before the destruction of Jerusalem. The Jews at that time revolted and ceased paying tribute to the Romans, and the angered Romans went to war against them and made constant attacks. \"But this is not yet the end\" of Jerusalem, for the Romans still showed clemency.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.7"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.13.7:d536c8b6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-35",
+      "title": "Forty Gospel Homilies, Homily 35 on mark 13:7",
+      "excerpt": "Our Lord and Redeemer announces beforehand the evils that precede the perishing world, so that the things to come may disturb us less because they have been foreknown. For missiles that are foreseen strike less forcefully; and we endure the evils of the world more tolerably if we are fortified against them by the shield of foreknowledge. For behold he says: \"When you hear of wars and seditions, do not be terrified; for these things must happen first, but the end is not yet at once.\" The words of our Redeemer must be weighed carefully, through which he announces that we will suffer one thing internally, another externally. For wars indeed pertain to enemies, seditions to citizens. Therefore, to indicate that we are troubled both internally and externally, he declares that we suffer one thing from enemies, another from brothers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.13.7"
     }
   ]
 }

@@ -109,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.62:1a30497b:0"
       ]
     },
     {
@@ -146,6 +153,41 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.1.62:ad3a5d56:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:62",
+      "excerpt": "Zacharias also is questioned, and signs made to him, as it follows, And they made signs to the father, &c. But since unbelief had so bereft him of utterance and hearing, that he could not use his voice, he spoke by his hand-writing, as it follows, And he asked for a writing table, and wrote, saying, His name is John; that is, we give no name to him who has received his name from God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.62"
+    },
+    {
+      "id": "hcf:bede:luke.1.62:a05b2f6b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-20",
+      "title": "Homilies on the Gospels 2.20 on luke 1:62",
+      "excerpt": "John means \"the grace of God\" or \"in whom there is grace.\" By this name are expressed the entire extent of the grace of the gospel dispensation which he was to proclaim, and especially the Lord himself, through whom this grace was to be granted to the world.…As to his subsequent declaration and confirmation of the name of John, and the opening of Zechariah's mouth and his speaking, blessing God, it is surely evident that once the grace of the new covenant was manifested by the apostles, a large number of priests also became obedient to the faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.62"
     }
   ]
 }

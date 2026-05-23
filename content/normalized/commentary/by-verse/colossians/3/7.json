@@ -4,6 +4,25 @@
   "verseNumber": 7,
   "entries": [
     {
+      "id": "chrysostom-230308-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:colossians.3.7",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-colossians",
+      "title": "On Colossians 3:5–7",
+      "excerpt": "Colossians 3:5-7 Mortify your members which are upon the earth; fornication, uncleanness, passion, evil desire, and covetousness, which is idolatry; for which things' sake, comes the wrath of God upon the sons of disobedience; in the which you also walked aforetime, when you lived in these things. I know that many are offended by the foregoing discourse, but what can I do? You heard what the Master enjoined. Am I to blame? What shall I do? Have you not seen the creditors, when debtors are obstinate, how they wear collars? Did you hear what Paul proclaimed today? Mortify, he says, your members…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-colossians-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "colossians"
+      ]
+    },
+    {
       "id": "chrysostom-220115-v7",
       "relation": "verse",
       "targetVerseId": "kjva:colossians.3.7",
@@ -23,23 +42,72 @@
       ]
     },
     {
-      "id": "chrysostom-230308-v7",
+      "id": "hcf:john-chrysostom:colossians.3.7:7aca38b2:1",
       "relation": "verse",
-      "targetVerseId": "kjva:colossians.3.7",
       "topicSlugs": [],
       "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-colossians",
-      "title": "On Colossians 3:5–7",
-      "excerpt": "Colossians 3:5-7 Mortify your members which are upon the earth; fornication, uncleanness, passion, evil desire, and covetousness, which is idolatry; for which things' sake, comes the wrath of God upon the sons of disobedience; in the which you also walked aforetime, when you lived in these things. I know that many are offended by the foregoing discourse, but what can I do? You heard what the Master enjoined. Am I to blame? What shall I do? Have you not seen the creditors, when debtors are obstinate, how they wear collars? Did you hear what Paul proclaimed today? Mortify, he says, your members…",
+      "workId": "hcf:work:john-chrysostom:homily-on-colossians-8",
+      "title": "Homily on Colossians 8 on colossians 3:7",
+      "excerpt": "\"In the which ye also,\" he saith, \"walked aforetime,\" and (afterward) became obedient. He points them out as still in them, and praises them, saying, \"But now do ye also put away all these, anger, wrath, malice, railing, shameful speaking.\"",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-colossians-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "colossians"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:colossians.3.7"
+    },
+    {
+      "id": "hcf:john-chrysostom:colossians.3.7:2f738c47:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-colossians-8",
+      "title": "Homily on Colossians 8 on colossians 3:7",
+      "excerpt": "\"In the which ye also walked aforetime, when ye lived in them.\" In order to shame them, he saith, \"when ye lived in them,\" and implying praise, as now no more so living: at that time they might.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:colossians.3.7"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:colossians.3.7:234622f3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-colossians",
+      "title": "Commentary on Colossians on colossians 3:7",
+      "excerpt": "This word is not without praise, because now they no longer live in lusts; but there was a time when they did live so, for they were pagans.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:colossians.3.7"
+    },
+    {
+      "id": "hcf:thomas-aquinas:colossians.3.7:f595b396:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-colossians",
+      "title": "Commentary on Colossians on colossians 3:7",
+      "excerpt": "The other reason they have for avoiding these sins is that once they did live that way; and so Paul says, in these you once walked, from bad to worse. He gives them this reason, first, because of what Peter says: \"Let the time that is past suffice for doing what the Gentiles like to do, living in licentiousness, passions, drunkenness, revels, carousing, and lawless idolatry\" (1 Pet. 4:3). Secondly, he mentions this reason because they knew from their own experience that such conduct is not beneficial, but only brings disorder: \"But then what return did you get from the things of which you are now ashamed,\" as we read in Romans (6:21).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:colossians.3.7"
     }
   ]
 }

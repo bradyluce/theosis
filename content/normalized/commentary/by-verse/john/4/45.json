@@ -23,24 +23,6 @@
       ]
     },
     {
-      "id": "catena-john-0531-v45",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.4.45",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 4:43–45",
-      "excerpt": "After staying two days in Samaria, He departed into Galilee, where He resided: Now after two days He departed thence, and went into Galilee.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0532-v45",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.45",
@@ -59,14 +41,14 @@
       ]
     },
     {
-      "id": "catena-john-0533-v45",
+      "id": "catena-john-0531-v45",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.45",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 4:43–45",
-      "excerpt": "Or consider this the reason that He went, not to Capernaum, but to Galilee and Cana, as appears below, His country being, I think, Capernaum. As He did not obtain honour there, hear what He says; And thou, Capernaum, which art exalted unto heaven, shall be brought down to hell. (Mat. 11:23) He calls it His own country, because He had most resided here.",
+      "excerpt": "After staying two days in Samaria, He departed into Galilee, where He resided: Now after two days He departed thence, and went into Galilee.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,6 +77,24 @@
       ]
     },
     {
+      "id": "catena-john-0533-v45",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.4.45",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 4:43–45",
+      "excerpt": "Or consider this the reason that He went, not to Capernaum, but to Galilee and Cana, as appears below, His country being, I think, Capernaum. As He did not obtain honour there, hear what He says; And thou, Capernaum, which art exalted unto heaven, shall be brought down to hell. (Mat. 11:23) He calls it His own country, because He had most resided here.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0538-v45",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.45",
@@ -110,6 +110,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.4.45:3fc91165:0"
       ]
     },
     {
@@ -182,7 +189,116 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:john.4.45:6ec989f1:1"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.4.45:f89148a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-35",
+      "title": "Homily on the Gospel of John 35 on john 4:45",
+      "excerpt": "Seest thou that these men so ill spoken of are found most to come to Him? For one said, \"Can there any good thing come out of Nazareth?\" (c. i. 46), and another, \"Search and look, for out of Galilee ariseth no prophet.\" (c. vii. 52.) These things they said insulting Him, because He was supposed by the many to be of Nazareth, and they also reproached Him with being a Samaritan; \"Thou art a Samaritan,\" said one, \"and hast a devil.\" (c. viii. 48.) Yet behold, both Samaritans and Galilaeans believe, to the shame of the Jews, and Samaritans are found better than Galilaeans, for the first received Him through the words of the woman, the second when they had seen the miracles which He did.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.4.45"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.4.45:f05fb487:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 4:45",
+      "excerpt": "When the Lord came to Galilee, the Galileans believed, having seen the signs which He had done in Jerusalem. But the Samaritans are worthy of greater commendation, because they believed without signs, by the word of the woman.\r\nLook: those considered rejected are everywhere distinguished by faith; I mean the Samaritans and the Galileans. For these latter too were despised as living in a rustic manner, which is why they said that no prophet comes from Galilee (John 7:52). But those considered chosen, such as the Jerusalem Jews, are rejected. Truly, we Gentiles too have been rightly received. For in His own homeland, understood in another sense as the Jewish synagogue, the \"Prophet\" Christ had no honor, as Moses calls Him: the Lord our God will raise up a prophet (Deut. 18:15).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.4.45"
+    },
+    {
+      "id": "hcf:origen:john.4.45:9a647306:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-13-387-88",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 13.387-88 on john 4:45",
+      "excerpt": "It is possible … that a Galilean happened to be in Jerusalem, where the temple of God is located, to celebrate the festival and saw everything that Jesus did there. He may have especially seen how he cast out all those selling cattle, sheep and doves, along with the sheep, the cattle, and the rest, with the scourge he made from cords. For the feast in Jerusalem marks the beginning of the Galileans' reception of the Son of God when he came to them. Otherwise, if they had not seen his deeds at the feast, they would not have received him. He also would not have visited them so eagerly, having left those who asked him \"to remain with them,\" if the Galileans had not been previously prepared to receive him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.4.45"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.4.45:9444c8ec:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 4:45",
+      "excerpt": "Not without consideration do the Galileans receive Jesus, but in just astonishment at the wondrous works which they themselves had already seen Him do, both by their piety towards Him condemning the folly of the Jews, and found far superior in good feeling to those who were instructed in the law.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.4.45"
+    },
+    {
+      "id": "hcf:hcf-theodore-of-mopsuestia:john.4.45:a0c0b632:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-of-mopsuestia",
+      "workId": "hcf:work:hcf-theodore-of-mopsuestia:commentary-on-john-2-4-43-45",
+      "title": "COMMENTARY ON JOHN 2.4.43-45 on john 4:45",
+      "excerpt": "After he had spent two days there, he continued his journey into Galilee, as he had planned. Not only did he see this as an opportunity, but he also often said that a prophet has no honor in his homeland. He called Judea his homeland, which he had left for this very reason, that is, because obviously the Jews out of great envy wanted to persecute him in various ways. All that [the Evangelist] said about the Samaritans was clearly inserted into the plot of his narrative. Among other things, Samaria was not the homeland of the Messiah. Also, the words \"has no honor\" could not refer to the Samaritans because they believed in him and received him with great honor. However, the Galileans, the Evangelist says, received him with honor as well, since they knew and had seen those things done by him in Jerusalem.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-john-2-4-43-45",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c428"
+      ],
+      "targetVerseId": "kjva:john.4.45"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.4.45:1c12044e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 4:45",
+      "excerpt": "Then he shows that Christ was received by the Galileans more respectfully than before, saying, When however he arrived in Galilee, the Galileans welcomed him, respectfully. The reason behind this was because they had seen all the things he had done in Jerusalem on the festive day, where they too had gone, as the law commanded.\r\n\r\nThis seems to conflict with the fact that we did not read above of any miracles being performed by Christ at Jerusalem. I answer, with the opinion of Origen, that the Jews thought it a great miracle that Christ drove the traders from the temple with such authority (above 2:14). Or, we could say that Christ performed many miracles which were not written down, according to, \"Jesus did many other signs... which are not written down in this book\" (below 20:30).\r\n\r\nIn its mystical sense, this gives us an example that if we wish to receive Jesus Christ within ourselves, we should go up to Jerusalem on a festive day, that is, we should seek tranquility of mind, and examine everything which Jesus does there: \"Look upon Zion, the city of our festive days\" (Is 33:20); \"I have meditated on all your works\" (Ps 142:5).\r\n\r\nNote that as men were lesser in dignity, they were better with respect to God. The Judeans were superior in dignity to the Galileans: \"Look at the Scriptures and see that the Prophet will not come from Galilee\" (below 7:52); and the Galileans were superior in dignity to the Samaritans: \"The Jews had nothing to do with the Samaritans\" (above 4:9). On the other hand, the Samaritans were better than the Galileans because more of them believed in Christ in two days without any miracles than the Galileans did in a long period of time and even with the miracle of the wine: for none of them believed in him except his disciples. Finally, the Judeans were worse than the Galileans, because none of them believed in Jesus, except perhaps Nicodemus.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.4.45"
     }
   ]
 }

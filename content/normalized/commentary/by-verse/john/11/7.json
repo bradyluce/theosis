@@ -4,6 +4,24 @@
   "verseNumber": 7,
   "entries": [
     {
+      "id": "catena-john-1465-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.11.7",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 11:6–10",
+      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-049-c11-v7",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.7",
@@ -23,24 +41,6 @@
       ]
     },
     {
-      "id": "catena-john-1462-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.11.7",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 11:6–10",
-      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1463-v7",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.7",
@@ -56,6 +56,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.11.7:3fa36c23:0"
       ]
     },
     {
@@ -77,14 +84,14 @@
       ]
     },
     {
-      "id": "catena-john-1465-v7",
+      "id": "catena-john-1466-v7",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.7",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-1466-v7",
+      "id": "catena-john-1462-v7",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.7",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
+      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -147,6 +154,74 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.11.7:1dba0064:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-62",
+      "title": "Homily on the Gospel of John 62 on john 11:7",
+      "excerpt": "\"Then saith He to his disciples, Let us go into Judea.\" Why, when He never in other places told them beforehand where He was going, doth He tell them here? They had been greatly terrified, and since they were in this way disposed, He forewarneth them, that the suddenness might not trouble them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.11.7"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.11.7:c29f344a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 11:7",
+      "excerpt": "In other cases the Lord never stated beforehand where He intended to go, but only here does He announce in advance, it seems, because His disciples were very afraid to go to Judea. He announces beforehand so that they would not be troubled by the unexpectedness, if He were to suddenly lead them into a country which they were afraid to enter.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.11.7"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.11.7:dcd745bd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-7",
+      "title": "Commentary on the Gospel of John, Book 7 on john 11:7",
+      "excerpt": "Now when the Lord said: Let us go into Judaea again, He seems almost to declare \"Even though the people there are unworthy of kindness, yet now that an opportunity presents itself of conveying them some advantage, let us go back to them;\" but the disciples in their love for Him think it right to try to hinder Him, and moreover as men they suppose that He would be unwilling to put Himself in peril by going amongst the Jews. Wherefore also they remind Him of the madness of the Jews against Him, all but saying: \"Why again dost Thou seek to be amidst the unbelieving and ungrateful people who are not softened either by Thy words or even by Thy works? who even yet are of murderous intent against Thee, and who are boiling with passionate rage?\" Either then they say this, or their language signifies that He is leading them into evident danger. Nevertheless, they are obedient to their Teacher, as to One Who knows what is best.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.11.7"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.11.7:8a237f8a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 11:7",
+      "excerpt": "1482 Here (v 7) our Lord declares his intention to go to the place where Lazarus died. First, we see our Lord's plan; secondly, we see the fear in the disciples (v 8); and thirdly, we have our Lord dispelling their fear (v 9).\r\n\r\n1483 With respect to the first the Evangelist says, Then after this, the prolonged delay, he said, Jesus did, to the disciples, Let us go into Judea again. One might ask here why Christ made a point of mentioning to the apostles that he was about to go into Judea again, since he had not done this on other occasions. The reason for this was that the Jews had just recently persecuted Christ in Judea and had almost stoned him; indeed, that is why he had left. So it was to be expected that when Christ wanted to go there again, the disciples would become fearful. And because \"Darts that are foreseen do not strike and foreseen evils are more easily borne,\" as Gregory says, our Lord mentioned his planned journey to them to calm their fears. As to the mystical sense, we can understand by the fact that Christ is returning once again to Judea, that he will return again at the end of the world to the Jews, who will be converted to Christ: \"A hardening has come upon part of Israel, until the full number of the Gentiles come in\" (Rom 11:25).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.11.7"
     }
   ]
 }

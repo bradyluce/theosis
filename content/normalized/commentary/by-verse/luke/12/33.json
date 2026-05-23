@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.12.33:58e5115d:0"
       ]
     },
     {
@@ -73,24 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2037-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.33",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:32–34",
-      "excerpt": "But some one will ask, upon what grounds ought we to sell that which we have? Is it that these things are by nature hurtful, or because of the temptation to our souls? To this we must answer, first, that every thing existing in the world if it were in itself evil, would be no creation of God, for every creation of God is good. (1 Tim. 4:4.) And next, that our Lord’s command teaches us not to cast away as evil what we possess, but to distribute, saying, and give alms.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.33:19121879:0"
       ]
     },
     {
@@ -109,6 +105,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2037-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.33",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:32–34",
+      "excerpt": "But some one will ask, upon what grounds ought we to sell that which we have? Is it that these things are by nature hurtful, or because of the temptation to our souls? To this we must answer, first, that every thing existing in the world if it were in itself evil, would be no creation of God, for every creation of God is good. (1 Tim. 4:4.) And next, that our Lord’s command teaches us not to cast away as evil what we possess, but to distribute, saying, and give alms.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.12.33:1604f895:0"
       ]
     },
     {
@@ -145,6 +166,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.12.33:9b0049d5:3"
       ]
     },
     {
@@ -164,6 +192,231 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:gloss-ordinaria:luke.12.33:f11c761e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "hcf:work:gloss-ordinaria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 12:33",
+      "excerpt": "Or, the thieves are heretics and evil spirits, who are bent upon depriving us of spiritual things. The moth which secretly frets the garments is envy, which mars good desires, and bursts the bonds of charity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.33:cc10511a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:33",
+      "excerpt": "So then, do not think that if you do not embrace poverty, there will be no Provider for you, but sell your possessions, give alms, and make your treasure inexhaustible.\r\nThen He persuades us with irrefutable reasoning as well. Here, He says, the moth consumes, but in heaven it does not. Therefore, is it not madness to store up treasure in a place where it is damaged? Then, since the moth does not consume gold, He added: \"where no thief approaches.\" For if the moth does not consume gold, the thief steals it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.33:a4288b5c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 12:33",
+      "excerpt": "As if He said, \"Here the moth corrupts, but there is no corruption in heaven.\" Then because there are some things which the moth does not corrupt, He goes on to speak of the thief. For gold the moth corrupts not, but the thief takes away.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.12.33:2834d23e:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-91",
+      "title": "COMMENTARY ON LUKE, HOMILY 91 on luke 12:33",
+      "excerpt": "Give away these earthly things, and win that which is in heaven. Give that which you must leave, even against your will, that you may not lose things later. Lend your wealth to God, that you may be really rich.Concerning the way in which to lend it, Jesus next teaches us saying, \"Sell your possessions, and give alms; provide yourselves with purses that do not grow old, with a treasure in the heavens that does not fail.\" The blessed David teaches us exactly the same in the psalms, where by inspiration he says of every merciful and good man, \"He has distributed freely, he has given to the poor; his righteousness endures forever.\" Worldly wealth has many foes. There are numerous thieves, and this world of ours is full of oppressors. Some plunder by secret means, while others use violence and tear it away even from those who resist. But no one can do damage to the wealth that is laid up above in heaven. God is its keeper, and he does not sleep.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-91",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.12.33:0bfc0432:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-91",
+      "title": "COMMENTARY ON LUKE, HOMILY 91 on luke 12:33",
+      "excerpt": "He announced as a general law, useful and necessary for salvation, not only to the holy apostles but to all living on the earth, that people must seek his kingdom. He announced this, being sure that what he gives will be sufficient for them to be in need of nothing else. What, then, does he say? Fear not, little flock. And by \"do not fear,\" he means that they must believe that certainly and without doubt their heavenly Father will give the means of life to those who love him. He will not neglect his own. Rather he will open his hand to them—the hand which ever fills the universe with goodness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-91",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:bede:luke.12.33:75d0bb07:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:33",
+      "excerpt": "A treasure unfailing in the heavens, where a thief does not approach, nor moth corrupts. Either simply taken that money kept fails, or namely, snatched by a thief from treasures, or in treasures itself spoiled by its own fragility, but given for Christ it bestows an everlasting fruit of mercy in the heavens; or certainly it should be understood that the treasure of good work, if it is stored for the sake of earthly gain, easily corrupted perishes, but if gathered solely with a heavenly intention, it is neither corrupted by external human favor nor ruined by the stain of empty glory within. For a thief steals from outside, a moth destroys from within. The thief has taken away the riches of those about whom the Lord says, They have received their reward (Matt. VI). The moth corrupts their clothes, of whom the Psalmist reproving says: For God scatters the bones of men who please themselves (Psalm LII). For bones he calls the strength of virtues.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:bede:luke.12.33:8cd25621:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:33",
+      "excerpt": "Sell what you possess, and give alms. He says, do not fear that those who fight for the kingdom of God may lack the necessities of this life; indeed, sell what you possess for almsgiving. This is done worthily when, after having forsaken all things for the Lord, one nonetheless works with one's hands to earn a living and to give alms. Hence the Apostle boasts, saying: \"I coveted no one's silver or gold or clothing. You yourselves know that these hands have supplied my own needs and the needs of my companions. In everything I did, I showed you that by this kind of hard work we must help the weak\" (Acts 20).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:bede:luke.12.33:b23e97ab:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:33",
+      "excerpt": "Make for yourselves purses that do not grow old. Namely, by performing almsgiving, the reward of which remains forever. It should not be understood from this command that the saints reserve nothing of their money, whether for themselves or for the use of the poor: since the Lord Himself, though ministered to by angels, is read to have kept purses to instruct His Church. He conserved what was offered by the faithful and provided for the needs of His own and others who were in need: but it should not be that service to God is done for these things or that justice is abandoned out of fear of poverty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.12.33:d7ffacb1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-4",
+      "title": "The Stromata Book 4 on luke 12:33",
+      "excerpt": "\"Lay not up for yourselves, therefore, treasures on the earth, where moth and rust destroy, and thieves break through and steal,\" says the Lord, in reproach perchance of the covetous, and perchance also of those who are simply anxious and full of cares, and those too who indulge their bodies. For amours, and diseases, and evil thoughts \"break through\" the mind and the whole man. But our true \"treasure\" is where what is allied to our mind is, since it bestows the communicative power of righteousness, showing that we must assign to the habit of our old conversation what we have acquired by it, and have recourse to God, beseeching mercy. He is, in truth, \"the bag that waxeth not old,\" the provisions of eternal life, \"the treasure that faileth not in heaven.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.12.33:c7dc6392:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII. Three Books of Testimonies Against the Jews. on luke 12:33",
+      "excerpt": "Of the benefit of good works and mercy. In Isaiah: \"Cry aloud,\" saith He, \"and spare not; lift up thy voice like a trumpet; tell my people their sins, and the house of Jacob their wickednesses. They seek me from day to day, and desire to know my ways, as a people which did righteousness, and did not forsake the judgment of God. They ask of me now a righteous judgment, and desire to approach to God, saying, What! because we have fasted, and Thou hast not seen: we have humiliated our souls, and Thou hast not known. For in the days of fasting are found your own wills; for either ye torment those who are subjected to you, or ye fast for strifes and judgments, or ye strike your neighbours with fists. For what do you fast unto me, that to-day your voice should be heard in clamour? This fast I have not chosen, save that a man should humble his soul. And if thou shalt bend thy neck like a ring, and spread under thee sackcloth and ashes, neither thus shall it be called an acceptable fast. Not such a fast have I chosen, saith the Lord; but loose every knot of unrighteousness, let go the chokings of impotent engagements. Send away the harassed into rest, and scatter every unrighteous contract. Break thy bread to the hungry, and bring the houseless poor into thy dwelling. If thou seest the naked, clothe him; and despise not them of thy own seed in thy house. Then shall thy seasonable light break forth, and thy garments shall quickly arise; and righteousness shall go before thee: and the glory of God shall surround thee. Then thou shalt cry out, and God shall hear thee; while thou art yet speaking, He shall say, Here I am.\" Concerning this same thing in Job: \"I have preserved the needy from the hand of the mighty; and I have helped the orphan, to whom there was no helper. The mouth of the widow blessed me, since I was the eye of the blind; I was also the foot of the lame, and the father of the weak.\" Of this same matter in Tobit: \"And I said to Tobias, My son, go and bring whatever poor man thou shalt find out of our brethren, who still has God in mind with his whole heart. Bring him hither, and he shall eat my dinner together with me. Behold, I attend thee, my son, until thou come.\" Also in the same place: \"All the days of thy life, my son, keep God in mind, and transgress not His precepts. Do justice all the days of thy life, and do not walk in the way of unrighteousness; because if thou act truly, there will be respect of thy works. Give alms of thy substance, and turn not thy face from any poor man. So shall it come to pass that the face of God shall not be turned away from thee. Even as thou hast, my son, so do: if thou hast abundant substance, give the more alms therefrom; if thou hast little, communicate even of that little. And do not fear when thou givest alms: thou layest up for thyself a good reward against the day of need; because alms delivereth from death, and does not suffer to go into darkness. Alms is a good office for all who do it in the sight of the most high God.\" On this same subject in Solomon in Proverbs: \"He that hath pity on the poor lendeth unto the Lord.\" Also in the same place: \"He that giveth to the poor shall never want; but he who turns away his eye shall be in much penury.\" Also in the same place: \"Sins are purged away by alms-giving and faith.\" Again, in the same place: \"If thine enemy hunger, feed him; and if he thirst, give him to drink: for by doing this thou shalt scatter live coals upon his head.\" Again, in the same place: \"As water extinguishes fire, so alms-giving extinguishes sin.\" In the same in Proverbs: \"Say not, Go away, and return, to-morrow I will give; when you can do good immediately. For thou knowest not what may happen on the coming day.\" Also in the same place: \"He who stoppeth his ears that he may not hear the weak, shall himself call upon God, and there shall be none to hear him.\" Also in the same place: \"He who has his conversation without reproach in righteousness, leaves blessed children.\" In the same in Ecclesiasticus: \"My son, if thou hast, do good by thyself, and present worthy offerings to God; remember that death delayeth not.\" Also in the same place: \"Shut up alms in the heart of the poor, and this will entreat for thee from all evil.\" Concerning this thing in the thirty-sixth Psalm, that mercy is beneficial also to one's posterity: \"I have been young, and I have also grown old; and I have not seen the righteous forsaken, nor his seed begging their bread. The whole day he is merciful, and lendeth; and his seed is in blessing.\" Of this same thing in the fortieth Psalm: \"Blessed is he who considereth over the poor and needy: in the evil day God will deliver him.\" Also in the cxith Psalm: \"He hath distributed, he hath given to the poor; his righteousness shall remain from generation to generation.\" Of this same thing in Hosea: \"I desire mercy rather than sacrifice, and the knowledge of God more than whole burnt-offerings.\" Of this same thing also in the Gospel according to Matthew: \"Blessed are they who hunger and thirst after righteousness: for they shall be satisfied.\" Also in the same place: \"Blessed are the merciful: for they shall obtain mercy.\" Also in the same place: \"Lay up for yourselves treasures in heaven, where neither moth nor rust doth corrupt, and where thieves do not dig through and steal: for where your treasure is, there will your heart be also.\" Also in the same place: \"The kingdom of heaven is like unto a merchantman seeking goodly pearls: and when he hath found a precious pearl, he went away and sold all that he had, and bought it.\" That even a small work is of advantage, also in the same place: \"And whoever shall give to drink to one of the least of these a cup of cold water in the name of a disciple, verily I say unto you, His reward shall not perish.\" That alms are to be denied to none, also in the same place: \"Give to every one that asketh thee; and from him who would wish to borrow, be not turned away.\" Also in the same place: \"If thou wilt enter into life, keep the commandments. He saith, Which? Jesus saith unto him, Thou shalt not kill, Thou shalt not commit adultery, Thou shalt not bear false witness, Honour thy father and mother: and, Thou shalt love thy neighbour as thyself. The young man saith unto Him, All these things have I observed: what lack I yet? Jesus saith unto him, If thou wilt be perfect, go and sell all that thou hast, and give to the poor, and thou shalt have treasure in heaven; and come, follow me.\" Also in the same place: \"When the Son of man shall come in His majesty, and all the angels with Him, then He shall sit on the throne of His glory: and all nations shall be gathered together before Him; and He shall separate them one from another, even as a shepherd separates the sheep from the goats: and He shall place the sheep on the right hand, but the goats on the left hand. Then shall the King say unto them that are on His right hand, Come, ye blessed of my Father, receive the kingdom prepared for you from the beginning of the world. For I was hungry, and ye gave me to eat: I was thirsty, and ye gave me to drink: I was a stranger, and ye took me in: naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me. Then shall the righteous answer Him, and say, Lord, when saw we Thee a stranger, and took Thee in: naked, and clothed Thee? And when saw we Thee sick, and in prison, and came to Thee? And the King, answering, shall say unto them, Verily I say unto you, Inasmuch as ye did it to one of the least of these my brethren, ye did it unto me. Then shall He say unto them who are on His left hand, Depart from me, ye cursed, into everlasting fire, which my Father hath prepared for the devil and his angels: for I was hungry, and ye gave me not to eat: I was thirsty, and ye gave me not to drink: I was a stranger, and ye took me not in: I was naked, and ye clothed me not: sick, and in prison, and ye visited me not. Then shall they also answer, and say, Lord, when saw we Thee hungry, or thirsty, or a stranger, or naked, or sick, or in prison, and did not minister unto Thee? And He shall answer them, Verily I say unto you, Inasmuch as ye did it not to one of the least of these, ye did it not unto me. And these shall go away into everlasting burning: but the righteous into life eternal.\" Concerning this same matter in the Gospel according to Luke: \"Sell your possessions, and give alms.\" Also in the same place: \"He who made that which is within, made that which is without also. But give alms, and, behold, all things are pure unto you.\" Also in the same place: \"Behold, the half of my substance I give to the poor; and if I have defrauded any one of anything, I restore him fourfold. And Jesus said unto him, that salvation has this day been wrought for this house, since he also is a son of Abraham.\" Of this same thing also in the second Epistle to the Corinthians: \"Let your abundance supply their want, that their abundance also may be the supplement of your want, that there may be equality: as it is written, He who had much had not excess; and he who had little had no lack.\" Also in the same place: \"He who soweth sparingly shall reap also sparingly; and he who soweth in blessing shall reap also of blessing. But let every one do as he has proposed in his heart: not as if sorrowfully, or of necessity: for God loveth a cheerful giver.\" Also in the same place: \"As it is written, He hath dispersed abroad; he hath given to the poor: his righteousness remaineth for ever.\" Likewise in the same place: \"Now he who ministereth seed to the sower, shall both supply bread to be eaten, and shall multiply your seed, and shall increase the growth of the fruits of your righteousness: that in all things ye may be made rich.\" Also in the same place: \"The administration of this service has not only supplied that which is lacking to the saints, but has abounded by much giving of thanks unto God.\" Of this same matter in the Epistle of John: \"Whoso hath this world's substance, and seeth his brother desiring, and shutteth up his bowels from him, how dwelleth the love of God in him? \" Of this same thing in the Gospel according to Luke: \"When thou makest a dinner or a supper, call not thy friends, nor brethren, nor neighbours, nor the rich; lest haply they also invite thee again, and a recompense be made thee. But when thou makest a banquet, call the poor, the weak, the blind, and lame: and thou shalt be blessed; because they have not the means of rewarding thee: but thou I shalt be recompensed in the resurrection of the I just.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.12.33:a56587a1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-viii-on-works-and-alms",
+      "title": "Treatise VIII On Works and Alms on luke 12:33",
+      "excerpt": "Therefore in the Gospel, the Lord, the Teacher of our life and Master of eternal salvation, quickening the assembly of believers, and providing for them for ever when quickened, among His divine commands and precepts of heaven, commands and prescribes nothing more frequently than that we should devote ourselves to almsgiving, and not depend on earthly possessions, but rather lay up heavenly treasures. \"Sell,\" says He, \"your goods, and give alms.\" And again: \"Lay not up for yourselves treasures upon the earth, where moth and rust do corrupt, and where thieves break through and steal. But lay up for yourselves treasures in heaven, where neither moth nor rust doth corrupt, and where thieves do not break through nor steal. For where thy treasure is, there will thy heart be also.\" And when He wished to set forth a man perfect and complete by the observation of the law, He said, \"If thou wilt be perfect, go and sell that thou hast, and give to the poor, and thou shalt have treasure in heaven; and come and follow me.\" Moreover, in another place He says that a merchant of the heavenly grace, and a gainer of eternal salvation, ought to purchase the precious pearl-that is, eternal life-at the price of the blood of Christ, from the amount of his patrimony, parting with all his wealth for it. He says: \"The kingdom of heaven is like unto a merchantman seeking goodly pearls. And when he found a precious pearl, he went away and sold all that he had, and bought it.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:luke.12.33:b3348d38:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 12:33",
+      "excerpt": "(Orat. 14.) Now I fear lest you should think deeds of mercy to be not necessary to you, but voluntary. I also thought so, but was alarmed at the goats placed on the left hand, not because they robbed, but did not minister unto Christ among the poor.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
+    },
+    {
+      "id": "hcf:gregory-of-nyssa:luke.12.33:d7ce4791:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "hcf:work:gregory-of-nyssa:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 12:33",
+      "excerpt": "But He bids us lay up our visible and earthly treasures where the power of corruption does not reach, and hence He adds, a treasure that faileth not, &c.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c395",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.12.33"
     },
     {
       "id": "catena-luke-2030-v33",

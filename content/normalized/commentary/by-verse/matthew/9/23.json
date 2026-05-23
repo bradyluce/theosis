@@ -4,6 +4,42 @@
   "verseNumber": 23,
   "entries": [
     {
+      "id": "catena-matt-1410-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.9.23",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 9:23–26",
+      "excerpt": "By this saying, He soothes the minds of those that were present, and shews that it is easy to Him to raise the dead; the like He did in the case352 of Lazarus, “Our friend Lazarus sleepeth.” John 11:11 This was also a lesson to them not to be afraid of death; forasmuch as He himself also should die, He made His disciples learn in the persons of others confidence and patient endurance of death. For when He was near, death was but as sleep. When He had said this, “They mocked him.” And He did not rebuke their mocking; that this mocking, and the pipes and all other things, might be a proof of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1412-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.9.23",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 9:23–26",
+      "excerpt": "He restored her to life not by bringing in another soul, but by recalling that which had departed, and as it were raising it from sleep, and through this sight preparing the way for belief of the resurrection. And He not only restores her to life, but commands food to be given her, as the other Evangelists relate, that which was done might be seen to be no delusion. “And the fame of him went abroad into all that country.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-1406-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.23",
@@ -40,14 +76,14 @@
       ]
     },
     {
-      "id": "catena-matt-1410-v23",
+      "id": "catena-matt-1415-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.23",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:23–26",
-      "excerpt": "By this saying, He soothes the minds of those that were present, and shews that it is easy to Him to raise the dead; the like He did in the case352 of Lazarus, “Our friend Lazarus sleepeth.” John 11:11 This was also a lesson to them not to be afraid of death; forasmuch as He himself also should die, He made His disciples learn in the persons of others confidence and patient endurance of death. For when He was near, death was but as sleep. When He had said this, “They mocked him.” And He did not rebuke their mocking; that this mocking, and the pipes and all other things, might be a proof of…",
+      "excerpt": "To this day the damsel lays dead in the ruler’s house; and they that seem to be teachers are but minstrels singing funeral dirges. The Jews also are not the crowd of believers, but of “people making a noise.” But when the fulness of the Gentiles shall come in, then all Israel shall be saved.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -55,6 +91,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.9.23:e43f6e62:1"
       ]
     },
     {
@@ -66,42 +109,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:23–26",
       "excerpt": "They that had mocked the Reviver were not worthy to behold the mystery of the revival; and therefore it follows, “And when the multitude was put forth, he entered, and took her by the hand, and the maid arose.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1412-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.9.23",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 9:23–26",
-      "excerpt": "He restored her to life not by bringing in another soul, but by recalling that which had departed, and as it were raising it from sleep, and through this sight preparing the way for belief of the resurrection. And He not only restores her to life, but commands food to be given her, as the other Evangelists relate, that which was done might be seen to be no delusion. “And the fame of him went abroad into all that country.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1415-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.9.23",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 9:23–26",
-      "excerpt": "To this day the damsel lays dead in the ruler’s house; and they that seem to be teachers are but minstrels singing funeral dirges. The Jews also are not the crowd of believers, but of “people making a noise.” But when the fulness of the Gentiles shall come in, then all Israel shall be saved.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -145,6 +152,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:matthew.9.23:ed03dea5:0"
       ]
     },
     {
@@ -184,24 +198,6 @@
       ]
     },
     {
-      "id": "catena-matt-1414-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.9.23",
-      "topicSlugs": [],
-      "personId": "hilary-poitiers",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 9:23–26",
-      "excerpt": "Mystically; The Lord enters the ruler’s house, that is, the synagogue, throughout which there resounded in the songs of the Law a strain of wailing.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-1416-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.23",
@@ -220,6 +216,31 @@
       ]
     },
     {
+      "id": "catena-matt-1414-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.9.23",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 9:23–26",
+      "excerpt": "Mystically; The Lord enters the ruler’s house, that is, the synagogue, throughout which there resounded in the songs of the Law a strain of wailing.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.9.23:b4f91a55:0"
+      ]
+    },
+    {
       "id": "catena-matt-1418-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.23",
@@ -231,24 +252,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1419-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.9.23",
-      "topicSlugs": [],
-      "personId": "rabanus-maurus",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 9:23–26",
-      "excerpt": "Morally; The damsel dead in the house is the soul dead in thought. He says that she is asleep, because they that are now asleep in sin may yet be roused by penitence. The minstrels are flatterers who cherish the dead.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -274,22 +277,114 @@
       ]
     },
     {
-      "id": "catena-matt-1405-v23",
+      "id": "catena-matt-1419-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.23",
       "topicSlugs": [],
-      "personId": "gloss-ordinaria",
+      "personId": "rabanus-maurus",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:23–26",
-      "excerpt": "After the healing of the woman with the issue of blood, follows the raising of the dead; “And when Jesus was come into the ruler’s house.”",
+      "excerpt": "Morally; The damsel dead in the house is the soul dead in thought. He says that she is asleep, because they that are now asleep in sin may yet be roused by penitence. The minstrels are flatterers who cherish the dead.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 55,
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.9.23:a1ff3a1d:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.9.23:755a8a5a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-31",
+      "title": "Homily on the Gospel of Matthew 31 on matthew 9:23",
+      "excerpt": "Noble tokens, surely, these, of the rulers of synagogues; in the moment of her death pipes and cymbals raising a dirge! What then doth Christ? All the rest He cast out, but the parents He brought in; to leave no room for saying that He healed her in any other way.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.9.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.9.23:a3370146:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 9:23",
+      "excerpt": "(Verse 23) And when Jesus came into the ruler's house, and saw the minstrels and the people making a noise, He said, Give place: for the maid is not dead, but sleepeth. And they laughed him to scorn. But when the people were put forth, he went in, and took her by the hand, and the maid arose. And the fame hereof went abroad into all that land.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.9.23"
+    },
+    {
+      "id": "hcf:peter-chrysologus:matthew.9.23:288000d4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:sermons-34-5-21",
+      "title": "SERMONS 34.5.21 on matthew 9:23",
+      "excerpt": "Christ reaches the house and sees the girl who appears to be dead. In order to move faithless hearts to faith, he says that the ruler's daughter is sleeping and is not dead. Ostensibly it is not easier to rise from death than to rise from sleep. So he says, \"The girl is asleep, not dead.\" With God, indeed, death is sleep, for God can bring a dead person back to life sooner than a sleeping person can be wakened from sleep by humans; and God can sooner restore life-giving warmth to limbs frozen in death than humans can infuse vigor in bodies immersed in sleep. Hear the words of the apostle: \"In a moment, in the twinkling of an eye the dead shall rise.\" Because the blessed apostle was unable to refer to the speed of the resurrection in words, he opted for examples. How could he touch upon rapidity when divine power anticipates rapidity itself? And how does time enter the picture when something eternal is given outside of time? Even as time applies to temporality, so does eternity exclude time.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermons-34-5-21",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:matthew.9.23"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.9.23:ceb88833:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 9:23",
+      "excerpt": "\"And when Jesus came into the ruler's house, and saw the flute players and the people making a noise, He said unto them, Give place: for the maid is not dead, but sleepeth. And they laughed Him to scorn.\" Since she was unmarried, they were mourning her with flutes used at weddings, which was contrary to the law. Jesus said that she was sleeping, because He was able to resurrect her easily, and so to Him, death was sleep. Do not marvel that they laughed Him to scorn, for by scoffing they bear witness all the more to the miracle that He resurrected one who was truly dead. So that no one could later say that she had only suffered a seizure, it was confessed by all those present that she was dead.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.9.23"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.9.23:3c7fd097:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 9:23",
+      "excerpt": "And when Jesus came to the ruler's house and saw the flute players... Here the revival is described, and he does four things: first, the indications of death are described; secondly, hope is given; thirdly, the girl is revived; fourthly, the effect is mentioned. He says, therefore, When he came... and saw... Why did the flute players come? The crowd came as is customary even now, when there is a death; but the flute players came to sing dirges and to move others to mourn, as it says in Jeremiah (9:17): \"Consider, and call for the mourning women to come.\" These flute players are false teachers: \"Their speech and their deeds are against the Lord, defying his glorious presence\" (Is 3:8). The crowd is the Jewish people: \"You shall not follow a multitude to do evil\" (Ex 23:2). The Lord revived the girl in a house. For the Lord revived three persons: the girl in her house, the young man at the gate, Lazarus in the tomb. For some are dead by sin, but they are not carried without; and this is by consent to sin, but they do not proceed without by works. Some are carried without by action, and this is signified by the one revived at the gate. Finally, some lie in the tomb from habit, which is signified by Lazarus. Therefore, this girl signifies the sinner who is in secret sin, namely, in the mind. The flute players are those who encourage them in sin: \"The sinner is praised in the desires of his heart\" (Ps 10:3). The crowd is thoughts; and the Lord heals her.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.9.23"
     },
     {
       "id": "catena-matt-1413-v23",
@@ -307,6 +402,31 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1405-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.9.23",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 9:23–26",
+      "excerpt": "After the healing of the woman with the issue of blood, follows the raising of the dead; “And when Jesus was come into the ruler’s house.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.9.23:1a4d72c8:0"
       ]
     }
   ]

@@ -23,32 +23,14 @@
       ]
     },
     {
-      "id": "catena-john-0352-v25",
+      "id": "catena-john-0364-v25",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.25",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "Nothing is more open than truth, nothing bolder; it neither seeks concealment, or avoids danger, or fears the snare, or cares for popularity. It is subject to no human weakness. Our Lord went up to Jerusalem at the feasts, not from ostentation or love of honour, but to teach the people His doctrines, and shew miracles of mercy. After the festival He visited the crowds who were collected at the Jordan. After these things came Jesus and His disciples into the land of Judæa; and there he tarried with them, and baptized.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0355-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.25",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "As the Evangelist says afterwards, that Jesus baptized not but His disciples, it is evident that he means the same here, i. e. that the disciples only baptized.",
+      "excerpt": "The Jews then asserted Christ to be the greater person, and His baptism necessary to be received. But John’s disciples did not understand so much, and defended John’s baptism. At last they come to John, to solve the question: And they came unto John, and said unto him, Rabbi, He that was with thee beyond Jordan, behold, the Same baptizeth.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -67,42 +49,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
       "excerpt": "Our Lord did not baptize with the baptism wherewith He had been baptized; for He was baptized by a servant, as a lesson of humility to us, and in order to bring us to the Lord’s baptism, i. e. His own; for Jesus baptized, as the Lord, the Son of God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0358-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.25",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "It matters not whether it is called Salem, or Salim; since the Jews very rarely use vowels in the middle of words; and the same words are pronounced with different vowels and accents, by different readers, and in different places. And they came, and were baptized.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0360-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.25",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "Notwithstanding the disciples of Jesus baptized, John did not leave off till his imprisonment; as the Evangelist’s language intimates, For John was not yet cast into prison.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -146,24 +92,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-0364-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.25",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "The Jews then asserted Christ to be the greater person, and His baptism necessary to be received. But John’s disciples did not understand so much, and defended John’s baptism. At last they come to John, to solve the question: And they came unto John, and said unto him, Rabbi, He that was with thee beyond Jordan, behold, the Same baptizeth.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.3.25:7757122d:0"
       ]
     },
     {
@@ -185,14 +120,86 @@
       ]
     },
     {
-      "id": "catena-john-0353-v25",
+      "id": "catena-john-0352-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.25",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "Nothing is more open than truth, nothing bolder; it neither seeks concealment, or avoids danger, or fears the snare, or cares for popularity. It is subject to no human weakness. Our Lord went up to Jerusalem at the feasts, not from ostentation or love of honour, but to teach the people His doctrines, and shew miracles of mercy. After the festival He visited the crowds who were collected at the Jordan. After these things came Jesus and His disciples into the land of Judæa; and there he tarried with them, and baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0360-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.25",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "Notwithstanding the disciples of Jesus baptized, John did not leave off till his imprisonment; as the Evangelist’s language intimates, For John was not yet cast into prison.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0355-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.25",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "As the Evangelist says afterwards, that Jesus baptized not but His disciples, it is evident that he means the same here, i. e. that the disciples only baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0358-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.25",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "It matters not whether it is called Salem, or Salim; since the Jews very rarely use vowels in the middle of words; and the same words are pronounced with different vowels and accents, by different readers, and in different places. And they came, and were baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0359-v25",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.25",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "After these things, is not immediately after His dispute with Nicodemus, which took place at Jerusalem; but on His return to Jerusalem after some time spent in Galilee.",
+      "excerpt": "The same kind of benefit which catechumens receive from instruction before they are baptized, the same did John’s baptism convey before Christ’s. As John preached repentance, announced Christ’s baptism, and drew all men to the knowledge of the truth now made manifest to the world: so the ministers of the Church first instruct those who come to the faith, then reprove their sins; and lastly, drawing them to the knowledge and love of the truth, offer them remission by Christ’s baptism.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -221,14 +228,14 @@
       ]
     },
     {
-      "id": "catena-john-0359-v25",
+      "id": "catena-john-0353-v25",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.25",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "The same kind of benefit which catechumens receive from instruction before they are baptized, the same did John’s baptism convey before Christ’s. As John preached repentance, announced Christ’s baptism, and drew all men to the knowledge of the truth now made manifest to the world: so the ministers of the Church first instruct those who come to the faith, then reprove their sins; and lastly, drawing them to the knowledge and love of the truth, offer them remission by Christ’s baptism.",
+      "excerpt": "After these things, is not immediately after His dispute with Nicodemus, which took place at Jerusalem; but on His return to Jerusalem after some time spent in Galilee.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -291,6 +298,91 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.3.25:ad35bc95:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-13",
+      "title": "Tractates on John 13 on john 3:25",
+      "excerpt": "\"Then there arose a question on the part of John's disciples with the Jews about purifying.\" John baptized, Christ baptized. John's disciples were moved; there was a running after Christ, people were coming to John. Those who came to John, he sent to Jesus to be baptized; but they who were baptized by Christ were not sent to John. John's disciples were alarmed, and began to dispute with the Jews, as usually happens. Understand the Jews to have declared that Christ was greater, and that to His baptism people ought to have recourse. John's disciples, not yet understanding this, defended John's baptism. They came to John himself, that he might solve the question. Understand, beloved. And here we are given to see the use of humility, and, when people were erring in the subject of dispute, are shown whether John desired to glory in himself. Now probably he said, \"You say the truth, you contend rightly; mine is the better baptism, I baptized Christ Himself.\" John could say this after Christ was baptized. If he wished to exalt himself, what an opportunity he had to do so! But he knew better before whom to humble himself: to Him whom he knew to have come after himself by birth, he willingly yielded precedence by confessing Him. He understood his own salvation to be in Christ. He had already said above, \"We all have received out of His fullness;\" and this is to confess Him to be God. For how can all men receive of His fullness, if He be not God? For if He is man in such wise that He is not God, then Himself also receives of the fullness of God, and so is not God. But if all men receive of His fullness, He is the fountain, they are drinkers. They that drink of a fountain, both thirst and drink. The fountain never thirsts; it has never need of itself. Men need a fountain. With thirsty stomachs and parched lips they run to the fountain to be refreshed. The fountain flows to refresh, so does the Lord Jesus.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.25"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.25:2e28ff28:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-29",
+      "title": "Homily on the Gospel of John 29 on john 3:25",
+      "excerpt": "If any one should enquire, \"And in what was the baptism of the disciples better than that of John?\" we will reply, \"in nothing\"; both were alike without the gift of the Spirit, both parties alike had one reason for baptizing, and that was, to lead the baptized to Christ. For in order that they might not be always running about to bring together those that should believe, as in Simon's case his brother did, and Philip to Nathanael, they instituted baptism, in order by it to bring all men to them easily, and to prepare a way for the faith which was to be. But that the baptisms had no superiority one over the other, is shown by what follows.\r\n\r\n\"There arose,\" saith the Evangelist, \"a question (between some) of John's disciples and the Jews about purifying.\"\r\n\r\nFor the disciples of John being ever jealously disposed towards Christ's disciples and Christ Himself, when they saw them baptizing, began to reason with those who were baptized, as though their baptism was in a manner superior to that of Christ's disciples; and taking one of the baptized, they tried to persuade him of this; but persuaded him not. Hear how the Evangelist has given us to understand that it was they who attacked him, not he who set on foot the question. He doth not say, that \"a certain Jew questioned with them,\" but that, \"there arose a questioning from the disciples of John with a certain Jew, concerning purification.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.25"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.3.25:66e12ca8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 3:25",
+      "excerpt": "The Jews being powerless to commend the purifications of the law, and not able to advocate the cleansing through the ashes of an heifer, plan something against John's disciples, whereby they thought to cause them no slight vexation, albeit easily worsted in their own matters. For since they who attended the blessed Baptist, appeared to be more excellent and of more understanding than the Pharisees, admiring the baptism of their own teacher, and opposing the purifications after the law; they are vexed at these things, who are diligent in reviling only and most ready unto all wickedness: and even overturning their own case, they praise Christ's Baptism, not rightly disposed, nor pouring forth true praise on it, but exasperated to the mere distressing of them; and lending out a statement against their opinion, until their purpose should attain its accomplishment. They cannot then adduce any reasonable proof, nor do they even support Christ out of the holy Scriptures (for, whence were such understanding to the uninstructed?): but they merely allege in confirmation of their own arguments, that very few in number are those who come to John, but that they flock together to Christ. For haply they in their exceeding folly thought that they should carry off the vote of victory, and might speak out in behalf of the legal purifications, as having already conquered, by giving the palm over John's to the Baptism bestowed by Christ on those who come to Him. And they vex those with whom their dispute was: but they get off with difficulty and leave the disciples of John, much more beaten by their ill-considered dispute. For they crown with compulsory praises, and against their will, the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.3.25"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.3.25:655f031a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 3:25",
+      "excerpt": "A dispute arose between John's disciples and a certain Jew concerning baptism. The Jew held the baptism of Christ's disciples to be superior, while John's disciples held the baptism of their teacher to be superior.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.3.25"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.25:b752d973:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:25",
+      "excerpt": "Then when he says, A controversy arose, he brings in the issue of the two baptisms. First, the issue is mentioned. Secondly, it is brought to John's attention (v 26). Thirdly, the issue is resolved.\r\n\r\nBecause both John and Christ were baptizing, the disciples of John, out of zeal for their teacher, started a controversy over this. And this is what he says, A controversy arose, i.e., a dispute, between the disciples of John, who were the first to raise the issue, and the Jews, whom the disciples of John had rebuked for preferring Christ, because of the miracles he did, to John, who did not do any miracles. The issue was concerning purification, i.e., baptizing. The cause of their envy and the reason why they started the controversy was the fact that John sent those he baptized to Christ, but Christ did not send those he baptized to John. It seemed from this, and perhaps the Jews even said so, that Christ was greater than John. Thus, the disciples of John, having not yet become spiritual, quarreled with the Jews over the baptisms. \"While there is envy and fighting among you, are you not carnal?\" (1 Cor 3:3).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.25"
     }
   ]
 }

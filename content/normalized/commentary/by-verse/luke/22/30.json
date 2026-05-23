@@ -37,24 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3152",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.30",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:30",
-      "excerpt": "By means of the things of our present life He describes spiritual things. For they exercise a high privilege with earthly kings, who sit at their table as guests. So then by man’s estimation He shews who shall be rewarded by Him with the greatest honours.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.22.30:58dee805:0"
       ]
     },
     {
@@ -76,6 +65,31 @@
       ]
     },
     {
+      "id": "catena-luke-3152",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.30",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:30",
+      "excerpt": "By means of the things of our present life He describes spiritual things. For they exercise a high privilege with earthly kings, who sit at their table as guests. So then by man’s estimation He shews who shall be rewarded by Him with the greatest honours.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.22.30:950508e4:0"
+      ]
+    },
+    {
       "id": "catena-luke-3148-v30",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.30",
@@ -84,24 +98,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:28–30",
       "excerpt": "For not the first effort of patience, but long-continued perseverance, is rewarded with the glory of the heavenly kingdom, for perseverance, (which is called constancy or fortitude of mind,) is, so to say, the pillar and prop of all virtues. The Son of God then conducts those who abide with Him in His temptations to the everlasting kingdom. For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection. (Rom. 6:5.) Hence it follows, And I give to you a kingdom, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3150-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.30",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:28–30",
-      "excerpt": "Or the table offered to all saints richly to enjoy is the glory of a heavenly life, wherewith they who hunger and thirst after righteousness shall be filled, resting in the long-desired enjoyment of the true God. (Matt. 5:6.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -127,6 +123,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.30:b523f701:0"
       ]
     },
     {
@@ -145,24 +148,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.30:0e59cf65:1"
       ]
     },
     {
-      "id": "catena-luke-3147-v30",
+      "id": "catena-luke-3150-v30",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.30",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:28–30",
-      "excerpt": "As the Lord had denounced woe to the traitor, so on the other hand to the rest of the disciples He promises blessings, saying, Ye are they which have continued with me, &c.",
+      "excerpt": "Or the table offered to all saints richly to enjoy is the glory of a heavenly life, wherewith they who hunger and thirst after righteousness shall be filled, resting in the long-desired enjoyment of the true God. (Matt. 5:6.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.30:67dcfb91:1"
       ]
     },
     {
@@ -174,6 +191,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:28–30",
       "excerpt": "He said this not as if they would have there bodily food, or as if His kingdom were to be a sensible one. For their life then shall be the life of angels, as He before told the Sadducees. (Mat.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.30:1bcb5b1c:1"
+      ]
+    },
+    {
+      "id": "catena-luke-3147-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.30",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:28–30",
+      "excerpt": "As the Lord had denounced woe to the traitor, so on the other hand to the rest of the disciples He promises blessings, saying, Ye are they which have continued with me, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -200,6 +242,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.30:6ad38d29:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:30",
+      "excerpt": "He said \"that you may eat and drink\" not because there will be food there or because His Kingdom is a sensory one. For by His answer to the Sadducees He Himself taught that the life there is angelic (Luke 20:36); and Paul teaches that the Kingdom of God is not \"food and drink\" (Rom. 14:17). Therefore, hearing the words \"that you may eat and drink at My table,\" let no one be scandalized, but let him understand that they were spoken in reference to those who enjoy honor from the kings of this world. For those who share the king's table are considered to have preeminence over all. So also concerning the apostles the Lord says that He will prefer them above all.\r\nLikewise, when you hear of sitting \"on thrones,\" understand not thrones, but glory and honor. For of those created and born, no one will sit there. To sit is fitting for the One Holy Trinity alone, the Uncreated God and King of all, while the creature, as a servant, must stand — and even this we speak of sitting and standing in a bodily sense. \"To judge,\" that is, to condemn those from the \"twelve tribes\" who will not believe. For the apostles, who are themselves Israelites yet believed, serve as no small condemnation of the Israelites who did not believe.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.30"
+    },
+    {
+      "id": "hcf:bede:luke.22.30:972b1957:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:30",
+      "excerpt": "That you may eat and drink at my table in my kingdom. This table is set for all the saints to enjoy; it is the heavenly glory of life. The food and drink is that of which it is said elsewhere: Blessed are those who hunger and thirst for righteousness (Matthew V), for they shall be filled. By enjoying, namely, the joy longed for and loved of the true and unwavering good. And you shall sit on thrones, judging the twelve tribes of Israel. This is what the psalm sings of as the change of the right hand of the Most High (Psalm LXXVI), so that those who now humbly rejoice to serve their fellow servants may then be nourished on the Lord's table with the feasts of eternal life; and those who, here in trials, are unjustly judged, may remain with the Lord, and there, with him, come as just judges over their tempters, and as much as they were despised in this world in great humility, so then, with received seats, they will rise in power with a greater summit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.30"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.22.30:9f261669:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-50",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.50 on luke 22:30",
+      "excerpt": "The kingdom of God is not of this world. Therefore, the equality of man to God is not possible, but rather an emulation of similarity. For only Christ is the perfect image of God, because of the unity of the expressed glory of the Father in Him. But a just man is in the image of God, if, for the purpose of imitating the likeness of divine conduct, he despises this world through knowledge of God and looks down upon earthly pleasures through the perception of the word of God, by which we are nourished unto life. And so we partake of the body of Christ, that we may be partakers of eternal life. For it is not food and drink that are promised to us as rewards and honors, but the sharing of heavenly grace and life. And the twelve thrones, as described, are not physical receptacles for sitting, but because just as Christ, according to his divine likeness, judges by the knowledge of hearts and not by questioning deeds, rewarding virtue and condemning impiety, so too the apostles are formed in spiritual judgment by the reward of faith and the condemnation of perfidy, refuting error with their power and pursuing sacrilege with hatred.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.22.30"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.30:8c15805e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-143",
+      "title": "COMMENTARY ON LUKE, HOMILY 143 on luke 22:30",
+      "excerpt": "The Savior therefore drives away from the holy apostles the affliction of pride. They might perhaps think among themselves and even say, \"What will be the reward of faithfulness? What advantage shall we, who have waited on Christ, receive when temptations happen from time to time?\" Confirmed by the hope of the blessings that are in store, they throw away from their minds all laziness in virtuous pursuits. They rather choose with an eager mind to follow him and take pleasure in labor for his sake. They also count the doing it a cause of gain, the pathway of joy, and the means of eternal glory.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-143",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.30"
     }
   ]
 }

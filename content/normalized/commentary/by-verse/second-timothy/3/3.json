@@ -4,6 +4,25 @@
   "verseNumber": 3,
   "entries": [
     {
+      "id": "chrysostom-230708-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:second-timothy.3.3",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-second-timothy",
+      "title": "On 2 Timothy 3:1–4",
+      "excerpt": "2 Timothy 3:1-4 This know also, that in the last days perilous times shall come. For men shall be lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, without natural affection, truce-breakers, false accusers, incontinent, fierce, despisers of those that are good, Traitors, heady, high-minded, lovers of pleasures more than lovers of God. If any now takes offense at the existence of heretics, let him remember that it was so from the beginning, the devil always setting up error by the side of truth. God from the beginning promised good,…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-second-timothy-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "second-timothy"
+      ]
+    },
+    {
       "id": "chrysostom-230707-v3",
       "relation": "verse",
       "targetVerseId": "kjva:second-timothy.3.3",
@@ -23,23 +42,89 @@
       ]
     },
     {
-      "id": "chrysostom-230708-v3",
+      "id": "hcf:hcf-apostolic-constitutions:second-timothy.3.3:75473997:0",
       "relation": "verse",
-      "targetVerseId": "kjva:second-timothy.3.3",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-second-timothy",
-      "title": "On 2 Timothy 3:1–4",
-      "excerpt": "2 Timothy 3:1-4 This know also, that in the last days perilous times shall come. For men shall be lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, without natural affection, truce-breakers, false accusers, incontinent, fierce, despisers of those that are good, Traitors, heady, high-minded, lovers of pleasures more than lovers of God. If any now takes offense at the existence of heretics, let him remember that it was so from the beginning, the devil always setting up error by the side of truth. God from the beginning promised good,…",
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on second-timothy 3:3",
+      "excerpt": "Such a one, therefore, when he is a second time cast out of the Church, is justly cut off entirely from the congregation of the Lord. And now the Church of the Lord will be more beautiful than it was before, when it had a superfluous, and to itself a disagreeable member. Wherefore henceforward it will be free from blame and reproach, and become clear of such wicked, deceitful, abusive, unmerciful, traitorous persons; of such as are \"haters of those that are good, lovers of pleasure,\" affecters of vainglory, deceivers, and pretenders to wisdom; of such as make it their business to scatter, or rather utterly to disperse, the lambs of the Lord.",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-second-timothy-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "second-timothy"
-      ]
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.3"
+    },
+    {
+      "id": "hcf:basil-the-great:second-timothy.3.3:f259cbf9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:the-long-rules-q-16-r",
+      "title": "THE LONG RULES, Q.16.R on second-timothy 3:3",
+      "excerpt": "The apostle also showed how much incontinency is to be dreaded by including it among the signs of apostasy, when he said, \"In the last days shall come dangerous times. Men shall be lovers of themselves.\" Then, after enumerating several forms of iniquity, he adds, \"slanderers, incontinent.\" Also, for selling his birthright for one portion of food, Esau was charged with incontinency as the greatest of evils. The first disobedience befell men as a consequence of incontinency.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-long-rules-q-16-r",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.3"
+    },
+    {
+      "id": "hcf:hcf-oecumenius:second-timothy.3.3:4f87f6bb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-oecumenius",
+      "workId": "hcf:work:hcf-oecumenius:commentary-on-2-timothy",
+      "title": "COMMENTARY ON 2 TIMOTHY on second-timothy 3:3",
+      "excerpt": "without natural affection. Like those who are hostile towards their own.\r\n\r\nuncommitted. It shows that they have made no agreement with anyone.\r\n\r\ndevilish. Like slanderers. For he who is conscious of no good in himself curses and slanders everyone, finding some comfort for himself in this.\r\n\r\nwithout self-control. Namely those who do not control their tongue, stomach, and those things which are under the stomach.\r\n\r\nbrutal. Some are harsh and cruel.\r\n\r\ndespisers of good. That is, enemies of all things good.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c550"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.3"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:second-timothy.3.3:ae064465:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-2-timothy",
+      "title": "Commentary on 2 Timothy on second-timothy 3:3",
+      "excerpt": "That is, those who slander everyone. A person who is not conscious of anything good in himself slanders everyone, inventing and finding in this, it would seem, a certain consolation for himself.\r\n\r\nAnd in the tongue, and in the belly, and in everything else.\r\n\r\nYou see what self-love and love of money make people? Beasts instead of men.\r\n\r\nEnemies of every good thing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.3"
+    },
+    {
+      "id": "hcf:thomas-aquinas:second-timothy.3.3:429dc95e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-2-timothy",
+      "title": "Commentary on 2 Timothy on second-timothy 3:3",
+      "excerpt": "Then he lists the evils which relate us to equals and our neighbor. He mentions three. The first pertains to work: hence he says, wicked, i.e., those who commit grievous crimes against their neighbor: woe to the sinful nation, a people laden with iniquity, a wicked seed, ungracious children (Isa 1:4). The second pertains to affection; hence he says, without affection, i.e., without the feelings of charity and without peace. The third pertains to word; hence he says, slanderers: you shall not be a slanderer nor a whisperer among the people (Lev 19:16).\r\n\r\nThen in relation to the self he lists three: the first pertains to the degeneration of the concupiscible appetite; the second to the degeneration of the irascible appetite; the third to the degeneration of the rational appetite.\r\n\r\nIn regard to the first he says, incontinent; for these are men who cannot follow out their resolutions because of wicked desires: and no price is worthy of a continent soul (Sir 26:20).\r\n\r\nIn regard to the irascible he says, unmerciful, i.e., not meek, for meekness moderates the passions of anger: learn of me, for I am meek and humble of heart (Matt 11:29); he will teach the meek his ways (Ps 24:29). Then he lists another one which pertains to the irascible appetite, namely, the exclusion of kindness; hence he says, without kindness. For it is natural that when one contrary dominates, it excludes the other. Be ye kind to one another (Eph 4:32).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.3"
     }
   ]
 }

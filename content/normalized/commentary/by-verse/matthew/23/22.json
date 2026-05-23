@@ -76,24 +76,6 @@
       ]
     },
     {
-      "id": "catena-matt-3328-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.22",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:16–22",
-      "excerpt": "In like manner the custom which the Jews had of swearing by the Heaven He reprobates. For they did not, as they supposed, avoid the danger of taking an oath by God, because, “Whoso sweareth by heaven, sweareth by the throne of God, and by him that sitteth thereon.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-3330-v22",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.22",
@@ -109,7 +91,73 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.22:9145cf98:0"
       ]
+    },
+    {
+      "id": "catena-matt-3328-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.22",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:16–22",
+      "excerpt": "In like manner the custom which the Jews had of swearing by the Heaven He reprobates. For they did not, as they supposed, avoid the danger of taking an oath by God, because, “Whoso sweareth by heaven, sweareth by the throne of God, and by him that sitteth thereon.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.22:172c2767:0"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.22:74e72964:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:22",
+      "excerpt": "He calls them blind for not wanting to teach what was right, but instead valuing what was of lesser importance, and giving second place to that which was worthy of honor. For they valued the gold in the temple, the images of the Cherubim and the golden urn, more highly than they did the temple itself. Therefore they taught the people that it was of no consequence to swear by the temple, and instead they taught them to swear by the gold which is in the temple. This gold, however, was precious precisely because it was in the temple. And the Pharisees said that the gifts placed on the altar were more valuable than the altar itself. So the Pharisees even taught that if someone swore by the golden vessel, or the ox, or the sheep brought for sacrifice, and then broke his oath, he was sentenced to pay an equal amount. The Pharisees put a higher value on the gift upon the altar because of the profit they derived from sacrifices. But if some one swore by the temple and then broke his oath, he was absolved [and owed nothing, the Pharisees would say], as it was not possible to build [and pay] anything equal to the temple. And so the oath by the temple was considered to be of lesser consequence because of the Pharisees' love of money. Under the Old Covenant, Christ does not permit the gift to be greater than the altar, but for us it is just the opposite: the altar is sanctified by the gifts, for the loaves are changed by divine grace into the very Body of the Lord Himself. Therefore the altar is sanctified by them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.22"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.22:0efc0819:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:22",
+      "excerpt": "Then another reason is set forth: and he that swears by heaven, i.e., by heaven, does not swear by it except because it is the throne of God, and because the power of God is manifested there; hence he that swears by heaven swears by the throne of God, and by him that sits thereon. Psalm 10:5: God is in his holy temple, the Lord's throne is in heaven. And this is introduced there according to a likeness. But mystically, according to Origen, he makes mention of the temple, the gold, and the altar, in which the contemplative and glorious life is signified. By the gold the contemplative life is signified, by which is signified the subtle sense excogitated from Scripture itself: because however reasonable it may appear, it is nothing unless it is in the temple, i.e., unless it is confirmed in sacred Scripture. By the altar is signified the heart, in which there ought to be the fire of devotion; Leviticus 6:12: the fire on my altar shall not go out. By the offerings are signified the services and offerings, which, unless they proceed from a holy heart, or from a holy altar, cannot have value; above at 6:22: if your eye be single, your whole body shall be lightsome. By the throne the glorious life is signified: there God is, who surpasses all things. Or by the altar and the temple we understand Christ: for he calls himself a temple; John 2:19: destroy this temple, and in three days I will raise it up. Likewise, he is called an altar; Hebrews 13:10: we have an altar, whereof they have no power to eat who serve the tabernacle. Hence whatever good we do, unless it is sanctified in this temple, i.e., Christ, it is of no value; hence everything is contemptible unless it is referred to Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.22"
     },
     {
       "id": "catena-matt-3325-v22",
@@ -163,6 +211,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.23.22:abc74348:0"
       ]
     }
   ]

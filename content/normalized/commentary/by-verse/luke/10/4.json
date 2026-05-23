@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.10.4:c7073020:0"
       ]
     },
     {
@@ -33,24 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1561-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.4",
-      "topicSlugs": [],
-      "personId": "gregory-the-theologian",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:3–4",
-      "excerpt": "The sum of which is, that men ought to be so virtuous that the Gospel should make no less progress through their way of life than their preaching.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 82,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -76,14 +65,32 @@
       ]
     },
     {
-      "id": "catena-luke-1553-v4",
+      "id": "catena-luke-1561-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.4",
+      "topicSlugs": [],
+      "personId": "gregory-the-theologian",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:3–4",
+      "excerpt": "The sum of which is, that men ought to be so virtuous that the Gospel should make no less progress through their way of life than their preaching.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 82,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1563-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.4",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:3–4",
-      "excerpt": "Luke next relates, that the seventy disciples obtained for themselves from Christ apostolical learning, lowliness, innocency, justice, and to prefer no worldly things to holy preachings, but to aspire to such fortitude of mind as to be afraid of no terrors, not even death itself. He adds therefore, Go.",
+      "excerpt": "Thus He had already commanded them to have no care for these persons, when He said, I send you as lambs among wolves. And He also forbade all care about what is external to the body, by saying, Take neither purse nor scrip. Nor did He allow men to take with them any of those things which were not attached to the body. Hence He adds, Nor shoes. He not only forbade them to take purse and scrip, but He did not allow them to receive any distraction in their work, such as interruption by greetings on their way. Hence He adds, Salute no one by the way. Which had long ago been said by Elisha. (2…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,14 +101,14 @@
       ]
     },
     {
-      "id": "catena-luke-1556-v4",
+      "id": "catena-luke-1553-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.4",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:3–4",
-      "excerpt": "Now these animals are at variance among themselves, so that the one is devoured by the other, the lambs by the wolves; but the good Shepherd has no fear of wolves for His flock. And therefore the disciples are appointed not to make prey, but to impart grace. For the watchfulness of the good Shepherd causes the wolves to attempt nothing against the lambs; He sends them as lambs amid wolves that that prophecy might be fulfilled, The wolf and the lamb shall feed together. (Isaiah 65:25.)",
+      "excerpt": "Luke next relates, that the seventy disciples obtained for themselves from Christ apostolical learning, lowliness, innocency, justice, and to prefer no worldly things to holy preachings, but to aspire to such fortitude of mind as to be afraid of no terrors, not even death itself. He adds therefore, Go.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -130,14 +137,14 @@
       ]
     },
     {
-      "id": "catena-luke-1560-v4",
+      "id": "catena-luke-1567-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.4",
       "topicSlugs": [],
-      "personId": "gregory-the-great",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:3–4",
-      "excerpt": "For many when they receive the right of rule, are vehement in persecuting their subjects, and manifesting the terrors of their power. And since they have no bowels of mercy, their desire is to seem to be masters, forgetting altogether that they are fathers, changing an occasion for humility, into an exaltation of power. We must on the other hand consider, that as lambs we are sent among wolves that preserving the feeling of innocence, so we should make no malicious attacks. For he who undertakes the office of preacher ought not to bring evils upon others, but to endure them; who although at…",
+      "excerpt": "Our Lord also would have nothing human in us. For Moses is bid to loose off the human and earthly shoe when he was sent to deliver the people. (Exod. 3:5) But if any one is perplexed why in Egypt we are ordered to eat the lamb with shoes on, (Exod. 12:11.) but the Apostles are appointed to preach the Gospel without shoes: he must consider, that one in Egypt ought still to beware of the serpent’s bite, for there were many poisonous creatures in Egypt. And he who celebrates the Passover in figure may be exposed to the wound, but the minister of truth fears no poison.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -145,35 +152,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.10.4:6b3442a1:0"
       ]
     },
     {
-      "id": "catena-luke-1562-v4",
+      "id": "catena-luke-1556-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.4",
       "topicSlugs": [],
-      "personId": "gregory-the-great",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:3–4",
-      "excerpt": "For the preacher (of the Gospel) ought to have such trust in God, that although he has provided not for the expenses of this present life, he should still be most certainly convinced that these will not fail him; lest while his mind is engaged in His temporal things, he should be less careful for the spiritual things of others.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1563-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.4",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:3–4",
-      "excerpt": "Thus He had already commanded them to have no care for these persons, when He said, I send you as lambs among wolves. And He also forbade all care about what is external to the body, by saying, Take neither purse nor scrip. Nor did He allow men to take with them any of those things which were not attached to the body. Hence He adds, Nor shoes. He not only forbade them to take purse and scrip, but He did not allow them to receive any distraction in their work, such as interruption by greetings on their way. Hence He adds, Salute no one by the way. Which had long ago been said by Elisha. (2…",
+      "excerpt": "Now these animals are at variance among themselves, so that the one is devoured by the other, the lambs by the wolves; but the good Shepherd has no fear of wolves for His flock. And therefore the disciples are appointed not to make prey, but to impart grace. For the watchfulness of the good Shepherd causes the wolves to attempt nothing against the lambs; He sends them as lambs amid wolves that that prophecy might be fulfilled, The wolf and the lamb shall feed together. (Isaiah 65:25.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -217,17 +213,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.10.4:d40c3f90:0"
       ]
     },
     {
-      "id": "catena-luke-1567-v4",
+      "id": "catena-luke-1560-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.4",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:3–4",
-      "excerpt": "Our Lord also would have nothing human in us. For Moses is bid to loose off the human and earthly shoe when he was sent to deliver the people. (Exod. 3:5) But if any one is perplexed why in Egypt we are ordered to eat the lamb with shoes on, (Exod. 12:11.) but the Apostles are appointed to preach the Gospel without shoes: he must consider, that one in Egypt ought still to beware of the serpent’s bite, for there were many poisonous creatures in Egypt. And he who celebrates the Passover in figure may be exposed to the wound, but the minister of truth fears no poison.",
+      "excerpt": "For many when they receive the right of rule, are vehement in persecuting their subjects, and manifesting the terrors of their power. And since they have no bowels of mercy, their desire is to seem to be masters, forgetting altogether that they are fathers, changing an occasion for humility, into an exaltation of power. We must on the other hand consider, that as lambs we are sent among wolves that preserving the feeling of innocence, so we should make no malicious attacks. For he who undertakes the office of preacher ought not to bring evils upon others, but to endure them; who although at…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -253,6 +256,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.10.4:a7bac7a0:1"
+      ]
+    },
+    {
+      "id": "catena-luke-1562-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.4",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:3–4",
+      "excerpt": "For the preacher (of the Gospel) ought to have such trust in God, that although he has provided not for the expenses of this present life, he should still be most certainly convinced that these will not fail him; lest while his mind is engaged in His temporal things, he should be less careful for the spiritual things of others.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -271,6 +299,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.10.4:6ce1b344:0"
       ]
     },
     {
@@ -289,7 +324,203 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:isidore-pelusium:luke.10.4:28190c17:0"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.10.4:eff44c9c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-62",
+      "title": "COMMENTARY ON LUKE, HOMILY 62 on luke 10:4",
+      "excerpt": "When preaching to people everywhere the Word that he spoke and calling the inhabitants of the whole earth to salvation, he requires them to travel about without purse, bag or shoes. They are to travel rapidly from city to city and from place to place. Let no one say that the object of his teaching was to make the holy Apostles refuse the use of the ordinary articles of equipment. What good or what harm would it do them to have shoes on their feet or go without them? By this command, he does wish them to learn and to attempt to practice that they must lay all thought of their livelihood on him. They must call to mind the saint who said, \"Cast your care on the Lord, and he will feed you.\" He gives what is needful for life to the saints.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-62",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.10.4:cf358c23:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:4",
+      "excerpt": "And He also forbade all care about what is external to the body, by saying, Take neither purse nor scrip. Nor did He allow men to take with them any of those things which were not attached to the body. Hence He adds, Nor shoes. He not only forbade them to take purse and scrip, but He did not allow them to receive any distraction in their work, such as interruption by greetings on their way. Hence He adds, Salute no one by the way. Which had long ago been said by Elisha. (2 Kings. 4:29.) As if He said, Proceed straight on to your work without exchanging blessings with others. For it is a loss to waste the time which is fitter for preaching, in unnecessary things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.10.4:2e59a753:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:4",
+      "excerpt": "Consider it is not only \"Salute no man,\" but \"by the way\" is not carelessly added. When Elisha sent his servant to lay his staff on the body of the dead child, he also commanded him not to salute any man he met. He ordered him to hurry to go in order to perform the office of proclaiming the resurrection, lest he be turned from the duty laid upon him by conversation with someone along the way. The zeal of greeting is not taken away here, but an obstacle to the practice of piety is removed. When divine commands are given, human obligations are surrendered for a little while. Salutation is fine, but the performance of duties to God is finer because it is more fitting. Hindrance of these duties has often brought offenses. Even honorable acts are prohibited, for fear that the grace of ceremony deceive and hinder the ministry of the task, delay in which is sinful.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:bede:luke.10.4:1ea9d7d4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:4",
+      "excerpt": "Do not carry a purse, nor a bag, nor sandals, and greet no one on the road. Such must be the preacher's confidence in God that, though he does not foresee the necessities of this present life, he must most certainly know that they will not be lacking for him. So that, while his mind is occupied with temporal matters, he may be less able to foresee the eternal for others. It is also permitted for him to greet no one on the road, to show how urgently he must continue on his journey of preaching. If anyone wishes to understand these words even allegorically, in the purse money is enclosed. Hidden money is hidden wisdom. Therefore, he who has the word of wisdom but neglects to dispense it to his neighbor is as if he holds money tied up in a purse. And it is written: \"Hidden wisdom and hidden treasure, what use is there in both?\" But what does the bag signify if not the works of the world? And what do sandals signify in this context if not the examples of dead works? Therefore, he who undertakes the office of preaching is not worthy to carry the burden of worldly affairs, lest, while this weighs down his neck, he fails to rise up to preach the heavenly matters. Nor should he look at the examples of foolish works, lest he believes that his own works, as if from dead skins, are fortified. Anyone who greets on the way greets from the occasion of the journey, not from the pursuit of obtaining that same greeting. Therefore, he who preaches salvation to listeners not out of love for the eternal homeland but out of greed for rewards, greets as if on a journey, since he wishes salvation to listeners out of occasion and not out of intention.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.10.4:ef7e50db:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-17",
+      "title": "Forty Gospel Homilies, Homily 17 on luke 10:4",
+      "excerpt": "Hence it is also added: \"Do not carry a money bag, nor a wallet, nor sandals, and greet no one along the way.\" For the preacher ought to have such great trust in God that, although he does not provide for the expenses of the present life, he nevertheless knows most certainly that these will not be lacking to him, lest while his mind is occupied with temporal things, he provide less for others concerning eternal things. He is also permitted to greet no one along the way, to show with what great haste he ought to proceed on the journey of preaching. If anyone wishes to understand these words also allegorically: in a money bag, money is enclosed; but enclosed money is hidden wisdom. Therefore, whoever has the word of wisdom but neglects to distribute it to his neighbor holds money bound up in a bag, as it were. Hence it is written: \"Hidden wisdom and a concealed treasure, what profit is there in either?\" And what is signified by the wallet, except the burdens of the world; and what in this place by sandals, except the examples of dead works? Therefore, whoever undertakes the office of preaching, it is not fitting that he carry the burden of worldly affairs, lest while this weighs down his neck, he not rise up to preach heavenly things. Nor ought he to look upon the examples of foolish works, lest he believe he is protecting his own works, as it were, with the skins of dead animals. For there are many who defend their own depravity from the depravities of others. Because they consider that others have done such things, they think they may do these things freely. What else do these people do except try to protect their feet with the skins of dead animals? But everyone who greets on the way greets by occasion of the journey, not from zeal for wishing that same salvation. Therefore, whoever preaches salvation to his hearers not from love of the eternal homeland but from ambition for rewards greets, as it were, on the journey, because he wishes salvation for his hearers by occasion and not by intention.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.10.4:329ccef6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-3",
+      "title": "The Instructor Book 3 on luke 10:4",
+      "excerpt": "Look, for instance, to Elias the Thesbite, in whom we have a beautiful example of frugality, when he sat down beneath the thorn, and the angel brought him food. \"It was a cake of barley and a jar of water.\" Such the Lord sent as best for him. We, then, on our journey to the truth, must be unencumbered. \"Carry not,\" said the Lord, \"purse, nor scalp, nor shoes; \" that is, possess not wealth, which is only treasured up in a purse; fill not your own stores, as if laying up produce in a bag, but communicate to those who have need. Do not trouble yourselves about horses and servants, who, as bearing burdens when the rich are travelling, are allegorically called shoes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.10.4:f07b114c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-8-1a-1c",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 8.1A, 1C on luke 10:4",
+      "excerpt": "He sent them two by two, in his likeness. He sent them preaching without a salary, as he had done.…\"Behold, I am sending you forth like lambs among the wolves,\" to show that as long as the Shepherd was with them they would not be harmed. To encourage them, he said, \"He who receives you, receives me.\" … He forbid them to take money for fear they would be considered businessmen and not announcers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-8-1a-1c",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:luke.10.4:86e4a1ec:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:4",
+      "excerpt": "(Orat. 2.) The sum of which is, that men ought to be so virtuous that the Gospel should make no less progress through their way of life than their preaching.\r\n\r\n(ubi sup.) The Lord gave them these commands also for the glory of the word, lest it should seem that enticements could more prevail over them. He wished them also not to be anxious to speak to others.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:tertullian:luke.10.4:8e490657:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 10:4",
+      "excerpt": "For it was He under whose very protection the people wore not out a shoe, even in the wilderness for the space of so many years. \"No one,\" says He, \"shall ye salute by the way.\" What a destroyer of the prophets, forsooth, is Christ, seeing it is from them that He received his precept also! When Elisha sent on his servant Gehazi before him to raise the Shunammite's son from death, I rather think he gave him these instructions: \"Gird up thy loins, and take my staff in thine hand, and go thy way: if thou meet any man, salute him not; and if any salute thee, answer him not again.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:tertullian:luke.10.4:e5443b69:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 10:4",
+      "excerpt": "When the children of Israel went out of Egypt, the Creator brought them forth laden with their spoils of gold and silver vessels, and with loads besides of raiment and unleavened dough; whereas Christ commanded His disciples not to carry even a staff for their journey.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.4:5bae2f75:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:4",
+      "excerpt": "Since the Lord intends to send the disciples to preach the Gospel, He says to them: \"take neither a bag,\" nor this, nor that; for it is sufficient for you to be devoted to the word. And if you carry a bag, it is obvious that you will be occupied with it, and will begin to neglect the word. Otherwise: since those whom you teach will feed you, what need have you of a bag or a knapsack, or of sandals? For those whom you instruct will supply your every need for them.\r\nHe commands them this for the purpose that they would not occupy themselves with human greetings and courtesies and thereby place obstacles in the way of the work of preaching. For it is likely that one who received a greeting would respond with a greeting in return, and perhaps would enter into a prolonged conversation, as travelers usually do, and then, as if having already become friends, would talk about something even more at length, and thus the apostle would fall into ordinary human relations and would neglect the word. For this reason the Lord forbids the disciples from greeting anyone on the road.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.10.4"
     }
   ]
 }

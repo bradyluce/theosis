@@ -4,42 +4,6 @@
   "verseNumber": 39,
   "entries": [
     {
-      "id": "catena-luke-2827-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.39",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:37–40",
-      "excerpt": "The multitude then acknowledging God, proclaims Him King, repeats the prophecy, and declares that the expected Son of David according to the flesh had come, saying, Blessed be the King that cometh in the name of the Lord.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2831-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.39",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:37–40",
-      "excerpt": "But the Lord forbade not them that glorified Him as God, but rather forbade those that blamed them, so bearing witness to Himself concerning the glory of the Godhead. Hence it follows, He answered and said unto them, I tell you, if these should hold their peace, the stones would immediately cry out.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2834-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.39",
@@ -48,6 +12,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:37–40",
       "excerpt": "Nor is it wonderful that the stones against their nature should chaunt forth the praises of the Lord, whom His murderers, harder than the rocks, proclaim aloud, that is, the multitude, in a little while about to crucify their God, denying Him in their hearts, whom with their mouths they confess. Or perhaps it is said, because, when the Jews were struck silent after the Lord’s Passion, the living stones, as Peter calls them, (1 Pet. 2:5.) were about to cry out.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.19.39:1fabd854:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2827-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.39",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:37–40",
+      "excerpt": "The multitude then acknowledging God, proclaims Him King, repeats the prophecy, and declares that the expected Son of David according to the flesh had come, saying, Blessed be the King that cometh in the name of the Lord.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,17 +65,17 @@
       ]
     },
     {
-      "id": "catena-luke-2826-v39",
+      "id": "catena-luke-2831-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.39",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:37–40",
-      "excerpt": "They beheld indeed many of our Lord’s miracles, but marvelled most at the resurrection of Lazarus. For as John says, For this cause the people also met him, for that they heard that he had done this miracle. For it must be observed that this was not the first time of our Lord’s coming to Jerusalem, but He came often before, as John relates.",
+      "excerpt": "But the Lord forbade not them that glorified Him as God, but rather forbade those that blamed them, so bearing witness to Himself concerning the glory of the Godhead. Hence it follows, He answered and said unto them, I tell you, if these should hold their peace, the stones would immediately cry out.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -112,32 +101,14 @@
       ]
     },
     {
-      "id": "catena-luke-2830-v39",
+      "id": "catena-luke-2826-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.39",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:37–40",
-      "excerpt": "O the strange folly of the envious; they scruple not to call Him Master, because they knew He taught the truth, but His disciples, as though themselves were better taught, they deem worthy of rebuke.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2833-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.39",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:37–40",
-      "excerpt": "And so at the crucifixion of our Lord, when His kinsfolk were silent from fear, the stones and rocks sang forth, while after that He gave up the ghost, the earth was moved, and the rocks were rent, and the graves opened.",
+      "excerpt": "They beheld indeed many of our Lord’s miracles, but marvelled most at the resurrection of Lazarus. For as John says, For this cause the people also met him, for that they heard that he had done this miracle. For it must be observed that this was not the first time of our Lord’s coming to Jerusalem, but He came often before, as John relates.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -166,6 +137,49 @@
       ]
     },
     {
+      "id": "catena-luke-2833-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.39",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:37–40",
+      "excerpt": "And so at the crucifixion of our Lord, when His kinsfolk were silent from fear, the stones and rocks sang forth, while after that He gave up the ghost, the earth was moved, and the rocks were rent, and the graves opened.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2830-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.39",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:37–40",
+      "excerpt": "O the strange folly of the envious; they scruple not to call Him Master, because they knew He taught the truth, but His disciples, as though themselves were better taught, they deem worthy of rebuke.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.19.39:39f3c3d9:1"
+      ]
+    },
+    {
       "id": "catena-luke-2824-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.39",
@@ -184,14 +198,14 @@
       ]
     },
     {
-      "id": "catena-luke-2825-v39",
+      "id": "catena-luke-2835-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.39",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:37–40",
-      "excerpt": "He calls by the name of disciples not only the twelve, or the seventy-two, but all who followed Christ, whether for the sake of the miracles, or from a certain charm in His teaching, and to them may be added the children, as the other Evangelists relate. Hence it follows, For all the mighty works which they had seen.",
+      "excerpt": "When we also are silent, (that is, when the love of many waxeth cold,) the stones cry out, for God can from stones raise up children to Abraham.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -210,6 +224,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:37–40",
       "excerpt": "That is, the ancient warfare, wherein we were at enmity against God, has ceased. And glory in the highest, inasmuch as Angels are glorifying God for such a reconciliation. For this very thing, that God visibly walks in the land of His enemies, shews that He has peace with us. But the Pharisees when they heard that the crowd called Him King, and praised Him as God, murmured, imputing the name of King to sedition, the name of God to blasphemy. And some of the Pharisees said, Master, rebuke thy disciples.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.19.39:c2d21c6a:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2825-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.39",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:37–40",
+      "excerpt": "He calls by the name of disciples not only the twelve, or the seventy-two, but all who followed Christ, whether for the sake of the miracles, or from a certain charm in His teaching, and to them may be added the children, as the other Evangelists relate. Hence it follows, For all the mighty works which they had seen.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -238,22 +277,89 @@
       ]
     },
     {
-      "id": "catena-luke-2835-v39",
+      "id": "hcf:theophylact-of-ohrid:luke.19.39:33b1ed92:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.19.39",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:37–40",
-      "excerpt": "When we also are silent, (that is, when the love of many waxeth cold,) the stones cry out, for God can from stones raise up children to Abraham.",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 19:39",
+      "excerpt": "The Pharisees grumbled that the people called Jesus King and praised Him as God; for (in their opinion) the solemn ascription to Him of the name of King was a sign of sedition and blasphemy against the Lord.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.19.39"
+    },
+    {
+      "id": "hcf:bede:luke.19.39:e85b8ca2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 19:39",
+      "excerpt": "And some of the Pharisees from the crowd said to Him: Teacher, rebuke Your disciples. The dementia of the envious is remarkable, who do not doubt to call Him Teacher because they knew He taught the truth; yet, they think His disciples should be rebuked, as if they were better taught, and they advise Him to correct those He instructed, whom they see manifest as God by His approving signs.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.19.39"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.19.39:cd0e0a63:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 19:39",
+      "excerpt": "It is not strange if the rocks would respond against their nature with praises of the Lord since murderers, harder than rocks, also proclaim them. Perhaps this means when the Jews are speechless after the Lord's passion, the living stones, according to Peter, will cry out. Even with mixed emotions, the crowd nevertheless leads God to his temple with praise.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.19.39"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.19.39:05be25dd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-130",
+      "title": "COMMENTARY ON LUKE, HOMILY 130 on luke 19:39",
+      "excerpt": "The Pharisees truly complained because Christ was praised. They came near and said, \"Rebuke your disciples.\" O Pharisee, what wrong action did they do? What charge do you bring against the disciples or how would you rebuke them? They have not sinned in any way but have rather done what is praiseworthy. They extol as King and Lord the One the law had before pointed out by many symbols and types. The ancient company of the holy prophets had preached of him. You despised him and grieved him by your great jealousy. Your duty was to join the rest in their praises. Your duty was to withdraw far from your innate wickedness and to change your way for the better. Your duty was to follow the sacred Scriptures and to thirst after the knowledge of the truth. You did not do this, but transferring your words to the contrary, you wanted to rebuke the heralds of the truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-130",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.19.39"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.19.39:00521ee1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-118-2",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 118.2 on luke 19:39",
+      "excerpt": "The children were shouting and saying, \"Hosanna to the Son of David!\" This displeased the chief priests and the scribes, and they said to him, \"Do you not hear what these are saying?\" That means, \"If these praises do not please you, make them keep silent.\" At his birth and at his death, children were intertwined in the crown of his sufferings. When he met Christ, the infant John jumped for joy within the womb. Children were murdered at his birth. They were like the grapes of his wedding feast. Children also proclaimed his praise when the time of his death approached. Jerusalem was in turmoil at his birth, just as it was in turmoil again and trembling the day that he entered it. When the scribes heard, they were displeased, and they were saying to him, \"Stop them!\" he said to them, \"If these become silent, the stones will cry out.\" The scribes preferred that the children would cry out rather than the stones. This, however, was reserved for later, because the stones were crying out at the time of his crucifixion, but those with words were silent. Speechless things proclaimed his greatness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-118-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.19.39"
     }
   ]
 }

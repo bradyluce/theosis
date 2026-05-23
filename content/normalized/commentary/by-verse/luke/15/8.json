@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.15.8:0d4df496:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.15.8:705e341e:0"
       ]
     },
     {
@@ -58,14 +72,39 @@
       ]
     },
     {
-      "id": "catena-luke-2334-v8",
+      "id": "catena-luke-2336-v8",
       "relation": "verse",
       "targetVerseId": "kjva:luke.15.8",
       "topicSlugs": [],
       "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 15:8–10",
-      "excerpt": "He who is signified by the shepherd, is also by the woman. For it is God Himself, God and the wisdom of God, but the Lord has formed the nature of angels and men to know Him, and has created them after His likeness. The woman then had ten pieces of silver, because there are nine orders of angels, but that the number of the elect might be filled up, man the tenth was created.",
+      "excerpt": "And because there is an image impressed on the piece of silver, the woman lost the piece of silver when man (who was created after the image of God) by sinning departed from the likeness of his Creator. And this is what is added, If she lose one piece, doth she not light a candle. The woman lighted a candle because the wisdom of God appeared in man. For the candle is a light in an earthen vessel, but the light in an earthen vessel is the Godhead in the flesh. But the candle being lit, it follows, And disturbs (evertit) the house. Because verily no sooner had his Divinity shone forth through…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.15.8:c7f175f5:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2341-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.15.8",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 15:8–10",
+      "excerpt": "To work repentance is to mourn over past sins, and not to commit things to be mourned over. For he who weeps over some things so as yet to commit others, still knows not how to work repentance, or is a hypocrite; he must also reflect that by so doing he satisfies not his Creator, since he who had done what was forbidden, must cut off himself even from what is lawful, and so should blame himself in the least things who remembers that he has offended in the greatest.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,14 +115,14 @@
       ]
     },
     {
-      "id": "catena-luke-2336-v8",
+      "id": "catena-luke-2334-v8",
       "relation": "verse",
       "targetVerseId": "kjva:luke.15.8",
       "topicSlugs": [],
       "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 15:8–10",
-      "excerpt": "And because there is an image impressed on the piece of silver, the woman lost the piece of silver when man (who was created after the image of God) by sinning departed from the likeness of his Creator. And this is what is added, If she lose one piece, doth she not light a candle. The woman lighted a candle because the wisdom of God appeared in man. For the candle is a light in an earthen vessel, but the light in an earthen vessel is the Godhead in the flesh. But the candle being lit, it follows, And disturbs (evertit) the house. Because verily no sooner had his Divinity shone forth through…",
+      "excerpt": "He who is signified by the shepherd, is also by the woman. For it is God Himself, God and the wisdom of God, but the Lord has formed the nature of angels and men to know Him, and has created them after His likeness. The woman then had ten pieces of silver, because there are nine orders of angels, but that the number of the elect might be filled up, man the tenth was created.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,24 +166,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2341-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.15.8",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 15:8–10",
-      "excerpt": "To work repentance is to mourn over past sins, and not to commit things to be mourned over. For he who weeps over some things so as yet to commit others, still knows not how to work repentance, or is a hypocrite; he must also reflect that by so doing he satisfies not his Creator, since he who had done what was forbidden, must cut off himself even from what is lawful, and so should blame himself in the least things who remembers that he has offended in the greatest.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-of-nyssa:luke.15.8:2ea34226:0"
       ]
     },
     {
@@ -164,6 +192,229 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.15.8:1724dbf7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-34",
+      "title": "Forty Gospel Homilies, Homily 34 on luke 15:8",
+      "excerpt": "There follows: \"Or what woman having ten drachmas, if she loses one drachma, does she not light a lamp, and sweep the house, and search diligently until she finds the drachma she had lost?\" He who is signified by the shepherd is also signified by the woman. For He Himself is God, He Himself is also the wisdom of God. And because an image is imprinted on a drachma, the woman lost a drachma when man, who had been created in the image of God, by sinning departed from the likeness of his Creator. But the woman lit a lamp, because the wisdom of God appeared in humanity. For a lamp is a light in an earthen vessel: and a light in an earthen vessel is divinity in flesh. Concerning which earthen vessel of His body, Wisdom Himself says: \"My strength is dried up like a potsherd.\" For because a potsherd is hardened in fire, His strength dried up like a potsherd, because He strengthened the flesh He had assumed unto the glory of resurrection through the tribulation of His passion. And when the lamp was lit, she swept the house, because as soon as His divinity shone forth through the flesh, our whole conscience was shaken. For the house is swept when the human conscience is disturbed by consideration of its own guilt. This word \"swept\" does not disagree with what is read in other manuscripts as \"cleansed,\" because indeed a wicked mind, unless it is first overturned through fear, is not cleansed of its accustomed vices. Therefore, with the house swept, the drachma is found, because when the conscience of man is disturbed, the likeness of the Creator is restored in man.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.15.8:dd0e16ff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 15:8",
+      "excerpt": "And by \"woman\" understand the wisdom and power of God the Father, His Son, who lost one drachma out of the rational creatures made in His image, that is, man, and lights a lamp — His flesh. For just as a lamp, being of earth, illuminates with the light it receives what is covered in darkness, so too the flesh of the Lord, earthly and like ours, shone with the light of the Divinity by which it was assumed. And \"the house was swept,\" that is, the whole world was cleansed from sin, for Christ took the sin of the world upon Himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.15.8:3af4694f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke",
+      "title": "Exposition of the Gospel of Luke on luke 15:8",
+      "excerpt": "The woman did not idly rejoice to find her coin. The coin, having the image of the emperor, is not ordinary. The image of the King is the register of the church. We are sheep. Let us pray that he would be pleased to place us beside the water of rest. We are sheep. Let us seek pastures. We are coins. Let us have a price. We are sons. Let us hurry to the Father. Let us not fear because we have squandered the inheritance of spiritual dignity that we received on earthly pleasures. Since the Father conferred on the Son the treasure that he had, the wealth of faith is never made void. Although he has given all, he possesses all and does not lose what he has bestowed. Do not fear that perhaps he will not receive you, for the Lord has no pleasure in the destruction of the living. Already meeting you on the way, he falls on your neck, \"for the Lord sets the fallen right.\" He will give you a kiss, that is, the pledge of piety and love. He will order the robe, ring and the shoes to be brought. You still dread harshness, but he has restored dignity. You are terrified of punishment, but he offers a kiss. You fear reproach, but he prepares a banquet. Let us now discuss the actual parable.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.15.8:78ed4d4b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke",
+      "title": "Exposition of the Gospel of Luke on luke 15:8",
+      "excerpt": "St. Luke did not idly present three parables in a row. By the parables of the sheep that strayed and was found, the coin which was lost and was found, and the son who was dead and came to life, we may cure our wounds, being encouraged by a threefold remedy. \"A threefold cord will not be broken.\" Who are the father, the shepherd and the woman? They are God the Father, Christ and the church. Christ carries you on his body, he who took your sins on himself. The church seeks, and the Father receives. The shepherd carries. The mother searches. The father clothes. First mercy comes, then intercession, and third reconciliation. Each complements the other. The Savior rescues, the church intercedes, and the Creator reconciles. The mercy of the divine act is the same, but the grace differs according to our merits. The weary sheep is recalled by the shepherd, the coin which was lost is found, the son retraces his steps to his father and returns, guilty of error but totally repentant.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.15.8:88de31e3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:letter-vii-2",
+      "title": "LETTER VII.2 on luke 15:8",
+      "excerpt": "The price of the soul is faith. Faith is the lost drachma that the woman in the Gospel seeks diligently. We read that she lit a candle and swept her house. After finding it, she calls together her friends and neighbors, inviting them to rejoice with her because she has found the drachma that she had lost. The damage to the soul is great if one has lost the faith or the grace that he has gained for himself at the price of faith. Light your lamp. \"Your lamp is your eye,\" that is, the interior eye of the soul. Light the lamp that feeds on the oil of the spirit and shines throughout your whole house. Search for the drachma, the redemption of your soul. If a person loses this, he is troubled, and if he finds it, he rejoices.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:bede:luke.15.8:f0c5b320:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 15:8",
+      "excerpt": "Or what woman having ten drachmas, if she loses one drachma, does not light a lamp, and sweep the house, and search diligently until she finds it? He who is signified by the shepherd, he also is signified by the woman. For He Himself is God, He Himself is the Wisdom of God. And because the image is expressed on the drachma, the woman lost the drachma when man, who had been created in the image of God, by sinning departed from the likeness of his Creator. But the woman lights a lamp because the wisdom of God appeared in humanity. Indeed, the lamp is light in a vessel. The light in the vessel is divinity in flesh. When the lamp is lit, the house is swept, for as soon as His divinity shone through the flesh, our whole conscience was shaken. The house is swept when human conscience is disturbed by considering its own guilt; when the house is swept, the drachma is found, because as the conscience of man is disturbed, the likeness of the Creator is restored in man.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.15.8:99f63b8d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-106",
+      "title": "COMMENTARY ON LUKE, HOMILY 106 on luke 15:8",
+      "excerpt": "This second parable compares what was lost to a drachma. It is as one out of ten, a perfect number and of a sum complete in the accounting. The number ten also is perfect, being the close of the series from the unit upwards. This parable clearly shows that we are in the royal likeness and image, even that of God over all. I suppose the drachma is the denarius on which is stamped the royal likeness. We, who had fallen and had been lost, have been found by Christ and transformed by holiness and righteousness into his image.…A search was made for that which had fallen, so the woman lighted a lamp.… By the light, what was lost is saved, and there is joy for the powers above. They rejoice even in one sinner that repents, as he who knows all things has taught us. They keep a festival over one who is saved, united with the divine purpose, and never cease to praise the Savior's gentleness. What great joy must fill them when all beneath heaven is saved and Christ calls them by faith to acknowledge the truth? They put off the pollution of sin and freed their necks from the bonds of death. They have escaped from the blame of their wandering and fall! We gain all these things in Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-106",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.15.8:a2e90006:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-i",
+      "title": "Against Heresies Book I on luke 15:8",
+      "excerpt": "And for this reason, because an error occurred in connection with the twelfth number, the sheep frisked off, and went astray; for they assert that a defection took place from the Duodecad. In the same way they oracularly declare, that one power having departed also from the Duodecad, has perished; and this was represented by the woman who lost the drachma, and, lighting a lamp, again found it. Thus, therefore, the numbers that were left, viz., nine, as respects the pieces of money, and eleven in regard to the sheep, when multiplied together, give birth to the number ninety-nine, for nine times eleven are ninety-nine.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.15.8:92264e58:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-i",
+      "title": "Against Heresies Book I on luke 15:8",
+      "excerpt": "The woman, again, who sweeps the house and finds the piece of money, they declare to denote the Sophia above, who, having lost her enthymesis, afterwards recovered it, on all things being purified by the advent of the Saviour. Wherefore this substance also, according to them, was reinstated in Pleroma.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:methodius-of-olympus:luke.15.8:b2f08ea2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "methodius-of-olympus",
+      "workId": "hcf:work:methodius-of-olympus:methodius-discourse-ix-tusiane",
+      "title": "Methodius Discourse IX. Tusiane on luke 15:8",
+      "excerpt": "For the mind being cleansed by laborious exercises from the distracting thoughts which darken it, quickly perceives the truth; as the widow in the Gospels",
+      "takeaway": "",
+      "sourceId": "hcf:source:ccel-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c311"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:tertullian:luke.15.8:978d9902:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-repentance",
+      "title": "On Repentance on luke 15:8",
+      "excerpt": "What meaning for us have those themes of the Lord's parables? Is not the fact that a woman has lost a drachma, and seeks it and finds it, and invites her female friends to share her joy, an example of a restored sinner? There strays, withal, one little ewe of the shepherd's; but the flock was not more dear than the one: that one is earnestly sought; the one is longed for instead of all; and at length she is found, and is borne back on the shoulders of the shepherd himself; for much had she toiled in straying.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:tertullian:luke.15.8:ffbcd6b2:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on luke 15:8",
+      "excerpt": "Similarly, the parable of the drachma, as being called forth out of the same subject-matter, we equally interpret with reference to a heathen; albeit it had been \"lost\" in a house, as it were in the church; albeit \"found\" by aid of a \"lamp,\" as it were by aid of God's word.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
+    },
+    {
+      "id": "hcf:tertullian:luke.15.8:ee67eade:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:the-prescription-against-heretics",
+      "title": "The Prescription Against Heretics on luke 15:8",
+      "excerpt": "The old woman (in the Gospel) had lost one of her ten pieces of silver, and therefore she sought it; when, however, she found it, she ceased to look for it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.15.8"
     }
   ]
 }

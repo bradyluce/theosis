@@ -20,54 +20,24 @@
         "patristic",
         "homily",
         "john"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.12.43:18ee353f:0"
       ]
     },
     {
-      "id": "augustine-john-053-c12-v43",
+      "id": "catena-john-1688-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.43",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 12:37–43",
-      "excerpt": "When our Lord Christ, foretelling His own passion, and the fruitfulness of His death in being lifted up on the cross, said that He would draw all [things] after Him; and when the Jews, understanding that He spoke of His death, put to Him the question how He could speak of death as awaiting Him, when they heard out of the law that Christ abides for ever; He exhorted them, while still they had in them the little light, which had so taught them that Christ was eternal, to walk, to make themselves acquainted with the whole subject, lest they should be overtaken with darkness. And, when He had…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1683-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.43",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 12:37–43",
-      "excerpt": "And thusb the Evangelist tacitly explains it, when he adds, But though He had done so many miracles before them, yet they believed not on Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1685-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.43",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:37–43",
-      "excerpt": "But why then did Christ come? Did He not know that they would not believe in Him? Yes: the Prophets had prohibited this very unbelief, and He came that it might be made manifest, to their confusion and condemnation; That the saying of Esaias the prophet might be fulfilled, which He spake, Lord, who hath believed our report? and to whom hath the arm of the Lord been revealed?",
+      "excerpt": "But what follows involved a deeper question: Therefore they could not believe, because that Esaias said again, He hath blinded their eyes, and hardened their hearts, that they should not see with their eyes, nor understand with their heart, and be converted, and I should heal them. That they should not believe; but if so, what sin is there in a man doing what he cannot help doing? And what is a graver point still, the cause is assigned to God; since He it is who blinded their eyes, and hardened their heart. This is not said to be the devil’s doing, but God’s. Yet if any ask why they could not…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -96,14 +66,14 @@
       ]
     },
     {
-      "id": "catena-john-1687-v43",
+      "id": "catena-john-1692-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.43",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 12:37–43",
-      "excerpt": "That the saying of Esaias might be fulfilled: that here is expressive not of the cause, but of the event. They did not disbelieve because Esaias said they would; but because they would disbelieve, Esaias said they would.",
+      "excerpt": "And be converted, and I should heal them. Is not to be understood here, from the beginning of the sentence—that they should not see with their eyes, nor understand with their hearts, nor be converted; conversion being the free gift of God? ord, shall we suppose that a heavenly remedy is meant; whereby those who wished to establish their own righteousness, were so far deserted and blinded, as to stumble on the stumbling stone, till, with confusion of face, they humbled themselves, and sought not their own righteousness which puffeth up the proud, but God’s righteousness, which justifieth the…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -114,14 +84,94 @@
       ]
     },
     {
-      "id": "catena-john-1688-v43",
+      "id": "augustine-john-053-c12-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.43",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 12:37–43",
+      "excerpt": "When our Lord Christ, foretelling His own passion, and the fruitfulness of His death in being lifted up on the cross, said that He would draw all [things] after Him; and when the Jews, understanding that He spoke of His death, put to Him the question how He could speak of death as awaiting Him, when they heard out of the law that Christ abides for ever; He exhorted them, while still they had in them the little light, which had so taught them that Christ was eternal, to walk, to make themselves acquainted with the whole subject, lest they should be overtaken with darkness. And, when He had…",
+      "takeaway": "",
+      "sourceId": "augustine-tractates-john-source",
+      "rank": 85,
+      "tags": [
+        "augustine",
+        "patristic",
+        "tractate",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1690-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.43",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 12:37–43",
-      "excerpt": "But what follows involved a deeper question: Therefore they could not believe, because that Esaias said again, He hath blinded their eyes, and hardened their hearts, that they should not see with their eyes, nor understand with their heart, and be converted, and I should heal them. That they should not believe; but if so, what sin is there in a man doing what he cannot help doing? And what is a graver point still, the cause is assigned to God; since He it is who blinded their eyes, and hardened their heart. This is not said to be the devil’s doing, but God’s. Yet if any ask why they could not…",
+      "excerpt": "But the Prophet, you say, mentions another cause, not their will; viz. that God had blinded their eyes, and hardened their heart. But I answer, that they well deserved this. For God hardens and blinds a man, by forsaking and not supporting him; and this He may by a secret sentence, by an unjust one He cannot.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1695-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.43",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:37–43",
+      "excerpt": "As their faith grew, their love of human praise grew still more, and outstripped it.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.12.43:9b3f53f2:0"
+      ]
+    },
+    {
+      "id": "catena-john-1691-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.43",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:37–43",
+      "excerpt": "For He does not leave us, except we wish Him, as He saith in Hosea, Seeing thou hast forgotten the law of thy God, I will also forget thy children. (Hos. 4:6) Whereby it is plain that we begin to forsake first, and are the cause of our own perdition. For as it is not the fault of the sun, that it hurts weak eyes, so neither is God to blame for punishing those who do not attend to His words.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1685-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.43",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:37–43",
+      "excerpt": "But why then did Christ come? Did He not know that they would not believe in Him? Yes: the Prophets had prohibited this very unbelief, and He came that it might be made manifest, to their confusion and condemnation; That the saying of Esaias the prophet might be fulfilled, which He spake, Lord, who hath believed our report? and to whom hath the arm of the Lord been revealed?",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -150,50 +200,14 @@
       ]
     },
     {
-      "id": "catena-john-1690-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.43",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:37–43",
-      "excerpt": "But the Prophet, you say, mentions another cause, not their will; viz. that God had blinded their eyes, and hardened their heart. But I answer, that they well deserved this. For God hardens and blinds a man, by forsaking and not supporting him; and this He may by a secret sentence, by an unjust one He cannot.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1691-v43",
+      "id": "catena-john-1687-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.43",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 12:37–43",
-      "excerpt": "For He does not leave us, except we wish Him, as He saith in Hosea, Seeing thou hast forgotten the law of thy God, I will also forget thy children. (Hos. 4:6) Whereby it is plain that we begin to forsake first, and are the cause of our own perdition. For as it is not the fault of the sun, that it hurts weak eyes, so neither is God to blame for punishing those who do not attend to His words.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1692-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.43",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:37–43",
-      "excerpt": "And be converted, and I should heal them. Is not to be understood here, from the beginning of the sentence—that they should not see with their eyes, nor understand with their hearts, nor be converted; conversion being the free gift of God? ord, shall we suppose that a heavenly remedy is meant; whereby those who wished to establish their own righteousness, were so far deserted and blinded, as to stumble on the stumbling stone, till, with confusion of face, they humbled themselves, and sought not their own righteousness which puffeth up the proud, but God’s righteousness, which justifieth the…",
+      "excerpt": "That the saying of Esaias might be fulfilled: that here is expressive not of the cause, but of the event. They did not disbelieve because Esaias said they would; but because they would disbelieve, Esaias said they would.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -222,14 +236,14 @@
       ]
     },
     {
-      "id": "catena-john-1695-v43",
+      "id": "catena-john-1683-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.43",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 12:37–43",
-      "excerpt": "As their faith grew, their love of human praise grew still more, and outstripped it.",
+      "excerpt": "And thusb the Evangelist tacitly explains it, when he adds, But though He had done so many miracles before them, yet they believed not on Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -273,7 +287,82 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.12.43:c28dcd43:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.12.43:33488201:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-53",
+      "title": "Tractates on John 53 on john 12:43",
+      "excerpt": "\"Nevertheless among the chief rulers also many believed on Him; but, because of the Pharisees, they did not confess Him, lest they should be put out of the synagogue: for they loved the glory of men more than the glory of God.\" See how the evangelist marked and disapproved of some, who yet, he said, believed on Him: who, if ever they did advance through this gateway of faith, would thereby also overcome that love of human glory which had been overcome by the apostle, when he said, \"God forbid that I should glory, save in the cross of our Lord Jesus Christ, by whom the world is crucified unto me, and I unto the world.\" For to this end also did the Lord Himself, when derided by the madness of human pride and impiety, fix His cross on the foreheads of those who believed on Him, on that which is in a manner the abode of modesty, that faith may learn not to blush at His name, and love the glory of God more than the glory of men.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.12.43"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.12.43:30943056:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 12:43",
+      "excerpt": "\"For they loved the praise of men.\" Christ had said this to them before as well: \"How can you believe, when you receive glory from men, and do not seek the glory that is from the only God?\" (Jn. 5:44) So the Evangelist shows that what Christ had foretold them came to pass. Truly, they were not rulers but slaves, and the most base slaves at that. From this we learn that whoever loves glory is a slave and is dishonorable.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.12.43"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:john.12.43:38deb016:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-5",
+      "title": "Constitutions of the Holy Apostles Book 5 on john 12:43",
+      "excerpt": "When we are persecuted, let us not think it strange; let us not love the present world, nor the praises which come from men, nor the glory and honour of rulers, according as some of the Jews wondered at the mighty works of our Lord, yet did not believe on Him, for fear of the high priests and the rest of the rulers: \"For they loved the praise of men more than the praise of God.\" But now, by confessing a good confession, we not only save ourselves, but we confirm those who are newly illuminated, and strengthen the faith of the catechumens.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:john.12.43"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.12.43:0c5ec3cb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 12:43",
+      "excerpt": "The root of their failing is vanity, vainglory; so he says, for they loved the glory of men more than the glory of God. By confessing Christ publicly they would have lost the glory of men, but won the glory of God. But they chose rather to be deprived of the glory of God than the glory of men: \"How can you believe, who receive glory from one another and do not seek the glory that comes from the only God?\" (5:44). \"If I were still pleasing men, I should not be a servant of Christ\" (Gal 1:10).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.12.43"
     }
   ]
 }

@@ -76,14 +76,14 @@
       ]
     },
     {
-      "id": "catena-luke-3165-v33",
+      "id": "catena-luke-3168-v33",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.33",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:31–34",
-      "excerpt": "Beware then of boasting, beware of the world; he is commanded to strengthen his own brethren, who said, Master, we have left all, and followed thee. (Matt. 19:27.)",
+      "excerpt": "Now Peter although earnest in spirit, yet still weak in bodily inclination, is declared about to deny his Lord; for he could not equal the constancy of the Divine will. Our Lord’s Passion has rivals, but no equal.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,14 +94,14 @@
       ]
     },
     {
-      "id": "catena-luke-3168-v33",
+      "id": "catena-luke-3165-v33",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.33",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:31–34",
-      "excerpt": "Now Peter although earnest in spirit, yet still weak in bodily inclination, is declared about to deny his Lord; for he could not equal the constancy of the Divine will. Our Lord’s Passion has rivals, but no equal.",
+      "excerpt": "Beware then of boasting, beware of the world; he is commanded to strengthen his own brethren, who said, Master, we have left all, and followed thee. (Matt. 19:27.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,6 +127,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.22.33:2fbaef64:0"
       ]
     },
     {
@@ -138,24 +145,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:31–34",
       "excerpt": "Lest the eleven should be boastful, and impute it to their own strength, that they almost alone among so many thousands of the Jews were said to have continued with our Lord in His temptations, He shews them, that if they had not been protected by the aid of their Master succouring them, they would have been beaten down by the same storm as the rest. Hence it follows, And the Lord said unto Simon, Simon, behold, Satan hath desired thee, that he may sift thee as wheat. That is, he hath longed to tempt you and to shake you, as he who cleanses wheat by winnowing. Wherein He teaches that no man’s…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3164-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.33",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:31–34",
-      "excerpt": "As if to say, As I by prayer protected your faith that it should not fail, so do you remember to sustain the weaker brethren, that they despair not of pardon.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -181,20 +170,27 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.33:e37743c6:0"
       ]
     },
     {
-      "id": "catena-luke-3159-v33",
+      "id": "catena-luke-3164-v33",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.33",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:31–34",
-      "excerpt": "Now this was said to Peter, because he was bolder than the rest, and might feel proud because of the things which Christ had promised.",
+      "excerpt": "As if to say, As I by prayer protected your faith that it should not fail, so do you remember to sustain the weaker brethren, that they despair not of pardon.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -235,6 +231,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.33:2bd16eef:1"
       ]
     },
     {
@@ -254,6 +257,92 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "catena-luke-3159-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.33",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:31–34",
+      "excerpt": "Now this was said to Peter, because he was bolder than the rest, and might feel proud because of the things which Christ had promised.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "hcf:bede:luke.22.33:90bc36a5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:33",
+      "excerpt": "He said to him: \"Lord, I am ready to go with you both to prison and to death.\" But he said: \"I tell you, Peter, the cock will not crow today until you deny three times that you know me.\" Because the Lord had said that he had prayed for Peter's faith, he, aware of his present fervent affection and faith, but ignorant of his future fall, did not believe that he could in any way fail him. But he who alone knows what is in man, so that no faithful person may either confidently trust in their own stability or carelessly distrust their fall, foretells as God the manner, time, and number of his denial, and as a merciful one promises the help of his protection.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.33:29eabb51:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:33",
+      "excerpt": "Relying on his strong love, he promises what is for now impossible for him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.33"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.33:e375bfad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-144",
+      "title": "COMMENTARY ON LUKE, HOMILY 144 on luke 22:33",
+      "excerpt": "In the passion of his zeal, Peter professed steadfastness and endurance to the last extremity, saying that he would courageously resist the terrors of death and count chains as nothing. In so doing, he erred from what was right. When the Savior told Peter that he would be weak and contradict the Lord, he should not have loudly protested the contrary. The Truth could not lie. Peter should have rather asked strength from Christ, either that he might not suffer this or that he might be rescued immediately from harm. He was fervent in spirit, warm in his love toward Christ, and of unrestrained zeal in rightly performing those duties which fit a disciple in his service to his master. Peter declares that he will endure to the last extremity. Christ rebuked him for foolishly speaking against what was foreknown and for his unreasonable haste in contradicting the Savior's words. For this reason he says, \"Truly I tell you, that the rooster will not crow tonight, until you have three times denied me.\" This proved true. Let us not think highly of ourselves, even if we see ourselves greatly distinguished for our virtues. Let us rather offer the praises of our thanks to Christ who redeems us and who grants us even the desire to be able to act correctly.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-144",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.33"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.22.33:a1648e5f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-52",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.52 on luke 22:33",
+      "excerpt": "Peter, though ready in spirit, was still weak in the body and was being prepared emotionally to deny the Lord; for he could not match the steadfastness of divine intention. The passion of the Lord has imitators, but not equals. Thus, I do not criticize him for his denial, but praise him for his tears. It is one thing to share in a common human condition, and another to possess a special virtue. And therefore, he is instructed to be cautious, not forced to deny.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.22.33"
     }
   ]
 }

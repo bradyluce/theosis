@@ -4,6 +4,25 @@
   "verseNumber": 6,
   "entries": [
     {
+      "id": "chrysostom-23051-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:first-thessalonians.3.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-second-thessalonians",
+      "title": "On 1 Thessalonians 3:1–10",
+      "excerpt": "Argument Having said in his former Epistle that we pray night and day to see you, and that we could not forbear, but were left in Athens alone, and that I sent Timothy from 1 Thessalonians 3:1-10, by all these expressions he shows the desire which he had to come among them. When therefore he had perhaps not had time to go, and to perfect what was lacking in their faith, on this account he adds a second Epistle, filling up by his writings what was wanting of his presence. For that he did not depart, we may conjecture from hence: for he says in this Epistle, We beseech you by the coming of our…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-second-thessalonians-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "first-thessalonians"
+      ]
+    },
+    {
       "id": "chrysostom-230404-v6",
       "relation": "verse",
       "targetVerseId": "kjva:first-thessalonians.3.6",
@@ -23,23 +42,72 @@
       ]
     },
     {
-      "id": "chrysostom-23051-v6",
+      "id": "hcf:john-chrysostom:first-thessalonians.3.6:b6b224fc:0",
       "relation": "verse",
-      "targetVerseId": "kjva:first-thessalonians.3.6",
       "topicSlugs": [],
       "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-second-thessalonians",
-      "title": "On 1 Thessalonians 3:1–10",
-      "excerpt": "Argument Having said in his former Epistle that we pray night and day to see you, and that we could not forbear, but were left in Athens alone, and that I sent Timothy from 1 Thessalonians 3:1-10, by all these expressions he shows the desire which he had to come among them. When therefore he had perhaps not had time to go, and to perfect what was lacking in their faith, on this account he adds a second Epistle, filling up by his writings what was wanting of his presence. For that he did not depart, we may conjecture from hence: for he says in this Epistle, We beseech you by the coming of our…",
+      "workId": "hcf:work:john-chrysostom:homily-on-1-thessalonians-4",
+      "title": "Homily on 1 Thessalonians 4 on first-thessalonians 3:6",
+      "excerpt": "\"But when Timothy came even now unto us from you, and brought us glad tidings of your faith and love, and that ye have good remembrance of us always, longing to see us, even as we also to see you.\"\r\n\r\n\"Brought us glad tidings,\" he says. Do you see the excessive joy of Paul? he does not say, brought us word, but \"brought us glad tidings.\" So great a good did he think their steadfastness and love. For it was necessary, the one remaining firm, that the other also must be steadfast. And he rejoiced in their love, because it was a sign of their faith. \"And that ye have,\" he says, \"good remembrance of us always, longing to see us, even as we also to see you.\" That is, with praises. Not when we were present, nor when we were working miracles, but even now, when we are far off, and are scourged, and are suffering numberless evils, \"ye have good remembrance of us.\" Hear how disciples are admired, who have good remembrance of their teachers, how they are called blessed. Let us imitate these. For we benefit ourselves, not those who are loved by us. \"Longing to see us,\" he says, \"as we also to see you.\" And this too cheered them; for to him who loves, to perceive that the beloved person knows that he is beloved, is a great comfort and consolation.",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-second-thessalonians-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "first-thessalonians"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:first-thessalonians.3.6:5fc00250:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-1-thessalonians",
+      "title": "Commentary on 1 Thessalonians on first-thessalonians 3:6",
+      "excerpt": "That is, you remember us with praises and approval. Listen, disciples, and learn to always preserve a good memory of your teachers. For by this you will bring benefit to yourselves, not to them. It is a very great consolation and joy for the Thessalonians that Paul knows he is loved by them – this will inflame their love even more.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:first-thessalonians.3.6:8ae8ee06:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-1-thessalonians",
+      "title": "Commentary on 1 Thessalonians on first-thessalonians 3:6",
+      "excerpt": "I, he says, expected one thing, but the opposite happened. Pay attention to the great joy of Paul! He did not say: news, but: \"good news.\" So great a blessing did he consider their steadfastness in the faith. And he rejoiced in their love, because it was a sign of their faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.6"
+    },
+    {
+      "id": "hcf:thomas-aquinas:first-thessalonians.3.6:2ba616f1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-1-thessalonians",
+      "title": "Commentary on 1 Thessalonians on first-thessalonians 3:6",
+      "excerpt": "Then when Paul says: but now that Timothy has come to us from you, he comments that Timothy spoke of their good practices towards God and towards the Apostle: faith and love towards God: \"For neither circumcision counts for anything, nor uncircumcision, but a new creation\" (Gal. 6:15); faith also towards the Apostle, so Paul says: you always remember us kindly. \"The memory of Josiah is like a blending of incense prepared by the art of the perfumer\" (Sir. 49:1). \"The memory of the righteous is a blessing\" (Prov. 10:7). And reported that you long to see us, as we long to see you. Augustine wrote: \"Hardened is the soul that does not requite love, even if it does not wish to bestow it.\" \"Look to Abraham your father and to Sarah who bore you\" (Is. 51:2).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.6"
     }
   ]
 }

@@ -4,14 +4,14 @@
   "verseNumber": 43,
   "entries": [
     {
-      "id": "catena-matt-1953-v43",
+      "id": "catena-matt-1959-v43",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.12.43",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 12:43–45",
-      "excerpt": "The Lord had said to the Jews, “The men of Nineveh shall rise in the judgment with this generation, and shall condemn it;” that they should not therefore be careless, He tells them that not only in the world to come but here also they should suffer grievous things; setting forth in a sort of riddle the punishment that should fall upon them whence He says, “When, the unclean spirit has gone out of a man.”",
+      "excerpt": "Or, herein He may be shewing forth their punishment. As when daemoniacs have been loosed from their infirmity, if they after become remiss, they draw upon themselves more grievous illusions, so shall it be among you — before ye were473 possessed by a daemon, when you worshipped idols, and slew your sons to daemons; yet I forsook you not, but cast out that daemon by the Prophets, and afterwards came Myself seeking to purify you altogether. Since then ye would not hearken to me, but have fallen into more heinous crime, (as it is greater wickedness to slay Christ than to slay the Prophets,)…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-matt-1954-v43",
+      "id": "catena-matt-1953-v43",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.12.43",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 12:43–45",
-      "excerpt": "Some suppose that this place is spoken of heretics, because the unclean spirit who dwelt in them before when they were Gentiles, is cast out before the confession of the true faith; when after they went over to heresy, and garnished their house with feigned virtues, then it is that the Devil, having taken to him other seven evil spirits, returns and dwells in them; and their last state becomes worse than their first. And indeed heretics are in a much worse condition than the Gentiles; for in the heretics was a hope of faith, in the Gentiles a war of discord. Yet though this exposition has a…",
+      "excerpt": "The Lord had said to the Jews, “The men of Nineveh shall rise in the judgment with this generation, and shall condemn it;” that they should not therefore be careless, He tells them that not only in the world to come but here also they should suffer grievous things; setting forth in a sort of riddle the punishment that should fall upon them whence He says, “When, the unclean spirit has gone out of a man.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -55,17 +55,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.12.43:45548cbc:0"
       ]
     },
     {
-      "id": "catena-matt-1959-v43",
+      "id": "catena-matt-1954-v43",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.12.43",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 12:43–45",
-      "excerpt": "Or, herein He may be shewing forth their punishment. As when daemoniacs have been loosed from their infirmity, if they after become remiss, they draw upon themselves more grievous illusions, so shall it be among you — before ye were473 possessed by a daemon, when you worshipped idols, and slew your sons to daemons; yet I forsook you not, but cast out that daemon by the Prophets, and afterwards came Myself seeking to purify you altogether. Since then ye would not hearken to me, but have fallen into more heinous crime, (as it is greater wickedness to slay Christ than to slay the Prophets,)…",
+      "excerpt": "Some suppose that this place is spoken of heretics, because the unclean spirit who dwelt in them before when they were Gentiles, is cast out before the confession of the true faith; when after they went over to heresy, and garnished their house with feigned virtues, then it is that the Devil, having taken to him other seven evil spirits, returns and dwells in them; and their last state becomes worse than their first. And indeed heretics are in a much worse condition than the Gentiles; for in the heretics was a hope of faith, in the Gentiles a war of discord. Yet though this exposition has a…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -91,6 +98,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.12.43:581b4784:0"
       ]
     },
     {
@@ -109,6 +123,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:matthew.12.43:d86791fb:0"
       ]
     },
     {
@@ -148,6 +169,31 @@
       ]
     },
     {
+      "id": "catena-matt-1957-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.12.43",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 12:43–45",
+      "excerpt": "The Devil supposed he should have rest for ever among the Gentiles, but it is added, “and findeth none,” because when the Son of God appeared in the mystery of His Incarnation, the Gentiles believed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.12.43:dfc64e63:0"
+      ]
+    },
+    {
       "id": "catena-matt-1956-v43",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.12.43",
@@ -163,17 +209,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.12.43:ea2ce375:0"
       ]
     },
     {
-      "id": "catena-matt-1957-v43",
+      "id": "catena-matt-1962-v43",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.12.43",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
+      "personId": "rabanus-maurus",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 12:43–45",
-      "excerpt": "The Devil supposed he should have rest for ever among the Gentiles, but it is added, “and findeth none,” because when the Son of God appeared in the mystery of His Incarnation, the Gentiles believed.",
+      "excerpt": "And returning to his house whence he had gone out, “he findeth it empty,” of good works through slothfulness, “swept,” that is, of its old vices by Baptism, and “garnished” with feigned virtues through hypocrisy.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -202,22 +255,89 @@
       ]
     },
     {
-      "id": "catena-matt-1962-v43",
+      "id": "hcf:john-chrysostom:matthew.12.43:2200f1b5:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.12.43",
       "topicSlugs": [],
-      "personId": "rabanus-maurus",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 12:43–45",
-      "excerpt": "And returning to his house whence he had gone out, “he findeth it empty,” of good works through slothfulness, “swept,” that is, of its old vices by Baptism, and “garnished” with feigned virtues through hypocrisy.",
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-43",
+      "title": "Homily on the Gospel of Matthew 43 on matthew 12:43",
+      "excerpt": "When therefore He had condemned them, having proved most amply that they were sinning inexcusably, and that their disobedience arose from their own perverseness not from their Teacher's inability, and when He had demonstrated this as well by many other arguments, as also by the Ninevites, and by the queen: then He speaks also of the punishment that should overtake them, darkly indeed, yet He doth speak of it, interweaving an intense fear in His narration.\r\n\r\n\"For when,\" saith He, \"the unclean spirit is gone out of the man, he walketh through dry places, seeking rest; and finding none, he saith, I will return to my house from whence I came out; and when he is come, he findeth it empty, and swept and garnished. Then goeth he, and taketh with himself seven other spirits more wicked than himself, and they enter in and dwell there, and the last state of that man is worse than the first. Even so shall it be also unto this generation.\"\r\n\r\nBy this He signifies, that not only in the world to come, but here too they should suffer most grievously. For since He had said, \"The men of Nineveh shall rise up in judgment, and shall condemn this generation;\" lest, on account of the postponement of the time, they should despise and grow more careless, by this He brings His terror close upon them. Wherewith the prophet Hosea likewise threatening them said, that they should be \"even as the prophet that is beside himself, the man that is carried away by a spirit;\" that is to say, as the madmen, and distracted by evil spirits, even the false prophets. For here, by \"a prophet that is beside himself,\" he means the false prophet, such as are the augurs. Much to the same effect Christ also tells them, that they shall suffer the utmost evils.\r\n\r\nSeest thou how from everything He urges them to attend to His sayings; from things present, from things to come; by those who had approved themselves (the Ninevites, I mean, and that queen), and by the offending Tyrians and Sodomites? This did the prophets likewise, bringing forward the sons of the Rechabites, and the bride that forgetteth not her proper ornament and her girdle, and \"the ox that knoweth his owner, and the ass that remembereth his crib.\" Even so here too, when He had by a comparison set forth their perverseness, He speaks afterwards of their punishment also.\r\n\r\nWhat then can the saying mean? As the possessed, saith He, when delivered from that infirmity, should they be at all remiss, draw upon themselves their delusion more grievous than ever: even so is it with you. For before also ye were possessed by a devil, when ye were worshipping idols, and were slaying your sons to the devils, exhibiting great madness; nevertheless I forsook you not, but cast out that devil by the prophets; and again in my own person I am come, willing to cleanse you more entirely. Since then you will not attend, but have wrecked yourselves in greater wickedness (for to kill prophets was a crime not nearly so great and grievous as to slay Him); therefore your sufferings will be more grievous than the former, those at Babylon, I mean, and in Egypt, and under the first Antiochus. Because what things befell them in the time of Vespasian and Titus, were very far more grievous than those. Wherefore also He said, \"There shall be great tribulation, such as never was, neither shall be.\" But not this only doth the illustration declare, but that they should be also utterly destitute of all virtue, and more assailable by the power of the devils, than at that time. For then even although they sinned, yet were there also among them such as acted uprightly, and God's providence was present with them, and the grace of the Spirit, tending, correcting, fulfilling all its part; but now of this guardianship too they shall be utterly deprived; so He tells them; so that there is now both a greater scarcity of virtue, and a more intense affliction, and a more tyrannical operation of the devils.\r\n\r\nYe know accordingly even in our generation, when he who surpassed all in impiety, I mean Julian, was transported with his fury, how they ranged themselves with the heathens, how they courted their party. So that, even if they seem to be in some small degree chastened now, the fear of the emperors makes them quiet; since, if it were not for that, far worse than the former had been their daring. For in all their other evil works they surpass their predecessors; sorceries, magic arts, impurities, they exhibit in great excess. And amongst the rest, moreover, strong as is the curb which holds them down, they have often made seditions, and risen up against kings, which has resulted in their being pierced through with the worst of evils.\r\n\r\nWhere now are they that seek after signs? Let them hear that a considerate mind is needed, and if this be wanting, signs are of no profit. See, for instance, how the Ninevites without signs believed, while these, after so many miracles, grew worse, and made themselves an habitation of innumerable devils, and brought on themselves ten thousand calamities; and very naturally. For when a man, being once delivered from his ills, fails to be corrected, he will suffer far worse than before. Yea, therefore He said, \"he finds no rest,\" to indicate, that positively and of necessity such an one will be overtaken by the ambush of the devils. Since surely by these two things he ought to have been sobered, by his former sufferings, and by his deliverance; or rather a third thing also is added, the threat of having still worse to endure. But yet by none of these were they made better.\r\n\r\nAll this might be seasonably said, not of them only, but of us also, when after having been enlightened, and delivered from our former ills, we again cleave unto the same wickedness, for more grievous also thenceforth will be the punishment of our subsequent sins. Therefore to the sick of the palsy also Christ said, \"Behold, thou art made whole; sin no more, lest a worse thing come unto thee;\" and this to a man who was thirty-eight years in his infirmity. And what, one might ask, was he to suffer worse than this? Something far worse, and more intolerable. For far be it from us, that we should endure as much as we are capable of enduring. For God is at no loss for inflictions. For according to the greatness of His mercy, so also is His wrath.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.12.43"
+    },
+    {
+      "id": "hcf:jerome:matthew.12.43:a6c482c1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 12:43",
+      "excerpt": "(Verse 43) But whenever an unclean spirit has gone out of a person, it roams through arid places, searching for rest but does not find any. Then it says, 'I will return to my house from which I came.' And when it comes, it finds the house empty, swept clean, and put in order. Then it goes and brings along with it seven other spirits more evil than itself, and they enter and dwell there. And the last state of that person becomes worse than the first. For heretics are in a much worse condition than the Gentiles: because in the former there is hope of faith, and in the latter there is the battle of discord. Although this understanding seems to prefer applause and the appearance of doctrine, I do not know whether it has the truth. For from the fact that a finite or parabolic, or exemplary, sequence follows: so it will be for this wicked generation: we are compelled not to refer to heretics and any other people, but to the Jewish people as a parable, so that the context of the passage does not flow passively and vaguely in different directions and is confused like the custom of fools; but let it adhere to itself, either responding to what came before or what comes after. An unclean spirit went out from the Jews, when they received the Law, and walked through dry places, seeking rest for itself. Being driven out by the Jews, it walked through the deserted places of the Gentiles; and when they later believed in the Lord, he, not finding a place among the nations, said:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.12.43"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.12.43:0694520e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-12-22-23",
+      "title": "Commentary on Matthew 12:22-23 on matthew 12:43",
+      "excerpt": "The law which was given later intervened, casting out the unclean spirit dwelling in the hearts of the elect people. It kept that spirit away as if it were surrounding the people with its protective power. Going out from there, the spirit wandered among the nations in the deserts and arid places, leaving behind its old home, so that it might rest in these places until the day of judgment and not in a troubled dwelling [as Israel provided].But when God's grace was imparted afresh to the nations, flowing as a living fountain through the cleansing water [of baptism], there was no place for the spirit to continue living among them, and indeed he had no rest with them. After reconsidering its present situation, the spirit believed the best thing to do was to return to the house from which it had come. That house, having been cleaned out through the law, decorated with the proclamation of the prophets and finally prepared by the coming of Christ, was found to be vacant. The custodian of the law had left—because the whole law [was valid] until John—and those living there did not receive Christ.\r\nAlso, there was no inhabitant in the dwelling, and it had been left unguarded. Because of the concern of those who were living there before, the place had been kept clean and adorned for the incoming dweller. Then seven spirits even more evil entered in—as many as there were the gifts of grace offered by Christ which God's all-embracing wisdom had placed there with a sevenfold glory. In this way the possession of wicked spirits was as great as the possession of grace would have been. Thus \"the last state of that man becomes worse than the first,\" because the unclean spirit left the house for fear of the law but now returns with a vengeance because of the grace that was rejected.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.12.43"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.12.43:bb99de54:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 12:43",
+      "excerpt": "He shows that they have been brought to utter perdition by not accepting Him. For just as those who have been delivered from demons suffer worse things if they become lazy and careless, so it is that your generation was possessed of a demon when it worshipped the idols. But this demon was cast out by means of the prophets. Then I Myself came, wishing to cleanse you further. But since you rejected Me, and, indeed, are eager to slay Me, as your sin is worse, so will your punishment be worse, and your last captivity will be more grievous than the former. You, O reader, must also understand this, that the unclean spirit is cast out by baptism and goes forth among waterless and unbaptized souls; but it does not find rest in them. Rest for demons is to harass with evil deeds those who are baptized, for they already possess those who are unbaptized. Therefore the demon returns with seven other spirits to the one who is baptized. For just as there are seven gifts of the Holy Spirit, so, on the contrary, there are seven spirits of evil. When the demon re-enters the one who is baptized, the disaster is worse. For, previously, there was hope of being cleansed through baptism. But now there is no hope of a second baptism, unless it be by the baptism of repentance, which is exceedingly toilsome.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.12.43"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.12.43:c78b26fd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 12:43",
+      "excerpt": "When the unclean spirit has gone out of a man... Above he showed that the gentiles were preferable to the Jews; here he wants to confirm this with an example. First, he presents the example; secondly, he applies it (v. 45b).\r\n\r\nHe gives the example of an unclean spirit. But one must keep in mind that sometimes an example is taken from some occurrence, sometimes from a parable. When it is taken from an occurrence, it is required that each be explained separately, so that both need their own explanation, as was done here, when the example of Jonah was presented. Sometimes the example from a parable is presented, as when it is said, \"The kingdom of heaven is like unto...\" In this case there is no need to state what is in the kingdom of heaven. Therefore we can say according to Jerome that it is a similitude and a parable. In that case there is one sense. Or, according to Augustine, it is taken from an occurrence, and then there are two senses.\r\n\r\nThe unclean spirit goes out of a man in two ways, because sometimes he torments a man in a bodily way, sometimes in a spiritual. Hence it is necessary to see how a man is filled with an unclean spirit; how in a bodily manner and how in a spiritual; thirdly, how it pertains to the matter at hand. Therefore, four things were said: first, liberation from an unclean spirit; secondly, repeated affliction; thirdly, the occasion; fourthly, the occasion of the second affliction.\r\n\r\nHe says, therefore, When the unclean spirit has gone out of a man... Anything mixed with a baser thing is called unclean, with a purer thing, more pure. For example, if silver is mixed with lead, it becomes baser. Accordingly, a created spirit, if it is united with one lower than itself, is called an unclean spirit. And sometimes it goes out of a man, whom it was harassing corporeally, and sometimes whom it was vexing spiritually, as in baptism. Consequently, the renewed harassment is mentioned, as well as the occasion: first, on the part of the demon; secondly, on the part of those harassed. On the part of the demon, in regard to those others; secondly, as to these. For it is the demon's custom to be restless unless he causes harm, because he loved sin from the beginning. Hence when he is expelled from anyone, he looks elsewhere to cause vexation. Hence he says, he walks through dry places seeking rest, but he finds none. Hence sometimes he does not find rest. Where he does is described in Job (40:21): \"Under the lotus plant he lies, in the covert of the reeds and in the marsh.\" Marshy places are hearts given to voluptuous pleasures; dry places are those who scorn such pleasures but are turned aside by prosperity. Ezekiel (37:11) says of these: \"Our bones are dried up, and our hope is lost.\" He says, he walks and seeks out any man he might deceive. Hence the fact that he walks shows his diligence: \"Be sober, be watchful. Your adversary, the devil, goes about like a roaring lion, seeking someone to devour\" (1 Pt 5:8). Seeking rest, but he finds none except in marshy places. So it was that leaving the Jews, he went to the gentiles who are dry of the dew of divine grace; but he did not find rest, because he was cast out, for they received God's word.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.12.43"
     }
   ]
 }

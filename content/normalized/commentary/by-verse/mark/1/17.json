@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-mark-0073-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.17",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:16–20",
-      "excerpt": "Now fishers and unlettered men are sent to preach, that the faith of believers might be thought to lie in the power of God, not in eloquence or in learning. It goes on to say, and immediately they left their nets, and followed him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0075-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.17",
@@ -55,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.17:bf73c2c9:0"
       ]
     },
     {
@@ -76,21 +65,28 @@
       ]
     },
     {
-      "id": "catena-mark-0071-v17",
+      "id": "catena-mark-0073-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.17",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:16–20",
-      "excerpt": "As the Evangelist John relates, Peter and Andrew were disciples of the Forerunner, but seeing that John had borne witness to Jesus, they joined themselves to him; afterwards, grieving that John had been cast into prison, they returned to their trade. Wherefore there follows, casting nets into the sea, for they were fishers. Look then upon them, living on their own labours, not on the fruits of iniquity; for such men were worthy to become the first disciples of Christ; whence it is subjoined, And Jesus said unto them, Come ye after me. Now He calls them for the second time; for this is the…",
+      "excerpt": "Now fishers and unlettered men are sent to preach, that the faith of believers might be thought to lie in the power of God, not in eloquence or in learning. It goes on to say, and immediately they left their nets, and followed him.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.17:8edab084:0"
       ]
     },
     {
@@ -112,14 +108,14 @@
       ]
     },
     {
-      "id": "catena-mark-0114",
+      "id": "catena-mark-0071-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.17",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
-      "title": "On Mark 1:17",
-      "excerpt": "For He passes on to them as being more in need, since it was not right to shut up doctrine in one place, but to throw out his rays every where. It goes on: For therefore am I come.",
+      "title": "On Mark 1:16–20",
+      "excerpt": "As the Evangelist John relates, Peter and Andrew were disciples of the Forerunner, but seeing that John had borne witness to Jesus, they joined themselves to him; afterwards, grieving that John had been cast into prison, they returned to their trade. Wherefore there follows, casting nets into the sea, for they were fishers. Look then upon them, living on their own labours, not on the fruits of iniquity; for such men were worthy to become the first disciples of Christ; whence it is subjoined, And Jesus said unto them, Come ye after me. Now He calls them for the second time; for this is the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -148,6 +144,24 @@
       ]
     },
     {
+      "id": "catena-mark-0114",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.17",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:17",
+      "excerpt": "For He passes on to them as being more in need, since it was not right to shut up doctrine in one place, but to throw out his rays every where. It goes on: For therefore am I come.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0072-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.17",
@@ -163,7 +177,84 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:mark.1.17:b480af3d:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.17:ae67c0a4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:17",
+      "excerpt": "Peter and Andrew were first disciples of the Forerunner, and when they saw Jesus, to whom John had borne witness, they joined Him. Then, when John was betrayed, they sorrowfully returned again to their former occupation. So Christ calls them now a second time, for the present calling is already the second. Note that they were nourished by their own righteous labors and not by unrighteous occupations. Such men were worthy to be the first disciples of Christ. Immediately casting aside what was in their hands, they followed Him; for one must not delay, but must follow at once.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.17"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.17:bc0c9c93:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:17",
+      "excerpt": "Look then upon them, living on their own labours, not on the fruits of iniquity; for such men were worthy to become the first disciples of Christ; whence it is subjoined, And Jesus said unto them, Come ye after me. Now He calls them for the second time; for this is the second calling in respect of that, of which we read in John. But it is shown to what they were called, when it is added, I will make you become fishers of men.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.17"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.17:46a4d3fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:17",
+      "excerpt": "We must know also, that action is first called, then contemplation; for Peter is the type of the active life, for he was more ardent than the others, just as the active life is the more bustling; but John is the type of the contemplative life, for he speaks more fully of divine things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.17"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:mark.1.17:a35b10ce:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:the-proof-of-the-gospel-book-3",
+      "title": "The Proof of the Gospel, Book 3 on mark 1:17",
+      "excerpt": "But this was surely the manifestation of the divine will and of the divine power working in them. For when He called them, the first thing He said to them was: \"Come, follow me, and I will make you fishers of men.\" And when He had thus acquired them as His followers, He breathed into them His divine power, He filled them with strength and bravery, and like a true Word of God and as God Himself, the doer of such great wonders, He made them hunters of rational and thinking souls, adding power to His words: \"Come, follow me, and I will make you fishers of men,\" and sent them forth fitted already to be workers and teachers of holiness to all the nations, declaring them heralds of His own teaching. And who would not be amazed and naturally inclined to disbelieve a thing so extraordinary, for none of those who have ever won fame among men—no king, no legislator, no philosopher, no Greek, no barbarian—are recorded to have ever conceived such a design, or dreamed of anything at all resembling it? For each one of them has been satisfied, if he could establish his own system over his own land only, and if he were able to enforce desirable laws within the limits of his own race. Whereas He, who conceived nothing human or mortal, see how truly He speaks with the voice of God, saying in these very words to those disciples of His, the poorest of the poor: \"Go forth, and make disciples of all the nations.\" \"But how,\" the disciples might reasonably have answered the Master, \"can we do it? How, pray, can we preach to Romans? How can we argue with Egyptians? We are men bred up to use the Syrian tongue only, what language shall we speak to Greeks? How shall we persuade Persians, Armenians, Chaldrearis, Scythians, Indians, and other barbarous nations to give up their ancestral gods, and worship the Creator of all? What sufficiency of speech have we to trust to in attempting such work as this? And what hope of success can we have if we dare to proclaim laws directly opposed to the laws about their own gods that have been established for ages among all nations? By what power shall we ever survive our daring attempt?\"\r\n\r\nBut while the disciples of Jesus were most likely either saying thus, or thinking thus, the Master solved their difficulties, by the addition of one phrase, saying they should triumph \"In MY NAME.\" For He did not bid them simply and indefinitely make disciples of all nations, but with the necessary addition of \"In my Name.\" And the power of His Name being so great, that the apostle says: \"God has given him a name which is above every name, that in the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth,\" He shewed the virtue of the power in His Name concealed from the crowd when He said to His disciples: \"Go, and make disciples of all nations in my Name.\" He also most accurately forecasts the future when He says: \"For this gospel must first be preached to all the world, for a witness to all nations.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:mark.1.17"
     },
     {
       "id": "catena-mark-0070-v17",
@@ -199,6 +290,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.17:8be8d36f:0"
       ]
     },
     {

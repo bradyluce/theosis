@@ -76,6 +76,24 @@
       ]
     },
     {
+      "id": "catena-mark-0801-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.10.13",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 10:13–16",
+      "excerpt": "Wherefore He says not, for of these, but of such is the kingdom of God, that is, of persons who have both in their intention and their work the harmlessness and simplicity which children have by nature. For a child does not hate, does nothing of evil intent, nor though beaten does he quit his mother; and though she clothe him in vile garments, prefers them to kingly apparel; in like manner he, who lives according to the good ways of his mother the Church, honours nothing before her, nay, not pleasure, which is the queen of many; wherefore also the Lord subjoins, Verily I say unto you,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0797-v13",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.13",
@@ -91,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.10.13:a9784d4c:1"
       ]
     },
     {
@@ -109,25 +134,82 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:mark.10.13:b42ee2c6:0"
       ]
     },
     {
-      "id": "catena-mark-0801-v13",
+      "id": "hcf:theophylact-of-ohrid:mark.10.13:80798ea0:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.10.13",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 10:13–16",
-      "excerpt": "Wherefore He says not, for of these, but of such is the kingdom of God, that is, of persons who have both in their intention and their work the harmlessness and simplicity which children have by nature. For a child does not hate, does nothing of evil intent, nor though beaten does he quit his mother; and though she clothe him in vile garments, prefers them to kingly apparel; in like manner he, who lives according to the good ways of his mother the Church, honours nothing before her, nay, not pleasure, which is the queen of many; wherefore also the Lord subjoins, Verily I say unto you,…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:13",
+      "excerpt": "Great was the faith among the people, when they accepted the mere laying on of hands by Christ as a blessing for the children brought to Him, while the disciples would not allow those bringing them, thinking this was unworthy of Him.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.13"
+    },
+    {
+      "id": "hcf:bede:mark.10.13:b6fced07:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 10:13",
+      "excerpt": "And they brought little children to Him that He might touch them. But the disciples rebuked those who brought them. Not that they did not want them to be blessed by the voice and hand of the Savior, but because, not yet having complete faith, they thought He would be worn out by the importunity of those who brought them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.10.13"
+    },
+    {
+      "id": "hcf:augustine:mark.10.13:d7f064ab:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-351-2",
+      "title": "SERMON 351.2 on mark 10:13",
+      "excerpt": "When any people, you see, who are already of an age to make free decisions of will, approach the sacraments of the faithful, they cannot begin the new life unless they repent of the old. It's only babies that are exempt from this kind of repentance when they are baptized; after all they are not yet capable of making free choices.However, the faith of those who present them for baptism can avail them for sanctification and the remission of original sin; thus whatever defilement of wrongdoing they may have contracted through others, of whom they have been born, they can be purged of it through the interrogation of these others and the replies they give.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.10.13"
+    },
+    {
+      "id": "hcf:tertullian:mark.10.13:fdf7c0d6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-monogamy",
+      "title": "On Monogamy on mark 10:13",
+      "excerpt": "But further, if Christ reproves the scribes and Pharisees, sitting in the official chair of Moses, but not doing what they taught, what kind of (supposition). is it that He Himself withal should set upon His own official chair men who were mindful rather to enjoin-(but) not likewise to practise-sanctity of the flesh, which (sanctity) He had in all ways recommended to their teaching and practising?-first by His own example, then by all other arguments; while He tells (them) that \"the kingdom of heavens\" is \"children's; \" while He associates with these (children) others who, after marriage, remained (or became)virgins; \" while He calls (them) to (copy) the simplicity of the dove, a bird not merely innocuous, but modest too, and whereof one male knows one female; while He denies the Samaritan woman's (partner to be) a husband, that He may show that manifold husbandry is adultery; while, in the revelation of His own glory, He prefers, from among so many saints and prophets, to have with him Moses and Elias -the one a monogamist, the other a voluntary celibate (for Elias was nothing else than John, who came \"in the power and spirit of Elias\" ); while that \"man gluttonous and toping,\" the \"frequenter of luncheons and suppers, in the company of publicans and sinners,\" sups once for all at a single marriage, though, of course, many were marrying (around Him); for He willed to attend (marriages) only so often as (He willed) them to be.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.10.13"
     },
     {
       "id": "catena-mark-0803-v13",

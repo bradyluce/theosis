@@ -58,14 +58,39 @@
       ]
     },
     {
-      "id": "catena-luke-1021-v47",
+      "id": "catena-luke-1023-v47",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.47",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:46–49",
-      "excerpt": "But Lordship both in name and reality belongs only to the Highest Nature.",
+      "excerpt": "But the advantage which arises from the keeping of the commandments, or the loss from disobedience, he shews as follows; Whosoever cometh to me, and heareth my sayings, he is like to a man who built his house upon a rock, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.6.47:a20c06fc:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1031-v47",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.47",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:46–49",
+      "excerpt": "Or they build upon the earth without foundation, who upon the quicksand of doubt, which relates to opinion, lay the foundation of their spiritual building, which a few drops of temptation wash away.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,14 +101,14 @@
       ]
     },
     {
-      "id": "catena-luke-1023-v47",
+      "id": "catena-luke-1021-v47",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.47",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:46–49",
-      "excerpt": "But the advantage which arises from the keeping of the commandments, or the loss from disobedience, he shews as follows; Whosoever cometh to me, and heareth my sayings, he is like to a man who built his house upon a rock, &c.",
+      "excerpt": "But Lordship both in name and reality belongs only to the Highest Nature.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,20 +152,27 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.6.47:14346052:1"
       ]
     },
     {
-      "id": "catena-luke-1031-v47",
+      "id": "catena-luke-1030-v47",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.47",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:46–49",
-      "excerpt": "Or they build upon the earth without foundation, who upon the quicksand of doubt, which relates to opinion, lay the foundation of their spiritual building, which a few drops of temptation wash away.",
+      "excerpt": "The house of the devil is the world which lieth in wickedness, (1 John 5:19.) which he builds upon the earth, because those who obey him he drags down from heaven to earth; he builds without foundation, for sin has no foundation, standing not by its own nature, for evil is without substance, which yet whatever it is, grows up in the nature of good. But because the foundation is called so from fundus, we may not unfitly understand that fundamentum is placed here for fundus. As then he who is fallen into a well is kept at the bottom of the well, so the soul falling away remains stationary, as…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -156,6 +188,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:46–49",
       "excerpt": "Lest any one should vainly flatter himself with the words, Out of the abundance of the heart the mouth speaketh, as if words only and not rather works were required of a Christian, our Lord adds the following, But why call ye me Lord, Lord, and do not the things which I say? As if He said, Why do ye boast of sending forth the leaves of a right confession, and shew forth no fruit of good works.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1028-v47",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.47",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:46–49",
+      "excerpt": "A flood comes in three ways, either by unclean spirits, or wicked men, or the very restlessness of mind or body; and as far as men trust in their own strength they fall away, but as long as they cling to the immoveable rock they cannot even be shaken.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -202,40 +252,55 @@
       ]
     },
     {
-      "id": "catena-luke-1028-v47",
+      "id": "hcf:bede:luke.6.47:bfa1d95b:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.47",
       "topicSlugs": [],
       "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:46–49",
-      "excerpt": "A flood comes in three ways, either by unclean spirits, or wicked men, or the very restlessness of mind or body; and as far as men trust in their own strength they fall away, but as long as they cling to the immoveable rock they cannot even be shaken.",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:47",
+      "excerpt": "Everyone who comes to me and hears my words and does them, I will show you whom he is like. He is like a man building a house. The Lord has spoken much above about openly good or evil things and has discussed much about truly and hypocritically good things, by which three persons I think the whole class of humans is comprehended. He concludes his whole speech with a simultaneously terrifying and delightful parable, by which he likens some listeners of the word to the devil, others to Christ, each of whom never ceases building his own house in the subjection of men throughout the whole time of this age. Therefore, whoever hears and does Christ's words will be compared to Christ. Because just as Christ builds, instructs, and governs one universal church for himself out of various persons, dedicating it sometime to eternal life, so too does the useful listener, according to his own measure, advance towards the heights through various pursuits of virtues, building for himself a dwelling of eternal habitation, in the present busily working to shape, polish, and bind together the stones with the glue of charity, but in the future rejoicing in the dedication with Christ.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.47"
     },
     {
-      "id": "catena-luke-1030-v47",
+      "id": "hcf:bede:luke.6.47:b7850e55:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.47",
       "topicSlugs": [],
       "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:46–49",
-      "excerpt": "The house of the devil is the world which lieth in wickedness, (1 John 5:19.) which he builds upon the earth, because those who obey him he drags down from heaven to earth; he builds without foundation, for sin has no foundation, standing not by its own nature, for evil is without substance, which yet whatever it is, grows up in the nature of good. But because the foundation is called so from fundus, we may not unfitly understand that fundamentum is placed here for fundus. As then he who is fallen into a well is kept at the bottom of the well, so the soul falling away remains stationary, as…",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-25",
+      "title": "Homilies on the Gospels 2.25 on luke 6:47",
+      "excerpt": "The Lord indicates what the true distinction between good and bad fruits is by continuing under another figure of speech. He says, \"Everyone who comes to me and listens to my words and does them, I will show you who he is like. He is like a man building a house.\" Now this man building a house is the mediator between God and humankind, the man Christ Jesus, who deigned to build and consecrate a beloved and holy house for himself, namely, the church, in which to remain forever.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.47"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.6.47:872ff2c6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 6:47",
+      "excerpt": "He teaches that the foundation of the virtues is obedience of heavenly instructions, whereby this house of ours cannot be shaken by the flow of desires, by the assault of spiritual wickedness, by the rain of the world or the dark arguments of heretics.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.6.47"
     }
   ]
 }

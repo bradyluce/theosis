@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-mark-1039-v11",
+      "id": "catena-mark-1042-v11",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.11",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:9–13",
-      "excerpt": "The Lord shews how Jerusalem and the province of Judæa merited the infliction of such calamities, in the following words: But take heed to yourselves: for they shall deliver you up to councils; and in the synagogues ye shall be beaten. For the greatest cause of destruction to the Jewish people was, that after slaying the Saviour, they also tormented the heralds of His name and faith with wicked cruelty.",
+      "excerpt": "Ecclesiastical historians testify that this was fulfilled, for they relate that all the Apostles long before the destruction of the province of Judæa were dispersed to preach the Gospel over the whole world, except James the son of Zebedee and James the brother of our Lord, who had before shed their blood in Judæa for the word of the Lord. Since then the Lord knew that the hearts of the disciples would be saddened by the fall and destruction of their nation, He relieves them by this consolation, to let them know that even after the casting away of the Jews, companions in their joy and…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -40,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-mark-1042-v11",
+      "id": "catena-mark-1039-v11",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.11",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:9–13",
-      "excerpt": "Ecclesiastical historians testify that this was fulfilled, for they relate that all the Apostles long before the destruction of the province of Judæa were dispersed to preach the Gospel over the whole world, except James the son of Zebedee and James the brother of our Lord, who had before shed their blood in Judæa for the word of the Lord. Since then the Lord knew that the hearts of the disciples would be saddened by the fall and destruction of their nation, He relieves them by this consolation, to let them know that even after the casting away of the Jews, companions in their joy and…",
+      "excerpt": "The Lord shews how Jerusalem and the province of Judæa merited the infliction of such calamities, in the following words: But take heed to yourselves: for they shall deliver you up to councils; and in the synagogues ye shall be beaten. For the greatest cause of destruction to the Jewish people was, that after slaying the Saviour, they also tormented the heralds of His name and faith with wicked cruelty.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -73,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.11:108e9447:1"
       ]
     },
     {
@@ -112,24 +119,6 @@
       ]
     },
     {
-      "id": "catena-mark-1045-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.13.11",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:9–13",
-      "excerpt": "He also foretells to them a worse evil, that they should suffer persecution from their relations. Wherefore there follows: Now the brother shall betray the brother to death, and the father the son; and children shall rise up against their parents, and shall cause them to be put to death; and ye shall be hated of all men for my name's sake.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1047-v11",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.11",
@@ -148,6 +137,75 @@
       ]
     },
     {
+      "id": "catena-mark-1045-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.11",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:9–13",
+      "excerpt": "He also foretells to them a worse evil, that they should suffer persecution from their relations. Wherefore there follows: Now the brother shall betray the brother to death, and the father the son; and children shall rise up against their parents, and shall cause them to be put to death; and ye shall be hated of all men for my name's sake.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.13.11:0d2b7f48:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:11",
+      "excerpt": "And when they lead you and hand you over, do not worry beforehand what you will speak, but say whatever is given to you in that hour. For it is not you who speak, but the Holy Spirit. When we are led to judges because of Christ, we must simply express our will for Christ. Moreover, it is Christ Himself who speaks in us, and the grace of the Holy Spirit is given in answering.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.11"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.11:f7af2f9d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:11",
+      "excerpt": "Indeed, before the decisive war of the Romans against the Jews began, what did the apostles not suffer from them, being delivered up to courts and led before kings: Herod, Agrippa, and Nero? But you, He says, \"do not worry beforehand what you will\" answer: at that very hour the Holy Spirit will give you what you must say.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.11"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.13.11:428b156a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-35",
+      "title": "Forty Gospel Homilies, Homily 35 on mark 13:11",
+      "excerpt": "But upon hearing so many terrors, the hearts of the weak could be disturbed, and therefore consolation is added when it is immediately subjoined: \"Settle it therefore in your hearts not to premeditate how you will answer. For I will give you a mouth and wisdom, which all your adversaries will not be able to resist or contradict.\" As if He openly says to His weakening members: Do not be terrified, do not be afraid; you approach the contest, but I fight; you utter the words, but I am the one who speaks.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.13.11"
+    },
+    {
       "id": "catena-mark-1043-v11",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.11",
@@ -163,6 +221,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:mark.13.11:16282277:0"
       ]
     }
   ]

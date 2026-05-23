@@ -20,6 +20,13 @@
         "patristic",
         "homily",
         "matthew"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-matthew-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.11.1:8012f28b:0"
       ]
     },
     {
@@ -56,6 +63,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.11.1:eb179fe3:0"
       ]
     },
     {
@@ -74,7 +88,65 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.11.1:04c3f6c2:0"
       ]
+    },
+    {
+      "id": "hcf:jerome:matthew.11.1:ac49d5ce:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 11:1",
+      "excerpt": "Chapter 11, Verses 1-2. And it came to pass, when Jesus had finished instructing His twelve disciples, that He departed from there to teach and preach in their cities. It is not as if He was unaware and asking; for He had already shown the others who were unaware, saying: Behold, the Lamb of God, behold Him who takes away the sins of the world (John 1:29), and He had heard the voice of the Father, thundering: This is my beloved Son, in whom I am well pleased (Matthew 3:17). But the Savior asks where Lazarus has been laid, so that those who were indicating the place of the tomb would at least be prepared to see the dead man rising again, and the disciples would be sent to Christ to witness the signs and miracles, so that through this opportunity they would believe in Him and learn from their Master. But the disciples of John, through their pride against the Lord, and their envy and malicious opposition, also revealed their thoughts in a superior manner, as the Evangelist reports: Then the disciples of John approached him, saying: Why do we and the Pharisees fast often, but your disciples do not fast (Ibid., IX, 14)? And in another place: Master, to whom you gave testimony at the Jordan, look, his disciples are baptizing and everyone is coming to him (John III, 26), as if to say: We are being abandoned, there is a scarcity here, while a crowd gathers around him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.11.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.11.1:64128c3b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 11:1",
+      "excerpt": "When He had sent the disciples, He Himself was quiet, not working miracles but only teaching in the synagogues. For if He Himself were present healing the sick, no one would have approached the disciples. Therefore He departed so that they would have opportunity to heal.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.11.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.11.1:4892c3bb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 11:1",
+      "excerpt": "After these words the Lord went on from there to teach and preach; and this for three reasons.\r\n\r\nOne reason was to show by example what he had taught: \"Jesus began to do and to teach\" (Acts 1:1).\r\nSecondly, to show that even the wicked should be preached to: \"I am a debtor to the wise and unwise\" (Rom 1:14).\r\nThirdly, to give others the opportunity to preach: \"If a revelation is made to another sitting by, let the first be silent\" (1 Cor 14:30).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.11.1"
     }
   ]
 }

@@ -76,6 +76,24 @@
       ]
     },
     {
+      "id": "catena-luke-1229-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.19",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:19–21",
+      "excerpt": "For they cannot enter within when He is teaching whose words they refuse to understand spiritually. But the multitude went before and entered into the house, because when the Jews rejected Christ the Gentiles flocked to Him. But those who stand without, wishing to see Christ, are they, who not seeking a spiritual sense in the law, have placed themselves without to guard the letter of it, and as it were rather compel Christ to go out, to teach them earthly things, than consent to enter in themselves to learn spiritual things.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1221-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.19",
@@ -91,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.8.19:d3684075:1"
       ]
     },
     {
@@ -102,24 +127,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 8:19–21",
       "excerpt": "They then who hear the word of God and do it, are called the mother of our Lord, because they daily in their actions or words bring Him forth as it were in their inmost hearts; they also are His brethren where they do the will of His Father, Who is in heaven.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1229-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.19",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:19–21",
-      "excerpt": "For they cannot enter within when He is teaching whose words they refuse to understand spiritually. But the multitude went before and entered into the house, because when the Jews rejected Christ the Gentiles flocked to Him. But those who stand without, wishing to see Christ, are they, who not seeking a spiritual sense in the law, have placed themselves without to guard the letter of it, and as it were rather compel Christ to go out, to teach them earthly things, than consent to enter in themselves to learn spiritual things.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -163,6 +170,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.8.19:76a05d85:0"
       ]
     },
     {
@@ -182,6 +196,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.8.19:bbb48f1a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 8:19",
+      "excerpt": "However, his mother and brothers came to him and could not reach him because of the crowd. The brothers of the Lord are neither the sons of the blessed ever-virgin Mary according to Helvidius, nor the sons of Joseph from another wife according to some, but rather they should be understood to be his relatives, as we have discussed above. Surely, when the Lord, requested by his mother and brothers, refrains from leaving his duty of preaching the word, he is not rejecting the obligations of maternal piety, for the commandment is, \"Honor your father and mother\" (Exodus 20); but he demonstrates that he owes more to his Father's mysteries than to maternal affections, recommending to us by example what he commands by word, \"Whoever loves father or mother more than me is not worthy of me\" (Matthew 10). He does not disdain his brothers out of disrespect, but by preferring spiritual work over carnal kinship, he teaches that the bond of hearts is more religious than that of bodies. Mystically, however, this reading is in harmony with the higher one, where it is said about the Jews who only look at the letter of the law: \"And whoever does not have, even what he thinks he has will be taken from him.\" For the mother and brothers of Jesus represent the synagogue from whose flesh he was born, and the people of the Jews: who, while the Savior is teaching within, coming cannot enter because they neglect to understand his spiritual teachings. For the crowd preoccupying indeed enters his house, because while Judea was differing, the gentiles flocked to Christ, and they drank in the internal mysteries of life, the closer in faith, the more capacious in mind. Thus, the Psalm says: \"Come to him, and be enlightened\" (Psalm 34).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.8.19"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.8.19:fb88c9d2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-3",
+      "title": "Forty Gospel Homilies, Homily 3 on luke 8:19",
+      "excerpt": "Hence also His mother, when she is seemingly not acknowledged, is said to be standing outside, because clearly the Synagogue is not recognized by its Author, since, while holding to the observance of the Law, it lost spiritual understanding, and fixed itself outside in guarding the letter.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.8.19"
     }
   ]
 }

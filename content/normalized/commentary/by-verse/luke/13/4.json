@@ -4,6 +4,31 @@
   "verseNumber": 4,
   "entries": [
     {
+      "id": "catena-luke-2133-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.13.4",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 13:1–5",
+      "excerpt": "Again, there had been eighteen others crushed to death by the falling of a tower, of whom He adds the same things, as it follows, Or those eighteen upon whom the tower of Siloam fell and slew them, think ye that they were sinners above all men that dwell in Jerusalem? I tell you, Nay, For he does not punish all in this life, giving them a time meet for repentance. Nor however does he reserve all for future punishment, lest men should deny His providence.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.13.4:c7aa9dfd:0"
+      ]
+    },
+    {
       "id": "catena-luke-2128-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.13.4",
@@ -19,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.13.4:503cd275:0"
       ]
     },
     {
@@ -30,24 +62,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 13:1–5",
       "excerpt": "And herein he shews that He permitted them to suffer such things, that the heirs of the kingdom yet living might be dismayed by the dangers of others. “What then,” you will say, “is this man punished, that I might become better?” Nay, but he is punished for his own crimes, and hence arises an opportunity of salvation to those who see it.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2133-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.13.4",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 13:1–5",
-      "excerpt": "Again, there had been eighteen others crushed to death by the falling of a tower, of whom He adds the same things, as it follows, Or those eighteen upon whom the tower of Siloam fell and slew them, think ye that they were sinners above all men that dwell in Jerusalem? I tell you, Nay, For he does not punish all in this life, giving them a time meet for repentance. Nor however does he reserve all for future punishment, lest men should deny His providence.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -112,14 +126,14 @@
       ]
     },
     {
-      "id": "catena-luke-2132-v4",
+      "id": "catena-luke-2136-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.13.4",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 13:1–5",
-      "excerpt": "But because they repented not in the fortieth year of our Lord’s Passion, the Romans coming, (whom Pilate represented, as belonging to their nation,) and beginning from Galilee, (whence our Lord’s preaching had begun,) utterly destroyed that wicked nation, and defiled with human blood not only the courts of the temples, where they were wont to offer sacrifies, but also the inner parts of the doors, (where there was no entrance to the Galileans.)",
+      "excerpt": "For Pilate, who is interpreted, “The mouth of the hammerer,” signifies the devil ever ready to strike. The blood expresses sin, the sacrifices good actions. Pilate then mingles the blood of the Galilæans with their sacrifices when the devil stains the alms and other good works of the faithful either by carnal indulgence, or by courting the praise of men, or any other defilement. Those men of Jerusalem also who were crushed by the falling of the tower, signify that the Jews who refuse to repent will perish within their own walls. Nor without meaning is the number eighteen given, (which number…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -130,14 +144,14 @@
       ]
     },
     {
-      "id": "catena-luke-2136-v4",
+      "id": "catena-luke-2132-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.13.4",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 13:1–5",
-      "excerpt": "For Pilate, who is interpreted, “The mouth of the hammerer,” signifies the devil ever ready to strike. The blood expresses sin, the sacrifices good actions. Pilate then mingles the blood of the Galilæans with their sacrifices when the devil stains the alms and other good works of the faithful either by carnal indulgence, or by courting the praise of men, or any other defilement. Those men of Jerusalem also who were crushed by the falling of the tower, signify that the Jews who refuse to repent will perish within their own walls. Nor without meaning is the number eighteen given, (which number…",
+      "excerpt": "But because they repented not in the fortieth year of our Lord’s Passion, the Romans coming, (whom Pilate represented, as belonging to their nation,) and beginning from Galilee, (whence our Lord’s preaching had begun,) utterly destroyed that wicked nation, and defiled with human blood not only the courts of the temples, where they were wont to offer sacrifies, but also the inner parts of the doors, (where there was no entrance to the Galileans.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -181,7 +195,66 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.13.4:12e5972d:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.13.4:697ab172:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 13:4",
+      "excerpt": "Just as those eighteen upon whom the tower in Siloam fell, and killed them. Do you think that they were worse debtors than all the men who live in Jerusalem? No, I tell you, but unless you repent, you will all likewise perish. And these Jerusalemites, like those Galileans, were not the only sinners, but they were punished to serve as a warning to the rest. Those who were crushed by the fall of the tower predict that all Jews who refuse to repent will perish with their cities. The number eighteen is not without reason, which in Greek is represented by ι and η, that is, the same letters with which the name Jesus begins. For they indicate that they especially deserved to be condemned for preferring to reject rather than accept the name of the Savior. Mystically, however, the tower of Siloam is such as the Psalmist sings: Thou hast led me because thou hast become my hope, a tower of strength in the face of the enemy (Psalm 60). For the very name Siloam, which is interpreted as \"sent,\" where the man blind from birth received light, clearly signifies him who says: I am the light of the world (John 12). And again: And he who sent me is with me (John 8). Concerning whose fall, under the metaphor of a stone, it is said elsewhere: Everyone who falls on that stone will be broken to pieces. But on whom it falls, it will grind him to powder (Luke 20). Otherwise: each of us must build a tower of virtues after having first calculated the costs, lest he be mocked by passers-by if he cannot finish it. This tower will stand firm if properly built. But if erected in pride, lacking a solid foundation, it will fall upon the one who built it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.13.4"
+    },
+    {
+      "id": "hcf:bede:luke.13.4:aa1340e3:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 13:4",
+      "excerpt": "Those men of Jerusalem also who were crushed by the falling of the tower, signify that the Jews who refuse to repent will perish within their own walls. Nor without meaning is the number eighteen given, (which number among the Greeks is made up of Ι and Η, that is, of the same letters with which the name of Jesus begins.) And it signifies that the Jews were chiefly to perish, because they would not receive the name of the Saviour. That tower represents Him who is the tower of strength. And this is rightly in Siloam, which is interpreted, \"sent;\" for it signifies Him who, sent by the Father, came into the world, and who shall grind to powder all on whom He falls.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.13.4"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.13.4:014688ce:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 13:4",
+      "excerpt": "The tower that fell in Siloam was a foreshadowing of what would later happen to that people. By the example of the few who perished then, it instructed many that they too would suffer great evil. For the tower served as a prefiguration of the entire city, and those eighteen people who perished — of the entire nation. Indeed, when the city fell to Titus, the whole people, obstinate in unbelief, perished along with it. This should be a lesson for us in all daily occurrences. If some fall while we remain without trials, this should not serve as grounds for complete carelessness, as though we remain without trials because we are righteous; on the contrary, we ought to be all the more instructed, for they are punished so that we might improve; and if we do not correct ourselves, our woe will be greater.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.13.4"
     },
     {
       "id": "catena-luke-2126-v4",

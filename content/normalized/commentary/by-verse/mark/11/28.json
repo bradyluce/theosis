@@ -4,24 +4,6 @@
   "verseNumber": 28,
   "entries": [
     {
-      "id": "catena-mark-0948-v28",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.11.28",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 11:27–33",
-      "excerpt": "And indeed, when they say, By what authority doest thou these things, they doubt its being the power of God, and wish it to be understood that what He did was the devil's work. When they add also, Who gave thee this authority, they evidently deny that He is the Son of God, since they believe that He works miracles, not by His own but by another's power.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0950-v28",
       "relation": "verse",
       "targetVerseId": "kjva:mark.11.28",
@@ -58,21 +40,28 @@
       ]
     },
     {
-      "id": "catena-mark-0947-v28",
+      "id": "catena-mark-0948-v28",
       "relation": "verse",
       "targetVerseId": "kjva:mark.11.28",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 11:27–33",
-      "excerpt": "They were angry with the Lord, for having cast out of the temple those who had made it a place of merchandize, and therefore they come up to Him, to question and tempt Him. Wherefore it is said: And they come again to Jerusalem: and as he was walking in the temple, there come to him the Chief Priests, and the Scribes, and the elders, and say unto him, By what authority doest thou these things? and who gave thee authority to do these things? As if they had said, Who art thou that doest these things? Dost thou make thyself a doctor, and ordain thyself Chief Priest?",
+      "excerpt": "And indeed, when they say, By what authority doest thou these things, they doubt its being the power of God, and wish it to be understood that what He did was the devil's work. When they add also, Who gave thee this authority, they evidently deny that He is the Son of God, since they believe that He works miracles, not by His own but by another's power.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.11.28:6d351300:1"
       ]
     },
     {
@@ -91,7 +80,83 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.11.28:481411d7:0"
       ]
+    },
+    {
+      "id": "catena-mark-0947-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.11.28",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 11:27–33",
+      "excerpt": "They were angry with the Lord, for having cast out of the temple those who had made it a place of merchandize, and therefore they come up to Him, to question and tempt Him. Wherefore it is said: And they come again to Jerusalem: and as he was walking in the temple, there come to him the Chief Priests, and the Scribes, and the elders, and say unto him, By what authority doest thou these things? and who gave thee authority to do these things? As if they had said, Who art thou that doest these things? Dost thou make thyself a doctor, and ordain thyself Chief Priest?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.11.28:f8da588f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 11:28",
+      "excerpt": "Enraged that Christ had driven the money-changers out of the temple, they come to Him with the question: \"By what authority do You do these things?\" They were, as it were, saying to Him reproachfully: \"Who are You to do this? Were You appointed as a teacher? Were You ordained as a high priest?\" They said this trying to put Him in a difficult position, so as to trap Him. If He had said, \"I do this by My own authority,\" they would have stoned Him as one opposed to God, and if He had said, \"By the authority of God,\" then they could have drawn the people away from Him, since He claimed to be God. But the Lord poses a question to them about John, not without reason and not with any cunning. But since John had testified about Him, He asks the malicious Jews about John, so that if they acknowledged John as a messenger of God, they would be compelled to accept John's testimony about Christ as well. And since they could not give any answer, He, in order to humble them even more, says: \"Neither will I tell you.\" He did not say, \"I do not know what to answer you,\" but \"Neither will I tell you,\" that is, since you act with malice, I do not deem you worthy of an answer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.11.28"
+    },
+    {
+      "id": "hcf:bede:mark.11.28:e91dc27d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 11:28",
+      "excerpt": "And when he was walking in the temple, the chief priests, and the scribes, and the elders came to him and said to him: \"By what authority do you do these things? And who gave you this authority to do these things?\" In various ways they raise the same calumny as before, when they said: \"He casts out demons by Beelzebub, the prince of demons.\" For when they say, \"By what authority do you do these things?\" they doubt the power of God, and want it to be understood that what he does is by the power of the devil. Also adding: \"Who gave you this authority?\" most openly they deny the Son of God, whom they think performs signs not by his own power, but by that of others.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.11.28"
+    },
+    {
+      "id": "hcf:augustine:mark.11.28:f89222a2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractate-on-john-2-9",
+      "title": "TRACTATE ON JOHN 2.9 on mark 11:28",
+      "excerpt": "Fearing a stoning, but fearing more an admission of the truth, they answered the truth with a lie, reminiscent of the Scripture: \"injustice has lied within herself.\" For they said, \"We know not.\" And because they had shut themselves up against him, by asserting that they did not know what they knew, the Lord did not open up to them because they did not knock. For it has been said, \"Knock and it will be opened to you.\" But they not only had not knocked that it might be opened, but by their denial they barricaded the door itself against themselves. And the Lord said to them, \"Neither do I tell you by what authority I do these things.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-john-2-9",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.11.28"
     },
     {
       "id": "catena-mark-0951-v28",

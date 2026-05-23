@@ -4,6 +4,24 @@
   "verseNumber": 31,
   "entries": [
     {
+      "id": "catena-matt-3506",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.24.31",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 24:31",
+      "excerpt": "That the Lord calls His elect by His Angels pertains to the honour of the elect; and Paul also says “that they shall be caught into the clouds;” 1 Thes 4:17 that is, the Angels shall gather together those that have risen, and when they are gathered together, the clouds shall receive them.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-3501",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.24.31",
@@ -22,17 +40,42 @@
       ]
     },
     {
-      "id": "catena-matt-3506",
+      "id": "catena-matt-3504",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.24.31",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 24:31",
-      "excerpt": "That the Lord calls His elect by His Angels pertains to the honour of the elect; and Paul also says “that they shall be caught into the clouds;” 1 Thes 4:17 that is, the Angels shall gather together those that have risen, and when they are gathered together, the clouds shall receive them.",
+      "excerpt": "Some of little discernment think, that only those who shall then be found in the body shall be gathered together, but it is better to say that the Angels of Christ shall then gather together not only all who from the coming of Christ to the end of the world have been called and chosen, but all from the foundation of the world, who like Abraham have seen the day of Christ and rejoiced therein. marg. note: [John 8:56] And that He here means not only those that shall be found in the body, but those also who have quitted the body, the following words shew, “from one end of heaven to the other,”…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 85,
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.24.31:d68230bc:0"
+      ]
+    },
+    {
+      "id": "catena-matt-3502",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.24.31",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 24:31",
+      "excerpt": "It is written in Numbers, that the Priests shall summon by the sound of the trumpet from the four winds those who are of the camp of Israel Num 10:3, and it is in allusion to this that Christ speaks here of the Angels, “And they shall gather together the elect from the four winds.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -58,39 +101,28 @@
       ]
     },
     {
-      "id": "catena-matt-3502",
+      "id": "catena-matt-3505",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.24.31",
       "topicSlugs": [],
-      "personId": "origen",
+      "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 24:31",
-      "excerpt": "It is written in Numbers, that the Priests shall summon by the sound of the trumpet from the four winds those who are of the camp of Israel Num 10:3, and it is in allusion to this that Christ speaks here of the Angels, “And they shall gather together the elect from the four winds.”",
+      "excerpt": "Or otherwise; Lest any one should suppose that they should be gathered only from the four quarters of the world, and not from the middle regions, He adds this, “And from one end of heaven to the other.” By the heights of heaven meaning the central regions of the earth, which are under the heights of heaven; and by the ends of heaven, meaning the extreme parts of the earth, where the land seems to join a very wide and distant horizon.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3504",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.24.31",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 24:31",
-      "excerpt": "Some of little discernment think, that only those who shall then be found in the body shall be gathered together, but it is better to say that the Angels of Christ shall then gather together not only all who from the coming of Christ to the end of the world have been called and chosen, but all from the foundation of the world, who like Abraham have seen the day of Christ and rejoiced therein. marg. note: [John 8:56] And that He here means not only those that shall be found in the body, but those also who have quitted the body, the following words shew, “from one end of heaven to the other,”…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.24.31:e6d1ef84:0"
       ]
     },
     {
@@ -130,22 +162,146 @@
       ]
     },
     {
-      "id": "catena-matt-3505",
+      "id": "hcf:origen:matthew.24.31:7205b2f6:1",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.24.31",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 24:31",
-      "excerpt": "Or otherwise; Lest any one should suppose that they should be gathered only from the four quarters of the world, and not from the middle regions, He adds this, “And from one end of heaven to the other.” By the heights of heaven meaning the central regions of the earth, which are under the heights of heaven; and by the ends of heaven, meaning the extreme parts of the earth, where the land seems to join a very wide and distant horizon.",
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-51",
+      "title": "COMMENTARY ON MATTHEW 51 on matthew 24:31",
+      "excerpt": "You will understand why the saints are gathered \"from the heights of the earth\" if you consider the conduct of their lives and the perfection, insofar as possible, of their dealings with others. All who lived uprightly will be gathered not simply from the earth but \"from the heights of the earth.\" After their earthly lives have ended, their conduct in the next life will raise them not simply from the highest point in heaven, as it was from the highest level of earth, but from the \"heights of the heavens\" because each and every heaven has both a beginning and a conclusion or perfection. After their exemplary lives on earth, the saints' conduct in the first heaven, once they have attained its perfection or conclusion, will elevate them still further. The same is true for the second heaven and the third heaven. It seems to me therefore that there are many heavens, each with its own initiation and perfection. It is from the beginnings and ends of these diverse heavens that God gathers his elect.\"From the heights of the heavens to their ends.\" It is also possible that the heavens here represent either the divine Scriptures or their authors, in both of which God dwells. In that case, the heights of the Scripture is its beginning, and the perfection of Scripture is its conclusion. To say that the saints will be gathered from \"the heights of the heavens\" means that they will be found from among those who live in the beginning of Scripture to those who live at its conclusion, or, if I may speak more profoundly, from the unskilled to the experts.\r\nThe angels who will be sent by the Savior to gather his elect will gather them not just with any ordinary voice but with what Scripture calls a \"great trumpet.\" It won't be an uncertain voice but one that is definite and clear so that all who hear and learn will be established on the way of perfection which leads to the Son of God.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.24.31"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.24.31:a33425d5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-76",
+      "title": "Homily on the Gospel of Matthew 76 on matthew 24:31",
+      "excerpt": "And then again, \"He will send His angels with a great trumpet, and they shall gather the elect from the four winds, from one end of Heaven to the other.\"\r\n\r\nBut when thou hast heard of this, consider the punishment of them that remain. For neither shall they suffer that former penalty only, but this too. And as above He said, that they should say, \"Blessed is He that cometh in the name of the Lord,\" so here, that they shall mourn. For since He had spoken unto them of grievous wars, that they might learn, that together with the fearful things here, the torments there also await them, He brings them in mourning and separated from the elect, and consigned to hell; by this again rousing the disciples, and indicating from how many evils they should be delivered, and how many good things they shall enjoy.\r\n\r\nAnd why now doth He call them by angels, if He comes thus openly? To honor them in this way also. But Paul saith, that they \"shall be caught up in clouds.\" And He said this also, when He was speaking concerning a resurrection. \"For the Lord Himself,\" it is said, \"shall descend from Heaven with a shout, with the voice of an archangel.\" So that when risen again, the angels shall gather them together, when gathered together the clouds shall catch them up; and all these things are done in a moment, in an instant. For it is not that He abiding above calleth them, but He Himself cometh with the sound of a trumpet. And what mean the trumpets and the sound? They are for arousing, for gladness, to set forth the amazing nature of the things then doing, for grief to them that are left.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.24.31"
+    },
+    {
+      "id": "hcf:hcf-apollinaris-of-laodicea:matthew.24.31:b0bf24b5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apollinaris-of-laodicea",
+      "workId": "hcf:work:hcf-apollinaris-of-laodicea:fragment-127",
+      "title": "FRAGMENT 127 on matthew 24:31",
+      "excerpt": "By saying that the Son of man will send his angels, he demonstrates that the Son of man is God. For they are God's angels, and to send them is solely God's prerogative. The saying \"from one end of the heavens to the other\" teaches us that the extremes of earth and heaven are the same. Hence it is necessary to believe in Christ and not to be deceived as though the smallest part of earth, situated in the midst of the heavens, was surpassed by their infinite greatness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-127",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c382"
+      ],
+      "targetVerseId": "kjva:matthew.24.31"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:matthew.24.31:e85209e6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:apostolic-constitutions-book-vii-section-2-xxxii",
+      "title": "Apostolic Constitutions (Book VII), Section 2, XXXII on matthew 24:31",
+      "excerpt": "For in the last days false prophets shall be multiplied, and such as corrupt the word; and the sheep shall be changed into wolves, and love into hatred: for through the abounding of iniquity the love of many shall wax cold. For men shall hate, and persecute, and betray one another. And then shall appear the deceiver of the world, the enemy of the truth, the prince of lies, [2 Thessalonians 2:3-12] whom the Lord Jesus \"shall destroy with the spirit of His mouth, who takes away the wicked with His lips; and many shall be offended at Him. But they that endure to the end, the same shall be saved. And then shall appear the sign of the Son of man in heaven;\" [Isaiah 11:4; Matthew 24:1-51] and afterwards shall be the voice of a trumpet by the archangel; and in that interval shall be the revival of those that were asleep. And then shall the Lord come, and all His saints with Him, with a great concussion above the clouds, with the angels of His power, [Matthew 16:27] in the throne of His kingdom, to condemn the devil, the deceiver of the world, and to render to every one according to his deeds. \"Then shall the wicked go away into everlasting punishment, but the righteous shall go into life eternal,\" [Matthew 25:46] to inherit those things \"which eye has not seen, nor ear heard, nor have entered into the heart of man, such things as God has prepared for them that love Him;\" [1 Corinthians 2:9] and they shall rejoice in the kingdom of God, which is in Christ Jesus.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:matthew.24.31"
+    },
+    {
+      "id": "hcf:hcf-didache:matthew.24.31:1498cf40:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-didache",
+      "workId": "hcf:work:hcf-didache:the-didache-chapter-16",
+      "title": "The Didache, Chapter 16 on matthew 24:31",
+      "excerpt": "Watch for your life's sake. Let not your lamps be quenched, nor your loins unloosed; but be ye ready, for ye know not the hour in which our Lord cometh. But often shall ye come together, seeking the things which are befitting to your souls: for the whole time of your faith will not profit you, if ye be not made perfect in the last time. For in the last days false prophets and corrupters shall be multiplied, and the sheep shall be turned into wolves, and love shall be turned into hate; for when lawlessness increaseth, they shall hate and persecute and betray one another, and then shall appear the world-deceiver as Son of God, and shall do signs and wonders, and the earth shall be delivered into his hands, and he shall do iniquitous things which have never yet come to pass since the beginning. Then shall the creation of men come into the fire of trial, and many shall be made to stumble and shall perish; but they that endure in their faith shall be saved from under the curse itself. And then shall appear the signs of the truth; first, the sign of an out-spreading in heaven; then the sign of the sound of the trumpet; and the third, the resurrection of the dead; yet not of all, but as it is said: The Lord shall come and all His saints with Him. Then shall the world see the Lord coming upon the clouds of heaven.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:matthew.24.31",
+      "provenance": [
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hcf-didache:matthew.24.31:e7fa0327:0"
       ]
+    },
+    {
+      "id": "hcf:jerome:matthew.24.31:b7e7decb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 24:31",
+      "excerpt": "(Ver. 31.) And He will send His angels with a trumpet and a loud voice; and they will gather His chosen ones from the four winds, from the highest heavens to their ends. The Apostle speaks of this trumpet in I Corinthians XV; I Thessalonians IV: and we read in the Apocalypse of John (Apocalypse VIII): and in the Old Testament (Numbers X), we are instructed to make trumpets of gold, silver, and bronze, so that the lofty mysteries of doctrine may resound.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.24.31"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.24.31:309eb919:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 24:31",
+      "excerpt": "He will send the angels to gather together the saints and those risen from the dead, so that they can meet Him in the clouds. He also honors them by calling them with angels. And if Paul says that they will be caught up in the clouds (1Thess. 4:17), this is not contradictory. For when they have been gathered together by the angels, the clouds will snatch them up. There will be the trumpet, to cause the greater consternation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.24.31"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.24.31:1934324b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 24:31",
+      "excerpt": "Then he will come and he shall send his angels with a trumpet and a great voice. Here he treats of the gathering of the saints; and he sets forth three things. First, the ministers; secondly, those gathered; thirdly, from where they are gathered. The ministers are the angels, as is found in Psalm 102:21: His ministers who do his will. But he says, with a great voice and a trumpet. In the resurrection a threefold power will operate. First, the divine power; secondarily, the power of Christ's humanity, because his resurrection is the cause of our resurrection, as the Apostle says in 1 Corinthians 15:22: As in Adam all have died, so also in Christ all shall be made alive. Likewise, the angelic power will operate there for certain preparatory things, namely, for gathering the dust. And he touches on these three things. The angelic power, when he says, he shall send his angels; the power of God, when he says, with a trumpet; the power of his humanity in that he says, and with a great voice. Of this it is said in John 5:25: All who hear the voice of the Son of God shall live. And that voice must be great, because he shall give to his voice the voice of power, Psalm 67:34. By the trumpet the divinity is well signified, because the voice of a trumpet is greater than the human voice; Apocalypse 11:12: And they heard a great voice from heaven saying to them, come up hither. And shortly after: and the seventh angel sounded the trumpet, and there were great voices in heaven. And note that the trumpet is quite fitting, because in Numbers 10:2 the Lord commanded Moses to make two trumpets; and they sounded the trumpets for assembly, for feasts, for battle, and for the moving of the camp. And so it will be at the judgment; because there will be an assembly, i.e., a gathering of all the saints, because the wicked shall not rise in the judgment, nor sinners in the assembly of the just, Psalm 1:5. Likewise, there will then be an everlasting feast. Likewise, there will be battle against the wicked, as is found in Zechariah 14:14: But Judah also shall fight against Jerusalem. Likewise, there will be a moving of the camp, because the saints will be transferred to the life of the saints; Zechariah 2:11: And many nations shall be joined to the Lord in that day. Likewise, some are now gathered, but not all; but then all will be gathered; below 25:32: All nations shall be gathered before him. Here only the elect are gathered, because they alone are gathered to reign with him; Psalm 49:5: Gather together his saints to him. Hence he says, and they shall gather together his elect. But from where will they be gathered? From the four winds of heaven, from the heights of heaven to the ends thereof. The winds of heaven are distinguished by the four parts of the world. From the east comes the subsolanus; from the west the favonius; from the north the boreas; from the south the auster; and all other winds are contained under these. Hence from the four winds of heaven, i.e., from all parts of the world. There follows, from the heights of heaven to the ends thereof. This can be expounded in two ways. Origen says thus: they shall be gathered. Someone might say that this gathering is only of the living and not of the dead; which he removes by showing that the dead also will be gathered; therefore he says, from the heights of heaven etc. You know that the saints ascend into the heavens, and some are lower, some higher, because according to the measure of merits will be the measure of reward. Hence this is what Augustine says, that from the four winds refers to the bodies, and from the heights of heaven refers to the souls. Remigius says thus, and it is in the Gloss: I shall gather etc. Someone might believe that the gathering is only from the extremities of the earth; but what about the middle of the earth? Hence to the ends thereof. And he means that the gathering will be not only from the extremities of the earth, but from heaven, i.e., from the middle of the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.24.31"
     }
   ]
 }

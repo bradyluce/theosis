@@ -37,6 +37,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.11.14:2b3ae9dd:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0917-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.11.14",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 11:11–14",
+      "excerpt": "Just in the same way as He speaks parables, so also His deeds are parables; therefore He comes hungry to seek fruit off the fig tree, and though He knew the time of figs was not yet, He condemns it to perpetual barrenness, that He might shew that the Jewish people could not be saved through the leaves, that is, the words of righteousness which it had, without fruit, that is, good works, but should be cut down and cast into the fire. Hungering therefore, that is, desiring the salvation of mankind, He saw the fig tree, which is, the Jewish people, having leaves, or, the words of the Law and the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -76,24 +101,6 @@
       ]
     },
     {
-      "id": "catena-mark-0917-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.11.14",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 11:11–14",
-      "excerpt": "Just in the same way as He speaks parables, so also His deeds are parables; therefore He comes hungry to seek fruit off the fig tree, and though He knew the time of figs was not yet, He condemns it to perpetual barrenness, that He might shew that the Jewish people could not be saved through the leaves, that is, the words of righteousness which it had, without fruit, that is, good works, but should be cut down and cast into the fire. Hungering therefore, that is, desiring the salvation of mankind, He saw the fig tree, which is, the Jewish people, having leaves, or, the words of the Law and the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0914-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.11.14",
@@ -110,6 +117,75 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.11.14:b06420c6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 11:14",
+      "excerpt": "But let us also examine the account of the fig tree, for here something seemingly strange and harsh appears. First, Jesus was hungry early in the morning; second, He demands fruit when the season for figs had not yet come; and furthermore, He punishes an insensible tree. For in what He says and does here, there was a special providence. Until now Jesus had often worked miracles, but only for the benefit of people. But the disciples had not yet seen Him do harm to anyone. Now, in order to show the disciples that He can also punish, and that, if He wished, He could in a single hour destroy those intending to crucify Him, He manifests His power upon an insensible tree. And the miracle was truly great in that a tree so full of sap withered at once, for the fig tree is more full of sap than almost all other trees. That He hungered early in the morning — this He permitted His flesh to experience by a special providence; and He seeks fruit prematurely on the fig tree for the purpose, as I said above, of showing the disciples that He can also punish. And this fig tree was at the same time a figure of the Jewish synagogue, which had only leaves, that is, the Law, which provided nothing but a shadow, while they bore no fruit at all. But Jesus hungered for their salvation. He says: \"My food is to do the will of Him who sent Me\" (John 4:34), and this will of God consists in converting sinners. Since, however, the synagogue had no fruit, it was cursed and withered, having (no longer among it) neither prophets nor teachers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.11.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.11.14:3c819460:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 11:14",
+      "excerpt": "Wishing to show His disciples that if He chose He could in a moment exterminate those who were about to crucify Him. In a mystical sense, however, the Lord entered into the temple, but came out of it again, to show that He left it desolate, and open to the spoiler.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.11.14"
+    },
+    {
+      "id": "hcf:cyril-of-jerusalem:mark.11.14:54c8faea:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-jerusalem",
+      "workId": "hcf:work:cyril-of-jerusalem:catechetical-lecture-13-18",
+      "title": "Catechetical Lecture 13:18 on mark 11:14",
+      "excerpt": "Remember at the time of the sin of Adam and Eve they clothed themselves—with what? Fig leaves. That was their first act after the fall. So now Jesus is making the same figure of the fig tree the very last of his wondrous signs. Just as he was headed toward the cross, he cursed the fig tree—not every fig tree, but that one alone for its symbolic significance—saying: \"May no one ever eat fruit of you again.\" In this way the curse laid upon Adam and Eve was being reversed. For they had clothed themselves with fig leaves.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c386"
+      ],
+      "targetVerseId": "kjva:mark.11.14"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:mark.11.14:8149a60c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON on mark 11:14",
+      "excerpt": "The owner of the fig tree did not obey the law but spurned it. Our Lord came and found that there was [nothing] left on it, so he cursed it, lest its owner eat from it again, since he had left [nothing] for the orphan and widows.… He cursed the fig tree and it shriveled up to show them the power of his divinity, so that by means of [this] action near at hand which they could see, they might believe that which was to come. Because [Jerusalem] had not accepted the law, he cursed [the fig tree], so that there might no longer be fruit on it, according to its law.… He sought fruit from the fig tree at an inopportune time, that it might be a symbol of one who had deceitfully withheld the fruits of the law at the opportune time. For, if he had sought fruit from it at the opportune time, no one would have known that there was a figurative meaning embedded here. Instead of the fig tree, therefore, he showed that it was Jerusalem that he was reproaching, for he had sought love in her, but she had despised the fruit of repentance.… Why, therefore, did he who was good and gentle, who everywhere revealed great things out of little things, and completion out of imperfection, why did he command the fig tree to dry up? For he healed the sufferings of everyone, changed water to wine, made an abundance from a little bread, opened the eyes of the blind, cleansed lepers and raised the dead to life. But this fig tree alone did he cause to wither. It was because the time of his suffering was near, and, lest it be thought that he was captured because he was unable to free himself, he cursed the fig tree, that it might be a sign for his friends, and a miracle for his enemies. Thus, the disciples would be strengthened by his word, and others would be amazed at his power. Because he did all things well, and [the time] for him to suffer was near, it might be thought, as indeed it was, that he was captured because he possessed no power. He showed in advance, therefore, by means of a living plant which he caused to wither, that he would have been able to destroy his crucifiers with a word.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.11.14"
     },
     {
       "id": "catena-mark-0916-v14",

@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.23.19:046ba355:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.23.19:723a8f4b:0"
       ]
     },
     {
@@ -73,6 +87,38 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.23.19:0494c254:0"
+      ]
+    },
+    {
+      "id": "catena-matt-3330-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.19",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:16–22",
+      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.19:9145cf98:0"
       ]
     },
     {
@@ -94,22 +140,72 @@
       ]
     },
     {
-      "id": "catena-matt-3330-v19",
+      "id": "hcf:jerome:matthew.23.19:2afc6f81:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.19",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:19",
+      "excerpt": "(Verse 16 onwards) Woe to you, blind guides, who say, 'Whoever swears by the temple is nothing, but whoever swears by the gold of the temple is bound by his oath.' Fools and blind! For which is greater, the gold or the temple that sanctifies the gold? And, 'Whoever swears by the altar is nothing, but whoever swears by the gift that is on it is obligated.' Blind! For which is greater, the gift or the altar that sanctifies the gift? Therefore, whoever swears on the altar, swears on it and on all things that are above it. And whoever swears in the temple, swears in it and in him who dwells in it. And whoever swears in heaven, swears on the throne of God and on him who sits on it. Above, as it seemed to us, we have explained what the tradition of the Pharisees meant, saying: Whatever gift is from me will benefit you: now the double tradition of the Pharisees, enticing to one occasion of greed, is condemned, so that they may be proved to do everything for gain and not for the fear of God. For just as in the phylacteries and fringes, by enlarged expectations of holiness, it was trying to capture glory, and was seeking gains through the opportunity of glory, so another tradition found fault with the teachers of impiety. If anyone were to swear in the temple during a dispute, or in some argument, or in a doubtful case, and later be convicted of lying, they were not held accountable for the crime. But if they were to swear on gold and money, which was offered to the priests in the temple, they were immediately compelled to fulfill what they had sworn. Again: If anyone swore upon the altar, no one held him guilty of perjury; but if he swore falsely on a gift, or on offerings, that is, on victims and on fine flour and on the rest, which are offered to God upon the altar, these were most diligently sought after. Therefore, the Lord reproached them both for foolishness and deceit, because the temple is much greater than the gold that is sanctified by the temple, and the altar is greater than the offerings that are sanctified by the altar. But they did it not out of fear of God, but out of greed for riches.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.19"
+    },
+    {
+      "id": "hcf:origen:matthew.23.19:3b98b63d:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:16–22",
-      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "workId": "hcf:work:origen:commentary-on-matthew-18-21",
+      "title": "COMMENTARY ON MATTHEW 18.21 on matthew 23:19",
+      "excerpt": "Anyone who thinks that his own almsgiving, his own fasting, his own psalms and prayers are in themselves great and who, without good judgment, blesses them and does not reflect that it is just from such a heart that his almsgiving or psalms or prayers or fasting are offered—such a man is blind. For indeed his heart is the altar that sanctifies his offering which is the heart of the world. The heart and the conscience of such a man \"do not feel remorse but have trust in God,\" because his own heart has been rightly formed. He does not rely on his gifts as such or the words of his prayers or of his psalms—although they may seem well composed and chosen from the Scriptures—but on the heart rightly formed. Whoever places his own witness on the altar, that is, his own conscience and the center of his heart, such a man swears by the altar, embracing everything which is contained in it. One who swears according to what we attest to by the temple, that is, \"through the whole sense of Scriptures,\" such a man seems to swear according to the word and the will of God which is contained in it. Such a man in this sense swears upon the temple (upon all the Scriptures) and upon the altar (upon the whole heart), that is, an understanding of the sense of the whole of the Scriptures and upon the whole heart. The temple is the glory of God, which \"we see as in a mirror darkly.\" The heavens, however, are above the temple of God, in which sits the throne of God, on which we may look \"with our face uncovered\" when he comes.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.23.19"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.19:74e72964:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:19",
+      "excerpt": "He calls them blind for not wanting to teach what was right, but instead valuing what was of lesser importance, and giving second place to that which was worthy of honor. For they valued the gold in the temple, the images of the Cherubim and the golden urn, more highly than they did the temple itself. Therefore they taught the people that it was of no consequence to swear by the temple, and instead they taught them to swear by the gold which is in the temple. This gold, however, was precious precisely because it was in the temple. And the Pharisees said that the gifts placed on the altar were more valuable than the altar itself. So the Pharisees even taught that if someone swore by the golden vessel, or the ox, or the sheep brought for sacrifice, and then broke his oath, he was sentenced to pay an equal amount. The Pharisees put a higher value on the gift upon the altar because of the profit they derived from sacrifices. But if some one swore by the temple and then broke his oath, he was absolved [and owed nothing, the Pharisees would say], as it was not possible to build [and pay] anything equal to the temple. And so the oath by the temple was considered to be of lesser consequence because of the Pharisees' love of money. Under the Old Covenant, Christ does not permit the gift to be greater than the altar, but for us it is just the opposite: the altar is sanctified by the gifts, for the loaves are changed by divine grace into the very Body of the Lord Himself. Therefore the altar is sanctified by them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.19"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.19:d9b0461c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:19",
+      "excerpt": "Then he sets forth the refutation: ye blind, which is greater, the gift or the altar that sanctifies the gift? For the gift is not sanctified except by the altar.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.19"
     },
     {
       "id": "catena-matt-3325-v19",

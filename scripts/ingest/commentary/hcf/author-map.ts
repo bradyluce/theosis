@@ -32,6 +32,7 @@ export type HcfAuthorMapping = {
 // is "if it already has a canonical Theosis ID, surface HCF entries under
 // that same ID so the library Person card aggregates everything."
 export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
+  "Alcuin of York": { personId: "alcuin", canonicalName: "Alcuin of York" },
   "Ambrose of Milan": { personId: "ambrose-of-milan", canonicalName: "Ambrose of Milan" },
   "Anselm of Canterbury": { personId: "anselm-canterbury", canonicalName: "Anselm of Canterbury" },
   "Aphrahat the Persian Sage": { personId: "aphrahat", canonicalName: "Aphrahat" },
@@ -39,6 +40,10 @@ export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Athanasius of Alexandria": { personId: "athanasius-the-great", canonicalName: "Athanasius the Great" },
   "Athenagoras of Athens": { personId: "athenagoras-of-athens", canonicalName: "Athenagoras of Athens" },
   "Augustine of Hippo": { personId: "augustine", canonicalName: "Augustine of Hippo" },
+  // Both HCF dirs collapse to one Person — Prudentius is usually cited
+  // without the full Roman name. No existing Theosis seed Person, so
+  // pick a canonical slug here and unify under it.
+  "Aurelius Prudentius Clemens": { personId: "prudentius", canonicalName: "Prudentius" },
   "Basil of Caesarea": { personId: "basil-the-great", canonicalName: "Basil the Great" },
   "Bede": { personId: "bede", canonicalName: "Venerable Bede" },
   "Clement of Alexandria": { personId: "clement-of-alexandria", canonicalName: "Clement of Alexandria" },
@@ -47,6 +52,7 @@ export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Cyril of Alexandria": { personId: "cyril-of-alexandria", canonicalName: "Cyril of Alexandria" },
   "Cyril of Jerusalem": { personId: "cyril-of-jerusalem", canonicalName: "Cyril of Jerusalem" },
   "Ephrem the Syrian": { personId: "ephraim-the-syrian", canonicalName: "Ephraim the Syrian" },
+  "Epiphanius of Salamis": { personId: "epiphanius-salamis", canonicalName: "Epiphanius of Salamis" },
   "Eusebius of Caesarea": { personId: "eusebius-caesarea", canonicalName: "Eusebius of Caesarea" },
   "Glossa Ordinaria": { personId: "gloss-ordinaria", canonicalName: "Glossa Ordinaria" },
   "Gregory of Nazianzus": { personId: "gregory-of-nazianzus", canonicalName: "Gregory the Theologian" },
@@ -57,6 +63,7 @@ export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Hippolytus of Rome": { personId: "hippolytus-of-rome", canonicalName: "Hippolytus of Rome" },
   "Ignatius of Antioch": { personId: "ignatius-of-antioch", canonicalName: "Ignatius of Antioch" },
   "Irenaeus": { personId: "irenaeus-of-lyons", canonicalName: "Irenaeus of Lyons" },
+  "Isidore of Pelusium": { personId: "isidore-pelusium", canonicalName: "Isidore of Pelusium" },
   "Isidore of Seville": { personId: "isidore-seville", canonicalName: "Isidore of Seville" },
   "Jerome": { personId: "jerome", canonicalName: "Jerome" },
   "John Chrysostom": { personId: "john-chrysostom", canonicalName: "John Chrysostom" },
@@ -73,11 +80,18 @@ export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Papias of Hierapolis": { personId: "papias-of-hierapolis", canonicalName: "Papias of Hierapolis" },
   "Peter Chrysologus": { personId: "peter-chrysologus", canonicalName: "Peter Chrysologus" },
   "Polycarp of Smyrna": { personId: "polycarp-of-smyrna", canonicalName: "Polycarp of Smyrna" },
+  "Prudentius": { personId: "prudentius", canonicalName: "Prudentius" },
   "Pseudo-Athanasius": { personId: "pseudo-athanasius", canonicalName: "Pseudo-Athanasius" },
+  "Pseudo-Augustine": { personId: "pseudo-augustine", canonicalName: "Pseudo-Augustine" },
   "Pseudo-Chrysostom": { personId: "pseudo-chrysostom", canonicalName: "Pseudo-Chrysostom" },
   "Pseudo-Dionysius the Areopagite": { personId: "pseudo-dionysius", canonicalName: "Pseudo-Dionysius the Areopagite" },
   "Pseudo-Jerome": { personId: "pseudo-jerome", canonicalName: "Pseudo-Jerome" },
   "Rabanus Maurus": { personId: "rabanus-maurus", canonicalName: "Rabanus Maurus" },
+  // HCF's "Remigius of Rheims" content in the Catena tradition is
+  // overwhelmingly Remigius of Auxerre (9th c.) — the Catena's standard
+  // "Remig." attribution. The 5th-c. Apostle of the Franks isn't a
+  // commentator. Map to the existing Theosis ID.
+  "Remigius of Rheims": { personId: "remigius-auxerre", canonicalName: "Remigius of Auxerre" },
   "Tatian the Assyrian": { personId: "tatian-the-syrian", canonicalName: "Tatian the Syrian" },
   "Tertullian": { personId: "tertullian", canonicalName: "Tertullian" },
   "Theodoret of Cyrus": { personId: "theodoret-of-cyrrhus", canonicalName: "Theodoret of Cyrus" },
@@ -85,6 +99,7 @@ export const EXPLICIT_AUTHOR_MAP: Record<string, HcfAuthorMapping> = {
   "Theophilus of Antioch": { personId: "theophilus-of-antioch", canonicalName: "Theophilus of Antioch" },
   "Theophylact of Ohrid": { personId: "theophylact-of-ohrid", canonicalName: "Theophylact of Ohrid" },
   "Thomas Aquinas": { personId: "thomas-aquinas", canonicalName: "Thomas Aquinas" },
+  "Titus of Bostra": { personId: "titus-bostra", canonicalName: "Titus of Bostra" },
 };
 
 // Top-level HCF dirs that are Bible-book cross-references rather than

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.22:3c6103d8:0"
       ]
     },
     {
@@ -37,7 +44,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.22:80753624:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.22:98407ac1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:22",
+      "excerpt": "And the Lord taught reprovingly, not with flattery, as the Pharisees did: He urged people to do good, and threatened the disobedient with punishment.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.22"
+    },
+    {
+      "id": "hcf:bede:mark.1.22:977e35b7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:22",
+      "excerpt": "And they were astonished at his doctrine, etc. For they taught the people those things that were written in Moses and the prophets: but Jesus, as God and the Lord of Moses himself, out of the freedom of his will, either added those things which seemed less in the law, or changing, preached to the people, as we read in Matthew: It was said to the ancients, but I say to you (Matt. V).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.22"
+    },
+    {
+      "id": "hcf:methodius-of-olympus:mark.1.22:ffe806cf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "methodius-of-olympus",
+      "workId": "hcf:work:methodius-of-olympus:methodius-oration-concerning-simeon-and-anna",
+      "title": "Methodius Oration Concerning Simeon and Anna on mark 1:22",
+      "excerpt": "Hence the aged Simeon, putting off the weakness of the flesh, and putting on the strength of hope, in the face of the law hastened to receive the Minister of the law, the Teacher",
+      "takeaway": "",
+      "sourceId": "hcf:source:ccel-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c311"
+      ],
+      "targetVerseId": "kjva:mark.1.22"
     },
     {
       "id": "catena-mark-0078-v22",
@@ -55,6 +120,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.22:141a6489:0"
       ]
     }
   ]

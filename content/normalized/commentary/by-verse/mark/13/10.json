@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1039-v10",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.13.10",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:9–13",
-      "excerpt": "The Lord shews how Jerusalem and the province of Judæa merited the infliction of such calamities, in the following words: But take heed to yourselves: for they shall deliver you up to councils; and in the synagogues ye shall be beaten. For the greatest cause of destruction to the Jewish people was, that after slaying the Saviour, they also tormented the heralds of His name and faith with wicked cruelty.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.13.10:ed683bdb:0"
       ]
     },
     {
@@ -48,6 +37,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:9–13",
       "excerpt": "Ecclesiastical historians testify that this was fulfilled, for they relate that all the Apostles long before the destruction of the province of Judæa were dispersed to preach the Gospel over the whole world, except James the son of Zebedee and James the brother of our Lord, who had before shed their blood in Judæa for the word of the Lord. Since then the Lord knew that the hearts of the disciples would be saddened by the fall and destruction of their nation, He relieves them by this consolation, to let them know that even after the casting away of the Jews, companions in their joy and…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.10:ae1eb269:1"
+      ]
+    },
+    {
+      "id": "catena-mark-1039-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.10",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:9–13",
+      "excerpt": "The Lord shews how Jerusalem and the province of Judæa merited the infliction of such calamities, in the following words: But take heed to yourselves: for they shall deliver you up to councils; and in the synagogues ye shall be beaten. For the greatest cause of destruction to the Jewish people was, that after slaying the Saviour, they also tormented the heralds of His name and faith with wicked cruelty.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -112,6 +126,24 @@
       ]
     },
     {
+      "id": "catena-mark-1047-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.10",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:9–13",
+      "excerpt": "And this He says, that on hearing it, they might prepare themselves to bear persecutions and ills with greater patience. Then He brings them consolation, saying, And ye shall be hated of all men for my name's sake; for the being hated for Christ's sake is a sufficient reason for suffering persecutions patiently, for it is not the punishment, but the cause, that makes the martyr. Again, that which follows is no small comfort amidst persecution: But he that shall endure unto the end, the same shall be saved.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1045-v10",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.10",
@@ -130,22 +162,73 @@
       ]
     },
     {
-      "id": "catena-mark-1047-v10",
+      "id": "hcf:bede:mark.13.10:d98fc258:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.10",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:10",
+      "excerpt": "And the Gospel of God must first be preached to all nations. This is confirmed by Ecclesiastical histories, in which it is reported that all the apostles, long before the destruction of the province of Judea, were dispersed throughout the entire world to preach the Gospel, except James son of Zebedee, and James the brother of the Lord, who were the first in Judea to shed their blood for the word of the Gospel. Therefore, since the Lord knew that the hearts of the disciples would be troubled by the destruction and loss of their nation, He alleviates them with this consolation, so that they might know that even with the Jews being cast off, they would still have companions for the joy and heavenly kingdom, indeed gathering many more from all the nations of the world than would perish from Judea.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.10"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.10:914463dd:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:9–13",
-      "excerpt": "And this He says, that on hearing it, they might prepare themselves to bear persecutions and ills with greater patience. Then He brings them consolation, saying, And ye shall be hated of all men for my name's sake; for the being hated for Christ's sake is a sufficient reason for suffering persecutions patiently, for it is not the punishment, but the cause, that makes the martyr. Again, that which follows is no small comfort amidst persecution: But he that shall endure unto the end, the same shall be saved.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:10",
+      "excerpt": "And lest the disciples should think that troubles and sorrows would hinder the preaching of the Gospel, the Lord says that \"the Gospel must first be preached among all nations,\" and only then would Jerusalem be given over to desolation. And that the Gospel was indeed preached everywhere before the destruction of Jerusalem, hear Paul: \"Their voice has gone out into all the earth,\" he says, \"and their words to the ends of the world\" (Rom. 10:18). And this circumstance served for the greater condemnation of the Jews — namely, that the preaching had spread everywhere even before the destruction of Jerusalem. For seeing that this preaching had spread throughout the whole world in a short time, they should have recognized in it the power of God, repented, and thus been delivered from their calamities. But they did not come to their senses; therefore they will be subjected to all the greater condemnation.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.10"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.10:15ec76a4:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 13:10",
+      "excerpt": "Then, that they might not think that their preaching should be impeded by troubles and dangers, He adds: And the Gospel must first be published among all nations.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.13.10"
+    },
+    {
+      "id": "hcf:origen:mark.13.10:add5f4e8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-39",
+      "title": "COMMENTARY ON MATTHEW 39 on mark 13:10",
+      "excerpt": "It is evident that the gospel of the kingdom has not yet been preached in all the world. It is not reported to have been preached among all the Ethiopians, especially among those beyond the river, nor among the Serae, nor in the East. What are we to say of the Britons, or of the Germans along the ocean, or of the barbarians, Dacians, Samaritans and Scythians, the greatest part of whom have not yet heard the word of the gospel, but who will certainly hear it by the time of the end? If any one is minded to say rashly that the gospel of the kingdom has already been preached in all the world as a testimony to all nations, he will consequently be constrained to say that the end has already come! That would be a most rash statement indicating a lack of understanding.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.13.10"
     },
     {
       "id": "catena-mark-1043-v10",

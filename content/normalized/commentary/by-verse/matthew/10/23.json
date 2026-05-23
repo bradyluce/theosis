@@ -41,6 +41,24 @@
       ]
     },
     {
+      "id": "catena-matt-1573",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.10.23",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 10:23",
+      "excerpt": "But that they should not say, What then if we fly from persecution, and again they cast us out thence whither we have fled? To remove this fear, He says, “Verily, I say unto you, ye shall not have completed, &c.” that is, ye shall not have made the circuit of Palestine and return to Me, before I shall take you to Me.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-1570",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.23",
@@ -56,53 +74,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.10.23:738735af:0"
       ]
     },
     {
-      "id": "catena-matt-1571",
+      "id": "catena-matt-1578",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.23",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 10:23",
-      "excerpt": "Not that the Saviour was unable to protect His disciples, does He here bid them fly, and Himself give them an example of it, but He instructed man’s weakness, that he should not presume to tempt God, when he has anything that he can do for himself, but should shun all evils.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1572",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.10.23",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 10:23",
-      "excerpt": "He might have suffered them to lay violent hands upon themselves, that they might not fall into the hands of their persecutors. Therefore if He neither commanded nor allowed this mode of departure from this world to His own, for whom He Himself had promised that He would prepare an eternal mansion; whatever instances may be brought by the Gentiles who know not God, it is clear that this is not lawful for those who believe one true God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1573",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.10.23",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 10:23",
-      "excerpt": "But that they should not say, What then if we fly from persecution, and again they cast us out thence whither we have fled? To remove this fear, He says, “Verily, I say unto you, ye shall not have completed, &c.” that is, ye shall not have made the circuit of Palestine and return to Me, before I shall take you to Me.",
+      "excerpt": "Spiritually, we may say; When they shall persecute you in one book or one passage of Scripture, let us flee to other volumes, for however contentious the adversary may be, protection will come from the Saviour before the victory is yielded to the enemy.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -128,17 +117,42 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.10.23:20f823ca:0"
       ]
     },
     {
-      "id": "catena-matt-1578",
+      "id": "catena-matt-1572",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.23",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 10:23",
-      "excerpt": "Spiritually, we may say; When they shall persecute you in one book or one passage of Scripture, let us flee to other volumes, for however contentious the adversary may be, protection will come from the Saviour before the victory is yielded to the enemy.",
+      "excerpt": "He might have suffered them to lay violent hands upon themselves, that they might not fall into the hands of their persecutors. Therefore if He neither commanded nor allowed this mode of departure from this world to His own, for whom He Himself had promised that He would prepare an eternal mansion; whatever instances may be brought by the Gentiles who know not God, it is clear that this is not lawful for those who believe one true God.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1571",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.10.23",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 10:23",
+      "excerpt": "Not that the Saviour was unable to protect His disciples, does He here bid them fly, and Himself give them an example of it, but He instructed man’s weakness, that he should not presume to tempt God, when he has anything that he can do for himself, but should shun all evils.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -182,6 +196,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.10.23:e2d099d6:0"
       ]
     },
     {
@@ -200,7 +221,219 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.10.23:0a9219cc:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.10.23:54da3692:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-34",
+      "title": "Homily on the Gospel of Matthew 34 on matthew 10:23",
+      "excerpt": "Having spoken of those fearful and horrible things, enough to melt very adamant, which after His cross, and resurrection, and assumption, were to befall them, He directs again His discourse to what was of more tranquil character, allowing those whom He is training to recover breath, and affording them full security. For He did not at all command them, when persecuted, to close with the enemy, but to fly. That is, it being so far but a beginning, and a prelude, He gave His discourse a very condescending turn. For not now of the ensuing persecutions is He speaking, but of those before the cross and the passion. And this He showed by saying, \"Ye shall not have gone over the cities of Israel, till the Son of Man be come.\" That is, lest they should say, \"What then, if when persecuted we flee, and there again they overtake us, and drive us out?\" - to destroy this fear, He saith, \"Ye shall not have gone round Palestine first, but I will straightway come upon you.\" And see how here again He doeth not away with the terrors, but stands by them in their perils. For He said not, \"I will snatch you out, and will put an end to the persecutions;\" but what? \"Ye shall not have gone over the cities of Israel, till the Son of Man be come.\" Yea, for it sufficed for their consolation, simply to see Him.\r\n\r\nBut do thou observe, I pray thee, how He doth not on every occasion leave all to grace, but requires something also to be contributed on their part. \"For if ye fear,\" saith He, \"flee,\" for this He signified by saying, \"flee ye,\" and \"fear not.\" And He did not command them to flee at first, but when persecuted to withdraw; neither is it a great distance that He allows them, but so much as to go about the cities of Israel.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.10.23:47043506:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:23",
+      "excerpt": "(Verse 23, 24.) But when they persecute you in this city, flee to another. Amen I say to you, you will not have finished going through the cities of Israel until the Son of Man comes. A disciple is not above his teacher, nor a servant above his master. It is enough for the disciple to be like his teacher, and the servant like his master. This refers to that time when the apostles were sent for preaching, to whom it is specifically said: Do not go into the way of the gentiles, and do not enter the cities of the Samaritans (Above, same.), they should not fear persecution, but should avoid it. Indeed, we see (or rather, we saw) that in the beginning, believers did this: when the persecution of Jerusalem arose, they were scattered throughout all Judea, so that the occasion of tribulation would become the seedbed of the Gospel. However, we can say spiritually: when they persecuted us in one city, that is, in one book of Scripture or testimony, we fled to other cities, that is, to other volumes. Although the persecutor may be contentious, the Savior's protection will come before victory is granted to our adversaries.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.10.23:3ed50a78:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-1-10-23",
+      "title": "COMMENTARY ON MATTHEW 1.10.23 on matthew 10:23",
+      "excerpt": "This should be read as referring to the time when the apostles were sent forth to preach. It was properly said to them: \"Go nowhere among the Gentiles, and enter no town of the Samaritans,\" because they should not fear persecution but should turn away from it. We see that this is what the believers did in the first days. When persecution began in Jerusalem, they scattered throughout all Judea. Their time of trial thus became a seedbed for the good news.On the spiritual level we propose this symbolic interpretation. When we are persecuted in one city—that is, in one book or passage in Scripture—we will flee to other cities, that is, to other books. No matter how menacing the persecutor may be, he must come before the judgment seat of the Savior. Victory is not to be granted to our opponents before we have done this.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-1-10-23",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.10.23:1bb6d3ac:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-10-14",
+      "title": "Commentary on Matthew 10.14 on matthew 10:23",
+      "excerpt": "He then tells them to flee out of one city into another. This means that his message would first go beyond the borders of Judea and pass into Greece. Then the messengers would be harassed and the various apostles would suffer among the cities of Greece. At last the message would be established among all the Gentiles. He also wished to indicate that the Gentiles would believe in the apostles' preaching but that Israel alone would not believe until his own return. For this reason he said, \"You will not have gone through all the towns of Israel before the Son of Man comes,\" that is, after the conversion of all of the Gentiles. Israel will be left, and when he comes in splendor, it will fill out the number of the holy and be established in the church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.10.23:5b24aef8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 10:23",
+      "excerpt": "Otherwise; He exhorts to fly from place to place; for His preaching driven from Judæa, first passed into Greece; then, wearied with divers sufferings of the Apostles up and down the cities of Greece, it takes an abiding refuge in the rest of the Gentile world. But to show that the Gentiles would believe the preaching of the Apostles, but that the remnant of Israel should only believe at His second coming, He adds, Ye shall not have completed the cities of Israel; i. e. After the fulness of the Gentiles is brought in, that which remains of Israel to fill up the number of the Saints shall be called into the Church in Christ's future coming to glory.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:matthew.10.23:c30f8ebe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:fragment-120",
+      "title": "FRAGMENT 120 on matthew 10:23",
+      "excerpt": "Jesus commands his disciples to flee from one town to the next, and from that one to another. In saying this he is not telling his disciples to be cowardly. He is telling them not to cast themselves into dangers and die at once, for that would be a loss to those who otherwise will benefit from the teaching.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-120",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:tertullian:matthew.10.23:57f17137:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-flight-in-persecution",
+      "title": "On Flight in Persecution on matthew 10:23",
+      "excerpt": "For so a certain individual, but a fugitive likewise has chosen to maintain, and others have done the same who are unwilling to understand the meaning of that declaration of the Lord, that they may use it as a cloak for their cowardice, although it has had its persons as well as its times and reasons to which it specially applies. \"When they begin,\" He says, \"to persecute you, flee from city to city,\" We maintain that this belongs specially to the persons of the apostles, and to their times and circumstances, as the following sentences will show, which are suitable only to the apostles: \"Do not go into the way of the Gentiles, and into a city of the Samaritans do not enter: but go rather to the lost sheep of the house of Israel.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:tertullian:matthew.10.23:bb9a0c24:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:to-his-wife-book-i",
+      "title": "To His Wife Book I on matthew 10:23",
+      "excerpt": "In fact, in that it is written, \"To marry is better than to burn,\" what, pray, is the nature of this \"good\" which is (only) commended by comparison with \"evil,\" so that the reason why\" marrying\" is more good is (merely) that \"burning\" is less? Nay, but how far better is it neither to marry nor to burn? Why, even in persecutions it is better to take advantage of the permission granted, and \"flee from town to town,\" than, when apprehended and racked, to deny (the faith). And therefore more blessed are they who have strength to depart (this life) in blessed confession of their testimony.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:tertullian:matthew.10.23:e3cbc8d1:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-flight-in-persecution",
+      "title": "On Flight in Persecution on matthew 10:23",
+      "excerpt": "Neither were they to flee to any city as if by stealth, but as if everywhere about to proclaim their message; and for this, everywhere about to undergo persecutions, until they should fulfil their teaching. Accordingly the Saviour says, \"Ye will not go over all the cities of Israel.\" So the command to flee was restricted to the limits of Judea.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:hcf-theodore-stratelates:matthew.10.23:7228434d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-stratelates",
+      "workId": "hcf:work:hcf-theodore-stratelates:fragment-68",
+      "title": "FRAGMENT 68 on matthew 10:23",
+      "excerpt": "His coming is not described as a manifest one at the end of our life. His coming will appear as spiritual guidance and help for those who are persecuted from time to time for the sake of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-68",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c319"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.10.23:c0d33f48:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:23",
+      "excerpt": "\"But when they persecute you in this city, flee ye into another: for verily I say unto you, Ye shall not have gone through the cities of Israel, till the Son of Man be come.\" The fearful things spoken of above, such as \"They will hand you over\" and \"You will be hated,\" concerned those things which would take place after the Ascension. What is spoken of now concerns that which would take place before the Cross. \"You will not be persecuted through all the cities of Israel before I shall come to you.\" He commands them to flee from their persecutors. For it is of the devil for a man to throw himself into manifest danger and thus become the cause of condemnation to those who would slay him and the detriment of those whom he was about to benefit by his preaching. \"Till the Son of Man be come\" - do not understand by this the second coming, but rather, His drawing together with them and the comfort that He would give them yet before the Cross. For when they had been sent out and had preached, they again returned to Christ and were together with Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.10.23:ba0521d0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:23",
+      "excerpt": "When they persecute you in one town, flee to another. In the beginning of this section he mentioned the dangers, when he said, behold, I send you... Here he teaches how they should behave. This is divided into two parts: first, he teaches them to beware of evils and dangers as to prudence; secondly, to maintain equanimity in dangers (v. 26).\r\n\r\nIn regard to the first: first, he teaches them to avoid bodily danger; secondly, spiritual (v. 24).\r\n\r\nHe says, therefore: I have said that he who perseveres to the end will be saved, but that is no reason to expose yourselves to danger; rather, when they persecute you in one town, flee to another. This is expedient for the weak, lest they fail by exposing themselves carelessly: \"A wise man is cautious and turns away from evil, but a fool throws off restraint and is careless\" (Pr 14:16). Likewise, it is for the perfect; and if not for their sake, then for the salvation of others, as it says in Philippians (1:24): \"But to remain in the flesh is necessary for your sake.\" The Lord showed this when he fled into Egypt on account of Herod, as is recorded above (2:14). The apostles also did this, as in Acts (8:1). But John (10:12) seems not to agree with this: \"The hireling flees and leaves the sheep.\" Therefore, it seems that this refers not to them but to hirelings. Augustine says that persecution threatens either one person, and then he should depart and leave others through whom salvation can be achieved; or it threatens the whole Church and then it is necessary for the entire Church to flee to safer places, as has already happened, or some should flee and others hold their ground, or the shepherd remain with his flock. He continues: I say to you, you will not have gone through all the towns of Israel, before the Son of man comes.\r\n\r\nThen he answers a tacit objection, for they could say: You are sending us to Judea; if they chase us out, where shall we go? I say, granting that they expel you from one city, flee to another, and you will not be able to traverse the cities of Judea, before the Son of man comes, i.e., until he rises from the dead, and then he will send you to the gentiles, as it says below (28:19): \"Go, teach all nations.\" Hilary explains it another way, namely, that he is speaking of the second mission, when he says, when they persecute you..., i.e., flee from the Jews to the gentiles, as it says in Acts (13:46): \"It was necessary that the word of God be spoken first to you. Since you thrust it from you and judge yourselves unworthy, behold we turn to the gentiles.\" Mystically in this way: When the heretics persecute you with their texts, refute them with texts; for they will not be finished, until the truth is manifested.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.10.23"
     }
   ]
 }

@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.10.41:3bf1c25c:1"
       ]
     },
     {
@@ -74,6 +81,40 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.10.41:8ef9e38f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:41",
+      "excerpt": "The disciples, still reasoning in a human manner, fell into envy, and therefore they are indignant at the two apostles. However, when? When they saw that the request of the latter was not accepted by the Lord but rejected, then they began to be indignant. As long as the Lord Himself showed preference to James and John, the other disciples, seeing this, endured it; but when those two disciples began to seek honors for themselves, the others could no longer endure it. So imperfect were they still at that time! But later we shall see how each of them yielded precedence to the other.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.41"
+    },
+    {
+      "id": "hcf:bede:mark.10.41:f2a04c69:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 10:41",
+      "excerpt": "And when the ten heard it, they began to be indignant about James and John. The ten apostles did not become indignant with the mother of the sons of Zebedee, nor did they attribute the audacity of the request to the woman, but to the sons, who, unaware of their own measure, were inflamed with excessive desire. To whom also the Lord had said: You do not know what you are asking.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.10.41"
     }
   ]
 }

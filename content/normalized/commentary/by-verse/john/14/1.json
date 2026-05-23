@@ -4,25 +4,6 @@
   "verseNumber": 1,
   "entries": [
     {
-      "id": "augustine-john-067-c14-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 14:1–3",
-      "excerpt": "Our special attention, brethren, must be earnestly turned to God, in order that we may be able to obtain some intelligent apprehension of the words of the holy Gospel, which have just been ringing in our ears. For the Lord Jesus says: Let not your heart be troubled. Believe in God, and believe [or, believe also] in me. That they might not as men be afraid of death, and so be troubled, He comforts them by affirming Himself also to be God. Believe, He says, in God, believe also in me. For it follows as a consequence, that if you believe in God, you ought to believe also in me: which were no…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
       "id": "augustine-john-068-c14-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.1",
@@ -42,14 +23,14 @@
       ]
     },
     {
-      "id": "catena-john-1835-v1",
+      "id": "catena-john-1846-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.1",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 14:1–4",
-      "excerpt": "Our Lord consoles His disciples, who, as men, would be naturally alarmed and troubled at the idea of His death, by assuring them of His divinity: Let not your heart be troubled: ye believe in God, believe also in Me; as if they must believe in Him, if they believed in God; which would not follow, unless Christ were God. Ye are in fear for this form of a servant; let not your heart be troubled; the form of God shall raise it up.",
+      "excerpt": "But why does He go and prepare a place, if there are many mansions already? Because these are not as yet so prepared as they will be. The same mansions that He hath prepared by predestination, He prepares by operation. They are prepared already in respect of predestination; if they were not, He would have said, I will go and prepare, i. e. predestinate, a place for you; but inasmuch as they are not yet prepared in respect of operation, He says, And if I go and prepare a place for you. And now He is preparing mansions, by preparing occupants for them. Indeed, when He says, In My Father’s house…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -60,21 +41,29 @@
       ]
     },
     {
-      "id": "catena-john-1836-v1",
+      "id": "augustine-john-067-c14-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.1",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:1–4",
-      "excerpt": "Faith too in Me, and in the Father that begat Me, is more powerful than any thing that shall come upon you; and will prevail in spite of all difficulties. He shews His divinity at the same time by discerning their inward feelings: Let not your heart be troubled.",
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 14:1–3",
+      "excerpt": "Our special attention, brethren, must be earnestly turned to God, in order that we may be able to obtain some intelligent apprehension of the words of the holy Gospel, which have just been ringing in our ears. For the Lord Jesus says: Let not your heart be troubled. Believe in God, and believe [or, believe also] in me. That they might not as men be afraid of death, and so be troubled, He comforts them by affirming Himself also to be God. Believe, He says, in God, believe also in me. For it follows as a consequence, that if you believe in God, you ought to believe also in me: which were no…",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
+      "sourceId": "augustine-tractates-john-source",
       "rank": 85,
       "tags": [
-        "catena-aurea",
+        "augustine",
         "patristic",
+        "tractate",
         "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.14.1:2d551f98:1"
       ]
     },
     {
@@ -86,24 +75,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 14:1–4",
       "excerpt": "And as the disciples were afraid for themselves, when Peter, the boldest and most zealous of them, had been told, The cock shall not crow, till thou hast denied Me thrice, He adds, In My Father’s house are many mansions, by way of an assurance to them in their trouble, that they might with confidence and certainty look forward, after all their trials, to dwelling together with Christ in the presence of God. For though one man is bolder, wiser, juster, holier than another, yet no one shall be removed from that house of God, but each receive a mansion suited to his deserts. The penny indeed…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1839-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:1–4",
-      "excerpt": "And thus God will be all in all; that is, since God is love, love will bring it to pass, that what each has, will be common to all. That which one loves in another is one’s own, though one have it not one’s self. And then there will be no envy at superior grace, for in all hearts will reign the unity of love.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -132,14 +103,39 @@
       ]
     },
     {
-      "id": "catena-john-1842-v1",
+      "id": "catena-john-1835-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.1",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 14:1–4",
-      "excerpt": "Or thus: Our Lord having said above to Peter, Whither I go, thou canst not follow Me now, but thou shalt follow Me afterwards, that they might not think that this promise was made to Peter only, He says, In My Father’s house are many mansions; i. e. You shall be admitted into that place, as well as Peter, for it contains abundance of mansions, which are ever ready to receive you: If it were not so, I would have told you: I go to prepare a place for you.",
+      "excerpt": "Our Lord consoles His disciples, who, as men, would be naturally alarmed and troubled at the idea of His death, by assuring them of His divinity: Let not your heart be troubled: ye believe in God, believe also in Me; as if they must believe in Him, if they believed in God; which would not follow, unless Christ were God. Ye are in fear for this form of a servant; let not your heart be troubled; the form of God shall raise it up.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.14.1:019c5695:0"
+      ]
+    },
+    {
+      "id": "catena-john-1839-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:1–4",
+      "excerpt": "And thus God will be all in all; that is, since God is love, love will bring it to pass, that what each has, will be common to all. That which one loves in another is one’s own, though one have it not one’s self. And then there will be no envy at superior grace, for in all hearts will reign the unity of love.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -168,6 +164,24 @@
       ]
     },
     {
+      "id": "catena-john-1842-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:1–4",
+      "excerpt": "Or thus: Our Lord having said above to Peter, Whither I go, thou canst not follow Me now, but thou shalt follow Me afterwards, that they might not think that this promise was made to Peter only, He says, In My Father’s house are many mansions; i. e. You shall be admitted into that place, as well as Peter, for it contains abundance of mansions, which are ever ready to receive you: If it were not so, I would have told you: I go to prepare a place for you.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-1844-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.1",
@@ -186,14 +200,14 @@
       ]
     },
     {
-      "id": "catena-john-1846-v1",
+      "id": "catena-john-1836-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.1",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 14:1–4",
-      "excerpt": "But why does He go and prepare a place, if there are many mansions already? Because these are not as yet so prepared as they will be. The same mansions that He hath prepared by predestination, He prepares by operation. They are prepared already in respect of predestination; if they were not, He would have said, I will go and prepare, i. e. predestinate, a place for you; but inasmuch as they are not yet prepared in respect of operation, He says, And if I go and prepare a place for you. And now He is preparing mansions, by preparing occupants for them. Indeed, when He says, In My Father’s house…",
+      "excerpt": "Faith too in Me, and in the Father that begat Me, is more powerful than any thing that shall come upon you; and will prevail in spite of all difficulties. He shews His divinity at the same time by discerning their inward feelings: Let not your heart be troubled.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -201,6 +215,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.14.1:9696b99b:0"
       ]
     },
     {
@@ -292,6 +313,125 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.14.1:86aa613d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 14:1",
+      "excerpt": "When the apostles heard concerning the chief Peter that he would deny, naturally confusion fell upon them. Therefore the Lord comforts them and calms the confusion of their hearts. For if the chief and fervent Peter would deny three times before the rooster crows, obviously they should expect some great circumstance.\r\n\r\nThen, the disciples as if said: \"How can we not be troubled, when such difficulties will come upon us?\" He answers: \"Believe in God, and believe in Me,\" and all your difficulties will be resolved, and the trouble will be calmed through faith in God and in Me. Therefore He also said to them \"let not your heart be troubled,\" so that by this very thing they would be assured that He sees the state of their heart and knows the hidden trouble, that He is God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.14.1"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.1:f7565ada:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:1",
+      "excerpt": "Ye believe in God, believe also in Me. \r\n\r\nHe is making an able soldier out of one who but now was a coward, and while the disciples were smarting with the anxieties of fear He bids them take to themselves the terrible power of faith. For thus are we safe, and not otherwise, according surely to the song of the Psalmist: The Lord is my illumination and my saviour; whom shall I fear? The Lord is the shield of my life; of tvhom shall I be afraid? For if the all-powerful God fights for us and shields us, who could ever have power to harm us? And who will by any chance advance to such a height of power as to keep the elect in subjection to him, and to force them to submit to the evil designs of his perverse imagination? Or who could take by his spear and lead captive those that wear the panoply of God? Faith therefore is a weapon whose blade is stout and broad, that drives away all cowardice that may spring from expectation of coming suffering, and that renders the darts of evil-doers utterly void of effect and utterly profitless of success in their temptations. And this being the nature of faith, we must further notice another point: Christ bade them believe not in God alone, but also on Himself, not implying thereby that He is at all different from the One Who is in His nature God, I mean as regards identity of essence; but that to believe in God and to suppose that the province of faith must be wholly bound up in this one phrase, is rather a peculiar characteristic of the Jewish imagination, whereas the inclusion of the name of the Son within the compass of faith in God indicates the acceptance of an injunction of evangelic preaching. For those at least who are rightly minded must believe in God the Father, and not merely in the Son, but also in the fact of His Incarnation, and in the Holy Ghost. For the Persons of the Holy and Consubstantial Trinity are distinguished both by difference of names and by the peculiar qualities and special offices of each: for the Father is Father and not Son, the Son again is Son and not Father, and the Holy Ghost is the Spirit peculiar to the Godhead. And yet the Trinity is summed up into a common Unity of Essence, so that our Creed gives us not three Gods, but one God. Still, I maintain that we must preserve accurately the definitions of our faith, not content with saying \"We believe in God,\" but fully explaining our confession, and attaching to each Person the same measure of glory. For in our minds there should be no difference as to the intensity of our faith: our faith in the Father is not to be greater than our faith in the Son, or even than our faith in the Holy Ghost. But one and the same is the extent and the manner of our confession, uttered in regard to each of the three Persons with the same measure of faith; in such a way that herein again the Holy Trinity may appear in Unity of nature, so that the glory that encircles It may be seen in unchallenged perfection, and our souls may display our faith in the Father and in the Son, even in His Incarnation, and in the Holy Ghost. And I believe no man, if he were wise, would make any distinction between the Word of God and the Temple formed from the virgin, at least as regards the question of sonship; for there is One Lord, Jesus Christ, according to the saying of Paul. But let him who would sever into two sons Him Who is One and One alone, know surely that he is denying the faith. The inspired Paul, for instance, in working out very excellently and accurately the doctrine on this point, would have us confess our belief not simply in Christ as the Only-begotten, but also in Him as made like unto us, that is, made man, and as having both died and risen again from the dead. For what does he say? The word is nigh thee, in thy mouth, and in thy heart: that is, the word of faith, which we preach: that if thou shalt say with thy mouth, Jesus is Lord, and shalt believe in thy heart that God raised Him from the dead, thou shalt be saved: for with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation. Now if we believe on the Son as having risen again, who was He that died so that He might rise again? But it is evident that He is reckoned to have died according to the flesh. For His own body was imprisoned in the bonds of death, and restored to life again: for it was a body that shared in our natural life, though containing in itself in full perfection that peculiar indwelling power so mysteriously united to it, namely an energy capable of bestowing life. Whensoever therefore any one shall sever these two natures, and in separating the flesh from Him Who corporeally dwelt therein shall dare to speak of two sons, let him know that he is believing on the flesh alone. For the Divine Scriptures teach us to believe on Him Who was crucified and died and rose again from the dead, as being no other than the Word of God Himself; not so much in regard to identity of essence, for the body of Christ is body and not Word, though it be the body of the Word; but rather in respect of veritable sonship. And if any one were to think that herein we are not speaking with all possible accuracy, he would have to come forward and show us the Word Who is from God dead as regards His Divine nature, a thing which it is impossible or rather impious even to conceive.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.1"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.1:47c3aad9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:1",
+      "excerpt": "Let not your heart be troubled.\r\n\r\nBy saying that Peter's courage will fail him so utterly that he will deny his Master thrice, and will suffer so sad a downfall in one single night, He almost seems by the overwhelming weight of His words to arouse in the disciples the extremity of terror at the dangers before them. Whence it may very well have happened that the other disciples began at once to reason with one another, saying: \"What can be the nature, the extent, or the exceeding heaviness of that dread of coming troubles, and of that temptation so irresistible as to attack the chief among us and overcome him, not once only, but many times by the same assault, and that within so brief a space of time? Surely, who among us will escape a yet worse plight, or how can any other among us withstand such an attack, when Peter wavers and yields as of necessity to the grievous weight of the trials that beset him? Vainly it seems have we endured toils for the sake of our duty in following Him: our efforts are ending only in the exhaustion of our vital powers, though they seemed to hold out to us a prospect of life with God.\" There is surely nothing improbable in supposing that the disciples were thus reasoning in their inmost thoughts: and since it was needful to restore again their drooping spirits, He introduces as it were the necessary antidote to the reasonings and fears that His words had aroused, and bids them arm themselves with a calm and untroubled spirit, saying to them: Let not your heart be troubled. Notice, however, in how guarded a manner He promises them the forgiveness of |232 their coming feebleness of spirit. He does not say plainly: \"I will forgive you even in spite of your weakness,\" or. \"I will be present with you none the less, although you deny Me and forsake Me;\" His object therein being, not to completely remove their fears of shame, or completely take away their suspicions of failure, lest He should seem to make out their error to be a light matter and teach them to regard as of no account the blame they would incur in their denial of Him. But in bidding them not be troubled, He placed them as it were on the borderland betwixt hope and fear: so that, if they fell into weakness and suffering in their human frailty, the hope of His clemency might help them to recovery; while the fear of stumbling might urge them to fall but seldom, since they had not yet been endowed with the power never to fail at all, not having as yet been clothed with the power from above, from on high, I mean the grace that comes through the Spirit. He bids them therefore not to be troubled, teaching them at once that it was fitting that those who were prepared for the conflict, and ready to enter on the struggles for the sake of the glory that is on high, should be altogether superior to feelings of cowardice: for an untroubled mind is a great help towards a courageous temper: at the same time, with somewhat obscure and not very distinct intimations, yet certainly, sowing the seed of a germinant hope of forgiveness, if ever it should really happen to them in their human weakness to fall away into cowardice. For a mind that is not yet stablished by the grace that comes from above is timid and easily upset, and very apt to be disturbed. For this reason also surely the very wise Paul prays for certain to whom he is writing, in the words: And the peace of Christ, which passeth all understanding, shall guard your hearts. For this is in reality to be untroubled in heart.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.1"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.1:331b5462:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:1",
+      "excerpt": "In commanding them not to be troubled, Jesus placed them, as it were, on the threshold between hope and fear. This way, if they fell into weakness and suffering in their human frailty, the hope of his mercy might help them to recover. On the other hand, the fear of stumbling might urge them to fall less often inasmuch as they had not yet been endowed with the power from above, from on high—I mean the grace that comes through the Spirit that always keeps them from failure.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.1"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.1:9e98cf0c:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:1",
+      "excerpt": "Here, Jesus makes an able soldier out of one who recently was a coward. And while the disciples were suffering with the anxieties of fear, he commands them to cling to the intense power of faith.… Faith is a weapon whose blade is stout and broad; it drives away all cowardice that may spring from the expectation of coming suffering and renders the darts of evildoers utterly void of effect and makes their temptations utterly profitless.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.1"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.14.1:b6bb9fad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-9-19",
+      "title": "ON THE TRINITY 9.19 on john 14:1",
+      "excerpt": "Our Lord speaks in words deliberately chosen, so that whatever he claims for the Father, he signifies in modest language to be appropriate to himself. Take for example the command, \"Believe in God, and believe in me.\" He is identified with God in honor. How, I ask you, can he be separated from his nature? He says, \"Believe in me also,\" just as he said \"Believe in God.\" Do not the words \"in me\" signify his nature? Separate the two natures, but then you must also separate the two beliefs. If it is life that we should believe in God without Christ, strip Christ of the name and qualities of God. But if perfect life is given to those who believe in God only when they believe in Christ also, let the careful reader ponder the meaning of the saying, \"Believe in God, and believe in me also,\" for these words, uniting faith in him with faith in God, unite his nature to God's. He enjoins first of all the duty of belief in God but adds to it the command that we should believe in himself also, which implies that he is God, since those who believe in God must also believe in him. Yet he excludes the suggestion of a unity contrary to religion, for the exhortation \"Believe in God, believe in me also\" forbids us to think of him as alone in solitude.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-9-19",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.14.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.14.1:fcedebfd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 14:1",
+      "excerpt": "Above (ch 13), our Lord taught his disciples by example, here he consoles them by his words. First, they are encouraged in many ways by what he says; secondly, what he has said is explained (ch 16). Concerning the first, we should note that there were two things which could trouble the disciples. One was near, that Christ would soon be leaving them; the second was in the future, and was the hardships they would undergo. First, Christ consoles them over his leaving; secondly, over their future hardships (ch 15).\r\n\r\nHe does two things concerning the first: first, he consoles them from their own point of view, as those who will be left; secondly, from his own point of view, as the one leaving (v 27). He does three things about the first: first, he says that he is going to the Father; secondly, he promises them the gift of the Holy Spirit (v 15); thirdly, he promises that he will also be with them (v 18). He does two things about the first: first, he mentions that he is going to the Father; secondly, he brings in the way he would go (v 4). He does three things about the first: first, he expels their anxieties; secondly, he refers to his power (v 1b); thirdly, he adds a promise (v 2a).\r\n\r\nIn regard to the first, note that the disciples could have been disturbed by what our Lord said about the betrayal of Judas, Peter's denial, and his own going away. Indeed, each of these did trouble them and make them sad: \"Thou hast made the land to quake,\" that is, the hearts of the disciples, \"thou hast rent it open\" (Ps 60:2). Therefore our Lord, wishing to soothe their sorrow, said: Let not your hearts be troubled.\r\n\r\nIn Acts (1:1) we read: \"Jesus began to do and teach.\" Yet above (13:21) it says that Jesus \"was troubled in spirit.\" How can he tell his disciples not to be troubled when he himself was troubled? I answer that he did not teach the opposite of what he did. It was stated above that he was troubled in spirit, not that his spirit was troubled. Here he is not forbidding them to be troubled in spirit, but he is forbidding that their hearts, that is, their spirits, be troubled. For there is a troubled state which arises from reason; this is to be praised and is not forbidden: \"For godly grief produces a repentance that leads to salvation\" (2 Cor 7:10). Yet there is a different grief or troubled state of the reason itself; this is not laudable because it draws the reason from its proper course; this is forbidden: \"The just person will not be troubled for the Lord puts his hand under him\" (Ps 37:24). For one who always possesses God cannot be disturbed.\r\n\r\nAccordingly, our Lord refers to the power of his divinity, saying, you believe in God, believe also in me. Here he presupposes one thing and commands another. He presupposes their faith in God, saying, you believe in God: he had already taught them about this: \"For whoever would draw near to God must believe that he exists\" (Heb 11:6). What he commands is that they believe in him, saying, believe also in me. For if you believe in God, and since I am God, then you should believe in me. And this follows whether the word God stands for the divine essence, since the Son is God, or whether it stands for the person of the Father. For no one can believe in the Father unless he believes in the Son: \"He who does not honor the Son does not honor the Father\" (5:23).\r\n\r\nThe fact that he says, believe also in me, indicates that he is truly God; for although we are allowed to believe a human being (homini) or a creature, we ought to believe in God alone (in Deum). Therefore, we must believe in Christ as we believe in God. \"We are in him who is true, in his Son Jesus Christ. This is the true God and eternal life\" (1 Jn 5:20); \"This is the work of God, that you believe in him whom he has sent\" (6:29).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.14.1"
     }
   ]
 }

@@ -23,6 +23,24 @@
       ]
     },
     {
+      "id": "catena-john-1971-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.15.6",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 15:4–7",
+      "excerpt": "For then may His words be said to abide in us, when we do what He has commanded, and love what He has promised. But when His words abide in the memory, and are not found in the life, the branch is not accounted to be in the vine, because it derives no life from its root. So far as we abide in the Saviour we cannot will any thing that is foreign to our salvation. We have one will, in so far as we are in Christ, another, in so far as we are in this world. And by reason of our abode in this world, it sometimes happens that we ask for that which is not expedient, through ignorance. But never, if…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-083-c15-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.15.6",
@@ -38,24 +56,6 @@
         "augustine",
         "patristic",
         "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1963-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.15.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 15:4–7",
-      "excerpt": "Having said that they were clean through the word which He had spoken unto them, He now teaches them that they must do their part.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
         "john"
       ]
     },
@@ -96,24 +96,6 @@
       ]
     },
     {
-      "id": "catena-john-1967-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.15.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 15:4–7",
-      "excerpt": "The Son then contributes no less than the Father to the help of the disciples. The Father changeth, but the Son keepeth them in Him, which is that which makes the branches fruitful. And again, the cleansing is attributed to the Son also, and the abiding in the root to the Father who begat the root. (c. 2.). It is a great loss to be able to do nothing, but He goes on to say more than this: If a man abide not in Me, he is cast forth as a branch, i. e. shall not benefit by the care of the husbandman, and withereth, i. e. shall lose all that it desires from the root, all that supports its life,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1969-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.15.6",
@@ -122,6 +104,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 15:4–7",
       "excerpt": "For the branches of the vine are as contemptible, if they abide not in the vine, as they are glorious, if they abide. One of the two the branch must be in, either the vine, or the fire: if it is not in the vine, it will be in the fire.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.15.6:ca8fc150:0"
+      ]
+    },
+    {
+      "id": "catena-john-1967-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.15.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 15:4–7",
+      "excerpt": "The Son then contributes no less than the Father to the help of the disciples. The Father changeth, but the Son keepeth them in Him, which is that which makes the branches fruitful. And again, the cleansing is attributed to the Son also, and the abiding in the root to the Father who begat the root. (c. 2.). It is a great loss to be able to do nothing, but He goes on to say more than this: If a man abide not in Me, he is cast forth as a branch, i. e. shall not benefit by the care of the husbandman, and withereth, i. e. shall lose all that it desires from the root, all that supports its life,…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -150,14 +157,14 @@
       ]
     },
     {
-      "id": "catena-john-1971-v6",
+      "id": "catena-john-1963-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.15.6",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 15:4–7",
-      "excerpt": "For then may His words be said to abide in us, when we do what He has commanded, and love what He has promised. But when His words abide in the memory, and are not found in the life, the branch is not accounted to be in the vine, because it derives no life from its root. So far as we abide in the Saviour we cannot will any thing that is foreign to our salvation. We have one will, in so far as we are in Christ, another, in so far as we are in this world. And by reason of our abode in this world, it sometimes happens that we ask for that which is not expedient, through ignorance. But never, if…",
+      "excerpt": "Having said that they were clean through the word which He had spoken unto them, He now teaches them that they must do their part.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -201,7 +208,99 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.15.6:f600c5f9:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.15.6:68be5791:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-76",
+      "title": "Homily on the Gospel of John 76 on john 15:6",
+      "excerpt": "\"He is cast forth,\" He saith. No longer enjoying the benefit of the husbandman's hand. \"And is withered.\" That is, if he had aught of the root, he loses it; if any grace, he is stripped of this, and is bereft of the help and life which proceed from it. And what the end? \"He is cast into the fire.\" Not such he who abideth with Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.15.6"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.15.6:8218f8e2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-10",
+      "title": "Commentary on the Gospel of John, Book 10 on john 15:6",
+      "excerpt": "Our Lord Jesus Christ openly says that He has been called the Vine for this reason, and this reason only, that we may clearly understand, and not merely perceive with the eyes of the body, as by a palpable, sensible, and most visible figure, that to those who are eager to be closely |387 joined to Him, and who choose to enjoy a close union with His nature, will be added the capacity and the conditions requisite for the production of virtue and spiritual fruit-bearing; since they are evidently provided, from its source, as from the vine their mother, with a potential and an actual force. In those however who have as it were been torn away or cut off from their hold on Him, by turning to what is wrong and to conduct displeasing to God, not merely will no capacity of a fitness for virtue, or of being able to show the fruits that spring from goodness be seen, but the doom of being consumed by all-devouring fire, as by an inevitable necessity, will await them. For that which is useless for righteousness seems fit to pay the penalty, just as the withered branches will be only useful for the fire.\r\n\r\nYou would find an indisputable and true proof of what we have said, not by perusing the chapters of the saints of old, but rather by applying your attention to the study of the holy Apostles themselves. For they, by neglecting in no way love towards Christ, but abiding in Him, and considering that nothing whatever should be set before righteousness towards Him, have become known throughout the world. And they exhibited through the world the fruit of their virtue, and showing themselves a pattern of a God-loving state, as a bright image to all under the sun, they wreathed for themselves the fadeless crown of glory with God. But he, who by a few pieces of silver was entrapped into the net of destruction, I mean the base and most mercenary Judas, was cut off from the true Vine, that is Christ, and withered away in a certain sense, and lost together his position of discipleship and the quickening quality of the Spirit. For he was cast outside, according to the saying of the Saviour. For he became alienated from Christ, and was given over like rubbish to him that chastises with fire. Pertinently then does our Lord Jesus Christ set forth to His hearers the joy of heart that springs from the desire of intimate union with Him, and on the other hand place before them the |388 punishment resulting from severance, thus conceiving a twofold method of salvation. For either by an aim which looks forward to glory and life, or our dread of the chastisement by fire, we shall lay hold more earnestly, with all the strength of our mind, on intimate union with Him.\r\n\r\nBut He calls the Father Husbandman, attributing to His Divine Nature the watchful care over us, as also we have previously shown at length. For He will be found doing the work of a hand to the Husbandman, Who uses no other hand, according to His Consubstantiality both from Him, and in Him; as is really the case, and as it is in our power to see in the following way. For as a proof that all things are done by the Son, as by the hand of the Father, listen to what the Father Himself says respecting His creatures: My hand made all these things; whereas all things were made by the Son, according to the holy writings.\r\n\r\nWe must observe that the divine Paul figures darkly to us the true cutting, even though it be not that of a vine, when he says: Behold then the goodness and severity of God: toward them that fell, severity; but toward thee, goodness, if thou continue in His goodness: otherwise thou also shalt be cut off.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.15.6"
+    },
+    {
+      "id": "hcf:hcf-theodore-of-mopsuestia:john.15.6:a1adef7d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-of-mopsuestia",
+      "workId": "hcf:work:hcf-theodore-of-mopsuestia:commentary-on-john-6-15-1-6",
+      "title": "COMMENTARY ON JOHN 6.15.1-6 on john 15:6",
+      "excerpt": "The Father is like the vinedresser, for, if he sees some who do not love me, he cuts them off like fruitless branches and sends them off to the fire, but if he sees the opposite, he takes care of them so that they may bring forth even more fruit through the spiritual gifts he gives.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-john-6-15-1-6",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c428"
+      ],
+      "targetVerseId": "kjva:john.15.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.15.6:b77b9a97:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 15:6",
+      "excerpt": "And whoever does not abide will \"wither,\" that is, he loses what he had from the root, and if he received any spiritual grace, he is deprived of it and of the help and life communicated from it. And what then in the end? \"They are thrown into the fire, and they burn.\" With these same words He also gives them no small consolation, showing that those who plot against Him, such as Judas, will be burned, while they who abide in Him will bear fruit. For without the power and life-giving energy that are supplied from Him, they will be able to do nothing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.15.6"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.15.6:d79de434:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 15:6",
+      "excerpt": "1994 Here he mentions the second reason for remaining united to Christ, which is the threat of punishment, for unless we abide in him, we will not escape punishment. He mentions five things which describe this punishment. Some of these belong to the punishment of loss, that is to say, the exclusion from glory; so he says, he is cast forth. Sometimes on a natural vine we see a branch which remains by some sort of an external connection without sharing any of the sap. In this way also some remain connected to Christ only by faith, yet they do not share the sap of the vine because they do not have charity. Thus, such persons will be cast out, that is, separated from fellowship with the good.\r\n\r\nThe second punishment of loss is a withering; he says, and withers, for if such a person once took anything at all from the root, he will lose it when deprived of its help and life. Even bad Christians seem to have some kind of a freshness, but when they are separated from the saints and from Christ their dried up condition will be apparent: \"My strength is dried up like a potsherd\" (Ps 22:16).\r\n\r\nThe third punishment is association with those who are evil; he says, and he is gathered, by the reaping angels, to be with the wicked. This is a very great punishment. For if it is a great punishment to be with the wicked for only a little while, how much greater it is to be with the most evil men and devils forever: \"They will be gathered together as prisoners in a pit\" (Is 24:22); \"Gather the weeds first and bind them into bundles to be burned\" (Mt 13:30).\r\n\r\nThe fourth punishment is that of sense; he says, thrown into the fire, which is eternal: \"What will be done with the wood of the vine?... Look, it is given to the fire for fuel\" [Ez 15:2]. If the wood of the vine does not remain united to it, it is more worthless than other woods; but if it abides on the vine it is more beautiful than the others. Thus Augustine says: \"A branch is fit for two things: either the vine or the fire. If it is not on the vine, it will be in the fire.\" \"Depart from me, you cursed, into the eternal fire\" (Mt 25:41). The fifth punishment is the unending experience of fire, he says, and burned, without end: \"And they will go away into eternal punishment\" (Mt 25:46).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.15.6"
     }
   ]
 }

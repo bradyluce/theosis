@@ -40,6 +40,24 @@
       ]
     },
     {
+      "id": "catena-luke-1659-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.26",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:25–28",
+      "excerpt": "When the lawyer had answered the things contained in the law, Christ, to whom all things were known, cuts to pieces his crafty nets. For it follows, And he said to him, Thou hast answered right: this do, and thou shalt live.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1651-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.26",
@@ -48,6 +66,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:25–28",
       "excerpt": "For he was one of those who think themselves skilled in the law, and who keep the letter of the law, while they know nothing of its spirit. From a part of the law itself our Lord proves them to be ignorant of the law, shewing that at the very first the law preached the Father and the Son, and announced the sacraments of the Lord’s Incarnation; for it follows, And he answering said, Thou shall love the Lord thy God with all thy heart, and with all thy soul, and with all thy strength, and with all thy mind.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.10.26:de10773d:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1656-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.26",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:25–28",
+      "excerpt": "But if any one ask how the love of God is to be obtained, we are sure that the love of God cannot be taught. For neither did we learn to rejoice in the presence of light, or to embrace life, or to love our parents and children; much less were we taught the love of God, but a certain seminal principle was implanted in us, which has within itself the cause, that man clings to God; which principle the teaching of the divine commands is wont to cultivate diligently, to foster watchfully, and to carry on to the perfection of divine grace. For naturally we love good; we love also what is our own,…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,24 +137,6 @@
       ]
     },
     {
-      "id": "catena-luke-1656-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.26",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:25–28",
-      "excerpt": "But if any one ask how the love of God is to be obtained, we are sure that the love of God cannot be taught. For neither did we learn to rejoice in the presence of light, or to embrace life, or to love our parents and children; much less were we taught the love of God, but a certain seminal principle was implanted in us, which has within itself the cause, that man clings to God; which principle the teaching of the divine commands is wont to cultivate diligently, to foster watchfully, and to carry on to the perfection of divine grace. For naturally we love good; we love also what is our own,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1658-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.26",
@@ -120,24 +145,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:25–28",
       "excerpt": "But since it is said, Thou shalt love thy neighbour as thyself, how is he merciful in taking compassion upon another, who still, by unrighteous living, is unmerciful to himself?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1659-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.26",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:25–28",
-      "excerpt": "When the lawyer had answered the things contained in the law, Christ, to whom all things were known, cuts to pieces his crafty nets. For it follows, And he said to him, Thou hast answered right: this do, and thou shalt live.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -218,6 +225,58 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.10.26:cccf3599:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:26",
+      "excerpt": "But he said to him: What is written in the law? How do you read it? He answered, saying: You shall love the Lord your God with all your heart, and with all your soul, and with all your strength, and with all your mind, and your neighbor as yourself. As the lawyer responds, our Savior shows us the perfect path to heavenly life. To the one proposing the writings of the law about the love of God and neighbor, He says:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.26"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.10.26:75e6bf13:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:26",
+      "excerpt": "And since he tempted Him subtly, he receives no other answer than the command given by Moses; for it follows, He said unto him, What is written in the law? how readest thou?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.26"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.10.26:a95ae445:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:26",
+      "excerpt": "With these verses belongs the text that exposes those who seem to themselves to be experts on the law, who keep the letter of the law but disregard its spirit. He teaches that they are ignorant of the law from its very first chapter. He proves this immediately at the beginning of the law. Both the Father and the Son proclaimed and announced the sacrament of the divine incarnation, saying, \"You shall love the Lord your God\" and \"You shall love your neighbor as yourself.\" The Lord said to the lawyer, \"Do this, and you shall live.\" He who did not know his neighbor, because he did not believe in Christ, answered, \"Who is my neighbor?\" Whoever does not know Christ does not know the law either. How can he know the law when he is ignorant of the Truth, since the law proclaims the Truth?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.10.26"
     }
   ]
 }

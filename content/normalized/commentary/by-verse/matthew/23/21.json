@@ -76,6 +76,31 @@
       ]
     },
     {
+      "id": "catena-matt-3330-v21",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.21",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:16–22",
+      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.21:9145cf98:0"
+      ]
+    },
+    {
       "id": "catena-matt-3328-v21",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.21",
@@ -94,22 +119,55 @@
       ]
     },
     {
-      "id": "catena-matt-3330-v21",
+      "id": "hcf:tertullian:matthew.23.21:be6709a3:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.21",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:16–22",
-      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-prayer",
+      "title": "On Prayer on matthew 23:21",
+      "excerpt": "His hands, at all events, are ever unclean, eternally dyed with the blood of the prophets, and of the Lord Himself; and on that account, as being hereditary culprits from their privity to their fathers' crimes, they do not dare even to raise them unto the Lord, for fear some Isaiah should cry out, for fear Christ should utterly shudder.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.23.21"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.21:74e72964:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:21",
+      "excerpt": "He calls them blind for not wanting to teach what was right, but instead valuing what was of lesser importance, and giving second place to that which was worthy of honor. For they valued the gold in the temple, the images of the Cherubim and the golden urn, more highly than they did the temple itself. Therefore they taught the people that it was of no consequence to swear by the temple, and instead they taught them to swear by the gold which is in the temple. This gold, however, was precious precisely because it was in the temple. And the Pharisees said that the gifts placed on the altar were more valuable than the altar itself. So the Pharisees even taught that if someone swore by the golden vessel, or the ox, or the sheep brought for sacrifice, and then broke his oath, he was sentenced to pay an equal amount. The Pharisees put a higher value on the gift upon the altar because of the profit they derived from sacrifices. But if some one swore by the temple and then broke his oath, he was absolved [and owed nothing, the Pharisees would say], as it was not possible to build [and pay] anything equal to the temple. And so the oath by the temple was considered to be of lesser consequence because of the Pharisees' love of money. Under the Old Covenant, Christ does not permit the gift to be greater than the altar, but for us it is just the opposite: the altar is sanctified by the gifts, for the loaves are changed by divine grace into the very Body of the Lord Himself. Therefore the altar is sanctified by them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.21"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.21:94e16080:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:21",
+      "excerpt": "Likewise, another reason follows: and whosoever shall swear by the temple, swears by it and by him that dwells in it. They said: he who swears by the temple swears by nothing. But he wishes to show that he who swears by the temple swears by God, because he does not swear by the temple except as sanctified, and it is not sanctified except by God. Therefore he who swears by the temple swears by God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.21"
     },
     {
       "id": "catena-matt-3325-v21",
@@ -145,6 +203,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.23.21:b8c7cce6:0"
       ]
     },
     {

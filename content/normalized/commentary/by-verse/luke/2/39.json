@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.2.39:cbe46974:1"
       ]
     },
     {
@@ -55,7 +62,66 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.2.39:af9b6537:1"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.2.39:dcf7913e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 2:39",
+      "excerpt": "And when they had completed everything according to the law of the Lord, they returned to Galilee, to their city Nazareth. In this place, Luke omitted what he knew to be sufficiently explained by Matthew, namely that the Lord, after these things, so that he would not be found and killed by Herod, was taken by his parents to Egypt, and after Herod's death, he thus returned to Galilee, and began to inhabit his city Nazareth. For the evangelists individually are accustomed to omit certain things that they either saw were mentioned by others, or foresaw would be mentioned by others in the spirit, so that in the continuous series of their own narrative, they appear to have omitted nothing. Nevertheless, a diligent reader can find out at what point omissions were made by considering the writing of the other evangelist.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.39"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.2.39:31550c59:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 2:39",
+      "excerpt": "After fulfilling everything, they returned to Galilee, to their own city of Nazareth. Bethlehem was also their city, but as a homeland, while Nazareth was their place of residence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.2.39"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.2.39:4d5cc837:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 2:39",
+      "excerpt": "(Metaphrastes.) Or again, Luke is here describing the time before the descent to Egypt, for before her purification Joseph had not taken Mary there. But before they went down into Egypt, they were not told by God to go to Nazareth, but as living more freely in their own country, thither of their own accord they went; for since the going up to Bethlehem was for no other reason but the taxing, when that was accomplished they go down to Nazareth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.2.39"
     }
   ]
 }

@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.26:78324f0f:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.1.26:4cb3c829:0"
       ]
     },
     {
@@ -73,6 +87,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.1.26:1abde1d8:0"
       ]
     },
     {
@@ -91,6 +112,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.26:0c9e0bda:0"
       ]
     },
     {
@@ -127,6 +155,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.26:dcd57b3e:0"
       ]
     },
     {
@@ -138,24 +173,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:26–27",
       "excerpt": "It was a fit beginning for man’s restoration, that an angel should be sent down from God to consecrate a virgin by a divine birth, for the first cause of man’s perdition was the Devil sending a serpent to deceive a woman by the spirit of pride.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0104-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.26",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:26–27",
-      "excerpt": "Which last applies not only to Joseph, but also to Mary, for the Law commanded that every one should take a wife out of his own tribe or family. It follows, And the virgin’s name was Mary.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -184,6 +201,24 @@
       ]
     },
     {
+      "id": "catena-luke-0104-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.26",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:26–27",
+      "excerpt": "Which last applies not only to Joseph, but also to Mary, for the Law commanded that every one should take a wife out of his own tribe or family. It follows, And the virgin’s name was Mary.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0102-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.26",
@@ -202,6 +237,159 @@
       ]
     },
     {
+      "id": "hcf:bede:luke.1.26:74ea51c8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:26",
+      "excerpt": "In the sixth month, the angel Gabriel was sent by God to a city of Galilee named Nazareth. Therefore, angels are called by private names so that it may be understood by the names even in their activities what they are capable of. For neither in that holy city, which He perfects with full knowledge of the vision of Almighty God, do they thus receive proper names, nor can their persons be unknown without names: but when they come to minister something to us, they also take names from their ministries among us. To Mary the virgin, then, Gabriel is sent, who is named the strength of God. For he was indeed coming to announce Him who deigned to appear humble to wrestle down the airy powers. Of whom the Psalmist says, \"The Lord strong and mighty, the Lord mighty in battle\" (Psalm 24). And again, \"The Lord of hosts, he is the king of glory\" (ibid.). Therefore, by the strength of God He was to be announced, who is the Lord of powers and mighty in battle, coming to war against the airy powers. Understand the sixth month as March, on the twenty-fifth day of which our Lord is said both to have been conceived and to have suffered, just as He is said to have been born on the twenty-fifth day of the month of December. Because whether we believe that the vernal equinox happens today (as some think) or that the winter solstice occurs at that time, it is surely fitting that He who illuminates every man coming into the world should be conceived or born with the increase of light. But if someone should prove that before the time of the Lord's nativity and conception, light either increased or overcame the darkness, we also say that John then preached the kingdom of heaven before His face and now too, preachers are commanded, \"Prepare the way for him who ascends above the sunset\" (Psalm 68). Why John was conceived around the autumn equinox and born around the summer solstice, he himself teaches either from his own or from the persona of the Old Testament (as many claim); \"He must increase, but I must decrease\" (John 3).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:bede:luke.1.26:6d001702:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-3",
+      "title": "Homilies on the Gospels 1.3 on luke 1:26",
+      "excerpt": "The first cause of human perdition occurred when a serpent was sent by the devil to a woman who was to be deceived by the spirit of pride. Moreover, the devil himself came in the serpent, who, once he had deceived our first parents, stripped humankind of the glory of immortality. Because death made its entrance through a woman, it was fitting that life return through a woman. The one, seduced by the devil through the serpent, brought a man the taste of death. The other, instructed by God through the angel, produced for the world the Author of salvation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:bede:luke.1.26:aa10af94:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-3",
+      "title": "Homilies on the Gospels 1.3 on luke 1:26",
+      "excerpt": "Now Gabriel means \"strength of God.\" Rightly he shone forth with such a name, since by his testimony he bore witness to the coming birth of God in the flesh. The prophet said this in the psalm, \"The Lord strong and powerful, the Lord powerful in battle\"—that battle, undoubtedly, in which he [Christ] came to fight \"the powers of the air\" and to snatch the world from their tyranny.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.1.26:17a5c053:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-34",
+      "title": "Forty Gospel Homilies, Homily 34 on luke 1:26",
+      "excerpt": "Gabriel, who is called the strength of God, is also sent to Mary. For he came to announce him who deigned to appear humble to conquer the powers of the air. Of whom it is said through the Psalmist: \"Lift up your gates, O princes, and be lifted up, eternal gates, and the King of glory shall enter. Who is this King of glory? The Lord strong and mighty, the Lord mighty in battle.\" And again: \"The Lord of hosts, he is the King of glory.\" Therefore, he who was the Lord of hosts and mighty in battle, coming to wage war against the powers of the air, was to be announced through the strength of God.\r\n\r\nIt should also be known that the word \"angel\" is a name of office, not of nature. For those holy spirits of the heavenly homeland are indeed always spirits, but they cannot always be called angels, since they are angels only when something is announced through them. Moreover, those who announce lesser things are called angels, while those who announce the greatest things are called archangels. This is why not just any angel, but the archangel Gabriel, was sent to the Virgin Mary. For it was fitting that the highest angel should come for this ministry, since he was announcing the highest of all things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:luke.1.26:c8e4ddd3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-refutation-of-all-heresies-book-vi",
+      "title": "Hippolytus Refutation of All Heresies Book VI on luke 1:26",
+      "excerpt": "But concerning the creation of this (Jesus), he expresses himself thus: That powers emanating from the second tetrad fashioned Jesus, who appeared on earth, and that the angel Gabriel filled the place of the Logos, and the Holy Spirit that of Zoe, and the \"Power of the Highest\" that of Anthropos, and the Virgin that of Ecclesia. And so it was, in Marcus' system, that the man (who appeared) in accordance with the dispensation was born through Mary. And when He came to the water, (he says) that He descended like a dove upon him who had ascended above and filled the twelfth number. And in Him resides the seed of these, that is, such as are sown along with Him, and that descend with (Him), and ascend with (Him). And that this power which descended upon Him, he says, is the seed of the Pleroma, which contains in itself both the Father and the Son, and the unnameable power of Sige, which is recognised through these and all the Aeons. And that this (seed) is the spirit which is in Him and spoke in Him through the mouth of the Son, the confession of Himself as Son of man, and of His being one who would manifest the Father; (and that) when this spirit came down upon Jesus, He was united with Him. The Saviour, who was of the dispensation, he says, destroyed death, whereas He made known (as) the Father Christ (Jesus). He says that Jesus, therefore, is the name of the man of the dispensation, and that it has been set forth for the assimilation and formation of Anthropos, who was about to descend upon Him; and that when He had received Him unto Himself, He retained possession of Him. And (he says) that He was Anthropos, (that) He (was) Logos, (that) He (was) Pater, and Arrhetus, and Sige, and Aletheia, and Ecclesia, and Zoe.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:jerome:luke.1.26:1722e3a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:st-jerome-commentary-on-daniel-chapter-eight",
+      "title": "St. Jerome, Commentary on Daniel, CHAPTER EIGHT on luke 1:26",
+      "excerpt": "[Daniel 8:16-17] \"And I heard the voice of a man in the midst of the Ulai, and he cried out and said: 'Gabriel, make this vision intelligible (Vulgate: make this man to understand the vision).' And he came and stood near to where I was standing.\" The Jews claim that this man who directed Gabriel to explain the vision to Daniel was Michael. Quite appropriately it was Gabriel, who has been put in charge of battles, to whom this duty was assigned, inasmuch as the vision had to do with battles and contests between kings and even between kingdoms themselves. For Gabriel is translated into our language as \"the strength of, or the mighty one of, God.\" And so at that time also when the Lord was about to be born and to declare war against the demons and to triumph over the world, Gabriel came to Zacharias (Luke 1:11-20) and to Mary (Luke 1:26-27). And then we read in the Psalms concerning the Lord in His triumph: \"Who is this king of glory? The Lord strong and mighty, the Lord mighty in battle; He is the King of glory\" (Psalm 24:8). But whenever it is medicine or healing that is needed, it is Raphael who is sent, for his name is rendered as \"the healing of,\" or \"the medicine of God\" - that is, if one cares to accept the authority of the Book of Tobias (Tobit 12:11-15). And then, when favorable promises are made to the people, and hilasmos, which we might render as \"propitiation\" or \"expiation,\" is the thing required, then it is Michael who is directed to go, for his name means, \"Who is like God?\" Of course the significance of the name indicates the fact that the only true remedy is to be found in God.\r\n\r\n\"And he said to me: 'Son of man, understand that in the time of the end the vision shall be fulfilled.'\" Inasmuch as Ezekiel and Daniel and Zechariah behold themselves to be often in the company of angels, they were reminded of their frailty, lest they should be lifted up in pride and imagine themselves to partake of the nature or dignity of angels. Therefore they are addressed as sons of men, in order that they might realize that they are but human beings.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ccel-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.26:321b532e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-veiling-of-virgins",
+      "title": "On the Veiling of Virgins on luke 1:26",
+      "excerpt": "Let us now see whether the apostle withal observes the norm of this name in accordance with Genesis, attributing it to the sex; calling the virgin Mary a woman, just as Genesis (does) Eve. For, writing to the Galatians, \"God,\" he says, \"sent His own Son, made of a woman,\" who, of course, is admitted to have been a virgin, albeit Hebion resist (that doctrine). I recognise, too, the angel Gabriel as having been sent to \"a virgin.\" But when he is blessing her, it is \"among women,\" not among virgins, that he ranks her: \"Blessed (be) thou among women.\" The angel withal knew that even a virgin is called a woman.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.26:e6b94b79:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-flesh-of-christ",
+      "title": "On the Flesh of Christ on luke 1:26",
+      "excerpt": "Clearly enough is the nativity announced by Gabriel. But what has he to do with the Creator's angel? The conception in the virgin's womb is also set plainly before us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.26:f11ce8d4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:26",
+      "excerpt": "In the sixth month, counting from the time of the conception of John.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.26"
+    },
+    {
       "id": "catena-luke-0096-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.26",
@@ -217,6 +405,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.1.26:aacbb3f1:0"
       ]
     },
     {
@@ -235,6 +430,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:luke.1.26:4991633b:0"
       ]
     },
     {

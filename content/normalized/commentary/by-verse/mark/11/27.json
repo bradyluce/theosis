@@ -4,24 +4,6 @@
   "verseNumber": 27,
   "entries": [
     {
-      "id": "catena-mark-0948-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.11.27",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 11:27–33",
-      "excerpt": "And indeed, when they say, By what authority doest thou these things, they doubt its being the power of God, and wish it to be understood that what He did was the devil's work. When they add also, Who gave thee this authority, they evidently deny that He is the Son of God, since they believe that He works miracles, not by His own but by another's power.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0950-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.11.27",
@@ -58,17 +40,17 @@
       ]
     },
     {
-      "id": "catena-mark-0947-v27",
+      "id": "catena-mark-0948-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.11.27",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 11:27–33",
-      "excerpt": "They were angry with the Lord, for having cast out of the temple those who had made it a place of merchandize, and therefore they come up to Him, to question and tempt Him. Wherefore it is said: And they come again to Jerusalem: and as he was walking in the temple, there come to him the Chief Priests, and the Scribes, and the elders, and say unto him, By what authority doest thou these things? and who gave thee authority to do these things? As if they had said, Who art thou that doest these things? Dost thou make thyself a doctor, and ordain thyself Chief Priest?",
+      "excerpt": "And indeed, when they say, By what authority doest thou these things, they doubt its being the power of God, and wish it to be understood that what He did was the devil's work. When they add also, Who gave thee this authority, they evidently deny that He is the Son of God, since they believe that He works miracles, not by His own but by another's power.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -91,7 +73,49 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.11.27:481411d7:0"
       ]
+    },
+    {
+      "id": "catena-mark-0947-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.11.27",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 11:27–33",
+      "excerpt": "They were angry with the Lord, for having cast out of the temple those who had made it a place of merchandize, and therefore they come up to Him, to question and tempt Him. Wherefore it is said: And they come again to Jerusalem: and as he was walking in the temple, there come to him the Chief Priests, and the Scribes, and the elders, and say unto him, By what authority doest thou these things? and who gave thee authority to do these things? As if they had said, Who art thou that doest these things? Dost thou make thyself a doctor, and ordain thyself Chief Priest?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.11.27:f8da588f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 11:27",
+      "excerpt": "Enraged that Christ had driven the money-changers out of the temple, they come to Him with the question: \"By what authority do You do these things?\" They were, as it were, saying to Him reproachfully: \"Who are You to do this? Were You appointed as a teacher? Were You ordained as a high priest?\" They said this trying to put Him in a difficult position, so as to trap Him. If He had said, \"I do this by My own authority,\" they would have stoned Him as one opposed to God, and if He had said, \"By the authority of God,\" then they could have drawn the people away from Him, since He claimed to be God. But the Lord poses a question to them about John, not without reason and not with any cunning. But since John had testified about Him, He asks the malicious Jews about John, so that if they acknowledged John as a messenger of God, they would be compelled to accept John's testimony about Christ as well. And since they could not give any answer, He, in order to humble them even more, says: \"Neither will I tell you.\" He did not say, \"I do not know what to answer you,\" but \"Neither will I tell you,\" that is, since you act with malice, I do not deem you worthy of an answer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.11.27"
     },
     {
       "id": "catena-mark-0951-v27",

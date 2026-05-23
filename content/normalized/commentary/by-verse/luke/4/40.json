@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.4.40:03a20393:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.4.40:a6c04f14:0"
       ]
     },
     {
@@ -91,24 +105,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0735-v40",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.4.40",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 4:40–41",
-      "excerpt": "It was ordered about sun-set, that is, when the day was gone, that they should bring them out, either because during the day they were employed about other things, or because they thought that it was not lawful to heal on the sabbath. But He healed them, as it follows, But he laid his hands upon every one of them.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.4.40:5aaf41b9:0"
       ]
     },
     {
@@ -128,6 +131,105 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "catena-luke-0735-v40",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.4.40",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 4:40–41",
+      "excerpt": "It was ordered about sun-set, that is, when the day was gone, that they should bring them out, either because during the day they were employed about other things, or because they thought that it was not lawful to heal on the sabbath. But He healed them, as it follows, But he laid his hands upon every one of them.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.4.40:5729be10:0"
+      ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.4.40:049d49b9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-12",
+      "title": "COMMENTARY ON LUKE, HOMILY 12 on luke 4:40",
+      "excerpt": "Jesus laid his hands upon the sick one by one and freed them from their malady. He demonstrated that the holy flesh, which he had made his own and endowed with godlike power, possessed the active presence of the might of the Word. He intended us to learn that, although the only-begotten Word of God became like us, yet he is nonetheless God. He wants us to know that he is easily able, even by his own flesh, to accomplish all things. His body was the instrument by which he performed miracles.\r\n\r\nJesus, then, entered Peter's house, where a woman was lying stretched upon a bed, exhausted with a violent fever. As God, he might have said, \"Put away the disease, arise,\" but he adopted a different course of action. As a proof that his own flesh possessed the power of healing, because it is the flesh of God, he touched her hand. \"Immediately,\" it says, \"the fever left her.\" Let us therefore also receive Jesus. When he has entered into us and we have received him into mind and heart, then he will quench the fever of unbefitting pleasures. He will raise us up and make us strong, even in spiritual things, so that we might serve him by performing those things that please him. But observe again, I ask, how great is the usefulness of the touch of his holy flesh. For it both drives away diseases of various kinds, and a crowd of demons, and overthrows the power of the devil. It heals a very great multitude of people in one moment of time. Although he was able to perform these miracles by a word and the preference of his will, yet to teach us something useful for us, he also lays his hands upon the sick. For it was necessary, most necessary, for us to learn that the holy flesh which he had made his own was endowed with the activity of the power of the Word by his having implanted in it a godlike might. Let it then take hold of us, or rather let us take hold of it by the mystical \"giving of thanks.\" May we do this so that it might free us also from the sicknesses of the soul, and from the assault and violence of demons.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.4.40"
+    },
+    {
+      "id": "hcf:bede:luke.4.40:85f7373b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 4:40",
+      "excerpt": "When the sun was setting, all those who had sick people with various diseases brought them to him. And he, laying hands on each of them, cured them. The setting of the sun signifies the passion and death of the one who said: \"As long as I am in the world, I am the light of the world.\" And as the sun sets, more demoniacs than before, more sick are healed. Because he, living temporally in the flesh, taught few of the Jews, but having trampled the kingdom of death, he transmitted the gifts of faith and salvation to all the nations throughout the world. Of which ministers, as if heralds of life and light, the Psalmist sings: \"Prepare the way for him who rides upon the sunset.\" (Psalm 67). Indeed, the Lord ascended upon the sunset, because from where he lay down in the passion, from there he manifested his greater glory by rising again.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.4.40"
+    },
+    {
+      "id": "hcf:tertullian:luke.4.40:8a98b944:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:pseudo-tertullian-against-all-heresies",
+      "title": "Pseudo-Tertullian Against All Heresies on luke 4:40",
+      "excerpt": "His successor was Ebion, not agreeing with Cerinthus in every point; in that he affirms the world to have been made by God, not by angels; and because it is written, \"No disciple above his master, nor servant above his lord, \" sets forth likewise the law as binding, of course for the purpose of excluding the gospel and vindicating Judaism.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.4.40",
+      "provenance": [
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:tertullian:luke.4.40:8a98b944:2"
+      ]
+    },
+    {
+      "id": "hcf:tertullian:luke.4.40:f9cd6d34:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 4:40",
+      "excerpt": "In short, He did himself touch others, upon whom He laid His hands, which were capable of being felt, and conferred the blessings of healing, which were not less true, not less unimaginary, than were the hands wherewith He bestowed them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.4.40"
     }
   ]
 }

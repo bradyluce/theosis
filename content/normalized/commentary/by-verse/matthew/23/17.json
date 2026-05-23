@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.23.17:704f100e:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.23.17:723a8f4b:0"
       ]
     },
     {
@@ -73,6 +87,38 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.23.17:0494c254:0"
+      ]
+    },
+    {
+      "id": "catena-matt-3330-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.17",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:16–22",
+      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.17:9145cf98:0"
       ]
     },
     {
@@ -94,22 +140,72 @@
       ]
     },
     {
-      "id": "catena-matt-3330-v17",
+      "id": "hcf:jerome:matthew.23.17:2afc6f81:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.17",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:16–22",
-      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:17",
+      "excerpt": "(Verse 16 onwards) Woe to you, blind guides, who say, 'Whoever swears by the temple is nothing, but whoever swears by the gold of the temple is bound by his oath.' Fools and blind! For which is greater, the gold or the temple that sanctifies the gold? And, 'Whoever swears by the altar is nothing, but whoever swears by the gift that is on it is obligated.' Blind! For which is greater, the gift or the altar that sanctifies the gift? Therefore, whoever swears on the altar, swears on it and on all things that are above it. And whoever swears in the temple, swears in it and in him who dwells in it. And whoever swears in heaven, swears on the throne of God and on him who sits on it. Above, as it seemed to us, we have explained what the tradition of the Pharisees meant, saying: Whatever gift is from me will benefit you: now the double tradition of the Pharisees, enticing to one occasion of greed, is condemned, so that they may be proved to do everything for gain and not for the fear of God. For just as in the phylacteries and fringes, by enlarged expectations of holiness, it was trying to capture glory, and was seeking gains through the opportunity of glory, so another tradition found fault with the teachers of impiety. If anyone were to swear in the temple during a dispute, or in some argument, or in a doubtful case, and later be convicted of lying, they were not held accountable for the crime. But if they were to swear on gold and money, which was offered to the priests in the temple, they were immediately compelled to fulfill what they had sworn. Again: If anyone swore upon the altar, no one held him guilty of perjury; but if he swore falsely on a gift, or on offerings, that is, on victims and on fine flour and on the rest, which are offered to God upon the altar, these were most diligently sought after. Therefore, the Lord reproached them both for foolishness and deceit, because the temple is much greater than the gold that is sanctified by the temple, and the altar is greater than the offerings that are sanctified by the altar. But they did it not out of fear of God, but out of greed for riches.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.17"
+    },
+    {
+      "id": "hcf:hcf-theodore-stratelates:matthew.23.17:240e0e6e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-stratelates",
+      "workId": "hcf:work:hcf-theodore-stratelates:fragment-115-16",
+      "title": "FRAGMENT 115.16 on matthew 23:17",
+      "excerpt": "Jesus is saying that the gold in the temple, the gold objects dedicated in the temple to the glory of God, whether these be the gold cherubim or the gold jar containing the manna, were considered by the Jews to be worthy of much more honor than the temple. Therefore they were condemned by the Lord.… But the saying possesses a figurative meaning directed against them because they are not receiving the truth regarding Christ. Instead, they were judging Moses and the types given through him as more valuable than Christ.… They were rejecting the Christ who sanctifies Moses while simultaneously praising the law. Just as the law was praiseworthy, not because it possesses the types and the symbols but because it prefigures the true mystery of worship in Christ, in the same way the gold is precious because of the one who sanctifies the temple, and heaven is beautiful because of the God who sanctifies it and dwells within it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-115-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c319"
+      ],
+      "targetVerseId": "kjva:matthew.23.17"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.17:74e72964:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:17",
+      "excerpt": "He calls them blind for not wanting to teach what was right, but instead valuing what was of lesser importance, and giving second place to that which was worthy of honor. For they valued the gold in the temple, the images of the Cherubim and the golden urn, more highly than they did the temple itself. Therefore they taught the people that it was of no consequence to swear by the temple, and instead they taught them to swear by the gold which is in the temple. This gold, however, was precious precisely because it was in the temple. And the Pharisees said that the gifts placed on the altar were more valuable than the altar itself. So the Pharisees even taught that if someone swore by the golden vessel, or the ox, or the sheep brought for sacrifice, and then broke his oath, he was sentenced to pay an equal amount. The Pharisees put a higher value on the gift upon the altar because of the profit they derived from sacrifices. But if some one swore by the temple and then broke his oath, he was absolved [and owed nothing, the Pharisees would say], as it was not possible to build [and pay] anything equal to the temple. And so the oath by the temple was considered to be of lesser consequence because of the Pharisees' love of money. Under the Old Covenant, Christ does not permit the gift to be greater than the altar, but for us it is just the opposite: the altar is sanctified by the gifts, for the loaves are changed by divine grace into the very Body of the Lord Himself. Therefore the altar is sanctified by them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.17"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.17:7df336ad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:17",
+      "excerpt": "Then he sets forth the refutation: you foolish and blind; for which is greater, the gold or the temple that sanctifies the gold? It is evident that what is in the temple is holy by reason of the temple; hence he who steals anything in the temple commits sacrilege. Hence it is greater to swear by the temple than by the gold. Chrysostom says: this is against certain people who say that to swear by God is nothing. Hence those who swear by God believe they swear by nothing; but when they swear by the holy Gospels of God, they believe it to be a great thing. Hence it can be said to them: which is greater, God or the Gospel? It is evident that it is God. And this is true absolutely; it is otherwise when some circumstance is added which aggravates the sin. Because he who swears by the holy Gospels of God has sworn with a certain deliberation and solemnity, and therefore sins more gravely.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.17"
     },
     {
       "id": "catena-matt-3325-v17",
@@ -127,6 +223,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.23.17:964a94cc:0"
       ]
     },
     {

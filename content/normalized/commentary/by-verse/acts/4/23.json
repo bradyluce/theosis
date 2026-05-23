@@ -20,7 +20,48 @@
         "patristic",
         "homily",
         "acts"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-acts-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:acts.4.23:61656c58:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:acts.4.23:15246326:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-acts-11",
+      "title": "Homily on Acts 11 on acts 4:23",
+      "excerpt": "See the unostentatious conduct of the Apostles, and their largeness of mind. They did not go about boasting, and say, \"How we served the priests!\" nor were they ambitious of honor: but, we read, \"they came unto their own company.\" Observe how they do not cast themselves upon temptations, but when the temptations present themselves, with courage endure them. Had it been some other of the disciples, perhaps, emboldened by the countenance of the multitude, he might have insulted, might have vented ever so many harsh expressions. But not so these true philosophers; they do all with mildness and with gentleness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:acts.4.23"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:acts.4.23:58451548:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-acts",
+      "title": "Commentary on Acts on acts 4:23",
+      "excerpt": "The Apostles Peter and John \"went to their own and reported\" everything that had happened to them. They reported not out of ambition, but to show clear evidences of the grace of Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:acts.4.23"
     }
   ]
 }

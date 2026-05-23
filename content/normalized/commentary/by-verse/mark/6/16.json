@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.6.16:8d5e8551:0"
       ]
     },
     {
@@ -33,24 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0423-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.16",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:14–16",
-      "excerpt": "For John confuted many men, when he said, Ye generation of vipers. It goes on, But others said, that it is a prophet, or as one of the prophets.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -76,6 +65,75 @@
       ]
     },
     {
+      "id": "catena-mark-0423-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.16",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:14–16",
+      "excerpt": "For John confuted many men, when he said, Ye generation of vipers. It goes on, But others said, that it is a prophet, or as one of the prophets.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.6.16:9d306fa2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:16",
+      "excerpt": "When this was heard, Herod said: \"John, whom I beheaded, has risen from the dead.\" Luke wrote about this in this way: \"Now Herod the tetrarch heard of all that was done by him, and he was perplexed, because it was said by some that John was risen from the dead; by some, that Elijah had appeared, etc.\" (Luke IX). It must be understood, therefore, either that after this perplexity he confirmed in his mind what was said by others when he said: \"John, whom I beheaded, has risen from the dead\"; or these words must be pronounced in such a way as to indicate that he was still doubtful. For if he were to say: \"Is this indeed, or is this perhaps John the Baptist?\" there would be no need to remind anything about pronunciation, because he would be understood as doubting and hesitating. Now, since these words are lacking, it can be pronounced in both ways, so that we can understand him to have spoken, confirmed by the words of others, or still (as Luke recounts) hesitating.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.16"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.6.16:2f15521f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:16",
+      "excerpt": "And Herod was afraid. So wretched was this man that he was afraid of a dead man!",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.16"
+    },
+    {
+      "id": "hcf:hcf-josephus:mark.6.16:e8f3163c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-josephus",
+      "workId": "hcf:work:hcf-josephus:antiquities-of-the-jews-book-xviii-chapter-5-section-2",
+      "title": "Antiquities of the Jews - Book XVIII, Chapter 5, Section 2 on mark 6:16",
+      "excerpt": "Now some of the Jews thought that the destruction of Herod's army came from God, and that very justly, as a punishment of what he did against John, that was called the Baptist: for Herod slew him, who was a good man, and commanded the Jews to exercise virtue, both as to righteousness towards one another, and piety towards God, and so to come to baptism; for that the washing [with water] would be acceptable to him, if they made use of it, not in order to the putting away [or the remission] of some sins [only], but for the purification of the body; supposing still that the soul was thoroughly purified beforehand by righteousness. Now when [many] others came in crowds about him, for they were very greatly moved [or pleased] by hearing his words, Herod, who feared lest the great influence John had over the people might put it into his power and inclination to raise a rebellion, (for they seemed ready to do any thing he should advise,) thought it best, by putting him to death, to prevent any mischief he might cause, and not bring himself into difficulties, by sparing a man who might make him repent of it when it would be too late. Accordingly he was sent a prisoner, out of Herod's suspicious temper, to Macherus, the castle I before mentioned, and was there put to death. Now the Jews had an opinion that the destruction of this army was sent as a punishment upon Herod, and a mark of God's displeasure to him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sacred-texts-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:mark.6.16"
+    },
+    {
       "id": "catena-mark-0419-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.16",
@@ -91,6 +149,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0424-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.16",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:14–16",
+      "excerpt": "It seems to me that this prophet means that one of whom Moses said, God will raise up a prophet unto thee of thy brethren. (Deut. 8:15.) They were right indeed, but because they feared to say openly, This is the Christ, they used the voice of Moses, veiling their own surmise through fear of their rulers. There follows, But when Herod heard thereof, he said, It is John, whom I beheaded: he is risen from the dead. Herod expressly says, this in irony.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.6.16:9a0ea758:0"
       ]
     },
     {
@@ -120,24 +203,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:14–16",
       "excerpt": "It goes on, For his name was spread abroad. For it is not right that a candle should be placed under a bushel. And they said, that is, some of the multitude, that John the Baptist was risen from the dead, and therefore mighty works do shew themselves forth in him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0424-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.16",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:14–16",
-      "excerpt": "It seems to me that this prophet means that one of whom Moses said, God will raise up a prophet unto thee of thy brethren. (Deut. 8:15.) They were right indeed, but because they feared to say openly, This is the Christ, they used the voice of Moses, veiling their own surmise through fear of their rulers. There follows, But when Herod heard thereof, he said, It is John, whom I beheaded: he is risen from the dead. Herod expressly says, this in irony.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

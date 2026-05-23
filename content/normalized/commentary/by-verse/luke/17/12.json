@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.17.12:7d8ae5fe:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.17.12:06d1cfe6:0"
       ]
     },
     {
@@ -55,24 +69,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2588-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.12",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:11–19",
-      "excerpt": "The law also ordered, that those who were cleansed from leprosy should offer sacrifice for the sake of their purification.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.17.12:549d3fcf:0"
       ]
     },
     {
@@ -84,6 +87,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
       "excerpt": "Whereby the Jewish priests who were jealous of His glory might know that it was by Christ granting them health that they were suddenly and miraculously healed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2588-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.12",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:11–19",
+      "excerpt": "The law also ordered, that those who were cleansed from leprosy should offer sacrifice for the sake of their purification.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,6 +148,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.17.12:368ab87b:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2593-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.12",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:11–19",
+      "excerpt": "We may gather from this that a man is not one whit hindered from pleasing God because he comes from a cursed race, only let him bear in his heart an honest purpose. Further, let not him that is born of saints boast himself, for the nine who were Israelites were ungrateful; and hence it follows, And Jesus answering him said, Were there not ten cleansed?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -138,24 +184,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
       "excerpt": "They do not merely supplicate or entreat Him as if He were a man, but they call Him Master or Lord, as if almost they looked upon Him as God. But He bids them shew themselves to the priests, as it follows, And when he saw them, he said, Go, shew yourselves unto the priests. For they were examined whether they were cleansed from their leprosy or not.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2589-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.12",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:11–19",
-      "excerpt": "Therefore in bidding them go to the priests, he meant nothing more than that they were just about to be healed; and so it follows, And it came to pass that as they went they were healed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -184,35 +212,17 @@
       ]
     },
     {
-      "id": "catena-luke-2593-v12",
+      "id": "catena-luke-2589-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.12",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
-      "excerpt": "We may gather from this that a man is not one whit hindered from pleasing God because he comes from a cursed race, only let him bear in his heart an honest purpose. Further, let not him that is born of saints boast himself, for the nine who were Israelites were ungrateful; and hence it follows, And Jesus answering him said, Were there not ten cleansed?",
+      "excerpt": "Therefore in bidding them go to the priests, he meant nothing more than that they were just about to be healed; and so it follows, And it came to pass that as they went they were healed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2582-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.12",
-      "topicSlugs": [],
-      "personId": "titus-bostra",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:11–19",
-      "excerpt": "saying, And it came to pass, shewing that the Samaritans were indeed well disposed towards the mercies above mentioned, but the Jews not so. For there was enmity between the Jews and the Samaritans, and He to allay this, passed into the midst of both nations, that he might cement both into one new man.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -228,6 +238,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
       "excerpt": "They associated together from the sympathy they felt as partakers of the same calamity, and were waiting till Jesus passed, anxiously looking out to see Him approach. As it is said, Which stood afar off, for the Jewish law esteems leprosy unclean, whereas the law of the Gospel calls unclean not the outward, but the inward leprosy.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.17.12:724c5bb1:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2582-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.12",
+      "topicSlugs": [],
+      "personId": "titus-bostra",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:11–19",
+      "excerpt": "saying, And it came to pass, shewing that the Samaritans were indeed well disposed towards the mercies above mentioned, but the Jews not so. For there was enmity between the Jews and the Samaritans, and He to allay this, passed into the midst of both nations, that he might cement both into one new man.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 65,
@@ -290,6 +325,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.17.12:ca898a17:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:12",
+      "excerpt": "Behold, \"ten leprous men\" met Jesus when He was about to enter a certain city. They met Him outside the city, for since they were considered unclean, they were not permitted to live inside the city (Lev. 13:46). They stood \"afar off,\" as if ashamed of their supposed uncleanness and not daring to approach, thinking that Jesus too would be disgusted by them, as others did.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.17.12"
+    },
+    {
+      "id": "hcf:bede:luke.17.12:bd1d2e42:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:12",
+      "excerpt": "And it came to be, etc., ten leprous men met him. Leprous men can not unreasonably be understood as those who, not having the knowledge of true faith, profess various doctrines of error. For they do not hide their ignorance, but present it as supreme expertise to the light and display the boasting of their speech. And indeed there is no false doctrine which does not mix some truths among the false things. Hence true things mixed irregularly with false ones, appearing in one argument or narration of a man, as in the color of one body, signify leprosy, diversifying and staining human bodies with places of true and false colors. These therefore are to be avoided by the Church, so that if possible, being far removed, they may invoke Christ with a loud voice. Wherefore it is aptly added:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.12"
     }
   ]
 }

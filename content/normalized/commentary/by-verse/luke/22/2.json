@@ -4,24 +4,6 @@
   "verseNumber": 2,
   "entries": [
     {
-      "id": "catena-luke-3069-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.2",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:1–2",
-      "excerpt": "The actions of the Jews were a shadow of our own. Accordingly if you ask of a Jew concerning the Passover, and the feast of unleavened bread, he will tell you nothing momentous, mentioning the deliverance from Egypt; whereas should a man inquire of me he would not hear of Egypt or Pharaoh, but of freedom from sin and the darkness of Satan, not by Moses, but by the Son of God;",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3072-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.2",
@@ -30,6 +12,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:1–2",
       "excerpt": "Chrys. Hom. 79. in Matt.) The Chief Priests set about their impious deed on the feast, as it follows, And the Chief Priests and Scribes, &c. Moses ordained only one Priest, at whose death another was to be appointed. But at that time, when the Jewish customs had begun to fall away, there were many made every year. These then wishing to kill Jesus, are not afraid of God, lest in truth the holy time should aggravate the pollution of their sin, but every where fear man. Hence it follows, For they feared the people.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.22.2:9a1e0cab:0"
+      ]
+    },
+    {
+      "id": "catena-luke-3069-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.2",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:1–2",
+      "excerpt": "The actions of the Jews were a shadow of our own. Accordingly if you ask of a Jew concerning the Passover, and the feast of unleavened bread, he will tell you nothing momentous, mentioning the deliverance from Egypt; whereas should a man inquire of me he would not hear of Egypt or Pharaoh, but of freedom from sin and the darkness of Satan, not by Moses, but by the Son of God;",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.2:ae206f79:0"
       ]
     },
     {
@@ -76,6 +90,57 @@
       ]
     },
     {
+      "id": "hcf:bede:luke.22.2:8ef4cebd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:2",
+      "excerpt": "And the chief priests and the scribes sought how they might kill him. For they feared the people. These things, two days before the Passover, Matthew testifies, having assembled the chief priests, and the elders of the people, and the scribes, in the court of Caiaphas. But they feared the people, not dreading an uprising, but taking caution lest he be taken from their hands by the aid of the people.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.2"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.2:f9df7591:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-140",
+      "title": "COMMENTARY ON LUKE, HOMILY 140 on luke 22:2",
+      "excerpt": "Let us see the course of the devil's spite and the result of his crafty plans against Christ. The devil had implanted in the leaders of the Jewish synagogue envy against Christ, which even leads to murder. This disorder always leads, so to speak, to the guilt of murder. At least, this is the natural course of this vice. It was this way with Cain and Abel, and it clearly was so in the case of Joseph and his brothers. The divine Paul also very clearly makes these sins neighbors and relatives of one another. He spoke of some as full of envy and murder. The Jewish leaders sought to murder Jesus at the instigation of Satan, who had implanted this wickedness in them and who was their captain in their wicked projects. Satan is himself the inventor of murder, the root of sin and the fountain of all wickedness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-140",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.2"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.2:475a9345:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:2",
+      "excerpt": "The scribes sought to kill Him (Jesus). Since the time of Passover was approaching, and they therefore saw danger for themselves from the gathering crowd, especially during the feast, they were searching, at last, for a way to kill Him without exposing themselves to any danger.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.2"
+    },
+    {
       "id": "catena-luke-3070-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.2",
@@ -91,6 +156,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.22.2:c7bfd597:0"
       ]
     }
   ]

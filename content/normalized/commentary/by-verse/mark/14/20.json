@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.14.20:d79f758a:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.14.20:b1f6a15c:1"
       ]
     },
     {
@@ -76,14 +90,14 @@
       ]
     },
     {
-      "id": "catena-mark-1155-v20",
+      "id": "catena-mark-1157-v20",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.20",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:17–21",
-      "excerpt": "But how could they eat reclining, when the law ordered that standing and upright they should eat the Passover? It is probable that they had first fulfilled the legal Passover, and had reclined, when He began to give them His own Passover.",
+      "excerpt": "But the other disciples began to be saddened on account of the word of the Lord; for although they were free from this passion, yet they trust Him who knows all hearts, rather than themselves. It goes on: And he answered and said unto them, It is one of the twelve, that dippeth with me in the dish.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -94,14 +108,32 @@
       ]
     },
     {
-      "id": "catena-mark-1157-v20",
+      "id": "catena-mark-1164-v20",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.20",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:17–21",
-      "excerpt": "But the other disciples began to be saddened on account of the word of the Lord; for although they were free from this passion, yet they trust Him who knows all hearts, rather than themselves. It goes on: And he answered and said unto them, It is one of the twelve, that dippeth with me in the dish.",
+      "excerpt": "For as respects the end for which he was designed, it would have been better for him to have been born, if he had not been the betrayer, for God created him for good works; but after he had fallen into such dreadful wickedness, it would have been better for him never to have been born.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1155-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.20",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:17–21",
+      "excerpt": "But how could they eat reclining, when the law ordered that standing and upright they should eat the Passover? It is probable that they had first fulfilled the legal Passover, and had reclined, when He began to give them His own Passover.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -130,22 +162,38 @@
       ]
     },
     {
-      "id": "catena-mark-1164-v20",
+      "id": "hcf:bede:mark.14.20:3e794d07:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.14.20",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:17–21",
-      "excerpt": "For as respects the end for which he was designed, it would have been better for him to have been born, if he had not been the betrayer, for God created him for good works; but after he had fallen into such dreadful wickedness, it would have been better for him never to have been born.",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 14:20",
+      "excerpt": "He said to them, \"One of the twelve, who is dipping his hand with me in the dish.\" Oh marvelous power of the Lord! First he had said, \"One of you will betray me,\" the betrayer persists in evil, he is more clearly accused, and yet his name is not specifically designated. Judas, while the others were saddened and withdrawing their hands and forbidding food to their mouths, with the rashness and impudence by which he was about to betray the master, even puts his hand with the master into the dish, so that his audacity could falsely claim a good conscience.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.14.20"
+    },
+    {
+      "id": "hcf:origen:mark.14.20:505ec7bf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-50",
+      "title": "COMMENTARY ON MATTHEW 50 on mark 14:20",
+      "excerpt": "Seeing that the disciples were disturbed, Jesus called the betrayer to accountability by poignantly recalling the prophetic words of the psalmist: \"Even my bosom friend in whom I trusted, who ate of my bread, has lifted up his heel against me.\" This corresponds to the Evangelist's report of him saying: \"It is one of the twelve, one who is dipping bread into the dish with me.\" Judas the betrayer was thrusting his hand into the very same dish along with Jesus as they were eating the passover meal. This highlighted Judas' shamelessness. The very one who was being generously received to a common table betrayed Jesus who had embraced him with such great affection. He betrayed the bestower of these good gifts for the promise of thirty pieces of silver. Isn't this especially characteristic of extremely malevolent persons—to plot against those with whom they have shared bread and salt, who would in no way injure them?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.14.20"
     },
     {
       "id": "catena-mark-1156-v20",
@@ -181,6 +229,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.14.20:21eeda00:0"
       ]
     },
     {

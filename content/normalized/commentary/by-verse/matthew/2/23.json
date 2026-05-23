@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0284-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.2.23",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 2:21–23",
-      "excerpt": "And when he had once left the country of His birth, all the occurrences passed out of mind; the rage of persecution had been spent in Bethlehem and its neighbourhood. By choosing Nazareth therefore, Joseph both avoided danger, and returned to his country.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.2.23:e03fc539:0"
       ]
     },
     {
@@ -48,24 +37,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 2:21–23",
       "excerpt": "This may perhaps occur to some, that Matthew says His parents went with the Child Jesus to Galilee because they feared Archelaus, when it should seem most probable that they chose Galilee because Nazareth was89 their own city, as Luke has not forgot to mention. We must understand, that when the Angel in the vision in Egypt said to Joseph, “Go into the land of Israel,” Joseph understood the command to be that he should go straight into Judaea, that being properly “the land of Israel.” But finding Archelaus ruling there, he would not court the danger, as “the land of Israel” might be…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0289-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.2.23",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 2:21–23",
-      "excerpt": "Had he meant to quote a particular text, he would not have written ‘Prophets,’ but ‘the Prophet.’ By thus using the plural he evidently90 does not take the words of any one passage in Scripture, but the sense of the whole. Nazarene is interpreted, ‘Holy,’ and that the Lord would be Holy, all Scripture testifies. Otherwise we may explain that it is found in Isaiah rendered to the strict letter of the Hebrew. [margin note: c. 11. 1] “There shall come a Rod out of the stem of Jesse, and a Nazarene shall grow out of His roots.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -94,6 +65,42 @@
       ]
     },
     {
+      "id": "catena-matt-0284-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.2.23",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 2:21–23",
+      "excerpt": "And when he had once left the country of His birth, all the occurrences passed out of mind; the rage of persecution had been spent in Bethlehem and its neighbourhood. By choosing Nazareth therefore, Joseph both avoided danger, and returned to his country.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0289-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.2.23",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 2:21–23",
+      "excerpt": "Had he meant to quote a particular text, he would not have written ‘Prophets,’ but ‘the Prophet.’ By thus using the plural he evidently90 does not take the words of any one passage in Scripture, but the sense of the whole. Nazarene is interpreted, ‘Holy,’ and that the Lord would be Holy, all Scripture testifies. Otherwise we may explain that it is found in Isaiah rendered to the strict letter of the Hebrew. [margin note: c. 11. 1] “There shall come a Rod out of the stem of Jesse, and a Nazarene shall grow out of His roots.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-0286-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.2.23",
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.2.23:83298371:0"
       ]
     },
     {
@@ -127,7 +141,203 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.2.23:528359aa:0"
       ]
+    },
+    {
+      "id": "hcf:gloss-ordinaria:matthew.2.23:7038108b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "hcf:work:gloss-ordinaria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 2:23",
+      "excerpt": "To this he adds the Prophet's testimony, saying, That it might be fulfilled which was spoken by the Prophets, &c.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.2.23:a9f92960:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-9",
+      "title": "Homily on the Gospel of Matthew 9 on matthew 2:23",
+      "excerpt": "\"Was not this then,\" one may say, \"casting a shade over the prophecy touching Bethlehem?\" By no means: rather this very fact was sure greatly to stir up men, and to awaken them to the search of what was said of Him. Thus, for example, Nathanael too enters on the inquiry concerning Him, saying, \"Can there any good thing come out of Nazareth?\" For the place was of little esteem; or rather not that place only, but also the whole district of Galilee. Therefore the Pharisees said, \"Search and look, for out of Galilee ariseth no prophet.\" Nevertheless, He is not ashamed to be named even from thence, signifying that He needs not ought of the things of men; and His disciples also He chose out of Galilee; everywhere cutting off the pretexts of them who are disposed to be remiss, and giving tokens that we have no need of outward things, if we practice virtue. For this cause He doth not choose for Himself so much as a house; for \"the Son of Man,\" saith He, \"hath not where to lay His head;\" and when Herod is plotting against Him, He fleeth, and at His birth is laid in a manger, and abides in an inn, and takes a mother of low estate; teaching us to think no such thing a disgrace, and from the first outset trampling under foot the haughtiness of man, and bidding us give ourselves up to virtue only.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.2.23:0fe528ef:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-9",
+      "title": "Homily on the Gospel of Matthew 9 on matthew 2:23",
+      "excerpt": "Joseph therefore comes to Nazareth, partly to avoid the danger, partly also delighting to abide in his native place. To give him the more courage, he receives also an oracle from the angel touching this matter. Luke, however, doth not say that he came there by Divine warning, but that when they had fulfilled all the purification, they returned to Nazareth. What then may one say? That Luke is giving an account of the time before the going down to Egypt, when he saith these things. For He would not have brought them down thither before the purification, in order that nothing should be done contrary to the law, but he waited for her to be purified, and to go to Nazareth, and that then they should go down to Egypt. Then, after their return, He bids them go to Nazareth. But before this they were not warned of God to go thither, but yearning after their native place, they did so of their own accord. For since they had gone up for no other cause but on account of the taxing, and had not so much as a place where to stay, when they had fulfilled that for which they had come up, they went down to Nazareth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.2.23:818c3dad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-9",
+      "title": "Homily on the Gospel of Matthew 9 on matthew 2:23",
+      "excerpt": "We see here the cause why the angel also, putting them at ease for the future, restores them to their home. And not even this simply, but he adds to it a prophecy, \"That it might be fulfilled,\" saith he, \"which was spoken by the prophets, He shall be called a Nazarene.\"\r\n\r\nAnd what manner of prophet said this? Be not curious, nor overbusy. For many of the prophetic writings have been lost; and this one may see from the history of the Chronicles. For being negligent, and continually falling into ungodliness, some they suffered to perish, others they themselves burnt up and cut to pieces. The latter fact Jeremiah relates; the former, he who composed the fourth book of Kings, saying, that after a long time the book of Deuteronomy was hardly found, buried somewhere and lost. But if, when there was no barbarian there, they so betrayed their books, much more when the barbarians had overrun them. For as to the fact, that the prophet had foretold it, the apostles themselves in many places call Him a Nazarene.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.2.23:413842c3:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 2:23",
+      "excerpt": "(Verse 23) And coming, he lived in a city called Nazareth, so that what was spoken by the prophets might be fulfilled, that he would be called a Nazarene. If he had set a fixed example from the Scriptures, he would never have said, what was spoken by the prophets; but simply, what was spoken by the prophet: but now, calling them prophets in the plural, he shows that he did not take words from the Scriptures, but the meaning. Nazarene, interprets as holy. But all Scripture testifies that the Lord would be holy. We can also say in another way, that even in the same words, according to the Hebrew truth, it is written in Isaiah: There shall come forth a rod out of the stem of Jesse, and a Nazarene shall rise out of his roots (Isa. 11:1).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.2.23:f71defaf:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-1-2-23",
+      "title": "COMMENTARY ON MATTHEW 1.2.23 on matthew 2:23",
+      "excerpt": "If this could have been found in the Scriptures, he never would have said, \"Because it has been spoken by the prophets,\" but he would rather have spoken more plainly: \"Because it has been spoken by a prophet.\" As it is now, in speaking of prophets in general he has shown that he has not taken the specific words but rather the sense from the Scriptures. \"Nazarene\" is understood as \"holy.\" Every Scripture attests that the Lord was to be holy. We can also speak in another way of what was written … in Hebrew in Isaiah: \"A branch will blossom from the root of Jesse, a Nazarene from his root.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-1-2-23",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.2.23:7f66ff0f:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 2:23",
+      "excerpt": "Had he meant to quote a particular text, he would not have written 'Prophets,' but 'the Prophet.' By thus using the plural he evidently does not take the words of any one passage in Scripture, but the sense of the whole. Nazarene is interpreted 'Holyd,' and that the Lord would be Holy, all Scripture testifies. Otherwise we may explain that it is found in Isaiah (c. 11:1.) rendered to the strict letter of the Hebrew. There shall come a Rod out of the stem of Jesse, and a Nazarene shall grow out of His rootse.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.2.23:b5aa6c97:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:de-viris-illustribus-on-illustrious-men-section-3",
+      "title": "De Viris Illustribus (On Illustrious Men), Section 3 on matthew 2:23",
+      "excerpt": "In this it is to be noted that wherever the Evangelist, whether on his own account or in the person of our Lord the Saviour quotes the testimony of the Old Testament he does not follow the authority of the translators of the Septuagint but the Hebrew. Wherefore these two forms exist \"Out of Egypt have I called my son,\" and \"for he shall be called a Nazarene.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:matthew.2.23:7480e56a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:fragment-16",
+      "title": "FRAGMENT 16 on matthew 2:23",
+      "excerpt": "But if \"the Nazarene\" is interpreted to mean \"holy\" or, according to some, as \"flower,\" this is the designation found in many instances. For Daniel calls him \"holy\" or \"of the holy ones.\" Likewise we find in Isaiah: \"A branch from the stock of Jesse and its flower.\" Even the Lord says of himself in the Song of Songs, \"I am the bloom of the plain, the lily of the valleys.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.2.23:d1eda118:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 2:23",
+      "excerpt": "And he came and dwelt in a city called Nazareth. How is it that Luke says that after the Lord was born, He completed the forty days, was held in the arms of Simeon, and then went down to Nazareth (Lk. 2:22-40)? But here Matthew says that after the return from Egypt He went to Nazareth? Learn, therefore, that Luke spoke those things on which Matthew was silent. I will give an example: after the birth, He completed the forty days, and then went down to Nazareth. This is what Luke says. Matthew speaks of what took place afterwards, that He fled into Egypt, and then returned from Egypt to Nazareth, which took place later. They do not contradict each other. One of them, Luke, speaks of the descent from Bethlehem to Nazareth, while the other, Matthew, speaks of the return from Egypt to Nazareth, which took place later. That it might be fulfilled which was spoken by the prophets, He shall be called a Nazarene. Which prophet said this? It is not to be found now. For many books have been lost, because of both the carelessness of the Hebrews and the frequent captivities. But perhaps this was an unwritten prophecy among the Jews. \"Nazarene\" means \"sanctified\" and as the Christ is holy, it is right that He is called \"a Nazarene.\" For by many prophets the Lord was called \"The Holy One of Israel\" (Ps. 88:18, Is. 1:4, etc.)",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.2.23:28edd2f0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 2:23",
+      "excerpt": "(23) That what was spoken by the prophet might be fulfilled, \"He shall be called a Nazarene.\" This is not found written, but it can be said that it was gathered from many passages. For Nazarene means holy; and because Christ is called holy: \"Until the holy one is anointed\" (Dan 9:24), therefore, he is said to be so called by the prophet. Or it can be said that by Nazarene is meant abounding with flowers, as in Is (11:1): \"There shall come forth a shoot from the stump of Jesse and a flower shall grow out of his roots.\" This agrees with Song of Songs (2:1): \"I am a rose of Sharon, a lily of the valleys.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.2.23"
     },
     {
       "id": "catena-matt-0281-v23",
@@ -199,6 +409,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.2.23:5df11a5f:0"
       ]
     },
     {

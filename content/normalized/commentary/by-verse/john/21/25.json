@@ -4,6 +4,31 @@
   "verseNumber": 25,
   "entries": [
     {
+      "id": "catena-john-2616-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.21.25",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 21:24–25",
+      "excerpt": "The which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written; meaning not the world had not space for them, but that the capacity of readers was not large enough to hold them: though sometimes words themselves may exceed the truth, and yet the thing they express be true; a mode of speech which is used not to explain an obscure and doubtful, but to magnify or estimate a plain, thing: nor does it involve any departure from the path of truth; inasmuch as the excess of the word over the truth is evidently only a figure of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.21.25:446aa272:0"
+      ]
+    },
+    {
       "id": "augustine-john-124-c21-v25",
       "relation": "verse",
       "targetVerseId": "kjva:john.21.25",
@@ -38,24 +63,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-2616-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.21.25",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 21:24–25",
-      "excerpt": "The which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written; meaning not the world had not space for them, but that the capacity of readers was not large enough to hold them: though sometimes words themselves may exceed the truth, and yet the thing they express be true; a mode of speech which is used not to explain an obscure and doubtful, but to magnify or estimate a plain, thing: nor does it involve any departure from the path of truth; inasmuch as the excess of the word over the truth is evidently only a figure of…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.21.25:4da9f197:0"
       ]
     },
     {
@@ -75,6 +89,142 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.21.25:93be8a27:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-124",
+      "title": "Tractates on John 124 on john 21:25",
+      "excerpt": "\"This is the disciple who testifieth of these things, and wrote these things; and we know that his testimony is true. And there are also,\" he adds, \"many other things which Jesus did, the which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written.\" We are not to suppose that in regard to local space the world would be unable to contain them; for how could they be written in it if it could not bear them when written? but perhaps it is that they could not be comprehended by the capacity of the readers: although, while our faith in certain things themselves remains unharmed, the words we use about them may not unfrequently appear to exceed belief. This will not take place when anything that was obscure or dubious is in course of exposition by the setting forth of its ground and reason, but only when that which is clear of itself is either magnified or extenuated, without any real departure from the pathway of the truth to be intimated; for the words may outrun the thing itself that is indicated only in such a way, that the will of him that speaketh, but without any intention to deceive, may be apparent, so that, knowing how far he will be believed, he, orally, either diminishes or magnifies his subject beyond the limit to which credit will be given. This mode of speaking is called by the Greek name hyperbole, by the masters not only of Greek, but also of Latin literature. And this mode is found not only here, but in several other parts also of the divine literature.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.21.25"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.21.25:02017a04:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-88",
+      "title": "Homily on the Gospel of John 88 on john 21:25",
+      "excerpt": "\"There are also many other things which Jesus did, the which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written.\" \"Whence it is clear that I could not have written to court favor; for I who, when the miracles were so many, have not even related so many as the others have, but omitting most of them, have brought forward the plots of the Jews, the stonings, the hatred, the insults, the revilings, and have shown how they called Him a demoniac and a deceiver, certainly could not have acted to gain favor. For it behooved one who courted favor to do the contrary, to reject the reproachful, to set forth the glorious.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.21.25"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.21.25:3653cab3:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-88",
+      "title": "Homily on the Gospel of John 88 on john 21:25",
+      "excerpt": "And if he has said that so many miracles had taken place, marvel thou not, but, considering the ineffable power of the Doer, receive with faith what is spoken. For it was as easy for Him to do whatever He would, as it is for us to speak, or rather much easier; for it sufficed that He should will only, and all followed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.21.25"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.21.25:31dc00d0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-12-1",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 12:1 on john 21:25",
+      "excerpt": "Very great, then, says the apostle, will be the number of the miracles that God has done, and altogether without number will the list of his deeds be seen to be. And out of many thousands have these that are recorded been taken, as not being inadequate to profit to the uttermost those who read them. And let no one who is of a teachable spirit and loves instruction, John implies, blame the one who wrote this book because he has not recorded the rest. For if \"the things\" that he did \"had been written\"—every one, without any omission—then such an immeasurable number of the books would have filled the world. We maintain that, even as it is, the power of the Word has been displayed more than abundantly. For it is open to everyone to observe that a thousand miracles were performed by the power of our Savior. The preachers of the Gospels, however, have recorded the more remarkable of them, in all probability. They recorded what could best be confirmed by their hearers in incorruptible faith and those that would provide instruction in morality and doctrine. They did this so that, conspicuous for the orthodoxy of their faith and glorified by many works that result in righteousness, they might meet at the very gates of the city above. And, being joined to the church of the firstborn in the faith, they might at length attain to the kingdom of heaven in Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-12-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.21.25"
+    },
+    {
+      "id": "hcf:gregory-of-nyssa:john.21.25:b6618408:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "hcf:work:gregory-of-nyssa:answer-to-eunomius-s-second-book",
+      "title": "ANSWER TO EUNOMIUS'S SECOND BOOK on john 21:25",
+      "excerpt": "Holy Scripture omits all idle inquiry into substance as superfluous and unnecessary. And I think it was for this reason that John, the son of thunder, who with the loud voice of the doctrines contained in his Gospel rose above that of the preaching that heralded them, said at the close of his Gospel, \"There are also many other things that Jesus did, so many that, in fact, if all of them were written, I suppose that even the world itself could not contain the books that should be written.\" He certainly does not mean by these the miracles of healing, for of these the narrative [in general terms] leaves none unrecorded, even though it does not mention the names of all who were healed. For when he tells us that the dead were raised, that the blind received their sight, that the deaf heard, that the lame walked and that he healed all kinds of sickness and disease, he does not in this leave any miracle unrecorded but embraces each and all in these general terms. But it may be that the Evangelist means this in his profound wisdom: that we are to learn the majesty of the Son of God not by the miracles alone that he did in the flesh. For these are little compared with the greatness of his other work.… For since God has made all things in wisdom and to his wisdom there is no limit, … the world that is bounded by limits of its own cannot contain within itself the account of infinite wisdom. If, then, the whole world is too little to contain the teaching of the works of God, how many worlds could contain an account of the Lord of them all? For perhaps it will not be denied even by the tongue of the blasphemer that the maker of all things that have been created by the mere fiat of his will is infinitely greater than all. If, then, the whole creation cannot contain what might be said respecting itself—for this is, according to our explanation, what the great Evangelist is testifying to—how should human shallowness contain all that might be said of the Lord of creation?",
+      "takeaway": "",
+      "sourceId": "hcf:source:answer-to-eunomius-s-second-book",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c395"
+      ],
+      "targetVerseId": "kjva:john.21.25"
+    },
+    {
+      "id": "hcf:hcf-theodore-of-mopsuestia:john.21.25:52341fbf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-of-mopsuestia",
+      "workId": "hcf:work:hcf-theodore-of-mopsuestia:commentary-on-john-7-21-25",
+      "title": "COMMENTARY ON JOHN 7.21.25 on john 21:25",
+      "excerpt": "And here we conclude … this commentary on the harp of the Spirit, on the heavenly theologian and Apostle who is the friend of the glory of the Lord, the holy John the younger.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-john-7-21-25",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c428"
+      ],
+      "targetVerseId": "kjva:john.21.25"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.21.25:daf4199d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 21:25",
+      "excerpt": "Do not be amazed at what was said, that if books were written about the deeds of Jesus, the world could not contain them; but consider the ineffable power of God the Word and accept what was said with faith. For just as it is easy for us to speak, so it is easy for Him, and indeed far easier, to do whatever He pleases.\r\nSome say that this is said hyperbolically, according to the custom of Scripture; for Scripture habitually employs hyperboles. For example: \"we saw cities reaching up to heaven\" (Num. 13:29), \"we saw sons, and we were in our own eyes as grasshoppers\" (Num. 13:34), and the like. In the same sense, they say, it is said here that the world could not contain the books that would be written.\r\nOtherwise, by \"the world\" they understand a person who is minded toward worldly things; but the divine and mysterious works accomplished by Jesus in the invisible and visible world, and in the dispensation of the last times, which is full of mysteries, the worldly person cannot comprehend, according to the saying: \"I have many things to say to you, but you cannot bear them now\" (John 16:12).\r\nBut let us pray that the deeds and words of the Lord may never fall into oblivion among us, but that we may always open this book of the Beloved and seek out the treasure contained in the miracles and teaching of Jesus; that, having been purified in word and life, on the day of revelation we may be deemed worthy of the most ineffable deeds and mysteries which now, while we are in the world, we cannot contain, and may be made perfect in Christ Himself, Who loved us, and through His beloved disciple enlightened us with the theology and knowledge of Him — the Son, and of the Father, and of the Holy Spirit, to Whom be glory forever. Amen.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.21.25"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.21.25:19f27cec:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 21:25",
+      "excerpt": "Now John states the incompleteness of his Gospel as compared with the reality, because Christ not only did these things but there are also many other things which Jesus did.\r\n\r\nHis statement, were every one of them to be written, I suppose that the world itself could not contain the books that would be written, can be understood in two ways. First, the word contain can refer to the capacity of our minds to understand. So the meaning is: So much could be said about Christ that the world could not understand all that could be written: \"I have yet many things to say to you, but you cannot bear them now,\" that is, understand them (16:12). We could also regard this statement as a deliberate exaggeration; and it then indicates the abundance of Christ's works.\r\n\r\nHow reconcile this? He had just said, we know that his testimony is true, and then immediately resorts to hyperbole, exceeding the truth. According to Augustine, Scripture does use figures of speech, such as \"I saw the Lord seated on a high and lofty throne\" (Is 6:1), and such statements are not false. This is so when hyperbole is used. The desire of the speaker is not that we accept the literal meaning of the words, but what they were intended to mean, that is, the great number of Christ's works. Hyperbole is not used to explain what is obscure or doubtful, but to exaggerate or minimize what is obvious. For example, to emphasize how plentiful something is, one can say that there is enough for a hundred or a thousand people. And to minimize something, one could say that there is hardly enough for three. This is not speaking falsely, because it is so obvious that the words contort the reality that they show that one does not intend to lie, but to indicate that something is great or small.\r\n\r\nOr, this statement could be understood to refer to the power of Christ, who performed these signs; and the emphasis is on every one of them. For to write about each and every word and deed of Christ is to reveal the power of every word and deed. Now the words and deeds of Christ are also those of God. Thus, if one tried to write and tell of the nature of every one, he could not do so; indeed, the entire world could not do this. This is because even an infinite number of human words cannot equal one word of God. From the beginning of the Church Christ has been written about; but this is still not equal to the subject. Indeed, even if the world lasted a hundred thousand years, and books written about Christ, his words and deeds could not be completely revealed: \"Of making many books there is no end\" (Eccl 12:12); The works of God \"are multiplied above number\" (Ps 50:5).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.21.25"
     }
   ]
 }

@@ -23,24 +23,6 @@
       ]
     },
     {
-      "id": "catena-john-2380-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.22",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:19–22",
-      "excerpt": "As letters are inscribed on a trophy declaring the victory, so Pilate wrote a title on Christ’s cross. And Pilate wrote a title, and put it on the cross: thus at once distinguishing Christ from the thieves with Him, and exposing the malice of the Jews in rising up against their King: And the writing was, Jesus of Nazareth, the King of the Jews.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2382-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.22",
@@ -56,17 +38,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.22:aed1b945:0"
       ]
     },
     {
-      "id": "catena-john-2383-v22",
+      "id": "catena-john-2387-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.22",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 19:19–22",
-      "excerpt": "It is probable that many Gentiles as well as Jews bad come up to the feast. So the title was written in three languages, that all might read it: And it was written in Hebrew, and Greek, and Latin.",
+      "excerpt": "O ineffable working of Divine power even in the hearts of ignorant men! Did not some hidden voice sound from within, and, if we may say so, with clamorous silence, saying to Pilate in the prophetic words of the Psalm, Alter not the inscription of the titlea? But what say ye, ye mad priests: will the title be the less true, because Jesus said, I am the King of the Jews? If that which Pilate wrote cannot be altered, can that be altered which the Truth spoke? Pilate wrote what he wrote, bceause our Lord said what He said.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -110,17 +99,42 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.19.22:5de32e4b:0"
       ]
     },
     {
-      "id": "catena-john-2387-v22",
+      "id": "catena-john-2380-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.22",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 19:19–22",
-      "excerpt": "O ineffable working of Divine power even in the hearts of ignorant men! Did not some hidden voice sound from within, and, if we may say so, with clamorous silence, saying to Pilate in the prophetic words of the Psalm, Alter not the inscription of the titlea? But what say ye, ye mad priests: will the title be the less true, because Jesus said, I am the King of the Jews? If that which Pilate wrote cannot be altered, can that be altered which the Truth spoke? Pilate wrote what he wrote, bceause our Lord said what He said.",
+      "excerpt": "As letters are inscribed on a trophy declaring the victory, so Pilate wrote a title on Christ’s cross. And Pilate wrote a title, and put it on the cross: thus at once distinguishing Christ from the thieves with Him, and exposing the malice of the Jews in rising up against their King: And the writing was, Jesus of Nazareth, the King of the Jews.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2383-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.22",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:19–22",
+      "excerpt": "It is probable that many Gentiles as well as Jews bad come up to the feast. So the title was written in three languages, that all might read it: And it was written in Hebrew, and Greek, and Latin.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -165,6 +179,108 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.19.22:f0641998:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-117",
+      "title": "Tractates on John 117 on john 19:22",
+      "excerpt": "\"Then said the chief priests of the Jews unto Pilate, Write not, The King of the Jews; but that he said, I am King of the Jews. Pilate answered, What I have written I have written.\" Oh the ineffable power of the working of God, even in the hearts of the ignorant! Was there not some hidden voice that sounded through Pilate's inner man with a kind, if one may so say, of loud-toned silence, the words that had been prophesied so long before in the very letter of the Psalms, \"Corrupt not the inscription of the title\"? Here, then, you see, he corrupted it not; what he has written he has written. But the high priests, who wished it to be corrupted, what did they say? \"Write not, The King of the Jews; but that he said, I am King of the Jews.\" What is it, madmen, that you say? Why do you oppose the doing of that which you are utterly unable to alter? Will it by any such means become the less true that Jesus said, \"I am King of the Jews\"? If that cannot be tampered with which Pilate has written, can that be tampered with which the truth has uttered?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.22"
+    },
+    {
+      "id": "hcf:augustine:john.19.22:4f07838f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-201-2",
+      "title": "SERMON 201.2 on john 19:22",
+      "excerpt": "The magi were from the Gentiles. Pilate too was a Gentile. They saw a star in the sky; he wrote a title on the tree. Both, however, were looking for or acknowledging the king, not of the Gentiles but of the Jews. Thus already there was a prefiguring of what the Lord himself spoke about later, \"Many will come from the east and the west and sit down with Abraham and Isaac and Jacob in the kingdom of heaven. But the children of the kingdom will go into outer darkness.\" The magi, you see, had come from the east, Pilate from the west. So they bore witness to the king of the Jews rising, that is, to his being born. Pilate bore witness to the king of the Jews setting, that is, to his dying. In this way, they could take their seats in the kingdom of heaven with Abraham and Isaac and Jacob, from whom the Jews derived their descent. They were not descended from them, of course, in the flesh but grafted into them by faith. Thus the wild olive the apostle talks about, that was to be grafted into the olive, was already being prefigured.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.22"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.22:b35ef825:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-85",
+      "title": "Homily on the Gospel of John 85 on john 19:22",
+      "excerpt": "\"And Pilate wrote a title.\" At the same time requiting the Jews, and making a defense for Christ. For since, they had given Him up as worthless, and attempted to confirm this sentence by making Him share the punishment of the robbers, in order that for the future it might be in no man's power to prefer evil charges against him, or to accuse him as a worthless and wicked person, to close moreover their mouths and the mouths of all who might desire to accuse Him, and to show that they had risen up against their own King, Pilate thus placed, as on a trophy, those letters, which utter a clear voice, and show forth His Victory, and proclaim His Kingdom, though not in its completeness. And this he made manifest not in a single tongue, but in three languages; for since it was likely that there would be a mixed multitude among the Jews on account of the Feast, in order that none might be ignorant of the defense, he publicly recorded the madness of the Jews, in all the languages. For they bore malice against Him even when crucified. \"Yet what did this harm you? Nothing. For if He was a mortal and weak, and was about to become extinct, why did ye fear the letters asserting that He is the King of the Jews?\" And what do they ask? \"Say that 'he said.' For now it is an assertion, and a general sentence, but if 'he said' be added, the charge is shown to be one arising from his own rashness and arrogance.\" Still Pilate was not turned aside, but stood to his first decision. And it is no little thing that is dispensed even from this circumstance, but the whole matter. For since the wood of the cross was buried, because no one was careful to take it up, inasmuch as fear was pressing, and the believers were hurrying to other urgent matters; and since it was in after times to be sought for, and it was likely that the three crosses would lie together, in order that the Lord's might not be unknown, it was made manifest to all, first by its lying in the middle, and then by the title. For those of the thieves had no titles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.22"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.22:851c8291:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-87",
+      "title": "Homily on the Gospel of Matthew 87 on john 19:22",
+      "excerpt": "For after having done what they would, they endeavor also to injure His honor, fearing His resurrection. Therefore they say these things publicly, and crucified thieves with Him, and wishing to prove Him a deceiver, they say, \"Thou that destroyest the temple, and buildest it in three days come down from the cross.\" For since on telling Pilate to remove the accusation (this was the writing, \"The king of the Jews\"), they prevailed not, but he persevered in saying, \"What I have written, I have written,\" they then endeavor by their derision of Him to show that He is not a king.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.22"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.22:9037f5b2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:22",
+      "excerpt": "But Pilate did not agree, and remained of his former opinion. Therefore he also says: \"What I have written, I have written.\"\r\nHowever, something else important is also arranged here. Since the three crosses, buried in the earth, would lie in one and the same place, so that it would not remain unknown which of them was the Cross of the Lord, it was arranged so that it alone had the title and inscription, and by this sign could be recognized. For the crosses of the robbers did not have inscriptions.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.22"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.22:d47e2c5f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:22",
+      "excerpt": "2424 Secondly, we read that Pilate was insistent on keeping the title. He refused to change it because he wanted to disgrace them. He said, What I have written I have written. This did not happen by chance; it had been arranged by God and predicted long before. Certain Psalms have as a title, \"Do not Destroy. For David, for an inscription of a title.\" Indeed, Psalm 59 especially concerns the passion, \"Deliver me from my enemies, O my God.\" And so do the two preceding Psalms: \"Be merciful to me, O God, be merciful to me, for in thee my soul takes refuge\" (Ps 57) and Psalm 58. And so it was folly for the chief priests to complain, for just as they could not destroy what the Truth had said, so also they could not destroy what Pilate had written. Pilate said, What I have written I have written, because what the Lord said, He said, as Augustine remarks.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.22"
     }
   ]
 }

@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-mark-0500-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.12",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:1–13",
-      "excerpt": "The people of the land of Gennesareth, who seemed to be unlearned men, not only come themselves, but also bring their sick to the Lord, that they may but succeed in touching the hem of His garment. But the Pharisees and Scribes, who ought to have been the teachers of the people, run together to the Lord, not to seek for healing, but to move captious questions; wherefore it is said, Then there came together unto him the Pharisees and certain of the Scribes, coming from Jerusalem; and when they saw some of his disciples eat bread with common, that is, with unwashen hands, they found fault.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0502-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.12",
@@ -58,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-mark-0508-v12",
+      "id": "catena-mark-0500-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.12",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "The sense of the word honour in Scripture is not so much the saluting and paying court to men, as alms-giving, and bestowing gifts; honour, says the Apostle, widows who are widows indeed. (1 Tim. 5:3.)",
+      "excerpt": "The people of the land of Gennesareth, who seemed to be unlearned men, not only come themselves, but also bring their sick to the Lord, that they may but succeed in touching the hem of His garment. But the Pharisees and Scribes, who ought to have been the teachers of the people, run together to the Lord, not to seek for healing, but to move captious questions; wherefore it is said, Then there came together unto him the Pharisees and certain of the Scribes, coming from Jerusalem; and when they saw some of his disciples eat bread with common, that is, with unwashen hands, they found fault.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -94,17 +76,17 @@
       ]
     },
     {
-      "id": "catena-mark-0501-v12",
+      "id": "catena-mark-0508-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.12",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "For the disciples of the Lord, who were taught only the practice of virtue, used to eat in a simple way, without washing their hands; but the Pharisees, wishing to find an occasion of blame against them, took it up; they did not indeed blame them as transgressors of the law, but for transgressing the traditions of the elders. Wherefore it goes on: For the Pharisees and all the Jews, except they wash their hands oft, eat not, holding the tradition of the elders.",
+      "excerpt": "The sense of the word honour in Scripture is not so much the saluting and paying court to men, as alms-giving, and bestowing gifts; honour, says the Apostle, widows who are widows indeed. (1 Tim. 5:3.)",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -127,7 +109,83 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.7.12:038783d3:1"
       ]
+    },
+    {
+      "id": "catena-mark-0501-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.12",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:1–13",
+      "excerpt": "For the disciples of the Lord, who were taught only the practice of virtue, used to eat in a simple way, without washing their hands; but the Pharisees, wishing to find an occasion of blame against them, took it up; they did not indeed blame them as transgressors of the law, but for transgressing the traditions of the elders. Wherefore it goes on: For the Pharisees and all the Jews, except they wash their hands oft, eat not, holding the tradition of the elders.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.7.12:d8c284a2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 7:12",
+      "excerpt": "The Law, He says, teaches: \"Honor your father and your mother\" (Exodus 20:12); but you teach children to say to their parents: that which you want from me is corban, that is, dedicated to God. For the Pharisees, wishing to profit from the property of simple people, taught children (when the children had any possessions and the parents demanded from them) to say the following: I have already dedicated that to God, and you must not demand what has been dedicated to God. By thus deceiving children and persuading them to dedicate their possessions to God, the Pharisees through this made them neglect their parents, and they themselves consumed what had been dedicated to God. This is precisely what the Lord charges them with—that for the sake of gain they transgress the Law of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.7.12"
+    },
+    {
+      "id": "hcf:basil-the-great:mark.7.12:898e8d93:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:the-morals-4",
+      "title": "THE MORALS 4 on mark 7:12",
+      "excerpt": "The condemnation of those who have knowledge yet do not put their knowledge into practice is more severe. Even sin committed in ignorance is not without risk.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-morals-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:mark.7.12"
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.7.12:42d36ef5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homilies-on-philippians-6",
+      "title": "HOMILIES ON PHILIPPIANS 6 on mark 7:12",
+      "excerpt": "Christ says, \"Care for the poor\"; Mammon says, \"Take away even those things the poor possess.\" Christ says, \"Empty yourself of what you have\"; Mammon says, \"Take also what they possess.\" Do you see the opposition, the strife between them? See how it is that one cannot obey both, but must reject one?… Christ says, \"None of you can become my disciple if you do not give up all your possessions\"; Mammon says, \"Take the bread from the hungry.\" Christ says, \"Cover the naked\"; the other says, \"Strip the naked.\" Christ says, \"You shall not turn away from your own family, and those of your own house\"; Mammon says, \"You shall not show mercy to those of your own family. Though you see your mother or your father in want, despise them.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:homilies-on-philippians-6",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:mark.7.12"
     },
     {
       "id": "catena-mark-0504-v12",
@@ -138,24 +196,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
       "excerpt": "He beats back the vain words of the Pharisees with His arguments, as men drive back dogs with weapons, by interpreting Moses and Isaiah, that we too by the word of Scripture may conquer the heretics, who oppose us; wherefore it goes on: (Isa. 29:13) Well hath Esaias prophesied of you hypocrites; as it is written, This people honoureth me with their lips, but their heart is far from me.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0505-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.12",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:1–13",
-      "excerpt": "For since they unjustly accused the disciples not of transgressing the law, but the commands of the elders, He sharply confounds them, calling them hypocrites, as looking with reverence upon what was not worthy of it. He adds, however, the words of Isaiah the prophet, as spoken of them; as though He would say, As those men, of whom it is said, that they honour God with their lips, whilst their heart is far from him, in vain pretend to observe the dictates of piety, whilst they honour the doctrines of men, so ye also neglect your soul, of which ye should take care, and blame those who live…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -184,14 +224,32 @@
       ]
     },
     {
-      "id": "catena-mark-0507-v12",
+      "id": "catena-mark-0513-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.12",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:1–13",
+      "excerpt": "Mystically, again, the disciples eating with unwashed hands signifies the future fellowship of the Gentiles with the Apostles. The cleansing and washing of the Pharisees is barren; but the fellowship of the Apostles, though without washing, has stretched out its branches as far as the sea.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0505-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.12",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "Moreover, to convict them of neglecting the reverence due to God, for the sake of the tradition of the elders, which was opposed to the Holy Scriptures, He subjoins, For Moses said, Honour thy father and thy mother; and, Whoso curseth father or mother, let him die the death. (Exod. 21:17.)",
+      "excerpt": "For since they unjustly accused the disciples not of transgressing the law, but the commands of the elders, He sharply confounds them, calling them hypocrites, as looking with reverence upon what was not worthy of it. He adds, however, the words of Isaiah the prophet, as spoken of them; as though He would say, As those men, of whom it is said, that they honour God with their lips, whilst their heart is far from him, in vain pretend to observe the dictates of piety, whilst they honour the doctrines of men, so ye also neglect your soul, of which ye should take care, and blame those who live…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -217,6 +275,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.7.12:2d3ab2f2:0"
       ]
     },
     {
@@ -238,14 +303,14 @@
       ]
     },
     {
-      "id": "catena-mark-0513-v12",
+      "id": "catena-mark-0507-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.12",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "Mystically, again, the disciples eating with unwashed hands signifies the future fellowship of the Gentiles with the Apostles. The cleansing and washing of the Pharisees is barren; but the fellowship of the Apostles, though without washing, has stretched out its branches as far as the sea.",
+      "excerpt": "Moreover, to convict them of neglecting the reverence due to God, for the sake of the tradition of the elders, which was opposed to the Holy Scriptures, He subjoins, For Moses said, Honour thy father and thy mother; and, Whoso curseth father or mother, let him die the death. (Exod. 21:17.)",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

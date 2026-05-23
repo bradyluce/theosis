@@ -19,7 +19,102 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.1.66:83d2d3f8:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.66:90c5c500:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:66",
+      "excerpt": "All this was by special providence, so that the one who would bear witness concerning Christ would be received with full trust, and so that all would be convinced from the very birth of John that he is above many.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.66"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.66:acbfca44:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:66",
+      "excerpt": "(Metaphrastes.) For God worked miracles in John which he did not himself, but the right hand of God in him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.66"
+    },
+    {
+      "id": "hcf:bede:luke.1.66:f89b295b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-20",
+      "title": "Homilies on the Gospels 2.20 on luke 1:66",
+      "excerpt": "On the day of John's circumcision, when he also received his name, \"fear came upon all their neighbors, and all these words were spread abroad throughout the mountain country of Judea.\" Furthermore, at the time of our Lord's resurrection, when the Spirit had been sent down from above and the glory of his name was made known to the world by the apostles, a most salutary fear immediately struck the hearts. Not only of the Jews, who were of the neighborhood either by their physical location or by their knowledge of the law, but also those of foreign nations, even to the ends of the earth. And John's reputation for virtue exceeded not only the whole mountain country of Judea, but also all the heights of worldly kingdoms and worldly wisdom, so that everywhere people left behind their former way of life and flocked together to attain the sacramental mysteries of his faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.66"
+    },
+    {
+      "id": "hcf:bede:luke.1.66:6b7c7064:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:66",
+      "excerpt": "For forerunning signs prepare the way for the forerunner of the truth, and the future prophet is recommended by auspices sent before him; hence it follows, For the hand of the Lord was with him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.66"
+    },
+    {
+      "id": "hcf:gloss-ordinaria:luke.1.66:c90e3771:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "hcf:work:gloss-ordinaria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:66",
+      "excerpt": "(ordin.) But mystically, at the time of our Lord's resurrection, by the preaching of the grace of Christ, a wholesome dread shook the hearts not only of the Jews, (who were neighbours, either from the place of their dwelling, or from the knowledge of the law,) but of the foreign nations also. The name of Christ surmounts not only the hilly country of Judæa, but all the heights of worldly dominion and wisdom.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.66"
     }
   ]
 }

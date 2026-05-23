@@ -23,14 +23,14 @@
       ]
     },
     {
-      "id": "catena-john-1282-v23",
+      "id": "catena-john-1286-v23",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.23",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
+      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -38,6 +38,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ]
+    },
+    {
+      "id": "catena-john-1288-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.9.23",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 9:18–23",
+      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.9.23:9df6fef4:0"
       ]
     },
     {
@@ -77,24 +102,6 @@
       ]
     },
     {
-      "id": "catena-john-1286-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.9.23",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 9:18–23",
-      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1287-v23",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.23",
@@ -113,14 +120,14 @@
       ]
     },
     {
-      "id": "catena-john-1288-v23",
+      "id": "catena-john-1282-v23",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.23",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
+      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -183,6 +190,75 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.9.23:15359473:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 9:23",
+      "excerpt": "They were unsteady and more fainthearted than their son. But he was becoming a fearless witness of the truth; he had begun to see well with the eyes of his mind also.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.9.23"
+    },
+    {
+      "id": "hcf:alcuin:john.9.23:39453d48:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "hcf:work:alcuin:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 9:23",
+      "excerpt": "The Evangelist shows that it was not from ignorance, but fear, that they gave this answer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c804",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.9.23"
+    },
+    {
+      "id": "hcf:hcf-theodore-stratelates:john.9.23:5ee9b460:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-stratelates",
+      "workId": "hcf:work:hcf-theodore-stratelates:fragment-on-john-82",
+      "title": "FRAGMENT ON JOHN 82 on john 9:23",
+      "excerpt": "Thus evil mastered the rulers who not only disabled themselves through unbelief but also through their threatening shut the way of salvation for the rest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-on-john-82",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c319"
+      ],
+      "targetVerseId": "kjva:john.9.23"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.9.23:932c95a3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 9:23",
+      "excerpt": "1334 The reason for their answer is given when he says, his parents said this because they feared the Jews; for they were still imperfect and did not dare do what our Lord says: \"Do not fear those who kill the body\" (Mt 10:28). The reason for their fear was that the Jews had already agreed that if any one should confess him to be Christ, he was to be put out of the synagogue. \"I have said all this to you to keep you from falling away. They will put you out of the synagogues\" (Jn 16:1). As Augustine says, it was no longer an evil to be cast out of the synagogue, for the ones they rejected Christ welcomed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.9.23"
     }
   ]
 }

@@ -4,6 +4,24 @@
   "verseNumber": 31,
   "entries": [
     {
+      "id": "catena-john-2429-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.31",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:31–37",
+      "excerpt": "He that saw it knoweth; let him that saw not believe his testimony. He gives testimonies from the Scriptures to each of these two things he relates. After, they brake not His legs, He adds, For these things were done, that the Scripture should be fulfilled, A bone of Him shall not be broken, a commandment which applied to the sacrifice of the paschal lamb under the old law, which sacrifice foreshadowed our Lord’s. Also after, One of the soldiers with a spear opened His side, then follows another Scripture testimony; And again another Scripture saith, They shall look on Him whom they pierced,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-120-c19-v31",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.31",
@@ -20,17 +38,24 @@
         "patristic",
         "tractate",
         "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.31:89c95b12:0"
       ]
     },
     {
-      "id": "catena-john-2419-v31",
+      "id": "catena-john-2425-v31",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.31",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "The Jews who strained at a gnat and swallowed a camel, after their audacious wickedness, reason scrupulously about the day: The Jews therefore because it was the preparation, that the bodies should not remain upon the cross on the sabbath.",
+      "excerpt": "The Evangelist has expressed himself cautiously; not struck, or wounded, but opened His side: (ἔνυξε, aperuit V.) whereby was opened the gate of life, from whence the sacraments of the Church flowed, without which we cannot enter into that life which is the true life: And forthwith came thereout blood and water. That blood was shed for the remission of sins, that water tempers the cup of salvation. This it was which was prefigured when Noah was commanded to make a door in the side of the ark, by which the animals that were not to perish by the deluge entered; which animals prefigured the…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -49,6 +74,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
       "excerpt": "Not in order to take away the legs, but to cause death, that they might be taken down from the cross, and the feast clay not be defiled by the sight of such horrid torments.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.31:bc5e08dd:1"
+      ]
+    },
+    {
+      "id": "catena-john-2428-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.31",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:31–37",
+      "excerpt": "As if to say, I did not hear it from others, but saw it with mine own eyes. And his record is true, he adds, not as if he had mentioned something so wonderful that his account would be suspected, but to stop the mouths of heretics, and in contemplation of the deep value of those mysteries which he announces.And he knoweth that he saith true, that ye might believe.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -77,14 +127,14 @@
       ]
     },
     {
-      "id": "catena-john-2425-v31",
+      "id": "catena-john-2419-v31",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.31",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "The Evangelist has expressed himself cautiously; not struck, or wounded, but opened His side: (ἔνυξε, aperuit V.) whereby was opened the gate of life, from whence the sacraments of the Church flowed, without which we cannot enter into that life which is the true life: And forthwith came thereout blood and water. That blood was shed for the remission of sins, that water tempers the cup of salvation. This it was which was prefigured when Noah was commanded to make a door in the side of the ark, by which the animals that were not to perish by the deluge entered; which animals prefigured the…",
+      "excerpt": "The Jews who strained at a gnat and swallowed a camel, after their audacious wickedness, reason scrupulously about the day: The Jews therefore because it was the preparation, that the bodies should not remain upon the cross on the sabbath.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -113,42 +163,6 @@
       ]
     },
     {
-      "id": "catena-john-2428-v31",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.31",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:31–37",
-      "excerpt": "As if to say, I did not hear it from others, but saw it with mine own eyes. And his record is true, he adds, not as if he had mentioned something so wonderful that his account would be suspected, but to stop the mouths of heretics, and in contemplation of the deep value of those mysteries which he announces.And he knoweth that he saith true, that ye might believe.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2429-v31",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.31",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:31–37",
-      "excerpt": "He that saw it knoweth; let him that saw not believe his testimony. He gives testimonies from the Scriptures to each of these two things he relates. After, they brake not His legs, He adds, For these things were done, that the Scripture should be fulfilled, A bone of Him shall not be broken, a commandment which applied to the sacrifice of the paschal lamb under the old law, which sacrifice foreshadowed our Lord’s. Also after, One of the soldiers with a spear opened His side, then follows another Scripture testimony; And again another Scripture saith, They shall look on Him whom they pierced,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2420-v31",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.31",
@@ -164,17 +178,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.19.31:00c12544:1"
       ]
     },
     {
-      "id": "catena-john-2422-v31",
+      "id": "catena-john-2427-v31",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.31",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "For it was commanded in the Law that the sun should not set on the punishment of any one; or they were unwilling to appear tormentors and homicides on a feast day.",
+      "excerpt": "Shame then upon them who mix not water with the wine in the holy mysteries: they seem as if they believed not that the water flowed from the side. Had blood flowed only, a man might have said that there was some life left in the body, and that that was why the blood flowed. But the water flowing is an irresistible miracle, and therefore the Evangelist adds, And he that saw it bare record.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -203,14 +224,14 @@
       ]
     },
     {
-      "id": "catena-john-2427-v31",
+      "id": "catena-john-2422-v31",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.31",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "Shame then upon them who mix not water with the wine in the holy mysteries: they seem as if they believed not that the water flowed from the side. Had blood flowed only, a man might have said that there was some life left in the body, and that that was why the blood flowed. But the water flowing is an irresistible miracle, and therefore the Evangelist adds, And he that saw it bare record.",
+      "excerpt": "For it was commanded in the Law that the sun should not set on the punishment of any one; or they were unwilling to appear tormentors and homicides on a feast day.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -218,7 +239,156 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.19.31:96ce5efb:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.31:03cfb7a5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-85",
+      "title": "Homily on the Gospel of John 85 on john 19:31",
+      "excerpt": "But the Jews, on the other hand, who swallowed the camel and strained at the gnat, having wrought so atrocious a deed, are very precise concerning the day. \"Because it was the Preparation, that the bodies should not remain upon the cross - they besought Pilate that their legs might be broken.\" Seest thou how strong a thing is truth? By means of the very things which are the objects of their zeal, prophecy is fulfilled, for by occasion of those things, this plain prediction, unconnected with them, receives its accomplishment. For the soldiers when they came, brake the legs of the others, but not those of Christ. Yet these to gratify the Jews pierced His side with a spear, and now insulted the dead body. O abominable and accursed purpose! Yet, beloved, be not thou confounded, be not thou desponding; for the things which these men did from a wicked will, fought on the side of the truth. Since there was a prophecy, saying, (from this circumstance, \"They shall look on Him whom they pierced.\" (Zech. xii. 10.) And not this only, but the deed then dared was a demonstration of the faith, to those who should afterwards disbelieve; as to Thomas, and those like him. With this too an ineffable mystery was accomplished. For \"there came forth water and blood.\" Not without a purpose, or by chance, did those founts come forth, but because by means of these two together the Church consisteth. And the initiated know it, being by water indeed regenerate, and nourished by the Blood and the Flesh. Hence the Mysteries take their beginning; that when thou approachest to that awful cup, thou mayest so approach, as drinking from the very side.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.31"
+    },
+    {
+      "id": "hcf:bede:john.19.31:70649c9f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke-6-23-54",
+      "title": "On the Gospel of Luke 6.23.54 on john 19:31",
+      "excerpt": "Parasceve is interpreted as preparation.… They called it this as the day when it was necessary that they prepare for the sabbath according to the command they had received concerning the manna, \"On the sixth day you shall gather double, etc.\" … Therefore, because it was on the sixth day that human beings were made and the whole creation of the world completed, but on the seventh day it was required that he rested from his work and this is the sabbath, that is, rest—so it is only right to call that the day on which our Lord was crucified the sixth day fulfilling the reparation of humanity back to what it was at the beginning. [And we read], \"And when he received the strong drink, he said 'It is finished,' \" that is, the work of the sixth day is perfect as I have totally accomplished the restoration of the world. But on the sabbath he rests in the sepulcher awaiting the event of the resurrection, which will occur on the eight day.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:john.19.31"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.31:ad3dd81d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:31",
+      "excerpt": "But those who swallow a camel and strain out a gnat (Matt. 23:24), having committed so great a crime, show particular concern about the day. \"For,\" he says, \"so that the bodies would not remain on the cross, they asked Pilate,\" that is, they asked that they be taken down.\r\nSo, they did not want to appear as avengers and murderers on the day of the feast. Otherwise: the law also commanded that the sun should not go down on a man's anger (Eph. 4:26). See how through the schemes of the Jews the prophecies are fulfilled. Here two prophecies are fulfilled at once, as the evangelist says further.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.31"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.31:242e5e9d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 19:31",
+      "excerpt": "It is not with the motive of testifying to the reverence for holy days felt by men inured to shed blood with brutal ferocity, and found guilty of so monstrous an iniquity, that the blessed Evangelist says this; but rather from the wish to show that, in their gross stupidity, they committed that folly of which Christ spoke. For they strained out the gnat while they swallowed the camel; for they are found to reckon as of no account at all the most outrageous and awful of all crimes against God, while they exercised the greatest diligence with reference to the most paltry and insignificant matters, showing their folly in either case. The proof of this is not far to seek. For, behold, in the very act of putting Christ to death, they put great store on the respect due to the Sabbath; and, while they insulted the Lawgiver by outrages which surpass description, they parade their reverence of the Law; and, as that Sabbath was a high day, they affect to pay honour to it----the very men who destroyed the Lord of the high day; and they ask a favour, which well suited their cruel spirit. For they besought Pilate that their legs might be broken, wishing to embitter, by this last intolerable outrage, the pangs of approaching death, to those who were already in agony.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.31"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.31:b392ed5d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 19:31",
+      "excerpt": "The Jews strained out the gnat while they swallowed the camel. They completely discounted the most outrageous and awful of all crimes against God, while they exercised the greatest diligence with reference to the most paltry and insignificant matters, showing their folly in either case.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.31"
+    },
+    {
+      "id": "hcf:origen:john.19.31:0a8e9b6e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-exodus-7-5",
+      "title": "HOMILIES ON EXODUS 7.5 on john 19:31",
+      "excerpt": "What do they [i.e., the Jews] take it to mean when it says, \"For six consecutive days you shall gather. On the sixth day, however, you shall gather double\"? It appears that that day that is placed before the sabbath is called the sixth day, which we call the Day of Preparation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.19.31"
+    },
+    {
+      "id": "hcf:tertullian:john.19.31:af459afe:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-v",
+      "title": "Against Marcion Book V on john 19:31",
+      "excerpt": "He tells us himself clearly enough what he means by \"elements,\" even the rudiments of the law: \"Ye observe days, and months, and times, and years\" -the sabbaths, I suppose, and \"the preparations,\" and the fasts, and the \"high days.\" For the cessation of even these, no less than of circumcision, was appointed by the Creator's decrees, who had said by Isaiah, \"Your new moons, and your sabbaths, and your high days I cannot bear; your fasting, and feasts, and ceremonies my soul hateth; \" also by Amos, \"I hate, I despise your feast-days, and I will not smell in your solemn assemblies; \" and again by Hosea, \"I will cause to cease all her mirth, and her feast-days, and her sabbaths, and her new moons, and all her solemn assemblies.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.19.31",
+      "provenance": [
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:tertullian:john.19.31:475b59f5:0"
+      ]
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.31:4ed61629:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:31",
+      "excerpt": "2454 Now we see the piercing of Christ's body: the act itself; and then the certainty of what the Evangelist tells us (v 35). With respect to the first he does two things: first, we see the intervention and intention of the Jews; secondly, this is partially accomplished; thirdly, how this was accomplished with regard to Christ.\r\n\r\n2455 With respect to the first he says, Since it was the day of Preparation, in order to prevent the bodies from remaining on the cross on the sabbath (for that sabbath was a high day) the Jews asked Pilate that their legs might be broken, and that they might be taken away. In Deuteronomy (21:22) we see that it is a precept of the law that the bodies of the dead who had been hanged for crimes were not to be left hanging until the morning, lest the land be defiled, and to blot out the disgrace of those who were hanged, for this kind of death was regarded as most disgraceful: \"a hanged man is accursed by God\" (Deut 21:23). Although the Jews did not now have the authority to inflict this punishment, they still tried to do what they could. And so because it was the Preparation day they asked Pilate that their legs might be broken and that they might be taken away, so that Christ's body and those of the others would not remain on the cross on the sabbath, which was a very solemn day, and particularly this sabbath during the Feast of the Unleavened Bread. They were careful to keep the law in small matters, but they ignored it in important things: \"You blind guides, straining out a gnat and swallowing a camel!\" (Mt 23:24).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.31"
     }
   ]
 }

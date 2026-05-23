@@ -4,6 +4,24 @@
   "verseNumber": 20,
   "entries": [
     {
+      "id": "catena-matt-0518-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "He made no promise to them when He called them, as He had to the former, for the obedience of the first had made the way plain for them. Besides, they had heard many things concerning Him, as being friends and townsmen of the others.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-0502-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.20",
@@ -12,60 +30,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:18–22",
       "excerpt": "He calls them while actually working at their employment, to shew that to follow Him ought to be preferred to all occupations. They were just then “casting a net into the sea,” which agreed with their future office.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0503-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "He chose not kings, senators, philosophers, or orators, but he chose common, poor, and untaught fishermen.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0504-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "Had one learned been chosen, he might have attributed the choice to the merit of his learning. But our Lord Jesus Christ, willing to bow the necks of the proud, sought not to gain fishermen by orators, but gained an Emperor by a fisherman. Great was Cyprian the pleader, but Peter the fisherman was before him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0511-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "To so great a promise they trusted, and believed that they should catch others by those same words by which themselves had been caught.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -94,14 +58,14 @@
       ]
     },
     {
-      "id": "catena-matt-0518-v20",
+      "id": "catena-matt-0511-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:18–22",
-      "excerpt": "He made no promise to them when He called them, as He had to the former, for the obedience of the first had made the way plain for them. Besides, they had heard many things concerning Him, as being friends and townsmen of the others.",
+      "excerpt": "To so great a promise they trusted, and believed that they should catch others by those same words by which themselves had been caught.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -127,6 +91,49 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.4.20:d3165da2:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0504-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "Had one learned been chosen, he might have attributed the choice to the merit of his learning. But our Lord Jesus Christ, willing to bow the necks of the proud, sought not to gain fishermen by orators, but gained an Emperor by a fisherman. Great was Cyprian the pleader, but Peter the fisherman was before him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0503-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "He chose not kings, senators, philosophers, or orators, but he chose common, poor, and untaught fishermen.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
       ]
     },
     {
@@ -145,6 +152,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:matthew.4.20:8563e44c:1"
       ]
     },
     {
@@ -181,6 +195,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.4.20:9b51d2be:0"
       ]
     },
     {
@@ -202,6 +223,31 @@
       ]
     },
     {
+      "id": "catena-matt-0522-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "The two vessels signify the two Churches; the one was called out of the circumcision, the other out of the uncircumcision. Any one who believes becomes Simon, i.e. obedient to God; Peter by acknowledging his sin, Andrew by enduring labours manfully, James by overcoming vices,",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.4.20:c37be5e6:0"
+      ]
+    },
+    {
       "id": "catena-matt-0499-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.20",
@@ -220,14 +266,39 @@
       ]
     },
     {
-      "id": "catena-matt-0501-v20",
+      "id": "catena-matt-0521-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
       "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:18–22",
-      "excerpt": "“Saw,” that is, not so much with the bodily eye, as spiritually viewing their hearts.",
+      "excerpt": "Mystically, by the sea is figured this world, because of its bitterness and its tossing waves. Galilee is interpreted, ‘rolling,’ or ‘a wheel,’ and shews the changeableness of the world.139 Jesus “walked by the sea” when He came to us by incarnation, for He took on Him of the Virgin not the flesh of sin, but the likeness of the flesh of sin. By the two brothers, two people are signified born of one God their Father; He “saw” them when He looked on them in His mercy. In Peter, (which is interpreted ‘owning,’) who is called Simon, (i.e. obedient,) is signified the Jewish nation, who…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.4.20:9ac7b658:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0525-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "Also, the four principal virtues are here designed; Prudence, in Peter, from his140 confession of God; Justice, we may refer to Andrew for his manful deeds; Fortitude, to James, for his overthrow of the Devil; Temperance, to John, for the working in him of divine grace.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -256,14 +327,14 @@
       ]
     },
     {
-      "id": "catena-matt-0521-v20",
+      "id": "catena-matt-0501-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
       "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:18–22",
-      "excerpt": "Mystically, by the sea is figured this world, because of its bitterness and its tossing waves. Galilee is interpreted, ‘rolling,’ or ‘a wheel,’ and shews the changeableness of the world.139 Jesus “walked by the sea” when He came to us by incarnation, for He took on Him of the Virgin not the flesh of sin, but the likeness of the flesh of sin. By the two brothers, two people are signified born of one God their Father; He “saw” them when He looked on them in His mercy. In Peter, (which is interpreted ‘owning,’) who is called Simon, (i.e. obedient,) is signified the Jewish nation, who…",
+      "excerpt": "“Saw,” that is, not so much with the bodily eye, as spiritually viewing their hearts.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -274,184 +345,89 @@
       ]
     },
     {
-      "id": "catena-matt-0522-v20",
+      "id": "hcf:john-chrysostom:matthew.4.20:29294433:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
-      "personId": "rabanus-maurus",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "The two vessels signify the two Churches; the one was called out of the circumcision, the other out of the uncircumcision. Any one who believes becomes Simon, i.e. obedient to God; Peter by acknowledging his sin, Andrew by enduring labours manfully, James by overcoming vices,",
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-14",
+      "title": "Homily on the Gospel of Matthew 14 on matthew 4:20",
+      "excerpt": "But mark both their faith, and their obedience. For though they were in the midst of their work (and ye know how greedy a thing fishing is), when they heard His command they delayed not, they procrastinated not, they said not, \"let us return home, and converse with our kinsfolk,\" but \"they forsook all and followed,\" even as Elisha did to Elijah. Because such is the obedience which Christ seeks of us, as that we delay not even a moment of time, though something absolutely most needful should vehemently press on us. Wherefore also when some other had come unto Him, and was asking leave to bury his own father, not even this did He permit him to do: to signify that before all we ought to esteem the following of Himself.\r\n\r\nBut if thou should say, \"the promise is very great;\" even for this do I most admire them, for that when they had not as yet seen any sign, they believed in so great a reach of promise, and accounted all but second to that attendance. And this, because they believed that by what words they were caught, by the same they would be able to catch others also.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.4.20"
     },
     {
-      "id": "catena-matt-0525-v20",
+      "id": "hcf:gregory-the-great:matthew.4.20:4ac8ce91:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "Also, the four principal virtues are here designed; Prudence, in Peter, from his140 confession of God; Justice, we may refer to Andrew for his manful deeds; Fortitude, to James, for his overthrow of the Devil; Temperance, to John, for the working in him of divine grace.",
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-5",
+      "title": "Forty Gospel Homilies, Homily 5 on matthew 4:20",
+      "excerpt": "You have heard, dearest brothers, that at the voice of a single command, Peter and Andrew, leaving their nets, followed the Redeemer. They had seen him perform no miracles yet, they had heard nothing from him about the reward of eternal recompense; and yet at one command of the Lord they forgot what they seemed to possess. How many of his miracles do we see, with how many scourges are we afflicted, by how many harsh threats are we deterred, and yet we disdain to follow him when he calls? He who admonishes us about conversion already sits in heaven; he has already subjected the necks of the nations to the yoke of faith, he has already laid low the glory of the world, he already announces, as its ruins multiply, that the day of his strict judgment draws near; and yet our proud mind does not wish to abandon willingly what it loses daily against its will. What then, dearest ones, what shall we say at his judgment, we who are neither bent by commands nor corrected by blows from the love of the present age?\r\n\r\nBut perhaps someone may say to himself in silent thoughts: At the Lord's voice, what or how much did each of these fishermen leave behind, who had almost nothing? But in this matter, dearest brothers, we ought to weigh the affection rather than the wealth. He left much who retained nothing for himself; he left much who, however little it was, abandoned everything. Certainly we both possess what we have with love, and seek from desire those things we do not have at all. Therefore Peter and Andrew left much, since each also abandoned the desires of having. He left much who renounced his longings along with the thing he possessed. Therefore those who followed gave up as much as could be desired by those who did not follow. Let no one therefore, even when he sees that certain people have left many things behind, say to himself: I want to imitate these despisers of the world, but I have nothing to leave behind. You leave many things, brothers, if you renounce earthly desires. For our external possessions, however small, are sufficient for the Lord. For he weighs the heart, not the substance; nor does he consider how much is offered in his sacrifice, but from how much it is brought forth. For if we weigh external substance, behold, our holy merchants purchased the perpetual life of angels by giving up their nets and boat. Indeed it has no estimation of price, yet the kingdom of God is worth as much as you have. For it was worth half his substance to Zacchaeus, because he reserved the other half to restore fourfold what he had unjustly taken. It was worth the abandoned nets and boat to Peter and Andrew; it was worth two small coins to the widow; it was worth a cup of cold water to another. The kingdom of God, therefore, as we said, is worth as much as you have.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:matthew.4.20"
     },
     {
-      "id": "catena-matt-0498-v20",
+      "id": "hcf:jerome:matthew.4.20:a2a4ca49:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "Before He spoke or did any thing, Christ called Apostles, that neither word nor deed of His should be136 hid from their knowledge, so that they may afterwards say with confidence, “What we have seen and heard, that we cannot but speak.” Acts 4:20",
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 4:20",
+      "excerpt": "(Ver. 19, 20.) Come after me, and I will make you fishers of men. And immediately they left their nets and followed him. These first ones were called to follow the Lord: fishermen and unlettered men are sent to preach, lest the faith of believers be thought to come about not by the power of God, but by eloquence and teaching.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.4.20"
     },
     {
-      "id": "catena-matt-0500-v20",
+      "id": "hcf:theophylact-of-ohrid:matthew.4.20:94717b63:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "He rightly goes on fishing places, when about to fish for fishermen.",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 4:20",
+      "excerpt": "Come follow Me and I will make you fishers of men. And they straightway left their nets, and followed Him. Behold obedient men, who followed Him immediately. From this it is clear that this is the second time that He called them. For they had been taught by Christ on a previous occasion (Jn. 1:35-42), then left Him, and when they saw Him again followed Him readily.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.4.20"
     },
     {
-      "id": "catena-matt-0505-v20",
+      "id": "hcf:thomas-aquinas:matthew.4.20:a0da6cf6:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "The operations of their secular craft were a prophecy of their future dignity. As he who casts his net into the water knows not what fishes he shall take, so the teacher casts the net of the divine word upon the people, not knowing who among them will come to God. Those whom God shall stir abide in his doctrine.",
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 4:20",
+      "excerpt": "Their obedience is indicated, when he says immediately they left their nets and followed him. He indicates their obedience in regard to three things:\r\n\r\nFirst, as to promptness: \"Do not postpone from day to day\" (Sir 5:7); \"But when he who had set me apart before I was born, and had called me through his grace..., I did not confer with flesh and blood\" (Gal 1:15); \"The Lord God has opened my ear, and I was not rebellious, I turned not backward\" (Is 50:5).\r\n\r\nSecondly, as to disencumbering themselves, because they left behind; here one must not consider the amount, but the affection. For one who leaves everything he could have, leaves all things. But what was the need for leaving all things? Chrysostom: \"No one can possess riches and come to the kingdom of heaven completely; for they are an obstacle to virtue, because they lessen anxiety for eternal things, inasmuch as man cannot cling to riches in a perfect way.\" Therefore, they should be abandoned: \"Every athlete exercises self-control in all things\" (1 Cor 9:25).\r\n\r\nThirdly, in regard to execution, because they followed him. For it is no great thing to leave all things, but perfection consists in following, which is through charity: \"If I give away all I have, and if I deliver my body to be burned, but have not love, I gain nothing\" (1 Cor 13:3). For perfection per se does not consist in external things, namely, poverty, chastity and the like, except in the sense that they are instruments to charity. Therefore, he says followed him.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0507-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "“Follow me,” not so much with your feet as in your hearts and your life.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0508-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "“Fishers of men,” that is, teachers, that with the net of God’s word you may catch men out of this world of storm and danger, in which men do not walk but are rather borne along, the Devil by pleasure drawing them into sin where men devour one another as the stronger fishes do the weaker, withdrawn from hence they may live upon the land, being made members of Christ’s body.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0510-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "These disciples did not follow Christ from desire of the honour of a doctor, but because they coveted the labour itself; they knew how precious is the soul of man, how pleasant to God is his salvation, and how great its reward.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0512-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "These were their desires, for which they “left all and followed;” teaching us thereby that none can possess earthly things and perfectly attain to heavenly things.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0513-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.4.20",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 4:18–22",
-      "excerpt": "These last disciples were an example to such as leave their property for the love of Christ; now follows an example of others who postponed earthly affection to God. Observe how He calls them two and two, and He afterwards sent them two and two to preach.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.4.20"
     },
     {
       "id": "catena-matt-0515-v20",
@@ -508,6 +484,121 @@
       ]
     },
     {
+      "id": "catena-matt-0508-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "“Fishers of men,” that is, teachers, that with the net of God’s word you may catch men out of this world of storm and danger, in which men do not walk but are rather borne along, the Devil by pleasure drawing them into sin where men devour one another as the stronger fishes do the weaker, withdrawn from hence they may live upon the land, being made members of Christ’s body.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0505-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "The operations of their secular craft were a prophecy of their future dignity. As he who casts his net into the water knows not what fishes he shall take, so the teacher casts the net of the divine word upon the people, not knowing who among them will come to God. Those whom God shall stir abide in his doctrine.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0498-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "Before He spoke or did any thing, Christ called Apostles, that neither word nor deed of His should be136 hid from their knowledge, so that they may afterwards say with confidence, “What we have seen and heard, that we cannot but speak.” Acts 4:20",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0510-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "These disciples did not follow Christ from desire of the honour of a doctor, but because they coveted the labour itself; they knew how precious is the soul of man, how pleasant to God is his salvation, and how great its reward.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.4.20:142a29a5:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0512-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "These were their desires, for which they “left all and followed;” teaching us thereby that none can possess earthly things and perfectly attain to heavenly things.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0513-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "These last disciples were an example to such as leave their property for the love of Christ; now follows an example of others who postponed earthly affection to God. Observe how He calls them two and two, and He afterwards sent them two and two to preach.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-0523-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.4.20",
@@ -516,6 +607,42 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 4:18–22",
       "excerpt": "and John that he may ascribe the whole to God’s grace. The calling of four only is mentioned, as those preachers by whom God will call the four quarters of the world.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0507-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "“Follow me,” not so much with your feet as in your hearts and your life.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0500-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.4.20",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 4:18–22",
+      "excerpt": "He rightly goes on fishing places, when about to fish for fishermen.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

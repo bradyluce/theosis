@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-luke-2968-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.21.7",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 21:5–8",
-      "excerpt": "Now His disciples did not at all perceive the force of His words, but supposed they were spoken of the end of the world. Therefore asked they Him, saying, Master, but when shall these things be? and what sign, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2969-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.7",
@@ -73,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.21.7:1f9d0cbc:0"
       ]
     },
     {
@@ -84,6 +73,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 21:5–8",
       "excerpt": "For before His descent from heaven, there shall come some to whom we must not give place. For the Only-begotten Son of God, when He came to save the world, wished to be in secret, that He might bear the cross for us. But His second coming shall not be in secret, but terrible and open. For He shall descend in the glory of God the Father, with the Angels attending Him, to judge the world in righteousness. Therefore He concludes, Go ye not therefore after them.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.21.7:56dfde98:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2968-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.21.7",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 21:5–8",
+      "excerpt": "Now His disciples did not at all perceive the force of His words, but supposed they were spoken of the end of the world. Therefore asked they Him, saying, Master, but when shall these things be? and what sign, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,14 +126,14 @@
       ]
     },
     {
-      "id": "catena-luke-2966-v7",
+      "id": "catena-luke-2973-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.7",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 21:5–8",
-      "excerpt": "For it was ordained by the dispensation of God that the city itself and the temple should be overthrown, lest perhaps some one yet a child in the faith, while wrapt in astonishment at the rites of the sacrifices, should be carried away by the mere sight of the various beauties.",
+      "excerpt": "For there were many leaders when the destruction of Jerusalem was at hand, who declared themselves to be Christ, and that the time of deliverance was drawing nigh. Many heresiarchs also in the Church have preached that the day of the Lord is at hand, whom the Apostles condemn. (2 Thess. 2:2.) Many Antichrists also came in Christ’s name, of whom the first was Simon Magus, who said, This man is the great power of God. (Acts 8:10.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -130,14 +144,14 @@
       ]
     },
     {
-      "id": "catena-luke-2973-v7",
+      "id": "catena-luke-2966-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.7",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 21:5–8",
-      "excerpt": "For there were many leaders when the destruction of Jerusalem was at hand, who declared themselves to be Christ, and that the time of deliverance was drawing nigh. Many heresiarchs also in the Church have preached that the day of the Lord is at hand, whom the Apostles condemn. (2 Thess. 2:2.) Many Antichrists also came in Christ’s name, of whom the first was Simon Magus, who said, This man is the great power of God. (Acts 8:10.)",
+      "excerpt": "For it was ordained by the dispensation of God that the city itself and the temple should be overthrown, lest perhaps some one yet a child in the faith, while wrapt in astonishment at the rites of the sacrifices, should be carried away by the mere sight of the various beauties.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -164,6 +178,57 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.21.7:d48defb7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 21:7",
+      "excerpt": "And they asked him, saying: Teacher, when will these things be? And what sign will there be when they begin to come to pass? Because while some were praising the buildings of the temple, the Lord openly responded that all these things would be destroyed, the disciples secretly, as he sat on the Mount of Olives, asked about the time and the signs of the predicted destruction, as Matthew and Mark testify.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.21.7"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.21.7:9afe6742:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-6-9",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.6, 9 on luke 21:7",
+      "excerpt": "There is a true saying next to the points about the temple that Solomon founded. The enemy must first destroy this by the time of the judgment. Everything made by labor and by hand in either age will wear out or be destroyed by force or consumed by fire.…When asked when the destruction of the temple would be and what would be the sign of his coming, the Lord warns of signs and does not think that the time should be made known. Matthew added a third question. The disciples asked about the times of the destruction of the temple, the sign of the coming, and the end of the world. Luke thought that enough was known about the end of the world if it were learned under the topic of the Lord's coming.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.21.7"
+    },
+    {
+      "id": "hcf:tertullian:luke.21.7:ac156ac7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 21:7",
+      "excerpt": "If, however, He did predict these promises as His own, since they differ in no respect from the promises of Christ, He will be a match in the freeness of His gifts with the good god himself; and evidently no more will have been promised by your Christ than by my Son of man. (If you examine) the whole passage of this Gospel Scripture, from the inquiry of the disciples down to the parable of the fig-tree you will find the sense in its connection suit in every point the Son of man, so that it consistently ascribes to Him both the sorrows and the joys, and the catastrophes and the promises; nor can you separate them from Him in either respect.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.21.7"
     }
   ]
 }

@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-mark-0829-v28",
+      "id": "catena-mark-0834-v28",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.28",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 10:28–31",
-      "excerpt": "And because it is not sufficient to have left all, he adds that which makes up perfection, and have followed thee. As if he said, We have done what Thou hast commanded. What reward therefore wilt Thou give us?1 But while Peter asks only concerning the disciples, our Lord makes a general answer; wherefore it goes on: Jesus answered and said, Verily I say unto you, There is no one that hath left house, or brethren, or sisters, or father, or mother, or children, or lands. But in saying this, He does not mean that we should leave our fathers, without helping them, or that we should separate…",
+      "excerpt": "This which is here said, shall receive an hundredfold, may be understood in a higher sense1. For the number a hundred which is reckoned by changing from the left to the right hand, although it has the same appearance in the bending of the fingers as the ten had on the left, nevertheless is increased to a much greater quantity. This means, that all who have despised temporal things for the sake of the kingdom of heaven through undoubting faith, taste the joy of the same kingdom in this life which is full of persecutions, and in the expectation of the heavenly country, which is signified by the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -58,17 +58,42 @@
       ]
     },
     {
-      "id": "catena-mark-0834-v28",
+      "id": "catena-mark-0829-v28",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.28",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 10:28–31",
-      "excerpt": "This which is here said, shall receive an hundredfold, may be understood in a higher sense1. For the number a hundred which is reckoned by changing from the left to the right hand, although it has the same appearance in the bending of the fingers as the ten had on the left, nevertheless is increased to a much greater quantity. This means, that all who have despised temporal things for the sake of the kingdom of heaven through undoubting faith, taste the joy of the same kingdom in this life which is full of persecutions, and in the expectation of the heavenly country, which is signified by the…",
+      "excerpt": "And because it is not sufficient to have left all, he adds that which makes up perfection, and have followed thee. As if he said, We have done what Thou hast commanded. What reward therefore wilt Thou give us?1 But while Peter asks only concerning the disciples, our Lord makes a general answer; wherefore it goes on: Jesus answered and said, Verily I say unto you, There is no one that hath left house, or brethren, or sisters, or father, or mother, or children, or lands. But in saying this, He does not mean that we should leave our fathers, without helping them, or that we should separate…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.10.28:28453e42:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0833-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.10.28",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 10:28–31",
+      "excerpt": "For a wife is busied in a house about her husband’s food and raiment. See also how this is the case with the Apostles; for many women busied themselves about their food and their clothing, and ministered unto them. In like manner the Apostles had many fathers and mothers, that is, persons who loved them; as Peter, for instance, leaving one house, had afterwards the houses of all the disciples. And what is more wonderful, they are to be persecuted and oppressed, for it is with persecutions that the Saints are to possess all things, for which reason there follows, But many that are first shall…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -91,25 +116,48 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.10.28:0914ceb8:1"
       ]
     },
     {
-      "id": "catena-mark-0833-v28",
+      "id": "hcf:theophylact-of-ohrid:mark.10.28:ea184e39:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.10.28",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 10:28–31",
-      "excerpt": "For a wife is busied in a house about her husband’s food and raiment. See also how this is the case with the Apostles; for many women busied themselves about their food and their clothing, and ministered unto them. In like manner the Apostles had many fathers and mothers, that is, persons who loved them; as Peter, for instance, leaving one house, had afterwards the houses of all the disciples. And what is more wonderful, they are to be persecuted and oppressed, for it is with persecutions that the Saints are to possess all things, for which reason there follows, But many that are first shall…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:28",
+      "excerpt": "Although Peter left little for the sake of Christ, he still calls this little \"everything.\" It is evident that even a little has the bonds of attachment, and therefore even one who leaves little is worthy of being blessed. Peter alone asked Christ, but the Lord gives an answer common to all.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.28"
+    },
+    {
+      "id": "hcf:bede:mark.10.28:122d673e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 10:28",
+      "excerpt": "Peter began to say to Him, \"Behold, we have left everything and have followed You.\" Great confidence—Peter was a fisherman, he was not rich, he sought food by hand and skill, and yet he speaks confidently, \"We have left everything.\" And because it is not enough only to leave, he adds what is perfect: \"And have followed You.\" We have done what You commanded, what then will You give us as a reward?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.10.28"
     },
     {
       "id": "catena-mark-0827-v28",
@@ -127,6 +175,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:mark.10.28:1be24e20:0"
       ]
     },
     {

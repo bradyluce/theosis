@@ -4,32 +4,14 @@
   "verseNumber": 25,
   "entries": [
     {
-      "id": "catena-mark-0598-v25",
+      "id": "catena-mark-0608-v25",
       "relation": "verse",
       "targetVerseId": "kjva:mark.8.25",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 8:22–26",
-      "excerpt": "Knowing that the touch of the Lord could give sight to a blind man as well as cleanse a leper. It goes on, And he took the blind man by the hand, and led him out of the town.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0601-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.8.25",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 8:22–26",
-      "excerpt": "Seeing indeed the shapes of bodies amongst the shadows, but unable to distinguish the outlines of the limbs, from the continued darkness of his sight; just as trees standing thick together are wont to appear to men who see them from afar, or by the dim light of the night, so that it cannot easily be known whether they be trees or men.",
+      "excerpt": "Or else, putting spittle into the eyes of the blind man, he lays His hands upon him that he may see, because He has wiped away the blindness of the human race both by invisible gifts, and by the Sacrament of His assumed humanity; for the spittle, proceeding from the Head, points out the grace of the Holy Ghost. But though by one word He could cure the man wholly and all at once, still He cures him by degrees, that He may shew the greatness of the blindness of man, which can hardly, and only as it were step by step, be restored to light; and He exhibits to us His grace, by which He furthers…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -58,6 +40,24 @@
       ]
     },
     {
+      "id": "catena-mark-0601-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.8.25",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 8:22–26",
+      "excerpt": "Seeing indeed the shapes of bodies amongst the shadows, but unable to distinguish the outlines of the limbs, from the continued darkness of his sight; just as trees standing thick together are wont to appear to men who see them from afar, or by the dim light of the night, so that it cannot easily be known whether they be trees or men.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0606-v25",
       "relation": "verse",
       "targetVerseId": "kjva:mark.8.25",
@@ -76,14 +76,14 @@
       ]
     },
     {
-      "id": "catena-mark-0608-v25",
+      "id": "catena-mark-0598-v25",
       "relation": "verse",
       "targetVerseId": "kjva:mark.8.25",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 8:22–26",
-      "excerpt": "Or else, putting spittle into the eyes of the blind man, he lays His hands upon him that he may see, because He has wiped away the blindness of the human race both by invisible gifts, and by the Sacrament of His assumed humanity; for the spittle, proceeding from the Head, points out the grace of the Holy Ghost. But though by one word He could cure the man wholly and all at once, still He cures him by degrees, that He may shew the greatness of the blindness of man, which can hardly, and only as it were step by step, be restored to light; and He exhibits to us His grace, by which He furthers…",
+      "excerpt": "Knowing that the touch of the Lord could give sight to a blind man as well as cleanse a leper. It goes on, And he took the blind man by the hand, and led him out of the town.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -112,24 +112,6 @@
       ]
     },
     {
-      "id": "catena-mark-0602-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.8.25",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 8:22–26",
-      "excerpt": "But the reason why he did not see at once perfectly, but in part, was, that he had not perfect faith; for healing is bestowed in proportion to faith.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0604-v25",
       "relation": "verse",
       "targetVerseId": "kjva:mark.8.25",
@@ -145,6 +127,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0602-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.8.25",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 8:22–26",
+      "excerpt": "But the reason why he did not see at once perfectly, but in part, was, that he had not perfect faith; for healing is bestowed in proportion to faith.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.8.25:1658fced:1"
       ]
     },
     {
@@ -164,6 +171,40 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.8.25:db2104dd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 8:25",
+      "excerpt": "But the blind man himself also did not have perfect faith. Therefore the Lord does not give him sight all at once, but gradually, as to a man whose faith is not complete, for healings are given in proportion to faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.8.25"
+    },
+    {
+      "id": "hcf:jerome:mark.8.25:d398d5ff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:tractate-on-the-gospel-of-mark-homily-5",
+      "title": "TRACTATE ON THE GOSPEL OF MARK, HOMILY 5 on mark 8:25",
+      "excerpt": "Christ laid his hands upon his eyes that he might see all things clearly, so through visible things he might understand things invisible, which the eye has not seen, that after the film of sin is removed, he might clearly behold the state of his soul with the eye of a clean heart.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-the-gospel-of-mark-homily-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:mark.8.25"
     },
     {
       "id": "catena-mark-0597-v25",
@@ -217,24 +258,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0607-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.8.25",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 8:22–26",
-      "excerpt": "And He brings him out of the town, that is, out of the neighbourhood of the wicked; and He puts spittle into his eyes, that he may see the will of God, by the breath of the Holy Ghost; and putting His hands upon him, He asked him if he could see, because by the works of the Lord His majesty is seen.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.8.25:14b4249d:0"
       ]
     },
     {
@@ -246,6 +276,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 8:22–26",
       "excerpt": "Or else, he sees men as trees, because he thinks all men higher than himself. But He put His hands again upon his eyes, that he might see all things clearly, that is, understand invisible things by visible, and with the eye of a pure mind contemplate, what the eye hath not seen, the glorious state of his own soul after the rust of sin. He sent him to his home, that is, to his heart; that he might see in himself things which he had not seen before; for a man despairing of salvation does not think that he can do at all what, when enlightened, he can easily accomplish.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.8.25:b573e899:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0607-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.8.25",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 8:22–26",
+      "excerpt": "And He brings him out of the town, that is, out of the neighbourhood of the wicked; and He puts spittle into his eyes, that he may see the will of God, by the breath of the Holy Ghost; and putting His hands upon him, He asked him if he could see, because by the works of the Lord His majesty is seen.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

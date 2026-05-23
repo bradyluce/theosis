@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.35:b828f333:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:athanasius-the-great:luke.1.35:9d23cf36:0"
       ]
     },
     {
@@ -55,42 +69,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0127-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.35",
-      "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:34–35",
-      "excerpt": "Hear the chaste words of the Virgin. The Angel tells her she shall bear a son, but she rests upon her virginity, deeming her inviolability a more precious thing than the Angel’s declaration. Hence she says, Seeing that I know not a man.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0128-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.35",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:34–35",
-      "excerpt": "Knowledge is spoken of in various ways. The wisdom of our Creator is called knowledge, and an acquaintance with His mighty works, the keeping also of His commandments, and the constant drawing near to Him; and besides these the marriage union is called knowledge, as it is here.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.35:ef290e53:0"
       ]
     },
     {
@@ -109,17 +94,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-of-nyssa:luke.1.35:f2f101e6:0"
       ]
     },
     {
-      "id": "catena-luke-0131-v35",
+      "id": "catena-luke-0136-v35",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.35",
       "topicSlugs": [],
       "personId": "gregory-of-nyssa",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:34–35",
-      "excerpt": "O blessed is that womb which because of the overflowing purity of the Virgin Mary has drawn to itself the gift of life! For in others scarcely indeed shall a pure soul obtain the presence of the Holy Spirit, but in her the flesh is made the receptacle of the Spirit.",
+      "excerpt": "Or he says, overshadow thee, because as a shadow takes its shape from the character of those bodies which go before it, so the signs of the Son’s Deity will appear from the power of the Father. (non occ. in Greg. Nyss.). For as in us a certain life-giving power is seen in the material substance, by which man is formed; so in the Virgin, has the power of the Highest in like manner, by the life-giving Spirit, taken from the Virgin’s body a fleshly substance inherent in the body to form a new man. Hence it follows, Therefore also that holy thing which shall be born of thee.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -148,6 +140,42 @@
       ]
     },
     {
+      "id": "catena-luke-0131-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.35",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:34–35",
+      "excerpt": "O blessed is that womb which because of the overflowing purity of the Virgin Mary has drawn to itself the gift of life! For in others scarcely indeed shall a pure soul obtain the presence of the Holy Spirit, but in her the flesh is made the receptacle of the Spirit.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0127-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.35",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:34–35",
+      "excerpt": "Hear the chaste words of the Virgin. The Angel tells her she shall bear a son, but she rests upon her virginity, deeming her inviolability a more precious thing than the Angel’s declaration. Hence she says, Seeing that I know not a man.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0133-v35",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.35",
@@ -156,42 +184,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:34–35",
       "excerpt": "Moreover, the power of the Highest shall overshadow thee. Christ is the power of the most high King, who by the coming of the Holy Spirit is formed in the Virgin.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0134-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.35",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:34–35",
-      "excerpt": "By the term overshadowing, both natures of the Incarnate God are signified. For shadow is formed by light and matter. But the Lord by His Divine nature is light. Because then immaterial light was to be embodied in the Virgin’s womb, it is well said unto her, The power of the Highest shall overshadow thee, that is, the human body in thee shall receive an immaterial light of divinity. For this is said to Mary for the heavenly refreshing of her soul.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0136-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.35",
-      "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:34–35",
-      "excerpt": "Or he says, overshadow thee, because as a shadow takes its shape from the character of those bodies which go before it, so the signs of the Son’s Deity will appear from the power of the Father. (non occ. in Greg. Nyss.). For as in us a certain life-giving power is seen in the material substance, by which man is formed; so in the Virgin, has the power of the Highest in like manner, by the life-giving Spirit, taken from the Virgin’s body a fleshly substance inherent in the body to form a new man. Hence it follows, Therefore also that holy thing which shall be born of thee.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -217,6 +209,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.1.35:1bf1af0e:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0128-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.35",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:34–35",
+      "excerpt": "Knowledge is spoken of in various ways. The wisdom of our Creator is called knowledge, and an acquaintance with His mighty works, the keeping also of His commandments, and the constant drawing near to Him; and besides these the marriage union is called knowledge, as it is here.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -228,6 +245,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:34–35",
       "excerpt": "To distinguish His holiness from ours, Jesus is stated in an especial manner to be born holy. For we although indeed made holy, are not born so, for we are constrained by the very condition of our corruptible nature to cry out with the Prophet, Behold, I was conceived in iniquity. (Ps. 51:5.) But He alone is in truth holy, who was not conceived by the cementing of a fleshly union, nor as the heretics rave, one person in His human nature, another in His divine; not conceived and brought forth a mere man, and afterwards by his merits, obtained that He should be God, but the Angel announcing and…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.1.35:9e90b3e3:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0134-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.35",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:34–35",
+      "excerpt": "By the term overshadowing, both natures of the Incarnate God are signified. For shadow is formed by light and matter. But the Lord by His Divine nature is light. Because then immaterial light was to be embodied in the Virgin’s womb, it is well said unto her, The power of the Highest shall overshadow thee, that is, the human body in thee shall receive an immaterial light of divinity. For this is said to Mary for the heavenly refreshing of her soul.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -253,7 +295,474 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.35:acd24c3f:0"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.1.35:e7bb7679:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-2-14",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 2.14 on luke 1:35",
+      "excerpt": "It seems that Mary did not believe here, unless you pay careful attention; for it is not right for the chosen one to be seen as unbelieving in conceiving the only-begotten Son of God. But in what way could it happen (although the prerogative of the mother is preserved, to whom it certainly had to be deferred to a greater extent: but as a greater prerogative, a greater faith should also have been reserved for her), therefore in what way could it happen, that Zacharias, who did not believe, was condemned to silence: but Mary, if she had not believed, would be exalted by the infusion of the Holy Spirit? But Mary neither should not believe, nor should she rashly usurp: not believe the angel, usurp divine things. For it was not easy to know the mystery hidden in God from the ages, which even the higher Powers could not know. And yet she did not refuse faith, did not reject the duty: but she adjusted her emotions, promised obedience. For when she says: How will this be done? she did not doubt the outcome, but sought the quality of the effect itself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:gregory-of-nyssa:luke.1.35:74e7cec2:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "hcf:work:gregory-of-nyssa:oration-on-the-savior-s-nativity-greek",
+      "title": "Oration on the Savior's Nativity (Greek) on luke 1:35",
+      "excerpt": "Then the virgin was initiated into the mystery by Gabriel. The words of the mystagogy were a blessing. \"Hail,\" he says, \"blessed woman, the Lord is with you.\" [...] He says, \"You will conceive in your womb and will bear a son and you shall call his name 'Jesus'.\" [Luke 1:31, Protevangelium of James 11.3] And what did Mary do? Listen to the pure virgin's utterance. The angel declared the birth, and she clings to her virginity, judging incorruption to be nobler than the angelic appearance and could neither disbelieve the angel nor abandon her judgments. She says, I have no experience of intercourse with a husband: \"How will this happen to me, since I have not known a husband?\" [Luke 1:34] Mary's very utterance is proof of what is narrated in the apocryphal book [the Protevangelium of James]. For if she had been taken by Joseph for marriage, how could she be totally astonished at the one who announced the birth to her if she was quite favorably disposed to becoming a mother according to the law of nature? But since the flesh that had been consecrated to God had to be kept inviolate like one of the holy dedicated things, this is why she says, \"Even if you are an angel, even if you have come from heaven, even if the appearance was beyond humanity, still for a husband to know me is not possible. How will I become a mother without a husband? I know Joseph as a fiancé, but I have not known a husband.\" And what did Gabriel (the bridal escort) do? What sort of bridal chamber did he announce for the pure and undefiled marriage? \"The Holy Spirit,\" he says, \"will come upon you and the power of the Most High will overshadow you.\" [Luke 1:35, Protevangelium of James 11.3]",
+      "takeaway": "",
+      "sourceId": "hcf:source:catholiclibrary-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c395"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.1.35:219df040:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-33",
+      "title": "Forty Gospel Homilies, Homily 33 on luke 1:35",
+      "excerpt": "The Lord rests in those hearts which the love of the present age does not inflame, which the desires of the flesh do not burn up, which, set ablaze by their anxieties, do not wither in the lusts of this world. Hence it is also said to Mary: \"The Holy Spirit will come upon you, and the power of the Most High will overshadow you.\" Therefore, the young deer seeks shady places at midday for feeding, because the Lord is fed by such minds as are not burned by bodily desires through the regard of tempering grace.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:bede:luke.1.35:33d9c2be:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:35",
+      "excerpt": "And the angel, responding, said to her: The Holy Spirit will come upon you, and the power of the Most High will overshadow you. Not by the seed of man, which you do not know, he said, but by the work of the Holy Spirit by which you are filled, you will conceive. There will be conception in you, desire will not be. There will be no heat of lust, where the Holy Spirit makes a shadow. Indeed, in that he said, And the power of the Most High will overshadow you, both natures of the incarnate Savior can also be indicated. For a shadow is usually formed by both light and a body. And to whom it is overshadowed, indeed by the light or heat of the sun it is refreshed as much as is sufficient, but the heat of the sun itself, lest it be unbearable, is moderated by an intervening light cloud or some other body. Therefore, to the Blessed Virgin, because as a pure human she could not fully contain all the fullness of the divinity bodily, the power of the Most High overshadowed, that is, the incorporeal light of divinity assumed a body in her of humanity. Of which the prophet beautifully says: Behold, the Lord, he says, ascends upon a light cloud, and will enter Egypt (Isaiah 19), which is to say: Behold, the Word of God coeternal with the Father, and light from light born before the ages, will assume flesh at the end of the ages and a soul not weighed down by any burden of sin, and from the virginal womb, as a bridegroom from his chamber, (Psalm 18) will come forth into the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:bede:luke.1.35:8acba3ef:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:35",
+      "excerpt": "Therefore, the holy one to be born from you will be called the Son of God. In distinction from our holiness, Jesus is asserted to be uniquely holy in his birth. For we, even if we are made holy, are not born holy, because we are constrained by the condition of corruptible nature itself. Rightly, then, we each lament with the Prophet, saying: \"Behold, I was conceived in iniquities, and in sins did my mother conceive me\" (Psalm 50). But He alone is truly holy who, to overcome the condition of corruptible nature itself, was not conceived from a commingling of carnal union. \"The holy one,\" He says, \"will be called the Son of God.\" What do you say here, Nestorian, who denies the blessed Mary to be the Mother of God, trying to attack the clearly open truth? Behold, It said that God will come, the Son of God will be born. How, then, either is the Son of God not God, or the one who bore God, how can she not be Θεοτόκος, that is, the Mother of God?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.35:b0976331:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:35",
+      "excerpt": "(Geometer.) But mark, how the Angel solves the Virgin's doubts, and shows to her the unstained marriage and the unspeakable birth. And the Angel answered, and said unto her, The Holy Spirit shall come upon thee.\r\n\r\n(Victor Presbyter.) But observe, how the Angel has declared the whole Trinity to the Virgin, making mention of the Holy Spirit, the Power, and the Most High, for the Trinity is indivisible.c",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.1.35:e00d0784:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on luke 1:35",
+      "excerpt": "That Christ is both man and God, compounded of both natures, that He might be a Mediator between us and the Father. In Jeremiah: \"And He is man, and who shall know Him? Also in Numbers: \"A Star shall arise out of Jacob, and a man shall rise up from Israel.\" Also in the same place: \"A Man shall go forth out of his seed, and shall rule over many nations; and His kingdom shall be exalted as Gog, and His kingdom shall be increased; and God brought Him forth out of Egypt. His glory is as of the unicorn, and He shall eat the nations of His enemies, and shall take out the marrow of their fatnesses, and will pierce His enemy with His arrows. He couched and lay down as a lion, and as a lion's whelp. Who shall raise Him up? Blessed are they who bless Thee, and cursed are they who curse Thee.\" Also in Isaiah: \"The Spirit of the Lord is upon me; on account whereof He hath anointed me: He hath sent me to tell good tidings to the poor; to heal the bruised in heart, to preach deliverance to the captives, and sight to the blind, to proclaim the acceptable year of the Lord, and the day of retribution.\" Whence, in the Gospel according to Luke, Gabriel says to Mary: \"And the angel, answering, said to her, The Holy Ghost shall come upon thee, and the power of the Highest shall overshadow thee. Wherefore that holy thing which is born of thee shall be called the Son of God.\" Also in the first Epistle of Paul to the Corinthians: \"The first man is of the mud of the earth; the second man is from heaven. As was he from the soil, such are they also that are of the earth; and as is the heavenly, such also are the heavenly. As we have borne the image of him who is of the earth, let us also bear the image of Him who is from heaven.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.1.35:8653bf6e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-1-25",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 1.25 on luke 1:35",
+      "excerpt": "It was fitting that the Architect of the works of creation should come and raise up the house that had fallen and that the hovering Spirit should sanctify the buildings that were unclean. Thus, if the Progenitor entrusted the judgment that is to come to his Son, it is clear that he accomplished the creation of humanity and its restoration through him as well. He was the live coal, which had come to kindle the briars and thorns. He dwelt in the womb and cleansed it and sanctified the place of the birth pangs and the curses. The flame, which Moses saw, was moistening the bush and distilling the fat lest it be inflamed. The likeness of refined gold could be seen in the bush, entering into the fire but without being consumed. This happened so that it might make known that living fire which was to come at the end, watering and moistening the womb of the Virgin and clothing it like the fire that enveloped the bush.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-1-25",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:gregory-thaumaturgus:luke.1.35:96a0ad39:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-thaumaturgus",
+      "workId": "hcf:work:gregory-thaumaturgus:twelve-topics-on-the-faith-topic-4",
+      "title": "Twelve Topics on the Faith, Topic 4 on luke 1:35",
+      "excerpt": "If any one affirms that Christ was born of the seed of man by the Virgin, in the same manner as all men are born, and refuses to acknowledge that He was made flesh by the Holy Spirit and the holy Virgin Mary, mad became man of the seed of David, even as it is written, let him be anathema.\r\n\r\nExplication: How could one say that Christ was born of the seed of man by the Virgin, when the holy Gospel and the angel, in proclaiming the good tidings, testify of Mary the Virgin that she said, \"How shall this be, seeing I know not a man? \" [Luke 1:34] Wherefore he says, \"The Holy Ghost shall come upon you, and the power of the highest shall overshadow you: therefore also that holy thing which shall be born of you shall be called the Son of the Highest.\" [Luke 1:35] And to Joseph he says, \"Fear not to take unto you Mary your wife: for that which is conceived in her is of the Holy Ghost. And she shall bring forth a son, and they shall call His name Jesus: for He shall save His people from their sins.\" [Matthew 1:20-21]",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c270"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:luke.1.35:7d7d47fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-refutation-of-all-heresies-book-6",
+      "title": "Hippolytus Refutation of All Heresies Book 6 on luke 1:35",
+      "excerpt": "All the prophets, therefore, and the law spoke by means of the Demiurge,-a silly god, he says, (and themselves) fools, who knew nothing. On account of this, he says, the Saviour observes: \"All that came before me are thieves and robbers.\" And the apostle (uses these words) \"The mystery which was not made known to former generations.\" For none of the prophets, he says, said anything concerning the things of which we speak; for (a prophet) could not but be ignorant of all (these) things, inasmuch as they certainly had been uttered by the Demiurge only. When, therefore, the creation received completion, and when after (this) there ought to have been the revelation of the sons of God-that is, of the Demiurge, which up to this had been concealed, and in which obscurity the natural man was hid, and had a veil upon the heart;-when (it was time), then, that the veil should be taken away, and that these mysteries should be seen, Jesus was born of Mary the virgin, according to the declaration (in Scripture), \"The Holy Ghost will come upon thee\"-Sophia is the Spirit-\" and the power of the Highest will overshadow thee\"-the Highest is the Demiurge,-\"wherefore that which shall be born of thee shall be called holy.\" For he has been generated not from the highest alone, as those created in (the likeness of) Adam have been created from the highest alone-that is, (from) Sophia and the Demiurge. Jesus, however, the new man, (has been generated) from the Holy Spirit-that is, Sophia and the Demiurge-in order that the Demiurge may complete the conformation and constitution of his body, and that the Holy Spirit may supply his essence, and that a celestial Logos may proceed from the Ogdoad being born of Mary.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:luke.1.35:5e396918:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-refutation-of-all-heresies-book-vii",
+      "title": "Hippolytus Refutation of All Heresies Book VII on luke 1:35",
+      "excerpt": "Now this (mystery) was not made known to previous generations, as he says, it has been written, \"By revelation was made known unto me the mystery; \" and, \"I have heard inexpressible words which it is not possible for man to declare.\" The light, (therefore,) which came down from the Ogdoad above to the Son of the Hebdomad, descended from the Hebdomad upon Jesus the son of Mary, and he had radiance imparted to him by being illuminated with the light that shone upon him. This, he says, is that which has been declared: \"The Holy Spirit will come upon thee,\" (meaning) that which proceeded from the Sonship through the conterminous spirit upon the Ogdoad and Hebdomad, as far as Mary; \"and the power of the Highest will overshadow thee,\" (meaning) the power of the anointing, (which streamed) from the (celestial) height above (through) the Demiurge, as far as the creation, which is (as far as) the Son. And as far as that (Son) he says the world consisted thus. And as far as this, the entire Sonship, which is left behind for benefiting the souls in Formlessness, and for being the recipient in turn of benefits,-(this Sonship, I say,) when it is transformed, followed Jesus, and hastened upwards, and came forth purified. And it becomes most refined, so that it could, as the first (Sonship), hasten upwards through its own instrumentality. For it possesses all the power that, according to nature, is firmly connected with the light which from above shone down (upon earth).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:luke.1.35:63a0bbd0:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:fragments-dogmatic-and-historical",
+      "title": "Fragments - Dogmatic and Historical on luke 1:35",
+      "excerpt": "This is the Spirit that at the beginning \"moved upon the thee of the waters; \" by whom the world moves; by whom creation consists, and all things have life; who also wrought mightily in the prophets, and descended in flight upon Christ. This is the Spirit that was given to the apostles in the form of fiery tongues. This is the Spirit that David sought when he said, \"Create in me a clean heart, O God, and renew a right spirit within me.\" Of this Spirit Gabriel also spoke to the Virgin, \"The Holy Ghost shall come upon thee, and the power of the Highest shall overshadow thee.\" By this Spirit Peter spake that blessed word, \"Thou art the Christ, the Son of the living God.\" By this Spirit the rock of the Church was stablished. This is the Spirit, the Comforter, that is sent because of thee, that He may show thee to be the Son of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.1.35:703c4c7b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iii-chapter-21-section-4",
+      "title": "Against Heresies (Book III, Chapter 21), Section 4 on luke 1:35",
+      "excerpt": "For the one and the same Spirit of God, who proclaimed by the prophets what and of what sort the advent of the Lord should be, did by these elders give a just interpretation of what had been truly prophesied; and He did Himself, by the apostles, announce that the fulness of the times of the adoption had arrived, that the kingdom of heaven had drawn nigh, and that He was dwelling within those that believe on Him who was born Emmanuel of the Virgin. To this effect they testify, [saying,] that before Joseph had come together with Mary, while she therefore remained in virginity, \"she was found with child of the Holy Ghost;\" [Matthew 1:18] and that the angel Gabriel said unto her, \"The Holy Ghost shall come upon thee, and the power of the Highest shall overshadow thee; therefore also that holy thing which shall be born of thee shall be called the Son of God;\" [Luke 1:35] and that the angel said to Joseph in a dream, \"Now this was done, that it might be fulfilled which was spoken by Isaiah the prophet, Behold, a virgin shall be with child.\" [Matthew 1:23] But the elders have thus interpreted what Esaias said: \"And the Lord, moreover, said unto Ahaz, Ask for thyself a sign from the Lord thy God out of the depth below, or from the height above. And Ahaz said, I will not ask, and I will not tempt the Lord. And he said, It is not a small thing for you to weary men; and how does the Lord weary them? Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son; and ye shall call His name Emmanuel. Butter and honey shall He eat: before He knows or chooses out things that are evil, He shall exchange them for what is good; for before the child knows good or evil, He shall not consent to evil, that He may choose that which is good.\" [Isaiah 7:10-17] Carefully, then, has the Holy Ghost pointed out, by what has been said, His birth from a virgin, and His essence, that He is God (for the name Emmanuel indicates this). And He shows that He is a man, when He says, \"Butter and honey shall He eat;\" and in that He terms Him a child also, [in saying,] \"before He knows good and evil;\" for these are all the tokens of a human infant. But that He \"will not consent to evil, that He may choose that which is good,\"— this is proper to God; that by the fact, that He shall eat butter and honey, we should not understand that He is a mere man only, nor, on the other hand, from the name Emmanuel, should suspect Him to be God without flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:justin-martyr:luke.1.35:cbda2069:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "justin-martyr",
+      "workId": "hcf:work:justin-martyr:the-first-apology-chapter-xxxiii",
+      "title": "The First Apology, Chapter XXXIII on luke 1:35",
+      "excerpt": "And hear again how Isaiah in express words foretold that He should be born of a virgin; for he spoke thus: \"Behold, a virgin shall conceive, and bring forth a son, and they shall say for His name, `God with us.'\" For things which were incredible and seemed impossible with men, these God predicted by the Spirit of prophecy as about to come to pass, in order that, when they came to pass, there might be no unbelief, but faith, because of their prediction. But lest some, not understanding the prophecy now cited, should charge us with the very things we have been laying to the charge of the poets who say that Jupiter went in to women through lust, let us try to explain the words. This, then, \"Behold, a virgin shall conceive,\" signifies that a virgin should conceive without intercourse. For if she had had intercourse with any one whatever, she was no longer a virgin; but the power of God having come upon the virgin, overshadowed her, and caused her while yet a virgin to conceive. And the angel of God who was sent to the same virgin at that time brought her good news, saying, \"Behold, thou shalt conceive of the Holy Ghost, and shalt bear a Son, and He shall be called the Son of the Highest, and thou shalt call His name Jesus; for He shall save His people from their sins,\" -as they who have recorded all that concerns our Saviour Jesus Christ have taught, whom we believed, since by Isaiah also, whom we have now adduced, the Spirit of prophecy declared that He should be born as we intimated before. It is wrong, therefore, to understand the Spirit and the power of God as anything else than the Word, who is also the first-born of God, as the foresaid prophet Moses declared; and it was this which, when it came upon the virgin and overshadowed her, caused her to conceive, not by intercourse, but by power. And the name Jesus in the Hebrew language means Σωτήρ (Saviour) in the Greek tongue. Wherefore, too, the angel said to the virgin, \"Thou shalt call His name Jesus, for He shall save His people from their sins.\" And that the prophets are inspired by no other than the Divine Word, even you, as I fancy, will grant.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c165"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:leo-the-great:luke.1.35:6d03e870:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "leo-the-great",
+      "workId": "hcf:work:leo-the-great:sermon-24-3",
+      "title": "SERMON 24.3 on luke 1:35",
+      "excerpt": "Each one is a partaker of this spiritual origin in regeneration. To every one, when he is reborn, the water of baptism is like the Virgin's womb, for the same Holy Spirit fills the font, who filled the Virgin, that the sin, which that sacred conception overthrew, may be taken away by this mystical washing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-24-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c461"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:leo-the-great:luke.1.35:944d4001:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "leo-the-great",
+      "workId": "hcf:work:leo-the-great:sermon-30-4-2",
+      "title": "SERMON 30.4.2 on luke 1:35",
+      "excerpt": "But the birth of our Lord Jesus Christ exceeds all understanding and goes beyond any precedent.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-30-4-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c461"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:prudentius:luke.1.35:0a5f044c:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "prudentius",
+      "workId": "hcf:work:prudentius:the-divinity-of-christ-566-84",
+      "title": "THE DIVINITY OF CHRIST 566-84 on luke 1:35",
+      "excerpt": "A heavenly fire engenders him, not flesh\r\nNor blood of father, nor impure desire.\r\nBy power of God a spotless maid conceives,\r\nAs in her virgin womb the Spirit breathes.\r\nThe mystery of this birth confirms our faith\r\nThat Christ is God: a maiden by the Spirit\r\nIs wed, unstained by love; her purity\r\nRemains intact; with child within, untouched\r\nWithout, bright in her chaste fertility,\r\nMother yet virgin, mother that knew not man.\r\nWhy, doubter, do you shake your silly head?\r\nAn angel makes this known with holy lips.\r\nWill you not hearken to angelic words?\r\nThe Virgin blest, the shining messenger\r\nBelieved, and by her faith she Christ conceived.\r\nChrist comes to men of faith and spurns the heart\r\nIrresolute in trust and reverence.\r\nThe Virgin's instant faith attracted\r\nChrist into her womb and hid him there till birth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-divinity-of-christ-566-84",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c410"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:prudentius:luke.1.35:203e8342:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "prudentius",
+      "workId": "hcf:work:prudentius:scenes-from-sacred-history-25",
+      "title": "SCENES FROM SACRED HISTORY 25 on luke 1:35",
+      "excerpt": "When God's coming draws near, the angel Gabriel advances\r\nFrom the Father's high throne and enters the house of the Virgin.\r\n\"Mary,\" he says, \"the Holy Spirit will render you fruitful,\r\nAnd you shall give birth to the Christ, O glorious Virgin.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:scenes-from-sacred-history-25",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c410"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:prudentius:luke.1.35:2f799141:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "prudentius",
+      "workId": "hcf:work:prudentius:against-symmachus-2-265-69",
+      "title": "AGAINST SYMMACHUS 2.265-69 on luke 1:35",
+      "excerpt": "He had to be redeemed: my Spirit came down\r\nAnd impregnated flesh made from the dust\r\nWith the divine nature; God has assumed\r\nHumanity, joining it with divinity,\r\nAnd kindled in men's hearts new love of me.",
+      "takeaway": "",
+      "sourceId": "hcf:source:against-symmachus-2-265-69",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c410"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.35:7ce73ad8:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-flesh-of-christ",
+      "title": "On the Flesh of Christ on luke 1:35",
+      "excerpt": "Forasmuch, however, as it has been declared concerning the Son Himself, Thou hast made Him a little lower than the angels\" how will it appear that He put on the nature of angels if He was made lower than the angels, having become man, with flesh and soul as the Son of man? As \"the Spirit of God.\" however, and \"the Power of the Highest,\" can He be regarded as lower than the angels,-He who is verily God, and the Son of God? Well, but as bearing human nature, He is so far made inferior to the angels; but as bearing angelic nature, He to the same degree loses that inferiority.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.35:e0dd7466:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on luke 1:35",
+      "excerpt": "I will not here largely use the support of the other Gospels, which confirm our belief by the Lord's nativity: it is sufficient to remark that He who had to be born of a virgin is announced in express terms by the angel himself as the Son of God: \"The Spirit of God shall come upon thee, and the power of the Highest shall overshadow thee; therefore also the Holy Thing that shall be born of thee shall be called the Son of God.\" On this passage even they will wish to raise a cavil; but truth will prevail.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.35:03c71c19:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews",
+      "title": "An Answer to the Jews on luke 1:35",
+      "excerpt": "After a space of two days, on the third day\" -which is His glorious resurrection-He received back into the heavens (whence withal the Spirit Himself had come to the Virgin ) Him whose nativity and passion alike the Jews have failed to acknowledge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.35:b3f86316:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on luke 1:35",
+      "excerpt": "See, say they, it was announced by the angel: \"Therefore that Holy Thing which shall be born of thee shall be called the Son of God.\" Therefore, (they argue, ) as it was the flesh that was born, it must be the flesh that is the Son of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.35:85417f36:5",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on luke 1:35",
+      "excerpt": "Of them Jesus consists-Man. of the flesh; of the Spirit, God-and the angel designated Him as \"the Son of God,\" in respect of that nature, in which He was Spirit, reserving for the flesh the appellation \"Son of Man.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.35:2052b0d9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 1:35",
+      "excerpt": "These facts he had also received from the angel, according to our Gospel: \"Wherefore that which shall be born of thee shall be called the Holy One, the Son of God; \" and, \"Thou shalt call his name Jesus.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:hcf-theophanes-of-nicaea:luke.1.35:6ecbc925:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theophanes-of-nicaea",
+      "workId": "hcf:work:hcf-theophanes-of-nicaea:canon-of-annunciation",
+      "title": "Canon of Annunciation on luke 1:35",
+      "excerpt": "Theotokos: Make plain to me, how I, a virgin, shall bear him?\r\n\r\nThe angel: You seek to know from me the manner of your conceiving, Virgin, but this is beyond all interpretation! The Holy Spirit will overshadow you in his creative power and shall make this come to pass!\r\n\r\nTheotokos: When she accepted the suggestion of the serpent, my mother Eve was banished from divine delight. Therefore I fear your strange greeting, for I take care that I not slip.\r\n\r\nThe angel: I am sent as God's messenger to disclose the divine will to you. Why are you afraid of me, undefiled one? I rather am afraid of you! Why do you stand in awe of me, O lady, who stand in reverent awe of you?\r\n\r\n[...]\r\n\r\nThe angel: Rejoice, lady; rejoice, most pure virgin! Rejoice, God-containing vessel! Rejoice, candlestick of the light, the restoration of Adam and the deliverance of Eve! Rejoice, holy mountain, shining sanctuary! Rejoice, bridal chamber of immortality!\r\n\r\nTheotokos: The descent of the Holy Spirit has purified my soul; it has sanctified my body; it has made me a temple containing God, a divinely adorned tabernacle, a living sanctuary and the pure mother of life.\r\n\r\nThe angel: I see you as a lamp with many lights; a bridal chamber made by God! Spotless maiden, as an ark of gold, receive now the giver of the law, who through you has been pleased to deliver humankind's corrupted nature!",
+      "takeaway": "",
+      "sourceId": "hcf:source:canon-of-annunciation",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c845"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.35:87850fa7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:35",
+      "excerpt": "\"The Holy Spirit,\" he says, \"shall come upon Thee,\" making Thy womb fruitful and fashioning flesh for the consubstantial Word. \"And the power of the Most High\" — the Son of God, for Christ is the power of God (1 Cor. 1:24) — \"shall overshadow Thee,\" that is, shall cover Thee, shall surround Thee on all sides. For as a bird completely overshadows its chicks, covering them with its wings, so the power of God encompassed the Virgin completely; this is what \"overshadow\" means. Perhaps someone might say: just as a painter first sketches in shadow, then applies the final colors, so too the Lord, fashioning flesh for Himself and composing the form of a man, first shadowed forth the flesh in the Mother's womb, blending it from the blood of the Ever-Virgin, and then formed it. But this is uncertain. For some say that at the very moment the Lord overshadowed the Virgin's womb, a perfect infant came into being at once, while others do not accept this. Listen, then, to what he says: \"therefore also the Holy Thing being born,\" that is, growing in thy womb gradually, and not appearing all at once in perfect form. From this the mouth of Nestorius is also stopped. For he said that it was not the Son of God dwelling in the Virgin's womb who became incarnate, but a mere man, born of Mary, who later came to have God as his companion. Let him hear, then, that what was being born in the womb — that very thing — was the Son of God; it was not one who was carried in the womb and another who was the Son of God, but one and the same was the Son of the Virgin and the Son of God. See how he also pointed to the Holy Trinity, naming the Holy Spirit, the power — the Son, and the Most High — the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.35"
     }
   ]
 }

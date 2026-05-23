@@ -4,6 +4,24 @@
   "verseNumber": 24,
   "entries": [
     {
+      "id": "catena-luke-0817-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "If then you disbelieve the first, (i. e. the forgiveness of sins,) behold, I add another, seeing that I lay open your inmost thoughts. Again, another that I make whole the body of the palsied man. Hence He adds, Whether is it easier? It is very plain that it is easier to restore the body to health. For as the soul is far nobler than the body, so is the forgiveness of sins more excellent than the healing of the body. But since you believe not the former, because it is hid; I will add that which is inferior, yet more open, in order that thereby that which is secret may be made manifest. And…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0806-v24",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.24",
@@ -12,42 +30,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:17–26",
       "excerpt": "But they are to be admired who brought in the paralytic, since on finding that they could not enter in at the door, they attempted a new and untried way. As it follows, And when they could not find by what way they might bring him in, they went upon the housetop, &c. But unroofing the house they let down the couch, and place the paralytic in the midst, as it follows, And they let him down through the things. Some one may say, that the place was let down, from which they lowered the couch of the palsied man through the things.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0809-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "But there was combined in this the faith also of the sufferer himself. For he would not have submitted to be let down, had he not believed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0810-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "But our Lord’s saying, Man, thy sins are forgiven, conveys the meaning that the man had his sins forgiven him, because in that he was man, he could not say, “I have not sinned,” but at the same time also, that He who forgave sins might be known to be God.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -76,24 +58,6 @@
       ]
     },
     {
-      "id": "catena-luke-0817-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "If then you disbelieve the first, (i. e. the forgiveness of sins,) behold, I add another, seeing that I lay open your inmost thoughts. Again, another that I make whole the body of the palsied man. Hence He adds, Whether is it easier? It is very plain that it is easier to restore the body to health. For as the soul is far nobler than the body, so is the forgiveness of sins more excellent than the healing of the body. But since you believe not the former, because it is hid; I will add that which is inferior, yet more open, in order that thereby that which is secret may be made manifest. And…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0819-v24",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.24",
@@ -109,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.5.24:688a4259:0"
       ]
     },
     {
@@ -120,6 +91,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:17–26",
       "excerpt": "The Jews creep on by degrees, glorifying God, yet thinking Him not God, for His flesh stood in their way. But still it was no slight thing to consider Him the chief of mortal men, and to have proceeded from God.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0809-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "But there was combined in this the faith also of the sufferer himself. For he would not have submitted to be let down, had he not believed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -148,14 +137,14 @@
       ]
     },
     {
-      "id": "catena-luke-0827-v24",
+      "id": "catena-luke-0810-v24",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.24",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:17–26",
-      "excerpt": "The men then by whom he is let down may signify the doctors of the Church. But that he is let down with the couch, signifies that Christ ought to be known by man, while yet abiding in his flesh.",
+      "excerpt": "But our Lord’s saying, Man, thy sins are forgiven, conveys the meaning that the man had his sins forgiven him, because in that he was man, he could not say, “I have not sinned,” but at the same time also, that He who forgave sins might be known to be God.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -174,6 +163,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:17–26",
       "excerpt": "That the infirm soul may no more rest in carnal joys, as in a bed, but rather itself restrain the carnal affections, and tend toward its own home, i. e. the resting-place of the secrets of its heart.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.5.24:0e1c1507:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0827-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "The men then by whom he is let down may signify the doctors of the Church. But that he is let down with the couch, signifies that Christ ought to be known by man, while yet abiding in his flesh.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -202,14 +216,14 @@
       ]
     },
     {
-      "id": "catena-luke-0808-v24",
+      "id": "catena-luke-0816-v24",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.24",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:17–26",
-      "excerpt": "Mighty is the Lord who pardons one man for the good deed of another, and while he approves of the one, forgives the other his sins. Why, O man, with thee does not thy fellowman prevail, when with God a servant has both the liberty to intercede in thy behalf, and the power of obtaining what he asks? If thou despairest of the pardon of heavy sins, bring the prayers of others, bring the Church to pray for thee, and at sight of this the Lord may pardon what otherwise He might deny to thee.",
+      "excerpt": "As if to say, O Pharisees, since ye say, Who can forgive sins, but God alone? I answer you, Who can search the secrets of the heart, but God alone, Who says by His prophet, I am the Lord, that searcheth the hearts, and trieth the reins. (Jer. 17:10.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -238,60 +252,6 @@
       ]
     },
     {
-      "id": "catena-luke-0813-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "From the Pharisees themselves therefore the Son of God receives testimony. For it is both more powerful evidence when men confess unwillingly, and a more fatal error when they who deny are left to the consequence of their own assertions. Hence it follows, Who can forgive sins, but God only? Great is the madness of an unbelieving people, who though they have confessed that it is of God alone to forgive sins, believe not God when He forgives sins.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0815-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "The Lord wishing to save sinners shews Himself to be God, by His knowledge of the secret thoughts; as it follows, But that ye may know.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0816-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "As if to say, O Pharisees, since ye say, Who can forgive sins, but God alone? I answer you, Who can search the secrets of the heart, but God alone, Who says by His prophet, I am the Lord, that searcheth the hearts, and trieth the reins. (Jer. 17:10.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0820-v24",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.24",
@@ -300,42 +260,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:17–26",
       "excerpt": "Nor is there any delay, health is present; there is but one moment both of words, and healing. Hence it follows, And immediately he rose. From this fact it is evident, that the Son of man has power on earth to forgive sins; He said this both for Himself and us. For He as God made man, as the Lord of the law, forgives sins; we also have been chosen to receive from Him the same marvellous grace. For it was said to the disciples, Whose sins ye remit, they are remitted unto them. (John 20:23.) But how does He not Himself forgive sins, Who has given to others the power of doing so? But the kings…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0821-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "They behold him rising up, still disbelieving, and marvel at his departing; as it follows, And they were all amazed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0823-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.24",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:17–26",
-      "excerpt": "But they had rather fear the miracles of divine working, than believe them. As it follows, And they were filled with fear. But if they had believed they had not surely feared, but loved; for perfect love casteth out fear. But this was no careless or trifling cure of the paralytic, since our Lord is said to have prayed first, not for the petition’s sake, but for an example.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -364,6 +288,42 @@
       ]
     },
     {
+      "id": "catena-luke-0808-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "Mighty is the Lord who pardons one man for the good deed of another, and while he approves of the one, forgives the other his sins. Why, O man, with thee does not thy fellowman prevail, when with God a servant has both the liberty to intercede in thy behalf, and the power of obtaining what he asks? If thou despairest of the pardon of heavy sins, bring the prayers of others, bring the Church to pray for thee, and at sight of this the Lord may pardon what otherwise He might deny to thee.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0813-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "From the Pharisees themselves therefore the Son of God receives testimony. For it is both more powerful evidence when men confess unwillingly, and a more fatal error when they who deny are left to the consequence of their own assertions. Hence it follows, Who can forgive sins, but God only? Great is the madness of an unbelieving people, who though they have confessed that it is of God alone to forgive sins, believe not God when He forgives sins.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0828-v24",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.24",
@@ -382,6 +342,24 @@
       ]
     },
     {
+      "id": "catena-luke-0823-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "But they had rather fear the miracles of divine working, than believe them. As it follows, And they were filled with fear. But if they had believed they had not surely feared, but loved; for perfect love casteth out fear. But this was no careless or trifling cure of the paralytic, since our Lord is said to have prayed first, not for the petition’s sake, but for an example.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0830-v24",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.24",
@@ -390,6 +368,42 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:17–26",
       "excerpt": "Or it may reseek its own home, i. e. return to Paradise, for that is its true home, which first received man, and was lost not fairly, but by treachery. Rightly then is the soul restored thither, since He has come Who will undo the treacherous knot, and reestablish righteousness.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0815-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "The Lord wishing to save sinners shews Himself to be God, by His knowledge of the secret thoughts; as it follows, But that ye may know.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0821-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.24",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:17–26",
+      "excerpt": "They behold him rising up, still disbelieving, and marvel at his departing; as it follows, And they were all amazed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -469,7 +483,82 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.5.24:cb56f85a:0"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.5.24:307bd794:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-12",
+      "title": "COMMENTARY ON LUKE, HOMILY 12 on luke 5:24",
+      "excerpt": "A place still remains open for disbelief when it is said, \"Your sins are forgiven you\"—for people cannot see the forgiven sins with the eyes of the body. By contrast, the putting off of the disease and the paralytic's rising up and walking carries with it a clear demonstration of a godlike power. Jesus adds, \"Rise, take up your bed and go home.\" And he returned to his house, delivered from the infirmity from which he had so long suffered. This very fact proves that the Son of man has power on earth to forgive sins. But to whom does he refer when he says this? Himself only, or us too? Both the one and the other are true. For he forgives sins as the incarnate God, the Lord of the law. We too have received from him this splendid and most admirable grace. He has crowned human nature with this great honor also, having even said to the holy apostles, \"Truly, I say to you, whatever you bind on earth shall be bound in heaven, and whatever you loose on earth shall be loosed in heaven.\" And again, \"If you forgive the sins of any, they are forgiven; if you retain the sins of any, they are retained.\" And what is the occasion on which we find him speaking this to them? It was after he had trampled on the power of death and risen from the grave, when he breathed on them and said, \"Receive the Holy Spirit.\" After he had made them partakers of his nature and bestowed upon them the indwelling of the Holy Spirit, he also made them sharers of his glory, by giving them power both to remit and to bind sins. And as we have been commanded to perform this very act, how much more must he himself remit sins, when he gives to others authority to enable them to do so?",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.5.24"
+    },
+    {
+      "id": "hcf:bede:luke.5.24:5f2b70f7:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 5:24",
+      "excerpt": "He says to the paralytic: I say to you, rise; take up your bed, and go into your house. Spiritually to rise from the bed is to draw the soul away from carnal desires, where it lay sick. To take up the bed is to deprive the flesh itself, thus corrected by the reins of continence, of earthly delights by the hope of heavenly rewards. For the same bed that is washed every night by David, that is, chastised with a worthy flood of penitence for the stains of each sin. But taking up the bed and going to the house is to return to paradise. For that is the true home, which first received man, not lost by right but by fraud, and finally restored by Him who owed nothing to the fraudulent enemy. Alternatively, the one who was sick returns home with the bed when the soul, having received the remission of sins, returns with the body itself for the inward custody, lest after forgiveness it commits something for which it might justly be struck again.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.5.24"
+    },
+    {
+      "id": "hcf:bede:luke.5.24:9aa1d8de:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 5:24",
+      "excerpt": "But that you may know that the Son of Man has power on earth to forgive sins. If He is also God, according to the well-known testimony of Isaiah, who blots out our iniquities (Psalm 50), and the Son of Man has the power on earth to forgive sins (Matthew 9), therefore He Himself is both God and the Son of Man, so that Christ as man by the power of His divinity can forgive sins, and the same Christ as God can die for sinners through the frailty of His humanity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.5.24"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.5.24:a99c121d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:homily-on-our-lord-21-1",
+      "title": "HOMILY ON OUR LORD 21.1 on luke 5:24",
+      "excerpt": "While the Pharisee doubted that our Lord was a prophet, he was unwittingly pledging himself to the truth by thinking, \"If this man were a prophet, he would know that this woman is a sinner.\" Therefore, if our Lord indeed knows that she is a sinner, then, Pharisee, by your own reasoning he indeed is a prophet. And so our Lord did not hesitate to point out not only that she was a sinner but also that she had sinned very much, so that the testimony of his own mouth would trap the accuser. [The Pharisee] was one of those who had said, \"Who can forgive sins but God alone?\" Our Lord took this testimony from them, that whoever is able to forgive sin is God. From this point on, the struggle was for our Lord to show them whether or not he was able to forgive sin. And so he quickly healed the parts [of the body] that were visible, to confirm that he had forgiven the sins which were not visible.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-on-our-lord-21-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.5.24"
     }
   ]
 }

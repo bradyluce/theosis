@@ -76,6 +76,31 @@
       ]
     },
     {
+      "id": "catena-mark-0801-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.10.14",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 10:13–16",
+      "excerpt": "Wherefore He says not, for of these, but of such is the kingdom of God, that is, of persons who have both in their intention and their work the harmlessness and simplicity which children have by nature. For a child does not hate, does nothing of evil intent, nor though beaten does he quit his mother; and though she clothe him in vile garments, prefers them to kingly apparel; in like manner he, who lives according to the good ways of his mother the Church, honours nothing before her, nay, not pleasure, which is the queen of many; wherefore also the Lord subjoins, Verily I say unto you,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.10.14:09164e9c:1"
+      ]
+    },
+    {
       "id": "catena-mark-0797-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.14",
@@ -109,25 +134,99 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:mark.10.14:b42ee2c6:0"
       ]
     },
     {
-      "id": "catena-mark-0801-v14",
+      "id": "hcf:theophylact-of-ohrid:mark.10.14:3739f1ad:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.10.14",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 10:13–16",
-      "excerpt": "Wherefore He says not, for of these, but of such is the kingdom of God, that is, of persons who have both in their intention and their work the harmlessness and simplicity which children have by nature. For a child does not hate, does nothing of evil intent, nor though beaten does he quit his mother; and though she clothe him in vile garments, prefers them to kingly apparel; in like manner he, who lives according to the good ways of his mother the Church, honours nothing before her, nay, not pleasure, which is the queen of many; wherefore also the Lord subjoins, Verily I say unto you,…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:14",
+      "excerpt": "What then does Christ do? Teaching the disciples to be humble-minded and to reject worldly pride, He receives and embraces the children. By this He shows that He accepts the innocent; therefore He also says: \"for of such is the Kingdom of God.\" Note, He did not say \"of these children is the Kingdom,\" but \"of such,\" that is, of those who have acquired the same innocence that children possess by nature. For a child does not envy, does not remember wrongs, and when punished by its mother does not run from her, but even if she wore rags, would prefer her to a queen; so also one who lives virtuously prefers his mother — I mean the Church — to all things, and is not carried away by worldly pleasures. For this reason the Lord also embraces such ones, saying: \"Come unto Me, all you who labor and are heavy laden\" (Matt. 11:28), and blesses them, saying: \"Come, you blessed of My Father\" (Matt. 25:34).",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.14"
+    },
+    {
+      "id": "hcf:bede:mark.10.14:879ecb11:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 10:14",
+      "excerpt": "When Jesus saw them, He was indignant and said to them, \"Let the little children come to Me, and do not hinder them, for the kingdom of God belongs to such as these.\" He said significantly, \"to such as these,\" not \"to these,\" to show that it is not age that reigns, but character; and that the reward is promised to those who have similar innocence and simplicity. The Apostle also agrees with this sentiment: \"Brothers, do not be children in understanding, but in malice be children, and in understanding be perfect.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.10.14"
+    },
+    {
+      "id": "hcf:basil-the-great:mark.10.14:d680352e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:the-long-rules-15",
+      "title": "THE LONG RULES 15 on mark 10:14",
+      "excerpt": "The apostle praised one [Timothy] who had known the holy Scripture from infancy. He also instructed that children be reared \"in the discipline and correction of the Lord.\" So we consider every time of life, even the very earliest, suitable for receiving persons into the community of faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-long-rules-15",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:mark.10.14"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.10.14:19eb44fc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lviii-5",
+      "title": "Epistle LVIII.5 on mark 10:14",
+      "excerpt": "For which reason we think that no one is to be hindered from obtaining grace by that law which was already ordained, and that spiritual circumcision ought not to be hindered by carnal circumcision, but that absolutely every man is to be admitted to the grace of Christ, since Peter also in the Acts of the Apostles speaks, and says, \"The Lord hath said to me that I should call no man common or unclean.\"8 But if anything could hinder men from obtaining grace, their more heinous sins might rather hinder those who are mature and grown up and older. But again, if even to the greatest sinners, and to those who had sinned much against God, when they subsequently believed, remission of sins is granted-and nobody is hindered from baptism and from grace-how much rather ought we to shrink from hindering an infant, who, being lately born, has not sinned, except in that, being born after the flesh according to Adam,9 he has contracted the contagion of the ancient death at its earliest birth, who approaches the more easily on this very account to the reception of the forgiveness of sins-that to him are remitted, not his own sins, but the sins of another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.10.14"
+    },
+    {
+      "id": "hcf:tertullian:mark.10.14:54310f4e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on mark 10:14",
+      "excerpt": "For why is it necessary-if (baptism itself) is not so necessary -that the sponsors likewise should be thrust into danger? Who both themselves, by reason of mortality, may fail to fulfil their promises, and may be disappointed by the development of an evil disposition, in those for whom they stood? The Lord does indeed say, \"Forbid them not to come unto me.\" Let them \"come,\" then, while they are growing up; let them \"come\" while they are learning, while they are learning whither to come; let them become Christians when they have become able to know Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.10.14"
     },
     {
       "id": "catena-mark-0803-v14",

@@ -4,14 +4,14 @@
   "verseNumber": 1,
   "entries": [
     {
-      "id": "catena-luke-2641-v1",
+      "id": "catena-luke-2645-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.1",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:1–8",
-      "excerpt": "He who hath redeemed thee, hath shewn thee what He would have thee do. He would have thee be instant in prayer, He would have thee ponder in thy heart the blessings thou art praying for, He would have thee ask and receive what His goodness is longing to impart. He never refuses His blessings to them that pray, but rather stirs men up by His mercy not to faint in praying. Gladly accept the Lord’s encouragement: be willing to do what He commands, not to do what He forbids. Lastly, consider what a blessed privilege is granted thee, to talk with God in thy prayers, and make known to Him all thy…",
+      "excerpt": "The widow may be said to resemble the Church, which appears desolate until the Lord shall come, who now secretly watches over her. But in the following words, And she came unto him, saying, Avenge me, &c. we are told the reason why the elect of God pray that they may be avenged; which we find also said of the martyrs in the Revelations of St. John, (Rev. 6:10.) though at the same time we are very plainly reminded to pray for our enemies and persecutors. This avenging of the righteous then we must understand to be, that the wicked may perish. And they perish in two ways, either by conversion…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -37,24 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2645-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.18.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:1–8",
-      "excerpt": "The widow may be said to resemble the Church, which appears desolate until the Lord shall come, who now secretly watches over her. But in the following words, And she came unto him, saying, Avenge me, &c. we are told the reason why the elect of God pray that they may be avenged; which we find also said of the martyrs in the Revelations of St. John, (Rev. 6:10.) though at the same time we are very plainly reminded to pray for our enemies and persecutors. This avenging of the righteous then we must understand to be, that the wicked may perish. And they perish in two ways, either by conversion…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.18.1:e3d40b6a:1"
       ]
     },
     {
@@ -66,24 +55,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:1–8",
       "excerpt": "If then with the most unjust judge, the perseverance of the suppliant at length prevailed even to the fulfilment of her desire, how much more confident ought they to feel who cease not to pray to God, the Fountain of justice and mercy? And so it follows. And the Lord said, Hear what, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2649-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.18.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:1–8",
-      "excerpt": "Our Lord speaks this of perfect faith, which is seldom found on earth. See how full the Church of God is; were there no faith, who would enter it? Were there perfect faith, who would not move mountains?",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -112,6 +83,49 @@
       ]
     },
     {
+      "id": "catena-luke-2649-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:1–8",
+      "excerpt": "Our Lord speaks this of perfect faith, which is seldom found on earth. See how full the Church of God is; were there no faith, who would enter it? Were there perfect faith, who would not move mountains?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2641-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:1–8",
+      "excerpt": "He who hath redeemed thee, hath shewn thee what He would have thee do. He would have thee be instant in prayer, He would have thee ponder in thy heart the blessings thou art praying for, He would have thee ask and receive what His goodness is longing to impart. He never refuses His blessings to them that pray, but rather stirs men up by His mercy not to faint in praying. Gladly accept the Lord’s encouragement: be willing to do what He commands, not to do what He forbids. Lastly, consider what a blessed privilege is granted thee, to talk with God in thy prayers, and make known to Him all thy…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.18.1:138a9fa0:0"
+      ]
+    },
+    {
       "id": "catena-luke-2646-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.1",
@@ -127,6 +141,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.18.1:e4dd86d9:0"
       ]
     },
     {
@@ -149,6 +170,24 @@
       ]
     },
     {
+      "id": "catena-luke-2650-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.1",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:1–8",
+      "excerpt": "When the Almighty Creator shall appear in the form of the Son of man, so scarce will the elect be, that not so much the cries of the faithful as the torpor of the others will hasten the world’s fall. Our Lord speaks then as it were doubtfully, not that He really is in doubt, but to reprove us; just as we sometimes, in a matter of certainty, might use the words of doubt, as, for instance, in chiding a servant, “Remember, am I not thy master?”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2642-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.1",
@@ -164,20 +203,52 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.18.1:2edaff6d:1"
       ]
     },
     {
-      "id": "catena-luke-2650-v1",
+      "id": "catena-luke-2648-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.1",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:1–8",
-      "excerpt": "When the Almighty Creator shall appear in the form of the Son of man, so scarce will the elect be, that not so much the cries of the faithful as the torpor of the others will hasten the world’s fall. Our Lord speaks then as it were doubtfully, not that He really is in doubt, but to reprove us; just as we sometimes, in a matter of certainty, might use the words of doubt, as, for instance, in chiding a servant, “Remember, am I not thy master?”",
+      "excerpt": "As if He said, If perseverance could melt a judge defiled with every sin, how much more shall our prayers incline to mercy God the Father of all mercies! But some have given a more subtle meaning to the parable, saying, that the widow is a soul that has put off the old man, (that is, the devil,) who is her adversary, because she approaches God, the righteous Judge, who neither fears (because He is God alone) nor regards man, for with God there is no respect of persons. Upon the widow then, or soul ever supplicating Him against the devil, God shews mercy, and is softened by her importunity.…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.18.1:0757209c:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2644-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.1",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:1–8",
+      "excerpt": "We may observe, that irreverence towards man is a token of a greater degree of wickedness. For as many as fear not God, yet are restrained by their shame before men, are so far the less sinful; but when a man becomes reckless also of other men, the burden of his sins is greatly increased.It follows, And there was a widow in that city.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -203,40 +274,123 @@
       ]
     },
     {
-      "id": "catena-luke-2644-v1",
+      "id": "hcf:augustine:luke.18.1:7682fa5f:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.18.1",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:1–8",
-      "excerpt": "We may observe, that irreverence towards man is a token of a greater degree of wickedness. For as many as fear not God, yet are restrained by their shame before men, are so far the less sinful; but when a man becomes reckless also of other men, the burden of his sins is greatly increased.It follows, And there was a widow in that city.",
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-130",
+      "title": "LETTER 130 on luke 18:1",
+      "excerpt": "[The Lord] taught us to pray to receive this blessed life. He taught us not to pray with much speaking, as if we were more likely to be heard, the more words we use in our prayer. The Lord said, \"He knows what is needful for us before we ask him.\" For this reason, it may seem strange, although he cautions us against much speaking, he still urges us to pray since he knows what is needful for us before we ask for it. He said, \"We should always pray and not faint.\" He used the example of a certain widow who wished to be avenged of her adversary and petitioned an unjust judge so often that she made him listen to her. She made him listen not through any motive of justice or compassion, but through weariness of her insistence. In this way, we were to learn how surely the merciful and just God hears us when we pray without ceasing. The widow, because of her continual petition, could not be treated with contempt even by an unjust and wicked judge.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.18.1"
     },
     {
-      "id": "catena-luke-2648-v1",
+      "id": "hcf:theophylact-of-ohrid:luke.18.1:04f64730:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.18.1",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:1–8",
-      "excerpt": "As if He said, If perseverance could melt a judge defiled with every sin, how much more shall our prayers incline to mercy God the Father of all mercies! But some have given a more subtle meaning to the parable, saying, that the widow is a soul that has put off the old man, (that is, the devil,) who is her adversary, because she approaches God, the righteous Judge, who neither fears (because He is God alone) nor regards man, for with God there is no respect of persons. Upon the widow then, or soul ever supplicating Him against the devil, God shews mercy, and is softened by her importunity.…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 18:1",
+      "excerpt": "All this, he says, is to happen to the people of that time, but against this, prayer provides great help, which we must constantly and with patience offer, keeping in mind how the persistence of the widow swayed the unjust judge. For if constant entreaty softened him, who was full of all manner of wickedness and ashamed neither before God nor before men, how much more shall we not incline to mercy the Father of compassions, God, even though He delays for the present? Notice that not being ashamed before men is a sign of great wickedness. For many do not fear God, but are at least ashamed before men, and therefore sin less. But whoever has ceased to be ashamed even before men has reached the height of wickedness. Therefore the Lord also placed afterward: \"and was not ashamed before men,\" speaking as if to say: the judge did not fear God, and what am I saying, did not fear God? — he displayed even greater wickedness, because he was not ashamed even before men.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.18.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.18.1:e158eb25:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 18:1",
+      "excerpt": "Since the Lord mentioned sorrows and dangers, He also offers the remedy for them. This remedy is prayer, and not simply prayer, but constant and fervent prayer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.18.1"
+    },
+    {
+      "id": "hcf:bede:luke.18.1:03159fbf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 18:1",
+      "excerpt": "He also told them a parable to the effect that they ought always to pray and not lose heart. The Apostle also says: \"Rejoice always, pray without ceasing.\" But who can always pray like this, and persist in prayer without failing or pausing, so that he neither has time for receiving food or for sleeping? Therefore, it must be said that he always prays and does not lose heart, who daily during the canonical hours according to the custom of the Church tradition does not cease to praise and beseech the Lord with psalms and customary prayers, and this is what the Psalmist said: \"I will bless the Lord at all times; his praise shall continually be in my mouth\" (Psalm 34). Or certainly, all that the righteous do and say according to God should be regarded as a prayer. For since the righteous constantly do what is just, they will thereby constantly pray without ceasing, nor will they ever cease from prayer unless they cease to be righteous.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.18.1"
+    },
+    {
+      "id": "hcf:origen:luke.18.1:7aed38d2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:on-prayer-10-2",
+      "title": "ON PRAYER 10.2 on luke 18:1",
+      "excerpt": "He prays for those who pray and appeals with those who appeal. He does not, however, pray for servants who do not pray continuously through him. He will not be the Advocate with God for his own if they are not obedient to his instructions that they always should pray and not lose heart. It says, \"And he told them a parable to the effect that they should always pray and not lose heart. In a certain city there was a judge, etc.\" … Who would hesitate a moment to be persuaded to pray if he believes that the mouth of Jesus cannot lie, when he says, \"Ask, and it will be given you … for everyone who asks, receives\"?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.18.1"
+    },
+    {
+      "id": "hcf:tertullian:luke.18.1:a974cfd9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-fasting",
+      "title": "On Fasting on luke 18:1",
+      "excerpt": "Further: since in the self-same commentary of Luke the third hour is demonstrated as an hour of prayer, about which hour it was that they who had received the initiatory gift of the Holy Spirit were held for drunkards; and the sixth, at which Peter went up on the roof; and the ninth, at which they entered the temple: why should we not understand that, with absolutely perfect indifference, we must pray always, and everywhere, and at every time; yet still that these three hours, as being more marked in things human-(hours) which divide the day, which distinguish businesses, which re-echo in the public ear-have likewise ever been of special solemnity in divine prayers? A persuasion which is sanctioned also by the corroborative fact of Daniel praying thrice in the day; of course, through exception of certain stated hours, no other, moreover, than the more marked and subsequently apostolic (hours)-the third, the sixth, the ninth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.18.1"
+    },
+    {
+      "id": "hcf:tertullian:luke.18.1:8e7ab34d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 18:1",
+      "excerpt": "When He recommends perseverance and earnestness in prayer, He sets before us the parable of the judge who was compelled to listen to the widow, owing to the earnestness and importunity of her requests. He show us that it is God the judge whom we must importune with prayer, and not Himself, if He is not Himself the judge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.18.1"
     }
   ]
 }

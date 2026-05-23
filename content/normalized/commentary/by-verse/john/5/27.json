@@ -4,6 +4,25 @@
   "verseNumber": 27,
   "entries": [
     {
+      "id": "augustine-john-023-c5-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.5.27",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 5:19–40",
+      "excerpt": "In a certain place in the Gospel, the Lord says that the prudent hearer of His word ought to be like a man who, wishing to build a house, digs deeply until he comes to the foundation of stability on the rock, and there establishes in security what he builds against the violence of the flood; so that, when the flood comes, it may be rather beaten back by the strength of the building. than bring ruin on that house by the force of its pressure. Matthew 7:24-25 Let us regard the Scripture of God to be, as it were, the field where we wish to build something. Let us not be slothful, nor be content…",
+      "takeaway": "",
+      "sourceId": "augustine-tractates-john-source",
+      "rank": 85,
+      "tags": [
+        "augustine",
+        "patristic",
+        "tractate",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-019-c5-v27",
       "relation": "verse",
       "targetVerseId": "kjva:john.5.27",
@@ -42,43 +61,6 @@
       ]
     },
     {
-      "id": "augustine-john-023-c5-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.5.27",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 5:19–40",
-      "excerpt": "In a certain place in the Gospel, the Lord says that the prudent hearer of His word ought to be like a man who, wishing to build a house, digs deeply until he comes to the foundation of stability on the rock, and there establishes in security what he builds against the violence of the flood; so that, when the flood comes, it may be rather beaten back by the strength of the building. than bring ruin on that house by the force of its pressure. Matthew 7:24-25 Let us regard the Scripture of God to be, as it were, the field where we wish to build something. Let us not be slothful, nor be content…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0646-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.5.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 5:27–29",
-      "excerpt": "But why does He dwell so constantly on these subjects; judgment, resurrection, and life? Because these are the most powerful arguments for bringing men over to the faith, and the most likely ones to prevail with obstinate hearers. For one who is persuaded that he shall rise again, and be called by the Son to account for his misdeeds, will, though he know nothing more than this, be anxious to propitiate his Judge. It follows, Because He is the Son of man, marvel not at this. Paul of Samosata reads it, Hath given Him power to execute judgment also, because He is the Son of man. But this…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0647-v27",
       "relation": "verse",
       "targetVerseId": "kjva:john.5.27",
@@ -94,6 +76,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.5.27:2bf80a02:5"
       ]
     },
     {
@@ -115,6 +104,31 @@
       ]
     },
     {
+      "id": "catena-john-0646-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.5.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 5:27–29",
+      "excerpt": "But why does He dwell so constantly on these subjects; judgment, resurrection, and life? Because these are the most powerful arguments for bringing men over to the faith, and the most likely ones to prevail with obstinate hearers. For one who is persuaded that he shall rise again, and be called by the Son to account for his misdeeds, will, though he know nothing more than this, be anxious to propitiate his Judge. It follows, Because He is the Son of man, marvel not at this. Paul of Samosata reads it, Hath given Him power to execute judgment also, because He is the Son of man. But this…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.5.27:efc6de23:0"
+      ]
+    },
+    {
       "id": "catena-john-0645-v27",
       "relation": "verse",
       "targetVerseId": "kjva:john.5.27",
@@ -130,7 +144,219 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.5.27:a5e295d2:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.5.27:3fc3febf:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-19",
+      "title": "Tractates on John 19 on john 5:27",
+      "excerpt": "Now hear concerning the resurrection of bodies, not me, but the Lord about to speak, on account of those who have risen again by a resurrection from death, by cleaving to life. To what life? To a life which knows not death. Why knows not death? Because it knows not mutability. Why knows not mutability? Because it is life in itself. \"And hath given Him authority to execute judgment, because He is the Son of man.\" What judgment, what kind of judgment? \"Marvel not at this\" which I have said, - gave Him authority to execute judgment, - \"for the hour is coming.\" He does not add, \"and now is:\" therefore He means to make known to us a certain hour in the end of the world.\r\n\r\nThe hour is now that the dead rise, the hour will be in the end of the world that the dead rise: but that they rise now in the mind, then in the flesh; that they rise now in the mind by the Word of God, the Son of God; then in the flesh by the Word of God made flesh, the Son of man. For it will not be the Father Himself that will come to judgment, notwithstanding the Father doth not withdraw Himself from the Son. How, then, is it that the Father Himself will not come? In that He will not be seen in the judgment. \"They shall look on Him whom they pierced.\" That form which stood before the judge, will be Judge: that form will judge which was judged; for it was judged unjustly, it will judge justly.\r\n\r\nThere will come the form of a servant, and that same will be apparent. For how could the form of God be made apparent to the just and to the unjust? If the judgment were to be only among the just, then the form of God might appear as to the just. But because the judgment is to be of the just and of the unjust, and that it is not permitted to the wicked to see God, - for \"blessed are the pure in heart, for they shall see God,\" - such a Judge will appear as may be seen by those whom He is about to crown, and by those whom He is about to condemn. Hence the form of a servant will be seen, the form of God will be hid. The Son of God will be hid in the servant, and the Son of man will be manifest, since to Him \"hath He given authority to execute judgment, because He is the Son of man.\"\r\n\r\nAnd because He alone will appear in the form of a servant, but the Father not, since He has not taken upon Him the form of a servant; for that reason He saith above: \"The Father judgeth not any man, but hath given all judgment to the Son.\" Rightly then had it been deferred, that the propounder might Himself be the interpreter. For before it was hidden; now, as I think, it is already manifest, that \"He gave Him authority to execute judgment,\" that \"the Father judgeth not any man, but hath given all judgment to the Son:\" because the judgment is to be by that form which the Father hath not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:augustine:john.5.27:fdb01bef:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-19",
+      "title": "Tractates on John 19 on john 5:27",
+      "excerpt": "Wherefore, keep not silent, O Lord, concerning the resurrection of the flesh; lest men believe it not, and we continue reasoners, not preachers. But \"as the Father hath life in Himself, even so hath He given to the Son to have life in Himself.\" Let them that hear, understand; let them believe that they may understand; let them obey that they may live. And that they may not suppose that the resurrection is finished here, let them hear this further: \"and hath given Him authority to execute judgment also.\" Who hath given? The Father. To whom hath He given? To the Son; namely, to whom He gave to have life in Himself, to the same hath He given authority to execute judgment.\r\n\r\n\"Because He is the Son of man.\" For this is the Christ, both Son of God and Son of man. \"In the beginning was the Word, and the Word was with God, and the Word was God. This was in the beginning with God.\" Behold, how He hath given Him to have life in Himself! But because \"the Word was made flesh, and dwelt among us,\" was made man of the Virgin Mary, He is the Son of man. What, therefore, hath He received as Son of man? Authority to execute judgment. What judgment? That in the end of the world. Then also there will be a resurrection, but a resurrection of bodies. So, then, God raiseth up souls by Christ, the Son of God; bodies He raiseth up by the same Christ, the Son of man. \"Hath given Him authority.\" He should not have this authority did He not receive it; and He should be a man without authority. But the same who is Son of God is also Son of man. For by adhering to the unity of person, the Son of man with the Son of God is made one person, and the Son of God is the same person which the Son of man is.\r\n\r\nBut what characteristic it has, and wherefore, must be distinguished. The Son of man has soul and body. The Son of God, which is the Word of God, has man, as the soul has body. And just as soul having body does not make two persons, but one man; so the Word, having man, maketh not two persons, but one Christ. What is man? A rational soul, having a body. What is Christ? The Word of God, having man. I see of what things I speak, who I the speaker am, and to whom I am speaking.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:augustine:john.5.27:f78b86b1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-127",
+      "title": "Sermon 127 on john 5:27",
+      "excerpt": "And he has granted him power to execute judgment, because he is the Son of Man. Therefore, that form will come for judgment. The form of a man will come for judgment; hence he says: He has granted him power to execute judgment, because he is the Son of Man. The judge here will be the Son of Man; that form will judge here which has been judged. Listen, and understand, this the Prophet had already said: They will look on the one they have pierced. They will see that very form, which they pierced with a lance. The judge will sit, who stood before the judge. He will condemn the true guilty, who was made a false guilty one. He himself will come, that form will come. You have this also in the Gospel: when, before the eyes of his disciples, he went into heaven, they were standing and watching, and an angelic voice sounded: Men of Galilee, why do you stand looking? etc. This same Jesus will come in the same way as you saw him going into heaven. What does it mean: he will come in the same way? He will come in the same form: For he has granted him power to execute judgment, because he is the Son of Man. See, however, in what way this was necessary, and it was right, that those to be judged should see the judge. For both the good and the bad were to be judged. But blessed are the pure in heart, for they will see God. It remains, then, that in judgment the form of a servant should be shown to both the good and the bad, the form of God should be reserved for the good alone.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:augustine:john.5.27:07c8d7fd:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-22",
+      "title": "Tractates on John 22 on john 5:27",
+      "excerpt": "He repeats the same thing also in this place, when He says, \"And hath given Him authority of executing judgment, because He is the Son of man.\" As if thou wert to say, \"hath given Him authority of executing judgment.\" In what way? When He had not that authority of executing judgment? Since \"in the beginning was the Word, and the Word was with God, and the Word was God;\" since \"all things were made by Him,\" did He not already have authority of executing judgment? Yes, but according to this, I say, \"He gave Him authority of executing judgment, because He is the Son of man:\" according to this, He received authority of judging \"because He is the Son of man.\" For in that He is the Son of God, He always had this authority. He that was crucified, received; He who was in death, is in life: the Word of God never was in death, but is always in life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:augustine:john.5.27:baece2b2:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-22",
+      "title": "Tractates on John 22 on john 5:27",
+      "excerpt": "Afterwards, because He was made man, what gave He to Him? \"And hath given Him authority to execute judgment, because He is the Son of man.\" In that He is the Son of God, \"As the Father hath life in Himself, so also hath He given to the Son to have life in Himself;\" in that He is the Son of man, \"He hath given Him authority of executing judgment.\" This is what I explained to you yesterday, my beloved, that in the judgment man will be seen, but God will not be seen; but after the judgment, God will be seen by those who have prevailed in the judgment, but by the wicked He will not be seen. Since, therefore, the man will be seen in the judgment in that form in which He will so come as He ascended, for that reason He had said above, \"The Father judgeth not any man, but hath given all judgment to the Son.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.5.27:69fd79b8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 5:27",
+      "excerpt": "And He gave Him authority not only to give life, but also to execute judgment, that is, to punish and deliver to torments.\r\nHe frequently introduces the subject of judgment in order to draw His listeners to Himself. For whoever is convinced that he will rise again and will have to give an account to Him for his transgressions will, without a doubt, hasten to Him in order to propitiate Him as his future Judge.\r\n\"Do not marvel that He is the Son of Man.\" Although He is the Son of Man, He is at the same time also God. Therefore He rightly has the authority of judgment as the Son of God. Although He appears to be a man, do not marvel.\r\nIt is necessary to know that Paul of Samosata, presenting the Lord as a mere man, read this passage thus: \"and gave Him authority to execute judgment also, because He is a son of man.\" Placing a stop here, he read with a new beginning: \"Marvel not at this.\" Such a reading is completely unreasonable. For the Father gave judgment to the Son not because He is the Son of Man, but because He is God. But he, not tolerating calling Christ God, but calling Him the Son of Man, understood it so that He is judge not as God, but as a son of man. We, however, understand it as it is stated.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.5.27:f5cbf26e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-39",
+      "title": "Homily on the Gospel of John 39 on john 5:27",
+      "excerpt": "\"That He is the Son of Man, marvel not at this.\"\r\n\r\nPaul of Samosata rendereth it not so; but how? \"Hath given Him authority to execute judgment, 'because' He is the Son of Man.\" Now the passage thus read is inconsequent, for He did not receive judgment \"because\" He was man, (since then what hindered all men from being judges,) but because He is the Son of that Ineffable Essence, therefore is He Judge. So we must read, \"That He is the Son of Man, marvel not at this.\" For when what He said seemed to the hearers inconsistent, and they deemed Him nothing more than mere man, while His words were greater than suited man, yea, or even angel, and were proper to God only, to solve this objection He addeth, \"Marvel not that He is the Son of Man, for the hour is coming in the which they that are in the tombs shall hear His voice and shall go forth, they that have done good to the resurrection of life, and they that have done evil to the resurrection of judgment.\"\r\n\r\nAnd wherefore said He not, \"Marvel not that He is the Son of Man, for He is also the Son of God,\" but rather mentioned the \"resurrection\"? He did indeed put this above, by saying, \"shall hear the Voice of the Son of God.\" And if here He is silent on the matter, wonder not; for after mentioning a work which was proper to God, He then permitteth His hearers to collect from it that He was God, and the Son of God. For had this been continually asserted by Himself, it would at that time have offended them, but when proved by the argument of miracles, it rendered His doctrine less burdensome.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.5.27:bcd6975a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-39",
+      "title": "Homily on the Gospel of John 39 on john 5:27",
+      "excerpt": "\"Hath given Him authority to execute judgment also.\"\r\n\r\nAnd wherefore doth He continually dwell upon \"resurrection\" and \"judgment\"? For He saith, \"As the Father raiseth up the dead and quickeneth them, even so the Son quickeneth whom He will\": and again, \"the Father judgeth no man, but hath committed all judgment to the Son\": and again, \"As the Father hath life in Himself so hath He given to the Son to have life in Himself\"; and again, \"They that have heard the Voice of the Son of God shall live\"; and here again, \"Hath given to Him authority to execute judgment.\" Wherefore doth He dwell on these things continually? I mean, on \"judgment,\" and \"life,\" and \"resurrection\"? It is because these subjects are able most of any to attract even the obstinate hearer. For the man who is persuaded that he shall both rise again and shall give account to Christ of his transgressions, even though he have seen no other sign, yet having admitted this, will surely run to Him to propitiate his Judge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:hcf-ammonius-of-alexandria:john.5.27:d89504e1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ammonius-of-alexandria",
+      "workId": "hcf:work:hcf-ammonius-of-alexandria:fragments-on-john-167",
+      "title": "FRAGMENTS ON JOHN 167 on john 5:27",
+      "excerpt": "Some think that it should read, \"He gave him authority also to execute judgment because he is the Son of man.\" But this connection makes no sense, for he is not our judge \"because he is the Son of man,\" but rather because he is the Son of God. That is why he is our judge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragments-on-john-167",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c300"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.5.27:e2646c20:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 5:27",
+      "excerpt": "Observe again the economy in these words, that thou mayest marvel at the form of expression and not, by falling into offence thereat from ignorance, bring upon thyself perdition. For the Only-Begotten, being Man in respect of the nature of His Body, and seen as one of us while yet upon the earth with flesh, manifoldly instructing the Jews in matters pertaining to salvation, clothed Himself with the glory of two God-befitting things. For He clearly affirmed, that He would both raise the dead, and set them at His Judgement-seat to be judged. But it was extremely likely that the hearers would be vexed at this, accusing Him with reason, because He said that God was His Father, making Himself equal with God. Having mingled therefore with God-befitting Authority and Splendour language befitting the human nature, He beguiles the weight of their wrath, saying more modestly and lowlily than was necessary, For as the Father hath life in Himself, so hath He given to the Son too to have life in Himself. Marvel not (saith He) if I, Who am now as you, and am seen as a Man, promise to raise the dead, and threaten to bring them to judgement: the Father hath given Me Power to quicken, He hath given Me to judge with authority. But when He had hereby healed the readily-slipping ear of the Jews, He bestows zealous care for the profit too of what follows, and immediately explaining why He says that He hath received it, He alleges that human nature hath nothing of itself, saying, Because He is the Son of Man.\r\n\r\nFor that the Only Begotten is also Life by Nature, and not a partaker of life from another, and so quickeneth as doth the Father, I think it superfluous to say now, since no small discourse was expended hereupon in the beginning of the book, upon the words, In Him was Life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.5.27:b9d1c37e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 5:27",
+      "excerpt": "For the person of the receiver, is distinct from that of the giver: it being inconceivable that one and the same person, should give to and receive from Himself. He who lives of Himself is one person: He who acknowledges an Author of His life is another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.5.27"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.5.27:5e48ea90:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 5:27",
+      "excerpt": "Then, he makes it clear that he has the power to judge. First, he reveals his judiciary power. Secondly, he gives a reason for what he has said (v 30). As to the first he does two things. First, he indicates the origin of his judiciary power. Secondly, he shows that his judgment is just (v 29).\r\n\r\nWith regard to the first, we should note that his statement, he [the Father] gave him the power, can be understood in two ways. One way is that of Augustine; the other is that of Chrysostom.\r\n\r\nIf we understand it as Chrysostom does, then this section is divided into two parts. First, he reveals the origin of his judiciary power. Secondly, he settles a difficulty (v 27b).\r\n\r\nChrysostom punctuates this section in the following way. He gave him the power to pass judgment. And then a new sentence begins: Because he is the Son of Man, do not be surprised at this. The reason for this punctuation is that Paul of Samosata, an early heretic, who like Photius said that Christ was only a man and took his origin from the Virgin, punctuated it as: He gave him the power to pass judgment because he is the Son of Man. And then he began a new sentence: Do not be surprised at this, since the hour is coming. It was as if he thought that it was necessary for judiciary power to be given to Christ because he is the Son of Man, that is, a mere man, who, of himself, cannot judge men. And so, if Christ is to judge others, he must be given the power to judge.\r\n\r\nBut this, according to Chrysostom, cannot stand, because it is not at all in agreement with what is stated. For if it is because he is a man that he receives judiciary power, then for the same reason, since it would belong to every man to have judiciary power in virtue of his human nature, it would not belong to Christ any more than to other men. So we should not understand it this way. Rather, we should say that because Christ is the ineffable Son of God, he is on that account also judge. And this is what he says: The Father not only gave him the power to give life, but also he gave him the power, through eternal generation, to pass judgment, just as he gave him, through eternal generation, to have life in himself: \"He is the one appointed by God to be the judge of the living and of the dead,\" as we read in Acts (10:42).\r\n\r\nAugustine punctuates this passage in the following way. And he gave him the power to pass judgment because he is the Son of Man. And then a new sentence follows: Do not be surprised at this. In this interpretation there are two parts. The first concerns the power to judge granted to the Son of Man. In the second, the granting of an even greater power is made clear, at Do not be surprised at this.\r\n\r\nAs to the first we should note that, according to the mind of Augustine, he spoke above of the resurrection of souls, which is accomplished through the Son of God, but here he is speaking of the resurrection of bodies, which is accomplished through the Son of Man. And because the general resurrection of bodies will take place at the time of judgment, he mentions the judgment first, in saying, And he [the Father] gave him, i.e., Christ, the power to pass judgment, and this, because he is the Son of Man, i.e., according to his human nature. Thus it is also after the resurrection that he says in Matthew (28:18): \"All power has been given to me, in heaven and on earth.\"\r\n\r\nThere are three reasons why judiciary power has been given to Christ as man. First, in order that he might be seen by all: for it is necessary that a judge be seen by all who are to be judged. Now both the good and the wicked will be judged. And the good will see Christ in his divinity and in his humanity; while the wicked will not be able to see him in his divinity, because this vision is the happiness of the saints and is seen only by the pure in heart: \"Happy are the pure in heart, for they will see God\" (Mt 5:8). And so, in order that Christ can be seen at the judgment not only by the good, but also by the wicked, he will judge in human form: \"Every eye will see him, and all who pierced him\" (Rv 1:7).\r\n\r\nSecondly, the power to judge was given to Christ as man because by the self-abasement of his passion he merited the glory of an exaltation. Thus, just as he who died arose, so that [human] form which was judged, will judge, and he who stood before a human judge will preside at the judgment of men. He who was falsely found guilty will condemn the truly guilty, as Augustine remarks in his work, The Sayings of the Lord. \"Your cause has been judged as that of the wicked; but cause and judgment you will recover\" (Jb 36:17).\r\n\r\nThirdly, Christ as man was given judiciary power to suggest the compassion of the judge. For it is very terrifying for a man to be judged by God: \"It is a terrible thing to fall into the hands of the living God\" (Heb 10:31); but it produces confidence for a man to have another man as his judge. Accordingly, so you can experience the compassion of your judge, you will have a man as judge: \"We do not have a high priest who cannot have compassion on our weakness\" (Heb 4:15).\r\n\r\nThus, he gave him, Christ, the power to pass judgment because he is the Son of Man.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.5.27"
     }
   ]
 }

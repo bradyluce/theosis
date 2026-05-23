@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.14.11:a7ce1fef:0"
       ]
     },
     {
@@ -37,6 +44,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1137-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.11",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:10–11",
+      "excerpt": "Many in this day shudder at the crime of Judas in selling his Master, his Lord and his God, for money, as monstrous and horrible wickedness; they however do not take heed, for when for the sake of gain they trample on the rights of charity and truth, they are traitors to God, who is Charity and Truth.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.14.11:8f8921aa:0"
       ]
     },
     {
@@ -76,24 +108,6 @@
       ]
     },
     {
-      "id": "catena-mark-1137-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.11",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:10–11",
-      "excerpt": "Many in this day shudder at the crime of Judas in selling his Master, his Lord and his God, for money, as monstrous and horrible wickedness; they however do not take heed, for when for the sake of gain they trample on the rights of charity and truth, they are traitors to God, who is Charity and Truth.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1133-v11",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.11",
@@ -109,6 +123,106 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.14.11:e4450863:0"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.14.11:ce5e4682:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 14:11",
+      "excerpt": "Upon hearing this, they rejoiced and promised to give him money. And he sought how he might opportunely betray Him. Many today are horrified by Judas's crime of selling his Lord and Master, and God with money, as something monstrous and wicked, yet they do not take heed. For when they speak false testimony against anyone for the sake of women, indeed because they deny the truth for money, they sell God for money. For He said: I am the truth. When they defile the fellowship of brotherhood with some plague of discord, they betray the Lord, because God is love. Therefore, those who spurn the commands of love and truth betray God, who is indeed love and truth, especially when they sin not out of weakness or ignorance, but in the likeness of Judas seek opportunities to change truth with lies and virtue with crime.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.14.11"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.14.11:186ef02b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 14:11",
+      "excerpt": "What does the expression \"to betray Him\" mean? It means: to inform them when Christ would be alone. They were afraid to seize Him while He was teaching, lest they bring trouble upon themselves from the people; therefore Judas promised to betray Him to them when He would withdraw from everyone.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.14.11"
+    },
+    {
+      "id": "hcf:hcf-didascalia-apostolorum:mark.14.11:597c5866:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-didascalia-apostolorum",
+      "workId": "hcf:work:hcf-didascalia-apostolorum:didascalia-apostolorum-21",
+      "title": "DIDASCALIA APOSTOLORUM 21 on mark 14:11",
+      "excerpt": "And Judas Iscariot, who was one of us, rose up and went his way to betray him. And Judas came with the scribes and with the priests of the people, and betrayed our Lord Jesus.Now this was done on the fourth day of the week. And in the night they seized our Lord Jesus. And the next day, which was the fourth of the week, he remained in ward in the house of Caiaphas the high priest. And on the same day the chiefs of the people were assembled and took counsel against him. And on the next day again, which was the fifth of the week, they brought him to Pilate the governor. And he remained again in the ward with Pilate the night after the fifth day of the week. But when it drew on (towards day) on the Friday, they accused him much before Pilate; and they could show nothing that was true, but gave false witness against him. And they asked him of Pilate to be put to death; and they crucified him on the same Friday.\r\nHe suffered, then, at the sixth hour on Friday. And these hours wherein our Lord was crucified were reckoned a day. And afterwards, again, there was darkness for three hours; and it was reckoned a night. And again, from the ninth hour until evening, three hours, (reckoned) a day. And afterwards again (there was) the night of the Sabbath of the Passion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:didascalia-apostolorum-21",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c230"
+      ],
+      "targetVerseId": "kjva:mark.14.11"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:mark.14.11:be74c3f8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:oration-29-on-the-son-20",
+      "title": "ORATION 29, ON THE SON 20 on mark 14:11",
+      "excerpt": "He is sold, and cheap was the price—thirty pieces of silver; yet he buys back the world at the mighty cost of his own blood. A sheep, he is led to the slaughter—yet he shepherds Israel and now the whole world as well.",
+      "takeaway": "",
+      "sourceId": "hcf:source:oration-29-on-the-son-20",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390"
+      ],
+      "targetVerseId": "kjva:mark.14.11"
+    },
+    {
+      "id": "catena-mark-1134-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.11",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:10–11",
+      "excerpt": "And he promises to betray Him, as his master the devil said before, All this power I will give thee. (Luke 4:6) It goes on, And when they heard it they were glad, and promised to give him money. They promise him money, and they lose their life, which he also loses on receiving the money.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.14.11:ba1f4391:0"
       ]
     },
     {
@@ -120,24 +234,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:10–11",
       "excerpt": "But he was one of the twelve in number, not in merit, one in body, not in soul. But he went to the Chief Priests after he went out and Satan entered into him. Every living thing unites with what is like itself.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1134-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.11",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:10–11",
-      "excerpt": "And he promises to betray Him, as his master the devil said before, All this power I will give thee. (Luke 4:6) It goes on, And when they heard it they were glad, and promised to give him money. They promise him money, and they lose their life, which he also loses on receiving the money.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

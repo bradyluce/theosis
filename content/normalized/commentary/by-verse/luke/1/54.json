@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0206-v54",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.54",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:54–55",
-      "excerpt": "That is, obedient and humble; for he who disdains to be made humble, cannot be saved.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.1.54:a711ecf8:0"
       ]
     },
     {
@@ -48,6 +37,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:54–55",
       "excerpt": "But by seed he means not so much those who are begotten in the flesh, as those who have followed the steps of Abraham’s faith, to whom the Saviour’s coming was promised for evermore.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.54:23492282:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0206-v54",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.54",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:54–55",
+      "excerpt": "That is, obedient and humble; for he who disdains to be made humble, cannot be saved.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -73,7 +87,99 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.1.54:63e68186:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.1.54:c9da47da:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-4",
+      "title": "Homilies on the Gospels 1.4 on luke 1:54",
+      "excerpt": "Through all the time of this transitory age, the just and merciful Creator is willing to oppose the proud and give grace to the humble.After her general commemoration of the divine benevolence and justice, she did well to turn the words of her confession to the special divinely arranged plan of the unheard-of incarnation, by which God deigned to redeem the world, as she said, \"He has taken his child Israel under his protection, being mindful of his mercy.\" Indeed, Israel means \"a man seeing God,\" by which name is designated every society of redeemed human beings. On their account, God himself appeared in visible form among human beings, so that they might be capable of seeing God. He took Israel under his protection as a physician takes a sick person for whom he is caring. Or as a king, he defends the people from the invasion of enemies. Moreover, he returns them to liberty when the enemy has been overthrown and allows them to reign with him perpetually.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.54"
+    },
+    {
+      "id": "hcf:bede:luke.1.54:073eba96:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:54",
+      "excerpt": "He has taken up Israel, His servant, remembering mercy. He beautifully calls Israel the servant of the Lord, who has been taken up by Him for salvation, namely obedient and humble, as Hosea says: \"For Israel is a child, and I loved him\" (Hosea XI). For whoever refuses to be humbled cannot indeed be saved, nor say with the Prophet: \"Behold, God is my helper, and the Lord is the protector of my soul\" (Psalm LIII). But whoever humbles himself like a little child, he is the greatest in the kingdom of heaven (Matthew XVIII).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.54"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.54:4fd75ab3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:54",
+      "excerpt": "\"He has helped Israel, His servant.\" This is said either of the Israelites according to the flesh, for many tens of thousands of them also believed; or it is said of the spiritual Israel, for everyone who sees God is called Israel, since this name means \"one who sees God\"; thus, He helped these who see God, raising them to the heavenly inheritance.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.54"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.1.54:bee8033d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke",
+      "title": "Commentary on the Gospel of Luke on luke 1:54",
+      "excerpt": "He hath taken hold of Israel,----not of the Israel according to the flesh, and who prides himself on the bare name, but of him who is so after the Spirit, and according to the true meaning of the appellation;----even such as look unto God, and believe in Him, and obtain through the Son the adoption of sons, according to the Word that was spoken, and the promise made to the prophets and patriarchs of old. It has, however, a true application also to the carnal Israel; for many thousands and ten thousands of them believed. \"But He has remembered His mercy as He promised to Abraham:\" and has accomplished what He spake unto him, that \"in thy seed shall all the tribes of the earth be blessed.\" For this promise was now in the act of fulfilment by the impending birth of our common Saviour Christ, Who is that seed of Abraham, in Whom the Gentiles are blessed. \"For He took on Him the seed of Abraham,\" according to the Apostle's words: and so fulfilled the promise made unto the fathers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.1.54"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.1.54:bc8af8b0:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke",
+      "title": "COMMENTARY ON LUKE on luke 1:54",
+      "excerpt": "He has taken hold of Israel—not of the Israel according to the flesh, who prides himself on the bare name, but of him who is so after the Spirit, in accordance with the true meaning of the appellation. The latter comprises those who look to God, believe in him and obtain through the Son the adoption of sons, according to the Word that was spoken and the promise made to the prophets and patriarchs of old. It has, however, a true application also to the carnal Israel, for many thousands and ten thousands of them believed. But he has remembered his mercy as he promised to Abraham and has accomplished what he said to him: that in his seed shall all the tribes of the earth be blessed. This promise was not in the act of fulfillment by the impending birth of our common Savior Christ—who is the seed of Abraham, in whom the Gentiles are blessed. For he took on him the seed of Abraham, according to the apostles' words, and fulfilled the promise made unto the fathers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.1.54"
     },
     {
       "id": "catena-luke-0205-v54",
@@ -91,6 +197,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.1.54:e28cced5:0"
       ]
     },
     {

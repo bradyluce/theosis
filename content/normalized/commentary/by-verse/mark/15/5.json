@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-1277-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.5",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:1–5",
-      "excerpt": "By Pilate’s asking Him about no other accusation, except whether He was King of the Jews, they are convicted of impiety, for they could not even find a false accusation against our Saviour. It goes on: And he answering said unto him, Thou sayest. He answers in this way so as both to speak the truth, and yet not to be open to cavil.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1280-v5",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.5",
@@ -73,20 +55,27 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.5:8d868a45:0"
       ]
     },
     {
-      "id": "catena-mark-1276-v5",
+      "id": "catena-mark-1277-v5",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.5",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:1–5",
-      "excerpt": "They then gave Jesus up to the Romans, but were themselves given up by God into the hands of the Romans, that the Scriptures might be fulfilled, which say, Recompense them after the work of their hands. (Ps. 28:5) It goes on: And Pilate asked him, Art thou the King of the Jews?",
+      "excerpt": "By Pilate’s asking Him about no other accusation, except whether He was King of the Jews, they are convicted of impiety, for they could not even find a false accusation against our Saviour. It goes on: And he answering said unto him, Thou sayest. He answers in this way so as both to speak the truth, and yet not to be open to cavil.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -112,6 +101,24 @@
       ]
     },
     {
+      "id": "catena-mark-1276-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.5",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:1–5",
+      "excerpt": "They then gave Jesus up to the Romans, but were themselves given up by God into the hands of the Romans, that the Scriptures might be fulfilled, which say, Recompense them after the work of their hands. (Ps. 28:5) It goes on: And Pilate asked him, Art thou the King of the Jews?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1281-v5",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.5",
@@ -127,7 +134,82 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.5:3876a3f5:1"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.5:d5fdfb5f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:5",
+      "excerpt": "But when asked a second time, Christ answered nothing and thereby brought Pilate to amazement. For Pilate marveled that He, being learned in the law and eloquent and having the ability to overthrow with a single answer the slanders brought against Him, said nothing, but on the contrary, humbly endured the accusations.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.5"
+    },
+    {
+      "id": "hcf:augustine:mark.15.5:6726816d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-116-4",
+      "title": "TRACTATES ON JOHN 116.4 on mark 15:5",
+      "excerpt": "This silence of our Lord Jesus Christ took place more than once. It occurred before the chief priest, and before Herod, and before Pilate himself. So it was not in vain that the prophecy regarding him had preceded: \"As the lamb before its shearer was dumb, so he opened not his mouth,\" especially on those occasions when he did not answer his questioners. Usually he replied to questions addressed to him, but in this case he declined to make any reply. The metaphor of the lamb is used to indicate that his silence does not imply guilt but innocence. When he did not open his mouth as he passed through the process of judgment, it was in the character of a lamb that he did so; that is, not as one with an evil conscience who was convicted of his sins, but as one who in his meekness was sacrificed for the sins of others.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractates-on-john-116-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.5"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.15.5:7d1e5691:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-ix-on-the-advantage-of-patience-23",
+      "title": "Treatise IX. On the Advantage of Patience 23 on mark 15:5",
+      "excerpt": "He is the One who, although he was silent in his passion, will not be silent finally in the day of reckoning. He is our God, even if unrecognized. He is already known among the faithful and all who believe. When he comes manifesting himself in his second coming, he will not be silent. For although he was formerly hidden in humility, he will come manifested in power.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.15.5"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:mark.15.5:5d4dc502:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON on mark 15:5",
+      "excerpt": "The Lord became the defender of truth, and came in silence before Pilate, on behalf of truth which had been oppressed. Others gain victory through making defenses, but our Lord gained victory through his silence, because the recompense of his death through divine silence was the victory of true teaching. He spoke in order to teach, but kept silent in the tribunal. He was not silent over that which was exalting us, but he did not struggle against those who were provoking him. The words of his calumniators, like a crown on his head, were a source of redemption. He kept silent so that his silence would make them shout even louder, and so that his crown would be made more beautiful through all this clamor.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.15.5"
     }
   ]
 }

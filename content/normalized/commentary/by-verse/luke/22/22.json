@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.22.22:c5e4ea1a:0"
       ]
     },
     {
@@ -69,24 +76,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3130-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.22",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:21–23",
-      "excerpt": "And yet our Lord does not especially point him out, lest being so plainly detected, he might only become the more shameless. But He throws the charge on the whole twelve, that the guilty one might be turned to repentance. He also proclaims his punishment, that the man whom shame had not prevailed upon, might by the sentence denounced against him be brought to amendment. Hence it follows, And truly the Son of man goeth, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -109,6 +98,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.22:c78723c5:0"
+      ]
+    },
+    {
+      "id": "catena-luke-3130-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.22",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:21–23",
+      "excerpt": "And yet our Lord does not especially point him out, lest being so plainly detected, he might only become the more shameless. But He throws the charge on the whole twelve, that the guilty one might be turned to repentance. He also proclaims his punishment, that the man whom shame had not prevailed upon, might by the sentence denounced against him be brought to amendment. Hence it follows, And truly the Son of man goeth, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.22:a157b119:0"
       ]
     },
     {
@@ -145,7 +166,48 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.22:2f3b1b07:1"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.22:f8d72a71:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:22",
+      "excerpt": "And the Son of Man, He says, goes, not because He supposedly cannot defend Himself, but because He has destined Himself for death for the salvation of mankind.\r\nAlthough He was destined to suffer, why did you turn out to be so wicked as to resolve to betray Him? For this reason \"woe\" shall be your lot—that you proved inclined to betrayal, just as the serpent too was cursed for having served as an instrument of the devil's schemes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.22"
+    },
+    {
+      "id": "hcf:tertullian:luke.22.22:8aa9d8ce:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 22:22",
+      "excerpt": "\"Woe,\" says He, \"to that man by whom the Son of man is betrayed!\" Now it is certain that in this woe must be understood the imprecation and threat of an angry and incensed Master, unless Judas was to escape with impunity after so vast a sin.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.22.22"
     }
   ]
 }

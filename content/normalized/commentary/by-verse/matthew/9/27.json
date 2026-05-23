@@ -38,17 +38,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.9.27:891573b0:1"
       ]
     },
     {
-      "id": "catena-matt-1423-v27",
+      "id": "catena-matt-1427-v27",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.27",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:27–31",
-      "excerpt": "Here is no small charge against the Jews, that these men, having lost their sight, yet believe by means of their hearing only; while they who had sight, would not believe the miracles that were done. Observe their eagerness; they do not simply come to Him, but with crying, and asking for nothing but mercy; they call Him Son of David because that seemed to be a name of honour.",
+      "excerpt": "Yet were they not healed by the way-side and in passing as they had thought to be; but when He was entered into the house, they come unto Him; and first their faith is made proof of, that so they may receive the light of the true faith. “And when he was come into the house, the blind men came unto him; and Jesus said unto them, Believe ye that I am able to do this?”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -77,50 +84,14 @@
       ]
     },
     {
-      "id": "catena-matt-1426-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.9.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 9:27–31",
-      "excerpt": "Observe that the Lord oftentimes desired to be asked to heal, that none should think that He was eager to seize an occasion of display.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1427-v27",
+      "id": "catena-matt-1431-v27",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.27",
       "topicSlugs": [],
       "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:27–31",
-      "excerpt": "Yet were they not healed by the way-side and in passing as they had thought to be; but when He was entered into the house, they come unto Him; and first their faith is made proof of, that so they may receive the light of the true faith. “And when he was come into the house, the blind men came unto him; and Jesus said unto them, Believe ye that I am able to do this?”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1428-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.9.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 9:27–31",
-      "excerpt": "Here again He teaches us to exclude the desire of fame; because there was a house hard by, He takes them there to heal them apart.",
+      "excerpt": "The Lord from humility shunning the fame of His glorious works, gave them this charge, and they from gratitude cannot be silent respecting so great benefit.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -149,14 +120,14 @@
       ]
     },
     {
-      "id": "catena-matt-1431-v27",
+      "id": "catena-matt-1423-v27",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.27",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:27–31",
-      "excerpt": "The Lord from humility shunning the fame of His glorious works, gave them this charge, and they from gratitude cannot be silent respecting so great benefit.",
+      "excerpt": "Here is no small charge against the Jews, that these men, having lost their sight, yet believe by means of their hearing only; while they who had sight, would not believe the miracles that were done. Observe their eagerness; they do not simply come to Him, but with crying, and asking for nothing but mercy; they call Him Son of David because that seemed to be a name of honour.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -175,6 +146,42 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:27–31",
       "excerpt": "That He said to another man, “Go, and proclaim the glory of God, Luke 8:39 is not contrary to this; for what He would teach is, that we should hinder those that would commend us for ourselves. But when it is the Lord’s glory that is to be praised, we ought not to forbid, but to promote it ourselves.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1426-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.9.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 9:27–31",
+      "excerpt": "Observe that the Lord oftentimes desired to be asked to heal, that none should think that He was eager to seize an occasion of display.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1428-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.9.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 9:27–31",
+      "excerpt": "Here again He teaches us to exclude the desire of fame; because there was a house hard by, He takes them there to heal them apart.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -221,14 +228,14 @@
       ]
     },
     {
-      "id": "catena-matt-1424-v27",
+      "id": "catena-matt-1435-v27",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.27",
       "topicSlugs": [],
       "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:27–31",
-      "excerpt": "Rightly they call Him Son of David, because the Virgin Mary was of the line of David.",
+      "excerpt": "Allegorically; By these two blind men are denoted the two nations of Jews and Gentiles, or the two nations of the Jewish race; for in the time of Rohoam his kingdom was split into two parts. Out of both nations such as believed on Him Christ gave sight to in the house, by which is understood the Church; for without the unity of the Church no man can be saved. And they of the Jews who had356 believed the Lord’s coming spread the knowledge thereof throughout the whole earth.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -236,6 +243,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.9.27:fe5e72f6:0"
       ]
     },
     {
@@ -257,14 +271,14 @@
       ]
     },
     {
-      "id": "catena-matt-1435-v27",
+      "id": "catena-matt-1424-v27",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.9.27",
       "topicSlugs": [],
       "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 9:27–31",
-      "excerpt": "Allegorically; By these two blind men are denoted the two nations of Jews and Gentiles, or the two nations of the Jewish race; for in the time of Rohoam his kingdom was split into two parts. Out of both nations such as believed on Him Christ gave sight to in the house, by which is understood the Church; for without the unity of the Church no man can be saved. And they of the Jews who had356 believed the Lord’s coming spread the knowledge thereof throughout the whole earth.",
+      "excerpt": "Rightly they call Him Son of David, because the Virgin Mary was of the line of David.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -272,6 +286,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.9.27:4a2addac:0"
       ]
     },
     {
@@ -290,7 +311,116 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.9.27:1eeb783d:0"
       ]
+    },
+    {
+      "id": "hcf:jerome:matthew.9.27:c196c338:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 9:27",
+      "excerpt": "(Verse 27) And as Jesus passed on from there, two blind men followed him, crying out and saying, 'Have mercy on us, Son of David.' As Jesus passed through the house of the ruler and was going to his own house, as we read above: Getting into a boat, he crossed over and came to his own city. The two blind men cried out, saying, 'Have mercy on us, Son of David.' And yet they were not healed on the way, as they thought; but after he came to his own house, they approached him and entered: and their faith is first tested, so that they may receive the light of true faith. Earlier we presented a sign regarding the prince's daughter and the hemorrhaging (or sick) woman, now this is added: that as there was death and weakness there, here blindness is shown. Both peoples were blind when the Lord passed through this world, and desired to return to their homes. But unless they confess and say, 'Have mercy on us, Son of David,' and when Jesus asks, 'Do you believe that I am able to do this?' He responds: Indeed, Lord, he does not receive his former sight. In another Gospel, one blind man is written about, with torn clothes, sitting in Jericho, who is forbidden by the apostles to cry out; but through impudence, he receives healing (Mark 10). This passage properly pertains to the people of the Gentiles and should be explained in its own volume.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.9.27"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.9.27:363ed2c7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-32",
+      "title": "Homily on the Gospel of Matthew 32 on matthew 9:27",
+      "excerpt": "Wherefore can it be that He puts them off, and they crying out? Here again teaching us utterly to repel the glory that cometh from the multitude. For because the house was near, He leads them thither to heal them in private. And this is evident from the fact, that He charged them moreover to tell no man.\r\n\r\nBut this is no light charge against the Jews; when these men, though their eyes were struck out, receive the faith by hearing alone, but they beholding the miracles, and having their sight to witness what was happening, do all just contrary. And see their earnestness also, both by their cry, and by their prayer itself. For they did not merely approach Him, but with loud cries, and alleging nought else but \"mercy.\"\r\n\r\nAnd they called Him \"Son of David,\" because the name was thought to be honorable. In many passages, for instance, did the prophets likewise so call the kings, whom they wished to honor, and to declare great.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.9.27"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.9.27:7060686a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-9-9",
+      "title": "Commentary on Matthew 9.9 on matthew 9:27",
+      "excerpt": "At that point, two blind men follow the Lord as he was passing by. But if they could not see, how could the blind men know of the Lord's departure as well as his name? Moreover, they called him \"Son of David\" and asked to be made well. In the two blind men, the entire earlier prefiguration is complete. The ruler's daughter seems to be from these people, namely, the Pharisees and John's disciples, who already made common cause in testing the Lord. To these unknowing persons the law gave evidence as to the one from whom they sought a cure. It indicated to them that their Savior in the flesh was of the line of David. It also introduced light to the minds of those who were blind from past sins. They could not see Christ but were told about him. The Lord showed them that faith should not be expected as a result of health but health should be expected because of faith. The blind men saw because they believed; they did not believe because they saw. From this we understand that what is requested must be predicated on faith and that faith must not be exercised because of what has been obtained. If they should believe, he offers them sight. And he charges the believers to be silent, for it was exclusively the task of the apostles to preach.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.9.27"
+    },
+    {
+      "id": "hcf:hcf-chromatius-of-aquileia:matthew.9.27:e1a65a76:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-chromatius-of-aquileia",
+      "workId": "hcf:work:hcf-chromatius-of-aquileia:tractate-on-matthew-48-2",
+      "title": "TRACTATE ON MATTHEW 48.2 on matthew 9:27",
+      "excerpt": "According to one allegorical interpretation, these two blind men symbolize the two kingdoms into which the Jews were divided (after Solomon's death, between Rehoboam and Jeroboam). According to another interpretation, we might consider the people of the Jews and the people of the Gentiles as being prefigured in these two blind men. But this would not be appropriate. For would it be possible for the people of the Gentiles, before being enlightened, to declare Christ to be the Son of David, for they had not heard of the law or the prophets? For that reason, more properly it is understood concerning these two blind men that they did know from the law and the prophets that Christ is the Son of David. Both were blind, therefore, through their own unfaithfulness, for they were not yet able to see the true light, the only Son of God who was foretold in the law and the prophets. Bereft of the light of faith and covered by the veil of the law, they were being held in the gloom of blindness, according to the blessed apostle who says, \"To this day whenever Moses is read a veil lies over their minds; but when one turns to the Lord the veil is removed.\" And again: \"For to this day, when they read the old covenant, that same veil remains unlifted, because only through Christ is it taken away.\" Therefore sight was restored to these blind men as soon as they expressed their faith in the Son of God. This shows that whoever from these two peoples should believe that the Son of God came to save humankind would receive knowledge of the true light as soon as the blindness of error is removed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-matthew-48-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c406"
+      ],
+      "targetVerseId": "kjva:matthew.9.27"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.9.27:16dab4d2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 9:27",
+      "excerpt": "\"And when Jesus departed thence, two blind men followed Him, crying, and saying, Thou Son of David, have mercy on us.\" The blind men addressed to God the words \"Have mercy,\" but as to a man, \"O Son of David.\" For it was well known among the Jews that the Messiah would come from the seed of David.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.9.27"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.9.27:f71104e4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 9:27",
+      "excerpt": "After showing how he restored life, he now shows how he restored the functions of life. First, how he restored sight; secondly, speech (v. 32).\r\n\r\nIn regard to the first, four things are done: first, the request of the blind men; secondly, they are questioned (v. 28b); thirdly, they are heard (v. 29); fourthly, the charge given to the cured (v. 30b).\r\n\r\nIn regard to their petition we can note five things that make a petition likely to be heard.\r\n\r\nFirst, they chose a suitable time for asking, because as they were going away. In this is signified the time of the Incarnation, a time of mercy: \"It is time to show mercy\" (Ps 102:13). Therefore, they were heard more readily, as it says in Hebrews (5:7): \"He was heard for his reverence.\" Likewise, in order to obtain it, they followed him; for those who do not follow God by obeying do not obtain. Two blind men. Those two blind men are the two peoples, namely, the Jews and the gentiles, for those who do not have faith are blind. Of these Isaiah (59:10): \"We grope for the wall like the blind.\" Furthermore, fervent devotion is required, when it says, crying aloud: \"In my distress I cried to the Lord\" (Ps 120:1). Likewise, humility, when it says, \"Have mercy on us, son of David\": \"Hearken to the prayer of your servant, O Lord\" (Dan 9:17). Finally, their faith is mentioned, because they called him son of David; and this is necessary, as it says in James (1:6): \"Let him ask in faith, with no doubting.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.9.27"
     }
   ]
 }

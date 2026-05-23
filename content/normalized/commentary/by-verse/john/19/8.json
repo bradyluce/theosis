@@ -23,42 +23,6 @@
       ]
     },
     {
-      "id": "catena-john-2341-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.8",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:6–8",
-      "excerpt": "The envy of the Jews does not subside at Christ’s disgraces; yea, rather rises: When the chief priests therefore and officers saw Him, they cried out, saying, Crucify Him. crucify Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2342-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.8",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:6–8",
-      "excerpt": "Pilate saw then that it was all in vain: Pilate saith unto them, Take ye Him, and crucify Him. This is the speech of a man abhorring (ἀφοσιούμενον) the deed, and urging others to do a deed which he abhors himself. They had brought our Lord indeed to him that He might be put to death by his sentence, but the very contrary was the result; the governor acquitted Him: For I find no fault in Him. He clears Him immediately from all charges: which shews that he had only permitted the former outrages, to humour the madness of the Jews. But nothing could shame the Jewish hounds: The Jews answered him,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2343-v8",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.8",
@@ -77,14 +41,14 @@
       ]
     },
     {
-      "id": "catena-john-2344-v8",
+      "id": "catena-john-2341-v8",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.8",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 19:6–8",
-      "excerpt": "While they disputed with each other, He was silent, fulfilling the prophecy, He openeth not His mouth; He was taken from prison and from judgment. (Is. 53:7, 8)",
+      "excerpt": "The envy of the Jews does not subside at Christ’s disgraces; yea, rather rises: When the chief priests therefore and officers saw Him, they cried out, saying, Crucify Him. crucify Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -113,6 +77,24 @@
       ]
     },
     {
+      "id": "catena-john-2342-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.8",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:6–8",
+      "excerpt": "Pilate saw then that it was all in vain: Pilate saith unto them, Take ye Him, and crucify Him. This is the speech of a man abhorring (ἀφοσιούμενον) the deed, and urging others to do a deed which he abhors himself. They had brought our Lord indeed to him that He might be put to death by his sentence, but the very contrary was the result; the governor acquitted Him: For I find no fault in Him. He clears Him immediately from all charges: which shews that he had only permitted the former outrages, to humour the madness of the Jews. But nothing could shame the Jewish hounds: The Jews answered him,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-2346-v8",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.8",
@@ -121,6 +103,24 @@
       "workId": "catena-aurea-john",
       "title": "On John 19:6–8",
       "excerpt": "Then Pilate begins to fear that what had been said might be true, and that he might appear to be administering justice improperly: When Pilate therefore heard that saying, he was the more afraid.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2344-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.8",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:6–8",
+      "excerpt": "While they disputed with each other, He was silent, fulfilling the prophecy, He openeth not His mouth; He was taken from prison and from judgment. (Is. 53:7, 8)",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -164,7 +164,99 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.19.8:d9b606f1:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.8:eb15d195:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-84",
+      "title": "Homily on the Gospel of John 84 on john 19:8",
+      "excerpt": "Then Pilate is alarmed when he hears from them, that He made Himself the Son of God, and dreads lest the assertion may possibly be true, and he should seem to transgress; but these men who had learnt this, both by His deeds and words, did not shudder, but are putting Him to death for the very reasons for which they ought to have worshiped Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.8"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.8:1f693506:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-12",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 12 on john 19:8",
+      "excerpt": "The malicious design of the Jews had a result they little expected. They wanted to build up an indictment against Christ by saying that he had ventured to sin against the person of God himself. But the weighty character of the accusation itself increased Pilate's caution, and he was more alarmed and more careful concerning Christ than before. He became more particular in his questions: what Jesus was and where he came from. I think he believed that, though Jesus was a man, he might also be the Son of God. This idea and belief of his was not derived from holy Scripture but the mistaken notions of the Greeks. Greek fables call many men demi-gods and sons of gods. The Romans, too, who in such matters were still more superstitious, gave the name of god to the more distinguished of their own monarchs, and set up altars to them, and allotted them shrines and put them on pedestals. Therefore Pilate was more earnest and anxious than before in his inquiry of who Christ was and where he came from.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.8"
+    },
+    {
+      "id": "hcf:tertullian:john.19.8:6187015f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews",
+      "title": "An Answer to the Jews on john 19:8",
+      "excerpt": "For Him it behoved to be made a sacrifice on behalf of all Gentiles, who \"was led as a sheep for a victim, and, like a lamb voiceless before his shearer, so opened not His mouth\" (for He, when Pilate interrogated Him, spake nothing ); for \"in humility His judgment was taken away: His nativity, moreover, who shall declare? \"Because no one at all of human beings was conscious of the nativity of Christ at His conception, when as the Virgin Mary was found pregnant by the word of God; and because \"His life was to be taken from the land.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.19.8"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.8:61a7822b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:8",
+      "excerpt": "Pilate, having heard only the one word that He is the Son of God, was afraid. But they saw His divine works, and yet they put Him to death for the very thing for which they ought to have worshipped Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.8"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.8:81e7576a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:8",
+      "excerpt": "2388 Now the Evangelist mentions the effect the accusation of the Jews had on Pilate. The first was that it produced fear: When Pilate heard these words, that is, that Christ made himself the Son of God, he was the more afraid that it might be true and that it would be disastrous to proceed against him without cause.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.8"
     }
   ]
 }

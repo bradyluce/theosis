@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.13.37:46a25922:2"
       ]
     },
     {
@@ -76,6 +83,24 @@
       ]
     },
     {
+      "id": "catena-mark-1102-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.37",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "See again that He has not said, I know not when the time will be, but, Ye know not. For the reason why He concealed it was that it was better for us; for if, now that we know not the end, we are careless, what should we do if we knew it? We should keep on our wickednesses even unto the end. Let us therefore attend to His words; for the end comes at even, when a man dies in old age; at midnight, when he dies in the midst of his youth; and at cockcrow, when our reason is perfect within us; for when a child begins to live according to his reason, then the cock cries loud within him, rousing him…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1095-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.37",
@@ -112,40 +137,107 @@
       ]
     },
     {
-      "id": "catena-mark-1102-v37",
+      "id": "hcf:theophylact-of-ohrid:mark.13.37:85018f61:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.37",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "See again that He has not said, I know not when the time will be, but, Ye know not. For the reason why He concealed it was that it was better for us; for if, now that we know not the end, we are careless, what should we do if we knew it? We should keep on our wickednesses even unto the end. Let us therefore attend to His words; for the end comes at even, when a man dies in old age; at midnight, when he dies in the midst of his youth; and at cockcrow, when our reason is perfect within us; for when a child begins to live according to his reason, then the cock cries loud within him, rousing him…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:37",
+      "excerpt": "The Lord commands this to all in general — both to people in the world and to hermits. Therefore, we must watch and pray, fulfilling both the one and the other, for many, although they watch, spend the nights not in prayer but in wicked deeds. Note also that Christ did not now say, \"I do not know when the time of the end will come,\" but \"you do not know,\" for He hid this time for our benefit. If even in the uncertainty of the end we are hostile toward one another, what would we not have done if we knew the time of the end? Then we would spend all the time of life until death in exceedingly wicked deeds, and on the last day, expressing repentance, we would fall into an even worse state.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.37"
     },
     {
-      "id": "catena-mark-1097-v37",
+      "id": "hcf:theophylact-of-ohrid:mark.13.37:27106f62:1",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.37",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "For we must needs watch with our souls before the death of the body.",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 13:37",
+      "excerpt": "Now all these ages must look out for the end; for even a child must be watched, lest he die unbaptized.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.13.37"
+    },
+    {
+      "id": "hcf:bede:mark.13.37:897c2cf7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:37",
+      "excerpt": "But what I say to you, I say to all: Keep watch. Not only the apostles and their successors, indeed the leaders of the Church, but all are commanded to keep watch. We are all urgently ordered to guard the doors of our hearts, lest the ancient enemy break in by suggesting evil. We must each carefully avoid being found sleeping when the Lord comes. For each of us will give an account to God. He keeps watch who has the eyes of his mind open to the vision of true light. He keeps watch who, by working, keeps what he believes. He keeps watch who repels the darkness of lethargy and negligence from himself. Hence Paul says: Awake to righteousness, and do not sin (I Cor. XV). Hence he says again: It is now the hour for us to rise from sleep (Rom. XIII).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.37"
+    },
+    {
+      "id": "hcf:augustine:mark.13.37:7addaa0c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-199-to-hesychius-3",
+      "title": "LETTER 199, TO HESYCHIUS 3 on mark 13:37",
+      "excerpt": "Who are the \"all\" to whom he says this if not his elect and his beloved, the members of his body which is the church? Therefore, he said this not only to those who then heard him speaking, but also to those who came after them and before us, as well as to us and to those who will come after us until his final coming. Is that day going to encounter only those currently living, or is anyone likely to say that these words are also addressed to the dead, when he says: \"Watch, lest he comes suddenly and finds you asleep?\" Why, then, does he say to all what concerns only those who will then be living? For that day will come to every single one, when the day comes for him to leave this life, such as it is, to be judged on the last day. For this reason, every Christian ought to watch lest the coming of the Lord find him unprepared. But the last day will find unprepared anyone whom this day will find unprepared. This at least was certainly clear to the apostles. Even if the Lord did not come in their times, while they were still living here in the flesh, yet who would doubt that they watched most carefully and observed what he said to all, lest coming suddenly he might find them unprepared?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.37"
+    },
+    {
+      "id": "hcf:augustine:mark.13.37:ba412af7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermons-18-1-2",
+      "title": "SERMONS 18.1-2 on mark 13:37",
+      "excerpt": "The first coming of Christ the Lord, God's Son and our God, was in obscurity. The second will be in sight of the whole world. When he came in obscurity, no one recognized him but his own servants. When he comes openly, he will be known by both the good and the bad. When he came in obscurity, it was to be judged. When he comes openly, it will be to judge. He was silent at his trial, as the prophet foretold.… Silent when accused, he will not be silent as judge. Even now he does not keep silent, if there is anyone to listen. But it says he will not keep silent then, because his voice will be acknowledged even by those who despise it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.37"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:mark.13.37:d7885ce9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-7-2-31",
+      "title": "CONSTITUTIONS OF THE HOLY APOSTLES 7.2.31 on mark 13:37",
+      "excerpt": "Watch therefore, and pray, that you do not sleep unto death. For your former good deeds will not profit you if in the end of your life you go astray from the true faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:mark.13.37"
     },
     {
       "id": "catena-mark-1101-v37",
@@ -174,6 +266,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:32–37",
       "excerpt": "He thus concludes His discourse, that the last should hear from those who come first this precept which is common to all; wherefore He adds, But what I say unto you I say unto all, Watch.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.13.37:c1681661:0"
+      ]
+    },
+    {
+      "id": "catena-mark-1097-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.37",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "For we must needs watch with our souls before the death of the body.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

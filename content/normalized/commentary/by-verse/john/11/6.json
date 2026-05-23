@@ -4,6 +4,24 @@
   "verseNumber": 6,
   "entries": [
     {
+      "id": "catena-john-1465-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.11.6",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 11:6–10",
+      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-049-c11-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.6",
@@ -23,24 +41,6 @@
       ]
     },
     {
-      "id": "catena-john-1462-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.11.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 11:6–10",
-      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1463-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.6",
@@ -56,6 +56,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.11.6:3fa36c23:0"
       ]
     },
     {
@@ -77,14 +84,14 @@
       ]
     },
     {
-      "id": "catena-john-1465-v6",
+      "id": "catena-john-1466-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.6",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-1466-v6",
+      "id": "catena-john-1462-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.6",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
+      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -146,7 +153,99 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.11.6:2941a241:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.11.6:e45d4600:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-62",
+      "title": "Homily on the Gospel of John 62 on john 11:6",
+      "excerpt": "\"And having said this, He tarried two days.\" Wherefore tarried He? That Lazarus might breathe his last, and be buried; that none might be able to assert that He restored him when not yet dead, saying that it was a lethargy, a fainting, a fit, but not death. On this account He tarried so long, that corruption began, and they said, \"He now stinketh.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.11.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.11.6:bdc0ef44:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 11:6",
+      "excerpt": "He \"stayed two days\" so that Lazarus would die, so that no one could say that he had been in a deep sleep, exhaustion, or a trance, and not death. This is why the Lord remains so long that decomposition had already begun, and the sister herself says that \"he already stinks\" (John 11:39).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.11.6"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.11.6:fa8bdce4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-7",
+      "title": "Commentary on the Gospel of John, Book 7 on john 11:6",
+      "excerpt": "And He deferred His arrival in order that He might not heal him while sick, but raise him when dead; which is a work of greater power, so that He would be more greatly glorified.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.11.6"
+    },
+    {
+      "id": "hcf:peter-chrysologus:john.11.6:a11910c8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:sermon-63-2",
+      "title": "SERMON 63.2 on john 11:6",
+      "excerpt": "You see how he gives full scope to death. He grants free reign to the grave. He allows corruption to set in. He prohibits neither putrefaction nor stench from taking their normal course. He allows the realm of darkness to seize his friend, drag him down to the underworld, and take possession of him. He acts like this so that human hope may perish entirely and human despair reach its lowest depths. The deed he is about to accomplish may then clearly be seen to be the work of God, not of man.[Jesus] waited for Lazarus to die, staying in the same place until he could tell his disciples that he was dead. Then he announced his intention of going to him. \"Lazarus is dead,\" he said, \"and I am glad.\" Was this a sign of his love for his friend? Not so. Christ was glad because their sorrow over the death of Lazarus was soon to be changed into joy at his restoration to life. \"I am glad for your sake,\" he said. Why for their sake? Because the death and raising of Lazarus were a perfect prefiguration of the death and resurrection of the Lord himself. What the Lord was soon to achieve in himself had already been achieved in his servant.… This explains why he said to them, \"I am glad for your sake not to have been there, because now you will believe.\" It was necessary that Lazarus should die, so that the faith of the disciples might also rise with him from the dead.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-63-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:john.11.6"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.11.6:198afacb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 11:6",
+      "excerpt": "1480 Here the Evangelist presents the raising of the dead Lazarus. First, we see that Christ desired to do this; and secondly, the sequence of events surrounding the raising are given (v 17). We see three things related to the first. First, our Lord allows the death; secondly, he states his intention to go to the place where Lazarus died (v 7); and thirdly, he reveals his intention to raise him (v 11).\r\n\r\n1481 Christ allowed this death by prolonging his stay beyond the Jordan: so when he heard that he was ill, he stayed two days longer in the place where he was. One may infer from this that Lazarus died on the very day that Jesus received the message from his sisters: for when Christ went to the place where he died, it was already the fourth day. After receiving the message, Christ then remained two days in the same place, and on the day after these two days, he went to Judea. He delayed these few days for two reasons. First, so that the death of Lazarus would not be prevented by his presence; for where life is present, death has no entry. In the second place, in order to make the miracle more credible, and so that people would not say that Christ revived Lazarus, not from death, but only from a coma.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.11.6"
     }
   ]
 }

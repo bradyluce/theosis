@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-1282-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.7",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:6–15",
-      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1285-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.7",
@@ -112,6 +94,24 @@
       ]
     },
     {
+      "id": "catena-mark-1282-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.7",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:6–15",
+      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1287-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.7",
@@ -148,6 +148,24 @@
       ]
     },
     {
+      "id": "hcf:gloss-ordinaria:mark.15.7:b6e234e8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "hcf:work:gloss-ordinaria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 15:7",
+      "excerpt": "And that the wickedness of the Jews might appear the greater, the enormity of the sin of the robber, whom they preferred to Christ, is next described. Wherefore there follows: And there was one Barabbas, who lay bound with them that had made insurrection with him, who had committed murder in the insurrection. In which words their wickedness is shown both from the heinousness of his signal crime, in that he had committed murder, and from the way in which he did it, because he had in doing it raised a sedition and disturbed the city, and also because his crime was notorious, for he was bound with seditious persons. It goes on: And the multitude, when it had come up, began to desire him to do as he had ever done unto them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.15.7"
+    },
+    {
       "id": "catena-mark-1283-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.7",
@@ -181,6 +199,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.7:1b2d6420:0"
       ]
     }
   ]

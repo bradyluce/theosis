@@ -22,42 +22,6 @@
       ]
     },
     {
-      "id": "catena-matt-0350-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "He does not forbid them to “say” they are his, but to trust in that, neglecting virtues of the soul.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0354-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "He intimates God’s great power, who, as he made all things out of nothing, can make men out of the hardest stone.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-0356-v9",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.3.9",
@@ -66,42 +30,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 3:7–10",
       "excerpt": "That men should be made out of stones, is like Isaac coming from Sarah’s womb; “Look into the rock,” says Isaiah, “whence ye were hewn.” Reminding them thus of this prophecy, he shews that it is possible that the like might even how happen. Rabanus:101 Otherwise; the Gentiles may be meant who worshipped stones.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0358-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "“These stones” signify the Gentiles because of their hardness of heart. See Ezekiel, “I will take away from you the heart of stone, and give you the heart of flesh.” Stone is emblematic of hardness, flesh of softness.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0361-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "Or, the preaching of the Gospel is meant, as the Prophet Jeremiah also compares the Word of the Lord to an axe cleaving the rock. Jer 23:29",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -127,20 +55,88 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.3.9:06c0969e:0"
       ]
     },
     {
-      "id": "catena-matt-0339-v9",
+      "id": "catena-matt-0350-v9",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.3.9",
       "topicSlugs": [],
-      "personId": "gregory-the-great",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 3:7–10",
-      "excerpt": "The words of the teachers should be fitted to the quality of the hearers, that in each particular it should agree with itself and yet never depart from the fortress of general edification.",
+      "excerpt": "He does not forbid them to “say” they are his, but to trust in that, neglecting virtues of the soul.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 80,
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0358-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "“These stones” signify the Gentiles because of their hardness of heart. See Ezekiel, “I will take away from you the heart of stone, and give you the heart of flesh.” Stone is emblematic of hardness, flesh of softness.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.3.9:f5c9e8a4:2"
+      ]
+    },
+    {
+      "id": "catena-matt-0361-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "Or, the preaching of the Gospel is meant, as the Prophet Jeremiah also compares the Word of the Lord to an axe cleaving the rock. Jer 23:29",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0354-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "He intimates God’s great power, who, as he made all things out of nothing, can make men out of the hardest stone.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -202,6 +198,49 @@
       ]
     },
     {
+      "id": "catena-matt-0339-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "The words of the teachers should be fitted to the quality of the hearers, that in each particular it should agree with itself and yet never depart from the fortress of general edification.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0353-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "There is a tradition, that John preached at that place of the Jordan, where the twelve stones taken from the bed of the river had been set up by command of God. He might then be pointing to these, when he said, “Of these stones.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.3.9:fb88cd53:0"
+      ]
+    },
+    {
       "id": "catena-matt-0342-v9",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.3.9",
@@ -210,24 +249,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 3:7–10",
       "excerpt": "The manner of Scripture is to give names from the imitation of deeds, according to that of Ezekiel, “Thy father was an Amorite;” Ezek 16:3 so these from following vipers are called “generation of vipers.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0344-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "remigius-auxerre",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "When then he asks, “who will shew you to flee from the wrath to come,” - ‘except God’ must be understood.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -256,50 +277,14 @@
       ]
     },
     {
-      "id": "catena-matt-0352-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "rabanus-maurus",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "Because as a preacher of truth he wished to stir them up, to “bring forth fruit meet for repentance,” he invites them to humility, without which no one can repent.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0353-v9",
+      "id": "catena-matt-0344-v9",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.3.9",
       "topicSlugs": [],
       "personId": "remigius-auxerre",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 3:7–10",
-      "excerpt": "There is a tradition, that John preached at that place of the Jordan, where the twelve stones taken from the bed of the river had been set up by command of God. He might then be pointing to these, when he said, “Of these stones.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0359-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "rabanus-maurus",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "Of stones there were sons raised up to Abraham; forasmuch as the Gentiles by believing in Christ, who is Abraham’s seed, because his sons to whose seed they were united.",
+      "excerpt": "When then he asks, “who will shew you to flee from the wrath to come,” - ‘except God’ must be understood.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -328,6 +313,265 @@
       ]
     },
     {
+      "id": "catena-matt-0359-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "Of stones there were sons raised up to Abraham; forasmuch as the Gentiles by believing in Christ, who is Abraham’s seed, because his sons to whose seed they were united.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0352-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "Because as a preacher of truth he wished to stir them up, to “bring forth fruit meet for repentance,” he invites them to humility, without which no one can repent.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "hcf:gregory-the-great:matthew.3.9:ff116e64:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-20",
+      "title": "Forty Gospel Homilies, Homily 20 on matthew 3:9",
+      "excerpt": "But the Jews, glorying in the nobility of their lineage, were unwilling to acknowledge themselves as sinners for this reason: that they had descended from the stock of Abraham. To them it is rightly said: \"And do not begin to say, 'We have Abraham as our father'; for I say to you that God is able from these stones to raise up children to Abraham.\" For what were the stones but the hearts of the Gentiles, insensible to the understanding of Almighty God? As it is also said to certain ones among the Jews: \"I will take away the heart of stone from your flesh.\" Nor is it undeserved that the Gentiles were signified by the name of stones, because they worshipped stones. Whence it is written: \"Let those who make them become like them, and all who trust in them.\" From these stones, indeed, children of Abraham were raised up, because when the hard hearts of the Gentiles believed in the seed of Abraham, that is, in Christ, they became children of him to whose seed they were united. Whence also it is said to these same Gentiles through the outstanding preacher: \"But if you are Christ's, then you are Abraham's seed.\" If therefore we, through faith in Christ, are now the seed of Abraham, the Jews on account of their unbelief have ceased to be children of Abraham. That indeed on that day of the dreadful judgment good parents cannot benefit wicked children, the prophet testifies who says: \"If Noah, Daniel, and Job were in the midst of them, as I live, says the Lord God, they shall deliver neither son nor daughter, but they themselves shall deliver their own souls by their righteousness.\" And again, that good children profit wicked parents nothing, but rather the goodness of children increases the guilt of wicked parents, the Truth Himself says to the unbelieving Jews: \"If I cast out demons by Beelzebub, by whom do your sons cast them out? Therefore they shall be your judges.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:gregory-the-great:matthew.3.9:2e650b34:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 3:9",
+      "excerpt": "The Jews who gloried in their race, would not own themselves sinners because they were Abraham's seed. Say not among yourselves we are Abraham's seed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.3.9:1410fc5c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-11",
+      "title": "Homily on the Gospel of Matthew 11 on matthew 3:9",
+      "excerpt": "And these things he said, not as forbidding them to say that they were sprung from those holy men, but as forbidding them to put confidence in this, while they were neglecting the virtue of the soul; at once bringing forward publicly what was in their minds, and foretelling things to come. Because after this they are found to say, \"We have Abraham to our father, and were never in bondage to any man.\" Since then it was this, which most of all lifted them up with pride and ruined them, he first puts it down.\r\n\r\nAnd see how with his honor paid to the patriarch he combines his correction touching these things. Namely, having said, \"Think not to say, We have Abraham to our father,\" he said not, \"for the patriarch shall not be able to profit you anything,\" but somehow in a more gentle and acceptable manner he intimated the self-same thing, by saying, \"For God is able of these stones to raise up children to Abraham.\"\r\n\r\nNow some say, that concerning the Gentiles he saith these things, calling them stones, metaphorically; but I say, that the expression hath also another meaning. But of what kind is this? Think not, saith he, that if you should perish, you would make the patriarch childless. This is not, this is not so. For with God it is possible, both out of stones to bring them to that relationship; since at the beginning also it was so done. For it was like the birth of men out of stones, when a child came forth from that hardened womb.\r\n\r\nThis accordingly the prophet also was intimating, when he said, \"Look unto the hard rock, whence ye are hewn, and to the hole of the pit, whence ye are digged: look unto Abraham your father, and unto Sarah that bare you.\" Now of this prophecy, you see, he reminds them, showing that if at the beginning he made him a father, as marvellously as if he had made him so out of stones, it was possible for this now also to come to pass. And see how he both alarms them, and cuts them off: in that he said not, \"He had already raised up,\" lest they should despair of themselves, but that He \"is able to raise up:\" and he said not, \"He is able out of stones to make men,\" but what was a much greater thing, \"kinsmen and children of Abraham.\"\r\n\r\nSeest thou how for the time he drew them off from their vain imagination about things of the body, and from their refuge in their forefathers; in order that they might rest the hope of their salvation in their own repentance and continence? Seest thou how by casting out their carnal relationship, he is bringing in that which is of faith?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:rabanus-maurus:matthew.3.9:e57e52f1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "hcf:work:rabanus-maurus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 3:9",
+      "excerpt": "Otherwise; the Gentiles may be meant who worshipped stones.\r\n\r\nOf stones there were sons raised up to Abraham; forasmuch as the Gentiles by believing in Christ, who is Abraham's seed, became his sons to whose seed they were united.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c856",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:jerome:matthew.3.9:c4bf0854:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 3:9",
+      "excerpt": "(Verse. 9.) God is able to raise up children of Abraham from these stones. He calls them ethnic stones because of the hardness of the heart. Read Ezekiel: I will take away the heart of stone from you and give you a heart of flesh (Ezek. XXXVI, 26). In the stone, hardness is shown, in the flesh, softness is shown. Or it simply indicates the power of God, that he who created everything out of nothing can also create a people from the hardest stones.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:jerome:matthew.3.9:4c087d38:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-1-3-9",
+      "title": "COMMENTARY ON MATTHEW 1.3.9 on matthew 3:9",
+      "excerpt": "\"God is able from these stones to raise up children to Abraham.\" He calls the Gentiles stones because of their hard heart. We read in Ezekiel: \"I will revive their stony heart and give them a heart of flesh.\" He shows the hardness in a stone and the softness of flesh. In other words, this passage indicates the power of God, who made everything out of nothing and can produce a people out of the hardest stones.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-1-3-9",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.3.9:e48835de:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-hermogenes",
+      "title": "Against Hermogenes on matthew 3:9",
+      "excerpt": "With a view, however, to re lute the argument whereby you thought you were going to clinch your proposition, I here contend: If Matter had always been good, why should it not have still wanted a change for the better? Does that which is good never desire, never wish, never feel able to advance, so as to change its good for a better? And in like manner, if Matter had been by nature evil, why might it not have been changed by God as the more powerful Being, as able to convert the nature of stones into children of Abraham? Surely by such means you not only compare the Lord with Matter, but you even put Him below it, since you affirm that the nature of Matter could not possibly be brought under control by Him, and trained to something better.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.3.9:81e916e4:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on matthew 3:9",
+      "excerpt": "For, in coming to the High Priest of the Father-Christ-all impediments must first be taken away, in the space of a week, that the house which remains, the flesh and the soul, may be clean; and when the Word of God has entered it, and has found \"stains of red and green,\" forthwith must the deadly and sanguinary passions \"be extracted\" and \"cast away\" out of doors-for the Apocalypse withal has set \"death\" upon a \"green horse,\" but a \"warrior\" upon a \"red\" -and in their stead must be under-strewn stones polished and apt for conjunction, and firm,-such as are made (by God) into (sons) of Abraham, -that thus the man may be fit for God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.3.9:f6fa145f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-hermogenes",
+      "title": "Against Hermogenes on matthew 3:9",
+      "excerpt": "Because, as is evident, if nature admits of change from evil to good in Matter, it can be changed from good to evil in God. Here some man will say, Then will \"children not be raised up to Abraham from the stones? \" Will \"generations of vipers not bring forth the fruit of repentance? \" And \"children of wrath\" fail to become sons of peace, if nature be unchangeable? Your reference to such examples as these, my friend, is a thoughtless one.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.3.9:ac3a7607:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-monogamy",
+      "title": "On Monogamy on matthew 3:9",
+      "excerpt": "For albeit it is subsequently that he is called \"a father of many nations,\" still it is of those (nations) who, as the fruit of the \"faith\" which precedes digamy, had to be accounted \"sons of Abraham.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:hcf-theodore-stratelates:matthew.3.9:7f669e6e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-stratelates",
+      "workId": "hcf:work:hcf-theodore-stratelates:fragments-15-16",
+      "title": "FRAGMENTS 15-16 on matthew 3:9",
+      "excerpt": "If from \"stones children are given to Abraham,\" this is not by their possessing his flesh and spirit but by their sharing his virtue. Therefore the people of God are able to call Abraham \"father.\" How so? Consider the following: Stones are employed by the Gentiles not only for building but also for idolatry. Besides this, remember this: the heart of the dragon is said to be as hard as a stone.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragments-15-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c319"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.3.9:557c2cf1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 3:9",
+      "excerpt": "And think not to say within yourselves, We have Abraham as our father. This was to their destruction, that they put their trust in their noble lineage. For I say unto you, that God is able of these stones to raise up children unto Abraham. The \"stones\" mean the Gentiles, many of whom believed; but John is also saying simply that God is able to make children for Abraham out of stones. For the womb of Sarah was a stone on account of her sterility, but she gave birth nevertheless (Gen. 18:11-12; 21:1-2). When also did the Lord raise up children unto Abraham from stones? At His crucifixion, when many believed upon seeing the stones which were sundered (Mt. 27:51).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.3.9:cf8fb8ed:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 3:9",
+      "excerpt": "Then he excludes the obstacle to repentance, when he says, \"And do not presume to say to yourselves: 'We have Abraham as our father.'\" The obstacle to repentance is twofold: presuming on oneself and despair about the divine judgment. First, he removes the first; secondly, the second.\r\n\r\nIn regard to the first he does two things: first he excludes the obstacle; secondly, he assigns the reason.\r\n\r\nHe says, therefore, \"Do not presume to say to yourselves, 'We have Abraham as our father.'\" They were of the stock of Abraham according to the flesh; hence, they could believe that no matter how much they sinned, God would have mercy for the sake of Abraham: \"Why does your wrath burn hot against your people, O Lord?... Remember Abraham, Isaac and Israel, your servants\" (Ex 32:11,13). Therefore, John rejects this: \"and do not presume to say...\" This is his way of telling them not to say this, because it will not help them: \"It is not the children of the flesh who are the children of God, but the children of the promise are reckoned as descendants\" (Rom 9:8). For they gloried greatly in Abraham, but the Lord says: \"If you are the sons of Abraham, do the works of Abraham\" (Jn 8:39). Against such Chrysostom says: \"What does a glorious lineage profit one whose morals degrade him?\" The same applies in spiritual matters.\r\n\r\nThen he assigns the reason, \"for I tell you,\" since it is a greater thing to imitate a great father than to be born of him, \"God is able from these stones to raise up children to Abraham.\" It is written in Joshua (c. 4) that when the people of Israel passed across the Jordan on dry ground, Joshua ordered that in memory of the miracle twelve stones outside the river be placed in it. Now John refers to this event, as he baptizes in that place. But this can be understood in two ways: first, literally, for this is the first foundation of faith, to believe in the omnipotence of God: \"I know that you are powerful and no thought is hid from you\" (Jb 42:2). Or by stones we can understand the gentiles, who are called stones for two reasons: first, because they adore stones; secondly, on account of their hardness. And although stones are hard, yet they retain an impression for a long time: and although a building can be slowly made of them, it is strong and durable. Hence, the Gentiles, although they were hard as far as accepting the faith of Christ was concerned, they nevertheless held it firmly. This is signified in Ezekiel (11:19): \"I will take a stony heart out of their flesh and give them a heart of flesh; I will put a new spirit within them.\"\r\n\r\nSecondly, according to Jerome, in these words John seems to lead back to the memory of the prophets: \"Look to Abraham your father and to Sarah who bore you. Look to the rock from which you were hewn\" (Is 51:2). He calls Abraham a rock on account of his inability to reproduce, and Sarah on account of her sterility. As if to say: \"God, who made Abraham virile and Sarah fecund, can from these stones raise up children to Abraham.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.3.9"
+    },
+    {
       "id": "catena-matt-0340-v9",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.3.9",
@@ -354,6 +598,49 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 3:7–10",
       "excerpt": "When John saw those who seemed to be of great consideration among the Jews come to his baptism, he said99 to them, “O generation of vipers, &c.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0355-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "It is faith’s first lesson to believe that God is able to do whatever He will.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.3.9:9dc46a2e:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0348-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.3.9",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 3:7–10",
+      "excerpt": "If they ye would escape this wrath, “Bring forth fruits meet for repentance.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -400,24 +687,6 @@
       ]
     },
     {
-      "id": "catena-matt-0348-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "If they ye would escape this wrath, “Bring forth fruits meet for repentance.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-0351-v9",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.3.9",
@@ -433,17 +702,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.3.9:55fd047a:0"
       ]
     },
     {
-      "id": "catena-matt-0355-v9",
+      "id": "catena-matt-0360-v9",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.3.9",
       "topicSlugs": [],
-      "personId": "gloss-ordinaria",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 3:7–10",
-      "excerpt": "It is faith’s first lesson to believe that God is able to do whatever He will.",
+      "excerpt": "The axe is that most sharp fury of the consummation of all things, that is to hew down the whole world. But if it be already laid, how hath it not yet cut down? Because these trees have reason and free power to do good, or leave undone; so that when they see the axe laid to their root, they may fear and bring forth fruit. This denunciation of wrath then, which is meant by the laying of the axe to the root, though it have no effect on the bad, yet will sever the good from the bad.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -462,24 +738,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 3:7–10",
       "excerpt": "Stone is hard to work, but when wrought to some shape, it loses it not; so the Gentiles were hardly brought to the faith, but once brought they abide in it for ever.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0360-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.3.9",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 3:7–10",
-      "excerpt": "The axe is that most sharp fury of the consummation of all things, that is to hew down the whole world. But if it be already laid, how hath it not yet cut down? Because these trees have reason and free power to do good, or leave undone; so that when they see the axe laid to their root, they may fear and bring forth fruit. This denunciation of wrath then, which is meant by the laying of the axe to the root, though it have no effect on the bad, yet will sever the good from the bad.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

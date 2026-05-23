@@ -38,17 +38,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.10.39:e436d6c1:0"
       ]
     },
     {
-      "id": "catena-john-1442-v39",
+      "id": "catena-john-1446-v39",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.39",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 10:39–42",
-      "excerpt": "Christ, after discoursing on some high truth, commonly retires immediately, to give time to the fury of people to abate, during His absence. Thus He did now: He went away again beyond Jordan, into the place where John at first baptized. He went there that He might recall to people’s minds, what had gone on there; John’s preaching and testimony to Himself.",
+      "excerpt": "These laid hold of Him while abiding, not, like the Jews, when departing. Let us approach by the candle to the day. John is the candle, and gave testimony to the day.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,17 +102,42 @@
       ]
     },
     {
-      "id": "catena-john-1446-v39",
+      "id": "catena-john-1442-v39",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.39",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 10:39–42",
-      "excerpt": "These laid hold of Him while abiding, not, like the Jews, when departing. Let us approach by the candle to the day. John is the candle, and gave testimony to the day.",
+      "excerpt": "Christ, after discoursing on some high truth, commonly retires immediately, to give time to the fury of people to abate, during His absence. Thus He did now: He went away again beyond Jordan, into the place where John at first baptized. He went there that He might recall to people’s minds, what had gone on there; John’s preaching and testimony to Himself.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.10.39:4ccfd005:0"
+      ]
+    },
+    {
+      "id": "catena-john-1443-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.10.39",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-john",
+      "title": "On John 10:39–42",
+      "excerpt": "He was followed there by many: And many resorted unto Him, and said, John did no miracle.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -128,24 +160,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-1443-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.10.39",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-john",
-      "title": "On John 10:39–42",
-      "excerpt": "He was followed there by many: And many resorted unto Him, and said, John did no miracle.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.10.39:477f4354:0"
       ]
     },
     {
@@ -165,6 +186,40 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.10.39:e90548e9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 10:39",
+      "excerpt": "They seek to seize the Lord, unable to bear His lofty testimony about Himself, for they could not endure His sublime theology. But He withdraws, yielding to their anger and arranging it so that through His withdrawal the passion of their anger might subside. He withdraws against their will, in order to show (as we have said many times) that He would not have been taken to the cross either, had He not delivered Himself up voluntarily.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.10.39"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.10.39:6cb3a490:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 10:39",
+      "excerpt": "Now our Lord turns away from the obstinacy of the Jews. First, the Evangelist shows they were obstinate; secondly, we see that Christ turns away from this; thirdly, we see what effect this had.\r\n\r\nThe Evangelist shows their inflexibility by the fact that after so many confirmations of the truth, after the evidence of so many miracles and wonders, they still persist in their evil. So again they tried to arrest him, to apprehend him, not in order to believe and understand, but in their rage to do him harm; they were even the more enraged because he had more clearly expressed his equality with the Father: \"They hold fast to deceit, they refuse to return\" (Jer 8:5).\r\n\r\nBut our Lord turns away from their rage, and so the Evangelist says, but he escaped from their hands. Here we see, first, that he left them by escaping from their hands. He did this for two reasons. To show that he could not be restrained unless he willed: \"Passing through the midst of them he went away\" (Lk 4:30); \"No one takes it from me, but I lay it down of my own accord\" (10:18). Secondly, to give us the example of turning away from persecution when this can be done without endangering the faith: \"Do not make your stand against one who can injure you\" (Sir 8:14).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.10.39"
     }
   ]
 }

@@ -4,6 +4,24 @@
   "verseNumber": 16,
   "entries": [
     {
+      "id": "catena-mark-1146-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.16",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:12–16",
+      "excerpt": "Not our Passover, but in the meanwhile that of the Jews; but He did not only appoint ours, but Himself became our Passover. Why too did He eat it? Because He was made under the Law, to redeem them that were under the Law, (Gal. 4:4) and Himself give rest to the Law. And lest any one should say that He did away with it, because He could not fulfil its hard and difficult obedience, He first Himself fulfilled it, and then set it to rest.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1138-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.16",
@@ -40,24 +58,6 @@
       ]
     },
     {
-      "id": "catena-mark-1146-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.16",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:12–16",
-      "excerpt": "Not our Passover, but in the meanwhile that of the Jews; but He did not only appoint ours, but Himself became our Passover. Why too did He eat it? Because He was made under the Law, to redeem them that were under the Law, (Gal. 4:4) and Himself give rest to the Law. And lest any one should say that He did away with it, because He could not fulfil its hard and difficult obedience, He first Himself fulfilled it, and then set it to rest.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1139-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.16",
@@ -66,42 +66,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:12–16",
       "excerpt": "He means by the first day of the Passover the fourteenth day of the first month, when they threw aside leaven, and were wont to sacrifice, that is, to kill the lamb at even. The Apostle explaining this says, Christ our Passover is sacrificed for us. (1 Cor. 5:7) For although He was crucified on the next day, that is, on the fifteenth moon, yet on the night when the lamb was offered up, He committed to His disciples the mysteries of His Body and Blood, which they were to celebrate, and was seized upon and bound by the Jews; thus He consecrated the beginning of His sacrifice, that is, of His…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1145-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.16",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:12–16",
-      "excerpt": "And it is a proof of the presence of His divinity, that in speaking with His disciples, He knows what is to take place elsewhere; wherefore it follows, And his disciples went forth, and came into the city, and found as he had said unto them; and they made ready the Passover.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1148-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.16",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:12–16",
-      "excerpt": "Or else, the water is the laver of grace, the pitcher points out the weakness of those who were to shew that grace to the world.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -130,17 +94,42 @@
       ]
     },
     {
-      "id": "catena-mark-1141-v16",
+      "id": "catena-mark-1145-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.16",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:12–16",
-      "excerpt": "From the words of the disciples, Where wilt thou that we go? it seems evident that Christ had no dwelling-place, and that the disciples had no houses of their own; for if so, they would have taken Him thither.",
+      "excerpt": "And it is a proof of the presence of His divinity, that in speaking with His disciples, He knows what is to take place elsewhere; wherefore it follows, And his disciples went forth, and came into the city, and found as he had said unto them; and they made ready the Passover.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.14.16:6a82fb96:0"
+      ]
+    },
+    {
+      "id": "catena-mark-1148-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.16",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:12–16",
+      "excerpt": "Or else, the water is the laver of grace, the pitcher points out the weakness of those who were to shew that grace to the world.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -156,24 +145,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:12–16",
       "excerpt": "He sends two of His disciples, that is, Peter and John, as Luke says, to a man unknown to Him, implying by this that He might, if He had pleased, have avoided His Passion. For what could not He work in other men, who influenced the mind of a person unknown to Him, so that he received them? He also gives them a sign how they were to know the house, when He adds, And there shall meet you a man bearing a pitcher of water.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1149-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.16",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:12–16",
-      "excerpt": "He who is baptized carries the pitcher of water, and he who bears baptism upon him comes to his rest, if he lives according to his reason; and he obtains rest, as being in the house. Wherefore it is added, Follow him.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -202,14 +173,50 @@
       ]
     },
     {
-      "id": "catena-mark-1140-v16",
+      "id": "catena-mark-1149-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.16",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:12–16",
+      "excerpt": "He who is baptized carries the pitcher of water, and he who bears baptism upon him comes to his rest, if he lives according to his reason; and he obtains rest, as being in the house. Wherefore it is added, Follow him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1141-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.16",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:12–16",
+      "excerpt": "From the words of the disciples, Where wilt thou that we go? it seems evident that Christ had no dwelling-place, and that the disciples had no houses of their own; for if so, they would have taken Him thither.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1150-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.16",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:12–16",
-      "excerpt": "But the unleavened bread which was eaten with bitterness, that is with bitter herbs, is our redemption, and the bitterness is the Passion of our Lord.",
+      "excerpt": "That is, him who leads to the lofty place, where is the refreshment prepared by Christ. (John 21:15) The lord of the house is the Apostle Peter, to whom the Lord has entrusted His house, that there may be one faith under one Shepherd. The large upper-room is the wide-spread Church, in which the name of the Lord is spoken of, prepared by a variety of powers and tongues.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -256,14 +263,14 @@
       ]
     },
     {
-      "id": "catena-mark-1150-v16",
+      "id": "catena-mark-1140-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.16",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:12–16",
-      "excerpt": "That is, him who leads to the lofty place, where is the refreshment prepared by Christ. (John 21:15) The lord of the house is the Apostle Peter, to whom the Lord has entrusted His house, that there may be one faith under one Shepherd. The large upper-room is the wide-spread Church, in which the name of the Lord is spoken of, prepared by a variety of powers and tongues.",
+      "excerpt": "But the unleavened bread which was eaten with bitterness, that is with bitter herbs, is our redemption, and the bitterness is the Passion of our Lord.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.11.33:dc85952f:0"
       ]
     },
     {
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.11.33:b98a8430:0"
       ]
     },
     {
@@ -109,6 +123,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.11.33:921c6e78:2"
       ]
     },
     {
@@ -145,24 +166,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1857-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.33",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:33–36",
-      "excerpt": "For He gives the name of the eye especially to our understanding, but the whole soul, although not corporeal, He metaphorically calls the body. For the whole soul is enlightened by the understanding.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.11.33:c91470a4:1"
       ]
     },
     {
@@ -174,6 +184,42 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:33–36",
       "excerpt": "But as if the eye of the body be light the body will be light, but if dark the body will be dark also, so is it with the understanding in relation to the soul. Hence it follows, If thine eye be single, thy whole body will be full of light; but if evil, thy whole body will be full of darkness.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1861-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.33",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:33–36",
+      "excerpt": "That is, If thy material body, when the light of a candle shines upon it, is made full of light, so that not one of thy members is any longer in darkness; much more when thou sinnest not, shall thy whole spiritual body be so full of light, that its brightness may be compared to the shining of a candle, while the light which was in the body, and which used to be darkness, is directed whithersoever the understanding may command.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1857-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.33",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:33–36",
+      "excerpt": "For He gives the name of the eye especially to our understanding, but the whole soul, although not corporeal, He metaphorically calls the body. For the whole soul is enlightened by the understanding.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -202,22 +248,158 @@
       ]
     },
     {
-      "id": "catena-luke-1861-v33",
+      "id": "hcf:cyril-of-alexandria:luke.11.33:42d38783:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.11.33",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:33–36",
-      "excerpt": "That is, If thy material body, when the light of a candle shines upon it, is made full of light, so that not one of thy members is any longer in darkness; much more when thou sinnest not, shall thy whole spiritual body be so full of light, that its brightness may be compared to the shining of a candle, while the light which was in the body, and which used to be darkness, is directed whithersoever the understanding may command.",
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-82",
+      "title": "COMMENTARY ON LUKE, HOMILY 82 on luke 11:33",
+      "excerpt": "He says that a lamp is always elevated and put on a stand to be of use to those who see. Let us consider the inference that follows from this. Before the coming of our Savior, the father of darkness, Satan, made the world dark and blackened all things with an intellectual gloom. In this state of affairs, the Father gave us the Son to be a lamp to the world, to illumine us with divine light and to rescue us from satanic darkness. Since you blame the lamp because it is not hidden but on the contrary is being set high on a stand and gives its light to those who see, then blame Christ for not wishing to be concealed. On the contrary, he wishes to be seen by all, illuminating those in darkness and shedding on them the light of the true knowledge of God. He did not fulfill his miracles so much in order to be wondered at or to become famous. He did miracles so we might believe that although he is God by nature, yet he became man for our sakes, but without ceasing to be what he was. The holy church is like a lampstand, shining by the doctrine he proclaims. He gives light to the minds of all by filling them with divine knowledge.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:commentary-on-luke-homily-82",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:bede:luke.11.33:7405dfa8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:33",
+      "excerpt": "No one lights a lamp and puts it in a hidden place, nor under a bushel. The Lord speaks these words about himself, showing that even though he previously said no sign would be given to the wicked generation except the sign of Jonah, he would not at all conceal the brightness of his light from the faithful. Indeed, he himself lights a lamp, who filled the vessel of human nature with the flame of his divinity. Certainly, he did not wish to hide this lamp from believers, nor to put it under a bushel, that is, to confine it under the measure of the law or to restrain it within the boundaries of the single nation of Judea.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:bede:luke.11.33:00ed59dc:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:33",
+      "excerpt": "But on the lampstand, He said, so that those who enter may see the light. He calls the Church the lampstand, upon which He has placed the lamp, because He has affixed the faith of His incarnation on our foreheads, so that those who wish to sincerely enter the Church may openly see the light of truth. By this sentence, He condemns the leaders of the Jews as well, who, seeking signs outwardly, were unwilling to enter through the open door of light by believing. Thus, He commands us to cleanse and chasten not only our deeds but also our thoughts and the very intentions of our heart; for it follows:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.11.33:fda9c9aa:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-7-98-99",
+      "title": "Exposition of the Gospel of Luke, 7.98-99 on luke 11:33",
+      "excerpt": "Therefore, because in previous passages he preferred the Church to the Synagogue, he exhorts us to rather transfer our faith to the Church; for faith is a lamp, according to what is written: Your word, Lord, is a lamp to my feet; for our faith is the word of God, the word of God is light, and faith is a lamp. There was the true light, which enlightens every person coming into this world. However, a lamp cannot shine unless it receives light from elsewhere. This is the lamp that is lit, namely the power of our mind and senses, so that it can find what was lost. Therefore, let no one establish faith under the Law; for the Law is within a measure, but grace is beyond measure: the Law shadows, grace illuminates. And therefore let no one confine their faith within the measure of the Law, but let them bring it to the Church, in which the grace of the sevenfold Spirit shines forth, which that Prince of priests illumines with the radiance of heavenly divinity, lest the shadow of the Law extinguish it.\r\n\r\nFinally, that lamp which the high priest used to light at the times of morning and evening, according to the ancient rite of the Jews, as if placed under a bushel, has disappeared: and that city, Jerusalem, which is on the earth, which killed the prophets, is hidden as if in a valley of tears: but that Jerusalem which is in heaven, in which our faith fights, placed on that highest of all mountains, that is, in Christ, the Church cannot be hidden by the darkness and ruins of this world: but shining with the brightness of the eternal sun, it illuminates us with the light of spiritual grace.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.33:4711f02b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:33",
+      "excerpt": "Since the envious Jews, looking at the miracles, perversely interpreted them out of malice of mind, the Lord says the following: people who received a \"lamp\" from God, that is, the gift of the mind, by which we see, as if by a light given to us, hid their discernment and, darkening themselves with envy, do not see the miracles and benefactions, even though we received the mind for the purpose of placing it on a lampstand, so that others too might \"see the light.\" In my opinion, He says this: Pharisee! You have knowledge — this is the lamp. You ought to have used this knowledge to recognize the miracles yourself and to declare and explain to others that they are the works of the Son of God, and not of Beelzebul. In this way, \"those entering,\" that is, those newly introduced and just beginning, would have seen the light. For whoever is wise has already entered; but whoever is still learning is only entering.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:augustine:luke.11.33:322d9ff9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 11:33",
+      "excerpt": "(de Cons. Ev. lib. ii. c. 39.) Luke indeed relates this in the same place as Matthew, but in a somewhat different order. But who does not see that it is an idle question, in what order our Lord said those things, seeing that we ought to learn by the most precious authority of the Evangelist, that there is no falsehood. But not every man will repeat another's words in the same order in which they proceeded from his mouth, seeing that the order itself makes no difference with respect to the fact, whether it be so or not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:hcf-symeon-the-new-theologian:luke.11.33:800567ee:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-symeon-the-new-theologian",
+      "workId": "hcf:work:hcf-symeon-the-new-theologian:discourses-33-2",
+      "title": "DISCOURSES 33.2 on luke 11:33",
+      "excerpt": "What else does he mean by \"the eye\" than simply the mind, which will never become simple unless it contemplates the simple light? The simple light is Christ. He who has his light shining in his mind is said to have the mind of Christ. When your light is this simple, then the whole immaterial body of your soul will be full of light. If the mind is evil, that is, darkened and extinguished, then this body of yours will be full of darkness.…We say, \"See to it, brothers, that while we seem to be in God and think that we have communion with him we should not be found excluded and separated from him, since we do not now see his light.\" If that light had kindled our lamps, that is, our souls, it would shine brightly in us. Our God and Lord Jesus Christ said, \"If your whole body is full of life, having no dark part, it will be wholly bright, as when a lamp with its rays gives you light.\" What other witness greater than this shall we adduce to make the matter clear to you? If you disbelieve the Master, how will you, tell me, believe your fellow servant?",
+      "takeaway": "",
+      "sourceId": "hcf:source:discourses-33-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1022"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:tertullian:luke.11.33:0fd48de6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-apparel-of-women-book-ii",
+      "title": "On the Apparel of Women Book II on luke 11:33",
+      "excerpt": "For what purpose, except that malice may have no access at all to you, or that you may be an example and testimony to the evil? Else, what is (that): \"Let your works shine? \" Why, moreover, does the Lord call us the light of the world; why has He compared us to a city built upon a mountain; if we do not shine in (the midst of) darkness, and stand eminent amid them who are sunk down? If you hide your lamp beneath a bushel, you must necessarily be left quite in darkness, and be run against by many.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
+    },
+    {
+      "id": "hcf:tertullian:luke.11.33:e4ba1ae0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 11:33",
+      "excerpt": "For a vast age he hides his own light from men, and yet says that a candle must not be hidden, but affirms that it ought to be set upon a candlestick, that it may give light to all. He forbids cursing again, and cursing much more of course; and yet he heaps his woe upon the Pharisees and doctors of the law.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.11.33"
     }
   ]
 }

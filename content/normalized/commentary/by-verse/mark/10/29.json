@@ -19,17 +19,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.10.29:f66a7439:0"
       ]
     },
     {
-      "id": "catena-mark-0829-v29",
+      "id": "catena-mark-0834-v29",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.29",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 10:28–31",
-      "excerpt": "And because it is not sufficient to have left all, he adds that which makes up perfection, and have followed thee. As if he said, We have done what Thou hast commanded. What reward therefore wilt Thou give us?1 But while Peter asks only concerning the disciples, our Lord makes a general answer; wherefore it goes on: Jesus answered and said, Verily I say unto you, There is no one that hath left house, or brethren, or sisters, or father, or mother, or children, or lands. But in saying this, He does not mean that we should leave our fathers, without helping them, or that we should separate…",
+      "excerpt": "This which is here said, shall receive an hundredfold, may be understood in a higher sense1. For the number a hundred which is reckoned by changing from the left to the right hand, although it has the same appearance in the bending of the fingers as the ten had on the left, nevertheless is increased to a much greater quantity. This means, that all who have despised temporal things for the sake of the kingdom of heaven through undoubting faith, taste the joy of the same kingdom in this life which is full of persecutions, and in the expectation of the heavenly country, which is signified by the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -58,17 +65,35 @@
       ]
     },
     {
-      "id": "catena-mark-0834-v29",
+      "id": "catena-mark-0829-v29",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.29",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 10:28–31",
-      "excerpt": "This which is here said, shall receive an hundredfold, may be understood in a higher sense1. For the number a hundred which is reckoned by changing from the left to the right hand, although it has the same appearance in the bending of the fingers as the ten had on the left, nevertheless is increased to a much greater quantity. This means, that all who have despised temporal things for the sake of the kingdom of heaven through undoubting faith, taste the joy of the same kingdom in this life which is full of persecutions, and in the expectation of the heavenly country, which is signified by the…",
+      "excerpt": "And because it is not sufficient to have left all, he adds that which makes up perfection, and have followed thee. As if he said, We have done what Thou hast commanded. What reward therefore wilt Thou give us?1 But while Peter asks only concerning the disciples, our Lord makes a general answer; wherefore it goes on: Jesus answered and said, Verily I say unto you, There is no one that hath left house, or brethren, or sisters, or father, or mother, or children, or lands. But in saying this, He does not mean that we should leave our fathers, without helping them, or that we should separate…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0833-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.10.29",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 10:28–31",
+      "excerpt": "For a wife is busied in a house about her husband’s food and raiment. See also how this is the case with the Apostles; for many women busied themselves about their food and their clothing, and ministered unto them. In like manner the Apostles had many fathers and mothers, that is, persons who loved them; as Peter, for instance, leaving one house, had afterwards the houses of all the disciples. And what is more wonderful, they are to be persecuted and oppressed, for it is with persecutions that the Saints are to possess all things, for which reason there follows, But many that are first shall…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -94,22 +119,107 @@
       ]
     },
     {
-      "id": "catena-mark-0833-v29",
+      "id": "hcf:theophylact-of-ohrid:mark.10.29:a0028cdd:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.10.29",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 10:28–31",
-      "excerpt": "For a wife is busied in a house about her husband’s food and raiment. See also how this is the case with the Apostles; for many women busied themselves about their food and their clothing, and ministered unto them. In like manner the Apostles had many fathers and mothers, that is, persons who loved them; as Peter, for instance, leaving one house, had afterwards the houses of all the disciples. And what is more wonderful, they are to be persecuted and oppressed, for it is with persecutions that the Saints are to possess all things, for which reason there follows, But many that are first shall…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:29",
+      "excerpt": "Everyone who leaves wife or mother — He says this not so that we would leave our parents helpless or separate from our wives, but teaches us to prefer pleasing God above all things of the flesh. Since from the preaching of the Gospel war was to be kindled among people, so that children would have to renounce their fathers, the Lord says: whoever leaves for the sake of the Gospel fleshly kinship and in general all things of the flesh, that one will receive all this a hundredfold in this age, and in the age to come, eternal life.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.29"
+    },
+    {
+      "id": "hcf:bede:mark.10.29:1ffb1070:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 10:29",
+      "excerpt": "Jesus responded and said: Amen I say to you: There is no one who has left house, or brothers, or sisters, or father, or mother, or children, or fields for my sake, and for the sake of the Gospel, who will not receive a hundred times as much now in this time, houses, and brothers, and sisters, and mothers, and children, and fields, with persecutions, and in the age to come, eternal life. Some, using this kind of statement as an occasion, propagate the Jewish fable of a thousand-year reign after the resurrection of the just, during which all that we have given up for God's sake will be repaid to us a hundredfold, and eternal life will be granted besides. And the foolish do not see that, even if in other matters the promise is worthy, the remuneration of wives a hundred times over, according to other evangelists, would appear scandalous, especially since the Lord Himself testifies that in the resurrection there will be no marrying, and asserts that those things given up for His sake will be received in this present time with persecutions. But those Chiliasists confirm that all those persecutions, like other contrary things, are wholly absent from their millennium. Therefore, this is the sense: Whoever has left carnal things for the Gospel of Christ will receive spiritual goods, which, in their worth and merit, will be as if a hundredfold number were compared to a small number. Because clearly, from the brothers and associates of his purpose, who are bound to him in spiritual glue, he will receive much greater affection even in this life. Read the Acts of the Apostles, where it says that the heart and soul of the multitude of believers were one, and all things were common among them, and there was no needy person among them (Acts 4), who had left their own for the Lord's sake. Of whom also the Apostle says, \"As having nothing, and yet possessing everything\" (2 Cor. 6). Certainly, what he says, \"He will receive a hundred times as much now in this time, houses, and brothers, and sisters, and mothers, and children, and fields with persecutions\" (Mark 10), could be understood as a deeper signification. For the number one hundred, transferred from the left to the right, although it seems to hold the same figure in the bending of the fingers which ten had in the left, it greatly surpasses in magnitude. Because indeed, those who despise temporal things for the kingdom of God, even in this life full of persecutions, taste the joy of the same kingdom with certain faith, and in the expectation of the heavenly homeland (which is rightly signified in the right hand), they enjoy the most sincere love of all the elect equally. But because many do not complete the pursuit of virtues with the same intention of piety with which they begin, but either cool down after receiving the love of virtues or completely relapse into the mire of crimes, a terrifying sentence is immediately added.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.10.29"
+    },
+    {
+      "id": "hcf:bede:mark.10.29:d7562476:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 10:29",
+      "excerpt": "(ubi sup.) But while Peter asks only concerning the disciples, our Lord makes a general answer; wherefore it goes on: Jesus answered and said, Verily I say unto you, There is no one that hath left house, or brethren, or sisters, or father, or mother, or children, or lands. But in saying this, He does not mean that we should leave our fathers, without helping them, or that we should separate ourselves from our wives; but He instructs us to prefer the glory of God to the things of this world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.10.29"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:mark.10.29:c64a947b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:who-is-the-rich-man-that-shall-be-saved",
+      "title": "Who is the Rich Man that Shall Be Saved? on mark 10:29",
+      "excerpt": "\"And Jesus answering said, Verily I say unto you, Whosoever shall leave what is his own, parents, and children, and wealth, for My sake and the Gospel's, shall receive an hundredfold.\" But let neither this trouble you, nor the still harder saying delivered in another place in the words, \"Whoso hateth not father, and mother, and children, and his own life besides, cannot be My disciple.\" For the God of peace, who also exhorts to love enemies, does not introduce hatred and dissolution from those that are dearest. But if we are to love our enemies, it is in accordance with right reason that, ascending from them, we should love also those nearest in kindred. Or if we are to hate our blood-relations, deduction teaches us that much more are we to spurn from us our enemies. So that the reasonings would be shown to destroy one another. But they do not destroy each other, nor are they near doing so. For from the same feeling and disposition, and on the ground of the same rule, one loving his enemy may hate his father, in as much as he neither takes vengeance on an enemy, nor reverences a father more than Christ. For by the one word he extirpates hatred and injury, and by the other shamefacedness towards one's relations, if it is detrimental to salvation. If then one's father, or son, or brother, be godless, and become a hindrance to faith and an impediment to the higher life, let him not be friends or agree with him, but on account of the spiritual enmity, let him dissolve the fleshly relationship.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:mark.10.29"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.10.29:2da1814c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-iii-on-the-lapsed",
+      "title": "Treatise III. On the Lapsed. on mark 10:29",
+      "excerpt": "But how can they follow Christ, who are held back by the chain of their wealth? Or how can they seek heaven, and climb to sublime and lofty heights, who are weighed down by earthly desires? They think that they possess, when they are rather possessed; as slaves of their profit, and not lords with respect to their own money, but rather the bond-slaves of their money. These times and these men are indicated by the apostle, when he says, \"But they that will be rich, fall into temptation, and a snare, and into many foolish and hurtful lusts, which drown men in destruction and in perdition. For the root of all evil is the love of money, which, while some have coveted, they have erred from the faith, and pierced themselves through with many sorrows.\" But with what rewards does the Lord invite us to contempt of worldly wealth? With what compensations does He atone for the small and trifling losses of this present time? \"There is no man,\" saith He, \"that leaves house, or land, or parents, or brethren, or wife, or children, for the kingdom of God's sake, but he shall receive seven fold even in this time, but in the world to come life everlasting.\" If we know these things, and have found them out from the truth of the Lord who promises, not only is not loss of this kind to be feared, but even to be desired; as the Lord Himself again announces and warns us, \"Blessed are ye when men shall persecute you, and when they shall separate you from their company, and shall cast you out, and shall speak of your name as evil, for the Son of man's sake! Rejoice ye in that day, and leap for joy; for, behold, your reward is great in heaven.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.10.29"
+    },
+    {
+      "id": "hcf:tertullian:mark.10.29:6cef9ebd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-idolatry",
+      "title": "On Idolatry on mark 10:29",
+      "excerpt": "\" If you wish to be the Lord's disciple, it is necessary you \"take your cross, and follow the Lord: \" your cross; that is, your own straits and tortures, or your body only, which is after the manner of a cross. Parents, wives, children, will have to be left behind, for God's sake. Do you hesitate about arts, and trades, and about professions likewise, for the sake of children and parents? Even there was it demonstrated to us, that both \"dear pledges,\" and handicrafts, and trades, are to be quite left behind for the Lord's sake; while James and John, called by the Lord, do leave quite behind both father and ship; while Matthew is roused up from the toll-booth; while even burying a father was too tardy a business for faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.10.29"
     },
     {
       "id": "catena-mark-0827-v29",

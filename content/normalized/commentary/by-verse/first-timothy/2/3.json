@@ -4,6 +4,25 @@
   "verseNumber": 3,
   "entries": [
     {
+      "id": "chrysostom-230607-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:first-timothy.2.3",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-first-timothy",
+      "title": "On 1 Timothy 2:2–4",
+      "excerpt": "1 Timothy 2:2-4 That we may lead a quiet and peaceable life in all godliness and honesty. For this is good and acceptable in the sight of God our Saviour; who wills that all men should be saved, and come unto the knowledge of the truth. If in order to put an end to public wars, and tumults, and battles, the Priest is exhorted to offer prayers for kings and governors, much more ought private individuals to do it. For there are three very grievous kinds of war. The one is public, when our soldiers are attacked by foreign armies: The second is, when even in time of peace, we are at war with one…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-first-timothy-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "first-timothy"
+      ]
+    },
+    {
       "id": "chrysostom-230606-v3",
       "relation": "verse",
       "targetVerseId": "kjva:first-timothy.2.3",
@@ -23,23 +42,89 @@
       ]
     },
     {
-      "id": "chrysostom-230607-v3",
+      "id": "hcf:john-chrysostom:first-timothy.2.3:912e1f89:0",
       "relation": "verse",
-      "targetVerseId": "kjva:first-timothy.2.3",
       "topicSlugs": [],
       "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-first-timothy",
-      "title": "On 1 Timothy 2:2–4",
-      "excerpt": "1 Timothy 2:2-4 That we may lead a quiet and peaceable life in all godliness and honesty. For this is good and acceptable in the sight of God our Saviour; who wills that all men should be saved, and come unto the knowledge of the truth. If in order to put an end to public wars, and tumults, and battles, the Priest is exhorted to offer prayers for kings and governors, much more ought private individuals to do it. For there are three very grievous kinds of war. The one is public, when our soldiers are attacked by foreign armies: The second is, when even in time of peace, we are at war with one…",
+      "workId": "hcf:work:john-chrysostom:homily-on-1-timothy-6",
+      "title": "Homily on 1 Timothy 6 on first-timothy 2:3",
+      "excerpt": "He says, \"supplications, prayers, intercessions, and giving of thanks.\" For we must give thanks to God for the good that befalls others, as that He maketh the sun to shine upon the evil and the good, and sendeth His rain both upon the just and the unjust. Observe how he would unite and bind us together, not only by prayer but by thanksgiving. For he who is urged to thank God for his neighbor's good, is also bound to love him, and be kindly disposed towards him. And if we must give thanks for our neighbor's good, much more for what happens to ourselves, and for what is unknown, and even for things against our will, and such as appear grievous to us, since God dispenses all things for our good.",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-first-timothy-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "first-timothy"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:first-timothy.2.3"
+    },
+    {
+      "id": "hcf:john-chrysostom:first-timothy.2.3:bf98293d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-1-timothy-7",
+      "title": "Homily on 1 Timothy 7 on first-timothy 2:3",
+      "excerpt": "What is said to be \"acceptable\"? The praying for all men. This God accepts, this He wills.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:first-timothy.2.3"
+    },
+    {
+      "id": "hcf:hcf-oecumenius:first-timothy.2.3:40229294:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-oecumenius",
+      "workId": "hcf:work:hcf-oecumenius:commentary-on-1-timothy",
+      "title": "COMMENTARY ON 1 TIMOTHY on first-timothy 2:3",
+      "excerpt": "For this is good and acceptable in the sight of God our Savior, who desires all people to be saved and to come to the knowledge of the truth.\r\n\r\nwho desires all people to be saved. He says, if He Himself desires all to be saved, the Lord who also saves, who then needs my prayers? Yes. For you draw them and those to love, and you show affection. \"Imitate,\" He says, \"the purpose of God.\" (Eph. 5:1) For He Himself desires all people to be saved, and you pray for all people above all.\r\n\r\nand to come to the knowledge of the truth. Paul said, \"To the knowledge of the truth.\" Then he explains what the truth in doctrines is. If therefore God wills, he says, why does what He wills not happen? It does not happen because they do not want it. For God does nothing by compulsion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c550"
+      ],
+      "targetVerseId": "kjva:first-timothy.2.3"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:first-timothy.2.3:443c2771:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-1-timothy",
+      "title": "Commentary on 1 Timothy on first-timothy 2:3",
+      "excerpt": "Prayer for all, both unbelievers and heretics, is what the word \"this\" points to. This is also \"good\" by nature, because we are all of one and the same nature, and it is also \"pleasing\" to God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:first-timothy.2.3"
+    },
+    {
+      "id": "hcf:thomas-aquinas:first-timothy.2.3:9168a667:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-1-timothy",
+      "title": "Commentary on 1 Timothy on first-timothy 2:3",
+      "excerpt": "Then when he says, for this is good, he gives the reasons for praying: and he does two things; first, he gives the reasons; second, he proves something he had assumed, at for there is one God. In regard to the first: first, he gives the reason from the nature of the work; second, on the part of God, at and acceptable.\r\n\r\nHe gives the reason from the nature of the work, because when something is good in itself, we should do it; but prayer for others is this type of thing, because it is an act of charity. Therefore, he says, for this is good: it is good in the sight of your saints (Ps 51:11).\r\n\r\nAlso on the side of God, and acceptable in the sight of God: then you shall accept the sacrifices of justice (Ps 50:21), which could be offered only under charity. And he says, our Savior, because God alone saves: there is no savior besides me (Isa 43:11).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:first-timothy.2.3"
     }
   ]
 }

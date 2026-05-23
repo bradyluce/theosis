@@ -19,6 +19,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.18:3128571e:1"
+      ]
+    },
+    {
+      "id": "catena-luke-0080-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.18",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:18–22",
+      "excerpt": "But the Angel says, And, behold; in other words, “At this instant.” But mark the mercy of God in what follows: Until the day in which these things shall be performed. As if he said, “When by the issues of events I shall have proved my words, and thou shalt perceive that thou art rightly punished, I will remove the punishment from thee.” And he points out the cause of the punishment, adding, Because thou believest not my words, which shall be fulfilled in their season; not considering His power Who sent me, and before Whom I stand. But if he who was incredulous about a mortal birth is…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -48,24 +73,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
       "excerpt": "That the bonds might be transferred from the powers of generation to the vocal organs. From no regard to the priesthood was he spared, but for this reason was the more smitten, because in a matter of faith he ought to have set an example to others.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0080-v18",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.18",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:18–22",
-      "excerpt": "But the Angel says, And, behold; in other words, “At this instant.” But mark the mercy of God in what follows: Until the day in which these things shall be performed. As if he said, “When by the issues of events I shall have proved my words, and thou shalt perceive that thou art rightly punished, I will remove the punishment from thee.” And he points out the cause of the punishment, adding, Because thou believest not my words, which shall be fulfilled in their season; not considering His power Who sent me, and before Whom I stand. But if he who was incredulous about a mortal birth is…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -127,24 +134,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0075-v18",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.18",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:18–22",
-      "excerpt": "Here we must remark, that the angel testifies, that he both stands before God, and is sent to bring good tidings to Zacharias.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.18:c0d4bb8d:1"
       ]
     },
     {
@@ -156,6 +152,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
       "excerpt": "But he gives him the sign which he asks for, that he who spoke in unbelief, might now by silence learn to believe; as it follows; and, behold, thou shall be dumb.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0075-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.18",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:18–22",
+      "excerpt": "Here we must remark, that the angel testifies, that he both stands before God, and is sent to bring good tidings to Zacharias.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -200,6 +214,108 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:luke.1.18:2f0c174f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:on-the-incomprehensible-nature-of-god-2-11",
+      "title": "ON THE INCOMPREHENSIBLE NATURE OF GOD 2.11 on luke 1:18",
+      "excerpt": "Zechariah looked at his age, his gray hair, his body that had lost its strength. He looked at his wife's sterility, and he refused to accept on faith what the angel revealed would come to pass.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-incomprehensible-nature-of-god-2-11",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:luke.1.18"
+    },
+    {
+      "id": "hcf:bede:luke.1.18:e21914f5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:18",
+      "excerpt": "And Zacharias said to the angel, \"How shall I know this? For I am an old man, and my wife is advanced in her days.\" Hesitating because of the magnitude of the promises, he seeks a sign by which he might be able to believe, to whom the mere vision or address of the angel should have been sufficient for a sign. Therefore, he suffered the deserved punishment of silence for his disbelief, where the same silence was both the sign of the faith he sought and the punishment for the unbelief he deserved.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.18"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.18:77e9372e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:18",
+      "excerpt": "Though Zacharias was righteous and holy, nevertheless, considering the extraordinary nature of the birth of a son, he did not easily believe.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.18"
+    },
+    {
+      "id": "hcf:augustine:luke.1.18:bd21c294:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-293",
+      "title": "SERMON 293 on luke 1:18",
+      "excerpt": "The church observes the birth of John as in some way sacred.… When we celebrate John's, we also celebrate Christ's.…John is born of an old woman who is barren. Christ is born of a young woman who is a virgin. Barrenness gives birth to John, virginity to Christ. The normal and proper age of parents was lacking with the birth of John. No marital embrace occurred for the birth of Christ. The former is announced in the declaration of the angel. With the angel's annunciation the latter is conceived. That John will be born is not believed, and his father is silenced. That Christ will be born is believed, and he is conceived by faith. First of all faith makes its entry into the heart of the virgin, and there follows fruitfulness in the mother's womb.\r\nAnd yet, Zechariah used nearly the same words, when the angel announced John: \"By what shall I know this? For I myself am an old man, and my wife is already advanced in her days,\" and by holy Mary when the angel announced that she was going to give birth: \"How shall this be, since I have no husband?\" These are practically the same words.…\r\nFinally, John is born when the daylight begins to diminish and the night begins to grow longer. Christ is born when the night begins to be curtailed and the day begins to increase.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.1.18"
+    },
+    {
+      "id": "hcf:jerome:luke.1.18:1722e3a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:st-jerome-commentary-on-daniel-chapter-eight",
+      "title": "St. Jerome, Commentary on Daniel, CHAPTER EIGHT on luke 1:18",
+      "excerpt": "[Daniel 8:16-17] \"And I heard the voice of a man in the midst of the Ulai, and he cried out and said: 'Gabriel, make this vision intelligible (Vulgate: make this man to understand the vision).' And he came and stood near to where I was standing.\" The Jews claim that this man who directed Gabriel to explain the vision to Daniel was Michael. Quite appropriately it was Gabriel, who has been put in charge of battles, to whom this duty was assigned, inasmuch as the vision had to do with battles and contests between kings and even between kingdoms themselves. For Gabriel is translated into our language as \"the strength of, or the mighty one of, God.\" And so at that time also when the Lord was about to be born and to declare war against the demons and to triumph over the world, Gabriel came to Zacharias (Luke 1:11-20) and to Mary (Luke 1:26-27). And then we read in the Psalms concerning the Lord in His triumph: \"Who is this king of glory? The Lord strong and mighty, the Lord mighty in battle; He is the King of glory\" (Psalm 24:8). But whenever it is medicine or healing that is needed, it is Raphael who is sent, for his name is rendered as \"the healing of,\" or \"the medicine of God\" - that is, if one cares to accept the authority of the Book of Tobias (Tobit 12:11-15). And then, when favorable promises are made to the people, and hilasmos, which we might render as \"propitiation\" or \"expiation,\" is the thing required, then it is Michael who is directed to go, for his name means, \"Who is like God?\" Of course the significance of the name indicates the fact that the only true remedy is to be found in God.\r\n\r\n\"And he said to me: 'Son of man, understand that in the time of the end the vision shall be fulfilled.'\" Inasmuch as Ezekiel and Daniel and Zechariah behold themselves to be often in the company of angels, they were reminded of their frailty, lest they should be lifted up in pride and imagine themselves to partake of the nature or dignity of angels. Therefore they are addressed as sons of men, in order that they might realize that they are but human beings.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ccel-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.1.18"
+    },
+    {
+      "id": "hcf:hcf-maximus-of-turin:luke.1.18:59801772:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-maximus-of-turin",
+      "workId": "hcf:work:hcf-maximus-of-turin:sermon-5-3-4",
+      "title": "SERMON 5.3-4 on luke 1:18",
+      "excerpt": "Yet... we ought not to be so astonished that John merited such grace in his birth. For the precursor and forerunner of Christ ought to have had something similar to the birth of the Lord, the Savior. Indeed, the Lord was begotten of a virgin and John of a sterile woman, the one of an unstained girl and the other of an already exhausted old woman. John's birth, then, also has something of the glorious and the wondrous. Although it would seem to be less noble for a matron to give birth than for a virgin to give birth, yet as we look up to Mary for having given birth as a virgin we also wonder at Elizabeth for having done so as an old woman. Indeed, I think that this fact contains a certain mystery. John, who was a figure of the Old Testament, should have been born of the already cold blood of an old woman, while the Lord, who would preach the gospel of the kingdom of heaven, came forth from a woman in the flower of glowing youth. Mary, conscious of her virginity, marvels at the fruit hidden in her belly, while Elizabeth, conscious of her old age, blushes that her womb is heavy with the one she has conceived. Thus the Evangelist says, \"She hid herself for five months.\" How wonderful it is, though, that the same archangel Gabriel performs an office with respect to each birth! He comforts the unbelieving Zechariah and encourages the believing Mary. He lost his voice because he doubted. But she, because she believed immediately, conceived the saving Word.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-5-3-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c465"
+      ],
+      "targetVerseId": "kjva:luke.1.18"
     }
   ]
 }

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.4.37:1a1b2d9b:0"
       ]
     },
     {
@@ -55,17 +62,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.4.37:d3c0f49a:0"
       ]
     },
     {
-      "id": "catena-mark-0323-v37",
+      "id": "catena-mark-0327-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.37",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
+      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -94,14 +108,14 @@
       ]
     },
     {
-      "id": "catena-mark-0327-v37",
+      "id": "catena-mark-0323-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.37",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
+      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -109,6 +123,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.4.37:aa0e21f1:1"
       ]
     },
     {
@@ -127,6 +148,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.4.37:52d28f3e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:37",
+      "excerpt": "But so that they would not become proud because He sent the others away and took them, and at the same time, to teach them to endure dangers, He allows them to be in danger from the storm.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.37"
+    },
+    {
+      "id": "hcf:bede:mark.4.37:e5e24b7e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 4:37",
+      "excerpt": "And a great storm of wind arose, and the waves were beating into the boat, so that the boat was already filling. And he was in the stern, asleep on the cushion. While the disciples were sailing, Christ fell asleep, because when the faithful trample the world underfoot and meditate on the peace of the future kingdom in their minds, and, whether by the favorable breath of the Holy Spirit or by the rowing of their own effort, they eagerly cast behind their backs the infidelity of worldly pride, the time of the Lord's passion suddenly arrived. Hence it is fitting to mention that this event took place in the evening, to signify not only the sleeping of the Lord but also the very hour of the setting of the true sun. But as he ascended the stern of the cross, where he would take the sleep of death, the waves of persecutors, stirred by demonic storms, rose up. Yet it is not his patience that is disturbed by these, but the weakness of the disciples that is shaken, trembles, and is imperiled.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.4.37"
+    },
+    {
+      "id": "catena-mark-0328-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.37",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:35–41",
+      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.37:8ab40ed5:0"
       ]
     },
     {
@@ -156,24 +236,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
       "excerpt": "For from the troubling of the sea there arises a certain sound, which appears to be its voice threatening danger, and therefore, by a sort of metaphor, He fitly commands tranquillity by a word signifying silence: just as in the restraining of the winds, which trouble the sea with their violence, He uses a rebuke. For men who are in power are accustomed to curb those, who rudely disturb the peace of mankind, by threatening to punish them; by this, therefore, we are given to understand, that, as a king can repress violent men by threats, and by his edicts sooth the murmurs of his people, so…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0328-v37",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.37",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:35–41",
-      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

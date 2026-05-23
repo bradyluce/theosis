@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.54:9940350e:0"
       ]
     },
     {
@@ -33,24 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0495-v54",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.54",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:53–56",
-      "excerpt": "The Lord remained at the above-mentioned place for some time. Therefore the Evangelist subjoins, And when they had come out of the ship, straightway they knew him, that is, the inhabitants of the country.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -74,6 +63,48 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "catena-mark-0495-v54",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.54",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:53–56",
+      "excerpt": "The Lord remained at the above-mentioned place for some time. Therefore the Evangelist subjoins, And when they had come out of the ship, straightway they knew him, that is, the inhabitants of the country.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.54:0d20dc9c:0"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.6.54:116981c0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:54",
+      "excerpt": "The Lord arrived at this place, it seems, after no small time of absence; therefore the evangelist also says: \"when they recognized Him... they began to bring the sick.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.54"
     },
     {
       "id": "catena-mark-0494-v54",

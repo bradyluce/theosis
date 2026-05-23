@@ -109,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.23:2d737306:0"
       ]
     },
     {
@@ -146,6 +153,23 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.23:29ca4069:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:23",
+      "excerpt": "Note also that Zacharias did not go to his house until the days of his service were completed, but remained in the temple. For the hill country was indeed far from Jerusalem. And a priest, even if he had a house in Jerusalem itself, was not permitted to leave the temple court during the time of his rotation. But we, alas, how we neglect the divine services! That Zacharias could not speak but used signs points to the senseless life of the Jews. For having put to death the Word, they can give an account of neither their deeds nor their words. Even if you ask them about something prophetic, they do not open their mouths and cannot give you a single word or answer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.23"
     }
   ]
 }

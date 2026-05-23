@@ -4,6 +4,31 @@
   "verseNumber": 27,
   "entries": [
     {
+      "id": "catena-luke-3144-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:24–27",
+      "excerpt": "As if He says, Think not that thy disciple needs you, but that you do not need him. For I who need no one whom all things in heaven and earth need, have condescended to the degree of a servant.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.22.27:ae2bf610:0"
+      ]
+    },
+    {
       "id": "catena-luke-3139-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.27",
@@ -22,17 +47,17 @@
       ]
     },
     {
-      "id": "catena-luke-3144-v27",
+      "id": "catena-luke-3142-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.27",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:24–27",
-      "excerpt": "As if He says, Think not that thy disciple needs you, but that you do not need him. For I who need no one whom all things in heaven and earth need, have condescended to the degree of a servant.",
+      "excerpt": "But it must be observed, that not every kind of respect and deference to others betokens humility, for you may defer to a person for the world’s sake, for fear of his power, or regard to your own interest. In that case you seek to advance yourself, not to honour another. Therefore there is one form of the precept given to all men, namely, that they boast not about precedence, but strive earnestly for humility.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -94,21 +119,28 @@
       ]
     },
     {
-      "id": "catena-luke-3142-v27",
+      "id": "catena-luke-3143-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.27",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:24–27",
-      "excerpt": "But it must be observed, that not every kind of respect and deference to others betokens humility, for you may defer to a person for the world’s sake, for fear of his power, or regard to your own interest. In that case you seek to advance yourself, not to honour another. Therefore there is one form of the precept given to all men, namely, that they boast not about precedence, but strive earnestly for humility.",
+      "excerpt": "In this rule however, given by our Lord, the great have need of no little judgment, that they do not indeed like the kings of the Gentiles delight to tyrannize over their subjects, and be puffed up with their praises, yet notwithstanding that they be provoked with a righteous zeal against the wickedness of offenders. But to the words of the exhortation He subjoins His own example, as it follows, For which is greater, he who sitteth at meat, or he that serveth? But I am among you, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.27:edbf4a85:1"
       ]
     },
     {
@@ -130,42 +162,6 @@
       ]
     },
     {
-      "id": "catena-luke-3138-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.27",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:24–27",
-      "excerpt": "Rather let us look not what carnal disciples did, but what their spiritual Master commanded; for it follows, And he said unto them, The kings of the Gentiles, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3143-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.27",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:24–27",
-      "excerpt": "In this rule however, given by our Lord, the great have need of no little judgment, that they do not indeed like the kings of the Gentiles delight to tyrannize over their subjects, and be puffed up with their praises, yet notwithstanding that they be provoked with a righteous zeal against the wickedness of offenders. But to the words of the exhortation He subjoins His own example, as it follows, For which is greater, he who sitteth at meat, or he that serveth? But I am among you, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3146-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.27",
@@ -174,6 +170,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:24–27",
       "excerpt": "Or He speaks of that service wherewith, according to John, He their Lord and Master washed their feet. Although by the word itself serving, (John 13:5.) all that He did in the flesh may be implied, but by serving He also signifies that He poureth forth His blood for us.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.27:4965e9e0:2"
+      ]
+    },
+    {
+      "id": "catena-luke-3138-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.27",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:24–27",
+      "excerpt": "Rather let us look not what carnal disciples did, but what their spiritual Master commanded; for it follows, And he said unto them, The kings of the Gentiles, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -217,7 +238,65 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.27:070e4fdb:1"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.27:859393f7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:27",
+      "excerpt": "Secondly, by His own example, for having explained that He serves them, He thereby leads them to humility. It was precisely at that time that He, as it is said, distributed to them the bread and the cup. If I, Whom all the angelic and rational creation worships, serve in your midst, then how do you dare to think highly of yourselves and argue about primacy? It seems to me that He mentioned this reclining at table and serving not in passing, but to remind them that if you ate of one bread and drank of one cup, then the one table makes you friends and of one mind. Why then do you have thoughts unworthy of this? Moreover, I did not act so as to serve one and not another, but all of you equally. Therefore you also should have the same feelings toward one another. Perhaps from all of this you may also understand how the disciples were at that time still imperfect, yet afterwards shone forth so wonderfully. Let the Manichaeans be put to shame, who say that some are by nature incapable of learning, and that it is impossible for such people to change.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.27"
+    },
+    {
+      "id": "hcf:bede:luke.22.27:b27d83f8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:27",
+      "excerpt": "For who is greater, the one who reclines or the one who serves? Is it not the one who reclines? But I am among you as the one who serves. To his words of exhortation, he adds examples, which the evangelist John more fully records, writing among other things: If I, the Lord and Master, have washed your feet, you also ought to wash one another's feet (John XIII). Although by the word of serving, all the things that God did in the flesh can be understood. For he signifies that he will pour out the sacrament of his own blood to be administered to us, when he says: The Son of Man came not to be served but to serve, and to give his life as a ransom for many (Matthew XX), and showing this also as a primary example of service for the elders of the Church to emulate, so that we not only extend the ministries of mercies, charity, saving doctrine, spiritual example to our brothers, but also learn to lay down our lives for one another as he laid down his life for us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.27"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.27:86ec0b9c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-143",
+      "title": "COMMENTARY ON LUKE, HOMILY 143 on luke 22:27",
+      "excerpt": "In the passage that has just been read, Christ says, \"For which is the chief, he that reclines at table, or he that serves? Is it not he that reclines? But I am in the midst of you as he that serves.\" When Christ says this, who can be so obstinate and unyielding as not to put away all pride and banish from his mind the love of empty honor? Christ is ministered to by the whole creation of rational and holy beings. He is praised by the seraphim. He is tended by the services of the universe. He is the equal of God the Father in his throne and kingdom. Taking a servant's place, he washed the holy apostles' feet. In another way, Jesus holds the post of service, because of the appointed time in the flesh. Blessed Paul witnesses to this. He writes, \"I say that Christ was a minister of the circumcision to fulfill the promises of the fathers, and the Gentiles will praise God for mercy.\" He who is ministered to became a minister. The Lord of glory made himself poor, leaving us an example, as it is written.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-143",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.27"
     }
   ]
 }

@@ -23,14 +23,39 @@
       ]
     },
     {
-      "id": "catena-matt-0802-v33",
+      "id": "catena-matt-0805-v33",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.33",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:33–37",
-      "excerpt": "This was allowed under the Law, as to children; as they offered sacrifice to God, that they might not do it to idols, so they were permitted to swear by God; not that the thing was right, but that it were better done to God than to daemons.",
+      "excerpt": "This precept also confirms the righteousness of the Pharisees, not to forswear; inasmuch as he who swears not at all cannot forswear himself. But as to call God to witness is to swear, does not the Apostle break this commandment when he says several times to the Galatians, “The things which I write unto you, behold, before God, I lie not.” Gal 1:20 So the Romans, “God is my witness, whom I serve in my spirit.” Rom 1:9 Unless perhaps some one may say, it is no oath unless I use the form of swearing by some object; and that the Apostle did not swear in saying, “God is my witness.” It is…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.5.33:e67a0b6a:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0806-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.33",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:33–37",
+      "excerpt": "But what we could not understand by mere words, from the conduct of the saints we may gather in what sense should be understood what might easily be drawn the contrary way, unless explained by example. The Apostle has used oaths in his Epistles, and by this shews us how that ought to be taken, “I say unto you, Swear not at all,” namely, lest by allowing ourselves to swear at all we come to readiness in swearing, from readiness we come to a habit of swearing, and from a",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -59,14 +84,14 @@
       ]
     },
     {
-      "id": "catena-matt-0805-v33",
+      "id": "catena-matt-0802-v33",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.33",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:33–37",
-      "excerpt": "This precept also confirms the righteousness of the Pharisees, not to forswear; inasmuch as he who swears not at all cannot forswear himself. But as to call God to witness is to swear, does not the Apostle break this commandment when he says several times to the Galatians, “The things which I write unto you, behold, before God, I lie not.” Gal 1:20 So the Romans, “God is my witness, whom I serve in my spirit.” Rom 1:9 Unless perhaps some one may say, it is no oath unless I use the form of swearing by some object; and that the Apostle did not swear in saying, “God is my witness.” It is…",
+      "excerpt": "This was allowed under the Law, as to children; as they offered sacrifice to God, that they might not do it to idols, so they were permitted to swear by God; not that the thing was right, but that it were better done to God than to daemons.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -74,25 +99,65 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.5.33:3190e740:0"
       ]
     },
     {
-      "id": "catena-matt-0806-v33",
+      "id": "hcf:hilary-poitiers:matthew.5.33:276056a7:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.33",
       "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:33–37",
-      "excerpt": "But what we could not understand by mere words, from the conduct of the saints we may gather in what sense should be understood what might easily be drawn the contrary way, unless explained by example. The Apostle has used oaths in his Epistles, and by this shews us how that ought to be taken, “I say unto you, Swear not at all,” namely, lest by allowing ourselves to swear at all we come to readiness in swearing, from readiness we come to a habit of swearing, and from a",
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-4-23",
+      "title": "Commentary on Matthew 4.23 on matthew 5:33",
+      "excerpt": "The law had prescribed a penalty for false swearing, so that the ritual of an oath might hold false testimony in check.… But faith removes the need for using an oath. It establishes in truth the dealings of our life. Once the inclination to deceive has been checked, it enjoins simplicity in speaking and hearing.… Therefore those who are living in the simplicity of faith have no need for the ritual of an oath. With such people, what is, always is, and what is not, is not. For this reason, their every word and deed are always truthful.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.5.33"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.5.33:9a248ede:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-17",
+      "title": "Homily on the Gospel of Matthew 17 on matthew 5:33",
+      "excerpt": "\"Again, ye have heard that it was said to them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths. But I say unto you, swear not at all.\"\r\n\r\nWhy did He go straightway not to theft, but to false witness, passing over that commandment? Because he that steals, doth upon occasion swear also; but he that knows not either swearing or speaking falsehood, much less will he choose to steal. So that by this He hath overthrown the other sin likewise: since falsehood comes of stealing.\r\n\r\nBut what means, \"Thou shalt perform unto the Lord thine oaths?\" It is this, \"thou shalt be true in swearing.\" \"But I say unto you, swear not at all.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.5.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.5.33:4e3dcc30:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:33",
+      "excerpt": "Again, ye have heard that it hath been said, Thou shalt not swear falsely, but shalt perform unto the Lord thine oaths. That is, when you take an oath, speak the truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.5.33"
     },
     {
       "id": "catena-matt-0801-v33",
@@ -110,6 +175,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.5.33:fd5562e2:0"
       ]
     },
     {

@@ -73,24 +73,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3130-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.23",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:21–23",
-      "excerpt": "And yet our Lord does not especially point him out, lest being so plainly detected, he might only become the more shameless. But He throws the charge on the whole twelve, that the guilty one might be turned to repentance. He also proclaims his punishment, that the man whom shame had not prevailed upon, might by the sentence denounced against him be brought to amendment. Hence it follows, And truly the Son of man goeth, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.22.23:ca0c6bce:0"
       ]
     },
     {
@@ -102,6 +91,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:21–23",
       "excerpt": "But woe also to that man, who coining unworthily to the Table of our Lord, after the example of Judas, betrays the Son, not indeed to Jews, but to sinners, that is, to his own sinful members. Although the eleven Apostles knew that they were meditating nothing against their Lord, yet notwithstanding because they trust more to their Master than themselves, fearing their own infirmities, they ask concerning a sin of which they had no consciousness.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.23:d68e17d5:1"
+      ]
+    },
+    {
+      "id": "catena-luke-3130-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.23",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:21–23",
+      "excerpt": "And yet our Lord does not especially point him out, lest being so plainly detected, he might only become the more shameless. But He throws the charge on the whole twelve, that the guilty one might be turned to repentance. He also proclaims his punishment, that the man whom shame had not prevailed upon, might by the sentence denounced against him be brought to amendment. Hence it follows, And truly the Son of man goeth, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -146,6 +160,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.23:8b1b486c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:23",
+      "excerpt": "Having heard this, the disciples were troubled. You will learn about this more extensively in the commentary on the Gospel of John (see ch. 13).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.23"
+    },
+    {
+      "id": "hcf:bede:luke.22.23:68658e66:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:23",
+      "excerpt": "And they themselves began to inquire among themselves who it might be from them who was going to do this. And certainly, the eleven apostles knew that they had not conceived such a thing against the Lord, but they believed the teacher more than themselves, and fearing their own weakness, they sorrowfully inquired about the sin, of which they had no consciousness. Judas also shamelessly inquires, as Matthew and Mark mention, in order to falsely feign a good conscience with boldness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.23"
     }
   ]
 }

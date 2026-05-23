@@ -38,35 +38,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.18.39:d7556484:0"
       ]
     },
     {
-      "id": "catena-john-2325-v39",
+      "id": "catena-john-2331-v39",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.39",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 18:38–40",
-      "excerpt": "He knew that this question required time to answer, and it was necessary immediately to rescue Him from the fury of the Jews. So he went out.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2327-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.39",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:38–40",
-      "excerpt": "He did not say, He has sinned and is worthy of death; yet release Him at the feast; but acquitting Him in the first place, he does more than he need do, and asks it as a favour, that, if they are unwilling to let Him go as innocent, they will at any rate allow Him the benefit of the season: But ye have a custom, that I should release one unto you at the passover.",
+      "excerpt": "Upon this they cried out: Then cried they all again, saying, Not this man, but Barabbas. Now Barabbas was a robber. We blame you not, O Jews, for releasing a guilty man at the passover, but for killing an innocent one. Yet unless this were done, it were not the true passover.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +84,32 @@
       ]
     },
     {
-      "id": "catena-john-2331-v39",
+      "id": "catena-john-2327-v39",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.39",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 18:38–40",
-      "excerpt": "Upon this they cried out: Then cried they all again, saying, Not this man, but Barabbas. Now Barabbas was a robber. We blame you not, O Jews, for releasing a guilty man at the passover, but for killing an innocent one. Yet unless this were done, it were not the true passover.",
+      "excerpt": "He did not say, He has sinned and is worthy of death; yet release Him at the feast; but acquitting Him in the first place, he does more than he need do, and asks it as a favour, that, if they are unwilling to let Him go as innocent, they will at any rate allow Him the benefit of the season: But ye have a custom, that I should release one unto you at the passover.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2325-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.39",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:38–40",
+      "excerpt": "He knew that this question required time to answer, and it was necessary immediately to rescue Him from the fury of the Jews. So he went out.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -128,6 +135,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.18.39:8b722f66:0"
       ]
     },
     {
@@ -164,6 +178,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.18.39:4ec2d818:1"
+      ]
+    },
+    {
+      "id": "catena-john-2333-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.39",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:38–40",
+      "excerpt": "The name Barabbas signifies, The son of their master, i. e. the devil; his master in his wickedness, the Jews’ in their perfidy.Copyright ©1999-2023 [Wildfire Fellowship, Inc](https://saintjoe.com/wildfire/) all rights reserved",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
       ]
     },
     {
@@ -185,22 +224,106 @@
       ]
     },
     {
-      "id": "catena-john-2333-v39",
+      "id": "hcf:john-chrysostom:john.18.39:a801ee21:0",
       "relation": "verse",
-      "targetVerseId": "kjva:john.18.39",
       "topicSlugs": [],
-      "personId": "alcuin",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:38–40",
-      "excerpt": "The name Barabbas signifies, The son of their master, i. e. the devil; his master in his wickedness, the Jews’ in their perfidy.Copyright ©1999-2023 [Wildfire Fellowship, Inc](https://saintjoe.com/wildfire/) all rights reserved",
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-84",
+      "title": "Homily on the Gospel of John 84 on john 18:39",
+      "excerpt": "\"What is truth?\" But for the present he applieth himself to what was pressing, for he knew that this question needed time, and desired to rescue Him from the violence of the Jews. Wherefore he went out, and what said he? \"I find no fault in him.\"\r\n\r\nConsider how prudently he acted. He said not, \"Since he hath sinned, and is deserving of death, forgive him on account of the Feast\"; but having first acquitted Him of all guilt, he asks them over and above, if they were not minded to dismiss Him as innocent, yet as guilty to forgive Him on account of the time. Wherefore he added, \"Ye have a custom that I should release unto you one at the Passover\"; then in a persuasory way, \"Will ye therefore that I release the king of the Jews? Then cried they all, Not this man, but Barabbas.\"",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.18.39"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.18.39:66b14963:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 18:39",
+      "excerpt": "It is worthy of investigation on what occasion the custom arose among the Jews of releasing one prisoner for Passover. To this one may say, first, that those who teach \"as doctrines the commandments of men\" (Mark 7:7) introduced very much from their own reasoning, yet did not keep the commandments of God. So too they introduced this without any rational basis, while in other matters they neglected the rites prescribed by the law. Then, one may say that in Scripture there is also found a similar legal provision, from which they could have taken occasion to introduce into custom such releases of condemned persons. For concerning involuntary murder it is written: \"If someone, not out of enmity and without particular intent, causes harm to his neighbor, throws a vessel or a stone, and the fallen object strikes a passerby, and that person dies, then such a killer is involuntary. The whole synagogue (assembly) shall judge concerning this, and they shall free him from death, for he did not kill with malicious intent, but they shall place him in a city of refuge, that is, punish him with exile.\" From this, perhaps, as we conjecture, they took occasion and introduced such a custom of releasing one of those condemned for murderous intent. The law prescribes that this matter be conducted by the Jewish synagogue, but since the Jews were under the authority of the Romans, the right to release prisoners they also yielded to Roman governors, as now to Pilate.\r\nFor he did not say \"although He has sinned and is worthy of death, yet for the sake of the feast forgive Him,\" but first declared Him free from all guilt, and only then proposed to them His release as well. Therefore, if Jesus is released, He owes them nothing at all, for they released an innocent man. If they condemn Him, their malice will be proven by this, because they condemned an innocent man.\r\nLook: even the title \"King of the Jews\" has a certain meaning of its own. By this, Pilate evidently expresses that Jesus is not at all guilty, but that they accuse Him in vain, as though He were seeking kingship. For one who proclaims himself king and rises up against the dominion of the Romans, a Roman governor would not have released. Therefore, by saying \"I will release the King of the Jews,\" Pilate declares Jesus to be utterly innocent and mocks the Jews, speaking as if to say: \"The One against Whom you bring false accusations that He proclaims Himself king, the One you call an insurgent and rebel—Him I find it necessary to release, evidently because He is not such a person.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.18.39"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.18.39:c11e09a6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-12",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 12 on john 18:39",
+      "excerpt": "As I was considering and meditating in my mind how the custom arose for the Jews to ask for one man to be released to them (a robber, it might be, or a murderer), the idea occurred to me that they no longer regulated their actions altogether according to the Law, but, choosing rather to use their own customs, they fell into a decayed state of manners not altogether in agreement with the law of Moses. But while I was searching the divine Scriptures and hunting everywhere for the origin of this custom, I came on one of the divine dictates that caused me to suspect that when the Jews sought the release of a malefactor, they were, in fact, in however mistaken a way, fulfilling one of the customs of the Law. At the end of the book called Numbers we find recorded the law concerning voluntary and involuntary homicide. When the penalty in the case of premeditated murder has been clearly laid down, the book goes on to speak of involuntary homicide, and, after other remarks, makes the following declaration: \"But if he stabbed him suddenly without enmity, or hurled anything on him without lying in wait or used a stone, by which a man may die, and without seeing him cast it on him, so that he died, though he was not his enemy and did not seek his harm, then the congregation shall judge between the manslayer and the avenger of blood, and the congregation shall restore him to the city of his refuge, to which he had fled.\"Since this was the written commandment when any, as it happened, were involved in such a calamity, the Jews, when they were congregated together (and so that they might not appear altogether to neglect this enactment), sought the release of one of them. For the Law laid down that it was to be the act of the entire assembly. Since, then, they were permitted by the Law to ask for the release of a prisoner, they make this request of Pilate. For after they had once accepted the Roman yoke, from then on they were, for the most part, ruled by their laws in the administration of their affairs. We might say even further that, although it was lawful for them to put to death anyone convicted of a crime, they brought Jesus to Pilate as a criminal, saying, \"It is not lawful for us to put any man to death.\" For, though they alleged as a plea their purification by the sacrifice of the Passover, yet they showed themselves flatterers of Rome in entrusting to the laws of the Romans the duty that the divine commandment from heaven laid on themselves.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.18.39"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.18.39:8ad40d7c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-12",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 12 on john 18:39",
+      "excerpt": "When he called Jesus king of the Jews, he spoke in jest and tried to abate by ridicule the anger of the furious mob. He also clearly showed that this particular accusation was brought in vain. A Roman officer would never have thought a man condemned of plotting for a kingdom and revolution against Rome worthy to be released. He bore witness, then, to Jesus' utter innocence by the very reasons he gave for Jesus' release.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.18.39"
+    },
+    {
+      "id": "hcf:origen:john.18.39:b667a8ef:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-120",
+      "title": "COMMENTARY ON MATTHEW 120 on john 18:39",
+      "excerpt": "Do not wonder that the Roman government, holding sway over the Jews who had recently become their subjects, thought it was appropriate to grant them something acceptable at the feast of the Passover. They allowed them to ask for anyone they wanted [to be freed] even though he might appear guilty of many murders. For in this way nations sometimes grant favors to those whom they have conquered, until their rule is established. Yet this custom of releasing a prisoner existed at one time among the Jews also. … Let us inquire whether anything like this may take place also in God's judgment where the whole church may ask for any sinner to be released from the condemnation of sin especially if, while having other evil works, he is eager to do good for the church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.18.39"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.18.39:d93e10c2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 18:39",
+      "excerpt": "2368 Accordingly he says, But you have a custom that I should release one man for you at the Passover. First, he offers to release Christ; secondly, the Evangelist gives the reply of the Jews.\r\n\r\n2369 This practice was started by Pilate or some other Roman governor as a favor to the people. Wishing to free Christ using this custom Pilate said, Will you have me release for you the King of the Jews? He did not call him this as if this were a crime, but to heighten their malice. It was like saying: Even if he is the king of the Jews, which is not your role to judge, but mine, still, if you want me to, I will release him for you.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.18.39"
     }
   ]
 }

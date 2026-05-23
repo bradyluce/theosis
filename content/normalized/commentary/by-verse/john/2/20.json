@@ -4,6 +4,31 @@
   "verseNumber": 20,
   "entries": [
     {
+      "id": "catena-john-0260-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.2.20",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 2:18–22",
+      "excerpt": "Or thus, if you take the four Greek words, anatole, the east; dysis, the west; arctos, the north; and mesembria, the south; the first letters of these words make Adam. And our Lord says that He will gather together His saints from the four winds, when He comes to judgment. Now these letters of the word Adam, make up, according to Greek figuring, the number of the years during which the temple was building. For in Adam we have alpha, one; delta, four; alpha again, one; and mi, forty; making up together forty-six. The temple then signifies the body derived from Adam; which body our Lord did not…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.2.20:c325eb57:2"
+      ]
+    },
+    {
       "id": "augustine-john-010-c2-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.20",
@@ -19,60 +44,6 @@
         "augustine",
         "patristic",
         "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0249-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.2.20",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 2:18–22",
-      "excerpt": "But were signs necessary for His putting a stop to evil practices? Was not the having such zeal for the house of God, the greatest sign of His virtue? They did not however remember the prophecy, but asked for a sign; at once irritated at the loss of their base gains, and wishing to prevent Him from going further. For this dilemma, they thought, would oblige Him either to work miracles, or give up His present course. But He refuses to give them the sign, as He did on a like occasion, when He answers, An evil and adulterous generation seeketh after a sign, and there shall no sign he given it,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0252-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.2.20",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 2:18–22",
-      "excerpt": "The Father also raised Him up again; to Whom He says, Raise Thou me up, and I shall reward them. (Ps. 41:10) But what did the Father do without the Word? As then the Father raised Him up, so did the Son also: even as He saith below, I and My Father are one. John 10:30.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0253-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.2.20",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 2:18–22",
-      "excerpt": "But why does He give them the sign of His resurrection? Because this was the greatest proof that He was not a mere man; shewing, as it did, that He could triumph over death, and in a moment overthrow its long tyranny.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
         "john"
       ]
     },
@@ -113,14 +84,32 @@
       ]
     },
     {
-      "id": "catena-john-0260-v20",
+      "id": "catena-john-0252-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.20",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 2:18–22",
-      "excerpt": "Or thus, if you take the four Greek words, anatole, the east; dysis, the west; arctos, the north; and mesembria, the south; the first letters of these words make Adam. And our Lord says that He will gather together His saints from the four winds, when He comes to judgment. Now these letters of the word Adam, make up, according to Greek figuring, the number of the years during which the temple was building. For in Adam we have alpha, one; delta, four; alpha again, one; and mi, forty; making up together forty-six. The temple then signifies the body derived from Adam; which body our Lord did not…",
+      "excerpt": "The Father also raised Him up again; to Whom He says, Raise Thou me up, and I shall reward them. (Ps. 41:10) But what did the Father do without the Word? As then the Father raised Him up, so did the Son also: even as He saith below, I and My Father are one. John 10:30.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0249-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.2.20",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 2:18–22",
+      "excerpt": "But were signs necessary for His putting a stop to evil practices? Was not the having such zeal for the house of God, the greatest sign of His virtue? They did not however remember the prophecy, but asked for a sign; at once irritated at the loss of their base gains, and wishing to prevent Him from going further. For this dilemma, they thought, would oblige Him either to work miracles, or give up His present course. But He refuses to give them the sign, as He did on a like occasion, when He answers, An evil and adulterous generation seeketh after a sign, and there shall no sign he given it,…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -149,6 +138,24 @@
       ]
     },
     {
+      "id": "catena-john-0253-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.2.20",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 2:18–22",
+      "excerpt": "But why does He give them the sign of His resurrection? Because this was the greatest proof that He was not a mere man; shewing, as it did, that He could triumph over death, and in a moment overthrow its long tyranny.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0250-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.20",
@@ -164,17 +171,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.2.20:ee5c908d:0"
       ]
     },
     {
-      "id": "catena-john-0248-v20",
+      "id": "catena-john-0261-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.20",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-john",
       "title": "On John 2:18–22",
-      "excerpt": "The Jews seeing Jesus thus acting with power, and having heard Him say, Make not My Father’s house an house of merchandize, ask of Him a sign; Then answered the Jews and said unto Him, What sign shewest Thou unto us, seeing that Thou doest these things?",
+      "excerpt": "From this Apollinarius draws an heretical inference: and attempts to shew that Christ’s flesh was inanimate, because the temple was inanimate. In this way you will prove the flesh of Christ to be wood and stone, because the temple is composed of these materials. Now if you refuse to allow what is said, Now is My soul troubled; (John 12:27) and, I have power to lay it (My life) down, (ib. 10:18) to be said of the rational soul, still how will you interpret, Into Thy hands, O Lord, I commend My spirit? (Luke 23:46) you cannot understand this of an irrational soul: or again, the passage, Thou…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -203,14 +217,14 @@
       ]
     },
     {
-      "id": "catena-john-0254-v20",
+      "id": "catena-john-0248-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.20",
       "topicSlugs": [],
-      "personId": "origen",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-john",
       "title": "On John 2:18–22",
-      "excerpt": "Both those, i. e. both the Body of Jesus and the temple, seem to me to be a type of the Church, which with lively stones is built up into a spiritual house, into an holy priesthood; according to St. Paul, Ye are the body of Christ, and members in particular. (1 Cor. 12:27) And though the structure of stones seem to be broken up, and all the bones of Christ scattered by adversities and tribulations, yet shall the temple be restored, and raised up again in three days, and stablished in the now heaven and the new earth. For as that sensible body of Christ was crucified and buried, and afterward…",
+      "excerpt": "The Jews seeing Jesus thus acting with power, and having heard Him say, Make not My Father’s house an house of merchandize, ask of Him a sign; Then answered the Jews and said unto Him, What sign shewest Thou unto us, seeing that Thou doest these things?",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -229,6 +243,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 2:18–22",
       "excerpt": "The Jews, supposing that He spoke of the material temple, scoffed: Then said the Jews, Forty and six years was this temple in building, and will Thou rear it up in three days?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.2.20:55c333f6:1"
+      ]
+    },
+    {
+      "id": "catena-john-0254-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.2.20",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 2:18–22",
+      "excerpt": "Both those, i. e. both the Body of Jesus and the temple, seem to me to be a type of the Church, which with lively stones is built up into a spiritual house, into an holy priesthood; according to St. Paul, Ye are the body of Christ, and members in particular. (1 Cor. 12:27) And though the structure of stones seem to be broken up, and all the bones of Christ scattered by adversities and tribulations, yet shall the temple be restored, and raised up again in three days, and stablished in the now heaven and the new earth. For as that sensible body of Christ was crucified and buried, and afterward…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -257,14 +296,14 @@
       ]
     },
     {
-      "id": "catena-john-0261-v20",
+      "id": "catena-john-0265-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.20",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "origen",
       "workId": "catena-aurea-john",
       "title": "On John 2:18–22",
-      "excerpt": "From this Apollinarius draws an heretical inference: and attempts to shew that Christ’s flesh was inanimate, because the temple was inanimate. In this way you will prove the flesh of Christ to be wood and stone, because the temple is composed of these materials. Now if you refuse to allow what is said, Now is My soul troubled; (John 12:27) and, I have power to lay it (My life) down, (ib. 10:18) to be said of the rational soul, still how will you interpret, Into Thy hands, O Lord, I commend My spirit? (Luke 23:46) you cannot understand this of an irrational soul: or again, the passage, Thou…",
+      "excerpt": "But (in the mystical interpretation) we shall attain to the full measure of faith, at the great resurrection of the whole body of Jesus, i. e. His Church; inasmuch as the faith which is from sight, is very different from that which seeth as through a glass darkly.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -293,17 +332,17 @@
       ]
     },
     {
-      "id": "catena-john-0265-v20",
+      "id": "catena-john-0264-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.20",
       "topicSlugs": [],
-      "personId": "origen",
+      "personId": "alcuin",
       "workId": "catena-aurea-john",
       "title": "On John 2:18–22",
-      "excerpt": "But (in the mystical interpretation) we shall attain to the full measure of faith, at the great resurrection of the whole body of Jesus, i. e. His Church; inasmuch as the faith which is from sight, is very different from that which seeth as through a glass darkly.",
+      "excerpt": "For before the resurrection they did not understand the Scriptures, because they had not yet received the Holy Ghost, Who was not yet given, because Jesus was not yet glorified. (John 7:39) But on the day of the resurrection our Lord appeared and opened their meaning to His disciples; that they might understand what was said of Him in the Law and the Prophets. And then they believed the prediction of the Prophets that Christ would rise the third day, and the word which Jesus had spoken to them: Destroy this temple, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -326,25 +365,133 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.2.20:81445ad2:0"
       ]
     },
     {
-      "id": "catena-john-0264-v20",
+      "id": "hcf:augustine:john.2.20:10122fef:1",
       "relation": "verse",
-      "targetVerseId": "kjva:john.2.20",
       "topicSlugs": [],
-      "personId": "alcuin",
-      "workId": "catena-aurea-john",
-      "title": "On John 2:18–22",
-      "excerpt": "For before the resurrection they did not understand the Scriptures, because they had not yet received the Holy Ghost, Who was not yet given, because Jesus was not yet glorified. (John 7:39) But on the day of the resurrection our Lord appeared and opened their meaning to His disciples; that they might understand what was said of Him in the Law and the Prophets. And then they believed the prediction of the Prophets that Christ would rise the third day, and the word which Jesus had spoken to them: Destroy this temple, &c.",
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-10",
+      "title": "Tractates on John 10 on john 2:20",
+      "excerpt": "Now, what does the number Forty-six mean? Meanwhile, how Adam extends over the whole globe, you have already heard explained yesterday, by the four Greek letters of four Greek words. For if thou write the four words, one under the other, that is, the names of the four quarters of the world, of east, west, north, and south, which is the whole globe,-whence the Lord says that He will gather His elect from the four winds when He shall come to judgment;-if, I say, you take these four Greek words, anatole, which is east; dysis, which is west; arctos, which is north; mesembria, which is south; Anatole, Dysis, Arctos, Mesembria,-the first letters of the words make Adam. How, then, do we find there, too, the number forty-six? Because Christ's flesh was of Adam. The Greeks compute numbers by letters. What we make the letter A, they in their tongue put Alpha, and Alpha is called one. And where in numbers they write Beta, which is their b, it is called in numbers two. Where they write Gamma, it is called in their numbers three. Where they write Delta, it is called in their numbers four; and so by means of all the letters they have numbers. The letter we call M, and they call My, signifies forty; for they say My, tessarakonta. Now look at the number which these letters make, and you will find in it that the temple was built in forty-six years. For the word Adam has Alpha, which is one: it has Delta, which is four; there are five for thee: it has Alpha, again, which is one; there are six for thee: it has also My, which is forty; there hast thou forty-six. These things, my brethren, were said by our elders before us, and that number forty-six was found by them in letters. And because our Lord Jesus Christ took of Adam a body, not of Adam derived sin; took of him a corporeal temple, not iniquity which must be driven from the temple: and that the Jews crucified that very flesh which He derived from Adam (for Mary was of Adam, and the Lord's flesh was of Mary); and that, further, He was in three days to raise that same flesh which they were about to slay on the cross: they destroyed the temple which was forty-six years in building, and that temple He raised up in three days.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.2.20"
+    },
+    {
+      "id": "hcf:augustine:john.2.20:888464ad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-10",
+      "title": "Tractates on John 10 on john 2:20",
+      "excerpt": "But perhaps this is demanded of us, whether the fact that the temple was forty and six years in building may not have in it some mystery. There are, indeed, many things that may be said of this matter; but what may briefly be said, and easily understood, that we say meanwhile. Brethren, we have said yesterday, if I mistake not, that Adam was one man, and is yet the whole human race. For thus we said, if you remember. He was broken, as it were, in pieces; and, being scattered, is now being gathered together, and, as it were, conjoined into one by a spiritual fellowship and concord. And \"the poor that groan,\" as one man, is that same Adam, but in Christ he is being renewed: because an Adam is come without sin, to destroy the sin of Adam in His own flesh, and that Adam might renew to himself the image of God. Of Adam then is Christ's flesh: of Adam the temple which the Jews destroyed, and the Lord raised up in three days.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.2.20"
+    },
+    {
+      "id": "hcf:augustine:john.2.20:398886ba:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-10",
+      "title": "Tractates on John 10 on john 2:20",
+      "excerpt": "\"The Jews said unto Him, What sign showest thou unto us, seeing that thou doest these things?\" And the Lord answered, \"Destroy this temple, and in three days I will raise it up. Then said the Jews, Forty and six years was this temple in building, and dost thou say, In three days I will rear it up?\" Flesh they were, fleshly things they minded; but He was speaking spiritually. But who could understand of what temple He spoke? But yet we have not far to seek; He has discovered it to us through the evangelist, he has told us of what temple He said it. \"But He spake,\" saith the evangelist, \"of the temple of His body.\" And it is manifest that, being slain, the Lord did rise again after three days. This is known to us all now: and if from the Jews it is concealed, it is because they stand without; yet to us it is open, because we know in whom we believe.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.2.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.2.20:90cbc7d4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 2:20",
+      "excerpt": "The Jews, thinking that He was speaking of the lifeless temple, laugh at Him. \"How,\" they say, \"do You say that You will raise it up in three days, when it took forty-six years to build?\" One must know that when the temple was first built under Solomon, everything was completed without difficulty in twenty years. But afterwards, when the Jews after the captivity received permission to build the temple, they began to rebuild it in the reign of Cyrus; then, having met with hindrance from envious persons, they continued the construction until the reign of Artaxerxes; and under him, enjoying complete security, they were barely able to finish this work.\r\nWhen it is said that the Jews during the construction held a spear in one hand and a building tool in the other, they were in such great fear from the neighboring Idumeans, and not from the Persians, for from them, that is from the Persians, as I said, they enjoyed complete safety. Concerning this construction, which took place after the captivity, they say that it lasted forty-six years, since the Jews were being hindered, and therefore they extended it from the reign of Cyrus to Artaxerxes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.2.20"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.2.20:99804f59:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-23",
+      "title": "Homily on the Gospel of John 23 on john 2:20",
+      "excerpt": "But at the time when this was spoken, the Jews were perplexed as to what it might mean, and cast about to discover, saying,\r\n\r\n\"Forty and six years was this Temple in building, and wilt thou rear it up in three days?\"\r\n\r\n\"Forty and six years,\" they said, referring to the latter building, for the former was finished in twenty years' time.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.2.20"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.2.20:2a100a4e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 2:20",
+      "excerpt": "They mock at the sign, not understanding the depth of the Mystery, but seize on the disease of their own ignorance, as a reasonable excuse for not obeying Him, and considering the difficulty of the thing, they gave heed rather as to one speaking at random, than to one who was promising ought possible to be fulfilled, that that may be shown to be true that was written of them, Let their eyes be darkened, that they see not, and ever bow Thou down their backs: in order that in a manner ever stooping downwards and inclining to the things alone of the earth, they may receive no sight of the lofty doctrines of piety towards Christ, not as though God Who is loving to man grudged them those things, but rather with even justice was punishing them that committed intolerable transgressions.\r\n\r\nFor see how foolishly they insult Him, not sparing their own souls. For our Lord Jesus Christ calls God His Father, saying, Make not My Father's House an House of merchandise. Therefore when they ought now to deem of Him as Son and God, as shining forth from God the Father, they believe Him to be yet bare man and one of us. Therefore they object the time that has been spent in the building of the Temple, saying, Forty and six years was this Temple in building, and wilt Thou rear it up in three days? O drunken with all folly, rightly, I deem, one might say to you, if a wise soul had been implanted in you, if ye believe that your Temple is the House of God, how ought ye not to have held Him to be God by Nature, Who dares fearlessly tell you, Make not My Father's House an House of merchandise? How then, tell me, should He have need of a long time for the building of one house? or how should He be powerless for anything whatever, who in days only seven in number, fashioned this whole universe with ineffable Power, and has His Power in only willing? For these things the people skilled in the sacred writings ought to have considered.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.2.20"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.2.20:0eecaaaf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 2:20",
+      "excerpt": "Then when he says, The Jews then retorted, we have the interpretation of the sign he gave. First, the false interpretation of the Jews. Secondly, its true understanding by the apostles (v 21).\r\n\r\nThe interpretation of the Jews was false, because they believed that Christ was saying this of the material temple in which he then was; consequently, they answer according to this interpretation and say: This temple took forty-six years to build, i.e., this material temple in which we are standing, and you are going to raise it up again in three days!\r\n\r\nThere is a literal objection against this. For the temple in Jerusalem was built by Solomon, and it is recorded in 2 Chronicles (6:1) that it was completed by Solomon in seven years. How then can it be said that this temple took forty-six years to build? I answer that according to some this is not to be understood of the very first temple, which was completed by Solomon in seven years: for that temple built by Solomon was destroyed by Nebuchadnezzar. But it is to be understood of the temple rebuilt under Zerubbabel, after they returned from captivity, as recorded in the book of Ezra (5:2). However, this rebuilding was so hindered and delayed by the frequent attacks of their enemies on all sides, that the temple was not finished until forty-six years had passed.\r\n\r\nOr it could be said, according to Origen, that they were speaking of Solomon's temple: and it did take forty-six years to build if the time be reckoned from the day when David first spoke of building a temple and discussed it with Nathan the prophet, as we find in 2 Samuel (7:2), until its final completion under Solomon. For from that first day onward David began preparing the material and the things necessary for building the temple. Accordingly, if the time in question is carefully calculated, it will come to forty-six years.\r\n\r\nBut although the Jews referred their interpretation to the material temple, nevertheless, according to Augustine, it can be referred to the temple of Christ's body. As he says in The Book of Eighty-three Questions, the conception and formation of the human body is completed in forty-five days in the following manner. During the first six days, the conception of a human body has a likeness to milk; during the next nine days it is converted into blood; then in the next twelve days, it is hardened into flesh; then the remaining eighteen days, it is formed into a perfect outlining of all the members. But if we add six, nine, twelve and eighteen, we get forty-five; and if we add \"one\" for the sacrament of unity, we get forty-six.\r\n\r\nHowever a question arises about this: because this process of formation does not seem to have taken place in Christ, who was formed and animated at the very instant of conception. But one may answer that although in the formation of Christ's body there was something unique, in that Christ's body was perfect at that instant as to the outlining of its members, it was not perfect as to the quantity due the body; and so he remained in the Virgin's womb until he attained the due quantity.\r\n\r\nHowever, let us take the above numbers and select six, which was the first, and forty-six, which was the last, and let us multiply one by the other. The result is two hundred seventy-six. Now if we assemble these days into months, allotting thirty days to a month, we get nine months and six days. Thus it was correct to say that it took forty-six years to build the temple, which signifies the body of Christ; the suggestion being that there were as many years in building the temple as there were days in perfecting the body of Christ. For from March twenty-five, which Christ was conceived, and (as is believed) when he suffered, to December twenty-five, there are this number of days, namely, two hundred seventy-six, a number that is the result of multiplying forty-six by six.\r\n\r\nAugustine has another mystical interpretation of this number. For he says that if one adds the letters in the name \"Adam,\" using for each the number it represented for the Greeks, the result is forty-six. For in Greek, A represents the number one, since it is the first letter of the alphabet. And according to this order, D is four. Adding to the sum of these another one for the second A and forty for the letter M, we have forty-six. This signifies that the body of Christ was derived from the body of Adam.\r\n\r\nAgain, according to the Greeks, the name \"Adam\" is composed of the first letters of the names of the four directions of the world: namely, Anathole, which is the east; Disis, which is the west; Arctos, which is the north; and Mensembria, the south. This signifies that Christ derived his flesh from Adam in order to gather his elect from the four parts of the world: \"He will gather his elect from the four winds\" (Mt 24:31).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.2.20"
     }
   ]
 }

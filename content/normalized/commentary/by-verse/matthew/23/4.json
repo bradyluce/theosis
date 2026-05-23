@@ -4,14 +4,14 @@
   "verseNumber": 4,
   "entries": [
     {
-      "id": "catena-matt-3268-v4",
+      "id": "catena-matt-3271-v4",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.4",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 23:1–4",
-      "excerpt": "But that none should say, For this cause am I slack to practise, because my instructor is evil, He removes every such plea, saying, “All therefore whatsoever they say unto you, that observe and do,” for they speak not their own, but God’s, which things He taught through Moses in the Law. And look with how great honour He speaks of Moses, shewing again what harmony there is with the Old Testament.",
+      "excerpt": "Look with what He begins His reproof of them, “For they say, and do not.” Every one who transgresses the Law is deserving of blame, but especially he who has the post of instruction. And this for a threefold cause; first, because he is a transgressor; secondly, because when he ought to set others right, be himself halts; thirdly, because, being in the rank of a teacher, his influence is more corrupting. Again, He brings a further charge against them, that they oppress those that are put under them; “They bind heavy burdens;” in this He shews a double evil in them; that they exacted without…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-matt-3271-v4",
+      "id": "catena-matt-3268-v4",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.4",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 23:1–4",
-      "excerpt": "Look with what He begins His reproof of them, “For they say, and do not.” Every one who transgresses the Law is deserving of blame, but especially he who has the post of instruction. And this for a threefold cause; first, because he is a transgressor; secondly, because when he ought to set others right, be himself halts; thirdly, because, being in the rank of a teacher, his influence is more corrupting. Again, He brings a further charge against them, that they oppress those that are put under them; “They bind heavy burdens;” in this He shews a double evil in them; that they exacted without…",
+      "excerpt": "But that none should say, For this cause am I slack to practise, because my instructor is evil, He removes every such plea, saying, “All therefore whatsoever they say unto you, that observe and do,” for they speak not their own, but God’s, which things He taught through Moses in the Law. And look with how great honour He speaks of Moses, shewing again what harmony there is with the Old Testament.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.23.4:59ba1be7:1"
       ]
     },
     {
@@ -87,6 +94,169 @@
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "hcf:origen:matthew.23.4:1c6ad131:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-9",
+      "title": "COMMENTARY ON MATTHEW 9 on matthew 23:4",
+      "excerpt": "Just as the scribes and Pharisees wickedly sat upon the throne of Moses, so do some in the church who sit upon the ecclesiastical throne. There are some in the church who have the right understanding of the law and pass it on correctly. They say what each person needs to do, but they themselves do not do it. Some of them lay heavy burdens upon the shoulders of men, but they won't even lift a finger to help. These are the ones the Savior is talking about when he says, \"Whoever then relaxes one of the least of these commandments and teaches men so, shall be called least in the kingdom of God.\" There are others, however, who sit on the throne, who act before they speak and speak wisely, restraining those who are disordered. They place merciful burdens on the shoulders of others. They themselves are the first to lift the heavy burden, for the exhortation of other listeners. It is these of whom the Lord speaks when he says, \"He who does so and teaches others to do so, this man will be called great in the kingdom of heaven.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.23.4"
+    },
+    {
+      "id": "hcf:origen:matthew.23.4:db8be68e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-9",
+      "title": "COMMENTARY ON MATTHEW 9 on matthew 23:4",
+      "excerpt": "Therefore up until now the scribes and Pharisees among the Jews have been sitting on the throne of Moses. I am not saying this because only scribes and Pharisees will sit on the seat of Moses. They speak but do not do anything, laying heavy and unsupportable burdens on the shoulders of men.Yet they are not even willing to lift a finger to lighten those burdens. For I judge that those who rightly understand and explain Moses according to his spiritual power are the ones who will indeed sit on the throne of Moses. But these are not the scribes and Pharisees. They are much better. They are the beloved disciples of Christ who interpret his word through the grace of God. They are able to sort out different meanings in different words. Indeed, therefore, before the coming of Christ they sat well on the throne of Moses who interpreted the sayings of Moses well and according to reason. However, after the coming of Christ, they sit on the throne of the church, which is the seat and throne of Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.23.4"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.23.4:4c19d229:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-72",
+      "title": "Homily on the Gospel of Matthew 72 on matthew 23:4",
+      "excerpt": "And together with these He mentions also another charge against them, that they are harsh to those accountable to them.\r\n\r\n\"For they bind heavy burdens, and grievous to be borne, and lay them on men's shoulders, but they will not move them with their finger.\" He mentions here a twofold wickedness, their requiring great and extreme strictness of life, without any indulgence, from those over whom they rule, and their allowing to themselves great security; the opposite to which the truly good ruler ought to hold; in what concerns himself, to be an unpardoning and severe judge, but in the matters of those whom he rules, to be gentle and ready to make allowances; the contrary to which was the conduct of these men.\r\n\r\nFor such are all they who practise self restraint in mere words, unpardoning and grievous to bear as having no experience of the difficulty in actions. And this itself too is no small fault, and in no ordinary way increases the former charge.\r\n\r\nBut do thou mark, I pray thee, how He aggravates this accusation also. For He did not say, \"they cannot,\" but, \"they will not.\" And He did not say, \"to bear,\" but, \"to move with a finger,\" that is, not even to come near them, nor to touch them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.23.4"
+    },
+    {
+      "id": "hcf:jerome:matthew.23.4:e2b3781e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:4",
+      "excerpt": "(Verse 4.) However, they bind heavy and burdensome loads and lay them on people's shoulders; but they themselves are unwilling to move them with their finger. This applies generally to all teachers who command heavy things but do not do smaller things. However, it should be noted that both the shoulders, the finger, the burdens, and the chains with which the burdens are bound should be understood spiritually.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.4"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.4:4bd52735:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:4",
+      "excerpt": "The Pharisees laid heavy burdens on men, forcing them to fulfill the commandments of the law which were detailed and difficult to observe. Indeed, they weighed them down with more than the commandments of the law by handing down certain traditions that went beyond the law; these traditions they did not move with even one of their fingers, that is, they themselves did not practice them, nor even dare to undertake such burdens. For whenever a teacher not only teaches but practices what he teaches, then he is seen to carry the burden and to labor along with those who are taught. But when he gives me a load to carry, but himself practices nothing, then indeed he weighs me down, showing by what he himself neglects to do that it is impossible to accomplish what he says. The Lord, therefore, is accusing the Pharisees of themselves not wanting to carry the weight of the commandments and to practice them. Not only do they not do anything good, but they pretend that they do good. Even if they had done something good, because they did it for the sake of appearance, any gain they might have derived from it would have fallen through their fingers. So indeed they are worthy of condemnation now, since they do not do good and yet they wish men to think that they do. What things do they practice? \"They make broad their phylacteries and enlarge the borders of their garments.\" What this means is this: in the law it is said, \"Thou shalt bind [the words of the law] to thy hand and they shall be immovable before thine eyes\" (Deut. 6:8). So the Pharisees would inscribe on two pieces of leather the ten commandments of the law, and they would attach one to their forehead and suspend the other from their right hand. They would make borders on the ends of their garments, consisting of blood-red threads like a fringe. For this, too, they found a text in the law (Num. 15:38-40), so that when they saw these things they would not forget the commandments of God. But God did not desire this; rather, to have the phylactery upon the hand meant that one must labor in the commandments, and the blood-red fringe showed that we must be signed with the blood of Christ. But the Pharisees made large phylacteries and fringes, so that those who saw them would think that they were keepers of the law.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.4"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.4:e8e607e8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:4",
+      "excerpt": "For they bind heavy and insupportable burdens, etc. For the Lord wishes to exaggerate their malice, because they say, and do not. If they simply said and did not do, this would still be tolerable; but this does not suffice them, because they add most grievous burdens to the precepts of God. And therefore their presumption is noted, because they bind other burdens upon the burdens imposed by God, because they make new observances, as it says in Mark 7:2, that they forbade eating bread unless the hands were frequently washed; against that passage in Isaiah 58:6: loose the bands of wickedness, undo the bundles that oppress. Likewise, their cruelty is noted, for they impose burdens, against that passage in 1 John 5:3: for the commandments of God are not heavy. For my yoke is sweet and my burden light, above at 11:30. Likewise, their indiscretion is noted, because if they imposed a heavy burden on a strong person, it would not be a great thing; but they impose insupportable burdens on the weak: for that cannot be carried which exceeds the strength of the one carrying it. In Acts 15:10: this is a burden which neither we nor our fathers have been able to bear. Likewise, their excessive severity is noted, because if they imposed a burden and gave indulgence, this would still be sufficient; but with a certain violence they command. They lay them on men's shoulders; hence they exceed in speaking. Likewise, they exceed in not doing, because there are some men who do not wish to accomplish everything, yet they wish to accomplish something. Likewise, there are some who, even if they do not wish to do something difficult, yet wish to do something light. Likewise, there are some who, even though they do not act, yet have the will to act. But he who wishes none of these things exceeds in malice; hence he says, but with a finger of their own they will not move them; hence they not only did not do them, but were unwilling even to move them with their finger, i.e., not even to begin them. Nor even to do light things, which are signified by a finger. Therefore you ought to do what they teach, but they are not to be followed as regards their works, because they do not even the least thing. Chrysostom says: such are those who speak great things and do small things; such are like tax collectors, who make others pay more than the taxes demand, but they themselves pay nothing. Let me not see you teaching great things but doing small things. Hence the Lord will spare you more if you incline to mercy than to severity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.4"
+    },
+    {
+      "id": "catena-matt-3272-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.4",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:1–4",
+      "excerpt": "And to the Scribes and Pharisees of whom He is now speaking, heavy burdens not to be borne are the commandments of the Law; as St. Peter speaks in the Acts, “Why seek ye to put a yoke upon the neck of the disciples, which neither we nor our fathers were able to bear? Acts 15:10 For commending the burdens of the Law by fabulous proofs, they bound as it were the shoulders of the heart of their hearers with bands, that thus tied as though with proof of reason to them, they might not fling770 them off; but themselves did not in the least measure fulfil them, that is, not only did not wholly, but…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.23.4:a1dc3c00:0"
+      ]
+    },
+    {
+      "id": "catena-matt-3275-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.4",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:1–4",
+      "excerpt": "Such also are they who lay a heavy burden upon those who come to penitence, so that while men would avoid present punishment, they overlook that which is to come. For if you lay upon a boy’s shoulders a burden more than be can bear, be must needs either cast it off, or be broken down by it; so the man on whom you lay too grievous a burden of penance must either wholly refuse it, or if be submit himself to it will find himself unable to bear it, and so be offended, and sin worse. Also, if we should be wrong in imposing too light a penance, is it not better to have to answer for mercy than for…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3270-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.4",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:1–4",
+      "excerpt": "But as gold is picked out of the dross, and the dross is left, so hearers may take doctrine and leave practice, for good doctrine oft comes from an evil man. But as Priests judge it better to teach the bad for the sake of the good, rather than to neglect the good for the sake of the bad; so also let those who are set under them pay respect to the bad Priests for the sake of the good, that the good may not be despised because of the bad; for it is better to give the bad what is not their due, rather than to defraud the good of what is justly theirs.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -130,42 +300,6 @@
       ]
     },
     {
-      "id": "catena-matt-3270-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.4",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:1–4",
-      "excerpt": "But as gold is picked out of the dross, and the dross is left, so hearers may take doctrine and leave practice, for good doctrine oft comes from an evil man. But as Priests judge it better to teach the bad for the sake of the good, rather than to neglect the good for the sake of the bad; so also let those who are set under them pay respect to the bad Priests for the sake of the good, that the good may not be despised because of the bad; for it is better to give the bad what is not their due, rather than to defraud the good of what is justly theirs.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3272-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.4",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:1–4",
-      "excerpt": "And to the Scribes and Pharisees of whom He is now speaking, heavy burdens not to be borne are the commandments of the Law; as St. Peter speaks in the Acts, “Why seek ye to put a yoke upon the neck of the disciples, which neither we nor our fathers were able to bear? Acts 15:10 For commending the burdens of the Law by fabulous proofs, they bound as it were the shoulders of the heart of their hearers with bands, that thus tied as though with proof of reason to them, they might not fling770 them off; but themselves did not in the least measure fulfil them, that is, not only did not wholly, but…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-3273-v4",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.4",
@@ -181,24 +315,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3275-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.4",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:1–4",
-      "excerpt": "Such also are they who lay a heavy burden upon those who come to penitence, so that while men would avoid present punishment, they overlook that which is to come. For if you lay upon a boy’s shoulders a burden more than be can bear, be must needs either cast it off, or be broken down by it; so the man on whom you lay too grievous a burden of penance must either wholly refuse it, or if be submit himself to it will find himself unable to bear it, and so be offended, and sin worse. Also, if we should be wrong in imposing too light a penance, is it not better to have to answer for mercy than for…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.23.4:f5103298:0"
       ]
     }
   ]

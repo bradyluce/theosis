@@ -4,24 +4,6 @@
   "verseNumber": 7,
   "entries": [
     {
-      "id": "catena-mark-0651-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.7",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:1–8",
-      "excerpt": "Luke in saying, After eight days, does not contradict this; for he reckoned in both the day on which Christ had spoken what goes before, and the day on which he took them up. And the reason that he took them up after six days, was that they might be filled with a more eager desire during the space of these days, and with a watchful and anxious mind attend to what they saw.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0658-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
@@ -58,6 +40,24 @@
       ]
     },
     {
+      "id": "catena-mark-0651-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.7",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:1–8",
+      "excerpt": "Luke in saying, After eight days, does not contradict this; for he reckoned in both the day on which Christ had spoken what goes before, and the day on which he took them up. And the reason that he took them up after six days, was that they might be filled with a more eager desire during the space of these days, and with a watchful and anxious mind attend to what they saw.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0664-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
@@ -73,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.9.7:d48d6b25:0"
       ]
     },
     {
@@ -112,24 +119,6 @@
       ]
     },
     {
-      "id": "catena-mark-0656-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.7",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:1–8",
-      "excerpt": "Our Saviour then when transfigured did not lose the substance of real flesh, but shewed forth the glory of His own or of our future resurrection; for such as He then appeared to the Apostles, He will after the judgment appear to all His elect. It goes on, And his raiment became shining.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0659-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
@@ -148,6 +137,31 @@
       ]
     },
     {
+      "id": "catena-mark-0673-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.7",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:1–8",
+      "excerpt": "And we must observe, that, as when the Lord was baptized in Jordan, so on the mountain, covered with brightness, the whole mystery of the Holy Trinity is declared, because we shall see in the resurrection that glory of the Trinity which we believers confess in baptism, and shall praise it all together. Nor is it without reason that the Holy Ghost appeared here in a bright cloud, there in the form of a dove; because he who now with a simple heart keeps the faith which he hath embraced, shall then contemplate what he had believed with the brightness of open vision. But when the voice had been…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.9.7:03250930:3"
+      ]
+    },
+    {
       "id": "catena-mark-0663-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.9.7:537745b2:2"
       ]
     },
     {
@@ -220,17 +241,60 @@
       ]
     },
     {
-      "id": "catena-mark-0673-v7",
+      "id": "catena-mark-0656-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:1–8",
-      "excerpt": "And we must observe, that, as when the Lord was baptized in Jordan, so on the mountain, covered with brightness, the whole mystery of the Holy Trinity is declared, because we shall see in the resurrection that glory of the Trinity which we believers confess in baptism, and shall praise it all together. Nor is it without reason that the Holy Ghost appeared here in a bright cloud, there in the form of a dove; because he who now with a simple heart keeps the faith which he hath embraced, shall then contemplate what he had believed with the brightness of open vision. But when the voice had been…",
+      "excerpt": "Our Saviour then when transfigured did not lose the substance of real flesh, but shewed forth the glory of His own or of our future resurrection; for such as He then appeared to the Apostles, He will after the judgment appear to all His elect. It goes on, And his raiment became shining.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0672-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.7",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:1–8",
+      "excerpt": "Or else it means, that we are to see in glory both the Law and the Prophets speaking with Him, that is, we shall then find that all those things which were spoken of Him by Moses and the other prophets agree with the reality; then too we shall hear the voice of the Father, revealing to us the Son of the Father, and saying, This is my beloved Son, and the cloud, that is, the Holy Ghost, the fount of truth, will overshadow us.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.9.7:d4e68685:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0661-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.7",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:1–8",
+      "excerpt": "Or else, Peter, fearing to come down from the mount because he had now a presentiment that Christ must be crucified, said, It is good for us to be here, and not to go down there, that is, in the midst of the Jews; but if they who are furious against Thee come hither, we have Moses who beat down the Egyptians, we have also Elias, who brought fire down from heaven and destroyed the five hundred.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -274,14 +338,14 @@
       ]
     },
     {
-      "id": "catena-mark-0661-v7",
+      "id": "catena-mark-0666-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:1–8",
-      "excerpt": "Or else, Peter, fearing to come down from the mount because he had now a presentiment that Christ must be crucified, said, It is good for us to be here, and not to go down there, that is, in the midst of the Jews; but if they who are furious against Thee come hither, we have Moses who beat down the Egyptians, we have also Elias, who brought fire down from heaven and destroyed the five hundred.",
+      "excerpt": "Again mystically; after the end of this world, which was made in six days, Jesus will take us up (if we be His disciples) into an high mountain, that is, into heaven, where we shall see His exceeding glory.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -310,24 +374,6 @@
       ]
     },
     {
-      "id": "catena-mark-0666-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.7",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:1–8",
-      "excerpt": "Again mystically; after the end of this world, which was made in six days, Jesus will take us up (if we be His disciples) into an high mountain, that is, into heaven, where we shall see His exceeding glory.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0670-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
@@ -336,24 +382,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:1–8",
       "excerpt": "Or else, fullers upon earth may by a moral interpretation be considered to be the wise of this world, who are thought to adorn even their foul understandings and doctrines with a false whitening drawn from their own minds. But their skill as fullers cannot produce any thing like a discourse which shews forth the brightness of spiritual conceptions in the unpolished words of Scripture, which by many are despised.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0672-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.7",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:1–8",
-      "excerpt": "Or else it means, that we are to see in glory both the Law and the Prophets speaking with Him, that is, we shall then find that all those things which were spoken of Him by Moses and the other prophets agree with the reality; then too we shall hear the voice of the Father, revealing to us the Son of the Father, and saying, This is my beloved Son, and the cloud, that is, the Holy Ghost, the fount of truth, will overshadow us.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -382,6 +410,125 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.9.7:fb9fa7fe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 9:7",
+      "excerpt": "But let us turn our mind also to the mystical contemplation. At the end of this world, which was created in six days, Jesus will lead us, if we are His true disciples, \"up a high mountain,\" that is, to heaven, and will show Himself to us in a most radiant form. Now He appears to us in an inglorious form, as the Crucified One and the Son of a carpenter, but then we shall see His glory as the Only-Begotten; we shall also see the Law and the prophets conversing with Him, that is, what was spoken about Him by Moses and the prophets — then we shall understand and find the perfect fulfillment of their utterances. Then we shall also hear the Father's voice, for the Father will reveal the Son to us and proclaim: \"This is My Son.\" And how will He proclaim this to us? Under the overshadowing of the cloud, that is, of the Holy Spirit, for He is the fountain of life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.9.7"
+    },
+    {
+      "id": "hcf:bede:mark.9.7:49baee1b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 9:7",
+      "excerpt": "And a voice came out of the cloud, saying, \"This is my beloved Son; listen to him.\" Because they had asked foolishly, they were not worthy to receive a response from the Lord; but the Father answers on behalf of the Son, so that the word of the Lord might be fulfilled. \"I do not speak for myself, but the Father who sent me speaks for me\" (John V). The voice of the Father speaking from heaven is also heard, bearing witness concerning the Son, and teaching Peter, with error removed, the truth: indeed, through Peter, teaching the other apostles. \"This,\" he says, \"is my beloved Son; it is to him that a tent must be built, it is he who must be obeyed. This is the Son; they, Moses and Elijah, are servants. They also must prepare a tent for the Lord within the innermost parts of their hearts, along with you.\" Indeed, this place in the Gospel agrees with the words of Moses himself, with which bearing witness to the Lord's incarnation he said: \"The Lord your God will raise up for you a prophet from your brethren; you shall listen to him just as you listen to me, according to all that he tells you. But it shall come to pass: Every soul that does not listen to that prophet will be cut off from the people\" (Deut. XVIII). Therefore, whom Moses foretold would come in the flesh and should be listened to by every soul that wishes to be saved, God the Father now shows to the disciples as having already come in the flesh and marked him as his Son with a heavenly voice. And as if more clearly expounding the faith concerning his arrival to them, he says: \"This man, this is he whom this Moses promised to you would be born in the world many times. Listen to his words according to the commandment of Moses, and command all true lovers to listen.\" And it should be noted that just as when the Lord was baptized in the Jordan, so also on the mountain where he was glorified, the mystery of the whole Holy Trinity is declared. Because indeed the glory of him which believers confess in baptism, we will behold and praise in the resurrection. And it is not in vain that the Holy Spirit appears here in a bright cloud, as another evangelist mentions, whereas there he appeared as a dove, because those who now keep with a simple heart the faith they have received, will then with clear light behold what they have believed, and they will be perpetually protected by that very grace with which they have been illuminated.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.9.7"
+    },
+    {
+      "id": "hcf:bede:mark.9.7:576bcff8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 9:7",
+      "excerpt": "And a cloud overshadowed them. He who sought a material tabernacle received the overshadowing of a cloud, that he might learn that in the resurrection the saints are to be protected not by the covering of dwellings, but by the glory of the Holy Spirit. From which the Psalmist says: But the children of men will trust in the shelter of your wings (Psalm 35). And in his Apocalypse, John says: And I saw no temple in it (Rev. 21), for the Lord God Almighty and the Lamb are its temple.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.9.7"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:mark.9.7:df8291b6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:on-the-holy-spirit-2-6",
+      "title": "On the Holy Spirit 2.6 on mark 9:7",
+      "excerpt": "In his baptism he identified him, saying: \"You are my beloved Son, in whom I am well pleased.\" He declared him on the mount, saying: \"This is my beloved Son, hear him.\" He declared him in his passion, when the sun hid itself, and sea and earth trembled. He declared him in the centurion, who said: \"Truly this was the Son of God.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:mark.9.7"
+    },
+    {
+      "id": "hcf:augustine:mark.9.7:26c3a12c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermons-on-new-testament-lessons-28",
+      "title": "SERMONS ON NEW TESTAMENT LESSONS 28 on mark 9:7",
+      "excerpt": "Moses was there, and Elijah. The voice did not say: These are my beloved sons. For One only is the Son; others are adopted. It is he that is commended to them: He from whom the law and prophets derive their glory.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.9.7"
+    },
+    {
+      "id": "hcf:jerome:mark.9.7:8083efe6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:homily-80",
+      "title": "HOMILY 80 on mark 9:7",
+      "excerpt": "Do not set up tents equally for the Lord and his servants. \"This is my beloved Son; hear him,\" my Son, not Moses or Elijah. They are servants; this is the Son. This is my Son, of my nature, of my substance, abiding in me, and he is all that I am. This is my beloved Son. They, too, indeed are dear to me, but he is my beloved; hear him, therefore. They proclaim and teach him, but you, hear him. He is the Lord and master, they are companions in service. Moses and Elijah speak of Christ; they are your fellow servants. He is the Lord; hear him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-80",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:mark.9.7"
+    },
+    {
+      "id": "hcf:jerome:mark.9.7:8b49d739:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:homily-80",
+      "title": "HOMILY 80 on mark 9:7",
+      "excerpt": "It seems to me that this cloud is the grace of the Holy Spirit. Naturally, a tent gives shelter and overshadows those who are within; the cloud, therefore, serves the purpose of the tents. O Peter, you who want to set up three tents, have regard for the one tent of the Holy Spirit who shelters us equally.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-80",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:mark.9.7"
+    },
+    {
       "id": "catena-mark-0650-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
@@ -400,14 +547,14 @@
       ]
     },
     {
-      "id": "catena-mark-0653-v7",
+      "id": "catena-mark-0655-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:1–8",
-      "excerpt": "He does not however shew His glory in a house, but He takes them up into a high mountain, for the loftiness of the mountain was adapted to shewing forth the loftiness of His glory.",
+      "excerpt": "It is not therefore fitting that in the kingdom of God any change of feature should take place, either in the Saviour Himself, or in those who are to be made like unto him, but only an addition of brightness.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -418,14 +565,14 @@
       ]
     },
     {
-      "id": "catena-mark-0655-v7",
+      "id": "catena-mark-0653-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.7",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:1–8",
-      "excerpt": "It is not therefore fitting that in the kingdom of God any change of feature should take place, either in the Saviour Himself, or in those who are to be made like unto him, but only an addition of brightness.",
+      "excerpt": "He does not however shew His glory in a house, but He takes them up into a high mountain, for the loftiness of the mountain was adapted to shewing forth the loftiness of His glory.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

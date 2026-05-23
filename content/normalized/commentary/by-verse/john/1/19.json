@@ -39,24 +39,13 @@
         "patristic",
         "tractate",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-0173-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.1.19",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 1:19–23",
-      "excerpt": "Such confidence had they in John, that they were ready to believe him on his own words: witness how it is said, To ask him, Who art thou?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.1.19:a2123aec:0"
       ]
     },
     {
@@ -96,6 +85,24 @@
       ]
     },
     {
+      "id": "catena-john-0173-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.1.19",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 1:19–23",
+      "excerpt": "Such confidence had they in John, that they were ready to believe him on his own words: witness how it is said, To ask him, Who art thou?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0176-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.1.19",
@@ -111,6 +118,49 @@
         "catena-aurea",
         "patristic",
         "john"
+      ]
+    },
+    {
+      "id": "catena-john-0175-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.1.19",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 1:19–23",
+      "excerpt": "John, as it appears, saw from the question, that the Priests and Levites had doubts whether it might not be the Christ, who was baptizing; which doubts however they were afraid to profess openly, for fear of incurring the charge of credulity. He wisely determines therefore first to correct their mistake, and then to proclaim the truth. Accordingly, he first of all shews that he is not the Christ: And he confessed, and denied not; but confessed, I am not the Christ. We may add here, that at this time the people had already begun to be impressed with the idea that Christ’s advent was at hand,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0172-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.1.19",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 1:19–23",
+      "excerpt": "The Jews of Jerusalem, as being of kin to the Baptist, who was of the priestly stock, send Priests and Levites to ask him who he is; (c. 6). that is, men considered to hold a superior rank to the rest of their order, by God’s election, and coming from that favoured above all cities, Jerusalem. Such is the reverential way in which they interrogate John. We read of no such proceeding towards Christ: but what the Jews did to John, John in turn does to Christ, when he asks Him, through His disciples, Art thou He that should come, (Luke 7:20) or look we for another?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:john.1.19:4fc1fbf5:1"
       ]
     },
     {
@@ -147,43 +197,167 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.1.19:7c3cc3fe:0"
       ]
     },
     {
-      "id": "catena-john-0172-v19",
+      "id": "hcf:origen:john.1.19:c262a31c:0",
       "relation": "verse",
-      "targetVerseId": "kjva:john.1.19",
       "topicSlugs": [],
       "personId": "origen",
-      "workId": "catena-aurea-john",
-      "title": "On John 1:19–23",
-      "excerpt": "The Jews of Jerusalem, as being of kin to the Baptist, who was of the priestly stock, send Priests and Levites to ask him who he is; (c. 6). that is, men considered to hold a superior rank to the rest of their order, by God’s election, and coming from that favoured above all cities, Jerusalem. Such is the reverential way in which they interrogate John. We read of no such proceeding towards Christ: but what the Jews did to John, John in turn does to Christ, when he asks Him, through His disciples, Art thou He that should come, (Luke 7:20) or look we for another?",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-6-43-50-51-54",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 6.43, 50-51, 54 on john 1:19",
+      "excerpt": "Now, therefore, let us consider John's second testimony. Jews from Jerusalem send priests and Levites to inquire who John might be, since they are kinsmen of the Baptist who happens to be from the priestly race. … Note that two embassies come to the Baptist. One consists of \"priests and Levites\" sent from Jerusalem by the Jews \"to ask him, 'Who are you?' \" The other comes from the Pharisees, who send also because they are in doubt about the answer that had been given to the priests and Levites. Observe carefully, therefore, how in accordance with the character of priests and Levites, things are said with gentleness and curiosity.… There is nothing self-willed or rash in the inquiry of these men; everything is appropriate to scrupulous servants of God.…These elect ambassadors were sent from Jerusalem, the place chosen above all the earth … and they interrogate John with the greatest respect. Nothing like this, however, has been recorded to have been done by the Jews concerning Christ. It is John who does to Christ what the Jews do to him, when he [respectfully] inquires through his own disciples, \"Are you he that is to come, or should we expect another?\"",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.1.19"
     },
     {
-      "id": "catena-john-0175-v19",
+      "id": "hcf:theophylact-of-ohrid:john.1.19:f591fd4c:1",
       "relation": "verse",
-      "targetVerseId": "kjva:john.1.19",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-john",
-      "title": "On John 1:19–23",
-      "excerpt": "John, as it appears, saw from the question, that the Priests and Levites had doubts whether it might not be the Christ, who was baptizing; which doubts however they were afraid to profess openly, for fear of incurring the charge of credulity. He wisely determines therefore first to correct their mistake, and then to proclaim the truth. Accordingly, he first of all shews that he is not the Christ: And he confessed, and denied not; but confessed, I am not the Christ. We may add here, that at this time the people had already begun to be impressed with the idea that Christ’s advent was at hand,…",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 1:19",
+      "excerpt": "Above the evangelist said that John testifies about Him; then he inserted what John testified about Christ, namely: that He came before me, and that all we prophets received from His fullness; now he adds: \"and this is the testimony of John.\" What testimony? That which he spoke of above, namely: \"before me\" and so forth. But the words that follow below, \"I am not the Christ,\" also constitute the testimony of John.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.1.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.19:02a8be5f:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:19",
+      "excerpt": "Since there were many things that pointed out John for an illustrious person. In the first place, his distinguished and noble descent; for he was the son of a chief priest. Then his conversation, his austere mode of life, his contempt of all human things; for despising dress and table, and house and food itself, he had passed his former time in the desert. In the case of Christ all was the contrary of this. His family was mean, (as they often objected to Him, saying, \"Is not this the carpenter's son? Is not his mother called Mary? and his brethren James and Joses?\"); and that which was supposed to be His country was held in such evil repute, that even Nathanael said, \"Can there any good thing come out of Nazareth?\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.19:f1caee20:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:19",
+      "excerpt": "\"And this is the record of John, when the Jews sent priests and Levites from Jerusalem to ask him, Who art thou?\" A Dreadful thing is envy, beloved, a dreadful thing and a pernicious, to the enviers, not to the envied. All this I have said, by reason of the envy of the Jews. Because those who had flocked from the cities to John, and had condemned their own sins, and caused themselves to be baptized, repenting as it were after Baptism, send to ask him, \"Who art thou?\" Of a truth they were the offspring of vipers, serpents, and even worse if possible than this. O evil and adulterous and perverse generation, after having been baptized, do ye then become vainly curious, and question about the Baptist?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.19:211c50c6:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:19",
+      "excerpt": "When then John continually sent them from himself to Jesus, who seemed to them a meaner person, being ashamed and vexed at this, and wishing rather to have him for their teacher, they did not dare to say so plainly, but send to him, thinking by their flattery to induce him to confess that he was the Christ. They do not therefore send to him mean men, as in the case of Christ, for when they wished to lay hold on Him, they sent servants, and then Herodians, and the like, but in this instance, \"priests and Levites,\" and not merely \"priests,\" but those \"from Jerusalem,\" that is, the more honorable; for the Evangelist did not notice this without a cause.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.19:ee541618:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:19",
+      "excerpt": "It is worth while to learn why he did thus. It was, that their wickedness might be manifest and plain to all men. Often did John testify of Christ to the Jews, and when he baptized them he continually made mention of Him to his company, and said, \"I indeed baptize you with water, but there cometh One after me who is mightier than I; He shall baptize you with the Holy Ghost and with fire.\" With regard to him they were affected by a human feeling; for, tremblingly attentive to the opinion of the world, and looking to \"the outward appearance,\" they deemed it an unworthy thing that he should be subject to Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.19:2aaeeeb3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:19",
+      "excerpt": "Hear then how this blessed person answered to the intention with which they asked the question, not to the question itself. When they said, \"Who art thou?\" he did not at once give them what would have been the direct answer, \"I am the voice of one crying in the wilderness.\" But what did he? He removed the suspicion they had formed; for, saith the Evangelist, being asked, \"Who art thou?\" \"He confessed, and denied not; but confessed, I am not the Christ.\" Observe the wisdom of the Evangelist. He mentions this for the third time, to set forth the excellency of the Baptist, and their wickedness and folly.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.19:17a4c42c:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:19",
+      "excerpt": "And they send to ask, \"Who art thou?\" Yet the manner of his birth was well known to all, so that all said, \"What manner of child shall this be?\"; and the report had gone forth into all the hill country. And afterwards when he came to Jordan, all the cities were set on the wing, and came to him from Jerusalem, and from all Judaea, to be baptized. Why then do they now ask? Not because they did not know him, (how could that be, when he had been made manifest in so many ways?) but because they wished to bring him to do that which I have mentioned.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.19"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.1.19:08283b87:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 1:19",
+      "excerpt": "Above, the Evangelist showed how Christ was made known to the apostles through the testimony of John; here he develops this testimony more fully. First, he presents John's testimony to the people. Secondly, the testimony he gave of Christ to his own disciples (below 1:35). If we carefully consider what was said, we discover a twofold testimony of John to Christ: one which he gave to Christ in his presence, the other in his absence. For he would not have said, \"It is he\" (below 1:30), unless he had given testimony in Christ's presence; and he would not have said, \"of whom I said,\" unless he gave testimony to him in his absence. So first, the Evangelist develops the testimony John gave to Christ in his absence; secondly, that he gave in his presence (v 29).\r\n\r\nNow these two testimonies differ, because the first was given when he was questioned; the other was spontaneous. So in the first instance, we are given not only his testimony, but also the questions. First, he was asked about himself; secondly, about his office (v 24). First we are shown how John stated that he was not what he really was not; secondly, that he did not deny what he was.\r\n\r\nAs to the first, there are three questions and three answers, as is plain from the text. In the first question there is great respect for John shown by the Jews. They had sent certain ones to him to ask about his testimony. The greatness of their respect is gathered from four facts. First, from the dignity of those who sent the questioners; for they were not sent by Galileans, but by those who were first in rank among the people of Israel, namely, Judeans, of the tribe of Juda, who lived about Jerusalem. It was from Juda that God chose the princes of the people.\r\n\r\nSecondly, from the preeminence of the place, that is, from Jerusalem, which is the city of the priesthood, the city dedicated to divine worship: \"You people claim that Jerusalem is the place where men must worship God\" (below 4:20); \"They will worship him with sacrifices and offerings\" (Is 19:21). Thirdly, from the authority of the messengers, who were religious and from among the holier of the people, namely, priests and Levites; \"You will be called the priests of the Lord\" (Is 61:6).\r\n\r\nFourthly, from the fact that they sent them so that John might bear witness to himself, indicating that they put such trust in his words as to believe John even when giving testimony about himself. Hence he says they were sent to ask him, Who are you? They did not do this to Christ; in fact they said to him: \"You are bearing witness to yourself; your testimony is not true\" (below 8:13).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.1.19"
     }
   ]
 }

@@ -4,50 +4,14 @@
   "verseNumber": 16,
   "entries": [
     {
-      "id": "catena-luke-0058-v16",
+      "id": "catena-luke-0067-v16",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.16",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:15–17",
-      "excerpt": "Next to his becoming the rejoicing of many, the greatness of his virtue is prophesied; as it is said, For he shall be great in the sight of the Lord. The greatness signified is not of the body, but of the soul. Greatness in the sight of the Lord is greatness of soul, greatness of virtue.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0060-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.16",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:15–17",
-      "excerpt": "He extended not the boundaries of an empire, nor brought back in triumph the spoils of war, (but, what is far greater,) preaching in the desert he overcame by his great virtue the delights of the world, and the lusts of the flesh. Hence it follows; And he shall drink no wine nor strong drink.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0062-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.16",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:15–17",
-      "excerpt": "On whomsoever the Holy Spirit is poured, in him there is fulness of great virtue; as in St. John, who before he was born, when yet in his mother’s womb, bore witness to the grace of the Spirit which he had received, when leaping in the womb of his parent he hailed the glad tidings of the coming of the Lord. There is one spirit of this life, another of grace. The former has its beginning at birth, its end at death; the latter is not tied down to times and seasons, is not quenched by death, is not shut out of the womb.",
+      "excerpt": "For never is the spirit without power, nor power without the spirit. And therefore it is said, in the spirit and power; because holy Elijah had great power and grace. Power, so that he turned back the false hearts of the people to faith; power of abstinence, and patience, and the spirit of prophecy. Elijah was in the wilderness, in the wilderness also was John. The one sought not the favour of king Ahab; the other despised that of Herod. The one divided Jordan; the other brought men to the Saving waters; John, the forerunner of our Lord’s first coming; Elijah of His latter.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,14 +40,50 @@
       ]
     },
     {
-      "id": "catena-luke-0067-v16",
+      "id": "catena-luke-0062-v16",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.16",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:15–17",
-      "excerpt": "For never is the spirit without power, nor power without the spirit. And therefore it is said, in the spirit and power; because holy Elijah had great power and grace. Power, so that he turned back the false hearts of the people to faith; power of abstinence, and patience, and the spirit of prophecy. Elijah was in the wilderness, in the wilderness also was John. The one sought not the favour of king Ahab; the other despised that of Herod. The one divided Jordan; the other brought men to the Saving waters; John, the forerunner of our Lord’s first coming; Elijah of His latter.",
+      "excerpt": "On whomsoever the Holy Spirit is poured, in him there is fulness of great virtue; as in St. John, who before he was born, when yet in his mother’s womb, bore witness to the grace of the Spirit which he had received, when leaping in the womb of his parent he hailed the glad tidings of the coming of the Lord. There is one spirit of this life, another of grace. The former has its beginning at birth, its end at death; the latter is not tied down to times and seasons, is not quenched by death, is not shut out of the womb.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0060-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.16",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:15–17",
+      "excerpt": "He extended not the boundaries of an empire, nor brought back in triumph the spoils of war, (but, what is far greater,) preaching in the desert he overcame by his great virtue the delights of the world, and the lusts of the flesh. Hence it follows; And he shall drink no wine nor strong drink.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0058-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.16",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:15–17",
+      "excerpt": "Next to his becoming the rejoicing of many, the greatness of his virtue is prophesied; as it is said, For he shall be great in the sight of the Lord. The greatness signified is not of the body, but of the soul. Greatness in the sight of the Lord is greatness of soul, greatness of virtue.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,6 +127,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.16:11957aae:1"
       ]
     },
     {
@@ -184,14 +191,14 @@
       ]
     },
     {
-      "id": "catena-luke-0063-v16",
+      "id": "catena-luke-0070-v16",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.16",
       "topicSlugs": [],
-      "personId": "origen",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:15–17",
-      "excerpt": "John indeed turned many, but it is the Lord’s work to turn all to God their Father.",
+      "excerpt": "Or, John made ready a people not disbelieving but prepared, that is, previously fitted to receive Christ.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -220,24 +227,6 @@
       ]
     },
     {
-      "id": "catena-luke-0070-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.16",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:15–17",
-      "excerpt": "Or, John made ready a people not disbelieving but prepared, that is, previously fitted to receive Christ.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0071-v16",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.16",
@@ -254,6 +243,134 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "catena-luke-0063-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.16",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:15–17",
+      "excerpt": "John indeed turned many, but it is the Lord’s work to turn all to God their Father.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.1.16:3a42079e:0"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.16:218b6e28:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:16",
+      "excerpt": "John did not convert all, but \"many\"; whereas the Lord enlightened all.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.16"
+    },
+    {
+      "id": "hcf:bede:luke.1.16:6c4d814d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:16",
+      "excerpt": "And he will turn many of the children of Israel to the Lord their God, and he will go before him in the spirit and power of Elijah. When John, who bore witness to Christ, was baptizing people in his faith, he is said to have turned the children of Israel to the Lord their God; it is indeed clear that Christ is the Lord God of Israel. If, however, Christ is, or rather, since Christ is the Lord God of Israel, let the Arians cease from denying that Christ is the Lord God. Let the Photinians blush for giving Christ a beginning from the virgin. Let the Manicheans stop believing that there is one God of the people of Israel and another of the Christians. And because John is said to go before him, let them see that the eternal God before the ages was born as a man in time, and therefore is named by his precursor now as a man coming after him, now as the Son of God. He is well said to go before in the spirit and power of Elijah, for just as that one was the herald of the coming judge, so this one became the herald of the Redeemer. Whence both, following a very similar way of life, pursued the desert, lived frugally, were dressed simply, and were regarded with contempt. Both tolerate the madness of king and queen. That one divided the Jordan when he was about to seek heaven, this one converted men to the saving bath by which heaven may be sought. This one is associated with the Lord on earth, that one is manifested with him in glory.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.16"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.16:b032e4e4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:16",
+      "excerpt": "(Metaphrastes sup.) But what John's work is to be, and what he will do through the Holy Spirit, is shown as follows; And many of the children of Israel shall he turn, &c.\r\n\r\nOr else; The Jews were the parents of John and the Apostles; but, nevertheless, from pride and infidelity raged violently against the Gospel. Therefore, like dutiful children, John first, and the Apostles after him, declared to them the truth, winning them over to their own righteousness and wisdom. So also will Elias convert the remnant of Hebrews to the truth of the Apostles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.16"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.1.16:56e02494:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lxxii-25",
+      "title": "Epistle LXXII.25 on luke 1:16",
+      "excerpt": "And now by certain of us the baptism of heretics is asserted to occupy the (like) ground, and, as if by a certain dislike of re-baptizing, it is counted unlawful to baptize after God's enemies. And this, although we find that they were baptized whom John had baptized: John, esteemed the greatest among the prophets; John, filled with divine grace even in his mother's womb; who was sustained with the spirit and power of Elias; who was not an adversary of the Lord, but His precursor and announcer; who not only foretold our Lord in words, but even showed Him to the eyes; who baptized Christ Himself by whom others are baptized.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.1.16"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.1.16:3ff12fb3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iii-chapter-10-section-1",
+      "title": "Against Heresies (Book III, Chapter 10), Section 1 on luke 1:16",
+      "excerpt": "And then, speaking of John, he thus says: \"For he shall be great in the sight of the Lord, and many of the children of Israel shall he turn to the Lord their God. And he shall go before Him in the spirit and power of Elias, to make ready a people prepared for the Lord.\" For whom, then, did he prepare the people, and in the sight of what Lord was he made great? Truly of Him who said that John had something even \"more than a prophet,\" and that \"among those born of women none is greater than John the Baptist;\" who did also make the people ready for the Lord's advent, warning his fellow-servants, and preaching to them repentance, that they might receive remission from the Lord when He should be present, having been converted to Him, from whom they had been alienated because of sins and transgressions. As also David says, \"The alienated are sinners from the womb: they go astray as soon as they are born.\" And it was on account of this that he, turning them to their Lord, prepared, in the spirit and power of Elias, a perfect people for the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.1.16"
+    },
+    {
+      "id": "hcf:jerome:luke.1.16:1722e3a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:st-jerome-commentary-on-daniel-chapter-eight",
+      "title": "St. Jerome, Commentary on Daniel, CHAPTER EIGHT on luke 1:16",
+      "excerpt": "[Daniel 8:16-17] \"And I heard the voice of a man in the midst of the Ulai, and he cried out and said: 'Gabriel, make this vision intelligible (Vulgate: make this man to understand the vision).' And he came and stood near to where I was standing.\" The Jews claim that this man who directed Gabriel to explain the vision to Daniel was Michael. Quite appropriately it was Gabriel, who has been put in charge of battles, to whom this duty was assigned, inasmuch as the vision had to do with battles and contests between kings and even between kingdoms themselves. For Gabriel is translated into our language as \"the strength of, or the mighty one of, God.\" And so at that time also when the Lord was about to be born and to declare war against the demons and to triumph over the world, Gabriel came to Zacharias (Luke 1:11-20) and to Mary (Luke 1:26-27). And then we read in the Psalms concerning the Lord in His triumph: \"Who is this king of glory? The Lord strong and mighty, the Lord mighty in battle; He is the King of glory\" (Psalm 24:8). But whenever it is medicine or healing that is needed, it is Raphael who is sent, for his name is rendered as \"the healing of,\" or \"the medicine of God\" - that is, if one cares to accept the authority of the Book of Tobias (Tobit 12:11-15). And then, when favorable promises are made to the people, and hilasmos, which we might render as \"propitiation\" or \"expiation,\" is the thing required, then it is Michael who is directed to go, for his name means, \"Who is like God?\" Of course the significance of the name indicates the fact that the only true remedy is to be found in God.\r\n\r\n\"And he said to me: 'Son of man, understand that in the time of the end the vision shall be fulfilled.'\" Inasmuch as Ezekiel and Daniel and Zechariah behold themselves to be often in the company of angels, they were reminded of their frailty, lest they should be lifted up in pride and imagine themselves to partake of the nature or dignity of angels. Therefore they are addressed as sons of men, in order that they might realize that they are but human beings.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ccel-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.1.16"
     }
   ]
 }

@@ -19,17 +19,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.14.27:99d169c4:0"
       ]
     },
     {
-      "id": "catena-luke-2290-v27",
+      "id": "catena-luke-2299-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.27",
       "topicSlugs": [],
       "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:25–27",
-      "excerpt": "The mind is kindled, when it hears of heavenly rewards, and already desires to be there, where it hopes to enjoy them without ceasing; but great rewards cannot be reached except by great labours. Therefore it is said, And there went great multitudes with him: and he turned to them, and said, &c.",
+      "excerpt": "Or because the cross is so called from torturing. In two ways we bear our Lord’s cross, either when by abstinence we afflict our bodies, or when through compassion of our neighbour we think all his necessities our own. But because some exercise abstinence of the flesh not for God’s sake but for vain-glory, and shew compassion, not spiritually but carnally, it is rightly added, And, cometh after me. For to bear His cross and come after the Lord, is to use abstinence of the flesh, or compassion to our neighbour, from the desire of an eternal gain.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.14.27:f521c996:2"
       ]
     },
     {
@@ -48,24 +62,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:25–27",
       "excerpt": "But it may be asked, how are we bid to hate our parents and our relations in the flesh, who are commanded to love even our enemies? But if we weigh the force of the command we are able to do both, by rightly distinguishing them so as both to love those who are united to us by the bond of the flesh, and whom we acknowledge our relations, and by hating and avoiding not to know those whom we find our enemies in the way of God. For he is as it were loved by hatred, who in his carnal wisdom, pouring into our ears his evil sayings, is not heard.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2293-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.27",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:25–27",
-      "excerpt": "For if for thy sake the Lord renounces His own mother, saying, Who is my mother? and who are my brethren? (Matt. 12:48, Mark 3:33.) why dost thou deserve to be preferred to thy Lord? But the Lord will have us neither be ignorant of nature, nor be her slaves, but so to submit to nature, that we reverence the Author of nature, and depart not from God out of love to our parents.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,14 +90,14 @@
       ]
     },
     {
-      "id": "catena-luke-2295-v27",
+      "id": "catena-luke-2290-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.27",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:25–27",
-      "excerpt": "But life must not be renounced, which both in the body and the soul the blessed Paul also preserved, that yet living in the body he might preach Christ. But when it was necessary to despise life so that he might finish his course, he counts not his life dear unto him. (Acts 20:24.)",
+      "excerpt": "The mind is kindled, when it hears of heavenly rewards, and already desires to be there, where it hopes to enjoy them without ceasing; but great rewards cannot be reached except by great labours. Therefore it is said, And there went great multitudes with him: and he turned to them, and said, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -130,6 +126,42 @@
       ]
     },
     {
+      "id": "catena-luke-2293-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.27",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:25–27",
+      "excerpt": "For if for thy sake the Lord renounces His own mother, saying, Who is my mother? and who are my brethren? (Matt. 12:48, Mark 3:33.) why dost thou deserve to be preferred to thy Lord? But the Lord will have us neither be ignorant of nature, nor be her slaves, but so to submit to nature, that we reverence the Author of nature, and depart not from God out of love to our parents.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2295-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.27",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:25–27",
+      "excerpt": "But life must not be renounced, which both in the body and the soul the blessed Paul also preserved, that yet living in the body he might preach Christ. But when it was necessary to despise life so that he might finish his course, he counts not his life dear unto him. (Acts 20:24.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2298-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.27",
@@ -145,24 +177,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2299-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.27",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:25–27",
-      "excerpt": "Or because the cross is so called from torturing. In two ways we bear our Lord’s cross, either when by abstinence we afflict our bodies, or when through compassion of our neighbour we think all his necessities our own. But because some exercise abstinence of the flesh not for God’s sake but for vain-glory, and shew compassion, not spiritually but carnally, it is rightly added, And, cometh after me. For to bear His cross and come after the Lord, is to use abstinence of the flesh, or compassion to our neighbour, from the desire of an eternal gain.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.14.27:ad29e0e2:0"
       ]
     },
     {
@@ -182,6 +203,144 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.14.27:61c2b47d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-37",
+      "title": "Forty Gospel Homilies, Homily 37 on luke 14:27",
+      "excerpt": "But how this very hatred of one's soul ought to be shown, Truth makes clear by adding: \"He who does not carry his cross and come after me cannot be my disciple.\" For the cross is so called from torture. And we carry the Lord's cross in two ways: either when we afflict the flesh through abstinence, or when through compassion for our neighbor we consider his necessity as our own. For he who shows pain at another's necessity carries the cross in his mind. But it should be known that there are some who practice abstinence of the flesh not for God, but for vainglory. And there are many who bestow compassion on their neighbor not spiritually, but carnally, so that they favor him not toward virtue, but as if by pitying him toward sins. These therefore seem to carry a cross, but they do not follow the Lord. Hence this same Truth rightly says: \"He who does not carry his cross and come after me cannot be my disciple.\" For to carry the cross and go after the Lord is to practice either abstinence of the flesh or compassion for one's neighbor out of zeal for eternal purpose. For whoever practices these things for a temporal purpose indeed carries the cross, but refuses to go after the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.14.27:4efda0ca:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 14:27",
+      "excerpt": "(in Hom. ut sup.) How the hatred of life ought to be shown He declares as follows; Whosoever bears not his cross, &c.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
+    },
+    {
+      "id": "hcf:basil-the-great:luke.14.27:95c8d920:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:concerning-baptism-1-1",
+      "title": "CONCERNING BAPTISM 1.1 on luke 14:27",
+      "excerpt": "The Father did not send the only-begotten Son, the living God, to judge the world but to save the world. True to himself and faithful to the will of the good God his Father, he points to a doctrine whereby we may be made worthy of becoming his disciples with his severe decree. He says, \"If any man comes to me and does not hate his father and mother, and his wife and children and brothers and sisters, yes, and his own life also, he cannot be my disciple.\" This hatred teaches the virtue of piety by withdrawing us from distractions and does not lead us to devise hurtful schemes against one another. \"Whoever,\" says the Lord, \"does not carry his cross and come after me, cannot be my disciple.\" Receiving the baptism of water, we make this same agreement when we promise to be crucified and to die and to be buried with him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:concerning-baptism-1-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
+    },
+    {
+      "id": "hcf:bede:luke.14.27:77400327:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 14:27",
+      "excerpt": "And he who does not bear his cross and come after me cannot be my disciple. For the cross is called so from torment. And we bear the cross of the Lord in two ways: either when we afflict the flesh through abstinence, or when we consider the need of our neighbor as our own through compassion. For he who shows sorrow for another's necessity bears the cross in his mind. But it must be known that there are some who practice abstinence of the flesh not for God, but for empty glory; and there are many who render compassion to their neighbor not spiritually, but carnally, so that they indulge them not for virtue, but, as it were, by pitying them, foster their faults. These, indeed, seem to bear the cross but do not follow the Lord. Therefore, rightly does the same Truth say: He who does not bear his cross and come after me cannot be my disciple. For to bear the cross and follow the Lord is either to show abstinence of the flesh or compassion to the neighbor with the intention of eternal study. For whoever does this for a temporal intention may indeed bear the cross but refuses to follow the Lord. Because sublime commandments have been given, the comparison of building a height is immediately added, when it is said:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.14.27:ab1eb0d9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-i",
+      "title": "Against Heresies Book I on luke 14:27",
+      "excerpt": "They show, further, that that Horos of theirs, whom they call by a variety of names, has two faculties,-the one of supporting, and the other of separating; and in so far as he supports and sustains, he is Stauros, while in so far as he divides and separates, he is Horos. They then represent the Saviour as having indicated this twofold faculty: first, the sustaining power, when He said, \"Whosoever doth not bear his cross (Stauros), and follow after me, cannot be my disciple;\" and again, \"Taking up the cross follow me;\" but the separating power when He said, \"I came not to send peace, but a word.\" They also maintain that John indicated the same thing when he said, \"The fan is in His hand, and He will thoroughly purge the floor, and will gather the wheat into His garner; but the chaff He will burn with fire unquenchable.\" By this declaration He set forth the faculty of Horos. For that fan they explain to be the cross (Stauros), which consumes, no doubt, all material objects, as fire does chaff, but it purifies all them that are saved, as a fan does wheat. Moreover, they affirm that the Apostle Paul himself made mention of this cross in the following words: \"The doctrine of the cross is to them that perish foolishness, but to us who are saved it is the power of God.\" And again: \"God forbid that I should glory in anything save in the cross of Christ, by whom the world is crucified to me, and I unto the world.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
+    },
+    {
+      "id": "hcf:hcf-symeon-the-new-theologian:luke.14.27:bf1d3115:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-symeon-the-new-theologian",
+      "workId": "hcf:work:hcf-symeon-the-new-theologian:discourses-20-1",
+      "title": "DISCOURSES 20.1 on luke 14:27",
+      "excerpt": "I heard his holy voice speaking to all without distinction. \"He who does not leave father and mother and brothers and all that he possesses and take up his cross and follow me is not worthy of me.\" I learned from Scripture and from experience itself that the cross comes at the end for no other reason than that we must endure trials and tribulations and finally voluntary death itself. In times past, when heresies prevailed, many chose death through martyrdom and various tortures. Now, when we through the grace of Christ live in a time of profound and perfect peace, we learn for sure that cross and death consist in nothing else than the complete putting to death of self-will. He who pursues his own will, however slightly, will never be able to observe the law of Christ the Savior.",
+      "takeaway": "",
+      "sourceId": "hcf:source:discourses-20-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1022"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
+    },
+    {
+      "id": "hcf:tertullian:luke.14.27:2f2f3c54:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-prayer",
+      "title": "On Prayer on luke 14:27",
+      "excerpt": "For God had commanded even Abraham to make a sacrifice of his son, for the sake not of tempting, but proving, his faith; in order through him to make an example for that precept of His, whereby He was, by and by, to enjoin that he should hold no pledges of affection dearer than God. He Himself, when tempted by the devil, demonstrated who it is that presides over and is the originator of temptation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
+    },
+    {
+      "id": "hcf:tertullian:luke.14.27:1c5ad7a7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-idolatry",
+      "title": "On Idolatry on luke 14:27",
+      "excerpt": "\" If you wish to be the Lord's disciple, it is necessary you \"take your cross, and follow the Lord: \" your cross; that is, your own straits and tortures, or your body only, which is after the manner of a cross.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.14.27"
     }
   ]
 }

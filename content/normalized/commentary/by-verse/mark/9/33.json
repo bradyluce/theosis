@@ -4,14 +4,14 @@
   "verseNumber": 33,
   "entries": [
     {
-      "id": "catena-mark-0723-v33",
+      "id": "catena-mark-0725-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.33",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:30–37",
-      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
+      "excerpt": "This ignorance of the disciples proceeds not so much from slowness of intellect, as from love for the Saviour, for they were as yet carnal, and ignorant of the mystery of the cross, they could not therefore believe that He whom they had recognised as the true God, was about to die; being accustomed then to hear Him often talk in figures, and shrinking from the event of His death, they would have it, that something was conveyed figuratively in those things, which he spoke openly concerning His betrayal and passion. It goes on: And they came to Capernaum.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-mark-0725-v33",
+      "id": "catena-mark-0723-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.33",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:30–37",
-      "excerpt": "This ignorance of the disciples proceeds not so much from slowness of intellect, as from love for the Saviour, for they were as yet carnal, and ignorant of the mystery of the cross, they could not therefore believe that He whom they had recognised as the true God, was about to die; being accustomed then to hear Him often talk in figures, and shrinking from the event of His death, they would have it, that something was conveyed figuratively in those things, which he spoke openly concerning His betrayal and passion. It goes on: And they came to Capernaum.",
+      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -76,6 +76,76 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.9.33:ea59ba09:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 9:33",
+      "excerpt": "The disciples, still having human thoughts, were arguing among themselves about which of them was greater and more honored by Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.9.33"
+    },
+    {
+      "id": "hcf:bede:mark.9.33:e8a238ba:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 9:33",
+      "excerpt": "And they came to Capernaum. When they were in the house, he asked them, \"What were you discussing on the way?\" But they kept silent. For they had been disputing among themselves on the way about who was the greatest. The disciples' dispute seems to have arisen about primacy because they had seen Peter, James, and John taken apart onto a mountain, and it was believed that some secret had been entrusted to them there. But also, to Peter, according to what Matthew narrates, the keys of the kingdom of heaven were promised, and the Church of the Lord was to be built upon the rock of faith from which he had taken his name. Therefore, they were questioning whether those three, or Peter alone among all the apostles, was preeminent.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.9.33"
+    },
+    {
+      "id": "hcf:bede:mark.9.33:576f5dad:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 9:33",
+      "excerpt": "(ubi sup.) The reason why the dispute concerning the chief place arose amongst the disciples seems to have been, that Peter, James, and John, were led apart from the rest into the mountain, and that something secret was there entrusted to them, also that the keys of the kingdom of heaven were promised to Peter, according to Matthew.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.9.33"
+    },
+    {
+      "id": "hcf:jerome:mark.9.33:bd9c5265:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 9:33",
+      "excerpt": "Where it is to be observed, that the disciples disputed by the way concerning the chief place, but Christ Himself sat down to teach humility; for princes toil while the humble repose.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.9.33"
+    },
+    {
       "id": "catena-mark-0726-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.33",
@@ -91,6 +161,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.9.33:d9fe62e4:0"
       ]
     },
     {

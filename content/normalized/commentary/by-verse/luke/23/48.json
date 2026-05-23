@@ -4,14 +4,14 @@
   "verseNumber": 48,
   "entries": [
     {
-      "id": "catena-luke-3385-v48",
+      "id": "catena-luke-3386-v48",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.48",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:47–49",
-      "excerpt": "When after uttering that voice He immediately gave up the ghost, those who were present greatly marvelled. For those who hung upon the cross were generally tortured by a prolonged death. Hence it is said, Now when the centurion saw, &c.",
+      "excerpt": "There is no contradiction in that Matthew says, that the centurion seeing the earthquake marvelled, whereas Luke says that he marvelled, that Jesus while uttering the loud voice expired, shewing what power He had when He was dying. But in that Matthew not only says, at the sight of the earthquake, but added, and at the things that were done, he has made it clear that there was ample room for Luke to say, that the centurion marvelled at the death of the Lord. But because Luke also himself said, Now when the centurion saw what was done, he has included in that general expression all the…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-luke-3386-v48",
+      "id": "catena-luke-3385-v48",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.48",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:47–49",
-      "excerpt": "There is no contradiction in that Matthew says, that the centurion seeing the earthquake marvelled, whereas Luke says that he marvelled, that Jesus while uttering the loud voice expired, shewing what power He had when He was dying. But in that Matthew not only says, at the sight of the earthquake, but added, and at the things that were done, he has made it clear that there was ample room for Luke to say, that the centurion marvelled at the death of the Lord. But because Luke also himself said, Now when the centurion saw what was done, he has included in that general expression all the…",
+      "excerpt": "When after uttering that voice He immediately gave up the ghost, those who were present greatly marvelled. For those who hung upon the cross were generally tortured by a prolonged death. Hence it is said, Now when the centurion saw, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -73,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.23.48:1c71a38c:0"
       ]
     },
     {
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.23.48:3338e9fd:1"
       ]
     },
     {
@@ -128,6 +142,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.23.48:af4d159b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 23:48",
+      "excerpt": "Some of the Jews beat their breasts and, reproaching the crucifiers, openly acknowledged Jesus as a righteous man.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.23.48"
+    },
+    {
+      "id": "hcf:bede:luke.23.48:f199d732:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 23:48",
+      "excerpt": "And all the multitude of those who came together to this spectacle, and saw the things that happened, returned beating their breasts. That they beat their breasts, because it is a sign of repentance and mourning, can be understood in two ways. For either they mourned unjustly for the one whose life they loved, being killed, or they trembled as they remembered having obtained his death, seeing him more glorified in death. But whether this, or that, or both reasons together caused various and dissenting persons in the crowd to beat their breasts, the distinction between the nation and the nation must be noted. For the Gentiles, fearing God with the death of Christ, glorify with open confession, while the Jews, only beating their breasts, silently return home.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.23.48"
     }
   ]
 }

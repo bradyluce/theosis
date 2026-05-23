@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.6.32:722a55cc:0"
       ]
     },
     {
@@ -76,6 +83,24 @@
       ]
     },
     {
+      "id": "catena-luke-0982-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.32",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:32–36",
+      "excerpt": "How great the reward of mercy which is received into the privilege of divine adoption! For it follows, And ye shall be the sons of the Highest (Ps. 82:6.). Follow then mercy, that ye may obtain grace. Widely spread is the mercy of God; He pours His rain upon the unthankful, the fruitful earth refuses not its increase to the evil. Hence it follows, For he is kind to the unthankful, and to the evil.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0977-v32",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.32",
@@ -120,24 +145,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:32–36",
       "excerpt": "Now this mode of avarice is rightly called in the Greek τόκος, from producing, because of the fruitfulness of the evil. Animals in course of time grow up and produce, but interest as soon as it is born begins to bring forth. Animals which bring forth most rapidly cease soonest from breeding, but the money of the avaricious goes on increasing with time. Animals when they transfer their bringing forth to their own young, themselves cease to breed, but the money of the covetous both produces an increase, and renews the capital. Touch not then the destructive monster. For what advantage that the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0982-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.32",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:32–36",
-      "excerpt": "How great the reward of mercy which is received into the privilege of divine adoption! For it follows, And ye shall be the sons of the Highest (Ps. 82:6.). Follow then mercy, that ye may obtain grace. Widely spread is the mercy of God; He pours His rain upon the unthankful, the fruitful earth refuses not its increase to the evil. Hence it follows, For he is kind to the unthankful, and to the evil.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -200,6 +207,108 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.6.32:cb45d4c9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:32",
+      "excerpt": "And if you love those who love you, what grace is it to you? For even sinners love those who love them, etc. If even sinners, publicans, and pagans know how to be kind to their lovers, led by nature, how much more must you (he says) who, as your profession is nobler, so is the necessity that your virtue be more abundant, embrace with broader affection even those who do not love? Whence it seems worthy of inquiry how, when the Lord testifies that those who love only those who love them, do good only to those who do good to them, lend only to friends, not only do not have perfect charity but are equated with sinners, that beloved disciple who leaned on Jesus' chest, concluding his Epistle on the love of God and neighbor, nowhere admonishes to love enemies, but absolutely says: Because if we love one another, God abides in us, and God's love is perfected in us (1 John 4). And if this troubles anyone, let them know that he did not omit the love of enemies, but also included them under the name of brothers and instructed that they should be loved with the perspective of brotherly love and that prayers should be offered for them. Certainly, that they may not always remain enemies but may come to their senses from the snares of the devil and be united to us in a genuine covenant. Nor should it seem harsh that we say those who do not yet believe can be called brothers because of the hope that they will believe. For the same John is recorded to call them children of God. Because Jesus (he says) was about to die for the nation, and not only for the nation, but that He might gather together in one the children of God who were scattered abroad (John 11). For as long as they are scattered, they are not yet children of God, but by coming together in one, they are made children.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.32"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.6.32:cf118aeb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-7",
+      "title": "Constitutions of the Holy Apostles Book 7 on luke 6:32",
+      "excerpt": "\"Love your enemies; for what thanks is it if ye love those that love you? for even the Gentiles do the same.\" \"But do ye love those that hate you, and ye shall have no enemy.\" For says He, \"Thou shalt not hate any man; no, not an Egyptian, nor an Edomite;\" for they are all the workmanship of God. Avoid not the persons, but the sentiments, of the wicked.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.6.32"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.6.32:8eb63aea:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on luke 6:32",
+      "excerpt": "That even our enemies must be loved. In the Gospel according to Luke: \"If ye love those who love you, what thank have ye? For even sinners love those who love them.\" Also according to Matthew: \"Love your enemies, and pray for those who persecute you, that ye may be the children of your Father who is in heaven, who maketh His sun to rise upon the good and the evil, and giveth rain upon the righteous and the unrighteous.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.6.32"
+    },
+    {
+      "id": "hcf:hcf-didache:luke.6.32:a1f09a68:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-didache",
+      "workId": "hcf:work:hcf-didache:the-didache-chapter-1",
+      "title": "The Didache, Chapter 1 on luke 6:32",
+      "excerpt": "There are two ways, one of life and one of death; but a great difference between the two ways. The way of life, then, is this: First, thou shalt love God who made thee; second, thy neighbour as thyself; and all things whatsoever thou wouldst should not occur to thee, thou also to another do not do. And of these sayings the teaching is this: Bless them that curse you, and pray for your enemies, and fast for them that persecute you. For what thank is there, if ye love them that love you? Do not also the Gentiles do the same? But do ye love them that hate you; and ye shall not have an enemy. Abstain thou from fleshly and worldly lusts. If one give thee a blow upon thy right cheek, turn to him the other also; and thou shalt be perfect. If one impress thee for one mile, go with him two. If one take away thy cloak, give him also thy coat. If one take from thee thine own, ask it not back for indeed thou art not able. Give to every one that asketh thee, and ask it not back; for the Father willeth that to all should be given of our own blessings (free gifts).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:luke.6.32"
+    },
+    {
+      "id": "hcf:lactantius:luke.6.32:6467102c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "lactantius",
+      "workId": "hcf:work:lactantius:the-divine-institutes-book-6-chapter-xi",
+      "title": "The Divine Institutes Book 6 (Chapter XI) on luke 6:32",
+      "excerpt": "\"Sometimes, however, we must exercise bounty in giving: nor is this kind of liberality altogether to be rejected; and we must give from our property to suitable persons when they are in need of assistance.\" What is the meaning of \"suitable\"? Assuredly those who are able to restore and give back the favour. If Cicero were now alive, I should certainly exclaim: Here, here, Marcus Tullius, you have erred from true justice; and you have taken it away by one word, since you measured the offices of piety and humanity by utility. For we must not bestow our bounty on suitable objects, but as much as possible on unsuitable objects. For that will be done with justice, piety, and humanity, which you shall do without the hope of any return!",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c325"
+      ],
+      "targetVerseId": "kjva:luke.6.32"
+    },
+    {
+      "id": "hcf:hcf-pseudo-clement:luke.6.32:ac0b7d09:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pseudo-clement",
+      "workId": "hcf:work:hcf-pseudo-clement:second-epistle-to-the-corinthians-pseudo-clement",
+      "title": "Second Epistle To The Corinthians (Pseudo-Clement) on luke 6:32",
+      "excerpt": "For, whenever they hear from us that God says, \"No thank have ye, if you love them which love you, but you have thank, if you love your enemies and them which hate you\" — whenever they hear these words, they marvel at the surpassing measure of their goodness; but when they see, that not only do we not love those who hate, but that we love not even those who love, they laugh us to scorn, and the name is blasphemed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c140"
+      ],
+      "targetVerseId": "kjva:luke.6.32"
     }
   ]
 }

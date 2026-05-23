@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.23.16:704f100e:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.23.16:723a8f4b:0"
       ]
     },
     {
@@ -69,24 +83,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3328-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.16",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:16–22",
-      "excerpt": "In like manner the custom which the Jews had of swearing by the Heaven He reprobates. For they did not, as they supposed, avoid the danger of taking an oath by God, because, “Whoso sweareth by heaven, sweareth by the throne of God, and by him that sitteth thereon.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -109,7 +105,117 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.16:9145cf98:0"
       ]
+    },
+    {
+      "id": "catena-matt-3328-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.16",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:16–22",
+      "excerpt": "In like manner the custom which the Jews had of swearing by the Heaven He reprobates. For they did not, as they supposed, avoid the danger of taking an oath by God, because, “Whoso sweareth by heaven, sweareth by the throne of God, and by him that sitteth thereon.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "hcf:jerome:matthew.23.16:2afc6f81:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:16",
+      "excerpt": "(Verse 16 onwards) Woe to you, blind guides, who say, 'Whoever swears by the temple is nothing, but whoever swears by the gold of the temple is bound by his oath.' Fools and blind! For which is greater, the gold or the temple that sanctifies the gold? And, 'Whoever swears by the altar is nothing, but whoever swears by the gift that is on it is obligated.' Blind! For which is greater, the gift or the altar that sanctifies the gift? Therefore, whoever swears on the altar, swears on it and on all things that are above it. And whoever swears in the temple, swears in it and in him who dwells in it. And whoever swears in heaven, swears on the throne of God and on him who sits on it. Above, as it seemed to us, we have explained what the tradition of the Pharisees meant, saying: Whatever gift is from me will benefit you: now the double tradition of the Pharisees, enticing to one occasion of greed, is condemned, so that they may be proved to do everything for gain and not for the fear of God. For just as in the phylacteries and fringes, by enlarged expectations of holiness, it was trying to capture glory, and was seeking gains through the opportunity of glory, so another tradition found fault with the teachers of impiety. If anyone were to swear in the temple during a dispute, or in some argument, or in a doubtful case, and later be convicted of lying, they were not held accountable for the crime. But if they were to swear on gold and money, which was offered to the priests in the temple, they were immediately compelled to fulfill what they had sworn. Again: If anyone swore upon the altar, no one held him guilty of perjury; but if he swore falsely on a gift, or on offerings, that is, on victims and on fine flour and on the rest, which are offered to God upon the altar, these were most diligently sought after. Therefore, the Lord reproached them both for foolishness and deceit, because the temple is much greater than the gold that is sanctified by the temple, and the altar is greater than the offerings that are sanctified by the altar. But they did it not out of fear of God, but out of greed for riches.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.16"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.23.16:51ec7cf8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:untitled-commentary",
+      "title": "Commentary on matthew 23:16",
+      "excerpt": "Jesus reproached those who by their inane observances detracted from the one who rightly should be honored in worship. He himself was the ground and source of the law. The law did not of itself suffice. The ornaments of the altar and temple were not the primary object of worship but were merely pointing the way for the future of true worship. Gold, silver, bronze, brass, pearl and crystal each embrace a particular meaning from their unique natures as metals. Jesus refuted the premise that the gold of the temple or the gifts of the altar could be venerated as if something in themselves rather than the greater one whom they honor. With the coming of Christ the massive structure of legal obligations became futile. Christ was not in the law, but the law was made holy in Christ. He had placed his seat and throne on the law. One who seeks to be religious should anchor himself rightly in the truth. They were stupid and blind who venerated gifts that were sanctified while they allowed sanctity itself to pass by.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.23.16"
+    },
+    {
+      "id": "hcf:hcf-theodore-stratelates:matthew.23.16:240e0e6e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-stratelates",
+      "workId": "hcf:work:hcf-theodore-stratelates:fragment-115-16",
+      "title": "FRAGMENT 115.16 on matthew 23:16",
+      "excerpt": "Jesus is saying that the gold in the temple, the gold objects dedicated in the temple to the glory of God, whether these be the gold cherubim or the gold jar containing the manna, were considered by the Jews to be worthy of much more honor than the temple. Therefore they were condemned by the Lord.… But the saying possesses a figurative meaning directed against them because they are not receiving the truth regarding Christ. Instead, they were judging Moses and the types given through him as more valuable than Christ.… They were rejecting the Christ who sanctifies Moses while simultaneously praising the law. Just as the law was praiseworthy, not because it possesses the types and the symbols but because it prefigures the true mystery of worship in Christ, in the same way the gold is precious because of the one who sanctifies the temple, and heaven is beautiful because of the God who sanctifies it and dwells within it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-115-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c319"
+      ],
+      "targetVerseId": "kjva:matthew.23.16"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.16:74e72964:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:16",
+      "excerpt": "He calls them blind for not wanting to teach what was right, but instead valuing what was of lesser importance, and giving second place to that which was worthy of honor. For they valued the gold in the temple, the images of the Cherubim and the golden urn, more highly than they did the temple itself. Therefore they taught the people that it was of no consequence to swear by the temple, and instead they taught them to swear by the gold which is in the temple. This gold, however, was precious precisely because it was in the temple. And the Pharisees said that the gifts placed on the altar were more valuable than the altar itself. So the Pharisees even taught that if someone swore by the golden vessel, or the ox, or the sheep brought for sacrifice, and then broke his oath, he was sentenced to pay an equal amount. The Pharisees put a higher value on the gift upon the altar because of the profit they derived from sacrifices. But if some one swore by the temple and then broke his oath, he was absolved [and owed nothing, the Pharisees would say], as it was not possible to build [and pay] anything equal to the temple. And so the oath by the temple was considered to be of lesser consequence because of the Pharisees' love of money. Under the Old Covenant, Christ does not permit the gift to be greater than the altar, but for us it is just the opposite: the altar is sanctified by the gifts, for the loaves are changed by divine grace into the very Body of the Lord Himself. Therefore the altar is sanctified by them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.16"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.16:47ed357d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:16",
+      "excerpt": "Woe to you, blind guides. In this he shows how they are pretenders of sanctity in those things that are owed to prelates. And first, regarding offerings; secondly, regarding tithes, at woe to you (...) who tithe mint, etc. See: first he sets forth their tradition; secondly, he argues against it with three reasons. The first part, where the tradition is set forth with the reason, has two parts. The second is at and whosoever shall swear by the altar, etc. They were drawing all religion toward profit, in order to induce men to make offerings. In the temple there was much gold placed: hence they said that if anyone swore by the temple, he owed nothing; but he who swore by the gold obligated himself to as much as the value of what he swore by. Likewise, the second tradition was that there was an altar and many things were offered upon the altar; hence they said that he who swore by the altar paid nothing, but he who swore by the offering obligated himself to the value of the offering. And why? So that they might profit from the penalties, and so that they might elevate the sanctity of the offering, and so that men might be incited to offer more. And first he sets forth the first part; secondly, the second. Regarding the first, he does two things. First, he proposes the tradition; secondly, the refutation, at you foolish and blind, etc. He says, then, woe to you, blind guides, etc. The same is said above at 15:14: they are blind and leaders of the blind; Isaiah 56:10: his watchmen are all blind. Who say, whosoever shall swear by the temple of God, it is nothing, because it is impossible that this man should build another temple; but he that shall swear by the gold of the temple, i.e., by the gold, is a debtor, namely of that gold.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.16"
     },
     {
       "id": "catena-matt-3325-v16",
@@ -127,6 +233,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.23.16:964a94cc:0"
       ]
     },
     {

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.56:61375190:1"
       ]
     },
     {
@@ -59,24 +66,6 @@
       ]
     },
     {
-      "id": "catena-luke-2115-v56",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.56",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:54–57",
-      "excerpt": "Or, they who from the change of the elements can easily when they like predetermine the state of the weather, might if they wished also understand the time of our Lord’s coming from the words of the Prophets.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2118-v56",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.56",
@@ -95,6 +84,31 @@
       ]
     },
     {
+      "id": "catena-luke-2115-v56",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.56",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:54–57",
+      "excerpt": "Or, they who from the change of the elements can easily when they like predetermine the state of the weather, might if they wished also understand the time of our Lord’s coming from the words of the Prophets.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.12.56:7fe88927:1"
+      ]
+    },
+    {
       "id": "catena-luke-2114-v56",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.56",
@@ -110,6 +124,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.12.56:e000a10f:0"
       ]
     },
     {
@@ -129,6 +150,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.56:dc7db28f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:56",
+      "excerpt": "Since the Lord was speaking about preaching and called it fire and a sword, it is very likely that the listeners, not understanding the meaning of His words, were troubled. Therefore He says: just as you recognize changes in the weather by certain signs, so too you should have recognized My coming from what I say and what I do. My words, as well as My deeds, show Me to be your adversary. For you are tax collectors and robbers, while I have nowhere \"to lay My head\" (Luke 9:58). Therefore, just as from a cloud you foretell rain and from a south wind a hot day, so you should have recognized the time of My coming and understood that I came to bring not peace, but rain and turmoil. For I Myself am a cloud, and I come from the west, that is, from human nature, which had previously been brought low and was in thick darkness from sin. I came to bring down fire as well, and I made a hot day. For I am the south—a warm wind and the opposite of the coldness of the north. Therefore I also appeared from Bethlehem, which lies to the south.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.56"
+    },
+    {
+      "id": "hcf:bede:luke.12.56:9b9f2e61:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:56",
+      "excerpt": "Hypocrites, you know how to interpret the appearance of the earth and the sky. But how is it that you do not know how to interpret this time? We have briefly touched upon what is mystically signified by the cloud and the south wind. But the literal sense is also clear, because those who from the change of elements could easily predict the state of the weather as they wished, could also, if they wanted, understand this time, that is, the first or second coming of the Lord (for he had warned about both) from the words of the prophets, who have clearly indicated both with the most evident signs, either of things or of years. And lest anyone from the crowd perhaps flatter themselves with their ignorance and plead that they, being unlearned and ignorant of the prophetic readings, could not interpret the course of the times, he vigilantly adds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.56"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.12.56:747a1342:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-95",
+      "title": "COMMENTARY ON LUKE, HOMILY 95 on luke 12:56",
+      "excerpt": "People focus their attention on things of this kind. From long observation and practice they tell beforehand when rain will fall or violent winds will blow. One especially sees that sailors are very skillful in this matter. He says that it would be suitable for those who can calculate things of this sort and may foretell storms that are about to happen to focus the penetrating eyes of the mind also on important matters. What are these? The law showed beforehand the mystery of Christ, that he would shine out in the last ages of the world on the inhabitants of the earth and submit to be a sacrifice for the salvation of all. It even commanded a lamb to be sacrificed as a type of him who died towards evening and at lighting of lamps. We might now understand that when, like the day, this world was declining to its close, the great, precious and truly saving passion would be fulfilled. The door of salvation would be thrown wide open to those who believe in him, and abundant happiness be their share. In the Song of Songs, we also find Christ calling to the bride described there. The bride personally represents the church, in these words, \"Arise, come, my neighbor, my beautiful dove. Look, the winter is past, and the rain is gone. It has passed away. The flowers appear on the ground. The time of the pruning has come.\" As I said, a certain springlike calm was about to arise for those who believe in him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-95",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.12.56"
+    },
+    {
+      "id": "hcf:tertullian:luke.12.56:f4a8dff0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 12:56",
+      "excerpt": "Since this battle among the relatives was sung by the prophet's trumpet in the very words, I fear that Micah must have predicted it to Marcion's Christ! On this account He pronounced them \"hypocrites,\" because they could \"discern the face of the sky and the earth, but could not distinguish this time,\" when of course He ought to have been recognised, fulfilling (as he was) all things which had been predicted concerning them, and teaching them so.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.12.56"
     }
   ]
 }

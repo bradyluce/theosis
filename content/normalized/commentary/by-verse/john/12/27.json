@@ -4,6 +4,24 @@
   "verseNumber": 27,
   "entries": [
     {
+      "id": "catena-john-1666-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "The judgment at the end of the world will be of eternal rewards and punishments. But there is another judgment, not of condemnation, but of selection, which is the one meant here; the selection of His own redeemed, and their deliverance from the power of the devil: Now shall the prince of this world be cast out. The devil is not called the prince of this world, in the sense of being lord over heaven and earth; God forbid. The world here stands for the wicked dispersed over all the world. In this sense the devil is the prince of the world, i. e. of all the wicked men who live in the world. The…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-052-c12-v27",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.27",
@@ -23,24 +41,6 @@
       ]
     },
     {
-      "id": "catena-john-1654-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "To our Lord’s exhortation to His disciples to endurance, they might have replied that it was easy for Him, Who was out of the reach of human pain, to talk philosophically about death, and to recommend others to bear what He is in no danger of having to bear Himself. So He lets them see that He is Himself in an agony, but that He does not intend to decline death, merely for the sake of relieving Himself: Now is My soul troubled.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1655-v27",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.27",
@@ -56,78 +56,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-1656-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "As He draws near to the Cross, His human nature appears, a nature that did not wish to die, but cleaved to this present life. He shews that He is not quite without human feelings. For the desire of this present life is not necessarily wrong, any more than hunger. Christ had a body free from sin, but not from natural infirmities. But these attach solely to the dispensation of His humanity, not to His divinity.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1657-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "Lastly, let the man who would follow Him, hear at what hour he should follow. A fearful hour has perhaps come: a choice is offered, either to do wrong, or suffer: the weak soul is troubled. Hear our Lord. What shall I say?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1659-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "He teaches thee Whom thou shouldest call on, whose will prefer to thine own. Let Him not seem to fall from His greatness, because He wishes thee to rise from thy meanness. He took upon Him man’s infirmity, that He might teach the afflicted to say, Not what I will, but what Thou wilt. Wherefore He adds, But for this cause came I unto this hour. Father, glorify Thy name: i. e. in My passion and resurrection.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1660-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "As if He said, I cannot say why I should ask to be saved from it; For for this cause came I unto this hour. However ye may be troubled and dejected at the thought of dying, do not run away from death. I am troubled, yet I ask not to be spared. I do not say, Save Me from this hour, but the contrary, Glorify Thy name. To die for the truth was to glorify God, as the event shewed; for after His crucifixion the whole world was to be converted to the knowledge and worship of God, both the Father and the Son. But this He is silent about.Then came there a voice from heaven, saying, I have both…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.12.27:9a0cc975:0"
       ]
     },
     {
@@ -139,96 +74,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 12:27–33",
       "excerpt": "I have glorified it, i. e. before I made the world; and will glorify it again, i. e. when Thou shalt rise from the dead. Or, I have glorified it, when Thou wast born of a Virgin, didst work miracles, wast made manifest by the Holy Ghost descending in the shape of a dove; and will glorify it again, when Thou shalt rise from the dead, and, as God, be exalted above the heavens, and Thy glory above all the earth.The people therefore that stood by and heard it, said that it thundered.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1663-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "The voice though loud and distinct, soon passed off from their gross, carnal, and sluggish minds; only the sound remaining. Others perceived an articulate voice, but did not catch what it said: Others said, An Angel spake to Him.Jesus answered and said, This voice came not because of Me, but for your sakes.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1664-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "i. e. It did not come to tell Him what He knew already, but them what they ought to know. And as that voice did not come for His sake, but for theirs, so His soul was not troubled for His sake, but for theirs.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1665-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "The voice of the Father proved what they were so fond of denying, that He was from God. For He must be from God, if He was glorified by God. It was not that He needed encouragement of such a voice Himself, but He condescended to receive it for the sake of those who were by. Now is the judgment of this world: this fits on to the preceding, as shewing the mode of His being glorified.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1666-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "The judgment at the end of the world will be of eternal rewards and punishments. But there is another judgment, not of condemnation, but of selection, which is the one meant here; the selection of His own redeemed, and their deliverance from the power of the devil: Now shall the prince of this world be cast out. The devil is not called the prince of this world, in the sense of being lord over heaven and earth; God forbid. The world here stands for the wicked dispersed over all the world. In this sense the devil is the prince of the world, i. e. of all the wicked men who live in the world. The…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1667-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.12.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 12:27–33",
-      "excerpt": "What kind of judgment it is by which the devil is cast out, I will explain by an example. A man demands payment from his debtors, beats them, and sends them to prison. He treats with the same insolence one who owes him nothing. The latter will take vengeance both for himself and the others too. This Christ does. He revenges what He has suffered at the devil’s hands, and with Himself He revenges us too. But that none may say, How will he be cast out, if he overcome thee? He adds, And I, if I be lifted up from the earth, will draw all men unto Me. How can He be overcome, who draws others unto…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -257,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-1669-v27",
+      "id": "catena-john-1659-v27",
       "relation": "verse",
       "targetVerseId": "kjva:john.12.27",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 12:27–33",
-      "excerpt": "Why then did He say above, that the Father drew men? (c. 6:46.) Because the Father draws, by the Son who draws. I shall draw, He says, as if men were in the grasp of some tyrant, from which they could not extricate themselves.",
+      "excerpt": "He teaches thee Whom thou shouldest call on, whose will prefer to thine own. Let Him not seem to fall from His greatness, because He wishes thee to rise from thy meanness. He took upon Him man’s infirmity, that He might teach the afflicted to say, Not what I will, but what Thou wilt. Wherefore He adds, But for this cause came I unto this hour. Father, glorify Thy name: i. e. in My passion and resurrection.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -283,6 +128,168 @@
       "workId": "catena-aurea-john",
       "title": "On John 12:27–33",
       "excerpt": "If I be lifted up from the earth, He says, i. e. when I shall be lifted up. He does not doubt that the work will be accomplished which He came to do. By His being lifted up, He means His passion on the cross, as the Evangelist adds: This He said, signifying by what death He should die.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1657-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "Lastly, let the man who would follow Him, hear at what hour he should follow. A fearful hour has perhaps come: a choice is offered, either to do wrong, or suffer: the weak soul is troubled. Hear our Lord. What shall I say?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1664-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "i. e. It did not come to tell Him what He knew already, but them what they ought to know. And as that voice did not come for His sake, but for theirs, so His soul was not troubled for His sake, but for theirs.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1667-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "What kind of judgment it is by which the devil is cast out, I will explain by an example. A man demands payment from his debtors, beats them, and sends them to prison. He treats with the same insolence one who owes him nothing. The latter will take vengeance both for himself and the others too. This Christ does. He revenges what He has suffered at the devil’s hands, and with Himself He revenges us too. But that none may say, How will he be cast out, if he overcome thee? He adds, And I, if I be lifted up from the earth, will draw all men unto Me. How can He be overcome, who draws others unto…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1660-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "As if He said, I cannot say why I should ask to be saved from it; For for this cause came I unto this hour. However ye may be troubled and dejected at the thought of dying, do not run away from death. I am troubled, yet I ask not to be spared. I do not say, Save Me from this hour, but the contrary, Glorify Thy name. To die for the truth was to glorify God, as the event shewed; for after His crucifixion the whole world was to be converted to the knowledge and worship of God, both the Father and the Son. But this He is silent about.Then came there a voice from heaven, saying, I have both…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1654-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "To our Lord’s exhortation to His disciples to endurance, they might have replied that it was easy for Him, Who was out of the reach of human pain, to talk philosophically about death, and to recommend others to bear what He is in no danger of having to bear Himself. So He lets them see that He is Himself in an agony, but that He does not intend to decline death, merely for the sake of relieving Himself: Now is My soul troubled.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1656-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "As He draws near to the Cross, His human nature appears, a nature that did not wish to die, but cleaved to this present life. He shews that He is not quite without human feelings. For the desire of this present life is not necessarily wrong, any more than hunger. Christ had a body free from sin, but not from natural infirmities. But these attach solely to the dispensation of His humanity, not to His divinity.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1665-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "The voice of the Father proved what they were so fond of denying, that He was from God. For He must be from God, if He was glorified by God. It was not that He needed encouragement of such a voice Himself, but He condescended to receive it for the sake of those who were by. Now is the judgment of this world: this fits on to the preceding, as shewing the mode of His being glorified.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1663-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "The voice though loud and distinct, soon passed off from their gross, carnal, and sluggish minds; only the sound remaining. Others perceived an articulate voice, but did not catch what it said: Others said, An Angel spake to Him.Jesus answered and said, This voice came not because of Me, but for your sakes.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1669-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.12.27",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 12:27–33",
+      "excerpt": "Why then did He say above, that the Father drew men? (c. 6:46.) Because the Father draws, by the Son who draws. I shall draw, He says, as if men were in the grasp of some tyrant, from which they could not extricate themselves.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -326,7 +333,202 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.12.27:dd7de906:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.12.27:ba9754b6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-52",
+      "title": "Tractates on John 52 on john 12:27",
+      "excerpt": "\"Now is my soul troubled.\" Whence, Lord, was Thy soul troubled? He had, indeed, said a little before, \"He that hateth his life [soul] in this world shall keep it unto life eternal.\" Dost thou then love thy life in this world, and is thy soul troubled as the hour approacheth when thou shalt leave this world? Who would dare affirm this of the soul [life] of the Lord? We rather it was whom He transferred unto Himself; He took us into His own person as our Head, and assumed the feelings of His members; and so it was not by any others He was troubled, but, as was said of Him when He raised Lazarus, \"He was troubled in Himself.\" For it behoved the one Mediator between God and men, the man Christ Jesus, just as He has lifted us up to the heights of heaven, to descend with us also into the lowest depths of suffering.\r\n\r\nI hear Him saying a little before, \"The hour cometh that the Son of man should be glorified: if a corn of wheat die, it bringeth forth much fruit.\" I hear this also, \"He that hateth his life in this world shall keep it unto life eternal.\" And now, again, it is my Lord Himself, who by such words has suddenly transported me from the weakness that was mine to the strength that was His, that I hear saying, \"Now is my soul troubled.\" What does it mean? How biddest Thou my soul follow Thee if I behold Thine own troubled? How shall I endure what is felt to be heavy by strength so great? What is the kind of foundation I can seek if the Rock is giving way? But me-thinks I hear in my own thoughts the Lord giving me an answer, saying, Thou shall follow me the better, because it is to aid thy power of endurance that I thus interpose. Thou hast heard, as addressed to thyself, the voice of my fortitude hear in me the voice of thy infirmity: I supply strength for thy running, and I check not thy hastening, but I transfer to myself thy causes for trembling, and I pave the way for thy marching along. O Lord our Mediator, God above us, man for us, I own Thy mercy For because Thou, who art so great, art troubled through the good will of Thy love, Thou preservest, by the richness of Thy comfort, the many in Thy body who are troubled by the continual experience of their own weakness, from perishing utterly in their despair.\r\n\r\nIn a word, let the man who would follow learn the road by which he must travel. Perhaps an hour of terrible trial has come, and the choice is set before thee either to do iniquity or endure suffering; the weak soul is troubled, on whose behalf the invincible soul [of Jesus] was voluntarily troubled; set then the will of God before thine own. For notice what is immediately subjoined by thy Creator and thy Master, by Him who made thee, and became Himself for thy teaching that which He made; for He who made man was made man, but He remained still the unchangeable God, and transplanted manhood into a better condition. Listen, then, to what He adds to the words, \"Now is my soul troubled.\" \"And what shall I say? Father, save me from this hour: but for this cause came I unto this hour. Father, glorify Thy name.\" He has taught thee here what to think of, what to say, on whom to call, in whom to hope, and whose will, as sure and divine, to prefer to thine own, which is human and weak.\r\n\r\nAnd when He here said, \"Now is my soul troubled;\" and also when He says, \"My soul is sorrowful, even unto death;\" and \"Father, if it be possible, let this cup pass from me;\" He assumed the infirmity of man, to teach him, when thereby saddened and troubled, to say what follows: \"Nevertheless, Father, not as I will, but as Thou wilt.\" For thus it is that man is turned from the human to the divine, when the will of God is preferred to his own. But to what do the words \"Glorify Thy name\" refer, but to His own passion and resurrection? For what else can it mean, but that the Father should thus glorify the Son, who in like manner glorifieth His own name in the similar sufferings of His servants?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.12.27:b579b183:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-67",
+      "title": "Homily on the Gospel of John 67 on john 12:27",
+      "excerpt": "\"Now is My soul troubled; and what shall I say? Father, save me from this hour.\" \"But surely this is not the expression of one urging them to go even to death.\" Nay, it is that of one greatly so urging them. For lest they should say, that \"He being exempt from mortal pains easily philosophizes on death, and exhorts us being himself in no danger,\" He showeth, that although feeling its agony, on account of its profitableness He declineth it not. But these things belong to the Dispensation, not the Godhead. Wherefore He saith, \"Now is My soul troubled\"; since if this be not the case, What connection hath that which was spoken, and His saying, \"Father, save Me from this hour\"? And so troubled, that He even sought deliverance from death, if at least it were possible to escape. These were the infirmities of His human nature.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.12.27:d504a71e:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-67",
+      "title": "Homily on the Gospel of John 67 on john 12:27",
+      "excerpt": "For as it is no blame to be hungry, or to sleep, so neither is it to desire the present life; and Christ indeed had a body pure from sin, yet not free from natural wants, for then it would not have been a body. By these words also He taught something else. Of what kind is that? That if ever we be in agony and dread, we even then start not back from that which is set before us; and by saying, \"Glorify Thy Name\" He showeth that He dieth for the truth calling the action, \"glory to God.\" And this fell out after the Crucifixion. The world was about to be converted, to acknowledge the Name of God, and to serve Him, not the Name of the Father only, but also that of the Son; yet still as to this He is silent.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.12.27:37eb5508:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-67",
+      "title": "Homily on the Gospel of John 67 on john 12:27",
+      "excerpt": "\"For for this cause came I unto this hour.\" As though He had said, \"Though we be confounded, though we be troubled, let us not fly from death, since even now I though troubled do not speak of flying; for it behooveth to bear what is coming on. I say not, Deliver Me from this hour,\" but what? \"Father, glorify Thy Name.\" \"Although My trouble urges Me to say this, yet I say the opposite, 'Glorify Thy Name,' that is, Lead Me henceforth to the Cross\"; which greatly shows His humanity, and a nature unwilling to die, but clinging to the present life, proving that He was not exempt from human feelings.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.12.27:c3bbbeed:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-67",
+      "title": "Homily on the Gospel of John 67 on john 12:27",
+      "excerpt": "\"There came therefore a Voice from Heaven, I have both glorified it, and will glorify it again.\" When had He \"glorified it\"? By what had been done before; and \"I will glorify it again\" after the Cross.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.12.27:c3221c65:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-8",
+      "title": "Commentary on the Gospel of John, Book 8 on john 12:27",
+      "excerpt": "Now, He says, is my soul troubled; and what shall I say? Father, save one from this hour: but for this cause came I unto this hour. See I pray you in these words again how the human nature was easily affected by trouble and easily brought over to fear, whereas on the other hand the Divine and ineffable Power is in all respects inflexible and dauntless and intent on the courage which alone is befitting to It. For the mention of death which had been introduced into the discourse begins to alarm Jesus, but the Power of the Godhead straightway subdues the suffering thus excited and in a moment transforms into incomparable boldness that which had been conquered by fear. For we may suppose that even in the Saviour Jesus Christ Himself the human feelings were aroused by two qualities necessarily present in Him. For it must certainly have been under the influence of these that He shewed Himself a Man born of woman, not in deceptive appearance or mere fancy, but rather by nature and in truth, possessing every human quality, sin only excepted. And fear and alarm, although they are affections natural to us, have escaped being ranked among sins. And yet besides this, profitably were the human feelings troubled in Christ: not that the emotions should prevail and go forward, as in us; but that, having begun, they might be cut short by the power of the Word, nature in Christ first being transelemented into some better and Diviner condition. For in this way and no other was it that the process of the healing passed over even unto us. For in Christ as the firstfruits the nature of man was restored to newness of life, and in Him we have also gained things above our nature. For on this account He is also named in the Divine Scriptures a second Adam. And in the same manner that as Man He felt hunger and weariness, so also He feels the mental trouble that is caused by suffering, as a human characteristic. Yet He is not agitated like we are, but only just so far as to have undergone the sensation of the experience; then again immediately He returns to the courage befitting to Himself. From these things it is evident that He indeed had a rational soul. For as the circumstance of feeling hunger or indeed of experiencing any other such thing is a suffering which is peculiarly that of the flesh, so also the being agitated by the thought of terrible things must be a suffering of the rational soul, by which alone in truth a thought can enter into us through the processes of the mind. For Christ, not having yet been on the Cross actually, suffers the trouble by anticipation, evidently beholding beforehand that which was to happen, and being led by reasoning to the thought of the future events. For the suffering of dread is a feeling that we cannot ascribe to the impassible Grodhead, nor yet to the Flesh; for it is an affection of the cogitations of the soul, and not of the flesh. And although an irrational animal is troubled and agitated, inasmuch as it possesses a soul, yet it does not come to feel dread by a process of thought, nor by a logical anticipation of coming suffering, but whenever it happens to find itself actually involved in any evil plight, then it painfully experiences the sensation of the danger which is present. Here, on the other hand, the Lord is troubled, not by what He sees, but by what He anticipates in thought. Further it is noteworthy that Christ did not say \"My flesh is troubled,\" but \"My soul;\" thereby dispelling the suggestion of the heretics. And although thou mayest say that in the ancient Scripture God said to the Jews: Your fasts and holiday-keeping and festivals My soul hateth, and other expressions of a similar kind; we shall maintain that He has made use of our habits of speech, especially by reason of His helpful condescension towards us; just as also by a forced use of language He attributes to His Incorporeal Nature a Face and Eyes and other bodily organs. But after the Incarnation, if we were to explain such expressions in the same way, it would follow that He was a mere image or phantom or shadow and not truly a Man, according to the teaching of the ungodly Manes. Therefore the Word of God made one with Himself human nature in its entirety, that so He might save the entire man. For that which has not been taken into His Nature, has not been saved.\r\n\r\nNevertheless, after speaking of being troubled, He does not relapse into silence, but transforms the suffering which had affected Him into dauntless courage, almost going so far as to say: \"Death is in itself nothing; but on this account I permitted My Flesh to feel dread, that I might infuse it with a new element of courage. I came to restore life to those who are on earth, wherefore also I am prepared for My Passion.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.12.27:001cbd70:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-8",
+      "title": "Commentary on the Gospel of John, Book 8 on john 12:27",
+      "excerpt": "Moreover, just as death was brought to naught in no other way than by the Death of the Saviour, so also with regard to each of the sufferings of the flesh: for unless He had felt dread, human nature could not have become free from dread; unless He had experienced grief, there could never have been any deliverance from grief; unless He had been troubled and alarmed, no escape from these feelings could have been found. And with regard to every one of the affections to which human nature is liable, thou wilt find exactly the corresponding thing in Christ. The affections of His Flesh were aroused, not that they might have the upper hand as they do indeed in us, but in order that when aroused they might be thoroughly subdued by the power of the Word dwelling in the flesh, the nature of man thus undergoing a change for the better.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:john.12.27:bd47ba75:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-i-chapter-8-section-2",
+      "title": "Against Heresies (Book I, Chapter 8), Section 2 on john 12:27",
+      "excerpt": "Then, also, they say that the passions which she endured were indicated by the Lord upon the cross. Thus, when He said, \"My God, my God, why hast Thou forsaken Me?\" He simply showed that Sophia was deserted by the light, and was restrained by Horos from making any advance forward. Her anguish, again, was indicated when He said, \"My soul is exceeding sorrowful, even unto death;\" her fear by the words, \"Father, if it be possible, let this cup pass from Me;\" and her perplexity, too, when He said, \"And what I shall say, I know not.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:tertullian:john.12.27:2e8702bd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on john 12:27",
+      "excerpt": "But in the trouble of His soul, (on a later occasion, ) He said: \"What shall I say? Father, save me from this hour: but for this cause is it that I am come to this hour; only, O Father, do Thou glorify Thy name\" -in which He spake as the Son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.12.27:b131ef01:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 12:27",
+      "excerpt": "What is it that He says? He seems to contradict Himself. Above He seemed to be preparing others for death and persuading them to hate their soul, but now He Himself, in the proximity of death, is troubled. This is fitting not for one who exhorts toward death, but for one who turns away from it. But if you consider carefully, you will find that His very disturbance is an exhortation to the contempt of death. Lest anyone should presume to say that it is easy for Him to philosophize about death and persuade others to endure afflictions when He Himself is beyond human sufferings and beyond danger, He shows that He Himself also experienced what is proper to human beings and partook of our nature, though without sin.\r\nTherefore, although He as a Man, by nature loving life, does not desire death and is troubled, nevertheless He does not refuse it, inasmuch as it is necessary for the salvation of the world. \"For this reason,\" He says, \"I have come to this hour, to accept death for all.\" By this He clearly teaches us that we too, even though we may be troubled, even though we may grieve, should nevertheless not flee from death for the sake of truth. \"I too,\" He says, \"am troubled, for I am truly a man and I allow Human nature to manifest what is proper to it; nevertheless, I do not say to the Father that He should deliver Me from this hour.\" But what do I say?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.12.27"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.12.27:1cc4a01b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 12:27",
+      "excerpt": "Above, we saw the glory shown to Christ by various types of people; here the Evangelist considers the glory shown to Christ by God. First, he mentions that Christ asked for glory; secondly, the promise of glory is made. Concerning the first he does two things. First, the interior state of Christ is given; secondly, he mentions the request made by Christ.\r\n\r\nNote, in regard to the first, that it seems incongruous for Christ to be saying, Now is my soul troubled, for he had urged his faithful to hate their own lives in this world; but with his own death near at hand, we hear the Lord himself saying, Now is my soul troubled. This leads Augustine to say: \"O Lord, You command my soul to follow. But I see your own soul troubled. What support shall I seek, if the rock crumbles?\" Thus we must first examine this troubled state of Christ, and secondly, why he willed to undergo it.\r\n\r\nAs to the first, we should note that, properly speaking, a thing is said to be troubled when it is greatly agitated. Hence when the sea is very agitated it is said to be troubled. And so whenever a thing oversteps the bounds of its repose and tranquility, it is said to be troubled. Now in the human soul there is a sentient area and a rational area. The sensitive area of the soul is troubled when it becomes strongly affected by certain movements. For example, when it is contracted by fear, raised up by hope, dilated by joy, or otherwise affected by one or other of the emotions. Sometimes this perturbation remains within the bounds of reason, and sometimes it exceeds the bounds of reason, namely, when the reason itself is troubled. And although this latter condition quite often occurs in us, it is not found in Christ, since he is the Wisdom of the Father. Indeed, it is not found in any wise person; thus the Stoic tenet that one who is wise is not troubled, that is, in his reason.\r\n\r\nAccordingly, the meaning of Now is my soul troubled, is this: My soul is affected by the emotions of fear and sadness in its sentient part; but these emotions do not trouble my reason, and it does not abandon its own order. \"He began to be greatly distressed and troubled\" (Mk 14:33).\r\n\r\nSuch emotions, however, exist in us otherwise than in Christ. In us, they arise from necessity, insofar as we are moved and affected from without, as it were. But in Christ, they are not from necessity, but from the command of reason, since there was never any emotion in him except that which he himself aroused. For in Christ the lower powers were subject to his reason so perfectly that they could not act or undergo anything except what reason appointed for them. Thus as was said above (11:33): \"he was deeply moved in spirit and troubled himself\"; \"You have moved the earth,\" that is, human nature, \"and troubled it\" (Ps 59:4). And so the soul of Christ was troubled in such a way that its perturbation was not opposed to reason, but according to the order of reason.\r\n\r\nIn regard to the second point, note that Christ willed to be troubled for two reasons. First, to show us a doctrine of the faith, that is, the truth of his human nature. Accordingly, as his passion was drawing near, he did everything in a human way. Secondly, he wanted to be an example for us. For if he had remained unmoved and had felt no emotions in his soul, he would not have been a satisfactory example of how we should face death. And so he willed to be troubled in order that when we are troubled at the prospect of death, we will not refuse to endure it, we will not run away: \"For we have not a high priest who is unable to sympathize with our weakness, but one who in every respect has been tempted as we are, yet without sinning\" (Heb 4:15).\r\n\r\nThe relationship of this with what came before is clear. He encouraged his disciples to suffer when he said: \"He who hates his life in this world will keep it for eternal life.\" But some might say to him: \"Lord, you can calmly discuss and philosophize about death because you are above human sorrows, and death does not trouble you.\" It was to counter this that he willed to be troubled. This disturbance in Christ was natural: for just as the soul naturally loves union with its body, so it naturally shrinks from separation from it, especially since the reason of Christ allowed his soul and its inferior powers to act in their own proper way.\r\n\r\nAgain, when he said, Now is my soul troubled, he refuted the error of Arius and Apollinaris. For they said that Christ did not have a soul, and in place of his soul they substituted the Word.\r\n\r\nThen our Lord makes his petition for glory, saying, And what shall I say? Father, save me from this hour. Here our Lord takes upon himself the emotions of one who is troubled. And acting as one troubled, he does four things in his petition. First, he poses a question, as one does when deliberating about what is to be done; secondly, he makes a request which arises from a certain inclination; thirdly, he rejects this inclination for a particular reason; and fourthly, he makes another request that arises from a different inclination.\r\n\r\nHe poses this question as one does when in doubt, because it is natural to deliberate about what to do when one is perplexed. So the Philosopher says in his Rhetoric that fear makes a person take counsel. Thus, after mentioning that he is troubled, Christ at once adds, And what shall I say? It is the same as saying: \"What shall I do in my trouble.\" Something like this is met in Psalm 55 (v 5): \"Fear and trembling came upon me,\" and then follows, \"O that I had wings like a dove! I would fly away and be at rest.\" For both the perplexed and the emotionally disturbed are weighed down and look for help to relieve themselves.\r\n\r\nHe makes his petition, arising from a certain inclination, because when one is hesitant about what he should do, he ought to turn to God: \"We do not know what to do, but our eyes are upon thee\" (2 Chron 20:12); \"I have lifted up my eyes to the mountains from whence help will come to me\" (Ps 120:1). And so, turning to the Father, he says, Father save me, that is, from the sufferings which await me at the hour of my passion: \"Save me, O God! For the waters have come up to my neck\" (Ps 69:1). According to Augustine, what our Lord says here - Now is my soul troubled and Father, save me - is the same as what he says in Matthew (26:38): \"My soul is very sorrowful, even to death.\"\r\n\r\nNote that this petition is not made as though it arose from the inclination of reason; rather, reason is speaking as an advocate of the natural inclination not to die. And so in this petition reason is pointing out the impulse of a natural inclination.\r\n\r\nThis explanation solves a question which is frequently raised. For we read: \"In all things he was heard for his reverence\" (Heb 5:7); and yet in this case, Christ was not heard. The answer to this is that Christ was heard in those matters in which his petition came from reason itself and which he intended to be granted. But the petition he made here did not come from reason, nor was it intended to be granted, rather, it expressed a natural inclination. Thus Chrysostom reads it as a question, that is, as: And what shall I say? Shall I say, Father, save me from this hour? It is the same as saying: \"No! I will not say this.\"\r\n\r\nYet Christ rejects this petition, which arose from an inclination of the natural appetite, when he says, No, for this purpose I have come to this hour. It is the same as saying: It is not right that I be freed from this time of suffering, because I came to suffer; and not as compelled by the necessity of fate or forced by the violence of men, but by willingly offering myself: \"He was offered because it was his own will\" (Is 53:7); \"No one takes it,\" my life, \"from me, but I lay it down of my own accord\" (10:18).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.12.27"
     }
   ]
 }

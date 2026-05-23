@@ -76,14 +76,14 @@
       ]
     },
     {
-      "id": "catena-luke-2037-v34",
+      "id": "catena-luke-2038-v34",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.34",
       "topicSlugs": [],
-      "personId": "basil-the-great",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:32–34",
-      "excerpt": "But some one will ask, upon what grounds ought we to sell that which we have? Is it that these things are by nature hurtful, or because of the temptation to our souls? To this we must answer, first, that every thing existing in the world if it were in itself evil, would be no creation of God, for every creation of God is good. (1 Tim. 4:4.) And next, that our Lord’s command teaches us not to cast away as evil what we possess, but to distribute, saying, and give alms.",
+      "excerpt": "Now perhaps this command is irksome to the rich, yet to those who are of a sound mind, it is not unprofitable, for their treasure is the kingdom of heaven. Hence it follows, Provide for yourselves bags which wax not old, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,14 +94,14 @@
       ]
     },
     {
-      "id": "catena-luke-2038-v34",
+      "id": "catena-luke-2037-v34",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.34",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "basil-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:32–34",
-      "excerpt": "Now perhaps this command is irksome to the rich, yet to those who are of a sound mind, it is not unprofitable, for their treasure is the kingdom of heaven. Hence it follows, Provide for yourselves bags which wax not old, &c.",
+      "excerpt": "But some one will ask, upon what grounds ought we to sell that which we have? Is it that these things are by nature hurtful, or because of the temptation to our souls? To this we must answer, first, that every thing existing in the world if it were in itself evil, would be no creation of God, for every creation of God is good. (1 Tim. 4:4.) And next, that our Lord’s command teaches us not to cast away as evil what we possess, but to distribute, saying, and give alms.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -164,6 +164,128 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.34:2db675fd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:34",
+      "excerpt": "Then, since not everyone is robbed, He adds an even greater and completely irrefutable reason. \"For where your treasure is, there will your heart be also.\" Let it be so, He says, that neither moth devours nor thief approaches, but what punishment does the very enslavement of the heart to treasure buried in the earth and the casting down to earth of the godlike substance of the soul deserve? Is not the punishment all the greater for the one who possesses a mind? Where your treasure is, there will your heart be also. If your treasure is in the earth, then your heart is in it too; if your treasure is in heaven, then your heart is on high. Who would not choose rather to be on high than under the earth, to be an Angel rather than a mole living in underground burrows?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.34"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.34:735f629d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 12:34",
+      "excerpt": "Moreover, because all things are not taken away by theft, He adds a more excellent reason, and one which admits of no objection whatever, saying, For where your treasure is, there will your hearts be also; as if He says, \"Suppose that neither moth corrupts nor thief takes away, yet this very thing, namely, to have the heart fixed in a buried treasure, and to sink to the earth a divine work, that is, the soul, how great a punishment it deserves.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.12.34"
+    },
+    {
+      "id": "hcf:bede:luke.12.34:8033cdab:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:34",
+      "excerpt": "For where your treasure is, there will your heart be also. This is to be understood not only about money, but about all passions. The glutton's god is the belly. Therefore, there he has his heart where his treasure is. The luxurious man's treasures are feasts, the wanton's amusements, the lover's lust, hence each one serves from whom he is conquered.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.34"
+    },
+    {
+      "id": "hcf:bede:luke.12.34:bc89f504:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 12:34",
+      "excerpt": "Now this must not only be felt concerning love of money, but all the passions. Luxurious feasts are treasures; also the sports of the gay and the desires of the lover...",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.12.34"
+    },
+    {
+      "id": "hcf:augustine:luke.12.34:688e9df0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-189",
+      "title": "LETTER 189 on luke 12:34",
+      "excerpt": "If you lack earthly riches, do not seek them in the world by evil deeds. If they fall to your lot, let them be stored up in heaven by good works. A manly Christian soul should neither be overjoyed at acquiring them nor cast down when they are gone. Let us instead reflect on what the Lord says: \"Where thy treasure is, there your heart will be also.\" Surely when we hear that we should lift up our hearts, the familiar answer that we make should not be a lie.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.12.34"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:luke.12.34:5977c7ac:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 12:34",
+      "excerpt": "For every man naturally dwells upon that which is the object of his desire, and thither he directs all his thoughts, where he supposes his whole interest to rest. If any one then has his whole mind and affections, which he calls the heart, set on things of this present life, he lives in earthly things. But if he has given his mind to heavenly things, there will his mind be; so that he seems with his body only to live with men, but with his mind to have already reached the heavenly mansion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.12.34"
+    },
+    {
+      "id": "hcf:peter-chrysologus:luke.12.34:ce6fbee1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:sermon-22",
+      "title": "SERMON 22 on luke 12:34",
+      "excerpt": "All this is what that treasure brings about. Either through almsgiving it raises the heart of a man into heaven, or through greed it buries it in the earth. That is why he said, \"For where your treasure is, there your heart will be also.\" O man, send your treasure on, send it ahead into heaven, or else your God-given soul will be buried in the earth. Gold comes from the depth of the earth—the soul, from the highest heaven. Clearly it is better to carry the gold to where the soul resides than to bury the soul in the mine of the gold. That is why God orders those who will serve in his army here below to fight as men stripped of concern for riches and unencumbered by anything. To these he has granted the privilege of reigning in heaven.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-22",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:luke.12.34"
     },
     {
       "id": "catena-luke-2030-v34",

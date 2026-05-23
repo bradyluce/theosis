@@ -4,24 +4,6 @@
   "verseNumber": 37,
   "entries": [
     {
-      "id": "catena-mark-1334-v37",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.37",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:33–37",
-      "excerpt": "Luke added to this account the cause of the darkness, that is, the darkening of the sun.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1341-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.37",
@@ -40,14 +22,32 @@
       ]
     },
     {
-      "id": "catena-mark-1333-v37",
+      "id": "catena-mark-1334-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.37",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:33–37",
+      "excerpt": "Luke added to this account the cause of the darkness, that is, the darkening of the sun.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1339-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.37",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "This most glorious light took away its rays from the world, lest it should see the Lord hanging, and lest the blasphemers should have the benefit of its light. Wherefore it goes on: And when the sixth hour was come, there was darkness over the whole land until the ninth hour.",
+      "excerpt": "These however I suppose were Roman soldiers who did not understand the peculiarity of the Hebrew tongue, but, from His calling Eloi, thought that Elias was called by Him. But if the Jews are understood to have said this, they must be supposed to do this, as accusing Him of folly in calling for the aid of Elias. It goes on: And one ran and filled a sponge full of vinegar, and put it on a reed, and gave him to drink, saying, Let alone: let us see whether Elias will come to take him down. John shews more fully the reason why the vinegar was given to the Lord to drink, saying, that Jesus said, I…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -76,35 +76,17 @@
       ]
     },
     {
-      "id": "catena-mark-1339-v37",
+      "id": "catena-mark-1333-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.37",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "These however I suppose were Roman soldiers who did not understand the peculiarity of the Hebrew tongue, but, from His calling Eloi, thought that Elias was called by Him. But if the Jews are understood to have said this, they must be supposed to do this, as accusing Him of folly in calling for the aid of Elias. It goes on: And one ran and filled a sponge full of vinegar, and put it on a reed, and gave him to drink, saying, Let alone: let us see whether Elias will come to take him down. John shews more fully the reason why the vinegar was given to the Lord to drink, saying, that Jesus said, I…",
+      "excerpt": "This most glorious light took away its rays from the world, lest it should see the Lord hanging, and lest the blasphemers should have the benefit of its light. Wherefore it goes on: And when the sixth hour was come, there was darkness over the whole land until the ninth hour.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1335-v37",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.37",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:33–37",
-      "excerpt": "If this had been the time for an eclipse, some one might have said that this that happened was natural, but it was the fourteenth moon, when no eclipse can take place. There follows: And at the ninth hour Jesus cried with a loud voice, saying, Eloi, Eloi, lama sabachthani.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -145,17 +127,110 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.37:35c06dd5:1"
       ]
     },
     {
-      "id": "catena-mark-1336-v37",
+      "id": "catena-mark-1335-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.37",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:33–37",
+      "excerpt": "If this had been the time for an eclipse, some one might have said that this that happened was natural, but it was the fourteenth moon, when no eclipse can take place. There follows: And at the ninth hour Jesus cried with a loud voice, saying, Eloi, Eloi, lama sabachthani.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.15.37:924b6809:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:37",
+      "excerpt": "But Jesus, having cried out with a loud voice, expired. What the Lord said with this loud voice, Luke clearly indicates, saying: Father, into your hands I commend my spirit. And having said this, he expired (Luke 23). What John writes, however, that when Jesus had received the vinegar, he said: It is finished, and bowing his head, gave up his spirit (John 19), between that which he said: It is finished, and that: And bowing his head, gave up his spirit, the loud voice was emitted, which John kept silent about, but the other three mentioned.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.37"
+    },
+    {
+      "id": "hcf:augustine:mark.15.37:b44def87:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-37-9",
+      "title": "TRACTATES ON JOHN 37.9 on mark 15:37",
+      "excerpt": "Those robbers crucified next to him, did they breathe their last when they wanted to? They were held fast by the chains of the flesh because they were not the creators of the flesh. Fastened by nails, they were tormented for a long time because they were not masters of their infirmity. But the Lord took on flesh in the virgin's womb when he wished it. He came forth to humanity when he wished it. He lived in history as long as he wished it. He departed from the flesh when he wished it. This is a sign of power, not of necessity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractates-on-john-37-9",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.37"
+    },
+    {
+      "id": "hcf:augustine:mark.15.37:7a8d8fcf:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-31-6",
+      "title": "TRACTATES ON JOHN 31.6 on mark 15:37",
+      "excerpt": "He departed by his [own] power; for he had not come by necessity. And so some marveled more at his power of dying than at his power of performing miracles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractates-on-john-31-6",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.37"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.37:d984bdc4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:37",
+      "excerpt": "Jesus gave up His spirit, having cried out with a loud voice, that is, as if summoning death, as the Master who dies by His own authority. And what the cry was, Luke indicated: \"Father, into Your hands I commit My spirit\" (Lk. 23:46). By this the Lord also accomplished for us that the souls of the saints depart into the hands of God. For before, the souls of all were held in Hades, until He came who proclaimed release to the captives.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.37"
+    },
+    {
+      "id": "catena-mark-1342-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.37",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "At the ninth hour, the tenth piece of money which had been lost is found, by the overturning of the house.",
+      "excerpt": "Though the flesh was weak, yet the heavenly voice, which said, Open me the gates of righteousness, (Ps. 117:19) waxed strong. Wherefore there follows: And Jesus cried with a loud voice, and gave up the ghost. We who are of the earth die with a very low voice, or with no voice at all; but He who descended from heaven breathed His last with a loud voice.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -163,6 +238,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.37:bed95efa:0"
       ]
     },
     {
@@ -184,14 +266,14 @@
       ]
     },
     {
-      "id": "catena-mark-1342-v37",
+      "id": "catena-mark-1336-v37",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.37",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "Though the flesh was weak, yet the heavenly voice, which said, Open me the gates of righteousness, (Ps. 117:19) waxed strong. Wherefore there follows: And Jesus cried with a loud voice, and gave up the ghost. We who are of the earth die with a very low voice, or with no voice at all; but He who descended from heaven breathed His last with a loud voice.",
+      "excerpt": "At the ninth hour, the tenth piece of money which had been lost is found, by the overturning of the house.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

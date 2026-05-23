@@ -4,6 +4,31 @@
   "verseNumber": 9,
   "entries": [
     {
+      "id": "catena-john-1465-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.11.9",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 11:6–10",
+      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.11.9:3e088dcd:0"
+      ]
+    },
+    {
       "id": "augustine-john-049-c11-v9",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.9",
@@ -19,24 +44,6 @@
         "augustine",
         "patristic",
         "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1462-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.11.9",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 11:6–10",
-      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
         "john"
       ]
     },
@@ -77,14 +84,14 @@
       ]
     },
     {
-      "id": "catena-john-1465-v9",
+      "id": "catena-john-1466-v9",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.9",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "When men presumed to give advice to God, disciples to their Master, our Lord rebuked them: Jesus answered, Are there not twelve hours in the day? He shewed Himself to be the day, by appointing twelve disciples: i. e. reckoning Matthias in the place of Judas, and passing over the latter altogether. The hours are lightened by the day; that by the preaching of the hours, the world may believe on the day. Follow Me then, saith our Lord, if ye wish not to stumble: If any man walk in the day, he stumbleth not, because he seeth the light of this world: But if a man walk in the night he stumbleth,…",
+      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-1466-v9",
+      "id": "catena-john-1462-v9",
       "relation": "verse",
       "targetVerseId": "kjva:john.11.9",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 11:6–10",
-      "excerpt": "As if to say, The upright need fear no evil: the wicked only have cause to fear. We have done nothing worthy of death, and therefore are in no danger. Or, If any one seeth this world’s light, he is safe; much more he who is with Me.",
+      "excerpt": "To give time for his death and burial, that they might say, he stinketh, and none doubt that it was death, and not a trance, from which he was raised. Then after that saith He to His disciples, Let us go into Judæa again.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -128,6 +135,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.11.9:cc0008e5:0"
       ]
     },
     {
@@ -147,6 +161,125 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.11.9:c986f868:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-62",
+      "title": "Homily on the Gospel of John 62 on john 11:9",
+      "excerpt": "\"Are there not twelve hours of the day?\" He either saith this, that \"he who is conscious to himself of no evil, shall suffer nothing dreadful; only he that doeth evil shall suffer, so that we need not fear, because we have done nothing worthy of death\"; or else that, \"he who seeth the light of this world is in safety; and if he that seeth the light of this world is in safety, much more he that is with Me, if he separate not himself from Me.\" Having encouraged them by these words, He addeth, that the cause of their going thither was pressing, and showeth them that they were about to go not unto Jerusalem, but unto Bethany.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.11.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.11.9:78a3d64d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 11:9",
+      "excerpt": "The Lord encourages them and says: \"Just as one who sees the light does not stumble, but the one who walks at night stumbles, so too the one who does good and walks in deeds of light will not suffer any misfortune, while the one who does evil will suffer misfortune; therefore you have no need to fear, for we have done nothing deserving of death.\"\r\n\r\nOr yet another way: \"If he who sees this light does not stumble, how much more will he not stumble who abides with Me, provided he himself does not fall away from Me. Therefore you also, abiding with Me, the true Light, are afraid in vain.\"\r\n\r\nOthers understand \"day\" as the time before the suffering, and \"night\" as the time of the suffering. So, He says, as long as the \"day\" goes on, that is, while the time of suffering has not yet come, you will not stumble, for you will encounter neither persecution from the Jews nor any other unpleasantness. But when the \"night\" comes, that is, My suffering, then you, thrown into confusion, will gather in one small house out of fear of the Jews. From that time you will experience sorrows and afflictions, and much hostility and trouble. When I, the Light, am no longer living with you bodily, the night of sorrows will envelop you.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.11.9"
+    },
+    {
+      "id": "hcf:athanasius-the-great:john.11.9:c7861b5d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:homily-on-the-resurrection-of-lazarus",
+      "title": "HOMILY ON THE RESURRECTION OF LAZARUS on john 11:9",
+      "excerpt": "Consider what I have said, that the Light is Christ. Everyone who will walk in his commandments will not be laid hold of by evil. These twelve hours that are in the day are the twelve apostles. The devil … is compared with the night. He who walks in the will of the devil will stumble because he does not have the light of Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-on-the-resurrection-of-lazarus",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:john.11.9"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.11.9:f0f2794d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-7",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 7 on john 11:9",
+      "excerpt": "Perhaps he compares to the ever-moving course of the day, the easily-swayed and novelty-loving mind of people, which is not established in one opinion but vacillates from one way of thinking to another, just as the day changes from one hour to another. This is also how the words \"are there twelve hours in the day\" can be understood. In other words, \"I,\" he says, \"am the Day and the Light. Therefore, just as it is not possible for the light of the day to fail without having completed its appointed time, so it is not among possibilities that the illumination that proceeds from me should be shrouded from the Jews without having fully reached its fitting measure of love for humankind.\" And he speaks of the time of his presence as \"day,\" and of that before it as \"night,\" as the Lord also does when he says, \"We must work the works of him that sent us while it is day.\" This therefore is what he says here: \"This is not the time for me to separate myself from the Jews, even though they are unholy. Instead, I must do everything that I can for their healing. For they must not now be punished by having the divine grace (like the light of the sun) withdrawn from them. But just as the light of the day does not fail until the twelve hours have been completed, so the illumination that proceeds from me is not shrouded before the proper time. However, until I am crucified I remain among the Jews, sending forth unto them like light the understanding of the knowledge of God. For since the Jews are in the darkness of unbelief, and so stumble on me as on a stone, I must go back to them and enlighten them so that they may desist from their madness in fighting against God.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-7",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.11.9"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.11.9:4eb889f7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-7",
+      "title": "Commentary on the Gospel of John, Book 7 on john 11:9",
+      "excerpt": "Perhaps He compares to the ever-moving course of the day, the easily-swayed and novelty-loving mind of men, which is not established in one opinion, but vacillates from one way of thinking to another, just as the day changes from one hour to another. And thus also thou wilt understand the words: Are there not twelve hours in the day? That is, \"I,\" says He, \"am the Day and the Light. Therefore, just as it is not possible for the light of the day to fail, without having completed its appointed time; so it is not among possibilities that the illumination which proceeds from Me should be shrouded from the Jews, without having fully reached its fitting measure of philanthropy.\" And He speaks of the time of His presence as \"day,\" and of that before it as \"night;\" as also when the Lord says: We must work the works of Him that sent us, while it is day. This therefore is what He here says: \"It is not now a time for Me to separate Myself from the Jews, even though they be unholy, but I must do all things that pertain to their healing. For they must not now be punished, by having the Divine grace (like the light of the sun) withdrawn from them. But just as the light of the day does not fail until the twelve hours have been completed, so the illumination that proceeds from Me is not shrouded before the proper time; but until I am crucified I remain among the Jews, sending forth unto them like light the understanding of the knowledge of God. For since the Jews are in the darkness of unbelief, and so stumble at Me as at a stone, I must go back to them and enlighten them, that they may desist from their madness in fighting against God.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.11.9"
+    },
+    {
+      "id": "hcf:origen:john.11.9:fc25a075:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:fragment-137-on-the-gospel-of-john",
+      "title": "FRAGMENT 137 ON THE GOSPEL OF JOHN on john 11:9",
+      "excerpt": "As the day is divided into twelve hours, accordingly the twelve patriarchs and the choir of the apostles are equal in number with the hours of the day, having as their Sun Christ our God, who is also the spiritual Day, from whom there is learning and the enlightenment of its knowledge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-137-on-the-gospel-of-john",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.11.9"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.11.9:be662804:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 11:9",
+      "excerpt": "1485 Our Lord dispels this fear by strengthening them. The Evangelist says, Jesus answered, his disciples, Are there not twelve hours in the day? First, we see something about the time; secondly, what time is suited for walking; thirdly, what time is not.\r\n\r\n1486 To understand this passage we should note that it has been explained in three ways. The first way is that of Chrysostom, and is this. Are there not twelve hours in the day? is like saying: You hesitate to go up to Judea because the Jews recently wanted to stone me; but the day has twelve hours, and what happens at one hour does not happen in another. So, although they would have stoned me before, they would not want to do this at another hour: \"For everything there is a season\" (Eccl 3:1); \"Every matter has its time and way\" (Eccl 8:6).\r\n\r\n1487 A literal question arises because he is speaking here either of the natural or of the artificial day. If he is speaking of the natural day, then what he says is false: because the natural day does not have twelve but twenty-four hours. Again, if he is speaking of the artificial day, his statement is false: because it is true only at the equinox, for not all artificial days have twelve hours. I answer that we should understand this to refer to the artificial day, because all artificial days have twelve hours. For the hours of such days are distinguished in two ways. Some are equal in length and some are not. Those equal in length are distinguished according to the circle of the equator: and according to this not all days have twelve hours, but some have more and some less, except at the equator. The hour not equal in length are more distinguished according to the ascensions of the zodiac on account of its obliquity: because the zodiac does not ascend equally in all its parts, but at the equator equally. Now each artificial day has twelve of these unequal hours, because every day has six signs which ascend during the day, and six at night; but those which ascend in summer have a slower motion than those which ascend in winter, and of course the ascent of each sign makes up two hours.\r\n\r\n1488 If any one walks in the day, that is, honorably, and without consciousness of any evil - \"Let us conduct ourselves becomingly as in that day\" (Rom 13:13) - he does not stumble, that is, he does not come upon anything that might harm him. And this is because he sees the light of this world, i.e., the light of righteousness is in him: \"Light dawns for the righteous, and joy for the upright in heart\" (Ps 97:11). It is like our Lord were saying: We can go securely because we are walking during the day.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.11.9"
     }
   ]
 }

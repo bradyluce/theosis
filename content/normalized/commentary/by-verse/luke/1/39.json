@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.39:f9abc6f7:0"
       ]
     },
     {
@@ -55,17 +62,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.39:707dad36:0"
       ]
     },
     {
-      "id": "catena-luke-0151-v39",
+      "id": "catena-luke-0156-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.39",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
-      "excerpt": "The grace of the Holy Spirit knows not of slow workings. Learn, ye virgins, not to loiter in the streets, nor mix in public talk.",
+      "excerpt": "She who had hid herself because she conceived a son, began to glory that she carried in her womb a prophet, and she who had before blushed, now gives her blessing; as it follows, And she spake out with a loud voice, Blessed art thou among women. With a loud voice she exclaimed when she perceived the Lord’s coming, for she believed it to be a holy birth. But she says, Blessed art thou among women. For none was ever partaker of such grace or could be, since of the one Divine seed, there is one only parent.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,24 +108,6 @@
       ]
     },
     {
-      "id": "catena-luke-0156-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.39",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "She who had hid herself because she conceived a son, began to glory that she carried in her womb a prophet, and she who had before blushed, now gives her blessing; as it follows, And she spake out with a loud voice, Blessed art thou among women. With a loud voice she exclaimed when she perceived the Lord’s coming, for she believed it to be a holy birth. But she says, Blessed art thou among women. For none was ever partaker of such grace or could be, since of the one Divine seed, there is one only parent.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0161-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.39",
@@ -120,24 +116,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
       "excerpt": "She says it not ignorantly, for she knew it was by the grace and operation of the Holy Spirit that the mother of the prophet should be saluted by the mother of his Lord, to the advancement and growth of her own pledge; but being aware that this was of no human deserving, but a gift of Divine grace, she therefore says, Whence is this to me, that is, By what right of mine, by what that I have done, for what good deeds?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0165-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.39",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "You see that Mary doubted not but believed, and therefore the fruit of faith followed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -166,6 +144,42 @@
       ]
     },
     {
+      "id": "catena-luke-0151-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.39",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "The grace of the Holy Spirit knows not of slow workings. Learn, ye virgins, not to loiter in the streets, nor mix in public talk.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0165-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.39",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "You see that Mary doubted not but believed, and therefore the fruit of faith followed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0169-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.39",
@@ -177,6 +191,49 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0168-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.39",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "But every soul which has conceived the word of God in the heart, straightway climbs the lofty summits of the virtues by the stairs of love, so as to be able to enter into the city of Juda, (into the citadel of prayer and praise, and abide as it were for three months in it,) to the perfection of faith, hope, and charity.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.39:f34a3776:1"
+      ]
+    },
+    {
+      "id": "catena-luke-0166-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.39",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "Nor is it to be wondered at, that our Lord, about to redeem the world, commenced His mighty works with His mother, that she, through whom the salvation of all men was prepared, should herself be the first to reap the fruit of salvation from her pledge.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -220,68 +277,14 @@
       ]
     },
     {
-      "id": "catena-luke-0166-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.39",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "Nor is it to be wondered at, that our Lord, about to redeem the world, commenced His mighty works with His mother, that she, through whom the salvation of all men was prepared, should herself be the first to reap the fruit of salvation from her pledge.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0168-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.39",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "But every soul which has conceived the word of God in the heart, straightway climbs the lofty summits of the virtues by the stairs of love, so as to be able to enter into the city of Juda, (into the citadel of prayer and praise, and abide as it were for three months in it,) to the perfection of faith, hope, and charity.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0150-v39",
+      "id": "catena-luke-0162-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.39",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
-      "excerpt": "For Jesus who was in her womb hastened to sanctify John, still in the womb of his mother. Whence it follows, with haste.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0152-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.39",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "She went into the mountains, because Zacharias dwelt there. As it follows, To a city of Juda, and entered into the house of Zacharias. Learn, O holy women, the attention which ye ought to shew for your kinswomen with child. For Mary, who before dwelt alone in the secret of her chamber, neither virgin modesty caused to shrink from the public gaze, nor the rugged mountains from pursuing her purpose, nor the tediousness of the journey from performing her duty. Learn also, O virgins, the lowliness of Mary. She came a kinswoman to her next of kin, the younger to the elder, nor did she merely come…",
+      "excerpt": "Now in saying this, she coincides with her son. For John also felt that he was unworthy of our Lord’s coming to him. But she gives the name of “the mother of our Lord” to one still a virgin, thus forestalling the event by the words of prophecy. Divine foreknowledge brought Mary to Elisabeth, that the testimony of John might reach the Lord. For from that time Christ ordained John to be a prophet. Hence it follows, For, to, as soon as the voice of thy salutation sounded, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -310,6 +313,56 @@
       ]
     },
     {
+      "id": "catena-luke-0150-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.39",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "For Jesus who was in her womb hastened to sanctify John, still in the womb of his mother. Whence it follows, with haste.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.1.39:0e29361f:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0152-v39",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.39",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "She went into the mountains, because Zacharias dwelt there. As it follows, To a city of Juda, and entered into the house of Zacharias. Learn, O holy women, the attention which ye ought to shew for your kinswomen with child. For Mary, who before dwelt alone in the secret of her chamber, neither virgin modesty caused to shrink from the public gaze, nor the rugged mountains from pursuing her purpose, nor the tediousness of the journey from performing her duty. Learn also, O virgins, the lowliness of Mary. She came a kinswoman to her next of kin, the younger to the elder, nor did she merely come…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.1.39:1c9e4118:1"
+      ]
+    },
+    {
       "id": "catena-luke-0158-v39",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.39",
@@ -318,24 +371,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
       "excerpt": "But because there have been other holy women who yet have borne sons stained with sin, she adds, And blessed is the fruit of thy womb. Or another interpretation is, having said, Blessed art thou among women, she then, as if some one enquired the cause, answers, And blessed is the fruit of thy womb: as it is said, Blessed be he that cometh in the name of the Lord. The Lord God, and he hath shewed us light; (Ps. 118:26, 27.) for the Holy Scriptures often use and, instead of because.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0162-v39",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.39",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "Now in saying this, she coincides with her son. For John also felt that he was unworthy of our Lord’s coming to him. But she gives the name of “the mother of our Lord” to one still a virgin, thus forestalling the event by the words of prophecy. Divine foreknowledge brought Mary to Elisabeth, that the testimony of John might reach the Lord. For from that time Christ ordained John to be a prophet. Hence it follows, For, to, as soon as the voice of thy salutation sounded, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -380,6 +415,75 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:origen:luke.1.39:e878dd54:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-the-gospel-of-luke-7-1",
+      "title": "HOMILIES ON THE GOSPEL OF LUKE 7.1 on luke 1:39",
+      "excerpt": "Better men go to weaker men to give them some advantage by their visits. Thus the Savior came to John to sanctify John's baptism.… Jesus was in her womb, and he hastened to sanctify John, who was still in his own mother's womb. Before Mary came and greeted Elizabeth, the infant did not rejoice in her womb. But as soon as Mary spoke the word that the Son of God, in his mother's womb, had supplied, \"the infant [John] leaped in joy.\" At that moment Jesus made his forerunner a prophet for the first time.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.1.39"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.39:bf65dce9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:39",
+      "excerpt": "The Virgin, having heard from the Angel that Elizabeth had conceived, hastened to her, partly rejoicing in the good fortune of her kinswoman, and partly, as one most prudent, wishing to confirm conclusively whether what had appeared to her was true, so that by the truthfulness of what was said about Elizabeth she might not doubt what concerned herself. For although she hoped, she nevertheless feared lest she might somehow be deceived, and this was not from unbelief, but from a desire to know the matter more precisely. Zachariah lived in the hill country; therefore the Virgin hastens there.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.39"
+    },
+    {
+      "id": "hcf:bede:luke.1.39:cafe5c02:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-4",
+      "title": "Homilies on the Gospels 1.4 on luke 1:39",
+      "excerpt": "She went so that she could offer her congratulations concerning the gift which she had learned her fellow servant had received. This was not in order to prove the word of the angel by the attestation of a woman. Rather it was so that as an attentive young virgin she might commit herself to ministry to a woman of advanced age.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.39"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.39:c164b45a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:39",
+      "excerpt": "(Geometer.) But to Elisabeth alone she has recourse, as she was wont to do from their relationship, and other close bonds of union.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.39"
     }
   ]
 }

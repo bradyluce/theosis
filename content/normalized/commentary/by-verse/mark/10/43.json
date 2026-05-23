@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.10.43:4c2a7ece:0"
       ]
     },
     {
@@ -74,6 +81,23 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.10.43:2036d366:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:43",
+      "excerpt": "But My disciples, He says, are not so: rather, whoever among them wishes to be great, let him serve all, because this too is a mark of a great soul — to endure from all and to serve all.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.43"
     }
   ]
 }

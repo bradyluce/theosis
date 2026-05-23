@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.27.1:27027c8c:0"
       ]
     },
     {
@@ -30,6 +37,31 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 27:1–5",
       "excerpt": "Observe the evil zeal of the Chief Priests; they watched the whole night with a view to this murder. And they gave Him up to Pilate bound, for such was their practice to send bound to the judge any whom they had sentenced to death. Raban.:932 Though it should be observed that they did not now first bind Him, but before, when they first laid hands upon Him in the garden, as John relates. John 18:12",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.27.1:49db3775:2"
+      ]
+    },
+    {
+      "id": "catena-matt-3897-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.27.1",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 27:1–5",
+      "excerpt": "Judas, when he saw that the Lord was condemned to death, returned the money to the Priests, as though it had been in his power to change the minds of His persecutors.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -55,24 +87,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3897-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.27.1",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 27:1–5",
-      "excerpt": "Judas, when he saw that the Lord was condemned to death, returned the money to the Priests, as though it had been in his power to change the minds of His persecutors.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.27.1:3a269cca:0"
       ]
     },
     {
@@ -112,24 +133,6 @@
       ]
     },
     {
-      "id": "catena-matt-3894-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.27.1",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 27:1–5",
-      "excerpt": "They supposed that by His death they should crush His doctrine, and the belief in Him of those who believed Him to be the Son of God. With such purpose against Him they bound Jesus, Who looses them that are bound. marg. note: see [Isa 61:1]",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-3898-v1",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.27.1",
@@ -156,6 +159,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 27:1–5",
       "excerpt": "But when the Devil leave any one, he watches his time for return, and having taken it, he leads him into a second sin, and then watches for opportunity for a third deceit. So the man who had married his father’s wife afterwards repented him of this sin, 1 Cor 5:1 but again the Devil resolved so to augment this very sorrow of repentance, that his sorrow being made too abundant might swallow up the sorrower. Something like this took place in Judas, who after his repentance did not preserve his own heart, but received that more abundant sorrow supplied to him by the Devil, who sought to swallow…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3894-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.27.1",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 27:1–5",
+      "excerpt": "They supposed that by His death they should crush His doctrine, and the belief in Him of those who believed Him to be the Son of God. With such purpose against Him they bound Jesus, Who looses them that are bound. marg. note: see [Isa 61:1]",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
@@ -200,6 +221,108 @@
         "patristic",
         "matthew"
       ]
+    },
+    {
+      "id": "hcf:jerome:matthew.27.1:95817162:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 27:1",
+      "excerpt": "(Chapter 27, verses 1 onwards) Now when morning came, all the chief priests and elders of the people took counsel against Jesus to put him to death. And they bound him, and led him away, and delivered him to Pontius Pilate the governor. He was not only taken to Pilate, but also to Herod, so that both of them might mock the Lord. And see the eagerness of the priests for evil. They stayed awake all night in order to commit murder. And they handed him over bound to Pilate. For they had this custom, that whoever they had condemned to death, they would hand over to the judge bound.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.27.1"
+    },
+    {
+      "id": "hcf:jerome:matthew.27.1:f3eb2f0d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-4-27-1-2",
+      "title": "COMMENTARY ON MATTHEW 4.27.1-2 on matthew 27:1",
+      "excerpt": "The Lord was led not only to Pilate but also to Herod so that he could be mocked by both. Notice the solicitude with which the priests carried out their evil doing; they remained vigilant throughout the night in preparation for committing murder. \"And they delivered him bound to Pilate.\" It was their customary practice to bind a man who had been condemned to death and to hand him over to his judge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-4-27-1-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.27.1"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.27.1:34b80f8e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-85",
+      "title": "Homily on the Gospel of Matthew 85 on matthew 27:1",
+      "excerpt": "For because they were desirous to put Him to death, but were not able themselves because of the feast, they lead Him to the governor.\r\n\r\nBut mark, I pray thee, how the act was forced on, so as to take place at the feast. For so was it typified from the first.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.27.1"
+    },
+    {
+      "id": "hcf:leo-the-great:matthew.27.1:b3007bda:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "leo-the-great",
+      "workId": "hcf:work:leo-the-great:sermon-41-5-2",
+      "title": "SERMON 41.5.2 on matthew 27:1",
+      "excerpt": "O religious leaders [of the Jews], this morning was far from your time of ascendency, as it might have seemed to you. Your sun was in fact beginning to set. The dawn you expected did not come. A night of blackest darkness was brooding over your spiteful hearts. Out of this morning would come the overthrow of the temple and its altars, the surpassing of the law and the prophets, the undoing of the kingship and priesthood, turning youth to continual lament. For you set out that morning on a mad and bloody course. You offered up to die the Author of life, the Lord of glory. Pilate—that terror-stricken judge—was overcome by your shouts, so that he chose a man for pardon who was a murderer and demanded the crucifixion of the Savior of the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-41-5-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c461"
+      ],
+      "targetVerseId": "kjva:matthew.27.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.27.1:d78b84ae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 27:1",
+      "excerpt": "When the morning was come, all the chief priests and elders of the people took counsel against Jesus to put Him to death: and when they had bound Him, they led Him away, and delivered Him to Pontius Pilate the governor. Behold how the devil held them all in his grasp, convincing them to commit murder on such high days when they ought to have been making many sacrifices and offerings for their other sins, and for their purification and cleansing. But instead they bound Him and led Him away to Pilate the governor, who was from Pontus but was subject to the Romans who had sent him to be the governor of Judea. The chief priests and elders handed the Lord over to Pilate on the grounds that He had fomented sedition and had plotted against the emperor.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.27.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.27.1:057ea20d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 27:1",
+      "excerpt": "Above the evangelist narrated what Christ suffered from the Jews; here he narrates what he suffered from the Gentiles: and he does four things. First, he touches on how he was handed over to the Gentiles; secondly, how he is examined; thirdly, how he is condemned; fourthly, how he suffers. The second is at \"and Jesus stood before the governor etc.\"; the third at \"on the solemn day the governor was accustomed etc.\"; the fourth at \"then the soldiers of the governor taking Jesus into the hall etc.\" Concerning the first, two things. First, he narrates the handing over by which he was delivered into the hands of the Gentiles; secondly, the death and sin of the betrayer, at \"then Judas, who betrayed him, seeing that he was condemned.\" Concerning the first, three things. First, he assigns the motive; secondly, the manner; thirdly, the deed. The cause was the counsel taken concerning his death: and according to this he touches on three things from which their sin is aggravated. First, from their eagerness, and this he touches on when he says \"and when morning was come, all the chief priests held a council,\" because although they had been occupied all night in mockery, yet in the morning they assembled. Hence they were indeed eager; Job 24:14: \"the murderer riseth at the very break of day.\" Likewise, it is aggravated by its universality, because \"all the chief priests.\" For if it had been one, or two, it would be excusable; but all assembled; Isaiah 1:6: \"from the sole of the foot unto the top of the head, there is no soundness therein\"; therefore he says \"all the chief priests\"; Ezekiel 11:2: \"son of man, these are the men that study iniquity, and frame a most wicked counsel.\" Likewise, from their cruelty, because they could have considered many other things, but they considered how they might put him to death; Proverbs 1:16: \"their feet run to evil, and make haste to shed blood.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.27.1"
     }
   ]
 }

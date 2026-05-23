@@ -4,24 +4,6 @@
   "verseNumber": 3,
   "entries": [
     {
-      "id": "catena-mark-0006-v3",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.3",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "But this is not written in Isaiah, but in Malachi, the last of the twelve prophets.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0010-v3",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.3",
@@ -37,6 +19,38 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:mark.1.3:d8103c54:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0006-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.3",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "But this is not written in Isaiah, but in Malachi, the last of the twelve prophets.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:untitled-commentary"
+      ],
+      "alternateIds": [
+        "hcf:jerome:mark.1.3:3112745b:0"
       ]
     },
     {
@@ -55,24 +69,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0009-v3",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.3",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "Or otherwise, we must understand, that, although these words are not found in Isaiah, still the sense of them is found in many other places, and most clearly in this which he has subjoined, The voice of one crying in the wilderness. For that which Malachi has called, the angel to be sent before the face of the Lord, to prepare His way, is the same thing as Isaiah has said is to be heard, the voice of one crying in the wilderness, saying, Prepare ye the way of the Lord. But in each sentence alike, the way of the Lord to be prepared is proclaimed. It may be, too, that Isaiah occurred to the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.3:fe7f380e:0"
       ]
     },
     {
@@ -84,6 +87,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "But John is called an angel not by community of nature, according to the heresy of Origena, but by the dignity of his office; for angel in Greek is in Latin, nuntius, (messenger,) by which name that man is rightly called, who was sent by God, that he might bear witness of the light, and announce to the world the Lord, coming in the flesh: since it is evident that all who are priests may by their office of preaching the Gospel be called angels, as the prophet Malachi says, The lips of the priest keep knowledge, and they seek the law at his mouth, because he is the Angel of the Lord of hosts.…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0009-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.3",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "Or otherwise, we must understand, that, although these words are not found in Isaiah, still the sense of them is found in many other places, and most clearly in this which he has subjoined, The voice of one crying in the wilderness. For that which Malachi has called, the angel to be sent before the face of the Lord, to prepare His way, is the same thing as Isaiah has said is to be heard, the voice of one crying in the wilderness, saying, Prepare ye the way of the Lord. But in each sentence alike, the way of the Lord to be prepared is proclaimed. It may be, too, that Isaiah occurred to the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -145,6 +166,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.3:268a1bed:0"
       ]
     },
     {
@@ -166,6 +194,177 @@
       ]
     },
     {
+      "id": "hcf:bede:mark.1.3:c496da66:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:3",
+      "excerpt": "A voice crying out in the desert: Prepare the way of the Lord, etc. It is clear that the only-begotten Son is called the Word of the Father, as John attests, who says: In the beginning was the Word, and the Word was with God, and the Word was God (John 1). And we know from our speech itself that the voice sounds first, so that the word can be heard afterward. Therefore, John is called a voice by the prophet because the word precedes. Thus, the voice is said to precede the Lord's coming because through his ministry the Word of the Father is heard by men. He also cries out in the desert because he announces the consolation of redemption to the forsaken and desolate Judah. What he cries out, however, is revealed when it is added: Prepare the way of the Lord, make straight his paths. Whoever preaches true faith and good works, what else does he do but prepare the way for the Lord to enter the hearts of the listeners, so that the power of grace may penetrate, the light of truth may shine, and make straight paths for God, by forming pure thoughts in the mind through the word of good preaching? Indeed it must be noted that from the prophetic testimonies which Mark has placed, one is only found in Isaiah, while the other is found in Malachi. Yet the evangelist should not be thought to have erred or been deceitful, who says this was written in Isaiah which Isaiah did not write, but rather it should be understood that even if the words placed from Malachi are not found in Isaiah, the sense of them is found in Isaiah, and in several other places, and more clearly in what he himself added here: A voice crying out in the desert: Prepare the way of the Lord, make straight his paths. For who does not see how great the agreement is in both statements? For what Malachi said, that an angel should be sent before the face of the Lord who would prepare his way, is indeed the same as what Isaiah said, that a voice crying out should be heard in the desert, who said: Prepare the way of the Lord, make straight his paths. Because just as John could rightly be called an angel, because he preceded the face of the Lord by preaching, so he could rightly be called the voice, because he preceded the Word of God by sounding it, as was stated above. But in both statements the way of the Lord is similarly preached to be prepared. Therefore, the evangelist is not mistaken, who writes this said by Isaiah: which even if not in the same words, nevertheless he finds written by him in the same sense. However, it could have happened that in the mind of Mark writing the Gospel, Isaiah occurred instead of Malachi, as happens. But he would without any doubt correct this, at least being admonished by others who could read this while he was still living in the flesh, unless he thought that the name of another prophet occurred to his memory, which was governed by the Holy Spirit, not without reason, because the Lord ordained it to be written thus. But why the Lord ordained it so, that most useful cause should be easily thought of, namely, that it is thus hinted that all the holy prophets spoke by one spirit in wonderful agreement, which is much greater than if all the sayings of all the prophets were spoken by the mouth of one man. And therefore, whatever the Holy Spirit said through them should be undoubtedly accepted, and each one's words belong to all, and all to each one. Therefore, what has been said through Isaiah is as much Malachi's as Isaiah's, and what has been said through Malachi is as much Isaiah's as Malachi's, what need was there for Mark to correct when reading to himself what name occurred for another? And rather, following the authority of the Holy Spirit, by whom he certainly more than us felt his mind was governed, thus he would leave this written as it is? For the Lord had ordained to instruct him in this way to show us that there is such great harmony in his words among the prophets, that we should most fittingly even attribute what is found said by Malachi to Isaiah.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:jerome:mark.1.3:b92a5593:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:letter-57-to-pammachius-9",
+      "title": "LETTER 57 TO PAMMACHIUS 9 on mark 1:3",
+      "excerpt": "The quotation is made up from two prophets, Malachi and Isaiah. From the first part: \"Behold I send my messenger to prepare the way before me,\" occurs at the close of Malachi. But the second part: \"The voice of one crying,\" etc., we read in Isaiah. On what ground then has Mark in the very beginning of his book set the words: \"As it is written in the prophet Isaiah, Behold I send my messenger,\" when, as we have said, it is [in part] not written in Isaiah at all, but in Malachi, the last of the twelve prophets? Let ignorant presumption solve this nice question if it can. I will ask pardon for being in the wrong.… The apostle has not rendered his original word for word, but using a paraphrase, he has given the sense in different terms.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.3:f4ca51ad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:3",
+      "excerpt": "\"The voice of one crying in the wilderness,\" that is, in the wilderness of the Jordan, and even more so in the Jewish synagogue, which was a wilderness with respect to good. \"The way\" means the New Testament, \"the paths\" mean the Old, as repeatedly violated by the Jews. For the way, that is, for the New Testament, they had to prepare themselves, and the paths of the Old they had to make straight, for although in ancient times they had received them, afterwards they turned aside from their paths and went astray.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:augustine:mark.1.3:cf624c2d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on mark 1:3",
+      "excerpt": "Quaest. nov. et vet. Test.lvii: For knowing that all things are to be referred to their author, he has brought these sayings back to Isaiah, who was the first to intimate the sense. Lastly, after the words of Malachi, he immediately subjoins, \"The voice of one crying in the wilderness,\" in order to connect the words of each prophet, belonging as they do to one meaning, under the person of the elder prophet.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.1.3:b8c74033:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-7",
+      "title": "Forty Gospel Homilies, Homily 7 on mark 1:3",
+      "excerpt": "\"I am the voice of one crying in the wilderness: Make straight the way of the Lord, as Isaiah the prophet said.\" You know, dearest brothers, that the only-begotten Son is called the Word of the Father, as John testifies when he says: \"In the beginning was the Word, and the Word was with God, and the Word was God.\" And from your own manner of speaking you recognize that the voice sounds first, so that the word may afterward be heard. Therefore John asserts that he is the voice, because he precedes the Word. And so, going before the coming of the Lord, he is called a voice, because through his ministry the Word of the Father is heard by men. He also cries out in the wilderness, because he announces the comfort of the Redeemer to abandoned and forsaken Judea. But what he cries out he indicates when he adds: \"Make straight the way of the Lord.\" The way of the Lord is made straight to the heart when the word of truth is humbly heard. The way of the Lord is made straight to the heart when one's life is prepared according to his commandment.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.1.3:d8f82bf0:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-20",
+      "title": "Forty Gospel Homilies, Homily 20 on mark 1:3",
+      "excerpt": "As it is written in the book of the words of Isaiah the prophet: The voice of one crying in the wilderness, Prepare the way of the Lord, make his paths straight. Indeed, the same John the Baptist, when asked who he was, answered, saying: I am the voice of one crying in the wilderness. He, as was said by us before, was called a voice by the prophet because he preceded the Word. But what he cried out is revealed when it is added: Prepare the way of the Lord, make his paths straight. Everyone who preaches right faith and good works, what else does he do but prepare a way for the coming Lord into the hearts of his hearers? So that the power of grace may penetrate, so that the light of truth may illuminate, so that he may make straight paths for God, while he forms pure thoughts in the mind through the word of good preaching.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:hilary-poitiers:mark.1.3:dcaad1cf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:3",
+      "excerpt": "(de Trin. iii. 11) He has testified, that Christ was the Son of God, not in name only, but by His own proper nature. We are the sons of God, but He is not a son as we are; for He is the very and proper Son, by origin, not by adoption; in truth, not in name; by birth, not by creation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:hcf-maximus-of-turin:mark.1.3:0f633730:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-maximus-of-turin",
+      "workId": "hcf:work:hcf-maximus-of-turin:sermon-6",
+      "title": "SERMON 6 on mark 1:3",
+      "excerpt": "Voice and crying go together: the voice preaches faith; the cry calls for repentance; the voice, comfort; the cry, danger; the voice sings mercy; the cry announces judgment.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-6",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c465"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:origen:mark.1.3:3df0afe8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-john-6-24",
+      "title": "COMMENTARY ON JOHN 6.24 on mark 1:3",
+      "excerpt": "Mark took two prophecies spoken in different places by two prophets and conflated them into one, so as to declare: \"As it is written in Isaiah the Prophet …\" \"The voice of one crying in the wilderness,\" which is indeed recorded immediately after the narrative about Hezekiah's recovery from his sickness. This is then conflated with \"Behold I send my messenger to prepare the way before me,\" from Malachi. Both John and Mark compress in various ways the quotation from Isaiah, Mark by reading \"His paths\" for \"the paths of our God\" and by omitting \"before me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
+      "id": "hcf:hcf-victorinus-of-pettau:mark.1.3:6419f7ac:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-victorinus-of-pettau",
+      "workId": "hcf:work:hcf-victorinus-of-pettau:commentary-on-the-apocalypse-of-the-blessed-john-from-the-fourth-chapter",
+      "title": "Commentary on the Apocalypse of the Blessed John, From the Fourth Chapter on mark 1:3",
+      "excerpt": "\"The first living creature was like to a lion, and the second was like to a calf, and the third had a face like to a man, and the fourth was like to a flying eagle; and they had six wings, and round about and within they were full of eyes; and they had no rest, saying, Holy, holy, holy, Lord Omnipotent. And the four and twenty elders, failing down before the throne, adored God.\" The four and twenty elders arethe twenty-four books of the prophets and of the law, which give testimonies of the judgment. Moreover, also, they are the twenty-four fathers-twelve apostles and twelve patriarchs.And in that the living creatures are different in appearance, this is the reason: the living creature like to a lion designates Mark, in whom is heard the voice of the lion roaring in the desert. And in the figure of a man, Matthew strives to declareto us the genealogy of Mary, from whom Christ took flesh. Therefore, in enumerating from Abraham to David, and thence to Joseph, he spoke of Him as if of a man: therefore his announcement sets forth the image of a man. Luke, in narrating the priesthood of Zacharias as he offers a sacrifice for the people, and the angel that appears to him with respect of the priesthood, and the victim in the same description bore the likeness of a calf. John the evangelist, like to an eagle hastening on uplifted wings to greater heights, argues about the Word of God. Mark, therefore, as an evangelist thus beginning, \"The beginning of the Gospel of Jesus Christ, as it is written in Isaiah the prophet; \" The voice of one crying in the wilderness,\" -has the effigy of a lion. And Matthew, \"The hook of the generation of Jesus Christ, the son of David, the son of Abraham: \" this is the form of a man. But Luke said, \"There was a priest, by name Zachariah, of the course of Abia, and his wife was of the daughters of Aaron: \" this is the likeness of a calf. But John, when he begins, \"In the beginning was the Word, and the Word was with God, and the Word was God,\" sets forth the likeness of a flying eagle. Moreover, not only do the evangelists express their four similitudes in their respective openings of the Gospels, but also the Word itself of God the Father Omnipotent, which is His Son our Lord Jesus Christ, bears the same likeness in the time of His advent. When He preaches to us, He is, as it were, a lion and a lion's whelp. And when for man's salvation He was made man to overcome death, and to set all men free, and that He offered Himself a victim to the Father on our behalf, He was called a calf. And that He overcame death and ascended into the heavens, extending His wings and protecting His people, He was named a flying eagle. Therefore these announcements, although they are four, yet are one, because it proceeded from one mouth. Even as the river in paradise, although it is one, was divided into four heads. Moreover, that for the announcement of the New Testament those bring creatures had eyes within and without, shows the spiritual providence which both looks into the secrets of the heart, and beholds the things which are coming after that are within and without.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c304"
+      ],
+      "targetVerseId": "kjva:mark.1.3"
+    },
+    {
       "id": "catena-mark-0007-v3",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.3",
@@ -174,6 +373,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "But it may be said that it is a mistake of the writer. Otherwise it may be said, that he has compressed into one, two prophecies delivered in different places by two prophets; for in the prophet Isaiah it is written after the story of Hezekiah, The voice of one crying in the wilderness; but in Malachi, Behold, I send mine angel. The Evangelist therefore, taking parts of two prophecies, has put them down as spoken by Isaiah, and refers them here to one passage, without mentioning, however, by whom it is said, Behold, I send mine angel.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.3:e1100d67:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0016-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.3",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "But the prophecy, by saying, In the wilderness, plainly shews that the divine teaching was not in Jerusalem, but in the wilderness, which was fulfilled to the letter by John the Baptist in the wilderness of Jordan, preaching the healthful appearing of the Word of God. (non occ.). The word of prophecy also shews, that besides the wilderness, which was pointed out by Moses, where he made paths, there was another wilderness, in which it proclaimed that the salvation of Christ was present.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -192,6 +416,56 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "For knowing that all things are to be referred to their author, he has brought these sayings back to Isaiah, who was the first to intimate the sense. Lastly, after the words of Malachi, he immediately subjoins, The voice of one crying in the wilderness, in order to connect the words of each prophet, belonging as they do to one meaning, under the person of the elder prophet.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-augustine:mark.1.3:90289199:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0019-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.3",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "Or else, Prepare ye the way of the Lord, that is, act out repentance and preach it; make his paths straight, that walking in the royal road, we may love our neighbours as ourselves, and ourselves as our neighbours. For he who loves himself, and loves not his neighbour, turns aside to the right; for many act well, and do not correct their neighbour well, as Eli. He, on the other hand, who, hating himself, loves his neighbour, turns aside to the left; for many, for instance, rebuke well, but act not well themselves, as did the Scribes and Pharisees. Paths are mentioned after the way, because…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.3:dcc414c3:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0015-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.3",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:2–3",
+      "excerpt": "But it is called the voice of one crying, for we are wont to use a cry to deaf persons, and to those afar off, or when we are indignant, all which things we know applied to the Jews; for salvation is far from the wicked, and they stopped their ears like deaf adders, and deserved to hear indignation, and wrath, and tribulation from Christ.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -220,42 +494,6 @@
       ]
     },
     {
-      "id": "catena-mark-0015-v3",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.3",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "But it is called the voice of one crying, for we are wont to use a cry to deaf persons, and to those afar off, or when we are indignant, all which things we know applied to the Jews; for salvation is far from the wicked, and they stopped their ears like deaf adders, and deserved to hear indignation, and wrath, and tribulation from Christ.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0016-v3",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.3",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "But the prophecy, by saying, In the wilderness, plainly shews that the divine teaching was not in Jerusalem, but in the wilderness, which was fulfilled to the letter by John the Baptist in the wilderness of Jordan, preaching the healthful appearing of the Word of God. (non occ.). The word of prophecy also shews, that besides the wilderness, which was pointed out by Moses, where he made paths, there was another wilderness, in which it proclaimed that the salvation of Christ was present.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0017-v3",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.3",
@@ -264,24 +502,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:2–3",
       "excerpt": "Or else the voice and the cry is in the desert, because they were deserted by the Spirit of God, as a house empty, and swept out; deserted also by prophet, priest, and king.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0019-v3",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.3",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:2–3",
-      "excerpt": "Or else, Prepare ye the way of the Lord, that is, act out repentance and preach it; make his paths straight, that walking in the royal road, we may love our neighbours as ourselves, and ourselves as our neighbours. For he who loves himself, and loves not his neighbour, turns aside to the right; for many act well, and do not correct their neighbour well, as Eli. He, on the other hand, who, hating himself, loves his neighbour, turns aside to the left; for many, for instance, rebuke well, but act not well themselves, as did the Scribes and Pharisees. Paths are mentioned after the way, because…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

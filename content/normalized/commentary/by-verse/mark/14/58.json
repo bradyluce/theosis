@@ -4,6 +4,24 @@
   "verseNumber": 58,
   "entries": [
     {
+      "id": "catena-mark-1243-v58",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.58",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:53–59",
+      "excerpt": "For charity is the fire of which it is said, I am come to send fire on the earth, (Luke 12:49) which flame coming down on the believers, taught them to speak with various tongues the praise of the Lord. There is also a fire of covetousness, of which it is said, They are all adulterers as an oven; (Hosea 7:4) this fire, raised up in the hall of Caiaphas by the suggestion of an evil spirit, was arming the tongues of the traitors to deny and blaspheme the Lord. For the fire lit up in the hall amidst the cold of the night was a figure of what the wicked assembly was doing within; for because of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1239-v58",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.58",
@@ -40,24 +58,6 @@
       ]
     },
     {
-      "id": "catena-mark-1243-v58",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.58",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:53–59",
-      "excerpt": "For charity is the fire of which it is said, I am come to send fire on the earth, (Luke 12:49) which flame coming down on the believers, taught them to speak with various tongues the praise of the Lord. There is also a fire of covetousness, of which it is said, They are all adulterers as an oven; (Hosea 7:4) this fire, raised up in the hall of Caiaphas by the suggestion of an evil spirit, was arming the tongues of the traitors to deny and blaspheme the Lord. For the fire lit up in the hall amidst the cold of the night was a figure of what the wicked assembly was doing within; for because of…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1247-v58",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.58",
@@ -73,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.14.58:ffbabd49:1"
       ]
     },
     {
@@ -109,7 +116,134 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.14.58:534f7549:1"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.14.58:254f0d10:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 14:58",
+      "excerpt": "And some standing up bore false witness against him, saying: We heard him say: I will destroy this temple made with hands, and after three days I will build another not made with hands. How are they false witnesses if they say things which we read that the Lord said? But a false witness is he who does not understand statements in the same sense as they are spoken. For the Lord had spoken about the temple of his body. Yet they slander even the very words, and by adding or changing a few, they seem to create a just accusation. The Savior had said: Destroy this temple. They change it and say: I will destroy this temple made with hands. He says, you destroy, not I. Because it is unlawful for us to bring death upon ourselves. Then they twist it: and after three days I will build another not made with hands, so that it appears he spoke specifically about the Jewish temple. But the Lord, to show that the living and breathing body is the temple, had said: And I will raise it up in three days. Building is one thing, raising is another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.14.58"
+    },
+    {
+      "id": "hcf:pseudo-jerome:mark.14.58:bfce0c76:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "hcf:work:pseudo-jerome:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 14:58",
+      "excerpt": "There follows, And there arose certain, and bare false witness against him, saying, We heard him say, I will destroy this temple that is made with hands, and within three days I will build another made without hands. It is usual with heretics out of the truth to extract the shadow; He did not say what they said, but something like it, of the temple of His body, which He raised again after two days.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.14.58"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.14.58:5be0691f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 14:58",
+      "excerpt": "For the Lord did not say, \"I will destroy the temple,\" but \"destroy,\" nor did He say \"a temple made with hands,\" but simply \"the temple.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.14.58"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.14.58:1cc80324:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on mark 14:58",
+      "excerpt": "That Christ should be the house and temple of God, and that the old temple should cease, and the new one should begin. In the second book of Kings: \"And the word of the Lord came to Nathan, saying, Go and tell my servant David, Thus saith the Lord, Thou shall not build me an house to dwell in; but it shall be, when thy days shall be fulfilled, and thou shall sleep with thy fathers, I will raise up thy seed after thee, which shall come from thy bowels, and I will make ready his kingdom. He shall build me an house in my name, and I will raise up his throne for ever; and I will be to him for a father, and he shall be to me for a son: and his house shall obtain confidence, and his kingdom for evermore in my sight.\" Also in the Gospel the Lord says: \"There shall not be left in the temple one stone upon another that shall not be thrown down.\" And \"After three days another shall be raised up without hands.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.14.58"
+    },
+    {
+      "id": "hcf:origen:mark.14.58:5d7d8523:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-john-10-21",
+      "title": "COMMENTARY ON JOHN 10.21 on mark 14:58",
+      "excerpt": "The accusations they brought against our Lord Jesus Christ appear to have reference to this utterance of his, \"Destroy this temple, and I will build it up in three days.\" Though he was speaking of the temple of his body, they supposed his words to refer to the temple of stone.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.14.58"
+    },
+    {
+      "id": "hcf:prudentius:mark.14.58:539c96b7:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "prudentius",
+      "workId": "hcf:work:prudentius:the-divinity-of-christ",
+      "title": "THE DIVINITY OF CHRIST on mark 14:58",
+      "excerpt": "Do not the quarried stones of Solomon\r\nNow lie in ruins, that temple built by hand?\r\nWhy so? The mortal hand of mason wrought\r\nThat short-lived work. It rightly lies in ruins,\r\nSince every work of art returns to nought.\r\nAll that is made is doomed one day to fall.\r\nLearn what our temple is, if you would know;\r\nIt is one that no artisan has built,\r\nA structure not of riven fir or pine,\r\nNor reared with blocks of quarried marble fair.\r\nIts massive weight no columns high support\r\nBeneath the arches of a gilded vault.\r\nBy God's Word it was formed, not by his voice,\r\nBut by the everlasting Word, the Word made flesh.\r\nThis temple is eternal, without end,\r\nThis you attacked with scourge and cross and gall.\r\nThis temple was destroyed by bitter pains.\r\nIts form was fragile from the mother's womb,\r\nBut when brief death the mother's part dissolved,\r\nThe Father's might restored it in three days.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-divinity-of-christ",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c410"
+      ],
+      "targetVerseId": "kjva:mark.14.58"
+    },
+    {
+      "id": "hcf:prudentius:mark.14.58:75208b98:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "prudentius",
+      "workId": "hcf:work:prudentius:scenes-from-sacred-history-40-41",
+      "title": "SCENES FROM SACRED HISTORY 40, 41 on mark 14:58",
+      "excerpt": "Lo, the house of the wicked blasphemer,\r\nCaiaphas, has fallen,\r\nWhere the sacred face of the Christ\r\nwas cruelly smitten.\r\nThis destruction will be the lot\r\nof all reprobate sinners,\r\nFor their life will lie buried\r\nin crumbling ruins forever.\r\nIn this house the Lord stood upright,\r\nbound and tied to a pillar,\r\nAnd submitted his back as a slave\r\nbound and tied to a pillar,\r\nWorthy of reverence, this pillar still\r\nstands, supporting a temple,\r\nAnd instructing us how to lead our lives.\r\nfree from all scourges",
+      "takeaway": "",
+      "sourceId": "hcf:source:scenes-from-sacred-history-40-41",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c410"
+      ],
+      "targetVerseId": "kjva:mark.14.58"
     },
     {
       "id": "catena-mark-1238-v58",
@@ -120,6 +254,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:53–59",
       "excerpt": "The Evangelist had related above how our Lord had been taken by the servants of the Priests, now he begins to relate how He was condemned to death in the house of the High Priest: wherefore it is said, And they led Jesus away to the High Priest.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1245-v58",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.58",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:53–59",
+      "excerpt": "But iniquity lied as the queen did against Joseph, and the priests against Susannah, but a flame goes out, if it has no fuel; wherefore it goes on, And found none. For many bare false witness against him, but their witness agreed not together. For whatever is not consistent is held to be doubtful. There follows, And there arose certain, and bare false witness against him, saying, We heard him say, I will destroy this temple that is made with hands, and within three days I will build another made without hands. It is usual with heretics out of the truth to extract the shadow; He did not say…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -156,24 +308,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:53–59",
       "excerpt": "He warms himself at the fire in the hall, with the servants. The hall of the High-Priest is the enclosure of the world, the servants are the devils, with whom whosoever remains cannot weep for his sins; the fire is the desire of the flesh.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1245-v58",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.58",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:53–59",
-      "excerpt": "But iniquity lied as the queen did against Joseph, and the priests against Susannah, but a flame goes out, if it has no fuel; wherefore it goes on, And found none. For many bare false witness against him, but their witness agreed not together. For whatever is not consistent is held to be doubtful. There follows, And there arose certain, and bare false witness against him, saying, We heard him say, I will destroy this temple that is made with hands, and within three days I will build another made without hands. It is usual with heretics out of the truth to extract the shadow; He did not say…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

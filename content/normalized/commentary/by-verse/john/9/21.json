@@ -23,14 +23,39 @@
       ]
     },
     {
-      "id": "catena-john-1282-v21",
+      "id": "catena-john-1286-v21",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.21",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
+      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.9.21:e20f8f78:0"
+      ]
+    },
+    {
+      "id": "catena-john-1288-v21",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.9.21",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 9:18–23",
+      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -77,24 +102,6 @@
       ]
     },
     {
-      "id": "catena-john-1286-v21",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.9.21",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 9:18–23",
-      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1287-v21",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.21",
@@ -113,14 +120,14 @@
       ]
     },
     {
-      "id": "catena-john-1288-v21",
+      "id": "catena-john-1282-v21",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.21",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
+      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -183,6 +190,74 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.9.21:61ece760:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-58",
+      "title": "Homily on the Gospel of John 58 on john 9:21",
+      "excerpt": "\"We know that this is our son, and that he was born blind; but by what means he now seeth we know not, or who hath opened his eyes we know not; he is of age, he shall speak for himself.\"\r\n\r\nBy making him to be worthy of credit, they begged off themselves; \"He is not a child, say they, nor incapable, but able to testify for himself.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.9.21"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.9.21:ec953e58:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 9:21",
+      "excerpt": "Concerning the manner of healing they do not answer, owing to ignorance. This happened, without doubt, so that the truth might be established more firmly, so that it might be attested by the very one who received the benefit and therefore the most credible witness, as his parents themselves say: \"He is of full age, he is not a child or a minor who would not understand how he was healed.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.9.21"
+    },
+    {
+      "id": "hcf:origen:john.9.21:0c19e107:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:fragment-67-on-the-gospel-of-john",
+      "title": "FRAGMENT 67 ON THE GOSPEL OF JOHN on john 9:21",
+      "excerpt": "Besides having spoken falsely, they committed another sin by exposing their son to obvious harm. But I think this also has a reason. When the Savior opened the eyes of the blind man, he did not open those of a child but of one full grown so that he might see as a full-grown man. But such was also the case with other blind men who received sight. However, it is true that he being of full age can speak for himself, and especially so when Jesus makes him receive his sight. For he needs no one else to negotiate for him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-67-on-the-gospel-of-john",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.9.21"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.9.21:33918e66:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 9:21",
+      "excerpt": "1333 Then, the answer of his parents is given (v 20). The Pharisees had asked about three things; they answer firmly about two and in regard to the third they refer them to their son. First, they admit the first, namely, that he is their son; so they say, we know that this is our son. They also admit the second when they add, and that he was born blind. This shows that the truth always conquers what is false, as we read in the apocryphal 3 Esdras (3:13): \"Truth conquers all.\" Yet as to the third question, how their son sees, they answer, but how he now sees we do not know.\r\n\r\nThey reply, secondly, about the person who gave him his sight, now do we know who opened his eyes. They answer this way because the question was directed against the one who gave sight to their son, and so they refer this to their son, saying, Ask him, he is of age. This was like saying: He was born blind, not mute; thus he can speak for himself in this matter. The testimony about this miracle was from several sources so as to make it more believable: the parents told what they knew, and their blind son confirmed that he had been cured.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.9.21"
     }
   ]
 }

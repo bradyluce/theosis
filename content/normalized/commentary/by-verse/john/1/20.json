@@ -20,24 +20,13 @@
         "patristic",
         "tractate",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-0173-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.1.20",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 1:19–23",
-      "excerpt": "Such confidence had they in John, that they were ready to believe him on his own words: witness how it is said, To ask him, Who art thou?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.1.20:a2123aec:0"
       ]
     },
     {
@@ -77,6 +66,24 @@
       ]
     },
     {
+      "id": "catena-john-0173-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.1.20",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 1:19–23",
+      "excerpt": "Such confidence had they in John, that they were ready to believe him on his own words: witness how it is said, To ask him, Who art thou?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0176-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.1.20",
@@ -88,6 +95,56 @@
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:john.1.20:27bc2163:0"
+      ]
+    },
+    {
+      "id": "catena-john-0175-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.1.20",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 1:19–23",
+      "excerpt": "John, as it appears, saw from the question, that the Priests and Levites had doubts whether it might not be the Christ, who was baptizing; which doubts however they were afraid to profess openly, for fear of incurring the charge of credulity. He wisely determines therefore first to correct their mistake, and then to proclaim the truth. Accordingly, he first of all shews that he is not the Christ: And he confessed, and denied not; but confessed, I am not the Christ. We may add here, that at this time the people had already begun to be impressed with the idea that Christ’s advent was at hand,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:john.1.20:e0967b8b:1"
+      ]
+    },
+    {
+      "id": "catena-john-0172-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.1.20",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 1:19–23",
+      "excerpt": "The Jews of Jerusalem, as being of kin to the Baptist, who was of the priestly stock, send Priests and Levites to ask him who he is; (c. 6). that is, men considered to hold a superior rank to the rest of their order, by God’s election, and coming from that favoured above all cities, Jerusalem. Such is the reverential way in which they interrogate John. We read of no such proceeding towards Christ: but what the Jews did to John, John in turn does to Christ, when he asks Him, through His disciples, Art thou He that should come, (Luke 7:20) or look we for another?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -131,40 +188,140 @@
       ]
     },
     {
-      "id": "catena-john-0172-v20",
+      "id": "hcf:origen:john.1.20:5e6bb18e:0",
       "relation": "verse",
-      "targetVerseId": "kjva:john.1.20",
       "topicSlugs": [],
       "personId": "origen",
-      "workId": "catena-aurea-john",
-      "title": "On John 1:19–23",
-      "excerpt": "The Jews of Jerusalem, as being of kin to the Baptist, who was of the priestly stock, send Priests and Levites to ask him who he is; (c. 6). that is, men considered to hold a superior rank to the rest of their order, by God’s election, and coming from that favoured above all cities, Jerusalem. Such is the reverential way in which they interrogate John. We read of no such proceeding towards Christ: but what the Jews did to John, John in turn does to Christ, when he asks Him, through His disciples, Art thou He that should come, (Luke 7:20) or look we for another?",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-6-56-57-60-61",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 6.56-57, 60-61 on john 1:20",
+      "excerpt": "Someone may, perhaps, reasonably raise the question why in the world, when the priests and Levites inquire of John, not if he is the Christ but \"Who are you?\" the Baptist does not answer, \"I am the voice of one crying in the wilderness.\" … It is likely that John saw from the question the reverence of the priests and Levites. Their question suggested their secret suspicion that he who baptizes might be the Christ, but they were cautious about asserting this more boldly that they might not seem rash. This is why he declares with good reason that he is not the Christ, to remove all their false suspicion about him first, then, in this way, to present the truth.…We should also add that the people were disturbed that the time of the Christ's sojourn might already be imminent from the time slightly preceding the birth of Jesus up to the manifestation of his preaching. In all probability the scribes and lawyers were already expecting the one awaited (deriving his time from the Scriptures). This is why Theodas had sprung up who had gathered no small crowd by claiming to be the Christ, I think. And after him, Judas of Galilee, in the days of the taxation, had done something similar. Since therefore Christ's sojourn is rather heatedly expected and discussed, it is with good reason that the Jews send priests and Levites from Jerusalem to John, intending with the question, \"Who are you,\" to see if he will admit to being the Christ.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.1.20"
     },
     {
-      "id": "catena-john-0175-v20",
+      "id": "hcf:theophylact-of-ohrid:john.1.20:eb0a94e6:0",
       "relation": "verse",
-      "targetVerseId": "kjva:john.1.20",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-john",
-      "title": "On John 1:19–23",
-      "excerpt": "John, as it appears, saw from the question, that the Priests and Levites had doubts whether it might not be the Christ, who was baptizing; which doubts however they were afraid to profess openly, for fear of incurring the charge of credulity. He wisely determines therefore first to correct their mistake, and then to proclaim the truth. Accordingly, he first of all shews that he is not the Christ: And he confessed, and denied not; but confessed, I am not the Christ. We may add here, that at this time the people had already begun to be impressed with the idea that Christ’s advent was at hand,…",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 1:20",
+      "excerpt": "The Jews sent to John people who were, in their opinion, the best, namely priests and Levites, and moreover from Jerusalem, so that they, being more clever than others, might by flattery persuade John to declare himself to be the Christ. Notice the evasiveness. They do not ask directly, \"Are you the Christ?\" but rather, \"Who are you?\" And he, seeing their craftiness, does not say who he is, but declares that I am not the Christ, having in mind their purpose and in every way drawing them to the belief that the Christ is another, the One whom they considered a poor son of a poor carpenter father, coming from the poor homeland of Nazareth, from which they expected nothing good. Meanwhile, they held a high opinion of the Forerunner himself, since he had a high priest for a father and led an angelic and almost bodiless life. Therefore it is worthy of wonder how they become entangled in the very thing by which they thought to harm the glory of Christ. They question John as a trustworthy man, so that in his testimony they might have a pretext for unbelief in Christ, in the event that he would not declare Him to be the Christ. But this turned against them. For they find that the one whom they considered trustworthy testifies in favor of Christ and does not claim His honor for himself.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.1.20"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.20:84036a27:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:20",
+      "excerpt": "This is the part of an honest servant, not only not to take to himself his master's honor, but also to reject it when given to him by the many. But the multitudes arrived at this supposition from simplicity and ignorance; these questioned him from an ill intention, which I have mentioned, expecting, as I said, to draw him over to their purpose by their flattery. Had they not expected this, they would not have proceeded immediately to another question, but would have been angry with him for having given them an answer foreign to their enquiry, and would have said, \"Why, did we suppose that? did we come to ask thee that?\" But now as taken and detected in the fact, they proceed to another question.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.20"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.20:2aaeeeb3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-16",
+      "title": "Homily on the Gospel of John 16 on john 1:20",
+      "excerpt": "Hear then how this blessed person answered to the intention with which they asked the question, not to the question itself. When they said, \"Who art thou?\" he did not at once give them what would have been the direct answer, \"I am the voice of one crying in the wilderness.\" But what did he? He removed the suspicion they had formed; for, saith the Evangelist, being asked, \"Who art thou?\" \"He confessed, and denied not; but confessed, I am not the Christ.\" Observe the wisdom of the Evangelist. He mentions this for the third time, to set forth the excellency of the Baptist, and their wickedness and folly.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.20"
+    },
+    {
+      "id": "hcf:gregory-the-great:john.1.20:2160ee18:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-7",
+      "title": "Forty Gospel Homilies, Homily 7 on john 1:20",
+      "excerpt": "From the words of this reading, dearest brothers, the humility of John is commended to us, who, though he was of such great virtue that he could have been believed to be Christ, chose to stand firmly in himself, lest he be carried away vainly above himself by human opinion. For he confessed and did not deny, and he confessed: \"I am not the Christ.\" But because he said \"I am not,\" he plainly denied what he was not, but did not deny what he was, so that by speaking the truth he might become a member of Him whose name he would not falsely claim for himself. Therefore, because he did not wish to grasp at the name of Christ, he became a member of Christ, since by striving to acknowledge his weakness humbly, he merited to truly obtain His loftiness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:john.1.20"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.1.20:f4f7cfbc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-1",
+      "title": "Commentary on the Gospel of John, Book 1 on john 1:20",
+      "excerpt": "The Evangelist recalls his own words and endeavours to explain to us more fully (doing exceeding well) what he had already told us told us briefly as in summary. For having said There was a man sent from God, whose name was John: the same came for a witness, to bear witness of the Light, needs does he bring in the mode also of the witness given by him. For when, he says, the chiefs of the Jewish divisions after the Law, sent priests and Levites to him, bidding them ask him, what he would say of himself, then very clearly did he confess, spurning all shame for the truth's sake. For he said, I am not the Christ. Therefore neither do I, says he, the compiler of this Book, lie saying of him, He was not the Light but to bear witness of the Light.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.1.20"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:john.1.20:a094007a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-dogmatical-and-historical-fragments",
+      "title": "Hippolytus Dogmatical and Historical Fragments on john 1:20",
+      "excerpt": "But we, who know the economy, adore His mercy, because He hath come to save and not to judge the world. Wherefore John, the forerunner of the Lord, who before knew not this mystery, on learning that He is Lord in truth, cried out, and spake to those who came to be baptized of him, \"O generation of vipers,\" why look ye so earnestly at me? \"I am not the Christ; \" I am the servant, and not the lord; I am the subject, and not the king; I am the sheep, and not the shepherd; I am a man, and not God. By my birth I loosed the barrenness of my mother; I did not make virginity barren. I was brought up from beneath; I did not come down from above. I bound the tongue of my father; I did not unfold divine grace. I was known by my mother, and I was not announced by a star. I am worthless, and the least; but \"after me there comes One who is before me\" -after me, indeed, in time, but before me by reason of the inaccessible and unutterable light of divinity. \"There comes One mightier than I, whose shoes I am not worthy to bear: He shall baptize you with the Holy Ghost, and with fire.\" I am subject to authority, but He has authority in Himself. I am bound by sins, but He is the Remover of sins. apply the law, but He bringeth grace to light. teach as a slave, but He judgeth as the Master. I have the earth as my couch, but He possesses heaven. I baptize with the baptism of repentance, but He confers the gift of adoption: \"He shall baptize you with the Holy Ghost, and with fire.\" Why give ye attention to me? I am not the Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:john.1.20"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.1.20:8748730d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 1:20",
+      "excerpt": "Then when he says, He declared openly, and did not deny, John's answer is given. The Evangelist twice mentioned that John spoke forth to show his humility; for although he was held in such high esteem among the Jews that they believed he might be the Messiah, he, on his part, usurped no honor what was not due him; indeed, he stated clearly, I am not the Messiah.\r\n\r\nWhat of the statement, He declared openly, and did not deny? For it seems that he did deny, because he said that he was not the Messiah. It must be answered that he did not deny the truth, for he said he was not the Messiah; otherwise he would have denied the truth. \"A very great iniquity, and a denial of the most high God\" (Jb 31:28). Thus he did not deny the truth, because however great he might have been considered, he did not become proud, usurping for himself the honor of another. He stated clearly, I am not the Messiah; because in truth he was not. \"He was not the light,\" as was said above (1:8).\r\n\r\nWhy did John answer, I am not the Messiah, since those who had been sent did not ask if he was the Messiah, but who he himself was? I answer that John directed his answer more to the mind of the questioners than to their question. And we can understand this in two ways. According to Origen, the priests and Levites came to John with a good intention. For they knew from the Scriptures, and particularly from the prophecy of Daniel, that the time for the coming of the Messiah had arrived. So, seeing John's holiness, they suspected that he might be the Messiah. So they sent to John, wishing to learn by their question, Who are you? whether John would admit that he was the Messiah. And so he directs his answer to their thoughts: I am not the Messiah.\r\n\r\nChrysostom, however, says that they questioned him as a stratagem. For John was related to priests, being the son of a chief priest, and he was holy. Yet, he bore witness to Christ, whose family seemed lowly; for that reason they even said, \"Is not this the son of the carpenter?\"; and they did not know him. So, preferring to have John as their master, not Christ, they sent to him, intending to entice him by flattery and persuade him to take this honor for himself, and to state that he was the Messiah. But John, seeing their evil intent, said, I am not the Messiah.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.1.20"
     }
   ]
 }

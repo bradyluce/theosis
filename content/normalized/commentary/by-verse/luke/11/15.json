@@ -4,24 +4,6 @@
   "verseNumber": 15,
   "entries": [
     {
-      "id": "catena-luke-1793-v15",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.15",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:14–16",
-      "excerpt": "Now when the miracle was performed, the multitude extolled Him with loud praises, and the glory which was due to God. As it follows, And the people wondered.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1795-v15",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.15",
@@ -40,17 +22,17 @@
       ]
     },
     {
-      "id": "catena-luke-1792-v15",
+      "id": "catena-luke-1793-v15",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.15",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:14–16",
-      "excerpt": "But that demoniac is related by Matthew to have been not only dumb, but blind. Three miracles then were performed at the same time on one man. The blind see, the dumb speaks, and he that was possessed by a devil is set free. The like is daily accomplished in the conversion of believers, so that the devil being first cast out, they see the light, and then those mouths which were before silent are loosened to speak the praises of God.",
+      "excerpt": "Now when the miracle was performed, the multitude extolled Him with loud praises, and the glory which was due to God. As it follows, And the people wondered.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -66,6 +48,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:14–16",
       "excerpt": "But since the multitudes who were thought ignorant always marvelled at our Lord’s actions, the Scribes and Pharisees took pains to deny them, or to pervert them by an artful interpretation, as though they were not the work of a Divine power, but of an unclean spirit. Hence it follows, But some of them said, He casteth out devils through Beelzebub the prince of the devils. Beelzebub was the God Accaron. For Beel is indeed Baal himself. But Zebub means a fly. Now he is called Beelzebub as the man of flies, from whose most foul practices the chief of the devils was so named.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.11.15:c6b63109:1"
+      ]
+    },
+    {
+      "id": "catena-luke-1792-v15",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.15",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:14–16",
+      "excerpt": "But that demoniac is related by Matthew to have been not only dumb, but blind. Three miracles then were performed at the same time on one man. The blind see, the dumb speaks, and he that was possessed by a devil is set free. The like is daily accomplished in the conversion of believers, so that the devil being first cast out, they see the light, and then those mouths which were before silent are loosened to speak the praises of God.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -110,6 +117,57 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.15:c24fa8e6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:15",
+      "excerpt": "The Pharisees slander the miracle and revile the Lord as a deceiver. They say: He is in league with the prince of demons and with his assistance \"casts out demons.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.15"
+    },
+    {
+      "id": "hcf:bede:luke.11.15:33b42a2e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:15",
+      "excerpt": "But some of them said, \"In Beelzebub, the prince of demons, He casts out demons.\" Not some from the crowd, but the Pharisees and scribes were slandering, as other evangelists testify. Indeed, to the crowds who seemed less educated, always marveling at the deeds of the Lord, those people, on the contrary, either tried to deny these things or to pervert what they could not deny with sinister interpretation, as if these were not the works of divinity but of an unclean spirit, that is, Beelzebub, who was the god of Ekron. For Beel is indeed Baal. Zebub, however, is called a fly. Nor is the letter l or d to be read at the end of the name according to certain erroneous copies, but b. Therefore, Beelzebub means Baal of the flies, that is, the lord of the flies, or the one having flies, supposedly because of the filth of sacrificial blood, from whose most foul rites or name they called the prince of demons.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.15"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.11.15:f9055a24:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-80",
+      "title": "Commentary on the Gospel of Luke, Sermon 80 on luke 11:15",
+      "excerpt": "And upon the accomplishment of this wonderful act, the multitude extolled Him with praises, and hastened to crown the worker of the miracle with godlike honour. But certain of them, it says, being Scribes and Pharisees, with hearts intoxicated with pride and envy, found in the miracle fuel for their malady; and not only did they not praise Him, but betook themselves to the very opposite. For having stripped Him of the godlike deeds He had wrought, they assigned to the Devil almighty power, and made Beelzebub the source of Christ's might. \"For by him, they said, He casts out devils.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.11.15"
     },
     {
       "id": "catena-luke-1789-v15",

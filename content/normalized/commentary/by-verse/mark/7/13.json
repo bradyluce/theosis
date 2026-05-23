@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0500-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.13",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:1–13",
-      "excerpt": "The people of the land of Gennesareth, who seemed to be unlearned men, not only come themselves, but also bring their sick to the Lord, that they may but succeed in touching the hem of His garment. But the Pharisees and Scribes, who ought to have been the teachers of the people, run together to the Lord, not to seek for healing, but to move captious questions; wherefore it is said, Then there came together unto him the Pharisees and certain of the Scribes, coming from Jerusalem; and when they saw some of his disciples eat bread with common, that is, with unwashen hands, they found fault.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:untitled-commentary"
+      ],
+      "alternateIds": [
+        "hcf:jerome:mark.7.13:3b6a49f2:0"
       ]
     },
     {
@@ -58,14 +47,14 @@
       ]
     },
     {
-      "id": "catena-mark-0508-v13",
+      "id": "catena-mark-0500-v13",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.13",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "The sense of the word honour in Scripture is not so much the saluting and paying court to men, as alms-giving, and bestowing gifts; honour, says the Apostle, widows who are widows indeed. (1 Tim. 5:3.)",
+      "excerpt": "The people of the land of Gennesareth, who seemed to be unlearned men, not only come themselves, but also bring their sick to the Lord, that they may but succeed in touching the hem of His garment. But the Pharisees and Scribes, who ought to have been the teachers of the people, run together to the Lord, not to seek for healing, but to move captious questions; wherefore it is said, Then there came together unto him the Pharisees and certain of the Scribes, coming from Jerusalem; and when they saw some of his disciples eat bread with common, that is, with unwashen hands, they found fault.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -94,17 +83,17 @@
       ]
     },
     {
-      "id": "catena-mark-0501-v13",
+      "id": "catena-mark-0508-v13",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.13",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "For the disciples of the Lord, who were taught only the practice of virtue, used to eat in a simple way, without washing their hands; but the Pharisees, wishing to find an occasion of blame against them, took it up; they did not indeed blame them as transgressors of the law, but for transgressing the traditions of the elders. Wherefore it goes on: For the Pharisees and all the Jews, except they wash their hands oft, eat not, holding the tradition of the elders.",
+      "excerpt": "The sense of the word honour in Scripture is not so much the saluting and paying court to men, as alms-giving, and bestowing gifts; honour, says the Apostle, widows who are widows indeed. (1 Tim. 5:3.)",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -127,7 +116,100 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.7.13:038783d3:1"
       ]
+    },
+    {
+      "id": "catena-mark-0501-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.13",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:1–13",
+      "excerpt": "For the disciples of the Lord, who were taught only the practice of virtue, used to eat in a simple way, without washing their hands; but the Pharisees, wishing to find an occasion of blame against them, took it up; they did not indeed blame them as transgressors of the law, but for transgressing the traditions of the elders. Wherefore it goes on: For the Pharisees and all the Jews, except they wash their hands oft, eat not, holding the tradition of the elders.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.7.13:d8c284a2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 7:13",
+      "excerpt": "The Law, He says, teaches: \"Honor your father and your mother\" (Exodus 20:12); but you teach children to say to their parents: that which you want from me is corban, that is, dedicated to God. For the Pharisees, wishing to profit from the property of simple people, taught children (when the children had any possessions and the parents demanded from them) to say the following: I have already dedicated that to God, and you must not demand what has been dedicated to God. By thus deceiving children and persuading them to dedicate their possessions to God, the Pharisees through this made them neglect their parents, and they themselves consumed what had been dedicated to God. This is precisely what the Lord charges them with—that for the sake of gain they transgress the Law of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.7.13"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.7.13:38d68f88:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lxii",
+      "title": "Epistle LXII on mark 7:13",
+      "excerpt": "There is then no reason, dearest brother, for any one to think that the custom of certain persons is to be followed, who have thought in thee past that water alone should be offered in the cup of the Lord. For we must inquire whom they themselves have followed. For if in the sacrifice which Christ offered none is to be followed but Christ, assuredly it behoves us to obey and do that which Christ did, and what He commanded to be done, since He Himself says in the Gospel, \"If ye do whatsoever I command you, henceforth I call you not servants, but friends.\" And that Christ alone ought to be heard, the Father also testifies from heaven, saying, \"This is my well-beloved Son, in whom I am well pleased; hear ye Him.\" Wherefore, if Christ alone must be heard, we ought not to give heed to what another before us may have I thought was to be done, but what Christ, who is before all, first did. Neither is it becoming to follow the practice of man, but the truth of God; since God speaks by Isaiah the prophet, and says, \"In vain do they worship me, teaching the commandments and doctrines of men.\" And again the Lord in the Gospel repeals this same saying, and says, \"Ye reject the commandment of God, that ye may keep your own tradition.\" Moreover, in another place He establishes it, saying, \"Whosoever shall break one of these least commandments, and shall teach men so, he shall be called the least in the kingdom of heaven.\" But if we may not break even the least of the Lord's commandments, how much rather is it forbidden to infringe such important ones, so great, so pertaining to the very sacrament of our Lord's passion and our own redemption, or to change it by human tradition into anything else than what was divinely appointed! For if Jesus Christ, our Lord and God, is Himself the chief priest of God the Father, and has first offered Himself a sacrifice to the Father, and has commanded this to be done in commemoration of Himself, certainly that priest truly discharges the office of Christ, who imitates that which Christ did; and he then offers a true and full sacrifice in the Church to God the Father, when he proceeds to offer it according to what he sees Christ Himself to have offered.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.7.13"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.7.13:c26be775:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lxvii",
+      "title": "Epistle LXVII on mark 7:13",
+      "excerpt": "Since these things are announced and are made plain to us, it is necessary that our obedience should wait upon the divine precepts; nor in matters of this kind can human indulgence accept any man's person, or yield anything to any one, when the divine prescription has interfered, and establishes a law. For we ought not to be forgetful what the Lord spoke to the Jews by Isaiah the prophet, rebuking, and indignant that they had despised the divine precepts and followed human doctrines. \"This people,\" he says, honoureth me with their lips, but their heart is widely removed from me; but in vain do they worship me, teaching the doctrines and commandments of men.\" This also the Lord repeats in the Gospel, and says, \"Ye reject the commandment of God, that ye may establish your own tradition.\" Having which things before our eyes, and solicitously and religiously considering them, we ought in the ordinations of priests to choose none but unstained and upright ministers, who, holily and worthily offering sacrifices to God, may be heard in the prayers which they make for the safety of the Lord's people, since it is written, \"God heareth not a sinner; but if any man be a worshipper of God, and doeth His will, him He heareth.\" On which account it is fitting, that with full diligence and sincere investigation those should be chosen for God's priesthood whom it is manifest God will hear.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.7.13"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.7.13:d38989ca:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lxxiii",
+      "title": "Epistle LXXIII on mark 7:13",
+      "excerpt": "But if it is evident that subsequently heresies became more numerous and worse; and if, in time past, it was never at all prescribed nor written that only hands should be laid upon a heretic for repentance, and that so he might be communicated with; and if there is only one baptism, which is with us, and is within, and is granted of the divine condescension to the Church alone, what obstinacy is that, or what presumption, to prefer human tradition to divine ordinance, and not to observe that God is indignant and angry as often as human tradition relaxes and passes by the divine precepts, as He cries out, and says by Isaiah the prophet, \"This people honoureth me with their lips, but their heart is far from me. But in vain do they worship me, teaching the doctrines and commandments of men.\" Also the Lord in the Gospel, similarly rebuking and reproving, utters and says, \"Ye reject the commandment of God, that ye may keep your own tradition.\" Mindful of which precept, the blessed Apostle Paul himself also warns and instructs, saying, \"If any man teach otherwise, and consent not to the wholesome words of our Lord Jesus Christ, and to His doctrine, he is proud, knowing nothing: from such withdraw thyself.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.7.13"
     },
     {
       "id": "catena-mark-0504-v13",
@@ -138,24 +220,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
       "excerpt": "He beats back the vain words of the Pharisees with His arguments, as men drive back dogs with weapons, by interpreting Moses and Isaiah, that we too by the word of Scripture may conquer the heretics, who oppose us; wherefore it goes on: (Isa. 29:13) Well hath Esaias prophesied of you hypocrites; as it is written, This people honoureth me with their lips, but their heart is far from me.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0505-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.13",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:1–13",
-      "excerpt": "For since they unjustly accused the disciples not of transgressing the law, but the commands of the elders, He sharply confounds them, calling them hypocrites, as looking with reverence upon what was not worthy of it. He adds, however, the words of Isaiah the prophet, as spoken of them; as though He would say, As those men, of whom it is said, that they honour God with their lips, whilst their heart is far from him, in vain pretend to observe the dictates of piety, whilst they honour the doctrines of men, so ye also neglect your soul, of which ye should take care, and blame those who live…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -184,14 +248,32 @@
       ]
     },
     {
-      "id": "catena-mark-0507-v13",
+      "id": "catena-mark-0513-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.13",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:1–13",
+      "excerpt": "Mystically, again, the disciples eating with unwashed hands signifies the future fellowship of the Gentiles with the Apostles. The cleansing and washing of the Pharisees is barren; but the fellowship of the Apostles, though without washing, has stretched out its branches as far as the sea.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0505-v13",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.13",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "Moreover, to convict them of neglecting the reverence due to God, for the sake of the tradition of the elders, which was opposed to the Holy Scriptures, He subjoins, For Moses said, Honour thy father and thy mother; and, Whoso curseth father or mother, let him die the death. (Exod. 21:17.)",
+      "excerpt": "For since they unjustly accused the disciples not of transgressing the law, but the commands of the elders, He sharply confounds them, calling them hypocrites, as looking with reverence upon what was not worthy of it. He adds, however, the words of Isaiah the prophet, as spoken of them; as though He would say, As those men, of whom it is said, that they honour God with their lips, whilst their heart is far from him, in vain pretend to observe the dictates of piety, whilst they honour the doctrines of men, so ye also neglect your soul, of which ye should take care, and blame those who live…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -238,14 +320,14 @@
       ]
     },
     {
-      "id": "catena-mark-0513-v13",
+      "id": "catena-mark-0507-v13",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.13",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:1–13",
-      "excerpt": "Mystically, again, the disciples eating with unwashed hands signifies the future fellowship of the Gentiles with the Apostles. The cleansing and washing of the Pharisees is barren; but the fellowship of the Apostles, though without washing, has stretched out its branches as far as the sea.",
+      "excerpt": "Moreover, to convict them of neglecting the reverence due to God, for the sake of the tradition of the elders, which was opposed to the Holy Scriptures, He subjoins, For Moses said, Honour thy father and thy mother; and, Whoso curseth father or mother, let him die the death. (Exod. 21:17.)",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

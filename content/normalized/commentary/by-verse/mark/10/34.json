@@ -4,24 +4,6 @@
   "verseNumber": 34,
   "entries": [
     {
-      "id": "catena-mark-0839-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.10.34",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 10:32–34",
-      "excerpt": "And He enumerates each thing that was to happen to Him; lest if He should pass any thing over, they should be troubled afterwards at suddenly seing it; wherefore he adds, Behold, we go up to Jerusalem, and the Son of Man.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0841-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.34",
@@ -37,20 +19,27 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.10.34:f9414a4a:0"
       ]
     },
     {
-      "id": "catena-mark-0835-v34",
+      "id": "catena-mark-0839-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.34",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 10:32–34",
-      "excerpt": "The disciples remembered the discourse in which the Lord had foretold that He was about to suffer many things from the chief priests and scribes, and therefore in going up to Jerusalem, they were amazed. And this is what is meant, when it is said, And they were in the way going up to Jerusalem, and Jesus went before them.",
+      "excerpt": "And He enumerates each thing that was to happen to Him; lest if He should pass any thing over, they should be troubled afterwards at suddenly seing it; wherefore he adds, Behold, we go up to Jerusalem, and the Son of Man.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -76,17 +65,17 @@
       ]
     },
     {
-      "id": "catena-mark-0836-v34",
+      "id": "catena-mark-0835-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.10.34",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 10:32–34",
-      "excerpt": "To shew that He runs to meet His Passion, and that He does not refuse death, for the sake of our salvation; and they were amazed, and as they followed, they were afraid.",
+      "excerpt": "The disciples remembered the discourse in which the Lord had foretold that He was about to suffer many things from the chief priests and scribes, and therefore in going up to Jerusalem, they were amazed. And this is what is meant, when it is said, And they were in the way going up to Jerusalem, and Jesus went before them.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -109,7 +98,66 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.10.34:ce7a96cb:1"
       ]
+    },
+    {
+      "id": "catena-mark-0836-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.10.34",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 10:32–34",
+      "excerpt": "To shew that He runs to meet His Passion, and that He does not refuse death, for the sake of our salvation; and they were amazed, and as they followed, they were afraid.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.10.34:f3f6d51d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 10:34",
+      "excerpt": "Everything He says in this instance, though sorrowful, He consoles them for all of it by saying that \"on the third day He will rise.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.10.34"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.10.34:b1534577:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-2",
+      "title": "Forty Gospel Homilies, Homily 2 on mark 10:34",
+      "excerpt": "Our Redeemer, foreseeing that the souls of the disciples would be troubled by His passion, foretold to them long beforehand both the suffering of that same passion and the glory of His resurrection, so that when they saw Him dying, as had been predicted, they would not doubt that He would also rise again. But because the disciples, still carnal, were by no means able to grasp the words of the mystery, a miracle is performed. Before their eyes a blind man receives light, so that those who could not grasp the words of the heavenly mystery might be strengthened in faith by heavenly deeds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.10.34"
     },
     {
       "id": "catena-mark-0840-v34",
@@ -127,6 +175,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:mark.10.34:0c0341b9:0"
       ]
     }
   ]

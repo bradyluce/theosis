@@ -58,6 +58,31 @@
       ]
     },
     {
+      "id": "catena-mark-0318-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.34",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:30–34",
+      "excerpt": "For since the multitude was unlearned, he instructs them from objects of food and familiar names, and for this reason he adds, But without a parable spake he not unto them, that is, in order that they might be induced to approach and to ask Him. It goes on; And when they were alone, he expounded all things to his disciples, that is, all things about which they were ignorant and asked Him, not simply all, whether obscure or not.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.4.34:1257de86:1"
+      ]
+    },
+    {
       "id": "catena-mark-0312-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.34",
@@ -94,22 +119,89 @@
       ]
     },
     {
-      "id": "catena-mark-0318-v34",
+      "id": "hcf:theophylact-of-ohrid:mark.4.34:2e9c49b1:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.4.34",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:30–34",
-      "excerpt": "For since the multitude was unlearned, he instructs them from objects of food and familiar names, and for this reason he adds, But without a parable spake he not unto them, that is, in order that they might be induced to approach and to ask Him. It goes on; And when they were alone, he expounded all things to his disciples, that is, all things about which they were ignorant and asked Him, not simply all, whether obscure or not.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:34",
+      "excerpt": "Thus He explained everything to the disciples privately, since they came directly to Him and asked. He explained only those things about which they asked and did not know, and not absolutely everything, including what was already clear. For when they understood what they had asked about, other things became clear to them from this as well, and in this way everything was resolved for them.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.34"
+    },
+    {
+      "id": "hcf:hcf-pseudo-clement:mark.4.34:333af2a5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pseudo-clement",
+      "workId": "hcf:work:hcf-pseudo-clement:homily-19",
+      "title": "Homily 19 on mark 4:34",
+      "excerpt": "And Peter said: \"We remember that our Lord and Teacher, commanding us, said, 'Keep the mysteries for me and the sons of my house.' Wherefore also He explained to His disciples privately the mysteries of the kingdom of heaven. But to you who do battle with us, and examine into nothing else but our statements, whether they be true or false, it would be impious to state the hidden truths.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c400"
+      ],
+      "targetVerseId": "kjva:mark.4.34"
+    },
+    {
+      "id": "hcf:tertullian:mark.4.34:da16987f:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:the-prescription-against-heretics",
+      "title": "The Prescription Against Heretics on mark 4:34",
+      "excerpt": "What man, then, of sound mind can possibly suppose that they were ignorant of anything, whom the Lord ordained to be masters (or teachers), keeping them, as He did, inseparable (from Himself) in their attendance, in their discipleship, in their society, to whom, \"when they were alone, He used to expound\" all things which were obscure, telling them that \"to them it was given to know those mysteries,\" which it was not permitted the people to understand? Was anything withheld from the knowledge of Peter, who is called \"the rock on which the church should be built,\" who also obtained \"the keys of the kingdom of heaven,\" with the power of \"loosing and binding in heaven and on earth? \" Was anything, again, concealed from John, the Lord's most beloved disciple, who used to lean on His breast to whom alone the Lord pointed Judas out as the traitor, whom He commended to Mary as a son in His own stead? Of what could He have meant those to be ignorant, to whom He even exhibited His own glory with Moses and Elias, and the Father's voice moreover, from heaven? Not as if He thus disapproved of all the rest, but because \"by three witnesses must every word be established.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.4.34"
+    },
+    {
+      "id": "hcf:tertullian:mark.4.34:8b1fdd50:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:the-prescription-against-heretics",
+      "title": "The Prescription Against Heretics on mark 4:34",
+      "excerpt": "Christ Jesus our Lord (may He bear with me a moment in thus expressing myself!), whosoever He is, of what God soever He is the Son, of what substance soever He is man and God, of what faith soever He is the, teacher, of what reward soever He is the Promiser, did, whilst He lived on earth, Himself declare what He was, what He had been, what the Father's will was which He was administering, what the duty of man was which He was prescribing; (and this declaration He made, ) either openly to the people, or privately to His disciples, of whom He had chosen the twelve chief ones to be at His side, and whom He destined to be the teachers of the nations.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.4.34"
+    },
+    {
+      "id": "hcf:tertullian:mark.4.34:ef900cae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:prescription-against-heretics-20-22",
+      "title": "PRESCRIPTION AGAINST HERETICS 20, 22 on mark 4:34",
+      "excerpt": "Christ Jesus our Lord clearly declared himself as to who he was while he lived on earth.… Who then of sound mind can possibly suppose that those whom the Lord ordained to be leaders and teachers were ignorant of anything essential to salvation? Who could suppose that he who kept them, as he did, so close to himself in their daily attentiveness, in their discipline, in their companionship, to whom, when they were alone, he used to expound all things which were obscure, telling them that \"to them it was given to know those mysteries,\" which it was not permitted the people to understand—now would he leave them ignorant?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.4.34"
     },
     {
       "id": "catena-mark-0311-v34",
@@ -163,6 +255,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.34:0f93ba7d:0"
       ]
     }
   ]

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.1:19322471:0"
       ]
     },
     {
@@ -73,7 +80,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.13.1:9f467708:0"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.13.1:0e963a0f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:1",
+      "excerpt": "And as he went out of the temple, one of his disciples said to him, Teacher, behold what manner of stones and what buildings are here. And Jesus answering said to him: Do you see all these great buildings? There shall not be left one stone upon another, that shall not be thrown down. According to history, the meaning is clear. However, as the Lord departed from the temple, all the structures of the law and the composition of the commandments were so destroyed that nothing could be fulfilled by the Jews; and with the head removed, all the members clashed among themselves. And because, with faith established among the Gentiles and the Church of Christ, Judea was about to bear the worthy punishments for its perfidy, it was fitting for the Lord, after praising the devotion of the Church in the poor widow, to leave the temple, and to predict its future ruin and that the buildings then admired would soon be leveled. Divinely, it was arranged that, with the grace of the evangelical faith revealed throughout the world, the temple itself, once august with its ceremonies, would be removed, lest anyone still young and suckling in the faith, seeing those things which were made by the holy prophets and instituted by the Lord remaining, might wonder at the secular sanctity and gradually slip from the sincerity of the faith which is in Christ Jesus into carnal Judaism. Therefore, God, providing for our infirmity and desiring his Church to multiply, caused all those things to be overturned and utterly removed, so that with the shadow and type ceasing, the truth now declared throughout the world might hold the greater palm.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.1:aef0e573:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:1",
+      "excerpt": "Since the Lord spoke much about the desolation of Jerusalem, for example: \"your house is left unto you desolate\" (Matt. 23:38), the disciples marveled that such magnificent and beautiful buildings were to perish, and therefore they showed Him the striking splendor of the temple.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.1"
+    },
+    {
+      "id": "hcf:origen:mark.13.1:b537c6fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-29",
+      "title": "COMMENTARY ON MATTHEW 29 on mark 13:1",
+      "excerpt": "The temple was not overthrown all at once, but gradually as time went by. Similarly, every one who welcomes the Word of God into himself is something like a temple. If, after committing sin he does not completely fall away from the Word of God, but still partially preserves in himself traces of faith and accountability to God's commands, he is a temple partly destroyed, partly standing. But he who after sinning has no care for himself but is always prone to depart from faith and from life according to the gospel, till he completely departs from the living God, he is a temple in which no stone of doctrine is left upon any stone and not thrown down.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.13.1"
     },
     {
       "id": "catena-mark-1031-v1",
@@ -91,6 +156,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.13.1:3a1f0f6f:0"
       ]
     }
   ]

@@ -4,24 +4,6 @@
   "verseNumber": 2,
   "entries": [
     {
-      "id": "catena-luke-2237-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.2",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:1–6",
-      "excerpt": "Now He has aptly compared the dropsical man to an animal which has fallen into a ditch, (for he is troubled by water,) as He compared that woman, whom He spoke of as bound, and whom He Himself loosed, to a beast which is let loose to be led to water.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2239-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.2",
@@ -37,24 +19,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.14.2:737957eb:0"
       ]
     },
     {
-      "id": "catena-luke-2229-v2",
+      "id": "catena-luke-2237-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.2",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "augustine",
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:1–6",
-      "excerpt": "Although our Lord knew the malice of the Pharisees, yet He became their guest, that He might benefit by His words and miracles those who were present. Whence it follows, And it came to pass, as he went into the house of one of the chief Pharisees to eat bread on the sabbath day, that they watched him; to see whether He would despise the observance of the law, or do any thing that was forbidden on the sabbath day. When then the man with the dropsy came into the midst of them, He rebukes by a question the insolence of the Pharisees, who wished to detect Him; as it is said, And, behold, there…",
+      "excerpt": "Now He has aptly compared the dropsical man to an animal which has fallen into a ditch, (for he is troubled by water,) as He compared that woman, whom He spoke of as bound, and whom He Himself loosed, to a beast which is let loose to be led to water.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.14.2:887df00b:0"
       ]
     },
     {
@@ -66,6 +62,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:1–6",
       "excerpt": "Disregarding then the snares of the Jews, He cures the dropsical, who from fear of the Pharisees did not ask to be healed on account of the sabbath, but only stood up, that when Jesus beheld him, He might have compassion on him and heal him. And the Lord knowing this, asked not whether he wished to be made whole, but forthwith healed him. Whence it follows; And he took him, and healed him, and let him go. Wherein our Lord took no thought not to offend the Pharisees, but only that He might benefit him who needed healing. For it becomes us, when a great good is the result, not to care if fools…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2229-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.2",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:1–6",
+      "excerpt": "Although our Lord knew the malice of the Pharisees, yet He became their guest, that He might benefit by His words and miracles those who were present. Whence it follows, And it came to pass, as he went into the house of one of the chief Pharisees to eat bread on the sabbath day, that they watched him; to see whether He would despise the observance of the law, or do any thing that was forbidden on the sabbath day. When then the man with the dropsy came into the midst of them, He rebukes by a question the insolence of the Pharisees, who wished to detect Him; as it is said, And, behold, there…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -109,60 +123,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2230-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.2",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:1–6",
-      "excerpt": "When it is said that Jesus answered, there is a reference to the words which went before, And they watched him. For the Lord knew the thoughts of men.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2232-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.2",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:1–6",
-      "excerpt": "But they who were asked, are rightly silent, for they perceived that whatever they said, would be against themselves. For if it is lawful to heal on the sabbath day, why did they watch the Saviour whether He would heal? If it is not lawful, why do they take care of their cattle on the sabbath? Hence it follows, But they held their peace.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2236-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.2",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:1–6",
-      "excerpt": "By these words He so refutes His watchers, the Pharisees, as to condemn them also of covetousness, who in the deliverance of animals consult their own desire of wealth. How much more then ought Christ to deliver a man, who is much better than cattle!",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.14.2:d81ec163:0"
       ]
     },
     {
@@ -174,6 +141,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:1–6",
       "excerpt": "By a suitable example then He settles the question, shewing that they violate the sabbath by a work of covetousness, who contend that he does so by a work of charity. Hence it follows, And they could not answer him again to these things. Mystically, the dropsical man is compared to him who is weighed down by an overflowing stream of carnal pleasures. For the disease of dropsy derives the name from a watery humour.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.14.2:8d9651e1:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2232-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.2",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:1–6",
+      "excerpt": "But they who were asked, are rightly silent, for they perceived that whatever they said, would be against themselves. For if it is lawful to heal on the sabbath day, why did they watch the Saviour whether He would heal? If it is not lawful, why do they take care of their cattle on the sabbath? Hence it follows, But they held their peace.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -202,17 +194,35 @@
       ]
     },
     {
-      "id": "catena-luke-2231-v2",
+      "id": "catena-luke-2236-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.2",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:1–6",
-      "excerpt": "But by His question He exposes their folly. For while God blessed the sabbath, (Gen. 2:1.) they forbade to do good on the sabbath; but the day which does not admit the works of the good is accursed.",
+      "excerpt": "By these words He so refutes His watchers, the Pharisees, as to condemn them also of covetousness, who in the deliverance of animals consult their own desire of wealth. How much more then ought Christ to deliver a man, who is much better than cattle!",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2230-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.2",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:1–6",
+      "excerpt": "When it is said that Jesus answered, there is a reference to the words which went before, And they watched him. For the Lord knew the thoughts of men.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -236,6 +246,76 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "catena-luke-2231-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.2",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:1–6",
+      "excerpt": "But by His question He exposes their folly. For while God blessed the sabbath, (Gen. 2:1.) they forbade to do good on the sabbath; but the day which does not admit the works of the good is accursed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.14.2:f7ed6579:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 14:2",
+      "excerpt": "When then the man with the dropsy came into the midst of them, He rebukes by a question the insolence of the Pharisees, who wished to detect Him; as it is said, And, behold, there was a certain man before him which had the dropsy. And Jesus answering, &c.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.14.2"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.14.2:1a4d3028:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 14:2",
+      "excerpt": "Therefore, when the man \"suffering from dropsy\" came forward into the midst, the Lord looked not to avoiding giving them offense, but to bestowing a kindness on the one in need of healing. For where very great benefit is at hand, we ought not to concern ourselves with those who are foolishly scandalized.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.14.2"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.14.2:ce738f9f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke",
+      "title": "Exposition of the Gospel of Luke on luke 14:2",
+      "excerpt": "First, Christ cures the man with dropsy. The abundant flow of the flesh had oppressed the functions of his soul and had quenched the glow of his spirit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.14.2"
     }
   ]
 }

@@ -4,24 +4,6 @@
   "verseNumber": 15,
   "entries": [
     {
-      "id": "catena-mark-0063-v15",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.15",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:14–15",
-      "excerpt": "John being put in prison, fitly does the Lord begin to preach: wherefore there follows, Preaching the Gospel, &c. For when the Law ceases, the Gospel arises in its steps.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0065-v15",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.15",
@@ -37,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.15:bf21f059:0"
       ]
     },
     {
@@ -58,17 +47,17 @@
       ]
     },
     {
-      "id": "catena-mark-0061-v15",
+      "id": "catena-mark-0063-v15",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.15",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:14–15",
-      "excerpt": "And to shew us that in persecutions we ought to retire, and not to await them; but when we fall into them, we must sustain them.",
+      "excerpt": "John being put in prison, fitly does the Lord begin to preach: wherefore there follows, Preaching the Gospel, &c. For when the Law ceases, the Gospel arises in its steps.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -91,6 +80,73 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.15:2a34d888:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0061-v15",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.15",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:14–15",
+      "excerpt": "And to shew us that in persecutions we ought to retire, and not to await them; but when we fall into them, we must sustain them.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.15:9d5ae74f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:15",
+      "excerpt": "Christ preaches, it would seem, the same thing as John, namely: \"repent\" and \"the Kingdom of God has drawn near.\" But in reality it is not the same thing: John says \"repent\" in order to turn people away from sins, while Christ says \"repent\" in order that they might depart from the letter of the Law, which is why He also added: \"believe in the Gospel,\" for he who wishes to believe according to the Gospel has already set aside the Law. The Lord declares that \"the time\" of the Law \"has been fulfilled.\" Until now, He says, the Law was in effect, but henceforth the Kingdom of God begins, the life according to the Gospel. This life is rightly presented as the \"Kingdom\" of Heaven, for when you see that one who lives according to the Gospel conducts himself almost as though he were bodiless, how can you not say that he already possesses the Kingdom of Heaven (where there is neither food nor drink), even though it seems to be still far off.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.15"
+    },
+    {
+      "id": "catena-mark-0066-v15",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.15",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:14–15",
+      "excerpt": "Since then the time was fulfilled, when the fulness of time was come, and God sent his Son, it was fitting that the race of man should obtain the last dispensation of God. And therefore he says, for the kingdom of heaven is at hand. (Orig. in Matt. tom. x. 14. v. Orig. de Orat. 25, 26. in Matt. t. 12 14). But the kingdom of God is essentially the same as the kingdom of heaven, though they differ in idea. For by the kingdom of God is to be understood that in which God reigns; (non occ. v. Chrys, in Matt. Hom. 19. in c. 6:9.). and this in truth is in the region of the living, where, seeing God…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.15:0203e733:0"
       ]
     },
     {
@@ -130,42 +186,6 @@
       ]
     },
     {
-      "id": "catena-mark-0064-v15",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.15",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:14–15",
-      "excerpt": "When the shadow ceases, the truth comes on; first, John in prison, the Law in Judæa; then, Jesus in Galilee, Paul among the Gentiles preaching the Gospel of the kingdom. For to an earthly kingdom succeeds poverty, to the poverty of Christians is given an everlasting kingdom; but earthly honour is like the foam of water, or smoke, or sleep.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0066-v15",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.15",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:14–15",
-      "excerpt": "Since then the time was fulfilled, when the fulness of time was come, and God sent his Son, it was fitting that the race of man should obtain the last dispensation of God. And therefore he says, for the kingdom of heaven is at hand. (Orig. in Matt. tom. x. 14. v. Orig. de Orat. 25, 26. in Matt. t. 12 14). But the kingdom of God is essentially the same as the kingdom of heaven, though they differ in idea. For by the kingdom of God is to be understood that in which God reigns; (non occ. v. Chrys, in Matt. Hom. 19. in c. 6:9.). and this in truth is in the region of the living, where, seeing God…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0068-v15",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.15",
@@ -174,6 +194,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:14–15",
       "excerpt": "For he must repent, who would keep close to eternal good, that is, to the kingdom of God. For he who would have the kernel, breaks the shell; the sweetness of the apple makes up for the bitterness of its root; the hope of gain makes the dangers of the sea pleasant; the hope of health takes away from the painfulness of medicine. They are able worthily to proclaim the preaching of Christ who have deserved to attain to the reward of forgiveness; and therefore after He has said, Repent, He subjoins, and believe the Gospel. For unless ye have believed, ye shall not understand.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.15:3fb132e7:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0064-v15",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.15",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:14–15",
+      "excerpt": "When the shadow ceases, the truth comes on; first, John in prison, the Law in Judæa; then, Jesus in Galilee, Paul among the Gentiles preaching the Gospel of the kingdom. For to an earthly kingdom succeeds poverty, to the poverty of Christians is given an everlasting kingdom; but earthly honour is like the foam of water, or smoke, or sleep.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

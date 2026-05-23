@@ -4,25 +4,6 @@
   "verseNumber": 10,
   "entries": [
     {
-      "id": "augustine-john-070-c14-v10",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.10",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 14:7–10",
-      "excerpt": "The words of the holy Gospel, brethren, are rightly understood only if they are found to be in harmony with those that precede; for the premises ought to agree with the conclusion, when it is the Truth that speaks. The Lord had said before, And if I go and prepare a place for you, I will come again and receive you unto myself; that where I am, there ye may be also: and then had added, And whither I go ye know, and the way ye know; and showed that all He said was that they knew Himself. What, therefore, the meaning was of His going to Himself by Himself — for He also lets the disciples see…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
       "id": "augustine-john-071-c14-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
@@ -80,14 +61,65 @@
       ]
     },
     {
-      "id": "catena-john-1859-v10",
+      "id": "augustine-john-070-c14-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.10",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 14:7–10",
+      "excerpt": "The words of the holy Gospel, brethren, are rightly understood only if they are found to be in harmony with those that precede; for the premises ought to agree with the conclusion, when it is the Truth that speaks. The Lord had said before, And if I go and prepare a place for you, I will come again and receive you unto myself; that where I am, there ye may be also: and then had added, And whither I go ye know, and the way ye know; and showed that all He said was that they knew Himself. What, therefore, the meaning was of His going to Himself by Himself — for He also lets the disciples see…",
+      "takeaway": "",
+      "sourceId": "augustine-tractates-john-source",
+      "rank": 85,
+      "tags": [
+        "augustine",
+        "patristic",
+        "tractate",
+        "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.14.10:c345426c:2"
+      ]
+    },
+    {
+      "id": "catena-john-1864-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
-      "excerpt": "For to that joy of beholding His face, nothing can be added. Philip understood this, and said, Lord, shew us the Father, and it sufficeth us. But he did not yet understand that he could in the same way have said, Lord, shew us Thyself, and it sufficeth us. But our Lord’s answer enlightens him, Jesus saith unto him, Have I been so long with you, and yet hast thou not known Me, Philip?",
+      "excerpt": "But is he to be reproved, who, when he has seen the likeness, wishes to see the man of whom he is the likeness? No: our Lord rebuked the question, only with reference to the mind of the asker. Philip asked, as if the Father were better than the Son; and so shewed that He did not know the Son. Which opinion our Lord corrects: Believest thou not that I am in the Father, and the Father in Me? as if He said, If it is a great wish with thee to see the Father, at any rate believe what thou dost not see.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.14.10:4ffaf997:0"
+      ]
+    },
+    {
+      "id": "catena-john-1873-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.10",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:8–11",
+      "excerpt": "For he that edifieth his neighbour by speaking, doth a good work. These two sentences are brought against us by different sects of heretics; the Arians saying that the Son is unequal to the Father, because He does not speak of Himself; the Sabellians, that the same who is the Father is the Son. For what is meant, they ask, by, The Father that dwelleth in Me, He doeth the works, but, I that dwell in Myself, do these works.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -98,14 +130,14 @@
       ]
     },
     {
-      "id": "catena-john-1860-v10",
+      "id": "catena-john-1859-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
-      "excerpt": "But how is this, when our Lord said that they knew whither He was going, and the way, because they knew Him? The question is easily settled by supposing that some of them knew, and others not; among the latter, Philip.",
+      "excerpt": "For to that joy of beholding His face, nothing can be added. Philip understood this, and said, Lord, shew us the Father, and it sufficeth us. But he did not yet understand that he could in the same way have said, Lord, shew us Thyself, and it sufficeth us. But our Lord’s answer enlightens him, Jesus saith unto him, Have I been so long with you, and yet hast thou not known Me, Philip?",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -134,14 +166,32 @@
       ]
     },
     {
-      "id": "catena-john-1864-v10",
+      "id": "catena-john-1870-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
-      "excerpt": "But is he to be reproved, who, when he has seen the likeness, wishes to see the man of whom he is the likeness? No: our Lord rebuked the question, only with reference to the mind of the asker. Philip asked, as if the Father were better than the Son; and so shewed that He did not know the Son. Which opinion our Lord corrects: Believest thou not that I am in the Father, and the Father in Me? as if He said, If it is a great wish with thee to see the Father, at any rate believe what thou dost not see.",
+      "excerpt": "He then addresses all of them, not Philip only: The word that I speak unto you, I speak not of Myself. What is, I speak not of Myself, but, I that speak am not of Myself? He attributes what He does to Him, from whom He Himself, the doer, is.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1860-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.10",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:8–11",
+      "excerpt": "But how is this, when our Lord said that they knew whither He was going, and the way, because they knew Him? The question is easily settled by supposing that some of them knew, and others not; among the latter, Philip.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -170,14 +220,14 @@
       ]
     },
     {
-      "id": "catena-john-1869-v10",
+      "id": "catena-john-1876-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
-      "excerpt": "Or thus: Philip, because [he thought] he had seen the Son with his bodily eye, wished to see the Father in the same way; perhaps too remembering what the Prophet said, I saw the Lord, and therefore he says, Shew us the Father. (Isa. 6:1) The Jews had asked, who was His Father; and Peter and Thomas, whither He went; and neither were told plainly. Philip therefore, that he might not seem burdensome, after saying, Shew us the Father, adds, And it sufficeth us: i. e. we seek for no more. Our Lord in reply does not say, that he asked an impossible thing, but that he had not seen the Son to begin…",
+      "excerpt": "Believe then for My works’ sake, that I am in the Father, and the Father in Me; for, were we separated, we could not be working together.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -188,14 +238,14 @@
       ]
     },
     {
-      "id": "catena-john-1870-v10",
+      "id": "catena-john-1869-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
-      "excerpt": "He then addresses all of them, not Philip only: The word that I speak unto you, I speak not of Myself. What is, I speak not of Myself, but, I that speak am not of Myself? He attributes what He does to Him, from whom He Himself, the doer, is.",
+      "excerpt": "Or thus: Philip, because [he thought] he had seen the Son with his bodily eye, wished to see the Father in the same way; perhaps too remembering what the Prophet said, I saw the Lord, and therefore he says, Shew us the Father. (Isa. 6:1) The Jews had asked, who was His Father; and Peter and Thomas, whither He went; and neither were told plainly. Philip therefore, that he might not seem burdensome, after saying, Shew us the Father, adds, And it sufficeth us: i. e. we seek for no more. Our Lord in reply does not say, that he asked an impossible thing, but that he had not seen the Son to begin…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -224,24 +274,6 @@
       ]
     },
     {
-      "id": "catena-john-1873-v10",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.10",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:8–11",
-      "excerpt": "For he that edifieth his neighbour by speaking, doth a good work. These two sentences are brought against us by different sects of heretics; the Arians saying that the Son is unequal to the Father, because He does not speak of Himself; the Sabellians, that the same who is the Father is the Son. For what is meant, they ask, by, The Father that dwelleth in Me, He doeth the works, but, I that dwell in Myself, do these works.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1875-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
@@ -260,17 +292,17 @@
       ]
     },
     {
-      "id": "catena-john-1876-v10",
+      "id": "catena-john-1863-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "hilary-poitiers",
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
-      "excerpt": "Believe then for My works’ sake, that I am in the Father, and the Father in Me; for, were we separated, we could not be working together.",
+      "excerpt": "He does not mean the sight of the bodily eye: for His fleshly part, born of the Virgin, doth not avail towards contemplating the form and image of God in Him; but the Son of God being known with the understanding, it follows that the Father is known also, forasmuch as He is the image of God, not differing from but expressing His Author1. For our Lord’s expressions do not speak of one person solitary and without relationship, but teach us His birth. The Father also excludes the supposition of a single solitary person, and leaves us no other doctrine but that the Father is seen in the Son, by…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
-      "rank": 85,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -286,6 +318,24 @@
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
       "excerpt": "A declaration so new startled Philip. Our Lord is seen to be man. He confesses Himself to be the Son of God, declares that, if He were known, the Father would be known, that, if He is seen, the Father is seen. The familiarity of the Apostle therefore breaks forth into questioning our Lord, Philip saith unto Him, Lord, shew us the Father, and it sufficeth us.He did not deny He could be seen (non visum negavit), but wished to be shewn him; nor did he wish to see with his bodily eyes, but that He whom he had seen might be made manifest to his understanding. He had seen the Son in the form of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1874-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.10",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:8–11",
+      "excerpt": "That the Father dwells in the Son, shews that He is not single, or solitary; that the Father works by the Son, shews that He is not different or alien. As He is not solitary who doth not speak from Himself, so neither is He alien and separable who speaketh by Him. Having shewn then that the Father spoke and worked in Him, He formally states this union: Believe Me that I am in the Father, and the Father in Me: that they might not think that the Father worketh and speaketh in the Son as by a mere agent or instrument, not by the unity of nature implied in His Divine birth.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -314,14 +364,39 @@
       ]
     },
     {
-      "id": "catena-john-1863-v10",
+      "id": "catena-john-1867-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
       "topicSlugs": [],
       "personId": "hilary-poitiers",
       "workId": "catena-aurea-john",
       "title": "On John 14:8–11",
-      "excerpt": "He does not mean the sight of the bodily eye: for His fleshly part, born of the Virgin, doth not avail towards contemplating the form and image of God in Him; but the Son of God being known with the understanding, it follows that the Father is known also, forasmuch as He is the image of God, not differing from but expressing His Author1. For our Lord’s expressions do not speak of one person solitary and without relationship, but teach us His birth. The Father also excludes the supposition of a single solitary person, and leaves us no other doctrine but that the Father is seen in the Son, by…",
+      "excerpt": "But the Father is in the Son, and the Son in the Father, not by a conjunction of two harmonizing essences3, nor by a nature grafted into a more capacious substance as in material bodies, in which it is impossible that what is within can be made external to that which contains it; but by the birth of a nature which is life from life; forasmuch as from God nothing but God can be born.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:john.14.10:27b748ec:3"
+      ]
+    },
+    {
+      "id": "catena-john-1868-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.10",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:8–11",
+      "excerpt": "The unchangeable God follows, so to speak, His own nature, by begetting unchangeable God. Nor does the perfect birth of unchangeable God from unchangeable God forsake His own nature. We understand then here the nature of God subsisting in Him, since God is in God, nor besides Him who is God, can any other be God.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -350,42 +425,6 @@
       ]
     },
     {
-      "id": "catena-john-1867-v10",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.10",
-      "topicSlugs": [],
-      "personId": "hilary-poitiers",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:8–11",
-      "excerpt": "But the Father is in the Son, and the Son in the Father, not by a conjunction of two harmonizing essences3, nor by a nature grafted into a more capacious substance as in material bodies, in which it is impossible that what is within can be made external to that which contains it; but by the birth of a nature which is life from life; forasmuch as from God nothing but God can be born.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1868-v10",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.10",
-      "topicSlugs": [],
-      "personId": "hilary-poitiers",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:8–11",
-      "excerpt": "The unchangeable God follows, so to speak, His own nature, by begetting unchangeable God. Nor does the perfect birth of unchangeable God from unchangeable God forsake His own nature. We understand then here the nature of God subsisting in Him, since God is in God, nor besides Him who is God, can any other be God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1871-v10",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.10",
@@ -404,22 +443,378 @@
       ]
     },
     {
-      "id": "catena-john-1874-v10",
+      "id": "hcf:augustine:john.14.10:14282d3d:4",
       "relation": "verse",
-      "targetVerseId": "kjva:john.14.10",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-71",
+      "title": "Tractates on John 71 on john 14:10",
+      "excerpt": "For in connection with these two clauses,-the one where it is said, \"I speak not of myself;\" and the other, which runs, \"but the Father that dwelleth in me, He doeth the works,\"-we are opposed by two different classes of heretics, who, by each of them holding only to one clause, run off, not in one, but opposite directions, and wander far from the pathway of truth. For instance, the Arians say, See here, the Son is not equal to the Father, He speaketh not of Himself. The Sabellians, or Patripassians, on the other hand, say, See, He who is the Father is also the Son; for what else is this, \"The Father that dwelleth in me, He doeth the works,\" but I that do them dwell in myself? You make contrary assertions, and that not only in the sense that any one thing is false, that is, contrary to truth, but in this also, when two things that are both false contradict one another. In your wanderings you have taken opposite directions; midway between the two is the path you have left. You are a far longer distance apart from each other than from the very way you have both forsaken. Come hither, you from the one side, and you from the other: pass not across, the one to the other, but come from both sides to us, and make this the place of your mutual meeting. Ye Sabellians, acknowledge the Being you overlook; Arians, set Him whom you subordinate in His place of equality, and you will both be walking with us in the pathway of truth.\r\n\r\nFor you have grounds on both sides that make mutual admonition a duty. Listen, Sabellian: so far is the Son from being the same as the Father, and so truly is He another, that the Arian maintains His inferiority to the Father. Listen, Arian: so truly is the Son equal to the Father, that the Sabellian declares Him to be identical with the Father. Do thou restore the personality thou hast abstracted, and thou, the full dignity thou hast lowered, and both of you stand together on the same ground as ourselves: because the one of you who has been an Arian, for the conviction of the Sabellian, never lets out of sight the personality of Him who is distinct from the Father, and the other who has been a Sabellian takes care, for the conviction of the Arian, of not impairing the dignity of Him who is equal with the Father. For to both of you He cries, \"I and my Father are one.\" When He says \"one,\" let the Arians listen; when He says, \"we are,\" let the Sabellians give heed, and no longer continue in the folly of denying, the one, His equality with the Father, the other, His distinct personality.\r\n\r\nIf, then, in saying, \"The words that I speak unto you, I speak not of myself,\" He is thereby accounted of a power so inferior, that what He doeth is not what He Himself willeth; listen to what He also said, \"As the Father raiseth up the dead and quickeneth them, even so the Son quickeneth whom He will.\" And so likewise, if in saying, \"The Father that dwelleth in me, He doeth the works,\" He is on that account not to be regarded as distinct in person from the Father, let us listen to His other words, \"What things soever the Father doeth, these also doeth the Son likewise;\" and He will be understood as speaking not of one person twice over, but of two who are one. But just because their mutual equality is such as not to interfere with their distinct personality, therefore He speaketh not of Himself, because He is not of Himself and the Father also, that dwelleth in Him, Himself doeth the works, because He, by whom and with whom He doeth them, is not, save of the Father Himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:augustine:john.14.10:00dbeee1:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-14",
+      "title": "Tractates on John 14 on john 14:10",
+      "excerpt": "But the disciples, still thinking that the Father is something greater than the Son, seeing only the flesh, and not understanding His divinity, said to Him, \"Lord, show us the Father and it sufficeth us.\" As much as to say, \"We know Thee already, and bless Thee that we know Thee: for we thank Thee that Thou hast shown Thyself to us. But as yet we know not the Father: therefore our heart is inflamed, and occupied with a certain holy longing of seeing Thy Father who sent Thee. Show us Him, and we shall desire nothing more of Thee: for it sufficeth us when He has been shown, than whom none can be greater.\" A good longing, a good desire; but small intelligence. Now the Lord Jesus Himself, regarding them as small men seeking great things, and Himself great among the small, and yet small among the small, says to Philip, one of the disciples, who had said this: \"Am I so long time with you, and ye have not known me, Philip?\" Here Philip might have answered, Thee we have known, but did we say to Thee, Show us Thyself? We have known Thee, but it is the Father we seek to know. He immediately adds, \"He that hath seen me, hath seen the Father also.\" If, then, One equal with the Father has been sent, let us not estimate Him from the weakness of the flesh, but think of the majesty clothed in flesh, but not weighed down by the flesh. For, remaining God with the Father, He was made man among men, that, through Him who was made man, thou mightest become such as to receive God. For man could not receive God. Man could see man; God he could not apprehend. Why could he not apprehend God? Because he had not the eye of the heart, by which to apprehend Him. There was something within disordered, something without sound: man had the eyes of the body sound, but the eyes of the heart sick. He was made man to the eye of the body; so that, believing on Him who could be seen in bodily form, thou mightst be healed for seeing Him whom thou wast not able to see spiritually. \"Am I so long time with you, and ye know me not, Philip? He that hath seen me, hath seen the Father also.\" Why did they not see Him? Lo, they did see Him, and yet saw not the Father: they saw the flesh, but the majesty was concealed. What the disciples who loved Him saw, saw also the Jews who crucified Him. Inwardly, then, was He all; and in such manner inwardly in the flesh, that He remained with the Father when He came to the flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:augustine:john.14.10:bea2ef1c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-71-26",
+      "title": "SERMON 71.26 on john 14:10",
+      "excerpt": "So then, with all these ways of speaking we still have to understand that the activities of the divine three are inseparable, so that when an activity is attributed to the Father he is not taken to engage in it without the Son and the Holy Spirit. And when it is an activity of the Son, it is not without the Son and the Holy Spirit. And when it is an activity of the Son, it is not without the Father and the Son. That being the case, those who have the right faith, or better still the right understanding as far as they can, know well enough that the reason it is said about the Father, \"He does the works,\" is that the works have their origin in the one from whom the co-working persons have their very existence. The Son, you see, is born of him, and the Holy Spirit proceeds primarily from him of whom the Son is born, being the Spirit common to them both.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:augustine:john.14.10:1b02bfad:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-20",
+      "title": "Tractates on John 20 on john 14:10",
+      "excerpt": "Behold how the catholic faith gets clear of this question. The Son walked upon the sea, planted the feet of flesh on the waves: the flesh walked, and the divinity directed. But when the flesh was walking and the divinity directing, was the Father absent? If absent, how doth the Son Himself say, \"but the Father abiding in me, Himself doeth the works\"? If the Father, abiding in the Son, Himself doeth His works, then that walking upon the sea was made by the Father, and through the Son. Accordingly, that walking is an inseparable work of Father and Son. I see both acting in it. Neither the Father forsook the Son, nor the Son left the Father. Thus, whatever the Son doeth, He doeth not without the Father; because whatever the Father doeth, He doeth not without the Son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:augustine:john.14.10:f1bfb95f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-52-14",
+      "title": "SERMON 52.14 on john 14:10",
+      "excerpt": "The Father was not born of the Virgin, and yet this birth of the Son from the Virgin was the work of both Father and Son. The Father did not suffer on the cross, and yet the passion of the Son was the work of both Father and Son. The Father did not rise again from the dead, and yet the resurrection of the Son was the work of both Father and Son. You have the persons quite distinct, and their working inseparable. So let us never say that the Father worked anything without the Son, the Son anything without the Father. Or perhaps you are worried about the miracles Jesus did, in case perhaps he did some that the Father did not do? Then what about \"But the Father abiding in me does his works\"?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:augustine:john.14.10:7c57f384:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-71",
+      "title": "Tractates on John 71 on john 14:10",
+      "excerpt": "The Lord saith, \"The words that I speak unto you, I speak not of myself: but the Father, that dwelleth in me, He doeth the works.\" Even His words, then, are works? Clearly so. For surely he that edifies a neighbor by what he says, works a good work. But what mean the words, \"I speak not of myself,\" but, I who speak am not of myself? Hence He attributes what He does to Him, of whom He, that doeth them, is. For the Father is not God as born of any one else, while the Son is God, as equal, indeed, to the Father, but as born of God the Father. Therefore the former is God, but not of God; and the Light, but not of light: whereas the latter is God of God, Light of Light.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.14.10:05cdefd9:1",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "hilary-poitiers",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:8–11",
-      "excerpt": "That the Father dwells in the Son, shews that He is not single, or solitary; that the Father works by the Son, shews that He is not different or alien. As He is not solitary who doth not speak from Himself, so neither is He alien and separable who speaketh by Him. Having shewn then that the Father spoke and worked in Him, He formally states this union: Believe Me that I am in the Father, and the Father in Me: that they might not think that the Father worketh and speaketh in the Son as by a mere agent or instrument, not by the unity of nature implied in His Divine birth.",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-7-39",
+      "title": "ON THE TRINITY 7.39 on john 14:10",
+      "excerpt": "In no other words than these that the Son has used can the fact be stated that Father and Son, being alike in nature, are inseparable. The Son, who is the way and the truth and the life, is not deceiving us by some theatrical transformation of names and aspects when he, while wearing manhood, styles himself the Son of God. He is not falsely concealing the fact that he is God the Father. He is not a single person who hides his features under a mask so that we might imagine that two are present. He is not a solitary being, now posing as his own Son, and then again calling himself the Father, adorning the one unchanging nature with varying names.… It is the height of impiety to believe that Father and Son are two gods. It is sacrilege to assert that Father and Son are singularly God. It is blasphemy to deny the unity, consisting in sameness of kind, of God from God.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 75,
+      "sourceId": "hcf:source:on-the-trinity-7-39",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.14.10:96f6c2ff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-3-1",
+      "title": "ON THE TRINITY 3.1 on john 14:10",
+      "excerpt": "The words of the Lord, \"I am in the Father and the Father is in me,\" confuse many minds, and this is only natural since the powers of human reason cannot provide them with any intelligible meaning. It seems impossible that one object should be both within and without another, or that—since it is laid down that the beings of whom we are treating, although they do not dwell apart, retain their separate existence and condition—these beings can reciprocally contain one another so that one should permanently envelope and be permanently enveloped by the other whom yet he envelopes. This is a problem that human wisdom will never solve, nor will human research ever find an analogy for this condition of divine existence. But God can be what human beings cannot understand.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-3-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.14.10:3c1d06ff:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-7-40",
+      "title": "ON THE TRINITY 7.40 on john 14:10",
+      "excerpt": "That the Father dwells in the Son proves that the Father is not isolated and alone. That the Father works through the Son proves that the Son is not an alien or a stranger. There cannot be one person only, for he speaks not of himself. And, conversely, they cannot be separate and divided when the one speaks through the voice of the other. These words are the revelation of the mystery of their unity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-7-40",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.14.10:675b4c1e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-74",
+      "title": "Homily on the Gospel of John 74 on john 14:10",
+      "excerpt": "\"Believest thou not that I am in the Father?\" That is, \"I am seen in that Essence.\"\r\n\r\n\"The words that I speak, I speak not of Myself,\" Seest thou the exceeding nearness, and the proof of the one Essence?\r\n\r\n\"The Father that dwelleth in Me, He doeth the works.\" How, beginning with words, doth He come to works? for that which naturally followed was, that He should say, \"the Father speaketh the words.\" But He putteth two things here, both concerning doctrine and miracles. Or it may have been because the words also were works. How then doeth He them? In another place He saith, \"If I do not the works of My Father, believe Me not.\" How then saith He here that the Father doeth them? To show this same thing, that there is no interval between the Father and the Son. What He saith is this: \"The Father would not act in one way, and I in another.\" Indeed in another place both He and the Father work; \"My Father worketh hitherto, and I work\"; showing in the first passage the unvaryingness of the works, in the second the identity. And if the obvious meaning of the words denotes humility, marvel not; for after having first said, \"Believest thou not?\" He then spake thus, showing that He so modeled His words to bring him to the faith; for He walked in their hearts.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:hcf-alexander-of-alexandria:john.14.10:453681b4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-alexander-of-alexandria",
+      "workId": "hcf:work:hcf-alexander-of-alexandria:epistles-on-the-arian-heresy-epistle-catholic-3",
+      "title": "Epistles on the Arian Heresy, Epistle Catholic 3 on john 14:10",
+      "excerpt": "How, also, can He be changeable and mutable, who says indeed by Himself: \"I am in the Father, and the Father in Me,\" and, \"I and My Father are one;\" and by the prophet, \"I am the Lord, I change not?\" For even though one saying may refer to the Father Himself, yet it would now be more aptly spoken of the Word, because when He became man, He changed not; but, as says the apostle, \"Jesus Christ, the same yesterday, today, and for ever.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c328"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:hcf-ambrosiaster:john.14.10:eccaa428:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ambrosiaster",
+      "workId": "hcf:work:hcf-ambrosiaster:commentary-on-2-corinthians-5-19-21-2",
+      "title": "COMMENTARY ON 2 CORINTHIANS 5.19-21.2 on john 14:10",
+      "excerpt": "For the Son is the envoy of God the Father in accordance with nature. And so he says … \"I am in the Father and the Father is in me.\" For the Father is understood through this to be in the Son, because their substance is one. For where there is unity, there is no differentiation. And they are interchangeable, because both their appearance and likeness are the same, with the consequence that he who sees the Son is said to have seen the Father too. As the Lord himself says, \"He who has seen me has seen the Father too.\" Therefore it is correct to say, God was in Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-2-corinthians-5-19-21-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c384"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:athanasius-the-great:john.14.10:c6de9a92:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:discourses-against-the-arians-1-21",
+      "title": "Discourses Against the Arians 1.21 on john 14:10",
+      "excerpt": "Let us proceed then to consider the attributes of the Father, and we shall come to know whether this Image is really his. The Father is eternal, immortal, powerful, light, King, Sovereign, God, Lord, Creator and Maker. These attributes must be in the Image to make it true that whoever \"has seen\" the Son \"has seen the Father.\" If the Son is not all this, but, as the Arians consider, he is originate and not eternal, this is not a true image of the Father, unless indeed they give up shame and go on to say that the title of image, given to the Son, is not a token of a similar essence, but his name only.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.10:1275dfff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:10",
+      "excerpt": "The words that I speak, I speak not from Myself: but the Father abiding in Me Himself doeth the works.\r\n\r\n\"If,\" He would say, \"My Father had spoken anything to you, He would have used words no other than these which I now speak. For so great is the equality in essence between Myself and Him, that My words are His words, and whatsoever I do may be believed to be His actions: for abiding in Me, by reason of the exact equivalence in essence, He Himself doeth the works.\" For since the Godhead is One, in the Father, in the Son, and in the Spirit, every word that cometh from the Father comes always through the Son by the Spirit: and every work or miracle is through the Son by the Spirit, and yet is considered as coming from the Father. For the Son is not apart from the essence of the Father, nor indeed is the Holy Ghost; but the Son, being in the Father, and having the Father again in Himself, claims that the Father is the doer of the works. For the nature of the Father is mighty in operation, and shines out clearly in the Son.\r\n\r\nAnd one might add to this another meaning that is involved, suggested clearly by the principles that underlie the Incarnation. He says: I speak not of Myself, meaning \"not in severance from or in lack of accordance with God the Father.\" For since He appeared to those who saw Him in human form, He refers His words back to the Divine nature, as speaking in the Person of the Father; and the same with His actions: and He almost seems to say: \"Let not this human form deprive Me of that reverent estimation which is due and befitting to Me, and do not suppose that My words are those of a mere man or of one like unto yourselves, but believe them to be in very truth Divine, and such as befit the Father equally with Myself. And He it is Who works, abiding in Me: for I am in Him, and He is in Me. Think not therefore that a mighty and extraordinary privilege was granted to the men of former days, in that they saw God in a vision of fire, and heard His voice speaking unto them. For ye have in reality seen the Father through Me and in Me; since I have appeared among you, being in My nature God, and have come visibly, according to the words of the Psalmist. And be well assured that in hearing My words, ye heard the words of the Father; and ye have been spectators of His works, and of the might that is in Him. For by Me He speaks, as by His own Word; and in Me He carries out and achieves His wondrous works, as though by His own Power.\"\r\n\r\nAnd so I suppose that no reasonable theory would ever separate Him Who is the Word of the Father and the mighty Power of His essence, from the essence of the Father. Eather would every one freely confess that the Word ever was from the beginning in His nature contained in the Father's essence, every one at least who is anything but distraught in mental perplexity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.10:fb1a0c61:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:10",
+      "excerpt": "Believest thou not that I am in the Father and the Father in Me?\r\n\r\n\"I indeed, O Philip,\" He would say, \"in depicting in Myself the nature of My Father, am the Image of His essence, moulded as that implies after His likeness, not (as might be supposed) by the bestowal of glories that once were not Mine, nor even by the reflected brilliancy of Divine endowments that once were unfamiliar but have been granted from without: but rather in My own nature are contained the qualities peculiar to My Father; and whatsoever He may be, that in very truth am I, in regard to sameness in essence. To this thou wilt surely reply: for it seems thou didst not go on to realise that I am in the Father, and the Father in Me. And yet the force of my words shall constrain thee henceforth, even in spite of thyself, to acknowledge thy assent to this. Therefore, whatsoever I say is spoken as the words of the Father; and whatsoever I do, is done by the Father also.\" And Christ says this, not as one making use of the words of another, nor even as speaking in the office and capacity of a prophet to interpret the commands that came from the Father above: for the prophets ever spake, not their own words, but the words which they received by inspiration from God. Again, He attributes to His Father the successful performance of His miracles, not implying that He works His wonders by a power not His own, as did for instance those Apostles who said to the people: \"Give not heed to us, as though by our own power or godliness we had healed the sick man.\" For the saints are wont to use no power of their own in working their miracles, but rather the power of God: for they appear as ministers and servants, showing forth the words and also the works of God. But since the Son is Consubstantial with the Father, differing from Him in no respect except as to distinct personality, He says that His own words are those of the Father, since the Father could in no wise make use of words differing from those of the Son. And further, thou wilt understand the same to be signified in the majesty of His works. For since the Father could never by any possibility carry into effect any work without the Son's knowledge and co-operation, Christ attributes His works to His Father. For consider Him as saying more clearly this: \"I am in all respects like to Him Who begat Me, and an Image of His essence; not merely adorned with the outward appearance of a glory that is not Mine, but, owing to the identity of essence, containing within Myself My Father in all His fulness.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:gregory-of-nyssa:john.14.10:84021832:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "hcf:work:gregory-of-nyssa:against-eunomius-2-4",
+      "title": "AGAINST EUNOMIUS 2.4 on john 14:10",
+      "excerpt": "The Lord speaks the truth who says, \"I am in the Father and the Father in me\"—plainly, the one in his entirety is in the other in his entirety. The Father does not have an overwhelming presence in the Son. The Son is not deficient in the Father. And the Lord also says that the Son should be honored. And, \"The one who has seen me has seen the Father,\" and, \"No one fully knows the Father except the Son.\" In all of this, there is no hint … of any variation in glory or of essence or anything else between the Father and the Son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:against-eunomius-2-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c395"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:hcf-pope-dionysius:john.14.10:3e00ee01:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pope-dionysius",
+      "workId": "hcf:work:hcf-pope-dionysius:against-those-who-divide-and-cut-to-pieces-the-divine-monarchy-as-quoted-in-athanasius-de-decretis-chapter-26",
+      "title": "Against those who divide and cut to pieces the Divine Monarchy (as quoted in Athanasius, De Decretis, Chapter 26) on john 14:10",
+      "excerpt": "Neither then may we divide into three Godheads the wonderful and divine Monad; nor disparage with the name of \"work\" the dignity and exceeding majesty of the Lord; but we must believe in God the Father Almighty, and in Christ Jesus His Son, and in the Holy Ghost, and hold that to the God of the universe the Word is united. For \"I,\" says He, \"and the Father are one;\" and, \"I in the Father and the Father in Me.\" For thus both the Divine Triad, and the holy preaching of the Monarchy, will be preserved.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c268"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:tertullian:john.14.10:68ba1c43:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on john 14:10",
+      "excerpt": "If, indeed, He meant the Father to be understood as the same with the Son, by saying, \"He who seeth me seeth the Father,\" how is it that He adds immediately afterwards, \"Believest thou not that I am in the Father, and the Father in me? \" He ought rather to have said: \"Believest thou not that I am the Father? \"With what view else did He so emphatically dwell on this point, if it Were not to clear up that which He wished men to understand-namely, that He was the Son? And then, again, by saying, \"Believest thou not that I am in the Father, and the Father in me,\" He laid the greater stress on His question on this very account, that He should not, because He had said, \"He that hath seen me, hath seen the Father,\" be supposed to be the Father; because He had never wished Himself to be so regarded, having always professed Himself to be the Son, and to have come from the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:tertullian:john.14.10:9d2c2557:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on john 14:10",
+      "excerpt": "And yet He omitted not to explain how the Father was in the Son and the Son in the Father. \"The words,\" says He, \"which I speak unto you, are not mine,\" because indeed they were the Father's words; \"but the Father that dwelleth in me, He doeth the works.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:hcf-theodore-of-mopsuestia:john.14.10:d1b10356:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-of-mopsuestia",
+      "workId": "hcf:work:hcf-theodore-of-mopsuestia:commentary-on-john-6-14-10",
+      "title": "COMMENTARY ON JOHN 6.14.10 on john 14:10",
+      "excerpt": "Among all the words said so far, especially here, he clearly shows that he talks about their likeness. Indeed, in the same way, by turning the speech to the Father and him, he reveals the perfect likeness of their nature, so that, as the Father lives in him, and he in the Father, a perfect likeness can be shown in each of them. Then he proves and confirms his words by saying, \"The words that I say to you I do not speak on my own.\" If you do not believe, he says, in these words, know that so perfect is the conformity of nature, ideas, and virtue that there is no difference in the words either. Whatever I say is in common, and do not only speak on my own. The Father who dwells in me does his works. It would have been opportune to add, \"My Father speaks through the words: I do not speak.\" But he had said above, \"The words that I say,\" and here, \"The Father does his works,\" in order to show that the nature is common, the words are common and the works are common as well. From this it is evident that through the words, \"I do not speak on my own,\" he does not signify an inferior state, but a perfect communion and an inseparable union. And this appears especially from the context.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-john-6-14-10",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c428"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.14.10:e90836ab:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 14:10",
+      "excerpt": "The Son is in the Father, since He exists in His essence, and again the Father is in the essence of the Son, just as a king is present in his image, and the image in the king. For the features of the image and the king are the same. And that My essence and the Father's are one, this is clear. For \"the words that I speak, I speak not from Myself,\" that is, I speak them no differently, but as the Father would say, so I also speak; because I have nothing of My own, nothing separate from the Father, but all things are common; for the essence is one, though the persons are different.\r\n\r\nBut to the Father belong not only the words that I speak, but also the deeds, the Divine deeds. If the deeds are God's, and the Father and I are God, then the deeds belong to one Essence, so that if I act, the Father acts, and if the Father acts, I act.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.14.10"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.14.10:5e549c16:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 14:10",
+      "excerpt": "Then when he says, How can you say, Show us the Father? he shows his disapproval of the request, and of the basis of the request. He is displeased with the request because the Father is seen in the Son. Philip could have said what we read in Job: \"I, who have spoken so unthoughtfully, what can I reply? I will put my hand over my mouth\" (39:34). He disapproves of the root of the request when he says, Do you not believe that I am in the Father and the Father in me? This is like saying: You want to possess the Father, believing that you will have sufficiency in him. But if you believe that, Do you not believe that I am in the Father and the Father in me? For if you believed the latter, you would expect to find in me all the sufficiency which is in the Father.\r\n\r\nHe says, I am in the Father and the Father in me, because they are one in essence. This was spoken of before: \"I and the Father are one\" (10:30).\r\n\r\nWe should note that in the divinity essence is not related to person as it is in human beings. Among human beings, the essence of Socrates is not Socrates, because Socrates is a composite. But in the divinity, essence is the same with the person in reality, and so the essence of the Father is the Father, and the essence of one Son is the Son. Therefore, wherever the essence of the Father is, there the Father is; and wherever the essence of the Son is, there the Son is. Now the essence of the Father is in the Son, and the essence of the Son is in the Father. Therefore, the Son is in the Father, and the Father in the Son. This is how Hilary explains it.\r\n\r\nNow our Lord clarifies his answer: first by the works he does himself; secondly, by the works he will do by the disciples (v 12). So he first mentions the works he does himself; secondly, he infers a tenet of the faith (v 11).\r\n\r\nThe belief that Christ was God could be known from two things: from his teaching and from his miracles. Our Lord mentions these. \"If I had not done among them the works which no one else did, they would not have sin\" (15:24). Referring to his teaching he says, \"If I had not come and spoken to them, they would not have sin\" (15:22). We also read: \"No man ever spoke like this man!\" (7:46). The blind man, referring to his works, said: \"Never since the world began has it been heard that any one opened the eyes of a man born blind\" (9:32). Our Lord shows his divinity by these two things. Referring to his teaching, he says, The words that I say to you, by the instrument of my human nature, I do not speak of myself, but from him who is in me, that is, the Father: \"I declare to the world what I have heard from him,\" the Father (8:26). The Father, therefore, who speaks in me, is in me. Now whatever a human being says must come from the first Word. And this first Word, the Word of God, is from the Father. Therefore, all the words we speak must be from God. So when anyone speaks words he has from the Father, the Father is in him. Referring to his works, he says, the Father who dwells in me does the works, because no one could do the works that I do: \"The Son can do nothing of himself\" (5:19).\r\n\r\nChrysostom wonders how Christ can start by referring to his words, and then bring in his works, for Christ says, the words that I say to you... but the Father does the works. There are two answers to this. Chrysostom says that Christ was referring to his teaching the first time, and then referring to his miracles. For Augustine, our Lord is referring to his words as his works: \"This is the work of God, that you believe in him whom he has sent\" (6:29). So when the Lord says, the Father does the works, we should understand that these works are words.\r\n\r\nTwo heresies were based on the above texts. When our Lord said, I am in the Father, Sabellius understood this to mean that the Father and the Son are the same. And from the statement, I do not speak of myself, Arius inferred that the Son is inferior to the Father. Yet these very texts refute these heresies. For if the Father and Son were the same, as Sabellius speculated, the Son would not have said, The words that I say to you I do not speak of myself. And if the Son were inferior to the Father, as Arius blasphemed, he would not have said, the Father who dwells in me does the works.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.14.10"
     }
   ]
 }

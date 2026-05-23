@@ -4,24 +4,6 @@
   "verseNumber": 12,
   "entries": [
     {
-      "id": "catena-mark-1365-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.16.12",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 16:9–13",
-      "excerpt": "Now we must consider how the Lord appeared after the resurrection. For Mark says, Now when Jesus was risen early the first day of the week, he appeared first to Mary Magdalene, out of whom he had cast seven devils.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1375-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.16.12",
@@ -30,6 +12,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 16:9–13",
       "excerpt": "Luke relates the whole story respecting these two, one of whom was Cleophas, but Mark here touches but slightly upon it. That village of which Luke speaks may without absurdity be supposed to be what is here called a farm house, and indeed in some Greek manuscripts it is called the country. But by this name are understood not only villages, but also boroughs and country towns, because they are without the city, which is the head and mother of all the rest. That which Mark expresses by the Lord's appearance in another form, is what Luke means by saying that their eyes were holden that they…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.16.12:d77b97b9:3"
+      ]
+    },
+    {
+      "id": "catena-mark-1365-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.16.12",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 16:9–13",
+      "excerpt": "Now we must consider how the Lord appeared after the resurrection. For Mark says, Now when Jesus was risen early the first day of the week, he appeared first to Mary Magdalene, out of whom he had cast seven devils.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 85,
@@ -73,24 +80,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1366-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.16.12",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 16:9–13",
-      "excerpt": "John tells us most fully how and when this appearance took place. But the Lord rose in the morning from the sepulchre in which He had been laid in the evening, that those words of the Psalm might be fulfilled, Heaviness may endure for a night, but joy cometh in the morning. (Ps. 30:5)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:mark.16.12:e30cf47a:0"
       ]
     },
     {
@@ -130,17 +126,17 @@
       ]
     },
     {
-      "id": "catena-mark-1367-v12",
+      "id": "catena-mark-1366-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.16.12",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 16:9–13",
-      "excerpt": "Or else put a stop at, Now when Jesus was risen, and then read, early the first day of the week he appeared, &c.",
+      "excerpt": "John tells us most fully how and when this appearance took place. But the Lord rose in the morning from the sepulchre in which He had been laid in the evening, that those words of the Psalm might be fulfilled, Heaviness may endure for a night, but joy cometh in the morning. (Ps. 30:5)",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,6 +162,24 @@
       ]
     },
     {
+      "id": "catena-mark-1367-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.16.12",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 16:9–13",
+      "excerpt": "Or else put a stop at, Now when Jesus was risen, and then read, early the first day of the week he appeared, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1376-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.16.12",
@@ -181,6 +195,151 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "hcf:augustine:mark.16.12:273b4a47:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-235-1",
+      "title": "SERMON 235.1 on mark 16:12",
+      "excerpt": "Jesus appeared; he was visible to their eyes, yet he was not recognized. The master walked with them on the way; in fact, he was the way on which they were not yet walking; but he found that they had wandered some distance from the way. For when he was with them before his passion, he had foretold all—that he would suffer, that he would die, that he would rise again on the third day—he had predicted all; but his death was as a loss of memory for them. They were so disturbed when they saw him hanging on the cross that they forgot his teaching, did not look for his resurrection, and failed to keep his promises in mind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.16.12"
+    },
+    {
+      "id": "hcf:augustine:mark.16.12:f6755f52:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:harmony-of-the-gospels-3-25-72",
+      "title": "HARMONY OF THE GOSPELS 3.25.72 on mark 16:12",
+      "excerpt": "Their eyes were obstructed, that they should not recognize him until the breaking of the bread. And thus, in accordance with the state of their minds, which were still ignorant of the truth (that the Christ would die and rise again), their eyes were similarly hindered. It was not that the truth himself was misleading them, but rather that they were themselves unable to perceive the truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:harmony-of-the-gospels-3-25-72",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.16.12"
+    },
+    {
+      "id": "hcf:augustine:mark.16.12:4fa08233:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-149-to-paulinus",
+      "title": "LETTER 149, TO PAULINUS on mark 16:12",
+      "excerpt": "It seems as if some impediment to recognition had been effected in the eyes of those who beheld him; and when it is plainly said elsewhere: \"He appeared to them in another shape\"—obviously in his own body with another appearance—some effect was produced which acted as an impediment to prevent them, that is, their eyes were subjected to a delay in recognition.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.16.12"
+    },
+    {
+      "id": "hcf:bede:mark.16.12:292af819:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 16:12",
+      "excerpt": "After this, however, he was shown in another form to two of them, as they walked and went into the country. And they went and told it to the rest, but they did not believe them. How this happened, Luke explains more fully. But what Mark says, he was shown in another form, Luke says more plainly, because their eyes were held, so that they should not recognize him, until, coming to the village where they were going and setting a meal for him as for a stranger, they finally recognized him in the breaking of bread (Luke 24). As the same Luke adds subsequently, they rose up that same hour, returned to Jerusalem, and found the eleven gathered together, and those who were with them saying, the Lord has truly risen, and appeared to Simon. And they recounted the things that happened on the way, and how they recognized him in the breaking of bread (Ibid.). But as Mark says, they reported it to the others, and they did not believe them, while Luke says that they were already speaking, that he had truly risen and had appeared to Simon. What is to be understood, if not that there were some among them who did not want to believe it? Who, however, does not see that Mark left out what Luke narrated in detail? That is, what Jesus had spoken to them before they recognized him, and how they recognized him in the breaking of bread. Since as soon as he said that he appeared to them in another form as they went into the country, he immediately added: And they went and told it to the rest, but they did not believe them. As if they could report what they did not recognize, or recognize what appeared to them in another form. How then did they recognize him to be able to report it, Mark undoubtedly omitted. Which is worth recording so that we may become accustomed to noticing the habit of the evangelists, of omitting what they do not mention, and joining what they do mention, so that for those who do not have the practice in this consideration, no other error mainly arises, by which they think that they do not agree with each other.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.16.12"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.16.12:25b33ee2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 16:12",
+      "excerpt": "\"After this He appeared in another form to two of them on the road, as they were going into the village.\" About these two, Luke also speaks (Luke 24:13–35).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.16.12"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.16.12:a7a1548f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-23",
+      "title": "Forty Gospel Homilies, Homily 23 on mark 16:12",
+      "excerpt": "Therefore the Lord performed outwardly in the eyes of the body what was happening within them in the eyes of the heart. For they themselves within were both loving and doubting, while the Lord outwardly was both present to them and yet did not reveal who He was. To those speaking about Him He showed His presence, but from those doubting Him He hid the appearance of His recognition.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.16.12"
+    },
+    {
+      "id": "hcf:peter-chrysologus:mark.16.12:f8d07605:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 16:12",
+      "excerpt": "(Chrysologus ubi sup.) But let no one suppose that Christ changed the form of His face by His resurrection, but the form is changed when of mortal it becomes immortal, so that this means that He gained a glorious countenance, not that He lost the substance of His countenance. But He was seen of two; because faith in the resurrection is to be preached and shown to two people, that is, the Gentiles and the Jews.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.16.12"
+    },
+    {
+      "id": "catena-mark-1377-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.16.12",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 16:9–13",
+      "excerpt": "But in a mystic sense we may understand that faith here labours, leading the active life, but there it reigns secure in the contemplative vision. Here we see His face through a glass, there we shall see the truth face to face, wherefore He was shewn to them as they were walking, that is, labouring, in another form. And when it was told, the disciples did not believe, because they saw, like Moses, that which was not enough for them, for he said, Shew me thyself; (Exod. 33:18. Sept.) forgetting his flesh, he prays in this life for that which we hope for in the life to come.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.16.12:3e21c887:0"
       ]
     },
     {
@@ -210,24 +369,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 16:9–13",
       "excerpt": "They mourn and weep because they had not yet seen, but after a short time they shall receive a consolation. For blessed are they that weep now, for they shall be comforted.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1377-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.16.12",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 16:9–13",
-      "excerpt": "But in a mystic sense we may understand that faith here labours, leading the active life, but there it reigns secure in the contemplative vision. Here we see His face through a glass, there we shall see the truth face to face, wherefore He was shewn to them as they were walking, that is, labouring, in another form. And when it was told, the disciples did not believe, because they saw, like Moses, that which was not enough for them, for he said, Shew me thyself; (Exod. 33:18. Sept.) forgetting his flesh, he prays in this life for that which we hope for in the life to come.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

@@ -4,6 +4,31 @@
   "verseNumber": 13,
   "entries": [
     {
+      "id": "catena-matt-3303",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.13",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:13",
+      "excerpt": "The Pharisees and the Scribes then would neither enter in, nor hear Him who said, “By me if any man enter in he shall be saved;” John 10:9 nor would they suffer those to enter in, who were able to have believed through the things which had been spoken before by the Law and the Prophets concerning Christ, but shut up the door with every kind of device to deter men from entering. Also they detracted from His teaching, denied all prophecy concerning Him, and blasphemed every miracle as deceitful, or wrought by the Devil. All who in their evil conversation set an example of sinning to the people,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.13:f6c10fd6:0"
+      ]
+    },
+    {
       "id": "catena-matt-3301",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.13",
@@ -22,22 +47,141 @@
       ]
     },
     {
-      "id": "catena-matt-3303",
+      "id": "hcf:origen:matthew.23.13:1eac998a:1",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.13",
       "topicSlugs": [],
       "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:13",
-      "excerpt": "The Pharisees and the Scribes then would neither enter in, nor hear Him who said, “By me if any man enter in he shall be saved;” John 10:9 nor would they suffer those to enter in, who were able to have believed through the things which had been spoken before by the Law and the Prophets concerning Christ, but shut up the door with every kind of device to deter men from entering. Also they detracted from His teaching, denied all prophecy concerning Him, and blasphemed every miracle as deceitful, or wrought by the Devil. All who in their evil conversation set an example of sinning to the people,…",
+      "workId": "hcf:work:origen:commentary-on-matthew-13",
+      "title": "COMMENTARY ON MATTHEW 13 on matthew 23:13",
+      "excerpt": "There are those who dare to say that God is not good because of the curses in his law that he places against their sin. And yet the one who is truly the Son of God who gave that same law is also the same one who put blessings into the law. The same God who provides blessings for those who are saved in a similar way applies curses which he placed in the law against sinners. \"Woe,\" he says. Woe to you and to those hearing these things who plead the God of the law and yet do not understand that these words were spoken by God in a kindly way. So we understand why Jesus said, \"Woe to you, scribes and Pharisees.\" They believe that it is in fact a good thing to pronounce these curses against sinners. They consider the arrangement of the law's curses to be a part of God's design. The chiding father frequently urges his advice on his son for his improvement—advice that may seem to be a curse. He does not wish the curses to be actualized, however, but rather he desires to avert him from even more such curses.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.23.13:19446318:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-24-3",
+      "title": "Commentary on Matthew 24.3 on matthew 23:13",
+      "excerpt": "\"Woe\" is a voice of sorrowing. For this reason he says that they close the kingdom of heaven, because they hide in the law the consolation of his truth. They lost sight of the advent expected by the prophets. Through deceptive teachings, they do not allow others to go to heaven either. They do not adorn the way of eternity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
+    },
+    {
+      "id": "hcf:jerome:matthew.23.13:96c9ca7a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:13",
+      "excerpt": "(Ver. 13, 14.) But woe to you, scribes and Pharisees, hypocrites! For you shut the kingdom of heaven in people's faces. For you neither enter yourselves nor allow those who would enter to go in. Woe to you, scribes and Pharisees, hypocrites! For you devour widows' houses and for a pretense you make long prayers; therefore you will receive the greater condemnation. The scribes and Pharisees have knowledge of the Law and the Prophets, and they know that Christ is the Son of God; they are not ignorant that He was born of a Virgin. But while they seek to prey on the subject people, they themselves do not enter the kingdom of heaven, nor do they allow those who could enter to do so. This is what the Prophet Hosea accuses: The priests have hidden the way, they have murdered Shechem (Hosea 6:9). And again: The priests have not said, 'Where is the Lord?' (Hosea 4). Indeed, every teacher who scandalizes his disciples with evil deeds shuts the kingdom of heaven before them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
+    },
+    {
+      "id": "hcf:jerome:matthew.23.13:19a5fa6d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-4-23-13",
+      "title": "COMMENTARY ON MATTHEW 4.23.13 on matthew 23:13",
+      "excerpt": "The scribes and Pharisees have the knowledge of the prophets and of the law. They know that Christ is the Son of God. They are not ignorant that he was born of the Virgin. Yet they did not seek to serve the people to whom they were accountable. They themselves were not entering the kingdom of heaven, nor did they permit others who were able to do so. Hosea the prophet declares of them, \"The priests have stolen the way, they have killed the [people of] Shechem,\" and again, \"The priests did not ask where the Lord is.\" Surely every teacher who misleads his students shuts the gate of the kingdom of heaven before them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-4-23-13",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.23.13:f594c188:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-73",
+      "title": "Homily on the Gospel of Matthew 73 on matthew 23:13",
+      "excerpt": "\"Woe unto you, for ye shut up the kingdom against men; for ye neither go in yourselves, neither suffer ye them that are entering to go in.\" But if to profit no one be a charge against a man, even to hurt and hinder, what plea hath that? But what means, \"them that are entering in?\" Them that are fit for it. For when they were to lay injunctions on others, they used to make the burdens intolerable, but when they themselves were to do any of the things required, on the contrary, so far from doing anything, they went much beyond this in wickedness, they even used to corrupt others. These are they that are called pests, who make their employment the ruin of others, standing right contrary to teachers. For if it be the part of a teacher to save that which is perishing, to destroy that which is on the point of being saved is that of a destroyer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
+    },
+    {
+      "id": "hcf:remigius-auxerre:matthew.23.13:578cf568:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "hcf:work:remigius-auxerre:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 23:13",
+      "excerpt": "Which means that every one who thinks highly of his own deserts, shall be humbled before God; and every one who humbles himself concerning his good deeds, shall be exalted with God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c533",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.13:62ee55d0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:13",
+      "excerpt": "Not only, He says, are you unbelievers who lead a corrupt life, but you teach others not to believe in Me and you corrupt them by your life and example. For the people are apt to become like their rulers, especially if they see them inclined towards evil. See, therefore, that \"woe\" is the reward of every teacher and ruler whose evil life obstructs others in progress towards good.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.13:80976402:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:13",
+      "excerpt": "After he instructed the disciples and the multitudes about the caution they should have regarding the doctrine of the Jews, here he turns his discourse to the scribes, rebuking them. First, he rebukes them for the pretense of religion, when they were irreligious; secondly, for the pretense of purity, when they were impure; thirdly, for the pretense of piety, when they were impious. The second is at woe to you, scribes and Pharisees, hypocrites, who make clean the outside of the cup, etc. The third is at woe to you who build the sepulchres of the prophets, etc. In those things that pertain to religion, certain things are owed by priests to the people, and certain things conversely. First, therefore, he sets forth their malice in those things that are owed by priests; secondly, in those things that are owed by the people, at woe to him that says: whosoever shall swear, etc. A priest owes something to one already converted, and something to one not yet converted. To one not yet converted, that he may convert him; to one converted, doctrine; Malachi 2:7: the lips of the priest teach wisdom. Likewise, he owes him prayers; Hebrews 5:1: for every high priest taken from among men is ordained for men in the things that appertain to God. And they acted wickedly in both respects; hence he first rebukes them regarding the first; secondly, regarding the second, at woe to you who devour the houses of widows, etc. In all these rebukes he shows himself to be the Son of him who gave the old law. In Deuteronomy 26 and 28, curses are given to those who did not remain in the law, and afterwards blessings are given. But because he came to loose the curses of the law, therefore the blessings were given first above, where it was said, blessed are the poor, blessed are the meek, etc. But toward the end of his teaching he gives the curse. Therefore they reprove badly who reprove the old law because curses were contained in it, since just as in the old law, so also in the new. For just as in the law none were cursed except those who transgressed the law, so neither here; Proverbs 3:11: reject not the correction of the Lord. But what does it mean when he says, who shut the kingdom of heaven against men? The kingdom of heaven is called the beatitude of eternal life; above at 5:20: unless your justice abound more than that of the scribes and Pharisees, you shall not enter into the kingdom of heaven. Likewise, sacred Scripture is called the kingdom; above at 21:43: the kingdom of God shall be taken from you, i.e., the understanding of sacred Scripture. To both kingdoms Christ is the door; John 10:9: I am the door. By me, if any man enter in, he shall be saved, and he shall go in and go out, and shall find pastures. What then is it to shut the kingdom, if not that they were shutting it by bad doctrine and a bad life? Only what is open can be shut. The teachings about Christ were open, but they were shutting them, because they were making them obscure. It says in Isaiah 35:5: the Lord himself will come and will save us. Then shall the eyes of the blind be opened, and the ears of the deaf shall be unstopped. When the Lord was doing these miracles, this Scripture was open, but they were shutting it by saying, he casts out devils by Beelzebub the prince of devils, Luke 11:15. Likewise, they were shutting it by a bad life, when by bad example they led others to sin; Psalm 1:1: blessed is the man who has not walked in the counsel of the ungodly, nor stood in the way of sinners, nor sat in the chair of pestilence. He properly sits in the chair of pestilence who takes the office of teaching and corrupts the people by a bad life. Also by an unjust sentence a judge slays a man, yet he hurls the unjust sentence to no effect. For power was given for binding and loosing unto edification, not unto destruction. Hence it can be said to them, woe to you (...) because you shut the kingdom of heaven against men. Likewise, whoever impedes entrance into the kingdom, there is no doubt that he acts wickedly; hence it follows, for you yourselves do not enter in, nor do you suffer those that are going in to enter, i.e., to be converted. Hence Malachi 2:8: you have departed out of the way, and have caused many to stumble.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.13"
     },
     {
       "id": "catena-matt-3302",
@@ -55,6 +199,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.23.13:4c983448:0"
       ]
     }
   ]

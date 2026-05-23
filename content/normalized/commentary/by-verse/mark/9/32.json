@@ -4,24 +4,6 @@
   "verseNumber": 32,
   "entries": [
     {
-      "id": "catena-mark-0723-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.32",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:30–37",
-      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0725-v32",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.32",
@@ -30,6 +12,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:30–37",
       "excerpt": "This ignorance of the disciples proceeds not so much from slowness of intellect, as from love for the Saviour, for they were as yet carnal, and ignorant of the mystery of the cross, they could not therefore believe that He whom they had recognised as the true God, was about to die; being accustomed then to hear Him often talk in figures, and shrinking from the event of His death, they would have it, that something was conveyed figuratively in those things, which he spoke openly concerning His betrayal and passion. It goes on: And they came to Capernaum.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.9.32:b80732c8:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0723-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.32",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:30–37",
+      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -73,7 +80,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.9.32:922f2646:0"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.9.32:2f019f5d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 9:32",
+      "excerpt": "But they did not understand this saying, and they were afraid to ask him. This ignorance of the disciples is born not so much from their slowness of mind as from the love of the Savior, who, while still carnal and ignorant of the mystery of the cross, could not believe that he whom they knew as true God would die. And because they were used to hearing him often speak through figures, fearing the event of his death, they wanted to interpret what he spoke plainly about his betrayal and passion as figuratively signifying something else.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.9.32"
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.9.32:8419b076:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:the-gospel-of-st-matthew-homily-58-1",
+      "title": "THE GOSPEL OF ST MATTHEW, HOMILY 58.1 on mark 9:32",
+      "excerpt": "It is remarkable how, when Peter had been rebuked, and Moses and Elijah had discoursed, and had seen the glory of what was coming, and the Father had uttered a voice from above, and so many miracles had been done, and the resurrection was right at the door (for he said, he should by no means abide any long time in death, but should be raised the third day), even after all that they did not fathom what was happening. Rather they were troubled, and not merely troubled, but exceedingly mournful. Now this arose from their being ignorant as yet of the force of his sayings.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:mark.9.32"
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.9.32:56a74f06:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:the-gospel-of-st-matthew-homily-58",
+      "title": "THE GOSPEL OF ST MATTHEW, HOMILY 58 on mark 9:32",
+      "excerpt": "If ignorant, how could they be sorrowful? Because they were not altogether ignorant. They knew that he was soon to die, for they had continually been told about it. But just what this death might mean, they did not grasp clearly, nor that there would be a speedy recognition of it, from which innumerable blessings would flow. They did not see that there would be a resurrection. This is why they grieved.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:mark.9.32"
     },
     {
       "id": "catena-mark-0726-v32",

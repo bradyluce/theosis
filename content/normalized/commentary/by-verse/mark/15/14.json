@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-1282-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.14",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:6–15",
-      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1285-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.14",
@@ -91,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.14:cd1c337a:1"
       ]
     },
     {
@@ -102,6 +91,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:6–15",
       "excerpt": "We must understand that Jesus was scourged by no other than Pilate himself. For John writes, Pilate took Jesus, and scourged him, (John 13:1) which we must suppose that he did, that the Jews might be satisfied with His pains and insults, and cease from thirsting for His blood.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1282-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.14",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:6–15",
+      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -127,6 +134,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.14:eff4d996:1"
       ]
     },
     {
@@ -146,6 +160,40 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.15.14:8e4be2fc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:14",
+      "excerpt": "But they cried out more: Crucify him. That it might be fulfilled which was said in the twenty-first psalm: Many dogs surrounded me, the assembly of the wicked enclosed me (Psalm XXI); and that from Jeremiah: My heritage is become to me as a lion in the forest, they have given forth their voice against me (Jeremiah XII). Isaiah also agrees in this sentiment: And I looked for judgment, but behold iniquity and not righteousness, but a cry (Isaiah V).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.14:c25ee174:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:14",
+      "excerpt": "Notice then the bloodthirstiness of the Jews and the moderation of Pilate (although he too is worthy of condemnation, because he did not firmly stand up for the righteous man). For they cried out, \"Crucify Him,\" while he, though feebly, nevertheless attempted to free Jesus from condemnation. Therefore he asked again, \"What shall I do with Jesus?\" — trying to give them the opportunity to release the Lord as innocent, which is why he delayed and put it off.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.14"
     },
     {
       "id": "catena-mark-1283-v14",
@@ -181,6 +229,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.14:1b2d6420:0"
       ]
     }
   ]

@@ -76,6 +76,24 @@
       ]
     },
     {
+      "id": "catena-luke-0982-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.34",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:32–36",
+      "excerpt": "How great the reward of mercy which is received into the privilege of divine adoption! For it follows, And ye shall be the sons of the Highest (Ps. 82:6.). Follow then mercy, that ye may obtain grace. Widely spread is the mercy of God; He pours His rain upon the unthankful, the fruitful earth refuses not its increase to the evil. Hence it follows, For he is kind to the unthankful, and to the evil.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0977-v34",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.34",
@@ -130,24 +148,6 @@
       ]
     },
     {
-      "id": "catena-luke-0982-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.34",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:32–36",
-      "excerpt": "How great the reward of mercy which is received into the privilege of divine adoption! For it follows, And ye shall be the sons of the Highest (Ps. 82:6.). Follow then mercy, that ye may obtain grace. Widely spread is the mercy of God; He pours His rain upon the unthankful, the fruitful earth refuses not its increase to the evil. Hence it follows, For he is kind to the unthankful, and to the evil.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0984-v34",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.34",
@@ -181,6 +181,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.34:7f00378d:0"
       ]
     },
     {
@@ -200,6 +207,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:hcf-didache:luke.6.34:a1f09a68:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-didache",
+      "workId": "hcf:work:hcf-didache:the-didache-chapter-1",
+      "title": "The Didache, Chapter 1 on luke 6:34",
+      "excerpt": "There are two ways, one of life and one of death; but a great difference between the two ways. The way of life, then, is this: First, thou shalt love God who made thee; second, thy neighbour as thyself; and all things whatsoever thou wouldst should not occur to thee, thou also to another do not do. And of these sayings the teaching is this: Bless them that curse you, and pray for your enemies, and fast for them that persecute you. For what thank is there, if ye love them that love you? Do not also the Gentiles do the same? But do ye love them that hate you; and ye shall not have an enemy. Abstain thou from fleshly and worldly lusts. If one give thee a blow upon thy right cheek, turn to him the other also; and thou shalt be perfect. If one impress thee for one mile, go with him two. If one take away thy cloak, give him also thy coat. If one take from thee thine own, ask it not back for indeed thou art not able. Give to every one that asketh thee, and ask it not back; for the Father willeth that to all should be given of our own blessings (free gifts).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:luke.6.34"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.34:9fcf7138:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 6:34",
+      "excerpt": "And now, on the subject of a loan, when He asks, \"And if ye lend to them of whom ye hope to receive, what thank have ye? \" compare with this the following words of Ezekiel, in which He says of the before-mentioned just man, \"He hath not given his money upon usury, nor will he take any increase\" -meaning the redundance of interest, which is usury.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.34"
     }
   ]
 }

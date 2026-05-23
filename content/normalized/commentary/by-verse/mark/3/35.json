@@ -4,24 +4,6 @@
   "verseNumber": 35,
   "entries": [
     {
-      "id": "catena-mark-0244-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.35",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:31–35",
-      "excerpt": "From this it is manifest that His brethren and His mother were not always with Him; but because He was beloved by them, they come from reverence and affection, waiting without. Wherefore it goes on, And the multitude sat about him, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0248-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.35",
@@ -40,14 +22,32 @@
       ]
     },
     {
-      "id": "catena-mark-0245-v35",
+      "id": "catena-mark-0244-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.35",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:31–35",
+      "excerpt": "From this it is manifest that His brethren and His mother were not always with Him; but because He was beloved by them, they come from reverence and affection, waiting without. Wherefore it goes on, And the multitude sat about him, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0251-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.35",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:31–35",
-      "excerpt": "The brothers of the Lord must not be thought to be the sons of the ever-virgin Mary, as Helvidius says, nor the sons of Joseph by a former marriage, as some think, but rather they must be understood to be His relations.",
+      "excerpt": "But mystically, the mother and brother of Jesus means the synagogue, (from which according to the flesh He sprung,) and the Jewish people who, while the Saviour is teaching within, come to Him, and are not able to enter, because they cannot understand spiritual things. But the crowd eagerly enter, because when the Jews delayed, the Gentiles flocked to Christ; but His kindred, who stand without wishing to see the Lord, are the Jews who obstinately remained without, guarding the letter, and would rather compel the Lord to go forth to them to teach carnal things, than consent to enter in to…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -76,14 +76,14 @@
       ]
     },
     {
-      "id": "catena-mark-0251-v35",
+      "id": "catena-mark-0245-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.35",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:31–35",
-      "excerpt": "But mystically, the mother and brother of Jesus means the synagogue, (from which according to the flesh He sprung,) and the Jewish people who, while the Saviour is teaching within, come to Him, and are not able to enter, because they cannot understand spiritual things. But the crowd eagerly enter, because when the Jews delayed, the Gentiles flocked to Christ; but His kindred, who stand without wishing to see the Lord, are the Jews who obstinately remained without, guarding the letter, and would rather compel the Lord to go forth to them to teach carnal things, than consent to enter in to…",
+      "excerpt": "The brothers of the Lord must not be thought to be the sons of the ever-virgin Mary, as Helvidius says, nor the sons of Joseph by a former marriage, as some think, but rather they must be understood to be His relations.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -130,6 +130,110 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.3.35:261a9212:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:35",
+      "excerpt": "But the Lord answers: It will be of no benefit to My Mother to be My Mother if She does not possess all the virtues within Herself. Likewise, kinship will be of no benefit to My brothers. For only those are true relatives of Christ who do the will of God. So in saying this, He does not disown His Mother, but shows that She will be worthy of honor not merely for giving birth alone, but also for every other good deed: for if She did not have this, others would have seized the honor of kinship before Her.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.35"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.3.35:b7fd5eec:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 3:35",
+      "excerpt": "He does not therefore say this, as denying His mother, but as showing that He is worthy of honour, not only because she bore Christ, but on account of her possessing every other virtue.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.3.35"
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.3.35:87769c29:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 3:35",
+      "excerpt": "(non occ.) By this, the Lord shows that we should honour those who are relations by faith rather than those who are relations by blood. A man indeed is made the mother of Jesus by preaching Himq; for He, as it were, brings forth the Lord, when he pours Him into the heart of his hearers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.3.35"
+    },
+    {
+      "id": "hcf:augustine:mark.3.35:296c6de9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-virginity-3",
+      "title": "ON VIRGINITY 3 on mark 3:35",
+      "excerpt": "What else does he here teach us, than to prefer to kinship \"after the flesh\" our descent \"after the Spirit.\" He teaches that persons are united by nearness of spirit to those who are just and holy, and that by obeying and following they cleave to their teaching and conduct. Therefore Mary is more blessed in receiving the faith of Christ than in conceiving the flesh of Christ. For to the one who said, \"Blessed is the womb, which bore you!\" he himself answered: \"Blessed are they who hear the Word of God and keep it.\" Concerning his own brothers, his own relatives after the flesh, who at first did not believe in him, he found dubious advantage in being their kin. As for Mary, her nearness as a mother would have been little help for her salvation if she had not borne Christ in her heart in a more blessed manner than in the flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-virginity-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.3.35"
+    },
+    {
+      "id": "hcf:augustine:mark.3.35:23164374:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractate-on-john-10-3-2",
+      "title": "TRACTATE ON JOHN 10.3.2 on mark 3:35",
+      "excerpt": "She did the Father's will. It was this in her that the Lord magnified, not merely that her flesh gave birth to flesh.… When he said, \"Blessed are they who hear the Word of God and keep it,\" he was in effect saying: \"My mother whom you have called blessed is blessed for the reason that she keeps the Word of God, not that the Word was made flesh in her and dwelt among us, but that she keeps the very Word of God through which she was made and which was made flesh in her.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-john-10-3-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.3.35"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.3.35:5be35ce7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-3",
+      "title": "Forty Gospel Homilies, Homily 3 on mark 3:35",
+      "excerpt": "But since he who does the will of the Father is called sister and brother of the Lord, on account of both sexes who are gathered to the faith, this is not surprising; yet it is greatly to be wondered how one is also called mother. For he deigned to call his faithful disciples brothers, saying: Go, announce to my brothers. Therefore, he who could become a brother of the Lord by coming to faith—it must be asked how he can also be a mother? But we should know that one who is a brother and sister of Christ by believing becomes a mother by preaching. For one gives birth to the Lord, as it were, when one has poured him into the heart of the hearer. And one becomes his mother if through one's voice the love of the Lord is begotten in the mind of one's neighbor.\r\n\r\nTo confirm this matter fittingly for us, blessed Felicity is present, whose birthday we celebrate today, who by believing became a handmaid of Christ, and by preaching was made a mother of Christ. For she feared to leave her seven sons, as is read in the more accurate accounts of her deeds, alive in the flesh after her, just as carnal parents usually fear to send their dead children before them. For when she was seized in the labor of persecution, she strengthened the hearts of her sons by preaching the love of the heavenly fatherland, and she brought forth in spirit those whom she had borne in the flesh, so that by preaching she might bear to God those whom she had borne in the flesh to the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.3.35"
+    },
+    {
       "id": "catena-mark-0246-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.35",
@@ -163,6 +267,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.3.35:8a8fd6be:0"
       ]
     }
   ]

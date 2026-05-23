@@ -4,6 +4,24 @@
   "verseNumber": 20,
   "entries": [
     {
+      "id": "catena-luke-2773-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.20",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:11–27",
+      "excerpt": "Or by the ten pounds he signifies the law, because of the ten commandments, and by the ten servants, those to whom while under the law grace was preached. For so we must interpret the ten pounds given them for trading, seeing that they understood the law, when its veil was removed, to belong to the Gospel.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2769-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.20",
@@ -33,60 +51,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2773-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.20",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:11–27",
-      "excerpt": "Or by the ten pounds he signifies the law, because of the ten commandments, and by the ten servants, those to whom while under the law grace was preached. For so we must interpret the ten pounds given them for trading, seeing that they understood the law, when its veil was removed, to belong to the Gospel.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2767-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.20",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:11–27",
-      "excerpt": "This parable is intended to set before us the mysteries of Christ from the first to the last. For God was made man, who was the Word from the beginning; and though He became a servant, yet was He noble because of His unspeakable birth from the Father.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2768-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.20",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:11–27",
-      "excerpt": "Noble, not only in respect of His Godhead, but of His manhood, being sprung from the seed of David according to the flesh. He went into a far country, separated not so much by distance of place as by actual condition. For God Himself is nigh to every one of us, when our good works bind us to Him. And He is afar off, as often as by cleaving to destruction, we remove ourselves away from Him. To this earthly country then He came at a distance from God, that He might receive the kingdom of the Gentiles, according to the Psalm, Ask of me, and I will give thee the heathen for thine inheritance.…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -130,17 +94,35 @@
       ]
     },
     {
-      "id": "catena-luke-2765-v20",
+      "id": "catena-luke-2767-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.20",
       "topicSlugs": [],
-      "personId": "eusebius-caesarea",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:11–27",
-      "excerpt": "There were some who thought that our Saviour’s kingdom would commence at His first coming, and they were expecting it shortly to appear when He was preparing to go up to Jerusalem; so astonished were they by the divine miracles which He did. He therefore informs them, that He should not receive the kingdom from His Father until He had left mankind to go to His Father.",
+      "excerpt": "This parable is intended to set before us the mysteries of Christ from the first to the last. For God was made man, who was the Word from the beginning; and though He became a servant, yet was He noble because of His unspeakable birth from the Father.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2768-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.20",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:11–27",
+      "excerpt": "Noble, not only in respect of His Godhead, but of His manhood, being sprung from the seed of David according to the flesh. He went into a far country, separated not so much by distance of place as by actual condition. For God Himself is nigh to every one of us, when our good works bind us to Him. And He is afar off, as often as by cleaving to destruction, we remove ourselves away from Him. To this earthly country then He came at a distance from God, that He might receive the kingdom of the Gentiles, according to the Psalm, Ask of me, and I will give thee the heathen for thine inheritance.…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -156,24 +138,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:11–27",
       "excerpt": "Or by His setting out into a far country, He denotes His own ascension from earth to heaven. But when He adds, To receive for himself a kingdom, and to return; He points out His second appearance, when He shall come as a King and in great glory. He first of all calls Himself a man, because of His nativity in the flesh, then noble; not yet a King, because as yet at His first appearance He exercised no kingly power. It is also well said to obtain for Himself a kingdom, according to Daniel, Behold one like the Son of man came with the clouds of heaven, and a kingdom was given to him. (Dan. 7:13.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2774-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.20",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:11–27",
-      "excerpt": "A pound which the Greeks call μνᾶ is equal in weight to a hundred drachmas, and every word of Scripture, as suggesting to us the perfection of the heavenly life, shines as it were with the greatness of the hundredth number.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -202,6 +166,42 @@
       ]
     },
     {
+      "id": "catena-luke-2765-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.20",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:11–27",
+      "excerpt": "There were some who thought that our Saviour’s kingdom would commence at His first coming, and they were expecting it shortly to appear when He was preparing to go up to Jerusalem; so astonished were they by the divine miracles which He did. He therefore informs them, that He should not receive the kingdom from His Father until He had left mankind to go to His Father.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2774-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.20",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:11–27",
+      "excerpt": "A pound which the Greeks call μνᾶ is equal in weight to a hundred drachmas, and every word of Scripture, as suggesting to us the perfection of the heavenly life, shines as it were with the greatness of the hundredth number.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2766-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.20",
@@ -218,6 +218,180 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.19.20:516a2037:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 19:20",
+      "excerpt": "Let us see what he says: \"Lord! here is your mina,\" take it; \"I kept it, wrapped in a handkerchief.\" A cloth was placed on the head of the deceased Lord (John 20:7), and the face of Lazarus in the tomb was wrapped with a handkerchief (John 11:44). Therefore this negligent man rightly says that he wrapped the gift in a handkerchief. For having made it dead and inactive, he made no use of it and brought no profit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.19.20:d184a07a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 19:20",
+      "excerpt": "For with a napkin the face of the dead is covered; well then is this idler said to have wrapped up his pound in a napkin, because leaving it dead and unprofitable he neither touched nor increased it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:augustine:luke.19.20:7c9783e8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 19:20",
+      "excerpt": "(de Quæst. Evan. lib. ii. qu. 46.) Or else; That one of those who well employed their money gained ten pounds, another five, signifies that they acquired them for the flock of God, by whom the law was now understood through grace, either because of the ten commandments of the law, or because he, through whom the law was given, wrote five books; and to this belong the ten and five cities over which He appoints them to preside. For the manifold meanings or interpretations which spring up concerning some individual precept or book, when reduced and brought together in one, make as it were a city of living eternal reasons. Hence a city is not a multitude of living creatures, but of reasonable beings bound together by the fellowship of one law. The servants then who bring an account of that which they had received, and are praised for having gained more, represent those giving in their account who have well employed what they had received, to increase their Lord's riches by those who believe on Him, while they who are unwilling to do this are signified by that servant who kept his pound laid up in a napkin; of whom it follows, And the third came, saying, Lord, behold, here is thy pound, which I have kept laid up in a napkin, &c. For there are some who flatter themselves with this delusion, saying, It is enough for each individual to answer concerning himself, what need then of others to preach and minister, in order that every one should be compelled also to give an account of himself, seeing that in the Lord's sight even they are without excuse to whom the law was not given, and who were not asleep at the time of the preaching of the Gospel, for they might have known the Creator through the creature; and then it follows, For I feared thee, because thou art an austere man, &c. For this is, as it were, to reap when he did not sow, that is, to hold those guilty of ungodliness to whom this word of the law or the Gospel was not preached, and avoiding as it were this peril of judgment, with slothful toil they rest from the ministration of the word. And this it is to tie up in a napkin what they had received.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:augustine:luke.19.20:27e85496:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-94",
+      "title": "SERMON 94 on luke 19:20",
+      "excerpt": "In the Gospel, you have heard both the reward of the good servants and the punishment of the bad. The fault of that servant who was reproved and severely punished was this and only this: that he would not put to use what he had received. He preserved it intact, but his master was looking for a profit from it. God is greedy for our salvation. If such condemnation befalls the servant who did not use what he had received, what should they who lose it expect? We therefore are dispensers. We expend, but you receive. We expect a profit on your part—living good lives—for that is the profit from our dispensing. Do not think that you are free from the obligation of dispensing. Of course, you cannot dispense your gifts as from this higher station of ours, but you can dispense them in whatever station you happen to be. When Christ is attacked, defend him. Give an answer to those who complain. Rebuke blasphemers, but keep yourselves far from any fellowship with them. If in this way you gain anyone, you are putting your gifts to use.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:bede:luke.19.20:847430f7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 19:20",
+      "excerpt": "And another came, saying: Lord, behold thy pound, which I have kept laid up in a napkin. For I feared thee, because thou art a stern man: thou takest up that thou layedst not down, and reapest that thou didst not sow. The servant who, being ordered to trade, hid the master's money in a napkin, shows those who, although fit to preach, refuse either to take up the office of preaching, by command of the Lord through the Church, or at least to carry it out worthily once taken up. For to tie money in a napkin is to hide the received gifts in the idleness of sluggish inactivity. There are indeed men flattering themselves with this perverse reasoning, so as to say: It is enough that each one renders an account concerning himself. What need is there to preach to others, so that each one may be obliged to render an account also concerning them, since even those are inexcusable before the Lord to whom the law was not given, and who have slumbered without hearing the Gospel, because they were able to know the creator through creation? For this is, as it were, to reap where he has not sown, that is, also to hold them guilty of impiety to whom the word of the law or the Gospel has not been ministered. However, avoiding this sort of peril of judgment, they rest in lazy languor away from the ministry of the word, and this is, as it were, tying what they have received in a napkin.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:bede:luke.19.20:a44ee8bb:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 19:20",
+      "excerpt": "Or to tie up money in a napkin is to hide the gifts we have received under the indolence of a sluggish body.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.19.20:f48c7740:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 19:20",
+      "excerpt": "Nothing is said of the other servants, who like wasteful debtors lost all that they had received. By those two servants who gained by trading, are signified that small number, who in two companies were sent as dressers of the vineyard; by the remainder all the Jews. It follows, And they said unto him, Lord, he has ten pounds. And lest this should seem unjust, it is added, For to every one that hath, it shall be given.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:origen:luke.19.20:91583905:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homily-on-genesis-8",
+      "title": "HOMILY ON GENESIS 8 on luke 19:20",
+      "excerpt": "What you have offered to God you shall receive back multiplied. Something like this, although put in another way, is related in the Gospels when in a parable someone received a pound that he might engage in business, and the master of the house demanded the money. If you have caused five to be multiplied to ten, then they are given to you. Hear what Scripture says, \"Take his pound, and give it to him who has ten pounds.\"We therefore appear at least to engage in business for the Lord, but the profits of the business go to us. We appear to offer sacrifice to the Lord, but the things we offer are given back to us. God does not need anything, but he wants us to be rich. He desires our progress through each, individual thing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-on-genesis-8",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:origen:luke.19.20:4412104f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homily-on-exodus-13-1",
+      "title": "HOMILY ON EXODUS 13.1 on luke 19:20",
+      "excerpt": "Interest on the Word of God is having in life and deeds things that the Word of God has commanded. When you hear the Word, if you use it and act according to those words that you hear and live according to these words, then you are preparing interest for the Lord. Each of you can make ten talents from five. You will then hear from the Lord, \"Well done, good and faithful servant, you shall have power over ten cities.\" Beware of this, fearing that any one of you may gather \"in a napkin\" or bury \"in the earth\" the money that has been received. You know well the nature of the outcome for this kind of man when the Lord comes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-on-exodus-13-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
+    },
+    {
+      "id": "hcf:tertullian:luke.19.20:cb3b70a5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:the-prescription-against-heretics",
+      "title": "The Prescription Against Heretics on luke 19:20",
+      "excerpt": "He had Himself fore-shown, by means of a parable, that they should not keep back in secret, fruitless of interest, a single pound, that is, one word of His.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.19.20"
     }
   ]
 }

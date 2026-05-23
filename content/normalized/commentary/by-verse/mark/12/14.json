@@ -4,6 +4,24 @@
   "verseNumber": 14,
   "entries": [
     {
+      "id": "catena-mark-0979-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.12.14",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 12:13–17",
+      "excerpt": "A denarius was a piece of money, accounted equal to ten smaller coins, and bearing the image of Cæsar; wherefore there follows: And he saith unto them, Whose is this image and superscription? And they said unto him, Cæsar's. Let those who think that our Saviour asked the question through ignorance and not by an economy, learn from this that He might have known whose image it was; but He puts the question, in order to return them a fitting answer; wherefore there follows: And Jesus answering said unto them, Render unto Cæsar the things that are Cæsar's, and unto God the things that are God's.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0974-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.12.14",
@@ -37,24 +55,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0979-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.12.14",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 12:13–17",
-      "excerpt": "A denarius was a piece of money, accounted equal to ten smaller coins, and bearing the image of Cæsar; wherefore there follows: And he saith unto them, Whose is this image and superscription? And they said unto him, Cæsar's. Let those who think that our Saviour asked the question through ignorance and not by an economy, learn from this that He might have known whose image it was; but He puts the question, in order to return them a fitting answer; wherefore there follows: And Jesus answering said unto them, Render unto Cæsar the things that are Cæsar's, and unto God the things that are God's.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.12.14:a74dd834:1"
       ]
     },
     {
@@ -69,24 +76,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0975-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.12.14",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 12:13–17",
-      "excerpt": "We have said elsewhere of the Herodians, that they were a certain new heresy, who said that Herod was the Christ, because the succession of the kingdom of Judah had failed. Others however say that the Herodians were the soldiers of Herod, whom the Pharisees brought as witnesses of the words of Christ, that they might take Him, and lead Him away. But observe how in their wickedness they wished to deceive Christ by flattery; for it goes on: Master, we know that thou art true.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -109,17 +98,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.12.14:98ae38e4:0"
       ]
     },
     {
-      "id": "catena-mark-0980-v14",
+      "id": "catena-mark-0975-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.12.14",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 12:13–17",
-      "excerpt": "As if He had said, Give what bears an image to him whose image it bears, that is, the penny to Cæsar; for we can both pay Cæsar his tribute, and offer to God what is His own.",
+      "excerpt": "We have said elsewhere of the Herodians, that they were a certain new heresy, who said that Herod was the Christ, because the succession of the kingdom of Judah had failed. Others however say that the Herodians were the soldiers of Herod, whom the Pharisees brought as witnesses of the words of Christ, that they might take Him, and lead Him away. But observe how in their wickedness they wished to deceive Christ by flattery; for it goes on: Master, we know that thou art true.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -148,22 +144,73 @@
       ]
     },
     {
-      "id": "catena-mark-0976-v14",
+      "id": "catena-mark-0980-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.12.14",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 12:13–17",
-      "excerpt": "For they questioned Him with honied words, and they surrounded Him as bees, who carry honey in their mouth, but a sting in their tail.",
+      "excerpt": "As if He had said, Give what bears an image to him whose image it bears, that is, the penny to Cæsar; for we can both pay Cæsar his tribute, and offer to God what is His own.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.12.14:796236f1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 12:14",
+      "excerpt": "Those coming said to him: Teacher, we know that you are truthful, and do not care about anyone. For you do not look at the face of man, but teach the way of God in truth. Is it lawful to give tribute to Caesar, or not? This flattering and deceitful question provokes the respondent, so that he fears God more than Caesar, and says that tribute ought not to be paid, so that immediately the Herodians, hearing this, could seize him as the author of sedition against the Romans.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.12.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.12.14:b261199d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 12:14",
+      "excerpt": "Concerning the Herodians, we have said elsewhere that this was a certain newly-appeared sect of people who called Herod the Christ, for the reason that in his time the succession of Jewish kings came to an end. But others say that the Herodians here refers to the soldiers of Herod, whom the Pharisees brought along so that they might be witnesses of what Christ would say, and then could seize Him and bring Him to trial. But observe their malice, with what flattery they attempt to deceive the Lord! \"We know,\" they say, \"that You do not regard the persons of men, and therefore You will not fear even Caesar himself.\" Yet all this was nothing but cunning, so as to trap Him in any case. For if He had said that one must pay tribute to Caesar, they would have accused Him before the people of enslaving the nation to a foreign yoke; and if He had said that one must not, then they could have accused Him of inciting the people against Caesar. But the Fountain of wisdom evades their snares. \"Show Me,\" He says, \"a coin,\" and seeing upon it the image of Caesar, He said: what bears such an image upon it, render to the one depicted, that is, to Caesar; for we can both pay Caesar his tribute, and offer to God what is His own. That is, the obligation to pay tribute to Caesar in no way hinders you in the matter of worshipping God, for you can both render to Caesar what is due and give to God what is owed. But each of us has a Caesar of his own sort: it is the unavoidable necessity of the body. And so the Lord commands us to give to the body its proper food and needful clothing, and \"the things of God to God,\" that is, vigil to the extent of one's ability, prayer, and the rest. But to the devil as well — to this Caesar too — throw back what was given to you by him, such as anger and evil desire; and to God bring what is God's: humility, temperance in all things, and the rest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.12.14"
+    },
+    {
+      "id": "hcf:justin-martyr:mark.12.14:a36f5398:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "justin-martyr",
+      "workId": "hcf:work:justin-martyr:the-first-apology-chapter-xvii",
+      "title": "The First Apology, Chapter XVII on mark 12:14",
+      "excerpt": "Whence to God alone we render worship, but in other things we gladly serve you, acknowledging you as kings and rulers of men, and praying that with your kingly power you be found to possess also sound judgment. But if you pay no regard to our prayers and frank explanations, we shall suffer no loss, since we believe (or rather, indeed, are persuaded) that every man will suffer punishment in eternal fire according to the merit of his deed, and will render account according to the power he has received from God, as Christ intimated when He said, \"To whom God has given more, of him shall more be required.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c165"
+      ],
+      "targetVerseId": "kjva:mark.12.14"
     },
     {
       "id": "catena-mark-0982-v14",
@@ -181,6 +228,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0976-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.12.14",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 12:13–17",
+      "excerpt": "For they questioned Him with honied words, and they surrounded Him as bees, who carry honey in their mouth, but a sting in their tail.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.12.14:e8e2ac25:0"
       ]
     }
   ]

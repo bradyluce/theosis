@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.55:61375190:1"
       ]
     },
     {
@@ -33,6 +40,31 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.12.55:e31bf2d6:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2118-v55",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.55",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:54–57",
+      "excerpt": "But lest any of the people should allege their ignorance of the prophetical books as a reason why they could not discern the courses of the times, He carefully adds, And why even of yourselves judge ye not what is right, shewing them that although unlearned they might still by their natural ability discern Him, who did works such as none other man did, to be above man, and to be God, and that therefore after the injustice of this world, the just judgment of the creation would come.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -58,24 +90,6 @@
       ]
     },
     {
-      "id": "catena-luke-2118-v55",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.55",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:54–57",
-      "excerpt": "But lest any of the people should allege their ignorance of the prophetical books as a reason why they could not discern the courses of the times, He carefully adds, And why even of yourselves judge ye not what is right, shewing them that although unlearned they might still by their natural ability discern Him, who did works such as none other man did, to be above man, and to be God, and that therefore after the injustice of this world, the just judgment of the creation would come.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2114-v55",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.55",
@@ -91,6 +105,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.12.55:e000a10f:0"
       ]
     },
     {
@@ -110,6 +131,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.55:dc7db28f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:55",
+      "excerpt": "Since the Lord was speaking about preaching and called it fire and a sword, it is very likely that the listeners, not understanding the meaning of His words, were troubled. Therefore He says: just as you recognize changes in the weather by certain signs, so too you should have recognized My coming from what I say and what I do. My words, as well as My deeds, show Me to be your adversary. For you are tax collectors and robbers, while I have nowhere \"to lay My head\" (Luke 9:58). Therefore, just as from a cloud you foretell rain and from a south wind a hot day, so you should have recognized the time of My coming and understood that I came to bring not peace, but rain and turmoil. For I Myself am a cloud, and I come from the west, that is, from human nature, which had previously been brought low and was in thick darkness from sin. I came to bring down fire as well, and I made a hot day. For I am the south—a warm wind and the opposite of the coldness of the north. Therefore I also appeared from Bethlehem, which lies to the south.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.55"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.12.55:747a1342:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-95",
+      "title": "COMMENTARY ON LUKE, HOMILY 95 on luke 12:55",
+      "excerpt": "People focus their attention on things of this kind. From long observation and practice they tell beforehand when rain will fall or violent winds will blow. One especially sees that sailors are very skillful in this matter. He says that it would be suitable for those who can calculate things of this sort and may foretell storms that are about to happen to focus the penetrating eyes of the mind also on important matters. What are these? The law showed beforehand the mystery of Christ, that he would shine out in the last ages of the world on the inhabitants of the earth and submit to be a sacrifice for the salvation of all. It even commanded a lamb to be sacrificed as a type of him who died towards evening and at lighting of lamps. We might now understand that when, like the day, this world was declining to its close, the great, precious and truly saving passion would be fulfilled. The door of salvation would be thrown wide open to those who believe in him, and abundant happiness be their share. In the Song of Songs, we also find Christ calling to the bride described there. The bride personally represents the church, in these words, \"Arise, come, my neighbor, my beautiful dove. Look, the winter is past, and the rain is gone. It has passed away. The flowers appear on the ground. The time of the pruning has come.\" As I said, a certain springlike calm was about to arise for those who believe in him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-95",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.12.55"
     }
   ]
 }

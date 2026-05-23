@@ -4,24 +4,6 @@
   "verseNumber": 35,
   "entries": [
     {
-      "id": "catena-mark-1334-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.35",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:33–37",
-      "excerpt": "Luke added to this account the cause of the darkness, that is, the darkening of the sun.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1341-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.35",
@@ -40,35 +22,17 @@
       ]
     },
     {
-      "id": "catena-mark-1333-v35",
+      "id": "catena-mark-1334-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.35",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "augustine",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "This most glorious light took away its rays from the world, lest it should see the Lord hanging, and lest the blasphemers should have the benefit of its light. Wherefore it goes on: And when the sixth hour was come, there was darkness over the whole land until the ninth hour.",
+      "excerpt": "Luke added to this account the cause of the darkness, that is, the darkening of the sun.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1337-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.35",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:33–37",
-      "excerpt": "For when Adam sinned, it is also written that he heard the voice of the Lord, walking in paradise, in the cool after mid-day; (Gen. 3:8.) and in that hour when the first Adam by sinning brought death into the world, in that same hour the second Adam by dying destroyed death. And we must observe, that our Lord was crucified, when the sun was going away from the centre of the world; but at sunrise He celebrated the mysteries of His resurrection; because He died for our sins, but rose again for our justification. Nor need you wonder at the lowliness of His words, at the complaints as of one…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -91,20 +55,45 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.35:de958873:1"
       ]
     },
     {
-      "id": "catena-mark-1335-v35",
+      "id": "catena-mark-1337-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.35",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "If this had been the time for an eclipse, some one might have said that this that happened was natural, but it was the fourteenth moon, when no eclipse can take place. There follows: And at the ninth hour Jesus cried with a loud voice, saying, Eloi, Eloi, lama sabachthani.",
+      "excerpt": "For when Adam sinned, it is also written that he heard the voice of the Lord, walking in paradise, in the cool after mid-day; (Gen. 3:8.) and in that hour when the first Adam by sinning brought death into the world, in that same hour the second Adam by dying destroyed death. And we must observe, that our Lord was crucified, when the sun was going away from the centre of the world; but at sunrise He celebrated the mysteries of His resurrection; because He died for our sins, but rose again for our justification. Nor need you wonder at the lowliness of His words, at the complaints as of one…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1333-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.35",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:33–37",
+      "excerpt": "This most glorious light took away its rays from the world, lest it should see the Lord hanging, and lest the blasphemers should have the benefit of its light. Wherefore it goes on: And when the sixth hour was come, there was darkness over the whole land until the ninth hour.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -148,14 +137,49 @@
       ]
     },
     {
-      "id": "catena-mark-1336-v35",
+      "id": "catena-mark-1335-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.35",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:33–37",
+      "excerpt": "If this had been the time for an eclipse, some one might have said that this that happened was natural, but it was the fourteenth moon, when no eclipse can take place. There follows: And at the ninth hour Jesus cried with a loud voice, saying, Eloi, Eloi, lama sabachthani.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.15.35:2bada144:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:35",
+      "excerpt": "And some of those standing by, hearing this, said: \"Behold, he calls Elijah.\" Not all, but some. I think these were Roman soldiers, not understanding the Hebrew language, but from what he said \"Heloi, Heloi,\" thinking Elijah was being invoked by him. But if you prefer to understand Jews saying this, they also do it as is their custom, to dishonor the Lord with weakness, who is seen as seeking Elijah's help.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.35"
+    },
+    {
+      "id": "catena-mark-1342-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.35",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "At the ninth hour, the tenth piece of money which had been lost is found, by the overturning of the house.",
+      "excerpt": "Though the flesh was weak, yet the heavenly voice, which said, Open me the gates of righteousness, (Ps. 117:19) waxed strong. Wherefore there follows: And Jesus cried with a loud voice, and gave up the ghost. We who are of the earth die with a very low voice, or with no voice at all; but He who descended from heaven breathed His last with a loud voice.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -184,14 +208,14 @@
       ]
     },
     {
-      "id": "catena-mark-1342-v35",
+      "id": "catena-mark-1336-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.35",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "Though the flesh was weak, yet the heavenly voice, which said, Open me the gates of righteousness, (Ps. 117:19) waxed strong. Wherefore there follows: And Jesus cried with a loud voice, and gave up the ghost. We who are of the earth die with a very low voice, or with no voice at all; but He who descended from heaven breathed His last with a loud voice.",
+      "excerpt": "At the ninth hour, the tenth piece of money which had been lost is found, by the overturning of the house.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

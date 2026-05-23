@@ -4,24 +4,6 @@
   "verseNumber": 17,
   "entries": [
     {
-      "id": "catena-luke-0916-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.17",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:17–19",
-      "excerpt": "When the ordination of the Apostles was accomplished, and great numbers were collected together from the country of Judæa, and from the sea coast of Tyre and Sidon, (who were idolaters,) he gave the Apostles their commission to be the teachers of the whole world, that they might recal the Jews from the bondage of the law, but the worshippers of devils from their Gentile errors to the knowledge of the truth. Hence it is said, And he came down with them, and stood in the plain, and a great multitude from Judæa, and the sea coast, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0919-v17",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.17",
@@ -40,6 +22,31 @@
       ]
     },
     {
+      "id": "catena-luke-0916-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.17",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:17–19",
+      "excerpt": "When the ordination of the Apostles was accomplished, and great numbers were collected together from the country of Judæa, and from the sea coast of Tyre and Sidon, (who were idolaters,) he gave the Apostles their commission to be the teachers of the whole world, that they might recal the Jews from the bondage of the law, but the worshippers of devils from their Gentile errors to the knowledge of the truth. Hence it is said, And he came down with them, and stood in the plain, and a great multitude from Judæa, and the sea coast, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.6.17:ad24de5e:0"
+      ]
+    },
+    {
       "id": "catena-luke-0920-v17",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.17",
@@ -51,6 +58,31 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.6.17:65ae58a5:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0921-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.17",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:17–19",
+      "excerpt": "You will scarcely find any where that the multitudes follow our Lord to the higher places, or that a sick person is healed on a mountain; but having quenched the fever of lust and lit the torch of knowledge, each man approaches by degrees to the height of the virtues. But the multitudes which were able to touch the Lord are healed by the virtue of that touch, as formerly the leper is cleansed when our Lord touched him. The touch of the Saviour then is the work of salvation, whom to touch is to believe on Him, to be touched is to be healed by His precious gifts.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -73,24 +105,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0921-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.17",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:17–19",
-      "excerpt": "You will scarcely find any where that the multitudes follow our Lord to the higher places, or that a sick person is healed on a mountain; but having quenched the fever of lust and lit the torch of knowledge, each man approaches by degrees to the height of the virtues. But the multitudes which were able to touch the Lord are healed by the virtue of that touch, as formerly the leper is cleansed when our Lord touched him. The touch of the Saviour then is the work of salvation, whom to touch is to believe on Him, to be touched is to be healed by His precious gifts.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.17:e1527483:2"
       ]
     },
     {
@@ -109,7 +130,83 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.6.17:5a816b09:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.6.17:d89405aa:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:17",
+      "excerpt": "From all Judaea and Jerusalem and the maritime regions, and Tyre and Sidon, etc. I consider the maritime multitude not to be from the nearby Sea of Galilee (for he would not place this among miraculous locations), but from the great sea, in which even Tyre and Sidon could be included. Truly, because they are cities of the Gentiles, given indeed to the Jews by lot, but not possessed by them, since the enemies could not be exterminated, they are specifically mentioned by name, so that the fame and power of the Savior may be hinted at, which summon even foreign cities to obtain health and doctrine. It should be noted here that although the Lord had mercy on the Gentiles coming to him, as he healed the centurion's boy and the daughter of the Canaanite woman upon approving their faith, he is not found to have entered their cities, lest he provide a reason for complaint to the fault-finding Jews, but he rather reserved the perfect salvation of the Gentiles for the time of his passion and resurrection. When that time was imminent, and the Gentiles sought to see him, he said: Unless a grain of wheat falls to the ground and dies, it remains alone; but if it dies, it produces much fruit (John XII).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.17"
+    },
+    {
+      "id": "hcf:bede:luke.6.17:22062cd0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:17",
+      "excerpt": "And he descended with them and stood on a level place, and a crowd of his disciples, and a great multitude of people. The Lord went up into the mountains to choose the apostles, but he returned to the plains to teach the crowds, for the crowds can only see Christ in humility. For this is the standard which the Apostle followed when he said: I could not speak to you as spiritual people, but as carnal ones. As infants in Christ, I fed you with milk, not solid food. For you were not yet able, but even now you are not able (I Cor. III). However, the apostles themselves, according to Matthew, being more perfect, are said to have been taught both on the mountain and with the mouth of the Savior open. Where, if anyone wishes to examine both evangelists more carefully, it can be understood that when on the mountain he chose the twelve disciples from among the many, whom he also named apostles, which Matthew omitted, then he delivered the address which Matthew included and Luke omitted, that is, on the mountain. And then when he descended, in the level place he delivered another similar address, about which Matthew was silent, but Luke was not, and both addresses concluded in the same way.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.17"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.6.17:e942dc9e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 6:17",
+      "excerpt": "Note all things carefully. He ascends with the apostles and descends to the crowds. How would a crowd see Christ, except at a low level? It does not follow him to the heights; it does not climb to majestic places. So when he descends, he finds the weak, for the weak cannot be high up. Thus also Matthew teaches that the weak were healed down below. First each was healed, so that little by little, with increasing virtue, he could ascend to the mountain. On the plain he heals each, that is, he calls them back from recklessness. He turns away the harm of blindness. He descends to heal our wounds, so that in an effective and abundant manner he makes us partakers in his heavenly nature.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.6.17"
+    },
+    {
+      "id": "hcf:augustine:luke.6.17:31076c73:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 6:17",
+      "excerpt": "(de Con. Ev. ii. 19.) Now this long discourse of our Lord, Luke begins in the same way as Matthew; for each says, Blessed are the poor. Then many things which follow in the narration of each are like, and finally the conclusion of the discourse is found to be altogether the same, I mean with respect to the men who build upon the rock and the sand. It might then easily be supposed that Luke has inserted the same discourse of our Lord, and yet has left out some sentences which Matthew has kept, and likewise put in others which Matthew has not; were it not that Matthew says the discourse was spoken by our Lord on the mountain, but Luke on the plain by our Lord standing. It is not however thought likely from this that these two discourses are separated by a long course of time, because both before and after both have related some things like, or the same. It may however have happened that our Lord was at first on a higher part of the mountain with His disciples alone, and that then he descended with them from the mount, that is, from the summit of the mountain to the flat place, that is, to some level ground, which was on the side of the mountain, and was able to hold large multitudes, and that there He stood until the crowds were gathered together to Him, and afterwards when He sat down His disciples came nearer, and to them, and the rest of the multitude who were present, He held the same discourse.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.6.17"
     }
   ]
 }

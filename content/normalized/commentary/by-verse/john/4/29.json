@@ -42,14 +42,32 @@
       ]
     },
     {
-      "id": "catena-john-0487-v29",
+      "id": "catena-john-0497-v29",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.29",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 4:27–30",
-      "excerpt": "The disciples arrive opportunely, and when the teaching is finished: And upon this came His disciples, and marvelled that He talked with the woman. They marvelled at the exceeding kindness and humility of Christ, in condescending to converse with a poor woman, and a Samaritan.",
+      "excerpt": "The circumstance of the woman’s leaving her waterpot on going away, must not be overlooked. For the waterpot signifies the love of this world, i. e. concupiscence, by which men from the dark depth, of which the well is the image, i. e. from an earthly conversation, draw up pleasure. It was right then for one who believed in Christ to renounce the world, and, by leaving her waterpot, to shew that she had parted with worldly desires.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0498-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.4.29",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 4:27–30",
+      "excerpt": "She cast away therefore concupiscence, and hastened to proclaim the truth. Let those who wish to preach the Gospel, learn, that they should first leave their waterpots at the well.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -78,24 +96,6 @@
       ]
     },
     {
-      "id": "catena-john-0489-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.4.29",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 4:27–30",
-      "excerpt": "But notwithstanding their wonder, they asked Him no questions, No man said, What seekest Thou? or, Why talkest Thou with her? So careful were they to observe the rank of disciples, so great was their awe and veneration for Him. On subjects indeed which concerned themselves, they did not hesitate to ask Him questions. But this was not one.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0491-v29",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.29",
@@ -104,24 +104,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 4:27–30",
       "excerpt": "Hydria answers to our word aquarium; hydor being Greek for water.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0492-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.4.29",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 4:27–30",
-      "excerpt": "As the Apostles, on being called, left their nets, so does she leave her waterpot, to do the work of an Evangelist, by calling not one person, but a whole city: She went her way into the city, and saith to the men, Come, see a man which told me all things that ever I did: is not this the Christ?",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -150,6 +132,60 @@
       ]
     },
     {
+      "id": "catena-john-0489-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.4.29",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 4:27–30",
+      "excerpt": "But notwithstanding their wonder, they asked Him no questions, No man said, What seekest Thou? or, Why talkest Thou with her? So careful were they to observe the rank of disciples, so great was their awe and veneration for Him. On subjects indeed which concerned themselves, they did not hesitate to ask Him questions. But this was not one.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0492-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.4.29",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 4:27–30",
+      "excerpt": "As the Apostles, on being called, left their nets, so does she leave her waterpot, to do the work of an Evangelist, by calling not one person, but a whole city: She went her way into the city, and saith to the men, Come, see a man which told me all things that ever I did: is not this the Christ?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0487-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.4.29",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 4:27–30",
+      "excerpt": "The disciples arrive opportunely, and when the teaching is finished: And upon this came His disciples, and marvelled that He talked with the woman. They marvelled at the exceeding kindness and humility of Christ, in condescending to converse with a poor woman, and a Samaritan.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0496-v29",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.29",
@@ -158,42 +194,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 4:27–30",
       "excerpt": "She then neither openly preaches Christ, nor wholly omits Him, but says, Is not this the Christ? This wakened their attention, Then they went out of the city, and came unto Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0497-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.4.29",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 4:27–30",
-      "excerpt": "The circumstance of the woman’s leaving her waterpot on going away, must not be overlooked. For the waterpot signifies the love of this world, i. e. concupiscence, by which men from the dark depth, of which the well is the image, i. e. from an earthly conversation, draw up pleasure. It was right then for one who believed in Christ to renounce the world, and, by leaving her waterpot, to shew that she had parted with worldly desires.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0498-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.4.29",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 4:27–30",
-      "excerpt": "She cast away therefore concupiscence, and hastened to proclaim the truth. Let those who wish to preach the Gospel, learn, that they should first leave their waterpots at the well.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -273,7 +273,133 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.4.29:5b3c9266:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.4.29:dbdf8aa9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-15",
+      "title": "Tractates on John 15 on john 4:29",
+      "excerpt": "\"The woman then left her water-pot.\" Having heard, \"I that speak with thee am He,\" and having received Christ the Lord into her heart, what could she do but now leave her water-pot, and run to preach the gospel? She cast out lust, and hastened to proclaim the truth. Let them who would preach the gospel learn; let them throw away their water-pot at the well. You remember what I said before of the water-pot: it was a vessel with which the water was drawn, called hydria, from its Greek name, because water is hydor in Greek; just as if it were called aquarium, from the Latin. She threw away her water-pot then, which was no longer of use, but a burden to her, such was her avidity to be satisfied with that water. Throwing her burden away, to make known Christ, \"she ran to the city, and says to those men. Come, and see a man that told me all things that ever I did.\" Step by step, lest those men should get angry and indignant, and should persecute her. \"Is this Christ? Then they went out of the city, and came to Him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.4.29"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.4.29:947d93f3:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-34",
+      "title": "Homily on the Gospel of John 34 on john 4:29",
+      "excerpt": "\"Is not this the Christ?\" Observe again here the great wisdom of the woman; she neither declared the fact plainly, nor was she silent, for she desired not to bring them in by her own assertion, but to make them to share in this opinion by hearing Him; which rendered her words more readily acceptable to them. Yet He had not told all her life to her, only from what had been said she was persuaded as to the rest. Nor did she say, \"Come, believe,\" but, \"Come, see\"; a gentler expression than the other, and one which more attracted them. Seest thou the wisdom of the woman? She knew, she knew certainly that having but tasted that Well, they would be affected in the same manner as herself. Yet any one of the grosser sort would have concealed the reproof which Jesus had given; but she parades her own life, and brings it forward before all men, so as to attract and capture all.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.4.29"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.4.29:345e94ec:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-34",
+      "title": "Homily on the Gospel of John 34 on john 4:29",
+      "excerpt": "Observe too how prudently she speaks; she said not, \"Come and see the Christ,\" but with the same condescension by which Christ had netted her she draws the men to Him; \"Come,\" she saith, \"see a Man who told me all that ever I did.\" She was not ashamed to say that He \"told me all that ever I did.\" Yet she might have spoken otherwise, \"Come, see one that prophesieth\"; but when the soul is inflamed with holy fire, it looks then to nothing earthly, neither to glory nor to shame, but belongs to one thing alone, the flame which occupieth it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.4.29"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.4.29:ec8c512c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-34",
+      "title": "Homily on the Gospel of John 34 on john 4:29",
+      "excerpt": "So kindled was she by His words, that she left her water pot and the purpose for which she came, ran into the city, and drew all the people to Jesus. \"Come,\" she saith, \"see a Man which told me all things that ever I did.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.4.29"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.4.29:e6319594:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 4:29",
+      "excerpt": "O wondrous change! O truly great and God-befitting Might, translucent with unspeakable marvel! Skilful workwoman unto doctrine, and initiater is she, who understood none of the things that were said at first, and therefore rightly heard, Go, call thy husband and come hither. For see how skilfully she conversed with the Samaritans. She does not say at once that she has found the Christ, nor does she introduce Jesus at first into her account. For rightly would she have been rejected, as far surpassing the measure of words befitting her, finding her hearers not ignorant of her habits. She first then prepares the way for this wonder, and having first astonished them with the miracle, makes the way smoother, so to say, to the faith. Come and see, she wisely says; all but crying aloud with more earnest voice, Sight alone will suffice to belief, and will assure those present with its more note-worthy marvels. For He Who knoweth the hidden things, and hath this great and God-befitting dignity, how shall He not speed with prosperous course to the fulfilment of those things which He willeth?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.4.29"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.4.29:af66ee98:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 4:29",
+      "excerpt": "Truly, a soul inflamed by divine fire looks upon nothing earthly, neither upon shame nor upon dishonor. And so she is not ashamed to reveal her deeds, but says: \"Who told me everything that I have done.\" She could have said otherwise: \"Come, see a prophet who prophesies\"; but she does not say so, rather she disregards the opinion about herself and has in mind one thing only – to proclaim the truth.\r\nShe does not say affirmatively that He is the Christ, but rather \"is not this the Christ?\" in order to bring them to the same opinion as herself and to make her word more readily acceptable. For if she had affirmed that He is the Christ, some perhaps would not have agreed and would not have accepted the opinion of a woman who was rejected.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.4.29"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.4.29:9d47bd9f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 4:29",
+      "excerpt": "Next we see her manner of preaching (v 29). She first invites them to see Christ, saying, Come and see the man. Although she had heard Christ say that he was the Christ, she did not at once tell the people that they should come to the Christ, or believe, so as not to give them a reason for scoffing. So at first she mentions things that were believable and evident about Christ, as that he was a man: \"made in the likeness of men\" (Phil 2:7). Neither did she say, \"believe,\" but Come, and see; for she was convinced that if they were to taste from that well by seeing him, they would be affected in the same way she was: \"Come, and I will tell you the great things he has done for me\" (Ps 65:16). In this she is imitating the example of a true preacher, not calling men to himself, but to Christ: \"What we preach is not ourselves, but Jesus Christ\" (2 Cor 4:5).\r\n\r\nSecondly, she mentions a clue to Christ's divinity, saying, who told me everything that I have done, that is, how many husbands she had had. For it is the function and sign of the divinity to disclose hidden things and the secrets of hearts. Although the things she had done would cause her shame, she is still not ashamed to mention them; for as Chrysostom says: \"When the soul is on fire with the divine fire, it no longer pays attention to earthly things, neither to glory nor to shame, but only to that flame that holds it fast.\"\r\n\r\nThirdly, she infers the greatness of Christ, saying, Could he not be the Christ? She did not dare to say that he was the Christ, lest she seem to be trying to teach them; they could have become angry at this and refuse to go with her. Yet she was not entirely silent on this point, but submitting it to their judgment, set it forth in the form of a question, saying, Could he not be the Christ? For this is an easier way to persuade someone.\r\n\r\nThis insignificant woman signifies the condition of the apostles, who were sent out to preach: \"Not many of you are learned in the worldly sense, not many powerful... But God chose the simple ones of the world to embarrass the wise\" (1 Cor 1:26). Thus in Proverbs (9:3) the apostles are called handmaids: \"She,\" divine wisdom, i.e., the Son of God, \"sent out her handmaids,\" the apostles, \"to summon to the tower.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.4.29"
     }
   ]
 }

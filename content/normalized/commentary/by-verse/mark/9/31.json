@@ -4,24 +4,6 @@
   "verseNumber": 31,
   "entries": [
     {
-      "id": "catena-mark-0723-v31",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.31",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:30–37",
-      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0725-v31",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.31",
@@ -40,6 +22,31 @@
       ]
     },
     {
+      "id": "catena-mark-0723-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.31",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:30–37",
+      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.9.31:92285184:1"
+      ]
+    },
+    {
       "id": "catena-mark-0722-v31",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.31",
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.9.31:28575531:1"
       ]
     },
     {
@@ -74,6 +88,40 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.9.31:e5f80322:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 9:31",
+      "excerpt": "Everywhere Jesus joined the word about His suffering with miracles, so that they would not think that He suffered out of weakness. And now, having said the sorrowful word that \"they will kill Him,\" He adds also the joyful one – that \"on the third day He will rise,\" so that we may know that joy always follows after sorrows, and therefore so that we would not waste away in spirit needlessly in sorrows, but would hope to receive something joyful as well.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.9.31"
+    },
+    {
+      "id": "hcf:bede:mark.9.31:d839f116:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 9:31",
+      "excerpt": "And departing from there, they passed through Galilee, and he did not want anyone to know. But he was teaching his disciples, and saying to them, \"The Son of Man will be delivered into the hands of men, and they will kill him. And after being killed, on the third day he will rise again.\" He always mixes sorrow with prosperity, so that when they suddenly come, they will not terrify the apostles, but their minds will endure them by premeditation. For if it grieves them that he is to be killed, it ought to gladden them that he will rise again on the third day.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.9.31"
     },
     {
       "id": "catena-mark-0726-v31",

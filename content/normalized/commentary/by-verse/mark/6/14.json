@@ -37,6 +37,38 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.14:1e55069d:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0425-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.14",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:14–16",
+      "excerpt": "Or else, Herod, knowing that he without a cause had slain John, who was a just man, thought that he had risen from the dead, and had received through his resurrection the power of working miracles.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.14:b97bfed9:1"
       ]
     },
     {
@@ -58,22 +90,55 @@
       ]
     },
     {
-      "id": "catena-mark-0425-v14",
+      "id": "hcf:bede:mark.6.14:5701b88c:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.6.14",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:14",
+      "excerpt": "And King Herod heard of it, for His name had become known, and people said, \"John the Baptist has been raised from the dead.\" The extreme malice and furor of the Jews against the Lord are taught to us from almost every place in the Gospel; behold, they believed John, of whom it was said that he performed no sign, could have risen from the dead, without any witness. But Jesus, a man approved by God with deeds and signs (Acts 2), at whose death the elements trembled, whose resurrection and ascension were eagerly proclaimed by angels, apostles, men, and women alike; they preferred to believe not that He had risen, but that He had been stolen away secretly. When they said that John had risen from the dead, and that for this reason unexpected powers or actions were manifest in him, they correctly understood about the power of the resurrection, that the saints would have greater power when they have risen from the dead than they had when burdened with the weakness of the flesh. But they also showed that the miracle of the resurrection is not unbelievable, as they believed it of their own accord without any teaching, yet they proved by their own blindness and envy that they had not believed the credible truth in the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.6.14:8901474f:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:14–16",
-      "excerpt": "Or else, Herod, knowing that he without a cause had slain John, who was a just man, thought that he had risen from the dead, and had received through his resurrection the power of working miracles.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:14",
+      "excerpt": "This Herod was the son of the Herod who slaughtered the infants. Though he was a tetrarch, Mark calls him king, using this title in a loose sense. Having heard of the Lord's miracles and being conscious that he had killed the righteous John without cause, Herod began to think that he had risen from the dead and upon his resurrection had received the power of working miracles. Previously John had not performed a single sign, but after the resurrection — so Herod thought — he received the power to work signs.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.14"
+    },
+    {
+      "id": "hcf:hcf-josephus:mark.6.14:e8f3163c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-josephus",
+      "workId": "hcf:work:hcf-josephus:antiquities-of-the-jews-book-xviii-chapter-5-section-2",
+      "title": "Antiquities of the Jews - Book XVIII, Chapter 5, Section 2 on mark 6:14",
+      "excerpt": "Now some of the Jews thought that the destruction of Herod's army came from God, and that very justly, as a punishment of what he did against John, that was called the Baptist: for Herod slew him, who was a good man, and commanded the Jews to exercise virtue, both as to righteousness towards one another, and piety towards God, and so to come to baptism; for that the washing [with water] would be acceptable to him, if they made use of it, not in order to the putting away [or the remission] of some sins [only], but for the purification of the body; supposing still that the soul was thoroughly purified beforehand by righteousness. Now when [many] others came in crowds about him, for they were very greatly moved [or pleased] by hearing his words, Herod, who feared lest the great influence John had over the people might put it into his power and inclination to raise a rebellion, (for they seemed ready to do any thing he should advise,) thought it best, by putting him to death, to prevent any mischief he might cause, and not bring himself into difficulties, by sparing a man who might make him repent of it when it would be too late. Accordingly he was sent a prisoner, out of Herod's suspicious temper, to Macherus, the castle I before mentioned, and was there put to death. Now the Jews had an opinion that the destruction of this army was sent as a punishment upon Herod, and a mark of God's displeasure to him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sacred-texts-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:mark.6.14"
     },
     {
       "id": "catena-mark-0419-v14",
@@ -84,6 +149,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:14–16",
       "excerpt": "After the preaching of the disciples of Christ, and the working of miracles, the Evangelist fitly subjoins an account of the report, which arose amongst the people; wherefore he says, And king Herod heard of him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:mark.6.14:1eb2eaac:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0424-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.14",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:14–16",
+      "excerpt": "It seems to me that this prophet means that one of whom Moses said, God will raise up a prophet unto thee of thy brethren. (Deut. 8:15.) They were right indeed, but because they feared to say openly, This is the Christ, they used the voice of Moses, veiling their own surmise through fear of their rulers. There follows, But when Herod heard thereof, he said, It is John, whom I beheaded: he is risen from the dead. Herod expressly says, this in irony.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -109,6 +199,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.6.14:281841ee:0"
       ]
     },
     {
@@ -127,24 +224,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0424-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.14",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:14–16",
-      "excerpt": "It seems to me that this prophet means that one of whom Moses said, God will raise up a prophet unto thee of thy brethren. (Deut. 8:15.) They were right indeed, but because they feared to say openly, This is the Christ, they used the voice of Moses, veiling their own surmise through fear of their rulers. There follows, But when Herod heard thereof, he said, It is John, whom I beheaded: he is risen from the dead. Herod expressly says, this in irony.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.6.14:b65d27dd:0"
       ]
     }
   ]

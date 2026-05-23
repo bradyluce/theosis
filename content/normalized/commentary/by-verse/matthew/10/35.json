@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-matt-1628-v35",
+      "id": "catena-matt-1629-v35",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.35",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 10:34–36",
-      "excerpt": "How then did He enjoin them, that when they should enter any house they should say, “Peace be to this house,” as also the Angels sung, “Glory to God in the highest, on earth peace to men.” Luke 2:14 That is the most perfect peace when that which is diseased is lopped off, when that which introduces strife is taken away, for so only is it possible that heaven should be joined to earth. For so does the physician save the rest of the body, namely by cutting off that which cannot be healed. So it came to pass at the tower of Babel; a happy discord broke up their bad union. So also Paul divided…",
+      "excerpt": "For in the matter of belief in Christ, the whole world was divided against itself; each house had its believers and its unbelievers; and therefore was this holy war sent, that an unholy peace might be broken through.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -40,14 +40,39 @@
       ]
     },
     {
-      "id": "catena-matt-1629-v35",
+      "id": "catena-matt-1631-v35",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.35",
       "topicSlugs": [],
       "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 10:34–36",
-      "excerpt": "For in the matter of belief in Christ, the whole world was divided against itself; each house had its believers and its unbelievers; and therefore was this holy war sent, that an unholy peace might be broken through.",
+      "excerpt": "These are almost the words of the Prophet Micah. Mic 7:6 We should always take note when a passage is cited out of the Old Testament, whether the sense only, or the very words are given.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.10.35:fc321d07:1"
+      ]
+    },
+    {
+      "id": "catena-matt-1628-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.10.35",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 10:34–36",
+      "excerpt": "How then did He enjoin them, that when they should enter any house they should say, “Peace be to this house,” as also the Angels sung, “Glory to God in the highest, on earth peace to men.” Luke 2:14 That is the most perfect peace when that which is diseased is lopped off, when that which introduces strife is taken away, for so only is it possible that heaven should be joined to earth. For so does the physician save the rest of the body, namely by cutting off that which cannot be healed. So it came to pass at the tower of Babel; a happy discord broke up their bad union. So also Paul divided…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -76,24 +101,6 @@
       ]
     },
     {
-      "id": "catena-matt-1631-v35",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.10.35",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 10:34–36",
-      "excerpt": "These are almost the words of the Prophet Micah. Mic 7:6 We should always take note when a passage is cited out of the Old Testament, whether the sense only, or the very words are given.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-1633-v35",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.35",
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.10.35:965cd362:0"
       ]
     },
     {
@@ -166,22 +180,124 @@
       ]
     },
     {
-      "id": "catena-matt-1627-v35",
+      "id": "hcf:jerome:matthew.10.35:6110c0d1:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.10.35",
       "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 10:34–36",
-      "excerpt": "Or connect it with what has gone before, As the fear of death ought not to draw you away, so neither ought carnal affection.",
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:35",
+      "excerpt": "(Verse 35) For I have come to set a man against his father, and a daughter against her mother, and a daughter-in-law against her mother-in-law; and a man's enemies will be those of his own household. This passage is written in almost the same words in the prophet Micah (Micah 7). And it should be noted whenever a testimony from the Old Testament is presented, whether the meaning alone or also the wording agrees.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.10.35"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.10.35:39066651:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-35",
+      "title": "Homily on the Gospel of Matthew 35 on matthew 10:35",
+      "excerpt": "Wherefore neither with this was He satisfied, but unfolds also the very nature of the war, signifying it to be far more grievous even than a civil war; and He saith, \"I am come to set a man at variance against his father, and the daughter against her mother, and the daughter-in-law against her mother-in-law.\"\r\n\r\nFor not friends only, saith He, nor fellow citizens, but even kinsmen shall stand against one another, and nature shall be divided against herself. \"For I am come,\" saith He, \"to set a man at variance against his father, and the daughter against her mother, and a daughter-in-law against her mother-in-law.\" That is, not merely among those of the same household is the war, but among those that are dearest, and extremely near to each other. And this more than anything signifies His power, that hearing these things, they both accepted Him, and set about persuading all others.\r\n\r\nYet was it not He that did this: of course not: but the wickedness of the other sort: nevertheless He saith it is His own doing. For such is the custom of the Scripture. Yea, and elsewhere also He saith, \"God hath given them eyes that they should not see:\" and here He speaks in this way, in order that having, as I said before, exercised themselves in these words, they might not be confounded on suffering reproaches and insults.\r\n\r\nBut if any think these things intolerable, let them be reminded of an ancient history. For in times of old also this came to pass, which thing especially shows the old covenant to be akin to the new, and Him who is here speaking, the same with the giver of those commands. I mean that in the case of the Jews also, when each had slain his neighbor, then He laid aside His anger against them; both when they made the calf, and when they were joined to Baal Peor. Where then are they that say, \"That God is evil, and this good?\" For behold He hath filled the world with blood, shed by kinsmen. Nevertheless even this we affirm to be a work of great love towards man.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.10.35"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.10.35:6c178c70:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 10:35",
+      "excerpt": "The five inhabiting one house, whom He divides three against two, and two against three, we may explain thus; The three are the three parts of man, the body, the soul, and the will; for as the soul is bestowed in the body, so the will has power of using both in any way it chooses; and thence when a law is given it is given to the will. But this is only found in those who were first formed by God. By the sin and unbelief of the first parent, all the generations of men since have had sin for the father of their body, and unbelief for the mother of their soul. And as each man has his will within him, there are thus five in one house. When then we are renewed in the laver of baptism, by virtue of the word we are set apart from our original guilt, and severed, as it were, by the sword of God, from the lusts of this our father and mother, and thus there is great discord made in one house.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.10.35"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.10.35:de9dfcbe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-10-24",
+      "title": "Commentary on Matthew 10.24 on matthew 10:35",
+      "excerpt": "And so when we are renewed by the water of baptism through the power of the Word, we are separated from the sins and ancestors of our origin; we are cut away from the inordinate love of father and mother as if by an incision from God's sword, and we are divided from them. And as we shed our former self with its sins and unfaithfulness and are made new by the Spirit in mind and body, we will necessarily detest the habits of our old, inborn way of life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.10.35"
+    },
+    {
+      "id": "hcf:hcf-eusebius-of-emesa:matthew.10.35:171f1575:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-eusebius-of-emesa",
+      "workId": "hcf:work:hcf-eusebius-of-emesa:homily-26",
+      "title": "HOMILY 26 on matthew 10:35",
+      "excerpt": "The Lord himself proclaims peace, which is why the apostle Paul also admonishes peace and says, \"For he is our peace.\" This means, of course, the peace of those who believe and receive. But in what way does he not bring peace to the earth? When the daughter believed and the father remained an unbeliever, \"what has a believer in common with an unbeliever?\" For the proclamation of peace caused a division. With a believing son and an unbelieving father there is necessarily strife. The peace that was proclaimed itself caused a division: a good division! For it is in peace that we are saved.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-26",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c360"
+      ],
+      "targetVerseId": "kjva:matthew.10.35"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.10.35:9254c227:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:35",
+      "excerpt": "\"Think not that I am come to send peace on earth: I came not to send peace, but a sword. For I am come to set a man at variance against his father, and the daughter against her mother, and the daughter in law against her mother in law. And a man's foes shall be they of his own household.\" Harmony is not always a good thing, while separation sometimes is. The sword, then, is the word of faith which severs our bond to our families and relatives when they hinder our piety towards God. For He does not tell us simply to separate ourselves from them, but only when they will not come with us, and especially when they hinder us in our faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.10.35"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.10.35:7c893499:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:35",
+      "excerpt": "But someone could say: You have come to separate. Between whom have you come? Was it not between distant persons and strangers? He shows that it was not, but between those most closely united. For, he says, I have come to set a man against his father... For the closest union is twofold: one is the natural union; the other, domestic, or of the household; therefore, he brings a word against both. Natural friendship is based on a natural act, which is generation, or the union of man and wife; domestic or household, on kinship. Against the first, therefore, I have come to separate a man from his father.\r\n\r\nBut there is a question. It was stated above, \"I have come not to destroy the Law, but to fulfill it.\" But the Law commands that one honor his father... I answer that you are obliged to obey him, when it does not draw one from the love of God; but when it does draw one away, you are not bound to obey. And a daughter against a mother; and this is in regard to generation. And a daughter-in-law against her mother-in-law. And in this the New Law shares with the Old, as it is recorded in Exodus (32:26): \"Whoever is on the Lord's side, come to me. And all the sons of Levi gathered themselves together to him. And he said to them: 'Put every man his sword on his side..., and let him slay his brother and friend.'\" And this was regarded as worthy of praise for the Levites, as it says in Deuteronomy (33:8): \"Of Levi he said, 'Your perfection and doctrine from your holy man,'\" and he continues: \"He said to his father and mother, 'I regard them not'; he disavowed his brothers and ignored his children.\" But a question arises: Why does he list six persons, whereas Luke (12:53) lists only three? The answer is that it is the same in both accounts, because one's mother is mother-in-law of his wife.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.10.35"
     },
     {
       "id": "catena-matt-1635-v35",
@@ -192,6 +308,31 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 10:34–36",
       "excerpt": "Otherwise; He mean, I am not come among men to strengthen their carnal affections, but to cut them off with the sword of the Spirit; whence it is rightly added, “And a man’s foes are they of his household.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.10.35:05a17620:0"
+      ]
+    },
+    {
+      "id": "catena-matt-1627-v35",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.10.35",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 10:34–36",
+      "excerpt": "Or connect it with what has gone before, As the fear of death ought not to draw you away, so neither ought carnal affection.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

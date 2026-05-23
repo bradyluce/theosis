@@ -4,14 +4,14 @@
   "verseNumber": 53,
   "entries": [
     {
-      "id": "catena-luke-1502-v53",
+      "id": "catena-luke-1509-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.9.53",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 9:51–56",
-      "excerpt": "When the time was near at hand in which it behoved our Lord to accomplish His life-giving Passion, and ascend up to heaven, He determines to go up to Jerusalem, as it is said, And it came to pass, &c.",
+      "excerpt": "But our Lord, Who knew all things before they came to pass, knowing that His messengers would not be received by the Samaritans, nevertheless commanded them to go before Him, because it was His practice to make all things conduce to the good of His disciples. Now He went up to Jerusalem as the time of His suffering drew near. In order then that they might not be offended, when they saw Him suffer, bearing in mind that they must also endure patiently when men persecute them, He ordained beforehand as a kind of prelude this refusal of the Samaritans. It was good for them also in another way.…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.9.53:bd342848:0"
       ]
     },
     {
@@ -40,68 +47,14 @@
       ]
     },
     {
-      "id": "catena-luke-1506-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.9.53",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 9:51–56",
-      "excerpt": "Mark that He was unwilling to be received by those who He knew had not turned to Him with a simple heart. For if He had wished, He might have made them devout, who were undevout. But God calls those whom He thinks worthy, and whom He wills He makes religious. But why they did not receive Him the Evangelist mentions, saying, Because his face was as if he would go to Jerusalem.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1509-v53",
+      "id": "catena-luke-1502-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.9.53",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 9:51–56",
-      "excerpt": "But our Lord, Who knew all things before they came to pass, knowing that His messengers would not be received by the Samaritans, nevertheless commanded them to go before Him, because it was His practice to make all things conduce to the good of His disciples. Now He went up to Jerusalem as the time of His suffering drew near. In order then that they might not be offended, when they saw Him suffer, bearing in mind that they must also endure patiently when men persecute them, He ordained beforehand as a kind of prelude this refusal of the Samaritans. It was good for them also in another way.…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1510-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.9.53",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 9:51–56",
-      "excerpt": "For they knew both that when Phineas had slain the idolaters it was counted to him for righteousness; (Numb. 25:8, Ps. 107:31) and that at the prayer of Elijah fire came down from heaven, that the injuries of the prophet might be avenged. (2 Kings 1:10, 12.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1512-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.9.53",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 9:51–56",
-      "excerpt": "But let him be avenged who fears. He who fears not, seeks not vengeance. At the same time the merits of the Prophets are likewise shewn to have been in the Apostles, seeing that they claim to themselves the right of obtaining the same power of which the Prophet was thought worthy; and fitly do they claim that at their command fire should come down from heaven, for they were the sons of thunder.",
+      "excerpt": "When the time was near at hand in which it behoved our Lord to accomplish His life-giving Passion, and ascend up to heaven, He determines to go up to Jerusalem, as it is said, And it came to pass, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -130,6 +83,67 @@
       ]
     },
     {
+      "id": "catena-luke-1512-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.9.53",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 9:51–56",
+      "excerpt": "But let him be avenged who fears. He who fears not, seeks not vengeance. At the same time the merits of the Prophets are likewise shewn to have been in the Apostles, seeing that they claim to themselves the right of obtaining the same power of which the Prophet was thought worthy; and fitly do they claim that at their command fire should come down from heaven, for they were the sons of thunder.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1506-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.9.53",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 9:51–56",
+      "excerpt": "Mark that He was unwilling to be received by those who He knew had not turned to Him with a simple heart. For if He had wished, He might have made them devout, who were undevout. But God calls those whom He thinks worthy, and whom He wills He makes religious. But why they did not receive Him the Evangelist mentions, saying, Because his face was as if he would go to Jerusalem.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.9.53:8622be32:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1510-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.9.53",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 9:51–56",
+      "excerpt": "For they knew both that when Phineas had slain the idolaters it was counted to him for righteousness; (Numb. 25:8, Ps. 107:31) and that at the prayer of Elijah fire came down from heaven, that the injuries of the prophet might be avenged. (2 Kings 1:10, 12.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1516-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.9.53",
@@ -141,6 +155,42 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1515-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.9.53",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 9:51–56",
+      "excerpt": "The Lord blames them, not for following the example of the holy Prophet, but for their ignorance in taking vengeance while they were yet inexperienced, perceiving that they did not desire correction from love, but vengeance from hatred. After that He had taught them what it was to love their neighbour as themselves, and the Holy Ghost also had been infused into them, there were not lacking these punishments, though far less frequent than in the Old Testament, because the Son of man came not to destroy men’s lives, but to save them. As if He said, And do you therefore who are sealed with His…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1511-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.9.53",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 9:51–56",
+      "excerpt": "For holy men who well knew that that death which detaches the soul from the body was not to be feared, still because of their feelings who feared it, punished some sins with death, that both the living might be struck with a wholesome dread, and those who were punished with death might receive harm not from death itself but from sin, which would be increased were they to live.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -181,42 +231,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1511-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.9.53",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 9:51–56",
-      "excerpt": "For holy men who well knew that that death which detaches the soul from the body was not to be feared, still because of their feelings who feared it, punished some sins with death, that both the living might be struck with a wholesome dread, and those who were punished with death might receive harm not from death itself but from sin, which would be increased were they to live.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1515-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.9.53",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 9:51–56",
-      "excerpt": "The Lord blames them, not for following the example of the holy Prophet, but for their ignorance in taking vengeance while they were yet inexperienced, perceiving that they did not desire correction from love, but vengeance from hatred. After that He had taught them what it was to love their neighbour as themselves, and the Holy Ghost also had been infused into them, there were not lacking these punishments, though far less frequent than in the Old Testament, because the Son of man came not to destroy men’s lives, but to save them. As if He said, And do you therefore who are sealed with His…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.9.53:f156a4a0:1"
       ]
     },
     {
@@ -235,6 +256,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.9.53:6626d305:0"
       ]
     },
     {
@@ -272,6 +300,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.9.53:30e5f8a2:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-56",
+      "title": "COMMENTARY ON LUKE, HOMILY 56 on luke 9:53",
+      "excerpt": "It would be untrue, then, to affirm that our Saviour did not know what was about to happen: for as He knows all things, He knew, of course, that His messengers would not be received by the Samaritans. Of this there can be no doubt. Why, then, did He command them to precede Him? The reason of it was His custom assiduously to benefit the holy Apostles in every possible way: and for this end His practice sometimes was to put them to the proof. As for instance, He was sailing once upon the lake of Tiberias with those named above; and while so doing he fell asleep purposely: and a violent wind having risen upon the lake, a rough and unusual storm began to rage, and the boat was in danger, and the crew in alarm. For He intentionally permitted the storm and the fury of the tempest to rage against the ship, to try the faith of the disciples, and to make manifest the greatness of His power. And this, also, was the result. For they, in the littleness of their faith, said, \"Master, save us, we perish.\" And He at once arose and shewed that He is Lord of the elements; for He rebuked the sea and the tempest, and there was an exceeding great calm. And so also on this occasion: He knew, indeed, that those who went forward to announce that He would lodge with them would not be received by the Samaritans; but He permitted them to go, that this again might be a means of benefiting the holy Apostles.\r\n\r\nWhat, then, was the purpose of this occurrence? He was going up to Jerusalem, as the time of His passion was already drawing near. He was about to endure the contumelies of the Jews; He was about to be set at nought by the scribes and Pharisees; and to suffer those things which they inflicted upon Him when they proceeded to the accomplishment of all violence and wicked audacity. In order, therefore, that they might not be offended when they saw Him suffering, as understanding that He would have them also to be patient, and not to murmur greatly, even though men treat them with contumely, He, so to speak, made the contempt they met with from the Samaritans a preparatory exercise in the matter. They had not received the messengers. It was the duty of the disciples, treading in the footsteps of their Lord, to bear it patiently as becometh saints, and not to say anything of them wrathfully. But they were not yet so disposed; but being seized with too hot indignation, they would have called down fire upon them from heaven, as far as their will went. But Christ rebuked them for so speaking.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.9.53"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.9.53:e24083c3:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-56",
+      "title": "COMMENTARY ON LUKE, HOMILY 56 on luke 9:53",
+      "excerpt": "It benefited them also in another way: they were to be the instructors of the whole world, and to travel through the cities and villages, proclaiming everywhere the good tidings of salvation. Of necessity, therefore, while seeking to fulfil their mission, they must fall in with wicked men, who would reject the divine tidings, and, so to speak, not receive Jesus to lodge with them. Had Christ, therefore, praised them for wishing that fire should come down upon the Samaritans, and that so painful a torment should be inflicted upon them, they would have been similarly disposed in many other instances, and when men disregarded the sacred message, would have pronounced their condemnation, and called down fire upon them from above. And what would have been the result of such conduct? The sufferers would have been innumerable, and no longer would the disciples have been so much physicians of the sick, as torturers rather, and intolerable to men everywhere. For their own good, therefore, they were rebuked, when thus enraged beyond measure at the contumely of the Samaritans: in order that they might learn that as ministers of the divine tidings, they must rather be full of longsuffering and gentleness; not revengeful; not given to wrath, nor savagely attacking those who offend them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.9.53"
+    },
+    {
+      "id": "hcf:bede:luke.9.53:d88794de:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 9:53",
+      "excerpt": "And they did not receive him, because his face was set to go to Jerusalem. Because the Samaritans saw he was going to Jerusalem, they did not receive the Lord. For the Jews do not associate with Samaritans, as the Evangelist John shows.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.9.53"
+    },
+    {
+      "id": "hcf:jerome:luke.9.53:821f6a49:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:letter-121-chapter-5",
+      "title": "Letter 121, Chapter 5 on luke 9:53",
+      "excerpt": "What is the meaning of what is written in the Gospel according to Luke: \"And they did not receive him: because his face was going to Jerusalem\" (Luke 9:53). Hastening, the Lord went to Jerusalem to fulfill the days of his assumption and to celebrate the Passover, about which he had said: \"With desire I have desired to eat this Pasch with you, before I suffer\" (Ibid. 22:15), and drink the cup, of which he said: \"The cup which my Father hath given me, shall I not drink it?\" (John 18:11). He confirmed all his doctrine on the gallows, according to what is written: \"And I, if I be lifted up from the earth, will draw all things to myself.\" (Ibid. 12:32). He set his face steadfastly to go to Jerusalem. For it is necessary to have steadfastness and strength for one who is hurrying spontaneously toward passion. Hence to Ezekiel, to whom God had said: Son of man, thou dwellest in the midst of scorpions, and art not afraid of them: I have made thy face strong against their face (Ezekiel 2:6 and 3:9); so that if perchance the hammer of the whole earth had risen up against him, he would be like a most enduring anvil and crush the hammer, of which it is written: \"How is the hammer of the whole earth broken and shattered!\" (Jeremiah 50:23) And he sent messengers, that is, Angels, before his sight (Luke 9:52). For it was fitting that the Angels should minister to the Son of God. Whether he calls the Apostles Angels, because even John, the precursor of the Lord, was called an Angel (Malachi 3:1; Matthew 11:10). And when they entered a village of the Samaritans, to make ready for him, they did not receive him, because his face was going toward Jerusalem. The Samaritans and Jews are at odds with each other in enmity, and while all nations hate them, they are raging against each other with their own fury, while both contend for possession of the Law, and they persecute one another so much that after the Jews returned from Babylon, the Samaritans always obstructed the building of the Temple. And when even they wanted to build the Temple with them, the Jews replied: It is not lawful for us and you to build the Lord's house (1 Esdr. 4). Finally, for a great injury, the Pharisees reproached the Lord: Do you not have a demon, and are you not a Samaritan? (John 8.48). And in the parable of Jerusalem descending to Jericho, the Samaritan is placed as a sign and a miracle that he did good (Luke 10): and it is written to the Samaritan woman at the well: For Samaritans do not count themselves among the Jews (John 4.9). Therefore, the Samaritans seeing the Lord go towards Jerusalem, that is, to his enemies, as they had heard from his disciples who had come to prepare lodging, recognized him to be a Jew: and, as a Jew and a stranger, and one going to his enemies, they did not want to receive him. Although, with other understanding being submitted to us, it was the will of the Lord not to be received by the Samaritans, because he hastened to go to Jerusalem, where he was to suffer and shed his blood, so that, occupied with Samaritan hospitality and the teaching of that nation, he might not delay the day of suffering to which he had come. Hence he says in another place: \"I was not sent except to the lost sheep of the house of Israel\" (Matthew 15:24). And he commanded the Apostles: \"Do not enter the city of Samaria\" (Ibid. 10:5), wishing to remove all occasion of Jewish persecution, so that they might not afterwards say, \"We have crucified him,\" because he had joined himself to our enemies and adversaries. Therefore his face was set towards Jerusalem. And accordingly, by another interpretation, the Samaritans did not receive him: for he was hastening to enter Jerusalem. But that they did not receive him, was of the Lord's will. Finally, the Apostles, versed in the Law, in which they knew only justice- an eye for an eye, and a tooth for a tooth- seek to avenge the injury, and to imitate Elijah, at whose word two captains of fifty soldiers were consumed by fire: and they say to the Lord: Wilt thou, we say, that fire should come down from heaven, and consume them? (Luke 9:51). Beautifully, they say, Wilt thou, we say: for even Elijah had said: If I be a man of God, let fire come down from heaven upon thee (2 Kings 1:10). Therefore, for the effectiveness of the speech of the Apostles, it is the will of the Lord. For if He had not commanded it, the Apostles would speak in vain, asking that fire descend upon them, and in other ways. If fire descended from heaven to the injury of Elijah's servants, and consumed the Jews and not the Samaritans, how much more should the flame rage against the impious Samaritans, to the contempt of the Son of God? The Lord, who had come not to judge but to save, not in power but in humility, not in the glory of the Father but in the lowliness of man, rebukes them because they have not remembered His doctrine and the goodness of the Gospel, in which He said: 'If anyone strikes you on the right cheek, turn to him the other also' (Matt. 5:39) and 'Love your enemies' (Luke 6:35).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.9.53"
     }
   ]
 }

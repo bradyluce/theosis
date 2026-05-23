@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-mark-0450-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.33",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:30–34",
-      "excerpt": "Not only do the Apostles tell the Lord what they themselves had done and taught, but also his own and John’s disciples together tell Him what John had suffered, during the time that they were occupied in teaching, as Matthew relates. It goes on: And he said to them, Come ye yourselves apart, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0453-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.33",
@@ -55,17 +37,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.33:5e653129:0"
       ]
     },
     {
-      "id": "catena-mark-0455-v33",
+      "id": "catena-mark-0450-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.33",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:30–34",
-      "excerpt": "Matthew says that He healed their sick, for the real way of pitying the poor is to open to them the way of truth by teaching them, and to take away their bodily pains.",
+      "excerpt": "Not only do the Apostles tell the Lord what they themselves had done and taught, but also his own and John’s disciples together tell Him what John had suffered, during the time that they were occupied in teaching, as Matthew relates. It goes on: And he said to them, Come ye yourselves apart, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -94,6 +83,24 @@
       ]
     },
     {
+      "id": "catena-mark-0455-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.33",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:30–34",
+      "excerpt": "Matthew says that He healed their sick, for the real way of pitying the poor is to open to them the way of truth by teaching them, and to take away their bodily pains.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0459-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.33",
@@ -109,6 +116,38 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.33:25b1c8c7:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0454-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.33",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:30–34",
+      "excerpt": "So do thou not wait for Christ till He Himself call you, but outrun Him, and come before Him. There follows, And Jesus when he came out saw much people, and was moved with compassion towards them, because they were as sheep having no shepherd. The Pharisees being ravening wolves did not feed the sheep, but devoured them; for which reason they gather themselves to Christ, the true Shepherd, who gave them spiritual food, that is, the word of God. Wherefore it goes on, And he began to teach them many things. For seeing that those who followed Him on account of His miracles were tired from the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.33:8f36076e:1"
       ]
     },
     {
@@ -148,22 +187,38 @@
       ]
     },
     {
-      "id": "catena-mark-0454-v33",
+      "id": "hcf:theophylact-of-ohrid:mark.6.33:cf5802b2:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.6.33",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:30–34",
-      "excerpt": "So do thou not wait for Christ till He Himself call you, but outrun Him, and come before Him. There follows, And Jesus when he came out saw much people, and was moved with compassion towards them, because they were as sheep having no shepherd. The Pharisees being ravening wolves did not feed the sheep, but devoured them; for which reason they gather themselves to Christ, the true Shepherd, who gave them spiritual food, that is, the word of God. Wherefore it goes on, And he began to teach them many things. For seeing that those who followed Him on account of His miracles were tired from the…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:33",
+      "excerpt": "Yet even here He was not hidden from those who sought Him. On the contrary, the people watched so attentively lest the Lord be hidden from them that they went ahead, that is, outran the apostles themselves and went to the place where Jesus intended to rest. So you too should go ahead of Jesus: do not wait for Him to call you, but rather hasten forward yourself to anticipate Him.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.33"
+    },
+    {
+      "id": "hcf:bede:mark.6.33:0c2eaf19:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:33",
+      "excerpt": "And they saw them going away, and many recognized them, and they ran afoot from all the towns, etc. By saying that they outstripped them on foot, it is shown that the disciples with the Lord did not reach another shore of the sea or Jordan by ship, but having crossed a certain strait or lake, they went to the nearby places of the same region, which the natives could reach on foot.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.33"
     },
     {
       "id": "catena-mark-0447-v33",
@@ -184,14 +239,14 @@
       ]
     },
     {
-      "id": "catena-mark-0448-v33",
+      "id": "catena-mark-0458-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.33",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:30–34",
-      "excerpt": "For they return to the fountain-head whence the streams flow; those who are sent by God, always offer up thanks for those things which they have received.",
+      "excerpt": "Little indeed is the rest of the saints here on earth, long is their labour, but afterwards, they are bidden to rest from their labours. But as in the ark of Noah, the animals that were within were sent forth, and they that were without rushed in, so is it in the Church, Judas went, the thief came to Christ. But as long as men go back from the faith, the Church can have no refuge from grief; for Rachel weeping for her children would not be comforted. Moreover, this world is not the banquet, in which the new wine is drank, when the new song will be sung by men made anew, when this mortal shall…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -220,14 +275,14 @@
       ]
     },
     {
-      "id": "catena-mark-0458-v33",
+      "id": "catena-mark-0448-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.33",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:30–34",
-      "excerpt": "Little indeed is the rest of the saints here on earth, long is their labour, but afterwards, they are bidden to rest from their labours. But as in the ark of Noah, the animals that were within were sent forth, and they that were without rushed in, so is it in the Church, Judas went, the thief came to Christ. But as long as men go back from the faith, the Church can have no refuge from grief; for Rachel weeping for her children would not be comforted. Moreover, this world is not the banquet, in which the new wine is drank, when the new song will be sung by men made anew, when this mortal shall…",
+      "excerpt": "For they return to the fountain-head whence the streams flow; those who are sent by God, always offer up thanks for those things which they have received.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

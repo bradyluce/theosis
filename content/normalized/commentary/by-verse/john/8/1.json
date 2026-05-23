@@ -4,6 +4,24 @@
   "verseNumber": 1,
   "entries": [
     {
+      "id": "catena-john-1044",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:1",
+      "excerpt": "They had remarked upon Him already, as being over lenient. Of Him indeed it had been prophesied, Ride on because of the word of truth, of meekness, and of righteousness. (Ps. 44) So as a teacher He exhibited truth, as a deliverer meekness, as a judge righteousness. When He spoke, His truth was acknowledged; when against His enemies He used no violence, His meekness was praised. So they raised the scandal on the score of justice. For they said among themselves, If He decide to let her go, He will not do justice; for the law cannot command what is unjust: Now Moses in the law commanded us, that…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-033-c8-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.1",
@@ -23,50 +41,14 @@
       ]
     },
     {
-      "id": "catena-john-1040",
+      "id": "catena-john-1054",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.1",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 8:1",
-      "excerpt": "And where ought Christ to teach, except on the mount of Olives; on the mount of ointment, on the mount of chrism. For the name Christ is from chrism, chrism being the Greek word for unction. He has anointed us, for wrestling with the devil.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1044",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:1",
-      "excerpt": "They had remarked upon Him already, as being over lenient. Of Him indeed it had been prophesied, Ride on because of the word of truth, of meekness, and of righteousness. (Ps. 44) So as a teacher He exhibited truth, as a deliverer meekness, as a judge righteousness. When He spoke, His truth was acknowledged; when against His enemies He used no violence, His meekness was praised. So they raised the scandal on the score of justice. For they said among themselves, If He decide to let her go, He will not do justice; for the law cannot command what is unjust: Now Moses in the law commanded us, that…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1045",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:1",
-      "excerpt": "As if to signify that such persons were to be written in earth, not in heaven, where He told His disciples they should rejoice they were written. Or His bowing His head (to write on the ground), is an expression of humility; the writing on the ground signifying that His law was written on the earth which bore fruit, not on the barren stone, as before.",
+      "excerpt": "There were left however two, the pitiable1 and the pitiful, And Jesus was left alone, and the woman standing in the midst: the woman, you may suppose, in great alarm, expecting punishment from one in whom no sin could be found. But He who had repelled her adversaries with the word of justice, lifted on her the eyes of mercy, and asked; When Jesus had lifted Himself up, and saw none but the woman, He said unto her, Woman, where are these thine accusers? hath no man condemned thee? She said, No man, Lord. We heard above the voice of justice; let us hear now that of mercy: Jesus said unto her,…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +77,14 @@
       ]
     },
     {
-      "id": "catena-john-1050",
+      "id": "catena-john-1045",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.1",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 8:1",
-      "excerpt": "Having with the weapon of justice smitten them, He deigned not even to look on the fallen, but averted His eyes: And again He stooped down, and wrote on the ground.",
+      "excerpt": "As if to signify that such persons were to be written in earth, not in heaven, where He told His disciples they should rejoice they were written. Or His bowing His head (to write on the ground), is an expression of humility; the writing on the ground signifying that His law was written on the earth which bore fruit, not on the barren stone, as before.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -110,6 +92,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ]
+    },
+    {
+      "id": "catena-john-1040",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:1",
+      "excerpt": "And where ought Christ to teach, except on the mount of Olives; on the mount of ointment, on the mount of chrism. For the name Christ is from chrism, chrism being the Greek word for unction. He has anointed us, for wrestling with the devil.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.8.1:c0953e85:0"
       ]
     },
     {
@@ -131,14 +138,14 @@
       ]
     },
     {
-      "id": "catena-john-1054",
+      "id": "catena-john-1050",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.1",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 8:1",
-      "excerpt": "There were left however two, the pitiable1 and the pitiful, And Jesus was left alone, and the woman standing in the midst: the woman, you may suppose, in great alarm, expecting punishment from one in whom no sin could be found. But He who had repelled her adversaries with the word of justice, lifted on her the eyes of mercy, and asked; When Jesus had lifted Himself up, and saw none but the woman, He said unto her, Woman, where are these thine accusers? hath no man condemned thee? She said, No man, Lord. We heard above the voice of justice; let us hear now that of mercy: Jesus said unto her,…",
+      "excerpt": "Having with the weapon of justice smitten them, He deigned not even to look on the fallen, but averted His eyes: And again He stooped down, and wrote on the ground.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -203,14 +210,14 @@
       ]
     },
     {
-      "id": "catena-john-1039",
+      "id": "catena-john-1043",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.1",
       "topicSlugs": [],
       "personId": "alcuin",
       "workId": "catena-aurea-john",
       "title": "On John 8:1",
-      "excerpt": "Our Lord at the time of His passion used to spend the day in Jerusalem, preaching in the temple, and performing miracles, and return in the evening to Bethany, where He lodged with the sisters of Lazarus. Thus on the last day of the feast, having, according to His wont, preached the whole day in the temple, in the evening He went to the mount of Olives.",
+      "excerpt": "The sitting down, represents the humility of His incarnation. And the people came to Him, when He sat down, i. e. after taking up human nature, and thereby becoming visible, many began to hear and believe on Him, only knowing Him as their friend and neighbour. But while these kind and simple persons are full of admiration at our Lord’s discourse, the Scribes and Pharisees put questions to Him, not for the sake of instruction, but only to entangle the truth in their nets: And the Scribes and Pharisees brought unto Him a woman taken in adultery; and when they had set her in the midst, they say…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 65,
@@ -239,24 +246,6 @@
       ]
     },
     {
-      "id": "catena-john-1043",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.1",
-      "topicSlugs": [],
-      "personId": "alcuin",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:1",
-      "excerpt": "The sitting down, represents the humility of His incarnation. And the people came to Him, when He sat down, i. e. after taking up human nature, and thereby becoming visible, many began to hear and believe on Him, only knowing Him as their friend and neighbour. But while these kind and simple persons are full of admiration at our Lord’s discourse, the Scribes and Pharisees put questions to Him, not for the sake of instruction, but only to entangle the truth in their nets: And the Scribes and Pharisees brought unto Him a woman taken in adultery; and when they had set her in the midst, they say…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1046",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.1",
@@ -272,6 +261,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ]
+    },
+    {
+      "id": "catena-john-1039",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.1",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:1",
+      "excerpt": "Our Lord at the time of His passion used to spend the day in Jerusalem, preaching in the temple, and performing miracles, and return in the evening to Bethany, where He lodged with the sisters of Lazarus. Thus on the last day of the feast, having, according to His wont, preached the whole day in the temple, in the evening He went to the mount of Olives.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.8.1:865abfcb:0"
       ]
     },
     {
@@ -291,6 +305,127 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.8.1:660e161c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-33",
+      "title": "Tractates on John 33 on john 8:1",
+      "excerpt": "\"Thence Jesus went unto the mount;\" namely, to mount \"Olivet,\"-unto the fruitful mount, unto the mount of ointment, unto the mount of chrism. For the name of Christ is from chrism; in the Greek, is called in Latin unctio, an anointing. And He has anointed us for this reason, because He has made us wrestlers against the devil. \"And early in the morning He came again into the temple, and all the people came unto Him; and He sat down and taught them.\" And He was not taken, for He did not yet deign to suffer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.1"
+    },
+    {
+      "id": "hcf:bede:john.8.1:e7339b60:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-25",
+      "title": "Homilies on the Gospels 1.25 on john 8:1",
+      "excerpt": "The Mount of Olives designates the height of the Lord's benevolence and mercy, for in Greek \"mercy\" is called oleos, and an olive plantation is called oleon, and also because anointing with oil usually soothes weary and aching limbs. But oil is preeminent in power and purity too, and it tends to make its way up and float on the top of any liquid that you choose to pour into it. This fact not inappropriately suggests the grace of heavenly mercy.…Let us come then with all our concentration of mind to him who has his place on the invisible Mount of Olives. God, his God, has anointed him with the oil of gladness above his companions in order that he may deign to make us also companions of that anointing of his, that is, sharers of spiritual grace.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:john.8.1"
+    },
+    {
+      "id": "hcf:hcf-agapius-of-hierapolis:john.8.1:0fba9cf8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-agapius-of-hierapolis",
+      "workId": "hcf:work:hcf-agapius-of-hierapolis:universal-history-year-12-of-trajen-110ad-patrologia-orientalis-vol-7-p-48-49",
+      "title": "Universal History Year 12 of Trajen (110AD) Patrologia Orientalis vol. 7 p.48-49 on john 8:1",
+      "excerpt": "And there was at that time in Hierapolis a distinguished master [Papias] who had many treatises, and he wrote five treatises on the Gospel. And he mentions in his treatise on the Gospel of John, that in the book of John the Evangelist, he speaks of a woman who was adulterous, so when they presented her to Christ our Lord, to whom be glory, He told the Jews who brought her to Him, \"Whoever of you knows that he is innocent of what she has done, let him testify against her with what he has.\" So when He told them that, none of them responded with anything and they left.",
+      "takeaway": "",
+      "sourceId": "hcf:source:web-archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c942"
+      ],
+      "targetVerseId": "kjva:john.8.1"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:john.8.1:aa686b02:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:church-history-book-iii-chapter-39-section-16",
+      "title": "Church History (Book III), Chapter 39, Section 16 on john 8:1",
+      "excerpt": "And he [Papias] relates another story of a woman, who was accused of many sins before the Lord, which is contained in the Gospel according to the Hebrews. These things we have thought it necessary to observe in addition to what has been already stated.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:john.8.1"
+    },
+    {
+      "id": "hcf:papias-of-hierapolis:john.8.1:0fba9cf8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "papias-of-hierapolis",
+      "workId": "hcf:work:papias-of-hierapolis:universal-history-year-12-of-trajen-110ad-patrologia-orientalis-vol-7-p-48-49",
+      "title": "Universal History Year 12 of Trajen (110AD) Patrologia Orientalis vol. 7 p.48-49 on john 8:1",
+      "excerpt": "And there was at that time in Hierapolis a distinguished master [Papias] who had many treatises, and he wrote five treatises on the Gospel. And he mentions in his treatise on the Gospel of John, that in the book of John the Evangelist, he speaks of a woman who was adulterous, so when they presented her to Christ our Lord, to whom be glory, He told the Jews who brought her to Him, \"Whoever of you knows that he is innocent of what she has done, let him testify against her with what he has.\" So when He told them that, none of them responded with anything and they left.",
+      "takeaway": "",
+      "sourceId": "hcf:source:web-archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c130",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.8.1"
+    },
+    {
+      "id": "hcf:papias-of-hierapolis:john.8.1:aa686b02:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "papias-of-hierapolis",
+      "workId": "hcf:work:papias-of-hierapolis:church-history-book-iii-chapter-39-section-16",
+      "title": "Church History (Book III), Chapter 39, Section 16 on john 8:1",
+      "excerpt": "And he [Papias] relates another story of a woman, who was accused of many sins before the Lord, which is contained in the Gospel according to the Hebrews. These things we have thought it necessary to observe in addition to what has been already stated.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c130",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.8.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.8.1:27c581a0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 8:1",
+      "excerpt": "After having treated of the origin of the doctrine of Christ, the Evangelist here considers its power. Now the doctrine of Christ has the power both to enlighten and to give life, because his words are spirit and life. So first, he treats of the power of Christ's doctrine to enlighten; secondly, of its power to give life (10:1). He shows the power of Christ's doctrine to enlighten, first by words; and secondly, by a miracle (9:1). As to the first, he does two things: first, he presents the teaching of Christ; secondly, he shows the power of his teaching (8:12).\r\n\r\nThere are two things that pertain to the office of a teacher: to instruct the devout or sincere, and to repel opponents. So first, Christ instructs those who are sincere; and secondly, he repels his opponents (v 3). The Evangelist does three things with respect to the first: first, he mentions the place where this teaching takes place; secondly, he mentions those who listened to it; and thirdly, the teacher. This teaching took place in the temple; so he first mentions that Jesus left the temple, and then that he returned.\r\n\r\nHe mentions that Jesus left the temple when he says, Jesus however proceeded to the Mount of Olives. For our Lord made it his practice, when he was at Jerusalem on the festival days, to preach in the temple and to work miracles and signs during the day, and when evening came, he would return to Bethany (which was on the Mount of Olives) as the guest of Lazarus' sisters, Martha and Mary. With this in mind, the Evangelist says that since Jesus had remained in the temple and preached on the last day of the great feast, in the evening, Jesus proceeded to the Mount of Olives, where Bethany was located.\r\n\r\nAnd this is appropriate to a mystery: for as Augustine says, where was it appropriate for Christ to teach and show his mercy, if not on the Mount of Olives, the mount of anointing and of grace. The olive (oliva) signifies mercy; so also in Greek, oleos is the same as mercy. And Luke (10:24) tells us that the Samaritan applied oil and wine, which correspond to mercy and the stringency of judgment. Again, oil is healing: \"Wounds and bruises and swelling sores are not bandaged or dressed, or soothed with oil\" (Is 1:6). It also signifies the medicine of spiritual grace which has been transmitted to us by Christ: \"God, your God, has anointed you with the oil of gladness above your fellows\" (Ps 44:8); and again, \"like the precious ointment on the head which ran down upon the beard (Ps 132:2); and in Job we read that \"The rock poured out rivers of oil\" (Jb 29:6).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.8.1"
     },
     {
       "id": "catena-john-1053",

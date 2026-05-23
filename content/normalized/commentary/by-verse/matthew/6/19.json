@@ -23,14 +23,14 @@
       ]
     },
     {
-      "id": "catena-matt-0947-v19",
+      "id": "catena-matt-0955-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.19",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:19–21",
-      "excerpt": "When He has driven away the disease of vanity, He does well to bring in speech of contempt of riches. For there is no greater cause of desire of money than love of praise; for this men desire troops of slaves, horses accoutred in gold, and tables of silver, not for use or pleasure, but that they may be seen of many; therefore He says, “Lay not up for yourselves treasure on earth.”",
+      "excerpt": "By heaven in this place I understand not the material heavens, for every thing that has a body is earthly. But it behoves that the whole world be despised by him who lays up his treasure in that Heaven, of which it is said, “The heaven of heavens is the Lord’s,” Ps 115:16 that is, in the spiritual firmament. “For heaven and earth shall pass away;” Matt 24:35 but we ought not to place our treasure in that which passes away, but in that244 which abides for ever.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -74,24 +74,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0955-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.19",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:19–21",
-      "excerpt": "By heaven in this place I understand not the material heavens, for every thing that has a body is earthly. But it behoves that the whole world be despised by him who lays up his treasure in that Heaven, of which it is said, “The heaven of heavens is the Lord’s,” Ps 115:16 that is, in the spiritual firmament. “For heaven and earth shall pass away;” Matt 24:35 but we ought not to place our treasure in that which passes away, but in that244 which abides for ever.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.6.19:6d12d5f3:0"
       ]
     },
     {
@@ -103,6 +92,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:19–21",
       "excerpt": "But forasmuch as not every earthly treasure is destroyed by rust or moth, or carried away by thieves, He therefore brings in another motive, “For where your treasure is, there will your heart be also.” As much as to say; Though none of these former losses should befall you, you will yet sustain no small loss by attaching your affections to things beneath, and becoming a slave to them, and in falling from Heaven, and being unable to think of any lofty thing.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0947-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.19",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:19–21",
+      "excerpt": "When He has driven away the disease of vanity, He does well to bring in speech of contempt of riches. For there is no greater cause of desire of money than love of praise; for this men desire troops of slaves, horses accoutred in gold, and tables of silver, not for use or pleasure, but that they may be seen of many; therefore He says, “Lay not up for yourselves treasure on earth.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -128,6 +135,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.6.19:b150d801:0"
       ]
     },
     {
@@ -168,6 +182,31 @@
       ]
     },
     {
+      "id": "catena-matt-0953-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.19",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:19–21",
+      "excerpt": "Allegorically; Rust denotes pride which obscures the brightness of virtue. Moth which privily eats out garments, is jealousy which frets into good intention, and destroys the bond of unity. Thieves denote heretics and demons, who are ever on the watch to rob men of their spiritual treasure.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.6.19:3ef3bb2e:0"
+      ]
+    },
+    {
       "id": "catena-matt-0951-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.19",
@@ -186,21 +225,147 @@
       ]
     },
     {
-      "id": "catena-matt-0953-v19",
+      "id": "hcf:augustine:matthew.6.19:41334186:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 6:19",
+      "excerpt": "Rightly, therefore, does he who is intent on cleansing our heart follow up what He has said with a precept.\r\nIf, therefore, the heart be on earth, i.e. if one perform anything with a heart bent on obtaining earthly advantage, how will that heart be clean which wallows on earth? But if it be in heaven, it will be clean, because whatever things are heavenly are clean. For anything becomes polluted when it is mixed with a nature that is inferior, although not polluted of its kind; for gold is polluted even by pure silver, if it be mixed with it: so also our mind becomes polluted by the desire after earthly things, although the earth itself be pure of its kind and order. But we would not understand heaven in this passage as anything corporeal, because everything corporeal is to be reckoned as earth. For he who lays up treasure for himself in heaven ought to despise the whole world. Hence it is in that heaven of which it is said, The heaven of heavens is the Lord's, i.e. in the spiritual firmament: for it is not in that which is to pass away that we ought to fix and place our treasure and our heart, but in that which ever abides; but heaven and earth shall pass away.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.6.19"
+    },
+    {
+      "id": "hcf:augustine:matthew.6.19:63ff55dd:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-on-the-mount-2-13-44",
+      "title": "SERMON ON THE MOUNT 2.13.44 on matthew 6:19",
+      "excerpt": "If someone does something with the intent of gaining earthly profit, that one's heart is upon the earth. How can a heart be clean while it is wallowing in the mud? On the other hand, if it be fastened upon heaven it will be clean, for whatever is heavenly is unpolluted. A thing becomes defiled if it is mixed with a baser substance, even though that other substance be not vile in its own nature. Gold, for example, is debased by pure silver if mixed with it. So also is our mind defiled by a desire for the things of earth, although the earth itself is pure in its own class and in its own order.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.6.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.6.19:3b3f1202:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-20",
+      "title": "Homily on the Gospel of Matthew 20 on matthew 6:19",
+      "excerpt": "Thus, after He hath cast out the disease of vainglory, and not before, He seasonably introduces His discourse of voluntary poverty. For nothing so trains men to be fond of riches, as the fondness for glory. This, for instance, is why men devise those herds of slaves, and that swarm of eunuchs, and their horses with trappings of gold, and their silver tables, and all the rest of it, yet more ridiculous; not to satisfy any wants, nor to enjoy any pleasure, but that they may make a show before the multitude.\r\n\r\nNow above He had only said, that we must show mercy; but here He points out also how great mercy we must show, when He saith, \"Lay not up treasure.\" For it not being possible at the beginning to introduce all at once His discourse on contempt of riches, by reason of the tyranny of the passion, He breaks it up into small portions, and having set free the hearer's mind, instills it therein, so as that it shall become acceptable. Wherefore, you see, He said first \"Blessed are the merciful;\" and after this \"Agree with thine adversary;\" and after that again, \"If any one will sue thee at the law and take thy coat, give him thy cloak also;\" but here, that which is much greater than all these. For there His meaning was, \"if thou see a law-suit impending, do this; since to want and be freed from strife, is better than to possess and strive;\" but here, supposing neither adversary nor any one at law with thee, and without all mention of any other such party, He teaches the contempt of riches itself by itself, implying that not so much for their sake who receive mercy, as for the giver's sake, He makes these laws: so that though there be no one injuring us, or dragging us into a court of justice, even so we may despise our possessions, bestowing them on those that are in need.\r\n\r\nAnd neither here hath He put the whole, but even in this place it is gently spoken; although He had in the wilderness shown forth to a surpassing extent His conflicts in that behalf. However He doth not express this, nor bring it forward; for it was not yet time to reveal it; but for a while He searches out for reasons, maintaining the place of an adviser rather than a lawgiver, in His sayings on this subject.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.6.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.6.19:9970c105:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-20",
+      "title": "Homily on the Gospel of Matthew 20 on matthew 6:19",
+      "excerpt": "But even this cloud may be easily scattered and broken, if we will receive the beam of the doctrine of Christ; if we will hear Him admonishing us, and saying, \"Lay not up for yourselves treasures upon earth.\"\r\n\r\n\"But,\" saith one, \"what avails the hearing to me, as long as I am possessed by the desire?\" Now in the first place, there will be power in the continual hearing to destroy even the desire. Next, if it continue to possess thee, consider that this thing is not really so much as a desire. For what sort of desire is this, to be in grievous bondage, and to be subject to a tyranny, and to be bound on all sides, and to dwell in darkness, and to be full of turmoil, and to endure toils without profit, and to keep thy wealth for others, and often for thy very enemies? with what sort of desire do these things agree? or rather of what flight and aversion are they not worthy? What sort of desire, to lay up treasure in the midst of thieves? Nay, if thou dost at all desire wealth, remove it where it may remain safe and unmolested. Since what you are now doing is the part of one desiring, not riches, surely, but bondage, and affront, and loss, and continual vexation. Yet thou, were any one among men on earth to show thee a place beyond molestation, though he lead thee out into the very desert, promising security in the keeping of thy wealth,-thou art not slow nor backward; thou hast confidence in him, and puttest out thy goods there; but when it is God instead of men who makes thee this promise, and when He sets before thee not the desert, but Heaven, thou acceptest the contrary. Yet surely, how manifold soever be their security below, thou canst never become free from the care of them. I mean, though thou lose them not, thou wilt never be delivered from anxiety lest thou lose. But there thou wilt undergo none of these things: and mark, what is yet more, thou dost not only bury thy gold, but plantest it. For the same is both treasure and seed; or rather it is more than either of these. For the seed remains not for ever, but this abides perpetually. Again, the treasure germinates not, but this bears thee fruits which never die.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.6.19"
+    },
+    {
+      "id": "hcf:hcf-desert-fathers:matthew.6.19:aa63d0e1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-desert-fathers",
+      "workId": "hcf:work:hcf-desert-fathers:the-desert-fathers-sayings-of-the-early-christian-monks",
+      "title": "The Desert Fathers, Sayings of the Early Christian Monks on matthew 6:19",
+      "excerpt": "When Macarius was living in Egypt, one day he came across a man who had brought a donkey to his cell and was stealing his possessions. As though he was a passer-by who did not live there, he went up to the thief and helped him to load the beast, and sent him peaceably on his way, saying to himself, 'We brought nothing into this world (1 Tim. 6:7) but the Lord gave; as He willed, so it is done: blessed be the Lord in all things.'",
+      "takeaway": "",
+      "sourceId": "hcf:source:books-google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c500"
+      ],
+      "targetVerseId": "kjva:matthew.6.19"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.6.19:1f23de0f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:19",
+      "excerpt": "\"Lay not up for yourselves treasures upon earth, where moth and corruption doth destroy, and where thieves break through and steal: but lay up for yourselves treasures in heaven, where neither moth nor corruption doth destroy, and where thieves do not break through nor steal. For where your treasure is, there will your heart be also.\" Having first cast out the sickness of vainglory by what He said before, now He speaks about non-possessiveness. For men possess more than they need because of vainglory. He shows how unprofitable earthly treasure is: moth and corruption consume food and clothing, and thieves steal gold and silver. And then, so that no one should say to Him that not all treasure is stolen, Jesus says, even if nothing is lost in this manner, are you not wretched for being nailed down by your worries over wealth? This is why He says, \"Where your treasure is, there will your heart be also.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.6.19"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.6.19:8ce45abe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:19",
+      "excerpt": "Lay not up to yourselves treasures. Above, the Lord determined that we should not do works for the sake of glory. Here he teaches that we should not set riches as the end of our good works. For there are two evils — covetousness and vainglory — which follow upon each other. For many seek riches not for necessity but for display. Or it can be continued thus: The Lord above did not teach or exhort us to give alms or to pray, but he taught the manner of doing these things. Now he wishes to lead us to do these works: first, almsgiving; secondly, prayers, at the words Ask (Mt 7:7); thirdly, fasting, at the words Narrow is the way (Mt 7:14).\r\n\r\nOr, in another way: Above he taught that we should give alms and fast not for glory; here he wishes further to show that \"no man can serve two masters.\" But the first interpretation is more consonant with the text and is Chrysostom's. According to this sense, therefore, since all come to the same thing, he does two things: first, he teaches us to avoid excessive concern for riches; secondly, solicitude about necessities, at the words Therefore I say to you.\r\n\r\nRegarding the first, he does two things. First, he warns us not to accumulate superfluous riches and proves it from the reason of their instability; secondly, from the harm that results, at the words For where thy treasure is.\r\n\r\nRegarding the first, he does two things. First, he sets forth the instability of earthly riches; secondly, he sets forth the stability of heavenly riches, which we ought to accumulate, at the words But lay up to yourselves treasures.\r\n\r\nHe says, therefore, first: I say that we should not do good works for earthly glory, but neither should we accumulate riches, and this is Lay not up, etc., on earth, i.e., in any earthly thing. But according to this, it seems that kings and bishops act against this precept. But it must be said that two things are to be understood in a treasure, namely, abundance, which is twofold — necessary and superfluous. For a private man, it is superfluous to accumulate royal riches; but for a king it is not, because he needs them for the guardianship and defense of the kingdom. Hence what is forbidden is to accumulate riches beyond the necessity of one's person or office. The other thing understood in a treasure is the trust that is placed in riches, and this too is forbidden; and this is Lay not up to yourselves treasures: \"Charge the rich of this world\" (1 Tim 6:17); \"They treasure up silver and gold\" (Bar 3:17).\r\n\r\nConsequently, he shows the instability: Where the rust and moth consume. And he sets forth three ways in which riches are literally destroyed: for riches are either held in metals, or in garments, or in gems and the like. Metals are consumed by rust; garments by moths; thieves carry off gems. Or, in another way: another reading has where the moth and they are consumed and consumption destroys; and Chrysostom expounds this: temporal things are destroyed in three ways — on the part of the things themselves, because from the garment the moth proceeds; from the extravagance of the possessor, hence he says they consume; from outsiders, hence he says thieves. But it could be said that this does not always happen; and Chrysostom says that even if it does not always happen, yet it frequently does; and even if it does not happen frequently, yet it is possible; and this is what the Lord wishes to argue, because he teaches us to place hope in things perpetual and stable: \"What the locust left, the swarming locust has eaten\" (Joel 1:4). Mystically, rust appears, but the moth is hidden; hence by \"rust\" can be understood carnal sins, and by \"moth\" spiritual sins. For some sins are committed against oneself, and this is understood by rust and moth; some cause scandal to another, and this by thieves. Or, in another way: rust dims what is beautiful, hence it can represent pride, which lies in ambush against good works to destroy them. As bronze, the moth corrodes garments, which are exterior works consumed by envy: \"As a worm in wood\" (Pr 25:20). Demons, moreover, when they cannot deceive, stealthily draw one to vainglory, and this is where thieves.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.6.19"
+    },
+    {
+      "id": "catena-matt-0952-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.19",
       "topicSlugs": [],
-      "personId": "rabanus-maurus",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:19–21",
-      "excerpt": "Allegorically; Rust denotes pride which obscures the brightness of virtue. Moth which privily eats out garments, is jealousy which frets into good intention, and destroys the bond of unity. Thieves denote heretics and demons, who are ever on the watch to rob men of their spiritual treasure.",
+      "excerpt": "Another reading is, “Where moth and banqueting consume.” For a threefold destruction awaits all the goods of this life. They either decay and are eaten of moths as cloth; or are consumed by their master’s luxurious living; or are plundered by strangers, either by violence, or pilfering, or false accusation, or some other unjust doing. For all may be called thieves who hasten by any unlawful means to make other men’s goods their own. But you will say, Do all who have these things, perforce lose them? I would answer by the way, that if all do not, yet many do. But ill-hoarded wealth, you have…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "rank": 55,
       "tags": [
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.6.19:31269b72:0"
       ]
     },
     {
@@ -222,14 +387,14 @@
       ]
     },
     {
-      "id": "catena-matt-0952-v19",
+      "id": "catena-matt-0959-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.19",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:19–21",
-      "excerpt": "Another reading is, “Where moth and banqueting consume.” For a threefold destruction awaits all the goods of this life. They either decay and are eaten of moths as cloth; or are consumed by their master’s luxurious living; or are plundered by strangers, either by violence, or pilfering, or false accusation, or some other unjust doing. For all may be called thieves who hasten by any unlawful means to make other men’s goods their own. But you will say, Do all who have these things, perforce lose them? I would answer by the way, that if all do not, yet many do. But ill-hoarded wealth, you have…",
+      "excerpt": "Otherwise; He now teaches the benefit of almsgiving. He who places his treasure on earth has nothing to look for in Heaven; for why should he look up to Heaven where he has nothing laid up for himself? Thus he doubly sins; first, because he gathers together things evil; secondly, because he has his heart in earth; and so on the contrary he does right in a twofold manner who lays up his treasure in Heaven.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -248,24 +413,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:19–21",
       "excerpt": "Which then is better? To place it on earth where its security is doubtful, or in Heaven where it will be certainly preserved? What folly to leave it in this place whence you must soon depart, and not to send it before you thither, whither you are to go? Therefore place your substance there where your country is.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0959-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.19",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:19–21",
-      "excerpt": "Otherwise; He now teaches the benefit of almsgiving. He who places his treasure on earth has nothing to look for in Heaven; for why should he look up to Heaven where he has nothing laid up for himself? Thus he doubly sins; first, because he gathers together things evil; secondly, because he has his heart in earth; and so on the contrary he does right in a twofold manner who lays up his treasure in Heaven.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

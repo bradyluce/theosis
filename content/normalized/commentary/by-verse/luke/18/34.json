@@ -4,14 +4,14 @@
   "verseNumber": 34,
   "entries": [
     {
-      "id": "catena-luke-2724-v34",
+      "id": "catena-luke-2726-v34",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.34",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:31–34",
-      "excerpt": "He speaks with His disciples apart, concerning His Passion. For it was not fitting to publish this word to the multitudes, lest they should be troubled, but to His disciples He foretold it, that being habituated by expectation, they might be the more able to bear it.",
+      "excerpt": "Esaias prophesied of this when he said, I gave my back to the smiters, and my cheeks to them that plucked off the hair: I hid not my face from shame and spitting. (Isa. 50:5.) The Prophet also foretold the crucifixion, saying, He hath poured out his soul unto death, and was numbered with the transgressors; (Isa. 53:12.) as it is said here, And after they have scourged him, they shall put him to death. But David foretold Christ’s resurrection, For thou shalt not leave my soul in hell, (Ps. 16:10.) and so it is here added, And on the third day he shall rise again.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-luke-2726-v34",
+      "id": "catena-luke-2724-v34",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.34",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:31–34",
-      "excerpt": "Esaias prophesied of this when he said, I gave my back to the smiters, and my cheeks to them that plucked off the hair: I hid not my face from shame and spitting. (Isa. 50:5.) The Prophet also foretold the crucifixion, saying, He hath poured out his soul unto death, and was numbered with the transgressors; (Isa. 53:12.) as it is said here, And after they have scourged him, they shall put him to death. But David foretold Christ’s resurrection, For thou shalt not leave my soul in hell, (Ps. 16:10.) and so it is here added, And on the third day he shall rise again.",
+      "excerpt": "He speaks with His disciples apart, concerning His Passion. For it was not fitting to publish this word to the multitudes, lest they should be troubled, but to His disciples He foretold it, that being habituated by expectation, they might be the more able to bear it.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -91,24 +91,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2723-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.18.34",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:31–34",
-      "excerpt": "And knowing that there would arise certain heretics, saying, that Christ taught things contrary to the Law and the Prophets, He shews already that the voices of the Prophets had proclaimed the accomplishment of His Passion, and the glory which should follow.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.18.34:564e9839:1"
       ]
     },
     {
@@ -120,6 +109,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:31–34",
       "excerpt": "For because they desired His life above all things, they could not hear of His death, and as they knew him to be not only a spotless man, but also very God, they thought He could in no wise die. And whenever in the parables, which they frequently heard Him utter, He said any thing concerning His Passion, they believed it to be spoken allegorically, and referred to something else. Hence it follows, And this saying was hid from them, neither knew they the things which were spoken. But the Jews, who conspired against His life, knew that He spoke concerning His Passion, when he said, The Son of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.18.34:613136b6:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2723-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.34",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:31–34",
+      "excerpt": "And knowing that there would arise certain heretics, saying, that Christ taught things contrary to the Law and the Prophets, He shews already that the voices of the Prophets had proclaimed the accomplishment of His Passion, and the glory which should follow.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -146,6 +160,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.18.34:806f3bfc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-2",
+      "title": "Forty Gospel Homilies, Homily 2 on luke 18:34",
+      "excerpt": "But because the disciples, still carnal, were by no means able to grasp the words of the mystery, a miracle is performed. Before their eyes a blind man receives light, so that those who could not grasp the words of the heavenly mystery might be strengthened in faith by heavenly deeds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.18.34"
+    },
+    {
+      "id": "hcf:bede:luke.18.34:13e8fac0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 18:34",
+      "excerpt": "And they understood none of these things. And this saying was hidden from them, and they did not comprehend what was said. We read in the Gospel according to John, the Lord saying: \"And I, if I am lifted up from the earth, will draw all men to Myself.\" The crowd answered and said: \"We have heard from the Law that the Christ remains forever. And how can you say, 'The Son of Man must be lifted up'?\" (John 12). Why, then, is it that the disciples, who had the mystery of the Lord's passion repeated to them so many times, could not understand it, while the Jews, at a single word, and so obscurely put that the Evangelist deemed it worthy of explanation: \"Now this He said, signifying by what kind of death He would die\" (ibid.), immediately understood that the exaltation of the cross was meant, except because the disciples, whose lives especially wished to witness that, could not hear of His death? They, knowing Him not only as an innocent man but also as the true God, thought He could by no means die. And because they were accustomed to hearing Him often speak in parables, whenever He said anything about His passion, they believed it was not to be understood as it sounded, but to be referred allegorically to something else dictated by love. But the Jews, because they conspired for His death, understood whatever He spoke about His passion or cross; for He spoke what they most eagerly wished to occur and labored to bring about. Thus, in a marvelously unusual way, the same mystery of undergoing the cross, which love concealed from the faithful, envy revealed to the unfaithful.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.18.34"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.18.34:e8e7a1f5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-125",
+      "title": "COMMENTARY ON LUKE, HOMILY 125 on luke 18:34",
+      "excerpt": "The Savior of all then declared these things beforehand to the holy apostles. It says, \"They did not understand what was said, and the word was hid from them.\" They did not then know accurately what the holy prophets proclaimed. Although [Peter] who was first among the disciples heard the Savior once say that he should be crucified, die and arise, he did not yet understand the depth of the mystery. He resisted, saying: \"Far be that from you, Lord. This will not happen to you.\" He was rebuked for speaking this because he did not know the meaning of the relevant Scripture inspired by God. When Christ arose from the dead, he opened their eyes, as another of the holy Evangelists wrote. They were enlightened, being enriched with the abundant participation of the Spirit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-125",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.18.34"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.18.34:199c8ca7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 18:34",
+      "excerpt": "However, He spoke of this, but the disciples did not understand anything at the time. For \"these words were hidden from them,\" especially the words about the Resurrection. They did not understand the other words either, for example, about His being delivered to the Gentiles; but the words about the resurrection they decidedly did not understand, because they were not in common use. And not all the Judaizers believed even in the general resurrection, as is evident from the Sadducees (Matt. 22:23). Perhaps you will say: if the disciples did not understand, then why did the Lord speak to them about this beforehand? What benefit was there for their consolation during the sufferings of the Cross, when they did not understand what was said? But no small benefit came later, when they afterwards recalled that what had come to pass was precisely what they had not understood when the Lord foretold it to them. This is evident from many things, especially from the words of John: \"His disciples did not understand these things at first; but when Jesus was glorified, then they remembered that these things were written about Him\" (John 12:16). And the Comforter, having reminded them of all things, instilled in them the most reliable testimony about Christ. As for how the burial was of three days, enough has been said in the commentary on the other Evangelists (see ch. 12).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.18.34"
     }
   ]
 }

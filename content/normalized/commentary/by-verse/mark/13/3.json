@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.13.3:7a9f4046:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.3:a1861e0e:0"
       ]
     },
     {
@@ -76,6 +90,24 @@
       ]
     },
     {
+      "id": "catena-mark-1037-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.3",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:3–8",
+      "excerpt": "That is, the Romans against the Jews, which Josephus relates happened before the destruction of Jerusalem. For when the Jews refused to pay tribute, the Romans arose, in anger; but because at that time they were merciful they took indeed their spoils, but did not destroy Jerusalem. What follows shews that God fought against the Jews, for it is said, And there shall be earthquakes in divers places, and there shall be famines.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1035-v3",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.3",
@@ -94,22 +126,55 @@
       ]
     },
     {
-      "id": "catena-mark-1037-v3",
+      "id": "hcf:bede:mark.13.3:f4d0dd29:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.3",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:3",
+      "excerpt": "And as he sat upon the Mount of Olives opposite the temple, Peter, James, John, and Andrew asked him privately. Tell us when these things will be, and what will be the sign when all these things are about to be accomplished? Because as some were praising the buildings of the temple, the Lord openly responded that all these would be destroyed. The disciples secretly inquired about the time and signs of the foretold destruction. The Lord sits on the Mount of Olives opposite the temple, discussing the ruin of the temple and the destruction of the nation, so that even in the very position of his body he aligns with the words he speaks, mystically indicating that while resting in the holy, he detests the madness of the proud. For who does not see that the Mount of Olives signifies the fruitful height of the holy Church, which the Lord always delights to dwell in? For truly, that mountain was known not for having unfruitful trees and a barren forest, but for producing olives, which provide light to dispel the shadows of the night, cures for infirmities, and rest for the weary. All of which particularly happen in the Church, as it itself says: But I am like a green olive tree in the house of God; I trust in the mercy of God forever (Psalm 52).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.3"
+    },
+    {
+      "id": "hcf:augustine:mark.13.3:9d284cc3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-199-to-hesychius-25",
+      "title": "LETTER 199, TO HESYCHIUS 25 on mark 13:3",
+      "excerpt": "There is no discrepancy in the Gospels as to facts of the end time, although one may supply details which another may pass over or describe differently. Rather, they supplement each other when compared, and thus give direction to the mind of the reader.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.3"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.3:a4056b47:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:3–8",
-      "excerpt": "That is, the Romans against the Jews, which Josephus relates happened before the destruction of Jerusalem. For when the Jews refused to pay tribute, the Romans arose, in anger; but because at that time they were merciful they took indeed their spoils, but did not destroy Jerusalem. What follows shews that God fought against the Jews, for it is said, And there shall be earthquakes in divers places, and there shall be famines.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:3",
+      "excerpt": "When the Lord was sitting on the Mount of Olives, the disciples came to Him asking: \"When will this be?\" — that is, when will what was foretold about Jerusalem be fulfilled? But He, before answering their question, strengthens their minds so that they would not be led astray. For at the beginning of the calamities in Judea, men appeared who called themselves teachers; therefore the Lord also says: \"Take heed that no one deceive you.\"",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.3"
     }
   ]
 }

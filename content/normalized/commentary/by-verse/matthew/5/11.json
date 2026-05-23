@@ -23,42 +23,6 @@
       ]
     },
     {
-      "id": "catena-matt-0633-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.11",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:11–12",
-      "excerpt": "It may be asked, what difference there is between ‘they shall revile you,’ and ‘shall speak all manner of evil of you;’ to revile, it may be said, being but to speak evil of. But a reproach thrown with insult in the face of one present is a different thing from a slander cast on the character of the absent. To persecute includes both open violence and secret snares.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0635-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.11",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:11–12",
-      "excerpt": "This I suppose was added because of those who wish to boast of persecutions and evil reports of their shame, and therefore claim to belong to Christ because many evil things are said of them; but either these159 are true, or when false yet they are not for Christ’s sake.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-0638-v11",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.11",
@@ -77,14 +41,14 @@
       ]
     },
     {
-      "id": "catena-matt-0639-v11",
+      "id": "catena-matt-0633-v11",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.11",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:11–12",
-      "excerpt": "This it is in the power of any one of us to attain, that when our good character is injured by calumny, we rejoice in the Lord. He only who seeks after empty glory cannot attain this. Let us then rejoice and exult, that our reward may be prepared for us in heaven.",
+      "excerpt": "It may be asked, what difference there is between ‘they shall revile you,’ and ‘shall speak all manner of evil of you;’ to revile, it may be said, being but to speak evil of. But a reproach thrown with insult in the face of one present is a different thing from a slander cast on the character of the absent. To persecute includes both open violence and secret snares.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -92,17 +56,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.5.11:61a74fec:2"
       ]
     },
     {
-      "id": "catena-matt-0644-v11",
+      "id": "catena-matt-0635-v11",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.11",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:11–12",
-      "excerpt": "At the same time He signifies His equality in honour with His Father, as if He had said, As they suffered for my Father, so shall ye suffer for me. And in saying, “The Prophets who were before you,” He teaches that they themselves are already become Prophets.160",
+      "excerpt": "This I suppose was added because of those who wish to boast of persecutions and evil reports of their shame, and therefore claim to belong to Christ because many evil things are said of them; but either these159 are true, or when false yet they are not for Christ’s sake.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -131,6 +102,49 @@
       ]
     },
     {
+      "id": "catena-matt-0639-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.11",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:11–12",
+      "excerpt": "This it is in the power of any one of us to attain, that when our good character is injured by calumny, we rejoice in the Lord. He only who seeks after empty glory cannot attain this. Let us then rejoice and exult, that our reward may be prepared for us in heaven.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.5.11:3c06dc0e:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0644-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.11",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:11–12",
+      "excerpt": "At the same time He signifies His equality in honour with His Father, as if He had said, As they suffered for my Father, so shall ye suffer for me. And in saying, “The Prophets who were before you,” He teaches that they themselves are already become Prophets.160",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-0636-v11",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.11",
@@ -146,6 +160,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:matthew.5.11:16715ae4:0"
       ]
     },
     {
@@ -182,6 +203,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.5.11:8fa62669:0"
       ]
     },
     {
@@ -200,7 +228,167 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.5.11:8a2a8287:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:matthew.5.11:b5d58284:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 5:11",
+      "excerpt": "Let any one who is seeking after the delights of this world and the riches of temporal things under the Christian name, consider that our blessedness is within; as it is said of the soul of the Church by the mouth of the prophet, All the beauty of the king's daughter is within; for outwardly revilings, and persecutions, and disparagements are promised; and yet, from these things there is a great reward in heaven, which is felt in the heart of those who endure, those who can now say, We glory in tribulations: knowing that tribulation works patience; and patience, experience; and experience, hope: and hope makes not ashamed; because the love of God is shed abroad in our hearts by the Holy Ghost which is given unto us. For it is not simply the enduring of such things that is advantageous, but the bearing of such things for the name of Christ not only with tranquil mind, but even with exultation. For many heretics, deceiving souls under the Christian name, endure many such things; but they are excluded from that reward on this account, that it is not said merely, Blessed are they which endure persecution; but it is added, for righteousness' sake. Now, where there is no sound faith, there can be no righteousness, for the just [righteous] man lives by faith. Neither let schismatics promise themselves anything of that reward; for similarly, where there is no love, there cannot be righteousness, for love works no ill to his neighbour; and if they had it, they would not tear in pieces Christ's body, which is the Church.\r\n\r\nBut it may be asked, What is the difference when He says, when men shall revile you, and when they shall say all manner of evil against you, since to revile is just this, to say evil against? But it is one thing when the reviling word is hurled with contumely in presence of him who is reviled, as it was said to our Lord, Say we not the truth that you are a Samaritan, and hast a devil? and another thing, when our reputation is injured in our absence, as it is also written of Him, Some said, He is a prophet; others said, Nay, but He deceives the people. Then, further, to persecute is to inflict violence, or to assail with snares, as was done by him who betrayed Him, and by them who crucified Him. Certainly, as for the fact that this also is not put in a bare form, so that it should be said, and shall say all manner of evil against you, but there is added the word falsely, and also the expression for my sake; I think that the addition is made for the sake of those who wish to glory in persecutions, and in the baseness of their reputation; and to say that Christ belongs to them for this reason, that many bad things are said about them; while, on the one hand, the things said are true, when they are said respecting their error; and, on the other hand, if sometimes also some false charges are thrown out, which frequently happens from the rashness of men, yet they do not suffer such things for Christ's sake. For he is not a follower of Christ who is not called a Christian according to the true faith and the catholic discipline.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:augustine:matthew.5.11:de874d5b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 5:11",
+      "excerpt": "There are in all, then, these eight sentences. For now in what remains He speaks in the way of direct address to those who were present, saying: Blessed shall you be when men shall revile you and persecute you. But the former sentences He addressed in a general way: for He did not say, Blessed are you poor in spirit, for yours is the kingdom of heaven; but He says, Blessed are the poor in spirit, for theirs is the kingdom of heaven: nor, Blessed are you meek, for you shall inherit the earth; but, Blessed are the meek, for they shall inherit the earth. And so the others up to the eighth sentence, where He says: Blessed are they which are persecuted for righteousness' sake, for theirs is the kingdom of heaven. After that He now begins to speak in the way of direct address to those present, although what has been said before referred also to His present audience; and that which follows, and which seems to be spoken specially to those present, refers also to those who were absent, or who would afterwards come into existence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:jerome:matthew.5.11:56a4ccc6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:11",
+      "excerpt": "(Verse 11.) Blessed are you when people revile you and persecute you and utter all kinds of evil against you falsely on my account. That curse should be despised which brings about blessedness, which is uttered falsely by the mouth of the reviler. Hence, it specially defined what blessed cursing is: every curse uttered against you falsely on my account. Therefore, where Christ is the cause, there also the desired cursing is.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.5.11:a253aa84:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-15",
+      "title": "Homily on the Gospel of Matthew 15 on matthew 5:11",
+      "excerpt": "Blessed are ye, when men shall revile you and persecute you, and say all manner of evil against you falsely, for my sake. Rejoice, and be exceeding glad. As if He said, Though they should call you sorcerers, deceivers, pestilent persons, or whatever else, blessed are ye: so He speaks. What could be newer than these injunctions? wherein the very things which all others avoid, these He declares to be desirable; I mean, being poor, mourning, persecution, evil report. But yet He both affirmed this, and convinced not two, nor ten, nor twenty, nor an hundred, nor a thousand men, but the whole world. And hearing things so grievous and galling, so contrary to the accustomed ways of men, the multitudes were astonished. So great was the power of Him who spake.\r\n\r\nHowever, lest thou shouldest think that the mere fact of being evil spoken of makes men blessed, He hath set two limitations; when it is for His sake, and when the things that are said are false: for without these, he who is evil spoken of, so far from being blessed, is miserable.\r\n\r\nBut when He had said, your reward is great, he added also another consolation, saying, For so persecuted they the prophets which were before you. Thus, since that first, the promise of the Kingdom, was yet to come, and all in expectation, He affords them comfort from this world; from their fellowship with those who before them had been ill-treated.\r\n\r\nFor think not, saith He, that for something inconsistent in your sayings and enactments ye suffer these things: or, as being teachers of evil doctrines, ye are to be persecuted by them; the plots and dangers proceed not of any wickedness in your sayings, but of the malice of those who hear you. Wherefore neither are they any blame to you who suffer wrong, but to them who do the wrong. And to the truth of these things all preceding time bears witness. For against the prophets they did not even bring any charge of transgressing the law, and of sentiments of impiety, that they stoned some, chased away others, encompassed others with innumerable afflictions. Wherefore let not this trouble you, for of the very same mind they do all that is done now. Seest thou how He raised up their spirits, by placing them near to the company of Moses and Elias?\r\n\r\nThus also Paul writing to the Thessalonians, saith, For ye became followers of the Churches of God, which are in Judea; for ye also have suffered the same things of your own fellow-countrymen, even as they have of the Jews: who both killed the Lord Jesus, and their own prophets, and have driven us out; and they please not God, and are contrary to all men. Which same point here also Christ hath established.\r\n\r\nAnd whereas in the other beatitudes, He said, Blessed are the poor, and the merciful; here He hath not put it generally, but addresses His speech unto themselves, saying, Blessed are ye, when they shall revile you, and persecute you, and say every evil word: signifying that this is an especial privilege of theirs; and that beyond all others, teachers have this for their own.\r\n\r\nAt the same time He here also covertly signifies His own dignity, and His equality in honor with Him who begat Him. For as they on the Father's account, saith He, so shall ye also for me suffer these things. But when He saith, the prophets which were before you, He implies that they were also by this time become prophets.\r\n\r\nNow in this place He saith, Your reward is great in heaven. But Luke reports Him to have spoken this, both earnestly, and with more entire consolation; for He not only, as you know, pronounces them blessed, who are evil spoken of for God's sake, but declares them likewise wretched, who are well spoken of by all men. For, Woe unto you, saith He, when all men shall speak well of you. And yet the apostles were well spoken of, but not by all men. Wherefore He said not, Woe unto you, when men shall speak well of you, but, when all men shall do so: for it is not even possible that those who live in the practice of virtue should be well spoken of by all men.\r\n\r\nAnd again He saith, When they shall cast out your name as evil, rejoice ye, and leap for joy. For not only of the dangers they underwent, but of the calumny also, He appoints the recompence to be great. Wherefore He said not, When they shall persecute, and kill you, but, When they shall revile you, and say all manner of evil. For most assuredly, men's evil reports have a sharper bite than their very deeds. For whereas, in our dangers, there are many things that lighten the toil, as to be cheered by all, to have many to applaud, to crown, to proclaim our praise; here in our reproach even this consolation is destroyed. Because we seem not to have achieved anything great; and this galls the combatant more than all his dangers: at least many have gone on even to hang themselves, not bearing evil report.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:hcf-desert-fathers:matthew.5.11:f48c708c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-desert-fathers",
+      "workId": "hcf:work:hcf-desert-fathers:the-desert-fathers-sayings-of-the-early-christian-monks",
+      "title": "The Desert Fathers, Sayings of the Early Christian Monks on matthew 5:11",
+      "excerpt": "The monks praised a brother to Antony. Antony went to him and tested him to see if he could endure being insulted. When he saw that he could not bear it, he said to him, 'You are like a house with a highly decorated outside, but burglars have stolen all the furniture by the back door.'",
+      "takeaway": "",
+      "sourceId": "hcf:source:books-google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c500"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:tertullian:matthew.5.11:4ade8cf8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:of-patience",
+      "title": "Of Patience on matthew 5:11",
+      "excerpt": "When, however, He says, \"Rejoice and exult, as often as they shall curse and persecute you; for very great is your reward in heaven,\" of course it is not to the impatience of exultation that He makes that promise; because no one will \"exult\" in adversities unless he have first learnt to contemn them; no one will contemn them unless he have learnt to practise patience.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:tertullian:matthew.5.11:50a9b42e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:of-patience",
+      "title": "Of Patience on matthew 5:11",
+      "excerpt": "If the tongue's bitterness break out in malediction or reproach, look back at the saying, \"When they curse you, rejoice.\" The Lord Himself was \"cursed\" in the eye of the law; and yet is He the only Blessed One.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:tertullian:matthew.5.11:c29b90ef:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-flight-in-persecution",
+      "title": "On Flight in Persecution on matthew 5:11",
+      "excerpt": "If I avoid suffering, I am ashamed to confess. \"Happy they who suffer persecution for My name's sake.\" Unhappy, therefore, they who, by running away, will not suffer according to the divine command.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.5.11:577cd440:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:11",
+      "excerpt": "Blessed are ye, when men shall revile you and persecute you. He addresses the apostles directly, showing that it is especially the mark of a teacher to be reviled. And shall say all manner of evil against you falsely, for My sake. It is not simply he that is reviled who is blessed, but when he is reviled for Christ's sake, and falsely. If these two conditions are lacking, he is a wretch, as he has been a cause of temptation to many.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.5.11"
     },
     {
       "id": "catena-matt-0634-v11",
@@ -218,24 +406,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0637-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.11",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:11–12",
-      "excerpt": "Rejoice, that is, in mind, exult with the body, for your reward is not great only but “abundant in heaven.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.5.11:59034a6f:0"
       ]
     },
     {
@@ -265,6 +442,31 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:11–12",
       "excerpt": "He invites them to patience not only by the prospect of reward, but by example, when He adds, “for so persecuted they the Prophets who were before you.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.5.11:2b61355f:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0637-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.11",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:11–12",
+      "excerpt": "Rejoice, that is, in mind, exult with the body, for your reward is not great only but “abundant in heaven.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

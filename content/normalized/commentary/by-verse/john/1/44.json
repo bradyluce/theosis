@@ -60,14 +60,14 @@
       ]
     },
     {
-      "id": "catena-john-0061",
+      "id": "catena-john-0064",
       "relation": "verse",
       "targetVerseId": "kjva:john.1.44",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 1:44",
-      "excerpt": "Or to give an other explanation. We will not put the stop at without Him was not any thing made, as the heretics do. For they wishing to prove the Holy Ghost a creature, read, That which was made in Him, was life. But this cannot be so understood. For first, this was not the place for making mention of the Holy Ghost. But let us suppose it was; let us take the passage for the present according to their reading, we shall see that it leads to a difficulty. For when it is said, That, which was made in Him, was life; they say the life spoken of is the Holy Ghost. But this life is also light; for…",
+      "excerpt": "Life of itself gives illumination to men, but to cattle not: for they have not rational souls, by which to discern wisdom: whereas man, being made in the image of God, has a rational soul, by which he can discern wisdom. Hence that life, by which all things are made, is light, not however of all animals whatsoever, but of men.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -78,14 +78,14 @@
       ]
     },
     {
-      "id": "catena-john-0064",
+      "id": "catena-john-0061",
       "relation": "verse",
       "targetVerseId": "kjva:john.1.44",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 1:44",
-      "excerpt": "Life of itself gives illumination to men, but to cattle not: for they have not rational souls, by which to discern wisdom: whereas man, being made in the image of God, has a rational soul, by which he can discern wisdom. Hence that life, by which all things are made, is light, not however of all animals whatsoever, but of men.",
+      "excerpt": "Or to give an other explanation. We will not put the stop at without Him was not any thing made, as the heretics do. For they wishing to prove the Holy Ghost a creature, read, That which was made in Him, was life. But this cannot be so understood. For first, this was not the place for making mention of the Holy Ghost. But let us suppose it was; let us take the passage for the present according to their reading, we shall see that it leads to a difficulty. For when it is said, That, which was made in Him, was life; they say the life spoken of is the Holy Ghost. But this life is also light; for…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -132,6 +132,24 @@
       ]
     },
     {
+      "id": "catena-john-0066",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.1.44",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 1:44",
+      "excerpt": "We must not omit to notice, that he puts the life before the light of men. For it would be a contradiction to suppose a being without life to be illuminated; as if life were an addition to illumination. (tom. ii. c. 16). But to proceed: if the life was the light of men, meaning men only, Christ is the light and the life of men only; an heretical supposition. It does not follow then, when a thing is predicated of any, that it is predicated of those only; for of God it is written, that He is the God of Abraham, Isaac, and Jacob; and yet He is not the God of those fathers only. In the same way,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0059",
       "relation": "verse",
       "targetVerseId": "kjva:john.1.44",
@@ -168,24 +186,6 @@
       ]
     },
     {
-      "id": "catena-john-0063",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.1.44",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-john",
-      "title": "On John 1:44",
-      "excerpt": "He had said, In him was life, that you might not suppose that the Word was without life. Now he shews that life is spiritual, and the light of all reasonable creatures. And the life was the light of men: i. e. not sensible, but intellectual light, illuminating the very soul.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0065",
       "relation": "verse",
       "targetVerseId": "kjva:john.1.44",
@@ -204,14 +204,14 @@
       ]
     },
     {
-      "id": "catena-john-0066",
+      "id": "catena-john-0063",
       "relation": "verse",
       "targetVerseId": "kjva:john.1.44",
       "topicSlugs": [],
-      "personId": "origen",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-john",
       "title": "On John 1:44",
-      "excerpt": "We must not omit to notice, that he puts the life before the light of men. For it would be a contradiction to suppose a being without life to be illuminated; as if life were an addition to illumination. (tom. ii. c. 16). But to proceed: if the life was the light of men, meaning men only, Christ is the light and the life of men only; an heretical supposition. It does not follow then, when a thing is predicated of any, that it is predicated of those only; for of God it is written, that He is the God of Abraham, Isaac, and Jacob; and yet He is not the God of those fathers only. In the same way,…",
+      "excerpt": "He had said, In him was life, that you might not suppose that the Word was without life. Now he shews that life is spiritual, and the light of all reasonable creatures. And the life was the light of men: i. e. not sensible, but intellectual light, illuminating the very soul.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -220,6 +220,110 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.44:12be27bc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-20",
+      "title": "Homily on the Gospel of John 20 on john 1:44",
+      "excerpt": "\"To every careful thinker there is a gain\" (Prov. xiv. 23, LXX.), saith the proverb; and Christ implied more than this, when He said, \"He that seeketh findeth.\" (Matt. vii. 8.) Wherefore it does not occur to me any more to wonder how Philip followed Christ. Andrew was persuaded when he had heard from John, and Peter the same from Andrew, but Philip not having learned anything from any but Christ who said to him only this, \"Follow Me,\" straightway obeyed, and went not back, but even became a preacher to others. For he ran to Nathanael and said to him, \"We have found Him of whom Moses in the Law and the Prophets did write.\" Seest thou what a thoughtful mind he had, how assiduously he meditated on the writings of Moses, and expected the Advent? for the expression, \"we have found,\" belongs always to those who are in some way seeking. \"The day following Jesus went forth into Galilee.\" Before any had joined Him, He called no one; and He acted thus not without cause, but according to his own wisdom and intelligence. For if, when no one came to Him spontaneously, He had Himself drawn them, they might perhaps have started away; but now, having chosen this of themselves, they afterwards remained firm. He calls Philip, one who was better acquainted with Him; for he, as having been born and bred in Galilee, knew Him more than others. Having then taken the disciples, He next goes to the capture of the others, and draws to Him Philip and Nathanael.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.44"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.1.44:c302b760:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-20",
+      "title": "Homily on the Gospel of John 20 on john 1:44",
+      "excerpt": "Now in the case of Nathanael this was not so wonderful, because the fame of Jesus had gone forth into all Syria. (Matt. iv. 24.) But the wonderful thing was respecting Peter and James and Philip, that they believed, not only before the miracles, but that they did so being of Galilee, out of which \"ariseth no prophet,\" nor \"can any good thing come\"; for the Galilaeans were somehow of a more boorish and dull disposition than others; but even in this Christ displayed forth His power, by selecting from a land which bore no fruit His choicest disciples. It is then probable that Philip having seen Peter and Andrew, and having heard what John had said, followed; and it is probable also that the voice of Christ wrought in him somewhat; for He knew those who would be serviceable. But all these points the Evangelist cuts short. That Christ should come, he knew; that this was Christ, he knew not, and this I say that he heard either from Peter or John. But John mentions his village also, that you may learn that \"God hath chosen the weak things of the world.\" (1 Cor. i. 27.)",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.1.44"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.1.44:221788f0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 1:44",
+      "excerpt": "For the voice of Christ sounded not like a common voice to some, that is, the faithful, but kindled in their inmost soul the love of Him. Philip having been continually meditating on Christ, and reading the books of Moses, so confidently expected Him, that the instant he saw, he believed. Perhaps too he had heard of Him from Andrew and Peter, coming from the same district; an explanation which the Evangelist seems to hint at, when he adds, Now Philip was of Bethsaida, the city of Andrew and Peter.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.1.44"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.1.44:e4274c7f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 1:44",
+      "excerpt": "Then, did not Philip learn something about Christ from Andrew and Peter? Probably, conversing with him as a fellow townsman, they told him about the Lord as well. It seems the evangelist hints at this when he says that Philip was from the city of Andrew and Peter. This city was small and could more properly have been called a village. Therefore one must marvel at the power of Christ, that He chose the best disciples from among those bearing no fruit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.1.44"
+    },
+    {
+      "id": "hcf:alcuin:john.1.44:5fb0edc2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "hcf:work:alcuin:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 1:44",
+      "excerpt": "Bethsaida means house of hunters. The Evangelist introduces the name of this place by way of allusion to the characters of Philip, Peter, and Andrew, and their future office, i. e. catching and saving souls.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c804",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.1.44"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.1.44:9da9ff15:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 1:44",
+      "excerpt": "This gives us the situation of the disciples he called: for they were from Bethsaida. And this is appropriate to this mystery. For \"Bethsaida\" means \"house of hunters,\" to show the attitude of Philip, Peter and Andrew at that time, and because it was fitting to call, from the house of hunters, hunters who were to capture souls for life: \"I will send my hunters\" (Jer 16:16).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.1.44"
     }
   ]
 }

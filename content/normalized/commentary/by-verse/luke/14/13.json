@@ -4,42 +4,6 @@
   "verseNumber": 13,
   "entries": [
     {
-      "id": "catena-luke-2252-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.13",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:12–14",
-      "excerpt": "Many are the sources from which friendships are made. Leaving out all unlawful ones, we shall speak only of those which are natural and moral; the natural are, for instance, between father and son, brother and brother, and such like; which He meant, saying, Nor thy brethren, nor thy kinsmen; the moral, when a man has become your guest or neighbour; and with reference to these He says, nor thy neighbours.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2254-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.13",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:12–14",
-      "excerpt": "Let us not then bestow kindness on others under the hope of return. For this is a cold motive, and hence it is that such a friendship soon vanishes. But if you invite the poor, God, who never forgets, will be your debtor, as it follows, But when ye make a feast, call the poor, the maimed, the lame, and the blind.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2255-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.13",
@@ -55,17 +19,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.14.13:2a9c5ab4:0"
       ]
     },
     {
-      "id": "catena-luke-2257-v13",
+      "id": "catena-luke-2252-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.13",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:12–14",
-      "excerpt": "But thou sayest, the poor are unclean and filthy. Wash him, and make him to sit with thee at table. If he has dirty garments, give him clean ones. Christ comes to thee through him, and dost thou stand trifling?",
+      "excerpt": "Many are the sources from which friendships are made. Leaving out all unlawful ones, we shall speak only of those which are natural and moral; the natural are, for instance, between father and son, brother and brother, and such like; which He meant, saying, Nor thy brethren, nor thy kinsmen; the moral, when a man has become your guest or neighbour; and with reference to these He says, nor thy neighbours.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -94,6 +65,42 @@
       ]
     },
     {
+      "id": "catena-luke-2254-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.13",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:12–14",
+      "excerpt": "Let us not then bestow kindness on others under the hope of return. For this is a cold motive, and hence it is that such a friendship soon vanishes. But if you invite the poor, God, who never forgets, will be your debtor, as it follows, But when ye make a feast, call the poor, the maimed, the lame, and the blind.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2257-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.13",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:12–14",
+      "excerpt": "But thou sayest, the poor are unclean and filthy. Wash him, and make him to sit with thee at table. If he has dirty garments, give him clean ones. Christ comes to thee through him, and dost thou stand trifling?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2258-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.13",
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-of-nyssa:luke.14.13:2507c2fa:0"
       ]
     },
     {
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.14.13:384dff61:0"
       ]
     },
     {
@@ -181,7 +202,99 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.14.13:23e847df:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.14.13:ef15535a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 14:13",
+      "excerpt": "At the supper there were two classes of those reclining at table — the hosts and the guests. The Lord first turned with exhortation to the guests, taught them saving humility, and offered them plain fare, and then He pays honor to the one who had invited Him and repays the hospitality with an exhortation, that he should not give feasts for the sake of any human favor and expect immediate recompense. For the fainthearted, when inviting friends or relatives, do so with a view to swift gratitude, and if they do not receive it, they become vexed. But the magnanimous, enduring until the life to come, receive their reward from Him who is truly rich (Eph. 2:4, 7).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.14.13"
+    },
+    {
+      "id": "hcf:bede:luke.14.13:2a80539f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 14:13",
+      "excerpt": "But when you make a banquet, call the poor, the weak, the lame, the blind, and you will be blessed, because they do not have the means to recompense you. For a recompense will be given to you in the resurrection of the just. He speaks of the resurrection of the just, who, although all will rise, it is rightly called their own, who do not doubt they will come to be blessed in this. Therefore, he who calls the poor to a banquet will receive a reward in the future. He who calls friends, brothers, and the wealthy receives his reward. But even if he does this for God's sake in the example of the sons of blessed Job, as other duties of brotherly love, He who commanded it will reward. He who invites gluttons and the luxurious for the sake of wantonness will be punished in the future with eternal penalty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.14.13"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.14.13:d56eace8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke",
+      "title": "Exposition of the Gospel of Luke on luke 14:13",
+      "excerpt": "He joins humanity to this, as if at the next threshold. The boundaries of the Lord's saying differentiated this, if it is conferred on the poor and the weak. There is a greedy disposition in those who would be rewarded for hospitality.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.14.13"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.14.13:52466ad9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on luke 14:13",
+      "excerpt": "If any determine to invite eider women to an entertainment of love, or a feast, as our Saviour calls it, let them most frequently send to such a one whom the deacons know to be in distress. But let what is the pastor's due, I mean the first-fruits, be set apart in the feast for him, even though he be not at the entertainment, as being your priest, and in honour of that God who has entrusted him with the priesthood. But as much as is given to every one of the eider women, let double so much be given to the deacons, in honour of Christ. Let also a double portion be set apart for the presbyters, as for such who labour continually about the word and doctrine, upon the account of the apostles of our Lord, whose place they sustain, as the counsellors of the bishop and the crown of the Church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.14.13"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.14.13:536e0df1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-v",
+      "title": "Against Heresies Book V on luke 14:13",
+      "excerpt": "And for this reason the Lord declared, \"When thou makest a dinner or a supper, do not call thy friends, nor thy neighbours, nor thy kinsfolk, lest they ask thee in return, and so repay thee. But call the lame, the blind, and the poor, and thou shall be blessed, since they cannot recompense thee, but a recompense shall be made thee at the resurrection of the just.\" And again He says, \"Whosoever shall have left lands, or houses, or parents, or brethren, or children because of Me, he shall receive in this world an hundred-fold, and in that to come he shall inherit eternal life.\" For what are the hundred-fold [rewards] in this word, the entertainments given to the poor, and the suppers for which a return is made? These are [to take place] in the times of the kingdom, that is, upon the seventh day, which has been sanctified, in which God rested from all the works which He created, which is the true Sabbath of the righteous, which they shall not be engaged in any earthly occupation; but shall have a table at hand prepared for them by God, supplying them with all sorts of dishes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.14.13"
     }
   ]
 }

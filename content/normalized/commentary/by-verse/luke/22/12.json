@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-luke-3095-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.12",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:7–13",
-      "excerpt": "Or the pitcher is a more perfect measure, but the water is that which was thought meet to be a sacrament of Christ; to wash, not to be washed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3098-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.12",
@@ -73,56 +55,27 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.22.12:4da4d4f9:0"
       ]
     },
     {
-      "id": "catena-luke-3085-v12",
+      "id": "catena-luke-3095-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.12",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:7–13",
-      "excerpt": "By the day of unleavened bread of the Passover, He means the fourteenth day of the first month, the day on which, having put away the leaven, they were accustomed to hold the Passover, that is, the lamb, towards evening.",
+      "excerpt": "Or the pitcher is a more perfect measure, but the water is that which was thought meet to be a sacrament of Christ; to wash, not to be washed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3086-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.12",
-      "topicSlugs": [],
-      "personId": "eusebius-caesarea",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:7–13",
-      "excerpt": "But should any one say, “If on the first day of unleavened bread the disciples of our Saviour prepare the Passover, on that day then should we also celebrate the Passover;” we answer, that this was not an admonition, but a history of the fact. It is what took place at the time of the saving Passion; but it is one thing to relate past events, another to sanction and leave them an ordinance to posterity. Moreover, the Saviour did not keep His Passover with the Jews at the time that they sacrificed the lamb. For they did this on the Preparation, when our Lord suffered. Therefore they entered not…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3088-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.12",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:7–13",
-      "excerpt": "As if to say, We have no abode, we have no place of shelter. Let those hear this, who busy themselves in building houses. Let them know that Christ, the Lord of all places, had not where to lay His head.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,17 +119,53 @@
       ]
     },
     {
-      "id": "catena-luke-3087-v12",
+      "id": "catena-luke-3085-v12",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.12",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:7–13",
-      "excerpt": "Now on the same fifth day He sends two of His disciples to prepare the Passover, namely, Peter and John, the one in truth as loving, the other as loved. In all things shewing, that even to the end of His life He opposed not the law. And He sends them to a strange house; for He and His disciples had no house, else would He have kept the Passover in one of them. So it is added, And they said, Where will thou that we prepare?",
+      "excerpt": "By the day of unleavened bread of the Passover, He means the fourteenth day of the first month, the day on which, having put away the leaven, they were accustomed to hold the Passover, that is, the lamb, towards evening.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3088-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.12",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:7–13",
+      "excerpt": "As if to say, We have no abode, we have no place of shelter. Let those hear this, who busy themselves in building houses. Let them know that Christ, the Lord of all places, had not where to lay His head.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3086-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.12",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:7–13",
+      "excerpt": "But should any one say, “If on the first day of unleavened bread the disciples of our Saviour prepare the Passover, on that day then should we also celebrate the Passover;” we answer, that this was not an admonition, but a history of the fact. It is what took place at the time of the saving Passion; but it is one thing to relate past events, another to sanction and leave them an ordinance to posterity. Moreover, the Saviour did not keep His Passover with the Jews at the time that they sacrificed the lamb. For they did this on the Preparation, when our Lord suffered. Therefore they entered not…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -199,6 +188,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.12:7ee3096f:0"
       ]
     },
     {
@@ -210,6 +206,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:7–13",
       "excerpt": "By the day of unleavened bread, we must understand that conversation which is wholly in the light of the Spirit, having lost all trace of the old corruption of Adam’s first transgression. And living in this conversation, it becomes us to rejoice in the mysteries of Christ. Now these mysteries Peter and John prepare, that is, action and contemplation, fervid zeal and peaceful meekness. And these preparers a certain man meets, because in what we have just mentioned, lies the condition of man who was created after the image of God. And he carries a pitcher of water, which signifies the grace of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3087-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.12",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:7–13",
+      "excerpt": "Now on the same fifth day He sends two of His disciples to prepare the Passover, namely, Peter and John, the one in truth as loving, the other as loved. In all things shewing, that even to the end of His life He opposed not the law. And He sends them to a strange house; for He and His disciples had no house, else would He have kept the Passover in one of them. So it is added, And they said, Where will thou that we prepare?",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -272,6 +286,92 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.22.12:5a9977fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:12",
+      "excerpt": "And he will show you a large upper room furnished; prepare it there. And going, they found it as he had told them, and they prepared the Passover. The large upper room is the spiritual law that, moving out of the narrow confines of the letter, welcomes the Savior in a high place. For he who still observes the killing letter and understands nothing else in the lamb but the animal, undoubtedly celebrates the Passover below, because he does not yet comprehend the majesty of the spirit. But he who has followed the water bearer, that is, the herald of grace, into the house of the Church, this one, transcending the roof of the letter through the life-giving Spirit, prepares a dwelling for Christ in the high chamber of the mind, because he understands all the mysteries of the Passover or other decrees of the law written about him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.12"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.12:2d321a7d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:12",
+      "excerpt": "Why then does the Lord observe the Passover? In order to prove by all His actions to His very last breath that He is not an opponent of the Law. Let us also eat this Passover with understanding; let us understand by the day of unleavened bread the entire life spent in spiritual light, having nothing of the oldness of the former disobedience in Adam. Truly leading such a life, we must be nourished by the mysteries of Jesus. These mysteries will be prepared by Peter and John — activity and contemplation, fervent zeal and peaceful meekness. For the believer must be ardent in doing good, zealous against evil, and gentle toward those who commit evil. For one must hate evil, not the one who does evil. That person must be healed, for he suffers. To do evil means precisely to be troubled by the evil one and to suffer from malice. If we have Peter and John preparing the supper, that is, a good life, which Peter represents, and true teaching, which John the Theologian represents, then with such preparers a \"man\" will meet them, that is, we will then find the truly human being, created in the image of the Creator, or rather, the Maker, carrying a \"pitcher of water.\" Water signifies the grace of the Spirit, as the evangelist John teaches (John 7:38–39), and the pitcher signifies the fragility and softness of heart. For the one who receives spiritual grace is humble and contrite of heart, and to the humble the Lord gives grace (James 4:6). Recognizing himself as earth and ashes and saying with Job, \"You fashioned me like clay\" (Job 10:9), he will carry the grace of the Spirit in the easily broken and easily crushed vessel of his heart. Following such a disposition, we will enter the house of the mind, whose master — the mind — will show us a large furnished upper room. The \"upper room\" is the lofty dwelling place of the mind, that is, the divine and spiritual things among which it lives and moves with love. They are furnished, for there is nothing harsh in them, but even what is crooked becomes a straight path for such a mind, as Solomon also said: \"They are all plain to him who understands, and right to those who find knowledge\" (Prov. 8:9). You would not err in saying also that the mind, although it performs a lofty work by acting according to the power of the mind, nevertheless its knowledge is still spread out and very close to the earth. But truly lofty knowledge, and the unknowing that surpasses the mind, is above every height — when the mind no longer acts but receives action. First we must act with our own mind, and then the grace of the Lord will act in us, catching us up, as it did the prophets, and releasing us from every natural power. Truly it is said that in such-and-such a prophet there was a rapture from the Lord. Similarly here, when this upper room is furnished, Jesus comes with His disciples and performs the mysteries, coming to us Himself and manifesting His own power in us, rather than waiting for us to come to Him. The \"disciples\" of God the Word are all reflections upon creation. When the Word thus acts in us, then we will understand the communion of the Passover and be even more nourished by reflections upon creation, as it is said: \"I consider Your heavens — the work of Your fingers\" (Ps. 8:4).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.12"
+    },
+    {
+      "id": "hcf:origen:luke.22.12:1b50d298:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 22:12",
+      "excerpt": "Let us then ascend with the Lord united to us, to the upper part in which is the guestchamber, which is shown by the understanding, that is, the goodman of the house, to every one of the disciples of Christ. But this upper room of our house must be large enough to receive Jesus the Word of God, who is not comprehended but by those who are greater in comprehension. And this chamber must be made ready by the goodman of the house, (that is, the understanding,) for the Son of God, and it must be cleaned, wholly purged of the filth of malice. The master of the house also must not be any common person having a known name. Hence He says mystically in Matthew, Go ye to such a one.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.22.12"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.12:2f1f1c19:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-141",
+      "title": "COMMENTARY ON LUKE, HOMILY 141 on luke 22:12",
+      "excerpt": "Perhaps Christ speaks this as symbolizing something mystical and necessary. Wherever waters enter, the waters of holy baptism, Christ stays there. How or in what way does this happen? They free us from all impurity, and they wash us from the stains of sin. They do this so that we also might become a holy temple of God and participants in his divine nature, by participation of the Holy Spirit. So that Christ may rest and stay in us, let us receive the saving waters, also confessing the faith that justifies the wicked and raises us high so that we might be counted as an upper room.…He that would say that the soul of every saint is an upper room would not miss the truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-141",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.12"
+    },
+    {
+      "id": "hcf:jerome:luke.22.12:6901dfc6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:st-jerome-commentary-on-daniel-chapter-six",
+      "title": "St. Jerome, Commentary on Daniel, CHAPTER SIX on luke 22:12",
+      "excerpt": "[Daniel 6:10] \"Now when Daniel learned of it, that is, of the law which had been enacted, he entered his house, and with the windows in his upper room opened up in the direction of Jerusalem, he continued to bow his knees three times a day and worshipped, and made confession before his God just as he was previously accustomed to do.\" We must quickly draw from our memory and bring together from all of Holy Scripture all the passages where we have read of domata, which mean in Latin either \"walled enclosures\" (menia) or \"beds\" or \"sun-terraces,\" and also the references to anogaia, that is, \"upper rooms.\" For after all, our Lord celebrated the passover in an upper room (Mark 14:15, Luke 22:12), and in the Acts of the Apostles the Holy Spirit came upon the one hundred and twenty souls of believers while they were in an upper room (Acts 1:13). And so Daniel in this case, despising the king's commands and reposing his confidence in God, does not offer his prayers in some obscure spot, but in a lofty place, and opens up his windows towards Jerusalem, from whence he looked for the peace . He prays, moreover, according to God's behest, and also according to what Solomon had said when he admonished the people that they should pray in the direction of the Temple. Furthermore, there are three times in the day when we should bow our knees unto God, and the tradition of the Church understands them to be the third hour, the sixth hour, and the ninth hour. Lastly, it was at the third hour that the Holy Spirit descended upon the Apostles (Acts 2:15) . It was at the sixth hour that Peter, purposing to eat, ascended to the upper room for prayer (Acts 10:9). It was at the ninth hour that Peter and John were on their way to the Temple (Acts 3:1).",
+      "takeaway": "",
+      "sourceId": "hcf:source:ccel-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.22.12"
     },
     {
       "id": "catena-luke-3092-v12",

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:athanasius-the-great:luke.6.46:5b44ed36:0"
       ]
     },
     {
@@ -58,24 +65,6 @@
       ]
     },
     {
-      "id": "catena-luke-1021-v46",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.46",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:46–49",
-      "excerpt": "But Lordship both in name and reality belongs only to the Highest Nature.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1023-v46",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.46",
@@ -91,6 +80,49 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1031-v46",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.46",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:46–49",
+      "excerpt": "Or they build upon the earth without foundation, who upon the quicksand of doubt, which relates to opinion, lay the foundation of their spiritual building, which a few drops of temptation wash away.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1021-v46",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.46",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:46–49",
+      "excerpt": "But Lordship both in name and reality belongs only to the Highest Nature.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.6.46:637457a7:0"
       ]
     },
     {
@@ -130,17 +162,17 @@
       ]
     },
     {
-      "id": "catena-luke-1031-v46",
+      "id": "catena-luke-1030-v46",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.46",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:46–49",
-      "excerpt": "Or they build upon the earth without foundation, who upon the quicksand of doubt, which relates to opinion, lay the foundation of their spiritual building, which a few drops of temptation wash away.",
+      "excerpt": "The house of the devil is the world which lieth in wickedness, (1 John 5:19.) which he builds upon the earth, because those who obey him he drags down from heaven to earth; he builds without foundation, for sin has no foundation, standing not by its own nature, for evil is without substance, which yet whatever it is, grows up in the nature of good. But because the foundation is called so from fundus, we may not unfitly understand that fundamentum is placed here for fundus. As then he who is fallen into a well is kept at the bottom of the well, so the soul falling away remains stationary, as…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -156,6 +188,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:46–49",
       "excerpt": "Lest any one should vainly flatter himself with the words, Out of the abundance of the heart the mouth speaketh, as if words only and not rather works were required of a Christian, our Lord adds the following, But why call ye me Lord, Lord, and do not the things which I say? As if He said, Why do ye boast of sending forth the leaves of a right confession, and shew forth no fruit of good works.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.46:f14065ad:2"
+      ]
+    },
+    {
+      "id": "catena-luke-1028-v46",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.46",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:46–49",
+      "excerpt": "A flood comes in three ways, either by unclean spirits, or wicked men, or the very restlessness of mind or body; and as far as men trust in their own strength they fall away, but as long as they cling to the immoveable rock they cannot even be shaken.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -202,40 +259,191 @@
       ]
     },
     {
-      "id": "catena-luke-1028-v46",
+      "id": "hcf:bede:luke.6.46:f6df011c:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.46",
       "topicSlugs": [],
       "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:46–49",
-      "excerpt": "A flood comes in three ways, either by unclean spirits, or wicked men, or the very restlessness of mind or body; and as far as men trust in their own strength they fall away, but as long as they cling to the immoveable rock they cannot even be shaken.",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:46",
+      "excerpt": "Why do you call me 'Lord, Lord,' and do not do what I say? As if he were saying in other words: Why do you boast of producing the leaves of correct confession, you who show no fruits of good works? From which the Apostle, separating the precious from the vile, that is, the good treasure from the bad, the good tree from the bad, the perfect disciple of a good teacher from a hypocrite, the seeing guide from the blind one, said: \"But I will come to you soon, if the Lord wills, and I will find out not the talk of these arrogant people but their power. For the kingdom of God is not a matter of talk but of power\" (1 Corinthians 4). Therefore, through the speech of the mouth, the Lord signifies everything that we bring forth from the heart by deed, word, or thought, which are more than what is nakedly and openly said to men before his eyes. For it is also the custom of the Scriptures to put words in place of things. Hence the Psalmist says: \"Say to my soul, 'I am your salvation'\" (Psalm 35). And Hezekiah: \"There was nothing in my storehouses that I did not show them\" (Isaiah 39). Surely he revealed to the Chaldeans the secrets of things, not words. Likewise, the Apostle: \"And no one can say 'Jesus is Lord' except by the Holy Spirit\" (1 Corinthians 12). For as he meant to say, no one perceives the Lord Jesus by understanding, no one embraces him by will, except through the grace of the Holy Spirit.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
     },
     {
-      "id": "catena-luke-1030-v46",
+      "id": "hcf:bede:luke.6.46:ee2a9169:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.46",
       "topicSlugs": [],
       "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:46–49",
-      "excerpt": "The house of the devil is the world which lieth in wickedness, (1 John 5:19.) which he builds upon the earth, because those who obey him he drags down from heaven to earth; he builds without foundation, for sin has no foundation, standing not by its own nature, for evil is without substance, which yet whatever it is, grows up in the nature of good. But because the foundation is called so from fundus, we may not unfitly understand that fundamentum is placed here for fundus. As then he who is fallen into a well is kept at the bottom of the well, so the soul falling away remains stationary, as…",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-25",
+      "title": "Homilies on the Gospels 2.25 on luke 6:46",
+      "excerpt": "Christ subsequently adds force to his pronouncement by clearly showing that good speech without the additional attestation of deeds is of no advantage at all. He asks, \"And why do you call me, 'Lord, Lord,' and not do what I say?\" To call upon the Lord seems to be the gift of a good treasure, the fruit of a good tree. \"For everyone who calls upon the name of the Lord will be saved.\" If anyone who calls upon the name of the Lord resists the Lord's commands by living perversely, it is evident that the good that the tongue has spoken has not been brought out of the good treasure in his heart. It was not the root of a fig tree but that of a thorn bush that produced the fruit of such a confession—a conscience, that is, bristling with vices, and not one filled with the sweetness of the love of the Lord.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.6.46:56edeeb9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-7",
+      "title": "The Stromata Book 7 on luke 6:46",
+      "excerpt": "Our Gnostic then alone, having grown old in the Scriptures, and maintaining apostolic and ecclesiastic orthodoxy in doctrines, lives most correctly in accordance with the Gospel, and discovers the proofs, for which he may have made search (sent forth as he is by the Lord), from the law and the prophets. For the life of the Gnostic, in my view, is nothing but deeds and words corresponding to the tradition of the Lord. But \"all have not knowledge. For I would not have you to be ignorant, brethren,\" says the apostle, \"that all were under the cloud, and partook of spiritual meat and drink;\" clearly affirming that all who heard the word did not take in the magnitude of knowledge in deed and word. Wherefore also he added: \"But with all of them He was not well pleased.\" Who is this? He who said, \"Why do you call Me Lord, and do not the will of My Father?\" That is the Saviour's teaching, which to us is spiritual food, and drink that knows no thirst, the water of gnostic life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.6.46:453defaa:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-4",
+      "title": "The Stromata Book 4 on luke 6:46",
+      "excerpt": "\"Why call ye me Lord, Lord,\" He says, \"and do not the things which I say?\" For \"the people that loveth with their lips, but have their heart far away from the Lord,\" is another people, and trust in another, and have willingly sold themselves to another; but those who perform the commandments of the Lord, in every action \"testify,\" by doing what He wishes, and consistently naming the Lord's name; and \"testifying\" by deed to Him in whom they trust, that they are those \"who have crucified the flesh, with the affections and lusts.\" \"If we live in the Spirit, let us also walk in the Spirit.\" \"He that soweth to his flesh, shall of the flesh reap corruption; but he that soweth to the Spirit, shall of the Spirit reap life everlasting.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.6.46:51950421:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-7",
+      "title": "The Stromata Book 7 on luke 6:46",
+      "excerpt": "And again, those also are likewise unclean that part the hoof, but do not ruminate. For these point out the heretics, who indeed go upon the name of the Father and the Son, but are incapable of triturating and grinding down the clear declaration of the oracles, and who, besides, perform the works of righteousness coarsely and not with precision, if they perform them at all. To such the Lord says, \"Why will ye call me Lord, Lord, and do not the things which I say?\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:ignatius-of-antioch:luke.6.46:c5dd150a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ignatius-of-antioch",
+      "workId": "hcf:work:ignatius-of-antioch:epistle-of-ignatius-to-the-magnesians",
+      "title": "Epistle of Ignatius to the Magnesians on luke 6:46",
+      "excerpt": "It is fitting, then, not only to be called Christians, but to be so in reality. For it is not the being called so, but the being really so, that renders a man blessed. To those who indeed talk of the bishop, but do all things without him, will He who is the true and first Bishop, and the only High Priest by nature, declare, \"Why call ye Me Lord, and do not the things which I say? \" For such persons seem to me not possessed of a good conscience, but to be simply dissemblers and hypocrites.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c108"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.6.46:b20ef21b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv",
+      "title": "Against Heresies Book IV on luke 6:46",
+      "excerpt": "And, \"The servant who knows his Lord's will, and does it not, shall be beaten with many stripes.\" And, \"Why call ye me, Lord, Lord, and do not the things which I say? \" And again, \"But if the servant say in his heart, The Lord delayeth, and begin to beat his fellow-servants, and to eat, and drink, and to be drunken, his Lord will come in a day on which he does not expect Him, and shall cut him in sunder, and appoint his portion with the hypocrites.\" All such passages demonstrate the independent will of man, and at the same time the counsel which God conveys to him, by which He exhorts us to submit ourselves to Him, and seeks to turn us away from [the sin of] unbelief against Him, without, however, in any way coercing us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.6.46:396ec99e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-v",
+      "title": "Against Heresies Book V on luke 6:46",
+      "excerpt": "In like manner, too, those are unclean which have the double hoof but do not ruminate: this is plainly an indication of all heretics, and of those who do not meditate on the words of God, neither are adorned with works of righteousness; to whom also the Lord says, \"Why call ye Me Lord, Lord, and do not the things which I say to you? \" For men of this stamp do indeed say that they believe in the Father and the Son, but they never meditate as they should upon the things of God, neither are they adorned with works of righteousness; but, as I have already observed, they have adopted the lives of swine and of dogs, giving themselves over to filthiness, to gluttony, and recklessness of all sorts.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:hcf-pseudo-clement:luke.6.46:3f42f088:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pseudo-clement",
+      "workId": "hcf:work:hcf-pseudo-clement:clementine-homilies-homily-8",
+      "title": "Clementine Homilies, Homily 8 on luke 6:46",
+      "excerpt": "For on this account our Jesus Himself said to one who often called Him Lord, but did none of the things which He prescribed, 'Why call ye me Lord, Lord, and do not the things which I say?' For it is not saying that will profit any one, but doing. By all means, therefore, is there need of good works.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c400"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:hcf-pseudo-clement:luke.6.46:ac57b3b7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pseudo-clement",
+      "workId": "hcf:work:hcf-pseudo-clement:recognitions-book-iv",
+      "title": "Recognitions (Book IV) on luke 6:46",
+      "excerpt": "But salvation is in this, that you do His will of whom you have conceived a love and affection through the gift of God; lest that saying of His be addressed to you which He spoke, 'Why call ye me Lord, Lord, and do not what I say?' [Luke 6:46]",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c400"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.46:6db5cc59:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 6:46",
+      "excerpt": "This being the case, who will He clearly be that said, \"Why callest thou me Lord, Lord? \" Will it be he who had as yet never been called on, because never yet revealed; or He who was ever regarded as the Lord, because known from the beginning-even the God of the Jews? Who, again, could possibly have added, \"and do not the things which I say? \"Could it have been he who was only then doing his best to teach them? Or He who from the beginning had addressed to them His messages both by the law and the prophets? He could then upbraid them with disobedience, even if He had no ground at any time else for His reproof.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.46"
     }
   ]
 }

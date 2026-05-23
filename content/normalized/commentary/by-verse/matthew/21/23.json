@@ -40,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-matt-3026-v23",
+      "id": "catena-matt-3027-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.21.23",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 21:23–27",
-      "excerpt": "John received his authority to baptize from Him, whom he afterwards baptized; and that baptism which was committed to him is here called the baptism of John. He alone received such a gift; no righteous man before or after him was entrusted with a baptism to be called from himself. For John came to baptize in the water of repentance, to prepare the way for the Lord, not to give inward cleansing, which mere man cannot do.",
+      "excerpt": "What the Priests revolved in their malice is shewn when he adds, “But they reasoned with themselves.” For had they replied that it was from heaven, the question was inevitable, Why then were ye not baptized by John? But should they reply that it was an invention of human device, and had in it nothing divine, they feared a tumult among the people. For all the assembled multitudes had received John’s baptism,723 and held him accordingly for a Prophet. This godless party therefore make answer, and by a seeming humility of speech confessing that they know not, turned to hide their insidious…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -58,14 +58,14 @@
       ]
     },
     {
-      "id": "catena-matt-3027-v23",
+      "id": "catena-matt-3026-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.21.23",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 21:23–27",
-      "excerpt": "What the Priests revolved in their malice is shewn when he adds, “But they reasoned with themselves.” For had they replied that it was from heaven, the question was inevitable, Why then were ye not baptized by John? But should they reply that it was an invention of human device, and had in it nothing divine, they feared a tumult among the people. For all the assembled multitudes had received John’s baptism,723 and held him accordingly for a Prophet. This godless party therefore make answer, and by a seeming humility of speech confessing that they know not, turned to hide their insidious…",
+      "excerpt": "John received his authority to baptize from Him, whom he afterwards baptized; and that baptism which was committed to him is here called the baptism of John. He alone received such a gift; no righteous man before or after him was entrusted with a baptism to be called from himself. For John came to baptize in the water of repentance, to prepare the way for the Lord, not to give inward cleansing, which mere man cannot do.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -91,6 +91,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.21.23:90ef2bd5:0"
       ]
     },
     {
@@ -112,14 +119,134 @@
       ]
     },
     {
-      "id": "catena-matt-3021-v23",
+      "id": "hcf:john-chrysostom:matthew.21.23:f4c59d29:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-67",
+      "title": "Homily on the Gospel of Matthew 67 on matthew 21:23",
+      "excerpt": "But the boastful and arrogant Jews, wishing to interrupt His teaching, came unto Him, and asked, \"By what authority doest thou these things?\" For since they could not object against the miracles, they bring forward against Him the correction of the traffickers in the temple. And this in John also they appear to ask, although not in these words, but with the same intent. For there too they say, \"What sign showest thou unto us? seeing that thou doest these things.\" But there He answers them, saying, \"Destroy this temple, and I in three days will raise it up,\" whereas here He drives them into a difficulty. Whence it is manifest, that then indeed was the beginning and prelude of the miracles, but here the end.\r\n\r\nBut what they say is this: Hast thou received the teacher's chair? Hast thou been ordained a priest, that thou didst display such authority? it is said. And yet He had done nothing implying arrogance, but had been careful for the good order of the temple, yet nevertheless having nothing to say, they object against this. And indeed when He cast them out, they did not dare to say anything, because of the miracles, but when He showed Himself, then they find fault with Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.21.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.21.23:8ce228ea:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 21:23",
+      "excerpt": "(Verse 23.) And when he came into the temple, the chief priests and the elders of the people approached him as he was teaching, saying, 'By what authority are you doing these things, and who gave you this authority?' In different words, they construct the same accusation as before, when they said, 'He casts out demons by Beelzebub, the prince of demons.' For when they say, 'By what authority are you doing these things?' they doubt the authority of God and want it to be understood that what he does is by the power of the devil. Moreover, they added: Who gave you this authority? They openly deny the Son of God, whom they consider to be not working by his own power, but by the power of others, to perform miracles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.21.23"
+    },
+    {
+      "id": "hcf:jerome:matthew.21.23:c16aec1b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 21:23",
+      "excerpt": "Or in these words they urge the same cavil as above, when they said, He casteth out demons through Beelzebub the Prince of the demons. (Mat. 12:24.) For when they say, By what authority doest thou these things? they doubt concerning the power of God, and would have it understood that the things He does are of the Devil. But when they add, Who gave thee this authority? they most clearly deny the Son of God, whom they suppose to work miracles, not by His own, but by others' strength.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.21.23"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.21.23:8d0d66d6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-21-10",
+      "title": "Commentary on Matthew 21.10 on matthew 21:23",
+      "excerpt": "Prior to this, the Pharisees had seen many things more worthy to be called great miracles, but now they were deeply troubled and asked Jesus to identify the authority by which he performed these works. The great mystery of the future is included in the consequences of present deeds. They felt the urge for special questioning, then, because the prefiguration of every danger was made known in this event. The Lord replied that he would tell them by what authority he did these works if only they would also reply to his question about whether they considered John the Baptist to have come from heaven or from man. They hesitated while pondering the dangers of responding. If they confessed John to have come from heaven, they would be convicted by that very confession for not believing in the authority of a heavenly witness. They were afraid to say that he was merely from man, however, because of the large crowd of people who believed John to be a prophet. So they answered that they did not know (they did in fact know him to be from heaven) because they feared that they might be convinced by the truth of their own confession. But they told the truth about themselves, even though it was their intention to deceive; it was only through their infidelity that they did not know John the Baptist to be from heaven. And they could not have known that John the Baptist was from man, because he was not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.21.23"
+    },
+    {
+      "id": "hcf:tertullian:matthew.21.23:e57bdca0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on matthew 21:23",
+      "excerpt": "We have spoken, so far as our moderate ability permitted, of the generals which form the groundwork of the sanctity of baptism. I will now, equally to the best of my power, proceed to the rest of its character, touching certain minor questions.\r\n\r\nThe baptism announced by John formed the subject, even at that time, of a question, proposed by the Lord Himself indeed to the Pharisees, whether that baptism were heavenly, or truly earthly: about which they were unable to give a consistent answer, inasmuch as they understood not, because they believed not. But we, with but as poor a measure of understanding as of faith, are able to determine that that baptism was divine indeed, (yet in respect of the command, not in respect of efficacy too, in that we read that John was sent by the lord to perform this duty, ) but human in its nature: for it conveyed nothing celestial, but it fore-ministered to things celestial; being, to wit, appointed over repentance, which is in man's power. In fact, the doctors of the law and the Pharisees, who were unwilling to \"believe,\" did not \"repent\" either. But if repentance is a thing human, its baptism must necessarily be of the same nature: else, if it had been celestial, it would have given both the Holy Spirit and remission of sins. But none either pardons sins or freely grants the Spirit save God only. Even the Lord Himself said that the Spirit would not descend on any other condition, but that He should first ascend to the Father. What the Lord was not yet conferring, of course the servant could not furnish. Accordingly, in the Acts of the Apostles, we find that men who had \"John's baptism\" had not received the Holy Spirit, whom they knew not even by hearing. That, then, was no celestial thing which furnished no celestial (endowments): whereas the very thing which was celestial in John-the Spirit of prophecy-so completely failed, after the transfer of the whole Spirit to the Lord, that he presently sent to inquire whether He whom he had himself preached, whom he had pointed out when coming to him, were \"HE.\" And so \"the baptism of repentance\" was dealt with as if it were a candidate for the remission and sanctification shortly about to follow in Christ: for in that John used to preach \"baptism for the remission of sins,\" the declaration was made with reference to future remission; if it be true, (as it is, ) that repentance is antecedent, remission subsequent; and this is \"preparing the way.\" But he who \"prepares\" does not himself \"perfect,\" but procures for another to perfect. John himself professes that the celestial things are not his, but Christ's, by saying, \"He who is from the earth speaketh concerning the earth; He who comes from the realms above is above all; \" and again, by saying that he \"baptized in repentance only, but that One would shortly come who would baptize in the Spirit and fire; \" -of course because true and stable faith is baptized with water, unto salvation; pretended and weak faith is baptized with fire, unto judgment.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.21.23"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.21.23:057ab5e4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 21:23",
+      "excerpt": "Full of spite that He had expelled the peddlers from the temple, the teachers of the law approached and asked Him such things as these: \"Who are you to cast out from the temple those who do business there? As a priest do you do this? But you have no priestly office. As a king, then? But neither are you a king, and even if you were, you would not have the authority to do such things. For it is not permitted for kings to do these things in the temple.\" They were questioning the Lord in this manner so that if He should say, \"By My own authority I do them,\" they could accuse Him of insurrection because He said that He had His own authority. But if He said, \"I do these things by divine authority,\" they would draw away from Him the multitudes who were praising Him as God, telling them, \"Look, he is not God, but he does these things by God's authority, as a servant.\" How then does Christ, Who is Himself Wisdom, respond? He seizes the sophists in their cunning, and asks them the same questions concerning John; so that if they said the teaching of John was from heaven, their rejection of John's teachings would mark them as enemies of God; but if they said that the teaching of John was of men, they would be in danger from the multitudes, for they all considered John a prophet. The Lord shows us here that we ought not to answer those who ask a question with malicious intent. For He Himself did not reply to those Jews who questioned Him with cunning, although He was not at a loss for an answer. At the same time we learn that it is not Christ's nature to extol Himself. Behold, then, the Lord Who is able to say by what authority He does these things, but does not say, lest He appear to extol Himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.21.23"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.21.23:3ebba81d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 21:23",
+      "excerpt": "\"And when he had come.\" Here they reprove him by questioning. And first, the questioning is presented; secondly, the confutation, at \"Jesus answering said to them.\" Concerning the first, two things. And first, the questions are presented; secondly, Christ's responses. And first, the question of the Jews is presented; secondly, Christ's, at \"but Jesus answering said to them: I will also ask you\" etc. They say therefore, \"by what authority dost thou these things?\" He had cast out the buyers and sellers from the temple, and likewise had worked miracles: therefore they ask by what authority he does these things. Chrysostom says that in the world there was a twofold power, namely, royal and priestly: hence as to the first they ask: from where do you profess to have this power? Likewise, as to the second: \"who gave thee this authority?\" Do you have it from a priest or from God? For it was the case that sons succeeded their fathers in priestly authority. \"Who gave it to you?\" You do not have it from Caesar, not from a priest. Hence Chrysostom says: every man, whatever the opinion someone has about another, esteems him accordingly. Therefore, because they did not have a good opinion of Christ, etc. Or it can be referred to his working of miracles. There is the power of God and the power of the devil. Job 41:24: \"There is no power upon earth that can be compared with him.\" Hence, \"by what authority dost thou these things?\" God's, or the devil's? But Origen objects that if he were acting by the power of the devil, he would not say so. Therefore he explains it differently, saying that the power of God is manifold: one in general, many in particular, as one for this purpose and another for that. Hence they ask \"by what authority,\" i.e., in what degree of power, as about the prophets. For some had one power, others another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.21.23"
+    },
+    {
+      "id": "catena-matt-3025-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.21.23",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 21:23–27",
-      "excerpt": "The Priests were tormented with jealousy, because they had seen Christ entering the Temple in great glory. And not being able to master the fire of jealousy which burnt in their breasts, they break forth in speech.",
+      "excerpt": "Not that they should answer it, and thereupon hear of Christ the answer to their question, but that being puzzled they should ask Him no farther; according to that precept He had given above, “Give not that which is holy to the dogs.” Matt 7:6 For even if He had told them, it would have profited nothing, because the darkened will cannot perceive the things that are of the light. For him that enquires we ought to instruct, but him that tempts, to overthrow by a stroke of reasoning, but not to publish to him the power of the mystery. The Lord thus sets before them in His question a dilemma; and…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -145,17 +272,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.21.23:1389c63f:0"
       ]
     },
     {
-      "id": "catena-matt-3025-v23",
+      "id": "catena-matt-3021-v23",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.21.23",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 21:23–27",
-      "excerpt": "Not that they should answer it, and thereupon hear of Christ the answer to their question, but that being puzzled they should ask Him no farther; according to that precept He had given above, “Give not that which is holy to the dogs.” Matt 7:6 For even if He had told them, it would have profited nothing, because the darkened will cannot perceive the things that are of the light. For him that enquires we ought to instruct, but him that tempts, to overthrow by a stroke of reasoning, but not to publish to him the power of the mystery. The Lord thus sets before them in His question a dilemma; and…",
+      "excerpt": "The Priests were tormented with jealousy, because they had seen Christ entering the Temple in great glory. And not being able to master the fire of jealousy which burnt in their breasts, they break forth in speech.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

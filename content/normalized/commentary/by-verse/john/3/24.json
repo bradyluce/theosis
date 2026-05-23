@@ -23,32 +23,14 @@
       ]
     },
     {
-      "id": "catena-john-0352-v24",
+      "id": "catena-john-0364-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.24",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "Nothing is more open than truth, nothing bolder; it neither seeks concealment, or avoids danger, or fears the snare, or cares for popularity. It is subject to no human weakness. Our Lord went up to Jerusalem at the feasts, not from ostentation or love of honour, but to teach the people His doctrines, and shew miracles of mercy. After the festival He visited the crowds who were collected at the Jordan. After these things came Jesus and His disciples into the land of Judæa; and there he tarried with them, and baptized.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0355-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.24",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "As the Evangelist says afterwards, that Jesus baptized not but His disciples, it is evident that he means the same here, i. e. that the disciples only baptized.",
+      "excerpt": "The Jews then asserted Christ to be the greater person, and His baptism necessary to be received. But John’s disciples did not understand so much, and defended John’s baptism. At last they come to John, to solve the question: And they came unto John, and said unto him, Rabbi, He that was with thee beyond Jordan, behold, the Same baptizeth.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -67,42 +49,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
       "excerpt": "Our Lord did not baptize with the baptism wherewith He had been baptized; for He was baptized by a servant, as a lesson of humility to us, and in order to bring us to the Lord’s baptism, i. e. His own; for Jesus baptized, as the Lord, the Son of God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0358-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.24",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "It matters not whether it is called Salem, or Salim; since the Jews very rarely use vowels in the middle of words; and the same words are pronounced with different vowels and accents, by different readers, and in different places. And they came, and were baptized.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0360-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.24",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "Notwithstanding the disciples of Jesus baptized, John did not leave off till his imprisonment; as the Evangelist’s language intimates, For John was not yet cast into prison.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -146,24 +92,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-0364-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.24",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "The Jews then asserted Christ to be the greater person, and His baptism necessary to be received. But John’s disciples did not understand so much, and defended John’s baptism. At last they come to John, to solve the question: And they came unto John, and said unto him, Rabbi, He that was with thee beyond Jordan, behold, the Same baptizeth.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.3.24:7757122d:0"
       ]
     },
     {
@@ -185,14 +120,86 @@
       ]
     },
     {
-      "id": "catena-john-0353-v24",
+      "id": "catena-john-0352-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "Nothing is more open than truth, nothing bolder; it neither seeks concealment, or avoids danger, or fears the snare, or cares for popularity. It is subject to no human weakness. Our Lord went up to Jerusalem at the feasts, not from ostentation or love of honour, but to teach the people His doctrines, and shew miracles of mercy. After the festival He visited the crowds who were collected at the Jordan. After these things came Jesus and His disciples into the land of Judæa; and there he tarried with them, and baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0360-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "Notwithstanding the disciples of Jesus baptized, John did not leave off till his imprisonment; as the Evangelist’s language intimates, For John was not yet cast into prison.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0355-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "As the Evangelist says afterwards, that Jesus baptized not but His disciples, it is evident that he means the same here, i. e. that the disciples only baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0358-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.24",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "It matters not whether it is called Salem, or Salim; since the Jews very rarely use vowels in the middle of words; and the same words are pronounced with different vowels and accents, by different readers, and in different places. And they came, and were baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0359-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.24",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "After these things, is not immediately after His dispute with Nicodemus, which took place at Jerusalem; but on His return to Jerusalem after some time spent in Galilee.",
+      "excerpt": "The same kind of benefit which catechumens receive from instruction before they are baptized, the same did John’s baptism convey before Christ’s. As John preached repentance, announced Christ’s baptism, and drew all men to the knowledge of the truth now made manifest to the world: so the ministers of the Church first instruct those who come to the faith, then reprove their sins; and lastly, drawing them to the knowledge and love of the truth, offer them remission by Christ’s baptism.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -221,14 +228,14 @@
       ]
     },
     {
-      "id": "catena-john-0359-v24",
+      "id": "catena-john-0353-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.24",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "The same kind of benefit which catechumens receive from instruction before they are baptized, the same did John’s baptism convey before Christ’s. As John preached repentance, announced Christ’s baptism, and drew all men to the knowledge of the truth now made manifest to the world: so the ministers of the Church first instruct those who come to the faith, then reprove their sins; and lastly, drawing them to the knowledge and love of the truth, offer them remission by Christ’s baptism.",
+      "excerpt": "After these things, is not immediately after His dispute with Nicodemus, which took place at Jerusalem; but on His return to Jerusalem after some time spent in Galilee.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -254,6 +261,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.3.24:90428d14:0"
       ]
     },
     {
@@ -291,6 +305,91 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.24:36bad43f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-29",
+      "title": "Homily on the Gospel of John 29 on john 3:24",
+      "excerpt": "\"And why, when the disciples of Jesus were baptizing, did not John cease to do so? why did he continue to baptize, and that even until he was led to prison? for to say, 'John also was baptizing in Aenon'; and to add, 'John was not yet cast into prison,' was to declare that until that time he did not cease to baptize. But wherefore did he baptize until then? For he would have made the disciples of Jesus seem more reverend had he desisted when they began. Why then did he baptize?\" It was that he might not excite his disciples to even stronger rivalry, and make them more contentious still. For if, although he ten thousand times proclaimed Christ, yielded to Him the chief place, and made himself so much inferior, he still could not persuade them to run to Him; he would, had he added this also, have made them yet more hostile. On this account it was that Christ began to preach more constantly when John was removed. And moreover, I think that the death of John was allowed, and that it happened very quickly, in order that the whole attention of the multitude might be shifted to Christ, and that they might no longer be divided in their opinions concerning the two.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.24"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.24:24d52203:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-29",
+      "title": "Homily on the Gospel of John 29 on john 3:24",
+      "excerpt": "Besides, even while he was baptizing, he did not cease continually to exhort them, and to show them the high and awful nature of Jesus. For He baptized them, and told them no other thing than that they must believe on Him that came after him. Now how would a man who acted thus by desisting have made the disciples of Christ seem worthy of reverence? On the contrary, he would have been thought to do so through envy and passion. But to continue preaching gave a stronger proof; for he desired not glory for himself, but sent on his hearers to Christ, and wrought with Him not less, but rather much more than Christ's own disciples, because his testimony was unsuspected and he was by all men far more highly esteemed than they. And this the Evangelist implies, when he says, \"all Judaea and the country around about Jordan went out to him and were baptized.\" Even when the disciples were baptizing, yet many did not cease to run to him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.24"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:john.3.24:47072463:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-3-24-8-12",
+      "title": "ECCLESIASTICAL HISTORY 3.24.8-12 on john 3:24",
+      "excerpt": "For it is evident that the three Evangelists recorded only the deeds done by the Savior for one year after the imprisonment of John the Baptist and indicated this in the beginning of their account.… They say, therefore, that the apostle John, being asked to do it for this reason, gave in his Gospel an account of the period that had been omitted by the earlier Evangelists and of the deeds done by the Savior during that period; that is, of those that were done before the imprisonment of the Baptist. And this is indicated by him, they say, in the following words: \"This was the beginning of the miracles that Jesus did\"; and again when he refers to the Baptist, in the midst of the deeds of Jesus, as still baptizing in Aenon near Salim.… \"For John was not yet cast into prison.\" John accordingly, in his Gospel, records the deeds of Christ that were performed before the Baptist was cast into prison, but the other three Evangelists mention the events that happened after that time.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-3-24-8-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:john.3.24"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.3.24:31475be6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 3:24",
+      "excerpt": "Therefore Christ especially began to preach at the time when John was imprisoned, on account of the jealousy of the Baptist's disciples. I think that John's death was also permitted to happen very soon so that all the devotion of the people would transfer to Christ, and the people would not be divided in their thoughts about both John and Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.3.24"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.24:9cff88dd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:24",
+      "excerpt": "The time is indicated when he says, John had not yet been thrown into prison. He says this so that we may know that he began his narrative of Christ's life before the other Evangelists. For the others began their account only from the time of John's imprisonment. So Matthew (4:12) says: \"When Jesus heard that John had been arrested, he withdrew into Galilee.\" And so, because they had passed over the things that Christ did before John's imprisonment, John, who was the last to write a Gospel, supplied these omissions. He suggests this when he says: John had not yet been thrown into prison.\r\n\r\nNote that by divine arrangement it came about that when Christ began to baptize, John did not continue his own baptizing and preaching for very long, in order not to create disunion among the people. But he was granted a little time so that it would not seem that he deserved to be repudiated, as was mentioned before. Again, by God's arrangement, it came about that after the faith had been preached and the faithful converted, the temple was utterly destroyed, in order that all the devotion and hope of the faithful could be directed to Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.24"
     }
   ]
 }

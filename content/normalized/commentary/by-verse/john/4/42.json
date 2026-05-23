@@ -42,14 +42,14 @@
       ]
     },
     {
-      "id": "catena-john-0524-v42",
+      "id": "catena-john-0529-v42",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.42",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 4:39–42",
-      "excerpt": "It is now, as it were, harvest time, when the corn is gathered, and a whole floor soon covered with sheaves; And many of the Samaritans of that city believed on Him, for the saying of the woman which testified, He told me all that ever I did. They considered that, the woman would never of her own accord have conceived such admiration for one Who had reproved her offences, unless He were really some great and wonderful person. (Hom. xxxv. 1). And thus relying solely on the testimony of the woman, without any other evidence, they went out to beseech Christ to stay with them: So when the…",
+      "excerpt": "So then they knew Christ first by report of another, afterwards by His own presence; which is still the case of those that are without the fold, and not yet Christians. Christ is announced to them by some charitable Christians, by the report of the woman, i. e. the Church; they come to Christ, they believe on Him, through the instrumentality of that woman; He stays withthem two days, i. e. gives them two precepts of charity. And thenceforth their belief is stronger. They believe that He is indeed the Saviour of the world.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -57,6 +57,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.4.42:735754f2:0"
       ]
     },
     {
@@ -78,35 +85,17 @@
       ]
     },
     {
-      "id": "catena-john-0529-v42",
+      "id": "catena-john-0524-v42",
       "relation": "verse",
       "targetVerseId": "kjva:john.4.42",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 4:39–42",
-      "excerpt": "So then they knew Christ first by report of another, afterwards by His own presence; which is still the case of those that are without the fold, and not yet Christians. Christ is announced to them by some charitable Christians, by the report of the woman, i. e. the Church; they come to Christ, they believe on Him, through the instrumentality of that woman; He stays withthem two days, i. e. gives them two precepts of charity. And thenceforth their belief is stronger. They believe that He is indeed the Saviour of the world.",
+      "excerpt": "It is now, as it were, harvest time, when the corn is gathered, and a whole floor soon covered with sheaves; And many of the Samaritans of that city believed on Him, for the saying of the woman which testified, He told me all that ever I did. They considered that, the woman would never of her own accord have conceived such admiration for one Who had reproved her offences, unless He were really some great and wonderful person. (Hom. xxxv. 1). And thus relying solely on the testimony of the woman, without any other evidence, they went out to beseech Christ to stay with them: So when the…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0523-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.4.42",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-john",
-      "title": "On John 4:39–42",
-      "excerpt": "After this conversation with the disciples, Scripture returns to those who had believed on the testimony of the woman, and were come to see Jesus.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -184,6 +173,126 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "catena-john-0523-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.4.42",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 4:39–42",
+      "excerpt": "After this conversation with the disciples, Scripture returns to those who had believed on the testimony of the woman, and were come to see Jesus.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "hcf:augustine:john.4.42:d1bf449e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-15",
+      "title": "Tractates on John 15 on john 4:42",
+      "excerpt": "\"And many Samaritans of that city believed on Him, because of the saying of the woman, who testified, He told me all that ever I did. And when the Samaritans came to Him, they besought Him that He would tarry with them; and He tarried there two days. And many more believed because of His word; and said to the woman, Now we believe, not because of thy words; for we have heard Him ourselves, and we know that this is indeed the Saviour of the world.\" This also must be slightly noticed, for the lesson is come to an end. The woman first announced Him, and the Samaritans believed her testimony; and they besought Him to stay with them, and He stayed there two days, and many more believed. And when they had believed, they said to the woman, \"Now we believe, not because of thy word; but we are come to know Him ourselves, and we know that this is indeed the Saviour of the world:\" first by report, then by His presence. So it is to-day with them that are without, and are not yet Christians. Christ is made known to them by Christian friends; and just upon the report of that woman, that is, the Church, they come to Christ, they believe through this report. He stays with them two days, that is, gives them two precepts of charity; and many more believe, and more firmly believe, on Him, because He is in truth the Saviour of the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.4.42"
+    },
+    {
+      "id": "hcf:origen:john.4.42:0b52adc2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-13-353-362-63",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 13.353, 362-63 on john 4:42",
+      "excerpt": "The Samaritans renounce their faith that was based on the speech of the woman when they discover that hearing the Savior himself is better than that faith, so that they, too, know \"that this is truly the Savior of the world.\" It is better indeed to become an eyewitness of the Word and to hear him [directly].… And so, there is nothing astonishing in the fact that some are said to walk by faith and not by sight, while others are said to walk by sight, which is greater than walking by faith.… Heracleon says, \"People believe in the Savior first by being led by people. But whenever they read his words, they no longer believe because of human testimony alone, but because of the truth itself.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.4.42"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.4.42:97ff5524:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-35",
+      "title": "Homily on the Gospel of John 35 on john 4:42",
+      "excerpt": "Yet there was no likelihood that these would have believed, since they had seen no sign, and had hostile feelings towards the Jews; but still, inasmuch as they gave in sincerity their judgment on His words, this stood not in their way, but they received a notion which surmounted their hindrances, and vied with each other to reverence Him the more. For, saith the Evangelist, \"they said to the woman, Now we believe, not because of thy saying: for we have heard Him ourselves, and know that this is indeed the Christ, the Saviour of the world.\" The scholars overshot their instructress. With good reason might they condemn the Jews, both by their believing on, and their receiving Him. The Jews, for whose sake He had contrived the whole scheme, continually were for stoning Him, but these, when He was not even intending to come to them, drew Him to themselves. And they, even with signs, remain uncorrected; these, without signs, manifested great faith respecting Him, and glory in this very thing that they believe without them; while the others ceased not asking for signs and tempting Him.\r\n\r\nSuch need is there everywhere of an honest soul; and if truth lay hold on such an one, she easily masters it; or if she masters it not, this is owing not to any weakness of truth, but to want of candor in the soul itself. Since the sun too, when he encounters clear eyes, easily enlightens them; if he enlightens them not, it is the fault of their infirmity, not of his weakness.\r\n\r\nHear then what these say; \"We know that this is of a truth the Christ, the Saviour of the world.\" Seest thou how they at once understood that He should draw the world to Him, that He came to order aright our common salvation, that He intended not to confine His care to the Jews, but to sow His Word everywhere? The Jews did not so, but going about to establish their own righteousness, submitted not themselves to the righteousness of God; while these confess that all are deserving of punishment, declaring with the Apostle, that \"all have sinned, and come short of the glory of God; being justified freely by His grace.\" (Rom. iii. 23, Rom. iii. 24.) For by saying that He was \"the Saviour of the world,\" they showed that it was of a lost world, and He not simply a Saviour, but one of the very mightiest. For many had come to \"save,\" both Prophets and Angels; but this, saith one, is the True Saviour, who affordeth the true salvation, not that which is but for a time. This proceeded from pure faith. And in both ways are they admirable; because they believed, and because they did so without signs, (whom Christ also calleth \"blessed,\" saying, \"Blessed are they that have not seen, and yet have believed,\") (c. xx. 29,) and because they did so sincerely. Though they had heard the woman say doubtfully, \"Is not this the Christ?\" they did not also say, \"we too suspect,\" or, \"we think,\" but, \"we know,\" and not merely, \"we know,\" but, \"we know that this is of a truth the Saviour of the world.\" They acknowledged Christ not as one of the many, but as the \"Saviour\" indeed. Yet whom had they seen saved? They had but heard His words, and yet they spake as they would have spoken had they beheld many and great marvels. And why do not the Evangelists tell us these words, and that He discoursed admirably? That thou mayest learn that they pass by many important matters, and yet have declared the whole to us by the event. For He persuaded an entire people and a whole city by His words.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.4.42"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.4.42:148b50de:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 4:42",
+      "excerpt": "From the greater things does the faith of the Samaritans spring, and not any longer from what they learn from others, but from those whereof they are the wondering ear-witnesses. For they say that they know that He is indeed the Saviour of the world, making the confession of their hope in Him the pledge of their faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.4.42"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.4.42:79ff7d47:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 4:42",
+      "excerpt": "Look, indeed, in a short time the people surpassed their teacher. For they call Him not a prophet, not the Savior of Israel, but the Savior of the world, and even with the article: He is that Savior, who properly and truly saved all. Many came to save: both the law, and the prophets, and the angels, but the true Savior is He.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.4.42"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.4.42:eda1c0e4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 4:42",
+      "excerpt": "Secondly, this fruit was increased because of the way in which they believed: for they say to the woman: Now we believe not just because of your story.\r\n\r\nHere we should note that three things are necessary for the perfection of faith; and they are given here in order. First, faith should be right; secondly, it should be prompt; and thirdly, it should be certain.\r\n\r\nNow faith is right when it obeys the truth not for some alien reason, but for the truth itself; and as to this he says that they said to the woman, Now we believe, the truth, not just because of your story, but because of the truth itself. Three things lead us to believe in Christ. First of all, natural reason: \"Since the creation of the world the invisible things of God are clearly known by the things that have been made\" (Rom 1:20). Secondly, the testimony of the law and the prophets: \"But now justification from God has been manifested outside the law; the law and the prophets bore witness to it\" (Rom 3:21). Thirdly, the preaching of the apostles and others: \"How will they believe without someone to preach to them?\" as Romans (10:14) says. Yet when a person, having been thus instructed, believes, he can then say that it is not for any of these reasons that he believes: i.e., neither on account of natural reason, nor the testimony of the law, nor the preaching of others, but solely on account of the truth itself: \"Abram believed God, who regarded this as his justification\" (Gn 15:6).\r\n\r\nFaith is prompt if it believes quickly; and this was verified in these Samaritans because they were converted to God by merely hearing him; so they say: we have heard him ourselves, and believe in him, and we know that here is truly the Savior of the world, without seeing miracles, as the Jews saw. And although to believe men quickly is an indication of thoughtlessness, according to Sirach (19:4): \"He who believes easily is frivolous,\" yet to believe God quickly is more praiseworthy: \"When they heard me, they obeyed me\" (Ps 17:45).\r\n\r\nFaith should be certain, because one who doubts in the faith is an unbeliever: \"Ask with faith, without any doubting\" (Jas 1:6). And so their faith was certain; thus they say, and we know. Sometimes, one who believes is said to know, as here, because knowledge and faith agree in that both are certain. For just as knowledge is certain, so is faith; indeed, the latter is much more so, because the certainty of knowledge rests on human reason, which can be deceived, while the certainty of faith rests on divine reason, which cannot be contradicted. However they differ in mode: because faith possesses its certainty due to a divinely infused light, while knowledge possesses its certainty due to a natural light. For as the certitude of knowledge rests on first principles naturally known, so the principles of faith are known from a light divinely infused: \"You are saved by grace, through faith; and this is not due to yourselves, for it is the gift of God\" (Eph 2:8).\r\n\r\nThirdly, the fruit was increased in the truth believed; so they say, here is truly the Savior of the world. Here they are affirming that Christ is the unique, true and universal Savior.\r\n\r\nHe is the unique Savior for they assert that he is different from others when they say, here is, i.e., here he alone is who has come to save: \"Truly, you are a hidden God, the God of Israel, the Savior\" (Is 45:15); \"There is no other name under heaven given to men, by which we are saved\" (Acts 4:12).\r\n\r\nThey affirm that Christ is the true Savior when they say, truly. For since salvation, as Dionysius says, is deliverance from evil and preservation in good, there are two kinds of salvation: one is true, and the other is not true. Salvation is true when we are freed from true evils and preserved in true goods. In the Old Testament, however, although certain saviors had been sent, they did not truly bring salvation, for they set men free from temporal evils, which are not truly evils, nor true goods, because they do not last. But Christ is truly the Savior, because he frees men from true evils, that is, sins: \"He will save his people from their sins\" (Mt 1:21), and he preserves them in true goods, that is, spiritual goods.\r\n\r\nThey affirm that he is the universal Savior because he is not just for some, i.e., for the Jews alone, but is the Savior of the world. \"God did not send his Son into the world to judge the world, but that the world might be saved through him\" (above 3:17).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.4.42"
     }
   ]
 }

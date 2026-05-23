@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.3.19:89fe8c25:1"
       ]
     },
     {
@@ -37,6 +44,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.3.19:b5c8b400:1"
+      ]
+    },
+    {
+      "id": "catena-luke-0522-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.3.19",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 3:18–20",
+      "excerpt": "And as in the Gospel according to St. John it is related of Christ that He spoke many other things, so also in this place we must understand Luke to say the same of John the Baptist, since certain things are announced by John too great to be entrusted to writing. But we marvel at John, because among them that are born of women there was not a greater than he, for by his good deeds he had been exalted to so high a fame for virtue, that by many he was supposed to be Christ. But what is much more marvellous he feared not Herod, nor dreaded death, as it follows, But Herod the tetrarch being…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.3.19:2565da4f:0"
       ]
     },
     {
@@ -76,22 +115,55 @@
       ]
     },
     {
-      "id": "catena-luke-0522-v19",
+      "id": "hcf:theophylact-of-ohrid:luke.3.19:2f8bb2bc:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.3.19",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 3:18–20",
-      "excerpt": "And as in the Gospel according to St. John it is related of Christ that He spoke many other things, so also in this place we must understand Luke to say the same of John the Baptist, since certain things are announced by John too great to be entrusted to writing. But we marvel at John, because among them that are born of women there was not a greater than he, for by his good deeds he had been exalted to so high a fame for virtue, that by many he was supposed to be Christ. But what is much more marvellous he feared not Herod, nor dreaded death, as it follows, But Herod the tetrarch being…",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 3:19",
+      "excerpt": "The Evangelist aptly inserted here the account concerning Herod. He speaks as if to say: although the people thought very highly of John, Herod, \"being reproved by him,\" to all his evil deeds \"added this also, that he shut him up in prison.\" He narrates as if with deep sorrow and strong compassion that Herod dealt so unjustly with John, while the people held him in high regard.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.3.19"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:luke.3.19:63d79b9b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-3-24",
+      "title": "ECCLESIASTICAL HISTORY 3.24 on luke 3:19",
+      "excerpt": "Luke too, before beginning the acts of Jesus, makes a similar observation, saying that Herod added one more offense to his other crimes by shutting up John in jail.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-3-24",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:luke.3.19"
+    },
+    {
+      "id": "hcf:bede:luke.3.19:e8d6c806:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 3:19",
+      "excerpt": "However, Herod the tetrarch, being reproved by him concerning Herodias, the wife of his brother, and concerning all the evil deeds which Herod had done, added this above all, and shut John up in prison. These matters are more fully recounted by Matthew and Mark, who narrate that John, by the schemes of Herodias, was not only bound but also beheaded. This is to be understood as not having occurred at that time but, according to John's Gospel, after some signs had been performed by the Lord and his baptism having already become widely known, yet mentioned here by this Evangelist to emphasize Herod's wickedness. For while the unlearned populace thronged to John's preaching, the soldiers believed, the publicans repented, and the whole populace received baptism in general, on the contrary, he not only despised him but did not hesitate to kill him. Through the deeper understanding of the mystery, because John the Evangelist undertook to write about the divinity of Christ, while the other three about his ministry in humanity, John the Baptist, indeed holding the type of the old law (which is the precursor of grace), beautifully attesting that while John the Evangelist was still preaching and baptizing as the precursor of the Lord, the Lord himself made and baptized more disciples. Mystically teaching him to have been the eternal God throughout the ages and the teacher of the faithful peoples through the law before he was born in the flesh. Beautifully also do the other Evangelists begin the Lord's preaching after John was handed over to prison, whose role it was, after the law corrupted by the Jews and defiled as if by the darkness of prison's ignorance and the savage tradition, to reveal the heavenly doctrine of the Lord appearing in the flesh and acting through the flesh, as if coming into Galilee.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.3.19"
     },
     {
       "id": "catena-luke-0525-v19",

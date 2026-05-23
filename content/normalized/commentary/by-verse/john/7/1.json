@@ -20,6 +20,31 @@
         "patristic",
         "homily",
         "john"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.7.1:2cf2dd37:0"
+      ]
+    },
+    {
+      "id": "catena-john-0916-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "They gave Him advice to pursue glory, and not allow Himself to remain in concealment and obscurity; appealing altogether to worldly and secular motives. But our Lord was laying down another road to that very exaltation, viz. humility: My time, He says, i. e. the time of My glory, when I shall come to judge on high, is not yet come; but your time, i. e. the glory of the world, is always ready. And let us, who are the Lord’s body, when insulted by the lovers of this world, say, Your time is ready: ours is not yet come. Our country is a lofty one, the way to it is low. Whoso rejecteth the way,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
       ]
     },
     {
@@ -39,53 +64,24 @@
         "patristic",
         "tractate",
         "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.7.1:3fe47576:0"
       ]
     },
     {
-      "id": "catena-john-0903-v1",
+      "id": "catena-john-0913-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.1",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 7:1–8",
-      "excerpt": "As the believer in Christ would have in time to come to hide himself from persecution, that no guilt might attach to such concealment, the Head began with doing Himself, what He sanctioned in the member; After these things Jesus walked in Galilee: for he would not walk in Jewry, because the Jews sought to kill Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0905-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "It is not meant that our Lord could not walk among the Jews, and escape being killed; for He had this power, whenever He chose to shew it: but He set the example of so doing, as an accommodation to our weakness. He had not lost His power, but He indulged our frailty.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0906-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "That is to say, He displayed the attribute both of divinity and humanity. He fled from His persecutors as man, He remained and appeared amongst them as God; being really both.",
+      "excerpt": "When you hear of our Lord’s brethren, you must understand the kindred of Mary, not her offspring after our Lord’s birth. For as the body of our Lord once only lay in the sepulchre, and neither before, nor after that once; so could not the womb of Mary have possibly conceived any other mortal offspring. Our Lord’s works did not escape His disciples, but they escaped His brethren; hence their suggestion, That Thy disciples may see the works that Thou doest. They speak according to the wisdom of the flesh, to the Word that was made flesh, and add, For there is no man that doeth any thing in…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -114,32 +110,14 @@
       ]
     },
     {
-      "id": "catena-john-0909-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "It appears here, that a considerable time had passed since the last events. For when our Lord sat upon the mount, it was near the feast of the Passover, and now it is the feast of tabernacles: so that in the five intermediate months the Evangelist has related nothing but the miracle of the loaves, and the conversation with those who ate of them. As our Lord was unceasingly working miracles, and holding disputes with people, the Evangelists could not relate all; but only aimed at giving those, in which complaint or opposition had followed on the part of the Jews, as was the case here.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0913-v1",
+      "id": "catena-john-0903-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.1",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 7:1–8",
-      "excerpt": "When you hear of our Lord’s brethren, you must understand the kindred of Mary, not her offspring after our Lord’s birth. For as the body of our Lord once only lay in the sepulchre, and neither before, nor after that once; so could not the womb of Mary have possibly conceived any other mortal offspring. Our Lord’s works did not escape His disciples, but they escaped His brethren; hence their suggestion, That Thy disciples may see the works that Thou doest. They speak according to the wisdom of the flesh, to the Word that was made flesh, and add, For there is no man that doeth any thing in…",
+      "excerpt": "As the believer in Christ would have in time to come to hide himself from persecution, that no guilt might attach to such concealment, the Head began with doing Himself, what He sanctioned in the member; After these things Jesus walked in Galilee: for he would not walk in Jewry, because the Jews sought to kill Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -147,107 +125,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.7.1:1d716651:1"
       ]
     },
     {
-      "id": "catena-john-0914-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "It is striking to observe the great sincerity of the Evangelists; that they are not ashamed to mention things which appear to be to our Lord’s disadvantage, but take particular care to tell us of them. It is a considerable reflexion on our Lord, that His brethren do not believe on Him. The beginning of their speech has a friendly appearance about it: but there is much bitterness in it, thus charging Him with the motives of fear and vain glory; No man, say they, doeth any thing in secret: this was reproaching Him tacitly with fear; and was an insinuation too that His miracles had not been real…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0916-v1",
+      "id": "catena-john-0905-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.1",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 7:1–8",
-      "excerpt": "They gave Him advice to pursue glory, and not allow Himself to remain in concealment and obscurity; appealing altogether to worldly and secular motives. But our Lord was laying down another road to that very exaltation, viz. humility: My time, He says, i. e. the time of My glory, when I shall come to judge on high, is not yet come; but your time, i. e. the glory of the world, is always ready. And let us, who are the Lord’s body, when insulted by the lovers of this world, say, Your time is ready: ours is not yet come. Our country is a lofty one, the way to it is low. Whoso rejecteth the way,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0917-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "Or there seems to be another meaning concealed in the words; perhaps they intended to betray Him to the Jews; and therefore He says, My time is not yet come, i. e. the time of My cross and death: but your time is always ready; for though you are always with the Jews, they will not kill you, because you are of the same mind with them: The world cannot hate you; but Me it hateth, because I testify of it, that the works thereof are evil: as if He said, How can the world hate them who have the same wishes and aims with itself? It hateth Me, because I reprove it. I seek not then glory from men;…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0919-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "This is to shew too, that, while He does not wish to humour them, He still allows them to observe the Jewish ordinances.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0920-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "Or He seems to say, Go ye up to this feast, and seek for human glory, and enlarge your carnal pleasures, and forget heavenly things.I go not up unto this feast;",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0921-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "i. e. not with you, for My time is not yet full come. It was at the next passover that He was to be crucified.",
+      "excerpt": "It is not meant that our Lord could not walk among the Jews, and escape being killed; for He had this power, whenever He chose to shew it: but He set the example of so doing, as an accommodation to our weakness. He had not lost His power, but He indulged our frailty.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -276,6 +171,132 @@
       ]
     },
     {
+      "id": "catena-john-0920-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "Or He seems to say, Go ye up to this feast, and seek for human glory, and enlarge your carnal pleasures, and forget heavenly things.I go not up unto this feast;",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0914-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "It is striking to observe the great sincerity of the Evangelists; that they are not ashamed to mention things which appear to be to our Lord’s disadvantage, but take particular care to tell us of them. It is a considerable reflexion on our Lord, that His brethren do not believe on Him. The beginning of their speech has a friendly appearance about it: but there is much bitterness in it, thus charging Him with the motives of fear and vain glory; No man, say they, doeth any thing in secret: this was reproaching Him tacitly with fear; and was an insinuation too that His miracles had not been real…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0917-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "Or there seems to be another meaning concealed in the words; perhaps they intended to betray Him to the Jews; and therefore He says, My time is not yet come, i. e. the time of My cross and death: but your time is always ready; for though you are always with the Jews, they will not kill you, because you are of the same mind with them: The world cannot hate you; but Me it hateth, because I testify of it, that the works thereof are evil: as if He said, How can the world hate them who have the same wishes and aims with itself? It hateth Me, because I reprove it. I seek not then glory from men;…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0909-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "It appears here, that a considerable time had passed since the last events. For when our Lord sat upon the mount, it was near the feast of the Passover, and now it is the feast of tabernacles: so that in the five intermediate months the Evangelist has related nothing but the miracle of the loaves, and the conversation with those who ate of them. As our Lord was unceasingly working miracles, and holding disputes with people, the Evangelists could not relate all; but only aimed at giving those, in which complaint or opposition had followed on the part of the Jews, as was the case here.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0906-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "That is to say, He displayed the attribute both of divinity and humanity. He fled from His persecutors as man, He remained and appeared amongst them as God; being really both.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0919-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "This is to shew too, that, while He does not wish to humour them, He still allows them to observe the Jewish ordinances.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0921-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "i. e. not with you, for My time is not yet full come. It was at the next passover that He was to be crucified.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0904-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.1",
@@ -291,6 +312,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.7.1:9d16d5ad:0"
       ]
     },
     {
@@ -330,6 +358,24 @@
       ]
     },
     {
+      "id": "catena-john-0918-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:1–8",
+      "excerpt": "Our Lord brings two arguments in answer to their two charges. To the charge of fear He answers, that He reproves the deeds of the world, i. e. of those who love worldly things; which He would not do, if He were under the influence of fear; and He replies to the charge of vain glory, by sending them to the feast, Go ye up unto this feast. Had He been possessed at all with the desire for glory, He would have kept them with Him: for the vain glorious like to have many followers.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0907-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.1",
@@ -345,6 +391,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.7.1:e4a8246e:0"
       ]
     },
     {
@@ -384,22 +437,95 @@
       ]
     },
     {
-      "id": "catena-john-0918-v1",
+      "id": "hcf:john-chrysostom:john.7.1:bbc9451a:2",
       "relation": "verse",
-      "targetVerseId": "kjva:john.7.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-48",
+      "title": "Homily on the Gospel of John 48 on john 7:1",
+      "excerpt": "The Evangelist spake not so that he might be supposed to utter riddles, but to make it plain that He showeth proofs both of His Godhead and His Manhood. For when he saith, that \"He had not power,\" he speaketh of Him as a man, doing many things after the manner of men; but when he saith, that He stood in the midst of them, and they seized Him not, he showeth to us the power of the Godhead, (as man He fled, as God He appeared,) and in both cases he speaks truly. To be in the midst of those who were plotting against Him, and yet not be seized by them, showed His unrivaled and irresistible nature; to yield strengthened and authenticated the Dispensation, that neither Paul of Samosata, nor Marcion, nor those affected with their maladies, might have anything to say.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.7.1"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.7.1:21281914:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-48",
+      "title": "Homily on the Gospel of John 48 on john 7:1",
+      "excerpt": "What sayest thou, O blessed John? Had not He \"power,\" who was able to do all that He would? He that said, \"Whom seek ye?\" and cast them backward? He who was present, yet not seen, had not He \"power\"? How then afterwards did He come among them in the midst of the temple, in the midst of the feast, when there was an assembly, when they that longed for murder were present, and utter those sayings which enraged them yet the more? Yea, this at least men marveled at, saying, \"Is not this He, whom they seek to kill? And, lo, He speaketh boldly, and they say nothing unto Him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.7.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.7.1:adaa2f2e:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:1–8",
-      "excerpt": "Our Lord brings two arguments in answer to their two charges. To the charge of fear He answers, that He reproves the deeds of the world, i. e. of those who love worldly things; which He would not do, if He were under the influence of fear; and He replies to the charge of vain glory, by sending them to the feast, Go ye up unto this feast. Had He been possessed at all with the desire for glory, He would have kept them with Him: for the vain glorious like to have many followers.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 7:1",
+      "excerpt": "Jesus withdraws from the murderous Jews not because He fears death, for He could have walked in their very midst and suffered nothing, but because if He had always acted thus, they would not have believed that He was a Man, but would have regarded Him as a phantom. Therefore He now withdraws and in this way confirms and attests that He is a Man, and strikes down all those who say that He was incarnate only in appearance, such as Manes, Marcion, Basilides, and the like. In other cases, when He is among the murderers who plot against Him and remains unharmed, He shows that He is God, and puts to shame Paul of Samosata, and assures all that He was not merely a Man, but also God.\r\nNow He departs for Galilee. Since the time to suffer had not yet come, it was pointless and unnecessary for Him to move about among His enemies and thereby give occasion to intensify their malice.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.7.1"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.7.1:1f77119f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-4",
+      "title": "Commentary on the Gospel of John, Book 4 on john 7:1",
+      "excerpt": "CHAPTER V. On the feast of Tabernacles, that it signifies the restitution of the hope due to the Saints, and the resurrection from the dead; on the words, Now the feast of the Jews, that of Tabernacles was at hand.\r\n\r\nAfter these both words and deeds (he says) Christ again more gladly made His sojournings in Galilee: for this, I suppose, is the meaning of used to walk, yet he shows that His being with them was not of His Own choice, but rather happened of necessity, adding the reason. For the Jews (he says) wished to kill Him. Wherefore He gave Himself over for a long time to the aliens, refusing to walk in Jewry. But I suppose again that in these words no less is Israel found fault with for its extreme perverseness, if indeed the being found among the Gentiles was shown to be far better than living with it. And this it was that was uttered by the prophet Jeremiah, I have forsaken Mine House, I have left Mine heritage; I gave My loved Soul into the hand of her enemies. For Christ's being made an outcast because of the impiety of them that persecute Him, and going away among the Galileans, how is it not plainly the giving up of His Own Soul into the hands of her enemies? For the Gentiles are Christ's enemies, in that they do service to another and worship the creature instead of the Creator, because they had not yet received the faith in Him. And this Himself will teach us clearly, saying, He that is not with Me is against Me. But I suppose every one will say that the |459 Gentiles were not with Christ, previous to their true knowledge of God and faith; they were therefore against Him, and hence in the rank of His enemies. This being so and clearly acknowledged, so great abomination was practised among them of Israel, that He was in better case, living among His enemies, and making His abode with them with whom He least ought was pleasanter, than what was meeter far and more congenial, to be among them who are His kinsmen after the flesh and, on this ground, bound to love Him. With greatest reason then did Christ depart unto the Gentiles, and by the very act of doing so did He in a manner say, that if they did not desist from persecuting Him, and from destroying with their mad folly their Benefactor, Christ would wholly give Himself to those without, and remove unto the Gentiles. As then we said that He hinted this by this act, so again we shall find that by a figure of old did He threaten His departure from Jerusalem.\r\n\r\nWhen then He was ordering the laws about sacrifices, as is written also in Leviticus, having fore-appointed, as for an image of Christ, that a bullock should be brought as a gift and a whole burnt-offering to the Lord, he again outlines Him in another way, saying, If his gift to the Lord be of the sheep, of the lambs and of the kids, for a whole burnt sacrifice, he shall bring a male without blemish, and shall lay his hand upon the head thereof and they shall kill it on the side of the altar northward before the Lord. How then the Mystery of Christ is shaped unto us by these things, we must needs enquire. And first I think we ought to speak of the situation both of the Temple itself at Jerusalem and of the Divine altar, that so we may understand, what is the meaning of that the sheep is not to look straight before it, but rather to be turned toward the north. The territory of the Jews therefore lies in the more southern quarters of the earth, and the temple faces eastward and opens its doors toward the first rays of the sun; yea and the Divine altar itself, reared over against the holy, as it were in the sight of God, showed its front to those who enter from the East, its two sides looking one south, the other north. That it actually is as we have said, you may have full proof from the passage of the Prophet Ezekiel. For when he was being taught about the death of Phaltias, i. e., in spiritual vision, he says thus, And I saw, and lo about five and twenty men, their backs towards the temple of the Lord and their faces right away, and they were worshipping the sun toward the east. But if a man worshiping the rising sun have the temple behind him, how must one not suppose that the front of the temple was turned eastward? But in the same position was the Divine altar itself, as we have said. Therefore the front giving entry both of the temple itself and of the Divine altar was to the east: the two sides, one to the south, the other to the north; and the side yet remaining, which is conceived of as the back, looking westward. The things therefore we have said being thus, we shall find that north of it lies the neighbour of Judaea, Galilee, that is, the country of the Gentiles, as it is written, Galilee of the Gentiles, Since then our Lord Jesus Christ was about, after His saving Passion, to depart out of the country of the Jews, and go into Galilee, that is, to the church of the Gentiles, the sheep that was taken in type as a sacrifice, was slain at the side of the Altar so as to look northward, according as it is spoken by the Psalmist of Christ, His eyes look unto the nations.\r\n\r\nBut since the blessed Evangelist says that He refused His Presence to the Jews, because they were plotting to kill Him, we will add this to what we have said, that we do not consider the withdrawal of Christ as an imputation of cowardice, nor yet will we therefore accuse of weakness Him That is mighty unto all things, but we will accept the mode of the economy. For it beseemed Him not before His time, but in His own time to endure the Cross for all",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.7.1",
+      "provenance": [
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:john.7.1:a50a8fe5:1"
       ]
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.7.1:5135d07c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 7:1",
+      "excerpt": "After our Lord considered the spiritual life and its food, he now treats of his instruction or teaching, which, as mentioned above, is necessary for those who are spiritually reborn. First, he shows the origin of his teaching; secondly, its usefulness (c 8 and onwards). As to the first, he does three things. First, he mentions the place where he revealed the origin of his teaching; secondly, the occasion for revealing this (v 11); and thirdly, his actual statement is given (v 16). Three things are done about the first. First, we see Christ invited to go to the place where he revealed the origin of his teaching; secondly, we see our Lord refuse (v 6); and thirdly, how Jesus finally did go (v 9). As to the first, he does two things. First, he gives the reasons why they encouraged Christ to go to Judea; secondly, he adds their exhortation (v 3). They were influenced by three things to encourage Christ to go to Judea: first, by his lingering on [in Galilee], secondly, by his intention [not to travel in Judea] and thirdly, by the appropriateness of the time.\r\n\r\nThey were influenced by Christ's lingering on in Galilee, which showed that he wanted to stay there. Thus he says, After this, after teaching in Capernaum, Jesus walked about in Galilee, i.e., he set out from Capernaum, a city of Galilee, with the intention to journey throughout this region. Our Lord lingered on so often in Galilee to show us that we should pass from vices to virtues: \"So you, son of man, prepare your belongings for exile, and go during the day in their sight\" (Ez 12:13).\r\n\r\nThen they were influenced by Christ's intention, which he perhaps told them; hence he says, for he did not want to walk in Judea, the reason being, because the Jews sought to kill him. \"The Jews tried all the harder to kill him, because he not only broke the Sabbath rest, but even called God his own Father, making himself equal to God\" (above 5:18).\r\n\r\nBut could not Christ still have gone among the Jews without being killed by them, as he did after (c 8)? Three answers are given to this question. The first is given by Augustine, who says that Christ did this because the time would come when some Christians would hide from those who were persecuting them. And so they would not be criticized for this, our Lord wanted to console us by setting a precedent himself in this matter. He also taught this in word, saying: \"If they persecute you in one town, flee to another\" (Mt 10:23). Another answer is that Christ was both God and man. By reason of his divinity, he could prevent his being injured by those persecuting him. Yet, he did not want to do this all the time, for while this would have shown his divinity, it might have cast doubt on his humanity. Therefore, he showed his humanity by sometimes fleeing, as man, those who were persecuting him, to silence all those who would say that he was not a true man. And he showed his divinity by sometimes walking among them unharmed, thus refuting all those who say he was only a man. Thus, Chrysostom has another text, which reads: \"He could not, even if he wanted to, walk about Judea.\" This is expressed in our human way, and is the same as saying: Due to the danger of treachery, a person cannot go anywhere he might wish. The third answer is that it was not yet the time for Christ's passion. The time would come when Christ would suffer, at the feast of the Passover, when the lamb was sacrificed, so that victim would succeed victim: \"Jesus knew that his time had come to leave this world for the Father\" (below 13:1).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.7.1"
     }
   ]
 }

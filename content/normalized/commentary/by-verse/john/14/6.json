@@ -4,61 +4,6 @@
   "verseNumber": 6,
   "entries": [
     {
-      "id": "augustine-john-069-c14-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.6",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 14:4–6",
-      "excerpt": "We have now the opportunity, dearly, beloved, as far as we can, of understanding the earlier words of the Lord from the later, and His previous statements by those that follow, in what you have heard was His answer to the question of the Apostle Thomas. For when the Lord was speaking above of the mansions, of which He both said that they already were in His Father's house, and that He was going to prepare them; where we understood that those mansions already existed in predestination, and are also being prepared through the purifying by faith of the hearts of those who are hereafter to…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1849-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:5–7",
-      "excerpt": "If the Jews, who wished to be separated from Christ, asked whither He was going, much more would the disciples, who wished never to be separated from Him, be anxious to know it. So with much love, and, at the same time, fear, they proceed to ask: Thomas saith unto Him, Lord, we know not whither Thou goest; and how can we know the way?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1850-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.6",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:5–7",
-      "excerpt": "Our Lord had said that they knew both, Thomas says that they knew neither. Our Lord cannot lie; they knew not that they did know. Our Lord proves that they did: Jesus saith unto Him, I am the way, the truth, and the life.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1851-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.6",
@@ -74,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.14.6:4a33c3bc:2"
       ]
     },
     {
@@ -95,6 +47,57 @@
       ]
     },
     {
+      "id": "augustine-john-069-c14-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.6",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 14:4–6",
+      "excerpt": "We have now the opportunity, dearly, beloved, as far as we can, of understanding the earlier words of the Lord from the later, and His previous statements by those that follow, in what you have heard was His answer to the question of the Apostle Thomas. For when the Lord was speaking above of the mansions, of which He both said that they already were in His Father's house, and that He was going to prepare them; where we understood that those mansions already existed in predestination, and are also being prepared through the purifying by faith of the hearts of those who are hereafter to…",
+      "takeaway": "",
+      "sourceId": "augustine-tractates-john-source",
+      "rank": 85,
+      "tags": [
+        "augustine",
+        "patristic",
+        "tractate",
+        "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.14.6:2148f93f:1"
+      ]
+    },
+    {
+      "id": "catena-john-1850-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.6",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:5–7",
+      "excerpt": "Our Lord had said that they knew both, Thomas says that they knew neither. Our Lord cannot lie; they knew not that they did know. Our Lord proves that they did: Jesus saith unto Him, I am the way, the truth, and the life.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.14.6:31d30fa9:0"
+      ]
+    },
+    {
       "id": "catena-john-1855-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.6",
@@ -103,6 +106,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 14:5–7",
       "excerpt": "For if, He says, ye have Me for your guide to the Father, ye shall certainly come to Him. Nor can ye come by any other way. (c. 6:44) Whereas He had said above, No man can come to Me, except the Father draw him, now He says, No man cometh unto the Father but by Me, thus equalling Himself to the Father. The next words explain, Whither I go ye know, and the way ye know. If ye had known Me, He says, ye should have known My Father also; i. e. If ye had known My substance and dignity, ye would have known the Father’s. They did know Him, but not as they ought to do. Nor was it till afterwards, when…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.14.6:416896b7:0"
+      ]
+    },
+    {
+      "id": "catena-john-1849-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:5–7",
+      "excerpt": "If the Jews, who wished to be separated from Christ, asked whither He was going, much more would the disciples, who wished never to be separated from Him, be anxious to know it. So with much love, and, at the same time, fear, they proceed to ask: Thomas saith unto Him, Lord, we know not whither Thou goest; and how can we know the way?",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -151,42 +179,6 @@
       ]
     },
     {
-      "id": "catena-john-1852-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.6",
-      "topicSlugs": [],
-      "personId": "hilary-poitiers",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:5–7",
-      "excerpt": "For He who is the way doth not lead us into devious courses out of the way; nor does He who is the truth deceive us by falsehoods; nor does He who is the life leave us in the darkness of death.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1856-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.14.6",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-john",
-      "title": "On John 14:5–7",
-      "excerpt": "How can our Lord say, If ye had known Me, ye should have known My Father also; when He has just said, Whither I go ye know, and the way ye know? We must suppose that some of them knew, and others not: among the latter, Thomas.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1857-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.6",
@@ -205,6 +197,56 @@
       ]
     },
     {
+      "id": "catena-john-1852-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.6",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:5–7",
+      "excerpt": "For He who is the way doth not lead us into devious courses out of the way; nor does He who is the truth deceive us by falsehoods; nor does He who is the life leave us in the darkness of death.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:john.14.6:6e4d3161:2"
+      ]
+    },
+    {
+      "id": "catena-john-1856-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.14.6",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-john",
+      "title": "On John 14:5–7",
+      "excerpt": "How can our Lord say, If ye had known Me, ye should have known My Father also; when He has just said, Whither I go ye know, and the way ye know? We must suppose that some of them knew, and others not: among the latter, Thomas.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.14.6:0e3e27a3:0"
+      ]
+    },
+    {
       "id": "catena-john-1853-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.14.6",
@@ -220,7 +262,694 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.14.6:77922fbc:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.14.6:abd63190:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-69",
+      "title": "Tractates on John 69 on john 14:6",
+      "excerpt": "Tell me, O my Lord, what to say to Thy servants, my fellow-servants. The Apostle Thomas had Thee before him in order to ask Thee questions, and yet could not understand Thee unless he had Thee within him; I ask Thee because I know that Thou art over me; and I ask, seeking, as far as I can, to let my soul diffuse itself in that same region over me where I may listen to Thee, who usest no external sound to convey Thy teaching. Tell me, I pray, how it is that Thou goest to Thyself. Didst Thou formerly leave Thyself to come to us, especially as Thou camest not of Thyself, but the Father sent Thee? I know, indeed, that Thou didst empty Thyself; but in taking the form of a servant, it was neither that Thou didst lay down the form of God as something to return to, or that Thou lost it as something to be recovered; and yet Thou didst come, and didst place Thyself not only before the carnal eyes, but even in the very hands of men. And how otherwise save in Thy flesh? By means of this Thou didst come, yet abiding where Thou wast; by this means Thou didst return, without leaving the place to which Thou hadst come. If, then, by such means Thou didst come and return, by such means doubtless Thou art not only the way for us to come unto Thee, but wast the way also for Thyself to come and to return. For when Thou didst return to the life, which Thou art Thyself, then of a truth that same flesh of Thine Thou didst bring from death unto life. The Word of God, indeed, is one thing, and man another; but the Word was made flesh, or became man. And so the person of the Word is not different from that of the man, seeing that Christ is both in one person; and in this way, just as when His flesh died, Christ died, and when His flesh was buried, Christ was buried (for thus with the heart we believe unto righteousness, and thus with the mouth do we make confession unto salvation); so when the flesh came from death unto life, Christ came to life. And because Christ is the Word of God, He is also the life. And thus in a wonderful and ineffable manner He, who never laid down or lost Himself, came to Himself. But God, as was said, had come through the flesh to men, the truth to liars; for God is true, and every man a liar. When, therefore, He withdrew His flesh from amongst men, and carried it up there where no liar is found, He also Himself-for the Word was made flesh-returned by Himself, that is, by His flesh, to the truth, which is none other but Himself. And this truth, we cannot doubt, although found amongst liars, He preserved even in death; for Christ was once dead, but never false.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:augustine:john.14.6:c5e1ab5a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:christian-instruction-1-34-38",
+      "title": "CHRISTIAN INSTRUCTION 1.34.38 on john 14:6",
+      "excerpt": "The one who is himself the Truth and the Word, by whom all things were made, was made flesh so that he might dwell among us. And yet, the apostle still says, \"Even though we have known Christ after the flesh, yet from now on we know him no more.\" For Christ, desiring not only to give the possession to those who had completed the journey but also to be himself the way to those who were just setting out, determined to take a fleshly body. This is the source of that expression, \"The Lord created me in the beginning of his way.\" Those who desire to come [to the Father] begin their journey in [the Son]. The apostle, therefore, although still on the way … had already passed over the beginning of the way and had now no further need of it. And yet, everyone who wants to attain to the truth and to rest in eternal life has to start the journey by this way. For Jesus says, \"I am the way, and the truth and the life\"; that is, by me men and women come. To me they come, in me they rest. For when we come to him, we come to the Father also, because through an equal an equal is known.",
+      "takeaway": "",
+      "sourceId": "hcf:source:christian-instruction-1-34-38",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:augustine:john.14.6:6f8cedfa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-12-5",
+      "title": "SERMON 12.5 on john 14:6",
+      "excerpt": "Persevere now in walking by faith in the truth, that you may succeed in coming at a definite and due time to the sight of the same truth. For as the apostle says, \"While staying here in the body, we are away from the Lord. For we are walking by faith, not by sight.\" We are led to the direct sight and vision of the Father by Christian faith. That is why the Lord says, \"No one comes to the Father except through me.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.14.6:a68fff81:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-7-33",
+      "title": "ON THE TRINITY 7.33 on john 14:6",
+      "excerpt": "He who is the way does not lead us into by-paths or trackless wastes. He who is the truth does not mock us with lies. He who is the life does not betray us into delusions, which are death. He himself has chosen these winning names to indicate the methods that he has appointed for our salvation. As the way, he will guide us to the truth. As the truth, he will establish us in the life. And therefore it is all-important for us to know what the mysterious mode is that he reveals for attaining this life. \"No one comes to the Father except through me.\" The way to the Father is through the Son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-7-33",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.14.6:cf7a99e9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-11-33",
+      "title": "ON THE TRINITY 11.33 on john 14:6",
+      "excerpt": "Except through him there is no approach to the Father. But there is also no approach to him unless the Father draws us. Understanding him to be the Son of God, we recognize in him the true nature of the Father. And so, when we learn to know the Son, God the Father calls us. When we believe the Son, God the Father receives us. For our recognition and knowledge of the Father is in the Son who shows us in himself God the Father. The Father draws us by his fatherly love, if we are devout, into a mutual bond with his Son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-11-33",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.14.6:44c79a96:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 14:6",
+      "excerpt": "Therefore Christ, wishing to show that following Him is easy and pleasant for them, declares where He is going and what the way is. He goes to the Father, and the \"way\" is He Himself – Christ. If the way am I, then through Me you will undoubtedly ascend to the Father. I am not only the way, but \"also the truth\"; therefore you must be vigilant, because by Me you will not be deceived. I am also \"the life\"; therefore, even if you die, death will not prevent you from coming to the Father. So be watchful, for everyone comes to the Father through Me. And since it is in My power to bring you to the Father, you will undoubtedly come to Him. For it is impossible to arrive there by any other way than through Me.\r\n\r\nAnd you, perhaps, may understand from this as well that the Son is equal to the One who begot Him. For in another place He says that the Father brings people to Him: \"No one can come to Me unless the Father draws him\" (John 6:44). But here He says that He brings people to the Father. Therefore, the power of the Father and the Son is equal, for their action is also one.\r\n\r\nSo when you walk by the path of action, then Christ becomes the way for you, and when you engage in contemplation, He becomes the truth for you. But since many, walking by the path of action and engaging in contemplation, still did not obtain life — either because, performing virtue out of vainglory, they received their reward here, or because in their dogmatic opinions they strayed from the right path — therefore to the way and truth, that is, to action and contemplation, life is added. For this reason we too must walk and theologize, striving for the glory that lives forever, and not for the perishing glory that comes from men.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.14.6:46eab2f1:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-christian-faith-5-2-28",
+      "title": "Exposition of the Christian Faith 5.2.28 on john 14:6",
+      "excerpt": "If they say that the Father alone is true God, they cannot deny that God the Son alone is the truth. For Christ is the truth. Is the truth then something inferior to him that is true, seeing that according to the use of terms a person is called true from the word truth, as also wise from wisdom, just from justice? We do not consider it so between the Father and the Son. For there is nothing lacking in the Father, because the Father is full of truth. And the Son, because he is the truth, is equal to him who is true.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.14.6:32e8848d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-christian-faith-1-17-108",
+      "title": "Exposition of the Christian Faith 1.17.108 on john 14:6",
+      "excerpt": "Christ is not only God but true God indeed—true God of true God—and I approach the true one inasmuch as he himself is the truth. If, then, we inquire his name, it is \"the truth.\" If we seek to know his natural rank and dignity, he is so truly the very Son of God, that he is indeed God's own Son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.14.6:fbcac145:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:death-as-a-good-12-55",
+      "title": "DEATH AS A GOOD 12.55 on john 14:6",
+      "excerpt": "Lord Jesus, we do follow you, but we can come only at your bidding. No one can make the ascent without you, for you are our way, our truth, our life, our strength, our confidence, our reward. Be the way that receives us, the truth that strengthens us, the life that invigorates us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:death-as-a-good-12-55",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:athanasius-the-great:john.14.6:4d5c922b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:untitled-commentary",
+      "title": "Commentary on john 14:6",
+      "excerpt": "Christ is the true Son, and so when we receive the Spirit, we are made sons. For it says; 'you did not receive the spirit of slavery leading you back into fear, but you have received the Spirit of adopted sonship' [Romans 8:15]. But when we are made sons in the Spirit, it is clear that we are called children of God in Christ... And when the Spirit is given to us-the Saviour said: 'Receive the Holy Spirit' [John 20:22]- God [The Father] is in us... But when God is in us, the Son is also in us. For the Lord Himself said: 'I and the Father will come and make our home with him' [John 14:23]. Next, the Son is life-for He said: 'I am the life' (John 14:6)- and so we are said to be given life in the Spirit... But when we are given life in the Spirit, Christ Himself is said to live in us. For it says: 'I am crucified with Christ. It is no longer I who live, but Christ who lives in me.' [Galatians 2:19-20]. - \"Letters to Separion On the Spirit, Letter 1, Chapter 19\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:basil-the-great:john.14.6:c0a08a28:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:on-the-holy-spirit-8-18",
+      "title": "ON THE HOLY SPIRIT 8.18 on john 14:6",
+      "excerpt": "We understand the \"way\" to be the road to perfection, advancing in order step by step through the words of righteousness and the illumination of knowledge, always yearning for that which lies ahead and straining toward the last mile, until we reach that blessed end, the knowledge of God, with which the Lord blesses those who believe in him. For truly our Lord is a good way, a straight road with no confusing forks or turns, leading us directly to the Father. For \"no one comes to the Father,\" he says, \"except through me.\" Such is our way up to God through his Son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-holy-spirit-8-18",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.14.6:e98a618a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-1",
+      "title": "The Stromata Book 1 on john 14:6",
+      "excerpt": "We merely therefore assert here, that philosophy is characterized by investigation into truth and the nature of things (this is the truth of which the Lord Himself said, \"I am the truth\"); and that, again, the preparatory training for rest in Christ exercises the mind, rouses the intelligence, and begets an inquiring shrewdness, by means of the true philosophy, which the initiated possess, having found it, or rather received it, from the truth itself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.14.6:0bb8af24:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-5",
+      "title": "The Stromata Book 5 on john 14:6",
+      "excerpt": "For he who hopes, as he who believes, sees intellectual objects and future things with the mind. If, then, we affirm that aught is just, and affirm it to be good, and we also say that truth is something, yet we have never seen any of such objects with our eyes, but with our mind alone. Now the Word of God says, \"I am the truth.\" The Word is then to be contemplated by the mind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.14.6:edb85e2c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lxxii",
+      "title": "Epistle LXXII on john 14:6",
+      "excerpt": "For whereas in the Gospels, and in the epistles of the apostles, the name of Christ is alleged for the remission of sins; it is not in such a way as that the Son alone, without the Father, or against the Father, can be of advantage to anybody; but that it might be shown to the Jews, who boasted as to their having the Father, that the Father would profit them nothing, unless they believed on the Son whom He had sent. For they who know God the Father the Creator, ought also to know Christ the Son, lest they should flatter and applaud themselves about the Father alone, without the acknowledgment of His Son, who also said, \"No man cometh to the Father but by me.\" But He, the same, sets forth, that it is the knowledge of the two which saves, when He says, \"And this is life eternal, that they might know Thee, the only true God, and Jesus Christ, whom thou hast sent.\" Since, therefore, from the preaching and testimony of Christ Himself, the Father who sent must be first known, then afterwards Christ, who was sent, and there cannot be a hope of salvation except by knowing the two together; how, when God the Father is not known, nay, is even blasphemed, can they who among the heretics are said to be baptized in the name of Christ, be judged to have obtained the remission of sins? For the case of the Jews under the apostles was one, but the condition of the Gentiles is another. The former, because they had already gained the most ancient baptism of the law and Moses, were to be baptized also in the name of Jesus Christ, in conformity with what Peter tells them in the Acts of the Apostles, saying, \"Repent, and be baptized every one of you in the name of the Lord Jesus Christ, for the remission of sins, and ye shall receive the gift of the Holy Ghost. For this promise is unto you, and to your children, and to all that are afar off, even as many as the Lord our God shall call.\" Peter makes mention of Jesus Christ, not as though the Father should be omitted, but that the Son also might be joined to the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.14.6:d9aacf91:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII. Three Books of Testimonies Against the Jews. on john 14:6",
+      "excerpt": "That it is impossible to attain to God the Father, except by His Son Jesus Christ. In the Gospel: \"I am the way, and the truth, and the life: no one cometh to the Father but by me.\" Also in the same place: \"I am the door: by me if any man shall enter in, he shall be saved.\" Also in the same place: \"Many prophets and righteous men have desired to see the things which ye see, and have not seen them; and to hear those things which ye hear, and have not heard them.\" Also in the same place: \"He that believeth on the Son hath eternal life: he that is not obedient in word to the Son hath not life; but the wrath of God shall abide upon him.\" Also Paul to the Ephesians: \"And when He had come, He preached peace to you, to those which are afar off, and peace to those which are near, because through Him we both have access in one Spirit unto the Father.\" Also to the Romans: \"For all have sinned, and fail of the glory of God; but they are justified by His gift and grace, through the redemption which is in Christ Jesus.\" Also in the Epistle of Peter the apostle: \"Christ hath died once for our sins, the just for the unjust, that He might present us to God.\" Also in the same place: \"For in this also was it preached to them that are dead, that they might be raised again.\" Also in the Epistle of John: \"Whosoever denieth the Son, the same also hath not the Father. He that confesseth the Son, hath both the Son and the Father.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.14.6:60ba7e74:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-lxxiii",
+      "title": "Epistle LXXIII on john 14:6",
+      "excerpt": "But if there be among us, most beloved brother, the fear of God, if the maintenance of the faith prevail, if we keep the precepts of Christ, if we guard the incorrupt and inviolate sanctity of His spouse, if the words of the Lord abide in our thoughts and hearts, when he says, \"Thinkest thou, when the Son of man cometh, shall He find faith on the earth\" then, because we are God's faithful soldiers, who war for the faith and sincere religion of God, let us keep the camp entrusted to us by God with faithful valour. Nor ought custom, which had crept in among some, to prevent the truth from prevailing and conquering; for custom without truth is the antiquity of error. On which account, let us forsake the error and follow the truth, knowing that in Esdras also the truth conquers, as it is written: \"Truth endureth and grows strong to eternity, and lives and prevails for ever and ever. With her there is no accepting of persons or distinctions; but what is just she does: nor in her judgments is there unrighteousness, but the strength, and the kingdom, and the majesty, and the power of all ages. Blessed be the Lord God of truth!\" This truth Christ showed to us in His Gospel, and said, \"I am the truth.\" Wherefore, if we are in Christ, and have Christ in us, if we abide in the truth, and the truth abides in us, let us keep fast those things which are true.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.14.6:02fd8f90:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-iv-on-the-lord-s-prayer",
+      "title": "Treatise IV. On the Lord's Prayer. on john 14:6",
+      "excerpt": "Let us therefore, brethren beloved, pray as God our Teacher has taught us. It is a loving and friendly prayer to beseech God with His own word, to come up to His ears in the prayer of Christ. Let the Father acknowledge the words of His Son when we make our prayer, and let Him also who dwells within in our breast Himself dwell in our voice. And since we have Him as an Advocate with the Father for our sins, let us, when as sinners we petition on behalf of our sins, put forward the words of our Advocate. For since He says, that \"whatsoever we shall ask of the Father in His name, He will give us,\" how much more effectually do we obtain what we ask in Christ's name, if we ask for it in His own prayer!",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.14.6:f501eb2c:5",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:the-seventh-council-of-carthage-under-cyprian",
+      "title": "The Seventh Council of Carthage Under Cyprian on john 14:6",
+      "excerpt": "Libosus of Vaga said: In the Gospel the Lord says, \"I am the truth.\" He said not,\" I am the custom.\" Therefore the truth being manifest, let custom yield to truth; so that, although for the past any one was not in the habit of baptizing heretics in the Church, let him now begin to baptize them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.14.6:3592cc14:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII. Three Books of Testimonies Against the Jews. on john 14:6",
+      "excerpt": "That it is impossible to attain to the Father but by His Son Jesus Christ. In the Gospel according to John: \"I am the way, the truth, and the life: no man cometh unto the Father, but by me.\" Also in the same place: \"I am the door: by me if any man enter in, he shall be saved.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.6:694effcc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:6",
+      "excerpt": "Christ willed not as yet to tell His disciples in so many words that He was going away to the world above and returning to His Father, although in dark hints and through many impressive sayings He had been referring to the event. But one of His disciples, that one being Thomas, now questions Him directly, and by introducing at the same time a sort of argument, all but forces Him in spite of Himself to tell them plainly both whither it is that He is going, and where the path of His journey lies. For we know not, said he, whither Thou goest: so then, how could we know the way? Christ in His reply evades the excessive curiosity of His disciple, for He does not give the desired answer at all, but treasuring up the question in His all-knowing mind, and rather reserving it for a more convenient moment, He in His kindness unfolds a truth which it was essential for them to learn. He says, therefore: I am the Way, I the Truth, I the Life. Now as to the truth of the Lord's saying in these words concerning Himself, no reasonable person can ever have felt the slightest shadow of doubt; yet I conceive it is needful to examine the question attentively. For how comes it that, whereas in the inspired Scriptures He is spoken of as Light, and Wisdom, and Power, and by many other names, He selects a few only as being of very especial significance for the present occasion, calling Himself the Way, and the Truth, and the Life? For the real force of the words is deep and not easily discernible, as it seems to me; yet still we must not shrink from attempting to discover it. I shall say exactly what occurs to my own mind, commending to those who are wont to speculate more keenly the task of thinking out a higher meaning.\r\n\r\nThere are then three means whereby we shall reach the Divine courts that are above and enter the Church of the firstborn; namely, by practice in virtue of every kind, by faith in rightness of doctrine, and by hope of life to come. Is there any one else than our Lord Jesus the Christ, who could ever be a leader, a helper, or a means for granting us success in such matters as these? Surely not: do not think it. For He Himself has taught us things that are beyond the Law; He has pointed out to us the way that any one might safely take as leading to a virtue mighty in operation, and to a zealous and unhindered performance of those acts that are after the pattern of Christ. And so He Himself is the Truth, He is the Way; that is, the true boundary of faith, and the exact rule and standard of an unerring conception concerning God. For by a true belief in the Son, namely as begotten of the very essence of God the Father, and as bearing the title of Son in its fullest and truest meaning, and not even in any sense a made or created being, we shall then clothe ourselves in the confidence of a true faith. For he who has received the Son as a Son, has fully confessed a belief also in Him of Whose essence the Son is, and knows and will straightway accept God as the Father. Therefore He is the Truth, He is the Life; for none other will restore to us the life which is within our hopes, namely, that life which is in incorruption, and blessedness, and sanctification: for He it is that raises us up, and will bring us back again from the death we died under the ancient curse, to the state in which we were at the beginning. In Him therefore and through Him, all that is best and all that is precious has already appeared, and will appear for us. And notice again that the meaning connected with these words is very suitable to the idea involved in the previous verses. For while the disciple was still in doubt, and saying: How know we the way? He showed him briefly that since they knew Himself to be the motive cause, the leader, and the prince of the blessings that would bring them to the world above, they would have no further need of knowing the way.\r\n\r\nBut since He has added hereunto the words: No one cometh unto the Father but by Me, let us give some attention to this point in what we are about to say; first examining the question how one could go to the Father. We approach Him in two ways: either by becoming holy, as far as is possible for humanity, we thus are led to cleave to a holy God, for it is written: Ye shall be holy, for I am holy; or else we arrive, through faith and contemplation, at that knowledge of the Father which is as it were in a mirror darkly, as it is written. But no man would ever be holy and make progress in a life according to the rule of virtue, unless Christ were the guide of his footsteps in everything: and none would ever be united to God the Father save through the mediation of Christ. For He is Mediator between God and men, through Himself and in Himself uniting humanity to God. For since He is born of the essence of God the Father, in that He is the Word, the Effulgence, and the very Image, He is one with the Father, being wholly in the Father, and having the Father in Himself; while in that He has become a man like unto us, He is united to all on the earth in everything except in our sin: and so He has become a sort of border-ground, containing in Himself all that concurs to unity and friendship.\r\n\r\nNo man therefore will come to the Father, that is, will appear as a partaker of the Divine nature, save through Christ alone. For if He had not become a Mediator by taking human form, our condition could never have advanced to such a height of blessedness; but now, if any one approach the Father in a spirit of faith and reverent knowledge, he will do so, by the help of our Saviour Christ Himself. For even as I said just now, so I will say again, the course of the argument being in no wise different. By accepting the Son truly as Son a man will arrive also at the knowledge of God the Father: for one could not be looked upon as a son, except the father who |244 begat him were fully acknowledged at the same time. The knowledge of the Father is thus necessarily concurrent with belief in the Son, and knowledge of the Son with belief in the Father. And so the Lord says most truly: No man cometh unto the Father but by Me. For the Son is in nature and essence an Image of God the Father, and not (as some have thought) a Being moulded merely into His likeness by attributes specially bestowed, Himself being by nature something essentially different, and being so esteemed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.6:7dd9c6bd:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:6",
+      "excerpt": "There are three means by which we shall reach the divine courts that are above and enter the church of the firstborn: by practicing every kind of virtue; by faith in right doctrine; by hope of the life to come. Is there anyone other than our Lord Jesus the Christ who could ever be a leader, a helper or a means for granting us success in these kinds of things? Surely not! Do not even entertain such an idea! For he himself has taught us things beyond the Law. He has pointed out to us the way that anyone might safely take that would lead to a life of incredible virtue and to a highly motivated and unhindered performance of those actions that follow the pattern of Christ. And so he himself is the truth, he is the way, that is, the true boundary of faith and the exact rule and standard of an unerring conception concerning God. For by a true belief in the Son, namely, as begotten of the very essence of God the Father and as bearing the title of Son in its fullest and truest meaning—and not even in any sense a made or created being—we shall then clothe ourselves in the confidence of a true faith. For one who has received the Son as a Son has fully confessed a belief also in him of whose essence the Son is, and that person knows and will immediately accept God as the Father. Therefore he is the truth, he is the life, for no one else will restore to us the life that is within our hopes, namely, that life that is in incorruption, blessedness and sanctification. For it is he that raises us up and who will bring us back again from the death we died under the ancient curse to the state in which we were at the beginning.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.14.6:3e105f26:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-9",
+      "title": "Commentary on the Gospel of John, Book 9 on john 14:6",
+      "excerpt": "We approach the Father in two ways: either by becoming holy, as far as is possible for humanity … or else we arrive, through faith and contemplation, at that knowledge of the Father which is as it were \"in a mirror darkly.\" But no one would ever be holy and make progress in a life according to the rule of virtue unless Christ were the guide of his footsteps in everything. And no one would ever be united to God the Father except through the mediation of Christ, for he is the mediator between God and humanity, through himself and in himself uniting humanity to God.… No one, therefore, will come to the Father, that is, will appear as a partaker of the divine nature, except through Christ alone. For if he had not become a mediator by taking human form, our condition could never have advanced to such a height of blessedness. But now, if anyone approaches the Father in a spirit of faith and reverent knowledge, he will do so by the help of our Savior Christ himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:hcf-dionysius-of-alexandria:john.14.6:6279d5d1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-dionysius-of-alexandria",
+      "workId": "hcf:work:hcf-dionysius-of-alexandria:a-commentary-on-the-beginning-of-ecclesiastes",
+      "title": "A Commentary on the Beginning of Ecclesiastes on john 14:6",
+      "excerpt": "Christ is the head of the Church. And they, therefore, are the wise who walk in His way; for He Himself has said, \"I am the way.\" On this account, then, it becomes the wise man always to keep the eyes of his mind directed toward Christ Himself, in order that he may do nothing out of measure, neither being lifted up in heart in the time of prosperity, nor becoming negligent in the day of adversity: \"for His judgments are a great deep,\" as you will learn more exactly from what is to follow.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c264"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:gregory-of-nyssa:john.14.6:0b98cb7b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "hcf:work:gregory-of-nyssa:against-eunomius-2-4",
+      "title": "AGAINST EUNOMIUS 2.4 on john 14:6",
+      "excerpt": "[Eunomius] speaks of God as \"without beginning, eternally without end, alone.\" Once more \"understand, you simple ones,\" as Solomon says, \"his subtlety,\" in case you might be deceived and fall headlong into the denial of the Godhead of the only-begotten Son. Whatever is devoid of death or decay is that which is without end. That, likewise, is called everlasting that does not exist only for a time. That, therefore, which is neither everlasting nor without end is surely seen in the nature that is perishable and mortal. And so, the one who predicates \"unendingness\" of the one and only God and does not include the Son in the assertion of \"unendingness\" and \"eternity\" maintains by such a proposition that he whom he thus contrasts with the eternal and unending is perishable and temporary. But we, even when we are told that God \"alone has immortality,\" understand by \"immortality\" the Son. For life is immortality, and the Lord is that life who said, \"I am the Life.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:against-eunomius-2-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c395"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:gregory-the-great:john.14.6:9737afe0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-2",
+      "title": "Forty Gospel Homilies, Homily 2 on john 14:6",
+      "excerpt": "This blind man is rightly described as sitting beside the road and being a beggar; for the Truth himself says: \"I am the way.\" Therefore whoever does not know the brightness of eternal light is blind; but if he already believes in the Redeemer, he sits beside the way; if, however, he already believes but neglects to ask that he might receive eternal light, and ceases from prayers, the blind man indeed sits beside the way but does not beg at all. But if he has both believed and recognized the blindness of his heart, and asks that he might receive the light of truth, the blind man sits beside the way and begs.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:john.14.6:59fa7ad3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-dogmatical-and-historical-fragments",
+      "title": "Hippolytus Dogmatical and Historical Fragments on john 14:6",
+      "excerpt": "And then hear what follows: \"Let their eyes be darkened, that they see not.\" And surely ye have been darkened in the eyes of your soul with a darkness utter and everlasting. For now that the true light has arisen, ye wander as in the night, and stumble on places with no roads, and fall headlong, as having forsaken the way that saith, \"I am the way.\" Furthermore, hear this yet more serious word: \"And their back do thou bend always; \"that means, in order that they may be slaves to the nations, not four hundred and thirty years as in Egypt, nor seventy as in Babylon, but bend them to servitude, he says, \"always.\" In fine, then, how dost thou indulge vain hopes, expecting to be delivered from the misery which holdeth thee? For that is somewhat strange. And not unjustly has he imprecated this blindness of eyes upon thee. But because thou didst cover the eyes of Christ, (and ) thus thou didst beat Him, for this reason, too, bend thou thy back for servitude always. And whereas thou didst pour out His blood in indignation, hear what thy recompense shall be: \"Pour out Thine indignation upon them, and let Thy wrathful anger take hold of them; \"and, \"Let their habitation be desolate,\" to wit, their celebrated temple.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:ignatius-of-antioch:john.14.6:1248f165:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ignatius-of-antioch",
+      "workId": "hcf:work:ignatius-of-antioch:epistle-of-ignatius-to-the-philadelphians",
+      "title": "Epistle of Ignatius to the Philadelphians on john 14:6",
+      "excerpt": "The priests indeed, and the ministers of the word, are good; but the High Priest is better, to whom the holy of holies has been committed, and who alone has been entrusted with the secrets of God. The ministering powers of God are good. The Comforter is holy, and the Word is holy, the Son of the Father, by whom He made all things, and exercises a providence over them all. This is the Way which leads to the Father, the Rock, the Defence, the Key, the Shepherd, the Sacrifice, the Door of knowledge, through which have entered Abraham, and Isaac, and Jacob, Moses and all the company of the prophets, and these pillars of the world, the apostles, and the spouse of Christ, on whose account He poured out His own blood, as her marriage portion, that He might redeem her. All these things tend towards the unity of the one and only true God. But the Gospel possesses something transcendent [above the former dispensation], viz. the appearing of our Saviour Jesus Christ, His passion, and the resurrection itself. For those things which the prophets announced, saying, \"Until He come for whom it is reserved, and He shall be the expectation of the Gentiles,\" have been fulfilled in the Gospel, [our Lord saying, ] \"Go ye and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost.\" All then are good together, the law, the prophets, the apostles, the whole company [of others] that have believed through them: only if we love one another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c108"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:ignatius-of-antioch:john.14.6:e5fe2a5f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ignatius-of-antioch",
+      "workId": "hcf:work:ignatius-of-antioch:epistle-of-ignatius-to-the-ephesians",
+      "title": "Epistle of Ignatius to the Ephesians on john 14:6",
+      "excerpt": "For, says [the Scripture], \"Blessed are the undefiled in the way, who walk in the law of the Lord.\" Now the way is unerring, namely, Jesus Christ. For, says He, \"I am the way and the life.\" And this way leads to the Father. For \"no man,\" says He, \"cometh to the Father but by Me.\" Blessed, then, are ye who are God-bearers, spirit-bearers, temple-bearers, bearers of holiness, adorned in all respects with the commandments of Jesus Christ, being \"a royal priesthood, a holy nation, a peculiar people,\" on whose account I rejoice exceedingly, and have had the privilege, by this Epistle, of conversing with \"the saints which are at Ephesus, the faithful in Christ Jesus.\" I rejoice, therefore, over you, that ye do not give heed to vanity, and love nothing according to the flesh, but according to God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c108"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:john.14.6:c172217b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv",
+      "title": "Against Heresies Book IV on john 14:6",
+      "excerpt": "He is therefore one and the same God, who called Abraham and gave him the promise. But He is the Creator, who does also through Christ prepare lights in the world, [namely] those who believe from among the Gentiles. And He says, \"Ye are the light of the world;\" that is, as the stars of heaven. Him, therefore, I have rightly shown to be known by no man, unless by the Son, and to whomsoever the Son shall reveal Him. But the Son reveals the Father to all to whom He wills that He should be known; and neither without the goodwill of the Father nor without the agency of the Son, can any man know God. Wherefore did the Lord say to His disciples, \"I am the way, the truth, and the life and no man cometh unto the Father but by Me. If ye had known Me, ye would have known My Father also: and from henceforth ye have both known Him, and have seen Him.\" From these words it is evident, that He is known by the Son, that is, by the Word.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:john.14.6:e16379bd:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iii",
+      "title": "Against Heresies Book III on john 14:6",
+      "excerpt": "Since, therefore, the tradition from the apostles does thus exist in the Church, and is permanent among us, let us revert to the Scrip-rural proof furnished by those apostles who did also write the Gospel, in which they recorded the doctrine regarding God, pointing out that our Lord Jesus Christ is the truth, and that no lie is in Him. As also David says, prophesying His birth from a virgin, and the resurrection from the dead, \"Truth has sprung out of the earth.\" The apostles, likewise, being disciples of the truth, are above all falsehood; for a lie has no fellowship with the truth, just as darkness has none with light, but the presence of the one shuts out that of the other. Our Lord, therefore, being the truth, did not speak lies...",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:john.14.6:ebcefdb6:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-i",
+      "title": "Against Heresies Book I on john 14:6",
+      "excerpt": "But when this name of six letters was manifested (the person bearing it clothing Himself in flesh, that He might come under the apprehension of man's senses, and having in Himself these six and twenty-four letters), then, becoming acquainted with Him, they ceased from their ignorance, and passed from death unto life, this name serving as their guide to the Father of truth. For the Father of all had resolved to put an end to ignorance, and to destroy death. But this abolishing of ignorance was just the knowledge of Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:leo-the-great:john.14.6:57521171:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "leo-the-great",
+      "workId": "hcf:work:leo-the-great:sermon-72-1",
+      "title": "SERMON 72.1 on john 14:6",
+      "excerpt": "The cross of Christ, which was set up for the salvation of mortals, is both a sacrament and an example: a sacrament whereby the divine power takes effect, an example whereby one's devotion is excited. For to those who are rescued from the prisoner's yoke, redemption further procures the power of following the way of the cross by imitation. For if the world's wisdom so prides itself in its error that everyone follows the opinions and habits and whole manner of life of him whom he has chosen as his leader, how shall we share in the name of Christ except by being inseparably united to him who is, as he himself asserted, \"the way, the truth and the life\"—the way, that is, of holy living, the truth of divine doctrine and the life of eternal happiness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-72-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c461"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:lactantius:john.14.6:7cedc634:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "lactantius",
+      "workId": "hcf:work:lactantius:untitled-commentary",
+      "title": "Commentary on john 14:6",
+      "excerpt": "This is wisdom, and this is the mystery of the Supreme God. God willed that He should be acknowledged and worshipped through Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c325"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:peter-chrysologus:john.14.6:5f80dbc5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:sermon-19-5",
+      "title": "SERMON 19.5 on john 14:6",
+      "excerpt": "He himself has said, \"I am the life.\" What the soul is to the body is what Christ is to the soul. Without the soul, the body does not live. The soul does not live without Christ. As soon as the soul leaves the body, stench, corruption, rottenness, the worm, ashes, horror and everything that is loathsome to the sight take its place. When God leaves, immediately the stench of faithlessness, the corruption of sin, the rottenness of the vices, the worm of guilt, the ashes of vanities and the horror of infidelity enter the soul, and there comes to pass in the living tomb of the body the death of the soul now buried.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-19-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:peter-chrysologus:john.14.6:3b1872b9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:sermon-16-4",
+      "title": "SERMON 16.4 on john 14:6",
+      "excerpt": "\"I am the way,\" he says, so that the power of demons may not prevail in impeding those coming to the way through the Way, to God through God. It is not possible to attain to God except through God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-16-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:tertullian:john.14.6:7302022a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews",
+      "title": "An Answer to the Jews on john 14:6",
+      "excerpt": "Now the mystery of this \"sign\" was in various ways predicted; (a \"sign\") in which the foundation of life was forelaid for mankind; (a \"sign\") in which the Jews were not to believe: just as Moses beforetime kept on announcing in Exodus, saying, \"Ye shall be ejected from the land into which ye shall enter; and in those nations ye shall not be able to rest: and there shall be instabilityof the print of thy foot: and God shall give thee a wearying heart, and a pining soul, and failing eyes, that they see not: and thy life shall hang on the tree before thine eyes; and thou shalt not trust thy life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:tertullian:john.14.6:bb68cec0:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on john 14:6",
+      "excerpt": "Wherefore? Because \"I came forth from the Father, and am come into the world\" and, \"I am the way: no man cometh unto the Father, but by me; \" and, \"No man can come to me, except the Father draw him; \" and, \"All things are delivered unto me by the Father; \" and, \"As the Father quickeneth (the dead), so also doth the Son; \" and again, \"If ye had known me, ye would have known the Father also.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:tertullian:john.14.6:b2513a8b:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-veiling-of-virgins",
+      "title": "On the Veiling of Virgins on john 14:6",
+      "excerpt": "For these, for the most part, are the sources whence, from some ignorance or simplicity, custom finds its beginning; and then it is successionally confirmed into an usage, and thus is maintained in opposition to truth. But our Lord Christ has surnamed Himself Truth, not Custom.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:tertullian:john.14.6:59345f29:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-repentance",
+      "title": "On Repentance on john 14:6",
+      "excerpt": "Having found \"the truth,\" repent of errors; repent of having loved what God loves not: even we ourselves do not permit our slave-lads not to hate the things which are offensive to us; for the principle of voluntary obedience consists in similarity of minds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.14.6"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.14.6:3bfd9e29:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 14:6",
+      "excerpt": "Then when he says, Jesus said to him, I am the way, and the truth, and the life, the question is answered. Our Lord was to answer about two things: first, about the way and its destination; secondly, about their knowledge of both (v 7). He does two things about the first: first, he states what the way is; secondly, he gives its destination (v 6b).\r\n\r\nThe way, as has been said, is Christ himself; so he says, I am the way. This is indeed true, for it is through him that we have access to the Father, as stated in Romans (5:2). This answer could also settle the uncertainty of the faltering disciple.\r\n\r\nBecause this way is not separated from its destination but united to it, he adds, and the truth, and the life. So Christ is at once both the way and the destination. He is the way by reason of his human nature, and the destination because of his divinity. Therefore, as human, he says, I am the way; as God, he adds, and the truth, and the life. These last two appropriately indicate the destination of the way. For the destination of this way is the end of human desire. Now human beings especially desire two things: first, a knowledge of the truth, and this is characteristic of them; secondly, that they continue to exist, and this is common to all things. In fact, Christ is the way to arrive at the knowledge of the truth, while still being the truth itself: \"Teach me thy way O Lord, that I may walk in thy truth\" (Ps 85:11). Christ is also the way to arrive at life, while still being life itself: \"Thou couldst show me the path of life\" (Ps 16:11). And so he indicated the destination or end of this way as truth and life. These two were already applied to Christ: first, he is life: \"In him was life\" (1:4); then, he is truth, because \"the life is the light of men\" (1:4), and light is truth.\r\n\r\nNote that both truth and life belong properly and essentially (per se) to Christ. Truth belongs essentially to him because he is the Word. Now truth is the conformity of a thing to the intellect, and this results when the intellect conceives the thing as it is. Therefore, the truth of our intellect belongs to our word, which is its conception. Yet although our word is true, it is not truth itself, since it is not true of itself but because it is conformed to the thing conceived. And so the truth of the divine intellect belongs to the Word of God. But because the Word of God is true of itself (since it is not measured by things, but things are true in the measure that they are similar to the Word) the Word of God is truth itself. And because no one can know the truth unless he adheres to the truth, it is necessary that anyone who desires to know the truth adhere to this Word.\r\n\r\nLife also belongs properly to Christ: for everything which has some activity from itself is said to be living, while non-living things do not have motion from themselves. Among the activities of life the chief are the intellectual activities. Thus, the intellect itself is said to be living, and its activities are a certain kind of life. Now in God the activity of understanding and the intellect itself are the same. Thus it is clear that the Son, who is the Word of the intellect of the Father, is his own life.\r\n\r\nThis is the reason why Christ referred to himself as the way, united to its destination: because he is the destination, containing in himself whatever can be desired, that is, existing truth and life.\r\n\r\nIf then, you ask which way to go, accept Christ, for he is the way: \"This is the way, walk in it\" (Is 30:21). And Augustine says: \"Walk like this human being and you will come to God. It is better to limp along on the way than to walk briskly off the way.\" For one who limps on the way, even though he makes just a little progress, is approaching his destination; but if one walks off the way, the faster he goes the further he gets from his destination.\r\n\r\nIf you ask where to go, cling to Christ, for he is the truth which we desire to reach: \"My mouth will utter truth\" (Prv 8:7). If you ask where to remain, remain in Christ because he is the life: \"He who finds me finds life and shall have salvation from the Lord\" (Prv 8:35). Therefore, cling to Christ if you wish to be secure, for you cannot get off the road because he is the way. And so those who hold on to him are not walking off the road but on the right road: \"I have taught you the way of wisdom\" (Prv 4:11). But some are just the opposite: \"They did not find the way of truth to dwell in\" (Ps 107:4).\r\n\r\nAgain, those who hold on to Christ cannot be deceived, because he is the truth and teaches all truth: \"For this I was born, and for this I have come into the world, to bear witness to the truth\" (18:37). Further, they cannot be troubled, because he is the life and the giver of life: \"I came that they may have life, and have it abundantly\" (10:10).\r\n\r\nAugustine says that when our Lord said I am the way, and the truth, and the life, he was saying in effect: How do you want to go? I am the way. Where do you want to go? I am the truth. Where do you want to remain? I am the life. As Hilary says: he who is the way does not lead us off the right path; he who is the truth does not deceive us with falsehoods; and he who is the life does not abandon us to death.\r\n\r\nHere is another interpretation. In human beings, holiness involves three things: action, contemplation, and one's intention. These are brought to perfection by Christ. Christ is the way for those in the active life; he is the truth for those who stand firm in the contemplative life. And he directs the intention of both those in the active and contemplative life to life, eternal life. For he teaches us to go and preach for the sake of the age to come. So, the Lord is our way by which we go to him, and through him to the Father.\r\n\r\nBut when he, who is the way, goes to the Father, is he the way for himself? As Augustine says, he is the way, and the one who goes by the way, and the destination of the way. Thus he goes to himself through himself. He, as having human nature, is the way. Thus, he came through his flesh, yet remained where he was; and he went through his flesh, without leaving where he had come from.\r\n\r\nAlso, through the flesh he returned to himself, the truth and the life. For God had come, through his flesh, to us, the truth to liars, the life to mortals: \"God is truthful, and every human is a liar\" (Rom 3:4). And when he left us, and took his flesh up to that place where there are no liars, this very Word who was made flesh returned, through his flesh, to the truth, which is himself. For example: when I speak to others, my mind goes out to them, yet it does not leave me; and when I am silent, in a certain sense I return to myself, yet still remain with those to whom I spoke. And so Christ, who is our way, became the way even for himself, this is, for his flesh, to go to the truth and the life.\r\n\r\nThen when he says, no one comes to the Father, but by me, he answers what was asked about the destination of the way. The way, which is Christ, leads to the Father. Yet, because the Father and the Son are one, this way leads also to himself. And so Christ says that he is the terminus of the way.\r\n\r\nNote that the Apostle says: \"For what person knows a man's thoughts except the spirit of the man which is in him?\" (1 Cor 2:11), that is, provided one does not choose to reveal his own thoughts. A person reveals what is hidden within by his words, and it is only by the words of a person that we can know what is hidden within. Now \"no one comprehends the thoughts of God except the spirit of God\" (1 Cor 2:11), therefore, no one can acquire a knowledge of the Father except by his Word, which is his Son: \"No one knows the Father except the Son\" (Mt 11:27). And just like one of us who wants to be known by others by revealing to them the words in his heart, clothes these words with letters or sounds, so God, wanting to be known by us, takes his Word, conceived from eternity, and clothes it with flesh in time. And so no one can arrive at a knowledge of the Father except through the Son. Thus he says: \"I am the door; if any one enters by me, he will be saved\" (10:9).\r\n\r\nNote, with Chrysostom, that our Lord had said: \"No one can come to me unless the Father who sent me draws him\" (6:44). But here he says: no one comes to the Father, but by me. This indicates that the Son is equal to the Father.\r\n\r\nIt is now clear what the way is, it is Christ; what the destination is, it is the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.14.6"
     }
   ]
 }

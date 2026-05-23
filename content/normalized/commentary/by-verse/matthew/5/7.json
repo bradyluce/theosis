@@ -23,24 +23,6 @@
       ]
     },
     {
-      "id": "catena-matt-0598",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.7",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:7",
-      "excerpt": "Mercy here is not said only of alms, but is in every sin of a brother, if we bear one another’s burdens.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-0599",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.7",
@@ -56,6 +38,38 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.5.7:374584e5:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0598",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.7",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:7",
+      "excerpt": "Mercy here is not said only of alms, but is in every sin of a brother, if we bear one another’s burdens.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.5.7:0418a7b5:0"
       ]
     },
     {
@@ -92,6 +106,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.5.7:438c9580:0"
       ]
     },
     {
@@ -110,6 +131,191 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.5.7:d3c4ec0a:0"
+      ]
+    },
+    {
+      "id": "hcf:augustine:matthew.5.7:8fbd786a:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-53-5",
+      "title": "SERMON 53.5 on matthew 5:7",
+      "excerpt": "Hear what follows: \"Blessed are the compassionate, for God will have compassion on them.\" Do this, and it will be done to you. Do it in regard to another that it might be done in regard to you. For you may overflow yet remain in need. You may overflow with temporal things but remain in need of eternal life. You hear the voice of a beggar, but before God you are yourself a beggar. Someone is begging from you, while you yourself are begging. As you treat your beggar, so will God treat his. You who are empty are being filled. Out of your fullness fill an empty person in need, so that your own emptiness may be again filled by the fullness of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:augustine:matthew.5.7:29f58fd8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 5:7",
+      "excerpt": "Counsel corresponds to the merciful: for this is the one remedy for escaping from so great evils, that we forgive, as we wish to be ourselves forgiven; and that we assist others so far as we are able, as we ourselves desire to be assisted where we are not able: and of them it is here said, Blessed are the merciful.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:augustine:matthew.5.7:a9f5009f:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 5:7",
+      "excerpt": "To the merciful mercy, as to those following a true and excellent counsel, so that this same treatment is extended toward them by one who is stronger, which they extend toward the weaker: Blessed are the merciful, for they shall obtain mercy.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:jerome:matthew.5.7:8d87f9bc:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:7",
+      "excerpt": "(Verse 7) Blessed are the merciful, for they will be shown mercy. Mercy is not only understood in acts of charity, but also in bearing each other's burdens in every sin, if we carry the burdens of one another (Galatians 6).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.5.7:7b15c3cd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-15",
+      "title": "Homily on the Gospel of Matthew 15 on matthew 5:7",
+      "excerpt": "Blessed are the merciful. Here He seems to me to speak not of those only who show mercy in giving of money, but those likewise who are merciful in their actions. For the way of showing mercy is manifold, and this commandment is broad. What then is the reward thereof? For they shall obtain mercy.\r\n\r\nAnd it seems indeed to be a sort of equal recompence, but it is a far greater thing than the act of goodness. For whereas they themselves show mercy as men, they obtain mercy from the God of all; and it is not the same thing, man's mercy, and God's; but as wide as is the interval between wickedness and goodness, so far is the one of these removed from the other.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:hcf-chromatius-of-aquileia:matthew.5.7:bc1f4238:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-chromatius-of-aquileia",
+      "workId": "hcf:work:hcf-chromatius-of-aquileia:tractate-on-matthew-17-6-1-2-54",
+      "title": "TRACTATE ON MATTHEW 17.6.1-2.54 on matthew 5:7",
+      "excerpt": "By a great number of witnesses indeed, just as many in the Old Testament as the New, we are called by the Lord to show compassion. But as a shortcut to faith we deem enough and more than enough what the Lord himself in the passage at hand expresses with his own voice, saying, \"Blessed are the compassionate, for God will have compassion for them.\" The Lord of compassion says that the compassionate are blessed. No one can obtain God's compassion unless that one is also compassionate. In another passage he said, \"Be compassionate, just as your Father who is in the heavens is compassionate.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-matthew-17-6-1-2-54",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c406"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:clement-of-rome:matthew.5.7:d1741c53:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-rome",
+      "workId": "hcf:work:clement-of-rome:clement-s-first-letter-to-the-corinthians-chapter-13",
+      "title": "Clement's First Letter to the Corinthians, Chapter 13 on matthew 5:7",
+      "excerpt": "Let us therefore, brethren, be of humble mind, laying aside all haughtiness, and pride, and foolishness, and angry feelings; and let us act according to that which is written (for the Holy Spirit saith, \"Let not the wise man glory in his wisdom, neither let the mighty man glory in his might, neither let the rich man glory in his riches; but let him that glorieth glory in the Lord, in diligently seeking Him, and doing judgment and righteousness\" [Jeremiah 9:23-24]), being especially mindful of the words of the Lord Jesus which He spake, teaching us meekness and long-suffering. For thus He spoke: \"Be ye merciful, that ye may obtain mercy; forgive, that it may be forgiven to you; as ye do, so shall it be done unto you; as ye judge, so shall ye be judged; as ye are kind, so shall kindness be shown to you; with what measure ye mete, with the same it shall be measured to you.\" [Matthew 5:7, Matthew 6:14, Matthew 7:1-2] By this precept and by these rules let us establish ourselves, that we walk with all humility in obedience to His holy words. For the holy word saith, \"On whom shall I look, but on him that is meek and peaceable, and that trembleth at My words?\" [Isaiah 66:2]",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c99"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.5.7:721a36ad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:7",
+      "excerpt": "Blessed are the merciful, for they shall obtain mercy. Not only with money does one show mercy in almsgiving, but also with words. And should you have nothing at all to give, show mercy with tears of compassion. \"They shall obtain mercy\" even here in this life from men; for if he who showed mercy yesterday should be in want today, he will obtain mercy from all. And in the next life, how much more shall he obtain mercy from God?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.5.7:0516a1d6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:7",
+      "excerpt": "Note also that first he says Blessed are those who mourn, for when a man is infirm, he does not desire to eat; but he begins to desire when he begins to get well. So it is in matters of the spirit: when men are in sin, they do not feel spiritual hunger; but when their sins are forgiven, they experience that hunger. Therefore he continues at once: Blessed are the merciful, because justice without mercy is cruelty, while mercy without justice is the mother of destruction. Therefore, it is necessary for the two to be joined, as it says in Proverbs (3:3): \"Let not mercy and truth forsake you\"; \"Mercy and truth will meet\" (Ps 85:10).\r\n\r\nBlessed are the merciful, for they shall obtain mercy. To be merciful is to have a compassionate heart for the wretchedness of others; but we have mercy toward the wretchedness of others, when we regard it as our own. But we grieve over our own wretchedness and strive to remove it. Therefore, you are truly merciful, when you work to relieve the wretchedness of others. Now the wretchedness of our neighbor is twofold: the first is in temporal matters, and in regard to that wretchedness we should have a compassionate heart: \"If anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him?\" (1 Jn 3:17). The second is that whereby man is made wretched through sin; because just as happiness lies in the works of the virtues, so one's wretchedness lies in vices: \"Sin makes a people wretched\" (Pr 14:34). Therefore, when we admonish the fallen to return, we are merciful: \"Seeing the crowds he had compassion on them\" (Mt 9:36). Therefore, the merciful are blessed. And why? Because they shall obtain mercy.\r\n\r\nHere it should be noted that God's gifts always outweigh our merits: \"The Lord is the one who repays, and he will repay you sevenfold\" (Sir 35:13). Consequently, the mercy God bestows on us is much greater than that we bestow on others. That mercy begins in this life in two ways: first, because our sins are forgiven: \"Who forgives all your iniquity\" (Ps 103:3). Secondly, because he removes temporal imperfections, so that he makes his sun to rise. This will be perfected in the future, when all wretchedness, both of guilt and punishment, will be removed: \"Your mercy, O Lord, is in heaven\" (Ps 36:6). And this is because they shall obtain mercy.\r\n\r\nThis beatitude is reduced to the gift of counsel, because this is unique counsel, that amid the dangers of this world we should obtain mercy: \"Godliness is of value in every way\" (1 Tim 4:8); \"Let my counsel be acceptable to the king\" (Dan 4:27).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.5.7"
+    },
+    {
+      "id": "catena-matt-0602",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.7",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:7",
+      "excerpt": "Justly is mercy dealt out to the merciful, that they should receive more than they had deserved; and as he who has more than enough receives more than he who has153 only enough, so the glory of mercy is greater than of the things hitherto mentioned.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.5.7:0e0c3dd6:0"
       ]
     },
     {
@@ -121,24 +327,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:7",
       "excerpt": "Justice and mercy are so united, that the one ought to be mingled with the other; justice without mercy is cruelty; mercy without justice, profusion - hence He goes on to the one from the other.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0602",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.7",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:7",
-      "excerpt": "Justly is mercy dealt out to the merciful, that they should receive more than they had deserved; and as he who has more than enough receives more than he who has153 only enough, so the glory of mercy is greater than of the things hitherto mentioned.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

@@ -4,14 +4,14 @@
   "verseNumber": 11,
   "entries": [
     {
-      "id": "catena-luke-1569-v11",
+      "id": "catena-luke-1571-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.11",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:5–12",
-      "excerpt": "Peace is the mother of all good things, without it all other things are vain. Our Lord therefore commanded His disciples on entering a house first to pronounce peace as a sign of good things, saying, Into whatever house ye enter, first say, Peace be to this house.",
+      "excerpt": "And hence he who presides in the Church gives it, saying, Peace unto all. Now holy men ask for peace, not only that which dwells among men in mutual intercourse, but that which belongs to ourselves. For oftentimes we wage war in our hearts, and are disturbed even when no one troubles us; bad desires also frequently rise up against us.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-luke-1571-v11",
+      "id": "catena-luke-1569-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.11",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:5–12",
-      "excerpt": "And hence he who presides in the Church gives it, saying, Peace unto all. Now holy men ask for peace, not only that which dwells among men in mutual intercourse, but that which belongs to ourselves. For oftentimes we wage war in our hearts, and are disturbed even when no one troubles us; bad desires also frequently rise up against us.",
+      "excerpt": "Peace is the mother of all good things, without it all other things are vain. Our Lord therefore commanded His disciples on entering a house first to pronounce peace as a sign of good things, saying, Into whatever house ye enter, first say, Peace be to this house.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -76,60 +76,6 @@
       ]
     },
     {
-      "id": "catena-luke-1570-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.11",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:5–12",
-      "excerpt": "That in truth we should convey the message of peace, and that our very first entrance be attended with the blessing of peace.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1573-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.11",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:5–12",
-      "excerpt": "For the peace which is offered by the mouth of the preacher shall either rest on the house, if there be any one in it predestined to life, who follows the heavenly word which he hears; or if no one be willing indeed to hear, the preacher himself shall not be without fruit, for the peace returns to him, while the Lord gives him the recompense of reward for the labour of his work. But if our peace is received, it is meet that we should obtain earthly supplies from those to whom we offer the rewards of a heavenly country. Hence it follows: And in the same house remain, eating and drinking such…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1577-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.11",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:5–12",
-      "excerpt": "For now the very food which supports him is part of the wages of the labourer, as in this life the hire commences with the labour of preaching, which in the next is completed with the sight of truth. And here we must consider that two rewards are due to one work of ours, one on the journey, which supports us in labour, the other in our country, which recompenses us at the resurrection. Therefore the reward which we receive now ought so to work in us, that we the more vigorously strive to gain the succeeding reward. Every true preacher then ought not so to preach, that he may receive a reward…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1578-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.11",
@@ -163,6 +109,67 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.10.11:9685538c:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1570-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.11",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:5–12",
+      "excerpt": "That in truth we should convey the message of peace, and that our very first entrance be attended with the blessing of peace.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1577-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.11",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:5–12",
+      "excerpt": "For now the very food which supports him is part of the wages of the labourer, as in this life the hire commences with the labour of preaching, which in the next is completed with the sight of truth. And here we must consider that two rewards are due to one work of ours, one on the journey, which supports us in labour, the other in our country, which recompenses us at the resurrection. Therefore the reward which we receive now ought so to work in us, that we the more vigorously strive to gain the succeeding reward. Every true preacher then ought not so to preach, that he may receive a reward…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1573-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.11",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:5–12",
+      "excerpt": "For the peace which is offered by the mouth of the preacher shall either rest on the house, if there be any one in it predestined to life, who follows the heavenly word which he hears; or if no one be willing indeed to hear, the preacher himself shall not be without fruit, for the peace returns to him, while the Lord gives him the recompense of reward for the labour of his work. But if our peace is received, it is meet that we should obtain earthly supplies from those to whom we offer the rewards of a heavenly country. Hence it follows: And in the same house remain, eating and drinking such…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -181,24 +188,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1579-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.11",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:5–12",
-      "excerpt": "Now having described the reception from different houses, he teaches them what they ought to do in the cities; namely, to have intercourse with the good in all, but to keep from the society of the wicked in every thing; as it follows, But into whatsoever city ye enter, and they receive you, eat such things as are set before you.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:maximus-the-confessor:luke.10.11:f01da590:0"
       ]
     },
     {
@@ -217,17 +213,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.10.11:5ddb8281:1"
       ]
     },
     {
-      "id": "catena-luke-1587-v11",
+      "id": "catena-luke-1579-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.11",
       "topicSlugs": [],
-      "personId": "eusebius-caesarea",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:5–12",
-      "excerpt": "For in the city of Sodom Angels were not without entertainment, but Lot was found worthy to receive them into his house. (Gen. 19.) If then at the coming of the disciples into a city there shall not be found one to receive them, will not that city be worse than Sodom? These words persuaded them to attempt boldly the rule of poverty. For there could not be a city or village without some inhabitants acceptable to God. For Sodom could not exist without a Lot found in it, at whose departure the whole was suddenly destroyed.",
+      "excerpt": "Now having described the reception from different houses, he teaches them what they ought to do in the cities; namely, to have intercourse with the good in all, but to keep from the society of the wicked in every thing; as it follows, But into whatsoever city ye enter, and they receive you, eat such things as are set before you.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -256,21 +259,28 @@
       ]
     },
     {
-      "id": "catena-luke-1576-v11",
+      "id": "catena-luke-1587-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.11",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "eusebius-caesarea",
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:5–12",
-      "excerpt": "See then how He taught His disciples to beg, and wished them to receive their nourishment as a reward. For it is added, For the labourer is worthy of his hire.",
+      "excerpt": "For in the city of Sodom Angels were not without entertainment, but Lot was found worthy to receive them into his house. (Gen. 19.) If then at the coming of the disciples into a city there shall not be found one to receive them, will not that city be worse than Sodom? These words persuaded them to attempt boldly the rule of poverty. For there could not be a city or village without some inhabitants acceptable to God. For Sodom could not exist without a Lot found in it, at whose departure the whole was suddenly destroyed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.10.11:267ee8e2:0"
       ]
     },
     {
@@ -282,24 +292,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:5–12",
       "excerpt": "Although they be few and poor, ask for nothing more; He also tells them to work miracles, and their word shall draw men to their preaching. Hence he adds, And heal the sick that are therein, and say to them, The kingdom of God is come nigh unto you. For if you first heal and then teach, the word will prosper, and men believe that the kingdom of God is come nigh. For they would not be cured unless by the working of some divine power. But also when they are healed in their soul, the kingdom of God comes nigh unto them, for it is far off from him over whom sin has the dominion.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1585-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.11",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:5–12",
-      "excerpt": "By wiping off the dust of their feet against them, they in some sort say, The dust of your sins shall deservedly come upon you. And mark that the cities which receive not the Apostles and sound doctrine have streets, according to Matthew, Broad is the way which leadeth to destruction. (Matt. 7:13.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -325,6 +317,56 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.10.11:9491f677:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1576-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.11",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:5–12",
+      "excerpt": "See then how He taught His disciples to beg, and wished them to receive their nourishment as a reward. For it is added, For the labourer is worthy of his hire.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1585-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.11",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:5–12",
+      "excerpt": "By wiping off the dust of their feet against them, they in some sort say, The dust of your sins shall deservedly come upon you. And mark that the cities which receive not the Apostles and sound doctrine have streets, according to Matthew, Broad is the way which leadeth to destruction. (Matt. 7:13.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.10.11:2c81bc11:0"
       ]
     },
     {
@@ -362,6 +404,91 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.11:90eeff11:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:11",
+      "excerpt": "Here someone will ask: how does the Lord say that the Kingdom of God has drawn near both to those who receive the apostles and to those who do not receive them? It must be said that He in no way contradicts Himself. For to those who receive the apostles, the Kingdom draws near with benefactions, and to those who do not receive them, with condemnation. For, I ask you, imagine that at some spectacle there are many who are condemned and others who are not condemned, for example, senators, generals, and noblemen, and then some herald announces to all together, both the condemned and the honored: the king has drawn near to you! Does he not mean that to some of them the king has drawn near for punishment, and to others, to show them honor and favor? Understand it in the same way here as well.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.10.11"
+    },
+    {
+      "id": "hcf:bede:luke.10.11:d70c1580:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:11",
+      "excerpt": "Into whatever city you enter and they do not receive you, going out into its streets, say: Even the dust that clings to us from your city, we wipe off against you. Either as a witness to the earthly labor they undertook for them in vain, or to show that they sought nothing earthly from them, to the extent that they would not allow even the dust from their land to adhere to them. Alternatively: The feet of the disciples signify the very work and journey of preaching. The dust with which they are sprinkled is the lightness of earthly thought, from which even the highest teachers cannot be exempt when they incessantly attend to the healthful cares for the listeners, and as if along the roads of the world, they gather the dust of the earth scarcely with a single heel. Therefore, those who receive the word turn the afflictions and cares of the teachers, which they endured for them, into a testament of humility. But those who spurn the teaching transform the labors and dangers and weariness of the solicitude of the teachers into a testimony of their condemnation. And this is the dust that is wiped off against those who scorn the Gospel, and from which the feet of the evangelists are commanded to be washed by good listeners, or even narrated to be washed by the Savior himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.11"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.10.11:3bcb44cb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-8-6-7",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 8.6-7 on luke 10:11",
+      "excerpt": "\"Shake off the dust of your feet\" shows that he will require vengeance on those who receive the disciples poorly. The disciples will throw back on these people that very dust which adhered to them from the path. They will return it back on them, so that these might learn that those who pass through their paths will return by them. Since these received the dust of the just, they will merit the vengeance of the just, unless they repent. Only their dust defiled them, not their mire. It will be easier for Sodom, because the angels who went there did not perform a sign in Sodom but made Sodom itself a sign for creation. …Move to another city away from whatever town that does not receive you. If they persecute you in that one, flee to another. The Lord did not extend this word to everyone, but only to his disciples because it was the beginning of the new preaching, and these people were few.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-8-6-7",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.10.11"
+    },
+    {
+      "id": "hcf:tertullian:luke.10.11:f5006da1:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 10:11",
+      "excerpt": "How, if there can be a threat without its accomplishment, can you have in a threatening god, one that executes also, and in both, one that is a judicial being? So, again, He commands that the dust be shaken off against them, as a testimony,-the very particles of their ground which might cleave to the sandal, not to mention any other sort of communication with them. But if their churlishness and inhospitality were to receive no vengeance from Him, for what purpose does He premise a testimony, which surely forbodes some threats? Furthermore, when the Creator also, in the book of Deuteronomy, forbids the reception of the Ammonites and the Moabites into the church, because, when His people came from Egypt, they fraudulently withheld provisions from them with inhumanity and inhospitality, it will be manifest that the prohibition of intercourse descended to Christ from Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.10.11"
+    },
+    {
+      "id": "hcf:tertullian:luke.10.11:a9d2d696:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 10:11",
+      "excerpt": "He likewise adds, that they should say to such as would not receive them: \"Notwithstanding be ye sure of this, that the kingdom of God is come nigh unto you.\" If He does not enjoin this by way of a commination, the injunction is a most useless one.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.10.11"
     }
   ]
 }

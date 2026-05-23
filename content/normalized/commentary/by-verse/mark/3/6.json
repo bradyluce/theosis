@@ -4,6 +4,24 @@
   "verseNumber": 6,
   "entries": [
     {
+      "id": "catena-mark-0206-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.6",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:6–12",
+      "excerpt": "Both therefore fell down before the Lord, those who had the plagues of bodily diseases, and those who were vexed by unclean spirits. The sick did this simply with the intention of obtaining health, but the demoniacs, or rather the devils within them, because under the mastery of a fear of God they were compelled not only to fall down before Him, but also to praise His majesty; wherefore it goes on, And they cried out, saying, Thou art the Son of God. And here we must wonder at the blindness of the Arians, who, after the glory of His resurrection, deny the Son of God, Whom the devils confess…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0200-v6",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.6",
@@ -19,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.3.6:8517e96a:1"
       ]
     },
     {
@@ -58,24 +83,6 @@
       ]
     },
     {
-      "id": "catena-mark-0206-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.6",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:6–12",
-      "excerpt": "Both therefore fell down before the Lord, those who had the plagues of bodily diseases, and those who were vexed by unclean spirits. The sick did this simply with the intention of obtaining health, but the demoniacs, or rather the devils within them, because under the mastery of a fear of God they were compelled not only to fall down before Him, but also to praise His majesty; wherefore it goes on, And they cried out, saying, Thou art the Son of God. And here we must wonder at the blindness of the Arians, who, after the glory of His resurrection, deny the Son of God, Whom the devils confess…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0201-v6",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.6",
@@ -84,6 +91,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:6–12",
       "excerpt": "But the soldiers of Herod the king are called Herodians, because a certain new heresy had sprung up, which asserted that Herod was the Christ. For the prophecy of Jacob intimated, that when the princes of Judah failed, then Christ should come; because therefore in the time of Herod none of the Jewish princes remained, and he, an alien, was the sole ruler, some thought that he was the Christ, and set on foot this heresy. These, therefore, were with the Pharisees trying to kill Christ.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.3.6:174ff10b:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0207-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.6",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:6–12",
+      "excerpt": "Morally again, the Herodians, that is, persons who love the lusts of the flesh, wish to slay Christ. For the meaning of Herod is, 'of skin.' But those who quit their country, that is, a carnal mode of living, follow Christ, and their plagues are healed, that is, the sins which wound their conscience. But Jesus in us is our reason, which commands that our vessel, that is, our body, should serve Him, lest the troubles of worldly affairs should press upon our reason.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -130,22 +162,56 @@
       ]
     },
     {
-      "id": "catena-mark-0207-v6",
+      "id": "hcf:bede:mark.3.6:29f139a7:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.3.6",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 3:6",
+      "excerpt": "But the Pharisees went out and immediately took counsel with the Herodians against him, how to destroy him. He refers to the Herodians as the ministers of Herod the tetrarch, who, on account of the enmity which their lord exercised against John, also plotted against and hated the Savior whom John preached. However, it was of great foolishness for those who greatly needed salvation to take counsel about the death of the Savior. Their zeal for wickedness is shown when they even consider it a crime that he stretched out the hand of the one who was sick to heal it at his word, as if none of them had ever done greater works on the Sabbath, such as carrying food, offering a cup, and performing other necessary tasks for sustenance. For indeed, he who said \"Let there be,\" and it was made, could not be convicted of working on the Sabbath.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.3.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.3.6:ab3facde:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:6–12",
-      "excerpt": "Morally again, the Herodians, that is, persons who love the lusts of the flesh, wish to slay Christ. For the meaning of Herod is, 'of skin.' But those who quit their country, that is, a carnal mode of living, follow Christ, and their plagues are healed, that is, the sins which wound their conscience. But Jesus in us is our reason, which commands that our vessel, that is, our body, should serve Him, lest the troubles of worldly affairs should press upon our reason.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:6",
+      "excerpt": "Who were the Herodians? Either soldiers of Herod, or some new sect that recognized Herod as the Christ, for the reason that under him the succession of Jewish kings came to an end. The prophecy of Jacob determined that when the princes of Judah would be exhausted, then Christ would come (Gen. 49). And so, since in the times of Herod no one from among the Jews was a prince any longer, but Herod the foreigner ruled (he was an Idumean), some accepted him as Christ and formed a sect. These were the people who wanted to kill the Lord. In a figurative sense, pay attention also to the fact that the Herodians, these carnal and coarse people (Herod means \"of leather\"), want to kill Jesus.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.3.6:10bdf3e8:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 3:6",
+      "excerpt": "Morally again, the Herodians, that is, persons who love the lusts of the flesh, wish to slay Christ. For the meaning of Herod is, 'of skin.' (pelliceus. v. Hier. de Nom. Hebr)",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.3.6"
     }
   ]
 }

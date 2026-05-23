@@ -4,24 +4,6 @@
   "verseNumber": 8,
   "entries": [
     {
-      "id": "catena-luke-1349-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.9.8",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 9:7–9",
-      "excerpt": "It was not till a long time had passed that Herod took notice of the things that were done by Jesus, (to shew you the pride of a tyrant,) for he did not acknowledge them at first, as it is said, Now Herod heard, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1351-v8",
       "relation": "verse",
       "targetVerseId": "kjva:luke.9.8",
@@ -48,6 +30,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 9:7–9",
       "excerpt": "When Herod then heard of the miracles which Jesus was performing, he says, John have I beheaded, which was not an expression of boasting, but by way of allaying his fears, and bringing his distracted soul to recollect that he had killed. And because he had beheaded John, he adds, but who is this.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1349-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.9.8",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 9:7–9",
+      "excerpt": "It was not till a long time had passed that Herod took notice of the things that were done by Jesus, (to shew you the pride of a tyrant,) for he did not acknowledge them at first, as it is said, Now Herod heard, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -128,6 +128,23 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:hcf-josephus:luke.9.8:e8f3163c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-josephus",
+      "workId": "hcf:work:hcf-josephus:antiquities-of-the-jews-book-xviii-chapter-5-section-2",
+      "title": "Antiquities of the Jews - Book XVIII, Chapter 5, Section 2 on luke 9:8",
+      "excerpt": "Now some of the Jews thought that the destruction of Herod's army came from God, and that very justly, as a punishment of what he did against John, that was called the Baptist: for Herod slew him, who was a good man, and commanded the Jews to exercise virtue, both as to righteousness towards one another, and piety towards God, and so to come to baptism; for that the washing [with water] would be acceptable to him, if they made use of it, not in order to the putting away [or the remission] of some sins [only], but for the purification of the body; supposing still that the soul was thoroughly purified beforehand by righteousness. Now when [many] others came in crowds about him, for they were very greatly moved [or pleased] by hearing his words, Herod, who feared lest the great influence John had over the people might put it into his power and inclination to raise a rebellion, (for they seemed ready to do any thing he should advise,) thought it best, by putting him to death, to prevent any mischief he might cause, and not bring himself into difficulties, by sparing a man who might make him repent of it when it would be too late. Accordingly he was sent a prisoner, out of Herod's suspicious temper, to Macherus, the castle I before mentioned, and was there put to death. Now the Jews had an opinion that the destruction of this army was sent as a punishment upon Herod, and a mark of God's displeasure to him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sacred-texts-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:luke.9.8"
     }
   ]
 }

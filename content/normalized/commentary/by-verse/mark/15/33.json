@@ -4,24 +4,6 @@
   "verseNumber": 33,
   "entries": [
     {
-      "id": "catena-mark-1334-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.33",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:33–37",
-      "excerpt": "Luke added to this account the cause of the darkness, that is, the darkening of the sun.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1341-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.33",
@@ -40,14 +22,39 @@
       ]
     },
     {
-      "id": "catena-mark-1333-v33",
+      "id": "catena-mark-1334-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.33",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:33–37",
+      "excerpt": "Luke added to this account the cause of the darkness, that is, the darkening of the sun.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.15.33:75d58f0f:1"
+      ]
+    },
+    {
+      "id": "catena-mark-1339-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.33",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "This most glorious light took away its rays from the world, lest it should see the Lord hanging, and lest the blasphemers should have the benefit of its light. Wherefore it goes on: And when the sixth hour was come, there was darkness over the whole land until the ninth hour.",
+      "excerpt": "These however I suppose were Roman soldiers who did not understand the peculiarity of the Hebrew tongue, but, from His calling Eloi, thought that Elias was called by Him. But if the Jews are understood to have said this, they must be supposed to do this, as accusing Him of folly in calling for the aid of Elias. It goes on: And one ran and filled a sponge full of vinegar, and put it on a reed, and gave him to drink, saying, Let alone: let us see whether Elias will come to take him down. John shews more fully the reason why the vinegar was given to the Lord to drink, saying, that Jesus said, I…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -76,14 +83,14 @@
       ]
     },
     {
-      "id": "catena-mark-1339-v33",
+      "id": "catena-mark-1333-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.33",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "These however I suppose were Roman soldiers who did not understand the peculiarity of the Hebrew tongue, but, from His calling Eloi, thought that Elias was called by Him. But if the Jews are understood to have said this, they must be supposed to do this, as accusing Him of folly in calling for the aid of Elias. It goes on: And one ran and filled a sponge full of vinegar, and put it on a reed, and gave him to drink, saying, Let alone: let us see whether Elias will come to take him down. John shews more fully the reason why the vinegar was given to the Lord to drink, saying, that Jesus said, I…",
+      "excerpt": "This most glorious light took away its rays from the world, lest it should see the Lord hanging, and lest the blasphemers should have the benefit of its light. Wherefore it goes on: And when the sixth hour was come, there was darkness over the whole land until the ninth hour.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -91,24 +98,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1335-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.33",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:33–37",
-      "excerpt": "If this had been the time for an eclipse, some one might have said that this that happened was natural, but it was the fourteenth moon, when no eclipse can take place. There follows: And at the ninth hour Jesus cried with a loud voice, saying, Eloi, Eloi, lama sabachthani.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.33:6150e250:1"
       ]
     },
     {
@@ -148,14 +144,124 @@
       ]
     },
     {
-      "id": "catena-mark-1336-v33",
+      "id": "catena-mark-1335-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.33",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:33–37",
+      "excerpt": "If this had been the time for an eclipse, some one might have said that this that happened was natural, but it was the fourteenth moon, when no eclipse can take place. There follows: And at the ninth hour Jesus cried with a loud voice, saying, Eloi, Eloi, lama sabachthani.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.33:f79b277c:1"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.15.33:a5073e75:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:33",
+      "excerpt": "And when the sixth hour had come, there was darkness over the whole land until the ninth hour. The most brilliant light of the world withdrew its rays, lest it see the Lord hanging, or the impious blasphemers enjoy its light. And it is to be noted, that the Lord was crucified at the sixth hour, that is, when the sun was about to withdraw from the center of the world; but at dawn, that is, when the sun was rising, He celebrated the mysteries of His resurrection. For He marked with the hour of time what He showed by the effectiveness of the work. Because He died for our sins and rose for our justification. For it is written of Adam sinning that he heard the voice of the Lord God walking in the garden in the cool of the day (Gen. III). In the cool of the day, namely with the light of faith declined; and in the cool, with the fervor of charity cooling. He was heard walking because He had withdrawn from sinful man. Therefore, the order of reason, or rather of divine piety, demanded that at the same time in which He had then closed to the transgressing Adam, now the Lord might open the gates of paradise to the penitent thief, and at the hour at which the first Adam had brought death to this world by sinning, at the same hour the second Adam might destroy death by dying.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.33"
+    },
+    {
+      "id": "hcf:augustine:mark.15.33:0b6345a0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-117-1",
+      "title": "TRACTATES ON JOHN 117.1 on mark 15:33",
+      "excerpt": "The Lord was crucified at the third hour by the tongues of the populace, at the sixth hour by the hands of the soldiers. When Pilate took his seat before the tribunal, it was \"about the sixth hour,\" or early in the sixth hour. When Jesus was nailed to the tree between two thieves, it was the end of the sixth hour. It was between the sixth and ninth hour that the sun was obscured and the darkness prevailed, as we have it jointly attested on the authority of the three Evangelists Matthew, Mark and Luke.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractates-on-john-117-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.33:d7b8f4ab:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:33",
+      "excerpt": "The darkness was not in one place, but over all the earth. And if at that time it had been the period of the waning of the moon, then someone might still say that this was a natural eclipse. But now it was the fourteenth day of the month, when a natural eclipse is impossible.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.33"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:mark.15.33:73b7d2d4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:proof-of-the-gospel-10-7",
+      "title": "PROOF OF THE GOSPEL 10.7 on mark 15:33",
+      "excerpt": "Note how clearly was fulfilled the prophecy of our Savior's passion. It was to be a day in which \"there shall be no light.\" \"From the sixth hour to the ninth hour there was darkness over all the earth.\" … This was also fulfilled figuratively by his priestly persecutors, for among them came darkness, cold and ice, following upon their indignities to the anointed One. Their understanding also was darkened, so that the light of the gospel did not shine in their hearts, and their love to God grew cold. Then in the evening the light of the knowledge of the Christ arose, so that they who sat in darkness and the shadow of death saw a great light.",
+      "takeaway": "",
+      "sourceId": "hcf:source:proof-of-the-gospel-10-7",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:mark.15.33"
+    },
+    {
+      "id": "hcf:tertullian:mark.15.33:79a7f706:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews",
+      "title": "An Answer to the Jews on mark 15:33",
+      "excerpt": "But My People hath changed their glory: whence no profit shall accrue to them: the heaven turned pale thereat\" (and when did it turn pale? undoubtedly when Christ suffered), \"and shuddered,\" he says, \"most exceedingly; \" and \"the sun grew dark at mid-day: \" (and when did it \"shudder exceedingly\" except at the passion of Christ, when the earth also trembled to her centre, and the veil of the temple was rent, and the tombs were burst asunder? \"because these two evils hath My People done; Me,\" He says, \"they have quite forsaken, the fount of water of life, and they have digged for themselves worn-out tanks, which will not be able to contain water.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.15.33"
+    },
+    {
+      "id": "catena-mark-1342-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.33",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "At the ninth hour, the tenth piece of money which had been lost is found, by the overturning of the house.",
+      "excerpt": "Though the flesh was weak, yet the heavenly voice, which said, Open me the gates of righteousness, (Ps. 117:19) waxed strong. Wherefore there follows: And Jesus cried with a loud voice, and gave up the ghost. We who are of the earth die with a very low voice, or with no voice at all; but He who descended from heaven breathed His last with a loud voice.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -184,14 +290,14 @@
       ]
     },
     {
-      "id": "catena-mark-1342-v33",
+      "id": "catena-mark-1336-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.33",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:33–37",
-      "excerpt": "Though the flesh was weak, yet the heavenly voice, which said, Open me the gates of righteousness, (Ps. 117:19) waxed strong. Wherefore there follows: And Jesus cried with a loud voice, and gave up the ghost. We who are of the earth die with a very low voice, or with no voice at all; but He who descended from heaven breathed His last with a loud voice.",
+      "excerpt": "At the ninth hour, the tenth piece of money which had been lost is found, by the overturning of the house.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

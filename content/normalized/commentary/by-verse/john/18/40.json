@@ -41,14 +41,39 @@
       ]
     },
     {
-      "id": "catena-john-2325-v40",
+      "id": "catena-john-2331-v40",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.40",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 18:38–40",
-      "excerpt": "He knew that this question required time to answer, and it was necessary immediately to rescue Him from the fury of the Jews. So he went out.",
+      "excerpt": "Upon this they cried out: Then cried they all again, saying, Not this man, but Barabbas. Now Barabbas was a robber. We blame you not, O Jews, for releasing a guilty man at the passover, but for killing an innocent one. Yet unless this were done, it were not the true passover.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.18.40:413a9bd2:0"
+      ]
+    },
+    {
+      "id": "catena-john-2329-v40",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.40",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:38–40",
+      "excerpt": "He could not dismiss the idea from his mind, that Jesus was King of the Jews; as if the Truth itself, whom he had just asked what it was, had inscribed it there as a title.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -77,32 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-2329-v40",
+      "id": "catena-john-2325-v40",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.40",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 18:38–40",
-      "excerpt": "He could not dismiss the idea from his mind, that Jesus was King of the Jews; as if the Truth itself, whom he had just asked what it was, had inscribed it there as a title.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2331-v40",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.40",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:38–40",
-      "excerpt": "Upon this they cried out: Then cried they all again, saying, Not this man, but Barabbas. Now Barabbas was a robber. We blame you not, O Jews, for releasing a guilty man at the passover, but for killing an innocent one. Yet unless this were done, it were not the true passover.",
+      "excerpt": "He knew that this question required time to answer, and it was necessary immediately to rescue Him from the fury of the Jews. So he went out.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -146,6 +153,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.18.40:949a3047:0"
       ]
     },
     {
@@ -160,24 +174,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2326-v40",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.40",
-      "topicSlugs": [],
-      "personId": "alcuin",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:38–40",
-      "excerpt": "Or, he did not wait to hear the reply, because he was unworthy to hear it.And saith unto them, I find no fault in Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -200,7 +196,168 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.18.40:39d80df6:0"
       ]
+    },
+    {
+      "id": "catena-john-2326-v40",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.40",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:38–40",
+      "excerpt": "Or, he did not wait to hear the reply, because he was unworthy to hear it.And saith unto them, I find no fault in Him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "hcf:augustine:john.18.40:7eab7605:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-115",
+      "title": "Tractates on John 115 on john 18:40",
+      "excerpt": "\"But on hearing this, they all cried again, saying, Not this man, but Barabbas. Now Barabbas was a robber.\" We blame you not, O Jews, for liberating the guilty during the passover, but for slaying the innocent; and yet unless that were done, the true passover would not take place. But a shadow of the truth was retained by the erring Jews, and by a marvellous dispensation of divine wisdom the truth of that same shadow was fulfilled by deluded men; because in order that the true passover might be kept, Christ was led as a sheep to the sacrificial slaughter.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.18.40"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.18.40:59bc72ae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:letters-to-olympias-to-my-lady-4",
+      "title": "LETTERS TO OLYMPIAS, TO MY LADY 4 on john 18:40",
+      "excerpt": "How many were offended … when they made that dreadful and monstrous assertion that the robber and housebreaker, the man laden with the crime of murder, deserved to be released rather than Jesus. How many were offended when, having received permission from the judge to make their choice, they preferred Barabbas, desiring not only to crucify Christ but also to involve him in infamy? For they thought that by these means they should be able to manufacture the belief that he was worse than the robber and such a great transgressor that neither on the plea of mercy nor the privilege of the festival was it possible to save him. For they did everything for the purpose of slandering his fame. This is also why they crucified the two robbers with him. Nevertheless the truth was not obscured but shone forth all the more clearly.",
+      "takeaway": "",
+      "sourceId": "hcf:source:letters-to-olympias-to-my-lady-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.18.40"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.18.40:1894604a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-84",
+      "title": "Homily on the Gospel of John 84 on john 18:40",
+      "excerpt": "O accursed decision! They demand those like mannered with themselves, and let the guilty go; but bid him punish the innocent. For this was their custom from old time.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.18.40"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.18.40:8afef6a9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 18:40",
+      "excerpt": "See to what extent the malice of the Jews is displayed. They beg for Barabbas, a notorious robber, to be set free, but deliver up the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.18.40"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.18.40:371666cd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-12",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 12 on john 18:40",
+      "excerpt": "For they preferred a robber to him who did not regard his equality with God the Father [as robbery] and took our poverty upon him for this very end, that is, that he might deliver us from the true murderer, that is, Satan.… For the assembly, by its clamor, put him to death, though Pilate invited them to choose his release. In this way, even those who had not yet learned the divine law might be proved better than those instructed in the Law.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.18.40"
+    },
+    {
+      "id": "hcf:origen:john.18.40:97080ea7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-121",
+      "title": "COMMENTARY ON MATTHEW 121 on john 18:40",
+      "excerpt": "There is a likeness between the names of Barabbas and Jesus that is nothing short of a true mystery. Barabbas is appointed for making sedition and wars and murders in the souls of people, but Jesus is appointed for all good things as the Son of God and Peace and Word and Wisdom. These two therefore are bound in both human things and bodies. Here the people [of the Jews] asked for Barabbas to be released to them. Therefore, that nation [i.e., Israel] does not cease from having seditions and murders and robberies, as regards some of their own race in outward things but also as regards all the Jews who do not believe in Jesus who have also struggles within their own souls. For where Jesus is not, there are seditions and quarrels and battles. But where Jesus is … all good things, and innumerable spiritual riches, along with peace, rest in their hands. For he is our peace who made both one. And if anyone sees the opposite take place, he will recognize in them all that notable prisoner, Barabbas, whose release is craved not only then by sinful Israel according to the flesh but also by all like them in either doctrine or life. Whoever, therefore, does evil things in his body frees Barabbas and binds Christ. But whoever does good things frees Christ and binds Barabbas.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.18.40"
+    },
+    {
+      "id": "hcf:origen:john.18.40:01d3d33d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:against-celsus-2-44",
+      "title": "AGAINST CELSUS 2.44 on john 18:40",
+      "excerpt": "Celsus's comparison of Christ to a robber or murderer … is anticipated in the Gospels since God was numbered with the transgressors by wicked people who wanted a murderer (one who had been cast into prison for sedition and murder) to be released to them and wanted Jesus to be crucified. And they crucified him between two robbers. Jesus, indeed, is always being crucified with robbers among his genuine disciples and witnesses to the truth, and he suffers the same condemnation they do among people—if indeed we grant that those people have any resemblance to robbers who because of their godly lives suffer all kinds of injury and death so that they may keep their lives clean and pure.… But neither Jesus … nor they were … put to death according to any form of justice, and so it is his persecutors who are the ones who should incur the charge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.18.40"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.18.40:3ca1ce52:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 18:40",
+      "excerpt": "2370 The Jews cried out again, Not this man, but Barabbas! Then to indicate the malice of the Jews, the Evangelist mentions the crime committed by the one they wanted released, saying, Now Barabbas was a robber: \"Your princes are rebels and companions of thieves\" (Is 1:23). This fulfills the words of Jeremiah (12:8): \"My heritage has become to me like a lion in the forest.\" \"But you denied the Holy and Righteous One and asked for a murderer to be granted to you\" (Acts 3:14).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.18.40"
     }
   ]
 }

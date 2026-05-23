@@ -4,6 +4,25 @@
   "verseNumber": 18,
   "entries": [
     {
+      "id": "chrysostom-210148-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:acts.22.18",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-acts",
+      "title": "On Acts 22:17–20",
+      "excerpt": "Acts XXII. 17-20 And it came to pass, that, when I had come again to Jerusalem, even while I prayed in the temple, I was in a trance; and saw him saying unto me, Make haste, and get you quickly out of Jerusalem: for they will not receive your testimony concerning me. And I said, Lord, they know that I imprisoned and beat in every synagogue them that believed on you: and when the blood of your martyr Stephen was shed, I also was standing by, and consenting unto his death, and kept the raiment of them that slew him. See how he thrusts himself (into danger), I came, he says, after that vision,…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-acts-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "acts"
+      ]
+    },
+    {
       "id": "chrysostom-210121-v18",
       "relation": "verse",
       "targetVerseId": "kjva:acts.22.18",
@@ -23,23 +42,55 @@
       ]
     },
     {
-      "id": "chrysostom-210148-v18",
+      "id": "hcf:john-chrysostom:acts.22.18:d2c54325:0",
       "relation": "verse",
-      "targetVerseId": "kjva:acts.22.18",
       "topicSlugs": [],
       "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-acts",
-      "title": "On Acts 22:17–20",
-      "excerpt": "Acts XXII. 17-20 And it came to pass, that, when I had come again to Jerusalem, even while I prayed in the temple, I was in a trance; and saw him saying unto me, Make haste, and get you quickly out of Jerusalem: for they will not receive your testimony concerning me. And I said, Lord, they know that I imprisoned and beat in every synagogue them that believed on you: and when the blood of your martyr Stephen was shed, I also was standing by, and consenting unto his death, and kept the raiment of them that slew him. See how he thrusts himself (into danger), I came, he says, after that vision,…",
+      "workId": "hcf:work:john-chrysostom:homily-on-acts-48",
+      "title": "Homily on Acts 48 on acts 22:18",
+      "excerpt": "\"And when I was come again to Jerusalem,\" etc. How was it, that being a Jew, and there brought up and taught, he did not stay there? Nor did he abide there, unless he had a mind to furnish numberless occasions against him: everywhere just like an exile, fleeing about from place to place. \"While I prayed in the temple,\" he says, \"it came to pass that I was in a trance.\" To show that it was not simply a phantom of the imagination, therefore \"while he prayed\" the Lord stood by him. And he shows that it was not from fear of their dangers that he fled, but because they would \"not receive\" his \"testimony.\"",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-acts-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "acts"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:acts.22.18"
+    },
+    {
+      "id": "hcf:john-chrysostom:acts.22.18:7ebeb551:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-acts-55",
+      "title": "Homily on Acts 55 on acts 22:18",
+      "excerpt": "Then wherefore did the Providence of God order that he should go thither, and yet the Lord had said, \"Get thee out quickly from Jerusalem?\" That both their wickedness might be shown and Christ's prophecy made good, that they would not endure to hear him: and so that all might learn that he was ready to suffer all things, and that the event might be for the consolation of those in Judea: for there also the brethren were suffering many grievous evils.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:acts.22.18"
+    },
+    {
+      "id": "hcf:bede:acts.22.18:f3fcb43e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:retractions-on-acts",
+      "title": "Retractions on Acts on acts 22:18",
+      "excerpt": "But it happened that when I was returning to Jerusalem and praying in the temple, I fell into a trance, and saw him. For the trance of the mind, some Codices have a mental ecstasy, others a fear, others an alienation. For what is called ecstasis in Greek is variously interpreted in Latin. This word was also used in the vision of Peter above, where he was being called forth to teach Cornelius. For an ecstasy fell upon him, and he saw the heavens opened. But the mind of the praying apostles was alienated, not from the lowly but to the heavenly, not to deviate, but to see.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:acts.22.18"
     }
   ]
 }

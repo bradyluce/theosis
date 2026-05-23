@@ -55,24 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3279-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.4",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:1–5",
-      "excerpt": "That the word of Jesus might be fulfilled which He prophesied of His own death, He shall be delivered to the Gentiles, that is, to the Romans. For Pilate was a Roman, and the Romans had sent him as governor to Judæa.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.23.4:e1bf30e2:0"
       ]
     },
     {
@@ -84,6 +73,42 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:1–5",
       "excerpt": "Now two charges having been brought against our Lord, namely, that He forbade to pay tribute to Cæsar, and called Himself Christ the King, it may be that Pilate had chanced to hear that which our Lord spake, Render unto Cæsar the things which be Cæsar’s; and therefore setting aside this accusation as a palpable lie of the Jews, he thought fit to ask concerning that alone of which he knew nothing, the saying about the kingdom; for it follows, Pilate asked him, saying, Art thou the King of the Jews, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3286-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.4",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:1–5",
+      "excerpt": "But with these words they accuse not Him, but themselves. For to have taught the people, and by teaching to have roused them from their former idleness, and doing this to have passed through the whole land of promise, was an evidence not of sin, but of virtue.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3279-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.4",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:1–5",
+      "excerpt": "That the word of Jesus might be fulfilled which He prophesied of His own death, He shall be delivered to the Gentiles, that is, to the Romans. For Pilate was a Roman, and the Romans had sent him as governor to Judæa.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -112,17 +137,17 @@
       ]
     },
     {
-      "id": "catena-luke-3286-v4",
+      "id": "catena-luke-3285-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.4",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:1–5",
-      "excerpt": "But with these words they accuse not Him, but themselves. For to have taught the people, and by teaching to have roused them from their former idleness, and doing this to have passed through the whole land of promise, was an evidence not of sin, but of virtue.",
+      "excerpt": "Now they finding nothing else to support their calumny, have resort to the aid of clamour, for it follows, And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place. As if they said, He perverts the people, not in one part only, but beginning from Galilee He arrives at this place, having passed through Judæa. I think then that they purposely made mention of Galilee, as desirous to alarm Pilate, for the Galilæans were of a different sect and given to sedition, as, for example, Judas of Galilee who is mentioned in the…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,22 +191,72 @@
       ]
     },
     {
-      "id": "catena-luke-3285-v4",
+      "id": "hcf:bede:luke.23.4:2cc9811d:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.23.4",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 23:4",
+      "excerpt": "But Pilate said to the chief priests and the crowds: I find no cause in this man. This is what he himself said to the disciples the day before he suffered among other things: For the prince of this world is coming, and he has nothing in me (John 14). But because the prince of the world, that is, Pilate, absolved him, in whom he found no cause to condemn, see what the Jews do, who, not out of love for justice to investigate the truth, but driven by the goad of envy, strive to condemn the just.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.23.4"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.23.4:3b4c0aff:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:1–5",
-      "excerpt": "Now they finding nothing else to support their calumny, have resort to the aid of clamour, for it follows, And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place. As if they said, He perverts the people, not in one part only, but beginning from Galilee He arrives at this place, having passed through Judæa. I think then that they purposely made mention of Galilee, as desirous to alarm Pilate, for the Galilæans were of a different sect and given to sedition, as, for example, Judas of Galilee who is mentioned in the…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 23:4",
+      "excerpt": "Therefore Pilate too, having understood the slander, openly says: \"I find no fault in this man.\" In my opinion, even the very question which he puts to Christ is a mockery of the slander. For by saying: \"Are You the King of the Jews?\" he mocks the matter itself. He speaks as if to say: You, a destitute, poor, naked, helpless man, are accused of aspiring to royal power. And this, as we have said, is a mockery of those who accuse Jesus of this — that they imagine such a helpless and such a poor man to be plotting such an undertaking, for which both wealth and supporters are needed.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.23.4"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.23.4:fd719306:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-97-98",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.97-98 on luke 23:4",
+      "excerpt": "There follows an admirable place, where the patience to bear moral harm is poured into the human breast. The Lord is accused, and he is silent: and he is right to be silent, who does not need to defend himself. Let those who fear to be conquered, roam around seeking to be defended. Therefore, he does not confirm the accusation by fearing it, but he despises it by not refuting it. For what would he fear, who does not seek salvation? He betrayed his own salvation for the salvation of all, that it may be acquired by all. And here Pilate absolves: but he absolves by judgment, he crucifies by mystery. But this is specific to Christ: the human aspect, that with unjust judges it seemed more a matter of unwillingness than inability to be defended. But why did the Lord remain silent? He himself gave the answer, saying: If I tell you, you will not believe me; if I ask you, you will not answer me. However, the most remarkable thing is that he preferred to prove himself as a king rather than to speak; so that those who accuse him could not have a reason to condemn him, as they confess what they object to.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.23.4"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.23.4:cb132804:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-151",
+      "title": "Commentary on the Gospel of Luke, Sermon 151 on luke 23:4",
+      "excerpt": "At language thus unbridled in its violence God in His anger has somewhere said, by one of the holy prophets, \"But draw you near, you wicked children, you seed of adulterers and the harlot: at Whom made you merry? and against Whom opened you your mouth? and against Whom sent you forth your tongue? Are you not sons of perdition; and an iniquitous seed?\" And the prophet David also somewhere describes them in the Psalms, thus addressing God the Father in heaven, \"Scatter them in Your might, and restrain them, O Lord, my helper. The sin of their mouth is the word of their lips, and they shall be taken in their pride.\" For having given loose to their unbridled tongue against Christ, and, so to speak, \"lifted up their horn on high, and spoken iniquity against God,\" as it is written, they fell in their pride. Surely it was their duty, priding themselves as they did upon their knowledge of the divine laws, to have remembered that God says, \"The pious and the just you shall not kill:\" but they had no regard whatsoever to the respect due to the law, but being led on by an unrestrainable impetuosity into whatsoever pleased themselves alone, without examination of its nature, they invented numerous charges, heaping up against Christ accusations which were neither true nor capable of being proved. But they were convicted of being even more wicked than an idolater. For Pilate, acquitting Jesus of all blame, openly said, \"I find no cause at all in this Man:\" and this, not once only, but three times.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.23.4"
     }
   ]
 }

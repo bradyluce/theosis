@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.4.41:3ce49968:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.4.41:03a20393:0"
       ]
     },
     {
@@ -55,6 +69,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.4.41:a6c04f14:0"
       ]
     },
     {
@@ -91,6 +112,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.4.41:5aaf41b9:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0739-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.4.41",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 4:40–41",
+      "excerpt": "Because, “praise is not seemly in the mouth of a sinner.” Or, because He did not wish to inflame the envy of the Jews by being praised of all.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -112,22 +158,106 @@
       ]
     },
     {
-      "id": "catena-luke-0739-v41",
+      "id": "hcf:cyril-of-alexandria:luke.4.41:049d49b9:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.4.41",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 4:40–41",
-      "excerpt": "Because, “praise is not seemly in the mouth of a sinner.” Or, because He did not wish to inflame the envy of the Jews by being praised of all.",
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-12",
+      "title": "COMMENTARY ON LUKE, HOMILY 12 on luke 4:41",
+      "excerpt": "Jesus laid his hands upon the sick one by one and freed them from their malady. He demonstrated that the holy flesh, which he had made his own and endowed with godlike power, possessed the active presence of the might of the Word. He intended us to learn that, although the only-begotten Word of God became like us, yet he is nonetheless God. He wants us to know that he is easily able, even by his own flesh, to accomplish all things. His body was the instrument by which he performed miracles.\r\n\r\nJesus, then, entered Peter's house, where a woman was lying stretched upon a bed, exhausted with a violent fever. As God, he might have said, \"Put away the disease, arise,\" but he adopted a different course of action. As a proof that his own flesh possessed the power of healing, because it is the flesh of God, he touched her hand. \"Immediately,\" it says, \"the fever left her.\" Let us therefore also receive Jesus. When he has entered into us and we have received him into mind and heart, then he will quench the fever of unbefitting pleasures. He will raise us up and make us strong, even in spiritual things, so that we might serve him by performing those things that please him. But observe again, I ask, how great is the usefulness of the touch of his holy flesh. For it both drives away diseases of various kinds, and a crowd of demons, and overthrows the power of the devil. It heals a very great multitude of people in one moment of time. Although he was able to perform these miracles by a word and the preference of his will, yet to teach us something useful for us, he also lays his hands upon the sick. For it was necessary, most necessary, for us to learn that the holy flesh which he had made his own was endowed with the activity of the power of the Word by his having implanted in it a godlike might. Let it then take hold of us, or rather let us take hold of it by the mystical \"giving of thanks.\" May we do this so that it might free us also from the sicknesses of the soul, and from the assault and violence of demons.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:commentary-on-luke-homily-12",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.4.41"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.4.41:2aee6e58:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-12",
+      "title": "Commentary on the Gospel of Luke, Sermon 12 on luke 4:41",
+      "excerpt": "He would not permit the unclean demons to confess Him; for it was not fitting for them to usurp the glory of the Apostolic office, nor with impure tongue to talk of the mystery of Christ. Yea! though they speak ought that is true, let no one put credence in them: for the light is not known by the aid of darkness, as the disciple of Christ teaches us, where he says, \"For what communion hath light with darkness? or what consent hath Christ with Beliar?\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.4.41"
+    },
+    {
+      "id": "hcf:bede:luke.4.41:6234c8c3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 4:41",
+      "excerpt": "Demons also went out from many, crying out and saying: \"You are the Son of God.\" And rebuking them, he would not allow them to speak, because they knew he was the Christ. Demons confessed the Son of God, and, as the evangelist bears witness, they knew he was the Christ. For the devil, having recognized a man exhausted by fasting for forty days, and being unable to tempt him, even to find out if he were the Son of God, now, through the power of signs, either understood or rather suspected that he was the Son of God. Therefore, he did not persuade the Jews to crucify him because he thought he was not Christ or the Son of God, but because he did not foresee that he would be condemned by his death. Indeed, about this mystery hidden from ages, the Apostle says: \"None of the rulers of this age understood it; for if they had, they would not have crucified the Lord of glory\" (1 Cor. 2). And why the Lord forbids demons to speak about him, the Psalmist reveals, who says: \"To the sinner, however, God said: Why do you recount my ordinances?\" (Psalm 49) and so on: lest anyone, while hearing the preacher, follow the one who errs. For the devil is an unworthy teacher, who often mixes falsehood with truth, to cover the testimony of fraud with the appearance of truth. But at other times, not only demons who unwillingly confessed are commanded to be silent about Christ, but also those who willingly wanted to confess after being healed by him. Indeed, even the apostles, who were to preach about him throughout the whole world after the resurrection, were absolutely commanded to be silent about him before his passion, lest, once his divine majesty was proclaimed, the dispensation of the passion be deferred, and, with the passion delayed, the salvation of the world, which was to come through this, be denied.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.4.41"
+    },
+    {
+      "id": "hcf:athanasius-the-great:luke.4.41:75f43e2c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:life-of-st-anthony-26",
+      "title": "Life of St. Anthony 26 on luke 4:41",
+      "excerpt": "Even when the demons spoke the truth, for they spoke the truth when they said, \"Thou are the Son of God,\" the Lord himself silenced them and forbade them to speak. He did this to keep them from sowing their own wickedness in the midst of the truth. He also wished us to get used to never listening to them even though they seem to speak the truth. LIFE OF ST.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.4.41"
+    },
+    {
+      "id": "hcf:athanasius-the-great:luke.4.41:eabb5eaf:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:on-the-incarnation-of-the-word-5-32",
+      "title": "On the Incarnation of the Word 5.32 on luke 4:41",
+      "excerpt": "What irreverent men do not believe, the spirits see—that he is God. So they flee and fall down at his feet, saying just what they uttered when he was in the body.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.4.41"
+    },
+    {
+      "id": "hcf:tertullian:luke.4.41:6527e8c1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 4:41",
+      "excerpt": "Accordingly, wicked spirits (just in the manner of our former example) used to go forth with a testimony, exclaiming, \"Thou art the Son of God,\" -of what God, is clear enough from the case itself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.4.41"
     }
   ]
 }

@@ -4,25 +4,6 @@
   "verseNumber": 30,
   "entries": [
     {
-      "id": "augustine-john-040-c8-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.30",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 8:28–32",
-      "excerpt": "Of the holy Gospel according to John, which you see in our hand, your Charity has already heard much, whereon by God's grace we have discoursed according to our ability, pressing on your notice that this evangelist, specially, has chosen to speak of the Lord's divinity, wherein He is equal with the Father and the only Son of God; and on that account he has been compared to the eagle, because no other bird is understood to take a loftier flight. Accordingly, to what follows in order, as the Lord enables us to treat of it, listen with all your attention. We have spoken to you on the preceding…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1122-v30",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.30",
@@ -31,24 +12,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 8:28–30",
       "excerpt": "When our Lord said, He is true that sent Me, the Jews did not understand that He spake to them of the Father. But He saw some there, who, He knew, would believe on Him after His passion. Then said Jesus unto them, When ye have lifted up the Son of man, then ye shall know that I am. (Exod. 3:14) Recollect the words, I am that I am, and ye will know why I say, I am. I pass over your knowledge, in order that I may fulfil My passion. In your appointed time ye will know who I am; when ye have lifted up the Son of man. He means the lifting up of the cross; for He was lifted up on the cross, when He…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1123-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.30",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:28–30",
-      "excerpt": "Or the connection is this: When His miracles and teaching had failed to convert men, He spoke of the cross; When ye have lifted up the Son of man, then ye shall know that I am He: as if to say, Ye think that ye have killed Me; but I say that ye shall then, by the evidence of miracles, of My resurrection, and your captivity, know most especially, that I am Christ the Son of God, and that I do not act in opposition to God; But that as My Father hath taught Me, I speak these things. Here He shews the likeness of His substance to the Father’s; and that He says nothing beyond the Paternal…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -77,20 +40,21 @@
       ]
     },
     {
-      "id": "catena-john-1125-v30",
+      "id": "augustine-john-040-c8-v30",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.30",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:28–30",
-      "excerpt": "He gives now a humbler turn to the discourse: And He that sent Me. That this might not be thought however to imply inferiority, He says, Is with Me. The former is His dispensation, the latter His divinity.",
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 8:28–32",
+      "excerpt": "Of the holy Gospel according to John, which you see in our hand, your Charity has already heard much, whereon by God's grace we have discoursed according to our ability, pressing on your notice that this evangelist, specially, has chosen to speak of the Lord's divinity, wherein He is equal with the Father and the only Son of God; and on that account he has been compared to the eagle, because no other bird is understood to take a loftier flight. Accordingly, to what follows in order, as the Lord enables us to treat of it, listen with all your attention. We have spoken to you on the preceding…",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
+      "sourceId": "augustine-tractates-john-source",
       "rank": 85,
       "tags": [
-        "catena-aurea",
+        "augustine",
         "patristic",
+        "tractate",
         "john"
       ]
     },
@@ -129,6 +93,127 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "catena-john-1123-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.30",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:28–30",
+      "excerpt": "Or the connection is this: When His miracles and teaching had failed to convert men, He spoke of the cross; When ye have lifted up the Son of man, then ye shall know that I am He: as if to say, Ye think that ye have killed Me; but I say that ye shall then, by the evidence of miracles, of My resurrection, and your captivity, know most especially, that I am Christ the Son of God, and that I do not act in opposition to God; But that as My Father hath taught Me, I speak these things. Here He shews the likeness of His substance to the Father’s; and that He says nothing beyond the Paternal…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1125-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.30",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:28–30",
+      "excerpt": "He gives now a humbler turn to the discourse: And He that sent Me. That this might not be thought however to imply inferiority, He says, Is with Me. The former is His dispensation, the latter His divinity.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "hcf:augustine:john.8.30:133694a1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-40",
+      "title": "Tractates on John 40 on john 8:30",
+      "excerpt": "\"As He spake these words, many believed on Him.\" Would that, while I speak also, many, who before this were otherwise disposed, understood and believed on Him! For perhaps there are some Arians in this large assembly. I dare not suspect that there are any Sabellians, who say that the Father Himself is one with the Son, seeing that heresy is too old, and has been gradually eviscerated. But that of the Arians seems still to have some movement about it, like that of a putrefying carcase, or certainly, at the most, like a man at the last gasp; and from this some still require deliverance, just as from that other many were delivered. This province, indeed, did not use to have such; but ever since the arrival of many foreigners, some of these have also found their way to our neighborhood. See then, while the Lord spoke these words, many Jews believed on Him. May I see also that, while I am speaking, Arians are believing, not on me, but with me!",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.30"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.30:be9190f4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-53",
+      "title": "Homily on the Gospel of John 53 on john 8:30",
+      "excerpt": "\"As He spake these words, many believed on Him.\"\r\n\r\nWhen He brought down His speech to a lowly strain, many believed on Him. Dost thou still ask wherefore He speaketh humbly? Yet the Evangelist clearly alluded to this when he said, \"As He spake these things, many believed on Him.\" By this all but proclaiming aloud to us, \"Oh hearer, be not confounded if thou hear any lowly expression, for they who after such high teaching were not yet persuaded that He was of the Father, were with good reason made to hear humbler words, that they might believe.\" And this is an excuse for those things which shall be spoken in a humble way. They believed then, yet not as they ought, but carelessly and as it were by chance, being pleased and refreshed by the humility of the words. For that they had not perfect faith the Evangelist shows by their speeches after this, in which they insult Him again.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.30"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.8.30:22bc9f4c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 8:30",
+      "excerpt": "The wise Evangelist ofttimes marvels at Christ practising depreciation in His Words because of the infirmity of the hearers, and wont to achieve something great thereby. For whereas it was in His Power as God to speak all things, and to fashion His Discourse free and with royal Authority over all, keeping measure in His Speech economically, He encloses many unto obedience, many again He persuades to give heed more zealously unto Him. Therefore not empty is the Saviour's purpose, I mean His speaking to the multitudes in more human wise: for some of the more unlearned were used to rage against Him not a little and readily to desert Him, beholding a man and hearing God-befitting words. But since He was God and Man in one, having unblamed the authority that pertains to each, and able to speak without fault in whatever way He please, He doing exceeding well fashioned it in view of the levity of His hearers, diversely declaring of Himself (and that often) the things that belong to a man, such (I mean) as Of Myself I do nothing and things akin to this: for they understanding nothing whatever, but attacking without any investigation what was said, went to this common and offhand mode of understanding it, and thought that He said, Receiving power of God I work miracles, and He is with Me, since I do always what is pleasing to Him.\r\n\r\nLikeminded then with the unholy Jews are the accursed enemies of the Truth, who contradicting the dogmas of piety and loving to wrangle, think meanly of the Lord, and seizing on what is economically and rightly said, to overturn therewith His inbeing Glory and Authority, they steal away the Beauty of the Truth. For they have not (it seems) remembered Paul who saith that one ought to cast down imaginations and every high thing that exalteth itself against the knowledge of God and to bring into captivity every thought to Christ and to His obedience: they have not known what was uttered concerning the Divine Oracles by one of the Prophets, Who is wise and he shall understand these things? prudent and he shall know them? For unless some exceeding great obscurity hovered upon them, and a deep darksome veil floated over, what were the need for a wise and prudent man being sought after who might find out the knowledge of them?\r\n\r\nAnd this is abundance for the present matter, we will speak rather on what is before us, choosing something profitable. Upon Christ when saying these things, there believed on Him, as saith the Evangelist, not all but many. Yet albeit He is Very God, and hath nought that is not wholly naked unto His Eyes and knows and that with all accuracy that He will not take hold of all unto belief, He yet perseveres, expending long discourse on them who come to Him, giving us an Example most fair in this too, and |621 offering Himself a Pattern to the Teachers of the Church. For even though all be haply not profited because of their own depravity, yet since it was likely that some would reap good thereby, we must not be sluggish to lead to what is profitable. For if we bury so to say in unfruitful silence the talent given us, that is, the grace through the Spirit, we shall be like that wicked servant who said without any restraint to his Master, I knew Thee that Thou art an hard man reaping where Thou didst not sow and gathering whence Thou didst not straw and I was afraid and hid Thy talent in the earth, lo, Thou hast Thine own. But to what end that so wretched man came, and what penalty He exacted of him, the studious man well knows having met with it not once only in the Gospel books. Therefore let us lay this to heart and consider aright that it is his duty to be free from all indolence in teaching, his I mean who is set forth for this work, and in no wise to turn aside to despise it, even though all be not persuaded by his words, but rather shalt thou rejoice at what thou gainest by thy toil. It is meet too to consider with all sobriety that which has been spoken by our Saviour, The disciple is not above his master, nor the servant above his lord: enough for the disciple that he be as his master and the servant as his lord. For if the Lord persuade not all on account of the crookedness and hardness of heart of the hearers, who will blame our feeble speech, though it demand understanding of free-choice not of necessity?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.8.30"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.8.30:9f3323ec:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 8:30",
+      "excerpt": "I said that the listeners were more captivated by humble speech. The evangelist hints at this as well. \"As He was saying these things,\" he notes, \"many believed in Him.\" He was saying \"these things,\" that is, words that were humble and seemingly unworthy of His glory. Therefore, when you hear Him say something small and imperfect about Himself, do not be troubled in any way, for He says this for the sake of His listeners, who cannot comprehend anything loftier and immediately fly into a rage. What would have happened to them, unable to grasp the depths of the theological mystery, when the height of His glory remained incomprehensible even to Christians who had come to know His power and were saved by Him?\r\nWhen you hear that \"many believed,\" understand it this way: they believed simply and as it happened, not as they should have; they believed because they were pleased by the humility in His words.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.8.30"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.8.30:e40a0004:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 8:30",
+      "excerpt": "Then when he says, Because he spoke in this way, many came to believe in him, he shows the effect of his teaching, which is the conversion of many of them to the faith because they had heard Christ's teaching: \"Faith comes by hearing, and what is heard by the word of Christ\" (Rom 10:17).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.8.30"
     }
   ]
 }

@@ -23,6 +23,12 @@ import type { CommentaryEntry } from "@theosis/core";
 
 const DEFAULT_THRESHOLD = 0.75;
 const SHINGLE_SIZE = 5;
+// When the smaller of two shingle sets is mostly inside the larger
+// (containment >= this), treat as a dup regardless of Jaccard. Catches
+// the common HCF case where two entries are the same comment but one
+// has additional sentences appended — Jaccard underestimates because of
+// the size asymmetry; containment doesn't.
+const CONTAINMENT_THRESHOLD = 0.85;
 
 export type DedupOptions = {
   threshold?: number;
@@ -61,9 +67,27 @@ function normalizeText(text: string): string {
     .toLowerCase()
     .normalize("NFKD")
     .replace(/[̀-ͯ]/g, "")
+    // Strip a leading parenthetical (citation, verse marker, or work
+    // ref) before tokenising. HCF often prefixes entries with markers
+    // like "(De Civ. Dei, xix. 1.)" or "(Verse 3.)" that shift shingle
+    // positions and tank Jaccard against the same comment without the
+    // prefix. Only one leading parens — keep inline ones intact.
+    .replace(/^\s*\([^)]*\)\s*/, "")
     .replace(/[^\p{L}\p{N}\s]/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+// Containment: how much of `small` is found inside `large`. 1.0 means
+// every shingle in `small` is also in `large`. Asymmetric — useful when
+// one excerpt is a strict (or near-strict) superset of the other.
+function containment(small: Set<string>, large: Set<string>): number {
+  if (small.size === 0) return 0;
+  let intersection = 0;
+  for (const item of small) {
+    if (large.has(item)) intersection++;
+  }
+  return intersection / small.size;
 }
 
 function buildShingles(text: string, k = SHINGLE_SIZE): Set<string> {
@@ -153,7 +177,14 @@ export function dedupeEntries(
       const shingles = buildShingles(normalizeText(entry.excerpt));
       let merged = false;
       for (const k of localKept) {
-        if (jaccard(k.shingles, shingles) >= threshold) {
+        const j = jaccard(k.shingles, shingles);
+        const [small, large] = k.shingles.size <= shingles.size
+          ? [k.shingles, shingles]
+          : [shingles, k.shingles];
+        const cont = containment(small, large);
+        // Either signal alone is enough: high symmetric overlap (Jaccard)
+        // or one excerpt nearly contained in the other (containment).
+        if (j >= threshold || (small.size >= SHINGLE_SIZE && cont >= CONTAINMENT_THRESHOLD)) {
           // Fold this entry into the kept one.
           k.entry.provenance = uniq([
             ...(k.entry.provenance ?? [k.entry.sourceId]),
@@ -168,7 +199,7 @@ export function dedupeEntries(
             report.samples.push({
               keptId: k.entry.id,
               droppedId: entry.id,
-              jaccard: jaccard(k.shingles, shingles),
+              jaccard: j,
             });
           }
           merged = true;

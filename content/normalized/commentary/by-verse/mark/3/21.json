@@ -4,14 +4,14 @@
   "verseNumber": 21,
   "entries": [
     {
-      "id": "catena-mark-0227-v21",
+      "id": "catena-mark-0231-v21",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.21",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:19–22",
-      "excerpt": "The Lord leads the Apostles, when they were elected, into a house, as if admonishing them, that after having received the Apostleship, they should retire to look on their own consciences. Wherefore it is said, And they came into a house, and the multitude came together again, so that they could not eat bread.",
+      "excerpt": "Now there is a great difference between those who do not understand the word of God from slowness of intellect, such as those, who are here spoken of, and those who purposely blaspheme, of whom it is added, And the Scribes which came down from Jerusalem, &c. For what they could not deny, they endeavour to pervert by a malicious interpretation, as if they were not the works of God, but of a most unclean spirit, that is, of Beelzebub, who was the God of Ekron. For 'Beel' means Baal himself, and 'zebub' a fly; the meaning of Beelzebub therefore is the man of flies, on account of the filth of the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -37,24 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0231-v21",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.21",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:19–22",
-      "excerpt": "Now there is a great difference between those who do not understand the word of God from slowness of intellect, such as those, who are here spoken of, and those who purposely blaspheme, of whom it is added, And the Scribes which came down from Jerusalem, &c. For what they could not deny, they endeavour to pervert by a malicious interpretation, as if they were not the works of God, but of a most unclean spirit, that is, of Beelzebub, who was the God of Ekron. For 'Beel' means Baal himself, and 'zebub' a fly; the meaning of Beelzebub therefore is the man of flies, on account of the filth of the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.3.21:de784f65:1"
       ]
     },
     {
@@ -66,6 +55,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:19–22",
       "excerpt": "The Scribes also coming down from Jerusalem blaspheme. But the multitude from Jerusalem, and from other regions of Judæa, or of the Gentiles, followed the Lord, because so it was to be at the time of His Passion, that a crowd of the people of the Jews should lead Him to Jerusalem with palms and praises, and the Gentiles should desire to see Him; but the Scribes and Pharisees should plot together for His death.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0227-v21",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.21",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:19–22",
+      "excerpt": "The Lord leads the Apostles, when they were elected, into a house, as if admonishing them, that after having received the Apostleship, they should retire to look on their own consciences. Wherefore it is said, And they came into a house, and the multitude came together again, so that they could not eat bread.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -91,7 +98,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.3.21:53e02cd9:1"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.3.21:2f234894:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 3:21",
+      "excerpt": "And when his own people heard of it, they went out to seize him, for they said, \"He is out of his mind.\" Truly, as he himself says elsewhere, \"A prophet is not without honor except in his own country and in his own house.\" For those whom others desire to approach, see, and hear as the author of life and the wisdom of God, his relatives decide that he must be bound as if he were out of his mind. Since they could not grasp the depth of the wisdom they heard, they believed that he spoke with an alien mind: akin to the example of those who could not bear the sacrament of eating his flesh and drinking his blood, and said, \"This is a hard saying; who can listen to it?\" And consequently, they went away, and no longer walked with him. Allegorically, however, in that the crowd frequently convenes to him, and he is scorned by his own as if he were mad, the salvation of the believing from the Gentiles is approved, and the envy and treachery of the Jews is noted. Of whom John says, \"He came unto his own, and his own received him not.\" (John 1:11) There is indeed a great difference between those who do not understand the word of God because of the dullness of their minds and those who deliberately blaspheme and persecute what they understand. For there still remains a hope of salvation for these if perhaps they understand; but for those who are unwilling to understand to act well, and devise iniquity on their bed, what hope of salvation remains any longer, when they strive to reject by detesting and persecuting what they have rightly understood for the salvation of their souls? For consider what follows.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.3.21"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.3.21:fe7643a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:21",
+      "excerpt": "\"And hearing this,\" he says, \"His relatives\" — perhaps people from the same hometown as Him, or even His brothers — \"went out to take hold of Him; for they said that He was out of His mind,\" that is, that He had a demon. Since they heard that He was casting out demons and healing diseases, out of envy they thought that He had a demon and \"was out of His mind,\" which is why they wanted to seize Him, so as to bind Him as one possessed. This is what His relatives thought and intended to do with Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.21"
+    },
+    {
+      "id": "hcf:jerome:mark.3.21:21391c0b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:letter-108-to-eustochium",
+      "title": "LETTER 108, TO EUSTOCHIUM on mark 3:21",
+      "excerpt": "In the gospel we read that even his kinsfolk desired to bind him as one of weak mind. His opponents also reviled him saying, \"You are a Samaritan and have a devil.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:mark.3.21"
     },
     {
       "id": "catena-mark-0228-v21",

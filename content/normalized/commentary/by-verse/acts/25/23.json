@@ -20,7 +20,48 @@
         "patristic",
         "homily",
         "acts"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-acts-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:acts.25.23:f4b4e306:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:acts.25.23:84a2206c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-acts-52",
+      "title": "Homily on Acts 52 on acts 25:23",
+      "excerpt": "The Jews desisted ever since Paul exercised his right of appeal. Then also for him the theatre becomes a splendid one: \"with great pomp\" they were present.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:acts.25.23"
+    },
+    {
+      "id": "hcf:bede:acts.25.23:f39337fc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:retractions-on-acts",
+      "title": "Retractions on Acts on acts 25:23",
+      "excerpt": "When Agrippa and Bernice had come with great pomp, etc. For \"pomp,\" in Greek it is written φαντασία, by which term is designated a great display and royal pomp, with which he, being surrounded on all sides, was encircled.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:acts.25.23"
     }
   ]
 }

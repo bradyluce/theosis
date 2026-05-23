@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2874-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.9",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:9–18",
-      "excerpt": "Now many derive different meanings from the name vineyard, but Esaias clearly relates the vineyard of the Lord of Sabaoth to be the house of Israel. (Isa. 5.) This vineyard who else but God planted?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.20.9:6cf54ab4:0"
       ]
     },
     {
@@ -55,17 +44,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.20.9:baee70dc:0"
       ]
     },
     {
-      "id": "catena-luke-2879-v9",
+      "id": "catena-luke-2874-v9",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.9",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:9–18",
-      "excerpt": "Or God took Himself away from the vineyard for the course of many years, for since the time that He was seen to descend in the likeness of fire upon Mount Sinai, He no longer vouchsafed to them His visible presence; though no change took place, in which He sent not His prophets and righteous men to give warning thereof; as it follows, And at the time of the vintage he sent a servant to the husbandmen, that they should give him of the fruit of the vineyard. (Exod. 19.)",
+      "excerpt": "Now many derive different meanings from the name vineyard, but Esaias clearly relates the vineyard of the Lord of Sabaoth to be the house of Israel. (Isa. 5.) This vineyard who else but God planted?",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -94,39 +90,28 @@
       ]
     },
     {
-      "id": "catena-luke-2872-v9",
+      "id": "catena-luke-2879-v9",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.9",
       "topicSlugs": [],
-      "personId": "eusebius-caesarea",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:9–18",
-      "excerpt": "The rulers of the Jewish people being now assembled together in the temple, Christ put forth a parable, foretelling by a figure the things they were about to do to Him, and the rejection that was in store for them.",
+      "excerpt": "Or God took Himself away from the vineyard for the course of many years, for since the time that He was seen to descend in the likeness of fire upon Mount Sinai, He no longer vouchsafed to them His visible presence; though no change took place, in which He sent not His prophets and righteous men to give warning thereof; as it follows, And at the time of the vintage he sent a servant to the husbandmen, that they should give him of the fruit of the vineyard. (Exod. 19.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2875-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.9",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:9–18",
-      "excerpt": "The man then who plants the vineyard is the same who, according to another parable, hired labourers into his vineyard.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.20.9:5059c600:1"
       ]
     },
     {
@@ -138,6 +123,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:9–18",
       "excerpt": "But the parable which Esaias gives denounces the vineyard, whereas our Saviour’s parable is not directed against the vineyard, but the cultivators of it; of whom it is added, And he let it out to husbandmen, that is, to the elders of the people, and the chief priests, and the doctors, and all the nobles.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.20.9:4f43aac9:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2872-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.9",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:9–18",
+      "excerpt": "The rulers of the Jewish people being now assembled together in the temple, Christ put forth a parable, foretelling by a figure the things they were about to do to Him, and the rejection that was in store for them.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -184,6 +194,31 @@
       ]
     },
     {
+      "id": "catena-luke-2875-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.9",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:9–18",
+      "excerpt": "The man then who plants the vineyard is the same who, according to another parable, hired labourers into his vineyard.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.20.9:eb8e7fa4:1"
+      ]
+    },
+    {
       "id": "catena-luke-2877-v9",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.9",
@@ -199,6 +234,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.20.9:75b02078:1"
       ]
     },
     {
@@ -218,6 +260,127 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.20.9:748982e8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 20:9",
+      "excerpt": "The vineyard is also our type. For the husbandman is the Almighty Father, the vine is Christ, but we are the branches. (John 15:5.) Rightly are the people of Christ called a vine, either because it carries on its front the sign of the cross, or because its fruits are gathered in the latter time of the year, or because to all men, as to the equal rows of vines, poor as well as rich, servants as well as masters, there is an equal allotment in the Church without distinction of persons. And as the vine is married to the trees, so is the body to the soul. Loving this vineyard, the husbandman is wont to dig it and prune it, lest it grow too luxuriant in the shade of its foliage, and check by unfruitful boastfulness of words the ripening of its natural character. Here must be the vintage of the whole world, for here is the vineyard of the whole world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.20.9"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.20.9:195f57d7:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-9-23-24",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 9.23-24 on luke 20:9",
+      "excerpt": "Very many derive various meanings from the word vineyard, but Isaiah clearly stated that the vineyard of the Lord of hosts is the house of Israel. Who else but God founded this vineyard? He leased it and set out to foreign places. The Lord, who is always everywhere, does not journey from place to place, but he is present to those who love him and absent from those who neglect him. He was absent for many seasons, fearing that the foreclosure might seem premature. The more indulgent the generosity, the more inexcusable is the stubbornness.… He thus leased to the Jews his fortified, prepared and beautified vineyard.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.20.9"
+    },
+    {
+      "id": "hcf:bede:luke.20.9:7d91015d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 20:9",
+      "excerpt": "He began to tell the people this parable: A man planted a vineyard, and let it out to tenants, and went into another country for a long time. While the Lord was teaching the people and preaching the gospel, the chief priests and the scribes with the elders gathered and questioned, testing in what authority he performed signs. Overcoming them with his wisdom, the Lord proceeded with what he had begun. Indeed, while they were listening, he addressed the people all the more, because they listened to his words more willingly. Introducing a parable, he intended to show them their impiety and to teach that the kingdom of God would be transferred to the nations. Therefore, the man who planted the vineyard is the same one who, according to another parable, hired laborers in his vineyard (Matthew 20). For the vineyard of the Lord of hosts is the house of Israel (Isaiah 5). The tenants are the laborers who are said to be hired at the first, third, sixth, and ninth hours to cultivate the vineyard. However, he went into another country, not by changing his location. For where can God be absent from, who says: I fill heaven and earth (Jeremiah 23)? and elsewhere: I am a God who is near, and not far off, says the Lord? But he is said to go away from the vineyard to leave the tenants free will in their working. This is similar to what is said through Isaiah, when the vineyard was let out to tenants: And I looked for it to yield grapes, but it produced wild grapes (Isaiah 5).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.20.9"
+    },
+    {
+      "id": "hcf:bede:luke.20.9:4ea4fbaf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 20:9",
+      "excerpt": "(in Marc. 12.) Or understanding it morally; to every one of the faithful is let out a vineyard to cultivate, in that the mystery of baptism is entrusted to him to work out. One servant is sent, a second and a third, when the Law, the Psalms, and the Prophets are read. But the servant who is sent is said to be treated despitefully or beaten, when the word heard is despised or blasphemed. The heir who is sent that man kills as far as he can, who by sin tramples under foot the Son of God. (Heb. 6:6.) The wicked husbandman being destroyed, the vineyard is given to another, when with the gift of grace, which the proud man spurned, the humble are enriched.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.20.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.20.9:080036dd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 20:9",
+      "excerpt": "This parable is brief, but it teaches us much that is great, namely: that God had and showed a special providence toward the Hebrews, that they have long been inclined to murder, that the God of the Old and New Testaments is one, that the Gentiles will be brought in, and the Jews rejected. The vineyard is the Jewish church itself, the vinedressers are the scribes and Pharisees, those leading men and overseers of the people. Or: each person in himself is both vineyard and vinedresser, for each of us cultivates himself. The Lover of mankind, having given this vineyard to the workers, \"went away,\" that is, He left them to act according to their own free will.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.20.9"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.20.9:39396483:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-134",
+      "title": "COMMENTARY ON LUKE, HOMILY 134 on luke 20:9",
+      "excerpt": "The vineyard of the Lord of hosts is the man of Judah, a plant new and beloved. He who planted the vineyard is God, who also went away for a long time. God still fills everything and in no way whatsoever is absent from anything that exists. How, therefore, did the Lord of the vineyard go away for a long time? After they saw him in the shape of fire at his descent on Mount Sinai with Moses, who spoke the law to them as the mediator, he did not again grant to them his presence in a visible way. To use a metaphor taken from human affairs, his relation to them was like one who made a long journey abroad.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-134",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.20.9"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.20.9:dfbdaa28:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-16-19",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 16.19 on luke 20:9",
+      "excerpt": "He proposed another parable. \"A certain man, a householder, planted his vineyard.\" This is like what the psalmist said, \"You brought a vine out of Egypt, you drove out the nations and planted it.\" He protected it with a hedge, the law, and prepared a pit in it for the winepresses, the altar, and built a tower there, the temple, and sent his servants to bring him its fruit. The first, the next and the last were not received. Then he sent his Son. He was not the last, for although he appeared at the end, he already existed. John witnessed, \"A man will come after me, who is before me.\" He did not do this because he was unaware that the ancestors were incapable of receiving the produce but to remove the detractions of these stubborn ones from their midst. They were saying that he was not able to direct and prepare everything that he wanted to by the law, so therefore he sent his Son to impose silence on them. When they saw his Son coming, they said, \"Here is the heir of the vineyard. Come! Let us kill him, and the inheritance of the vineyard will be ours.\" They killed him, but their inheritance was taken away from them and given to the Gentiles. It happened just as he had said, \"For to him who has will more be given, and he will have an abundance; but from him who has not, even what he has will be taken away.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-16-19",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.20.9"
     }
   ]
 }

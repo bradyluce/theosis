@@ -4,14 +4,14 @@
   "verseNumber": 26,
   "entries": [
     {
-      "id": "catena-luke-0946-v26",
+      "id": "catena-luke-0954-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.26",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:24–26",
-      "excerpt": "For this expression, woe, is always said in the Scriptures to those who cannot escape from future punishment.",
+      "excerpt": "What is said here is not opposed to what our Lord says elsewhere, Let your light shine before men; (Matt. 5:16.) that is, that we should be eager to do good for the glory of God, not our own. For vain-glory is a baneful thing, and from hence springs iniquity, and despair, and avarice, the mother of evil. But if thou seekest to turn away from this, ever raise thy eyes to God, and be content with that glory which is from Him. For if in all things we must choose the more learned for judges, how dost thou trust to the many the decision of virtue, and not rather to Him, who before all others…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.6.26:2066e2f4:1"
       ]
     },
     {
@@ -40,14 +47,14 @@
       ]
     },
     {
-      "id": "catena-luke-0954-v26",
+      "id": "catena-luke-0946-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.26",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:24–26",
-      "excerpt": "What is said here is not opposed to what our Lord says elsewhere, Let your light shine before men; (Matt. 5:16.) that is, that we should be eager to do good for the glory of God, not our own. For vain-glory is a baneful thing, and from hence springs iniquity, and despair, and avarice, the mother of evil. But if thou seekest to turn away from this, ever raise thy eyes to God, and be content with that glory which is from Him. For if in all things we must choose the more learned for judges, how dost thou trust to the many the decision of virtue, and not rather to Him, who before all others…",
+      "excerpt": "For this expression, woe, is always said in the Scriptures to those who cannot escape from future punishment.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -94,6 +101,31 @@
       ]
     },
     {
+      "id": "catena-luke-0956-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.26",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:24–26",
+      "excerpt": "And mark, that Matthew by rewards called the people to virtue and faith, but Luke also frightened them from their sins and iniquities by the denunciation of future punishment.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.6.26:0cb79819:0"
+      ]
+    },
+    {
       "id": "catena-luke-0949-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.26",
@@ -130,17 +162,42 @@
       ]
     },
     {
-      "id": "catena-luke-0956-v26",
+      "id": "catena-luke-0955-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.26",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:24–26",
-      "excerpt": "And mark, that Matthew by rewards called the people to virtue and faith, but Luke also frightened them from their sins and iniquities by the denunciation of future punishment.",
+      "excerpt": "By the false prophets are meant those, who to gain the favour of the multitude attempt to predict future events. The Lord on the mountain pronounces only the blessings of the good, but on the plain he describes also the “woe” of the wicked, because the yet uninstructed hearers must first be brought by terrors to good works, but the perfect need but be invited by rewards.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.26:fe1d8446:3"
+      ]
+    },
+    {
+      "id": "catena-luke-0950-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.26",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:24–26",
+      "excerpt": "In another way. If those are happy who always hunger after the works of righteousness, they on the other hand are counted to be unhappy, who, pleasing themselves in their own desires, suffer no hunger after the true good. It follows, Woe to you who laugh, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,24 +223,6 @@
       ]
     },
     {
-      "id": "catena-luke-0950-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.26",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:24–26",
-      "excerpt": "In another way. If those are happy who always hunger after the works of righteousness, they on the other hand are counted to be unhappy, who, pleasing themselves in their own desires, suffer no hunger after the true good. It follows, Woe to you who laugh, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0953-v26",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.26",
@@ -199,25 +238,99 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.26:fe92a4d0:2"
       ]
     },
     {
-      "id": "catena-luke-0955-v26",
+      "id": "hcf:john-chrysostom:luke.6.26:baeedd68:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.26",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homilies-on-genesis-23-8",
+      "title": "HOMILIES ON GENESIS 23.8 on luke 6:26",
+      "excerpt": "\"Woe to you when all people speak well of you.\" Notice how by the word woe he revealed to us the extent of the punishment awaiting such people. This word woe, after all, is an exclamation of lament, so that it is as if he is lamenting their fate when he says, \"Woe to you when all people speak well of you.\" Notice too the precision in the expression: he didn't simply say \"people\" but \"all people.\" You see, it is not possible for a virtuous person who travels by the straight and narrow path and follows Christ's commands to enjoy the praise and admiration of all people—so strong is the impulse of evil and the resistance to virtue.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homilies-on-genesis-23-8",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:luke.6.26"
+    },
+    {
+      "id": "hcf:bede:luke.6.26:0b7d5366:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:24–26",
-      "excerpt": "By the false prophets are meant those, who to gain the favour of the multitude attempt to predict future events. The Lord on the mountain pronounces only the blessings of the good, but on the plain he describes also the “woe” of the wicked, because the yet uninstructed hearers must first be brought by terrors to good works, but the perfect need but be invited by rewards.",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:26",
+      "excerpt": "Woe when all men speak well of you. This is what the Psalmist laments, because the sinner is praised in the desires of his soul, and he who does unjust things is blessed (Psalms Hebr. X). For whom it is not the least part of the punishment that his crimes are not only not censured, but are moreover praised as well done. Hence the Lord prudently does not say: Woe, because men speak well of you, as if the fault should be followed by the punishment at some other time, but woe (he says) when all men speak well of you. Because the flattery itself is the nurse of sin; just as oil to flames, so it is usually the fuel supplied to those burning in guilt, and certainly it is the greatest punishment of sinners. For just as the hungry and weeping poor ought to be weighed down by the wickedness of evildoers, so those indulging in riches, feasts, and laughter are by the anger of a strict judge more fueled by their courtiers to greater punishment.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.26"
+    },
+    {
+      "id": "hcf:bede:luke.6.26:97b6bf7d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:26",
+      "excerpt": "For such things indeed did their fathers do to the prophets. He means false prophets, who are also often called prophets in sacred scripture, because they seek the favor of the people by predicting the future, that is, by attempting to foretell it. Hence Ezekiel says: Woe to the foolish prophets, who follow their own spirit and have seen nothing. Like foxes in the deserts, your prophets were, O Israel (Ezek. XIII). Therefore the Lord on the mount sets forth the blessings only of the good, but in the plain he describes also the woes of the reprobate. Because as yet uncultivated listeners must necessarily be driven to good through threats and fears, but the perfect may be sufficiently invited by rewards.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.26"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.26:9720667f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 6:26",
+      "excerpt": "\"Woe unto you, when all men shall speak well of you! for so did their fathers to the false prophets.\" With equal stress does the Creator, by His prophet Isaiah, censure those who seek after human flattery and praise: \"O my people, they who call you happy mislead you, and disturb the paths of your feet.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.26"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.26:3c2cbe03:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 6:26",
+      "excerpt": "\"In the like manner,\" says He, \"did their fathers unto the prophets.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.26"
     }
   ]
 }

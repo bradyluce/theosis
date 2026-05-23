@@ -109,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.10.15:5ccdf075:1"
       ]
     },
     {
@@ -146,6 +153,58 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.10.15:a641b6d9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:15",
+      "excerpt": "And you, Capernaum, will you be exalted to heaven? You will be brought down to hell. There is a double meaning in this sentence. Either you will be brought down to hell because you have most arrogantly resisted my preaching; or because, having been exalted to heaven by my residence, from my signs and miracles having had such privilege, you will be punished with greater torments, since you refused to believe even these. And lest anyone think that this rebuke applies only to those cities or persons who, seeing the Lord in the flesh, despised Him, and not to all who even today despise the words of the Gospel, He added, saying:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.15"
+    },
+    {
+      "id": "hcf:john-chrysostom:luke.10.15:c946d904:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:15",
+      "excerpt": "And in another place: Now when our Lord had done many mighty works in Capernaum, and had Himself dwelt there, it seemed to be exalted above the other cities, but through unbelief fell to destruction. Hence it follows, And thou, Capernaum, which art exalted to heaven, shall be thrust down to hell; that, in fact, the judgment might be in proportion to the honour.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.15"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.15:c06285c0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:15",
+      "excerpt": "And you, Capernaum, exalted to the heavens, as one glorified by the many miracles performed in you, shall be brought down to Hades; you will be condemned for the very reason that even after so many miracles you do not believe.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.10.15"
     }
   ]
 }

@@ -41,24 +41,6 @@
       ]
     },
     {
-      "id": "catena-john-1170-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.43",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:41–43",
-      "excerpt": "But what say ye? Have ye God for your Father, and do ye blame Christ for speaking thus? Yet true it was, that many of them were born of fornication, for people then used to form unlawful connexions. But this is not the thing our Lord has in view. He is bent on proving that they are not from God. Jesus said unto them, If God were your Father, ye would love Me: for I proceeded forth and came from God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1172-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.43",
@@ -77,14 +59,39 @@
       ]
     },
     {
-      "id": "catena-john-1175-v43",
+      "id": "catena-john-1176-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.43",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:41–43",
+      "excerpt": "And they could not hear, because they would not believe, and amend their lives.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.8.43:4dfc3c77:0"
+      ]
+    },
+    {
+      "id": "catena-john-1170-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.43",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 8:41–43",
-      "excerpt": "And because they were ever enquiring, What is this which He saith, Whither I go ye cannot come? He adds here, Why do ye not understand My speech? even because ye cannot hear My word.",
+      "excerpt": "But what say ye? Have ye God for your Father, and do ye blame Christ for speaking thus? Yet true it was, that many of them were born of fornication, for people then used to form unlawful connexions. But this is not the thing our Lord has in view. He is bent on proving that they are not from God. Jesus said unto them, If God were your Father, ye would love Me: for I proceeded forth and came from God.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-1176-v43",
+      "id": "catena-john-1175-v43",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.43",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 8:41–43",
-      "excerpt": "And they could not hear, because they would not believe, and amend their lives.",
+      "excerpt": "And because they were ever enquiring, What is this which He saith, Whither I go ye cannot come? He adds here, Why do ye not understand My speech? even because ye cannot hear My word.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -218,7 +225,116 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:john.8.43:55f11ceb:1"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.8.43:c5a002b2:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-42",
+      "title": "Tractates on John 42 on john 8:43",
+      "excerpt": "\"Why,\" He says, \"do ye not understand my speech? Even because ye cannot hear my word.\" And so they could not understand, because they could not hear. And whence could they not hear, but just because they refused to be set right by believing?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.43"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.8.43:2ec562e8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 8:43",
+      "excerpt": "Why do you not understand My speech, do not comprehend and do not grasp what I am saying? Without doubt, for no other reason than that you cannot hear My word, that is, you do not want to. For \"cannot\" is used in place of \"do not want to.\" As long as envy and murderous intent dwell in you, how can you listen to what I am saying?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.8.43"
+    },
+    {
+      "id": "hcf:origen:john.8.43:60556f83:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-20-163-64",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 20.163-64 on john 8:43",
+      "excerpt": "First then, we must acquire the ability to hear the divine word so that subsequently we may also be able to know the whole teaching of Jesus. For it is possible that, though one previously could not hear Jesus' word, he attains the ability to hear it, because one cannot hear until his hearing is healed by the Word who says to the deaf, \"Be opened.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.8.43"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.43:311ba255:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-54",
+      "title": "Homily on the Gospel of John 54 on john 8:43",
+      "excerpt": "\"What sayest thou? Ye have God for your Father, and do ye blame Christ for asserting this?\" Seest thou that He said that God was His Father in a special manner? When therefore He had cast them out of their relationship to Abraham, having nothing to reply, they dare a greater thing, and betake themselves to God. But from this honor also He expelleth them, saying, \"If God were your Father, ye would love Me; for I proceeded forth and came from God; neither came I of Myself, but He sent Me. Why do ye not understand My speech? Even because ye cannot hear My word.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.43"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.8.43:c9444d14:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 8:43",
+      "excerpt": "What we have oftentimes said we say again for profit to the readers: for there is no harm in our discourse going very frequently through what may profit. It is the custom then of our Saviour Christ not altogether to accept from those who disbelieve Him, the word that boiled up from their tongue, but to look rather on the hearts and reins, and to make His replies to the thoughts that were yet revolving in the depth of their hearts. For man who knows not the thoughts that are in another, will needs admit the uttered word, but God not so; for He knowing all things, takes the thought for the voice. When then the Lord said to the Jews that He had come not of Himself, like them who of their own mind and not of the Divine Spirit advance to prophesy, but that He was sent by God, they again imagine, or reason among themselves, or secretly whispering one to another said, Many Prophets have spoken the things of God and brought words from the Spirit unto us, but we find nought among them of such sort as is in this man's words. For He bears us wholly away from the worship after the Law and removes us to some other polity and introduces to us a strange transition of life. Dissonant therefore manifestly and irreconcileable is His Discourse with that of those of old. Since He beheld them thinking (as is likely) these things, shewing that He is by Nature God and knoweth the counsels of the hearts, He takes hold of it and says, Why do ye not understand My Speech? because ye cannot hear My Word. I am not ignorant (He says) that ye cannot comprehend My Speech, or doctrine; but I will tell you the reason and will clearly set before you what is the hindrance. Ye cannot hear My Word. He says, ye cannot, convicting them of impotence unto perfect good, because of their being fore-mastered by their passions. For the love of pleasure unnerves the mind, and the unbridled tendency towards evil yet weakening the sinew of the heart, renders it feeble and most spiritless to the power of performing any virtue. Being therefore fore-weakened by tendencies to vice and tyrannized by your own passions ye cannot, He says, hear My Word. For right are the ways of the Lord, as it is written, and the just shall walk in them, but the transgressors shall become impotent in them. Akin to this will you find that too which was in another place said to the Pharisees, How can ye believe which receive honour one of another and seek not the honour that, cometh from the only God? for verily in this their not being able to believe shews the voluntary weakness of their understanding or that their mind has been before overcome of vainglory. And we find again that that is true of the Jews which has been spoken by the voice of Paul, But the natural man receiveth not the things of the Spirit of God, for they are foolishness to him. Since therefore they were natural, they deemed that He was foolishness Who was inviting them to be saved, and was teaching them the path of an excellent conversation, and directing them full well unto the power of pleasing God who delighteth in virtue, to whom be all honour, glory, might, for ever and ever. Amen.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.8.43"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.8.43:5eeeff8e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 8:43",
+      "excerpt": "He shows that they lack this sign when he says, Why do you not understand what I say? For as was stated above, to love Christ is the sign of being a child of God; but they did not love Christ; therefore it is obvious that they did not have this sign. That they do not love Christ is shown by the effect of love: for the effect of loving someone is that the lover joyfully hears the words of the beloved; thus we read: \"Let me hear your voice, for your voice is sweet\" (Song 2:14). And again, \"My companions are listening for your voice; let me hear it\" (Song 8:13). Therefore, because they did not love Christ, it seemed tedious to them even to hear his voice: \"This is a hard saying, who can listen to it?\" (6:60); \"The very sight of him is a burden to us\" (Wis 2:15).\r\n\r\nIt sometimes happens that a person is not glad to hear the words of another because he cannot weigh them and for that reason does not understand them, and so he contradicts them: \"Answer, I beseech you, without contention—and you shall not find iniquity on my tongue\" (Job 6:29). Therefore he says, Why do you not understand what I say? You question what I mean, as \"Where I am going, you cannot come\" (8:21). I say that you do not understand because you cannot bear to hear my word, i.e., your heart is so hardened against me that you do not even want to hear me.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.8.43"
     }
   ]
 }

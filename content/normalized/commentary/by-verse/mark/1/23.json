@@ -4,24 +4,6 @@
   "verseNumber": 23,
   "entries": [
     {
-      "id": "catena-mark-0083-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.23",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "Moreover, how great is the power which the lowliness of God, appearing in the form of a servant, has over the pride of devils, the devils themselves know so well, that they express it to the same Lord clothed in the weakness of flesh. For there follows, And he cried out, saying, What have we to do with thee, Jesus of Nazareth, &c. For it is evident in these words that there was in them knowledge, but there was not charity; and the reason was, that they feared their punishment from Him, and loved not the righteousness in Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0088-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.23",
@@ -40,35 +22,17 @@
       ]
     },
     {
-      "id": "catena-mark-0081-v23",
+      "id": "catena-mark-0083-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.23",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "augustine",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "Since by the envy of the devil death first entered into the world, it was right that the medicine of healing should first work against the author of death; and therefore it is said, And there was in their synagogue a man, &c.",
+      "excerpt": "Moreover, how great is the power which the lowliness of God, appearing in the form of a servant, has over the pride of devils, the devils themselves know so well, that they express it to the same Lord clothed in the weakness of flesh. For there follows, And he cried out, saying, What have we to do with thee, Jesus of Nazareth, &c. For it is evident in these words that there was in them knowledge, but there was not charity; and the reason was, that they feared their punishment from Him, and loved not the righteousness in Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0084-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.23",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "For the devils, seeing the Lord on the earth, thought that they were immediately to be judged.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -94,6 +58,56 @@
       ]
     },
     {
+      "id": "catena-mark-0081-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.23",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "Since by the envy of the devil death first entered into the world, it was right that the medicine of healing should first work against the author of death; and therefore it is said, And there was in their synagogue a man, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.23:2eff1707:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0084-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.23",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "For the devils, seeing the Lord on the earth, thought that they were immediately to be judged.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.23:933e2a31:2"
+      ]
+    },
+    {
       "id": "catena-mark-0086-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.23",
@@ -109,6 +123,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.23:367c6a63:1"
       ]
     },
     {
@@ -130,32 +151,48 @@
       ]
     },
     {
-      "id": "catena-mark-0082-v23",
+      "id": "hcf:bede:mark.1.23:11bfdf95:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.1.23",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "The word Spirit is applied to an Angel, the air, the soul, and even the Holy Ghost. Lest therefore by the sameness of the name we should fall into error, he adds, unclean. And he is called unclean on account of his impiousness and far removal from God, and because he employs himself in all unclean and wicked works.",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:23",
+      "excerpt": "And there was in their synagogue a man with an unclean spirit, etc. This is not a confession of the will, which follows the reward of confessing, but an extortion of necessity, which compels the guilty to confess. And just as if runaway slaves, after a long time, see their master, they fear nothing but whips, so also the demons, seeing the Lord suddenly dwelling on earth, believed that he had come to judge them. The presence of the Savior is torment for demons.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.23"
     },
     {
-      "id": "catena-mark-0085-v23",
+      "id": "hcf:theophylact-of-ohrid:mark.1.23:347f1de3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:23",
+      "excerpt": "Evil spirits are called \"unclean\" because they love all manner of unclean deeds. To come out of a man the demon considers \"destruction\" for itself. Malicious demons in general count it as suffering for themselves when they are not permitted to do evil to people. Moreover, being lovers of the flesh and accustomed to taking pleasure in matter, they endure as it were a great hunger when they do not dwell in bodies. Therefore the Lord also says that the demonic race is cast out by fasting. The unclean spirit did not say to Christ: You are holy, since many of the prophets too were holy, but said \"the Holy One,\" that is, the Only One, Holy in His very essence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.23"
+    },
+    {
+      "id": "catena-mark-0089-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.23",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "Or else the devil so speaks, as if he said, ‘by taking away uncleanness, and giving to the souls of men divine knowledge, Thou allowest us no place in men.’",
+      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -184,14 +221,39 @@
       ]
     },
     {
-      "id": "catena-mark-0089-v23",
+      "id": "catena-mark-0082-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.23",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
+      "excerpt": "The word Spirit is applied to an Angel, the air, the soul, and even the Holy Ghost. Lest therefore by the sameness of the name we should fall into error, he adds, unclean. And he is called unclean on account of his impiousness and far removal from God, and because he employs himself in all unclean and wicked works.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.23:dbce49df:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0085-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.23",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "Or else the devil so speaks, as if he said, ‘by taking away uncleanness, and giving to the souls of men divine knowledge, Thou allowest us no place in men.’",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -235,6 +297,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.23:ec04c882:0"
       ]
     }
   ]

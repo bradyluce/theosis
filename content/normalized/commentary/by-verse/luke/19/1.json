@@ -4,6 +4,24 @@
   "verseNumber": 1,
   "entries": [
     {
+      "id": "catena-luke-2760-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.1",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:1–10",
+      "excerpt": "He has well added, that our Lord was to pass that way, either where the sycamore-tree was, or where he was who was about to believe, that so He might preserve the mystery, and sow the seeds of grace. For He had so come as that through the Jews He came to the Gentiles. He sees then Zacchæus above, for already the excellence of his faith shone forth amidst the fruits of good works, and the loftiness of the fruitful tree; but Zacchæus stands out above the tree, as one who is above the law.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2744-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
@@ -22,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-luke-2745-v1",
+      "id": "catena-luke-2749-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
-      "excerpt": "But Zacchæus made no delay in what he did, and so was accounted worthy of the favour of God, which gives sight to the blind, and calls them who are afar off.",
+      "excerpt": "Uninvited he invites Himself to his house; as it follows, Zacchæus, make haste, and come down, & c. for He knew how richly He would reward his hospitality. And though He had not yet heard the word of invitation, He had already seen the will.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -48,24 +66,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
       "excerpt": "What means the Evangelist by describing his stature, and that of none other? It is perhaps because he was young in wickedness, or as yet weak in the faith. For he was not yet prostrate in sin who could climb up. He had not yet seen Christ.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2749-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.1",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:1–10",
-      "excerpt": "Uninvited he invites Himself to his house; as it follows, Zacchæus, make haste, and come down, & c. for He knew how richly He would reward his hospitality. And though He had not yet heard the word of invitation, He had already seen the will.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,14 +112,14 @@
       ]
     },
     {
-      "id": "catena-luke-2760-v1",
+      "id": "catena-luke-2745-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
-      "excerpt": "He has well added, that our Lord was to pass that way, either where the sycamore-tree was, or where he was who was about to believe, that so He might preserve the mystery, and sow the seeds of grace. For He had so come as that through the Jews He came to the Gentiles. He sees then Zacchæus above, for already the excellence of his faith shone forth amidst the fruits of good works, and the loftiness of the fruitful tree; but Zacchæus stands out above the tree, as one who is above the law.",
+      "excerpt": "But Zacchæus made no delay in what he did, and so was accounted worthy of the favour of God, which gives sight to the blind, and calls them who are afar off.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -148,14 +148,39 @@
       ]
     },
     {
-      "id": "catena-luke-2750-v1",
+      "id": "catena-luke-2759-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
-      "excerpt": "See here, the camel disencumbered of his hunch passes through the eye of a needle, that is, the rich man and the publican abandoning his love of riches, and loathing his dishonest gains, receives the blessing of his Lord’s company. It follows, And he made haste, and came down, and received him joyfully.",
+      "excerpt": "Or the crowd, that is, the general habit of vice, which rebuked the blind man crying out, lest he should seek the light, also impedes Zacchæus looking up, that he might not see Jesus; that as by crying out the more the blind man overcame the crowd, so the man weak in the faith by forsaking earthly things, and climbing the tree of the Cross, surmounts the opposing multitude. The sycamore, which is a tree resembling the mulberry in foliage, but exceeding it in height, whence by the Latins it is called “lofty,” is called the “foolish fig-tree;” and so the Cross of our Lord sustains believers, as…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.19.1:b6d26689:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2761-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.1",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:1–10",
+      "excerpt": "The Lord as He journeyed came to the place where Zacchæus had climbed the sycamore, for having sent His preachers throughout the world in whom He Himself spoke and went, He comes to the Gentile people, who were already raised up on high through faith in His Passion, and whom when He looked up He saw, for He chose them through grace. Now our Lord once abode in the house of the chief of the Pharisees, but when He did works such as none but God could do, they railed at Him. Wherefore hating their deeds He departed, saying, Your house shall be left unto you desolate; (Matt. 23:38.) but now He…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -202,32 +227,14 @@
       ]
     },
     {
-      "id": "catena-luke-2759-v1",
+      "id": "catena-luke-2750-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
-      "excerpt": "Or the crowd, that is, the general habit of vice, which rebuked the blind man crying out, lest he should seek the light, also impedes Zacchæus looking up, that he might not see Jesus; that as by crying out the more the blind man overcame the crowd, so the man weak in the faith by forsaking earthly things, and climbing the tree of the Cross, surmounts the opposing multitude. The sycamore, which is a tree resembling the mulberry in foliage, but exceeding it in height, whence by the Latins it is called “lofty,” is called the “foolish fig-tree;” and so the Cross of our Lord sustains believers, as…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2761-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.1",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:1–10",
-      "excerpt": "The Lord as He journeyed came to the place where Zacchæus had climbed the sycamore, for having sent His preachers throughout the world in whom He Himself spoke and went, He comes to the Gentile people, who were already raised up on high through faith in His Passion, and whom when He looked up He saw, for He chose them through grace. Now our Lord once abode in the house of the chief of the Pharisees, but when He did works such as none but God could do, they railed at Him. Wherefore hating their deeds He departed, saying, Your house shall be left unto you desolate; (Matt. 23:38.) but now He…",
+      "excerpt": "See here, the camel disencumbered of his hunch passes through the eye of a needle, that is, the rich man and the publican abandoning his love of riches, and loathing his dishonest gains, receives the blessing of his Lord’s company. It follows, And he made haste, and came down, and received him joyfully.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -256,14 +263,14 @@
       ]
     },
     {
-      "id": "catena-luke-2755-v1",
+      "id": "catena-luke-2764-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
-      "excerpt": "He said not that he “was” a son of Abraham, but that he now is. For before when he was the chief among the publicans, and bore no likeness to the righteous Abraham, he was not his son. But because some murmured that he tarried with a man who was a sinner, he adds in order to restrain them, For the Son of man came to seek and to save that which was lost.",
+      "excerpt": "The Lord said to him, Make haste and come down, that is, “Thou hast ascended by penitence to a place too high for thee, come down by humility, lest thy exaltation cause thee to slip. I must abide in the house of a humble man. We have two kinds of goods in us, bodily, and spiritual; the just man gives up all his bodily goods to the poor, but he forsakes not his spiritual goods, but if he has extorted any thing from any one, he restores to him fourfold; signifying thereby that if a man by repentance walks in the opposite path to his former perverseness, he by the manifold practice of virtue…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -292,35 +299,17 @@
       ]
     },
     {
-      "id": "catena-luke-2764-v1",
+      "id": "catena-luke-2755-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
-      "excerpt": "The Lord said to him, Make haste and come down, that is, “Thou hast ascended by penitence to a place too high for thee, come down by humility, lest thy exaltation cause thee to slip. I must abide in the house of a humble man. We have two kinds of goods in us, bodily, and spiritual; the just man gives up all his bodily goods to the poor, but he forsakes not his spiritual goods, but if he has extorted any thing from any one, he restores to him fourfold; signifying thereby that if a man by repentance walks in the opposite path to his former perverseness, he by the manifold practice of virtue…",
+      "excerpt": "He said not that he “was” a son of Abraham, but that he now is. For before when he was the chief among the publicans, and bore no likeness to the righteous Abraham, he was not his son. But because some murmured that he tarried with a man who was a sinner, he adds in order to restrain them, For the Son of man came to seek and to save that which was lost.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2746-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.19.1",
-      "topicSlugs": [],
-      "personId": "titus-bostra",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 19:1–10",
-      "excerpt": "The seed of salvation had begun to spring up in him, for he desired to see Jesus, having never seen Him. For if he had seen Him, he would long since have given up the Publican’s wicked life. No one that sees Jesus can remain any longer in wickedness. But there were two obstacles to his seeing Him. The multitude not so much of men as of his sins prevented him, for he was little of stature.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -346,22 +335,107 @@
       ]
     },
     {
-      "id": "catena-luke-2752-v1",
+      "id": "catena-luke-2746-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.19.1",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
+      "personId": "titus-bostra",
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
-      "excerpt": "Observe the gracious kindness of the Saviour. The innocent associates with the guilty, the fountain of justice with covetousness, which is the source of injustice. Having entered the publican’s house, He suffers no stain from the mists of avarice, but disperses them by the bright beam of His righteousness. But those who deal with biting words and reproaches, try to cast a slur upon the things which were done by Him; for it follows, And when they saw it, they all murmured, saying, That he was gone to be guest with a man that is a sinner. But He, though accused of being a wine-bibber and a…",
+      "excerpt": "The seed of salvation had begun to spring up in him, for he desired to see Jesus, having never seen Him. For if he had seen Him, he would long since have given up the Publican’s wicked life. No one that sees Jesus can remain any longer in wickedness. But there were two obstacles to his seeing Him. The multitude not so much of men as of his sins prevented him, for he was little of stature.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 55,
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.19.1:5134ea06:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 19:1",
+      "excerpt": "\"And, behold, there was a man named Zacchaeus.\" Zacchaeus in the sycamore; the blind man by the wayside. The Lord waits for the one to have mercy on him and honors the other with the radiance of his visit. He questions the one before healing him and attends the other's house as an uninvited guest. He knew that his host's reward was to be rich. Although Christ had not yet heard his voice of invitation, he has heard his good will.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.19.1"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.19.1:2ffdd29c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-127",
+      "title": "Commentary on the Gospel of Luke, Sermon 127 on luke 19:1",
+      "excerpt": "Zacchaeus was chief of the publicans, a man entirely abandoned to covetousness, and whose sole object was the increase of his gains: for such was the practice of the publicans, though Paul calls it \"idolatry,\" possibly as being fit only for those who have no knowledge of God. But Zacchaeus continued not among their number, but was counted worthy of mercy at Christ's hands: for He it is Who calls near those who are afar off, and gives light to those who are in darkness.\r\n\r\nBut come then, and let us see what was the manner of Zacchaeus' conversion. He desired to see Jesus, and climbed therefore into a sycamore tree, and so a seed of salvation sprang up within him. And Christ saw this with the eyes of Deity: and therefore looking up, He saw him also with the eyes of the manhood, and as it was His purpose for all men to be saved, He extends His gentleness to him, and encouraging him, says, \"Come down quickly.\" For he had sought to see Him, but the multitude prevented him, not so much that of the people, as of his sins; and he was little of stature, not merely in a bodily point of view, but also spiritually: and in no other way could he see Him, unless he were raised up from the earth, and climbed into the sycamore, by which Christ was about to pass.\r\n\r\nNow the story contains in it an enigma: for in no other way can a man see Christ and believe in Him, except by mounting up into the sycamore, by rendering foolish his members which are upon the earth, fornication, uncleanness, etc.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.19.1"
+    },
+    {
+      "id": "hcf:bede:luke.19.1:596dcf27:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 19:1",
+      "excerpt": "And entering, he was passing through Jericho; and behold, a man named Zacchaeus, who was a chief tax collector, and he was rich. And he was seeking to see Jesus, who he was, and he could not because of the crowd, for he was of short stature. And running ahead, he climbed up into a sycamore tree to see him, because he was to pass that way. What is impossible with men is possible with God (Luke XVIII). Behold, a camel, having laid down its hump load, passes through the eye of a needle (Matthew XIX), that is, a rich man and a tax collector, having left the burden of riches, having despised the sense of frauds, ascends the narrow gate and the difficult way that leads to life (Matthew VII). With an extraordinary devotion of faith to see the Savior, what was lacking in nature, he supplied by climbing the tree, and thus justly, although he did not dare to ask, he received the blessing of the Lord's visitation, which he desired. Mystically, Zacchaeus, who is interpreted as \"justified,\" signifies a believing people from the Gentiles. The more occupied he was with worldly cares, the more he was made humble by the oppressive devices. But he was washed, he was sanctified, he was justified in the name of our Lord Jesus Christ and in the Spirit of our God, who was seeking to see the Savior passing through Jericho but could not because of the crowd. Because he desired to partake of the grace of faith which the Savior brought to the world, but the ingrained habit of vices obstructed him from reaching his desire. The same crowd of harmful habits that rebuked the blind man crying out so that he might not seek the light, also delays the tax collector looking upward so that he might not see Jesus. But just as the blind man overcame the voices of the crowds by crying out more and more, so the short man must overcome the obstacle of the harmful crowd by seeking higher things, leaving earthly things behind, ascending the tree of the cross. The sycamore tree, which is a tree with leaves similar to the mulberry, but excelling in height, and is therefore called lofty by the Latins, is called the foolish fig. And the same is the Lord's cross, which nourishes believers like a fig, but is ridiculed by unbelievers as foolishness. For we preach Christ crucified, to the Jews indeed a stumbling block, and to the Gentiles foolishness. But to those who are called, Jews and Greeks, Christ the power of God and the wisdom of God (1 Corinthians I). This very tree Zacchaeus of short stature climbs in order to be exalted, when anyone humble and aware of his own weakness, trusting in the Lord, proclaims: But far be it from me to boast except in the cross of our Lord Jesus Christ (Galatians VI). Having climbed the sycamore, he sees the Lord passing by, because through this commendable foolishness, even if not yet solidly, yet already fleetingly, and as if in passing, he gazes upon the light of heavenly wisdom.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.19.1"
+    },
+    {
+      "id": "hcf:john-chrysostom:luke.19.1:535ea589:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:untitled-commentary",
+      "title": "Commentary on luke 19:1",
+      "excerpt": "Observe the gracious kindness of the Savior. The innocent associates with the guilty, the fountain of justice with covetousness, which is the source of injustice. Having entered the publican's house, He suffers no stain from the mists of avarice, but disperses them by the bright beam of His righteousness. But those who deal with biting words and reproaches, try to cast a slur upon the things which were done by Him; for it follows, And when they saw it, they all murmured, saying, That he was gone to be guest with a man that isa sinner. But He, though accused of being a wine-bibber and a friend of publicans, regarded it not, so long as He could accomplish His end. As a physician sometimes can not save his patients from their diseases without the defilement of blood. kind so it happened here, for the publican was converted, and lived a better life. Zacchaeus stood, and said to the Lord, Behold, Lord, the half of my goods I give to the poor; and if I have defrauded any man, I restore him fourfold. Behold here is a marvel: without learning he obeys. And as the sun pouring its rays into a house enlightens it not by word, but by work, so the Savior by the rays of righteousness put to flight the darkness of sin; for the light shines in darkness. Now everything united is strong, but divided, weak, therefore Zacchaeus divides into two parts his substance. But we must be careful to observe, that his wealth was not made up from unjust gains, but from his patrimony, else how could he restore fourfold what he had unjustly extorted. He knew that the law ordered what was wrongly taken away to be restored fourfold, that if the law deterred not, a man's losses might soften him. Zacchaeus waits not for the judgment of the law, but makes himself his own judge.\r\nWhy do you accuse me if I bring sinners to righteousness? So far am I from hating them, that for their sakes I came. For I came to heal, not to judge, therefore am Ithe constant guest of those that are sick, and I suffer their noisomeness that I may supply remedies. But some one may ask, how does Paul bid us, If we have a brother that is afornicator or covetous man, with such not even to take food; whereas Christ was the guest of publicans? They were not as yet so far advanced as to be brethren, and besides, St. Paul bids us avoid our brethren only when they persist in evil, but these were converted.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:luke.19.1"
+    },
+    {
+      "id": "hcf:tertullian:luke.19.1:0ab01eac:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 19:1",
+      "excerpt": "This he promised to do, in an equally satisfactory way, when he offered the half of his goods for all works of mercy. So also \"he loosened the bands of wickedness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.19.1"
     },
     {
       "id": "catena-luke-2756-v1",
@@ -372,6 +446,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 19:1–10",
       "excerpt": "Why do ye accuse me if I bring sinners to righteousness? So far am I from hating them, that for their sakes I came. For I came to heal, not to judge, therefore am I the constant guest of those that are sick, and I suffer their noisomeness that I may supply remedies. But some one may ask, how does Paul bid us, If we have a brother that is a fornicator or covetous man, with such not even to take food; (1 Cor. 5:11.) whereas Christ was the guest of publicans? They were not as yet so far advanced as to be brethren, and besides, St. Paul bids us avoid our brethren only when they persist in evil,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2752-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.19.1",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 19:1–10",
+      "excerpt": "Observe the gracious kindness of the Saviour. The innocent associates with the guilty, the fountain of justice with covetousness, which is the source of injustice. Having entered the publican’s house, He suffers no stain from the mists of avarice, but disperses them by the bright beam of His righteousness. But those who deal with biting words and reproaches, try to cast a slur upon the things which were done by Him; for it follows, And when they saw it, they all murmured, saying, That he was gone to be guest with a man that is a sinner. But He, though accused of being a wine-bibber and a…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 55,

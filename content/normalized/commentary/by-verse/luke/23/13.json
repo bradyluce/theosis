@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.23.13:fa24d20c:0"
       ]
     },
     {
@@ -33,24 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3300-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.13",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:13–25",
-      "excerpt": "Here Pilate, who as a judge acquits Christ, is made the minister of His crucifixion. He is sent to Herod, sent back to Pilate, as it follows, Nor yet Herod, for I sent you to him, and behold nothing worthy of death is done unto him. They both refuse to pronounce Him guilty, yet for fear’s sake, Pilate gratifies the cruel desires of the Jews.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -76,14 +65,57 @@
       ]
     },
     {
-      "id": "catena-luke-3302-v13",
+      "id": "catena-luke-3300-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.13",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:13–25",
+      "excerpt": "Here Pilate, who as a judge acquits Christ, is made the minister of His crucifixion. He is sent to Herod, sent back to Pilate, as it follows, Nor yet Herod, for I sent you to him, and behold nothing worthy of death is done unto him. They both refuse to pronounce Him guilty, yet for fear’s sake, Pilate gratifies the cruel desires of the Jews.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.23.13:31720a51:0"
+      ]
+    },
+    {
+      "id": "catena-luke-3311-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.13",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:13–25",
-      "excerpt": "Perish then those writings, which, composed so long a time after Christ, convict not the accused of magical arts against Pilate, but the writers themselves of treachery and lying against Christ.",
+      "excerpt": "This chastisement wherewith Pilate sought to satisfy the people, lest their rage should go even so far as to crucify Jesus, John’s words bear testimony that he not only threatened but performed together with mockings and scourgings. But when they saw all their charges which they brought against the Lord baffled by Pilate’s diligent questioning, they resort at last to prayers only; entreating that He might be crucified.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3309-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:13–25",
+      "excerpt": "With the worst kind of death, that is, crucifixion, they long to murder the innocent. For they who hung on the cross, with their hands and feet fixed by nails to the wood, suffered a prolonged death, that their agony might not quickly cease; but the death of the cross was chosen by our Lord, as that which having overcome the Devil, He was about to place as a trophy on the brows of the faithful.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -130,14 +162,14 @@
       ]
     },
     {
-      "id": "catena-luke-3309-v13",
+      "id": "catena-luke-3302-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.13",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:13–25",
-      "excerpt": "With the worst kind of death, that is, crucifixion, they long to murder the innocent. For they who hung on the cross, with their hands and feet fixed by nails to the wood, suffered a prolonged death, that their agony might not quickly cease; but the death of the cross was chosen by our Lord, as that which having overcome the Devil, He was about to place as a trophy on the brows of the faithful.",
+      "excerpt": "Perish then those writings, which, composed so long a time after Christ, convict not the accused of magical arts against Pilate, but the writers themselves of treachery and lying against Christ.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -148,17 +180,35 @@
       ]
     },
     {
-      "id": "catena-luke-3311-v13",
+      "id": "catena-luke-3305-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.13",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:13–25",
-      "excerpt": "This chastisement wherewith Pilate sought to satisfy the people, lest their rage should go even so far as to crucify Jesus, John’s words bear testimony that he not only threatened but performed together with mockings and scourgings. But when they saw all their charges which they brought against the Lord baffled by Pilate’s diligent questioning, they resort at last to prayers only; entreating that He might be crucified.",
+      "excerpt": "For the Romans permitted the Jews to live according to their own laws and customs. And it was a natural custom of the Jews to seek pardon of the prince for those who were condemned, as they asked Jonathan of Saul. And hence it is now added, with respect to their petition, And they cried all at once, Away with this man, and release unto us Barabbas, &c. (1 Sam. 14:45.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3312-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.13",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:13–25",
+      "excerpt": "They cry out the third time against Christ, that by this third voice, they may approve the murder to be their own, which by their entreaties they extorted; for it follows, And Pilate gave sentence that it should be as they required. And he released him that for sedition and murder was cast into prison, but delivered Jesus to their will.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -174,6 +224,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:13–25",
       "excerpt": "Wherefore by the testimony of two men, Jesus is declared innocent, but the Jews His accusers brought forward no witness whom they could believe. See then how truth triumphs. Jesus is silent, and His enemies witness for Him; the Jews make loud cries, and not one of them corroborates their clamour.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.23.13:4311941b:1"
+      ]
+    },
+    {
+      "id": "catena-luke-3308-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.13",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:13–25",
+      "excerpt": "Thus it came to pass, the once holy nation rages to slay, the Gentile Pilate forbids slaughter; as it follows, Pilate therefore spoke again unto them, but they cried out, Crucify, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -202,42 +277,6 @@
       ]
     },
     {
-      "id": "catena-luke-3305-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.13",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:13–25",
-      "excerpt": "For the Romans permitted the Jews to live according to their own laws and customs. And it was a natural custom of the Jews to seek pardon of the prince for those who were condemned, as they asked Jonathan of Saul. And hence it is now added, with respect to their petition, And they cried all at once, Away with this man, and release unto us Barabbas, &c. (1 Sam. 14:45.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3308-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.13",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:13–25",
-      "excerpt": "Thus it came to pass, the once holy nation rages to slay, the Gentile Pilate forbids slaughter; as it follows, Pilate therefore spoke again unto them, but they cried out, Crucify, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3310-v13",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.13",
@@ -256,22 +295,106 @@
       ]
     },
     {
-      "id": "catena-luke-3312-v13",
+      "id": "hcf:ambrose-of-milan:luke.23.13:657dce89:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.23.13",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-100",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.100 on luke 23:13",
+      "excerpt": "He is sent to Herod, sent back to Pilate. And although neither of them pronounce him guilty, they still comply with the desires of someone else's cruelty. Indeed, Pilate washed his hands, but he did not wash away his deeds; for a judge ought not to yield to envy or fear, so as to deliver the blood of an innocent person. His wife warned him: grace shone in the darkness; divinity was evident; yet she did not temper the sacrilegious sentence in this way.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.23.13"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.23.13:af81207a:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-101",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.101 on luke 23:13",
+      "excerpt": "Similarly, I think that this is a prototype of all judgments that they would condemn those whom they believed to be innocent. However, it is evident that the Gentiles are more tolerant than the Jews, as Pilate's association with them demonstrates, and they are more persuaded by divine works.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.23.13"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.23.13:0f5549cf:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:13–25",
-      "excerpt": "They cry out the third time against Christ, that by this third voice, they may approve the murder to be their own, which by their entreaties they extorted; for it follows, And Pilate gave sentence that it should be as they required. And he released him that for sedition and murder was cast into prison, but delivered Jesus to their will.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 23:13",
+      "excerpt": "When Christ was sent back to Pilate, see how the truth shines forth again. \"You,\" says Pilate, \"brought this man to me as one who perverts the people\"; but I find nothing in Him \"worthy of death,\" nor does Herod. Do you see the testimony of two men, and moreover one a governor and the other a king, perfectly true? Neither I, he says, nor King Herod have found any fault in Him. What will the Jews say to this? The judges themselves testify that this man is innocent; you, the accusers, have not brought forward a single witness: whom then should one believe? It is wondrous how the truth prevails! Jesus is silent, yet His enemies testify in His favor. The Jews cry out, and no one confirms their clamor. Pilate was a weak man and stood up very little for the truth. He feared slander, lest they accuse him of releasing a seditious man. For he did not know how to say: we will not fear your fear, but the Lord Himself shall be my fear (Isa. 8:12–13).",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.23.13"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.23.13:75bb8813:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-152",
+      "title": "COMMENTARY ON LUKE, HOMILY 152 on luke 23:13",
+      "excerpt": "They brought the holy and just One to Pilate. They spoke violent and unrestrained words against him and poured out falsely invented accusations. They persisted in the ferocity with which they accused him. Pilate then ruled that it should be as they desired, although he had publicly said, \"I find no wickedness in this man.\" It says, \"They cried out, 'Away with him, crucify him!' \" The Lord had rebuked this unmerciful and unlawful cry by the voice of the prophet Isaiah. It is written, \"The vineyard of the Lord of hosts is the house of Israel, and the men of Judah are his pleasant planting; and he looked for justice, but behold, bloodshed; for righteousness, but behold, a cry!\" In another place, he said of them, \"Woe to them, for they have strayed from me! Destruction to them, for they have rebelled against me! I would redeem them, but they speak lies against me.\" It is written again, \"Their princes shall fall by the sword, because of the rudeness of their tongue.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-152",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.23.13"
+    },
+    {
+      "id": "hcf:cyril-of-jerusalem:luke.23.13:cc2e00fe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-jerusalem",
+      "workId": "hcf:work:cyril-of-jerusalem:catechetical-lecture-13-3",
+      "title": "Catechetical Lecture 13:3 on luke 23:13",
+      "excerpt": "Many have been crucified throughout the world, but the demons are not afraid of any of these. These people died because of their own sins, but Christ died for the sin of others. He \"did not sin, neither was deceit found in his mouth.\" It was not Peter, who could be suspected of partiality, who said this, but Isaiah, who, although not present in the flesh, in spirit foresaw the Lord's coming in the flesh. Why do I bring only the prophet as a witness? Take the witness of Pilate himself. He passed judgment on him, by saying, \"I find no guilt in this man.\" When he delivered him over and washed his hands, he said, \"I am innocent of the blood of this just man.\" The robber is another witness to Jesus' innocence. He is the first man to enter paradise. He rebuked his friend and said, \"We are receiving what our deeds deserved, but this man has done nothing wrong, because you and I were present at his judgment.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c386"
+      ],
+      "targetVerseId": "kjva:luke.23.13"
+    },
+    {
+      "id": "hcf:tertullian:luke.23.13:567af3c7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:an-answer-to-the-jews",
+      "title": "An Answer to the Jews on luke 23:13",
+      "excerpt": "And \"the clouds were commanded not to rain a shower upon the vineyard of Sorek,\" -the clouds being celestial benefits, which were commanded not to be forthcoming to the house of Israel; for it \"had borne thorns\"-whereof that house of Israel had wrought a crown for Christ-and not \"righteousness, but a clamour,\"-the clamour whereby it had extorted His surrender to the cross. And thus, the former gifts of grace being withdrawn, \"the law and the prophets were until John,\" and the fishpool of Bethsaida until the advent of Christ: thereafter it ceased curatively to remove from Israel infirmities of health; since, as the result of their perseverance in their frenzy, the name of the Lord was through them blasphemed, as it is written: \"On your account the name of God is blasphemed among the Gentiles: \" for it is from them that the infamy (attached to that name) began, and (was propagated during) the interval from Tiberius to Vespasian.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.23.13"
     }
   ]
 }

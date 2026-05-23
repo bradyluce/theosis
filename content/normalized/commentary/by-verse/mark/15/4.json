@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.15.4:39ae9c73:0"
       ]
     },
     {
@@ -30,24 +37,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:1–5",
       "excerpt": "The Jews had a custom of delivering him whom they had condemned to death, bound to the judge. Wherefore after the condemnation of Christ, the Evangelist adds: And straightway in the morning the Chief Priests held a consultation with the elders and Scribes and the whole council, and bound Jesus, and carried him away, and delivered him to Pilate. But it must be observed, that they did not then first bind Him, but they bound Him on first taking Him in the garden by night, as John declares.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1277-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.4",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:1–5",
-      "excerpt": "By Pilate’s asking Him about no other accusation, except whether He was King of the Jews, they are convicted of impiety, for they could not even find a false accusation against our Saviour. It goes on: And he answering said unto him, Thou sayest. He answers in this way so as both to speak the truth, and yet not to be open to cavil.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -73,20 +62,27 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.4:e249fde8:1"
       ]
     },
     {
-      "id": "catena-mark-1276-v4",
+      "id": "catena-mark-1277-v4",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.4",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:1–5",
-      "excerpt": "They then gave Jesus up to the Romans, but were themselves given up by God into the hands of the Romans, that the Scriptures might be fulfilled, which say, Recompense them after the work of their hands. (Ps. 28:5) It goes on: And Pilate asked him, Art thou the King of the Jews?",
+      "excerpt": "By Pilate’s asking Him about no other accusation, except whether He was King of the Jews, they are convicted of impiety, for they could not even find a false accusation against our Saviour. It goes on: And he answering said unto him, Thou sayest. He answers in this way so as both to speak the truth, and yet not to be open to cavil.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -112,6 +108,24 @@
       ]
     },
     {
+      "id": "catena-mark-1276-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.4",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:1–5",
+      "excerpt": "They then gave Jesus up to the Romans, but were themselves given up by God into the hands of the Romans, that the Scriptures might be fulfilled, which say, Recompense them after the work of their hands. (Ps. 28:5) It goes on: And Pilate asked him, Art thou the King of the Jews?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1281-v4",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.4",
@@ -127,7 +141,82 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.4:3876a3f5:1"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.15.4:d12c6a23:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:4",
+      "excerpt": "Pilate, however, again asked him, saying: Do you not answer anything? See in how many things they accuse you. But Jesus no longer answered anything. Although it is a Gentile who condemns Jesus, he attributes the cause to the Jewish people: See in how many things they accuse you. Jesus, however, did not want to answer, lest, by dispelling the accusation, he would be released by the governor, and the benefit of the cross delayed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.4"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.4:d5fdfb5f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:4",
+      "excerpt": "But when asked a second time, Christ answered nothing and thereby brought Pilate to amazement. For Pilate marveled that He, being learned in the law and eloquent and having the ability to overthrow with a single answer the slanders brought against Him, said nothing, but on the contrary, humbly endured the accusations.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.4"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.15.4:e1bc2159:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-ix-on-the-advantage-of-patience-24",
+      "title": "Treatise IX. On the Advantage of Patience 24 on mark 15:4",
+      "excerpt": "What great patience this is that he who is adored in heaven is not yet avenged on earth! Let us think of his patience, beloved brothers and sisters, in our persecutions and sufferings. Let us show forth the full obedience that is inspired by our expectation of his coming. Let us not hasten with the impious and shameless haste of a servant to defend ourselves before the Lord. Let us rather persevere and let us labor, and be watchful with all our heart and steadfast even to total resignation. Let us guard the precepts of the Lord, so that when the day of wrath and vengeance comes, we may not be punished with the impious and sinners but may be honored with the just and those who fear God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.15.4"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:mark.15.4:fd637b17:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:oration-29-on-the-son-20",
+      "title": "ORATION 29, ON THE SON 20 on mark 15:4",
+      "excerpt": "A lamb, he is silent—yet he is \"word,\" proclaimed by \"the voice of one crying in the wilderness.\" He is weakened, wounded—yet he cures every disease and every weakness. He is brought up to the tree and nailed to it—yet by the tree of life he restores us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:oration-29-on-the-son-20",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390"
+      ],
+      "targetVerseId": "kjva:mark.15.4"
     }
   ]
 }

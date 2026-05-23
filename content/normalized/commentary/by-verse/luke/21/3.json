@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.21.3:9b112367:0"
       ]
     },
     {
@@ -37,6 +44,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.21.3:b0692ce1:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2963-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.21.3",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 21:1–4",
+      "excerpt": "Now mystically, the rich men who cast their gifts into the treasury signify the Jews puffed up with the righteousness of the law; the poor widow, the simplicity of the Church which is called poor, because it has either cast away the spirit of pride, or its sins, as if they were worldly riches. But the Church is a widow, because her Husband endured death for her. She cast two mites into the treasury, because in God’s sight, in whose keeping are all the offerings of our works, she presents her gifts, whether of love to God and her neighbour, or of faith and prayer. And these excel all the works…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.21.3:1ca6eca7:0"
       ]
     },
     {
@@ -76,24 +115,6 @@
       ]
     },
     {
-      "id": "catena-luke-2963-v3",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.21.3",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 21:1–4",
-      "excerpt": "Now mystically, the rich men who cast their gifts into the treasury signify the Jews puffed up with the righteousness of the law; the poor widow, the simplicity of the Church which is called poor, because it has either cast away the spirit of pride, or its sins, as if they were worldly riches. But the Church is a widow, because her Husband endured death for her. She cast two mites into the treasury, because in God’s sight, in whose keeping are all the offerings of our works, she presents her gifts, whether of love to God and her neighbour, or of faith and prayer. And these excel all the works…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2964-v3",
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.3",
@@ -109,7 +130,116 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.21.3:0dc630b7:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.21.3:cf0ba909:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 21:3",
+      "excerpt": "And he saw a poor widow casting in two small coins, and said, \"Truly I tell you, this poor widow has put in more than all of them.\" This place morally communicates to us how acceptable to God anything we offer with a good heart is, for He undoubtedly weighs the heart and not the substance, and does not consider how much is given in His sacrifices, but from how much it is given. According to the laws of allegory, the rich who were casting gifts into the treasury represent Jews puffed up by the righteousness of the law, while the poor widow signifies the simplicity of the Church. She is rightly called poor because she has cast away either the spirit of pride or sins as if they were the riches of the world. She is called a widow, for her Husband bore death for her, and now, hidden from her eyes in the recesses of heaven, He lives as if in part of another region. She casts two small coins into the treasury because she presents into the sight of the Divine Majesty, where the offerings of our work are kept as if inscribed and recorded by a certain number, either charity towards God and neighbor, or the gifts of her faith and prayer, which are considered small due to her realization of her own fragility, but accepted due to the merit of her pious devotion, surpassing all the works of the proud Jews.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.21.3"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.21.3:b3c1980e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-138",
+      "title": "COMMENTARY ON LUKE, HOMILY 138 on luke 21:3",
+      "excerpt": "This may perhaps irritate some among the rich. We will therefore address a few remarks to them. You delight, O rich person, in the abundance of your possessions.… You offer not so much in proportion to your means as merely that which when you give, you will never miss—out of great abundance, a little. The woman offered two farthings, but she possessed nothing more than what she offered. She had nothing left. With empty hand but a hand bountiful of the little she possessed, she went away from the treasury. Did she not therefore justly carry off the crown? Did not the decree of superiority come to her by a holy judgment? Did she not surpass your bountifulness, in regard at least of her readiness?",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-138",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.21.3"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.21.3:b76bc027:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:letters-to-laymen-84",
+      "title": "LETTERS TO LAYMEN 84 on luke 21:3",
+      "excerpt": "While [Jesus] stood in the temple, he also gave the verdict of which we are speaking. In the following verses, you have: \"Jesus spoke these words in the treasury while teaching in the temple. And no one seized him.\" What is the treasury? It is the contribution of the faithful, the bank of the poor, and the refuge of the needy. Christ sat near this and, according to Luke, gave the opinion that the two mites of the widow were preferable to the gifts of the rich. God's word preferred love joined with zeal and generosity rather than the lavish gifts of generosity.Let us see what comparison he made when he gave such judgment there near the treasury, for with good reason he preferred the widow who contributed the two mites. That precious poverty of hers was rich in the mystery of faith. So are the two coins that the Samaritan of the Gospels left at the inn to care for the wounds of the man who had fallen among robbers. Mystically representing the church, the widow thought it right to put into the sacred treasury the gift with which the wounds of the poor are healed and the hunger of wayfarers is satisfied.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.21.3"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.21.3:b7369ba2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-viii-on-works-and-alms",
+      "title": "Treatise VIII On Works and Alms on luke 21:3",
+      "excerpt": "But you who are such as this, cannot labour in the Church. For your eyes, overcast with the gloom of blackness, and shadowed in night, do not see the needy and poor. You are wealthy and rich, and do you think that you celebrate the Lord's Supper, not at all considering the offering, who come to the Lord's Supper Without a sacrifice, and yet take part of the sacrifice which the poor man has offered? Consider in the Gospel the widow that remembered the heavenly precepts, doing good even amidst the difficulties and straits of poverty, casting two mites, which were all that she had, into the treasury; whom when the Lord observed and saw, regarding her work not for its abundance, but for its intention, and considering not how much, but from how much, she had given, He answered and said, \"Verily I say unto you, that that widow hath cast in more than they all into the offerings of God. For all these have, of that which they had in abundance, cast in unto the offerings of God; but she of her penury hath cast in all the living that she had,\" Greatly blessed and glorious woman, who even before the day of judgment hast merited to be praised by the voice of the Judge! Let the rich be ashamed of their barrenness and unbelief. The widow, the widow needy in means, is found rich in works. And although everything that is given is conferred upon widows and orphans, she gives, whom it behoved to receive, that we may know thence what punishment, awaits the barren rich man, when by this very instance even the poor ought to labour in good works. And in order that we may understand that their labours are given to God, and that whoever performs them deserves well of the Lord, Christ calls this \"the offerings of God,\" and intimates that the widow has cast in two farthings into the offerings of God, that it may be more abundantly evident that he who hath pity on the poor lendeth to God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.21.3"
+    },
+    {
+      "id": "hcf:hcf-hegemonius:luke.21.3:3649ed5d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-hegemonius",
+      "workId": "hcf:work:hcf-hegemonius:the-disputation-with-manes-42",
+      "title": "THE DISPUTATION WITH MANES 42 on luke 21:3",
+      "excerpt": "For here I perceive that Jesus also looks on willingly at the gifts of the rich men, when they are put into the treasury. All too little, at the same time, is it if gifts are cast into the treasury by the rich alone; and so there are the two mites of the poor widow which are also received with gladness; and in that offering verily something is exhibited that goes beyond what Moses prescribed on the subject of the receipt of moneys. For he received gifts from those who had; but Jesus receives them even from those who have not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c400"
+      ],
+      "targetVerseId": "kjva:luke.21.3"
+    },
+    {
+      "id": "hcf:leo-the-great:luke.21.3:9b8a09d6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "leo-the-great",
+      "workId": "hcf:work:leo-the-great:sermon-20-3-1",
+      "title": "SERMON 20.3.1 on luke 21:3",
+      "excerpt": "Although the spite of some people does not grow gentle with any kindness, nevertheless the works of mercy are not fruitless, and kindness never loses what is offered to the ungrateful. May no one, dearly beloved, make themselves strangers to good works. Let no one claim that his poverty scarcely sufficed for himself and could not help another. What is offered from a little is great, and in the scale of divine justice, the quantity of gifts is not measured but the steadfastness of souls. The \"widow\" in the Gospel put two coins into the \"treasury,\" and this surpassed the gifts of all the rich. No mercy is worthless before God. No compassion is fruitless. He has given different resources to human beings, but he does not ask different affections.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-20-3-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c461"
+      ],
+      "targetVerseId": "kjva:luke.21.3"
     },
     {
       "id": "catena-luke-2958-v3",

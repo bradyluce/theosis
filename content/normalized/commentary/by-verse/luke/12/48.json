@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.12.48:add6a1ba:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.48:be51556f:0"
       ]
     },
     {
@@ -55,6 +69,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.12.48:c5e7df56:0"
       ]
     },
     {
@@ -73,6 +94,39 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.12.48:7895f210:0",
+        "hcf:bede:luke.12.48:7895f210:2"
+      ]
+    },
+    {
+      "id": "catena-luke-2097-v48",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.48",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:47–48",
+      "excerpt": "But he goes on to shew why teachers and learned men deserve a severer punishment, as it is said, For unto whomsoever much is given, of him shall be much required. Teachers indeed are given the grace to perform miracles, but entrusted the grace of speech and learning. But not in that which is given, He says, is any thing more to be sought, but in that which is entrusted or deposited; for the grace of the word needs increase. But from a teacher more is required, for he should not lie idle, but improve the talent of the word.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.12.48:eb08a212:0"
       ]
     },
     {
@@ -112,22 +166,174 @@
       ]
     },
     {
-      "id": "catena-luke-2097-v48",
+      "id": "hcf:theophylact-of-ohrid:luke.12.48:e3f53cd0:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.12.48",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:47–48",
-      "excerpt": "But he goes on to shew why teachers and learned men deserve a severer punishment, as it is said, For unto whomsoever much is given, of him shall be much required. Teachers indeed are given the grace to perform miracles, but entrusted the grace of speech and learning. But not in that which is given, He says, is any thing more to be sought, but in that which is entrusted or deposited; for the grace of the word needs increase. But from a teacher more is required, for he should not lie idle, but improve the talent of the word.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:48",
+      "excerpt": "In His further discourse He reveals this even more clearly. \"To whom much is given,\" He says, \"of him much will be required, and to whom much has been entrusted, of him they will ask the more.\" Through this the Lord shows that the punishment deserved by teachers will be greater. To teachers things are both given and entrusted: \"given,\" for example, is the gift of working miracles and healing diseases, while \"entrusted\" to them is the gift of the word and of teaching. The Lord said \"they will ask the more\" not in connection with the word \"given,\" but in connection with the word \"entrusted.\" For with the gift of the word there is truly need of labor, and more is demanded of the teacher. He must not remain negligent, but must multiply the talent of the word. Thus, the words \"and of everyone to whom much is given\" you should understand as: to whom much has been given out at interest. For the thing given for safekeeping here He called the interest.\r\nOthers ask: granted, it is just that the one who knew the master's will and did not act according to it is punished; but why is the one who did not know punished? Because he too could have learned, yet he did not wish to, and through his own negligence he made himself guilty of ignorance. Therefore, he is worthy of punishment because he voluntarily failed to learn. Let us be afraid, brethren! For if the one who was entirely ignorant is worthy of punishment, what excuse will justify those who sin with full knowledge, especially if they were teachers? Truly, their condemnation is very heavy.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:basil-the-great:luke.12.48:91ca179a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:preface-on-the-judgment-of-god",
+      "title": "PREFACE ON THE JUDGMENT OF GOD on luke 12:48",
+      "excerpt": "When I consult the New Testament, I find that our Lord Jesus Christ does not absolve from punishment even sins committed in ignorance, although he attaches a harsher threat to deliberate sins. \"And that servant who knew his master's will but did not make ready or act according to his will shall receive a severe beating. But he who did not know and did what deserved a beating shall receive a light beating.\" I hear something like this from the lips of the only-begotten Son of God and consider the anger of the holy apostles against sinners. I observe that the sufferings of those who have transgressed in even one particular are not less serious but rather more serious than those cited from the Old Testament. I then comprehend the severity of the judgment. Our Lord says, \"To whomever much is given, much will be required of him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:preface-on-the-judgment-of-god",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:bede:luke.12.48:b6f7ee28:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:48",
+      "excerpt": "For there are evidently five senses, with which, while using them in this life, we must cultivate the image of our Creator that we have received: but the people to whom the Decalogue of the law was given through a servant ought to cultivate less. Much more, however, those to whom the grace of eternal life has been entrusted through the Son. And therefore, the gain of this accumulates through the number ten, the gain of that through the number hundred, which no one doubts pertains to the signification of the kingdom of heaven, about to be given to the right. For it is not in vain that, with the same flexure of the fingers, the ten is figured on the left and the hundred on the right. Unless it is because both now the works of the Decalogue, which the letter could not complete, faith perfects, and in the future, it will render to each one according to his works, to those indeed who, according to the patience of good works, seek for glory, honor, and incorruption, eternal life. But, because neither by our own strengths, but by His grace we have been saved through faith, it is rightly said: He forgave both, not having anything whose due they could repay. And indeed, he loves more, to whom more is forgiven. But to whom less is forgiven, he loves less. Because whether you wish to understand the good of the knowledge we received to be perfected, or the foolishness to be avoided that we incurred, much more indeed is granted to the Church than to the Synagogue, which was once defiled by baser, as none of its teachers prohibited it, the filth of idolatry was corrupted, but where sin abounded, grace superabounded (Roman V), and it is now exalted with the higher proclamation of evangelical perfection. To which it is said: Because many prophets and just men desired to see what you see, and did not see; and to hear what you hear, and did not hear (Matthew XIII). Certainly, in this place, it fits what the history of Numbers recounts, that with the spoils of the Medianites divided equally, those who came from the battle gave the five-hundredth head of their portion to the Lord, while the rest gave the fiftieth to the Lord. Because both he who keeps himself safe from hostile incursion by exercising virtue in the camps offers much, but he who, wielding the sword of the word, strikes down countless hosts of the adversary offers much more.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:bede:luke.12.48:bd913b02:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:48",
+      "excerpt": "But the one who did not know and did things deserving of punishment will be beaten with few blows. From everyone who has been given much, much will be demanded; and from the one who has been entrusted with much, even more will be asked. Therefore, after saying, \"To whom much is given,\" he added, \"And from whom much is demanded,\" understanding, divine judgments. Unless perhaps through this he wanted to indicate both the order of the faithful, namely of the rulers and subordinates, because much is often given even to certain individuals to whom both the knowledge of the Lord's will and the ability to execute what they know is imparted. Much is also entrusted to him to whom, along with his own salvation, the care of pastoring the Lord's flock is entrusted. Therefore, the powerful will suffer powerful torments, and stronger torture awaits the stronger, that is, those endowed with greater grace, if they sin, greater vengeance will follow. However, the mildest of all penalties will be for those who, apart from the original sin they inherited, have not added any additional sin; and among the other sins they have added, each will have a more tolerable condemnation to the extent that he had less iniquity here.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.12.48:bed2a6d8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on luke 12:48",
+      "excerpt": "Be sensible, therefore, O bishop, of the dignity of thy place, that as thou hast received the power of binding, so hast thou also that of loosing. Having therefore the power of loosing, know thyself, and behave thyself in this world as becomes thy place, being aware that thou hast a great account to give. \"For to whom,\" as the Scripture says, \"men have entrusted much. of him they will require the more.\" For no one man is free from sin, excepting Him that was made man for us; since it is written: \"No man is pure from filthiness; no, not though he be but one day old.\" Upon which account the lives and conduct of the ancient holy men and patriarchs are described; not that we may reproach them from our reading, but that we ourselves may repent, and have hope that we also shall obtain forgiveness. For their blemishes are to us both security and admonition, because we hence learn, when we have offended, that if we repent we shall have pardon.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:augustine:luke.12.48:07697109:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-grace-and-free-will-3",
+      "title": "ON GRACE AND FREE WILL 3 on luke 12:48",
+      "excerpt": "Now if those ignorant of the law are in a worse condition than those who know the law, how can this saying of our Lord in the Gospel be true? \"That servant who knew his master's will but did not make ready or act according to his will shall receive a severe beating. But he who did not know and did what deserved a beating shall receive a light beating.\" You see that this passage shows clearly a person who knows sins more seriously than one who does not know. Yet we must not on this account take refuge in the darkness of ignorance so as to find there an excuse for our conduct. Not to know is one thing; unwillingness to know is another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-grace-and-free-will-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.12.48:f3bda9f0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-2",
+      "title": "The Stromata Book 2 on luke 12:48",
+      "excerpt": "She who has committed fornication liveth in sin, and is dead to the commandments; but she who has repented, being as it were born again by the change in her life, has a regeneration of life; the old harlot being dead, and she who has been regenerated by repentance having come back again to life. The Spirit testifies to what has been said by Ezekiel, declaring, \"I desire not the death of the sinner, but that he should turn.\" Now they are stoned to death; as through hardness of heart dead to the law which they believed not. But in the case of a priestess the punishment is increased, because \"to whom much is given, from him shall more be required.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.12.48:3d7f8191:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-i-on-the-unity-of-the-church",
+      "title": "Treatise I On the Unity of the Church on luke 12:48",
+      "excerpt": "Confession is the beginning of glory, not the full desert of the crown; nor does it perfect our praise, but it initiates our dignity; and since it is written, \"He that endureth to the end, the same shall be saved,\" whatever has been before the end is a step by which we ascend to the summit of salvation, not a terminus wherein the full result of the ascent is already gained. He is a confessor; but after confession his peril is greater, because the adversary is more provoked. He is a confessor; for this cause he ought the more to stand on the side of the Lord's Gospel, since he has by the Gospel attained glory from the Lord. For the Lord says, \"To whom much is given, of him much shall be required; and to whom more dignity is ascribed, of him more service is exacted.\" Let no one perish by the example of a confessor; let no one learn injustice, let no one learn arrogance, let no one learn treachery, from the manners of a confessor. He is a confessor, let him be lowly and quiet; let him be in his doings modest with discipline, so that he who is called a confessor of Christ may imitate Christ whom he confesses. For since He says, \"Whosoever exalteth himself shall be abased, and he who humbleth himself shall be exalted; \" and since He Himself has been exalted by the Father, because as the Word, and the strength, and the wisdom of God the Father, He humbled Himself upon earth, how can He love arrogance, who even by His own law enjoined upon us humility, and Himself received the highest name from the Father as the reward of His humility? He is a confessor of Christ, but only so if the majesty and dignity of Christ be not afterwards blasphemed by him. Let not the tongue which has confessed Christ be evil-speaking; let it not be turbulent, let it not be heard jarring with reproaches and quarrels, let it not after words of praise, dart forth serpents' venom against the brethren and God's priests. But if one shall have subsequently been blameworthy and obnoxious; if he shall have wasted his confession by evil conversation; if he shall have stained his life by disgraceful foulness; if, finally, forsaking the Church in which he has become a confessor, and severing the concord of unity, he shall have exchanged his first faith for a subsequent unbelief, he may not flatter himself on account of his confession that he is elected to the reward of glory, when from this very fact his deserving of punishment has become the greater.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:justin-martyr:luke.12.48:7af35016:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "justin-martyr",
+      "workId": "hcf:work:justin-martyr:the-first-apology-chapter-xvii",
+      "title": "The First Apology, Chapter XVII on luke 12:48",
+      "excerpt": "But if you pay no regard to our prayers and frank explanations, we shall suffer no loss, since we believe (or rather, indeed, are persuaded) that every man will suffer punishment in eternal fire according to the merit of his deed, and will render account according to the power he has received from God, as Christ intimated when He said, \"To whom God has given more, of him shall more be required.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c165"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
+    },
+    {
+      "id": "hcf:tertullian:luke.12.48:7bdae437:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-fasting",
+      "title": "On Fasting on luke 12:48",
+      "excerpt": "And thus, preministering the justice of judgment, He issued the materials of liberty; preparing through allowance an undergrowth of discipline; permitting all things, with a view to take some away; meaning to \"exact more\" if He had \"committed more; \" to command abstinence since He had foresent indulgence: in order that (as we have said) the primordial sin might be the more expiated by the operation of a greater abstinence in the (midst of the) opportunity of a greater licence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.12.48"
     }
   ]
 }

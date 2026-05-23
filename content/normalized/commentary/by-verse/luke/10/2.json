@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.10.2:adf6aa81:0"
       ]
     },
     {
@@ -51,6 +58,49 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1541-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.2",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:1–2",
+      "excerpt": "An outline of this ordinance also was set forth in the words of Moses, who at the command of God chose out seventy, upon whom God poured out His Spirit. In the book of Numbers also it was written of the children of Israel, that they came to Elim, which is by interpretation “ascent,” and there were there twelve fountains of water, and seventy palm trees. (Numb. 33:9.) For when we fly to spiritual refreshment, we shall find twelve fountains, namely, the holy Apostles, from whom we imbibe the knowledge of salvation as from the well-springs of the Saviour; (Isai. 12:3.) and seventy palms, that…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.10.2:f0548b0c:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1550",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.2",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:2",
+      "excerpt": "As the large fields require many reapers, so also do the multitude of believers in Christ. Hence He adds, Pray ye therefore the Lord of the harvest, that he would send forth labourers into his harvest. Now mark that when He said, Pray ye therefore the Lord of the harvest, that he would send forth labourers into the harvest, He afterwards Himself performed it. He then is the Lord of the harvest, and by Him, and together with Him, God the Father rules over all.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -76,14 +126,57 @@
       ]
     },
     {
-      "id": "catena-luke-1541-v2",
+      "id": "catena-luke-1545",
       "relation": "verse",
       "targetVerseId": "kjva:luke.10.2",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
-      "title": "On Luke 10:1–2",
-      "excerpt": "An outline of this ordinance also was set forth in the words of Moses, who at the command of God chose out seventy, upon whom God poured out His Spirit. In the book of Numbers also it was written of the children of Israel, that they came to Elim, which is by interpretation “ascent,” and there were there twelve fountains of water, and seventy palm trees. (Numb. 33:9.) For when we fly to spiritual refreshment, we shall find twelve fountains, namely, the holy Apostles, from whom we imbibe the knowledge of salvation as from the well-springs of the Saviour; (Isai. 12:3.) and seventy palms, that…",
+      "title": "On Luke 10:2",
+      "excerpt": "It is rightly added, before his face into every city and place, whither he himself would come. For the Lord follows His preachers, since the preaching comes first, and then the Lord enters into the tabernacle of our heart; seeing that through the words of exhortation going before, truth is received into the mind. Hence Esaias says to the preachers, Prepare ye the way of the Lord, make straight a highway for our God. (Isa. 40:3.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.10.2:86b898eb:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1552",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.2",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:2",
+      "excerpt": "Hereby also the people must be induced to pray for their pastors, that they may he able to work what is good for them, and that their tongue grow not lifeless in exhortation. For often for their own wickedness their tongue is tied. But often for the fault of the people it comes to pass that the word of preaching is withdrawn from their rulers.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1548",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.2",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:2",
+      "excerpt": "But not without deep sorrow can we add, but the labourers are few. For although there are who would hear good things, they are wanting who should spread them. Behold the world is full of priests, but seldom is there found a labourer in God’s harvest, because we undertake indeed the priestly office, but we perform not its works.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,78 +220,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1545",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.2",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:2",
-      "excerpt": "It is rightly added, before his face into every city and place, whither he himself would come. For the Lord follows His preachers, since the preaching comes first, and then the Lord enters into the tabernacle of our heart; seeing that through the words of exhortation going before, truth is received into the mind. Hence Esaias says to the preachers, Prepare ye the way of the Lord, make straight a highway for our God. (Isa. 40:3.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1548",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.2",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:2",
-      "excerpt": "But not without deep sorrow can we add, but the labourers are few. For although there are who would hear good things, they are wanting who should spread them. Behold the world is full of priests, but seldom is there found a labourer in God’s harvest, because we undertake indeed the priestly office, but we perform not its works.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1550",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.2",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:2",
-      "excerpt": "As the large fields require many reapers, so also do the multitude of believers in Christ. Hence He adds, Pray ye therefore the Lord of the harvest, that he would send forth labourers into his harvest. Now mark that when He said, Pray ye therefore the Lord of the harvest, that he would send forth labourers into the harvest, He afterwards Himself performed it. He then is the Lord of the harvest, and by Him, and together with Him, God the Father rules over all.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1552",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.2",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:2",
-      "excerpt": "Hereby also the people must be induced to pray for their pastors, that they may he able to work what is good for them, and that their tongue grow not lifeless in exhortation. For often for their own wickedness their tongue is tied. But often for the fault of the people it comes to pass that the word of preaching is withdrawn from their rulers.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.10.2:35aeeb63:0"
       ]
     },
     {
@@ -236,6 +264,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.10.2:fc63525c:0"
       ]
     },
     {
@@ -290,7 +325,116 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.10.2:83d02f12:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.10.2:76c7abae:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-tabernacle-3",
+      "title": "On the Tabernacle 3 on luke 10:2",
+      "excerpt": "The number of the twelve apostles marked the beginning of the episcopal rank. It is also apparent that the seventy-two disciples, who were also sent out by the Lord to preach the word, signify in their selection the lesser rank of the priesthood that is now called the presbyterate. For the same reason, it is appropriate that these seventy-two figured in the last part of the priestly clothing, as those twelve had been in the first. It was fitting that the type of those who would occupy a higher rank in the body of the High Priest (that is, in the church of Christ) should have a higher place in the typical clothing of the Old Testament high priest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.2"
+    },
+    {
+      "id": "hcf:bede:luke.10.2:95ce40b0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:2",
+      "excerpt": "And he said to them: The harvest indeed is great, but the laborers are few. Pray therefore the Lord of the harvest that he send laborers into his harvest. The great harvest signifies a multitude of peoples. The few laborers signify a scarcity of teachers. These are the laborers spoken of by the Psalmist: Those who sow in tears shall reap in joy. Going forth they went and wept, carrying their seeds. But coming back they will come with exultation, carrying their sheaves (Psalm 126). And to speak more clearly, the great harvest is the whole crowd of believers. The few laborers are the apostles and their imitators who are sent into the harvest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.2"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.10.2:4982d0ea:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-17",
+      "title": "Forty Gospel Homilies, Homily 17 on luke 10:2",
+      "excerpt": "When the preachers were sent, let us hear what he says: \"The harvest indeed is great, but the laborers are few. Pray therefore the Lord of the harvest, that he send laborers into his harvest.\" For the great harvest the laborers are few, which we cannot speak of without heavy grief, because even if there are those who hear good things, there are none to speak them. Behold, the world is full of priests, yet in God's harvest a worker is found very rarely, because we have indeed taken up the priestly office, but we do not fulfill the work of the office. But consider, dearest brothers, consider what is said: \"Pray the Lord of the harvest, that he send laborers into his harvest.\" Petition on our behalf, that we may be able to work worthily for you, lest our tongue grow sluggish from exhortation, lest after we have taken up the place of preaching, our silence condemn us before the just judge. For often the tongue of preachers is restrained because of their own wickedness; but often indeed it happens through the fault of those subject to them that the word of preaching is withdrawn from those who are in charge. Indeed the tongue of preachers is restrained because of their own wickedness, as the Psalmist says: \"But to the sinner God said: Why do you declare my justices?\" And again, because of the fault of those subject to them, the voice of preachers is forbidden, as the Lord says to Ezekiel: \"I will make your tongue cleave to your palate, and you shall be mute, and not as a man who rebukes, because it is a provoking house.\" As if he were to say openly: Therefore the word of preaching is taken from you, because while the people provoke me in their actions, they are not worthy to receive the exhortation of truth. From whose fault, therefore, the word is withdrawn from the preacher is not easily known. But it is known most certainly that the silence of the Pastor sometimes harms himself, but always harms those subject to him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.10.2"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.2:27dea598:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:2",
+      "excerpt": "The Lord sends them \"by two\" so that they might be safer and assist one another. They went before His face, that is, like John they taught: \"prepare the way of the Lord\" (Matt. 3:3). Note how He first said: \"pray the Lord of the harvest to send out laborers,\" and then He Himself by His own authority sends them. For He, as true God, is truly the Lord of the harvest, that is, of the believers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.10.2"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.10.2:df5ed1c2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-1",
+      "title": "The Stromata Book 1 on luke 10:2",
+      "excerpt": "If, then, \"the harvest is plenteous, but the labourers few,\" it is incumbent on us \"to pray\" that there may be as great abundance of labourers as possible.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.10.2"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:luke.10.2:5f798da6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-1-12-1-3",
+      "title": "ECCLESIASTICAL HISTORY 1.12.1-3 on luke 10:2",
+      "excerpt": "The names of the apostles of the Savior are clear to everyone from the Gospels, but no list of the seventy disciples is in circulation anywhere. Some have said, to be sure, that Barnabas was one of them, and the Acts of the Apostles and Paul writing to the Galatians have made special mention of him. They say Sosthenes was of these as well. Together with Paul, he wrote to the Corinthians. Tradition also holds that Matthias, who was listed among the apostles in place of Judas, and Joseph Justus, who was honored with him at the same casting of lots, were considered worthy of the same calling among the seventy. They say that Thaddaeus was also one of them, about whom I shall presently relate a story which has come down to us. On observation, you would find that the disciples of the Savior appear to have been more than the seventy. Paul says that after the resurrection from the dead Cephas saw him first, then the Twelve. After these saw him, he was seen by more than five hundred brothers all at once, some of whom he says had fallen asleep, although the majority were still alive at the time that this account was being composed by him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-1-12-1-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:luke.10.2"
     }
   ]
 }

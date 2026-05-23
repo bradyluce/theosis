@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.12.47:add6a1ba:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.47:8817a722:0"
       ]
     },
     {
@@ -55,6 +69,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.12.47:c5e7df56:0"
       ]
     },
     {
@@ -73,6 +94,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.12.47:7895f210:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2097-v47",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.47",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:47–48",
+      "excerpt": "But he goes on to shew why teachers and learned men deserve a severer punishment, as it is said, For unto whomsoever much is given, of him shall be much required. Teachers indeed are given the grace to perform miracles, but entrusted the grace of speech and learning. But not in that which is given, He says, is any thing more to be sought, but in that which is entrusted or deposited; for the grace of the word needs increase. But from a teacher more is required, for he should not lie idle, but improve the talent of the word.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.12.47:eb08a212:0"
       ]
     },
     {
@@ -112,22 +165,140 @@
       ]
     },
     {
-      "id": "catena-luke-2097-v47",
+      "id": "hcf:theophylact-of-ohrid:luke.12.47:565464a4:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.12.47",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:47–48",
-      "excerpt": "But he goes on to shew why teachers and learned men deserve a severer punishment, as it is said, For unto whomsoever much is given, of him shall be much required. Teachers indeed are given the grace to perform miracles, but entrusted the grace of speech and learning. But not in that which is given, He says, is any thing more to be sought, but in that which is entrusted or deposited; for the grace of the word needs increase. But from a teacher more is required, for he should not lie idle, but improve the talent of the word.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:47",
+      "excerpt": "Here the Lord presents to us something more important and terrible. Such a person, He says, will not only be deprived of his gift and will not find in it any aid toward deliverance from punishment, but the greatness of his dignity will make him subject to even greater condemnation. For the more the sinner knows, the more he deserves punishment.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
+    },
+    {
+      "id": "hcf:basil-the-great:luke.12.47:91ca179a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:preface-on-the-judgment-of-god",
+      "title": "PREFACE ON THE JUDGMENT OF GOD on luke 12:47",
+      "excerpt": "When I consult the New Testament, I find that our Lord Jesus Christ does not absolve from punishment even sins committed in ignorance, although he attaches a harsher threat to deliberate sins. \"And that servant who knew his master's will but did not make ready or act according to his will shall receive a severe beating. But he who did not know and did what deserved a beating shall receive a light beating.\" I hear something like this from the lips of the only-begotten Son of God and consider the anger of the holy apostles against sinners. I observe that the sufferings of those who have transgressed in even one particular are not less serious but rather more serious than those cited from the Old Testament. I then comprehend the severity of the judgment. Our Lord says, \"To whomever much is given, much will be required of him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:preface-on-the-judgment-of-god",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
+    },
+    {
+      "id": "hcf:bede:luke.12.47:c012f3d0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:47",
+      "excerpt": "But that servant who knew his master's will and did not prepare or act according to his will, will be beaten with many blows. Many, misinterpreting this sentence, do not want to know what they should be doing and ostensibly think they will be beaten less if they are ignorant of what they should have done. But it is one thing not to know, another to be unwilling to know. For he who wishes to learn but is unable does not know; but he who turns his ear away from the voice of truth so that he may remain ignorant, this one is condemned not for ignorance, but for contempt.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
+    },
+    {
+      "id": "hcf:augustine:luke.12.47:07697109:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-grace-and-free-will-3",
+      "title": "ON GRACE AND FREE WILL 3 on luke 12:47",
+      "excerpt": "Now if those ignorant of the law are in a worse condition than those who know the law, how can this saying of our Lord in the Gospel be true? \"That servant who knew his master's will but did not make ready or act according to his will shall receive a severe beating. But he who did not know and did what deserved a beating shall receive a light beating.\" You see that this passage shows clearly a person who knows sins more seriously than one who does not know. Yet we must not on this account take refuge in the darkness of ignorance so as to find there an excuse for our conduct. Not to know is one thing; unwillingness to know is another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-grace-and-free-will-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.12.47:2121421e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:epistle-vii",
+      "title": "Epistle VII on luke 12:47",
+      "excerpt": "Although I know, brethren beloved, that from the fear which we all of us owe to God, you also are instantly urgent in continual petitions anti earnest prayers to Him, still I myself remind your religious anxiety, that in order to appease and entreat the Lord, we must lament not only in words, but also with fastings and with tears, and with every kind of urgency. For we must perceive and confess that the so disordered ruin arising from that affliction, which has in a great measure laid waste, and is even still laying waste, our flock, has visited us according to our sins, in that we do not keep the way of the Lord, nor observe the heavenly commandments given to us for our salvation. Our Lord did the will of His Father, and we do not do the will of our Lord; eager about our patrimony and our gain, seeking to satisfy our pride, yielding ourselves wholly to emulation and to strife, careless of simplicity and faith, renouncing the world in words only, and not in deeds, every one of us pleasing himself, and displeasing all others, -therefore we are smitten as we deserve, since it is written: \"And that servant, which knoweth his master's will, and has not obeyed his will, shall be beaten with many stripes.\" But what stripes, what blows, do we not deserve, when even confessors, who ought to be an example of virtuous life to others, do not maintain discipline? Therefore, while an inflated and immodest boastfulness about their own confession excessively elates some, tortures come upon them, and tortures without any cessation of the tormentor, without any end of condemnation, without any comfort of death,-tortures which do not easily let them pass to the crown, but wrench them on the rack until they cause them to abandon their faith, unless some one taken away by the divine compassion should depart in the very midst of the torments, gaining glory not by the cessation of his torture, but by the quickness of his death:\r\n\r\nThese things we suffer by our own fault and our own deserving, even as the divine judgment has forewarned us, saying, \"If they forsake my law and walk not in my judgments, if they profane my statutes and keep not my commandments, then will I visit their transgressions with the rod, and their iniquities with stripes.\" It is for this reason that we feel the rods and the stripes, because we neither please God with good deeds nor atone for our sins...",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.12.47:87f8e85c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII. Three Books of Testimonies Against the Jews. on luke 12:47",
+      "excerpt": "That we are not to obey our own will, but the will of God. In the Gospel according to John: \"I came not down from heaven to do mine own will, but the will of Him that sent me.\" Of this same matter, according to Matthew: \"Father, if it be possible, let this cup pass from me; nevertheless, not what I will, but what Thou wilt.\" Also in the daily prayer: \"Thy will be done, as in heaven, so in earth.\" Also according to Matthew: \"Not every one who saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but he who doeth the will of my Father which is in heaven, he shall enter into the kingdom of heaven.\" Also according to Luke: \"But that servant which knoweth his Lord's will, and obeyed not His will, shall be beaten with many stripes.\" In the Epistle of John: \"But he that doeth the will of God abideth for ever, even as He Himself also abideth for ever.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.12.47:76f6af9f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv",
+      "title": "Against Heresies Book IV on luke 12:47",
+      "excerpt": "For this reason the Lord also said, \"Let your light so shine before men, that they may see your good deeds, and glorify your Father who is in heaven.\" And, \"Take heed to yourselves, lest perchance your hearts be overcharged with surfeiting, and drunkenness, and worldly cares.\" And, \"Let your loins be girded about, and your lamps burning, and ye like unto men that wait for their Lord, when He returns from the wedding, that when He cometh and knocketh, they may open to Him. Blessed is that servant whom his Lord, when He cometh, shall find so doing.\" And again, \"The servant who knows his Lord's will, and does it not, shall be beaten with many stripes.\" And, \"Why call ye me, Lord, Lord, and do not the things which I say?\" And again, \"But if the servant say in his heart, The Lord delayeth, and begin to beat his fellow-servants, and to eat, and drink, and to be drunken, his Lord will come in a day on which he does not expect Him, and shall cut him in sunder, and appoint his portion with the hypocrites.\" All such passages demonstrate the independent will of man, and at the same time the counsel which God conveys to him, by which He exhorts us to submit ourselves to Him, and seeks to turn us away from [the sin of] unbelief against Him, without, however, in any way coercing us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
+    },
+    {
+      "id": "hcf:hcf-shepherd-of-hermas:luke.12.47:11df890b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-shepherd-of-hermas",
+      "workId": "hcf:work:hcf-shepherd-of-hermas:shepherd-of-hermas-similitude-9",
+      "title": "Shepherd of Hermas, Similitude 9 on luke 12:47",
+      "excerpt": "If, accordingly, when he ought to do good, he do evil, does not he appear to do greater evil than he who does not know God? For this reason, they who have not known God and do evil are condemned to death; but they who have known God, and have seen His mighty works, and still continue in evil, shall be chastised doubly, and shall die for ever.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c160"
+      ],
+      "targetVerseId": "kjva:luke.12.47"
     }
   ]
 }

@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.1.41:853e6364:1"
       ]
     },
     {
@@ -48,42 +55,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
       "excerpt": "The Angel, when he announced the hidden mysteries to the Virgin, that he might build up her faith by an example, related to her the conception of a barren woman. When Mary heard it, it was not that she disbelieved the oracle, or was uncertain about the messenger, or doubtful of the example, but rejoicing in the fulfilment of her wish, and consicentious in the observance of her duty, she gladly went forth into the hill country. For what could Mary now, filled with God, (plena Deo) but ascend into the higher parts with haste!",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0151-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.41",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "The grace of the Holy Spirit knows not of slow workings. Learn, ye virgins, not to loiter in the streets, nor mix in public talk.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0154-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.41",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "But soon the blessed fruits of Mary’s coming and our Lord’s presence are made evident. For it follows, And it came to pass, that when Elisabeth heard the salutation of Mary, the babe leaped in her womb. Mark the distinction and propriety of each word. Elisabeth first heard the word, but John first experienced the grace. She heard by the order of nature, he leaped by reason of the mystery. She perceived the coming of Mary, he the coming of the Lord.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,6 +83,31 @@
       ]
     },
     {
+      "id": "catena-luke-0154-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.41",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "But soon the blessed fruits of Mary’s coming and our Lord’s presence are made evident. For it follows, And it came to pass, that when Elisabeth heard the salutation of Mary, the babe leaped in her womb. Mark the distinction and propriety of each word. Elisabeth first heard the word, but John first experienced the grace. She heard by the order of nature, he leaped by reason of the mystery. She perceived the coming of Mary, he the coming of the Lord.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.41:e271f5f1:0"
+      ]
+    },
+    {
       "id": "catena-luke-0161-v41",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.41",
@@ -120,24 +116,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
       "excerpt": "She says it not ignorantly, for she knew it was by the grace and operation of the Holy Spirit that the mother of the prophet should be saluted by the mother of his Lord, to the advancement and growth of her own pledge; but being aware that this was of no human deserving, but a gift of Divine grace, she therefore says, Whence is this to me, that is, By what right of mine, by what that I have done, for what good deeds?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0165-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.41",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "You see that Mary doubted not but believed, and therefore the fruit of faith followed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -166,6 +144,42 @@
       ]
     },
     {
+      "id": "catena-luke-0151-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.41",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "The grace of the Holy Spirit knows not of slow workings. Learn, ye virgins, not to loiter in the streets, nor mix in public talk.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0165-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.41",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "You see that Mary doubted not but believed, and therefore the fruit of faith followed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0169-v41",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.41",
@@ -181,6 +195,49 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0168-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.41",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "But every soul which has conceived the word of God in the heart, straightway climbs the lofty summits of the virtues by the stairs of love, so as to be able to enter into the city of Juda, (into the citadel of prayer and praise, and abide as it were for three months in it,) to the perfection of faith, hope, and charity.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0166-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.41",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:39–45",
+      "excerpt": "Nor is it to be wondered at, that our Lord, about to redeem the world, commenced His mighty works with His mother, that she, through whom the salvation of all men was prepared, should herself be the first to reap the fruit of salvation from her pledge.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.41:3ad3ac49:1"
       ]
     },
     {
@@ -220,17 +277,17 @@
       ]
     },
     {
-      "id": "catena-luke-0166-v41",
+      "id": "catena-luke-0162-v41",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.41",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
-      "excerpt": "Nor is it to be wondered at, that our Lord, about to redeem the world, commenced His mighty works with His mother, that she, through whom the salvation of all men was prepared, should herself be the first to reap the fruit of salvation from her pledge.",
+      "excerpt": "Now in saying this, she coincides with her son. For John also felt that he was unworthy of our Lord’s coming to him. But she gives the name of “the mother of our Lord” to one still a virgin, thus forestalling the event by the words of prophecy. Divine foreknowledge brought Mary to Elisabeth, that the testimony of John might reach the Lord. For from that time Christ ordained John to be a prophet. Hence it follows, For, to, as soon as the voice of thy salutation sounded, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -238,21 +295,28 @@
       ]
     },
     {
-      "id": "catena-luke-0168-v41",
+      "id": "catena-luke-0155-v41",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.41",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
-      "excerpt": "But every soul which has conceived the word of God in the heart, straightway climbs the lofty summits of the virtues by the stairs of love, so as to be able to enter into the city of Juda, (into the citadel of prayer and praise, and abide as it were for three months in it,) to the perfection of faith, hope, and charity.",
+      "excerpt": "He was not filled with the Spirit, until she stood near him who bore Christ in her womb. Then indeed he was both filled with the Spirit, and leaping imparted the grace to his mother; as it follows, And Elisabeth was filled with the Holy Spirit. But we cannot doubt that she who was then filled with the Holy Spirit, was filled because of her son.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.1.41:983b53b1:0"
       ]
     },
     {
@@ -292,24 +356,6 @@
       ]
     },
     {
-      "id": "catena-luke-0155-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.41",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "He was not filled with the Spirit, until she stood near him who bore Christ in her womb. Then indeed he was both filled with the Spirit, and leaping imparted the grace to his mother; as it follows, And Elisabeth was filled with the Holy Spirit. But we cannot doubt that she who was then filled with the Holy Spirit, was filled because of her son.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0158-v41",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.41",
@@ -318,24 +364,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:39–45",
       "excerpt": "But because there have been other holy women who yet have borne sons stained with sin, she adds, And blessed is the fruit of thy womb. Or another interpretation is, having said, Blessed art thou among women, she then, as if some one enquired the cause, answers, And blessed is the fruit of thy womb: as it is said, Blessed be he that cometh in the name of the Lord. The Lord God, and he hath shewed us light; (Ps. 118:26, 27.) for the Holy Scriptures often use and, instead of because.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0162-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.41",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:39–45",
-      "excerpt": "Now in saying this, she coincides with her son. For John also felt that he was unworthy of our Lord’s coming to him. But she gives the name of “the mother of our Lord” to one still a virgin, thus forestalling the event by the words of prophecy. Divine foreknowledge brought Mary to Elisabeth, that the testimony of John might reach the Lord. For from that time Christ ordained John to be a prophet. Hence it follows, For, to, as soon as the voice of thy salutation sounded, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -380,6 +408,160 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.41:d5a33447:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:41",
+      "excerpt": "And John, having received a certain special gift beyond other people, leaps in his mother's womb, which is why he is also \"more than a prophet\" (Matt. 11:9), for they prophesied after their birth, but he was deemed worthy of such a gift while still in his mother's womb. Notice: the Virgin \"greeted Elizabeth,\" that is, she began to speak with her.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:bede:luke.1.41:9c29a1ef:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:41",
+      "excerpt": "And it happened when Elizabeth heard the greeting of Mary, the infant leaped in her womb, and Elizabeth was filled with the Holy Spirit. See the distinction and the proprieties of each word. Elizabeth heard the voice first, but John felt the grace first. She heard by the order of nature, he leaped by the reason of the mystery. She sensed the coming of Mary, he sensed the coming of the Lord. These speak of grace, those inwardly work, and they undertake the mystery of piety by the progress of the mothers, and with a double miracle, the mothers prophesy by the spirit of the little ones. The infant leaped, and the mother was filled. The mother was not filled before the child, but as the child was filled with the Holy Spirit, he also filled the mother.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:augustine:luke.1.41:8fad9a81:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-187-23",
+      "title": "LETTER 187.23 on luke 1:41",
+      "excerpt": "We see instances of leaping not only in children but even in animals, although certainly not for any faith or religion or rational recognition of someone coming. But this case stands out as utterly uncommon and new, because it took place in a womb, and at the coming of her who was to bring forth the Savior of humankind. Therefore this leaping, this greeting, so to speak, offered to the mother of the Lord is miraculous. It is to be reckoned among the great signs. It was not effected by human means by the infant, but by divine means in the infant, as miracles are usually wrought.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.41:e13db315:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:41",
+      "excerpt": "(Geometer.) For the Prophet sees and hears more acutely than his mother, and salutes the chief of Prophets; but as he could not do this in words, he leaps in the womb, which was the greatest token of his joy. Who ever heard of leaping at a time previous to birth? Grace introduced things to which nature was a stranger. Shut up in the womb, the soldier acknowledged his Lord and King soon to be born, the womb's covering being no obstacle to the mystical sight.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.1.41:4ffde7d1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on luke 1:41",
+      "excerpt": "That although from the beginning He had been the Son of God, yet He had to be begotten again according to the flesh. In the second Psalm: \"The Lord said unto me, Thou art my Son; this day have I begotten Thee. Ask of me, and I will give Thee the nations for Thine inheritance, and the bounds of the earth for Thy possession.\" Also in the Gospel according to Luke: \"And it came to pass, when Elisabeth heard the salutation of Mary, the babe leaped in her womb; and she was filled with the Holy Ghost, and she cried out with a loud voice, and said, Blessed art thou among women, and blessed is the fruit of thy womb. And whence does this happen to me, that the mother of my Lord should come to me? \" Also Paul to the Galatians: \"But when the fulness of the time was come, God sent His Son, horn of a woman.\" Also in the Epistle of John: \"Every spirit which confesses that Jesus Christ is come in the flesh is of God. But whosoever denies that He is come in the flesh is not of God, but is of the spirit of Antichrist.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.1.41:d5427c4a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-1-30",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 1.30 on luke 1:41",
+      "excerpt": "John jumped for joy to make an announcement concerning his future preaching. The infant of the barren woman exulted before the infant of the virgin. He sought out his mother's tongue and desired to pronounce a prophecy concerning the Lord. Therefore Elizabeth's conception was kept hidden from Mary for six months, until the infant would have limbs sufficiently formed to exult before the Lord with his jumping and become a witness to Mary through his exultation. Moreover, that he exulted in the womb of his mother was not of himself, nor because of his five months, but so that the divine gifts might show themselves in the barren womb that was now carrying him. It was also so that the other womb, that of the Virgin, would know the great gifts given to Elizabeth, and that the two soils might believe in the seeds they had received through the word of Gabriel, cultivator of both grounds. Since John could not cry out in his exultation and render witness to his Lord, his mother began to say, \"You are blessed among women, and blessed is the fruit of your womb.\" Our Lord prepared his herald in a dead womb, to show that he came after a dead Adam. He vivified Elizabeth's womb first, and then vivified the soil of Adam through his body.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-1-30",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:hcf-maximus-of-turin:luke.1.41:b42343b1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-maximus-of-turin",
+      "workId": "hcf:work:hcf-maximus-of-turin:sermon-5-4",
+      "title": "SERMON 5.4 on luke 1:41",
+      "excerpt": "Not yet born, already John prophesies and, while still in the enclosure of his mother's womb, confesses the coming of Christ with movements of joy—since he could not do so with his voice. As Elizabeth says to holy Mary, \"As soon as you greeted me, the child in my womb exulted for joy.\" John exults, then, before he is born. Before his eyes can see what the world looks like, he can recognize the Lord of the world with his spirit. In this regard, I think that the prophetic phrase is appropriate: \"Before I formed you in the womb I knew you, and before you came forth from the womb I sanctified you.\" Thus we ought not to marvel that after Herod put him in prison, he continued to announce Christ to his disciples from his confinement, when even confined in the womb he preached the same Lord by his movements.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-5-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c465"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.41:df561c03:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-flesh-of-christ",
+      "title": "On the Flesh of Christ on luke 1:41",
+      "excerpt": "Therefore even Elisabeth must be silent although she is carrying in her womb the prophetic babe, which was already conscious of his Lord, and is, moreover, filled with the Holy Ghost. For without reason does she say, \"and whence is this to me that the mother of my Lord should come to me? \" If it was not as her son, but only as a stranger that Mary carried Jesus in her womb, how is it she says, \"Blessed is the fruit of thy womb? What is this fruit of the womb, which received not its germ from the womb, which had not its root in the womb, which belongs not to her whose is the womb, and which is no doubt the real fruit of the womb-even Christ? Now, since He is the blossom of the stem which sprouts from the root of Jesse; since, moreover, the root of Jesse is the family of David, and the stem of the root is Mary descended from David, and the blossom of the stem is Mary's son, who is called Jesus Christ, will not He also be the fruit? For the blossom is the fruit, because through the blossom and from the blossom every product advances from its rudimental condition to perfect fruit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
+    },
+    {
+      "id": "hcf:tertullian:luke.1.41:b47d7ba0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:a-treatise-on-the-soul",
+      "title": "A Treatise on the Soul on luke 1:41",
+      "excerpt": "However, even these have life, each of them in his mother's womb. Elizabeth exults with joy, (for) John had leaped in her womb; Mary magnifies the Lord, (for) Christ had instigated her within.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.41"
     }
   ]
 }

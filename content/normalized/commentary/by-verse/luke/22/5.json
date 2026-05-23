@@ -4,14 +4,14 @@
   "verseNumber": 5,
   "entries": [
     {
-      "id": "catena-luke-3076-v5",
+      "id": "catena-luke-3081-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.5",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:3–6",
-      "excerpt": "St. Luke gives his surname, because there was another Judas.",
+      "excerpt": "By covetousness then Judas became what he was, for it follows, And they covenanted to give him money. Such are the evil passions which covetousness engenders, it makes men irreligious, and compels them to lose all knowledge of God, though they have received a thousand benefits from Him, nay, even to injure Him, as it follows, And he contracted with them.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.22.5:7c36312a:0"
       ]
     },
     {
@@ -40,35 +47,17 @@
       ]
     },
     {
-      "id": "catena-luke-3081-v5",
+      "id": "catena-luke-3076-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.5",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:3–6",
-      "excerpt": "By covetousness then Judas became what he was, for it follows, And they covenanted to give him money. Such are the evil passions which covetousness engenders, it makes men irreligious, and compels them to lose all knowledge of God, though they have received a thousand benefits from Him, nay, even to injure Him, as it follows, And he contracted with them.",
+      "excerpt": "St. Luke gives his surname, because there was another Judas.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3078-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.5",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:3–6",
-      "excerpt": "There is nothing contrary to this in what John says, that after the sop Satan entered into Judas; seeing he now entered into him as a stranger, but then as his own, whom he might lead after him to do whatsoever he willed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -94,17 +83,17 @@
       ]
     },
     {
-      "id": "catena-luke-3074-v5",
+      "id": "catena-luke-3078-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.5",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:3–6",
-      "excerpt": "Having already said that the Chief Priests sought means how they might slay Jesus without incurring any danger, he next goes on to relate the means which occurred to them, as it is said, Then entered Satan into Judas.",
+      "excerpt": "There is nothing contrary to this in what John says, that after the sop Satan entered into Judas; seeing he now entered into him as a stranger, but then as his own, whom he might lead after him to do whatsoever he willed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -120,6 +109,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:3–6",
       "excerpt": "The magistrates here mentioned were those appointed to take care of the buildings of the temple, or it may be those whom the Romans had set over the people to keep them from breaking forth into tumult; for they were seditious.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3074-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.5",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:3–6",
+      "excerpt": "Having already said that the Chief Priests sought means how they might slay Jesus without incurring any danger, he next goes on to relate the means which occurred to them, as it is said, Then entered Satan into Judas.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -148,6 +155,24 @@
       ]
     },
     {
+      "id": "catena-luke-3077-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.5",
+      "topicSlugs": [],
+      "personId": "titus-bostra",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:3–6",
+      "excerpt": "And he adds, one of the twelve, since he made up the number, though he did not truly discharge the Apostolic office. Or the Evangelist adds this, as it were for contrast sake. As if he said, “He was of the first band of those who were especially chosen.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-3075-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.5",
@@ -166,22 +191,55 @@
       ]
     },
     {
-      "id": "catena-luke-3077-v5",
+      "id": "hcf:bede:luke.22.5:5aee6fec:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.22.5",
       "topicSlugs": [],
-      "personId": "titus-bostra",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:3–6",
-      "excerpt": "And he adds, one of the twelve, since he made up the number, though he did not truly discharge the Apostolic office. Or the Evangelist adds this, as it were for contrast sake. As if he said, “He was of the first band of those who were especially chosen.”",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:5",
+      "excerpt": "And they agreed to give him money. And he promised. And he sought an opportunity to betray him without a crowd. Many today shudder at the crime of Judas, who sold his Lord, Master, and God for money, as something monstrous and nefarious, yet they do not beware. For when they speak false testimony against anyone for bribes, surely because they deny the truth for money, they sell the Lord for money. For he said: I am the truth (John 14). When they stain the fellowship of brotherhood with any plague of discord, they betray the Lord, because God is love. Even if no one gives money, they sell the Lord for silver, because they take the image of the prince of the world, that is, the examples of the ancient enemy, ignoring the creator's image to which they were created. For just as John the Baptist, who did not die for the confession of Christ, but for the defense of the truth, yet, therefore, died for Christ because he accepted martyrdom for the truth, so on the contrary, he who scorns the laws of charity and truth indeed betrays Christ, who is truth and love. Especially when he does not sin through weakness or creeping ignorance, but in the likeness of Judas seeks an opportunity to change truth into a lie, virtue into crime, with witnesses absent.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.5"
+    },
+    {
+      "id": "hcf:bede:luke.22.5:b6e35446:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:5",
+      "excerpt": "And he went and spoke with the chief priests and magistrates about how he might betray him to them, and they were glad. His saying: He went and spoke, shows that he was invited by the chiefs, not constrained by any necessity, but of his own accord he entered into the plan with a wicked mind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.5"
+    },
+    {
+      "id": "hcf:origen:luke.22.5:1ce397cf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-exodus-8-6",
+      "title": "HOMILIES ON EXODUS 8.6 on luke 22:5",
+      "excerpt": "Jesus Christ our Savior has been crucified. The author of this crime and father of this wickedness is, without doubt, the devil. It is written: \"When, however, the devil had entered the heart of Judas Iscariot that he should betray him.\" The devil is the father of sin. He fathered Judas as his first son in this wickedness, but Judas alone could not execute the betrayal. What then is written? \"Judas departed,\" Scripture says, \"to the scribes and Pharisees and chief priests and said to them: 'What will you give me, and I will deliver him to you?' \" The third and fourth generation of sin was born from Judas.",
+      "takeaway": "",
+      "sourceId": "hcf:source:google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.22.5"
     }
   ]
 }

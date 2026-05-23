@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.20.20:9c175ebf:0"
       ]
     },
     {
@@ -30,24 +37,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
       "excerpt": "For they seemed to be trifling, yet were in earnest, forgetful of God, who says, Who is this that hideth his counsel from me? (Job 42:3.) For they come to Christ the Saviour of all, as though He were a common man, as it follows, that they might take him in his speech.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2912-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.20",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:19–26",
-      "excerpt": "Our Lord here teaches us, how cautious we ought to be in our answers to heretics or Jews; as He has said elsewhere, Be ye wise as serpents (Mat. 10:16).",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,17 +65,17 @@
       ]
     },
     {
-      "id": "catena-luke-2907-v20",
+      "id": "catena-luke-2912-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.20",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
-      "excerpt": "And so by seeking to slay Him, they proved the truth of what He had said in the parable. For He Himself is the Heir, whose unjust death He said was to be punished. They are the wicked husbandmen who sought to kill the Son of God. This also is daily committed in the Church when any one, only in name a brother, is ashamed or afraid, because of the many good men with whom he lives, to break into that unity of the Church’s faith and peace which he abhors. And because the chief priests sought to lay hold of our Lord but could not by themselves, they tried to accomplish it by the hands of the…",
+      "excerpt": "Our Lord here teaches us, how cautious we ought to be in our answers to heretics or Jews; as He has said elsewhere, Be ye wise as serpents (Mat. 10:16).",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -102,6 +91,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
       "excerpt": "This smooth and artful question was to entice the answerer to say that he fears God rather than Cæsar, for it follows, Neither acceptest thou the person of any, but teachest the way of God truly. This they say, to entice Him to tell them that they ought not to pay tribute, in order that the servants of the guard, (who according to the other Evangelists are said to have been present,) might immediately upon hearing it seize Him as the leader of a sedition against the Romans. And so they proceed to ask, Is it lawful to give tribute to Cæsar, or not? For there was a great division among the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2907-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.20",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:19–26",
+      "excerpt": "And so by seeking to slay Him, they proved the truth of what He had said in the parable. For He Himself is the Heir, whose unjust death He said was to be punished. They are the wicked husbandmen who sought to kill the Son of God. This also is daily committed in the Church when any one, only in name a brother, is ashamed or afraid, because of the many good men with whom he lives, to break into that unity of the Church’s faith and peace which he abhors. And because the chief priests sought to lay hold of our Lord but could not by themselves, they tried to accomplish it by the hands of the…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -130,24 +137,6 @@
       ]
     },
     {
-      "id": "catena-luke-2915-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.20",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:19–26",
-      "excerpt": "Render also to God the things which be God’s, that is to say, tithes, first fruits, offerings, and sacrifices.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2919-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.20",
@@ -166,14 +155,32 @@
       ]
     },
     {
-      "id": "catena-luke-2909-v20",
+      "id": "catena-luke-2915-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.20",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:19–26",
+      "excerpt": "Render also to God the things which be God’s, that is to say, tithes, first fruits, offerings, and sacrifices.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2916-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.20",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
-      "excerpt": "They laid snares for our Lord, but got their own feet entangled in them. Listen to their cunning, And they asked Him, saying, Master, we know that thou sayest and teachest rightly.",
+      "excerpt": "And observe that He said not, give, but return. For it is a debt. Thy prince protects thee from enemies, renders thy life tranquil. Surely then thou art bound to pay him tribute. Nay, this very piece of money which thou bringest thou hast from him. Return then to the king the king’s money. God also has given thee understanding and reason, make then a return of these to Him, that thou mayest not be compared to the beasts, but in all things mayest walk wisely.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -202,14 +209,39 @@
       ]
     },
     {
-      "id": "catena-luke-2916-v20",
+      "id": "catena-luke-2909-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.20",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 20:19–26",
-      "excerpt": "And observe that He said not, give, but return. For it is a debt. Thy prince protects thee from enemies, renders thy life tranquil. Surely then thou art bound to pay him tribute. Nay, this very piece of money which thou bringest thou hast from him. Return then to the king the king’s money. God also has given thee understanding and reason, make then a return of these to Him, that thou mayest not be compared to the beasts, but in all things mayest walk wisely.",
+      "excerpt": "They laid snares for our Lord, but got their own feet entangled in them. Listen to their cunning, And they asked Him, saying, Master, we know that thou sayest and teachest rightly.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.20.20:4f9d7883:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2920-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.20",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:19–26",
+      "excerpt": "This was their main object, to rebuke Him before the people, which they were unable to do because of the wonderful wisdom of His answer.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -238,24 +270,6 @@
       ]
     },
     {
-      "id": "catena-luke-2920-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.20.20",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:19–26",
-      "excerpt": "This was their main object, to rebuke Him before the people, which they were unable to do because of the wonderful wisdom of His answer.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2914-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.20",
@@ -272,6 +286,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.20.20:492730ff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-135",
+      "title": "COMMENTARY ON LUKE, HOMILY 135 on luke 20:20",
+      "excerpt": "These bold and hardhearted men, being ready for only evil, do not entertain a good purpose, but with their mind full of the craftiness of the devil, they commit themselves to wicked plans. They lay traps for Christ, plan a trap for an accusation against him, and gather pretexts for falsely accusing him. In their bitterness, they are already meditating and plotting the lying words they spoke against him before Pilate.… They pretended to be kind and just. They imagined that they could deceive him who knows secrets. Having one purpose in mind and heart, they speak words totally unlike their wicked dishonesty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-135",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.20.20"
+    },
+    {
+      "id": "hcf:bede:luke.20.20:1af42126:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 20:20",
+      "excerpt": "And observing, they sent spies, who pretended to be righteous, in order to catch him in his speech, and deliver him to the authority and power of the governor. Seeking to apprehend the Lord, the chief priests and the scribes feared the people, and therefore what they could not do themselves, they tried to accomplish through the hands of the governor, so that they might appear innocent of his death. For recently, under Caesar Augustus, Judea was subjected to the Romans, when a census was held throughout the entire world, and it had become tributary, and there was great unrest among the people, with some saying that for security and peace, with the Romans fighting for all, tributes should be paid; however, the Pharisees, who prided themselves on their righteousness, were contrary to this, arguing that the people of God, who paid tithes and offered first fruits, and other things written in the law, should not be subjected to human laws. The spark of this unrest grew so strong that after the Lord's passion, when the Romans besieged them, they preferred to lose their homeland, nation, and kingdom, the noble temple with its religion, even the light itself, rather than pay tributes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.20.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.20.20:b165cc29:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 20:20",
+      "excerpt": "The Pharisees prepared a net which, in their opinion, the Lord would find difficult to escape, but in this net \"their foot was caught\" (Ps. 9:16). See what cunning! If the Lord says that tribute ought to be given to Caesar, then they will accuse Him before the people as one who was enslaving the people who are \"Abraham's seed\" and never served anyone (Jn. 8:33). If He forbids giving tribute, then they will lead Him to the governor as a seditious person.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.20.20"
+    },
+    {
+      "id": "hcf:tertullian:luke.20.20:5923c7bd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 20:20",
+      "excerpt": "But suppose they sent Him the message for the purpose of tempting Him? Well, but the Scripture does not say so; and inasmuch as it is usual for it to indicate what is done in the way of temptation (\"Behold, a certain lawyer stood up, and tempted Him; \" again, when inquiring about tribute, the Pharisees came to Him, tempting Him ), so, when it makes no mention of temptation, it does not admit the interpretation of temptation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.20.20"
     }
   ]
 }

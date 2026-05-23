@@ -4,25 +4,6 @@
   "verseNumber": 1,
   "entries": [
     {
-      "id": "augustine-john-008-c2-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.2.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 2:1–4",
-      "excerpt": "The miracle indeed of our Lord Jesus Christ, whereby He made the water into wine, is not marvellous to those who know that it was God's doing. For He who made wine on that day at the marriage feast, in those six water-pots, which He commanded to be filled with water, the self-same does this every year in vines. For even as that which the servants put into the water-pots was turned into wine by the doing of the Lord, so in like manner also is what the clouds pour forth changed into wine by the doing of the same Lord. But we do not wonder at the latter, because it happens every year: it has…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
       "id": "augustine-john-009-c2-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.1",
@@ -42,57 +23,29 @@
       ]
     },
     {
-      "id": "catena-john-0178-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.2.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 2:1–4",
-      "excerpt": "Our Lord being known in Galilee, they invite Him to a marriage: And the third day there was a marriage in Cana of Galilee.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0180-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.2.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 2:1–4",
-      "excerpt": "They invite our Lord to the marriage, not as a great person, but merely as one they knew, one of the many; for which reason the Evangelist says, And the mother of Jesus was there. As they invited the mother, so they invited the Son: and therefore, Jesus was called, and His disciples to the marriage: and He came, as caring more for our good, than His own dignity. He who disdained not to take upon Him the form of a servant, disdained not to come to the marriage of servants.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0181-v1",
+      "id": "augustine-john-008-c2-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.1",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "catena-aurea-john",
+      "workId": "augustine-tractates-john",
       "title": "On John 2:1–4",
-      "excerpt": "Let the proud man blush to see the humility of God. Lo, among other things, the Son of the Virgin comes to a marriage; He who, when He was with the Father, instituted marriage.",
+      "excerpt": "The miracle indeed of our Lord Jesus Christ, whereby He made the water into wine, is not marvellous to those who know that it was God's doing. For He who made wine on that day at the marriage feast, in those six water-pots, which He commanded to be filled with water, the self-same does this every year in vines. For even as that which the servants put into the water-pots was turned into wine by the doing of the Lord, so in like manner also is what the clouds pour forth changed into wine by the doing of the same Lord. But we do not wonder at the latter, because it happens every year: it has…",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
+      "sourceId": "augustine-tractates-john-source",
       "rank": 85,
       "tags": [
-        "catena-aurea",
+        "augustine",
         "patristic",
+        "tractate",
         "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.2.1:73691698:0"
       ]
     },
     {
@@ -104,6 +57,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 2:1–4",
       "excerpt": "What marvel, if He went to that house to a marriage, Who came into this world to a marriage. For here He has His spouse whom He redeemed with His own blood, to whom He gave the pledge of the Spirit, and whom He united to Himself in the womb of the Virgin. For the Word is the Bridegroom, and human flesh the bride, and both together arc one Son of God and Son of man. That womb of the Virgin Mary is His chamber, from which he went forth as a bridegroom. (Ps. 19:5)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.2.1:b9ecf152:2"
+      ]
+    },
+    {
+      "id": "catena-john-0181-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.2.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 2:1–4",
+      "excerpt": "Let the proud man blush to see the humility of God. Lo, among other things, the Son of the Virgin comes to a marriage; He who, when He was with the Father, instituted marriage.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -132,6 +110,42 @@
       ]
     },
     {
+      "id": "catena-john-0180-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.2.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 2:1–4",
+      "excerpt": "They invite our Lord to the marriage, not as a great person, but merely as one they knew, one of the many; for which reason the Evangelist says, And the mother of Jesus was there. As they invited the mother, so they invited the Son: and therefore, Jesus was called, and His disciples to the marriage: and He came, as caring more for our good, than His own dignity. He who disdained not to take upon Him the form of a servant, disdained not to come to the marriage of servants.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0178-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.2.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 2:1–4",
+      "excerpt": "Our Lord being known in Galilee, they invite Him to a marriage: And the third day there was a marriage in Cana of Galilee.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0182-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.2.1",
@@ -147,6 +161,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.2.1:aa418fcb:0"
       ]
     },
     {
@@ -183,7 +204,253 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.2.1:ef031371:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.2.1:195ca18d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-9",
+      "title": "Tractates on John 9 on john 2:1",
+      "excerpt": "In the ancient times there was prophecy, and no times were left without the dispensation of prophecy. But the prophecy, since Christ was not understood therein, was water. For in water wine is in some manner latent. The apostle tells us what we are to understand by this water: \"Even unto this day,\" saith he, \"whilst Moses is read, that same veil is upon their heart; that it is not unveiled because it is done away in Christ. And when thou shalt have passed over,\" saith he, \"to the Lord, the veil shall be taken away.\" By the veil he means the covering over of prophecy, so that it was not understood. When thou hast passed over to the Lord, the veil is taken away; so likewise is tastelessness taken away when thou hast passed over to the Lord; and what was water now becomes wine to thee. Read all the prophetic books; and if Christ be not understood therein, what canst thou find so insipid and silly? Understand Christ in them, and what thou readest not only has a taste, but even inebriates thee; transporting the mind from the body, so that forgetting the things that are past, thou reachest forth to the things that are before.\r\n\r\nWherefore, prophecy from ancient times, even from the time when the series of human births began to run onwards, was not silent concerning Christ; but the import of the prophecy was concealed therein, for as yet it was water.\r\n\r\nWhen these words of the Gospel are understood, and they are certainly clear, all the mysteries which are latent in this miracle of the Lord will be laid open. Observe what He says, that it behoved the things to be fulfilled in Christ that were written of Him. Where were they written? \"In the law,\" saith He, \"and in the prophets, and in the Psalms.\" He omitted no part of the Old Scriptures. These were water; and hence the disciples were called irrational by the Lord, because as yet they tasted to them as water, not as wine. And how did He make of the water wine? When He opened their understanding, and expounded to them the Scriptures, beginning from Moses, through all the prophets; with which being now inebriated, they said, \"Did not our hearts burn within us in the way, when He opened to us the Scriptures?\" For they understood Christ in those books in which they knew Him not before. Thus our Lord Jesus Christ changed the water into wine, and that has now taste which before had not, that now inebriates which before did not. For if He had commanded the water to be poured out of the water-pots, and so Himself had put in the wine from the secret repositories of the creature, whence He made bread when He satisfied so many thousands; for five loaves were not in themselves sufficient to satisfy five thousand men, nor even to fill twelve baskets, but the omnipotence of the Lord was, as it were, a fountain of bread; so likewise He might, on the water being poured out, have poured in wine: but had He done this, He would appear to have rejected the Old Scriptures. When, however, He turns the water itself into wine, He shows us that the Old Scripture also is from Himself, for at His own command were the water-pots filled. It is from the Lord, indeed, that the Old Scripture also is; but it has no taste unless Christ is understood therein.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:augustine:john.2.1:e62a5395:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-8",
+      "title": "Tractates on John 8 on john 2:1",
+      "excerpt": "The Lord, on being invited, came to the marriage. What wonder if He came to that house to a marriage, having come into this world to a marriage? For, indeed, if He came not to a marriage, He has not here a bride. But what says the apostle? \"I have espoused you to one husband, to present you a chaste virgin to Christ.\" Why does he fear lest the virginity of Christ's bride should be corrupted by the subtilty of the devil? \"I fear,\" saith he, \"lest as the serpent beguiled Eve by his subtilty, so also your minds should be corrupted from the simplicity and chastity which is in Christ.\" Thus has He here a bride whom He has redeemed by His blood, and to whom He has given the Holy Spirit as a pledge. He has freed her from the bondage of the devil: He died for her sins, and is risen again for her justification. Who will make such offerings to his bride? Men may offer to a bride every sort of earthly ornament,-gold, silver, precious stones, houses, slaves, estates, farms,-but will any give his own blood? For if one should give his own blood to his bride, he would not live to take her for his wife. But the Lord, dying without fear, gave His own blood for her, whom rising again He was to have, whom He had already united to Himself in the Virgin's womb. For the Word was the Bridegroom, and human flesh the bride; and both one, the Son of God, the same also being Son of man. The womb of the Virgin Mary, in which He became head of the Church, was His bridal chamber: thence He came forth, as a bridegroom from his chamber, as the Scripture foretold, \"And rejoiced as a giant to run his way.\" From His chamber He came forth as a bridegroom; and being invited, came to the marriage.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:augustine:john.2.1:c6b59997:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-8",
+      "title": "Tractates on John 8 on john 2:1",
+      "excerpt": "When we see, therefore, such deeds wrought by Jesus God, why should we wonder at water being turned into wine by the man Jesus? For He was not made man in such manner that He lost His being God. Man was added to Him, God not lost to Him. This miracle was wrought by the same who made all those things. Let us not therefore wonder that God did it, but love Him because He did it in our midst, and for the purpose of our restoration. For He gives us certain intimations by the very circumstances of the case. I suppose that it was not without cause He came to the marriage. The miracle apart, there lies something mysterious and sacramental in the very fact. Let us knock, that He may open to us, and fill us with the invisible wine: for we were water, and He made us wine, made us wise; for He gave us the wisdom of His faith, whilst before we were foolish. And it appertains, it may be, to this wisdom, together with the honor of God, and with the praise of His majesty, and with the charity of His most powerful mercy, to understand what was done in this miracle.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.2.1:8ce203b7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-21",
+      "title": "Homily on the Gospel of John 21 on john 2:1",
+      "excerpt": "I said before that He was best known in Galilee; therefore they invite Him to the marriage, and He comes; for He looked not to His own honor, but to our benefit. He who disdained not to \"take upon Him the form of a servant\" (Phil. ii. 7), would much less disdain to be present at the marriage of servants; He who sat down \"with publicans and sinners\" (Matt. ix. 13), would much less refuse to sit down with those present at the marriage. Assuredly they who invited Him had not formed a proper judgment of Him, nor did they invite Him as some great one, but merely as an ordinary acquaintance; and this the Evangelist has hinted at, when he says, \"The mother of Jesus was there, and His brethren.\" Just as they invited her and His brethren, they invited Jesus.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:bede:john.2.1:97f12f7f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 2:1",
+      "excerpt": "(in v. 1) At the time of our Lord's appearing in the flesh, the sweet vinous taste of the law had been weakened by the carnal interpretations of the Pharisees.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:hcf-caesarius-of-arles:john.2.1:dd14fd0b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-caesarius-of-arles",
+      "workId": "hcf:work:hcf-caesarius-of-arles:sermon-167-1",
+      "title": "SERMON 167.1 on john 2:1",
+      "excerpt": "The third day is the mystery of the Trinity, while the miracles of the nuptials are the mysteries of heavenly joys. It was both a nuptial day and a feast for this reason, because the church after the redemption was joined to the spouse who was coming—to that spouse, I say, whom all the ages from the beginning of the world had promised. It is he who came down to earth to invite his beloved to marriage with his highness, giving her for a present the token of his blood and intending to give later the dowry of his kingdom.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-167-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c542"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.2.1:0d533161:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-2-1",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 2.1 on john 2:1",
+      "excerpt": "The wedding was not held in Jerusalem but outside of Judea, as it were, in the country of the Gentiles—\"Galilee of the Gentiles,\" as the prophet said. It is, I suppose, altogether obvious that the synagogue of the Jews rejected the Bridegroom from heaven and that the church of the Gentiles [gladly] received him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-2-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:john.2.1:1bb3340a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:proof-of-the-gospel-9-8-8",
+      "title": "PROOF OF THE GOSPEL 9.8.8 on john 2:1",
+      "excerpt": "Consider whether this first miracle of our Savior that took place in Cana of Galilee, where he changed water into wine, is not foretold in the beginning of this prophecy where it says, \"Drink this first. Act quickly, land of Zebulun and Naphtali, Galilee of the Gentiles.\" And this miracle was a sign of the mystic wine—that wine of the faith of the new covenant that is transformed from bodily joy to a joy of mind and spirit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:proof-of-the-gospel-9-8-8",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:tertullian:john.2.1:fdf7c0d6:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-monogamy",
+      "title": "On Monogamy on john 2:1",
+      "excerpt": "But further, if Christ reproves the scribes and Pharisees, sitting in the official chair of Moses, but not doing what they taught, what kind of (supposition). is it that He Himself withal should set upon His own official chair men who were mindful rather to enjoin-(but) not likewise to practise-sanctity of the flesh, which (sanctity) He had in all ways recommended to their teaching and practising?-first by His own example, then by all other arguments; while He tells (them) that \"the kingdom of heavens\" is \"children's; \" while He associates with these (children) others who, after marriage, remained (or became)virgins; \" while He calls (them) to (copy) the simplicity of the dove, a bird not merely innocuous, but modest too, and whereof one male knows one female; while He denies the Samaritan woman's (partner to be) a husband, that He may show that manifold husbandry is adultery; while, in the revelation of His own glory, He prefers, from among so many saints and prophets, to have with him Moses and Elias -the one a monogamist, the other a voluntary celibate (for Elias was nothing else than John, who came \"in the power and spirit of Elias\" ); while that \"man gluttonous and toping,\" the \"frequenter of luncheons and suppers, in the company of publicans and sinners,\" sups once for all at a single marriage, though, of course, many were marrying (around Him); for He willed to attend (marriages) only so often as (He willed) them to be.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:tertullian:john.2.1:a82fecf5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on john 2:1",
+      "excerpt": "How mighty is the grace of water, in the sight of God and His Christ, for the confirmation of baptism! Never is Christ without water: if, that is, He is Himself baptized in water; inaugurates in water the first rudimentary displays of His power, when invited to the nuptials; invites the thirsty, when He makes a discourse, to His own sempiternal water; approves, when teaching concerning love, among works of charity, the cup of water offered to a poor (child); recruits His strength at a well; walks over the water; willingly crosses the sea; ministers water to His disciples.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:tertullian:john.2.1:960d17eb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:a-treatise-on-the-soul",
+      "title": "A Treatise on the Soul on john 2:1",
+      "excerpt": "He was truly both seen and heard upon the mount; true and real was the draught of that wine at the marriage of (Cana in) Galilee; true and real also was the touch of the then believing Thomas.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:hcf-theodore-of-mopsuestia:john.2.1:20d5734e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-of-mopsuestia",
+      "workId": "hcf:work:hcf-theodore-of-mopsuestia:commentary-on-john-1-2-1",
+      "title": "COMMENTARY ON JOHN 1.2.1 on john 2:1",
+      "excerpt": "It is evident that this third day should be calculated as the third day after the baptism. He said that the first day was that in which Andrew and his companion followed him and then passed the night with him. The second day relates the events concerning Philip and Nathanael. The third day points to the events of this wedding party. Clearly all these events took place in Galilee. Immediately after his baptism he left and lived there.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-john-1-2-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c428"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:hcf-theodore-stratelates:john.2.1:d8e79320:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-stratelates",
+      "workId": "hcf:work:hcf-theodore-stratelates:fragments-on-john-12",
+      "title": "FRAGMENTS ON JOHN 12 on john 2:1",
+      "excerpt": "According to the theoria [of this passage], the Word of God descended from heaven in order that the bridegroom, having made the punishment of the human nature his own, might persuade [his bride] to become pregnant with the spiritual seed of wisdom. He convened the wedding on the third day, that is, in the last times of the age. For he struck the transgression that was in Adam and again bandaged us on the third day, that is, in the last times when, becoming human for us he took on the whole fleshly nature that he resurrected in himself from the dead. Therefore, because of this [John] mentions the third as the day when he consecrated the wedding.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragments-on-john-12",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c319"
+      ],
+      "targetVerseId": "kjva:john.2.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.2.1:81d4c09c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 2:1",
+      "excerpt": "Above, the Evangelist showed the dignity of the incarnate Word and gave various evidence for it. Now he begins to relate the effects and actions by which the divinity of the incarnate Word was made known to the world. First, he tells the things Christ did, while living in the world, that show his divinity. Secondly, he tells how Christ showed his divinity while dying; and this from chapter twelve on.\r\n\r\nAs to the first he does two things. First, he shows the divinity of Christ in relation to the power he had over nature. Secondly, in relation to the effects of grace; and this from chapter three on. Christ's power over nature is pointed out to us by the fact that he changed a nature. And this change was accomplished by Christ as a sign: first, to his disciples, to strengthen them; secondly, to the people, to lead them to believe (2:12). This transformation of a nature, in order to strengthen the disciples, was accomplished at a marriage, when he turned water into wine. First, the marriage is described. Secondly, those present. Thirdly, the miracle performed by Christ.\r\n\r\nIn describing the marriage, the time is first mentioned. Hence he says, On the third day there was a wedding, i.e., after the calling of the disciples mentioned earlier. For, after being made known by the testimony of John, Christ also wanted to make himself known. Secondly, the place is mentioned; hence he says, at Cana in Galilee. Galilee is a province, and Cana a small village located in that province.\r\n\r\nAs far as the literal meaning is concerned, we should note that there are two opinions about the time of Christ's preaching. Some say that there were two and a half years from Christ's baptism until his death. According to them, the events at this wedding took place in the same year that Christ was baptized. However, both the teaching and practice of the Church are opposed to this. For three miracles are commemorated on the feast of the Epiphany: the adoration of the Magi, which took place in the first year of the Lord's birth; secondly, the baptism of Christ, which implies that he was baptized on the same day thirty years later; thirdly, this marriage, which took place on the same day one year later. It follows from this that at least one year elapsed between his baptism and this marriage. In that year the only things recorded to have been done by the Lord are found in the sixth chapter of Matthew: the fasting in the desert, and the temptation by the devil; and what John tells us in this Gospel of the testimony by the Baptist and the conversion of the disciples. After this wedding, Christ began to preach publicly and to perform miracles up to the time of his passion, so that he preached publicly for two and one half years.\r\n\r\nIn the mystical sense, marriage signifies the union of Christ with his Church, because as the Apostle says: \"This is a great mystery: I am speaking of Christ and his Church\" (Eph 5:32). And this marriage was begun in the womb of the Virgin, when God the Father united a human nature to his Son in a unity of person. So, the chamber of this union was the womb of the Virgin: \"He established a chamber for the sun\" (Ps 18:6). Of this marriage it is said: \"The kingdom of heaven is like a king who married his son\" (Mt 22:2), that is, when God the Father joined a human nature to his Word in the womb of the Virgin. It was made public when the Church was joined to him by faith: \"I will bind you to myself in faith\" (Hos 2:20). We read of this marriage: \"Blessed are they who are called to the marriage supper of the Lamb\" (Rv 19:9). It will be consummated when the bride, i.e., the Church, is led into the resting place of the groom, i.e., into the glory of heaven.\r\n\r\nThe fact that this marriage took place on the third day is not without its own mystery. For the first day is the time of the law of nature; the second day is the time of the written law, but the third day is the time of grace, when the incarnate Lord celebrated the marriage: \"He will revive us after two days: on the third day he will raise us up\" (Hos 6:3).\r\n\r\nThe place too is appropriate. For \"Cana\" means \"zeal\" and \"Galilee\" means \"passage.\" So this marriage was celebrated in the zeal of a passage, to suggest that those persons are most worthy of union with Christ who, burning with the zeal of a conscientious devotion, pass over from the state of guilt to the grace of the Church. \"Pass over to me, all who desire me\" (Sir 24:26). And they pass from death to life, i.e., from the state of mortality and misery to the state of immortality and glory: \"I make all things new\" (Rv 21:5).\r\n\r\nThen the persons invited are described. Mention is made of three: the mother of Jesus, Jesus himself, and the disciples.\r\n\r\nThe mother of Jesus is mentioned when he says, the mother of Jesus was there. She is mentioned first to indicate that Jesus was still unknown and not invited to the wedding as a famous person, but merely as one acquaintance among others; for as they invited the mother, so also her son. Or, perhaps his mother is invited first because they were uncertain whether Jesus would come to a wedding if invited, because of the unusual piety they noticed in him and because they had not seen him at other social gatherings. So I think that they first asked his mother whether Jesus should be invited. That is why the Evangelist expressly said first that his mother was at the wedding, and that later Jesus was invited.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.2.1"
     }
   ]
 }

@@ -22,6 +22,31 @@
       ]
     },
     {
+      "id": "catena-mark-0403-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.5",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:1–6",
+      "excerpt": "Not as if He Who knows all things before they are done, wonders at what He did not expect or look forward to, but knowing the hidden things of the heart, and wishing to intimate to men that it was wonderful, He openly shews that He wonders. And indeed the blindness of the Jews is wonderful, for they neither believed what their prophets said of Christ, nor would in their own persons believe on Christ, Who was born amongst them. Mystically again; Christ is despised in His own house and country, that is, amongst the people of the Jews, and therefore He worked few miracles there, lest they should…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.5:f2ab0c61:0"
+      ]
+    },
+    {
       "id": "catena-mark-0397-v5",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.5",
@@ -58,17 +83,17 @@
       ]
     },
     {
-      "id": "catena-mark-0403-v5",
+      "id": "catena-mark-0402-v5",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.5",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:1–6",
-      "excerpt": "Not as if He Who knows all things before they are done, wonders at what He did not expect or look forward to, but knowing the hidden things of the heart, and wishing to intimate to men that it was wonderful, He openly shews that He wonders. And indeed the blindness of the Jews is wonderful, for they neither believed what their prophets said of Christ, nor would in their own persons believe on Christ, Who was born amongst them. Mystically again; Christ is despised in His own house and country, that is, amongst the people of the Jews, and therefore He worked few miracles there, lest they should…",
+      "excerpt": "Or again, if the prophet has noble relations, his countrymen hate them, and on that account do not honour the prophet. There follows, And he could there do no mighty work, &c. What, however, is here expressed by He could not, we must take to mean, He did not choose, because it was not that He was weak, but that they were faithless; He does not therefore work any miracles there, for he spared them, lest they should be worthy of greater blame, if they believed not, even with miracles before their eyes. Or else, for the working of miracles, not only the power of the Worker is necessary, but the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -94,17 +119,137 @@
       ]
     },
     {
-      "id": "catena-mark-0402-v5",
+      "id": "hcf:theophylact-of-ohrid:mark.6.5:4f8544ca:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:5",
+      "excerpt": "The Lord could not perform miracles there not because He was powerless, but because those people were unbelieving. Sparing them, He does not perform miracles, lest they serve for the greater condemnation of those people as unbelievers even in the presence of miracles. On the other hand, miracle-working requires, first, the power of the one performing it, and second, the faith of those receiving the miracle. Since the second of these conditions was lacking here, that is, the faith of those in need of healing, it was not fitting for Jesus to perform miracles. And so we should understand that the evangelist's expression \"and He could not\" is used in place of — He did not see fit to. The Lord taught not only in the cities, but also in the villages, so that we might know that we too ought neither to neglect the small towns nor constantly visit the large cities, but that we must sow the word even in insignificant places.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.5"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.6.5:176071a7:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 6:5",
+      "excerpt": "There follows, And he could there do no mighty work, &c. What, however, is here expressed by He could not, we must take to mean, He did not choose, because it was not that He was weak, but that they were faithless; He does not therefore work any miracles there, for he spared them, lest they should be worthy of greater blame, if they believed not, even with miracles before their eyes. Or else, for the working of miracles, not only the power of the Worker is necessary, but the faith of the recipient, which was wanting in this case: therefore Jesus did not choose to work any signs there. There follows, And he marvelled at their unbelief.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.6.5"
+    },
+    {
+      "id": "hcf:bede:mark.6.5:af4415ec:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:5",
+      "excerpt": "And He could do no mighty work there, except that He laid His hands on a few sick people and healed them. And He marveled because of their unbelief. Not that He could not perform many miracles even among the unbelievers, but that in doing many, He might condemn the unbelievers. However, it can also be understood otherwise, that Jesus is despised in His house and country, that is, among the Jewish people, and therefore He performed few signs there, lest they become utterly inexcusable. Greater signs, however, He performs daily among the nations through the apostles, not so much in the healing of bodies as in the salvation of souls. As for the Lord being said to marvel at their unbelief, it is not as if He marvels at something unexpected and unforeseen, He who knows all things before they happen, just as He did not begin to marvel at the faith of the centurion as something new and previously unknown when He heard the words of his pious confession and said: \"I have not found such great faith, not even in Israel\" (Luke VII). But He who knows the secrets of the heart shows that He marvels before men, indicating what is to be marveled at by men. Indeed, the faith of the centurion was marvelous, who, without a human teacher, without the eloquence of the Scriptures, without angelic oracles, recognized through miracles by divinely illuminated natural understanding that He who appeared as human in the frailty of humanity was truly God. Conversely, the unbelief of the Nazarenes was no less astonishing, who, despite having an abundance of teachers and divine words in which the coming of Christ was preached, and having Christ Himself present among them, pressing the knowledge of Himself on them through both words and signs, still persisted in their disbelief. But in one instance, the blindness of the Jews is noted as marvelous, who were unwilling to believe in their own prophets about Christ, nor in Christ Himself born among them. In the other instance, the faith of the Gentiles is crowned, who, even though Christ was born among the Jews and cast out by them, deserved to receive Him, the mediator between God and man, the man Jesus Christ, with the sacred oracles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.5"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:mark.6.5:8ecccf65:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:oration-30-on-the-son-10-11",
+      "title": "ORATION 30, ON THE SON 10-11 on mark 6:5",
+      "excerpt": "One meaning of \"could not\" is simply the limits of some human will. Take, for example, the point that Christ \"could not\" fulfill any signs in Nazareth was due to disbelief on their part. Something essential for healing is required on both sides—faith on the part of the patients, power on that of the healer. So one side without its counterpart \"could not,\" so to speak, perform them. As this can be seen in medical care, it can also be seen in moral transformation. Similarly involving the limits of the will are the texts: \"The world cannot not hate you\" and \"How can you speak good, being evil?\" The metaphor of \"impossibility\" here must mean free refusal by the will. The same idea applies to those passages which say that what is impossible for humanity is possible for God. Note also those passages that say that a person \"cannot\" (in one sense) be born a second time and a needle's eye \"cannot\" let a camel through. What would stop these events happening if God willed them directly? Besides all these there is, as in the case we are presently considering, a \"cannot\" in the sense of that which is totally inconceivable. We cannot conceive that God can be evil or fail to exist. It is inconceivable that reality cannot exist or two times two is fourteen. So here it cannot be the case that the Son would do anything which the Father would not do.",
+      "takeaway": "",
+      "sourceId": "hcf:source:oration-30-on-the-son-10-11",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390"
+      ],
+      "targetVerseId": "kjva:mark.6.5"
+    },
+    {
+      "id": "hcf:hcf-john-cassian:mark.6.5:b551ae42:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-john-cassian",
+      "workId": "hcf:work:hcf-john-cassian:third-conference-of-abbot-chaermeon-15",
+      "title": "THIRD CONFERENCE OF ABBOT CHAERMEON 15 on mark 6:5",
+      "excerpt": "In some cases he so richly poured forth the mighty work of healing that the Evangelist was led to exclaim: \"He healed all their sick.\" But among others the unfathomable depth of Christ's goodness was so thwarted that it was said: \"And Jesus could do there no mighty works because of their unbelief.\" So the bounty of God is actually curtailed temporarily according to the receptivity of our faith. So it is said to one: \"According to your faith may it be to you,\" and to another: \"Go your way, and as you have believed so let it be to you,\" and to another \"Let it be to you according as you will,\" and again to another: \"Your faith has made you whole.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:third-conference-of-abbot-chaermeon-15",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c435"
+      ],
+      "targetVerseId": "kjva:mark.6.5"
+    },
+    {
+      "id": "hcf:hcf-john-cassian:mark.6.5:e616b60e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-john-cassian",
+      "workId": "hcf:work:hcf-john-cassian:second-conference-of-abbot-nesteros-15-1",
+      "title": "SECOND CONFERENCE OF ABBOT NESTEROS 15.1 on mark 6:5",
+      "excerpt": "If the faith of those who bring them or of the sick is lacking, it may prevent those who possess the gift of healing from exercising it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:second-conference-of-abbot-nesteros-15-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c435"
+      ],
+      "targetVerseId": "kjva:mark.6.5"
+    },
+    {
+      "id": "hcf:origen:mark.6.5:bce6e6ae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-10-19",
+      "title": "COMMENTARY ON MATTHEW 10.19 on mark 6:5",
+      "excerpt": "And perhaps, as in the case of metallic substances there exists in some a natural attraction toward some other thing, as in the magnet for iron, and in naphtha for fire, so there is an attraction in such faith toward the divine power according to what Jesus said: \"If you have faith as a grain of mustard seed, you shall say unto this mountain, 'Move to another place,' and it shall be moved.\" Matthew and Mark wished to present the all-surpassing value of that divine power as a power that works even in those who do not believe. But they did not deny that grace works even more powerfully among those who have faith. So it seems to me that they accurately said not that the Lord did not do any mighty works because of their unbelief, but that he did not do many there. Mark does not flatly say that he could do no mighty work there at all, and stop at that point, but added, \"except that he laid his hands upon a few sick folk and healed them.\" Thus the power in him overcame even their unbelief.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.6.5"
+    },
+    {
+      "id": "catena-mark-0401-v5",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.5",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:1–6",
-      "excerpt": "Or again, if the prophet has noble relations, his countrymen hate them, and on that account do not honour the prophet. There follows, And he could there do no mighty work, &c. What, however, is here expressed by He could not, we must take to mean, He did not choose, because it was not that He was weak, but that they were faithless; He does not therefore work any miracles there, for he spared them, lest they should be worthy of greater blame, if they believed not, even with miracles before their eyes. Or else, for the working of miracles, not only the power of the Worker is necessary, but the…",
+      "excerpt": "Oftentimes also the origin of a man brings him contempt, as it is written, (1 Sam. 25:10. Ps. 138:6) Who is the son of Jesse? for the Lord hath respect unto the lowly; as to the proud, He beholdeth them afar off.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 55,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -120,24 +265,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:1–6",
       "excerpt": "Jesus is called the son of a workman, of that one, however, whose work was the morning and the sun, that is, the first and second Church, as a figure of which the woman and the damsel are healed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0401-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.5",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:1–6",
-      "excerpt": "Oftentimes also the origin of a man brings him contempt, as it is written, (1 Sam. 25:10. Ps. 138:6) Who is the son of Jesse? for the Lord hath respect unto the lowly; as to the proud, He beholdeth them afar off.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

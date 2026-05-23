@@ -4,6 +4,31 @@
   "verseNumber": 45,
   "entries": [
     {
+      "id": "catena-luke-1018-v45",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.45",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:43–45",
+      "excerpt": "For it is a natural consequence when wickedness abounds within, that wicked words are breathed as far as the mouth; and therefore when you hear of a man uttering abominable things, do not suppose that there lies only so much wickedness in him as is expressed in his words, but believe the fountain to be more copious than the stream.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.6.45:6af726e7:0"
+      ]
+    },
+    {
       "id": "catena-luke-1011-v45",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.45",
@@ -22,21 +47,28 @@
       ]
     },
     {
-      "id": "catena-luke-1018-v45",
+      "id": "catena-luke-1015-v45",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.45",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:43–45",
-      "excerpt": "For it is a natural consequence when wickedness abounds within, that wicked words are breathed as far as the mouth; and therefore when you hear of a man uttering abominable things, do not suppose that there lies only so much wickedness in him as is expressed in his words, but believe the fountain to be more copious than the stream.",
+      "excerpt": "But having shewn that the good and the bad man may be discerned by their works as a tree by its fruits, he now sets forth the same thing by another figure, saying, A good man out of the good treasure of his heart bringeth forth that which is good, and the evil man out of the evil treasure bringeth forth that which is evil.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.6.45:87eaf8ad:0"
       ]
     },
     {
@@ -76,24 +108,6 @@
       ]
     },
     {
-      "id": "catena-luke-1015-v45",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.45",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:43–45",
-      "excerpt": "But having shewn that the good and the bad man may be discerned by their works as a tree by its fruits, he now sets forth the same thing by another figure, saying, A good man out of the good treasure of his heart bringeth forth that which is good, and the evil man out of the evil treasure bringeth forth that which is evil.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1017-v45",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.45",
@@ -105,24 +119,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1008-v45",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.45",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:43–45",
-      "excerpt": "Our Lord continues the words which He had begun against the hypocrites, saying, For a good tree bringeth not forth corrupt fruit; i. e. as if He says, If thou wouldest have a true and unfeigned righteousness, what thou settest forth in words make up also in works, for the hypocrite though he pretends to be good is not good, who doeth evil works; and the innocent though he be blamed, is not therefore evil, who doeth good works.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -148,6 +144,24 @@
       ]
     },
     {
+      "id": "catena-luke-1008-v45",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.45",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:43–45",
+      "excerpt": "Our Lord continues the words which He had begun against the hypocrites, saying, For a good tree bringeth not forth corrupt fruit; i. e. as if He says, If thou wouldest have a true and unfeigned righteousness, what thou settest forth in words make up also in works, for the hypocrite though he pretends to be good is not good, who doeth evil works; and the innocent though he be blamed, is not therefore evil, who doeth good works.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1016-v45",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.45",
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.45:0ca025bf:2"
       ]
     },
     {
@@ -181,6 +202,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.45:d300022d:3"
       ]
     },
     {
@@ -218,6 +246,110 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.6.45:9cbeccc7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:45",
+      "excerpt": "A good man out of the good treasure of his heart brings forth good, and an evil man out of the evil treasure brings forth evil. The same treasure of the heart, which is the root of the tree. And what is brought forth from the heart, is the same as the fruit of the tree. Therefore, he who possesses the treasure of patience and perfect love in his heart, undoubtedly bringing forth the best fruits, loves his enemy, does good to the one who hates him, blesses the one who curses him, prays for the one who slanders him, does not oppose the one who strikes him or takes his things, gives to everyone who asks, does not demand back his own once taken, desires not to judge, not to condemn, corrects the erring patiently and lovingly, and other things which the Savior taught above. But he who keeps an evil treasure in his heart, hates his friend, curses the one who loves him, curses the one who blesses him, and performs other things contrary to the good treasure, as the Lord's word rebukes. So that he may not flatter himself in vain for what follows:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.45"
+    },
+    {
+      "id": "hcf:bede:luke.6.45:a69809b7:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-25",
+      "title": "Homilies on the Gospels 2.25 on luke 6:45",
+      "excerpt": "\"The good man produces good from the good treasure in his heart, and the evil man produces evil from the evil treasure.\" The treasure in one's heart is the intention of the thought, from which the Searcher of hearts judges the outcome.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.45"
+    },
+    {
+      "id": "hcf:bede:luke.6.45:9cd5694c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:45",
+      "excerpt": "For out of the abundance of the heart the mouth speaks. As if not the fruit of the tree, but leaves, that is, words alone, and not more so deeds, of either the true Christian or the hypocrite are sought, consequently the Lord adds:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.45"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.6.45:2d46a721:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-33",
+      "title": "COMMENTARY ON LUKE, HOMILY 33 on luke 6:45",
+      "excerpt": "This is also made clear by another declaration of our Lord. \"The good man,\" he says, \"as out of a good treasure, pours forth from the heart, good things.\" One who is differently disposed, and whose mind is the prey of fraud and wickedness, necessarily brings forth what is concealed deep within. The things that are in the mind and heart boil over and are vomited forth by the stream of speech that flows out of it. The virtuous person therefore speaks such things as become his character, while one who is worthless and wicked vomits forth his secret impurity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-33",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.6.45"
+    },
+    {
+      "id": "hcf:basil-the-great:luke.6.45:23ecb4e6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 6:45",
+      "excerpt": "(Hom. 9, in Hexameron.) In truth, self knowledge seems the most important of all. For not only the eye, looking at outward things, fails to exercise its sight upon itself, but our understanding also, though very quick in apprehending the sin of another, is slow to perceive its own defects.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.6.45"
+    },
+    {
+      "id": "hcf:basil-the-great:luke.6.45:6c7b7c85:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 6:45",
+      "excerpt": "The quality of the words shows the heart from which they proceed, plainly manifesting the inclination of our thoughts. Hence it follows, For out of the abundance of the heart the mouth speaketh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.6.45"
     }
   ]
 }

@@ -23,24 +23,6 @@
       ]
     },
     {
-      "id": "catena-john-0756-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.6.24",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 6:22–27",
-      "excerpt": "Our Lord, though He did not actually shew Himself to the multitude walking on the sea, yet gave them the opportunity of inferring what had taken place; The day following, the people which stood on the other side of the sea saw that there was none other boat there, save that one whereinto His disciples were entered, and that Jesus went not with His disciples into the boat, but that His disciples were gone away alone. What was this but to suspect that He had walked across the sea, on His going away? For He could not have gone over in a ship, as there was only one there, that in which His…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0757-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.6.24",
@@ -56,17 +38,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.6.24:966d4142:0"
       ]
     },
     {
-      "id": "catena-john-0758-v24",
+      "id": "catena-john-0772-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.6.24",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 6:22–27",
-      "excerpt": "Yet after so great a miracle, they did not ask Him how He had passed over, or shew any concern about it: as appears from what follows; And when they had found Him on the other side of the sea, they said unto Him, Rabbi, when earnest Thou hither? Except we say that this when meant how. And observe their lightness of mind. After saying, This is that Prophet, and wishing to take Him by force to make Him king, when they find Him, nothing of the kind is thought of.",
+      "excerpt": "How many there are who seek Jesus, only to gain some temporary benefit. One man has a matter of business, in which he wants the assistance of the clergy; another is oppressed by a more powerful neighbour, and flies to the Church for refuge: Jesus is scarcely ever sought for Jesus’ sake.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,50 +84,14 @@
       ]
     },
     {
-      "id": "catena-john-0761-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.6.24",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 6:22–27",
-      "excerpt": "Kindness and lenity are not always expedient. To the indolent or insensible disciple the spur must be applied; and this the Son of God does. For when the multitude comes with soft speeches, Rabbi, when earnest Thou hither? He shews them that He did not desire the honour that cometh from man, by the severity of His answer, which both exposes the motive on which they acted, and rebukes it. Jesus answered them and said, Verily, verily, I say unto you, Ye seek Me, not because ye saw the miracles, but because ye did eat of the loaves, and were filled.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0762-v24",
+      "id": "catena-john-0767-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.6.24",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 6:22–27",
-      "excerpt": "As if He said, Ye seek Me to satisfy the flesh, not the spirit.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0763-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.6.24",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 6:22–27",
-      "excerpt": "After the rebuke, however, He proceeds to teach them: Labour not for the meat which perisheth, but for that meat which endureth unto everlasting life; meaning, Ye seek for temporal food, whereas I only fed your bodies, that ye might seek the more diligently for that food, which is not temporary, but contains eternal life.",
+      "excerpt": "As He told the woman of Samaria above, If thou knewest Who it is that saith to thee, Give me to drink, thou wouldest have asked of Him, and He would have given thee living water. (c. 4) So He says here, Which the Son of man shall give unto you.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -167,6 +120,24 @@
       ]
     },
     {
+      "id": "catena-john-0762-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.6.24",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 6:22–27",
+      "excerpt": "As if He said, Ye seek Me to satisfy the flesh, not the spirit.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0766-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.6.24",
@@ -185,14 +156,68 @@
       ]
     },
     {
-      "id": "catena-john-0767-v24",
+      "id": "catena-john-0756-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.6.24",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 6:22–27",
-      "excerpt": "As He told the woman of Samaria above, If thou knewest Who it is that saith to thee, Give me to drink, thou wouldest have asked of Him, and He would have given thee living water. (c. 4) So He says here, Which the Son of man shall give unto you.",
+      "excerpt": "Our Lord, though He did not actually shew Himself to the multitude walking on the sea, yet gave them the opportunity of inferring what had taken place; The day following, the people which stood on the other side of the sea saw that there was none other boat there, save that one whereinto His disciples were entered, and that Jesus went not with His disciples into the boat, but that His disciples were gone away alone. What was this but to suspect that He had walked across the sea, on His going away? For He could not have gone over in a ship, as there was only one there, that in which His…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0761-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.6.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 6:22–27",
+      "excerpt": "Kindness and lenity are not always expedient. To the indolent or insensible disciple the spur must be applied; and this the Son of God does. For when the multitude comes with soft speeches, Rabbi, when earnest Thou hither? He shews them that He did not desire the honour that cometh from man, by the severity of His answer, which both exposes the motive on which they acted, and rebukes it. Jesus answered them and said, Verily, verily, I say unto you, Ye seek Me, not because ye saw the miracles, but because ye did eat of the loaves, and were filled.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0758-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.6.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 6:22–27",
+      "excerpt": "Yet after so great a miracle, they did not ask Him how He had passed over, or shew any concern about it: as appears from what follows; And when they had found Him on the other side of the sea, they said unto Him, Rabbi, when earnest Thou hither? Except we say that this when meant how. And observe their lightness of mind. After saying, This is that Prophet, and wishing to take Him by force to make Him king, when they find Him, nothing of the kind is thought of.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0763-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.6.24",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 6:22–27",
+      "excerpt": "After the rebuke, however, He proceeds to teach them: Labour not for the meat which perisheth, but for that meat which endureth unto everlasting life; meaning, Ye seek for temporal food, whereas I only fed your bodies, that ye might seek the more diligently for that food, which is not temporary, but contains eternal life.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -211,24 +236,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 6:22–27",
       "excerpt": "Or sealed, i. e. sent Him for this purpose, viz. to bring us food; or, sealed, was revealed the Gospel by means of His witness.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0772-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.6.24",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 6:22–27",
-      "excerpt": "How many there are who seek Jesus, only to gain some temporary benefit. One man has a matter of business, in which he wants the assistance of the clergy; another is oppressed by a more powerful neighbour, and flies to the Church for refuge: Jesus is scarcely ever sought for Jesus’ sake.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -290,42 +297,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-0760-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.6.24",
-      "topicSlugs": [],
-      "personId": "alcuin",
-      "workId": "catena-aurea-john",
-      "title": "On John 6:22–27",
-      "excerpt": "i He who set an example of declining praise, and earthly power, sets teachers also an example of deliverance in preaching.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0764-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.6.24",
-      "topicSlugs": [],
-      "personId": "alcuin",
-      "workId": "catena-aurea-john",
-      "title": "On John 6:22–27",
-      "excerpt": "Bodily food only supports the flesh of the outward man, and must be taken not once for all, but daily; whereas spiritual food remaineth for ever, imparting perpetual fulness, and immortality.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.6.24:5c9ade36:0"
       ]
     },
     {
@@ -363,6 +341,93 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "catena-john-0764-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.6.24",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "catena-aurea-john",
+      "title": "On John 6:22–27",
+      "excerpt": "Bodily food only supports the flesh of the outward man, and must be taken not once for all, but daily; whereas spiritual food remaineth for ever, imparting perpetual fulness, and immortality.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0760-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.6.24",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "catena-aurea-john",
+      "title": "On John 6:22–27",
+      "excerpt": "i He who set an example of declining praise, and earthly power, sets teachers also an example of deliverance in preaching.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.6.24:738c7eac:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-3",
+      "title": "Commentary on the Gospel of John, Book 3 on john 6:24",
+      "excerpt": "These men follow Him, marvelling perchance at His miracles, yet not receiving any profit from them unto the duty of faith, but as though they were making some return to the Wonder-worker by merely bestowing on Him a not undesired praise. For this is a dreary disease of a mind and soul which is never accustomed to be led to the choice of what is profitable for her. The reason why this was so with them was, that they delighted solely in the pleasures of the flesh, and jumped eagerly at the meanest temporal food, rather than hasten after spiritual goods, and endeavour to gain what would support them to life eternal. This you will learn clearly by what follows too.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.6.24"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.6.24:d3473ac5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 6:24",
+      "excerpt": "The people, having come to this conclusion and having found other boats that had arrived from the other side, got into them and crossed over to Capernaum.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.6.24"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.6.24:d68d91fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 6:24",
+      "excerpt": "888 The people were eager to find Christ. First, he shows how they looked for him; secondly, how they questioned him after they found him (v 25).\r\n\r\n889 He says, When the people saw that Jesus was not there, nor his disciples, they got into the boats, which had come from Tiberias, looking for Jesus; and this is praiseworthy: \"Search for the Lord while he can be found\" (Is 55:6); \"Seek the Lord, and your soul will have life\" (Ps 68:33).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.6.24"
     }
   ]
 }

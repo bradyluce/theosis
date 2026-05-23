@@ -4,6 +4,31 @@
   "verseNumber": 18,
   "entries": [
     {
+      "id": "catena-mark-0075-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.18",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:16–20",
+      "excerpt": "It may be asked, how he could call two fishers from each of the boats, (first, Peter and Andrew, then having gone a little further, the two others, sons of Zebedee,) when Luke says that James and John were called to help Peter and Andrew, and that it was to Peter only that Christ said, Fear not, from this time thou shalt catch men; (Luke 5:10) he also says, that at the same time, when they had brought their ships to land, they followed him. We must therefore understand that that transaction which Luke intimates happened first, and afterwards that they, as their custom was, had returned to…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.18:bf73c2c9:0"
+      ]
+    },
+    {
       "id": "catena-mark-0073-v18",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.18",
@@ -22,21 +47,28 @@
       ]
     },
     {
-      "id": "catena-mark-0075-v18",
+      "id": "catena-mark-0074-v18",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.18",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:16–20",
-      "excerpt": "It may be asked, how he could call two fishers from each of the boats, (first, Peter and Andrew, then having gone a little further, the two others, sons of Zebedee,) when Luke says that James and John were called to help Peter and Andrew, and that it was to Peter only that Christ said, Fear not, from this time thou shalt catch men; (Luke 5:10) he also says, that at the same time, when they had brought their ships to land, they followed him. We must therefore understand that that transaction which Luke intimates happened first, and afterwards that they, as their custom was, had returned to…",
+      "excerpt": "For we must not allow any time to lapse, but at once follow the Lord. After these again, He catches James and John, because they also, though poor, supported the old age of their father. Wherefore there follows, And when he had gone a little farther thence, he saw James the son of Zebedee, &c. But they left their father, because he would have hindered them in following Christ. Do thou, also, when thou art hindered by thy parents, leave them, and come to God. It is shewn by this that Zebedee was not a believer; but the mother of the Apostles believed, for she followed Christ, when Zebedee was…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.18:df492386:0"
       ]
     },
     {
@@ -48,24 +80,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:16–20",
       "excerpt": "As the Evangelist John relates, Peter and Andrew were disciples of the Forerunner, but seeing that John had borne witness to Jesus, they joined themselves to him; afterwards, grieving that John had been cast into prison, they returned to their trade. Wherefore there follows, casting nets into the sea, for they were fishers. Look then upon them, living on their own labours, not on the fruits of iniquity; for such men were worthy to become the first disciples of Christ; whence it is subjoined, And Jesus said unto them, Come ye after me. Now He calls them for the second time; for this is the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0074-v18",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.18",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:16–20",
-      "excerpt": "For we must not allow any time to lapse, but at once follow the Lord. After these again, He catches James and John, because they also, though poor, supported the old age of their father. Wherefore there follows, And when he had gone a little farther thence, he saw James the son of Zebedee, &c. But they left their father, because he would have hindered them in following Christ. Do thou, also, when thou art hindered by thy parents, leave them, and come to God. It is shewn by this that Zebedee was not a believer; but the mother of the Apostles believed, for she followed Christ, when Zebedee was…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -92,6 +106,75 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.18:ae67c0a4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:18",
+      "excerpt": "Peter and Andrew were first disciples of the Forerunner, and when they saw Jesus, to whom John had borne witness, they joined Him. Then, when John was betrayed, they sorrowfully returned again to their former occupation. So Christ calls them now a second time, for the present calling is already the second. Note that they were nourished by their own righteous labors and not by unrighteous occupations. Such men were worthy to be the first disciples of Christ. Immediately casting aside what was in their hands, they followed Him; for one must not delay, but must follow at once.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.18"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.18:46a4d3fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:18",
+      "excerpt": "We must know also, that action is first called, then contemplation; for Peter is the type of the active life, for he was more ardent than the others, just as the active life is the more bustling; but John is the type of the contemplative life, for he speaks more fully of divine things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.18"
+    },
+    {
+      "id": "hcf:augustine:mark.1.18:103e41bd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on mark 1:18",
+      "excerpt": "And from that day they adhered to him so resolutely that they did not depart…. Let us, also, ourselves build a house in our heart and make a place where he may come and teach us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.1.18"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.1.18:4ac8ce91:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-5",
+      "title": "Forty Gospel Homilies, Homily 5 on mark 1:18",
+      "excerpt": "You have heard, dearest brothers, that at the voice of a single command, Peter and Andrew, leaving their nets, followed the Redeemer. They had seen him perform no miracles yet, they had heard nothing from him about the reward of eternal recompense; and yet at one command of the Lord they forgot what they seemed to possess. How many of his miracles do we see, with how many scourges are we afflicted, by how many harsh threats are we deterred, and yet we disdain to follow him when he calls? He who admonishes us about conversion already sits in heaven; he has already subjected the necks of the nations to the yoke of faith, he has already laid low the glory of the world, he already announces, as its ruins multiply, that the day of his strict judgment draws near; and yet our proud mind does not wish to abandon willingly what it loses daily against its will. What then, dearest ones, what shall we say at his judgment, we who are neither bent by commands nor corrected by blows from the love of the present age?\r\n\r\nBut perhaps someone may say to himself in silent thoughts: At the Lord's voice, what or how much did each of these fishermen leave behind, who had almost nothing? But in this matter, dearest brothers, we ought to weigh the affection rather than the wealth. He left much who retained nothing for himself; he left much who, however little it was, abandoned everything. Certainly we both possess what we have with love, and seek from desire those things we do not have at all. Therefore Peter and Andrew left much, since each also abandoned the desires of having. He left much who renounced his longings along with the thing he possessed. Therefore those who followed gave up as much as could be desired by those who did not follow. Let no one therefore, even when he sees that certain people have left many things behind, say to himself: I want to imitate these despisers of the world, but I have nothing to leave behind. You leave many things, brothers, if you renounce earthly desires. For our external possessions, however small, are sufficient for the Lord. For he weighs the heart, not the substance; nor does he consider how much is offered in his sacrifice, but from how much it is brought forth. For if we weigh external substance, behold, our holy merchants purchased the perpetual life of angels by giving up their nets and boat. Indeed it has no estimation of price, yet the kingdom of God is worth as much as you have. For it was worth half his substance to Zacchaeus, because he reserved the other half to restore fourfold what he had unjustly taken. It was worth the abandoned nets and boat to Peter and Andrew; it was worth two small coins to the widow; it was worth a cup of cold water to another. The kingdom of God, therefore, as we said, is worth as much as you have.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.1.18"
     },
     {
       "id": "catena-mark-0070-v18",
@@ -127,6 +210,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.18:8be8d36f:0"
       ]
     }
   ]

@@ -22,6 +22,24 @@
       ]
     },
     {
+      "id": "catena-mark-0403-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.4",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:1–6",
+      "excerpt": "Not as if He Who knows all things before they are done, wonders at what He did not expect or look forward to, but knowing the hidden things of the heart, and wishing to intimate to men that it was wonderful, He openly shews that He wonders. And indeed the blindness of the Jews is wonderful, for they neither believed what their prophets said of Christ, nor would in their own persons believe on Christ, Who was born amongst them. Mystically again; Christ is despised in His own house and country, that is, amongst the people of the Jews, and therefore He worked few miracles there, lest they should…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0397-v4",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.4",
@@ -55,24 +73,38 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.4:7acedc92:0"
       ]
     },
     {
-      "id": "catena-mark-0403-v4",
+      "id": "catena-mark-0402-v4",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.4",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:1–6",
-      "excerpt": "Not as if He Who knows all things before they are done, wonders at what He did not expect or look forward to, but knowing the hidden things of the heart, and wishing to intimate to men that it was wonderful, He openly shews that He wonders. And indeed the blindness of the Jews is wonderful, for they neither believed what their prophets said of Christ, nor would in their own persons believe on Christ, Who was born amongst them. Mystically again; Christ is despised in His own house and country, that is, amongst the people of the Jews, and therefore He worked few miracles there, lest they should…",
+      "excerpt": "Or again, if the prophet has noble relations, his countrymen hate them, and on that account do not honour the prophet. There follows, And he could there do no mighty work, &c. What, however, is here expressed by He could not, we must take to mean, He did not choose, because it was not that He was weak, but that they were faithless; He does not therefore work any miracles there, for he spared them, lest they should be worthy of greater blame, if they believed not, even with miracles before their eyes. Or else, for the working of miracles, not only the power of the Worker is necessary, but the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.4:02c721c2:1"
       ]
     },
     {
@@ -94,17 +126,51 @@
       ]
     },
     {
-      "id": "catena-mark-0402-v4",
+      "id": "hcf:theophylact-of-ohrid:mark.6.4:e70c2f54:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:4",
+      "excerpt": "The Lord speaks generally about all prophets, that they receive no honor in their homelands, among their kinsmen and household members. Do they have distinguished kinsmen? In that case, those kinsmen envy them and therefore dishonor them. Are they of humble origin? Again, they are disgraced for their humble origin.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.4"
+    },
+    {
+      "id": "hcf:bede:mark.6.4:66a65849:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:4",
+      "excerpt": "And Jesus said to them, a prophet is not without honor, except in his own country, and among his own relatives, and in his own house. It is testified in the Scriptures that the Lord Jesus Christ is called a prophet, and Moses, predicting His future incarnation to the children of Israel, said: The Lord your God will raise up for you a prophet from among your brothers, like unto me, you shall listen to him. Not only He who is the head and Lord of the prophets, but also Elijah and Jeremiah, and the other prophets, were held in less honor in their own country than in foreign cities, because it is almost natural for citizens always to envy their fellow citizens. They do not consider the man's present works, but remember his frail infancy, as if they themselves had not also come to mature age through the same stages of life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.4"
+    },
+    {
+      "id": "catena-mark-0401-v4",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.4",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:1–6",
-      "excerpt": "Or again, if the prophet has noble relations, his countrymen hate them, and on that account do not honour the prophet. There follows, And he could there do no mighty work, &c. What, however, is here expressed by He could not, we must take to mean, He did not choose, because it was not that He was weak, but that they were faithless; He does not therefore work any miracles there, for he spared them, lest they should be worthy of greater blame, if they believed not, even with miracles before their eyes. Or else, for the working of miracles, not only the power of the Worker is necessary, but the…",
+      "excerpt": "Oftentimes also the origin of a man brings him contempt, as it is written, (1 Sam. 25:10. Ps. 138:6) Who is the son of Jesse? for the Lord hath respect unto the lowly; as to the proud, He beholdeth them afar off.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 55,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -120,24 +186,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:1–6",
       "excerpt": "Jesus is called the son of a workman, of that one, however, whose work was the morning and the sun, that is, the first and second Church, as a figure of which the woman and the damsel are healed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0401-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.4",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:1–6",
-      "excerpt": "Oftentimes also the origin of a man brings him contempt, as it is written, (1 Sam. 25:10. Ps. 138:6) Who is the son of Jesse? for the Lord hath respect unto the lowly; as to the proud, He beholdeth them afar off.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

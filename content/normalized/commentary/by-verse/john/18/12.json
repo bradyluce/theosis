@@ -38,24 +38,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-2245-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.12",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:12–14",
-      "excerpt": "In exultation, to shew what they had done, as if they were raising a trophy.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.18.12:8f0ad7a2:0"
       ]
     },
     {
@@ -85,6 +74,24 @@
       "workId": "catena-aurea-john",
       "title": "On John 18:12–14",
       "excerpt": "That no one however might be disturbed at the sound of the chains, the Evangelist reminds them of the prophecy that His death would be the salvation of the world: Now Caiaphas was he which gave counsel to the Jews, that it was expedient that one man should die for the people. Such is the overpowering force of truth, that even its enemies echo it.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2245-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.12",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:12–14",
+      "excerpt": "In exultation, to shew what they had done, as if they were raising a trophy.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -128,6 +135,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.18.12:3c4d6852:0"
       ]
     },
     {
@@ -147,6 +161,91 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.18.12:1d2ea739:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-112",
+      "title": "Tractates on John 112 on john 18:12",
+      "excerpt": "\"Then the cohort, and the tribune, and the officers of the Jews, took Jesus, and bound Him.\" They took Him to whom they had never found access: for He continued the day, while they remained as darkness; neither had they given heed to the words, \"Come unto Him, and be enlightened.\" For had they so approached Him, they would have taken Him, not with their hands for the purpose of murder, but with their hearts for the purpose of a welcome reception. Now, however, when they laid hold of Him in this way, their distance from Him was vastly increased: and they bound Him by whom they themselves ought rather to have been loosed. And perhaps there were those among them who then fastened their fetters on Christ, and yet were afterwards delivered by Him, and could say, \"Thou hast loosed my bonds.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.18.12"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.18.12:81972409:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 18:12",
+      "excerpt": "When the Lord had done everything that could have subdued them, and they did not understand, then He allowed them to lead Him away.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.18.12"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.18.12:0d59f345:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-83",
+      "title": "Homily on the Gospel of John 83 on john 18:12",
+      "excerpt": "\"Then Jesus was taken; and they bound Him, and led Him away to Annas.\" Why to Annas? In their pleasure they made a show of what had been done, as though forsooth they had set up a trophy. \"And he was father-in-law to Caiaphas.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.18.12"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.18.12:ceb61a04:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-11-13",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 11.13 on john 18:12",
+      "excerpt": "Now that all obstacles had been overcome and Peter had put away his sword, and Christ had, as it were, surrendered himself to the hand of the Jews (though he did not have to die) and it was easier for him to escape, the soldiers and servants together with their guide give way to cruel rage and are transported with the ardor of victory. They took the Lord, who gave himself up wholly to their will, and put chains upon him, even though he came to us to release us from the bondage of the devil and to loose us from the chains of sin.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-11-13",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.18.12"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.18.12:501a915d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 18:12",
+      "excerpt": "2294 Now the Evangelist describes how our Lord was taken by the officers and led before the leaders. First, he is led to one of the leaders, Annas; secondly, to another, Caiaphas (v 24). In regard to the first he does two things: first, he mentions how he was presented before Annas; secondly, how he was questioned by Annas (v 19). In regard to the first he does two things: he mentions that he is led to Annas' house; secondly, that Christ's disciples followed him (v 15). In regard to the first he does two things: he mentions what was done to Jesus; secondly, he describes the high priest before whom Jesus was brought (v 13b).\r\n\r\n2295 Three things were done to Christ. First, he was seized; for he says, the band of soldiers and their captain and the officers of the Jews seized Jesus, who is not apprehensible: \"great in counsel, incomprehensible in thought\" [Jer 32:19]. Perhaps they were thinking of the Psalm (71:11): \"God has forsaken him; pursue and seize him, for there is none to deliver him.\" Again, \"The breath of our mouth, Christ the Lord, is taken in our sins,\" that is, on account of our sins, in order to free us: \"Even the captives of the mighty shall be taken\" (Is 49:25).\r\n\r\nSecondly, Christ was bound, and bound him, who came to untie their bonds and break their chains: \"You have loosed my bonds\" (Ps 116:16).\r\n\r\nThirdly, he was led away, they led him to Annas, so that they might destroy him who came to lead all to the way of salvation: \"You have led me, because you became my hope\" [Ps 61:4].",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.18.12"
     }
   ]
 }

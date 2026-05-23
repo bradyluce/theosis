@@ -4,22 +4,28 @@
   "verseNumber": 30,
   "entries": [
     {
-      "id": "augustine-john-098-c16-v30",
+      "id": "catena-john-2110-v30",
       "relation": "verse",
       "targetVerseId": "kjva:john.16.30",
       "topicSlugs": [],
       "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 16:12–33",
-      "excerpt": "From the words of our Lord, where He says, I have yet many things to say unto you, but you cannot bear them now, there arose a difficult question, which I recollect to have put off, that it might be handled afterwards at greater leisure, because my last discourse had reached its proper limits, and required to be brought to a close. And now, accordingly, as we have time to redeem our promise, let us take up its discussion as the Lord Himself shall grant us ability, who put it into our heart to make the proposal. And the question is this: Whether spiritual men have anything in doctrine which…",
+      "workId": "catena-aurea-john",
+      "title": "On John 16:29–33",
+      "excerpt": "Why this remark? To one Who knew all things, instead of saying, Thou needest not that any man should ask Thee; it would have been more appropriate to have said, Thou needest not to ask any man: yet we know that both of these were done, viz. that our Lord both asked questions, and was asked. But this is soon explained; for both were for the benefit, not of Himself, but of those whom He asked questions of, or by whom He was asked. He asked questions of men not in order to learn Himself, but to teach them: and in the case of those who asked questions of Him, such questions were necessary to them…",
       "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
+      "sourceId": "catena-aurea-john-source",
       "rank": 85,
       "tags": [
-        "augustine",
+        "catena-aurea",
         "patristic",
-        "tractate",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.16.30:73b170d6:1"
       ]
     },
     {
@@ -39,17 +45,61 @@
         "patristic",
         "tractate",
         "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.16.30:3289b3b7:0"
       ]
     },
     {
-      "id": "catena-john-2107-v30",
+      "id": "augustine-john-098-c16-v30",
       "relation": "verse",
       "targetVerseId": "kjva:john.16.30",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 16:12–33",
+      "excerpt": "From the words of our Lord, where He says, I have yet many things to say unto you, but you cannot bear them now, there arose a difficult question, which I recollect to have put off, that it might be handled afterwards at greater leisure, because my last discourse had reached its proper limits, and required to be brought to a close. And now, accordingly, as we have time to redeem our promise, let us take up its discussion as the Lord Himself shall grant us ability, who put it into our heart to make the proposal. And the question is this: Whether spiritual men have anything in doctrine which…",
+      "takeaway": "",
+      "sourceId": "augustine-tractates-john-source",
+      "rank": 85,
+      "tags": [
+        "augustine",
+        "patristic",
+        "tractate",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2121-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.16.30",
+      "topicSlugs": [],
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 16:29–33",
-      "excerpt": "The disciples were so refreshed with the thought of being in favour with the Father, that they say they are sure He knows all things: His disciples said unto Him, Now speakest Thou plainly, and speakest no proverb.",
+      "excerpt": "When the Holy Spirit was given them, they were of good cheer, and, in His strength, victorious. For He would not have overcome the world, had the world overcome His members. When He says, These things have I spoken to you, that in Me ye might have peace, He refers not only to what He has just said, but to what He had said all along, either from the time that He first had disciples, or since the supper, when He began this long and wonderful discourse. He declares this to be the object of His whole discourse, viz. that in Him they might have peace. And this peace shall have no end, but is…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2119-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.16.30",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 16:29–33",
+      "excerpt": "The tribulation of which He speaks was to commence thus, i. e. in every one being scattered to his home, but was not to continue so. For in saying, And leave Me alone, He does not mean this to apply to them in their sufferings after His ascension. They were not to desert Him then, but to abide and have peace in Him. Wherefore He adds, Be of good cheer.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -78,32 +128,14 @@
       ]
     },
     {
-      "id": "catena-john-2109-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.16.30",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 16:29–33",
-      "excerpt": "But since His answer met what was in their minds, they add, Now we are sure that Thou knowest all things. See how imperfect they yet were, after so many and great things now at last to say, Now we are sure &c. saying it too as if they were conferring a favour. And needest not that any man should ask thee; i. e. Thou knowest what offends us, before we tell Thee, and Thou hast relieved us by saying that the Father loveth us.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2110-v30",
+      "id": "catena-john-2116-v30",
       "relation": "verse",
       "targetVerseId": "kjva:john.16.30",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 16:29–33",
-      "excerpt": "Why this remark? To one Who knew all things, instead of saying, Thou needest not that any man should ask Thee; it would have been more appropriate to have said, Thou needest not to ask any man: yet we know that both of these were done, viz. that our Lord both asked questions, and was asked. But this is soon explained; for both were for the benefit, not of Himself, but of those whom He asked questions of, or by whom He was asked. He asked questions of men not in order to learn Himself, but to teach them: and in the case of those who asked questions of Him, such questions were necessary to them…",
+      "excerpt": "He wishes to advance them so far as to understand that He had not separated from the Father because He had come forth from the Father.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -150,14 +182,14 @@
       ]
     },
     {
-      "id": "catena-john-2115-v30",
+      "id": "catena-john-2109-v30",
       "relation": "verse",
       "targetVerseId": "kjva:john.16.30",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 16:29–33",
-      "excerpt": "Ye shall be scattered; i. e. when I am betrayed, fear shall so possess you, that ye will not be able even to take to flight together. But I shall suffer no harm in consequence: And yet I am not alone, because the Father is with Me.",
+      "excerpt": "But since His answer met what was in their minds, they add, Now we are sure that Thou knowest all things. See how imperfect they yet were, after so many and great things now at last to say, Now we are sure &c. saying it too as if they were conferring a favour. And needest not that any man should ask thee; i. e. Thou knowest what offends us, before we tell Thee, and Thou hast relieved us by saying that the Father loveth us.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -165,24 +197,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-2116-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.16.30",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 16:29–33",
-      "excerpt": "He wishes to advance them so far as to understand that He had not separated from the Father because He had come forth from the Father.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.16.30:e1fcac2e:0"
       ]
     },
     {
@@ -204,14 +225,32 @@
       ]
     },
     {
-      "id": "catena-john-2119-v30",
+      "id": "catena-john-2115-v30",
       "relation": "verse",
       "targetVerseId": "kjva:john.16.30",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 16:29–33",
-      "excerpt": "The tribulation of which He speaks was to commence thus, i. e. in every one being scattered to his home, but was not to continue so. For in saying, And leave Me alone, He does not mean this to apply to them in their sufferings after His ascension. They were not to desert Him then, but to abide and have peace in Him. Wherefore He adds, Be of good cheer.",
+      "excerpt": "Ye shall be scattered; i. e. when I am betrayed, fear shall so possess you, that ye will not be able even to take to flight together. But I shall suffer no harm in consequence: And yet I am not alone, because the Father is with Me.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2107-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.16.30",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 16:29–33",
+      "excerpt": "The disciples were so refreshed with the thought of being in favour with the Father, that they say they are sure He knows all things: His disciples said unto Him, Now speakest Thou plainly, and speakest no proverb.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -230,24 +269,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 16:29–33",
       "excerpt": "i. e. raise up your spirits again: when the Master is victorious, the disciples should not be dejected; I have overcome the world.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2121-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.16.30",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 16:29–33",
-      "excerpt": "When the Holy Spirit was given them, they were of good cheer, and, in His strength, victorious. For He would not have overcome the world, had the world overcome His members. When He says, These things have I spoken to you, that in Me ye might have peace, He refers not only to what He has just said, but to what He had said all along, either from the time that He first had disciples, or since the supper, when He began this long and wonderful discourse. He declares this to be the object of His whole discourse, viz. that in Him they might have peace. And this peace shall have no end, but is…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -291,6 +312,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:john.16.30:54f808fd:1"
       ]
     },
     {
@@ -310,6 +338,91 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.16.30:cd0a6c6d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-103",
+      "title": "Tractates on John 103 on john 16:30",
+      "excerpt": "It was from this diet that they drew the knowledge that He knew all things, and needed not that any one should ask Him: and, indeed, why they said this, is a topic worthy of inquiry. For one would think they ought rather to have said, Thou needest not to ask any one; not, \"That any one should ask Thee.\" They had just said, We are sure that Thou knowest all things:\" and surely He that knoweth all things is accustomed rather to be questioned by those who do not know, that in reply to their questions they may hear what they wish from Him who knoweth all things; and not to be Himself the questioner, as if wishing to know something, when He knoweth all things. What, then, are we to understand by this, that, when apparently they ought to have said to Him, whom they knew to be omniscient, Thou needest not to ask any man, they considered it more befitting to say, \"Thou needest not that any man should ask Thee\"? Yea, is it not the case that we read of both being done; to wit, that the Lord both asked, and was asked questions? But this latter is speedily answered: for this was needful not for Him, but for those rather whom He questioned, or by whom He was questioned. For He never questioned any for the purpose of learning anything from them, but for the purpose rather of teaching them. And for those who put questions to Him, as desirous of learning something of Him, it was assuredly needful to be made acquainted with some things by Him who knew everything.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.16.30"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.16.30:6566499b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-6-34-35",
+      "title": "ON THE TRINITY 6.34-35 on john 16:30",
+      "excerpt": "They believe that he came forth from God because he does the works of God.… Notice how, on the one hand, they are not at all amazed when he says, \"I am come into the world from the Father.\" In fact, these are words which they had often heard before. But their reply shows a belief in and appreciation of the previous words when he had said, \"I came forth from the Father.\" They, in fact, make specific mention of this in their reply: \"By this we believe that you came forth from God.\" They didn't add the phrase, \"and are come into the world,\" because they knew already that he was sent from God. But they had not yet received anything concerning the doctrine of his eternal generation. That unutterable doctrine they now began to see for the first time in consequence of these words and therefore reply that he spoke no longer in parables. For God is not born from God after the manner of human birth. His is a coming forth from, rather than a birth from God. He is one from one. He is not a portion, not a defection, not a diminution, not a derivation, not a pretension, not a passion. He is the birth of living nature from living nature. He is God coming forth from God, not a creature appointed to the name of God. He did not begin to be from nothing, but he came forth from a nature that has always existed. To come forth has the signification of birth, not of beginning.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-6-34-35",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.16.30"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.16.30:30cb1da3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-11",
+      "title": "Commentary on the Gospel of John, Book 11 on john 16:30",
+      "excerpt": "They marvel at the convincing nature of the proof He gives them, and are amazed at the clearness of His language, for without any concealment He made His speech to them right openly. They rejoice therefore at receiving a proof rid of all difficulty, and declare that His words have in them nothing hard to understand, but that His language here is so easily intelligible that it does not seem in the smallest degree to partake of the nature of a parable. And they get also this additional benefit: Since Thou knowest, they say, what is whispered in secret, and hast now given us this information in the words Thou hast just spoken, anticipating thereby the questions we might have asked in our desire to elicit it, we are persuaded that Thou art indeed come from God. For to know, they say, what is secret and hidden can belong to the God of all and to none other. And since Thou knowest all things of Thyself, is it not beyond question that Thou hast emanated from God that knoweth all things? So this truly Divine and marvellous sign also availed to nurture in the disciples with the rest undoubting faith, so that we can see in them the truth of the saying: Give instruction to a wise man, and he will be yet wiser: teach a just man, and he will increase in learning. And they say, \"Now are we sure;\" |473 not meaning thereby that they then let into their minds the first beginning of faith when they heard these words and recognised the sign, I mean the omniscience of Christ; but rather that they began to establish firmly in their hearts the faith that had at first gained admittance there, and to attain a state of unalterable conviction that He was God, and sprang from the true and living God. We shall accept then the expression \"Now are we sure,\" as referring not to the first beginning of faith, but to the occasion of its first being firmly settled in that apprehension of Christ's Nature now honoured with approval.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.16.30"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.16.30:45756f2b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 16:30",
+      "excerpt": "The disciples, having heard that God the Father will love them, and that they do not need the mediation of Him, Christ, as those adopted by the Father, and that He came forth from God, say: \"Now we see that You know all things,\" that is, You know what causes each heart to stumble, and You have no need to learn this from others, and therefore we believe that You came forth from God. For to know the secrets of the heart is proper to God (Ps. 43:22).\r\nSee then how imperfect they were, when they say \"now we see.\" They, having listened to His teaching so much and for so long, say \"now we know.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.16.30"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.16.30:82ce15fd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 16:30",
+      "excerpt": "2166 They profess the certainty of his knowledge when they say, Now we know that you know all things. At first glance, the meaning seems to be that when one clearly explains the things he says, this is a proof of his certain and full knowledge of them: for the sign of one who knows is the ability to fully teach what he knows ‑ \"Knowledge is easy for a man of understanding\" (Prv 14:6) ‑ and what is beyond one's understanding cannot be plainly told in words. Yet the apostles said this for another reason, which is because the Lord knew all the secrets of their hearts, and could satisfy their perplexities. He consoled them by promising them the joy of the Holy Spirit, that they would see him again, and that the Father loves them. Thus they say, Now we know that you know all things, that is, the secrets of hearts: \"Lord, you know everything\" (21:17); \"The Lord God knows all things before they are done\" (Wis 8:8).\r\n\r\n2167 Then they add, and need none to question you. This seems to contradict what they had just said, namely, that he knows all things; for one who is wise is questioned (rather than questioning others). Why then is it not necessary to question him? The answer is that they said this to indicate that he even knew the secrets of hearts, because even before he was questioned he satisfied their perplexity when they were saying to each other, \"What does he mean by 'a little while'?\" (16:18). Nevertheless, Christ does ask and is asked, not because he needs it, but because we do.\r\n\r\n2168 They profess Christ's divine origin when they say, by this we believe that you came (came forth, exist) from God. This statement is appropriate for it is a distinguishing characteristic of the divinity to know all things and even the secrets of hearts: \"The heart is deceitful above all things, and desperately corrupt; who can understand it? 'I the Lord search the mind and try the heart'\" (Jer 17:9). Thus they say, you came from God, consubstantial with the Father, and true God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.16.30"
     }
   ]
 }

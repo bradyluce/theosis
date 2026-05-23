@@ -4,6 +4,31 @@
   "verseNumber": 10,
   "entries": [
     {
+      "id": "catena-mark-0206-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.10",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:6–12",
+      "excerpt": "Both therefore fell down before the Lord, those who had the plagues of bodily diseases, and those who were vexed by unclean spirits. The sick did this simply with the intention of obtaining health, but the demoniacs, or rather the devils within them, because under the mastery of a fear of God they were compelled not only to fall down before Him, but also to praise His majesty; wherefore it goes on, And they cried out, saying, Thou art the Son of God. And here we must wonder at the blindness of the Arians, who, after the glory of His resurrection, deny the Son of God, Whom the devils confess…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.3.10:3a2236c9:0"
+      ]
+    },
+    {
       "id": "catena-mark-0200-v10",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.10",
@@ -58,24 +83,6 @@
       ]
     },
     {
-      "id": "catena-mark-0206-v10",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.10",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:6–12",
-      "excerpt": "Both therefore fell down before the Lord, those who had the plagues of bodily diseases, and those who were vexed by unclean spirits. The sick did this simply with the intention of obtaining health, but the demoniacs, or rather the devils within them, because under the mastery of a fear of God they were compelled not only to fall down before Him, but also to praise His majesty; wherefore it goes on, And they cried out, saying, Thou art the Son of God. And here we must wonder at the blindness of the Arians, who, after the glory of His resurrection, deny the Son of God, Whom the devils confess…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0201-v10",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.10",
@@ -84,6 +91,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:6–12",
       "excerpt": "But the soldiers of Herod the king are called Herodians, because a certain new heresy had sprung up, which asserted that Herod was the Christ. For the prophecy of Jacob intimated, that when the princes of Judah failed, then Christ should come; because therefore in the time of Herod none of the Jewish princes remained, and he, an alien, was the sole ruler, some thought that he was the Christ, and set on foot this heresy. These, therefore, were with the Pharisees trying to kill Christ.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0207-v10",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.10",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:6–12",
+      "excerpt": "Morally again, the Herodians, that is, persons who love the lusts of the flesh, wish to slay Christ. For the meaning of Herod is, 'of skin.' But those who quit their country, that is, a carnal mode of living, follow Christ, and their plagues are healed, that is, the sins which wound their conscience. But Jesus in us is our reason, which commands that our vessel, that is, our body, should serve Him, lest the troubles of worldly affairs should press upon our reason.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -127,25 +152,48 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.3.10:05d4bbfe:1"
       ]
     },
     {
-      "id": "catena-mark-0207-v10",
+      "id": "hcf:theophylact-of-ohrid:mark.3.10:9e2ae095:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.3.10",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:6–12",
-      "excerpt": "Morally again, the Herodians, that is, persons who love the lusts of the flesh, wish to slay Christ. For the meaning of Herod is, 'of skin.' But those who quit their country, that is, a carnal mode of living, follow Christ, and their plagues are healed, that is, the sins which wound their conscience. But Jesus in us is our reason, which commands that our vessel, that is, our body, should serve Him, lest the troubles of worldly affairs should press upon our reason.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:10",
+      "excerpt": "The evangelist calls diseases \"plagues,\" for diseases truly contribute much to our correction, so that God punishes us with these plagues, as a father does his children.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.10"
+    },
+    {
+      "id": "hcf:augustine:mark.3.10:5e0a65d9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermons-on-easter-148",
+      "title": "SERMONS, ON EASTER 148 on mark 3:10",
+      "excerpt": "It is by faith that we touch Jesus. And far better to touch him by faith than to touch or handle him with the hands only and not by faith. It was no great thing to merely touch him manually. Even his oppressors doubtless touched him when they apprehended him, bound him, and crucified him, but by their ill-motivated touch they lost precisely what they were laying hold of. O worldwide church! It is by touching him faithfully that your \"faith has made you whole.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermons-on-easter-148",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.3.10"
     }
   ]
 }

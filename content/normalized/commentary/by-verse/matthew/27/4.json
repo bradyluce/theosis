@@ -40,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-matt-3896-v4",
+      "id": "catena-matt-3897-v4",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.27.4",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 27:1–5",
-      "excerpt": "They did not put Him to death in secret, because they sought to destroy His reputation, and the wonder with which He was regarded by many. For this reason they were minded to put Him to death openly before all, and therefore they led Him to the governor.",
+      "excerpt": "Judas, when he saw that the Lord was condemned to death, returned the money to the Priests, as though it had been in his power to change the minds of His persecutors.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -58,14 +58,14 @@
       ]
     },
     {
-      "id": "catena-matt-3897-v4",
+      "id": "catena-matt-3896-v4",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.27.4",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 27:1–5",
-      "excerpt": "Judas, when he saw that the Lord was condemned to death, returned the money to the Priests, as though it had been in his power to change the minds of His persecutors.",
+      "excerpt": "They did not put Him to death in secret, because they sought to destroy His reputation, and the wonder with which He was regarded by many. For this reason they were minded to put Him to death openly before all, and therefore they led Him to the governor.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -109,24 +109,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3894-v4",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.27.4",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 27:1–5",
-      "excerpt": "They supposed that by His death they should crush His doctrine, and the belief in Him of those who believed Him to be the Son of God. With such purpose against Him they bound Jesus, Who looses them that are bound. marg. note: see [Isa 61:1]",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:leo-the-great:matthew.27.4:be6aaf17:0"
       ]
     },
     {
@@ -166,6 +155,24 @@
       ]
     },
     {
+      "id": "catena-matt-3894-v4",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.27.4",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 27:1–5",
+      "excerpt": "They supposed that by His death they should crush His doctrine, and the belief in Him of those who believed Him to be the Son of God. With such purpose against Him they bound Jesus, Who looses them that are bound. marg. note: see [Isa 61:1]",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-3901-v4",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.27.4",
@@ -181,6 +188,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.27.4:bc75879c:0"
       ]
     },
     {
@@ -200,6 +214,109 @@
         "patristic",
         "matthew"
       ]
+    },
+    {
+      "id": "hcf:jerome:matthew.27.4:33f88e04:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 27:4",
+      "excerpt": "Then seeing Judas, who had betrayed Him, that He was condemned, being moved by repentance, he returned the thirty pieces of silver to the chief priests and elders, saying: I have sinned in betraying innocent blood. He cast away the weight of impiety from the greatness of his greed. Seeing that the Lord was condemned to death, Judas returned the price to the priests, as if he had the power to change the sentence of those who persecuted. Therefore, although he changed his will, he did not change the outcome of his first intention. But if he who handed over the innocent blood sinned, how much more did the Jews sin, who bought the innocent blood, and by offering a price, provoked the betrayal of the disciple? Let those who attempt to introduce different natures and say that Judas, the traitor, had an evil nature, and could not be saved by election, answer how an evil nature could have repented.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.27.4"
+    },
+    {
+      "id": "hcf:jerome:matthew.27.4:60a8a2bf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-4-27-4",
+      "title": "COMMENTARY ON MATTHEW 4.27.4 on matthew 27:4",
+      "excerpt": "Yet if he sins who betrays innocent blood, how much more do they sin who purchase innocent blood and provoke a disciple by offering a reward for his apostasy. Those who deny the apostle's free will and attempt instead to explain Judas's betrayal by attributing to him an evil nature will need also to explain how a person of evil nature can repent.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-4-27-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.27.4"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.27.4:757d332d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-85",
+      "title": "Homily on the Gospel of Matthew 85 on matthew 27:4",
+      "excerpt": "This was a charge both against him, and against these men; against him, not because he repented, but because he did so, late, and slowly, and became self-condemned (for that he delivered Him up, he himself confessed); and against them, for that having the power to reverse it, they repented not.\r\n\r\nBut mark, when it is that he feels remorse. When his sin was completed, and had received an accomplishment. For the devil is like this; he suffers not those that are not watchful to see the evil before this, lest he whom he has taken, should repent. At least, when Jesus was saying so many things, he was not influenced, but when his offense was completed, then repentance came upon him; and not then profitably. For to condemn it, and to throw down the pieces of silver, and not to regard the Jewish people, were all acceptable things; but to hang himself, this again was unpardonable, and a work of an evil spirit. For the devil led him out of his repentance too soon, so that he should reap no fruit from thence; and carries him off, by a most disgraceful death, and one manifest to all, having persuaded him to destroy himself.\r\n\r\nBut mark, I pray thee, the truth shining forth on every side, even by what the adversaries both do and suffer. For indeed even the very end of the traitor stops the mouths of them that had condemned Him, and suffers them not to have so much as any shadow of an excuse that is surely shameless. For what could they have to say, when the traitor is shown to pass such a sentence on himself.\r\n\r\nHe brought again the thirty pieces of silver to the chief priests, and saith, I have sinned in that I have betrayed innocent blood. And they said, what is that to us? see thou to that. And he cast down the pieces of silver in the temple, and departed, and went and hanged himself.\r\n\r\nFor neither could he bear his conscience scourging him. But mark, I pray thee, the Jews too suffering the same things. For these men also, when they ought to have been amended by what they suffered, do not stop, until they have completed their sin. For his sin had been completed, for it was a betrayal; but theirs not yet. But when they too had accomplished theirs, and had nailed Him to the cross then they also are troubled.\r\n\r\nHear, ye covetous, consider what befell him; how he at the same time lost the money, and committed the sin, and destroyed his own soul. Such is the tyranny of covetousness. He enjoyed not the money, neither the present life, nor that to come, but lost all at once, and having got a bad character even with those very men, so hanged himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.27.4"
+    },
+    {
+      "id": "hcf:pseudo-augustine:matthew.27.4:454a862b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "pseudo-augustine",
+      "workId": "hcf:work:pseudo-augustine:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 27:4",
+      "excerpt": "(Hil. Quæst. V. et N. Test. q. 94.) Since the Chief Priests were employed about the murder of the Lord from the morning to the ninth hour, how is this proved that before the crucifixion Judas returned them the money he had received, and said to them in the temple, I have sinned, in that I have betrayed innocent blood? Whereas it is manifest that the Chief Priests and Elders were never in the temple before the Lord's crucifixion, seeing that when He was hanging on the Cross they were there to insult Him. Nor indeed can this be proved hence, because it is related before the Lord's Passion, for many things which were manifestly done before, are related after, that, and the reverse. It might have been done after the ninth hour, when Judas, seeing the Saviour dead and the veil of the temple rent, the earthquake, the bursting of the rocks, and the elements terrified, was seized with fear and sorrow thereupon. But after the ninth hour the Chief Priests and Elders were occupied, as I suppose, in the celebration of the Passover; and on the Sabbath, the Law would not have allowed him to bring money. Therefore it is to me as yet unproved on what day or at what time Judas ended his life by hanging.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.27.4"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.27.4:f3295fb5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 27:4",
+      "excerpt": "Then Judas, who had betrayed Him, when he saw that Jesus had been condemned, repented, and returned the thirty pieces of silver to the chief priests and elders, saying, I have sinned in that I have betrayed innocent blood. And they said, What is that to us? see thou to that. And he cast down the pieces of silver in the temple, and departed, and went and hanged himself. Judas began to have second thoughts and he repented, but it was not a good repentance. To pass judgement against oneself is good, but to hang oneself is of the devil; for Judas was not able to endure the thought of the reproaches that would later be heaped upon him and so he fled from this life, when he ought instead to have wept and reconciled himself to Him Whom he had betrayed. Some say that Judas in his greed believed that he himself could gain the silver by betraying Christ, without Christ actually being slain, as He would escape from the Jews as He had done on many occasions. But when Judas saw that Jesus had been condemned and already sentenced to die, he repented that the affair had not turned out as he had planned. Whereupon he hanged himself thinking to precede Jesus into hades and there to plead for his own salvation. Nevertheless, know that while he did put his neck into the noose and hanged himself from a tree, the tree bent and he survived, as God wanted to save his life, either so that he could repent, or to make an example of him and to shame him. They say that Judas later became so bloated from dropsy that he could not pass through an opening that a wagon could easily pass through; and then falling face forward he burst asunder, or ruptured, as Luke says in the Acts of the Apostles (Acts 1:18).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.27.4"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.27.4:6bad0615:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 27:4",
+      "excerpt": "Next follows the effect. The effect of repentance is that the sinner strive to make amends. He had sinned because he had sold Christ, for he had done what was in his power: therefore he brought back the thirty denarii. And first, the retraction is set forth; secondly, the repentance, at \"I have sinned in betraying just blood.\" He brought back, therefore, the thirty pieces of silver; and in this he retracted, saying \"I have sinned,\" i.e., I have truly done wrong. But in saying \"in betraying just blood,\" although he speaks well, it is not complete, because it can be referred to a just man. Hence Jeremiah 26:15: \"if you put me to death, you will deliver innocent blood against yourselves.\" Hence Jerome says that if he had had right faith, he would not have despaired. For he ought to have said: \"in betraying God.\" In this therefore, that he said \"in betraying just blood,\" he diminished his power and showed himself not to have right faith. Then the obstinacy of the Jews is set forth: \"but they said: What is that to us?\" He was confessing that the man was just, and yet they say \"what is that to us?\" Jeremiah 8:7: \"my people have not known the judgment of the Lord.\" \"Look thou to it,\" i.e., we do not follow your conscience. Remigius: \"what is that to us? You first sold him, and now you confess him just. What standing have you with us, who thus change your opinion?\" For to change from evil to good is good: but from evil to evil is evil; Sirach 27:12: \"the just man stands forever, but the fool is changeable as the moon.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.27.4"
     }
   ]
 }

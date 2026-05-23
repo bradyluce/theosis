@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.15.11:ed6e16bc:0"
       ]
     },
     {
@@ -33,24 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1282-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.11",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:6–15",
-      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -73,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.11:dc568423:1"
       ]
     },
     {
@@ -102,6 +98,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:6–15",
       "excerpt": "We must understand that Jesus was scourged by no other than Pilate himself. For John writes, Pilate took Jesus, and scourged him, (John 13:1) which we must suppose that he did, that the Jews might be satisfied with His pains and insults, and cease from thirsting for His blood.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1282-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.11",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:6–15",
+      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -148,6 +162,23 @@
       ]
     },
     {
+      "id": "hcf:bede:mark.15.11:cc4c1e09:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:11",
+      "excerpt": "But the chief priests stirred up the crowd that he might rather release Barabbas to them. To the Jews to this day remains their request, which they obtained with such effort. For given the choice, they chose a thief over Jesus, a murderer over the Savior, the taker of life over the giver of life, and deservedly lost both salvation and life, and submitted themselves so much to robbery and sedition that they lost both their country and kingdom, which they loved more than Christ, and have not yet deserved to regain that liberty of either soul or body which they sold.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.11"
+    },
+    {
       "id": "catena-mark-1283-v11",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.11",
@@ -181,6 +212,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.11:1b2d6420:0"
       ]
     }
   ]

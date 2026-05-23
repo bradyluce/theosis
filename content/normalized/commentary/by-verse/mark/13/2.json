@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.2:19322471:0"
       ]
     },
     {
@@ -73,7 +80,48 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.13.2:9f467708:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.2:4727a769:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:2",
+      "excerpt": "But He foretold that, nevertheless, of all this not even one stone would be left upon another. Against this, some say that many remnants of the ancient city of Jerusalem have survived, and thus they attempt to make Christ out to be a liar. But this is in vain, for even if some remnants have been preserved (which, however, is not true), before the universal end not one stone will be left upon another. Moreover, history testifies that Aelius Hadrian dug up the very foundations of the city and the temple, so that through him the prophecy was fulfilled that not one stone would be left upon another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.2"
+    },
+    {
+      "id": "hcf:cyril-of-jerusalem:mark.13.2:afaedb7c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-jerusalem",
+      "workId": "hcf:work:cyril-of-jerusalem:catechetical-lecture-15-15",
+      "title": "Catechetical Lecture 15:15 on mark 13:2",
+      "excerpt": "Antichrist will come at such a time as there shall not be left of the temple of the Jews \"one stone upon another,\" to quote the sentence pronounced by the Savior. For it is not until all the stones are overthrown, whether by the decay of age, or through being pulled down for building material or in consequence of this or that other happening, and I do not mean merely the stones of the outer walls, but the floor of the inner temple where the cherubim were, that Antichrist will come \"with all signs and lying wonders\" treating all the idols with disdain.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c386"
+      ],
+      "targetVerseId": "kjva:mark.13.2"
     },
     {
       "id": "catena-mark-1031-v2",
@@ -91,6 +139,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.13.2:3a1f0f6f:0"
       ]
     }
   ]

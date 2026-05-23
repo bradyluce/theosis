@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:athanasius-the-great:luke.2.21:2e44fab1:0"
       ]
     },
     {
@@ -37,6 +44,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.2.21:76ce2fcd:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0299",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.21",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:21",
+      "excerpt": "But according to the command of the law, on the same day He received the imposition of a name, as it follows, His name was called Jesus, which is interpreted Saviour. For He was brought forth for the salvation of the whole world, which by His circumcision He prefigured, as the Apostle says to the Colossians, “Ye are circumcised with a circumcision made without hands, in the stripping off of the body of the flesh, to wit, the circumcision of Christ.” (Col.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.2.21:4d891369:0"
       ]
     },
     {
@@ -58,17 +97,42 @@
       ]
     },
     {
-      "id": "catena-luke-0299",
+      "id": "catena-luke-0295",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.21",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 2:21",
-      "excerpt": "But according to the command of the law, on the same day He received the imposition of a name, as it follows, His name was called Jesus, which is interpreted Saviour. For He was brought forth for the salvation of the whole world, which by His circumcision He prefigured, as the Apostle says to the Colossians, “Ye are circumcised with a circumcision made without hands, in the stripping off of the body of the flesh, to wit, the circumcision of Christ.” (Col.",
+      "excerpt": "He was circumcised also that He might enjoin upon us by His example the virtue of obedience, and might take compassion on them who being placed under the law, were unable to bear the burdens of the law, to the end that He who came in the likeness of sinful flesh might not reject the remedy with which sinful flesh was wont to be healed. For circumcision brought in the law the same assistance of a saving cure to the wound of original sin which Baptism does in the time of the grace of revelation, except that as yet the circumcised could not enter the gates of the heavenly kingdom, but comforted…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.2.21:99c7c9d3:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0298",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.21",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:21",
+      "excerpt": "Now in His resurrection was prefigured the resurrection of each of us both in the flesh and the Spirit, for Christ has taught us by being circumcised that our nature must both now in itself be purged from the stain of vice, and at the last day be restored from the plague of death. And as the Lord rose on the eighth day, i. e. the day after the seventh, (which is the Sabbath,) so we also after six ages of the world and after the seventh, which is the rest of souls, and is now carrying on in another life, shall rise as on the eighth day.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -94,39 +158,28 @@
       ]
     },
     {
-      "id": "catena-luke-0295",
+      "id": "catena-luke-0294",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.21",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "epiphanius-salamis",
       "workId": "catena-aurea-luke",
       "title": "On Luke 2:21",
-      "excerpt": "He was circumcised also that He might enjoin upon us by His example the virtue of obedience, and might take compassion on them who being placed under the law, were unable to bear the burdens of the law, to the end that He who came in the likeness of sinful flesh might not reject the remedy with which sinful flesh was wont to be healed. For circumcision brought in the law the same assistance of a saving cure to the wound of original sin which Baptism does in the time of the grace of revelation, except that as yet the circumcised could not enter the gates of the heavenly kingdom, but comforted…",
+      "excerpt": "Christ was circumcised for several reasons. First indeed to shew the reality of His flesh, in opposition to Manichæus f and those who say that He came forth in appearance only. Secondly, that He might prove that His body was not of the same substance with the Deity, according to Apollinaris, and that it descended not from heaven, as Valentinian said. Thirdly, to add a confirmation to circumcision which He had of old instituted to wait His coming. Lastly, to leave no excuse to the Jews. For had He not been circumcised, they might have objected that they could not receive Christ uncircumcised.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0298",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.21",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:21",
-      "excerpt": "Now in His resurrection was prefigured the resurrection of each of us both in the flesh and the Spirit, for Christ has taught us by being circumcised that our nature must both now in itself be purged from the stain of vice, and at the last day be restored from the plague of death. And as the Lord rose on the eighth day, i. e. the day after the seventh, (which is the Sabbath,) so we also after six ages of the world and after the seventh, which is the rest of souls, and is now carrying on in another life, shall rise as on the eighth day.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:epiphanius-salamis:luke.2.21:85abd7fe:0"
       ]
     },
     {
@@ -163,25 +216,167 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.2.21:28be4f1d:0"
       ]
     },
     {
-      "id": "catena-luke-0294",
+      "id": "hcf:bede:luke.2.21:b989edb3:4",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.2.21",
       "topicSlugs": [],
-      "personId": "epiphanius-salamis",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:21",
-      "excerpt": "Christ was circumcised for several reasons. First indeed to shew the reality of His flesh, in opposition to Manichæus f and those who say that He came forth in appearance only. Secondly, that He might prove that His body was not of the same substance with the Deity, according to Apollinaris, and that it descended not from heaven, as Valentinian said. Thirdly, to add a confirmation to circumcision which He had of old instituted to wait His coming. Lastly, to leave no excuse to the Jews. For had He not been circumcised, they might have objected that they could not receive Christ uncircumcised.",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 2:21",
+      "excerpt": "His name was called Jesus, said he, which was named by the angel before he was conceived in the womb. Jesus means Savior, a name in which the faithful and elect rejoice to participate in each of their circumcisions, as has been sufficiently said, so that as Christians are named from Christ, so also are those who are saved named from the Savior; now indeed saved in hope through faith, but then in reality through the vision of the glory which is in Christ Jesus our Lord, a name which was given to them by God not only before they were conceived in the womb of the Church through faith, but also before the secular times. The sacred name's etymology and the numerical value it carries are redolent of the mysteries of our perpetual salvation. For it is written with six letters in Greek Ἰησοῦς, namely ι, η, σ, ο, υ, ς, whose numbers are 10, 8, 200, 70, 400, and 200, which together make 888. This number, which signifies the figure of resurrection, has been sufficiently discussed above. For what eight simply placed means, the same also multiplied by ten or a hundred signifies. Or certainly, the perfection of numbers believed to indicate firmness. We can also say that the name of the Savior contains the number eight completed, because he provided the example of resurrection to mortals by rising on the eighth day. It also contains the number tenfold, because the Decalogue of the law, as it should be fulfilled, is instituted and helped by the figures of his resurrection. Just as he, rising from the dead, dies no more, death no longer has dominion over him, so we also must consider ourselves dead to sin but alive to God in Christ Jesus (Rom. VI). It also contains the number a hundred times, because showing the glory of his resurrection, which follows us in the future, portends retribution. The number one hundred, which after so many on the left side of the course of numbers first seeks the right, aptly fits the depiction of the joys of that age when the last enemy, death, will be destroyed (1 Cor. XV), when we who are alive, who are left, will be caught up together with those who have risen, in the clouds to meet the Lord in the air, and so we will always be with the Lord (1 Thess. IV). Hence beautifully, in the type of all the elect, the first son of promise, born and circumcised to a hundred-year-old father, was called, according to the Lord's prediction, Isaac, which means laughter or joy, prefiguring in all respects the right hand felicity of that time of which the Lord said: I will see you again, and your heart will rejoice, and no one will take your joy from you (John XVI). But because the discussion is about circumcision, it is pleasing to inquire why Moses himself, who presents the law of circumcision both as given by God to the fathers and repeatedly impressed upon himself, did not wish anyone to be circumcised during the entire time of his leadership, except only one, his own son, whom his mother circumcised with a sharp stone to prevent him from being struck by the Lord, and left all who were born in the wilderness to be circumcised by Joshua; evidently, a divinely commanded custom, observed for four hundred and six years and handed down by ancestral succession, he discontinued for forty continuous years. I would not believe this was done in vain, but rather with great mystery. About this, preserving the understanding of the elders, I will briefly say what I think. Moses preaches circumcision, but Joshua fulfills it, because the law was given through Moses, but grace and truth through Jesus Christ (John 1). And the letter that commands is of no benefit unless the grace that helps is present. With Moses preaching, the foreskin grows, because, as the Apostle says, by the works of the law no flesh will be justified in His sight. For through the law comes the knowledge of sin (Rom. 3). And elsewhere: For until the law, sin was in the world. But sin is not imputed when there is no law (Rom. 5). And again: The law came in so that the offense would increase. For I would not have known coveting if the law had not said, \"You shall not covet.\" But sin, taking opportunity through the commandment, produced in me coveting of every kind (Rom. 7). But Joshua, having led the people into the promised land, cuts off with stone knives the foreskin that had grown while Moses was alive. Because where sin abounded, grace abounded much more (Rom. 5). For anyone who reads understands why Joshua uses stone knives for circumcision, because the rock was Christ (1 Cor. 10), and upon this rock, He says, I will build My church (Matt. 16). For what was impossible for the law, in that it was weak through the flesh, God, sending His own Son in the likeness of sinful flesh and as an offering for sin, condemned sin in the flesh, so that the requirement of the law might be fulfilled in us, who do not walk according to the flesh but according to the Spirit (Rom. 8). But this grace of Christ not only justifies the faithful of the New Testament but also all those who were made perfect under the law, not by works of the law, but by the same grace of Christ who was to come in the flesh, they were saved through faith. And these people circumcised by Joshua represent those who with the severity of the law forced themselves to learn to implore the grace of Christ, as if avoiding the impending sword of the Lord, they avoided circumcision by the stone, with Peter attesting who, speaking of the yoke of the law, says: Which neither our fathers nor we were able to bear, but we believe that through the grace of the Lord Jesus Christ we shall be saved, even as they (Acts 15). And the Psalmist, who, as though enclosed in the custodial prison of the law and finding no way of escape except in the grace of Christ, exclaims: When my heart was overwhelmed, You led me to the rock that is higher than I. You have been a refuge for me, a tower of strength against the enemy (Psalm 61). Surely no one who hears of circumcision preaching would think that only one part of the body is commanded to be continent, as if it were sufficient to exist safe from fornication, temperate in lawful marriage, or glorious in virginity, without adding other virtues, but rather that the chastisement of all our senses, both of the heart and the body, is commanded. For even Moses, receiving the most pure words of God, complained that he was uncircumcised in lips, and Stephen, saying to the disbelieving Jews, \"You stiff-necked people, uncircumcised in heart and ears; you always resist the Holy Spirit\" (Acts VII). Therefore, he is cleansed by true circumcision, who stops his ears from hearing about bloodshed (Isaiah XXXIII), and shuts his eyes so as not to see evil, who guards his ways so as not to sin with his tongue (Psalm XXXVIII), and keeps himself vigilant so that his heart is not weighed down with dissipation and drunkenness (Luke XXI), who, as long as breath is in him and the Spirit of God is in his nostrils (Job XXVII), does not speak iniquity with his lips (Ibid.), who washes his hands in innocence (Psalm XXVI), and refrains his feet from every evil way (Psalm CXVIII), who disciplines his body and brings it into subjection in all things (I Cor. IX), and with all diligence keeps his heart because from it flow the issues of life (Prov. IV). He, after circumcision, is brought to Jerusalem and presented to the Lord, who, according to the one who says: \"Turn from evil and do good\" (I Pet. III), after ceasing from sins, begins to abound in good works. Who can say: \"My eyes are ever toward the Lord, and I will go about your altar, O Lord, that I may hear the voice of your praise\" (Psalm XXVI). Who says: \"We are the aroma of Christ to God\" (II Cor. II), and \"I have lifted my hands to your commandments, and have turned my feet to your testimonies\" (Psalm CXVIII). Who, whether he eats, or drinks, or does anything else, does everything to the glory of God (I Cor. X), and says: \"How sweet are your words to my taste\" (Psalm CXVIII); and finally: \"My heart and my flesh exult in the living God\" (Psalm LXXXIII). But even his good action, which is hidden, no less needs circumcision, so that when I fast, pray, give alms, I seek glory from within. For if I stand on the street corners, disfiguring my face, sounding a trumpet before me to be seen and praised by men (Matt. VI), I appear circumcised outwardly, but remaining impure in heart, I incur the penalties of feigned holiness. As an example indeed, the Shechemites, who appeared to imitate the circumcision of the patriarchs, but not for the covenant of the Lord, but for the sake of lust, did not gain any reward. Rather, on the third day when the pain of their wounds was most severe, they perished among the ruins of their city. Such people, having forgotten the prophetic warning: \"Circumcise yourselves to the Lord, and remove the foreskins of your hearts\" (Jer. IV), when the time of resurrection comes, having been stripped of the virtues in which they trusted, will be cast into eternal death. Therefore, the Apostle also diligently commends the hidden circumcision in the heart, whose praise is not from men, but from God (Rom. II).",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:bede:luke.2.21:643c92ce:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 2:21",
+      "excerpt": "Circumcision was also a type and figure of many things. For it was a seal (as stated) of the righteousness of the faith of Abraham and his seed, an indication for chastening those who belong to this seed and faith, from all filthiness of flesh and spirit, a prophecy of the Savior who would be born from this seed, who would both in the present purify us from all pollution of deadly action through baptism and in the future liberate us from all corruption of death itself through resurrection forever, and it especially - pleased the Grace and Law-giver to administer the gift of remission, which would release from the sin of Adam's transgression at that time. For he who now says, \"Unless one is born of water and the Spirit, he cannot enter the kingdom of God\" (John 3), also then said, \"The soul that has not had the flesh of his foreskin circumcised will be cut off from his people, for he has broken my covenant\" (Genesis 17). Surely not the covenant of circumcision, which not an infant, who could not yet discern this, but elders, who knew how to observe it, could and should have kept unbroken; rather, the covenant which God made with the first man, which every man who has lived even one day on earth is found to have transgressed, and therefore, it is evident that everyone is in need of some remedy for salvation. For those who became faithful from foreign nations either before the time of circumcision or even after the giving of circumcision, such as the example of Job's patience and his friends and children, they saved themselves and theirs from original sin, either by sacrifices of victims or certainly by faith alone, because \"the just shall live by faith\" (Rom. I), and \"without faith it is impossible to please God\" (Heb. XI). But these remedies are needed by those who are propagated by the lineage of sin, conceived in iniquities, and born in pleasures. However, our Redeemer, who came into the world without sin to take away the sins of the world, not only provided remedies for us by his baptism, that is, consecrating the waters of which he underwent the washing for cleansing our crimes, but also by the circumcision which he received, he did not purify his own sins (since he had none), but taught that the old nature in us should be renewed, and now visibly it should be purged from vice through him, and on the last day signifying that it will be completely restored from the pest of varied mortality and death. Hence, it is fitting that Jesus is said to have been circumcised on the eighth day, which we hardly read about anyone being done in the Old Testament, although it was often commanded to all, except only Isaac, who is reported to have received circumcision on the eighth day as the first son of promise. Well, I say, Jesus is circumcised on the eighth day. Because evidently, this refers to both the renewals we mentioned, that is, both the present and future, both of spirit and flesh, which were prefigured in his resurrection and are to be accomplished in ours someday. Indeed, concerning our first resurrection, which is meanwhile celebrated by a reformation of life and faith, the Apostle says: \"For as many of us who were baptized into Christ Jesus were baptized into his death, so that as Christ was raised from the dead by the glory of the Father, we too might walk in newness of life\" (Rom. VI). Regarding the second, which is hoped for at the end, he says: \"For if we believe that Jesus died and rose again, so too God will bring with him those who sleep through Jesus\" (I Thess. IV). It is clear almost universally that the number eight corresponds to the glory of resurrection. For the Lord also rose on the eighth day, that is, after the seventh of the Sabbath, and we ourselves will rise after the six ages of this world and the seventh Sabbath of souls, which now in the meantime is carried out in another life, almost as in the eighth time, then truly circumcised, that is, stripped of all the vices and corruptions of carnal desire, in which lust mostly reigns, truly the foreskin is cut off. For, as the Lord says: \"The children of this age marry and are given in marriage. But those who are accounted worthy to attain that age and the resurrection from the dead neither marry nor are given in marriage; nor can they die anymore, for they are equal to angels and are children of God, being children of the resurrection\" (Luke XX).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:bede:luke.2.21:9abfbfa9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-11",
+      "title": "Homilies on the Gospels 1.11 on luke 2:21",
+      "excerpt": "He therefore received in the flesh the circumcision decreed by the law, although he appeared in the flesh absolutely without any blemish of pollution. He who came in the likeness of sinful flesh—not in sinful flesh—did not turn away from the remedy by which sinful flesh was ordinarily made clean. Similarly, not because of necessity but for the sake of example, he also submitted to the water of baptism, by which he wanted the people of the new law of grace to be washed from the stain of sins.…The reason \"the child who was born to us, the son who was given to us,\" received the name Jesus (that is, \"Savior\") does not need explanation in order to be understood by us, but we need eager and vigilant zeal so that we too may be saved by sharing in his name. Indeed, we read how the angel interprets the name of Jesus: \"He will save his people from their sins.\" And without a doubt we believe and hope that the one who saves us from sins is not failing to save us also from the corruptions which happen because of sins, and from death itself, as the psalmist testifies when he says, \"Who forgives all your iniquity, who heals all your diseases.\" Indeed, with the pardoning of all of our iniquities, all our diseases will be completely healed when, with the appearance of the glory of the resurrection, our last enemy, death, will be destroyed.… We read that circumcision was done with knives made of rock, and the rock was Christ. And by Christ's faith, hope and love the hearts of the good are purified not only in baptism but furthermore in every devout action. This daily circumcision of ours (that is, the continual cleansing of our heart) does not cease from always celebrating the sacrament of the eighth day.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:bede:luke.2.21:67b67ced:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 2:21",
+      "excerpt": "And when eight days were completed for the circumcision of the child, his name was called Jesus, the name given by the angel before he was conceived in the womb. The rite and religion of circumcision took its beginning from the blessed patriarch Abraham. Since he, still being in uncircumcision, believed perfectly in God, it was accounted to him as righteousness, and he received the sign of circumcision, a seal of the righteousness of faith while in uncircumcision. From him also arose the custom that on the day of circumcision, a name would be given to infants. For he himself, when he received the covenant of circumcision from God, on that very day, along with his wife, merited an augmentation of his name: he who was originally called Abram, which means 'exalted father,' would henceforth, on account of the merit of his faith, be called Abraham, which means 'father of many nations;' likewise, Sarai would be called Sarah.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:origen:luke.2.21:8ea4432e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-the-gospel-of-luke-14-1",
+      "title": "HOMILIES ON THE GOSPEL OF LUKE 14.1 on luke 2:21",
+      "excerpt": "So, when he died, we died with him, and when he rose, we rose with him. Likewise, we were also circumcised along with him. After his circumcision, we were cleansed by a solemn purification. Hence we have no need at all for a circumcision of the flesh. You should know that he was circumcised for our sake. Listen to Paul's clear proclamation. He says, \"For in him the whole fullness of deity dwells bodily, and you have come to fullness of life in him, who is the head of all rule and authority. In him also you were circumcised with a circumcision made without hands, by putting off the body of flesh in the circumcision of Christ. And you were buried with him in baptism, in which you were also raised with him through faith in the working of God, who raised him from the dead.\" Therefore his death, his resurrection and his circumcision took place for our sake.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homilies-on-the-gospel-of-luke-14-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:origen:luke.2.21:a5f04fd4:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:against-celsus-1-6",
+      "title": "AGAINST CELSUS 1.6 on luke 2:21",
+      "excerpt": "Christians are seen to draw their courage not from incantations but from the name of Jesus and from the commemoration of what he has done. For by his name it has happened very often that demons are put to flight from people, especially whenever they, who invoke them, pronounce them with the right disposition and with all trust. So great indeed is the power of the name of Jesus that sometimes it is efficacious even when spoken by the wicked. The name of Jesus heals the afflicted in mind, puts to flight the spirits of darkness, and to the sick is an ever present remedy.",
+      "takeaway": "",
+      "sourceId": "hcf:source:against-celsus-1-6",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.2.21:ec9d9736:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-iii",
+      "title": "Commentary on the Gospel of Luke, Sermon III on luke 2:21",
+      "excerpt": "VERY numerous indeed is the assembly, and earnest the hearer:----for we see the Church full:----but the teacher is but poor. He nevertheless Who giveth to man a mouth and tongue, will further supply us with good ideas. For He somewhere says Himself, \"Open thy mouth wide, and I will fill it.\" Since therefore ye have all come together eagerly on the occasion of this joyous festival of our Lord, let us with cheerful torches brightly celebrate the feast, and apply ourselves to the consideration of what was divinely fulfilled, as it were, this day, gathering for ourselves from every quarter whatsoever may confirm us in faith and piety.\r\nBut recently we saw the Immanuel lying as a babe in the manger, and wrapped in human fashion in swaddling bands, but extolled as God in hymns by the host of the holy angels. For they proclaimed to the shepherds His birth, God the Father having granted to the inhabitants of heaven as a special privilege to be the first to preach Him. And to-day too we have seen Him obedient to the laws of Moses, or rather we have seen Him Who as God is the Legislator, subject to His own decrees. And the reason of this the most wise Paul teaches us, saying, \"When we were babes we were enslaved under the elements of the world; but when the fulness of the time came, God sent forth His Son, born of a woman, born under the law, to redeem them that were under the law.\" Christ therefore ransomed from the curse of the law those who being subject to it, had been unable to keep its enactments. And in what way did He ransom them? By fulfilling it. And to put it in another way: in order that He might expiate the guilt of Adam's transgression, He showed Himself obedient and submissive in every respect to God the Father in our stead: for it is written, \"That as through the disobedience of the One man, the many were made sinners, so also through the obedience of the One, the many shall be made just.\" He yielded therefore His neck to the law in company with us, because the plan of salvation so required: for it became Him to fulfil all righteousness. For having assumed the form of a slave, as being now enrolled by reason of His human nature among those subject to the yoke, He once even paid the half shekel to the collectors of the tribute, although by nature free, and as the Son not liable to pay the tax. |20 When therefore them seest Him keeping the law, be not offended, nor place the free-born among the slaves, but reflect rather upon the profoundness of the plan of salvation.\r\nUpon the arrival, therefore, of the eighth day, on which it was customary for the circumcision in the flesh to be performed according to the enactment of the law, He receives His Name, even Jesus, which by interpretation signifies, the Salvation of the people. For so had God the Father willed that His Son should be named, when born in the flesh of a woman. For then especially was He made the salvation of the people, and not of one only, but of many, or rather of every nation, and of the whole world. He received His name, therefore, on the same occasion on which He was circumcised.\r\nBut come, and let us again search and see, what is the riddle, and to what mysteries the occurrence directs us. The blessed Paul has said, \"Circumcision is nothing, and uncircumcision is nothing.\" To this it is probable that some may object, Did the God of all then command by the all-wise Moses a thing of no account to be observed, with a punishment decreed against those that transgressed it? Yes, I say: for as far as regards the nature of the thing, of that, I mean, which is done in the flesh, it is absolutely nothing, but it is pregnant with the graceful type of a mystery, or rather contains the hidden manifestation of the truth. For on the eighth day Christ arose from the dead, and gave us the spiritual circumcision. For He commanded the holy Apostles: \"Having gone, make ye disciples of all nations, baptizing them into the Name of the Father, and of the Son, and of the Holy Ghost.\" And we affirm that the spiritual circumcision takes place chiefly in the season of holy baptism, when also Christ makes us partakers of the Holy Ghost. And of this again, that Jesus of old, who was captain after Moses, was a type. For he first of all led the children of Israel across the Jordan: and then having halted them, immediately circumcised them with knives of stone. So when we have crossed the Jordan, Christ circumcises us with the power of the Holy Ghost, not purifying the flesh, but rather cutting off the defilement that is in our souls.\r\nOn the eighth day, therefore, Christ is circumcised, and receives, as I said, His Name: for then, even then, were we saved by Him and through Him, \"in Whom, it saith, ye were circumcised with a circumcision not made with hands in the putting off of the fleshly body, with Christ's circumcision, having been buried together with Him in baptism, wherein also ye were raised with Him.\" His death, therefore, was for our sakes. as were also His resurrection and His circumcision. For He died, that we who have died together with Him in His dying unto sin, may no longer live unto sin: for which reason it is said, \"If we have died together with Him, we shall also live together with Him.\" And He is said to have died unto sin, not because He had sinned, \"for He did no sin, neither was guile found in His mouth,\" but because of our sin. Like as therefore we died together with Him when He died, so shall we also rise together with Him.\r\nAgain, when the Son was present among us, though by nature God and the Lord of all, He does not on that account despise our measure, but along with us is subject to the same law, although as God He was Himself the legislator. Like the Jews, He is circumcised when eight days old, to prove His descent from their stock, that they may not deny Him. For Christ was expected of the seed of David, and offered them the proof of His relationship. But if even when He was circumcised they said, \"As for This man, we know not whence He is;\" there |22 would have been a show of reason in their denial, had He not been circumcised in the flesh, and kept the law.\r\nBut after His circumcision, the rite was done away by the introduction of that which had been signified by it, even baptism: for which reason we are no longer circumcised. For circumcision seems to me to have effected three several ends: in the first place, it separated the posterity of Abraham by a sort of sign and seal, and distinguished them from all other nations. In the second, it prefigured in itself the grace and efficacy of Divine baptism; for as in old time he that was circumcised, was reckoned among the people of God by that seal, so also he that is baptized, having formed in himself Christ the seal, is enrolled into God's adopted family. And, thirdly, it is the symbol of the faithful when established in grace, who cut away and mortify the tumultuous risings of carnal pleasures and passions by the sharp surgery of faith, and by ascetic labours; not cutting the body, but purifying the heart, and being circumcised in the spirit, and not in the letter: whose praise, as the divine Paul testifies, needs not the sentence of any human tribunal, but depends upon the decree from above.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.2.21:b68fced8:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-3",
+      "title": "COMMENTARY ON LUKE, HOMILY 3 on luke 2:21",
+      "excerpt": "St. Paul says that \"neither circumcision counts for anything nor uncircumcision.\" On the eighth day Christ rose from the dead and gave us the spiritual circumcision. He then commanded the holy apostles, \"Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.\" And we affirm that the spiritual circumcision takes place chiefly in holy baptism, when Christ makes us partakers of the Holy Spirit too. Of this Joshua, that Jesus of old, who became the leader of the Israelites after Moses, was also a type. He led the children of Israel across the Jordan, then made them stop and immediately circumcised them with knives of stone. So when we have crossed the Jordan, Christ circumcises us with the power of the Holy Spirit, not by purifying the flesh but rather by cutting off the defilement that is in our souls. On the eighth day, therefore, Christ was circumcised and, as I said, received his name. We were saved by him and through him, because \"in him also you were circumcised with a circumcision made without hands, by putting off the body of flesh in the circumcision of Christ. And you were buried with him in baptism, in which you were also raised with him.\" His death, therefore, was for our sake, as were also his resurrection and his circumcision. For he died, so that we who have died together with him in his dying to sin, would no longer live for sin. Thus if we have died together with him, we shall also live together with him. He is said to have died to sin, not because he had sinned, for he was without sin, neither was guile found on his lips, but because of our sin. Therefore, just as we died together with him when he died, so will we also rise together with him.…After Jesus' circumcision, the rite was abolished by the introduction of baptism, of which circumcision was a type. For this reason we are no longer circumcised. It seems to me that circumcision achieved three distinct ends. In the first place, it separated the descendants of Abraham by a sort of sign and seal and distinguished them from all other nations. Second, it prefigured in itself the grace and efficacy of divine baptism. Formerly a male who was circumcised was included among the people of God by virtue of that seal; nowadays, a person who is baptized and has formed in himself Christ the seal, becomes a member of God's adopted family. Third, circumcision is the symbol of the faithful when they are established in grace, as they cut away and mortify the tumultuous rising of carnal pleasures and passions by the sharp surgery of faith and by ascetic labors. They do this not by cutting the body but by purifying the heart. They do this by being circumcised in the spirit and not in the letter. Their praise, as St. Paul testifies, needs not the sentence of any human tribunal, but depends upon the decree from above.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.2.21:44e8f964:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 2:21",
+      "excerpt": "When the Law gave the commandments, then the transgressors of them were subjected to a curse. So the Lord is circumcised in order that, having fulfilled the Law in this respect too and having omitted nothing of what it commanded, He might redeem us from the curse. Let those henceforth be put to shame who say that He was incarnate only in appearance, for how was He circumcised if He was incarnate only in appearance? To investigate where the circumcised part is, however, is useless. For one ought not to inquire into what Scripture has passed over in silence. And it is entirely useless besides. One may say that after being cut off it fell to the ground and sanctified it, just as the blood and water that flowed from His side. And He, in a manner known to Him, preserved this part unharmed and after the Resurrection took it up again, so that in this respect too He would not be found lacking — just as we also in the resurrection shall receive our body in its entirety. Note that the Lord was not conceived immediately when the Angel said, \"and behold, you will conceive\" (Lk. 1:31), but after this, when He willed. For see what it says here: \"named by the Angel before His conception in the womb.\" This is evident from the very expression itself, for he did not say \"you are conceiving,\" but \"you will conceive.\" From this one may conclude that the Lord was conceived at that time, but not at the very moment when the Angel was speaking, but perhaps when he finished speaking. However, we do not say this with certainty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.2.21"
     }
   ]
 }

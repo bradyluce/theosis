@@ -38,24 +38,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-2409-v28",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.28",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:28–30",
-      "excerpt": "They were not softened at all by what they saw, but were the more enraged, and gave Him the cup to drink, as they did to criminals, i. e. with a hyssop.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.28:ff18ac87:0"
       ]
     },
     {
@@ -67,24 +56,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 19:28–30",
       "excerpt": "The hyssop around which they put the spunge full of vinegar, being a mean herb, taken to purge the breast, represents the humility of Christ, which they hemmed in and thought they had circumvented. (ὑσσώπῳ περιθέντες) For we are made clean by Christ’s humility. Nor let it perplex you that they were able to reach His mouth when He was such a height above the ground: for we read in the other Evangelists, what John omits to mention, that the spunge was put upon a reed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2412-v28",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.28",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:28–30",
-      "excerpt": "viz. what prophecy had foretold so long before.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -113,6 +84,42 @@
       ]
     },
     {
+      "id": "catena-john-2417-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.28",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:28–30",
+      "excerpt": "For who ever had such power to sleep when he wished, as our Lord had to die when He wished? What power must He have, for our good or evil, Who had such power dying?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2412-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.28",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:28–30",
+      "excerpt": "viz. what prophecy had foretold so long before.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-2416-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.28",
@@ -131,14 +138,14 @@
       ]
     },
     {
-      "id": "catena-john-2417-v28",
+      "id": "catena-john-2409-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.28",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 19:28–30",
-      "excerpt": "For who ever had such power to sleep when he wished, as our Lord had to die when He wished? What power must He have, for our good or evil, Who had such power dying?",
+      "excerpt": "They were not softened at all by what they saw, but were the more enraged, and gave Him the cup to drink, as they did to criminals, i. e. with a hyssop.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -185,6 +192,24 @@
       ]
     },
     {
+      "id": "catena-john-2418-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.28",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:28–30",
+      "excerpt": "Our Lord gave up His ghost to God the Father, shewing that the souls of the saints do not remain in the tomb, but go into the hand of the Father of all; while sinners are reserved for the place of punishment, i. e. hell.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-2411-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.28",
@@ -203,22 +228,123 @@
       ]
     },
     {
-      "id": "catena-john-2418-v28",
+      "id": "hcf:augustine:john.19.28:c17df942:1",
       "relation": "verse",
-      "targetVerseId": "kjva:john.19.28",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-119",
+      "title": "Tractates on John 119 on john 19:28",
+      "excerpt": "He then adds: \"After this, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, saith, I thirst. Now there was set a vessel full of vinegar: and they filled a sponge with vinegar, and fixed it upon hyssop, and put it to His mouth. When Jesus therefore had received the vinegar, He said, It is finished: and He bowed His head, and gave up the ghost.\" Who has the power of so adjusting what he does, as this Man had of arranging all that He suffered? But this Man was the Mediator between God and men; the Man of whom we read in prophecy, He is man also, and who shall acknowledge Him? for the men who did such things acknowledged not this Man as God. For He who was manifest as man, was hid as God: He who was manifest suffered all these things, and He Himself also, who was hid, arranged them all. He saw, therefore, that all was accomplished that required to be done before He received the vinegar, and gave up the ghost; and that this also might be accomplished which the scripture had foretold, \"And in my thirst they gave me vinegar to drink,\" He said, \"I thirst:\" as if it were, One thing still you have failed to do, give me what you are. For the Jews were themselves the vinegar, degenerated as they were from the wine of the patriarchs and prophets; and filled like a full vessel with the wickedness of this world, with hearts like a sponge, deceitful in the formation of its cavernous and tortuous recesses. But the hyssop, whereon they placed the sponge filled with vinegar, being a lowly herb, and purging the heart, we fitly take for the humility of Christ Himself; which they thus enclosed, and imagined they had completely ensnared. Hence we have it said in the psalm, \"Thou shalt purge me with hyssop, and I shall be cleansed.\" For it is by Christ's humility that we are cleansed; because, had He not humbled Himself, and became obedient unto the death of the cross, His blood certainly would not have been shed for the remission of sins, or, in other words, for our cleansing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.28"
+    },
+    {
+      "id": "hcf:augustine:john.19.28:bdebafd3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:explanation-of-psalm-62-5",
+      "title": "EXPLANATION OF PSALM 62.5 on john 19:28",
+      "excerpt": "The Samaritan woman at the well found the Lord thirsting, and by him thirsting, she was filled. She first found him thirsting in order that he might drink from her faith. And when he was on the cross, he said, \"I thirst,\" although they did not give him that for which he was thirsting. For he was thirsting for them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:explanation-of-psalm-62-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.28"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.28:db524447:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-85",
+      "title": "Homily on the Gospel of John 85 on john 19:28",
+      "excerpt": "\"After this, Jesus knowing that all things were now accomplished.\" That is, \"that nothing was wanting to the Dispensation.\" For He was everywhere desirous to show, that this Death was of a new kind, if indeed the whole lay in the power of the Person dying, and death came not on the Body before He willed it; and He willed it after He had fulfilled all things. Therefore also He said, \"I have power to lay down My life; and I have power to take it again.\" (c. x. 18.) Knowing therefore that all things were fulfilled, He saith, \"I thirst.\" Here again fulfilling a prophecy. But consider, I pray, the accursed nature of the bystanders. Though we have ten thousand enemies, and have suffered intolerable things at their hands, yet when we see them perishing, we relent; but they did not even so make peace with Him, nor were tamed by what they saw, but rather became more savage, and increased their irony; and having brought to Him vinegar on a sponge, as men bring it to the condemned, thus they gave Him to drink; since it is on this account that the hyssop is added.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.28"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.28:732fd472:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:28–30",
-      "excerpt": "Our Lord gave up His ghost to God the Father, shewing that the souls of the saints do not remain in the tomb, but go into the hand of the Father of all; while sinners are reserved for the place of punishment, i. e. hell.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:28",
+      "excerpt": "\"Knowing,\" he says, \"that all things were now accomplished,\" that is, that nothing remained unfulfilled in the plan of God's economy. So free was His death. For the end did not come upon His body before He Himself willed it, and He willed it after He had fulfilled all things. For this reason He also said: \"I have power to lay down My life\" (Jn. 10:18).\r\n\"He says: I thirst,\" and in this case again fulfills prophecy.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.28"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.28:f2328565:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 19:28",
+      "excerpt": "When the iniquity of the Jews had fully wrought the impious crime against Christ, and when there was nothing left wanting to the perfect satisfaction of their savage cruelty, the flesh, at the last extremity, felt a natural craving, for it was parched by the various acts of outrage, and felt thirst. For pain is very apt to provoke thirst, spending the natural moisture of the body in excessive inward heat, and burning the inward parts with the pangs of inflammation. It would have been easy for the Word, the Almighty God, to have released His Flesh from this torment; but, just as He willingly underwent His other sufferings, so He bore this also of His own Will. Then He sought to drink; but so pitiless and far removed from the love of God were they, that, instead of liquid to quench His thirst, they gave Him something to aggravate it, and, in rendering the very service of love, committed a further act of impiety. For, in acceding at all to His request, were they not assuming the appearance of affection? But it was impossible that the inspired Scripture should ever lie, which put into the mouth of the Saviour these words concerning them: They gave Me gall to eat, and when I was athirst, they gave Me vinegar to drink.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.28"
+    },
+    {
+      "id": "hcf:john-of-damascus:john.19.28:44db33d7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-of-damascus",
+      "workId": "hcf:work:john-of-damascus:orthodox-faith-3-14",
+      "title": "ORTHODOX FAITH 3.14 on john 19:28",
+      "excerpt": "If, on the one hand it was as God that Jesus suffered thirst and when he had tasted would not drink, surely he must be subject to passion also as God. For thirst and taste are passions. But if it was not as God but altogether as man that he was thirsty, similarly as man he must be endowed with will.",
+      "takeaway": "",
+      "sourceId": "hcf:source:orthodox-faith-3-14",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c749"
+      ],
+      "targetVerseId": "kjva:john.19.28"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.28:d4e2acc3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:28",
+      "excerpt": "2444 After dealing with the crucifixion and the events that accompanied it, the Evangelist now describes the death of Christ, which we should reverence. First, he shows that it was at the appropriate time; secondly its manner, he bowed his head; and thirdly, the piercing of the dead body (v 31).\r\n\r\nHe shows that the time was fitting because all was now finished, accomplished. First, he mentions that Christ knew that all things had been accomplished; secondly, we see Christ doing what remained to be done (v 30).\r\n\r\n2445 In regard to the first he says, After this, after the things that had just been mentioned, Jesus, knowing that all was now finished, that is, all that the law and the prophets had foretold about him had now been accomplished: \"Everything written about me in the law of Moses and the prophets and the psalms must be fulfilled\" (Lk 24:44); \"I have seen the end of every consummation\" [Ps 119:96].\r\n\r\n2446 But because another thing foretold in scripture had to be done, the Evangelist adds that Jesus said (to fulfill the scripture), I thirst. First, we see the words spoken by Christ; then, how his desire could be satisfied; and finally, he is given the vinegar.\r\n\r\n2447 The Evangelist says that Jesus said this to fulfill the scripture. This indicates the sequence of events, and does not state the cause why Jesus spoke, for he did not speak in order to fulfill the scripture of the Old Testament. Rather, things were written in the Old Testament because they would be fulfilled by Christ. If we say that Christ acted because the scriptures foretold it, it would follow that the New Testament existed for the sake of the Old Testament and for its fulfillment, although the opposite is true. Therefore, it was because these things would be accomplished by Christ that they were predicted.\r\n\r\nBy saying, I thirst, he showed that his death was real, and not just imaginary. It also indicated his intense desire for the salvation of the human race: \"God our Savior, who desires all men to be saved\" (1 Tim 2:4); \"For the Son of man came to seek and to save the lost\" (Lk 19:10). Indeed, we express our intense desires in terms of thirst: \"My soul thirsts for God\" (Ps 42:3).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.28"
     }
   ]
 }

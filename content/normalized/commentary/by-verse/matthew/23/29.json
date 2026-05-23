@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3341-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.29",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:29–31",
-      "excerpt": "He does not blame them for building the sepulchres, but discovers the design with which they built them; which was not to honour the slain, but to erect to themselves a triumphal monument of the murder, as fearing that in process of time the memory of this their audacious wickedness should perish.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.23.29:f04d3b4f:0"
       ]
     },
     {
@@ -48,6 +37,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 23:29–31",
       "excerpt": "Though they speak not this in words, they proclaim it by their actions, in ambitious and magnificent structures to their memory.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3341-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.29",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:29–31",
+      "excerpt": "He does not blame them for building the sepulchres, but discovers the design with which they built them; which was not to honour the slain, but to erect to themselves a triumphal monument of the murder, as fearing that in process of time the memory of this their audacious wickedness should perish.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -76,6 +83,31 @@
       ]
     },
     {
+      "id": "catena-matt-3347-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.29",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:29–31",
+      "excerpt": "And in the prophetic writings, the historical sense is the body, the spiritual meaning is the soul; the sepulchres are the letter and books themselves of Scripture. They then who attend only to the historical meaning, honour the bodies of the Prophets, and set in the letter as in a sepulchre; and are called Pharisees, i.e. ‘cut off’ as it were cutting off the soul of the Prophets from their body.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.29:8bda57ea:0"
+      ]
+    },
+    {
       "id": "catena-matt-3340-v29",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.29",
@@ -94,22 +126,72 @@
       ]
     },
     {
-      "id": "catena-matt-3347-v29",
+      "id": "hcf:jerome:matthew.23.29:ee26a80a:1",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.29",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:29–31",
-      "excerpt": "And in the prophetic writings, the historical sense is the body, the spiritual meaning is the soul; the sepulchres are the letter and books themselves of Scripture. They then who attend only to the historical meaning, honour the bodies of the Prophets, and set in the letter as in a sepulchre; and are called Pharisees, i.e. ‘cut off’ as it were cutting off the soul of the Prophets from their body.",
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:29",
+      "excerpt": "(Verse 29 onwards) Woe to you, scribes and Pharisees, hypocrites! For you build the tombs of the prophets and decorate the monuments of the righteous, and you say, 'If we had lived in the days of our fathers, we would not have been partners with them in shedding the blood of the prophets.' Thus you bear witness against yourselves that you are sons of those who murdered the prophets. In the most skillful syllogism, they are proven to be the offspring of murderers, while they themselves, by the opinion of goodness and glory among the people, build tombs for the prophets whom their forefathers killed, and they say, 'If we had lived in that time, we would not have done what our fathers did.' However, even if they do not say it in words, they speak through their actions by ambitiously and magnificently building monuments to the slain, whom they do not deny were killed by their forefathers.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.29"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.23.29:8bb8eb8b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-74",
+      "title": "Homily on the Gospel of Matthew 74 on matthew 23:29",
+      "excerpt": "Not because they build, nor because they blame the others, doth He say, woe, but because, while both thus, and by what they say, they are pretending to condemn their fathers, they do worse. For in proof that the condemnation was a pretense, Luke saith, ye do allow because ye build; for, \"Woe unto you,\" saith He, \"for ye build the sepulchers of the prophets, and your fathers killed them. Truly ye bear witness, and ye allow the deeds of your fathers, for they indeed killed them, and ye build their sepulchers.\" For here He reproves their purpose, wherewith they built, that it was not for the honoring of them that were slain, but as making a show of the murders, and afraid, lest, when the tombs had perished by time, the proof and memory of such daring should fade away, setting up these glorious buildings, as a kind of trophy, and priding themselves in the daring deeds of those men, and displaying them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.23.29"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.29:8f93e6dd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:29",
+      "excerpt": "He deplores them, not for building tombs for the prophets, for that is pleasing to God, but for doing these things in pretence, and for passing judgement on their fathers while doing worse things themselves, and exceeding them by far in malice. They lie brazenly when they say, \"If we had been in the days of our fathers, we would not have killed the prophets,\" for they were rabid with desire to kill the Master of the prophets. Therefore Christ says:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.29"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.29:e75f0fe8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:29",
+      "excerpt": "Then when he says, woe to you, (...) who build the sepulchres of the prophets, he rebukes them for the pretense of piety, and he does two things. First, he sets forth their pretense; secondly, their cruelty, at wherefore you are witnesses against yourselves, etc. Likewise, they pretend in two ways, by deeds and by words. Hence he first rebukes them regarding their deeds; secondly, regarding their words. The second is at and you say: if we had been, etc. He says, then, woe to you who build the sepulchres of the prophets. But what is this? Were they doing wrong? Do we not do this well, who place the bodies of the saints in silver and gold caskets? Some say that they are not reproved for the deed but for the intention, because their intention was evil; for they did this so that the memory of the crime of their fathers might be brought back to men's remembrance: hence it was the custom that when something notable happened, something was made as a memorial of it. Hence they wanted the boldness of their parents, because they dared to kill the prophets, to be in the memory of all. But this exposition does not agree with the letter. Therefore it should be said otherwise, that they are not blamed for this, but because they did this only so as to show outward signs of piety, just as it is said above that they tithed mint and cummin. Likewise, they adorn the monuments of the just. They adorned the sepulchres, and yet had the intention of killing, on account of pretense. Similarly, Chrysostom says, it happens in our times that if someone does many good things, adorns sepulchres, has an open hand, and the like; if he builds in stone, and aims at vainglory, and does not walk in the ways of the Lord, it profits him nothing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.29"
     },
     {
       "id": "catena-matt-3342-v29",
@@ -127,6 +209,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.23.29:78716906:0"
       ]
     },
     {

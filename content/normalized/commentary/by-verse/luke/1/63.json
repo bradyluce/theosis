@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.63:ce1402e2:0"
       ]
     },
     {
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.63:1a30497b:0"
       ]
     },
     {
@@ -127,6 +141,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.1.63:cfae0992:0"
       ]
     },
     {
@@ -145,7 +166,66 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.1.63:3a8a9d43:1"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.1.63:ad3a5d56:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:63",
+      "excerpt": "Zacharias also is questioned, and signs made to him, as it follows, And they made signs to the father, &c. But since unbelief had so bereft him of utterance and hearing, that he could not use his voice, he spoke by his hand-writing, as it follows, And he asked for a writing table, and wrote, saying, His name is John; that is, we give no name to him who has received his name from God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.63"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.63:ccfd1c9e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:63",
+      "excerpt": "Zechariah, being unable to make known to them by signs, asks for a tablet; and when regarding the name of the child he was found to be in complete agreement with his wife, \"all marveled,\" for this name was not in their kinship, and no one could say that the two of them had agreed upon this beforehand.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.63"
+    },
+    {
+      "id": "hcf:bede:luke.1.63:a05b2f6b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-20",
+      "title": "Homilies on the Gospels 2.20 on luke 1:63",
+      "excerpt": "John means \"the grace of God\" or \"in whom there is grace.\" By this name are expressed the entire extent of the grace of the gospel dispensation which he was to proclaim, and especially the Lord himself, through whom this grace was to be granted to the world.…As to his subsequent declaration and confirmation of the name of John, and the opening of Zechariah's mouth and his speaking, blessing God, it is surely evident that once the grace of the new covenant was manifested by the apostles, a large number of priests also became obedient to the faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.63"
     }
   ]
 }

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.2.9:b6a3e844:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.2.9:e545490e:0"
       ]
     },
     {
@@ -73,6 +87,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.2.9:2914be1e:0"
       ]
     },
     {
@@ -87,42 +108,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 78,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0259-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.9",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:8–12",
-      "excerpt": "No where in the whole course of the Old Testament do we find that the Angels who so constantly appear to the Patriarchs, came with light. This privilege was rightly kept for this time when there arose in the darkness a light to them that were true of heart. Hence it follows, and the glory of God shone round about them. (Ps. 112:4.) He is sent forth from the womb, but He shines from heaven. He lies in a common inn, but He lives in celestial light.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0261-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.9",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:8–12",
-      "excerpt": "The infancy of the Saviour was impressed upon us, both by frequent heraldings of Angels and testimonies of Evangelists, that we might be the more deeply penetrated in our hearts by what has been done for us. And we may observe, that the sign given us of the newborn Saviour was, that He would be found not clothed in Tyrian purple, but wrapped in poor swaddling clothes, not laying on gilded couches, but in a manger.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -148,6 +133,49 @@
       ]
     },
     {
+      "id": "catena-luke-0259-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.9",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:8–12",
+      "excerpt": "No where in the whole course of the Old Testament do we find that the Angels who so constantly appear to the Patriarchs, came with light. This privilege was rightly kept for this time when there arose in the darkness a light to them that were true of heart. Hence it follows, and the glory of God shone round about them. (Ps. 112:4.) He is sent forth from the womb, but He shines from heaven. He lies in a common inn, but He lives in celestial light.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.2.9:6b12ba1c:1"
+      ]
+    },
+    {
+      "id": "catena-luke-0261-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.9",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:8–12",
+      "excerpt": "The infancy of the Saviour was impressed upon us, both by frequent heraldings of Angels and testimonies of Evangelists, that we might be the more deeply penetrated in our hearts by what has been done for us. And we may observe, that the sign given us of the newborn Saviour was, that He would be found not clothed in Tyrian purple, but wrapped in poor swaddling clothes, not laying on gilded couches, but in a manger.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0265-v9",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.9",
@@ -163,7 +191,83 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.2.9:88ee0f7b:0"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.2.9:579364fc:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-2-51",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 2.51 on luke 2:9",
+      "excerpt": "See how divine providence strengthens faith: the angel instructs Mary, the angel instructs Joseph, the angel instructs the shepherds. It is not enough to send once; for every word stands on the testimony of two or three witnesses.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.2.9"
+    },
+    {
+      "id": "hcf:bede:luke.2.9:fd963968:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 2:9",
+      "excerpt": "And they feared with a great fear. And the angel said to them: Do not be afraid. Behold, I bring you good news of great joy that will be for all the people. Not for all the people of the Jews, of whom many were rebellious, but for all the faithful people gathered into one Church of Christ from all tribes, nations, and tongues, eternal and great joy is proclaimed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.9"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.2.9:d0b9eeb8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 2:9",
+      "excerpt": "(Geometer.) They were alarmed at the miracle, as it follows, And they were afraid, &c. But the Angel dispels their rising fears. He not only soothes their terrors, but pours gladness into their hearts; for it follows, For, behold, I bring you good tidings of great joy, &c. not to the Jewish people only, but to all. The cause of their joy is declared; the new and wonderful birth is made manifest by the very names. It follows, For unto you is born this day in the city of David a Saviour, which is Christ the Lord. The first of these, i. e. the Saviour, has reference to the action, the third, i. e. the Lord, to the dignity of the person.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.2.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.2.9:ed301153:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 2:9",
+      "excerpt": "The angel did not appear in Jerusalem to the Pharisees or scribes, for they were a receptacle of every kind of malice; but those shepherds, being without guile, were deemed worthy of divine visions. The Lord showed by this that from the very beginning He chose and made into preachers those who were more simple-hearted than others, for they went out and began to proclaim all these things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.2.9"
     }
   ]
 }

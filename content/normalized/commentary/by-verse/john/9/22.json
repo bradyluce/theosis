@@ -23,14 +23,14 @@
       ]
     },
     {
-      "id": "catena-john-1282-v22",
+      "id": "catena-john-1286-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.22",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
+      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -38,6 +38,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ]
+    },
+    {
+      "id": "catena-john-1288-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.9.22",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 9:18–23",
+      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.9.22:62d4c76b:0"
       ]
     },
     {
@@ -77,24 +102,6 @@
       ]
     },
     {
-      "id": "catena-john-1286-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.9.22",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 9:18–23",
-      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1287-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.22",
@@ -113,14 +120,14 @@
       ]
     },
     {
-      "id": "catena-john-1288-v22",
+      "id": "catena-john-1282-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.22",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
+      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -164,6 +171,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.9.22:b8c9bdcb:0"
       ]
     },
     {
@@ -183,6 +197,126 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.9.22:bf670cb5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-44",
+      "title": "Tractates on John 44 on john 9:22",
+      "excerpt": "\"But the Jews did not believe concerning him, that he had been blind, and received his sight, until they called the parents of him that had received his sight. And they asked them, saying, Is this your son, whom ye say was born blind? How then doth he now see? His parents answered and said, We know that this is our son, and that he was born blind: but by what means he now seeth, we know not; or who hath opened his eyes, we know not: he is of age; ask him: he shall speak for himself. These words spake his parents, because they feared the Jews: for the Jews had agreed already, that if any man should confess that he was Christ, he should be put out of the synagogue. Therefore said his parents, He is of age; ask him.\" What is this: \"They feared the Jews\"? \"They feared the Jews,\" that is, the Pharisees. As it is written elsewhere, \"Many of the rulers also believed on Him; but because of the Pharisees they did not confess Him, lest they should be put out of the synagogue.\" O evil fear! The Jews expel from the synagogue, and Christ receives into heaven. Nevertheless the love of human glory hindered many even who believed from confessing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.9.22"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.9.22:03a63e13:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-58",
+      "title": "Homily on the Gospel of John 58 on john 9:22",
+      "excerpt": "\"These words spake they, because they feared the Jews.\"\r\n\r\nObserve how the Evangelist again brings forward their opinion and thoughts. This I say, because of that speech which they before uttered, when they said, \"He maketh Himself equal to God.\" For had that also been the opinion of the Jews but not the judgment of Christ, he would have added and said, that \"it was a Jewish opinion.\" When therefore the parents referred them to him that had been healed, they called him again the second time, and did not say openly and shamelessly, \"Deny that Christ healed thee,\" but would fain effect this under a pretense of piety.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.9.22"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.9.22:08d1ab2c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 9:22",
+      "excerpt": "The parents answered thus because they feared the Pharisees.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.9.22"
+    },
+    {
+      "id": "hcf:alcuin:john.9.22:39453d48:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "hcf:work:alcuin:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 9:22",
+      "excerpt": "The Evangelist shows that it was not from ignorance, but fear, that they gave this answer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c804",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.9.22"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.9.22:85b875c4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-6",
+      "title": "Commentary on the Gospel of John, Book 6 on john 9:22",
+      "excerpt": "Well and fitly does our Lord Jesus the Christ utter this woe at the heads of the Pharisees: Woe unto you lawyers! for ye took away the hey of knowledge: ye entered not in yourselves, and them that were entering in ye hindered. For again let the devout person consider if the beauty of truth will not correspond to these words; for Christ could never be deceived. For behold! besides the unwillingness of any one of them to teach the doctrine of the presence of the Christ among them, they both terrify with cruel fear those who could perceive Him by the brilliance of His actions, and, by imposing a severe compulsion in their savageness, hinder any member of their company who seemed disposed to do so from acknowledging His miracles. For by putting out of the synagogue him who was right-minded and therefore disposed to believe, the wretches do not blush of their own authority to alienate in a manner from God him who cleaves to God; and to persuade him that the Lord of all is a partaker of the madness against all which they themselves possess. The admirable Evangelist however defends such, and says that the persons questioned were overcome by fear and therefore unwilling to say that the Christ had healed their son: so that by exposing the magnitude of the fury of the Jews, he might make it evident to those that come after. For what could be more inhuman than the conduct of these men, who deem right-minded persons worthy of punishment, and bring under the necessity of being punished, such as at all understand Him Who was proclaimed by the Law and the Prophets? And we shall find from the sacred Scriptures that the unholy design of the Jews was not unknown to the holy Prophets. For He Who searcheth the hearts and reins, piercing even to the dividing of soul and spirit, of both joints and marrow, and quick to discern the thoughts and intents of the heart, to Whom all things are naked and laid open, saith by Isaiah: Woe to the rebellious children: thus saith the Lord, Ye took counsel, but not of Me; ye made covenants, but not by My Spirit; to add sin to sin. For he who saith that Jesus is Lord most certainly will speak in the Holy Spirit, according to the words of Paul; but any one who professes the contrary will not speak in the Holy Spirit, (how could it be possible?) but rather in Beelzebub. Surely then the covenants of the Jews were not made by the Holy Spirit, for they added sins to sins. They first of all draw down the doom of disobedience upon their own heads, and then they communicate it to others by forbidding them to confess the Christ. Surely the design is full of the grossest impiety, albeit the Psalmist laughs at those who to their disappointment engage in a fruitless undertaking, saying: Thou O Lord shalt confound them in Thy wrath, and the fire shall devour them; their fruit shalt Thou destroy from the earth, and their seed from among the children of men: for they intended evil against Thee; they imagined a device which they are not able to perform. For they were quite unable to carry out a design which fought against God, although often and in ten thousand ways they attempted to obscure the glory of Christ. Therefore they were turned back, that is, were driven from the face and presence of the Lord of all, justly being addressed with the words: Walk in the light of your fire, and in the flame which ye kindled.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.9.22"
+    },
+    {
+      "id": "hcf:hcf-theodore-stratelates:john.9.22:5ee9b460:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-stratelates",
+      "workId": "hcf:work:hcf-theodore-stratelates:fragment-on-john-82",
+      "title": "FRAGMENT ON JOHN 82 on john 9:22",
+      "excerpt": "Thus evil mastered the rulers who not only disabled themselves through unbelief but also through their threatening shut the way of salvation for the rest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-on-john-82",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c319"
+      ],
+      "targetVerseId": "kjva:john.9.22"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.9.22:932c95a3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 9:22",
+      "excerpt": "1334 The reason for their answer is given when he says, his parents said this because they feared the Jews; for they were still imperfect and did not dare do what our Lord says: \"Do not fear those who kill the body\" (Mt 10:28). The reason for their fear was that the Jews had already agreed that if any one should confess him to be Christ, he was to be put out of the synagogue. \"I have said all this to you to keep you from falling away. They will put you out of the synagogues\" (Jn 16:1). As Augustine says, it was no longer an evil to be cast out of the synagogue, for the ones they rejected Christ welcomed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.9.22"
     }
   ]
 }

@@ -4,24 +4,6 @@
   "verseNumber": 24,
   "entries": [
     {
-      "id": "catena-mark-0083-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.24",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "Moreover, how great is the power which the lowliness of God, appearing in the form of a servant, has over the pride of devils, the devils themselves know so well, that they express it to the same Lord clothed in the weakness of flesh. For there follows, And he cried out, saying, What have we to do with thee, Jesus of Nazareth, &c. For it is evident in these words that there was in them knowledge, but there was not charity; and the reason was, that they feared their punishment from Him, and loved not the righteousness in Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0088-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.24",
@@ -37,38 +19,27 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.1.24:fb65dd34:4"
       ]
     },
     {
-      "id": "catena-mark-0081-v24",
+      "id": "catena-mark-0083-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.24",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "augustine",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "Since by the envy of the devil death first entered into the world, it was right that the medicine of healing should first work against the author of death; and therefore it is said, And there was in their synagogue a man, &c.",
+      "excerpt": "Moreover, how great is the power which the lowliness of God, appearing in the form of a servant, has over the pride of devils, the devils themselves know so well, that they express it to the same Lord clothed in the weakness of flesh. For there follows, And he cried out, saying, What have we to do with thee, Jesus of Nazareth, &c. For it is evident in these words that there was in them knowledge, but there was not charity; and the reason was, that they feared their punishment from Him, and loved not the righteousness in Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0084-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.24",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "For the devils, seeing the Lord on the earth, thought that they were immediately to be judged.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -94,6 +65,56 @@
       ]
     },
     {
+      "id": "catena-mark-0081-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.24",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "Since by the envy of the devil death first entered into the world, it was right that the medicine of healing should first work against the author of death; and therefore it is said, And there was in their synagogue a man, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.24:2eff1707:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0084-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.24",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "For the devils, seeing the Lord on the earth, thought that they were immediately to be judged.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.24:933e2a31:2"
+      ]
+    },
+    {
       "id": "catena-mark-0086-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.24",
@@ -109,6 +130,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.24:367c6a63:1"
       ]
     },
     {
@@ -127,6 +155,236 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.1.24:11bfdf95:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:24",
+      "excerpt": "And there was in their synagogue a man with an unclean spirit, etc. This is not a confession of the will, which follows the reward of confessing, but an extortion of necessity, which compels the guilty to confess. And just as if runaway slaves, after a long time, see their master, they fear nothing but whips, so also the demons, seeing the Lord suddenly dwelling on earth, believed that he had come to judge them. The presence of the Savior is torment for demons.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:augustine:mark.1.24:d4e02e64:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:city-of-god-9-21",
+      "title": "City of God 9.21 on mark 1:24",
+      "excerpt": "Those words show clearly that the demons had much knowledge, but entirely lacked love. They dreaded receiving their punishment from him. They did not love the righteousness that was in him. He made himself known to them to the extent he willed; and he willed to be made known to the extent that was fitting. But he was not made known to them as he is known to the holy angels, who enjoy participation in his eternity, in that he is the Word of God. To the demons he is known as he had to be made known, by striking terror into them, for his purpose was to free from their tyrannical power all who were predestined for his kingdom and glory, which is eternally true and truly eternal. Therefore, he did not make himself known to the demons as the life eternal, and the unchangeable light which illuminates his true worshipers, whose hearts are purified by faith in him so that they see that light. He was known to the demons through certain temporal effects of his power, the signs of his hidden presence, which could be more evident to their senses, even those of malignant spirits, than to the weak perception of human beings.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:augustine:mark.1.24:f698bb38:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermons-on-new-testament-lessons-40-8",
+      "title": "SERMONS ON NEW TESTAMENT LESSONS 40.8 on mark 1:24",
+      "excerpt": "Call to mind with me the time when Peter was praised and called blessed. Was it because he merely said, \"You are the Christ, the Son of the living God\"? No, he who pronounced him blessed regarded not merely the sound of his words, but the affections of his heart. Compare that with the words of the demons who said almost the same thing: \"We know who you are, the Son of God,\" just as Peter had confessed him as \"Son of God.\" So what is the difference? Peter spoke in love, but the demons in fear.… So tell us how faith is to be defined, if even the devils can believe and tremble? Only the faith that works by love is faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:augustine:mark.1.24:0786b587:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractate-on-john-6-21",
+      "title": "TRACTATE ON JOHN 6.21 on mark 1:24",
+      "excerpt": "Faith is mighty, but without love it profits nothing. The devils confessed Christ, but lacking charity it availed nothing. They said, \"What have we to do with you?\" They confessed a sort of faith, but without love. Hence they were devils. Do not boast of that faith that puts you on the same level with the devils.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-john-6-21",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:augustine:mark.1.24:21eba787:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on mark 1:24",
+      "excerpt": "Unclean spirits knew that Jesus Christ would come. They had heard it from the angels, they had heard it from the prophets, so they were expecting him to come. For if not, why did they cry out, \"What have we to do with you? Have you come to destroy us before the time? We know who you are, the holy one of God.\" .",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.24:347f1de3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:24",
+      "excerpt": "Evil spirits are called \"unclean\" because they love all manner of unclean deeds. To come out of a man the demon considers \"destruction\" for itself. Malicious demons in general count it as suffering for themselves when they are not permitted to do evil to people. Moreover, being lovers of the flesh and accustomed to taking pleasure in matter, they endure as it were a great hunger when they do not dwell in bodies. Therefore the Lord also says that the demonic race is cast out by fasting. The unclean spirit did not say to Christ: You are holy, since many of the prophets too were holy, but said \"the Holy One,\" that is, the Only One, Holy in His very essence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:mark.1.24:e67cc031:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:letter-22-to-his-sister",
+      "title": "LETTER 22, TO HIS SISTER on mark 1:24",
+      "excerpt": "I do not accept the devil's testimony but his confession. The devil spoke unwillingly, being compelled and tormented.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:ignatius-of-antioch:mark.1.24:506affd1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ignatius-of-antioch",
+      "workId": "hcf:work:ignatius-of-antioch:syriac-second-epistle-of-ignatius-to-the-ephesians",
+      "title": "Syriac Second Epistle of Ignatius to the Ephesians on mark 1:24",
+      "excerpt": "There was concealed from the ruler of this world the virginity of Mary and the birth of our Lord, and the three renowned mysteries which were done in the tranquillity of God from the star. And here, at the manifestation of the Son, magic began to be destroyed, and all bonds were loosed; and the ancient kingdom and the error of evil was destroyed. Henceforward all things were moved together, and the destruction of death was devised, and there was the commencement of that which was perfected in God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c108"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:mark.1.24:0dfac079:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv",
+      "title": "Against Heresies Book IV on mark 1:24",
+      "excerpt": "Yea, even the demons exclaimed, on beholding the Son: \"We know Thee who Thou art, the Holy One of God.\" And the devil looking at Him, and tempting Him, said: \"If Thou art the Son of God;\"-all thus indeed seeing and speaking of the Son and the Father, but all not believing [in them]. For it was fitting that the truth should receive testimony from all, and should become [a means of] judgment for the salvation indeed of those who believe, but for the condemnation of those who believe not; that all should be fairly judged, and that the faith in the Father and Son should be approved by all, that is, that it should be established by all [as the one means of salvation], receiving testimony from all, both from those belonging to it, since they are its friends, and by those having no connection with it, though they are its enemies. For that evidence is true, and cannot be gainsaid, which elicits even from its adversaries striking testimonies in its behalf; they being convinced with respect to the matter in hand by their own plain contemplation of it, and bearing testimony to it, as well as declaring it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.1.24:82d06325:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homilies-on-first-corinthians-29-3",
+      "title": "HOMILIES ON FIRST CORINTHIANS 29.3 on mark 1:24",
+      "excerpt": "Does no demon call upon God's name? did not the demons say, \"We know who you are, O Holy One of God?\" did they not say to Paul: \"these men are the servants of the Most High God?\" They did, but only upon scourging, only upon compulsion, never of their own will, never without being trounced.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homilies-on-first-corinthians-29-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "hcf:tertullian:mark.1.24:66c5b99e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on mark 1:24",
+      "excerpt": "Satan likewise knew Him to be this in his temptations: \"Since Thou art the Son of God.\" This, accordingly, the devils also acknowledge Him to be: \"we know Thee, who Thou art, the Holy Son of God.\" His \"Father\" He Himself adores.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.1.24"
+    },
+    {
+      "id": "catena-mark-0089-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.24",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0087-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.24",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "As if he said, Methinks that Thou art come; for he had not a firm and certain knowledge of the coming of God. But he calls Him holy not as one of many, for every prophet was also holy, but he proclaims that He was the One holy; by the article in Greek he shews Him to be the One, but by his fear he shews Him to be Lord of all.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.24:4e992483:0"
       ]
     },
     {
@@ -156,42 +414,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
       "excerpt": "Or else the devil so speaks, as if he said, ‘by taking away uncleanness, and giving to the souls of men divine knowledge, Thou allowest us no place in men.’",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0087-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.24",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "As if he said, Methinks that Thou art come; for he had not a firm and certain knowledge of the coming of God. But he calls Him holy not as one of many, for every prophet was also holy, but he proclaims that He was the One holy; by the article in Greek he shews Him to be the One, but by his fear he shews Him to be Lord of all.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0089-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.24",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -235,6 +457,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.24:ec04c882:0"
       ]
     }
   ]

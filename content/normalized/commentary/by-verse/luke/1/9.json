@@ -4,24 +4,6 @@
   "verseNumber": 9,
   "entries": [
     {
-      "id": "catena-luke-0035-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.9",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:8–10",
-      "excerpt": "Zacharias seems here to be designated High Priest, because into the second tabernacle went the High Priest alone once every year, not without blood, which he offered for himself and the sins of the people. (Heb. 9:7.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0037-v9",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.9",
@@ -37,6 +19,56 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0035-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.9",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:8–10",
+      "excerpt": "Zacharias seems here to be designated High Priest, because into the second tabernacle went the High Priest alone once every year, not without blood, which he offered for himself and the sins of the people. (Heb. 9:7.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.9:bc9cebe5:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0036-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.9",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:8–10",
+      "excerpt": "It was not by a new lot that he was chosen when the incense was to be burnt, but by the old lot, whereby according to the order of his Priesthood he succeeded in the course of Abia. It follows, And all the multitude of the people, &c. Incense was ordered to be carried into the Holy of Holies by the High Priest, the whole people waiting without the temple. It was to be on the tenth day of the seventh month, and this day was to be called the day of expiation or propitiation, the mystery of which day the Apostle explaining to the Hebrews, points to Jesus as the true High Priest, who in His own…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.9:b602c009:0"
       ]
     },
     {
@@ -58,22 +90,38 @@
       ]
     },
     {
-      "id": "catena-luke-0036-v9",
+      "id": "hcf:bede:luke.1.9:5bf8ef29:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.1.9",
       "topicSlugs": [],
       "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:8–10",
-      "excerpt": "It was not by a new lot that he was chosen when the incense was to be burnt, but by the old lot, whereby according to the order of his Priesthood he succeeded in the course of Abia. It follows, And all the multitude of the people, &c. Incense was ordered to be carried into the Holy of Holies by the High Priest, the whole people waiting without the temple. It was to be on the tenth day of the seventh month, and this day was to be called the day of expiation or propitiation, the mystery of which day the Apostle explaining to the Hebrews, points to Jesus as the true High Priest, who in His own…",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:9",
+      "excerpt": "Therefore, Zacharias enters the temple because it is the duty of priests to enter the sanctuary of God and to understand the deep mysteries of the heavens. The multitude prays outside, because they cannot penetrate the secrets and mysteries, they must humbly attend to the teachings of the more learned. But while Zacharias places incense on the altar, he learns of the birth of John; for while teachers burn with a greater flame of divine reading, they find that the grace of God through Jesus Christ is to come and emerge from within the depths of scriptures, as from the womb of Elizabeth. And this rightly through an angel, because the law is ordered by angels in the hand of a mediator.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.9"
+    },
+    {
+      "id": "hcf:john-chrysostom:luke.1.9:7d9a1472:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:on-the-incomprehensible-nature-of-god-2-9-10",
+      "title": "ON THE INCOMPREHENSIBLE NATURE OF GOD 2.9-10 on luke 1:9",
+      "excerpt": "This man Zechariah came into the Holy of Holies, to the innermost sanctuary, upon which he alone of all men had the right to look. Consider how he was equal in importance to all the people. When he offered prayers for the whole people, when he was making the Master propitious to his servants, he was serving as a mediator between God and men.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-incomprehensible-nature-of-god-2-9-10",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:luke.1.9"
     }
   ]
 }

@@ -55,7 +55,49 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.9.39:24052b1f:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.9.39:2059daa3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 9:39",
+      "excerpt": "And behold, a spirit seizes him, and suddenly he cries out, and it convulses him and scatters him with foam, and scarcely departs tearing him. This demoniac, whom the Lord healed descending from the mountain, Matthew describes as lunatic, Mark as deaf and mute. They signify those of whom it is written: \"The fool changes like the moon\" (Eccl. XXVII), who never remain in the same state, now changed to these, now to other vices, waxing and waning, mute in not confessing their faith, deaf in not in any way hearing the word of faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.9.39"
+    },
+    {
+      "id": "hcf:bede:luke.9.39:8b39059b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 9:39",
+      "excerpt": "Now this demoniac Matthew calls a lunatic; Mark, deaf and dumb. (Matt. 17:15, Mark 9:25.) Matthew signifies those who change as the moon, increasing and decreasing through different vices, Mark those who are dumb in not confessing the faith, deaf in not hearing the very word of faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.9.39"
     }
   ]
 }

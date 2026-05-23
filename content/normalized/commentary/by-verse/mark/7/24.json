@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.7.24:3de3f8eb:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.7.24:dcdc91e3:3"
       ]
     },
     {
@@ -76,42 +90,6 @@
       ]
     },
     {
-      "id": "catena-mark-0529-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.24",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "After that the Lord had finished His teaching concerning food, seeing that the Jews were incredulous, He enters into the country of the Gentiles, for the Jews being unfaithful, salvation turns itself to the Gentiles; wherefore it is said, And from thence he arose, and went into the borders of Tyre and Sidon.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0531-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.24",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "Or else His reason for coming in secret was that the Jews should not find occasion of blame against Him, as if He had passed over to the unclean Gentiles. It goes on, But he could not be hid.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0539-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.24",
@@ -120,42 +98,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:24–30",
       "excerpt": "He calls the Gentiles dogs, as being thought wicked by the Jews; and He means by bread, the benefit which the Lord promised to the children, that is, to the Jews. The sense therefore is, that it is not right for the Gentiles first to be partakers of the benefit, promised principally to the Jews. The reason, therefore, why the Lord does not immediately hear, but delays His grace, is, that He may also shew that the faith of the woman was firm, and that we may learn not at once to grow weary in prayer, but to continue earnest till we obtain.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0541-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.24",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "As if she had said, The Jews have the whole of that bread which comes down from heaven, and Thy benefits also; I ask for the crumbs, that is, a small portion of the benefit.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0543-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.24",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "Because therefore the woman answered with much wisdom, she obtained what she wanted; wherefore there follows, And he said unto her, &c. He said not, My virtue hath made thee whole, but for this saying, that is, for thy faith, which is shewn by this saying, go thy way, the devil is gone out of thy daughter. It goes on, And when she was come into her house, she found her daughter laid upon the bed, and the devil gone out.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -184,6 +126,204 @@
       ]
     },
     {
+      "id": "catena-mark-0543-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.24",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "Because therefore the woman answered with much wisdom, she obtained what she wanted; wherefore there follows, And he said unto her, &c. He said not, My virtue hath made thee whole, but for this saying, that is, for thy faith, which is shewn by this saying, go thy way, the devil is gone out of thy daughter. It goes on, And when she was come into her house, she found her daughter laid upon the bed, and the devil gone out.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0529-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.24",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "After that the Lord had finished His teaching concerning food, seeing that the Jews were incredulous, He enters into the country of the Gentiles, for the Jews being unfaithful, salvation turns itself to the Gentiles; wherefore it is said, And from thence he arose, and went into the borders of Tyre and Sidon.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.7.24:26c17a07:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0531-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.24",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "Or else His reason for coming in secret was that the Jews should not find occasion of blame against Him, as if He had passed over to the unclean Gentiles. It goes on, But he could not be hid.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0541-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.24",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "As if she had said, The Jews have the whole of that bread which comes down from heaven, and Thy benefits also; I ask for the crumbs, that is, a small portion of the benefit.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.7.24:fd371126:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 7:24",
+      "excerpt": "After He had spoken about food and saw that the Jews did not believe, the Lord crosses over into the regions of the Gentiles, for with the unbelief of the Jews, salvation was to pass to the Gentiles. At first the Lord tried to remain hidden, so that the Jews would not have a pretext to accuse Him of having gone over to the side of the unclean Gentiles. Yet He could not be hidden, for it was impossible for Him to be concealed and recognized by no one.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.7.24"
+    },
+    {
+      "id": "hcf:bede:mark.7.24:b2f3b00d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 7:24",
+      "excerpt": "And entering a house, he did not want anyone to know, but he could not be hidden. It is rightly asked how it is said that the Lord did not want anyone to know his journey, yet could not be hidden. For what is it that he could not do, who, even while placed among men temporally, invisibly arranged everything that happened outside inwardly with the Father? Or for what reason is he thought to have entered the regions of Tyre and Sidon, except to free the daughter of the Syrophoenician from a demon, and through the faith of the Gentile woman to refute the disbelief of the scribes and Pharisees? But it must be faithfully and piously believed that not at all did what he did not want happen to him in this matter, but that it was shown primarily in his good works which the faithful following his journey should wish to do. For upon entering the house, he commanded the disciples not to reveal to anyone in the unknown region who he was. Nonetheless, he himself made known this entrance to the Gentile woman and to whomever he wished among the wise, he himself kindled her heart with an invisible prompt to seek salvation from him, so that by her example they might learn to whom the grace of healing the sick should be conferred in the exhibition of miracles, to avoid, as much as possible, human glory and favor, yet not cease from the pious work of virtue, whenever these deeds were justly deserved by the faith of the good or necessarily compelled by the unbelief of the wicked.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.7.24"
+    },
+    {
+      "id": "hcf:bede:mark.7.24:09b83991:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 7:24",
+      "excerpt": "And he could not, he said, remain hidden. For a woman, as soon as she heard about him, whose daughter had an unclean spirit, entered and fell at his feet. Now the woman was a Gentile, a Syrophoenician by birth. Typically, however, this Gentile woman, coming to the Lord with faith, represents the Church gathered from the Gentiles. She begs the Lord for her demon-possessed daughter, as for the people who do not yet believe, so that they too may be freed from the deceptions of the devil, she entreats the divine mercy. She, according to Matthew, went out from her borders, but in this Gospel, it is said that she entered to the Lord and fell at his feet, so that from both assertions it may be gathered that only those faithfully and rightly pray for the erring who abandon the dwellings of their former unbelief and transfer themselves with pious devotion into the house of the Lord, namely the Church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.7.24"
+    },
+    {
+      "id": "hcf:bede:mark.7.24:1e46a08c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 7:24",
+      "excerpt": "And from there, rising, he went to the regions of Tyre and Sidon. Leaving behind the scribes and Pharisees, who were detractors, he crossed into the parts of Tyre and Sidon to cure the Tyrians and Sidonians.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.7.24"
+    },
+    {
+      "id": "hcf:john-of-damascus:mark.7.24:0aff1c9d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-of-damascus",
+      "workId": "hcf:work:john-of-damascus:untitled-commentary",
+      "title": "Commentary on mark 7:24",
+      "excerpt": "His divine will was allpowerful, yet it was said that he was unable to conceal himself when he willed to. Why? It was while willing within the limits of his humanity that he was [voluntarily] subject to the limitations of the flesh. As a human he possessed the common human ability to will…. The sanctification of his will did not occur by circumventing his natural volition but by uniting his will with the divine and almighty will, as the will of God incarnate. Hence when he wished to be hid, he could not do so of himself, because it pleased God that the Word be revealed in himself as having the limitations of human willing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c749"
+      ],
+      "targetVerseId": "kjva:mark.7.24"
+    },
+    {
+      "id": "hcf:origen:mark.7.24:e06a68f1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-11-16",
+      "title": "COMMENTARY ON MATTHEW 11.16 on mark 7:24",
+      "excerpt": "He withdrew, perhaps because the Pharisees were offended when they heard that \"What comes out of the mouth proceeds from the heart, and this is what defiles.\" … It is probable that he sought to avoid the Pharisees, who were offended at his teaching, while he was waiting for the time of his impending suffering—a time suitably and duly appointed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.7.24"
+    },
+    {
+      "id": "hcf:origen:mark.7.24:7a13da60:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-11-16",
+      "title": "COMMENTARY ON MATTHEW 11.16 on mark 7:24",
+      "excerpt": "The Gentiles, those who dwell on the borders, can be saved if they believe.… Think of it this way: Each of us when he sins is living on the borders of Tyre or Sidon or of Pharaoh and Egypt. They are on the borders of those who are outside the inheritance of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.7.24"
+    },
+    {
       "id": "catena-mark-0530-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.24",
@@ -199,35 +339,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.7.24:b91fb694:0"
       ]
     },
     {
-      "id": "catena-mark-0532-v24",
+      "id": "catena-mark-0540-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.24",
       "topicSlugs": [],
-      "personId": "pseudo-augustine",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:24–30",
-      "excerpt": "But if He wished to do so and could not, it appears as if His will was impotent; it is not possible however that our Saviour's will should not be fulfilled, nor can He will a thing, which He knows ought not be. Therefore when a thing has taken place, it may be asserted that He has willed it. But we should observe that this happened amongst the Gentiles, to whom it was not time to preach; nevertheless not to receive them, when they came to the faith of their own accord, would have been to grudge them the faith. So then it came to pass that the Lord was not made known by His disciples; others,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0534-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.24",
-      "topicSlugs": [],
-      "personId": "pseudo-augustine",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "Lastly, the Canaanitish woman came in to Him, on hearing of Him; if she had not first submitted herself to the God of the Jews, she would not have obtained their benefit. Concerning her it continues: For a woman, whose daughter had an unclean spirit, as soon as she had heard of him, came in and fell at his feet.",
+      "excerpt": "In like manner also to shew the Jews that He did not confer healing on foreigners in the same degree as to them, and that by the discovery of the woman's faith, the unfaithfulness of the Jews might be the more laid bare. For the woman did not take it ill, but with much reverence assented to what the Lord had said. Wherefore it goes on, And she answered and said unto him, Truth, Lord, but the dogs under the table eat of the children's crumbs.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -274,14 +403,14 @@
       ]
     },
     {
-      "id": "catena-mark-0540-v24",
+      "id": "catena-mark-0542-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.24",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:24–30",
-      "excerpt": "In like manner also to shew the Jews that He did not confer healing on foreigners in the same degree as to them, and that by the discovery of the woman's faith, the unfaithfulness of the Jews might be the more laid bare. For the woman did not take it ill, but with much reverence assented to what the Lord had said. Wherefore it goes on, And she answered and said unto him, Truth, Lord, but the dogs under the table eat of the children's crumbs.",
+      "excerpt": "Her placing herself therefore in the rank of dogs is a mark of her reverence; as if she said, I hold it as a favour to be even in the position of a dog, and to eat not from another table, but from that of the Master himself.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -292,14 +421,39 @@
       ]
     },
     {
-      "id": "catena-mark-0542-v24",
+      "id": "catena-mark-0532-v24",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.24",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
+      "personId": "pseudo-augustine",
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:24–30",
-      "excerpt": "Her placing herself therefore in the rank of dogs is a mark of her reverence; as if she said, I hold it as a favour to be even in the position of a dog, and to eat not from another table, but from that of the Master himself.",
+      "excerpt": "But if He wished to do so and could not, it appears as if His will was impotent; it is not possible however that our Saviour's will should not be fulfilled, nor can He will a thing, which He knows ought not be. Therefore when a thing has taken place, it may be asserted that He has willed it. But we should observe that this happened amongst the Gentiles, to whom it was not time to preach; nevertheless not to receive them, when they came to the faith of their own accord, would have been to grudge them the faith. So then it came to pass that the Lord was not made known by His disciples; others,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-augustine:mark.7.24:5818a4ee:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0534-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.24",
+      "topicSlugs": [],
+      "personId": "pseudo-augustine",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "Lastly, the Canaanitish woman came in to Him, on hearing of Him; if she had not first submitted herself to the God of the Jews, she would not have obtained their benefit. Concerning her it continues: For a woman, whose daughter had an unclean spirit, as soon as she had heard of him, came in and fell at his feet.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.1.37:880e12d2:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.1.37:47ba587b:0"
       ]
     },
     {
@@ -127,6 +141,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.37:52040a9c:0"
       ]
     },
     {
@@ -164,6 +185,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:tertullian:luke.1.37:16ae8145:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-idolatry",
+      "title": "On Idolatry on luke 1:37",
+      "excerpt": "It has learnt not to respect life; how much more food? [You ask] \"How many have fulfilled these conditions? \"But what with men is difficult, with God is easy. Let us, however, comfort ourselves about the gentleness and clemency of God in such wise, as not to indulge our \"necessities\" up to the point of affinities with idolatry, but to avoid even from afar every breath of it, as of a pestilence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.1.37"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.37:7991c6f4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:37",
+      "excerpt": "Perhaps someone is puzzled how Elizabeth was a relative of the Virgin, when the Virgin was from the tribe of Judah, and Elizabeth was from the daughters of Aaron, for the Law required that marriages be from one and the same tribe, and therefore kinship was found among those descended from one and the same tribe. To this one can say, on the one hand, that since the time of the captivity the families became mixed, but better still the following: Aaron had as his wife Elizabeth, the daughter of Amminadab, and he was from the tribe of Judah. Do you see that the Mother of God was a relative of Elizabeth from the very beginning, from Aaron? Since Aaron's wife was from the tribe of Judah, from which the Mother of God also came, and Elizabeth was from the daughters of Aaron, consequently Elizabeth was a relative of the Mother of God. For her foremother, the wife of Aaron, was from the tribe of Judah. Notice also the succession of kinship: Aaron's wife was Elizabeth, and Zacharias's wife was Elizabeth, as one descended from her.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.37"
     }
   ]
 }

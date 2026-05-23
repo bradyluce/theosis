@@ -4,24 +4,6 @@
   "verseNumber": 3,
   "entries": [
     {
-      "id": "catena-luke-2557-v3",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.3",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:3–4",
-      "excerpt": "After the parable of the rich man who is tormented in punishment, Christ added a commandment to give forgiveness to those who turn themselves from their trespasses, lest any one through despair should not be reclaimed from his fault; and hence it is said, Take heed to yourselves.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2559-v3",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.3",
@@ -37,6 +19,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2557-v3",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.3",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:3–4",
+      "excerpt": "After the parable of the rich man who is tormented in punishment, Christ added a commandment to give forgiveness to those who turn themselves from their trespasses, lest any one through despair should not be reclaimed from his fault; and hence it is said, Take heed to yourselves.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.17.3:35fb8a9c:0"
       ]
     },
     {
@@ -92,6 +99,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.17.3:eaa884db:0"
       ]
     },
     {
@@ -128,6 +142,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.17.3:f1e7e4ad:0"
       ]
     },
     {
@@ -147,6 +168,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.17.3:6b6d462e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:3",
+      "excerpt": "Therefore the Lord warns the disciples: \"Take heed to yourselves.\" Behold, He says, I tell you beforehand that evil will come; do not be held accountable. For evil must come, but there is no necessity for you to perish, if you are careful and arm yourselves. The wolf must come, but if the shepherd is watchful, there is no necessity for the sheep to perish, and the wolf must depart with an empty maw. The Lord said this about those who cause offense and those who harm the preaching, that is, who hinder it. Since there is a great difference among them, for some are incurable like the Pharisees, while others are curable like the Lord's brothers in relation to the Lord Himself, for even they did not believe in Him (John 7:5).\r\nSo, since there is a great difference among those who hinder the preaching, for among them there could be some who are even of the same faith, the Lord says: \"if your brother sins against you,\" \"rebuke him\" privately, and \"if he listens to you, you have gained\" him, \"but if he does not listen, take with you one or two more,\" and the rest, which the evangelist Matthew (Matt. 18:15–17) set forth more extensively, while the evangelist Luke passed over in silence, as it had already been said by the evangelist Matthew. Whoever heeds the rebuke is worthy of forgiveness; but whoever does not heed, let him \"be to you as a heathen and a tax collector,\" that is, abominable and unworthy of being called a brother.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.17.3"
+    },
+    {
+      "id": "hcf:bede:luke.17.3:3a529e0e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:3",
+      "excerpt": "Take heed to yourselves. If your brother sins, rebuke him, and if he repents, forgive him. We read something similar in Leviticus: You shall not hate your brother in your heart; you shall surely rebuke your neighbor and not bear sin because of him (Lev. 19). He therefore shows the order in which we can avoid scandals and escape eternal woe: if we take care not to offend anyone, if we rebuke the sinner with the zeal of justice, if we open the bowels of mercy and compassion to the penitent. Here it must be carefully noted that we are commanded not to forgive indiscriminately but to forgive the one who repents. And first, indeed, to rebuke the sinner with mercy, so that we may justly have someone to forgive afterwards. Therefore, whoever sees his brother sin and remains silent is no less a transgressor of the Lord's command than he who refuses to grant pardon to the penitent. For he who said, If he repents, forgive, preceded it with, If he sins, rebuke. Therefore, mercy on a brother is to be granted after rebuke, but certainly to the one who turns away from error by repenting, lest forgiveness be either too difficult or indulgence too lax.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.3"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.17.3:7f16a7ae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homilies-113-16",
+      "title": "COMMENTARY ON LUKE, HOMILIES 113-16 on luke 17:3",
+      "excerpt": "He says, \"If he who sins against you repents and acknowledges his fault, you shall forgive him not only once, but very many times.\" We … must rather imitate those whose business it is to heal our bodily diseases and who do not care for a sick person once only or twice, but just as often as he happens to become ill. Let us remember that we also are liable to infirmities and overpowered by our passions. This being the case, we pray that those who have the duty to rebuke us and who have the authority to punish us may show themselves forgiving and kind to us. It is our duty, having a common feeling for our mutual infirmities, to bear one another's burdens, so we will fulfill the law of Christ. Observe also that in the Gospel according to Matthew, Peter makes the inquiry, \"How often will my brother sin against me, and I forgive him?\" The Lord then tells the apostles, \"Although he sins seven times in the day,\" that is, frequently, \"and will acknowledge his fault, you shall forgive him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homilies-113-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.17.3"
+    },
+    {
+      "id": "hcf:tertullian:luke.17.3:b7ed677c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 17:3",
+      "excerpt": "Such identity of care proceeds from one and the same Being. A trespassing brother He will have rebuked. If one failed in this duty of reproof, he in fact sinned, either because out of hatred he wished his brother to continue in sin, or else spared him from mistaken friendship, although possessing the injunction in Leviticus: \"Thou shalt not hate thy brother in thine heart; thy neighbor thou shalt seriously rebuke, and on his account shalt not contract sin.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.17.3"
     }
   ]
 }

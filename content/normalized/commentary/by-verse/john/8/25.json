@@ -4,6 +4,31 @@
   "verseNumber": 25,
   "entries": [
     {
+      "id": "catena-john-1112-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.25",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:25–27",
+      "excerpt": "Our Lord having said, If ye believe not that I am, ye shall die in your sins; they enquire of Him, as if wishing to know in whom they are to believe, that they might not die in their sin: Then said they unto Him, Who art Thou? For when Thou saidst, If ye believe not that I am, Thou didst not add, who Thou art. But our Lord knew that these were some who would believe, and therefore after being asked, Who art Thou? that such might know what they should believe Him to be, Jesus saith unto them, The beginning, who also speak to you; not as if to say, I am the beginning, but, Believe Me to be the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.8.25:5e260db3:3"
+      ]
+    },
+    {
       "id": "augustine-john-038-c8-v25",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.25",
@@ -23,42 +48,6 @@
       ]
     },
     {
-      "id": "catena-john-1112-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.25",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:25–27",
-      "excerpt": "Our Lord having said, If ye believe not that I am, ye shall die in your sins; they enquire of Him, as if wishing to know in whom they are to believe, that they might not die in their sin: Then said they unto Him, Who art Thou? For when Thou saidst, If ye believe not that I am, Thou didst not add, who Thou art. But our Lord knew that these were some who would believe, and therefore after being asked, Who art Thou? that such might know what they should believe Him to be, Jesus saith unto them, The beginning, who also speak to you; not as if to say, I am the beginning, but, Believe Me to be the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1114-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.25",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:25–27",
-      "excerpt": "See here the madness of the Jews; asking after so long time, and after all His miracles and teaching, Who art Thou? What is Christ’s answer? From the beginning I speak with you; as if to say, Ye do not deserve to hear any thing from Me, much less this thing, Who I am. For ye speak always, to tempt Me. But I could, if I would, confound and punish you: I have many things to say, and to judge of you.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1115-v25",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.25",
@@ -67,42 +56,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 8:25–27",
       "excerpt": "Above He said, I judge no man; but, I judge not, is one thing, I have to judge, another. I judge not, He says, with reference to the present time. But the other, I have many things to say, and to judge of you, refers to a future judgment. And I shall be true in My judgment, because I am truth, the Son of the true One. He that sent Me is true. My Father is true, not by partaking of, but begetting truth. Shall we say that truth is greater than one who is true? If we say this, we shall begin to call the Son greater than the Father.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1116-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.25",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:25–27",
-      "excerpt": "He says this, that they may not think that He allows them to talk against Him with impunity, from inability to punish them; or that He is not alive to their contemptuous designs.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1118-v25",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.25",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:25–27",
-      "excerpt": "Or thus: As My Father hath sent Me not to judge the world, but to save the world, and My Father is true, I accordingly judge no man now; but speak thus for your salvation, not your condemnation: And I speak to the world those things that I have heard of Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -131,6 +84,60 @@
       ]
     },
     {
+      "id": "catena-john-1114-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.25",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:25–27",
+      "excerpt": "See here the madness of the Jews; asking after so long time, and after all His miracles and teaching, Who art Thou? What is Christ’s answer? From the beginning I speak with you; as if to say, Ye do not deserve to hear any thing from Me, much less this thing, Who I am. For ye speak always, to tempt Me. But I could, if I would, confound and punish you: I have many things to say, and to judge of you.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1118-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.25",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:25–27",
+      "excerpt": "Or thus: As My Father hath sent Me not to judge the world, but to save the world, and My Father is true, I accordingly judge no man now; but speak thus for your salvation, not your condemnation: And I speak to the world those things that I have heard of Him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1116-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.25",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:25–27",
+      "excerpt": "He says this, that they may not think that He allows them to talk against Him with impunity, from inability to punish them; or that He is not alive to their contemptuous designs.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-1113-v25",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.25",
@@ -146,6 +153,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.8.25:ec5f23c0:0"
       ]
     },
     {
@@ -160,6 +174,24 @@
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1121-v25",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.25",
+      "topicSlugs": [],
+      "personId": "alcuin",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:25–27",
+      "excerpt": "They did not understand however what He meant by saying, He is true that sent Me: they understand not that He spake to them of the Father. For they had not the eyes of their mind yet opened, to understand the equality of the Father with the Son.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -185,22 +217,158 @@
       ]
     },
     {
-      "id": "catena-john-1121-v25",
+      "id": "hcf:augustine:john.8.25:515d348e:1",
       "relation": "verse",
-      "targetVerseId": "kjva:john.8.25",
       "topicSlugs": [],
-      "personId": "alcuin",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:25–27",
-      "excerpt": "They did not understand however what He meant by saying, He is true that sent Me: they understand not that He spake to them of the Father. For they had not the eyes of their mind yet opened, to understand the equality of the Father with the Son.",
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-38",
+      "title": "Tractates on John 38 on john 8:25",
+      "excerpt": "And savoring as these men always did of the earth, and ever hearing and answering according to the flesh, what did they say to Him? \"Who art thou?\" For when thou saidst, \"If ye believe not that I am,\" thou didst not tell us what thou wert. Who art thou, that we may believe? He answered \"The Beginning.\" Here is the existence that always is. The beginning cannot be changed: the beginning is self-abiding and all-originating; that is, the beginning, to which it has been said, \"But thou Thyself art the same, and Thy years shall not fail.\" \"The beginning,\" He said, \"for so I also speak to you.\" Believe me to be the beginning, that ye may not die in your sins. For just as if by saying, \"Who art thou?\" they had said nothing else than this, What shall we believe thee to be? He replied, \"The beginning;\" that is, Believe me to be the \"beginning.\"\r\n\r\nFor in the Greek expression we discern what we cannot in the Latin. For in Greek the word \"beginning\" is of the feminine gender, just as with us \"law\" is of the feminine gender, while it is of the masculine with them; or as \"wisdom\" is of the feminine gender with both. It is the custom of speech, therefore, in different languages to vary the gender of words, because in things themselves there is no place for the distinction of sex. For wisdom is not really female, since Christ is the Wisdom of God, and Christ is termed of the masculine gender, wisdom of the feminine. When then the Jews said, \"Who art thou?\" He, who knew that there were some there who should yet believe, and therefore had said, \"Who art thou\" that so they might come to know what they ought to believe regarding Him, replied, \"The beginning:\" not as if He said, I am the beginning; but as if He said, Believe me to be the beginning.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:augustine:john.8.25:2e969ea8:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-38",
+      "title": "Tractates on John 38 on john 8:25",
+      "excerpt": "Just as if He had wished to say that He was the Truth, and to their question, \"Who art thou?\" had answered, the Truth; when to the words, \"Who art thou?\" He evidently ought to have replied, the Truth; that is, I am the Truth. But His answer had a deeper meaning, when He saw that they had put the question, \"Who art thou?\" in such a way as to mean, Having heard from thee, \"If ye believe not that I am,\" what shall we believe thee to be? To this He replied, \"The beginning:\" as if He said, Believe me to be the beginning. And He added \"for [as such] I also speak to you;\" that is, having humbled myself on your account, I have condescended to such words. For if the beginning as it is in itself had remained so with the Father, as not to receive the form of a servant and speak as man with men; how could they have believed in Him, since their weak hearts could not have heard the Word intelligently without some voice that would appeal to their senses? Therefore, said He, believe me to be the beginning; for, that you may believe, I not only am, but also speak to you.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:augustine:john.8.25:45048906:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-223a-1",
+      "title": "SERMON 223A.1 on john 8:25",
+      "excerpt": "\"In the beginning was the Word.\" That through which he made things already was. That is how he made what as yet was not. We can understand it, and rightly understand it, in the sense that heaven and earth were made in the only begotten Word itself. They were, you see, made in that through which they were made. This can be, and be understood as, the beginning in which God made heaven and earth. This Word, after all, is also the wisdom of God, about which it is said, \"You have made all things in wisdom.\" If God made all things in wisdom and his only begotten Son is without a shadow of doubt the wisdom of God, let us not doubt that whatever we have learned was made through the Son was also made in the Son. The Son himself, after all, is certainly the beginning. When the Jews were questioning him and saying, \"Who are you? He answered, \"The beginning.\" And there [in Genesis] you have, \"In the beginning God made heaven and earth.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.25:5195e22c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-53",
+      "title": "Homily on the Gospel of John 53 on john 8:25",
+      "excerpt": "\"Then said they unto Him, Who art thou?\"\r\n\r\nOh folly! After so long a time, such signs and teaching, they ask, \"Who art thou?\" What then saith Christ?\r\n\r\n\"The same that I told you from the beginning.\"\r\n\r\nWhat He saith, is of this kind; \"Ye are not worthy to hear My words at all, much less to learn who I am, for ye say all that ye do, tempting Me, and giving heed to none of My sayings. And all this I could now prove against you.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.8.25:81ae63b0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 8:25",
+      "excerpt": "After so much time, after so many miracles had been performed, they still ask Him: \"Who are You?\" So senseless, unjust, and mocking were they.\r\nThe Lord says: \"I tell you that which I have been telling you from the beginning.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.8.25:e49508b5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 8:25",
+      "excerpt": "Jesus said unto them, That I speak to you at the beginning.\r\n\r\nI am dishonoured (He says) albeit I invite unto everlasting life, unto forgiveness of sins, unto putting off of death and corruption, unto holiness, unto righteousness, unto glory, unto boasting in the sonship with God: yea I Who would crown you with all these, am counted for nought, and esteemed by you thus worthless, yea verily I am in deserved condition (He says) because I made a beginning of discourse with you, because I have spoken somewhat that could profit you, and devised to save those who were on the point of descending to such deep depravity as to aim at repaying bitter requital to Him Who hath elected to save them.\r\n\r\nSomething else besides does Christ appear to indicate to us hereby. It was right (He says) that I should not converse at all with you at the beginning but on them rather should confer this who shall most gladly rejoice in My words and without delay submit their neck to the Gospel ordinances. He means by these the multitude of the Gentiles. But while we conceive of Him as saying thus, we will guard against the words of the adversaries. For one of those who are wont to fight against Christ will haply say, \"If the Son ought not to address the Jews at the beginning, but rather the Gentiles, He missed of what was fit, by doing this rather than that.\" But we will reply, Not as repenting of His own or of the Father's Will, does the Son say thus, nor yet as having transgressed what befitted the Economy (for God would not have devised ought which did not altogether beseem to be): but by saying that not to you was it right to speak at the beginning, nor among you to lay a foundation of saving teaching, He shows that both the Father and Himself are by Nature True and Loving to man. For lo He freely gave to the unholy Jews though not worthy of it the saving word, having put in the second place the multitude of the Gentiles albeit more readily making it their aim both to believe and obey Him.\r\n\r\nWhat was it then which persuaded Him to prefer and fore-honour before the rest the stiffnecked people of the Jews? To them He made through the holy Prophets the promise of His Coming, to them was the grace due for the fathers' sake. Wherefore He also said, I was not sent but unto the lost sheep of the house of Israel, and to the Syro-phenician woman, It is not meet to take, the children's bread and to cast it to the dogs. Therefore has Israel been honoured and ranked before the Gentiles, although he had the crookeder disposition. But since he knew not the Lord of all and the Perfecter of the promised good things, the grace of the teaching departed at last to the Gentiles, whom it behoved the Lord at the beginning and first to have addressed, not in regard of the promise made to the fathers, but in regard of their innate obedience.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.8.25:58ae1516:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 8:25",
+      "excerpt": "They said therefore to Him, Who art THOU?\r\n\r\nTheir word commingled with fiercest anger proceeds from boastfulness. For they eagerly ask, not to learn and believe, but out of much madness they spring (so to speak) on Christ. For He says in more simple word, I am, not adding, God of God, nor yet ought else to indicate His inherent Glory; but in lowly wise and apart from all boasting He says only this I am, leaving it to the better instructed to add what was wanting; and they go on to wildest and unbridled madness, and from unmeasured haughtiness they all but cut short the Saviour's word not yet advanced to its completion, and so to say rebuke and interrupt Him in the middle and say, Who art THOU? This is the part of one who openly says, Dost Thou dare to think of Thyself ought greater than WE know? we know that Thou art son of the carpenter, a man low and most poor, of no note with us and altogether nought. They therefore condemn the Lord as being nought, looking only to His family after the flesh, but the Magnificence that pertains to His works, and still more His Generation from above and from the Father, whence they might specially recognize that He is by Nature God, they do not so much as admit into their mind. For who will work the things that befit God Alone? will not He surely Who is by Nature God? but Christ wrought them; He therefore was and is God, even when made Flesh for the salvation and life of all. But they whose belief is confined to their own mis-counsels, and take no account at all of our Divine and Divinely-inspired Scripture; they in regard of the very things for which they ought to give thanks, do disparage Him, knowing neither what they say, nor whereof they affirm.\r\n\r\nPunctuating therefore with emphasis at the word THOU, and throwing back what is called the acute accent, we take the word as a question with note of admiration; for they say THOU, as though, Thou Who art nothing at all, and art known by us to be so, Thou Who art mean and of mean extraction, what canst Thou say illustrious of Thyself, what worth speaking of those about Thee? For nought of such daring is foreign to Jewish madness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:origen:john.8.25:7fc32840:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 8:25",
+      "excerpt": "(tom. xix. in Joan.) It is manifest, that he, who dies in his sins, though he say that he believes in Christ, does not really believe. For he who believes in His justice does not do injustice; he who believes in His wisdom, does not act or speak foolishly; in like manner with respect to the other attributes of Christ, you will find that he who does not believe in Christ, dies in his sins: inasmuch as he comes to be the very contrary of what is seen in Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.8.25"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.8.25:ea3f16d9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 8:25",
+      "excerpt": "Next we are given the reasons that can lead them to believe. First, we see the question asked by the Jews; secondly, the answer of Christ (v 25b); and thirdly, the blindness of their understanding (v 27).\r\n\r\nSince our Lord had said, \"If you do not believe that I am\" it was left to them to ask who he was. And so they said to him, Who are you? So that we may believe: \"The poor man spoke\" (Sir 13:29).\r\n\r\nWhen he says, the source, who is also speaking to you, he gives an answer which can lead them to believe: first, because of the sublimity of his nature; secondly, because of the power he has to judge (v 26); and thirdly, because of the truthfulness of his Father (v 26b).\r\n\r\nIndeed, the sublimity of Christ's nature can lead them to believe in him, because he is the source (principium: source, beginning, origin). In Latin the word for source, principium, is neuter in gender, and so there is a question whether it is used here in the nominative or accusative case. (In Greek, it is feminine in gender and is used here in the accusative case.) Thus, according to Augustine, we should not read this as \"I am the source,\" but rather as \"Believe that I am the source,\" lest you die in your sins.\r\n\r\nThe Father is also called the source or beginning. In one sense the word \"source\" is common to the Father and the Son, insofar as they are the one source of the Holy Spirit through a common spiration. Again, the three Persons together are the source of creatures through creation. In another way, the word \"source\" is proper to the Father, insofar as the Father is the source of the Son through an eternal generation. Yet, we do not speak of many sources, just as we do not speak of many gods: \"The source is with you in the day of your power\" (Ps 109:3). Here, however, our Lord is saying that he is the source or beginning with regard to all creatures: for whatever is such by essence is the source and the cause of those things which are by participation. But, as was said, his existence is an existence by his very essence.\r\n\r\nYet because Christ possesses not only the divine nature but a human nature as well, he adds, who is also speaking to you. Man cannot hear the voice of God directly, because as Augustine says: \"Weak hearts cannot hear the intelligible word without a sensible voice.\" \"What is man that he may hear the voice of the Lord his God\" (Ex c 20). So, in order for us to hear the divine Word directly, the Word assumed flesh, and spoke to us with a mouth of flesh. Thus he says, who is also speaking to you, that is, I, who was humbled for your sakes, have come down to speak these words: \"In many and various ways God spoke to our fathers through the prophets; in these days he has spoken to us in his Son\" (Heb 1:1); \"It is the Only Begotten Son, who is in the bosom of the Father, who has made him known\" (1:18).\r\n\r\nChrysostom explains this a little differently, so that in saying, the beginning, who is also speaking to you, our Lord is reproving the Jews for their slowness to understand. For in spite of the many signs which they had seen our Lord perform, they were still impenetrable, and asked our Lord, \"Who are you?\" Our Lord then answers: I am the beginning, that is, the one who has spoken to you from the beginning. It is the same as saying: You should not have to ask who I am, because it should be clear to you by now: \"For although you should be masters by this time, you have to be taught again the first rudiments of the world of God\" (Heb 5:12).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.8.25"
     }
   ]
 }

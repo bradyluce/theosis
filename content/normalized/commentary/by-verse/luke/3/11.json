@@ -4,6 +4,24 @@
   "verseNumber": 11,
   "entries": [
     {
+      "id": "catena-luke-0499-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.3.11",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 3:10–14",
+      "excerpt": "But John’s desire when he spoke to the Publicans and soldiers, was to bring them over to a higher wisdom, for which as they were not fitted, he reveals to them commoner truths, lest if he put forward the higher they should pay no attention thereto, and be deprived of the others also.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0494-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.3.11",
@@ -40,24 +58,6 @@
       ]
     },
     {
-      "id": "catena-luke-0499-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.3.11",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 3:10–14",
-      "excerpt": "But John’s desire when he spoke to the Publicans and soldiers, was to bring them over to a higher wisdom, for which as they were not fitted, he reveals to them commoner truths, lest if he put forward the higher they should pay no attention thereto, and be deprived of the others also.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0497-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.3.11",
@@ -76,14 +76,14 @@
       ]
     },
     {
-      "id": "catena-luke-0484-v11",
+      "id": "catena-luke-0489-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.3.11",
       "topicSlugs": [],
       "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 3:10–14",
-      "excerpt": "In the preceding words of John, it is plain that the hearts of his hearers were troubled, and sought for advice from him. As it is added, And they asked him, saying, &c.",
+      "excerpt": "For because it was written in the law, Thou shalt love thy neighbour as thyself, he is proved to love his neighbour less than himself, who does not share with him in his distress, those things which are even necessary to himself. Therefore that precept is given of dividing with one’s neighbour the two coats, since if one is divided no one is clothed. But we must remark in this, of how much value are works of mercy, since of the works worthy of repentance these are enjoined before all others.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -91,6 +91,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.3.11:74424431:3"
       ]
     },
     {
@@ -102,6 +109,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 3:10–14",
       "excerpt": "Because a coat is more necessary for our use than a cloak, it belongs to the bringing forth of fruits worthy of repentance, that we should divide with our neighbours not only our superfluities but those which are absolutely necessary to us, as our coat, or the meat with which we support our bodies; and hence it follows, And he who has meat, let him do likewise.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.3.11:13514b6f:2"
+      ]
+    },
+    {
+      "id": "catena-luke-0484-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.3.11",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 3:10–14",
+      "excerpt": "In the preceding words of John, it is plain that the hearts of his hearers were troubled, and sought for advice from him. As it is added, And they asked him, saying, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -127,24 +159,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0489-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.3.11",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 3:10–14",
-      "excerpt": "For because it was written in the law, Thou shalt love thy neighbour as thyself, he is proved to love his neighbour less than himself, who does not share with him in his distress, those things which are even necessary to himself. Therefore that precept is given of dividing with one’s neighbour the two coats, since if one is divided no one is clothed. But we must remark in this, of how much value are works of mercy, since of the works worthy of repentance these are enjoined before all others.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.3.11:c2699c1a:0"
       ]
     },
     {
@@ -163,6 +184,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.3.11:741799e5:0"
       ]
     },
     {
@@ -177,6 +205,24 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0495-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.3.11",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 3:10–14",
+      "excerpt": "He commands them therefore that they exact no more than what was presented to them, as it follows, And he said unto them, Do no more than what is appointed to you. But they are called publicans who collect the public taxes, or who are the farmers of the public revenue or public property? Those also who pursue the gain of this world by traffic are denoted by the same titles, all of whom, each in his own sphere, he equally forbids to practise deceit, that so by first keeping themselves from desiring other men’s goods, they might at length come to share their own with their neighbours. It…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -202,21 +248,28 @@
       ]
     },
     {
-      "id": "catena-luke-0495-v11",
+      "id": "catena-luke-0491-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.3.11",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 3:10–14",
-      "excerpt": "He commands them therefore that they exact no more than what was presented to them, as it follows, And he said unto them, Do no more than what is appointed to you. But they are called publicans who collect the public taxes, or who are the farmers of the public revenue or public property? Those also who pursue the gain of this world by traffic are denoted by the same titles, all of whom, each in his own sphere, he equally forbids to practise deceit, that so by first keeping themselves from desiring other men’s goods, they might at length come to share their own with their neighbours. It…",
+      "excerpt": "But this place admits of a deeper meaning, for as we ought not to serve two masters, so neither to have two coats, lest one should be the clothing of the old man, the other of the new, but we ought to cast off the old man, and give to him who is naked. For one man has one coat, another has none at all, the strength therefore of the two is exactly contrary, and as it has been written that we should cast all our crimes to the bottom of the sea, so ought we to throw from us our vices and errors, and lay them upon him who has been the cause of them.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.3.11:252f9f72:0"
       ]
     },
     {
@@ -253,24 +306,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0491-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.3.11",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 3:10–14",
-      "excerpt": "But this place admits of a deeper meaning, for as we ought not to serve two masters, so neither to have two coats, lest one should be the clothing of the old man, the other of the new, but we ought to cast off the old man, and give to him who is naked. For one man has one coat, another has none at all, the strength therefore of the two is exactly contrary, and as it has been written that we should cast all our crimes to the bottom of the sea, so ought we to throw from us our vices and errors, and lay them upon him who has been the cause of them.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.3.11:233f7d1f:0"
       ]
     },
     {
@@ -289,7 +331,167 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.3.11:db93206e:0"
       ]
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.3.11:6a44e215:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-20",
+      "title": "Forty Gospel Homilies, Homily 20 on luke 3:11",
+      "excerpt": "It follows: \"But he answered and said to them: He who has two tunics, let him give to him who has none; and he who has food, let him do likewise.\" By the fact that a tunic is more necessary for our use than a cloak, it pertains to fruit worthy of repentance that we ought to share with our neighbors not only whatever external and less necessary things we have, but even those things that are very necessary to us—namely, either the food by which we live bodily, or the tunic by which we are clothed. For since it is written in the law: \"You shall love your neighbor as yourself,\" he is proven to love his neighbor less who does not share with him even those things necessary to himself in his neighbor's time of need. Therefore the precept is given about dividing two tunics with one's neighbor, because this could not be said of one tunic, since if one is divided, no one is clothed. For with half a tunic, both he who receives remains naked and he who gave remains naked. But amid these things it should be known how greatly works of mercy avail, since for fruits worthy of repentance these are commanded above all others. Hence Truth also says through itself: \"Give alms, and behold, all things are clean to you.\" Hence again he says: \"Give, and it shall be given to you.\" Hence it is written: \"Water extinguishes a burning fire, and almsgiving resists sins.\" Hence again it is said: \"Store up almsgiving in the bosom of the poor, and it will pray for you.\" Hence a good father admonishes his innocent son, saying: \"If you have much, give abundantly; if you have little, take care to impart even that little willingly.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.3.11:1c631011:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-27",
+      "title": "Forty Gospel Homilies, Homily 27 on luke 3:11",
+      "excerpt": "But behold, no one persecutes us even unto death. How then can we prove whether we love our enemies? Yet there is something that ought to be done in the peace of holy Church, by which it may become clear whether we would be able to die for love in a time of persecution. Certainly the same John says: \"He who has the substance of this world, and sees his brother in need, and closes his heart against him, how does the love of God remain in him?\" Hence also John the Baptist says: \"He who has two tunics, let him give to him who has none.\" Therefore, he who in a time of tranquility does not give his tunic for God, when will he give his life in persecution? Therefore, let the virtue of charity, that it may be unconquered in disturbance, be nourished through mercy in tranquility, so that one may first learn to spend one's possessions for almighty God, and afterward oneself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:origen:luke.3.11:b7b3da33:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-the-gospel-of-luke-23-2-3",
+      "title": "HOMILIES ON THE GOSPEL OF LUKE 23.2-3 on luke 3:11",
+      "excerpt": "To say that the person who has two coats should give one to someone who has none fits the apostles better than the crowd. To understand that this command fits the apostles more than the people, listen to what the Savior says to the apostles, \"Do not take two coats on a journey.\" Therefore, there are two garments with which each one is clothed. The command is to \"share with him who has none.\" This denotes an alternate meaning: just as we may not \"serve two masters,\" the Savior does not want us to have two coats, or to be clothed with a double garment. Otherwise, one would be the garment of the old man, the other of the new man. On the contrary, he desires that we strip ourselves of the old man and put on the new man. Up to this point, the explanation is easy.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.3.11:76b55671:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 3:11",
+      "excerpt": "John instructs three classes of people who came to him: the common class of people, tax collectors, and soldiers. He persuades the common class of people to be diligent in almsgiving, commanding that whoever has \"two garments\" should share with the one who has none. Some understand the command—that whoever has \"two garments\" should share with the one who has none—in a moral sense. Specifically, they say: the two garments signify the Spirit of Scripture and the letter; John urges the one who has both to impart them to the one who has absolutely nothing. For example, if someone understands Scripture in both respects, according to the letter and according to the spirit, let him pass it on to the one who has not, let him teach the one who does not know and give him at least the letter.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.3.11:843728c8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-2-77",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 2.77 on luke 3:11",
+      "excerpt": "The Baptist gave a fitting response to each kind of people. To the tax collectors he said that they should not exact payment beyond what was appointed. To the soldiers, that they should not make false accusations or rob anyone, by which he meant that their pay was fixed, so that wanting to have more, they could not resort to plunder. These and other precepts are appropriate for all occupations, and the practice of compassion is shared. Thus it is a common precept that the basic necessities of life must be provided for all occupations, all ages and all people. Neither the tax collector nor the soldier is exempted, neither the farmer nor the townsman, neither the rich man nor the pauper—all are commanded in common to give to the one who does not have. Compassion is the fullness of the virtues and therefore the form of the perfect virtue is placed before all. Neither should they spare their own food and clothing. Yet the measure of compassion is maintained in relation to the capacity of the human condition, so that each does not take all for himself but shares what he has with the poor.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:bede:luke.3.11:cfd35781:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 3:11",
+      "excerpt": "And he answered them, saying: He who has two tunics, let him give to him who has none; and he who has food, let him do likewise. Because a tunic is more necessary for our use than a cloak, it pertains to the fruit worthy of repentance. That we ought not only to share our exterior and less necessary things but also those very necessary to us with our neighbors, namely either the food by which we live carnally or the tunic by which we are clothed. For it is written in the law: You shall love your neighbor as yourself (Mark XII), he is convicted of loving his neighbor less who does not share with him in his necessity even in those things that are necessary to himself. Therefore, the command is given to share two tunics with a neighbor because this could not be said of one since if one tunic is divided, no one is clothed. For in a half tunic, both he who receives and he who gives remain naked. Among these things, it must be known how much the works of mercy avail, since they are particularly commanded as worthy fruits of repentance. Hence also Truth itself says: Give alms, and behold all things are clean for you.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.3.11:70f4395c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homilies-8-9",
+      "title": "COMMENTARY ON LUKE, HOMILIES 8-9 on luke 3:11",
+      "excerpt": "St. Luke has introduced three groups of people that ask John questions—the multitudes, the tax collectors and the soldiers. Just as a skillful physician applies to each sickness a suitable and fitting remedy, so also the Baptist gave to each group, representing a mode of life, useful and appropriate advice. He told the multitudes to practice mutual kindness as they strive for repentance. In the case of the tax collectors, he put an end to unrestrained taxation. Then, very wisely, he told the soldiers to oppress no one but be content with their wages.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homilies-8-9",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.3.11:81b2dc41:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv-chapter-30",
+      "title": "Against Heresies (Book IV, Chapter 30) on luke 3:11",
+      "excerpt": "And therefore has the Lord said: \"Judge not, that you be not judged: for with what judgment you shall judge, you shall be judged.\" [Matthew 7:1-2] [The meaning is] not certainly that we should not find fault with sinners, nor that we should consent to those who act wickedly; but that we should not pronounce an unfair judgment on the dispensations of God, inasmuch as He has Himself made provision that all things shall turn out for good, in a way consistent with justice. For, because He knew that we would make a good use of our substance which we should possess by receiving it from another, He says, \"He that has two coats, let him impart to him that has none; and he that has meat, let him do likewise.\" [Luke 3:11] And, \"For I was an hungered, and you gave Me meat; I was thirsty, and you gave Me drink; I was naked and you clothed Me.\" [Matthew 25:35-36] And, \"When you do your alms, let not your left hand know what your right hand does.\" [Matthew 6:3] And we are proved to be righteous by whatsoever else we do well, redeeming, as it were, our property from strange hands.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
+    },
+    {
+      "id": "hcf:tertullian:luke.3.11:5891ed1f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:of-patience",
+      "title": "Of Patience on luke 3:11",
+      "excerpt": "Who fears not to lose, finds it not irksome to give. Else how will one, when he has two coats, give the one of them to the naked, unless he be a man likewise to offer to one who takes away his coat his cloak as well? How shall we fashion to us friends from mammon, if we love it so much as not to put up with its loss? We shall perish together with the lost mammon.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.3.11"
     }
   ]
 }

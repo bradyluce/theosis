@@ -55,24 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3483-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.24.42",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 24:41–44",
-      "excerpt": "To convey therefore the truth of His resurrection, He condescends not only to be touched by His disciples, but to eat with them, that they might not suspect that His appearance was not actual, but only imaginary. Hence it follows, And when he had eaten before them, he took the remnant, and gave to them. He ate indeed by His power, not from necessity. The thirsty earth absorbs water in one way, the burning sun in another way, the one from want, the other from power.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-of-nyssa:luke.24.42:d11b732d:0"
       ]
     },
     {
@@ -112,6 +101,24 @@
       ]
     },
     {
+      "id": "catena-luke-3483-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.24.42",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 24:41–44",
+      "excerpt": "To convey therefore the truth of His resurrection, He condescends not only to be touched by His disciples, but to eat with them, that they might not suspect that His appearance was not actual, but only imaginary. Hence it follows, And when he had eaten before them, he took the remnant, and gave to them. He ate indeed by His power, not from necessity. The thirsty earth absorbs water in one way, the burning sun in another way, the one from want, the other from power.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-3485-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.24.42",
@@ -127,7 +134,186 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.24.42:b6f00f26:1"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.24.42:bf834618:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-chapter-24",
+      "title": "COMMENTARY ON LUKE, CHAPTER 24 on luke 24:42",
+      "excerpt": "To produce in them a more firmly settled faith in his resurrection, he asked for something to eat. They brought a piece of broiled fish, which he took and ate in the presence of them all. He did this only to show them that the one risen from the dead was the same one who ate and drank with them during the whole previous period of time when he talked with them as a man, according to the prophet's voice. He intended them to perceive that the human body certainly does need sustenance of this kind but a spirit does not.… The power of Christ surpasses human inquiry. It is not on the level of the understanding of ordinary events. He ate a piece of fish because of the resurrection. The natural consequences of eating by no means followed in the case of Christ, as the unbeliever might object, knowing that whatsoever enters the mouth must necessarily come out into the drain. The believer will not admit these quibbles into his mind but leaves the matter to the power of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-chapter-24",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:bede:luke.24.42:8966f90a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 24:42",
+      "excerpt": "Then they offered him a piece of broiled fish, and a honeycomb. And when he had eaten before them, he took the remains and gave them to them. What do we believe the broiled fish to signify, if not the Mediator between God and men, himself suffering as a man? For he deigned to hide in the waters of the human race and willed to be caught in the snare of our death, and as it were, to be roasted by the fire of his passion. But he who deigned to become a broiled fish in his passion, was to us a honeycomb in his resurrection. Or does the one who willed in the broiled fish to symbolize the tribulations of his passion, in the honeycomb wish to express both natures of his person? For the honeycomb is honey in wax. The honey in the wax is divinity in humanity. Thus, the Redeemer manifests his own, so that he might lay out for us the path to follow. For behold, he wished to join a honeycomb with his broiled fish because assuredly he receives into eternal rest in his body those who here endure tribulations for God and do not withdraw from the love of interior sweetness. When a honeycomb is taken with a broiled fish, it means that those who here take on affliction for the truth are there satisfied with true sweetness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:bede:luke.24.42:c68b29ed:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 24:42",
+      "excerpt": "But mystically, the broiled fish of which Christ ate signifies the sufferings of Christ. For He having condescended to lie in the waters of the human race, was willing to be taken by the hook of our death, and was as it were burnt up by anguish at the time of His Passion. But the honeycomb was present to us at the resurrection. By the honeycomb He wished to represent to us the two natures of His person. For the honeycomb is of wax, but the honey in the wax is the Divine nature in the human.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.24.42:7466e00a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 24:42",
+      "excerpt": "The foods He consumed seem to have a certain hidden meaning as well. By eating \"a piece of broiled fish,\" the Lord indicates that by the fire of His Divinity He broiled our nature, which was swimming in the salt sea of this life, dried up all the moisture clinging to it from the deep waters, and especially from the waves, and thus made it divine food, rendering what was formerly unclean into a morsel pleasing to God. This is signified by the honeycomb, that is, the present sweetness of our nature, which was formerly rejected. Or, I also think that \"broiled fish\" signifies the active life, which by means of the coals of the desert and of silence destroys in us the excess of moisture and fatness, while \"honeycomb\" signifies knowledge or contemplation, since the words of God are sweet (Ps. 19:10). However, there is the honey of drones — pagan wisdom, and there is the honey of bees — divine wisdom, and the bee is Christ. Although it is small in size, for the word is brief and weak in power, since Paul preaches not with wisdom of words, lest the cross be made void (1 Cor. 1:17), nevertheless it is beloved by kings and common people alike, who use its labors for the health of their souls.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:augustine:luke.24.42:52bad328:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-229j-3",
+      "title": "SERMON 229J.3 on luke 24:42",
+      "excerpt": "While they were still flustered for joy, they were rejoicing and doubting at the same time. They were seeing and touching, and scarcely believing. What a tremendous favor grace has done us! We have neither seen nor touched, and we have believed. While they were still flustered for joy, he said, \"Have you got here anything to eat? Certainly you can believe that I am alive and well if I join you in a meal.\" They offered him what they had: a portion of grilled fish. Grilled fish means martyrdom, faith proved by fire. Why is it only a portion? Paul says, \"If I deliver my body to be burned, but have not love, I gain nothing.\" Imagine a complete body of martyrs. Some suffer because of love, while others suffer out of pride. Remove the pride portion, offer the love portion. That is the food for Christ. Give Christ his portion. Christ loves the martyrs who suffered out of love.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.24.42:5e269623:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 24:42",
+      "excerpt": "But some one will say, If we allow that our Lord ate after His resurrection, let us also grant that all men will after the resurrection take the nourishment of food. But these things which for a certain purpose are done by our Saviour, are not the rule and measure of nature, since in other things He has purposed differently. For He will raise our bodies, not defective but perfect and incorrupt, who yet left on His own body the prints which the nails had made, and the wound in His side, in order to show that the nature of His body remained the same after the resurrection, and that He was not changed into another substance.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.24.42:c38405c4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-24",
+      "title": "Forty Gospel Homilies, Homily 24 on luke 24:42",
+      "excerpt": "In the midst of these things, both yesterday's reading of the holy Gospel and today's admonishes us that we ought to carefully consider why our Lord and Redeemer is recorded to have eaten roasted fish after his resurrection. For what is repeated in deed is not without mystery. For in this reading he ate bread and roasted fish, but in that which was read yesterday he ate with the roasted fish also a honeycomb. What do we believe the roasted fish signifies, except the Mediator himself between God and men who suffered? For he deigned to hide in the waters of the human race, he willed to be caught, caught in the snare of our death, and was as it were roasted by tribulation at the time of his passion. But he who deigned to become a roasted fish in his passion, became a honeycomb for us in his resurrection. Or did he who wished to prefigure the tribulation of his passion in the roasted fish, wish to express both natures of his person in the honeycomb? For a honeycomb is honey in wax, but honey in wax is divinity in humanity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:ignatius-of-antioch:luke.24.42:d7341864:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ignatius-of-antioch",
+      "workId": "hcf:work:ignatius-of-antioch:epistle-of-ignatius-to-the-smyrnaeans",
+      "title": "Epistle of Ignatius to the Smyrnaeans on luke 24:42",
+      "excerpt": "For I know that after His resurrection also He was still possessed of flesh, and I believe that He is so now. When, for instance, He came to those who were with Peter, He said to them, \"Lay hold, handle Me, and see that I am not an incorporeal spirit.\" And immediately they touched Him, and believed, being convinced both by His flesh and spirit. For this cause also they despised death, and were found its conquerors. And after his resurrection He did eat and drink with them, as being possessed of flesh, although spiritually He was united to the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c108"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:leo-the-great:luke.24.42:2cad17e6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "leo-the-great",
+      "workId": "hcf:work:leo-the-great:tome-5",
+      "title": "TOME 5 on luke 24:42",
+      "excerpt": "The resurrection of the Lord was truly the resurrection of a real body, because no other person was raised than he who had been crucified and died. What else was accomplished during that interval of forty days than to make our faith entire and clear of all darkness? For a while, he spoke with his disciples and remained with them, ate with them and allowed himself to be felt with careful and inquisitive touch by those who were under the influence of doubt. This was his purpose in going in to them when the doors were shut. He gave them the Holy Ghost by his breath. After giving them the light of intelligence, he opened the secrets of holy Scripture. In his same person, he showed them the wound in the side, the prints of the nails and all the fresh tokens of the passion. He said, \"See my hands and feet. It is I myself. Handle me and see. A spirit does not have flesh and bones, as you see that I have.\" He did all this so that we might acknowledge that the properties of the divine and the human nature remain in him without causing a division. We now may know that the Word is not what the flesh is. We may now confess that the one Son of God is Word and flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tome-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c461"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
+    },
+    {
+      "id": "hcf:tertullian:luke.24.42:f8ce410b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:de-corona",
+      "title": "De Corona on luke 24:42",
+      "excerpt": "Yes, and besides the figure, there is contumely with ready lip, and dishonour, and infamy, and the ferocity involved in the cruel things which then disfigured and lacerated the temples of the Lord, that you may now be crowned with laurel, and myrtle, and olive, and any famous branch, and which is of more use, with hundred-leaved roses too, culled from the garden of Midas, and with both kinds of lily, and with violets of all sorts, perhaps also with gems and gold, so as even to rival that crown of Christ which He afterwards obtained. For it was after the gall He tasted the honeycomb and He was not greeted as King of Glory in heavenly places till He had been condemned to the cross as King of the Jews, having first been made by the Father for a time a little less than the angels, and so crowned with glory and honour.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.24.42"
     }
   ]
 }

@@ -4,6 +4,24 @@
   "verseNumber": 8,
   "entries": [
     {
+      "id": "catena-mark-0206-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.8",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:6–12",
+      "excerpt": "Both therefore fell down before the Lord, those who had the plagues of bodily diseases, and those who were vexed by unclean spirits. The sick did this simply with the intention of obtaining health, but the demoniacs, or rather the devils within them, because under the mastery of a fear of God they were compelled not only to fall down before Him, but also to praise His majesty; wherefore it goes on, And they cried out, saying, Thou art the Son of God. And here we must wonder at the blindness of the Arians, who, after the glory of His resurrection, deny the Son of God, Whom the devils confess…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0200-v8",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.8",
@@ -55,24 +73,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0206-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.8",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:6–12",
-      "excerpt": "Both therefore fell down before the Lord, those who had the plagues of bodily diseases, and those who were vexed by unclean spirits. The sick did this simply with the intention of obtaining health, but the demoniacs, or rather the devils within them, because under the mastery of a fear of God they were compelled not only to fall down before Him, but also to praise His majesty; wherefore it goes on, And they cried out, saying, Thou art the Son of God. And here we must wonder at the blindness of the Arians, who, after the glory of His resurrection, deny the Son of God, Whom the devils confess…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.3.8:579ce786:0"
       ]
     },
     {
@@ -84,42 +91,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:6–12",
       "excerpt": "But the soldiers of Herod the king are called Herodians, because a certain new heresy had sprung up, which asserted that Herod was the Christ. For the prophecy of Jacob intimated, that when the princes of Judah failed, then Christ should come; because therefore in the time of Herod none of the Jewish princes remained, and he, an alien, was the sole ruler, some thought that he was the Christ, and set on foot this heresy. These, therefore, were with the Pharisees trying to kill Christ.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0203-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.8",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:6–12",
-      "excerpt": "At the same time again, He goes away, that by quitting the ungrateful He might do good to more, for many followed him, and he healed them. For there follows, And a great multitude from Galilee, &c. Syrians and Sidonians, being foreigners, receive benefit from Christ; but His kindred the Jews persecute Him: thus there is no profit in relationship, if there be not a similarity in goodness.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0205-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.8",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:6–12",
-      "excerpt": "Consider then how He hid His glory, for He begs for a little ship, lest the crowd should hurt Him, so that entering into it, He might remain unharmed. It follows, As many as had scourges, &c. But he means by scourges, diseases, for God scourges us, as a father does His children.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -145,7 +116,74 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.3.8:0ecae4f2:2"
       ]
+    },
+    {
+      "id": "catena-mark-0203-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.8",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:6–12",
+      "excerpt": "At the same time again, He goes away, that by quitting the ungrateful He might do good to more, for many followed him, and he healed them. For there follows, And a great multitude from Galilee, &c. Syrians and Sidonians, being foreigners, receive benefit from Christ; but His kindred the Jews persecute Him: thus there is no profit in relationship, if there be not a similarity in goodness.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.3.8:77633730:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0205-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.8",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:6–12",
+      "excerpt": "Consider then how He hid His glory, for He begs for a little ship, lest the crowd should hurt Him, so that entering into it, He might remain unharmed. It follows, As many as had scourges, &c. But he means by scourges, diseases, for God scourges us, as a father does His children.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.3.8:87d75319:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:8",
+      "excerpt": "Even the Tyrians and Sidonians received benefit, despite being foreigners. Meanwhile His own kinsmen persecuted Him. So there is no benefit in kinship if there is no good character! Here even strangers came to Christ from afar, while the Jews persecuted Him who had come to them. On the contrary, those who went out from their homes and from their fatherland, that is, from the carnal way of life, follow Him; and therefore their wounds are healed, that is, the sins that wound the conscience, and the unclean spirits are driven out.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.8"
     }
   ]
 }

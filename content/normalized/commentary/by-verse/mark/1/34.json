@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.34:cdc7ef9c:1"
       ]
     },
     {
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.34:c593e365:1"
       ]
     },
     {
@@ -91,6 +105,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.34:53d2ddbd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:34",
+      "excerpt": "He healed \"many,\" it says instead of \"all,\" because all constitute many; or: He did not heal all because some proved to be unbelievers who were not healed on account of their unbelief, but He healed \"many\" of those brought, that is, those who had faith. He did not allow the demons to speak so that, as I said, He might teach us not to believe them, even if they speak the truth. Otherwise, if they find someone fully trusting them, what will they not do, the accursed ones, mixing falsehood with truth! So also Paul forbade the divining spirit from saying: \"These men are servants of the Most High God\"; the Holy Man did not wish to hear testimony and witness from unclean lips.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.34"
+    },
+    {
+      "id": "hcf:bede:mark.1.34:170fc33d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:34",
+      "excerpt": "And he cast out many demons, etc. Luke writes more openly about these things: \"Indeed, demons were coming out of many, crying out and saying: 'You are the Son of God.' And he rebuking them, would not allow them to speak, because they knew him to be the Christ\" (Luke IV). Therefore the demons confessed the Son of God; and they knew him to be the Christ, because the devil knew him as a man fatigued by a forty-day fast, but could not ascertain by temptation whether he was also the Son of God; now through the power of signs he either understood or rather suspected he was the Son of God. He did not persuade the Jews to crucify him because he thought he was neither Christ nor the Son of God, but because he did not foresee that he would be damned by his death. Indeed, the Apostle says about this mystery hidden from ages that none of the rulers of this age knew it. For if they had known, they would never have crucified the Lord of glory (1 Cor. II). But the Psalmist makes clear why the Lord prevents demons from speaking, saying: \"To the sinner, however, God said: Why do you declare my statutes and take my covenant in your mouth? You have hated discipline\" (Psalm XLIX), and so on. Lest anyone following the preacher hears the errant. For the devil is an evil teacher, who often mixes falsehood with truth, so as to cover the testimony of deceit with the appearance of truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.34"
+    },
+    {
+      "id": "catena-mark-0107-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.34",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:32–34",
+      "excerpt": "And Luke does not contradict this, when he says, that devils came out of many, crying out and saying, Thou art Christ the Son of God: (Luke 4:41) for he subjoins, And he rebuking them, suffered them not to speak; for Mark, who passes over many things for the sake of brevity, speaks about what happened subsequently to the abovementioned words.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.34:b9175ba0:0"
       ]
     },
     {
@@ -127,24 +200,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0107-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.34",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:32–34",
-      "excerpt": "And Luke does not contradict this, when he says, that devils came out of many, crying out and saying, Thou art Christ the Son of God: (Luke 4:41) for he subjoins, And he rebuking them, suffered them not to speak; for Mark, who passes over many things for the sake of brevity, speaks about what happened subsequently to the abovementioned words.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-augustine:mark.1.34:e57ad51a:0"
       ]
     },
     {
@@ -163,6 +225,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.34:9987793e:0"
       ]
     }
   ]

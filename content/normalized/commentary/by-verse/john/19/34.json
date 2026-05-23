@@ -4,6 +4,24 @@
   "verseNumber": 34,
   "entries": [
     {
+      "id": "catena-john-2429-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.34",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:31–37",
+      "excerpt": "He that saw it knoweth; let him that saw not believe his testimony. He gives testimonies from the Scriptures to each of these two things he relates. After, they brake not His legs, He adds, For these things were done, that the Scripture should be fulfilled, A bone of Him shall not be broken, a commandment which applied to the sacrifice of the paschal lamb under the old law, which sacrifice foreshadowed our Lord’s. Also after, One of the soldiers with a spear opened His side, then follows another Scripture testimony; And again another Scripture saith, They shall look on Him whom they pierced,…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-120-c19-v34",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.34",
@@ -23,60 +41,6 @@
       ]
     },
     {
-      "id": "catena-john-2419-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.34",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:31–37",
-      "excerpt": "The Jews who strained at a gnat and swallowed a camel, after their audacious wickedness, reason scrupulously about the day: The Jews therefore because it was the preparation, that the bodies should not remain upon the cross on the sabbath.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2421-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.34",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:31–37",
-      "excerpt": "Not in order to take away the legs, but to cause death, that they might be taken down from the cross, and the feast clay not be defiled by the sight of such horrid torments.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2423-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.34",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:31–37",
-      "excerpt": "How forcible is truth: their own devices it is that accomplish the fulfilment of prophecy: Then came the soldiers and brake the legs of the first, and of the other which was crucified with Him. But when they came to Jesus, and saw that He was dead already, they brake not His legs: but one of the soldiers with a spear pierced His side.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2425-v34",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.34",
@@ -92,17 +56,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.34:3f729d1e:0"
       ]
     },
     {
-      "id": "catena-john-2426-v34",
+      "id": "catena-john-2421-v34",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.34",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "This being the source whence the holy mysteries are derived, when thou approachest the awful cup, approach it as if thou wert about to drink out of Christ’s side.",
+      "excerpt": "Not in order to take away the legs, but to cause death, that they might be taken down from the cross, and the feast clay not be defiled by the sight of such horrid torments.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -131,14 +102,50 @@
       ]
     },
     {
-      "id": "catena-john-2429-v34",
+      "id": "catena-john-2423-v34",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.34",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "He that saw it knoweth; let him that saw not believe his testimony. He gives testimonies from the Scriptures to each of these two things he relates. After, they brake not His legs, He adds, For these things were done, that the Scripture should be fulfilled, A bone of Him shall not be broken, a commandment which applied to the sacrifice of the paschal lamb under the old law, which sacrifice foreshadowed our Lord’s. Also after, One of the soldiers with a spear opened His side, then follows another Scripture testimony; And again another Scripture saith, They shall look on Him whom they pierced,…",
+      "excerpt": "How forcible is truth: their own devices it is that accomplish the fulfilment of prophecy: Then came the soldiers and brake the legs of the first, and of the other which was crucified with Him. But when they came to Jesus, and saw that He was dead already, they brake not His legs: but one of the soldiers with a spear pierced His side.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2419-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.34",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:31–37",
+      "excerpt": "The Jews who strained at a gnat and swallowed a camel, after their audacious wickedness, reason scrupulously about the day: The Jews therefore because it was the preparation, that the bodies should not remain upon the cross on the sabbath.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2426-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.34",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:31–37",
+      "excerpt": "This being the source whence the holy mysteries are derived, when thou approachest the awful cup, approach it as if thou wert about to drink out of Christ’s side.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -167,14 +174,14 @@
       ]
     },
     {
-      "id": "catena-john-2422-v34",
+      "id": "catena-john-2427-v34",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.34",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "For it was commanded in the Law that the sun should not set on the punishment of any one; or they were unwilling to appear tormentors and homicides on a feast day.",
+      "excerpt": "Shame then upon them who mix not water with the wine in the holy mysteries: they seem as if they believed not that the water flowed from the side. Had blood flowed only, a man might have said that there was some life left in the body, and that that was why the blood flowed. But the water flowing is an irresistible miracle, and therefore the Evangelist adds, And he that saw it bare record.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -182,6 +189,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.19.34:7b0fb6bc:0"
       ]
     },
     {
@@ -203,14 +217,14 @@
       ]
     },
     {
-      "id": "catena-john-2427-v34",
+      "id": "catena-john-2422-v34",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.34",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-john",
       "title": "On John 19:31–37",
-      "excerpt": "Shame then upon them who mix not water with the wine in the holy mysteries: they seem as if they believed not that the water flowed from the side. Had blood flowed only, a man might have said that there was some life left in the body, and that that was why the blood flowed. But the water flowing is an irresistible miracle, and therefore the Evangelist adds, And he that saw it bare record.",
+      "excerpt": "For it was commanded in the Law that the sun should not set on the punishment of any one; or they were unwilling to appear tormentors and homicides on a feast day.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -219,6 +233,312 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.19.34:f1aee0bf:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-120",
+      "title": "Tractates on John 120 on john 19:34",
+      "excerpt": "A suggestive word was made use of by the evangelist, in not saying pierced, or wounded His side, or anything else, but \"opened;\" that thereby, in a sense, the gate of life might be thrown open, from whence have flowed forth the sacraments of the Church, without which there is no entrance to the life which is the true life. That blood was shed for the remission of sins; that water it is that makes up the health-giving cup, and supplies at once the layer of baptism and water for drinking. This was announced beforehand, when Noah was commanded to make a door in the side of the ark, whereby the animals might enter which were not destined to perish in the flood, and by which the Church was prefigured. Because of this, the first woman was formed from the side of the man when asleep, and was called Life, and the mother of all living. Truly it pointed to a great good, prior to the great evil of the transgression (in the guise of one thus lying asleep). This second Adam bowed His head and fell asleep on the cross, that a spouse might be formed for Him from that which flowed from the sleeper's side. O death, whereby the dead are raised anew to life! What can be purer than such blood? What more health-giving than such a wound?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.34:03cfb7a5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-85",
+      "title": "Homily on the Gospel of John 85 on john 19:34",
+      "excerpt": "But the Jews, on the other hand, who swallowed the camel and strained at the gnat, having wrought so atrocious a deed, are very precise concerning the day. \"Because it was the Preparation, that the bodies should not remain upon the cross - they besought Pilate that their legs might be broken.\" Seest thou how strong a thing is truth? By means of the very things which are the objects of their zeal, prophecy is fulfilled, for by occasion of those things, this plain prediction, unconnected with them, receives its accomplishment. For the soldiers when they came, brake the legs of the others, but not those of Christ. Yet these to gratify the Jews pierced His side with a spear, and now insulted the dead body. O abominable and accursed purpose! Yet, beloved, be not thou confounded, be not thou desponding; for the things which these men did from a wicked will, fought on the side of the truth. Since there was a prophecy, saying, (from this circumstance, \"They shall look on Him whom they pierced.\" (Zech. xii. 10.) And not this only, but the deed then dared was a demonstration of the faith, to those who should afterwards disbelieve; as to Thomas, and those like him. With this too an ineffable mystery was accomplished. For \"there came forth water and blood.\" Not without a purpose, or by chance, did those founts come forth, but because by means of these two together the Church consisteth. And the initiated know it, being by water indeed regenerate, and nourished by the Blood and the Flesh. Hence the Mysteries take their beginning; that when thou approachest to that awful cup, thou mayest so approach, as drinking from the very side.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.34:4fc9a5fb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:34",
+      "excerpt": "Although they did not break the legs of Jesus, nevertheless, to please the Jews they pierced Him, and blood and water flowed out. And this is wondrous. They thought to mock even the dead body, but the mockery turns into a miracle for them. It is also worthy of wonder that blood flows from a dead body. However, someone among the skeptics will say that probably there was still some vital force remaining in the body. But when water also flowed out, the miracle is indisputable. This did not happen without reason, but because life in the Church begins and continues through these two things: by water we are born, and by the Blood and Body we are nourished. Therefore, when you approach the cup of communion of the Blood of Christ, dispose yourself as though you were drinking from the very side.\r\nNote, if you will, how through the pierced rib the wound of the rib, that is, of Eve, is healed. There Adam, having fallen asleep, lost a rib; and here the Lord, having fallen asleep, gives His rib to the soldier. The soldier's spear is a figure of the sword that turned every way and drove us out of paradise (Gen. 3:24). And since everything that revolves does not stop in its movement until it strikes against something, the Lord, showing that He will stop that sword, presents His rib to the soldier's sword, so that it would be clear to us that just as the soldier's spear, having struck against the rib, came to a stop, so too the flaming sword will come to a stop and will no longer terrify with its turning or bar the entrance into paradise.\r\nLet the Arians be put to shame, who in the sacrament of communion do not add water to the wine. For they, it seems, do not believe that water also flowed from the side, which is more wondrous, but believe that only blood flowed out, and thereby they diminish the greatness of the miracle. For the blood shows that the Crucified One is a man, while the water shows that He is above man, namely, God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:hcf-ambrosian-hymn-writer:john.19.34:b567a618:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ambrosian-hymn-writer",
+      "workId": "hcf:work:hcf-ambrosian-hymn-writer:easter-hymn-at-the-lamb-s-high-feast-1-5",
+      "title": "EASTER HYMN, AT THE LAMB'S HIGH FEAST 1-5 on john 19:34",
+      "excerpt": "At the Lamb's high feast we sing\r\nPraise to our victorious King,\r\nWho has washed us in the tide\r\nFlowing from his pierced side.\r\nPraise we him whose love divine\r\nGives the guests his blood for wine,\r\nGives his body for the feast,\r\nLove the victim, love the priest.\r\nWhere the Paschal blood is poured,\r\nDeath's dark angel sheathes his sword;\r\nIsrael's hosts triumphant go\r\nThrough the wave that drowns the foe.\r\nChrist, the Lamb whose blood was shed,\r\nPaschal victim, Paschal bread;\r\nWith sincerity and love\r\nEat we manna from above.\r\nMighty victim from the sky,\r\nPowers of hell beneath you lie;\r\nDeath is conquered in the fight;\r\nYou have brought us life and light.\r\nAlleluia!",
+      "takeaway": "",
+      "sourceId": "hcf:source:easter-hymn-at-the-lamb-s-high-feast-1-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c500"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.19.34:937df040:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-2",
+      "title": "The Instructor Book 2 on john 19:34",
+      "excerpt": "The sacred vine produced the prophetic cluster. This was a sign to them, after they had been trained from wandering to [find] their rest. The sacred vine represented the great cluster of the Word, bruised for us. For the blood of the grape—that is, the Word—desired to be mixed with water, as his blood is mingled with salvation. And the blood of the Lord is twofold. For there is the blood of his flesh, by which we are redeemed from corruption. And there is the spiritual blood, that by which we are anointed. And to drink the blood of Jesus is to become a partaker of the Lord's immortality with the Spirit as the enervating principle of the Word, as blood is of flesh. Accordingly, as wine is blended with water, so is the Spirit with humankind. And the one, the mixture of wine and water, nourishes the faith; while the other, the Spirit, brings us to immortality. And the mixture of both, of the water and of the Word, is called Eucharist, renowned and glorious grace. And they who by faith partake of it are sanctified both in body and soul. For the Father's will has mystically compounded the divine mixture, man, by the Spirit and the Word. For in truth, the spirit is joined to the soul, which is inspired by it. And the flesh, by reason of which the Word became flesh, is joined to the Word.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:cyril-of-jerusalem:john.19.34:d681cf64:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-jerusalem",
+      "workId": "hcf:work:cyril-of-jerusalem:catechetical-lecture-13-21",
+      "title": "Catechetical Lecture 13:21 on john 19:34",
+      "excerpt": "The beginning of signs under Moses was blood and water. And the last of all Jesus' signs was the same. First, Moses changed the river into blood. And Jesus at the last gave forth from his side water with blood.… In the Gospels, the power of saving baptism happens in two ways: one is granted through water to the illuminated, a second is granted to holy martyrs in persecutions through their own blood. Since this is so, blood and water came out of that saving Side to confirm the grace of the confession made for Christ, whether in baptism or martyrdom.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c386"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:john.19.34:10bf2101:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-20-11",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 20.11 on john 19:34",
+      "excerpt": "\"There came forth blood and water,\" which is his church, and it is built on him, just as [in the case of] Adam, whose wife was taken from his side. Adam's rib is his wife, and the blood of our Lord is his church. From Adam's rib there was death, but from our Lord's rib, life. The olive tree [symbolizes] the mystery of Christ, from which spring forth milk, water and oil; milk for the children, water for the youths and oil for the sick. The olive tree gave water and blood through its death, [just as] the Messiah gave these through his death.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-20-11",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:john.19.34:ecef1ad8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:fragments-dogmatic-and-historical",
+      "title": "Fragments - Dogmatic and Historical on john 19:34",
+      "excerpt": "The body of the Lord presented both these to the world, the sacred blood and the holy water.\r\n\r\nAnd His body, though dead after the manner of man, possesses in it great power of life. For streams which flow not from dead bodies flowed forth from Him, viz., blood and water; in order that we might know what power for life is held by the virtue that dwelt in His body, so as that it appears not to be dead like others, and is able to shed forth for us the springs of life.\r\n\r\nAnd not a bone of the Holy Lamb is broken, this figure showing us that suffering toucheth not His strength. For the bones are the strength of the body",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:john.19.34:c1eacf05:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv",
+      "title": "Against Heresies Book IV on john 19:34",
+      "excerpt": "Moreover, how could the Lord, with any justice, if He belonged to another father, have acknowledged the bread to be His body, while He took it from that creation to which we belong, and affirmed the mixed cup to be His blood? And why did He acknowledge Himself to be the Son of man, if He had not gone through that birth which belongs to a human being? How, too, could He forgive us those sins for which we are answerable to our Maker and God? And how, again, supposing that He was not flesh, but was a man merely in appearance, could He have been crucified, and could blood and water have issued from His pierced side? What body, moreover, was it that those who buried Him consigned to the tomb? And what was that which rose again from the dead?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:hcf-jacob-of-serugh:john.19.34:48f37825:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-jacob-of-serugh",
+      "workId": "hcf:work:hcf-jacob-of-serugh:homily-on-three-baptisms",
+      "title": "HOMILY ON THREE BAPTISMS on john 19:34",
+      "excerpt": "Christ came and opened up baptism by his cross, so that it should be a mother of life for the world in place of Eve, water and blood for the fashioning of spiritual infants flowed forth from it, and baptism became the mother of life. No previous baptism [i.e., of Moses or of John] ever gave the Holy Spirit. Only the baptism that was opened by the Son of God on the cross did so. It gives birth to children spiritually with the \"water and the blood,\" and, instead of a soul, the Holy Spirit is breathed into them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-on-three-baptisms",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c521"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:origen:john.19.34:0d8da54f:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-exodus-11-2",
+      "title": "HOMILIES ON EXODUS 11.2 on john 19:34",
+      "excerpt": "If there is anyone who, when he reads Moses, murmurs against him, and the Law which has been written according to the letter is displeasing to him because it seems incoherent in many things, Moses shows him the rock which is Christ and leads him to it that he may drink from it and quench his thirst. But this rock will not give water unless it has been struck, but when it has been struck it brings forth streams. For after Christ had been struck and crucified, he brought forth the streams of the New Testament. This is why it was said of him, \"I will the strike the shepherd and the sheep will be scattered.\" He had to be struck, therefore, for unless he had been struck and unless \"water and blood had gone out from his side,\" we all would suffer \"thirst for the word of God.\" This, therefore, is what the Apostle also understood when he said, \"They all ate the same spiritual food and drank the same spiritual drink. For they drank of the spiritual rock which followed, but the rock was Christ.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:origen:john.19.34:67c3bc97:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-140",
+      "title": "COMMENTARY ON MATTHEW 140 on john 19:34",
+      "excerpt": "Pilate sought to gratify the whole people who had said, \"Crucify, crucify him.\" He also feared a riot among the people and so did not give orders (according to the usual practice of the Romans with those who are crucified) for Jesus to be stabbed under his armpits. This is sometimes done by those who condemn people guilty of greater crimes, because greater suffering is endured by those who are not stabbed after crucifixion who end up living in very great torment sometimes even the whole night and still the whole day after. Jesus therefore, since he had not been stabbed and was expected to hang a long time on the cross and endure greater torments, prayed to the Father and was heard. Immediately on crying to the Father, he was taken. Or, as one who had the power to lay down his life, he laid it down when he wanted to.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:origen:john.19.34:d6eeed95:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:against-celsus-2-36",
+      "title": "AGAINST CELSUS 2.36 on john 19:34",
+      "excerpt": "Celsus asks whether the blood in the body of the crucified Jesus was the same as that which flows in the bodies of the immortal gods. He asks in jest, but we shall show that it was no mythic or Homeric blood that flowed from the body of Jesus.… With other dead bodies the blood congeals and pure water does not flow. But in the case of Jesus' dead body, the miraculous feature was that both blood and water flowed forth from his side.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:tertullian:john.19.34:be8d843e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on john 19:34",
+      "excerpt": "For He had come \"by means of water and blood,\" just as John has written; that He might be baptized by the water, glorified by the blood; to make us, in like manner, called by water, chosen by blood. These two baptisms He sent out from the wound in His pierced side, in order that they who believed in His blood might be bathed with the water; they who had been bathed in the water might likewise drink the blood.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:tertullian:john.19.34:2ac4f597:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on john 19:34",
+      "excerpt": "Onward even to the passion does the witness of baptism last: while He is being surrendered to the cross, water intervenes; witness Pilate's hands: when He is wounded, forth from His side bursts water; witness the soldier's lance!",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:theodoret-of-cyrrhus:john.19.34:ab169836:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theodoret-of-cyrrhus",
+      "workId": "hcf:work:theodoret-of-cyrrhus:dialogue-1",
+      "title": "DIALOGUE 1 on john 19:34",
+      "excerpt": "When the soldiers pierced the Savior's side with the lance, what flowed out of it according to the Gospel writers? Blood and water. He called the Savior's blood, therefore, the blood of a grape. For if the Lord was called a vine, and if the fruit of the vine is called wine, and if springs of blood and water poured from the Lord's side and ran over the rest of his body to the ground, then the patriarch's prophecy was reasonable and appropriate: \"He will wash his robe in wine and his garment in blood of the grape.\" For just as we call the sacramental fruit of the vine the Lord's blood after the consecration, so he called the blood of the true vine blood of the grape.",
+      "takeaway": "",
+      "sourceId": "hcf:source:dialogue-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c458"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.34:f2ff918b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:34",
+      "excerpt": "2458 To make sure that Jesus was dead one of the soldiers pierced his side with a spear. It deserves notice that he does not say \"wounded\" but \"pierced,\" that is \"opened,\" because in his side the door of eternal life is opened to us: \"After this I looked, and lo, in heaven, an open door!\" (Rev 4:1). This is the door in the side of the ark through which those animals entered who were not to perish in the flood (Gen 7).\r\n\r\nThis door is the cause of our salvation; and so, at once there came out blood and water. This is a remarkable miracle, that blood should flow from the body of a dead person where blood congeals. And if someone says that this was because the body was still warm, the flow of the water cannot be explained without a miracle, since this was pure water. This outpouring of blood and water happened so that Christ might show that he was truly human. For human beings have a twofold composition: one from the elements and the other from the humors. One of these elements is water, and blood is the main humor.\r\n\r\nAnother reason why this happened was to show that by the passion of Christ we acquire a complete cleansing from our sins and stains. We are cleansed from our sins by his blood, which is the price of our redemption: \"You know that your were ransomed from the futile ways inherited from your fathers, not with perishable things, such as silver or gold, but with the precious blood of Christ, like that of a lamb without blemish or spot\" (1 Pet 1:18). And we are cleansed from our stains by the water, which is the bath of our rebirth: \"I will sprinkle clean water upon you, and you shall be clean from all your uncleannesses\" (Ez 36:25); \"On that day there shall be a fountain opened for the house of David and the inhabitants of Jerusalem to cleanse them from sin and uncleanness\" (Zech 13:1). And so it is these two things which are especially associated with two sacraments: water with the sacrament of baptism, and blood with the Eucharist.\r\n\r\nOr, both blood and water are associated with the Eucharist because in this sacrament water is mixed with wine, although water is not of the substance of the sacrament.\r\n\r\nThis event was also prefigured: for just as from the side of Christ, sleeping on the cross, there flowed blood and water, which makes the Church holy, so from the side of the sleeping Adam there was formed the woman, who prefigured the Church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.34"
+    },
+    {
+      "id": "hcf:hcf-tyrannius-rufinus:john.19.34:6dfd872a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-tyrannius-rufinus",
+      "workId": "hcf:work:hcf-tyrannius-rufinus:commentary-on-the-apostles-creed-23",
+      "title": "COMMENTARY ON THE APOSTLES' CREED 23 on john 19:34",
+      "excerpt": "It is written that when the side of Jesus was pierced, \"he poured out blood and water.\" This has a mystical meaning. For Jesus himself had said, \"Out of his belly shall flow rivers of living water.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-apostles-creed-23",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c411"
+      ],
+      "targetVerseId": "kjva:john.19.34"
     }
   ]
 }

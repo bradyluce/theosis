@@ -4,42 +4,6 @@
   "verseNumber": 5,
   "entries": [
     {
-      "id": "catena-matt-3389-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.24.5",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 24:3–5",
-      "excerpt": "They asked Him in private, because they were great things about which they were going to ask Him. They wished to know the801 day of His coming, for the vehement desire they had to see His glory.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3390-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.24.5",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 24:3–5",
-      "excerpt": "They ask Him three things. First, The time of the destruction of Jerusalem, saying, “Tell us when shall these things be?” Secondly, The time of Christ’s coming, saying, “And what shall be the sign of Thy coming?” Thirdly, The time of the consummation of this world, saying, “And of the end of the world?”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-3391-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.24.5",
@@ -48,6 +12,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 24:3–5",
       "excerpt": "Luke speaks of one enquiry, that concerning Jerusalem, as though the disciples supposed that Christ’s coming should be then, and the end of the world should be when Jerusalem should be destroyed. Whereas Mark does not state them all to have asked concerning the destruction of Jerusalem, but Peter, James, John, and Andrew, as having more bold and free speech with Christ.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3389-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.24.5",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 24:3–5",
+      "excerpt": "They asked Him in private, because they were great things about which they were going to ask Him. They wished to know the801 day of His coming, for the vehement desire they had to see His glory.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -91,6 +73,31 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.24.5:9c03ecaa:1"
+      ]
+    },
+    {
+      "id": "catena-matt-3390-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.24.5",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 24:3–5",
+      "excerpt": "They ask Him three things. First, The time of the destruction of Jerusalem, saying, “Tell us when shall these things be?” Secondly, The time of Christ’s coming, saying, “And what shall be the sign of Thy coming?” Thirdly, The time of the consummation of this world, saying, “And of the end of the world?”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
       ]
     },
     {
@@ -109,24 +116,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3392-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.24.5",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 24:3–5",
-      "excerpt": "I think Mount Olivet to be a mystery of the Church out of the Gentiles.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.24.5:315392f7:0"
       ]
     },
     {
@@ -163,20 +159,27 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.24.5:49983368:0"
       ]
     },
     {
-      "id": "catena-matt-3388-v5",
+      "id": "catena-matt-3392-v5",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.24.5",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
+      "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 24:3–5",
-      "excerpt": "The Lord continuing His walk arrives at Mount Olivet, having by the way foretold the destruction of the temple to those disciples who had shewn and commended the buildings. When they had reached the Mount they came to Him, asking Him further of this.",
+      "excerpt": "I think Mount Olivet to be a mystery of the Church out of the Gentiles.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -200,6 +203,126 @@
         "patristic",
         "matthew"
       ]
+    },
+    {
+      "id": "catena-matt-3388-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.24.5",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 24:3–5",
+      "excerpt": "The Lord continuing His walk arrives at Mount Olivet, having by the way foretold the destruction of the temple to those disciples who had shewn and commended the buildings. When they had reached the Mount they came to Him, asking Him further of this.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.24.5:9c31929c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-75",
+      "title": "Homily on the Gospel of Matthew 75 on matthew 24:5",
+      "excerpt": "\"For many shall come in my name, saying, I am Christ, and shall deceive many.\"\r\n\r\nFor the war, saith He, shall be twofold that of the deceivers, and that of the enemies, but the former far more grievous, as coming upon them in the confusion and turmoils, and when men were terrified and troubled. For indeed great was the storm then, when the Roman power was beginning to flourish, and cities were taken, and camps and weapons were set in motion, and many were readily believed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.24.5"
+    },
+    {
+      "id": "hcf:jerome:matthew.24.5:b92130c6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 24:5",
+      "excerpt": "(Verse 5.) For many will come in my name, saying: I am the Christ, and they will deceive many. One of them is Simon the Samaritan, whom we read about in the Acts of the Apostles, who claimed to be a great power of God (Acts 8). Leaving these things aside, he also wrote among other things in his own volumes: I am the word of God, I am beautiful, I am the Paraclete, I am omnipotent, I am all things of God. But even the apostle John speaks in his epistle: You have heard that the Antichrist is coming, now many antichrists are already here (1 John 2:18). I believe that all heresiarchs are Antichrists, and they teach under the name of Christ those things which are contrary to Christ. It is not surprising if we see some being led astray by them, since the Lord has said: And many will be led astray.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.24.5"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:matthew.24.5:e85209e6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:apostolic-constitutions-book-vii-section-2-xxxii",
+      "title": "Apostolic Constitutions (Book VII), Section 2, XXXII on matthew 24:5",
+      "excerpt": "For in the last days false prophets shall be multiplied, and such as corrupt the word; and the sheep shall be changed into wolves, and love into hatred: for through the abounding of iniquity the love of many shall wax cold. For men shall hate, and persecute, and betray one another. And then shall appear the deceiver of the world, the enemy of the truth, the prince of lies, [2 Thessalonians 2:3-12] whom the Lord Jesus \"shall destroy with the spirit of His mouth, who takes away the wicked with His lips; and many shall be offended at Him. But they that endure to the end, the same shall be saved. And then shall appear the sign of the Son of man in heaven;\" [Isaiah 11:4; Matthew 24:1-51] and afterwards shall be the voice of a trumpet by the archangel; and in that interval shall be the revival of those that were asleep. And then shall the Lord come, and all His saints with Him, with a great concussion above the clouds, with the angels of His power, [Matthew 16:27] in the throne of His kingdom, to condemn the devil, the deceiver of the world, and to render to every one according to his deeds. \"Then shall the wicked go away into everlasting punishment, but the righteous shall go into life eternal,\" [Matthew 25:46] to inherit those things \"which eye has not seen, nor ear heard, nor have entered into the heart of man, such things as God has prepared for them that love Him;\" [1 Corinthians 2:9] and they shall rejoice in the kingdom of God, which is in Christ Jesus.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:matthew.24.5"
+    },
+    {
+      "id": "hcf:hcf-didache:matthew.24.5:1498cf40:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-didache",
+      "workId": "hcf:work:hcf-didache:the-didache-chapter-16",
+      "title": "The Didache, Chapter 16 on matthew 24:5",
+      "excerpt": "Watch for your life's sake. Let not your lamps be quenched, nor your loins unloosed; but be ye ready, for ye know not the hour in which our Lord cometh. But often shall ye come together, seeking the things which are befitting to your souls: for the whole time of your faith will not profit you, if ye be not made perfect in the last time. For in the last days false prophets and corrupters shall be multiplied, and the sheep shall be turned into wolves, and love shall be turned into hate; for when lawlessness increaseth, they shall hate and persecute and betray one another, and then shall appear the world-deceiver as Son of God, and shall do signs and wonders, and the earth shall be delivered into his hands, and he shall do iniquitous things which have never yet come to pass since the beginning. Then shall the creation of men come into the fire of trial, and many shall be made to stumble and shall perish; but they that endure in their faith shall be saved from under the curse itself. And then shall appear the signs of the truth; first, the sign of an out-spreading in heaven; then the sign of the sound of the trumpet; and the third, the resurrection of the dead; yet not of all, but as it is said: The Lord shall come and all His saints with Him. Then shall the world see the Lord coming upon the clouds of heaven.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:matthew.24.5"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.24.5:f4e35a3e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 24:5",
+      "excerpt": "Many, He says, will come declaring themselves to be Christs. For Dositheus the Samaritan said, \"I am that prophet foretold by Moses\" (Dt. 18:18); and Simon the Samaritan called himself the great power of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.24.5"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.24.5:184f5743:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 24:5",
+      "excerpt": "Many will come in my name, saying: I am Christ. Someone comes as sent by Christ; so the disciples came. But others are said to come in the name of Christ who say they are Christ, usurping for themselves a name that is not given to another; Philippians 2:9: He hath given him a name which is above all names. Hence many deceivers will come, who will come of themselves; but Christ did not come of himself, but from God; hence John 7:28: I am not come of myself. Although this is said specifically of the Antichrist, it can nevertheless be said of many others. Hence, because they did not adhere to the truth, they were given over to errors. And this happened in the case of Simon Magus, who wrote books and called himself the book of God, the great God, all things of God, and he seduced many. For it belongs to the foolish to be seduced, who are divided in errors, because the number of fools is infinite (Ecclesiastes 1:15). Hence truth gathers together, but error divides; and this is the danger. This can also be referred to the second coming, for these things will happen around the day of judgment.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.24.5"
     }
   ]
 }

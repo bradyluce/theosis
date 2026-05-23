@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.13.8:7a9f4046:0"
       ]
     },
     {
@@ -73,6 +80,38 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.13.8:cdf46141:1"
+      ]
+    },
+    {
+      "id": "catena-mark-1037-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.8",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:3–8",
+      "excerpt": "That is, the Romans against the Jews, which Josephus relates happened before the destruction of Jerusalem. For when the Jews refused to pay tribute, the Romans arose, in anger; but because at that time they were merciful they took indeed their spoils, but did not destroy Jerusalem. What follows shews that God fought against the Jews, for it is said, And there shall be earthquakes in divers places, and there shall be famines.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.13.8:1e9463c6:1"
       ]
     },
     {
@@ -94,22 +133,72 @@
       ]
     },
     {
-      "id": "catena-mark-1037-v8",
+      "id": "hcf:bede:mark.13.8:22461e13:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.8",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:8",
+      "excerpt": "Nation will rise against nation, and kingdom against kingdom, and there will be earthquakes in various places, and pestilences and famines. These are the beginnings of sorrows. In the Gospel of Luke, it is written: And there will be great earthquakes in various places, and pestilences and famines (Luke 21). It is known that these things happened literally before the last and most bitter pains, by which the entire province was devastated, or rather erased, during the time of the Jewish sedition. But kingdom against kingdom, and the pestilence of those whose speech spreads like cancer, and the famine of hearing the word of God, and the upheaval of the whole earth, and the separation from the true faith, can be better understood in heretics, who, fighting against each other, bring about the victory of the Church. Moreover, the Lord reveals why so many adversities were deservedly bestowed upon Jerusalem and the whole province of the Jews, by adding when he says:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.8"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.8:72f95286:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:3–8",
-      "excerpt": "That is, the Romans against the Jews, which Josephus relates happened before the destruction of Jerusalem. For when the Jews refused to pay tribute, the Romans arose, in anger; but because at that time they were merciful they took indeed their spoils, but did not destroy Jerusalem. What follows shews that God fought against the Jews, for it is said, And there shall be earthquakes in divers places, and there shall be famines.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:8",
+      "excerpt": "And it was not wars alone, but also other God-sent punishments — famine and earthquakes — which clearly showed the Jews that God Himself was waging war against them. Yet all this was only \"the beginning of sorrows,\" that is, of the calamities that awaited them.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.8"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.13.8:f3ba13aa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-35",
+      "title": "Forty Gospel Homilies, Homily 35 on mark 13:8",
+      "excerpt": "The final tribulation is preceded by many tribulations, and through the frequent evils that come before, the perpetual evils that will follow are indicated. And therefore after wars and seditions the end does not come immediately, because many evils must run before, so that they may be able to announce evil without end. But since so many signs of disturbance have been mentioned, we ought to touch briefly upon the consideration of each one, because it is necessary that we suffer some things from heaven, some from earth, some from the elements, some from men. For he says: \"Nation will rise against nation\"—behold the disturbance of men; \"there will be great earthquakes in various places\"—behold the look of wrath from above; \"there will be pestilences\"—behold the disorder of bodies; \"there will be famine\"—behold the barrenness of the earth. Because therefore all things are to be brought to an end, before the end all things are disturbed; and we who have sinned in all things are struck in all things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.13.8"
+    },
+    {
+      "id": "hcf:origen:mark.13.8:356f026a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-34",
+      "title": "COMMENTARY ON MATTHEW 34 on mark 13:8",
+      "excerpt": "Just as bodies become sick before their death if they do not suffer violence from without, and in all cases the way of separation of soul from body comes through weakness, so it happens with the whole course of the world creation. When the creation begins to decay, having as it has both beginning and end, it must grow weak before its dissolution. At this point the earth may be frequently shaken with earthquakes. The air having received some diseased contagion may become overrun with pestilence. Moreover the vital energies of the earth itself may suddenly fail and strangle its fruits. These destructive forces may pollute the regenerative capacity of all trees.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.13.8"
     }
   ]
 }

@@ -23,24 +23,6 @@
       ]
     },
     {
-      "id": "catena-john-2380-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.20",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:19–22",
-      "excerpt": "As letters are inscribed on a trophy declaring the victory, so Pilate wrote a title on Christ’s cross. And Pilate wrote a title, and put it on the cross: thus at once distinguishing Christ from the thieves with Him, and exposing the malice of the Jews in rising up against their King: And the writing was, Jesus of Nazareth, the King of the Jews.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2382-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.20",
@@ -59,14 +41,14 @@
       ]
     },
     {
-      "id": "catena-john-2383-v20",
+      "id": "catena-john-2387-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.20",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 19:19–22",
-      "excerpt": "It is probable that many Gentiles as well as Jews bad come up to the feast. So the title was written in three languages, that all might read it: And it was written in Hebrew, and Greek, and Latin.",
+      "excerpt": "O ineffable working of Divine power even in the hearts of ignorant men! Did not some hidden voice sound from within, and, if we may say so, with clamorous silence, saying to Pilate in the prophetic words of the Psalm, Alter not the inscription of the titlea? But what say ye, ye mad priests: will the title be the less true, because Jesus said, I am the King of the Jews? If that which Pilate wrote cannot be altered, can that be altered which the Truth spoke? Pilate wrote what he wrote, bceause our Lord said what He said.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -113,14 +95,14 @@
       ]
     },
     {
-      "id": "catena-john-2387-v20",
+      "id": "catena-john-2380-v20",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.20",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 19:19–22",
-      "excerpt": "O ineffable working of Divine power even in the hearts of ignorant men! Did not some hidden voice sound from within, and, if we may say so, with clamorous silence, saying to Pilate in the prophetic words of the Psalm, Alter not the inscription of the titlea? But what say ye, ye mad priests: will the title be the less true, because Jesus said, I am the King of the Jews? If that which Pilate wrote cannot be altered, can that be altered which the Truth spoke? Pilate wrote what he wrote, bceause our Lord said what He said.",
+      "excerpt": "As letters are inscribed on a trophy declaring the victory, so Pilate wrote a title on Christ’s cross. And Pilate wrote a title, and put it on the cross: thus at once distinguishing Christ from the thieves with Him, and exposing the malice of the Jews in rising up against their King: And the writing was, Jesus of Nazareth, the King of the Jews.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -128,6 +110,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ]
+    },
+    {
+      "id": "catena-john-2383-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.20",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:19–22",
+      "excerpt": "It is probable that many Gentiles as well as Jews bad come up to the feast. So the title was written in three languages, that all might read it: And it was written in Hebrew, and Greek, and Latin.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.19.20:dbac1b16:0"
       ]
     },
     {
@@ -164,7 +171,116 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.19.20:1c584fe1:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.19.20:2ca26763:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-117",
+      "title": "Tractates on John 117 on john 19:20",
+      "excerpt": "\"And Pilate wrote a title also, and put it on the cross, and the writing was, Jesus of Nazareth, the King of the Jews. This title then read many of the Jews: for the place where Jesus was crucified was nigh to the city: and it was written in Hebrew, Greek, and Latin, The King of the Jews.\" For these three languages were conspicuous in that place beyond all others: the Hebrew on account of the Jews, who gloried in the law of God; the Greek, because of the wise men among the Gentiles; and the Latin, on account of the Romans, who at that very time were exercising sovereign power over many and almost all countries.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.20"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.20:b35ef825:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-85",
+      "title": "Homily on the Gospel of John 85 on john 19:20",
+      "excerpt": "\"And Pilate wrote a title.\" At the same time requiting the Jews, and making a defense for Christ. For since, they had given Him up as worthless, and attempted to confirm this sentence by making Him share the punishment of the robbers, in order that for the future it might be in no man's power to prefer evil charges against him, or to accuse him as a worthless and wicked person, to close moreover their mouths and the mouths of all who might desire to accuse Him, and to show that they had risen up against their own King, Pilate thus placed, as on a trophy, those letters, which utter a clear voice, and show forth His Victory, and proclaim His Kingdom, though not in its completeness. And this he made manifest not in a single tongue, but in three languages; for since it was likely that there would be a mixed multitude among the Jews on account of the Feast, in order that none might be ignorant of the defense, he publicly recorded the madness of the Jews, in all the languages. For they bore malice against Him even when crucified. \"Yet what did this harm you? Nothing. For if He was a mortal and weak, and was about to become extinct, why did ye fear the letters asserting that He is the King of the Jews?\" And what do they ask? \"Say that 'he said.' For now it is an assertion, and a general sentence, but if 'he said' be added, the charge is shown to be one arising from his own rashness and arrogance.\" Still Pilate was not turned aside, but stood to his first decision. And it is no little thing that is dispensed even from this circumstance, but the whole matter. For since the wood of the cross was buried, because no one was careful to take it up, inasmuch as fear was pressing, and the believers were hurrying to other urgent matters; and since it was in after times to be sought for, and it was likely that the three crosses would lie together, in order that the Lord's might not be unknown, it was made manifest to all, first by its lying in the middle, and then by the title. For those of the thieves had no titles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.20:2722bc2c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:20",
+      "excerpt": "Pilate declares that He was not a robber, but their King, and he declares this not in one, but in three languages. For it was natural to suppose that because of the feast, many Gentiles had also come along with the Jews. Earlier the Evangelist (John 12:20–21) also mentions certain Greeks who came to see Jesus. Therefore, so that all might know of the madness of the Jews, Pilate proclaimed this about Him in all languages.\r\nThe inscription, made in three languages, hints at something higher as well, namely: it shows that the Lord is the King of practical, natural, and theological philosophy. The Roman letters serve as an image of practical philosophy, for the power of the Romans is the most courageous and active in military affairs; the Greek letters are an image of natural philosophy, for the Greeks occupied themselves with the study of nature; the Hebrew letters represent theological philosophy, for to the Hebrews was entrusted the knowledge of God. Thus, glory to Him Who through the Cross revealed Himself as possessing such a Kingdom, Who both conquered the world, and strengthened our activity, and grants the knowledge of nature, and through it leads into the innermost part of the veil, into the knowledge and contemplation of Himself, that is, theology.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.20"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.20:d44d2380:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 19:20",
+      "excerpt": "We may remark that it was very providential, and the fruit of God's inexpressible purpose, that the title that was written embraced three inscriptions ---- one in Hebrew, another in Latin, and another in Greek. For it lay open to the view, proclaiming the Kingdom of our Saviour Christ in three languages, the most widely known of all, and bringing to the crucified One the first-fruits, as it were, of the prophecy that had been spoken concerning Him. For the wise Daniel said that there was given Him glory and a Kingdom, and all nations and languages shall serve Him; and, to like effect, the holy Paul teaches us, crying out that every knee shall bow; of things in heaven, and things on earth, and things under the earth; and every tongue shall confess that Jesus Christ is Lord, to the glory of God the Father. Therefore the title proclaiming Jesus King was, as it were, the true firstfruits of the confession of tongues. And, in another sense, it accused the impiety of the Jews, and all but proclaimed expressly, to those who congregated to read it, that they had crucified their King and Lord, purblind wretches that they were, without thought of love toward Him, and sunk in crass insensibility.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.20"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.20:3a023c00:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 19:20",
+      "excerpt": "It was providential and the fruit of God's inexpressible purpose that the title was written in three languages: one in Hebrew, another in Latin and another in Greek. For it lay in plain view, proclaiming the kingdom of our Savior Christ in the most widely known of all languages … fulfilling the prophecy that had been spoken concerning him. For the wise Daniel said that there was given him glory and a kingdom and that all nations and languages shall serve him. Similarly the holy Paul teaches us, crying out that \"every knee shall bow; of things in heaven and things on earth and things under the earth. And every tongue shall confess that Jesus Christ is Lord, to the glory of God the Father.\" Therefore the title proclaiming Jesus \"king\" was, as it were, the true firstfruits of the confession of tongues.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.20"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.20:c40f554f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:20",
+      "excerpt": "2422 Next we see that the title was read, Many of the Jews read this title. The fact that it was read signifies that more are saved by faith, by reading about the passion of Christ, than were saved by actually seeing it: \"These are written that you may believe\" (20:31). Secondly, the Evangelist mentions how easy this was to read: first, because Jesus was crucified near the city, the place where Jesus was crucified was near the city, where many people passed; and secondly, because it was written in a number of languages, and it was written in Hebrew, in Latin, and in Greek, so that no one would fail to know it, and because these three languages were the most widely known. Hebrew was known because it was used in the worship of the one true God; Greek was known because it was used in the writings of the wise; and Latin was known due to the power of Rome. As Augustine says, these three tongues assumed a certain dignity by being associated with the cross of Christ. Further, the Hebrew tongue signified that by the cross of Christ those who were devout and religious were to be converted and ruled; and so were the wise, indicated by the Greek language; and so were those enjoying power, signified by the Latin language. Or, the use of Hebrew signified that Christ was to rule over theological teaching, because the knowledge of divine matters was entrusted to the Jews. The Greek signified that Christ was to rule over the knowledge of nature, for the Greeks were engaged in speculation about nature. Latin signified that Christ will rule over practical philosophy, because moral speculation was especially flourishing among the Romans. And so, all thought is brought into captivity and obedience to Christ, as we see in 2 Corinthians (10:5).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.20"
     }
   ]
 }

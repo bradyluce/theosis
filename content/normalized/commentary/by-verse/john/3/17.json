@@ -42,24 +42,6 @@
       ]
     },
     {
-      "id": "catena-john-0328-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.17",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:16–18",
-      "excerpt": "Having said, Even so must the Son of man be lifted up, alluding to His death; lest His hearer should be cast down by His words, forming some human notion of Him, and thinking of His death as an evil1, He corrects this by saying, that He who was given up to death was the Son of God, and that His death would be the source of life eternal; So God loved the world, that He gave His only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life; as if He said, Marvel not that I must be lifted up, that you may be saved: for so it seemeth good to the Father, who hath…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0333-v17",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.17",
@@ -68,6 +50,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 3:16–18",
       "excerpt": "For why is He called the Saviour of the world, but because Ho saves the world? The physician, so far as his will is concerned, heals the sick. If the sick despises or will not observe the directions of the physician, he destroys himself.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.3.17:0780d342:1"
+      ]
+    },
+    {
+      "id": "catena-john-0328-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.17",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:16–18",
+      "excerpt": "Having said, Even so must the Son of man be lifted up, alluding to His death; lest His hearer should be cast down by His words, forming some human notion of Him, and thinking of His death as an evil1, He corrects this by saying, that He who was given up to death was the Son of God, and that His death would be the source of life eternal; So God loved the world, that He gave His only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life; as if He said, Marvel not that I must be lifted up, that you may be saved: for so it seemeth good to the Father, who hath…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -165,7 +172,150 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.3.17:824e806a:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.3.17:a15fd763:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-12",
+      "title": "Tractates on John 12 on john 3:17",
+      "excerpt": "\"For God sent not His Son into the world to judge the world, but that the world through Him may be saved.\" So far, then, as it lies in the physician, He is come to heal the sick. He that will not observe the orders of the physician destroys himself. He is come a Saviour to the world: why is He called the Saviour of the world, but that He is come to save the world, not to judge the world? Thou wilt not be saved by Him; thou shalt be judged of thyself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.17"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.17:6c73c7cb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-28",
+      "title": "Homily on the Gospel of John 28 on john 3:17",
+      "excerpt": "For there are two Advents of Christ, that which has been, and that which is to be; and the two are not for the same purpose; the first came to pass not that He might search into our actions, but that He might remit; the object of the second will be not to remit, but to enquire. Therefore of the first He saith, \"I came not to condemn the world, but to save the world\"; but of the second, \"When the Son shall have come in the glory of His Father, He shall set the sheep on His right hand, and the goats on His left.\" And they shall go, these into life; and these into eternal punishment. Yet His former coming was for judgment, according to the rule of justice. Why? Because before His coming there was a law of nature, and the prophets, and moreover a written Law, and doctrine, and ten thousand promises, and manifestations of signs, and chastisements, and vengeances, and many other things which might have set men right, and it followed that for all these things He would demand account; but, because He is merciful, He for a while pardons instead of making enquiry. For had He done so, all would at once have been hurried to perdition. For \"all,\" it saith, \"have sinned, and come short of the glory of God.\" Seest thou the unspeakable excess of His lovingkindness?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.17"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.17:45d2901f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-28",
+      "title": "Homily on the Gospel of John 28 on john 3:17",
+      "excerpt": "Yet if He \"came not to judge the world,\" how is \"he that believeth not judged already,\" if the time of \"judgment\" has not yet arrived? He either means this, that the very fact of disbelieving without repentance is a punishment, (for to be without the light, contains in itself a very severe punishment,) or he announces beforehand what shall be. For as the murderer, though he be not as yet condemned by the decision of the judge, is still condemned by the nature of the thing, so is it with the unbeliever. Since Adam also died on the day that he ate of the tree; for so ran the decree, \"In the day that ye eat of the tree, ye shall die\"; yet he lived. How then \"died\" he? By the decree; by the very nature of the thing; for he who has rendered himself liable to punishment, is under its penalty, and if for a while not actually so, yet he is by the sentence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.17"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.17:0d82c877:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-28",
+      "title": "Homily on the Gospel of John 28 on john 3:17",
+      "excerpt": "Lest any one on hearing, \"I came not to judge the world,\" should imagine that he might sin unpunished, and should so become more careless, Christ stops such disregard by saying, \"is judged already\"; and because the \"judgment\" was future and not yet at hand, He brings near the dread of vengeance, and describes the punishment as already come. And this is itself a mark of great lovingkindness, that He not only gives His Son, but even delays the time of judgment, that they who have sinned, and they who believe not, may have power to wash away their transgressions.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.17"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.3.17:820de229:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 3:17",
+      "excerpt": "Since there are two comings of Christ, one that has already taken place and another that is future, concerning the first coming he says that the Son was not sent to judge the world (for if He had come for this purpose, all would have been condemned, since all have sinned, as Paul also says (Rom. 3:23)), but He came primarily to save the world. Such was His purpose. But in practice, it turned out that He condemns those who did not believe. The Law of Moses came primarily for the exposure of sin (Rom. 3:20) and the condemnation of transgressors. For it pardoned no one, but as soon as it found someone sinning in anything, it immediately imposed punishment as well. Thus, the first coming did not have as its purpose to judge, except for those who in practice did not believe, for they are already condemned; but the second coming will be expressly for the purpose of judging all and rendering to each according to his deeds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.3.17"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.3.17:0f93597a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 3:17",
+      "excerpt": "Having plainly called Himself the Son of God the Father, He thought not good to leave the word without witness, but brings forward proof from the quality, so to say, of the things themselves, making the hearers more steadfast unto faith. For I was not sent, saith He, like the law-expounder Moses, condemning the world by the law, nor introducing the commandment unto conviction of sin, nor do I perform a servile ministry, but I introduce loving-kindness befitting the Master: I free the embondaged, as Son and Heir of the Father, I transform the law that condemneth into grace that justifieth, I release from sin him that is holden with the cords of his transgressions, I am come to save the world, not to condemn it. For it was right, it was right, saith He, that Moses, as a servant, should be a minister of the law that condemns, but that I as Son and God should free the whole world from the curse of the law and, by exceedingness of lovingkindness, should heal the infirmity of the world. If then the grace that justifieth is better than the commandment that condemneth, how is it not meet to conceive that He surpasseth the measure of the servant Who introduceth so God-befitting authority, and releaseth man from the bonds of sin?\r\n\r\nThis then is one aim of the passage under consideration, and no mean one. A second besides this, revolving through the same circuit, and introducing a consideration akin to those above, will be given from love of learning. The Saviour saw that Nicodemus was cleaving to the law of Moses, and was fast held to the more ancient commandment, and was somehow startled at the new Birth through the Spirit, shrinking from the new and Gospel polity, supposing it seems that this would be more burdensome than the things already enjoined. Being therefore not ignorant, as God, of the fear which from his ignorance had sprung upon him, by using one short argument, He frees him from all trouble on this score, and shows that the commandment of Moses, by reason of its condemning the world, is harder to be borne, and introduces Himself as a mild Judge, saying, For God sent not His Son into the world to condemn the world, but that the world through Him might be saved.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.3.17"
+    },
+    {
+      "id": "hcf:tertullian:john.3.17:215b0796:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on john 3:17",
+      "excerpt": "He that believeth on Him is not condemned; but he that believeth not is condemned already, because he hath not believed in the name of the only-begotten Son of God.\" Moreover, when John (the Baptist) was asked what he happened to know of Jesus, he said: \"The Father loveth the Son, and hath given all things into His hand.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.3.17"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.17:0fba8b54:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:17",
+      "excerpt": "Here the Lord excludes an objection that might be made. For in the old law it was promised that the Lord would come to judge: \"The Lord will come to judge\" (Is 3:14). So someone might say that the Son of God had not come to give eternal life but in order to judge the world. The Lord rejects this. First, he shows that he has not come to judge. Secondly, he proves it (v 18).\r\n\r\nSo he says: The Son of God has not come to judge, because God did not send his Son, referring to his first coming, into the world to judge the world, but that the world might be saved through him. The same thing is found below (12:47): \"I did not come to judge the world, but to save the world.\"\r\n\r\nNow man's salvation is to attain to God: \"My salvation is in God\" (Ps 61:8). And to attain to God is to obtain eternal life; hence to be saved is the same as to have eternal life. However, because the Lord says, \"I did not come to judge the world,\" men should not be lazy or abuse God's mercy, or give themselves over to sin: because although in his first coming he did not come to judge but to forgive, yet in his second coming, as Chrysostom says, he will come to judge but not to forgive. \"At the appointed time I will judge with rigor\" (Ps 74:3).\r\n\r\nHowever, this seems to conflict with what is said below (9:39): \"I came into this world to judge.\" I answer that there are two kinds of judgment. One is the judgment of distinction, and the Son has come for this in his first coming; because with his coming men are distinguished, some by blindness and some by the light of grace. The other is the judgment of condemnation; and he did not come for this as such.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.17"
     }
   ]
 }

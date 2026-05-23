@@ -4,14 +4,14 @@
   "verseNumber": 44,
   "entries": [
     {
-      "id": "catena-mark-1022-v44",
+      "id": "catena-mark-1024-v44",
       "relation": "verse",
       "targetVerseId": "kjva:mark.12.44",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 12:41–44",
-      "excerpt": "The Lord, who had warned them to avoid the desire of high place and vain glory, now distinguishes by a sure test those who brought in gifts. Wherefore it is said, And Jesus sat over against the treasury, and beheld how the people cast money into the treasury. In the Greek language, phylassein means to keep, and gaza is a Persian word for treasure; wherefore the word gazophylacium, which is here used means a place where riches are kept, which name also was applied to the chest in which the offerings of the people were collected, for the necessary uses of the temple, and to the porch in which…",
+      "excerpt": "Reckoners use the word 'quadrans' for the fourth part of any thing, be it place, money, or time. Perhaps then in this place is meant the fourth part of a shekel, that is, five pence. It goes on, And he called unto him his disciples, and saith unto them, Verily I say unto you, That this poor widow hath cast more in, than all they which have cast into the treasury: for God does not weigh the property but the conscience of those who offer; nor did He consider the smallness of the sum in her offering, but what was the store from which it came. Wherefore He adds, For all they did cast in of their…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-mark-1024-v44",
+      "id": "catena-mark-1022-v44",
       "relation": "verse",
       "targetVerseId": "kjva:mark.12.44",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 12:41–44",
-      "excerpt": "Reckoners use the word 'quadrans' for the fourth part of any thing, be it place, money, or time. Perhaps then in this place is meant the fourth part of a shekel, that is, five pence. It goes on, And he called unto him his disciples, and saith unto them, Verily I say unto you, That this poor widow hath cast more in, than all they which have cast into the treasury: for God does not weigh the property but the conscience of those who offer; nor did He consider the smallness of the sum in her offering, but what was the store from which it came. Wherefore He adds, For all they did cast in of their…",
+      "excerpt": "The Lord, who had warned them to avoid the desire of high place and vain glory, now distinguishes by a sure test those who brought in gifts. Wherefore it is said, And Jesus sat over against the treasury, and beheld how the people cast money into the treasury. In the Greek language, phylassein means to keep, and gaza is a Persian word for treasure; wherefore the word gazophylacium, which is here used means a place where riches are kept, which name also was applied to the chest in which the offerings of the people were collected, for the necessary uses of the temple, and to the porch in which…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -73,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.12.44:97b0de84:0"
       ]
     },
     {
@@ -94,6 +101,161 @@
       ]
     },
     {
+      "id": "hcf:bede:mark.12.44:9f28c160:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 12:44",
+      "excerpt": "For all of them have contributed out of their abundance. But she, out of her poverty, has given all she had, her whole livelihood. The Jew contributes to the gifts of God out of his abundance, who, presuming upon his own righteousness, prays to himself thus: God, I thank you that I am not like other men, extortioners, unjust, etc. (Luke 18). But the Church gives all her living to the gifts of God, understanding that all she lives is not by her own merit, but by divine grace, saying: God, be merciful to me, a sinner (Ibid.). And again: I will keep my strength for you, because you are my protector, my God; his mercy will precede me (Psalm 58).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:bede:mark.12.44:fb9eec8c:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 12:44",
+      "excerpt": "(ubi sup) The Jew sends of his abundance into the treasury, because he presumes on his own righteousness; but the Church sends her whole living into God's treasury, because she understands that even her very living is not of her own desert, but of Divine grace.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:bede:mark.12.44:9fc39575:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 12:44",
+      "excerpt": "(ubi sup.) Wherefore He adds, For all they did cast in of their abundance, but she of her want did cast in all that she had, even all her living.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.12.44:4d552daa:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 12:44",
+      "excerpt": "Among the Jews there was preserved a particular custom, whereby those who had the means and the desire made contributions to the church treasury, which was called the \"gazophylakion,\" from which the priests, the poor, and widows received their sustenance. While many were doing this, a widow also came forward and showed her zeal to be greater than that of the rich. Glory to Thee, O Christ, that Thou dost accept even what is small as better than what is great! Oh, if only my soul would become a widow, having renounced Satan, with whom it had been united through unseemly deeds, and would resolve to cast into the church treasury \"two mites\"—the flesh and the mind—having refined them, the flesh through abstinence and the mind through humility, so that I too might hear that I have devoted my whole life to God, having within me neither worldly thoughts nor fleshly impulses!",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:hcf-evagrius-ponticus:mark.12.44:ca47b494:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-evagrius-ponticus",
+      "workId": "hcf:work:hcf-evagrius-ponticus:admonition-on-prayer",
+      "title": "ADMONITION ON PRAYER on mark 12:44",
+      "excerpt": "It is better to begin from one's feeble state and end up strong, to progress from small things to larger, than to set your heart from the very first on the perfect way of life, then only to abandon it later—or keep to it solely out of habit, because of what others will think—in which case all this labor will be in vain. It is the same with people who travel: if they tire themselves out on the very first day by rushing along, they will end up wasting many days as a result of sickness. But if they start out walking at a gentle pace until they have gotten accustomed to walking, in the end they will not get tired, even though they walk great distances. Likewise anyone who wishes to embark on the labors of the virtuous life should train himself gently, until he gradually reaches the full extent of his abilities. Do not be perplexed by the many paths walked by our fathers of old, each different from the other. Do not overzealously try to imitate them all—this would only upset your way of life. Rather, choose a way of life that suits your feeble state; travel on that, and you will live, for your Lord is merciful and he will receive you, not because of your achievements, but because of your intention, just as he received the destitute woman's gift.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c399"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:hcf-hegemonius:mark.12.44:3649ed5d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-hegemonius",
+      "workId": "hcf:work:hcf-hegemonius:the-disputation-with-manes-42",
+      "title": "THE DISPUTATION WITH MANES 42 on mark 12:44",
+      "excerpt": "For here I perceive that Jesus also looks on willingly at the gifts of the rich men, when they are put into the treasury. All too little, at the same time, is it if gifts are cast into the treasury by the rich alone; and so there are the two mites of the poor widow which are also received with gladness; and in that offering verily something is exhibited that goes beyond what Moses prescribed on the subject of the receipt of moneys. For he received gifts from those who had; but Jesus receives them even from those who have not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c400"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:jerome:mark.12.44:ef924961:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:letter-53-to-paulinus-11",
+      "title": "LETTER 53, TO PAULINUS 11 on mark 12:44",
+      "excerpt": "There is an old saying that a miser lacks as much what he has as what he has not. The believer has a whole world of wealth; the unbeliever has not a single farthing. Let us always live \"as having nothing and yet possessing all things.\" [2 Cor. 6:10] Food and raiment, these are the Christian's wealth. [1 Tim. 6:8] If your property is in your own power, [Cf. Acts 5:4] sell it: if not, cast it from you. \"If any man... will take away thy coat, let him have thy cloke also.\" [Matt. 5:40] You are all for delay, you wish to defer action: unless-so you argue-unless I sell my goods piecemeal and with caution, Christ will be at a loss to feed his poor. Nay, he who has offered himself to God, has given Him everything once for all. The apostles did but forsake ships and nets. [Matt. 4:18-22] The widow cast but two brass coins into the treasury [Mark 12:41-44] and yet she shall be preferred before Croesus with all his wealth. He readily despises all things who reflects always that he must die.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.12.44:2518e37c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:on-the-incomprehensible-nature-of-god-6-12",
+      "title": "ON THE INCOMPREHENSIBLE NATURE OF GOD 6.12 on mark 12:44",
+      "excerpt": "When the widow put into the collection box only two small coins, the master did not give her a recompense worth only two coins. Why was that? Because he paid no attention to the amount of the money. What he did heed was the wealth of her soul. If you calculate by the value of her money, her poverty is great. If you bring her intention into the light, you will see that her store of generosity defies description.",
+      "takeaway": "",
+      "sourceId": "hcf:source:catholiclibrary-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
+      "id": "hcf:hcf-paulinus-of-nola:mark.12.44:5572847c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-paulinus-of-nola",
+      "workId": "hcf:work:hcf-paulinus-of-nola:letters-34-24",
+      "title": "LETTERS 34, 24 on mark 12:44",
+      "excerpt": "We have been entrusted with the administration and use of temporal wealth for the common good, not with the everlasting ownership of private property. If you accept the fact that ownership on earth is only for a time, you can earn eternal possessions in heaven. Call to mind the widow who forgot herself in her concern for the poor and, thinking only of the life to come, gave away all her means of subsistence, as the judge himself bears witness. Others, he says, have given of their superfluous wealth; but she, possessed of only two small coins and more needy perhaps than many of the poor—though in spiritual riches she surpassed all the wealthy—she thought only of the world to come, and had such a longing for heavenly treasure that she gave away, all at once, whatever she had that was derived from the earth and destined to return there. Let us then invest with the Lord what he has given us, for we have nothing that does not come from him: we are dependent upon him for our very existence.… So let us give back to the Lord the gifts he has given us. Let us give to him who receives in the person of every poor man or woman. Let us give gladly, I say, and great joy will be ours when we receive his promised reward.",
+      "takeaway": "",
+      "sourceId": "hcf:source:letters-34-24",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c431"
+      ],
+      "targetVerseId": "kjva:mark.12.44"
+    },
+    {
       "id": "catena-mark-1025-v44",
       "relation": "verse",
       "targetVerseId": "kjva:mark.12.44",
@@ -109,6 +271,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.12.44:d88f7103:0"
       ]
     }
   ]

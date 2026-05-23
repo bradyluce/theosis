@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3341-v31",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.31",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:29–31",
-      "excerpt": "He does not blame them for building the sepulchres, but discovers the design with which they built them; which was not to honour the slain, but to erect to themselves a triumphal monument of the murder, as fearing that in process of time the memory of this their audacious wickedness should perish.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.23.31:f04d3b4f:0"
       ]
     },
     {
@@ -48,6 +37,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 23:29–31",
       "excerpt": "Though they speak not this in words, they proclaim it by their actions, in ambitious and magnificent structures to their memory.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3341-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.31",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:29–31",
+      "excerpt": "He does not blame them for building the sepulchres, but discovers the design with which they built them; which was not to honour the slain, but to erect to themselves a triumphal monument of the murder, as fearing that in process of time the memory of this their audacious wickedness should perish.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -73,6 +80,31 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.23.31:38b70b89:0"
+      ]
+    },
+    {
+      "id": "catena-matt-3347-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.31",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:29–31",
+      "excerpt": "And in the prophetic writings, the historical sense is the body, the spiritual meaning is the soul; the sepulchres are the letter and books themselves of Scripture. They then who attend only to the historical meaning, honour the bodies of the Prophets, and set in the letter as in a sepulchre; and are called Pharisees, i.e. ‘cut off’ as it were cutting off the soul of the Prophets from their body.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
       ]
     },
     {
@@ -94,22 +126,89 @@
       ]
     },
     {
-      "id": "catena-matt-3347-v31",
+      "id": "hcf:jerome:matthew.23.31:ee26a80a:1",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.31",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:29–31",
-      "excerpt": "And in the prophetic writings, the historical sense is the body, the spiritual meaning is the soul; the sepulchres are the letter and books themselves of Scripture. They then who attend only to the historical meaning, honour the bodies of the Prophets, and set in the letter as in a sepulchre; and are called Pharisees, i.e. ‘cut off’ as it were cutting off the soul of the Prophets from their body.",
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:31",
+      "excerpt": "(Verse 29 onwards) Woe to you, scribes and Pharisees, hypocrites! For you build the tombs of the prophets and decorate the monuments of the righteous, and you say, 'If we had lived in the days of our fathers, we would not have been partners with them in shedding the blood of the prophets.' Thus you bear witness against yourselves that you are sons of those who murdered the prophets. In the most skillful syllogism, they are proven to be the offspring of murderers, while they themselves, by the opinion of goodness and glory among the people, build tombs for the prophets whom their forefathers killed, and they say, 'If we had lived in that time, we would not have done what our fathers did.' However, even if they do not say it in words, they speak through their actions by ambitiously and magnificently building monuments to the slain, whom they do not deny were killed by their forefathers.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.31"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.23.31:906898f8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-74",
+      "title": "Homily on the Gospel of Matthew 74 on matthew 23:31",
+      "excerpt": "For the things that ye now dare to do, show that ye do these things also in this spirit. For, though ye speak the contrary, saith He, as condemning them, as, for instance, \"We should not, if we had been in their days, have been partakers with them;\" yet the disposition is evident wherewith ye say these things. Wherefore also unfolding it, though darkly, still He hath expressed it. For when He had said, ye say, \"If we had been in the days of our fathers, we should not have been partakers with them in the blood of the prophets;\" He added, \"Wherefore ye be witnesses unto yourselves, that ye are the children of them that slew the prophets.\" And what blame is it to be a murderer's son, if one partake not in the mind of one's father? None. Whence it is evident, that for this same thing He brings it forward against them, hinting at their affinity in wickedness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.23.31"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:matthew.23.31:993e5a04:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:fragment-260-6",
+      "title": "FRAGMENT 260.6 on matthew 23:31",
+      "excerpt": "We will carefully investigate what the Savior says. The forefathers of the Jews killed the holy prophets who were transmitting the divine word to them in those times. They surely have become witnesses for some of them, because the prophets are now revered and honored. They have placed crowns on their heads or assign … honor to their tombs as to holy things, for believing the prophets to be holy men, they have become the judges of those who have killed them. For by honoring them in this way, they have spoken against those who killed them, and through these things they accuse them of having acted wickedly. But though they agreed to condemn the murders committed by their own forefathers, they were about to become threshing floors for the same kind of evils, indeed, to things even worse. They \"killed the author of life\" and added to their impieties against him other murders, those of his holy apostles. For while one scrutinizes the sins of others, making a decision according to one's innate reason, one sees the wickedness and censures it.… He who is led into similar passions is like a blind man carried away.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-260-6",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:matthew.23.31"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.31:8f93e6dd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:31",
+      "excerpt": "He deplores them, not for building tombs for the prophets, for that is pleasing to God, but for doing these things in pretence, and for passing judgement on their fathers while doing worse things themselves, and exceeding them by far in malice. They lie brazenly when they say, \"If we had been in the days of our fathers, we would not have killed the prophets,\" for they were rabid with desire to kill the Master of the prophets. Therefore Christ says:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.31"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.31:f8e1f5d4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:31",
+      "excerpt": "Then he sets forth their cruelty. And first, in general; secondly, in particular. And he sets forth the temporal punishment, at behold, I send to you prophets, and wise men, and scribes. Regarding the first, he first describes the origin; secondly, the imitation of evil; thirdly, he threatens punishment. He says, wherefore you are witnesses against yourselves, that you are the sons of those who killed the prophets. But what evil was it for them, since it was not in their power? Therefore it seems that it ought not to be imputed to them. See: sometimes a son does not imitate the sins of his father, and sometimes he does imitate paternal malice. If he does not follow paternal malice, it is not imputed to him. Sometimes it happens that one has a good father and a bad mother, or conversely, and he follows the goodness of his father, or of his mother. But if both are wicked, it rarely happens that he does not imitate their malice. And the reason is that the children of the wicked become accustomed to evils from the beginning; and what they become accustomed to in youth they adhere to more strongly, and therefore they are more inclined to evil. Likewise, when evil parents see their children doing something evil, they do not correct them; for this reason their sin is aggravated, so that the sins of the parents redound to the children; Exodus 20:5: I am a jealous God, visiting the sins of the fathers upon the children. Therefore he says, you are the sons of those, who have their malice; Wisdom 3:12: their children are most wicked. Hence you are sons by imitation; and this is what follows:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.31"
     },
     {
       "id": "catena-matt-3342-v31",
@@ -145,6 +244,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.23.31:20291fec:0"
       ]
     },
     {

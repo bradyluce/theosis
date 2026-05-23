@@ -4,14 +4,14 @@
   "verseNumber": 9,
   "entries": [
     {
-      "id": "catena-mark-0675-v9",
+      "id": "catena-mark-0681-v9",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.9",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:9–13",
-      "excerpt": "Where He not only orders them to be silent, but mentioning His Passion, He implies the cause why they were to be silent.",
+      "excerpt": "But what Christ answered to this, is seen by what follows, And he answered and told them, Elias verily cometh first, and restoreth all things; in which He shews that Elias will come before His second advent. For the Scriptures declare two advents of Christ, namely, one which has taken place, and another which is to come; but the Lord asserts that Elias is the forerunner of the second advent.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 85,
@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-0681-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.9",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:9–13",
-      "excerpt": "But what Christ answered to this, is seen by what follows, And he answered and told them, Elias verily cometh first, and restoreth all things; in which He shews that Elias will come before His second advent. For the Scriptures declare two advents of Christ, namely, one which has taken place, and another which is to come; but the Lord asserts that Elias is the forerunner of the second advent.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0685-v9",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.9",
@@ -76,17 +58,17 @@
       ]
     },
     {
-      "id": "catena-mark-0680-v9",
+      "id": "catena-mark-0675-v9",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.9",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:9–13",
-      "excerpt": "Or thus; the disciples thought that the change which they had seen in Him in the mount, was His transformation to glory; and they say, If Thou hast already come in glory, wherefore doth not Thy forerunner appear? chiefly because they had seen Elias go away.",
+      "excerpt": "Where He not only orders them to be silent, but mentioning His Passion, He implies the cause why they were to be silent.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -102,6 +84,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:9–13",
       "excerpt": "Again, He will restore all things, that is to say, those things which Malachi points out, saying, Behold, I will send you Elijah the prophet, and he shall turn the heart of the fathers to the children, and the heart of the children to their fathers; (Mal. 4:5, 6) he will yield up also to death that debt, which by his prolonged life he has delayed to render.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0680-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.9",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:9–13",
+      "excerpt": "Or thus; the disciples thought that the change which they had seen in Him in the mount, was His transformation to glory; and they say, If Thou hast already come in glory, wherefore doth not Thy forerunner appear? chiefly because they had seen Elias go away.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -145,24 +145,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0676-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.9",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:9–13",
-      "excerpt": "Which He did lest men should be offended, hearing such glorious things of Him Whom they were about to see crucified. It was not therefore fitting to say such things of Christ before He suffered, but after His resurrection they were likely to be believed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:mark.9.9:47575a7d:0"
       ]
     },
     {
@@ -202,6 +191,82 @@
       ]
     },
     {
+      "id": "catena-mark-0676-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.9",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:9–13",
+      "excerpt": "Which He did lest men should be offended, hearing such glorious things of Him Whom they were about to see crucified. It was not therefore fitting to say such things of Christ before He suffered, but after His resurrection they were likely to be believed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.9.9:22c5ed66:0"
+      ]
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.9.9:1fe7902e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:gospel-of-st-matthew-homily-57",
+      "title": "GOSPEL OF ST MATTHEW, HOMILY 57 on mark 9:9",
+      "excerpt": "So He bound them to silence. Furthermore he spoke of his passion as though it were the reason why he asked them to be silent. Note that he did not tell them that they must never tell this to anyone. Instead they should not tell it until he had risen from the dead. In this respect he was silent as to what was painful, and spoke only of what was joyful.",
+      "takeaway": "",
+      "sourceId": "hcf:source:gospel-of-st-matthew-homily-57",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:mark.9.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.9.9:6df528df:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 9:9",
+      "excerpt": "Why does Jesus command the disciples not to tell anyone about the Transfiguration? So that people, hearing of such glory of Christ, would not afterwards be scandalized when they see Him being crucified. But after the Resurrection from the dead, it will be easy to speak of such a glorious event that took place before the Crucifixion of Christ. So the apostles \"kept this word (keeping this event in secret), asking one another what it means: to rise from the dead,\" for they did not yet understand His words, that He must rise from the dead.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.9.9"
+    },
+    {
+      "id": "hcf:bede:mark.9.9:22bf4ae4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 9:9",
+      "excerpt": "And as they were coming down from the mountain, he instructed them not to tell anyone what they had seen, until the Son of Man had risen from the dead. The foreshadowing of the future kingdom and the glory of the triumphant one had been shown on the mountain. Therefore, he did not want this to be preached among the people, lest it be unbelievable due to the greatness of the matter, and after such great glory, the following cross might be a scandal to the minds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.9.9"
+    },
+    {
       "id": "catena-mark-0677-v9",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.9",
@@ -210,6 +275,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:9–13",
       "excerpt": "But they, being ignorant of the mystery of the resurrection, took hold of that saying, and disputed one with another; wherefore there follows, And they kept that saying with themselves, questioning one with another what the rising from the dead should, mean.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0688-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.9.9",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 9:9–13",
+      "excerpt": "Or else, the disciples asked Jesus, how it was written that the Son of man must suffer? Now in answer to this, He says, As John came in the likeness of Elias, and they evil intreated him, so according to the Scriptures must the Son of man suffer.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -246,24 +329,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:9–13",
       "excerpt": "He calls John Elias, not because he was Elias in person, but because he fulfilled the ministry of Elias; for as the latter will be the forerunner of the second advent, so the former has been that of the first.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0688-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.9.9",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 9:9–13",
-      "excerpt": "Or else, the disciples asked Jesus, how it was written that the Son of man must suffer? Now in answer to this, He says, As John came in the likeness of Elias, and they evil intreated him, so according to the Scriptures must the Son of man suffer.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

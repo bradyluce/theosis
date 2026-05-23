@@ -4,6 +4,25 @@
   "verseNumber": 19,
   "entries": [
     {
+      "id": "chrysostom-210148-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:acts.22.19",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-acts",
+      "title": "On Acts 22:17–20",
+      "excerpt": "Acts XXII. 17-20 And it came to pass, that, when I had come again to Jerusalem, even while I prayed in the temple, I was in a trance; and saw him saying unto me, Make haste, and get you quickly out of Jerusalem: for they will not receive your testimony concerning me. And I said, Lord, they know that I imprisoned and beat in every synagogue them that believed on you: and when the blood of your martyr Stephen was shed, I also was standing by, and consenting unto his death, and kept the raiment of them that slew him. See how he thrusts himself (into danger), I came, he says, after that vision,…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-acts-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "acts"
+      ]
+    },
+    {
       "id": "chrysostom-210121-v19",
       "relation": "verse",
       "targetVerseId": "kjva:acts.22.19",
@@ -23,23 +42,55 @@
       ]
     },
     {
-      "id": "chrysostom-210148-v19",
+      "id": "hcf:john-chrysostom:acts.22.19:49576130:1",
       "relation": "verse",
-      "targetVerseId": "kjva:acts.22.19",
       "topicSlugs": [],
       "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-acts",
-      "title": "On Acts 22:17–20",
-      "excerpt": "Acts XXII. 17-20 And it came to pass, that, when I had come again to Jerusalem, even while I prayed in the temple, I was in a trance; and saw him saying unto me, Make haste, and get you quickly out of Jerusalem: for they will not receive your testimony concerning me. And I said, Lord, they know that I imprisoned and beat in every synagogue them that believed on you: and when the blood of your martyr Stephen was shed, I also was standing by, and consenting unto his death, and kept the raiment of them that slew him. See how he thrusts himself (into danger), I came, he says, after that vision,…",
+      "workId": "hcf:work:john-chrysostom:homily-on-acts-48",
+      "title": "Homily on Acts 48 on acts 22:19",
+      "excerpt": "\"And when the blood of Thy martyr Stephen,\" etc. See where again his discourse terminates, namely, in the forcible main point: that it was he that persecuted, and not only persecuted but killed, nay, had he ten thousand hands would have used them all to kill Stephen. He reminded them of the murderous spirit heinously indulged by him and them. Then of course above all they would not endure him, since this convicted them; and truly the prophecy was having its fulfilment: great the zeal, vehement the accusation, and the Jews themselves witnesses of the truth of Christ!",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-acts-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "acts"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:acts.22.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:acts.22.19:d7ec98a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-acts-48",
+      "title": "Homily on Acts 48 on acts 22:19",
+      "excerpt": "But why said he \"They know I imprisoned?\" Not to gainsay Christ, but because he wished to learn this which was so contrary to all reasonable expectation. Christ, however, did not teach him this, but only bade him depart, and he obeys: so obedient is he.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:acts.22.19"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:acts.22.19:a04e66df:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-acts",
+      "title": "Commentary on Acts on acts 22:19",
+      "excerpt": "Why did he say \"it is known to them?\" He said this not contradicting Christ, but wishing to understand such an incomprehensible thing. But Christ did not explain it to him, and only told him to go.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:acts.22.19"
     }
   ]
 }

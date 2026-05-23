@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.17.14:7d8ae5fe:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.17.14:06d1cfe6:0"
       ]
     },
     {
@@ -58,24 +72,6 @@
       ]
     },
     {
-      "id": "catena-luke-2588-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.14",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:11–19",
-      "excerpt": "The law also ordered, that those who were cleansed from leprosy should offer sacrifice for the sake of their purification.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2590-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.14",
@@ -84,6 +80,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
       "excerpt": "Whereby the Jewish priests who were jealous of His glory might know that it was by Christ granting them health that they were suddenly and miraculously healed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.17.14:36a49888:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2588-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.14",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:11–19",
+      "excerpt": "The law also ordered, that those who were cleansed from leprosy should offer sacrifice for the sake of their purification.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -130,14 +151,14 @@
       ]
     },
     {
-      "id": "catena-luke-2587-v14",
+      "id": "catena-luke-2593-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.14",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
-      "excerpt": "They do not merely supplicate or entreat Him as if He were a man, but they call Him Master or Lord, as if almost they looked upon Him as God. But He bids them shew themselves to the priests, as it follows, And when he saw them, he said, Go, shew yourselves unto the priests. For they were examined whether they were cleansed from their leprosy or not.",
+      "excerpt": "We may gather from this that a man is not one whit hindered from pleasing God because he comes from a cursed race, only let him bear in his heart an honest purpose. Further, let not him that is born of saints boast himself, for the nine who were Israelites were ungrateful; and hence it follows, And Jesus answering him said, Were there not ten cleansed?",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -148,14 +169,14 @@
       ]
     },
     {
-      "id": "catena-luke-2589-v14",
+      "id": "catena-luke-2587-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.14",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
-      "excerpt": "Therefore in bidding them go to the priests, he meant nothing more than that they were just about to be healed; and so it follows, And it came to pass that as they went they were healed.",
+      "excerpt": "They do not merely supplicate or entreat Him as if He were a man, but they call Him Master or Lord, as if almost they looked upon Him as God. But He bids them shew themselves to the priests, as it follows, And when he saw them, he said, Go, shew yourselves unto the priests. For they were examined whether they were cleansed from their leprosy or not.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -184,17 +205,42 @@
       ]
     },
     {
-      "id": "catena-luke-2593-v14",
+      "id": "catena-luke-2589-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.14",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
-      "excerpt": "We may gather from this that a man is not one whit hindered from pleasing God because he comes from a cursed race, only let him bear in his heart an honest purpose. Further, let not him that is born of saints boast himself, for the nine who were Israelites were ungrateful; and hence it follows, And Jesus answering him said, Were there not ten cleansed?",
+      "excerpt": "Therefore in bidding them go to the priests, he meant nothing more than that they were just about to be healed; and so it follows, And it came to pass that as they went they were healed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.17.14:f836c602:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2584-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.14",
+      "topicSlugs": [],
+      "personId": "titus-bostra",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:11–19",
+      "excerpt": "They associated together from the sympathy they felt as partakers of the same calamity, and were waiting till Jesus passed, anxiously looking out to see Him approach. As it is said, Which stood afar off, for the Jewish law esteems leprosy unclean, whereas the law of the Gospel calls unclean not the outward, but the inward leprosy.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -210,24 +256,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:11–19",
       "excerpt": "saying, And it came to pass, shewing that the Samaritans were indeed well disposed towards the mercies above mentioned, but the Jews not so. For there was enmity between the Jews and the Samaritans, and He to allay this, passed into the midst of both nations, that he might cement both into one new man.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2584-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.14",
-      "topicSlugs": [],
-      "personId": "titus-bostra",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:11–19",
-      "excerpt": "They associated together from the sympathy they felt as partakers of the same calamity, and were waiting till Jesus passed, anxiously looking out to see Him approach. As it is said, Which stood afar off, for the Jewish law esteems leprosy unclean, whereas the law of the Gospel calls unclean not the outward, but the inward leprosy.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 65,
@@ -290,6 +318,91 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.17.14:eed87bb5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homilies-113-16",
+      "title": "COMMENTARY ON LUKE, HOMILIES 113-16 on luke 17:14",
+      "excerpt": "Why did he not say, \"I will, be cleansed,\" as he did in the case of another leper, instead of commanding them to show themselves to the priests? It was because the law gave directions to this effect to those who were delivered from leprosy. It commanded them to show themselves to the priests and to offer a sacrifice for their cleansing. He commanded them to go as being already healed so that they might bear witness to the priests, the rulers of the Jews and always envious of his glory. They testified that wonderfully and beyond their hope, they had been delivered from their misfortune by Christ's willing that they should be healed. He did not heal them first but sent them to the priests, because the priests knew the marks of leprosy and of its healing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homilies-113-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.17.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.17.14:066d4b3c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:14",
+      "excerpt": "He commands them to show themselves to the priests. For the priests examined such people, and from them they received the determination of whether they were clean from leprosy or not (Lev. 13). The priests had signs by which they identified incurable leprosy. And even when someone had contracted leprosy and then recovered, the priests would examine them, and the gift commanded in the Law was brought to them. But here, when the lepers were indisputably such, what need was there for them to show themselves to the priests if they were not going to be completely cleansed? The command for them to go to the priests pointed to nothing other than the fact that they would become clean. Therefore it is also said that as they were going along the road, they were cleansed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.17.14"
+    },
+    {
+      "id": "hcf:bede:luke.17.14:14fe5456:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:14",
+      "excerpt": "When he saw them, he said: Go, show yourselves to the priests. And it happened as they went, they were cleansed. The Lord is found to have sent none of those to whom he granted these corporal benefits to the priests, except lepers, because evidently, the priesthood of the Jews was a figure of the future royal priesthood, which is in the Church, whereby all belonging to the body of Christ, the highest and true Prince of priests, are consecrated. And whoever has lacked the grace of the Lord, either by heretical depravity, gentile superstition, Jewish perfidy, or even fraternal schism, must come to the Church and show the true color of faith they have received. But other vices, like the health and as it were the senses and limbs of the soul, the Lord heals and corrects within through conscience and understanding. Indeed, Paul also, having heard the voice of the Lord: Why do you persecute me? and, I am Jesus whom you are persecuting (Acts 9), was nevertheless sent to Ananias, so that through that priesthood established in the Church, he might receive the sacrament of the doctrine of faith, and be approved in its true color. Not because the Lord cannot do all things by himself (for who else does these things even in the Church?) but so that the very society of gathered faithful, by approving and communicating the doctrine of true faith among each other, might impart in all that is said in words or signified in sacraments, as it were, one form of true color. Cornelius also, although his alms and prayers were accepted and heard by the angel, is nevertheless commanded to send for Peter, for the unity of doctrine and sacraments, as if to him and his it was said: Go, show yourselves to the priests; for as they went, they were cleansed. For Peter had already come to them, but they had not yet received the sacrament of baptism, had not yet spiritually come to the priests, and yet by the infusion of the Holy Spirit and the wonder of tongues, their cleansing was declared.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.14"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.17.14:06dcbd7e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-6",
+      "title": "Constitutions of the Holy Apostles Book 6 on luke 17:14",
+      "excerpt": "Which law is so very holy and righteous, that even our Saviour, when on a certain time He healed one leper, and afterwards nine, said to the first, \"Go, show thyself to the high priest, and offer the gift which Moses commanded for a testimony unto them;\" and afterwards to the nine, \"Go, show yourselves to the priests.\" For He nowhere has dissolved the law, as Simon pretends, but fulfilled it; for He says: \"One iota, or one tittle, shall not pass from the law until all be fulfilled.\" For says He, \"I come not to dissolve the law, but to fulfil it.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.17.14"
+    },
+    {
+      "id": "hcf:tertullian:luke.17.14:c35ebdaa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 17:14",
+      "excerpt": "However, what was obviously required by the law He commanded should be done: \"Go,\" said He, \"show yourselves to the priests.\" Yet why this, if He meant to cleanse them first? Was it as a despiser of the law, in order to prove to them that, having been cured already on the road, the law was now nothing to them, nor even the priests? Well, the matter must of course pass as it best may, if anybody supposes that Christ had such views as these! But there are certainly better interpretations to be found of the passage, and more deserving of belief: how that they were cleansed on this account, because they were obedient, and went as the law required, when they were commanded to go to the priests; and it is not to be believed that persons who observed the law could have found a cure from a god that was destroying the law.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.17.14"
     }
   ]
 }

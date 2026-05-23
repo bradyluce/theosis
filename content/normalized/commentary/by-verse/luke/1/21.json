@@ -22,6 +22,24 @@
       ]
     },
     {
+      "id": "catena-luke-0080-v21",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.21",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:18–22",
+      "excerpt": "But the Angel says, And, behold; in other words, “At this instant.” But mark the mercy of God in what follows: Until the day in which these things shall be performed. As if he said, “When by the issues of events I shall have proved my words, and thou shalt perceive that thou art rightly punished, I will remove the punishment from thee.” And he points out the cause of the punishment, adding, Because thou believest not my words, which shall be fulfilled in their season; not considering His power Who sent me, and before Whom I stand. But if he who was incredulous about a mortal birth is…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0074-v21",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.21",
@@ -48,24 +66,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
       "excerpt": "That the bonds might be transferred from the powers of generation to the vocal organs. From no regard to the priesthood was he spared, but for this reason was the more smitten, because in a matter of faith he ought to have set an example to others.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0080-v21",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.21",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:18–22",
-      "excerpt": "But the Angel says, And, behold; in other words, “At this instant.” But mark the mercy of God in what follows: Until the day in which these things shall be performed. As if he said, “When by the issues of events I shall have proved my words, and thou shalt perceive that thou art rightly punished, I will remove the punishment from thee.” And he points out the cause of the punishment, adding, Because thou believest not my words, which shall be fulfilled in their season; not considering His power Who sent me, and before Whom I stand. But if he who was incredulous about a mortal birth is…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -130,14 +130,14 @@
       ]
     },
     {
-      "id": "catena-luke-0075-v21",
+      "id": "catena-luke-0077-v21",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.21",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
-      "excerpt": "Here we must remark, that the angel testifies, that he both stands before God, and is sent to bring good tidings to Zacharias.",
+      "excerpt": "But he gives him the sign which he asks for, that he who spoke in unbelief, might now by silence learn to believe; as it follows; and, behold, thou shall be dumb.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -148,14 +148,14 @@
       ]
     },
     {
-      "id": "catena-luke-0077-v21",
+      "id": "catena-luke-0075-v21",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.21",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
-      "excerpt": "But he gives him the sign which he asks for, that he who spoke in unbelief, might now by silence learn to believe; as it follows; and, behold, thou shall be dumb.",
+      "excerpt": "Here we must remark, that the angel testifies, that he both stands before God, and is sent to bring good tidings to Zacharias.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -200,6 +200,58 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.1.21:9b061767:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:21",
+      "excerpt": "And the people were waiting for Zechariah and were wondering at his delay in the temple. But when he came out, he was unable to speak to them. And they realized that he had seen a vision in the temple, and he was making signs to them and remained mute. And it happened that when the days of his service were completed, he went home. This is what I said: that during their turn of duty, priests, being engaged solely in the temple's duties, not only refrained from the embrace of their wives but also from entering their own homes. From this, an example of maintaining perpetual chastity is given to the priests of our time, who are always commanded to serve at the altar. For since in those days the priesthood succession was sought from the line of Aaron, it was necessary to provide for a time to produce offspring. But because now it is not a carnal succession but a spiritual perfection that is sought, consequently, priests are commanded to always abstain from wives and always maintain chastity, so they can always serve at the altar.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.21"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.21:6623e29b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:21",
+      "excerpt": "Do you see how the Jews waited and remained until the high priest came out? But we Christians, as soon as we enter the temple, already think that something bad will happen to us if we do not leave.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.21"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.21:738b63c4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:21",
+      "excerpt": "(Antipater Bostrensis.) Now while these things were going on within, the delay excited surprise among the multitudes who were waiting without, as it follows: And the people waited for Zacharias, and marvelled that he tarried. And while various suspicions were going about, each man repeating them as it pleased him, Zacharias coming forth told by his silence what he secretly endured. Hence it follows, And when he came out, he could not speak.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.21"
     }
   ]
 }

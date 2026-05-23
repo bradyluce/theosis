@@ -4,6 +4,24 @@
   "verseNumber": 43,
   "entries": [
     {
+      "id": "catena-luke-1018-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.43",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:43–45",
+      "excerpt": "For it is a natural consequence when wickedness abounds within, that wicked words are breathed as far as the mouth; and therefore when you hear of a man uttering abominable things, do not suppose that there lies only so much wickedness in him as is expressed in his words, but believe the fountain to be more copious than the stream.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1011-v43",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.43",
@@ -22,17 +40,17 @@
       ]
     },
     {
-      "id": "catena-luke-1018-v43",
+      "id": "catena-luke-1015-v43",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.43",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:43–45",
-      "excerpt": "For it is a natural consequence when wickedness abounds within, that wicked words are breathed as far as the mouth; and therefore when you hear of a man uttering abominable things, do not suppose that there lies only so much wickedness in him as is expressed in his words, but believe the fountain to be more copious than the stream.",
+      "excerpt": "But having shewn that the good and the bad man may be discerned by their works as a tree by its fruits, he now sets forth the same thing by another figure, saying, A good man out of the good treasure of his heart bringeth forth that which is good, and the evil man out of the evil treasure bringeth forth that which is evil.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -55,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.6.43:9980bc8c:0"
       ]
     },
     {
@@ -66,24 +91,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:43–45",
       "excerpt": "On the thorns of this world the fig cannot be found, which as being better in its second fruit, is well fitted to be a similitude of the resurrection. Either because, as you read, The fig trees have put forth their green figs, (Cant. 2:13.) that is, the unripe and worthless fruit came first in the Synagogue. Or because our life is imperfect in the flesh, perfect in the resurrection, and therefore we ought to cast far from us worldly cares, which eat into the mind and scorch up the soul, that by diligent culture we may obtain the perfect fruits. This therefore has reference to the world and…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1015-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.43",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:43–45",
-      "excerpt": "But having shewn that the good and the bad man may be discerned by their works as a tree by its fruits, he now sets forth the same thing by another figure, saying, A good man out of the good treasure of his heart bringeth forth that which is good, and the evil man out of the evil treasure bringeth forth that which is evil.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,24 +119,6 @@
       ]
     },
     {
-      "id": "catena-luke-1008-v43",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.43",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:43–45",
-      "excerpt": "Our Lord continues the words which He had begun against the hypocrites, saying, For a good tree bringeth not forth corrupt fruit; i. e. as if He says, If thou wouldest have a true and unfeigned righteousness, what thou settest forth in words make up also in works, for the hypocrite though he pretends to be good is not good, who doeth evil works; and the innocent though he be blamed, is not therefore evil, who doeth good works.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1014-v43",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.43",
@@ -145,6 +134,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1008-v43",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.43",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:43–45",
+      "excerpt": "Our Lord continues the words which He had begun against the hypocrites, saying, For a good tree bringeth not forth corrupt fruit; i. e. as if He says, If thou wouldest have a true and unfeigned righteousness, what thou settest forth in words make up also in works, for the hypocrite though he pretends to be good is not good, who doeth evil works; and the innocent though he be blamed, is not therefore evil, who doeth good works.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.43:a28384f9:1"
       ]
     },
     {
@@ -199,6 +213,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.6.43:5ae6f092:0"
       ]
     },
     {
@@ -217,7 +238,150 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:isidore-pelusium:luke.6.43:b4cbae04:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.6.43:de920d76:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-25",
+      "title": "Homilies on the Gospels 2.25 on luke 6:43",
+      "excerpt": "\"Every tree which does not bear fruit will be cut down and cast into the fire.\" He is referring to human beings as trees and to their works as the fruit. Do you want to know which are the bad trees and what are the bad fruits? The apostle teaches us this. He says, \"The works of the flesh are manifest: they are fornication, impurity, self-indulgence, idolatry, sorcery, malice, strife, jealousy, anger, quarrels, conflict, factions, envy, murder, drunkenness, carousing, and things of this sort.\" Do you want to hear whether trees which bring forth fruits such as these belong in the heavenly temple of the eternal King? The apostle continues: \"I warn you, as I warned you before, that those who do such things will not attain the kingdom of God.\" He subsequently lists the fruits of a good tree. He says, \"The fruit, however, of the Spirit is charity, joy, peace, patience, goodness, kindness, faith, gentleness, self-control.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
+    },
+    {
+      "id": "hcf:bede:luke.6.43:8d644f22:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:43",
+      "excerpt": "For a good tree does not produce bad fruit; nor does a bad tree produce good fruit. He continues against the hypocrite he began with. If you want, he says, to have true and not feigned righteousness, what you show in words also care to compensate with deeds, that being a good tree, you may be adorned with good fruits. For even if the hypocrite pretends, he is not good who does bad deeds. And if he reprehends the innocent, he is not therefore evil who does good deeds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.6.43:b76e92f1:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-33",
+      "title": "COMMENTARY ON LUKE, HOMILY 33 on luke 6:43",
+      "excerpt": "See again, Christ commands that those who come to us must be distinguished not by their clothing but by what they really are. \"By its fruit,\" he says, \"the tree is known.\" It is ignorance and folly for us to expect to find the choicer kinds of fruits on thorns, grapes for instance, and figs. So it is ridiculous for us to imagine that we can find in hypocrites and the profane anything that is admirable, such as the nobleness of virtue.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-33",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.6.43:4d73d16f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-2",
+      "title": "The Instructor Book 2 on luke 6:43",
+      "excerpt": "For since all forms of speech flow from mind and manners, ludicrous expressions could not be uttered, did they not proceed from ludicrous practices. For the saying, \"It is not a good tree which produces corrupt fruit, nor a corrupt tree which produces good fruit,\" is to be applied in this case. For speech is the fruit of the mind. If, then, wags are to be ejected from our society, we ourselves must by no manner of means be allowed to stir up laughter. For it were absurd to be found imitators of things of which we are prohibited to be listeners; and still more absurd for a man to set about making himself a laughing-stock, that is, the but of insult and derision.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
+    },
+    {
+      "id": "hcf:isidore-seville:luke.6.43:0e408dd2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "isidore-seville",
+      "workId": "hcf:work:isidore-seville:untitled-commentary",
+      "title": "Commentary on luke 6:43",
+      "excerpt": "He does not then exclude repentance, but a continuance in evil, which aslong as it is evil cannot bring forth good fruit, but being converted to virtue, will yield abundance. But what nature is to the tree, our affections are to us. If then a corrupt tree cannot bring forth good fruit, how shall a corrupt heart?",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c636"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
+    },
+    {
+      "id": "hcf:origen:luke.6.43:79a887da:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:fragments-on-luke-112",
+      "title": "FRAGMENTS ON LUKE 112 on luke 6:43",
+      "excerpt": "\"The good tree\" is the Holy Spirit. The \"bad tree\" is the devil and his underlings. The person who has the Holy Spirit manifests the fruits of the Spirit, which the apostle describes when he says, \"The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faith, gentleness, self-control.\" The one who has the opposing power brings forth briars and thistles, the passions of dishonor.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragments-on-luke-112",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.43:7ecbee62:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:a-treatise-on-the-soul",
+      "title": "A Treatise on the Soul on luke 6:43",
+      "excerpt": "(The heretics whom we have referred to) deny that nature is susceptible of any change, in order that they may be able to establish and settle their threefold theory, or \"trinity,\" in all its characteristics as to the several natures, because \"a good tree cannot produce evil fruit, nor a corrupt tree good fruit; and nobody gathers figs of thorns, nor grapes of brambles.\" If so, then \"God will not be able any longer to raise up from the stones children unto Abraham; nor to make a generation of vipers bring forth fruits of repentance.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.43:25d05fb5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-i",
+      "title": "Against Marcion Book I on luke 6:43",
+      "excerpt": "The unhappy man gained the first idea of his conceit from the simple passage of our Lord's saying, which has reference to human beings and not divine ones, wherein He disposes of those examples of a good tree and a corrupt one; how that \"the good tree bringeth not forth corrupt fruit, neither the corrupt tree good fruit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.43"
     }
   ]
 }

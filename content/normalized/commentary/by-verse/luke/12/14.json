@@ -4,42 +4,6 @@
   "verseNumber": 14,
   "entries": [
     {
-      "id": "catena-luke-1973-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.14",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:13–15",
-      "excerpt": "The whole of the former passage is given to prepare us for undergoing suffering for confessing the Lord, or for contempt of death, or for the hope of reward, or for denunciation of the punishment that will await him to whom pardon will never be granted. And since covetousness is generally wont to try virtue, for destroying this also, a precept and example is added, as it is said, And one of the company said to him, Speak to my brother, that he divide the inheritance with me.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1976-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.12.14",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 12:13–15",
-      "excerpt": "Now the Son of God, when He was made like unto us, was appointed by God the Father to be King and Prince upon his holy Mount of Sion, to make known the Divine command.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1977-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.14",
@@ -48,6 +12,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:13–15",
       "excerpt": "Well then does He avoid earthly things who had descended for the sake of divine things, and deigns not to be a judge of strifes and arbiter of laws, having the judgment of the quick and dead and the recompensing of works. You should consider then, not what you seek, but from whom you ask it; and you should not eagerly suppose that the greater are to be disturbed by the less. Therefore is this brother deservedly disappointed who desired to occupy the steward of heavenly things with corruptible, seeing that between brothers no judge should intervene, but natural affection should be the umpire…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.12.14:e20af921:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1973-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.14",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:13–15",
+      "excerpt": "The whole of the former passage is given to prepare us for undergoing suffering for confessing the Lord, or for contempt of death, or for the hope of reward, or for denunciation of the punishment that will await him to whom pardon will never be granted. And since covetousness is generally wont to try virtue, for destroying this also, a precept and example is added, as it is said, And one of the company said to him, Speak to my brother, that he divide the inheritance with me.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,21 +65,28 @@
       ]
     },
     {
-      "id": "catena-luke-1975-v14",
+      "id": "catena-luke-1976-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.14",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:13–15",
-      "excerpt": "He who wills to impose the trouble of division of lands upon the Master who is commending the joys of heavenly peace, is rightly called man, according to that, whereas there is envying, strife, and divisions among you, are ye not men? (1 Cor. 3:3.)",
+      "excerpt": "Now the Son of God, when He was made like unto us, was appointed by God the Father to be King and Prince upon his holy Mount of Sion, to make known the Divine command.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.14:1ffdfb14:0"
       ]
     },
     {
@@ -112,17 +108,17 @@
       ]
     },
     {
-      "id": "catena-luke-1974-v14",
+      "id": "catena-luke-1975-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.12.14",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 12:13–15",
-      "excerpt": "As these two brothers were contending concerning the division of their paternal inheritance, it follows, that one meant to defraud the other; but our Lord teaches us that we ought not to be set on earthly things, and rebukes him that called Him to the division of inheritance; as it follows, And he said unto him, Man, who made me a judge or a divider over you?",
+      "excerpt": "He who wills to impose the trouble of division of lands upon the Master who is commending the joys of heavenly peace, is rightly called man, according to that, whereas there is envying, strife, and divisions among you, are ye not men? (1 Cor. 3:3.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -146,6 +142,99 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "catena-luke-1974-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.12.14",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 12:13–15",
+      "excerpt": "As these two brothers were contending concerning the division of their paternal inheritance, it follows, that one meant to defraud the other; but our Lord teaches us that we ought not to be set on earthly things, and rebukes him that called Him to the division of inheritance; as it follows, And he said unto him, Man, who made me a judge or a divider over you?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.12.14:2d676ce2:1"
+      ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.12.14:cc8548a7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-7-122",
+      "title": "Exposition of the Gospel of Luke, 7.122 on luke 12:14",
+      "excerpt": "This whole place is prepared for undergoing the passion of the Lord either with contempt of death, or with hope of reward, or with the declaration of intention to endure punishment, to which no forgiveness will ever be granted. And because greed often tempts virtue, there is also a commandment and example given for the abolishment of this, as the Lord says: Who made me a judge or a divider among you? He who descended for the sake of divine things wisely avoids earthly affairs; nor does he deign to be a judge of disputes or an arbiter of possessions, having the judgment of the living and the dead and the decision of deeds. Therefore, it is not what you seek, but from whom you request that must be considered; and do not think that you must object to those who are greater with an attentive mind in the presence of those who are lesser. Hence, it is not without reason that this brother is refuted, who desired to occupy the stewardship of celestial things with corruptible things; for among brothers, it is not a judge who should divide the inheritance, but rather piety should separate it; although the inheritance of immortality, not of money, should be sought by humans.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.12.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.14:72712c59:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:14",
+      "excerpt": "In order to teach us how little we should care about worldly affairs and occupy ourselves with earthly things, the Lord sends away from Himself the one who asked Him to settle the division of a paternal inheritance, and therefore says: \"Who made Me a judge or divider over you?\" Since this man did not ask for what is profitable and necessary for salvation, but asked Him to be a divider of earthly and temporal possessions, the Lord sends him away as one who is restless and unwilling to learn anything needful; however, He does this gently, not harshly. But by this act, without doubt, He teaches all His listeners, both those of that time and those of the present, not to care about anything earthly and temporal, not to quarrel over it with their brothers, and even to yield to them if they wish to be covetous (for He says: \"Of him who takes away what is yours, do not demand it back\" (Lk. 6:30)), and to seek what is profitable and necessary for the salvation of the soul.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.14"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.12.14:9345c6be:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-89",
+      "title": "Commentary on the Gospel of Luke, Sermon 89 on luke 12:14",
+      "excerpt": "A certain man drew near to Christ, the Saviour of us all, and said, \"Teacher, bid my brother divide with me the inheritance. But He said unto him, Man, who set Me as judge or divider over you?\" For the Son indeed, when He appeared in our likeness, was set by God the Father as \"Head and King over Sion, His holy mount,\" according to the Psalmist's words: and the nature of His office He again Himself makes plain, \"For I am come, He says, to preach the commandment of the Lord.\" And what is this? Our virtue-loving Master wishes us to depart far from all earthly and temporal matters; to flee from the love of the flesh, and from the vain anxiety of business, and from base lusts; to set no value on hoards, to despise wealth, and the love of gain; to be good and loving unto one another; not to lay up treasures upon earth; to be superior to strife and envy, not quarrelling with the brethren, but rather giving way to them, even though they seek to gain an advantage over us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.12.14"
+    },
+    {
+      "id": "hcf:augustine:luke.12.14:811a2cf2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-265-9",
+      "title": "SERMON 265.9 on luke 12:14",
+      "excerpt": "He was correct when he did not listen to the man who, in disagreement with his brother, said, \"Master, tell my brother to divide the inheritance with me.\" He said, \"Master, tell my brother.\" Tell him what? He said, \"To divide the inheritance with me.\" The Lord said, \"Speak, man.\" Why do you want to divide it except because you are human? Whenever someone says, \"I am of Paul,\" but another, \"I am of Apollos,\" are you not merely human? \"Tell me, man, who has appointed me a judge of the inheritance among you? I have come to gather, not to scatter.\" He said, \"I say to you, guard against all greed.\" Greed wants to divide, just as love desires to gather. What is the significance of \"guard against all greed,\" unless it is \"fill yourselves with love\"? We, possessing love for our portion, inconvenience the Lord because of our brother just as that man did against his brother, but we do not use the same plea. He said, \"Master, tell my brother to divide the inheritance with me.\" We say, \"Master, tell my brother that he may have my inheritance.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.12.14"
     }
   ]
 }

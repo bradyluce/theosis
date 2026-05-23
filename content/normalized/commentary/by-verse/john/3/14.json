@@ -23,24 +23,6 @@
       ]
     },
     {
-      "id": "catena-john-0320-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.14",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:14–15",
-      "excerpt": "Having made mention of the gift of baptism, He proceeds to the. source of it, i. e. the cross: And as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0322-v14",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.14",
@@ -56,24 +38,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-0324-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.14",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:14–15",
-      "excerpt": "Wherefore He does not say, ‘The Son of man must be suspended, but lifted up, a more honourable term, but coming near the figure. He uses the figure to shew that the old dispensation is akin to the new, and to shew on His hearers’ account that He suffered voluntarily; and that His death issued in life.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.3.14:d502327b:0"
       ]
     },
     {
@@ -85,24 +56,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 3:14–15",
       "excerpt": "As then formerly he who looked to the serpent that was lifted up, was healed of its poison, and saved from death; so now he who is conformed to the likeness of Christ’s death by faith and the grace of baptism, is delivered both from sin by justification, and from death by the resurrection: as He Himself saith; That whosoever believeth on Him should not perish, but have everlasting life. What need then is there that the child should be conformed by baptism to the death of Christ, if he be not altogether tainted by the poisonous bite of the serpent?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0326-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.14",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:14–15",
-      "excerpt": "Observe; He alludes to the Passion obscurely, in consideration to His hearer; but the fruit of the Passion He unfolds plainly; viz. that they who believe in the Crucified One should not perish. And if they who believe in the Crucified live, much more shall the Crucified One Himself.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -131,6 +84,60 @@
       ]
     },
     {
+      "id": "catena-john-0324-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.14",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:14–15",
+      "excerpt": "Wherefore He does not say, ‘The Son of man must be suspended, but lifted up, a more honourable term, but coming near the figure. He uses the figure to shew that the old dispensation is akin to the new, and to shew on His hearers’ account that He suffered voluntarily; and that His death issued in life.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0326-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.14",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:14–15",
+      "excerpt": "Observe; He alludes to the Passion obscurely, in consideration to His hearer; but the fruit of the Passion He unfolds plainly; viz. that they who believe in the Crucified One should not perish. And if they who believe in the Crucified live, much more shall the Crucified One Himself.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0320-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.14",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:14–15",
+      "excerpt": "Having made mention of the gift of baptism, He proceeds to the. source of it, i. e. the cross: And as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0321-v14",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.14",
@@ -146,6 +153,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.3.14:a9fb761e:2"
       ]
     },
     {
@@ -164,7 +178,354 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.3.14:1f0cdd0a:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.3.14:38c53026:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-12",
+      "title": "Tractates on John 12 on john 3:14",
+      "excerpt": "He endured death, then; but death He hanged on the cross, and mortal men are delivered from death. The Lord calls to mind a great matter, which was done in a figure with them of old: \"And as Moses,\" saith He, \"lifted up the serpent in the wilderness, so must the Son of man be lifted up; that every one who believeth on Him may not perish, but have everlasting life.\" A great mystery is here, as they who read know. Again, let them hear, as well they who have not read as they who have forgotten what perhaps they had heard or read. The people Israel were fallen helplessly in the wilderness by the bite of serpents; they suffered a great calamity by many deaths: for it was the stroke of God correcting and scourging them that He might instruct them. In this was shown a great mystery, the figure of a thing to come: the Lord Himself testifies in this passage, so that no man can give another interpretation than that which the truth indicates concerning itself. Now Moses was ordered by the Lord to make a brazen serpent, and to raise it on a pole in the wilderness, and to admonish the people Israel, that, when any had been bitten by a serpent, he should look to that serpent raised up on the pole. This was done: men were bitten; they looked and were healed. What are the biting serpents? Sins, from the mortality of the flesh. What is the serpent lifted up? The Lord's death on the cross. For as death came by the serpent, it was figured by the image of a serpent. The serpent's bite was deadly, the Lord's death is life-giving. A serpent is gazed on that the serpent may have no power. What is this? A death is gazed on, that death may have no power. But whose death? The death of life: if it may be said, the death of life; ay, for it may be said, but said wonderfully. But should it not be spoken, seeing it was a thing to be done? Shall I hesitate to utter that which the Lord has deigned to do for me? Is not Christ the life? And yet Christ hung on the cross. Is not Christ life? And yet Christ was dead. But in Christ's death, death died. Life dead slew death; the fullness of life swallowed up death; death was absorbed in the body of Christ. So also shall we say in the resurrection, when now triumphant we shall sing, \"Where, O death, is thy contest? Where, O death, is thy sting?\" Meanwhile brethren, that we may be healed from sin, let us now gaze on Christ crucified; for \"as Moses,\" saith He, \"lifted up the serpent in the wilderness, so must the Son of man be lifted up; that whosoever believeth on Him may not perish, but have everlasting life.\" Just as they who looked on that serpent perished not by the serpent's bites, so they who look in faith on Christ's death are healed from the bites of sins. But those were healed from death to temporal life; whilst here He saith, \"that they may have everlasting life.\" Now there is this difference between the figurative image and the real thing: the figure procured temporal life; the reality, of which that was the figure, procures eternal life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:augustine:john.3.14:9992a5a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-6-7",
+      "title": "SERMON 6.7 on john 3:14",
+      "excerpt": "Let me try to explain, as far as the Lord enables me to, what these signs mean. The rod stands for the kingdom, the snake for mortality. It was by the snake that humanity was given death to drink. The Lord was prepared to take this death on himself. So when the rod came down to earth it had the form of a snake because the kingdom of God, which is Jesus Christ, came down to earth. He put on mortality, which he also nailed to the cross.… In his mercy God provided a remedy, a remedy that restored health at the time but also foretold the wisdom that was to come in the future.… Whoever has been bitten by the snakes of sin need only gaze on Christ and will have healing for the forgiveness of sins. And so, brothers, it is the mortality that the Lord took on himself that the church must go on experiencing as his body, of which he is the head, as man, in heaven. So the church experiences mortality, which was inflicted through the seduction of the serpent. We owe death to the sin of the first persons, but afterward we shall reach eternal life through Jesus Christ our Lord. But when does the church arrive at life and return to the kingdom? At the end of the world. That is why he took it by the tail, which is the end, in order to restore his rod to its original condition.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.14:2e98cae0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-27",
+      "title": "Homily on the Gospel of John 27 on john 3:14",
+      "excerpt": "After having spoken of the very great benefaction that had come to man by Baptism, He proceeds to mention another benefaction, which was the cause of this, and not inferior to it; namely, that by the Cross. As also Paul arguing with the Corinthians sets down these benefits together, when he says, \"Was Paul crucified for you? or were ye baptized into the name of Paul?\" for these two things most of all declare His unspeakable love, that He both suffered for His enemies, and that having died for His enemies, He freely gave to them by Baptism entire remission of their sins.\r\n\r\nBut wherefore did He not say plainly, \"I am about to be crucified,\" instead of referring His hearers to the ancient type? First, that you may learn that old things are akin to new, and that the one are not alien to the other; next, that you may know that He came not unwillingly to His Passion; and again, besides these reasons, that you may learn that no harm arises to Him from the Fact, and that to many there springs from it salvation. For, that none may say, \"And how is it possible that they who believe on one crucified should be saved, when he himself is holden of death?\" He leads us to the ancient story. Now if the Jews, by looking to the brazen image of a serpent, escaped death, much rather will they who believe on the Crucified, with good reason enjoy a far greater benefit. For this takes place, not through the weakness of the Crucified, or because the Jews are stronger than He, but because \"God loved the world,\" therefore is His living Temple fastened to the Cross.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:bede:john.3.14:f64781a8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-18",
+      "title": "Homilies on the Gospels 2.18 on john 3:14",
+      "excerpt": "The sins that drag down soul and body to destruction at the same time are appropriately represented by the serpents, not only because they were fiery and poisonous [and] artful at bringing about death, but also because our first parents were led into sin by a serpent. And from being immortal they became mortal by sinning. The Lord is aptly made known by the bronze serpent, since he came in the likeness of sinful flesh. Just as the bronze serpent had the likeness of a fiery serpent but had absolutely none of the strength of harmful poison in its members—rather by being lifted up it cured those who had been stricken by the [live] serpents—so the Redeemer of the human race did not clothe himself in sinful flesh but in the likeness of sinful flesh, in order that by suffering death on the cross in [this likeness] he might free those who believed in him from all sin and even from death itself.Just as those who looked at the bronze serpent that had been lifted up as a sign were cured at that time from temporal death and the wounds that the serpents' bites had caused, so too those who look at the mystery of the Lord's passion by believing, confessing [and] sincerely imitating it are saved forever from every death they have incurred by sinning in mind and body.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:bede:john.3.14:bf4f38df:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-18",
+      "title": "Homilies on the Gospels 2.18 on john 3:14",
+      "excerpt": "With the wonderful skill of heavenly teaching, the Lord directs our attention to the teacher of the Mosaic law and to the spiritual meaning of his law, by recalling some of the ancient history and explaining that it happened as a figure of his own passion and of human salvation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.3.14:5fc21631:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 3:14",
+      "excerpt": "Having spoken before about regeneration through baptism, he then speaks also of the benefaction accomplished for us through the cross. For the cross and death are the cause of the grace bestowed upon us through baptism, since in baptism we portray the death of the Lord.\r\nHe does not say directly that I will be crucified, but recalls the serpent and the ancient history (Num. 21:5–9), and in this way accomplishes several things at once: on the one hand, He teaches us that the old is akin to the new and that the Lawgiver of the Old and New Testaments is one and the same, although Marcion, Manes, and the rest of the assembly of such heretics reject the Old Testament, saying that it is the legislation of an evil demiurge (craftsman); on the other hand, He teaches that if the Jews escaped death by looking upon the bronze image of the serpent, then all the more shall we escape the death of the soul by looking upon the Crucified One and believing in Him. Compare, if you will, the type with the reality. There, a likeness of a serpent, having the appearance of a serpent but not having its venom: so too here, the Lord is Man, but free from the venom of sin, having come in the likeness of sinful flesh, that is, in the likeness of flesh subject to sin, but He Himself is not sinful flesh. Then, those who looked were delivered from bodily death, while we are delivered from spiritual death. Then, the one hung up healed from the bites of serpents, but now Christ heals the wounds inflicted by the dragon of the mind.\r\nWhen you hear \"must be lifted up,\" understand it thus: to be hung. For He was hung on high, so that He who sanctified the earth by walking upon it might also sanctify the air. Understand \"to be lifted up\" also thus: to be glorified. For the cross truly became the exaltation and glory of Christ. By that in which He seemed condemned, He condemned the prince of this world.\r\nI will explain a little. Adam died justly, because he sinned. The Lord died not by a debt of justice, because He did not sin. Before the crucifixion of the Lord, death justly held dominion over men. But since the Lord was found to be without sin, what could the devil find in Him deserving of death? And since He was put to death unjustly, He conquered the one who killed Him, and in this way also freed Adam from the death that was justly inflicted upon him as one who had sinned.\r\nAnd in another way. Two things dominated over the human race: pleasure and sorrow. The Lord, having passed through both, proved unconquerable. The tempter first approached Him on the mountain with the offer of pleasure (Matt. 4:3, 6, 9); but, finding Him unconquerable through this, he employed great cunning, bringing sorrow, so that at least through it he might master Him, and for this he raised up everything against Him: the denial of the disciples, the mockery of the soldiers, the blasphemy of the passersby, death at the hands of the Jews, but even in this he found Him unconquerable. For the sorrow on the cross could not arouse in the Lord hatred toward those who crucified Him, but He continued to love them and prayed for them, saying: \"Father, do not hold this sin against them\" (Luke 23:34). Do you see how He conquered by that through which He appeared to have been conquered? Thus, the cross became both His exaltation and His glory.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.3.14:dbb96b30:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:on-the-holy-spirit-3-8-50",
+      "title": "On the Holy Spirit 3.8.50 on john 3:14",
+      "excerpt": "It was good that the Lord ordained that, by the lifting up of the brazen serpent, the wounds of those who were bitten should be healed; for the brazen serpent is a type of the cross.… In the same way, the world was crucified in its allurements. Therefore not a real but a brazen serpent was hung. This is so because the Lord took on himself the likeness of a sinner in his body but, in actuality, was without sin. In this way, he imitated a serpent through the deceitful appearance of human weakness, so that when he laid aside the slough of the flesh, he might destroy the cunning of the true serpent.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:hcf-andrew-of-crete:john.3.14:d63efbad:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-andrew-of-crete",
+      "workId": "hcf:work:hcf-andrew-of-crete:homily-11-on-the-exaltation-of-the-venerable-cross",
+      "title": "HOMILY 11 ON THE EXALTATION OF THE VENERABLE CROSS on john 3:14",
+      "excerpt": "The cross is raised and appears above the earth, which until recently malice had kept hidden. It is raised, not to receive glory (for with Christ nailed to it what greater glory could it have?) but to give glory to God who is worshiped on it and proclaimed by it.… It is not surprising that the church rejoices in the cross of Christ and robes herself in festal clothes, revealing her bridal beauty as she honors this day. Nor is it surprising that this great throng of people has gathered together today to see the cross exposed aloft and to worship Christ whom they see raised upon it. For the cross is exposed in order to be raised and is raised to be exposed. What cross? The cross, which a little while ago was hidden in a place called The Skull but now is everywhere adored. This is what we rejoice over today; this is what we celebrate; this is the point of the present feast; this is the manifestation of the mystery.… For this hidden and life-giving cross had to be exposed, set on high like a city on a hill or a lamp on a stand, for all the world to see.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-11-on-the-exaltation-of-the-venerable-cross",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c740"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.3.14:7d08f658:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on john 3:14",
+      "excerpt": "That the Jews would fasten Christ to the cross. In Isaiah: \"I have spread out my hands all day to a people disobedient and contradicting me, who walk in ways that are not good, but after their own sins.\" Also in Jeremiah: \"Come, let us cast the tree into His bread, and let us blot out His life from the earth.\" Also in Deuteronomy: \"And Thy life shall be hanging (in doubt) before Thine eyes; and Thou shall fear day and night, and shalt not trust to Thy life.\" Also in the twenty-first Psalm: \"They tore my hands and my feet; they numbered all my bones. And they gazed upon me, and saw me, and divided my garments among them, and upon my vesture they cast a lot. But Thou, O Lord, remove not Thy help far from me; attend unto my help. Deliver my soul from the sword, and my only one from the paw of the dog. Save me from the mouth of the lion, and my lowliness from the horns of the unicorns. I will declare Thy name unto my brethren; in the midst of the Church I will praise Thee.\" Also in the cxviiith Psalm: \"Pierce my flesh with nails through fear of Thee.\" Also in the cxlth Psalm: \"The lifting up of my hands is an evening sacrifice.\" Of which sacrifice Sophonias said: \"Fear from the presence of the Lord God, since His day is near, because the Lord hath prepared His sacrifice, He hath sanctified His elect.\" Also in Zechariah: \"And they shall look upon me, whom they have pierced.\" Also in the eighty-seventh Psalm: \"I have called unto Thee, O Lord, the whole day; I have stretched out my hands unto Thee.\" Also in Numbers: \"Not as a man is God suspended, nor as the son of man does He suffer threats.\" Whence in the Gospel the Lord says: \"As Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up, that whosoever believeth in the Son may have life eternal.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.3.14:f8c5f1b1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 3:14",
+      "excerpt": "Him should not perish but have eternal life. Having explained sufficiently, and set before him the reason, why His Word of teaching does not run forth into the boundless and supernatural, but descends again to those things that were typically done by Moses of old, knowing that he could by leadings by means of figures scarce arrive at knowledge of the truth, rather than by the exactitude of spiritual inspirations, He saith He must surely be lifted up, as the serpent was by Moses, showing that search of history is most necessary, and all but saying to this man of no understanding, Search the Scriptures, for they are they which testify of Me. For serpents were springing upon them of Israel in the wilderness, and they, falling like ears of corn, and not a little distressed at this danger unexpectedly visiting them, with most piteous cry called for salvation from above and from God. But He, since He was Good and full of compassion, as God, commands Moses to set up a brazen serpent; and commands them therein to have a forethought of the salvation by faith. For the remedy to one bitten, was to look at the serpent put before him, and faith along with the sight wrought deliverance at the last extremity to the beholders. So much for the history. But it represents in act as it were in a type, the whole Mystery of the Incarnation. For the serpent signifies bitter and manslaying sin, which was devouring the whole race upon the earth, manifoldly biting the soul of man, and infusing the varied poison of wickedness. And no otherwise could we escape it thus conquering us, save by the succour alone which is from heaven. The Word of God then was made in the likeness oj sinful flesh, that He might condemn sin in the flesh, as it is written, and to those who gaze on Him with more steadfast faith, or by search into the Divine doctrines, might become the Giver of unending salvation. But the serpent being fixed upon a lofty base, signifies that Christ was altogether clear and manifest, so as to be unknown to none, or His being lifted up from the earth, as Himself says, by His Passion on the Cross.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.3.14:0b7df6b8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-2-1",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 2.1 on john 3:14",
+      "excerpt": "This story is a type of the whole mystery of the incarnation. For the serpent signifies bitter and deadly sin, which was devouring the whole race on the earth … biting the Soul of man and infusing it with the venom of wickedness. And there is no way that we could have escaped being conquered by it, except by the relief that comes only from heaven. The Word of God then was made in the likeness of sinful flesh, \"that he might condemn sin in the flesh,\" as it is written. In this way, he becomes the Giver of unending salvation to those who comprehend the divine doctrines and gaze on him with steadfast faith. But the serpent, being fixed upon a lofty base, signifies that Christ was clearly manifested by his passion on the cross, so that none could fail to see him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-2-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:john.3.14:8d808e79:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-14-15",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 14.15 on john 3:14",
+      "excerpt": "It was shown by the brazen [serpent], which by its nature cannot suffer, that he would suffer on the cross, who by his nature cannot die.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-14-15",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:john.3.14:2fad2887:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-refutation-of-all-heresies-book-v",
+      "title": "Hippolytus Refutation of All Heresies Book V on john 3:14",
+      "excerpt": "Now, he says, the stars are the gods of destruction, which impose upon existent things the necessity of alterable generation. These, he says, Moses denominated serpents of the wilderness, which gnaw and utterly ruin those who imagined that they had crossed the Red Sea. To those, then, he says, who of the children of Israel were bitten in the wilderness, Moses exhibited the real and perfect serpent; and they who believed on this serpent were not bitten in the wilderness, that is, (were not assailed) by (evil) powers. No one therefore, he says, is there who is able to save and deliver those that come forth from Egypt, that is, from the body and from this world, unless alone the serpent that is perfect and replete with fulness. Upon this (serpent), he says, he who fixes his hope is not destroyed by the snakes of the wilderness, that is, by the gods of generation. (This statement) is written, he says, in a book of Moses. This serpent, he says, is the power that attended Moses, the rod that was turned into a serpent. The serpents, however, of the magicians-(that is,) the gods of destruction-withstood the power of Moses in Egypt, but the rod of Moses reduced them all to subjection and slew them. This universal serpent is, he says, the wise discourse of Eve. This, he says, is the mystery of Edem, this the river of Edem; this the mark that was set upon Cain, that any one who findeth him might not kill him. This, he says, is Cain, whose sacrifice the god of this world did not accept. The gory sacrifice, however, of Abel he approved of; for the ruler of this world rejoices in (offerings of) blood. This, he says, is he who appeared in the last days, in form of a man, in the times of Herod, being born after the likeness of Joseph, who was sold by the hand of his brethren, to whom alone belonged the coat of many colours. This, he says, is he who is according to the likeness of Esau, whose garment-he not being himself present-was blessed; who did not receive, he says, the benediction uttered by him of enfeebled vision. He acquired, however, wealth from a source independent of this, receiving nothing from him whose eyes were dim; and Jacob saw his countenance, as a man beholds the face of God. In regard of this, he says, it has been written that \"Nebrod was a mighty hunter before the Lord.\" And there are, he says, many who closely imitate this (Nimrod): as numerous are they as the gnawing (serpents) which were seen in the wilderness by the children of Israel, from which that perfect serpent which Moses set up delivered those that were bitten. This, he says, is that which has been declared: \"In the same manner as Moses lifted up the serpent in the wilderness, so also must the Son of man be lifted up.\" According to the likeness of this was made in the desert the brazen serpent which Moses set up. Of this alone, he says, the image is in heaven, always conspicuous in light.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:ignatius-of-antioch:john.3.14:e43fb13e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ignatius-of-antioch",
+      "workId": "hcf:work:ignatius-of-antioch:epistle-of-ignatius-to-the-smyrnaeans",
+      "title": "Epistle of Ignatius to the Smyrnaeans on john 3:14",
+      "excerpt": "Now, He suffered all these things for us; and He suffered them really, and not in appearance only, even as also He truly rose again. But not, as some of the unbelievers, who are ashamed of the formation of man, and the cross, and death itself, affirm, that in appearance only, and not in truth, He took a body of the Virgin, and suffered only in appearance, forgetting, as they do, Him who said, \"The Word was made flesh; \" and again, \"Destroy this temple, and in three days I will raise it up; \" and once more, \"If I be lifted up from the earth, I will draw all men unto Me.\" The Word therefore did dwell in flesh, for \"Wisdom built herself an house.\" The Word raised up again His own temple on the third day, when it had been destroyed by the Jews fighting against Christ. The Word, when His flesh was lifted up, after the manner of the brazen serpent in the wilderness, drew all men to Himself for their eternal salvation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c108"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:john.3.14:049c8a2d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:irenaeus-against-heresies-book-4",
+      "title": "Irenaeus Against Heresies Book 4 on john 3:14",
+      "excerpt": "Let them not therefore ascribe to the law the unbelief of certain [among them]. For the law never hindered them from believing in the Son of God; nay, but it even exhorted them so to do, saying that men can be saved in no other way from the old wound of the serpent than by believing in Him who, in the likeness of sinful flesh, is lifted up from the earth upon the tree of martyrdom, and draws all things to Himself, and vivifies the dead.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:justin-martyr:john.3.14:f1bdae15:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "justin-martyr",
+      "workId": "hcf:work:justin-martyr:dialogue-with-trypho-chapter-xciv",
+      "title": "Dialogue with Trypho, Chapter XCIV on john 3:14",
+      "excerpt": "For tell me, was it not God who commanded by Moses that no image or likeness of anything which was in heaven above or which was on the earth should be made, and yet who caused the brazen serpent to be made by Moses in the wilderness, and set it up for a sign by which those bitten by serpents were saved? Yet is He free from unrighteousness. For by this, as I previously remarked, He proclaimed the mystery, by which He declared that He would break the power of the serpent which occasioned the transgression of Adam, and [would bring] to them that believe on Him [who was foreshadowed] by this sign, i.e., Him who was to be crucified, salvation from the fangs of the serpent, which are wicked deeds, idolatries, and other unrighteous acts. Unless the matter be so understood, give me a reason why Moses set up the brazen serpent for a sign, and bade those that were bitten gaze at it, and the wounded were healed; and this, too, when he had himself commanded that no likeness of anything whatsoever should be made.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c165"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:justin-martyr:john.3.14:e413f2ea:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "justin-martyr",
+      "workId": "hcf:work:justin-martyr:dialogue-with-trypho-chapter-xci",
+      "title": "Dialogue with Trypho, Chapter XCI on john 3:14",
+      "excerpt": "And it seems that the type and sign, which was erected to counteract the serpents which bit Israel, was intended for the salvation of those who believe that death was declared to come thereafter on the serpent through Him that would be crucified, but salvation to those who had been bitten by him and had betaken themselves to Him that sent His Son into the world to be crucified. For the Spirit of prophecy by Moses did not teach us to believe in the serpent, since it shows us that he was cursed by God from the beginning; and in Isaiah tells us that he shall be put to death as an enemy by the mighty sword, which is Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c165"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:tertullian:john.3.14:f1c78cb7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-ii",
+      "title": "Against Marcion Book II on john 3:14",
+      "excerpt": "I say nothing of what was figured by this cure. Thus, too, the golden Cherubim and Seraphim were purely an ornament in the figured fashion of the ark; adapted to ornamentation for reasons totally remote from all condition of idolatry, on account of which the making a likeness is prohibited; and they are evidently not at variance with this law of prohibition, because they are not found in that form of similitude, in reference to which the prohibition is given.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:tertullian:john.3.14:e0cc4302:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:pseudo-tertullian-against-all-heresies",
+      "title": "Pseudo-Tertullian Against All Heresies on john 3:14",
+      "excerpt": "Christ Himself (they say further) in His gospel imitates Moses' serpent's sacred power, in saying: \"And as Moses upreared the serpent in the desert, so it behoveth the Son of man to be upreared.\" Him they introduce to bless their eucharistic (elements).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.3.14"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.14:38d0ef33:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:14",
+      "excerpt": "Here he mentions the mystery of the passion, in virtue of which baptism has its efficacy: \"We who have been baptized into Christ Jesus, have been baptized into his death\" (Rom 6:3). And with regard to this he does three things. First, he gives a symbol for the passion. Secondly, the manner of the passion. Thirdly, the fruit of the passion.\r\n\r\nHe takes the symbol from the old law, in order to adapt to the understanding of Nicodemus; so he says, Just as Moses lifted up the serpent in the desert. This refers to Numbers (21:5) when the Lord, faced with the Jewish people saying, \"We are sick of this useless food,\" sent serpents to punish them; and when the people came to Moses and he interceded with the Lord, the Lord commanded that for a remedy they make a serpent of bronze; and this was to serve both as a remedy against those serpents and as a symbol of the Lord's passion. Hence it says that this bronze serpent was lifted up as a sign (Nm 21:9).\r\n\r\nNow it is characteristic of serpents that they are poisonous, but not so the serpent of bronze, although it was a symbol of a poisonous serpent. So, too, Christ did not have sin, which is also a poison: \"Sin, when it is fully developed, brings forth death\" (Jas 1:15); but he had the likeness of sin: \"God sent his own Son, in the likeness of sinful flesh\" (Rom 8:3). And thus Christ had the effect of the serpent against the insurgence of inflamed concupiscences.\r\n\r\nHe shows the manner of the passion when he says, so must the Son of Man be lifted up: and this refers to the lifting up of the cross. So below (12:34) when it says, \"The Son of Man must be lifted up,\" it also has, \"He said this to indicate the manner of his death.\"\r\n\r\nHe willed to die lifted up, first of all, to cleanse the heavens: for since he had cleansed the things on earth by the sanctity of his life, the things of the air were left to be cleansed by his death: \"through him he should reconcile all things to himself, whether on earth or in the heavens, making peace through his blood\" (Col 1:20). Secondly, to triumph over the demons who prepare for war in the air: \"the prince of the power of the air\" (Eph 2:2). Thirdly, he wished to die lifted up to draw our hearts to himself: \"I, if I am lifted up from the earth, will draw all to myself\" (below 12:32). And fourthly, because in the death of the cross he was lifted up in the sense that there he triumphed over his enemies; so it is not called a death, but a lifting up: \"He will drink from the stream on the way, therefore he will lift up his head\" (Ps 109:7). Fifthly, he willed to die lifted up because the cross was the reason for his being lifted up, i.e., exalted: \"He became obedient to the Father even to death, the death of the cross; on account of which God has exalted him\" (Phil 2:8).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.14"
     }
   ]
 }

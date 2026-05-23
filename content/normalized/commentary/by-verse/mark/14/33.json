@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.14.33:1f413645:1"
       ]
     },
     {
@@ -74,6 +81,58 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.14.33:424b2f0c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 14:33",
+      "excerpt": "And He takes Peter, and James, and John with Him, and began to be afraid and to be very sorrowful. And He said to them: My soul is sorrowful even unto death. Christ is afraid, while Peter is not afraid. Christ is afraid; Peter says: I will lay down my life for you (John 13). Christ says: My soul is troubled. Both are true, and each is full of reason, because the one who is lower does not fear, and the one who is higher carries the emotion of fear. For he, as a man, does not understand the power of death. But He, being established as God in the body, exposes the frailty of the flesh, so that the impiety of those who deny the mystery of the Incarnation might be excluded. Indeed, He said this, and Manichaeus did not believe, Valentinus denied, and Marcion judged it a phantom. However, He equaled the human set forth in the truth of the body to such an extent by emotion, that He would say: Nevertheless, not as I will, but as You will (Matthew 26). Therefore He took up my will, took up my sorrow. I confidently name sorrow because I preach the cross. My will is what He called His own. Because as a man He took up my sorrow, as a man He spoke.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.14.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.14.33:e4515f01:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 14:33",
+      "excerpt": "And he taketh with him Peter, and James, and John. He takes only those who had been witnesses of His glory on Mount Tabor, that they who had seen His glory might also see His sufferings, and learn that He is really man, in that He is sorrowful. And began to be sore amazed, and very heavy. For since He had taken on Himself the whole of human nature, He took also those natural things which belong to man, amazement, heaviness, and sorrow; for men are naturally unwilling to die.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.14.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.14.33:0e969ad5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 14:33",
+      "excerpt": "He takes with Him only those three disciples who were eyewitnesses of His glory on Tabor, so that they, having seen His glorious state, might also see His state of sorrow, and thus come to know that He is True Man and grieves and anguishes just as we do. For since He assumed the whole of man with his natural properties, He grieves and sorrows, without doubt, according to human nature; for we humans by nature shrink from death.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.14.33"
     },
     {
       "id": "catena-mark-1203-v33",
@@ -127,6 +186,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.14.33:e11838aa:0"
       ]
     }
   ]

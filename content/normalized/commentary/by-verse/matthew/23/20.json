@@ -76,6 +76,31 @@
       ]
     },
     {
+      "id": "catena-matt-3330-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.20",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:16–22",
+      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.23.20:9145cf98:0"
+      ]
+    },
+    {
       "id": "catena-matt-3328-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.23.20",
@@ -94,22 +119,55 @@
       ]
     },
     {
-      "id": "catena-matt-3330-v20",
+      "id": "hcf:origen:matthew.23.20:fe033118:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.20",
       "topicSlugs": [],
       "personId": "origen",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:16–22",
-      "excerpt": "Now an oath is in confirmation of somewhat that has been spoken. The oath here then may signify testimony of Scripture which we produce in confirmation of that word which we speak. So that Divine Scripture is the temple of God,783 the gold is the meaning which it contains. As the gold which is outside the Temple is not sanctified, so all thoughts which are without divine Scripture, however admirable they may seem, are not hallowed. We ought not therefore to bring any speculations of our own for the confirmation of doctrine, unless such as we can shew are hallowed by being contained in divine…",
+      "workId": "hcf:work:origen:commentary-on-matthew-17",
+      "title": "COMMENTARY ON MATTHEW 17 on matthew 23:20",
+      "excerpt": "One of the Pharisaical traditions regarded oath taking. Some were swearing by the temple, others by the gold of the temple; some by the altar, others by the gifts of the altar. The Pharisees were teaching that one who swore by the gold of the altar or by the gift of the altar was obligated, whereas one who swore by the temple or by the altar was not under obligation. Our Savior spoke against these traditions. He wished to call them back from human traditions to divine revelation. Those who hand on such traditions are blind and foolish. They do not see that what is placed in the temple is not sanctified through itself but through the Lord of the temple. That which is placed on the altar is judged already as a gift of God, which is why it is placed on the altar. It seems foolish to argue that one who swears in one way is bound and one who swears in another way is not bound. This assumes that what is sanctified is above the one who sanctifies. It seems foolish to argue that one who swears by heaven is less vulnerable than one who swears by God himself. Jesus showed them that it was equally as absurd to swear by heaven as to swear by the temple or by the altar. It is irrational to assume that one avoids punishment because he is not swearing by God but by the throne of God. Thus he spoke to the Jews prohibiting them to follow the Pharisaic tradition. Moreover, he clearly rejected the whole business of swearing at all, as if it were a superior way.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.23.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.20:74e72964:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:20",
+      "excerpt": "He calls them blind for not wanting to teach what was right, but instead valuing what was of lesser importance, and giving second place to that which was worthy of honor. For they valued the gold in the temple, the images of the Cherubim and the golden urn, more highly than they did the temple itself. Therefore they taught the people that it was of no consequence to swear by the temple, and instead they taught them to swear by the gold which is in the temple. This gold, however, was precious precisely because it was in the temple. And the Pharisees said that the gifts placed on the altar were more valuable than the altar itself. So the Pharisees even taught that if someone swore by the golden vessel, or the ox, or the sheep brought for sacrifice, and then broke his oath, he was sentenced to pay an equal amount. The Pharisees put a higher value on the gift upon the altar because of the profit they derived from sacrifices. But if some one swore by the temple and then broke his oath, he was absolved [and owed nothing, the Pharisees would say], as it was not possible to build [and pay] anything equal to the temple. And so the oath by the temple was considered to be of lesser consequence because of the Pharisees' love of money. Under the Old Covenant, Christ does not permit the gift to be greater than the altar, but for us it is just the opposite: the altar is sanctified by the gifts, for the loaves are changed by divine grace into the very Body of the Lord Himself. Therefore the altar is sanctified by them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.20"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.20:6a20092d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:20",
+      "excerpt": "He therefore that swears by the altar, swears by it and by all things that are upon it. Here he sets forth another reason. The temple contains the gold, and not conversely; similarly, the altar contains the gift, and not conversely. Hence he who swears by the temple swears by the gold that is in the temple; and he who swears by the altar, i.e., by the altar, swears by what is on it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.20"
     },
     {
       "id": "catena-matt-3325-v20",
@@ -145,6 +203,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.23.20:b8c7cce6:0"
       ]
     },
     {

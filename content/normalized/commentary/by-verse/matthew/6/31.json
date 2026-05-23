@@ -23,14 +23,14 @@
       ]
     },
     {
-      "id": "catena-matt-1023-v31",
+      "id": "catena-matt-1025-v31",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.31",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:31–33",
-      "excerpt": "He said not ‘God knoweth,’ but, “Your Father knoweth,” in order to lead them to higher hope; for if He be their Father, He will not endure to forget his children, since not even human fathers could do so. He says, “That ye have need of259 all these things,” in order that for that very reason, because they are necessary, ye may the more lay aside all anxiety. For he who denies his son bare necessaries, after what fashion is he a father? But for superfluities they have no right to look with the like confidence.",
+      "excerpt": "As to what some say that these things are so many that they cannot be compassed by the knowledge of God; they ought with like reason to maintain further that God cannot know all numbers which are certainly infinite. But infinity of number is not beyond the compass of His understanding, who is Himself infinite. Therefore if whatever is compassed by knowledge, is bounded by the compass of him that has the knowledge, then is all infinity in a certain unspeakable way bounded by God, because it is not incomprehensible by His knowledge.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -59,14 +59,14 @@
       ]
     },
     {
-      "id": "catena-matt-1025-v31",
+      "id": "catena-matt-1023-v31",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.31",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:31–33",
-      "excerpt": "As to what some say that these things are so many that they cannot be compassed by the knowledge of God; they ought with like reason to maintain further that God cannot know all numbers which are certainly infinite. But infinity of number is not beyond the compass of His understanding, who is Himself infinite. Therefore if whatever is compassed by knowledge, is bounded by the compass of him that has the knowledge, then is all infinity in a certain unspeakable way bounded by God, because it is not incomprehensible by His knowledge.",
+      "excerpt": "He said not ‘God knoweth,’ but, “Your Father knoweth,” in order to lead them to higher hope; for if He be their Father, He will not endure to forget his children, since not even human fathers could do so. He says, “That ye have need of259 all these things,” in order that for that very reason, because they are necessary, ye may the more lay aside all anxiety. For he who denies his son bare necessaries, after what fashion is he a father? But for superfluities they have no right to look with the like confidence.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -110,25 +110,135 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.6.31:7411b124:0"
       ]
     },
     {
-      "id": "catena-matt-1018-v31",
+      "id": "hcf:remigius-auxerre:matthew.6.31:95d343e2:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.31",
       "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:31–33",
-      "excerpt": "Having thus expressly cut off all anxiety concerning food and raiment, by an argument drawn from observation of the inferior creation, He follows it up by a further prohibition; “Be not ye therefore careful, saying, What shall we eat, what shall we drink, or wherewithal shall we be clothed?”",
+      "personId": "remigius-auxerre",
+      "workId": "hcf:work:remigius-auxerre:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 6:31",
+      "excerpt": "The Lord repeated this, that He might show how highly necessary this precept is, and that He might inculcate it more strongly on our hearts.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c533",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.6.31"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.6.31:66b65cdd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-22",
+      "title": "Homily on the Gospel of Matthew 22 on matthew 6:31",
+      "excerpt": "\"Therefore take no thought, saying, what shall we eat? or, what shall we drink? or, wherewithal shall we be clothed? For after all these things do the nations of the world seek.\"\r\n\r\nSeest thou how again He hath both shamed them the more, and hath also shown by the way, that He had commanded nothing grievous nor burdensome? As therefore when He said, \"If ye love them which love you,\" it is nothing great which ye practise, for the very Gentiles do the same; by the mention of the Gentiles He was stirring them up to something greater: so now also He brings them forward to reprove us, and to signify that it is a necessary debt which He is requiring of us. For if we must show forth something more than the Scribes or Pharisees, what can we deserve, who so far from going beyond these, do even abide in the mean estate of the Gentiles, and emulate their littleness of soul?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.6.31"
+    },
+    {
+      "id": "hcf:jerome:matthew.6.31:e05a35cb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:31",
+      "excerpt": "(Verse 31 and following) Do not be anxious, saying: What shall we eat, or what shall we drink, or with what shall we be clothed? For all these things the Gentiles seek. For your Father knows that you need all these things. But seek first the kingdom of God and His righteousness, and all these things will be added to you. Therefore, do not be anxious about tomorrow, for tomorrow will be anxious for itself. Each day has enough trouble of its own. Therefore, it has granted that those who forbid thinking about the future should be anxious about the present. And so the Apostle says: 'Working night and day with our hands, so as not to burden any of you' (1 Thess. 2:9). Tomorrow is understood as a future time in the Scriptures, as Jacob says: 'And my righteousness shall answer for me tomorrow' (Gen. 30:33). And in Samuel's vision, the witch speaks to Saul: 'Tomorrow you will be with me' (1 Sam. 28:19).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.6.31"
+    },
+    {
+      "id": "hcf:hcf-nemesius-of-emesa:matthew.6.31:4b48d178:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-nemesius-of-emesa",
+      "workId": "hcf:work:hcf-nemesius-of-emesa:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 6:31",
+      "excerpt": "(De Nat. Hom. 42.) That there is a Providence, is shown by such signs as the following; The continuance of all things, of those things especially which are in a state of decay and reproduction, and the place and order of all things that exist is ever preserved in one and the same state; and how could this be done unless by some presiding power? But some affirm that God does indeed care for the general continuance of all things in the universe, and provides for this, but that all particular events depend on contingency. Now there are but three reasons that can be alleged for God exercising no providence of particular events; either God is ignorant that it is good to have knowledge of particular things; or He is unwilling; or He is unable. But ignorance is altogether alien from blessed substance; for how shall God not know what every wise man knows, that if particulars were destroyed, the whole would be destroyed? But nothing prevents all individuals from perishing; when no power watches over them. If, again, He be unwilling, this must be from one of two reasons; inactivity, or the meanness of the occupation. But inactivity is produced by two things; either we are drawn aside by some pleasure, or hindered by some fear, neither of which can be piously supposed of God. If they affirm that it would be unbecoming, for that it is beneath such blessedness to stoop to things so trifling, how is it not inconsistent that a workman overseeing the whole of any machine, leaves no part however insignificant without attention, knowing the whole is but made up of the parts, and thus pronounce God the Creator of all things to be less wise than craftsmen? But if it be that He is unable, then is He unable to bestow benefits on us. But if we are unable to comprehend the manner of special Providence, we have not therefore any right to deny its operation; we might as well say that, because we did not know the number of mankind, therefore there were no men.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.6.31"
+    },
+    {
+      "id": "hcf:tertullian:matthew.6.31:d54c0d0a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:to-his-wife-book-i",
+      "title": "To His Wife Book I on matthew 6:31",
+      "excerpt": "On the other hand, this worldly concupiscence (to which I referred) has, as its causes, glory, cupidity, ambition, want of sufficiency; through which causes it trumps up the \"necessity\" for marrying,-promising itself, forsooth, heavenly things in return-to lord it, (namely,) in another's family; to roost on another's wealth; to extort splendour from another's store to lavish expenditure which you do not feel! Far be all this from believers, who have no care about maintenance, unless it be that we distrust the promises of God, and (His) care and providence, who clothes with such grace the lilies of the field; who, without any labour on their part, feeds the fowls of the heaven; who prohibits care to be taken about to-morrow's food and clothing, promising that He knows what is needful for each of His servants-not indeed ponderous necklaces, not burdensome garments, not Gallic mules nor German bearers, which all add lustre to the glory of nuptials; but \"sufficiency,\" which is suitable to moderation and modesty, Presume, I pray you, that you have need of nothing if you \"attend upon the Lord; \" nay, that you have all things, if you have the Lord, whose are all things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.6.31"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.6.31:eec0d68e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:31",
+      "excerpt": "\"Therefore take no thought, saying, What shall we eat? or, What shall we drink? or, Wherewithal shall we be clothed? For after all these things do the Gentiles seek.\" He does not forbid us to eat, but to say, \"What shall we eat?\" The rich say in the evening, \"What shall we eat tomorrow?\" See that it is luxury and excess that He forbids.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.6.31"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.6.31:4e73c9b8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:31",
+      "excerpt": "Be not solicitous therefore. Here he argues, and regarding this he does two things: first, he draws one conclusion; secondly, he introduces another argument for the same conclusion, at the words For after all these things. Separately he had treated of the solicitude about food and drink and about clothing; here he concludes about both. Hence Be not solicitous. And what was said above should be recalled: that solicitude about temporal things is forbidden in four respects — namely, that we not set our end in them, that we not seek them excessively, that we not too much occupy our mind with them, and that we not despair of God's providence. Here certain other things are set forth, and he adds one other meaning. Hence he says Be not solicitous therefore, etc., i.e., when you live in some community, do not be solicitous to have something special in food, drink, and clothing: \"Be among them as one of them\" (Sir 32:1).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.6.31"
     },
     {
       "id": "catena-matt-1021-v31",
@@ -149,6 +259,31 @@
       ]
     },
     {
+      "id": "catena-matt-1018-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.31",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:31–33",
+      "excerpt": "Having thus expressly cut off all anxiety concerning food and raiment, by an argument drawn from observation of the inferior creation, He follows it up by a further prohibition; “Be not ye therefore careful, saying, What shall we eat, what shall we drink, or wherewithal shall we be clothed?”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.6.31:e6b59976:0"
+      ]
+    },
+    {
       "id": "catena-matt-1022-v31",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.31",
@@ -164,6 +299,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.6.31:92a182f2:0"
       ]
     }
   ]

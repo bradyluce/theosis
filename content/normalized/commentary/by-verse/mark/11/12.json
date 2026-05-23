@@ -37,6 +37,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.11.12:2b3ae9dd:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0917-v12",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.11.12",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 11:11–14",
+      "excerpt": "Just in the same way as He speaks parables, so also His deeds are parables; therefore He comes hungry to seek fruit off the fig tree, and though He knew the time of figs was not yet, He condemns it to perpetual barrenness, that He might shew that the Jewish people could not be saved through the leaves, that is, the words of righteousness which it had, without fruit, that is, good works, but should be cut down and cast into the fire. Hungering therefore, that is, desiring the salvation of mankind, He saw the fig tree, which is, the Jewish people, having leaves, or, the words of the Law and the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -76,24 +101,6 @@
       ]
     },
     {
-      "id": "catena-mark-0917-v12",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.11.12",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 11:11–14",
-      "excerpt": "Just in the same way as He speaks parables, so also His deeds are parables; therefore He comes hungry to seek fruit off the fig tree, and though He knew the time of figs was not yet, He condemns it to perpetual barrenness, that He might shew that the Jewish people could not be saved through the leaves, that is, the words of righteousness which it had, without fruit, that is, good works, but should be cut down and cast into the fire. Hungering therefore, that is, desiring the salvation of mankind, He saw the fig tree, which is, the Jewish people, having leaves, or, the words of the Law and the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0914-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.11.12",
@@ -112,6 +119,127 @@
       ]
     },
     {
+      "id": "hcf:bede:mark.11.12:2a849f84:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 11:12",
+      "excerpt": "And the next day, when they went out from Bethany, he was hungry. He was hungry, either showing the truth of human flesh or desiring the salvation of believers, burning with zeal against the unbelief of Israel.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.11.12"
+    },
+    {
+      "id": "hcf:bede:mark.11.12:948d128e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 11:12",
+      "excerpt": "It goes on, And on the morrow, when they were come from Bethany, he was hungry.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.11.12"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.11.12:b06420c6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 11:12",
+      "excerpt": "But let us also examine the account of the fig tree, for here something seemingly strange and harsh appears. First, Jesus was hungry early in the morning; second, He demands fruit when the season for figs had not yet come; and furthermore, He punishes an insensible tree. For in what He says and does here, there was a special providence. Until now Jesus had often worked miracles, but only for the benefit of people. But the disciples had not yet seen Him do harm to anyone. Now, in order to show the disciples that He can also punish, and that, if He wished, He could in a single hour destroy those intending to crucify Him, He manifests His power upon an insensible tree. And the miracle was truly great in that a tree so full of sap withered at once, for the fig tree is more full of sap than almost all other trees. That He hungered early in the morning — this He permitted His flesh to experience by a special providence; and He seeks fruit prematurely on the fig tree for the purpose, as I said above, of showing the disciples that He can also punish. And this fig tree was at the same time a figure of the Jewish synagogue, which had only leaves, that is, the Law, which provided nothing but a shadow, while they bore no fruit at all. But Jesus hungered for their salvation. He says: \"My food is to do the will of Him who sent Me\" (John 4:34), and this will of God consists in converting sinners. Since, however, the synagogue had no fruit, it was cursed and withered, having (no longer among it) neither prophets nor teachers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.11.12"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.11.12:3c819460:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 11:12",
+      "excerpt": "Wishing to show His disciples that if He chose He could in a moment exterminate those who were about to crucify Him. In a mystical sense, however, the Lord entered into the temple, but came out of it again, to show that He left it desolate, and open to the spoiler.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.11.12"
+    },
+    {
+      "id": "hcf:augustine:mark.11.12:0a3a9cc1:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:harmony-of-the-gospels-2-68-131",
+      "title": "HARMONY OF THE GOSPELS 2.68.131 on mark 11:12",
+      "excerpt": "Mark, on his side, has recorded in connection with the second day what he had omitted to notice as occurring really on the first—namely, the incident of the expulsion of the sellers and buyers from the temple. On the other hand, Matthew, after mentioning what was done on the second day—namely, the cursing of the fig tree as he was returning in the morning from Bethany into the city—has omitted certain facts which Mark has inserted, namely, his coming into the city, and his going out of it in the evening, and the astonishment which the disciples expressed at finding the tree dried up as they passed by in the morning; and then to what had taken place on the second day, which was the day on which the tree was cursed, he has attached what really took place on the third day—namely, the amazement of the disciples at seeing the tree's withered condition, and the declaration which they heard from the Lord on the question of the power of faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:harmony-of-the-gospels-2-68-131",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.11.12"
+    },
+    {
+      "id": "hcf:augustine:mark.11.12:3eaa1ec1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on mark 11:12",
+      "excerpt": "Did Christ really want physically to relish and consume fruit himself when he sought the fruit of this fig tree? And if he had found it there, would he then even have eaten it? Did he really want to drink water when he said to the woman of Samaria, \"Give me a drink\"? When he was on the cross saying \"I thirst,\" was this really all about his physical thirst? For what does Christ hunger more than our good works? For what does Christ thirst more than our faithful response? On the Psalms",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.11.12"
+    },
+    {
+      "id": "hcf:hilary-poitiers:mark.11.12:c989b53e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-10-24",
+      "title": "ON THE TRINITY 10.24 on mark 11:12",
+      "excerpt": "As we behold the mystery of his tears, hunger and thirst, let us remember that the one who wept also raised the dead to life, rejoicing for Lazarus. From the very One who thirsted flowed rivers of living water. He who hungered was able to wither the fig tree which offered no fruit for his hunger. How could this be, that he who was able to strike the green tree dead merely by his word could also have a nature that could hunger? This was the mystery of his hunger, grief, and thirst, that the Word was assuming flesh. His humanity was entirely exposed to our weaknesses, yet even then his glory was not wholly put away as he suffered these indignities. His weeping was not for himself, his thirst was not for water, nor his hunger merely for food. He did not eat or drink or weep just to satisfy his appetites. Rather, in his incarnate humbling he was demonstrating the reality of his own body by hungering, by doing what human nature does. And when he ate and drank, it was not a concession to some necessity external to himself, but to show his full participation in the human condition.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-10-24",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:mark.11.12"
+    },
+    {
       "id": "catena-mark-0916-v12",
       "relation": "verse",
       "targetVerseId": "kjva:mark.11.12",
@@ -127,6 +255,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.11.12:4778e0b9:0"
       ]
     }
   ]

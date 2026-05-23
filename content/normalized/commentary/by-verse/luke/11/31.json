@@ -37,42 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1841-v31",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.31",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:29–32",
-      "excerpt": "That you may know that the people of the Synagogue are treated with dishonour, while the blessedness of the Church is increased. But as Jonas was a sign to the Ninevites, so also will the Son of man be to the Jews. Hence it is added, They seek a sign; and there shall no sign be given them but the sign of Jonas the prophet.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1842-v31",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.31",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:29–32",
-      "excerpt": "A sign is a thing brought openly to view, containing in itself the manifestation of something hidden, as the sign of Jonas represents the descent to hell, the ascension of Christ, and His resurrection from the dead. Hence it is added, For as Jonas was a sign to the Ninevites, so shall also the Son of man be to this generation. He gives them a sign, not from heaven, because they were unworthy to see it, but from the lowest depths of hell; a sign, namely, of His incarnation, not of His divinity; of His passion, not of His glorification.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.11.31:322d9ff9:0"
       ]
     },
     {
@@ -109,17 +80,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.11.31:3e5dc047:0"
       ]
     },
     {
-      "id": "catena-luke-1848-v31",
+      "id": "catena-luke-1841-v31",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.31",
       "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:29–32",
-      "excerpt": "Now as she was queen of the Ethiopians, and in a far distant country, so in the beginning the Church of the Gentiles was in darkness, and far off from the knowledge of God. But when Christ the Prince of peace shone forth, the Jews being still in darkness, thither came the Gentiles, and offered to Christ the frankincense of piety, the gold of divine knowledge, and precious stones, that is, obedience to His commands.",
+      "excerpt": "That you may know that the people of the Synagogue are treated with dishonour, while the blessedness of the Church is increased. But as Jonas was a sign to the Ninevites, so also will the Son of man be to the Jews. Hence it is added, They seek a sign; and there shall no sign be given them but the sign of Jonas the prophet.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -148,21 +126,46 @@
       ]
     },
     {
-      "id": "catena-luke-1840-v31",
+      "id": "catena-luke-1842-v31",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.31",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "basil-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:29–32",
-      "excerpt": "Our Lord had been assailed with two kinds of questions, for some accused Him of casting out devils through Beelzebub, to whom up to this point His answer was addressed; and others tempting Him, sought from Him a sign from heaven, and these He now proceeds to answer. As it follows, And when the people were gathered thick together, he began to say, This is an evil generation, &c.",
+      "excerpt": "A sign is a thing brought openly to view, containing in itself the manifestation of something hidden, as the sign of Jonas represents the descent to hell, the ascension of Christ, and His resurrection from the dead. Hence it is added, For as Jonas was a sign to the Ninevites, so shall also the Son of man be to this generation. He gives them a sign, not from heaven, because they were unworthy to see it, but from the lowest depths of hell; a sign, namely, of His incarnation, not of His divinity; of His passion, not of His glorification.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1848-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.31",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:29–32",
+      "excerpt": "Now as she was queen of the Ethiopians, and in a far distant country, so in the beginning the Church of the Gentiles was in darkness, and far off from the knowledge of God. But when Christ the Prince of peace shone forth, the Jews being still in darkness, thither came the Gentiles, and offered to Christ the frankincense of piety, the gold of divine knowledge, and precious stones, that is, obedience to His commands.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-of-nyssa:luke.11.31:200ed133:0"
       ]
     },
     {
@@ -174,6 +177,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:29–32",
       "excerpt": "Not certainly by any authority to judge, but by the contrast of a better deed. As it follows, For she came from the utmost parts of the earth to hear the wisdom of Solomon; and, behold, a greater than Solomon is here. Hie in this place is not the pronoun, but the adverb of place, that is, “there is one present among you who is incomparably superior to Solomon.” He said not, “I am greater than Solomon,” that he might teach us to be humble, though fruitful in spiritual graces. As if he said, “The barbarian woman hastened to hear Solomon, taking so long a journey to be instructed in the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.11.31:c606116b:2"
+      ]
+    },
+    {
+      "id": "catena-luke-1840-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.31",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:29–32",
+      "excerpt": "Our Lord had been assailed with two kinds of questions, for some accused Him of casting out devils through Beelzebub, to whom up to this point His answer was addressed; and others tempting Him, sought from Him a sign from heaven, and these He now proceeds to answer. As it follows, And when the people were gathered thick together, he began to say, This is an evil generation, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -199,24 +227,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1844-v31",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.31",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:29–32",
-      "excerpt": "Now Jonas after he came forth from the whale’s belly converts the men of Nineveh by his preaching, but when Christ rose again, the Jewish nation believed not. So there was a sentence already passed upon them, of which there follows a second example, as it is said, The queen of the south shall rise up in the judgment with the men of this generation, and condemn them.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.11.31:2c3dd7e3:3"
       ]
     },
     {
@@ -235,7 +252,158 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.11.31:4deb0c91:0"
       ]
+    },
+    {
+      "id": "catena-luke-1844-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.31",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:29–32",
+      "excerpt": "Now Jonas after he came forth from the whale’s belly converts the men of Nineveh by his preaching, but when Christ rose again, the Jewish nation believed not. So there was a sentence already passed upon them, of which there follows a second example, as it is said, The queen of the south shall rise up in the judgment with the men of this generation, and condemn them.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.11.31:888ae271:1"
+      ]
+    },
+    {
+      "id": "hcf:bede:luke.11.31:5b220d1f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:31",
+      "excerpt": "For she came from the ends of the earth to hear the wisdom of Solomon, and behold, something greater than Solomon is here.--Here in this place it signifies not a pronoun, but an adverb of place, that is, he is conversing among you in the present, who is incomparably superior to Solomon. Scripture, however, recounts how the Queen of Sheba, with her people and empire abandoned, came to Judea to hear Solomon's wisdom through so many difficulties, and bringing many gifts, received even more from him. She, therefore, will condemn the Jews in judgment, because she sought him from the farthest ends of the earth, whom she recognized to be famous upon receiving the gift of wisdom. They, however, having him among them who is not wise from elsewhere, but is wisdom and the power of God Himself, preferred not only not to listen but to blaspheme and act with treachery.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.31"
+    },
+    {
+      "id": "hcf:bede:luke.11.31:2689602f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:31",
+      "excerpt": "The Queen of the South will rise in the judgment with the men of this generation, and will condemn them. She will indeed condemn not by the power of judgment, but by the comparison of a better act. But if the Queen of the South, who is undoubtedly chosen, will rise in the judgment with the reprobates, it is shown that there is one resurrection of all mortals, namely the good and the bad, and that not according to the fables of the Jews a thousand years before judgment, but to be in the very judgment.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.31"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.11.31:36940911:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-7-96",
+      "title": "Exposition of the Gospel of Luke, 7.96 on luke 11:31",
+      "excerpt": "In this also is clearly expressed the mystery of the Church, which is gathered from the ends of the earth, in the penance of the Ninevites, and in the seeking of wisdom by the Queen of the South: so that she may know the peaceful words of Solomon, the Queen, indeed, whose kingdom is indivisible, arising from diverse and distant peoples into one body. Therefore, this is a great Sacrament... of Christ and the Church: but yet this is greater; because that took place in figure before, but now the mystery is fulfilled in truth; for there the type of Solomon, here Christ in His own body. Therefore, the Church consists of two things, so that either you may not know how to sin, or you may cease to sin; for repentance removes the offense, wisdom avoids it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.11.31"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.31:f4bd1e8a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:31",
+      "excerpt": "The Queen of the South shall likewise condemn this generation, for she came from the ends of the earth to hear the wisdom of Solomon.\r\n\r\nBy the \"queen of the south,\" understand also every soul that is strong and steadfast in goodness. Let me explain. The north, when it serves as a symbol of the dwelling place of the adversary, is not approved by Scripture, because it chills and brings deadness and numbness; but the south (as the opposite of the north) is approved, because the south wind brings warmth, enlivening, and warms even the numbed parts. Therefore in the Song of Songs the bride, driving away the north, says: \"Arise... from the north and come from the south\" (Song 4:16), and the prophet again says: \"And the one coming from the north I will remove from you,\" that is, Satan (Joel 2:20). Thus the soul that reigns in the south, that is, in the gracious land of the spiritual life, and that has grown strong through the exercise of active virtue, comes to hear wisdom, that is, ascends to contemplation. For the wisdom of Solomon, the peaceful king, is the contemplation of our Lord and God, which no one will attain unless through the exercise of active virtue he becomes a king and master in the virtuous life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.31"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.11.31:eedfb2fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-11-4",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 11.4 on luke 11:31",
+      "excerpt": "The Queen of the South will condemn it because she is a type of the church. Just as she came to Solomon, so too the church came to our Lord, and just as she condemned this generation, so also will the church. If she, who wished to see wisdom that passes away and a king who was mortal, was judging the synagogue, how much more the church, which desires to see a king who does not pass away and wisdom which does not go astray, will judge? If we suffer with him, we will also be glorified with him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-11-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.11.31"
+    },
+    {
+      "id": "hcf:hcf-pseudo-clement:luke.11.31:e286b704:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pseudo-clement",
+      "workId": "hcf:work:hcf-pseudo-clement:clementine-homilies-homily-11",
+      "title": "Clementine Homilies, Homily 11 on luke 11:31",
+      "excerpt": "\"But that indeed in the day of judgment the doings of those who have known the truth are compared with the good deeds of those who have been in error, the unlying One Himself has taught us, saying to those who neglected to come and listen to Him, 'The queen of the south shall rise up with this generation, and shall condemn it; because she came from the extremities of the earth to hear the wisdom of Solomon: and behold, a greater than Solomon is here,' and ye do not believe Him. And to those amongst the people who would not repent at His preaching He said, 'The men of Nineveh shall rise up with this generation and shall condemn it, for they heard and repented on the preaching of Jonas: and behold, a greater is here, and no one believes.' And thus, setting over against all their impiety those from among the Gentiles who have done well, in order to condemn those who, possessing the true religion, had not acted so well as those who were in error, he exhorted those having reason not only to do equally with the Gentiles whatsoever things are excellent, but more than they. And this speech has been suggested to me, taking occasion from the necessity of respecting the separation, and of washing after copulation, and of not denying such purity, though those who are in error do the same, since those who in error do well, without being saved, are for the condemnation of those who are in the worship of God, and do ill; because their respect for purity is through error, and not through the worship of the true Father and God of all.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c400"
+      ],
+      "targetVerseId": "kjva:luke.11.31"
+    },
+    {
+      "id": "hcf:hcf-pseudo-clement:luke.11.31:a922f31e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-pseudo-clement",
+      "workId": "hcf:work:hcf-pseudo-clement:recognitions-book-vi",
+      "title": "Recognitions (Book VI) on luke 11:31",
+      "excerpt": "\"And truly confusion is our worthy portion, if we have done no more than those who are inferior to us in knowledge. But if it be confusion to us, to be found equal to them in works, what shall become of us if the examination that is to take place find us inferior and worse than them? Hear, therefore, how our true Prophet has taught us concerning these things; for, with respect to those who neglect to hear the words of wisdom, He speaks thus: 'The queen of the south shall rise in judgment with this generation, and shall condemn it, because she came from the ends of the earth to hear the wisdom of Solomon; and, behold, a greater than Solomon is here, and they hear Him not.' But with respect to those who refused to repent of their evil deeds, He spoke thus: 'The men of Nineve shall rise in the judgment with this generation, and shall condemn it; for they repented at the preaching of Jonas; and, behold, a greater than Jonas is here.' You see, therefore, how He condemned those who were instructed out of the law, by adducing the example of those who came from Gentile ignorance, and showing that the former were not even equal to those who seemed to live in error. From all these things, then, the statement that He propounded is proved, that chastity, which is observed to a certain extent even by those who live in error, should be held much more purely and strictly, in all its forms, as we showed above, by us who follow the truth; and the rather because with us eternal rewards are assigned to its observance.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c400"
+      ],
+      "targetVerseId": "kjva:luke.11.31"
     }
   ]
 }

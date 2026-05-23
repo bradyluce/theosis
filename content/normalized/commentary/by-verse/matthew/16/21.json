@@ -4,24 +4,6 @@
   "verseNumber": 21,
   "entries": [
     {
-      "id": "catena-matt-2423-v21",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.16.21",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 16:20–21",
-      "excerpt": "When then above He sends His disciples to preach, and commands them to proclaim589 His advent, this seems contrary to His command here, that they should not say that He is Jesus the Christ. To me it seems that it is one thing to preach Christ, and another to preach Jesus the Christ. Christ is a common title of dignity, Jesus the proper name of the Saviour.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-2425-v21",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.16.21",
@@ -30,6 +12,31 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 16:20–21",
       "excerpt": "But that none should suppose that this is only any explanation, and not an evangelic interpretation, what follows explains the reasons of His forbidding them to preach Him at that time; “Then began Jesus to shew unto his disciples that he must needs go unto Jerusalem, and suffer many things of the elders and Scribes, and Chief Priests, and be put to death, and rise again the third day.” The meaning is; Then preach Me when I shall have suffered these things, for it will be of no avail that Christ be preached publicly, and His Majesty spread abroad among the people, when after a little time…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.16.21:46ea7eb8:0"
+      ]
+    },
+    {
+      "id": "catena-matt-2423-v21",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.16.21",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 16:20–21",
+      "excerpt": "When then above He sends His disciples to preach, and commands them to proclaim589 His advent, this seems contrary to His command here, that they should not say that He is Jesus the Christ. To me it seems that it is one thing to preach Christ, and another to preach Jesus the Christ. Christ is a common title of dignity, Jesus the proper name of the Saviour.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -55,17 +62,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.16.21:1cadc87e:0"
       ]
     },
     {
-      "id": "catena-matt-2422-v21",
+      "id": "catena-matt-2427-v21",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.16.21",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 16:20–21",
-      "excerpt": "Seeing Peter had confessed Him to be Christ the Son of the living God, because He would not have them preach this in the mean time, He adds, “Then charged he his disciples that they should tell no man, that he was Jesus the Christ.”",
+      "excerpt": "And observe that it is not said, ‘He began to say,’ or ‘to teach,’590 but “to shew;” for as things are said to be shewn to the sense, so the things which Christ spake are said to be shewn by Him. Nor indeed do I think, that to those who saw Him suffering many things in the flesh, were those things which they saw so shewn as this representation in words shewed to the disciples the mystery of the passion and resurrection of Christ. At that time, indeed, He only “began to shew them,” and afterwards when they were more able to receive it, He shewed them more fully; for all that Jesus began to do,…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
@@ -94,14 +108,14 @@
       ]
     },
     {
-      "id": "catena-matt-2427-v21",
+      "id": "catena-matt-2422-v21",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.16.21",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 16:20–21",
-      "excerpt": "And observe that it is not said, ‘He began to say,’ or ‘to teach,’590 but “to shew;” for as things are said to be shewn to the sense, so the things which Christ spake are said to be shewn by Him. Nor indeed do I think, that to those who saw Him suffering many things in the flesh, were those things which they saw so shewn as this representation in words shewed to the disciples the mystery of the passion and resurrection of Christ. At that time, indeed, He only “began to shew them,” and afterwards when they were more able to receive it, He shewed them more fully; for all that Jesus began to do,…",
+      "excerpt": "Seeing Peter had confessed Him to be Christ the Son of the living God, because He would not have them preach this in the mean time, He adds, “Then charged he his disciples that they should tell no man, that he was Jesus the Christ.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
@@ -110,6 +124,75 @@
         "patristic",
         "matthew"
       ]
+    },
+    {
+      "id": "hcf:origen:matthew.16.21:8c32f5cb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 16:21",
+      "excerpt": "And observe that it is not said,' He began to say,' or 'to teach,' but to show; for as things are said to be shown to the sense, so the things which Christ spake are said to be shown by Him. Nor indeed do I think, that to those who saw Him suffering many things in the flesh, were those things which they saw so shown as this representation in words showed to the disciples the mystery of the passion and resurrection of Christ. At that time, indeed, He only began to show them, and afterwards when they were more able to receive it, He showed them more fully; for all that Jesus began to do, that He accomplished. He must needs go to Jerusalem, to be put to death indeed in the Jerusalem which is below, but to rise again and reign in the heavenly Jerusalem. But when Christ rose again, and others were risen with Him, they no longer sought the Jerusalem which is beneath, or the house of prayer in it, but that which is above. He suffers many things from the elders of the earthly Jerusalem, that He may be glorified by those heavenly elders who receive His mercies. He rose again from the dead on the third day, that He may deliver from the evil one, and purchase for such as are so delivered this gift, that they be baptized in spirit, soul, and body, in the name of the Father, and the Son, and the Holy Spirit, who are three days perpetually present to those that through them have been made children of light.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.16.21"
+    },
+    {
+      "id": "hcf:jerome:matthew.16.21:9e5b8aa2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 16:21",
+      "excerpt": "(Verse 21) Then Jesus began to show his disciples that he must go to Jerusalem, and suffer many things from the elders, chief priests, and scribes, and be killed, and on the third day be raised. And the meaning is: Proclaim me then, when I have suffered these things, because it is not profitable to publicly proclaim Christ and make known his majesty to the people, who after a little while will see him whipped and crucified, and suffer many things from the elders, chief priests, and scribes. And now Jesus suffers many things from those who crucify the Son of God again (Heb. VI): and when the elders are thought to be in the Church, and the high priests, following the simple letter, kill the Son of God, who is wholly felt in spirit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.16.21"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.16.21:fc8203be:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-54",
+      "title": "Homily on the Gospel of Matthew 54 on matthew 16:21",
+      "excerpt": "\"From that time forth began He to show unto them that He must suffer. From that time.\" What time? When He had fixed the doctrine in them; when He had brought in the beginning of the Gentiles.\r\n\r\nBut not even so did they understand what He said. \"For the saying,\" it is said, \"was hid from them;\" and they were as in a kind of perplexity, not knowing that He must rise again. Therefore He rather dwells on the difficulties, and enlarges His discourse, that He may open their mind, and they may understand what it can be that He speaks of.\r\n\r\n\"But they understood not, but the saying was hid from them, and they feared to ask this;\" not whether He should die, but how, and in what manner, and what this mystery could be. For they did not even know what was this same rising again, and supposed it much better not to die.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.16.21"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.16.21:b7b2c240:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 16:21",
+      "excerpt": "From that time forth began Jesus to show unto His disciples how that He must go unto Jerusalem and suffer many things of the elders and chief priests and scribes, and be killed, and be raised again the third day. To them He foretells the Passion, lest it come upon them unexpectedly and they be scandalized, thinking that He suffered unwillingly and without foreknowing it. When they had heard, in Peter's confession, that He was the Son of God, then He also revealed the Passion to them. But to the sorrow He adds the joy, that He would rise on the third day.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.16.21"
     }
   ]
 }

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.4.32:84fe6819:0"
       ]
     },
     {
@@ -51,6 +58,24 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0318-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.32",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:30–34",
+      "excerpt": "For since the multitude was unlearned, he instructs them from objects of food and familiar names, and for this reason he adds, But without a parable spake he not unto them, that is, in order that they might be induced to approach and to ask Him. It goes on; And when they were alone, he expounded all things to his disciples, that is, all things about which they were ignorant and asked Him, not simply all, whether obscure or not.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -91,25 +116,82 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.4.32:72eaa1e3:1"
       ]
     },
     {
-      "id": "catena-mark-0318-v32",
+      "id": "hcf:theophylact-of-ohrid:mark.4.32:7400853d:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.4.32",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:30–34",
-      "excerpt": "For since the multitude was unlearned, he instructs them from objects of food and familiar names, and for this reason he adds, But without a parable spake he not unto them, that is, in order that they might be induced to approach and to ask Him. It goes on; And when they were alone, he expounded all things to his disciples, that is, all things about which they were ignorant and asked Him, not simply all, whether obscure or not.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:32",
+      "excerpt": "But the preaching of the word, once sown upon the earth, expanded and grew, so that the birds of the air rest upon it, that is, all people of lofty and elevated mind and knowledge. Indeed, how many wise men found rest in this preaching, having abandoned Greek wisdom! Thus the preaching became greater than all else and put forth great branches. For the apostles went forth like branches: one to Rome, another to India, a third to Achaia, and the rest to other lands of the earth.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.32"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:mark.4.32:faabf355:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on mark 4:32",
+      "excerpt": "Now let us consider the nature of mustard, and the power of comparison. The mustard seed itself is certainly a cheap and simple thing: if it is ground, it releases its strength. Similarly, faith at first seems simple, but if it is tested by adversity, it reveals the grace of its virtue; so that it also fills others who either hear or read with the fragrance of itself. The mustard seed of our martyrs is Felix, Nabor, and Victor: they had the fragrance of faith, but it was hidden. Persecution came, they laid down their weapons, bowed their necks, and with a broken sword spread the grace of their martyrdom throughout the whole world, so that it may rightly be said: Their sound has gone out into all the earth.\r\n\r\nBut faith is worn in one way, pressured in another, and sown in another. The Lord Himself is the grain of mustard seed. He was blameless from injury, but as the grain of mustard seed which the people had not crushed, he did not know. He preferred to be worn, so that we may say: \"For we are the good odor of Christ unto God.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:mark.4.32"
+    },
+    {
+      "id": "hcf:augustine:mark.4.32:78e28247:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-32",
+      "title": "LETTER 32 on mark 4:32",
+      "excerpt": "In the same manner, then, the catholicity of our mother becomes palpable when others who are not her sons make war on her. It is a fact that this little branch of worshipers in Africa has been broken off from the great tree which embraces the whole world in the spreading of its branches. She is in labor with them in charity, that they may return to the root without which they cannot have true life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.4.32"
+    },
+    {
+      "id": "hcf:peter-chrysologus:mark.4.32:dd7cb4f1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:sermon-98",
+      "title": "SERMON 98 on mark 4:32",
+      "excerpt": "It is up to us to sow this mustard seed in our minds and let it grow within us into a great tree of understanding reaching up to heaven and elevating all our faculties; then it will spread out branches of knowledge, the pungent savor of its fruit will make our mouths burn, its fiery kernel will kindle a blaze within us inflaming our hearts, and the taste of it will dispel our unenlightened repugnance. Yes, it is true: a mustard seed is indeed an image of the kingdom of God. Christ is the kingdom of heaven. Sown like a mustard seed in the garden of the virgin's womb, he grew up into the tree of the cross whose branches stretch across the world. Crushed in the mortar of the passion, its fruit has produced seasoning enough for the flavoring and preservation of every living creature with which it comes in contact. As long as a mustard seed remains intact, its properties lie dormant; but when it is crushed they are exceedingly evident. So it was with Christ; he chose to have his body crushed, because he would not have his power concealed.… Christ became all things in order to restore all of us in himself. The man Christ received the mustard seed which represents the kingdom of God; as man he received it, though as God he had always possessed it. He sowed it in his garden, that is in his bride, the Church. The Church is a garden extending over the whole world, tilled by the plough of the gospel, fenced in by stakes of doctrine and discipline, cleared of every harmful weed by the labor of the apostles, fragrant and lovely with perennial flowers: virgins' lilies and martyrs' roses set amid the pleasant verdure of all who bear witness to Christ and the tender plants of all who have faith in him. Such then is the mustard seed which Christ sowed in his garden. When he promised a kingdom to the patriarchs, the seed took root in them; with the prophets it sprang up; with the apostles it grew tall; in the Church it became a great tree putting forth innumerable branches laden with gifts. And now you too must take the wings of the psalmist's dove, gleaming gold in the rays of divine sunlight, and fly to rest for ever among those sturdy, fruitful branches. No snares are set to trap you there; fly off, then, with confidence and dwell securely in its shelter.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-98",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:mark.4.32"
     },
     {
       "id": "catena-mark-0311-v32",
@@ -145,6 +227,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.32:ae2be6b0:0"
       ]
     },
     {

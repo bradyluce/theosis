@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.14.9:d9b17dcb:0"
       ]
     },
     {
@@ -30,60 +37,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:7–11",
       "excerpt": "First the dropsical man is cured, in whom the abundant discharges of the flesh crushed down the powers of the soul, quenched the ardour of the Spirit. Next, humility is taught, when at the nuptial feast the desire of the highest place is forbidden. As it is said, And he spake, Sit not down in the highest room.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2243-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.9",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:7–11",
-      "excerpt": "For to rush forward hastily to honours which are not fitting for us, indicates rashness and casts a slur upon our actions. Hence it follows, lest a more honourable man than thou be invited, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2245-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.9",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:7–11",
-      "excerpt": "For if a man wishes not to be set before others, he obtains this honour according to the divine word. As it follows; That when he that bade thee cometh, he may say unto thee, Friend, go up higher. In these words He does not harshly chide, but gently admonishes; for a word of advice is enough for the wise. And thus for their humility men are crowned with honours; as it follows, Then shall thou have worship.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2246-v9",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.9",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:7–11",
-      "excerpt": "To take then the lowest place at a feast, according to our Lord’s command, is becoming to every man, but again to rush contentiously after this is to be condemned as a breach of order and cause of tumult; and a strife raised about it, will place you on a level with those who dispute concerning the highest place. Wherefore, as our Lord here says, it becomes him who makes the feast to arrange the order of sitting down. Thus in patience and love should we mutually bear ourselves, following all things decently according to order, not for external appearance or public display; nor should we seem…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,6 +65,67 @@
       ]
     },
     {
+      "id": "catena-luke-2245-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.9",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:7–11",
+      "excerpt": "For if a man wishes not to be set before others, he obtains this honour according to the divine word. As it follows; That when he that bade thee cometh, he may say unto thee, Friend, go up higher. In these words He does not harshly chide, but gently admonishes; for a word of advice is enough for the wise. And thus for their humility men are crowned with honours; as it follows, Then shall thou have worship.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2243-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.9",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:7–11",
+      "excerpt": "For to rush forward hastily to honours which are not fitting for us, indicates rashness and casts a slur upon our actions. Hence it follows, lest a more honourable man than thou be invited, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2246-v9",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.9",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:7–11",
+      "excerpt": "To take then the lowest place at a feast, according to our Lord’s command, is becoming to every man, but again to rush contentiously after this is to be condemned as a breach of order and cause of tumult; and a strife raised about it, will place you on a level with those who dispute concerning the highest place. Wherefore, as our Lord here says, it becomes him who makes the feast to arrange the order of sitting down. Thus in patience and love should we mutually bear ourselves, following all things decently according to order, not for external appearance or public display; nor should we seem…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.14.9:e4ea5fbe:0"
+      ]
+    },
+    {
       "id": "catena-luke-2250-v9",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.9",
@@ -127,6 +141,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.14.9:5c8512c7:1"
       ]
     },
     {
@@ -145,6 +166,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.14.9:05456eba:0"
       ]
     },
     {
@@ -164,6 +192,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.14.9:1922f26a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke",
+      "title": "Exposition of the Gospel of Luke on luke 14:9",
+      "excerpt": "Then, Christ teaches humility. At the feast, Christ gently opposes the longing for a better seat, so that the humanity of persuasion excludes the harshness of coercion, reason promotes the effect of persuasion, and correction chastises pride.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.14.9"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.14.9:7fba3034:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-102",
+      "title": "Commentary on the Gospel of Luke, Sermon 102 on luke 14:9",
+      "excerpt": "He saw certain of those who were invited foolishly seizing the uppermost seats as a thing of importance, and worth the taking, and that they were eager after vainglory, for the benefit both of them and us He utters an urgent warning, saying; \"When you are bidden of any one, seat not yourself at the head of the seat, lest a more honourable man than you be bidden of him, and when he that bade you and him comes, he say unto you, Give this man place; and then you begin with shame to take the lowest place.\"\r\n\r\nNow such things may seem perchance to some to be but trifling matters, and not worthy of much attention. But when any one fixes upon them the eye of his mind, he will then learn, from what blame they deliver a man, and how great orderliness they produce in him. For in the first place to hurry inconsiderately after honours neither suitable, nor due to us, shows us to be foolish, rude, and arrogant, seizing what is not fitting for us, but for others rather, who are greater than and superior to ourselves. Whoever he is that thus acts, is hated, and often too becomes an object of ridicule, when he has to restore to others, and that often against his will, the honour which in no respect belongs unto him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.14.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.14.9:3c92a9f8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 14:9",
+      "excerpt": "Look from the other side also at this: from what mockery He delivers man and how He teaches him propriety. For how much shame there is in the case where you take a place unbefitting to you, and then someone more honored than you arrives, and the one who invited you says: \"Give him your place!\" And this can happen often. And you yourself will have to yield, while they will sit higher.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.14.9"
+    },
+    {
+      "id": "hcf:bede:luke.14.9:0f5757db:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 14:9",
+      "excerpt": "Lest perhaps someone more honorable than you has been invited by him, and the one who invited both him and you comes and says to you, \"Give this man your place,\" and then you begin with shame to take the lowest place. He gives place to the one invited after, who, made more secure by the confidence of his long conversation, is surpassed by the swiftness of those who have followed Christ. And with shame, he holds the lowest place when, recognizing better things in others, he humbles whatever high thoughts he had of his own works, saying with the Prophet, \"I am poor and in labor from my youth, yet having been exalted, I am humbled and confounded\" (Psalm LXXIII).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.14.9"
     }
   ]
 }

@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0615-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.4.5",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 4:5–8",
-      "excerpt": "Truly in a moment of time, the kingdoms of this world are described. For here it is not so much the rapid glance of sight which is signified as is declared the frailty of mortal power. For in a moment all this passes by, and oftentimes the glory of this world has vanished before it has arrived. It follows, And he said unto him, I will give thee all this power.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.4.5:95e5d662:1"
       ]
     },
     {
@@ -58,14 +47,14 @@
       ]
     },
     {
-      "id": "catena-luke-0618-v5",
+      "id": "catena-luke-0615-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.5",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 4:5–8",
-      "excerpt": "And dost thou, whose lot is the unquenchable fire, promise to the Lord of all that which is His own? Didst thou think to have Him for thy worshipper, from dread of whom the whole creation trembles?",
+      "excerpt": "Truly in a moment of time, the kingdoms of this world are described. For here it is not so much the rapid glance of sight which is signified as is declared the frailty of mortal power. For in a moment all this passes by, and oftentimes the glory of this world has vanished before it has arrived. It follows, And he said unto him, I will give thee all this power.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -73,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.4.5:bf6d82be:0"
       ]
     },
     {
@@ -112,17 +108,17 @@
       ]
     },
     {
-      "id": "catena-luke-0620-v5",
+      "id": "catena-luke-0618-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.5",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 4:5–8",
-      "excerpt": "The devil saying to our Saviour, If thou wilt fall down and worship me, receives answer that he himself ought rather to worship Christ as his Lord and God.",
+      "excerpt": "And dost thou, whose lot is the unquenchable fire, promise to the Lord of all that which is His own? Didst thou think to have Him for thy worshipper, from dread of whom the whole creation trembles?",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -148,6 +144,24 @@
       ]
     },
     {
+      "id": "catena-luke-0620-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.4.5",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 4:5–8",
+      "excerpt": "The devil saying to our Saviour, If thou wilt fall down and worship me, receives answer that he himself ought rather to worship Christ as his Lord and God.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0611-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.5",
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.4.5:4ef26f00:0"
       ]
     },
     {
@@ -199,6 +220,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.4.5:2d11cd53:0"
       ]
     },
     {
@@ -213,24 +241,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0614-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.4.5",
-      "topicSlugs": [],
-      "personId": "titus-bostra",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 4:5–8",
-      "excerpt": "Or, the devil described the world in language, and as he thought brought it vividly before our Lord’s mind as though it were a certain house.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -254,6 +264,99 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "catena-luke-0614-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.4.5",
+      "topicSlugs": [],
+      "personId": "titus-bostra",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 4:5–8",
+      "excerpt": "Or, the devil described the world in language, and as he thought brought it vividly before our Lord’s mind as though it were a certain house.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.4.5:69e54651:0"
+      ]
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.4.5:2f8a016f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-16",
+      "title": "Forty Gospel Homilies, Homily 16 on luke 4:5",
+      "excerpt": "But behold, when it is said that God made man was taken up by the devil onto a high mountain, the mind recoils, human ears are terrified to hear this. Yet we recognize that these things are not incredible if we consider other things that were done to him. Certainly the devil is the head of all the wicked, and all the wicked are members of this head. Was not Pilate a member of the devil? Were not the Jews who persecuted and the soldiers who crucified Christ members of the devil? What wonder is it then if he allowed himself to be led onto a mountain by him, who also allowed himself to be crucified by his members?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.4.5"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.4.5:b9bbec80:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-12",
+      "title": "Commentary on the Gospel of Luke, Sermon 12 on luke 4:5",
+      "excerpt": "But O thou malignant, and wicked, and accursed being, how didst thou dare to shew the Lord all the kingdoms of the whole creation, and say, \"All these are mine? Now therefore if Thou wilt fall down and worship me, I will give them Thee.\" How dost thou promise that which is not thine? Who made thee heir of God's kingdom? Who made thee lord of all under heaven? Thou hast seized these things by fraud. Restore them therefore to the incarnate Son, the Lord of all. Hear what the prophet Isaiah says respecting thee; \"Hath it been prepared for thee also to reign? a deep gulf, fire, and brimstone, and wood laid in order; the anger of the Lord as a gulf burning with brimstone.\" How then dost thou, whose lot is the inextinguishable flame, promise to the King of all that which is His own? Didst thou think to have Him as thy worshipper at Whom all things tremble, while the Seraphim, and all the angelical powers hymn His glory?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.4.5"
+    },
+    {
+      "id": "hcf:origen:luke.4.5:32fb3ff9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-the-gospel-of-luke-30-1",
+      "title": "HOMILIES ON THE GOSPEL OF LUKE 30.1 on luke 4:5",
+      "excerpt": "We should not think that when the devil showed Jesus the kingdoms of the world, he showed him, for example, the kingdom of the Persians and of the Indians. \"He showed him all the kingdoms of the world,\" that is, his own kingdom, how he reigned in the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.4.5"
+    },
+    {
+      "id": "hcf:bede:luke.4.5:81698f22:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 4:5",
+      "excerpt": "And the devil led him up, and showed him all the kingdoms of the world in a moment of time. When God, made man, is said to be led by the devil, the mind recoils, human ears shudder to hear this. Yet we recognize these things are not incredible, if we consider other deeds in him. Certainly the devil is the head of all the wicked, and all the wicked are members of this head. Therefore, what wonder if he allowed himself to be led by him to a mountain, who also endured being crucified by his members? It is not unworthy of our Redeemer, who willed to be tempted, having come to be killed. For it was just that he should overcome our temptations with his own temptations, just as he came to conquer our death with his death. But indeed, worldly and temporal things are shown in a moment of time. For it does not so much indicate the speed of sight, as it expresses the fragility of fleeting power. For in a moment all these things pass away, and often the honor of the world departs before it arrives. For what can be long-lasting in the world, when even the ages themselves are not long-lasting?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.4.5"
     }
   ]
 }

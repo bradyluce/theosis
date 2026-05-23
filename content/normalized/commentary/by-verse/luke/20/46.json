@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.20.46:ed74f884:0"
       ]
     },
     {
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.20.46:80414ec4:1"
       ]
     },
     {
@@ -109,6 +123,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.20.46:bcfcaf55:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2956-v46",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.46",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:45–47",
+      "excerpt": "Because they not only do what is evil, but make a pretence of prayer, so making virtue an excuse for their sin. They also impoverish widows whom they were bound to pity, by their presence driving them to great expenses.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
       ]
     },
     {
@@ -130,22 +169,55 @@
       ]
     },
     {
-      "id": "catena-luke-2956-v46",
+      "id": "hcf:theophylact-of-ohrid:luke.20.46:321a0c14:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.20.46",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:45–47",
-      "excerpt": "Because they not only do what is evil, but make a pretence of prayer, so making virtue an excuse for their sin. They also impoverish widows whom they were bound to pity, by their presence driving them to great expenses.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 20:46",
+      "excerpt": "Since He was sending the disciples as teachers into the world, He rightly urges them not to imitate the Pharisees in their love of glory, their love of preeminence, and in general their worldliness and people-pleasing. For to carefully seek out greetings in the marketplaces is characteristic of those who flatter every person they meet and curry a favorable opinion of themselves, or who use this as a means of collecting money.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.20.46"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.20.46:719f9037:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-137",
+      "title": "COMMENTARY ON LUKE, HOMILY 137 on luke 20:46",
+      "excerpt": "To keep the company of the holy disciples free from disgraceful faults, he usefully testifies. He says, \"Beware of the scribes and Pharisees.\" That means do not expose yourselves to be the prey of their vices and do not be partakers of their disregard of God. What was their custom? They walked in the streets beautifully clothed, dragging with them a pompous dignity to catch the praises of those who saw them. While they were wicked and their hearts were full of all dishonesty, they falsely assumed to themselves the reputation of piety. With solemn ways not based on reality, they diligently lengthened their prayers, supposing that unless they used many words, God would not know what their requests were. The Savior of all did not permit his worshipers to act so shamefully. He said, \"When you pray, do not babble as the heathen do. They think that they will be heard for their many words.\" He commanded them to be humble and not lovers of boasting. He commanded them not to pay any regard to the desire of empty glory but rather to seek the honor that comes from above, from God. In such ways, he deposits the knowledge of his mystery. He also appoints instructors of others, as possessing an exact and blameless knowledge of the sacred doctrines. He makes them to know how David's Son is also David's Lord. We also will classify ourselves with them, God the Father illuminating us with divine light in Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-137",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.20.46"
+    },
+    {
+      "id": "hcf:bede:luke.20.46:429e7bdf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 20:46",
+      "excerpt": "When all the people were listening, he said to his disciples: Beware of the scribes who wish to walk in long robes, and love greetings in the marketplaces, the best seats in the synagogues, and the places of honor at banquets. To walk in stoles means to proceed to the public adorned in more distinguished garments. In which among other things, the rich man who feasted sumptuously every day is described as having sinned (Luke 16). However, it should be noted that he does not forbid those whose duty these things properly belong to, to be greeted in the forum, or to sit in the first places, or to recline at banquets; but rather, he teaches that those who, whether having them or not, unjustly love these things, are to be considered as reprobate by every faithful person, rightly censuring the mind and not the rank. Nonetheless, it is not without fault if those wish to engage in lawsuits in the forum, who desire to be called teachers in the Synagogue in the seat of Moses. Truly, we are commanded to beware of those desirous of vain glory for two reasons: first, so that we are not led astray by their pretense, thinking that what they do is good, and second, that we are not inflamed by emulation, foolishly rejoicing in being praised for the good things they pretend.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.20.46"
     }
   ]
 }

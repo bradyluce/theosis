@@ -40,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-luke-3321-v32",
+      "id": "catena-luke-3323-v32",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.32",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:26–32",
-      "excerpt": "Women also are ever prone to tears, and have hearts easily disposed to pity.",
+      "excerpt": "Signifying that in the time to come women would be bereft of their children. For when war breaks out upon the land of the Jews, all shall perish, both small and great. Hence it follows, For, behold, the days are coming, in the which they shall say, Blessed are the barren, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -58,14 +58,14 @@
       ]
     },
     {
-      "id": "catena-luke-3323-v32",
+      "id": "catena-luke-3321-v32",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.32",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:26–32",
-      "excerpt": "Signifying that in the time to come women would be bereft of their children. For when war breaks out upon the land of the Jews, all shall perish, both small and great. Hence it follows, For, behold, the days are coming, in the which they shall say, Blessed are the barren, &c.",
+      "excerpt": "Women also are ever prone to tears, and have hearts easily disposed to pity.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -87,6 +87,24 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3325-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.32",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:26–32",
+      "excerpt": "By these days He signifies the time of the siege and captivity which was coming upon them from the Romans, of which He had said before, Woe to them that are with child, and give suck in those days. It is natural, when captivity by an enemy is threatening, to seek for refuge in fastnesses or hidden places, where men may lie concealed. And so it follows, Then shall they begin to say to the mountains, Fall on us; and to the hills, Cover us. For Josephus relates, that when the Romans pressed hard upon them, the Jews sought hastily the caverns of the mountains, and the lurking places in the hills.…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -120,24 +138,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:26–32",
       "excerpt": "A large multitude indeed followed the cross of Christ, but with very different feelings. For the people who had demanded His death were rejoicing that they should see Him dying, the women weeping that He was about to die. But He was followed by the weeping only of women, not because that vast crowd of men was not also sorrowful at His Passion, but because the less esteemed female sex could more freely give utterance to what they thought.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3325-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.32",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:26–32",
-      "excerpt": "By these days He signifies the time of the siege and captivity which was coming upon them from the Romans, of which He had said before, Woe to them that are with child, and give suck in those days. It is natural, when captivity by an enemy is threatening, to seek for refuge in fastnesses or hidden places, where men may lie concealed. And so it follows, Then shall they begin to say to the mountains, Fall on us; and to the hills, Cover us. For Josephus relates, that when the Romans pressed hard upon them, the Jews sought hastily the caverns of the mountains, and the lurking places in the hills.…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -202,42 +202,6 @@
       ]
     },
     {
-      "id": "catena-luke-3322-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.32",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:26–32",
-      "excerpt": "He bids those who weep for Him cast their eyes forward to the evils that were coming, and weep for themselves.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3324-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.32",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:26–32",
-      "excerpt": "Seeing indeed that women shall cruelly roast their children, and the belly which had produced shall miserably again receive that which it bore.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3327-v32",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.32",
@@ -271,7 +235,84 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.23.32:a2b3615e:1"
       ]
+    },
+    {
+      "id": "catena-luke-3324-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.32",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:26–32",
+      "excerpt": "Seeing indeed that women shall cruelly roast their children, and the belly which had produced shall miserably again receive that which it bore.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3322-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.32",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:26–32",
+      "excerpt": "He bids those who weep for Him cast their eyes forward to the evils that were coming, and weep for themselves.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.23.32:51e3d738:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 23:32",
+      "excerpt": "The devil, wishing to create and instill a bad opinion of the Lord, arranges for two robbers to be crucified with Him. But see how he lost one of them, and how what the devil plotted against the Lord served to His greater glory. For no one ever sought the crosses of the robbers; on the contrary, the whole world longed in expectation for the Cross of the Lord. And from this it is clearly evident that the Lord is not a lawbreaker like the robbers, but the pioneer of all righteousness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.23.32"
+    },
+    {
+      "id": "hcf:bede:luke.23.32:d109c71f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 23:32",
+      "excerpt": "And two other criminals were also led away with him, to be put to death. So that what was said might be fulfilled: And he was numbered with the wicked. But he was numbered with the wicked in death, so that he might justify the wicked in the resurrection, who, being in the form of God, was made man for the sake of men, to give men the power to become children of God (John 1).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.23.32"
     },
     {
       "id": "catena-luke-3314-v32",

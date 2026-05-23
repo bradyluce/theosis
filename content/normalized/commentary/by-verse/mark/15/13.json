@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-1282-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.13",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:6–15",
-      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1285-v13",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.13",
@@ -112,6 +94,24 @@
       ]
     },
     {
+      "id": "catena-mark-1282-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.13",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:6–15",
+      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1287-v13",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.13",
@@ -127,6 +127,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.13:eff4d996:1"
       ]
     },
     {
@@ -146,6 +153,40 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:augustine:mark.15.13:66015641:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:harmony-of-the-gospels-3-13-47",
+      "title": "HARMONY OF THE GOSPELS 3.13.47 on mark 15:13",
+      "excerpt": "Mark, who studies brevity more than any of the Evangelists, has given a concise indication of Pilate's desire and of his efforts to save the Lord's life. For, after giving us the statement, \"And they cried again, 'Crucify him' \" (which makes it clear that they had cried out before for Barabbas to be released), he has appended these words: \"Then Pilate continued to say to them, \"Why, what evil has he done?\" Thus by one short sentence he has given us an idea of matters which took a long time for their transaction.",
+      "takeaway": "",
+      "sourceId": "hcf:source:harmony-of-the-gospels-3-13-47",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.13"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.13:c25ee174:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:13",
+      "excerpt": "Notice then the bloodthirstiness of the Jews and the moderation of Pilate (although he too is worthy of condemnation, because he did not firmly stand up for the righteous man). For they cried out, \"Crucify Him,\" while he, though feebly, nevertheless attempted to free Jesus from condemnation. Therefore he asked again, \"What shall I do with Jesus?\" — trying to give them the opportunity to release the Lord as innocent, which is why he delayed and put it off.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.13"
     },
     {
       "id": "catena-mark-1283-v13",
@@ -181,6 +222,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.13:1b2d6420:0"
       ]
     }
   ]

@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:mark.6.7:935c72f2:1"
       ]
     },
     {
@@ -55,17 +62,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.7:fa73ba49:1"
       ]
     },
     {
-      "id": "catena-mark-0408-v7",
+      "id": "catena-mark-0414-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.7",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:6–13",
-      "excerpt": "For such should be the preacher’s trust in God, that, though he takes no thought for supplying his own wants in this present world, yet he should feel most certain that these will not be left unsatisfied, lest whilst his mind is taken up with temporal things, he should provide less of eternal things to others.",
+      "excerpt": "Again, allegorically; under the figure of a scrip is pointed out the burdens of this world, by bread is meant temporal delights, by money in the purse, the hiding of wisdom; because he who receives the office of a doctor, should neither be weighed down by the burden of worldly affairs, nor be made soft by carnal desires, nor hide the talent of the word committed to him under the ease of an inactive body. It goes on, And he said unto them, In what place soever ye enter into an house, there abide till ye depart from that place. Where He gives a general precept of constancy, that they should…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -94,14 +108,14 @@
       ]
     },
     {
-      "id": "catena-mark-0414-v7",
+      "id": "catena-mark-0408-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.7",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:6–13",
-      "excerpt": "Again, allegorically; under the figure of a scrip is pointed out the burdens of this world, by bread is meant temporal delights, by money in the purse, the hiding of wisdom; because he who receives the office of a doctor, should neither be weighed down by the burden of worldly affairs, nor be made soft by carnal desires, nor hide the talent of the word committed to him under the ease of an inactive body. It goes on, And he said unto them, In what place soever ye enter into an house, there abide till ye depart from that place. Where He gives a general precept of constancy, that they should…",
+      "excerpt": "For such should be the preacher’s trust in God, that, though he takes no thought for supplying his own wants in this present world, yet he should feel most certain that these will not be left unsatisfied, lest whilst his mind is taken up with temporal things, he should provide less of eternal things to others.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -123,6 +137,24 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0415-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.7",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:6–13",
+      "excerpt": "That is, lest they should be accused of gluttony in passing from one to another. It goes on, And whoever shall not receive you, &c. This the Lord commanded them, that they might shew that they had walked a long way for their sakes, and to no purpose. Or, because they received nothing from them, not even dust, which they shake off, that it might be a testimony against them, that is, by way of convicting themv.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -163,6 +195,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.7:15fedc70:1"
       ]
     },
     {
@@ -174,24 +213,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:6–13",
       "excerpt": "Instructing them also by this means not to be fond of receiving gifts, in order too that those, who saw them proclaim poverty, might be reconciled to it, when they saw that the Apostles themselves possessed nothing.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0415-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.7",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:6–13",
-      "excerpt": "That is, lest they should be accused of gluttony in passing from one to another. It goes on, And whoever shall not receive you, &c. This the Lord commanded them, that they might shew that they had walked a long way for their sakes, and to no purpose. Or, because they received nothing from them, not even dust, which they shake off, that it might be a testimony against them, that is, by way of convicting themv.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -220,14 +241,65 @@
       ]
     },
     {
-      "id": "catena-mark-0409-v7",
+      "id": "hcf:theophylact-of-ohrid:mark.6.7:10b4e6e9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:7",
+      "excerpt": "Furthermore, not only did He Himself teach, but He also sends His disciples, and moreover in pairs of two, so that they might be bolder. For if He had sent them one by one, one alone could not have acted so boldly, and if He had sent more than two together, the number of apostles would not have sufficed for all the villages. So He sends them two by two: \"Two are better than one,\" says Ecclesiastes (Eccl. 4:9).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.7"
+    },
+    {
+      "id": "hcf:bede:mark.6.7:3cc2548e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:7",
+      "excerpt": "And he went around the villages in a circuit, teaching; and he called the twelve and began to send them two by two, and gave them power over unclean spirits. The kind and merciful Lord and master does not envy his servants and disciples his own virtues; and just as he had healed all sickness and all infirmity, he also gave his apostles power, to heal all infirmity and all sickness. But there is a great difference between having and giving, granting and receiving. He, whatever he does, acts by the power of the Lord; those, if they do anything, confess their own weakness and the power of the Lord, saying, like Peter: In the name of Jesus Christ of Nazareth, rise up and walk (Acts III).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.7"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.6.7:ba4195a8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-4",
+      "title": "Forty Gospel Homilies, Homily 4 on mark 6:7",
+      "excerpt": "Hence also miracles were added to the holy preachers, so that the power displayed might give faith to their words, and that those who preached new things might do new things. When the world was flourishing, when the human race was increasing, when the flesh was subsisting long in this life, when the abundance of things was overflowing, who upon hearing would believe that there was another life? Who would prefer invisible things to visible things? But when the sick were returning to health, when the dead were rising to life, when lepers were receiving cleanliness of flesh, when demoniacs were snatched from the power of unclean spirits, with so many visible miracles performed, who would not believe what he heard about invisible things? For visible miracles shine forth for this purpose: that they may draw the hearts of those who see them to faith in invisible things, so that through what is done wondrously on the outside, what is within may be perceived to be far more wondrous.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.6.7"
+    },
+    {
+      "id": "catena-mark-0416-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.7",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:6–13",
-      "excerpt": "The Lord also gives them this command, that they might shew by their mode of life, how far removed they were from the desire of riches.",
+      "excerpt": "Or else, that it might be a witness of the toil of the way, which they sustained for them; or as if the dust of the sins of the preachers was turned against themselves. It goes on, And they went and preached that men should repent. And they cast out many devils, and anointed with oil many that were sick, and healed them. Mark alone mentions their anointing with oil. James however, in his canonical Epistle, says a thing similar. For oil both refreshes our labours, and gives us light and joy; but again, oil signifies the mercy of the unction of God, the healing of infirmity, and the…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -256,14 +328,14 @@
       ]
     },
     {
-      "id": "catena-mark-0416-v7",
+      "id": "catena-mark-0409-v7",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.7",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:6–13",
-      "excerpt": "Or else, that it might be a witness of the toil of the way, which they sustained for them; or as if the dust of the sins of the preachers was turned against themselves. It goes on, And they went and preached that men should repent. And they cast out many devils, and anointed with oil many that were sick, and healed them. Mark alone mentions their anointing with oil. James however, in his canonical Epistle, says a thing similar. For oil both refreshes our labours, and gives us light and joy; but again, oil signifies the mercy of the unction of God, the healing of infirmity, and the…",
+      "excerpt": "The Lord also gives them this command, that they might shew by their mode of life, how far removed they were from the desire of riches.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

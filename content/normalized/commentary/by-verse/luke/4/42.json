@@ -4,14 +4,14 @@
   "verseNumber": 42,
   "entries": [
     {
-      "id": "catena-luke-0741-v42",
+      "id": "catena-luke-0743-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.42",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 4:42–44",
-      "excerpt": "When he had bestowed sufficient favour upon the people by miracles, it was necessary for Him to depart. For miracles are always thought greater when the worker is gone, since they themselves are then the more heeded, and have in their turn a voice; as it is said, But when it was day, he departed, and went.",
+      "excerpt": "Observe also, that He might, by abiding in the same place, have drawn all men over to Himself. He did not however do so, giving us an example to go about and seek those who are perishing, as the shepherd his lost sheep, and as the physician the sick. For by recovering one soul, we may be able to blot out a thousand sins. Hence also it follows, And he was preaching in the synagogues of Galilee. He frequently indeed went to the synagogues, to shew them that He was no deceiver. For if He were constantly to dwell in the desolate places, they would spread abroad that He was concealing Himself.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -37,17 +37,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.4.42:0f080389:0"
       ]
     },
     {
-      "id": "catena-luke-0743-v42",
+      "id": "catena-luke-0741-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.42",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 4:42–44",
-      "excerpt": "Observe also, that He might, by abiding in the same place, have drawn all men over to Himself. He did not however do so, giving us an example to go about and seek those who are perishing, as the shepherd his lost sheep, and as the physician the sick. For by recovering one soul, we may be able to blot out a thousand sins. Hence also it follows, And he was preaching in the synagogues of Galilee. He frequently indeed went to the synagogues, to shew them that He was no deceiver. For if He were constantly to dwell in the desolate places, they would spread abroad that He was concealing Himself.",
+      "excerpt": "When he had bestowed sufficient favour upon the people by miracles, it was necessary for Him to depart. For miracles are always thought greater when the worker is gone, since they themselves are then the more heeded, and have in their turn a voice; as it is said, But when it was day, he departed, and went.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -73,7 +80,118 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.4.42:dd611c27:1"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.4.42:490ea045:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 4:42",
+      "excerpt": "But when the day came, he went out to a deserted place, and the crowds sought him, and came to him. If the death of the Lord is expressed by the setting sun, why is not his resurrection indicated by the returning day? The light revealed by which he is sought by the crowds of believers, found in the desert of the nations, is detained, lest he go away. Especially since this happened on the first day of the Sabbath, on which the resurrection was celebrated, the departure, the search, and the finding occurred.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.4.42"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.4.42:792001e6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 4:42",
+      "excerpt": "(ut sup.) Now when Mark says that the Apostles came to him, saying, All seek thee, but Luke, that the people came, there is no difference between them, for the people came to Him following in the footsteps of the Apostles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.4.42"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.4.42:e606e40f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 4:42",
+      "excerpt": "(Victor Antiochenus.) He went also into the desert, as Mark says, and prayed; not that he needed prayer, but as an example to us of good works.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.4.42"
+    },
+    {
+      "id": "hcf:tertullian:luke.4.42:c53571e6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-4-8",
+      "title": "AGAINST MARCION 4.8 on luke 4:42",
+      "excerpt": "\"He departed, and went into a desert place.\" This was, indeed, the Creator's customary region. It was proper that the Word should there appear in body, where before he had appeared in a cloud. To the gospel also was suitable that condition of place which had once been prophesied for the law. \"Let the wilderness and the solitary place, therefore, be glad and rejoice\"; so had Isaiah promised.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.4.42"
+    },
+    {
+      "id": "hcf:tertullian:luke.4.42:5f4b2c0e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 4:42",
+      "excerpt": "He fell, too, into another false position -of prevarication, when he permitted himself to be feared by the demons as the Son of the Creator, that he might drive them out, not indeed by his own power, but by the authority of the Creator. \"He departed, and went into a desert place.\" This was, indeed, the Creator's customary region.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.4.42"
+    },
+    {
+      "id": "hcf:tertullian:luke.4.42:aa2fb239:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 4:42",
+      "excerpt": "When \"stayed\" by the crowds, He said,\" I must preach the kingdom of God to other cities also.\" Had He displayed His God anywhere yet? I suppose as yet nowhere.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.4.42"
     }
   ]
 }

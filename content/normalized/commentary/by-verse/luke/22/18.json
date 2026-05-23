@@ -4,6 +4,31 @@
   "verseNumber": 18,
   "entries": [
     {
+      "id": "catena-luke-3110-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.18",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:14–18",
+      "excerpt": "Remember then when thou sittest down to meat that after the meal thou must pray; therefore satisfy thy hunger, but with moderation, lest being overcharged thou shouldest not be able to bend thy knees in supplication and prayer to God. Let us not then after our meals turn to sleep, but to prayer. For Christ plainly signifies this, that the partaking of food should not be followed by sleep or rest, but by prayer and reading the holy Scripture. It follows, For I say unto you, I will not drink of the fruit of the vine, until the kingdom of God come.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.22.18:62c73eeb:0"
+      ]
+    },
+    {
       "id": "catena-luke-3105-v18",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.18",
@@ -22,17 +47,17 @@
       ]
     },
     {
-      "id": "catena-luke-3110-v18",
+      "id": "catena-luke-3103-v18",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.18",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:14–18",
-      "excerpt": "Remember then when thou sittest down to meat that after the meal thou must pray; therefore satisfy thy hunger, but with moderation, lest being overcharged thou shouldest not be able to bend thy knees in supplication and prayer to God. Let us not then after our meals turn to sleep, but to prayer. For Christ plainly signifies this, that the partaking of food should not be followed by sleep or rest, but by prayer and reading the holy Scripture. It follows, For I say unto you, I will not drink of the fruit of the vine, until the kingdom of God come.",
+      "excerpt": "He says this, because the covetous disciple was looking out for the time for betraying Him; but that he might not betray Him before the feast of the Passover, our Lord had not divulged either the house, or the man with whom He should keep the Passover. That this was the cause is very evident from these words.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -58,21 +83,71 @@
       ]
     },
     {
-      "id": "catena-luke-3103-v18",
+      "id": "catena-luke-3109-v18",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.18",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:14–18",
-      "excerpt": "He says this, because the covetous disciple was looking out for the time for betraying Him; but that he might not betray Him before the feast of the Passover, our Lord had not divulged either the house, or the man with whom He should keep the Passover. That this was the cause is very evident from these words.",
+      "excerpt": "Thus then was our Lord the approver of the legal Passover; and as He taught that it related to the figure of His own dispensation, He forbids it henceforth to be represented in the flesh. Therefore He adds, For I say unto you, I will not any more eat thereof, until it be fulfilled in the kingdom of God. That is, I will no more celebrate the Mosaic Passover, until, being spiritually understood, it is fulfilled in the Church. For the Church is the kingdom of God; as in Luke, The kingdom of God is within you. (Luke 17:21.) Again, the ancient Passover, which He desired to bring to an end, is also…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3113-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.18",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:14–18",
+      "excerpt": "But it is far more natural, that as before of the typical lamb, so now also of the drink of the Passover, He should say that He would no more taste, until the glory of the kingdom of God being made manifest, the faith of the whole world should appear; that so by means of the spiritual changing of the two greatest commands of the law, namely, the eating and drinking of the Passover, you might learn that all the Sacraments of the law were to be transferred to a spiritual observance.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.18:7a606201:0"
+      ]
+    },
+    {
+      "id": "catena-luke-3111-v18",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.18",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:14–18",
+      "excerpt": "This may be also taken literally, for from the hour of supper up to the time of resurrection He was about to drink no wine. Afterwards He partook both of meat and drink, as Peter testifies, Who did eat and drink with him after he rose from the dead. (Acts 10:41.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.18:5008a52a:1"
       ]
     },
     {
@@ -130,57 +205,28 @@
       ]
     },
     {
-      "id": "catena-luke-3109-v18",
+      "id": "catena-luke-3112-v18",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.18",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:14–18",
-      "excerpt": "Thus then was our Lord the approver of the legal Passover; and as He taught that it related to the figure of His own dispensation, He forbids it henceforth to be represented in the flesh. Therefore He adds, For I say unto you, I will not any more eat thereof, until it be fulfilled in the kingdom of God. That is, I will no more celebrate the Mosaic Passover, until, being spiritually understood, it is fulfilled in the Church. For the Church is the kingdom of God; as in Luke, The kingdom of God is within you. (Luke 17:21.) Again, the ancient Passover, which He desired to bring to an end, is also…",
+      "excerpt": "The resurrection is called the kingdom of God, because it has destroyed death. Therefore David also says, The Lord reigneth: He hath put on beauty, (Ps. 93:1.) that is, a beautiful robe, having put off the corruption of the flesh. (Isa. 63:1.) But when the resurrection comes, He again drinks with His disciples; to prove that the resurrection was not a shadow only.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3111-v18",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.18",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:14–18",
-      "excerpt": "This may be also taken literally, for from the hour of supper up to the time of resurrection He was about to drink no wine. Afterwards He partook both of meat and drink, as Peter testifies, Who did eat and drink with him after he rose from the dead. (Acts 10:41.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3113-v18",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.18",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:14–18",
-      "excerpt": "But it is far more natural, that as before of the typical lamb, so now also of the drink of the Passover, He should say that He would no more taste, until the glory of the kingdom of God being made manifest, the faith of the whole world should appear; that so by means of the spiritual changing of the two greatest commands of the law, namely, the eating and drinking of the Passover, you might learn that all the Sacraments of the law were to be transferred to a spiritual observance.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.18:8a8ffd58:1"
       ]
     },
     {
@@ -238,22 +284,72 @@
       ]
     },
     {
-      "id": "catena-luke-3112-v18",
+      "id": "hcf:bede:luke.22.18:f19271e8:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.22.18",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:18",
+      "excerpt": "For I tell you, I will not drink of the fruit of the vine until the kingdom of God comes. This verse can indeed be taken simply, that from this hour of the supper until the time of the resurrection, when He would come in the kingdom of God, He would not drink wine. For afterwards, the apostle Peter testifies that He took food and drink, who said: Who ate and drank with Him after He rose from the dead (Acts X). But it is much more consistent that, just as above He denies eating the typical lamb, He also denies drinking the typical passover drink, until, with the glory of His resurrection shown and manifested, the faith of the kingdom of God comes to the world. So that by the two greatest edicts of the law, namely the Passover meal and drink spiritually changed, you might learn that all the sacraments of the law, or commands which seemed to sound carnal, are now to be transferred to spiritual observance.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.18"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.18:b9106f0e:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:14–18",
-      "excerpt": "The resurrection is called the kingdom of God, because it has destroyed death. Therefore David also says, The Lord reigneth: He hath put on beauty, (Ps. 93:1.) that is, a beautiful robe, having put off the corruption of the flesh. (Isa. 63:1.) But when the resurrection comes, He again drinks with His disciples; to prove that the resurrection was not a shadow only.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:18",
+      "excerpt": "The words \"I will not drink of the fruit of the vine until the Kingdom of God comes\" some of the saints understood thus: until I rise again. For after the resurrection, while spending time with the disciples, He ate and drank with them, as Peter also says to Cornelius: \"who ate and drank with Him after His resurrection from the dead\" (Acts 10:41). That the resurrection is the Kingdom of God is evident. For the resurrection is the destruction of death. Death reigned from Adam until Christ; but from that time, having been destroyed, it yielded the victory and the kingdom to the Lord, as it is said: \"O Death!... where is your victory?\" (Hos. 13:14). And David says: \"The Lord reigns\" (Ps. 93:1), and then, in explanation of how He came to reign, adds: \"He is clothed with majesty,\" when the body was freed from corruption and adorned with Divinity, as Isaiah says: \"so majestic in His apparel, marching in the greatness of His strength\" (Isa. 63:1). And the Lord Himself after the resurrection says: \"All authority has been given to Me\" (Matt. 28:18). Thus, when the resurrection came, which, as having destroyed death, is called the Kingdom of God, the Lord again drank with the disciples as proof that He had risen not in mere appearance.\r\nOthers understood the Kingdom of God as the future state, and the Lord's drinking with us in the age to come as His revelation of mysteries. For He, the Lover of mankind, rejoicing us, Himself rejoices, and nourishing us, is Himself nourished, and reckons our drink and food, that is, teaching, as food for Himself. So He will then drink some new drink with the worthy, always revealing to them something new and extraordinary.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.18"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.22.18:e6b611ab:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-19-5",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 19.5 on luke 22:18",
+      "excerpt": "He said, \"I will not drink again of this fruit of the vine until the kingdom of my Father,\" to show that he foresaw his imminent departure from them. He said, \"until the kingdom of my Father,\" that is, until his resurrection. Simon Peter revealed in the Acts of the Apostles, \"After his resurrection, during a period of forty days, we ate with him and we drank, on this first day of the week. This agrees with what he had said, \"They will not taste death before they see the kingdom of God,\" and after six days that was accomplished.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-19-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.22.18"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.22.18:9eefe50a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-5-33-1",
+      "title": "AGAINST HERESIES 5.33.1 on luke 22:18",
+      "excerpt": "When he came to his passion, he wanted to declare to Abraham and those with him the good news of the opening of the inheritance. After he gave thanks while holding the cup and then drank from it … he promised that he would again drink of the produce of the vine with his disciples. Christ thus showed the inheritance of the earth, in which the new produce of the vine is drunk, and the physical resurrection of his disciples. The new flesh that rises again is the same that received the new cup. He cannot be understood as drinking the produce of the vine when established on high with his own, somewhere above the heavens. Those who drink it are not only spirits, because it belongs to flesh and not to spirit to receive the drink of the vine.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.22.18"
     }
   ]
 }

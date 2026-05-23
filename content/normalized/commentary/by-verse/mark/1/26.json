@@ -4,6 +4,24 @@
   "verseNumber": 26,
   "entries": [
     {
+      "id": "catena-mark-0088-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.26",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "For He was known to them in that degree in which He wished to be known; and He wished as much as was fitting. He was not known to them as to the holy Angels, who enjoy Him by partaking of His eternity according as He is the Word of God; but as He was to be made known in terror, to those beings from whose tyrannical power He was about to free the predestinate. He was known therefore to the devils, not in that He is eternal Life, but by some temporal effects of His Power, which might be more clear to the angelic senses of even bad spirits than to the weakness of men.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0083-v26",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.26",
@@ -22,21 +40,28 @@
       ]
     },
     {
-      "id": "catena-mark-0088-v26",
+      "id": "catena-mark-0091-v26",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.26",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "For He was known to them in that degree in which He wished to be known; and He wished as much as was fitting. He was not known to them as to the holy Angels, who enjoy Him by partaking of His eternity according as He is the Word of God; but as He was to be made known in terror, to those beings from whose tyrannical power He was about to free the predestinate. He was known therefore to the devils, not in that He is eternal Life, but by some temporal effects of His Power, which might be more clear to the angelic senses of even bad spirits than to the weakness of men.",
+      "excerpt": "But it may appear to be a discrepancy, that he should have gone out of him, tearing him, or, as some copies have it, vexing him, when, according to Luke, he did not hurt him. But Luke himself says, When he had, cast him into the midst, he came out from him, without hurting him. (Luke 4:35) Wherefore it is inferred that Mark meant by vexing or tearing him, what Luke expresses, in the words, When he had cast him into the midst; so that what he goes on to say, And did not hurt him, may be understood to mean, that the tossing of his limbs and vexing, did not weaken him, as devils are wont to come…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.26:b114d91e:1"
       ]
     },
     {
@@ -66,24 +91,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
       "excerpt": "For the devils, seeing the Lord on the earth, thought that they were immediately to be judged.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0091-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.26",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "But it may appear to be a discrepancy, that he should have gone out of him, tearing him, or, as some copies have it, vexing him, when, according to Luke, he did not hurt him. But Luke himself says, When he had, cast him into the midst, he came out from him, without hurting him. (Luke 4:35) Wherefore it is inferred that Mark meant by vexing or tearing him, what Luke expresses, in the words, When he had cast him into the midst; so that what he goes on to say, And did not hurt him, may be understood to mean, that the tossing of his limbs and vexing, did not weaken him, as devils are wont to come…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -127,6 +134,90 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.26:2159e651:1"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.1.26:a59fc3f2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:26",
+      "excerpt": "And the unclean spirit, convulsing him and crying out with a loud voice, came out of him. Luke says of the unclean spirit that it came out of the man without harming him. Therefore, it can seem contrary, how according to Mark, he convulsed (or as some manuscripts have, threw him down), yet he did not harm him according to Luke. But Luke also says: And having thrown him in the midst, the demon went out of him, and did not harm him (Luke IV). Hence, it is understood that Mark said convulsing him, or throwing him down, in the same sense that Luke said he threw him in the midst, so that what Luke follows with, and did not harm him, is understood that this tossing and vexation of the limbs did not injure him, as demons usually exit, even tearing away or dislocating some limbs.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.26"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.26:875d3e42:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:26",
+      "excerpt": "But Christ silences him, so that we may know that demons must be stopped from speaking, even if they speak the truth. The demon throws and violently shakes the one it possesses, so that the onlookers, seeing from what a calamity the man is delivered, might believe on account of the miracle.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.26"
+    },
+    {
+      "id": "catena-mark-0089-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.26",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.26:e42198f2:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0087-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.26",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "As if he said, Methinks that Thou art come; for he had not a firm and certain knowledge of the coming of God. But he calls Him holy not as one of many, for every prophet was also holy, but he proclaims that He was the One holy; by the article in Greek he shews Him to be the One, but by his fear he shews Him to be Lord of all.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -156,42 +247,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
       "excerpt": "Or else the devil so speaks, as if he said, ‘by taking away uncleanness, and giving to the souls of men divine knowledge, Thou allowest us no place in men.’",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0087-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.26",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "As if he said, Methinks that Thou art come; for he had not a firm and certain knowledge of the coming of God. But he calls Him holy not as one of many, for every prophet was also holy, but he proclaims that He was the One holy; by the article in Greek he shews Him to be the One, but by his fear he shews Him to be Lord of all.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0089-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.26",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -235,6 +290,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.26:ec04c882:0"
       ]
     }
   ]

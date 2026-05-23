@@ -55,17 +55,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.4.36:d3c0f49a:0"
       ]
     },
     {
-      "id": "catena-mark-0323-v36",
+      "id": "catena-mark-0327-v36",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.36",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
+      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -94,14 +101,14 @@
       ]
     },
     {
-      "id": "catena-mark-0327-v36",
+      "id": "catena-mark-0323-v36",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.36",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
+      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -127,6 +134,99 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.4.36:5a54c316:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:36",
+      "excerpt": "The Lord takes with Him the disciples alone, allowing them to be witnesses of the coming miracle.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.36"
+    },
+    {
+      "id": "hcf:athanasius-the-great:mark.4.36:e524a90d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:letter-29",
+      "title": "LETTER 29 on mark 4:36",
+      "excerpt": "Even while he was asleep on the pillow, the Lord was testing his disciples, when a miracle was wrought that was calculated especially to put even the wicked to contrition. For when he arose, and rebuked the sea, and silenced the storm, he plainly disclosed two things: that the storm of the sea was not simply from winds, but from the fear of the Lord who walked upon it;2 and that the Lord who rebuked it was not a creature, but rather its creator.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.4.36"
+    },
+    {
+      "id": "hcf:athanasius-the-great:mark.4.36:bd799904:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:letter-19-6-easter-a-d-347",
+      "title": "Letter 19.6, EASTER A.D. 347 on mark 4:36",
+      "excerpt": "They awakened the Word, who was sailing with them, and immediately the sea became smooth at the command of its Lord, and they were saved. They became proclaimers and teachers at the same time, attesting the miracles of our Savior, and also teaching us to imitate their example.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.4.36"
+    },
+    {
+      "id": "hcf:tertullian:mark.4.36:a82fecf5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on mark 4:36",
+      "excerpt": "How mighty is the grace of water, in the sight of God and His Christ, for the confirmation of baptism! Never is Christ without water: if, that is, He is Himself baptized in water; inaugurates in water the first rudimentary displays of His power, when invited to the nuptials; invites the thirsty, when He makes a discourse, to His own sempiternal water; approves, when teaching concerning love, among works of charity, the cup of water offered to a poor (child); recruits His strength at a well; walks over the water; willingly crosses the sea; ministers water to His disciples.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.4.36"
+    },
+    {
+      "id": "catena-mark-0328-v36",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.36",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:35–41",
+      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.36:8ab40ed5:0"
       ]
     },
     {
@@ -156,24 +256,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
       "excerpt": "For from the troubling of the sea there arises a certain sound, which appears to be its voice threatening danger, and therefore, by a sort of metaphor, He fitly commands tranquillity by a word signifying silence: just as in the restraining of the winds, which trouble the sea with their violence, He uses a rebuke. For men who are in power are accustomed to curb those, who rudely disturb the peace of mankind, by threatening to punish them; by this, therefore, we are given to understand, that, as a king can repress violent men by threats, and by his edicts sooth the murmurs of his people, so…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0328-v36",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.36",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:35–41",
-      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

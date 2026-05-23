@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.12.23:af5df4ce:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.12.23:b9e3e052:0"
       ]
     },
     {
@@ -73,7 +87,82 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.12.23:4e2edf41:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.12.23:d17919d0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 12:23",
+      "excerpt": "He Who gave the greater thing, namely the soul, will He not also give food? He Who gave the body, will He not also give clothing? Then He proves this by the example of the ravens.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.12.23"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.12.23:a7c31ca3:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-90",
+      "title": "COMMENTARY ON LUKE, HOMILY 90 on luke 12:23",
+      "excerpt": "How carefully and with what great skill he brings the lives of the holy apostles to spiritual excellence. And with them he benefits us too, because he desires all humankind to be saved and to choose the wise and more excellent life. For this reason he makes them abandon unnecessary anxiety and does not allow a careworn and frenetic diligence that would make them wish to gather what exceeds their necessities. In these matters excess adds nothing to our benefit. \"Do not be anxious,\" therefore, he says, \"about your life, what you shall eat, nor about your body, what you shall put on. For life is more than food, and the body more than clothing.\" He did not simply say, \"Do not be anxious,\" but added \"about your life,\" that is, do not give much attention to these things, but devote your earnestness to things of far greater importance. For life indeed is of more importance than food, and the body is more important than clothing. Since, therefore, we are at risk concerning both life and body, and pain and punishment are decreed against those who will not live uprightly, let all anxiety be laid aside with regard to clothing and food.…These things, in turn, are followed immediately by a savage crowd of other desires, the result being apostasy from God.… It is our duty, therefore, to stay away from all worldly desires, and rather to take delight in those things which please God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-90",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.12.23"
+    },
+    {
+      "id": "hcf:bede:luke.12.23:4f57fd6a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 12:23",
+      "excerpt": "The soul is more than food, and the body more than clothing. It reminds us to remember that God has given us much more in creating and composing us from soul and body than food and clothing, so that you understand that he who gave the soul will much more easily give food. Likewise, he who gave the body will much more easily give clothing. In this place, it is usually asked whether this food reaches the soul, since the soul is incorporeal, but this food is corporeal. But we should know that in this place the soul is put for this life, for which this corporeal food is the support. According to this meaning, it was also said: Whoever loves his soul will lose it (Matthew 10). If we do not understand this as referring to this life, which must be lost for the sake of the kingdom of God, which the martyrs have shown to be possible, this command will be contrary to the statement where it was said: What does it profit a man if he gains the whole world but loses his soul (Matthew 16)?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.12.23"
+    },
+    {
+      "id": "hcf:tertullian:luke.12.23:1b04819c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:of-patience",
+      "title": "Of Patience on luke 12:23",
+      "excerpt": "We who carry about our very soul, our very body, exposed in this world to injury from all, and exhibit patience under that injury; shall we be hurt at the loss of less important things? Far from a servant of Christ be such a defilement as that the patience which has been prepared for greater temptations should forsake him in frivolous ones.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.12.23"
     }
   ]
 }

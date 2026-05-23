@@ -37,42 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1841-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.30",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:29–32",
-      "excerpt": "That you may know that the people of the Synagogue are treated with dishonour, while the blessedness of the Church is increased. But as Jonas was a sign to the Ninevites, so also will the Son of man be to the Jews. Hence it is added, They seek a sign; and there shall no sign be given them but the sign of Jonas the prophet.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1842-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.30",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:29–32",
-      "excerpt": "A sign is a thing brought openly to view, containing in itself the manifestation of something hidden, as the sign of Jonas represents the descent to hell, the ascension of Christ, and His resurrection from the dead. Hence it is added, For as Jonas was a sign to the Ninevites, so shall also the Son of man be to this generation. He gives them a sign, not from heaven, because they were unworthy to see it, but from the lowest depths of hell; a sign, namely, of His incarnation, not of His divinity; of His passion, not of His glorification.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.11.30:322d9ff9:0"
       ]
     },
     {
@@ -91,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.11.30:a63d48cd:0"
       ]
     },
     {
@@ -112,14 +90,14 @@
       ]
     },
     {
-      "id": "catena-luke-1848-v30",
+      "id": "catena-luke-1841-v30",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.30",
       "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:29–32",
-      "excerpt": "Now as she was queen of the Ethiopians, and in a far distant country, so in the beginning the Church of the Gentiles was in darkness, and far off from the knowledge of God. But when Christ the Prince of peace shone forth, the Jews being still in darkness, thither came the Gentiles, and offered to Christ the frankincense of piety, the gold of divine knowledge, and precious stones, that is, obedience to His commands.",
+      "excerpt": "That you may know that the people of the Synagogue are treated with dishonour, while the blessedness of the Church is increased. But as Jonas was a sign to the Ninevites, so also will the Son of man be to the Jews. Hence it is added, They seek a sign; and there shall no sign be given them but the sign of Jonas the prophet.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -148,17 +126,42 @@
       ]
     },
     {
-      "id": "catena-luke-1840-v30",
+      "id": "catena-luke-1842-v30",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.30",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "basil-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:29–32",
-      "excerpt": "Our Lord had been assailed with two kinds of questions, for some accused Him of casting out devils through Beelzebub, to whom up to this point His answer was addressed; and others tempting Him, sought from Him a sign from heaven, and these He now proceeds to answer. As it follows, And when the people were gathered thick together, he began to say, This is an evil generation, &c.",
+      "excerpt": "A sign is a thing brought openly to view, containing in itself the manifestation of something hidden, as the sign of Jonas represents the descent to hell, the ascension of Christ, and His resurrection from the dead. Hence it is added, For as Jonas was a sign to the Ninevites, so shall also the Son of man be to this generation. He gives them a sign, not from heaven, because they were unworthy to see it, but from the lowest depths of hell; a sign, namely, of His incarnation, not of His divinity; of His passion, not of His glorification.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.11.30:2aa32821:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1848-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.30",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:29–32",
+      "excerpt": "Now as she was queen of the Ethiopians, and in a far distant country, so in the beginning the Church of the Gentiles was in darkness, and far off from the knowledge of God. But when Christ the Prince of peace shone forth, the Jews being still in darkness, thither came the Gentiles, and offered to Christ the frankincense of piety, the gold of divine knowledge, and precious stones, that is, obedience to His commands.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -174,6 +177,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:29–32",
       "excerpt": "Not certainly by any authority to judge, but by the contrast of a better deed. As it follows, For she came from the utmost parts of the earth to hear the wisdom of Solomon; and, behold, a greater than Solomon is here. Hie in this place is not the pronoun, but the adverb of place, that is, “there is one present among you who is incomparably superior to Solomon.” He said not, “I am greater than Solomon,” that he might teach us to be humble, though fruitful in spiritual graces. As if he said, “The barbarian woman hastened to hear Solomon, taking so long a journey to be instructed in the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1840-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.30",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:29–32",
+      "excerpt": "Our Lord had been assailed with two kinds of questions, for some accused Him of casting out devils through Beelzebub, to whom up to this point His answer was addressed; and others tempting Him, sought from Him a sign from heaven, and these He now proceeds to answer. As it follows, And when the people were gathered thick together, he began to say, This is an evil generation, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -202,6 +223,24 @@
       ]
     },
     {
+      "id": "catena-luke-1849-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.30",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:29–32",
+      "excerpt": "Or because the South is praised in Scripture as warm and life-giving, therefore the soul reigning in the south, that is, in all spiritual conversation, comes to hear the wisdom of Solomon, the Prince of peace, the Lord our God, (i. e. is raised up to contemplate Him,) to whom no one shall come except he reign in a good life. But He brings next an example from the Ninevites, saying, The men of Nineveh shall rise up in judgment with this generation, and shall condemn it.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1844-v30",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.30",
@@ -220,22 +259,72 @@
       ]
     },
     {
-      "id": "catena-luke-1849-v30",
+      "id": "hcf:bede:luke.11.30:dc7057c9:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.11.30",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:30",
+      "excerpt": "For just as Jonah was a sign to the Ninevites, so will the Son of Man be to this generation. He showed that the Jews, like the Ninevites, were overwhelmed with grave sins and close to destruction if they did not repent. Yet, just as punishment was announced to the Ninevites and a remedy was shown, so too should the Jews not despair of mercy if they are willing to do penance. But see what follows:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.30"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.30:d8953589:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:29–32",
-      "excerpt": "Or because the South is praised in Scripture as warm and life-giving, therefore the soul reigning in the south, that is, in all spiritual conversation, comes to hear the wisdom of Solomon, the Prince of peace, the Lord our God, (i. e. is raised up to contemplate Him,) to whom no one shall come except he reign in a good life. But He brings next an example from the Ninevites, saying, The men of Nineveh shall rise up in judgment with this generation, and shall condemn it.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:30",
+      "excerpt": "For just as he spent three days in the belly of the whale, so too shall I spend three days in the belly of the whale, the great beast, that is, Hades, and rise again. When Jonah, cast out by the whale and as if brought back to life, began to preach, the Ninevites listened (Jonah 3:3-6); but even after My Resurrection, this generation will not believe in Me. Therefore they will be condemned for not imitating the Ninevites, even though here is one greater than Jonah. For My dignity and manner of preaching represent a great difference. I am the Master, he is a servant. I preach the Kingdom of Heaven, he preached salvation from threatening destruction. I perform miracles, he performed no miracle.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.30"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.11.30:878ca50e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-82",
+      "title": "COMMENTARY ON LUKE, HOMILY 82 on luke 11:30",
+      "excerpt": "He will not grant you another sign, so that he may give holy things to dogs or throw pearls before swine.…He said only the sign of Jonah will be given to them. This means the passion on the cross and the resurrection from the dead.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-82",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.11.30"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.11.30:86439145:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-11-2",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 11.2 on luke 11:30",
+      "excerpt": "The sign of Jonah served the Ninevites in two ways. If they would have rejected it, they would have gone down to Sheol alive like Jonah, but they were raised from the dead like him because they repented. Just as in the case of our Lord, who was set for the fall and the rising of many, people either lived through his being killed or died through his death.… They were asking him for a sign from heaven like thunder.… Jonah, after he went up from within the fish, was a negative sign to the Ninevites, because he proclaimed the destruction of their city. The disciples were also this way after the resurrection of our Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-11-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.11.30"
     }
   ]
 }

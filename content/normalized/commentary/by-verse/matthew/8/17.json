@@ -4,42 +4,6 @@
   "verseNumber": 17,
   "entries": [
     {
-      "id": "catena-matt-1225-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.8.17",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 8:16–17",
-      "excerpt": "Because the multitude of believers was now very great, they would not depart from Christ, though time pressed; but in the evening they bring unto Him the sick. “When it was evening, they brought unto him many that had daemons.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1226-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.8.17",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 8:16–17",
-      "excerpt": "The words, “Now when it was evening,” shew that the evening of the same day is meant. This would not have been implied, had it been only “when it was evening.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-1228-v17",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.8.17",
@@ -76,6 +40,42 @@
       ]
     },
     {
+      "id": "catena-matt-1225-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.8.17",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 8:16–17",
+      "excerpt": "Because the multitude of believers was now very great, they would not depart from Christ, though time pressed; but in the evening they bring unto Him the sick. “When it was evening, they brought unto him many that had daemons.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1226-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.8.17",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 8:16–17",
+      "excerpt": "The words, “Now when it was evening,” shew that the evening of the same day is meant. This would not have been implied, had it been only “when it was evening.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-1233-v17",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.8.17",
@@ -91,6 +91,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.8.17:475fc5cb:0"
       ]
     },
     {
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.8.17:10bea5d5:0"
       ]
     },
     {
@@ -120,24 +134,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 8:16–17",
       "excerpt": "Christ the Son of God, the Author of human salvation, the fount and source of all goodness, furnished heavenly medicine, “He cast out the spirits with a word, and healed all that were sick.” Daemons and diseases He sent away with a word, that by these signs, and mighty works, He might shew that He was come for the salvation of the human race.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1229-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.8.17",
-      "topicSlugs": [],
-      "personId": "rabanus-maurus",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 8:16–17",
-      "excerpt": "“Took” them not that He should have them Himself, but that He should take them away from us; “and bare our315 sicknesses,” in that what we were too weak to bear, He should bear for us.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
@@ -163,6 +159,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.8.17:fbf75a43:0"
       ]
     },
     {
@@ -181,7 +184,100 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.8.17:2189f7b7:0"
       ]
+    },
+    {
+      "id": "catena-matt-1229-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.8.17",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 8:16–17",
+      "excerpt": "“Took” them not that He should have them Himself, but that He should take them away from us; “and bare our315 sicknesses,” in that what we were too weak to bear, He should bear for us.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.8.17:3cdbb924:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-27",
+      "title": "Homily on the Gospel of Matthew 27 on matthew 8:17",
+      "excerpt": "\"When the even was come, they brought unto Him many that were possessed with devils: and He cast out the spirits from them with a word, and healed all that were sick: that it might be fulfilled which was spoken by the Prophet Esaias, that He took our infirmities, and bare our sicknesses.\"\r\n\r\nSeest thou the multitude, by this time growing in faith? For not even when the time pressed could they endure to depart, nor did they account it unseasonable to bring their sick to Him at eventide.\r\n\r\nBut mark, I pray thee, how great a multitude of persons healed the evangelists pass quickly over, not mentioning one by one, and giving us an account of them, but in one word traversing an unspeakable sea of miracles. Then lest the greatness of the wonder should drive us again to unbelief, that even so great a people and their various diseases should be delivered and healed by Him in one moment of time, He brings in the prophet also to bear witness to what is going on: indicating the abundance of the proof we have, in every case, out of the Scriptures; such, that from the miracles themselves we have no more; and He saith, that Esaias also spake of these things; \"He took our infirmities, and bare our sicknesses.\" He said not, \"He did them away,\" but \"He took and bare them;\" which seems to me to be spoken rather of sins, by the prophet, in harmony with John, where he saith, \"Behold the Lamb of God, that beareth the sin of the world.\"\r\n\r\nHow then doth the evangelist here apply it to diseases? Either as rehearsing the passage in the historical sense, or to show that most of our diseases arise from sins of the soul. For if the sum of all, death itself, hath its root and foundation from sin, much more the majority of our diseases also: since our very capability of suffering did itself originate there.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.8.17"
+    },
+    {
+      "id": "hcf:hcf-apollinaris-of-laodicea:matthew.8.17:e149f82a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apollinaris-of-laodicea",
+      "workId": "hcf:work:hcf-apollinaris-of-laodicea:fragment-37-7",
+      "title": "FRAGMENT 37.7 on matthew 8:17",
+      "excerpt": "In this saying Isaiah pointed toward the cross. But why was this saying employed by the Evangelist at this point when he was speaking of his healings? This was to show that it was not in his activity alone but in his passion, his willingness to suffer, that Christ became the source of healing to humanity. By the indignities he endured and by his own death he prepared life for all humanity. He subdued those who were evilly disposed against themselves.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-37-7",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c382"
+      ],
+      "targetVerseId": "kjva:matthew.8.17"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.8.17:8b40edc3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 8:17",
+      "excerpt": "\"When the evening was come, they brought unto Him many who were possessed with demons, and He cast out the spirits by His word, and healed all that were sick: that it might be fulfilled which was spoken by Isaiah the prophet, saying, He Himself took our weaknesses, and bore our diseases.\" At the end of the day and on into the evening, they brought the sick to Him and He, in His love for man, healed them all. Then Matthew brings forward the witness of Isaiah (See Is. 53:4), lest you disbelieve that He could heal so many sicknesses in so short a time. Although the prophet spoke concerning sins, Matthew has applied these words to illnesses, for the majority of illnesses occur as a result of sins.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.8.17"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.8.17:2bef7141:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 8:17",
+      "excerpt": "It should be noted that the evangelists have not recounted all of Christ's miracles, but the better known. And because it seemed marvelous to cure so many, he supports it with a text from Isaiah (53:4): \"He took our infirmities and bore our diseases.\" And although it does not follow the order of the text, let us explain it as presented. He took our infirmities, where infirmities refer to light sins; and diseases, i.e., greater sins, he bore, i.e., carried away. Or, since he is the power and wisdom of God, our infirmities of suffering and death. Hence he assumed a body subject to suffering, in order to take away our infirmity and sickness: \"He bore our sins in his body, that we might die to sin and live to righteousness\" (1 Pt 2:24). But since the text from Isaiah spoke of sins, why does this quotation speak of bodily infirmities? The reason is that very often bodily infirmities arise from spiritual sins.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.8.17"
     }
   ]
 }

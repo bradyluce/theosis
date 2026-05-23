@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.35:366a4c39:1"
       ]
     },
     {
@@ -40,6 +47,75 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.1.35:c5ca4c51:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:35",
+      "excerpt": "After healing the sick, the Lord withdraws to a solitary place, teaching us by this not to do anything for show, but if we do some good deed, to hasten to conceal it. And He also prays in order to show us that everything good we do must be ascribed to God and we should say to Him: \"Every good gift and every perfect gift is from above, coming down from the Father of lights\" (James 1:17). Christ Himself had no need of prayer in and of Himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.35"
+    },
+    {
+      "id": "hcf:bede:mark.1.35:aee4729e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:35",
+      "excerpt": "And rising very early in the morning, he went out to a deserted place, etc. If the setting sun expresses the death of the Savior, why should not his resurrection be indicated by the returning dawn? With the light having appeared, he went to the desert of the nations, and there he prayed among his faithful ones, for he stirred their hearts to the power of prayer through the grace of his Spirit. And he was preaching in their synagogues and throughout all Galilee, and casting out demons. In this preaching, which he describes him as having had throughout all Galilee, is also understood that sermon held on the mount, which Matthew commemorates. For Mark follows thus:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.35"
+    },
+    {
+      "id": "hcf:bede:mark.1.35:b90bf847:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:35",
+      "excerpt": "(ubi sup.) Again mystically if by the setting of the sun, the death of the Saviour is intended, why should not His resurrection be intended by the returning dawn? For by its clear light, He went far into the wilderness of the Gentiles, and there continued praying in the person of His faithful disciples, for He aroused their hearts by the grace of the Holy Spirit to the virtue of prayer.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.35"
+    },
+    {
+      "id": "hcf:origen:mark.1.35:82d79836:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:on-prayer-13-1",
+      "title": "ON PRAYER 13.1 on mark 1:35",
+      "excerpt": "Jesus prayed and did not pray in vain, since he received what he asked for in prayer when he might have done so without prayer. If so, who among us would neglect to pray? Mark says that \"in the morning, a great while before day, he rose and went out to a lonely place, and there he prayed.\" And Luke says, \"He was praying in a certain place, and when he ceased, one of his disciples said to him, 'Lord, teach us to pray,' \" and elsewhere, \"And all night he continued in prayer to God.\" And John records his prayer, saying, \"When Jesus had spoken these words, he lifted up his eyes to heaven and said, 'Father, the hour has come; glorify your Son that the Son may glorify you.' \" The same Evangelist writes that the Lord said that he knew \"you hear me always.\" All this shows that the one who prays always is always heard.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.1.35"
+    },
+    {
       "id": "catena-mark-0111-v35",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.35",
@@ -55,6 +131,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.1.35:f5c9e5e8:0"
       ]
     }
   ]

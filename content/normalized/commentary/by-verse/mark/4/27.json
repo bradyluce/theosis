@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0303-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.27",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:26–29",
-      "excerpt": "Or else Christ sleeps, that is, ascends into heaven, where, though He seem to sleep, yet He rises by night, when through temptations He raises us up to the knowledge of Himself; and in the day time, when on account of our prayers, He sets in order our salvation.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:mark.4.27:16689937:0"
       ]
     },
     {
@@ -58,6 +47,108 @@
       ]
     },
     {
+      "id": "catena-mark-0303-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.27",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:26–29",
+      "excerpt": "Or else Christ sleeps, that is, ascends into heaven, where, though He seem to sleep, yet He rises by night, when through temptations He raises us up to the knowledge of Himself; and in the day time, when on account of our prayers, He sets in order our salvation.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.4.27:c2025e10:1"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.4.27:72c67c5f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:27",
+      "excerpt": "Having cast it, He \"sleeps,\" that is, He ascended into the heavens; nevertheless, He also \"rises night and day.\" For although God apparently sleeps, that is, is longsuffering, He rises: He rises at night when through temptations He rouses us to the knowledge of Him; He rises by day when He fills our life with joys and consolations. The seed grows as if without His knowledge, because we are free, and it depends on our will whether this seed grows or does not grow.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.27"
+    },
+    {
+      "id": "hcf:bede:mark.4.27:aa822266:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 4:27",
+      "excerpt": "And he said to them: Such is the kingdom of God, as if a man casts seed upon the earth and sleeps; and rises night and day, and the seed sprouts and grows while he does not know it. For the earth produces fruit by itself, first the blade, then the ear, then the full grain in the ear. And when the fruit has brought itself forth, he immediately wields the sickle, because the harvest is at hand. A man casts seed upon the earth, when he instills good intention into his heart. And after he has cast the seed, he sleeps, because he already rests in the hope of good work. But he rises at night and by day, because he progresses among adversities and prosperities. And the seed sprouts and grows while he does not know it; because even when he cannot yet measure his growth, the virtue once conceived leads to progress. And the earth produces fruit by itself, because with grace preceding itself, the human mind spontaneously rises to the fruit of good work. But this same earth first brings forth the blade, then the ear, then the full grain in the ear. To produce the blade, indeed, is to still have the tenderness of good initiation. But the blade reaches the ear when the virtue conceived in the mind draws itself to the progress of good work. And the full grain in the ear fructifies, when the virtue already progresses so as to be of robust and perfect work. And when the fruit has produced itself, he immediately wields the sickle, because the harvest time is at hand. For the Almighty God, with the fruit produced, wields the sickle and cuts off His harvest, because when He has led each one to perfect works, He cuts off their temporal life by His sent judgment, to bring His grain to the heavenly granaries. Therefore, when we conceive good desires, we cast seed into the earth. But when we begin to act rightly, we are the blade. However, when we grow to the perfect work of goodness, we reach the ear. When we are solidified in the perfection of the same operation, we already bring forth the full grain in the ear. Hence no one should be seen still in the tenderness of the mind for good purpose, because the grain of God begins from the blade to become grain.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.4.27"
+    },
+    {
+      "id": "catena-mark-0307-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.27",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:26–29",
+      "excerpt": "Or, first it produces the blade, in the law of nature, by degrees growing up to advancement; afterwards it brings forth the ears, which are to be collected into a bundle, and to be offered on an altar to the Lord, that is, in the law of Moses; afterwards the full-fruit, in the Gospel. Or because we must not only put forth leaves by obedience, but also learn prudence, and, like the stalk of corn, remain upright without minding the winds which blow us about. We must also take heed to our soul by a diligent recollection, that, like the ears, we may bear fruit, that is, shew forth the perfect…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0302-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.27",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:26–29",
+      "excerpt": "Or Christ Himself is the man who rises, for He sat waiting with patience, that they who received seed should bear fruit. He rises, that is, by the word of His love, He makes us grow to the bringing forth fruit, by the armour of righteousness on the right hand, by which is meant the day, and on the left, by which is meant the night of persecution; for by these the seed springs up, and does not wither. (2 Cor. 6:7)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.4.27:9e9fac91:0"
+      ]
+    },
+    {
       "id": "catena-mark-0298-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.27",
@@ -76,14 +167,14 @@
       ]
     },
     {
-      "id": "catena-mark-0299-v27",
+      "id": "catena-mark-0305-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.27",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
+      "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:26–29",
-      "excerpt": "The kingdom of God is the Church, which is ruled by God, and herself rules over men, and treads down the powers which are contrary to her, and all wickedness.",
+      "excerpt": "Or else He says, He knoweth not, that He may shew the free-will of those who receive the word, for He commits a work to our will, and does not work the whole Himself alone, lest the good should seem involuntary. For the earth brings forth fruits of its own accord, that is, she is brought to bear fruit without being compelled by a necessity contrary to her will. First the blade.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -127,60 +218,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0302-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.27",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:26–29",
-      "excerpt": "Or Christ Himself is the man who rises, for He sat waiting with patience, that they who received seed should bear fruit. He rises, that is, by the word of His love, He makes us grow to the bringing forth fruit, by the armour of righteousness on the right hand, by which is meant the day, and on the left, by which is meant the night of persecution; for by these the seed springs up, and does not wither. (2 Cor. 6:7)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0304-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.27",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:26–29",
-      "excerpt": "But when He says, He knoweth not how, He is speaking in a figure; that is, He does not make known to us, who amongst us will produce fruit unto the end.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0305-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.27",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:26–29",
-      "excerpt": "Or else He says, He knoweth not, that He may shew the free-will of those who receive the word, for He commits a work to our will, and does not work the whole Himself alone, lest the good should seem involuntary. For the earth brings forth fruits of its own accord, that is, she is brought to bear fruit without being compelled by a necessity contrary to her will. First the blade.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.27:123f65e3:0"
       ]
     },
     {
@@ -202,14 +246,32 @@
       ]
     },
     {
-      "id": "catena-mark-0307-v27",
+      "id": "catena-mark-0299-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.27",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
+      "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:26–29",
-      "excerpt": "Or, first it produces the blade, in the law of nature, by degrees growing up to advancement; afterwards it brings forth the ears, which are to be collected into a bundle, and to be offered on an altar to the Lord, that is, in the law of Moses; afterwards the full-fruit, in the Gospel. Or because we must not only put forth leaves by obedience, but also learn prudence, and, like the stalk of corn, remain upright without minding the winds which blow us about. We must also take heed to our soul by a diligent recollection, that, like the ears, we may bear fruit, that is, shew forth the perfect…",
+      "excerpt": "The kingdom of God is the Church, which is ruled by God, and herself rules over men, and treads down the powers which are contrary to her, and all wickedness.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0304-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.27",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:26–29",
+      "excerpt": "But when He says, He knoweth not how, He is speaking in a figure; that is, He does not make known to us, who amongst us will produce fruit unto the end.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

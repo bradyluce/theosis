@@ -55,17 +55,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.4.40:d3c0f49a:0"
       ]
     },
     {
-      "id": "catena-mark-0323-v40",
+      "id": "catena-mark-0327-v40",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.40",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
+      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.4.40:61831d25:1"
       ]
     },
     {
@@ -94,14 +108,14 @@
       ]
     },
     {
-      "id": "catena-mark-0327-v40",
+      "id": "catena-mark-0323-v40",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.40",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
+      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -127,6 +141,65 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.4.40:86563d0d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:40",
+      "excerpt": "He also rebukes the disciples for not having faith. For if they had had faith, they would have believed that even while sleeping He could preserve them unharmed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.40"
+    },
+    {
+      "id": "hcf:bede:mark.4.40:8d140ebc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 4:40",
+      "excerpt": "And he said to them: Why are you afraid? Do you still have no faith? They are rightly reproached, who were afraid with Christ present, since certainly whoever adheres to him cannot perish. This is similar to when, after the sleep of death, he appeared to the disciples and reproached their unbelief and hardness of heart, because they did not believe those who had seen him after he had risen (Mark 16). And again he said to them: O foolish ones and slow of heart to believe all that the prophets have spoken. Was it not necessary that the Christ should suffer these things and enter into his glory? (Luke 24) As if by the metaphor of a ship he were to say: Was it not necessary for Christ to be asleep, while waves from everywhere beat upon the ship in which he was sleeping, and thus, having been awakened, with the surging waves immediately calmed, to reveal the power of his divinity to all? And they feared with great fear, and said to one another: Who then is this, that even the wind and the sea obey him? Matthew writes it thus: And the men were amazed, saying: What kind of man is this? etc. Therefore, not the disciples, but the sailors and the others who were in the ship were amazed, and doubted about the person to whom the wind and the sea obeyed. But if anyone contentiously wants to say that those who were amazed were the disciples, we will respond that they are rightly called men because they had not yet known the power of the Savior. And we too, each individually, imbued with the sign of the Lord's cross, intending to leave the world, indeed board the ship with Jesus, we try to cross the sea. But though he who watches over Israel neither slumbers nor sleeps, yet he often seems to sleep while we sail, as among the roars of the sea itself, when amid the persistent efforts of virtues, or of unclean spirits, or of few men, or even by the force of our own thoughts, the brightness of faith becomes obscured, the height of hope melts away, the flame of love grows cold. Yet amid such storms, it is necessary for us to run to that helmsman, to rouse him diligently, who does not serve but commands the winds. Immediately he will calm the storms, restore tranquility, and grant the harbor of salvation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.4.40"
+    },
+    {
+      "id": "catena-mark-0328-v40",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.40",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:35–41",
+      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.40:8ab40ed5:0"
       ]
     },
     {
@@ -156,24 +229,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
       "excerpt": "For from the troubling of the sea there arises a certain sound, which appears to be its voice threatening danger, and therefore, by a sort of metaphor, He fitly commands tranquillity by a word signifying silence: just as in the restraining of the winds, which trouble the sea with their violence, He uses a rebuke. For men who are in power are accustomed to curb those, who rudely disturb the peace of mankind, by threatening to punish them; by this, therefore, we are given to understand, that, as a king can repress violent men by threats, and by his edicts sooth the murmurs of his people, so…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0328-v40",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.40",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:35–41",
-      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

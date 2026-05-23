@@ -23,78 +23,6 @@
       ]
     },
     {
-      "id": "catena-matt-1026-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.7.2",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 7:1–2",
-      "excerpt": "Since when these temporal things are provided beforehand against the future, it is uncertain with what purpose it is done, as it may be with a single or double mind, He opportunely subjoins, “Judge not.”",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1028-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.7.2",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 7:1–2",
-      "excerpt": "But if He forbids us to judge, how then does Paul judge the Corinthian who had committed uncleanness? Or Peter convict Ananias and Sapphira of falsehood?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1030-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.7.2",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 7:1–2",
-      "excerpt": "Wherefore He does not say, ‘Do not cause a sinner to cease,’ but do not judge; that is, be not a bitter judge; correct him indeed, but not as an enemy seeking revenge, but as a physician applying a remedy.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1032-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.7.2",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 7:1–2",
-      "excerpt": "Otherwise; He does not forbid us to judge all sin absolutely, but lays this prohibition on such as are themselves full of great evils, and judge others for very small evils. In like manner Paul does not absolutely forbid to judge those that sin, but finds fault with disciples that judged their teacher, and instructs us not to judge those that are above us.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-1034-v2",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.7.2",
@@ -128,6 +56,92 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.7.2:cc576c8b:1"
+      ]
+    },
+    {
+      "id": "catena-matt-1026-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.7.2",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 7:1–2",
+      "excerpt": "Since when these temporal things are provided beforehand against the future, it is uncertain with what purpose it is done, as it may be with a single or double mind, He opportunely subjoins, “Judge not.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1028-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.7.2",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 7:1–2",
+      "excerpt": "But if He forbids us to judge, how then does Paul judge the Corinthian who had committed uncleanness? Or Peter convict Ananias and Sapphira of falsehood?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.7.2:d76664b8:0"
+      ]
+    },
+    {
+      "id": "catena-matt-1032-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.7.2",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 7:1–2",
+      "excerpt": "Otherwise; He does not forbid us to judge all sin absolutely, but lays this prohibition on such as are themselves full of great evils, and judge others for very small evils. In like manner Paul does not absolutely forbid to judge those that sin, but finds fault with disciples that judged their teacher, and instructs us not to judge those that are above us.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1030-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.7.2",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 7:1–2",
+      "excerpt": "Wherefore He does not say, ‘Do not cause a sinner to cease,’ but do not judge; that is, be not a bitter judge; correct him indeed, but not as an enemy seeking revenge, but as a physician applying a remedy.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
       ]
     },
     {
@@ -146,17 +160,194 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.7.2:0d14715c:0"
       ]
     },
     {
-      "id": "catena-matt-1027-v2",
+      "id": "hcf:augustine:matthew.7.2:90c01841:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 7:2",
+      "excerpt": "Is it the case, then, that if we shall judge any thing with a rash judgment, God will also judge rashly with respect to us? Or if we shall measure any thing with an unjust measure, is there with God also an unjust measure, according to which it shall be measured to us again? (for by the expression measure also, I suppose the judgment itself is meant.) By no means does God either judge rashly, or recompense to any one with an unjust measure; but it is so expressed, inasmuch as that very same rashness wherewith you punish another must necessarily punish yourself. Unless, perchance, it is to be imagined that injustice does harm in some way to him against whom it goes forth, but in no way to him from whom it goes forth; but nay, it often does no harm to him who suffers the injury, but it must necessarily do harm to him who inflicts it. For what harm did the injustice of the persecutors do to the martyrs? None; but very much to the persecutors themselves. For although some of them were turned from the error of their ways, yet at the time at which they were acting as persecutors, their wickedness was blinding them. So also a rash judgment frequently does no harm to him who is the object of the rash judgment; but to him who judges rashly, the rashness itself must necessarily do harm. According to such a rule, I judge of that saying also: Every one that strikes with the sword shall perish with the sword. For how many take the sword, and yet do not perish with the sword, Peter himself being an instance! But lest any should think that he escaped such punishment by the pardon of his sins (although nothing could be more absurd than to think that the punishment of the sword, which did not befall Peter, could have been greater than that of the cross, which actually befell him), yet what would they say of the malefactors who were crucified with our Lord; for both he who got pardon, got it after he was crucified, and the other did not get it at all? Or had they perhaps crucified all whom they had slain; and did they therefore themselves too deserve to suffer the same thing? It is ridiculous to think so. For what else is meant by the statement, For all they that take the sword shall perish with the sword, but that the soul dies by that very sin, whatever it may be, which it has committed?",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:jerome:matthew.7.2:923bb622:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 7:2",
+      "excerpt": "(Chapter VII - Verses 1, 2) Do not judge, so that you may not be judged. For with the judgment you judge, you will be judged; and with the measure you use, it will be measured to you. If judging is prohibited, what is the consequence of Paul judging the fornicator in Corinth (1 Cor. 5), and Peter rebuking Ananias and Sapphira for lying (Acts 5)? But he shows what he prohibits from the consequences, saying: just as you judge, you will be judged. Therefore, he did not prohibit judgment, but taught it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.7.2:d8911bf5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-23",
+      "title": "Homily on the Gospel of Matthew 23 on matthew 7:2",
+      "excerpt": "What then? Ought we not to blame them that sin? Because Paul also saith this selfsame thing: or rather, there too it is Christ, speaking by Paul, and saying, \"Why dost thou judge thy brother? And thou, why dost thou set at nought thy brother?\" and, \"Who art thou that judgest another man's servant?\" And again, \"Therefore judge nothing before the time, until the Lord Come.\"\r\n\r\nHow then doth He say elsewhere, \"Reprove, rebuke, exhort,\" and, \"Them that sin rebuke before all?\" And Christ too to Peter, \"Go and tell him his fault between thee and him alone,\" and if he neglect to hear, add to thyself another also; and if not even so doth he yield, declare it to the church likewise?\" And how hath He set over us so many to reprove; and not only to reprove, but also to punish? For him that hearkens to none of these, He hath commanded to be \"as a heathen man and a publican.\" And how gave He them the keys also? since if they are not to judge, they will be without authority in any matter, and in vain have they received the power to bind and to loose.\r\n\r\nAnd besides, if this were to obtain, all would be lost alike, whether in churches, or in states, or in houses. For except the master judge the servant, and the mistress the maid, and the father the son, and friends one another, there will be an increase of all wickedness. And why say I, friends? unless we judge our enemies, we shall never be able to put an end to our enmity, but all things will be turned upside down.\r\n\r\nWhat then can the saying be? Let us carefully attend, lest the medicines of salvation, and the laws of peace, be accounted by any man laws of overthrow and confusion. First of all, then, even by what follows, He hath pointed out to them that have understanding the excellency of this law, saying, \"Why beholdest thou the mote that is in thy brother's eye, but considerest not the beam that is in thine own eye?\r\n\r\nBut if to many of the less attentive, it seem yet rather obscure, I will endeavor to explain it from the beginning. In this place, then, as it seems at least to me, He doth not simply command us not to judge any of men's sins, neither doth He simply forbid the doing of such a thing, but to them that are full of innumerable ills, and are trampling upon other men for trifles. And I think that certain Jews too are here hinted at, for that while they were bitter accusing their neighbors for small faults, and such as came to nothing, they were themselves insensibly committing deadly sins.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.7.2:273c4544:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-23",
+      "title": "Homily on the Gospel of Matthew 23 on matthew 7:2",
+      "excerpt": "\"For with what judgment ye judge,\" saith He, \"ye shall be judged.\"\r\n\r\nThat is, \"it is not the other,\" saith Christ, \"that thou condemnest, but thyself, and thou art making the judgment-seat dreadful to thyself, and the account strict.\" As then in the forgiveness of our sins the beginnings are from us, so also in this judgment, it is by ourselves that the measures of our condemnation are laid down. You see, we ought not to upbraid nor trample upon them, but to admonish; not to revile, but to advise; not to assail with pride, but to correct with tenderness. For not him, but thyself, dost thou give over to extreme vengeance, by not sparing him, when it may be needful to give sentence on his offenses.\r\n\r\nSeest thou, how these two commandments are both easy, and fraught with great blessings to the obedient, even as of evils on the other hand, to the regardless? For both he that forgives his neighbor, hath freed himself first of the two from the grounds of complaint, and that without any labor; and he that with tenderness and indulgence inquires into other men's offenses, great is the allowance of pardon, which he hath by his judgment laid up beforehand for himself.\r\n\r\n\"What then!\" say you: \"if one commit fornication, may I not say that fornication is a bad thing, nor at all correct him that is playing the wanton?\" Nay, correct him, but not as a foe, nor as an adversary exacting a penalty, but as a physician providing medicines. For neither did Christ say, \"stay not him that is sinning,\" but \"judge not;\" that is, be not bitter in pronouncing sentence.\r\n\r\nAnd besides, it is not of great things, nor of things prohibited, that this is said, but of those which are not even counted offenses.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.7.2:46425544:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-ephesians-15",
+      "title": "Homily on Ephesians 15 on matthew 7:2",
+      "excerpt": "\"For with what measure ye mete,\" He saith, \"it shall be measured unto you.\" Set a bridle upon thy mouth. If thou art disciplined to bear bravely with a servant when she answers back, thou wilt not be annoyed with the insolence of an equal, and in being above annoyance, wilt have attained to the highest philosophy. But some there are who add even oaths, but there is nothing more shocking than a woman so enraged. But what again, ye will say, if she shall dress gaily? Why then, forbid this; thou hast my consent; but check it by first beginning with thyself, not so much by fear as by example. Be in everything thyself a perfect pattern.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:clement-of-rome:matthew.7.2:d1741c53:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-rome",
+      "workId": "hcf:work:clement-of-rome:clement-s-first-letter-to-the-corinthians-chapter-13",
+      "title": "Clement's First Letter to the Corinthians, Chapter 13 on matthew 7:2",
+      "excerpt": "Let us therefore, brethren, be of humble mind, laying aside all haughtiness, and pride, and foolishness, and angry feelings; and let us act according to that which is written (for the Holy Spirit saith, \"Let not the wise man glory in his wisdom, neither let the mighty man glory in his might, neither let the rich man glory in his riches; but let him that glorieth glory in the Lord, in diligently seeking Him, and doing judgment and righteousness\" [Jeremiah 9:23-24]), being especially mindful of the words of the Lord Jesus which He spake, teaching us meekness and long-suffering. For thus He spoke: \"Be ye merciful, that ye may obtain mercy; forgive, that it may be forgiven to you; as ye do, so shall it be done unto you; as ye judge, so shall ye be judged; as ye are kind, so shall kindness be shown to you; with what measure ye mete, with the same it shall be measured to you.\" [Matthew 5:7, Matthew 6:14, Matthew 7:1-2] By this precept and by these rules let us establish ourselves, that we walk with all humility in obedience to His holy words. For the holy word saith, \"On whom shall I look, but on him that is meek and peaceable, and that trembleth at My words?\" [Isaiah 66:2]",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c99"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:hcf-desert-fathers:matthew.7.2:4b8745c4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-desert-fathers",
+      "workId": "hcf:work:hcf-desert-fathers:the-desert-fathers-sayings-of-the-early-christian-monks",
+      "title": "The Desert Fathers, Sayings of the Early Christian Monks on matthew 7:2",
+      "excerpt": "Joseph asked Poemen, 'Tell me how to become a monk.' He said, 'If you want to find rest in this life and the next, say at every moment, \"Who am I?\" and judge no one.'",
+      "takeaway": "",
+      "sourceId": "hcf:source:books-google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c500"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:matthew.7.2:81b2dc41:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv-chapter-30",
+      "title": "Against Heresies (Book IV, Chapter 30) on matthew 7:2",
+      "excerpt": "And therefore has the Lord said: \"Judge not, that you be not judged: for with what judgment you shall judge, you shall be judged.\" [Matthew 7:1-2] [The meaning is] not certainly that we should not find fault with sinners, nor that we should consent to those who act wickedly; but that we should not pronounce an unfair judgment on the dispensations of God, inasmuch as He has Himself made provision that all things shall turn out for good, in a way consistent with justice. For, because He knew that we would make a good use of our substance which we should possess by receiving it from another, He says, \"He that has two coats, let him impart to him that has none; and he that has meat, let him do likewise.\" [Luke 3:11] And, \"For I was an hungered, and you gave Me meat; I was thirsty, and you gave Me drink; I was naked and you clothed Me.\" [Matthew 25:35-36] And, \"When you do your alms, let not your left hand know what your right hand does.\" [Matthew 6:3] And we are proved to be righteous by whatsoever else we do well, redeeming, as it were, our property from strange hands.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:tertullian:matthew.7.2:87698695:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on matthew 7:2",
+      "excerpt": "Besides, the Lord Himself demonstrates the manner in which He threatens such as judge: \"For with what judgment ye judge, judgment shall be given on you.\" Thus He has not prohibited judging, but taught (how to do it).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.7.2:f9023813:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 7:2",
+      "excerpt": "The reason follows: For with the judgment you pronounce, you will be judged, i.e., according the judgment with which you have judged you will be judged: \"The wicked are ensnared in the work of their own hands\" (Ps 9:16); and below (26:52): \"He that strikes with the sword shall die by the sword.\" Or, in this way: Those who judge should fear that the Lord might allow them to be punished with this judgment: \"Woe to you, destroyer, who yourself have not been destroyed\" (Is 33:1).\r\n\r\nThe measure you give will be the measure you get... Here he presents a reason in the likeness of a judgment. For a judge is, as it were, a living rule; for when you wish to weigh two things, you use a balance, and whatever is excessive in one you cut off. In the same way, if anyone has more than he ought of someone else's, let it be cut off and returned to each according to his due, i.e., according to that measure it will be measured to us.\r\n\r\nBut it is objected: Someone sins in time and is punished eternally. This does not seem to be a balanced judgment. I say that two things must be considered in a sin: the duration and the offense. In the offense are two things: turning away and turning to. On the part of turning to, the sin is finite; on the part of turning away, it is infinite, because one turns from God, who is infinite. When, therefore, one turns away from the infinite, he should be punished in an infinite way. Likewise, on the part of duration two things must be considered, namely, the act and the stain of sin. The act is momentary, but the stain infinite, i.e., eternal. Therefore, it should be punished in an infinite way, i.e., eternally. Hence, if the stain could be abandoned by the devils, they could be freed of sin and punishment. Similarly, on the part of punishment there is bitterness, which is finite; likewise, duration, which is finite.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.7.2"
+    },
+    {
+      "id": "catena-matt-1031-v2",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.7.2",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 7:1–2",
-      "excerpt": "Otherwise; He has drawn out thus far the consequences of his injunctions of almsgiving; He now takes up those respecting prayer. And this doctrine is in a sort of continuation of that of the prayer; as though it should run, “Forgive us our debts,” and then should follow, “Judge not, that ye be not judged.”",
+      "excerpt": "But that not even thus should Christians correct Christians is shewn by that expression, “Judge not.” But if they do not thus correct, shall they therefore obtain forgiveness of their sins, because it is said, “and ye shall not be judged?” For who obtains forgiveness of a former sin, by not adding another thereto? This we have said, desiring to shew that this is not here spoken concerning not judging our neighbour who shall sin against God, but who may sin against ourselves. For whoso does not judge his neighbour who has sinned against him, him shall not God judge for his sin, but will…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -164,6 +355,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.7.2:b8ded299:0"
       ]
     },
     {
@@ -185,14 +383,14 @@
       ]
     },
     {
-      "id": "catena-matt-1031-v2",
+      "id": "catena-matt-1027-v2",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.7.2",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 7:1–2",
-      "excerpt": "But that not even thus should Christians correct Christians is shewn by that expression, “Judge not.” But if they do not thus correct, shall they therefore obtain forgiveness of their sins, because it is said, “and ye shall not be judged?” For who obtains forgiveness of a former sin, by not adding another thereto? This we have said, desiring to shew that this is not here spoken concerning not judging our neighbour who shall sin against God, but who may sin against ourselves. For whoso does not judge his neighbour who has sinned against him, him shall not God judge for his sin, but will…",
+      "excerpt": "Otherwise; He has drawn out thus far the consequences of his injunctions of almsgiving; He now takes up those respecting prayer. And this doctrine is in a sort of continuation of that of the prayer; as though it should run, “Forgive us our debts,” and then should follow, “Judge not, that ye be not judged.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

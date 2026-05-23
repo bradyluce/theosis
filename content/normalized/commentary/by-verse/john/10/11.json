@@ -4,25 +4,6 @@
   "verseNumber": 11,
   "entries": [
     {
-      "id": "augustine-john-046-c10-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.10.11",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 10:11–13",
-      "excerpt": "The Lord Jesus is speaking to His sheep — to those already so, and to those yet to become such — who were then present; for in the place where they were, there were those who were already His sheep, as well as those who were afterwards to become so: and He likewise shows to those then present and those to come, both to them and to us, and to as many also after us as shall yet be His sheep, who it is that had been sent to them. All, therefore, hear the voice of their Shepherd saying, I am the good Shepherd. He would not add good, were there not bad shepherds. But the bad shepherds are those…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1356-v11",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.11",
@@ -38,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-1358-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.10.11",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 10:11–13",
-      "excerpt": "Christ was not the only one who did this. And yet if they who did it are members of Him, one and the same Christ did it always. He was able to do it without them; they were not without Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.10.11:29a2bd65:0"
       ]
     },
     {
@@ -77,14 +47,40 @@
       ]
     },
     {
-      "id": "catena-john-1360-v11",
+      "id": "augustine-john-046-c10-v11",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.11",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 10:11–13",
+      "excerpt": "The Lord Jesus is speaking to His sheep — to those already so, and to those yet to become such — who were then present; for in the place where they were, there were those who were already His sheep, as well as those who were afterwards to become so: and He likewise shows to those then present and those to come, both to them and to us, and to as many also after us as shall yet be His sheep, who it is that had been sent to them. All, therefore, hear the voice of their Shepherd saying, I am the good Shepherd. He would not add good, were there not bad shepherds. But the bad shepherds are those…",
+      "takeaway": "",
+      "sourceId": "augustine-tractates-john-source",
+      "rank": 85,
+      "tags": [
+        "augustine",
+        "patristic",
+        "tractate",
+        "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.10.11:7322221b:1"
+      ]
+    },
+    {
+      "id": "catena-john-1365-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.10.11",
+      "topicSlugs": [],
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 10:11–13",
-      "excerpt": "Our Lord shews here that He did not undergo His passion unwillingly; but for the salvation of the world. He then gives the difference between the shepherd and the hireling: But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth.",
+      "excerpt": "Lo, the wolf hath seized a sheep by the throat, the devil hath enticed a man into adultery. The sinner must be excommunicated. But if he is excommunicated, he will be an enemy, he will plot, he will do as much harm as he can. Wherefore thou art silent, thou dost not censure, thou hast seen the wolf coming, and fled. Thy body has stood, thy mind has fled. For as joy is relaxation, sorrow contraction, desire a reaching forward of the mind; so fear is the flight of the mind.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -113,32 +109,14 @@
       ]
     },
     {
-      "id": "catena-john-1364-v11",
+      "id": "catena-john-1358-v11",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.11",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 10:11–13",
-      "excerpt": "The wolf is the devil, and they that follow him; according to’ Matthew, Which come to you in sheeps’ clothing, but inwardly they are ravening wolves. (Matt. 7:15)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1365-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.10.11",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 10:11–13",
-      "excerpt": "Lo, the wolf hath seized a sheep by the throat, the devil hath enticed a man into adultery. The sinner must be excommunicated. But if he is excommunicated, he will be an enemy, he will plot, he will do as much harm as he can. Wherefore thou art silent, thou dost not censure, thou hast seen the wolf coming, and fled. Thy body has stood, thy mind has fled. For as joy is relaxation, sorrow contraction, desire a reaching forward of the mind; so fear is the flight of the mind.",
+      "excerpt": "Christ was not the only one who did this. And yet if they who did it are members of Him, one and the same Christ did it always. He was able to do it without them; they were not without Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -167,6 +145,42 @@
       ]
     },
     {
+      "id": "catena-john-1364-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.10.11",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 10:11–13",
+      "excerpt": "The wolf is the devil, and they that follow him; according to’ Matthew, Which come to you in sheeps’ clothing, but inwardly they are ravening wolves. (Matt. 7:15)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1360-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.10.11",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 10:11–13",
+      "excerpt": "Our Lord shews here that He did not undergo His passion unwillingly; but for the salvation of the world. He then gives the difference between the shepherd and the hireling: But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-1357-v11",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.11",
@@ -175,6 +189,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 10:11–13",
       "excerpt": "And He adds what that goodness (forma bonitatis) is, for our imitation: The good Shepherd giveth His life for the sheep. He did what He bade, He set the example of what He commanded: He laid down His life for the sheep, that He might convert His body and blood in our Sacrament, and feed with His flesh the sheep He had redeemed. A path is shewn us wherein to walk, despising death; a stamp is applied to us, and we must submit to the impression. Our first duty is to spend our outward possessions upon the sheep; our last, if it be necessary, is to sacrifice our life for the same sheep. Whoso doth…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:john.10.11:cda44c23:0"
+      ]
+    },
+    {
+      "id": "catena-john-1366-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.10.11",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "catena-aurea-john",
+      "title": "On John 10:11–13",
+      "excerpt": "The wolf too cometh upon the sheep, whenever any spoiler and unjust person oppresses the humble believers. And he who seems to be shepherd, but leaves the sheep and flees, is he who dares not to resist his violence, from fear of danger to himself. He flees not by changing place, but by withholding consolation from his flock. The hireling is inflamed with no zeal against this injustice. He only looks to outward comforts, and overlooks the internal suffering of his flock. The hireling fleeth, because he is an hireling, and careth not for the sheep. The only reason that the hireling fleeth, is…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 80,
@@ -221,22 +260,277 @@
       ]
     },
     {
-      "id": "catena-john-1366-v11",
+      "id": "hcf:gregory-the-great:john.10.11:8909a5ec:1",
       "relation": "verse",
-      "targetVerseId": "kjva:john.10.11",
       "topicSlugs": [],
       "personId": "gregory-the-great",
-      "workId": "catena-aurea-john",
-      "title": "On John 10:11–13",
-      "excerpt": "The wolf too cometh upon the sheep, whenever any spoiler and unjust person oppresses the humble believers. And he who seems to be shepherd, but leaves the sheep and flees, is he who dares not to resist his violence, from fear of danger to himself. He flees not by changing place, but by withholding consolation from his flock. The hireling is inflamed with no zeal against this injustice. He only looks to outward comforts, and overlooks the internal suffering of his flock. The hireling fleeth, because he is an hireling, and careth not for the sheep. The only reason that the hireling fleeth, is…",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-14",
+      "title": "Forty Gospel Homilies, Homily 14 on john 10:11",
+      "excerpt": "For behold, he who is good not by an accidental gift but essentially, says: \"I am the good shepherd.\" And he adds the pattern of that same goodness for us to imitate, saying: \"The good shepherd lays down his life for his sheep.\" He did what he taught; he showed what he commanded. The good shepherd laid down his life for his sheep, so that in our sacrament he might transform his body and blood, and satisfy with the nourishment of his flesh the sheep he had redeemed. The way has been shown to us through contempt of death that we should follow; the pattern has been set before us upon which we should be formed. First it is ours to mercifully spend our external goods on his sheep; but finally, if necessary, even to offer our death for those same sheep. From that first and lesser thing one arrives at the final and greater. But since the soul by which we live is incomparably far better than the earthly substance we possess externally, when will someone who does not give his substance for his sheep give his life for them? And there are some who, because they love earthly substance more than the sheep, deservedly lose the name of shepherd.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 80,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.10.11:361d88ab:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-60",
+      "title": "Homily on the Gospel of John 60 on john 10:11",
+      "excerpt": "A Great matter, beloved, a great matter it is to preside over a Church: a matter needing wisdom and courage as great as that of which Christ speaketh, that a man should lay down his life for the sheep, and never leave them deserted or naked; that he should stand against the wolf nobly. For in this the shepherd differs from the hireling; the one always looks to his own safety, caring not for the sheep; the other always seeks that of the sheep, neglecting his own. Having therefore mentioned the marks of a shepherd, Christ hath put two kinds of spoilers; one, the thief who kills and steals; the other, one who doth not these things, but who when they are done doth not give heed nor hinder them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.10.11:78dc352f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on john 10:11",
+      "excerpt": "(Hom. lx. 5) Our Lord shows here that He did not undergo His passion unwillingly; but for the salvation of the world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:john.10.11:984cefc9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on john 10:11",
+      "excerpt": "As far as possible, therefore, let the bishop make the offence his own, and say to the sinner, Do thou but return, and I will undertake to suffer death for thee, as our Lord suffered death for me, and for all men. For \"the good shepherd lays down his life for the sheep; but he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, that is, the devil, and he leaveth the sheep, and fleeth, and the wolf seizes upon them.\" We must know, therefore, that God is very merciful to those who have offended, and hath promised repentance with an oath. But he who has offended, and is unacquainted with this promise of God concerning repentance, and does not understand His long-suffering and forbearance, and besides is ignorant of the Holy Scriptures, which proclaim repentance, inasmuch as he has never learned them from you, perishes through his folly. But do thou, like a compassionate shepherd, and a diligent feeder of the flock, search out, and keep an account of thy flock.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:hcf-basil-of-seleucia:john.10.11:ac54e2a4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-basil-of-seleucia",
+      "workId": "hcf:work:hcf-basil-of-seleucia:homily-26-2",
+      "title": "HOMILY 26.2 on john 10:11",
+      "excerpt": "For the sake of his flock the shepherd was sacrificed as though he were a sheep. He did not refuse death. He did not destroy his executioners as he had the power to do, for his passion was not forced on him. He laid down his life for his sheep of his own free will. \"I have the power to lay it down,\" he said, \"and I have the power to take it up again.\" By his passion he made atonement for our evil passions, by his death he cured our death, by his tomb he robbed the tomb, by the nails that pierced his flesh he destroyed the foundations of hell.Death held sway until Christ died. The grave was bitter, our prison was indestructible, until the Shepherd went down and brought to his sheep confined there the good news of their release. His appearance among them gave them a pledge of their resurrection and called them to a new life beyond the grave. \"The good Shepherd lays down his life for his sheep\" and so seeks to win their love.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-26-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c468"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.10.11:f051401d:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-1",
+      "title": "The Instructor Book 1 on john 10:11",
+      "excerpt": "Feed us, the children, as sheep. Yea, Master, fill us with righteousness, Thine own pasture; yea, O Instructor, feed us on Thy holy mountain the Church, which towers aloft, which is above the clouds, which touches heaven. \"And I will be,\" He says, \"their Shepherd,\" and will be near them, as the garment to their skin. He wishes to save my flesh by enveloping it in the robe of immortality, and He hath anointed my body. \"They shall call Me,\" He says, \"and I will say, Here am I.\" Thou didst hear sooner than I expected, Master. \"And if they pass over, they shall not slip,\" saith the Lord. For we who are passing over to immortality shall not fall into corruption, for He shall sustain us. For so He has said, and so He has willed. Such is our Instructor, righteously good. \"I came not,\" He says, \"to be ministered unto, but to minister.\" Wherefore He is introduced in the Gospel \"wearied,\" because toiling for us, and promising \"to give His life a ransom for many.\" For him alone who does so He owns to be the good shepherd. Generous, therefore, is He who gives for us the greatest of all gifts, His own life; and beneficent exceedingly, and loving to men, in that, when He might have been Lord, He wished to be a brother man; and so good was He that He died for us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.10.11:a8e4e811:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-stromata-book-1",
+      "title": "The Stromata Book 1 on john 10:11",
+      "excerpt": "As then we say that it belongs to the shepherd's art to care for the sheep; for so \"the good shepherd giveth his life for the sheep;\" so also we shall say that legislation, in as much as it presides over and cares for the flock of men, establishes the virtue of men, by fanning into flame, as far as it can, what good there is in humanity.\r\n\r\nAnd if the flock figuratively spoken of as belonging to the Lord is nothing but a flock of men, then He Himself is the good Shepherd and Lawgiver of the one flock, \"of the sheep who hear Him,\" the one who cares for them, \"seeking,\" and finding by the law and the word, \"that which was lost;\" since, in truth, the law is spiritual and leads to felicity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.10.11:6fe3df86:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-1",
+      "title": "The Instructor Book 1 on john 10:11",
+      "excerpt": "The divine Instructor is trustworthy, adorned as He is with three of the fairest ornaments-knowledge, benevolence, and authority of utterance;-with knowledge, for He is the paternal wisdom: \"All Wisdom is from the Lord, and with Him for evermore;\"-with authority of utterance, for He is God and Creator: \"For all things were made by Him, and without Him was not anything made;\"-and with benevolence, for He alone gave Himself a sacrifice for us: \"For the good Shepherd giveth His life for the sheep;\" and He has so given it. Now, benevolence is nothing but wishing to do good to one's neighbour for his sake.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.10.11:4725ffd7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-1",
+      "title": "The Instructor Book 1 on john 10:11",
+      "excerpt": "He is called Jesus: Sometimes He calls Himself a shepherd, and says, \"I am the good Shepherd.\" According to a metaphor drawn from shepherds, who lead the sheep, is hereby understood the Instructor, who leads the children-the Shepherd who tends the babes. For the babes are simple, being figuratively described as sheep. \"And they shall all,\" it is said, \"be one flock, and one shepherd.\" The Word, then, who leads the children to salvation, is appropriately called the Instructor (Paedagogue).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.10.11:41176f59:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-6",
+      "title": "Commentary on the Gospel of John, Book 6 on john 10:11",
+      "excerpt": "Having previously well and clearly shown how grievously those who lived in earlier times suffered from the hypocrisy of the false prophets and false shepherds, and having made manifest the advantages to be brought about by His own coming; having now also shown His own superiority by comparing the future destinies of the sheep, and being crowned as Conqueror by the votes of truth; He appropriately utters the words, I am the Good Shepherd. 'Certainly therefore,' He says, 'your plans against Me will be vain, since without being able to complain that I wish in any thing to damage the interests of the sheep, ye hesitate not to number Me with those who are wont to do this, and Him Who is truly good ye call evil, losing through your self-regard the ability to judge each matter fairly according to the injunction of the lawgiver.' Therefore He rebukes the rulers as unjust, as quite regardless of the words of Moses, as ignorant of the object of His coming, so that henceforth the prophet Isaiah may be acknowledged to speak truly concerning them, for he says: Woe unto them that call evil good, and good evil; that call sweet bitter, and bitter sweet; that put darkness for light, and light for darkness. For indeed will they not be found to do this, who treat the True Light, that is, Our Lord Jesus Christ, as darkness, by scrupling not to reckon our Good Shepherd as one of the falsely-named shepherds, or perhaps daring to esteem Him even less honourable than they? For such as professed themselves utterers of the Divine Word, and exercised themselves under the guise of prophecy in robbing the understanding of the common people and in cunningly stealing them from the way of truth, and led their followers astray to do their own pleasure instead of God's,----such as these were held in high esteem by those who seemed to be in power at that time. Certainly Shemaiah the Salamite opposed his own falsehood to God's words, and made himself bold against the reputation of Jeremiah; for the latter was in bonds, and the former had honour from Zedekiah as a reward for his lies. And now the wretched Pharisees going far beyond similar impiety, and characterised by more daring insolence, do not assign to Christ even the position allowed to false teachers. For indeed what did they actually say to some who were listening with great pleasure to His discourse? He hath a devil, and is mad; why hear ye Him? Wherefore Himself also says concerning them, by the prophet Isaiah: Woe unto them! for they have fled from Me; wretched are they, for they have been impious towards Me: though I have redeemed them, yet they have spoken lies against Me. And again: Their rulers shall fall by the sword for the rage of their tongue. For are they not worthy of every punishment, who foolishly whet their tongue to such a sharpness as to dare to say against Christ such things as are not becoming in any way for us, but only for those who hold similar opinions, either to receive within the ears or heedlessly to repeat?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.10.11:63540d20:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-6",
+      "title": "Commentary on the Gospel of John, Book 6 on john 10:11",
+      "excerpt": "He explains the proper method of testing a good shepherd, for He teaches that in a struggle for the salvation of the flock such a one ought not to hesitate to give up even life itself freely, a condition which was of course fulfilled by Christ. For man, having yielded to an inclination for sin, at once wandered away from love to God. On this account he was banished from the sacred and Divine fold, I mean the precincts of Paradise; and having been weakened by this calamity, he became the prey of really bitter and implacable wolves, the devil who had beguiled him to sin, and death which had been germinated from sin. But when Christ was announced as the Good Shepherd over all, in the struggle with this pair of wild and terrible beasts, He laid down His life for us. He endured the cross for our sakes that by death He might destroy death, and was condemned for our sakes that He might deliver all men from condemnation for sin, abolishing the tyranny of sin by means of faith, and nailing to His cross the bond that was against us, as it is written. Accordingly, the father of sin used to put us in Hades like sheep, delivering us over to death as our shepherd, according to what is said in the Psalms: but the really Good Shepherd died for our sakes, that He might take us out of the dark pit of death and prepare to enfold us among the companies of heaven, and give unto us mansions above, even with the Father, instead of dens situate in the depths of the abyss or the recesses of the sea. Wherefore also He somewhere says to us: Fear not, little flock; for it is your Father's good pleasure to give you the kingdom.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:john.10.11:7fdae6a0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:on-holy-easter-oration-45-26",
+      "title": "ON HOLY EASTER, ORATION 45.26 on john 10:11",
+      "excerpt": "Will you think less of him … because to seek for what had wandered, the good Shepherd who lays down his life for the sheep came on the mountains and hills on which you used to sacrifice and found the wanderer. And having found it, he took it upon his shoulders, on which he also bore the wood. And having borne the wandering sheep, he brought it back to the life above. And having brought it back, he numbered it among those who have never strayed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-holy-easter-oration-45-26",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:tertullian:john.10.11:b49aa58a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on john 10:11",
+      "excerpt": "When, in reply to this, the Lord had figured the restoration of the lost ewe, to whom else is it credible that he configured it but to the lost heathen, about whom the question was then in hand,-not about a Christian, who up to that time had no existence? Else, what kind of (hypothesis) is it that the Lord, like a quibbler in answering, omitting the present subject-matter which it was His duty to refute, should spend His labour about one yet future? \"But a `sheep' properly means a Christian, and the Lord's `flock' is the people of the Church, and the `good shepherd' is Christ; and hence in the `sheep' we must understand a Christian who has erred from the Church's `flock.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:hcf-theodore-of-mopsuestia:john.10.11:397c8cde:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-of-mopsuestia",
+      "workId": "hcf:work:hcf-theodore-of-mopsuestia:commentary-on-john-4-10-10-11",
+      "title": "COMMENTARY ON JOHN 4.10.10-11 on john 10:11",
+      "excerpt": "So after giving evidence derived from these facts, he said to them, \"I am the good Shepherd.\" Therefore, if I act against the thieves, not only am I not the cause of destruction for those who obey me, but I even invite them to eternal life. And so I appear to be the Shepherd because I work for the good of the sheep. Since he asserts this decisively, he proves his argument even more so, so that he may not appear to vainly portray himself as the good Shepherd. And so, with the intention of demonstrating this with different arguments, as well as the facts themselves, he says, \"The good Shepherd lays down his life for the sheep.\" If, he says, the good Shepherd is the one who accepts suffering for every affliction of his sheep, since I am going to die for the salvation of the whole world, the testimony about me is beyond doubt. \"I am the good Shepherd.\" Indeed, if the thief kills, on the contrary, not only do I not kill, but I also give new life to men and women after taking death from them. Therefore, in every respect, I appear to be the good Shepherd according to these facts.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-john-4-10-10-11",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c428"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.10.11:0feaf540:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 10:11",
+      "excerpt": "Then He speaks also of the sufferings and says: \"I lay down My life for the sheep,\" expressing by this that He goes to His sufferings not by compulsion, but voluntarily. By the word \"lay down\" He shows that no one takes it from Me, but I Myself give it up.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.10.11"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.10.11:66884a5f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 10:11",
+      "excerpt": "Here he explains the second clause of the parable, \"he who enters by the door is the shepherd of the sheep\" (10:2). First, he gives the explanation; secondly, he makes it clear (v 14). First, he explains that he is the good shepherd; secondly, he states the office of a good shepherd (v 11b); thirdly, he shows that the opposite is found in an evil shepherd (v 12).\r\n\r\nHe says, in regard to the first, I am the good shepherd. That Christ is a shepherd is clear enough, for as a flock is led and fed by the shepherd, so the faithful are nourished by Christ with spiritual food, and even with his own body and blood: \"For you were straying like sheep, but now have returned to the Shepherd and Guardian of your souls\" (1 Pet 2:25); \"He will feed his flock like a shepherd\" (Is 40:11). To distinguish himself from an evil shepherd and thief, he adds, good. Good, I say, because he fulfills the office of a shepherd, just as a soldier is called good who fulfills the office of a soldier. But since Christ had said above that the shepherd enters by the door, and here he says that he is the shepherd, and before he said he was the door (v 9), then he must enter through himself. And he does enter through himself, because he manifests himself and through himself knows the Father. We, however, enter through him, because it is by him that we are led to happiness.\r\n\r\nNote that only he is the door, because no one else is the true light, but only shares in the light: \"He,\" John the Baptizer, \"was not the light, but came to bear witness to the light\" (1:8). But we read of Christ that \"He was the true light, which enlightens every man\" (1:9). Therefore, no one else refers to himself as a door; Christ reserved this for himself. But being a shepherd he did share with others, and conferred it on his members: for Peter was a shepherd, and the other apostles were shepherds, as well as all good bishops: \"I will give you shepherds after my own heart\" (Jer 3:15). Now, although the Church's rulers, who are her children, are all shepherds, as Augustine says, yet he expressly says, I am the good shepherd, in order to emphasize the virtue of charity. For no one is a good shepherd unless he has become one with Christ by love, and has become a member of the true shepherd.\r\n\r\nThe office of a good shepherd is charity; thus he says, the good shepherd lays down his life for the sheep. It should be noted that there is a difference between a good shepherd and an evil one: the good shepherd is intent upon the welfare of the flock, but the evil one is intent upon his own. This difference is touched upon by Ezekiel (34:2): \"Ho, shepherds of Israel who have been feeding yourselves! Should not shepherds feed the sheep?\" Therefore, one who uses the flock only to feed himself is not a good shepherd. From this it follows that an evil shepherd, even over animals, is not willing to sustain any loss for the flock, since he does not intend the welfare of the flock, but his own. But a good shepherd, even over animals, endures many things for the flock whose welfare he has at heart. Thus Jacob said in Genesis (31:40): \"By day the heat consumed me, and the cold by night.\" However, when dealing with mere animals it is not necessary that a good shepherd expose himself to death for the safety of the flock. But because the spiritual safety of the human flock outweighs the bodily life of the shepherd, when danger threatens the safety of the flock the spiritual shepherd ought to suffer the loss of his bodily life for the safety of the flock. This is what our Lord says, the good shepherd lays down his life, i.e., his bodily life, for the sheep, the sheep who are his by authority and charity. Both are required, for they must belong to him and he must love them; the first without the second is not enough. Furthermore, Christ has given us an example of this teaching: \"He laid down his life for us; and we ought to lay down our lives for the brethren\" (1 Jn 3:16).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.10.11"
     }
   ]
 }

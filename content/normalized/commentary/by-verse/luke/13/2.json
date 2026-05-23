@@ -4,42 +4,6 @@
   "verseNumber": 2,
   "entries": [
     {
-      "id": "catena-luke-2128-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.13.2",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 13:1–5",
-      "excerpt": "For God punishes some sinners by cutting off their iniquities, and appointing to them hereafter a lighter punishment, or perhaps even entirely releasing them, and correcting those who are living in wickedness by their punishment. Again, he does not punish others, that if they take heed to themselves by repentance they may escape both the present penalty and future punishment, but if they continue in their sins, suffer still greater torment.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2131-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.13.2",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 13:1–5",
-      "excerpt": "And herein he shews that He permitted them to suffer such things, that the heirs of the kingdom yet living might be dismayed by the dangers of others. “What then,” you will say, “is this man punished, that I might become better?” Nay, but he is punished for his own crimes, and hence arises an opportunity of salvation to those who see it.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2133-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.13.2",
@@ -58,6 +22,56 @@
       ]
     },
     {
+      "id": "catena-luke-2128-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.13.2",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 13:1–5",
+      "excerpt": "For God punishes some sinners by cutting off their iniquities, and appointing to them hereafter a lighter punishment, or perhaps even entirely releasing them, and correcting those who are living in wickedness by their punishment. Again, he does not punish others, that if they take heed to themselves by repentance they may escape both the present penalty and future punishment, but if they continue in their sins, suffer still greater torment.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.13.2:503cd275:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2131-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.13.2",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 13:1–5",
+      "excerpt": "And herein he shews that He permitted them to suffer such things, that the heirs of the kingdom yet living might be dismayed by the dangers of others. “What then,” you will say, “is this man punished, that I might become better?” Nay, but he is punished for his own crimes, and hence arises an opportunity of salvation to those who see it.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.13.2:c4a879a4:0"
+      ]
+    },
+    {
       "id": "catena-luke-2127-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.13.2",
@@ -73,6 +87,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.13.2:a6c85bc1:0"
       ]
     },
     {
@@ -112,24 +133,6 @@
       ]
     },
     {
-      "id": "catena-luke-2132-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.13.2",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 13:1–5",
-      "excerpt": "But because they repented not in the fortieth year of our Lord’s Passion, the Romans coming, (whom Pilate represented, as belonging to their nation,) and beginning from Galilee, (whence our Lord’s preaching had begun,) utterly destroyed that wicked nation, and defiled with human blood not only the courts of the temples, where they were wont to offer sacrifies, but also the inner parts of the doors, (where there was no entrance to the Galileans.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2136-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.13.2",
@@ -145,6 +148,31 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2132-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.13.2",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 13:1–5",
+      "excerpt": "But because they repented not in the fortieth year of our Lord’s Passion, the Romans coming, (whom Pilate represented, as belonging to their nation,) and beginning from Galilee, (whence our Lord’s preaching had begun,) utterly destroyed that wicked nation, and defiled with human blood not only the courts of the temples, where they were wont to offer sacrifies, but also the inner parts of the doors, (where there was no entrance to the Galileans.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.13.2:417c4224:1"
       ]
     },
     {
@@ -182,6 +210,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.13.2:c4d053c7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 13:2",
+      "excerpt": "And responding, he said to them: Do you think that these Galileans were sinners above all other Galileans, because they suffered such things? I tell you, no, but unless you repent, you will all likewise perish. Indeed, those who did not repent similarly perished, because in the fortieth year of the passion of the Lord, the Romans came, identified by Pilate who, as belonging to their nation and kingdom, began from Galilee, whence the preaching of the Lord had commenced, and destroyed so completely the impious nation that not only the courts of the temple where sacrifices were usually offered, but also the inner parts of the house where Galileans had no access, were defiled with human blood. For truly, Pilate, whose name is interpreted as the mouth of a hammerer, symbolizes the devil, always ready to strike, the blood signifies sin, and the sacrifices express good actions, Pilate mingled the blood of the Galileans with their sacrifices, when the devil taints alms, prayers, fasting, and other good deeds of the faithful, either with deadly indulgence of the flesh and blood, or with meditation of hatred, or with the fury of envy, or with the ambition of human praise, or with any other wicked plague, so that although they seem to be offered to the Lord, the crafty adversary makes it so that they benefit nothing to those who offer them, something we wish we did not know happens with us daily.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.13.2"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.13.2:4327e259:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 13:2",
+      "excerpt": "The Savior does not deny that they were sinful, but neither does He say that they suffered so because they were more sinful than the rest, who did not suffer. But if you too do not repent, if you do not cease stirring up and kindling internal conflicts and do not hasten to propitiate God with deeds, you will undergo an even worse fate. For one must not, under the pretext of piety, seek glory for oneself, and in the meantime stir up internal seditions.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.13.2"
     },
     {
       "id": "catena-luke-2126-v2",

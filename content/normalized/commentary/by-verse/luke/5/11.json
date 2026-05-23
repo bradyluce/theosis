@@ -4,42 +4,6 @@
   "verseNumber": 11,
   "entries": [
     {
-      "id": "catena-luke-0771-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.11",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:8–11",
-      "excerpt": "He does not mention Andrew by name, who however is thought to have been in that ship, according to the accounts of Matthew and Mark. It follows, And Jesus said unto Simon, Fear not.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0774-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.5.11",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 5:8–11",
-      "excerpt": "But mark their faith and obedience. For though they were eagerly engaged in the employment of fishing, yet when they heard the command of Jesus, they delayed not, but forsook all and followed Him. Such is the obedience which Christ demands of us; we must not forego it, even though some great necessity urges us. Hence it follows, And having brought their ships to land.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0775-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.11",
@@ -91,6 +55,56 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.5.11:3180dcf1:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0771-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.11",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:8–11",
+      "excerpt": "He does not mention Andrew by name, who however is thought to have been in that ship, according to the accounts of Matthew and Mark. It follows, And Jesus said unto Simon, Fear not.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0774-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.5.11",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 5:8–11",
+      "excerpt": "But mark their faith and obedience. For though they were eagerly engaged in the employment of fishing, yet when they heard the command of Jesus, they delayed not, but forsook all and followed Him. Such is the obedience which Christ demands of us; we must not forego it, even though some great necessity urges us. Hence it follows, And having brought their ships to land.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.5.11:20840d84:0"
       ]
     },
     {
@@ -166,14 +180,14 @@
       ]
     },
     {
-      "id": "catena-luke-0768-v11",
+      "id": "catena-luke-0773-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.11",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:8–11",
-      "excerpt": "Peter was astonished at the divine gift, and the more he feared, the less did he now presume; as it is said, When Simon Peter saw it, he fell down at Jesus’ knees, saying, Depart from me; for I am a sinful man, O Lord.",
+      "excerpt": "This especially belongs to Peter himself, for the Lord explains to him what this taking of fish means; that in fact as now he takes fishes by the net, so hereafter he will catch men by words. And the whole order of this event shews what is daily going on in the Church, of which Peter is the type.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -184,14 +198,14 @@
       ]
     },
     {
-      "id": "catena-luke-0773-v11",
+      "id": "catena-luke-0768-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.5.11",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 5:8–11",
-      "excerpt": "This especially belongs to Peter himself, for the Lord explains to him what this taking of fish means; that in fact as now he takes fishes by the net, so hereafter he will catch men by words. And the whole order of this event shews what is daily going on in the Church, of which Peter is the type.",
+      "excerpt": "Peter was astonished at the divine gift, and the more he feared, the less did he now presume; as it is said, When Simon Peter saw it, he fell down at Jesus’ knees, saying, Depart from me; for I am a sinful man, O Lord.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -218,6 +232,23 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.5.11:b12f8416:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 5:11",
+      "excerpt": "And having drawn the ships to land, leaving everything behind, they followed him, which can signify the end of time, during which those who cling to Christ will entirely depart from such a sea. However, it should be known that this reading is not the same as the one in which Matthew and Mark narrate that two fishermen from their boats, first Peter and Andrew, then the sons of Zebedee, were called by the Lord. For Luke does not now suggest that they were called by the Lord, but only indicates that it was foretold to Peter that he would catch men. This was not said in such a way as if he would never catch fish again. For even after the resurrection of the Lord, we read that they went fishing. Whence it is given to understand that they returned to fishing as usual, so that what Matthew and Mark narrated would happen later, when he called them two by two. For then, not drawing their ships to land as if concerned with returning, but thus they followed him, as one who was calling and commanding them to follow.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.5.11"
     }
   ]
 }

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.18.15:90dddb3e:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.18.15:2d9316b5:0"
       ]
     },
     {
@@ -94,6 +108,31 @@
       ]
     },
     {
+      "id": "catena-luke-2681-v15",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.15",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:15–17",
+      "excerpt": "The wise men of the Gentiles therefore who seek for wisdom in a mystery, which is the kingdom of God, and will not receive this without the evidence of logical proof, are rightly shut out from this kingdom.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.18.15:a5f3421c:0"
+      ]
+    },
+    {
       "id": "catena-luke-2675-v15",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.15",
@@ -112,22 +151,55 @@
       ]
     },
     {
-      "id": "catena-luke-2681-v15",
+      "id": "hcf:theophylact-of-ohrid:luke.18.15:494e0d68:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.18.15",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:15–17",
-      "excerpt": "The wise men of the Gentiles therefore who seek for wisdom in a mystery, which is the kingdom of God, and will not receive this without the evidence of logical proof, are rightly shut out from this kingdom.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 18:15",
+      "excerpt": "The example of children also leads to humility. The Lord hereby teaches us to be humble, to accept everyone, and to despise no one. The disciples considered it unworthy of such a Teacher to bring children to Him. But He shows them that one must be so humble as not to disdain even the very least.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.18.15"
+    },
+    {
+      "id": "hcf:bede:luke.18.15:29302517:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 18:15",
+      "excerpt": "They were bringing children to him that he might touch them; and when the disciples saw it, they rebuked them. And this lesson, full of the teaching of humility, shows that the innocent and simple can reach the grace of the Lord. The disciples rebuked those who were bringing them, not because they did not want the children to be blessed by the Savior's hand and voice, but because, not yet having complete faith, they thought he would be exhausted by the importunity of those presenting the children, like a human.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.18.15"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.18.15:d240d2b2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-121",
+      "title": "COMMENTARY ON LUKE, HOMILY 121 on luke 18:15",
+      "excerpt": "Mothers brought their babes. They wanted his blessing and begged for their infants the touch of his holy hand. The blessed disciples rebuked them for doing this, not because they envied the babes; rather they were paying him due respect as their teacher and preventing him from getting unnecessarily tired. They placed much value on order.Even until now, infants are brought near and blessed by Christ by means of consecrated hands. The pattern of the act continues even until this day and descends to us from the custom of Christ as its fountain. Only now, the bringing of infants does not take place in an unbecoming or disorderly manner but with proper order, solemnity and reverence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-121",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.18.15"
     }
   ]
 }

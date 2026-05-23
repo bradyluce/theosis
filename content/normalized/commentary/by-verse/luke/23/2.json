@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.23.2:0ca0b25a:0"
       ]
     },
     {
@@ -55,24 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3279-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.2",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:1–5",
-      "excerpt": "That the word of Jesus might be fulfilled which He prophesied of His own death, He shall be delivered to the Gentiles, that is, to the Romans. For Pilate was a Roman, and the Romans had sent him as governor to Judæa.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.23.2:e1bf30e2:0"
       ]
     },
     {
@@ -84,6 +80,49 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:1–5",
       "excerpt": "Now two charges having been brought against our Lord, namely, that He forbade to pay tribute to Cæsar, and called Himself Christ the King, it may be that Pilate had chanced to hear that which our Lord spake, Render unto Cæsar the things which be Cæsar’s; and therefore setting aside this accusation as a palpable lie of the Jews, he thought fit to ask concerning that alone of which he knew nothing, the saying about the kingdom; for it follows, Pilate asked him, saying, Art thou the King of the Jews, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.23.2:552be92f:0"
+      ]
+    },
+    {
+      "id": "catena-luke-3286-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.2",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:1–5",
+      "excerpt": "But with these words they accuse not Him, but themselves. For to have taught the people, and by teaching to have roused them from their former idleness, and doing this to have passed through the whole land of promise, was an evidence not of sin, but of virtue.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3279-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.2",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:1–5",
+      "excerpt": "That the word of Jesus might be fulfilled which He prophesied of His own death, He shall be delivered to the Gentiles, that is, to the Romans. For Pilate was a Roman, and the Romans had sent him as governor to Judæa.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -112,17 +151,17 @@
       ]
     },
     {
-      "id": "catena-luke-3286-v2",
+      "id": "catena-luke-3285-v2",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.2",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:1–5",
-      "excerpt": "But with these words they accuse not Him, but themselves. For to have taught the people, and by teaching to have roused them from their former idleness, and doing this to have passed through the whole land of promise, was an evidence not of sin, but of virtue.",
+      "excerpt": "Now they finding nothing else to support their calumny, have resort to the aid of clamour, for it follows, And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place. As if they said, He perverts the people, not in one part only, but beginning from Galilee He arrives at this place, having passed through Judæa. I think then that they purposely made mention of Galilee, as desirous to alarm Pilate, for the Galilæans were of a different sect and given to sedition, as, for example, Judas of Galilee who is mentioned in the…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -145,6 +184,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.23.2:a60a05ce:1"
       ]
     },
     {
@@ -166,22 +212,89 @@
       ]
     },
     {
-      "id": "catena-luke-3285-v2",
+      "id": "hcf:bede:luke.23.2:34a89e8b:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.23.2",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 23:2",
+      "excerpt": "And they began to accuse him, saying: We found this man perverting our nation, and forbidding to give tribute to Caesar, and saying that he himself is Christ a King. The Jews are convicted of impiety, because in accusing the Savior they do not even find anything plausible in the falsehood they can charge him with. And so, as Mark says: their witness did not agree (Mark XIV). However, he himself, to provide us an example of patience, just as he endured being scourged before, so now accused, he is silent and keeps quiet.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.23.2"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.23.2:17de09c8:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:1–5",
-      "excerpt": "Now they finding nothing else to support their calumny, have resort to the aid of clamour, for it follows, And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place. As if they said, He perverts the people, not in one part only, but beginning from Galilee He arrives at this place, having passed through Judæa. I think then that they purposely made mention of Galilee, as desirous to alarm Pilate, for the Galilæans were of a different sect and given to sedition, as, for example, Judas of Galilee who is mentioned in the…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 23:2",
+      "excerpt": "They obviously contradict the truth. For where did Jesus forbid paying tribute, when He, on the contrary, commanded to render it as what is due? For He Himself said: \"Render unto Caesar the things that are Caesar's\" (Luke 20:25). How does He stir up the people? Is He seeking a kingdom? But no one believed this. For even when the people wanted to make Him king, He, having learned of it, withdrew (John 6:15).",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.23.2"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.23.2:fd719306:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-97-98",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.97-98 on luke 23:2",
+      "excerpt": "There follows an admirable place, where the patience to bear moral harm is poured into the human breast. The Lord is accused, and he is silent: and he is right to be silent, who does not need to defend himself. Let those who fear to be conquered, roam around seeking to be defended. Therefore, he does not confirm the accusation by fearing it, but he despises it by not refuting it. For what would he fear, who does not seek salvation? He betrayed his own salvation for the salvation of all, that it may be acquired by all. And here Pilate absolves: but he absolves by judgment, he crucifies by mystery. But this is specific to Christ: the human aspect, that with unjust judges it seemed more a matter of unwillingness than inability to be defended. But why did the Lord remain silent? He himself gave the answer, saying: If I tell you, you will not believe me; if I ask you, you will not answer me. However, the most remarkable thing is that he preferred to prove himself as a king rather than to speak; so that those who accuse him could not have a reason to condemn him, as they confess what they object to.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.23.2"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.23.2:c3050367:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-5",
+      "title": "Constitutions of the Holy Apostles Book 5 on luke 23:2",
+      "excerpt": "...they delivered Him to Pilate the Roman governor, accusing Him of many and great things, none of which they could prove. Whereupon the governor, as out of patience with them, said: \"I find no cause against Him.\" But they bringing two lying witnesses, wished to accuse the Lord falsely; but they being found to disagree, and so their testimony not conspiring together, they altered the accusation to that of treason, saying, \"This fellow says that He is a king, and forbids to give tribute to Caesar.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.23.2"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.23.2:2fd1fbd2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-151",
+      "title": "Commentary on the Gospel of Luke, Sermon 151 on luke 23:2",
+      "excerpt": "But let us see what was the manner of their wickedness, and what also they said to Pilate, when framing their accusations against our common Saviour Christ. \"We found this man perverting our people, and forbidding to give tribute to Caesar, and saying of Himself that He is Christ a King.\" And yet, but a short time before He was tried by you, and of questions such as this no point was raised; only He was asked, whether He were the Christ. This it was which you then sought to learn, and beside it absolutely nothing. And so, meeting your questions, He sought to show both that He is the Christ, and that by nature and truly He is the Son of God the Father. For He said, \"You shall see the Son of man sitting on the right hand of power.\" And tell me, I pray, whose is it to sit with the Father, but His Who by nature is the Son? For of all that is made nothing whatsoever may boast of sitting on the throne of Deity: for every created being is put under the feet of the divine and supreme nature, Which rules over all, and transcends every thing whatsoever which has been brought into being. God the Father alone is set upon the throne high and lifted up, but He shares His seat with the Son, Who is ever with Him, and sprang by nature from Him. You had obtained therefore for yourselves by your question the full assurance that He is the Christ. But in your eagerness to accuse of blasphemy Him Who had revealed to you His glory, you said, \"Why need we any further witnesses? for we have heard from His mouth.\" And how then forgetting all this, or rather in your malice passing by those things for which He was judged by you, make you an array of charges of an entirely different nature, saying, \"We found this man perverting our people?\" Tell us in what this perversion consisted! What He taught was repentance. Where did He forbid to give tribute to Caesar? In reality you sent certain of your body to Him, with those who are called Herodians, to tempt Him, saying, \"Teacher, is it lawful to give tribute to Caesar, or not?\" And thereupon Christ said to them, \"Show me a denarius of the poll tax: and asked, Whose is the image and superscription on the denarius which you have brought? And when they replied; Caesar's, He said, Give to Caesar the things that are Caesar's, and to God the things that are God's.\" Where then did He forbid to give tribute to Caesar? But their sole purpose was to bring down to death Him Who was raising them up to life. This was the object of their stratagems, and of the base deeds which they contrived, and of the falsehoods they invented, and the bitter words which ran from their wicked tongue. And yet the law loudly proclaims to you, \"You shall not bear false witness against your neighbour.\" And again, \"The holy and the just you shall not kill.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.23.2"
     }
   ]
 }

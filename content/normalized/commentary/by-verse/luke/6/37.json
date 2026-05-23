@@ -4,24 +4,6 @@
   "verseNumber": 37,
   "entries": [
     {
-      "id": "catena-luke-0987-v37",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.37",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:37–38",
-      "excerpt": "Judge not thy superior, that is, thou a disciple must not judge thy master, nor a sinner the innocent. Thou must not blame them, but advise and correct with love; neither must we pass judgment in doubtful and indifferent matters, which bear no resemblance to sin, or which are not serious or forbidden.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0989-v37",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.37",
@@ -30,6 +12,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:37–38",
       "excerpt": "You will not easily find any one, whether a father of a family or an inhabitant of the cloister, free from this error. But these are the wiles of the tempter. For he who severely sifts the fault of others, will never obtain acquittal for his own. Hence it follows, And ye shall not be judged. For as the merciful and meek man dispels the rage of sinners, so the harsh and cruel adds to his own crimes.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.6.37:c6784f8d:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0987-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.37",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:37–38",
+      "excerpt": "Judge not thy superior, that is, thou a disciple must not judge thy master, nor a sinner the innocent. Thou must not blame them, but advise and correct with love; neither must we pass judgment in doubtful and indifferent matters, which bear no resemblance to sin, or which are not serious or forbidden.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.6.37:5657f677:0"
       ]
     },
     {
@@ -91,24 +105,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0990-v37",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.37",
-      "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:37–38",
-      "excerpt": "Be not then rash to judge harshly of your servants, lest ye suffer the like. For passing judgment calls down a heavier condemnation; as it follows, Condemn not, and ye shall not be condemned. For he does not forbid judgment with pardon.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.6.37:d1951712:0"
       ]
     },
     {
@@ -120,24 +123,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 6:37–38",
       "excerpt": "But that we shall receive more abundant recompense from God, who gives bountifully to those who love him, he explains as follows, Good measure, pressed down, and shaken together, and running over, shall they give into your bosom.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0995-v37",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.6.37",
-      "topicSlugs": [],
-      "personId": "basil-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:37–38",
-      "excerpt": "For according to the same measure with which each one of you metes, that is, in doing good works or sinning, will he receive reward or punishment.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -166,6 +151,56 @@
       ]
     },
     {
+      "id": "catena-luke-0990-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.37",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:37–38",
+      "excerpt": "Be not then rash to judge harshly of your servants, lest ye suffer the like. For passing judgment calls down a heavier condemnation; as it follows, Condemn not, and ye shall not be condemned. For he does not forbid judgment with pardon.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-of-nyssa:luke.6.37:863f2bae:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0995-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.37",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:37–38",
+      "excerpt": "For according to the same measure with which each one of you metes, that is, in doing good works or sinning, will he receive reward or punishment.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.6.37:351ecd91:0"
+      ]
+    },
+    {
       "id": "catena-luke-0991-v37",
       "relation": "verse",
       "targetVerseId": "kjva:luke.6.37",
@@ -181,6 +216,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.6.37:f028b497:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0996-v37",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.6.37",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 6:37–38",
+      "excerpt": "But some one will put the subtle question, “If the return is made overabundantly, how is it the same measure?” to which we answer, that He said not, “In just as great a measure shall it be measured to you again, but in the same measure.” For he who has shewn mercy, shall have mercy shewn unto him, and this is measuring again with the same measure; but our Lord spoke of the measure running over, because to such a one He will shew mercy a thousand times. So also in judging; for he that judges and afterwards is judged receives the same measure. But as far as he was judged the more severely that…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.6.37:bc3a37b2:0"
       ]
     },
     {
@@ -202,22 +269,413 @@
       ]
     },
     {
-      "id": "catena-luke-0996-v37",
+      "id": "hcf:cyril-of-alexandria:luke.6.37:69f73c52:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.6.37",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 6:37–38",
-      "excerpt": "But some one will put the subtle question, “If the return is made overabundantly, how is it the same measure?” to which we answer, that He said not, “In just as great a measure shall it be measured to you again, but in the same measure.” For he who has shewn mercy, shall have mercy shewn unto him, and this is measuring again with the same measure; but our Lord spoke of the measure running over, because to such a one He will shew mercy a thousand times. So also in judging; for he that judges and afterwards is judged receives the same measure. But as far as he was judged the more severely that…",
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-29",
+      "title": "Commentary on the Gospel of Luke, Sermon 29 on luke 6:37",
+      "excerpt": "He cuts away from our minds a very unmanageable passion, the commencement and begetter of pride. For while it is men's duty to examine themselves, and to order their conduct according to God's will, they leave this alone to busy themselves with the affairs of others: and if they see any infirm, forgetting as it seems their own frailties, they make it an excuse for faultfinding, and a handle for calumny. For they condemn them, not knowing that being equally afflicted with the same infirmities as those whom they censure, they condemn themselves. For so also the most wise Paul writes, \"for wherein thou judgest the other, thou condemnest thyself: for thou that judgest doest the same things.\" And yet it were rather our duty to have compassion on the infirm, as those who have been overcome by the assaults of the passions, and entangled without hope of escape in the meshes of sin, and to pray in their behalf, and exhort them, and rouse them up unto soberness, and endeavour ourselves not to fall into similar faults. \"For he that judgeth the brother, as the disciple of Christ saith, speaketh against the law, and judgeth the law.\" For the lawgiver and judge is One: for the judge of the sinning soul must be higher than that soul: but since them art not so, the sinner will object to thee as judge, \"why judgest thou thy neighbour?\" But if thou venture to condemn him, having no authority thereto, it is thyself rather that will be condemned, inasmuch as the law permits thee not to judge others.\r\n\r\nWhoever therefore is guided by good sense, does not look at the sins of others, nor busies himself about the faults of his neighbour, but closely scans his own misdoings. Such was the blessed Psalmist, falling down before God, and saying on account of his own offences, \"If Thou, O Lord, O Lord, closely regardest iniquities, who can endure?\" And once again, putting forward the infirmity of human nature as an excuse, he supplicates for a not unreasonable pardon, saying, \"Remember that we are earth.\"",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:bede:luke.6.37:b731db4c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:37",
+      "excerpt": "Do not judge, and you will not be judged; do not condemn, and you will not be condemned. I believe nothing else is commanded to us in this place, except that we interpret acts, whose intention is doubtful, in a better sense. For it is written: By their fruits you shall know them, this is said of manifest things, which cannot be done with a good intention, such as debaucheries, or blasphemies, or thefts, or drunkenness, and such things, about which it is permitted for us to judge. However, concerning foods, because any human food can be taken indifferently without fault of concupiscence with a good intention and simple heart, the Apostle prohibits us from judging those who ate meat and drank wine, by those who abstained from such foods. He who eats (he says) should not despise the one who does not eat; and he who does not eat should not judge the one who eats (Rom. XIV). This also pertains to what he says elsewhere: Do not judge anything before the time, until the Lord comes, who will also illuminate the hidden things of darkness, and will manifest the counsels of the hearts (I Cor. IV). Therefore, there are certain actions, which we do not know with what intention they are done, which can be done with both good and bad intentions, about which it is rash to judge, especially to condemn. The time will come, however, for these to be judged, when the Lord will illuminate the hidden things of darkness, and reveal the counsels of the hearts (Ibid.). There are two things, however, in which we should avoid rash judgment, when it is uncertain with what intention anything is done, or when it is uncertain what someone will become, who now appears either good or evil.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:bede:luke.6.37:d0f8303a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 6:37",
+      "excerpt": "Forgive, and you will be forgiven. Give, and it will be given to you. He commands us to forgive injuries, to give benefits, so that our sins may also be forgiven, and eternal life may be given to us. By this, brief but excellent sentence, he comprehensively concludes all the commands about dealing with enemies that he had given extensively.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:augustine:luke.6.37:9070fbe2:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-376a-3",
+      "title": "SERMON 376A.3 on luke 6:37",
+      "excerpt": "You give alms. You receive alms. You pardon. You are pardoned. You are generous. You are treated generously. Listen to God saying, \"Forgive, and you will be forgiven. Give, and things will be given to you.\"Keep the poor in mind. I say this to all of you. Give alms, my brothers and sisters, and you won't lose what you give. Trust God. I'm not only telling you you won't lose what you do for the poor, but I'm telling you plainly, this is all that you won't lose.… Come now, let's see if you can cheer the poor up today. You be their granaries, so that God may give to you what you can give to them, and so that he may forgive whatever sins you have committed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:augustine:luke.6.37:aea09f7e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-171a",
+      "title": "LETTER 171A on luke 6:37",
+      "excerpt": "The practice of mercy is twofold: when vengeance is sacrificed and when compassion is shown. The Lord included both of these in his brief sentence: \"Forgive, and you shall be forgiven; give, and it shall be given to you.\" This work has the effect of purifying the heart, so that, even under the limitations of this life, we are enabled with pure mind to see the immutable reality of God. There is something holding us back, which has to be loosed so that our sight may break through to the light. In connection with this the Lord said, \"Give alms, and behold, all things are clean to you.\" Therefore the next and sixth step is that cleansing of the heart.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:augustine:luke.6.37:96b0ff60:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-206-2",
+      "title": "SERMON 206.2 on luke 6:37",
+      "excerpt": "The Christian soul understands how far removed he should be from theft of another's goods when he realizes that failure to share his surplus with the needy is like to theft. The Lord says, \"Give, and it shall be given to you. Forgive, and you shall be forgiven.\" Let us graciously and fervently perform these two types of almsgiving, that is, giving and forgiving, for we in turn pray the Lord to give us good things and not to repay our evil deeds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:augustine:luke.6.37:103f934e:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-179a-1",
+      "title": "SERMON 179A.1 on luke 6:37",
+      "excerpt": "So there is hope in God's mercy, if our misery is not so barren as to yield no work of mercy. What do you want from the Lord? Mercy. Give, and it shall be given to you. What do you want from the Lord? Pardon. Forgive, and you will be forgiven.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:augustine:luke.6.37:644a37ca:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-205-3",
+      "title": "SERMON 205.3 on luke 6:37",
+      "excerpt": "\"Forgive, and you will be forgiven.\" \"Give, and it will be given you.\" These are the two wings of prayer, on which it flies to God. Pardon the offender what has been committed, and give to the person in need.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.6.37:223b8cc0:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on luke 6:37",
+      "excerpt": "Do not judge thy bishop, or any of thy neighbours among the laity; for if thou judge thy brother, thou becomest a judge, without being constituted such by anybody, for the priests are only entrusted with the power of judging. For to them it is said, \"Judge righteous judgment;\" and again \"Approve yourselves to be exact money-changers.\" For to yon this is not entrusted; for, on the contrary, it is said to those who are not of the dignity of magistrates or ministers: \"Judge not, and ye shall not be judged.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.6.37:8164ae11:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on luke 6:37",
+      "excerpt": "Now the way of peace is our Saviour Jesus Christ, who has taught us, saying: \"Forgive, and ye shall be forgiven. Give, and it shall be given to you;\" that is, give remission of sins, and your offences shall be forgiven you. As also He instructed us by His prayer to say unto God: \"Forgive us our debts, as we forgive our debtors.\" If, therefore, you do not forgive offenders, how can you expect the remission of your own sins?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.6.37:f45bbe80:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-2",
+      "title": "Constitutions of the Holy Apostles Book 2 on luke 6:37",
+      "excerpt": "Take care, therefore, lest by any means ye become acceptors of persons, and thereby fall under this voice of the Lord. For if you condemn others unjustly, you pass sentence against yourselves. For the Lord says: \"With what judgment ye judge, ye shall be judged; and as you condemn, you shall be condemned.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:athanasius-the-great:luke.6.37:ec25c3d2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 6:37",
+      "excerpt": "(Orat. 3. cont. Arian.) That is to say, that we beholding His mercies, what good things we do should do them not with regard to men, but to Him, that we may obtain our rewards from God, not from men.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.6.37:d1545b44:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:who-is-the-rich-man-that-shall-be-saved",
+      "title": "Who is the Rich Man that Shall Be Saved? on luke 6:37",
+      "excerpt": "\"Judge not, then, that ye be not judged. With what measure ye mete, it shall be measured to you again; good measure, pressed and shaken, and running over, shall be given to you.\" Open thy compassion to all who are enrolled the disciples of God; not looking contemptuously to personal appearance, nor carelessly disposed to any period of life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:luke.6.37:1e92739b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on luke 6:37",
+      "excerpt": "That we must not rashly judge of another. In the Gospel according to Luke: \"Judge not, that ye be not judged: condemn not, that ye be not condemned.\" Of this same subject to the Romans: \"Who art thou that judgest another man's servant? to his own master he standeth or falleth. But he shall stand; for God is able to make him stand.\" And again: \"Wherefore thou art without excuse, O every man that judgest: for in that in which thou judgest another, thou condemnest thyself; for thou doest the same things which thou judgest. But dost thou hope, who judgest those who do evil, and doest the same, that thou thyself shalt escape the judgment of God\" Also in the first Epistle of Paul to the Corinthians.: \"And let him that thinketh he standeth take heed lest he fall.\" And again: \"If any man thinketh that he knoweth anything, he knoweth not yet in what manner he ought to know.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:luke.6.37:25876771:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron-6-18b",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON 6.18B on luke 6:37",
+      "excerpt": "Do not judge, that is, unjustly, so that you may not be judged, with regard to injustice. With the judgment that you judge shall you be judged. This is like the phrase \"Forgive, and it will be forgiven you.\" For once someone has judged in accordance with justice, he should forgive in accordance with grace, so that when he himself is judged in accordance with justice, he may be worthy of forgiveness through grace. Alternatively, it was on account of the judges, those who seek vengeance for themselves, that he said, \"Do not condemn.\" That is, do not seek vengeance for yourselves. Or, do not judge, from appearances and opinion and then condemn, but admonish and advise.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron-6-18b",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.6.37:c5018639:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-27",
+      "title": "Forty Gospel Homilies, Homily 27 on luke 6:37",
+      "excerpt": "But behold, our enemy has grievously sinned against us, inflicted losses, harmed those who helped, persecuted those who loved. These things would need to be retained if our own sins were not to be forgiven. For our Advocate has composed a prayer for us in our case; and he who is the Advocate is himself the Judge of that same case. Moreover, he inserted a condition into the prayer he composed, saying: Forgive us our debts, as we also forgive our debtors. Therefore, since he who stood forth as Advocate comes as Judge, he who made the prayer hears it. Either, then, we say without doing it, Forgive us our debts, as we also forgive our debtors, and by saying this we bind ourselves all the more; or perhaps we omit this condition in our prayer, and our Advocate does not recognize the prayer he composed, and immediately says to himself: I know what I instructed; this is not the prayer I made. What then must we do, brothers, except extend the affection of true charity to our brothers? Let no malice remain in our heart. Let almighty God consider our charity toward our neighbor, so that he may extend his mercy to our iniquities. Remember what we are admonished: Forgive, and you will be forgiven. Behold, something is owed to us, and we owe. Let us therefore forgive what is owed to us, so that what is owed by us may be forgiven.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:polycarp-of-smyrna:luke.6.37:bac0a51a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "polycarp-of-smyrna",
+      "workId": "hcf:work:polycarp-of-smyrna:epistle-to-the-philippians-2",
+      "title": "Epistle to the Philippians 2 on luke 6:37",
+      "excerpt": "\"Wherefore, girding up your loins,\" \"serve the Lord in fear\" and truth, as those who have forsaken the vain, empty talk and error of the multitude, and \"believed in Him who raised up our Lord Jesus Christ from the dead, and gave Him glory,\" and a throne at His right hand. To Him all things in heaven and on earth are subject. Him every spirit serves. He comes as the Judge of the living and the dead. His blood will God require of those who do not believe in Him. But He who raised Him up from the dead will raise up us also, if we do His will, and walk in His commandments, and love what He loved, keeping ourselves from all unrighteousness, covetousness, love of money, evil speaking, false witness; \"not rendering evil for evil, or railing for railing,\" or blow for blow, or cursing for cursing, but being mindful of what the Lord said in His teaching: \"Judge not, that ye be not judged; forgive, and it shall be forgiven unto you; be merciful, that ye may obtain mercy; with what measure ye mete, it shall be measured to you again;\" and once more, \"Blessed are the poor, and those that are persecuted for righteousness' sake, for theirs is the kingdom of God.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c155"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.37:11f8a58b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-prayer",
+      "title": "On Prayer on luke 6:37",
+      "excerpt": "For the fact withal, that the same servant, after liberated by his lord, does not equally spare his own debtor; and, being on that account impeached before his lord, is made over to the tormentor to pay the uttermost farthing-that is, every guilt, however small: corresponds with our profession that \"we also remit to our debtors; \"indeed elsewhere, too, in conformity with this Form of Prayer, He saith, \"Remit, and it shall be remitted you.\" And when Peter had put the question whether remission were to be granted to a brother seven times, \"Nay,\" saith He, \"seventy-seven times; \" in order to remould the Law for the better; because in Genesis vengeance was assigned \"seven times\" in the case of Cain, but in that of Lamech \"seventy-seven times.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.37:21dabf90:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:of-patience",
+      "title": "Of Patience on luke 6:37",
+      "excerpt": "As regards the rule of peace, which is so pleasing to God, who in the world that is prone to impatience will even once forgive his brother, I will not say \"seven times,\" or \"seventy-seven times? \" Who that is contemplating a suit against his adversary will compose the matter by agreement, unless he first begin by lopping off chagrin, hardheartedness, and bitterness, which are in fact the poisonous outgrowths of impatience? How will you \"remit, and remission shall be granted\" you if the absence of patience makes you tenacious of a wrong? No one who is at variance with his brother in his mind, will finish offering his \"duteous gift at the altar,\" unless he first, with intent to \"re-conciliate his brother,\" return to patience.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.37:b1fa68ae:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:of-patience",
+      "title": "Of Patience on luke 6:37",
+      "excerpt": "Is there any risk of a different result in the case of a Lord so just in estimating, so potent in executing? Why, then, do we believe Him a Judge, if not an Avenger too? This He promises that He will be to us in return, saying, \"Vengeance belongeth to me, and I will avenge; \" that is, Leave patience to me, and I will reward patience. For when He says, \"Judge not, lest ye be judged,\" does He not require patience? For who will refrain from judging another, but he who shall be patient in not revenging himself? Who judges in order to pardon? And if he shall pardon, still he has taken care to indulge the impatience of a judger, and has taken away the honour of the one Judge, that is, God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.37:2490a7ff:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on luke 6:37",
+      "excerpt": "\"But,\" say they, \"God is `good, 'and `most good, ' and `pitiful-hearted, 'and `a pitier, 'and `abundant in pitiful-heartedness, ' which He holds `dearer than all sacrifice, ' `not thinking the sinner's death of so much worth as his repentance', `a Saviour of all men, most of all of believers.' And so it will be becoming for `the sons of God' too to be `pitiful-hearted' and `peacemakers; ' `giving in their turn just as Christ withal hath given to us; ' `not judging, that we be not judged.' For `to his own lord a man standeth or falleth; who art thou, to judge another's servant? ' `Remit, and remission shall be made to thee.'\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.37:8eb9dc9d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 6:37",
+      "excerpt": "If, however, it be now some other being which teaches mercy, on the ground of his own mercifulness, how happens it that he has been wanting in mercy to me for so vast an age? \"Judge not, and ye shall not be judged; condemn not, and ye shall not be condemned; forgive, and ye shall be forgiven; give, and it shall be given unto you: good measure, pressed down, and running over, shall men give into your bosom. For with the same measure that ye measure withal, it shall be measured to you again.\" As it seems to me, this passage announces a retribution proportioned to the merits.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.37:f1e874af:5",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on luke 6:37",
+      "excerpt": "' For `to his own lord a man standeth or falleth; who art thou, to judge another's servant? ' `Remit, and remission shall be made to thee.'\" Such and so great futilities of theirs wherewith they flatter God and pander to themselves, effeminating rather than invigorating discipline, with how cogent and contrary (arguments) are we for our part able to rebut,-(arguments) which set before us warningly the \"severity\" of God, and provoke our own constancy? Because, albeit God is by nature good, still He is \"just\" too.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
+    },
+    {
+      "id": "hcf:tertullian:luke.6.37:87698695:6",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on luke 6:37",
+      "excerpt": "Besides, the Lord Himself demonstrates the manner in which He threatens such as judge: \"For with what judgment ye judge, judgment shall be given on you.\" Thus He has not prohibited judging, but taught (how to do it).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.6.37"
     }
   ]
 }

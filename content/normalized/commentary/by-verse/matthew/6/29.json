@@ -23,6 +23,24 @@
       ]
     },
     {
+      "id": "catena-matt-1003-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.29",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:28–30",
+      "excerpt": "The things instanced are not to be allegorized so that we enquire what is denoted by the birds of the air, or the lilies of the field; they are only examples to prove God’s care for the greater from His care for the less.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-1002-v29",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.29",
@@ -41,14 +59,32 @@
       ]
     },
     {
-      "id": "catena-matt-1003-v29",
+      "id": "catena-matt-1014-v29",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.29",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:28–30",
-      "excerpt": "The things instanced are not to be allegorized so that we enquire what is denoted by the birds of the air, or the lilies of the field; they are only examples to prove God’s care for the greater from His care for the less.",
+      "excerpt": "He calls them no more lilies, but “the grass of the field,” to shew their small worth; and adds moreover another cause of their small value; “which today is.” And He said not, “and tomorrow is not,” but what is yet greater fall, “is cast into the oven.” In that He says “How much more you,” is implicitly conveyed the dignity of the human race, as though He had said, You to whom He has given a soul, for whom He has contrived a body, to whom He has sent Prophets and gave His Only-begotten Son.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1008-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.29",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:28–30",
+      "excerpt": "As widely as truth differs from falsehood, so widely so our clothes differ from flowers. If then Solomon, who was more eminent than all other kings, was yet surpassed by flowers, how shall you exceed the beauty of flowers by your garments? And Solomon was exceeded by the flowers not once only, or twice, but throughout his whole reign; and this is that He says, “In all his glory;” for no one day was he arrayed as are the flowers.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -92,24 +128,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1008-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.29",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:28–30",
-      "excerpt": "As widely as truth differs from falsehood, so widely so our clothes differ from flowers. If then Solomon, who was more eminent than all other kings, was yet surpassed by flowers, how shall you exceed the beauty of flowers by your garments? And Solomon was exceeded by the flowers not once only, or twice, but throughout his whole reign; and this is that He says, “In all his glory;” for no one day was he arrayed as are the flowers.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.6.29:b34055b0:0"
       ]
     },
     {
@@ -121,24 +146,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:28–30",
       "excerpt": "Tomorrow in Scripture is put for time future in general. Jacob says, “So shall my righteousness answer for me tomorrow.” Gen 30:33 And in the phantasm of Samuel, the Pythoness says to Saul, “Tomorrow shalt thou be with me.” 1 Sam 28:19",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1014-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.29",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:28–30",
-      "excerpt": "He calls them no more lilies, but “the grass of the field,” to shew their small worth; and adds moreover another cause of their small value; “which today is.” And He said not, “and tomorrow is not,” but what is yet greater fall, “is cast into the oven.” In that He says “How much more you,” is implicitly conveyed the dignity of the human race, as though He had said, You to whom He has given a soul, for whom He has contrived a body, to whom He has sent Prophets and gave His Only-begotten Son.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -200,7 +207,82 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.6.29:8d04e4f3:0"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.6.29:b9452d99:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-22",
+      "title": "Homily on the Gospel of Matthew 22 on matthew 6:29",
+      "excerpt": "But if Solomon was surpassed by their beauty, and that not once nor twice, but throughout all his reign;-for neither can one say, that at one time He was clothed with such apparel, but after that He was so no more; rather not so much as on one day did He array Himself so beautifully: for this Christ declared by saying, \"in all his reign:\" and if it was not that He was surpassed by this flower, but vied with that, but He gave place to all alike (wherefore He also said, \"as one of these:\" for such as between the truth and the counterfeit, so great is the interval between those robes and these flowers):-if then he acknowledged his inferiority, who was more glorious than all kings that ever were: when wilt thou be able to surpass, or rather to approach even faintly to such perfection of form?\r\n\r\nAfter this He instructs us, not to aim at all at such ornament. See at least the end thereof; after its triumph \"it is cast into the oven:\" and if of things mean, and worthless, and of no great use, God hath displayed so great care, how shall He give up thee, of all living creatures the most important?\r\n\r\nHereby He teaches us not only to take no thought, but not even to be dazzled at the costliness of men's apparel. Why, such comeliness is of grass, such beauty of the green herb: or rather, the grass is even more precious than such apparelling. Why then pride thyself on things, whereof the prize rests with the mere plant, with a great balance in its favor?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.6.29"
+    },
+    {
+      "id": "hcf:jerome:matthew.6.29:130e4608:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:29",
+      "excerpt": "(Vers. 28-29.) Consider how the lilies of the field grow: they do not labor or spin. Yet I tell you that not even Solomon in all his glory was arrayed like one of these. How beautifully does the lily shine? But the viola, with its purple color, surpasses any dye, it is a judgement of the eyes more than of speech.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.6.29"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.6.29:1e72d6e2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:29",
+      "excerpt": "\"And why take ye thought for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin: and yet I say unto you, That even Solomon in all his glory was not arrayed like one of these.\" He shames us not only by the birds, which lack reason, but also by the lilies, that wither. For if God adorned the lilies in such a manner, without any necessity to do so, how much more will He fulfill our own need for clothing? He shows that though you go to great lengths, you are not able to be adorned as beautifully as the lilies. Even Solomon the most wise and splendid, with all his kingdom at his disposal, could not array himself in such a manner.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.6.29"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.6.29:87380290:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:29",
+      "excerpt": "But I say to you, that not even Solomon in all his glory was arrayed as one of these. Here the benefit of divine providence is set forth. For God so provides that the whole effort of man could not equal it, because things made by art cannot equal those made by nature. And this is that not even Solomon, who was the most glorious of all kings known to the Jews, and he says in all his glory, because not even for one day could he have clothing like the flowers. And this is the exposition of Chrysostom, and it is the literal one. In another way, not even Solomon, etc., because these corporeal things have clothing without solicitude, which Solomon did not. Hilary: Anagogically, by \"lily\" are understood the holy angels: \"My beloved is mine and I am his\" (S of S 2:16); and the Lord wishes to remove solicitude about the resurrection, about clothing in the resurrection. For just as the angels are clothed in brightness, so also will our bodies be clothed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.6.29"
     },
     {
       "id": "catena-matt-1004-v29",
@@ -211,24 +293,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:28–30",
       "excerpt": "For lilies within a fixed time are formed into branches, clothed in whiteness, and endowed with sweet odour, God conveying by an unseen operation, what the earth had not given to the root. But in all the same perfectness is observed, that they may not be thought to have been formed by chance, but may be known to be ordered by God’s providence. When He says, “They toil not,” He speaks for the comfort of men; “Neither do they spin,” for the women.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1006-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.29",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:28–30",
-      "excerpt": "And for the greater exaltation of God’s providence in those things that are beyond human industry, He adds, “I say unto you, that Solomon in all his glory was not arrayed like one of these.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -254,6 +318,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.6.29:91c21597:0"
       ]
     },
     {
@@ -275,14 +346,14 @@
       ]
     },
     {
-      "id": "catena-matt-1013-v29",
+      "id": "catena-matt-1006-v29",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.29",
       "topicSlugs": [],
       "personId": "gloss-ordinaria",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:28–30",
-      "excerpt": "Some copies have257 “into the fire,” or, “into an heap,” which has the appearance of an oven.",
+      "excerpt": "And for the greater exaltation of God’s providence in those things that are beyond human industry, He adds, “I say unto you, that Solomon in all his glory was not arrayed like one of these.”",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -290,6 +361,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.6.29:c52dbb65:0"
       ]
     },
     {
@@ -301,6 +379,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:28–30",
       "excerpt": "He says, “of little faith,” for that faith is little which is not sure of even the least things.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1013-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.29",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:28–30",
+      "excerpt": "Some copies have257 “into the fire,” or, “into an heap,” which has the appearance of an oven.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

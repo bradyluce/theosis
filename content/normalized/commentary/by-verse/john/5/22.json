@@ -4,44 +4,6 @@
   "verseNumber": 22,
   "entries": [
     {
-      "id": "augustine-john-019-c5-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.5.22",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 5:19–30",
-      "excerpt": "In the former discourse, so far as the subject impressed us, and so far as our poverty of understanding attained to, we have spoken by occasion of the words of the Gospel, where it is written: The Son cannot do anything of Himself, but what He sees the Father doing,— what it is for the Son — that is, the Word, for the Son is the Word — to see; and as all things were made by the Word, how it is to be understood that the Son first sees the Father doing, and then only Himself also does the things which He has seen done, seeing that the Father has done nothing except by the Son. For all things…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "augustine-john-021-c5-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.5.22",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 5:20–23",
-      "excerpt": "Yesterday, so far as the Lord vouchsafed to bestow, we discussed with what ability we could, and discerned according to our capacity, how the works of the Father and of the Son are inseparable; and how the Father does not some, the Son others, but that the Father does all things through the Son, as through His Word, of which it is written, All things were made by Him, and without Him was nothing made. Let us today look at the words that follow. And of the same Lord let us pray for mercy, and hope that, if He deem it meet, we may understand what is true; but if we should not be able to do…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
       "id": "augustine-john-023-c5-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.5.22",
@@ -79,6 +41,25 @@
       ]
     },
     {
+      "id": "augustine-john-019-c5-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.5.22",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 5:19–30",
+      "excerpt": "In the former discourse, so far as the subject impressed us, and so far as our poverty of understanding attained to, we have spoken by occasion of the words of the Gospel, where it is written: The Son cannot do anything of Himself, but what He sees the Father doing,— what it is for the Son — that is, the Word, for the Son is the Word — to see; and as all things were made by the Word, how it is to be understood that the Son first sees the Father doing, and then only Himself also does the things which He has seen done, seeing that the Father has done nothing except by the Son. For all things…",
+      "takeaway": "",
+      "sourceId": "augustine-tractates-john-source",
+      "rank": 85,
+      "tags": [
+        "augustine",
+        "patristic",
+        "tractate",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0619-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.5.22",
@@ -94,6 +75,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.5.22:870c9a42:0"
       ]
     },
     {
@@ -112,41 +100,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.5.22:fd5826ac:4"
       ]
     },
     {
-      "id": "catena-john-0622-v22",
+      "id": "augustine-john-021-c5-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.5.22",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 5:21–23",
-      "excerpt": "As He gave Him life, i. e. begot Him living; so He gave Him judgment, i. e. begot Him a judge. Gave, it is said, that thou mayest not think Him unbegotten, and imagine two Fathers: All judgment, because He has the awarding both of punishment and reward.",
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 5:20–23",
+      "excerpt": "Yesterday, so far as the Lord vouchsafed to bestow, we discussed with what ability we could, and discerned according to our capacity, how the works of the Father and of the Son are inseparable; and how the Father does not some, the Son others, but that the Father does all things through the Son, as through His Word, of which it is written, All things were made by Him, and without Him was nothing made. Let us today look at the words that follow. And of the same Lord let us pray for mercy, and hope that, if He deem it meet, we may understand what is true; but if we should not be able to do…",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
+      "sourceId": "augustine-tractates-john-source",
       "rank": 85,
       "tags": [
-        "catena-aurea",
+        "augustine",
         "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0624-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.5.22",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 5:21–23",
-      "excerpt": "For, lest you should infer from hearing that the Author of His power was the Father, any difference of substance, or inequality of honour, He connects the honour of the Son with the honour of the Father, shewing that both have the same. But shall men then call Him the Father? God forbid; he who calls Him the Father, does not honour the Son equally with the Father, but confounds both.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
+        "tractate",
         "john"
       ]
     },
@@ -187,17 +165,35 @@
       ]
     },
     {
-      "id": "catena-john-0618-v22",
+      "id": "catena-john-0624-v22",
       "relation": "verse",
       "targetVerseId": "kjva:john.5.22",
       "topicSlugs": [],
-      "personId": "hilary-poitiers",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 5:21–23",
-      "excerpt": "For to will is the free power of a nature, which by the act of choice, resteth in the blessedness of perfect excellence.",
+      "excerpt": "For, lest you should infer from hearing that the Author of His power was the Father, any difference of substance, or inequality of honour, He connects the honour of the Son with the honour of the Father, shewing that both have the same. But shall men then call Him the Father? God forbid; he who calls Him the Father, does not honour the Son equally with the Father, but confounds both.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
-      "rank": 75,
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0622-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.5.22",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 5:21–23",
+      "excerpt": "As He gave Him life, i. e. begot Him living; so He gave Him judgment, i. e. begot Him a judge. Gave, it is said, that thou mayest not think Him unbegotten, and imagine two Fathers: All judgment, because He has the awarding both of punishment and reward.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -220,6 +216,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:john.5.22:2675d71b:1"
       ]
     },
     {
@@ -257,6 +260,296 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "catena-john-0618-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.5.22",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "catena-aurea-john",
+      "title": "On John 5:21–23",
+      "excerpt": "For to will is the free power of a nature, which by the act of choice, resteth in the blessedness of perfect excellence.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "hcf:augustine:john.5.22:84f1f158:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-19",
+      "title": "Tractates on John 19 on john 5:22",
+      "excerpt": "What follows then? \"For the Father judgeth not any man, but hath given all judgment to the Son, that all men may honor the Son, even as they honor the Father:\" this He subjoined, as rendering a reason of the foregoing sentence. A great question comes before us; give it your earnest attention. The Son quickeneth whom He will, the Father quickeneth whom He will; the Son raiseth the dead, just as the Father raiseth the dead. And further, \"the Father judgeth not any man.\" If the dead must be raised in the judgment, how can it be said that the Father raiseth the dead, if He judgeth not any man, since \"He hath given all judgment to the Son\"? But in that judgment the dead are raised; some rise to life, others to punishment. If the Son doeth all this, but the Father not, inasmuch as \"He judgeth not any man, but hath given all judgment to the Son,\" it will appear contrary to what has been said, viz., \"As the Father raiseth up the dead, and quickeneth them, so also the Son quickeneth whom He will.\" Consequently the Father and the Son raise together; if they raise together, they quicken together: hence they judge together.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:augustine:john.5.22:03b6b97c:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-21",
+      "title": "Tractates on John 21 on john 5:22",
+      "excerpt": "The Scripture shows us more clearly that it is the Son that will appear. On the fortieth day after His resurrection He ascended into heaven, while His disciples were looking on; and they hear the angelic voice: \"Men of Galilee,\" saith it, \"why stand ye gazing up into heaven? This same that is taken up from you into heaven, shall so come in like manner as ye have seen Him going into heaven.\" In what manner did they see Him go? In the flesh, which they touched, which they handled, the wounds even of which they proved by touching; in that body in which He went in and out with them for forty days, manifesting Himself to them in truth, not in falsity; not a phantom, or shadow, or ghost, but, as Himself said, not deceiving them, \"Handle and see, for a spirit hath not flesh and bones, as ye see me have.\" That body is now indeed worthy of a heavenly habitation, not being subject to death, nor mutable by the lapse of ages.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:augustine:john.5.22:7a5d52c5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-21",
+      "title": "Tractates on John 21 on john 5:22",
+      "excerpt": "\"For,\" saith He, \"the Father judgeth no man, but all judgment hath He given to the Son.\" A little before we were thinking that the Father doeth something which the Son doeth not, when He said, \"The Father loveth the Son, and showeth Him all things that Himself doeth;\" as though the Father were doing, and the Son were seeing. In this way there was creeping in upon our mind a carnal conception, as if the Father did what the Son did not; but that the Son was looking on while the Father showed what He was doing. Then, as the Father was doing what the Son did not, just now we see the Son doing what the Father doeth not. How He turns us about, and keeps our mind busy! He leads us hither and thither, will not allow us to remain in one place of the flesh, that by changing He may exercise us, by exercising He may cleanse us, by cleansing He may render us capable of receiving, and may fill us when made capable.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:augustine:john.5.22:b9971248:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-21",
+      "title": "Tractates on John 21 on john 5:22",
+      "excerpt": "By all means there is a sense, a true and strong sense, if somehow we can grasp it, in which \"the Father judgeth not any man, but hath given all judgment to the Son.\" For this is said because none will appear to men in the judgment but the Son. The Father will be hidden, the Son will be manifest. In what will the Son be manifest? In the form in which He ascended. For in the form of God He was hidden with the Father; in the form of a servant, manifest to men. Not therefore \"the Father judgeth any man, but all judgment hath He given to the Son:\" only the manifest judgment, in which manifest judgment the Son will judge, since the same will appear to them that are to be judged.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:augustine:john.5.22:7f19bb5b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-the-trinity-1-13-29",
+      "title": "ON THE TRINITY 1.13.29 on john 5:22",
+      "excerpt": "How can it be said, \"The Father judges no one\"? For since the Father has begotten the Son equal to himself, the Father does indeed judge with the Son. Therefore Jesus must have meant that in the judgment, it is not the form of God but the form of the Son of man that will appear. Not that the Father, who has committed all judgment to the Son, will not judge, because the Son identifies him as \"one who seeks and judges.\" But … it is as if it was said: No one will see the Father in the judgment of the living and the dead, but everyone will see the Son, because he is also the Son of man so that he can be seen even by the ungodly.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-1-13-29",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.5.22:20e362b9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-7-20",
+      "title": "ON THE TRINITY 7.20 on john 5:22",
+      "excerpt": "The statement that all judgment is given to the Son teaches both his birth and his Sonship. Only a nature that is altogether one with the Father's could possess all things. And a Son can possess nothing except as a gift. But all judgment has been given to him since he gives life to whomever he will. Now we cannot suppose that judgment is taken away from the Father, although he does not exercise it. For the Son's whole power of judgment proceeds from the Father's since it is a gift from him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-7-20",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.5.22:c9add61a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-39",
+      "title": "Homily on the Gospel of John 39 on john 5:22",
+      "excerpt": "\"Shall we then,\" saith some one, \"also call Him Father?\" Away with the thought. He useth the word \"Son\" that we may honor Him still remaining a Son, as we honor the Father; but he who calleth Him \"Father\" doth not honor the Son as the Father, but has confounded the whole. Moreover as men are not so much brought to by being benefited as by being punished, on this account He hath spoken thus terribly, that even fear may draw them to honor Him. And when He saith \"all,\" His meaning is this, that He hath power to punish and to honor, and doeth either as He will. The expression \"hath given,\" is used that thou mayest not suppose Him not to have been Begotten, and so think that there are two Fathers. For all that the Father is, this the Son is also, Begotten, and remaining a Son. And that thou mayest learn that \"hath given\" is the same as \"hath begotten,\" hear this very thing declared by another place. \"As,\" saith Christ, \"the Father hath life in Himself, so hath He given to the Son to have life in Himself.\" \"What then? Did he first beget and then give Him life? For he who giveth, giveth to something which is. Was He then begotten without life?\" Not even the devils could imagine this, for it is very foolish as well as impious. As then \"hath given life\" is \"hath begotten Him who is Life,\" so, \"hath given judgment\" is \"hath begotten Him who shall be Judge.\"\r\n\r\nThat thou mayest not when thou hearest that He hath the Father for His cause imagine any difference of essence or inferiority of honor, He cometh to judge thee, by this proving His Equality. For He who hath authority to punish and to honor whom He will, hath the same Power with the Father. Since, if this be not the case, if having been begotten He afterwards received the honor, how came it that He was afterwards thus honored, by what mode of advancement reached He so far as to receive and be appointed to this dignity? Are ye not ashamed thus impudently to apply to that Pure Nature which admitteth of no addition these carnal and mean imaginations?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.5.22:7ecb08a7:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:on-jacob-and-the-blessed-life-1-6-26",
+      "title": "On Jacob and the Blessed Life 1.6.26 on john 5:22",
+      "excerpt": "But there is fear that the judge may be more severe. Consider who the judge is. Indeed, the Father has given all judgment to Christ. Therefore, can that very one condemn you, whom he redeemed from death, for whom he offered himself, and whose life he knows to be the reward of his own death?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.5.22:3ddc3db2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-christian-faith-2-12-100",
+      "title": "Exposition of the Christian Faith 2.12.100 on john 5:22",
+      "excerpt": "He has given [judgment to the Son], that is to say, not out of largess but in the act of generation. See, then, how unwilling God was that you should dishonor his Son—even to the point that he gave him to be your judge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:john.5.22:4b606a17:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-xii-three-books-of-testimonies-against-the-jews",
+      "title": "Treatise XII Three Books of Testimonies Against the Jews on john 5:22",
+      "excerpt": "That the Father judgeth nothing, but the Son; and that the Father is not glorified by him by whom the Son is not glorified. In the Gospel according to John: \"The Father judgeth nothing, but hath given all judgment unto the Son, that all may honour the Son as they honour the Father. He who honoureth not the Son, honoureth not the Father who hath sent Him.\" Also in the seventy-first Psalm: \"O God, give the king Thy judgment, and Thy righteousness to the king's son, to judge Thy people in righteousness.\" Also in Genesis: \"And the Lord rained upon Sodom and Gomorrah sulphur, and fire from heaven from the Lord.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.5.22:d44467ab:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 5:22",
+      "excerpt": "CHAPTER VII. That nought of God-befitting Dignities or Excellences is in the Son, by participation, or from without.\r\n\r\nHe introduceth another God-befitting and marvellous thing, in many ways persuading them that He is God by Nature and Verily. For to what other would it befit to judge the world, save Him Alone Who is God over all. Whom too the Divine Scriptures call to this, saying in one place, Arise, O God, judge the earth, in another again, For God is the Judge, He putteth down one and setteth up another. But He says that judgment has been given Him by the Father, not as being without authority hereto, but economically as Man, teaching that all things are more suitably referred to the Divine Nature, whereto Himself too being not external, in that He is Word and God, hath inherently authority over all; but in that He is made Man, to whom it is said, What hast thou that thou didst not receive, He fittingly acknowledges that He received it.\r\n\r\nTo these things again one of our opponents will say, \"Lo, the Son evidently declares that He hath received judgement of the Father; but He receives (it is plain) aa not having. How then will not He That gives with Authority be greater and of Superior Nature to Him Who must needs receive?\"\r\n\r\nWhat then do we say to these things? Our prearranged argument has been, I think, not unskilfully managed, introducing a consideration specially befitting the time, to wit of the Incarnation, and most accordant with the economy of the Flesh, when He was called a servant, when He humbled Himself, made in our likeness. But since it seemeth good to thee haughtily to despise the simpler doctrines, and to make more critical examination of them, come then, opposing thy objections, let us first say, Not altogether, nor of necessity, sir, doth he that is said to give anything, impart it to the recipient as though he had it not, nor yet is the giver always greater than the receiver. For what wilt thou do, when thou seest the holy Psalmist saying in the Spirit, Give glory to God? Shall we consider that God is in need of glory, or that we who are commanded to offer Him this, are on this account greater than the Creator? But not even thou wilt dare to say this, who shunnest not the fear of blasphemies. For full of glory is the Godhead, even though It receive it not from us. For He who receives as honour, what He hath of Own, will never bo thought inferior to those who offer Him glory as a gift. One may often see that he who has received anything is not inferior to the giver, and that the Father is not therefore of Superior Nature to His offspring, because He hath committed to Him all judgment.\r\n\r\nNext we must consider this too. To judge or to give judgment, are rather operations and acts conceived as properties of essences than themselves truly essences. For we in giving judgment do something, being in ourselves what we are. But if we grant that judging or giving judgment is of the nature of an essence, how must we not needs grant, even against our wills, that some cannot exist at all, except as judges, and that their being wholly ceases together with the termination of the judgment? But so to think, is most absurd. Judgment then is an operation, and nothing else. What then hath the Father committed to the Son? No accession from His Own Nature, in committing all judgment to Him, but rather an operation in respect of them that are judged. How then will He herein be greater, or of Superior Nature, by having added anything which was not in the Son Who saith, All things that the Father hath are Mine?\r\n\r\nHow then He must be conceived of as giving, hear now.\r\n\r\nAs God the Father, having the Power to create, createth all things through the Son, as through His own Power and Might: so having the Power too to judge, He will work this too through the Son, as His Own Righteousness. As though it were said that fire too yielded up burning to the operation that is of itself by nature, the fact taking this direction: so piously interpreting, Hath committed, shall we escape the snare of the devil. But if they persist in shamelessly asserting that glory is added to Him of the Father, through His being manifested Judge of the earth, let them teach us, how He is any longer to be considered Lord of glory, Who in the last times was crowned with the honours hereunto pertaining.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:lactantius:john.5.22:3a9ec16f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "lactantius",
+      "workId": "hcf:work:lactantius:the-divine-institutes-book-4-chapter-xiv",
+      "title": "The Divine Institutes Book 4 (Chapter XIV) on john 5:22",
+      "excerpt": "But in what manner and with what commands He was sent by God to the earth, the Spirit of God declared through the prophet, teaching us that when He had faithfully and uniformly fulfilled the will of His supreme Father, He should receive judgment and an everlasting dominion. If, He says, Thou wilt walk in my ways, and keep my precepts, then Thou shalt judge my house.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c325"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:tertullian:john.5.22:91b56a15:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas-16",
+      "title": "AGAINST PRAXEAS 16 on john 5:22",
+      "excerpt": "The Father has given judgment to the Son even from the very beginning. For when he speaks of all power and all judgment and says that all things were made by him and all things have been delivered into his hand, he allows no exception [in respect] of time, because they would not be all things unless they were the things of all time. It is the Son, therefore, who has been from the beginning administering judgment, throwing down the haughty tower and dividing the tongues, punishing the whole world by the violence of waters, raining upon Sodom and Gomorrah fire and brimstone, as the Lord from the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:tertullian:john.5.22:d8c3c833:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on john 5:22",
+      "excerpt": "\"The Father judgeth no man, but hath committed all judgment to the Son\" -from the very beginning even.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.5.22:6ddcc9e7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 5:22",
+      "excerpt": "Christ, having performed many signs, proved that He is able to bestow blessings. But since He did not persuade or draw them to a worthy veneration of Himself, He says that the Father has given all judgment to the Son, so that the fear of judgment might incline them to render Him honor. For we humans, especially the most foolish among us, are usually taught what is needful more by fear than by kindness.\r\nThe words \"The Father has given judgment to the Son\" should be understood to mean that He begat Him as Judge, just as you hear that He gave Him life, and you understand that He begat Him as Living. Since the Father is the cause of the Son's being, it is said that everything the Son has, He received from the Father, as having it from Him by nature. Thus, He also has judgment from the Father in the same way as the Father Himself has it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.5.22"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.5.22:6ed7f5e0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 5:22",
+      "excerpt": "762 Then when he says, The Father himself judges no one, he gives the reason for what was said above, and indicates his own power. It should be remarked that there are two expositions for the present passages: one is given by Augustine, and the other by Hilary and Chrysostom.\r\n\r\nAugustine's explanation is this. The Lord had said that just as the Father raises the dead, so also does the Son. But so that we do not think that this refers only to those miracles the Son performs in raising the dead to this life, and not to the Son's raising to eternal life, he leads them to the deeper consideration of the resurrection to occur at the future judgment. Thus he refers explicitly to the judgment, saying, The Father himself judges no one.\r\n\r\nAnother explanation by Augustine, in which the same meaning is maintained, is that the earlier statement, just as the Father raises the dead and grants life, so the Son, should be referred to the resurrection of souls, which the Son causes inasmuch as he is the Word; but the text, The Father himself judges no one, should be referred to the resurrection of bodies, which the Son causes inasmuch as he is the Word made flesh. For the resurrection of souls is accomplished through the person of the Father and of the Son; and for this reason he mentions the Father and Son together, saying, just as the Father raises the dead... so the Son. But the resurrection of bodies is accomplished through the humanity of the Son, according to which he is not coeternal with the Father. Consequently, he attributes judgment solely to the Son.\r\n\r\n763 Note the wonderful variety of expressions. The Father is first presented as acting and the Son as resting, when it says: \"the Son cannot do anything of himself, but only what he sees the Father doing\" (5:19); but here, on the contrary, the Son is presented as acting and the Father as resting: The Father himself judges no one, but he has given all judgment to the Son. We can see from this that he is speaking from different points of view at different times. At first, he was speaking of an action which belongs to the Father and the Son; thus he says that \"the Son cannot do anything of himself, but only what he sees the Father doing\"; but here he is speaking of an action by which the Son, as man, judges, and the Father does not: thus he says that the Father has given all judgment to the Son. For the Father will not appear at the judgment because, in accord with what is just, God cannot appear in his divine nature before all who are to be judged: for since our happiness consists in the vision of God, if the wicked were to see God in his own nature, they would be enjoying happiness. Therefore, only the Son will appear, who alone has an assumed nature. Therefore, he alone will judge who alone will appear to all. Yet he will judge with the authority of the Father: \"He is the one appointed by God to be the judge of the living and of the dead\" (Acts 10:42); and in the Psalm (71:1) we read: \"O Lord, give your judgment to the king.\"\r\n\r\n768 Hilary and Chrysostom give a more literal explanation, but it is only slightly different. They explain it this way. Our Lord said above, the Son grants life to those to whom he wishes. Now whoever does anything according to the free decision of his will acts because of his own judgment. But it was stated above that \"whatever the Father does, the Son does likewise\" (5:19). Therefore, the Son enjoys a free decision of his own will in all things, since he acts because of his own judgment. Thus he immediately mentions judgment, saying that the Father himself judges no one, i.e., without or apart from the Son. Our Lord used this way of speaking below (12:47): \"I do not judge him,\" i.e., I alone, \"but the word that I have spoken will judge him on the last day.\" But he has given all judgment to the Son, as he has given all things to him. For as he has given him life and begotten him as living, so he has given him all judgment, i.e., begotten him as judge: \"I judge only as I hear it\" (below 5:30), i.e., just as I have being (esse) from the Father, so also judgment. The reason for this is that the Son is nothing other than the conception of the paternal wisdom, as was said. But each one judges by the concept of his wisdom. Hence, just as the Father does all things through the Son, so he judges all things through him. And the fruit of this is that all men may honor the Son as they honor the Father, i.e., that they may render to him the cult of \"latria\" as they do the Father. The rest does not change.\r\n\r\n769 Hilary calls our attention to the remarkable relationship of the passages so that the errors concerning eternal generation can be refuted. Two heresies have arisen concerning this eternal generation. One was that of Arius, who said that the Son is less than the Father; and this is contrary to their equality and unity. The other was that of Sabellius, who said that that there is no distinction of persons in the divinity; and this is contrary to their origin.\r\n\r\nSo, whenever he mentions the unity and equality [of the Father and Son], he immediately also adds their distinction as persons according to origin, and conversely. Thus, because he mentions the origin of the persons when he says, \"the Son cannot do anything of himself, but only what he sees the Father doing\" (5:19), then, so we do not think this involves inequality, he at once adds: \"for whatever the Father does, the Son does likewise.\" Conversely, when he states their equality by saying: For just as the Father raises the dead and grants life, so the Son grants life to those to whom he wishes, then, so that we do not deny that the Son has an origin and is begotten, he adds, the Father himself judges no one, but he has given all judgment to the Son. Similarly, when he mentions the equality of the persons by saying, so that all men may honor the Son as they honor the Father, he immediately adds something about a \"mission,\" which indicates an origin, saying: Whoever does not honor the Son does not honor the Father who sent him, but not in such a way that involves a separation. Christ mentions such mission below (8:29) in saying: \"He who sent me is with me, and he has not left me alone.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.5.22"
     }
   ]
 }

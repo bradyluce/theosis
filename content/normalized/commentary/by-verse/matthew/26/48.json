@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.26.48:c167123d:0"
       ]
     },
     {
@@ -40,14 +47,14 @@
       ]
     },
     {
-      "id": "catena-matt-3871-v48",
+      "id": "catena-matt-3874-v48",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.48",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:47–50",
-      "excerpt": "Some may say that a great multitude came, because of the great multitude of those who already believed, who, they feared, might rescue Him out of their hands; but I think there is another reason for this, and that is, that they who thought that He cast out daemons through Beelzebub, supposed that by some magic He might escape the hands of those who sought to hold Him. Even now do many fight against Jesus with spiritual weapons, to wit, with divers and shifting dogmas concerning God. It deserves enquiry why, when He was known by face to all who dwelt in Judaea, he should have given them a…",
+      "excerpt": "If it be asked why Judas betrayed Jesus with a kiss, according to some it was because He desired to keep up the reverence due to his Master, and did not dare to make an open assault upon Him; according to others, it was out of fear that if he came as an avowed enemy, be might be the cause of His escape, which he believed Jesus had it in His power to effect. But I think that all betrayers of truth love to assume the guise of truth, and to use the sign of a kiss. Like Judas also, all heretics call Jesus Rabbi, and receive from Him mild answer. “And Jesus said unto him, Friend, wherefore art…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
@@ -58,14 +65,14 @@
       ]
     },
     {
-      "id": "catena-matt-3874-v48",
+      "id": "catena-matt-3871-v48",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.48",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:47–50",
-      "excerpt": "If it be asked why Judas betrayed Jesus with a kiss, according to some it was because He desired to keep up the reverence due to his Master, and did not dare to make an open assault upon Him; according to others, it was out of fear that if he came as an avowed enemy, be might be the cause of His escape, which he believed Jesus had it in His power to effect. But I think that all betrayers of truth love to assume the guise of truth, and to use the sign of a kiss. Like Judas also, all heretics call Jesus Rabbi, and receive from Him mild answer. “And Jesus said unto him, Friend, wherefore art…",
+      "excerpt": "Some may say that a great multitude came, because of the great multitude of those who already believed, who, they feared, might rescue Him out of their hands; but I think there is another reason for this, and that is, that they who thought that He cast out daemons through Beelzebub, supposed that by some magic He might escape the hands of those who sought to hold Him. Even now do many fight against Jesus with spiritual weapons, to wit, with divers and shifting dogmas concerning God. It deserves enquiry why, when He was known by face to all who dwelt in Judaea, he should have given them a…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
@@ -94,24 +101,6 @@
       ]
     },
     {
-      "id": "catena-matt-3873-v48",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.48",
-      "topicSlugs": [],
-      "personId": "rabanus-maurus",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:47–50",
-      "excerpt": "The Lord suffered the traitor’s kiss, not to teach us to dissemble, but that He might not seem to shrink from His betrayal.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-3876-v48",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.48",
@@ -130,6 +119,162 @@
       ]
     },
     {
+      "id": "catena-matt-3873-v48",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.48",
+      "topicSlugs": [],
+      "personId": "rabanus-maurus",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:47–50",
+      "excerpt": "The Lord suffered the traitor’s kiss, not to teach us to dissemble, but that He might not seem to shrink from His betrayal.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "hcf:origen:matthew.26.48:7387ed84:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 26:48",
+      "excerpt": "Even now do many fight against Jesus with spiritual weapons, to wit, with divers and shifting dogmas concerning God. It deserves enquiry why, when He was known by face to all who dwelt in Judæa, he should have given them a sign, as though they were unacquainted with His person. But a tradition to this effect has come down to us, that not only had He two different forms, one under which He appeared to men, the other into which He was transfigured before His disciples in the mount, but also that He appeared to each man in such degree as the beholder was worthy; in like manner as we read of the manna, that it had a flavour adapted to every variety of use, and as the word of God shows not alike to all. They required therefore a sign by reason of this His transfiguration.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.26.48:b241174b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-83",
+      "title": "Homily on the Gospel of Matthew 83 on matthew 26:48",
+      "excerpt": "At any rate, \"While He yet spake, lo, Judas, one of the twelve, came, and with him a great multitude with swords and staves, from the chief priests and elders of the people.\" Seemly surely are the instruments of the priests! \"with swords and staves\" do they come against Him! And Judas, it is said, with them, one of the twelve. Again he calleth him \"of the twelve,\" and is not ashamed. Now he that betrayed Him gave them a sign, saying, \"Whomsoever I shall kiss, that same is He, hold Him fast.\" Oh! what depravity had the traitor's soul received. For with what kind of eyes did he then look at his Master? with what mouth did he kiss Him? Oh! accursed purpose; what did he devise? What did he dare? What sort of sign of betrayal did he give? Whomsoever I shall kiss, he saith. He was emboldened by his Master's gentleness, which more than all was sufficient to shame him, and to deprive him of all excuse for that he was betraying one so meek.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.26.48:ad904c46:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-32-2",
+      "title": "Commentary on Matthew 32.2 on matthew 26:48",
+      "excerpt": "There is a certain order to the different facets of Christ's suffering. But the reason for Judas's kiss was that we might discern all our enemies and those who we know would delight in raging against us. The Lord does not resist his kiss.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
+      "id": "hcf:jerome:matthew.26.48:0ad1dca5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:48",
+      "excerpt": "(Verse 48.) But he who betrayed him gave them a sign, saying: Whomever I shall kiss, that is he, hold him fast. Miserable Judas, and yet not pitiable, with the same unfaithfulness with which he betrayed his master and Lord, he believed that the signs which he had seen the Savior performing were not done by divine majesty, but by magical skills. And because he had heard that he was transfigured on the mountain, he feared that he might slip away from the hands of the attendants through a similar transformation. Therefore, he gave a sign so that they would know that it was him, whom he demonstrated with a kiss.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
+      "id": "hcf:jerome:matthew.26.48:5a22cdcb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:untitled-commentary",
+      "title": "Commentary on matthew 26:48",
+      "excerpt": "It was shameless indeed and a sign of broken trust to call him master and to plant a kiss on the one he betrayed. But Judas still has something of the modesty of a disciple, for he does not deliver up Christ to his persecutors openly but with the sign of a kiss. This is the mark which God put on Cain lest anyone who came upon him should kill him. .",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
+      "id": "hcf:pseudo-augustine:matthew.26.48:d14f972e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "pseudo-augustine",
+      "workId": "hcf:work:pseudo-augustine:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 26:48",
+      "excerpt": "(Serm. de Symb. ad Catech. 6.) Exult, Christian, you have gained by this bargain of your enemies; what Judas sold, and what the Jews bought, belongs to you.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.26.48:d61ea3ea:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:48",
+      "excerpt": "Judas gave a sign because it was night and they were not able to identify Jesus. For those who came to arrest Him were not from the multitude, but were servants of the high priest, who perhaps did not know Jesus at all. But the disciple reveals the Master to them with a kiss.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.26.48:8fa099eb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:48",
+      "excerpt": "Next he treats of the sign of betrayal: and he that betrayed him gave them a sign, saying etc. But here there is a question. Since he was well known in Judea, why did they seek a sign? A twofold reason can be given. One is that Judas had heard that Christ was transfigured on the mountain, and he believed this had been done by magical art; therefore, he wanted to anticipate with the sign of a kiss, before he could transfigure himself. Jerome sets forth this explanation. But Origen says that just as the manna in the desert tasted to each person like whatever he imagined, so Christ appeared to each person according to the opinion he held of him; therefore, it was necessary that he give a sign. He gave an extraordinary sign, because whomsoever I shall kiss, that is he, hold him fast. He made the sign of friendship into the sign of betrayal; Proverbs 27:6: better are the wounds of a friend than the deceitful kisses of an enemy.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.26.48"
+    },
+    {
       "id": "catena-matt-3869-v48",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.48",
@@ -145,6 +290,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.26.48:77ded8ba:0"
       ]
     }
   ]

@@ -4,6 +4,24 @@
   "verseNumber": 19,
   "entries": [
     {
+      "id": "catena-john-1088-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.19",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:19–20",
+      "excerpt": "Great however is His confidence and fearlessness: it not being possible that He should undergo any suffering, but that which He voluntarily undertook. Wherefore it follows, And no man laid hands on Him, for His hour was not yet come. Some, when they hear this, think Christ to have been under the control of fate. But if fate comes from the verb fari, to speak, as some derive it, how can the Word of God be under the control of fate? Where are the fates? In the heavens, you say, in the courses and revolutions of the stars. How then can fate have power over Him, by Whom the heavens and stars were…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-037-c8-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.19",
@@ -23,24 +41,6 @@
       ]
     },
     {
-      "id": "catena-john-1077-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.19",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:19–20",
-      "excerpt": "Those who had heard our Lord say, Ye judge after the flesh, shewed that they did so; for they understood what He said of His Father in a carnal sense: Then said they unto Him, Where is Thy Father? meaning, We have heard Thee say, I am not alone, but I and the Father that sent Me. We see Thee alone; prove to us then that Thy Father is with Thee.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1079-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.19",
@@ -56,17 +56,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.8.19:7ebde163:2"
       ]
     },
     {
-      "id": "catena-john-1080-v19",
+      "id": "catena-john-1084-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.19",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 8:19–20",
-      "excerpt": "He tells them, it is of no avail for them to say they know the Father, if they do not know the Son.",
+      "excerpt": "This word perhapsc is used only by way of rebuke, though it seems to express doubt. As used by men indeed it is the expression of doubt, but He who knew all things could only mean by that doubt to rebuke unbelief. Nay, even we sometimes say perhaps, when they are certain of a thing, e. g. when you are angry with your slave, and say, Do not you heed me? Consider, perhaps I am your master. So our Lord’s doubt is a reproof to the unbelievers, when He says, Ye should have known perhaps My Father also.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-1084-v19",
+      "id": "catena-john-1077-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.19",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 8:19–20",
-      "excerpt": "This word perhapsc is used only by way of rebuke, though it seems to express doubt. As used by men indeed it is the expression of doubt, but He who knew all things could only mean by that doubt to rebuke unbelief. Nay, even we sometimes say perhaps, when they are certain of a thing, e. g. when you are angry with your slave, and say, Do not you heed me? Consider, perhaps I am your master. So our Lord’s doubt is a reproof to the unbelievers, when He says, Ye should have known perhaps My Father also.",
+      "excerpt": "Those who had heard our Lord say, Ye judge after the flesh, shewed that they did so; for they understood what He said of His Father in a carnal sense: Then said they unto Him, Where is Thy Father? meaning, We have heard Thee say, I am not alone, but I and the Father that sent Me. We see Thee alone; prove to us then that Thy Father is with Thee.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -131,14 +138,14 @@
       ]
     },
     {
-      "id": "catena-john-1088-v19",
+      "id": "catena-john-1080-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.8.19",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 8:19–20",
-      "excerpt": "Great however is His confidence and fearlessness: it not being possible that He should undergo any suffering, but that which He voluntarily undertook. Wherefore it follows, And no man laid hands on Him, for His hour was not yet come. Some, when they hear this, think Christ to have been under the control of fate. But if fate comes from the verb fari, to speak, as some derive it, how can the Word of God be under the control of fate? Where are the fates? In the heavens, you say, in the courses and revolutions of the stars. How then can fate have power over Him, by Whom the heavens and stars were…",
+      "excerpt": "He tells them, it is of no avail for them to say they know the Father, if they do not know the Son.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -182,24 +189,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-1081-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.8.19",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-john",
-      "title": "On John 8:19–20",
-      "excerpt": "Ye neither know Me, nor My Father: this seems inconsistent with what was said above, Ye both know Me, and know whence I am. But the latter is spoken in reply to some from Jerusalem, who asked, Do the rulers know indeed that this is the very Christ? Ye neither know Me is addressed to the Pharisees. To the former persons from Jerusalem however He said, He that sent Me, is true, Whom ye know not. You will ask then, How is that true, If ye know Me, ye would know My Father also? when they of Jerusalem, to whom He said, Ye know Me, did not know the Father. To this we must reply, that our Saviour…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.8.19:72a89d8b:0"
       ]
     },
     {
@@ -229,6 +225,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 8:19–20",
       "excerpt": "It is proper to observe, that the followers of other sects think this text proves clearly, that the God, whom the Jews worshipped, was not the Father of Christ. For if, say they, our Saviour said this to the Pharisees, who worshipped God as the Governor of the world, it is evident that the Father of Jesus, whom the Pharisees knew not, was a different person from the Creator. But they do not observe that this is a usual manner of speaking in Scripture. Though a man may know the existence of God, and have learned from the Father that He only must be worshipped, yet if his life is not good, he…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:john.8.19:19abe935:0"
+      ]
+    },
+    {
+      "id": "catena-john-1081-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.8.19",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-john",
+      "title": "On John 8:19–20",
+      "excerpt": "Ye neither know Me, nor My Father: this seems inconsistent with what was said above, Ye both know Me, and know whence I am. But the latter is spoken in reply to some from Jerusalem, who asked, Do the rulers know indeed that this is the very Christ? Ye neither know Me is addressed to the Pharisees. To the former persons from Jerusalem however He said, He that sent Me, is true, Whom ye know not. You will ask then, How is that true, If ye know Me, ye would know My Father also? when they of Jerusalem, to whom He said, Ye know Me, did not know the Father. To this we must reply, that our Saviour…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 70,
@@ -273,6 +294,250 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.8.19:23c08e33:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-37",
+      "title": "Tractates on John 37 on john 8:19",
+      "excerpt": "A little before He said, \"My judgment is true; because I am not alone, but I and the Father that sent me:\" as if He said, The reason why my judgment is true is, because I am the Son of God, because I speak the truth, because I am truth itself. Those men, understanding Him carnally, said, \"Where is thy Father?\" Now hear, O Arian: \"Ye neither know me, nor my Father;\" because, \"If ye knew me, ye would know my Father also.\" What doth this mean, except \"I and the Father are one\"? When thou seest some person like some other,-give heed, beloved, it is a common remark; let not that appear to you difficult which you see to be customary,-when, I say, thou seest some person like another, and thou knowest the person to whom he is like, thou sayest in wonder, \"How like this person is to that!\" Thou wouldst not say this unless there were two. Here one who does not know the person to whom thou sayest the other is like remarks, \"Is he so like him?\" And thou answerest him: What, dost thou not know that person? Saith he, \"No, I do not.\" Immediately thou, in order to make known to him the person whom he does not know by means of the person whom he observes before him, answerest, saying, Having seen this man, thou hast seen the other.\r\n\r\nThou didst not, surely, assert that they are one person in saying this, or that they are not two; but made such answer because of the likeness: \"If thou knowest the one, thou knowest the other; for they are very like, and there is no difference whatever between them.\" Hence also the Lord saith, \"If ye knew me, ye would know my Father also;\" not that the Son is the Father but like the Father. Let the Arian blush. Thanks be to the Lord that even the Arian is separate from the Sabellian error, and is not a Patripassian: he does not affirm that the Father assumed flesh and came to men, that the Father suffered, rose again, and somehow ascended to Himself; this he does not affirm; he acknowledges with me the Father to be Father, the Son to be Son. But, O brother, thou hast escaped that shipwreck, why go to the other? Father is Father, Son is Son; why dost thou affirm that the Son is unlike, that He is different, another substance? If He were unlike, would He say to His disciples, \"He that hath seen me hath seen the Father\"? Would He say to the Jews, \"If ye knew me, ye would know my Father also\"? How would this be true, unless that other was also true, \"I and the Father are one\"?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:augustine:john.8.19:7138a538:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-37",
+      "title": "Tractates on John 37 on john 8:19",
+      "excerpt": "\"Where is thy Father?\" For we have heard thee say, \"I am not alone, but I and the Father that sent me:\" we see thee alone, we do not see thy Father with thee; how sayest thou that thou art not alone, but that thou art with thy Father? Else show us that thy Father is with thee. And the Lord answered them: Do ye know me, that I should show you the Father? This is indeed what follows; this is what He answered in His own words. For see what He said, \"Ye neither know me nor my Father: if ye knew me, ye would perhaps know my Father also.\" Ye say then, \"Where is thy Father?\" As if already ye knew me; as if what you see were all that I am. Therefore because ye know not me, I do not show you my Father. Ye suppose me, in fact, to be a man; hence ye seek a man for my father, because \"ye judge after the flesh.\" But because, according to what you see, I am one thing, and another thing according to what you see not, and that I as hidden from you speak of my Father as hidden, it is requisite that you should first know me, and then ye know my Father also.\r\n\r\n\"For if ye knew me, ye would perhaps know my Father also.\" He who knows all things is not in doubt when He says perhaps, but rebuking. Now see how this very word perhaps, which seems to be a word of doubting, may be spoken chidingly. Yea, a word expressive of doubt it is when used by man, for man doubts because he knows not; but when a word of doubting is spoken by God, from whom surely nothing is hid, it is unbelief that is reproved by that doubting, not the Godhead merely expressing an opinion. For men sometimes chidingly express doubt concerning things which they hold certain; that is, use a word of doubting, while in their heart they doubt not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.8.19:ecbcf0f8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 8:19",
+      "excerpt": "Others think that the Jews said to the Lord \"where is Your Father\" as an insult and reproach. Since His supposed father Joseph was poor, by the words \"where is Your Father\" the Jews were saying, as it were: \"Your Father is obscure and of low birth, so why do You constantly remind us of Him?\"\r\nSince they were asking Him about the Father by way of temptation, and not with the purpose of learning the truth, He does not deem them worthy of an answer, but says: \"You know neither Me nor My Father,\" that is, you cannot know My Father without Me. Although you think that you honor God, since you do not believe that He is Father to Me, His true Son, there is no benefit for you in this. You do not even know Him as He ought to be known. Otherwise you would have known and honored Me as well. But since now you neither know nor honor Me, you do not know Him either, nor do you render Him honor, although you think the opposite. And that you do not know Me — no one else is to blame for this but yourselves.\r\nDo you hear, O impious one who subordinates the Son to the Father? If He were not Consubstantial with the Father, how could He have said that \"if you had known Me, you would have known the Father also\"? For if, in your opinion, the Son is a creature, how does one who knows a creature also know God? He who knows the nature of an angel does not yet thereby know the Nature of God. But if he who knows the Son also knows the Father, then the Son is truly of one and the same Nature with the Father. Will you maintain that those who know a creature also know God? By no means. For many, and indeed all, see and know the creature, but God no one sees or knows.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.19:e9a64bca:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-52",
+      "title": "Homily on the Gospel of John 52 on john 8:19",
+      "excerpt": "For, \"I know,\" He saith, \"whence I come.\" This would not greatly affect them, but the adding, \"and whither I go,\" would rather terrify them, since He was not to remain in death. But why said He not, \"I know that I am God,\" instead of, \"I know whence I come\"? He ever mingleth lowly words with sublime, and even these He veileth. For after saying, \"I bear witness of Myself,\" and proving this, He descendeth to a humbler strain. As though He had said, \"I know from whom I am sent, and to whom I depart.\" For so they could have had nothing to say against it, when they heard that He was sent from Him, and would depart to Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.19:57dc5393:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-52",
+      "title": "Homily on the Gospel of John 52 on john 8:19",
+      "excerpt": "Wherefore did He mention the Father? Because they would not have thought that the Son was to be believed unless He received the witness of the Father. Besides, the saying doth not even hold good. For in the case of men when two bear witness in a matter pertaining to another, then their witness is true, (this is for two to witness,) but if one should witness for himself, then they are no longer two. Seest thou that He said this for nothing else but to show that He was of the same Substance, that He needed no other witness, and was in nothing inferior to the Father?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.19:d9ddbe24:5",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-52",
+      "title": "Homily on the Gospel of John 52 on john 8:19",
+      "excerpt": "And they said that they were profited nothing by saying that they knew God the Father, while they knew not Him. And He saith that the cause of this (ignorance) was that they were not willing to know Him. Therefore He telleth them that it was not possible to know the Father without knowing Him, that even so He might draw them to the knowledge of Him. For since leaving Him they even sought to get the knowledge of the Father, He saith, \"Ye cannot know the Father without Me.\" So that they who blaspheme the Son, blaspheme not the Son only, but Him that begat Him also.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.19:95ad6249:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-52",
+      "title": "Homily on the Gospel of John 52 on john 8:19",
+      "excerpt": "\"I could not have spoken,\" He saith, \"any falsehood, I who am come from thence, and depart thither, to the true God. But ye know not God, and therefore judge according to the flesh. For if having heard so many sure signs and proofs ye still say, 'thy witness is not true,' if ye deem Moses worthy of credit, both as to what he speaketh concerning others and what he speaketh concerning himself, but Christ not so, this is to judge according to the flesh.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.19:06006a13:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-52",
+      "title": "Homily on the Gospel of John 52 on john 8:19",
+      "excerpt": "\"Then said they unto Him, Who is thy father? Jesus answered, Ye neither know Me, nor My Father.\" Because while they knew they spake as though they knew not, and as if trying Him, He doth not even deem them worthy of an answer. Wherefore henceforth He speaketh all more clearly and more boldly; drawing His testimony from signs, and from His teaching of them that followed Him, and by the Cross being near.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.8.19:777a53bc:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-52",
+      "title": "Homily on the Gospel of John 52 on john 8:19",
+      "excerpt": "\"But I judge no man.\" He saith indeed also that \"the Father judgeth no man.\" (c. v. 22.) How then doth He here declare, that, \"If I judge, My judgment is just, for I am not alone\"? He again speaketh in reply to their thoughts. \"The judgment which is Mine is the judgment of the Father. The Father, judging, would not judge otherwise than as I do, and I should not judge otherwise than as the Father.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:origen:john.8.19:65f7b427:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-19-21-24-26-28",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 19.21-24, 26-28 on john 8:19",
+      "excerpt": "There is a difference between knowing God and believing in him. To the Pharisees, to whom he says, \"You neither know me nor my Father,\" he had the right to say, \"You do not even believe in my Father,\" for he who denies the Son does not have the Father, either by faith or knowledge. But Scripture gives us another sense of knowing a thing, that is, being joined to that thing. Adam knew his wife when he was joined to her.… If one who has joined to a prostitute has known the prostitute and one who has joined to his wife has known his wife, then one who has joined to the Lord has known the Lord in a holy manner. And in this sense the Pharisees neither knew the Father nor the Son.…Maybe it is possible for someone to know God and yet not know the Father. For if there is one aspect of him in accordance with which he is Father and another in which he is God, perhaps it is possible for someone to know God but not to know the Father.… Therefore among an infinite number of prayers offered up in the law, we do not find any one addressed to God as \"Father.\" Perhaps it is because they did not know the Father. They only pray to him as God and Lord, … not anticipating the grace shed by Jesus over the whole world, calling all to sonship and to praise the Father in the midst of the assembly, as it is written, \"I will declare your name to my brothers.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:origen:john.8.19:d95d8e95:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-19-12-13-15-17",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 19.12-13, 15-17 on john 8:19",
+      "excerpt": "It is necessary to observe that the heterodox think that this text proves clearly that the God whom the Jews worshiped was not the Father of Christ. For if, they say, the Savior said \"you know neither me nor my Father\" to the Pharisees who worshiped the Creator, then it is evident that the Pharisees did not know the Father of Jesus because he was different from the Creator.… But they who say these things have not understood the divine Scriptures or observed the usage of language in them.…If anyone knew about the Creator and his priestly service, the sons of Eli did, having been raised at the place of worship. Yet, because they sinned, it is written of them in the First Book of Kings that they … \"did not know the Lord.\" …\r\nSo, again, the Pharisees did not know the Father since they did not live according to the Creator's will. For knowing God can also refer to knowing God, which is something different from merely believing in him.… But who could not agree that the words written in the Psalms, \"Be still and know that I am God,\" were written for a people who believe in the Creator?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.8.19:c4820c09:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 8:19",
+      "excerpt": "Jesus answered, Neither Me do ye know nor My Father, if ye had known Me, ye should have known My Father also.\r\n\r\nTrue is the word and in no respect can it be accused of lying. For they who indeed suppose Christ to be of Joseph, or of fornication, and who know not that the Word beamed forth of God the Father, how will they not with reason hear, Neither Me do ye know nor My Father? For if they had known the Word that beamed forth of God the Father, and was for our sakes made in the flesh, according to the Divine Scripture, they would have known Him too Who begat Him. For most accurate knowledge of the Father is through the Son implanted in the understanding of the more zealous after learning, as He too affirmed, saying unto God the Father, I manifested Thy Name to the men, and again, Thy knowledge was made marvellous by Me. For since we know the Son, we know by Him Him Who begat Him. For through Both is brought in the perception of the Other: and when the Father is mentioned, the memory of His Offspring surely comes in with it, and again with the signification of the Son, the Name of Him Who begat Him comes in too. For therefore is the Son a Door (so to speak) and way leading unto the knowledge of the Father. And so does He say, No man cometh unto the Father but by Me. For we must needs first learn (as is possible) what the Son is by Nature; and so, as from Image and most accurate Impress, understand well the Archetype. For in the Son is the Father seen, and in the Nature of His own Offspring as in a mirror, is He Perfectly seen. But if this be true, as it is true, let the God-opposing Arian blush. For needs must the Impress of His Essence be in every way and manner like to Him, lest ought else than what the Father is, be supposed to be perfectly beaming forth in the Son. And if He love to be known in the Son and to shine forth in Him, He knows (I suppose) of a surety that He is Consubstantial too, and in nothing whatever inferior to His Own inherent Glory: for He would not have chosen to be believed to be in lesser case than He is by Nature. And since He loves and has willed this, how must we not needs now confess that the Son is every way like the Father, in order that through Him we may know Him also That begat Him, as we have already said, ascending aright from the Image to the Archetype, and be able to have an unblameable conception of the Holy Trinity?\r\n\r\nThus then he who knoweth the Son, knoweth the Father too. But consider how the Lord after having said the truth to the Jews, interweaves some other device also in His speech; for having said clearly, Neither Me do ye know nor My Father, He draws gently off the mind of the Jews, that they should not think only humanly of Him, nor suppose that He is in truth the son of Joseph who was taken economically but should rather seek and enquire Who is the Word in Flesh, Who His Father by Nature.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.8.19",
+      "provenance": [
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:john.8.19:6f753df1:2"
+      ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.8.19:f9cbfd22:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 8:19",
+      "excerpt": "They said therefore unto Him, Where is Thy Father?\r\n\r\nIn this too most especially may one, I deem, and with good reason cry out against the stolidity of the Jews, uttering that word of the Prophet, Behold O foolish people and without heart. For after much discourse and often with them from our Saviour Christ, Who over and over makes mention of God the Father in Heaven, the wretched ones sink down into so great folly as to dare to say, Where is Thy Father? For they think nought at all of Him Who is His God and Father in the Heavens, but look round at and seek for Joseph, believing him to be Christ's father and no otherwise. Thou seest then how they have been with reason called a people verily foolish and heartless: for able not so much as to raise the eye of their understanding above things of earth, they show that true it is which was said of them, Let their eyes be darkened that they see not, and bow Thou down their back alway. For of irrational creatures is the back bowed, for they have this form from nature, and there is nothing of uprightness in them. And the mind of the Jews has become in some way like the beasts and has declined ever downwards, seeing nothing of heavenly things. For shall we not by the very fact itself, instructed aright in this matter, think and judge truly concerning them? for if they had at all thought of God the Father in Heaven, how would they have sought in place the Unembodied? how (tell me) would they, saying most unadvisedly of God Who filleth all things, Where is He, not fight with the whole Divine Scripture, albeit the Divine-speaking Psalmist, going through (as he was able) his words about God, and attributing to Him the power of filling all things, says, Whither shall I go from Thy Spirit, and from Thy Presence whither shall I flee? if I ascend up into heaven, THOU art there, if I go down to hell, behold Thou, if I take my wings at morning and depart unto the uttermost parts of the sea, even there shall Thy Hand lead me and Thy Right Hand shall hold me. Yea and God Himself Who is over all, showing clearly that He possesseth not nature circumscribed by space, saith to those so unholy Jews, Do not I fill heaven and earth, saith the Lord? what house will ye build Me, or what the place of My rest? Heaven is My Throne and earth My footstool. One may therefore see the Jews in all things without understanding, when they say to the Saviour Christ, Where is Thy Father? except they say this of His reputed father after the flesh, in this too doting.\r\n\r\nBut it is likely that the words of the Jews had some other deep meaning. For since they thought that the holy Virgin had committed adultery before marriage, therefore they rail most bitterly against Christ as not even knowing from whom He is, saying, Where is Thy father? doting",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.8.19"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.8.19:97f40c96:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 8:19",
+      "excerpt": "Next (v 19), we see the question arising about Christ's Father. First, the Evangelist mentions the question asked by the Jews; then Christ's answer; and thirdly, he intimates the security of Christ.\r\n\r\nThe question which the Jews had for Christ was about his Father, where his Father was. They said to him: Where is your Father? for they thought that the Father of Christ was a man, just like their own fathers. Because they heard him say, \"I am not alone; but there is me and the Father who sent me,\" and since they saw that he was now alone, they asked him, Where is your Father?\r\n\r\nOr, we could say that they were here speaking with a certain irony and contempt, saying in effect: \"Why do you speak to us so often about your Father? Is he so great that his testimony should be believed?\" For they were thinking of Joseph, who was an unknown, and a person of low status; and they were ignorant of the Father: \"So the Gentiles will not say: 'Where is their God'\" (Ps 113:2).\r\n\r\nChrist's answer is mysterious: You know neither me nor my Father. Christ does not reveal the truth to them because they were questioning him not because they desired to learn, but in order to belittle him. Rather, he first shows them knowledge of the truth. He shows them their ignorance when he says, you know neither me. He is saying: You should not be asking about my Father, because you do not know me. For since you regard me as a man, you are asking about my Father as though he were a man. But because you do not know me, neither can you know my Father.\r\n\r\nThis seems to conflict with what he said above: \"You do indeed know me, and you know where I come from\" (7:27). The answer to this is that they did know him according to his humanity, but not according to his divinity.\r\n\r\nWe should note, according to Origen, that some have misunderstood this, and they said that the Father of Christ was not the God of the Old Testament: for the Jews knew the God of the Old Testament, according to \"God is known in Judea\" (Ps 75:1). There are four answers to this. First, our Lord says that the Jews did not know his Father because insofar as they do not keep his commandments they are acting like those who do not know him. This answer refers to their conduct. Secondly, they are said not to know God because they did not cling to him spiritually by love: for one who knows something adheres to it. Thirdly, because although they did know him through faith, they did not have a full knowledge of him: \"No one has ever seen God; it is the Only Begotten Son, who is in the bosom of the Father, who has made him known\" (1:18). Fourthly, because in the Old Testament the Father was known under the aspect of God Almighty: \"I appeared to Abraham, to Isaac and to Jacob as God Almighty, but my name, Lord, I did not show them\" (Ex 6:3), that is, under the aspect of Father. Thus, although they knew him as God Almighty, they did not know him as the Father of a consubstantial Son.\r\n\r\nChrist says that he is the way to arrive at a knowledge of the Father, If you did know me. He is saying in effect: Because I speak of my Father, who is hidden, it is first necessary that you know me, and then you might also know my Father. For the Son is the way to the knowledge of the Father: \"If you had known me, you would have also known my Father\" (14:7). As Augustine says, what does If you did know me mean, except, \"I and the Father are one\" (10:30). It is customary when you see someone who is like someone else to say: \"If you have seen one, you have seen the other\"; not that the Son is the Father, but he is like the Father.\r\n\r\nHe says, you might, not to indicate a doubt, but as a rebuke. It would be like being irritated with your servant and saying to him: \"Have you no respect for me? Just remember that I might be your master.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.8.19"
     }
   ]
 }

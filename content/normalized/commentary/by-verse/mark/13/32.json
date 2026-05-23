@@ -74,6 +74,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:mark.13.32:f1c6784a:1"
       ]
     },
     {
@@ -88,42 +95,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1095-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.13.32",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "The Lord wishing to prevent His disciples from asking about that day and hour, says, But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father. For if He had said, I know, but I will not reveal it to you, He would have saddened them not a little; but He acted more wisely, and prevents their asking such a question, lest they should importune Him, by saying, neither the Angels nor I.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1098-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.13.32",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "But He teaches us two things, watching and prayer; for many of us watch, but watch only to pass the night in wickedness; He now follows this up with a parable, saying, For the Son of man is as a man taking a far journey, who left his house, and gave his servants power over every work, and commanded the porter to watch.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -149,22 +120,234 @@
       ]
     },
     {
-      "id": "catena-mark-1097-v32",
+      "id": "catena-mark-1095-v32",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.32",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:32–37",
-      "excerpt": "For we must needs watch with our souls before the death of the body.",
+      "excerpt": "The Lord wishing to prevent His disciples from asking about that day and hour, says, But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father. For if He had said, I know, but I will not reveal it to you, He would have saddened them not a little; but He acted more wisely, and prevents their asking such a question, lest they should importune Him, by saying, neither the Angels nor I.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.13.32:f2906a2c:1"
+      ]
+    },
+    {
+      "id": "catena-mark-1098-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.32",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "But He teaches us two things, watching and prayer; for many of us watch, but watch only to pass the night in wickedness; He now follows this up with a parable, saying, For the Son of man is as a man taking a far journey, who left his house, and gave his servants power over every work, and commanded the porter to watch.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:augustine:mark.13.32:84a57420:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-180-to-oceanus-3",
+      "title": "LETTER 180, TO OCEANUS 3 on mark 13:32",
+      "excerpt": "I am by no means of the opinion that a figurative mode of expression can be rightly termed a falsehood. For it is no falsehood to call a day joyous because it makes people joyous. A lupine seed is not sad because it lengthens the face of the eater because of its bitter taste. So also we say that God \"knows\" something when he makes his hearers know it (an instance quoted by yourself in the words of God to Abraham, \"Now I know that you fear God\"). These are by no means false statements, as you yourself readily see. Accordingly, the blessed Hilary threw light on an obscure point by this kind of figurative expression, showing how we ought to understand the words that \"he did not know the day,\" with no other meaning than this: In proportion as he had made others ignorant by concealing his meaning, he spoke of it figuratively as his own lack of knowledge. So by concealing it, he so to speak caused others not to know it. He did not by this explanation condone lying, but he proved that it was not lying to use the common figures, including metaphors, as a form of speech available to all, a mode of expression entirely familiar to all in daily conversation. Would anyone call it a lie to say that vines are jeweled with buds, or that a grainfield waves, or that a young man is in the flower of his youth, because he sees in these objects neither waves nor precious stones, nor grass, nor trees to which these expressions would literally apply?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:augustine:mark.13.32:53b0c31c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-the-trinity-1-12-23",
+      "title": "ON THE TRINITY 1.12.23 on mark 13:32",
+      "excerpt": "According to \"the form of God\" everything that the Father has belongs to the Son: for \"All things that are mine are yours, and yours are mine.\" According to the form of a slave, however, his teaching is not his own, but of the One who sent him. Hence \"Of that day or hour no one knows, neither the angels in heaven, nor the Son, but the Father only.\" He is ignorant of this in the special sense of making others ignorant. He did not \"know it\" in their presence in such a way as to be prepared to reveal it to them at that time. Recall that in a similar way it was said to Abraham: \"Now I know that you fear God,\" in the sense that now I am taking you through a continuing journey to know yourself, because Abraham came to know himself only after he had been tried in adversity.… Jesus was \"ignorant\" in this sense, so to speak, among his disciples, of that which they were not yet able to know from him. He only said that which was seasonally fitting for them to know. Among those with mature wisdom he knew in a different way than among babes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-1-12-23",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:augustine:mark.13.32:1e3562fb:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-the-psalms-37-1",
+      "title": "ON THE PSALMS 37.1 on mark 13:32",
+      "excerpt": "It was not part of his office as our master that through him the day should become known to us. It remains true that the Father knows nothing that the Son does not know, since his Son, the Word, is his wisdom, and his wisdom is to know. But it was not for our good to know everything which was known to him who came to teach us. He surely did not come to teach us that which it was not good for us to know. As master he both taught some things and left other things untaught. He knew both how to teach us what was good for us to know, and not to teach us what was not for our good to know. It is according to this common form of speech that the Son is said \"not to know\" what he does not choose to teach. We are in the daily habit of speaking in this way. Accordingly he is said \"not to know\" what he causes us not to know.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:augustine:mark.13.32:79eddb16:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-the-psalms-6-1",
+      "title": "ON THE PSALMS 6.1 on mark 13:32",
+      "excerpt": "No one should arrogate to oneself the knowledge of that time by any computation of years. For if that day is to come after seven thousand years, everyone could learn its advent simply by adding up years. What comes then of the Son's even \"not knowing\" this? This is said with this meaning, that his hearers do not learn this from the Son, not that he by himself does not know it. It is to be understood according to that form of speech by which \"The Lord your God tries you that he may know,\" which means, that he may make you know. Again, the phrase \"arise, O Lord\" means make us arise. Thus when the Son is said not to know this day, it is not because he is ignorant of it, but because he causes those to know it not for whom it is not yet expedient to know it, for he does not show it to them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.13.32:5e6d8562:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:32",
+      "excerpt": "Wishing to restrain the disciples from curiosity about the last day and hour, the Lord says that neither the Angels nor the Son know of this. If He had said, \"I know, but I do not wish to reveal it to you,\" then He would have grieved them. But now, when He says that neither the Angels nor I know, He acts most wisely and completely restrains them from the desire to know and to pester Him. You can understand this from an example. Small children, seeing something in their fathers' hands, often ask them for it, and if the fathers do not wish to give it, the children, not receiving what they ask for, begin to cry. In such a case, fathers usually hide the thing held in their hands and, showing the children their empty hands, restrain them from tears. So also the Lord, dealing with the apostles as with children, hid the last day from them. Otherwise, if He had said, \"I know, but I will not tell you,\" they would have been grieved that He did not wish to tell them. But that the Lord knows about the last day and hour is obvious, for He Himself created the ages. How then could He not know what He Himself created?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:hilary-poitiers:mark.13.32:ad0408fb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-9-58-62",
+      "title": "ON THE TRINITY 9.58-62 on mark 13:32",
+      "excerpt": "It is sometimes turned into a reproach against the only begotten God that he did not know the day and the hour. It is said that, though God, born of God, he is not in the perfection of divine nature, since he is subjected to the limitation of ignorance, namely, to an external force stronger than himself, triumphing, as it were, over his weakness. The heretics in their frenzy would try to drive us to this blasphemous interpretation: that he is thus captive to this external limitation, which makes such a confession inevitable. The words are those of the Lord himself. What could be more unholy, we ask, than to corrupt his express assertion by our attempt to explain it away? But, before we investigate the meaning and occasion of these words, let us first appeal to the judgment of common sense. Is it credible, that he, who stands to all things as the author of their present and future, should not know all things?… All that is derives from God alone its origin, and has in him alone the efficient cause of its present state and future development. Can anything be beyond the reach of his nature, through which is effected, and in which is contained, all that is and shall be? Jesus Christ knows the thoughts of the mind, as it is now, stirred by present motives, and as it will be tomorrow, aroused by the impulse of future desires.… Whenever God says that he does not know, he professes ignorance indeed, but is not under the defect of ignorance. It is not because of the infirmity of ignorance that he does not know, but because it is not yet the time to speak, or in the divine plan to act.… This knowledge is not, therefore, a change from ignorance, but the coming of a fullness of time. He waits still to know, but we cannot suppose that he does not know. Therefore his not knowing what he knows, and his knowing what he does not know, is nothing else than a divine economy in word and deed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-9-58-62",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:bede:mark.13.32:b13749e2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:32",
+      "excerpt": "However, of that day or hour no one knows, neither the angels in heaven, nor the Son, but only the Father. Arius and Eunomius rejoice as if the ignorance of the master is the glory of the disciples: and they say: \"He who knows and he who is ignorant cannot be equal.\" But since Jesus, that is, the Word of God, made all times (for all things were made by Him, and without Him nothing was made, and in all times the day of judgment must also be, can He who knows the whole, be ignorant of a part? Therefore, a reason must be given why He is said to be ignorant. The Apostle wrote concerning the Savior: \"In whom are hidden all the treasures of wisdom and knowledge\" (Colossians 2). Why hidden? After the resurrection, being questioned by the apostles about the day of judgment, He answered more clearly: \"It is not for you to know the times or the moments which the Father has set by His own authority\" (Acts 1). When He says, it is not for you to know, He shows that He Himself knows, but it is not expedient for the apostles to know, so that, always uncertain of the coming of the Judge, they may live daily as if they were to be judged that day. Furthermore, the subsequent discourse of the Gospel makes it clear. Also teaching that the Father alone knows, He includes the Son in the Father. For every father's name is of the son.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.13.32:50526153:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:register-of-epistles-book-10-epistle-39",
+      "title": "Register of Epistles, Book 10, Epistle 39 on mark 13:32",
+      "excerpt": "For, as we speak of a glad day, not meaning that the day itself is glad, but that it makes us glad, so also the Almighty Son says that He does not know the day which He causes not to be known; not that He Himself does not know it, but that He does not allow it to be known. Whence also the Father alone is said to know it, because the Son Who is consubstantial with Him has His knowledge of what the angels are ignorant of from His divine nature, whereby He is above the angels. Whence also it may be more nicely understood thus; that the Only-begotten, being incarnate and made for us a perfect man, knew indeed in the nature of His humanity the day and hour of the judgment, but still it was not from the nature of His humanity that He knew it. What then He knew in it He knew not from it, because God, made man, knew the day and hour of the judgment through the power of His Deity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:athanasius-the-great:mark.13.32:8e264e93:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:discourses-against-the-arians-3-46",
+      "title": "Discourses Against the Arians 3.46 on mark 13:32",
+      "excerpt": "When his disciples asked him about the end, he said with precision: Of that day or that hour no one knows, not even he himself—that is, when viewed according to the flesh, because he too, as human, lives within the limits of the human condition. He said this to show that, viewed as an ordinary man, he does not know the future, for ignorance of the future is characteristic of the human condition. Insofar as he is viewed according to his divinity as the Word who is to come, to judge, to be bridegroom, however, he knows when and in what hour he will come.… For as upon becoming human he hungers, thirsts and suffers, along with all human beings, similarly as human he does not see the future. But viewed according to his divinity as the Word and wisdom of the Father, he knows, and there is nothing which he does not know.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:mark.13.32:d47cb634:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:oration-30-on-the-son-second-oration-15",
+      "title": "ORATION 30, ON THE SON, SECOND ORATION 15 on mark 13:32",
+      "excerpt": "The last day and hour no one knows, not even the Son himself, but the Father. Yet how can the source of wisdom be ignorant of anything—that is, wisdom who made the world, who perfects all, who remodels all, who is the limit of all things that were made, who knows the things of God and the spirit of a person, knowing the things that lie deep within? For what can be more perfect than this knowledge? How then can you say that all things before that hour he knows accurately, and all things that are to happen about the time of the end, but of the hour itself he is ignorant? For such a thing would be like a riddle. It is as if one were to say that he knew accurately all that was in front of the wall, but did not know the wall itself. Or that, knowing the end of the day, he did not know the beginning of the night. Yet knowledge of the one necessarily implies the other. Thus everyone must see that the Son knows as God, and knows not as man (if we may for the purposes of argument distinguish that which is discerned by sight from that which is discerned by thought alone). For the absolute and unconditioned use of the name \"the Son\" in this passage, without the addition of whose Son, leads us to conclude: We are to understand the ignorance in the most reverent sense, by attributing it to his human nature, and not to the Godhead.",
+      "takeaway": "",
+      "sourceId": "hcf:source:oration-30-on-the-son-second-oration-15",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:mark.13.32:a95b810c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-2-28-6",
+      "title": "AGAINST HERESIES 2.28.6 on mark 13:32",
+      "excerpt": "The gnostics presumptuously assume acquaintance with the unspeakable mysteries of God. Remember that even the Lord, the very Son of God, allowed that the Father alone knows the very day and hour of judgment.… If then the Son was not ashamed to ascribe the knowledge of that day to the Father only, but declared what was true regarding the matter, neither let us be ashamed to reserve for God those enigmatic questions which come our way.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:mark.13.32"
     },
     {
       "id": "catena-mark-1101-v32",
@@ -193,6 +376,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:32–37",
       "excerpt": "He thus concludes His discourse, that the last should hear from those who come first this precept which is common to all; wherefore He adds, But what I say unto you I say unto all, Watch.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1097-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.32",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "For we must needs watch with our souls before the death of the body.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

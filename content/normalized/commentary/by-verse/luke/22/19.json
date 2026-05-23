@@ -4,6 +4,31 @@
   "verseNumber": 19,
   "entries": [
     {
+      "id": "catena-luke-3123-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.19",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:19–20",
+      "excerpt": "For this Blood moulds in us a royal image, it suffers not our nobleness of soul to waste away, moreover it refreshes the soul, and inspires it with great virtue. This Blood puts to flight the devils, summons angels, and the Lord of angels. This Blood poured forth washed the world, and made heaven open. They that partake of it are built up with heavenly virtues, and arrayed in the royal robes of Christ; yea rather clothed upon by the King Himself. And since if thou comest clean, thou comest healthfully; so if polluted by an evil conscience, thou comest to thy own destruction, to pain and…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.22.19:9a0ae195:0"
+      ]
+    },
+    {
       "id": "catena-luke-3117-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.19",
@@ -37,24 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3123-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.19",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:19–20",
-      "excerpt": "For this Blood moulds in us a royal image, it suffers not our nobleness of soul to waste away, moreover it refreshes the soul, and inspires it with great virtue. This Blood puts to flight the devils, summons angels, and the Lord of angels. This Blood poured forth washed the world, and made heaven open. They that partake of it are built up with heavenly virtues, and arrayed in the royal robes of Christ; yea rather clothed upon by the King Himself. And since if thou comest clean, thou comest healthfully; so if polluted by an evil conscience, thou comest to thy own destruction, to pain and…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.22.19:c36c1557:0"
       ]
     },
     {
@@ -73,6 +87,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-of-nyssa:luke.22.19:f59bf08d:0"
       ]
     },
     {
@@ -91,6 +112,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.22.19:110b8f45:0"
       ]
     },
     {
@@ -109,6 +137,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.22.19:3abe6708:0"
       ]
     },
     {
@@ -127,17 +162,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.19:b6f22dfa:0"
       ]
     },
     {
-      "id": "catena-luke-3120-v19",
+      "id": "catena-luke-3126-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.19",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:19–20",
-      "excerpt": "He gave to them, is here understood to complete the sentence.",
+      "excerpt": "For this reason then the Apostles communicated after supper, because it was necessary that the typical passover should be first completed, and then they should pass on to the Sacrament of the true Passover. But now in honour of so great a Sacrament, the masters of the Church think right that we should first be refreshed with the spiritual banquet, and afterward with the earthly.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -166,17 +208,60 @@
       ]
     },
     {
-      "id": "catena-luke-3126-v19",
+      "id": "catena-luke-3120-v19",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.19",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:19–20",
-      "excerpt": "For this reason then the Apostles communicated after supper, because it was necessary that the typical passover should be first completed, and then they should pass on to the Sacrament of the true Passover. But now in honour of so great a Sacrament, the masters of the Church think right that we should first be refreshed with the spiritual banquet, and afterward with the earthly.",
+      "excerpt": "He gave to them, is here understood to complete the sentence.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3122-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.19",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:19–20",
+      "excerpt": "Our Lord calls the cup the New Testament, as it follows, This cup is the New Testament in my blood, which shall be shed for you, signifying that the New Testament has its beginning in His blood. For in the Old Testament the blood of animals was present when the law was given, but now the blood of the Word of God signifies to us the New Testament. But when He says, for you, He does not mean that for the Apostles only was His Body given, and His Blood poured out, but for the sake of all mankind. And the old Passover was ordained to remove the slavery of Egypt; but the blood of the lamb to…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.19:43591935:0"
+      ]
+    },
+    {
+      "id": "catena-luke-3125-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.19",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:19–20",
+      "excerpt": "But first the bread is given, next the cup. For in spiritual things labour and action come first, that is, the bread, not only because it is toiled for by the sweat of the brow, but also because while being eaten it is not easy to swallow. Then after labour follows the rejoicing of Divine grace, which is the cup.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -202,40 +287,243 @@
       ]
     },
     {
-      "id": "catena-luke-3122-v19",
+      "id": "hcf:bede:luke.22.19:d4aedf32:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.22.19",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:19–20",
-      "excerpt": "Our Lord calls the cup the New Testament, as it follows, This cup is the New Testament in my blood, which shall be shed for you, signifying that the New Testament has its beginning in His blood. For in the Old Testament the blood of animals was present when the law was given, but now the blood of the Word of God signifies to us the New Testament. But when He says, for you, He does not mean that for the Apostles only was His Body given, and His Blood poured out, but for the sake of all mankind. And the old Passover was ordained to remove the slavery of Egypt; but the blood of the lamb to…",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:19",
+      "excerpt": "And having taken the bread, he gave thanks, and broke it, and gave it to them, saying: This is my body, which is given for you. Do this in remembrance of me. With the old solemnities of the Passover having been completed, which were celebrated in memory of the ancient liberation from Egypt, he moved to the new, which the Church desires to celebrate in memory of his redemption. That namely, instead of the flesh of the lamb or its blood, substituting the sacrament of his flesh and blood in the figure of bread and wine, he showed that he himself was the one to whom the Lord swore and will not repent, you are a priest forever, according to the order of Melchizedek (Psalm 109). He himself breaks the bread which he hands out, to show that the breaking of his body would not be without his own will, but, as he says elsewhere, he has the power to lay down his life and to take it up again. And just as he had acted to end the old, so also to begin the new he gave thanks to the Father, giving us at the same time an example that in every beginning or completion of a good work, the Father who is in heaven should be glorified. But what he says: Do this in remembrance of me, the apostle Paul explains. For when he set forth the words themselves saying: Do this in remembrance of me, this is my body which is broken for you, and again: This cup is the new testament in my blood, do this as often as you drink it, in remembrance of me, he added by explaining, and said: For as often as you eat this bread, and drink this cup, you proclaim the Lord's death until he comes. (I Cor. XI).",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
     },
     {
-      "id": "catena-luke-3125-v19",
+      "id": "hcf:basil-the-great:luke.22.19:39634786:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.22.19",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:the-morals-21",
+      "title": "THE MORALS 21 on luke 22:19",
+      "excerpt": "We should eat the body and drink the blood of the Lord as a commemoration of the Lord's obedience unto death. They who live might then no longer live for themselves but to him who died for them and rose again.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-morals-21",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.22.19:ad421bdf:1",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:19–20",
-      "excerpt": "But first the bread is given, next the cup. For in spiritual things labour and action come first, that is, the bread, not only because it is toiled for by the sweat of the brow, but also because while being eaten it is not easy to swallow. Then after labour follows the rejoicing of Divine grace, which is the cup.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:19",
+      "excerpt": "It seems that Luke mentions two cups. He speaks of one: \"Take this and divide it among yourselves\" (Luke 22:17), which one might call a figure of the Old Testament, and he speaks of the other after the breaking and distribution of the bread. The Lord Himself distributes it among the disciples, calls it the New Testament, and says that it is renewed in His Blood. By the words \"which is given for you\" and \"which is shed for you,\" He does not indicate that His Body was given and His Blood was shed for the apostles alone, but for the entire human race. Therefore, when He says that it is given \"for you,\" you should understand: for the entire human race.\r\nThe ancient Passover was celebrated for deliverance from Egyptian slavery, and the blood of the lamb was shed for the preservation of the firstborn; but the new Passover is for the remission of sins and for the preservation of thoughts dedicated and consecrated to God.\r\nFirst the bread is given, and then the cup. For first comes activity that is laborious and difficult to accomplish. Sweat precedes virtue, just as bread is not only cultivated by the sweat of one's brow, but also requires labor when consumed (Gen. 3:19). Then, after the labors, comes rejoicing from the grace of God, which is signified by the cup. For whoever labors in the difficult-to-accomplish virtue is afterwards deemed worthy of gifts and experiences a good intoxication, becoming detached from this world, like Paul and David, or, to speak even more boldly, like God in the prophet Habakkuk.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:augustine:luke.22.19:a9b4e625:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-227",
+      "title": "SERMON 227 on luke 22:19",
+      "excerpt": "You hold the sacraments in their order. First, after the prayer, you are admonished to lift up your hearts; this befits the members of Christ. For if you have become members of Christ, where is your head? Members have a head. If the head had not gone before, the members would not follow. Where did our head go? What did you recite in the Creed? On the third day, He rose again from the dead, He ascended into heaven, He sits at the right hand of the Father. Therefore, our head is in Heaven. Thus when it is said: Lift up your hearts, you answer: We have them with the Lord. And so that you do not attribute the fact that you have your hearts with the Lord to your own strengths, merits, or labors—for it is a gift of God to have your heart lifted up to Him—the bishop or the priest who offers the sacrifice continues and says—when the people respond: We have them with the Lord—: Let us give thanks to the Lord our God, because we have our hearts with the Lord. Let us give thanks because if he did not give it, we would have our hearts on earth. And you attest by saying: It is right and just, that we should give thanks to Him who made us have our hearts lifted up to our head. Then, after the sanctification of God's sacrifice, because he willed that we ourselves should be his sacrifice—this was shown when the first sacrifice of God was laid down and we—meaning the sign of the reality—which we are; behold where the sanctification has been accomplished, we say the Lord's Prayer, which you have received and rendered. After it has been said: Peace be with you, and the Christians give each other a holy kiss. It is a sign of peace: as the lips show, let it be done in conscience, that is, just as your lips approach your brother's lips, let your heart not depart from his heart. Great indeed are the sacraments and very great indeed. Do you wish to know how they are commended? The Apostle says: Whosoever shall eat of the body of Christ or drink of the cup of the Lord unworthily, shall be guilty of the body and blood of the Lord. What does it mean to receive unworthily? To receive it contemptuously, to receive it scoffingly. Do not make it seem cheap to you, because you see it. What you see passes away, but what is signified, the invisible, does not pass, but remains. Behold, it is received, eaten, consumed. Does the body of Christ perish? Does the Church of Christ perish? Do the members of Christ perish? By no means. Here they are cleansed, there they are crowned. Therefore, what is signified remains, even though that which signifies might seem to pass away.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.22.19:f21617ce:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 22:19",
+      "excerpt": "(Eutychius Patriarch.) He that communicates receives the whole Body and Blood of our Lord, even though he receive but a part of the Mysteries. For as one seal imparts the whole of its device to different substances, and yet remains entire after distribution, and as one word penetrates to the hearing of many, so there is no doubt that the Body and Blood of our Lord is received whole in all. But the breaking of the sacred bread signifies the Passion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.22.19:7244a85c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:apostolic-constitutions-book-viii-section-2-xii",
+      "title": "Apostolic Constitutions (Book VIII), Section 2, XII on luke 22:19",
+      "excerpt": "Being mindful, therefore, of those things that He endured for our sakes, we give You thanks, O God Almighty, not in such a manner as we ought, but as we are able, and fulfil His constitution: \"For in the same night that He was betrayed, He took bread\" [1 Corinthians 11:23] in His holy and undefiled hands, and, looking up to You His God and Father, \"He broke it, and gave it to His disciples, saying, This is the mystery of the new covenant: take of it, and eat. This is my body, which is broken for many, for the remission of sins.\" In like manner also \"He took the cup,\" and mixed it of wine and water, and sanctified it, and delivered it to them, saying: \"Drink all of this; for this is my blood which is shed for many, for the remission of sins: do this in remembrance of me. For as often as you eat this bread and drink this cup, you do show forth my death until I come.\" Being mindful, therefore, of His passion, and death, and resurrection from the dead, and return into the heavens, and His future second appearing, wherein He is to come with glory and power to judge the quick and the dead, and to recompense to every one according to his works, we offer to You, our King and our God, according to His constitution, this bread and this cup, giving You thanks, through Him, that You have thought us worthy to stand before You, and to sacrifice to You; and we beseech You that You will mercifully look down upon these gifts which are here set before You, O God, who standest in need of none of our offerings. And accept them, to the honour of Your Christ, and send down upon this sacrifice Your Holy Spirit, the Witness of the Lord Jesus' sufferings, that He may show this bread to be the body of Your Christ, and the cup to be the blood of Your Christ, that those who are partakers thereof may be strengthened for piety, may obtain the remission of their sins, may be delivered from the devil and his deceit, may be filled with the Holy Ghost, may be made worthy of Your Christ, and may obtain eternal life upon Your reconciliation to them, O Lord Almighty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.22.19:92412ab1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-5",
+      "title": "Constitutions of the Holy Apostles Book 5 on luke 22:19",
+      "excerpt": "For this reason do you also, now the Lord is risen, offer your sacrifice, concerning which He made a constitution by us, saying, \"Do this for a remembrance of me;\" and thenceforward leave off your fasting, and rejoice, and keep a festival, because Jesus Christ, the pledge of our resurrection, is risen from the dead. And let this be an everlasting ordinance till the consummation of the world, until the Lord come. For to Jews the Lord is still dead, but to Christians He is risen: to the former, by their unbelief; to the latter, by their full assurance of faith. For the hope in Him is immortal and eternal life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:athanasius-the-great:luke.22.19:0e8c8393:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:festal-letter-4",
+      "title": "FESTAL LETTER 4 on luke 22:19",
+      "excerpt": "Israel ate the meat of a dumb lamb to complete the Passover. Having done so, they smeared their doorposts with blood and laughed at the destroyer. We eat of the Word of the Father, the Son, our Savior. We have the lintels of our hearts sealed with the blood of the new covenant.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:hcf-desert-fathers:luke.22.19:1ed88c47:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-desert-fathers",
+      "workId": "hcf:work:hcf-desert-fathers:the-desert-fathers-sayings-of-the-early-christian-monks",
+      "title": "The Desert Fathers, Sayings of the Early Christian Monks on luke 22:19",
+      "excerpt": "Daniel the disciple of Arsenius used to talk also about a hermit in Scetis, saying that he was a great man but simple in the faith, and in his ignorance he thought and said that the bread which we receive is not in very truth the Body of Christ, but a symbol of His Body. Two of the monks heard what he said but because they knew of his sublime works and labours, they imagined that he had said it in innocence and simple-mindedness; and so they came to him and said unto him, 'Abba, someone told us something that we do not believe; he said that this bread that we receive is not in very truth the Body of Christ, but a mere symbol.' He said to them, 'I said that.' They begged him, saying, 'You mustn't say that, abba; according to what the Catholic Church has handed down to us, even so do we believe, that is to say, this bread is the Body of Christ in very truth, and is not a mere symbol. It is the same as when God took dust from the earth, and made man in His image; just as no one can say that he is not the image of God, so also with the bread of which He said, \"This is My Body\" is not to be regarded as a merely commemorative thing; we believe that it is indeed the Body of Christ.' The hermit said, 'Unless I can be convinced by the thing itself I will not listen to this.' Then the monks said to him, 'Let us pray to God all week about this mystery, and we believe that He will reveal the truth to us.' The hermit agreed to this with great joy, and each went to his cell. Then the hermit prayed, saying, 'O Lord, you know that it is not out of wickedness that I do not believe, so in order that I may not go astray through ignorance, reveal to me, Lord Jesus Christ, the truth of this mystery.' The other two brothers prayed to God and said, 'Lord Jesus Christ, give this hermit understanding about this mystery, and we believe that he will not be lost.' God heard the prayer of the two monks. When the week was over they came to the church, and the three of them sat down by themselves on one seat, the hermit between the other two. The eyes of their understanding were opened, and when the time of the mysteries arrived, and the bread was laid upon the holy table, there appeared to the three of them as it were a child on the table. Then the priest stretched out his hand to break the bread, and behold the angel of the Lord came down from heaven with a knife in his hand, and he killed the child and pressed out his blood into the cup. When the priest broke off from the bread small pieces, the hermit went forward to receive communion and a piece of living flesh smeared and dripping with blood was given to him. Now when he saw this he was afraid and he cried out loudly, saying, 'Lord, I believe that the bread is Your Body, and that the cup is Your Blood.' At once the flesh that was in his hand became bread, and he took it and gave thanks to God. The brothers said to him, 'God knows the nature of men, and that we are unable to eat living flesh, and so He turneth His Body into bread, and His Blood into wine for those who receive Him in faith.' Then they gave thanks to God for the hermit, because He had not let Satan destroy him, and the three of them went back to their cells joyfully.",
+      "takeaway": "",
+      "sourceId": "hcf:source:books-google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c500"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:hcf-didache:luke.22.19:1837b6cc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-didache",
+      "workId": "hcf:work:hcf-didache:the-didache-chapters-9-10",
+      "title": "The Didache, Chapters 9-10 on luke 22:19",
+      "excerpt": "Now concerning the Thanksgiving (Eucharist), thus give thanks. First, concerning the cup: We thank thee, our Father, for the holy vine of David Thy servant, which Thou madest known to us through Jesus Thy Servant; to Thee be the glory for ever. And concerning the broken bread: We thank Thee, our Father, for the life and knowledge which Thou modest known to us through Jesus Thy Servant; to Thee be the glory for ever. Even as this broken bread was scattered over the hills, and was gathered together and became one, so let Thy Church be gathered together from the ends of the earth into Thy kingdom; for Thine is the glory and the power through Jesus Christ for ever. But let no one eat or drink of your Thanksgiving (Eucharist), but they who have been baptized into the name of the Lord; for concerning this also the Lord hath said, Give not that which is holy to the dogs.\r\n\r\nBut after ye are filled, thus give thanks: We thank Thee, holy Father, for Thy holy name which Thou didst cause to tabernacle in our hearts, and for the knowledge and faith and immortality, which Thou modest known to us through Jesus Thy Servant; to Thee be the glory for ever. Thou, Master almighty, didst create all things for Thy name's sake; Thou gavest food and drink to men for enjoyment, that they might give thanks to Thee; but to us Thou didst freely give spiritual food and drink and life eternal through Thy Servant. Before all things we thank Thee that Thou art mighty; to Thee be the glory for ever. Remember, Lord, Thy Church, to deliver it from all evil and to make it perfect in Thy love, and gather it from the four winds, sanctified for Thy kingdom which Thou hast prepared for it; for Thine is the power and the glory for ever. Let grace come, and let this world pass away. Hosanna to the God (Son) of David! If any one is holy, let him come; if any one is not so, let him repent. Maran atha. Amen. But permit the prophets to make Thanksgiving as much as they desire.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:john-of-damascus:luke.22.19:078b14b7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-of-damascus",
+      "workId": "hcf:work:john-of-damascus:barlaam-and-joseph-19-165-66",
+      "title": "BARLAAM AND JOSEPH 19.165-66 on luke 22:19",
+      "excerpt": "Receive the communion of the spotless mysteries of Christ, believing in fact that they are the body and blood of Christ our God, which he gave to the faithful for the forgiveness of sins. On the same night when he was betrayed, he ordained a new covenant with his holy disciples and apostles and through them for all that should believe on him. He said, \" 'Take, eat, this is my body, which is broken for you, for the forgiveness of sins.' In the same way he also took the cup and gave it to them saying, 'Drink all of this. This is my blood of the new covenant, which is shed for you for the forgiveness of sins. Do this in memory of me.' \" He, the Word of God, is quick, powerful and working all things by his might. He makes and transforms the bread and wine of the sacrifice through his divine operation into his own body and blood, by the visitation of the Holy Spirit, for the sanctification and enlightenment of those who eagerly participate in it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:barlaam-and-joseph-19-165-66",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c749"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:justin-martyr:luke.22.19:02a596b5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "justin-martyr",
+      "workId": "hcf:work:justin-martyr:the-first-apology-chapter-lxvi",
+      "title": "The First Apology, Chapter LXVI on luke 22:19",
+      "excerpt": "For the apostles, in the memoirs composed by them, which are called Gospels, have thus delivered unto us what was enjoined upon them; that Jesus took bread, and when He had given thanks, said, \"This do ye in remembrance of Me, this is My body;\" and that, after the same manner, having taken the cup and given thanks, He said, \"This is My blood;\" and gave it to them alone.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c165"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:tertullian:luke.22.19:2e12eb97:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:a-treatise-on-the-soul",
+      "title": "A Treatise on the Soul on luke 22:19",
+      "excerpt": "We may not, I say, we may not call into question the truth of the (poor vilified) senses, lest we should even in Christ Himself, bring doubt upon the truth of their sensation; lest perchance it should be said that He did not really \"behold Satan as lightning fall from heaven; \" that He did not really hear the Father's voice testifying of Himself; or that He was deceived in touching Peter's wife's mother; or that the fragrance of the ointment which He afterwards smelled was different from that which He accepted for His burial; and that the taste of the wine was different from that which He consecrated in memory of His blood. On this false principle it was that Marcion actually chose to believe that He was a phantom, denying to Him the reality of a perfect body.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
+    },
+    {
+      "id": "hcf:tertullian:luke.22.19:d6cf8882:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 22:19",
+      "excerpt": "Then, having taken the bread and given it to His disciples, He made it His own body, by saying, \"This is my body,\" that is, the figure of my body.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.22.19"
     }
   ]
 }

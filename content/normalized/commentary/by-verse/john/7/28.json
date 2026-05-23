@@ -4,25 +4,6 @@
   "verseNumber": 28,
   "entries": [
     {
-      "id": "augustine-john-031-c7-v28",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.28",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 7:25–36",
-      "excerpt": "You remember, beloved, in the former discourses — for it was both read in the Gospel and also discussed by us according to our ability — how that the Lord Jesus went up to the feast-day, as it were in secret, not because He feared lest He should be laid hold of — He who had the power not to be laid hold of — but to signify that even in that very feast which was celebrated by the Jews He Himself was hidden, and that the mystery of the feast was His own. In the passage read today then, that which was supposed to be timidity appeared as power; for He spoke openly on the feast-day, so that the…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0961-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.28",
@@ -31,60 +12,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 7:25–30",
       "excerpt": "It was said above that, our Lord went up to the feast secretly, not because He feared being taken (for He had power to prevent it,) but to shew figuratively, that even in the very feast which the Jews celebrated, He was hid, and that it was His mystery. Now however the power appears, which was thought timidity: He spoke publicly at the feast, in so much that the multitude marvelled: They said some of them at Jerusalem, Is not this He, whom they seek to kill? but, lo, He speaketh boldly, and they say nothing to Him. They knew the fierceness with which He had been sought for; they marvelled at…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0962-v28",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.28",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:25–30",
-      "excerpt": "The Evangelist adds, from Jerusalem: for there had been the greatest display of miracles, and there the people were in the worst state, seeing the strongest proofs of His divinity, and yet willing to give up all to the judgment of their corrupt rulers. Was it not a great miracle, that those who raged for His life, now that they had Him in their grasp, became on a sudden quiet?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0963-v28",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.28",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:25–30",
-      "excerpt": "So, not fully understanding Christ’s power, they supposed that it was owing to the knowledge of the rulers that He was spared: Do the rulers know indeed that this is the very Christ?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0964-v28",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.7.28",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:25–30",
-      "excerpt": "But they do not follow the opinion of the rulers, but put forth another most perverse and absurd one; Howbeit we know this Man, whence He is; but when Christ cometh, no man knoweth whence He is.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -110,35 +37,43 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.7.28:88b75d5a:0"
       ]
     },
     {
-      "id": "catena-john-0966-v28",
+      "id": "augustine-john-031-c7-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.28",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 7:25–30",
-      "excerpt": "By which He discloses what was in their minds. I am not, He seems to say, of the number of those who have come without reason, but He is true that sent Me; and if He is true, He hath sent Me in truth; and therefore He who is sent must needs speak the truth. He then convicts them from their own assertions. For whereas they had said, When Christ cometh, no man knoweth whence He is, He shews that Christ did come from one whom they knew not, i. e. the Father. Wherefore He adds, Whom ye know not.",
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 7:25–36",
+      "excerpt": "You remember, beloved, in the former discourses — for it was both read in the Gospel and also discussed by us according to our ability — how that the Lord Jesus went up to the feast-day, as it were in secret, not because He feared lest He should be laid hold of — He who had the power not to be laid hold of — but to signify that even in that very feast which was celebrated by the Jews He Himself was hidden, and that the mystery of the feast was His own. In the passage read today then, that which was supposed to be timidity appeared as power; for He spoke openly on the feast-day, so that the…",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
+      "sourceId": "augustine-tractates-john-source",
       "rank": 85,
       "tags": [
-        "catena-aurea",
+        "augustine",
         "patristic",
+        "tractate",
         "john"
       ]
     },
     {
-      "id": "catena-john-0968-v28",
+      "id": "catena-john-0974-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.28",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 7:25–30",
-      "excerpt": "Or the ignorance, He here speaks of, is the ignorance of a bad life; as Paul saith, They profess that they know God, but in works they deny Him. (Tit. 1:16) Our Lord’s reproof is twofold: He first published what they were speaking secretly, crying out, in order to put them to shame.",
+      "excerpt": "That is, because He was not so pleased; for our Lord was not born subject to fate. Thou must not believe this even of thyself, much less of Him by Whom thou wert made. And if thine hour is in His will, is not His hour in His own will? His home then here does not mean the time that He was obliged to die, but the time that He deigned to be put to death.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -167,14 +102,14 @@
       ]
     },
     {
-      "id": "catena-john-0970-v28",
+      "id": "catena-john-0972-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.28",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 7:25–30",
-      "excerpt": "Which is impossible: for He that sent Me is true, and therefore He that is sent must be true likewise. He every where attributes the knowledge of the Father to Himself, as being from the Father: thus here, But I know Him, for I am from Him.",
+      "excerpt": "I am from Him, He says, i. e. as the Son from the Father: but that you see Me in the flesh is because He hath sent Me. Wherein understand not a difference of nature, but the authority of a father.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -185,14 +120,32 @@
       ]
     },
     {
-      "id": "catena-john-0972-v28",
+      "id": "catena-john-0963-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.28",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 7:25–30",
-      "excerpt": "I am from Him, He says, i. e. as the Son from the Father: but that you see Me in the flesh is because He hath sent Me. Wherein understand not a difference of nature, but the authority of a father.",
+      "excerpt": "So, not fully understanding Christ’s power, they supposed that it was owing to the knowledge of the rulers that He was spared: Do the rulers know indeed that this is the very Christ?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0966-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.28",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:25–30",
+      "excerpt": "By which He discloses what was in their minds. I am not, He seems to say, of the number of those who have come without reason, but He is true that sent Me; and if He is true, He hath sent Me in truth; and therefore He who is sent must needs speak the truth. He then convicts them from their own assertions. For whereas they had said, When Christ cometh, no man knoweth whence He is, He shews that Christ did come from one whom they knew not, i. e. the Father. Wherefore He adds, Whom ye know not.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -221,14 +174,68 @@
       ]
     },
     {
-      "id": "catena-john-0974-v28",
+      "id": "catena-john-0962-v28",
       "relation": "verse",
       "targetVerseId": "kjva:john.7.28",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 7:25–30",
-      "excerpt": "That is, because He was not so pleased; for our Lord was not born subject to fate. Thou must not believe this even of thyself, much less of Him by Whom thou wert made. And if thine hour is in His will, is not His hour in His own will? His home then here does not mean the time that He was obliged to die, but the time that He deigned to be put to death.",
+      "excerpt": "The Evangelist adds, from Jerusalem: for there had been the greatest display of miracles, and there the people were in the worst state, seeing the strongest proofs of His divinity, and yet willing to give up all to the judgment of their corrupt rulers. Was it not a great miracle, that those who raged for His life, now that they had Him in their grasp, became on a sudden quiet?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0968-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.28",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:25–30",
+      "excerpt": "Or the ignorance, He here speaks of, is the ignorance of a bad life; as Paul saith, They profess that they know God, but in works they deny Him. (Tit. 1:16) Our Lord’s reproof is twofold: He first published what they were speaking secretly, crying out, in order to put them to shame.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0970-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.28",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:25–30",
+      "excerpt": "Which is impossible: for He that sent Me is true, and therefore He that is sent must be true likewise. He every where attributes the knowledge of the Father to Himself, as being from the Father: thus here, But I know Him, for I am from Him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0964-v28",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.7.28",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 7:25–30",
+      "excerpt": "But they do not follow the opinion of the rulers, but put forth another most perverse and absurd one; Howbeit we know this Man, whence He is; but when Christ cometh, no man knoweth whence He is.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -254,6 +261,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:john.7.28:2bc6828c:1"
       ]
     },
     {
@@ -273,6 +287,159 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.7.28:561a3d42:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-31",
+      "title": "Tractates on John 31 on john 7:28",
+      "excerpt": "Hear, therefore, the word of the Lord, brethren; see how He confirmed to them both what they said, \"We know this man whence he is,\" and also what they said, \"When Christ cometh, no man knoweth whence He is. Then cried Christ in the temple, saying, Ye both know me, and ye know whence I am: and I am not come of myself, but He that sent me is true, whom ye know not.\" That is to say, ye both know me, and ye know me not; ye both know whence I am, and ye know not whence I am. Ye know whence I am: Jesus of Nazareth, whose parents also ye knew. For in this case, the birth of the Virgin alone was hidden, to whom, however, her husband was witness; for the same was able faithfully to declare this, who was also able as a husband to be jealous. Therefore, this birth of the Virgin excepted, they knew all that in Jesus pertains to man: His face was known, His country was known, His family was known; where He was born was to be known by inquiry. Rightly then did He say, \"Ye both know me, and ye know whence I am,\" according to the flesh and form of man which He bore; but according to His divinity, \"And I am not come of myself, but He that sent me is true, whom ye know not;\" but yet that ye may know Him, believe on Him whom He has sent, and ye will know Him. For, \"No man has seen God at any time, except the only-begotten Son, who is in the bosom of the Father, He hath declared Him:\" and, \"None knoweth the Father but the Son, and he to whom the Son wills to reveal Him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.7.28:c6605769:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-50",
+      "title": "Homily on the Gospel of John 50 on john 7:28",
+      "excerpt": "\"Ye both know Me, and ye know whence I am: and I am not come of Myself, but He that sent Me is true, whom ye know not.\" And again, \"If ye had known Me, ye should have known My Father also.\" How then saith He, that they both \"know Him,\" and \"whence He is,\" and then, \"that they neither know Him, nor the Father\"? He doth not contradict, (away with the thought,) but is very consistent with Himself. For He speaketh of a different kind of knowledge, when He saith, \"ye know not\"; as when He saith, \"The sons of Eli were wicked sons, they knew not the Lord\"; and again, \"Israel doth not know Me.\" So also Paul saith, \"They profess that they know God, but in works they deny Him.\" It is therefore possible, \"knowing,\" \"not to know.\" This then is what He saith: \"If ye know Me, ye know that I am the Son of God.\" For the \"whence I am\" doth not here denote place. As is clear from what followeth, \"I am not come of Myself, but He that sent Me is true, whom ye know not,\" referring here to the ignorance shown by their works.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.7.28:4e8ace50:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-50",
+      "title": "Homily on the Gospel of John 50 on john 7:28",
+      "excerpt": "\"I know Him,\" He saith, \"for I am from Him, and He hath sent Me.\" Seest thou how He continually seeketh to prove the, \"I am not come of Myself,\" and, \"He that sent Me is true,\" striving not to be thought an enemy of God? And observe how great is the profit of the humility of His words.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.7.28:3aab50ee:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-6-28",
+      "title": "ON THE TRINITY 6.28 on john 7:28",
+      "excerpt": "No one knows the Father; the Son often assures us of this. The reason why he says that no one knows him but himself is because he is from the Father. Is it, I ask, as the result of an act of creation or of a genuine birth that he is from him? If it is an act of creation, then all created things are from God. How then is it that none of them know the Father, when the Son says that the reason why he has this knowledge is that he is from him? If he is created, not born, we shall observe in him a resemblance to other beings who are from God. Since all, on this supposition, are from God, why is he not as ignorant of the Father as the others are? But if this knowledge of the Father is peculiar to him who is from the Father, must not this circumstance also be peculiar to him, that is, that he is from the Father? That is, must he not be the true Son born from the nature of God? For the reason why he alone knows God is because he alone is from God. You observe, then, a knowledge that is peculiar to himself, resulting from a birth that also is peculiar to himself. You recognize that it is not by an act of creative power but through a true birth that he is from the Father. And you realize that this is why he alone knows the Father who is unknown to all other beings that are from him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-6-28",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:hcf-apollinaris-of-laodicea:john.7.28:5ab7c216:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apollinaris-of-laodicea",
+      "workId": "hcf:work:hcf-apollinaris-of-laodicea:fragments-on-john-36",
+      "title": "FRAGMENTS ON JOHN 36 on john 7:28",
+      "excerpt": "The Lord introduces two opinions about himself: (1) that they know where he comes from, since his mother is Mary; and (2) that he has something they do not know, since he is and has come from God. Therefore, he would not be a presumptuous person or a self-appointed teacher but had rather arrived at his teaching because God the Father sent him. Moreover, God who had sent him was not known to them because they kept themselves as far apart as possible from the God of true knowledge inasmuch as they revolted from his purpose and deeds. It is quite reasonable that he would know the Father, since he himself was with him. One knows one's relatives and household best.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragments-on-john-36",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c382"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.7.28:d67a8c93:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 7:28",
+      "excerpt": "Jesus therefore cried teaching in the temple and saying, Ye both know Me and know whence I am.\r\n\r\nAs the men of Jerusalem were gently whispering those things one to another (for they durst not speak openly for fear of the Jews, as it is written) Christ again in God-befitting way receives knowledge of the things spoken. But since He was considering that it were fit to profit those men, He immediately shows the God-befitting Energy that is in Him, and clearly reveals to them that He has knowledge of all things. For He lifts up His cry on high, albeit before time not used to do so, and convicts them again of not having any certain understanding of the Divinely-inspired Scripture, and makes what is secret and has scarcely passed the mouth the basis of His Discourse. Next from those very things from which they foolishly supposed that they ought not to believe Him does He persuade them outright that they ought to believe: such is the pregnant meaning of what He says. Ye marvel (He says) and that most justly, that Power truly God-befitting is in Me, easily taming the purpose of the Jews, murderous though it be: for they seek to kill Me, as ye have truly and accurately remarked, and are putting forth all their diligence to that end. But (He says) when I should be fleeing, and getting Me as far off as possible from those who think it right to kill Me, I caring not a whit for their mad folly, on the contrary speak boldly and convict those who break the Law by not choosing to judge just judgment, and I suffer nothing at all. For they who of old were fierce forbear against their will, and this not the fruit of their own free choice, but the effect of My Authority. For I do not suffer them, although madly raging, and whetted unto inhuman wrath, to dare before the time their murderous purpose towards Me. At these things then (He saith) ye have been most reasonably astonished, and say that the rulers know of a truth that I am the Christ. And ye, following out suitable reasoning herein, turning away to the oracles of Divine Scripture, when ye ought rather to have been benefited therefrom, confirmed in your conception of Me, on the contrary ye were offended. For from your merely knowing whence I am, and of whom I am born, ye have decided (He saith) that I am not the Christ. Know therefore, that ye both know Me and know whence I am, that is the Divinely-inspired Scripture has given you both to know Me and whence I am. And not because ye know (may be) that I am of Nazareth or Bethlehem, and that I am born of a woman, ought ye therefore to admit the disease of unbelief; but from those things that are spoken of Me, and because of My Birth after the Flesh, ought ye the rather to advance to the apprehension of the Mysteries respecting Me, and |520 not to turn aside merely at a single voice of a Prophet, who is telling My Ineffable Generation from God the Father.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.7.28:b28782be:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-5",
+      "title": "Commentary on the Gospel of John, Book 5 on john 7:28",
+      "excerpt": "And of Myself I am not come, but He is true That sent Me.\r\n\r\nUnder the guise of defence He finds fault with the Jews who were insulting through long unbelief. With no slight skill then He composing His Discourse, by every means contrives not to seem to excite His hearers by any occasion to reasonable displeasure, but veiling His words in obscurity, He beguiles their excess of anger and draws off the edge of their passion. Why then (He says) do they, when I have often explained and openly cried out that I am sent by God the Father, still disbelieve, and because they know His Birth after the Flesh, say that He is not He Who was fore-heralded by the Law and fore-declared by the holy Prophets, and well nigh meet Him with the words: Thou utterest lies O Sir, coming to us, according to Thine Own Will, and dost Thou not blush feigning the Name of the Father? Repelling therefore this accusation of theirs as to this too, He mingles reproof with His defence, and most excellently says, Of Myself I am not come, but Se is True That sent Me. For it is your custom (He saith) O ye who dare all things with ease, and advance heedlessly to all, even the most heinous actions, sometimes to prophesy falsely, and though God hath not sent you, to say that ye are sent by God. But I am not like you, nor yet will I imitate your well-practised villany. I am not come of Myself, nor Mine Own messenger, like you, but I am come from Heaven: True is He That sent Me, not like your lie-loving sender, the devil, whose spirit ye receiving are bold too to prophesy falsely. True then is He That sent Me, but he that stirred you up to invent words from God, is not true. For he is a liar, and the father of liars. But that we shall find the Jews accustomed to prophesy lies, we shall see without any trouble from the words of the Prophets. For most plainly doth the Lord of all say of them, I sent not the prophets, yet they ran, I spake not to them, and they prophesied. And again in Jeremiah, The prophets prophesy lies in My Name, I sent them not and spake not to them and commanded them not; for visions and divinations and prophecies of their own heart do they prophesy unto you. The arrogant Jew then is reproved for this that he fastened upon Christ his own boldness against God, i. e., false prophecy. For the utter disbelief in Him Who cries that He is sent from God, even the Father, what else is it save openly to cry out, Thou prophesiest falsely, imitating our practices against ourselves?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.7.28:20661f12:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 7:28",
+      "excerpt": "Since they were saying that they knew Him, where He was from, with no other purpose than to show that He was from the earth and the son of a carpenter, He therefore leads them up to heaven, saying: \"You both know Me, and you know where I am from,\" that is, although out of your malice you conceal it, yet you know that I am from heaven. For if My Father is from there, it is evident that I Myself am also from there and that I was sent by the One Who is true. For the True One would not wish to send a deceiver and a liar. But you do not know the One Who sent Me, you do not acknowledge Him by your deeds. For even in knowledge there can be ignorance, as the Apostle Paul says: \"They profess that they know God, but in works they deny Him.\" (Titus 1:16) And you, Jews, do not know My Father because of your evil deeds and your exceedingly evil intention.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.7.28"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.7.28:7d6c39fe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 7:28",
+      "excerpt": "Then he shows his origin. First, he shows in what sense his origin is known, and in what sense it is not known; in the second place, he shows how we can acquire a knowledge of his origin (v 29). He does two things about the first. First, he shows what they knew about his origin; secondly, what they did not know about it (v 28b).\r\n\r\nThey did know the origin of Jesus; and so he says of Jesus that he cried out. Now a cry comes from some great emotion. Sometimes it indicates the upheaval of a soul in interior distress; and in this sense it does not apply to Christ: \"He will not cry out\" (Is 42:2); \"The words of the wise are heard in silence\" (Ecc 9:17). Sometimes it implies great devotion, as in, \"In my trouble I cried to the Lord\" (Ps 119:1). And sometimes, along with this, it signifies that what is to be said is important, as in, \"The Seraphim cried to each other and said: 'Holy, holy, holy, is the Lord God of hosts'\" (Is 6:3); and in, \"Does not wisdom cry out?\" (Prv 8:1). This is the way preachers are encouraged to cry out: \"Cry out, do not stop! Raise your voice like a trumpet\" (Is 58:1). This is the way Christ cried out here, teaching in the temple.\r\n\r\nAnd he said: You do indeed know me, according to appearances, and you know where I come from, that is, as to my bodily existence: \"After this he was seen on earth\" (Bar 3:38). For they knew that he was born from Mary in Bethlehem, and brought up in Nazareth; but they did not know about the virgin birth, and that he had been conceived through the Holy Spirit, as Augustine says. With the exception of the virgin birth, they knew everything about Jesus that pertained to his humanity.\r\n\r\nThey did not know his hidden origin; and so he says: And I have not come of my own accord. First, he gives his origin; and secondly, he shows that it is hidden from them.\r\n\r\nHis origin is from the Father, from eternity. And so he says: I have not come of my own accord, as if to say: Before I came into the world through my humanity, I existed according to my divinity: \"Before Abraham came to be, I am\" (below 8:58). For he could not have come unless he already was. And although I have come, I have not come of my own accord, because the Son is not of himself, but from the Father. \"I came from the Father and have come into the world\" (below 16:28). Indeed, his origin was foretold by the Father, who promised to send him: \"I beg you, O Lord, send him whom you are going to send\" (Ex 4:13); \"I will send them a Savior and a defender, to free them\" (Is 19:20). And so he says: the one who sent me is truthful, as if to say: I have not come from another but from him who promised and kept his promise, as he is truthful: \"God is truthful\" (Rom 3:4). Consequently, he teaches me to speak the truth, because I have been sent by one who is truthful. But they do not know this, because they do not know him who sent me; and so he says: whom you do not know.\r\n\r\nBut since every man, although born in a bodily condition, is from God, it seems that Christ could say that he is from God; and consequently, that they do know where he comes from. I answer, according to Hilary, that the Son is from God in a different way than others: for he is from God in such a way that he is also God; and so God is his consubstantial principle. But others are from God, but in such a way that they are not from him. Thus, it is not known where the Son is from because the nature from which he is, is not known. But where men are from is not unknown: for if something exists from nothing, where it is from cannot be unknown.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.7.28"
     }
   ]
 }

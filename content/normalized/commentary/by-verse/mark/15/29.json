@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.29:6e7a1347:1"
       ]
     },
     {
@@ -76,22 +83,38 @@
       ]
     },
     {
-      "id": "catena-mark-1327-v29",
+      "id": "hcf:theophylact-of-ohrid:mark.15.29:01fcf67a:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.15.29",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:29–32",
-      "excerpt": "The foal of Judah (Gen. 49:11.) has been tied to the vine, and his clothes dyed in the blood of the grape, and the kids tear the vine, blaspheming Christ, and wagging their heads. Wherefore it is said: And they that passed by railed on him, wagging their heads, and saying, Ah, thou that destroyest the temple.",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:29",
+      "excerpt": "\"Those passing by,\" that is, those passing along the road where the Lord was crucified, even they, says the Evangelist, blasphemed the Lord, reproaching Him as a deceiver.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.29"
+    },
+    {
+      "id": "hcf:cyril-of-jerusalem:mark.15.29:3fb7a69e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-jerusalem",
+      "workId": "hcf:work:cyril-of-jerusalem:catechetical-lecture-13-30",
+      "title": "Catechetical Lecture 13:30 on mark 15:29",
+      "excerpt": "Those who passed by wagged their heads, mocking the crucified, fulfilling the Scripture: \"When they see me, they shake their heads.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c386"
+      ],
+      "targetVerseId": "kjva:mark.15.29"
     },
     {
       "id": "catena-mark-1330-v29",
@@ -102,6 +125,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:29–32",
       "excerpt": "Afterwards they saw Him arise from the grave, though they would not believe that He could come down from the tree of the Cross. Where, O Jews, is your lack of faith? Your own selves I appeal to; your own selves I bring as judges. How much more wonderful is it that a dead man should arise, than that one yet living should choose to come down from the cross. Ye asked but small things, till greater should have come to pass; but your want of faith could not be healed by signs much greater than those for which you sought. Here all have gone out of the way, all are become abominable. (Ps. 14:4)…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.29:2d82fe1e:0"
+      ]
+    },
+    {
+      "id": "catena-mark-1327-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.29",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:29–32",
+      "excerpt": "The foal of Judah (Gen. 49:11.) has been tied to the vine, and his clothes dyed in the blood of the grape, and the kids tear the vine, blaspheming Christ, and wagging their heads. Wherefore it is said: And they that passed by railed on him, wagging their heads, and saying, Ah, thou that destroyest the temple.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

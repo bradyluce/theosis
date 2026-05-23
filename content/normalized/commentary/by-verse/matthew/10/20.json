@@ -4,6 +4,24 @@
   "verseNumber": 20,
   "entries": [
     {
+      "id": "catena-matt-1559-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.10.20",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 10:19–20",
+      "excerpt": "Thus He raises them to the dignity of the Prophets, who have spoken by the Spirit of God. He who says here, “Take no thought what ye shall speak,” 1 Pet 3:15 has said in another place, “Be ye always ready to give an answer to him that demandeth a reason of the hope that is in you.” When it is a dispute among friends, we are commanded to “be ready;” but before the awful judgment, and the raging people, aid is ministered by Christ, that they may speak boldly and not be dismayed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-1554-v20",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.20",
@@ -37,24 +55,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-1559-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.10.20",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 10:19–20",
-      "excerpt": "Thus He raises them to the dignity of the Prophets, who have spoken by the Spirit of God. He who says here, “Take no thought what ye shall speak,” 1 Pet 3:15 has said in another place, “Be ye always ready to give an answer to him that demandeth a reason of the hope that is in you.” When it is a dispute among friends, we are commanded to “be ready;” but before the awful judgment, and the raging people, aid is ministered by Christ, that they may speak boldly and not be dismayed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.10.20:7adbf499:0"
       ]
     },
     {
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.10.20:1fe343bc:0"
       ]
     },
     {
@@ -91,6 +105,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.10.20:70d22c81:0"
       ]
     },
     {
@@ -110,6 +131,108 @@
         "patristic",
         "matthew"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.10.20:89330f92:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-33",
+      "title": "Homily on the Gospel of Matthew 33 on matthew 10:20",
+      "excerpt": "And together with these, He adds another, and that no small consolation for them, saying,\r\n\r\n\"But when they deliver you up, take no thought how or what ye shall speak, for it shall be given you in that hour what ye shall speak. For it is not ye that speak, but the Spirit of your Father that speaketh in you.\"\r\n\r\nFor lest they should say, \"How shall we be able to persuade men, when such things are taking place?\" He bids them be confident as to their defense also. And elsewhere indeed He saith, \"I will give you a mouth and wisdom;\" but here, \"It is the Spirit of your Father that speaketh in you,\" advancing them unto the dignity of the prophets. Therefore, when He had spoken of the power that was given, then He added also the terrors, the murders, and the slaughters.\r\n\r\nFor this cause then, though He said, \"Take no thought what ye shall speak;\" yet elsewhere He saith, \"Be ready to give an answer to every man that asketh you a reason of the hope that is in you.\" That is, as long as the contest is among friends, He commands us also to take thought; but when there is a terrible tribunal, and frantic assemblies, and terrors on all sides, He bestows the influence from Himself, that they may take courage and speak out, and not be discouraged, nor betray the righteous cause.\r\n\r\nFor in truth it was a very great thing, for a man occupied about lakes, and skins, and receipt of custom, when tyrants were on their thrones, and satraps, and guards standing by them, and the swords drawn, and all standing on their side; to enter in alone, bound, hanging down his head, and yet be able to open his mouth. For indeed they allowed them neither speech nor defense with respect to their doctrines, but set about torturing them to death, as common pests of the world. For \"They,\" it is said, \"that have turned the world upside down, are come hither also;\" and again, \"They preach things contrary to the decrees of Caesar, saying that Jesus Christ is king.\" And everywhere the courts of justice were preoccupied by such suspicions, and much influence from above was needed, for their showing both the truth of the doctrine they preached, and that they are not violating the common laws; so that they should neither, while earnest to speak of the doctrine, fall under suspicion of overturning the laws; nor again, while earnest to show that they were not overturning the common government, corrupt the perfection of their doctrines: all which thou wilt see accomplished with all due consideration, both in Peter and in Paul, and in all the rest. Yea, and as rebels and innovators, and revolutionists, they were accused all over the world; yet nevertheless they both repelled this impression, and invested themselves with the contrary, all men celebrating them as saviors, and guardians, and benefactors. And all this they achieved by their much patience. Wherefore also Paul said, \"I die daily;\" and he continued to \"stand in jeopardy\" unto the end.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.10.20"
+    },
+    {
+      "id": "hcf:jerome:matthew.10.20:196a8edb:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:20",
+      "excerpt": "(Verse 19, 20.) But when they hand you over, do not worry about how or what you should say. For it will be given to you in that hour what you should say. For it is not you who speak, but the Spirit of your Father who speaks in you. Above, he said: For they will hand you over to councils and flog you in their synagogues, and you will be brought before governors and kings for my sake. Therefore, when we are brought before judges because of Christ, we should only offer our own will for Christ. Moreover, Christ himself, who dwells within us, will speak for himself, and the grace of the Holy Spirit will be ministered in answering.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.10.20"
+    },
+    {
+      "id": "hcf:augustine:matthew.10.20:0384c65d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-64a-2",
+      "title": "SERMON 64A.2 on matthew 10:20",
+      "excerpt": "To be sure, we heard in that reading, \"But when they deliver you up, do not be anxious how or what you are to speak … for it is not you who are speaking but the Spirit of your Father who speaks through you.\" And he says in another place: \"Behold, I am with you always, even to the end of the world.\" Does this mean that the people who heard those words of the Lord would be here until the end of the world? The Lord was referring, rather, not only to those about to depart from this life but also to the others, including us and those who would come after us in this life. He saw everyone in his single body, and the words he spoke, \"I am with you even to the end of the world,\" were heard by them and by us too. And if we did not hear them then in our knowledge, we heard them in his foreknowledge. Therefore, safe as sheep among the wolves, let us keep the commandments of him who directs us. And let us be \"innocent as doves but cautious as snakes.\" Innocent as doves that we may not harm anyone; cautious as snakes that we may be careful of letting anyone harm us.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.10.20"
+    },
+    {
+      "id": "hcf:gregory-the-great:matthew.10.20:22f65b16:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-35",
+      "title": "Forty Gospel Homilies, Homily 35 on matthew 10:20",
+      "excerpt": "\"For I will give you a mouth and wisdom, which all your adversaries will not be able to resist or contradict.\" As if He openly says to His weakening members: Do not be terrified, do not be afraid; you approach the contest, but I fight; you utter the words, but I am the one who speaks.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:matthew.10.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.10.20:603f81ce:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:20",
+      "excerpt": "\"But when they deliver you up, take no thought how or what ye shall speak: for it shall be given you in that same hour what ye shall speak. For it is not ye that speak, but the Spirit of your Father Which speaketh in you.\" So that the disciples might not ask, \"And how shall we who are ordinary people convince the wise?\" He bids them to take courage and not be anxious. For when we intend to converse with believers we must study beforehand and be ready to give an answer, as Peter exhorts us (I Peter 3:15). But when we are caught between the crowds and the raging kings, He promises His own strength, so that we may not be afraid. It is for us to confess, but it is God Who will enable us to answer wisely. So that you not imagine that skill in such defense is a natural one, He says, \"It is not ye that speak, but the Spirit.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.10.20"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.10.20:40584a04:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:20",
+      "excerpt": "But who is the author? Certainly the Holy Spirit, for it is not you who speak, but the Spirit of your Father speaking through you. Something like this is expressed by Paul in 2 Corinthians (13:3): \"Do you want proof that Christ is speaking in me?\" But does not this make them seem possessed? It should be noted that every action proceeding from two causes, one of which is the principal actor and the second instrumental, should be named from the more principal. But they were acting instrumentally, the Holy Spirit principally; therefore, the entire action should be named from the Holy Spirit. It is also well to consider that sometimes a spirit moves by disturbing the reason, sometimes by strengthening it. Hence this is the difference between a movement of the devil and of the Holy Spirit. For man is not master except through reason, by which he is free; hence when a man is not moved according to reason the movement is one of possession. When he is moved with reason, he is said to be moved by the Holy Spirit. For the movement by the devil disturbs reason. But the apostles, although moved by the Holy Spirit, retained their reason; therefore, they spoke from themselves and not as one possessed. Hence he brings them to prophetic truth, as it says in 2 Peter (1:19): \"We have the prophetic word made more sure.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.10.20"
     }
   ]
 }

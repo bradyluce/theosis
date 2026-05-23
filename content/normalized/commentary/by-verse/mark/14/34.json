@@ -73,7 +73,100 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.14.34:0d4c0d1f:1"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.14.34:16e12c77:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 14:34",
+      "excerpt": "Endure here, and keep watch. And when he had gone on a little further, he fell to the ground. What he commands, endure here, and keep watch, does not forbid sleep, whose time had not come with impending danger, but the sleep of infidelity and the numbness of the mind. And after giving them the command to endure and keep watch with him, proceeding a little further, he fell on his face and showed the humility of the mind through the habit of the flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.14.34"
+    },
+    {
+      "id": "hcf:bede:mark.14.34:064a2f05:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 14:34",
+      "excerpt": "He does not mean natural sleep by the sleep which He forbids, for the time of approaching danger did not allow of it, but the sleep of unfaithfulness, and the torpor of the mind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.14.34"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.14.34:d7831a21:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 14:34",
+      "excerpt": "The expression \"My soul is sorrowful unto death\" — some understand it thus: I grieve not because I must die, but because the Israelites — My own kinsmen — are crucifying Me, and for this they will be cast out from the Kingdom of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.14.34"
+    },
+    {
+      "id": "hcf:hilary-poitiers:mark.14.34:01bbe3c6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-10-36",
+      "title": "ON THE TRINITY 10.36 on mark 14:34",
+      "excerpt": "What is meant by \"sorrowful even unto death?\" It cannot mean the same as \"to be sorrowful because of death\"; for where there is sorrow because of death, it is the death that is the cause of the sadness. But a sadness even unto death implies that death is the completion, not the cause, of the sadness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-trinity-10-36",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:mark.14.34"
+    },
+    {
+      "id": "hcf:origen:mark.14.34:4368bee7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:on-first-principles-2-6-2",
+      "title": "ON FIRST PRINCIPLES 2.6.2 on mark 14:34",
+      "excerpt": "He was troubled, as we are told, in the hour of death, as he himself confesses when he says, \"My soul is sorrowful even unto death.\" He was finally led to that death which is considered the most shameful of all. On the third day he rose again. When, therefore, we see in him some things so human that they appear in no way to differ from the common frailty of mortals, and some things so divine that they are appropriate to nothing else but the primal and ineffable nature of deity, the human understanding with its own narrow limits is baffled, and struck with amazement at so mighty a wonder. It does not know which way to turn, what to hold to, or how to establish itself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:mark.14.34"
     },
     {
       "id": "catena-mark-1203-v34",
@@ -127,6 +220,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.14.34:e11838aa:0"
       ]
     }
   ]

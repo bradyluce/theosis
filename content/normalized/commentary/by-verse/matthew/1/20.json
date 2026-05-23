@@ -4,14 +4,14 @@
   "verseNumber": 20,
   "entries": [
     {
-      "id": "catena-matt-0116",
+      "id": "catena-matt-0130",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.1.20",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 1:20",
-      "excerpt": "Also observe the mercifulness of Joseph, that he imparted his suspicions to none, not even to her whom he suspected, but kept them within himself.",
+      "excerpt": "Or, The Angel appeared to Joseph when he was in this perplexity, that his wisdom might be apparent to Joseph, and that this49 might be a proof to him of those things that he spoke. For when he heard out of the mouth of the Angel those very things that he thought within himself, this was an undoubted proof, that he was a messenger from God, who alone knows the secrets of the heart. Also the account of the Evangelist is beyond suspicion, as he describes Joseph feeling all that a husband was likely to feel. The Virgin also by this was more removed from suspicion, in that her husband had felt…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -58,14 +58,14 @@
       ]
     },
     {
-      "id": "catena-matt-0126",
+      "id": "catena-matt-0116",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.1.20",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 1:20",
-      "excerpt": "But we are not to think that she ceased to be betrothed, because she is here called wife, since we know that this is the Scripture manner to call the man and woman, when espoused, husband and wife; and this is confirmed by that text in Deuteronomy, “If one finds a virgin that is betrothed to a man in the field, and offer violence to her, and lie with her, he shall die, because he hath humbled his neighbour’s wife.” Deut 22:25",
+      "excerpt": "Also observe the mercifulness of Joseph, that he imparted his suspicions to none, not even to her whom he suspected, but kept them within himself.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -94,14 +94,14 @@
       ]
     },
     {
-      "id": "catena-matt-0130",
+      "id": "catena-matt-0126",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.1.20",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 1:20",
-      "excerpt": "Or, The Angel appeared to Joseph when he was in this perplexity, that his wisdom might be apparent to Joseph, and that this49 might be a proof to him of those things that he spoke. For when he heard out of the mouth of the Angel those very things that he thought within himself, this was an undoubted proof, that he was a messenger from God, who alone knows the secrets of the heart. Also the account of the Evangelist is beyond suspicion, as he describes Joseph feeling all that a husband was likely to feel. The Virgin also by this was more removed from suspicion, in that her husband had felt…",
+      "excerpt": "But we are not to think that she ceased to be betrothed, because she is here called wife, since we know that this is the Scripture manner to call the man and woman, when espoused, husband and wife; and this is confirmed by that text in Deuteronomy, “If one finds a virgin that is betrothed to a man in the field, and offer violence to her, and lie with her, he shall die, because he hath humbled his neighbour’s wife.” Deut 22:25",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -109,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.1.20:836944ba:0"
       ]
     },
     {
@@ -127,24 +134,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0117",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.1.20",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 1:20",
-      "excerpt": "In this word “appeared” is conveyed the power of Him that did appear, allowing Himself to be seen where and how He pleases.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.1.20:304e240f:0"
       ]
     },
     {
@@ -156,6 +152,31 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 1:20",
       "excerpt": "Be not troubled that he calls her his wife; for she is not herein robbed of her virginity, but her wedlock is witnessed to, and the celebration of her marriage is declared.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:matthew.1.20:3d467030:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0117",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.1.20",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 1:20",
+      "excerpt": "In this word “appeared” is conveyed the power of Him that did appear, allowing Himself to be seen where and how He pleases.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 80,
@@ -181,6 +202,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:peter-chrysologus:matthew.1.20:a0423787:0"
       ]
     },
     {
@@ -199,6 +227,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.1.20:d520277f:0"
       ]
     },
     {
@@ -217,6 +252,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.1.20:56c65a6b:0"
       ]
     },
     {
@@ -231,6 +273,186 @@
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.1.20:71ac3157:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-4",
+      "title": "Homily on the Gospel of Matthew 4 on matthew 1:20",
+      "excerpt": "The matter then being in this state, and all at their wits' end, the angel comes to solve all their difficulties. But it is worth inquiring, why the angel did not speak sooner, before the husband had such thoughts: but, \"when he thought on it,\" not until then, he came; for it is said, \"While he thought on these things, the angel\" comes. And yet to her he declares the good tidings even before she conceived. And this again contains another difficulty; for even though the angel had not spoken, wherefore was the Virgin silent, who had been informed by the angel; and why, when she saw her betrothed husband in trouble, did she not put an end to his perplexity?\r\n\r\nWherefore then did not the angel speak before Joseph became troubled. For we must needs explain the former difficulty first. For what reason then did he not speak? Lest Joseph should be unbelieving, and the same happen to him as to Zacharias. For when the thing was visible, belief was thenceforth easy; but when it had not yet a beginning, it was not equally easy to receive his saying. For this reason the angel spake not at the first, and through the same cause the Virgin too held her peace. For she did not think to obtain credit with her betrothed husband, in declaring to him a thing unheard of, but rather that she should provoke him the more, as though she were cloking a sin that had been committed. Since if she herself, who was to receive so great a favor, is affected somewhat after the manner of man, and saith, \"How shall this be, seeing I know not a man?\" much more would he have doubted; and especially when hearing it from the woman who was under suspicion. Wherefore the Virgin saith nothing to him, but the angel, the time demanding it, presents himself to him.\r\n\r\nWhy then, it may be asked, did he not so in the Virgin's case also, and declare the good tidings to her after the conception? Lest she should be in agitation and great trouble. For it were likely that she, not knowing the certainty, might have even devised something amiss touching herself, and have gone on to strangle or to stab herself, not enduring the disgrace. For wondrous indeed was that Virgin, and Luke points out her excellency, saying, that when she heard the salutation, she did not straightway pour herself out, neither did she accept the saying, but \"was troubled,\" seeking \"what manner of salutation this might be.\" Now she who was of such perfect delicacy would even have been distracted with dismay at the thought of her shame, not expecting, by whatever she might say, to convince any one who should hear of it, but that what had happened was adultery. Therefore to prevent these things, the angel came before the conception. Besides that, it was meet that womb should be free from trouble which the Maker of all things entered; and the soul rid of all perturbation, which was thought worthy to become the minister of such mysteries. For these reasons He speaks to the Virgin before the conception, but to Joseph at the time of travail.\r\n\r\nAnd this many of the simpler sort, not understanding, have said there is a discordance; because Luke saith it was Mary to whom he declared the good tidings, but Matthew, that it was Joseph; not knowing that both took place. And this sort of thing it is necessary to bear in mind throughout the whole history; for in this way we shall solve many seeming discordances.\r\n\r\nThe angel then comes, when Joseph is troubled. For in addition to the causes mentioned, with a view also to the manifestation of his self-command, he defers his coming. But when the thing was on the point of taking place, then at last he presents himself. \"While he thought on these things, an angel appeareth to Joseph in a dream.\"\r\n\r\nSeest thou the mildness of the husband? So far from punishing, he did not even declare it to any one, no not even to her whom he suspected, but was thinking it over with himself, as aiming to conceal the cause even from the Virgin herself. For neither is it said that he was minded to \"cast her out,\" but to \"put her away,\" so very mild and gentle was the man. \"But while he is thinking on these things, the angel appeareth in a dream.\"\r\n\r\nAnd why not openly, as to the shepherds, and to Zacharias, and to the Virgin? The man was exceedingly full of faith, and needed not this vision. Whereas the Virgin, as having declared to her very exceeding good tidings, greater than to Zacharias, and this before the event, needed also a marvellous vision; and the shepherds, as being by disposition rather dull and clownish. But this man, after the conception, when his soul was actually possessed with that evil suspicion, and ready to exchange it for good hopes, if there appeared any one to guide that way, readily receives the revelation. Wherefore he hath the good tidings declared to him after his suspicion, that this selfsame thing might be to him a convincing proof of the things spoken. I mean, that the fact of his having mentioned it to no one, and his hearing the angel say the very things which he thought in his mind, this afforded him an unquestionable sign that one had come from God to say it. For to Him alone it belongs to know the secrets of the heart.\r\n\r\nMark only, what a number of results are here. The man's self-command is thoroughly shown; the word spoken in season contributes to his faith, and the history is freed from suspicion, in that it shows him to have felt what it was likely a husband would feel.\r\n\r\nHow then doth the angel assure him? Hear and marvel at the wisdom of his words. For being come he saith, \"Joseph, thou son of David, fear not to take unto thee Mary thy wife.\" He straightway puts him in mind of David, of whom the Christ was to spring, and he doth not suffer him to be greatly perturbed, by the title of his forefathers, reminding him of the promise made to the whole race. Else wherefore doth he call him \"Son of David\"?\r\n\r\n\"Fear not:\" and yet in another case God doeth not so, but when one was devising about a certain woman what he ought not, He spake the word more in a way of rebuke, and with a threat. And yet there too, the act was of ignorance, for not with knowledge did that person take Sarah; yet nevertheless He rebuked him: but here mildly. For exceeding great were the mysteries He was dispensing, and wide the interval between the two men; wherefore neither was there need of rebuke.\r\n\r\nBut by saying, \"fear not,\" he signifies him to have been afraid, lest he should give offense to God, as retaining an adulteress; since, if it had not been for this, he would not have even thought of casting her out. In all ways then he points out that the angel came from God, bringing forward and setting before him all, both what he thought to do, and what he felt in his mind.\r\n\r\nNow having mentioned her name, he stayed not at this, but added also, \"thy wife;\" whereas he would not have called her so, if she had been corrupted. And here he calls her that is espoused \"a wife;\" as indeed the Scripture is wont to call betrothed husbands sons-in-law even before marriage.\r\n\r\nBut what means, \"to take unto thee?\" To retain her in his house, for in intention she had been now put away by him. \"Her, being put away, do thou retain,\" saith he, \"as committed unto thee by God, not by her parents. And He commits her not for marriage; but to dwell with thee; and by my voice doth He commit her.\" Much as Christ Himself afterwards committed her to His disciple, so even now unto Joseph.\r\n\r\nThen having obscurely signified the matter in hand, he mentioned not the evil suspicion; but, in a manner more reverent and seemly, by telling the cause of travail he removed this also; implying that the very thing which had made him afraid, and for which he would have cast her out,-this very thing, I say, was a just cause why he should take her and retain her in his house. Thus more than entirely doing away with his distress. \"For she is not only free,\" saith he, \"from unlawful intercourse, but even above all nature is her conception. Not only therefore put away thy fear, but even rejoice more exceedingly, 'for that which is conceived in her is of the Holy Ghost.'\"\r\n\r\nA strange thing it was which he spake of, surpassing man's reason, and above all the laws of nature. How then is he to believe, to whom such tidings are altogether new? \"By the things that are past,\" saith he, \"by the revelations.\" For with this intent he laid open all things that were in his mind, what he felt, what he feared, what he was resolved to do;-that by these he might assure himself of this point.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "hcf:jerome:matthew.1.20:bc7c6d64:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 1:20",
+      "excerpt": "(Verse 20.) Joseph, son of David, do not be afraid to take Mary as your wife. For what is conceived in her is from the Holy Spirit. She will give birth to a son. And as we said before, the term 'spouses' is used for wives, as the book against Helvidius explains more fully. And an angel speaks to Joseph in a dream with gentle affection, to confirm the righteousness of his silence. It is also noteworthy that Joseph is said to be the son of David, in order to show that Mary is also from the line of David.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "hcf:hcf-chromatius-of-aquileia:matthew.1.20:6ab0cda2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-chromatius-of-aquileia",
+      "workId": "hcf:work:hcf-chromatius-of-aquileia:tractate-on-matthew-2-3-4-22",
+      "title": "TRACTATE ON MATTHEW 2.3-4.22 on matthew 1:20",
+      "excerpt": "While St. Joseph, yet uninformed of so great a mystery, wanted to put away Mary quietly, he was advised in a dream by an angel who said to him, \"Do not be afraid, Joseph, son of David, to take to you Mary your wife, for that which is begotten in her is of the Holy Spirit.\" St. Joseph is made aware of the heavenly mystery, lest he think otherwise about Mary's virginity. He is also made aware of this that he might exclude the evil of suspicion and receive the good of the mystery. The following words were said to him: \"Do not be afraid, Joseph, son of David, to take to you Mary your wife, for that which is begotten in her is of the Holy Spirit,\" so he might acknowledge the integrity of his fiancée and the virgin birth. It was not appropriate for so great a mystery to be revealed to anyone other than Joseph, who was known to be Mary's fiancé, and no reproach of sin was attached to his name. In fact, Joseph translated from Hebrew into Latin means \"beyond reproach.\" Notice here too the order of a mystery: The devil first spoke to Eve the virgin long ago, and then to a man, that he might administer to them the word of death. In the latter case, a holy angel first spoke to Mary and then to Joseph, that he might reveal to them the word of life. In the former case, a woman was chosen unto sin; in the latter case, she was chosen unto salvation. In the former case, the man fell through the woman; in the latter case, he rose through the virgin. The angel therefore said to Joseph, \"Do not be afraid, Joseph, son of David, to take to you Mary your wife, for that which is begotten in her is of the Holy Spirit.\"And he added, \"She shall bring forth a son, and you shall call his name Jesus, for he shall save his people from their sins.\" But this name of Lord which was given to Jesus from the virgin's womb is not new to him but old. For Jesus translated from Hebrew into Latin means \"Savior.\" This name is agreeable to God because he says through the prophet: \"Just God and a Savior; there is none beside me.\" Lastly, when the Lord himself would speak through Isaiah about the bodily origin of his nativity, he says, \"The Lord called me from the womb, from the body of my mother he named my name.\" His name is certainly not strange, for Jesus was called according to the flesh (i.e., Savior, who was a Savior according to divinity). For Jesus, as we said, is rendered as \"Savior.\" This is what he said through the prophet: \"From the body of my mother he named my name.\" And that he might more fully show us the sacrament of his incarnation, he went on to say, \"He made my mouth like a sharp sword … he made me a polished arrow, in his quiver he hid me away.\" By the arrow he signified his divinity; by the quiver he assumed a body from the Virgin in which his divinity was covered with a garment of flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-matthew-2-3-4-22",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c406"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:matthew.1.20:d2babf13:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iii-chapter-21-section-4",
+      "title": "Against Heresies (Book III, Chapter 21), Section 4 on matthew 1:20",
+      "excerpt": "For the one and the same Spirit of God, who proclaimed by the prophets what and of what sort the advent of the Lord should be, did by these elders give a just interpretation of what had been truly prophesied; and He did Himself, by the apostles, announce that the fullness of the times of the adoption had arrived, that the kingdom of heaven had drawn near, and that He was dwelling within those that believe in Him who was born Emmanuel of the Virgin. To this effect they testify, [saying,] that before Joseph had come together with Mary, while she therefore remained in virginity, \"she was found with child of the Holy Ghost;\" [Matthew 1:18] and that the angel Gabriel said to her, \"The Holy Ghost shall come upon you, and the power of the Highest shall overshadow you; therefore also that holy thing which shall be born of you shall be called the Son of God;\" [Luke 1:35] and that the angel said to Joseph in a dream, \"Now this was done, that it might be fulfilled which was spoken by Isaiah the prophet, Behold, a virgin shall be with child.\" [Matthew 1:23] But the elders have thus interpreted what Esaias said: \"And the Lord, moreover, said to Ahaz, Ask for yourself a sign from the Lord your God out of the depth below, or from the height above. And Ahaz said, I will not ask, and I will not tempt the Lord. And he said, It is not a small thing for you to weary men; and how does the Lord weary them? Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son; and you shall call His name Emmanuel. Butter and honey shall He eat: before He knows or chooses out things that are evil, He shall exchange them for what is good; for before the child knows good or evil, He shall not consent to evil, that He may choose that which is good.\" [Isaiah 7:10-17] Carefully, then, has the Holy Ghost pointed out, by what has been said, His birth from a virgin, and His essence, that He is God (for the name Emmanuel indicates this). And He shows that He is a man, when He says, \"Butter and honey shall He eat;\" and in that He terms Him a child also, [in saying,] \"before He knows good and evil;\" for these are all the tokens of a human infant. But that He \"will not consent to evil, that He may choose that which is good,\"— this is proper to God; that by the fact, that He shall eat butter and honey, we should not understand that He is a mere man only, nor, on the other hand, from the name Emmanuel, should suspect Him to be God without flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "hcf:pseudo-augustine:matthew.1.20:75f509cf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "pseudo-augustine",
+      "workId": "hcf:work:pseudo-augustine:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 1:20",
+      "excerpt": "(Serm. in App. 195.) Yet though Joseph think on these things, let not Mary the daughter of David be troubled; as the word of the Prophet brought pardon to David, so the Angel of the Saviour delivers Mary. Behold, again appears Gabriel the bridesman of this Virgin; as it follows, Behold the Angel of the Lord appeared to Joseph.\r\n\r\n(Hil. Quæst. N. et V. Test. qu. 52.) But if Christ was born by the agency of the Holy Ghost, how is that said, Wisdom hath built herself an house? (Prov. 9:1.) That house may be taken in two meanings. First, the house of Christ is the Church, which He built with His own blood; and secondly, His body may be called His house, as it is called His temple. But the work of the Holy Spirit, is also the work of the Son of God, because of the unity of their nature and their will; for whether it be the Father, or the Son, or the Holy Spirit, that doeth it, it is the Trinity that works, and what the Three do, is of One God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "hcf:tertullian:matthew.1.20:5cce811b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-flesh-of-christ",
+      "title": "On the Flesh of Christ on matthew 1:20",
+      "excerpt": "But to what shifts you resort, in your attempt to rob the syllable ex (of) of its proper force as a preposition, and to substitute another for it in a sense not found throughout the Holy Scriptures! You say that He was born through a virgin, not of a virgin, and in a womb, not of a womb, because the angel in the dream said to Joseph, \"That which is born in her\" (not of her) \"is of the Holy Ghost.\" But the fact is, if he had meant \"of her,\" he must have said \"in her; \"for that which was of her, was also in her. The angel's expression, therefore, \"in her,\" has precisely the same meaning as the phrase \"of her.\" It is, however, a fortunate circumstance that Matthew also, when tracing down the Lord's descent from Abraham to Mary, says, \"Jacob begat Joseph the husband of Mary, of whom was born Christ.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.1.20:13b8a8d3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 1:20",
+      "excerpt": "But while he pondered these things, behold, the angel of the Lord appeared unto him in a dream, saying. When the righteous one was uncertain, then the angel appeared in order to show him what to do. The angel appeared to him in a dream, because Joseph had great faith. With the shepherds the angel conversed openly, as they were rough country men; but the angel spoke to Joseph, who was righteous and believing, in his sleep. How could Joseph not believe, when the angel spoke to him of matters that were in his mind and that he had not revealed to anyone? For it says, \"while he pondered,\" but did not speak of, these things, the angel appeared to him. It was right that he believed the angel to be of God, for it is the attribute of God to know the things that are unspoken. Joseph son of David. The angel called him \"son of David\" to remind him that the prophets had foretold that the Christ would come from the seed of David. It is as if the angel were saying to him, \"Do not doubt, but remember David who received the promise concerning Christ.\" Fear not to take unto thee. Here he shows that Joseph was afraid to keep her, lest he spurn God by harboring an adulteress. Or, in another sense, \"Fear not,\" that is, \"Though you fear to touch her who has conceived of the Holy Spirit, do not fear to take her unto thee, that is, to keep her within your house.\" For in his thoughts and deliberations he had already divorced her. Mary thy wife. This means, you perhaps think that she is an adulteress. But I say to you that she is your wife, that is, she has not been corrupted by anyone, but she is your own betrothed. For that which is conceived in her is of the Holy Spirit. Not only is she acquitted of any unlawful union, but she has conceived in some divine and wondrous manner. Therefore you ought rather to rejoice because of this.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.1.20:4163693b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 1:20",
+      "excerpt": "But as he considered this... Here we are introduced to the person revealing, and three things are mentioned: first, the time; secondly, the person revealing is introduced; thirdly, the manner of the revelation is expressed.\r\n\r\nHe says, therefore: But as he considered this, i.e., while he was revolving these things in his mind, behold, an angel of the Lord appeared. Note that two things are commended about Joseph here, namely, wisdom and kindness. Wisdom, indeed, in the fact that he deliberated before he acted: \"Take heed to the path of your feet\" (Pr 4:26), i.e., do nothing without the judgment and deliberation of reason. There was kindness in his not divulging her deed: this is the opposite of many who want to make public at once whatever they have in their heart: \"A man without self-control in speaking is like a city broken into and left without walls\" (Pr 25:28). Therefore, he deserved to be instructed or consoled. Hence, he continues: behold, an angel of the Lord appeared, as though God's help was before his eyes: \"The Lord is a helper in prosperity and in adversity\" (Ps 9:10); \"For, behold, God helps me, and the Lord defends my soul\" (Ps 53:6).\r\n\r\nAn angel of the Lord: for nothing was better able to bring relief than one who knew that virginity had been preserved. Hence, the same angel sent to Mary was being sent to Joseph: \"The angel of the Lord encamps around those who fear him\" (Ps 34:7), i.e., Mary and Joseph, to free her from infamy and that Joseph not put her away in his disquiet.\r\n\r\nBut here the question arises why the revelation was not made to Joseph in the beginning, before he became so disturbed? Also, why did not Mary reveal to him the angelic announcement, which had been made to her? The answer to the first is that he did this to make his testimony more credible. For just as the Lord permitted the apostle Thomas to doubt his resurrection, so that while doubting he would feel, and feeling he would believe, and believing would remove the wound of unbelief in us, so the Lord permitted Joseph to doubt Mary's purity, so that while doubting, he would receive the revelation from the angel and, after receiving it, believe more firmly. The answer to the second is that if Mary had told him, he would not have believed.\r\n\r\nAppeared to him in a dream. Behold the manner of the revelation. Note that, properly speaking, to appear is concerned with that which of its nature is invisible, yet it is in its power to be seen such as God or angels. For things whose nature is to be seen will not, properly speaking, be said to appear. Hence, it is called a divine apparition or angelic. Therefore, it is in the proper sense that \"he appeared in a dream.\" But why in a dream? The reason is presented in a Gloss: because Joseph was somewhat doubtful. Hence, he was in a certain sense sleeping; and therefore, it is correct to say that the angel appeared to him in sleep. For as the Apostle says: \"Prophecy has been given for believers, signs for unbelievers\" (1 Cor 14:22). Properly speaking, a prophetic revelation occurs during sleep: \"If there is a prophet of the Lord among you, I, the Lord, make myself known to him in a vision. I speak with him in a dream\" (Num 12:6). Therefore, because Joseph was just and faithful, an appearance should have been made to him as to one faithful, namely, a revelation, as it were, prophetic. But because a bodily appearance is miraculous, such an appearance was not suited to him, since he believed and was faithful.\r\n\r\nBut then why was a visible appearance made to Mary, since she was most faithful? The answer is that the mystery of the Incarnation was revealed from its beginning, when it was more difficult to believe; therefore, it is fitting that a visible appearance be made to her. But it was not revealed to Joseph from its beginning but rather when it had been for the most part fulfilled, since he already saw her womb enlarged. Hence, he could believe more easily; and therefore, the appearance made in sleep was enough.\r\n\r\nJoseph, son of David. Here the words of the revelation are presented. And it is divided into three parts in keeping with the three things the angel does. For, first of all, he forbids Mary and Joseph to divorce; secondly, he discloses the mystery of the Incarnation: that which is conceived in her...; thirdly, he foretells the devotedness Joseph would show to the child: she will bear a son.\r\n\r\nHe says, therefore, Joseph. He calls him and draws his attention, so that he will listen, and to recall him to himself. This is common in Scripture, namely, that when an appearance which concerns higher things is about to occur, it requires in the hearer a certain elevation and attention of the mind: \"Son of man, stand upon your feet and I will speak with you\" (Ez 2:11); and in (2:8): \"I will take my stand to watch\" (Heb 2:1). Son of David. Therefore, he expresses his lineage, to avoid what Isaiah (7:13) says: \"Hear then, O house of David. Is it too little for you to weary men, that you weary my God also?\" For the sign was not given to one person but to a whole tribe or house. Hence, because he had to instruct him about this, he is commanded in the expression of his lineage to fix the prophet's prediction in his memory. Do not fear. Every appearance, whether it be of a good or bad angel, causes some fear; and this, because such an appearance is extraordinary and, as it were, foreign to man's nature. Therefore, in a way, it puts a man outside himself. But in this there is a difference: because the appearance of an evil angel strikes terror, and he leaves a man in that terror, in order more easily to lead into sin a man put, as it were, outside himself. But the appearance of a good angel, although it produces terror, it ends at once and consolation is obtained, in order that the man may return to himself and understand what is being said to him. Hence, Luke (c. 1) says that an angel appeared to Zechariah and immediately adds: \"Fear not, Zechariah\" (1:13), and in (1:30): \"Fear not, Mary.\" Hence, after the appearance to Joseph, consolation follows immediately. But he has two fears, namely, of God and of sin, i.e., that by living with Mary he was aware of sin; and therefore, Do not be afraid, namely, without sin, to take Mary, your wife. Note that she is called wife, not because of marriage but because of espousal. For it is the custom in Scripture to call espoused persons married and married persons espoused.\r\n\r\nBut why is he commanded to accept her, since he had not yet put her away? The answer is that although he had not put her away bodily, he had put her away in his attitude. And that is why he is commanded to accept her. Or fear not to accept her as to the solemnities and celebration of marriage.\r\n\r\nThat which is conceived in her is of the Holy Spirit. Here the mystery of the Incarnation is presented. And note that whereas there were three there; namely, the Virgin conceiving, the Son of God conceived, and the power of the Holy Spirit, the angel mentions two of them; namely, the one conceiving and the author of the conception. But the third, namely, the Son of God conceived, he only expresses indefinitely: that which is conceived in her. This suggests that he is ineffable and incomprehensible not only to men but also to angels. He says, that which is born in her, not \"of her,\" because to be born of a woman is to come forth into the light; to be born in a mother is for the child to be conceived. Is of the Holy Spirit. This therefore, is the angel's testimony, which the Evangelist advances to prove what he had said above: she was found with child of the Holy Spirit.\r\n\r\nNote that in the case of other women, when they conceive, a formative power is resident in the male seed. It is by this power that the fetus is formed and grows in the mother's womb. But the power of the Holy Spirit supplied this; therefore, the saints sometimes say that the Holy Spirit was there in place of the seed; sometimes it is said that there was no seed there at all. The answer is that in the male seed are two things: the bodily substance, that descends from the body of the male, and the formative power. Therefore, one must say that the Holy Spirit was there for the seed as to its formative power, but he was not there for the seed as to its bodily substance. For the body of Christ or his conception came to be not from the substance of the Holy Spirit. Therefore, it is clear that the Holy Spirit cannot be called the father of Christ, because he is not so either according to his human nature or his divine nature: not according to the divine, because, although Christ is of the same nature and glory as the Holy Spirit, the Son receives nothing according to this divine nature from the Holy Spirit. Therefore, he cannot be called his Son, for a son receives something from his father. Nor according to his human nature, because the father and the son must agree in nature; but Christ, although he was conceived by the power of the Holy Spirit, was not of the substance of the Holy Spirit.\r\n\r\nBut on the other hand, when it says, of the Holy Spirit, it is the same as what Pr (9:1) says: \"Wisdom built herself a home.\" Therefore, it seems that divine wisdom itself, i.e., the Son of God, united the human nature to himself. Consequently, it was not done by the power of the Holy Spirit. There are two answers to this, according to Augustine: first, that the passage in Proverbs is understood of the Church which Christ founded in his blood. The second is that the works of the Trinity are undivided; and therefore, what the Son does, the Holy Spirit also does. But yet by a certain appropriation it is attributed to the Holy Spirit. The reason for this has been explained above.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.1.20"
+    },
+    {
+      "id": "catena-matt-0131",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.1.20",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 1:20",
+      "excerpt": "To be “born in her,” and “born of her,” are two different things; to be born of her is to come into the world; to be born in her, is the same as to be conceived. Or the word, “born,” is used according to the foreknowledge of the Angel which he has of God, to whom the future is as the past.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.1.20:6c9fcf28:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0120",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.1.20",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 1:20",
+      "excerpt": "The Angel appearing calls him by name, and adds his descent, in order to banish fear, “Joseph, son of David;” Joseph, as though he were known to him by name and his familiar friend.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -256,32 +478,14 @@
       ]
     },
     {
-      "id": "catena-matt-0120",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.1.20",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 1:20",
-      "excerpt": "The Angel appearing calls him by name, and adds his descent, in order to banish fear, “Joseph, son of David;” Joseph, as though he were known to him by name and his familiar friend.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0121",
+      "id": "catena-matt-0129",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.1.20",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 1:20",
-      "excerpt": "By addressing him as son of David, he sought to recall to his memory the promise of God to David, that of48 his seed should Christ be born.",
+      "excerpt": "There were three reasons why the Angel appeared to Joseph with this message. First, that a just man might not be led into an unjust action, with just intentions. Secondly, for the honour of the mother herself, for had she been put away, she could not have been free from evil suspicion among the unbelievers. Thirdly, that Joseph, understanding the holy conception, might keep himself from her with more care than before. He did not appear to Joseph before the conception, that he should not think those things that Zacharias thought, nor suffer what he suffered in falling into the sin of unbelief…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -289,6 +493,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.1.20:6e222ade:0"
       ]
     },
     {
@@ -310,32 +521,14 @@
       ]
     },
     {
-      "id": "catena-matt-0129",
+      "id": "catena-matt-0121",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.1.20",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 1:20",
-      "excerpt": "There were three reasons why the Angel appeared to Joseph with this message. First, that a just man might not be led into an unjust action, with just intentions. Secondly, for the honour of the mother herself, for had she been put away, she could not have been free from evil suspicion among the unbelievers. Thirdly, that Joseph, understanding the holy conception, might keep himself from her with more care than before. He did not appear to Joseph before the conception, that he should not think those things that Zacharias thought, nor suffer what he suffered in falling into the sin of unbelief…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0131",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.1.20",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 1:20",
-      "excerpt": "To be “born in her,” and “born of her,” are two different things; to be born of her is to come into the world; to be born in her, is the same as to be conceived. Or the word, “born,” is used according to the foreknowledge of the Angel which he has of God, to whom the future is as the past.",
+      "excerpt": "By addressing him as son of David, he sought to recall to his memory the promise of God to David, that of48 his seed should Christ be born.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

@@ -91,6 +91,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.11.34:46cfec68:0"
       ]
     },
     {
@@ -148,24 +155,6 @@
       ]
     },
     {
-      "id": "catena-luke-1857-v34",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.34",
-      "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:33–36",
-      "excerpt": "For He gives the name of the eye especially to our understanding, but the whole soul, although not corporeal, He metaphorically calls the body. For the whole soul is enlightened by the understanding.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1858-v34",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.34",
@@ -181,6 +170,56 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.11.34:da3ccd03:1"
+      ]
+    },
+    {
+      "id": "catena-luke-1861-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.34",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:33–36",
+      "excerpt": "That is, If thy material body, when the light of a candle shines upon it, is made full of light, so that not one of thy members is any longer in darkness; much more when thou sinnest not, shall thy whole spiritual body be so full of light, that its brightness may be compared to the shining of a candle, while the light which was in the body, and which used to be darkness, is directed whithersoever the understanding may command.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1857-v34",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.34",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:33–36",
+      "excerpt": "For He gives the name of the eye especially to our understanding, but the whole soul, although not corporeal, He metaphorically calls the body. For the whole soul is enlightened by the understanding.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.11.34:e7d6ddfc:0"
       ]
     },
     {
@@ -202,22 +241,108 @@
       ]
     },
     {
-      "id": "catena-luke-1861-v34",
+      "id": "hcf:bede:luke.11.34:d55f4291:1",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.11.34",
       "topicSlugs": [],
-      "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:33–36",
-      "excerpt": "That is, If thy material body, when the light of a candle shines upon it, is made full of light, so that not one of thy members is any longer in darkness; much more when thou sinnest not, shall thy whole spiritual body be so full of light, that its brightness may be compared to the shining of a candle, while the light which was in the body, and which used to be darkness, is directed whithersoever the understanding may command.",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:34",
+      "excerpt": "If your eye is simple, your whole body will be full of light. But if it is evil, your body also will be full of darkness. He said, if you strive to do good with a pure and upright intention, the works that you do are indeed works of light, even if they seem to have some imperfection in the sight of men. Because for those who love God, all things work together for good, for those who are called according to His purpose. But if the preceding intention is perverse, every work that follows is of little value, even if it seems to be correct.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.34"
+    },
+    {
+      "id": "hcf:bede:luke.11.34:71686627:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:34",
+      "excerpt": "The lamp of your body is your eye. By body, He means the works that appear openly to all; indeed, the eye itself performs the intention of the mind, and by its merit, these works are discerned as works of light or darkness, as He Himself subsequently explained, saying:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.34"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.34:cbb11300:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:34",
+      "excerpt": "But you, Pharisees, did not wish to do this, and the eye of the soul, that is, the mind, which was until now straight, you have twisted and darkened. For just as the eye of the body, whatever it is like, makes the body the same — for example, if it is clear, then the body is also light, and if it is dark, then the body is also gloomy — so too the soul is disposed according to the state of the mind. If the eye and the light received by it from God begin to be darkened by envy or covetousness, or to speak generally, by love for material things, then the soul too is darkened.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.34"
+    },
+    {
+      "id": "hcf:augustine:luke.11.34:322d9ff9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 11:34",
+      "excerpt": "(de Cons. Ev. lib. ii. c. 39.) Luke indeed relates this in the same place as Matthew, but in a somewhat different order. But who does not see that it is an idle question, in what order our Lord said those things, seeing that we ought to learn by the most precious authority of the Evangelist, that there is no falsehood. But not every man will repeat another's words in the same order in which they proceeded from his mouth, seeing that the order itself makes no difference with respect to the fact, whether it be so or not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.11.34"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:luke.11.34:21a51c3c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 11:34",
+      "excerpt": "(Epist. 41.) Or else; The light and eye of the Church is the Bishop. It is necessary then that as the body is rightly directed as long as the eye keeps itself pure, but goes wrong when it becomes corrupt, so also with respect to the Prelate, according to what his state may be, must the Church in like manner suffer shipwreck, or be saved.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.11.34"
+    },
+    {
+      "id": "hcf:hcf-symeon-the-new-theologian:luke.11.34:800567ee:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-symeon-the-new-theologian",
+      "workId": "hcf:work:hcf-symeon-the-new-theologian:discourses-33-2",
+      "title": "DISCOURSES 33.2 on luke 11:34",
+      "excerpt": "What else does he mean by \"the eye\" than simply the mind, which will never become simple unless it contemplates the simple light? The simple light is Christ. He who has his light shining in his mind is said to have the mind of Christ. When your light is this simple, then the whole immaterial body of your soul will be full of light. If the mind is evil, that is, darkened and extinguished, then this body of yours will be full of darkness.…We say, \"See to it, brothers, that while we seem to be in God and think that we have communion with him we should not be found excluded and separated from him, since we do not now see his light.\" If that light had kindled our lamps, that is, our souls, it would shine brightly in us. Our God and Lord Jesus Christ said, \"If your whole body is full of life, having no dark part, it will be wholly bright, as when a lamp with its rays gives you light.\" What other witness greater than this shall we adduce to make the matter clear to you? If you disbelieve the Master, how will you, tell me, believe your fellow servant?",
+      "takeaway": "",
+      "sourceId": "hcf:source:discourses-33-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1022"
+      ],
+      "targetVerseId": "kjva:luke.11.34"
     }
   ]
 }

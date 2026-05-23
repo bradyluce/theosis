@@ -23,42 +23,6 @@
       ]
     },
     {
-      "id": "catena-john-0274-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:1–3",
-      "excerpt": "He had said above that, when He was at Jerusalem—many believed in His Name, when they saw the miracles which He did. Of this number was Nicodemus, of whom we are told; There was a man of the Pharisees, Nicodemus, a ruler of the Jews.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0276-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.1",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:1–3",
-      "excerpt": "As yet however he was withheld by Jewish infirmity: and therefore he came in the night, being afraid to come in the day. Of such the Evangelist speaks elsewhere, Nevertheless, among the chief rulers also many believed on Him; but because of the Pharisees they did not confess Him, lest they should be put out of the synagogue. (John 12:42)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0277-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.1",
@@ -74,6 +38,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.3.1:3e9c51d9:0"
       ]
     },
     {
@@ -95,14 +66,14 @@
       ]
     },
     {
-      "id": "catena-john-0280-v1",
+      "id": "catena-john-0274-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.1",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 3:1–3",
-      "excerpt": "He did not however conceive any great idea of them from His miracles; and attributed to Him as yet only a human character, speaking of Him as a Prophet, sent to execute a commission, and standing in need of assistance to do His work; whereas the Father had begotten Him perfect, selfsufficient, and free from all defect. It being Christ’s design however for the present not so much to reveal His dignity, as to prove that He did nothing contrary to the Father; in words He is often humble, while His acts ever testify His power. And therefore to Nicodemus on this occasion He says nothing expressly…",
+      "excerpt": "He had said above that, when He was at Jerusalem—many believed in His Name, when they saw the miracles which He did. Of this number was Nicodemus, of whom we are told; There was a man of the Pharisees, Nicodemus, a ruler of the Jews.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -131,6 +102,24 @@
       ]
     },
     {
+      "id": "catena-john-0280-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:1–3",
+      "excerpt": "He did not however conceive any great idea of them from His miracles; and attributed to Him as yet only a human character, speaking of Him as a Prophet, sent to execute a commission, and standing in need of assistance to do His work; whereas the Father had begotten Him perfect, selfsufficient, and free from all defect. It being Christ’s design however for the present not so much to reveal His dignity, as to prove that He did nothing contrary to the Father; in words He is often humble, while His acts ever testify His power. And therefore to Nicodemus on this occasion He says nothing expressly…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0282-v1",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.1",
@@ -139,6 +128,24 @@
       "workId": "catena-aurea-john",
       "title": "On John 3:1–3",
       "excerpt": "He says therefore, Except a man be born again, he cannot see the kingdom of God: as if He said, Thou art not yet born again, i. e. of God, by a spiritual begetting; and therefore thy knowledge of Me is not spiritual, but carnal and human. But I say unto thee, that neither thou, nor any one, except he be born again of God, shall be able to see the glory which is around me, but shall be out of the kingdom: for it is the begetting by baptism, which enlightens the mind. Or the meaning is, Except thou art born from above, and hast received the certainty of my doctrines, thou wanderest out of the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0276-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:1–3",
+      "excerpt": "As yet however he was withheld by Jewish infirmity: and therefore he came in the night, being afraid to come in the day. Of such the Evangelist speaks elsewhere, Nevertheless, among the chief rulers also many believed on Him; but because of the Pharisees they did not confess Him, lest they should be put out of the synagogue. (John 12:42)",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -164,7 +171,65 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.3.1:eba7af5b:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.3.1:7e822672:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-11",
+      "title": "Tractates on John 11 on john 3:1",
+      "excerpt": "Therefore, since Nicodemus was of that number, he came to the Lord, but came by night; and this perhaps pertains to the matter. Came to the Lord, and came by night; came to the Light, and came in the darkness. But what do they that are born again of water and of the Spirit hear from the apostle? \"Ye were once darkness, but now light in the Lord; walk as children of light\"; and again, \"But we who are of the day, let us be sober.\" Therefore they who are born again were of the night, and are of the day; were darkness, and are light. Now Jesus trusts Himself to them, and they come to Jesus, not by night, like Nicodemus; not in darkness do they seek the day. For such now also profess: Jesus has come near to them, has made salvation in them; for He said, \"Except a man eat my flesh, and drink my blood, he shall not have life in him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.1"
+    },
+    {
+      "id": "hcf:bede:john.3.1:bfc45b87:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:exposition-on-the-gospel-of-john-2",
+      "title": "EXPOSITION ON THE GOSPEL OF JOHN 2 on john 3:1",
+      "excerpt": "Nicodemus was one of the many who believed in Jesus, and therefore he came at night, and not during the day because he was not yet illumined with the gracious heavenly light.",
+      "takeaway": "",
+      "sourceId": "hcf:source:exposition-on-the-gospel-of-john-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:john.3.1"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.1:dc33546f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-24",
+      "title": "Homily on the Gospel of John 24 on john 3:1",
+      "excerpt": "This man appears also in the middle of the Gospel, making defense for Christ; for he saith, \"Our law judgeth no man before it hear him\"; and the Jews in anger replied to him, \"Search and look, for out of Galilee ariseth no prophet.\" Again after the crucifixion he bestowed great care upon the burial of the Lord's body: \"There came also,\" saith the Evangelist, \"Nicodemus, which came to the Lord by night, and brought a mixture of myrrh and aloes, about an hundred pound weight.\" And even now he was disposed towards Christ, but not as he ought, nor with proper sentiments respecting Him, for he was as yet entangled in Jewish infirmity. Wherefore he came by night, because he feared to do so by day. Yet not for this did the merciful God reject or rebuke him, or deprive him of His instruction, but even with much kindness conversed with him and disclosed to him very exalted doctrines enigmatically indeed, but nevertheless He disclosed them. For far more deserving of pardon was he than those who acted thus through wickedness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.1"
     },
     {
       "id": "catena-john-0278-v1",
@@ -183,6 +248,40 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.3.1:b2d46959:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 3:1",
+      "excerpt": "Such, almost, was Nicodemus as well. He too believed in Jesus and, it seems, spoke to the Jews in the Lord's favor, namely: that they ought to judge Him only after careful investigation (John 7:50–51). And after the crucifixion, at the burial, he likewise showed much care and generosity. Nevertheless, he did not believe as he ought to have.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.3.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.1:5653272f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:1",
+      "excerpt": "Above, the Evangelist showed Christ's power in relation to changes affecting nature; here he shows it in relation to our reformation by grace, which is his principal subject. Reformation by grace comes about through spiritual generation and by the conferring of benefits on those regenerated. First, then, he treats of spiritual generation. Secondly, of the spiritual benefits divinely conferred on the regenerated, and this in chapter five.\r\n\r\nAs to the first he does two things. First, he treats of spiritual regeneration in relation to the Jews. Secondly, of the spreading of the fruits of this regeneration even to foreign peoples, and this in chapter four. Concerning the first he does two things. First, he explains spiritual regeneration with words. Secondly, he completes it with deeds (3:22).\r\n\r\nAs to the first he does three things. First, he shows the need for a spiritual regeneration. Secondly, its quality (3:4). Thirdly, its mode and nature (3:9). As to the first he does two things. First, he mentions the occasion for showing this need. Secondly, the need itself for this regeneration (3:3).\r\n\r\nThe occasion was presented by Nicodemus; hence he says, There was a certain Pharisee named Nicodemus. And he describes him as to his person, from the time, and from his statements.\r\n\r\nHe describes his person in three ways. First, as to his religion, because he was a Pharisee, hence he says, There was a certain Pharisee. For there were two sects among the Jews: the Pharisees and the Sadducees. The Pharisees were closer to us in their beliefs, for they believed in the resurrection, and admitted the existence of spiritual creatures. The Sadducees, on the other hand, disagree more with us, for they believed neither in the resurrection to come nor in the existence of spirits. The former were called Pharisees, as being separated from the others. And because their opinion was the more credible and nearer to the truth, it was easier for Nicodemus to be converted to Christ. \"I lived as a Pharisee, according to the strictest sect of our religion\" (Acts 26:5).\r\n\r\nAs to his name he says, named Nicodemus, which means \"victor,\" or \"the victory of the people.\" This signifies those who overcame the world through faith by being converted to Christ from Judaism. \"This is the victory that overcomes the world, our faith\" (1 Jn 5:4).\r\n\r\nThirdly, as to his rank he says, a member of the Sanhedrin. For although our Lord did not choose the wise or powerful or those of high birth at the beginning, lest the power of the faith be attributed to human wisdom and power—\"Not many of you are learned in the worldly sense, not many powerful, not many of high birth. But God chose the simple ones of the world\" (1 Cor 1:26)—still he willed to convert some of the wise and powerful to himself at the very beginning. And he did this so that his doctrine would not be held in contempt, as being accepted exclusively by the lowly and uneducated, and so that the number of believers would not be attributed to the rusticity and ignorance of the converts rather than to the power of the faith. However, he did not will that a large number of those converted to him be powerful and of high birth, lest, as has been said, it should be ascribed to human power and wisdom. And so it says, \"many of those in authority believed in him\" (below 12:42), among whom was this Nicodemus. \"The rulers of the people have come together\" (Ps 46:10).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.1"
     }
   ]
 }

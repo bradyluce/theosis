@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.3.30:be7c58f4:0"
       ]
     },
     {
@@ -94,6 +101,40 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.3.30:21c200f6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:30",
+      "excerpt": "But when they see that He performs undeniable miracles, and yet blaspheme the Holy Spirit, that is, the miraculous works proceeding from the Holy Spirit, then how will they receive forgiveness if they do not repent? When they were scandalized by the flesh of Christ, in that case, even if they did not repent, they will be forgiven as people who were led astray; but when they saw Him performing the works of God and still blasphemed, how will they be forgiven if they remain unrepentant?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.30"
+    },
+    {
+      "id": "hcf:bede:mark.3.30:24bcf937:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 3:30",
+      "excerpt": "Because they were saying, \"He has an unclean spirit.\" For those who neither believe in the Holy Spirit nor believe He is God, nor believe He is indeed God but less than the Father and the Son, and confess this, being led by human ignorance rather than devilish envy, are held by the crime of unforgivable blasphemy: specifically those Jewish leaders and others corrupted by a similar pestilence of envy, blaspheming against majesty, will perish without end. However, what is said according to Matthew, that whoever blasphemes against the Holy Spirit, or speaks a word against the Holy Spirit, will not have forgiveness either in this age or in the future, is given to be understood that some faults are forgiven in this age, while others in the future. For what is denied about one fault, the consequent understanding is clear because it is granted about some. Nevertheless, it should be believed that this can happen with small and minor sins, such as continual idle talk, immoderate laughter, or the sin of concern for familial matters, which is rarely conducted without fault even by those who know how to avoid blame, or in not serious faults by the error of ignorance, all of which still weigh after death if not forgiven while still in this life. However, it should be known that no one will obtain any purification for even the smallest sins unless, while still in this life, they merit to obtain it through good deeds.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.3.30"
+    },
+    {
       "id": "catena-mark-0234-v30",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.30",
@@ -102,24 +143,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:23–30",
       "excerpt": "The blasphemy of the Scribes having been detailed, our Lord shews that what they said was impossible, confirming His proof by an example. Wherefore it says, And having called them together unto him, he said unto them in parables. How can Satan cast out Satan? As if He had said, A kingdom divided against itself by civil war must be desolated, which is exemplified both in a house and in a city. Wherefore also if Satan's kingdom be divided against itself, so that Satan expels Satan from men, the desolation of the kingdom of the devils is at hand. But their kingdom consists in keeping men under…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0235-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.30",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:23–30",
-      "excerpt": "And because He has already shewn by an example that a devil cannot cast out a devil, He shews how he can be expelled, saying, No man can enter into a strong man's house, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -145,6 +168,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.3.30:eceee0af:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0235-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.30",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:23–30",
+      "excerpt": "And because He has already shewn by an example that a devil cannot cast out a devil, He shews how he can be expelled, saying, No man can enter into a strong man's house, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -163,6 +211,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.3.30:570037a6:0"
       ]
     }
   ]

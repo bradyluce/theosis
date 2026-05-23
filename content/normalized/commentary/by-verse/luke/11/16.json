@@ -4,6 +4,31 @@
   "verseNumber": 16,
   "entries": [
     {
+      "id": "catena-luke-1795-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.16",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:14–16",
+      "excerpt": "But others by similar darts of envy sought of him a sign from heaven. As it follows, And others, tempting him, sought of him a sign from heaven. As if they said, “Although thou hast cast out a devil from the man, this is no proof however of Divine power. For we have not yet seen any thing like to the miracles of former times. Moses led the people through the midst of the sea, (Exod. 14) and Joshua his successor stayed the sun in Gibeon. (Josh. 10:13.) But thou hast shewn us none of these things.” For to seek signs from heaven shewed that the speaker was at that time influenced by some feeling…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.11.16:f4796e33:0"
+      ]
+    },
+    {
       "id": "catena-luke-1793-v16",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.16",
@@ -22,17 +47,17 @@
       ]
     },
     {
-      "id": "catena-luke-1795-v16",
+      "id": "catena-luke-1794-v16",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.16",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:14–16",
-      "excerpt": "But others by similar darts of envy sought of him a sign from heaven. As it follows, And others, tempting him, sought of him a sign from heaven. As if they said, “Although thou hast cast out a devil from the man, this is no proof however of Divine power. For we have not yet seen any thing like to the miracles of former times. Moses led the people through the midst of the sea, (Exod. 14) and Joshua his successor stayed the sun in Gibeon. (Josh. 10:13.) But thou hast shewn us none of these things.” For to seek signs from heaven shewed that the speaker was at that time influenced by some feeling…",
+      "excerpt": "But since the multitudes who were thought ignorant always marvelled at our Lord’s actions, the Scribes and Pharisees took pains to deny them, or to pervert them by an artful interpretation, as though they were not the work of a Divine power, but of an unclean spirit. Hence it follows, But some of them said, He casteth out devils through Beelzebub the prince of the devils. Beelzebub was the God Accaron. For Beel is indeed Baal himself. But Zebub means a fly. Now he is called Beelzebub as the man of flies, from whose most foul practices the chief of the devils was so named.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -48,24 +73,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:14–16",
       "excerpt": "But that demoniac is related by Matthew to have been not only dumb, but blind. Three miracles then were performed at the same time on one man. The blind see, the dumb speaks, and he that was possessed by a devil is set free. The like is daily accomplished in the conversion of believers, so that the devil being first cast out, they see the light, and then those mouths which were before silent are loosened to speak the praises of God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1794-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.16",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:14–16",
-      "excerpt": "But since the multitudes who were thought ignorant always marvelled at our Lord’s actions, the Scribes and Pharisees took pains to deny them, or to pervert them by an artful interpretation, as though they were not the work of a Divine power, but of an unclean spirit. Hence it follows, But some of them said, He casteth out devils through Beelzebub the prince of the devils. Beelzebub was the God Accaron. For Beel is indeed Baal himself. But Zebub means a fly. Now he is called Beelzebub as the man of flies, from whose most foul practices the chief of the devils was so named.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -110,6 +117,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.16:c24fa8e6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:16",
+      "excerpt": "The Pharisees slander the miracle and revile the Lord as a deceiver. They say: He is in league with the prince of demons and with his assistance \"casts out demons.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.16"
+    },
+    {
+      "id": "hcf:bede:luke.11.16:c824f8ca:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:16",
+      "excerpt": "And others, testing Him, sought a sign from heaven from Him. Either they wished for fire to come down from above in the manner of Elijah, or, similarly to Samuel, for thunder to roar, lightning to flash, and rains to fall in the summer, as if those could not also be slandered and said to have happened from hidden and varied passions of the air. But you, who slander those things which you see with your eyes, hold with your hands, feel with their benefit, what will you do with those things that have come from heaven? Surely, you will answer that the magicians in Egypt also performed many signs from the heavens.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.16"
     },
     {
       "id": "catena-luke-1789-v16",

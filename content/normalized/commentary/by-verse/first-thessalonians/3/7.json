@@ -4,6 +4,25 @@
   "verseNumber": 7,
   "entries": [
     {
+      "id": "chrysostom-23051-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:first-thessalonians.3.7",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-second-thessalonians",
+      "title": "On 1 Thessalonians 3:1–10",
+      "excerpt": "Argument Having said in his former Epistle that we pray night and day to see you, and that we could not forbear, but were left in Athens alone, and that I sent Timothy from 1 Thessalonians 3:1-10, by all these expressions he shows the desire which he had to come among them. When therefore he had perhaps not had time to go, and to perfect what was lacking in their faith, on this account he adds a second Epistle, filling up by his writings what was wanting of his presence. For that he did not depart, we may conjecture from hence: for he says in this Epistle, We beseech you by the coming of our…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-second-thessalonians-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "first-thessalonians"
+      ]
+    },
+    {
       "id": "chrysostom-230404-v7",
       "relation": "verse",
       "targetVerseId": "kjva:first-thessalonians.3.7",
@@ -23,23 +42,72 @@
       ]
     },
     {
-      "id": "chrysostom-23051-v7",
+      "id": "hcf:john-chrysostom:first-thessalonians.3.7:cafad28f:0",
       "relation": "verse",
-      "targetVerseId": "kjva:first-thessalonians.3.7",
       "topicSlugs": [],
       "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-second-thessalonians",
-      "title": "On 1 Thessalonians 3:1–10",
-      "excerpt": "Argument Having said in his former Epistle that we pray night and day to see you, and that we could not forbear, but were left in Athens alone, and that I sent Timothy from 1 Thessalonians 3:1-10, by all these expressions he shows the desire which he had to come among them. When therefore he had perhaps not had time to go, and to perfect what was lacking in their faith, on this account he adds a second Epistle, filling up by his writings what was wanting of his presence. For that he did not depart, we may conjecture from hence: for he says in this Epistle, We beseech you by the coming of our…",
+      "workId": "hcf:work:john-chrysostom:homily-on-1-thessalonians-4",
+      "title": "Homily on 1 Thessalonians 4 on first-thessalonians 3:7",
+      "excerpt": "\"For this cause, brethren, we were comforted over you in all our distress and affliction through your faith: for now we live, if ye stand fast in the Lord.\"\r\n\r\nWhat is comparable to Paul, who thought the salvation of his neighbors was his own, being so affected towards all, as really towards members? He did not require them to be thankful to him for the trials which he suffered for them, but he was thankful to them that they were not moved on account of his trials. As if he had said, that to you rather than to us was injury done by those trials; you were tempted rather than we, you who suffered nothing, rather than we who suffered. Because, he says, Timothy brought us these good tidings, we feel nothing of our sorrows, but were comforted in all our affliction; not in this affliction only. For nothing besides can touch a good teacher, as long as the affairs of his disciples go on to his mind. Through you, he says, we were comforted; you confirmed us. And yet the reverse was the case. For that when suffering they did not yield, but stood manfully, was sufficient to confirm the disciples. But he reverses the whole matter, and turns the encomium over to them. You have anointed us, he says, you have caused us to breathe again; you have not suffered us to feel our trials. And he has not said, we breathe again, nor we are comforted, but what? \"Now we live,\" showing that he thinks nothing is either trial or death, but their stumbling, whereas their advancement was even life. How else could any one have set forth either the sorrow for the weakness of one's disciples, or the joy? He has not said we rejoice, but \"we live,\" the life to come.\r\n\r\nSo that without this we do not even think it life to live. So ought teachers to be affected, so disciples; and there will be nothing at any time amiss.",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-second-thessalonians-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "first-thessalonians"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.7"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:first-thessalonians.3.7:b949112e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-1-thessalonians",
+      "title": "Commentary on 1 Thessalonians on first-thessalonians 3:7",
+      "excerpt": "A wonderful thing! Paul expresses gratitude to them for the fact that they were not shaken. We, he says, no longer feel sorrows, but have been comforted—not in just one particular sorrow, but in every one. For the joy over you became a counterbalance to all our afflictions.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.7"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:first-thessalonians.3.7:e3c510ff:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-1-thessalonians",
+      "title": "Commentary on 1 Thessalonians on first-thessalonians 3:7",
+      "excerpt": "You, he says, strengthened me. Meanwhile in reality it was the opposite: he himself, not yielding to temptations, strengthened them, yet he gives the praise to them. For you, he says, did not let me feel my temptations.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.7"
+    },
+    {
+      "id": "hcf:thomas-aquinas:first-thessalonians.3.7:bb1972ca:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-1-thessalonians",
+      "title": "Commentary on 1 Thessalonians on first-thessalonians 3:7",
+      "excerpt": "Then when Paul says: we have been comforted about you, he speaks of the threefold effect of their relationship, namely, of spiritual consolation, of the spirit of thanksgiving, in the words: for what thanksgiving can we render to God for you, and of the resultant frequent prayer, in the words: praying night and day. And so Paul tells them: because we have heard such things about you, we are encouraged, although the demands of temporal concerns are pressing, as well as bodily trials. \"When the cares of my heart are many, thy consolations cheer my soul\" (Ps. 94:19). \"Blessed be the God and Father of our Lord Jesus Christ, the Father of mercies and God of all comfort\" (2 Cor. 1:3). And this occurred through your faith, that is, having heard about the reliable character of your faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:first-thessalonians.3.7"
     }
   ]
 }

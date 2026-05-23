@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.8.16:73ff40f5:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.8.16:74e2c642:0"
       ]
     },
     {
@@ -51,6 +65,31 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 78,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:maximus-the-confessor:luke.8.16:607db44f:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1219-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.16",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:16–18",
+      "excerpt": "But the Lord ceases not to teach us to hearken to His word, that we may be able both to constantly meditate on it in our own minds, and to bring it forth for the instruction of others. Hence it follows, Take heed therefore how ye hear; for whosoever hath, to him shall be given. As if he says, Give heed with all your mind to the word which ye hear, for to him who has a love of the word, shall be given also the sense of understanding what he loves; but whoso hath no love of hearing the word, though he deems himself skilful either from natural genius, or the exercise of learning, will have no…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -73,6 +112,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.8.16:a225cb76:1"
       ]
     },
     {
@@ -91,24 +137,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1219-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.16",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:16–18",
-      "excerpt": "But the Lord ceases not to teach us to hearken to His word, that we may be able both to constantly meditate on it in our own minds, and to bring it forth for the instruction of others. Hence it follows, Take heed therefore how ye hear; for whosoever hath, to him shall be given. As if he says, Give heed with all your mind to the word which ye hear, for to him who has a love of the word, shall be given also the sense of understanding what he loves; but whoso hath no love of hearing the word, though he deems himself skilful either from natural genius, or the exercise of learning, will have no…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.8.16:2be9ef86:0"
       ]
     },
     {
@@ -127,7 +162,82 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.8.16:ac1b2678:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.8.16:f9bccf39:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 8:16",
+      "excerpt": "No one, after lighting a lamp, covers it with a vessel or puts it under a bed; instead, they put it on a lampstand, so that those who enter may see the light. Because he had previously said to the apostles, \"To you it has been given to know the mysteries of the kingdom of God, but to others in parables,\" he now shows that through them the same mystery would eventually be revealed to others as well, and the hearts of all those who would enter the house of God would be illuminated by the flames of faith. Through these words, he also symbolically teaches the confidence to preach, so that no one would hide the light of knowledge they know out of fear of worldly hardships. For by the name of vessel and bed, he designates the flesh; but by the name of lamp, he designates the word. Whoever conceals it out of fear of worldly hardships, as I have said, indeed places the flesh ahead of the manifestation of truth and thus covers the word which they are hesitant to preach. He puts the lamp on the lampstand, who subjects his body to the service of God, so that the preaching of truth is above and the service of the body is below, and through the very service of the body, the doctrine shines more excellently, which is insinuated in good works through bodily offices, that is, through the voice and tongue and other bodily movements. Therefore, he puts the lamp on the lampstand when the Apostle says: \"Thus I do not fight like one beating the air, but I discipline my body and bring it into subjection, lest when I have preached to others, I myself should become disqualified\" (1 Cor. IX).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.8.16"
+    },
+    {
+      "id": "hcf:origen:luke.8.16:e77a00d9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:fragments-on-luke-120-122",
+      "title": "FRAGMENTS ON LUKE 120, 122 on luke 8:16",
+      "excerpt": "Scripture does not say this about a tangible lamp but about a comprehensible one. One does not \"light\" the lamp and conceal it \"with a vessel\" or put it \"under a bed, but on the lamp stand\" within himself. The vessels of the house are the powers of the soul. The bed is the body. \"Those who go in\" are those who hear the teacher.…He calls the holy church a \"lamp stand.\" By its proclamation, the Word of God gives light to all who are in this world and illuminates those in the house with the rays of the truth, filling the minds of all with divine knowledge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragments-on-luke-120-122",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.8.16"
+    },
+    {
+      "id": "hcf:tertullian:luke.8.16:0fd48de6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-apparel-of-women-book-ii",
+      "title": "On the Apparel of Women Book II on luke 8:16",
+      "excerpt": "For what purpose, except that malice may have no access at all to you, or that you may be an example and testimony to the evil? Else, what is (that): \"Let your works shine? \" Why, moreover, does the Lord call us the light of the world; why has He compared us to a city built upon a mountain; if we do not shine in (the midst of) darkness, and stand eminent amid them who are sunk down? If you hide your lamp beneath a bushel, you must necessarily be left quite in darkness, and be run against by many.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.8.16"
+    },
+    {
+      "id": "hcf:tertullian:luke.8.16:102e695e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 8:16",
+      "excerpt": "Now, for whatever reason He threatens the \"deprivation,\" it will not be the work of a god who knows not how to threaten, because incapable of anger. I am, moreover, astonished when he says that \"a candle is not usually hidden,\" who had hidden himself-a greater and more needful light-during so long a time; and when he promises that \"everything shall be brought out of its secrecy and made manifest,\" who hitherto has kept his god in obscurity, waiting (I suppose) until Marcion be born.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.8.16"
     }
   ]
 }

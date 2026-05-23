@@ -4,6 +4,25 @@
   "verseNumber": 1,
   "entries": [
     {
+      "id": "chrysostom-230708-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:second-timothy.3.1",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "chrysostom-homilies-on-second-timothy",
+      "title": "On 2 Timothy 3:1–4",
+      "excerpt": "2 Timothy 3:1-4 This know also, that in the last days perilous times shall come. For men shall be lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, without natural affection, truce-breakers, false accusers, incontinent, fierce, despisers of those that are good, Traitors, heady, high-minded, lovers of pleasures more than lovers of God. If any now takes offense at the existence of heretics, let him remember that it was so from the beginning, the devil always setting up error by the side of truth. God from the beginning promised good,…",
+      "takeaway": "",
+      "sourceId": "chrysostom-homilies-on-second-timothy-source",
+      "rank": 90,
+      "tags": [
+        "chrysostom",
+        "patristic",
+        "homily",
+        "second-timothy"
+      ]
+    },
+    {
       "id": "chrysostom-230707-v1",
       "relation": "verse",
       "targetVerseId": "kjva:second-timothy.3.1",
@@ -23,23 +42,191 @@
       ]
     },
     {
-      "id": "chrysostom-230708-v1",
+      "id": "hcf:john-chrysostom:second-timothy.3.1:793409ee:0",
       "relation": "verse",
-      "targetVerseId": "kjva:second-timothy.3.1",
       "topicSlugs": [],
       "personId": "john-chrysostom",
-      "workId": "chrysostom-homilies-on-second-timothy",
-      "title": "On 2 Timothy 3:1–4",
-      "excerpt": "2 Timothy 3:1-4 This know also, that in the last days perilous times shall come. For men shall be lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, without natural affection, truce-breakers, false accusers, incontinent, fierce, despisers of those that are good, Traitors, heady, high-minded, lovers of pleasures more than lovers of God. If any now takes offense at the existence of heretics, let him remember that it was so from the beginning, the devil always setting up error by the side of truth. God from the beginning promised good,…",
+      "workId": "hcf:work:john-chrysostom:homily-on-2-timothy-7",
+      "title": "Homily on 2 Timothy 7 on second-timothy 3:1",
+      "excerpt": "He had said in the former Epistle, that \"the Spirit speaketh expressly, that in the latter times some shall depart from the faith\" (1 Tim. iv. 1, 1 Tim. iv. 2.); and elsewhere in this Epistle he foretells that something of this kind will afterwards happen; and here again he does the same thing: \"This know, that in the last days perilous times shall come.\" And this he pronounces not only from the future, but from the past; \"As Jannes and Jambres withstood Moses.\" And again from reasoning; \"In a great house there are not only vessels of gold and of silver.\" But why does he do this? In order that Timothy may not be troubled, nor any one of us, when there are evil men. If there were such in the time of Moses, and will be hereafter, it is no wonder that there are such in our times. \"In the last days perilous times shall come,\" he says, that is, exceeding bad times. How shall times be perilous? He says it not blaming the days, nor the times, but the men of those times. For thus it is customary with us to speak of good times or evil times, from the events that happen in them, caused by men.",
       "takeaway": "",
-      "sourceId": "chrysostom-homilies-on-second-timothy-source",
-      "rank": 90,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "chrysostom",
-        "patristic",
-        "homily",
-        "second-timothy"
-      ]
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:augustine:second-timothy.3.1:9def8a25:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letters-199-8-23-24",
+      "title": "LETTERS 199.8.23-24 on second-timothy 3:1",
+      "excerpt": "We do not think that in this passage he used his verbs in the present tense for the future, because, in fact, he was warning his correspondent to avoid these persons. Yet he had a purpose in saying: \"In the last times shall come on dangerous days.\" He demonstrates that the times will be dangerous by prophesying that evil men will become more numerous as the end draws near. They are already numerous at present. But what does that signify if they will be even more numerous after us and most numerous of all when the end itself is imminent, although it is not known how far off it is? Indeed, those last days were spoken of even in the first days of the apostles when the Lord's ascension into heaven was a recent happening.… So there were last days even then! How much more now is this so, even if there remained as many days to the end as have already passed from the ascension of the Lord to this day, or even if there remain more or less days to come!",
+      "takeaway": "",
+      "sourceId": "hcf:source:letters-199-8-23-24",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:hcf-caesarius-of-arles:second-timothy.3.1:b0771f4c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-caesarius-of-arles",
+      "workId": "hcf:work:hcf-caesarius-of-arles:sermons-71-3",
+      "title": "SERMONS 71.3 on second-timothy 3:1",
+      "excerpt": "We see his prediction verified to such an extent, dearly beloved, that there is no more fidelity in the fear of God, in laws of justice, in charity or in good works. Blessed Paul foretold this.… Therefore, let us consider, dearly beloved, whether almost the whole world is not filled with these vices. Why? We reply: Because no one has any fear of the future or trembles within himself over the day of the Lord and God's wrath, the punishment prepared for unbelievers and the eternal torments to come for the unfaithful.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermons-71-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c542"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:second-timothy.3.1:c0ace0b9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-i-on-the-unity-of-the-church-15-16",
+      "title": "Treatise I. On the Unity of the Church 15-16 on second-timothy 3:1",
+      "excerpt": "The Lord's teaching required both unity and love. They embraced all the prophets and the law in two commandments. But what sort of unity, what sort of love, is preserved or contemplated by the mad fury of discord that rends the church, destroys faith, disturbs peace, scatters charity, profanes religion? This evil began long ago, my brothers in the faith. Now its cruel havoc has increased, now the poisonous plague of heretical perversity and schism is beginning to spring up and put out new shoots. So it must be at the end of the world, as the Holy Spirit forewarns and foretells through the apostle.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:second-timothy.3.1:efa3ac2d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-dogmatical-and-historical-fragments",
+      "title": "Hippolytus Dogmatical and Historical Fragments on second-timothy 3:1",
+      "excerpt": "As these things, then, are in the future, and as the ten toes of the image are equivalent to (so many) democracies,",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:hcf-oecumenius:second-timothy.3.1:10a730a0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-oecumenius",
+      "workId": "hcf:work:hcf-oecumenius:commentary-on-2-timothy",
+      "title": "COMMENTARY ON 2 TIMOTHY on second-timothy 3:1",
+      "excerpt": "Even in the days of Moses, there were Jannes and Jambres (Ex. 7; 2 Tim. 3:8), as he says: for this is what the words about the golden and pottery vessels signify. Therefore, these types always exist, but especially in the last times.\r\n\r\ndifficult times. It is not the times or the days that are to blame, but the wicked people living in them. For we call times good or bad based on what happens in them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c550"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:tertullian:second-timothy.3.1:b74ad010:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-fasting",
+      "title": "On Fasting on second-timothy 3:1",
+      "excerpt": "Grant that from the time of John the Paraclete had grown mute; we ourselves would have arisen as prophets to ourselves, for this cause chiefly: I say not now to bring down by our prayers God's anger, nor to obtain his protection or grace; but to secure by premunition the moral position of the \"latest times; \" enjoining every species of of tapeino/fronhsij, since the prison must be familiarized to us, and hunger and thirst practised, and capacity of enduring as well the absence of food as anxiety about it acquired: in order that the Christian may enter into prison in like condition as if he had (just) come forth of it,-to suffer there not penalty, but discipline, and not the world's tortures, but his own habitual observances; and to go forth out of custody to (the final) conflict with all the more confidence, having nothing of sinful false care of the flesh about him, so that the tortures may not even have material to work on, since he is cuirassed in a mere dry skin, and cased in horn to meet the claws, the succulence of his blood already sent on (heavenward) before him, the baggage as it were of his soul,-the soul herself withal now hastening (after it), having already, by frequent fasting, gained a most intimate knowledge of death!",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:tertullian:second-timothy.3.1:ed2d91cd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty-1-1",
+      "title": "ON MODESTY 1.1 on second-timothy 3:1",
+      "excerpt": "The conquering power of evil is on the increase. This is characteristic of the last times. Innocent babies are now not even allowed to be born, so corrupted are the moral standards. Or if born, no one educates them, so desolate are studies. Or if trained, no one enforces the training, so impotent are the laws. In fact, the case for modesty which we are now beginning to treat, has in our time become an obsolete subject. So much is this so that modesty is considered to be not the renunciation of the appetites but merely in their mild constraint. People these days are thought to be chaste if they are not too chaste.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:tertullian:second-timothy.3.1:f288bbd7:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on second-timothy 3:1",
+      "excerpt": "But as the conquering power of things evil is on the increase-which is the characteristic of the last times -things good are now not allowed either to be born, so corrupted are the seminal principles; or to be trained, so deserted are studies; nor to be enforced, so dined are the laws.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:second-timothy.3.1:30a684a2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-2-timothy",
+      "title": "Commentary on 2 Timothy on second-timothy 3:1",
+      "excerpt": "Since in those times there were many evil people, so that Timothy would not be troubled by this, the apostle first said to him: \"in a great house\" and so on, and now says that evil people will exist afterward as well. Even in the time of Moses there were Jannes and Jambres. Consequently, this phenomenon is not new and it will not continue only until your time. Therefore do not be indignant. The times will be perilous, that is, very bad. It is not the days that should be understood (for what are bad days?), but rather the bad deeds and people occurring in those days. So we too are accustomed to calling times bad and not bad, according to the character of the deeds that happen in those days, or according to the character of the people.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:second-timothy.3.1:9833cf8f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-2-timothy",
+      "title": "Commentary on 2 Timothy on second-timothy 3:1",
+      "excerpt": "Above, he instructed him how to handle present tribulations and dangers; here he shows him how to stand against future ones: first, he predicts some dangers that are to come; second, he shows his fitness to resist them, at but you have fully known my doctrine (2 Tim 3:10); third, how to resist, at I charge you before God (2 Tim 4:1). In regard to the first he does two things: first, he foretells the dangers that will come in the last days; second, he shows that their vices are even now to be avoided, at now these avoid. In regard to the first he does two things: first, he states that there will be dangers in the last times; second, the cause of these dangers, at men shall be lovers of themselves.\r\n\r\nHe says, therefore: I have said, shun profane and vain babblings (2 Tim 2:16). Not only must you shun them now, but in the future there will be other dangers to avoid. The future is referred to as the last days, because they are closest to the last day: I will raise him up on the last day (John 6:55); gather yourselves together, that I am to tell you the things that shall befall you in the last days (Gen 49:1). And he adds, shall come dangerous times: you shall be hated by all nations for my name's sake (Matt 24:9).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:second-timothy.3.1"
     }
   ]
 }

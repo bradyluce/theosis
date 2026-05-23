@@ -38,24 +38,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-2409-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.29",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:28–30",
-      "excerpt": "They were not softened at all by what they saw, but were the more enraged, and gave Him the cup to drink, as they did to criminals, i. e. with a hyssop.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.29:ff18ac87:0"
       ]
     },
     {
@@ -67,24 +56,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 19:28–30",
       "excerpt": "The hyssop around which they put the spunge full of vinegar, being a mean herb, taken to purge the breast, represents the humility of Christ, which they hemmed in and thought they had circumvented. (ὑσσώπῳ περιθέντες) For we are made clean by Christ’s humility. Nor let it perplex you that they were able to reach His mouth when He was such a height above the ground: for we read in the other Evangelists, what John omits to mention, that the spunge was put upon a reed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2412-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.29",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:28–30",
-      "excerpt": "viz. what prophecy had foretold so long before.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -113,6 +84,42 @@
       ]
     },
     {
+      "id": "catena-john-2417-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.29",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:28–30",
+      "excerpt": "For who ever had such power to sleep when he wished, as our Lord had to die when He wished? What power must He have, for our good or evil, Who had such power dying?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2412-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.29",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:28–30",
+      "excerpt": "viz. what prophecy had foretold so long before.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-2416-v29",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.29",
@@ -131,14 +138,14 @@
       ]
     },
     {
-      "id": "catena-john-2417-v29",
+      "id": "catena-john-2409-v29",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.29",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 19:28–30",
-      "excerpt": "For who ever had such power to sleep when he wished, as our Lord had to die when He wished? What power must He have, for our good or evil, Who had such power dying?",
+      "excerpt": "They were not softened at all by what they saw, but were the more enraged, and gave Him the cup to drink, as they did to criminals, i. e. with a hyssop.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -185,24 +192,6 @@
       ]
     },
     {
-      "id": "catena-john-2411-v29",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.29",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:28–30",
-      "excerpt": "Some say that the hyssop is put here for reed, its leaves being like a reed.When Jesus therefore had received the vinegar, He said, It is finished.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2418-v29",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.29",
@@ -219,6 +208,218 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "catena-john-2411-v29",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.29",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:28–30",
+      "excerpt": "Some say that the hyssop is put here for reed, its leaves being like a reed.When Jesus therefore had received the vinegar, He said, It is finished.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.19.29:f884bc33:0"
+      ]
+    },
+    {
+      "id": "hcf:augustine:john.19.29:04ccd85b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-119",
+      "title": "Tractates on John 119 on john 19:29",
+      "excerpt": "He said, \"I thirst:\" as if it were, One thing still you have failed to do, give me what you Are. For the Jews were themselves the vinegar, degenerated as they were from the wine of the patriarchs and prophets; and filled like a full vessel with the wickedness of this world, with hearts like a sponge, deceitful in the formation of its cavernous and tortuous recesses. But the hyssop, whereon they placed the sponge filled with vinegar, being a lowly herb, and purging the heart, we fitly take for the humility of Christ Himself; which they thus enclosed, and imagined they had completely ensnared. Hence we have it said in the psalm, \"Thou shalt purge me with hyssop, and I shall be cleansed.\" For it is by Christ's humility that we are cleansed; because, had He not humbled Himself, and became obedient unto the death of the cross, His blood certainly would not have been shed for the remission of sins, or, in other words, for our cleansing.\r\n\r\nNor need we be disturbed with the question, how the sponge could be applied to His mouth when He was lifted up from the earth on the cross. For as we read in the other evangelists, what is omitted by this one, it was fixed on a reed, so that such drink as was contained in the sponge might be raised to the highest part of the cross. By the reed, however, the scripture was signified, which was fulfilled by this very act. For as a tongue is called either Greek or Latin, or any other, significant of the sound, which is uttered by the tongue; so the reed may give its name to the letter which is written with a reed. We most usually, however, call those tongues that express the sounds of the human voice: while in calling scripture a reed, the very rareness of the thing only enhances the mystical nature of that which it symbolizes. A wicked people did such things, a compassionate Christ suffered them. They who did them, knew not what they did; but He who suffered, not only knew what was done, and why it was so, but also wrought what was good through those who were doing what was evil.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:augustine:john.19.29:c17df942:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-119",
+      "title": "Tractates on John 119 on john 19:29",
+      "excerpt": "He then adds: \"After this, Jesus knowing that all things were now accomplished, that the scripture might be fulfilled, saith, I thirst. Now there was set a vessel full of vinegar: and they filled a sponge with vinegar, and fixed it upon hyssop, and put it to His mouth. When Jesus therefore had received the vinegar, He said, It is finished: and He bowed His head, and gave up the ghost.\" Who has the power of so adjusting what he does, as this Man had of arranging all that He suffered? But this Man was the Mediator between God and men; the Man of whom we read in prophecy, He is man also, and who shall acknowledge Him? for the men who did such things acknowledged not this Man as God. For He who was manifest as man, was hid as God: He who was manifest suffered all these things, and He Himself also, who was hid, arranged them all. He saw, therefore, that all was accomplished that required to be done before He received the vinegar, and gave up the ghost; and that this also might be accomplished which the scripture had foretold, \"And in my thirst they gave me vinegar to drink,\" He said, \"I thirst:\" as if it were, One thing still you have failed to do, give me what you are. For the Jews were themselves the vinegar, degenerated as they were from the wine of the patriarchs and prophets; and filled like a full vessel with the wickedness of this world, with hearts like a sponge, deceitful in the formation of its cavernous and tortuous recesses. But the hyssop, whereon they placed the sponge filled with vinegar, being a lowly herb, and purging the heart, we fitly take for the humility of Christ Himself; which they thus enclosed, and imagined they had completely ensnared. Hence we have it said in the psalm, \"Thou shalt purge me with hyssop, and I shall be cleansed.\" For it is by Christ's humility that we are cleansed; because, had He not humbled Himself, and became obedient unto the death of the cross, His blood certainly would not have been shed for the remission of sins, or, in other words, for our cleansing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:augustine:john.19.29:c27d9552:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-218",
+      "title": "Sermon 218 on john 19:29",
+      "excerpt": "What He said: I thirst; He was seeking faith from His own: but because He came to His own, and His own did not receive Him; instead of the sweetness of faith, they gave the sourness of unbelief, and this on a sponge. Truly, those worthy of comparison to a sponge, not solid, but swollen; not open with the straightforward path of confession, but cavernous with the tortuous windings of treachery. Certainly, that drink also contained hyssop, which is a humble herb said to cling to the rock with the strongest root. Indeed, in that people were those for whom this act for humbling by repentance was kept, then to be cast away. He knew them Himself, who accepted the hyssop with the vinegar. For He also prayed for them, as another evangelist testifies, when hanging on the cross He said: Father, forgive them, for they know not what they do.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.29:db524447:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-85",
+      "title": "Homily on the Gospel of John 85 on john 19:29",
+      "excerpt": "\"After this, Jesus knowing that all things were now accomplished.\" That is, \"that nothing was wanting to the Dispensation.\" For He was everywhere desirous to show, that this Death was of a new kind, if indeed the whole lay in the power of the Person dying, and death came not on the Body before He willed it; and He willed it after He had fulfilled all things. Therefore also He said, \"I have power to lay down My life; and I have power to take it again.\" (c. x. 18.) Knowing therefore that all things were fulfilled, He saith, \"I thirst.\" Here again fulfilling a prophecy. But consider, I pray, the accursed nature of the bystanders. Though we have ten thousand enemies, and have suffered intolerable things at their hands, yet when we see them perishing, we relent; but they did not even so make peace with Him, nor were tamed by what they saw, but rather became more savage, and increased their irony; and having brought to Him vinegar on a sponge, as men bring it to the condemned, thus they gave Him to drink; since it is on this account that the hyssop is added.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.19.29:ec8724f5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-87",
+      "title": "Homily on the Gospel of Matthew 87 on john 19:29",
+      "excerpt": "And they gave Him gall to drink, and this to insult Him, but He would not. But another saith, that having tasted it, He said, \"It is finished.\" And what meaneth, \"It is finished?\" The prophecy was fulfilled concerning Him. \"For they gave me,\" it is said, \"gall for my meat, and for my thirst they gave me vinegar to drink.\" But neither doth that evangelist indicate that He drank, for merely to taste differs not from not drinking, but hath one and the same signification.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.29:0274347b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:29",
+      "excerpt": "But they, displaying their villainous character, give Him vinegar to drink, as they did with criminals. For hyssop is applied for the reason that it is harmful. Some, however, say that the reed is called hyssop, for such is the top of the reed. They placed the sponge on the reed because the mouth of Jesus was high up. And thus the prophecy was fulfilled which says: \"And in My thirst they gave Me vinegar to drink\" (Ps. 69:21).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.29:46624c2b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 19:29",
+      "excerpt": "The blessed Evangelist John says that they filled a sponge with vinegar, and put it on hyssop, and so brought it. Luke makes no mention of anything of the kind, but merely declares that they brought Him vinegar. Matthew and Mark say that the sponge was put on a reed. Some may perhaps think there is a discrepancy in the accounts of the holy Evangelists; but no one who is right-minded will be so persuaded. We must rather try to search, and see by every means in our power, in what way the act of impiety was effected. The inspired Luke, then, disregarding the way in which the vinegar was brought, says, in brief, that vinegar was brought to Him when He was athirst. And there can be no question, that the Evangelists would not have disagreed with each other in these trifling and unimportant details, when, in all essential matters, they are in such perfect harmony and concord. What, then, is the difference between them? and of what treatment is it susceptible? There is no doubt, that the officers who executed the impious crime against Christ were many in number, I mean the soldiers who brought Him to the Cross; several also of the Jews shared in their cruelty, some putting the sponge on a reed, others on a stick of what is called hyssop----for the hyssop is a kind of shrub----and gave Jesus to drink of it; doing this, purblind wretches that they were, to their own condemnation. For, unawares, they were proving themselves utterly undeserv-ing of compassion, when they thus altogether discarded mercy and humanity, and with unparalleled audacity vied with each other in impiety alone. Therefore, by the mouth of the Prophet Ezekiel, God thus spake unto the mother of the Jews, I mean Jerusalem: As thou hast done, so shall it be done unto thee: thy reward shall return upon thine own head; and by the mouth of Isaiah, to lawless Israel: Woe unto the wicked! It shall be ill with him: for the reward of his hands shall be given him. This completed the measure of all the crimes that had been committed against Christ; but here, too, we may find a lesson to our profit. For hereby we may know that those who are of a God-loving temper, and who are firmly rooted in the love of Christ, shall wage, as it were, a ceaseless war with those who are of a different spirit; who will not, even to their latest breath, desist from raging against them, preparing for them severe temptations from every quarter, and eagerly devising every sort of thing that may hurt them. But, just as the wicked cease not from troubling them, so also shall their courage be continually sustained; and just as their trials, and the tribulation of temptation, have no abatement, so also the blessedness of the Saints shall have no end, and the joy of their state of glory shall remain for evermore, and world without end.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:cyril-of-jerusalem:john.19.29:abe13285:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-jerusalem",
+      "workId": "hcf:work:cyril-of-jerusalem:catechetical-lecture-13-29",
+      "title": "Catechetical Lecture 13:29 on john 19:29",
+      "excerpt": "Jesus says, \"I thirst\"—he who had brought forth water for them out of the craggy rock. Then he asked for fruit of the vine that he had planted. But what does the vine do? When the Lord was thirsty, this vine … having filled a sponge and put it on a reed, offers him vinegar. \"They gave me also gall for my food, and in my thirst, they gave me vinegar to drink.\" See how clear the prophet's description is. But what sort of gall did they put into my mouth? \"They gave him,\" it says, \"wine mingled with myrrh.\" Now myrrh tastes a lot like gall, and very bitter. Are these things how you reward the Lord? Are these your offerings, O vine, for your master? The prophet Isaiah was right when in times past he wailed, \"My beloved had a vineyard in a hill in a fruitful place … and I waited for it to bring forth grapes.\" I thirsted, and it should have given me wine \"but sprouted thorns instead.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c386"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:hcf-dionysius-of-alexandria:john.19.29:24dbe1fe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-dionysius-of-alexandria",
+      "workId": "hcf:work:hcf-dionysius-of-alexandria:fragment-42",
+      "title": "FRAGMENT 42 on john 19:29",
+      "excerpt": "The sour wine perhaps signified the sharp turn and change that happened to Jesus—freedom from suffering instead of suffering, immortality instead of death, incorruption instead of corruption, judging instead of being judged, reigning as king instead of suffering from tyranny. For the sponge, as I think, signified the entire and complete infusion of the Holy Spirit that was in him. The reed implied the royal scepter and the divine law. The hyssop showed his living and saving resurrection through which he restored us also to health.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-42",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c264"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:john.19.29:17a77e9e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:on-the-son-theological-oration-3-29-20",
+      "title": "ON THE SON, THEOLOGICAL ORATION 3(29).20 on john 19:29",
+      "excerpt": "He is given vinegar to drink mingled with gall. Who? He who turned water into wine, the destroyer of the bitter taste who is sweetness and altogether desire.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-son-theological-oration-3-29-20",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390"
+      ],
+      "targetVerseId": "kjva:john.19.29"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.29:fa3870d8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:29",
+      "excerpt": "2448 This desire could be satisfied because a bowl full of vinegar stood there. This bowl signified the Jewish synagogue, in which the wine of the Patriarchs and Prophets had degenerated into vinegar, that is, into the malice and severity of the chief priests.\r\n\r\n2449 Christ is given the vinegar, for they put a sponge full of vinegar on hyssop and held it to his mouth. There is a question on the literal meaning. How could they put the sponge to Christ's mouth, since he was hanging high off the ground? This is answered by Matthew (27:48), who says that the sponge was put on a reed. Or, according to others, it was put on hyssop, which was long, and this is what Matthew called a reed.\r\n\r\n2450 As for the mystical sense, these three things signify the three evils that were present in the Jews: the vinegar signifies their ill‑will; the sponge, full of crooked hiding places, signifies their craftiness; and the bitterness of the hyssop stands for their malice. Or, the hyssop represents the humility of Christ, for the hyssop is a bush used for purification, and our hearts are purified especially by humility: \"Sprinkle me with hyssop and I will be cleansed\" [Ps 51:7].",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.29"
     }
   ]
 }

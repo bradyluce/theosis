@@ -76,6 +76,24 @@
       ]
     },
     {
+      "id": "catena-luke-0367",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.11",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:11",
+      "excerpt": "Or it shews the wisdom of Mary, that she was not ignorant of the heavenly Majesty. For the word of God is living and strong, and sharper than the sharpest sword. (Heb. 4:12.)",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0260-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.11",
@@ -91,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.2.11:83a4e695:0"
       ]
     },
     {
@@ -130,24 +155,6 @@
       ]
     },
     {
-      "id": "catena-luke-0362",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.11",
-      "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:11",
-      "excerpt": "He has joined together honour and dishonour. For to us Christians this sign is a token of honour, but it is a sign of contradiction, inasmuch by some indeed it is received as absurd and monstrous, by others with the greatest veneration. Or perhaps Christ Himself is termed a sign, as having a supernatural existence, and as the author of signs.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0363",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.11",
@@ -156,42 +163,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 2:11",
       "excerpt": "For a sign betokens something marvellous and mysterious, which is seen indeed by the simple minded.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0365",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.11",
-      "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:11",
-      "excerpt": "Though these things are said of the Son, yet they have reference also to His mother, who takes each thing to herself, whether it be of danger or glory. He announces to her not only her prosperity, but her sorrows; for it follows. And a sword shall pierce through thy own heart.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0367",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.11",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:11",
-      "excerpt": "Or it shews the wisdom of Mary, that she was not ignorant of the heavenly Majesty. For the word of God is living and strong, and sharper than the sharpest sword. (Heb. 4:12.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -220,6 +191,42 @@
       ]
     },
     {
+      "id": "catena-luke-0362",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.11",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:11",
+      "excerpt": "He has joined together honour and dishonour. For to us Christians this sign is a token of honour, but it is a sign of contradiction, inasmuch by some indeed it is received as absurd and monstrous, by others with the greatest veneration. Or perhaps Christ Himself is termed a sign, as having a supernatural existence, and as the author of signs.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0365",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.11",
+      "topicSlugs": [],
+      "personId": "gregory-of-nyssa",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:11",
+      "excerpt": "Though these things are said of the Son, yet they have reference also to His mother, who takes each thing to herself, whether it be of danger or glory. He announces to her not only her prosperity, but her sorrows; for it follows. And a sword shall pierce through thy own heart.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0262-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.11",
@@ -231,6 +238,60 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 78,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0264-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.11",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:8–12",
+      "excerpt": "For in a mystery, those shepherds, and their flocks, signify all teachers and guides of faithful souls. The night in which they were keeping watch over their flocks, indicates the dangerous temptations from which they never cease to keep themselves, and those placed under their care. Well also at the birth of our Lord do shepherds watch over their flocks; for He was born who says, I am the good Shepherd: (John 10:11, 16.) but the time also was at hand in which the same Shepherd was to recal His scattered sheep to the pastures of life.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0370",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.11",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:11",
+      "excerpt": "But now even down to the close of the present time, the sword of the severest tribulation ceases not to go through the soul of the Church, when with bitter sorrow she experiences the evil speaking against the sign of faith, when hearing the word of God that many are raised with Christ, she finds still more falling from the faith, when at the revealing of the thoughts of many hearts, in which the good seed of the Gospel has been sown, she beholds the tares of vice overshooting it, spreading beyond it, or growing alone.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0366",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.2.11",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 2:11",
+      "excerpt": "No history tells us that Mary departed this life by being slain with the sword, therefore since not the soul but the body is killed with iron, we are left to understand that sword which is mentioned, And a sword in their lips, (Ps. 59:7.) that is, grief because of our Lord’s passion passed through her soul, who although she saw Christ the very Son of God die a voluntary death, and doubted not that He who was begotten of her flesh would overcome death, could not without grief see Him crucified.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -274,14 +335,14 @@
       ]
     },
     {
-      "id": "catena-luke-0264-v11",
+      "id": "catena-luke-0302",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.11",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
-      "title": "On Luke 2:8–12",
-      "excerpt": "For in a mystery, those shepherds, and their flocks, signify all teachers and guides of faithful souls. The night in which they were keeping watch over their flocks, indicates the dangerous temptations from which they never cease to keep themselves, and those placed under their care. Well also at the birth of our Lord do shepherds watch over their flocks; for He was born who says, I am the good Shepherd: (John 10:11, 16.) but the time also was at hand in which the same Shepherd was to recal His scattered sheep to the pastures of life.",
+      "title": "On Luke 2:11",
+      "excerpt": "Of this name the elect also in their spiritual circumcision rejoice to be partakers, that as from Christ they are called Christians, so also from the Saviour they may be called saved, which title was given them of God not only before they were conceived through faith in the womb of the Church, but even before the world began.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -310,60 +371,6 @@
       ]
     },
     {
-      "id": "catena-luke-0302",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.11",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:11",
-      "excerpt": "Of this name the elect also in their spiritual circumcision rejoice to be partakers, that as from Christ they are called Christians, so also from the Saviour they may be called saved, which title was given them of God not only before they were conceived through faith in the womb of the Church, but even before the world began.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0366",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.11",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:11",
-      "excerpt": "No history tells us that Mary departed this life by being slain with the sword, therefore since not the soul but the body is killed with iron, we are left to understand that sword which is mentioned, And a sword in their lips, (Ps. 59:7.) that is, grief because of our Lord’s passion passed through her soul, who although she saw Christ the very Son of God die a voluntary death, and doubted not that He who was begotten of her flesh would overcome death, could not without grief see Him crucified.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0370",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.2.11",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 2:11",
-      "excerpt": "But now even down to the close of the present time, the sword of the severest tribulation ceases not to go through the soul of the Church, when with bitter sorrow she experiences the evil speaking against the sign of faith, when hearing the word of God that many are raised with Christ, she finds still more falling from the faith, when at the revealing of the thoughts of many hearts, in which the good seed of the Gospel has been sown, she beholds the tares of vice overshooting it, spreading beyond it, or growing alone.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0265-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.11",
@@ -382,14 +389,14 @@
       ]
     },
     {
-      "id": "catena-luke-0301",
+      "id": "catena-luke-0371",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.11",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 2:11",
-      "excerpt": "But the name of Jesus, a glorious name and worthy of all honour, a name which is above every other, ought not first to be uttered by men, nor by them be brought into the world. Therefore significantly the Evangelist adds, which was called of the Angel, &c.",
+      "excerpt": "But the evil thoughts of men were revealed, that He Who died for us might slay them; for while they were hidden, it was impossible to utterly destroy them. Hence also when we have sinned we ought to say, Mine iniquity have I not hid. (Ps. 32:5.) For if we make known our sins not only to God, but to whoever can heal our wounds, our sins will be blotted out.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -418,14 +425,14 @@
       ]
     },
     {
-      "id": "catena-luke-0371",
+      "id": "catena-luke-0301",
       "relation": "verse",
       "targetVerseId": "kjva:luke.2.11",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-luke",
       "title": "On Luke 2:11",
-      "excerpt": "But the evil thoughts of men were revealed, that He Who died for us might slay them; for while they were hidden, it was impossible to utterly destroy them. Hence also when we have sinned we ought to say, Mine iniquity have I not hid. (Ps. 32:5.) For if we make known our sins not only to God, but to whoever can heal our wounds, our sins will be blotted out.",
+      "excerpt": "But the name of Jesus, a glorious name and worthy of all honour, a name which is above every other, ought not first to be uttered by men, nor by them be brought into the world. Therefore significantly the Evangelist adds, which was called of the Angel, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -434,6 +441,127 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.2.11:a07acaa5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 2:11",
+      "excerpt": "For today a Savior has been born to you, who is Christ the Lord, in the city of David. This is the first power, this is the kingdom of the daughter of Zion, which by the testimony of the aforesaid prophet was promised to come in the tower of the flock. Where it is noteworthy that the angel who indeed speaks to the shepherds in the watches of the night, did not say: This night but Today a Savior has been born to you. Indeed, for no other reason, but because he came to proclaim great joy. For where sorrow is signified to have been done or to be done at night, there often the night either is joined, or even alone is named. As it is said: All of you will fall away because of me this night (Matthew 26). And elsewhere: Truly I tell you, today, this very night, before the rooster crows twice, you will deny me three times (Mark 14). For it is not without reason that the angel appeared surrounded by such great light, so that it is said that the glory of God shone around the shepherds, that is, rays of light shone from every part of them, which is never added in the entire series of the Old Testament as so often when angels appeared. But mystically, he forewarned what the Apostle later openly warned, saying: The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light, let us walk properly, as in the day (Romans 13).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.11"
+    },
+    {
+      "id": "hcf:bede:luke.2.11:1ba44c98:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-6",
+      "title": "Homilies on the Gospels 1.6 on luke 2:11",
+      "excerpt": "It is good that the angel said \"has been born today\" and did not say \"this night.\" He appeared with heavenly light to those who were conducting the watch by night and brought the good news that day was born.… He who appeared temporally in the city of David as a human being from a virgin mother was, in truth, himself born before all time and without spatial limitation, light from light, true God from true God. Because, therefore, the light of life rose for those of us dwelling in the region of the shadow of death, the herald of this rising says, \"A savior has been born to you today.\" So that being always advised by this word we may remember that the night of ancient blindness is past and the day of eternal salvation has arrived. Let us cast off the works of darkness. And let us walk as children of light, \"for the fruit of the light is in all justice and holiness.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.2.11"
+    },
+    {
+      "id": "hcf:origen:luke.2.11:913fd780:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homilies-on-the-gospel-of-luke-12-2",
+      "title": "HOMILIES ON THE GOSPEL OF LUKE 12.2 on luke 2:11",
+      "excerpt": "Listen, shepherds of the churches! Listen, God's shepherds! His angel always comes down from heaven and proclaims to you, \"Today a Savior is born for you, who is Christ the Lord.\" For, unless that Shepherd comes, the shepherds of the churches will be unable to guard the flock well. Their custody is weak, unless Christ pastures and guards along with them. We read in the apostle: \"We are coworkers with God.\" A good shepherd, who imitates the good Shepherd, is a coworker with God and Christ. He is a good shepherd precisely because he has the best Shepherd with him, pasturing his sheep along with him. For \"God established in his church apostles, prophets, evangelists, shepherds and teachers. He established everything for the perfection of the saints.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:homilies-on-the-gospel-of-luke-12-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.2.11"
+    },
+    {
+      "id": "hcf:augustine:luke.2.11:1baf4449:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-372-1",
+      "title": "SERMON 372.1 on luke 2:11",
+      "excerpt": "Your faith, which has gathered you all here in this large crowd, is well aware that a Savior was born for us today. He was born of the Father always, of his mother once; of the Father without reference to sex, of his mother without the use of it. With the Father, of course, there was no womb to conceive him in; with his mother there was no male embrace to beget him. By the first nativity from the Father nature was preserved. By the second nativity from his mother the seeds of grace were sown. In the former he retained the majesty of the divine substance. In the latter he took on fellowship with us in our human mortality. And the reason he was prepared to come through this latter birth was so that he might become obedient to the death and by dying might conquer death.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.2.11"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.2.11:d0b9eeb8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 2:11",
+      "excerpt": "(Geometer.) They were alarmed at the miracle, as it follows, And they were afraid, &c. But the Angel dispels their rising fears. He not only soothes their terrors, but pours gladness into their hearts; for it follows, For, behold, I bring you good tidings of great joy, &c. not to the Jewish people only, but to all. The cause of their joy is declared; the new and wonderful birth is made manifest by the very names. It follows, For unto you is born this day in the city of David a Saviour, which is Christ the Lord. The first of these, i. e. the Saviour, has reference to the action, the third, i. e. the Lord, to the dignity of the person.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.2.11"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.2.11:2e264226:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 2:11",
+      "excerpt": "(Geometer) He marks the time of our Lord's nativity, when he says, To-day, and the place when he adds, In the city of David; and the signs thereof when it follows, And there shall be a sign, &c. Now the Angels bring tidings to the shepherds of the Chief Shepherd, as of a lamb discovered and brought up in a cave.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.2.11"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.2.11:2c9c0cfe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iii-chapter-10",
+      "title": "Against Heresies (Book III, Chapter 10) on luke 2:11",
+      "excerpt": "And the angel of the Lord, he says, appeared to the shepherds, proclaiming joy to them: \"For [Luke 2:11, etc.] there is born in the house of David, a Saviour, which is Christ the Lord. Then [appeared] a multitude of the heavenly host, praising God, and saying, Glory in the highest to God, and on earth peace, to men of good will.\" The falsely-called Gnostics say that these angels came from the Ogdoad, and made manifest the descent of the superior Christ. But they are again in error, when saying that the Christ and Saviour from above was not born, but that also, after the baptism of the dispensational Jesus, he, [the Christ of the Pleroma,] descended upon him as a dove. Therefore, according to these men, the angels of the Ogdoad lied, when they said, \"For unto you is born this day a Saviour, who is Christ the Lord, in the city of David.\" For neither was Christ nor the Saviour born at that time, by their account; but it was he, the dispensational Jesus, who is of the framer of the world, the [Demiurge], and upon whom, after his baptism, that is, after [the lapse of] thirty years, they maintain the Saviour from above descended. But why did [the angels] add, \"in the city of David,\" if they did not proclaim the glad tidings of the fulfilment of God's promise made to David, that from the fruit of his body there should be an eternal King? For the Framer [Demiurge] of the entire universe made promise to David, as David himself declares: \"My help is from God, who made heaven and earth;\" and again: \"In His hand are the ends of the earth, and the heights of the mountains are His. For the sea is His, and He did Himself make it; and His hands founded the dry land. Come ye, let us worship and fall down before Him, and weep in the presence of the Lord who made us; for He is the Lord our God.\" The Holy Spirit evidently thus declares by David to those hearing him, that there shall be those who despise Him who formed us, and who is God alone. Wherefore he also uttered the foregoing words, meaning to say: See that ye do not err; besides or above Him there is no other God, to whom ye should rather stretch out [your hands], thus rendering us pious and grateful towards Him who made, established, and [still] nourishes us. What, then, shall happen to those who have been the authors of so much blasphemy against their Creator? This identical truth was also what the angels [proclaimed]. For when they exclaim, \"Glory to God in the highest, and in earth peace,\" they have glorified with these words Him who is the Creator of the highest, that is, of super-celestial things, and the Founder of everything on earth: who has sent to His own handiwork, that is, to men, the blessing of His salvation from heaven. Wherefore he adds: \"The shepherds returned, glorifying God for all which they had heard and seen, as it was told unto them.\" [Luke 2:20] For the Israelitish shepherds did not glorify another god, but Him who had been announced by the law and the prophets, the Maker of all things, whom also the angels glorified. But if the angels who were from the Ogdoad were accustomed to glorify any other, different from Him whom the shepherds [adored], these angels from the Ogdoad brought to them error and not truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.2.11"
     },
     {
       "id": "azkoul-0171",

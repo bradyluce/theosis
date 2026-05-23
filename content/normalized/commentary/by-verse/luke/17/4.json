@@ -4,14 +4,14 @@
   "verseNumber": 4,
   "entries": [
     {
-      "id": "catena-luke-2557-v4",
+      "id": "catena-luke-2559-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.4",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:3–4",
-      "excerpt": "After the parable of the rich man who is tormented in punishment, Christ added a commandment to give forgiveness to those who turn themselves from their trespasses, lest any one through despair should not be reclaimed from his fault; and hence it is said, Take heed to yourselves.",
+      "excerpt": "That there might neither be hard-wrung pardon, nor a too easy forgiveness, neither a harsh upbraiding, to dishearten, nor an overlooking of faults, to invite to sin; therefore it is said in another place, Tell him his fault between him and thee alone. (Mat. 18:15.) For better is a friendly correction, than a quarrelsome accusation. The one strikes shame into a man, the other moves his indignation. He who is admonished will more likely be saved, because he fears to be destroyed. For it is well that he who is corrected should believe you to be rather his friend than his enemy. For we more…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-luke-2559-v4",
+      "id": "catena-luke-2557-v4",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.4",
       "topicSlugs": [],
       "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 17:3–4",
-      "excerpt": "That there might neither be hard-wrung pardon, nor a too easy forgiveness, neither a harsh upbraiding, to dishearten, nor an overlooking of faults, to invite to sin; therefore it is said in another place, Tell him his fault between him and thee alone. (Mat. 18:15.) For better is a friendly correction, than a quarrelsome accusation. The one strikes shame into a man, the other moves his indignation. He who is admonished will more likely be saved, because he fears to be destroyed. For it is well that he who is corrected should believe you to be rather his friend than his enemy. For we more…",
+      "excerpt": "After the parable of the rich man who is tormented in punishment, Christ added a commandment to give forgiveness to those who turn themselves from their trespasses, lest any one through despair should not be reclaimed from his fault; and hence it is said, Take heed to yourselves.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.17.4:b9495f6e:0"
       ]
     },
     {
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.17.4:eaa884db:0"
       ]
     },
     {
@@ -109,6 +123,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.17.4:f1e7e4ad:0"
       ]
     },
     {
@@ -128,6 +149,108 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.17.4:3ec09e39:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:4",
+      "excerpt": "Then, as if someone were to say: let it be so, Lord! You have distinguished this well; but what is to be done with the one who has been forgiven many times and offends again? The Lord says: if he repents again, forgive him. And further: \"if... he turns back seven times in a day,... forgive him.\" And the phrase \"seven times in a day\" is used here in place of \"many times,\" just as in the expression: \"even the barren woman bears seven times\" (1 Sam. 2:5). Therefore, as many times as he repents, so many times must you forgive him. And do not think that the Lord is setting a number of how many times to forgive, but, as I said before, understand \"seven times in a day\" in the sense of \"many times\" and innumerably. For we say in ordinary conversation: in such-and-such a city there are a myriad (ten thousand) inhabitants, but we say this not because there are actually ten thousand inhabitants in it, for there may be even more, but instead of calling the city very populous, we say that it has ten thousand inhabitants. And that \"seven times in a day\" is used in this sense is evident from the Gospel of Matthew (Matt. 18:21–22). For there, when Peter said: Lord, must I forgive him (my brother) up to seven times? The Lord said: not \"up to seven, but up to seventy times seven,\" signifying by this an innumerable multitude of times.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.17.4"
+    },
+    {
+      "id": "hcf:bede:luke.17.4:ee24d636:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:4",
+      "excerpt": "And if he sins against you seven times in a day, and seven times in a day turns back to you, saying: I repent, forgive him. The number seven does not set a limit for granting forgiveness, but either commands that all sins should be forgiven, or that the one repenting should always be forgiven. For often the universality of any matter or time is indicated by the number seven. Hence it is sung in the psalm: Seven times a day I have praised you (Psalm 119), which means nothing other than His praise is always in my mouth (Psalm 34). For elsewhere too, when Peter asked how many times he should forgive a brother sinning against him, and he said up to seven times, the Lord replied: I do not say to you up to seven times, but up to seventy times seven (Matthew 18), that is, four hundred and ninety times. So you should forgive your brother sinning that many times in a day, as he could not sin that many times. Therefore, if a brother sins against you and repents, you have the power, indeed the necessity, to forgive him, so that the Father who is in heaven may also forgive you when you repent and ask for mercy. But if he, having been reprimanded, neglects to convert and to do penance, consider what the judgment of truth decrees about this. If your brother sins against you, go and correct him, and so on, up to where he says: If he refuses to listen even to the church, let him be to you as a Gentile and a tax collector. And deservedly so, because under the name of the faithful he performed the works of the unfaithful. Certainly, we are commanded to give forgiveness differently to a brother who asks for it and differently to an enemy who persecutes. To the former, so that, having received forgiveness for the sin by which he harmed us innocents, he may join us in communal charity; to the latter, that while he wishes evil upon us and, if possible, does it, we may always wish and do good to him as far as we can. For David could not extend the same measure of forgiveness to his persecutors, deprived of the remedy of penance and despite compassionately mourning for them, as Joseph kindly and recognizably extended to his brothers, corrected with salutary contrition.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.4"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.17.4:cc29cc52:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-3",
+      "title": "The Instructor Book 3 on luke 17:4",
+      "excerpt": "Further, in respect to forbearance. \"If thy brother,\" it is said, \"sin against thee, rebuke him; and if he repent, forgive him. If he sin against thee seven times in a day, and turn to thee the seventh time, and say, I repent, forgive him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.17.4"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.17.4:7f16a7ae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homilies-113-16",
+      "title": "COMMENTARY ON LUKE, HOMILIES 113-16 on luke 17:4",
+      "excerpt": "He says, \"If he who sins against you repents and acknowledges his fault, you shall forgive him not only once, but very many times.\" We … must rather imitate those whose business it is to heal our bodily diseases and who do not care for a sick person once only or twice, but just as often as he happens to become ill. Let us remember that we also are liable to infirmities and overpowered by our passions. This being the case, we pray that those who have the duty to rebuke us and who have the authority to punish us may show themselves forgiving and kind to us. It is our duty, having a common feeling for our mutual infirmities, to bear one another's burdens, so we will fulfill the law of Christ. Observe also that in the Gospel according to Matthew, Peter makes the inquiry, \"How often will my brother sin against me, and I forgive him?\" The Lord then tells the apostles, \"Although he sins seven times in the day,\" that is, frequently, \"and will acknowledge his fault, you shall forgive him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homilies-113-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.17.4"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:luke.17.4:c5e10ebe:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-refutation-of-all-heresies-book-v",
+      "title": "Hippolytus Refutation of All Heresies Book V on luke 17:4",
+      "excerpt": "But they assert that not only is there in favour of their doctrine, testimony to be drawn from the mysteries of the Assyrians, but also from those of the Phrygians concerning the happy nature-concealed, and yet at the same time disclosed-of things that have been, and are coming into existence, and moreover will be,-(a happy nature) which, (the Naassene) says, is the kingdom of heaven to be sought for within a man. And concerning this (nature) they hand down an explicit passage, occurring in the Gospel inscribed according to Thomas, expressing themselves thus: \"He who seeks me, will find me in children from seven years old; for there concealed, I shall in the fourteenth age be made manifest.\" This, however, is not (the teaching) of Christ, but of Hippocrates, who uses these words: \"A child of seven years is half of a father.\" And so it is that these (heretics), placing the originative nature of the universe in causative seed, (and) having ascertained the (aphorism) of Hippocrates, that a child of seven years old is half of a father, say that in fourteen years, according to Thomas, he is manifested. This, with them, is the ineffable and mystical Logos. They assert, then, that the Egyptians, who after the Phrygians, it is established, are of greater antiquity than all mankind, and who confessedly were the first to proclaim to all the rest of men the rites and orgies of, at the same time, all the gods, as well as the species and energies (of things), have the sacred and august, and for those who are not initiated, unspeakable mysteries of Isis. These, however, are not anything else than what by her of the seven dresses and sable robe was sought and snatched away, namely, the pudendum of Osiris. And they say that Osiris is water. But the seven-robed nature, encircled and arrayed with seven mantles of ethereal texture-for so they call the planetary stars, allegorizing and denominating them ethereal robes,-is as it were the changeable generation, and is exhibited as the creature transformed by the ineffable and unportrayable, and inconceivable and figureless one. And this, (the Naassene) says, is what is declared in Scripture, \"The just will fall seven times, and rise again.\" For these falls, he says, are the changes of the stars, moved by Him who puts all things in motion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:luke.17.4"
+    },
+    {
+      "id": "hcf:tertullian:luke.17.4:f9f7275c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 17:4",
+      "excerpt": "Nor is it to be wondered at, if He thus teaches who forbids your refusing to bring back even your brother's cattle, if you find them astray in the road; much more should you bring back your erring brother to himself. He commands you to forgive your brother, should he trespass against you even \"seven times.\" But that surely, is a small matter; for with the Creator there is a larger grace, when He sets no limits to forgiveness, indefinitely charging you \"not to bear any malice against your brother,\" and to give not merely to him who asks, but even to him who does not ask.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.17.4"
     }
   ]
 }

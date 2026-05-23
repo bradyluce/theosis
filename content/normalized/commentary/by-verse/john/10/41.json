@@ -41,14 +41,14 @@
       ]
     },
     {
-      "id": "catena-john-1442-v41",
+      "id": "catena-john-1446-v41",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.41",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 10:39–42",
-      "excerpt": "Christ, after discoursing on some high truth, commonly retires immediately, to give time to the fury of people to abate, during His absence. Thus He did now: He went away again beyond Jordan, into the place where John at first baptized. He went there that He might recall to people’s minds, what had gone on there; John’s preaching and testimony to Himself.",
+      "excerpt": "These laid hold of Him while abiding, not, like the Jews, when departing. Let us approach by the candle to the day. John is the candle, and gave testimony to the day.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -74,6 +74,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.10.41:2744d6cb:0"
       ]
     },
     {
@@ -95,35 +102,17 @@
       ]
     },
     {
-      "id": "catena-john-1446-v41",
+      "id": "catena-john-1442-v41",
       "relation": "verse",
       "targetVerseId": "kjva:john.10.41",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 10:39–42",
-      "excerpt": "These laid hold of Him while abiding, not, like the Jews, when departing. Let us approach by the candle to the day. John is the candle, and gave testimony to the day.",
+      "excerpt": "Christ, after discoursing on some high truth, commonly retires immediately, to give time to the fury of people to abate, during His absence. Thus He did now: He went away again beyond Jordan, into the place where John at first baptized. He went there that He might recall to people’s minds, what had gone on there; John’s preaching and testimony to Himself.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1440-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.10.41",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-john",
-      "title": "On John 10:39–42",
-      "excerpt": "The Jews still persist in their madness; Therefore they sought again to take Him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -139,6 +128,31 @@
       "workId": "catena-aurea-john",
       "title": "On John 10:39–42",
       "excerpt": "He was followed there by many: And many resorted unto Him, and said, John did no miracle.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.10.41:df3fd962:0"
+      ]
+    },
+    {
+      "id": "catena-john-1440-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.10.41",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-john",
+      "title": "On John 10:39–42",
+      "excerpt": "The Jews still persist in their madness; Therefore they sought again to take Him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -164,7 +178,82 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.10.41:ce776373:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.10.41:1cab2e15:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-48",
+      "title": "Tractates on John 48 on john 10:41",
+      "excerpt": "\"And He went away again beyond Jordan, into the place where John at first baptized; and there He abode. And many resorted unto Him, and said, John, indeed; did no miracle.\" You remember what was said of John, that he was a light, and bore witness to the day. Why, then, say these among themselves, \"John did no miracle\"? John, they say, signalized himself by no miracle; he did not put devils to flight, he drove away no fever, he enlightened not the blind, he raised not the dead, he fed not so many thousand men with five or seven loaves, he walked not upon the sea, he commanded not the winds and the waves. None of these things did John, and in all he said he bore witness to this man. By lamp-light we may advance to the day. \"John did no miracle: but all things that John spake of this man were true.\" Here are those who apprehended in a different way from the Jews. The Jews wished to apprehend one who was departing from them, these apprehended one who remained with them. In a word, what is it that follows? \"And many believed on Him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.10.41"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.10.41:d5f8c328:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-61",
+      "title": "Homily on the Gospel of John 61 on john 10:41",
+      "excerpt": "\"Therefore they sought again to take Him, but He escaped out of their hands, and went away again beyond Jordan, into the place where John at first baptized. And many resorted unto Him, and said, John did no miracle, but all things that John spake of this man were true.\"\r\n\r\nWhen He hath uttered anything great and sublime, He quickly retireth, giving way to their anger, so that the passion may abate and cease through His absence. And thus He acted at that time. But wherefore doth the Evangelist mention the place? That thou mayest learn that He went there to remind them of the things there done and said by John, and of his testimony; at least when they came there, they straightway remembered John. Wherefore also they said, \"John indeed did no miracle,\" since how did it follow that they should add this, unless the place had brought the Baptist to their memory, and they had come to remember his testimony. And observe how they form incontrovertible syllogisms. \"John indeed did no miracle,\" \"but this man doth,\" saith some one; \"hence therefore his superiority is shown. If therefore men believed him who did no miracles, much more must they believe this man.\" Then, since it was John who bore the witness, lest his having done no miracle might seem to prove him unworthy of being a witness, they added, \"Yet if he did no miracle, still he spake all things truly concerning this man\"; no longer proving Christ to be trustworthy by means of John, but John to be so by what Christ had done.\r\n\r\n\"Many therefore believed on Him.\" There were many things that attracted them. They remembered the words which John had spoken, calling Christ \"mightier than himself,\" and \"light,\" and \"life,\" and \"truth,\" and all the rest. They remembered the Voice which came down from heaven, and the Spirit which appeared in the shape of a dove, and pointed Him out to all; and with this they recollected the demonstration afforded by the miracles, looking to which they were for the future established. \"For,\" saith some one, \"if it was right that we should believe John, much more ought we to believe this man; if him without miracles, much more this man, who besides the testimony of John, hath also the proof from miracles.\" Seest thou how much the abiding in this place, and the being freed from the presence of evil men, profited them? wherefore Jesus continually leadeth and draweth them away from the company of those persons; as also He seemeth to have done under the old Covenant, forming and ordering the Jews in all points, in the desert, at a distance from the Egyptians.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.10.41"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.10.41:58a5b54c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 10:41",
+      "excerpt": "That His stay here benefited many is evident from the fact that the Evangelist adds: \"Many came to Him and, remembering this place, said that John performed no miracle.\" Their words have this meaning: if we believed him (John), even though he performed no miracle, then all the more should we believe This One (Jesus), since He performed so many miracles.\r\nSince John had already testified about Christ, yet performed no miracle and therefore could have been considered unreliable, the Evangelist adds: \"All that John said about Him was true.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.10.41"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.10.41:b0a4af9b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 10:41",
+      "excerpt": "The effect of this turning away was that many were converted to the faith. Three points are made about this conversion. First, many imitated his works; so he says, and many came to him, namely, by imitating his works: \"Come to me, all who labor and are heavy laden, and I will give you rest\" (Matt 11:28). Secondly, many professed him in word, and they said, John did no sign. By this they profess Christ's superiority to John. The reason for this was that John was sent as a witness to Christ; thus he should show that he was worthy to be believed and his testimony would be shown to be true. Now this is fittingly done by holiness of life. On the other hand, Christ came as God; consequently, it was fitting that he show the signs of divine power. And so John stood out by the sanctity of his life; Christ, however, in addition to this, performed works which manifested his divine power. This was in accord with the practice of the rulers of antiquity that when in the presence of a higher power a lesser power did not display the insignia of its power. Thus, in the presence of the Dictator, the Consuls took down their insignia. So it was not fitting that John, who possessed less power, because he was a precursor and witness, should employ the insignia of divine power; only Christ should have done this. They profess the truth of John's witness to Christ, saying, but everything that John said about this man, Christ, was true. They were saying: Although John did no sign, he nevertheless said all things truthfully about Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.10.41"
     }
   ]
 }

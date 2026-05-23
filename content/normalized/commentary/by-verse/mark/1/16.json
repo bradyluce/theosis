@@ -4,24 +4,6 @@
   "verseNumber": 16,
   "entries": [
     {
-      "id": "catena-mark-0073-v16",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.16",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:16–20",
-      "excerpt": "Now fishers and unlettered men are sent to preach, that the faith of believers might be thought to lie in the power of God, not in eloquence or in learning. It goes on to say, and immediately they left their nets, and followed him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0075-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.16",
@@ -37,20 +19,27 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.16:bf73c2c9:0"
       ]
     },
     {
-      "id": "catena-mark-0071-v16",
+      "id": "catena-mark-0073-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.16",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:16–20",
-      "excerpt": "As the Evangelist John relates, Peter and Andrew were disciples of the Forerunner, but seeing that John had borne witness to Jesus, they joined themselves to him; afterwards, grieving that John had been cast into prison, they returned to their trade. Wherefore there follows, casting nets into the sea, for they were fishers. Look then upon them, living on their own labours, not on the fruits of iniquity; for such men were worthy to become the first disciples of Christ; whence it is subjoined, And Jesus said unto them, Come ye after me. Now He calls them for the second time; for this is the…",
+      "excerpt": "Now fishers and unlettered men are sent to preach, that the faith of believers might be thought to lie in the power of God, not in eloquence or in learning. It goes on to say, and immediately they left their nets, and followed him.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -76,6 +65,31 @@
       ]
     },
     {
+      "id": "catena-mark-0071-v16",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.16",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:16–20",
+      "excerpt": "As the Evangelist John relates, Peter and Andrew were disciples of the Forerunner, but seeing that John had borne witness to Jesus, they joined themselves to him; afterwards, grieving that John had been cast into prison, they returned to their trade. Wherefore there follows, casting nets into the sea, for they were fishers. Look then upon them, living on their own labours, not on the fruits of iniquity; for such men were worthy to become the first disciples of Christ; whence it is subjoined, And Jesus said unto them, Come ye after me. Now He calls them for the second time; for this is the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.16:9ba66b0d:0"
+      ]
+    },
+    {
       "id": "catena-mark-0072-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.16",
@@ -94,6 +108,75 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.1.16:ae67c0a4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:16",
+      "excerpt": "Peter and Andrew were first disciples of the Forerunner, and when they saw Jesus, to whom John had borne witness, they joined Him. Then, when John was betrayed, they sorrowfully returned again to their former occupation. So Christ calls them now a second time, for the present calling is already the second. Note that they were nourished by their own righteous labors and not by unrighteous occupations. Such men were worthy to be the first disciples of Christ. Immediately casting aside what was in their hands, they followed Him; for one must not delay, but must follow at once.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.16"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.16:46a4d3fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:16",
+      "excerpt": "We must know also, that action is first called, then contemplation; for Peter is the type of the active life, for he was more ardent than the others, just as the active life is the more bustling; but John is the type of the contemplative life, for he speaks more fully of divine things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.16"
+    },
+    {
+      "id": "hcf:bede:mark.1.16:1d187aa5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:16",
+      "excerpt": "And passing along the Sea of Galilee, He saw Simon and Andrew, etc. These were the first to be called to follow the Lord. Fishermen and unlearned men are sent to preach, so that the faith of believers would not be thought to rest in human eloquence and learning but in the power of God. It is possible, however, to ask how He called the fishermen two by two from their boats: first Peter and Andrew, then moving a little further, the other two sons of Zebedee, as Matthew and Mark recount, while Luke says their two boats were filled with that great catch of fish, and he mentions James and John, the sons of Zebedee, as Peter's partners called to help, when they could not pull in the nets due to the fullness, and all marveled at the multitude of fish that had been caught, and He said only to Peter: Fear not, from henceforth thou shalt catch men (Luke 5), yet they followed Him with their boats drawn up on land. From this, it is understood that what Luke suggests first happened indeed, and that they were not yet called by the Lord at that time, but it was only foretold to Peter that he would catch men. This was not said as if he would never catch fish again. For after the Lord's resurrection, we read that they went fishing. It was said, therefore, that henceforth he would catch men, not that he would no longer catch fish. Thus, according to Luke, we understand they went back to fishing customarily, so that later what Matthew and Mark recount happened, when He called them two by two, and He commanded them to follow Him, first the two of Peter and Andrew, then the two sons of Zebedee. For then, without dragging their boats to shore as if preoccupied with returning, they followed Him as one who called and commanded them to follow. And they entered Capernaum; and immediately on the Sabbath, He entered the synagogue and taught them. That He frequented the very gifts of His teaching and healing on the Sabbaths, He teaches that He is not under the law but above the law, who also came to fulfill the same law, not to dissolve it; not to choose the Jewish Sabbath, on which it was neither permitted to kindle a fire nor to move hand or foot, but the true Sabbath, and the rest beloved to the Lord, if we dedicate ourselves to the salvation of souls, abstaining from servile work, that is, from all illicit actions.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.16"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:mark.1.16:15fc12ce:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:untitled-commentary",
+      "title": "Commentary on mark 1:16",
+      "excerpt": "Reflect on the nature and grandeur of the one Almighty God who could associate himself with the poor of the lowly fisherman's class. To use them to carry out God's mission baffles all rationality. For having conceived the intention, which no one ever before had done, of spreading his own commands and teachings to all nations, and of revealing himself as the teacher of the religion of the one Almighty God to all humanity, he thought good to use the most unsophisticated and common people as ministers of his own design. Maybe God just wanted to work in the most unlikely way. For how could inarticulate folk be made able to teach, even if they were appointed teachers to only one person, much less to a multitude? How should those who were themselves without education instruct the nations? … When he had thus called them as his followers, he breathed into them his divine power, and filled them with strength and courage. As God himself he spoke God's true word to them in his own way, enabling them to do great wonders, and made them pursuers of rational and thinking souls, by empowering them to come after him, saying: \"Come, follow me, and I will make you fish for people.\" With this empowerment God sent them forth to be workers and teachers of holiness to all the nations, declaring them heralds of his own teaching.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:mark.1.16"
+    },
+    {
       "id": "catena-mark-0070-v16",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.16",
@@ -109,6 +192,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:mark.1.16:053d3a9d:0"
       ]
     },
     {
@@ -127,6 +217,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.16:8be8d36f:0"
       ]
     }
   ]

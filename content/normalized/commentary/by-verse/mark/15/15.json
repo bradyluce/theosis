@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-mark-1282-v15",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.15.15",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:6–15",
-      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-1285-v15",
       "relation": "verse",
       "targetVerseId": "kjva:mark.15.15",
@@ -109,6 +91,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.15:218c9ef1:1"
+      ]
+    },
+    {
+      "id": "catena-mark-1282-v15",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.15",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:6–15",
+      "excerpt": "Pilate furnished many opportunities of releasing Jesus, in the first place contrasting a robber with the Just One. Wherefore it is said, Now at that feast he released unto them one prisoner, whomsoever they desired.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -145,7 +152,116 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.15.15:42e42b98:1"
       ]
+    },
+    {
+      "id": "hcf:bede:mark.15.15:76f834be:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:15",
+      "excerpt": "But Pilate, willing to satisfy the people, released Barabbas to them and delivered Jesus, after having him scourged, to be crucified. Jesus, however, is understood to have been scourged not by another, but by Pilate himself. For John writes openly: They all cried again, saying: Not this man, but Barabbas. Now Barabbas was a robber. Then Pilate took Jesus and scourged him (John XVIII). And then he adds: And the soldiers, weaving a crown of thorns, placed it on his head, etc. (John XIX). Indeed, he is believed to have done this and to have delivered him to the soldiers to be mocked, so that, satisfied with his pains and insults, they might willingly stop desiring his death. This was done, for it was written: Many are the stripes of the wicked (Psalm XXXI), he was scourged so that we might be freed from beatings, the Scripture saying: The scourge shall not approach your tabernacle (Psalm XC).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.15"
+    },
+    {
+      "id": "hcf:augustine:mark.15.15:1180df44:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-31-11",
+      "title": "TRACTATES ON JOHN 31.11 on mark 15:15",
+      "excerpt": "The criminal escaped; Christ was condemned. The one guilty of many crimes received a pardon; he who had remitted the crimes of all who confess was condemned. And yet the cross itself also, if you reflect upon it, was a courtroom. In the middle of it stood the final judge.",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractates-on-john-31-11",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.15"
+    },
+    {
+      "id": "hcf:augustine:mark.15.15:b3a01ace:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-31-11",
+      "title": "TRACTATES ON JOHN 31.11 on mark 15:15",
+      "excerpt": "For Christ was not separated from the ungodly, but was judged with the ungodly; for it was said about him, \"He was counted among the wicked.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractates-on-john-31-11",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.15"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.15:1f3475d2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:15",
+      "excerpt": "Finally, yielding to their demand, he had the Lord scourged, that is, struck with a leather whip, so that it would appear that they had received Him as one already condemned at the tribunal, and \"handed Him over to be crucified.\" For he wished to do what was pleasing and agreeable to the people, and not what was pleasing to God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.15"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:mark.15.15:43b22015:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-ix-on-the-advantage-of-patience-7",
+      "title": "Treatise IX. On the Advantage of Patience 7 on mark 15:15",
+      "excerpt": "He himself suffered the lash, in whose name his servants now scourge the devil and his angels. He who now crowns the martyrs with eternal garlands was himself crowned with thorns.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:mark.15.15"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:mark.15.15:40f9bd84:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:commentary-on-tatian-s-diatessaron",
+      "title": "COMMENTARY ON TATIAN'S DIATESSARON on mark 15:15",
+      "excerpt": "[The daughter of Zion] repaid him with evil for the immensity of his grace. The Father had washed her from her blood, but she defiled his Son with her spitting. The Father had clothed her with fine linen and purple, but she clothed him with garments of mockery. He had placed a crown of glory on her head, but she plaited a crown of thorns for him. He had nourished her with choicest food and honey, but she gave him gall. He had given her pure wine, but she offered him vinegar in a sponge. The One who had introduced her into cities, she drove out into the desert. The One who had put shoes on her feet, she made hasten barefoot towards Golgotha. The One who had girded her loins with sapphire, she pierced in the side with a lance. When she had outraged the servants [of God] and killed the prophets, she was led into captivity to Babylon, and when the time of her punishment was completed, her return [from captivity] took place.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-tatian-s-diatessaron",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.15.15"
     },
     {
       "id": "catena-mark-1283-v15",
@@ -181,6 +297,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.15.15:1b2d6420:0"
       ]
     }
   ]

@@ -4,6 +4,24 @@
   "verseNumber": 57,
   "entries": [
     {
+      "id": "catena-mark-1243-v57",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.57",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:53–59",
+      "excerpt": "For charity is the fire of which it is said, I am come to send fire on the earth, (Luke 12:49) which flame coming down on the believers, taught them to speak with various tongues the praise of the Lord. There is also a fire of covetousness, of which it is said, They are all adulterers as an oven; (Hosea 7:4) this fire, raised up in the hall of Caiaphas by the suggestion of an evil spirit, was arming the tongues of the traitors to deny and blaspheme the Lord. For the fire lit up in the hall amidst the cold of the night was a figure of what the wicked assembly was doing within; for because of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1239-v57",
       "relation": "verse",
       "targetVerseId": "kjva:mark.14.57",
@@ -30,24 +48,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:53–59",
       "excerpt": "But rightly does he follow afar off, who is just about to betray Him; for he could not have denied Christ, if he had remained close to Him. There follows, And he sat with the servants, and warmed himself at the fire.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1243-v57",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.57",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:53–59",
-      "excerpt": "For charity is the fire of which it is said, I am come to send fire on the earth, (Luke 12:49) which flame coming down on the believers, taught them to speak with various tongues the praise of the Lord. There is also a fire of covetousness, of which it is said, They are all adulterers as an oven; (Hosea 7:4) this fire, raised up in the hall of Caiaphas by the suggestion of an evil spirit, was arming the tongues of the traitors to deny and blaspheme the Lord. For the fire lit up in the hall amidst the cold of the night was a figure of what the wicked assembly was doing within; for because of…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -109,7 +109,49 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.14.57:534f7549:1"
       ]
+    },
+    {
+      "id": "hcf:pseudo-jerome:mark.14.57:bfce0c76:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "hcf:work:pseudo-jerome:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 14:57",
+      "excerpt": "There follows, And there arose certain, and bare false witness against him, saying, We heard him say, I will destroy this temple that is made with hands, and within three days I will build another made without hands. It is usual with heretics out of the truth to extract the shadow; He did not say what they said, but something like it, of the temple of His body, which He raised again after two days.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.14.57"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.14.57:5be0691f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 14:57",
+      "excerpt": "For the Lord did not say, \"I will destroy the temple,\" but \"destroy,\" nor did He say \"a temple made with hands,\" but simply \"the temple.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.14.57"
     },
     {
       "id": "catena-mark-1238-v57",
@@ -120,6 +162,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:53–59",
       "excerpt": "The Evangelist had related above how our Lord had been taken by the servants of the Priests, now he begins to relate how He was condemned to death in the house of the High Priest: wherefore it is said, And they led Jesus away to the High Priest.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1245-v57",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.14.57",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 14:53–59",
+      "excerpt": "But iniquity lied as the queen did against Joseph, and the priests against Susannah, but a flame goes out, if it has no fuel; wherefore it goes on, And found none. For many bare false witness against him, but their witness agreed not together. For whatever is not consistent is held to be doubtful. There follows, And there arose certain, and bare false witness against him, saying, We heard him say, I will destroy this temple that is made with hands, and within three days I will build another made without hands. It is usual with heretics out of the truth to extract the shadow; He did not say…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -156,24 +216,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 14:53–59",
       "excerpt": "He warms himself at the fire in the hall, with the servants. The hall of the High-Priest is the enclosure of the world, the servants are the devils, with whom whosoever remains cannot weep for his sins; the fire is the desire of the flesh.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-1245-v57",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.14.57",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 14:53–59",
-      "excerpt": "But iniquity lied as the queen did against Joseph, and the priests against Susannah, but a flame goes out, if it has no fuel; wherefore it goes on, And found none. For many bare false witness against him, but their witness agreed not together. For whatever is not consistent is held to be doubtful. There follows, And there arose certain, and bare false witness against him, saying, We heard him say, I will destroy this temple that is made with hands, and within three days I will build another made without hands. It is usual with heretics out of the truth to extract the shadow; He did not say…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

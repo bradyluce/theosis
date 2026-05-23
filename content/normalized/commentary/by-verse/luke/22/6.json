@@ -4,14 +4,14 @@
   "verseNumber": 6,
   "entries": [
     {
-      "id": "catena-luke-3076-v6",
+      "id": "catena-luke-3081-v6",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.6",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:3–6",
-      "excerpt": "St. Luke gives his surname, because there was another Judas.",
+      "excerpt": "By covetousness then Judas became what he was, for it follows, And they covenanted to give him money. Such are the evil passions which covetousness engenders, it makes men irreligious, and compels them to lose all knowledge of God, though they have received a thousand benefits from Him, nay, even to injure Him, as it follows, And he contracted with them.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -40,35 +40,17 @@
       ]
     },
     {
-      "id": "catena-luke-3081-v6",
+      "id": "catena-luke-3076-v6",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.6",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:3–6",
-      "excerpt": "By covetousness then Judas became what he was, for it follows, And they covenanted to give him money. Such are the evil passions which covetousness engenders, it makes men irreligious, and compels them to lose all knowledge of God, though they have received a thousand benefits from Him, nay, even to injure Him, as it follows, And he contracted with them.",
+      "excerpt": "St. Luke gives his surname, because there was another Judas.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3078-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.6",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:3–6",
-      "excerpt": "There is nothing contrary to this in what John says, that after the sop Satan entered into Judas; seeing he now entered into him as a stranger, but then as his own, whom he might lead after him to do whatsoever he willed.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -91,20 +73,27 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.6:a0f9658a:0"
       ]
     },
     {
-      "id": "catena-luke-3074-v6",
+      "id": "catena-luke-3078-v6",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.6",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:3–6",
-      "excerpt": "Having already said that the Chief Priests sought means how they might slay Jesus without incurring any danger, he next goes on to relate the means which occurred to them, as it is said, Then entered Satan into Judas.",
+      "excerpt": "There is nothing contrary to this in what John says, that after the sop Satan entered into Judas; seeing he now entered into him as a stranger, but then as his own, whom he might lead after him to do whatsoever he willed.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -130,6 +119,24 @@
       ]
     },
     {
+      "id": "catena-luke-3074-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.6",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:3–6",
+      "excerpt": "Having already said that the Chief Priests sought means how they might slay Jesus without incurring any danger, he next goes on to relate the means which occurred to them, as it is said, Then entered Satan into Judas.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-3082-v6",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.6",
@@ -141,6 +148,31 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.6:ef5ce7f9:1"
+      ]
+    },
+    {
+      "id": "catena-luke-3077-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.6",
+      "topicSlugs": [],
+      "personId": "titus-bostra",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:3–6",
+      "excerpt": "And he adds, one of the twelve, since he made up the number, though he did not truly discharge the Apostolic office. Or the Evangelist adds this, as it were for contrast sake. As if he said, “He was of the first band of those who were especially chosen.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,22 +198,21 @@
       ]
     },
     {
-      "id": "catena-luke-3077-v6",
+      "id": "hcf:theophylact-of-ohrid:luke.22.6:16fb481e:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.22.6",
       "topicSlugs": [],
-      "personId": "titus-bostra",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:3–6",
-      "excerpt": "And he adds, one of the twelve, since he made up the number, though he did not truly discharge the Apostolic office. Or the Evangelist adds this, as it were for contrast sake. As if he said, “He was of the first band of those who were especially chosen.”",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:6",
+      "excerpt": "Thus Judas received Satan who had entered into him and agreed to betray Jesus to those seeking Him. For this is what the word \"promised\" means, that is, he finally concluded the terms and the agreement. And he sought a convenient time when he might find Him (Jesus) without the crowd, that is, alone, and deliver Him to them.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.6"
     }
   ]
 }

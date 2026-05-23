@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-luke-0615-v7",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.4.7",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 4:5–8",
-      "excerpt": "Truly in a moment of time, the kingdoms of this world are described. For here it is not so much the rapid glance of sight which is signified as is declared the frailty of mortal power. For in a moment all this passes by, and oftentimes the glory of this world has vanished before it has arrived. It follows, And he said unto him, I will give thee all this power.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-0617-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.7",
@@ -55,17 +37,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.4.7:c2baca27:0"
       ]
     },
     {
-      "id": "catena-luke-0618-v7",
+      "id": "catena-luke-0615-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.7",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 4:5–8",
-      "excerpt": "And dost thou, whose lot is the unquenchable fire, promise to the Lord of all that which is His own? Didst thou think to have Him for thy worshipper, from dread of whom the whole creation trembles?",
+      "excerpt": "Truly in a moment of time, the kingdoms of this world are described. For here it is not so much the rapid glance of sight which is signified as is declared the frailty of mortal power. For in a moment all this passes by, and oftentimes the glory of this world has vanished before it has arrived. It follows, And he said unto him, I will give thee all this power.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,21 +101,28 @@
       ]
     },
     {
-      "id": "catena-luke-0620-v7",
+      "id": "catena-luke-0618-v7",
       "relation": "verse",
       "targetVerseId": "kjva:luke.4.7",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 4:5–8",
-      "excerpt": "The devil saying to our Saviour, If thou wilt fall down and worship me, receives answer that he himself ought rather to worship Christ as his Lord and God.",
+      "excerpt": "And dost thou, whose lot is the unquenchable fire, promise to the Lord of all that which is His own? Didst thou think to have Him for thy worshipper, from dread of whom the whole creation trembles?",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.4.7:f7408f08:0"
       ]
     },
     {
@@ -138,6 +134,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 4:5–8",
       "excerpt": "But some one may ask how this injunction agrees with the word of the Apostle, which says, Beloved, serve one another. (Gal. 5:13.) In the Greek, δουλεία signifies a common service, (i. e. given either to God or man,) according to which we are bid to serve one another; but λατρεία is the service due to the worship of the Deity, with which we are bid to serve God alone.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0620-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.4.7",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 4:5–8",
+      "excerpt": "The devil saying to our Saviour, If thou wilt fall down and worship me, receives answer that he himself ought rather to worship Christ as his Lord and God.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -199,6 +213,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:luke.4.7:2d11cd53:0"
       ]
     },
     {
@@ -213,6 +234,24 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0616-v7",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.4.7",
+      "topicSlugs": [],
+      "personId": "titus-bostra",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 4:5–8",
+      "excerpt": "He lied in two respects. For he neither had to give, nor could he give that which he had not; he gains possession of nothing, but is an enemy reduced to fight.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 65,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -238,22 +277,38 @@
       ]
     },
     {
-      "id": "catena-luke-0616-v7",
+      "id": "hcf:gregory-the-great:luke.4.7:fb7b0387:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.4.7",
       "topicSlugs": [],
-      "personId": "titus-bostra",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 4:5–8",
-      "excerpt": "He lied in two respects. For he neither had to give, nor could he give that which he had not; he gains possession of nothing, but is an enemy reduced to fight.",
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-16",
+      "title": "Forty Gospel Homilies, Homily 16 on luke 4:7",
+      "excerpt": "\"All these things I will give you, if you fall down and worship me.\" By the same means by which the ancient enemy overthrew the first man through avarice—for he tempted him through the advancement of avarice when he said: Knowing good and evil—by those same means he was overcome when he tempted the second man.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.4.7"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.4.7:b9bbec80:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-12",
+      "title": "Commentary on the Gospel of Luke, Sermon 12 on luke 4:7",
+      "excerpt": "But O thou malignant, and wicked, and accursed being, how didst thou dare to shew the Lord all the kingdoms of the whole creation, and say, \"All these are mine? Now therefore if Thou wilt fall down and worship me, I will give them Thee.\" How dost thou promise that which is not thine? Who made thee heir of God's kingdom? Who made thee lord of all under heaven? Thou hast seized these things by fraud. Restore them therefore to the incarnate Son, the Lord of all. Hear what the prophet Isaiah says respecting thee; \"Hath it been prepared for thee also to reign? a deep gulf, fire, and brimstone, and wood laid in order; the anger of the Lord as a gulf burning with brimstone.\" How then dost thou, whose lot is the inextinguishable flame, promise to the King of all that which is His own? Didst thou think to have Him as thy worshipper at Whom all things tremble, while the Seraphim, and all the angelical powers hymn His glory?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.4.7"
     }
   ]
 }

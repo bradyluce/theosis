@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-mark-0289-v23",
+      "id": "catena-mark-0297-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.23",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:21–25",
-      "excerpt": "Or else, There is nothing hid; as if He said, If ye conduct your life with care, accusation will not be able to obscure your light.",
+      "excerpt": "Again it may be said, that he hath not, who has not truth. But our Lord says that he hath, because he has a lie, for every one whose understanding believes a lie, thinks that he has something.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 85,
@@ -40,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-mark-0297-v23",
+      "id": "catena-mark-0289-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.23",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:21–25",
-      "excerpt": "Again it may be said, that he hath not, who has not truth. But our Lord says that he hath, because he has a lie, for every one whose understanding believes a lie, thinks that he has something.",
+      "excerpt": "Or else, There is nothing hid; as if He said, If ye conduct your life with care, accusation will not be able to obscure your light.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 85,
@@ -76,24 +76,6 @@
       ]
     },
     {
-      "id": "catena-mark-0291-v23",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.23",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:21–25",
-      "excerpt": "That is, if any man have a sense for understanding the word of God, let him not withdraw himself, let him not turn his ear to fables, but let him lend his ear to search those things which truth hath spoken, his hands for fulfilling them, his tongue for preaching them. There follows, And he said unto them, Take heed what ye hear.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0293-v23",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.23",
@@ -109,6 +91,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0291-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.23",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:21–25",
+      "excerpt": "That is, if any man have a sense for understanding the word of God, let him not withdraw himself, let him not turn his ear to fables, but let him lend his ear to search those things which truth hath spoken, his hands for fulfilling them, his tongue for preaching them. There follows, And he said unto them, Take heed what ye hear.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.4.23:2b7c9888:1"
       ]
     },
     {
@@ -184,22 +191,39 @@
       ]
     },
     {
-      "id": "catena-mark-0286-v23",
+      "id": "hcf:theophylact-of-ohrid:mark.4.23:6a934bdd:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.4.23",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:21–25",
-      "excerpt": "Or else the candle is the discourse concerning the three sorts of seed. The bushel or the bed is the hearing of the disobedient. The Apostles are the candlestick, whom the word of the Lord hath enlightened; wherefore it goes on, For there is nothing hidden, &c. The hidden and secret thing is the parable of the seed, which comes forth to light, when it is spoken of by the Lord.",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 4:23",
+      "excerpt": "If any man have ears to hear, let him hear. That is, that none of those things which are said to you by me should escape you.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.4.23"
+    },
+    {
+      "id": "hcf:bede:mark.4.23:7bcb94a2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 4:23",
+      "excerpt": "If anyone has ears to hear, let him hear. If anyone has the understanding to perceive the word of God, let him not withdraw, let him not turn his hearing to fables, but diligently lend his ear to examining those things which the truth has spoken, diligently employ his hands in fulfilling those things which he has already understood, diligently subject his tongue to preaching those things opportunely and inopportunely.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.4.23"
     },
     {
       "id": "catena-mark-0294-v23",
@@ -210,6 +234,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:21–25",
       "excerpt": "According to the measure of his faith the understanding of mysteries is divided to every man, and the virtues of knowledge will also be added to them. It goes on: For he that hath, to him shall be given; that is, he who hath faith shall have virtue, and he who hath obedience to the word, shall also have the understanding of the mystery. Again, he who, on the other hand, has not faith, fails in virtue; and he who has not obedience to the word, shall not have the understanding of it; and if he does not understand, he might as well not have heard.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0286-v23",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.23",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:21–25",
+      "excerpt": "Or else the candle is the discourse concerning the three sorts of seed. The bushel or the bed is the hearing of the disobedient. The Apostles are the candlestick, whom the word of the Lord hath enlightened; wherefore it goes on, For there is nothing hidden, &c. The hidden and secret thing is the parable of the seed, which comes forth to light, when it is spoken of by the Lord.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

@@ -4,6 +4,24 @@
   "verseNumber": 24,
   "entries": [
     {
+      "id": "catena-john-2616-v24",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.21.24",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 21:24–25",
+      "excerpt": "The which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written; meaning not the world had not space for them, but that the capacity of readers was not large enough to hold them: though sometimes words themselves may exceed the truth, and yet the thing they express be true; a mode of speech which is used not to explain an obscure and doubtful, but to magnify or estimate a plain, thing: nor does it involve any departure from the path of truth; inasmuch as the excess of the word over the truth is evidently only a figure of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-124-c21-v24",
       "relation": "verse",
       "targetVerseId": "kjva:john.21.24",
@@ -38,24 +56,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-2616-v24",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.21.24",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 21:24–25",
-      "excerpt": "The which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written; meaning not the world had not space for them, but that the capacity of readers was not large enough to hold them: though sometimes words themselves may exceed the truth, and yet the thing they express be true; a mode of speech which is used not to explain an obscure and doubtful, but to magnify or estimate a plain, thing: nor does it involve any departure from the path of truth; inasmuch as the excess of the word over the truth is evidently only a figure of…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.21.24:4da9f197:0"
       ]
     },
     {
@@ -75,6 +82,125 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.21.24:b792c2a0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-88",
+      "title": "Homily on the Gospel of John 88 on john 21:24",
+      "excerpt": "\"This is the disciple which testifieth of these things, and wrote these things, and we know that his testimony is true.\" Why is it, that then, when none of the others do so, he alone uses these words, and that for the second time, witnessing to himself? for it seems to be offensive to the hearers. What then is the cause? He is said to have been the last who came to writing, Christ having moved and roused him to the work; and on this account he continually sets forth his love, alluding to the cause by which he was impelled to write. Therefore also he continually makes mention of it, to make his record trustworthy, and to show, that, moved from thence, he came to this work. \"And I know,\" he saith, \"that the things are true which he saith. And if the many believe not, it is permitted them to believe from this.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.21.24"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.21.24:86ae522d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-88",
+      "title": "Homily on the Gospel of John 88 on john 21:24",
+      "excerpt": "Since then he wrote what he did from full assurance, he does not decline to produce his own testimony, challenging men separately to enquire into and scrutinize the circumstances. For it is a custom with us, when we think that we are speaking exactly true, never to refuse our testimony; and if we do this, much more would he who wrote by the Spirit. What then the other Apostles when they preached declared, he also saith; \"We are witnesses of the things spoken, and the Spirit which He hath given to them that obey Him.\" And besides, he was present at all, and did not desert Him even when being crucified, and had His mother entrusted to him; all which things are signs of his love for Him, and of his knowing all things exactly.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.21.24"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.21.24:5b1fcb8c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 21:24",
+      "excerpt": "I think no wise man will doubt that the Lord would not have loved John if he had not been specially remarkable for virtue, and apt and perfectly equipped for every good work. For God can never be found to be inclined by any irrational leanings to those unworthy of His love, for such affections are more worthy of men. And He that was wholly proof against every assault and inroad of passion, and trod firmly in the path of every virtue, nay rather, was Virtue itself in all its forms, most assuredly would act in this, too, with judgment, and have His inclination free from all reproach----I mean, the inclination which led Him to deem him to whom this boon was due worthy of His love. After this admirable preface, then, and after having said that he was beloved, he modestly and with great humility says that he testified of these things; well and admirably inviting his hearers, as a necessary consequence, to assent to the things which he had written, and of which he had testified; for the preacher of truth cannot lie. Therefore, also, he says: We know that His witness is true. Dangerous, then, and awful is it assuredly, to lie at all; for man knoweth not how to bridle his tongue, and the Truth cannot love him that sinneth against truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.21.24"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:john.21.24:04507754:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-6-25-9-10",
+      "title": "ECCLESIASTICAL HISTORY 6.25.9-10 on john 21:24",
+      "excerpt": "John, who reclined on the bosom of Jesus, has left us one Gospel, although he confessed that he might have written so many that the world could not contain them. And he wrote also the Apocalypse, but he was commanded to keep silence and not to write the words of the seven thunders. He has left also an epistle of very few lines; perhaps also a second and third. But not all consider them genuine, and together they do not contain one hundred lines.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-6-25-9-10",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:john.21.24"
+    },
+    {
+      "id": "hcf:hcf-theodore-of-mopsuestia:john.21.24:f665c5a2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-theodore-of-mopsuestia",
+      "workId": "hcf:work:hcf-theodore-of-mopsuestia:commentary-on-john-7-21-24-25",
+      "title": "COMMENTARY ON JOHN 7.21.24-25 on john 21:24",
+      "excerpt": "The interpreter [that is, Theodore himself] says that the words, \"But there are also, etc.\" are not by John but by someone else.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-john-7-21-24-25",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c428"
+      ],
+      "targetVerseId": "kjva:john.21.24"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.21.24:6d409f2b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 21:24",
+      "excerpt": "Of the other Evangelists, not one testified about himself. They say that he undertook the writing of the Gospel after all the others, having been moved and stirred to do so by Christ. For this reason he constantly mentions His love for him, showing the reason why he undertook the writing, and that Christ entrusted this task to the one whom He loved more than the rest.\r\nAnd I know that he speaks the truth, that is: \"What I have written, I have written with complete confidence, since I was present at everything—at the deeds and words, at the sufferings and the events after the resurrection. Therefore I boldly say of myself as well that I am truthful, and I invite anyone to examine and investigate each event individually.\" It is customary among us humans, when we are completely confident in the truth, not to refuse to offer our own testimony about it. So also the apostles said: \"We are His witnesses in what we say, and so is the Holy Spirit, whom God has given to those who obey Him\" (Acts 5:32).\r\nFrom what is it evident that I speak the truth and not to please the Teacher? From the fact that I omitted many things, it is evident that I did not wish to flatter Him. For I brought to light everything reproachful, not concealing even the fact that He was called a lawbreaker and a deceiver, and even a demoniac. Obviously, I was not trying to please Him. For whoever flatters does the opposite: he omits what is shameful and brings to light what is glorious.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.21.24"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.21.24:f617b638:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 21:24",
+      "excerpt": "Now we have the last part of this Gospel, which is a kind of epilogue. First, the Gospel is commended; and then the vastness of the subject treated (v 25). The Gospel is commended because of two things: its author, and its truth. Three things are mentioned about the author.\r\n\r\nFirst, there is the authority of the author, because This is the disciple ‑ understanding what was mentioned before who was loved above the others, intimate with Christ, able to question him with confidence, and to whom it was granted to remain until Christ came. All these things refer to the authority of the author.\r\n\r\nJohn is said to have been loved more than the others because of his unique charity: \"By this all men will know that you are my disciples, if you have love for one another\" (13:35). None of the other apostles speak so much of love for others as does John in his letters. We also read that as an old man he was carried to the church by his followers to teach the faithful. He taught only one thing: \"Little children, love one another.\" This is the perfection of the Christian life.\r\n\r\nSecondly, John's office is mentioned, which was to give testimony, for he says, who is bearing witness to these things. This is the special office of apostles: \"You shall be my witnesses\" (Acts 1:8); \"You are my witnesses!\" (Is 44:8).\r\n\r\nThirdly, he refers to his zeal when he says, and who has written these things. As an apostle he testified to the actions of Christ to those who were present; and in his zeal he recorded these actions in writing for those who were not with him and were to come after him: \"Take a large tablet and write upon it in common characters\" (Is 8:1); \"The wisdom of the scribe depends on the opportunity of leisure; and he who has little business may become wise\" (Sir 38:24). For it was granted to John to live until the time when the Church was at peace; and this is the time when he wrote all these things. John mentions such things so that we will not think that his gospel has less authority than the other three, seeing that he wrote after the death of all the other apostles, and the other gospels, especially that of Matthew, had been approved by them.\r\n\r\nNow John states that his Gospel is true, and he speaks in the person of the entire Church which received it: \"My mouth will utter truth\" (Prv 8:7). We should note that although many have written about Catholic truth, there is a difference among them: those who wrote the canonical scriptures, such as the evangelists and apostles and the like, so constantly and firmly affirm this truth that it cannot be doubted. Thus John says, we know that his testimony is true: \"If any one is preaching to you a gospel contrary to that which you received, let him be accursed\" (Gal 1:9). The reason for this is that only the canonical scriptures are the standard of faith. The others have set forth this truth but in such a way that they do not want to be believed except in those things in which they say what is true.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.21.24"
     }
   ]
 }

@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0162-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.2.14",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 2:13–17",
-      "excerpt": "After that the Lord taught at Capernaum, He went to the sea, that He might not only set in order the life of men in towns, but also might preach the Gospel of the kingdom to those who dwelt near the sea, and might teach them to despise the restless motions of those things which pass away like the waves of the sea, and to overcome them by the firmness of faith; wherefore it is said, And he went forth again to the sea, and all the multitude, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.2.14:26ea772c:0"
       ]
     },
     {
@@ -55,17 +44,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.2.14:41c904ab:4"
       ]
     },
     {
-      "id": "catena-mark-0167-v14",
+      "id": "catena-mark-0172-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.2.14",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 2:13–17",
-      "excerpt": "Now to follow is to imitate, and therefore in order to imitate the poverty of Christ, in the feeling of his soul even more than in outward condition, he who used to rob his neighbour's wealth, now leaves his own. And not only did he quit the gain of the customs, but he also despised the peril, which might come from the princes of this world, because he left the accounts of the customs imperfect and unsettled. For the Lord Himself, Who externally, by human language, called Him to follow, inflamed him inwardly by divine inspiration to follow Him the moment that He called him.",
+      "excerpt": "If by the election of Matthew and calling of the publicans, the faith of the Gentiles is expressed, who formerly were intent on the gains of this world; certainly the haughtiness of the Scribes and Pharisees intimates the envy of the Jewish people, who are vexed at the salvation of the Gentiles. It goes on: When Jesus heard it, he saith unto them, They that are whole need not the physician, but they that are sick. He aims at the Scribes and Pharisees, who, thinking themselves righteous, refused to keep company with sinners. He calls Himself the physician, Who, by a strange mode of healing,…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -94,14 +90,39 @@
       ]
     },
     {
-      "id": "catena-mark-0172-v14",
+      "id": "catena-mark-0167-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.2.14",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 2:13–17",
-      "excerpt": "If by the election of Matthew and calling of the publicans, the faith of the Gentiles is expressed, who formerly were intent on the gains of this world; certainly the haughtiness of the Scribes and Pharisees intimates the envy of the Jewish people, who are vexed at the salvation of the Gentiles. It goes on: When Jesus heard it, he saith unto them, They that are whole need not the physician, but they that are sick. He aims at the Scribes and Pharisees, who, thinking themselves righteous, refused to keep company with sinners. He calls Himself the physician, Who, by a strange mode of healing,…",
+      "excerpt": "Now to follow is to imitate, and therefore in order to imitate the poverty of Christ, in the feeling of his soul even more than in outward condition, he who used to rob his neighbour's wealth, now leaves his own. And not only did he quit the gain of the customs, but he also despised the peril, which might come from the princes of this world, because he left the accounts of the customs imperfect and unsettled. For the Lord Himself, Who externally, by human language, called Him to follow, inflamed him inwardly by divine inspiration to follow Him the moment that He called him.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.2.14:159393c4:5"
+      ]
+    },
+    {
+      "id": "catena-mark-0162-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.2.14",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 2:13–17",
+      "excerpt": "After that the Lord taught at Capernaum, He went to the sea, that He might not only set in order the life of men in towns, but also might preach the Gospel of the kingdom to those who dwelt near the sea, and might teach them to despise the restless motions of those things which pass away like the waves of the sea, and to overcome them by the firmness of faith; wherefore it is said, And he went forth again to the sea, and all the multitude, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -145,6 +166,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.2.14:1799b722:1"
       ]
     },
     {
@@ -202,6 +230,125 @@
       ]
     },
     {
+      "id": "hcf:bede:mark.2.14:8842d4e5:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 2:14",
+      "excerpt": "And rising, he followed him. In the Gospel of Luke, it is written more fully: And leaving all, he rose and followed him (Luke 5). Therefore Matthew, understanding what it truly means to follow the Lord, leaves all things and follows. To follow indeed is to imitate. And so, in order to follow the poor Christ not so much in steps as in affection, he left what was his own, who was accustomed to seizing what belonged to others. And giving us a perfect form of renunciation of the world, he not only left the profits of taxes but also disregarded the danger that could come from the leaders of the world, because he left the accounts of the taxes unfinished and disordered. For he was led by such a great desire to follow the Lord that he retained no regard or thought for this life at all. Indeed, the Lord himself, who outwardly called him with human speech to follow him, inwardly kindled him with divine inspiration to follow immediately when called, and he taught invisibly how it ought to be followed. On account of this, he rightly became a faithful steward of the Lord's talents while abandoning human affairs with disdain.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.2.14"
+    },
+    {
+      "id": "hcf:bede:mark.2.14:c020a3d1:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-21",
+      "title": "Homilies on the Gospels 1.21 on mark 2:14",
+      "excerpt": "By \"follow\" he meant not so much the movement of feet as of the heart, the carrying out of a way of life. For one who says that he lives in Christ ought himself to walk just as he walked, not to aim at earthly things, not to pursue perishable gains, but to flee base praise, to embrace willingly the contempt of all that is worldly for the sake of heavenly glory, to do good to all, to inflict injuries upon no one in bitterness, to suffer patiently those injuries that come to oneself, to ask God's forgiveness for those who oppress, never to seek one's own glory but always God's, and to uphold whatever helps one love heavenly things. This is what is meant by following Christ. In this way, disregarding earthly gains, Matthew attached himself to the band of followers of One who had no riches. For the Lord himself, who outwardly called Matthew by a word, inwardly bestowed upon him the gift of an invisible impulse so that he was able to follow.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.2.14"
+    },
+    {
+      "id": "hcf:bede:mark.2.14:1e84b64d:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 2:14",
+      "excerpt": "And as he passed by, he saw Levi, the son of Alphaeus, etc. At the custom house, he says to the care and duty of collecting taxes; for τέλος in Greek is called tax in Latin: moreover, the same Levi is also Matthew. But Luke and Mark, out of respect and honor for the evangelist, did not want to put the well-known name. However, Matthew himself, according to what is written, a righteous man is his own accuser: in the beginning of his discourse, he names himself Matthew and a publican; to show those reading that no one who is converted should despair of salvation, since from being a publican he was suddenly changed into an apostle, from a tax collector into an evangelist.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.2.14"
+    },
+    {
+      "id": "hcf:bede:mark.2.14:8d279da8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-21",
+      "title": "Homilies on the Gospels 1.21 on mark 2:14",
+      "excerpt": "Jesus found him sitting in the tax collector's place, with his stubborn intellect avid for temporal gain. His new name was Matthew, the gospel says. The name Matthew in Hebrew means \"granted\" in Latin, a name aptly corresponding to one who received the favor of heavenly grace.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.2.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.2.14:68841760:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 2:14",
+      "excerpt": "However, He departed from there as well, and along the way He caught Levi-Matthew. He who is now called Levi by Mark is Matthew, for he had two names. Therefore Luke and Mark, concealing his real name, call him Levi. But he himself is not ashamed; on the contrary, he openly says of himself: Jesus saw Matthew the tax collector (Mt. 9:9). So too let us not be ashamed to reveal our sins. Levi was sitting at the tax booth, occupied, as was his duty, either with collecting taxes from someone, or with drawing up accounts, or with something else that tax collectors usually did at their places of business. But now he proved so zealous for Christ that, leaving everything, he followed Him, and in great joy invited many to a meal.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.2.14"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:mark.2.14:b5be738d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:proof-of-the-gospel-3-5",
+      "title": "PROOF OF THE GOSPEL 3.5 on mark 2:14",
+      "excerpt": "The Apostle Matthew, if you consider his former life, did not leave a holy occupation, but came from those consumed with tax-gathering and overreaching one another.",
+      "takeaway": "",
+      "sourceId": "hcf:source:proof-of-the-gospel-3-5",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:mark.2.14"
+    },
+    {
+      "id": "hcf:tertullian:mark.2.14:daa57448:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-idolatry",
+      "title": "On Idolatry on mark 2:14",
+      "excerpt": "Do you hesitate about arts, and trades, and about professions likewise, for the sake of children and parents? Even there was it demonstrated to us, that both \"dear pledges,\" and handicrafts, and trades, are to be quite left behind for the Lord's sake; while James and John, called by the Lord, do leave quite behind both father and ship; while Matthew is roused up from the toll-booth; while even burying a father was too tardy a business for faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.2.14"
+    },
+    {
       "id": "catena-mark-0168-v14",
       "relation": "verse",
       "targetVerseId": "kjva:mark.2.14",
@@ -217,6 +364,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.2.14:b1fe0825:0"
       ]
     }
   ]

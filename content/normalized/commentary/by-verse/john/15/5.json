@@ -23,6 +23,24 @@
       ]
     },
     {
+      "id": "catena-john-1971-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.15.5",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 15:4–7",
+      "excerpt": "For then may His words be said to abide in us, when we do what He has commanded, and love what He has promised. But when His words abide in the memory, and are not found in the life, the branch is not accounted to be in the vine, because it derives no life from its root. So far as we abide in the Saviour we cannot will any thing that is foreign to our salvation. We have one will, in so far as we are in Christ, another, in so far as we are in this world. And by reason of our abode in this world, it sometimes happens that we ask for that which is not expedient, through ignorance. But never, if…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "augustine-john-083-c15-v5",
       "relation": "verse",
       "targetVerseId": "kjva:john.15.5",
@@ -38,24 +56,6 @@
         "augustine",
         "patristic",
         "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-1963-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.15.5",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 15:4–7",
-      "excerpt": "Having said that they were clean through the word which He had spoken unto them, He now teaches them that they must do their part.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
         "john"
       ]
     },
@@ -93,24 +93,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-1967-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.15.5",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 15:4–7",
-      "excerpt": "The Son then contributes no less than the Father to the help of the disciples. The Father changeth, but the Son keepeth them in Him, which is that which makes the branches fruitful. And again, the cleansing is attributed to the Son also, and the abiding in the root to the Father who begat the root. (c. 2.). It is a great loss to be able to do nothing, but He goes on to say more than this: If a man abide not in Me, he is cast forth as a branch, i. e. shall not benefit by the care of the husbandman, and withereth, i. e. shall lose all that it desires from the root, all that supports its life,…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.15.5:4806b7e3:0"
       ]
     },
     {
@@ -122,6 +111,24 @@
       "workId": "catena-aurea-john",
       "title": "On John 15:4–7",
       "excerpt": "For the branches of the vine are as contemptible, if they abide not in the vine, as they are glorious, if they abide. One of the two the branch must be in, either the vine, or the fire: if it is not in the vine, it will be in the fire.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1967-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.15.5",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 15:4–7",
+      "excerpt": "The Son then contributes no less than the Father to the help of the disciples. The Father changeth, but the Son keepeth them in Him, which is that which makes the branches fruitful. And again, the cleansing is attributed to the Son also, and the abiding in the root to the Father who begat the root. (c. 2.). It is a great loss to be able to do nothing, but He goes on to say more than this: If a man abide not in Me, he is cast forth as a branch, i. e. shall not benefit by the care of the husbandman, and withereth, i. e. shall lose all that it desires from the root, all that supports its life,…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -150,14 +157,14 @@
       ]
     },
     {
-      "id": "catena-john-1971-v5",
+      "id": "catena-john-1963-v5",
       "relation": "verse",
       "targetVerseId": "kjva:john.15.5",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 15:4–7",
-      "excerpt": "For then may His words be said to abide in us, when we do what He has commanded, and love what He has promised. But when His words abide in the memory, and are not found in the life, the branch is not accounted to be in the vine, because it derives no life from its root. So far as we abide in the Saviour we cannot will any thing that is foreign to our salvation. We have one will, in so far as we are in Christ, another, in so far as we are in this world. And by reason of our abode in this world, it sometimes happens that we ask for that which is not expedient, through ignorance. But never, if…",
+      "excerpt": "Having said that they were clean through the word which He had spoken unto them, He now teaches them that they must do their part.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -183,6 +190,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.15.5:4919ae45:0"
       ]
     },
     {
@@ -202,6 +216,159 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.15.5:04f13e36:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-81",
+      "title": "Tractates on John 81 on john 15:5",
+      "excerpt": "Ponder again and again what the Truth has still further to say: \"I am the vine,\" He adds, \"ye are the branches: he that abideth in me, and I in him, the same bringeth forth much fruit; for without me ye can do nothing.\" For just to keep any from supposing that the branch can bear at least some little fruit of itself, after saying, \"the same bringeth forth much fruit,\" His next words are not, Without me ye can do but little, but \"ye can do nothing.\" Whether then it be little or much, without Him it is impracticable; for without Him nothing can be done. For although, when the branch beareth little fruit, the husbandman purgeth it that it may bring forth more; yet if it abide not in the vine, and draw its life from the root, it can bear no fruit whatever of itself. And although Christ would not have been the vine had He not been man, yet He could not have supplied such grace to the branches had He not also been God. And just because such grace is so essential to life, that even death itself ceases to be at the disposal of free-will, He adds, \"If any one abide not in me, he shall be cast forth as a branch, and wither; and they shall gather him, and cast him into the fire, and he is burned.\" The wood of the vine, therefore, is in the same proportion the more contemptible if it abide not in the vine, as it is glorious while so abiding; in fine, as the Lord likewise says of them in the prophet Ezekiel, when cut off, they are of no use for any purpose of the husbandman, and can be applied to no labor of the mechanic. The branch is suitable only for one of two things, either the vine or the fire: if it is not in the vine, its place will be in the fire; and that it may escape the latter, may it have its place in the vine.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.15.5:44aad278:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-76",
+      "title": "Homily on the Gospel of John 76 on john 15:5",
+      "excerpt": "\"He that abideth in Me, and I in him.\" Seest thou that the Son contributeth not less than the Father towards the care of the disciples? The Father purgeth, but He keepeth them in Himself. The abiding in the root is that which maketh the branches to be fruit-bearing. For that which is not purged, if it remain on the root, bears fruit, though perhaps not so much as it ought; but that which remains not, bears none at all. But still the \"purging\" also hath been shown to belong to the Son, and the \"abiding in the root,\" to the Father, who also begat the Root. Seest thou how all is common, both the \"purging,\" and the enjoying the virtue which is from the root?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.15.5:6f9c01fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:on-the-blessings-of-the-patriarchs-chapter-10",
+      "title": "On the Blessings of the Patriarchs, Chapter 10 on john 15:5",
+      "excerpt": "This is beautiful, but much more beautiful is the vine branch that signifies the spiritual, of which we are the branch, and we can bear fruit if we abide in the vine; but if not, we are cut off.\r\n\r\nThe holy patriarch Nephthalim was an abundant vine. Hence Moses says: Nephthalim will receive satisfaction, and will be filled with the blessing of the Lord, possessing the sea and the south wind (Deut. 33:23). Moses explains this what Jacob had said, what it means to have a lax vine, that is, freed from the bonds of death through the grace of faith: in which the people of God are signified as being called to the freedom of faith, and the abundance of grace spread throughout the whole world, who may willingly bear the yoke of Christ with good fruit, and surround themselves with the true branches of that vine, that is, the mysteries of the Lord's cross, and not fear the danger of confessing it, but rather even glory in the name of Christ even in persecutions.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:hcf-marcus-eremita:john.15.5:64d717c6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-marcus-eremita",
+      "workId": "hcf:work:hcf-marcus-eremita:on-the-spiritual-law-41",
+      "title": "ON THE SPIRITUAL LAW 41 on john 15:5",
+      "excerpt": "When you have done something good, remember the words, \"without me you can do nothing.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-spiritual-law-41",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:maximus-the-confessor:john.15.5:12591d7b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "maximus-the-confessor",
+      "workId": "hcf:work:maximus-the-confessor:the-four-hundred-chapters-on-love-2-38-39",
+      "title": "THE FOUR HUNDRED CHAPTERS ON LOVE 2.38-39 on john 15:5",
+      "excerpt": "The Lord told us, \"Outside of me you can do nothing.\" This is because our weakness, when moved to do good things, is unable to bring anything to completion without the giver of good things. The one who has come to understand the weakness of human nature has had experience of the divine power. And such a person who because of divine power has succeeded in some things and is eager to succeed in others never looks down on anyone. For he knows that in the same way that God has helped him and freed him from many passions and hardships, so can he help everyone when he wishes, especially those who are striving for his sake.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-four-hundred-chapters-on-love-2-38-39",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c662"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:hcf-prosper-of-aquitaine:john.15.5:f4267dec:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-prosper-of-aquitaine",
+      "workId": "hcf:work:hcf-prosper-of-aquitaine:on-the-ungrateful-people-954-97",
+      "title": "ON THE UNGRATEFUL PEOPLE 954-97 on john 15:5",
+      "excerpt": "Hope is not in the fading flower of the field.\r\nFor just as no one is able to eat the fruit of the branch\r\nUnless the branch remains in the vine which brings\r\nSap to the leaves from the root and fills the grapes with must—\r\nSo also those who are barren in virtue and without fruit\r\nShall be fuel for the perpetual fire: those who leave the vine\r\nDare to put their faith in the immoderate liberty of the leaves,\r\nSo that their fruitfulness is not dependent on the fruitfulness of Christ:\r\nAnd even more, they believe they are able to excel on their own,\r\nAs if God is not the author of the virtues that please him.…\r\n[But] why would they be ashamed, especially in this valley of tears,\r\nIf their power came from God, that they have a minimum of mortal works,\r\nWhen it is nothing but sin which has destroyed\r\nLiberty to which alone evil deeds recur?\r\nAnd yet, when we focus the mind on holy acts,\r\nWhen a chaste mind refuses carnal desires,\r\nWhen we do not give in to temptations, and through harsh\r\nVexing punishments, we remain in our hearts unyielding;\r\nThen we are acting freely; but with a freedom redeemed,\r\nAnd over which God is ruler as light from the highest light, [there is]\r\nLife, health, virtue, wisdom: It is the grace of Christ\r\nBy which freedom runs, rejoices, endures, takes care, chooses, stands,\r\nBelieves, hopes, loves, is cleansed and is justified.\r\nFor if we are right in anything we do, Lord, we do it only with your help;\r\nYou move hearts, you command prayers—those you want to grant you bestow, bestowing\r\nLavishly and producing merit from merits and enriching the gifts of your crown.\r\nBut this does not mean I should diminish my care and become lax in the pursuit of virtue, or\r\nBecome complacent by letting mental apathy hold sway,\r\nBecause the good works of the saints are yours,\r\nAnd whatever in them is pure or strong, depends on you:\r\nSo that none of the actions of human beings is seen as occurring entirely apart from your will:\r\nFor without you what is achieved by the will except to be exiled far away from you?\r\nThe paths are always precipitous and the ways twisting\r\nWhen advancing alone: When our will is exhausted, you are kind; when feeble\r\nYou lift it up, you carry it back, you keep it warm, you watch over it and provide it with dignity.\r\nThen it will make rapid progress, its eyes actually seeing, its freedom free, its wisdom wise,\r\nIts justice just, its virtue strong and its senses healed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-ungrateful-people-954-97",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c455"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:theodoret-of-cyrrhus:john.15.5:52fe3fe7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theodoret-of-cyrrhus",
+      "workId": "hcf:work:theodoret-of-cyrrhus:dialogue-1-36",
+      "title": "DIALOGUE 1.36 on john 15:5",
+      "excerpt": "Just as the branches are of the same substance as the vine and [come] from it, so we, who have the same kind of body as the Lord's body, receive from his fullness and have it as a root for resurrection and salvation. And the Father is called the vinedresser, because through the Word he took care of the vine, which is the Lord's body.",
+      "takeaway": "",
+      "sourceId": "hcf:source:dialogue-1-36",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c458"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.15.5:84389a4f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 15:5",
+      "excerpt": "By the example of the branch He clearly represents to us that from Him are bestowed strength and life to those who are well-pleasing to Him. For just as that branch bears fruit which abides on the vine and receives from it the assistance for life, so you also, if you abide in Me through the keeping of the commandments, will bear more fruit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.15.5"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.15.5:f563d84e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 15:5",
+      "excerpt": "1991 Here he shows that being united to Christ is efficacious: first, he shows that it is efficacious; secondly, the reason for this efficacy (v 5b).\r\n\r\n1992 First he says: I say that it is not only necessary for a person to abide in me in order to bear fruit, it is also efficacious, because he who abides in me, by believing, obeying and persevering, and I in him, by giving enlightenment, help and perseverance, he it is and not another, that bears much fruit.\r\n\r\nSuch persons bear a threefold fruit in this life. The first is that they avoid sin. Secondly, they are eager to accomplish works of holiness: \"the return you get is sanctification\" (Rom 6:22). Thirdly, they are eager for the progress of others: \"The earth will be filled with the fruit of your works\" [Ps 104:13]. They also produce a fourth fruit, but in eternal life: \"He gathers fruit for eternal life\" (4:36). Eternal life is the last and perfect fruit of our labors: \"The fruit of good works is glorious\" [Wis 3:15].\r\n\r\n1993 The reason for this efficacy is because apart from me you can do nothing. With these words he instructs the hearts of the humble and silences the mouths of the proud, especially of the Pelagians, who say that they can do by themselves, without the help of God, the good works of the virtues and of the law. And although they were trying to maintain our free will, they really undermined it.\r\n\r\nLook at what our Lord says here! He says that without him we cannot do anything great, nor anything small, indeed, we cannot do anything at all. This is not surprising because neither does God do anything without him: \"Without him was not anything made that was made\" (1:3). For our works are either from the power of nature or from divine grace. If they are from the power of nature, then, since every action of nature is from the Word of God, no nature can act to do anything without him. If our works are from the power of grace, then, since he is the author of grace - \"grace and truth came through Jesus Christ\" (1:17) - it is obvious that no meritorious work can be done without him: \"Not that we are capable of thinking anything of ourselves as originating from ourselves; our capability is from God\" [2 Cor 3:5]. Therefore, if we cannot even think without it coming from God, much less can we do anything else.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.15.5"
     }
   ]
 }

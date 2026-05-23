@@ -73,6 +73,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.8.20:0ed9bd63:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1229-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.8.20",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 8:19–21",
+      "excerpt": "For they cannot enter within when He is teaching whose words they refuse to understand spiritually. But the multitude went before and entered into the house, because when the Jews rejected Christ the Gentiles flocked to Him. But those who stand without, wishing to see Christ, are they, who not seeking a spiritual sense in the law, have placed themselves without to guard the letter of it, and as it were rather compel Christ to go out, to teach them earthly things, than consent to enter in themselves to learn spiritual things.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.8.20:fe8e1027:1"
       ]
     },
     {
@@ -112,24 +144,6 @@
       ]
     },
     {
-      "id": "catena-luke-1229-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.8.20",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 8:19–21",
-      "excerpt": "For they cannot enter within when He is teaching whose words they refuse to understand spiritually. But the multitude went before and entered into the house, because when the Jews rejected Christ the Gentiles flocked to Him. But those who stand without, wishing to see Christ, are they, who not seeking a spiritual sense in the law, have placed themselves without to guard the letter of it, and as it were rather compel Christ to go out, to teach them earthly things, than consent to enter in themselves to learn spiritual things.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1227-v20",
       "relation": "verse",
       "targetVerseId": "kjva:luke.8.20",
@@ -145,6 +159,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.8.20:fc167dec:0"
       ]
     },
     {
@@ -181,7 +202,65 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.8.20:82cd5ca2:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.8.20:88b78067:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 8:20",
+      "excerpt": "And it was announced to him: \"Your mother and your brothers are standing outside, wanting to see you.\" The word is inside, the light is inside; whence above: \"So that those entering may see the light.\" So if even parents standing outside are not recognized, and perhaps they are not recognized as an example for our sake, how will we be recognized if we stand outside? For those standing outside wish to see the Lord, who not seeking a spiritual sense in the law, have stationed themselves outside in the guardianship of the letter, and as if they force Christ to go out to teach carnal things, rather than consent to enter to learn spiritual things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.8.20"
+    },
+    {
+      "id": "hcf:tertullian:luke.8.20:eac28180:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-flesh-of-christ",
+      "title": "On the Flesh of Christ on luke 8:20",
+      "excerpt": "But whenever a dispute arises about the nativity, all who reject it as creating a presumption in favour of the reality of Christ's flesh, wilfully deny that God Himself was born, on the ground that He asked, \"Who is my mother, and who are my brethren? \" Let, therefore, Apelles hear what was our answer to Marcion in that little work, in which we challenged his own (favourite) gospel to the proof, even that the material circumstances of that remark (of the Lord's) should be considered.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.8.20"
+    },
+    {
+      "id": "hcf:tertullian:luke.8.20:395b7c0f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iii",
+      "title": "Against Marcion Book III on luke 8:20",
+      "excerpt": "For a certain woman had exclaimed, \"Blessed is the womb that bare Thee, and the paps which Thou hast sucked!\" And how else could they have said that His mother and His brethren were standing without? But we shall see more of this in the proper place.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.8.20"
     }
   ]
 }

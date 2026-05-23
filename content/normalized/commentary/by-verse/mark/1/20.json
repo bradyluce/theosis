@@ -4,6 +4,31 @@
   "verseNumber": 20,
   "entries": [
     {
+      "id": "catena-mark-0075-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.20",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:16–20",
+      "excerpt": "It may be asked, how he could call two fishers from each of the boats, (first, Peter and Andrew, then having gone a little further, the two others, sons of Zebedee,) when Luke says that James and John were called to help Peter and Andrew, and that it was to Peter only that Christ said, Fear not, from this time thou shalt catch men; (Luke 5:10) he also says, that at the same time, when they had brought their ships to land, they followed him. We must therefore understand that that transaction which Luke intimates happened first, and afterwards that they, as their custom was, had returned to…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.20:bf73c2c9:0"
+      ]
+    },
+    {
       "id": "catena-mark-0073-v20",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.20",
@@ -22,21 +47,28 @@
       ]
     },
     {
-      "id": "catena-mark-0075-v20",
+      "id": "catena-mark-0074-v20",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.20",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:16–20",
-      "excerpt": "It may be asked, how he could call two fishers from each of the boats, (first, Peter and Andrew, then having gone a little further, the two others, sons of Zebedee,) when Luke says that James and John were called to help Peter and Andrew, and that it was to Peter only that Christ said, Fear not, from this time thou shalt catch men; (Luke 5:10) he also says, that at the same time, when they had brought their ships to land, they followed him. We must therefore understand that that transaction which Luke intimates happened first, and afterwards that they, as their custom was, had returned to…",
+      "excerpt": "For we must not allow any time to lapse, but at once follow the Lord. After these again, He catches James and John, because they also, though poor, supported the old age of their father. Wherefore there follows, And when he had gone a little farther thence, he saw James the son of Zebedee, &c. But they left their father, because he would have hindered them in following Christ. Do thou, also, when thou art hindered by thy parents, leave them, and come to God. It is shewn by this that Zebedee was not a believer; but the mother of the Apostles believed, for she followed Christ, when Zebedee was…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.20:e723667b:0"
       ]
     },
     {
@@ -48,24 +80,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:16–20",
       "excerpt": "As the Evangelist John relates, Peter and Andrew were disciples of the Forerunner, but seeing that John had borne witness to Jesus, they joined themselves to him; afterwards, grieving that John had been cast into prison, they returned to their trade. Wherefore there follows, casting nets into the sea, for they were fishers. Look then upon them, living on their own labours, not on the fruits of iniquity; for such men were worthy to become the first disciples of Christ; whence it is subjoined, And Jesus said unto them, Come ye after me. Now He calls them for the second time; for this is the…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0074-v20",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.20",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:16–20",
-      "excerpt": "For we must not allow any time to lapse, but at once follow the Lord. After these again, He catches James and John, because they also, though poor, supported the old age of their father. Wherefore there follows, And when he had gone a little farther thence, he saw James the son of Zebedee, &c. But they left their father, because he would have hindered them in following Christ. Do thou, also, when thou art hindered by thy parents, leave them, and come to God. It is shewn by this that Zebedee was not a believer; but the mother of the Apostles believed, for she followed Christ, when Zebedee was…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -92,6 +106,92 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.20:2a246879:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:20",
+      "excerpt": "After these He catches James and John. And these, although they themselves were poor, nevertheless supported their aged father. But they did not leave their father because abandoning parents is a good thing, but because he wanted to hinder them from following the Lord. So you too, when your parents hinder you, leave them and follow the Good One. It is evident that Zebedee did not believe, but the mother of these apostles believed and, when Zebedee died, also followed the Lord. Note also this, that first the active life is called, and then the contemplative, for Peter is the image of the active life, because he was of an ardent character and always went ahead of the others, which is characteristic of the active life, while John, on the contrary, represents in himself the contemplative life, for he was a theologian par excellence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.20:46a4d3fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:20",
+      "excerpt": "We must know also, that action is first called, then contemplation; for Peter is the type of the active life, for he was more ardent than the others, just as the active life is the more bustling; but John is the type of the contemplative life, for he speaks more fully of divine things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.20"
+    },
+    {
+      "id": "hcf:basil-the-great:mark.1.20:d245b1c1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:untitled-commentary",
+      "title": "Commentary on mark 1:20",
+      "excerpt": "A beginning is made by detaching oneself from all external goods: property, selfimportance, social class and useless desire, following the holy example of the Lord's disciples. James and John left their father Zebedee and the very boat upon which their whole livelihood depended. Matthew left his counting house and followed the Lord, not merely leaving behind the profits of his occupation, but also paying no heed to the dangers which were sure to befall both himself and his family at the hands of the magistrates because he had left the tax accounts unfinished. Paul speaks of the whole world being crucified to him, and he to the world. Thus, those who are strongly seized with the desire of following Christ can no longer be concerned with anything pertaining to this life, not even with the love of their parents or other relatives insofar as this runs counter to the calling of the Lord. The Long Rules, Question",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379"
+      ],
+      "targetVerseId": "kjva:mark.1.20"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.1.20:8c69724e:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-5",
+      "title": "Forty Gospel Homilies, Homily 5 on mark 1:20",
+      "excerpt": "You have heard, dearest brothers, that at the voice of a single command, Peter and Andrew, leaving their nets, followed the Redeemer. They had seen him perform no miracles yet, they had heard nothing from him about the reward of eternal recompense; and yet at one command of the Lord they forgot what they seemed to possess. How many of his miracles do we see, with how many scourges are we afflicted, by how many harsh threats are we deterred, and yet we disdain to follow him when he calls? He who admonishes us about conversion already sits in heaven; he has already subjected the necks of the nations to the yoke of faith, he has already laid low the glory of the world, he already announces, as its ruins multiply, that the day of his strict judgment draws near; and yet our proud mind does not wish to abandon willingly what it loses daily against its will. What then, dearest ones, what shall we say at his judgment, we who are neither bent by commands nor corrected by blows from the love of the present age?\r\n\r\nBut perhaps someone may say to himself in silent thoughts: At the Lord's voice, what or how much did each of these fishermen leave behind, who had almost nothing? But in this matter, dearest brothers, we ought to weigh the affection rather than the wealth. He left much who retained nothing for himself; he left much who, however little it was, abandoned everything. Certainly we both possess what we have with love, and seek from desire those things we do not have at all. Therefore Peter and Andrew left much, since each also abandoned the desires of having. He left much who renounced his longings along with the thing he possessed. Therefore those who followed gave up as much as could be desired by those who did not follow.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.1.20"
+    },
+    {
+      "id": "hcf:jerome:mark.1.20:abd03f2f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:untitled-commentary",
+      "title": "Commentary on mark 1:20",
+      "excerpt": "There must have been something divinely compelling in the face of the Savior. Otherwise they would not have acted so irrationally as to follow a man whom they had never seen before. Does one leave a father to follow a man in whom he sees nothing more than he sees in his father? They left their father of the flesh to follow the Father of the spirit. They did not leave a father; they found a Father. What is the point of this digression? To show that there was something divine in the Savior's very countenance that men, seeing, could not resist.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:mark.1.20"
     },
     {
       "id": "catena-mark-0070-v20",
@@ -127,6 +227,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.20:8be8d36f:0"
       ]
     }
   ]

@@ -4,6 +4,31 @@
   "verseNumber": 42,
   "entries": [
     {
+      "id": "catena-luke-1881-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "But if they cannot be cleansed except they believe on Him who cleanses the heart by faith, what is this which He says, Give alms, and behold all things are clean to you? Let us give heed, and perhaps He Himself explains it to us. For the Jews withdrew a tenth part from all their produce, and gave it in alms, which rarely a Christian does. Therefore they mocked Him, for saying this to them as to men who did not give alms. God knowing this adds, But woe unto you, Pharisees! for ye tithe mint and rue and all manner of herbs, and pass over judgment and the love of God. This then is not giving…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.11.42:8b04d997:0"
+      ]
+    },
+    {
       "id": "catena-luke-1867-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.42",
@@ -12,24 +37,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:37–44",
       "excerpt": "For in order to relate this, Luke has made a variation from Matthew, at that place where both had mentioned what our Lord said concerning the sign of Jonah, and the queen of the south, and the unclean spirit; after which discourse Matthew says, While he yet talked to the people, behold his mother and his brethren stood without desiring to speak to him; but Luke having also in that discourse of our Lord related some of our Lord’s sayings which Matthew omitted, now departs from the order which he had hitherto kept with Matthew.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1870-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "For every day before dinner the Pharisees washed themselves with water, as if a daily washing could be a cleansing of the heart. But the Pharisee thought within himself, yet did not give utterance to a word; nevertheless, He heard who perceived the secrets of the heart. Hence it follows, And the Lord said unto him, Now do ye Pharisees make clean the outside of the cup and the platter; but your inward part is full of ravening and wickedness.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -58,14 +65,14 @@
       ]
     },
     {
-      "id": "catena-luke-1877-v42",
+      "id": "catena-luke-1870-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.42",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:37–44",
-      "excerpt": "Now He says, give alms, not injury. For almsgiving is that which is free from all injury. It makes all things clean, and is more excellent than fasting; which though it be the more painful, the other is the more profitable. It enlightens the soul, enriches it, and makes it good and beautiful, He who resolves to have compassion on the needy, will sooner cease from sin. For as the physician who is in the habit of healing the diseased is easily grieved by the misfortunes of others; so we, if we have devoted ourselves to the relief of others, shall easily despise things present, and be raised up…",
+      "excerpt": "For every day before dinner the Pharisees washed themselves with water, as if a daily washing could be a cleansing of the heart. But the Pharisee thought within himself, yet did not give utterance to a word; nevertheless, He heard who perceived the secrets of the heart. Hence it follows, And the Lord said unto him, Now do ye Pharisees make clean the outside of the cup and the platter; but your inward part is full of ravening and wickedness.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -76,14 +83,14 @@
       ]
     },
     {
-      "id": "catena-luke-1881-v42",
+      "id": "catena-luke-1877-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.42",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:37–44",
-      "excerpt": "But if they cannot be cleansed except they believe on Him who cleanses the heart by faith, what is this which He says, Give alms, and behold all things are clean to you? Let us give heed, and perhaps He Himself explains it to us. For the Jews withdrew a tenth part from all their produce, and gave it in alms, which rarely a Christian does. Therefore they mocked Him, for saying this to them as to men who did not give alms. God knowing this adds, But woe unto you, Pharisees! for ye tithe mint and rue and all manner of herbs, and pass over judgment and the love of God. This then is not giving…",
+      "excerpt": "Now He says, give alms, not injury. For almsgiving is that which is free from all injury. It makes all things clean, and is more excellent than fasting; which though it be the more painful, the other is the more profitable. It enlightens the soul, enriches it, and makes it good and beautiful, He who resolves to have compassion on the needy, will sooner cease from sin. For as the physician who is in the habit of healing the diseased is easily grieved by the misfortunes of others; so we, if we have devoted ourselves to the relief of others, shall easily despise things present, and be raised up…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.11.42:df85f224:0"
       ]
     },
     {
@@ -123,24 +137,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1865-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "The Pharisee, while our Lord still continued on speaking, invites Him to his own house. As it is said, And while he was speaking, a certain Pharisee besought him to dine with him.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,6 +162,24 @@
       ]
     },
     {
+      "id": "catena-luke-1887-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "By means of those things for which He blames us He makes us better. For He would have us be free from ambition, and not desire after vain show rather than the reality, which the Pharisees were then doing. For the greetings of men, and the rule over them, do not move us to be really useful, for these things fall to men though they be not good men. Therefore he adds, Woe unto you, who are as graves which appear not. For in wishing to receive greetings from men and to exercise authority over them, that they might be accounted great, they differ not from hidden graves, which glitter indeed with…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1871-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.42",
@@ -174,6 +188,67 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:37–44",
       "excerpt": "Now our Lord might also have used other words to admonish the foolish Pharisee, but he seizes the opportunity and framed his reproof from the things that were ready before him. At the hour, namely, of meals He takes for His example the cup and the platter, pointing out that it became the sincere servants of God to be washed and clean, not only from bodily impurity, but also from that which lies concealed within the power of the soul, just as any of the vessels which are used for the table ought to be free from all inward defilement.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1882-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "Or He says it by way of censure upon the Pharisees, who ordered those precepts only to be strictly observed by their people, which were the cause of fruitful returns to themselves. Hence they omitted not even the smallest herbs, but despised the work of inspiring love to God, and the just awarding of judgment.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.11.42:7125b510:1"
+      ]
+    },
+    {
+      "id": "catena-luke-1890-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "Now here the apostate Julian says, that we must avoid graves which Christ says are unclean; but he knew not the force of our Saviour’s words, for He did not command us to depart from the graves, but likened to them the hypocritical people of the Pharisees.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1865-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "The Pharisee, while our Lord still continued on speaking, invites Him to his own house. As it is said, And while he was speaking, a certain Pharisee besought him to dine with him.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -220,42 +295,6 @@
       ]
     },
     {
-      "id": "catena-luke-1880-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "The whole then of this beautiful discourse is directed to this end, that while it invites us to the study of simplicity, it should condemn the luxury and worldliness of the Jews. And yet even they are promised the abolition of their sins if they will follow mercy.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1882-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "Or He says it by way of censure upon the Pharisees, who ordered those precepts only to be strictly observed by their people, which were the cause of fruitful returns to themselves. Hence they omitted not even the smallest herbs, but despised the work of inspiring love to God, and the just awarding of judgment.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1884-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.42",
@@ -264,6 +303,49 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:37–44",
       "excerpt": "Or judgment, because they do not bring to examination every thing that they do; charity, because they love not God with their heart. But that He might not make us zealous of the faith, to the neglect of good works, He sums up the perfection of a good man in a few words, these ought ye to have done, and not to leave the other undone.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.11.42:0672af60:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1888-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "And like graves which appear not, they deceive by their outside beauty, and by their look impose upon the passers by; as it follows, And the men that walk over them are not aware of them; so much that in truth, though they give outward promise of what is beautiful, inwardly they enclose all manner of pollution.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1880-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "The whole then of this beautiful discourse is directed to this end, that while it invites us to the study of simplicity, it should condemn the luxury and worldliness of the Jews. And yet even they are promised the abolition of their sins if they will follow mercy.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -292,86 +374,14 @@
       ]
     },
     {
-      "id": "catena-luke-1887-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "By means of those things for which He blames us He makes us better. For He would have us be free from ambition, and not desire after vain show rather than the reality, which the Pharisees were then doing. For the greetings of men, and the rule over them, do not move us to be really useful, for these things fall to men though they be not good men. Therefore he adds, Woe unto you, who are as graves which appear not. For in wishing to receive greetings from men and to exercise authority over them, that they might be accounted great, they differ not from hidden graves, which glitter indeed with…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1888-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "And like graves which appear not, they deceive by their outside beauty, and by their look impose upon the passers by; as it follows, And the men that walk over them are not aware of them; so much that in truth, though they give outward promise of what is beautiful, inwardly they enclose all manner of pollution.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1890-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "Now here the apostate Julian says, that we must avoid graves which Christ says are unclean; but he knew not the force of our Saviour’s words, for He did not command us to depart from the graves, but likened to them the hypocritical people of the Pharisees.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1866-v42",
+      "id": "catena-luke-1878-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.42",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:37–44",
-      "excerpt": "Luke expressly says, And as he spake these things, to shew that He had not quite finished what He had purposed to say, but was somewhat interrupted by the Pharisee asking Him to dine.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1868-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "Accordingly, after that it was told Him that His mother and brethren stood without, and He said, For he that doeth the will of God, the same is my brother, and sister, and mother, we are given to understand that He by the request of the Pharisee went to the dinner.",
+      "excerpt": "He speaks of “what is over and above” our necessary food and clothing. For you are not commanded to give alms so as to consume yourself by want, but that after satisfying your wants, you should supply the poor to the utmost of your power. Or it must be taken in this way. Do that which remains within your power, that is, which is the only remedy remaining to those who have been hitherto engaged in so much wickedness; give alms. Which word applies to every thing which is done with profitable compassion. For not he alone gives alms who gives food to the hungry and things of that kind, but he…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -400,6 +410,42 @@
       ]
     },
     {
+      "id": "catena-luke-1868-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "Accordingly, after that it was told Him that His mother and brethren stood without, and He said, For he that doeth the will of God, the same is my brother, and sister, and mother, we are given to understand that He by the request of the Pharisee went to the dinner.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1866-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "Luke expressly says, And as he spake these things, to shew that He had not quite finished what He had purposed to say, but was somewhat interrupted by the Pharisee asking Him to dine.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1876-v42",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.42",
@@ -411,42 +457,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1878-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "He speaks of “what is over and above” our necessary food and clothing. For you are not commanded to give alms so as to consume yourself by want, but that after satisfying your wants, you should supply the poor to the utmost of your power. Or it must be taken in this way. Do that which remains within your power, that is, which is the only remedy remaining to those who have been hitherto engaged in so much wickedness; give alms. Which word applies to every thing which is done with profitable compassion. For not he alone gives alms who gives food to the hungry and things of that kind, but he…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1879-v42",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.42",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:37–44",
-      "excerpt": "Or He means, “That which is uppermost.” For wealth rules the covetous man’s heart.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -469,7 +479,168 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.11.42:6851d451:1"
       ]
+    },
+    {
+      "id": "catena-luke-1879-v42",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.42",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:37–44",
+      "excerpt": "Or He means, “That which is uppermost.” For wealth rules the covetous man’s heart.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.11.42:6c415637:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-84",
+      "title": "COMMENTARY ON LUKE, HOMILY 84 on luke 11:42",
+      "excerpt": "The transgression of one commandment transgresses the law. It proves the man to be without the law. When anyone disregards those commandments, which especially are important above the rest, what words will he find able to save him from deserved punishment? The Lord proved that the Pharisees merited these severe censures, saying, \"Woe to you, Pharisees, who tithe mint, rue and all herbs and pass over judgment and the love of God!\" You should have done these things and not passed by the others, that is, to leave them undone. They omitted as of no importance those duties which they were especially bound to practice, like justice and the love of God. They carefully and scrupulously observed, or rather commanded the people subject to their authority to observe, only those commandments that were means of great revenues for themselves.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-84",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
+    },
+    {
+      "id": "hcf:bede:luke.11.42:4f7cef11:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:42",
+      "excerpt": "These things, however, you ought to have done. That is, justice and the love of God, so that judging rightly of our own misery and loving the charity of God that He has bestowed, we may live piously and rightly, confessing His righteous judgment, which the Apostle says, Judgment came through one to condemnation: and giving thanks to His great charity (Romans V), of which the same grace preacher says: But God commends His charity in us, that while we were still sinners, Christ died for us (Ibid.).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
+    },
+    {
+      "id": "hcf:bede:luke.11.42:0eaba395:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:42",
+      "excerpt": "And you neglect justice and the love of God. By this alms you might be cleansed of all inner impurity, so that the bodies you wash might also be clean to you, for this is indeed everything, both the inner and the outer, as it is read elsewhere: Cleanse what is inside, and what is outside will be clean (Matthew XXIII). But lest it seem that he rejects those alms made from the fruits of the earth...",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
+    },
+    {
+      "id": "hcf:bede:luke.11.42:c10f88c6:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:42",
+      "excerpt": "These things you ought to have done, and not leave the others undone, that is, alms from the fruits of the earth. Therefore, let them not deceive themselves who think that by giving the most generous alms from their fruits, or any money, they are buying impunity while remaining in the enormity of crimes and the wickedness of disgraces.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
+    },
+    {
+      "id": "hcf:bede:luke.11.42:0d748e57:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:42",
+      "excerpt": "But woe to you, he said, Pharisees. As if he said, I indeed warned you to give alms, by which everything would be clean to you: but woe to you, because you tithe mint and rue and every herb; for I know these as your alms, so do not think that I now admonish you about them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.11.42:e9987f1e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-7-103-104",
+      "title": "Exposition of the Gospel of Luke, 7.103-104 on luke 11:42",
+      "excerpt": "However, he briefly exposes their many sins who devote all their effort to contributing the tithes of cheaper fruits: they have no fear of the future judgment or any love for God, since their works are worthless without faith; for they disregard the judgment and love of God: the judgment, because they do not bring everything they do under judgment; the love, because they do not love God out of devotion.\r\n\r\nBut so that it does not make us diligent in faith, neglectful of works, he concludes the perfection of a faithful man with a short discourse; so that he may be approved both by faith and works, saying: These things you ought to do, and not leave the others undone.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.42:6d6a6450:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:42",
+      "excerpt": "The Pharisees, precisely in order not to transgress the Law, tithed even from the most insignificant items, and if anyone reproached them for pettiness, they would appeal to the Law, which commanded that a tithe of everything be brought to the priests (Deut. 14:22-23). Therefore the Lord says: just as you do not neglect these things, so you ought to practice justice and the love of God. Since the Pharisees were unjust, oppressing widows and orphans, the Lord says: you ought to have \"justice,\" that is, righteousness. And since they were contemptuous even toward God, laying their hand on sacred matters without due reverence, the Lord commands them to have \"the love of God.\" For whoever loves God does not approach His works with negligence. And it seems to me, since there are two kinds of love — love of God and love of neighbor — that perhaps the Lord is alluding to these two kinds: by the word \"justice\" He denotes love of neighbor, since righteousness and not oppressing one's neighbor arise from love for him; and by the phrase \"love of God\" He undoubtedly denotes wholehearted devotion to God. And when someone loves his neighbor not out of any worldly or shameful inclination, but for God's sake, then this love too may be called the love of God, since it is commanded by God and is well-pleasing to Him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
+    },
+    {
+      "id": "hcf:tertullian:luke.11.42:55ef5cd1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 11:42",
+      "excerpt": "In like manner, He upbraids them for tithing paltry herbs, but at the same time \"passing over hospitality and the love of God. The vocation and the love of what God, but Him by whose law of tithes they used to offer their rue and mint? For the whole point of the rebuke lay in this, that they cared about small matters in His service of course, to whom they failed to exhibit their weightier duties when He commanded them: \"Thou shalt love with all thine heart, and with all thy soul, and with all thy strength, the Lord thy God, who hath called thee out of Egypt.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.11.42"
     }
   ]
 }

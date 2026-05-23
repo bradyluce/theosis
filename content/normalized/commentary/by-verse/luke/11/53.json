@@ -40,24 +40,6 @@
       ]
     },
     {
-      "id": "catena-luke-1912-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.53",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:45–54",
-      "excerpt": "But the key of knowledge is also the humility of Christ, which they would neither themselves understand, nor let be understood by others.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-1914-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
@@ -76,14 +58,32 @@
       ]
     },
     {
-      "id": "catena-luke-1891-v53",
+      "id": "catena-luke-1912-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.53",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:45–54",
+      "excerpt": "But the key of knowledge is also the humility of Christ, which they would neither themselves understand, nor let be understood by others.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1911-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "A reproof which exalts the meek is generally hateful to the proud man. When therefore our Saviour was blaming the Pharisees for transgressing from the right path, the body of Lawyers were struck with consternation. Hence it is said, Then answered one of the Lawyers, and said unto him, Master, thus saying thou reproachest us also.",
+      "excerpt": "Now we say, the law itself is the key of knowledge. For it was both a shadow and a figure of the righteousness of Christ, therefore it became the Lawyers, as instructors of the Law of Moses and the words of the Prophets, to reveal in a certain measure to the Jewish people the knowledge of Christ. This they did not, but on the contrary detracted from the divine miracles, and spoke against His teaching, Why hear ye him? So then they took away the key of knowledge. Hence it follows, Ye entered not in yourselves, and them that were entered in ye hindered. But faith also is the key of knowledge.…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,14 +112,14 @@
       ]
     },
     {
-      "id": "catena-luke-1897-v53",
+      "id": "catena-luke-1891-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
-      "personId": "gregory-of-nyssa",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "So also are there now many severe judges of sinners, yet weak combatants; burdensome imposers of laws, yet weak bearers of burdens; who wish neither to approach nor to touch strictness of life, though they sternly exact it from their subjects.",
+      "excerpt": "A reproof which exalts the meek is generally hateful to the proud man. When therefore our Saviour was blaming the Pharisees for transgressing from the right path, the body of Lawyers were struck with consternation. Hence it is said, Then answered one of the Lawyers, and said unto him, Master, thus saying thou reproachest us also.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -148,14 +148,14 @@
       ]
     },
     {
-      "id": "catena-luke-1899-v53",
+      "id": "catena-luke-1916-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "This is a good answer to the foolish superstition of the Jews, who in building the tombs of the prophets condemned the deeds of their fathers, but by rivalling their fathers’ wickedness, throw back the sentence upon themselves. For not the building but the imitation of their deeds is looked upon as a crime. Therefore He adds, Truly ye bear witness that ye allow, &c.",
+      "excerpt": "Now this urging is taken to mean pressing upon Him, or threatening Him, or waxing furious against Him. But they began to interrupt His words in many ways, as it follows, And to force him to speak of many things.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -163,24 +163,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1901-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.53",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:45–54",
-      "excerpt": "The wisdom of God is Christ. The words indeed in Matthew are, Behold I send unto you prophets and wise men.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.11.53:22e90f1c:0"
       ]
     },
     {
@@ -220,14 +209,14 @@
       ]
     },
     {
-      "id": "catena-luke-1910-v53",
+      "id": "catena-luke-1897-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
-      "personId": "basil-the-great",
+      "personId": "gregory-of-nyssa",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "This word woe, which is uttered with pain intolerable, is suited to those who were shortly after to be cast out into grievous punishment.",
+      "excerpt": "So also are there now many severe judges of sinners, yet weak combatants; burdensome imposers of laws, yet weak bearers of burdens; who wish neither to approach nor to touch strictness of life, though they sternly exact it from their subjects.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -238,14 +227,14 @@
       ]
     },
     {
-      "id": "catena-luke-1911-v53",
+      "id": "catena-luke-1899-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "Now we say, the law itself is the key of knowledge. For it was both a shadow and a figure of the righteousness of Christ, therefore it became the Lawyers, as instructors of the Law of Moses and the words of the Prophets, to reveal in a certain measure to the Jewish people the knowledge of Christ. This they did not, but on the contrary detracted from the divine miracles, and spoke against His teaching, Why hear ye him? So then they took away the key of knowledge. Hence it follows, Ye entered not in yourselves, and them that were entered in ye hindered. But faith also is the key of knowledge.…",
+      "excerpt": "This is a good answer to the foolish superstition of the Jews, who in building the tombs of the prophets condemned the deeds of their fathers, but by rivalling their fathers’ wickedness, throw back the sentence upon themselves. For not the building but the imitation of their deeds is looked upon as a crime. Therefore He adds, Truly ye bear witness that ye allow, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -274,14 +263,14 @@
       ]
     },
     {
-      "id": "catena-luke-1916-v53",
+      "id": "catena-luke-1901-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "Now this urging is taken to mean pressing upon Him, or threatening Him, or waxing furious against Him. But they began to interrupt His words in many ways, as it follows, And to force him to speak of many things.",
+      "excerpt": "The wisdom of God is Christ. The words indeed in Matthew are, Behold I send unto you prophets and wise men.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -292,35 +281,17 @@
       ]
     },
     {
-      "id": "catena-luke-1892-v53",
+      "id": "catena-luke-1910-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "basil-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "In what a grievous state is that conscience, which hearing the word of God thinks it a reproach against itself, and in the account of the punishment of the wicked perceives its own condemnation.",
+      "excerpt": "This word woe, which is uttered with pain intolerable, is suited to those who were shortly after to be cast out into grievous punishment.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1896-v53",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.53",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:45–54",
-      "excerpt": "Now they are rightly told that they would not touch the burdens of the Law even with one of their fingers, that is, they fulfil not in the slightest point that law which they pretend to keep and transmit to the keeping of others, contrary to the practice of their fathers, without faith and the grace of Christ.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -364,6 +335,24 @@
       ]
     },
     {
+      "id": "catena-luke-1908-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.53",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:45–54",
+      "excerpt": "Why He begins from the blood of Abel, who was the first martyr, we need not wonder; but why, to the blood of Zacharias, is a question, since many were slain after him even up to our Lord’s birth, and soon after His birth the Innocents, unless perhaps it was because Abel was a shepherd, Zacharias a Priest. And the one was killed in the field, the other in the court of the temple, martyrs of each class, that is, under their names are shadowed both laymen, and those engaged in the office of the altar.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1904-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
@@ -382,14 +371,14 @@
       ]
     },
     {
-      "id": "catena-luke-1908-v53",
+      "id": "catena-luke-1896-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "Why He begins from the blood of Abel, who was the first martyr, we need not wonder; but why, to the blood of Zacharias, is a question, since many were slain after him even up to our Lord’s birth, and soon after His birth the Innocents, unless perhaps it was because Abel was a shepherd, Zacharias a Priest. And the one was killed in the field, the other in the court of the temple, martyrs of each class, that is, under their names are shadowed both laymen, and those engaged in the office of the altar.",
+      "excerpt": "Now they are rightly told that they would not touch the burdens of the Law even with one of their fingers, that is, they fulfil not in the slightest point that law which they pretend to keep and transmit to the keeping of others, contrary to the practice of their fathers, without faith and the grace of Christ.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -415,17 +404,67 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.11.53:a5fd283c:1"
       ]
     },
     {
-      "id": "catena-luke-1893-v53",
+      "id": "catena-luke-1892-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.53",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:45–54",
+      "excerpt": "In what a grievous state is that conscience, which hearing the word of God thinks it a reproach against itself, and in the account of the punishment of the wicked perceives its own condemnation.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-1917-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "Now the Lawyers were different from the Pharisees. For the Pharisees being separated from the rest had the appearance of a religious sect; but those skilled in the Law were the Scribes and Doctors who solved legal questions.",
+      "excerpt": "For when several are questioning a man on different subjects, since he can not reply to all at once, foolish people think he is doubting. This also was part of their wicked design against Him; but they sought also in another way to control His power of speech, namely, by provoking Him to say something by which He might be condemned; whence it follows, Laying in wait for him, and seeking to catch something out of his mouth, that they might accuse him. Having first spoken of “forcing,” Luke now says to catch or seize something from His mouth; at one time indeed they asked Him concerning the…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.11.53:06a63667:1"
+      ]
+    },
+    {
+      "id": "catena-luke-1907-v53",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.53",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:45–54",
+      "excerpt": "But our Lord shews that the Jews have inherited the malice of Cain, since he adds, From the blood of Abel, to the blood of Zacharias, &c. Abel, inasmuch as he was slain by Cain; but Zacharias, whom they slew between the temple and the altar, some say was the Zacharias of old time, the son of Jehoiadah the Priest.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -454,14 +493,14 @@
       ]
     },
     {
-      "id": "catena-luke-1907-v53",
+      "id": "catena-luke-1893-v53",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.53",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:45–54",
-      "excerpt": "But our Lord shews that the Jews have inherited the malice of Cain, since he adds, From the blood of Abel, to the blood of Zacharias, &c. Abel, inasmuch as he was slain by Cain; but Zacharias, whom they slew between the temple and the altar, some say was the Zacharias of old time, the son of Jehoiadah the Priest.",
+      "excerpt": "Now the Lawyers were different from the Pharisees. For the Pharisees being separated from the rest had the appearance of a religious sect; but those skilled in the Law were the Scribes and Doctors who solved legal questions.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -472,22 +511,38 @@
       ]
     },
     {
-      "id": "catena-luke-1917-v53",
+      "id": "hcf:bede:luke.11.53:3b407fbb:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.11.53",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:53",
+      "excerpt": "When He said these things to them, the Pharisees and the experts in the law began to fiercely oppose Him and to press upon His mouth, laying traps for Him about many things, and seeking to catch something out of His mouth, so that they might accuse Him. The crimes of their perfidy, simulation, and impiety they themselves attest to have truly heard, who, at such a thundering storm, do not repent themselves, but plan to attack the teacher of truth with treachery.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.53"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.53:18863bab:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:45–54",
-      "excerpt": "For when several are questioning a man on different subjects, since he can not reply to all at once, foolish people think he is doubting. This also was part of their wicked design against Him; but they sought also in another way to control His power of speech, namely, by provoking Him to say something by which He might be condemned; whence it follows, Laying in wait for him, and seeking to catch something out of his mouth, that they might accuse him. Having first spoken of “forcing,” Luke now says to catch or seize something from His mouth; at one time indeed they asked Him concerning the…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:53",
+      "excerpt": "\"While He was still saying\" these things, they, instead of acknowledging their own powerlessness, as if to refute His words, declared themselves to be wiser than Him and began to shut His mouth, that is, to question Him incessantly and to perplex Him. For difficulty in speech usually arises when very many people suddenly question one person, and moreover about different subjects. Then that person, being unable to answer everyone, gives the foolish reason to consider him defeated. The same thing these accursed ones plotted against Christ. Being many, questioning one, they thought to confound Him in speech and bring Him into difficulty, as one unable to answer them — which was even plausible. For how can one person suddenly answer many on different questions? This can also be understood in the following sense: \"to catch Him... from His mouth\" and to convict Him. For when someone is caught by his own words, he seems to shut his own mouth, that is, he is convicted by his own mouth and condemned. This meaning is also evident from what follows. For it says: \"seeking to catch something from His mouth.\" What was named a little earlier is now replaced by the words — \"to catch from His mouth.\"\r\n\r\nThey posed questions to Him sometimes concerning the (Mosaic) Law, in order to expose Him as a blasphemer who reviles Moses (for they suspected Him of this), and sometimes concerning Caesar, in order to declare Him a seditious man seeking power, and about all such things that cunning souls filled with every malice could devise.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.53"
     }
   ]
 }

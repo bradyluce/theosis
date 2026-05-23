@@ -22,6 +22,24 @@
       ]
     },
     {
+      "id": "catena-luke-0080-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.22",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:18–22",
+      "excerpt": "But the Angel says, And, behold; in other words, “At this instant.” But mark the mercy of God in what follows: Until the day in which these things shall be performed. As if he said, “When by the issues of events I shall have proved my words, and thou shalt perceive that thou art rightly punished, I will remove the punishment from thee.” And he points out the cause of the punishment, adding, Because thou believest not my words, which shall be fulfilled in their season; not considering His power Who sent me, and before Whom I stand. But if he who was incredulous about a mortal birth is…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-0074-v22",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.22",
@@ -48,24 +66,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
       "excerpt": "That the bonds might be transferred from the powers of generation to the vocal organs. From no regard to the priesthood was he spared, but for this reason was the more smitten, because in a matter of faith he ought to have set an example to others.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0080-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.22",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:18–22",
-      "excerpt": "But the Angel says, And, behold; in other words, “At this instant.” But mark the mercy of God in what follows: Until the day in which these things shall be performed. As if he said, “When by the issues of events I shall have proved my words, and thou shalt perceive that thou art rightly punished, I will remove the punishment from thee.” And he points out the cause of the punishment, adding, Because thou believest not my words, which shall be fulfilled in their season; not considering His power Who sent me, and before Whom I stand. But if he who was incredulous about a mortal birth is…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -109,6 +109,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.22:8963e46f:0"
       ]
     },
     {
@@ -130,14 +137,14 @@
       ]
     },
     {
-      "id": "catena-luke-0075-v22",
+      "id": "catena-luke-0077-v22",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.22",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
-      "excerpt": "Here we must remark, that the angel testifies, that he both stands before God, and is sent to bring good tidings to Zacharias.",
+      "excerpt": "But he gives him the sign which he asks for, that he who spoke in unbelief, might now by silence learn to believe; as it follows; and, behold, thou shall be dumb.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -148,14 +155,14 @@
       ]
     },
     {
-      "id": "catena-luke-0077-v22",
+      "id": "catena-luke-0075-v22",
       "relation": "verse",
       "targetVerseId": "kjva:luke.1.22",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:18–22",
-      "excerpt": "But he gives him the sign which he asks for, that he who spoke in unbelief, might now by silence learn to believe; as it follows; and, behold, thou shall be dumb.",
+      "excerpt": "Here we must remark, that the angel testifies, that he both stands before God, and is sent to bring good tidings to Zacharias.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -199,7 +206,84 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.1.22:091d0b19:1"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.22:0925150b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:22",
+      "excerpt": "Zechariah made signs to the people, who were probably asking about the reason for his silence; but since he could not speak, he explained it through signs.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.22"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.1.22:3d66a8f5:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:22",
+      "excerpt": "But in one man the voice of the people was put to silence, because in one man the whole people was addressing God. For the word of God has come over to us, and in us is not silent. He is dumb who understands not the Law; for why should you think the man who knows not a sound, to be more dumb than him who knows not a mystery. The Jewish people are like to one beckoning, who cannot make his actions intelligible.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.22"
+    },
+    {
+      "id": "hcf:hcf-ancient-greek-expositor:luke.1.22:738b63c4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-ancient-greek-expositor",
+      "workId": "hcf:work:hcf-ancient-greek-expositor:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 1:22",
+      "excerpt": "(Antipater Bostrensis.) Now while these things were going on within, the delay excited surprise among the multitudes who were waiting without, as it follows: And the people waited for Zacharias, and marvelled that he tarried. And while various suspicions were going about, each man repeating them as it pleased him, Zacharias coming forth told by his silence what he secretly endured. Hence it follows, And when he came out, he could not speak.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.1.22"
+    },
+    {
+      "id": "hcf:origen:luke.1.22:0d6c44b3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:homily-on-the-gospel-of-luke-5-1-4",
+      "title": "HOMILY ON THE GOSPEL OF LUKE 5.1, 4 on luke 1:22",
+      "excerpt": "When the priest Zechariah offers incense in the temple, he is condemned to silence and cannot speak. Or better, he speaks only with gestures. He remains unable to speak until the birth of his son, John. What does this mean? Zechariah's silence is the silence of prophets in the people of Israel. God no longer speaks to them. His \"Word, which was with the Father from the beginning, and was God,\" has passed over to us. For us Christ is not silent.…Christ ceased to be in them. The Word deserted them. What Isaiah wrote was fulfilled: \"The daughter of Zion will be deserted like a tent in the vineyard or like a hut in the cucumber patch. She is as desolate as a plundered city.\" The Jews were left behind, and salvation passed to the Gentiles.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-on-the-gospel-of-luke-5-1-4",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.1.22"
     }
   ]
 }

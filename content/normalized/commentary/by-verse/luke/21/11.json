@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.21.11:e3982825:0"
       ]
     },
     {
@@ -33,42 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2974-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.21.11",
-      "topicSlugs": [],
-      "personId": "gregory-the-great",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 21:9–11",
-      "excerpt": "God denounces the woes that shall forerun the destruction of the world, that so they may the less disturb when they come, as having been foreknown. For darts strike the less which are foreseen. And so He says, But when ye shall hear of wars and commotions, &c. Wars refer to the enemy, commotions to citizens. To shew us then that we shall be troubled from within and without, He asserts that the one we suffer from the enemy, the other from our own brethren.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2975-v11",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.21.11",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 21:9–11",
-      "excerpt": "But of the heavenly words none are greater witnesses than we, upon whom the ends of the world have come. What wars and what rumours of wars have we received!",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -109,17 +80,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.21.11:e6ae120e:1"
       ]
     },
     {
-      "id": "catena-luke-2979-v11",
+      "id": "catena-luke-2974-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.11",
       "topicSlugs": [],
-      "personId": "ambrose-of-milan",
+      "personId": "gregory-the-great",
       "workId": "catena-aurea-luke",
       "title": "On Luke 21:9–11",
-      "excerpt": "The ruin of the world then is preceded by certain of the world’s calamities, such as famine, pestilence, and persecution.",
+      "excerpt": "God denounces the woes that shall forerun the destruction of the world, that so they may the less disturb when they come, as having been foreknown. For darts strike the less which are foreseen. And so He says, But when ye shall hear of wars and commotions, &c. Wars refer to the enemy, commotions to citizens. To shew us then that we shall be troubled from within and without, He asserts that the one we suffer from the enemy, the other from our own brethren.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -148,6 +126,49 @@
       ]
     },
     {
+      "id": "catena-luke-2975-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.21.11",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 21:9–11",
+      "excerpt": "But of the heavenly words none are greater witnesses than we, upon whom the ends of the world have come. What wars and what rumours of wars have we received!",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2979-v11",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.21.11",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 21:9–11",
+      "excerpt": "The ruin of the world then is preceded by certain of the world’s calamities, such as famine, pestilence, and persecution.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.21.11:b0f9420b:0"
+      ]
+    },
+    {
       "id": "catena-luke-2982-v11",
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.11",
@@ -163,6 +184,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.21.11:c52177a7:1"
       ]
     },
     {
@@ -181,7 +209,133 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.21.11:b8b084f1:0"
       ]
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.21.11:a097708d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-35",
+      "title": "Forty Gospel Homilies, Homily 35 on luke 21:11",
+      "excerpt": "\"There will be great earthquakes in various places\"—behold the look of wrath from above; \"there will be pestilences\"—behold the disorder of bodies; \"there will be famine\"—behold the barrenness of the earth; \"terrors from heaven and storms\"—behold the disorder of the air. Because therefore all things are to be brought to an end, before the end all things are disturbed; and we who have sinned in all things are struck in all things, so that what is said may be fulfilled: \"And the world will fight on his behalf against the senseless.\" For all things that we received for the use of life we have turned to the use of sin, but all things that we bent to the use of wickedness are turned against us for the use of vengeance. Indeed we turned the tranquility of human peace to the use of vain security; we loved the pilgrimage of earth as if it were our homeland's dwelling; we reduced the health of bodies to the use of vices; we twisted the abundance of plenty not to the necessity of the flesh but to the perversity of pleasure; we forced even the serene enticements of the air to serve our love of earthly delight. Rightly therefore it remains that all things strike us together, which all together served our vices in evil subjection, so that as many joys as we previously had unharmed in the world, so many torments from it we are afterward compelled to feel.\r\n\r\nBut it should be noted what is said: \"Terrors from heaven and storms.\" Since winter storms usually come according to the order of the seasons, why are storms predicted here as a sign of destruction, unless because the Lord announces that storms will come that in no way keep the order of the seasons? For those that come in an orderly fashion are not a sign; but storms are a sign that confound even the appointed times of the seasons themselves. This we too have recently experienced, because we saw the entire summer season turned into winter rains.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.21.11"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.21.11:4440a999:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-15-18",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.15-18 on luke 21:11",
+      "excerpt": "Jerusalem certainly was besieged and taken by the Roman army … then, the desolation will be near since many will fall into error and depart from the true faith.… Then the day of the Lord will suitably come, and the days will be shortened for the sake of the chosen. Since the Lord's first coming was to atone for sins, the second will be to prevent transgressions, fearing more might fall into the error of unbelief. False prophets and then famine will come. Tell me again of the times of Elijah, and you will find prophets of confusion, Jezebel, famine and drought on earth. What was the reason? Wickedness abounded, and love grew cold.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.21.11"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.21.11:c4d84537:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 21:11",
+      "excerpt": "As a consequence of wars, \"famine and pestilence\" will follow; pestilence from the corruption of the air by corpses, and famine from the failure to cultivate the fields.\r\nSome understood it such that famine, pestilence, and other calamities would occur not only at the end of the age, but also during the captivity of Jerusalem. For Josephus (Flavius) says that on account of the famine there were terrible calamities. And Luke too in the book of Acts (Acts 11:28) says that \"there was a famine... under Caesar Claudius.\" There were also many terrors pointing to the captivity, as the same Josephus recounts. This, that is, \"wars, tumults,\" and the rest, can certainly be understood generally as referring to the time of the end of the world and the captivity of Jerusalem.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.21.11"
+    },
+    {
+      "id": "hcf:bede:luke.21.11:0bda2dff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 21:11",
+      "excerpt": "Then he said to them: Nation will rise against nation, and kingdom against kingdom, and there will be great earthquakes in various places, and famines, and pestilences. It is established that these things occurred literally before the end of the desolation of the temple, that is, in the time of the Jewish sedition. However, kingdoms against kingdoms, and the pestilence of those whose word spreads like gangrene (2 Tim. 2), and the famine of hearing the word of God (Amos 8), and the disturbance of the entire earth, and separation from true faith, can also be understood in the heretics, who, fighting against each other, bring about the victory of the Church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.21.11"
+    },
+    {
+      "id": "hcf:bede:luke.21.11:e9f3df14:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 21:11",
+      "excerpt": "And there shall be terrors in the heavens, and great signs. And these same things being fulfilled, whoever has read the history of Josephus will find out. For indeed a star similar to a sword, as he states, hung over Jerusalem for a whole year, terrifying the anxious citizens with a dreadful portent. And likewise chariots and armed horsemen were seen running through the skies, and mimicking the manner of warriors for forty days. Moreover, when a heifer was brought to sacrifices, it gave birth to a lamb in the hands of those offering it. But what merit caused these things to happen is immediately added when it is said:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.21.11"
+    },
+    {
+      "id": "hcf:augustine:luke.21.11:d0341221:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-296-10",
+      "title": "SERMON 296.10 on luke 21:11",
+      "excerpt": "When this type of thing was chanted to you in the temple, \"The gods who protected Rome have not saved it now, because they no longer exist,\" you would say, \"They did save it when they existed.\"We, however, can show that our God is truthful. He foretold all these things. You read all of them and heard them. I am not sure whether you have remembered them, you that are upset by such words. Have you not heard the prophets, the apostles, the Lord Jesus Christ himself foretelling evils to come? When old age comes to the world and the end draws near, you heard it, brothers and sisters, we all heard it together. There will be wars, turmoil, tribulations and famines. Why do we contradict ourselves? When these things are read, we believe them, but when they are fulfilled, we grumble.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.21.11"
+    },
+    {
+      "id": "hcf:hcf-maximus-of-turin:luke.21.11:54ce5b68:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-maximus-of-turin",
+      "workId": "hcf:work:hcf-maximus-of-turin:sermon-85-1",
+      "title": "SERMON 85.1 on luke 21:11",
+      "excerpt": "Perhaps you are anxious, brothers and sisters, at the fact that we hear constantly of the tumult of wars and the onsets of battles. Perhaps your love is still more anxious since these are taking place in our times. The reason is the closer we are to the destruction of the world, the closer we are to the kingdom of the Savior. The Lord himself says, \"In the last days nation will rise against nation and kingdom against kingdom. When you see wars, earthquakes and famines, know that the kingdom of God is at hand.\" This nearness of wars shows us that Christ is near.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-85-1",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c465"
+      ],
+      "targetVerseId": "kjva:luke.21.11"
     }
   ]
 }

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.17.22:0d56a106:0"
       ]
     },
     {
@@ -33,42 +40,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2603-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.22",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:22–25",
-      "excerpt": "Or, by the day of Christ He signifies His kingdom, which we hope will come, and He rightly says, one day, because there shall no darkness disturb the glory of that blessed time. It is right then to long for the day of Christ, yet from the earnestness of our longing, let us not vision to ourselves as though the day were at hand. Hence it follows, And they shall say to you, Lo here! and, Lo there!",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2604-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.17.22",
-      "topicSlugs": [],
-      "personId": "eusebius-caesarea",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:22–25",
-      "excerpt": "As if he said, If at the coming of Antichrist, his fame shall be spread abroad, as though Christ had appeared, go not out, nor follow him. For it cannot be that He who was once seen on earth, shall any more dwell in the corners of the earth. It will therefore be he of whom we speak, not the true Christ. For this is the clear sign of the second coming of our Saviour, that suddenly the lustre of His coming shall fill the whole world; and so it follows, For as the lightning that lighteneth, &c. For He will not appear walking upon the earth, as any common man, but will illuminate our whole…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -112,6 +83,49 @@
       ]
     },
     {
+      "id": "catena-luke-2603-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.22",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:22–25",
+      "excerpt": "Or, by the day of Christ He signifies His kingdom, which we hope will come, and He rightly says, one day, because there shall no darkness disturb the glory of that blessed time. It is right then to long for the day of Christ, yet from the earnestness of our longing, let us not vision to ourselves as though the day were at hand. Hence it follows, And they shall say to you, Lo here! and, Lo there!",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.17.22:62d268b1:1"
+      ]
+    },
+    {
+      "id": "catena-luke-2604-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.22",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:22–25",
+      "excerpt": "As if he said, If at the coming of Antichrist, his fame shall be spread abroad, as though Christ had appeared, go not out, nor follow him. For it cannot be that He who was once seen on earth, shall any more dwell in the corners of the earth. It will therefore be he of whom we speak, not the true Christ. For this is the clear sign of the second coming of our Saviour, that suddenly the lustre of His coming shall fill the whole world; and so it follows, For as the lightning that lighteneth, &c. For He will not appear walking upon the earth, as any common man, but will illuminate our whole…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2602-v22",
       "relation": "verse",
       "targetVerseId": "kjva:luke.17.22",
@@ -127,7 +141,82 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.17.22:f8e39a6e:1"
       ]
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.17.22:900c0ef9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-117",
+      "title": "COMMENTARY ON LUKE, HOMILY 117 on luke 17:22",
+      "excerpt": "He now speaks to the holy disciples as his true companions. He says, \"The days will come when you will desire to see one of the days of the Son of man, and will not see it.\" … He would have them prepared for all that can cause people grief. He wants them ready to endure patiently so that approved they may enter the kingdom of God. He warns them that before his coming from heaven at the consummation of the world, tribulation and persecution will precede him. They will wish to see one of the days of the Son of man, such as those when they were still going around with Christ and speaking with him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-117",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.17.22"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.17.22:29d03b44:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:22",
+      "excerpt": "That is, the Kingdom of God belongs to you as well, so long as I am with you. It belongs to you not only because you have believed in Me and followed Me, but also because you now live in perfect freedom from care, since I care for and think about you. But when I am no longer with you, such days will come that you will be given over to dangers, led before rulers and kings. Then you, as those of the Kingdom of God, will long for the present safe life that you lead with Me, and will many times wish to have even one of My days, that is, the days of My presence with you, as the safest of days. Although they (the disciples of the Lord), even while they were with Him, led a life not without labors and dangers, enduring flight with Him who fled and insult with Him who was insulted, yet if their former adventures are compared with the future dangers, it will turn out that they were then very safe. Therefore, even with such a way of life, that is, with small dangers and labors, the Kingdom of God was within the apostles; whereas after the Resurrection they were like captives and exiles. With these words the Lord prepares the hearts of the apostles for labors and endurance, and tells them beforehand so that they would not be scandalized (John 16:1).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.17.22"
+    },
+    {
+      "id": "hcf:bede:luke.17.22:24ab7e61:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:22",
+      "excerpt": "And he said to the disciples: The days will come when you will long to see one of the days of the Son of Man, and you will not see it. This is the kingdom of God, which we hope for to see the day of Christ, and indeed one day, because in that glory of bliss, the prophet sighing said: For one day in your courts is better than a thousand (Psal. LXXXIII), there is no interruption of darkness, no memory at all of misery or pain, which have gone away, clouding the light of perpetual peace. Therefore, it is good to desire the presence of this day, but not to imagine everything to us in the greatness of desire, as if the day of the Lord were at hand. Hence also the Lord aptly added while predicting the future:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.22"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.17.22:4df9c2c4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:22",
+      "excerpt": "He who knows the signs of the coming judgment also knows the end. Why would he not know? He is like flashing lightning, since as the Light, the Son of God illumines the inner part of the heavenly mystery. \"In that hour,\" it says. He also knows the hour, but he knows it for himself, he does not know it for me. He then suitably asserts that the cause of the flood, fire and of the judgment proceeded from our sins, because God did not create evil, but our actions devised it for themselves.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.17.22"
     }
   ]
 }

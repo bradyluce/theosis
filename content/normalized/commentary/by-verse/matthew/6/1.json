@@ -20,6 +20,13 @@
         "patristic",
         "homily",
         "matthew"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-matthew-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.6.1:c150d615:0"
       ]
     },
     {
@@ -42,14 +49,39 @@
       ]
     },
     {
-      "id": "catena-matt-0808",
+      "id": "catena-matt-0814",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.1",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:1",
-      "excerpt": "Yet be it known that the desire of fame is near a kin to virtue.",
+      "excerpt": "In saying only, “That ye be seen of men,” without any addition, He seems to have forbidden that we should make that the end of our actions. For the Apostle who declared, “If I yet pleased men, I should not be the servant of Christ;” Gal 1:10 says in another place, “I please213 all men in all things. 1 Cor 10:33 This he did not that he might please men, but God, to the love of whom he desires to turn the hearts of men by pleasing them. As we should not think that he spoke absurdly, who should say, In this my pains in seeking a ship, it is not the ship I seek, but my country.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.6.1:dbcb57aa:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0815",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:1",
+      "excerpt": "He says this, “that ye be seen of men,” because there are some who so do their righteousness before men that themselves may not be seen, but that the works themselves may be seen, and their Father who is in heaven may be glorified; for they reckon not their own righteousness, but His, in the faith of whom they live.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -78,6 +110,24 @@
       ]
     },
     {
+      "id": "catena-matt-0816",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.1",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:1",
+      "excerpt": "That He adds, “Otherwise ye shall not have your reward before your Father who is in heaven,” signifies no more than that we ought to take heed that we seek not praise of men in reward of our words.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-0811",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.1",
@@ -96,50 +146,14 @@
       ]
     },
     {
-      "id": "catena-matt-0814",
+      "id": "catena-matt-0808",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.6.1",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:1",
-      "excerpt": "In saying only, “That ye be seen of men,” without any addition, He seems to have forbidden that we should make that the end of our actions. For the Apostle who declared, “If I yet pleased men, I should not be the servant of Christ;” Gal 1:10 says in another place, “I please213 all men in all things. 1 Cor 10:33 This he did not that he might please men, but God, to the love of whom he desires to turn the hearts of men by pleasing them. As we should not think that he spoke absurdly, who should say, In this my pains in seeking a ship, it is not the ship I seek, but my country.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0815",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:1",
-      "excerpt": "He says this, “that ye be seen of men,” because there are some who so do their righteousness before men that themselves may not be seen, but that the works themselves may be seen, and their Father who is in heaven may be glorified; for they reckon not their own righteousness, but His, in the faith of whom they live.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0816",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.1",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:1",
-      "excerpt": "That He adds, “Otherwise ye shall not have your reward before your Father who is in heaven,” signifies no more than that we ought to take heed that we seek not praise of men in reward of our words.",
+      "excerpt": "Yet be it known that the desire of fame is near a kin to virtue.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -165,7 +179,168 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:matthew.6.1:61149fa8:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:matthew.6.1:0cbe691a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 6:1",
+      "excerpt": "Take heed, says He, that you do not your righteousness before men, to be seen of them; otherwise you have no reward of your Father which is in heaven. Here He has mentioned righteousness generally, then He follows it up in detail. For a deed which is done in the way of alms is a certain part of righteousness, and therefore He connects the two by saying, Therefore, when you do your alms, do not sound a trumpet before you, as the hypocrites do in the synagogues and in the streets, that they may have glory of men. In this there is a reference to what He says before, Take heed that you do not your righteousness before men, to be seen of them. But what follows, Verily I say unto you, They have received their reward, refers to that other statement which He has made above, Otherwise you have no reward of your Father which is in heaven. Then follows, But when you do alms. When He says, But you, what else does He mean but, Not in the same manner as they? What, then, does He bid me do? But when you do alms, says He, let not your left hand know what your right hand does. Hence those other parties so act, that their left hand knows what their right hand does. What, therefore, is blamed in them, this you are forbidden to do. But this is what is blamed in them, that they act in such a way as to seek the praises of men. And therefore the left hand seems to have no more suitable meaning than just this delight in praise. But the right hand means the intention of fulfilling the divine commands. When, therefore, with the consciousness of him who does alms is mixed up the desire of man's praise, the left hand becomes conscious of the work of the right hand: Let not, therefore, your left hand know what your right hand does; i.e. Let there not be mixed up in your consciousness the desire of man's praise, when in doing alms you are striving to fulfil a divine command.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:pseudo-chrysostom:matthew.6.1:aa13c15e:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "hcf:work:pseudo-chrysostom:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 6:1",
+      "excerpt": "(Hom. xv.) He opposes three chief virtues, alms, prayer, and fasting, to three evil things against which the Lord undertook the war of temptation. For He fought for us in the wilderness against gluttony; against covetousness on the mount; against false glory on the temple. It is alms that scatter abroad against covetousness which heaps up; fasting against gluttony which is its contrary; prayer against false glory, seeing that all other evil things come out of evil, this alone comes out of good; and therefore it is not overthrown but rather nourished of good, and has no remedy that may avail against it but prayer only.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:hcf-desert-fathers:matthew.6.1:2d78aadb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-desert-fathers",
+      "workId": "hcf:work:hcf-desert-fathers:the-desert-fathers-sayings-of-the-early-christian-monks",
+      "title": "The Desert Fathers, Sayings of the Early Christian Monks on matthew 6:1",
+      "excerpt": "A brother said to Poemen, 'If I give my brother something, for instance a piece of bread, the demons made the gift worthless by making me think that it was done to please men.' The hermit said to him, 'Even if it is done to please men, we still ought to give our brothers what they need.' He told him this parable: 'In a town there were two farmers. One of them sowed seed, and gathered a poor harvest; the other was idle and did not sow, and had no harvest to gather. If famine came, which of them would survive?' The brother answered, 'The one who sowed seed, even if the harvest was poor.' He said, 'It is the same for us. We sow a few seeds, and they are poor, but in the time of famine we shall not die.'",
+      "takeaway": "",
+      "sourceId": "hcf:source:books-google-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c500"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.6.1:e601c774:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-4-28",
+      "title": "Commentary on Matthew 4.28 on matthew 6:1",
+      "excerpt": "He removes all concern for things of the present and bids those thunderstruck by the hope of the future to pursue neither the favor of others by parading their virtue nor religious boasting through an outpouring of public prayer. Rather, the fruit of good works is to be contained within the knowledge of faith, because the pursuit of human praise will receive only that reward which it looks for from people, while to yearn for God's approval is to pursue a reward longed for patiently.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:jerome:matthew.6.1:f5a36a79:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:1",
+      "excerpt": "(Chapter 6, Verse 1) Be careful not to practice your righteousness in front of others to be seen by them. Otherwise, you have no reward from your Father in heaven. When you give to the needy, do not announce it with trumpets, as the hypocrites do in the synagogues and on the streets, to be honored by others. Truly I tell you, they have received their reward in full. But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. Then your Father, who sees what is done in secret, will reward you. From all these things it is gathered that they are hypocrites who do anything in order to be glorified by men. It seems to me also that he who says to his brother: 'Let me remove the speck from your eye' (Matthew 7:4), does this for the sake of glory, in order to appear righteous himself. Therefore it is said to him by the Lord: 'Hypocrite, first remove the beam from your own eye.' Thus, not virtue but the motive for virtue has reward with God. If you veer slightly off the right path, it doesn't matter whether you go to the right or to the left, because you have lost the true way.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:origen:matthew.6.1:7c3b0756:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:fragment-114",
+      "title": "FRAGMENT 114 on matthew 6:1",
+      "excerpt": "Just as water always conflicts with fire and fire with water and such things can never dwell together simultaneously, so likewise egotism and virtue are opposed to each other and can never easily coexist in one and the same soul. Therefore egotism is to be expelled from our souls, and we must abide in Christ's commandments.",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-114",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:tertullian:matthew.6.1:2283bc03:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:to-his-wife-book-ii",
+      "title": "To His Wife Book II on matthew 6:1",
+      "excerpt": "But since Scripture commands each of two things-namely, that we work for the Lord without the privity of any second person, and without pressure upon ourselves, it matters not in which quarter you sin; whether in regard to your husband's privity, if he be tolerant, or else in regard of your own affliction in avoiding his intolerance.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.6.1:e25d3db7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:1",
+      "excerpt": "\"Take heed that ye give not your alms before men, to be seen by them: otherwise ye have no reward of your Father Who is in heaven.\" Having led them up to the greatest of the virtues, which is love, now He drives away vainglory, which follows after the achievement of the virtues. See what He says, \"Take heed,\" as if speaking of some terrible wild beast. Take heed that it not tear you limb from limb. If you give alms \"before men\" but your motive is not \"to be seen by them,\" you are not condemned. But if your motive is vainglory, then even if you give alms from within your inner chamber, you are condemned. For it is the intent that God either punishes or crowns.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.6.1:8cb1a1a9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 6:1",
+      "excerpt": "Take heed that you do not your justice. Above, the Lord fulfilled the Law with respect to the precepts; now he begins to fulfill it with respect to the promises. For in the Old Law temporal things were promised, as Augustine says, which were the two most desirable things, namely, worldly glory and an affluence of riches: \"If you will hear the voice of the Lord your God, the Lord your God will make you higher than all the nations that dwell on the earth\" (Dt 28:1). But the Lord teaches in this chapter not to do works of justice for temporal things, neither for the glory of the world nor for an affluence of riches. This chapter is divided into two parts. In the first part, he teaches that works of justice should not be done for the glory of the world; secondly, that they should not be done for riches, at the words Lay not up to yourselves treasures. Regarding the first, he does two things: first, he sets forth the teaching in general; secondly, he carries it out in detail, at the words Therefore when thou dost. Regarding the first, he does two things: first, he sets forth the instruction; secondly, he assigns the reason for the instruction, at the words otherwise.\r\n\r\nHe says, therefore, Take heed. He pointedly says \"take heed\" for three reasons:\r\n\r\nFirst, because attention is needed where something is secretly implied. So it is with the appetite for human praise. Hence Chrysostom: \"It enters secretly and imperceptibly carries away all that is within.\" \"From the arrow that flies by day\" (Ps 90:6).\r\n\r\nSecondly, attention is needed against those things which are difficult to resist. Augustine in his Letter to Aurelius: \"How great the virtues the desire for human glory can command, those do not easily know except those who have declared war upon them; for although it is easily not sought when it is denied, yet it is difficult to relinquish when it is offered.\" \"For this reason they could not believe\" (Jn 12:39).\r\n\r\nThirdly, because the greater the works, the less can a man be on his guard. Chrysostom: \"Every evil vexes the children of the devil, but this one vexes the children of God.\" \"Satan was sitting at the right hand\" (Zech 3:1), i.e., the devil lying in ambush against good works.\r\n\r\nAnd he did not say take heed until after he had removed anger of mind, concupiscence, and hatred. For a mind subject to passions cannot attend to what is taking place in the heart: \"With all watchfulness keep your heart\" (Pr 4:23), and afterward: \"Let your eyes look straight ahead\" (Pr 4:25).\r\n\r\nThat you do not your justice, i.e., the work of justice. \"Justice\" sometimes has a negative connotation, namely, when it is presumed from one's own powers: \"Being ignorant of the justice of God\" (Rom 10:3); but sometimes it has a positive connotation, as here, that you do not your justice, namely, that which is required of us. For the Lord had said: \"Unless your justice abound\" (Mt 5:20), and he determines how it could be observed; and if the whole were referred to the praise of men, it would be of no value. And therefore a right intention is necessary, and this is that you do not your justice, etc.\r\n\r\nBut Chrysostom asks: What if I take the poor man aside? It must be said that if one has glory in his heart and has the intention of glory, it is of no value. And therefore Gregory says: \"Let the work be done in public so that the intention may remain hidden,\" and this is to be seen by them. But do we always seek glory when we wish to be seen by men? Augustine says that something is sought in two ways: in one way, as an ultimate end; in another, as necessary for the end. But we properly seek that which we will as our ultimate end; the other, however, we do not properly seek, which we will as necessary for the end, just as someone seeks a ship in order to go to his homeland — he does not properly seek the ship, but his homeland. Hence, if you wish to be seen by men in order to give them an example and for the glory of God, you are not forbidden, because above he said: \"So let your light shine\" (Mt 5:16). But it is forbidden that the intention be directed as toward its principal end, and this is to be seen by them alone; just as also pleasing men is sometimes blamed: \"If I yet pleased men\" (Gal 1:10); and sometimes praised (1 Cor 10:33).\r\n\r\nConsequently, he assigns the reason for his instruction; hence, otherwise you shall not have a reward. No one merits anything before someone to whom he gives nothing. Hence, he who does something for the sake of men and not for the sake of God is said to give nothing. Chrysostom: \"What wisdom is it to give alms and lose God's reward?\" He speaks of this reward of which Genesis (15:1) says: \"I am God, your reward,\" and above: \"Your reward is very great\" (Mt 5:12).\r\n\r\nConsequently, he carries it out in detail when he says: Therefore when thou dost, and this with respect to almsgiving, prayer, and fasting. The second is at the words And when ye pray; the third, when you fast. And he sets forth these three because, according to Chrysostom, the Lord wished to instruct against those things by which he was tempted, namely, gluttony, avarice, and vainglory, as is clear above in chapter 4; and against gluttony is fasting, against avarice almsgiving, and against vainglory prayer. For nothing can conquer vainglory, since it is even increased by good works.\r\n\r\nIt should be considered that these three are parts of justice in two ways. For it belongs to satisfactory justice that one who sins should make satisfaction. But sin is threefold: either against God, or against oneself, or against one's neighbor. Against God one sins by pride, and to this is opposed the humility of prayer: \"The prayer of him who humbles himself\" (Sir 35:21). Against one's neighbor by avarice, and therefore one makes satisfaction by almsgiving. Against oneself by concupiscence of the flesh, and therefore one makes satisfaction by fasting. Jerome: \"By prayer the plagues of the mind are healed; by fasting, the plague of the body.\"\r\n\r\nLikewise, these three are parts of the justice that is the proper act of religion. For religious persons ought to offer sacrifice to God. But there is a threefold good: exterior, namely, possessions; interior, the body and the soul. Through almsgiving, therefore, they offer exterior goods: \"Do not forget to do good and to share what you have\" (Heb 13:16). Through fasting, their own bodies: \"Present your bodies as a living sacrifice\" (Rom 12:1). Through prayer, the soul, for prayer is \"the raising of the mind to God\": \"Let my prayer be directed\" (Ps 141:2).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.6.1"
     },
     {
       "id": "catena-matt-0807",
@@ -183,24 +358,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0809",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.6.1",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 6:1",
-      "excerpt": "For when any thing truly glorious is done, there ostentation has its readiest occasion; so the Lord first shuts out all intention of seeking glory; as He knows that this is of all fleshly vices the most dangerous to man. The servants of the Devil are tormented by all kinds of vices; but it is the desire of empty glory that torments the servants of the Lord more than the servants of the Devil.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.6.1:4d9eea12:0"
       ]
     },
     {
@@ -219,6 +383,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.6.1:531b3dc1:0"
       ]
     },
     {
@@ -230,6 +401,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 6:1",
       "excerpt": "What shall you receive from God, who have given God nothing? What is done for God’s sake is given to God, and received by Him; but what is done because of men is cast to the winds. But that wisdom is it, to bestow our goods, to reap empty words, and to have despised the reward of God? Nay you deceive the very man for whose good word you look; for he thinks you do it for God’s sake, otherwise he would rather reproach then command you. Yet must we think him only to have done his work because of men, who does it with his whole will and intention governed by the thought of them. But if an idle…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-0809",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.6.1",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 6:1",
+      "excerpt": "For when any thing truly glorious is done, there ostentation has its readiest occasion; so the Lord first shuts out all intention of seeking glory; as He knows that this is of all fleshly vices the most dangerous to man. The servants of the Devil are tormented by all kinds of vices; but it is the desire of empty glory that torments the servants of the Lord more than the servants of the Devil.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

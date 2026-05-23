@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-0206-v55",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.1.55",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 1:54–55",
-      "excerpt": "That is, obedient and humble; for he who disdains to be made humble, cannot be saved.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.1.55:a711ecf8:0"
       ]
     },
     {
@@ -48,6 +37,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 1:54–55",
       "excerpt": "But by seed he means not so much those who are begotten in the flesh, as those who have followed the steps of Abraham’s faith, to whom the Saviour’s coming was promised for evermore.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.55:23492282:0"
+      ]
+    },
+    {
+      "id": "catena-luke-0206-v55",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.1.55",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 1:54–55",
+      "excerpt": "That is, obedient and humble; for he who disdains to be made humble, cannot be saved.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -73,7 +87,99 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.1.55:63e68186:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.1.55:30a107eb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-1-4",
+      "title": "Homilies on the Gospels 1.4 on luke 1:55",
+      "excerpt": "When blessed Mary was making mention of the memory of the fathers, she properly represented them by naming Abraham in particular. Although many of the fathers and holy ones mystically brought forward testimony of the Lord's incarnation, it was to Abraham that the hidden mysteries of this same Lord's incarnation and of our redemption were first clearly predicted. Also, to him it was specifically said, \"And in you all the tribes of the earth will be blessed.\" None of the faithful doubts that this pertains to the Lord and Savior, who in order to give us an everlasting blessing deigned to come to us from the stock of Abraham. However, \"the seed of Abraham\" does not refer only to those chosen ones who were brought forth physically from Abraham's lineage, but also to us.… Having been gathered together to Christ from the nations, we are connected by the fellowship of faith to the fathers, from whom we are far separated by the origin of our fleshly bloodline. We too are the seed and children of Abraham since we are reborn by the sacraments of our Redeemer, who assumed his flesh from the race of Abraham.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.55"
+    },
+    {
+      "id": "hcf:bede:luke.1.55:e750edc8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:55",
+      "excerpt": "As He spoke to our fathers, to Abraham and his seed forever. The seed of Abraham signifies not the carnal, but the spiritual, that is, not only those born of his flesh, but those who follow his footsteps in faith, whether in circumcision or uncircumcision. For he believed when in uncircumcision, and it was counted to him as righteousness. And he received the sign of circumcision as a seal of the same faith, so that he might thus become the father of both peoples through faith, as the Apostle most fully explains to the Romans. Therefore, the coming of the Savior was promised to Abraham and his seed forever, that is, to the children of the promise, to whom it is said: \"If you are Christ's, then you are Abraham's seed, heirs according to the promise\" (Galatians III). It is fitting that the births of either the Lord or John are foretold by mothers prophesying, that just as sin began with women, so too should good begin with women, and that which perished through the deception of one woman, life might be restored to the world through two women proclaiming in agreement.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.55"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.55:d871f340:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:55",
+      "excerpt": "The promise of God to Abraham was fulfilled, who said to him: \"and in you shall all the families of the earth be blessed\" (Gen. 12:3). Abraham was indeed multiplied now, when all the nations through faith became his sons; for as he believed, so they too through faith became his sons.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.55"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.1.55:bee8033d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke",
+      "title": "Commentary on the Gospel of Luke on luke 1:55",
+      "excerpt": "He hath taken hold of Israel,----not of the Israel according to the flesh, and who prides himself on the bare name, but of him who is so after the Spirit, and according to the true meaning of the appellation;----even such as look unto God, and believe in Him, and obtain through the Son the adoption of sons, according to the Word that was spoken, and the promise made to the prophets and patriarchs of old. It has, however, a true application also to the carnal Israel; for many thousands and ten thousands of them believed. \"But He has remembered His mercy as He promised to Abraham:\" and has accomplished what He spake unto him, that \"in thy seed shall all the tribes of the earth be blessed.\" For this promise was now in the act of fulfilment by the impending birth of our common Saviour Christ, Who is that seed of Abraham, in Whom the Gentiles are blessed. \"For He took on Him the seed of Abraham,\" according to the Apostle's words: and so fulfilled the promise made unto the fathers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.1.55"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.1.55:bc8af8b0:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke",
+      "title": "COMMENTARY ON LUKE on luke 1:55",
+      "excerpt": "He has taken hold of Israel—not of the Israel according to the flesh, who prides himself on the bare name, but of him who is so after the Spirit, in accordance with the true meaning of the appellation. The latter comprises those who look to God, believe in him and obtain through the Son the adoption of sons, according to the Word that was spoken and the promise made to the prophets and patriarchs of old. It has, however, a true application also to the carnal Israel, for many thousands and ten thousands of them believed. But he has remembered his mercy as he promised to Abraham and has accomplished what he said to him: that in his seed shall all the tribes of the earth be blessed. This promise was not in the act of fulfillment by the impending birth of our common Savior Christ—who is the seed of Abraham, in whom the Gentiles are blessed. For he took on him the seed of Abraham, according to the apostles' words, and fulfilled the promise made unto the fathers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.1.55"
     },
     {
       "id": "catena-luke-0205-v55",
@@ -91,6 +197,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.1.55:e28cced5:0"
       ]
     },
     {

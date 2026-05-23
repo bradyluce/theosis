@@ -42,24 +42,6 @@
       ]
     },
     {
-      "id": "catena-john-0310",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.13",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:13",
-      "excerpt": "After taking notice of this lack of knowledge in a person, who, on the strength of his magisterial station, set himself above others, and blaming the unbelief of such men, our Lord says, that if such as these do not believe, others will: No one hath ascended into heaven, but He that came down from heaven, even the Son of man who is in heaven. This may be rendered: The spiritual birth shall be of such sort, as that men from being earthly shall become heavenly: which will not be possible, except they are made members of Me; so that he who ascends, becomes one with Him who descended. Our Lord…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0312",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.13",
@@ -75,35 +57,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.3.13:d18ad273:0"
       ]
     },
     {
-      "id": "catena-john-0313",
+      "id": "catena-john-0310",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.13",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 3:13",
-      "excerpt": "Or thus: Nicodemus having said, We know that Thou art a teacher sent from God; our Lord says, And no man hath ascended, &c. in that He might not appear to be a teacher only like one of the Prophets.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0315",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.13",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:13",
-      "excerpt": "By the title Son of man here, He does not mean His flesh, but Himself altogether; the lesser part of His nature being put to express the whole. It is not uncommon with Him to name Himself wholly from His humanity, or wholly from His divinity.",
+      "excerpt": "After taking notice of this lack of knowledge in a person, who, on the strength of his magisterial station, set himself above others, and blaming the unbelief of such men, our Lord says, that if such as these do not believe, others will: No one hath ascended into heaven, but He that came down from heaven, even the Son of man who is in heaven. This may be rendered: The spiritual birth shall be of such sort, as that men from being earthly shall become heavenly: which will not be possible, except they are made members of Me; so that he who ascends, becomes one with Him who descended. Our Lord…",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -132,6 +103,42 @@
       ]
     },
     {
+      "id": "catena-john-0315",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.13",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:13",
+      "excerpt": "By the title Son of man here, He does not mean His flesh, but Himself altogether; the lesser part of His nature being put to express the whole. It is not uncommon with Him to name Himself wholly from His humanity, or wholly from His divinity.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0313",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.13",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:13",
+      "excerpt": "Or thus: Nicodemus having said, We know that Thou art a teacher sent from God; our Lord says, And no man hath ascended, &c. in that He might not appear to be a teacher only like one of the Prophets.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-0311",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.13",
@@ -147,6 +154,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:john.3.13:c8110af3:0"
       ]
     },
     {
@@ -165,6 +179,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.3.13:f6c80144:0"
       ]
     },
     {
@@ -183,6 +204,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:john.3.13:1243ed75:0"
       ]
     },
     {
@@ -201,7 +229,286 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:john.3.13:0ad2a97d:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.3.13:ca6d33b4:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-12",
+      "title": "Tractates on John 12 on john 3:13",
+      "excerpt": "\"And no man hath ascended into heaven, but He that came down from heaven, the Son of man who is in heaven.\" Behold, He was here, and was also in heaven; was here in His flesh, in heaven by His divinity; yea, everywhere by His divinity. Born of a mother, not quitting the Father. Two nativities of Christ are understood: one divine, the other human: one, that by which we were to be made; the other, that by which we were to be made anew: both marvellous; that without mother, this without father. But because He had taken a body of Adam, for Mary was of Adam, and was about to raise that same body again, it was an earthly thing He had said in saying, \"Destroy this temple, and in three days I will raise it up.\" But this was a heavenly thing, when He said, \"Except a man be born again of water and of the Spirit, he shall not see the kingdom of God.\" Come then, brethren! God has willed to be the Son of man; and willed men to be sons of God. He came down for our sakes; let us ascend for His sake. For He alone descended and ascended, He who saith, \"No man hath ascended into heaven, but He who came down from heaven.\" Are they not therefore to ascend into heaven whom He makes sons of God? Certainly they are: this is the promise to us, \"They shall be equal to the angels of God.\" Then how is it that no man ascends, but He that descended? Because one only descended, only one ascends. What of the rest? What are we to understand, but that they shall be His members, that one may ascend? Therefore it follows that \"no man hath ascended into heaven, but He who came down from heaven, the Son of man who is in heaven.\" Dost thou marvel that He was both here and in heaven? Such He made His disciples. Hear the Apostle Paul saying, \"But our conversation is in heaven.\" If the Apostle Paul, a man, walked in the flesh on earth, and yet had his conversation in heaven, was the God of heaven and earth not able to be both in heaven and on earth?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:augustine:john.3.13:47b991bf:5",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-12",
+      "title": "Tractates on John 12 on john 3:13",
+      "excerpt": "Therefore, if none but He descended and ascended, what hope is there for the rest? The hope for the rest is this, that He came down in order that in Him and with Him they might be one, who should ascend through Him. \"He saith not, And to seeds,\" saith the apostle, \"as in many; but as in one, And to thy seed, which is Christ.\" And to believers he saith, \"And ye are Christ's; and if Christ's, then are Abraham's seed.\" What he said to be one, that he said that we all are. Hence, in the Psalms, many sometimes sing, to show that one is made of many; sometimes one sings, to show what is made of many. Therefore was it only one that was healed in the pool; and whoever else went down into it was not healed. Now this one shows forth the oneness of the Church. Woe to them who hate unity, and make to themselves parties among men! Let them hear him who wished to make them one, in one, for one: let them hear him who says, Be not ye making many: \"I have planted, Apollos watered; but God gave the increase. But neither he that planteth is anything, neither he that watereth; but God that giveth the increase.\" They were saying, \"I am of Paul, I of Apollos, I of Cephas.\" And he says, \"Is Christ divided?\" Be ye in one, be one thing, be one person: \"No man hath ascended into heaven, but He who came down from heaven.\" Lo! we wish to be thine, they said to Paul. And he said to them, I will not that ye be Paul's, but be ye His whose is Paul together with you.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:augustine:john.3.13:e99f1845:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-265b-2",
+      "title": "SERMON 265B.2 on john 3:13",
+      "excerpt": "Some people, certainly, find very surprising what the Lord said in the Gospel, \"Nobody has ascended into heaven, except the one who came down from heaven, the Son of man who is in heaven.\" How, they ask, can the Son of man be said to have come down from heaven, when it was here that he was taken on in the Virgin's womb? People who say this are not to be rejected but instructed. I think, you see, that they are raising this question out of piety but are not yet able to understand what they are inquiring about. They do not realize, I mean, that the divinity took on the humanity in such a way as to become one person, God and man; and that the humanity was attached to the divinity in such a way that Word, soul and flesh were the one Christ. And that is why it could be said, \"No one has ascended into heaven, except the one who came down from heaven, the Son of man who is in heaven.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:augustine:john.3.13:811b54c3:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:on-the-merits-and-forgiveness-of-sins-and-on-infant-baptism-1-60",
+      "title": "ON THE MERITS AND FORGIVENESS OF SINS AND ON INFANT BAPTISM 1.60 on john 3:13",
+      "excerpt": "Spiritual birth happens when human beings, being earthly, become heavenly. And this can only happen when they are made members of me. So that he may ascend who descended, since no one ascends who did not descend. Therefore everyone who needs to be changed and raised must meet together in a union with Christ so that the Christ who descended may ascend, considering his body (that is to say, his church) as nothing other than himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:on-the-merits-and-forgiveness-of-sins-and-on-infant-baptism-1-60",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:augustine:john.3.13:a61abe9c:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-187-9",
+      "title": "LETTER 187.9 on john 3:13",
+      "excerpt": "As a human being he was on earth, not in heaven where he now is … although in his nature as Son of God he was in heaven, but as Son of man he was still on earth and had not yet ascended into heaven. In a similar way, although in his nature as Son of God he is the Lord of glory, in his nature as Son of man he was crucified.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.13:897d598f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-27",
+      "title": "Homily on the Gospel of John 27 on john 3:13",
+      "excerpt": "Since Nicodemus had said, \"We know that Thou art a teacher come from God,\" on this very point He sets him right, all but saying, \"Think Me not a teacher in such manner as were the many of the prophets who were of earth, for I have come from heaven (but) now. None of the prophets hath ascended up thither, but I dwell there.\" Seest thou how even that which appears very exalted is utterly unworthy of his greatness? For not in heaven only is He, but everywhere, and He fills all things; but yet He speaks according to the infirmity of His hearer, desiring to lead him up little by little. And in this place He called not the flesh \"Son of Man,\" but He now named, so to speak, His entire Self from the inferior substance; indeed this is His wont, to call His whole Person often from His Divinity, and often from His humanity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.3.13:4f701fd9:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 3:13",
+      "excerpt": "And this, apparently, has nothing in common with what preceded it. But if one carefully examines the thought of the Lord, it will turn out that this too is closely related to what came before.\r\nSince Nicodemus called the Lord a Teacher and a Prophet, He says: \"Do not consider Me a prophet who is of the earth, sent by God to teach, but consider Me as having come down from above, as the Son, and not as being of the earth. None of the prophets ascended into heaven, but only I alone am to ascend, just as I also descended.\" Having heard that the Son of Man came down \"from heaven,\" do not think that the flesh came down from heaven. Indeed, Apollinarius thought this way, that Christ, having a body from heaven, passed through the Virgin as through a channel. But since Christ, consisting of two natures, was one Hypostasis or one Person, the names of the Man are applied to the Word, and again the names of the Word are applied to the Man. So here also it is said that the \"Son of Man\" came down from heaven, because He is one Person and one Hypostasis. Then, lest you, having heard \"who came down,\" should think that the One who came down is no longer in heaven, He says \"who is in heaven.\" Therefore, having heard that I came down, do not think that I am not there; but I am both present here bodily and seated there with the Father in Divinity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.3.13:9953576d:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-10-54",
+      "title": "On the Trinity 10.54 on john 3:13",
+      "excerpt": "It is not possible by the laws of bodies for the same object to remain and to descend. The one is the change of downward motion, the other the stillness of being at rest. The infant wails but is in heaven: the boy grows but remains ever the immeasurable God. By what perception of human understanding can we comprehend that he ascended where he was before, and he descended who remained in heaven? The Lord says, \"What if you should behold the Son of man ascending to where he was before?\" The Son of man ascends where he was before. Can sense apprehend this? The Son of man—who is in heaven—descends from heaven. Can reason cope with this? The Word was made flesh—can words express this? The Word becomes flesh, that is, God becomes man. The man is in heaven: the God is from heaven. He ascends who descended, but he descends and yet does not descend. He is as he ever was, yet he was not ever what he is. We pass in review of the causes, but we cannot explain the manner. We perceive the manner but cannot understand the causes. Yet, if we understand Christ Jesus even in this way, we shall know him. If we seek to understand him further, we shall not know him at all.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:hilary-poitiers:john.3.13:21badedd:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:on-the-trinity-10-16",
+      "title": "On the Trinity 10.16 on john 3:13",
+      "excerpt": "\"Descended from heaven\" refers to his origin from the Spirit. For though Mary contributed to his growth in the womb and birth all that is natural to her sex, his body did not owe to her its origin. The \"Son of man\" refers to the birth of the flesh conceived in the Virgin; \"who is in heaven\" implies the power of his eternal nature—an infinite nature, which could not restrict itself to the limits of the body—of which it was itself the source and base. By the virtue of the Spirit and the power of God the Word, though he sojourned in the form of a servant, he was ever present as Lord of all within and beyond the circle of heaven and earth. So he descended from heaven and is the Son of man, yet is in heaven. For the Word made flesh did not cease to be the Word. As the Word, he is in heaven, as flesh he is the Son of man. As Word made flesh, he is at once from heaven, and Son of man and in heaven. For the power of the Word, abiding eternally without body, was present still in the heaven he had left. The flesh owed its origin to him and to no one else. So the Word made flesh, though he was flesh, nonetheless never ceased to be the Word.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:john.3.13:4c9cd5d6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-christian-faith-2-7-58",
+      "title": "Exposition of the Christian Faith 2.7.58 on john 3:13",
+      "excerpt": "Possessing both natures, that is, the human and the divine, [Christ] endured the passion in his humanity, in order that without distinction he who suffered should be called both Lord of glory and Son of man, even as it is written: \"Who descended from heaven.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.3.13:378ce2fa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 3:13",
+      "excerpt": "For no man hath ascended up to heaven but He That came down from heaven the Son of man. For since the Word of God came down from heaven, He says that the son of man came down, refusing after the Incarnation to be divided into two persons, and not suffering certain to say that the Temple taken by reason of need of the Virgin is one Son, the Word again which appeared from God the Father another: save only as regards the distinction which belongs to each by nature. For as He is the Word of God, so Man too of a woman, but One Christ of both, Undivided in regard of Sonship and God-befitting Glory. For how does He clothe as its own the Temple of the Virgin, with what befitteth the bare Word Alone: and again appropriateth to Himself what befitteth the Flesh only? For now He saith that the Son of man hath come down from heaven: but at the time of His Passion, He feareth, and is sore afraid, and very heavy, and is recorded as Himself suffering the Sufferings which befitted His Human Nature only.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:john.3.13:2540f9c0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-dogmatical-and-historical-fragments",
+      "title": "Hippolytus Dogmatical and Historical Fragments on john 3:13",
+      "excerpt": "If, again, he allege His own word when He said, \"I and the Father are one,\" let him attend to the fact, and understand that He did not say, \"I and the Father am one, but are one.\" For the word are is not said of one person, but it refers to two persons, and one power. He has Himself made this clear, when He spake to His Father concerning the disciples, \"The glory which Thou gavest me I have given them; that they may be one, even as we are one: I in them, and Thou in me, that they may be made perfect in one; that the world may know that Thou hast sent me.\" What have the Noetians to say to these things? Are alI one body in respect of substance, or is it that we become one in the power and disposition of unity of mind? In the same manner the Son, who was sent and was not known of those who are in the world, confessed that He was in the Father in power and disposition. For the Son is the one mind of the Father. We who have the Father's mind believe so (in Him); but they who have it not have denied the Son. And if, again, they choose to allege the fact that Philip inquired about the Father, saying, \"Show us the Father, and it sufficeth us,\" to whom the Lord made answer in these terms: \"Have I been so long time with you, and yet hast thou not known me, Philip? He that hath seen me hath seen the Father. Believest thou not that I am in the Father, and the Father in me? \" and if they choose to maintain that their dogma is ratified by this passage, as if He owned Himself to be the Father, let them know that it is decidedly against them, and that they are confuted by this very word. For though Christ had spoken of Himself, and showed Himself among all as the Son, they had not yet recognised Him to be such, neither had they been able to apprehend or contemplate His real power. And Philip, not having been able to receive this, as far as it was possible to see it, requested to behold the Father. To whom then the Lord said, \"Philip, have I been so long time with you, and yet hast thou not known me? He that hath seen me hath seen the Father.\" By which He means, If thou hast seen me, thou mayest know the Father through me. For through the image, which is like (the original), the Father is made readily known. But if thou hast not known the image, which is the Son, how dost thou seek to see the Father? And that this is the case is made clear by the rest of the chapter, which signifies that the Son who \"has been set forth was sent from the Father, and goeth to the Father.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:hippolytus-of-rome:john.3.13:28f2a6ea:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hippolytus-of-rome",
+      "workId": "hcf:work:hippolytus-of-rome:hippolytus-dogmatical-and-historical-fragments",
+      "title": "Hippolytus Dogmatical and Historical Fragments on john 3:13",
+      "excerpt": "And for this reason three seasons of the year prefigured the Saviour Himself, so that He should fulfil the mysteries prophesied of Him. In the Passover season, so as to exhibit Himself as one destined to be sacrificed like a sheep, and to prove Himself the true Paschal-lamb, even as the apostle says, \"Even Christ,\" who is God, \"our passover was sacrificed for us.\" And at Pentecost so as to presignify the kingdom of heaven as He Himself first ascended to heaven and brought man as a gift to God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c235"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:tertullian:john.3.13:97b802e9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas-chapter-30",
+      "title": "Against Praxeas, Chapter 30 on john 3:13",
+      "excerpt": "It is the Son, too, who ascends to the heights of heaven, [John 3:13] and also descends to the inner parts of the earth. [Ephesians 4:9]",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:tertullian:john.3.13:4248c84f:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on john 3:13",
+      "excerpt": "It is the Son, too, who ascends to the heights of heaven, and also descends to the inner parts of the earth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.3.13"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.13:c5189e96:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:13",
+      "excerpt": "Jesus replied. Here he answers the question. First, he lays down the causes of spiritual regeneration. Secondly, he explains what he says (3:16). Now there are two causes of spiritual regeneration, namely, the mystery of the incarnation of Christ, and his passion. So first, he treats of the incarnation; secondly, of the passion (3:14).\r\n\r\nHere we should consider, first of all, how this answer of Christ is an adequate reply to the question of Nicodemus. For above, when the Lord was speaking of the Spirit, he said: you do not know where it comes from or where it goes. We understand by this that spiritual regeneration has a hidden source and a hidden end. Now the things in heaven are hidden from us: \"Who will search out the things in heaven?\" (Wis 9:16). Therefore, the sense of Nicodemus' question, How can all this happen? is this: How can something come from the secret things of heaven or go to the secret things of heaven? So before answering, the Lord expressed this interpretation of the question, saying, how will you believe if I tell you of heavenly things?\r\n\r\nAnd immediately he begins to show whose prerogative it is to ascend into heaven, namely, anyone who came down from heaven, according to the statement of Ephesians (4:10): \"He who descended is he who ascended.\" This is verified even in natural things, namely, that each body tends to a place according to its origin or nature. And so in this way it can come about that someone, through the Spirit, may go to a place which carnal persons do not know, i.e., by ascending into heaven, if this is done through the power of one who descended from heaven: because he descended in order that, in ascending, he might open a way for us: \"He ascends, opening the way before them\" (Mi 2:13).\r\n\r\nSome have fallen into error because of his saying, the One who came down from heaven, the Son of Man. For since Son of Man designates human nature, which is composed of soul and body, then because he says that the Son descended from heaven, Valentinus wanted to maintain that he even took his body from heaven and thus passed through the Virgin without receiving anything from her, as water passes through a pipe; so that his body was neither of an earthly substance nor taken from the Virgin. But this is contrary to the statement of the Apostle, writing to the Romans (1:3): \"who was made from the seed of David according to the flesh.\"\r\n\r\nOn the other hand, Origen said that he descended from heaven as to his soul, which, he says, had been created along with the angels from the very beginning, and that later this soul descended from heaven and took flesh from the Virgin. But this also conflicts with the Catholic faith, which teaches that souls do not exist before their bodies.\r\n\r\nTherefore, we should not understand that the Son of Man descended from heaven according to his human nature, but only according to his divine nature. For since in Christ there is one suppositum, or hypostasis, or person of the two natures, the divine and human natures, then no matter from which of these two natures this suppositum is named, divine and human things can be attributed to him. For we can say that the Son of Man created the stars and that the Son of God was crucified. But the Son of God was crucified, not according to his divine nature, but according to his human nature; and the Son of Man created the stars according to his divine nature. And so in things that are said of Christ, the distinction is not to be taken with respect to that about which they are said, because divine and human things are said of God and man indifferently; but a distinction must be made with respect to that according to which they are said, because divine things are said of Christ according to his divine nature, but human things according to his human nature. Thus, to descend from heaven is said of the Son of Man, not according to his human nature, but according to his divine nature, according to which it was appropriate to him to have been from heaven before the incarnation, as is said, \"Heaven belongs to the Lord\" (Ps 113:16).\r\n\r\nHe is said to have come down, but not by local motion, because then he would not have remained in heaven; for nothing which moves locally remains in the place from which it comes down. And so to exclude local motion, he adds, who lives in heaven. As if to say: He descended from heaven in such a way as yet to be in heaven. For he came down from heaven without ceasing to be above, yet assuming a nature which is from below. And because he is not enclosed or held fast by his body which exists on earth, he was, according to his divinity, in heaven and everywhere. And therefore to indicate that he is said to have come down in this way, because he assumed a human nature, he said, the Son of Man came down, i.e., insofar as he became Son of Man.\r\n\r\nOr it can be said, as Hilary does, that he came down from heaven as to his body: not that the material of Christ's body came down from heaven, but that the power which formed it was from heaven.\r\n\r\nBut why does he say, No one has gone up to heaven except the Son of Man, who lives in heaven? For have not Paul and Peter and the other saints gone up, according to 2 Corinthians (5:1): \"We have a house in the heavens.\" I answer that no one goes up into heaven except Christ and his members, i.e., those believers who are just. Accordingly, the Son of God came down from heaven in order that, by making us his members, he might prepare us to ascend into heaven: now, indeed, in hope, but later in reality. \"He has raised us up, and has given us a place in heaven in Christ Jesus\" (Eph 2:6).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.13"
     }
   ]
 }

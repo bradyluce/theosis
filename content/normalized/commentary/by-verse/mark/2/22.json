@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-mark-0177-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.2.22",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 2:18–22",
-      "excerpt": "The disciples of John, therefore, and of the Pharisees, being jealous of Christ, ask Him, whether He alone of all men with His disciples could, without abstinence and toil, conquer in the fight of the passions.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0179-v22",
       "relation": "verse",
       "targetVerseId": "kjva:mark.2.22",
@@ -58,17 +40,17 @@
       ]
     },
     {
-      "id": "catena-mark-0178-v22",
+      "id": "catena-mark-0177-v22",
       "relation": "verse",
       "targetVerseId": "kjva:mark.2.22",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 2:18–22",
-      "excerpt": "But John did not drink wine and strong drink, because he who has no power by nature, obtains more merit by abstinence. But why should the Lord, to whom it naturally belonged to forgive sins, shun those whom he could make more pure, than those who fast? But Christ also fasted, lest He should break the precept, He ate with sinners, that thou mightest see His grace, and acknowledge His power. It goes on; And Jesus said unto them, Can the children, &c.",
+      "excerpt": "The disciples of John, therefore, and of the Pharisees, being jealous of Christ, ask Him, whether He alone of all men with His disciples could, without abstinence and toil, conquer in the fight of the passions.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
+      "rank": 85,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -109,6 +91,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.2.22:5c221be1:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0178-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.2.22",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 2:18–22",
+      "excerpt": "But John did not drink wine and strong drink, because he who has no power by nature, obtains more merit by abstinence. But why should the Lord, to whom it naturally belonged to forgive sins, shun those whom he could make more pure, than those who fast? But Christ also fasted, lest He should break the precept, He ate with sinners, that thou mightest see His grace, and acknowledge His power. It goes on; And Jesus said unto them, Can the children, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -123,24 +130,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0175-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.2.22",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 2:18–22",
-      "excerpt": "For the disciples of John being in an imperfect state, continued in Jewish customs.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -199,7 +188,83 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.2.22:e4ecfd06:1"
       ]
+    },
+    {
+      "id": "catena-mark-0175-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.2.22",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 2:18–22",
+      "excerpt": "For the disciples of John being in an imperfect state, continued in Jewish customs.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.2.22:c143ab0d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 2:22",
+      "excerpt": "Just as an \"unshrunk,\" that is, new patch, by its firmness will only tear the old garment if sewn onto it, and just as new wine by its strength will burst old wineskins, so too My disciples have not yet grown strong, and therefore, if we burden them, we will thereby do them harm, since in the weakness of their understanding they are still like an old garment. Thus, one should not impose upon them the heavy commandment of fasting. Or you can also understand it this way: Christ's disciples, being already new people, cannot serve old customs and laws.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.2.22"
+    },
+    {
+      "id": "hcf:bede:mark.2.22:7b3058d5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 2:22",
+      "excerpt": "And no one puts wine, etc. He also compares them to old wineskins, which he says are more easily burst by new wine, that is, by spiritual precepts, than being able to contain it. However, they were already new wineskins when, after the ascension of the Lord, they were renewed by praying and hoping for the desire of His consolation. For then they received the Holy Spirit, when, filled with it, they spoke in all tongues, it was said by the Jews who did not understand but nonetheless truly witnessed: These men are full of new wine (Acts 2). For new wine had already come into new wineskins, that is, the fervor of the Holy Spirit had filled the hearts of the spiritually new. Otherwise. A teacher must be cautious not to entrust the secrets of new mysteries to a soul not yet renewed but still enduring in the oldness of wickedness. But if anyone asks what the difference mystically is between new wine and a new garment, it is easily apparent, because we are internally refreshed and intoxicated by wine, whereas we are externally clothed by a garment. But while both pertain to the significance of spiritual life, the garment indeed insinuates our good works which we perform outwardly and by which we shine before men. However, new wine expresses the fervor of faith, hope, and charity, by which in the sight of our Creator we are inwardly renewed in the newness of our mind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.2.22"
+    },
+    {
+      "id": "hcf:tertullian:mark.2.22:9aac0a65:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-prayer-1",
+      "title": "ON PRAYER 1 on mark 2:22",
+      "excerpt": "He has prescribed for his new disciples of the New Testament a new form of prayer. For this it was fitting that new wine be stored in new wine skins and that a new patch be sewed upon a new garment. What had prevailed in days gone by was either abolished, like circumcision, or completed, like the rest of the law, or fulfilled, like the prophecies, or brought to its perfection, like faith itself. Everything has been changed from carnal to spiritual by the new grace of God which, with the coming of the gospel, has wiped out the old era completely.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.2.22"
     },
     {
       "id": "catena-mark-0174-v22",
@@ -210,24 +275,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 2:18–22",
       "excerpt": "As above, the Master was accused to the disciples for keeping company with sinners in their feasts, so now, on the other hand, the disciples are complained of to the Master for their omission of fasts, that so matter for dissension might arise amongst them. Wherefore it is said, And the disciples of John and the Pharisees used to fast.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0180-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.2.22",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 2:18–22",
-      "excerpt": "He then calls Himself a bridegroom, as if about to be betrothed to the Church. For the betrothal is giving an earnest, namely, that of the grace of the Holy Ghost, by which the world believed.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -264,6 +311,31 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 2:18–22",
       "excerpt": "As if He said, because these are preachers of the New Testament, it is not possible that they should serve old laws; but ye who follow old customs, fitly observe the fasts of Moses. But for these, who are about to hand down to men new and wonderful observances, it is not necessary to observe the old traditions, but to be virtuous in mind; some time or other however they will observe fasting with other virtues. But this fasting is different from the fasting of the law, for that was one of restraint, this of goodwill; on account of the fervour of the Spirit, Whom they cannot yet receive.…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.2.22:515d9c87:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0180-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.2.22",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 2:18–22",
+      "excerpt": "He then calls Himself a bridegroom, as if about to be betrothed to the Church. For the betrothal is giving an earnest, namely, that of the grace of the Holy Ghost, by which the world believed.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

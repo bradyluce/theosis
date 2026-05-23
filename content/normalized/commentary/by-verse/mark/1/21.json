@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.21:3c6103d8:0"
       ]
     },
     {
@@ -37,7 +44,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.21:80753624:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.21:7984cb34:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:21",
+      "excerpt": "From where did they come to Capernaum? From Nazareth, and moreover on the Sabbath day. When people usually gathered for the reading of the Law, then Christ also came to teach. For the Law also commanded the observance of the Sabbath so that people would occupy themselves with reading, assembling together for this purpose.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.21"
     },
     {
       "id": "catena-mark-0078-v21",
@@ -55,6 +86,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.21:141a6489:0"
       ]
     }
   ]

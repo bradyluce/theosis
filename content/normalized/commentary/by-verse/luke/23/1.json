@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.23.1:dea62273:0"
       ]
     },
     {
@@ -55,24 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3279-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.23.1",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:1–5",
-      "excerpt": "That the word of Jesus might be fulfilled which He prophesied of His own death, He shall be delivered to the Gentiles, that is, to the Romans. For Pilate was a Roman, and the Romans had sent him as governor to Judæa.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.23.1:e1bf30e2:0"
       ]
     },
     {
@@ -94,6 +90,49 @@
       ]
     },
     {
+      "id": "catena-luke-3286-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.1",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:1–5",
+      "excerpt": "But with these words they accuse not Him, but themselves. For to have taught the people, and by teaching to have roused them from their former idleness, and doing this to have passed through the whole land of promise, was an evidence not of sin, but of virtue.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3279-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.23.1",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 23:1–5",
+      "excerpt": "That the word of Jesus might be fulfilled which He prophesied of His own death, He shall be delivered to the Gentiles, that is, to the Romans. For Pilate was a Roman, and the Romans had sent him as governor to Judæa.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.23.1:61c0c101:1"
+      ]
+    },
+    {
       "id": "catena-luke-3284-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.1",
@@ -112,17 +151,17 @@
       ]
     },
     {
-      "id": "catena-luke-3286-v1",
+      "id": "catena-luke-3285-v1",
       "relation": "verse",
       "targetVerseId": "kjva:luke.23.1",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 23:1–5",
-      "excerpt": "But with these words they accuse not Him, but themselves. For to have taught the people, and by teaching to have roused them from their former idleness, and doing this to have passed through the whole land of promise, was an evidence not of sin, but of virtue.",
+      "excerpt": "Now they finding nothing else to support their calumny, have resort to the aid of clamour, for it follows, And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place. As if they said, He perverts the people, not in one part only, but beginning from Galilee He arrives at this place, having passed through Judæa. I think then that they purposely made mention of Galilee, as desirous to alarm Pilate, for the Galilæans were of a different sect and given to sedition, as, for example, Judas of Galilee who is mentioned in the…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,22 +205,55 @@
       ]
     },
     {
-      "id": "catena-luke-3285-v1",
+      "id": "hcf:bede:luke.23.1:af3865ab:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.23.1",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 23:1–5",
-      "excerpt": "Now they finding nothing else to support their calumny, have resort to the aid of clamour, for it follows, And they were the more fierce, saying, He stirreth up the people, teaching throughout all Jewry, beginning from Galilee to this place. As if they said, He perverts the people, not in one part only, but beginning from Galilee He arrives at this place, having passed through Judæa. I think then that they purposely made mention of Galilee, as desirous to alarm Pilate, for the Galilæans were of a different sect and given to sedition, as, for example, Judas of Galilee who is mentioned in the…",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 23:1",
+      "excerpt": "And the whole multitude of them arose and led him unto Pilate. That the word of Jesus might be fulfilled, which he had predicted concerning his death: For he shall be delivered unto the Gentiles, and shall be mocked, and spitefully entreated, and spitted on: And they shall scourge him, and put him to death (Luke XVIII). By Gentiles, he indeed means the Romans. For Pilate was Roman, and the Romans had sent him as governor to Judea, to whom the Jews deliver the Lord to be crucified, wishing in this manner to make themselves appear as if not involved in his death, so that their cruelty might be shown, not their innocence.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.23.1"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.23.1:fd719306:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke-10-97-98",
+      "title": "EXPOSITION OF THE GOSPEL OF LUKE 10.97-98 on luke 23:1",
+      "excerpt": "There follows an admirable place, where the patience to bear moral harm is poured into the human breast. The Lord is accused, and he is silent: and he is right to be silent, who does not need to defend himself. Let those who fear to be conquered, roam around seeking to be defended. Therefore, he does not confirm the accusation by fearing it, but he despises it by not refuting it. For what would he fear, who does not seek salvation? He betrayed his own salvation for the salvation of all, that it may be acquired by all. And here Pilate absolves: but he absolves by judgment, he crucifies by mystery. But this is specific to Christ: the human aspect, that with unjust judges it seemed more a matter of unwillingness than inability to be defended. But why did the Lord remain silent? He himself gave the answer, saying: If I tell you, you will not believe me; if I ask you, you will not answer me. However, the most remarkable thing is that he preferred to prove himself as a king rather than to speak; so that those who accuse him could not have a reason to condemn him, as they confess what they object to.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.23.1"
+    },
+    {
+      "id": "hcf:tertullian:luke.23.1:4e83b5bf:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 23:1",
+      "excerpt": "For when He was brought before Pilate, they proceeded to urge Him with the serious charge , of declaring Himself to be Christ the King; that is, undoubtedly, as the Son of God, who was to sit at God's right hand.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.23.1"
     }
   ]
 }

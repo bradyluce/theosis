@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.4.28:7915e82e:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.4.28:98768bf3:0"
       ]
     },
     {
@@ -110,6 +124,23 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.4.28:97b3cb9f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 4:28",
+      "excerpt": "And they were all filled with wrath in the synagogue upon hearing these things, and they rose up and drove Him out of the city. Indeed, the sacrileges of the Jews, which the Lord had foretold long before through the prophet, saying: \"They repay me evil for good\" (Psalm 35), He teaches in the Gospel to have been completed. For while He was spreading benefits among the people, they inflicted injuries. Nor is it surprising that they lost salvation, who drove the Savior out of their borders. For the Lord is moral, and He who taught His apostles by His own example to become all things to all men, neither rejects the willing, nor binds the unwilling, nor resists those who cast Him out, nor fails those who ask. Thus, elsewhere, He left the Gerasenes, as they could not bear His powers, as if they were weak and ungrateful. At the same time, understand that it was not out of necessity but a voluntary passion of the body; not captured by the Jews, but offered by Himself. For indeed, when He wills, He is captured; when He wills, He escapes; when He wills, He is suspended; when He wills, He is not held.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.4.28"
     }
   ]
 }

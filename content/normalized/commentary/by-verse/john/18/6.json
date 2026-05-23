@@ -4,97 +4,6 @@
   "verseNumber": 6,
   "entries": [
     {
-      "id": "augustine-john-112-c18-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "augustine-tractates-john",
-      "title": "On John 18:1–12",
-      "excerpt": "When the grand and lengthened discourse was concluded which the Lord delivered after supper, and on the eve of shedding His blood for us, to the disciples who were then with Him, and had added the prayer addressed to His Father, the evangelist John began thereafter the narrative of His passion in these words: When Jesus had so spoken, He went forth with His disciples over the brook Cedron, where was a garden, into the which He entered, and His disciples. And Judas also, who betrayed Him, knew the place; for Jesus oft-times resorted there with His disciples. What he here relates of the Lord…",
-      "takeaway": "",
-      "sourceId": "augustine-tractates-john-source",
-      "rank": 85,
-      "tags": [
-        "augustine",
-        "patristic",
-        "tractate",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2218-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "It was a band not of Jews, but of soldiers, granted, we must understand, by the Governor, with legal authority to take the criminal, as He was considered, and crush any opposition that might be made.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2219-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "But how could they persuade the band? By hiring them; for being soldiers, they were ready to do any thing for money.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2221-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "They had often sent elsewhere to take Him, but had not been able. Whence it is evident that He gave Himself up voluntarily; as it follows, Jesus therefore, knowing all things that should come upon Him, went forth, and said unto them, Whom seek ye?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2223-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "He Himself had blinded their eyes. For that darkness was not the reason is clear, because the Evangelist says that they had lanterns. Though they had not lanterns, however, they should at least have recognised Him by His voice. And if they did not know Him, yet how was it that Judas, who had been with Him constantly also, did not know Him? And Judas also which betrayed Him stood with them. Jesus did all this to shew that they could not have taken Him, or even seen Him when He was in the midst of them, had He not permitted it.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2224-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.6",
@@ -110,23 +19,31 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.18.6:b6e69699:0"
       ]
     },
     {
-      "id": "catena-john-2226-v6",
+      "id": "augustine-john-112-c18-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.6",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "Lastly, lest any should say that He had encouraged the Jews to kill Him, in delivering Himself into their hands, He says every thing that is possible to reclaim them. But when they persisted in their malice, and shewed themselves inexcusable, then He gave Himself up into their hands: Then asked He them again, Whom seek ye? And they said, Jesus of Nazareth. Jesus answered, I have told you that I am He.",
+      "personId": "augustine",
+      "workId": "augustine-tractates-john",
+      "title": "On John 18:1–12",
+      "excerpt": "When the grand and lengthened discourse was concluded which the Lord delivered after supper, and on the eve of shedding His blood for us, to the disciples who were then with Him, and had added the prayer addressed to His Father, the evangelist John began thereafter the narrative of His passion in these words: When Jesus had so spoken, He went forth with His disciples over the brook Cedron, where was a garden, into the which He entered, and His disciples. And Judas also, who betrayed Him, knew the place; for Jesus oft-times resorted there with His disciples. What he here relates of the Lord…",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
+      "sourceId": "augustine-tractates-john-source",
       "rank": 85,
       "tags": [
-        "catena-aurea",
+        "augustine",
         "patristic",
+        "tractate",
         "john"
       ]
     },
@@ -149,50 +66,14 @@
       ]
     },
     {
-      "id": "catena-john-2228-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "As if to say, Though ye seek Me, ye have nothing to do with these: lo, I give Myself up: thus even to the last hour does He shew His love for His own.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2229-v6",
+      "id": "catena-john-2218-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.6",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 18:3–9",
-      "excerpt": "He commands His enemies, and they do what He commands; they permit them to go away, whom He would not have perish.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2230-v6",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "The Evangelist, to shew that it was not their design to do this, but that His power did it, adds, That the saying might be fulfilled which He spoke, Of them which Thou hast given Me, have I lost none. He had said this with reference not to temporal, but to eternal death: the Evangelist however understands the word of temporal death also.",
+      "excerpt": "It was a band not of Jews, but of soldiers, granted, we must understand, by the Governor, with legal authority to take the criminal, as He was considered, and crush any opposition that might be made.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -221,6 +102,132 @@
       ]
     },
     {
+      "id": "catena-john-2229-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "He commands His enemies, and they do what He commands; they permit them to go away, whom He would not have perish.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2223-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "He Himself had blinded their eyes. For that darkness was not the reason is clear, because the Evangelist says that they had lanterns. Though they had not lanterns, however, they should at least have recognised Him by His voice. And if they did not know Him, yet how was it that Judas, who had been with Him constantly also, did not know Him? And Judas also which betrayed Him stood with them. Jesus did all this to shew that they could not have taken Him, or even seen Him when He was in the midst of them, had He not permitted it.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2226-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "Lastly, lest any should say that He had encouraged the Jews to kill Him, in delivering Himself into their hands, He says every thing that is possible to reclaim them. But when they persisted in their malice, and shewed themselves inexcusable, then He gave Himself up into their hands: Then asked He them again, Whom seek ye? And they said, Jesus of Nazareth. Jesus answered, I have told you that I am He.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2230-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "The Evangelist, to shew that it was not their design to do this, but that His power did it, adds, That the saying might be fulfilled which He spoke, Of them which Thou hast given Me, have I lost none. He had said this with reference not to temporal, but to eternal death: the Evangelist however understands the word of temporal death also.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2221-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "They had often sent elsewhere to take Him, but had not been able. Whence it is evident that He gave Himself up voluntarily; as it follows, Jesus therefore, knowing all things that should come upon Him, went forth, and said unto them, Whom seek ye?",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2228-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "As if to say, Though ye seek Me, ye have nothing to do with these: lo, I give Myself up: thus even to the last hour does He shew His love for His own.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2219-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "But how could they persuade the band? By hiring them; for being soldiers, they were ready to do any thing for money.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-2225-v6",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.6",
@@ -232,6 +239,31 @@
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:john.18.6:e373cfa6:0"
+      ]
+    },
+    {
+      "id": "catena-john-2222-v6",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:3–9",
+      "excerpt": "He asks not because He needed to know, for He knew all things that should come upon Him; but because He wished to shew, that though present, they could not see or distinguish Him: Jesus saith unto them, I am He.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -257,22 +289,89 @@
       ]
     },
     {
-      "id": "catena-john-2222-v6",
+      "id": "hcf:augustine:john.18.6:342f3019:1",
       "relation": "verse",
-      "targetVerseId": "kjva:john.18.6",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-112",
+      "title": "Tractates on John 112 on john 18:6",
+      "excerpt": "\"Jesus, therefore,\" as the evangelist proceeds to say, \"knowing all things that should come upon Him, went forth and saith unto them, Whom seek ye? They answered Him, Jesus of Nazareth. Jesus saith unto them, I am [He]. And Judas also, who betrayed Him, stood with them. As soon then as He had said unto them, I am He, they went backward, and fell to the ground.\" Where now were the military cohort, and the servants of the chief men and the Pharisees? where the terror and protection of weapons? His own single voice uttering the words, \"I am [He],\" without any weapon, smote, repelled, prostrated that great crowd, with all the ferocity of their hatred and terror of their arms. For God lay hid in that human flesh; and eternal day was so obscured in those human limbs, that with lanterns and torches He was sought for to be slain by the darkness. \"I am [He],\" He says; and He casteth the wicked to the ground. What will He do when He cometh as judge, who did this when giving Himself up to be judged? What will be His power when He cometh to reign, who had this power when He came to die? And now everywhere through the gospel Christ is still saying, \"I am [He];\" and the Jews are looking for antichrist, that they may go backward and fall to the ground, as those who have abandoned what is heavenly, and are hankering after the earthly. It was for the very purpose of apprehending Jesus that His persecutors accompanied the traitor: they found the One they were seeking, for they heard, \"I am [He].\" Why, then, did they not seize Him, but went backward and fell, but just because so He pleased, who could do whatever He pleased? But had He never permitted them to apprehend Him, they would certainly not have done what they came to do, but no more would He be doing what He came to do. They, verily, in their mad rage, sought for Him to put Him to death; but He, too, in giving Himself to death, was seeking for us. Accordingly, having thus shown His power to those who had the will, but not the power, to hold Him; let them now hold Him that He may work His own will with those who know it not.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.18.6"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.18.6:c3c12e45:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-83",
+      "title": "Homily on the Gospel of John 83 on john 18:6",
+      "excerpt": "Seest thou His invincible power, how being in the midst of them He disabled their eyes? for that the darkness was not the cause of their not knowing Him, the Evangelist hath shown, by saying, that they had torches also. And even had there been no torches, they ought at least to have known Him by His voice; or if they did not know it, how could Judas be ignorant, who had been so continually with Him? for he too stood with them, and knew Him no more than they, but with them fell backward. And Jesus did this to show, that not only they could not seize Him, but could not even see Him when in the midst, unless He gave permission.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.18.6"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.18.6:a0f3e97a:0",
+      "relation": "verse",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:3–9",
-      "excerpt": "He asks not because He needed to know, for He knew all things that should come upon Him; but because He wished to shew, that though present, they could not see or distinguish Him: Jesus saith unto them, I am He.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 18:6",
+      "excerpt": "The Lord not only blinded their eyes, but also cast them to the ground by His question alone. The fact that those who came against Jesus fell was a sign of the universal downfall of this people, which befell them afterwards, after the death of Christ, as Jeremiah also foretold: \"The house of Israel has fallen, and there is none to raise it up.\" And so fall all those who oppose the word of God.\r\nThe Lord cast them to the ground in order to show both His power and that He was going to His suffering voluntarily. Beyond this, He also arranges something else. So that no one would say that the Jews sinned not at all, since He Himself gave Himself into their hands and appeared to them, He therefore shows this miracle upon them, and it was sufficient to bring them to their senses. But when even after this miracle they remained in their malice, then He gives Himself into their hands.",
       "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.18.6"
+    },
+    {
+      "id": "hcf:hcf-quodvultdeus:john.18.6:6cb7fdf5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-quodvultdeus",
+      "workId": "hcf:work:hcf-quodvultdeus:third-homily-on-the-creed-5-14-17",
+      "title": "THIRD HOMILY ON THE CREED 5.14-17 on john 18:6",
+      "excerpt": "They come with their torches, lanterns and weapons. The many seek the one, and the sons of darkness come, bearing in their hands light, through which they would reveal the true Light to others, the true Light that they themselves, blinded, were not able to hold in their heart.… Behold, the true Light, who lies hidden here under the cloud of flesh, looks at the darkness, and it fell to the ground.… In order that the Light might accomplish what it came for, however, the darkness gets back up. He gives [the darkness] power over himself. Darkness seizes the Light, not to follow but to kill it. The Light permits himself to be seized by darkness, to be led away, to be hung, to be killed, in order that, stripped of the cloud of flesh, he might restore the splendor of his majesty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:third-homily-on-the-creed-5-14-17",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:john.18.6"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.18.6:745cd99f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 18:6",
+      "excerpt": "2282 Now we see the effect of his revealing himself: they drew back and fell to the ground. As Gregory says, sometimes we read that the saints fall to the ground: \"The king Nebuchadnezzar fell upon his face and did homage to Daniel\" (Dan 2:46); \"When I saw it, I fell upon my face\" (Ez 1:28). We also read that the evil fall: \"Your men shall fall by the sword\" (Is 3:25). Yet there is a difference. It is said that the evil fall backward: \"Eli fell over backward from his seat\" (1 Sam 4:18); while the saints fall on their face. The reason for this is given in Proverbs (4:18): \"The path of the righteous is like the light of dawn.... The path of the wicked is like deep darkness; they do not know over what they stumble.\" Now those who fall backward do not see where they fall. And so those who are evil are said to fall backward because they fall over things that are invisible. Those who fall forward see where they are falling. Thus the saints, who willingly cast themselves down with respect to visible things, so they can be raised up to invisible things, are said to fall on their face because they humble themselves.\r\n\r\nMystically understood, we can say that by this falling backward we can understand that the Jewish people, who were a special people, because they did not listen to the voice of Christ in his preaching, fell backward, excluded from the kingdom.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.18.6"
     },
     {
       "id": "catena-john-2217-v6",

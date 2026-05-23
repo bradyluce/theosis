@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.14.8:d9b17dcb:0"
       ]
     },
     {
@@ -37,17 +44,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.14.8:7b9844b4:0"
       ]
     },
     {
-      "id": "catena-luke-2243-v8",
+      "id": "catena-luke-2248-v8",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.8",
       "topicSlugs": [],
       "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 14:7–11",
-      "excerpt": "For to rush forward hastily to honours which are not fitting for us, indicates rashness and casts a slur upon our actions. Hence it follows, lest a more honourable man than thou be invited, &c.",
+      "excerpt": "Having shewn therefore from so slight an example the degradation of the ambitious and the exaltation of the humbleminded, He adds a great thing to a little, pronouncing a general sentence, as it follows, For every one who exalts himself shall be abased, and he that humbleth himself shall be exalted. This is spoken according to the divine judgment, not after human experience, in which they who desire after glory obtain it, while others who humble themselves remain inglorious.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -76,6 +90,31 @@
       ]
     },
     {
+      "id": "catena-luke-2243-v8",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.14.8",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 14:7–11",
+      "excerpt": "For to rush forward hastily to honours which are not fitting for us, indicates rashness and casts a slur upon our actions. Hence it follows, lest a more honourable man than thou be invited, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.14.8:c8317afe:0"
+      ]
+    },
+    {
       "id": "catena-luke-2246-v8",
       "relation": "verse",
       "targetVerseId": "kjva:luke.14.8",
@@ -91,24 +130,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2248-v8",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.14.8",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 14:7–11",
-      "excerpt": "Having shewn therefore from so slight an example the degradation of the ambitious and the exaltation of the humbleminded, He adds a great thing to a little, pronouncing a general sentence, as it follows, For every one who exalts himself shall be abased, and he that humbleth himself shall be exalted. This is spoken according to the divine judgment, not after human experience, in which they who desire after glory obtain it, while others who humble themselves remain inglorious.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:basil-the-great:luke.14.8:e4ea5fbe:0"
       ]
     },
     {
@@ -145,6 +173,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.14.8:05456eba:0"
       ]
     },
     {
@@ -164,6 +199,74 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:ambrose-of-milan:luke.14.8:1922f26a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-gospel-of-luke",
+      "title": "Exposition of the Gospel of Luke on luke 14:8",
+      "excerpt": "Then, Christ teaches humility. At the feast, Christ gently opposes the longing for a better seat, so that the humanity of persuasion excludes the harshness of coercion, reason promotes the effect of persuasion, and correction chastises pride.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:luke.14.8"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.14.8:7fba3034:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-102",
+      "title": "Commentary on the Gospel of Luke, Sermon 102 on luke 14:8",
+      "excerpt": "He saw certain of those who were invited foolishly seizing the uppermost seats as a thing of importance, and worth the taking, and that they were eager after vainglory, for the benefit both of them and us He utters an urgent warning, saying; \"When you are bidden of any one, seat not yourself at the head of the seat, lest a more honourable man than you be bidden of him, and when he that bade you and him comes, he say unto you, Give this man place; and then you begin with shame to take the lowest place.\"\r\n\r\nNow such things may seem perchance to some to be but trifling matters, and not worthy of much attention. But when any one fixes upon them the eye of his mind, he will then learn, from what blame they deliver a man, and how great orderliness they produce in him. For in the first place to hurry inconsiderately after honours neither suitable, nor due to us, shows us to be foolish, rude, and arrogant, seizing what is not fitting for us, but for others rather, who are greater than and superior to ourselves. Whoever he is that thus acts, is hated, and often too becomes an object of ridicule, when he has to restore to others, and that often against his will, the honour which in no respect belongs unto him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.14.8"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.14.8:3c92a9f8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 14:8",
+      "excerpt": "Look from the other side also at this: from what mockery He delivers man and how He teaches him propriety. For how much shame there is in the case where you take a place unbefitting to you, and then someone more honored than you arrives, and the one who invited you says: \"Give him your place!\" And this can happen often. And you yourself will have to yield, while they will sit higher.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.14.8"
+    },
+    {
+      "id": "hcf:clement-of-alexandria:luke.14.8:c753e9da:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-2",
+      "title": "The Instructor Book 2 on luke 14:8",
+      "excerpt": "Gatherings for the sake of mirth, and such entertainments as are called by ourselves, we name rightly suppers, dinners, and banquets, after the example of the Lord. But such entertainments the Lord has not called agapae. He says accordingly somewhere, \"When thou art called to a wedding, recline not on the highest couch; but when thou art called, fall into the lowest place;\" and elsewhere, \"When thou makest a dinner or a supper;\" and again, \"But when thou makest an entertainment, call the poor,\" for whose sake chiefly a supper ought to be made.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:luke.14.8"
     }
   ]
 }

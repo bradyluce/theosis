@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:mark.6.17:9de8504b:0"
       ]
     },
     {
@@ -37,17 +44,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.17:495fe9ee:1"
       ]
     },
     {
-      "id": "catena-mark-0430-v17",
+      "id": "catena-mark-0444-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.17",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:17–29",
-      "excerpt": "For Herodias was afraid, lest Herod should repent at some time, or be reconciled to his brother Philip, and so the unlawful marriage be divorced. It goes on, For Herod feared John, knowing that he was a just man, and an holy.",
+      "excerpt": "There follows, And when his disciples heard of it, they came and took up his corpse, and laid it in a tomb. Josephus relates, that John was brought bound into the castle of Macheron, and there slain; and ecclesiastical history (Theodoret. Hist. Eccles. 3:3) says that he was buried in Sebaste, a city of Palestine, once called Samaria. But the beheading of John the Baptist signifies the lessening of that fame, by which he was thought to be Christ by the people, as the raising of our Saviour on the cross typifies the advance of the faith, in that He Himself, who was first looked upon as a…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -76,24 +90,6 @@
       ]
     },
     {
-      "id": "catena-mark-0436-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.17",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:17–29",
-      "excerpt": "His oath does not excuse his murder, for perchance his reason for swearing was, that he might find an opportunity for slaying, and if she had demanded the death of his father and mother, he surely would not have granted it. It goes on, And she went forth, and said unto her mother, What shall I ask? And she said, The head of John the Baptist. Worthy is blood to be asked as the reward of such a deed as dancing. It goes on, And she came in straightway with haste, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0438-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.17",
@@ -102,24 +98,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:17–29",
       "excerpt": "It is usual with Scripture, that the historian should relate events as they were then believed by all, thus Joseph is called the father of Jesus by Mary herself. So now also Herod is said to be exceeding sorry, for so the guests thought, since the hypocrite bore sadness on his face, when he had joy in his heart; and he excuses his wickedness by his oath, that he might be impious under pretence of piety. Wherefore there follows, For his oath’s sake, and for their sakes who sat with him, he would not reject her.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0440-v17",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.17",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:17–29",
-      "excerpt": "In that again which is added, And for their sakes who sat with him, he wishes to make all partakers in his guilt, that a bloody feast might be set before luxurious and impure guests. Wherefore it goes on, But sending an executioner, he commanded his head to be brought in a charger.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -148,14 +126,14 @@
       ]
     },
     {
-      "id": "catena-mark-0444-v17",
+      "id": "catena-mark-0436-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.17",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:17–29",
-      "excerpt": "There follows, And when his disciples heard of it, they came and took up his corpse, and laid it in a tomb. Josephus relates, that John was brought bound into the castle of Macheron, and there slain; and ecclesiastical history (Theodoret. Hist. Eccles. 3:3) says that he was buried in Sebaste, a city of Palestine, once called Samaria. But the beheading of John the Baptist signifies the lessening of that fame, by which he was thought to be Christ by the people, as the raising of our Saviour on the cross typifies the advance of the faith, in that He Himself, who was first looked upon as a…",
+      "excerpt": "His oath does not excuse his murder, for perchance his reason for swearing was, that he might find an opportunity for slaying, and if she had demanded the death of his father and mother, he surely would not have granted it. It goes on, And she went forth, and said unto her mother, What shall I ask? And she said, The head of John the Baptist. Worthy is blood to be asked as the reward of such a deed as dancing. It goes on, And she came in straightway with haste, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -166,14 +144,50 @@
       ]
     },
     {
-      "id": "catena-mark-0427-v17",
+      "id": "catena-mark-0440-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.17",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:17–29",
+      "excerpt": "In that again which is added, And for their sakes who sat with him, he wishes to make all partakers in his guilt, that a bloody feast might be set before luxurious and impure guests. Wherefore it goes on, But sending an executioner, he commanded his head to be brought in a charger.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0430-v17",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.17",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:17–29",
+      "excerpt": "For Herodias was afraid, lest Herod should repent at some time, or be reconciled to his brother Philip, and so the unlawful marriage be divorced. It goes on, For Herod feared John, knowing that he was a just man, and an holy.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0445-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.17",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:17–29",
-      "excerpt": "The Evangelist Mark, taking occasion from what went before, here relates the death of the Forerunner, saying, For Herod himself had sent forth and laid hold upon John, and bound him in prison for Herodias’ sake, his brother Philip’s wife: for he had married her.",
+      "excerpt": "In a mystical way, however, Herod, whose name means, ‘of skin,’ is the people of the Jews, and the wife to whom he was wedded means vain glory, whose daughter even now encircles the Jews with her dance, namely, a false understanding of the Scriptures; they indeed beheaded John, that is, the word of prophecy, and hold to him without Christ, his head.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -199,17 +213,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.17:b8b3d06b:1"
       ]
     },
     {
-      "id": "catena-mark-0432-v17",
+      "id": "catena-mark-0427-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.17",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:17–29",
-      "excerpt": "But see how great is the fury of lust, for though Herod had such an awe and fear of John, he forgets it all, that he may minister to his fornication.",
+      "excerpt": "The Evangelist Mark, taking occasion from what went before, here relates the death of the Forerunner, saying, For Herod himself had sent forth and laid hold upon John, and bound him in prison for Herodias’ sake, his brother Philip’s wife: for he had married her.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -274,14 +295,14 @@
       ]
     },
     {
-      "id": "catena-mark-0441-v17",
+      "id": "catena-mark-0432-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.17",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:17–29",
-      "excerpt": "‘Spiculator’ is the name for the public servant commissioned to put men to death.",
+      "excerpt": "But see how great is the fury of lust, for though Herod had such an awe and fear of John, he forgets it all, that he may minister to his fornication.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -292,14 +313,14 @@
       ]
     },
     {
-      "id": "catena-mark-0445-v17",
+      "id": "catena-mark-0441-v17",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.17",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:17–29",
-      "excerpt": "In a mystical way, however, Herod, whose name means, ‘of skin,’ is the people of the Jews, and the wife to whom he was wedded means vain glory, whose daughter even now encircles the Jews with her dance, namely, a false understanding of the Scriptures; they indeed beheaded John, that is, the word of prophecy, and hold to him without Christ, his head.",
+      "excerpt": "‘Spiculator’ is the name for the public servant commissioned to put men to death.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -326,6 +347,108 @@
         "patristic",
         "mark"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.6.17:47c73d3c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:17",
+      "excerpt": "Taking advantage of the occasion, Mark inserts here an introductory discourse on the death of the Baptist. Some say that Herod took Herodias while Philip was still alive, and for this he was rebuked as a lawbreaker who had married the wife of his living brother. On the contrary, others maintain that Philip had already died, but left behind a daughter. And since Philip left a daughter, Herod should not have married his brother's wife even after his brother's death; for the Law commanded a brother to take his brother's wife only in the case when the latter had died childless. But in the present case a daughter remained; therefore, Herod's marriage was unlawful.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.17"
+    },
+    {
+      "id": "hcf:bede:mark.6.17:4358c331:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:17",
+      "excerpt": "For Herod himself sent and seized John, and bound him in prison because of Herodias. The old story relates that Philip, the son of the elder Herod, under whom the Lord fled to Egypt, and the brother of that Herod under whom Christ suffered, had married Herodias, the daughter of King Aretas. Afterward, however, because of certain disputes against his son-in-law, her father took his daughter and, to the grief of her former husband, married her to his enemy. But who this Philip is, the Evangelist Luke teaches more fully: \"In the fifteenth year of the reign of Tiberius Caesar, Pontius Pilate being governor of Judea, and Herod being tetrarch of Galilee, Philip his brother tetrarch of Ituraea and of the region of Trachonitis\" (Luke III).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.17"
+    },
+    {
+      "id": "hcf:bede:mark.6.17:7c8ec268:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:17",
+      "excerpt": "Thus John the Baptist, who came in the spirit and power of Elijah, with the same authority with which Elijah had rebuked Ahab and Jezebel, reproved Herod and Herodias for having an unlawful marriage, and that it was not permitted, while his brother was alive, to marry his brother's wife, preferring to risk his safety with the king rather than to be forgetful of God's commandments for the sake of flattery.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.17"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:mark.6.17:f14d9e41:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-1-11",
+      "title": "ECCLESIASTICAL HISTORY 1.11 on mark 6:17",
+      "excerpt": "Not long after this, John the Baptist was beheaded by the younger Herod, as stated in the Gospels. Josephus also records the same fact, mentioning Herodias by name, and stating that, although she was the wife of his brother, Herod made her his own wife after divorcing his former lawful wife, the daughter of Aretas, king of Petra, and separating Herodias from her husband while he was still alive. It was on her account also that he killed John, and waged war with Aretas, because of the disgrace inflicted on the daughter of the latter. Josephus wrote that in this war, when they came to battle, Herod's entire army was destroyed, and that he suffered this calamity on account of his crime against John.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-1-11",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:mark.6.17"
+    },
+    {
+      "id": "hcf:hcf-josephus:mark.6.17:e8f3163c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-josephus",
+      "workId": "hcf:work:hcf-josephus:antiquities-of-the-jews-book-xviii-chapter-5-section-2",
+      "title": "Antiquities of the Jews - Book XVIII, Chapter 5, Section 2 on mark 6:17",
+      "excerpt": "Now some of the Jews thought that the destruction of Herod's army came from God, and that very justly, as a punishment of what he did against John, that was called the Baptist: for Herod slew him, who was a good man, and commanded the Jews to exercise virtue, both as to righteousness towards one another, and piety towards God, and so to come to baptism; for that the washing [with water] would be acceptable to him, if they made use of it, not in order to the putting away [or the remission] of some sins [only], but for the purification of the body; supposing still that the soul was thoroughly purified beforehand by righteousness. Now when [many] others came in crowds about him, for they were very greatly moved [or pleased] by hearing his words, Herod, who feared lest the great influence John had over the people might put it into his power and inclination to raise a rebellion, (for they seemed ready to do any thing he should advise,) thought it best, by putting him to death, to prevent any mischief he might cause, and not bring himself into difficulties, by sparing a man who might make him repent of it when it would be too late. Accordingly he was sent a prisoner, out of Herod's suspicious temper, to Macherus, the castle I before mentioned, and was there put to death. Now the Jews had an opinion that the destruction of this army was sent as a punishment upon Herod, and a mark of God's displeasure to him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sacred-texts-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:mark.6.17"
+    },
+    {
+      "id": "hcf:tertullian:mark.6.17:b1349eaa:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-martyrdom-2",
+      "title": "ON MARTYRDOM 2 on mark 6:17",
+      "excerpt": "Set aside for a moment the term \"prison.\" Just call it a temporary retirement. Even though the body is imprisoned, even though the flesh is confined, everything still remains open to the spirit. Walk back and forth, my spirit, not thinking of shady walks or long cloisters, but of the road that leads directly to God. As often as you shall walk in this way in the spirit, so often shall you find yourself not in prison.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.6.17"
     },
     {
       "id": "catena-mark-0431-v17",

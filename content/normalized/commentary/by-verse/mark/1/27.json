@@ -4,6 +4,24 @@
   "verseNumber": 27,
   "entries": [
     {
+      "id": "catena-mark-0088-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.27",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "For He was known to them in that degree in which He wished to be known; and He wished as much as was fitting. He was not known to them as to the holy Angels, who enjoy Him by partaking of His eternity according as He is the Word of God; but as He was to be made known in terror, to those beings from whose tyrannical power He was about to free the predestinate. He was known therefore to the devils, not in that He is eternal Life, but by some temporal effects of His Power, which might be more clear to the angelic senses of even bad spirits than to the weakness of men.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0083-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.27",
@@ -22,17 +40,17 @@
       ]
     },
     {
-      "id": "catena-mark-0088-v27",
+      "id": "catena-mark-0091-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.27",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "For He was known to them in that degree in which He wished to be known; and He wished as much as was fitting. He was not known to them as to the holy Angels, who enjoy Him by partaking of His eternity according as He is the Word of God; but as He was to be made known in terror, to those beings from whose tyrannical power He was about to free the predestinate. He was known therefore to the devils, not in that He is eternal Life, but by some temporal effects of His Power, which might be more clear to the angelic senses of even bad spirits than to the weakness of men.",
+      "excerpt": "But it may appear to be a discrepancy, that he should have gone out of him, tearing him, or, as some copies have it, vexing him, when, according to Luke, he did not hurt him. But Luke himself says, When he had, cast him into the midst, he came out from him, without hurting him. (Luke 4:35) Wherefore it is inferred that Mark meant by vexing or tearing him, what Luke expresses, in the words, When he had cast him into the midst; so that what he goes on to say, And did not hurt him, may be understood to mean, that the tossing of his limbs and vexing, did not weaken him, as devils are wont to come…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -66,24 +84,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
       "excerpt": "For the devils, seeing the Lord on the earth, thought that they were immediately to be judged.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0091-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.27",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "But it may appear to be a discrepancy, that he should have gone out of him, tearing him, or, as some copies have it, vexing him, when, according to Luke, he did not hurt him. But Luke himself says, When he had, cast him into the midst, he came out from him, without hurting him. (Luke 4:35) Wherefore it is inferred that Mark meant by vexing or tearing him, what Luke expresses, in the words, When he had cast him into the midst; so that what he goes on to say, And did not hurt him, may be understood to mean, that the tossing of his limbs and vexing, did not weaken him, as devils are wont to come…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -130,32 +130,49 @@
       ]
     },
     {
-      "id": "catena-mark-0082-v27",
+      "id": "hcf:bede:mark.1.27:da367a84:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.1.27",
       "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:23–28",
-      "excerpt": "The word Spirit is applied to an Angel, the air, the soul, and even the Holy Ghost. Lest therefore by the sameness of the name we should fall into error, he adds, unclean. And he is called unclean on account of his impiousness and far removal from God, and because he employs himself in all unclean and wicked works.",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:27",
+      "excerpt": "And they were all amazed, such that they questioned among themselves, etc. Seeing the virtue of the miracle, they marvel at the newness of the Lord's teaching, and are stirred to inquire about the things they had heard through the things they had seen. For certainly the signs that either the Lord himself did in the assumed man, or that he gave to the disciples to do, were done so that through these, faith in the Gospel of the kingdom of God, which was being preached, might be more certain, while those who promised future heavenly joys to the earthborn demonstrated heavenly and divine works on earth. Truly, the disciples conducted everything as pure men with the Lord granting. But the Lord himself singularly operated in the virtue of power and worked healings and miracles, and spoke in the world what He heard from the Father. For even before (as the Gospel testifies) he was teaching them as one having authority, and not as the scribes (Matt. VII). And now, with the crowd attesting, he commands the unclean spirits with authority, and they obey him (Mark I).",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.27"
     },
     {
-      "id": "catena-mark-0085-v27",
+      "id": "hcf:bede:mark.1.27:201f2b58:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 1:27",
+      "excerpt": "(ubi sup.) But seeing the power of the miracle, they wonder at the newness of our Lord's doctrine, and are roused to search into what they had heard by what they had seen. Wherefore there follows, And they all wondered &c. For miracles were done that they might more firmly believe the Gospel of the kingdom of God, which was being preached, since those who were promising heavenly joys to men on earth, were showing forth heavenly things and divine works even on earth. For before (as the Evangelist says) He was teaching them as one who had power, and now, as the crowd witnesses, with power He commands the evil spirits, and they obey Him. (1 John 5:20. John 17:3) It goes on, And immediately His fame spread abroad, &c.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.1.27"
+    },
+    {
+      "id": "catena-mark-0089-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.27",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "Or else the devil so speaks, as if he said, ‘by taking away uncleanness, and giving to the souls of men divine knowledge, Thou allowest us no place in men.’",
+      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -184,14 +201,32 @@
       ]
     },
     {
-      "id": "catena-mark-0089-v27",
+      "id": "catena-mark-0082-v27",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.27",
       "topicSlugs": [],
       "personId": "pseudo-chrysostom",
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:23–28",
-      "excerpt": "Further, the Truth did not wish to have the witness of unclean spirits; wherefore there follows, And Jesus threatened him, saying, &c. Whence a healthful precept is given to us; let us not believe devils, howsoever they may proclaim the truth. It goes on, And the unclean spirit tearing him, &c. For, because the man spoke as one in his senses and uttered his words with discretion, lest it should be thought that he put together his words not from the devil but out of his own heart, He permitted the man to be torn by the devil, that He might shew that it was the devil who spoke.",
+      "excerpt": "The word Spirit is applied to an Angel, the air, the soul, and even the Holy Ghost. Lest therefore by the sameness of the name we should fall into error, he adds, unclean. And he is called unclean on account of his impiousness and far removal from God, and because he employs himself in all unclean and wicked works.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0085-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.27",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:23–28",
+      "excerpt": "Or else the devil so speaks, as if he said, ‘by taking away uncleanness, and giving to the souls of men divine knowledge, Thou allowest us no place in men.’",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

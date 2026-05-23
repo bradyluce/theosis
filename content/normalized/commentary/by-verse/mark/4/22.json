@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0289-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.22",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:21–25",
-      "excerpt": "Or else, There is nothing hid; as if He said, If ye conduct your life with care, accusation will not be able to obscure your light.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:mark.4.22:9db270e1:0"
       ]
     },
     {
@@ -48,6 +37,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:21–25",
       "excerpt": "Again it may be said, that he hath not, who has not truth. But our Lord says that he hath, because he has a lie, for every one whose understanding believes a lie, thinks that he has something.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0289-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.22",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:21–25",
+      "excerpt": "Or else, There is nothing hid; as if He said, If ye conduct your life with care, accusation will not be able to obscure your light.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 85,
@@ -73,24 +80,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0291-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.22",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:21–25",
-      "excerpt": "That is, if any man have a sense for understanding the word of God, let him not withdraw himself, let him not turn his ear to fables, but let him lend his ear to search those things which truth hath spoken, his hands for fulfilling them, his tongue for preaching them. There follows, And he said unto them, Take heed what ye hear.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.4.22:e7f9e769:0"
       ]
     },
     {
@@ -102,6 +98,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:21–25",
       "excerpt": "Or else, If ye diligently endeavour to do all the good which ye can, and to teach it to your neighbours, the mercy of God will come in, to give you both in the present life a sense to take in higher things, and a will to do better things, and will add for the future an everlasting reward. And therefore it is subjoined, And to you shall more be given.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0291-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.22",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:21–25",
+      "excerpt": "That is, if any man have a sense for understanding the word of God, let him not withdraw himself, let him not turn his ear to fables, but let him lend his ear to search those things which truth hath spoken, his hands for fulfilling them, his tongue for preaching them. There follows, And he said unto them, Take heed what ye hear.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.4.22:c6da5c68:1"
       ]
     },
     {
@@ -177,6 +198,75 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.4.22:c8e9aaa8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:22",
+      "excerpt": "\"And nothing is hidden that will not be revealed.\" Whatever anyone does in secret—whether good or evil—will all be made manifest both here and especially in the age to come. What was more hidden than God? Yet even He was manifested in the flesh.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.22"
+    },
+    {
+      "id": "hcf:bede:mark.4.22:341cb538:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 4:22",
+      "excerpt": "For nothing is hidden, except to be made manifest; nor is anything secret, except to come to light. He says, do not be ashamed of the Gospel of God, but among the darkness of persecutors, raise the light of the word upon the candlestick of your body, retaining with a steadfast mind that day of ultimate recompense, where the Lord will illuminate the hidden things of darkness, and will reveal the thoughts of hearts. For then both praise from God awaits you, and eternal punishment for the adversaries of the truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.4.22"
+    },
+    {
+      "id": "hcf:tertullian:mark.4.22:c058e007:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-apparel-of-women-2-13",
+      "title": "ON THE APPAREL OF WOMEN 2.13 on mark 4:22",
+      "excerpt": "Why does the Lord call us the light of the world? Why has he compared us to a city on a hill? Are we not called to shine in the midst of darkness, and stand up high for those most sunk down? If you hide your lamp beneath a bushel, you will soon notice that you yourself will be in the dark. You will find others bumping into you. So what can you do to illumine the world? Let your faith produce good works. Be a reflection of God's light. The good is not preoccupied with darkness. It rejoices in being seen. It exults over the very pointings which are made at it. Christian modesty not only wishes to be modest, but also it wishes to be beheld as what it actually is.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.4.22"
+    },
+    {
+      "id": "catena-mark-0294-v22",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.22",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:21–25",
+      "excerpt": "According to the measure of his faith the understanding of mysteries is divided to every man, and the virtues of knowledge will also be added to them. It goes on: For he that hath, to him shall be given; that is, he who hath faith shall have virtue, and he who hath obedience to the word, shall also have the understanding of the mystery. Again, he who, on the other hand, has not faith, fails in virtue; and he who has not obedience to the word, shall not have the understanding of it; and if he does not understand, he might as well not have heard.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -199,24 +289,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0294-v22",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.22",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:21–25",
-      "excerpt": "According to the measure of his faith the understanding of mysteries is divided to every man, and the virtues of knowledge will also be added to them. It goes on: For he that hath, to him shall be given; that is, he who hath faith shall have virtue, and he who hath obedience to the word, shall also have the understanding of the mystery. Again, he who, on the other hand, has not faith, fails in virtue; and he who has not obedience to the word, shall not have the understanding of it; and if he does not understand, he might as well not have heard.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.22:e1715ea1:0"
       ]
     },
     {

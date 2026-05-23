@@ -73,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.61:b7a04e0f:0"
       ]
     },
     {
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.61:1a30497b:0"
       ]
     },
     {
@@ -146,6 +160,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.1.61:f777f45b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 1:61",
+      "excerpt": "And they said to her: There is no one among your relatives who is called by this name. They signaled to his father, etc. \"John is his name,\" he said, that is, we do not impose a name on him who has already received a name from God. He has his own name which we acknowledge, not which we chose. Do not be surprised if a woman asserted the name, which she had not heard, when the Holy Spirit who commanded the angel revealed it to her, nor could she be ignorant of the announcement of the Lord, who had prophesied of Christ. And it is well added that there is no one among his kindred who is called by this name, so you may understand that the name is not one of kin, but of a prophet.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.61"
+    },
+    {
+      "id": "hcf:bede:luke.1.61:a05b2f6b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-20",
+      "title": "Homilies on the Gospels 2.20 on luke 1:61",
+      "excerpt": "John means \"the grace of God\" or \"in whom there is grace.\" By this name are expressed the entire extent of the grace of the gospel dispensation which he was to proclaim, and especially the Lord himself, through whom this grace was to be granted to the world.…As to his subsequent declaration and confirmation of the name of John, and the opening of Zechariah's mouth and his speaking, blessing God, it is surely evident that once the grace of the new covenant was manifested by the apostles, a large number of priests also became obedient to the faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.61"
     }
   ]
 }

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.17.2:e17dfb4a:0"
       ]
     },
     {
@@ -37,6 +44,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.17.2:cc5909d7:0"
       ]
     },
     {
@@ -55,6 +69,38 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.17.2:f0f2c863:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2554-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.17.2",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 17:1–2",
+      "excerpt": "Or, He says that there must arise many obstacles to preaching and to the truth, as the Pharisees hindered the preaching of Christ. But some ask, If it needs be that offences should come, why does our Lord rebuke the author of the offences? for it follows, But woe to him through whom they come. For whatsoever necessity engenders is pardonable, or deserving of pardon. But observe, that necessity itself derives its birth from free-will. For our Lord, seeing how men cling to evil, and put forward nothing good, spoke with reference to the consequence of those things which are seen, that offences…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.17.2:06b045b1:0"
       ]
     },
     {
@@ -76,22 +122,89 @@
       ]
     },
     {
-      "id": "catena-luke-2554-v2",
+      "id": "hcf:theophylact-of-ohrid:luke.17.2:f8a6e3a4:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.17.2",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 17:1–2",
-      "excerpt": "Or, He says that there must arise many obstacles to preaching and to the truth, as the Pharisees hindered the preaching of Christ. But some ask, If it needs be that offences should come, why does our Lord rebuke the author of the offences? for it follows, But woe to him through whom they come. For whatsoever necessity engenders is pardonable, or deserving of pardon. But observe, that necessity itself derives its birth from free-will. For our Lord, seeing how men cling to evil, and put forward nothing good, spoke with reference to the consequence of those things which are seen, that offences…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 17:2",
+      "excerpt": "And indeed, for a person who causes offenses and obstacles, it is better that \"a millstone be hung around his neck and he be cast into the sea\" than that he should offend and lead astray \"one of these little ones,\" that is, the faithful.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.17.2"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.17.2:9fb6f5c6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homilies-113-16",
+      "title": "COMMENTARY ON LUKE, HOMILIES 113-16 on luke 17:2",
+      "excerpt": "The accompanying discussion that immediately follows these opening remarks and speaks of our pardoning our brothers and sisters in case they ever sin against us leads us to the idea that these were the offenses meant. What are these offenses? They are, I suppose, mean and annoying actions, fits of anger whether on good grounds or without justification, insults, slander, and other stumbling blocks similar to these. He says that these temptations must come. Is this then because God, who governs all, forces people to their commission of sin? Away with the thought! Nothing that is evil comes from him. He is the fountain of all virtue. Why then must this happen? They clearly happen because of our infirmity, for all of us stumble in many things, as it is written. Nevertheless he says that there will be woe to the person who lays the stumbling blocks in the way. He does not leave indifference in these things without rebuke but restrains it by fear of punishment. He still commands us to bear with patience those who cause sins to happen.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homilies-113-16",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.17.2"
+    },
+    {
+      "id": "hcf:bede:luke.17.2:c5df3779:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 17:2",
+      "excerpt": "It is better for him that a millstone be placed around his neck and he be cast into the sea, than that he should cause one of these little ones to stumble. He speaks according to the custom of the province, by which this punishment was for greater crimes among the ancient Jews, that they be drowned with a stone tied to them in the depths. And indeed it is better for the innocent to end their bodily life with a punishment, however atrocious, than to deserve the eternal death of the soul by harming a brother. Rightly, however, one who can be scandalized is called little. For he who is great, whatever he sees, whatever he suffers, does not turn away from the faith. But he who is small in spirit and little, seeks opportunities to be scandalized. Therefore, it is most appropriate for us to consider those who are small in faith, that they not be offended by anything of ours, and leave the faith, and fall from salvation. It is indeed to be noted that in our good work sometimes we must avoid scandalizing our neighbor, but at other times, it must be contemptuously disregarded. Insofar as we can without sin, we must avoid scandalizing our neighbors. But if a scandal arises from the truth, it is better to permit the scandal to arise than to forsake the truth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.17.2"
+    },
+    {
+      "id": "hcf:jerome:luke.17.2:10ca69de:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:against-the-pelagians-2-15",
+      "title": "Against the Pelagians 2.15 on luke 17:2",
+      "excerpt": "\"It is impossible,\" he says, \"that scandals should not come.\" I suppose that a scandal is a sin because sin comes through scandal. \"In many things we all offend.\" Granted that I have not come to ruin, but I have certainly offended not only in one thing but also in many things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:luke.17.2"
+    },
+    {
+      "id": "hcf:peter-chrysologus:luke.17.2:f2d47154:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "peter-chrysologus",
+      "workId": "hcf:work:peter-chrysologus:sermon-27",
+      "title": "SERMON 27 on luke 17:2",
+      "excerpt": "Hear the Lord saying, \"Woe to the world because of scandals!\" A scandal tempts the saints, fatigues the cautious, throws down the incautious, disturbs all things and confuses all people. It is true that in this present passage the Lord is talking about the scandal of his passion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sermon-27",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c450"
+      ],
+      "targetVerseId": "kjva:luke.17.2"
     }
   ]
 }

@@ -20,6 +20,13 @@
         "patristic",
         "tractate",
         "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.18.13:7e946be3:1"
       ]
     },
     {
@@ -31,6 +38,49 @@
       "workId": "catena-aurea-john",
       "title": "On John 18:12–14",
       "excerpt": "They took Him Whom they did not draw nigh to; nor understood that which is written in the Psalms, Draw nigh unto Him, and be ye lightened. (Ps. 34:5. accedite ad eum, Vulg.) For had they thus drawn nigh to Him, they would have taken Him, not to kill Him, but to be in their hearts. But now that they take Him in the way they do, they go backward. It follows, and bound Him, Him by Whom they ought to have wished to be loosed. And perhaps there were among them some who, afterwards delivered by Him, exclaimed, Thou hast broken My chains asunder. (Ps. 116) But after that they had bound Jesus, it…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-2246-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.13",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:12–14",
+      "excerpt": "Why they did so, he tells us immediately after: For he was father in law to Caiaphas, which was the high priest that same year. Matthew, in order to shorten the narrative, says that He was led to Caiaphas; because He was led to Annas first, as being the father in law of Caiaphas. So that we must understand that Annas wished to act Caiaphas’s part.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.18.13:a218157f:0"
+      ]
+    },
+    {
+      "id": "catena-john-2249-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.18.13",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 18:12–14",
+      "excerpt": "That no one however might be disturbed at the sound of the chains, the Evangelist reminds them of the prophecy that His death would be the salvation of the world: Now Caiaphas was he which gave counsel to the Jews, that it was expedient that one man should die for the people. Such is the overpowering force of truth, that even its enemies echo it.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -59,42 +109,6 @@
       ]
     },
     {
-      "id": "catena-john-2246-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.13",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:12–14",
-      "excerpt": "Why they did so, he tells us immediately after: For he was father in law to Caiaphas, which was the high priest that same year. Matthew, in order to shorten the narrative, says that He was led to Caiaphas; because He was led to Annas first, as being the father in law of Caiaphas. So that we must understand that Annas wished to act Caiaphas’s part.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2249-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.18.13",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 18:12–14",
-      "excerpt": "That no one however might be disturbed at the sound of the chains, the Evangelist reminds them of the prophecy that His death would be the salvation of the world: Now Caiaphas was he which gave counsel to the Jews, that it was expedient that one man should die for the people. Such is the overpowering force of truth, that even its enemies echo it.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-2247-v13",
       "relation": "verse",
       "targetVerseId": "kjva:john.18.13",
@@ -110,6 +124,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.18.13:c3aeb1a8:0"
       ]
     },
     {
@@ -147,6 +168,108 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.18.13:a56084d4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 18:13",
+      "excerpt": "They bind Him and lead Him away to Annas, with a certain triumph on this occasion and boasting, as though they had won a great victory.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.18.13"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.18.13:0d59f345:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-83",
+      "title": "Homily on the Gospel of John 83 on john 18:13",
+      "excerpt": "\"Then Jesus was taken; and they bound Him, and led Him away to Annas.\" Why to Annas? In their pleasure they made a show of what had been done, as though forsooth they had set up a trophy. \"And he was father-in-law to Caiaphas.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.18.13"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.18.13:eb07dc88:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-11-13",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 11.13 on john 18:13",
+      "excerpt": "They bring Jesus to Annas, who was the father-in-law of Caiaphas. From this we may conclude that he was the prime mover and planner of the iniquity against Christ. Jesus is, therefore, taken away to him first of all.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-the-gospel-of-john-11-13",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.18.13"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:john.18.13:548a57c8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-1-10-2-7",
+      "title": "ECCLESIASTICAL HISTORY 1.10.2-7 on john 18:13",
+      "excerpt": "The divine Scripture says that he completed the entire time of his teaching while Annas and Caiaphas were high priest, showing that the entire time of his teaching was included within the years of their administration. Since he began in the high priesthood of Annas and continued until the reign of Caiaphas, the entire intervening time does not amount to four years. For, since the regulations of the law of that time were already being destroyed, somehow, there was a relaxation of the rule by which the duties of the service of God were for life and by hereditary descent, and different men at different times were entrusted with the high priesthood by the Roman governors and continued in this office for no more than one year. Josephus relates that four high priests intervened in succession from Annas to Caiaphas, speaking as follows in the same text of the Antiquities: \"Valerius Gratus put an end to the priesthood of Annas and appointed Ishmael the son of Phabi as high priest, and after a short time he removed this one and named as high priest Eliezer, the son of Annas the high priest. And after a year had passed he removed this one also and passed over the high priesthood to Simon, the son of Kamithus. But no more than a year passed with him in office when Josephus, known also as Caiaphas, became his successor.\" So, the entire period of our Savior's teaching is shown to be not even a complete period of four years, since four high priests from Annas to the appointment of Caiaphas fulfilled an annual service over a period of four years. The Gospel, therefore, has rightly indicated Caiaphas as the high priest of the year in which the events of the Savior's passion were fulfilled, and from this we also can see that the time of Christ's ministry does not disagree with the foregoing investigation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-1-10-2-7",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:john.18.13"
+    },
+    {
+      "id": "hcf:hcf-josephus:john.18.13:d3430c28:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-josephus",
+      "workId": "hcf:work:hcf-josephus:antiquities-of-the-jews-book-xx-chapter-9-section-1",
+      "title": "Antiquities of the Jews - Book XX, Chapter 9, Section 1 on john 18:13",
+      "excerpt": "But the king deprived Joseph of the high priesthood, and bestowed the succession to that dignity on the son of Ananus, who was also himself called Ananus. Now the report goes that this eldest Ananus proved a most fortunate man; for he had five sons who had all performed the office of a high priest to God, and who had himself enjoyed that dignity a long time formerly, which had never happened to any other of our high priests. But this younger Ananus, who, as we have told you already, took the high priesthood, was a bold man in his temper, and very insolent; he was also of the sect of the Sadducees, who are very rigid in judging offenders, above all the rest of the Jews, as we have already observed.",
+      "takeaway": "",
+      "sourceId": "hcf:source:sacred-texts-com",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c100"
+      ],
+      "targetVerseId": "kjva:john.18.13"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.18.13:6ca77e8b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 18:13",
+      "excerpt": "2296 Two reasons can be given why Jesus was first brought to Annas. This could have been done by the order of Caiaphas, the high priest that year. Caiaphas did this because he would have had more of an excuse for condemning Jesus if Annas had already condemned him. The other reason was that they were nearer to the house of Annas, which was on their way. They were fearful that if the people became aroused Jesus might be taken away from them, and so they made straight for the house of Annas.\r\n\r\n2297 Here the high priest is described by his relationship to Caiaphas, he was the father‑in‑law of Caiaphas. Then Caiaphas is described as high priest that year. We should remember that according to the law the high priest was to hold his office for life, and when he died to be succeeded by his son. But as the envy and the ambition of the leaders increased, not only did the son not succeed the father, but the office itself was not held for more than a year; and even then it was bought with money, as Josephus says. And so it is not out of character that in the year of that high priesthood, so wickedly obtained, that the high priest acted so despicably.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.18.13"
     }
   ]
 }

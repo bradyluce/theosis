@@ -4,24 +4,6 @@
   "verseNumber": 33,
   "entries": [
     {
-      "id": "catena-mark-0244-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.3.33",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 3:31–35",
-      "excerpt": "From this it is manifest that His brethren and His mother were not always with Him; but because He was beloved by them, they come from reverence and affection, waiting without. Wherefore it goes on, And the multitude sat about him, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0248-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.33",
@@ -40,14 +22,32 @@
       ]
     },
     {
-      "id": "catena-mark-0245-v33",
+      "id": "catena-mark-0244-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.3.33",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 3:31–35",
+      "excerpt": "From this it is manifest that His brethren and His mother were not always with Him; but because He was beloved by them, they come from reverence and affection, waiting without. Wherefore it goes on, And the multitude sat about him, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0251-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.33",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:31–35",
-      "excerpt": "The brothers of the Lord must not be thought to be the sons of the ever-virgin Mary, as Helvidius says, nor the sons of Joseph by a former marriage, as some think, but rather they must be understood to be His relations.",
+      "excerpt": "But mystically, the mother and brother of Jesus means the synagogue, (from which according to the flesh He sprung,) and the Jewish people who, while the Saviour is teaching within, come to Him, and are not able to enter, because they cannot understand spiritual things. But the crowd eagerly enter, because when the Jews delayed, the Gentiles flocked to Christ; but His kindred, who stand without wishing to see the Lord, are the Jews who obstinately remained without, guarding the letter, and would rather compel the Lord to go forth to them to teach carnal things, than consent to enter in to…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -73,17 +73,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.3.33:4ae2dcc0:0"
       ]
     },
     {
-      "id": "catena-mark-0251-v33",
+      "id": "catena-mark-0245-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.33",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 3:31–35",
-      "excerpt": "But mystically, the mother and brother of Jesus means the synagogue, (from which according to the flesh He sprung,) and the Jewish people who, while the Saviour is teaching within, come to Him, and are not able to enter, because they cannot understand spiritual things. But the crowd eagerly enter, because when the Jews delayed, the Gentiles flocked to Christ; but His kindred, who stand without wishing to see the Lord, are the Jews who obstinately remained without, guarding the letter, and would rather compel the Lord to go forth to them to teach carnal things, than consent to enter in to…",
+      "excerpt": "The brothers of the Lord must not be thought to be the sons of the ever-virgin Mary, as Helvidius says, nor the sons of Joseph by a former marriage, as some think, but rather they must be understood to be His relations.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -130,6 +137,58 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.3.33:261a9212:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 3:33",
+      "excerpt": "But the Lord answers: It will be of no benefit to My Mother to be My Mother if She does not possess all the virtues within Herself. Likewise, kinship will be of no benefit to My brothers. For only those are true relatives of Christ who do the will of God. So in saying this, He does not disown His Mother, but shows that She will be worthy of honor not merely for giving birth alone, but also for every other good deed: for if She did not have this, others would have seized the honor of kinship before Her.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.3.33"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.3.33:b7fd5eec:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 3:33",
+      "excerpt": "He does not therefore say this, as denying His mother, but as showing that He is worthy of honour, not only because she bore Christ, but on account of her possessing every other virtue.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.3.33"
+    },
+    {
+      "id": "hcf:gregory-the-great:mark.3.33:d3861fac:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-3",
+      "title": "Forty Gospel Homilies, Homily 3 on mark 3:33",
+      "excerpt": "For Jesus, our Creator and Redeemer, pretends not to know His mother, and indicates who is His mother and who are His relatives not through kinship of the flesh, but through union of the spirit, saying: \"Who is my mother, and who are my brethren? For whoever does the will of my Father who is in heaven, he is my brother, and sister, and mother.\" By these words, what else does He suggest to us, except that He gathers many who are obedient to His commands from among the Gentiles, and does not acknowledge Judea, from whose flesh He was born?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:mark.3.33"
+    },
+    {
       "id": "catena-mark-0246-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.3.33",
@@ -145,6 +204,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.3.33:93f9c887:0"
       ]
     },
     {

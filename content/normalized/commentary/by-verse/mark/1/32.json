@@ -73,42 +73,13 @@
         "catena-aurea",
         "patristic",
         "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0097",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.32",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:32",
-      "excerpt": "By this it is signified, that God will heal a sick man, if he ministers to the Saints, through love to Christ.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0100",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.32",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:32",
-      "excerpt": "But he has a fever who is angry, and in the unruliness of his anger stretches forth his hands to do hurt; but if reason restrains his hands, he will arise, and so serve reason.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.1.32:8e6c8de4:1"
       ]
     },
     {
@@ -127,6 +98,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.1.32:4aa8911f:1"
       ]
     },
     {
@@ -166,6 +144,76 @@
       ]
     },
     {
+      "id": "catena-mark-0100",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.32",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:32",
+      "excerpt": "But he has a fever who is angry, and in the unruliness of his anger stretches forth his hands to do hurt; but if reason restrains his hands, he will arise, and so serve reason.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0097",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.32",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:32",
+      "excerpt": "By this it is signified, that God will heal a sick man, if he ministers to the Saints, through love to Christ.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:bede:mark.1.32:ec3f9e4b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 1:32",
+      "excerpt": "But when evening had come and the sun had set, they brought to him, etc. The setting of the sun signifies the passion and death of him who said: \"As long as I am in the world, I am the light of the world\" (John IX). And when the sun sets, more demoniacs than before, more sick are healed. Because while temporarily living in the flesh, he taught a few Jews, but after the defeat of the kingdom of death, he transmitted the gifts of faith and salvation to all the peoples of the world. To whom the Psalmist sings as if to the heralds of life and light: \"Prepare the way for him who rides upon the sunset\" (Psalm LXVII). For the Lord ascends over the sunset, because from where he lay in suffering, from there he manifested his greater glory by rising.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.1.32"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.1.32:348be74f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 1:32",
+      "excerpt": "Not without reason was it added: \"when the sun was setting.\" Since they thought it was unlawful to heal on the Sabbath day, they waited for the setting of the sun and only then began bringing the sick for healing.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.1.32"
+    },
+    {
       "id": "catena-mark-0099",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.32",
@@ -174,6 +222,49 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:32",
       "excerpt": "For the fever means intemperance, from which, we the sons of the synagoguek, by the hand of discipline, and by the lifting up of our desires, are healed, and minister to the will of Him who heals us.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0109-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.32",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:32–34",
+      "excerpt": "But the door of the kingdom, morally, is repentance and faith, which works health for various diseases; for divers are the vices, with which the city of this world is sick.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.32:9987793e:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0107-v32",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.32",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:32–34",
+      "excerpt": "And Luke does not contradict this, when he says, that devils came out of many, crying out and saying, Thou art Christ the Son of God: (Luke 4:41) for he subjoins, And he rebuking them, suffered them not to speak; for Mark, who passes over many things for the sake of brevity, speaks about what happened subsequently to the abovementioned words.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -210,42 +301,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 1:32–34",
       "excerpt": "For the devils knew that He was the Christ, who had been promised by the Law: for they saw in Him all the signs, which had been foretold by the Prophets; but they were ignorant of His divinity, as also were their princes, for if they had known it, they would not have crucified the Lord of glory. (1 Cor. 2:8)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0107-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.32",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:32–34",
-      "excerpt": "And Luke does not contradict this, when he says, that devils came out of many, crying out and saying, Thou art Christ the Son of God: (Luke 4:41) for he subjoins, And he rebuking them, suffered them not to speak; for Mark, who passes over many things for the sake of brevity, speaks about what happened subsequently to the abovementioned words.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0109-v32",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.32",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:32–34",
-      "excerpt": "But the door of the kingdom, morally, is repentance and faith, which works health for various diseases; for divers are the vices, with which the city of this world is sick.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

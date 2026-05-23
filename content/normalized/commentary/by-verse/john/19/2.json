@@ -20,6 +20,13 @@
         "patristic",
         "tractate",
         "john"
+      ],
+      "provenance": [
+        "augustine-tractates-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.2:bf75fcbf:1"
       ]
     },
     {
@@ -38,35 +45,24 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.19.2:524237e1:0"
       ]
     },
     {
-      "id": "catena-john-2335-v2",
+      "id": "catena-john-2340-v2",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.2",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 19:1–5",
-      "excerpt": "Pilate having called Him the King of the Jews, they put the royal dress upon Him, in mockery.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-2337-v2",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.19.2",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 19:1–5",
-      "excerpt": "It was not at the command of the governor that they did this, but in order to gratify the Jews. For neither were they commanded by him to go to the garden in the night, but the Jews gave them money to go. He bore however all these insults silently. Yet do thou, when thou hearest of them, keep stedfastly in thy mind the King of the whole earth, and Lord of Angels bearing all these contumelies in silence, and imitate His example.",
+      "excerpt": "Hence it is apparent that these things were not done without Pilate’s knowledge, whether he commanded, or only permitted them, for the reason we have mentioned, viz. that His enemies seeing the insults heaped upon Him, might not thirst any longer for His blood: Then came Jesus forth, wearing the crown of thorns, and the purple robe: not the insignia of empire, but the marks of ridicule. And Pilate saith unto them, Behold the man! as if to say, If ye envy the King, spare the outcast. Ignominy overflows, let envy subside.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -95,6 +91,24 @@
       ]
     },
     {
+      "id": "catena-john-2337-v2",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.19.2",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 19:1–5",
+      "excerpt": "It was not at the command of the governor that they did this, but in order to gratify the Jews. For neither were they commanded by him to go to the garden in the night, but the Jews gave them money to go. He bore however all these insults silently. Yet do thou, when thou hearest of them, keep stedfastly in thy mind the King of the whole earth, and Lord of Angels bearing all these contumelies in silence, and imitate His example.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
       "id": "catena-john-2339-v2",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.2",
@@ -113,14 +127,14 @@
       ]
     },
     {
-      "id": "catena-john-2340-v2",
+      "id": "catena-john-2335-v2",
       "relation": "verse",
       "targetVerseId": "kjva:john.19.2",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 19:1–5",
-      "excerpt": "Hence it is apparent that these things were not done without Pilate’s knowledge, whether he commanded, or only permitted them, for the reason we have mentioned, viz. that His enemies seeing the insults heaped upon Him, might not thirst any longer for His blood: Then came Jesus forth, wearing the crown of thorns, and the purple robe: not the insignia of empire, but the marks of ridicule. And Pilate saith unto them, Behold the man! as if to say, If ye envy the King, spare the outcast. Ignominy overflows, let envy subside.",
+      "excerpt": "Pilate having called Him the King of the Jews, they put the royal dress upon Him, in mockery.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -128,6 +142,13 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:john.19.2:ec375a60:0"
       ]
     },
     {
@@ -146,7 +167,133 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:john.19.2:db22f7a6:0"
       ]
+    },
+    {
+      "id": "hcf:clement-of-alexandria:john.19.2:d456ddf5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "clement-of-alexandria",
+      "workId": "hcf:work:clement-of-alexandria:the-instructor-book-2",
+      "title": "The Instructor Book 2 on john 19:2",
+      "excerpt": "The Lord's crown of thorns prophetically pointed to us who once were barren but are placed around him through the church of which he is the head. But it is also a type of faith, of life in respect to the substance of the wood, of joy in respect to the appellation of crown, of danger in respect to the thorn. For there is no approaching the Word without blood.… They crowned Jesus raised up high, testifying to their own ignorance.… This crown is the flower of those who have believed on the glorified One, but it covers with blood and chastises those who have not believed. It is a symbol, too, of the Lord's successful work, he having borne on his head (the princely part of his body) all our iniquities by which we were pierced. For he by his own passion rescued us from offenses and sins and other thorns. And having destroyed the devil, deservedly said in triumph, \"O Death, where is your sting?\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c215"
+      ],
+      "targetVerseId": "kjva:john.19.2"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.19.2:4219c2f5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-12",
+      "title": "Commentary on the Gospel of John, Book 12 on john 19:2",
+      "excerpt": "He scourges Him unjustly, and suffers the crowd of soldiers to insult Him, and put a crown of thorns about His Head, and throw a purple robe upon Him, and buffet Him with the palms of their hands, and otherwise dishonour Him. For he thought he could easily put to shame the people of the Jews, if they saw the Man Who was altogether free from guilt suffering this punishment, only without a cause. He was scourged unjustly, that He might deliver us from merited chastisement; He was buffeted and smitten, that we might buffet Satan, who had buffeted us, and that we might escape from the sin that cleaves to us through the original transgression. For if we think aright, we shall believe that all Christ's sufferings were for us and on our behalf, and have power to release and deliver us from all those calamities we have deserved for our revolt from God. For as Christ, Who knew not death, when He gave up His own Body for our salvation, was able to loose the bonds of death for all mankind, for He, being One, died for all; so we must understand that Christ's suffering all these things for us sufficed also to release us all from scourging and dishonour. Then in what way by His stripes are we healed, according to the Scripture? Because we have all gone astray, every man after his own way, as says the blessed Prophet Isaiah; and the Lord hath given Himself up for our transgressions, and for us is afflicted. For He was bruised for our iniquities, and has given His own back to the scourge, and His cheeks to the smiters, as he also says. The soldiers indeed take Jesus as a pretender to the throne, and insult Him soldierlike. And for this cause was a crown of thorns brought and put upon His brow, being the symbol of earthly sovereignty; and the purple robe was, as it were, an image and type of royal apparel; and ridicule also was thereby heaped upon Him, for they came near unto Him, and cried, as the Evangelist says: Hail, King of the Jews!\r\n\r\nAnd I have heard some say, and to some the conceit is well-pleasing, that the crown of thorns further signifies the multitude of idol-worshippers who will be taken up by Christ, as it were, into a diadem, through faith in Him; and they liken the Gentiles to barren and useless thorns, through their bearing no fruit of piety, and being rather fit to feed consuming fire----just like rubbish in the fields, just as wild thicket, which grows up without any culture; and the royal apparel, I mean the purple robe, they say, means Christ's Kingdom, which will be extended over all the world. We may well receive any interpretation which is not alien to the truth, and which it is not unprofitable to believe in. We need not therefore reject such a construction of the passage, indicative as it is of careful ingenuity.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.19.2"
+    },
+    {
+      "id": "hcf:origen:john.19.2:ebf3dde1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-the-gospel-of-john-1-72-73",
+      "title": "COMMENTARY ON THE GOSPEL OF JOHN 1.72-73 on john 19:2",
+      "excerpt": "There are those who still have thorns with which they crown and dishonor Jesus, those, namely, who are choked by the cares and riches and pleasures of life and, though they have received the word of God, do not bring it to perfection. We must beware, therefore, lest we also, as crowning Jesus with thorns of our own, should be entered in the Gospel … and read how he is dishonored and mocked and beaten [by us].",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:john.19.2"
+    },
+    {
+      "id": "hcf:tertullian:john.19.2:5fe12eb1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:the-chaplet-9",
+      "title": "THE CHAPLET 9 on john 19:2",
+      "excerpt": "What patriarch, what prophet, what Levite, or priest or ruler, or at a later period what apostle, or preacher of the gospel or bishop do you ever find the wearer of a crown?… If, perhaps, you object that Christ himself was crowned, to that you will get the brief reply: Go ahead and be crowned like he was. You have my full permission.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.19.2"
+    },
+    {
+      "id": "hcf:tertullian:john.19.2:c374a0a6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:the-chaplet-13",
+      "title": "THE CHAPLET 13 on john 19:2",
+      "excerpt": "You belong to Christ for you have been enrolled in the books of life. There the blood of the Lord serves for your purple robe, and your broad stripe is his own cross.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:john.19.2"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.19.2:991a05b3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 19:2",
+      "excerpt": "Allow them to put a cloak on Him and place a crown on Him, also with the purpose of appeasing their anger.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.19.2"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.19.2:13d7bf18:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 19:2",
+      "excerpt": "2374 Now the Evangelist shows us Christ being ridiculed: first, the mock honors paid to him; secondly, the real dishonor showed him, and struck him. They pay him mock honors by calling him a king, thus adverting to the charge lodged by the Jews, who said that he made himself king of the Jews. Therefore, they pay him the three honors given to a king, but in a derisive way. First, we have a mock crown; and then mock clothing and acclamations.\r\n\r\n2375 They mock him with a crown, because it is customary for kings to wear a crown, a crown of gold: \"A crown of gold upon his head\" [Sir 45:12]. The Psalm (21:3) mentions this: \"Thou dost set a crown of fine gold upon his head.\" And the soldiers plaited a crown of thorns, and put it on his head, the head of him who is a crown of glory to those who belong to him: \"In that day the Lord of hosts will be a crown of glory, and a diadem of beauty, to the remnant of his people\" (Is 28:5). It was appropriately made of thorns, because by them he removes the thorns of sin, which pain us through remorse of conscience: \"Break up your fallow ground, and sow not among thorns\" (Jer 4:3). These thorns also take away the thorns of punishment which burden us: \"Thorns and thistles it shall bring forth to you\" (Gen 3:18).\r\n\r\nWas this crowning done by the governor's order? Chrysostom says that it was not, but that the soldiers were bribed with money and did this to satisfy the Jews. On the other hand, Augustine says that this was done by the command or the permission of the governor to the end that the hatred of the Jews would be satiated and Pilate could more easily release Jesus.\r\n\r\n2376 Secondly, they mock him with clothing. The soldiers... arrayed him in a purple robe, which was the sign of a royal dignity for the Romans. In 1 Maccabees (8:14) we read that when the Romans ruled they wore a crown and were clothed in purple. This clothing of Christ in purple fulfills the prophecy of Isaiah (63:2): \"Why is your apparel red, and your garments like his that treads in the wine press?\" At the same time it indicates the sufferings of the martyrs, which stains red the entire body of Christ, that is, the church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.19.2"
     }
   ]
 }

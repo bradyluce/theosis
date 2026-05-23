@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-matt-1563-v21",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.10.21",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 10:21–22",
-      "excerpt": "What follows is yet more dreadful, “Ye shall be hated of all men;” they sought to exterminate them as common enemies of all the world. To this again is added the consolation, “For my name’s sake;” and yet further to cheer them, “Whosoever shall endure to the end, he shall be saved.” For many are hot and zealous in the beginning, but afterwards grow cool, for these, He says, I look at the end. For where is the profit of seeds that only sprout at first? wherefore He requires a sufficient endurance from them.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-1564-v21",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.10.21",
@@ -55,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.10.21:1b92fece:0"
       ]
     },
     {
@@ -66,6 +55,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 10:21–22",
       "excerpt": "But that no man should say, that Christ wrought all things in His Apostles, and therefore it is nothing wonderful that they were made such as they were, since they did not bear the burden of these things, therefore He says, that perseverance was their work. For though they were rescued from their first perils, they are preserved for still harder trials, which again shall be followed by others, and they shall be in danger of snares as long as they live. This He covertly intimates when he says, “Whosoever shall endure to the end, he shall be saved.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-1563-v21",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.10.21",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 10:21–22",
+      "excerpt": "What follows is yet more dreadful, “Ye shall be hated of all men;” they sought to exterminate them as common enemies of all the world. To this again is added the consolation, “For my name’s sake;” and yet further to cheer them, “Whosoever shall endure to the end, he shall be saved.” For many are hot and zealous in the beginning, but afterwards grow cool, for these, He says, I look at the end. For where is the profit of seeds that only sprout at first? wherefore He requires a sufficient endurance from them.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -109,6 +116,38 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:matthew.10.21:2c421ed1:0"
+      ]
+    },
+    {
+      "id": "catena-matt-1567-v21",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.10.21",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 10:21–22",
+      "excerpt": "That is, He who shall not let go the commands of the faith, nor fall away in persecution, shall be saved; he shall receive the reward of the heavenly kingdom for his earthly persecutions. And note that ‘the end’ does not always mean destruction, but sometimes perfection, as in that, “Christ is the end of the Law.” Rom 10:4 So the sense here may be, “Whosoever shall endure to the end,” that is, in Christ.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.10.21:1c9daeda:0"
       ]
     },
     {
@@ -130,22 +169,157 @@
       ]
     },
     {
-      "id": "catena-matt-1567-v21",
+      "id": "hcf:gregory-the-great:matthew.10.21:1c8109db:0",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.10.21",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 10:21–22",
-      "excerpt": "That is, He who shall not let go the commands of the faith, nor fall away in persecution, shall be saved; he shall receive the reward of the heavenly kingdom for his earthly persecutions. And note that ‘the end’ does not always mean destruction, but sometimes perfection, as in that, “Christ is the end of the Law.” Rom 10:4 So the sense here may be, “Whosoever shall endure to the end,” that is, in Christ.",
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-35",
+      "title": "Forty Gospel Homilies, Homily 35 on matthew 10:21",
+      "excerpt": "\"But you will be betrayed by parents and brothers, and relatives and friends, and they will put some of you to death.\" Evils inflicted by strangers cause lesser pain. But those torments rage more fiercely within us which we suffer from those in whose minds we had confidence, because along with bodily harm, the evils of lost love torment us. Hence it is that the Lord says through the Psalmist concerning Judas His betrayer: \"Indeed if my enemy had cursed me, I would have borne it; and if he who hated me had spoken great things against me, I would certainly have hidden myself from him. But you, a man of one mind with me, my guide and my acquaintance, who took sweet food together with me, we walked in the house of God with agreement.\" As if He says in plain words about His betrayer: I bore his transgression all the more gravely because I perceived it from one who seemed to be mine.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:jerome:matthew.10.21:0805f52a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:21",
+      "excerpt": "(Verse 21) But brother will betray brother to death, and father his child, and children will rise against parents and have them put to death. And you will be hated by all because of my name. We frequently see this happening in persecutions: there is no loyal affection among them, for they have different beliefs.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.10.21:b6e4084c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-33",
+      "title": "Homily on the Gospel of Matthew 33 on matthew 10:21",
+      "excerpt": "And what follows again is much more fearful, since men are to become on our account murderers of brothers, of children, of fathers.\r\n\r\n\"For the brother,\" saith He, \"shall deliver up the brother to death, and the father the child; and children shall rise up against their parents, and cause them to be put to death.\"\r\n\r\n\"How, then,\" one might say, \"will the rest of men believe, when they see on our account, children slain by their fathers, and brethren by brethren, and all things filled with abominations?\" What? will not men, as though we were destructive demons, will they not, as though we were devoted, and pests of the world, drive us out from every quarter, seeing the earth filled with blood of kinsmen, and with so many murderers? Surely fair is the peace (is it not?) which we are to bring into men's houses and give them, while we are filling those houses with so many slaughters. Why, had we been some great number of us, instead of twelve; had we been, instead of \"unlearned and ignorant,\" wise, and skilled in rhetoric, and mighty in speech; nay more, had we been even kings, and in possession of armies and abundance of wealth; how could we have persuaded any, while kindling up civil wars, yea, and other wars far worse than they? Why, though we were to despise our own safety, which of all other men will give heed to us?\"\r\n\r\nBut none of these things did they either think or say, neither did they require any account of His injunctions, but simply yielded and obeyed.\r\n\r\n\"For the brother shall deliver up the brother,\" saith He, \"to death, and the father the child, and the children shall rise up against their parents, and cause them to be put to death.\"\r\n\r\nAnd not even at this did He stop, but added also what was greatly more fearful, and enough to shiver a rock to pieces: \"And ye shall be hated of all men.\" And here again the consolation is at the doors, for, \"For my name's sake,\" saith He, \"ye shall suffer these things.\" And with this again another, \"But he that endureth to the end, the same shall be saved.\"\r\n\r\nAnd these things in another point of view likewise were sufficient to rouse up their spirits; since at any rate the power of their gospel was to blaze up so high, as that nature should be despised, and kindred rejected, and the Word preferred to all, chasing all mightily away. For if no tyranny of nature is strong enough to withstand your sayings, but it is dissolved and trodden under foot, what else shall be able to get the better of you? Not, however, that your life will be in security, because these things shall be; but rather ye will have for your common enemies and foes them that dwell in the whole world.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.10.21:053e7198:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-33",
+      "title": "Homily on the Gospel of Matthew 33 on matthew 10:21",
+      "excerpt": "But do thou also admire them, how when it was said to them, \"Take no thought,\" they yet believed, and accepted it, and none of the terrors amazed them. And if thou say, He gave them encouragement enough, by saying, \"It shall be the Spirit of your Father that shall speak;\" even for this am I most amazed at them, that they doubted not, nor sought deliverance from their perils; and this, when not for two or three years were they to suffer these things, but all their life long. For the saying, \"He that endureth to the end, the same shall be saved,\" is an intimation of this.\r\n\r\nFor His will is, that not His part only should be contributed, but that the good deeds should be also done of them. Mark, for instance, how from the first, part is His, part His disciples'. Thus, to do miracles is His, but to provide nothing is theirs. Again, to open all men's houses, was of the grace from above; but to require no more than was needful, of their own self-denial. \"For the workman is worthy of his hire.\" Their bestowing peace was of the gift of God, their inquiring for the worthy, and not entering in without distinction unto all, of their own self command. Again, to punish such as received them not was His, but to retire with gentleness from them, without reviling or insulting them, was of the apostles' meekness. To give the Spirit, and cause them not to take thought, was of Him that sent them, but to become like sheep and doves, and to bear all things nobly, was of their calmness and prudence. To be hated and not to despond, and to endure, was their own; to save them that endured, was of Him who sent them.\r\n\r\nWherefore also He said, \"He that endureth to the end, the same shall be saved.\" That is, because the more part are wont at the beginning indeed to be vehement, but afterwards to faint, therefore saith He, \"I require the end.\" For what is the use of seeds, flourishing indeed at first, but a little after fading away? Therefore it is continued patience that He requires of them. I mean, lest any say, He wrought the whole Himself, and it was no wonder that they should prove such, suffering as they did nothing intolerable; therefore He saith unto them, \"There is need also of patience on your part. For though I should rescue you from the first dangers, I am reserving you for others more grievous, and after these again others will succeed; and ye shall not cease to have snares laid for you, so long as ye have breath.\" For this He intimated in saying, \"But he that endureth to the end, the same shall be saved.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.10.21:7a8c4e4e:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-46",
+      "title": "Homily on the Gospel of Matthew 46 on matthew 10:21",
+      "excerpt": "And these things Christ saith, instructing us to be always wakeful. For, saith He, though thou quite escape those harms, there is yet another harm. For as in those instances \"the wayside,\" and \"the rock,\" and \"the thorns,\" so here again sleep occasions our ruin; so that there is need of continual watchfulness. Wherefore He also said, \"He that endureth to the end, the same shall be saved.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.10.21:868a73d9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-10-12",
+      "title": "Commentary on Matthew 10.12 on matthew 10:21",
+      "excerpt": "This entire saying of the Lord refers to the Jews and the heretics: \"Brother will deliver up brother to death, and the father his child, and children will rise against parents.\" The family in a single house will disagree among themselves. This means that whereas the people were formerly united (for the \"people\" is meant under the names of parents and relatives), we will now be exposed to vicious hatred. We will be offered up to earthly judges and kings, who attempt to secure either our silence or our cooperation. For we are to bear testimony to these people and to the Gentiles, and after that testimony has been borne, our persecutors will be deprived of the excuse that they are ignorant of divine things. When Christ has been prophesied by the words of the martyrs amid the tortures of savage persecutors, the way will be open for the Gentiles to believe in him, though they remain stubborn.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:tertullian:matthew.10.21:089e10a7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:scorpiace",
+      "title": "Scorpiace on matthew 10:21",
+      "excerpt": "\"Think not that I am come to send peace on earth, but a sword,\"-undoubtedly on the earth. \"For I am come to set a man at variance against his father, and the daughter against her mother, and the mother-in-law against her daughter-in-law. And a man's foes shall be they of his own household.\" For so is it brought to pass, that the brother delivers up the brother to death, and the father the son: and the children rise up against the parents, and cause them to die. And he who endureth to the end let that man be saved. So that this whole course of procedure characteristic of the Lord's sword, which has been sent not to heaven, but to earth, makes confession also to be there, which by enduring to the end is to issue in the suffering of death.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.10.21:8a5194e3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:21",
+      "excerpt": "\"And the brother shall deliver up the brother to death, and the father the child: and the children shall rise up against their parents, and cause them to be put to death.\" He foretells to them the things that will happen, so that when they occur the disciples will not be dismayed. He also shows them the power of the Gospel that is preached, how it causes men to hold in contempt nature itself, for such is Christianity. He also reveals the inhuman rage of those who will not spare even their closest kin.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.10.21:b4dc6dae:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 10:21",
+      "excerpt": "But the apostles could say: Who will deliver us up? We have no enmities. First therefore he shows by whom they will be delivered up; secondly, he proffers consolation (v. 22b).\r\n\r\nSince someone can wickedly be on guard against persecution foretold to him in a general way only, he foretells it in particular. And he says two things in regard to the first: brother will deliver up brother. Sometimes it has literally happened that a father delivered up a son, and conversely; and a brother, his brother, either out of fear or hatred. For such is the virtue of faith that between men not of the same faith a strong friendship is hardly possible. And that is what he says: brother will deliver up brother... Hence it says in Jeremiah (9:4): \"Let everyone put no trust in his brother.\" And for this reason it is necessary that they beware both on account of the harm a man suffers and on account of the loss of friendship: \"If my enemy had taunted me, I would have stood it\" (Ps 55:12). But there is more, because you are not going to acquaintances but to strangers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.10.21"
     },
     {
       "id": "catena-matt-1560-v21",
@@ -163,6 +337,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.10.21:74fd3147:0"
       ]
     }
   ]

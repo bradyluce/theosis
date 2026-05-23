@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.15.31:bb27a3c9:1"
       ]
     },
     {
@@ -76,22 +83,73 @@
       ]
     },
     {
-      "id": "catena-mark-1327-v31",
+      "id": "hcf:theophylact-of-ohrid:mark.15.31:97d22b2e:1",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.15.31",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 15:29–32",
-      "excerpt": "The foal of Judah (Gen. 49:11.) has been tied to the vine, and his clothes dyed in the blood of the grape, and the kids tear the vine, blaspheming Christ, and wagging their heads. Wherefore it is said: And they that passed by railed on him, wagging their heads, and saying, Ah, thou that destroyest the temple.",
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 15:31",
+      "excerpt": "Likewise also the Chief Priests mocking said among themselves with the Scribes, He saved others, himself he cannot save. They said this, to do away with His miracles, as though those which He had done were but the semblance of them, for by working miracles He saved many.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.15.31"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.15.31:04601201:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 15:31",
+      "excerpt": "Since the Lord, by working miracles, had saved many, the chief priests, like the passersby, also said: He saved others, but He cannot save Himself? They said this mocking His miracles and considering them illusory apparitions.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.15.31"
+    },
+    {
+      "id": "hcf:bede:mark.15.31:cd53fc9c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 15:31",
+      "excerpt": "Similarly, the chief priests, mocking, said to one another with the scribes: He saved others, etc. Even unwillingly, the scribes and priests confess that He saved others. Therefore, your own judgment condemns you. For He who saved others could indeed, if He willed, save Himself.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.15.31"
+    },
+    {
+      "id": "hcf:augustine:mark.15.31:3136f365:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermons-on-the-gospels-138-6",
+      "title": "SERMONS ON THE GOSPELS 138.6 on mark 15:31",
+      "excerpt": "Such he appeared on the cross, such when crowned with thorns did he exhibit himself, disfigured, and without comeliness, as if he had lost his power, as if not the Son of God. Such did he seem to the blind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.15.31"
     },
     {
       "id": "catena-mark-1330-v31",
@@ -102,6 +160,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 15:29–32",
       "excerpt": "Afterwards they saw Him arise from the grave, though they would not believe that He could come down from the tree of the Cross. Where, O Jews, is your lack of faith? Your own selves I appeal to; your own selves I bring as judges. How much more wonderful is it that a dead man should arise, than that one yet living should choose to come down from the cross. Ye asked but small things, till greater should have come to pass; but your want of faith could not be healed by signs much greater than those for which you sought. Here all have gone out of the way, all are become abominable. (Ps. 14:4)…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1327-v31",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.15.31",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 15:29–32",
+      "excerpt": "The foal of Judah (Gen. 49:11.) has been tied to the vine, and his clothes dyed in the blood of the grape, and the kids tear the vine, blaspheming Christ, and wagging their heads. Wherefore it is said: And they that passed by railed on him, wagging their heads, and saying, Ah, thou that destroyest the temple.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

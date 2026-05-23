@@ -37,6 +37,38 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.56:4e9da50e:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0497-v56",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.56",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:53–56",
+      "excerpt": "For they did not call Him to their houses that He might heal them, but rather the sick themselves were brought to Him. Wherefore it also follows, And whithersoever he entered into villages, or cities, or country, &c. For the miracle which had been wrought on the woman with an issue of blood, had reached the ears of many, and caused in them that great faith, by which they were healed. It goes on, And as many as touched him were made whole.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.56:12f78a58:1"
       ]
     },
     {
@@ -58,22 +90,55 @@
       ]
     },
     {
-      "id": "catena-mark-0497-v56",
+      "id": "hcf:theophylact-of-ohrid:mark.6.56:051f61fe:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.6.56",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:53–56",
-      "excerpt": "For they did not call Him to their houses that He might heal them, but rather the sick themselves were brought to Him. Wherefore it also follows, And whithersoever he entered into villages, or cities, or country, &c. For the miracle which had been wrought on the woman with an issue of blood, had reached the ears of many, and caused in them that great faith, by which they were healed. It goes on, And as many as touched him were made whole.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:56",
+      "excerpt": "They did not yet invite Him into their homes, but themselves brought the sick, beseeching to touch even the hem of His garment. For the miracle performed on the woman with the issue of blood had come to the knowledge of all and produced in them an even greater faith.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.56"
+    },
+    {
+      "id": "hcf:bede:mark.6.56:4479d0c0:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:56",
+      "excerpt": "And wherever he entered into villages, cities, or the countryside, they laid the sick in the marketplaces and begged him to let them touch even the fringe of his garment. And all who touched him were healed. Those who are unwell should not touch the body of Jesus, nor his whole garment, but the outermost fringe. And whoever touches it will be healed. Understand the fringe of his garment as the least commandment, which if anyone breaks, he will be called least in the kingdom of heaven: or the assumption of flesh by which we come to the word of God, and afterwards enjoy his majesty.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.56"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:mark.6.56:4b0034d7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:exposition-of-the-christian-faith-4-5-54-55",
+      "title": "Exposition of the Christian Faith 4.5.54-55 on mark 6:56",
+      "excerpt": "The Lord of hosts was not signaling weakness as he gave sight to the blind, made the crooked to stand upright, raised the dead to life, anticipated the effects of medicine at our prayers, and cured those who sought after him. Those who merely touched the fringe of his robe were healed. Surely you did not think it was some divine weakness, you speculators, when you saw him wounded. Indeed there were wounds that pierced his body, but they did not demonstrate weakness but strength. For from these wounds flowed life to all, from the One who was the life of all.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397"
+      ],
+      "targetVerseId": "kjva:mark.6.56"
     },
     {
       "id": "catena-mark-0494-v56",
@@ -109,6 +174,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.6.56:006f29e3:0"
       ]
     }
   ]

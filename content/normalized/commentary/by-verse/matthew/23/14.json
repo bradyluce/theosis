@@ -20,24 +20,13 @@
         "patristic",
         "homily",
         "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3304",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.14",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:14",
-      "excerpt": "Next the Lord rebukes them for their g1uttony, and what was the worst, that not from the rich but from widows they took wherewith to fill their bellies, thus burdening the poverty of those whom they should have relieved.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
+      ],
+      "provenance": [
+        "chrysostom-homilies-on-matthew-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:matthew.23.14:0f0ff16c:0"
       ]
     },
     {
@@ -49,6 +38,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 23:14",
       "excerpt": "The manner of this plundering is grievous, for they make long prayers. Every one who does evil deserves punishment; but be who takes occasion for his offence from religion, deserves more severe punishment; “Therefore ye shall receive the greater damnation.”",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3304",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.14",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:14",
+      "excerpt": "Next the Lord rebukes them for their g1uttony, and what was the worst, that not from the rich but from widows they took wherewith to fill their bellies, thus burdening the poverty of those whom they should have relieved.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -74,7 +81,118 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.23.14:ffe8a63b:0"
       ]
+    },
+    {
+      "id": "hcf:gloss-ordinaria:matthew.23.14:f46e5e1a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "hcf:work:gloss-ordinaria:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 23:14",
+      "excerpt": "(interlin.) Devour widows' houses, that is, your superstitions have this only aim, namely, to make a gain of the people that is put under you.\r\n\r\n(interlin. Luke 12:47.) Or, because the servant that knew his Lord's will and did it not, shall he beaten with many stripes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.23.14"
+    },
+    {
+      "id": "hcf:hilary-poitiers:matthew.23.14:a72dd43c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hilary-poitiers",
+      "workId": "hcf:work:hilary-poitiers:commentary-on-matthew-24-4",
+      "title": "Commentary on Matthew 24.4 on matthew 23:14",
+      "excerpt": "These are the poisoners of truth. They are reluctant to undertake the salvation of others. They bolt shut the kingdom of heaven. In their ambition they \"devour widows' houses and for pretense make long prayers.\" By this acquaintance with heaven (achieved with those long prayers), they expect they will persevere in the merits of grace quietly, just as a rich person expects to receive the treasure stored up for him. However, they will receive ample judgment and punishment for their particular sins. They will be called to account for their strange and ignorant practices.",
+      "takeaway": "",
+      "sourceId": "hcf:source:archive-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c367"
+      ],
+      "targetVerseId": "kjva:matthew.23.14"
+    },
+    {
+      "id": "hcf:jerome:matthew.23.14:96c9ca7a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:14",
+      "excerpt": "(Ver. 13, 14.) But woe to you, scribes and Pharisees, hypocrites! For you shut the kingdom of heaven in people's faces. For you neither enter yourselves nor allow those who would enter to go in. Woe to you, scribes and Pharisees, hypocrites! For you devour widows' houses and for a pretense you make long prayers; therefore you will receive the greater condemnation. The scribes and Pharisees have knowledge of the Law and the Prophets, and they know that Christ is the Son of God; they are not ignorant that He was born of a Virgin. But while they seek to prey on the subject people, they themselves do not enter the kingdom of heaven, nor do they allow those who could enter to do so. This is what the Prophet Hosea accuses: The priests have hidden the way, they have murdered Shechem (Hosea 6:9). And again: The priests have not said, 'Where is the Lord?' (Hosea 4). Indeed, every teacher who scandalizes his disciples with evil deeds shuts the kingdom of heaven before them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.23.14"
+    },
+    {
+      "id": "hcf:origen:matthew.23.14:3d4b5416:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 23:14",
+      "excerpt": "The Pharisees and the Scribes then would neither enter in, nor hear Him who said, By me if any man enter in he shall be saved; (John 10:9.) nor would they suffer those to enter in, who were able to have believed through the things which had been spoken before by the Law and the Prophets concerning Christ, but shut up the door with every kind of device to deter men from entering. Also they detracted from His teaching, denied all prophecy concerning Him, and blasphemed every miracle as deceitful, or wrought by the Devil. All who in their evil conversation set an example of sinning to the people, and who commit injustice, offending the weak, seem to shut up the kingdom of heaven before men. And this sin is found among the people, and chiefly among the doctors, when they teach men what the Gospel righteousness requires of them, but do not what they teach. But those who both teach and live well open to men the kingdom of heaven, and both enter in themselves, and invite others to enter in. Many also will not suffer those who are willing to enter into the kingdom of heaven, when they without reason excommunicate out of jealousy others who are better than themselves; thus they refuse them entrance, but these of sober spirit, overcoming by their patience this tyranny, although forbidden, yet enter in and inherit the kingdom. Also they who with much rashness have set themselves to the profession of teaching before they have learned, and following Jewish fables, detract from those who search out the higher things of Scripture; these do, as far as in them lies, shut out men from the kingdom of heaven.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.23.14"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.23.14:512f011a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:14",
+      "excerpt": "He calls them hypocrites for professing piety and doing nothing worthy of what they profess, but instead, they would make pretence of long prayer and would devour the widows' means. Indeed they were mockers who deceived the simple and like leeches sucked them dry. \"Therefore ye shall receive the greater damnation\" because you have devoured everything the widows have, when instead you should have provided for them and relieved their poverty. There is yet another reason why their condemnation will be greater: they prayed pretending to do good while they were in fact doing something evil, that is, devouring the widows' means. For he who lures another into harm by pretending to be good deserves the greatest punishment.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.23.14"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.23.14:76aa59a3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 23:14",
+      "excerpt": "Woe to you (...) who devour the houses of widows, praying long prayers. This is the second woe, in which the pretense regarding prayer is touched upon. And first he rebukes their voracity, when he says, who devour the houses of widows, because whatever they did, they twisted entirely to gluttony, so that what is said in 2 Maccabees 6:4 applied to them, that the whole temple was full of debauchery and feasting. The houses of widows, i.e., the resources of widows. But why the houses of widows rather than of others? The reason is that they aimed more at seducing women, because men are wiser and more discreet, and are not so quickly deceived. Likewise, women have a more ready inclination toward giving; 1 Timothy 2:10: but that which becomes women professing godliness through good works. Likewise, the houses of widows, because a woman who has a husband has him as her head and counselor, and therefore is not so easily deceived. Likewise, a married woman does not have control of her house, but a widow does; therefore she can give more than a married woman, and therefore they made more profit from them than from others, when it was rather the case that they should have been giving to them; hence that passage in Psalm 93:6 applies well to them: they have slain the widow and the stranger. And this in prayer. Praying long prayers, on account of the pretense of sanctity: and so they twisted prayer toward profit, and profit toward glory. Hence they could be reproved because they were gluttonous, because they were despoilers, and likewise because they pretended sanctity; and therefore it follows, and for this you shall receive the greater judgment, i.e., you sin more greatly. And why? Because if someone robs by the weapons of the devil, he sins; and if by the weapons of God, he sins doubly, because he sins against God and against his neighbor. Or greater, etc., because you receive from those to whom you ought to be giving. Or greater, as it says in Luke 12:47: the servant who knew the will of his lord and did not do it shall be beaten with many stripes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.23.14"
     },
     {
       "id": "catena-matt-3305",
@@ -85,6 +203,24 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 23:14",
       "excerpt": "“Devour widows’ houses,” that is, your superstitions have this only aim, namely, to make a gain of the people that are put under you.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3310",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.23.14",
+      "topicSlugs": [],
+      "personId": "gloss-ordinaria",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 23:14",
+      "excerpt": "Or, because “the servant that knew his Lords will and did it not, shall be beaten with many stripes.” Luke 12:47",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,
@@ -110,6 +246,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.23.14:2090551f:0"
       ]
     },
     {
@@ -121,24 +264,6 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 23:14",
       "excerpt": "First, for that ye are wicked, and then because ye put on the cloak of sanctity. Your covetousness you dress up in the colour of religion, and use God’s arms in the Devil’s service, that iniquity may be loved while it is thought to be piety.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3310",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.23.14",
-      "topicSlugs": [],
-      "personId": "gloss-ordinaria",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 23:14",
-      "excerpt": "Or, because “the servant that knew his Lords will and did it not, shall be beaten with many stripes.” Luke 12:47",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 55,

@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.7.26:3de3f8eb:0"
       ]
     },
     {
@@ -76,6 +83,60 @@
       ]
     },
     {
+      "id": "catena-mark-0539-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.26",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "He calls the Gentiles dogs, as being thought wicked by the Jews; and He means by bread, the benefit which the Lord promised to the children, that is, to the Jews. The sense therefore is, that it is not right for the Gentiles first to be partakers of the benefit, promised principally to the Jews. The reason, therefore, why the Lord does not immediately hear, but delays His grace, is, that He may also shew that the faith of the woman was firm, and that we may learn not at once to grow weary in prayer, but to continue earnest till we obtain.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0546-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.26",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "The soul of each of us also, when he falls into sin, becomes a woman; and this soul has a daughter who is sick, that is, evil actions; this daughter again has a devil, for evil actions arise from devils. Again, sinners are called dogs, being filled with uncleanness. For which reason we are not worthy to receive the bread of God, or to be made partakers of the immaculate mysteries of God; if however in humility, knowing ourselves to be dogs, we confess our sins, then the daughter, that is, our evil life, shall be healed.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0543-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.26",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "Because therefore the woman answered with much wisdom, she obtained what she wanted; wherefore there follows, And he said unto her, &c. He said not, My virtue hath made thee whole, but for this saying, that is, for thy faith, which is shewn by this saying, go thy way, the devil is gone out of thy daughter. It goes on, And when she was come into her house, she found her daughter laid upon the bed, and the devil gone out.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0529-v26",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.26",
@@ -112,24 +173,6 @@
       ]
     },
     {
-      "id": "catena-mark-0539-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.26",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "He calls the Gentiles dogs, as being thought wicked by the Jews; and He means by bread, the benefit which the Lord promised to the children, that is, to the Jews. The sense therefore is, that it is not right for the Gentiles first to be partakers of the benefit, promised principally to the Jews. The reason, therefore, why the Lord does not immediately hear, but delays His grace, is, that He may also shew that the faith of the woman was firm, and that we may learn not at once to grow weary in prayer, but to continue earnest till we obtain.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0541-v26",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.26",
@@ -148,40 +191,72 @@
       ]
     },
     {
-      "id": "catena-mark-0543-v26",
+      "id": "hcf:theophylact-of-ohrid:mark.7.26:80f072fd:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.7.26",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "Because therefore the woman answered with much wisdom, she obtained what she wanted; wherefore there follows, And he said unto her, &c. He said not, My virtue hath made thee whole, but for this saying, that is, for thy faith, which is shewn by this saying, go thy way, the devil is gone out of thy daughter. It goes on, And when she was come into her house, she found her daughter laid upon the bed, and the devil gone out.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 7:26",
+      "excerpt": "The aforementioned woman, having heard about Him, displays a fervent faith. Therefore the Lord does not immediately consent to her request, but delays the gift in order to show that the woman's faith is firm and that she waits patiently despite the refusal. Let us also learn not to abandon prayer at once when we do not immediately receive what we ask for, but to continue praying patiently until we receive what we ask.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.7.26"
     },
     {
-      "id": "catena-mark-0546-v26",
+      "id": "hcf:bede:mark.7.26:8b36c7e3:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.7.26",
       "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "The soul of each of us also, when he falls into sin, becomes a woman; and this soul has a daughter who is sick, that is, evil actions; this daughter again has a devil, for evil actions arise from devils. Again, sinners are called dogs, being filled with uncleanness. For which reason we are not worthy to receive the bread of God, or to be made partakers of the immaculate mysteries of God; if however in humility, knowing ourselves to be dogs, we confess our sins, then the daughter, that is, our evil life, shall be healed.",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 7:26",
+      "excerpt": "And she asked, he said, him to cast out the demon from her daughter. He said to her: Let the children be filled first. As if he was speaking more clearly: It remains that even you who are of the Gentiles will attain salvation; but first it is necessary that the Jews, who by merit of the ancient election are accustomed to be called by the name of the children of God, be filled with the heavenly bread, and thus finally the food of life be given to the Gentiles.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.7.26"
+    },
+    {
+      "id": "hcf:john-chrysostom:mark.7.26:68aab46f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-24-on-ephesians",
+      "title": "HOMILY 24, ON EPHESIANS on mark 7:26",
+      "excerpt": "Have you not heard of the Syrophoenician woman? By the constancy of her entreaty, she elicited the Lord's compassion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-24-on-ephesians",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:mark.7.26"
+    },
+    {
+      "id": "hcf:tertullian:mark.7.26:dd937e52:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-apparel-of-women-1-2",
+      "title": "ON THE APPAREL OF WOMEN 1.2 on mark 7:26",
+      "excerpt": "For you, as women, have the very same angelic nature promised as your reward, the very same sexual respect as men. You have the same dignity in making moral judgments. This the Lord promises to women.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.7.26"
     },
     {
       "id": "catena-mark-0530-v26",
@@ -192,6 +267,85 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 7:24–30",
       "excerpt": "Tyre and Sidon were places of the Canaanites, therefore the Lord comes to them, not as to His own, but as to men, who had nothing in common with the fathers to whom the promise was made. And therefore He comes in such a way, that His coming should not be known to the Tyrians and Sidonians. Wherefore it continues: And entered in to a house, and would have no man know it. For the time had not come for His dwelling with the Gentiles and bringing them to the faith, for this was not to be, till after His cross and resurrection.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0540-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.26",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "In like manner also to shew the Jews that He did not confer healing on foreigners in the same degree as to them, and that by the discovery of the woman's faith, the unfaithfulness of the Jews might be the more laid bare. For the woman did not take it ill, but with much reverence assented to what the Lord had said. Wherefore it goes on, And she answered and said unto him, Truth, Lord, but the dogs under the table eat of the children's crumbs.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0535-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.26",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "Now by this the Lord wished to shew His disciples that He opened the door of faith even to the Gentiles, wherefore also the nation of the woman is described when it is added, The woman was a Gentile, a Syrophenician by nation, that is, from Syria of Phænice. It goes on: And she besought him that he would cast forth the devil out of her daughter.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.7.26:2b3ef86c:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0538-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.26",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "These words He uttered not that there is in Him a deficiency of virtue, to prevent His ministering to all, but because His benefit, if ministered to both Jews and Gentiles who had no communication with each other, might be a cause of jealousy.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-0542-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.7.26",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 7:24–30",
+      "excerpt": "Her placing herself therefore in the rank of dogs is a mark of her reverence; as if she said, I hold it as a favour to be even in the position of a dog, and to eat not from another table, but from that of the Master himself.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -238,78 +392,6 @@
       ]
     },
     {
-      "id": "catena-mark-0535-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.26",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "Now by this the Lord wished to shew His disciples that He opened the door of faith even to the Gentiles, wherefore also the nation of the woman is described when it is added, The woman was a Gentile, a Syrophenician by nation, that is, from Syria of Phænice. It goes on: And she besought him that he would cast forth the devil out of her daughter.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0538-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.26",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "These words He uttered not that there is in Him a deficiency of virtue, to prevent His ministering to all, but because His benefit, if ministered to both Jews and Gentiles who had no communication with each other, might be a cause of jealousy.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0540-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.26",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "In like manner also to shew the Jews that He did not confer healing on foreigners in the same degree as to them, and that by the discovery of the woman's faith, the unfaithfulness of the Jews might be the more laid bare. For the woman did not take it ill, but with much reverence assented to what the Lord had said. Wherefore it goes on, And she answered and said unto him, Truth, Lord, but the dogs under the table eat of the children's crumbs.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0542-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.7.26",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 7:24–30",
-      "excerpt": "Her placing herself therefore in the rank of dogs is a mark of her reverence; as if she said, I hold it as a favour to be even in the position of a dog, and to eat not from another table, but from that of the Master himself.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0545-v26",
       "relation": "verse",
       "targetVerseId": "kjva:mark.7.26",
@@ -325,6 +407,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.7.26:d275ddf7:0"
       ]
     }
   ]

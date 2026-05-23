@@ -19,6 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.3.20:89fe8c25:1"
       ]
     },
     {
@@ -33,6 +40,24 @@
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-0522-v20",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.3.20",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 3:18–20",
+      "excerpt": "And as in the Gospel according to St. John it is related of Christ that He spoke many other things, so also in this place we must understand Luke to say the same of John the Baptist, since certain things are announced by John too great to be entrusted to writing. But we marvel at John, because among them that are born of women there was not a greater than he, for by his good deeds he had been exalted to so high a fame for virtue, that by many he was supposed to be Christ. But what is much more marvellous he feared not Herod, nor dreaded death, as it follows, But Herod the tetrarch being…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -76,22 +101,55 @@
       ]
     },
     {
-      "id": "catena-luke-0522-v20",
+      "id": "hcf:origen:luke.3.20:4e96d4bb:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.3.20",
       "topicSlugs": [],
       "personId": "origen",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 3:18–20",
-      "excerpt": "And as in the Gospel according to St. John it is related of Christ that He spoke many other things, so also in this place we must understand Luke to say the same of John the Baptist, since certain things are announced by John too great to be entrusted to writing. But we marvel at John, because among them that are born of women there was not a greater than he, for by his good deeds he had been exalted to so high a fame for virtue, that by many he was supposed to be Christ. But what is much more marvellous he feared not Herod, nor dreaded death, as it follows, But Herod the tetrarch being…",
+      "workId": "hcf:work:origen:homilies-on-the-gospel-of-luke-27-4",
+      "title": "HOMILIES ON THE GOSPEL OF LUKE 27.4 on luke 3:20",
+      "excerpt": "Notice that even while in prison he is teaching. For he also had his disciples in that place. Why did they stay there, unless John exercised the office of teacher even in prison and taught them with divine words? In the course of these words, a question about Jesus arose. John sends some of his disciples and asks, \"Are you he who is to come, or do we wait for another?\" The disciples return and announce to the teacher what the Savior had bidden them to say. With Jesus' words, John was armed for battle. He died confidently and was beheaded without resistance, strengthened by the words of the Lord himself and believing that he in whom he believed was truly the Son of God. This is what we have to say about John, and his freedom, and about Herod's madness. To his many other crimes he also added this one: he first shut John in prison and afterward beheaded him.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:luke.3.20"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.3.20:2f8bb2bc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 3:20",
+      "excerpt": "The Evangelist aptly inserted here the account concerning Herod. He speaks as if to say: although the people thought very highly of John, Herod, \"being reproved by him,\" to all his evil deeds \"added this also, that he shut him up in prison.\" He narrates as if with deep sorrow and strong compassion that Herod dealt so unjustly with John, while the people held him in high regard.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.3.20"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:luke.3.20:63d79b9b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-3-24",
+      "title": "ECCLESIASTICAL HISTORY 3.24 on luke 3:20",
+      "excerpt": "Luke too, before beginning the acts of Jesus, makes a similar observation, saying that Herod added one more offense to his other crimes by shutting up John in jail.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-3-24",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:luke.3.20"
     },
     {
       "id": "catena-luke-0525-v20",
@@ -109,6 +167,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.3.20:e7dfe98f:0"
       ]
     }
   ]

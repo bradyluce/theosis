@@ -4,24 +4,6 @@
   "verseNumber": 27,
   "entries": [
     {
-      "id": "catena-luke-2710-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.18.27",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:24–30",
-      "excerpt": "Abraham indeed possessed wealth for the poor. And all they who righteously possess it, spend it as receiving it from God, according to the divine command, while those who have acquired wealth in an ungodly way, are ungodly in their use of it; whether in squandering it on harlots or parasites, or hiding it in the ground, but sparing nothing for the poor. (Hom. 18. in Joan.). He does not then forbid men to be rich, but to be the slaves of their riches. He would have us use them as necessary, not keep guard over them. It is of a servant to guard, of a master to dispense. Had he wished to…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-2712-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.27",
@@ -40,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-luke-2713-v27",
+      "id": "catena-luke-2710-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.27",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:24–30",
-      "excerpt": "The name of “rich” he here gives to one who covets temporal things, and boasts himself in them. To such rich men are opposed the poor in spirit, of whom is the kingdom of heaven. Now mystically it is easier for Christ to suffer for the lovers of this world, than for the lovers of this world to be converted to Christ. For by the name of a camel He would represent Himself: for He voluntarily humbled Himself to bear the burdens of our infirmity. By the needle He signifies sharp piercings, and thereby the pangs received in His Passion, but by the form of the needle He describes the straitening of…",
+      "excerpt": "Abraham indeed possessed wealth for the poor. And all they who righteously possess it, spend it as receiving it from God, according to the divine command, while those who have acquired wealth in an ungodly way, are ungodly in their use of it; whether in squandering it on harlots or parasites, or hiding it in the ground, but sparing nothing for the poor. (Hom. 18. in Joan.). He does not then forbid men to be rich, but to be the slaves of their riches. He would have us use them as necessary, not keep guard over them. It is of a servant to guard, of a master to dispense. Had he wished to…",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -76,6 +58,24 @@
       ]
     },
     {
+      "id": "catena-luke-2713-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.27",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:24–30",
+      "excerpt": "The name of “rich” he here gives to one who covets temporal things, and boasts himself in them. To such rich men are opposed the poor in spirit, of whom is the kingdom of heaven. Now mystically it is easier for Christ to suffer for the lovers of this world, than for the lovers of this world to be converted to Christ. For by the name of a camel He would represent Himself: for He voluntarily humbled Himself to bear the burdens of our infirmity. By the needle He signifies sharp piercings, and thereby the pangs received in His Passion, but by the form of the needle He describes the straitening of…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2715-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.27",
@@ -91,24 +91,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2717-v27",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.18.27",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 18:24–30",
-      "excerpt": "The rich man who has despised many things will naturally expect a reward, but he who possessing little resigns what he has, may fairly ask what there is in store for him; as it follows, Then Peter said, Lo, we have left all. Matthew adds, What shall we have therefore? (Matt. 19:27.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.18.27:10d12ab9:0"
       ]
     },
     {
@@ -148,17 +137,17 @@
       ]
     },
     {
-      "id": "catena-luke-2718-v27",
+      "id": "catena-luke-2717-v27",
       "relation": "verse",
       "targetVerseId": "kjva:luke.18.27",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "cyril-of-alexandria",
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:24–30",
-      "excerpt": "As if he says, We have done what Thou commandedst us, what reward then wilt Thou give us? And because it is not enough to have left all things, he adds that which made it perfect, saying, And have followed thee.",
+      "excerpt": "The rich man who has despised many things will naturally expect a reward, but he who possessing little resigns what he has, may fairly ask what there is in store for him; as it follows, Then Peter said, Lo, we have left all. Matthew adds, What shall we have therefore? (Matt. 19:27.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -174,6 +163,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 18:24–30",
       "excerpt": "The sense then is this; He who in seeking the kingdom of God has despised all earthly affections, has trampled under foot all riches, pleasures, and smiles of the world, shall receive far greater in the present time. Upon the ground of this declaration, some of the Jews build up the fable of a millennium after the resurrection of the just, when all things which we have given up for God’s sake shall be restored with manifold interest, and eternal life be granted. Nor do they from their ignorance seem to be aware, that even if in other things there might be a fit promise of restoration, yet in…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-2718-v27",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.18.27",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 18:24–30",
+      "excerpt": "As if he says, We have done what Thou commandedst us, what reward then wilt Thou give us? And because it is not enough to have left all things, he adds that which made it perfect, saying, And have followed thee.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -235,7 +242,167 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.18.27:80c1a976:1"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.18.27:318d1dd4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 18:27",
+      "excerpt": "He who has a human way of thinking, that is, is carried away by earthly things and attached to the terrestrial, for him, as it is said, it is impossible to be saved, but for God this is possible; that is, when someone has God as his counselor and takes the ordinances of God and the commandments concerning poverty as his teachers, and calls upon Him for help, for that person it will be possible to be saved. For it is our part to desire the good, but to accomplish it is the work of God. And in another sense: if we, having risen above every human faintheartedness regarding wealth, desire even to make friends for ourselves by means of unrighteous wealth, then we shall be saved and shall be escorted by them into eternal habitations. For it is better if we renounce everything, or if we do not renounce everything, at least make the poor our partners, and then the impossible will become possible. Although without renouncing everything one cannot be saved, yet through the lovingkindness of God it becomes possible to be saved even in the case where several portions are distributed for genuine benefit.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:bede:luke.18.27:506d9417:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 18:27",
+      "excerpt": "He said to them: What is impossible with men is possible with God. It is not to be understood in such a way that the greedy and the proud, who are signified by the name of that rich man, will enter the kingdom of heaven with their greed and pride, but it is possible for God that through His word (as we also see has been done and is done daily) they may be converted from the desire for temporal things to the love of eternal things, and from destructive pride to most salutary humility.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:hcf-apostolic-constitutions:luke.18.27:b5453052:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-apostolic-constitutions",
+      "workId": "hcf:work:hcf-apostolic-constitutions:constitutions-of-the-holy-apostles-book-5",
+      "title": "Constitutions of the Holy Apostles Book 5 on luke 18:27",
+      "excerpt": "He therefore that made the original bodies out of nothing, and fashioned various forms of them, will also again revive and raise up those that are dead. For He that formed man in the womb out of a little seed, and created in him a soul which was not in being before—as He Himself somewhere speaks to Jeremiah, \"Before I formed thee in the womb I knew thee;\" and elsewhere, \"I am the Lord who established the heaven, and laid the foundations of the earth, and formed the spirit of man in him\"—will also raise up all men, as being His workmanship; as also the divine Scripture testifies that God said to Christ, His only-begotten, \"Let us make man after our image, and after our likeness. And God made man: after the image of God made He him; male and female made He them.\" And the most divine and patient Job, of whom the Scripture says that it is written, that \"he was to rise again with those whom the Lord raises up,\" speaks to God thus: \"Hast not Thou milked me like milk, and curdled me like cheese? Thou hast clothed me with skin and flesh, and hast fenced me with bones and sinews. Thou hast granted me life and favour, and Thy visitation hath preserved my spirit. Having these things within me, I know that Thou canst do all things, and that nothing is impossible with Thee.\" Wherefore also our Saviour and Master Jesus Christ says, that \"what is impossible with men is possible with God.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c380"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.18.27:80b2d497:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-iv",
+      "title": "Against Heresies Book IV on luke 18:27",
+      "excerpt": "But in respect to His greatness, and His wonderful glory, \"no man shall see God and live,\" for the Father is incomprehensible; but in regard to His love, and kindness, and as to His infinite power, even this He grants to those who love Him, that is, to see God, which thing the prophets did also predict. \"For those things that are impossible with men, are possible with God.\" For man does not see God by his own powers; but when He pleases He is seen by men, by whom He wills, and when He wills, and as He wills. For God is powerful in all things, having been seen at that time indeed, prophetically through the Spirit, and seen, too, adoptively through the Son; and He shall also be seen paternally in the kingdom of heaven, the Spirit truly preparing man in the Son of God, and the Son leading him to the Father, while the Father, too, confers [upon him] incorruption for eternal life, which comes to every one from the fact of his seeing God. For as those who see the light are within the light, and partake of its brilliancy; even so, those who see God are in God, and receive of His splendour. But [His] splendour vivifies them; those, therefore, who see God, do receive life. And for this reason, He, [although] beyond comprehension, and boundless and invisible, rendered Himself visible, and comprehensible, and within the capacity of those who believe, that He might vivify those who receive and behold Him through faith. For as His greatness is past finding out, so also His goodness is beyond expression; by which having been seen, He bestows life upon those who see Him. It is not possible to live apart from life, and the means of life is found in fellowship with God; but fellowship with God is to know God, and to enjoy His goodness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.18.27:86331f1a:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-v",
+      "title": "Against Heresies Book V on luke 18:27",
+      "excerpt": "Neither the nature of any created thing, therefore, nor the weakness of the flesh, can prevail against the will of God. For God is not subject to created things, but created things to God; and all things yield obedience to His will. Wherefore also the Lord declares, \"The things which are impossible with men, are possible with God.\" As, therefore, it might seem to the men of the present day, who are ignorant of God's appointment, to be a thing incredible and impossible that any man could live for such a number of years, yet those who were before us did live [to such an age], and those who were translated do live as an earnest of the future length of days; and [as it might also appear impossible] that from the whale's belly and from the fiery furnace men issued forth unhurt, yet they nevertheless did so, led forth as it were by the hand of God, for the purpose of declaring His power: so also now, although some, not knowing the power and promise of God, may oppose their own salvation, deeming it impossible for God, who raises up the dead; to have power to confer upon them eternal duration, yet the scepticism of men of this stamp shall not render the faithfulness of God of none effect.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:luke.18.27:560b999a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:against-heresies-book-ii",
+      "title": "Against Heresies Book II on luke 18:27",
+      "excerpt": "For, to attribute the substance of created things to the power and will of Him who is God of all, is worthy both of credit and acceptance. It is also agreeable [to reason], and there may be well said regarding such a belief, that \"the things which are impossible with men are possible with God.\" While men, indeed, cannot make anything out of nothing, but only out of matter already existing, yet God is in this point proeminently superior to men, that He Himself called into being the substance of His creation, when previously it had no existence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:tertullian:luke.18.27:13d26da8:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on luke 18:27",
+      "excerpt": "And grant that it be just as you think sufficient to meet each point is the divine declaration which has fore-run: \"The foolish things of the world hath God elected to confound its wisdom; \" and, \"The things very difficult with men are easy with God.\" For if God is wise and powerful (which even they who pass Him by do not deny), it is with good reason that He lays the material causes of His own operation in the contraries of wisdom and of power, that is, in foolishness and impossibility; since every virtue receives its cause from those things by which it is called forth.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:tertullian:luke.18.27:16ae8145:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-idolatry",
+      "title": "On Idolatry on luke 18:27",
+      "excerpt": "It has learnt not to respect life; how much more food? [You ask] \"How many have fulfilled these conditions? \"But what with men is difficult, with God is easy. Let us, however, comfort ourselves about the gentleness and clemency of God in such wise, as not to indulge our \"necessities\" up to the point of affinities with idolatry, but to avoid even from afar every breath of it, as of a pestilence.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
+    },
+    {
+      "id": "hcf:tertullian:luke.18.27:73b975a8:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-praxeas",
+      "title": "Against Praxeas on luke 18:27",
+      "excerpt": "True enough; who can be ignorant of it? Who also can be unaware that \"the things which are impossible with men are possible with God? \" The foolish things also of the world hath God chosen to confound the things which are wise.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.18.27"
     }
   ]
 }

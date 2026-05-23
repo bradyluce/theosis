@@ -76,6 +76,24 @@
       ]
     },
     {
+      "id": "catena-mark-1102-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.33",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "See again that He has not said, I know not when the time will be, but, Ye know not. For the reason why He concealed it was that it was better for us; for if, now that we know not the end, we are careless, what should we do if we knew it? We should keep on our wickednesses even unto the end. Let us therefore attend to His words; for the end comes at even, when a man dies in old age; at midnight, when he dies in the midst of his youth; and at cockcrow, when our reason is perfect within us; for when a child begins to live according to his reason, then the cock cries loud within him, rousing him…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-1095-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.13.33",
@@ -109,43 +127,116 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.13.33:1974468e:1"
       ]
     },
     {
-      "id": "catena-mark-1102-v33",
+      "id": "hcf:theophylact-of-ohrid:mark.13.33:da0df599:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.33",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "See again that He has not said, I know not when the time will be, but, Ye know not. For the reason why He concealed it was that it was better for us; for if, now that we know not the end, we are careless, what should we do if we knew it? We should keep on our wickednesses even unto the end. Let us therefore attend to His words; for the end comes at even, when a man dies in old age; at midnight, when he dies in the midst of his youth; and at cockcrow, when our reason is perfect within us; for when a child begins to live according to his reason, then the cock cries loud within him, rousing him…",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 13:33",
+      "excerpt": "Moreover, for our benefit God has hidden the end of life, both of the common life and of each of us individually, so that we, in the uncertainty of this end, might ceaselessly strive, expecting it and fearing lest it find us unprepared.",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.13.33"
     },
     {
-      "id": "catena-mark-1097-v33",
+      "id": "hcf:bede:mark.13.33:e12ba6b6:0",
       "relation": "verse",
-      "targetVerseId": "kjva:mark.13.33",
       "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 13:32–37",
-      "excerpt": "For we must needs watch with our souls before the death of the body.",
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 13:33",
+      "excerpt": "Watch, therefore, and pray. For you do not know when the time is. Like a man who, traveling abroad, leaves his house and gives authority to his servants, etc. The Lord clearly shows why He said: \"Of that day or hour no one knows, neither the angels in heaven, nor the Son, but only the Father.\" Because it is not expedient for the apostles to know, so that in the uncertainty of the hanging expectation they may always believe Him to be coming, whom they do not know when He will come. And He did not say, because we do not know at what hour the Lord will come, but you do not know. And, having given the example of the householder, He more clearly teaches why He conceals the day of consummation, saying:",
       "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.13.33"
+    },
+    {
+      "id": "hcf:augustine:mark.13.33:6d8d64f5:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-199-to-hesychius-52",
+      "title": "LETTER 199, TO HESYCHIUS 52 on mark 13:33",
+      "excerpt": "A person does not go wrong when he knows that he does not know something, but only when he thinks he knows something which he does not know.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.13.33"
+    },
+    {
+      "id": "hcf:athanasius-the-great:mark.13.33:bc707d8a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "athanasius-the-great",
+      "workId": "hcf:work:athanasius-the-great:discourses-against-the-arians-3-49",
+      "title": "Discourses Against the Arians 3.49 on mark 13:33",
+      "excerpt": "The end of all things is concealed from us. For in the end of all is the end of each, and in the end of each is the end of all [on the last day]. Whereas this time is uncertain and always in prospect, we may advance day by day as if summoned, reaching forward to the things before us and forgetting the things behind. For who, if they knew the day of the end, would not disregard the interval? But if ignorant, would they not be more ready day by day? It was on this account that the Savior said: \"Watch; for you do not know when the time will come.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:newadvent-org",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.13.33"
+    },
+    {
+      "id": "hcf:irenaeus-of-lyons:mark.13.33:f768173c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "irenaeus-of-lyons",
+      "workId": "hcf:work:irenaeus-of-lyons:irenaeus-against-heresies-book-5",
+      "title": "Irenaeus Against Heresies Book 5 on mark 13:33",
+      "excerpt": "As, therefore, when the wild olive has been engrafted, if it remain in its former condition, viz., a wild olive, it is \"cut off, and cast into the fire;\" but if it takes kindly to the graft, and is changed into the good olive-tree, it becomes a fruit-bearing olive, planted, as it were, in a king's paradise: so likewise men, if they do truly progress by faith towards better things, and receive the Spirit of God, and bring forth the fruit thereof, shall be spiritual, as being planted in the paradise of God. For when men sleep, the enemy sows the material of tares; and for this cause did the Lord command His disciples to be on the watch.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c202"
+      ],
+      "targetVerseId": "kjva:mark.13.33"
+    },
+    {
+      "id": "hcf:tertullian:mark.13.33:7729353f:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-the-soul-33",
+      "title": "ON THE SOUL 33 on mark 13:33",
+      "excerpt": "How useless is the advice of those simplistic moralists who teach that after death rewards and punishments fall with lighter weight! That is, if any judgment at all awaits the soul! Rather it ought to be assumed that judgment will be weightier at the end of life than during it. For nothing is more telling and complete than that which comes at the very end. So no judgment could be more complete than God's. Accordingly, God's judgment will be incomparably radical and comprehensive, because it will be pronounced at the very last, in an eternal irrevocable sentence, both of punishment and of consolation. Then souls will not conveniently dissolve into senselessness, but will return into their own proper bodies. All this occurs once for all, on \"that day, too, of which the Father only knows,\" in order that a full trial be made of faith, and of faith's concerned sincerity which awaits in trembling expectation, keeping her gaze ever fixed on that day, in her perpetual ignorance of when it will arrive, daily trembling at that for which she yet daily hopes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:mark.13.33"
     },
     {
       "id": "catena-mark-1101-v33",
@@ -174,6 +265,24 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 13:32–37",
       "excerpt": "He thus concludes His discourse, that the last should hear from those who come first this precept which is common to all; wherefore He adds, But what I say unto you I say unto all, Watch.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "catena-mark-1097-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.13.33",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 13:32–37",
+      "excerpt": "For we must needs watch with our souls before the death of the body.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

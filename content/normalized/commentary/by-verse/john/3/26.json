@@ -23,14 +23,14 @@
       ]
     },
     {
-      "id": "catena-john-0352-v26",
+      "id": "catena-john-0364-v26",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.26",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "Nothing is more open than truth, nothing bolder; it neither seeks concealment, or avoids danger, or fears the snare, or cares for popularity. It is subject to no human weakness. Our Lord went up to Jerusalem at the feasts, not from ostentation or love of honour, but to teach the people His doctrines, and shew miracles of mercy. After the festival He visited the crowds who were collected at the Jordan. After these things came Jesus and His disciples into the land of Judæa; and there he tarried with them, and baptized.",
+      "excerpt": "The Jews then asserted Christ to be the greater person, and His baptism necessary to be received. But John’s disciples did not understand so much, and defended John’s baptism. At last they come to John, to solve the question: And they came unto John, and said unto him, Rabbi, He that was with thee beyond Jordan, behold, the Same baptizeth.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -38,24 +38,13 @@
         "catena-aurea",
         "patristic",
         "john"
-      ]
-    },
-    {
-      "id": "catena-john-0355-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.26",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "As the Evangelist says afterwards, that Jesus baptized not but His disciples, it is evident that he means the same here, i. e. that the disciples only baptized.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.3.26:7d6b3ce9:1"
       ]
     },
     {
@@ -67,42 +56,6 @@
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
       "excerpt": "Our Lord did not baptize with the baptism wherewith He had been baptized; for He was baptized by a servant, as a lesson of humility to us, and in order to bring us to the Lord’s baptism, i. e. His own; for Jesus baptized, as the Lord, the Son of God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0358-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.26",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "It matters not whether it is called Salem, or Salim; since the Jews very rarely use vowels in the middle of words; and the same words are pronounced with different vowels and accents, by different readers, and in different places. And they came, and were baptized.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
-      "id": "catena-john-0360-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.26",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "Notwithstanding the disciples of Jesus baptized, John did not leave off till his imprisonment; as the Evangelist’s language intimates, For John was not yet cast into prison.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -149,24 +102,6 @@
       ]
     },
     {
-      "id": "catena-john-0364-v26",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.26",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:22–26",
-      "excerpt": "The Jews then asserted Christ to be the greater person, and His baptism necessary to be received. But John’s disciples did not understand so much, and defended John’s baptism. At last they come to John, to solve the question: And they came unto John, and said unto him, Rabbi, He that was with thee beyond Jordan, behold, the Same baptizeth.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0365-v26",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.26",
@@ -185,14 +120,86 @@
       ]
     },
     {
-      "id": "catena-john-0353-v26",
+      "id": "catena-john-0352-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.26",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "Nothing is more open than truth, nothing bolder; it neither seeks concealment, or avoids danger, or fears the snare, or cares for popularity. It is subject to no human weakness. Our Lord went up to Jerusalem at the feasts, not from ostentation or love of honour, but to teach the people His doctrines, and shew miracles of mercy. After the festival He visited the crowds who were collected at the Jordan. After these things came Jesus and His disciples into the land of Judæa; and there he tarried with them, and baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0360-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.26",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "Notwithstanding the disciples of Jesus baptized, John did not leave off till his imprisonment; as the Evangelist’s language intimates, For John was not yet cast into prison.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0355-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.26",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "As the Evangelist says afterwards, that Jesus baptized not but His disciples, it is evident that he means the same here, i. e. that the disciples only baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0358-v26",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.26",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:22–26",
+      "excerpt": "It matters not whether it is called Salem, or Salim; since the Jews very rarely use vowels in the middle of words; and the same words are pronounced with different vowels and accents, by different readers, and in different places. And they came, and were baptized.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-0359-v26",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.26",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "After these things, is not immediately after His dispute with Nicodemus, which took place at Jerusalem; but on His return to Jerusalem after some time spent in Galilee.",
+      "excerpt": "The same kind of benefit which catechumens receive from instruction before they are baptized, the same did John’s baptism convey before Christ’s. As John preached repentance, announced Christ’s baptism, and drew all men to the knowledge of the truth now made manifest to the world: so the ministers of the Church first instruct those who come to the faith, then reprove their sins; and lastly, drawing them to the knowledge and love of the truth, offer them remission by Christ’s baptism.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -221,14 +228,14 @@
       ]
     },
     {
-      "id": "catena-john-0359-v26",
+      "id": "catena-john-0353-v26",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.26",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-john",
       "title": "On John 3:22–26",
-      "excerpt": "The same kind of benefit which catechumens receive from instruction before they are baptized, the same did John’s baptism convey before Christ’s. As John preached repentance, announced Christ’s baptism, and drew all men to the knowledge of the truth now made manifest to the world: so the ministers of the Church first instruct those who come to the faith, then reprove their sins; and lastly, drawing them to the knowledge and love of the truth, offer them remission by Christ’s baptism.",
+      "excerpt": "After these things, is not immediately after His dispute with Nicodemus, which took place at Jerusalem; but on His return to Jerusalem after some time spent in Galilee.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 75,
@@ -290,7 +297,99 @@
         "catena-aurea",
         "patristic",
         "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:alcuin:john.3.26:cb443f4f:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.3.26:94f057ff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-13",
+      "title": "Tractates on John 13 on john 3:26",
+      "excerpt": "\"They came unto John, and said unto him, Rabbi, he that was with thee beyond Jordan, to whom thou barest witness, behold the same baptizeth, and all men come to him:\" that is, What sayest thou? Ought they not to be hindered, that they may rather come to thee?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.26"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.26:4d97d467:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-29",
+      "title": "Homily on the Gospel of John 29 on john 3:26",
+      "excerpt": "And observe, I pray you, the Evangelist's inoffensiveness. He does not speak in the way of invective, but as far as he is able softens the charge, merely saying, that \"a question arose\"; whereas the sequel (which he has also set down in an inoffensive manner) makes it plain that what was said was said from jealousy.\r\n\r\n\"They came,\" saith he, \"unto John, and said unto him, Rabbi, He that was with thee beyond Jordan, to whom thou barest witness, behold the same baptizeth, and all men come to Him.\"\r\n\r\nThat is, \"He whom thou didst baptize\"; for this they imply when they say, \"to whom thou barest witness,\" as though they had said, \"He whom thou didst point out as illustrious, and make remarkable, dares to do the same as thou.\" Yet they do not say, \"He whom thou didst baptize\" baptizeth; (for then they would have been obliged to make mention of the Voice that came down from heaven, and of the descent of the Spirit;) but what say they? \"He that was with thee beyond Jordan, to whom thou barest witness\"; that is, \"He who held the rank of a disciple, who was nothing more than we, this man hath separated himself, and baptizeth.\" For they thought to make him jealous, not only by this, but by asserting that their own reputation was now diminishing. \"All,\" say they, \"come to Him.\" Whence it is evident, that they did not get the better of the Jew with whom they disputed; but they spoke these words because they were imperfect in disposition, and were not yet clear from a feeling of rivalry.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.26"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:john.3.26:af055323:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-john-book-2",
+      "title": "Commentary on the Gospel of John, Book 2 on john 3:26",
+      "excerpt": "Rabbi, He that was with thee beyond Jordan, to Whom thou barest witness, behold, the Same baptizeth, and all men come to Him. John answered and said,\r\n\r\nThe disciples bitten by the words of the Pharisees, and looking to the very nature of the thing, were not able to convict them as liars, but were reasonably at a loss, and being ignorant of the great dignity of our Saviour, are exceedingly startled at John's shortcoming, and mingling words of love with reverence and admiration, they desire to learn, why He That was borne witness to by his voice, prevents him in honour, outstrips him in grace, and in baptizing takes in His net, not a portion of the whole Jewish multitude, but even all of them. And they made the inquiry as it seems not without the Will of God: for hence the Baptist invites them to an accurate and long explanation respecting the Saviour, and introduces the clearest distinction between the baptisms.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:john.3.26"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.3.26:e7bebee7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 3:26",
+      "excerpt": "Those who had disputed about purification, that is, baptism, come to their teacher and begin to incite him, saying: \"Teacher! He Who was with you, Who held the rank of a disciple, has separated and is baptizing\"; He about Whom you testified, that is, Whom you baptized, Whom you made famous, dares to do the same thing as you; moreover, some do not heed you, but all heed Him: \"For all,\" it says, \"are going to Him, and are leaving you.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.3.26"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.26:c77e6dd2:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:26",
+      "excerpt": "They referred this issue to John; hence he says, They went to John. If we examine this closely, we see that they were trying to incite John against Christ. Indeed, they are like the gossip and the double-tongued: \"Those who gossip and are double-tongued are accursed, for they disturb many who are at peace\" (Sir 28:15).\r\n\r\nSo they bring up four things calculated to set John against Christ. First, they recall the previous unimportant status of Christ. Secondly, the good John did for him. Thirdly, the role which Christ took on. Fourthly, the loss to John because of Christ's new role.\r\n\r\nThey recall Christ's unimportance when they say, the man who was with you, as one of your disciples; and not the one you were with as your teacher. For there is no good reason for envy if honor is shown to one who is greater; rather, envy is aroused when honor is given to an inferior: \"I have seen slaves on horses, and princes walking like slaves\" (Ecc 10:7); \"I called my servant, and he did not answer me\" (Jb 19:16). For a master is more disturbed at the rebellion of a servant and a subject than of anyone else.\r\n\r\nSecondly, they remind John of the good he did Christ. Thus they do not say, \"the one whom you baptized,\" because they would then be admitting the greatness of Christ which was shown during his baptism when the Holy Spirit came upon him in the form of a dove and in the voice of the Father speaking to him. So they say, the one of whom you have given testimony, i.e., we are very angry that the one you made famous and admired dares to repay you in this way: \"The one who ate my bread has lifted his heel against me\" (Ps 40:10). They said this because those who seek their own glory and personal profit from their office become dejected if their office is taken over by someone else.\r\n\r\nAnd so thirdly, they even add that Christ took over John's office for himself, when they say, he is here baptizing, i.e., he is exercising your office; and this also disturbed them very much. For we generally see that men of the same craft are envious and underhanded with respect to one another; a potter envies another potter, but does not envy a carpenter. So, even teachers, who are seeking their own honor, become sad if another teaches the truth. In opposition to them, Gregory says: \"The mind of a holy pastor wishes that others teach the truth which he cannot teach all by himself.\" So also Moses: \"Would that all the people might prophesy,\" as we read in Numbers (11:29).\r\n\r\nYet they were not satisfied with merely disturbing John, rather they report something that should really excite him, that is, the loss that John seemed to be having because of the office Christ took over. They give this when they say: and all the people are flocking to him, i.e., the ones who used to come to you. In other words, they have rejected and disowned you, and now are all going to his baptism. It is clear from Matthew (11:7) that they used to go to John: \"What did you go into the desert to see?\" The same envy affected the Pharisees against Christ; so they said: \"Look, the whole world has gone after him\" (below 12:19). However, all this did not set John against Christ, for he was not a reed swaying in the wind, and this is clear from John's answer to their question.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.26"
     }
   ]
 }

@@ -22,24 +22,6 @@
       ]
     },
     {
-      "id": "catena-luke-3265-v64",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.64",
-      "topicSlugs": [],
-      "personId": "john-chrysostom",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:63–71",
-      "excerpt": "Jesus, the Lord of heaven and earth, sustains and suffers the mockings of the ungodly, giving us an example of patience.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3267-v64",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.64",
@@ -58,6 +40,31 @@
       ]
     },
     {
+      "id": "catena-luke-3265-v64",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.64",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:63–71",
+      "excerpt": "Jesus, the Lord of heaven and earth, sustains and suffers the mockings of the ungodly, giving us an example of patience.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.22.64:a1ae3c54:0"
+      ]
+    },
+    {
       "id": "catena-luke-3272-v64",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.64",
@@ -66,24 +73,6 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
       "excerpt": "Whenever sitting and a throne are spoken of God, His kingly and supreme majesty is signified. For we do not imagine any judgment-seat to be placed, on which we believe the Lord of all takes His seat; nor again, that in any wise right hand or left hand appertain to the Divine nature; for figure, and place, and sitting, are the properties of bodies. But how shall the Son be seen to be of equal honour and to sit together on the same throne, if He is not the Son according to nature, having in Himself the natural property of the Father?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-3275-v64",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.64",
-      "topicSlugs": [],
-      "personId": "ambrose-of-milan",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:63–71",
-      "excerpt": "The Lord had rather prove Himself a King than call Himself one, that they might have no excuse for condemning Him, when they confess the truth of that which they lay against Him. It follows, And he said, Ye say that I am.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -112,17 +101,17 @@
       ]
     },
     {
-      "id": "catena-luke-3268-v64",
+      "id": "catena-luke-3275-v64",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.64",
       "topicSlugs": [],
-      "personId": "bede",
+      "personId": "ambrose-of-milan",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
-      "excerpt": "They wished not for truth, but were contriving calumny. Because they expected that Christ would come only as man, of the root of David, they sought this of Him, that if He should say, “I am the Christ,” they might falsely accuse Him of claiming to Himself the kingly power.",
+      "excerpt": "The Lord had rather prove Himself a King than call Himself one, that they might have no excuse for condemning Him, when they confess the truth of that which they lay against Him. It follows, And he said, Ye say that I am.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
+      "rank": 80,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -138,6 +127,24 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
       "excerpt": "For He had often declared Himself to be the Christ; as when he said, l and my Father are one, (John 10:30.) and other such like things. And if I also ask you, ye will not answer me. For He had asked them how they said Christ was the Son of David, whereas David in the Spirit called Him his Lord. But they wished neither to believe His words nor to answer His questions. However, because they sought to accuse falsely the seed of David, they hear something still farther; as it follows, Hereafter shall the Son of man sit on the right hand of the power of God.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
+      "id": "catena-luke-3268-v64",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.64",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:63–71",
+      "excerpt": "They wished not for truth, but were contriving calumny. Because they expected that Christ would come only as man, of the root of David, they sought this of Him, that if He should say, “I am the Christ,” they might falsely accuse Him of claiming to Himself the kingly power.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -181,17 +188,24 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.64:ec5d4e36:1"
       ]
     },
     {
-      "id": "catena-luke-3269-v64",
+      "id": "catena-luke-3277-v64",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.64",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
-      "excerpt": "He knew the secrets of their hearts, that they who had not believed His works would much less believe His words. Hence it follows, And he said unto them, If I tell you, ye will not believe, &c.",
+      "excerpt": "Whereby it is manifest, that the disobedient reap no advantage, when the more secret mysteries are revealed to them, but rather incur the heavier punishment. Wherefore such things ought to be concealed from them. Copyright ©1999-2023 [Wildfire Fellowship, Inc](https://saintjoe.com/wildfire/) all rights reserved |",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -220,6 +234,24 @@
       ]
     },
     {
+      "id": "catena-luke-3269-v64",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.64",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:63–71",
+      "excerpt": "He knew the secrets of their hearts, that they who had not believed His works would much less believe His words. Hence it follows, And he said unto them, If I tell you, ye will not believe, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-3273-v64",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.64",
@@ -238,22 +270,89 @@
       ]
     },
     {
-      "id": "catena-luke-3277-v64",
+      "id": "hcf:theophylact-of-ohrid:luke.22.64:e81b4277:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.22.64",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:63–71",
-      "excerpt": "Whereby it is manifest, that the disobedient reap no advantage, when the more secret mysteries are revealed to them, but rather incur the heavier punishment. Wherefore such things ought to be concealed from them. Copyright ©1999-2023 [Wildfire Fellowship, Inc](https://saintjoe.com/wildfire/) all rights reserved |",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:64",
+      "excerpt": "Therefore He endures mockery and beatings, and though He is the Master of the prophets, He is mocked as a false prophet. For the words \"prophesy\" to us, \"who is the one who struck You,\" were meant to mock Him as an impostor who claims for Himself the gift of prophecy.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.64"
+    },
+    {
+      "id": "hcf:bede:luke.22.64:e17117cc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:64",
+      "excerpt": "And the men who held Him mocked Him, beating Him, and blindfolded Him, and struck His face. The prophecy is fulfilled that says: \"With a rod they strike the judge of Israel on the cheek\" (Micah 5). But He who was struck then by the blows of the Jews is also struck now by the blasphemies of false Christians. But they blindfolded Him, not so that He would not see their wickedness, but to hide His own face from them as they once did to Moses. For if they believed Moses, they might perhaps have believed in the Lord as well. But this veil remains over their hearts to this day, not revealed to them, but taken away from us who believe in Christ. For not in vain, at His death, was the temple veil torn in two.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.64"
+    },
+    {
+      "id": "hcf:bede:luke.22.64:22b62467:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:64",
+      "excerpt": "And they asked him, saying: Prophesy, who is it that struck you? And many other things blaspheming, they said against him. They did these things as a mockery of him, who wished to be regarded as a prophet by the people: but as he himself, who suffers, ordains, all things are done for us, so that as Peter exhorts, having suffered Christ in the flesh, we should arm ourselves with the same thought. And also heretics, or Jews to this day who deny Jesus as God, and evil Catholics, who, by their reproachful deeds, provoking him, do not believe that their thoughts and works of darkness are seen by him, as if mocking him, they say: Prophesy, who is it that struck you?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.64"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.64:dfb9c4a6:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-150",
+      "title": "Commentary on the Gospel of Luke, Sermon 150 on luke 22:64",
+      "excerpt": "Or perhaps even He thus endures to rebuke the infirmity of our minds, and show that the things of men fall as far below the divine excellencies as our nature is inferior to His. For we who are of earth, mere corruption and ashes, attack at once those who would molest us, having a heart full of fierceness like savage beasts. But He, Who in nature and glory transcends the limits of our understanding and our powers of speech, patiently endured those officers when they not merely mocked, but even struck Him. \"For when they had blindfolded Him, it says, and afterwards struck Him, they asked Him, Prophesy, who is he that struck You?\" They ridicule, as if He were some ignorant person, Him Who is the Giver of all knowledge, and Who even sees what is hidden within us: for He has somewhere said by one of the holy prophets, \"Who is this that hides from Me counsel, and shuts up words in his heart, and thinks that from Me he hides them?\" He therefore Who tries hearts and reins, and Who is the Giver of all prophecy, how could He not know who it was that struck Him? But as Christ Himself said, \"Darkness has blinded their eyes, and their minds are blinded.\" Of them too therefore may one say, \"Woe to them that are drunken, but not with wine!\" \"For their vine is of the vine of Sodom, and their tendril of Gomorrah.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.64"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.22.64:a74b8e72:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-the-gospel-of-luke-sermon-150",
+      "title": "Commentary on the Gospel of Luke, Sermon 150 on luke 22:64",
+      "excerpt": "\"For the men who held Him mocked and struck Him, saying, Prophesy, who is he that struck You?\" \"But He, when He was reviled, reviled not again: and when He suffered, He threatened not, but committed His cause to Him that judges righteously.\" Well therefore might we utter that which was said of certain men by one of the holy prophets, \"The heavens were astonished thereat, and shuddered very greatly, says the Lord.\" For the Lord of earth and heaven, the Creator and Artificer of all, the King of kings and Lord of lords, Who is of such surpassing greatness in glory and majesty, the foundation of everything, and that in which it exists and abides----\"for all things exist in Him\"----He Who is the breath of all the holy spirits in heaven, is scorned like one of us, and patiently endures buffetings, and submits to the ridicule of the wicked, offering Himself to us as a perfect pattern of longsuffering, or rather manifesting the incomparable greatness of His godlike gentleness.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.22.64"
     }
   ]
 }

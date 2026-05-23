@@ -23,42 +23,6 @@
       ]
     },
     {
-      "id": "catena-matt-0614",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.9",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:9",
-      "excerpt": "Peace is the fixedness of order; by order, I mean an arrangement of things like and unlike giving to each its own place. And as there is no man who would not willingly have joy, so is there no man who would not have peace; since even those who go to war desire nothing more than by war to come to a glorious peace.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-0615",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.5.9",
-      "topicSlugs": [],
-      "personId": "jerome",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 5:9",
-      "excerpt": "The peacemakers [margin note: pacifici] are pronounced blessed, they namely who make peace first within their own hearts, then between brethren at variance. For what avails it to make peace between others, while in your own heart are wars of rebellious vices.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-0616",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.9",
@@ -67,6 +31,31 @@
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:9",
       "excerpt": "The peacemakers within themselves are they who having stilled all disturbances of their spirits, having subjected them to reason, have overcome their carnal desires, and become the kingdom of God. There all things are so disposed, that that which is most chief and excellent in man, governs those parts which we have in common with the brutes, though they struggle against it; nay even that in man which is excellent is subjected to a yet greater, namely, the very Truth, the Son of God. For it would not be able to govern what is inferior to it, if it were not subject to what is above155 it. And…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:matthew.5.9:1a95bfc4:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0614",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.9",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:9",
+      "excerpt": "Peace is the fixedness of order; by order, I mean an arrangement of things like and unlike giving to each its own place. And as there is no man who would not willingly have joy, so is there no man who would not have peace; since even those who go to war desire nothing more than by war to come to a glorious peace.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -95,14 +84,14 @@
       ]
     },
     {
-      "id": "catena-matt-0620",
+      "id": "catena-matt-0621",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.9",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:9",
-      "excerpt": "Or, if the peacemakers are they who do not contend one with another, but reconcile those that are at strife, they are rightly called the sons of God, seeing this was the chief employment of the Only-begotten Son, to reconcile things separated, to give peace to things at war.",
+      "excerpt": "Or, because peace is then perfect when there is no where any opposition, the peacemakers are called the sons of God, because nothing resists God, and the children ought to bear the likeness of their Father.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -113,14 +102,39 @@
       ]
     },
     {
-      "id": "catena-matt-0621",
+      "id": "catena-matt-0615",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.5.9",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "jerome",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 5:9",
-      "excerpt": "Or, because peace is then perfect when there is no where any opposition, the peacemakers are called the sons of God, because nothing resists God, and the children ought to bear the likeness of their Father.",
+      "excerpt": "The peacemakers [margin note: pacifici] are pronounced blessed, they namely who make peace first within their own hearts, then between brethren at variance. For what avails it to make peace between others, while in your own heart are wars of rebellious vices.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.5.9:ff1b5c6f:0"
+      ]
+    },
+    {
+      "id": "catena-matt-0620",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.5.9",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 5:9",
+      "excerpt": "Or, if the peacemakers are they who do not contend one with another, but reconcile those that are at strife, they are rightly called the sons of God, seeing this was the chief employment of the Only-begotten Son, to reconcile things separated, to give peace to things at war.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -164,7 +178,287 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.5.9:263eb8d0:0"
       ]
+    },
+    {
+      "id": "hcf:augustine:matthew.5.9:597366a2:4",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-on-the-mount-1-2-9",
+      "title": "SERMON ON THE MOUNT 1.2.9 on matthew 5:9",
+      "excerpt": "Where there is no contention, there is perfect peace. And that is why the children of God are peacemakers, because nothing can finally stand against God. In this way the children possess a likeness to God the Father. And those who calm their passions and subject them to reason, to mind and spirit, and who keep their carnal lusts under control engender peace within themselves. Thereby they themselves become the kingdom of God. In this kingdom all things are so well ordered that everything in humanity that is common to us and to the beasts is spontaneously governed by that which is chief and preeminent in humanity, namely, the reasoning mind. This preeminent human faculty is itself subject to a still higher power, which is Truth itself, the only begotten Son of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:augustine:matthew.5.9:0ec8e207:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermon-53a-12",
+      "title": "SERMON 53A.12 on matthew 5:9",
+      "excerpt": "There is in the inner person a kind of daily quarrel; a praiseworthy battle acts to keep what is better from being overcome by what is worse. The struggle is to keep desire from conquering the mind and to keep lust from conquering wisdom. This is the steadfast peace that you ought to develop in yourself, that what is better in you may be in charge of what is worse. The better part in you, moreover, is that part in which God's image is found. This is called the mind, the intellect. There faith burns, there hope is strengthened, there charity is kindled.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:augustine:matthew.5.9:702e7ea4:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 5:9",
+      "excerpt": "Wisdom corresponds to the peacemakers, in whom all things are now brought into order, and no passion is in a state of rebellion against reason, but all things together obey the spirit of man, while he himself also obeys God: and of them it is here said, Blessed are the peacemakers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:augustine:matthew.5.9:3909363d:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:untitled-commentary",
+      "title": "Commentary on matthew 5:9",
+      "excerpt": "To the peacemakers the likeness of God is given, as being perfectly wise, and formed after the image of God by means of the regeneration of the renewed man: Blessed are the peacemakers, for they shall be called the children of God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:untitled-commentary",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:ambrose-of-milan:matthew.5.9:71f11709:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ambrose-of-milan",
+      "workId": "hcf:work:ambrose-of-milan:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on matthew 5:9",
+      "excerpt": "(ubi sup.) When you have made your inward parts clean from every spot of sin, that dissentions and contentious may not proceed from your temper, begin peace within yourself, that so you may extend it to others.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c397",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:jerome:matthew.5.9:119c130c:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:9",
+      "excerpt": "(Verse 9.) Blessed are the peacemakers, for they shall be called the children of God. Those who first make peace in their own hearts, and then among quarreling brothers. For what good is it to reconcile others through you, when there are wars of vices in your own soul?",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.5.9:25bfc1f6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-15",
+      "title": "Homily on the Gospel of Matthew 15 on matthew 5:9",
+      "excerpt": "Blessed are the peace-makers. Here He not only takes away altogether our own strife and hatred amongst ourselves, but He requires besides this something more, namely, that we should set at one again others, who are at strife.\r\n\r\nAnd again, the reward which He annexes is spiritual. Of what kind then is it? For they shall be called the children of God. Yea, for this became the work of the Only Begotten, to unite the divided, and to reconcile the alienated.\r\n\r\nThen, lest thou shouldest imagine peace in all cases a blessing, He hath added, Blessed are they which are persecuted for righteousness' sake. That is, for virtue's sake, for succor given to others, and for godliness: it being ever His wont to call by the name of righteousness the whole practical wisdom of the soul.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:hcf-chromatius-of-aquileia:matthew.5.9:df9bb3a1:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "hcf-chromatius-of-aquileia",
+      "workId": "hcf:work:hcf-chromatius-of-aquileia:tractate-on-matthew-17-7-1-2",
+      "title": "TRACTATE ON MATTHEW 17.7.1-2 on matthew 5:9",
+      "excerpt": "The peacemakers are those who, standing apart from the stumbling block of disagreement and discord, guard the affection of fraternal love and the peace of the church under the unity of the universal faith. And the Lord in the Gospel particularly urges his disciples to guard this peace, saying, \"I give you my peace; I leave you my peace.\" David earlier testified that the Lord would give this peace to his church, saying, \"I will listen to what the Lord speaks in me, for he will pronounce his peace to his people and upon his holy ones and to those who turn to him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:tractate-on-matthew-17-7-1-2",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c406"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:cyprian-of-carthage:matthew.5.9:c5e1b487:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyprian-of-carthage",
+      "workId": "hcf:work:cyprian-of-carthage:treatise-1-sections-24-25",
+      "title": "Treatise 1, Sections 24-25 on matthew 5:9",
+      "excerpt": "\"Blessed,\" says He, \"are the peacemakers; for they shall be called the sons of God.\" [Matthew 5:9] It behooves the sons of God to be peacemakers, gentle in heart, simple in speech, agreeing in affection, faithfully linked to one another in the bonds of unanimity. \r\n\r\nThis unanimity formerly prevailed among the apostles; and thus the new assembly of believers, keeping the Lord's commandments, maintained its charity. Divine Scripture proves this, when it says, \"But the multitude of them which believed were of one heart and of one soul.\" [Acts 4:32] And again: \"These all continued with one mind in prayer with the women, and Mary the mother of Jesus, and with His brethren.\" [Acts 1:14] And thus they prayed with effectual prayers; thus they were able with confidence to obtain whatever they asked from the Lord's mercy.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c258"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:matthew.5.9:8758ed23:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:fragment-38",
+      "title": "FRAGMENT 38 on matthew 5:9",
+      "excerpt": "The peacemaker is the one who demonstrates the harmony of the Scriptures, where others see only a contradiction: the Old with the New, the law with the prophets, Gospel with Gospel. Accordingly, having imitated the Son of God, \"he shall be called a son,\" having by his work grasped of the \"spirit of adoption.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:fragment-38",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.5.9:2490a7ff:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on matthew 5:9",
+      "excerpt": "\"But,\" say they, \"God is `good, 'and `most good, ' and `pitiful-hearted, 'and `a pitier, 'and `abundant in pitiful-heartedness, ' which He holds `dearer than all sacrifice, ' `not thinking the sinner's death of so much worth as his repentance', `a Saviour of all men, most of all of believers.' And so it will be becoming for `the sons of God' too to be `pitiful-hearted' and `peacemakers; ' `giving in their turn just as Christ withal hath given to us; ' `not judging, that we be not judged.' For `to his own lord a man standeth or falleth; who art thou, to judge another's servant? ' `Remit, and remission shall be made to thee.'\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.5.9:c5163514:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:of-patience",
+      "title": "Of Patience on matthew 5:9",
+      "excerpt": "\"Blessed are the gentle: \" under this term, surely, the impatient cannot possibly be classed. Again, when He marks \"the peacemakers\" with the same title of felicity, and names them \"sons of God,\" pray have the impatient any affinity with \"peace? \"Even a fool may perceive that.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.5.9:ae337033:3",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-modesty",
+      "title": "On Modesty on matthew 5:9",
+      "excerpt": "What doest thou, gentlest and humanest Discipline? Either to all these will it be thy duty so to be, for \"blessed are the peacemakers; \" or else, if not to all, it will be thy duty to range thyself on our side.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:tertullian:matthew.5.9:4d76855c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:on-baptism",
+      "title": "On Baptism on matthew 5:9",
+      "excerpt": "For which reason the \"peace-making\" apostle, for fear he should seem to claim all gifts for himself, says that he had been sent \"not to baptize, but to preach.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.5.9:fc81545c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:9",
+      "excerpt": "Blessed are the peacemakers, for they shall be called sons of God. \"The peacemakers\" are not only those who are themselves peaceable with all, but also those who reconcile others who are at odds. \"The peacemakers\" are also those who by their teaching convert the enemies of God. Just as the Only-begotten Son reconciled us to God when we were His enemies, so too are the \"peacemakers\" \"sons of God.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.5.9:f609307d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 5:9",
+      "excerpt": "Blessed are the peacemakers, for they shall be called the sons of God. This is the seventh beatitude and, as has been said, virtues disposing toward the best dispose toward two things, namely, to the vision of God and to love. And just as purity in heart disposes toward the vision of God, so peace disposes toward the love of God, by which we are called and are sons of God. Thus it disposes to the love of neighbor, because it says in 1 John (4:20): \"He who does not love his brother whom he has seen, cannot love God whom he has not seen.\" And it should be noted that two rewards of beatitude are presented here, namely, blessed are the peacemakers and blessed are those who suffer persecution for justice' sake. And all the previous ones are reduced to those two and are their effect. For what is attained by poverty of spirit, by mourning, by meekness, but that a clean heart be had? What by justice and mercy, but that we have peace? \"The fruit of justice will be peace, and the result of justice quietness and trust forever\" (Is 32:17). Therefore blessed are the peacemakers.\r\n\r\nLet us now see what peace is and how we can attain it. Peace is the tranquility of order. Order is an arrangement of equal and unequal things, which assigns its own place to each. Therefore, peace lies in all things keeping their own places. Hence, man's mind should first be subjected to God. Secondly, the lower movements and powers, which are common to us and the beasts, should be subjected to reason; for it is through reason that man excels animals: \"Let us make man in our image, after our likeness; and let them have dominion over the fish of the sea, and over the birds of the air, and over the cattle, and over all the earth, and over every creeping thing that creeps upon the earth\" (Gen 1:26). Thirdly, that man be at peace with others, because in that way he will be completely set in proper order. But this arrangement in proper order is found only in holy men: \"Great peace have they who love your name\" (Ps 119:165); \"There is no peace for the wicked\" (Is 48:22), for they cannot have inner peace: \"They live in great strife due to ignorance, and they call such great evils peace\" (Wis 14:22).\r\n\r\nTrue peace the world cannot give: \"Not as the world gives, do I give to you\" (Jn 14:27). However, all this is not enough, but they should make peace between those in conflict: \"Those who enter into the counsels of peace and joy\" (Pr 12:20). Yet it should be noted that peace begins here, but it is not perfect, because no one can have his animal inclinations completely subject: \"I see in my members another law at war with the law of my mind and making me captive to the law of sin which dwells in my members\" (Rom 7:23). Hence it will be true in eternal life: \"In peace I will both lie down and sleep\" (Ps 4:8); \"The peace of God surpasses all understanding\" (Phil 4:7).\r\n\r\nBecause they shall be called sons of God for three reasons: first, because they have the office of the Son of God. For the Son is said to have come into the world to assemble those who are scattered: \"For he is our peace\" (Eph 2:14); \"Reconciling to himself all things, whether on earth or in heaven\" (Col 1:20). Secondly, because through peace with charity one reaches the eternal kingdom: \"Why has he been numbered among the sons of God? And why is his lot among the saints?\" (Wis 5:5); \"Eager to maintain the unity of the Spirit in the bond of peace\" (Eph 4:3). Thirdly, because by it man becomes like unto God; for where peace is, there is no resistance, and no one can resist God: \"Who resisted him and had peace?\" (Jb 9:4).\r\n\r\nIt should be noted that those beatitudes add something to one another. For it is a greater thing to obtain mercy than to be filled, because being full depends on one's capacity; but mercy is superabundant. Furthermore, not all who receive mercy are admitted by the king to see the king. Finally, it is a greater thing to be the king's son than to see the king. Yet it should be noted that by all these one only reward is designated.\r\n\r\nBut why did the Lord wish to signify that one reward by many? The answer is that all things which are separate among lower beings are assembled into one in the higher. And because in matters human they are found scattered, and we are led to God through sense-perceptible things, the Lord signified that one eternal reward by many rewards.\r\n\r\nThis seventh beatitude is adapted to the gift of wisdom, for wisdom makes men be children of God. It should also be noted that in the seventh beatitude is placed peace, and on the seventh day rest (Gen 2:2).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.5.9"
     },
     {
       "id": "catena-matt-0618",
@@ -182,6 +476,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.5.9:6f9b11bb:0"
       ]
     },
     {
@@ -200,6 +501,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:matthew.5.9:e5c55ea0:0"
       ]
     }
   ]

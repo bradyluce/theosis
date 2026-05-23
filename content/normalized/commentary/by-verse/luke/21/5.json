@@ -37,24 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2968-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.21.5",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 21:5–8",
-      "excerpt": "Now His disciples did not at all perceive the force of His words, but supposed they were spoken of the end of the world. Therefore asked they Him, saying, Master, but when shall these things be? and what sign, &c.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.21.5:396c90b1:0"
       ]
     },
     {
@@ -94,6 +83,24 @@
       ]
     },
     {
+      "id": "catena-luke-2968-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.21.5",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 21:5–8",
+      "excerpt": "Now His disciples did not at all perceive the force of His words, but supposed they were spoken of the end of the world. Therefore asked they Him, saying, Master, but when shall these things be? and what sign, &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-2965-v5",
       "relation": "verse",
       "targetVerseId": "kjva:luke.21.5",
@@ -102,6 +109,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 21:5–8",
       "excerpt": "How beautiful was every thing relating to the structure of the temple, history informs us, and there are yet preserved remains of it, enough to instruct us in what was once the character of the buildings. But our Lord proclaimed to those that were wondering at the building of the temple, that there should not be left in it one stone upon another. For it was meet that that place, because of the presumption of its worshippers, should suffer every kind of desolation.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:eusebius-caesarea:luke.21.5:db511884:0"
+      ]
+    },
+    {
+      "id": "catena-luke-2973-v5",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.21.5",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 21:5–8",
+      "excerpt": "For there were many leaders when the destruction of Jerusalem was at hand, who declared themselves to be Christ, and that the time of deliverance was drawing nigh. Many heresiarchs also in the Church have preached that the day of the Lord is at hand, whom the Apostles condemn. (2 Thess. 2:2.) Many Antichrists also came in Christ’s name, of whom the first was Simon Magus, who said, This man is the great power of God. (Acts 8:10.)",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 75,
@@ -127,24 +159,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-2973-v5",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.21.5",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 21:5–8",
-      "excerpt": "For there were many leaders when the destruction of Jerusalem was at hand, who declared themselves to be Christ, and that the time of deliverance was drawing nigh. Many heresiarchs also in the Church have preached that the day of the Lord is at hand, whom the Apostles condemn. (2 Thess. 2:2.) Many Antichrists also came in Christ’s name, of whom the first was Simon Magus, who said, This man is the great power of God. (Acts 8:10.)",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.21.5:c4f912e3:1"
       ]
     },
     {
@@ -164,6 +185,57 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.21.5:372b4d90:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 21:5",
+      "excerpt": "And to some who were speaking of the temple, that it was adorned with good stones and gifts, he said: The days will come when, looking at all these things, not one stone will be left upon another that will not be thrown down. For formerly Jerusalem was that great royal city, where the most famous temple had been built to God. But afterwards, when he who was the true temple of God came, and began to reveal the mysteries of the heavenly Jerusalem, that earthly one was destroyed where the heavenly appeared, and not one stone remained upon another in that temple. There was previously a high priest, purifying the people with the blood of bulls and goats; but since the true high priest came, who purified believers with his own blood (Hebrews 13), that former high priest is nowhere to be found, nor is any place left for him. There was an altar previously, and sacrifices were celebrated; but when the true lamb who offered himself as a sacrifice to God came (Hebrews 9), all those things, placed as if for a time, ceased. Therefore, the divine dispensation rightly ensured that the city itself, the temple, and all those things were overturned so that, lest anyone, still a child and sucking from the faith's breast, seeing those things continue, while being astonished at the ritual of sacrifices and the order of ministries, would be taken away by the view of their various forms. But God, foreseeing our weakness and wishing to multiply His Church, caused all those things to be overthrown and utterly removed, so that without any hesitation when those things ceased, we might believe these true things, for which the types in those things preceded.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.21.5"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.21.5:f8e48bdd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-139",
+      "title": "COMMENTARY ON LUKE, HOMILY 139 on luke 21:5",
+      "excerpt": "Some of them showed Christ the mighty works that were in the temple and the beauty of the offerings. They expected that he would admire the spectacle as they did, although he is God and heaven is his throne. He did not allow any regard for these earthly buildings, since they were unimportant. Absolutely nothing compared with the mansions that are above. Dismissing the conversation about them, he turned to what was necessary for their use. Christ forewarned them that however worthy of admiration they might think the temple was, yet at a certain time it would be destroyed from its foundations. The power of the Romans would tear it down and burn Jerusalem with fire, and retribution would be required from Israel for the Lord's murder. They had to suffer these things after the Savior's crucifixion.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-139",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.21.5"
+    },
+    {
+      "id": "hcf:augustine:luke.21.5:9f78773c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:letter-199",
+      "title": "LETTER 199 on luke 21:5",
+      "excerpt": "The future signs that are foretold in the Gospel according to Luke are the same as those in Matthew and Mark. These three tell how the Lord answered his disciples. They asked him when the events that he had foretold of the destruction of the temple would happen. They also asked him what was to be the sign of his coming and of the end of the world. There is no discrepancy in the Gospels as to facts, although one tells one detail that another passes over or describes differently. They rather supplement each other when they are compared, and they thus give direction to the mind of the reader. It would take too long to discuss them all now. The Lord answered their questions by telling what was to happen from that time on: the destruction of Jerusalem that prompted their inquiry, and his coming in the church in which he does not cease to dwell until the end. Christ is recognized when he comes to his own, while his members are daily born. He said of this coming, \"Hereafter you shall see the Son of man coming in the clouds.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:luke.21.5"
     }
   ]
 }

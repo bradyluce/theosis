@@ -4,14 +4,14 @@
   "verseNumber": 34,
   "entries": [
     {
-      "id": "catena-mark-0723-v34",
+      "id": "catena-mark-0725-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.34",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:30–37",
-      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
+      "excerpt": "This ignorance of the disciples proceeds not so much from slowness of intellect, as from love for the Saviour, for they were as yet carnal, and ignorant of the mystery of the cross, they could not therefore believe that He whom they had recognised as the true God, was about to die; being accustomed then to hear Him often talk in figures, and shrinking from the event of His death, they would have it, that something was conveyed figuratively in those things, which he spoke openly concerning His betrayal and passion. It goes on: And they came to Capernaum.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-mark-0725-v34",
+      "id": "catena-mark-0723-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.34",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 9:30–37",
-      "excerpt": "This ignorance of the disciples proceeds not so much from slowness of intellect, as from love for the Saviour, for they were as yet carnal, and ignorant of the mystery of the cross, they could not therefore believe that He whom they had recognised as the true God, was about to die; being accustomed then to hear Him often talk in figures, and shrinking from the event of His death, they would have it, that something was conveyed figuratively in those things, which he spoke openly concerning His betrayal and passion. It goes on: And they came to Capernaum.",
+      "excerpt": "He always mingles together sorrowful and joyful things, that sorrow should not by its suddenness frighten the Apostles, but be borne by them with prepared minds.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -76,6 +76,58 @@
       ]
     },
     {
+      "id": "hcf:theophylact-of-ohrid:mark.9.34:ea59ba09:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 9:34",
+      "excerpt": "The disciples, still having human thoughts, were arguing among themselves about which of them was greater and more honored by Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.9.34"
+    },
+    {
+      "id": "hcf:augustine:mark.9.34:eb749ebb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:the-gospel-of-john-sermon-38",
+      "title": "THE GOSPEL OF JOHN, SERMON 38 on mark 9:34",
+      "excerpt": "Observe a tree, how it first tends downwards, that it may then shoot forth upwards. It fastens its root low in the ground, that it may send forth its top towards heaven. Is it not from humility that it endeavors to rise? But without humility it will not attain to higher things. You are wanting to grow up into the air without a root. Such is not growth, but a collapse.",
+      "takeaway": "",
+      "sourceId": "hcf:source:the-gospel-of-john-sermon-38",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.9.34"
+    },
+    {
+      "id": "hcf:jerome:mark.9.34:bd9c5265:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on mark 9:34",
+      "excerpt": "Where it is to be observed, that the disciples disputed by the way concerning the chief place, but Christ Himself sat down to teach humility; for princes toil while the humble repose.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:mark.9.34"
+    },
+    {
       "id": "catena-mark-0726-v34",
       "relation": "verse",
       "targetVerseId": "kjva:mark.9.34",
@@ -91,6 +143,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.9.34:d9fe62e4:0"
       ]
     },
     {
@@ -109,6 +168,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:mark.9.34:84995043:0"
       ]
     }
   ]

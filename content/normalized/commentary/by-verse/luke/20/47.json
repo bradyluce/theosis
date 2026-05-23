@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.20.47:58f83b91:0"
       ]
     },
     {
@@ -55,6 +62,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.20.47:ed74f884:0"
       ]
     },
     {
@@ -112,6 +126,31 @@
       ]
     },
     {
+      "id": "catena-luke-2956-v47",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.20.47",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 20:45–47",
+      "excerpt": "Because they not only do what is evil, but make a pretence of prayer, so making virtue an excuse for their sin. They also impoverish widows whom they were bound to pity, by their presence driving them to great expenses.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.20.47:feace665:1"
+      ]
+    },
+    {
       "id": "catena-luke-2953-v47",
       "relation": "verse",
       "targetVerseId": "kjva:luke.20.47",
@@ -130,22 +169,73 @@
       ]
     },
     {
-      "id": "catena-luke-2956-v47",
+      "id": "hcf:theophylact-of-ohrid:luke.20.47:b2ec27bb:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.20.47",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 20:45–47",
-      "excerpt": "Because they not only do what is evil, but make a pretence of prayer, so making virtue an excuse for their sin. They also impoverish widows whom they were bound to pity, by their presence driving them to great expenses.",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 20:47",
+      "excerpt": "\"They devour,\" He says, \"the houses of widows,\" filling their bellies and squandering beyond what is proper. And the pretext for this is seemingly pious. For, under the pretense of prayer and spiritual benefit, they teach not fasting, but drunkenness and gluttony, and for this, He says, \"they will receive the greater condemnation,\" because they not only do evil, but also cloak it with prayer. Their appearance is pious, yet they make virtue a pretext for wickedness. Therefore they deserve even greater condemnation, since they bring reproach upon what is good. Widows ought to be pitied, but these men enter their houses supposedly to bless them with lengthy prayers. Meanwhile, the widows are compelled on account of their visits to bear expenses, and are thus ruined.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.20.47"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.20.47:719f9037:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-137",
+      "title": "COMMENTARY ON LUKE, HOMILY 137 on luke 20:47",
+      "excerpt": "To keep the company of the holy disciples free from disgraceful faults, he usefully testifies. He says, \"Beware of the scribes and Pharisees.\" That means do not expose yourselves to be the prey of their vices and do not be partakers of their disregard of God. What was their custom? They walked in the streets beautifully clothed, dragging with them a pompous dignity to catch the praises of those who saw them. While they were wicked and their hearts were full of all dishonesty, they falsely assumed to themselves the reputation of piety. With solemn ways not based on reality, they diligently lengthened their prayers, supposing that unless they used many words, God would not know what their requests were. The Savior of all did not permit his worshipers to act so shamefully. He said, \"When you pray, do not babble as the heathen do. They think that they will be heard for their many words.\" He commanded them to be humble and not lovers of boasting. He commanded them not to pay any regard to the desire of empty glory but rather to seek the honor that comes from above, from God. In such ways, he deposits the knowledge of his mystery. He also appoints instructors of others, as possessing an exact and blameless knowledge of the sacred doctrines. He makes them to know how David's Son is also David's Lord. We also will classify ourselves with them, God the Father illuminating us with divine light in Christ.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-137",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.20.47"
+    },
+    {
+      "id": "hcf:bede:luke.20.47:37fdcf4a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 20:47",
+      "excerpt": "Those who devour the houses of widows, while feigning long prayers, will receive greater damnation. He did not simply say they will receive damnation, but added greater, to indicate that even those who stand praying in corners to be seen by men (Matthew VI) deserve damnation; but those who do these things more lengthily, as if acting more religiously, not only seeking praises from men but also money, will be punished with lengthier damnation. For there are those who, pretending to be righteous and of great merit before God, do not hesitate to take money from any weaklings troubled by the conscience of their sins, as if they would be their advocates in judgment for them. And while normally an outstretched hand assisting a poor person is helped by prayers, these people, primarily in their prayers, watch through the night to take a coin from the poor. To them, the curse of Judah is deservedly applicable: When he is judged, let him go out condemned, and let his prayer become a sin (Psalm CVIII). For he goes out condemned when he is judged, and his prayer turns into sin, who, now esteemed great among men, is found not only unable to intervene for others in the divine examination but not even able to avail by his own merits, and indeed those prayers by which he deceived the human judgment, he suffers punishment among crimes.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.20.47"
+    },
+    {
+      "id": "hcf:bede:luke.20.47:37739a85:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 20:47",
+      "excerpt": "But they seek not only for praise from men, but money; for it follows, Who devour widows' houses, and for a show make long prayers. For pretending to be righteous and of great merit before God, they do not fail to receive large sums of money from the sick and those whose consciences are disturbed with their sins, as though they would be their protectors in the judgment.\r\n\r\nOr because they seek from men praise and money, they are punished with the greater damnation.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.20.47"
     }
   ]
 }

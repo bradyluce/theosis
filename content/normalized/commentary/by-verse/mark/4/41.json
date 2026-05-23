@@ -55,17 +55,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.4.41:d3c0f49a:0"
       ]
     },
     {
-      "id": "catena-mark-0323-v41",
+      "id": "catena-mark-0327-v41",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.41",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
+      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.4.41:3737c378:1"
       ]
     },
     {
@@ -94,14 +108,14 @@
       ]
     },
     {
-      "id": "catena-mark-0327-v41",
+      "id": "catena-mark-0323-v41",
       "relation": "verse",
       "targetVerseId": "kjva:mark.4.41",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
-      "excerpt": "He rebuked His disciples, for not having faith; for it goes on, And he said unto them, Why are ye so fearful? How is it that ye have not faith? For if they had had faith, they would have believed that even when sleeping, He could preserve them safe. There follows, And they feared with a great fear, and said one to another, &c. For they were in doubt about Him, for since He stilled the sea, not with a rod like Moses, nor with prayers as Elisha at the Jordan, nor with the ark as Joshua, the son of Nun, on this account they thought Him truly God, but since He was asleep, they thought Him a man.",
+      "excerpt": "Therefore He allowed them to fall into the fear of danger, that they might experience His power in themselves, who saw others benefitted by Him. But He was sleeping upon the pillow of the ship, that is, on a wooden one.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 70,
@@ -127,6 +141,82 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.4.41:62f14a59:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 4:41",
+      "excerpt": "The disciples said among themselves, \"Who then is this?\" because they still had an indefinite conception of Him. Since Christ calmed the sea by a single command, and not with a rod, like Moses, not with a prayerful cry, like Elisha at the Jordan, not with an ark, like Joshua, for this reason He appeared to them as more than a man; but in that He slept, He appeared to them again as a man.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.4.41"
+    },
+    {
+      "id": "hcf:augustine:mark.4.41:c10276fd:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:sermons-63-1-3",
+      "title": "SERMONS 63.1-3 on mark 4:41",
+      "excerpt": "When you have to listen to abuse, that means you are being buffeted by the wind. When your anger is roused, you are being tossed by the waves. So when the winds blow and the waves mount high, the boat is in danger, your heart is imperiled, your heart is taking a battering. On hearing yourself insulted, you long to retaliate; but the joy of revenge brings with it another kind of misfortune—shipwreck. Why is this? Because Christ is asleep in you. What do I mean? I mean you have forgotten his presence. Rouse him, then; remember him, let him keep watch within you, pay heed to him.… A temptation arises: it is the wind. It disturbs you: it is the surging of the sea. This is the moment to awaken Christ and let him remind you of those words: \"Who can this be? Even the winds and the sea obey him.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:mark.4.41"
+    },
+    {
+      "id": "hcf:ephraim-the-syrian:mark.4.41:889e8ae3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "ephraim-the-syrian",
+      "workId": "hcf:work:ephraim-the-syrian:homily-on-our-lord-50",
+      "title": "HOMILY ON OUR LORD 50 on mark 4:41",
+      "excerpt": "The ship carried his humanity, but the power of his Godhead carried the ship and all that was in it. In order that he might show that even his humanity did not require the ship, instead of the planks which a shipwright puts together and fastens, he, like the architect of creation, made the waters firm and joined them together solidly under his feet. So just as the Lord strengthened the hands of Simeon the priest, that his arms might bear up in the temple the strength that was bearing up all, so did he strengthen the feet of Simon the apostle, that they might bear themselves up on the water. So that name which bore the first-begotten in the temple was afterwards borne up by the first-begotten in the sea.",
+      "takeaway": "",
+      "sourceId": "hcf:source:homily-on-our-lord-50",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c373"
+      ],
+      "targetVerseId": "kjva:mark.4.41"
+    },
+    {
+      "id": "catena-mark-0328-v41",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.4.41",
+      "topicSlugs": [],
+      "personId": "pseudo-jerome",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 4:35–41",
+      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.4.41:8ab40ed5:0"
       ]
     },
     {
@@ -156,24 +246,6 @@
       "workId": "catena-aurea-mark",
       "title": "On Mark 4:35–41",
       "excerpt": "For from the troubling of the sea there arises a certain sound, which appears to be its voice threatening danger, and therefore, by a sort of metaphor, He fitly commands tranquillity by a word signifying silence: just as in the restraining of the winds, which trouble the sea with their violence, He uses a rebuke. For men who are in power are accustomed to curb those, who rudely disturb the peace of mankind, by threatening to punish them; by this, therefore, we are given to understand, that, as a king can repress violent men by threats, and by his edicts sooth the murmurs of his people, so…",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0328-v41",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.4.41",
-      "topicSlugs": [],
-      "personId": "pseudo-jerome",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 4:35–41",
-      "excerpt": "Mystically, however, the hinder part of the ship is the beginning of the Church, in which the Lord sleeps in the body only, for He never sleepeth who keepeth Israel; for the ship with its skins of dead animals keeps in the living, and keeps out the waves, and is bound together by wood, that is, by the cross and the death of the Lord the Church is saved. The pillow is the body of the Lord, on which His Divinity, which is as His head, has come down. But the wind and the sea are devils and persecutors, to whom He says Peace, when He restrains the edicts of impious kings, as He will. The great…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,

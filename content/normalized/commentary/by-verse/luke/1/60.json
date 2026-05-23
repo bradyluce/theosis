@@ -73,6 +73,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.1.60:b7a04e0f:0"
       ]
     },
     {
@@ -109,6 +116,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.1.60:1a30497b:0"
       ]
     },
     {
@@ -146,6 +160,40 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.1.60:3483172d:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 1:60",
+      "excerpt": "Elizabeth spoke of the name, that his name is John, as a prophetess. Or perhaps John himself assigned his own name, for he imparted the gift of prophecy to his mother.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.1.60"
+    },
+    {
+      "id": "hcf:bede:luke.1.60:a05b2f6b:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:homilies-on-the-gospels-2-20",
+      "title": "Homilies on the Gospels 2.20 on luke 1:60",
+      "excerpt": "John means \"the grace of God\" or \"in whom there is grace.\" By this name are expressed the entire extent of the grace of the gospel dispensation which he was to proclaim, and especially the Lord himself, through whom this grace was to be granted to the world.…As to his subsequent declaration and confirmation of the name of John, and the opening of Zechariah's mouth and his speaking, blessing God, it is surely evident that once the grace of the new covenant was manifested by the apostles, a large number of priests also became obedient to the faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.1.60"
     }
   ]
 }

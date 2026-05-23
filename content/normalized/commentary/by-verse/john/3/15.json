@@ -23,14 +23,39 @@
       ]
     },
     {
-      "id": "catena-john-0320-v15",
+      "id": "catena-john-0322-v15",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.15",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 3:14–15",
-      "excerpt": "Having made mention of the gift of baptism, He proceeds to the. source of it, i. e. the cross: And as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up.",
+      "excerpt": "Many dying in the wilderness from the attack of the serpents, Moses, by commandment of the Lord, lifted up a brazen serpent: and those who looked upon it were immediately healed. The lifting up of the serpent is the death of Christ; the cause, by a certain mode of construction, being put for the effect. The serpent was the cause of death, inasmuch as he persuaded man into that sin, by which he merited death. Our Lord, however, did not transfer sin, i. e. the poison of the serpent, to his flesh, but death; in order that in the likeness of sinful flesh, there might be punishment without sin, by…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ],
+      "provenance": [
+        "catena-aurea-john-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:john.3.15:d502327b:0"
+      ]
+    },
+    {
+      "id": "catena-john-0325-v15",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.3.15",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 3:14–15",
+      "excerpt": "As then formerly he who looked to the serpent that was lifted up, was healed of its poison, and saved from death; so now he who is conformed to the likeness of Christ’s death by faith and the grace of baptism, is delivered both from sin by justification, and from death by the resurrection: as He Himself saith; That whosoever believeth on Him should not perish, but have everlasting life. What need then is there that the child should be conformed by baptism to the death of Christ, if he be not altogether tainted by the poisonous bite of the serpent?",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -41,14 +66,14 @@
       ]
     },
     {
-      "id": "catena-john-0322-v15",
+      "id": "catena-john-0327-v15",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.15",
       "topicSlugs": [],
       "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 3:14–15",
-      "excerpt": "Many dying in the wilderness from the attack of the serpents, Moses, by commandment of the Lord, lifted up a brazen serpent: and those who looked upon it were immediately healed. The lifting up of the serpent is the death of Christ; the cause, by a certain mode of construction, being put for the effect. The serpent was the cause of death, inasmuch as he persuaded man into that sin, by which he merited death. Our Lord, however, did not transfer sin, i. e. the poison of the serpent, to his flesh, but death; in order that in the likeness of sinful flesh, there might be punishment without sin, by…",
+      "excerpt": "But there is this difference between the figure and the reality, that the one recovered from temporal death, the other from eternal.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -77,24 +102,6 @@
       ]
     },
     {
-      "id": "catena-john-0325-v15",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.3.15",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 3:14–15",
-      "excerpt": "As then formerly he who looked to the serpent that was lifted up, was healed of its poison, and saved from death; so now he who is conformed to the likeness of Christ’s death by faith and the grace of baptism, is delivered both from sin by justification, and from death by the resurrection: as He Himself saith; That whosoever believeth on Him should not perish, but have everlasting life. What need then is there that the child should be conformed by baptism to the death of Christ, if he be not altogether tainted by the poisonous bite of the serpent?",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-0326-v15",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.15",
@@ -113,14 +120,14 @@
       ]
     },
     {
-      "id": "catena-john-0327-v15",
+      "id": "catena-john-0320-v15",
       "relation": "verse",
       "targetVerseId": "kjva:john.3.15",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 3:14–15",
-      "excerpt": "But there is this difference between the figure and the reality, that the one recovered from temporal death, the other from eternal.",
+      "excerpt": "Having made mention of the gift of baptism, He proceeds to the. source of it, i. e. the cross: And as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -165,6 +172,57 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:augustine:john.3.15:38c53026:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "hcf:work:augustine:tractates-on-john-12",
+      "title": "Tractates on John 12 on john 3:15",
+      "excerpt": "He endured death, then; but death He hanged on the cross, and mortal men are delivered from death. The Lord calls to mind a great matter, which was done in a figure with them of old: \"And as Moses,\" saith He, \"lifted up the serpent in the wilderness, so must the Son of man be lifted up; that every one who believeth on Him may not perish, but have everlasting life.\" A great mystery is here, as they who read know. Again, let them hear, as well they who have not read as they who have forgotten what perhaps they had heard or read. The people Israel were fallen helplessly in the wilderness by the bite of serpents; they suffered a great calamity by many deaths: for it was the stroke of God correcting and scourging them that He might instruct them. In this was shown a great mystery, the figure of a thing to come: the Lord Himself testifies in this passage, so that no man can give another interpretation than that which the truth indicates concerning itself. Now Moses was ordered by the Lord to make a brazen serpent, and to raise it on a pole in the wilderness, and to admonish the people Israel, that, when any had been bitten by a serpent, he should look to that serpent raised up on the pole. This was done: men were bitten; they looked and were healed. What are the biting serpents? Sins, from the mortality of the flesh. What is the serpent lifted up? The Lord's death on the cross. For as death came by the serpent, it was figured by the image of a serpent. The serpent's bite was deadly, the Lord's death is life-giving. A serpent is gazed on that the serpent may have no power. What is this? A death is gazed on, that death may have no power. But whose death? The death of life: if it may be said, the death of life; ay, for it may be said, but said wonderfully. But should it not be spoken, seeing it was a thing to be done? Shall I hesitate to utter that which the Lord has deigned to do for me? Is not Christ the life? And yet Christ hung on the cross. Is not Christ life? And yet Christ was dead. But in Christ's death, death died. Life dead slew death; the fullness of life swallowed up death; death was absorbed in the body of Christ. So also shall we say in the resurrection, when now triumphant we shall sing, \"Where, O death, is thy contest? Where, O death, is thy sting?\" Meanwhile brethren, that we may be healed from sin, let us now gaze on Christ crucified; for \"as Moses,\" saith He, \"lifted up the serpent in the wilderness, so must the Son of man be lifted up; that whosoever believeth on Him may not perish, but have everlasting life.\" Just as they who looked on that serpent perished not by the serpent's bites, so they who look in faith on Christ's death are healed from the bites of sins. But those were healed from death to temporal life; whilst here He saith, \"that they may have everlasting life.\" Now there is this difference between the figurative image and the real thing: the figure procured temporal life; the reality, of which that was the figure, procures eternal life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c430"
+      ],
+      "targetVerseId": "kjva:john.3.15"
+    },
+    {
+      "id": "hcf:john-chrysostom:john.3.15:5e701185:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-27",
+      "title": "Homily on the Gospel of John 27 on john 3:15",
+      "excerpt": "Seest thou the cause of the Crucifixion, and the salvation which is by it? Seest thou the relationship of the type to the reality? there the Jews escaped death, but the temporal, here believers the eternal; there the hanging serpent healed the bites of serpents, here the Crucified Jesus cured the wounds inflicted by the spiritual dragon; there he who looked with his bodily eyes was healed, here he who beholds with the eyes of his understanding put off all his sins; there that which hung was brass fashioned into the likeness of a serpent, here it was the Lord's Body, builded by the Spirit; there a serpent bit and a serpent healed, here death destroyed and a Death saved. But the snake which destroyed had venom, that which saved was free from venom; and so again was it here, for the death which slew us had sin with it, as the serpent had venom; but the Lord's Death was free from all sin, as the brazen serpent from venom. For, saith Peter, \"He did no sin, neither was guile found in His mouth.\" And this is what Paul also declares, \"And having spoiled principalities and powers, He made a show of them openly, triumphing over them in it.\" For as some noble champion by lifting on high and dashing down his antagonist, renders his victory more glorious, so Christ, in the sight of all the world, cast down the adverse powers, and having healed those who were smitten in the wilderness, delivered them from all venomous beasts that vexed them, by being hung upon the Cross. Yet He did not say, \"must hang,\" but, \"must be lifted up\"; for He used this which seemed the milder term, on account of His hearer, and because it was proper to the type.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.3.15"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.3.15:3b260d3a:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 3:15",
+      "excerpt": "Now the fruit of Christ's passion is eternal life; hence he says, so that everyone who believes in him, performing good works, may not be lost, but have eternal life. And this fruit corresponds to the fruit of the symbolic serpent. For whoever looked upon the serpent of bronze was freed from poison and his life was preserved. But he who looks upon the lifted up Son of Man, and believes in the crucified Christ, he is freed from poison and sin: \"Whoever believes in me will never die\" (below 11:26), and is preserved for eternal life. \"These things are written that you may believe... and that believing you may have life in his name\" (below 20:31).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.3.15"
     }
   ]
 }

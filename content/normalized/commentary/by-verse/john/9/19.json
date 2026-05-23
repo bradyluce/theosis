@@ -23,14 +23,32 @@
       ]
     },
     {
-      "id": "catena-john-1282-v19",
+      "id": "catena-john-1286-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.19",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
+      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-john-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "john"
+      ]
+    },
+    {
+      "id": "catena-john-1288-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:john.9.19",
+      "topicSlugs": [],
+      "personId": "augustine",
+      "workId": "catena-aurea-john",
+      "title": "On John 9:18–23",
+      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -77,24 +95,6 @@
       ]
     },
     {
-      "id": "catena-john-1286-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:john.9.19",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-john",
-      "title": "On John 9:18–23",
-      "excerpt": "As f to say, We might justly be compelled to speak for an infant, that could not speak for itself: but he, though blind from his birth, has been always able to speak.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-john-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "john"
-      ]
-    },
-    {
       "id": "catena-john-1287-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.19",
@@ -113,14 +113,14 @@
       ]
     },
     {
-      "id": "catena-john-1288-v19",
+      "id": "catena-john-1282-v19",
       "relation": "verse",
       "targetVerseId": "kjva:john.9.19",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-john",
       "title": "On John 9:18–23",
-      "excerpt": "It was no disadvantage to be put out of the synagogue: whom they cast out, Christ took in.Therefore said his parents, He is of age, ask him.",
+      "excerpt": "The Pharisees being unable, by intimidation, to deter the blind man from publicly proclaiming his Benefactor, try to nullify the miracle through the parents: But the Jews did not believe concerning him, that he had been blind, and received his sight, until they had called the parents of him that had received his sight.",
       "takeaway": "",
       "sourceId": "catena-aurea-john-source",
       "rank": 85,
@@ -183,6 +183,57 @@
         "patristic",
         "john"
       ]
+    },
+    {
+      "id": "hcf:john-chrysostom:john.9.19:96f6dafc:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-john-58",
+      "title": "Homily on the Gospel of John 58 on john 9:19",
+      "excerpt": "\"Is this your son?\" (and they said not, \"who once was blind,\" but) \"of whom ye say that he was born blind?\"\r\n\r\nAs if they were acting deceitfully, and plotting on behalf of Christ. O ye accursed, utterly accursed! What father would choose to invent such falsehoods against his child? For they almost say, \"Whom ye have made out blind, and not only so, but have spread abroad the report everywhere.\" \"How then doth he now see?\"\r\n\r\nO folly! \"Yours,\" saith one, \"is the trick and the contrivance.\" For by these two things do they attempt to lead the parents to a denial; by using the words, \"Whom ye say,\" and, \"How then doth he now see?\" Now when there were three questions asked, whether he was their son, whether he had been blind, and how he received his sight, the parents only acknowledge two of them, but do not add the third. And this came to pass for the sake of the truth, in order that none other save the man that was healed, who was also worthy of credit, should acknowledge this matter.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:john.9.19"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:john.9.19:3bd97613:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-john",
+      "title": "Commentary on John on john 9:19",
+      "excerpt": "They do not say \"is this your son, who was once blind,\" but rather \"of whom you say,\" as if speaking thus: \"whom you made out to be blind and spread the rumor of this everywhere, entirely fabricated and false.\" But, O impious Pharisees! What father would allow himself to lie so about his own child?\r\nThey press them from two sides and compel them to renounce their son: on one side with the expression \"of whom you speak,\" and on the other with the question \"how does he now see?\" Do you see? By the supposedly false testimony of the parents that their son had formerly been blind, they diminish this miracle — that he subsequently received his sight. They say: \"Either the fact that he sees now is false, or the fact that he was blind is false. But that he can see is true; therefore, you have falsely spread the claim that he was formerly blind.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:john.9.19"
+    },
+    {
+      "id": "hcf:thomas-aquinas:john.9.19:644e4cc4:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-john",
+      "title": "Commentary on John on john 9:19",
+      "excerpt": "1332 The Pharisees now question his parents. Here they ask about three things. First, about their son, saying Is this your son? Secondly, about his blindness; and so they add, who you say was born blind. They did not say, \"who at one time was blind,\" but who you say, implying that they made this up. What father would lie in such a way about his son? Yet they were trying to make him say he did.\r\n\r\nThirdly, they ask how he had obtained his sight, How then does he now see? This was like saying: Either it is false that he now sees, or that he was once blind; but obviously the truth is that he sees; therefore it was false to say that he had been blind: \"The powerful man will test you through much talking, and while he smiles he will be examining you\" (Sir 13:11).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:john.9.19"
     }
   ]
 }

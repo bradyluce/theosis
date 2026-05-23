@@ -19,6 +19,31 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:mark.6.30:78475652:0"
+      ]
+    },
+    {
+      "id": "catena-mark-0453-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.30",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:30–34",
+      "excerpt": "How arose the necessity for giving rest to His disciples, He shews, when He adds, For there were many coming and going, and they had no leisure so much as to eat; we may then see how great was the happiness of that time, both from the toil of the teachers, and from the diligence of the learners. It goes on, And embarking in a ship, they departed into a desert place privately. The disciples did not enter into the ship alone, but taking up the Lord with them, they went to a desert place, as Matthew shews. (Matt. 14) Here He tries the faith of the multitude, and by seeking a desert place He…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 75,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
       ]
     },
     {
@@ -37,17 +62,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:mark.6.30:c9d88686:0"
       ]
     },
     {
-      "id": "catena-mark-0453-v30",
+      "id": "catena-mark-0457-v30",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.30",
       "topicSlugs": [],
       "personId": "bede",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:30–34",
-      "excerpt": "How arose the necessity for giving rest to His disciples, He shews, when He adds, For there were many coming and going, and they had no leisure so much as to eat; we may then see how great was the happiness of that time, both from the toil of the teachers, and from the diligence of the learners. It goes on, And embarking in a ship, they departed into a desert place privately. The disciples did not enter into the ship alone, but taking up the Lord with them, they went to a desert place, as Matthew shews. (Matt. 14) Here He tries the faith of the multitude, and by seeking a desert place He…",
+      "excerpt": "Leaving also Judæa, the holy preachers, in the desert of the Church, overwhelmed by the burden of their tribulations amongst the Jews, obtained rest by the imparting of the grace of faith to the Gentiles.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
@@ -76,24 +108,6 @@
       ]
     },
     {
-      "id": "catena-mark-0457-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.30",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:30–34",
-      "excerpt": "Leaving also Judæa, the holy preachers, in the desert of the Church, overwhelmed by the burden of their tribulations amongst the Jews, obtained rest by the imparting of the grace of faith to the Gentiles.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0459-v30",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.30",
@@ -105,42 +119,6 @@
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0449-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.30",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:30–34",
-      "excerpt": "Let us also learn, when we are sent on any mission, not to go far away, and not to overstep the bounds of the office committed, but to go often to him, who sends us, and report all that we have done and taught; for we must not only teach but act.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
-      "id": "catena-mark-0452-v30",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.6.30",
-      "topicSlugs": [],
-      "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 6:30–34",
-      "excerpt": "Again, He goes into a desert place from His humility. But Christ makes His disciples rest, that men who are set over others may learn, that they who labour in any work or in the word deserve rest, and ought not to labour continually.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 70,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -166,6 +144,83 @@
       ]
     },
     {
+      "id": "catena-mark-0449-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.30",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:30–34",
+      "excerpt": "Let us also learn, when we are sent on any mission, not to go far away, and not to overstep the bounds of the office committed, but to go often to him, who sends us, and report all that we have done and taught; for we must not only teach but act.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:mark.6.30:4dd4e109:1"
+      ]
+    },
+    {
+      "id": "catena-mark-0452-v30",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.6.30",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 6:30–34",
+      "excerpt": "Again, He goes into a desert place from His humility. But Christ makes His disciples rest, that men who are set over others may learn, that they who labour in any work or in the word deserve rest, and ought not to labour continually.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:mark.6.30:a9d7ae86:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-mark",
+      "title": "Commentary on Mark on mark 6:30",
+      "excerpt": "After their preaching, the apostles gather to Jesus. This should be a lesson for us that we too, having been chosen for some ministry, should not depart from obedience to the one who chose us or exalt ourselves before him, but should acknowledge him as head, turn to him, and report to him everything we have done and taught (one must not only teach but also act).",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:mark.6.30"
+    },
+    {
+      "id": "hcf:bede:mark.6.30:2c0fd4e3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-mark",
+      "title": "On the Gospel of Mark on mark 6:30",
+      "excerpt": "And the apostles, gathering together, reported to Jesus all that they had done and taught. Not only did the apostles report to the Lord what they had done and taught themselves, but also what John suffered while they were engaged in teaching, or his own disciples or those disciples of John reported to him, as Matthew describes. Hence follows that which comes next:",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:mark.6.30"
+    },
+    {
       "id": "catena-mark-0447-v30",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.30",
@@ -181,17 +236,24 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:mark.6.30:70db6776:0"
       ]
     },
     {
-      "id": "catena-mark-0448-v30",
+      "id": "catena-mark-0458-v30",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.30",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:30–34",
-      "excerpt": "For they return to the fountain-head whence the streams flow; those who are sent by God, always offer up thanks for those things which they have received.",
+      "excerpt": "Little indeed is the rest of the saints here on earth, long is their labour, but afterwards, they are bidden to rest from their labours. But as in the ark of Noah, the animals that were within were sent forth, and they that were without rushed in, so is it in the Church, Judas went, the thief came to Christ. But as long as men go back from the faith, the Church can have no refuge from grief; for Rachel weeping for her children would not be comforted. Moreover, this world is not the banquet, in which the new wine is drank, when the new song will be sung by men made anew, when this mortal shall…",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -220,14 +282,14 @@
       ]
     },
     {
-      "id": "catena-mark-0458-v30",
+      "id": "catena-mark-0448-v30",
       "relation": "verse",
       "targetVerseId": "kjva:mark.6.30",
       "topicSlugs": [],
       "personId": "pseudo-jerome",
       "workId": "catena-aurea-mark",
       "title": "On Mark 6:30–34",
-      "excerpt": "Little indeed is the rest of the saints here on earth, long is their labour, but afterwards, they are bidden to rest from their labours. But as in the ark of Noah, the animals that were within were sent forth, and they that were without rushed in, so is it in the Church, Judas went, the thief came to Christ. But as long as men go back from the faith, the Church can have no refuge from grief; for Rachel weeping for her children would not be comforted. Moreover, this world is not the banquet, in which the new wine is drank, when the new song will be sung by men made anew, when this mortal shall…",
+      "excerpt": "For they return to the fountain-head whence the streams flow; those who are sent by God, always offer up thanks for those things which they have received.",
       "takeaway": "",
       "sourceId": "catena-aurea-mark-source",
       "rank": 55,
@@ -235,6 +297,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.6.30:b5d6a04d:0"
       ]
     }
   ]

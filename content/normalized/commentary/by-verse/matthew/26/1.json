@@ -37,6 +37,13 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:jerome:matthew.26.1:e725facc:0"
       ]
     },
     {
@@ -73,17 +80,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:hilary-poitiers:matthew.26.1:0c3cf141:0"
       ]
     },
     {
-      "id": "catena-matt-3676-v1",
+      "id": "catena-matt-3683-v1",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.1",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:1–2",
-      "excerpt": "Yet it is not “all” barely, but “all these;” for there were other sayings which He must speak before He should be delivered up.",
+      "excerpt": "He foretels His crucifixion to His disciples, adding, “And the Son of Man shall be delivered to be crucified;” thus fortifying them against that shock of surprise, which the sight of their Master, led forth to crucifixion, would otherwise have occasioned them. And He expresses it impersonally “shall be delivered,” because God delivered Him up in mercy to the human race, Judas from covetousness, the Priest for envy, the Devil through fear that through His teaching the human race would be plucked out of His hand, little aware how much more that would be effected by His death, than either by His…",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
@@ -109,17 +123,24 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:origen:matthew.26.1:03d793eb:0"
       ]
     },
     {
-      "id": "catena-matt-3683-v1",
+      "id": "catena-matt-3676-v1",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.1",
       "topicSlugs": [],
       "personId": "origen",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:1–2",
-      "excerpt": "He foretels His crucifixion to His disciples, adding, “And the Son of Man shall be delivered to be crucified;” thus fortifying them against that shock of surprise, which the sight of their Master, led forth to crucifixion, would otherwise have occasioned them. And He expresses it impersonally “shall be delivered,” because God delivered Him up in mercy to the human race, Judas from covetousness, the Priest for envy, the Devil through fear that through His teaching the human race would be plucked out of His hand, little aware how much more that would be effected by His death, than either by His…",
+      "excerpt": "Yet it is not “all” barely, but “all these;” for there were other sayings which He must speak before He should be delivered up.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 70,
@@ -145,6 +166,38 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:rabanus-maurus:matthew.26.1:4e9844b5:0"
+      ]
+    },
+    {
+      "id": "catena-matt-3681-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.1",
+      "topicSlugs": [],
+      "personId": "remigius-auxerre",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:1–2",
+      "excerpt": "Mystically, that is called the Passover, because on that day Christ passed out of the world to His Father, from corruption to incorruption, from life to death, or because He redeemed the world by causing it savingly to pass from the slavery of the Devil.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 65,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:remigius-auxerre:matthew.26.1:ba5d2b93:0"
       ]
     },
     {
@@ -166,22 +219,106 @@
       ]
     },
     {
-      "id": "catena-matt-3681-v1",
+      "id": "hcf:origen:matthew.26.1:6d7786fb:1",
       "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.1",
       "topicSlugs": [],
-      "personId": "remigius-auxerre",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:1–2",
-      "excerpt": "Mystically, that is called the Passover, because on that day Christ passed out of the world to His Father, from corruption to incorruption, from life to death, or because He redeemed the world by causing it savingly to pass from the slavery of the Devil.",
+      "personId": "origen",
+      "workId": "hcf:work:origen:commentary-on-matthew-74",
+      "title": "COMMENTARY ON MATTHEW 74 on matthew 26:1",
+      "excerpt": "We know that the Father had set the hour of his Passion. For he said to his mother at one point, \"My hour has not yet come.\" In another place, \"Now is my soul troubled; and what shall I say? Father, save me from this hour! No, this is why I came to this hour.\" And elsewhere, \"Father, the hour has come! Glorify your Son, that your Son may glorify you.\" Since the Father set the hour of his Son's Passion, he could not suffer anything from the time the devil had departed from him until his Passion.",
       "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 65,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
+        "hcf",
+        "c253"
+      ],
+      "targetVerseId": "kjva:matthew.26.1"
+    },
+    {
+      "id": "hcf:jerome:matthew.26.1:3ffdd2f2:2",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:1",
+      "excerpt": "(Chapter 26, Verses 1 and following) And it came to pass, when Jesus had finished saying all these words, He said to His disciples: You know that after two days the Passover will take place, and the Son of Man will be handed over to be crucified. Let those who think that the Savior feared death be ashamed, and let them realize that He spoke out of fear of suffering when He said, 'Father, if it is possible, let this cup pass from Me' (Luke 22:42). He knew that He would be handed over to be crucified two days after the Passover, and yet He does not avoid the snares, nor does He flee in fear, to the extent that, even when the others do not want to go, He continues boldly, as Thomas says: 'Let us also go, that we may die with Him' (John 11:16). And desiring to put an end to the carnal celebration, and while the shadow is passing, to restore the truth of Easter, he said: 'With desire I have desired to eat this pasch with you, before I suffer' (Luke 22:15). Indeed, our pasch is sacrificed, Christ, if, however, we eat it in the unleavened bread of sincerity and truth (1 Corinthians 5:7). Furthermore, when he says 'After two days the pasch shall be' (Matthew 26:2), let us seek with a simple understanding that which is sacred, without neglecting the sacrament. After two days of clear light, the true Passover of the world is celebrated, of the old and new Testament. The Passover, which is called in Hebrew Phase (), is not named after suffering as many suppose, but after the passage: because the exterminator, seeing the blood, passed over the doors of the Israelites and did not strike them. Or rather the Lord himself, providing assistance, walked above his people. In the book of Exodus (Ch. XI, XII), which we will discuss more fully if life permits, we can find more about this. But our passage, that is, the Passover, is celebrated in such a way that, leaving behind earthly things and Egypt, we hasten to heavenly things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.1"
+    },
+    {
+      "id": "hcf:jerome:matthew.26.1:aa71aaad:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-4-26-8-9",
+      "title": "COMMENTARY ON MATTHEW 4.26.8-9 on matthew 26:1",
+      "excerpt": "Let them blush with shame who think the Savior dreaded death and said out of fear of suffering, \"Father, if it be possible, let this cup pass from me.\" After two days, about to celebrate the Passover, he knew that he was to be betrayed and crucified. However, he did not turn away from the snares or take flight in fear. While the rest were unwilling to proceed, he remained unruffled when Thomas said, \"Let us go that we may die with him.\" Wishing to put an end to the earthly festivity and to declare the truth in the passing shadow of Passover, he said, \"I have earnestly desired to eat this Passover with you before I suffer.\" Indeed, \"Christ, our paschal lamb, has been sacrificed\" if we eat it with \"the unleavened bread of sincerity and truth.\" Furthermore, because he says, \"After two days the Passover will be here\" and omits a simple explanation, we should seek what is holy. After two days of the brilliant light of the Old and New Testaments, the Passover is celebrated for the world. This Passover, called pesaḥin Hebrew, is not named after Christ's suffering as many believe.It refers to the \"passing over,\" when the destroying angel saw the blood on the doors of the Israelites, passed by and did not strike them down. In other words, the Lord, giving help to his people, came down from above. Our passing over—that is to say, pesaḥ—will be celebrated if we put behind us both earthly things and Egypt and move on to heavenly things.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-4-26-8-9",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.1"
+    },
+    {
+      "id": "hcf:john-chrysostom:matthew.26.1:3f61423c:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:homily-on-the-gospel-of-matthew-79",
+      "title": "Homily on the Gospel of Matthew 79 on matthew 26:1",
+      "excerpt": "\"And it came to pass, when Jesus had finished these sayings, He said unto His disciples, Ye know that after two days is the passover, and the Son of Man is betrayed to be crucified.\" In good season again doth He speak of the passion, when He had reminded them of the kingdom, and of the recompense there, and of the deathless punishment; as though He had said, Why are ye afraid at the dangers that are for a season, when such good things await you?\r\n\r\nBut mark thou, I pray thee, how He hath in all His first sayings after a new manner worked up and thrown into the shade what was most painful to them. For He said not, Ye know that after two days I am betrayed, but, \"Ye know that after two days is the passover,\" to show that what is done is a mystery and that a feast and celebration is being kept for the salvation of the world, and that with foreknowledge He suffered all. So then, as though this were sufficient consolation for them, He did not even say anything to them now about a resurrection; for it was superfluous, after having discoursed so much about it, to speak of it again. And moreover, as I said, He shows that even His very passion is a deliverance from countless evils, having by the passover reminded them of the ancient benefits in Egypt.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407"
+      ],
+      "targetVerseId": "kjva:matthew.26.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:matthew.26.1:7606d7fb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:1",
+      "excerpt": "And it came to pass, when Jesus had finished all these sayings, He said unto His disciples, Ye know that after two days it is the Pascha, and the Son of man is betrayed to be crucified. After speaking of the kingdom and of retribution, it was opportune that He should then speak also concerning His own Passion, all but saying, \"And those who crucify Me shall merit the fire.\"",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:matthew.26.1"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.26.1:0132c20b:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:1",
+      "excerpt": "After the Evangelist set forth the things preparatory to the passion, here he approaches the passion of Christ; and it is divided into two parts: because first the passion is narrated as regards the things that were done by the Jews; second, as regards the things done by the gentiles, 27:1, and when morning was come etc. Concerning the first he does two things. First, the foretelling of the Lord's passion is set forth; second, the passion and its order are narrated, at then went one etc. The passion is foretold in three ways: by the word of Christ, by the counsel of his enemies, and thirdly by the deed and service of a woman. The second at then were gathered together etc.; the third at and when Jesus was etc. Concerning the first, he sets forth the order of the foretelling and the foretelling itself. The order: and it came to pass, when he had ended. And he says this because he alone is the one who can bring things to completion. We can begin, but we cannot bring things to completion, according to Ecclesiastes 4: we say many things and fail. Likewise he says these words, namely those which he had spoken from the beginning of his preaching, from when he had said: do penance, for the kingdom of heaven is at hand. Or the words which he had spoken concerning the foretelling of glory, because the passion was the exaltation of glory; Philippians 2:9: for which cause God also hath exalted him and hath given him a name which is above all names: that in the name of Jesus every knee should bow, of those that are in heaven, on earth, and under the earth, and that every tongue should confess that the Lord Jesus Christ is in the glory of God the Father. Likewise he does not say merely all, but all these, because he spoke all things for the benefit of believers and of faith.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.26.1"
     }
   ]
 }

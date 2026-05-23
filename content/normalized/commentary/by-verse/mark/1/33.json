@@ -94,6 +94,24 @@
       ]
     },
     {
+      "id": "catena-mark-0107-v33",
+      "relation": "verse",
+      "targetVerseId": "kjva:mark.1.33",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-mark",
+      "title": "On Mark 1:32–34",
+      "excerpt": "And Luke does not contradict this, when he says, that devils came out of many, crying out and saying, Thou art Christ the Son of God: (Luke 4:41) for he subjoins, And he rebuking them, suffered them not to speak; for Mark, who passes over many things for the sake of brevity, speaks about what happened subsequently to the abovementioned words.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-mark-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "mark"
+      ]
+    },
+    {
       "id": "catena-mark-0102-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.33",
@@ -130,24 +148,6 @@
       ]
     },
     {
-      "id": "catena-mark-0107-v33",
-      "relation": "verse",
-      "targetVerseId": "kjva:mark.1.33",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-mark",
-      "title": "On Mark 1:32–34",
-      "excerpt": "And Luke does not contradict this, when he says, that devils came out of many, crying out and saying, Thou art Christ the Son of God: (Luke 4:41) for he subjoins, And he rebuking them, suffered them not to speak; for Mark, who passes over many things for the sake of brevity, speaks about what happened subsequently to the abovementioned words.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-mark-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "mark"
-      ]
-    },
-    {
       "id": "catena-mark-0109-v33",
       "relation": "verse",
       "targetVerseId": "kjva:mark.1.33",
@@ -163,6 +163,13 @@
         "catena-aurea",
         "patristic",
         "mark"
+      ],
+      "provenance": [
+        "catena-aurea-mark-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-jerome:mark.1.33:9987793e:0"
       ]
     }
   ]

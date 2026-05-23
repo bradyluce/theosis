@@ -19,24 +19,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1538-v1",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.10.1",
-      "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 10:1–2",
-      "excerpt": "God had made known by the Prophets that the preaching of the Gospel of salvation was to embrace not only Israel, but also the Gentile nations; and therefore after the twelve Apostles, there were other seventy-two (Vulg. septuaginta duos.) also appointed by Christ, as it is said, After these things the Lord appointed other seventy-two also.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.10.1:c7625c93:0"
       ]
     },
     {
@@ -48,6 +37,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 10:1–2",
       "excerpt": "An outline of this ordinance also was set forth in the words of Moses, who at the command of God chose out seventy, upon whom God poured out His Spirit. In the book of Numbers also it was written of the children of Israel, that they came to Elim, which is by interpretation “ascent,” and there were there twelve fountains of water, and seventy palm trees. (Numb. 33:9.) For when we fly to spiritual refreshment, we shall find twelve fountains, namely, the holy Apostles, from whom we imbibe the knowledge of salvation as from the well-springs of the Saviour; (Isai. 12:3.) and seventy palms, that…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.10.1:f0548b0c:0"
+      ]
+    },
+    {
+      "id": "catena-luke-1538-v1",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.10.1",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 10:1–2",
+      "excerpt": "God had made known by the Prophets that the preaching of the Gospel of salvation was to embrace not only Israel, but also the Gentile nations; and therefore after the twelve Apostles, there were other seventy-two (Vulg. septuaginta duos.) also appointed by Christ, as it is said, After these things the Lord appointed other seventy-two also.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 80,
@@ -73,6 +87,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gregory-the-great:luke.10.1:86b898eb:0"
       ]
     },
     {
@@ -91,6 +112,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.10.1:fc63525c:0"
       ]
     },
     {
@@ -110,6 +138,180 @@
         "patristic",
         "luke"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.10.1:b94c50bb:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:1",
+      "excerpt": "After these things, the Lord appointed another seventy-two. Just as the twelve apostles clearly represented and foreshadowed the role of bishops, it is to be understood that these seventy-two represented the figure of presbyters, that is, priests of the second order. Although in the earliest times of the Church, as the Apostolic Scripture bears witness, both groups were called presbyters, and both were called bishops. One term signifies the maturity of wisdom, the other the diligence of pastoral care. The fact that seventy-two are sent out is appropriate. Either because the Gospel was to be preached to the same number of nations in the world, just as twelve tribes of Israel were to be embodied with respect to foreign peoples, or that by the very number of preachers, the whole world was to be illuminated by the Gospel of the supreme and indivisible Trinity. Just as it is established that the sun breathes its light's course upon the world through seventy-two hours over three days. For indeed, the Lord Himself calls Himself the day, and His apostles the hours, saying: \"Are there not twelve hours in a day? If anyone walks in the day, he does not stumble\" (John XI). And it is well commanded in the Psalms: \"Declare His salvation from day to day\" (Psalm XCV), that is, light from light, true God from true God (John I). Moreover, in many places in Holy Scripture, the mystery of the Trinity is shown through three days, especially because the Lord rose from the dead on the third day. And in the Old Testament, the people arriving at Mount Sinai received the law on the third day. Similarly, they crossed the Jordan River, to which the grace of baptism is commended, on the third day after they reached it.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:bede:luke.10.1:0ea48cd2:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 10:1",
+      "excerpt": "And he sent them two by two before his face into every city and place where he himself was about to come. For there are two precepts of charity, namely, the love of God and of neighbor, and charity cannot be less than between two (for no one properly says he has charity for himself, but his love reaches out to another, so that charity may exist). The Lord sends the disciples two by two to preach, so that he may silently imply to us that anyone who does not have charity towards another should by no means undertake the duty of preaching. But it is well said that he sent them before his face into every city and place where he himself was about to come. For the Lord follows his preachers, because preaching goes before, and then the Lord comes to the habitation of our mind. Words of exhortation precede, and through these, the truth is received in the mind.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:bede:luke.10.1:76c7abae:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-tabernacle-3",
+      "title": "On the Tabernacle 3 on luke 10:1",
+      "excerpt": "The number of the twelve apostles marked the beginning of the episcopal rank. It is also apparent that the seventy-two disciples, who were also sent out by the Lord to preach the word, signify in their selection the lesser rank of the priesthood that is now called the presbyterate. For the same reason, it is appropriate that these seventy-two figured in the last part of the priestly clothing, as those twelve had been in the first. It was fitting that the type of those who would occupy a higher rank in the body of the High Priest (that is, in the church of Christ) should have a higher place in the typical clothing of the Old Testament high priest.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:gregory-the-great:luke.10.1:ecc5f271:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-the-great",
+      "workId": "hcf:work:gregory-the-great:forty-gospel-homilies-homily-17",
+      "title": "Forty Gospel Homilies, Homily 17 on luke 10:1",
+      "excerpt": "Our Lord and Savior, dearest brothers, sometimes admonishes us through words, and sometimes through deeds. For His very actions are commandments, because when He does something in silence, He makes known what we ought to do. For behold, He sends His disciples out to preach in pairs, because there are two commandments of charity, namely the love of God and of neighbor, and charity cannot exist between fewer than two persons. For no one is properly said to have charity toward himself, but love extends toward another so that it may be charity. The Lord sends His disciples to preach in pairs, so that by this He may silently indicate to us that whoever does not have charity toward another should by no means undertake the office of preaching.\r\n\r\nIt is well said that he sent them before his face into every city and place where he himself was about to come. For the Lord follows his preachers, because preaching comes first, and then the Lord comes to the dwelling place of our mind, when words of exhortation run ahead, and through these truth is received in the mind. For thus Isaiah says to these same preachers: Prepare the way of the Lord, make straight the paths of our God. Thus the Psalmist says to them: Make a way for him who ascends over the setting. For the Lord ascended over the setting because from that by which he fell in his passion, from that same thing he manifested his greater glory by rising again. He ascended over the setting, namely, because he trampled down by rising again the death which he had endured. Therefore we make a way for him who ascends over the setting when we preach his glory to your minds, so that he himself also, coming afterward, may illuminate them through the presence of his love.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c604"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:origen:luke.10.1:e87d89ff:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "origen",
+      "workId": "hcf:work:origen:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:1",
+      "excerpt": "Likewise also the twelve were reckoned by two and two, as Matthew shows in his enumeration of them. (Matt. 10:2.) For that two should be joined in service, seems from the word of God to be an ancient custom. For God led Israel out of Egypt by the hands of Moses and Aaron. Joshua and Caleb also, united together, appeased the people who had been provoked by the twelve spies. (Numb. 13, 14. Ex. 12.) Hence it is said, A brother assisted by a brother is as a fortified city. (Prov. 18:19. Vulg.)",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c253",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:basil-the-great:luke.10.1:35aeeb63:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "basil-the-great",
+      "workId": "hcf:work:basil-the-great:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:1",
+      "excerpt": "At the same time it is implied by this, that if any are equal in spiritual gifts, they should not suffer a fondness for their own opinion to get the better of them.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c379",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:eusebius-caesarea:luke.10.1:5f798da6:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "eusebius-caesarea",
+      "workId": "hcf:work:eusebius-caesarea:ecclesiastical-history-1-12-1-3",
+      "title": "ECCLESIASTICAL HISTORY 1.12.1-3 on luke 10:1",
+      "excerpt": "The names of the apostles of the Savior are clear to everyone from the Gospels, but no list of the seventy disciples is in circulation anywhere. Some have said, to be sure, that Barnabas was one of them, and the Acts of the Apostles and Paul writing to the Galatians have made special mention of him. They say Sosthenes was of these as well. Together with Paul, he wrote to the Corinthians. Tradition also holds that Matthias, who was listed among the apostles in place of Judas, and Joseph Justus, who was honored with him at the same casting of lots, were considered worthy of the same calling among the seventy. They say that Thaddaeus was also one of them, about whom I shall presently relate a story which has come down to us. On observation, you would find that the disciples of the Savior appear to have been more than the seventy. Paul says that after the resurrection from the dead Cephas saw him first, then the Twelve. After these saw him, he was seen by more than five hundred brothers all at once, some of whom he says had fallen asleep, although the majority were still alive at the time that this account was being composed by him.",
+      "takeaway": "",
+      "sourceId": "hcf:source:ecclesiastical-history-1-12-1-3",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c339"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:john-chrysostom:luke.10.1:adf6aa81:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "john-chrysostom",
+      "workId": "hcf:work:john-chrysostom:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:1",
+      "excerpt": "But how does He give the name of harvest to a work only just now at its beginning? the plough not yet put down, nor the furrows turned, He yet speaks of harvests, for His disciples might waver and say, How can we so small a number convert the whole world, how can foolish men reform the wise, naked men those that are armed, subjects their rulers? Lest they should be disturbed then by such thoughts, He calls the Gospel a harvest; as if He says, All things are ready, I send you to a gathering of fruits already prepared. Ye can sow and reap the same day. As then the husbandman goes out to harvest rejoicing, much more also and with greater cheerfulness must you go out into the world. For this is the true harvest, which shows the fields all prepared for you.\r\n\r\n(Hom. 32. in Matt.) But he afterwards increased them greatly, not by adding to their number, but awarding to them power. He implies that it is a great gift to send labourers into the divine harvest, by His saying that the Lord of the harvest must be prayed to upon this account.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c407",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.1:8eb8cae7:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 10:1",
+      "excerpt": "In the book of Exodus it is written: \"And they came to Elim; there were twelve wells of water and seventy palm trees\" (Exod. 15:27). What happened then historically and figuratively has now been fulfilled in reality. Elim means ascent. By this nothing other is signified than that we, ascending into a more perfect understanding and into spiritual maturity, and not stopping, as the Hebrews did, at the Law, but rising up into Christianity, shall find twelve wells, that is, the twelve chief apostles, who are the fountains of every most sweet teaching. We shall find also seventy palm trunks, that is, the seventy apostles. They are not called wells but palms, as those who were nurtured and guided by the (chief) apostles. For although Christ Himself also chose these seventy apostles, they were inferior to the twelve, and subsequently were their disciples and companions. Thus these palms were nourished by the wells, that is, by the apostles, and brought forth to us fruit that is sweet and at the same time moderately tart. The teaching of the saints is indeed such: it does not entirely delight and flatter, nor does it entirely constrain and strike, but combines both qualities, and is truly seasoned with salt and joined with grace, as the apostle Paul also exclaims: \"Let your speech be always with grace, seasoned with salt\" (Col. 4:6). The Lord chooses seventy disciples on account of the multitude of those in need of instruction. For just as fields with a good harvest require many reapers, so too for the believers, since they were to be a countless multitude, there was an urgent need for many teachers.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.10.1:83d02f12:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 10:1",
+      "excerpt": "The Lord had appointed the disciples for the sake of the multitude, who were in want of teachers. For as our corn fields require many reapers, so the innumerable company of those who are to believe need many teachers, as it follows, The harvest truly is great.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.10.1"
     }
   ]
 }

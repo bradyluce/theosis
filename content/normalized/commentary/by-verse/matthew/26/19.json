@@ -4,6 +4,24 @@
   "verseNumber": 19,
   "entries": [
     {
+      "id": "catena-matt-3747-v19",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.26.19",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 26:17–19",
+      "excerpt": "In this also the New Scripture observes the practice of the Old, in which we frequently read, ‘He said unto him,’ and ‘In this or that place,’ without any name of person or place.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 85,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ]
+    },
+    {
       "id": "catena-matt-3739-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.19",
@@ -40,32 +58,14 @@
       ]
     },
     {
-      "id": "catena-matt-3742-v19",
+      "id": "catena-matt-3748-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.19",
       "topicSlugs": [],
       "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:17–19",
-      "excerpt": "Hence it is evident that He had neither house nor lodging. Nor, I conclude, had the disciples any, for they would surely have invited Him thither.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 85,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
-      "id": "catena-matt-3743-v19",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.26.19",
-      "topicSlugs": [],
-      "personId": "augustine",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 26:17–19",
-      "excerpt": "“Go into the city to such a man,” Him whom Mark and Luke call “the good-man of the house,” or “the I master of the house.” And when Matthew says, “to such a man,” he is to be understood to say this as from himself for brevity’s sake; for every one knows that no man speaks thus, “Go ye to such a man.” And Matthew adds these words, “to such a man,” not that the Lord used the very expression, but to convey to us that the disciples were not sent to any one in the city, but to some certain person.",
+      "excerpt": "“My time is at hand,” this He said, both by so manifold announcements of His Passion, fortifying His disciples against the event, and at the same time shewing that He undertook it voluntarily. “I will keep the Passover at thy house,” wherein we see, that to the very last day He was not disobedient to the Law. “With my disciples,” He adds, that there might be sufficient preparation made, and that he to whom He sent might not think that He desired to be concealed.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -94,14 +94,14 @@
       ]
     },
     {
-      "id": "catena-matt-3747-v19",
+      "id": "catena-matt-3742-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.19",
       "topicSlugs": [],
-      "personId": "jerome",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:17–19",
-      "excerpt": "In this also the New Scripture observes the practice of the Old, in which we frequently read, ‘He said unto him,’ and ‘In this or that place,’ without any name of person or place.",
+      "excerpt": "Hence it is evident that He had neither house nor lodging. Nor, I conclude, had the disciples any, for they would surely have invited Him thither.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -112,14 +112,14 @@
       ]
     },
     {
-      "id": "catena-matt-3748-v19",
+      "id": "catena-matt-3743-v19",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.26.19",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-matthew",
       "title": "On Matt 26:17–19",
-      "excerpt": "“My time is at hand,” this He said, both by so manifold announcements of His Passion, fortifying His disciples against the event, and at the same time shewing that He undertook it voluntarily. “I will keep the Passover at thy house,” wherein we see, that to the very last day He was not disobedient to the Law. “With my disciples,” He adds, that there might be sufficient preparation made, and that he to whom He sent might not think that He desired to be concealed.",
+      "excerpt": "“Go into the city to such a man,” Him whom Mark and Luke call “the good-man of the house,” or “the I master of the house.” And when Matthew says, “to such a man,” he is to be understood to say this as from himself for brevity’s sake; for every one knows that no man speaks thus, “Go ye to such a man.” And Matthew adds these words, “to such a man,” not that the Lord used the very expression, but to convey to us that the disciples were not sent to any one in the city, but to some certain person.",
       "takeaway": "",
       "sourceId": "catena-aurea-source",
       "rank": 85,
@@ -200,6 +200,57 @@
         "patristic",
         "matthew"
       ]
+    },
+    {
+      "id": "hcf:jerome:matthew.26.19:7ad86853:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:19",
+      "excerpt": "(Verse 19.) And the disciples did as Jesus had appointed them, and they prepared the Passover. In another Gospel it is written (Luke 22) that they found a large upper room furnished and prepared, and there they made ready for him. But it seems to me that the upper room is to be understood as the spiritual law, which, departing from the confines of the letter, receives the Savior in a lofty place, as Paul himself speaks (Philippians 3), that he has counted as dung and refuse whatever things he previously regarded as gain, in order to prepare a worthy dwelling for the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.19"
+    },
+    {
+      "id": "hcf:jerome:matthew.26.19:0424aafe:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "jerome",
+      "workId": "hcf:work:jerome:commentary-on-matthew-4-26-19",
+      "title": "COMMENTARY ON MATTHEW 4.26.19 on matthew 26:19",
+      "excerpt": "The other Evangelist writes that they found a large upper room furnished and ready and they made preparations there for him. It seems to me that the room symbolizes the spiritual law which, emerging from the restraints of the written record, receives the Savior in a lofty place. Paul says that what he formerly counted as gain, he now despised as loss and refuse, that he might prepare a worthy guest chamber for the Lord.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-matthew-4-26-19",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c420"
+      ],
+      "targetVerseId": "kjva:matthew.26.19"
+    },
+    {
+      "id": "hcf:thomas-aquinas:matthew.26.19:f0218e43:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "thomas-aquinas",
+      "workId": "hcf:work:thomas-aquinas:commentary-on-matthew",
+      "title": "Commentary on Matthew on matthew 26:19",
+      "excerpt": "Then follows the execution: and the disciples did as Jesus appointed to them etc. Similarly we read in Exodus 24:3: all the words which the Lord hath spoken, we will do.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1274"
+      ],
+      "targetVerseId": "kjva:matthew.26.19"
     },
     {
       "id": "catena-matt-3738-v19",

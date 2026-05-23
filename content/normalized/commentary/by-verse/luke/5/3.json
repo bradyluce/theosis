@@ -55,6 +55,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:john-chrysostom:luke.5.3:62a2de30:0"
       ]
     },
     {
@@ -73,6 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:augustine:luke.5.3:2f338561:0"
       ]
     },
     {
@@ -163,6 +177,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.5.3:60fd5bd6:0"
       ]
     },
     {
@@ -181,7 +202,67 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.5.3:71e19ce7:0"
       ]
+    },
+    {
+      "id": "hcf:bede:luke.5.3:05b844e9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 5:3",
+      "excerpt": "But ascending into one of the boats, which was Simon's, he asked him to put out a little from the land. And sitting down, he taught the crowds from the boat. Simon's boat is the early Church, about which Paul says: \"For he who worked through Peter for the apostleship of the circumcised worked also through me for the Gentiles\" (Galatians II). It is aptly called one, because the heart and soul of the multitude of believers were one (Acts IV). From which he taught the crowds, because he teaches the nations today through the authority of the Church.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.5.3"
+    },
+    {
+      "id": "hcf:bede:luke.5.3:9155723a:1",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 5:3",
+      "excerpt": "The ship of Simon is the primitive Church, of which St. Paul says, He that wrought effectually in Peter to the Apostleship of circumcision. (Gal. 2:8.) The ship is well called one, for in the multitude of believers there was one heart and one soul. (Acts 4:32.)",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.5.3"
+    },
+    {
+      "id": "hcf:gregory-of-nazianzus:luke.5.3:fbacb3b3:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "gregory-of-nazianzus",
+      "workId": "hcf:work:gregory-of-nazianzus:catena-aurea-by-aquinas",
+      "title": "Catena Aurea by Aquinas on luke 5:3",
+      "excerpt": "(Orat. 37.) Condescending to all, in order that He might draw forth a fish from the deep, i. e. man swimming in the everchanging scenes and bitter storms of this life.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c390",
+        "secondary-quote"
+      ],
+      "targetVerseId": "kjva:luke.5.3"
     }
   ]
 }

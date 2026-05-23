@@ -4,6 +4,24 @@
   "verseNumber": 14,
   "entries": [
     {
+      "id": "catena-luke-1795-v14",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.11.14",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 11:14–16",
+      "excerpt": "But others by similar darts of envy sought of him a sign from heaven. As it follows, And others, tempting him, sought of him a sign from heaven. As if they said, “Although thou hast cast out a devil from the man, this is no proof however of Divine power. For we have not yet seen any thing like to the miracles of former times. Moses led the people through the midst of the sea, (Exod. 14) and Joshua his successor stayed the sun in Gibeon. (Josh. 10:13.) But thou hast shewn us none of these things.” For to seek signs from heaven shewed that the speaker was at that time influenced by some feeling…",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-1793-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.14",
@@ -19,20 +37,27 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:cyril-of-alexandria:luke.11.14:182e94fe:1"
       ]
     },
     {
-      "id": "catena-luke-1795-v14",
+      "id": "catena-luke-1794-v14",
       "relation": "verse",
       "targetVerseId": "kjva:luke.11.14",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 11:14–16",
-      "excerpt": "But others by similar darts of envy sought of him a sign from heaven. As it follows, And others, tempting him, sought of him a sign from heaven. As if they said, “Although thou hast cast out a devil from the man, this is no proof however of Divine power. For we have not yet seen any thing like to the miracles of former times. Moses led the people through the midst of the sea, (Exod. 14) and Joshua his successor stayed the sun in Gibeon. (Josh. 10:13.) But thou hast shewn us none of these things.” For to seek signs from heaven shewed that the speaker was at that time influenced by some feeling…",
+      "excerpt": "But since the multitudes who were thought ignorant always marvelled at our Lord’s actions, the Scribes and Pharisees took pains to deny them, or to pervert them by an artful interpretation, as though they were not the work of a Divine power, but of an unclean spirit. Hence it follows, But some of them said, He casteth out devils through Beelzebub the prince of the devils. Beelzebub was the God Accaron. For Beel is indeed Baal himself. But Zebub means a fly. Now he is called Beelzebub as the man of flies, from whose most foul practices the chief of the devils was so named.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -55,24 +80,13 @@
         "catena-aurea",
         "patristic",
         "luke"
-      ]
-    },
-    {
-      "id": "catena-luke-1794-v14",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.11.14",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 11:14–16",
-      "excerpt": "But since the multitudes who were thought ignorant always marvelled at our Lord’s actions, the Scribes and Pharisees took pains to deny them, or to pervert them by an artful interpretation, as though they were not the work of a Divine power, but of an unclean spirit. Hence it follows, But some of them said, He casteth out devils through Beelzebub the prince of the devils. Beelzebub was the God Accaron. For Beel is indeed Baal himself. But Zebub means a fly. Now he is called Beelzebub as the man of flies, from whose most foul practices the chief of the devils was so named.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.11.14:b0e84252:1"
       ]
     },
     {
@@ -91,6 +105,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.11.14:eed545f1:1"
       ]
     },
     {
@@ -109,7 +130,82 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:titus-bostra:luke.11.14:8bd91f35:0"
       ]
+    },
+    {
+      "id": "hcf:theophylact-of-ohrid:luke.11.14:0c76fdc9:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 11:14",
+      "excerpt": "\"Mute\" is often used to refer to one who does not speak; but it also refers to one who does not hear, or more precisely, one who neither hears nor speaks. Those who have been deaf from birth also do not speak. This happens to them by necessity, for we speak what we learn through hearing. When someone does not hear, in all likelihood he does not speak either. Unless someone's hearing was damaged later, from illness — nothing prevents such a person from speaking. The one brought to Christ was mute in both respects: in tongue and in ear. He is an image of human nature, which, being possessed by demons, was capable neither of hearing the words of God, nor still less of proclaiming them. But the Lord, having come and cast out the demons — that is, passionate and demonic deeds — made it so that we not only speak but also preach the truth. For the words of God must not only be heard but also recounted to others. So let us who have demonic deeds within us hear this — we who think to teach others and allow ourselves to be called teachers by men. For when the demon departs, then there is true eloquence and teaching; but so long as the works of demons (the passions) remain within us, we do not speak, even though we appear to be speaking.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.11.14"
+    },
+    {
+      "id": "hcf:bede:luke.11.14:97bd4959:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 11:14",
+      "excerpt": "And Jesus was casting out a demon, and it was mute. And when He had cast out the demon, the mute spoke, and the crowds marveled. This demon-possessed man is narrated in Matthew to have been not only mute but also blind, and it is said that he was healed by the Lord, so that he spoke and saw. Therefore, three signs were accomplished simultaneously in one man. The blind sees, the mute speaks, the one possessed by a demon is freed. This was indeed done physically at that time, but it is also completed daily in the lives of believers, so that, with the demon first expelled, they may behold the light of faith, and then the mouths previously silent may be opened to praise God.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.11.14"
+    },
+    {
+      "id": "hcf:cyril-of-alexandria:luke.11.14:a05853e8:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "hcf:work:cyril-of-alexandria:commentary-on-luke-homily-80",
+      "title": "COMMENTARY ON LUKE, HOMILY 80 on luke 11:14",
+      "excerpt": "They were even grinding their teeth at Christ, the Savior of all, because he made the multitudes wonder by his many divine and astonishing miracles. The very devils cried out at his overwhelming and godlike power and authority.…\"There was brought to him one who was possessed with a mute devil.\" Now mute devils are difficult for any one of the saints to rebuke. They are more obstinate than any other kind and excessively bold. There was nothing difficult to the all-powerful will of Christ, the Savior of us all.… Upon the accomplishment of this wonderful act, the multitude extolled him with praises and hastened to crown the worker of the miracle with godlike honor.",
+      "takeaway": "",
+      "sourceId": "hcf:source:commentary-on-luke-homily-80",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c444"
+      ],
+      "targetVerseId": "kjva:luke.11.14"
+    },
+    {
+      "id": "hcf:tertullian:luke.11.14:50b8dd93:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 11:14",
+      "excerpt": "In like manner, it is He who will give the Holy Spirit, at whose command is also the unholy spirit. When He cast out the \"demon which was dumb\" (and by a cure of this sort verified Isaiah), and having been charged with casting out demons by Beelzebub, He said, \"If I by Beelzebub cast out demons, by whom do your sons cast them out? \" By such a question what does He otherwise mean, than that He ejects the spirits by the same power by which their sons also did-that is, by the power of the Creator? For if you suppose the meaning to be, \"If I by Beelzebub, etc.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.11.14"
     },
     {
       "id": "catena-luke-1789-v14",
@@ -127,6 +223,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:gloss-ordinaria:luke.11.14:1cc6166b:0"
       ]
     }
   ]

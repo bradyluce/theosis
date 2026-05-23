@@ -22,14 +22,14 @@
       ]
     },
     {
-      "id": "catena-luke-3265-v70",
+      "id": "catena-luke-3267-v70",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.70",
       "topicSlugs": [],
-      "personId": "john-chrysostom",
+      "personId": "augustine",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
-      "excerpt": "Jesus, the Lord of heaven and earth, sustains and suffers the mockings of the ungodly, giving us an example of patience.",
+      "excerpt": "Now our Lord is supposed to have suffered these things until morning in the house of the High Priest, to which He was first led. Hence it follows, And as soon as it was day, the elders of the people and the chief priests and the scribes came together, and led him into their council, saying, Art thou the Christ? &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -40,14 +40,14 @@
       ]
     },
     {
-      "id": "catena-luke-3267-v70",
+      "id": "catena-luke-3265-v70",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.70",
       "topicSlugs": [],
-      "personId": "augustine",
+      "personId": "john-chrysostom",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
-      "excerpt": "Now our Lord is supposed to have suffered these things until morning in the house of the High Priest, to which He was first led. Hence it follows, And as soon as it was day, the elders of the people and the chief priests and the scribes came together, and led him into their council, saying, Art thou the Christ? &c.",
+      "excerpt": "Jesus, the Lord of heaven and earth, sustains and suffers the mockings of the ungodly, giving us an example of patience.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 85,
@@ -76,6 +76,24 @@
       ]
     },
     {
+      "id": "catena-luke-3276-v70",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.70",
+      "topicSlugs": [],
+      "personId": "cyril-of-alexandria",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:63–71",
+      "excerpt": "When Christ spoke this, the company of the Pharisees were very wroth, uttering shameful words; as it follows, Then said they, What need we any further witness? &c.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 80,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ]
+    },
+    {
       "id": "catena-luke-3275-v70",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.70",
@@ -91,20 +109,27 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:ambrose-of-milan:luke.22.70:d2626568:0"
       ]
     },
     {
-      "id": "catena-luke-3276-v70",
+      "id": "catena-luke-3270-v70",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.70",
       "topicSlugs": [],
-      "personId": "cyril-of-alexandria",
+      "personId": "bede",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
-      "excerpt": "When Christ spoke this, the company of the Pharisees were very wroth, uttering shameful words; as it follows, Then said they, What need we any further witness? &c.",
+      "excerpt": "For He had often declared Himself to be the Christ; as when he said, l and my Father are one, (John 10:30.) and other such like things. And if I also ask you, ye will not answer me. For He had asked them how they said Christ was the Son of David, whereas David in the Spirit called Him his Lord. But they wished neither to believe His words nor to answer His questions. However, because they sought to accuse falsely the seed of David, they hear something still farther; as it follows, Hereafter shall the Son of man sit on the right hand of the power of God.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
-      "rank": 80,
+      "rank": 75,
       "tags": [
         "catena-aurea",
         "patristic",
@@ -130,24 +155,6 @@
       ]
     },
     {
-      "id": "catena-luke-3270-v70",
-      "relation": "verse",
-      "targetVerseId": "kjva:luke.22.70",
-      "topicSlugs": [],
-      "personId": "bede",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:63–71",
-      "excerpt": "For He had often declared Himself to be the Christ; as when he said, l and my Father are one, (John 10:30.) and other such like things. And if I also ask you, ye will not answer me. For He had asked them how they said Christ was the Son of David, whereas David in the Spirit called Him his Lord. But they wished neither to believe His words nor to answer His questions. However, because they sought to accuse falsely the seed of David, they hear something still farther; as it follows, Hereafter shall the Son of man sit on the right hand of the power of God.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 75,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
-    },
-    {
       "id": "catena-luke-3274-v70",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.70",
@@ -163,6 +170,13 @@
         "catena-aurea",
         "patristic",
         "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:bede:luke.22.70:9e87abef:0"
       ]
     },
     {
@@ -184,14 +198,14 @@
       ]
     },
     {
-      "id": "catena-luke-3269-v70",
+      "id": "catena-luke-3277-v70",
       "relation": "verse",
       "targetVerseId": "kjva:luke.22.70",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
-      "excerpt": "He knew the secrets of their hearts, that they who had not believed His works would much less believe His words. Hence it follows, And he said unto them, If I tell you, ye will not believe, &c.",
+      "excerpt": "Whereby it is manifest, that the disobedient reap no advantage, when the more secret mysteries are revealed to them, but rather incur the heavier punishment. Wherefore such things ought to be concealed from them. Copyright ©1999-2023 [Wildfire Fellowship, Inc](https://saintjoe.com/wildfire/) all rights reserved |",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -210,6 +224,31 @@
       "workId": "catena-aurea-luke",
       "title": "On Luke 22:63–71",
       "excerpt": "As if he said, There is no time left to you any longer for discourses and teaching, but hereafter shall be the time of judgment, when ye shall see Me, the Son of man, sitting on the right hand of the power of God.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-luke-source",
+      "rank": 70,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "luke"
+      ],
+      "provenance": [
+        "catena-aurea-luke-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:theophylact-of-ohrid:luke.22.70:0536f97e:0"
+      ]
+    },
+    {
+      "id": "catena-luke-3269-v70",
+      "relation": "verse",
+      "targetVerseId": "kjva:luke.22.70",
+      "topicSlugs": [],
+      "personId": "theophylact-of-ohrid",
+      "workId": "catena-aurea-luke",
+      "title": "On Luke 22:63–71",
+      "excerpt": "He knew the secrets of their hearts, that they who had not believed His works would much less believe His words. Hence it follows, And he said unto them, If I tell you, ye will not believe, &c.",
       "takeaway": "",
       "sourceId": "catena-aurea-luke-source",
       "rank": 70,
@@ -238,22 +277,55 @@
       ]
     },
     {
-      "id": "catena-luke-3277-v70",
+      "id": "hcf:theophylact-of-ohrid:luke.22.70:ca1fb5d3:0",
       "relation": "verse",
-      "targetVerseId": "kjva:luke.22.70",
       "topicSlugs": [],
       "personId": "theophylact-of-ohrid",
-      "workId": "catena-aurea-luke",
-      "title": "On Luke 22:63–71",
-      "excerpt": "Whereby it is manifest, that the disobedient reap no advantage, when the more secret mysteries are revealed to them, but rather incur the heavier punishment. Wherefore such things ought to be concealed from them. Copyright ©1999-2023 [Wildfire Fellowship, Inc](https://saintjoe.com/wildfire/) all rights reserved |",
+      "workId": "hcf:work:theophylact-of-ohrid:commentary-on-luke",
+      "title": "Commentary on Luke on luke 22:70",
+      "excerpt": "At this they should have been terrified, but after such words they became even more enraged and in their frenzy ask: \"Are You then the Son of God?\" He, with moderation and pointing out the absurdity of their question, answers them: \"You say that I am,\" for He despised their fury and spoke to them fearlessly.",
       "takeaway": "",
-      "sourceId": "catena-aurea-luke-source",
-      "rank": 70,
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
       "tags": [
-        "catena-aurea",
-        "patristic",
-        "luke"
-      ]
+        "hcf",
+        "c1107"
+      ],
+      "targetVerseId": "kjva:luke.22.70"
+    },
+    {
+      "id": "hcf:bede:luke.22.70:ace3ae37:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "bede",
+      "workId": "hcf:work:bede:on-the-gospel-of-luke",
+      "title": "On the Gospel of Luke on luke 22:70",
+      "excerpt": "And they all said: Are you then the Son of God? You say that I am. Thus he tempers his response, so that he both speaks the truth, and his statement provides no opportunity for calumny. For he preferred to prove himself the Christ, the Son of God, rather than to say it, so that he would be taken up for condemnation by those who acknowledge what they themselves propose.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c735"
+      ],
+      "targetVerseId": "kjva:luke.22.70"
+    },
+    {
+      "id": "hcf:tertullian:luke.22.70:b4a93e24:0",
+      "relation": "verse",
+      "topicSlugs": [],
+      "personId": "tertullian",
+      "workId": "hcf:work:tertullian:against-marcion-book-iv",
+      "title": "Against Marcion Book IV on luke 22:70",
+      "excerpt": "Accordingly, after He had said this, and so suggested a comparison of the Scripture, a ray of light did seem to show them whom He would have them understand Him to be; for they say: \"Art thou then the Son of God? \" Of what God, but of Him whom alone they knew? Of what God but of Him whom they remembered in the Psalm as having said to His Son, \"Sit Thou on my right hand? \"Then He answered, \"Ye say that I am; \" as if He meant: It is ye who say this-not I.",
+      "takeaway": "",
+      "sourceId": "hcf:source:historicalchristian-faith",
+      "rank": 60,
+      "tags": [
+        "hcf",
+        "c220"
+      ],
+      "targetVerseId": "kjva:luke.22.70"
     }
   ]
 }
