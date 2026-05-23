@@ -84,6 +84,7 @@ import { parsePorphyriosWoundedByLove } from "./parse-porphyrios-wounded-by-love
 import { parseRoseReligionOfTheFuture } from "./parse-rose-religion-of-the-future";
 import { parseKronstadtMyLifeInChrist } from "./parse-kronstadt-my-life-in-christ";
 import { parseWareTheOrthodoxWay } from "./parse-ware-the-orthodox-way";
+import { parseHcf } from "./parse-hcf";
 
 // When running from a git worktree (.claude/worktrees/<name>), the main repo
 // root is 3 levels up. Identify by presence of the content/raw directory,
@@ -1736,6 +1737,61 @@ function main() {
   console.log(
     `[ware-the-orthodox-way] ${ware.chapters.length} chapters, ${ware.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
   );
+
+  // ── Historical Christian Faith Commentaries Database ─────────────────────
+  // Bulk patristic commentary mirrored from the public-domain TOML corpus
+  // at github.com/HistoricalChristianFaith/Commentaries-Database. Runs last
+  // so any cross-corpus dedup (performed at normalize time) sees the
+  // existing curated bundles first and prefers them over HCF when the
+  // same Father's same comment surfaces twice. Requires the corpus to be
+  // present at corpus/hcf-commentaries — see scripts/ingest/commentary/
+  // hcf/clone-hcf.ts.
+  const hcfCorpusDir = join(CORPUS_DIRECTORY, "hcf-commentaries");
+  if (existsSync(hcfCorpusDir)) {
+    const { bundle: hcf, stats } = parseHcf({
+      corpusDir: hcfCorpusDir,
+      verseTranslationPrefix: "kjva",
+    });
+    writeFileSync(
+      join(OUTPUT_DIRECTORY, "hcf-commentaries.json"),
+      `${JSON.stringify(hcf, null, 2)}\n`,
+      "utf8",
+    );
+
+    // Persist the license-drop audit so the user can review which sources
+    // were filtered and selectively whitelist hosts/titles via
+    // hcf/license-filter.ts. Keys are reason -> count, plus the sample list.
+    const dropCountsByReason: Record<string, number> = {};
+    for (const [reason, count] of stats.blocksDropped.entries()) {
+      dropCountsByReason[reason] = count;
+    }
+    // Audit files live under _reports/ so normalize-commentary doesn't
+    // pick them up as bundles when it scans OUTPUT_DIRECTORY.
+    const REPORTS_DIR = join(OUTPUT_DIRECTORY, "_reports");
+    mkdirSync(REPORTS_DIR, { recursive: true });
+    writeFileSync(
+      join(REPORTS_DIR, "hcf-license-dropped.json"),
+      `${JSON.stringify(
+        {
+          totals: dropCountsByReason,
+          samples: stats.licenseDroppedSamples,
+        },
+        null,
+        2,
+      )}\n`,
+      "utf8",
+    );
+
+    console.log(
+      `[hcf] ${stats.entriesEmitted} entries from ${hcf.people.length} authors (${stats.filesParsed} TOML files).`,
+    );
+    const dropTotal = [...stats.blocksDropped.values()].reduce((a, b) => a + b, 0);
+    console.log(`[hcf] dropped ${dropTotal} blocks; see hcf-license-dropped.json.`);
+  } else {
+    console.log(
+      `[hcf] corpus not found at ${hcfCorpusDir} — skipping. Run "npm run ingest:commentary:hcf:clone" to enable.`,
+    );
+  }
 }
 
 main();

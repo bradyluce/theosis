@@ -45,6 +45,7 @@ import type {
 } from "@theosis/core";
 import { verseLocationKey } from "../../src/lib/content/reference";
 import { resolveBookSlug } from "../ingest/commentary/shared";
+import { dedupeEntries } from "../ingest/commentary/hcf/dedup";
 
 type CommentaryBundleV1 = {
   version: "1";
@@ -423,10 +424,67 @@ function main() {
     }
   }
 
+  // Cross-corpus fuzzy de-duplication. Runs per-bucket (each bucket already
+  // shares a target, so the dedup re-blocks only by personId). When the
+  // same Father's near-identical comment was ingested from multiple sources
+  // (typically the existing curated parsers + the HCF bulk corpus), the
+  // earlier ingest (preferred by the dedup's scorer) wins, and the HCF
+  // version's source ID is folded into the kept entry's provenance array.
+  let dedupEntriesIn = 0;
+  let dedupEntriesOut = 0;
+  let dedupMerges = 0;
+  const dedupSamples: Array<{ keptId: string; droppedId: string; jaccard: number }> = [];
+
+  for (const [location, entries] of byVerseBuckets) {
+    dedupEntriesIn += entries.length;
+    if (entries.length < 2) {
+      dedupEntriesOut += entries.length;
+      continue;
+    }
+    const { kept, report } = dedupeEntries(entries);
+    byVerseBuckets.set(location, kept);
+    dedupEntriesOut += kept.length;
+    dedupMerges += report.duplicatesMerged;
+    if (dedupSamples.length < 20) {
+      dedupSamples.push(...report.samples.slice(0, 20 - dedupSamples.length));
+    }
+  }
+  for (const [location, entries] of byChapterBuckets) {
+    dedupEntriesIn += entries.length;
+    if (entries.length < 2) {
+      dedupEntriesOut += entries.length;
+      continue;
+    }
+    const { kept, report } = dedupeEntries(entries);
+    byChapterBuckets.set(location, kept);
+    dedupEntriesOut += kept.length;
+    dedupMerges += report.duplicatesMerged;
+  }
+
+  // Persist a report so behavior is auditable across runs. Reports live
+  // in a sibling _reports/ subdir so the main GENERATED_DIR contains only
+  // commentary bundles (every *.json in GENERATED_DIR is read back as a
+  // bundle on the next run).
+  const dedupReport = {
+    entriesIn: dedupEntriesIn,
+    entriesOut: dedupEntriesOut,
+    duplicatesMerged: dedupMerges,
+    samples: dedupSamples,
+  };
+  writeJsonFile(join(GENERATED_DIR, "_reports", "dedup-report.json"), dedupReport);
+  console.log(
+    `[normalize-commentary] dedup: in=${dedupEntriesIn} out=${dedupEntriesOut} merged=${dedupMerges}`,
+  );
+
   // Write commentary/by-verse files. Sort entries within a bucket by rank desc
   // to match the loader's loadChapterCommentary post-sort.
   const byVerseIndex: Record<string, Record<string, number[]>> = {};
   let verseFilesWritten = 0;
+  // Soft-warn threshold — if a per-verse file balloons past this, surface
+  // so we know to start sharding. 200 entries is generous; current
+  // corpora produce much smaller files.
+  const SOFT_WARN_ENTRIES = 200;
+  let oversizedFileWarnings = 0;
   for (const [location, entries] of byVerseBuckets) {
     const [bookSlug, chapterStr, verseStr] = location.split(".");
     const chapterNumber = Number.parseInt(chapterStr ?? "", 10);
@@ -439,6 +497,15 @@ function main() {
     }
 
     entries.sort((a, b) => b.rank - a.rank);
+
+    if (entries.length > SOFT_WARN_ENTRIES) {
+      oversizedFileWarnings++;
+      if (oversizedFileWarnings <= 5) {
+        console.warn(
+          `[normalize-commentary] verse file ${location} has ${entries.length} entries (>${SOFT_WARN_ENTRIES}); consider sharding.`,
+        );
+      }
+    }
 
     const filePath = join(
       COMMENTARY_DIR,
@@ -459,6 +526,11 @@ function main() {
     for (const verses of Object.values(chapters)) {
       verses.sort((a, b) => a - b);
     }
+  }
+  if (oversizedFileWarnings > 5) {
+    console.warn(
+      `[normalize-commentary] ... and ${oversizedFileWarnings - 5} more oversized verse files (total ${oversizedFileWarnings}).`,
+    );
   }
 
   // Write commentary/by-chapter files.

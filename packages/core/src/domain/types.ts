@@ -214,6 +214,14 @@ export type CommentaryEntry = {
   // when a reader's translation uses the opposite scheme (e.g. an LXX-tagged
   // entry on psalms.50 = Miserere also surfaces for kjva readers on Ps 51).
   psalterScheme?: PsalterScheme;
+  // Populated by the fuzzy-dedup sweep when one or more near-duplicate
+  // entries (same person + target, Jaccard >= threshold on the excerpt)
+  // were folded into this one. Carries every source ID that produced an
+  // equivalent quote so the verse page can still show "also in: NPNF, ACCS".
+  provenance?: string[];
+  // IDs of the dropped duplicate entries (kept here for traceability /
+  // future audit; not surfaced in the UI by default).
+  alternateIds?: string[];
 };
 
 export type ReadingAssignment = {
