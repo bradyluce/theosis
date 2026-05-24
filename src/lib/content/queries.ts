@@ -1,4 +1,4 @@
-import type { BibleVerse, CommentaryEntry, Person } from "@theosis/core";
+import type { BibleVerse, CommentaryEntry, OrthodoxGuide, Person, TopicPage } from "@theosis/core";
 import { canonEntryToBook, getAllBooks as getCanonBooks, getCanonBySlug } from "@/lib/content/book-canon";
 import { createChapterId } from "@/lib/content/reference";
 import { dailyCommemorations } from "@/lib/content/seed/daily";
@@ -18,6 +18,11 @@ import {
   bibleVerses,
   crossReferences,
 } from "@/lib/content/seed/scripture";
+import {
+  findTopicPageBySlug,
+  listTopicPages,
+} from "@/lib/content/seed/topic-pages";
+import { findGuideBySlug, listGuides } from "@/lib/content/seed/guides";
 
 export function getPrimaryTranslation() {
   return bibleTranslations.find((translation) => translation.isPrimary) ?? bibleTranslations[0];
@@ -224,4 +229,24 @@ export function collectCommentaryPeople(entries: CommentaryEntry[]) {
 
 export function getCommentaryWorks(entries: CommentaryEntry[]) {
   return works.filter((work) => entries.some((entry) => entry.workId === work.id));
+}
+
+// --- Topic pages -----------------------------------------------------------
+
+export function getTopicPageBySlug(slug: string): TopicPage | undefined {
+  return findTopicPageBySlug(slug);
+}
+
+export function getAllTopicPages(): TopicPage[] {
+  return listTopicPages();
+}
+
+// --- Orthodox guides -------------------------------------------------------
+
+export function getGuideBySlug(slug: string): OrthodoxGuide | undefined {
+  return findGuideBySlug(slug);
+}
+
+export function getAllGuides(): OrthodoxGuide[] {
+  return listGuides();
 }

@@ -2,8 +2,8 @@ import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
-import { router } from "expo-router";
-import { useMemo, useState } from "react";
+import { type Href, router } from "expo-router";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -15,13 +15,12 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import type { SearchResult, SearchResultKind } from "@theosis/core";
 
 import {
   Card,
   Eyebrow,
   GiltRule,
-  Halo,
-  SectionHeader,
   Wordmark,
 } from "@/components/theosis/primitives";
 import {
@@ -33,12 +32,17 @@ import {
   text,
 } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import {
+  addRecentSearch,
+  clearRecentSearches,
+  getRecentSearches,
+} from "@/lib/preferences";
 
-// Library — Featured spreads at the top (Father / Work), then quiet
-// collapsible People + Works sections beneath. Saved / Completed tabs
-// stay as placeholders until reading state ships.
-
-type LibraryView = "library" | "saved" | "completed";
+// Library — the consolidated discover-and-browse tab. Persistent search at
+// the top; when the query is empty the page renders the editorial spreads
+// (Featured Father, Featured Work, topic grid, Orthodox basics, browse rows).
+// When the user types, the editorial content fades and inline search results
+// appear directly under the search field.
 
 const FEATURED_FATHER_IDS = [
   "john-chrysostom",
@@ -55,13 +59,7 @@ const FEATURED_FATHER_IDS = [
   "ignatius-of-antioch",
 ];
 
-// 50 curated high-value works eligible to appear as the daily featured
-// work. Covers the major genres: homiletic, ascetic, dogmatic, sacramental,
-// devotional, modern Orthodox. Letter collections and minor treatises are
-// intentionally excluded — the featured slot should surface works a reader
-// would want to open on a whim.
 const FEATURED_WORK_SLUGS = new Set([
-  // Chrysostom homily series
   "chrysostom-homilies-on-matthew",
   "chrysostom-homilies-on-john",
   "chrysostom-homilies-on-romans",
@@ -70,13 +68,11 @@ const FEATURED_WORK_SLUGS = new Set([
   "chrysostom-homilies-on-first-corinthians",
   "chrysostom-on-the-priesthood",
   "chrysostom-homilies-on-the-statues",
-  // Augustine
   "augustine-confessions",
   "augustine-city-of-god",
   "augustine-trinity",
   "augustine-tractates-john",
   "augustine-psalms",
-  // Ascetic classics
   "climacus-ladder",
   "unseen-warfare",
   "macarius-fifty-spiritual-homilies",
@@ -84,7 +80,6 @@ const FEATURED_WORK_SLUGS = new Set([
   "cassian-institutes",
   "way-of-a-pilgrim",
   "brianchaninov-the-arena",
-  // Modern Orthodox
   "ware-the-orthodox-way",
   "lossky-mystical-theology",
   "schmemann-for-the-life-of-the-world",
@@ -92,18 +87,14 @@ const FEATURED_WORK_SLUGS = new Set([
   "porphyrios-wounded-by-love",
   "bloom-beginning-to-pray",
   "paisios-spiritual-awakening",
-  // Cappadocians
   "gregory-nazianzen-orations",
   "basil-hexaemeron",
   "gregory-of-nyssa-against-eunomius",
-  // Cyril & Athanasius
   "cyril-jerusalem-catecheses",
   "athanasius-four-discourses-against-the-arians",
   "cyril-alexandria-commentary-john",
-  // Sacramental
   "cabasilas-divine-liturgy-commentary",
   "ephraim-nisibene-hymns",
-  // Patristic theology & apology
   "irenaeus-haereses",
   "origen-against-celsus",
   "tertullian-against-marcion",
@@ -114,14 +105,10 @@ const FEATURED_WORK_SLUGS = new Set([
   "clement-stromata",
   "hippolytus-refutation-heresies",
   "aphrahat-demonstrations",
-  // Leo the Great
   "leo-sermons",
-  // History
   "eusebius-church-history",
-  // Symeon the New Theologian
   "symeon-ethical-discourses-vol-1",
   "symeon-ethical-discourses-vol-2",
-  // Desert Fathers
   "desert-fathers-sayings",
 ]);
 
@@ -133,12 +120,77 @@ function pickFeaturedFatherId(): string {
   return FEATURED_FATHER_IDS[dayOfYear % FEATURED_FATHER_IDS.length];
 }
 
+function useDebounced<T>(value: T, delayMs: number): T {
+  const [debounced, setDebounced] = useState(value);
+  useEffect(() => {
+    const id = setTimeout(() => setDebounced(value), delayMs);
+    return () => clearTimeout(id);
+  }, [value, delayMs]);
+  return debounced;
+}
+
+const SEARCH_KIND_ORDER: SearchResultKind[] = [
+  "verse",
+  "person",
+  "commentary",
+  "work",
+  "topic",
+  "daily",
+];
+
+const SEARCH_KIND_LABELS: Record<SearchResultKind, string> = {
+  verse: "Verses",
+  commentary: "Commentary",
+  person: "Fathers & Saints",
+  work: "Works",
+  topic: "Topics",
+  daily: "Daily",
+};
+
+// Map a search result's web href to a mobile route. Returns null when there
+// is no corresponding mobile destination.
+function resolveMobileTarget(result: SearchResult): string | null {
+  const personMatch = result.href.match(/^\/library\/people\/([^/?#]+)/);
+  if (personMatch) return `/people/${personMatch[1]}`;
+
+  const workMatch = result.href.match(/^\/library\/works\/([^/?#]+)/);
+  if (workMatch) return `/works/${workMatch[1]}`;
+
+  const bibleMatch = result.href.match(
+    /^\/bible\/([^/]+)\/([^/]+)\/(\d+)(?:#[^:]+:[^.]+\.\d+\.(\d+))?/,
+  );
+  if (bibleMatch) {
+    const [, translation, book, chapter, verse] = bibleMatch;
+    const highlight = verse ? `&highlight=${verse}` : "";
+    return `/explore?translation=${translation}&book=${book}&chapter=${chapter}${highlight}`;
+  }
+
+  if (result.href === "/daily") return "/";
+
+  // Topic results from the search engine point at the legacy /library#topic-X
+  // anchor. We now have first-class topic landing pages — map there directly.
+  const topicMatch = result.href.match(/^\/library#topic-([^/?#]+)/);
+  if (topicMatch) return `/topics/${topicMatch[1]}`;
+
+  return null;
+}
+
 export default function LibraryScreen() {
   const api = getApi();
-  const [view, setView] = useState<LibraryView>("library");
   const [query, setQuery] = useState("");
-  const [peopleOpen, setPeopleOpen] = useState(false);
-  const [worksOpen, setWorksOpen] = useState(false);
+  const [recent, setRecent] = useState<string[]>([]);
+  const debouncedQuery = useDebounced(query.trim(), 200);
+  const searching = debouncedQuery.length >= 2;
+
+  useEffect(() => {
+    let canceled = false;
+    getRecentSearches().then((items) => {
+      if (!canceled) setRecent(items);
+    });
+    return () => {
+      canceled = true;
+    };
+  }, []);
 
   const peopleQuery = useQuery({
     queryKey: ["library-people"],
@@ -152,6 +204,44 @@ export default function LibraryScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
+  const topicsQuery = useQuery({
+    queryKey: ["topics-index"],
+    queryFn: () => api.fetchTopics(),
+    staleTime: 60 * 60 * 1000,
+  });
+
+  const guidesQuery = useQuery({
+    queryKey: ["guides-index"],
+    queryFn: () => api.fetchGuides(),
+    staleTime: 60 * 60 * 1000,
+  });
+
+  const searchQuery = useQuery({
+    queryKey: ["search", debouncedQuery],
+    queryFn: () => api.search(debouncedQuery),
+    enabled: searching,
+    staleTime: 30 * 1000,
+  });
+
+  const recordRecent = useCallback((q: string) => {
+    if (q.trim().length < 2) return;
+    addRecentSearch(q).then(setRecent);
+  }, []);
+
+  useEffect(() => {
+    if (
+      debouncedQuery.length >= 2 &&
+      searchQuery.data &&
+      searchQuery.data.results.length > 0
+    ) {
+      recordRecent(debouncedQuery);
+    }
+  }, [debouncedQuery, searchQuery.data, recordRecent]);
+
+  const onClearRecent = () => {
+    clearRecentSearches().then(() => setRecent([]));
+  };
+
   const featuredFatherId = useMemo(() => pickFeaturedFatherId(), []);
   const featuredFather = useMemo(() => {
     const people = peopleQuery.data?.people ?? [];
@@ -161,11 +251,6 @@ export default function LibraryScreen() {
     );
   }, [peopleQuery.data, featuredFatherId]);
 
-  // Restrict Library Works surfaces to works that actually have
-  // long-form chapters (i.e., appear in the catalog's index.byWork).
-  // Commentary-only "works" — HCF source titles that have no chapter
-  // body — still resolve from commentary entries via worksById lookups
-  // elsewhere; they just don't clutter the browsing surfaces here.
   const worksWithChapters = useMemo(() => {
     const byWork = libraryCatalogQuery.data?.index?.byWork;
     if (!byWork) return [];
@@ -195,39 +280,33 @@ export default function LibraryScreen() {
     return people.find((p) => p.id === featuredWork.personId);
   }, [featuredWork, peopleQuery.data]);
 
-  const filteredPeople = useMemo(() => {
-    const all = peopleQuery.data?.people ?? [];
-    const q = query.trim().toLowerCase();
-    if (!q) return all;
-    return all.filter(
-      (p) =>
-        p.name.toLowerCase().includes(q) ||
-        (p.honorific?.toLowerCase().includes(q) ?? false) ||
-        p.eraLabel.toLowerCase().includes(q) ||
-        p.kind.includes(q),
-    );
-  }, [peopleQuery.data, query]);
+  const groupedSearch = useMemo(() => {
+    const map = new Map<SearchResultKind, SearchResult[]>();
+    for (const result of searchQuery.data?.results ?? []) {
+      const list = map.get(result.kind) ?? [];
+      list.push(result);
+      map.set(result.kind, list);
+    }
+    return SEARCH_KIND_ORDER.filter((kind) => map.has(kind)).map((kind) => ({
+      kind,
+      label: SEARCH_KIND_LABELS[kind],
+      results: map.get(kind) ?? [],
+    }));
+  }, [searchQuery.data]);
 
-  const filteredWorks = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return worksWithChapters;
-    return worksWithChapters.filter(
-      (w) =>
-        w.title.toLowerCase().includes(q) ||
-        w.shortTitle.toLowerCase().includes(q) ||
-        w.eraLabel.toLowerCase().includes(q) ||
-        w.workType.toLowerCase().includes(q),
-    );
-  }, [worksWithChapters, query]);
+  const onResultPress = (result: SearchResult) => {
+    const href = resolveMobileTarget(result);
+    if (!href) return;
+    // resolveMobileTarget returns one of a small set of well-formed in-app
+    // paths (people/works/topics/bible reader); cast to Href because TS
+    // can't narrow a runtime-built string template.
+    router.push(href as Href);
+  };
 
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
       <LinearGradient
-        colors={[
-          "rgba(212, 168, 87, 0.10)",
-          "transparent",
-          colors.background,
-        ]}
+        colors={["rgba(212, 168, 87, 0.10)", "transparent", colors.background]}
         locations={[0, 0.3, 1]}
         style={StyleSheet.absoluteFill}
         pointerEvents="none"
@@ -235,33 +314,6 @@ export default function LibraryScreen() {
 
       <View style={styles.masthead}>
         <Wordmark size={18} subline="Library" />
-        <View style={styles.viewTabs}>
-          {(["library", "saved", "completed"] as LibraryView[]).map((v) => {
-            const active = v === view;
-            return (
-              <Pressable
-                key={v}
-                onPress={() => setView(v)}
-                hitSlop={4}
-                style={({ pressed }) => [
-                  styles.viewTab,
-                  active && styles.viewTabActive,
-                  pressed && !active && { opacity: 0.7 },
-                ]}
-                accessibilityRole="button"
-              >
-                <Text
-                  style={[
-                    styles.viewTabLabel,
-                    active && styles.viewTabLabelActive,
-                  ]}
-                >
-                  {v}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </View>
       </View>
       <GiltRule full style={{ marginHorizontal: spacing.xl }} />
 
@@ -273,323 +325,562 @@ export default function LibraryScreen() {
         refreshControl={
           <RefreshControl
             refreshing={peopleQuery.isFetching && !peopleQuery.isLoading}
-            onRefresh={() => peopleQuery.refetch()}
+            onRefresh={() => {
+              peopleQuery.refetch();
+              libraryCatalogQuery.refetch();
+              topicsQuery.refetch();
+              guidesQuery.refetch();
+            }}
             tintColor={colors.accent}
             colors={[colors.accent]}
           />
         }
       >
-        {view !== "library" ? (
-          <View style={styles.placeholder}>
-            <Feather
-              name={view === "saved" ? "bookmark" : "check-circle"}
-              size={28}
-              color={colors.inkSoft}
-            />
-            <Text style={styles.placeholderTitle}>
-              {view === "saved" ? "Saved" : "Completed"}
-            </Text>
-            <Text style={styles.placeholderBody}>
-              {view === "saved"
-                ? "Bookmark a work to keep it here."
-                : "Finished works appear here as you read them."}
-            </Text>
-          </View>
+        {/* Persistent search field — sits below the masthead. The search blade
+            stays visible whether the user is browsing the editorial spread or
+            actively searching; this is the one input that connects everything. */}
+        <View style={styles.searchRow}>
+          <Feather name="search" size={16} color={colors.inkSoft} />
+          <TextInput
+            value={query}
+            onChangeText={setQuery}
+            placeholder="Search Scripture, Fathers, topics"
+            placeholderTextColor={colors.inkSoft}
+            style={styles.searchInput}
+            autoCorrect={false}
+            autoCapitalize="none"
+            returnKeyType="search"
+          />
+          {query ? (
+            <Pressable
+              onPress={() => setQuery("")}
+              hitSlop={8}
+              accessibilityRole="button"
+              accessibilityLabel="Clear search"
+            >
+              <Feather name="x" size={16} color={colors.inkSoft} />
+            </Pressable>
+          ) : null}
+        </View>
+
+        {searching ? (
+          <SearchResults
+            loading={searchQuery.isLoading}
+            error={searchQuery.error}
+            grouped={groupedSearch}
+            empty={
+              !!searchQuery.data && searchQuery.data.results.length === 0
+            }
+            onResultPress={onResultPress}
+          />
         ) : (
-          <>
-            {/* Search input — sits below the masthead like a search blade */}
-            <View style={styles.searchRow}>
-              <Feather name="search" size={15} color={colors.inkSoft} />
-              <TextInput
-                value={query}
-                onChangeText={setQuery}
-                placeholder="Search Fathers, saints, works"
-                placeholderTextColor={colors.inkSoft}
-                style={styles.searchInput}
-                autoCorrect={false}
-                autoCapitalize="none"
-                returnKeyType="search"
-              />
-            </View>
-
-            {peopleQuery.isLoading ? (
-              <View style={styles.loading}>
-                <ActivityIndicator color={colors.accent} />
-              </View>
-            ) : null}
-
-            {peopleQuery.error ? (
-              <Card>
-                <Eyebrow tone="oxblood">Couldn&apos;t load library</Eyebrow>
-                <Text style={[text.body, { color: colors.error, marginTop: spacing.sm }]}>
-                  {peopleQuery.error instanceof Error
-                    ? peopleQuery.error.message
-                    : String(peopleQuery.error)}
-                </Text>
-              </Card>
-            ) : null}
-
-            {/* Featured Father — editorial spread, dramatic */}
-            {featuredFather ? (
-              <Pressable
-                onPress={() => router.push(`/people/${featuredFather.slug}`)}
-                style={({ pressed }) => [
-                  styles.featuredFather,
-                  pressed && { opacity: 0.92 },
-                ]}
-                accessibilityRole="button"
-                accessibilityLabel={`Featured Father: ${featuredFather.name}`}
-              >
-                <View style={[styles.fatherPortraitWrap, elevation.giltGlow]}>
-                  {featuredFather.icon ? (
-                    <Image
-                      source={{ uri: featuredFather.icon.src }}
-                      style={styles.fatherPortrait}
-                      contentFit="cover"
-                      transition={240}
-                      accessibilityLabel={featuredFather.icon.alt}
-                    />
-                  ) : (
-                    <View
-                      style={[styles.fatherPortrait, styles.fatherPortraitPlaceholder]}
-                    >
-                      <Text style={styles.fatherPortraitLetter}>
-                        {featuredFather.name.charAt(0)}
-                      </Text>
-                    </View>
-                  )}
-                  <LinearGradient
-                    colors={["transparent", "rgba(10, 9, 8, 0.85)"]}
-                    locations={[0.45, 1]}
-                    style={StyleSheet.absoluteFill}
-                    pointerEvents="none"
-                  />
-                  <View style={styles.fatherPortraitOverlay}>
-                    <Eyebrow tone="oxblood">
-                      Featured · {featuredFather.kind}
-                    </Eyebrow>
-                    <Text style={styles.fatherName}>
-                      {featuredFather.honorific
-                        ? `${featuredFather.honorific} ${featuredFather.name.split(",")[0]}`
-                        : featuredFather.name.split(",")[0]}
-                    </Text>
-                    <Text style={styles.fatherEra}>{featuredFather.eraLabel}</Text>
-                  </View>
-                </View>
-                {featuredFather.summary ? (
-                  <Text style={styles.fatherSummary} numberOfLines={3}>
-                    {featuredFather.summary}
-                  </Text>
-                ) : null}
-                <View style={styles.cta}>
-                  <Text style={styles.ctaLabel}>Read the life</Text>
-                  <Feather name="arrow-right" size={13} color={colors.accent} />
-                </View>
-              </Pressable>
-            ) : null}
-
-            {/* Featured Work — leather book metaphor */}
-            {featuredWork ? (
-              <Pressable
-                onPress={() => router.push(`/works/${featuredWork.slug}`)}
-                style={({ pressed }) => [pressed && { opacity: 0.92 }]}
-                accessibilityRole="button"
-                accessibilityLabel={`Featured work: ${featuredWork.title}`}
-              >
-                <Card intent="raised">
-                  <View style={styles.workTopRow}>
-                    <Eyebrow tone="accent">
-                      Featured Work · {featuredWork.workType}
-                    </Eyebrow>
-                    <Feather name="book" size={16} color={colors.accent} />
-                  </View>
-                  <Text style={styles.workTitle}>{featuredWork.title}</Text>
-                  {featuredWorkAuthor ? (
-                    <Text style={styles.workByline}>
-                      by{" "}
-                      {featuredWorkAuthor.honorific
-                        ? `${featuredWorkAuthor.honorific} ${featuredWorkAuthor.name.split(",")[0]}`
-                        : featuredWorkAuthor.name.split(",")[0]}
-                      {" — "}
-                      {featuredWork.eraLabel}
-                    </Text>
-                  ) : (
-                    <Text style={styles.workByline}>
-                      {featuredWork.eraLabel} · {featuredWork.lengthLabel}
-                    </Text>
-                  )}
-                  {featuredWork.summary ? (
-                    <Text style={styles.workSummary} numberOfLines={3}>
-                      {featuredWork.summary}
-                    </Text>
-                  ) : null}
-                  <GiltRule style={{ marginTop: spacing.md }} />
-                  <View style={[styles.cta, { marginTop: spacing.md }]}>
-                    <Text style={styles.ctaLabel}>Open the work</Text>
-                    <Feather
-                      name="arrow-right"
-                      size={13}
-                      color={colors.accent}
-                    />
-                  </View>
-                </Card>
-              </Pressable>
-            ) : null}
-
-            {/* Collapsible sections */}
-            <CollapsibleSection
-              label="People"
-              count={filteredPeople.length}
-              open={peopleOpen}
-              onToggle={() => setPeopleOpen((v) => !v)}
-            >
-              {filteredPeople.length === 0 ? (
-                <Text style={styles.emptyInner}>
-                  {query ? `No matches for "${query}".` : "No people yet."}
-                </Text>
-              ) : (
-                filteredPeople.map((person) => (
-                  <Pressable
-                    key={person.id}
-                    onPress={() => router.push(`/people/${person.slug}`)}
-                    style={({ pressed }) => [
-                      styles.personRow,
-                      pressed && styles.personRowPressed,
-                    ]}
-                    accessibilityRole="button"
-                  >
-                    {person.icon ? (
-                      <Halo size={48} glow={false} ringTone="muted">
-                        <Image
-                          source={{ uri: person.icon.src }}
-                          style={styles.personIconImage}
-                          contentFit="cover"
-                          transition={150}
-                          accessibilityLabel={person.icon.alt}
-                        />
-                      </Halo>
-                    ) : (
-                      <Halo size={48} glow={false} ringTone="muted">
-                        <Text style={styles.personIconLetter}>
-                          {(person.name.match(/[A-Z]/) ?? [person.name[0]])[0]}
-                        </Text>
-                      </Halo>
-                    )}
-                    <View style={styles.personMeta}>
-                      <Text style={styles.personName}>
-                        {person.honorific ? `${person.honorific} ` : ""}
-                        {person.name}
-                      </Text>
-                      <Text style={styles.personEra}>
-                        {person.kind} · {person.eraLabel}
-                      </Text>
-                    </View>
-                    <Feather
-                      name="chevron-right"
-                      size={16}
-                      color={colors.inkSoft}
-                    />
-                  </Pressable>
-                ))
-              )}
-            </CollapsibleSection>
-
-            <CollapsibleSection
-              label="Works"
-              count={
-                libraryCatalogQuery.data ? filteredWorks.length : undefined
-              }
-              open={worksOpen}
-              onToggle={() => setWorksOpen((v) => !v)}
-            >
-              {libraryCatalogQuery.isLoading ? (
-                <View style={styles.loading}>
-                  <ActivityIndicator color={colors.accent} />
-                </View>
-              ) : filteredWorks.length === 0 ? (
-                <Text style={styles.emptyInner}>
-                  {query ? `No matches for "${query}".` : "No works yet."}
-                </Text>
-              ) : (
-                filteredWorks.map((work) => (
-                  <Pressable
-                    key={work.id}
-                    onPress={() => router.push(`/works/${work.slug}`)}
-                    style={({ pressed }) => [
-                      styles.workListRow,
-                      pressed && styles.workListRowPressed,
-                    ]}
-                    accessibilityRole="button"
-                  >
-                    <View style={styles.workListIcon}>
-                      <Feather name="book" size={16} color={colors.accent} />
-                    </View>
-                    <View style={styles.workListText}>
-                      <Text
-                        style={styles.workListTitle}
-                        numberOfLines={1}
-                      >
-                        {work.title}
-                      </Text>
-                      <Text style={styles.workListMeta}>
-                        {work.workType} · {work.eraLabel} · {work.lengthLabel}
-                      </Text>
-                    </View>
-                    <Feather
-                      name="chevron-right"
-                      size={16}
-                      color={colors.inkSoft}
-                    />
-                  </Pressable>
-                ))
-              )}
-            </CollapsibleSection>
-          </>
+          <EditorialContent
+            featuredFather={featuredFather}
+            featuredWork={featuredWork}
+            featuredWorkAuthor={featuredWorkAuthor}
+            topics={topicsQuery.data?.topics ?? []}
+            topicsLoading={topicsQuery.isLoading}
+            guides={guidesQuery.data?.guides ?? []}
+            guidesLoading={guidesQuery.isLoading}
+            recent={recent}
+            onPickRecent={(q) => setQuery(q)}
+            onClearRecent={onClearRecent}
+          />
         )}
       </ScrollView>
     </SafeAreaView>
   );
 }
 
-function CollapsibleSection({
-  label,
-  count,
-  open,
-  onToggle,
-  children,
+// ----- Search-results block ------------------------------------------------
+
+function SearchResults({
+  loading,
+  error,
+  grouped,
+  empty,
+  onResultPress,
 }: {
-  label: string;
-  count?: number;
-  open: boolean;
-  onToggle: () => void;
-  children: React.ReactNode;
+  loading: boolean;
+  error: unknown;
+  grouped: { kind: SearchResultKind; label: string; results: SearchResult[] }[];
+  empty: boolean;
+  onResultPress: (result: SearchResult) => void;
 }) {
   return (
-    <View style={styles.section}>
-      <Pressable
-        onPress={onToggle}
-        style={({ pressed }) => [
-          styles.sectionHeader,
-          pressed && { opacity: 0.7 },
-        ]}
-        accessibilityRole="button"
-        accessibilityState={{ expanded: open }}
-      >
-        <View style={styles.sectionHeaderLeft}>
-          <Eyebrow tone="accent">
-            {label}
-            {count != null ? ` · ${count}` : ""}
-          </Eyebrow>
+    <View style={styles.resultsWrap}>
+      {loading ? (
+        <View style={styles.loading}>
+          <ActivityIndicator color={colors.accent} />
         </View>
-        <Feather
-          name={open ? "chevron-down" : "chevron-right"}
-          size={18}
-          color={colors.inkSoft}
-        />
-      </Pressable>
-      {open ? <View style={styles.sectionBody}>{children}</View> : null}
+      ) : null}
+
+      {error ? (
+        <View style={styles.errorCard}>
+          <Eyebrow tone="oxblood">Search failed</Eyebrow>
+          <Text style={[text.body, { color: colors.error, marginTop: spacing.sm }]}>
+            {error instanceof Error ? error.message : String(error)}
+          </Text>
+        </View>
+      ) : null}
+
+      {empty && !loading ? (
+        <View style={styles.emptyState}>
+          <Eyebrow tone="accent">No matches</Eyebrow>
+          <Text style={styles.emptyHint}>
+            Try a Father&apos;s name (&quot;Chrysostom&quot;), a verse
+            (&quot;John 1:1&quot;), or a topic.
+          </Text>
+        </View>
+      ) : null}
+
+      {grouped.map((group) => (
+        <View key={group.kind} style={styles.section}>
+          <Eyebrow tone="accent">{group.label}</Eyebrow>
+          <GiltRule style={{ marginBottom: spacing.sm }} />
+          {group.results.map((result) => {
+            const tappable = resolveMobileTarget(result) !== null;
+            return (
+              <Pressable
+                key={result.id}
+                onPress={tappable ? () => onResultPress(result) : undefined}
+                style={({ pressed }) => [
+                  styles.resultRow,
+                  pressed && tappable && { opacity: 0.7 },
+                  !tappable && { opacity: 0.55 },
+                ]}
+                accessibilityRole={tappable ? "button" : "text"}
+                accessibilityLabel={result.title}
+              >
+                <View style={styles.resultText}>
+                  <Text style={styles.resultKicker}>
+                    {result.kicker || result.kind}
+                  </Text>
+                  <Text style={styles.resultTitle}>{result.title}</Text>
+                  {result.snippet ? (
+                    <Text style={styles.resultSnippet} numberOfLines={2}>
+                      {result.snippet}
+                    </Text>
+                  ) : null}
+                </View>
+                {tappable ? (
+                  <Feather name="chevron-right" size={14} color={colors.inkSoft} />
+                ) : null}
+              </Pressable>
+            );
+          })}
+        </View>
+      ))}
     </View>
   );
+}
+
+// ----- Editorial content (the no-search default) ---------------------------
+
+type FeaturedPerson = NonNullable<
+  Awaited<ReturnType<ReturnType<typeof getApi>["fetchLibraryPeople"]>>
+>["people"][number];
+
+type FeaturedWork = NonNullable<
+  Awaited<ReturnType<ReturnType<typeof getApi>["fetchLibraryCatalog"]>>
+>["works"][number];
+
+type TopicTile = NonNullable<
+  Awaited<ReturnType<ReturnType<typeof getApi>["fetchTopics"]>>
+>["topics"][number];
+
+type GuideTile = NonNullable<
+  Awaited<ReturnType<ReturnType<typeof getApi>["fetchGuides"]>>
+>["guides"][number];
+
+function EditorialContent({
+  featuredFather,
+  featuredWork,
+  featuredWorkAuthor,
+  topics,
+  topicsLoading,
+  guides,
+  guidesLoading,
+  recent,
+  onPickRecent,
+  onClearRecent,
+}: {
+  featuredFather: FeaturedPerson | undefined;
+  featuredWork: FeaturedWork | null;
+  featuredWorkAuthor: FeaturedPerson | undefined;
+  topics: TopicTile[];
+  topicsLoading: boolean;
+  guides: GuideTile[];
+  guidesLoading: boolean;
+  recent: string[];
+  onPickRecent: (q: string) => void;
+  onClearRecent: () => void;
+}) {
+  return (
+    <>
+      {/* Featured Father — editorial spread */}
+      {featuredFather ? (
+        <Pressable
+          onPress={() => router.push(`/people/${featuredFather.slug}`)}
+          style={({ pressed }) => [
+            styles.featuredFather,
+            pressed && { opacity: 0.92 },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel={`Featured Father: ${featuredFather.name}`}
+        >
+          <View style={[styles.fatherPortraitWrap, elevation.giltGlow]}>
+            {featuredFather.icon ? (
+              <Image
+                source={{ uri: featuredFather.icon.src }}
+                style={styles.fatherPortrait}
+                contentFit="cover"
+                transition={240}
+                accessibilityLabel={featuredFather.icon.alt}
+              />
+            ) : (
+              <View
+                style={[styles.fatherPortrait, styles.fatherPortraitPlaceholder]}
+              >
+                <Text style={styles.fatherPortraitLetter}>
+                  {featuredFather.name.charAt(0)}
+                </Text>
+              </View>
+            )}
+            <LinearGradient
+              colors={["transparent", "rgba(10, 9, 8, 0.85)"]}
+              locations={[0.45, 1]}
+              style={StyleSheet.absoluteFill}
+              pointerEvents="none"
+            />
+            <View style={styles.fatherPortraitOverlay}>
+              <Eyebrow tone="oxblood">
+                Featured · {featuredFather.kind}
+              </Eyebrow>
+              <Text style={styles.fatherName}>
+                {featuredFather.honorific
+                  ? `${featuredFather.honorific} ${featuredFather.name.split(",")[0]}`
+                  : featuredFather.name.split(",")[0]}
+              </Text>
+              <Text style={styles.fatherEra}>{featuredFather.eraLabel}</Text>
+            </View>
+          </View>
+          {featuredFather.summary ? (
+            <Text style={styles.fatherSummary} numberOfLines={3}>
+              {featuredFather.summary}
+            </Text>
+          ) : null}
+          <View style={styles.cta}>
+            <Text style={styles.ctaLabel}>Read the life</Text>
+            <Feather name="arrow-right" size={13} color={colors.accent} />
+          </View>
+        </Pressable>
+      ) : null}
+
+      {/* Featured Work */}
+      {featuredWork ? (
+        <Pressable
+          onPress={() => router.push(`/works/${featuredWork.slug}`)}
+          style={({ pressed }) => [pressed && { opacity: 0.92 }]}
+          accessibilityRole="button"
+          accessibilityLabel={`Featured work: ${featuredWork.title}`}
+        >
+          <Card intent="raised">
+            <View style={styles.workTopRow}>
+              <Eyebrow tone="accent">
+                Featured Work · {featuredWork.workType}
+              </Eyebrow>
+              <Feather name="book" size={16} color={colors.accent} />
+            </View>
+            <Text style={styles.workTitle}>{featuredWork.title}</Text>
+            {featuredWorkAuthor ? (
+              <Text style={styles.workByline}>
+                by{" "}
+                {featuredWorkAuthor.honorific
+                  ? `${featuredWorkAuthor.honorific} ${featuredWorkAuthor.name.split(",")[0]}`
+                  : featuredWorkAuthor.name.split(",")[0]}
+                {" — "}
+                {featuredWork.eraLabel}
+              </Text>
+            ) : (
+              <Text style={styles.workByline}>
+                {featuredWork.eraLabel} · {featuredWork.lengthLabel}
+              </Text>
+            )}
+            {featuredWork.summary ? (
+              <Text style={styles.workSummary} numberOfLines={3}>
+                {featuredWork.summary}
+              </Text>
+            ) : null}
+            <GiltRule style={{ marginTop: spacing.md }} />
+            <View style={[styles.cta, { marginTop: spacing.md }]}>
+              <Text style={styles.ctaLabel}>Open the work</Text>
+              <Feather name="arrow-right" size={13} color={colors.accent} />
+            </View>
+          </Card>
+        </Pressable>
+      ) : null}
+
+      {/* Browse by topic — grid */}
+      <View style={styles.section}>
+        <SectionAccessoryHeader
+          eyebrow="Themes"
+          title="Browse by topic"
+          accessoryLabel="See all"
+          onAccessoryPress={() => router.push("/library/topics")}
+        />
+        {topicsLoading ? (
+          <ActivityIndicator color={colors.accent} style={{ marginVertical: spacing.lg }} />
+        ) : (
+          <View style={styles.topicGrid}>
+            {topics.slice(0, 8).map((tile, idx) => (
+              <Pressable
+                key={tile.slug}
+                onPress={() => router.push(`/topics/${tile.slug}`)}
+                style={({ pressed }) => [
+                  styles.topicTile,
+                  pressed && { opacity: 0.85 },
+                ]}
+                accessibilityRole="button"
+                accessibilityLabel={`Open ${tile.label}`}
+              >
+                <Text style={styles.topicIndex}>
+                  {String(idx + 1).padStart(2, "0")}
+                </Text>
+                <Text style={styles.topicLabel} numberOfLines={2}>
+                  {tile.label}
+                </Text>
+                <Text style={styles.topicKicker} numberOfLines={1}>
+                  {tile.subtitle ?? "Topic"}
+                </Text>
+              </Pressable>
+            ))}
+          </View>
+        )}
+      </View>
+
+      {/* Orthodox basics — guide list */}
+      <View style={styles.section}>
+        <SectionAccessoryHeader
+          eyebrow="First steps"
+          title="Orthodox basics"
+          accessoryLabel="All guides"
+          onAccessoryPress={() => router.push("/library/guides")}
+        />
+        {guidesLoading ? (
+          <ActivityIndicator color={colors.accent} style={{ marginVertical: spacing.lg }} />
+        ) : (
+          <View style={styles.guideList}>
+            {guides.slice(0, 6).map((guide) => (
+              <Pressable
+                key={guide.slug}
+                onPress={() => router.push(`/guides/${guide.slug}`)}
+                style={({ pressed }) => [
+                  styles.guideRow,
+                  pressed && styles.guideRowPressed,
+                ]}
+                accessibilityRole="button"
+              >
+                <View style={styles.guideIconWrap}>
+                  <Feather
+                    name={guideGlyph(guide.category)}
+                    size={18}
+                    color={colors.accent}
+                  />
+                </View>
+                <View style={styles.guideText}>
+                  <Eyebrow tone="accent">{guideCategoryLabel(guide.category)}</Eyebrow>
+                  <Text style={styles.guideTitle} numberOfLines={2}>
+                    {guide.title}
+                  </Text>
+                  <Text style={styles.guideMeta} numberOfLines={1}>
+                    ~{guide.readMinutes} min read
+                  </Text>
+                </View>
+                <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+              </Pressable>
+            ))}
+          </View>
+        )}
+      </View>
+
+      {/* Browse all — gateway rows */}
+      <View style={styles.section}>
+        <Eyebrow tone="accent">Browse all</Eyebrow>
+        <GiltRule style={{ marginBottom: spacing.sm }} />
+        <BrowseRow
+          glyph="users"
+          label="Fathers & Saints"
+          sub="Search the library of holy people"
+          onPress={() => router.push("/library/people")}
+        />
+        <BrowseRow
+          glyph="book"
+          label="Works"
+          sub="Long-form patristic and modern Orthodox writings"
+          onPress={() => router.push("/library/works")}
+        />
+        <BrowseRow
+          glyph="calendar"
+          label="Saints by date"
+          sub="Browse the synaxarion month by month"
+          onPress={() => router.push("/library/saints-calendar")}
+        />
+        <BrowseRow
+          glyph="layers"
+          label="Topics"
+          sub="Doctrines, practices, and virtues"
+          onPress={() => router.push("/library/topics")}
+        />
+        <BrowseRow
+          glyph="book-open"
+          label="Orthodox basics"
+          sub="First-steps and practical guides"
+          onPress={() => router.push("/library/guides")}
+        />
+      </View>
+
+      {recent.length > 0 ? (
+        <View style={styles.section}>
+          <View style={styles.recentHeader}>
+            <Eyebrow tone="accent">Recent searches</Eyebrow>
+            <Pressable
+              onPress={onClearRecent}
+              hitSlop={8}
+              accessibilityRole="button"
+            >
+              <Text style={styles.clearLink}>Clear</Text>
+            </Pressable>
+          </View>
+          <View style={styles.recentChipRow}>
+            {recent.map((item) => (
+              <Pressable
+                key={item}
+                onPress={() => onPickRecent(item)}
+                style={({ pressed }) => [
+                  styles.recentChip,
+                  pressed && { opacity: 0.7 },
+                ]}
+                accessibilityRole="button"
+              >
+                <Feather name="clock" size={11} color={colors.inkSoft} />
+                <Text style={styles.recentChipLabel}>{item}</Text>
+              </Pressable>
+            ))}
+          </View>
+        </View>
+      ) : null}
+    </>
+  );
+}
+
+function SectionAccessoryHeader({
+  eyebrow,
+  title,
+  accessoryLabel,
+  onAccessoryPress,
+}: {
+  eyebrow: string;
+  title: string;
+  accessoryLabel: string;
+  onAccessoryPress: () => void;
+}) {
+  return (
+    <View style={styles.sectionAccessoryHeader}>
+      <View style={{ flex: 1 }}>
+        <Eyebrow tone="accent">{eyebrow}</Eyebrow>
+        <Text style={styles.sectionTitle}>{title}</Text>
+        <GiltRule style={{ marginTop: spacing.sm }} />
+      </View>
+      <Pressable
+        onPress={onAccessoryPress}
+        hitSlop={6}
+        accessibilityRole="button"
+        style={({ pressed }) => [
+          styles.accessoryButton,
+          pressed && { opacity: 0.7 },
+        ]}
+      >
+        <Text style={styles.accessoryLabel}>{accessoryLabel}</Text>
+        <Feather name="arrow-up-right" size={11} color={colors.accent} />
+      </Pressable>
+    </View>
+  );
+}
+
+function BrowseRow({
+  glyph,
+  label,
+  sub,
+  onPress,
+}: {
+  glyph: React.ComponentProps<typeof Feather>["name"];
+  label: string;
+  sub: string;
+  onPress: () => void;
+}) {
+  return (
+    <Pressable
+      onPress={onPress}
+      style={({ pressed }) => [
+        styles.browseRow,
+        pressed && styles.browseRowPressed,
+      ]}
+      accessibilityRole="button"
+      accessibilityLabel={label}
+    >
+      <View style={styles.browseIconWrap}>
+        <Feather name={glyph} size={18} color={colors.accent} />
+      </View>
+      <View style={styles.browseText}>
+        <Text style={styles.browseLabel}>{label}</Text>
+        <Text style={styles.browseSub} numberOfLines={1}>
+          {sub}
+        </Text>
+      </View>
+      <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+    </Pressable>
+  );
+}
+
+function guideGlyph(
+  category: GuideTile["category"],
+): React.ComponentProps<typeof Feather>["name"] {
+  switch (category) {
+    case "first-steps":
+      return "map";
+    case "worship":
+      return "book-open";
+    case "sacrament":
+      return "feather";
+    case "practice":
+      return "compass";
+    case "season":
+      return "sun";
+    case "life":
+      return "heart";
+    default:
+      return "book";
+  }
+}
+
+function guideCategoryLabel(category: GuideTile["category"]): string {
+  switch (category) {
+    case "first-steps":
+      return "First steps";
+    case "worship":
+      return "Worship";
+    case "sacrament":
+      return "Mystery";
+    case "practice":
+      return "Practice";
+    case "season":
+      return "Season";
+    case "life":
+      return "Life";
+    default:
+      return "Guide";
+  }
 }
 
 const styles = StyleSheet.create({
@@ -604,40 +895,13 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.md,
     gap: spacing.md,
   },
-  viewTabs: {
-    flexDirection: "row",
-    gap: 4,
-    paddingHorizontal: 4,
-    paddingVertical: 4,
-    borderRadius: radii.pill,
-    backgroundColor: colors.surface,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-  },
-  viewTab: {
-    paddingHorizontal: spacing.sm,
-    paddingVertical: 4,
-    borderRadius: radii.pill,
-  },
-  viewTabActive: {
-    backgroundColor: "rgba(212, 168, 87, 0.12)",
-  },
-  viewTabLabel: {
-    fontFamily: fonts.sans,
-    fontSize: 9.5,
-    fontWeight: "700",
-    color: colors.inkSoft,
-    letterSpacing: 1.6,
-    textTransform: "uppercase",
-  },
-  viewTabLabelActive: { color: colors.accent },
 
   scroll: { flex: 1 },
   scrollContent: {
     paddingHorizontal: spacing.xl,
     paddingTop: spacing.lg,
     paddingBottom: spacing["6xl"] + spacing.lg,
-    gap: spacing.lg,
+    gap: spacing["2xl"],
   },
 
   searchRow: {
@@ -648,43 +912,69 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
     borderRadius: radii.pill,
     borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
+    borderColor: colors.lineGilt,
   },
   searchInput: {
     flex: 1,
-    paddingVertical: 10,
+    paddingVertical: 12,
     color: colors.ink,
-    fontSize: 14,
+    fontSize: 15,
     fontFamily: fonts.sans,
   },
 
-  loading: { paddingVertical: spacing["2xl"], alignItems: "center" },
-
-  placeholder: {
-    paddingVertical: spacing["4xl"],
+  loading: { paddingVertical: spacing["3xl"], alignItems: "center" },
+  errorCard: {
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
     paddingHorizontal: spacing.lg,
-    alignItems: "center",
+    paddingVertical: spacing.lg,
     gap: spacing.sm,
   },
-  placeholderTitle: {
-    fontFamily: fonts.serifBoldItalic,
-    fontSize: 24,
-    color: colors.ink,
-    marginTop: spacing.sm,
+  emptyState: {
+    paddingVertical: spacing["2xl"],
+    gap: spacing.sm,
   },
-  placeholderBody: {
-    fontFamily: fonts.serif,
+  emptyHint: {
     fontSize: 14,
-    color: colors.inkMuted,
-    textAlign: "center",
-    maxWidth: 260,
     lineHeight: 22,
+    color: colors.inkMuted,
   },
 
-  // Featured Father — editorial spread
-  featuredFather: {
+  resultsWrap: { gap: spacing["2xl"] },
+
+  section: { gap: spacing.xs },
+  sectionAccessoryHeader: {
+    flexDirection: "row",
+    alignItems: "flex-end",
     gap: spacing.md,
   },
+  sectionTitle: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 26,
+    color: colors.ink,
+    letterSpacing: -0.4,
+    lineHeight: 30,
+    marginTop: 2,
+  },
+  accessoryButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingBottom: spacing.sm,
+  },
+  accessoryLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.6,
+    textTransform: "uppercase",
+  },
+
+  // Featured Father
+  featuredFather: { gap: spacing.md },
   fatherPortraitWrap: {
     height: 320,
     borderRadius: radii.xl,
@@ -731,7 +1021,6 @@ const styles = StyleSheet.create({
     color: colors.inkMuted,
     paddingHorizontal: spacing.xs,
   },
-
   cta: {
     flexDirection: "row",
     alignItems: "center",
@@ -747,7 +1036,7 @@ const styles = StyleSheet.create({
     textTransform: "uppercase",
   },
 
-  // Featured work
+  // Featured Work
   workTopRow: {
     flexDirection: "row",
     alignItems: "center",
@@ -775,78 +1064,65 @@ const styles = StyleSheet.create({
     marginTop: spacing.sm,
   },
 
-  // Collapsible sections
-  section: {
-    backgroundColor: "transparent",
-    borderRadius: radii.card,
-  },
-  sectionHeader: {
+  // Topic tiles
+  topicGrid: {
     flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+    flexWrap: "wrap",
+    gap: spacing.sm,
+    marginTop: spacing.sm,
+  },
+  topicTile: {
+    flexBasis: "47%",
+    flexGrow: 1,
+    minHeight: 124,
+    borderRadius: radii.large,
+    borderWidth: 1,
+    borderColor: colors.lineGilt,
+    backgroundColor: "rgba(212, 168, 87, 0.04)",
+    paddingHorizontal: spacing.md,
     paddingVertical: spacing.md,
-    paddingHorizontal: spacing.xs,
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colors.lineGilt,
+    justifyContent: "space-between",
   },
-  sectionHeaderLeft: { flex: 1 },
-  sectionBody: {
-    gap: spacing.xs,
-    paddingBottom: spacing.md,
-  },
-
-  emptyInner: {
-    paddingVertical: spacing.lg,
-    fontFamily: fonts.serifItalic,
-    fontSize: 14,
-    color: colors.inkSoft,
-    textAlign: "center",
-  },
-
-  // Person rows
-  personRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: spacing.md,
-    paddingVertical: spacing.sm,
-    paddingHorizontal: spacing.xs,
-  },
-  personRowPressed: {
-    backgroundColor: "rgba(212, 168, 87, 0.05)",
-    borderRadius: radii.card,
-  },
-  personIconImage: { width: "100%", height: "100%" },
-  personIconLetter: {
+  topicIndex: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 22,
     color: colors.accent,
+    letterSpacing: -0.5,
+    opacity: 0.7,
   },
-  personMeta: { flex: 1, gap: 2 },
-  personName: {
-    fontFamily: fonts.serif,
-    fontSize: 17,
+  topicLabel: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 20,
     color: colors.ink,
-    letterSpacing: -0.2,
+    letterSpacing: -0.3,
+    lineHeight: 24,
   },
-  personEra: {
-    fontFamily: fonts.serifItalic,
-    fontSize: 12,
-    color: colors.inkSoft,
+  topicKicker: {
+    fontFamily: fonts.sans,
+    fontSize: 9,
+    color: colors.accent,
+    letterSpacing: 1.8,
+    textTransform: "uppercase",
+    fontWeight: "700",
+    marginTop: 4,
   },
 
-  // Work rows
-  workListRow: {
+  // Guide rows
+  guideList: { gap: spacing.sm, marginTop: spacing.sm },
+  guideRow: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
     gap: spacing.md,
-    paddingVertical: spacing.sm,
-    paddingHorizontal: spacing.xs,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.sm,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.line,
   },
-  workListRowPressed: {
+  guideRowPressed: {
     backgroundColor: "rgba(212, 168, 87, 0.05)",
     borderRadius: radii.card,
   },
-  workListIcon: {
+  guideIconWrap: {
     width: 36,
     height: 36,
     borderRadius: radii.card,
@@ -855,17 +1131,125 @@ const styles = StyleSheet.create({
     borderColor: colors.lineGilt,
     alignItems: "center",
     justifyContent: "center",
+    marginTop: 2,
   },
-  workListText: { flex: 1, gap: 2 },
-  workListTitle: {
+  guideText: { flex: 1, gap: 4 },
+  guideTitle: {
     fontFamily: fonts.serif,
-    fontSize: 15,
+    fontSize: 16,
     color: colors.ink,
-    letterSpacing: -0.1,
+    letterSpacing: -0.2,
+    lineHeight: 22,
   },
-  workListMeta: {
+  guideMeta: {
     fontFamily: fonts.serifItalic,
-    fontSize: 11,
+    fontSize: 12,
+    color: colors.inkSoft,
+  },
+
+  // Browse rows
+  browseRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.sm,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.line,
+  },
+  browseRowPressed: {
+    backgroundColor: "rgba(212, 168, 87, 0.05)",
+    borderRadius: radii.card,
+  },
+  browseIconWrap: {
+    width: 40,
+    height: 40,
+    borderRadius: radii.card,
+    backgroundColor: "rgba(212, 168, 87, 0.08)",
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  browseText: { flex: 1, gap: 2 },
+  browseLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 17,
+    color: colors.ink,
+    letterSpacing: -0.2,
+  },
+  browseSub: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 12,
+    color: colors.inkSoft,
+  },
+
+  // Recent
+  recentHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  recentChipRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: spacing.sm,
+    marginTop: spacing.sm,
+  },
+  recentChip: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 8,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+  },
+  recentChipLabel: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
+    color: colors.inkMuted,
+  },
+  clearLink: {
+    fontSize: 12,
+    color: colors.inkSoft,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+    fontWeight: "500",
+  },
+
+  // Search result rows
+  resultRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.xs,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.line,
+  },
+  resultText: { flex: 1, gap: 4 },
+  resultKicker: {
+    fontFamily: fonts.sans,
+    fontSize: 9.5,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 2,
+    textTransform: "uppercase",
+  },
+  resultTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 17,
+    color: colors.ink,
+    letterSpacing: -0.2,
+    lineHeight: 22,
+  },
+  resultSnippet: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
+    lineHeight: 20,
     color: colors.inkSoft,
   },
 });

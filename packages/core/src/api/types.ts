@@ -10,12 +10,15 @@ import type {
   BibleVerse,
   CommentaryEntry,
   DailyCommemoration,
+  DailyCommemorationItem,
   HymnText,
   IconRef,
+  OrthodoxGuide,
   Person,
   ReadingAssignment,
   ScriptureReference,
   SourceRecord,
+  TopicPage,
   Work,
   WorkChapter,
 } from "../domain/types";
@@ -161,6 +164,70 @@ export type SearchIntent =
 export type SearchResponse = {
   intent: SearchIntent | null;
   results: SearchResult[];
+};
+
+// --- /api/topics -----------------------------------------------------------
+
+// Lightweight summary used by the topics index. Excludes the full body and
+// curated lists so the index payload stays small.
+export type TopicSummary = {
+  slug: string;
+  label: string;
+  subtitle?: string;
+  summary: string;
+};
+
+export type TopicsResponse = {
+  topics: TopicSummary[];
+};
+
+// /api/topics/[slug] — full page, plus enriched Fathers/Works/saints so the
+// client doesn't need to round-trip the library catalog to render each chip.
+export type TopicPageResponse = {
+  topic: TopicPage;
+  fathers: Array<Person & { icon: IconRef | null }>;
+  // Curated works are looked up against the library catalog. When a slug
+  // doesn't resolve (work hasn't been ingested yet), it's silently dropped.
+  works: Work[];
+  saints: Array<Person & { icon: IconRef | null }>;
+};
+
+// --- /api/guides -----------------------------------------------------------
+
+export type GuideSummary = {
+  slug: string;
+  category: OrthodoxGuide["category"];
+  title: string;
+  summary: string;
+  readMinutes: number;
+};
+
+export type GuidesResponse = {
+  guides: GuideSummary[];
+};
+
+export type GuidePageResponse = {
+  guide: OrthodoxGuide;
+};
+
+// --- /api/calendar/menaion-month/[month] -----------------------------------
+
+// One canonical Menaion entry for the saints-by-day calendar surface.
+// `monthDay` is the MM-DD key used in content/normalized/calendar/menaion.json.
+export type MenaionDay = {
+  monthDay: string;
+  title: string;
+  summary: string;
+  // Lead saint IDs (when their Person records exist in seed).
+  saintIds: string[];
+  // Co-commemorations.
+  also: DailyCommemorationItem[];
+};
+
+export type MenaionMonthResponse = {
+  // 1-12 — the calendar month this response covers.
+  month: number;
+  days: MenaionDay[];
 };
 
 // --- /api/version ----------------------------------------------------------

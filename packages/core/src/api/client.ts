@@ -21,9 +21,14 @@ import type {
   ByWorkFile,
   CommentaryCatalog,
   DailyResponse,
+  GuidePageResponse,
+  GuidesResponse,
   LibraryCatalog,
   LibraryPeopleResponse,
+  MenaionMonthResponse,
   SearchResponse,
+  TopicPageResponse,
+  TopicsResponse,
   VersionResponse,
   WorkChaptersResponse,
 } from "./types";
@@ -70,6 +75,12 @@ export type TheosisApi = {
   ) => Promise<ByChapterFile>;
   fetchWorkChapter: (workId: string, order: number) => Promise<ByWorkFile>;
   fetchWorkChapters: (workId: string) => Promise<WorkChaptersResponse>;
+  fetchTopics: () => Promise<TopicsResponse>;
+  fetchTopic: (slug: string) => Promise<TopicPageResponse>;
+  fetchGuides: () => Promise<GuidesResponse>;
+  fetchGuide: (slug: string) => Promise<GuidePageResponse>;
+  // `month` is 1-12.
+  fetchMenaionMonth: (month: number) => Promise<MenaionMonthResponse>;
   search: (query: string) => Promise<SearchResponse>;
 };
 
@@ -129,6 +140,14 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
       getJson<WorkChaptersResponse>(
         `/api/library/by-work/${encodeURIComponent(workId)}/chapters`,
       ),
+    fetchTopics: () => getJson<TopicsResponse>("/api/topics"),
+    fetchTopic: (slug) =>
+      getJson<TopicPageResponse>(`/api/topics/${encodeURIComponent(slug)}`),
+    fetchGuides: () => getJson<GuidesResponse>("/api/guides"),
+    fetchGuide: (slug) =>
+      getJson<GuidePageResponse>(`/api/guides/${encodeURIComponent(slug)}`),
+    fetchMenaionMonth: (month) =>
+      getJson<MenaionMonthResponse>(`/api/calendar/menaion-month/${month}`),
     search: (query) =>
       getJson<SearchResponse>(`/api/search?q=${encodeURIComponent(query)}`),
   };

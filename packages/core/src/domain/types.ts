@@ -95,6 +95,101 @@ export type TopicTag = {
   summary: string;
 };
 
+// --- Topic landing pages ---------------------------------------------------
+// A curated, Theosis-authored landing page for a doctrinal/practical/virtue
+// topic. Distinct from TopicTag — TopicTag is the lightweight chip/slug used
+// across commentary tagging; TopicPage is the long-form study guide reachable
+// from the Library tab. Slug matches the matching TopicTag when one exists.
+
+export type TopicScriptureRef = {
+  // Reference label, e.g. "John 1:14" or "Luke 18:13"
+  label: string;
+  // Resolved coordinates for deep-linking to the Bible reader. translationId
+  // is optional — when absent, the reader falls back to the user's default.
+  bookSlug: string;
+  chapterNumber: number;
+  verseStart: number;
+  verseEnd?: number;
+  // Short editorial gloss explaining why this passage matters for the topic.
+  gloss: string;
+};
+
+// A short pullquote on a topic page — the kind that lifts off the page in
+// italic display type with attribution beneath.
+export type TopicPullquote = {
+  text: string;
+  attribution: string;
+};
+
+export type TopicPage = {
+  slug: string;
+  label: string;
+  // Optional short editorial subtitle, e.g. "The Word made flesh."
+  subtitle?: string;
+  // 1-2 sentence summary used in indexes and listings.
+  summary: string;
+  // 200-400 word editorial body. Plain prose paragraphs separated by \n\n.
+  body: string;
+  // Optional pullquote rendered as a featured callout on the landing page.
+  pullquote?: TopicPullquote;
+  // Curated lists. Each is optional — short-tail topics may only have key
+  // Scripture and a few Fathers.
+  keyScripture: TopicScriptureRef[];
+  keyFathers: string[]; // Person IDs
+  keyWorks: string[]; // Work slugs
+  relatedSaints: string[]; // Person IDs (saints whose lives illustrate the topic)
+  relatedTopics: string[]; // Other TopicPage slugs
+};
+
+// --- Orthodox basics guides ------------------------------------------------
+// Catechetical / practical guides for inquirers and Orthodox Christians:
+// "Visiting an Orthodox church," "Preparing for Confession," "Fasting,"
+// etc. Theosis-authored prose with structured sections — distinct from a
+// blog post (no author byline, no date) and from TopicPage (no curated
+// lists of Fathers/Works — pure prose with optional inline cross-links to
+// Scripture and topic pages).
+
+export type GuideSection = {
+  // Optional subheading. When absent the section is a continuation.
+  heading?: string;
+  // Plain prose paragraphs. Paragraphs separated by \n\n inside the string.
+  body: string;
+  // Optional pullquote at the end of the section.
+  pullquote?: TopicPullquote;
+};
+
+export type GuideRelatedRef = {
+  kind: "topic" | "guide" | "person" | "work";
+  // Slug for topic/guide/work; Person ID for person.
+  slug: string;
+  // Display label shown in the related-links rail.
+  label: string;
+};
+
+export type OrthodoxGuide = {
+  slug: string;
+  // Short eyebrow above the title in the reader, e.g. "Practice", "Worship",
+  // "First steps". Categorizes guides without imposing a taxonomy.
+  category:
+    | "first-steps"
+    | "worship"
+    | "sacrament"
+    | "practice"
+    | "season"
+    | "life";
+  // Display title, e.g. "Visiting an Orthodox Church".
+  title: string;
+  // 1-2 sentence summary used in the index card.
+  summary: string;
+  // Estimated read time, in minutes. UI shows "~6 min read."
+  readMinutes: number;
+  // Body — ordered list of sections. Section 0 typically opens with no
+  // heading (acts as the intro) and subsequent sections carry headings.
+  sections: GuideSection[];
+  // Curated follow-on links to topic pages, other guides, persons, works.
+  related: GuideRelatedRef[];
+};
+
 // One Orthodox icon (image asset). Catalogued in
 // content/normalized/icons/catalog.json and referenced by id from Person,
 // DailyCommemoration, and DailyCommemorationItem. Files live under
