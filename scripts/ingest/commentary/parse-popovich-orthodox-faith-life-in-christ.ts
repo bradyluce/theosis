@@ -1,5 +1,7 @@
-import type { Person, SourceRecord, Work } from "@theosis/core";
-import { parseAsSingleChapter, type CommentaryBundleV2 } from "../library/shared";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import type { Person, SourceRecord, Work, WorkChapter } from "@theosis/core";
+import { paragraphize, type CommentaryBundleV2 } from "../library/shared";
 
 const PERSON_ID = "justin-popovich";
 const WORK_ID = "popovich-orthodox-faith-life-in-christ";
@@ -13,7 +15,7 @@ const person: Person = {
   kind: "father",
   eraLabel: "20th century (1894–1979)",
   summary:
-    "Serbian Orthodox archimandrite, theologian, and spiritual father; one of the most influential Orthodox dogmaticians of the twentieth century. Disciple of St. Nikolai Velimirović and confessor of the Serbian Orthodox Church under both interwar monarchy and communist rule. Author of the three-volume Orthodox Dogmatics (1932/1935/1978), Lives of the Saints (12 vols.), and many shorter works of spiritual and ecclesiological theology. Forbidden by the communist regime from teaching at the University of Belgrade after 1945, he spent the rest of his life at the Monastery of Ćelije near Valjevo. Canonized by the Serbian Orthodox Church in 2010.",
+    "Serbian Orthodox archimandrite, theologian, and spiritual father; one of the most influential Orthodox dogmaticians of the twentieth century.",
   traditions: ["Eastern Orthodox", "Serbian Orthodox"],
   topicSlugs: ["modern-spirituality", "dogmatic-theology", "patristics", "monasticism", "anti-modernism"],
   featuredWorkIds: [WORK_ID],
@@ -47,33 +49,89 @@ const source: SourceRecord = {
   isSeeded: false,
 };
 
+type ChapterDef = { order: number; title: string; pattern: RegExp };
+// Body anchors in order of appearance. First match in the file (after TOC)
+// is the chapter start.
+const CHAPTERS: ChapterDef[] = [
+  {
+    order: 1,
+    title: "Introduction to the Lives of the Saints",
+    pattern: /^Introduction to the Lives of the Saints\s+33$/m,
+  },
+  {
+    order: 2,
+    title: "Humanistic and Theanthropic Education",
+    pattern: /^HUMANISTIC AND THEANTHROPIC$/m,
+  },
+  {
+    order: 3,
+    title: "The Theory of Knowledge of Saint Isaac the Syrian",
+    pattern: /^The Theory of Knowledge of Saint Isaac The Syrian\s+121$/m,
+  },
+  {
+    order: 4,
+    title: "Humanistic Ecumenism",
+    pattern: /^HUMANISTIC ECUMENISM$/m,
+  },
+];
+
 export type ParseConfig = { rawDir: string };
 
+function isGarbleParagraph(text: string): boolean {
+  const total = text.length;
+  const weird = (text.match(/[<>~\\;:\[\]{}|`@#$%^&*=]/g) ?? []).length;
+  if (total > 0 && weird / total > 0.04) return true;
+  const digitsThenLetters = (text.match(/\d[A-Za-z]|[A-Za-z]\d/g) ?? []).length;
+  if (digitsThenLetters > 5) return true;
+  return false;
+}
+
 export function parsePopovichOrthodoxFaithLifeInChrist(config: ParseConfig): CommentaryBundleV2 {
-  return parseAsSingleChapter({
-    slug: WORK_ID,
-    rawDir: config.rawDir,
-    person,
-    work,
-    source,
-    // Front matter includes Greek hymns set to St Justin that OCR garbled —
-    // tighter minimum length avoids that boilerplate slipping through.
-    minParagraphLength: 40,
-    chapterLabel: "Complete Text",
-    chapterTitle: "Orthodox Faith and Life in Christ",
-    filterParagraph: (text) => {
-      if (/^\d+$/.test(text) && text.length <= 4) return false;
-      // Drop Greek font-substitution garble: paragraphs with lots of
-      // punctuation/symbol/digit-character interleaving among ASCII letters
-      // (the PDF substitutes Greek letters with random Latin+digit+symbol
-      // glyphs in the front matter).
-      const total = text.length;
-      const weird = (text.match(/[<>~\\;:\[\]{}|`@#$%^&*=]/g) ?? []).length;
-      if (total > 0 && weird / total > 0.04) return false;
-      // Also drop short paragraphs starting with non-words like "10V" "lij"
-      const digitsThenLetters = (text.match(/\d[A-Za-z]|[A-Za-z]\d/g) ?? []).length;
-      if (digitsThenLetters > 5) return false;
+  const fullText = readFileSync(join(config.rawDir, "extracted.txt"), "utf8");
+
+  const hits: Array<{ def: ChapterDef; index: number }> = [];
+  for (const def of CHAPTERS) {
+    const m = def.pattern.exec(fullText);
+    if (!m) continue;
+    hits.push({ def, index: m.index });
+  }
+  hits.sort((a, b) => a.index - b.index);
+  if (hits.length === 0) {
+    throw new Error("[popovich] no chapter anchors located");
+  }
+
+  const chapters: WorkChapter[] = hits.map((hit, idx) => {
+    const lineEnd = fullText.indexOf("\n", hit.index);
+    const bodyStart = lineEnd >= 0 ? lineEnd + 1 : hit.index;
+    const bodyEnd = idx + 1 < hits.length ? hits[idx + 1]!.index : fullText.length;
+    const body = fullText.slice(bodyStart, bodyEnd);
+    const paragraphs = paragraphize(body, { minLength: 40 }).filter((p) => {
+      if (/^\d+$/.test(p.text) && p.text.length <= 4) return false;
+      if (/^ORTHODOX\s+FAITH\s+AND\s+LIFE/i.test(p.text)) return false;
+      if (/^Introduction to the Lives of the Saints\s+\d+/.test(p.text)) return false;
+      if (/^Humanistic Ecumenism\s+\d+/i.test(p.text)) return false;
+      if (/^The Theory of Knowledge of Saint Isaac/i.test(p.text) && p.text.length < 120) return false;
+      if (isGarbleParagraph(p.text)) return false;
       return true;
-    },
+    });
+    return {
+      id: `${WORK_ID}-chapter-${hit.def.order}`,
+      workId: WORK_ID,
+      order: hit.def.order,
+      label: `Chapter ${hit.def.order}`,
+      title: hit.def.title,
+      summary: undefined,
+      sections: [{ paragraphs }],
+      sourceId: SOURCE_ID,
+    };
   });
+
+  return {
+    version: "2",
+    people: [person],
+    works: [work],
+    sources: [source],
+    entries: [],
+    chapters,
+  };
 }
