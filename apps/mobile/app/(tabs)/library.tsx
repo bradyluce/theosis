@@ -55,6 +55,76 @@ const FEATURED_FATHER_IDS = [
   "ignatius-of-antioch",
 ];
 
+// 50 curated high-value works eligible to appear as the daily featured
+// work. Covers the major genres: homiletic, ascetic, dogmatic, sacramental,
+// devotional, modern Orthodox. Letter collections and minor treatises are
+// intentionally excluded — the featured slot should surface works a reader
+// would want to open on a whim.
+const FEATURED_WORK_SLUGS = new Set([
+  // Chrysostom homily series
+  "chrysostom-homilies-on-matthew",
+  "chrysostom-homilies-on-john",
+  "chrysostom-homilies-on-romans",
+  "chrysostom-homilies-on-hebrews",
+  "chrysostom-homilies-on-acts",
+  "chrysostom-homilies-on-first-corinthians",
+  "chrysostom-on-the-priesthood",
+  "chrysostom-homilies-on-the-statues",
+  // Augustine
+  "augustine-confessions",
+  "augustine-city-of-god",
+  "augustine-trinity",
+  "augustine-tractates-john",
+  "augustine-psalms",
+  // Ascetic classics
+  "climacus-ladder",
+  "unseen-warfare",
+  "macarius-fifty-spiritual-homilies",
+  "cassian-conferences",
+  "cassian-institutes",
+  "way-of-a-pilgrim",
+  "brianchaninov-the-arena",
+  // Modern Orthodox
+  "ware-the-orthodox-way",
+  "lossky-mystical-theology",
+  "schmemann-for-the-life-of-the-world",
+  "rose-soul-after-death",
+  "porphyrios-wounded-by-love",
+  "bloom-beginning-to-pray",
+  "paisios-spiritual-awakening",
+  // Cappadocians
+  "gregory-nazianzen-orations",
+  "basil-hexaemeron",
+  "gregory-of-nyssa-against-eunomius",
+  // Cyril & Athanasius
+  "cyril-jerusalem-catecheses",
+  "athanasius-four-discourses-against-the-arians",
+  "cyril-alexandria-commentary-john",
+  // Sacramental
+  "cabasilas-divine-liturgy-commentary",
+  "ephraim-nisibene-hymns",
+  // Patristic theology & apology
+  "irenaeus-haereses",
+  "origen-against-celsus",
+  "tertullian-against-marcion",
+  "hilary-on-the-trinity",
+  "justin-dialogue-trypho",
+  "maximus-ambigua-to-thomas",
+  "methodius-banquet-ten-virgins",
+  "clement-stromata",
+  "hippolytus-refutation-heresies",
+  "aphrahat-demonstrations",
+  // Leo the Great
+  "leo-sermons",
+  // History
+  "eusebius-church-history",
+  // Symeon the New Theologian
+  "symeon-ethical-discourses-vol-1",
+  "symeon-ethical-discourses-vol-2",
+  // Desert Fathers
+  "desert-fathers-sayings",
+]);
+
 function pickFeaturedFatherId(): string {
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
@@ -105,14 +175,18 @@ export default function LibraryScreen() {
   }, [libraryCatalogQuery.data]);
 
   const featuredWork = useMemo(() => {
-    if (worksWithChapters.length === 0) return null;
+    const pool = worksWithChapters.filter((w) =>
+      FEATURED_WORK_SLUGS.has(w.slug),
+    );
+    const source = pool.length > 0 ? pool : worksWithChapters;
+    if (source.length === 0) return null;
     const now = new Date();
     const start = new Date(now.getFullYear(), 0, 0);
     const dayOfYear = Math.floor(
       (now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24),
     );
     const seed = dayOfYear + now.getFullYear() * 17;
-    return worksWithChapters[seed % worksWithChapters.length];
+    return source[seed % source.length];
   }, [worksWithChapters]);
 
   const featuredWorkAuthor = useMemo(() => {
