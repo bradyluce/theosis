@@ -19,6 +19,7 @@ import type { BibleTranslation } from "@theosis/core";
 
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import { TRANSLATION_ORIGINS } from "@/lib/translation-info";
 
 // Modal route presented when the Bible reader's center header is tapped.
 // Hosts:
@@ -441,6 +442,11 @@ function TranslationInfoSheet({
   }, [visible, screenHeight, translateY, backdropOpacity]);
 
   const scope = translation ? scopeLabel(translation) : null;
+  const editorial = translation
+    ? TRANSLATION_ORIGINS[translation.id]
+    : undefined;
+  const eyebrow = editorial?.era ?? translation?.traditionLabel ?? "";
+  const originText = editorial?.origin ?? translation?.description ?? "";
 
   return (
     <Modal
@@ -468,9 +474,7 @@ function TranslationInfoSheet({
           {/* Eyebrow + title + close */}
           <View style={infoSheetStyles.headerRow}>
             <View style={{ flex: 1 }}>
-              <Text style={infoSheetStyles.eyebrow}>
-                {translation?.traditionLabel}
-              </Text>
+              <Text style={infoSheetStyles.eyebrow}>{eyebrow}</Text>
               <Text style={infoSheetStyles.title}>{translation?.name}</Text>
             </View>
             <Pressable
@@ -491,10 +495,7 @@ function TranslationInfoSheet({
           >
             {/* Metadata chips row */}
             <View style={infoSheetStyles.chips}>
-              <InfoChip
-                icon="type"
-                label={translation?.scriptLabel ?? ""}
-              />
+              <InfoChip icon="type" label={translation?.scriptLabel ?? ""} />
               {translation?.kind === "original" ? (
                 <InfoChip icon="star" label="Original language" />
               ) : (
@@ -509,11 +510,9 @@ function TranslationInfoSheet({
               {scope ? <InfoChip icon="layers" label={scope} /> : null}
             </View>
 
-            {/* Description */}
-            {translation?.description ? (
-              <Text style={infoSheetStyles.description}>
-                {translation.description}
-              </Text>
+            {/* Editorial origin — the actual history of the translation. */}
+            {originText ? (
+              <Text style={infoSheetStyles.description}>{originText}</Text>
             ) : null}
           </ScrollView>
         </Animated.View>
