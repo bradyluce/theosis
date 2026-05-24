@@ -82,7 +82,9 @@ export function paragraphize(
 
   // Promote numbered-list / Q&A markers at line start to paragraph break.
   // e.g., "5. The Eucharist", "Q. 12.", "R. The Apostle says…"
-  text = text.replace(/\n(?=(?:\d+\.|Q\.\s|R\.\s|[Aa]nswer\.))/g, "\n\n");
+  // NOTE: limit numbers to 1-3 digits to avoid splitting on years (e.g.
+  // "Born\n1866. Arrived...") which would wrongly treat "1866." as item 1866.
+  text = text.replace(/\n(?=(?:\d{1,3}\.\s|Q\.\s|R\.\s|[Aa]nswer\.))/g, "\n\n");
 
   // Promote opening-quote at line start to paragraph break (likely speaker
   // change in narrative or new quoted passage).

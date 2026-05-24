@@ -59,14 +59,33 @@ function isGarbleParagraph(text: string): boolean {
 
 export function parseMoschosSpiritualMeadow(config: ParseConfig): CommentaryBundleV2 {
   const fullText = readFileSync(join(config.rawDir, "extracted.txt"), "utf8");
-  // Body anchors are lines starting with "<N>. ".
-  const re = /^(\d{1,3})\.\s+(.{4,140})$/gm;
+  // Skip front matter (LoC catalog data, preface, translator notes). Body
+  // of the Spiritual Meadow proper begins around offset 12000 (~line 370).
+  // Use a higher threshold so "1. Monastic and religious life—..." doesn't
+  // get caught as Tale 1.
+  const BODY_SKIP = 12000;
+  // Body anchors are lines starting with "<N>. " where the title begins
+  // with several consecutive uppercase letters (THE / A / AN followed by
+  // ALL-CAPS words). The PDF uses a 2-column layout so the title and
+  // continuing body text often share a line — we permit anything to follow.
+  const re = /^(\d{1,3})\.\s+(.{4,160})$/gm;
   const matches: Array<{ num: number; index: number; title: string }> = [];
   let m: RegExpExecArray | null;
   while ((m = re.exec(fullText)) !== null) {
+    if (m.index < BODY_SKIP) continue;
     const num = parseInt(m[1]!, 10);
     if (num < 1 || num > 260) continue;
-    matches.push({ num, index: m.index, title: m[2]!.trim() });
+    const rest = m[2]!.trim();
+    // Anti-LoC filter: the rest must start with a sequence resembling an
+    // ALL-CAPS tale heading. Accept either THE/A/AN followed by ALL-CAPS,
+    // or 3+ consecutive uppercase letters at the start.
+    const startsAllCaps =
+      /^(THE|A|AN)\s+[A-Z]/.test(rest) || /^[A-Z]{3,}/.test(rest);
+    if (!startsAllCaps) continue;
+    // Extract just the title prefix (consecutive caps/spaces) for display.
+    const titleMatch = /^([A-Z][A-Z\s'-]+[A-Z]|[A-Z]+)/.exec(rest);
+    const title = (titleMatch ? titleMatch[1]! : rest).trim();
+    matches.push({ num, index: m.index, title });
   }
   if (matches.length === 0) {
     throw new Error("[moschos] no tale anchors located");

@@ -101,9 +101,47 @@ export function parsePopovichOrthodoxFaithLifeInChrist(config: ParseConfig): Com
   }
 
   const chapters: WorkChapter[] = hits.map((hit, idx) => {
-    const lineEnd = fullText.indexOf("\n", hit.index);
-    const bodyStart = lineEnd >= 0 ? lineEnd + 1 : hit.index;
+    // Skip the anchor line, then any single follow-on title-like line so the
+    // chapter title doesn't bleed into the first body paragraph.
+    let bodyStart = fullText.indexOf("\n", hit.index);
+    bodyStart = bodyStart >= 0 ? bodyStart + 1 : hit.index;
+    // For 2-line anchors like "HUMANISTIC AND THEANTHROPIC\nEDUCATION", the
+    // first matched line is "HUMANISTIC AND THEANTHROPIC" and we still need
+    // to skip "EDUCATION" too. Also handle page-number / running-header.
+    const titleKey = hit.def.title.replace(/[^A-Za-z]/g, "").toLowerCase();
     const bodyEnd = idx + 1 < hits.length ? hits[idx + 1]!.index : fullText.length;
+    for (let pass = 0; pass < 3; pass += 1) {
+      const nl = fullText.indexOf("\n", bodyStart);
+      if (nl < 0 || nl >= bodyEnd) break;
+      const line = fullText.slice(bodyStart, nl).trim();
+      if (line === "") {
+        bodyStart = nl + 1;
+        continue;
+      }
+      const lineKey = line.replace(/[^A-Za-z]/g, "").toLowerCase();
+      // Looser title-prefix match: ≥6 chars of overlap is enough to catch OCR
+      // garble like "LNES OF THE SAINTS" vs "Lives of the Saints".
+      const overlap = Math.min(lineKey.length, titleKey.length, 6);
+      if (
+        overlap > 0 &&
+        (titleKey.includes(lineKey.slice(0, overlap)) ||
+          lineKey.includes(titleKey.slice(-overlap)))
+      ) {
+        bodyStart = nl + 1;
+        continue;
+      }
+      // Also skip running-header lines like "ORTHODOX FAITH AND LIFE..."
+      if (/^ORTHODOX\s+FAITH\s+AND\s+LIFE/i.test(line)) {
+        bodyStart = nl + 1;
+        continue;
+      }
+      // Skip stray short ALL-CAPS lines (OCR'd page chrome).
+      if (/^[A-Z][A-Z\s]{2,}$/.test(line) && line.length < 60) {
+        bodyStart = nl + 1;
+        continue;
+      }
+      break;
+    }
     const body = fullText.slice(bodyStart, bodyEnd);
     const paragraphs = paragraphize(body, { minLength: 40 }).filter((p) => {
       if (/^\d+$/.test(p.text) && p.text.length <= 4) return false;

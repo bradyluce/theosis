@@ -128,7 +128,29 @@ export function parseTheophanSpiritualLife(config: ParseConfig): CommentaryBundl
 
   const chapters: WorkChapter[] = ordered.map((hit, idx) => {
     const nextHit = ordered[idx + 1];
-    const startByte = lineOffsets[hit.lineIndex + 1]!; // skip the number line
+    // Skip the number line AND the title line that follows. Also skip any
+    // subsequent page-chrome lines ("THE SPIRITUAL LIFE") so paragraph 1
+    // starts at real chapter body content.
+    let startLine = hit.lineIndex + 1;
+    for (let pass = 0; pass < 6; pass += 1) {
+      if (startLine >= lines.length) break;
+      const candidate = lines[startLine]!.trim();
+      if (candidate === "") {
+        startLine += 1;
+        continue;
+      }
+      const candidateNorm = normalize(lines[startLine]!);
+      if (candidateNorm === hit.title) {
+        startLine += 1;
+        continue;
+      }
+      if (candidateNorm === "THE SPIRITUAL LIFE") {
+        startLine += 1;
+        continue;
+      }
+      break;
+    }
+    const startByte = lineOffsets[startLine]!;
     const endByte = nextHit ? lineOffsets[nextHit.lineIndex]! : fullText.length;
     const body = fullText.slice(startByte, endByte);
     const paragraphs = paragraphize(body, { minLength: 40 }).filter((p) => {

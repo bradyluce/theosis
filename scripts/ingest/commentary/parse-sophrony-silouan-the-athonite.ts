@@ -179,8 +179,41 @@ export function parseSophronySilouan(config: ParseConfig): CommentaryBundleV2 {
     endIndex: number,
   ): WorkChapter[] {
     return anchors.map((hit, idx) => {
-      const lineEnd = fullText.indexOf("\n", hit.index);
-      const bodyStart = lineEnd >= 0 ? lineEnd + 1 : hit.index;
+      // Skip the Roman-numeral anchor line.
+      let bodyStart = fullText.indexOf("\n", hit.index);
+      bodyStart = bodyStart >= 0 ? bodyStart + 1 : hit.index;
+      // Then skip the chapter-title line (typically the next non-empty line),
+      // since the title is already in the chapter metadata. Without this
+      // step the title bleeds into the first paragraph of the chapter body.
+      const expectedTitle = titles[hit.num];
+      if (expectedTitle) {
+        // Walk forward, skipping blank lines, until we either find the title
+        // (and skip it) or hit substantive content. Be lenient about
+        // tab/whitespace and punctuation differences in OCR text.
+        const titleKey = expectedTitle.replace(/[^A-Za-z]/g, "").toLowerCase();
+        let cursor = bodyStart;
+        while (cursor < endIndex) {
+          const nl = fullText.indexOf("\n", cursor);
+          const lineEnd = nl >= 0 ? nl : endIndex;
+          const line = fullText.slice(cursor, lineEnd).trim();
+          if (line === "") {
+            cursor = lineEnd + 1;
+            continue;
+          }
+          const lineKey = line.replace(/[^A-Za-z]/g, "").toLowerCase();
+          // If the line resembles the title (≥75% of title chars present in
+          // the same order), treat it as the title line and skip past it.
+          if (
+            lineKey.length > 0 &&
+            (lineKey === titleKey || lineKey.includes(titleKey.slice(0, Math.floor(titleKey.length * 0.75))))
+          ) {
+            cursor = lineEnd + 1;
+            break;
+          }
+          break;
+        }
+        bodyStart = cursor;
+      }
       const bodyEnd = idx + 1 < anchors.length ? anchors[idx + 1]!.index : endIndex;
       const body = fullText.slice(bodyStart, bodyEnd);
       const title = titles[hit.num] ?? `Chapter ${hit.num}`;

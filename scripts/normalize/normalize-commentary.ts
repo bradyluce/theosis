@@ -32,6 +32,7 @@ import {
   mkdirSync,
   readFileSync,
   readdirSync,
+  unlinkSync,
   writeFileSync,
 } from "node:fs";
 import { join } from "node:path";
@@ -569,6 +570,22 @@ function main() {
   for (const [workId, byOrder] of chaptersByWork) {
     const ordered = [...byOrder.values()].sort((a, b) => a.order - b.order);
     if (ordered.length === 0) continue;
+    // Remove stale chapter files from a prior run before writing the
+    // current set. Without this, switching a parser from a single-chapter
+    // fallback to a deep-parsed multi-chapter layout leaves the old chapter
+    // file behind, and the catalog ends up serving both versions.
+    const workDir = join(LIBRARY_DIR, "by-work", workId);
+    if (existsSync(workDir)) {
+      const keepOrders = new Set(ordered.map((c) => c.order));
+      for (const entry of readdirSync(workDir)) {
+        const numMatch = /^(\d+)\.json$/.exec(entry);
+        if (!numMatch) continue;
+        const order = parseInt(numMatch[1]!, 10);
+        if (!keepOrders.has(order)) {
+          unlinkSync(join(workDir, entry));
+        }
+      }
+    }
     for (const chapter of ordered) {
       const filePath = join(LIBRARY_DIR, "by-work", workId, `${chapter.order}.json`);
       const file: ByWorkFile = { chapter };
