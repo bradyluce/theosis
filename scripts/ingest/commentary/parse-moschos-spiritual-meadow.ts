@@ -50,10 +50,22 @@ const source: SourceRecord = {
 
 export type ParseConfig = { rawDir: string };
 
+function cleanMoschosText(text: string): string {
+  // Strip the Wortley translation's editorial angle-brackets around supplied
+  // words. <The candidate> → The candidate. Also strip footnote-marker
+  // glyphs the OCR rendered as ® or *.
+  return text
+    .replace(/<([^>]{1,40})>/g, "$1")
+    .replace(/®/g, "")
+    .replace(/(?<=[a-z])\*+(?=\s|[a-z]|$)/g, "") // footnote * after lowercase
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 function isGarbleParagraph(text: string): boolean {
   const total = text.length;
-  const weird = (text.match(/[<>~\\;:\[\]{}|`@#$%^&*=]/g) ?? []).length;
-  if (total > 0 && weird / total > 0.04) return true;
+  const weird = (text.match(/[~\\;\[\]{}|`@#$%^&=]/g) ?? []).length;
+  if (total > 0 && weird / total > 0.05) return true;
   return false;
 }
 
@@ -64,60 +76,83 @@ export function parseMoschosSpiritualMeadow(config: ParseConfig): CommentaryBund
   // Use a higher threshold so "1. Monastic and religious life—..." doesn't
   // get caught as Tale 1.
   const BODY_SKIP = 12000;
-  // Body anchors are lines starting with "<N>. " where the title begins
-  // with several consecutive uppercase letters (THE / A / AN followed by
-  // ALL-CAPS words). The PDF uses a 2-column layout so the title and
-  // continuing body text often share a line — we permit anything to follow.
-  const re = /^(\d{1,3})\.\s+(.{4,160})$/gm;
-  const matches: Array<{ num: number; index: number; title: string }> = [];
+  // After the column-split OCR, tale anchors render as "N. TITLE" on a
+  // single line, optionally followed by a title-continuation line (e.g.
+  // "AND THE CAVE OF SAPSAS"). The next blank line marks body start.
+  // NOTE: use [ ] (literal space) not \s in the title group, since \s
+  // matches newlines and would let the regex consume multiple lines.
+  const re = /^(\d{1,3})\.[ \t]+([A-Z][A-Za-z ',-]{3,140})$/gm;
+  const matches: Array<{ num: number; index: number; titleStart: string }> = [];
   let m: RegExpExecArray | null;
   while ((m = re.exec(fullText)) !== null) {
     if (m.index < BODY_SKIP) continue;
     const num = parseInt(m[1]!, 10);
     if (num < 1 || num > 260) continue;
     const rest = m[2]!.trim();
-    // Anti-LoC filter: the rest must start with a sequence resembling an
-    // ALL-CAPS tale heading. Accept either THE/A/AN followed by ALL-CAPS,
-    // or 3+ consecutive uppercase letters at the start.
+    // Anti-LoC filter: title must start with consecutive ALL-CAPS.
     const startsAllCaps =
       /^(THE|A|AN)\s+[A-Z]/.test(rest) || /^[A-Z]{3,}/.test(rest);
     if (!startsAllCaps) continue;
-    // Extract just the title prefix (consecutive caps/spaces) for display.
-    const titleMatch = /^([A-Z][A-Z\s'-]+[A-Z]|[A-Z]+)/.exec(rest);
-    const title = (titleMatch ? titleMatch[1]! : rest).trim();
-    matches.push({ num, index: m.index, title });
+    matches.push({ num, index: m.index, titleStart: rest });
   }
   if (matches.length === 0) {
     throw new Error("[moschos] no tale anchors located");
   }
   // Keep only first occurrence per number.
   const seen = new Set<number>();
-  const ordered: Array<{ num: number; index: number; title: string; end: number }> = [];
+  const ordered: Array<{ num: number; index: number; titleStart: string; title: string; bodyStart: number; end: number }> = [];
   for (const mm of matches) {
     if (seen.has(mm.num)) continue;
     seen.add(mm.num);
-    ordered.push({ ...mm, end: 0 });
+    // Walk forward from the anchor: title-line, optional title-continuation
+    // line(s), then a blank line that marks body start.
+    let cursor = fullText.indexOf("\n", mm.index);
+    if (cursor < 0) cursor = mm.index;
+    cursor += 1;
+    let title = mm.titleStart;
+    while (cursor < fullText.length) {
+      const nl = fullText.indexOf("\n", cursor);
+      if (nl < 0) break;
+      const line = fullText.slice(cursor, nl).trim();
+      if (line === "") {
+        cursor = nl + 1;
+        break;
+      }
+      // Continue collecting all-caps title-continuation lines (≤80 chars).
+      if (/^[A-Z][A-Z\s',-]+[A-Z]$/.test(line) && line.length < 80) {
+        title += " " + line;
+        cursor = nl + 1;
+        continue;
+      }
+      // Non-title line ends the heading region (no blank line preceded body).
+      break;
+    }
+    ordered.push({ num: mm.num, index: mm.index, titleStart: mm.titleStart, title, bodyStart: cursor, end: 0 });
   }
   ordered.sort((a, b) => a.num - b.num);
-  // Re-sort by file position for end-index calculation.
   const byPosition = [...ordered].sort((a, b) => a.index - b.index);
   for (let i = 0; i < byPosition.length; i += 1) {
     byPosition[i]!.end = i + 1 < byPosition.length ? byPosition[i + 1]!.index : fullText.length;
   }
 
   const chapters: WorkChapter[] = ordered.map((hit) => {
-    const lineEnd = fullText.indexOf("\n", hit.index);
-    const bodyStart = lineEnd >= 0 ? lineEnd + 1 : hit.index;
-    const body = fullText.slice(bodyStart, hit.end);
-    const paragraphs = paragraphize(body, { minLength: 40 }).filter((p) => {
-      if (/^\d+$/.test(p.text) && p.text.length <= 4) return false;
-      if (isGarbleParagraph(p.text)) return false;
-      return true;
-    });
+    const body = fullText.slice(hit.bodyStart, hit.end);
+    const paragraphs = paragraphize(body, { minLength: 40 })
+      .map((p) => ({ text: cleanMoschosText(p.text) }))
+      .filter((p) => {
+        if (!p.text) return false;
+        if (/^\d+$/.test(p.text) && p.text.length <= 4) return false;
+        if (isGarbleParagraph(p.text)) return false;
+        return true;
+      });
     // Clean OCR'd title: title-case it for display.
     const titleClean = hit.title
       .replace(/\s+/g, " ")
-      .replace(/^[A-Z\s]+\s+/, (s) => s.charAt(0) + s.slice(1).toLowerCase());
+      .replace(/[a-z]/g, "") // strip any lowercase OCR junk like "THe" → "TH"
+      .replace(/\s{2,}/g, " ")
+      .trim()
+      .toLowerCase()
+      .replace(/(^|\s)\w/g, (s) => s.toUpperCase());
     return {
       id: `${WORK_ID}-tale-${hit.num}`,
       workId: WORK_ID,
