@@ -184,17 +184,19 @@ export function dedupeEntries(
         const cont = containment(small, large);
         // Translation-pair signal: two HCF entries on the same target
         // sharing the same workId (post-canonicalization) but with
-        // different sourceIds are almost always parallel translations
-        // of the same passage — typically one PD print edition and one
-        // web mirror. Their prose differs enough that shingle Jaccard
-        // doesn't catch them, but they're not distinct commentary.
-        // (Multiple legitimate paragraphs from the same source share a
-        // sourceId, so they don't trigger this branch.)
+        // different sourceIds MAY be parallel translations of the same
+        // passage. But this is only true when their prose actually
+        // overlaps — without the Jaccard guard the rule swept up entire
+        // distinct paragraphs (e.g. different homilies of Augustine on
+        // 1 John 4:3 that share workId+target but are different
+        // content, Jaccard 0.16). Require at least moderate overlap.
+        const TRANSLATION_PAIR_JACCARD = 0.35;
         const sameHcfWorkDifferentSource =
           isHcfOrigin(entry) &&
           isHcfOrigin(k.entry) &&
           entry.workId === k.entry.workId &&
-          entry.sourceId !== k.entry.sourceId;
+          entry.sourceId !== k.entry.sourceId &&
+          j >= TRANSLATION_PAIR_JACCARD;
         // Any signal alone is enough: high Jaccard, near-containment, or
         // the translation-pair pattern.
         if (

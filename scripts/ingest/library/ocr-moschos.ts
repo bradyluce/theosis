@@ -4,14 +4,17 @@ import { PDFParse } from "pdf-parse";
 import { createWorker, type Worker } from "tesseract.js";
 import { createCanvas, loadImage } from "@napi-rs/canvas";
 
-// Re-OCR Moschos's Spiritual Meadow with explicit column splitting.
-// The book is a 2-column scholarly volume. Default tesseract PSM 3 reads
-// row-by-row across both columns and interleaves the text. Instead we split
-// each rendered page image vertically into left/right halves and OCR each
-// half separately, then concat as (left, right).
+// Re-OCR a 2-column scanned book with explicit column splitting. Default
+// tesseract PSM 3 reads row-by-row across both columns and interleaves
+// the text; we instead split each rendered page image vertically into
+// left/right halves and OCR each half separately, then concat (left, right).
+//
+// Usage: tsx ocr-moschos.ts [slug ...]
+// Defaults to moschos-spiritual-meadow when no slug given.
 
 const LIBRARY_DIR = join(process.cwd(), "content/raw/library");
-const SLUG = "moschos-spiritual-meadow";
+const CLI_SLUGS = process.argv.slice(2);
+const SLUGS = CLI_SLUGS.length > 0 ? CLI_SLUGS : ["moschos-spiritual-meadow"];
 
 async function splitPageColumns(pngBytes: Uint8Array): Promise<{ left: Buffer; right: Buffer }> {
   const img = await loadImage(Buffer.from(pngBytes));
@@ -97,19 +100,21 @@ async function main(): Promise<void> {
     tessedit_pageseg_mode: "4" as never,
   });
   try {
-    const sourcePdf = join(LIBRARY_DIR, SLUG, "source.pdf");
-    if (!existsSync(sourcePdf)) {
-      console.warn(`[skip] ${sourcePdf} not found`);
-      return;
+    for (const slug of SLUGS) {
+      const sourcePdf = join(LIBRARY_DIR, slug, "source.pdf");
+      if (!existsSync(sourcePdf)) {
+        console.warn(`[skip] ${sourcePdf} not found`);
+        continue;
+      }
+      const outDir = join(LIBRARY_DIR, slug);
+      console.log(`[ocr-column-split] ${slug}`);
+      const start = Date.now();
+      const stats = await ocrColumnSplit(worker, { slug, sourcePdf, outDir });
+      const elapsed = ((Date.now() - start) / 1000).toFixed(1);
+      console.log(
+        `  done: ${stats.numPages}p, ${stats.totalChars} chars, ${elapsed}s wall`,
+      );
     }
-    const outDir = join(LIBRARY_DIR, SLUG);
-    console.log(`[ocr-column-split] ${SLUG}`);
-    const start = Date.now();
-    const stats = await ocrColumnSplit(worker, { slug: SLUG, sourcePdf, outDir });
-    const elapsed = ((Date.now() - start) / 1000).toFixed(1);
-    console.log(
-      `  done: ${stats.numPages}p, ${stats.totalChars} chars, ${elapsed}s wall`,
-    );
   } finally {
     await worker.terminate();
   }
