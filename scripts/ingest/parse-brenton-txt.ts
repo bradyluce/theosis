@@ -135,12 +135,11 @@ export function parseBrentonTxt(config: BrentonParseConfig): ParsedTranslationDa
     const verseMatch = line.match(/^(\d+)\s+(.+)$/);
 
     if (verseMatch) {
-      if (currentChapter === 0 && currentEntry.chapterCount === 1) {
-        currentChapter = 1;
-      }
-
+      // Brenton omits the standalone "1" chapter header — books start
+      // directly with "1 <verse text>" after the heading. Auto-promote
+      // to chapter 1 so the first chapter isn't silently dropped.
       if (currentChapter === 0) {
-        continue;
+        currentChapter = 1;
       }
 
       flushVerse();

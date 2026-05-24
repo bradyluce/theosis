@@ -45,9 +45,14 @@ function isFootnoteLine(line: string) {
 
 function isSubheading(line: string) {
   const trimmed = line.trim();
+  // Cap at 8 words: real section titles are short phrases. Lines with more
+  // words are wrapped verse prose (e.g. the first line of Matt 1:1 is 15
+  // words and would otherwise be wrongly dropped as a subheading).
+  const wordCount = trimmed.split(/\s+/).length;
   return (
     trimmed.length > 0 &&
     trimmed.length < 80 &&
+    wordCount <= 8 &&
     /^[A-Z][A-Za-z0-9 "'(),-]+$/.test(trimmed) &&
     !/[.:;!?]$/.test(trimmed)
   );

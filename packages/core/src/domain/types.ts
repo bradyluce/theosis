@@ -34,6 +34,9 @@ export type BibleTranslation = {
   description: string;
   isPrimary?: boolean;
   psalterScheme?: PsalterScheme;
+  // Present when the translation covers only a subset of the canon (e.g.
+  // NT-only or OT-only). Absent means all catalog books are available.
+  availableBooks?: string[];
 };
 
 export type BibleBook = {
@@ -112,6 +115,100 @@ export type IconRef = {
   license: IconLicense;
   // Short Theosis-owned caption. Do not lift Wikimedia file descriptions.
   caption?: string;
+};
+
+// General Orthodox media catalog — the *non-icon* image pool. Catalogued in
+// content/normalized/media/catalog.json; files are served from public/media/.
+// Use for accent imagery, backdrops, and contextual visuals throughout the
+// app where a specific saint icon is the wrong fit (chapter headers,
+// landscape banners, liturgical-detail accents, etc.). Selection is done via
+// src/lib/content/media-store.ts (getMediaByContext) using the tag fields
+// below. Same license policy as IconRef.
+export type MediaTheme =
+  | "monastery"
+  | "church"
+  | "architecture"
+  | "fresco"
+  | "mosaic"
+  | "manuscript"
+  | "landscape"
+  | "liturgical"
+  | "nature"
+  | "iconography-detail"
+  | "candles"
+  | "censer"
+  | "vestment"
+  | "cross"
+  | "bells"
+  | "prosphora";
+
+export type MediaRegion =
+  | "greece"
+  | "mt-athos"
+  | "russia"
+  | "egypt"
+  | "sinai"
+  | "palestine"
+  | "syria"
+  | "armenia"
+  | "ethiopia"
+  | "serbia"
+  | "bulgaria"
+  | "romania"
+  | "cappadocia"
+  | "constantinople"
+  | "ravenna"
+  | "coptic"
+  | "georgia"
+  | "ukraine"
+  | "general";
+
+export type MediaEra =
+  | "early-christian"
+  | "byzantine"
+  | "medieval"
+  | "early-modern"
+  | "modern"
+  | "contemporary";
+
+export type MediaMood =
+  | "contemplative"
+  | "joyful"
+  | "ascetic"
+  | "triumphant"
+  | "mournful"
+  | "neutral";
+
+export type MediaLicense = IconLicense;
+
+export type MediaSource = {
+  name: string;
+  url: string;
+  author?: string;
+};
+
+export type MediaLinks = {
+  personIds?: string[];
+  feastIds?: string[];
+  topicIds?: string[];
+};
+
+export type MediaEntry = {
+  id: string;
+  src: string;
+  filename: string;
+  title: string;
+  description?: string;
+  alt: string;
+  themes: MediaTheme[];
+  region: MediaRegion;
+  era: MediaEra;
+  mood: MediaMood;
+  links?: MediaLinks;
+  dimensions?: { width: number; height: number };
+  license: MediaLicense;
+  source: MediaSource;
+  attribution: string;
 };
 
 export type Person = {
