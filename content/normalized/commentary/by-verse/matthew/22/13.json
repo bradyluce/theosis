@@ -1045,24 +1045,6 @@
       "targetVerseId": "kjva:matthew.22.13"
     },
     {
-      "id": "hcf:pseudo-chrysostom:matthew.22.13:afecc409:0",
-      "relation": "verse",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "hcf:work:pseudo-chrysostom:catena-aurea-by-aquinas",
-      "title": "Catena Aurea by Aquinas on matthew 22:13",
-      "excerpt": "Or, it points to the difference of punishment inflicted on sinners. Outer darkness being the deepest, inward darkness the lesser, as it were the outskirts of the place.",
-      "takeaway": "",
-      "sourceId": "hcf:source:historicalchristian-faith",
-      "rank": 60,
-      "tags": [
-        "hcf",
-        "c1274",
-        "secondary-quote"
-      ],
-      "targetVerseId": "kjva:matthew.22.13"
-    },
-    {
       "id": "hcf:jerome:matthew.22.13:2732122c:0",
       "relation": "verse",
       "topicSlugs": [],
@@ -1389,24 +1371,6 @@
       ]
     },
     {
-      "id": "catena-matt-3169-v13",
-      "relation": "verse",
-      "targetVerseId": "kjva:matthew.22.13",
-      "topicSlugs": [],
-      "personId": "pseudo-chrysostom",
-      "workId": "catena-aurea-matthew",
-      "title": "On Matt 22:1–14",
-      "excerpt": "Or, it points to the difference of punishment inflicted on sinners. Outer darkness being the deepest, inward darkness the lesser, as it were the out- skirts of the place.",
-      "takeaway": "",
-      "sourceId": "catena-aurea-source",
-      "rank": 55,
-      "tags": [
-        "catena-aurea",
-        "patristic",
-        "matthew"
-      ]
-    },
-    {
       "id": "catena-matt-3118-v13",
       "relation": "verse",
       "targetVerseId": "kjva:matthew.22.13",
@@ -1422,6 +1386,31 @@
         "catena-aurea",
         "patristic",
         "matthew"
+      ]
+    },
+    {
+      "id": "catena-matt-3169-v13",
+      "relation": "verse",
+      "targetVerseId": "kjva:matthew.22.13",
+      "topicSlugs": [],
+      "personId": "pseudo-chrysostom",
+      "workId": "catena-aurea-matthew",
+      "title": "On Matt 22:1–14",
+      "excerpt": "Or, it points to the difference of punishment inflicted on sinners. Outer darkness being the deepest, inward darkness the lesser, as it were the outskirts of the place.",
+      "takeaway": "",
+      "sourceId": "catena-aurea-source",
+      "rank": 55,
+      "tags": [
+        "catena-aurea",
+        "patristic",
+        "matthew"
+      ],
+      "provenance": [
+        "catena-aurea-source",
+        "hcf:source:historicalchristian-faith"
+      ],
+      "alternateIds": [
+        "hcf:pseudo-chrysostom:matthew.22.13:afecc409:0"
       ]
     },
     {
