@@ -3,9 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { type Href, router } from "expo-router";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ActivityIndicator,
+  type LayoutChangeEvent,
   Pressable,
   RefreshControl,
   ScrollView,
@@ -15,7 +16,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import type { SearchResult, SearchResultKind } from "@theosis/core";
+import type { DailyResponse, SearchResult, SearchResultKind } from "@theosis/core";
 
 import {
   Card,
@@ -175,12 +176,45 @@ function resolveMobileTarget(result: SearchResult): string | null {
   return null;
 }
 
+type SectionKey = "featured" | "topics" | "basics" | "browse";
+
+const SECTION_CHIPS: { key: SectionKey; label: string }[] = [
+  { key: "featured", label: "Featured" },
+  { key: "topics", label: "Topics" },
+  { key: "basics", label: "Basics" },
+  { key: "browse", label: "Browse" },
+];
+
 export default function LibraryScreen() {
   const api = getApi();
   const [query, setQuery] = useState("");
   const [recent, setRecent] = useState<string[]>([]);
   const debouncedQuery = useDebounced(query.trim(), 200);
   const searching = debouncedQuery.length >= 2;
+
+  // Scroll-to-section: each section block reports its Y position via onLayout.
+  // Tapping a chip scrolls the ScrollView to that Y minus a small breathing
+  // pad. Ys are captured into state so the chip jumper survives data loads
+  // (the section's position shifts as Featured Father/Work resolve).
+  const scrollRef = useRef<ScrollView>(null);
+  const [sectionYs, setSectionYs] = useState<Partial<Record<SectionKey, number>>>(
+    {},
+  );
+  const updateSectionY = useCallback(
+    (key: SectionKey) => (e: LayoutChangeEvent) => {
+      const y = e.nativeEvent.layout.y;
+      setSectionYs((prev) => (prev[key] === y ? prev : { ...prev, [key]: y }));
+    },
+    [],
+  );
+  const jumpToSection = useCallback(
+    (key: SectionKey) => {
+      const y = sectionYs[key];
+      if (y == null) return;
+      scrollRef.current?.scrollTo({ y: Math.max(0, y - 8), animated: true });
+    },
+    [sectionYs],
+  );
 
   useEffect(() => {
     let canceled = false;
@@ -214,6 +248,14 @@ export default function LibraryScreen() {
     queryKey: ["guides-index"],
     queryFn: () => api.fetchGuides(),
     staleTime: 60 * 60 * 1000,
+  });
+
+  // Today's commemoration — shared with the Daily tab via the same query key so
+  // we share its cache and don't pay a second request on tab transitions.
+  const dailyQuery = useQuery({
+    queryKey: ["daily", "today"],
+    queryFn: () => api.fetchDaily(),
+    staleTime: 5 * 60 * 1000,
   });
 
   const searchQuery = useQuery({
@@ -317,28 +359,10 @@ export default function LibraryScreen() {
       </View>
       <GiltRule full style={{ marginHorizontal: spacing.xl }} />
 
-      <ScrollView
-        style={styles.scroll}
-        contentContainerStyle={styles.scrollContent}
-        keyboardShouldPersistTaps="handled"
-        showsVerticalScrollIndicator={false}
-        refreshControl={
-          <RefreshControl
-            refreshing={peopleQuery.isFetching && !peopleQuery.isLoading}
-            onRefresh={() => {
-              peopleQuery.refetch();
-              libraryCatalogQuery.refetch();
-              topicsQuery.refetch();
-              guidesQuery.refetch();
-            }}
-            tintColor={colors.accent}
-            colors={[colors.accent]}
-          />
-        }
-      >
-        {/* Persistent search field — sits below the masthead. The search blade
-            stays visible whether the user is browsing the editorial spread or
-            actively searching; this is the one input that connects everything. */}
+      {/* Persistent search field — sits below the masthead, OUTSIDE the
+          ScrollView so it remains visible while scrolling through the editorial
+          spread or the search results. The one input that connects everything. */}
+      <View style={styles.searchOuterWrap}>
         <View style={styles.searchRow}>
           <Feather name="search" size={16} color={colors.inkSoft} />
           <TextInput
@@ -363,6 +387,56 @@ export default function LibraryScreen() {
           ) : null}
         </View>
 
+        {/* Section jump chips — hidden during search since the editorial
+            sections aren't rendered. Tapping a chip scrolls the ScrollView
+            to the matching section without leaving the tab. */}
+        {!searching ? (
+          <View style={styles.jumpChipsRow}>
+            {SECTION_CHIPS.map((chip) => {
+              const ready = sectionYs[chip.key] != null;
+              return (
+                <Pressable
+                  key={chip.key}
+                  onPress={() => jumpToSection(chip.key)}
+                  disabled={!ready}
+                  hitSlop={4}
+                  style={({ pressed }) => [
+                    styles.jumpChip,
+                    pressed && ready && styles.jumpChipPressed,
+                    !ready && { opacity: 0.5 },
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Jump to ${chip.label}`}
+                >
+                  <Text style={styles.jumpChipLabel}>{chip.label}</Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        ) : null}
+      </View>
+
+      <ScrollView
+        ref={scrollRef}
+        style={styles.scroll}
+        contentContainerStyle={styles.scrollContent}
+        keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={peopleQuery.isFetching && !peopleQuery.isLoading}
+            onRefresh={() => {
+              peopleQuery.refetch();
+              libraryCatalogQuery.refetch();
+              topicsQuery.refetch();
+              guidesQuery.refetch();
+              dailyQuery.refetch();
+            }}
+            tintColor={colors.accent}
+            colors={[colors.accent]}
+          />
+        }
+      >
         {searching ? (
           <SearchResults
             loading={searchQuery.isLoading}
@@ -382,9 +456,11 @@ export default function LibraryScreen() {
             topicsLoading={topicsQuery.isLoading}
             guides={guidesQuery.data?.guides ?? []}
             guidesLoading={guidesQuery.isLoading}
+            today={dailyQuery.data}
             recent={recent}
             onPickRecent={(q) => setQuery(q)}
             onClearRecent={onClearRecent}
+            onSectionLayout={updateSectionY}
           />
         )}
       </ScrollView>
@@ -501,9 +577,11 @@ function EditorialContent({
   topicsLoading,
   guides,
   guidesLoading,
+  today,
   recent,
   onPickRecent,
   onClearRecent,
+  onSectionLayout,
 }: {
   featuredFather: FeaturedPerson | undefined;
   featuredWork: FeaturedWork | null;
@@ -512,123 +590,134 @@ function EditorialContent({
   topicsLoading: boolean;
   guides: GuideTile[];
   guidesLoading: boolean;
+  today: DailyResponse | undefined;
   recent: string[];
   onPickRecent: (q: string) => void;
   onClearRecent: () => void;
+  onSectionLayout: (key: SectionKey) => (e: LayoutChangeEvent) => void;
 }) {
   return (
     <>
-      {/* Featured Father — editorial spread */}
-      {featuredFather ? (
-        <Pressable
-          onPress={() => router.push(`/people/${featuredFather.slug}`)}
-          style={({ pressed }) => [
-            styles.featuredFather,
-            pressed && { opacity: 0.92 },
-          ]}
-          accessibilityRole="button"
-          accessibilityLabel={`Featured Father: ${featuredFather.name}`}
-        >
-          <View style={[styles.fatherPortraitWrap, elevation.giltGlow]}>
-            {featuredFather.icon ? (
-              <Image
-                source={{ uri: featuredFather.icon.src }}
-                style={styles.fatherPortrait}
-                contentFit="cover"
-                transition={240}
-                accessibilityLabel={featuredFather.icon.alt}
-              />
-            ) : (
-              <View
-                style={[styles.fatherPortrait, styles.fatherPortraitPlaceholder]}
-              >
-                <Text style={styles.fatherPortraitLetter}>
-                  {featuredFather.name.charAt(0)}
-                </Text>
-              </View>
-            )}
-            <LinearGradient
-              colors={["transparent", "rgba(10, 9, 8, 0.85)"]}
-              locations={[0.45, 1]}
-              style={StyleSheet.absoluteFill}
-              pointerEvents="none"
-            />
-            <View style={styles.fatherPortraitOverlay}>
-              <Eyebrow tone="oxblood">
-                Featured · {featuredFather.kind}
-              </Eyebrow>
-              <Text style={styles.fatherName}>
-                {featuredFather.honorific
-                  ? `${featuredFather.honorific} ${featuredFather.name.split(",")[0]}`
-                  : featuredFather.name.split(",")[0]}
-              </Text>
-              <Text style={styles.fatherEra}>{featuredFather.eraLabel}</Text>
-            </View>
-          </View>
-          {featuredFather.summary ? (
-            <Text style={styles.fatherSummary} numberOfLines={3}>
-              {featuredFather.summary}
-            </Text>
-          ) : null}
-          <View style={styles.cta}>
-            <Text style={styles.ctaLabel}>Read the life</Text>
-            <Feather name="arrow-right" size={13} color={colors.accent} />
-          </View>
-        </Pressable>
-      ) : null}
+      {/* Today's commemoration — small editorial banner that ties the Library
+          to the Daily tab. Tappable when a primary saint can be matched from
+          the day's title; otherwise informational. */}
+      {today ? <TodayCommemorationCard data={today} /> : null}
 
-      {/* Featured Work */}
-      {featuredWork ? (
-        <Pressable
-          onPress={() => router.push(`/works/${featuredWork.slug}`)}
-          style={({ pressed }) => [pressed && { opacity: 0.92 }]}
-          accessibilityRole="button"
-          accessibilityLabel={`Featured work: ${featuredWork.title}`}
-        >
-          <Card intent="raised">
-            <View style={styles.workTopRow}>
-              <Eyebrow tone="accent">
-                Featured Work · {featuredWork.workType}
-              </Eyebrow>
-              <Feather name="book" size={16} color={colors.accent} />
+      {/* Featured spread — Father portrait + Work card. Wrapped together so a
+          single `featured` section anchor covers both. */}
+      <View onLayout={onSectionLayout("featured")} style={styles.sectionGroup}>
+        {/* Featured Father — editorial spread, now compact (was 320px tall) */}
+        {featuredFather ? (
+          <Pressable
+            onPress={() => router.push(`/people/${featuredFather.slug}`)}
+            style={({ pressed }) => [
+              styles.featuredFather,
+              pressed && { opacity: 0.92 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel={`Featured Father: ${featuredFather.name}`}
+          >
+            <View style={[styles.fatherPortraitWrap, elevation.giltGlow]}>
+              {featuredFather.icon ? (
+                <Image
+                  source={{ uri: featuredFather.icon.src }}
+                  style={styles.fatherPortrait}
+                  contentFit="cover"
+                  transition={240}
+                  accessibilityLabel={featuredFather.icon.alt}
+                />
+              ) : (
+                <View
+                  style={[styles.fatherPortrait, styles.fatherPortraitPlaceholder]}
+                >
+                  <Text style={styles.fatherPortraitLetter}>
+                    {featuredFather.name.charAt(0)}
+                  </Text>
+                </View>
+              )}
+              <LinearGradient
+                colors={["transparent", "rgba(10, 9, 8, 0.85)"]}
+                locations={[0.4, 1]}
+                style={StyleSheet.absoluteFill}
+                pointerEvents="none"
+              />
+              <View style={styles.fatherPortraitOverlay}>
+                <Eyebrow tone="oxblood">
+                  Featured · {featuredFather.kind}
+                </Eyebrow>
+                <Text style={styles.fatherName}>
+                  {featuredFather.honorific
+                    ? `${featuredFather.honorific} ${featuredFather.name.split(",")[0]}`
+                    : featuredFather.name.split(",")[0]}
+                </Text>
+                <Text style={styles.fatherEra}>{featuredFather.eraLabel}</Text>
+              </View>
             </View>
-            <Text style={styles.workTitle}>{featuredWork.title}</Text>
-            {featuredWorkAuthor ? (
-              <Text style={styles.workByline}>
-                by{" "}
-                {featuredWorkAuthor.honorific
-                  ? `${featuredWorkAuthor.honorific} ${featuredWorkAuthor.name.split(",")[0]}`
-                  : featuredWorkAuthor.name.split(",")[0]}
-                {" — "}
-                {featuredWork.eraLabel}
-              </Text>
-            ) : (
-              <Text style={styles.workByline}>
-                {featuredWork.eraLabel} · {featuredWork.lengthLabel}
-              </Text>
-            )}
-            {featuredWork.summary ? (
-              <Text style={styles.workSummary} numberOfLines={3}>
-                {featuredWork.summary}
+            {featuredFather.summary ? (
+              <Text style={styles.fatherSummary} numberOfLines={2}>
+                {featuredFather.summary}
               </Text>
             ) : null}
-            <GiltRule style={{ marginTop: spacing.md }} />
-            <View style={[styles.cta, { marginTop: spacing.md }]}>
-              <Text style={styles.ctaLabel}>Open the work</Text>
+            <View style={styles.cta}>
+              <Text style={styles.ctaLabel}>Read the life</Text>
               <Feather name="arrow-right" size={13} color={colors.accent} />
             </View>
-          </Card>
-        </Pressable>
-      ) : null}
+          </Pressable>
+        ) : null}
 
-      {/* Browse by topic — grid */}
-      <View style={styles.section}>
-        <SectionAccessoryHeader
-          eyebrow="Themes"
-          title="Browse by topic"
-          accessoryLabel="See all"
-          onAccessoryPress={() => router.push("/library/topics")}
-        />
+        {/* Featured Work */}
+        {featuredWork ? (
+          <Pressable
+            onPress={() => router.push(`/works/${featuredWork.slug}`)}
+            style={({ pressed }) => [pressed && { opacity: 0.92 }]}
+            accessibilityRole="button"
+            accessibilityLabel={`Featured work: ${featuredWork.title}`}
+          >
+            <Card intent="raised">
+              <View style={styles.workTopRow}>
+                <Eyebrow tone="accent">
+                  Featured Work · {featuredWork.workType}
+                </Eyebrow>
+                <Feather name="book" size={16} color={colors.accent} />
+              </View>
+              <Text style={styles.workTitle}>{featuredWork.title}</Text>
+              {featuredWorkAuthor ? (
+                <Text style={styles.workByline}>
+                  by{" "}
+                  {featuredWorkAuthor.honorific
+                    ? `${featuredWorkAuthor.honorific} ${featuredWorkAuthor.name.split(",")[0]}`
+                    : featuredWorkAuthor.name.split(",")[0]}
+                  {" — "}
+                  {featuredWork.eraLabel}
+                </Text>
+              ) : (
+                <Text style={styles.workByline}>
+                  {featuredWork.eraLabel} · {featuredWork.lengthLabel}
+                </Text>
+              )}
+              {featuredWork.summary ? (
+                <Text style={styles.workSummary} numberOfLines={3}>
+                  {featuredWork.summary}
+                </Text>
+              ) : null}
+              <GiltRule style={{ marginTop: spacing.md }} />
+              <View style={[styles.cta, { marginTop: spacing.md }]}>
+                <Text style={styles.ctaLabel}>Open the work</Text>
+                <Feather name="arrow-right" size={13} color={colors.accent} />
+              </View>
+            </Card>
+          </Pressable>
+        ) : null}
+      </View>
+
+      {/* Browse by topic — grid. The 9th tile is an inline "more" pointer to
+          the full topics browse screen. No accessory link in the header; the
+          end-of-grid tile is the single, clear "see more" affordance. */}
+      <View
+        onLayout={onSectionLayout("topics")}
+        style={styles.section}
+      >
+        <SectionPlainHeader eyebrow="Themes" title="Browse by topic" />
         {topicsLoading ? (
           <ActivityIndicator color={colors.accent} style={{ marginVertical: spacing.lg }} />
         ) : (
@@ -655,18 +744,39 @@ function EditorialContent({
                 </Text>
               </Pressable>
             ))}
+            {topics.length > 8 ? (
+              <Pressable
+                onPress={() => router.push("/library/topics")}
+                style={({ pressed }) => [
+                  styles.topicTile,
+                  styles.topicTileMore,
+                  pressed && { opacity: 0.85 },
+                ]}
+                accessibilityRole="button"
+                accessibilityLabel={`Browse all ${topics.length} topics`}
+              >
+                <Text style={styles.topicMoreIndex}>
+                  +{topics.length - 8}
+                </Text>
+                <Text style={styles.topicMoreLabel} numberOfLines={2}>
+                  All topics
+                </Text>
+                <View style={styles.topicMoreCta}>
+                  <Text style={styles.topicMoreCtaLabel}>Browse</Text>
+                  <Feather name="arrow-right" size={11} color={colors.accent} />
+                </View>
+              </Pressable>
+            ) : null}
           </View>
         )}
       </View>
 
-      {/* Orthodox basics — guide list */}
-      <View style={styles.section}>
-        <SectionAccessoryHeader
-          eyebrow="First steps"
-          title="Orthodox basics"
-          accessoryLabel="All guides"
-          onAccessoryPress={() => router.push("/library/guides")}
-        />
+      {/* Orthodox basics — guide list with an inline "more" row at the end. */}
+      <View
+        onLayout={onSectionLayout("basics")}
+        style={styles.section}
+      >
+        <SectionPlainHeader eyebrow="First steps" title="Orthodox basics" />
         {guidesLoading ? (
           <ActivityIndicator color={colors.accent} style={{ marginVertical: spacing.lg }} />
         ) : (
@@ -700,12 +810,39 @@ function EditorialContent({
                 <Feather name="chevron-right" size={16} color={colors.inkSoft} />
               </Pressable>
             ))}
+            {guides.length > 6 ? (
+              <Pressable
+                onPress={() => router.push("/library/guides")}
+                style={({ pressed }) => [
+                  styles.guideMoreRow,
+                  pressed && styles.guideRowPressed,
+                ]}
+                accessibilityRole="button"
+                accessibilityLabel={`Browse all ${guides.length} guides`}
+              >
+                <View style={styles.guideMoreIcon}>
+                  <Feather
+                    name="more-horizontal"
+                    size={18}
+                    color={colors.accent}
+                  />
+                </View>
+                <View style={styles.guideText}>
+                  <Eyebrow tone="accent">{guides.length - 6} more</Eyebrow>
+                  <Text style={styles.guideTitle}>Show all guides</Text>
+                </View>
+                <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+              </Pressable>
+            ) : null}
           </View>
         )}
       </View>
 
       {/* Browse all — gateway rows */}
-      <View style={styles.section}>
+      <View
+        onLayout={onSectionLayout("browse")}
+        style={styles.section}
+      >
         <Eyebrow tone="accent">Browse all</Eyebrow>
         <GiltRule style={{ marginBottom: spacing.sm }} />
         <BrowseRow
@@ -774,36 +911,77 @@ function EditorialContent({
   );
 }
 
-function SectionAccessoryHeader({
+// Slim banner that surfaces today's commemoration. Renders only the title +
+// feast label and (when matchable) a chevron pointing at the day's primary
+// saint. Mirrors the Daily tab's `findPrimarySaint` heuristic: a saint whose
+// name actually appears in the day's title is the principal subject; falling
+// back to `saints[0]` lands on the wrong person on multi-commemoration days
+// (Pentecost, Sunday of the Fathers, etc.). Same fix as in the Daily hero.
+function TodayCommemorationCard({ data }: { data: DailyResponse }) {
+  const primarySaint = findPrimarySaint(data.daily.title, data.saints);
+  const onPress = primarySaint
+    ? () => router.push(`/people/${primarySaint.slug}`)
+    : undefined;
+  const tappable = Boolean(onPress);
+
+  return (
+    <Pressable
+      onPress={onPress}
+      disabled={!tappable}
+      style={({ pressed }) => [
+        styles.todayCard,
+        pressed && tappable && { opacity: 0.88 },
+      ]}
+      accessibilityRole={tappable ? "button" : "text"}
+      accessibilityLabel={`Today's commemoration: ${data.daily.title}`}
+    >
+      <View style={styles.todayText}>
+        <Eyebrow tone="oxblood">
+          {data.daily.feastLabel ?? "Today's commemoration"}
+        </Eyebrow>
+        <Text style={styles.todayTitle} numberOfLines={2}>
+          {data.daily.title}
+        </Text>
+      </View>
+      {tappable ? (
+        <Feather name="chevron-right" size={16} color={colors.accent} />
+      ) : null}
+    </Pressable>
+  );
+}
+
+// Find the saint whose name appears in the day's title — copy of the helper
+// in the Daily tab. Skips short words and "saint"/"the" before matching so
+// generic words don't false-positive.
+function findPrimarySaint(
+  title: string,
+  saints: DailyResponse["saints"],
+): DailyResponse["saints"][number] | null {
+  const normalized = title.toLowerCase();
+  for (const saint of saints) {
+    const primaryName = saint.name.split(",")[0].toLowerCase();
+    const words = primaryName
+      .split(/\s+/)
+      .filter((w) => w.length > 3 && w !== "saint" && w !== "the");
+    if (words.some((w) => normalized.includes(w))) {
+      return saint;
+    }
+  }
+  return null;
+}
+
+function SectionPlainHeader({
   eyebrow,
   title,
-  accessoryLabel,
-  onAccessoryPress,
 }: {
   eyebrow: string;
   title: string;
-  accessoryLabel: string;
-  onAccessoryPress: () => void;
 }) {
   return (
-    <View style={styles.sectionAccessoryHeader}>
-      <View style={{ flex: 1 }}>
-        <Eyebrow tone="accent">{eyebrow}</Eyebrow>
-        <Text style={styles.sectionTitle}>{title}</Text>
-        <GiltRule style={{ marginTop: spacing.sm }} />
-      </View>
-      <Pressable
-        onPress={onAccessoryPress}
-        hitSlop={6}
-        accessibilityRole="button"
-        style={({ pressed }) => [
-          styles.accessoryButton,
-          pressed && { opacity: 0.7 },
-        ]}
-      >
-        <Text style={styles.accessoryLabel}>{accessoryLabel}</Text>
-        <Feather name="arrow-up-right" size={11} color={colors.accent} />
-      </Pressable>
+    <View style={styles.sectionPlainHeader}>
+      <Eyebrow tone="accent">{eyebrow}</Eyebrow>
+      <Text style={styles.sectionTitle}>{title}</Text>
+      <GiltRule style={{ marginTop: spacing.sm }} />
     </View>
   );
 }
@@ -899,11 +1077,23 @@ const styles = StyleSheet.create({
   scroll: { flex: 1 },
   scrollContent: {
     paddingHorizontal: spacing.xl,
-    paddingTop: spacing.lg,
+    paddingTop: spacing.md,
     paddingBottom: spacing["6xl"] + spacing.lg,
     gap: spacing["2xl"],
   },
 
+  // Section wrappers — kept thin so onLayout captures the section's Y
+  // position relative to the ScrollView for the jump-chip targets.
+  sectionGroup: { gap: spacing["2xl"] },
+
+  // Outer wrap holds the search field + jump chips, both positioned outside
+  // the ScrollView so they remain visible while content scrolls.
+  searchOuterWrap: {
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.lg,
+    paddingBottom: spacing.sm,
+    gap: spacing.md,
+  },
   searchRow: {
     flexDirection: "row",
     alignItems: "center",
@@ -920,6 +1110,34 @@ const styles = StyleSheet.create({
     color: colors.ink,
     fontSize: 15,
     fontFamily: fonts.sans,
+  },
+
+  // Section jump chips — horizontally arranged pills below the search input.
+  // Tapping a chip scrolls the ScrollView to the matching section. Chips
+  // disable themselves with reduced opacity until the section's Y position
+  // has been captured by onLayout.
+  jumpChipsRow: {
+    flexDirection: "row",
+    gap: spacing.xs,
+  },
+  jumpChip: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: 6,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: "rgba(212, 168, 87, 0.04)",
+  },
+  jumpChipPressed: {
+    backgroundColor: "rgba(212, 168, 87, 0.16)",
+  },
+  jumpChipLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.6,
+    textTransform: "uppercase",
   },
 
   loading: { paddingVertical: spacing["3xl"], alignItems: "center" },
@@ -945,11 +1163,7 @@ const styles = StyleSheet.create({
   resultsWrap: { gap: spacing["2xl"] },
 
   section: { gap: spacing.xs },
-  sectionAccessoryHeader: {
-    flexDirection: "row",
-    alignItems: "flex-end",
-    gap: spacing.md,
-  },
+  sectionPlainHeader: { gap: spacing.xs },
   sectionTitle: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 26,
@@ -958,25 +1172,36 @@ const styles = StyleSheet.create({
     lineHeight: 30,
     marginTop: 2,
   },
-  accessoryButton: {
+
+  // Today's commemoration banner — slim editorial card above Featured Father
+  // that mirrors the Daily tab's hero in miniature. Always renders, even on
+  // plain days (with feastLabel falling back to "Today's commemoration").
+  todayCard: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 4,
-    paddingBottom: spacing.sm,
+    gap: spacing.md,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+    borderRadius: radii.large,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: "rgba(139, 58, 58, 0.06)",
   },
-  accessoryLabel: {
-    fontFamily: fonts.sans,
-    fontSize: 10,
-    fontWeight: "700",
-    color: colors.accent,
-    letterSpacing: 1.6,
-    textTransform: "uppercase",
+  todayText: { flex: 1, gap: 2 },
+  todayTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 17,
+    color: colors.ink,
+    letterSpacing: -0.2,
+    lineHeight: 22,
   },
 
-  // Featured Father
+  // Featured Father — compact spread (was 320px tall; now ~220px). The
+  // typography shrinks in proportion so the composition still reads as a
+  // magazine cover, just with less vertical real estate to dominate the page.
   featuredFather: { gap: spacing.md },
   fatherPortraitWrap: {
-    height: 320,
+    height: 220,
     borderRadius: radii.xl,
     overflow: "hidden",
     borderWidth: 1,
@@ -990,7 +1215,7 @@ const styles = StyleSheet.create({
   },
   fatherPortraitLetter: {
     fontFamily: fonts.serifBoldItalic,
-    fontSize: 96,
+    fontSize: 72,
     color: colors.accent,
   },
   fatherPortraitOverlay: {
@@ -998,20 +1223,20 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    paddingHorizontal: spacing.xl,
-    paddingVertical: spacing.lg,
-    gap: spacing.xs,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+    gap: 2,
   },
   fatherName: {
     fontFamily: fonts.serifBoldItalic,
-    fontSize: 30,
+    fontSize: 24,
     color: colors.ink,
-    letterSpacing: -0.5,
-    lineHeight: 34,
+    letterSpacing: -0.4,
+    lineHeight: 28,
   },
   fatherEra: {
     fontFamily: fonts.serifItalic,
-    fontSize: 13,
+    fontSize: 12,
     color: colors.inkMuted,
   },
   fatherSummary: {
@@ -1107,6 +1332,40 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
 
+  // "+N more" tile at the end of the topic grid — same dimensions as a regular
+  // topic tile but visually distinguishable so it doesn't feel like a topic.
+  topicTileMore: {
+    backgroundColor: "rgba(212, 168, 87, 0.10)",
+    borderStyle: "dashed",
+  },
+  topicMoreIndex: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 26,
+    color: colors.accent,
+    letterSpacing: -0.5,
+  },
+  topicMoreLabel: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 20,
+    color: colors.ink,
+    letterSpacing: -0.3,
+    lineHeight: 24,
+  },
+  topicMoreCta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    marginTop: 4,
+  },
+  topicMoreCtaLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 9,
+    color: colors.accent,
+    letterSpacing: 1.8,
+    textTransform: "uppercase",
+    fontWeight: "700",
+  },
+
   // Guide rows
   guideList: { gap: spacing.sm, marginTop: spacing.sm },
   guideRow: {
@@ -1145,6 +1404,31 @@ const styles = StyleSheet.create({
     fontFamily: fonts.serifItalic,
     fontSize: 12,
     color: colors.inkSoft,
+  },
+
+  // "Show all" row at the bottom of the basics list — same row geometry as a
+  // regular guide row, just with a dashed-border icon to set it apart.
+  guideMoreRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: spacing.md,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.sm,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: colors.lineGilt,
+    marginTop: spacing.xs,
+  },
+  guideMoreIcon: {
+    width: 36,
+    height: 36,
+    borderRadius: radii.card,
+    backgroundColor: "rgba(212, 168, 87, 0.10)",
+    borderWidth: 1,
+    borderStyle: "dashed",
+    borderColor: colors.lineGilt,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 2,
   },
 
   // Browse rows
