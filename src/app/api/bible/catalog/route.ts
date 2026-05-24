@@ -79,7 +79,11 @@ function getFromLocal(): unknown | null {
 }
 
 export async function GET() {
-  const raw = (await getFromS3()) ?? getFromLocal();
+  // Local catalog wins. The file is part of the deploy and reflects the
+  // current ingestion state; S3 caches an older copy and would otherwise
+  // override fresh local data (e.g. new translations like WEB/Vulgate).
+  // S3 is kept only as a safety net for deploys missing the file.
+  const raw = getFromLocal() ?? (await getFromS3());
   if (!raw) {
     return NextResponse.json({ error: "Bible catalog not found" }, { status: 404 });
   }
