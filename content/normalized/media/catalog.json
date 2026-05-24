@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "_meta": {
+    "description": "General Orthodox media catalog — non-icon imagery (monasteries, frescoes, mosaics, manuscripts, landscapes, liturgical detail) used as accent/backdrop content throughout the app. Distinct from the saint-icon catalog at content/normalized/icons/catalog.json. Files live at public/media/ and are synced from content/raw/media/ via `npm run sync:media`.",
+    "license": "Image files are public-domain, CC0, CC-BY, or CC-BY-SA. Each entry carries its own license + source + attribution.",
+    "status": "Populated by scripts/ingest/media/fetch-media.ts — 2 images, PD/CC0 only. Last run 2026-05-24."
+  },
+  "entries": [
+    {
+      "id": "monastery-meteora-01",
+      "src": "/media/monastery-meteora-01.png",
+      "filename": "monastery-meteora-01.png",
+      "title": "GR-Meteora-kloester",
+      "description": "GR-Meteora-kloester. The Meteora monasteries of Thessaly, perched atop sandstone pillars.",
+      "alt": "The Meteora monasteries of Thessaly, perched atop sandstone pillars.",
+      "themes": [
+        "monastery",
+        "architecture",
+        "landscape"
+      ],
+      "region": "greece",
+      "era": "modern",
+      "mood": "contemplative",
+      "links": {
+        "personIds": [],
+        "feastIds": [],
+        "topicIds": []
+      },
+      "dimensions": {
+        "width": 884,
+        "height": 1005
+      },
+      "license": "cc-by-sa",
+      "source": {
+        "name": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:GR-Meteora-kloester.png",
+        "author": "Bgabel"
+      },
+      "attribution": "CC BY-SA. Photo/scan by Bgabel via Wikimedia Commons."
+    },
+    {
+      "id": "monastery-meteora-02",
+      "src": "/media/monastery-meteora-02.jpg",
+      "filename": "monastery-meteora-02.jpg",
+      "title": "J26 575 Kumaries, Kafkasios, Paläokranies",
+      "description": "J26 575 Kumaries, Kafkasios, Paläokranies. The Meteora monasteries of Thessaly, perched atop sandstone pillars.",
+      "alt": "The Meteora monasteries of Thessaly, perched atop sandstone pillars.",
+      "themes": [
+        "monastery",
+        "architecture",
+        "landscape"
+      ],
+      "region": "greece",
+      "era": "modern",
+      "mood": "contemplative",
+      "links": {
+        "personIds": [],
+        "feastIds": [],
+        "topicIds": []
+      },
+      "dimensions": {
+        "width": 1200,
+        "height": 800
+      },
+      "license": "cc-by-sa",
+      "source": {
+        "name": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:J26_575_Kumaries,_Kafkasios,_Pal%C3%A4okranies.jpg",
+        "author": "Falk2"
+      },
+      "attribution": "CC BY-SA. Photo/scan by Falk2 via Wikimedia Commons."
+    }
+  ]
+}

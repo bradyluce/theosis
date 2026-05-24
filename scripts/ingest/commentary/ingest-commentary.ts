@@ -84,6 +84,34 @@ import { parsePorphyriosWoundedByLove } from "./parse-porphyrios-wounded-by-love
 import { parseRoseReligionOfTheFuture } from "./parse-rose-religion-of-the-future";
 import { parseKronstadtMyLifeInChrist } from "./parse-kronstadt-my-life-in-christ";
 import { parseWareTheOrthodoxWay } from "./parse-ware-the-orthodox-way";
+// 2nd acquisition batch (27 books)
+import { parseTheophanOnSavingYourSoul } from "./parse-theophan-on-saving-your-soul";
+import { parseTheophanPathToSalvation } from "./parse-theophan-path-to-salvation";
+import { parseTheophanSpiritualLife } from "./parse-theophan-spiritual-life";
+import { parseHierotheosPictureOfModernWorld } from "./parse-hierotheos-picture-of-modern-world";
+import { parseHierotheosNightInDesert } from "./parse-hierotheos-night-in-desert";
+import { parseAimilianosDivineLiturgy } from "./parse-aimilianos-divine-liturgy";
+import { parseAimilianosAngelicLife } from "./parse-aimilianos-angelic-life";
+import { parseAimilianosOnPrayer } from "./parse-aimilianos-on-prayer";
+import { parseShevkunovEverydaySaints } from "./parse-shevkunov-everyday-saints";
+import { parseSophronySilouan } from "./parse-sophrony-silouan-the-athonite";
+import { parsePopovichOrthodoxFaithLifeInChrist } from "./parse-popovich-orthodox-faith-life-in-christ";
+import { parseTikhonZadonskJourneyToHeaven } from "./parse-tikhon-zadonsk-journey-to-heaven";
+import { parseAndrewCreteGreatCanon } from "./parse-andrew-crete-great-canon";
+import { parseLosskyMysticalTheology } from "./parse-lossky-mystical-theology";
+import { parseCabasilasDivineLiturgyCommentary } from "./parse-cabasilas-divine-liturgy-commentary";
+import { parseCabasilasLifeInChrist } from "./parse-cabasilas-life-in-christ";
+import { parseBrianchaninovTheArena } from "./parse-brianchaninov-the-arena";
+import { parseCyrilCommentaryJohn } from "./parse-cyril-alexandria-commentary-john";
+import { parseCyrilFestalLetters } from "./parse-cyril-alexandria-festal-letters";
+import { parseCyrilUnityOfChrist } from "./parse-cyril-alexandria-unity-of-christ";
+import { parseSymeonEthicalDiscoursesVol1 } from "./parse-symeon-ethical-discourses-vol-1";
+import { parseSymeonEthicalDiscoursesVol2 } from "./parse-symeon-ethical-discourses-vol-2";
+import { parseSymeonEthicalDiscoursesVol3 } from "./parse-symeon-ethical-discourses-vol-3";
+import { parseMaximusAmbiguaToThomas } from "./parse-maximus-ambigua-to-thomas";
+import { parseZizioulasBeingAsCommunion } from "./parse-zizioulas-being-as-communion";
+import { parseMoschosSpiritualMeadow } from "./parse-moschos-spiritual-meadow";
+import { parsePaisiusLittleRussianPhilokalia } from "./parse-paisius-little-russian-philokalia";
 import { parseHcf } from "./parse-hcf";
 
 // When running from a git worktree (.claude/worktrees/<name>), the main repo
@@ -1737,6 +1765,69 @@ function main() {
   console.log(
     `[ware-the-orthodox-way] ${ware.chapters.length} chapters, ${ware.chapters.reduce((s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0), 0)} paragraphs.`,
   );
+
+  // ── 2nd acquisition batch (27 books) ─────────────────────────────────────
+  // Helper to keep this section terse. Each entry: slug + parser. The slug
+  // is both the raw-dir name (under LIBRARY_DIRECTORY) and the output JSON
+  // basename. Errors throw if no chapters land.
+  const batch2: Array<{
+    slug: string;
+    parse: (config: { rawDir: string }) => ReturnType<typeof parseTheophanOnSavingYourSoul>;
+  }> = [
+    { slug: "theophan-on-saving-your-soul", parse: parseTheophanOnSavingYourSoul },
+    { slug: "theophan-path-to-salvation", parse: parseTheophanPathToSalvation },
+    { slug: "theophan-spiritual-life", parse: parseTheophanSpiritualLife },
+    { slug: "hierotheos-picture-of-modern-world", parse: parseHierotheosPictureOfModernWorld },
+    { slug: "hierotheos-night-in-desert", parse: parseHierotheosNightInDesert },
+    { slug: "aimilianos-divine-liturgy", parse: parseAimilianosDivineLiturgy },
+    { slug: "aimilianos-angelic-life", parse: parseAimilianosAngelicLife },
+    { slug: "aimilianos-on-prayer", parse: parseAimilianosOnPrayer },
+    { slug: "shevkunov-everyday-saints", parse: parseShevkunovEverydaySaints },
+    { slug: "sophrony-silouan-the-athonite", parse: parseSophronySilouan },
+    { slug: "popovich-orthodox-faith-life-in-christ", parse: parsePopovichOrthodoxFaithLifeInChrist },
+    { slug: "tikhon-zadonsk-journey-to-heaven", parse: parseTikhonZadonskJourneyToHeaven },
+    { slug: "andrew-crete-great-canon", parse: parseAndrewCreteGreatCanon },
+    { slug: "lossky-mystical-theology", parse: parseLosskyMysticalTheology },
+    { slug: "cabasilas-divine-liturgy-commentary", parse: parseCabasilasDivineLiturgyCommentary },
+    { slug: "cabasilas-life-in-christ", parse: parseCabasilasLifeInChrist },
+    { slug: "brianchaninov-the-arena", parse: parseBrianchaninovTheArena },
+    { slug: "cyril-alexandria-commentary-john", parse: parseCyrilCommentaryJohn },
+    { slug: "cyril-alexandria-festal-letters-1-12", parse: parseCyrilFestalLetters },
+    { slug: "cyril-alexandria-unity-of-christ", parse: parseCyrilUnityOfChrist },
+    { slug: "symeon-ethical-discourses-vol-1", parse: parseSymeonEthicalDiscoursesVol1 },
+    { slug: "symeon-ethical-discourses-vol-2", parse: parseSymeonEthicalDiscoursesVol2 },
+    { slug: "symeon-ethical-discourses-vol-3", parse: parseSymeonEthicalDiscoursesVol3 },
+    { slug: "maximus-ambigua-to-thomas", parse: parseMaximusAmbiguaToThomas },
+    { slug: "zizioulas-being-as-communion", parse: parseZizioulasBeingAsCommunion },
+    { slug: "moschos-spiritual-meadow", parse: parseMoschosSpiritualMeadow },
+    { slug: "paisius-little-russian-philokalia", parse: parsePaisiusLittleRussianPhilokalia },
+  ];
+  for (const { slug, parse } of batch2) {
+    const rawDir = join(LIBRARY_DIRECTORY, slug);
+    if (!existsSync(rawDir)) {
+      console.warn(`[batch2:${slug}] raw dir not found, skipping`);
+      continue;
+    }
+    try {
+      const bundle = parse({ rawDir });
+      if (!bundle.chapters || bundle.chapters.length === 0) {
+        console.warn(`[batch2:${slug}] no chapters parsed, skipping write`);
+        continue;
+      }
+      writeFileSync(
+        join(OUTPUT_DIRECTORY, `${slug}.json`),
+        `${JSON.stringify(bundle, null, 2)}\n`,
+        "utf8",
+      );
+      const paragraphs = bundle.chapters.reduce(
+        (s, c) => s + c.sections.reduce((a, sec) => a + sec.paragraphs.length, 0),
+        0,
+      );
+      console.log(`[batch2:${slug}] ${bundle.chapters.length} chapters, ${paragraphs} paragraphs.`);
+    } catch (err) {
+      console.error(`[batch2:${slug}] failed: ${(err as Error).message}`);
+    }
+  }
 
   // ── Historical Christian Faith Commentaries Database ─────────────────────
   // Bulk patristic commentary mirrored from the public-domain TOML corpus
