@@ -108,6 +108,32 @@
       "direction": "ltr",
       "traditionLabel": "Patriarchal Greek witness",
       "description": "Antoniades 1904 Patriarchal text transliterated from parsed UAN files."
+    },
+    {
+      "id": "web",
+      "slug": "web",
+      "abbreviation": "WEB",
+      "name": "World English Bible",
+      "languageCode": "en",
+      "scriptLabel": "Latin",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "Modern English translation",
+      "description": "USFX import of the World English Bible (Apocrypha edition).",
+      "psalterScheme": "MT"
+    },
+    {
+      "id": "vulgate",
+      "slug": "vulgate",
+      "abbreviation": "Vulgate",
+      "name": "Clementine Vulgate",
+      "languageCode": "la",
+      "scriptLabel": "Latin",
+      "kind": "original",
+      "direction": "ltr",
+      "traditionLabel": "Latin Bible",
+      "description": "USFX import of the Sixto-Clementine Vulgate (1592).",
+      "psalterScheme": "LXX"
     }
   ],
   "books": [

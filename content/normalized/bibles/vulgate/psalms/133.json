@@ -1,0 +1,42 @@
+{
+  "chapter": {
+    "id": "vulgate:psalms.133",
+    "translationId": "vulgate",
+    "bookSlug": "psalms",
+    "chapterNumber": 133,
+    "referenceLabel": "Psalms 133",
+    "summary": "Source text for Psalms 133 in Clementine Vulgate."
+  },
+  "verses": [
+    {
+      "id": "vulgate:psalms.133.1",
+      "translationId": "vulgate",
+      "bookSlug": "psalms",
+      "chapterNumber": 133,
+      "verseNumber": 1,
+      "referenceLabel": "Psalms 133:1",
+      "text": "Canticum graduum. Ecce nunc benedicite Dominum, omnes servi Domini: qui statis in domo Domini, in atriis domus Dei nostri.",
+      "paragraphStart": true
+    },
+    {
+      "id": "vulgate:psalms.133.2",
+      "translationId": "vulgate",
+      "bookSlug": "psalms",
+      "chapterNumber": 133,
+      "verseNumber": 2,
+      "referenceLabel": "Psalms 133:2",
+      "text": "In noctibus extollite manus vestras in sancta, et benedicite Dominum.",
+      "paragraphStart": false
+    },
+    {
+      "id": "vulgate:psalms.133.3",
+      "translationId": "vulgate",
+      "bookSlug": "psalms",
+      "chapterNumber": 133,
+      "verseNumber": 3,
+      "referenceLabel": "Psalms 133:3",
+      "text": "Benedicat te Dominus ex Sion, qui fecit cælum et terram.",
+      "paragraphStart": false
+    }
+  ]
+}

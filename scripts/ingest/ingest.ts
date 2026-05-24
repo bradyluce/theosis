@@ -9,6 +9,7 @@ import { parseGreekTxt } from "./parse-greek-txt";
 import { parseOsisXml } from "./parse-osis-xml";
 import { parseRsvXml } from "./parse-rsv-xml";
 import { parseUan } from "./parse-uan";
+import { parseUsfxXml } from "./parse-usfx-xml";
 import type { ParsedTranslationData } from "./shared";
 
 type TranslationJob = {
@@ -133,6 +134,32 @@ const TRANSLATIONS: BibleTranslation[] = [
     traditionLabel: "Patriarchal Greek witness",
     description: "Antoniades 1904 Patriarchal text transliterated from parsed UAN files.",
   },
+  {
+    id: "web",
+    slug: "web",
+    abbreviation: "WEB",
+    name: "World English Bible",
+    languageCode: "en",
+    scriptLabel: "Latin",
+    kind: "translation",
+    direction: "ltr",
+    traditionLabel: "Modern English translation",
+    description: "USFX import of the World English Bible (Apocrypha edition).",
+    psalterScheme: "MT",
+  },
+  {
+    id: "vulgate",
+    slug: "vulgate",
+    abbreviation: "Vulgate",
+    name: "Clementine Vulgate",
+    languageCode: "la",
+    scriptLabel: "Latin",
+    kind: "original",
+    direction: "ltr",
+    traditionLabel: "Latin Bible",
+    description: "USFX import of the Sixto-Clementine Vulgate (1592).",
+    psalterScheme: "LXX",
+  },
 ];
 
 const JOBS: TranslationJob[] = [
@@ -212,6 +239,24 @@ const JOBS: TranslationJob[] = [
         translationId: "ant1904",
         translationLabel: "Antoniades 1904 Patriarchal Text",
         directoryPath: join(RAW_DIRECTORY, "original/editions-antonaides-1904-parsed"),
+      }),
+  },
+  {
+    translation: TRANSLATIONS.find((item) => item.id === "web")!,
+    parse: () =>
+      parseUsfxXml({
+        translationId: "web",
+        translationLabel: "World English Bible",
+        filePath: join(RAW_DIRECTORY, "english/eng-web_usfx.xml"),
+      }),
+  },
+  {
+    translation: TRANSLATIONS.find((item) => item.id === "vulgate")!,
+    parse: () =>
+      parseUsfxXml({
+        translationId: "vulgate",
+        translationLabel: "Clementine Vulgate",
+        filePath: join(RAW_DIRECTORY, "latin/lat-clementine-vul_usfx.xml"),
       }),
   },
 ];

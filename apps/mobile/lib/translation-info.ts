@@ -61,4 +61,14 @@ export const TRANSLATION_ORIGINS: Record<string, TranslationOrigin> = {
     origin:
       "The Patriarchal Text of 1904 is the official Greek New Testament of the Ecumenical Patriarchate of Constantinople, edited by Vasileios Antoniades on commission from the Synod. Antoniades collated dozens of liturgical Gospel books and Apostolos manuscripts to produce a text that reflects the readings actually used in Orthodox worship — the New Testament as it has been heard, chanted, and prayed in the Greek-speaking Church. This is the text that underlies the Greek lectionary and the printed Greek Bibles in use across the Patriarchate today.",
   },
+  web: {
+    era: "2000 · Modern English",
+    origin:
+      "The World English Bible is a contemporary public-domain English translation begun by Rainbow Missions in 1997 and continually refined since. It is a careful revision of the 1901 American Standard Version with updated vocabulary, modern punctuation, and a translation philosophy that aims for accuracy without archaism. This edition includes the Apocrypha/Deuterocanon — Tobit, Judith, Wisdom, Sirach, the Maccabees, and the rest of the books Orthodox Christians read as Scripture. The WEB renders the divine name as 'Yahweh' rather than 'the LORD', a distinctive that readers should weigh.",
+  },
+  vulgate: {
+    era: "4th c. · Jerome / 1592 Clementine",
+    origin:
+      "The Vulgate is St. Jerome's late-fourth-century Latin Bible, translated under commission from Pope Damasus and completed around AD 405. Jerome worked from the Hebrew for most of the Old Testament and from the Greek for the New Testament and Deuterocanon, producing the translation that would become the standard Bible of Latin Christendom for over a millennium. This edition is the Sixto-Clementine recension of 1592, the official text used by the Roman Church until Vatican II. For the Orthodox reader, the Vulgate matters as the text the Western Fathers — Augustine, Gregory the Great, Bede — read and quoted, and as a key witness to readings older than any surviving Greek manuscript.",
+  },
 };

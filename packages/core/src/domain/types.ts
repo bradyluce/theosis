@@ -26,7 +26,7 @@ export type BibleTranslation = {
   slug: string;
   abbreviation: string;
   name: string;
-  languageCode: "en" | "grc" | "he";
+  languageCode: "en" | "grc" | "he" | "la";
   scriptLabel: "Latin" | "Greek" | "Hebrew";
   kind: BibleTextKind;
   direction: WritingDirection;
