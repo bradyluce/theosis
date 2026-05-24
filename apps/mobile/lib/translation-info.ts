@@ -71,4 +71,29 @@ export const TRANSLATION_ORIGINS: Record<string, TranslationOrigin> = {
     origin:
       "The Vulgate is St. Jerome's late-fourth-century Latin Bible, translated under commission from Pope Damasus and completed around AD 405. Jerome worked from the Hebrew for most of the Old Testament and from the Greek for the New Testament and Deuterocanon, producing the translation that would become the standard Bible of Latin Christendom for over a millennium. This edition is the Sixto-Clementine recension of 1592, the official text used by the Roman Church until Vatican II. For the Orthodox reader, the Vulgate matters as the text the Western Fathers — Augustine, Gregory the Great, Bede — read and quoted, and as a key witness to readings older than any surviving Greek manuscript.",
   },
+  dra: {
+    era: "1610 / 1750 · Catholic English",
+    origin:
+      "The Douay-Rheims Bible is the classic English translation made for Catholic use during the period when the King James Version was emerging on the Protestant side. The New Testament appeared at Rheims in 1582, the Old Testament at Douai in 1609-10; both worked from the Latin Vulgate rather than the original languages. Bishop Richard Challoner revised the text extensively in the 1750s, producing the edition most readers still use today — denser and more formal than the KJV but recognizably of the same English moment. For Orthodox readers, the DRA is the most natural English window into the Latin patristic tradition, since it follows Jerome's Vulgate verse for verse.",
+  },
+  "rus-synodal": {
+    era: "1876 · Russian Synodal",
+    origin:
+      "The Synodal Translation is the standard Russian Bible of the Russian Orthodox Church, completed in 1876 after sixty years of work by the Holy Synod and scholars at the Moscow, St. Petersburg, Kiev, and Kazan theological academies. The Old Testament was translated primarily from the Hebrew Masoretic Text but consulted the Septuagint at every point of divergence; the New Testament follows the Patriarchal Greek tradition. Despite occasional Orthodox criticism for leaning on Hebrew over the LXX in places, it remains the Bible Russian Orthodox Christians read at home, hear quoted in homilies, and study with commentary — the closest thing to a household Russian Bible.",
+  },
+  "cu-elizabeth": {
+    era: "1751 · Elizabeth Bible",
+    origin:
+      "The Elizabeth Bible is the Church Slavonic Bible printed under Empress Elizabeth of Russia in 1751, and it remains the liturgical Bible of the Russian, Serbian, Bulgarian, and other Slavic Orthodox Churches. Church Slavonic itself goes back to Saints Cyril and Methodius in the ninth century — when the Slavic-speaking peoples were evangelized, the Greek liturgical books were translated into a literary language created for the purpose. The 1751 revision standardized that thousand-year-old tradition against the Greek Septuagint and Patriarchal text. When you hear the Gospel chanted in a Russian or Serbian church, this is the text being read.",
+  },
+  peshitta: {
+    era: "5th c. · Syriac New Testament",
+    origin:
+      "The Peshitta — Syriac for 'simple' or 'common' — is the standard Bible of the Syriac-speaking churches: the Syriac Orthodox Church, the Assyrian Church of the East, the Maronite Church, and the Malankara Orthodox tradition in India. The New Testament Peshitta was likely completed in the fifth century, standardizing earlier Syriac translations against the Greek; it is the language Aphrahat, Ephrem the Syrian, and Isaac of Nineveh wrote and prayed in. Some Syriac Christians hold that the Peshitta preserves the original Aramaic words of Christ and the apostles. Theosis includes it as the liturgical New Testament of the wider Eastern Christian world.",
+  },
+  wlc: {
+    era: "11th c. · Leningrad Codex",
+    origin:
+      "The Westminster Leningrad Codex is a precise digital edition of the Codex Leningradensis (AD 1008-1010), the oldest complete manuscript of the Hebrew Bible. Produced by Masoretic scribes at the end of the first millennium, the codex preserves the consonantal Hebrew text along with the vowel points and cantillation marks the Masoretes added to fix the pronunciation and chant of the synagogue tradition. For Orthodox readers it is the indispensable comparison text — when commentaries reference 'the Hebrew' against the Septuagint, this is what they mean. It is the Old Testament as the Jewish tradition received it, set side by side with the LXX that the Church received.",
+  },
 };

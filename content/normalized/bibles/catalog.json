@@ -134,6 +134,70 @@
       "traditionLabel": "Latin Bible",
       "description": "USFX import of the Sixto-Clementine Vulgate (1592).",
       "psalterScheme": "LXX"
+    },
+    {
+      "id": "dra",
+      "slug": "dra",
+      "abbreviation": "DRA",
+      "name": "Douay-Rheims Bible (Challoner)",
+      "languageCode": "en",
+      "scriptLabel": "Latin",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "Catholic English Bible",
+      "description": "SWORD ztext extraction of the Challoner revision of the Douay-Rheims Bible.",
+      "psalterScheme": "LXX"
+    },
+    {
+      "id": "rus-synodal",
+      "slug": "rus-synodal",
+      "abbreviation": "Synodal",
+      "name": "Russian Synodal Translation",
+      "languageCode": "ru",
+      "scriptLabel": "Cyrillic",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "Russian Orthodox Bible",
+      "description": "SWORD ztext extraction of the 1876 Russian Synodal Translation.",
+      "psalterScheme": "MT"
+    },
+    {
+      "id": "cu-elizabeth",
+      "slug": "cu-elizabeth",
+      "abbreviation": "ЦСЯ",
+      "name": "Church Slavonic (Elizabeth Bible)",
+      "languageCode": "cu",
+      "scriptLabel": "Cyrillic",
+      "kind": "translation",
+      "direction": "ltr",
+      "traditionLabel": "Slavonic liturgical Bible",
+      "description": "SWORD ztext extraction of the 1751 Elizabeth Church Slavonic Bible.",
+      "psalterScheme": "LXX"
+    },
+    {
+      "id": "peshitta",
+      "slug": "peshitta",
+      "abbreviation": "Peshitta",
+      "name": "Peshitta (Syriac New Testament)",
+      "languageCode": "syr",
+      "scriptLabel": "Syriac",
+      "kind": "original",
+      "direction": "rtl",
+      "traditionLabel": "Syriac New Testament",
+      "description": "SWORD ztext extraction of the Peshitta Syriac New Testament."
+    },
+    {
+      "id": "wlc",
+      "slug": "wlc",
+      "abbreviation": "WLC",
+      "name": "Westminster Leningrad Codex",
+      "languageCode": "he",
+      "scriptLabel": "Hebrew",
+      "kind": "original",
+      "direction": "rtl",
+      "traditionLabel": "Hebrew Masoretic Old Testament",
+      "description": "Open Scriptures Hebrew Bible — Westminster Leningrad Codex with morphology stripped.",
+      "psalterScheme": "MT"
     }
   ],
   "books": [

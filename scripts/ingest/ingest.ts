@@ -8,8 +8,10 @@ import { parseEobTxt } from "./parse-eob-txt";
 import { parseGreekTxt } from "./parse-greek-txt";
 import { parseOsisXml } from "./parse-osis-xml";
 import { parseRsvXml } from "./parse-rsv-xml";
+import { parseSwordDump } from "./parse-sword-dump";
 import { parseUan } from "./parse-uan";
 import { parseUsfxXml } from "./parse-usfx-xml";
+import { parseWlcOsis } from "./parse-wlc-osis";
 import type { ParsedTranslationData } from "./shared";
 
 type TranslationJob = {
@@ -160,6 +162,73 @@ const TRANSLATIONS: BibleTranslation[] = [
     description: "USFX import of the Sixto-Clementine Vulgate (1592).",
     psalterScheme: "LXX",
   },
+  {
+    id: "dra",
+    slug: "dra",
+    abbreviation: "DRA",
+    name: "Douay-Rheims Bible (Challoner)",
+    languageCode: "en",
+    scriptLabel: "Latin",
+    kind: "translation",
+    direction: "ltr",
+    traditionLabel: "Catholic English Bible",
+    description:
+      "SWORD ztext extraction of the Challoner revision of the Douay-Rheims Bible.",
+    psalterScheme: "LXX",
+  },
+  {
+    id: "rus-synodal",
+    slug: "rus-synodal",
+    abbreviation: "Synodal",
+    name: "Russian Synodal Translation",
+    languageCode: "ru",
+    scriptLabel: "Cyrillic",
+    kind: "translation",
+    direction: "ltr",
+    traditionLabel: "Russian Orthodox Bible",
+    description: "SWORD ztext extraction of the 1876 Russian Synodal Translation.",
+    psalterScheme: "MT",
+  },
+  {
+    id: "cu-elizabeth",
+    slug: "cu-elizabeth",
+    abbreviation: "ЦСЯ",
+    name: "Church Slavonic (Elizabeth Bible)",
+    languageCode: "cu",
+    scriptLabel: "Cyrillic",
+    kind: "translation",
+    direction: "ltr",
+    traditionLabel: "Slavonic liturgical Bible",
+    description:
+      "SWORD ztext extraction of the 1751 Elizabeth Church Slavonic Bible.",
+    psalterScheme: "LXX",
+  },
+  {
+    id: "peshitta",
+    slug: "peshitta",
+    abbreviation: "Peshitta",
+    name: "Peshitta (Syriac New Testament)",
+    languageCode: "syr",
+    scriptLabel: "Syriac",
+    kind: "original",
+    direction: "rtl",
+    traditionLabel: "Syriac New Testament",
+    description: "SWORD ztext extraction of the Peshitta Syriac New Testament.",
+  },
+  {
+    id: "wlc",
+    slug: "wlc",
+    abbreviation: "WLC",
+    name: "Westminster Leningrad Codex",
+    languageCode: "he",
+    scriptLabel: "Hebrew",
+    kind: "original",
+    direction: "rtl",
+    traditionLabel: "Hebrew Masoretic Old Testament",
+    description:
+      "Open Scriptures Hebrew Bible — Westminster Leningrad Codex with morphology stripped.",
+    psalterScheme: "MT",
+  },
 ];
 
 const JOBS: TranslationJob[] = [
@@ -257,6 +326,51 @@ const JOBS: TranslationJob[] = [
         translationId: "vulgate",
         translationLabel: "Clementine Vulgate",
         filePath: join(RAW_DIRECTORY, "latin/lat-clementine-vul_usfx.xml"),
+      }),
+  },
+  {
+    translation: TRANSLATIONS.find((item) => item.id === "dra")!,
+    parse: () =>
+      parseSwordDump({
+        translationId: "dra",
+        translationLabel: "Douay-Rheims Bible (Challoner)",
+        filePath: join(RAW_DIRECTORY, "sword-dumps/DRC.txt"),
+      }),
+  },
+  {
+    translation: TRANSLATIONS.find((item) => item.id === "rus-synodal")!,
+    parse: () =>
+      parseSwordDump({
+        translationId: "rus-synodal",
+        translationLabel: "Russian Synodal Translation",
+        filePath: join(RAW_DIRECTORY, "sword-dumps/RusSynodal.txt"),
+      }),
+  },
+  {
+    translation: TRANSLATIONS.find((item) => item.id === "cu-elizabeth")!,
+    parse: () =>
+      parseSwordDump({
+        translationId: "cu-elizabeth",
+        translationLabel: "Church Slavonic (Elizabeth Bible)",
+        filePath: join(RAW_DIRECTORY, "sword-dumps/CSlElizabeth.txt"),
+      }),
+  },
+  {
+    translation: TRANSLATIONS.find((item) => item.id === "peshitta")!,
+    parse: () =>
+      parseSwordDump({
+        translationId: "peshitta",
+        translationLabel: "Peshitta (Syriac New Testament)",
+        filePath: join(RAW_DIRECTORY, "sword-dumps/Peshitta.txt"),
+      }),
+  },
+  {
+    translation: TRANSLATIONS.find((item) => item.id === "wlc")!,
+    parse: () =>
+      parseWlcOsis({
+        translationId: "wlc",
+        translationLabel: "Westminster Leningrad Codex",
+        directoryPath: join(RAW_DIRECTORY, "hebrew"),
       }),
   },
 ];
