@@ -92,7 +92,11 @@ const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
   [/palm sunday|entry into jerusalem/i, "icon-feast-entry-jerusalem"],
   [/pascha|resurrection of (the|our) lord|resurrection of christ/i, "icon-feast-resurrection"],
   [/ascension/i, "icon-feast-ascension"],
-  [/pentecost/i, "icon-feast-pentecost"],
+  // "Pentecost" plus its Monday continuation, "Day of the Holy Spirit" —
+  // the latter is liturgically the second day of the same feast and shares
+  // the icon. Without the second alternation the Monday falls through to
+  // the day's Menaion saint (e.g. Justin Martyr on June 1).
+  [/pentecost|day of the (holy )?spirit|monday of the (holy )?spirit/i, "icon-feast-pentecost"],
   [/transfiguration/i, "icon-feast-transfiguration"],
   [/dormition/i, "icon-feast-dormition"],
   // Sunday-of-the-Holy-Fathers commemorations across the year all share the
@@ -183,7 +187,17 @@ export function getPrimaryIconForDay(
   const fromFeast =
     getIconForFeastTitle(daily.feastLabel) ?? getIconForFeastTitle(daily.title);
   if (fromFeast) return fromFeast;
+  // When a movable feast wins primary, the Menaion saint is demoted into
+  // additionalCommemorations (composer.ts) — but their id stays in
+  // daily.saintIds for the chip list below. Skip those here so the top icon
+  // reflects the day's actual primary commemoration, not a demoted saint.
+  const demotedIds = new Set(
+    daily.additionalCommemorations
+      .map((item) => item.saintId)
+      .filter((id): id is string => Boolean(id)),
+  );
   for (const saint of saints) {
+    if (demotedIds.has(saint.id)) continue;
     const icon = getIconForPerson(saint);
     if (icon) return icon;
   }
