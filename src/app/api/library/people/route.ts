@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import type { IconRef, Person } from "@theosis/core";
 import { getLibraryPeopleFromAll } from "@/lib/content/commentary-loader";
 import { getIconForPerson } from "@/lib/content/icon-store";
+import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
 
 // List Library-worthy Persons (canonized saints OR authors of any
 // Work with a real title) with their resolved icon inlined. Mobile
@@ -12,25 +13,12 @@ import { getIconForPerson } from "@/lib/content/icon-store";
 // resolve via direct /library/people/<slug> lookups for commentary
 // attribution but don't clutter the browse grid.
 //
-// Icons are URL-rewritten the same way /api/daily does — using the
-// Host header so they're reachable from a real device over LAN, not
-// the server's bind address.
+// Icon URLs are absolutized (so the phone can reach them over LAN) and
+// cache-busted via toAbsoluteIconUrl — see that helper for details.
 
 const CACHE_CONTROL = "public, max-age=300, stale-while-revalidate=3600";
 
 export type LibraryPerson = Person & { icon: IconRef | null };
-
-function toAbsoluteIcon(
-  icon: IconRef | undefined,
-  origin: string,
-): IconRef | null {
-  if (!icon) return null;
-  if (icon.src.startsWith("http://") || icon.src.startsWith("https://")) {
-    return icon;
-  }
-  const path = icon.src.startsWith("/") ? icon.src : `/${icon.src}`;
-  return { ...icon, src: `${origin}${path}` };
-}
 
 export async function GET(request: NextRequest) {
   const url = new URL(request.url);
@@ -42,7 +30,7 @@ export async function GET(request: NextRequest) {
   const people = getLibraryPeopleFromAll();
   const enriched: LibraryPerson[] = people.map((person) => ({
     ...person,
-    icon: toAbsoluteIcon(getIconForPerson(person), origin),
+    icon: toAbsoluteIconUrl(getIconForPerson(person), origin),
   }));
 
   // Sort by name for the Library list. Stable, predictable.

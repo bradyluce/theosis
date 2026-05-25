@@ -1,12 +1,13 @@
 import "server-only";
 
 import { NextRequest, NextResponse } from "next/server";
-import type { IconRef, Person, TopicPageResponse, Work } from "@theosis/core";
+import type { Person, TopicPageResponse, Work } from "@theosis/core";
 import {
   getAllPeopleFromAll,
   getAllWorksFromAll,
 } from "@/lib/content/commentary-loader";
 import { getIconForPerson } from "@/lib/content/icon-store";
+import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
 import { getTopicPageBySlug } from "@/lib/content/queries";
 
 // Full topic landing page. Resolves the curated Father IDs and Work slugs
@@ -15,20 +16,8 @@ import { getTopicPageBySlug } from "@/lib/content/queries";
 
 const CACHE_CONTROL = "public, max-age=600, stale-while-revalidate=3600";
 
-function toAbsoluteIcon(
-  icon: IconRef | undefined,
-  origin: string,
-): IconRef | null {
-  if (!icon) return null;
-  if (icon.src.startsWith("http://") || icon.src.startsWith("https://")) {
-    return icon;
-  }
-  const path = icon.src.startsWith("/") ? icon.src : `/${icon.src}`;
-  return { ...icon, src: `${origin}${path}` };
-}
-
 function withIcon(person: Person, origin: string) {
-  return { ...person, icon: toAbsoluteIcon(getIconForPerson(person), origin) };
+  return { ...person, icon: toAbsoluteIconUrl(getIconForPerson(person), origin) };
 }
 
 export async function GET(

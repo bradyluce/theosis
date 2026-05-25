@@ -11,6 +11,7 @@ import {
   getIconForPerson,
   getPrimaryIconForDay,
 } from "@/lib/content/icon-store";
+import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
 import type { IconRef } from "@theosis/core";
 
 // Serve a pre-composed snapshot of "today's daily commemoration" for the
@@ -38,18 +39,6 @@ function parseDateParam(raw: string | null): Date | undefined {
   return new Date(Date.UTC(year, month - 1, day));
 }
 
-// Rewrite icon paths to absolute URLs so the mobile app can fetch them
-// directly. Returns null untouched so callers can use `?? null` for the
-// "no icon for this saint" case.
-function toAbsoluteIcon(icon: IconRef | undefined, origin: string): IconRef | null {
-  if (!icon) return null;
-  if (icon.src.startsWith("http://") || icon.src.startsWith("https://")) {
-    return icon;
-  }
-  const path = icon.src.startsWith("/") ? icon.src : `/${icon.src}`;
-  return { ...icon, src: `${origin}${path}` };
-}
-
 export async function GET(request: NextRequest) {
   const url = new URL(request.url);
   const date = parseDateParam(url.searchParams.get("date"));
@@ -69,14 +58,14 @@ export async function GET(request: NextRequest) {
     request.headers.get("x-forwarded-proto") ?? url.protocol.replace(":", "");
   const host = request.headers.get("host") ?? url.host;
   const origin = `${proto}://${host}`;
-  const primaryIcon = toAbsoluteIcon(
+  const primaryIcon = toAbsoluteIconUrl(
     getPrimaryIconForDay(daily, saints),
     origin,
   );
 
   const saintIcons: Record<string, IconRef | null> = {};
   for (const saint of saints) {
-    saintIcons[saint.id] = toAbsoluteIcon(getIconForPerson(saint), origin);
+    saintIcons[saint.id] = toAbsoluteIconUrl(getIconForPerson(saint), origin);
   }
 
   return NextResponse.json(
