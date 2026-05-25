@@ -69,3 +69,21 @@ tmp_test.txt
 /*.traineddata
 /ingest.log
 /*.log
+
+# Expo / React Native build artifacts (mobile app)
+.expo/
+
+# Python build artifacts (used by some ad-hoc ingest scripts)
+**/__pycache__/
+
+# Acquisition source PDFs — large source materials. Behave like content/raw/:
+# directory layout is tracked, individual PDFs are not.
+/content/acquisition/*.pdf
+/content/acquisition/*.PDF
+# Stray PDFs at repo root are never committed (they should be moved into
+# content/acquisition/ or content/raw/).
+/*.pdf
+
+# Icon-audit scratch data (run /dev/icons + replacement picker to regenerate).
+/.flagged-icons.json
+/.flagged-icons-candidates.json
