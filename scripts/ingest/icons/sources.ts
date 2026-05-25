@@ -252,7 +252,7 @@ export const iconSources: IconSource[] = [
   },
   {
     id: "icon-st-seraphim-of-sarov",
-    wikimediaTitle: "File:Seraphim of Sarov (after 1903, priv.coll).jpg",
+    wikimediaTitle: "File:Seraphim of Sarov.jpg",
     alt: "Russian icon of Saint Seraphim of Sarov.",
     caption: "Saint Seraphim of Sarov",
   },
@@ -297,7 +297,7 @@ export const iconSources: IconSource[] = [
   },
   {
     id: "icon-joachim-and-anna",
-    wikimediaTitle: "File:The Meeting of Joachim and Anna.jpg",
+    wikimediaTitle: "File:Theotokos, Sts. Joakim and Anna.jpg",
     alt: "Icon of the Meeting of the Holy Ancestors Joachim and Anna at the Golden Gate.",
     caption: "Holy Ancestors Joachim and Anna",
   },
@@ -438,7 +438,7 @@ export const iconSources: IconSource[] = [
   },
   {
     id: "icon-prophet-habakkuk",
-    wikimediaTitle: "File:Prophet Habakkuk Пророк Аввакум.jpg",
+    wikimediaTitle: "File:Habakkuk (16th c., Rublev museum).jpg",
     alt: "Icon of the Holy Prophet Habakkuk.",
     caption: "Prophet Habakkuk",
   },
@@ -456,7 +456,7 @@ export const iconSources: IconSource[] = [
   },
   {
     id: "icon-tikhon-of-moscow",
-    wikimediaTitle: "File:Tikhon of Moscow.jpg",
+    wikimediaTitle: "File:1025th Anniversary of Baptism of Rus at St. Vladimir Memorial Church in Jackson, New Jersey (27330497292).jpg",
     alt: "Icon of Saint Tikhon, Patriarch and Confessor of Moscow.",
     caption: "Saint Tikhon of Moscow",
   },
@@ -528,5 +528,159 @@ export const iconSources: IconSource[] = [
     wikimediaTitle: "File:S. Thomas doctor angelicus... - G. A. Wolfgang f. - btv1b8425349f.jpg",
     alt: "Engraving of Saint Thomas Aquinas (Doctor Angelicus) by G. A. Wolfgang.",
     caption: "Saint Thomas Aquinas",
+  },
+
+  // === Post-audit replacements (May 2026) ===
+  // Selected via /dev/icons/replace after the manual icon examination.
+  // These override earlier auto-curated or hand-curated bindings.
+  {
+    id: "icon-abraham-the-patriarch",
+    wikimediaTitle: "File:Three Patriarchs in Paradise (18th c., Russia, priv. coll.).jpg",
+    alt: "Orthodox icon of Abraham the Patriarch.",
+    caption: "Abraham the Patriarch",
+  },
+  {
+    id: "icon-ambrose-of-milan",
+    wikimediaTitle: "File:English Icon of Saint Ambrose of Milan.jpg",
+    alt: "Icon of St. Ambrose of Milan.",
+    caption: "St. Ambrose of Milan",
+  },
+  {
+    id: "icon-andronicus-of-cilicia",
+    wikimediaTitle: "File:Andronicus, Athanasius of Christianoupolis and Junia.jpg",
+    alt: "Icon of Martyr Andronicus.",
+    caption: "Martyr Andronicus",
+  },
+  {
+    id: "icon-anselm-canterbury",
+    wikimediaTitle: "File:Triptyque de Saint Anselme.jpg",
+    alt: "Orthodox icon of Anselm of Canterbury.",
+    caption: "Anselm of Canterbury",
+  },
+  {
+    id: "icon-apostle-onesimus",
+    wikimediaTitle: "File:St.Onesimus.jpg",
+    alt: "Icon of the Holy Apostle Onesimus of the Seventy.",
+    caption: "Apostle Onesimus",
+  },
+  {
+    id: "icon-augustine",
+    wikimediaTitle: "File:Greek Icon of Saint Augustinus of Hippo 2.jpg",
+    alt: "Orthodox icon of Augustine of Hippo.",
+    caption: "Augustine of Hippo",
+  },
+  {
+    id: "icon-cyprian",
+    wikimediaTitle: "File:Stcyprian.jpg",
+    alt: "Orthodox icon of Cyprian of Carthage.",
+    caption: "Cyprian of Carthage",
+  },
+  {
+    id: "icon-dedication-church-of-resurrection",
+    wikimediaTitle: "File:Resurrection of Lazarus. Orthodox icon.jpg",
+    alt: "Icon of Dedication of the Church of the Resurrection.",
+    caption: "Dedication of the Church of the Resurrection",
+  },
+  {
+    id: "icon-euphemia-the-all-praised",
+    wikimediaTitle: "File:Света Јефимија, Вероника Ђукановић.jpg",
+    alt: "Icon of the Holy Great-martyr Euphemia the All-praised of Chalcedon.",
+    caption: "Great-martyr Euphemia",
+  },
+  {
+    id: "icon-euthymius-the-new",
+    wikimediaTitle: "File:Saints Akakius. Euthymius and Ignatius.jpg",
+    alt: "Icon of St. Euthymius the New of Thessalonica.",
+    caption: "St. Euthymius the New of Thessalonica",
+  },
+  {
+    id: "icon-florus-and-laurus",
+    wikimediaTitle: "File:0899Ha. Hermitage Museum (Hall 144). Icon of the Martyrs Florus and Laurus.jpg",
+    alt: "Novgorod icon of the Archangel Michael blessing the Martyrs Florus and Laurus of Dalmatia.",
+    caption: "Martyrs Florus and Laurus",
+  },
+  {
+    id: "icon-gregory-the-great",
+    wikimediaTitle: "File:Pontifical, St. Gregory the Great, Walters Manuscript W.536, fol. 72v.jpg",
+    alt: "Orthodox icon of Gregory the Great.",
+    caption: "Gregory the Great",
+  },
+  {
+    id: "icon-hippolytus-of-rome",
+    wikimediaTitle: "File:Fresco of Saint Hippolytus of Rome.jpg",
+    alt: "Orthodox icon of Hippolytus of Rome.",
+    caption: "Hippolytus of Rome",
+  },
+  {
+    id: "icon-isidore-of-chios",
+    wikimediaTitle: "File:Martyr Myrope of Chios.jpg",
+    alt: "Icon of Martyr Isidore of Chios.",
+    caption: "Martyr Isidore of Chios",
+  },
+  {
+    id: "icon-joseph-the-hymnographer",
+    wikimediaTitle: "File:Joseph the Hymnographer.jpg",
+    alt: "Icon of the Holy Hymnographers Theophanes and Joseph at Lipljan.",
+    caption: "Saint Joseph the Hymnographer",
+  },
+  {
+    id: "icon-macarius-the-egyptian",
+    wikimediaTitle: "File:Saint Macarius the Egyptian.jpg",
+    alt: "Orthodox icon of Macarius the Egyptian.",
+    caption: "Macarius the Egyptian",
+  },
+  {
+    id: "icon-porphyrius-of-gaza",
+    wikimediaTitle: "File:Saint Porphyrius of Gaza Crop.jpg",
+    alt: "Icon of St. Porphyrius of Gaza.",
+    caption: "St. Porphyrius of Gaza",
+  },
+  {
+    id: "icon-procopius-of-caesarea",
+    wikimediaTitle: "File:Saint Procopius of Caesarea - 48626732142.jpg",
+    alt: "Icon of the Holy Great-martyr Procopius of Caesarea in Palestine.",
+    caption: "Great-martyr Procopius of Caesarea",
+  },
+  {
+    id: "icon-prophet-amos",
+    wikimediaTitle: "File:Amos-prophet.jpg",
+    alt: "Mural of the Holy Prophet Amos at the Cathedral of Athens.",
+    caption: "Prophet Amos",
+  },
+  {
+    id: "icon-prophet-malachi",
+    wikimediaTitle: "File:Malachi.jpg",
+    alt: "Icon of Holy Prophet Malachi.",
+    caption: "Holy Prophet Malachi",
+  },
+  {
+    id: "icon-prophet-nahum",
+    wikimediaTitle: "File:Nahum-prophet.jpg",
+    alt: "Pammakaristos Church dome mosaic featuring the Holy Prophet Nahum among the Twelve Prophets.",
+    caption: "Prophet Nahum",
+  },
+  {
+    id: "icon-prophet-zephaniah",
+    wikimediaTitle: "File:Zephaniah.jpg",
+    alt: "Mural of the Holy Prophet Zephaniah (Sophonias) at the Cathedral of Athens.",
+    caption: "Prophet Zephaniah",
+  },
+  {
+    id: "icon-seraphim-of-sarov",
+    wikimediaTitle: "File:Seraphim of Sarov.jpg",
+    alt: "Orthodox icon of Seraphim of Sarov.",
+    caption: "Seraphim of Sarov",
+  },
+  {
+    id: "icon-simeon-the-god-receiver",
+    wikimediaTitle: "File:Свети Симеон Богопримац, Душанка Крупниковић.jpg",
+    alt: "Orthodox icon of Simeon the God-Receiver.",
+    caption: "Simeon the God-Receiver",
+  },
+  {
+    id: "icon-theophan-the-recluse",
+    wikimediaTitle: "File:St. Theophan the Recluse V-1.jpg",
+    alt: "Orthodox icon of Theophan the Recluse.",
+    caption: "Theophan the Recluse",
   },
 ];

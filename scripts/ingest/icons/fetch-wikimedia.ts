@@ -259,9 +259,10 @@ async function main() {
   const catalog = loadCatalog();
   const byId = new Map<string, IconRef>(catalog.icons.map((i) => [i.id, i]));
   const autoSources = await loadAutoSources();
-  // Hand-curated first so they take precedence over any auto entry with the
-  // same id. (Shouldn't collide in practice, but be defensive.)
-  const allSources = [...iconSources, ...autoSources];
+  // Auto first, then hand-curated. The loop is last-writer-wins for byId, so
+  // running hand-curated last ensures iconSources from sources.ts takes
+  // precedence over any auto entry with the same id.
+  const allSources = [...autoSources, ...iconSources];
   console.log(
     `Fetching ${allSources.length} sources (${iconSources.length} manual, ${autoSources.length} auto)...\n`,
   );

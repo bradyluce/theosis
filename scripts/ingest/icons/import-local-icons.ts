@@ -161,9 +161,6 @@ const MAPPINGS: Array<{
     caption: "Saint Thekla of Iconium",
     alt: "Icon of the Holy First Female Martyr Thekla of Iconium, Equal-to-the-Apostles.",
   },
-
-  // === 2nd batch: manifest-driven download (icons_manifest.json) ===
-  // --- Tier 1: feasts ---
   {
     sourceFile: "beheading-of-the-forerunner.jpg",
     personId: "beheading-of-the-forerunner",
@@ -227,8 +224,6 @@ const MAPPINGS: Array<{
     alt: "Icon of the 14,000 Holy Innocents slain by Herod at Bethlehem, 1869.",
     feast: true,
   },
-
-  // --- Tier 2: famous saints ---
   {
     sourceFile: "sisoes-the-great.jpg",
     personId: "sisoes-the-great",
@@ -242,22 +237,10 @@ const MAPPINGS: Array<{
     alt: "Bulgarian icon of the Holy Great-martyr Kyriake of Nicomedia.",
   },
   {
-    sourceFile: "procopius-of-caesarea.jpg",
-    personId: "procopius-of-caesarea",
-    caption: "Great-martyr Procopius of Caesarea",
-    alt: "Icon of the Holy Great-martyr Procopius of Caesarea in Palestine.",
-  },
-  {
     sourceFile: "seven-youths-of-ephesus.jpg",
     personId: "seven-youths-of-ephesus",
     caption: "Seven Holy Youths of Ephesus",
     alt: "Russian icon of the Seven Holy Youths (Sleepers) of Ephesus.",
-  },
-  {
-    sourceFile: "florus-and-laurus.jpg",
-    personId: "florus-and-laurus",
-    caption: "Martyrs Florus and Laurus",
-    alt: "Novgorod icon of the Archangel Michael blessing the Martyrs Florus and Laurus of Dalmatia.",
   },
   {
     sourceFile: "adrian-and-natalia.jpg",
@@ -272,12 +255,6 @@ const MAPPINGS: Array<{
     alt: "Hosios Loukas vault mosaic of Saint Poemen the Great.",
   },
   {
-    sourceFile: "euphemia-the-all-praised.jpg",
-    personId: "euphemia-the-all-praised",
-    caption: "Great-martyr Euphemia",
-    alt: "Icon of the Holy Great-martyr Euphemia the All-praised of Chalcedon.",
-  },
-  {
     sourceFile: "sergius-and-bacchus.jpg",
     personId: "sergius-and-bacchus",
     caption: "Martyrs Sergius and Bacchus",
@@ -290,7 +267,7 @@ const MAPPINGS: Array<{
     alt: "Icon of Saint Pelagia the Penitent of Antioch.",
   },
   {
-    sourceFile: "longinus-the-centurion.jpg",
+    sourceFile: "icon-longinus-the-centurion.png",
     personId: "longinus-the-centurion",
     caption: "Martyr Longinus the Centurion",
     alt: "Icon of the Holy Martyr Longinus the Centurion at the foot of the Cross.",
@@ -319,14 +296,6 @@ const MAPPINGS: Array<{
     caption: "Saint Stephen the New",
     alt: "Hosios Loukas mosaic of Saint Stephen the New, Martyr of the Iconoclast Persecution.",
   },
-
-  // --- Tier 3: minor prophets ---
-  {
-    sourceFile: "prophet-amos.jpg",
-    personId: "prophet-amos",
-    caption: "Prophet Amos",
-    alt: "Mural of the Holy Prophet Amos at the Cathedral of Athens.",
-  },
   {
     sourceFile: "prophet-hosea.jpg",
     personId: "prophet-hosea",
@@ -346,42 +315,16 @@ const MAPPINGS: Array<{
     alt: "Menologion of Basil II miniature of the Holy Prophet Obadiah.",
   },
   {
-    sourceFile: "prophet-nahum.jpg",
-    personId: "prophet-nahum",
-    caption: "Prophet Nahum",
-    alt: "Pammakaristos Church dome mosaic featuring the Holy Prophet Nahum among the Twelve Prophets.",
-  },
-  {
-    sourceFile: "prophet-zephaniah.jpg",
-    personId: "prophet-zephaniah",
-    caption: "Prophet Zephaniah",
-    alt: "Mural of the Holy Prophet Zephaniah (Sophonias) at the Cathedral of Athens.",
-  },
-  {
     sourceFile: "prophet-haggai.jpg",
     personId: "prophet-haggai",
     caption: "Prophet Haggai",
     alt: "Menologion of Basil II miniature of the Holy Prophet Haggai.",
   },
-
-  // --- Tier 4: apostles, hymnographers, hierarchs, ascetics ---
   {
     sourceFile: "apostle-timothy.jpg",
     personId: "apostle-timothy",
     caption: "Apostle Timothy",
     alt: "Menologion of Basil II miniature of the Holy Apostle Timothy of the Seventy.",
-  },
-  {
-    sourceFile: "apostle-onesimus.jpg",
-    personId: "apostle-onesimus",
-    caption: "Apostle Onesimus",
-    alt: "Icon of the Holy Apostle Onesimus of the Seventy.",
-  },
-  {
-    sourceFile: "joseph-the-hymnographer.jpg",
-    personId: "joseph-the-hymnographer",
-    caption: "Saint Joseph the Hymnographer",
-    alt: "Icon of the Holy Hymnographers Theophanes and Joseph at Lipljan.",
   },
   {
     sourceFile: "tarasius-of-constantinople.png",
@@ -413,29 +356,14 @@ const MAPPINGS: Array<{
     caption: "Saint Alexis the Man of God",
     alt: "Icon of Saints Alexis the Man of God and Mary of Egypt, 1648.",
   },
-  // --- The last holdout from the iconless-saints audit ---
   {
     sourceFile: "john-russian.jpg",
     personId: "john-russian",
     caption: "Saint John the Russian",
     alt: "Icon of Saint John the Russian, Confessor of Prokopion in Cappadocia.",
   },
-
-  // === 3rd manifest batch: post-consolidation library people ===
   {
-    sourceFile: "alcuin.jpg",
-    personId: "alcuin",
-    caption: "Alcuin of York",
-    alt: "Manuscript miniature of Rabanus Maurus, Alcuin of York, and Archbishop Otgar, Fulda.",
-  },
-  {
-    sourceFile: "rabanus-maurus.jpg",
-    personId: "rabanus-maurus",
-    caption: "Rabanus Maurus",
-    alt: "Manuscript miniature of Rabanus Maurus and Alcuin of York presenting their work to Archbishop Otgar.",
-  },
-  {
-    sourceFile: "clement-of-rome.jpg",
+    sourceFile: "st__clement__bishop_of_rome_by_yellika_dar14iw-fullview.jpg",
     personId: "clement-of-rome",
     caption: "Saint Clement of Rome",
     alt: "Fresco of Saint Clement of Rome from the Basilica of San Clemente, Rome.",
@@ -453,13 +381,7 @@ const MAPPINGS: Array<{
     alt: "Icon of Saint Dionysius the Great, Bishop of Alexandria.",
   },
   {
-    sourceFile: "mar-jacob-of-sarug.jpg",
-    personId: "mar-jacob-of-sarug",
-    caption: "Saint Mar Jacob of Sarug",
-    alt: "Icon of Saint Jacob of Serugh (Mar Jacob of Sarug), Syriac hymnographer.",
-  },
-  {
-    sourceFile: "moses-of-chorene.jpg",
+    sourceFile: "St.Movses_Khorenatsi.jpg",
     personId: "moses-of-chorene",
     caption: "Saint Moses of Chorene",
     alt: "Manuscript miniature of Movses Khorenatsi (Moses of Chorene), Armenian historian.",
@@ -471,7 +393,7 @@ const MAPPINGS: Array<{
     alt: "Icon of Saint Pamphilus of Caesarea, librarian and martyr.",
   },
   {
-    sourceFile: "peter-chrysologus.jpg",
+    sourceFile: "st-peter-chrysologus.jpg",
     personId: "peter-chrysologus",
     caption: "Saint Peter Chrysologus",
     alt: "Icon of Saints Peter Chrysologus, Romuald, and Peter Damian by Giuseppe Milani, Ravenna Duomo.",
@@ -489,7 +411,7 @@ const MAPPINGS: Array<{
     alt: "Icon of the Vision of Saint Peter of Alexandria, Hieromartyr.",
   },
   {
-    sourceFile: "victorinus-pettau.jpg",
+    sourceFile: "icon-victorinus-pettau.jpg",
     personId: "victorinus-pettau",
     caption: "Saint Victorinus of Pettau",
     alt: "Icon of Saint Victorinus of Pettau by Mihael Napotnik.",
@@ -511,6 +433,321 @@ const MAPPINGS: Array<{
     personId: "nikodemos-theophan-scupoli",
     caption: "Saint Nikodemos the Hagiorite",
     alt: "Icon of Saint Nikodemos the Hagiorite, translator and compiler of the Philokalia and Unseen Warfare.",
+  },
+
+  // === Audit-import: post-Wikimedia-review drops (May 2026) ===
+  {
+    sourceFile: "0406methodius-enlightener-slavs0008.jpg",
+    personId: "methodius-equal-to-apostles",
+    caption: "Methodius, Equal-to-the-Apostles",
+    alt: "Orthodox icon of Methodius, Equal-to-the-Apostles.",
+  },
+  {
+    sourceFile: "0703hyacinth.jpg",
+    personId: "hyacinth-of-caesarea",
+    caption: "Martyr Hyacinth of Caesarea",
+    alt: "Icon of Martyr Hyacinth of Caesarea.",
+  },
+  {
+    sourceFile: "0930gregoryarmenian.jpg",
+    personId: "gregory-the-illuminator",
+    caption: "Hieromartyr Gregory the Illuminator",
+    alt: "Icon of Hieromartyr Gregory the Illuminator.",
+  },
+  {
+    sourceFile: "12-SpiridonSmall__96994.jpg",
+    personId: "spyridon-of-trimythous",
+    caption: "Spyridon the Wonderworker",
+    alt: "Orthodox icon of Spyridon the Wonderworker.",
+  },
+  {
+    sourceFile: "5000-iustin-martirul.jpg",
+    personId: "justin-the-philosopher",
+    caption: "Justin the Philosopher",
+    alt: "Orthodox icon of Justin the Philosopher.",
+  },
+  {
+    sourceFile: "750-matthias-orig.jpg",
+    personId: "apostle-matthias",
+    caption: "Matthias the Apostle",
+    alt: "Orthodox icon of Matthias the Apostle.",
+  },
+  {
+    sourceFile: "Icon-of-St.-Basil-the-Great-–-S207.webp",
+    personId: "st-basil-the-great",
+    caption: "Saint Basil the Great",
+    alt: "Novgorod-school icon of Saint Basil the Great.",
+  },
+  {
+    sourceFile: "LRPSaintJohnofKronstadt.webp",
+    personId: "john-of-kronstadt",
+    caption: "John of Kronstadt",
+    alt: "Orthodox icon of John of Kronstadt.",
+  },
+  {
+    sourceFile: "LRPSaintTimothy.webp",
+    personId: "martyr-timothy-of-thebaid",
+    caption: "Martyr Timothy of Thebaid",
+    alt: "Icon of Martyr Timothy of Thebaid.",
+  },
+  {
+    sourceFile: "Methodius_and_Cyril__34732.1392067435.1000.1200_620x.webp",
+    personId: "cyril-equal-to-apostles",
+    caption: "Cyril, Equal-to-the-Apostles",
+    alt: "Orthodox icon of Cyril, Equal-to-the-Apostles.",
+  },
+  {
+    sourceFile: "NewTheophilusOfAntioch1Small__61055.jpg",
+    personId: "theophilus-of-antioch",
+    caption: "Theophilus of Antioch",
+    alt: "Orthodox icon of Theophilus of Antioch.",
+  },
+  {
+    sourceFile: "Oct12-ProbusTarachusAndronicus.jpg",
+    personId: "probus-martyr",
+    caption: "Martyr Probus",
+    alt: "Icon of Martyr Probus.",
+  },
+  {
+    sourceFile: "Oct12-ProbusTarachusAndronicus.jpg",
+    personId: "tarachus",
+    caption: "Martyr Tarachus",
+    alt: "Icon of Martyr Tarachus.",
+  },
+  {
+    sourceFile: "Orthodox_icon_of_Saint_Timothy_and_Maura_the_Martyrs_1800x1800.webp",
+    personId: "maura-of-thebaid",
+    caption: "Martyr Maura of Thebaid",
+    alt: "Icon of Martyr Maura of Thebaid.",
+  },
+  {
+    sourceFile: "Saint-Vladimir-Grand-Prince-of-Kiev-Hand-Painted-Orthodox-Icon-25.jpg",
+    personId: "vladimir-of-kiev",
+    caption: "Saint Vladimir of Kiev",
+    alt: "Fifteenth-century icon of Holy Great Prince Vladimir of Kiev, Equal-to-the-Apostles.",
+  },
+  {
+    sourceFile: "SaintBedeSmall__69921.jpg",
+    personId: "bede",
+    caption: "Bede the Venerable",
+    alt: "Orthodox icon of Bede the Venerable.",
+  },
+  {
+    sourceFile: "SaintJamesBrotheroftheLordNotFancySmall__95965.jpg",
+    personId: "apostle-james-brother-of-lord",
+    caption: "James the Brother of the Lord",
+    alt: "Orthodox icon of James the Brother of the Lord.",
+  },
+  {
+    sourceFile: "SaintThaddeus__89512.jpg",
+    personId: "apostle-thaddaeus",
+    caption: "Holy Apostle Thaddaeus of the Seventy",
+    alt: "Icon of Holy Apostle Thaddaeus of the Seventy.",
+  },
+  {
+    sourceFile: "SaintTheodotostheInnkeeperSmall__76450.jpg",
+    personId: "theodotus-ancyra",
+    caption: "Theodotus of Ancyra",
+    alt: "Orthodox icon of Theodotus of Ancyra.",
+  },
+  {
+    sourceFile: "Saint_Leo_icon__9icon-leo-the-great.webp",
+    personId: "leo-the-great",
+    caption: "Leo the Great",
+    alt: "Orthodox icon of Leo the Great.",
+  },
+  {
+    sourceFile: "St.Movses_Khorenatsi.jpg",
+    personId: "moses-of-chorene",
+    caption: "Saint Moses of Chorene",
+    alt: "Manuscript miniature of Movses Khorenatsi (Moses of Chorene), Armenian historian.",
+  },
+  {
+    sourceFile: "StHermanSmall__20211.jpg",
+    personId: "herman-of-alaska",
+    caption: "Herman of Alaska",
+    alt: "Orthodox icon of Herman of Alaska.",
+  },
+  {
+    sourceFile: "greatmartyr-niketas-the-goth-372-september-15th-v0-s3tbpikcybpf1.webp",
+    personId: "nicetas-the-goth",
+    caption: "Great-martyr Nicetas the Goth",
+    alt: "Icon of Great-martyr Nicetas the Goth.",
+  },
+  {
+    sourceFile: "holy-martyr-matrona-of-thessaloniki-march-27th-april-9th-v0-c2htt5mlxkrg1.webp",
+    personId: "matrona-of-thessalonica",
+    caption: "Martyr Matrona of Thessalonica",
+    alt: "Icon of Martyr Matrona of Thessalonica.",
+  },
+  {
+    sourceFile: "icon-apostle-apelles.jpg",
+    personId: "apostle-apelles",
+    caption: "Apostle Apelles",
+    alt: "Icon of Apostle Apelles.",
+  },
+  {
+    sourceFile: "icon-benedict-of-nursia.jpg",
+    personId: "benedict-of-nursia",
+    caption: "St. Benedict of Nursia",
+    alt: "Icon of St. Benedict of Nursia.",
+  },
+  {
+    sourceFile: "icon-callistratus.webp",
+    personId: "callistratus",
+    caption: "Martyr Callistratus",
+    alt: "Icon of Martyr Callistratus.",
+  },
+  {
+    sourceFile: "icon-elizabeth-mother-of-forerunner.jpg",
+    personId: "elizabeth-mother-of-forerunner",
+    caption: "Elizabeth, Mother of the Forerunner",
+    alt: "Orthodox icon of Elizabeth, Mother of the Forerunner.",
+  },
+  {
+    sourceFile: "icon-helen-equal-to-apostles.jpg",
+    personId: "helen-equal-to-apostles",
+    caption: "Saints Constantine and Helen",
+    alt: "Icon of the Holy Equal-to-the-Apostles Constantine and Helen.",
+  },
+  {
+    sourceFile: "icon-ignatius-brianchaninov.jpg",
+    personId: "ignatius-brianchaninov",
+    caption: "Ignatius Brianchaninov",
+    alt: "Orthodox icon of Ignatius Brianchaninov.",
+  },
+  {
+    sourceFile: "icon-justin-martyr.webp",
+    personId: "justin-martyr",
+    caption: "Justin Martyr",
+    alt: "Orthodox icon of Justin Martyr.",
+  },
+  {
+    sourceFile: "icon-longinus-the-centurion.png",
+    personId: "longinus-the-centurion",
+    caption: "Martyr Longinus the Centurion",
+    alt: "Icon of the Holy Martyr Longinus the Centurion at the foot of the Cross.",
+  },
+  {
+    sourceFile: "icon-martyr-christina-of-tyrejpg.jpg",
+    personId: "martyr-christina-of-tyre",
+    caption: "Christina of Tyre",
+    alt: "Orthodox icon of Christina of Tyre.",
+  },
+  {
+    sourceFile: "icon-polycarp-of-smyrna.jpg",
+    personId: "polycarp-of-smyrna",
+    caption: "Polycarp of Smyrna",
+    alt: "Orthodox icon of Polycarp of Smyrna.",
+  },
+  {
+    sourceFile: "icon-st-nicholas-myra.jpg",
+    personId: "st-nicholas-myra",
+    caption: "Saint Nicholas of Myra",
+    alt: "Russian icon of Saint Nicholas the Wonderworker, Archbishop of Myra.",
+  },
+  {
+    sourceFile: "icon-theotokos.webp",
+    personId: "theotokos",
+    caption: "The Most Holy Theotokos",
+    alt: "Seventeenth-century icon of the Most Holy Theotokos Hodegetria from Nesebar.",
+  },
+  {
+    sourceFile: "icon-victorinus-pettau.jpg",
+    personId: "victorinus-pettau",
+    caption: "Saint Victorinus of Pettau",
+    alt: "Icon of Saint Victorinus of Pettau by Mihael Napotnik.",
+  },
+  {
+    sourceFile: "icon-welcoming-holy-innocents.JPG-1024x770.jpg",
+    personId: "holy-innocents-of-bethlehem",
+    caption: "14,000 Holy Innocents of Bethlehem",
+    alt: "Icon of the 14,000 Holy Innocents slain by Herod at Bethlehem, 1869.",
+    feast: true,
+  },
+  {
+    sourceFile: "icon-zenobia.webp",
+    personId: "zenobia",
+    caption: "Martyr Zenobia",
+    alt: "Icon of Martyr Zenobia.",
+  },
+  {
+    sourceFile: "icon-zenobius.webp",
+    personId: "zenobius",
+    caption: "Martyr Zenobius",
+    alt: "Icon of Martyr Zenobius.",
+  },
+  {
+    sourceFile: "righteous-job-the-long-suffering-icons-orthodox-christian-supply_569_488x.jpg",
+    personId: "job-the-long-suffering",
+    caption: "Job the Long-Suffering",
+    alt: "Icon of the Righteous Job the Long-Suffering.",
+  },
+  {
+    sourceFile: "saint-narcissus-apostle-hand-painted-byzantine-icon-9468.jpg",
+    personId: "apostle-narcissus",
+    caption: "Apostle Narcissus",
+    alt: "Icon of Apostle Narcissus.",
+  },
+  {
+    sourceFile: "saint-prochorus-apostle-deacon-hand-painted-byzantine-icon-9360.jpg",
+    personId: "prochorus-deacon",
+    caption: "Apostle and Deacon Prochorus",
+    alt: "Icon of Apostle and Deacon Prochorus.",
+  },
+  {
+    sourceFile: "st-basil-the-great-icon-704.jpg",
+    personId: "basil-the-great",
+    caption: "Basil the Great",
+    alt: "Orthodox icon of Basil the Great.",
+  },
+  {
+    sourceFile: "st-isidore-the-farmer-icon-386.jpg",
+    personId: "isidore-seville",
+    caption: "Isidore of Seville",
+    alt: "Orthodox icon of Isidore of Seville.",
+  },
+  {
+    sourceFile: "st-jerome-icon-432.jpg",
+    personId: "jerome",
+    caption: "Jerome",
+    alt: "Orthodox icon of Jerome.",
+  },
+  {
+    sourceFile: "st-mark-the-ascetic-icon-hand-painted-orthodox-455.jpg",
+    personId: "mark-the-ascetic",
+    caption: "Mark the Ascetic",
+    alt: "Orthodox icon of Mark the Ascetic.",
+  },
+  {
+    sourceFile: "st-panteleimon-the-great-martyr-and-healer-113.webp",
+    personId: "panteleimon-the-healer",
+    caption: "Saint Panteleimon the Healer",
+    alt: "Icon of Saint Panteleimon the Healer raising a dead man, by Gavril Atanasov, 1893.",
+  },
+  {
+    sourceFile: "st-peter-chrysologus.jpg",
+    personId: "peter-chrysologus",
+    caption: "Saint Peter Chrysologus",
+    alt: "Icon of Saints Peter Chrysologus, Romuald, and Peter Damian by Giuseppe Milani, Ravenna Duomo.",
+  },
+  {
+    sourceFile: "st-thomas-aquinas-icon-428.jpg",
+    personId: "thomas-aquinas",
+    caption: "Saint Thomas Aquinas",
+    alt: "Engraving of Saint Thomas Aquinas (Doctor Angelicus) by G. A. Wolfgang.",
+  },
+  {
+    sourceFile: "st__clement__bishop_of_rome_by_yellika_dar14iw-fullview.jpg",
+    personId: "clement-of-rome",
+    caption: "Saint Clement of Rome",
+    alt: "Fresco of Saint Clement of Rome from the Basilica of San Clemente, Rome.",
+  },
+  {
+    sourceFile: "icon-mar-jacob-of-sarug.avif",
+    personId: "mar-jacob-of-sarug",
+    caption: "Saint Mar Jacob of Sarug",
+    alt: "Icon of Saint Jacob of Serugh (Mar Jacob of Sarug), Syriac hymnographer.",
   },
 ];
 
