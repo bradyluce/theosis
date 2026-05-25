@@ -18,6 +18,18 @@ import {
   sourceRecords as seedSources,
   works as seedWorks,
 } from "@/lib/content/seed/library";
+import { saintBios } from "@/lib/content/seed/saint-bios";
+
+// Merge a long-form bio from saint-bios.ts onto the Person if one exists
+// for that id and the Person doesn't already carry one. Mirrors
+// attachBio() in queries.ts but lives here so the *-FromAll loaders
+// surface bios for Persons that arrive via the normalized catalog (the
+// commentary-loader path) as well as the seed library.
+function withBio(person: Person): Person {
+  const bio = saintBios[person.id];
+  if (!bio || person.extendedSummary) return person;
+  return { ...person, extendedSummary: bio };
+}
 
 // Reads commentary content from the per-file normalized trees emitted by
 // scripts/normalize/normalize-commentary.ts:
@@ -41,6 +53,7 @@ import {
 
 const COMMENTARY_DIR = path.join(process.cwd(), "content/normalized/commentary");
 const LIBRARY_DIR = path.join(process.cwd(), "content/normalized/library");
+const CALENDAR_DIR = path.join(process.cwd(), "content/normalized/calendar");
 
 // --- Catalog + file shapes -------------------------------------------------
 
@@ -68,6 +81,16 @@ type LibraryCatalog = {
   };
 };
 
+// Calendar-derived Person stubs generated from menaion.json by
+// scripts/normalize/normalize-menaion-people.ts. These are the lowest-priority
+// Person source — they fill gaps for commemorated saints that have no seed
+// or ingested-catalog entry, so every menaion commemoration becomes a
+// clickable library entry instead of unlinked text.
+type CalendarPeopleFile = {
+  _meta?: unknown;
+  people: Person[];
+};
+
 type ByVerseFile = {
   bookSlug: string;
   chapterNumber: number;
@@ -89,6 +112,7 @@ type ByWorkFile = {
 
 let commentaryCatalogCache: CommentaryCatalog | null | undefined = undefined;
 let libraryCatalogCache: LibraryCatalog | null | undefined = undefined;
+let calendarPeopleCache: CalendarPeopleFile | null | undefined = undefined;
 
 function loadCommentaryCatalog(): CommentaryCatalog | null {
   if (commentaryCatalogCache !== undefined) return commentaryCatalogCache;
@@ -124,6 +148,28 @@ function loadLibraryCatalog(): LibraryCatalog | null {
     libraryCatalogCache = null;
   }
   return libraryCatalogCache;
+}
+
+function loadCalendarPeople(): CalendarPeopleFile | null {
+  if (calendarPeopleCache !== undefined) return calendarPeopleCache;
+  const filePath = path.join(CALENDAR_DIR, "people.json");
+  if (!fs.existsSync(filePath)) {
+    calendarPeopleCache = null;
+    return calendarPeopleCache;
+  }
+  try {
+    calendarPeopleCache = JSON.parse(
+      fs.readFileSync(filePath, "utf8"),
+    ) as CalendarPeopleFile;
+  } catch (error) {
+    console.warn("[commentary-loader] failed to read calendar people:", error);
+    calendarPeopleCache = null;
+  }
+  return calendarPeopleCache;
+}
+
+function getCalendarPeople(): Person[] {
+  return loadCalendarPeople()?.people ?? [];
 }
 
 // Pick whichever catalog has the metadata first. They duplicate identical
@@ -303,7 +349,11 @@ export function getChaptersForWork(workId: string): WorkChapter[] {
 }
 
 export function getPersonByIdFromAll(personId: string): Person | undefined {
-  return getNormalizedPeople().find((person) => person.id === personId);
+  const found =
+    seedPeople.find((person) => person.id === personId) ??
+    getNormalizedPeople().find((person) => person.id === personId) ??
+    getCalendarPeople().find((person) => person.id === personId);
+  return found ? withBio(found) : undefined;
 }
 
 export function getSourceByIdFromAll(sourceId: string): SourceRecord | undefined {
@@ -414,12 +464,18 @@ export function getWorkBySlugFromAll(slug: string): Work | undefined {
 // only live in the parsed-bundle records still surface in search, filters,
 // and the People grid.
 export function getAllPeopleFromAll(): Person[] {
+  // Priority: seed library > ingested catalogs > calendar stubs.
+  // Lower-priority sources only fill gaps — never overwrite an existing
+  // Person, even if their name/summary is richer.
   const byId = new Map<string, Person>();
   for (const person of seedPeople) byId.set(person.id, person);
   for (const person of getNormalizedPeople()) {
     if (!byId.has(person.id)) byId.set(person.id, person);
   }
-  return Array.from(byId.values());
+  for (const person of getCalendarPeople()) {
+    if (!byId.has(person.id)) byId.set(person.id, person);
+  }
+  return Array.from(byId.values()).map(withBio);
 }
 
 // HCF parser stamps this exact summary on any Person it creates that
@@ -492,10 +548,11 @@ export function getAllSourcesFromAll(): SourceRecord[] {
 }
 
 export function getPersonBySlugFromAll(slug: string): Person | undefined {
-  return (
+  const found =
     seedPeople.find((p) => p.slug === slug) ??
-    getNormalizedPeople().find((p) => p.slug === slug)
-  );
+    getNormalizedPeople().find((p) => p.slug === slug) ??
+    getCalendarPeople().find((p) => p.slug === slug);
+  return found ? withBio(found) : undefined;
 }
 
 export function getWorksForPersonFromAll(personId: string): Work[] {

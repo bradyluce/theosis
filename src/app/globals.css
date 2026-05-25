@@ -87,4 +87,33 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.14);
   }
+
+  /* Daily-reading verse glow. Applied to verses inside the ?highlight=
+     range so the reader sees at a glance which verses are appointed
+     for today. Steady state is a calm gold tint; on mount, a one-shot
+     pulse draws the eye. scroll-margin-top clears the sticky header
+     when scrollIntoView lands the first highlighted verse. */
+  .verse-glow {
+    background-color: var(--accent-soft);
+    box-shadow: 0 0 8px rgba(212, 168, 87, 0.18);
+    scroll-margin-top: 88px;
+    animation: verseGlowPulse 1.8s ease-out;
+  }
+
+  @keyframes verseGlowPulse {
+    0% {
+      background-color: transparent;
+      box-shadow: 0 0 26px rgba(212, 168, 87, 0.55);
+    }
+    100% {
+      background-color: var(--accent-soft);
+      box-shadow: 0 0 8px rgba(212, 168, 87, 0.18);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .verse-glow {
+      animation: none;
+    }
+  }
 }

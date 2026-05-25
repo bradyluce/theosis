@@ -40,9 +40,18 @@ const HIGHLIGHT_SWATCHES: {
 
 type ReaderExperienceProps = {
   model: ReaderModel;
+  highlightRange?: { start: number; end: number } | null;
+  // Optional decorative banner rendered above the chapter label. Server pages
+  // pass a <MediaBackdrop> here — keeps the reader itself a pure client
+  // component while letting the server pick contextual imagery.
+  backdrop?: React.ReactNode;
 };
 
-export function BibleReaderExperience({ model }: ReaderExperienceProps) {
+export function BibleReaderExperience({
+  model,
+  highlightRange,
+  backdrop,
+}: ReaderExperienceProps) {
   const router = useRouter();
   const [selectedVerseId, setSelectedVerseId] = useState<string | null>(null);
   const [verseHighlightColor, setVerseHighlightColor] =
@@ -101,6 +110,38 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
     () => model.verses.find((v) => v.verse.id === showCommentary) ?? null,
     [model.verses, showCommentary],
   );
+
+  // Verses appointed by the daily lectionary (passed in via ?highlight=
+  // query param) get a soft gold glow so the reader can see at a glance
+  // which verses are today's reading.
+  const highlightedVerseIds = useMemo(() => {
+    if (!highlightRange) return new Set<string>();
+    return new Set(
+      model.verses
+        .filter(
+          (card) =>
+            card.verse.verseNumber >= highlightRange.start &&
+            card.verse.verseNumber <= highlightRange.end,
+        )
+        .map((card) => card.verse.id),
+    );
+  }, [highlightRange, model.verses]);
+
+  // On mount (and whenever the highlight range changes), scroll the first
+  // appointed verse into view so the user lands at the right spot.
+  useEffect(() => {
+    if (highlightedVerseIds.size === 0) return;
+    const firstId = model.verses.find((card) =>
+      highlightedVerseIds.has(card.verse.id),
+    )?.verse.id;
+    if (!firstId) return;
+    // Wait for layout so the element exists and scroll-margin is honored.
+    const raf = requestAnimationFrame(() => {
+      const el = document.getElementById(firstId);
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [highlightedVerseIds, model.verses]);
 
   // Close any open sheet on Escape.
   useEffect(() => {
@@ -219,6 +260,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
 
       {/* Body */}
       <div className="px-5 pb-40 pt-2 sm:px-8">
+        {backdrop ? <div className="mb-4">{backdrop}</div> : null}
         {/* Chapter label */}
         <p className="mb-4 text-center font-serif text-2xl tracking-tight text-ink-muted">
           {model.chapter.chapterNumber}
@@ -229,6 +271,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
           {model.verses.map((card) => {
             const v = card.verse;
             const isSelected = selectedVerseId === v.id;
+            const isHighlighted = highlightedVerseIds.has(v.id);
             return (
               <span
                 key={v.id}
@@ -236,6 +279,7 @@ export function BibleReaderExperience({ model }: ReaderExperienceProps) {
                 onClick={() => handleSelectVerse(v.id)}
                 className={cn(
                   "relative cursor-pointer transition-colors duration-150",
+                  isHighlighted && "verse-glow",
                   isSelected &&
                     "underline decoration-dotted decoration-ink decoration-2 underline-offset-[6px]",
                 )}
