@@ -77,7 +77,7 @@ const FEAST_TITLE_PATTERNS: Array<[RegExp, string]> = [
   [/conception of (the )?theotokos|conception by (the )?righteous anna/i, "icon-feast-conception-of-the-theotokos"],
   [/conception of (the )?(holy )?forerunner|conception of (saint )?john the (baptist|forerunner)/i, "icon-feast-conception-of-the-forerunner"],
   [/procession of the (precious|honorable|venerable|life-giving)?\s*cross/i, "icon-feast-procession-of-the-cross"],
-  [/translation of the image (not.made.by.hands|of edessa)|image not.made.by.hands|mandylion/i, "icon-feast-translation-of-the-image-not-made-by-hands"],
+  [/image\b.*\bnot.made.by.hands|translation .* edessa|mandylion/i, "icon-feast-translation-of-the-image-not-made-by-hands"],
   [/synaxis of (the )?(holy )?(glorious )?(prophet )?(and )?forerunner|synaxis of (saint )?john the (baptist|forerunner)/i, "icon-feast-synaxis-of-the-forerunner"],
   [/synaxis of (the )?(most holy )?theotokos/i, "icon-feast-synaxis-of-the-theotokos"],
   [/14[,]?000 (holy )?innocents|holy innocents.*bethlehem|innocents slain by herod/i, "icon-feast-holy-innocents-of-bethlehem"],
