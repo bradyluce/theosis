@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router, useLocalSearchParams } from "expo-router";
 import {
   ActivityIndicator,
@@ -8,15 +9,17 @@ import {
   Text,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
+import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 
-// Chapter reader — full-screen prose. Stack route pushed from a work
-// detail's table of contents. Each WorkChapterSection renders with its
-// heading + paragraphs; paragraph numbers (from NPNF / source) render
-// as a small mono superscript in accent gold, matching the web reader.
+// Chapter reader — the full-screen prose page. Editorial treatment:
+// kicker eyebrow with the chapter label, italic display heading with
+// the chapter title, optional pull-quote summary, drop cap on the
+// first paragraph of the first section. Mirrors the Bible reader's
+// typographic gravitas so reading the Fathers feels of-a-piece with
+// reading Scripture.
 
 export default function ChapterReaderScreen() {
   const params = useLocalSearchParams<{ work: string; order: string }>();
@@ -36,18 +39,25 @@ export default function ChapterReaderScreen() {
       <Stack.Screen
         options={{
           headerShown: true,
-          headerTitle: chapterQuery.data?.chapter.label ?? "",
-          headerTitleStyle: {
-            fontFamily: fonts.serif,
-            fontSize: 17,
-          },
+          headerTitle: "",
           headerBackTitle: "Contents",
           headerStyle: { backgroundColor: colors.background },
           headerTintColor: colors.accent,
           headerShadowVisible: false,
+          headerTransparent: false,
         }}
       />
-      <SafeAreaView style={styles.safe} edges={["bottom"]}>
+      <View style={styles.root}>
+        <LinearGradient
+          colors={[
+            "rgba(212, 168, 87, 0.08)",
+            "transparent",
+            colors.background,
+          ]}
+          locations={[0, 0.3, 1]}
+          style={StyleSheet.absoluteFill}
+          pointerEvents="none"
+        />
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}
@@ -61,8 +71,8 @@ export default function ChapterReaderScreen() {
 
           {chapterQuery.error ? (
             <View style={styles.errorCard}>
-              <Text style={text.eyebrow}>Couldn&apos;t load chapter</Text>
-              <Text style={[text.body, { color: colors.error }]}>
+              <Eyebrow tone="oxblood">Couldn&apos;t load chapter</Eyebrow>
+              <Text style={[text.body, { color: colors.error, marginTop: spacing.sm }]}>
                 {chapterQuery.error instanceof Error
                   ? chapterQuery.error.message
                   : String(chapterQuery.error)}
@@ -78,11 +88,16 @@ export default function ChapterReaderScreen() {
 
           {chapterQuery.data ? (
             <>
+              {/* Title page for the chapter — small kicker label + big
+                  italic chapter title + optional pull-quote summary. */}
               <View style={styles.titleBlock}>
-                <Text style={styles.eyebrow}>{chapterQuery.data.chapter.label}</Text>
+                <Eyebrow tone="accent">
+                  {chapterQuery.data.chapter.label}
+                </Eyebrow>
                 <Text style={styles.title}>
                   {chapterQuery.data.chapter.title}
                 </Text>
+                <GiltRule style={{ marginTop: spacing.md }} />
               </View>
 
               {chapterQuery.data.chapter.summary ? (
@@ -96,39 +111,70 @@ export default function ChapterReaderScreen() {
                   {section.heading ? (
                     <Text style={styles.sectionHeading}>{section.heading}</Text>
                   ) : null}
-                  {section.paragraphs.map((paragraph, pIdx) => (
-                    <Text
-                      key={`p-${sectionIdx}-${pIdx}`}
-                      style={styles.paragraph}
-                    >
-                      {paragraph.number !== undefined ? (
-                        <Text style={styles.paragraphNumber}>
-                          {paragraph.number}
-                          {" "}
+                  {section.paragraphs.map((paragraph, pIdx) => {
+                    const isFirstParagraph = sectionIdx === 0 && pIdx === 0;
+                    // Drop cap on the very first paragraph of the
+                    // chapter — oxblood illuminated initial, mirrors the
+                    // Bible reader's verse-1 treatment.
+                    if (isFirstParagraph && paragraph.text.length > 0) {
+                      const firstChar = paragraph.text.charAt(0);
+                      const rest = paragraph.text.slice(1);
+                      return (
+                        <Text
+                          key={`p-${sectionIdx}-${pIdx}`}
+                          style={styles.paragraph}
+                        >
+                          {paragraph.number !== undefined ? (
+                            <Text style={styles.paragraphNumber}>
+                              {paragraph.number}
+                              {" "}
+                            </Text>
+                          ) : null}
+                          <Text style={styles.dropCap}>{firstChar}</Text>
+                          <Text>{rest}</Text>
                         </Text>
-                      ) : null}
-                      {paragraph.text}
-                    </Text>
-                  ))}
+                      );
+                    }
+                    return (
+                      <Text
+                        key={`p-${sectionIdx}-${pIdx}`}
+                        style={styles.paragraph}
+                      >
+                        {paragraph.number !== undefined ? (
+                          <Text style={styles.paragraphNumber}>
+                            {paragraph.number}
+                            {" "}
+                          </Text>
+                        ) : null}
+                        {paragraph.text}
+                      </Text>
+                    );
+                  })}
                 </View>
               ))}
 
-              <Text style={styles.footer}>End of {chapterQuery.data.chapter.label}.</Text>
+              {/* Colophon — gilt rule + "End of <label>" in italic small caps */}
+              <View style={styles.colophon}>
+                <GiltRule />
+                <Text style={styles.colophonText}>
+                  End of {chapterQuery.data.chapter.label}
+                </Text>
+              </View>
             </>
           ) : null}
         </ScrollView>
-      </SafeAreaView>
+      </View>
     </>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.background },
+  root: { flex: 1, backgroundColor: colors.background },
   scroll: { flex: 1 },
   scrollContent: {
-    paddingHorizontal: spacing.lg,
-    paddingTop: spacing.md,
-    paddingBottom: spacing["4xl"],
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.lg,
+    paddingBottom: spacing["4xl"] + spacing["2xl"],
     gap: spacing.lg,
   },
 
@@ -143,34 +189,34 @@ const styles = StyleSheet.create({
     gap: spacing.md,
   },
   backLink: {
-    fontSize: 14,
+    fontFamily: fonts.sans,
+    fontSize: 12,
     color: colors.accent,
-    fontWeight: "600",
+    fontWeight: "700",
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+    marginTop: spacing.sm,
   },
 
-  titleBlock: { gap: spacing.xs },
-  eyebrow: {
-    fontSize: 10.4,
-    fontWeight: "500",
-    color: colors.inkSoft,
-    letterSpacing: 2.4,
-    textTransform: "uppercase",
-  },
+  // Chapter title page
+  titleBlock: { gap: spacing.xs, paddingBottom: spacing.sm },
   title: {
-    fontFamily: fonts.serif,
-    fontSize: 26,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 30,
     color: colors.ink,
     letterSpacing: -0.4,
-    lineHeight: 32,
+    lineHeight: 36,
+    marginTop: spacing.xs,
   },
 
+  // Pull-quote summary — italic with a left gilt rule (printed-book feel)
   chapterSummary: {
-    fontSize: 14,
-    lineHeight: 24,
-    color: colors.inkSoft,
-    fontStyle: "italic",
+    fontFamily: fonts.serifItalic,
+    fontSize: 16,
+    lineHeight: 26,
+    color: colors.inkMuted,
     borderLeftWidth: 2,
-    borderLeftColor: "rgba(212, 168, 87, 0.4)",
+    borderLeftColor: colors.lineGilt,
     paddingLeft: spacing.md,
   },
 
@@ -179,30 +225,46 @@ const styles = StyleSheet.create({
     paddingTop: spacing.sm,
   },
   sectionHeading: {
-    fontFamily: fonts.serif,
-    fontSize: 18,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 20,
     color: colors.accent,
-    letterSpacing: -0.2,
-    lineHeight: 24,
+    letterSpacing: -0.3,
+    lineHeight: 26,
   },
   paragraph: {
     fontFamily: fonts.serif,
-    fontSize: 17,
-    lineHeight: 30,
+    fontSize: 18,
+    lineHeight: 32,
     color: colors.ink,
   },
   paragraphNumber: {
-    fontFamily: fonts.mono,
-    fontSize: 11,
+    fontFamily: fonts.sans,
+    fontSize: 10,
     color: colors.accent,
-    fontWeight: "500",
+    fontWeight: "700",
+    letterSpacing: 0.4,
+  },
+  // Drop cap — oxblood illuminated initial on the opening paragraph.
+  dropCap: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 56,
+    lineHeight: 50,
+    color: colors.oxbloodInk,
+    letterSpacing: -2,
   },
 
-  footer: {
-    fontSize: 11,
+  // Colophon at the end of the chapter
+  colophon: {
+    paddingTop: spacing["2xl"],
+    alignItems: "center",
+    gap: spacing.md,
+  },
+  colophonText: {
+    fontFamily: fonts.sans,
+    fontSize: 10.5,
+    fontWeight: "600",
     color: colors.inkSoft,
-    textAlign: "center",
-    fontStyle: "italic",
-    paddingTop: spacing.lg,
+    letterSpacing: 2.4,
+    textTransform: "uppercase",
   },
 });

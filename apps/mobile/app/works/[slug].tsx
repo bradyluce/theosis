@@ -1,4 +1,6 @@
+import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
+import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router, useLocalSearchParams } from "expo-router";
 import { useMemo } from "react";
 import {
@@ -9,16 +11,19 @@ import {
   Text,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
-import { Pill } from "@/components/theosis/pill";
+import {
+  Eyebrow,
+  GiltRule,
+  SectionHeader,
+} from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 
-// Work detail screen — stack route pushed from a person's detail. Shows
-// the work's metadata (title, author, era, source) and table of contents
-// (chapter list). Each chapter row pushes /reading/[workId]/[order]
-// where the full prose is read.
+// Work detail — the editorial title page. Composed like the inside cover
+// of a printed volume: kind + length kicker, italic display title,
+// tappable author byline, era line, gilt rule, then summary + source +
+// table of contents as numbered editorial rows.
 
 export default function WorkDetailScreen() {
   const params = useLocalSearchParams<{ slug: string }>();
@@ -57,14 +62,18 @@ export default function WorkDetailScreen() {
     [work, libraryQuery.data],
   );
 
-  // Fetch chapter summaries only when we know the workId. Skipping until
-  // libraryQuery resolves avoids a 404 on an unknown slug.
   const chaptersQuery = useQuery({
     queryKey: ["work-chapters", work?.id],
     queryFn: () => api.fetchWorkChapters(work!.id),
     enabled: Boolean(work),
     staleTime: 60 * 60 * 1000,
   });
+
+  const authorDisplay = author
+    ? author.honorific
+      ? `${author.honorific} ${author.name.split(",")[0]}`
+      : author.name.split(",")[0]
+    : null;
 
   return (
     <>
@@ -76,9 +85,22 @@ export default function WorkDetailScreen() {
           headerStyle: { backgroundColor: colors.background },
           headerTintColor: colors.accent,
           headerShadowVisible: false,
+          // Solid header (not transparent) so the title page below it
+          // isn't clipped by the back-button area.
+          headerTransparent: false,
         }}
       />
-      <SafeAreaView style={styles.safe} edges={["bottom"]}>
+      <View style={styles.root}>
+        <LinearGradient
+          colors={[
+            "rgba(212, 168, 87, 0.10)",
+            "transparent",
+            colors.background,
+          ]}
+          locations={[0, 0.3, 1]}
+          style={StyleSheet.absoluteFill}
+          pointerEvents="none"
+        />
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}
@@ -91,70 +113,100 @@ export default function WorkDetailScreen() {
           ) : null}
 
           {!libraryQuery.isLoading && !work ? (
-            <View style={styles.emptyCard}>
-              <Text style={text.eyebrow}>Not found</Text>
-              <Text style={text.body}>
+            <View style={styles.notFound}>
+              <Eyebrow tone="oxblood">Not found</Eyebrow>
+              <Text style={styles.notFoundTitle}>No work entry</Text>
+              <Text style={styles.notFoundBody}>
                 We don&apos;t have an entry for &ldquo;{slug}&rdquo;.
               </Text>
               <Pressable
                 onPress={() => router.back()}
-                style={({ pressed }) => [pressed && { opacity: 0.6 }]}
+                style={({ pressed }) => [
+                  styles.backCta,
+                  pressed && { opacity: 0.7 },
+                ]}
+                accessibilityRole="button"
               >
-                <Text style={styles.backLink}>← Back</Text>
+                <Feather name="arrow-left" size={14} color={colors.accent} />
+                <Text style={styles.backCtaLabel}>Back</Text>
               </Pressable>
             </View>
           ) : null}
 
           {work ? (
             <>
-              <View style={styles.titleBlock}>
-                <View style={styles.metaRow}>
-                  <Pill variant="subtle">{work.workType}</Pill>
-                  <Text style={styles.lengthLabel}>{work.lengthLabel}</Text>
-                </View>
+              {/* Title page — kicker + italic display title + author
+                  byline + era. The whole block reads like the recto
+                  page of a printed book. */}
+              <View style={styles.titlePage}>
+                <Eyebrow tone="accent">
+                  {work.workType} · {work.lengthLabel}
+                </Eyebrow>
                 <Text style={styles.title}>{work.title}</Text>
+
+                {author && authorDisplay ? (
+                  <Pressable
+                    onPress={() => router.push(`/people/${author.slug}`)}
+                    style={({ pressed }) => [
+                      styles.bylineRow,
+                      pressed && { opacity: 0.6 },
+                    ]}
+                    accessibilityRole="button"
+                    accessibilityLabel={`View ${authorDisplay}`}
+                  >
+                    <Text style={styles.byline}>
+                      by{" "}
+                      <Text style={styles.bylineName}>{authorDisplay}</Text>
+                    </Text>
+                    <Feather
+                      name="arrow-up-right"
+                      size={13}
+                      color={colors.accent}
+                    />
+                  </Pressable>
+                ) : null}
+
                 <Text style={styles.era}>{work.eraLabel}</Text>
+                <GiltRule style={{ marginTop: spacing.md }} />
               </View>
 
+              {/* Summary as the lede */}
               {work.summary ? (
-                <Text style={styles.summary}>{work.summary}</Text>
-              ) : null}
-
-              {author ? (
-                <Pressable
-                  onPress={() => router.push(`/people/${author.slug}`)}
-                  style={({ pressed }) => [
-                    styles.factBlock,
-                    pressed && styles.factBlockPressed,
-                  ]}
-                  accessibilityRole="button"
-                  accessibilityLabel={`View ${author.name}`}
-                >
-                  <Text style={styles.factLabel}>Attributed to</Text>
-                  <Text style={styles.factValue}>
-                    {author.honorific ? `${author.honorific} ` : ""}
-                    {author.name}
-                  </Text>
-                </Pressable>
-              ) : null}
-
-              {source ? (
-                <View style={styles.factBlock}>
-                  <Text style={styles.factLabel}>Source</Text>
-                  <Text style={styles.factValue}>{source.collection}</Text>
-                  <Text style={styles.factNote}>{source.label}</Text>
+                <View style={styles.lede}>
+                  <Text style={styles.ledeText}>{work.summary}</Text>
                 </View>
               ) : null}
 
+              {/* Source attribution — small editorial fact card */}
+              {source ? (
+                <View style={styles.sourceCard}>
+                  <Eyebrow tone="soft">Source</Eyebrow>
+                  <Text style={styles.sourceCollection}>
+                    {source.collection}
+                  </Text>
+                  <Text style={styles.sourceNote}>{source.label}</Text>
+                </View>
+              ) : null}
+
+              {/* Contents — numbered editorial TOC */}
               {chaptersQuery.isLoading ? (
                 <View style={styles.loading}>
                   <ActivityIndicator color={colors.accent} />
                 </View>
               ) : null}
 
-              {chaptersQuery.data && chaptersQuery.data.chapters.length > 0 ? (
-                <View style={styles.tocBlock}>
-                  <Text style={styles.tocLabel}>Contents</Text>
+              {chaptersQuery.data &&
+              chaptersQuery.data.chapters.length > 0 ? (
+                <View style={styles.contentsSection}>
+                  <SectionHeader
+                    eyebrow={`${chaptersQuery.data.chapters.length} ${
+                      chaptersQuery.data.chapters.length === 1
+                        ? "chapter"
+                        : "chapters"
+                    }`}
+                    title="Contents"
+                    rule
+                  />
                   {chaptersQuery.data.chapters.map((chapter) => (
                     <Pressable
                       key={chapter.id}
@@ -163,23 +215,35 @@ export default function WorkDetailScreen() {
                       }
                       style={({ pressed }) => [
                         styles.tocRow,
-                        pressed && styles.tocRowPressed,
+                        pressed && { opacity: 0.6 },
                       ]}
                       accessibilityRole="button"
                       accessibilityLabel={`Read ${chapter.label}`}
                     >
-                      <Text style={styles.tocOrder}>{chapter.order}</Text>
-                      <View style={styles.tocMain}>
-                        <Text style={styles.tocChapterLabel}>
+                      <Text style={styles.tocIndex}>
+                        {String(chapter.order).padStart(2, "0")}
+                      </Text>
+                      <View style={styles.tocText}>
+                        <Text
+                          style={styles.tocLabel}
+                          numberOfLines={2}
+                        >
                           {chapter.label}
                         </Text>
                         {chapter.title && chapter.title !== chapter.label ? (
-                          <Text style={styles.tocChapterTitle} numberOfLines={1}>
+                          <Text
+                            style={styles.tocTitle}
+                            numberOfLines={2}
+                          >
                             {chapter.title}
                           </Text>
                         ) : null}
                       </View>
-                      <Text style={styles.tocChevron}>›</Text>
+                      <Feather
+                        name="chevron-right"
+                        size={14}
+                        color={colors.inkSoft}
+                      />
                     </Pressable>
                   ))}
                 </View>
@@ -188,7 +252,13 @@ export default function WorkDetailScreen() {
               {chaptersQuery.data &&
               chaptersQuery.data.chapters.length === 0 ? (
                 <View style={styles.emptyTocCard}>
-                  <Text style={text.body}>
+                  <Feather
+                    name="book"
+                    size={24}
+                    color={colors.inkSoft}
+                    style={{ marginBottom: spacing.sm }}
+                  />
+                  <Text style={styles.emptyTocText}>
                     Long-form text for this work isn&apos;t available yet.
                   </Text>
                 </View>
@@ -196,138 +266,176 @@ export default function WorkDetailScreen() {
             </>
           ) : null}
         </ScrollView>
-      </SafeAreaView>
+      </View>
     </>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.background },
+  root: { flex: 1, backgroundColor: colors.background },
   scroll: { flex: 1 },
   scrollContent: {
-    paddingHorizontal: spacing.lg,
-    paddingTop: spacing.md,
-    paddingBottom: spacing["4xl"],
-    gap: spacing.lg,
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.xl,
+    paddingBottom: spacing["4xl"] + spacing["2xl"],
+    gap: spacing.xl,
   },
 
-  loading: { paddingVertical: spacing["3xl"], alignItems: "center" },
-  emptyCard: {
-    paddingVertical: spacing["3xl"],
-    gap: spacing.md,
-  },
-  backLink: {
-    fontSize: 14,
-    color: colors.accent,
-    fontWeight: "600",
-  },
+  loading: { paddingVertical: spacing["4xl"], alignItems: "center" },
 
-  titleBlock: { gap: spacing.sm },
-  metaRow: {
+  // Not-found state
+  notFound: {
+    paddingTop: spacing["3xl"],
+    gap: spacing.sm,
+    alignItems: "flex-start",
+  },
+  notFoundTitle: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 36,
+    color: colors.ink,
+    letterSpacing: -0.5,
+    lineHeight: 40,
+    marginTop: spacing.sm,
+  },
+  notFoundBody: {
+    fontFamily: fonts.serif,
+    fontSize: 15,
+    color: colors.inkMuted,
+    lineHeight: 24,
+    marginBottom: spacing.lg,
+  },
+  backCta: {
     flexDirection: "row",
     alignItems: "center",
-    gap: spacing.sm,
+    gap: spacing.xs,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: 1,
+    borderColor: colors.lineGilt,
   },
-  lengthLabel: {
-    fontSize: 11,
-    color: colors.inkSoft,
-    letterSpacing: 1.4,
+  backCtaLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.6,
     textTransform: "uppercase",
   },
+
+  // Title page composition
+  titlePage: { gap: spacing.sm },
   title: {
-    fontFamily: fonts.serif,
-    fontSize: 30,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 38,
     color: colors.ink,
-    letterSpacing: -0.4,
-    lineHeight: 36,
+    letterSpacing: -0.5,
+    lineHeight: 42,
+    marginTop: spacing.xs,
+  },
+  bylineRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    marginTop: spacing.sm,
+  },
+  byline: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 16,
+    color: colors.inkMuted,
+    letterSpacing: -0.1,
+  },
+  bylineName: {
+    color: colors.accent,
   },
   era: {
-    fontFamily: fonts.serif,
-    fontSize: 14,
-    color: colors.inkMuted,
-    fontStyle: "italic",
-  },
-
-  summary: {
-    fontSize: 15,
-    lineHeight: 25,
-    color: colors.inkMuted,
-  },
-
-  factBlock: {
-    borderRadius: radii.card,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
-    gap: spacing.xs,
-  },
-  factBlockPressed: { backgroundColor: colors.surfaceStrong },
-  factLabel: {
-    fontSize: 10.4,
-    fontWeight: "500",
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
     color: colors.inkSoft,
-    letterSpacing: 2.4,
-    textTransform: "uppercase",
   },
-  factValue: {
+
+  // Lede / summary
+  lede: { paddingTop: spacing.xs },
+  ledeText: {
     fontFamily: fonts.serif,
-    fontSize: 18,
+    fontSize: 17,
+    lineHeight: 28,
     color: colors.ink,
   },
-  factNote: {
-    fontSize: 13,
-    color: colors.inkMuted,
-  },
 
-  tocBlock: { gap: spacing.sm },
-  tocLabel: {
-    fontFamily: fonts.serif,
-    fontSize: 18,
-    color: colors.accent,
-    letterSpacing: -0.2,
-  },
-  tocRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: spacing.md,
+  // Source card
+  sourceCard: {
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
     borderRadius: radii.card,
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: colors.line,
     backgroundColor: colors.surface,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
+    gap: 4,
   },
-  tocRowPressed: { backgroundColor: colors.surfaceStrong },
-  tocOrder: {
-    fontFamily: fonts.mono,
-    fontSize: 13,
-    color: colors.accent,
-    minWidth: 24,
-    textAlign: "right",
-  },
-  tocMain: { flex: 1, gap: 2 },
-  tocChapterLabel: {
+  sourceCollection: {
     fontFamily: fonts.serif,
     fontSize: 17,
     color: colors.ink,
     letterSpacing: -0.2,
+    lineHeight: 22,
   },
-  tocChapterTitle: {
+  sourceNote: {
+    fontFamily: fonts.serifItalic,
     fontSize: 12,
-    color: colors.inkSoft,
+    color: colors.inkMuted,
   },
-  tocChevron: {
-    fontSize: 20,
-    color: colors.inkSoft,
+
+  // Contents (TOC) section
+  contentsSection: { gap: spacing.xs },
+  tocRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: spacing.md,
+    paddingVertical: spacing.md,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.line,
   },
+  tocIndex: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 22,
+    color: colors.accent,
+    letterSpacing: -0.5,
+    opacity: 0.85,
+    width: 32,
+    paddingTop: 2,
+  },
+  tocText: { flex: 1, gap: 4 },
+  tocLabel: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 17,
+    color: colors.ink,
+    letterSpacing: -0.2,
+    lineHeight: 22,
+  },
+  tocTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 13,
+    color: colors.inkMuted,
+    lineHeight: 20,
+  },
+
   emptyTocCard: {
+    paddingVertical: spacing["3xl"],
+    paddingHorizontal: spacing.lg,
+    alignItems: "center",
     borderRadius: radii.card,
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: colors.line,
     backgroundColor: colors.surface,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.lg,
+  },
+  emptyTocText: {
+    fontFamily: fonts.serif,
+    fontSize: 14,
+    color: colors.inkMuted,
+    textAlign: "center",
+    lineHeight: 22,
+    maxWidth: 260,
   },
 });

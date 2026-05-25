@@ -1,6 +1,8 @@
+import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
+import { LinearGradient } from "expo-linear-gradient";
 import { router, useLocalSearchParams } from "expo-router";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -11,6 +13,7 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
 import { Pill } from "@/components/theosis/pill";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
@@ -119,11 +122,61 @@ export default function CommentaryModal() {
     return result.sort((a, b) => b.rank - a.rank);
   }, [verseQuery.data]);
 
+  // Group entries by author so the modal opens to a quiet list of
+  // Fathers — tap an author, their writings expand inline. Within each
+  // group, entries keep the rank-sorted order from the dedupe above so
+  // the most-cited piece comes first.
+  type AuthorGroup = {
+    personId: string;
+    entries: typeof sortedUniqueEntries;
+    topRank: number; // highest rank in the group, for inter-group sorting
+  };
+  const groups = useMemo<AuthorGroup[]>(() => {
+    const byPerson = new Map<string, AuthorGroup>();
+    for (const entry of sortedUniqueEntries) {
+      const g = byPerson.get(entry.personId);
+      if (g) {
+        g.entries.push(entry);
+        if (entry.rank > g.topRank) g.topRank = entry.rank;
+      } else {
+        byPerson.set(entry.personId, {
+          personId: entry.personId,
+          entries: [entry],
+          topRank: entry.rank,
+        });
+      }
+    }
+    return Array.from(byPerson.values()).sort(
+      (a, b) => b.topRank - a.topRank,
+    );
+  }, [sortedUniqueEntries]);
+
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+  const toggle = (personId: string) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(personId)) next.delete(personId);
+      else next.add(personId);
+      return next;
+    });
+  };
+
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
+      <LinearGradient
+        colors={[
+          "rgba(212, 168, 87, 0.10)",
+          "transparent",
+          colors.background,
+        ]}
+        locations={[0, 0.3, 1]}
+        style={StyleSheet.absoluteFill}
+        pointerEvents="none"
+      />
+
       <View style={styles.header}>
         <View style={styles.headerLabel}>
-          <Text style={styles.eyebrow}>Commentary</Text>
+          <Eyebrow tone="accent">Commentary</Eyebrow>
           <Text style={styles.reference}>
             {bookSlug ? bookLabel(bookSlug) : ""} {chapterNumber}:{verseNumber}
           </Text>
@@ -137,9 +190,10 @@ export default function CommentaryModal() {
           ]}
           accessibilityLabel="Close"
         >
-          <Text style={styles.closeGlyph}>×</Text>
+          <Feather name="x" size={20} color={colors.inkMuted} />
         </Pressable>
       </View>
+      <GiltRule full style={{ marginHorizontal: spacing.xl }} />
 
       <ScrollView
         style={styles.scroll}
@@ -154,8 +208,8 @@ export default function CommentaryModal() {
 
         {verseQuery.error ? (
           <View style={styles.errorCard}>
-            <Text style={text.eyebrow}>Couldn't load commentary</Text>
-            <Text style={[text.body, { color: colors.error }]}>
+            <Eyebrow tone="oxblood">Couldn&apos;t load commentary</Eyebrow>
+            <Text style={[text.body, { color: colors.error, marginTop: spacing.sm }]}>
               {verseQuery.error instanceof Error
                 ? verseQuery.error.message
                 : String(verseQuery.error)}
@@ -163,64 +217,128 @@ export default function CommentaryModal() {
           </View>
         ) : null}
 
-        {!verseQuery.isLoading && sortedUniqueEntries.length === 0 ? (
+        {!verseQuery.isLoading && groups.length === 0 ? (
           <View style={styles.emptyCard}>
+            <Feather
+              name="message-square"
+              size={24}
+              color={colors.inkSoft}
+              style={{ marginBottom: spacing.sm }}
+            />
             <Text style={[text.body, { textAlign: "center" }]}>
               No commentary on this verse yet.
             </Text>
           </View>
         ) : null}
 
-        {sortedUniqueEntries.map((entry) => {
-          const person = lookups.peopleById.get(entry.personId);
-          const work = lookups.worksById.get(entry.workId);
+        {groups.length > 0 ? (
+          <Text style={styles.groupCount}>
+            {groups.length} {groups.length === 1 ? "Father" : "Fathers"}
+            {" · "}
+            {sortedUniqueEntries.length}{" "}
+            {sortedUniqueEntries.length === 1 ? "entry" : "entries"}
+          </Text>
+        ) : null}
+
+        {groups.map((group) => {
+          const person = lookups.peopleById.get(group.personId);
+          const isOpen = expanded.has(group.personId);
+          const personLabel = person
+            ? person.honorific
+              ? `${person.honorific} ${person.name.split(",")[0]}`
+              : person.name.split(",")[0]
+            : group.personId;
           return (
-            <View key={entry.id} style={styles.entryCard}>
-              <View style={styles.entryMeta}>
-                {person ? (
-                  <Pressable
-                    onPress={() => {
-                      router.dismiss();
-                      router.push(`/people/${person.slug}`);
-                    }}
-                    style={({ pressed }) => [pressed && { opacity: 0.6 }]}
-                    accessibilityRole="button"
-                    accessibilityLabel={`View ${person.name}`}
-                  >
-                    <Text style={styles.entryPerson}>
-                      {person.honorific
-                        ? `${person.honorific} ${person.name}`
-                        : person.name}
-                    </Text>
-                  </Pressable>
-                ) : (
-                  <Text style={styles.entryPerson}>{entry.personId}</Text>
-                )}
-                {work ? (
-                  <Pressable
-                    onPress={() => {
-                      router.dismiss();
-                      router.push(`/works/${work.slug}`);
-                    }}
-                    style={({ pressed }) => [pressed && { opacity: 0.6 }]}
-                    accessibilityRole="button"
-                    accessibilityLabel={`Open ${work.title}`}
-                  >
-                    <Text style={styles.entryWorkLink}>{work.shortTitle} →</Text>
-                  </Pressable>
-                ) : null}
-              </View>
-              {entry.title ? (
-                <Text style={styles.entryTitle}>{entry.title}</Text>
-              ) : null}
-              <Text style={styles.entryExcerpt}>{entry.excerpt}</Text>
-              {entry.tags.length > 0 ? (
-                <View style={styles.tagRow}>
-                  {entry.tags.slice(0, 3).map((tag) => (
-                    <Pill key={tag} variant="subtle">
-                      {tag}
-                    </Pill>
-                  ))}
+            <View key={group.personId} style={styles.authorBlock}>
+              <Pressable
+                onPress={() => toggle(group.personId)}
+                style={({ pressed }) => [
+                  styles.authorHeader,
+                  isOpen && styles.authorHeaderOpen,
+                  pressed && { opacity: 0.8 },
+                ]}
+                accessibilityRole="button"
+                accessibilityState={{ expanded: isOpen }}
+                accessibilityLabel={`${personLabel}, ${group.entries.length} ${
+                  group.entries.length === 1 ? "entry" : "entries"
+                }, ${isOpen ? "expanded" : "collapsed"}`}
+              >
+                <View style={styles.authorHeaderText}>
+                  <Text style={styles.authorName}>{personLabel}</Text>
+                  <Text style={styles.authorCount}>
+                    {group.entries.length}{" "}
+                    {group.entries.length === 1 ? "entry" : "entries"}
+                  </Text>
+                </View>
+                <Feather
+                  name={isOpen ? "chevron-down" : "chevron-right"}
+                  size={18}
+                  color={isOpen ? colors.accent : colors.inkSoft}
+                />
+              </Pressable>
+
+              {isOpen ? (
+                <View style={styles.authorBody}>
+                  {person ? (
+                    <Pressable
+                      onPress={() => {
+                        router.dismiss();
+                        router.push(`/people/${person.slug}`);
+                      }}
+                      style={({ pressed }) => [
+                        styles.authorMetaLink,
+                        pressed && { opacity: 0.6 },
+                      ]}
+                      accessibilityRole="button"
+                    >
+                      <Feather
+                        name="user"
+                        size={11}
+                        color={colors.accent}
+                      />
+                      <Text style={styles.authorMetaLinkLabel}>
+                        Library entry
+                      </Text>
+                    </Pressable>
+                  ) : null}
+                  {group.entries.map((entry, idx) => {
+                    const work = lookups.worksById.get(entry.workId);
+                    return (
+                      <View key={entry.id} style={styles.entry}>
+                        {idx > 0 ? <GiltRule full style={styles.entrySep} /> : null}
+                        {work ? (
+                          <Pressable
+                            onPress={() => {
+                              router.dismiss();
+                              router.push(`/works/${work.slug}`);
+                            }}
+                            style={({ pressed }) => [
+                              pressed && { opacity: 0.6 },
+                            ]}
+                            accessibilityRole="button"
+                            accessibilityLabel={`Open ${work.title}`}
+                          >
+                            <Text style={styles.entryWork}>
+                              {work.shortTitle}
+                            </Text>
+                          </Pressable>
+                        ) : null}
+                        {entry.title ? (
+                          <Text style={styles.entryTitle}>{entry.title}</Text>
+                        ) : null}
+                        <Text style={styles.entryExcerpt}>{entry.excerpt}</Text>
+                        {entry.tags.length > 0 ? (
+                          <View style={styles.tagRow}>
+                            {entry.tags.slice(0, 3).map((tag) => (
+                              <Pill key={tag} variant="subtle">
+                                {tag}
+                              </Pill>
+                            ))}
+                          </View>
+                        ) : null}
+                      </View>
+                    );
+                  })}
                 </View>
               ) : null}
             </View>
@@ -237,45 +355,33 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: spacing.lg,
+    paddingHorizontal: spacing.xl,
     paddingVertical: spacing.md,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.line,
   },
-  headerLabel: { flex: 1, gap: 2 },
-  eyebrow: {
-    fontSize: 9.5,
-    fontWeight: "500",
-    color: colors.inkSoft,
-    letterSpacing: 2.4,
-    textTransform: "uppercase",
-  },
+  headerLabel: { flex: 1, gap: 4 },
   reference: {
-    fontFamily: fonts.serif,
-    fontSize: 20,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 26,
     color: colors.ink,
-    letterSpacing: -0.3,
+    letterSpacing: -0.4,
   },
   closeButton: {
-    width: 36,
-    height: 36,
+    width: 40,
+    height: 40,
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 18,
+    borderRadius: 20,
     backgroundColor: colors.surface,
-  },
-  closeGlyph: {
-    fontSize: 22,
-    color: colors.inkMuted,
-    lineHeight: 22,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
   },
 
   scroll: { flex: 1 },
   scrollContent: {
-    paddingHorizontal: spacing.lg,
+    paddingHorizontal: spacing.xl,
     paddingTop: spacing.lg,
     paddingBottom: spacing["4xl"],
-    gap: spacing.md,
+    gap: spacing.sm,
   },
 
   loading: { paddingVertical: spacing["3xl"], alignItems: "center" },
@@ -291,44 +397,97 @@ const styles = StyleSheet.create({
   emptyCard: {
     paddingVertical: spacing["3xl"],
     paddingHorizontal: spacing.lg,
+    alignItems: "center",
   },
 
-  entryCard: {
+  groupCount: {
+    fontFamily: fonts.sans,
+    fontSize: 10.5,
+    fontWeight: "700",
+    color: colors.inkSoft,
+    letterSpacing: 2,
+    textTransform: "uppercase",
+    marginBottom: spacing.sm,
+  },
+
+  // Author accordion
+  authorBlock: {
     borderRadius: radii.card,
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: colors.line,
     backgroundColor: colors.surface,
+    overflow: "hidden",
+  },
+  authorHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+    gap: spacing.md,
+  },
+  authorHeaderOpen: {
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.lineGilt,
+    backgroundColor: "rgba(212, 168, 87, 0.04)",
+  },
+  authorHeaderText: { flex: 1, gap: 2 },
+  authorName: {
+    fontFamily: fonts.serif,
+    fontSize: 18,
+    color: colors.ink,
+    letterSpacing: -0.2,
+    lineHeight: 22,
+  },
+  authorCount: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 12,
+    color: colors.inkSoft,
+  },
+  authorBody: {
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.lg,
     gap: spacing.md,
   },
-  entryMeta: { gap: 4 },
-  entryPerson: {
-    fontFamily: fonts.serif,
-    fontSize: 17,
-    color: colors.ink,
-    letterSpacing: -0.2,
+  authorMetaLink: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    alignSelf: "flex-start",
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 4,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
   },
-  entryWork: {
-    fontSize: 11,
-    color: colors.inkSoft,
-    letterSpacing: 1.6,
-    textTransform: "uppercase",
-  },
-  entryWorkLink: {
-    fontSize: 11,
+  authorMetaLinkLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10,
+    fontWeight: "700",
     color: colors.accent,
-    letterSpacing: 1.6,
+    letterSpacing: 1.4,
     textTransform: "uppercase",
-    fontWeight: "600",
+  },
+
+  entry: { gap: spacing.sm },
+  entrySep: { marginVertical: spacing.sm },
+  entryWork: {
+    fontFamily: fonts.sans,
+    fontSize: 10.5,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 2,
+    textTransform: "uppercase",
   },
   entryTitle: {
-    fontSize: 13,
-    fontWeight: "600",
-    color: colors.accent,
-    letterSpacing: -0.1,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 16,
+    color: colors.ink,
+    letterSpacing: -0.2,
+    lineHeight: 22,
   },
   entryExcerpt: {
+    fontFamily: fonts.serif,
     fontSize: 15,
     lineHeight: 25,
     color: colors.inkMuted,

@@ -95,7 +95,10 @@ export default function PersonDetailScreen() {
           headerStyle: { backgroundColor: colors.background },
           headerTintColor: colors.accent,
           headerShadowVisible: false,
-          headerTransparent: true,
+          // Solid header (not transparent) so the portrait below it
+          // isn't clipped by the back button area. The header keeps the
+          // page bg color so the visual line still reads as continuous.
+          headerTransparent: false,
         }}
       />
       <View style={styles.root}>
@@ -229,62 +232,48 @@ export default function PersonDetailScreen() {
                 </View>
               ) : null}
 
-              {/* Works — grouped by type, italic titles */}
-              {worksByType.length > 0 ? (
+              {/* Works — flat alphabetical list (no type grouping). Each
+                  row links to /works/<slug>. */}
+              {works.length > 0 ? (
                 <View style={styles.worksSection}>
                   <SectionHeader
                     eyebrow="Bibliography"
                     title="Works in the library"
                     rule
                   />
-                  {worksByType.map(([typeKey, list]) => (
-                    <View key={typeKey} style={styles.workGroup}>
-                      <View style={styles.workGroupHeader}>
-                        <Text style={styles.workGroupLabel}>
-                          {typeKey.charAt(0).toUpperCase() + typeKey.slice(1)}
+                  {works.map((work, idx) => (
+                    <Pressable
+                      key={work.id}
+                      onPress={() => router.push(`/works/${work.slug}`)}
+                      style={({ pressed }) => [
+                        styles.workRow,
+                        pressed && { opacity: 0.6 },
+                      ]}
+                      accessibilityRole="button"
+                      accessibilityLabel={`Open ${work.title}`}
+                    >
+                      <Text style={styles.workIndex}>
+                        {String(idx + 1).padStart(2, "0")}
+                      </Text>
+                      <View style={styles.workText}>
+                        <Text style={styles.workTitle} numberOfLines={2}>
+                          {work.title}
                         </Text>
-                        <Text style={styles.workGroupCount}>
-                          {list.length}
+                        {work.summary ? (
+                          <Text style={styles.workSummary} numberOfLines={2}>
+                            {work.summary}
+                          </Text>
+                        ) : null}
+                        <Text style={styles.workMeta}>
+                          {work.workType} · {work.lengthLabel}
                         </Text>
                       </View>
-                      {list.map((work, idx) => (
-                        <Pressable
-                          key={work.id}
-                          onPress={() => router.push(`/works/${work.slug}`)}
-                          style={({ pressed }) => [
-                            styles.workRow,
-                            pressed && { opacity: 0.6 },
-                          ]}
-                          accessibilityRole="button"
-                          accessibilityLabel={`Open ${work.title}`}
-                        >
-                          <Text style={styles.workIndex}>
-                            {String(idx + 1).padStart(2, "0")}
-                          </Text>
-                          <View style={styles.workText}>
-                            <Text style={styles.workTitle} numberOfLines={2}>
-                              {work.title}
-                            </Text>
-                            {work.summary ? (
-                              <Text
-                                style={styles.workSummary}
-                                numberOfLines={2}
-                              >
-                                {work.summary}
-                              </Text>
-                            ) : null}
-                            <Text style={styles.workMeta}>
-                              {work.lengthLabel}
-                            </Text>
-                          </View>
-                          <Feather
-                            name="chevron-right"
-                            size={14}
-                            color={colors.inkSoft}
-                          />
-                        </Pressable>
-                      ))}
-                    </View>
+                      <Feather
+                        name="chevron-right"
+                        size={14}
+                        color={colors.inkSoft}
+                      />
+                    </Pressable>
                   ))}
                 </View>
               ) : null}
@@ -469,29 +458,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.xl,
     paddingTop: spacing.lg,
     gap: spacing.lg,
-  },
-  workGroup: { gap: spacing.xs },
-  workGroupHeader: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingBottom: spacing.sm,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.lineGilt,
-  },
-  workGroupLabel: {
-    fontFamily: fonts.serifBoldItalic,
-    fontSize: 20,
-    color: colors.ink,
-    letterSpacing: -0.3,
-    textTransform: "capitalize",
-  },
-  workGroupCount: {
-    fontFamily: fonts.sans,
-    fontSize: 11,
-    fontWeight: "700",
-    color: colors.accent,
-    letterSpacing: 1.6,
   },
   workRow: {
     flexDirection: "row",
