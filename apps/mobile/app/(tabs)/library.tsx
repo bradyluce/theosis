@@ -45,20 +45,71 @@ import {
 // When the user types, the editorial content fades and inline search results
 // appear directly under the search field.
 
-const FEATURED_FATHER_IDS = [
-  "john-chrysostom",
-  "augustine-of-hippo",
+// Curated pool of ~50 important Orthodox Fathers, saints, and theologians.
+// The Featured Person card rotates through this set by day-of-year + year
+// seed — mirrors FEATURED_WORK_SLUGS below. Falls back to all Fathers if
+// none of these IDs are in the people list (catalog out of sync, etc.).
+const FEATURED_PERSON_IDS = new Set([
+  // Apostolic + early Fathers
+  "ignatius-of-antioch",
+  "polycarp-of-smyrna",
+  "clement-of-rome",
+  "justin-martyr",
+  "irenaeus-of-lyons",
+  // Alexandrian + Latin pre-Nicene
+  "clement-of-alexandria",
+  "origen",
+  "tertullian",
+  "cyprian-of-carthage",
+  // Cappadocians + 4th c. Greek
+  "athanasius-the-great",
   "basil-the-great",
   "gregory-of-nazianzus",
   "gregory-of-nyssa",
-  "athanasius-of-alexandria",
+  "cyril-of-jerusalem",
+  "john-chrysostom",
+  "ephraim-the-syrian",
+  // Latin Fathers
+  "ambrose-of-milan",
+  "augustine",
+  "jerome",
+  "hilary-poitiers",
+  "leo-the-great",
+  "gregory-the-great",
+  // Later Greek + Byzantine
   "cyril-of-alexandria",
   "maximus-the-confessor",
   "john-of-damascus",
-  "irenaeus-of-lyons",
+  "romanos-the-melodist",
+  "symeon-the-new-theologian",
   "gregory-palamas",
-  "ignatius-of-antioch",
-];
+  "gregory-of-sinai",
+  "nicholas-cabasilas",
+  "diadochos-of-photiki",
+  // Desert + monastic
+  "anthony-the-great",
+  "mary-of-egypt",
+  "john-cassian",
+  "john-climacus",
+  // Russian
+  "sergius-of-radonezh",
+  "seraphim-of-sarov",
+  "paisius-velichkovsky",
+  "theophan-the-recluse",
+  "ignatius-brianchaninov",
+  "john-of-kronstadt",
+  // Modern Athonite + theologians
+  "silouan-the-athonite",
+  "sophrony-sakharov",
+  "paisios-the-athonite",
+  "porphyrios-of-kafsokalivia",
+  "alexander-schmemann",
+  "vladimir-lossky",
+  "kallistos-ware",
+  "justin-popovich",
+  // Beloved universal saint
+  "nicholas-of-myra",
+]);
 
 const FEATURED_WORK_SLUGS = new Set([
   "chrysostom-homilies-on-matthew",
@@ -112,14 +163,6 @@ const FEATURED_WORK_SLUGS = new Set([
   "symeon-ethical-discourses-vol-2",
   "desert-fathers-sayings",
 ]);
-
-function pickFeaturedFatherId(): string {
-  const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  const diff = now.getTime() - start.getTime();
-  const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
-  return FEATURED_FATHER_IDS[dayOfYear % FEATURED_FATHER_IDS.length];
-}
 
 function useDebounced<T>(value: T, delayMs: number): T {
   const [debounced, setDebounced] = useState(value);
@@ -284,14 +327,20 @@ export default function LibraryScreen() {
     clearRecentSearches().then(() => setRecent([]));
   };
 
-  const featuredFatherId = useMemo(() => pickFeaturedFatherId(), []);
-  const featuredFather = useMemo(() => {
+  const featuredPerson = useMemo(() => {
     const people = peopleQuery.data?.people ?? [];
-    return (
-      people.find((p) => p.id === featuredFatherId) ??
-      people.find((p) => p.kind === "father")
+    const pool = people.filter((p) => FEATURED_PERSON_IDS.has(p.id));
+    const source =
+      pool.length > 0 ? pool : people.filter((p) => p.kind === "father");
+    if (source.length === 0) return undefined;
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const dayOfYear = Math.floor(
+      (now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24),
     );
-  }, [peopleQuery.data, featuredFatherId]);
+    const seed = dayOfYear + now.getFullYear() * 17;
+    return source[seed % source.length];
+  }, [peopleQuery.data]);
 
   const worksWithChapters = useMemo(() => {
     const byWork = libraryCatalogQuery.data?.index?.byWork;
@@ -449,7 +498,7 @@ export default function LibraryScreen() {
           />
         ) : (
           <EditorialContent
-            featuredFather={featuredFather}
+            featuredPerson={featuredPerson}
             featuredWork={featuredWork}
             featuredWorkAuthor={featuredWorkAuthor}
             topics={topicsQuery.data?.topics ?? []}
@@ -570,7 +619,7 @@ type GuideTile = NonNullable<
 >["guides"][number];
 
 function EditorialContent({
-  featuredFather,
+  featuredPerson,
   featuredWork,
   featuredWorkAuthor,
   topics,
@@ -583,7 +632,7 @@ function EditorialContent({
   onClearRecent,
   onSectionLayout,
 }: {
-  featuredFather: FeaturedPerson | undefined;
+  featuredPerson: FeaturedPerson | undefined;
   featuredWork: FeaturedWork | null;
   featuredWorkAuthor: FeaturedPerson | undefined;
   topics: TopicTile[];
@@ -607,31 +656,31 @@ function EditorialContent({
           single `featured` section anchor covers both. */}
       <View onLayout={onSectionLayout("featured")} style={styles.sectionGroup}>
         {/* Featured Father — editorial spread, now compact (was 320px tall) */}
-        {featuredFather ? (
+        {featuredPerson ? (
           <Pressable
-            onPress={() => router.push(`/people/${featuredFather.slug}`)}
+            onPress={() => router.push(`/people/${featuredPerson.slug}`)}
             style={({ pressed }) => [
-              styles.featuredFather,
+              styles.featuredPerson,
               pressed && { opacity: 0.92 },
             ]}
             accessibilityRole="button"
-            accessibilityLabel={`Featured Father: ${featuredFather.name}`}
+            accessibilityLabel={`Featured ${featuredPerson.kind}: ${featuredPerson.name}`}
           >
             <View style={[styles.fatherPortraitWrap, elevation.giltGlow]}>
-              {featuredFather.icon ? (
+              {featuredPerson.icon ? (
                 <Image
-                  source={{ uri: featuredFather.icon.src }}
+                  source={{ uri: featuredPerson.icon.src }}
                   style={styles.fatherPortrait}
                   contentFit="cover"
                   transition={240}
-                  accessibilityLabel={featuredFather.icon.alt}
+                  accessibilityLabel={featuredPerson.icon.alt}
                 />
               ) : (
                 <View
                   style={[styles.fatherPortrait, styles.fatherPortraitPlaceholder]}
                 >
                   <Text style={styles.fatherPortraitLetter}>
-                    {featuredFather.name.charAt(0)}
+                    {featuredPerson.name.charAt(0)}
                   </Text>
                 </View>
               )}
@@ -643,19 +692,19 @@ function EditorialContent({
               />
               <View style={styles.fatherPortraitOverlay}>
                 <Eyebrow tone="oxblood">
-                  Featured · {featuredFather.kind}
+                  Featured · {featuredPerson.kind}
                 </Eyebrow>
                 <Text style={styles.fatherName}>
-                  {featuredFather.honorific
-                    ? `${featuredFather.honorific} ${featuredFather.name.split(",")[0]}`
-                    : featuredFather.name.split(",")[0]}
+                  {featuredPerson.honorific
+                    ? `${featuredPerson.honorific} ${featuredPerson.name.split(",")[0]}`
+                    : featuredPerson.name.split(",")[0]}
                 </Text>
-                <Text style={styles.fatherEra}>{featuredFather.eraLabel}</Text>
+                <Text style={styles.fatherEra}>{featuredPerson.eraLabel}</Text>
               </View>
             </View>
-            {featuredFather.summary ? (
+            {featuredPerson.summary ? (
               <Text style={styles.fatherSummary} numberOfLines={2}>
-                {featuredFather.summary}
+                {featuredPerson.summary}
               </Text>
             ) : null}
             <View style={styles.cta}>
@@ -1199,7 +1248,7 @@ const styles = StyleSheet.create({
   // Featured Father — compact spread (was 320px tall; now ~220px). The
   // typography shrinks in proportion so the composition still reads as a
   // magazine cover, just with less vertical real estate to dominate the page.
-  featuredFather: { gap: spacing.md },
+  featuredPerson: { gap: spacing.md },
   fatherPortraitWrap: {
     height: 220,
     borderRadius: radii.xl,
