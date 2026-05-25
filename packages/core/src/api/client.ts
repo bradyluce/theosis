@@ -21,11 +21,14 @@ import type {
   ByWorkFile,
   CommentaryCatalog,
   DailyResponse,
+  GeocodeResponse,
   GuidePageResponse,
   GuidesResponse,
   LibraryCatalog,
   LibraryPeopleResponse,
   MenaionMonthResponse,
+  ParishDetailResponse,
+  ParishesNearResponse,
   SearchResponse,
   TopicPageResponse,
   TopicsResponse,
@@ -82,6 +85,21 @@ export type TheosisApi = {
   // `month` is 1-12.
   fetchMenaionMonth: (month: number) => Promise<MenaionMonthResponse>;
   search: (query: string) => Promise<SearchResponse>;
+  // Parishes within `radiusMi` (default 50) of (lat, lng), sorted by
+  // distance ascending. Optional `jurisdictions` is a list of codes
+  // (goa, oca, ant, ...) — when set, only matches are returned.
+  fetchParishesNear: (params: {
+    lat: number;
+    lng: number;
+    radiusMi?: number;
+    limit?: number;
+    jurisdictions?: string[];
+  }) => Promise<ParishesNearResponse>;
+  // Full parish detail by state code (2-letter, e.g. "ny") + slug.
+  fetchParishDetail: (state: string, slug: string) => Promise<ParishDetailResponse>;
+  // Forward-geocode a ZIP, city, or address to lat/lng. Used as a manual
+  // fallback on the parishes screen when location permission is denied.
+  geocode: (query: string) => Promise<GeocodeResponse>;
 };
 
 export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
@@ -150,5 +168,25 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
       getJson<MenaionMonthResponse>(`/api/calendar/menaion-month/${month}`),
     search: (query) =>
       getJson<SearchResponse>(`/api/search?q=${encodeURIComponent(query)}`),
+    fetchParishesNear: ({ lat, lng, radiusMi, limit, jurisdictions }) => {
+      const params = new URLSearchParams({
+        lat: String(lat),
+        lng: String(lng),
+      });
+      if (radiusMi !== undefined) params.set("radius", String(radiusMi));
+      if (limit !== undefined) params.set("limit", String(limit));
+      if (jurisdictions && jurisdictions.length > 0) {
+        params.set("jurisdictions", jurisdictions.join(","));
+      }
+      return getJson<ParishesNearResponse>(`/api/parishes/near?${params.toString()}`);
+    },
+    fetchParishDetail: (state, slug) =>
+      getJson<ParishDetailResponse>(
+        `/api/parishes/${encodeURIComponent(state.toLowerCase())}/${encodeURIComponent(slug)}`,
+      ),
+    geocode: (query) =>
+      getJson<GeocodeResponse>(
+        `/api/parishes/geocode?q=${encodeURIComponent(query)}`,
+      ),
   };
 }

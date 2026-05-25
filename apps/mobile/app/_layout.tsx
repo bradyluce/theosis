@@ -5,6 +5,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
 import { navigationTheme } from '@/constants/theosis-theme';
@@ -17,11 +18,24 @@ import { queryClient } from '@/lib/query-client';
 // the .ttf paths in by hand keeps the bundle small and resolves only the
 // weights we actually load. The keys here become the `fontFamily` names
 // elsewhere — keep in sync with constants/theosis-theme.ts.
+// Five weight/style variants used by the elite type system:
+//   400 — body prose, default
+//   400 italic — pull quotes, bylines, display numerals
+//   500 — emphasis in body
+//   600 — title weight (standard)
+//   600 italic — display headings, drop caps, hero titles
+// Adding new weights is +~50 KB each; keep this list minimal.
 const FONT_ASSETS = {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   Newsreader_400Regular: require('@expo-google-fonts/newsreader/400Regular/Newsreader_400Regular.ttf'),
   // eslint-disable-next-line @typescript-eslint/no-require-imports
+  Newsreader_400Regular_Italic: require('@expo-google-fonts/newsreader/400Regular_Italic/Newsreader_400Regular_Italic.ttf'),
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  Newsreader_500Medium: require('@expo-google-fonts/newsreader/500Medium/Newsreader_500Medium.ttf'),
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   Newsreader_600SemiBold: require('@expo-google-fonts/newsreader/600SemiBold/Newsreader_600SemiBold.ttf'),
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  Newsreader_600SemiBold_Italic: require('@expo-google-fonts/newsreader/600SemiBold_Italic/Newsreader_600SemiBold_Italic.ttf'),
 };
 
 // Keep the native splash screen up until web fonts finish loading. Without
@@ -57,6 +71,7 @@ export default function RootLayout() {
   }
 
   return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={navigationTheme}>
         <Stack>
@@ -81,9 +96,20 @@ export default function RootLayout() {
           <Stack.Screen name="works/[slug]" />
           <Stack.Screen name="reading/[work]/[order]" />
           <Stack.Screen name="prayer" />
+          <Stack.Screen
+            name="prayer-picker"
+            options={{ presentation: "modal", headerShown: true }}
+          />
+          <Stack.Screen name="settings" />
+          {/* Parish locator. parishes is the list/search entry, reachable
+              from the You tab. parishes/[state]/[slug] is the per-parish
+              detail screen pushed when a row in the list is tapped. */}
+          <Stack.Screen name="parishes" />
+          <Stack.Screen name="parishes/[state]/[slug]" />
         </Stack>
         <StatusBar style="light" />
       </ThemeProvider>
     </QueryClientProvider>
+    </GestureHandlerRootView>
   );
 }

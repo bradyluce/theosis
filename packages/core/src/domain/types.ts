@@ -463,3 +463,121 @@ export type DailyCommemoration = {
   // per-saint icons via DailyCommemorationItem.iconId / Person.iconId.
   iconId?: string;
 };
+
+// --- Parishes --------------------------------------------------------------
+// Directory of canonical Orthodox parishes in North America. Acquired via
+// scrapers under scripts/ingest/parishes/, normalized into
+// content/normalized/parishes/by-state/<state>/<slug>.json + catalog.json.
+// Read via src/lib/parishes/server-store.ts (server-only, in-process cache).
+//
+// Jurisdiction codes match the Assembly of Canonical Orthodox Bishops codes
+// (e.g. "goa" = Greek Orthodox Archdiocese of America, "oca" = OCA, etc.).
+// "other" covers Canadian and Mexican parishes outside Assembly coverage
+// (e.g. Greek Orthodox Metropolis of Toronto).
+export type Jurisdiction =
+  | "alb" // Albanian Orthodox Diocese of America
+  | "ant" // Antiochian Orthodox Christian Archdiocese
+  | "bgr" // Bulgarian Eastern Orthodox Diocese of the USA
+  | "cpr" // American Carpatho-Russian Orthodox Diocese (ACROD)
+  | "geo" // Georgian Apostolic Orthodox Church in North America
+  | "goa" // Greek Orthodox Archdiocese of America
+  | "mos" // Moscow Patriarchal Parishes in the USA
+  | "oca" // Orthodox Church in America
+  | "roc" // Russian Orthodox Church Outside Russia (ROCOR)
+  | "rom" // Romanian Orthodox Episcopate of America
+  | "ser" // Serbian Orthodox Church in North and South America
+  | "ukr" // Ukrainian Orthodox Church of the USA
+  | "other";
+
+export type ParishClergyRole = "priest" | "deacon" | "subdeacon" | "reader" | "other";
+
+export type ParishClergy = {
+  name: string;
+  role: ParishClergyRole;
+  // Optional title prefix (e.g. "Fr.", "V. Rev.", "Protopresbyter").
+  title?: string;
+};
+
+// Weekly service schedule. Loose by design — source quality varies wildly,
+// most parishes only publish "Divine Liturgy Sundays 10am" while a few
+// publish full daily-cycle calendars. UI renders whichever fields are set.
+export type ServiceSchedule = {
+  // Free-form description used when structured data isn't available.
+  // Renders as a single block of text.
+  raw?: string;
+  // Weekly recurring services keyed by weekday (0=Sun .. 6=Sat).
+  weekly?: {
+    weekday: number;
+    timeLabel: string; // e.g. "10:00 AM"
+    service: string;   // e.g. "Divine Liturgy", "Great Vespers"
+  }[];
+};
+
+export type ParishAddress = {
+  street: string;
+  city: string;
+  // Two-letter US state code, two-letter Canadian province code, or
+  // ISO 3166-2 subdivision code for Mexico (e.g. "CDMX").
+  state: string;
+  zip: string;
+  // ISO 3166-1 alpha-2 country code. Defaults to "US" when absent.
+  country: "US" | "CA" | "MX";
+};
+
+export type Parish = {
+  // Stable id: "<jurisdiction>:<state>-<slug>" e.g. "goa:ny-st-barbara-manhattan".
+  id: string;
+  slug: string;
+  name: string;
+  jurisdiction: Jurisdiction;
+  // Display label for the jurisdiction, denormalized for cheap UI.
+  jurisdictionLabel: string;
+  // Optional diocese / metropolis within the jurisdiction
+  // (e.g. "Metropolis of New Jersey", "Diocese of the South").
+  diocese?: string;
+  address: ParishAddress;
+  // Coordinates. Always present — parishes without geocodes are dropped
+  // at the normalize step (we can't serve them from /api/parishes/near).
+  geo: { lat: number; lng: number };
+  contact: {
+    phone?: string;
+    email?: string;
+    website?: string;
+  };
+  clergy: ParishClergy[];
+  // Service-language tags. Empty when unknown — most Assembly records
+  // don't expose this; jurisdiction-specific scrapers will fill it in.
+  languages: string[];
+  services?: ServiceSchedule;
+  foundedYear?: number;
+  // Source attribution — list of source IDs that contributed to this
+  // record (e.g. ["assembly-of-bishops"]; later ["assembly-of-bishops",
+  // "goarch-finder"] when enriched).
+  sources: string[];
+  // ISO timestamp of the latest scrape that touched this record.
+  fetchedAt: string;
+};
+
+// Compact entry used in catalog.json — drops free-form prose, keeps the
+// minimum needed for "find a parish near me" queries and list rendering.
+// The full Parish record lives in by-state/<state>/<slug>.json.
+export type ParishCatalogEntry = {
+  id: string;
+  slug: string;
+  name: string;
+  jurisdiction: Jurisdiction;
+  jurisdictionLabel: string;
+  city: string;
+  state: string;
+  country: "US" | "CA" | "MX";
+  lat: number;
+  lng: number;
+};
+
+export type ParishCatalog = {
+  version: 1;
+  generatedAt: string;
+  parishCount: number;
+  jurisdictions: { code: Jurisdiction; label: string; count: number }[];
+  parishes: ParishCatalogEntry[];
+};

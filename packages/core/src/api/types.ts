@@ -14,6 +14,8 @@ import type {
   HymnText,
   IconRef,
   OrthodoxGuide,
+  Parish,
+  ParishCatalogEntry,
   Person,
   ReadingAssignment,
   ScriptureReference,
@@ -228,6 +230,31 @@ export type MenaionMonthResponse = {
   // 1-12 — the calendar month this response covers.
   month: number;
   days: MenaionDay[];
+};
+
+// --- /api/parishes/near ----------------------------------------------------
+
+export type NearbyParish = ParishCatalogEntry & { distanceMi: number };
+
+export type ParishesNearResponse = {
+  origin: { lat: number; lng: number };
+  radiusMi: number;
+  count: number;
+  parishes: NearbyParish[];
+};
+
+// --- /api/parishes/[state]/[slug] ------------------------------------------
+
+export type ParishDetailResponse = Parish;
+
+// --- /api/parishes/geocode -------------------------------------------------
+
+export type GeocodeResponse = {
+  lat: number;
+  lng: number;
+  // Human-readable result string from the geocoder, e.g.
+  // "10001, Manhattan, New York County, New York, United States".
+  label: string;
 };
 
 // --- /api/version ----------------------------------------------------------
