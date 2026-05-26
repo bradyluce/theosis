@@ -14,6 +14,8 @@ import 'react-native-reanimated';
 import { navigationTheme } from '@/constants/theosis-theme';
 import { setActiveTokenGetter } from '@/lib/auth';
 import { queryClient } from '@/lib/query-client';
+import { hydrateAndClaim } from '@/lib/sync/hydrate';
+import { drainQueue } from '@/lib/sync/queue';
 
 // SecureStore-backed token cache for Clerk. Clerk's expo SDK persists the
 // session JWT under whichever key it likes; we just bridge get/save/clear
@@ -156,17 +158,24 @@ export default function RootLayout() {
 
 // Sits inside <ClerkProvider> so it can call useAuth(); registers Clerk's
 // getToken() with our non-component auth module so any code path can later
-// call getAuthedApi() without needing access to a hook. Re-registers on
-// sign-in / sign-out (isSignedIn flips) so the cached client gets rebuilt
-// with a fresh closure over the new session.
+// call getAuthedApi() without needing access to a hook. On sign-in:
+// triggers hydrateAndClaim() (which posts /api/me/import if there's any
+// anonymous local data, then fetches the server snapshot and adopts it),
+// then drains any queued pending writes. Re-registers on sign-in / sign-
+// out flips so the cached api client gets rebuilt with a fresh closure
+// over the new session.
 function ClerkTokenBridge() {
-  const { getToken, isSignedIn } = useAuth();
+  const { getToken, isSignedIn, userId } = useAuth();
   useEffect(() => {
-    if (isSignedIn) {
+    if (isSignedIn && userId) {
       setActiveTokenGetter(() => getToken());
+      // Order matters: claim + hydrate first (writes are server-wins on
+      // natural keys), then drain anything that was queued before the
+      // most recent sign-out.
+      void hydrateAndClaim({ clerkUserId: userId }).then(() => drainQueue());
     } else {
       setActiveTokenGetter(null);
     }
-  }, [getToken, isSignedIn]);
+  }, [getToken, isSignedIn, userId]);
   return null;
 }

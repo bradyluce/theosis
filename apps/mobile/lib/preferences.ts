@@ -1,5 +1,8 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+import { enqueueWrite } from "./sync/queue";
+import { syncProfilePatchMobile } from "./sync/sync-profile";
+
 // Thin wrapper around AsyncStorage for app preferences. One JSON blob lives
 // at the PREFS_KEY; reads/writes go through this module so call sites stay
 // typed and the shape evolution is centralized.
@@ -7,6 +10,11 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 // AsyncStorage is unencrypted and async — fine for non-sensitive prefs
 // like "last read chapter" and "default translation." Anything sensitive
 // (auth tokens, etc.) should use expo-secure-store instead.
+//
+// Every mutator below also fires a server-sync side effect via
+// lib/sync/queue. When the user is anonymous, the sync is a no-op
+// (the snapshot will be imported on first sign-in via /api/me/import).
+// When signed in: try immediately, queue on failure for the next drain.
 
 const PREFS_KEY = "theosis.prefs.v1";
 
@@ -162,12 +170,18 @@ export async function addRecentSearch(query: string): Promise<string[]> {
     ...existing.filter((q) => q.toLowerCase() !== trimmed.toLowerCase()),
   ].slice(0, RECENT_SEARCHES_MAX);
   await savePrefs({ ...prefs, recentSearches: next });
+  void enqueueWrite({
+    kind: "recentSearch.create",
+    clientId: `search-${trimmed.toLowerCase().replace(/\s+/g, "-")}`,
+    query: trimmed,
+  });
   return next;
 }
 
 export async function clearRecentSearches(): Promise<void> {
   const prefs = await loadPrefs();
   await savePrefs({ ...prefs, recentSearches: [] });
+  void enqueueWrite({ kind: "recentSearch.clear" });
 }
 
 export async function getProfilePrefs(): Promise<ProfilePrefs> {
@@ -181,6 +195,9 @@ export async function updateProfilePrefs(
   const prefs = await loadPrefs();
   const next: ProfilePrefs = { ...(prefs.profile ?? {}), ...patch };
   await savePrefs({ ...prefs, profile: next });
+  // Profile patches need optimistic concurrency on the server — see
+  // syncProfilePatchMobile for fetch-then-patch logic. Fire-and-forget.
+  void syncProfilePatchMobile(patch);
   return next;
 }
 
@@ -197,6 +214,12 @@ export async function addSavedVerse(verse: SavedVerse): Promise<SavedVerse[]> {
   if (existing.some((v) => v.id === verse.id)) return existing;
   const next = [verse, ...existing];
   await savePrefs({ ...prefs, savedVerses: next });
+  void enqueueWrite({
+    kind: "savedVerse.create",
+    clientId: verse.id,
+    verseKey: `${verse.book}.${verse.chapter}.${verse.verse}`,
+    translationId: verse.translation,
+  });
   return next;
 }
 
@@ -204,6 +227,7 @@ export async function removeSavedVerse(id: string): Promise<SavedVerse[]> {
   const prefs = await loadPrefs();
   const next = (prefs.savedVerses ?? []).filter((v) => v.id !== id);
   await savePrefs({ ...prefs, savedVerses: next });
+  void enqueueWrite({ kind: "savedVerse.delete", clientId: id });
   return next;
 }
 
@@ -236,6 +260,18 @@ export async function setVerseHighlight(
           { verseKey, color, createdAt: new Date().toISOString() },
         ];
   await savePrefs({ ...prefs, highlights: next });
+  const clientId = `highlight-verse-${verseKey}`;
+  if (color == null) {
+    void enqueueWrite({ kind: "highlight.delete", clientId });
+  } else {
+    void enqueueWrite({
+      kind: "highlight.upsert",
+      clientId,
+      targetType: "verse",
+      targetId: verseKey,
+      color,
+    });
+  }
   return next;
 }
 
@@ -262,6 +298,7 @@ export async function recordActivityToday(): Promise<{
   const days = existing.includes(iso) ? existing : [...existing, iso].sort();
   if (days !== existing) {
     await savePrefs({ ...prefs, activityDays: days });
+    void enqueueWrite({ kind: "activityDay.record", day: iso });
   }
   return { streak: computeStreak(days), days };
 }
@@ -281,6 +318,11 @@ export async function getPrayerRule(): Promise<PrayerRule> {
 export async function setPrayerRule(rule: PrayerRule): Promise<void> {
   const prefs = await loadPrefs();
   await savePrefs({ ...prefs, prayerRule: { ...rule, initialized: true } });
+  void enqueueWrite({
+    kind: "prayerRule.replace",
+    morning: rule.morning,
+    evening: rule.evening,
+  });
 }
 
 // Add an item to morning or evening at the given index (or end if undefined).

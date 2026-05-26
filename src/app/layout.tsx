@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Instrument_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
 
+import { SyncProvider } from "@/components/sync-provider";
+
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
   subsets: ["latin"],
@@ -50,6 +52,7 @@ export default function RootLayout({
           className="min-h-dvh bg-background font-sans text-ink antialiased"
           suppressHydrationWarning
         >
+          <SyncProvider />
           {children}
         </body>
       </html>

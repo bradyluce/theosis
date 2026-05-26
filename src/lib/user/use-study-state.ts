@@ -109,6 +109,32 @@ function nextSearch(query: string): SavedSearch {
   };
 }
 
+// Lazy-loaded sync emitters. Defined here as fire-and-forget no-ops on
+// the server and as dynamic imports on the client to avoid the circular
+// import (sync/queue.ts reads useStudyState.getState()).
+function emitWrite(write: PendingWrite): void {
+  if (typeof window === "undefined") return;
+  void import("@/lib/sync/queue").then(({ enqueueWrite }) => {
+    enqueueWrite(write);
+  });
+}
+function emitProfilePatch(
+  patch: import("@/lib/sync/sync-profile").LegacyProfilePatch,
+): void {
+  if (typeof window === "undefined") return;
+  void import("@/lib/sync/sync-profile").then(({ syncProfilePatch }) => {
+    void syncProfilePatch(patch);
+  });
+}
+
+// verseId is "<translation>:<book>.<chapter>.<verse>" in the legacy local
+// shape. The server stores translation-agnostic verseKey + translationId
+// separately; strip the prefix here at the boundary.
+function stripTranslation(verseId: string): string {
+  const colon = verseId.indexOf(":");
+  return colon >= 0 ? verseId.slice(colon + 1) : verseId;
+}
+
 export const useStudyState = create<StudyState>()(
   persist(
     (set) => ({
@@ -118,28 +144,45 @@ export const useStudyState = create<StudyState>()(
       hasHydrated: false,
       toggleSavedVerse: (verseId, translationId) =>
         set((state) => {
-          const exists = state.savedVerses.some((item) => item.verseId === verseId);
-
-          return {
-            savedVerses: exists
-              ? state.savedVerses.filter((item) => item.verseId !== verseId)
-              : [nextSavedVerse(verseId, translationId), ...state.savedVerses],
-          };
+          const existing = state.savedVerses.find((item) => item.verseId === verseId);
+          if (existing) {
+            emitWrite({ kind: "savedVerse.delete", clientId: existing.id });
+            return {
+              savedVerses: state.savedVerses.filter((item) => item.verseId !== verseId),
+            };
+          }
+          const next = nextSavedVerse(verseId, translationId);
+          emitWrite({
+            kind: "savedVerse.create",
+            clientId: next.id,
+            verseKey: stripTranslation(verseId),
+            translationId,
+          });
+          return { savedVerses: [next, ...state.savedVerses] };
         }),
       toggleHighlight: (targetType, targetId, excerpt) =>
         set((state) => {
-          const exists = state.highlights.some(
+          const existing = state.highlights.find(
             (item) => item.targetType === targetType && item.targetId === targetId,
           );
-
-          return {
-            highlights: exists
-              ? state.highlights.filter(
-                  (item) =>
-                    !(item.targetType === targetType && item.targetId === targetId),
-                )
-              : [nextHighlight(targetType, targetId, excerpt), ...state.highlights],
-          };
+          if (existing) {
+            emitWrite({ kind: "highlight.delete", clientId: existing.id });
+            return {
+              highlights: state.highlights.filter(
+                (item) => !(item.targetType === targetType && item.targetId === targetId),
+              ),
+            };
+          }
+          const next = nextHighlight(targetType, targetId, excerpt);
+          emitWrite({
+            kind: "highlight.upsert",
+            clientId: next.id,
+            targetType,
+            targetId,
+            color: "gold",
+            excerpt,
+          });
+          return { highlights: [next, ...state.highlights] };
         }),
       upsertNote: (targetType, targetId, title, body) =>
         set((state) => {
@@ -155,6 +198,18 @@ export const useStudyState = create<StudyState>()(
             body,
             updatedAt: new Date().toISOString(),
           };
+          // expectedVersion 0 = create new; subsequent edits on the same
+          // note would need to track the server version. Phase 3 prep
+          // adds the version field to the local shape.
+          emitWrite({
+            kind: "note.upsert",
+            clientId: nextNote.id,
+            targetType,
+            targetId,
+            title: nextNote.title,
+            body: nextNote.body,
+            version: 0,
+          });
 
           return {
             notes: [
@@ -166,7 +221,11 @@ export const useStudyState = create<StudyState>()(
       addRecentSearch: (query) =>
         set((state) => {
           const nextEntry = nextSearch(query);
-
+          emitWrite({
+            kind: "recentSearch.create",
+            clientId: nextEntry.id,
+            query,
+          });
           return {
             recentSearches: [
               nextEntry,
@@ -183,7 +242,12 @@ export const useStudyState = create<StudyState>()(
             id: `history-${entry.href}`,
             visitedAt: new Date().toISOString(),
           };
-
+          emitWrite({
+            kind: "readingHistory.create",
+            clientId: nextEntry.id,
+            href: nextEntry.href,
+            label: nextEntry.label,
+          });
           return {
             readingHistory: [
               nextEntry,
@@ -193,24 +257,38 @@ export const useStudyState = create<StudyState>()(
         }),
       toggleFavoritePerson: (personId) =>
         set((state) => {
-          const exists = state.favoritePeople.some(
+          const existing = state.favoritePeople.find(
             (item) => item.personId === personId,
           );
-
-          return {
-            favoritePeople: exists
-              ? state.favoritePeople.filter((item) => item.personId !== personId)
-              : [nextFavorite(personId), ...state.favoritePeople],
-          };
+          if (existing) {
+            emitWrite({ kind: "favoritePerson.delete", clientId: existing.id });
+            return {
+              favoritePeople: state.favoritePeople.filter(
+                (item) => item.personId !== personId,
+              ),
+            };
+          }
+          const next = nextFavorite(personId);
+          emitWrite({
+            kind: "favoritePerson.create",
+            clientId: next.id,
+            personId,
+          });
+          return { favoritePeople: [next, ...state.favoritePeople] };
         }),
-      setPatronSaint: (personId) =>
+      setPatronSaint: (personId) => {
+        emitProfilePatch({ patronSaintPersonId: personId });
         set((state) => ({
           preferences: { ...state.preferences, patronSaintPersonId: personId },
-        })),
-      setLocation: (location) =>
+        }));
+      },
+      setLocation: (location) => {
+        const trimmed = location.trim();
+        emitProfilePatch({ location: trimmed });
         set((state) => ({
-          preferences: { ...state.preferences, location: location.trim() },
-        })),
+          preferences: { ...state.preferences, location: trimmed },
+        }));
+      },
       setReadingListStatus: (workId, status) =>
         set((state) => {
           const existing = (state.readingList ?? []).find(
@@ -226,17 +304,31 @@ export const useStudyState = create<StudyState>()(
                 addedAt: now,
                 updatedAt: now,
               };
+          emitWrite({
+            kind: "readingList.upsert",
+            clientId: nextItem.id,
+            workId,
+            status,
+          });
           const without = (state.readingList ?? []).filter(
             (item) => item.workId !== workId,
           );
           return { readingList: [nextItem, ...without] };
         }),
       removeFromReadingList: (workId) =>
-        set((state) => ({
-          readingList: (state.readingList ?? []).filter(
-            (item) => item.workId !== workId,
-          ),
-        })),
+        set((state) => {
+          const existing = (state.readingList ?? []).find(
+            (item) => item.workId === workId,
+          );
+          if (existing) {
+            emitWrite({ kind: "readingList.delete", clientId: existing.id });
+          }
+          return {
+            readingList: (state.readingList ?? []).filter(
+              (item) => item.workId !== workId,
+            ),
+          };
+        }),
       togglePreferredFather: (personId) =>
         set((state) => {
           // Defensive defaults — older persisted states pre-date these fields.
@@ -246,12 +338,17 @@ export const useStudyState = create<StudyState>()(
           // Adding a preferred father implicitly un-hides them; the two
           // lists are mutually exclusive in practice.
           const hidden = hiddenSource.filter((id) => id !== personId);
+          const nextPreferred = exists
+            ? preferred.filter((id) => id !== personId)
+            : [...preferred, personId];
+          emitProfilePatch({
+            preferredFatherIds: nextPreferred,
+            hiddenFatherIds: hidden,
+          });
           return {
             preferences: {
               ...state.preferences,
-              preferredFatherIds: exists
-                ? preferred.filter((id) => id !== personId)
-                : [...preferred, personId],
+              preferredFatherIds: nextPreferred,
               hiddenFatherIds: hidden,
             },
           };
@@ -262,12 +359,17 @@ export const useStudyState = create<StudyState>()(
           const preferredSource = state.preferences.preferredFatherIds ?? [];
           const exists = hidden.includes(personId);
           const preferred = preferredSource.filter((id) => id !== personId);
+          const nextHidden = exists
+            ? hidden.filter((id) => id !== personId)
+            : [...hidden, personId];
+          emitProfilePatch({
+            hiddenFatherIds: nextHidden,
+            preferredFatherIds: preferred,
+          });
           return {
             preferences: {
               ...state.preferences,
-              hiddenFatherIds: exists
-                ? hidden.filter((id) => id !== personId)
-                : [...hidden, personId],
+              hiddenFatherIds: nextHidden,
               preferredFatherIds: preferred,
             },
           };
@@ -281,6 +383,7 @@ export const useStudyState = create<StudyState>()(
           if (swapWith < 0 || swapWith >= list.length) return {};
           const next = list.slice();
           [next[index], next[swapWith]] = [next[swapWith], next[index]];
+          emitProfilePatch({ preferredFatherIds: next });
           return {
             preferences: { ...state.preferences, preferredFatherIds: next },
           };

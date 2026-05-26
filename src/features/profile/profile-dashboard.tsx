@@ -1,5 +1,6 @@
 "use client";
 
+import { SignedIn, SignedOut, SignInButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import {
   BookOpen,
@@ -28,9 +29,14 @@ export function ProfileDashboard() {
 
   const [activityTab, setActivityTab] = useState<ActivityTab>("all");
 
-  // Placeholders — wire to auth + reading-history once they exist.
-  const personName = "Brady";
-  const streak = 1;
+  // Identity — read from Clerk if signed in, otherwise show a friendly
+  // placeholder. The display name comes from Clerk so it stays in sync
+  // with whatever the user set in their account.
+  const { isSignedIn, user } = useUser();
+  const personName = isSignedIn
+    ? user?.firstName ?? user?.fullName ?? user?.primaryEmailAddress?.emailAddress?.split("@")[0] ?? "Friend"
+    : "Friend";
+  const streak = 1; // wire to activityDays once Phase 4 brings streak to web
   const badgeCount = 3 + favoritePeople.length;
 
   const activityItems = useMemo(() => {
@@ -71,23 +77,32 @@ export function ProfileDashboard() {
 
   return (
     <div className="space-y-6 px-4 sm:px-6">
-      {/* Top icon row — menu + settings (settings goes to /you/settings) */}
+      {/* Top icon row — sign-in (when out) / menu + settings */}
       <div className="flex justify-end pt-2">
-        <div className="flex items-center gap-1 rounded-full border border-line/60 bg-surface px-2 py-1.5">
-          <Link
-            href="/you/settings"
-            aria-label="All sections"
-            className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
-          >
-            <List size={18} />
-          </Link>
-          <Link
-            href="/you/settings"
-            aria-label="Settings"
-            className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
-          >
-            <Gear size={18} />
-          </Link>
+        <div className="flex items-center gap-2">
+          <SignedOut>
+            <SignInButton mode="modal">
+              <button className="rounded-full border border-accent/40 bg-accent-soft px-4 py-1.5 text-sm font-medium text-accent transition-colors duration-200 hover:bg-accent hover:text-background">
+                Sign in
+              </button>
+            </SignInButton>
+          </SignedOut>
+          <div className="flex items-center gap-1 rounded-full border border-line/60 bg-surface px-2 py-1.5">
+            <Link
+              href="/you/settings"
+              aria-label="All sections"
+              className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
+            >
+              <List size={18} />
+            </Link>
+            <Link
+              href="/you/settings"
+              aria-label="Settings"
+              className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
+            >
+              <Gear size={18} />
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -95,26 +110,33 @@ export function ProfileDashboard() {
       <header className="flex items-start justify-between gap-4">
         <div className="space-y-3">
           <h1 className="font-serif text-4xl font-semibold tracking-tight text-ink">
-            {personName} Luce
+            {personName}
           </h1>
-          <div className="flex items-center gap-2">
-            <CountPill label="Friends" count={0} />
-            <CountPill label="Following" count={0} />
-          </div>
-          {location ? (
-            <div className="flex items-center gap-1 text-sm text-ink-muted">
-              <MapPin size={14} weight="fill" />
-              <span>{location}</span>
+          <SignedOut>
+            <p className="text-sm text-ink-muted">
+              Sign in to keep your highlights, notes, and reading list across devices.
+            </p>
+          </SignedOut>
+          <SignedIn>
+            <div className="flex items-center gap-2">
+              <CountPill label="Friends" count={0} />
+              <CountPill label="Following" count={0} />
             </div>
-          ) : (
-            <Link
-              href="/you/settings"
-              className="inline-flex items-center gap-1 text-sm text-ink-soft underline underline-offset-2"
-            >
-              <MapPin size={14} weight="regular" />
-              <span>Set your location</span>
-            </Link>
-          )}
+            {location ? (
+              <div className="flex items-center gap-1 text-sm text-ink-muted">
+                <MapPin size={14} weight="fill" />
+                <span>{location}</span>
+              </div>
+            ) : (
+              <Link
+                href="/you/settings"
+                className="inline-flex items-center gap-1 text-sm text-ink-soft underline underline-offset-2"
+              >
+                <MapPin size={14} weight="regular" />
+                <span>Set your location</span>
+              </Link>
+            )}
+          </SignedIn>
         </div>
         <button className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-full border-2 border-line-strong/60 bg-surface text-2xl font-serif text-ink-muted">
           {personName.slice(0, 1)}

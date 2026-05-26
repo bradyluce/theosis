@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo";
 import Feather from "@expo/vector-icons/Feather";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
@@ -63,7 +64,16 @@ export default function YouScreen() {
     };
   }, []);
 
-  const displayName = prefs.displayName?.trim() || "Friend";
+  // Identity: Clerk first name when signed in, else local prefs displayName,
+  // else "Friend". Initial letter for the halo avatar.
+  const { user } = useUser();
+  const clerkDisplayName =
+    user?.firstName ??
+    user?.fullName ??
+    user?.primaryEmailAddress?.emailAddress?.split("@")[0] ??
+    null;
+  const displayName =
+    clerkDisplayName?.trim() || prefs.displayName?.trim() || "Friend";
   const initial = displayName.charAt(0).toUpperCase();
   const statusLabel =
     prefs.status === "christian"
@@ -138,6 +148,20 @@ export default function YouScreen() {
             <Text style={styles.avatarLetter}>{initial}</Text>
           </Halo>
           <Text style={styles.displayName}>{displayName}</Text>
+          <SignedOut>
+            <Pressable
+              onPress={() => router.push("/auth-debug")}
+              accessibilityRole="button"
+              accessibilityLabel="Sign in to sync"
+              style={({ pressed }) => [
+                styles.signInCta,
+                pressed && { opacity: 0.7 },
+              ]}
+            >
+              <Feather name="log-in" size={13} color={colors.accent} />
+              <Text style={styles.signInCtaLabel}>Sign in to sync</Text>
+            </Pressable>
+          </SignedOut>
           {statusLabel ? (
             <View style={styles.statusPill}>
               <Text style={styles.statusPillLabel}>{statusLabel}</Text>
@@ -428,6 +452,23 @@ const styles = StyleSheet.create({
     color: colors.accent,
     letterSpacing: 2.4,
     textTransform: "uppercase",
+  },
+  signInCta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 6,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+  },
+  signInCtaLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 13,
+    color: colors.accent,
+    fontWeight: "600",
   },
   parishRow: {
     flexDirection: "row",
