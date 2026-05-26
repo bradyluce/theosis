@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  // Drizzle's native pg bindings don't tree-shake cleanly in the serverless
+  // bundle; mark it external so Next.js doesn't try to inline it.
+  serverExternalPackages: ["drizzle-orm"],
   // Vercel serverless functions only bundle files Next.js can statically
   // trace. Many routes read JSON via dynamic `path.join(process.cwd(), ...)`
   // calls — those don't get traced automatically, so without this declaration
