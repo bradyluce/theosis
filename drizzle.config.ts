@@ -1,5 +1,11 @@
-import "dotenv/config";
+import { config as dotenv } from "dotenv";
 import { defineConfig } from "drizzle-kit";
+
+// Drizzle Kit runs outside Next.js, so it doesn't auto-load .env.local.
+// We mirror Next's lookup order: .env.local (gitignored, dev secrets) wins,
+// .env (committed defaults) is the fallback.
+dotenv({ path: ".env.local" });
+dotenv({ path: ".env" });
 
 // Drizzle Kit config. Generates migrations from the schema in @theosis/core
 // and reads/writes them under ./drizzle. Connection string is read from
