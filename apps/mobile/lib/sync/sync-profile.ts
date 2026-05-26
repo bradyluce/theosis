@@ -40,6 +40,15 @@ export async function syncProfilePatchMobile(
     if (patch.commentaryRanking !== undefined) {
       body.commentaryRanking = patch.commentaryRanking;
     }
+    if (patch.jurisdiction !== undefined) {
+      body.jurisdiction = patch.jurisdiction;
+    }
+    if (patch.fastingLevel !== undefined) {
+      body.fastingLevel = patch.fastingLevel;
+    }
+    if (patch.primaryTranslationId !== undefined) {
+      body.primaryTranslationId = patch.primaryTranslationId;
+    }
     await api.patchProfile(body);
   } catch (err) {
     console.warn("[mobile sync] profile patch failed", err);

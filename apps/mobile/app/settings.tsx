@@ -14,6 +14,12 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import {
+  FASTING_OPTIONS,
+  JURISDICTION_OPTIONS,
+  TRANSLATION_OPTIONS,
+} from "@theosis/core/onboarding";
+
 import { Pill } from "@/components/theosis/pill";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi, getApiBaseUrl } from "@/lib/api";
@@ -284,6 +290,118 @@ export default function SettingsScreen() {
                 <Pressable
                   key={opt.value}
                   onPress={() => update({ calendarSystem: opt.value })}
+                  style={({ pressed }) => [
+                    styles.choiceRow,
+                    selected && styles.choiceRowSelected,
+                    pressed && !selected && { opacity: 0.7 },
+                  ]}
+                  accessibilityRole="radio"
+                  accessibilityState={{ selected }}
+                >
+                  <View style={styles.choiceText}>
+                    <Text
+                      style={[
+                        styles.choiceLabel,
+                        selected && styles.choiceLabelSelected,
+                      ]}
+                    >
+                      {opt.label}
+                    </Text>
+                    <Text style={styles.choiceDesc}>{opt.description}</Text>
+                  </View>
+                  {selected ? <Text style={styles.checkGlyph}>✓</Text> : null}
+                </Pressable>
+              );
+            })}
+          </View>
+        </View>
+
+        {/* Jurisdiction */}
+        <View style={styles.section}>
+          <Text style={styles.sectionLabel}>Jurisdiction</Text>
+          <View style={styles.card}>
+            {JURISDICTION_OPTIONS.map((opt) => {
+              const selected = prefs.jurisdiction === opt.code;
+              return (
+                <Pressable
+                  key={opt.code}
+                  onPress={() => update({ jurisdiction: opt.code })}
+                  style={({ pressed }) => [
+                    styles.choiceRow,
+                    selected && styles.choiceRowSelected,
+                    pressed && !selected && { opacity: 0.7 },
+                  ]}
+                  accessibilityRole="radio"
+                  accessibilityState={{ selected }}
+                >
+                  <View style={styles.choiceText}>
+                    <Text
+                      style={[
+                        styles.choiceLabel,
+                        selected && styles.choiceLabelSelected,
+                      ]}
+                    >
+                      {opt.label}
+                    </Text>
+                    {opt.description ? (
+                      <Text style={styles.choiceDesc}>{opt.description}</Text>
+                    ) : null}
+                  </View>
+                  {selected ? <Text style={styles.checkGlyph}>✓</Text> : null}
+                </Pressable>
+              );
+            })}
+          </View>
+        </View>
+
+        {/* Primary translation */}
+        <View style={styles.section}>
+          <Text style={styles.sectionLabel}>Primary translation</Text>
+          <View style={styles.card}>
+            {TRANSLATION_OPTIONS.map((opt) => {
+              const selected =
+                (prefs.primaryTranslationId ?? "kjva") === opt.value;
+              return (
+                <Pressable
+                  key={opt.value}
+                  onPress={() => update({ primaryTranslationId: opt.value })}
+                  style={({ pressed }) => [
+                    styles.choiceRow,
+                    selected && styles.choiceRowSelected,
+                    pressed && !selected && { opacity: 0.7 },
+                  ]}
+                  accessibilityRole="radio"
+                  accessibilityState={{ selected }}
+                >
+                  <View style={styles.choiceText}>
+                    <Text
+                      style={[
+                        styles.choiceLabel,
+                        selected && styles.choiceLabelSelected,
+                      ]}
+                    >
+                      {opt.label}
+                    </Text>
+                    <Text style={styles.choiceDesc}>{opt.description}</Text>
+                  </View>
+                  {selected ? <Text style={styles.checkGlyph}>✓</Text> : null}
+                </Pressable>
+              );
+            })}
+          </View>
+        </View>
+
+        {/* Fasting level */}
+        <View style={styles.section}>
+          <Text style={styles.sectionLabel}>Fasting level</Text>
+          <View style={styles.card}>
+            {FASTING_OPTIONS.map((opt) => {
+              const selected =
+                (prefs.fastingLevel ?? "standard") === opt.value;
+              return (
+                <Pressable
+                  key={opt.value}
+                  onPress={() => update({ fastingLevel: opt.value })}
                   style={({ pressed }) => [
                     styles.choiceRow,
                     selected && styles.choiceRowSelected,

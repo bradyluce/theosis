@@ -67,6 +67,12 @@ export type ProfilePrefs = {
   patronSaintSlug?: string;
   calendarSystem?: "new" | "julian";
   commentaryRanking?: "balanced" | "ancient-first" | "modern-first";
+  // Phase 3 additions — mirror the unified ProfilePreferences on web.
+  jurisdiction?:
+    | "oca" | "goa" | "ant" | "roc" | "rom" | "ser"
+    | "ukr" | "mos" | "bgr" | "alb" | "cpr" | "geo" | "other";
+  fastingLevel?: "strict" | "standard" | "relaxed";
+  primaryTranslationId?: string;
 };
 
 export type PrayerRule = {
