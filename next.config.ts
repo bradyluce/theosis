@@ -15,6 +15,20 @@ const nextConfig: NextConfig = {
   // unzipped cap can't fit the >250 MB commentary by-verse tree. The local-
   // file fallback in each route handler is kept as a dev convenience; the
   // tracing entries below are only the small files the runtime still needs.
+  // The Next.js tracer follows the dynamic `path.join(COMMENTARY_DIR, ...)`
+  // and `path.join(LIBRARY_DIR, "by-work", workId, ...)` calls in
+  // src/lib/content/commentary-loader.ts and includes every JSON under those
+  // base dirs (~210 MB commentary + ~184 MB library = 400+ MB per function).
+  // 9 functions blow past Vercel's 250 MB cap. Block the trace globally —
+  // the data lives in R2 now, and per-route `outputFileTracingIncludes`
+  // below re-adds the smaller catalog files those routes still need.
+  outputFileTracingExcludes: {
+    "*": [
+      "./content/normalized/commentary/by-verse/**/*",
+      "./content/normalized/commentary/by-chapter/**/*",
+      "./content/normalized/library/by-work/**/*",
+    ],
+  },
   outputFileTracingIncludes: {
     "/api/bible/catalog": ["./content/normalized/bibles/catalog.json"],
     "/api/bible/[translation]/[book]/[chapter]": [
