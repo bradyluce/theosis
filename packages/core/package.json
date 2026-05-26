@@ -10,6 +10,7 @@
     "./db/schema": "./src/db/schema.ts",
     "./api/me-dtos": "./src/api/me-dtos.ts",
     "./api/me-client": "./src/api/me-client.ts",
+    "./onboarding": "./src/onboarding/index.ts",
     "./domain/user-types": "./src/domain/user-types.ts",
     "./onboarding": "./src/onboarding/index.ts",
     "./sync": "./src/sync/index.ts"
