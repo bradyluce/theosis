@@ -3,6 +3,21 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
+    // Suppress "overly broad pattern" warnings from the content readers. Each
+    // listed file constructs paths like `path.join(process.cwd(),
+    // "content/normalized/...")`, which Turbopack flags because the literal
+    // directory holds tens of thousands of files. The actual deploy bundle is
+    // correct — outputFileTracingExcludes below strips those trees and
+    // outputFileTracingIncludes re-adds only the catalog files each route
+    // needs. The warnings are static-analysis noise on top of an explicit
+    // trace config; silence them at the source.
+    ignoreIssue: [
+      { path: "**/src/lib/bible/server-store.ts" },
+      { path: "**/src/lib/content/commentary-loader.ts" },
+      { path: "**/src/app/api/bible/catalog/route.ts" },
+      { path: "**/src/app/api/commentary/by-verse/**/route.ts" },
+      { path: "**/src/app/api/library/by-work/**/route.ts" },
+    ],
   },
   // Drizzle's native pg bindings don't tree-shake cleanly in the serverless
   // bundle; mark it external so Next.js doesn't try to inline it.

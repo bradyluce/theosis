@@ -88,3 +88,6 @@ tmp_test.txt
 # Icon-audit scratch data (run /dev/icons + replacement picker to regenerate).
 /.flagged-icons.json
 /.flagged-icons-candidates.json
+
+# clerk configuration (can include secrets)
+/.clerk/

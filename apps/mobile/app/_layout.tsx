@@ -1,4 +1,4 @@
-import { ClerkProvider } from '@clerk/clerk-expo';
+import { ClerkProvider, useAuth } from '@clerk/clerk-expo';
 import { ThemeProvider } from '@react-navigation/native';
 import { QueryClientProvider } from '@tanstack/react-query';
 import Constants from 'expo-constants';
@@ -12,6 +12,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
 import { navigationTheme } from '@/constants/theosis-theme';
+import { setActiveTokenGetter } from '@/lib/auth';
 import { queryClient } from '@/lib/query-client';
 
 // SecureStore-backed token cache for Clerk. Clerk's expo SDK persists the
@@ -105,6 +106,7 @@ export default function RootLayout() {
 
   return (
     <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
+    <ClerkTokenBridge />
     <GestureHandlerRootView style={{ flex: 1 }}>
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={navigationTheme}>
@@ -135,6 +137,9 @@ export default function RootLayout() {
             options={{ presentation: "modal", headerShown: true }}
           />
           <Stack.Screen name="settings" />
+          {/* Temporary Phase 1 verification screen. Replaced by the proper
+              onboarding flow in Phase 3. */}
+          <Stack.Screen name="auth-debug" options={{ headerShown: true }} />
           {/* Parish locator. parishes is the list/search entry, reachable
               from the You tab. parishes/[state]/[slug] is the per-parish
               detail screen pushed when a row in the list is tapped. */}
@@ -147,4 +152,21 @@ export default function RootLayout() {
     </GestureHandlerRootView>
     </ClerkProvider>
   );
+}
+
+// Sits inside <ClerkProvider> so it can call useAuth(); registers Clerk's
+// getToken() with our non-component auth module so any code path can later
+// call getAuthedApi() without needing access to a hook. Re-registers on
+// sign-in / sign-out (isSignedIn flips) so the cached client gets rebuilt
+// with a fresh closure over the new session.
+function ClerkTokenBridge() {
+  const { getToken, isSignedIn } = useAuth();
+  useEffect(() => {
+    if (isSignedIn) {
+      setActiveTokenGetter(() => getToken());
+    } else {
+      setActiveTokenGetter(null);
+    }
+  }, [getToken, isSignedIn]);
+  return null;
 }

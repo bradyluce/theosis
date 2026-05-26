@@ -3,11 +3,11 @@
 // nothing in preferences.ts calls getAuthedApi() yet (gated by the
 // SYNC_ENABLED flag inside preferences.ts). Phase 2 wires the calls up.
 //
-// Token caching: Clerk's expo SDK stores the JWT in SecureStore for us
-// (the tokenCache passed to ClerkProvider in app/_layout.tsx). Here we
-// just call getToken() each request — the Clerk SDK handles refresh.
-
-import type { Auth } from "@clerk/types";
+// Token threading: Clerk's `getToken` lives on the `useAuth()` hook, which
+// can only be called from a React component. A top-level provider (see
+// app/_layout.tsx) reads useAuth() and registers its getToken via
+// setActiveTokenGetter(); after that, any non-component code path can
+// call getAuthedApi() to get an authed client.
 
 import {
   createTheosisMeApi,
@@ -16,11 +16,6 @@ import {
 
 import { getApiBaseUrl } from "./api";
 
-// Clerk's `getToken` is exposed via `useAuth()` (React hook). We can't call
-// a hook from a non-component function, so callers pass us the getter once
-// (typically from a top-level provider or screen that has `useAuth()`).
-// Phase 2 lands the provider that calls setActiveTokenGetter().
-
 type TokenGetter = (() => Promise<string | null>) | null;
 
 let activeTokenGetter: TokenGetter = null;
@@ -28,7 +23,7 @@ let cachedApi: TheosisMeApi | null = null;
 
 export function setActiveTokenGetter(getter: TokenGetter): void {
   activeTokenGetter = getter;
-  cachedApi = null; // force rebuild so the new getter is used
+  cachedApi = null; // force rebuild so the new getter is used on next call
 }
 
 export function getAuthedApi(): TheosisMeApi | null {
@@ -45,6 +40,3 @@ export function getAuthedApi(): TheosisMeApi | null {
   });
   return cachedApi;
 }
-
-// Type re-export for convenience.
-export type { Auth };

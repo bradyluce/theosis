@@ -152,6 +152,30 @@ export default function SettingsScreen() {
           <Text style={styles.title}>Preferences</Text>
         </View>
 
+        {/* Account — Phase 1 verification entry point. Temporary; the proper
+            auth + onboarding UI lands in Phase 3. */}
+        <View style={styles.section}>
+          <Text style={styles.sectionLabel}>Account</Text>
+          <Pressable
+            onPress={() => router.push("/auth-debug")}
+            style={({ pressed }) => [
+              styles.linkCard,
+              pressed && styles.linkCardPressed,
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Open auth debug"
+          >
+            <View style={styles.linkCardMain}>
+              <Text style={styles.linkCardTitle}>Sign in / debug</Text>
+              <Text style={styles.linkCardSubtitle}>
+                Sign in with email + password and test the /api/me round-trip.
+                Temporary — the proper sign-in flow ships with Phase 3 onboarding.
+              </Text>
+            </View>
+            <Text style={styles.linkCardChevron}>›</Text>
+          </Pressable>
+        </View>
+
         {/* Profile — name + status. */}
         <View style={styles.section}>
           <Text style={styles.sectionLabel}>Profile</Text>
