@@ -1,3 +1,4 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Instrument_Sans, Newsreader } from "next/font/google";
 import "./globals.css";
@@ -36,20 +37,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${instrumentSans.variable} ${newsreader.variable} ${ibmPlexMono.variable}`}
-    >
-      {/* suppressHydrationWarning silences the cosmetic mismatch from browser
-          extensions (Grammarly etc.) that inject data-* attributes onto <body>
-          before React hydrates. The warning only applies to direct attributes
-          on this element; children still receive normal hydration checks. */}
-      <body
-        className="min-h-dvh bg-background font-sans text-ink antialiased"
-        suppressHydrationWarning
+    <ClerkProvider>
+      <html
+        lang="en"
+        className={`${instrumentSans.variable} ${newsreader.variable} ${ibmPlexMono.variable}`}
       >
-        {children}
-      </body>
-    </html>
+        {/* suppressHydrationWarning silences the cosmetic mismatch from browser
+            extensions (Grammarly etc.) that inject data-* attributes onto <body>
+            before React hydrates. The warning only applies to direct attributes
+            on this element; children still receive normal hydration checks. */}
+        <body
+          className="min-h-dvh bg-background font-sans text-ink antialiased"
+          suppressHydrationWarning
+        >
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
