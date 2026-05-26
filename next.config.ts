@@ -31,6 +31,13 @@ const nextConfig: NextConfig = {
       "./content/normalized/commentary/by-chapter/**/*",
       "./content/normalized/library/by-work/**/*",
     ],
+    // /dev/icons is an internal admin tool that fs.readdir's public/icons
+    // to list every saint icon. Next traces those JPGs into the function
+    // bundle (~270 MB). The dev tool doesn't ship for end users — strip the
+    // files from the bundle. Pages still build; runtime listing falls
+    // through to an empty array in production, which is fine.
+    "/dev/icons": ["./public/icons/**/*"],
+    "/dev/icons/replace": ["./public/icons/**/*"],
   },
   outputFileTracingIncludes: {
     "/api/bible/catalog": ["./content/normalized/bibles/catalog.json"],
