@@ -1,7 +1,10 @@
+import { ClerkProvider } from '@clerk/clerk-expo';
 import { ThemeProvider } from '@react-navigation/native';
 import { QueryClientProvider } from '@tanstack/react-query';
+import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
+import * as SecureStore from 'expo-secure-store';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
@@ -10,6 +13,36 @@ import 'react-native-reanimated';
 
 import { navigationTheme } from '@/constants/theosis-theme';
 import { queryClient } from '@/lib/query-client';
+
+// SecureStore-backed token cache for Clerk. Clerk's expo SDK persists the
+// session JWT under whichever key it likes; we just bridge get/save/clear
+// through SecureStore so the token survives across cold starts but isn't
+// in plain AsyncStorage.
+const tokenCache = {
+  async getToken(key: string) {
+    try {
+      return await SecureStore.getItemAsync(key);
+    } catch {
+      return null;
+    }
+  },
+  async saveToken(key: string, value: string) {
+    try {
+      await SecureStore.setItemAsync(key, value);
+    } catch {
+      // Keychain/Keystore unavailable — fall through silently. Clerk will
+      // re-issue the token on next sign-in.
+    }
+  },
+};
+
+// Publishable key comes from app.json `extra.clerkPublishableKey` (set per
+// build via EAS env vars). Missing key in production is a config error,
+// but we don't want to crash dev builds — pass an empty string and let
+// Clerk error loudly at the first auth attempt instead.
+const publishableKey =
+  (Constants.expoConfig?.extra?.clerkPublishableKey as string | undefined) ??
+  '';
 
 // Direct require()s of the two Newsreader weights we use. Avoids importing
 // `@expo-google-fonts/newsreader` as a barrel — Metro follows every TTF
@@ -71,6 +104,7 @@ export default function RootLayout() {
   }
 
   return (
+    <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
     <GestureHandlerRootView style={{ flex: 1 }}>
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={navigationTheme}>
@@ -111,5 +145,6 @@ export default function RootLayout() {
       </ThemeProvider>
     </QueryClientProvider>
     </GestureHandlerRootView>
+    </ClerkProvider>
   );
 }

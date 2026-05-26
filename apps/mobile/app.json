@@ -53,7 +53,8 @@
           "isIosBackgroundLocationEnabled": false,
           "isAndroidBackgroundLocationEnabled": false
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
@@ -63,6 +64,7 @@
     },
     "extra": {
       "apiBaseUrl": "https://theosis-app-brady-luces-projects.vercel.app",
+      "clerkPublishableKey": "",
       "router": {},
       "eas": {
         "projectId": "fa9ebe0c-6e54-4fb8-a1f6-3dd820af62db"

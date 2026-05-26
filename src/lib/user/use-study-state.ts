@@ -13,9 +13,36 @@ import type {
   SavedVerse,
   UserProfileSnapshot,
 } from "@/domain/user/types";
+import type { PendingWrite } from "@theosis/core/sync";
 import { userProfileSeed } from "@/lib/content/seed/profile";
 
+// Auth slice — not part of UserProfileSnapshot because it's per-device
+// transient state, not per-user data. Reconstructed from Clerk's
+// useUser() on every page load; `partialize` below excludes it from
+// localStorage persistence.
+export type AuthSlice = {
+  clerkUserId: string | null;
+  dbUserId: string | null;
+  isHydrating: boolean;
+  hydrationError: string | null;
+  migrationStatus: "idle" | "pending" | "complete" | "failed";
+  migrationError: string | null;
+};
+
+const DEFAULT_AUTH: AuthSlice = {
+  clerkUserId: null,
+  dbUserId: null,
+  isHydrating: false,
+  hydrationError: null,
+  migrationStatus: "idle",
+  migrationError: null,
+};
+
 type StudyState = UserProfileSnapshot & {
+  // --- Auth + sync (added v3) ----------------------------------------------
+  auth: AuthSlice;
+  pendingWrites: PendingWrite[];
+  // --- Existing -----------------------------------------------------------
   hasHydrated: boolean;
   toggleSavedVerse: (verseId: string, translationId: string) => void;
   toggleHighlight: (
@@ -86,6 +113,8 @@ export const useStudyState = create<StudyState>()(
   persist(
     (set) => ({
       ...userProfileSeed,
+      auth: DEFAULT_AUTH,
+      pendingWrites: [],
       hasHydrated: false,
       toggleSavedVerse: (verseId, translationId) =>
         set((state) => {
@@ -264,12 +293,23 @@ export const useStudyState = create<StudyState>()(
       // a migration below. Without it, returning users whose localStorage
       // predates the new fields rehydrate with `undefined` slots and crash
       // on first read.
-      version: 2,
-      migrate: (persistedState, _version) => {
+      version: 3,
+      // Auth slice is reconstructed from Clerk on every load — don't
+      // serialize it. pendingWrites IS persisted so offline mutations
+      // survive a refresh.
+      partialize: (state) => {
+        const { auth: _auth, hasHydrated: _hh, ...rest } = state;
+        void _auth;
+        void _hh;
+        return rest;
+      },
+      migrate: (persistedState, version) => {
         if (!persistedState || typeof persistedState !== "object") {
           return persistedState as UserProfileSnapshot;
         }
-        const state = persistedState as Partial<UserProfileSnapshot>;
+        const state = persistedState as Partial<UserProfileSnapshot> & {
+          pendingWrites?: PendingWrite[];
+        };
         // v0 -> v1: ensure father-preference arrays exist on preferences.
         const prefs = state.preferences ?? userProfileSeed.preferences;
         state.preferences = {
@@ -280,6 +320,11 @@ export const useStudyState = create<StudyState>()(
         };
         // v1 -> v2: readingList field is now required.
         if (!state.readingList) state.readingList = [];
+        // v2 -> v3: pendingWrites slot for offline sync queue. The auth
+        // slice is per-device transient state — not migrated.
+        if (version < 3 && !state.pendingWrites) {
+          state.pendingWrites = [];
+        }
         return state as UserProfileSnapshot;
       },
       onRehydrateStorage: () => (state) => {

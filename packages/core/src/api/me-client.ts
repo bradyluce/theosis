@@ -1,11 +1,42 @@
 // Authed user-data API client. Shared between web (where the host adds the
 // Clerk session cookie automatically) and mobile (where the caller injects
 // `Authorization: Bearer <clerk-jwt>` via `fetchImpl`).
-//
-// Commit 2 ships the read-only methods. Write methods (POST/PUT/DELETE per
-// entity + the import endpoint) land in commit 3.
 
-import { meSnapshotDto, userProfileDto, type MeSnapshotDto, type UserProfileDto } from "./me-dtos";
+import {
+  contentCompletionDto,
+  favoritePersonDto,
+  highlightDto,
+  meSnapshotDto,
+  noteDto,
+  prayerRuleDto,
+  readingHistoryEntryDto,
+  readingListItemDto,
+  recentSearchDto,
+  savedVerseDto,
+  userProfileDto,
+  type ContentCompletionDto,
+  type CreateCompletionInput,
+  type CreateFavoritePersonInput,
+  type CreateReadingHistoryInput,
+  type CreateRecentSearchInput,
+  type CreateSavedVerseInput,
+  type FavoritePersonDto,
+  type HighlightDto,
+  type ImportPayloadDto,
+  type MeSnapshotDto,
+  type NoteDto,
+  type PrayerRuleDto,
+  type ReadingHistoryEntryDto,
+  type ReadingListItemDto,
+  type RecentSearchDto,
+  type ReplacePrayerRuleInput,
+  type SavedVerseDto,
+  type UpdateProfileInput,
+  type UpsertHighlightInput,
+  type UpsertNoteInput,
+  type UpsertReadingListInput,
+  type UserProfileDto,
+} from "./me-dtos";
 
 export type TheosisMeApiOptions = {
   // Absolute base URL. Web defaults to "" (same-origin); mobile passes the
@@ -17,8 +48,68 @@ export type TheosisMeApiOptions = {
 };
 
 export type TheosisMeApi = {
+  // --- Read --------------------------------------------------------------
   fetchSnapshot: () => Promise<MeSnapshotDto>;
   fetchProfile: () => Promise<UserProfileDto>;
+
+  // --- Profile -----------------------------------------------------------
+  patchProfile: (input: UpdateProfileInput) => Promise<UserProfileDto>;
+
+  // --- Saved verses ------------------------------------------------------
+  createSavedVerse: (input: CreateSavedVerseInput) => Promise<SavedVerseDto>;
+  deleteSavedVerse: (clientId: string) => Promise<void>;
+
+  // --- Highlights --------------------------------------------------------
+  upsertHighlight: (input: UpsertHighlightInput) => Promise<HighlightDto>;
+  deleteHighlight: (clientId: string) => Promise<void>;
+
+  // --- Notes -------------------------------------------------------------
+  // PUT semantics with optimistic concurrency. 409 surfaces via thrown
+  // TheosisMeApiError (status 409, bodyText contains the conflicting row).
+  upsertNote: (input: UpsertNoteInput) => Promise<NoteDto>;
+  deleteNote: (clientId: string) => Promise<void>;
+
+  // --- Favorite people ---------------------------------------------------
+  createFavoritePerson: (
+    input: CreateFavoritePersonInput,
+  ) => Promise<FavoritePersonDto>;
+  deleteFavoritePerson: (clientId: string) => Promise<void>;
+
+  // --- Reading list ------------------------------------------------------
+  upsertReadingList: (
+    input: UpsertReadingListInput,
+  ) => Promise<ReadingListItemDto>;
+  deleteReadingListItem: (clientId: string) => Promise<void>;
+
+  // --- Recent searches ---------------------------------------------------
+  createRecentSearch: (
+    input: CreateRecentSearchInput,
+  ) => Promise<RecentSearchDto>;
+  clearRecentSearches: () => Promise<void>;
+
+  // --- Reading history ---------------------------------------------------
+  createReadingHistoryEntry: (
+    input: CreateReadingHistoryInput,
+  ) => Promise<ReadingHistoryEntryDto>;
+
+  // --- Prayer rule -------------------------------------------------------
+  replacePrayerRule: (
+    input: ReplacePrayerRuleInput,
+  ) => Promise<PrayerRuleDto>;
+
+  // --- Activity days -----------------------------------------------------
+  recordActivityDay: (day: string) => Promise<string[]>;
+
+  // --- Content completions ----------------------------------------------
+  createCompletion: (
+    input: CreateCompletionInput,
+  ) => Promise<ContentCompletionDto>;
+
+  // --- Anonymous-to-authed import ----------------------------------------
+  postImport: (
+    payload: ImportPayloadDto,
+    opts?: { merge?: boolean },
+  ) => Promise<MeSnapshotDto>;
 };
 
 export function createTheosisMeApi(
@@ -27,25 +118,120 @@ export function createTheosisMeApi(
   const baseUrl = opts.baseUrl ?? "";
   const fetchImpl = opts.fetchImpl ?? fetch;
 
-  async function getJson<T>(path: string, parse: (raw: unknown) => T): Promise<T> {
-    const res = await fetchImpl(`${baseUrl}${path}`, {
-      method: "GET",
-      // Same-origin sends Clerk session cookies; cross-origin (mobile) sends
-      // the Authorization header from fetchImpl.
+  async function request<T>(
+    method: string,
+    path: string,
+    body: unknown,
+    parse?: (raw: unknown) => T,
+  ): Promise<T> {
+    const init: RequestInit = {
+      method,
       credentials: "include",
-    });
+      headers: body !== undefined ? { "Content-Type": "application/json" } : {},
+      body: body !== undefined ? JSON.stringify(body) : undefined,
+    };
+    const res = await fetchImpl(`${baseUrl}${path}`, init);
+    if (res.status === 204) {
+      // DELETE — no body, nothing to parse.
+      return undefined as T;
+    }
     if (!res.ok) {
       throw new TheosisMeApiError(res.status, await safeText(res));
     }
-    const body = (await res.json()) as { data: unknown };
-    return parse(body.data);
+    if (!parse) {
+      return undefined as T;
+    }
+    const json = (await res.json()) as { data: unknown };
+    return parse(json.data);
   }
 
   return {
     fetchSnapshot: () =>
-      getJson("/api/me", (raw) => meSnapshotDto.parse(raw)),
+      request("GET", "/api/me", undefined, (raw) => meSnapshotDto.parse(raw)),
     fetchProfile: () =>
-      getJson("/api/me/profile", (raw) => userProfileDto.parse(raw)),
+      request("GET", "/api/me/profile", undefined, (raw) =>
+        userProfileDto.parse(raw),
+      ),
+
+    patchProfile: (input) =>
+      request("PATCH", "/api/me/profile", input, (raw) =>
+        userProfileDto.parse(raw),
+      ),
+
+    createSavedVerse: (input) =>
+      request("POST", "/api/me/saved-verses", input, (raw) =>
+        savedVerseDto.parse(raw),
+      ),
+    deleteSavedVerse: (clientId) =>
+      request("DELETE", `/api/me/saved-verses/${encodeURIComponent(clientId)}`, undefined),
+
+    upsertHighlight: (input) =>
+      request("PUT", "/api/me/highlights", input, (raw) =>
+        highlightDto.parse(raw),
+      ),
+    deleteHighlight: (clientId) =>
+      request("DELETE", `/api/me/highlights/${encodeURIComponent(clientId)}`, undefined),
+
+    upsertNote: (input) =>
+      request("PUT", "/api/me/notes", input, (raw) => noteDto.parse(raw)),
+    deleteNote: (clientId) =>
+      request("DELETE", `/api/me/notes/${encodeURIComponent(clientId)}`, undefined),
+
+    createFavoritePerson: (input) =>
+      request("POST", "/api/me/favorite-people", input, (raw) =>
+        favoritePersonDto.parse(raw),
+      ),
+    deleteFavoritePerson: (clientId) =>
+      request(
+        "DELETE",
+        `/api/me/favorite-people/${encodeURIComponent(clientId)}`,
+        undefined,
+      ),
+
+    upsertReadingList: (input) =>
+      request("PUT", "/api/me/reading-list", input, (raw) =>
+        readingListItemDto.parse(raw),
+      ),
+    deleteReadingListItem: (clientId) =>
+      request(
+        "DELETE",
+        `/api/me/reading-list/${encodeURIComponent(clientId)}`,
+        undefined,
+      ),
+
+    createRecentSearch: (input) =>
+      request("POST", "/api/me/recent-searches", input, (raw) =>
+        recentSearchDto.parse(raw),
+      ),
+    clearRecentSearches: () =>
+      request("DELETE", "/api/me/recent-searches", undefined),
+
+    createReadingHistoryEntry: (input) =>
+      request("POST", "/api/me/reading-history", input, (raw) =>
+        readingHistoryEntryDto.parse(raw),
+      ),
+
+    replacePrayerRule: (input) =>
+      request("PUT", "/api/me/prayer-rule", input, (raw) =>
+        prayerRuleDto.parse(raw),
+      ),
+
+    recordActivityDay: (day) =>
+      request("POST", "/api/me/activity-days", { day }, (raw) =>
+        (raw as string[]) /* server returns string[] directly */,
+      ),
+
+    createCompletion: (input) =>
+      request("POST", "/api/me/completions", input, (raw) =>
+        contentCompletionDto.parse(raw),
+      ),
+
+    postImport: (payload, options) => {
+      const qs = options?.merge ? "?merge=true" : "";
+      return request("POST", `/api/me/import${qs}`, payload, (raw) =>
+        meSnapshotDto.parse(raw),
+      );
+    },
   };
 }
 
