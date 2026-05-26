@@ -1,7 +1,7 @@
 import "server-only";
 
 import { NextRequest, NextResponse } from "next/server";
-import type { Person, TopicPageResponse, Work } from "@theosis/core";
+import type { IconRef, Person, TopicPageResponse, Work } from "@theosis/core";
 import {
   getAllPeopleFromAll,
   getAllWorksFromAll,
