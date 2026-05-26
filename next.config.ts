@@ -5,17 +5,51 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
   // Vercel serverless functions only bundle files Next.js can statically
-  // trace. The bible API routes read JSON files via dynamic
-  // `path.join(process.cwd(), ...)` calls — those don't get traced
-  // automatically, so without this declaration WEB/Vulgate (and the
-  // catalog itself) silently disappear from production after deploy even
-  // though they're committed to the repo. Explicitly include the entire
-  // normalized bibles tree for both routes.
+  // trace. Many routes read JSON via dynamic `path.join(process.cwd(), ...)`
+  // calls — those don't get traced automatically, so without this declaration
+  // content silently disappears from production after deploy even though it's
+  // committed to the repo.
+  //
+  // The big trees (bibles, commentary by-verse, commentary by-chapter,
+  // library by-work) are served out of R2 now — Vercel's 250 MB per-function
+  // unzipped cap can't fit the >250 MB commentary by-verse tree. The local-
+  // file fallback in each route handler is kept as a dev convenience; the
+  // tracing entries below are only the small files the runtime still needs.
   outputFileTracingIncludes: {
     "/api/bible/catalog": ["./content/normalized/bibles/catalog.json"],
     "/api/bible/[translation]/[book]/[chapter]": [
       "./content/normalized/bibles/**/*.json",
     ],
+    "/api/commentary/catalog": [
+      "./content/normalized/commentary/catalog.json",
+    ],
+    "/api/library/catalog": [
+      "./content/normalized/library/catalog.json",
+    ],
+    // /api/daily, /api/menaion/* and any hymn/lectionary route hits
+    // src/lib/calendar/data.ts which reads four JSON files in this dir.
+    "/api/daily": [
+      "./content/normalized/calendar/**/*.json",
+      "./content/normalized/icons/catalog.json",
+      "./content/normalized/media/catalog.json",
+    ],
+    "/api/calendar/menaion-month/[month]": [
+      "./content/normalized/calendar/**/*.json",
+      "./content/normalized/icons/catalog.json",
+    ],
+    "/api/library/by-work/[work]/chapters": [
+      "./content/normalized/library/catalog.json",
+    ],
+    // Parish routes read out of content/normalized/parishes via
+    // src/lib/parishes/store.ts.
+    "/api/parishes/near": ["./content/normalized/parishes/**/*.json"],
+    "/api/parishes/[state]/[slug]": [
+      "./content/normalized/parishes/**/*.json",
+    ],
+    // Library/topic/guide routes read the icon catalog for portrait refs.
+    "/api/library/people": ["./content/normalized/icons/catalog.json"],
+    "/api/topics/[slug]": ["./content/normalized/icons/catalog.json"],
+    "/api/guides/[slug]": ["./content/normalized/icons/catalog.json"],
   },
 };
 

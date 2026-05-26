@@ -1,14 +1,10 @@
 import "server-only";
 
 import { NextRequest, NextResponse } from "next/server";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 import type { NormalizedChapterFile } from "@/lib/bible/server-store";
 import { getNormalizedChapter } from "@/lib/bible/server-store";
-
-const REGION = process.env.BIBLE_S3_REGION ?? process.env.AWS_REGION ?? "us-east-1";
-const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
-
-const s3Client = new S3Client({ region: REGION });
 
 const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
 
@@ -20,9 +16,9 @@ async function getChapterFromS3(
   const key = `bibles/${translationId}/${bookSlug}/${chapterNumber}.json`;
 
   try {
-    const result = await s3Client.send(
+    const result = await storageClient.send(
       new GetObjectCommand({
-        Bucket: BUCKET,
+        Bucket: STORAGE_BUCKET,
         Key: key,
       }),
     );

@@ -3,7 +3,8 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { NextRequest, NextResponse } from "next/server";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 import type { WorkChapter } from "@theosis/core";
 
 // Serve one library/by-work/<workId>/<order>.json file — a single
@@ -14,11 +15,6 @@ import type { WorkChapter } from "@theosis/core";
 // should consult library/catalog.json's index.byWork[workId].orders to
 // know which orders exist.
 
-const REGION = process.env.BIBLE_S3_REGION ?? process.env.AWS_REGION ?? "us-east-1";
-const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
-
-const s3Client = new S3Client({ region: REGION });
-
 const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
 
 type ByWorkFile = {
@@ -27,8 +23,8 @@ type ByWorkFile = {
 
 async function getFromS3(key: string): Promise<ByWorkFile | null> {
   try {
-    const result = await s3Client.send(
-      new GetObjectCommand({ Bucket: BUCKET, Key: key }),
+    const result = await storageClient.send(
+      new GetObjectCommand({ Bucket: STORAGE_BUCKET, Key: key }),
     );
     const body = await result.Body?.transformToString("utf-8");
     if (!body) return null;

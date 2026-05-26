@@ -3,18 +3,14 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 
 // Serve content/normalized/commentary/catalog.json. The mobile app fetches
 // this once on launch (and periodically to detect new content) — it carries
 // the deduped people/works/sources arrays plus the byVerse/byChapter index
 // the client needs to know which (book, chapter, verse) tuples actually
 // have commentary before trying to fetch them.
-
-const REGION = process.env.BIBLE_S3_REGION ?? process.env.AWS_REGION ?? "us-east-1";
-const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
-
-const s3Client = new S3Client({ region: REGION });
 
 // 5 min fresh, 1 hour stale-while-revalidate. The catalog changes whenever a
 // new corpus is ingested or normalize is re-run — short enough that clients
@@ -24,8 +20,8 @@ const CACHE_CONTROL = "public, max-age=300, stale-while-revalidate=3600";
 
 async function getFromS3(): Promise<unknown | null> {
   try {
-    const result = await s3Client.send(
-      new GetObjectCommand({ Bucket: BUCKET, Key: "commentary/catalog.json" }),
+    const result = await storageClient.send(
+      new GetObjectCommand({ Bucket: STORAGE_BUCKET, Key: "commentary/catalog.json" }),
     );
     const body = await result.Body?.transformToString("utf-8");
     if (!body) return null;

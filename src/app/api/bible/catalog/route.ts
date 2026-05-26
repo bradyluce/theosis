@@ -3,7 +3,8 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 
 // Serve content/normalized/bibles/catalog.json — the master list of every
 // available translation + every book in the canon (OT/NT/Deuterocanon).
@@ -13,11 +14,6 @@ import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 // translations are partial (NT-only, OT-only). We enrich each translation
 // entry with `availableBooks` by scanning the local normalized directory.
 // Absent means "all books available"; present means the picker should filter.
-
-const REGION = process.env.BIBLE_S3_REGION ?? process.env.AWS_REGION ?? "us-east-1";
-const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
-
-const s3Client = new S3Client({ region: REGION });
 
 const CACHE_CONTROL = "public, max-age=600, stale-while-revalidate=3600";
 
@@ -57,8 +53,8 @@ function enrichCatalog(raw: unknown): unknown {
 
 async function getFromS3(): Promise<unknown | null> {
   try {
-    const result = await s3Client.send(
-      new GetObjectCommand({ Bucket: BUCKET, Key: "bibles/catalog.json" }),
+    const result = await storageClient.send(
+      new GetObjectCommand({ Bucket: STORAGE_BUCKET, Key: "bibles/catalog.json" }),
     );
     const body = await result.Body?.transformToString("utf-8");
     if (!body) return null;

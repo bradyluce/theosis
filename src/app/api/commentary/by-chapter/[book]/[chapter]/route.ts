@@ -3,18 +3,14 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { NextRequest, NextResponse } from "next/server";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 import type { CommentaryEntry } from "@theosis/core";
 
 // Serve one per-chapter (chapter-level commentary) file. Most chapters
 // have no by-chapter file — only those where a Father wrote on the
 // chapter as a unit (Augustine's Expositions on the Psalms is the main
 // source today). 404s for the common case are expected.
-
-const REGION = process.env.BIBLE_S3_REGION ?? process.env.AWS_REGION ?? "us-east-1";
-const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
-
-const s3Client = new S3Client({ region: REGION });
 
 const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
 
@@ -26,8 +22,8 @@ type ByChapterFile = {
 
 async function getFromS3(key: string): Promise<ByChapterFile | null> {
   try {
-    const result = await s3Client.send(
-      new GetObjectCommand({ Bucket: BUCKET, Key: key }),
+    const result = await storageClient.send(
+      new GetObjectCommand({ Bucket: STORAGE_BUCKET, Key: key }),
     );
     const body = await result.Body?.transformToString("utf-8");
     if (!body) return null;

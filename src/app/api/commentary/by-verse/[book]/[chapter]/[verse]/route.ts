@@ -3,18 +3,14 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { NextRequest, NextResponse } from "next/server";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 import type { CommentaryEntry } from "@theosis/core";
 
 // Serve one per-verse commentary file. Tries S3 first (so production
 // deploys can update commentary without redeploying the bundle); falls
 // back to the committed local file if S3 is unconfigured or missing.
 // Mirrors src/app/api/bible/[translation]/[book]/[chapter]/route.ts.
-
-const REGION = process.env.BIBLE_S3_REGION ?? process.env.AWS_REGION ?? "us-east-1";
-const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
-
-const s3Client = new S3Client({ region: REGION });
 
 // 1 hour fresh, 1 day stale-while-revalidate. Content files change only when
 // the upstream bundles are reingested + renormalized; a re-deploy follows.
@@ -30,8 +26,8 @@ type ByVerseFile = {
 
 async function getFromS3(key: string): Promise<ByVerseFile | null> {
   try {
-    const result = await s3Client.send(
-      new GetObjectCommand({ Bucket: BUCKET, Key: key }),
+    const result = await storageClient.send(
+      new GetObjectCommand({ Bucket: STORAGE_BUCKET, Key: key }),
     );
     const body = await result.Body?.transformToString("utf-8");
     if (!body) return null;
