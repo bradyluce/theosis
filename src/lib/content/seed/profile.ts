@@ -83,9 +83,22 @@ export const userProfileSeed: UserProfileSnapshot = {
   preferences: {
     calendarPreference: "new-calendar",
     primaryTranslationId: "kjva",
+    textSize: "md",
+    status: null,
+    jurisdiction: null,
+    parish: null,
+    parishId: null,
     patronSaintPersonId: "john-chrysostom",
     preferredFatherIds: [],
     hiddenFatherIds: [],
+    commentaryRanking: "balanced",
+    fastingLevel: "standard",
     location: "Tyler",
   },
+  // Seed renders for non-authed dev preview — pretend onboarding is done so
+  // the route guard doesn't redirect away from the rendered seed pages.
+  // Real anonymous-first users start at "needs_onboarding" via the migrate
+  // function in useStudyState (which forces the welcome screen on first
+  // launch).
+  onboardingStatus: "complete",
 };

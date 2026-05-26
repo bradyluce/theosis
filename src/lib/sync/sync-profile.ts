@@ -12,18 +12,16 @@
 // prep migrates the store to the unified shape, this collapses.
 
 import type { UpdateProfileInput } from "@theosis/core/api/me-dtos";
+import type { ProfilePreferences } from "@/domain/user/types";
 
 import { useStudyState } from "@/lib/user/use-study-state";
 import { getMeApi } from "./client";
 
-export type LegacyProfilePatch = {
-  calendarPreference?: "new-calendar" | "old-calendar";
-  primaryTranslationId?: string;
-  patronSaintPersonId?: string;
-  preferredFatherIds?: string[];
-  hiddenFatherIds?: string[];
-  location?: string;
-};
+// LegacyProfilePatch = ProfilePreferences partial. The local web store uses
+// the same field names as the unified server schema with one exception:
+// `patronSaintPersonId` here = `patronSaintSlug` on the server. Everything
+// else passes through unchanged.
+export type LegacyProfilePatch = Partial<ProfilePreferences>;
 
 export async function syncProfilePatch(
   patch: LegacyProfilePatch,
@@ -50,6 +48,16 @@ export async function syncProfilePatch(
       body.hiddenFatherIds = patch.hiddenFatherIds;
     if (patch.location !== undefined)
       body.location = patch.location || null;
+    if (patch.status !== undefined) body.status = patch.status;
+    if (patch.jurisdiction !== undefined)
+      body.jurisdiction = patch.jurisdiction;
+    if (patch.parish !== undefined) body.parish = patch.parish;
+    if (patch.parishId !== undefined) body.parishId = patch.parishId;
+    if (patch.textSize !== undefined) body.textSize = patch.textSize;
+    if (patch.fastingLevel !== undefined)
+      body.fastingLevel = patch.fastingLevel;
+    if (patch.commentaryRanking !== undefined)
+      body.commentaryRanking = patch.commentaryRanking;
     await api.patchProfile(body);
   } catch (err) {
     // Swallow — server-side will be reconciled on next sign-in hydrate.

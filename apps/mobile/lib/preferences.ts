@@ -93,6 +93,10 @@ export const DEFAULT_DAILY_CARD_ORDER: DailyCardKey[] = [
   "hymns",
 ];
 
+// Onboarding status — drives the first-launch route redirect on mobile.
+// Mirrors web's OnboardingStatus type from src/domain/user/types.ts.
+export type OnboardingStatus = "anonymous" | "needs_onboarding" | "complete";
+
 export type AppPreferences = {
   lastRead?: LastReadLocation;
   recentSearches?: string[];
@@ -108,6 +112,10 @@ export type AppPreferences = {
   // any key missing here (e.g. a key added in a later release).
   dailyCardOrder?: DailyCardKey[];
   highlights?: VerseHighlight[];
+  // Onboarding state. Absent = first launch (treat as needs_onboarding).
+  // Flipped to "complete" when the user finishes the onboarding flow or
+  // chose "Continue as guest" at the last step.
+  onboardingStatus?: OnboardingStatus;
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -386,6 +394,20 @@ export async function getDailyCardOrder(): Promise<DailyCardKey[]> {
 export async function setDailyCardOrder(order: DailyCardKey[]): Promise<void> {
   const prefs = await loadPrefs();
   await savePrefs({ ...prefs, dailyCardOrder: order });
+}
+
+// --- Onboarding status -----------------------------------------------------
+
+export async function getOnboardingStatus(): Promise<OnboardingStatus> {
+  const prefs = await loadPrefs();
+  return prefs.onboardingStatus ?? "needs_onboarding";
+}
+
+export async function setOnboardingStatus(
+  status: OnboardingStatus,
+): Promise<void> {
+  const prefs = await loadPrefs();
+  await savePrefs({ ...prefs, onboardingStatus: status });
 }
 
 function computeStreak(daysIsoSorted: string[]): number {

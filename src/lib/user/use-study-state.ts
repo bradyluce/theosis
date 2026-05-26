@@ -14,6 +14,7 @@ import type {
   UserProfileSnapshot,
 } from "@/domain/user/types";
 import type { PendingWrite } from "@theosis/core/sync";
+import type { OnboardingStatus, ProfilePreferences } from "@/domain/user/types";
 import { userProfileSeed } from "@/lib/content/seed/profile";
 
 // Auth slice — not part of UserProfileSnapshot because it's per-device
@@ -61,6 +62,16 @@ type StudyState = UserProfileSnapshot & {
   toggleFavoritePerson: (personId: string) => void;
   setPatronSaint: (personId: string) => void;
   setLocation: (location: string) => void;
+  // Generic preference setter — typed by ProfilePreferences key. Each call
+  // updates the local store and emits a profile.patch via syncProfilePatch.
+  setPreference: <K extends keyof ProfilePreferences>(
+    key: K,
+    value: ProfilePreferences[K],
+  ) => void;
+  // Commits the onboarding answer. Flips local + (when authed) server-side
+  // status. After this returns, the route guard stops redirecting to
+  // /onboarding/welcome.
+  setOnboardingStatus: (status: OnboardingStatus) => void;
   // Reading list actions
   setReadingListStatus: (workId: string, status: ReadingListStatus) => void;
   removeFromReadingList: (workId: string) => void;
@@ -289,6 +300,24 @@ export const useStudyState = create<StudyState>()(
           preferences: { ...state.preferences, location: trimmed },
         }));
       },
+      setPreference: (key, value) => {
+        // Per-key sync — map the local key name into the corresponding
+        // server field. The unified server profile uses the same names
+        // for everything except patronSaintPersonId → patronSaintSlug
+        // (handled inside syncProfilePatch).
+        emitProfilePatch({ [key]: value } as Parameters<
+          typeof emitProfilePatch
+        >[0]);
+        set((state) => ({
+          preferences: { ...state.preferences, [key]: value },
+        }));
+      },
+      setOnboardingStatus: (status) => {
+        set({ onboardingStatus: status });
+        // No server-side mirror for this field yet; the local state is
+        // canonical until Phase 4 plumbs users.onboarding_status through
+        // a dedicated /api/me/onboarding-status endpoint.
+      },
       setReadingListStatus: (workId, status) =>
         set((state) => {
           const existing = (state.readingList ?? []).find(
@@ -420,13 +449,33 @@ export const useStudyState = create<StudyState>()(
           ...prefs,
           preferredFatherIds: prefs.preferredFatherIds ?? [],
           hiddenFatherIds: prefs.hiddenFatherIds ?? [],
+          // v3 new preference slots — default any missing field.
+          textSize: prefs.textSize ?? "md",
+          status: prefs.status ?? null,
+          jurisdiction: prefs.jurisdiction ?? null,
+          parish: prefs.parish ?? null,
+          parishId: prefs.parishId ?? null,
+          commentaryRanking: prefs.commentaryRanking ?? "balanced",
+          fastingLevel: prefs.fastingLevel ?? "standard",
         };
         // v1 -> v2: readingList field is now required.
         if (!state.readingList) state.readingList = [];
         // v2 -> v3: pendingWrites slot for offline sync queue. The auth
-        // slice is per-device transient state — not migrated.
+        // slice is per-device transient state — not migrated. Also
+        // backfill onboardingStatus for users who pre-date the field.
+        // Returning users with existing local data start "complete" so
+        // we don't force them through onboarding; truly fresh devices
+        // get "needs_onboarding" from the initial state.
         if (version < 3 && !state.pendingWrites) {
           state.pendingWrites = [];
+        }
+        if (state.onboardingStatus === undefined) {
+          const hasAnyData =
+            (state.savedVerses?.length ?? 0) > 0 ||
+            (state.highlights?.length ?? 0) > 0 ||
+            (state.notes?.length ?? 0) > 0 ||
+            !!prefs.patronSaintPersonId;
+          state.onboardingStatus = hasAnyData ? "complete" : "needs_onboarding";
         }
         return state as UserProfileSnapshot;
       },

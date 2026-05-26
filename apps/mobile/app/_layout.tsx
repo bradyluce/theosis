@@ -3,7 +3,7 @@ import { ThemeProvider } from '@react-navigation/native';
 import { QueryClientProvider } from '@tanstack/react-query';
 import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
+import { Stack, router } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
@@ -13,6 +13,7 @@ import 'react-native-reanimated';
 
 import { navigationTheme } from '@/constants/theosis-theme';
 import { setActiveTokenGetter } from '@/lib/auth';
+import { getOnboardingStatus } from '@/lib/preferences';
 import { queryClient } from '@/lib/query-client';
 import { hydrateAndClaim } from '@/lib/sync/hydrate';
 import { drainQueue } from '@/lib/sync/queue';
@@ -109,6 +110,7 @@ export default function RootLayout() {
   return (
     <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
     <ClerkTokenBridge />
+    <OnboardingRedirect />
     <GestureHandlerRootView style={{ flex: 1 }}>
     <QueryClientProvider client={queryClient}>
       <ThemeProvider value={navigationTheme}>
@@ -139,8 +141,17 @@ export default function RootLayout() {
             options={{ presentation: "modal", headerShown: true }}
           />
           <Stack.Screen name="settings" />
-          {/* Temporary Phase 1 verification screen. Replaced by the proper
-              onboarding flow in Phase 3. */}
+          {/* Phase 3 onboarding flow. Each step is its own file under
+              app/onboarding/; the index screen redirects to the user's
+              current step. Header hidden — the OnboardingShell renders
+              its own progress dots. */}
+          <Stack.Screen
+            name="onboarding"
+            options={{ headerShown: false, gestureEnabled: false }}
+          />
+          {/* Temporary Phase 1 verification screen. Reachable from
+              Settings → Account; also used as the sign-in screen in
+              Phase 3 onboarding step 10. */}
           <Stack.Screen name="auth-debug" options={{ headerShown: true }} />
           {/* Parish locator. parishes is the list/search entry, reachable
               from the You tab. parishes/[state]/[slug] is the per-parish
@@ -177,5 +188,24 @@ function ClerkTokenBridge() {
       setActiveTokenGetter(null);
     }
   }, [getToken, isSignedIn, userId]);
+  return null;
+}
+
+// Onboarding guard. On cold start, reads the persisted onboardingStatus
+// and pushes to /onboarding if the user hasn't completed it. Runs once
+// after fonts load — by that point Expo Router has a navigator.
+function OnboardingRedirect() {
+  useEffect(() => {
+    let canceled = false;
+    void getOnboardingStatus().then((status) => {
+      if (canceled) return;
+      if (status === "needs_onboarding" || status === "anonymous") {
+        router.replace("/onboarding");
+      }
+    });
+    return () => {
+      canceled = true;
+    };
+  }, []);
   return null;
 }
