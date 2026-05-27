@@ -75,27 +75,9 @@ const STATUS_OPTIONS: {
   },
 ];
 
-const COMMENTARY_OPTIONS: {
-  value: NonNullable<ProfilePrefs["commentaryRanking"]>;
-  label: string;
-  description: string;
-}[] = [
-  {
-    value: "balanced",
-    label: "Balanced",
-    description: "Mix Fathers across eras; weight by relevance.",
-  },
-  {
-    value: "ancient-first",
-    label: "Ancient first",
-    description: "Lead with pre-Nicene and Cappadocian Fathers.",
-  },
-  {
-    value: "modern-first",
-    label: "Modern first",
-    description: "Lead with 19th–20th century commentary.",
-  },
-];
+// The legacy 3-radio ranking was retired in favor of a per-Father
+// picker at /commentary-fathers. Settings now exposes that picker as
+// a tile row in the Practice section instead.
 
 // ---------------------------------------------------------------------------
 // Screen
@@ -253,35 +235,61 @@ export default function SettingsScreen() {
 
             <PatronField patronSlug={prefs.patronSaintSlug} />
 
-            <FieldGroup label="Commentary ranking">
-              {COMMENTARY_OPTIONS.map((opt) => {
-                const selected =
-                  (prefs.commentaryRanking ?? "balanced") === opt.value;
-                return (
-                  <ChoiceTile
-                    key={opt.value}
-                    label={opt.label}
-                    description={opt.description}
-                    selected={selected}
-                    onPress={() => update({ commentaryRanking: opt.value })}
-                  />
-                );
-              })}
+            <FieldGroup label="Commentary fathers">
+              <Pressable
+                onPress={() => router.push("/commentary-fathers")}
+                style={({ pressed }) => [
+                  styles.tile,
+                  pressed && { backgroundColor: colors.surfaceStrong },
+                ]}
+                accessibilityRole="button"
+                accessibilityLabel="Customize commentary fathers"
+              >
+                <View style={styles.tileMain}>
+                  <Text style={styles.tileLabel}>
+                    Customize who you hear from
+                  </Text>
+                  <Text style={styles.tileDescription} numberOfLines={2}>
+                    Pick which Fathers&apos; commentary appears on each verse,
+                    in what order. Quick filters by era or region.
+                  </Text>
+                </View>
+                <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+              </Pressable>
             </FieldGroup>
 
             <Pressable
-              onPress={() => router.push("/prayer")}
+              onPress={() => router.push("/prayer-builder")}
               style={({ pressed }) => [
                 styles.linkRow,
                 pressed && { backgroundColor: colors.surfaceStrong },
               ]}
               accessibilityRole="button"
-              accessibilityLabel="Open prayer rule"
+              accessibilityLabel="Build your prayer rule"
             >
               <View style={styles.linkRowMain}>
                 <Text style={styles.linkRowLabel}>Prayer rule</Text>
                 <Text style={styles.linkRowDescription}>
-                  Morning, evening, and the daily canons.
+                  Browse the prayer corpus, build your morning + evening
+                  rule, save as PDF to print.
+                </Text>
+              </View>
+              <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+            </Pressable>
+
+            <Pressable
+              onPress={() => router.push("/diptych")}
+              style={({ pressed }) => [
+                styles.linkRow,
+                pressed && { backgroundColor: colors.surfaceStrong },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Open diptych"
+            >
+              <View style={styles.linkRowMain}>
+                <Text style={styles.linkRowLabel}>Diptych</Text>
+                <Text style={styles.linkRowDescription}>
+                  Names you hold up in prayer — living and departed.
                 </Text>
               </View>
               <Feather name="chevron-right" size={16} color={colors.inkSoft} />

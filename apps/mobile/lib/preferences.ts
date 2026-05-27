@@ -66,13 +66,63 @@ export type ProfilePrefs = {
   parish?: string;
   patronSaintSlug?: string;
   calendarSystem?: "new" | "julian";
+  // Legacy 3-radio commentary ranking. Still respected when the user
+  // hasn't customized the new per-Father picker, but the picker's
+  // commentaryFathers config wins when set.
   commentaryRanking?: "balanced" | "ancient-first" | "modern-first";
+  // Per-Father commentary configuration — populated by /commentary-fathers
+  // and read by the verse commentary modal. `orderedSlugs` is the
+  // explicit display order (highest first); `hiddenSlugs` are Fathers
+  // the user has elected to hide entirely. Both default to empty —
+  // meaning "use the catalog's natural rank with everyone visible."
+  commentaryFathers?: {
+    orderedSlugs?: string[];
+    hiddenSlugs?: string[];
+    // Stashed quick-filter (e.g. "eastern", "pre-nicene") so reopening
+    // the picker remembers the user's last view. Doesn't affect the
+    // commentary modal directly; that always reads the explicit
+    // orderedSlugs / hiddenSlugs.
+    quickFilter?: string;
+  };
   // Phase 3 additions — mirror the unified ProfilePreferences on web.
   jurisdiction?:
     | "oca" | "goa" | "ant" | "roc" | "rom" | "ser"
     | "ukr" | "mos" | "bgr" | "alb" | "cpr" | "geo" | "other";
   fastingLevel?: "strict" | "standard" | "relaxed";
   primaryTranslationId?: string;
+};
+
+// Saved commentary entry. The user starred a specific entry on a
+// specific verse — keyed by both so highlighting "Augustine on Matt
+// 5:3" doesn't collide with "Augustine on John 1:1". `id` is the
+// composite "<verseKey>::<entryId>" used for storage uniqueness.
+export type SavedCommentary = {
+  id: string;
+  verseKey: string;      // "matthew.5.3" — translation-agnostic
+  entryId: string;       // original commentary entry id
+  personSlug: string;    // navigation key for /people/<slug>
+  personName: string;    // pre-resolved for the activity feed
+  workTitle?: string;
+  excerpt: string;       // first ~120 chars for preview
+  savedAt: string;
+};
+
+// Diptych — a personal list of names the user holds up in prayer.
+// Two parts: "living" (for whom we ask the Lord's mercy) and
+// "departed" (for whom we ask repose). The names render in the
+// prayer rule when included via "intercession-living" / "-departed"
+// dynamic items, and stand on their own as a /diptych page.
+export type DiptychEntry = {
+  id: string;            // local-only uuid-like; never sent to server today
+  name: string;
+  relation?: string;     // free text: "godson", "spiritual father", etc.
+  notes?: string;        // optional one-liner the user wants to remember
+  addedAt: string;
+};
+
+export type Diptych = {
+  living: DiptychEntry[];
+  departed: DiptychEntry[];
 };
 
 export type PrayerRule = {
@@ -122,6 +172,12 @@ export type AppPreferences = {
   // Flipped to "complete" when the user finishes the onboarding flow or
   // chose "Continue as guest" at the last step.
   onboardingStatus?: OnboardingStatus;
+  // Per-entry commentary stars. Surfaced in the activity feed on the
+  // You tab and in saved-commentary filters.
+  savedCommentary?: SavedCommentary[];
+  // Personal diptych — names the user prays for. Two-column shape so
+  // living and departed never blur.
+  diptych?: Diptych;
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -291,6 +347,131 @@ export async function setVerseHighlight(
 
 export function highlightKey(book: string, chapter: number, verse: number) {
   return `${book}.${chapter}.${verse}`;
+}
+
+// --- Saved commentary ------------------------------------------------------
+
+export async function getSavedCommentary(): Promise<SavedCommentary[]> {
+  const prefs = await loadPrefs();
+  return prefs.savedCommentary ?? [];
+}
+
+export function savedCommentaryId(verseKey: string, entryId: string): string {
+  return `${verseKey}::${entryId}`;
+}
+
+export async function isCommentarySaved(
+  verseKey: string,
+  entryId: string,
+): Promise<boolean> {
+  const id = savedCommentaryId(verseKey, entryId);
+  const prefs = await loadPrefs();
+  return (prefs.savedCommentary ?? []).some((c) => c.id === id);
+}
+
+export async function addSavedCommentary(
+  entry: Omit<SavedCommentary, "id" | "savedAt"> & { savedAt?: string },
+): Promise<SavedCommentary[]> {
+  const id = savedCommentaryId(entry.verseKey, entry.entryId);
+  const prefs = await loadPrefs();
+  const existing = prefs.savedCommentary ?? [];
+  if (existing.some((c) => c.id === id)) return existing;
+  const next: SavedCommentary = {
+    ...entry,
+    id,
+    savedAt: entry.savedAt ?? new Date().toISOString(),
+  };
+  const list = [next, ...existing];
+  await savePrefs({ ...prefs, savedCommentary: list });
+  // Saved commentary doesn't have a dedicated /api/me endpoint yet —
+  // when one lands, enqueueWrite here. For now it's local-only.
+  return list;
+}
+
+export async function removeSavedCommentary(
+  verseKey: string,
+  entryId: string,
+): Promise<SavedCommentary[]> {
+  const id = savedCommentaryId(verseKey, entryId);
+  const prefs = await loadPrefs();
+  const list = (prefs.savedCommentary ?? []).filter((c) => c.id !== id);
+  await savePrefs({ ...prefs, savedCommentary: list });
+  return list;
+}
+
+// --- Diptych ---------------------------------------------------------------
+
+const EMPTY_DIPTYCH: Diptych = { living: [], departed: [] };
+
+export async function getDiptych(): Promise<Diptych> {
+  const prefs = await loadPrefs();
+  const d = prefs.diptych;
+  return {
+    living: d?.living ?? [],
+    departed: d?.departed ?? [],
+  };
+}
+
+export async function addDiptychEntry(
+  category: "living" | "departed",
+  entry: Omit<DiptychEntry, "id" | "addedAt"> & { id?: string; addedAt?: string },
+): Promise<Diptych> {
+  const prefs = await loadPrefs();
+  const current: Diptych = prefs.diptych ?? EMPTY_DIPTYCH;
+  const id = entry.id ?? `${category}-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+  const next: DiptychEntry = {
+    ...entry,
+    id,
+    addedAt: entry.addedAt ?? new Date().toISOString(),
+  };
+  const updated: Diptych = {
+    living: category === "living" ? [next, ...current.living] : current.living,
+    departed:
+      category === "departed" ? [next, ...current.departed] : current.departed,
+  };
+  await savePrefs({ ...prefs, diptych: updated });
+  return updated;
+}
+
+export async function updateDiptychEntry(
+  category: "living" | "departed",
+  id: string,
+  patch: Partial<Omit<DiptychEntry, "id" | "addedAt">>,
+): Promise<Diptych> {
+  const prefs = await loadPrefs();
+  const current: Diptych = prefs.diptych ?? EMPTY_DIPTYCH;
+  const updated: Diptych = {
+    living:
+      category === "living"
+        ? current.living.map((e) => (e.id === id ? { ...e, ...patch } : e))
+        : current.living,
+    departed:
+      category === "departed"
+        ? current.departed.map((e) => (e.id === id ? { ...e, ...patch } : e))
+        : current.departed,
+  };
+  await savePrefs({ ...prefs, diptych: updated });
+  return updated;
+}
+
+export async function removeDiptychEntry(
+  category: "living" | "departed",
+  id: string,
+): Promise<Diptych> {
+  const prefs = await loadPrefs();
+  const current: Diptych = prefs.diptych ?? EMPTY_DIPTYCH;
+  const updated: Diptych = {
+    living:
+      category === "living"
+        ? current.living.filter((e) => e.id !== id)
+        : current.living,
+    departed:
+      category === "departed"
+        ? current.departed.filter((e) => e.id !== id)
+        : current.departed,
+  };
+  await savePrefs({ ...prefs, diptych: updated });
+  return updated;
 }
 
 export async function getReadingList(): Promise<ReadingListItem[]> {

@@ -1,7 +1,4 @@
 import Feather from "@expo/vector-icons/Feather";
-import DateTimePicker, {
-  type DateTimePickerEvent,
-} from "@react-native-community/datetimepicker";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image } from "expo-image";
@@ -9,7 +6,6 @@ import { router } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
-  Platform,
   Pressable,
   RefreshControl,
   ScrollView,
@@ -34,7 +30,6 @@ import {
   Wordmark,
 } from "@/components/theosis/primitives";
 import { ProfileDrawer } from "@/components/theosis/profile-drawer";
-import { WeekStrip } from "@/components/theosis/week-strip";
 import {
   colors,
   elevation,
@@ -84,10 +79,16 @@ function readingPriority(label: string): number {
   return 2;
 }
 
-// Daily home — the icon corner. Masthead at top (wordmark / date / halo
-// avatar), a single hero card carrying the day's mood (feast or verse),
-// editorial section blocks below. Every card is reorderable via
-// long-press drag.
+// Daily home — the icon corner. Masthead at top (wordmark / halo avatar),
+// a single hero card carrying the day's mood (feast or verse), editorial
+// section blocks below. Every card is reorderable via long-press drag,
+// with a visible hint at the bottom of the list so the affordance is
+// discoverable.
+//
+// Date is always *today*. The date-picker / week-strip / prev-next was
+// removed because it was confusing — the Daily tab is about *this day's*
+// liturgical life; if you want a different day, the calendar lives
+// elsewhere.
 
 function readingHref(
   translation: string,
@@ -107,8 +108,7 @@ function readingHref(
 }
 
 // Format the date as a magazine-style masthead label: "Sunday · May 17"
-// — weekday and short month/day only. Year reserved for the picker
-// modal so it doesn't crowd the bar.
+// — weekday and short month/day only.
 function formatMastheadDate(isoDate: string): string {
   const date = new Date(isoDate);
   const weekday = new Intl.DateTimeFormat("en-US", {
@@ -123,24 +123,6 @@ function formatMastheadDate(isoDate: string): string {
   return `${weekday} · ${monthDay}`;
 }
 
-// Local-timezone "today" — matches what a human means by today when
-// clearing the picker. Used as the today marker in the week strip and
-// the back-to-today reset.
-function todayIso(): string {
-  const now = new Date();
-  const y = now.getFullYear();
-  const m = String(now.getMonth() + 1).padStart(2, "0");
-  const d = String(now.getDate()).padStart(2, "0");
-  return `${y}-${m}-${d}`;
-}
-
-function dateToIso(date: Date): string {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, "0");
-  const d = String(date.getDate()).padStart(2, "0");
-  return `${y}-${m}-${d}`;
-}
-
 export default function DailyScreen() {
   const api = getApi();
   const insets = useSafeAreaInsets();
@@ -148,12 +130,9 @@ export default function DailyScreen() {
   // (insets.bottom on notched devices, spacing.md elsewhere) + shadow
   // bleed. Plus the cardWrap.marginBottom of the last DraggableFlatList
   // item (spacing.lg = 16). Add a big breathing buffer so the hymns
-  // card is comfortably above the capsule, never touching it. Without
-  // enough headroom here the bottom card sits below the floating nav.
+  // card is comfortably above the capsule, never touching it.
   const listBottomPadding =
     spacing["6xl"] + (insets.bottom > 0 ? insets.bottom : spacing.md) + spacing["3xl"];
-  const [selectedIso, setSelectedIso] = useState<string | undefined>(undefined);
-  const [pickerOpen, setPickerOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [cardOrder, setCardOrderState] = useState<DailyCardKey[]>(
     DEFAULT_DAILY_CARD_ORDER,
@@ -161,12 +140,11 @@ export default function DailyScreen() {
   const [profile, setProfile] = useState<{ displayName?: string }>({});
   const [streak, setStreak] = useState(0);
   const [savedCount, setSavedCount] = useState(0);
-
-  const isToday = !selectedIso || selectedIso === todayIso();
+  const [reorderHinted, setReorderHinted] = useState(false);
 
   const { data, error, isLoading, refetch, isFetching } = useQuery({
-    queryKey: ["daily", selectedIso ?? "today"],
-    queryFn: () => api.fetchDaily(selectedIso),
+    queryKey: ["daily", "today"],
+    queryFn: () => api.fetchDaily(),
     staleTime: 5 * 60 * 1000,
   });
 
@@ -192,46 +170,8 @@ export default function DailyScreen() {
   const onReorder = useCallback((next: DailyCardKey[]) => {
     setCardOrderState(next);
     setDailyCardOrder(next);
+    setReorderHinted(true);
   }, []);
-
-  const onPickDate = (event: DateTimePickerEvent, picked?: Date) => {
-    // Android dismisses the picker on its own and fires "dismissed" /
-    // "set" events; iOS keeps the inline picker mounted until we close.
-    if (Platform.OS !== "ios") setPickerOpen(false);
-    if (event.type === "set" && picked) {
-      setSelectedIso(dateToIso(picked));
-    }
-  };
-
-  const resetToToday = () => {
-    setSelectedIso(undefined);
-    setPickerOpen(false);
-  };
-
-  // Shift the selected date by ±1 day. When the result lands on today,
-  // clear the override so the "back to today" pill hides and the page
-  // returns to its natural state.
-  const shiftDay = useCallback(
-    (delta: number) => {
-      const base = selectedIso ?? todayIso();
-      const d = new Date(`${base}T00:00:00Z`);
-      d.setUTCDate(d.getUTCDate() + delta);
-      const y = d.getUTCFullYear();
-      const m = String(d.getUTCMonth() + 1).padStart(2, "0");
-      const day = String(d.getUTCDate()).padStart(2, "0");
-      const nextIso = `${y}-${m}-${day}`;
-      setSelectedIso(nextIso === todayIso() ? undefined : nextIso);
-    },
-    [selectedIso],
-  );
-
-  const jumpToIso = useCallback((iso: string) => {
-    setSelectedIso(iso === todayIso() ? undefined : iso);
-  }, []);
-
-  // The ISO the strip + display should reflect: explicit selection wins,
-  // otherwise the resolved API date (which is today on first load).
-  const activeIso = selectedIso ?? (data ? data.daily.isoDate : todayIso());
 
   const hasFeast = Boolean(data?.daily.feastLabel || data?.primaryIcon);
 
@@ -305,97 +245,21 @@ export default function DailyScreen() {
           </Pressable>
         </View>
 
-        {/* Date row — prev day, tappable date label (opens full calendar
-            picker), next day. Below it a horizontal week strip for
-            one-tap day jumping. */}
+        {/* Date label — read-only, today. The chevrons / picker / week
+            strip are gone; this is purely a magazine masthead now. */}
         <View style={styles.dateRow}>
-          <Pressable
-            onPress={() => shiftDay(-1)}
-            hitSlop={10}
-            style={({ pressed }) => [
-              styles.dateArrow,
-              pressed && { opacity: 0.6 },
-            ]}
-            accessibilityRole="button"
-            accessibilityLabel="Previous day"
-          >
-            <Feather name="chevron-left" size={16} color={colors.inkMuted} />
-          </Pressable>
-          <Pressable
-            onPress={() => setPickerOpen((open) => !open)}
-            style={({ pressed }) => [
-              styles.dateLineWrap,
-              pressed && { opacity: 0.7 },
-            ]}
-            accessibilityRole="button"
-            accessibilityLabel="Open calendar picker"
-            hitSlop={6}
-          >
+          <View style={styles.dateLineWrap}>
             <Text style={styles.dateLineLabel}>
               {data ? formatMastheadDate(data.daily.isoDate) : "Today"}
             </Text>
-            <Feather
-              name={pickerOpen ? "chevron-up" : "chevron-down"}
-              size={12}
-              color={colors.accent}
-              style={{ marginLeft: spacing.xs }}
-            />
-          </Pressable>
-          <Pressable
-            onPress={() => shiftDay(1)}
-            hitSlop={10}
-            style={({ pressed }) => [
-              styles.dateArrow,
-              pressed && { opacity: 0.6 },
-            ]}
-            accessibilityRole="button"
-            accessibilityLabel="Next day"
-          >
-            <Feather name="chevron-right" size={16} color={colors.inkMuted} />
-          </Pressable>
+          </View>
         </View>
-
-        <WeekStrip
-          selectedIso={activeIso}
-          todayIso={todayIso()}
-          onSelect={jumpToIso}
-        />
 
         {data ? (
           <View style={styles.dayStatusRow}>
             <FastChip
               isoDate={data.daily.isoDate}
               providedLabel={data.daily.fastLabel}
-            />
-          </View>
-        ) : null}
-
-        {!isToday ? (
-          <Pressable
-            onPress={resetToToday}
-            style={({ pressed }) => [
-              styles.todayResetButton,
-              pressed && { opacity: 0.6 },
-            ]}
-            accessibilityRole="button"
-          >
-            <Feather name="arrow-left" size={14} color={colors.accent} />
-            <Text style={styles.todayResetText}>Back to today</Text>
-          </Pressable>
-        ) : null}
-
-        {pickerOpen && data ? (
-          <View style={styles.pickerWrap}>
-            <DateTimePicker
-              value={new Date(data.daily.isoDate)}
-              mode="date"
-              display={Platform.OS === "ios" ? "inline" : "default"}
-              onChange={onPickDate}
-              themeVariant="dark"
-              textColor={colors.ink}
-              accentColor={colors.accent}
-              minimumDate={new Date("1900-01-01")}
-              maximumDate={new Date("2099-12-31")}
             />
           </View>
         ) : null}
@@ -443,11 +307,24 @@ export default function DailyScreen() {
               renderItem={renderCard}
               containerStyle={{ flex: 1 }}
               contentContainerStyle={styles.listContent}
-              // Belt-and-suspenders: an explicit footer view guarantees
-              // the bottom clearance even on libraries that don't apply
-              // contentContainerStyle.paddingBottom inside virtualization.
+              // Footer: reorder hint + bottom clearance for the floating
+              // tab bar. The hint disappears once the user reorders.
               ListFooterComponent={
-                <View style={{ height: listBottomPadding }} />
+                <View>
+                  {!reorderHinted ? (
+                    <View style={styles.reorderHint}>
+                      <Feather
+                        name="move"
+                        size={12}
+                        color={colors.accent}
+                      />
+                      <Text style={styles.reorderHintText}>
+                        Long-press any card to reorder
+                      </Text>
+                    </View>
+                  ) : null}
+                  <View style={{ height: listBottomPadding }} />
+                </View>
               }
               showsVerticalScrollIndicator={false}
               refreshControl={
@@ -478,8 +355,8 @@ export default function DailyScreen() {
 
 type DailyData = DailyResponse;
 
-// Reusable fast-status chip — used in the DayStatus row under the week
-// strip and inside the FeastHero. Renders "Apostles' Fast" / "Friday
+// Reusable fast-status chip — used in the DayStatus row under the
+// masthead and inside the FeastHero. Renders "Apostles' Fast" / "Friday
 // Fast" / "Fast Free" with a moon glyph (or coffee-cup for fast-free).
 function FastChip({
   isoDate,
@@ -541,21 +418,6 @@ function findPrimarySaint(
 // FeastHero — the most considered card in the app. The icon is the eye
 // magnet; the title is set in big italic serif; the feast label sits
 // above in oxblood small caps.
-//
-// Two modes:
-//   • Saint day  — the day commemorates a saint whose name appears in
-//     the title (works whether or not feastLabel is set). The card is
-//     tappable; CTA "Read the life →" routes to the library entry.
-//   • Feast day  — Pentecost, Sunday of the Fathers, Day of the Holy
-//     Spirit, etc. The title names an event, not a person. Card stays
-//     informational with no CTA; co-commemorated saints are still
-//     tappable in the "Also commemorated" section below.
-//
-// Strict rule: we ONLY link when the saint's own name appears in the
-// title. No fallback to `saints[0]` — that's how we used to land on
-// Symeon the Stylite when the user tapped "Read the life" on Sunday of
-// the Fathers (May 24 is also Symeon's Menaion day, so he's in the
-// co-commemoration array). Title-match is the single source of truth.
 function FeastHero({ data }: { data: DailyData }) {
   const linkedSaint = findPrimarySaint(data.daily.title, data.saints);
 
@@ -897,29 +759,16 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.md,
     gap: spacing.md,
   },
-  // "‹  SUNDAY · MAY 17 ▾  ›" composition. The chevrons jump a day at a
-  // time; the centered label opens the full calendar picker.
+  // Date pill — read-only "SUNDAY · MAY 17", centered. No chevrons or
+  // calendar overlay; Daily is always today.
   dateRow: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    gap: spacing.md,
     paddingHorizontal: spacing.xl,
     paddingVertical: spacing.sm,
   },
-  dateArrow: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    alignItems: "center",
-    justifyContent: "center",
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.lineGilt,
-    backgroundColor: "rgba(212, 168, 87, 0.04)",
-  },
   dateLineWrap: {
-    flexDirection: "row",
-    alignItems: "center",
     paddingHorizontal: spacing.md,
     paddingVertical: 6,
     borderRadius: radii.pill,
@@ -941,34 +790,6 @@ const styles = StyleSheet.create({
     color: colors.accent,
   },
 
-  todayResetButton: {
-    alignSelf: "center",
-    paddingVertical: spacing.xs,
-    paddingHorizontal: spacing.md,
-    marginBottom: spacing.sm,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: spacing.xs,
-  },
-  todayResetText: {
-    fontSize: 12,
-    color: colors.accent,
-    fontWeight: "600",
-    letterSpacing: 1.2,
-    textTransform: "uppercase",
-  },
-
-  pickerWrap: {
-    marginHorizontal: spacing.xl,
-    marginBottom: spacing.md,
-    borderRadius: radii.large,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.md,
-  },
-
   loading: { paddingVertical: spacing["3xl"], alignItems: "center" },
   errorWrap: {
     paddingHorizontal: spacing.xl,
@@ -983,6 +804,7 @@ const styles = StyleSheet.create({
 
   listContent: {
     paddingHorizontal: spacing.xl,
+    paddingTop: spacing.md,
     // paddingBottom is set inline by DailyScreen using safe-area insets +
     // the floating tab bar height so the last card (hymns) clears the
     // capsule on every device.
@@ -995,6 +817,24 @@ const styles = StyleSheet.create({
     shadowRadius: 24,
     shadowOffset: { width: 0, height: 8 },
     elevation: 20,
+  },
+
+  // Reorder hint — appears below the last card on first visit and once
+  // the user reorders we hide it. Subtle gilt-tinted pill row.
+  reorderHint: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.xs,
+    paddingVertical: spacing.md,
+    marginTop: spacing.sm,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: colors.lineGilt,
+  },
+  reorderHintText: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 12,
+    color: colors.inkSoft,
   },
 
   // Feast hero
@@ -1035,7 +875,7 @@ const styles = StyleSheet.create({
     color: colors.inkMuted,
   },
 
-  // DayStatus row — appears under the week strip; always shows today's
+  // DayStatus row — appears under the date pill; always shows today's
   // fast status so the user knows even on plain days.
   dayStatusRow: {
     flexDirection: "row",

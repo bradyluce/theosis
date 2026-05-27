@@ -1,8 +1,8 @@
 import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
-import { router, useLocalSearchParams } from "expo-router";
-import { useMemo, useState } from "react";
+import { router, useFocusEffect, useLocalSearchParams } from "expo-router";
+import { useCallback, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -17,6 +17,13 @@ import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
 import { Pill } from "@/components/theosis/pill";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import {
+  addSavedCommentary,
+  getProfilePrefs,
+  getSavedCommentary,
+  removeSavedCommentary,
+  savedCommentaryId,
+} from "@/lib/preferences";
 
 // Verse commentary modal. Presented modally from the Bible reader when the
 // user taps a verse with the gold dot. Fetches the per-verse file and the
@@ -106,6 +113,43 @@ export default function CommentaryModal() {
     return { peopleById, worksById };
   }, [catalogQuery.data]);
 
+  // User's commentary-fathers config — hides certain Fathers entirely
+  // and reorders the rest. Loaded on focus so changes from the picker
+  // route are reflected when the user comes back.
+  const [orderedSlugs, setOrderedSlugs] = useState<string[]>([]);
+  const [hiddenSlugs, setHiddenSlugs] = useState<string[]>([]);
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getProfilePrefs().then((p) => {
+        if (canceled) return;
+        setOrderedSlugs(p.commentaryFathers?.orderedSlugs ?? []);
+        setHiddenSlugs(p.commentaryFathers?.hiddenSlugs ?? []);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
+
+  // Set of slugs the user has saved on this verse. Tracked separately
+  // from disk so the star-toggle UI updates without refetching prefs.
+  const verseKey = `${bookSlug}.${chapterNumber}.${verseNumber}`;
+  const [savedEntryIds, setSavedEntryIds] = useState<Set<string>>(new Set());
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getSavedCommentary().then((list) => {
+        if (canceled) return;
+        const onThisVerse = list.filter((c) => c.verseKey === verseKey);
+        setSavedEntryIds(new Set(onThisVerse.map((c) => c.entryId)));
+      });
+      return () => {
+        canceled = true;
+      };
+    }, [verseKey]),
+  );
+
   // Catena entries on a range emit per-verse copies (-v3, -v4, ...). Dedupe
   // by base id so the modal doesn't show the same comment thrice — matches
   // the web's getCommentaryEntriesForWork dedupe at render time.
@@ -146,10 +190,56 @@ export default function CommentaryModal() {
         });
       }
     }
-    return Array.from(byPerson.values()).sort(
+    const raw = Array.from(byPerson.values()).sort(
       (a, b) => b.topRank - a.topRank,
     );
-  }, [sortedUniqueEntries]);
+
+    // Apply the user's commentary-fathers config:
+    //   1. Hide groups whose Father is in hiddenSlugs
+    //   2. If orderedSlugs is non-empty, sort by that order (groups not
+    //      in the list fall to the end, preserving rank order among
+    //      themselves)
+    const slugById = (id: string) => lookups.peopleById.get(id)?.slug ?? "";
+    const filtered = raw.filter((g) => {
+      const slug = slugById(g.personId);
+      return !hiddenSlugs.includes(slug);
+    });
+    if (orderedSlugs.length === 0) return filtered;
+    const orderIndex = new Map(orderedSlugs.map((s, i) => [s, i]));
+    return [...filtered].sort((a, b) => {
+      const ai = orderIndex.get(slugById(a.personId)) ?? Number.MAX_SAFE_INTEGER;
+      const bi = orderIndex.get(slugById(b.personId)) ?? Number.MAX_SAFE_INTEGER;
+      if (ai === bi) return b.topRank - a.topRank;
+      return ai - bi;
+    });
+  }, [sortedUniqueEntries, hiddenSlugs, orderedSlugs, lookups.peopleById]);
+
+  async function toggleEntrySaved(
+    entry: typeof sortedUniqueEntries[number],
+    personLabel: string,
+  ) {
+    const id = savedCommentaryId(verseKey, entry.id);
+    const next = new Set(savedEntryIds);
+    if (savedEntryIds.has(entry.id)) {
+      await removeSavedCommentary(verseKey, entry.id);
+      next.delete(entry.id);
+    } else {
+      const work = lookups.worksById.get(entry.workId);
+      const person = lookups.peopleById.get(entry.personId);
+      await addSavedCommentary({
+        verseKey,
+        entryId: entry.id,
+        personSlug: person?.slug ?? entry.personId,
+        personName: personLabel,
+        workTitle: work?.shortTitle,
+        excerpt: entry.excerpt.slice(0, 200),
+      });
+      next.add(entry.id);
+    }
+    setSavedEntryIds(next);
+    // Discourage unused-variable lint on `id`:
+    void id;
+  }
 
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const toggle = (personId: string) => {
@@ -303,29 +393,60 @@ export default function CommentaryModal() {
                   ) : null}
                   {group.entries.map((entry, idx) => {
                     const work = lookups.worksById.get(entry.workId);
+                    const isSaved = savedEntryIds.has(entry.id);
                     return (
                       <View key={entry.id} style={styles.entry}>
                         {idx > 0 ? <GiltRule full style={styles.entrySep} /> : null}
-                        {work ? (
+                        <View style={styles.entryHeaderRow}>
+                          <View style={{ flex: 1, gap: 4 }}>
+                            {work ? (
+                              <Pressable
+                                onPress={() => {
+                                  router.dismiss();
+                                  router.push(`/works/${work.slug}`);
+                                }}
+                                style={({ pressed }) => [
+                                  pressed && { opacity: 0.6 },
+                                ]}
+                                accessibilityRole="button"
+                                accessibilityLabel={`Open ${work.title}`}
+                              >
+                                <Text style={styles.entryWork}>
+                                  {work.shortTitle}
+                                </Text>
+                              </Pressable>
+                            ) : null}
+                            {entry.title ? (
+                              <Text style={styles.entryTitle}>
+                                {entry.title}
+                              </Text>
+                            ) : null}
+                          </View>
                           <Pressable
-                            onPress={() => {
-                              router.dismiss();
-                              router.push(`/works/${work.slug}`);
-                            }}
+                            onPress={() => toggleEntrySaved(entry, personLabel)}
+                            hitSlop={10}
                             style={({ pressed }) => [
-                              pressed && { opacity: 0.6 },
+                              styles.saveStar,
+                              isSaved && styles.saveStarActive,
+                              pressed && { opacity: 0.65 },
                             ]}
                             accessibilityRole="button"
-                            accessibilityLabel={`Open ${work.title}`}
+                            accessibilityState={{ selected: isSaved }}
+                            accessibilityLabel={
+                              isSaved
+                                ? "Remove from saved commentary"
+                                : "Save this commentary entry"
+                            }
                           >
-                            <Text style={styles.entryWork}>
-                              {work.shortTitle}
-                            </Text>
+                            <Feather
+                              name={isSaved ? "bookmark" : "bookmark"}
+                              size={14}
+                              color={
+                                isSaved ? colors.accent : colors.inkMuted
+                              }
+                            />
                           </Pressable>
-                        ) : null}
-                        {entry.title ? (
-                          <Text style={styles.entryTitle}>{entry.title}</Text>
-                        ) : null}
+                        </View>
                         <Text style={styles.entryExcerpt}>{entry.excerpt}</Text>
                         {entry.tags.length > 0 ? (
                           <View style={styles.tagRow}>
@@ -471,6 +592,25 @@ const styles = StyleSheet.create({
 
   entry: { gap: spacing.sm },
   entrySep: { marginVertical: spacing.sm },
+  entryHeaderRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: spacing.sm,
+  },
+  saveStar: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  saveStarActive: {
+    borderColor: "rgba(212, 168, 87, 0.5)",
+    backgroundColor: colors.accentSoft,
+  },
   entryWork: {
     fontFamily: fonts.sans,
     fontSize: 10.5,

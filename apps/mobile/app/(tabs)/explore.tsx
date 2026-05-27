@@ -24,6 +24,7 @@ import {
   addSavedVerse,
   getHighlights,
   getLastReadLocation,
+  getProfilePrefs,
   getSavedVerses,
   highlightKey,
   removeSavedVerse,
@@ -84,7 +85,30 @@ export default function BibleReaderScreen() {
     highlight?: string;
   }>();
 
-  const translation = params.translation || DEFAULT_TRANSLATION;
+  // Translation picking order:
+  //   1. URL param (a Daily reading deep-link knows exactly what to use)
+  //   2. The user's primary translation from prefs (their Bible-tab default)
+  //   3. The persisted last-read location's translation (we restore the
+  //      whole location below)
+  //   4. The DEFAULT_TRANSLATION fallback (kjva)
+  // Web's Phase 4 work mirrors the same precedence.
+  const [defaultTranslation, setDefaultTranslation] = useState<string | null>(
+    null,
+  );
+  useEffect(() => {
+    let canceled = false;
+    void getProfilePrefs().then((p) => {
+      if (canceled) return;
+      if (p.primaryTranslationId) setDefaultTranslation(p.primaryTranslationId);
+      else setDefaultTranslation(DEFAULT_TRANSLATION);
+    });
+    return () => {
+      canceled = true;
+    };
+  }, []);
+
+  const translation =
+    params.translation || defaultTranslation || DEFAULT_TRANSLATION;
   const bookSlug = params.book ?? null;
   const chapterNumber = params.chapter
     ? Number.parseInt(params.chapter, 10) || null
@@ -98,6 +122,11 @@ export default function BibleReaderScreen() {
   // location and replace params with it. If there's no saved location
   // either, we fall through to the empty-state view below, which prompts
   // the user to pick a book — rather than dropping them into Matthew 5.
+  //
+  // Note we still consult getLastReadLocation even when the user has a
+  // primaryTranslationId set — the saved location preserves which
+  // book+chapter they were on, but we override its translation with
+  // their current primary preference when the URL doesn't pin one.
   const noParamsPresent = !params.book && !params.chapter;
   const [restored, setRestored] = useState(false);
   useEffect(() => {
@@ -105,12 +134,13 @@ export default function BibleReaderScreen() {
       setRestored(true);
       return;
     }
+    if (defaultTranslation === null) return; // wait for prefs
     let canceled = false;
     getLastReadLocation().then((loc) => {
       if (canceled) return;
       if (loc) {
         router.setParams({
-          translation: loc.translation,
+          translation: defaultTranslation || loc.translation,
           book: loc.book,
           chapter: String(loc.chapter),
         });
@@ -120,7 +150,7 @@ export default function BibleReaderScreen() {
     return () => {
       canceled = true;
     };
-  }, [noParamsPresent]);
+  }, [noParamsPresent, defaultTranslation]);
 
   // Persist on every (translation, book, chapter) change. Skip until
   // restore completes to avoid clobbering saved state with defaults.

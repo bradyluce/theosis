@@ -219,7 +219,14 @@ export const CALENDAR_OPTIONS: readonly {
   },
 ];
 
-// Translation options — only ships KJVA today. Phase 4 adds RSV / LXX.
+// Translation options — every translation present in
+// content/normalized/bibles/catalog.json that an English-speaking
+// Orthodox reader is likely to pick as their daily Bible. Greek and
+// Hebrew witnesses (GNT, BYZ, ANT 1904, WLC) are left out of the
+// selector because they're side-by-side reference texts, not primary
+// reading. The Bible reader still surfaces every translation in the
+// per-screen translation switcher; this list is the curated "use as
+// my default" set.
 export const TRANSLATION_OPTIONS: readonly {
   value: string;
   label: string;
@@ -228,7 +235,38 @@ export const TRANSLATION_OPTIONS: readonly {
   {
     value: "kjva",
     label: "KJV with Apocrypha",
-    description: "King James Version including the Deuterocanonicals. Public domain.",
+    description:
+      "King James Version including the Deuterocanonicals. Public domain. The default if you're unsure.",
+  },
+  {
+    value: "rsv",
+    label: "Revised Standard Version",
+    description:
+      "Formal mid-20th-century English. Familiar lectionary cadence with modern grammar.",
+  },
+  {
+    value: "lxxe",
+    label: "Brenton's Septuagint",
+    description:
+      "English translation of the Septuagint — the Old Testament the Apostles and Fathers cite.",
+  },
+  {
+    value: "eob",
+    label: "Eastern / Greek Orthodox NT",
+    description:
+      "Orthodox English New Testament keyed to the Patriarchal Greek text.",
+  },
+  {
+    value: "dra",
+    label: "Douay-Rheims (Challoner)",
+    description:
+      "English translation from the Latin Vulgate, full canon including the Deuterocanonicals.",
+  },
+  {
+    value: "web",
+    label: "World English Bible",
+    description:
+      "Modern public-domain English (Apocrypha edition). Easier reading than the KJV register.",
   },
 ];
 

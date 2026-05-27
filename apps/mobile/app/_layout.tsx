@@ -164,6 +164,13 @@ export default function RootLayout() {
               detail screen pushed when a row in the list is tapped. */}
           <Stack.Screen name="parishes" />
           <Stack.Screen name="parishes/[state]/[slug]" />
+          {/* Commentary fathers picker — full screen, regular push (not
+              modal) so the user can dig back to settings cleanly. */}
+          <Stack.Screen name="commentary-fathers" />
+          {/* Diptych — names to pray for. */}
+          <Stack.Screen name="diptych" />
+          {/* Prayer rule builder — full corpus browser with PDF export. */}
+          <Stack.Screen name="prayer-builder" />
         </Stack>
         <StatusBar style="light" />
       </ThemeProvider>

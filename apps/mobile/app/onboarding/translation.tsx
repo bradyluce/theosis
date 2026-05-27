@@ -20,7 +20,7 @@ export default function TranslationScreen() {
       <OnboardingShell
         step="translation"
         title="Primary translation?"
-        subtitle="Default text in the Bible reader. You can switch any time."
+        subtitle="The text the Bible tab opens to by default. You can still swap to any other translation from the reader."
       >
         {TRANSLATION_OPTIONS.map((opt) => (
           <OnboardingChoice
@@ -33,7 +33,9 @@ export default function TranslationScreen() {
           />
         ))}
         <Text style={styles.hint}>
-          More translations (RSV, LXX, OSB) ship in a follow-up release.
+          The Greek New Testament, Septuagint Greek, and Hebrew Masoretic
+          witnesses remain available as side-by-side references in the
+          reader, but aren&apos;t typical &quot;daily reading&quot; choices.
         </Text>
       </OnboardingShell>
     </>
@@ -46,5 +48,6 @@ const styles = StyleSheet.create({
     color: colors.inkSoft,
     paddingHorizontal: spacing.xs,
     lineHeight: 18,
+    fontStyle: "italic",
   },
 });

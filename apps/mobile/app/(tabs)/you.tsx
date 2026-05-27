@@ -25,9 +25,11 @@ import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import {
   type ProfilePrefs,
   type ReadingListItem,
+  type SavedCommentary,
   type SavedVerse,
   getProfilePrefs,
   getReadingList,
+  getSavedCommentary,
   getSavedVerses,
   recordActivityToday,
 } from "@/lib/preferences";
@@ -36,13 +38,14 @@ import {
 // numerals (streak + saved), an editorial activity timeline, and quiet
 // navigation to settings & practice.
 
-type ActivityTab = "all" | "saved" | "reading";
+type ActivityTab = "all" | "saved" | "reading" | "commentary";
 
 export default function YouScreen() {
   const [prefs, setPrefs] = useState<ProfilePrefs>({});
   const [streak, setStreak] = useState(0);
   const [saved, setSaved] = useState<SavedVerse[]>([]);
   const [readingList, setReadingList] = useState<ReadingListItem[]>([]);
+  const [savedCommentary, setSavedCommentary] = useState<SavedCommentary[]>([]);
   const [activityTab, setActivityTab] = useState<ActivityTab>("all");
 
   useEffect(() => {
@@ -52,12 +55,14 @@ export default function YouScreen() {
       getProfilePrefs(),
       getSavedVerses(),
       getReadingList(),
-    ]).then(([activity, profile, savedVerses, list]) => {
+      getSavedCommentary(),
+    ]).then(([activity, profile, savedVerses, list, commentary]) => {
       if (canceled) return;
       setStreak(activity.streak);
       setPrefs(profile);
       setSaved(savedVerses);
       setReadingList(list);
+      setSavedCommentary(commentary);
     });
     return () => {
       canceled = true;
@@ -84,9 +89,18 @@ export default function YouScreen() {
           ? "Inquirer"
           : null;
 
+  // Map verseKey "matthew.5.3" back into the explore deep-link so a
+  // tap on a saved commentary item lands at the verse in the reader.
+  function commentaryHref(verseKey: string): string {
+    const parts = verseKey.split(".");
+    if (parts.length !== 3) return "/explore";
+    const [book, chapter, verse] = parts;
+    return `/explore?book=${book}&chapter=${chapter}&highlight=${verse}`;
+  }
+
   const activityItems: {
     id: string;
-    kind: "saved" | "reading";
+    kind: "saved" | "reading" | "commentary";
     label: string;
     sub?: string;
     href?: string;
@@ -104,6 +118,15 @@ export default function YouScreen() {
       label: r.title,
       sub: "Reading list",
       href: `/works/${r.workSlug}`,
+    })),
+    ...savedCommentary.map((c) => ({
+      id: `c-${c.id}`,
+      kind: "commentary" as const,
+      label: `${c.personName} on ${formatVerseKey(c.verseKey)}`,
+      sub: c.workTitle
+        ? `${c.workTitle} — ${c.excerpt.slice(0, 80)}…`
+        : `${c.excerpt.slice(0, 80)}…`,
+      href: commentaryHref(c.verseKey),
     })),
   ].filter((item) => activityTab === "all" || item.kind === activityTab);
 
@@ -276,14 +299,16 @@ export default function YouScreen() {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.activityTabs}
           >
-            {(["all", "saved", "reading"] as ActivityTab[]).map((tab) => {
+            {(["all", "saved", "reading", "commentary"] as ActivityTab[]).map((tab) => {
               const active = tab === activityTab;
               const label =
                 tab === "all"
                   ? "All"
                   : tab === "saved"
                     ? "Saved"
-                    : "Reading";
+                    : tab === "reading"
+                      ? "Reading"
+                      : "Commentary";
               return (
                 <Pressable
                   key={tab}
@@ -329,7 +354,13 @@ export default function YouScreen() {
                   accessibilityRole={item.href ? "button" : "text"}
                 >
                   <Feather
-                    name={item.kind === "saved" ? "bookmark" : "book-open"}
+                    name={
+                      item.kind === "saved"
+                        ? "bookmark"
+                        : item.kind === "commentary"
+                          ? "message-square"
+                          : "book-open"
+                    }
                     size={14}
                     color={colors.accent}
                     style={styles.activityGlyph}
@@ -363,6 +394,14 @@ export default function YouScreen() {
 
 function capitalize(slug: string) {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// "matthew.5.3" → "Matthew 5:3" for activity-feed labels.
+function formatVerseKey(verseKey: string): string {
+  const parts = verseKey.split(".");
+  if (parts.length !== 3) return verseKey;
+  const [book, chapter, verse] = parts;
+  return `${capitalize(book)} ${chapter}:${verse}`;
 }
 
 function PracticeTile({

@@ -1,9 +1,11 @@
 import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
-import { Stack, useLocalSearchParams } from "expo-router";
+import { Stack, router, useLocalSearchParams, useFocusEffect } from "expo-router";
+import { useCallback, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
   Linking,
   Platform,
   Pressable,
@@ -21,6 +23,7 @@ import {
 } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import { getProfilePrefs, updateProfilePrefs } from "@/lib/preferences";
 
 // Parish detail screen — pushed from the parishes list. Reachable at
 // /parishes/<state>/<slug>. Renders the full Parish record returned by
@@ -49,6 +52,62 @@ export default function ParishDetailScreen() {
   });
 
   const parish = query.data;
+
+  // Track whether this parish is the user's currently-set home parish so
+  // the action button can flip between "Set as my parish" and a quiet
+  // confirmation. Re-read on focus so the state stays accurate after
+  // round-trips to other screens.
+  const [savedParishName, setSavedParishName] = useState<string | undefined>(
+    undefined,
+  );
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getProfilePrefs().then((p) => {
+        if (!canceled) setSavedParishName(p.parish);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
+  const isMyParish =
+    Boolean(parish) && savedParishName === parish?.name;
+
+  async function handleSetAsMyParish() {
+    if (!parish) return;
+    await updateProfilePrefs({ parish: parish.name });
+    setSavedParishName(parish.name);
+    // Pop back to whatever the user was doing before — the parishes
+    // list, or the onboarding/settings parish field. router.back gets
+    // them out of the detail; router.back again unwinds the list step
+    // if they came from there. Wrapped in setTimeout so the user sees
+    // the success state momentarily.
+    setTimeout(() => {
+      if (router.canGoBack()) {
+        router.back();
+        if (router.canGoBack()) router.back();
+      }
+    }, 600);
+  }
+
+  function handleUnsetMyParish() {
+    Alert.alert(
+      "Remove your parish?",
+      `${parish?.name} will no longer be saved as your home parish.`,
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Remove",
+          style: "destructive",
+          onPress: async () => {
+            await updateProfilePrefs({ parish: undefined });
+            setSavedParishName(undefined);
+          },
+        },
+      ],
+    );
+  }
 
   return (
     <>
@@ -107,6 +166,48 @@ export default function ParishDetailScreen() {
               {parish.diocese ? (
                 <Text style={styles.dioceseLabel}>{parish.diocese}</Text>
               ) : null}
+
+              {/* Primary CTA — set this parish as the user's home parish.
+                  When it's already saved, switch to a quiet confirmation
+                  pill with an "unset" affordance. */}
+              {isMyParish ? (
+                <View style={styles.myParishRow}>
+                  <View style={styles.myParishBadge}>
+                    <Feather name="check" size={13} color={colors.background} />
+                    <Text style={styles.myParishBadgeText}>Your parish</Text>
+                  </View>
+                  <Pressable
+                    onPress={handleUnsetMyParish}
+                    hitSlop={8}
+                    style={({ pressed }) => [
+                      styles.unsetButton,
+                      pressed && { opacity: 0.6 },
+                    ]}
+                    accessibilityRole="button"
+                    accessibilityLabel="Remove this parish"
+                  >
+                    <Text style={styles.unsetLabel}>Remove</Text>
+                  </Pressable>
+                </View>
+              ) : (
+                <Pressable
+                  onPress={handleSetAsMyParish}
+                  style={({ pressed }) => [
+                    styles.setAsParishButton,
+                    pressed && { opacity: 0.85 },
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityLabel="Set as my parish"
+                >
+                  <Feather
+                    name="home"
+                    size={14}
+                    color={colors.background}
+                  />
+                  <Text style={styles.setAsParishLabel}>Set as my parish</Text>
+                </Pressable>
+              )}
+
               <GiltRule full style={{ marginTop: spacing.lg }} />
             </View>
 
@@ -356,6 +457,57 @@ const styles = StyleSheet.create({
     ...text.byline,
     marginTop: spacing.xs,
     color: colors.inkMuted,
+  },
+  setAsParishButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.xs,
+    marginTop: spacing.lg,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accent,
+  },
+  setAsParishLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 14,
+    fontWeight: "600",
+    color: colors.background,
+    letterSpacing: 0.4,
+  },
+  myParishRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    marginTop: spacing.lg,
+  },
+  myParishBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 6,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accent,
+  },
+  myParishBadgeText: {
+    fontFamily: fonts.sans,
+    fontSize: 11,
+    fontWeight: "700",
+    color: colors.background,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+  },
+  unsetButton: {
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 4,
+  },
+  unsetLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 12,
+    color: colors.oxbloodInk,
+    fontStyle: "italic",
   },
   section: {
     paddingHorizontal: spacing.lg,

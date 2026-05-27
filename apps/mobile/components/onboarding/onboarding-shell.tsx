@@ -309,9 +309,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingTop: spacing.md,
     paddingBottom: spacing.md,
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colors.lineGilt,
-    backgroundColor: "rgba(245, 240, 230, 0.4)",
   },
   footerButton: {
     flexDirection: "row",
