@@ -110,6 +110,11 @@ export type TheosisMeApi = {
     payload: ImportPayloadDto,
     opts?: { merge?: boolean },
   ) => Promise<MeSnapshotDto>;
+
+  // --- Account deletion -------------------------------------------------
+  // Deletes the user row in Postgres (cascades to all related tables).
+  // The caller is responsible for calling Clerk's signOut afterwards.
+  deleteAccount: () => Promise<void>;
 };
 
 export function createTheosisMeApi(
@@ -205,6 +210,8 @@ export function createTheosisMeApi(
       ),
     clearRecentSearches: () =>
       request("DELETE", "/api/me/recent-searches", undefined),
+
+    deleteAccount: () => request("DELETE", "/api/me", undefined),
 
     createReadingHistoryEntry: (input) =>
       request("POST", "/api/me/reading-history", input, (raw) =>

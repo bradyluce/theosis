@@ -29,7 +29,9 @@ import {
   type ReadingListItem,
   type SavedCommentary,
   type SavedDailyReading,
+  type SavedNote,
   type SavedVerse,
+  getNotes,
   getProfilePrefs,
   getReadingList,
   getSavedCommentary,
@@ -37,13 +39,20 @@ import {
   getSavedVerses,
   recordActivityToday,
 } from "@/lib/preferences";
+import { peekQueue } from "@/lib/sync/queue";
 import { usePatronIcon } from "@/lib/use-patron-icon";
 
 // You — the personal corner. Identity hero with halo avatar, two display
 // numerals (streak + saved), an editorial activity timeline, and quiet
 // navigation to settings & practice.
 
-type ActivityTab = "all" | "saved" | "reading" | "commentary" | "daily";
+type ActivityTab =
+  | "all"
+  | "saved"
+  | "reading"
+  | "commentary"
+  | "daily"
+  | "notes";
 
 export default function YouScreen() {
   const [prefs, setPrefs] = useState<ProfilePrefs>({});
@@ -54,7 +63,25 @@ export default function YouScreen() {
   const [readingList, setReadingList] = useState<ReadingListItem[]>([]);
   const [savedCommentary, setSavedCommentary] = useState<SavedCommentary[]>([]);
   const [savedDaily, setSavedDaily] = useState<SavedDailyReading[]>([]);
+  const [notes, setNotes] = useState<SavedNote[]>([]);
   const [activityTab, setActivityTab] = useState<ActivityTab>("all");
+  // Sync indicator — polls the pending-writes queue length so the user
+  // can see when offline changes are still waiting to flush. Reads
+  // every two seconds while the You tab is mounted; cheap enough.
+  const [pendingCount, setPendingCount] = useState(0);
+  useEffect(() => {
+    let canceled = false;
+    async function tick() {
+      const queue = await peekQueue();
+      if (!canceled) setPendingCount(queue.length);
+    }
+    void tick();
+    const interval = setInterval(tick, 2000);
+    return () => {
+      canceled = true;
+      clearInterval(interval);
+    };
+  }, []);
 
   useEffect(() => {
     let canceled = false;
@@ -64,14 +91,16 @@ export default function YouScreen() {
       getReadingList(),
       getSavedCommentary(),
       getSavedDailyReadings(),
+      getNotes(),
     ]).then(
-      ([activity, savedVerses, list, commentary, daily]) => {
+      ([activity, savedVerses, list, commentary, daily, noteList]) => {
         if (canceled) return;
         setStreak(activity.streak);
         setSaved(savedVerses);
         setReadingList(list);
         setSavedCommentary(commentary);
         setSavedDaily(daily);
+        setNotes(noteList);
       },
     );
     return () => {
@@ -167,6 +196,17 @@ export default function YouScreen() {
       sub: `Saved daily — ${d.isoDate}`,
       href: undefined as string | undefined,
     })),
+    // Notes — surfaced so the user can scan their writing.
+    ...notes.map((n) => ({
+      id: `n-${n.id}`,
+      kind: "notes" as const,
+      label: n.title || (n.body.split("\n")[0] || "Untitled note").slice(0, 80),
+      sub:
+        n.targetType === "verse"
+          ? `On ${formatVerseKey(n.targetId)}`
+          : `On ${n.targetType} · ${n.targetId}`,
+      href: `/note/${n.targetType}/${encodeURIComponent(n.targetId)}` as string | undefined,
+    })),
   ].filter((item) => activityTab === "all" || item.kind === activityTab);
 
   return (
@@ -184,25 +224,35 @@ export default function YouScreen() {
 
       <View style={styles.masthead}>
         <Wordmark size={18} subline="Profile" />
-        <Pressable
-          onPress={() => setDrawerOpen(true)}
-          hitSlop={10}
-          accessibilityRole="button"
-          accessibilityLabel="Open profile"
-        >
-          <Halo size={40}>
-            {patronIcon ? (
-              <Image
-                source={{ uri: patronIcon.src }}
-                accessibilityLabel={patronIcon.alt}
-                style={styles.avatarImage}
-                contentFit="cover"
-              />
-            ) : (
-              <Text style={styles.mastheadAvatarLetter}>{initial}</Text>
-            )}
-          </Halo>
-        </Pressable>
+        <View style={styles.mastheadRight}>
+          {pendingCount > 0 ? (
+            <View style={styles.syncPill}>
+              <Feather name="refresh-cw" size={10} color={colors.accent} />
+              <Text style={styles.syncPillLabel}>
+                Syncing {pendingCount}
+              </Text>
+            </View>
+          ) : null}
+          <Pressable
+            onPress={() => setDrawerOpen(true)}
+            hitSlop={10}
+            accessibilityRole="button"
+            accessibilityLabel="Open profile"
+          >
+            <Halo size={40}>
+              {patronIcon ? (
+                <Image
+                  source={{ uri: patronIcon.src }}
+                  accessibilityLabel={patronIcon.alt}
+                  style={styles.avatarImage}
+                  contentFit="cover"
+                />
+              ) : (
+                <Text style={styles.mastheadAvatarLetter}>{initial}</Text>
+              )}
+            </Halo>
+          </Pressable>
+        </View>
       </View>
       <GiltRule full style={{ marginHorizontal: spacing.xl }} />
 
@@ -354,7 +404,16 @@ export default function YouScreen() {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.activityTabs}
           >
-            {(["all", "saved", "reading", "commentary", "daily"] as ActivityTab[]).map((tab) => {
+            {(
+              [
+                "all",
+                "saved",
+                "reading",
+                "commentary",
+                "notes",
+                "daily",
+              ] as ActivityTab[]
+            ).map((tab) => {
               const active = tab === activityTab;
               const label =
                 tab === "all"
@@ -365,7 +424,9 @@ export default function YouScreen() {
                       ? "Reading"
                       : tab === "commentary"
                         ? "Commentary"
-                        : "Daily";
+                        : tab === "notes"
+                          ? "Notes"
+                          : "Daily";
               return (
                 <Pressable
                   key={tab}
@@ -418,7 +479,9 @@ export default function YouScreen() {
                           ? "message-square"
                           : item.kind === "daily"
                             ? "calendar"
-                            : "book-open"
+                            : item.kind === "notes"
+                              ? "edit-3"
+                              : "book-open"
                     }
                     size={14}
                     color={colors.accent}
@@ -509,6 +572,30 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.xl,
     paddingTop: spacing.sm,
     paddingBottom: spacing.md,
+  },
+  mastheadRight: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm,
+  },
+  syncPill: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 4,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+  },
+  syncPillLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 9.5,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.2,
+    textTransform: "uppercase",
   },
 
   scroll: { flex: 1 },

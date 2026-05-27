@@ -171,6 +171,13 @@ export default function RootLayout() {
           <Stack.Screen name="diptych" />
           {/* Prayer rule builder — full corpus browser with PDF export. */}
           <Stack.Screen name="prayer-builder" />
+          {/* Legal — Terms of Service + Privacy Policy. App Store
+              requires both. */}
+          <Stack.Screen name="terms" />
+          <Stack.Screen name="privacy" />
+          {/* Note editor — write a note anchored to a verse / chapter /
+              work / person. */}
+          <Stack.Screen name="note/[targetType]/[targetId]" />
         </Stack>
         <StatusBar style="light" />
       </ThemeProvider>

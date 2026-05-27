@@ -6,7 +6,7 @@
 // picker rows, gilt buttons — so this screen feels of-a-piece with
 // people/[slug], works/[slug], and the Daily home.
 
-import { SignedIn, SignedOut, useClerk, useUser } from "@clerk/clerk-expo";
+import { SignedIn, SignedOut, useAuth, useClerk, useUser } from "@clerk/clerk-expo";
 import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
@@ -39,7 +39,7 @@ import {
   Wordmark,
 } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
-import { getApi } from "@/lib/api";
+import { getApi, getApiBaseUrl } from "@/lib/api";
 import {
   type ProfilePrefs,
   getProfilePrefs,
@@ -328,6 +328,49 @@ export default function SettingsScreen() {
           </View>
         </Card>
 
+        {/* About — legal pages required for the App Store and useful
+            for any user who wants to know what we collect. */}
+        <Card>
+          <SectionHeader eyebrow="About" title="Legal" rule />
+          <View style={{ gap: spacing.sm, marginTop: spacing.md }}>
+            <Pressable
+              onPress={() => router.push("/terms")}
+              style={({ pressed }) => [
+                styles.linkRow,
+                pressed && { backgroundColor: colors.surfaceStrong },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Terms of Service"
+            >
+              <View style={styles.linkRowMain}>
+                <Text style={styles.linkRowLabel}>Terms of Service</Text>
+                <Text style={styles.linkRowDescription}>
+                  What Theosis is and what it isn&apos;t.
+                </Text>
+              </View>
+              <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+            </Pressable>
+            <Pressable
+              onPress={() => router.push("/privacy")}
+              style={({ pressed }) => [
+                styles.linkRow,
+                pressed && { backgroundColor: colors.surfaceStrong },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Privacy Policy"
+            >
+              <View style={styles.linkRowMain}>
+                <Text style={styles.linkRowLabel}>Privacy Policy</Text>
+                <Text style={styles.linkRowDescription}>
+                  What we collect, where it lives, what we don&apos;t do
+                  with it.
+                </Text>
+              </View>
+              <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+            </Pressable>
+          </View>
+        </Card>
+
         <Text style={styles.footer}>Made with reverence.</Text>
       </ScrollView>
     </SafeAreaView>
@@ -370,7 +413,9 @@ function IdentityHero() {
 function AccountCard() {
   const { user } = useUser();
   const { signOut } = useClerk();
+  const { getToken } = useAuth();
   const [busy, setBusy] = useState(false);
+  const [deleting, setDeleting] = useState(false);
 
   async function handleSignOut() {
     if (busy) return;
@@ -379,6 +424,72 @@ function AccountCard() {
       await signOut();
     } finally {
       setBusy(false);
+    }
+  }
+
+  // Account deletion: confirm twice, hit DELETE /api/me which drops
+  // the Postgres row + cascades to every related table, then signOut
+  // on the Clerk side. The deletion is irreversible by design (App
+  // Store guideline 4.1).
+  function handleDelete() {
+    if (deleting) return;
+    Alert.alert(
+      "Delete your account?",
+      "Your highlights, notes, reading list, prayer rule, diptych, and all other data will be permanently deleted from our servers. This cannot be undone.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Delete",
+          style: "destructive",
+          onPress: () => {
+            Alert.alert(
+              "Really delete?",
+              "Last chance. Tap Delete to permanently remove your account and all data.",
+              [
+                { text: "Cancel", style: "cancel" },
+                {
+                  text: "Delete",
+                  style: "destructive",
+                  onPress: performDelete,
+                },
+              ],
+            );
+          },
+        },
+      ],
+    );
+  }
+
+  async function performDelete() {
+    setDeleting(true);
+    try {
+      const token = await getToken();
+      if (!token) {
+        Alert.alert("Sign in expired", "Please sign in again, then retry.");
+        return;
+      }
+      const res = await fetch(`${getApiBaseUrl()}/api/me`, {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) {
+        Alert.alert(
+          "Deletion failed",
+          `Server returned ${res.status}. Try again, or contact support.`,
+        );
+        return;
+      }
+      // Sign out clears the local Clerk session. The user's prefs
+      // blob in AsyncStorage stays — they may want it for an anon
+      // session afterward — but the server data is gone.
+      await signOut();
+    } catch (err) {
+      Alert.alert(
+        "Network error",
+        err instanceof Error ? err.message : String(err),
+      );
+    } finally {
+      setDeleting(false);
     }
   }
 
@@ -442,6 +553,33 @@ function AccountCard() {
             </Pressable>
           </View>
         </View>
+
+        {/* Account deletion — App Store guideline 4.1 requires in-app
+            account deletion when an account can be created in-app. */}
+        <Pressable
+          onPress={handleDelete}
+          disabled={deleting}
+          style={({ pressed }) => [
+            styles.linkRow,
+            styles.linkRowDanger,
+            deleting && { opacity: 0.5 },
+            pressed && { opacity: 0.7 },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel="Delete my account"
+        >
+          <View style={styles.linkRowMain}>
+            <Text style={[styles.linkRowLabel, styles.linkRowLabelDanger]}>
+              {deleting ? "Deleting…" : "Delete my account"}
+            </Text>
+            <Text style={styles.linkRowDescription}>
+              Permanently removes your account and every record we hold —
+              highlights, notes, reading list, prayer rule, diptych. Cannot
+              be undone.
+            </Text>
+          </View>
+          <Feather name="trash-2" size={15} color={colors.oxbloodInk} />
+        </Pressable>
       </SignedIn>
     </>
   );
@@ -862,6 +1000,13 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     paddingHorizontal: spacing.md,
     paddingVertical: spacing.md,
+  },
+  linkRowDanger: {
+    borderColor: "rgba(139, 58, 58, 0.3)",
+    backgroundColor: "rgba(139, 58, 58, 0.04)",
+  },
+  linkRowLabelDanger: {
+    color: colors.oxbloodInk,
   },
   linkRowMain: { flex: 1, gap: 2 },
   linkRowLabel: {

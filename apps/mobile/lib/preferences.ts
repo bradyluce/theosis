@@ -143,6 +143,28 @@ export type SavedDailyReading = {
   savedAt: string;
 };
 
+// User-written note on a verse, chapter, work, or person. The target
+// uniquely identifies what's being annotated — verseKey for verses,
+// chapter ID for chapters, slug for works/persons. `version` is the
+// optimistic-concurrency counter that lets the server reject stale
+// updates (the same way notes work on web).
+export type NoteTargetType = "verse" | "chapter" | "work" | "person";
+
+export type SavedNote = {
+  // clientId — composite "<targetType>::<targetId>" so the same target
+  // can never have two notes. Server uses this as a stable lookup.
+  id: string;
+  targetType: NoteTargetType;
+  targetId: string;
+  title: string;
+  body: string;
+  // Server-side optimistic concurrency counter. New notes start at 0
+  // and bump to 1 on first save. Subsequent edits increment.
+  version: number;
+  createdAt: string;
+  updatedAt: string;
+};
+
 // Saved commentary entry. The user starred a specific entry on a
 // specific verse — keyed by both so highlighting "Augustine on Matt
 // 5:3" doesn't collide with "Augustine on John 1:1". `id` is the
@@ -238,6 +260,10 @@ export type AppPreferences = {
   completions?: CompletionMark[];
   // Bookmarks on the Daily page — dates the user wants to remember.
   savedDailyReadings?: SavedDailyReading[];
+  // User-written prose attached to verses, chapters, works, or
+  // persons. The note editor at /note/[targetType]/[targetId].tsx
+  // creates/edits entries here.
+  notes?: SavedNote[];
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -623,6 +649,96 @@ export async function toggleSavedDailyReading(
       ];
   await savePrefs({ ...prefs, savedDailyReadings: next });
   return next;
+}
+
+// --- Notes -----------------------------------------------------------------
+
+export function noteClientId(
+  targetType: NoteTargetType,
+  targetId: string,
+): string {
+  return `${targetType}::${targetId}`;
+}
+
+export async function getNotes(): Promise<SavedNote[]> {
+  const prefs = await loadPrefs();
+  return prefs.notes ?? [];
+}
+
+export async function getNoteFor(
+  targetType: NoteTargetType,
+  targetId: string,
+): Promise<SavedNote | undefined> {
+  const id = noteClientId(targetType, targetId);
+  const all = await getNotes();
+  return all.find((n) => n.id === id);
+}
+
+// Upsert: create a new note at this target if none exists, otherwise
+// replace the title/body. Returns the new note shape with bumped
+// version + updatedAt. Empty title + body deletes the note (so
+// "save empty" is the in-editor delete affordance).
+export async function upsertNote(
+  targetType: NoteTargetType,
+  targetId: string,
+  title: string,
+  body: string,
+): Promise<SavedNote | null> {
+  const id = noteClientId(targetType, targetId);
+  const prefs = await loadPrefs();
+  const existing = (prefs.notes ?? []).find((n) => n.id === id);
+  const now = new Date().toISOString();
+
+  // Empty title + body → delete the note entirely.
+  if (!title.trim() && !body.trim()) {
+    if (!existing) return null;
+    const next = (prefs.notes ?? []).filter((n) => n.id !== id);
+    await savePrefs({ ...prefs, notes: next });
+    void enqueueWrite({ kind: "note.delete", clientId: id });
+    return null;
+  }
+
+  const updated: SavedNote = existing
+    ? {
+        ...existing,
+        title,
+        body,
+        version: existing.version + 1,
+        updatedAt: now,
+      }
+    : {
+        id,
+        targetType,
+        targetId,
+        title,
+        body,
+        version: 0,
+        createdAt: now,
+        updatedAt: now,
+      };
+  const others = (prefs.notes ?? []).filter((n) => n.id !== id);
+  await savePrefs({ ...prefs, notes: [updated, ...others] });
+  void enqueueWrite({
+    kind: "note.upsert",
+    clientId: id,
+    targetType,
+    targetId,
+    title,
+    body,
+    version: existing?.version ?? 0,
+  });
+  return updated;
+}
+
+export async function deleteNote(
+  targetType: NoteTargetType,
+  targetId: string,
+): Promise<void> {
+  const id = noteClientId(targetType, targetId);
+  const prefs = await loadPrefs();
+  const next = (prefs.notes ?? []).filter((n) => n.id !== id);
+  await savePrefs({ ...prefs, notes: next });
+  void enqueueWrite({ kind: "note.delete", clientId: id });
 }
 
 // --- Favorite persons ------------------------------------------------------

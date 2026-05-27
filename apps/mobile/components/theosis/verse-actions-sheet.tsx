@@ -104,6 +104,20 @@ export function VerseActionsSheet({
     );
   };
 
+  // Opens the note editor for this verse. verseKey is the
+  // translation-agnostic "book.chapter.verse" we already use for
+  // highlights — keeps the note attached to the verse across
+  // translations.
+  const onOpenNote = () => {
+    if (!verse) return;
+    onClose();
+    const verseKey = `${verse.bookSlug}.${verse.chapter}.${verse.verseNumber}`;
+    setTimeout(
+      () => router.push(`/note/verse/${encodeURIComponent(verseKey)}`),
+      180,
+    );
+  };
+
   return (
     <Modal
       visible={visible}
@@ -213,10 +227,9 @@ export function VerseActionsSheet({
                   onPress={onCopy}
                 />
                 <ActionButton
-                  icon="share"
-                  label="Share"
-                  disabled
-                  onPress={() => {}}
+                  icon="edit-3"
+                  label="Note"
+                  onPress={onOpenNote}
                 />
                 <ActionButton
                   icon="message-square"

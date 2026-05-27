@@ -104,7 +104,13 @@ function buildClientSnapshot(prefs: AppPreferences): ClientSnapshotDto {
       color: highlightColorToUnified(h.color),
       excerpt: undefined,
     })),
-    notes: [], // mobile has no notes UI yet
+    notes: (prefs.notes ?? []).map((n) => ({
+      clientId: n.id,
+      targetType: n.targetType,
+      targetId: n.targetId,
+      title: n.title,
+      body: n.body,
+    })),
     favoritePeople: (p.favoritePersonSlugs ?? []).map((slug) => ({
       clientId: `favorite-${slug}`,
       personId: slug,
@@ -182,6 +188,16 @@ async function adoptServerSnapshot(snapshot: MeSnapshotDto): Promise<void> {
         color: h.color,
         createdAt: h.createdAt,
       })),
+    notes: snapshot.notes.map((n) => ({
+      id: n.clientId,
+      targetType: n.targetType,
+      targetId: n.targetId,
+      title: n.title,
+      body: n.body,
+      version: n.version,
+      createdAt: n.createdAt,
+      updatedAt: n.updatedAt,
+    })),
     readingList: snapshot.readingList.map((r) => ({
       id: r.clientId,
       workSlug: r.workId,

@@ -111,7 +111,9 @@ export default function AuthDebugScreen() {
 // ---------------------------------------------------------------------------
 
 function SignedOutView() {
-  const [mode, setMode] = useState<"sign-in" | "sign-up">("sign-in");
+  const [mode, setMode] = useState<"sign-in" | "sign-up" | "email-code">(
+    "sign-in",
+  );
 
   // Warm up the in-app browser so the first OAuth tap doesn't pay the
   // Safari View Controller cold-start.
@@ -182,7 +184,15 @@ function SignedOutView() {
             </Pressable>
           </View>
 
-          {mode === "sign-in" ? <SignInForm /> : <SignUpForm />}
+          {mode === "sign-in" ? (
+            <SignInForm onSwitchToCode={() => setMode("email-code")} />
+          ) : mode === "sign-up" ? (
+            <SignUpForm />
+          ) : (
+            <EmailCodeSignInForm
+              onBack={() => setMode("sign-in")}
+            />
+          )}
         </View>
       </Card>
     </View>
@@ -285,7 +295,7 @@ function OAuthButtons() {
   );
 }
 
-function SignInForm() {
+function SignInForm({ onSwitchToCode }: { onSwitchToCode: () => void }) {
   const { isLoaded, signIn, setActive } = useSignIn();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -347,6 +357,192 @@ function SignInForm() {
       >
         <Text style={styles.primaryButtonText}>
           {busy ? "Signing in…" : "Sign in"}
+        </Text>
+      </Pressable>
+
+      {/* Fallback to passwordless email-code sign-in. Useful if the
+          user forgot their password — Clerk emails a 6-digit code
+          they can punch in instead. */}
+      <Pressable
+        onPress={onSwitchToCode}
+        hitSlop={8}
+        style={({ pressed }) => [
+          styles.codeFallback,
+          pressed && { opacity: 0.6 },
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel="Sign in with a code emailed to me"
+      >
+        <Text style={styles.codeFallbackLabel}>
+          Sign in with a code instead →
+        </Text>
+      </Pressable>
+    </View>
+  );
+}
+
+// Passwordless sign-in. Clerk's `email_code` first-factor sends a
+// 6-digit code to the user's email; they paste it back and we attempt
+// the first factor. Functionally equivalent to a magic link without the
+// brittle deep-link redirect plumbing.
+function EmailCodeSignInForm({ onBack }: { onBack: () => void }) {
+  const { isLoaded, signIn, setActive } = useSignIn();
+  const [email, setEmail] = useState("");
+  const [code, setCode] = useState("");
+  const [stage, setStage] = useState<"email" | "code">("email");
+  const [busy, setBusy] = useState(false);
+
+  async function handleRequestCode() {
+    if (!isLoaded || !signIn) return;
+    setBusy(true);
+    try {
+      const attempt = await signIn.create({ identifier: email });
+      // The available factors depend on how the Clerk instance is
+      // configured. We look up the "email_code" factor and surface its
+      // emailAddressId to prepareFirstFactor.
+      const factor = attempt.supportedFirstFactors?.find(
+        (f) => f.strategy === "email_code",
+      );
+      if (!factor || !("emailAddressId" in factor) || !factor.emailAddressId) {
+        Alert.alert(
+          "No code option available",
+          "This account doesn't have a verified email Clerk can use for a code. Try password sign-in.",
+        );
+        return;
+      }
+      await signIn.prepareFirstFactor({
+        strategy: "email_code",
+        emailAddressId: factor.emailAddressId,
+      });
+      setStage("code");
+    } catch (err: unknown) {
+      const message =
+        err && typeof err === "object" && "errors" in err
+          ? JSON.stringify((err as { errors: unknown }).errors)
+          : String(err);
+      Alert.alert("Couldn't send code", message);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function handleVerify() {
+    if (!isLoaded || !signIn || !setActive) return;
+    setBusy(true);
+    try {
+      const result = await signIn.attemptFirstFactor({
+        strategy: "email_code",
+        code,
+      });
+      if (result.status === "complete") {
+        await setActive({ session: result.createdSessionId });
+      } else {
+        Alert.alert("Verification incomplete", `Status: ${result.status}`);
+      }
+    } catch (err: unknown) {
+      const message =
+        err && typeof err === "object" && "errors" in err
+          ? JSON.stringify((err as { errors: unknown }).errors)
+          : String(err);
+      Alert.alert("Code didn't verify", message);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  if (stage === "code") {
+    return (
+      <View style={{ gap: spacing.sm }}>
+        <Text style={styles.helpText}>
+          We emailed a 6-digit code to{" "}
+          <Text style={{ fontWeight: "600" }}>{email}</Text>. Paste it below.
+        </Text>
+        <FieldLabel label="Code" />
+        <TextInput
+          value={code}
+          onChangeText={setCode}
+          placeholder="123456"
+          placeholderTextColor={colors.inkSoft}
+          keyboardType="number-pad"
+          autoComplete="one-time-code"
+          style={styles.input}
+        />
+        <Pressable
+          onPress={handleVerify}
+          disabled={busy || code.length < 6}
+          style={({ pressed }) => [
+            styles.primaryButton,
+            (busy || code.length < 6) && styles.buttonDisabled,
+            pressed && styles.buttonPressed,
+          ]}
+        >
+          <Text style={styles.primaryButtonText}>
+            {busy ? "Verifying…" : "Verify code"}
+          </Text>
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            setStage("email");
+            setCode("");
+          }}
+          hitSlop={8}
+          style={({ pressed }) => [
+            styles.codeFallback,
+            pressed && { opacity: 0.6 },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel="Use a different email"
+        >
+          <Text style={styles.codeFallbackLabel}>
+            ← Use a different email
+          </Text>
+        </Pressable>
+      </View>
+    );
+  }
+
+  return (
+    <View style={{ gap: spacing.sm }}>
+      <Text style={styles.helpText}>
+        Enter your email and we&apos;ll send you a 6-digit code. No password
+        needed.
+      </Text>
+      <FieldLabel label="Email" />
+      <TextInput
+        value={email}
+        onChangeText={setEmail}
+        placeholder="you@example.com"
+        placeholderTextColor={colors.inkSoft}
+        autoCapitalize="none"
+        autoComplete="email"
+        keyboardType="email-address"
+        style={styles.input}
+      />
+      <Pressable
+        onPress={handleRequestCode}
+        disabled={busy || !email}
+        style={({ pressed }) => [
+          styles.primaryButton,
+          (busy || !email) && styles.buttonDisabled,
+          pressed && styles.buttonPressed,
+        ]}
+      >
+        <Text style={styles.primaryButtonText}>
+          {busy ? "Sending…" : "Email me a code"}
+        </Text>
+      </Pressable>
+      <Pressable
+        onPress={onBack}
+        hitSlop={8}
+        style={({ pressed }) => [
+          styles.codeFallback,
+          pressed && { opacity: 0.6 },
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel="Back to password sign-in"
+      >
+        <Text style={styles.codeFallbackLabel}>
+          ← Back to password sign-in
         </Text>
       </Pressable>
     </View>
@@ -763,6 +959,15 @@ const styles = StyleSheet.create({
   },
   buttonDisabled: { opacity: 0.45 },
   buttonPressed: { opacity: 0.75 },
+  codeFallback: {
+    paddingVertical: spacing.sm,
+    alignSelf: "center",
+  },
+  codeFallbackLabel: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
+    color: colors.accent,
+  },
   identityRow: {
     flexDirection: "row",
     alignItems: "center",
