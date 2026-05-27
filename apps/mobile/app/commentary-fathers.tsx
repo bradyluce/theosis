@@ -310,6 +310,22 @@ export default function CommentaryFathersScreen() {
     return unique;
   }, [catalogQuery.data?.people]);
 
+  // Dedupe orderedSlugs at render time — presets may share Fathers
+  // (Chrysostom appears in both "Chrysostom & Cappadocians" and
+  // "Liturgical Greats"), and the prefs may also carry old duplicate
+  // entries from before this fix landed. Without this, the same Person
+  // object would be rendered twice with the same React `key`.
+  const dedupedOrderedSlugs = useMemo<string[]>(() => {
+    const seen = new Set<string>();
+    const out: string[] = [];
+    for (const s of orderedSlugs) {
+      if (seen.has(s)) continue;
+      seen.add(s);
+      out.push(s);
+    }
+    return out;
+  }, [orderedSlugs]);
+
   // Display list — orderedSlugs first (in user-set order), then
   // alphabetical remainder. Hidden ones still render here so the user
   // can find and unhide them.
@@ -317,7 +333,7 @@ export default function CommentaryFathersScreen() {
     const slugToPerson = new Map(allPeople.map((p) => [p.slug, p]));
     const ordered: Person[] = [];
     const seen = new Set<string>();
-    for (const slug of orderedSlugs) {
+    for (const slug of dedupedOrderedSlugs) {
       const p = slugToPerson.get(slug);
       if (p) {
         ordered.push(p);
@@ -328,18 +344,36 @@ export default function CommentaryFathersScreen() {
       .filter((p) => !seen.has(p.slug))
       .sort((a, b) => a.name.localeCompare(b.name));
     return [...ordered, ...remaining];
-  }, [allPeople, orderedSlugs]);
+  }, [allPeople, dedupedOrderedSlugs]);
 
   // Pinned preview — first N from the user's explicit ordering. When
   // ordering is empty (default), this section hides; the presets above
   // are the discovery path.
   const pinned = useMemo<Person[]>(() => {
     const slugToPerson = new Map(allPeople.map((p) => [p.slug, p]));
-    return orderedSlugs
+    return dedupedOrderedSlugs
       .slice(0, PINNED_PREVIEW_COUNT)
       .map((slug) => slugToPerson.get(slug))
       .filter((p): p is Person => Boolean(p));
-  }, [allPeople, orderedSlugs]);
+  }, [allPeople, dedupedOrderedSlugs]);
+
+  // Which presets are currently "applied" — every slug in the preset
+  // is present in the user's orderedSlugs. Drives the check badge on
+  // the preset card. Stacking is the natural state: applying multiple
+  // presets ANDs their slugs together at the head of the ordering.
+  const appliedPresetIds = useMemo<Set<string>>(() => {
+    const orderedSet = new Set(dedupedOrderedSlugs);
+    const availableSlugs = new Set(allPeople.map((p) => p.slug));
+    const out = new Set<string>();
+    for (const preset of PRESET_ORDERINGS) {
+      // A preset counts as "applied" when every one of its slugs that
+      // exists in the catalog is present in the user's ordering.
+      const validSlugs = preset.slugs.filter((s) => availableSlugs.has(s));
+      if (validSlugs.length === 0) continue;
+      if (validSlugs.every((s) => orderedSet.has(s))) out.add(preset.id);
+    }
+    return out;
+  }, [dedupedOrderedSlugs, allPeople]);
 
   // Filtered + searched view of the long list. Search matches name +
   // honorific; era label too so "cappadocian" finds the right group.
@@ -354,6 +388,19 @@ export default function CommentaryFathersScreen() {
     });
   }, [displayList, searchQuery]);
 
+  // Dedupe both slug arrays on the way to disk. Old buggy state may
+  // have repeats; we don't want to keep writing them back.
+  function dedupe(slugs: string[]): string[] {
+    const seen = new Set<string>();
+    const out: string[] = [];
+    for (const s of slugs) {
+      if (seen.has(s)) continue;
+      seen.add(s);
+      out.push(s);
+    }
+    return out;
+  }
+
   async function commit(next: {
     orderedSlugs?: string[];
     hiddenSlugs?: string[];
@@ -361,8 +408,8 @@ export default function CommentaryFathersScreen() {
   }) {
     await updateProfilePrefs({
       commentaryFathers: {
-        orderedSlugs: next.orderedSlugs ?? orderedSlugs,
-        hiddenSlugs: next.hiddenSlugs ?? hiddenSlugs,
+        orderedSlugs: dedupe(next.orderedSlugs ?? orderedSlugs),
+        hiddenSlugs: dedupe(next.hiddenSlugs ?? hiddenSlugs),
         quickFilter: next.quickFilter ?? quickFilterId,
       },
     });
@@ -410,12 +457,30 @@ export default function CommentaryFathersScreen() {
 
   function applyPreset(preset: typeof PRESET_ORDERINGS[number]) {
     const availableSlugs = new Set(allPeople.map((p) => p.slug));
-    // Keep only the preset slugs that exist in the catalog (silently
-    // ignore unknowns). The display-list useMemo above handles "the
-    // rest" — preserving alphabetical order for non-pinned fathers.
-    const validHead = preset.slugs.filter((s) => availableSlugs.has(s));
-    setOrderedSlugs(validHead);
-    void commit({ orderedSlugs: validHead });
+    const presetSlugs = preset.slugs.filter((s) => availableSlugs.has(s));
+    const existingSet = new Set(dedupedOrderedSlugs);
+    if (appliedPresetIds.has(preset.id)) {
+      // Already applied — tapping again removes this preset's slugs
+      // from the explicit order (so the user can toggle a group off).
+      const presetSet = new Set(presetSlugs);
+      const next = dedupedOrderedSlugs.filter((s) => !presetSet.has(s));
+      setOrderedSlugs(next);
+      void commit({ orderedSlugs: next });
+      return;
+    }
+    // Not yet applied — append the preset's slugs (those not already
+    // in the order) to the END. Multiple presets stack: the first one
+    // tapped takes the top slot, the next preset's slugs come after,
+    // etc. Existing manual reorders are preserved.
+    const additions = presetSlugs.filter((s) => !existingSet.has(s));
+    const next = [...dedupedOrderedSlugs, ...additions];
+    setOrderedSlugs(next);
+    void commit({ orderedSlugs: next });
+  }
+
+  function clearPinnedOrder() {
+    setOrderedSlugs([]);
+    void commit({ orderedSlugs: [] });
   }
 
   function unpin(slug: string) {
@@ -509,32 +574,75 @@ export default function CommentaryFathersScreen() {
         {/* Common orderings — presets */}
         <Card>
           <SectionHeader
-            eyebrow="One tap"
+            eyebrow="Stack them"
             title="Common orderings"
             rule
           />
           <Text style={styles.cardHint}>
-            Apply a curated head order. You can refine afterward.
+            Tap to add a group to your pinned list. Tap again to remove.
+            Stack as many as you want — the first one you tap leads.
           </Text>
           <View style={styles.presetGrid}>
-            {PRESET_ORDERINGS.map((preset) => (
-              <Pressable
-                key={preset.id}
-                onPress={() => applyPreset(preset)}
-                style={({ pressed }) => [
-                  styles.presetCard,
-                  pressed && { opacity: 0.85 },
-                ]}
-                accessibilityRole="button"
-                accessibilityLabel={`${preset.label}. ${preset.description}`}
-              >
-                <Text style={styles.presetLabel}>{preset.label}</Text>
-                <Text style={styles.presetDescription}>
-                  {preset.description}
-                </Text>
-              </Pressable>
-            ))}
+            {PRESET_ORDERINGS.map((preset) => {
+              const applied = appliedPresetIds.has(preset.id);
+              return (
+                <Pressable
+                  key={preset.id}
+                  onPress={() => applyPreset(preset)}
+                  style={({ pressed }) => [
+                    styles.presetCard,
+                    applied && styles.presetCardApplied,
+                    pressed && { opacity: 0.85 },
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: applied }}
+                  accessibilityLabel={`${preset.label}. ${preset.description}`}
+                >
+                  <View style={styles.presetHeader}>
+                    <Text
+                      style={[
+                        styles.presetLabel,
+                        applied && styles.presetLabelApplied,
+                      ]}
+                    >
+                      {preset.label}
+                    </Text>
+                    <View
+                      style={[
+                        styles.presetBadge,
+                        applied && styles.presetBadgeApplied,
+                      ]}
+                    >
+                      <Feather
+                        name={applied ? "check" : "plus"}
+                        size={11}
+                        color={applied ? colors.background : colors.accent}
+                      />
+                    </View>
+                  </View>
+                  <Text style={styles.presetDescription}>
+                    {preset.description}
+                  </Text>
+                </Pressable>
+              );
+            })}
           </View>
+          {dedupedOrderedSlugs.length > 0 ? (
+            <Pressable
+              onPress={clearPinnedOrder}
+              style={({ pressed }) => [
+                styles.clearPinnedButton,
+                pressed && { opacity: 0.7 },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Clear pinned order"
+            >
+              <Feather name="x" size={11} color={colors.oxbloodInk} />
+              <Text style={styles.clearPinnedLabel}>
+                Clear pinned order
+              </Text>
+            </Pressable>
+          ) : null}
         </Card>
 
         {/* Pinned chips — only when explicit ordering is set */}
@@ -837,18 +945,65 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(212, 168, 87, 0.06)",
     gap: 4,
   },
+  presetCardApplied: {
+    borderColor: colors.accent,
+    backgroundColor: colors.accentSoft,
+  },
+  presetHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: spacing.sm,
+  },
   presetLabel: {
+    flex: 1,
     fontFamily: fonts.serif,
     fontSize: 16,
     color: colors.ink,
     letterSpacing: -0.2,
     fontWeight: "600",
   },
+  presetLabelApplied: { color: colors.accent },
+  presetBadge: {
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: "rgba(212, 168, 87, 0.4)",
+    backgroundColor: "rgba(212, 168, 87, 0.10)",
+  },
+  presetBadgeApplied: {
+    backgroundColor: colors.accent,
+    borderColor: colors.accent,
+  },
   presetDescription: {
     fontFamily: fonts.serifItalic,
     fontSize: 12.5,
     color: colors.inkMuted,
     lineHeight: 18,
+  },
+  clearPinnedButton: {
+    alignSelf: "center",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 6,
+    marginTop: spacing.md,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: "rgba(139, 58, 58, 0.3)",
+    backgroundColor: "rgba(139, 58, 58, 0.06)",
+  },
+  clearPinnedLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10.5,
+    fontWeight: "700",
+    color: colors.oxbloodInk,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
   },
 
   // Pinned chips

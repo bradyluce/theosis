@@ -711,28 +711,29 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   headerSizeButton: {
-    position: "absolute",
-    right: spacing.lg,
-    top: spacing.md,
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    // Sits in the flex row to the right of the next-chapter chevron
+    // — used to be absolute-positioned over it, which hid the button
+    // behind the chevron's Pressable. Inline keeps it visible and
+    // tappable on every screen size.
+    width: 38,
+    height: 38,
+    borderRadius: 19,
     borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.lineGilt,
-    backgroundColor: "rgba(212, 168, 87, 0.06)",
+    borderColor: "rgba(212, 168, 87, 0.55)",
+    backgroundColor: colors.accentSoft,
     alignItems: "center",
     justifyContent: "center",
+    marginLeft: spacing.xs,
   },
   headerSizeButtonOpen: {
     backgroundColor: colors.accentSoft,
     borderColor: "rgba(212, 168, 87, 0.55)",
   },
   headerSizeButtonLabel: {
-    fontFamily: fonts.serif,
-    fontSize: 13,
-    fontWeight: "600",
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 15,
     color: colors.accent,
-    letterSpacing: 0.3,
+    letterSpacing: 0.2,
   },
   textSizePopover: {
     flexDirection: "row",
