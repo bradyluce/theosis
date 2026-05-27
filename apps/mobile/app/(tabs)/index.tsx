@@ -34,6 +34,7 @@ import {
   Wordmark,
 } from "@/components/theosis/primitives";
 import { ProfileDrawer } from "@/components/theosis/profile-drawer";
+import { usePatronIcon } from "@/lib/use-patron-icon";
 import {
   colors,
   elevation,
@@ -176,6 +177,7 @@ export default function DailyScreen() {
     DEFAULT_DAILY_CARD_ORDER,
   );
   const [profile, setProfile] = useState<ProfilePrefs>({});
+  const patronIcon = usePatronIcon(profile.patronSaintSlug);
   const [streak, setStreak] = useState(0);
   const [savedCount, setSavedCount] = useState(0);
   const [reorderHinted, setReorderHinted] = useState(false);
@@ -342,9 +344,18 @@ export default function DailyScreen() {
             accessibilityLabel="Open profile"
           >
             <Halo size={40}>
-              <Text style={styles.avatarInitial}>
-                {(profile.displayName?.charAt(0) ?? "T").toUpperCase()}
-              </Text>
+              {patronIcon ? (
+                <Image
+                  source={{ uri: patronIcon.src }}
+                  accessibilityLabel={patronIcon.alt}
+                  style={styles.avatarImage}
+                  contentFit="cover"
+                />
+              ) : (
+                <Text style={styles.avatarInitial}>
+                  {(profile.displayName?.charAt(0) ?? "T").toUpperCase()}
+                </Text>
+              )}
             </Halo>
           </Pressable>
         </View>
@@ -1090,6 +1101,10 @@ const styles = StyleSheet.create({
     fontFamily: fonts.serifBoldItalic,
     fontSize: 18,
     color: colors.accent,
+  },
+  avatarImage: {
+    width: "100%",
+    height: "100%",
   },
 
   loading: { paddingVertical: spacing["3xl"], alignItems: "center" },

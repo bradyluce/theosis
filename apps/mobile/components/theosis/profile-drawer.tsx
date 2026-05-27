@@ -1,4 +1,6 @@
+import { useUser } from "@clerk/clerk-expo";
 import Feather from "@expo/vector-icons/Feather";
+import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useEffect, useRef } from "react";
@@ -23,6 +25,7 @@ import {
 } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import type { ProfilePrefs } from "@/lib/preferences";
+import { usePatronIcon } from "@/lib/use-patron-icon";
 
 // Slide-in profile drawer — opened from the Daily masthead avatar. The
 // composition reads like a private icon corner: halo avatar with candle
@@ -70,8 +73,19 @@ export function ProfileDrawer({
     setTimeout(() => router.push(href as never), 200);
   };
 
-  const displayName = profile.displayName?.trim() || "Friend";
+  // Display name resolution: Clerk's first name wins when signed in (the
+  // authoritative identity), then local prefs.displayName, then "Friend"
+  // as a last resort when neither is set.
+  const { user } = useUser();
+  const clerkName =
+    user?.firstName ??
+    user?.fullName ??
+    user?.primaryEmailAddress?.emailAddress?.split("@")[0] ??
+    null;
+  const displayName =
+    clerkName?.trim() || profile.displayName?.trim() || "Friend";
   const initial = displayName.charAt(0).toUpperCase();
+  const patronIcon = usePatronIcon(profile.patronSaintSlug);
   const statusLabel =
     profile.status === "christian"
       ? "Orthodox Christian"
@@ -127,7 +141,16 @@ export function ProfileDrawer({
             {/* Identity — halo avatar with glow, name in display italic */}
             <View style={styles.identity}>
               <Halo size={72} glow>
-                <Text style={styles.avatarLetter}>{initial}</Text>
+                {patronIcon ? (
+                  <Image
+                    source={{ uri: patronIcon.src }}
+                    accessibilityLabel={patronIcon.alt}
+                    style={styles.avatarImage}
+                    contentFit="cover"
+                  />
+                ) : (
+                  <Text style={styles.avatarLetter}>{initial}</Text>
+                )}
               </Halo>
               <Text style={styles.displayName}>{displayName}</Text>
               {statusLabel ? (
@@ -291,6 +314,10 @@ const styles = StyleSheet.create({
     fontFamily: fonts.serifBoldItalic,
     fontSize: 32,
     color: colors.accent,
+  },
+  avatarImage: {
+    width: "100%",
+    height: "100%",
   },
   displayName: {
     fontFamily: fonts.serifBoldItalic,

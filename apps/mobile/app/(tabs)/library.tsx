@@ -22,8 +22,10 @@ import {
   Card,
   Eyebrow,
   GiltRule,
+  Halo,
   Wordmark,
 } from "@/components/theosis/primitives";
+import { ProfileDrawer } from "@/components/theosis/profile-drawer";
 import {
   colors,
   elevation,
@@ -34,10 +36,15 @@ import {
 } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 import {
+  type ProfilePrefs,
   addRecentSearch,
   clearRecentSearches,
+  getActivityStreak,
+  getProfilePrefs,
   getRecentSearches,
+  getSavedVerses,
 } from "@/lib/preferences";
+import { usePatronIcon } from "@/lib/use-patron-icon";
 
 // Library — the consolidated discover-and-browse tab. Persistent search at
 // the top; when the query is empty the page renders the editorial spreads
@@ -235,6 +242,28 @@ export default function LibraryScreen() {
   const debouncedQuery = useDebounced(query.trim(), 200);
   const searching = debouncedQuery.length >= 2;
 
+  // Profile drawer trigger — same UX as the Daily masthead avatar.
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [profile, setProfile] = useState<ProfilePrefs>({});
+  const [savedCount, setSavedCount] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const patronIcon = usePatronIcon(profile.patronSaintSlug);
+  useEffect(() => {
+    let canceled = false;
+    void getProfilePrefs().then((p) => {
+      if (!canceled) setProfile(p);
+    });
+    void getSavedVerses().then((v) => {
+      if (!canceled) setSavedCount(v.length);
+    });
+    void getActivityStreak().then((s) => {
+      if (!canceled) setStreak(s);
+    });
+    return () => {
+      canceled = true;
+    };
+  }, []);
+
   // Scroll-to-section: each section block reports its Y position via onLayout.
   // Tapping a chip scrolls the ScrollView to that Y minus a small breathing
   // pad. Ys are captured into state so the chip jumper survives data loads
@@ -405,6 +434,27 @@ export default function LibraryScreen() {
 
       <View style={styles.masthead}>
         <Wordmark size={18} subline="Library" />
+        <Pressable
+          onPress={() => setDrawerOpen(true)}
+          hitSlop={10}
+          accessibilityRole="button"
+          accessibilityLabel="Open profile"
+        >
+          <Halo size={40}>
+            {patronIcon ? (
+              <Image
+                source={{ uri: patronIcon.src }}
+                accessibilityLabel={patronIcon.alt}
+                style={styles.avatarImage}
+                contentFit="cover"
+              />
+            ) : (
+              <Text style={styles.avatarInitial}>
+                {(profile.displayName?.charAt(0) ?? "T").toUpperCase()}
+              </Text>
+            )}
+          </Halo>
+        </Pressable>
       </View>
       <GiltRule full style={{ marginHorizontal: spacing.xl }} />
 
@@ -513,6 +563,14 @@ export default function LibraryScreen() {
           />
         )}
       </ScrollView>
+
+      <ProfileDrawer
+        visible={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        profile={profile}
+        streak={streak}
+        savedCount={savedCount}
+      />
     </SafeAreaView>
   );
 }
@@ -1121,6 +1179,15 @@ const styles = StyleSheet.create({
     paddingTop: spacing.sm,
     paddingBottom: spacing.md,
     gap: spacing.md,
+  },
+  avatarInitial: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 18,
+    color: colors.accent,
+  },
+  avatarImage: {
+    width: "100%",
+    height: "100%",
   },
 
   scroll: { flex: 1 },

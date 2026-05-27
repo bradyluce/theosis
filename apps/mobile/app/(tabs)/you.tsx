@@ -1,5 +1,6 @@
 import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo";
 import Feather from "@expo/vector-icons/Feather";
+import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { useEffect, useState } from "react";
@@ -21,6 +22,7 @@ import {
   SectionHeader,
   Wordmark,
 } from "@/components/theosis/primitives";
+import { ProfileDrawer } from "@/components/theosis/profile-drawer";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import {
   type ProfilePrefs,
@@ -35,6 +37,7 @@ import {
   getSavedVerses,
   recordActivityToday,
 } from "@/lib/preferences";
+import { usePatronIcon } from "@/lib/use-patron-icon";
 
 // You — the personal corner. Identity hero with halo avatar, two display
 // numerals (streak + saved), an editorial activity timeline, and quiet
@@ -44,6 +47,8 @@ type ActivityTab = "all" | "saved" | "reading" | "commentary" | "daily";
 
 export default function YouScreen() {
   const [prefs, setPrefs] = useState<ProfilePrefs>({});
+  const patronIcon = usePatronIcon(prefs.patronSaintSlug);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [streak, setStreak] = useState(0);
   const [saved, setSaved] = useState<SavedVerse[]>([]);
   const [readingList, setReadingList] = useState<ReadingListItem[]>([]);
@@ -167,16 +172,23 @@ export default function YouScreen() {
       <View style={styles.masthead}>
         <Wordmark size={18} subline="Profile" />
         <Pressable
-          onPress={() => router.push("/settings")}
-          hitSlop={8}
+          onPress={() => setDrawerOpen(true)}
+          hitSlop={10}
           accessibilityRole="button"
-          accessibilityLabel="Settings"
-          style={({ pressed }) => [
-            styles.settingsButton,
-            pressed && { opacity: 0.6 },
-          ]}
+          accessibilityLabel="Open profile"
         >
-          <Feather name="settings" size={18} color={colors.inkMuted} />
+          <Halo size={40}>
+            {patronIcon ? (
+              <Image
+                source={{ uri: patronIcon.src }}
+                accessibilityLabel={patronIcon.alt}
+                style={styles.avatarImage}
+                contentFit="cover"
+              />
+            ) : (
+              <Text style={styles.mastheadAvatarLetter}>{initial}</Text>
+            )}
+          </Halo>
         </Pressable>
       </View>
       <GiltRule full style={{ marginHorizontal: spacing.xl }} />
@@ -189,7 +201,16 @@ export default function YouScreen() {
         {/* Identity hero */}
         <View style={styles.identityHero}>
           <Halo size={96} glow>
-            <Text style={styles.avatarLetter}>{initial}</Text>
+            {patronIcon ? (
+              <Image
+                source={{ uri: patronIcon.src }}
+                accessibilityLabel={patronIcon.alt}
+                style={styles.avatarImage}
+                contentFit="cover"
+              />
+            ) : (
+              <Text style={styles.avatarLetter}>{initial}</Text>
+            )}
           </Halo>
           <Text style={styles.displayName}>{displayName}</Text>
           <SignedOut>
@@ -413,6 +434,14 @@ export default function YouScreen() {
           </View>
         </View>
       </ScrollView>
+
+      <ProfileDrawer
+        visible={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        profile={prefs}
+        streak={streak}
+        savedCount={saved.length}
+      />
     </SafeAreaView>
   );
 }
@@ -468,16 +497,6 @@ const styles = StyleSheet.create({
     paddingTop: spacing.sm,
     paddingBottom: spacing.md,
   },
-  settingsButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    alignItems: "center",
-    justifyContent: "center",
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
-  },
 
   scroll: { flex: 1 },
   scrollContent: {
@@ -492,6 +511,15 @@ const styles = StyleSheet.create({
   avatarLetter: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 44,
+    color: colors.accent,
+  },
+  avatarImage: {
+    width: "100%",
+    height: "100%",
+  },
+  mastheadAvatarLetter: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 18,
     color: colors.accent,
   },
   displayName: {
