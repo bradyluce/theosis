@@ -1,9 +1,28 @@
 import Feather from "@expo/vector-icons/Feather";
 import * as Clipboard from "expo-clipboard";
-import * as FileSystem from "expo-file-system/legacy";
 import { Image } from "expo-image";
 import * as Sharing from "expo-sharing";
 import { useEffect, useRef, useState } from "react";
+
+// expo-file-system is loaded defensively: it was added to package.json
+// after the current preview/production EAS binaries were built, so an
+// OTA Update can deliver this JS to clients whose native side doesn't
+// have FileSystem autolinked yet. require() is wrapped so the modal
+// still mounts; the Share/Save buttons disable when FileSystem is
+// missing and Copy keeps working. After the next `eas build`, the
+// module loads normally on all clients.
+type FileSystemModule = typeof import("expo-file-system/legacy");
+let fileSystemModule: FileSystemModule | null | undefined;
+function loadFileSystem(): FileSystemModule | null {
+  if (fileSystemModule !== undefined) return fileSystemModule;
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    fileSystemModule = require("expo-file-system/legacy") as FileSystemModule;
+  } catch {
+    fileSystemModule = null;
+  }
+  return fileSystemModule;
+}
 import {
   ActivityIndicator,
   Animated,
@@ -55,6 +74,10 @@ export function QuoteCardModal({
   const [busy, setBusy] = useState<"share" | "save" | "copy" | null>(null);
   const [copied, setCopied] = useState(false);
   const [imageError, setImageError] = useState(false);
+  // `false` means we have FileSystem (or haven't checked yet, treated as
+  // available so the buttons stay enabled). Flipped to `true` only after
+  // a confirmed missing-module probe so the affordance doesn't flicker.
+  const fileSystemMissing = loadFileSystem() === null;
 
   useEffect(() => {
     Animated.parallel([
@@ -96,11 +119,13 @@ export function QuoteCardModal({
     .slice(0, 40);
   const filename = `theosis-${baseSlug || "quote"}.png`;
 
-  async function downloadToCache(): Promise<string> {
-    const cacheDir = FileSystem.cacheDirectory ?? FileSystem.documentDirectory;
-    if (!cacheDir) throw new Error("no cache directory available");
+  async function downloadToCache(): Promise<string | null> {
+    const fs = loadFileSystem();
+    if (!fs) return null;
+    const cacheDir = fs.cacheDirectory ?? fs.documentDirectory;
+    if (!cacheDir) return null;
     const target = `${cacheDir}${filename}`;
-    const result = await FileSystem.downloadAsync(imageUrl, target);
+    const result = await fs.downloadAsync(imageUrl, target);
     if (result.status !== 200) {
       throw new Error(`download failed: HTTP ${result.status}`);
     }
@@ -124,6 +149,7 @@ export function QuoteCardModal({
   async function handleShare() {
     await withBusy("share", async () => {
       const uri = await downloadToCache();
+      if (!uri) return; // FileSystem not linked — gracefully no-op.
       const available = await Sharing.isAvailableAsync();
       if (!available) return;
       await Sharing.shareAsync(uri, {
@@ -141,6 +167,7 @@ export function QuoteCardModal({
     // (Files, Photos, etc.), so this is really a label difference.
     await withBusy("save", async () => {
       const uri = await downloadToCache();
+      if (!uri) return;
       const available = await Sharing.isAvailableAsync();
       if (!available) return;
       await Sharing.shareAsync(uri, {
@@ -227,14 +254,14 @@ export function QuoteCardModal({
               label={busy === "share" ? "…" : "Share"}
               primary
               onPress={handleShare}
-              disabled={busy !== null}
+              disabled={busy !== null || fileSystemMissing}
               busy={busy === "share"}
             />
             <ShareAction
               icon="download"
               label={busy === "save" ? "…" : "Save"}
               onPress={handleSave}
-              disabled={busy !== null}
+              disabled={busy !== null || fileSystemMissing}
               busy={busy === "save"}
             />
             <ShareAction
@@ -245,6 +272,13 @@ export function QuoteCardModal({
               busy={busy === "copy"}
             />
           </View>
+
+          {fileSystemMissing ? (
+            <Text style={styles.fallbackNote}>
+              Image sharing needs a fresh app update — copy the text for
+              now, or update to the latest build.
+            </Text>
+          ) : null}
         </Animated.View>
       </View>
     </Modal>
@@ -393,5 +427,13 @@ const styles = StyleSheet.create({
   },
   actionLabelPrimary: {
     color: colors.accent,
+  },
+  fallbackNote: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 12,
+    lineHeight: 18,
+    color: colors.inkSoft,
+    marginTop: spacing.md,
+    textAlign: "center",
   },
 });
