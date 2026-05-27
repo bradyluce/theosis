@@ -179,19 +179,22 @@ export default function ChapterReaderScreen() {
 
   // Scroll restoration. When the user returns to a chapter they've
   // already started, we jump them to the last saved scroll position
-  // instead of the top. The position is debounced-written on every
-  // scroll event so we don't thrash AsyncStorage.
+  // instead of the top.
+  //
+  // V2 changes after v1 unreliability:
+  //   - Throttled writer (250ms minimum interval) instead of debounce
+  //     so the position is captured even on quick exits.
+  //   - onContentSizeChange-driven restore so the scrollTo waits for
+  //     content to actually be tall enough.
+  //   - Three retry attempts (60/300/800ms) as belt-and-suspenders
+  //     against any late layout shift.
   const scrollRef = useRef<ScrollView>(null);
   const lastWrittenRef = useRef<number>(0);
-  const writeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  // Track whether we've already attempted the restore — once, after
-  // the data loads. Otherwise we'd fight the user's manual scrolls.
+  const lastWriteTimeRef = useRef<number>(0);
   const [pendingRestore, setPendingRestore] = useState<number | null>(null);
   const [restored, setRestored] = useState(false);
 
-  // Load the saved position when the chapter ID changes. The actual
-  // scrollTo runs in a separate effect tied to chapter data being
-  // ready, so the ScrollView has rendered its content first.
+  // Load the saved position when the chapter ID changes.
   useEffect(() => {
     let canceled = false;
     setRestored(false);
@@ -211,9 +214,10 @@ export default function ChapterReaderScreen() {
     };
   }, [workId, order]);
 
-  // Once the chapter data is in and we have a pending restore Y,
-  // scroll there. Setting restored:true prevents re-firing if the
-  // chapter data refetches.
+  // Restore via multiple retries. The 60ms initial attempt sometimes
+  // raced React's first layout pass, so the scrollTo silently clamped
+  // to the smaller content size. Three attempts at increasing delays
+  // catch the layout as the prose paragraphs measure and re-measure.
   useEffect(() => {
     if (restored) return;
     if (!chapterQuery.data) return;
@@ -221,51 +225,66 @@ export default function ChapterReaderScreen() {
       setRestored(true);
       return;
     }
-    // Defer one frame so the ScrollView has measured its content.
-    const t = setTimeout(() => {
-      scrollRef.current?.scrollTo({ y: pendingRestore, animated: false });
-      setRestored(true);
-    }, 60);
-    return () => clearTimeout(t);
+    const target = pendingRestore;
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    for (const delay of [60, 300, 800]) {
+      timers.push(
+        setTimeout(() => {
+          scrollRef.current?.scrollTo({ y: target, animated: false });
+        }, delay),
+      );
+    }
+    timers.push(
+      setTimeout(() => {
+        setRestored(true);
+      }, 900),
+    );
+    return () => timers.forEach(clearTimeout);
   }, [chapterQuery.data, pendingRestore, restored]);
 
-  // Track the latest scroll Y so we can flush it on blur even if the
-  // debounce timer hasn't fired yet. Plain ref — no re-renders.
+  // Also try once when ScrollView reports its content size changed —
+  // catches the case where chapterQuery.data was cached and content
+  // is large enough on second visit BEFORE the timers fire.
+  const handleContentSizeChange = useCallback(
+    (_width: number, height: number) => {
+      if (restored) return;
+      if (pendingRestore === null) return;
+      if (height < pendingRestore + 100) return;
+      requestAnimationFrame(() => {
+        scrollRef.current?.scrollTo({ y: pendingRestore, animated: false });
+      });
+    },
+    [restored, pendingRestore],
+  );
+
+  // Track the latest scroll Y so we can flush it on blur.
   const currentYRef = useRef<number>(0);
 
-  // Debounced scroll-position writer. 450ms after the user stops
-  // scrolling, we commit the y to AsyncStorage. We skip writes that
-  // are within 16px of the previous one to avoid recording every
-  // tiny pixel shift.
+  // Throttled scroll-position writer. Every meaningful scroll change
+  // (>=16px) commits to AsyncStorage at most 4 times per second.
+  // Switched from debounce → throttle because debounce never fired
+  // when the user scrolled-then-immediately-tapped-back: the 450ms
+  // timer was cleared on unmount before it could write.
   const handleScroll = useCallback(
     (e: NativeSyntheticEvent<NativeScrollEvent>) => {
       const y = e.nativeEvent.contentOffset.y;
       currentYRef.current = y;
       if (Math.abs(y - lastWrittenRef.current) < 16) return;
-      if (writeTimerRef.current) clearTimeout(writeTimerRef.current);
-      writeTimerRef.current = setTimeout(() => {
-        lastWrittenRef.current = y;
-        void setWorkPosition(workId, order, y);
-      }, 450);
+      const now = Date.now();
+      if (now - lastWriteTimeRef.current < 250) return;
+      lastWriteTimeRef.current = now;
+      lastWrittenRef.current = y;
+      void setWorkPosition(workId, order, y);
     },
     [workId, order],
   );
 
-  // Flush on blur. The old version just cleared the timer; if the
-  // user scrolled and immediately tapped back, the 450ms timer never
-  // fired and the position was lost. Now we ALSO commit the most
-  // recent Y from currentYRef before the timer dies.
+  // Flush on blur as a final guarantee. Captures the very last scroll
+  // position even if it didn't pass the 250ms throttle gate.
   useFocusEffect(
     useCallback(() => {
       return () => {
-        if (writeTimerRef.current) {
-          clearTimeout(writeTimerRef.current);
-          writeTimerRef.current = null;
-        }
         const y = currentYRef.current;
-        // setWorkPosition itself drops anything under ~4px as "top".
-        // Re-check the 16px change threshold so we don't bloat the
-        // store with no-op writes.
         if (Math.abs(y - lastWrittenRef.current) >= 16) {
           lastWrittenRef.current = y;
           void setWorkPosition(workId, order, y);
@@ -273,15 +292,6 @@ export default function ChapterReaderScreen() {
       };
     }, [workId, order]),
   );
-
-  // Belt-and-suspenders: on full unmount also clear any lingering timer.
-  useEffect(() => {
-    return () => {
-      if (writeTimerRef.current) {
-        clearTimeout(writeTimerRef.current);
-      }
-    };
-  }, []);
 
   return (
     <>
@@ -313,7 +323,8 @@ export default function ChapterReaderScreen() {
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
           onScroll={handleScroll}
-          scrollEventThrottle={120}
+          scrollEventThrottle={60}
+          onContentSizeChange={handleContentSizeChange}
         >
           {chapterQuery.isLoading ? (
             <View style={styles.loading}>
@@ -379,32 +390,57 @@ export default function ChapterReaderScreen() {
                         text: paragraph.text,
                       });
                     // Drop cap on the very first paragraph of the
-                    // chapter — oxblood illuminated initial, mirrors the
-                    // Bible reader's verse-1 treatment.
-                    if (isFirstParagraph && paragraph.text.length > 0) {
+                    // chapter. Switched to an absolute-positioned
+                    // glyph + paragraph paddingLeft so the giant
+                    // oxblood letter never overflows vertically into
+                    // a heading above. Only shown when there's no
+                    // section heading — when there IS one, the dropcap
+                    // was the part that clipped behind it.
+                    if (
+                      isFirstParagraph &&
+                      !section.heading &&
+                      paragraph.text.length > 0
+                    ) {
                       const firstChar = paragraph.text.charAt(0);
                       const rest = paragraph.text.slice(1);
                       return (
-                        <Text
+                        <View
                           key={`p-${sectionIdx}-${pIdx}`}
-                          onPress={onPressParagraph}
                           style={[
-                            styles.paragraph,
-                            scaledParagraph,
-                            tint ? { backgroundColor: tint } : null,
+                            styles.dropCapBlock,
+                            tint
+                              ? {
+                                  backgroundColor: tint,
+                                  borderRadius: radii.card,
+                                }
+                              : null,
                           ]}
-                          accessibilityRole="button"
-                          accessibilityLabel="Paragraph — tap to highlight, copy, or note"
                         >
-                          {paragraph.number !== undefined ? (
-                            <Text style={styles.paragraphNumber}>
-                              {paragraph.number}
-                              {" "}
-                            </Text>
-                          ) : null}
-                          <Text style={styles.dropCap}>{firstChar}</Text>
-                          <Text>{rest}</Text>
-                        </Text>
+                          <Text
+                            style={styles.dropCapGlyph}
+                            accessibilityElementsHidden
+                            importantForAccessibility="no"
+                          >
+                            {firstChar}
+                          </Text>
+                          <Text
+                            onPress={onPressParagraph}
+                            style={[
+                              styles.dropCapParagraph,
+                              scaledParagraph,
+                            ]}
+                            accessibilityRole="button"
+                            accessibilityLabel="Paragraph — tap to highlight, copy, or note"
+                          >
+                            {paragraph.number !== undefined ? (
+                              <Text style={styles.paragraphNumber}>
+                                {paragraph.number}
+                                {" "}
+                              </Text>
+                            ) : null}
+                            {rest}
+                          </Text>
+                        </View>
                       );
                     }
                     return (
@@ -628,17 +664,44 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     letterSpacing: 0.4,
   },
-  // Drop cap — oxblood illuminated initial on the opening paragraph.
-  // lineHeight must be >= fontSize so the glyph never overflows
-  // upward into the section heading above. Was 50 with fontSize 56,
-  // which caused the character ascender to overlap whatever sat
-  // above.
+  // Legacy inline drop-cap style — kept only for reference if we
+  // ever need to render a small inline initial.
   dropCap: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 54,
     lineHeight: 58,
     color: colors.oxbloodInk,
     letterSpacing: -2,
+  },
+  // The opening drop cap is rendered as an absolutely-positioned
+  // glyph inside a block wrapper. The wrapper has a paddingLeft so
+  // the paragraph text starts to the right of the cap, and a
+  // minHeight so the glyph never overflows downward into the next
+  // paragraph either. Crucially, by being position:absolute the cap
+  // can never vertically push or overlap any neighbour.
+  dropCapBlock: {
+    position: "relative",
+    minHeight: 70,
+    paddingLeft: 56,
+    marginTop: spacing.sm,
+  },
+  dropCapGlyph: {
+    position: "absolute",
+    top: -6,
+    left: 0,
+    width: 52,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 64,
+    lineHeight: 64,
+    color: colors.oxbloodInk,
+    letterSpacing: -2,
+    textAlign: "left",
+  },
+  dropCapParagraph: {
+    fontFamily: fonts.serif,
+    fontSize: 18,
+    lineHeight: 32,
+    color: colors.ink,
   },
 
   // Chapter actions — gilt pill for Mark as read, outline pill for
