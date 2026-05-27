@@ -41,10 +41,18 @@ export default function WorkDetailScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  const work = useMemo(
-    () => libraryQuery.data?.works.find((w) => w.slug === slug),
-    [libraryQuery.data, slug],
-  );
+  const work = useMemo(() => {
+    if (!libraryQuery.data) return undefined;
+    const matches = libraryQuery.data.works.filter((w) => w.slug === slug);
+    if (matches.length === 0) return undefined;
+    // Slug collisions happen when HCF commentary-citation scaffolds share a
+    // slug with the real ingested work (e.g. `origen-against-celsus` exists
+    // as both `hcf:work:origen:against-celsus` with no chapters and
+    // `origen-against-celsus` with 8 chapters). Prefer the one that has a
+    // chapters entry in byWork so the user lands on the readable record.
+    const byWork = libraryQuery.data.index?.byWork;
+    return matches.find((w) => byWork?.[w.id] != null) ?? matches[0];
+  }, [libraryQuery.data, slug]);
 
   const author = useMemo(
     () =>
