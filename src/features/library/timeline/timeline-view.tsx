@@ -7,8 +7,9 @@ import { CaretRight } from "@phosphor-icons/react";
 import type { IconRef, Person } from "@theosis/core";
 import {
   centuryFromYear,
+  centuryFullLabel,
   centuryLabel,
-} from "@/features/library/timeline/era-parser";
+} from "@theosis/core";
 import { cn } from "@/lib/utils";
 
 type TimelinePerson = {
@@ -22,8 +23,24 @@ type TimelineViewProps = {
   people: TimelinePerson[];
 };
 
-const CENTURY_LABELS_FROM = 1;
-const CENTURY_LABELS_TO = 21;
+// BC centuries (negative) render first in reading order — 20th BC down
+// to 1st BC — then 1st AD onward.
+const CENTURY_BC_FROM = 20;
+const CENTURY_BC_TO = 1;
+const CENTURY_AD_FROM = 1;
+const CENTURY_AD_TO = 21;
+
+function orderedCenturies(): number[] {
+  const bc = Array.from(
+    { length: CENTURY_BC_FROM - CENTURY_BC_TO + 1 },
+    (_, i) => -(CENTURY_BC_FROM - i),
+  );
+  const ad = Array.from(
+    { length: CENTURY_AD_TO - CENTURY_AD_FROM + 1 },
+    (_, i) => CENTURY_AD_FROM + i,
+  );
+  return [...bc, ...ad];
+}
 
 export function TimelineView({ people }: TimelineViewProps) {
   // Group by century, sorted by year within each century.
@@ -69,8 +86,7 @@ export function TimelineView({ people }: TimelineViewProps) {
       <CenturyStrip buckets={buckets} />
 
       <div className="space-y-10">
-        {Array.from({ length: CENTURY_LABELS_TO - CENTURY_LABELS_FROM + 1 }, (_, i) => {
-          const c = CENTURY_LABELS_FROM + i;
+        {orderedCenturies().map((c) => {
           const entries = (buckets.get(c) ?? []).filter((entry) =>
             saintsOnly ? entry.person.kind === "saint" : true,
           );
@@ -87,10 +103,9 @@ function CenturyStrip({
 }: {
   buckets: Map<number, TimelinePerson[]>;
 }) {
-  const centuries = Array.from(
-    { length: CENTURY_LABELS_TO - CENTURY_LABELS_FROM + 1 },
-    (_, i) => CENTURY_LABELS_FROM + i,
-  ).filter((c) => (buckets.get(c)?.length ?? 0) > 0);
+  const centuries = orderedCenturies().filter(
+    (c) => (buckets.get(c)?.length ?? 0) > 0,
+  );
 
   return (
     <div className="-mx-4 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:-mx-6 sm:px-6">
@@ -107,6 +122,7 @@ function CenturyStrip({
                 {centuryLabel(c)}
               </span>
               <span className="text-[9px] uppercase tracking-[0.18em] text-ink-soft">
+                {c < 0 ? "BC · " : ""}
                 {count} {count === 1 ? "voice" : "voices"}
               </span>
             </a>
@@ -132,10 +148,18 @@ function CenturySection({
     <section id={`century-${century}`} className="space-y-4 scroll-mt-16">
       <header className="flex items-baseline gap-3 border-b border-line/40 pb-2">
         <h2 className="font-serif text-3xl tracking-tight text-ink">
-          {centuryLabel(century)} century
+          {centuryFullLabel(century)}
         </h2>
         <span className="text-[10px] uppercase tracking-[0.22em] text-ink-soft">
-          {century > 20 ? "Modern" : century > 14 ? "Early modern" : century > 4 ? "Byzantine" : "Patristic"}
+          {century < 0
+            ? "Before Christ"
+            : century > 20
+              ? "Modern"
+              : century > 14
+                ? "Early modern"
+                : century > 4
+                  ? "Byzantine"
+                  : "Patristic"}
         </span>
         <span className="ml-auto text-[10px] uppercase tracking-[0.18em] text-ink-soft">
           {entries.length} {entries.length === 1 ? "voice" : "voices"}

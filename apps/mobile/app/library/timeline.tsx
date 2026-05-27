@@ -15,6 +15,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import {
   type TimelineEntry,
   centuryFromYear,
+  centuryFullLabel,
   centuryLabel,
 } from "@theosis/core";
 
@@ -31,9 +32,14 @@ import { getApi } from "@/lib/api";
 // Patristic timeline. Sticky century strip at the top; tapping a century
 // scrolls the list to that section. Each section shows featured (iconed)
 // people as cards and the rest as a compact list.
+//
+// BC centuries (OT prophets, Joachim & Anna, Joseph the Betrothed) render
+// first in reading order — oldest to newest, then 1st century AD onward.
 
-const CENTURY_FROM = 1;
-const CENTURY_TO = 21;
+const CENTURY_BC_FROM = 20; // 20th century BC — earliest meaningful bucket
+const CENTURY_BC_TO = 1;
+const CENTURY_AD_FROM = 1;
+const CENTURY_AD_TO = 21;
 
 export default function TimelineScreen() {
   const api = getApi();
@@ -61,12 +67,21 @@ export default function TimelineScreen() {
     return map;
   }, [data]);
 
-  const centuries = useMemo(
-    () =>
-      Array.from({ length: CENTURY_TO - CENTURY_FROM + 1 }, (_, i) => CENTURY_FROM + i)
-        .filter((c) => (buckets.get(c)?.length ?? 0) > 0),
-    [buckets],
-  );
+  // Reading order across BC + AD: -20, -19, ..., -1, 1, 2, ..., 21.
+  // Filter to only the centuries that actually have at least one entry.
+  const centuries = useMemo(() => {
+    const bcDescending = Array.from(
+      { length: CENTURY_BC_FROM - CENTURY_BC_TO + 1 },
+      (_, i) => -(CENTURY_BC_FROM - i),
+    );
+    const adAscending = Array.from(
+      { length: CENTURY_AD_TO - CENTURY_AD_FROM + 1 },
+      (_, i) => CENTURY_AD_FROM + i,
+    );
+    return [...bcDescending, ...adAscending].filter(
+      (c) => (buckets.get(c)?.length ?? 0) > 0,
+    );
+  }, [buckets]);
 
   const onCenturyLayout = (c: number) => (e: { nativeEvent: { layout: { y: number } } }) => {
     const y = e.nativeEvent.layout.y;
@@ -174,10 +189,11 @@ export default function TimelineScreen() {
                     pressed && { opacity: 0.8 },
                   ]}
                   accessibilityRole="button"
-                  accessibilityLabel={`Jump to ${centuryLabel(c)} century`}
+                  accessibilityLabel={`Jump to ${centuryFullLabel(c)}`}
                 >
                   <Text style={styles.centuryChipNum}>{centuryLabel(c)}</Text>
                   <Text style={styles.centuryChipCount}>
+                    {c < 0 ? "BC · " : ""}
                     {count} {count === 1 ? "voice" : "voices"}
                   </Text>
                 </Pressable>
@@ -223,7 +239,7 @@ function CenturySection({
   return (
     <View style={styles.section} onLayout={onLayout}>
       <View style={styles.sectionHeader}>
-        <Text style={text.titleLg}>{centuryLabel(century)} century</Text>
+        <Text style={text.titleLg}>{centuryFullLabel(century)}</Text>
         <Text style={styles.sectionMeta}>
           {entries.length} {entries.length === 1 ? "voice" : "voices"}
         </Text>

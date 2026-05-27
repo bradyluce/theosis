@@ -37,11 +37,9 @@ export function FastBanner({ detail, fastingLevel }: FastBannerProps) {
     return <FastFreeFeature name={detail.name} reason={detail.reason} />;
   }
 
-  // Weekly Wed/Fri — keep the compact chip experience.
-  if (detail.fastKind === "weekly") {
-    return <CompactRow icon="moon" label={detail.name} tone="accent" />;
-  }
-
+  // Both seasonal fasts and the weekly Wed/Fri fast get the full feature
+  // card — weekly fasts have the same kind of specific guidance, just
+  // without a day-of-fast counter.
   return (
     <FastFeature
       name={detail.name}

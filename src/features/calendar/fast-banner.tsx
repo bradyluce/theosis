@@ -30,6 +30,9 @@ export function FastBanner({ detail, variant = "compact", className }: FastBanne
     );
   }
 
+  // Seasonal fasts AND the weekly Wed/Fri fast both use the full feature
+  // card — weekly carries the same kind of specific guidance, just
+  // without a day-of-fast counter.
   return (
     <FastView
       name={detail.name}

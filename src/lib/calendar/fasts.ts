@@ -170,65 +170,69 @@ export function composeDailyFastDetail(
 
 const greatLentGuidance: Record<FastSeverity, string> = {
   strict:
-    "Abstain from meat, dairy, eggs, and fish. Wine and oil are permitted on Saturdays and Sundays; fish only on Annunciation and Palm Sunday.",
+    "No meat, poultry, or meat products. No dairy or eggs. No fish. Wine and olive oil only on Saturdays and Sundays. Fish is permitted on Annunciation (Mar 25) and Palm Sunday alone. The deepest fast in the Church year — forty days of preparation for Pascha.",
   standard:
-    "Abstain from meat and dairy throughout. Fish, wine, and oil are permitted on weekends and feast days.",
+    "No meat, poultry, or dairy throughout. No fish on weekdays. Fish, wine, and olive oil permitted on Saturdays, Sundays, Annunciation, and Palm Sunday. The discipline most committed Orthodox households keep for Lent.",
   relaxed:
-    "Abstain from meat and dairy. The fast is medicine — keep what you can and consult your priest for your personal rule.",
+    "No meat or poultry throughout. Many also abstain from dairy and eggs. Fish, wine, and oil are permitted. A simpler keeping of the Great Fast — consult your priest for your personal rule.",
 };
 
 const holyWeekGuidance: Record<FastSeverity, string> = {
   strict:
-    "The strictest week of the year. No meat, dairy, fish, wine, or oil. Many abstain from food entirely on Holy Friday until the burial Vespers.",
+    "The strictest week of the year. No meat, poultry, dairy, eggs, or fish. No wine or oil. Many abstain from food entirely on Holy Friday until the burial Vespers. Eat little; pray much; keep the services.",
   standard:
-    "Strict fast throughout. No meat, dairy, or fish. Many fast more deeply on Holy Friday in keeping with the day.",
+    "No meat, poultry, dairy, eggs, or fish. No wine or oil on weekdays. Many keep Holy Friday more deeply — fasting until the bringing-out of the shroud in the afternoon. Walk with Christ through every service if you can.",
   relaxed:
-    "Strict fast — abstain from meat and dairy. Hold Holy Friday more closely than ordinary days.",
+    "No meat, poultry, or dairy. Many also abstain from fish. Hold Holy Friday more closely than ordinary days — at minimum, no meat or dairy from waking until the evening service.",
 };
 
 const cheesefareGuidance: Record<FastSeverity, string> = {
   strict:
-    "Meatfare has ended; dairy is still permitted through Sunday. A gentle ramp into the Great Fast.",
+    "Meatfare has ended — no meat or poultry. Dairy and eggs are still permitted through Sunday. Fish too. A gentle ramp into the Great Fast: each day this week tasted of the discipline ahead while keeping the comforts that fall away on Monday.",
   standard:
-    "Meatfare has ended; dairy is still permitted through Sunday. A gentle ramp into the Great Fast.",
+    "No meat or poultry. Dairy, eggs, and fish are still permitted through Sunday. The Church eases us into the fast — taste the milk and cheese while you can, and use this week to set your house in order.",
   relaxed:
-    "Meatfare has ended; dairy is still permitted through Sunday. A gentle ramp into the Great Fast.",
+    "No meat or poultry — but dairy, eggs, and fish are all still permitted through Sunday. Sometimes called Maslenitsa in the Slavic tradition: enjoy the dairy in moderation, and prepare your heart for Lent.",
 };
 
 const apostlesGuidance: Record<FastSeverity, string> = {
   strict:
-    "Abstain from meat, dairy, and eggs. Fish, wine, and oil follow weekday rules in the Typikon.",
+    "No meat, poultry, or meat products. No dairy or eggs. Fish permitted on most days (not Wed/Fri). Wine and oil follow Typikon rules — generally permitted except on strict-fast days. A summer fast preparing us for the feast of Saints Peter and Paul (June 29).",
   standard:
-    "Abstain from meat and dairy. Fish, wine, and oil permitted on most days; Wednesdays and Fridays kept more strictly.",
+    "No meat, poultry, or dairy. Fish, wine, and oil permitted on most days. Wednesday and Friday are kept more strictly — no fish, oil, or wine. The Apostles' Fast prepares us for the chief feast of the Twelve.",
   relaxed:
-    "Abstain from meat. The Apostles' Fast prepares us for the feast of Peter and Paul.",
+    "No meat or poultry. Many also abstain from dairy. Fish, wine, and oil are permitted. The Apostles' Fast lengthens with a late Pascha and disappears when Pascha is very late — it's the most flexible of the four great fasts.",
 };
 
 const dormitionGuidance: Record<FastSeverity, string> = {
   strict:
-    "Strict fast, like Great Lent. No meat, dairy, eggs, or fish — except on Transfiguration (Aug 6).",
+    "No meat, poultry, dairy, eggs, or fish — strict as Great Lent. Fish, wine, and oil are permitted only on the Transfiguration (Aug 6). Two weeks of preparation for the Theotokos' falling-asleep (Aug 15).",
   standard:
-    "Abstain from meat and dairy. Fish, wine, and oil permitted on the Transfiguration (Aug 6) and weekends.",
+    "No meat, poultry, dairy, or eggs. No fish on weekdays. Fish, wine, and oil permitted on Saturdays, Sundays, and the Transfiguration (Aug 6). The shortest of the four great fasts, but kept with full Lenten weight.",
   relaxed:
-    "Abstain from meat. Two weeks of preparation for the falling-asleep of the Mother of God.",
+    "No meat or poultry. Many also abstain from dairy. Fish, wine, and oil are permitted. Fourteen days of quiet preparation for the Dormition of the Mother of God.",
 };
 
 const nativityGuidance: Record<FastSeverity, string> = {
   strict:
-    "Abstain from meat, dairy, and eggs. Fish permitted most days outside the final week; the last week mirrors Great Lent.",
+    "No meat, poultry, dairy, or eggs. No fish on Wed/Fri. Wine and oil permitted on most days. The last week (Dec 20–24) is kept as strictly as Great Lent — no fish, no oil, no wine on weekdays. Forty days for the coming of Christ in the flesh.",
   standard:
-    "Abstain from meat and dairy. Fish, wine, and oil permitted most days; the last week (Dec 20–24) is kept more strictly.",
+    "No meat, poultry, or dairy. Fish, wine, and oil permitted on most days; Wed/Fri kept more strictly with no fish. The last week before Christmas (Dec 20–24) deepens — keep it more closely if you can.",
   relaxed:
-    "Abstain from meat. Forty days of quiet preparation for the Nativity of Christ.",
+    "No meat or poultry. Many also abstain from dairy. Fish, wine, and oil are permitted throughout. Forty days of quiet preparation for the Nativity — the Christian Advent.",
 };
 
+// Weekly Wed/Fri guidance. Includes the same kind of specificity as the
+// seasonal fasts: what's off the table (and what isn't), with the day's
+// meaning kept short at the end. Wednesday recalls Christ's betrayal;
+// Friday, His Crucifixion.
 const weeklyGuidance: Record<FastSeverity, string> = {
   strict:
-    "Strict fast — abstain from meat, dairy, fish, wine, and oil.",
+    "No meat, poultry, or meat products. No dairy or eggs. No fish. No wine or olive oil. The Typikon standard for ordinary Wednesdays and Fridays — kept by monastics and many laity. The day is held as a small Holy Friday.",
   standard:
-    "Abstain from meat and dairy. Fish, wine, and oil permitted in most parish practice.",
+    "No meat, poultry, or meat products. No dairy or eggs. No fish. Wine and olive oil are permitted in most parishes. The discipline kept by most committed Orthodox households on Wednesday (the betrayal) and Friday (the Crucifixion).",
   relaxed:
-    "Abstain from meat. Wednesday recalls the betrayal; Friday, the Crucifixion.",
+    "No meat or poultry. Many also abstain from dairy and eggs. Wine, oil, and fish are permitted. A simpler keeping of the weekly fast — consult your priest for the right level for you. The day still recalls the betrayal (Wednesday) and the Crucifixion (Friday).",
 };
 
 // --- helpers ---------------------------------------------------------------
