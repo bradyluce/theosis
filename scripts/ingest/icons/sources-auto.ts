@@ -7,122 +7,521 @@ import type { IconSource } from "./sources";
 
 export const iconSourcesAuto: (IconSource & { personId: string })[] = [
   {
-    "id": "icon-anselm-canterbury",
-    "personId": "anselm-canterbury",
-    "wikimediaTitle": "File:Old Saint Mary's Church (Cincinnati, Ohio) - St. Anselm icon.jpg",
-    "alt": "Orthodox icon of Anselm of Canterbury.",
-    "caption": "Anselm of Canterbury"
+    "id": "icon-autonomus-bishop-in-italy",
+    "personId": "autonomus-bishop-in-italy",
+    "wikimediaTitle": "File:Old Believers Icon from Nova Nekrasivka (crop).jpg",
+    "alt": "Orthodox icon of Autonomus, Bishop in Italy.",
+    "caption": "Autonomus, Bishop in Italy"
   },
   {
-    "id": "icon-augustine",
-    "personId": "augustine",
-    "wikimediaTitle": "File:Saint Augustine by Philippe de Champaigne.jpg",
-    "alt": "Orthodox icon of Augustine of Hippo.",
-    "caption": "Augustine of Hippo"
+    "id": "icon-basiliscus-of-comana",
+    "personId": "basiliscus-of-comana",
+    "wikimediaTitle": "File:Жития Святых (1903-1911) - икона 07033 Василиск.png",
+    "alt": "Orthodox icon of Basiliscus of Comana.",
+    "caption": "Basiliscus of Comana"
   },
   {
-    "id": "icon-bede",
-    "personId": "bede",
-    "wikimediaTitle": "File:The Venerable Bede translates John 1902.jpg",
-    "alt": "Orthodox icon of Bede the Venerable.",
-    "caption": "Bede the Venerable"
+    "id": "icon-diadochos-of-photiki",
+    "personId": "diadochos-of-photiki",
+    "wikimediaTitle": "File:Diadochos of Photiki.jpg",
+    "alt": "Orthodox icon of Diadochos of Photiki.",
+    "caption": "Diadochos of Photiki"
   },
   {
-    "id": "icon-cyprian",
-    "personId": "cyprian",
-    "wikimediaTitle": "File:Heiliger Cyprianus.jpg",
-    "alt": "Orthodox icon of Cyprian of Carthage.",
-    "caption": "Cyprian of Carthage"
+    "id": "icon-eudokia-of-heliopolis",
+    "personId": "eudokia-of-heliopolis",
+    "wikimediaTitle": "File:Eudokia of Heliopolis.jpg",
+    "alt": "Orthodox icon of Eudokia of Heliopolis.",
+    "caption": "Eudokia of Heliopolis"
   },
   {
-    "id": "icon-ecumenical-councils",
-    "personId": "ecumenical-councils",
-    "wikimediaTitle": "File:044 Sunday of the Holy Fathers of the First. Ecumenical Council Icon from Saint Paraskevi Church in Langadas.jpg",
-    "alt": "Orthodox icon of Fathers of the Ecumenical Councils.",
-    "caption": "Fathers of the Ecumenical Councils"
+    "id": "icon-febronia-of-nisibis",
+    "personId": "febronia-of-nisibis",
+    "wikimediaTitle": "File:Martirio s. febronia, coste, palagonia.jpg",
+    "alt": "Orthodox icon of Febronia of Nisibis.",
+    "caption": "Febronia of Nisibis"
   },
   {
-    "id": "icon-epiphanius-salamis",
-    "personId": "epiphanius-salamis",
-    "wikimediaTitle": "File:Epiphanius-Kosovo.jpg",
-    "alt": "Orthodox icon of Epiphanius of Salamis.",
-    "caption": "Epiphanius of Salamis"
+    "id": "icon-gregory-the-decapolite",
+    "personId": "gregory-the-decapolite",
+    "wikimediaTitle": "File:Gregorio Decapolita.jpg",
+    "alt": "Orthodox icon of Gregory the Decapolite.",
+    "caption": "Gregory the Decapolite"
   },
   {
-    "id": "icon-gregory-of-nazianzus",
-    "personId": "gregory-of-nazianzus",
-    "wikimediaTitle": "File:Rila Mon. - Fresco mir. icon 019 Gregory of Nazianzus.jpg",
-    "alt": "Orthodox icon of Gregory of Nazianzus.",
-    "caption": "Gregory of Nazianzus"
-  },
-  {
-    "id": "icon-gregory-thaumaturgus",
-    "personId": "gregory-thaumaturgus",
-    "wikimediaTitle": "File:Grigorii chudotvoretz.jpg",
-    "alt": "Orthodox icon of Gregory Thaumaturgus.",
-    "caption": "Gregory Thaumaturgus"
-  },
-  {
-    "id": "icon-irenaeus-of-lyons",
-    "personId": "irenaeus-of-lyons",
-    "wikimediaTitle": "File:Saints Irenaeus of Lyons, Ambrose of Milan, Athanasius the Great, Martin the Merciful, Germanus, Gaudentius and Randoald - Orthodox Icon.jpg",
-    "alt": "Orthodox icon of Irenaeus of Lyons.",
-    "caption": "Irenaeus of Lyons"
-  },
-  {
-    "id": "icon-isidore-pelusium",
-    "personId": "isidore-of-pelusium",
-    "wikimediaTitle": "File:Isidore of Pelusium.jpg",
-    "alt": "Orthodox icon of Isidore of Pelusium.",
-    "caption": "Isidore of Pelusium"
-  },
-  {
-    "id": "icon-isidore-seville",
-    "personId": "isidore-seville",
-    "wikimediaTitle": "File:Isidore de Séville.jpg",
-    "alt": "Orthodox icon of Isidore of Seville.",
-    "caption": "Isidore of Seville"
-  },
-  {
-    "id": "icon-justin-martyr",
-    "personId": "justin-martyr",
-    "wikimediaTitle": "File:JustinMartyrIconostasis.jpg",
-    "alt": "Orthodox icon of Justin Martyr.",
-    "caption": "Justin Martyr"
-  },
-  {
-    "id": "icon-methodius-of-olympus",
-    "personId": "methodius-of-olympus",
-    "wikimediaTitle": "File:Icon of Saint Methodius, The Holy Mount of Grabarka.png",
-    "alt": "Orthodox icon of Methodius of Olympus.",
-    "caption": "Methodius of Olympus"
-  },
-  {
-    "id": "icon-origen",
-    "personId": "origen",
+    "id": "icon-hcf-adamantius",
+    "personId": "hcf-adamantius",
     "wikimediaTitle": "File:Origen3.jpg",
-    "alt": "Orthodox icon of Origen.",
-    "caption": "Origen"
+    "alt": "Orthodox icon of Adamantius.",
+    "caption": "Adamantius"
   },
   {
-    "id": "icon-papias-of-hierapolis",
-    "personId": "papias-of-hierapolis",
-    "wikimediaTitle": "File:Papias.png",
-    "alt": "Orthodox icon of Papias of Hierapolis.",
-    "caption": "Papias of Hierapolis"
+    "id": "icon-hcf-alexander-of-jerusalem",
+    "personId": "hcf-alexander-of-jerusalem",
+    "wikimediaTitle": "File:Alexander of Jerusalem.jpg",
+    "alt": "Orthodox icon of Alexander of Jerusalem.",
+    "caption": "Alexander of Jerusalem"
   },
   {
-    "id": "icon-theodotus-ancyra",
+    "id": "icon-hcf-ammonius-of-alexandria",
+    "personId": "hcf-ammonius-of-alexandria",
+    "wikimediaTitle": "File:Ammonius of Alexandria Rabbula Gospels Icon.jpg",
+    "alt": "Orthodox icon of Ammonius of Alexandria.",
+    "caption": "Ammonius of Alexandria"
+  },
+  {
+    "id": "icon-hcf-andreas-of-caesarea",
+    "personId": "hcf-andreas-of-caesarea",
+    "wikimediaTitle": "File:Andriy Kesarijskiy.jpg",
+    "alt": "Orthodox icon of Andreas of Caesarea.",
+    "caption": "Andreas of Caesarea"
+  },
+  {
+    "id": "icon-hcf-apringius-of-beja",
+    "personId": "hcf-apringius-of-beja",
+    "wikimediaTitle": "File:Badajoz - Catedral de San Juan Bautista, vidrieras 02.jpg",
+    "alt": "Orthodox icon of Apringius of Beja.",
+    "caption": "Apringius of Beja"
+  },
+  {
+    "id": "icon-hcf-arius",
+    "personId": "hcf-arius",
+    "wikimediaTitle": "File:Saint Nicholas of Myra slapping Arius at the Council of Nicaea Greek Icon.jpg",
+    "alt": "Orthodox icon of Arius.",
+    "caption": "Arius"
+  },
+  {
+    "id": "icon-hcf-bernard-of-clairvaux",
+    "personId": "hcf-bernard-of-clairvaux",
+    "wikimediaTitle": "File:Old Saint Mary's Church (Cincinnati, Ohio) - St. Bernard of Clairvaux icon.jpg",
+    "alt": "Orthodox icon of Bernard of Clairvaux.",
+    "caption": "Bernard of Clairvaux"
+  },
+  {
+    "id": "icon-hcf-book-of-enoch",
+    "personId": "hcf-book-of-enoch",
+    "wikimediaTitle": "File:Etiopialainen Eenokin Kirja.jpg",
+    "alt": "Orthodox icon of Book of Enoch.",
+    "caption": "Book of Enoch"
+  },
+  {
+    "id": "icon-hcf-braulio-of-zaragoza",
+    "personId": "hcf-braulio-of-zaragoza",
+    "wikimediaTitle": "File:Brauli de Saragossa.jpg",
+    "alt": "Orthodox icon of Braulio of Zaragoza.",
+    "caption": "Braulio of Zaragoza"
+  },
+  {
+    "id": "icon-hcf-caesarius-of-arles",
+    "personId": "hcf-caesarius-of-arles",
+    "wikimediaTitle": "File:Arles,St Césaire11,chapelle Ste Thérèse,St Césaire au chevet du préfet de Ravenne par J.B.M.Fouque.jpg",
+    "alt": "Orthodox icon of Caesarius of Arles.",
+    "caption": "Caesarius of Arles"
+  },
+  {
+    "id": "icon-hcf-chromatius-of-aquileia",
+    "personId": "hcf-chromatius-of-aquileia",
+    "wikimediaTitle": "File:Thür St. Johannes 16.JPG",
+    "alt": "Orthodox icon of Chromatius of Aquileia.",
+    "caption": "Chromatius of Aquileia"
+  },
+  {
+    "id": "icon-hcf-cosmas-of-maiuma",
+    "personId": "hcf-cosmas-of-maiuma",
+    "wikimediaTitle": "File:Kosma-ierusalimskij.jpg",
+    "alt": "Orthodox icon of Cosmas of Maiuma.",
+    "caption": "Cosmas of Maiuma"
+  },
+  {
+    "id": "icon-hcf-council-of-ephesus",
+    "personId": "hcf-council-of-ephesus",
+    "wikimediaTitle": "File:Concile-Ephese-Fourviere-detail.jpg",
+    "alt": "Orthodox icon of Council of Ephesus.",
+    "caption": "Council of Ephesus"
+  },
+  {
+    "id": "icon-hcf-dorotheos-of-gaza",
+    "personId": "hcf-dorotheos-of-gaza",
+    "wikimediaTitle": "File:Dorotheus of Gaza.jpg",
+    "alt": "Orthodox icon of Dorotheos of Gaza.",
+    "caption": "Dorotheos of Gaza"
+  },
+  {
+    "id": "icon-hcf-eucherius-of-lyon",
+    "personId": "hcf-eucherius-of-lyon",
+    "wikimediaTitle": "File:Statue de Saint Eucherius de Lyon (cropped).JPG",
+    "alt": "Orthodox icon of Eucherius of Lyon.",
+    "caption": "Eucherius of Lyon"
+  },
+  {
+    "id": "icon-hcf-eugippius",
+    "personId": "hcf-eugippius",
+    "wikimediaTitle": "File:Castello del Buonconsiglio, loggia - Domenico Zeni - Eugippio.jpg",
+    "alt": "Orthodox icon of Eugippius.",
+    "caption": "Eugippius"
+  },
+  {
+    "id": "icon-hcf-eusebius-of-vercelli",
+    "personId": "hcf-eusebius-of-vercelli",
+    "wikimediaTitle": "File:Eusebius von Vercelli.jpg",
+    "alt": "Orthodox icon of Eusebius of Vercelli.",
+    "caption": "Eusebius of Vercelli"
+  },
+  {
+    "id": "icon-hcf-eustathius-of-antioch",
+    "personId": "hcf-eustathius-of-antioch",
+    "wikimediaTitle": "File:Eustathius of Antioch.jpg",
+    "alt": "Orthodox icon of Eustathius of Antioch.",
+    "caption": "Eustathius of Antioch"
+  },
+  {
+    "id": "icon-hcf-evagrius-ponticus",
+    "personId": "hcf-evagrius-ponticus",
+    "wikimediaTitle": "File:Evagrius 1.jpg",
+    "alt": "Orthodox icon of Evagrius Ponticus.",
+    "caption": "Evagrius Ponticus"
+  },
+  {
+    "id": "icon-hcf-faustus-of-riez",
+    "personId": "hcf-faustus-of-riez",
+    "wikimediaTitle": "File:Riez Notre-Dame de l'Assomption Vitrail Saint Fauste.jpg",
+    "alt": "Orthodox icon of Faustus of Riez.",
+    "caption": "Faustus of Riez"
+  },
+  {
+    "id": "icon-hcf-fructuosus-of-braga",
+    "personId": "hcf-fructuosus-of-braga",
+    "wikimediaTitle": "File:Sao Frutuoso.JPG",
+    "alt": "Orthodox icon of Fructuosus of Braga.",
+    "caption": "Fructuosus of Braga"
+  },
+  {
+    "id": "icon-hcf-fulgentius-of-ruspe",
+    "personId": "hcf-fulgentius-of-ruspe",
+    "wikimediaTitle": "File:Fulgentius von Ruspe 17Jh.jpg",
+    "alt": "Orthodox icon of Fulgentius of Ruspe.",
+    "caption": "Fulgentius of Ruspe"
+  },
+  {
+    "id": "icon-hcf-gaudentius-of-brescia",
+    "personId": "hcf-gaudentius-of-brescia",
+    "wikimediaTitle": "File:Maestro dell'ancona barbavara, san gaudenzio, 1390-1400 ca..JPG",
+    "alt": "Orthodox icon of Gaudentius of Brescia.",
+    "caption": "Gaudentius of Brescia"
+  },
+  {
+    "id": "icon-hcf-gaudentius-of-rimini",
+    "personId": "hcf-gaudentius-of-rimini",
+    "wikimediaTitle": "File:Tempio malatestiano, ri, corte della diocesi, sarcofago di san gaudenzio 02.JPG",
+    "alt": "Orthodox icon of Gaudentius of Rimini.",
+    "caption": "Gaudentius of Rimini"
+  },
+  {
+    "id": "icon-hcf-gennadius-of-constantinople",
+    "personId": "hcf-gennadius-of-constantinople",
+    "wikimediaTitle": "File:Nuremberg chronicles f 141v 5.jpg",
+    "alt": "Orthodox icon of Gennadius of Constantinople.",
+    "caption": "Gennadius of Constantinople"
+  },
+  {
+    "id": "icon-hcf-hegesippus",
+    "personId": "hcf-hegesippus",
+    "wikimediaTitle": "File:Hegesippus Egesippus Nuremberg Chronicle cropped.png",
+    "alt": "Orthodox icon of Hegesippus.",
+    "caption": "Hegesippus"
+  },
+  {
+    "id": "icon-hcf-hilary-of-arles",
+    "personId": "hcf-hilary-of-arles",
+    "wikimediaTitle": "File:Hilari14.jpg",
+    "alt": "Orthodox icon of Hilary of Arles.",
+    "caption": "Hilary of Arles"
+  },
+  {
+    "id": "icon-hcf-isaac-of-nineveh",
+    "personId": "hcf-isaac-of-nineveh",
+    "wikimediaTitle": "File:Isak Sirin.jpg",
+    "alt": "Orthodox icon of Isaac of Nineveh.",
+    "caption": "Isaac of Nineveh"
+  },
+  {
+    "id": "icon-hcf-jacob-bar-salibi",
+    "personId": "hcf-jacob-bar-salibi",
+    "wikimediaTitle": "File:ChristCopticArt.png",
+    "alt": "Orthodox icon of Jacob Bar-Salibi.",
+    "caption": "Jacob Bar-Salibi"
+  },
+  {
+    "id": "icon-hcf-jacob-of-serugh",
+    "personId": "hcf-jacob-of-serugh",
+    "wikimediaTitle": "File:Ancient syriac manuscript jacob of serugh.webp",
+    "alt": "Orthodox icon of Jacob of Serugh.",
+    "caption": "Jacob of Serugh"
+  },
+  {
+    "id": "icon-hcf-john-of-the-cross",
+    "personId": "hcf-john-of-the-cross",
+    "wikimediaTitle": "File:Zurbarán (atribuido)-John of the Cross-1656.jpg",
+    "alt": "Orthodox icon of John of the Cross.",
+    "caption": "John of the Cross"
+  },
+  {
+    "id": "icon-hcf-josephus",
+    "personId": "hcf-josephus",
+    "wikimediaTitle": "File:Portrait of Josephus Justus Scaliger, professor of Latin, Antiquities and History in Leiden Icones 30.tiff",
+    "alt": "Orthodox icon of Josephus.",
+    "caption": "Josephus"
+  },
+  {
+    "id": "icon-hcf-julian-of-toledo",
+    "personId": "hcf-julian-of-toledo",
+    "wikimediaTitle": "File:Saint Julian of Toledo ost 19.JPG",
+    "alt": "Orthodox icon of Julian of Toledo.",
+    "caption": "Julian of Toledo"
+  },
+  {
+    "id": "icon-hcf-leander-of-seville",
+    "personId": "hcf-leander-of-seville",
+    "wikimediaTitle": "File:San Leandro.jpg",
+    "alt": "Orthodox icon of Leander of Seville.",
+    "caption": "Leander of Seville"
+  },
+  {
+    "id": "icon-hcf-lucifer-of-cagliari",
+    "personId": "hcf-lucifer-of-cagliari",
+    "wikimediaTitle": "File:Cagliari, duomo, interno, santuario dei martiri (cripta), cappella sx di san saturnino, nicchiette 03 lucifero di cagliari.jpg",
+    "alt": "Orthodox icon of Lucifer of Cagliari.",
+    "caption": "Lucifer of Cagliari"
+  },
+  {
+    "id": "icon-hcf-marcus-eremita",
+    "personId": "hcf-marcus-eremita",
+    "wikimediaTitle": "File:Преподобный марк подвижник.jpg",
+    "alt": "Orthodox icon of Marcus Eremita.",
+    "caption": "Marcus Eremita"
+  },
+  {
+    "id": "icon-hcf-martin-of-braga",
+    "personId": "hcf-martin-of-braga",
+    "wikimediaTitle": "File:Eastern Orthodox Icon of St. Martin of Braga.png",
+    "alt": "Orthodox icon of Martin of Braga.",
+    "caption": "Martin of Braga"
+  },
+  {
+    "id": "icon-hcf-maximus-of-turin",
+    "personId": "hcf-maximus-of-turin",
+    "wikimediaTitle": "File:San Massimo presentando al popolo l'icona della \"Consolata\".jpg",
+    "alt": "Orthodox icon of Maximus of Turin.",
+    "caption": "Maximus of Turin"
+  },
+  {
+    "id": "icon-hcf-melito-of-sardis",
+    "personId": "hcf-melito-of-sardis",
+    "wikimediaTitle": "File:H. Melito van Sardes, kerkvader Melito Bisschop van Sardis. Onderwysende inde Cristelyke Godsdienst (titel op object), RP-P-1896-A-19368-1267.jpg",
+    "alt": "Orthodox icon of Melito of Sardis.",
+    "caption": "Melito of Sardis"
+  },
+  {
+    "id": "icon-hcf-nerses-of-lambron",
+    "personId": "hcf-nerses-of-lambron",
+    "wikimediaTitle": "File:Nerses Lambronatsi.jpg",
+    "alt": "Orthodox icon of Nerses of Lambron.",
+    "caption": "Nerses of Lambron"
+  },
+  {
+    "id": "icon-hcf-nilus-of-sinai",
+    "personId": "hcf-nilus-of-sinai",
+    "wikimediaTitle": "File:Nil Postnik.jpg",
+    "alt": "Orthodox icon of Nilus of Sinai.",
+    "caption": "Nilus of Sinai"
+  },
+  {
+    "id": "icon-hcf-pacian-of-barcelona",
+    "personId": "hcf-pacian-of-barcelona",
+    "wikimediaTitle": "File:San Paciano de Barcelona (cropped).jpg",
+    "alt": "Orthodox icon of Pacian of Barcelona.",
+    "caption": "Pacian of Barcelona"
+  },
+  {
+    "id": "icon-hcf-paschasius-radbertus",
+    "personId": "hcf-paschasius-radbertus",
+    "wikimediaTitle": "File:Abbatiale Saint-Pierre de Corbie, intérieur, Paschase Radbert 3.jpg",
+    "alt": "Orthodox icon of Paschasius Radbertus.",
+    "caption": "Paschasius Radbertus"
+  },
+  {
+    "id": "icon-hcf-paterius",
+    "personId": "hcf-paterius",
+    "wikimediaTitle": "File:Arca di san Paterio.jpg",
+    "alt": "Orthodox icon of Paterius.",
+    "caption": "Paterius"
+  },
+  {
+    "id": "icon-hcf-patrick-of-ireland",
+    "personId": "hcf-patrick-of-ireland",
+    "wikimediaTitle": "File:Icon of Saint Patrick, Christ the Saviour Church.jpg",
+    "alt": "Orthodox icon of Patrick of Ireland.",
+    "caption": "Patrick of Ireland"
+  },
+  {
+    "id": "icon-hcf-paulinus-of-nola",
+    "personId": "hcf-paulinus-of-nola",
+    "wikimediaTitle": "File:Linz Dom Fenster 09 img03.jpg",
+    "alt": "Orthodox icon of Paulinus of Nola.",
+    "caption": "Paulinus of Nola"
+  },
+  {
+    "id": "icon-hcf-pelagius",
+    "personId": "hcf-pelagius",
+    "wikimediaTitle": "File:Saint Pelagius of Constance - Orthodox Icon.jpg",
+    "alt": "Orthodox icon of Pelagius.",
+    "caption": "Pelagius"
+  },
+  {
+    "id": "icon-hcf-pope-anterus",
+    "personId": "hcf-pope-anterus",
+    "wikimediaTitle": "File:Pietro Perugino – Anterus.jpg",
+    "alt": "Orthodox icon of Pope Anterus.",
+    "caption": "Pope Anterus"
+  },
+  {
+    "id": "icon-hcf-pope-dionysius",
+    "personId": "hcf-pope-dionysius",
+    "wikimediaTitle": "File:Pope Dionysius.jpg",
+    "alt": "Orthodox icon of Pope Dionysius.",
+    "caption": "Pope Dionysius"
+  },
+  {
+    "id": "icon-hcf-pope-urban-i",
+    "personId": "hcf-pope-urban-i",
+    "wikimediaTitle": "File:Pope Urban I.jpg",
+    "alt": "Orthodox icon of Pope Urban I.",
+    "caption": "Pope Urban I"
+  },
+  {
+    "id": "icon-hcf-pope-zephyrinus",
+    "personId": "hcf-pope-zephyrinus",
+    "wikimediaTitle": "File:Zephyrinus.png",
+    "alt": "Orthodox icon of Pope Zephyrinus.",
+    "caption": "Pope Zephyrinus"
+  },
+  {
+    "id": "icon-hcf-procopius-of-gaza",
+    "personId": "hcf-procopius-of-gaza",
+    "wikimediaTitle": "File:Blaj Iconostasis Saint Procopius.jpg",
+    "alt": "Orthodox icon of Procopius of Gaza.",
+    "caption": "Procopius of Gaza"
+  },
+  {
+    "id": "icon-hcf-quodvultdeus",
+    "personId": "hcf-quodvultdeus",
+    "wikimediaTitle": "File:Quodvultdeus mosaic portrait, 5th century (San Gennaro catacombs, Naples).jpg",
+    "alt": "Orthodox icon of Quodvultdeus.",
+    "caption": "Quodvultdeus"
+  },
+  {
+    "id": "icon-hcf-severian-of-gabala",
+    "personId": "hcf-severian-of-gabala",
+    "wikimediaTitle": "File:Hexameron of Severian of Gabala 01.jpg",
+    "alt": "Orthodox icon of Severian of Gabala.",
+    "caption": "Severian of Gabala"
+  },
+  {
+    "id": "icon-hcf-severus-of-antioch",
+    "personId": "hcf-severus-of-antioch",
+    "wikimediaTitle": "File:Severus of Antioch (Coptic icon).jpg",
+    "alt": "Orthodox icon of Severus of Antioch.",
+    "caption": "Severus of Antioch"
+  },
+  {
+    "id": "icon-hcf-sophronius-of-jerusalem",
+    "personId": "hcf-sophronius-of-jerusalem",
+    "wikimediaTitle": "File:Sophronius of Jerusalem, Menologion of Basil II.png",
+    "alt": "Orthodox icon of Sophronius of Jerusalem.",
+    "caption": "Sophronius of Jerusalem"
+  },
+  {
+    "id": "icon-hcf-syncletica-of-alexandria",
+    "personId": "hcf-syncletica-of-alexandria",
+    "wikimediaTitle": "File:Synkletike.jpg",
+    "alt": "Orthodox icon of Syncletica of Alexandria.",
+    "caption": "Syncletica of Alexandria"
+  },
+  {
+    "id": "icon-hcf-theodorus-of-tabennese",
+    "personId": "hcf-theodorus-of-tabennese",
+    "wikimediaTitle": "File:Theodore the Sanctified.JPG",
+    "alt": "Orthodox icon of Theodorus of Tabennese.",
+    "caption": "Theodorus of Tabennese"
+  },
+  {
+    "id": "icon-hcf-theophilus-of-alexandria",
+    "personId": "hcf-theophilus-of-alexandria",
+    "wikimediaTitle": "File:Acheropoietos - Theuofilus fresco, detail, edited.JPG",
+    "alt": "Orthodox icon of Theophilus of Alexandria.",
+    "caption": "Theophilus of Alexandria"
+  },
+  {
+    "id": "icon-hcf-tyrannius-rufinus",
+    "personId": "hcf-tyrannius-rufinus",
+    "wikimediaTitle": "File:Rufinus Aquileiensis.jpg",
+    "alt": "Orthodox icon of Tyrannius Rufinus.",
+    "caption": "Tyrannius Rufinus"
+  },
+  {
+    "id": "icon-hcf-valentinus",
+    "personId": "hcf-valentinus",
+    "wikimediaTitle": "File:San Valentino da Terni (cropped).jpg",
+    "alt": "Orthodox icon of Valentinus.",
+    "caption": "Valentinus"
+  },
+  {
+    "id": "icon-hcf-valerian-of-cimiez",
+    "personId": "hcf-valerian-of-cimiez",
+    "wikimediaTitle": "File:Nice,cathédrale,intérieur57,chapelle des évêques,St Valérien de Cimiez PM06000606.jpg",
+    "alt": "Orthodox icon of Valerian of Cimiez.",
+    "caption": "Valerian of Cimiez"
+  },
+  {
+    "id": "icon-hcf-vincent-of-lerins",
+    "personId": "hcf-vincent-of-lerins",
+    "wikimediaTitle": "File:Icon of St Vincent of Lerins by Bojan Teodosijević.jpg",
+    "alt": "Orthodox icon of Vincent of Lérins.",
+    "caption": "Vincent of Lérins"
+  },
+  {
+    "id": "icon-michael-the-confessor",
+    "personId": "michael-the-confessor",
+    "wikimediaTitle": "File:Icon of Archangel Michael.jpg",
+    "alt": "Orthodox icon of Michael the Confessor, Bishop of Synnada.",
+    "caption": "Michael the Confessor, Bishop of Synnada"
+  },
+  {
+    "id": "icon-prudentius",
+    "personId": "prudentius",
+    "wikimediaTitle": "File:San Prudencio La Redonda Logrono Spain.jpg",
+    "alt": "Orthodox icon of Prudentius.",
+    "caption": "Prudentius"
+  },
+  {
+    "id": "icon-stephen-the-new-auxentius",
+    "personId": "stephen-the-new-auxentius",
+    "wikimediaTitle": "File:012 Saint Stephen Icon from Saint Paraskevi Church in Langadas.jpg",
+    "alt": "Orthodox icon of Stephen the New of Mt. St. Auxentius.",
+    "caption": "Stephen the New of Mt. St. Auxentius"
+  },
+  {
+    "id": "icon-theodotus-of-ancyra",
     "personId": "theodotus-of-ancyra",
     "wikimediaTitle": "File:Teodot Ankirski.jpg",
     "alt": "Orthodox icon of Theodotus of Ancyra.",
     "caption": "Theodotus of Ancyra"
   },
   {
-    "id": "icon-theophilus-of-antioch",
-    "personId": "theophilus-of-antioch",
-    "wikimediaTitle": "File:Acheropoietos - Theuofilus fresco, detail, edited.JPG",
-    "alt": "Orthodox icon of Theophilus of Antioch.",
-    "caption": "Theophilus of Antioch"
+    "id": "icon-tikhon-of-zadonsk",
+    "personId": "tikhon-of-zadonsk",
+    "wikimediaTitle": "File:Saint Tikhon of Zadonsk Icon.jpg",
+    "alt": "Orthodox icon of Tikhon of Zadonsk.",
+    "caption": "Tikhon of Zadonsk"
   },
 ];
