@@ -5,7 +5,7 @@ import DateTimePicker, {
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image } from "expo-image";
-import { router } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
@@ -203,14 +203,12 @@ export default function DailyScreen() {
     let canceled = false;
     Promise.all([
       getDailyCardOrder(),
-      getProfilePrefs(),
       recordActivityToday(),
       getSavedVerses(),
       getLastReadLocation(),
-    ]).then(([order, prof, activity, saved, loc]) => {
+    ]).then(([order, activity, saved, loc]) => {
       if (canceled) return;
       setCardOrderState(order);
-      setProfile(prof);
       setStreak(activity.streak);
       setSavedCount(saved.length);
       setLastRead(loc);
@@ -219,6 +217,21 @@ export default function DailyScreen() {
       canceled = true;
     };
   }, []);
+
+  // Profile prefs are refreshed every time the screen regains focus, so a
+  // patron-saint change made in onboarding or settings shows up in the
+  // masthead avatar immediately on the user's next visit to this tab.
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getProfilePrefs().then((p) => {
+        if (!canceled) setProfile(p);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
 
   // Watch the daily response's iso date to compute whether *that* day
   // is currently bookmarked. We re-read on data change so the icon

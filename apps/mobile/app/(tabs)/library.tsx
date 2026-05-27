@@ -2,7 +2,7 @@ import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
-import { type Href, router } from "expo-router";
+import { type Href, router, useFocusEffect } from "expo-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ActivityIndicator,
@@ -250,9 +250,6 @@ export default function LibraryScreen() {
   const patronIcon = usePatronIcon(profile.patronSaintSlug);
   useEffect(() => {
     let canceled = false;
-    void getProfilePrefs().then((p) => {
-      if (!canceled) setProfile(p);
-    });
     void getSavedVerses().then((v) => {
       if (!canceled) setSavedCount(v.length);
     });
@@ -263,6 +260,21 @@ export default function LibraryScreen() {
       canceled = true;
     };
   }, []);
+
+  // Profile prefs are re-read every time the tab regains focus, so a
+  // patron-saint change in settings or onboarding shows in the masthead
+  // avatar immediately on return rather than waiting for a remount.
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getProfilePrefs().then((p) => {
+        if (!canceled) setProfile(p);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
 
   // Scroll-to-section: each section block reports its Y position via onLayout.
   // Tapping a chip scrolls the ScrollView to that Y minus a small breathing

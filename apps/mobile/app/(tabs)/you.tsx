@@ -2,8 +2,8 @@ import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo";
 import Feather from "@expo/vector-icons/Feather";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
-import { router } from "expo-router";
-import { useEffect, useState } from "react";
+import { router, useFocusEffect } from "expo-router";
+import { useCallback, useEffect, useState } from "react";
 import {
   Pressable,
   ScrollView,
@@ -60,16 +60,14 @@ export default function YouScreen() {
     let canceled = false;
     Promise.all([
       recordActivityToday(),
-      getProfilePrefs(),
       getSavedVerses(),
       getReadingList(),
       getSavedCommentary(),
       getSavedDailyReadings(),
     ]).then(
-      ([activity, profile, savedVerses, list, commentary, daily]) => {
+      ([activity, savedVerses, list, commentary, daily]) => {
         if (canceled) return;
         setStreak(activity.streak);
-        setPrefs(profile);
         setSaved(savedVerses);
         setReadingList(list);
         setSavedCommentary(commentary);
@@ -80,6 +78,21 @@ export default function YouScreen() {
       canceled = true;
     };
   }, []);
+
+  // Profile prefs are re-read every time the tab regains focus, so a
+  // patron-saint change in settings or onboarding flows back into the
+  // identity hero immediately the next time the user opens this tab.
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getProfilePrefs().then((p) => {
+        if (!canceled) setPrefs(p);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
 
   // Identity: Clerk first name when signed in, else local prefs displayName,
   // else "Friend". Initial letter for the halo avatar.
