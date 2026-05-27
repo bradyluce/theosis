@@ -239,22 +239,10 @@ export const TRANSLATION_OPTIONS: readonly {
       "King James Version including the Deuterocanonicals. Public domain. The default if you're unsure.",
   },
   {
-    value: "rsv",
-    label: "Revised Standard Version",
-    description:
-      "Formal mid-20th-century English. Familiar lectionary cadence with modern grammar.",
-  },
-  {
     value: "lxxe",
     label: "Brenton's Septuagint",
     description:
       "English translation of the Septuagint — the Old Testament the Apostles and Fathers cite.",
-  },
-  {
-    value: "eob",
-    label: "Eastern / Greek Orthodox NT",
-    description:
-      "Orthodox English New Testament keyed to the Patriarchal Greek text.",
   },
   {
     value: "dra",

@@ -18,6 +18,7 @@ import {
   HIGHLIGHT_BY_SLUG,
   HIGHLIGHT_COLORS,
 } from "@/constants/highlight-colors";
+import { QuoteCardModal } from "@/components/theosis/quote-card-modal";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import type { HighlightColor } from "@/lib/preferences";
 
@@ -61,6 +62,7 @@ export function VerseActionsSheet({
   const translateY = useRef(new Animated.Value(screenHeight)).current;
   const backdropOpacity = useRef(new Animated.Value(0)).current;
   const [copyFlash, setCopyFlash] = useState(false);
+  const [shareOpen, setShareOpen] = useState(false);
 
   useEffect(() => {
     Animated.parallel([
@@ -227,6 +229,11 @@ export function VerseActionsSheet({
                   onPress={onCopy}
                 />
                 <ActionButton
+                  icon="share-2"
+                  label="Share"
+                  onPress={() => setShareOpen(true)}
+                />
+                <ActionButton
                   icon="edit-3"
                   label="Note"
                   onPress={onOpenNote}
@@ -243,6 +250,17 @@ export function VerseActionsSheet({
           ) : null}
         </Animated.View>
       </View>
+
+      {verse ? (
+        <QuoteCardModal
+          visible={shareOpen}
+          onClose={() => setShareOpen(false)}
+          text={verse.text}
+          attribution={`${verse.bookLabel} ${verse.chapter}:${verse.verseNumber}`}
+          reference={verse.translation.toUpperCase()}
+          kind="verse"
+        />
+      ) : null}
     </Modal>
   );
 }

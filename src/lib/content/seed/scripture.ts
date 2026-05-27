@@ -49,18 +49,6 @@ export const bibleTranslations: BibleTranslation[] = [
     isPrimary: true,
   },
   {
-    id: "rsv",
-    slug: "rsv",
-    abbreviation: "RSV",
-    name: "Revised Standard Version",
-    languageCode: "en",
-    scriptLabel: "Latin",
-    kind: "translation",
-    direction: "ltr",
-    traditionLabel: "Formal English translation",
-    description: "Secondary comparison translation used in the prototype.",
-  },
-  {
     id: "sblgnt",
     slug: "sblgnt",
     abbreviation: "GNT",
@@ -151,14 +139,6 @@ export const bibleChapters: BibleChapter[] = [
     summary: "The eternal Word, the witness of John, and the beginning of the Gospel's high Christology.",
   },
   {
-    id: buildChapterId("rsv", "john", 1),
-    translationId: "rsv",
-    bookSlug: "john",
-    chapterNumber: 1,
-    referenceLabel: "John 1",
-    summary: "Comparison witness for the Prologue and its theological vocabulary.",
-  },
-  {
     id: buildChapterId("sblgnt", "john", 1),
     translationId: "sblgnt",
     bookSlug: "john",
@@ -199,14 +179,6 @@ export const bibleChapters: BibleChapter[] = [
     summary: "A core text for divine participation and theosis vocabulary.",
   },
   {
-    id: buildChapterId("rsv", "second-peter", 1),
-    translationId: "rsv",
-    bookSlug: "second-peter",
-    chapterNumber: 1,
-    referenceLabel: "2 Peter 1",
-    summary: "Comparison witness for theosis-related phrasing.",
-  },
-  {
     id: buildChapterId("osb", "wisdom", 7),
     translationId: "osb",
     bookSlug: "wisdom",
@@ -235,14 +207,6 @@ export const bibleVerses: BibleVerse[] = [
   verse("kjva", "john", 1, 16, "John", "And of his fulness have all we received, and grace for grace."),
   verse("kjva", "john", 1, 17, "John", "For the law was given by Moses, but grace and truth came by Jesus Christ."),
   verse("kjva", "john", 1, 18, "John", "No man hath seen God at any time; the only begotten Son, which is in the bosom of the Father, he hath declared him."),
-
-  verse("rsv", "john", 1, 1, "John", "In the beginning was the Word, and the Word was with God, and the Word was God.", true, "logos"),
-  verse("rsv", "john", 1, 2, "John", "He was in the beginning with God."),
-  verse("rsv", "john", 1, 3, "John", "All things were made through him, and without him was not anything made that was made."),
-  verse("rsv", "john", 1, 4, "John", "In him was life, and the life was the light of men.", false, "light"),
-  verse("rsv", "john", 1, 5, "John", "The light shines in the darkness, and the darkness has not overcome it."),
-  verse("rsv", "john", 1, 14, "John", "And the Word became flesh and dwelt among us, full of grace and truth; we have beheld his glory, glory as of the only Son from the Father.", true, "incarnation"),
-  verse("rsv", "second-peter", 1, 4, "2 Peter", "By these he has granted to us his precious and very great promises, that through these you may escape from the corruption that is in the world because of passion, and become partakers of the divine nature.", true, "theosis"),
 
   verse("sblgnt", "john", 1, 1, "John", "Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.", true),
   verse("sblgnt", "john", 1, 2, "John", "οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν."),

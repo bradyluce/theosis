@@ -4,10 +4,8 @@ import type { BibleTranslation } from "@theosis/core";
 import { getAllBooks } from "../../src/lib/content/book-canon";
 import { parseBrentonTxt } from "./parse-brenton-txt";
 import { parseByzTxt } from "./parse-byz-txt";
-import { parseEobTxt } from "./parse-eob-txt";
 import { parseGreekTxt } from "./parse-greek-txt";
 import { parseOsisXml } from "./parse-osis-xml";
-import { parseRsvXml } from "./parse-rsv-xml";
 import { parseSwordDump } from "./parse-sword-dump";
 import { parseUan } from "./parse-uan";
 import { parseUsfxXml } from "./parse-usfx-xml";
@@ -41,18 +39,6 @@ const TRANSLATIONS: BibleTranslation[] = [
     isPrimary: true,
   },
   {
-    id: "rsv",
-    slug: "rsv",
-    abbreviation: "RSV",
-    name: "Revised Standard Version",
-    languageCode: "en",
-    scriptLabel: "Latin",
-    kind: "translation",
-    direction: "ltr",
-    traditionLabel: "Formal English translation",
-    description: "Structured XML import of the Revised Standard Version Old and New Testaments.",
-  },
-  {
     id: "lxxe",
     slug: "lxxe",
     abbreviation: "LXXE",
@@ -75,18 +61,6 @@ const TRANSLATIONS: BibleTranslation[] = [
     direction: "ltr",
     traditionLabel: "English Septuagint",
     description: "PDF-to-text import of Brenton's Septuagint with heuristic cleanup.",
-  },
-  {
-    id: "eob",
-    slug: "eob",
-    abbreviation: "EOB",
-    name: "Eastern Greek Orthodox Bible NT",
-    languageCode: "en",
-    scriptLabel: "Latin",
-    kind: "translation",
-    direction: "ltr",
-    traditionLabel: "Orthodox English New Testament",
-    description: "PDF-to-text import of the Eastern Greek Orthodox Bible New Testament.",
   },
   {
     id: "gnt",
@@ -233,10 +207,6 @@ const TRANSLATIONS: BibleTranslation[] = [
 
 const JOBS: TranslationJob[] = [
   {
-    translation: TRANSLATIONS.find((item) => item.id === "rsv")!,
-    parse: () => parseRsvXml(),
-  },
-  {
     translation: TRANSLATIONS.find((item) => item.id === "kjva")!,
     parse: () =>
       parseOsisXml({
@@ -261,15 +231,6 @@ const JOBS: TranslationJob[] = [
         translationId: "brenton",
         translationLabel: "Brenton Septuagint",
         filePath: join(RAW_DIRECTORY, "english/eng-Brenton_all.txt"),
-      }),
-  },
-  {
-    translation: TRANSLATIONS.find((item) => item.id === "eob")!,
-    parse: () =>
-      parseEobTxt({
-        translationId: "eob",
-        translationLabel: "Eastern Greek Orthodox Bible",
-        filePath: join(RAW_DIRECTORY, "english/New Testament (The Eastern Greek Orthodox Bible).txt"),
       }),
   },
   {

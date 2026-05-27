@@ -1,20 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  BookmarkSimple,
   CaretRight,
   Flame,
-  ShareNetwork,
 } from "@phosphor-icons/react/dist/ssr";
 import {
   getChapterVerses,
   getPrimaryTranslation,
 } from "@/lib/bible/server-store";
 import {
+  composeDailyFastDetail,
   getDailyCommemoration,
   getDailyHymns,
   getDailyReadings,
 } from "@/lib/calendar";
+import { FastBanner } from "@/features/calendar/fast-banner";
+import { HomeGospelHero } from "@/features/bible/home-gospel-hero";
+import { ReadingPlanHomeTile } from "@/features/reading-plans/home-tile";
 import { getPeopleByIds, getPersonById } from "@/lib/content";
 import {
   getIconForPerson,
@@ -39,6 +41,7 @@ export default function HomePage() {
 
   const primaryTranslation = getPrimaryTranslation();
   const daily = getDailyCommemoration();
+  const fastDetail = composeDailyFastDetail(today);
   const saints = getPeopleByIds(daily.saintIds);
   const primarySaint = saints[0];
   const readings = getDailyReadings();
@@ -99,55 +102,24 @@ export default function HomePage() {
 
       {/* Gospel Reading hero */}
       {gospelReading && primaryTranslation ? (
-        <Link
+        <HomeGospelHero
+          readingLabel="Gospel Reading"
+          todayLabel={todayLabel}
+          contextLabel={gospelReading.contextLabel}
           href={`/bible/${primaryTranslation.slug}/${gospelReading.scripture.bookSlug}/${gospelReading.scripture.chapterNumber}#${gospelVerses[0]?.id ?? ""}`}
-          className="block overflow-hidden rounded-[20px] border border-accent/15 bg-surface"
-        >
-          <div className="space-y-6 p-6 sm:p-8">
-            <div className="flex items-baseline justify-between">
-              <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-accent">
-                Gospel Reading
-              </p>
-              <p className="text-[10px] uppercase tracking-[0.18em] text-ink-soft">
-                {todayLabel}
-              </p>
-            </div>
-
-            <p className="font-serif text-2xl tracking-tight text-ink">
-              {gospelReading.scripture.label}
-            </p>
-
-            {gospelVerses.length > 0 ? (
-              <div className="font-serif text-[1.1rem] leading-[1.85] text-ink">
-                {gospelVerses.slice(0, 3).map((v) => (
-                  <span key={v.id}>
-                    <sup className="mr-1 font-mono text-[0.6em] text-ink-soft">
-                      {v.verseNumber}
-                    </sup>
-                    <span>{v.text} </span>
-                  </span>
-                ))}
-                {gospelVerses.length > 3 ? (
-                  <span className="text-ink-soft">…</span>
-                ) : null}
-              </div>
-            ) : (
-              <p className="text-sm text-ink-muted">
-                {gospelReading.contextLabel}
-              </p>
-            )}
-
-            <div className="flex items-center gap-6 pt-2 text-ink-muted">
-              <ActionStat icon={<BookmarkSimple size={20} />} label="Save" />
-              <ActionStat icon={<ShareNetwork size={20} />} label="Share" />
-              <span className="ml-auto flex items-center gap-1 text-xs uppercase tracking-[0.18em] text-accent">
-                Read
-                <CaretRight size={12} weight="bold" />
-              </span>
-            </div>
-          </div>
-        </Link>
+          verses={gospelVerses.map((v) => ({
+            id: v.id,
+            verseNumber: v.verseNumber,
+            text: v.text,
+            translationId: v.translationId,
+          }))}
+          shareReference={gospelReading.scripture.label}
+          shareAttributionTranslation={primaryTranslation.name}
+        />
       ) : null}
+
+      {/* Fast banner (compact) — surfaces active fast or fast-free season */}
+      <FastBanner detail={fastDetail} variant="compact" />
 
       {/* Today's commemoration */}
       <Link
@@ -200,6 +172,10 @@ export default function HomePage() {
         />
       ) : null}
 
+      {/* Reading plan tile — surfaces today's reading when the user has an
+          active plan, otherwise nudges them to start one. */}
+      <ReadingPlanHomeTile />
+
       {/* Continue Reading (placeholder for now — wire to reading history) */}
       <section className="space-y-3 pt-2">
         <div className="flex items-center justify-between">
@@ -234,23 +210,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  );
-}
-
-function ActionStat({
-  icon,
-  label,
-}: {
-  icon: React.ReactNode;
-  label: string;
-}) {
-  return (
-    <span className="flex flex-col items-center gap-0.5">
-      <span>{icon}</span>
-      <span className="text-[9px] uppercase tracking-[0.18em] text-ink-soft">
-        {label}
-      </span>
-    </span>
   );
 }
 

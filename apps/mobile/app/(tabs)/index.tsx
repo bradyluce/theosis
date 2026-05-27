@@ -23,7 +23,7 @@ import DraggableFlatList, {
 } from "react-native-draggable-flatlist";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
-import type { DailyResponse } from "@theosis/core";
+import type { DailyResponse, ReadingPlanProgress } from "@theosis/core";
 
 import {
   Card,
@@ -33,6 +33,7 @@ import {
   SectionHeader,
   Wordmark,
 } from "@/components/theosis/primitives";
+import { FastBanner } from "@/components/theosis/fast-banner";
 import { ProfileDrawer } from "@/components/theosis/profile-drawer";
 import { usePatronIcon } from "@/lib/use-patron-icon";
 import {
@@ -52,6 +53,7 @@ import {
   getDailyCardOrder,
   getLastReadLocation,
   getProfilePrefs,
+  getReadingPlanProgress,
   getSavedVerses,
   isDailyReadingSaved,
   recordActivityToday,
@@ -310,6 +312,8 @@ export default function DailyScreen() {
               // before the user opens the Bible tab). After their first
               // chapter, this card surfaces it on every Daily visit.
               lastRead ? <ContinueReadingCard lastRead={lastRead} /> : null
+            ) : item === "reading-plan" ? (
+              <ReadingPlanCard />
             ) : item === "readings" ? (
               <ReadingsCard data={data} />
             ) : item === "commemoration" ? (
@@ -481,9 +485,8 @@ export default function DailyScreen() {
 
         {data ? (
           <View style={styles.dayStatusRow}>
-            <FastChip
-              isoDate={data.daily.isoDate}
-              providedLabel={data.daily.fastLabel}
+            <FastBanner
+              detail={data.fastDetail}
               fastingLevel={profile.fastingLevel}
             />
           </View>
@@ -935,6 +938,125 @@ function NoFeastCommemorationCard({ data }: { data: DailyData }) {
     </Card>
   );
 }
+
+// Reading-plan card. Shows today's reading from the user's most recently
+// touched active plan, or a "Start a plan" nudge when none is active.
+// Loads progress on focus + the plan corpus from /api/reading-plans.
+function ReadingPlanCard() {
+  const api = getApi();
+  const plansQuery = useQuery({
+    queryKey: ["reading-plans"],
+    queryFn: () => api.fetchReadingPlans(),
+    staleTime: 1000 * 60 * 30,
+  });
+  const [progress, setProgress] = useState<ReadingPlanProgress[]>([]);
+  useFocusEffect(
+    useCallback(() => {
+      void getReadingPlanProgress().then(setProgress);
+    }, []),
+  );
+
+  if (!plansQuery.data) {
+    return null;
+  }
+
+  const plans = plansQuery.data.plans;
+
+  // No active plans → render the discovery nudge.
+  if (progress.length === 0) {
+    return (
+      <Pressable
+        onPress={() => router.push("/reading-plans" as never)}
+        style={({ pressed }) => [pressed && { opacity: 0.92 }]}
+        accessibilityRole="button"
+        accessibilityLabel="Browse reading plans"
+      >
+        <Card>
+          <SectionHeader eyebrow="Read with the Church" title="Start a plan" />
+          <Text style={[text.byline, { marginTop: spacing.sm }]}>
+            The New Testament in 90 days, the Psalter in a month, or Holy
+            Week day by day.
+          </Text>
+          <View style={readingPlanCardStyles.cta}>
+            <Text style={readingPlanCardStyles.ctaLabel}>Browse plans</Text>
+            <Feather name="arrow-right" size={14} color={colors.accent} />
+          </View>
+        </Card>
+      </Pressable>
+    );
+  }
+
+  // Active plans → focus on the most recently touched one.
+  const focus = [...progress].sort((a, b) =>
+    (b.lastReadAt ?? b.startedAt).localeCompare(a.lastReadAt ?? a.startedAt),
+  )[0];
+  const plan = plans.find((p) => p.id === focus.planId);
+  if (!plan) return null;
+
+  const completedCount = focus.completedDays.length;
+  const isFinished = completedCount >= plan.totalDays;
+  const percent = Math.min(100, Math.round((completedCount / plan.totalDays) * 100));
+
+  return (
+    <Pressable
+      onPress={() => router.push(`/reading-plans/${plan.slug}` as never)}
+      style={({ pressed }) => [pressed && { opacity: 0.92 }]}
+      accessibilityRole="button"
+      accessibilityLabel={`Open ${plan.title}`}
+    >
+      <Card>
+        <SectionHeader
+          eyebrow={plan.title}
+          title={
+            isFinished
+              ? "You finished this plan"
+              : `Day ${focus.currentDay} of ${plan.totalDays}`
+          }
+        />
+        <View style={readingPlanCardStyles.progressTrack}>
+          <View
+            style={[
+              readingPlanCardStyles.progressFill,
+              { width: `${percent}%` },
+            ]}
+          />
+        </View>
+        <View style={readingPlanCardStyles.cta}>
+          <Text style={readingPlanCardStyles.ctaLabel}>
+            {isFinished ? "Review schedule" : "Open today's reading"}
+          </Text>
+          <Feather name="arrow-right" size={14} color={colors.accent} />
+        </View>
+      </Card>
+    </Pressable>
+  );
+}
+
+const readingPlanCardStyles = StyleSheet.create({
+  cta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    marginTop: spacing.md,
+  },
+  ctaLabel: {
+    ...text.eyebrowAccent,
+    fontSize: 10,
+  },
+  progressTrack: {
+    height: 3,
+    borderRadius: 999,
+    backgroundColor: colors.line,
+    overflow: "hidden",
+    marginTop: spacing.md,
+  },
+  progressFill: {
+    height: "100%",
+    backgroundColor: colors.accent,
+    opacity: 0.7,
+    borderRadius: 999,
+  },
+});
 
 function DailyPrayerCard({ streak }: { streak: number }) {
   return (

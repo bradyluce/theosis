@@ -80,6 +80,7 @@ export const userProfileSeed: UserProfileSnapshot = {
     },
   ],
   readingList: [],
+  readingPlanProgress: [],
   preferences: {
     calendarPreference: "new-calendar",
     primaryTranslationId: "kjva",

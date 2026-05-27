@@ -3,9 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MagnifyingGlass } from "@phosphor-icons/react";
-import { type ReactNode, useDeferredValue, useMemo, useState } from "react";
+import {
+  type ReactNode,
+  useDeferredValue,
+  useEffect,
+  useState,
+} from "react";
 import type { IconRef } from "@theosis/core";
-import { searchTheosis } from "@/features/search/search-engine";
+import type { SearchIntent, SearchResult } from "@/domain/search/types";
 import { useStudyState } from "@/lib/user/use-study-state";
 
 function escapeRegExp(value: string) {
@@ -63,12 +68,32 @@ export function SearchExperience({
   const addRecentSearch = useStudyState((state) => state.addRecentSearch);
   const [query, setQuery] = useState(initialQuery);
   const deferredQuery = useDeferredValue(query.trim());
-  const searchModel = useMemo(
-    () => searchTheosis(deferredQuery),
-    [deferredQuery],
-  );
-
+  const [fetchedModel, setFetchedModel] = useState<{
+    intent: SearchIntent | null;
+    results: SearchResult[];
+  } | null>(null);
   const isSearching = deferredQuery.length > 0;
+  // Empty query → empty results without touching state (avoids cascading
+  // renders flagged by react-hooks/set-state-in-effect).
+  const searchModel = isSearching
+    ? (fetchedModel ?? { intent: null, results: [] })
+    : { intent: null, results: [] };
+
+  useEffect(() => {
+    if (!deferredQuery) return;
+    let canceled = false;
+    fetch(`/api/search?q=${encodeURIComponent(deferredQuery)}`)
+      .then((response) => response.json())
+      .then((data: { intent: SearchIntent | null; results: SearchResult[] }) => {
+        if (!canceled) setFetchedModel(data);
+      })
+      .catch(() => {
+        if (!canceled) setFetchedModel({ intent: null, results: [] });
+      });
+    return () => {
+      canceled = true;
+    };
+  }, [deferredQuery]);
 
   return (
     <div className="space-y-6 px-4 sm:px-6">
@@ -104,7 +129,7 @@ export function SearchExperience({
           <p className="text-xs uppercase tracking-[0.18em] text-ink-soft">
             {searchModel.results.length}{" "}
             {searchModel.results.length === 1 ? "result" : "results"}
-            {searchModel.intent.kind === "reference" ? " · verse reference" : ""}
+            {searchModel.intent?.kind === "reference" ? " · verse reference" : ""}
           </p>
           {searchModel.results.length === 0 ? (
             <div className="rounded-[14px] border border-line/40 bg-surface px-4 py-8 text-center">

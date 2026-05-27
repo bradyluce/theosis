@@ -1,4 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import type { ReadingPlanProgress } from "@theosis/core";
 
 import { enqueueWrite } from "./sync/queue";
 import { syncProfilePatchMobile } from "./sync/sync-profile";
@@ -275,6 +276,7 @@ export type PrayerRule = {
 export type DailyCardKey =
   | "primary"
   | "continue-reading"
+  | "reading-plan"
   | "readings"
   | "commemoration"
   | "prayer"
@@ -283,6 +285,7 @@ export type DailyCardKey =
 export const DEFAULT_DAILY_CARD_ORDER: DailyCardKey[] = [
   "primary",
   "continue-reading",
+  "reading-plan",
   "readings",
   "commemoration",
   "prayer",
@@ -339,6 +342,10 @@ export type AppPreferences = {
   savedWorkChapters?: SavedWorkChapter[];
   // Color highlights on work paragraphs.
   workHighlights?: WorkParagraphHighlight[];
+  // Reading-plan progress, keyed by ReadingPlan.id. Local-only for now —
+  // plan progress doesn't yet round-trip through /api/me/...; the plan
+  // corpus is static so all the user contributes is a couple counters.
+  readingPlanProgress?: ReadingPlanProgress[];
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -1189,6 +1196,98 @@ export async function setOnboardingStatus(
 ): Promise<void> {
   const prefs = await loadPrefs();
   await savePrefs({ ...prefs, onboardingStatus: status });
+}
+
+// --- Reading-plan progress -------------------------------------------------
+
+export async function getReadingPlanProgress(): Promise<ReadingPlanProgress[]> {
+  const prefs = await loadPrefs();
+  return prefs.readingPlanProgress ?? [];
+}
+
+export async function startReadingPlan(planId: string): Promise<ReadingPlanProgress[]> {
+  const prefs = await loadPrefs();
+  const existing = prefs.readingPlanProgress ?? [];
+  if (existing.some((p) => p.planId === planId)) return existing;
+  const now = new Date().toISOString();
+  const next: ReadingPlanProgress = {
+    planId,
+    startedAt: now,
+    currentDay: 1,
+    completedDays: [],
+    lastReadAt: now,
+  };
+  const out = [...existing, next];
+  await savePrefs({ ...prefs, readingPlanProgress: out });
+  return out;
+}
+
+// Mark a day complete. Idempotent. Auto-advances currentDay if the user
+// just finished it — keeps the home tile current without manual bumping.
+export async function markReadingPlanDay(
+  planId: string,
+  day: number,
+): Promise<ReadingPlanProgress[]> {
+  const prefs = await loadPrefs();
+  const existing = prefs.readingPlanProgress ?? [];
+  const out = existing.map((p) => {
+    if (p.planId !== planId) return p;
+    if (p.completedDays.includes(day)) return p;
+    const completedDays = [...p.completedDays, day].sort((a, b) => a - b);
+    const currentDay = day === p.currentDay ? day + 1 : p.currentDay;
+    return {
+      ...p,
+      completedDays,
+      currentDay,
+      lastReadAt: new Date().toISOString(),
+    };
+  });
+  await savePrefs({ ...prefs, readingPlanProgress: out });
+  return out;
+}
+
+export async function unmarkReadingPlanDay(
+  planId: string,
+  day: number,
+): Promise<ReadingPlanProgress[]> {
+  const prefs = await loadPrefs();
+  const existing = prefs.readingPlanProgress ?? [];
+  const out = existing.map((p) =>
+    p.planId === planId
+      ? {
+          ...p,
+          completedDays: p.completedDays.filter((d) => d !== day),
+          lastReadAt: new Date().toISOString(),
+        }
+      : p,
+  );
+  await savePrefs({ ...prefs, readingPlanProgress: out });
+  return out;
+}
+
+export async function setReadingPlanCurrentDay(
+  planId: string,
+  day: number,
+): Promise<ReadingPlanProgress[]> {
+  const prefs = await loadPrefs();
+  const existing = prefs.readingPlanProgress ?? [];
+  const out = existing.map((p) =>
+    p.planId === planId
+      ? { ...p, currentDay: day, lastReadAt: new Date().toISOString() }
+      : p,
+  );
+  await savePrefs({ ...prefs, readingPlanProgress: out });
+  return out;
+}
+
+export async function removeReadingPlan(
+  planId: string,
+): Promise<ReadingPlanProgress[]> {
+  const prefs = await loadPrefs();
+  const existing = prefs.readingPlanProgress ?? [];
+  const out = existing.filter((p) => p.planId !== planId);
+  await savePrefs({ ...prefs, readingPlanProgress: out });
+  return out;
 }
 
 function computeStreak(daysIsoSorted: string[]): number {

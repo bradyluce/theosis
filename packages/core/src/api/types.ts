@@ -11,6 +11,7 @@ import type {
   CommentaryEntry,
   DailyCommemoration,
   DailyCommemorationItem,
+  DailyFastDetail,
   HymnText,
   IconRef,
   OrthodoxGuide,
@@ -18,8 +19,10 @@ import type {
   ParishCatalogEntry,
   Person,
   ReadingAssignment,
+  ReadingPlan,
   ScriptureReference,
   SourceRecord,
+  TimelineEntry,
   TopicPage,
   Work,
   WorkChapter,
@@ -130,6 +133,9 @@ export type DailyResponse = {
   translationSlug: string;
   primaryIcon: IconRef | null;
   saintIcons: Record<string, IconRef | null>;
+  // Rich fast snapshot — paired with daily.fastLabel. Absent on ordinary
+  // (non-fasting, non-fast-free) days.
+  fastDetail: DailyFastDetail | null;
 };
 
 // --- /api/search -----------------------------------------------------------
@@ -268,4 +274,28 @@ export type VersionResponse = {
   commit: string;
   branch: string;
   environment: string;
+};
+
+// --- /api/reading-plans ----------------------------------------------------
+
+// Lightweight summary used by the index — drops the full per-day schedule
+// so the index payload stays small. Mobile renders the cards from this
+// shape and only fetches the per-plan detail (with `days`) on tap.
+export type ReadingPlanSummary = Omit<ReadingPlan, "days"> & {
+  // Total reading-time estimate for the whole plan (totalDays * minutes).
+  estimatedTotalMinutes: number;
+};
+
+export type ReadingPlansResponse = {
+  plans: ReadingPlanSummary[];
+};
+
+export type ReadingPlanResponse = {
+  plan: ReadingPlan;
+};
+
+// --- /api/library/timeline -------------------------------------------------
+
+export type LibraryTimelineResponse = {
+  entries: TimelineEntry[];
 };

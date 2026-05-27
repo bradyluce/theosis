@@ -26,9 +26,12 @@ import type {
   GuidesResponse,
   LibraryCatalog,
   LibraryPeopleResponse,
+  LibraryTimelineResponse,
   MenaionMonthResponse,
   ParishDetailResponse,
   ParishesNearResponse,
+  ReadingPlanResponse,
+  ReadingPlansResponse,
   SearchResponse,
   TopicPageResponse,
   TopicsResponse,
@@ -100,6 +103,13 @@ export type TheosisApi = {
   // Forward-geocode a ZIP, city, or address to lat/lng. Used as a manual
   // fallback on the parishes screen when location permission is denied.
   geocode: (query: string) => Promise<GeocodeResponse>;
+  // Reading plans — static editorial content, no per-user data here.
+  // Progress lives in the client's profile store.
+  fetchReadingPlans: () => Promise<ReadingPlansResponse>;
+  fetchReadingPlan: (slug: string) => Promise<ReadingPlanResponse>;
+  // Patristic timeline — every catalogued Person with a parseable era,
+  // already bucketed (year resolved server-side, icon URL absolute).
+  fetchLibraryTimeline: () => Promise<LibraryTimelineResponse>;
 };
 
 export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
@@ -188,5 +198,13 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
       getJson<GeocodeResponse>(
         `/api/parishes/geocode?q=${encodeURIComponent(query)}`,
       ),
+    fetchReadingPlans: () =>
+      getJson<ReadingPlansResponse>("/api/reading-plans"),
+    fetchReadingPlan: (slug) =>
+      getJson<ReadingPlanResponse>(
+        `/api/reading-plans/${encodeURIComponent(slug)}`,
+      ),
+    fetchLibraryTimeline: () =>
+      getJson<LibraryTimelineResponse>("/api/library/timeline"),
   };
 }

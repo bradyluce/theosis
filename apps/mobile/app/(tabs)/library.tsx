@@ -983,6 +983,12 @@ function EditorialContent({
           onPress={() => router.push("/library/saints-calendar")}
         />
         <BrowseRow
+          glyph="clock"
+          label="Patristic timeline"
+          sub="Every Father and saint, century by century"
+          onPress={() => router.push("/library/timeline" as never)}
+        />
+        <BrowseRow
           glyph="layers"
           label="Topics"
           sub="Doctrines, practices, and virtues"

@@ -330,6 +330,31 @@ export type Person = {
   iconId?: string;
 };
 
+// How a work's body is surfaced.
+// - "full-text": prose body is licensed/PD and rendered in-app from
+//   content/normalized/library/by-work/<workId>/*.json.
+// - "reference-only": the work is catalogued for browsing, profile lists,
+//   and cross-references, but the body is not redistributed in-app. The
+//   UI renders a "where to read" card pointing at the publisher.
+// Absent value is treated as "full-text" by the loader for backwards
+// compatibility with works that pre-date this field.
+export type WorkContentStatus = "full-text" | "reference-only";
+
+// Where a reader can legitimately acquire a reference-only work. All fields
+// optional so a partial record (e.g. publisher only) still renders something
+// useful. `purchaseUrl` should point at the publisher's product page; use
+// `affiliateUrl` for an affiliate-tagged variant when one exists.
+export type WorkAvailability = {
+  publisher?: string;
+  purchaseUrl?: string;
+  affiliateUrl?: string;
+  isbn?: string;
+  status?: "in-print" | "out-of-print" | "open-access";
+  // Short editorial blurb shown on the "where to read" card. One line.
+  // Example: "Available in print and ebook from St. Vladimir's Seminary Press."
+  note?: string;
+};
+
 export type Work = {
   id: string;
   slug: string;
@@ -343,6 +368,8 @@ export type Work = {
   topicSlugs: string[];
   sourceId: string;
   verseRefs: ScriptureReference[];
+  contentStatus?: WorkContentStatus;
+  availability?: WorkAvailability;
 };
 
 export type WorkSection = {
@@ -580,4 +607,111 @@ export type ParishCatalog = {
   parishCount: number;
   jurisdictions: { code: Jurisdiction; label: string; count: number }[];
   parishes: ParishCatalogEntry[];
+};
+
+// --- Fast detail -----------------------------------------------------------
+// Per-day fast snapshot computed server-side and shipped to clients. Pairs
+// with DailyCommemoration.fastLabel — `fastLabel` is a short string for
+// chips; `DailyFastDetail` is the richer record the mobile/web banner uses
+// to render day-of-fast progress and severity-keyed guidance text.
+
+export type FastSeverity = "strict" | "standard" | "relaxed";
+
+export type FastKind =
+  | "great-lent"
+  | "holy-week"
+  | "cheesefare"
+  | "apostles"
+  | "dormition"
+  | "nativity"
+  | "weekly";
+
+export type FastFreeKind =
+  | "bright-week"
+  | "pentecost-week"
+  | "sviatki"
+  | "publican-pharisee";
+
+export type FastDetail = {
+  kind: "fast";
+  name: string;
+  fastKind: FastKind;
+  // 1-indexed; absent for the weekly Wed/Fri fast where a counter would be
+  // meaningless.
+  dayOfFast?: number;
+  totalDays?: number;
+  // Per-severity guidance, keyed by the user's fastingLevel preference.
+  // Strings are short pastoral pointers, not the typikon.
+  guidance: Record<FastSeverity, string>;
+};
+
+export type FastFreeDetail = {
+  kind: "fast-free";
+  name: string;
+  reason: string;
+  fastFreeKind: FastFreeKind;
+};
+
+export type DailyFastDetail = FastDetail | FastFreeDetail;
+
+// --- Reading plans ---------------------------------------------------------
+// Editorial reading plans — NT in 90 days, Psalter in a month, Holy Week
+// day-by-day. Plans are static (built into the @theosis/core bundle) so
+// clients can render them without a network call; progress is per-user
+// local state held in the consumer's profile store.
+
+export type ReadingPlanCategory = "scripture" | "psalter" | "season";
+
+export type ReadingPlanReading = {
+  label: string;
+  bookSlug: string;
+  chapterNumber: number;
+  verseStart?: number;
+  verseEnd?: number;
+  chapterEnd?: number;
+};
+
+export type ReadingPlanDay = {
+  day: number;
+  readings: ReadingPlanReading[];
+  label?: string;
+  note?: string;
+};
+
+export type ReadingPlan = {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string;
+  category: ReadingPlanCategory;
+  summary: string;
+  totalDays: number;
+  estimatedMinutesPerDay: number;
+  days: ReadingPlanDay[];
+};
+
+export type ReadingPlanProgress = {
+  planId: string;
+  startedAt: string;
+  currentDay: number;
+  completedDays: number[];
+  lastReadAt?: string;
+};
+
+// --- Patristic timeline ----------------------------------------------------
+// Pre-computed timeline entry — server resolves Person.eraLabel into a
+// numeric year so the mobile client doesn't have to ship the parser.
+
+export type TimelineEntry = {
+  personId: string;
+  personSlug: string;
+  name: string;
+  honorific?: string;
+  kind: Person["kind"];
+  eraLabel: string;
+  // Representative year (midpoint of any range). Used to bucket into
+  // centuries and to sort within a century.
+  year: number;
+  // Optional resolved icon (absolute URL like LibraryPerson.icon).
+  icon: IconRef | null;
 };

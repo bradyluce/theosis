@@ -4,10 +4,12 @@ import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
 import { getPeopleByIds, getPrimaryTranslation } from "@/lib/content";
 import {
+  composeDailyFastDetail,
   getDailyCommemoration,
   getDailyHymns,
   getDailyReadings,
 } from "@/lib/calendar";
+import { FastBanner } from "@/features/calendar/fast-banner";
 import {
   getIconForPerson,
   getPrimaryIconForDay,
@@ -49,6 +51,10 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
   const date = parseDateParam(rawDate);
 
   const daily = getDailyCommemoration(date);
+  // Match the composer's "today" idiom: local Y/M/D at UTC midnight.
+  const now = new Date();
+  const todayUtc = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+  const fastDetail = composeDailyFastDetail(date ?? todayUtc);
   const saints = getPeopleByIds(daily.saintIds);
   const readings = getDailyReadings(date);
   const hymns = getDailyHymns(date);
@@ -83,12 +89,15 @@ export default async function DailyPage({ searchParams }: DailyPageProps) {
 
       <DatePicker value={daily.isoDate} today={todayIso()} />
 
+      <FastBanner detail={fastDetail} variant="feature" />
+
       <div className="grid gap-4 xl:grid-cols-[1.2fr_0.8fr]">
         <Surface className="space-y-5">
-          <div className="flex flex-wrap gap-2">
-            {daily.feastLabel ? <Pill variant="accent">{daily.feastLabel}</Pill> : null}
-            {daily.fastLabel ? <Pill variant="subtle">{daily.fastLabel}</Pill> : null}
-          </div>
+          {daily.feastLabel ? (
+            <div className="flex flex-wrap gap-2">
+              <Pill variant="accent">{daily.feastLabel}</Pill>
+            </div>
+          ) : null}
 
           <div className="space-y-3">
             {primaryIcon ? (

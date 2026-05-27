@@ -2,6 +2,7 @@ import "server-only";
 
 import { NextRequest, NextResponse } from "next/server";
 import {
+  composeDailyFastDetail,
   getDailyCommemoration,
   getDailyHymns,
   getDailyReadings,
@@ -48,6 +49,13 @@ export async function GET(request: NextRequest) {
   const readings = getDailyReadings(date);
   const hymns = getDailyHymns(date);
   const translationSlug = getPrimaryTranslation()?.slug ?? "kjva";
+  // Match the composer's "today" idiom when no ?date= passed: local Y/M/D
+  // at UTC midnight, so day-of-fast math agrees with the rest of the page.
+  const now = new Date();
+  const todayUtc = new Date(
+    Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()),
+  );
+  const fastDetail = composeDailyFastDetail(date ?? todayUtc) ?? null;
 
   // Derive the origin from the Host header rather than url.origin, which
   // returns the server's bind address ("0.0.0.0" in `next dev -H 0.0.0.0`)
@@ -77,6 +85,7 @@ export async function GET(request: NextRequest) {
       translationSlug,
       primaryIcon,
       saintIcons,
+      fastDetail,
     },
     { headers: { "Cache-Control": CACHE_CONTROL } },
   );

@@ -57,6 +57,22 @@ export type ReadingHistoryEntry = {
   visitedAt: string;
 };
 
+// Per-user reading-plan progress. Plans themselves are static editorial
+// content (src/lib/content/seed/reading-plans.ts); this just tracks where
+// the user is in each plan they've started.
+export type ReadingPlanProgress = {
+  planId: string;
+  startedAt: string;
+  // 1-indexed current day. Advances when the user marks a day complete,
+  // but can also be moved manually via the plan-detail page.
+  currentDay: number;
+  // Days the user has explicitly marked complete. May contain entries
+  // larger than currentDay if they read ahead.
+  completedDays: number[];
+  // Last time any day of this plan was opened or marked complete.
+  lastReadAt?: string;
+};
+
 // Identity / status — what the user told us about themselves during
 // onboarding (or revisited in Settings).
 export type UserStatus = "orthodox" | "catechumen" | "inquirer";
@@ -123,6 +139,7 @@ export type UserProfileSnapshot = {
   recentSearches: SavedSearch[];
   readingHistory: ReadingHistoryEntry[];
   readingList: ReadingListItem[];
+  readingPlanProgress: ReadingPlanProgress[];
   preferences: ProfilePreferences;
   onboardingStatus: OnboardingStatus;
 };

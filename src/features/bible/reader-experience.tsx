@@ -20,6 +20,7 @@ import {
 } from "@phosphor-icons/react";
 import { useEffect, useMemo, useState } from "react";
 import type { ReaderModel, ReaderVerseCard } from "@/features/bible/reader-model";
+import { QuoteCardModal } from "@/features/share/quote-card-modal";
 import { useStudyState } from "@/lib/user/use-study-state";
 import { useUiState } from "@/lib/user/use-ui-state";
 import { cn } from "@/lib/utils";
@@ -60,6 +61,7 @@ export function BibleReaderExperience({
   const [translationPickerOpen, setTranslationPickerOpen] = useState(false);
   const [bookPickerOpen, setBookPickerOpen] = useState(false);
   const [chapterPickerOpen, setChapterPickerOpen] = useState(false);
+  const [shareVerseId, setShareVerseId] = useState<string | null>(null);
 
   const toggleSavedVerse = useStudyState((state) => state.toggleSavedVerse);
   const savedVerses = useStudyState((state) => state.savedVerses);
@@ -334,6 +336,10 @@ export function BibleReaderExperience({
             toggleSavedVerse(selectedVerse.verse.id, selectedVerse.verse.translationId)
           }
           onClose={handleClose}
+          onShare={() => {
+            setShareVerseId(selectedVerse.verse.id);
+            setSelectedVerseId(null);
+          }}
           onOpenCommentary={() => {
             setShowCommentary(selectedVerse.verse.id);
             setSelectedVerseId(null);
@@ -343,6 +349,26 @@ export function BibleReaderExperience({
           }
         />
       ) : null}
+
+      {/* Share-as-image modal — opens from the Share/Image action tiles.
+          Verse text + reference label are baked into the rendered card by
+          /api/quote-card. */}
+      {shareVerseId ? (() => {
+        const shareVerse = model.verses.find(
+          (card) => card.verse.id === shareVerseId,
+        );
+        if (!shareVerse) return null;
+        return (
+          <QuoteCardModal
+            open
+            onClose={() => setShareVerseId(null)}
+            text={shareVerse.verse.text}
+            attribution={shareVerse.verse.referenceLabel}
+            reference={model.translation.name}
+            kind="verse"
+          />
+        );
+      })() : null}
 
       {/* Commentary bottom sheet */}
       {commentaryVerse ? (
@@ -419,6 +445,7 @@ function VerseActionSheet({
   isSaved,
   onSave,
   onClose,
+  onShare,
   onOpenCommentary,
   hasCommentary,
 }: {
@@ -429,6 +456,7 @@ function VerseActionSheet({
   isSaved: boolean;
   onSave: () => void;
   onClose: () => void;
+  onShare: () => void;
   onOpenCommentary: () => void;
   hasCommentary: boolean;
 }) {
@@ -511,12 +539,12 @@ function VerseActionSheet({
             <ActionTile
               icon={<ShareNetwork size={20} />}
               label="Share"
-              onClick={() => {}}
+              onClick={onShare}
             />
             <ActionTile
               icon={<ImageIcon size={20} />}
               label="Image"
-              onClick={() => {}}
+              onClick={onShare}
             />
             {hasCommentary ? (
               <ActionTile

@@ -30,7 +30,7 @@ export default function TranslationPage() {
         />
       ))}
       <p className="px-2 pt-2 text-xs leading-relaxed text-ink-soft">
-        More translations (RSV, LXX, OSB) ship in a follow-up release.
+        More translations ship in a follow-up release.
       </p>
     </OnboardingShell>
   );

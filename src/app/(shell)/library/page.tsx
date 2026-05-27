@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { CaretRight, Clock } from "@phosphor-icons/react/dist/ssr";
 import type { IconRef } from "@theosis/core";
 import { LibraryExplorer } from "@/features/library/library-explorer";
 import { getAllTopics } from "@/lib/content";
@@ -27,12 +29,32 @@ export default function LibraryPage() {
   }
 
   return (
-    <LibraryExplorer
-      people={people}
-      works={works}
-      topics={topics}
-      sources={sources}
-      personIcons={personIcons}
-    />
+    <div className="space-y-4">
+      <Link
+        href="/library/timeline"
+        className="flex items-center gap-3 rounded-[14px] border border-line/40 bg-surface px-4 py-3 transition-colors hover:bg-surface-strong"
+      >
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-accent/30 bg-accent-soft text-accent">
+          <Clock size={18} weight="fill" />
+        </span>
+        <div className="min-w-0 flex-1">
+          <p className="text-[10px] uppercase tracking-[0.18em] text-accent">
+            Across the centuries
+          </p>
+          <p className="font-serif text-base tracking-tight text-ink">
+            Patristic timeline
+          </p>
+        </div>
+        <CaretRight size={14} weight="bold" className="shrink-0 text-ink-soft" />
+      </Link>
+
+      <LibraryExplorer
+        people={people}
+        works={works}
+        topics={topics}
+        sources={sources}
+        personIcons={personIcons}
+      />
+    </div>
   );
 }

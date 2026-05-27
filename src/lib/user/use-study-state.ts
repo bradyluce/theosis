@@ -7,6 +7,7 @@ import type {
   ReadingHistoryEntry,
   ReadingListItem,
   ReadingListStatus,
+  ReadingPlanProgress,
   SavedHighlight,
   SavedNote,
   SavedSearch,
@@ -75,6 +76,14 @@ type StudyState = UserProfileSnapshot & {
   // Reading list actions
   setReadingListStatus: (workId: string, status: ReadingListStatus) => void;
   removeFromReadingList: (workId: string) => void;
+  // Reading-plan actions. Progress is local-only for now (no server mirror)
+  // — the plan corpus is static and the user's day-counter doesn't justify
+  // a sync round-trip yet.
+  startReadingPlan: (planId: string) => void;
+  setReadingPlanCurrentDay: (planId: string, day: number) => void;
+  markReadingPlanDay: (planId: string, day: number) => void;
+  unmarkReadingPlanDay: (planId: string, day: number) => void;
+  removeReadingPlan: (planId: string) => void;
   togglePreferredFather: (personId: string) => void;
   togglehiddenFather: (personId: string) => void;
   movePreferredFather: (personId: string, direction: "up" | "down") => void;
@@ -358,6 +367,70 @@ export const useStudyState = create<StudyState>()(
             ),
           };
         }),
+      startReadingPlan: (planId) =>
+        set((state) => {
+          const existing = (state.readingPlanProgress ?? []).find(
+            (p) => p.planId === planId,
+          );
+          if (existing) return {};
+          const now = new Date().toISOString();
+          const next: ReadingPlanProgress = {
+            planId,
+            startedAt: now,
+            currentDay: 1,
+            completedDays: [],
+            lastReadAt: now,
+          };
+          return {
+            readingPlanProgress: [
+              ...(state.readingPlanProgress ?? []),
+              next,
+            ],
+          };
+        }),
+      setReadingPlanCurrentDay: (planId, day) =>
+        set((state) => ({
+          readingPlanProgress: (state.readingPlanProgress ?? []).map((p) =>
+            p.planId === planId
+              ? { ...p, currentDay: day, lastReadAt: new Date().toISOString() }
+              : p,
+          ),
+        })),
+      markReadingPlanDay: (planId, day) =>
+        set((state) => ({
+          readingPlanProgress: (state.readingPlanProgress ?? []).map((p) => {
+            if (p.planId !== planId) return p;
+            if (p.completedDays.includes(day)) return p;
+            const completedDays = [...p.completedDays, day].sort((a, b) => a - b);
+            // Auto-advance currentDay if the user just finished it (avoids
+            // them having to bump it manually after most check-ins).
+            const currentDay = day === p.currentDay ? day + 1 : p.currentDay;
+            return {
+              ...p,
+              completedDays,
+              currentDay,
+              lastReadAt: new Date().toISOString(),
+            };
+          }),
+        })),
+      unmarkReadingPlanDay: (planId, day) =>
+        set((state) => ({
+          readingPlanProgress: (state.readingPlanProgress ?? []).map((p) =>
+            p.planId === planId
+              ? {
+                  ...p,
+                  completedDays: p.completedDays.filter((d) => d !== day),
+                  lastReadAt: new Date().toISOString(),
+                }
+              : p,
+          ),
+        })),
+      removeReadingPlan: (planId) =>
+        set((state) => ({
+          readingPlanProgress: (state.readingPlanProgress ?? []).filter(
+            (p) => p.planId !== planId,
+          ),
+        })),
       togglePreferredFather: (personId) =>
         set((state) => {
           // Defensive defaults — older persisted states pre-date these fields.
@@ -425,7 +498,7 @@ export const useStudyState = create<StudyState>()(
       // a migration below. Without it, returning users whose localStorage
       // predates the new fields rehydrate with `undefined` slots and crash
       // on first read.
-      version: 3,
+      version: 4,
       // Auth slice is reconstructed from Clerk on every load — don't
       // serialize it. pendingWrites IS persisted so offline mutations
       // survive a refresh.
@@ -468,6 +541,10 @@ export const useStudyState = create<StudyState>()(
         // get "needs_onboarding" from the initial state.
         if (version < 3 && !state.pendingWrites) {
           state.pendingWrites = [];
+        }
+        // v3 -> v4: readingPlanProgress field added.
+        if (!state.readingPlanProgress) {
+          state.readingPlanProgress = [];
         }
         if (state.onboardingStatus === undefined) {
           const hasAnyData =

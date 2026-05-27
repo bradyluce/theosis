@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { Pill } from "@/components/primitives/pill";
 import { Surface } from "@/components/primitives/surface";
 import { ReadingListButton } from "@/features/library/reading-list-button";
+import { WhereToReadCard } from "@/features/library/where-to-read-card";
 import {
   getPersonById,
   getSourceById,
@@ -50,7 +51,11 @@ export default async function WorkPage({ params }: WorkPageProps) {
   const source = getSourceById(work.sourceId) ?? getSourceByIdFromAll(work.sourceId);
   const seedSections = getWorkSections(work.id);
   const commentaryEntries = getCommentaryEntriesForWork(work.id);
-  const chapters = getChaptersForWork(work.id);
+  const isReferenceOnly = work.contentStatus === "reference-only";
+  // Reference-only works never carry chapter bodies, but be defensive: an
+  // orphan by-work directory could still surface chapters until the migration
+  // is re-run. Treat reference-only as the authoritative signal.
+  const chapters = isReferenceOnly ? [] : getChaptersForWork(work.id);
 
   // Group commentary entries by chapter for rendering
   type ChapterGroup = {
@@ -175,6 +180,13 @@ export default async function WorkPage({ params }: WorkPageProps) {
         </Surface>
 
         <div className="space-y-4">
+          {isReferenceOnly && work.availability ? (
+            <WhereToReadCard
+              availability={work.availability}
+              workTitle={work.title}
+            />
+          ) : null}
+
           {seedSections.map((section) => (
             <Surface key={section.id} className="space-y-3">
               <Pill>{section.label}</Pill>
@@ -304,7 +316,7 @@ export default async function WorkPage({ params }: WorkPageProps) {
                 </details>
               ))}
             </div>
-          ) : !hasChapters && seedSections.length === 0 ? (
+          ) : !hasChapters && seedSections.length === 0 && !isReferenceOnly ? (
             <Surface tone="quiet" className="space-y-2 px-4 py-4">
               <h3 className="font-serif text-2xl tracking-tight text-ink">
                 No content seeded for this work yet.
