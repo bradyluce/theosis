@@ -1,6 +1,7 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Instrument_Sans, Newsreader } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 import { SyncProvider } from "@/components/sync-provider";
@@ -54,6 +55,7 @@ export default function RootLayout({
         >
           <SyncProvider />
           {children}
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
