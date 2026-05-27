@@ -8,6 +8,7 @@ import type {
   SourceRecord,
   Work,
   WorkChapter,
+  WorkChapterSummary,
 } from "@theosis/core";
 import { verseLocationKey } from "@/lib/content/reference";
 import { toEntryChapterNumbers } from "@/lib/content/psalter-numbering";
@@ -76,7 +77,7 @@ type LibraryCatalog = {
   index: {
     byWork: Record<
       string,
-      { chapterCount: number; chapterIds: string[]; orders: number[] }
+      { chapterCount: number; chapters: WorkChapterSummary[] }
     >;
   };
 };
@@ -263,14 +264,19 @@ function loadWorkChaptersFromDisk(workId: string): WorkChapter[] {
 
   const catalog = loadLibraryCatalog();
   const entry = catalog?.index.byWork[workId];
-  if (!entry || entry.orders.length === 0) {
+  if (!entry || entry.chapters.length === 0) {
     workChaptersCache.set(workId, []);
     return [];
   }
 
   const chapters: WorkChapter[] = [];
-  for (const order of entry.orders) {
-    const filePath = path.join(LIBRARY_DIR, "by-work", workId, `${order}.json`);
+  for (const summary of entry.chapters) {
+    const filePath = path.join(
+      LIBRARY_DIR,
+      "by-work",
+      workId,
+      `${summary.order}.json`,
+    );
     try {
       const file = JSON.parse(fs.readFileSync(filePath, "utf8")) as ByWorkFile;
       chapters.push(file.chapter);
@@ -346,6 +352,17 @@ function getNormalizedEntriesByWorkId(): Map<string, CommentaryEntry[]> {
 
 export function getChaptersForWork(workId: string): WorkChapter[] {
   return loadWorkChaptersFromDisk(workId);
+}
+
+// Chapter SUMMARIES (no `sections`) sourced directly from the cached
+// catalog — never touches the per-chapter prose files. The chapters
+// route uses this so the work-detail TOC works even when the by-work
+// trees aren't bundled (Vercel) and only R2 has the prose.
+export function getChapterSummariesForWork(
+  workId: string,
+): WorkChapterSummary[] {
+  const catalog = loadLibraryCatalog();
+  return catalog?.index.byWork[workId]?.chapters ?? [];
 }
 
 export function getPersonByIdFromAll(personId: string): Person | undefined {

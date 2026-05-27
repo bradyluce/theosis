@@ -43,6 +43,7 @@ import type {
   SourceRecord,
   Work,
   WorkChapter,
+  WorkChapterSummary,
 } from "@theosis/core";
 import { verseLocationKey } from "../../src/lib/content/reference";
 import { resolveBookSlug } from "../ingest/commentary/shared";
@@ -84,14 +85,16 @@ type LibraryCatalog = {
   works: Work[];
   sources: SourceRecord[];
   index: {
-    // `chapterIds` and `orders` are parallel arrays, both sorted ascending by
-    // order. `orders` is what the loader needs to find files (filenames use
-    // <order>.json); orders aren't always 1..N — the ecumenical-council
+    // workId → chapter summaries (every WorkChapter field except `sections`)
+    // sorted ascending by `order`. Embedding summaries here lets the work-
+    // detail TOC route serve directly from the catalog without touching the
+    // per-chapter prose files (those live in R2 and are stripped from the
+    // Vercel bundle). Orders aren't always 1..N — the ecumenical-council
     // works pin their single chapter at the council's traditional ordinal
     // (e.g. Chalcedon at order=4) which leaves gaps.
     byWork: Record<
       string,
-      { chapterCount: number; chapterIds: string[]; orders: number[] }
+      { chapterCount: number; chapters: WorkChapterSummary[] }
     >;
   };
 };
@@ -564,7 +567,7 @@ function main() {
   // Write library/by-work files.
   const byWorkIndex: Record<
     string,
-    { chapterCount: number; chapterIds: string[]; orders: number[] }
+    { chapterCount: number; chapters: WorkChapterSummary[] }
   > = {};
   let workFilesWritten = 0;
   for (const [workId, byOrder] of chaptersByWork) {
@@ -594,8 +597,7 @@ function main() {
     }
     byWorkIndex[workId] = {
       chapterCount: ordered.length,
-      chapterIds: ordered.map((c) => c.id),
-      orders: ordered.map((c) => c.order),
+      chapters: ordered.map(({ sections: _sections, ...summary }) => summary),
     };
   }
 

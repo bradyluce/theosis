@@ -41,19 +41,29 @@ export type CommentaryCatalog = {
   };
 };
 
+// Chapter summary — every WorkChapter field except `sections`. Used by
+// the work-detail screen's table of contents so a 13-book work doesn't
+// download all 500 KB of prose just to render a list of titles. Defined
+// before LibraryCatalog because the catalog embeds these inline.
+export type WorkChapterSummary = Omit<WorkChapter, "sections">;
+
 export type LibraryCatalog = {
   version: "1";
   people: Person[];
   works: Work[];
   sources: SourceRecord[];
   index: {
-    // workId → chapter metadata. `orders` is the parallel array clients
-    // iterate to fetch /api/library/by-work/<workId>/<order>; orders aren't
-    // always 1..N (ecumenical-council works pin their lone chapter at the
-    // council's ordinal).
+    // workId → chapter summaries sorted by `order` ascending. Embedding
+    // the summaries (id/label/title/order/sourceId) here means the work-
+    // detail TOC can be served straight from this cached catalog without
+    // touching the per-chapter library/by-work/<workId>/<order>.json
+    // files — those live in R2 and are stripped from the Vercel bundle.
+    // Orders aren't always 1..N (ecumenical-council works pin their lone
+    // chapter at the council's ordinal); iterate `chapters[*].order` to
+    // discover which order numbers exist for a given work.
     byWork: Record<
       string,
-      { chapterCount: number; chapterIds: string[]; orders: number[] }
+      { chapterCount: number; chapters: WorkChapterSummary[] }
     >;
   };
 };
@@ -76,11 +86,6 @@ export type ByChapterFile = {
 export type ByWorkFile = {
   chapter: WorkChapter;
 };
-
-// Chapter summary — every WorkChapter field except `sections`. Used by
-// the work-detail screen's table of contents so a 13-book work doesn't
-// download all 500 KB of prose just to render a list of titles.
-export type WorkChapterSummary = Omit<WorkChapter, "sections">;
 
 export type WorkChaptersResponse = {
   chapters: WorkChapterSummary[];

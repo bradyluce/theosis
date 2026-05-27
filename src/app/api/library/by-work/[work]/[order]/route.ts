@@ -12,8 +12,8 @@ import type { WorkChapter } from "@theosis/core";
 // with full prose inline. The order is the chapter's `order` field, not
 // always 1..N — the six ecumenical-council works pin their single
 // chapter at the council's ordinal (e.g. Chalcedon order=4). Clients
-// should consult library/catalog.json's index.byWork[workId].orders to
-// know which orders exist.
+// should consult library/catalog.json's index.byWork[workId].chapters
+// (iterate `chapter.order`) to know which orders exist.
 
 const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
 
