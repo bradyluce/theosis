@@ -15,7 +15,11 @@ import type { WorkChapter } from "@theosis/core";
 // should consult library/catalog.json's index.byWork[workId].chapters
 // (iterate `chapter.order`) to know which orders exist.
 
-const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
+// CDN-cached but not client-cached. See sibling chapters/route.ts for why
+// — `max-age=0` keeps iOS NSURLSession from pinning a stale response for
+// an hour after we push content fixes.
+const CACHE_CONTROL =
+  "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400";
 
 type ByWorkFile = {
   chapter: WorkChapter;

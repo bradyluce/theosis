@@ -17,7 +17,12 @@ import { getChapterSummariesForWork } from "@/lib/content/commentary-loader";
 // so a route that tried to read them through `fs` would return [] in
 // production for every work.
 
-const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
+// Cache on Vercel's edge (s-maxage) but NOT in the client's HTTP cache —
+// `max-age=0` tells iOS NSURLSession / Android OkHttp not to keep the
+// response on disk, so when we ship a fix to a broken /chapters response
+// users don't stay stuck on the cached empty payload for an hour.
+const CACHE_CONTROL =
+  "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400";
 
 export async function GET(
   _request: NextRequest,
