@@ -1,13 +1,15 @@
-// Temporary debug screen for verifying the Phase 1 auth flow end-to-end on
-// mobile. Replaced by the proper onboarding screens in Phase 3.
+// Sign-in screen. Reached from the onboarding "Sign in / Sign up" step
+// and from the You tab / Settings Account card. Hosts:
+//   - Apple + Google OAuth (via Clerk's useSSO — opens Safari View /
+//     Chrome Custom Tab and returns a session)
+//   - Email + password sign-in and sign-up (the latter walks through a
+//     6-digit email verification code)
+//   - When already signed in: a Halo'd identity card with sign-out and
+//     a one-tap "Fetch /api/me" diagnostic.
 //
-// What it does:
-//   - Signed out: minimal email + password sign-in / sign-up form via
-//     Clerk's useSignIn / useSignUp hooks.
-//   - Signed in: shows the Clerk user's email, lets you sign out, and has
-//     a "Fetch /api/me" button that hits the local Next dev server (in dev)
-//     or the Vercel deploy (in production) with the Clerk JWT and prints
-//     the parsed snapshot.
+// The screen leans on the same theosis-theme primitives that the rest
+// of the app uses (Halo, Wordmark, GiltRule, Card, Eyebrow) so it feels
+// like a Theosis surface, not a generic auth modal.
 
 import {
   useAuth,
@@ -16,13 +18,15 @@ import {
   useSSO,
   useUser,
 } from "@clerk/clerk-expo";
-import { Stack } from "expo-router";
+import Feather from "@expo/vector-icons/Feather";
+import { LinearGradient } from "expo-linear-gradient";
+import { Stack, router } from "expo-router";
 import * as WebBrowser from "expo-web-browser";
-import { Platform } from "react-native";
 import { useEffect, useState } from "react";
 import {
   Alert,
   KeyboardAvoidingView,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -32,7 +36,14 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
+import {
+  Card,
+  Eyebrow,
+  GiltRule,
+  Halo,
+  Wordmark,
+} from "@/components/theosis/primitives";
+import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { getApiBaseUrl } from "@/lib/api";
 
 export default function AuthDebugScreen() {
@@ -40,14 +51,36 @@ export default function AuthDebugScreen() {
 
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
-      <Stack.Screen
-        options={{
-          title: "Auth debug",
-          headerStyle: { backgroundColor: colors.background },
-          headerTintColor: colors.ink,
-          headerShadowVisible: false,
-        }}
+      <Stack.Screen options={{ headerShown: false }} />
+      <LinearGradient
+        colors={[
+          "rgba(212, 168, 87, 0.14)",
+          "rgba(139, 58, 58, 0.04)",
+          colors.background,
+        ]}
+        locations={[0, 0.45, 1]}
+        style={StyleSheet.absoluteFill}
+        pointerEvents="none"
       />
+
+      <View style={styles.masthead}>
+        <Pressable
+          onPress={() => router.back()}
+          hitSlop={10}
+          style={({ pressed }) => [
+            styles.backButton,
+            pressed && { opacity: 0.6 },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel="Back"
+        >
+          <Feather name="chevron-left" size={20} color={colors.inkMuted} />
+        </Pressable>
+        <Wordmark size={18} subline="Account" />
+        <View style={styles.mastheadSpacer} />
+      </View>
+      <GiltRule full style={{ marginHorizontal: spacing.xl }} />
+
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : undefined}
         style={{ flex: 1 }}
@@ -56,35 +89,17 @@ export default function AuthDebugScreen() {
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}
           keyboardShouldPersistTaps="handled"
+          showsVerticalScrollIndicator={false}
         >
-          <View style={styles.titleBlock}>
-            <Text style={text.eyebrow}>Phase 1 verification</Text>
-            <Text style={styles.title}>Auth debug</Text>
-            <Text style={styles.subtitle}>
-              Temporary screen to verify the end-to-end auth + /api/me flow.
-              Replaced by the proper onboarding in Phase 3.
-            </Text>
-          </View>
-
           {!userLoaded ? (
-            <View style={styles.card}>
-              <Text style={styles.body}>Loading Clerk…</Text>
-            </View>
+            <Card>
+              <Text style={styles.body}>Loading…</Text>
+            </Card>
           ) : isSignedIn ? (
             <SignedInView email={user?.primaryEmailAddress?.emailAddress} />
           ) : (
             <SignedOutView />
           )}
-
-          <View style={styles.card}>
-            <Text style={styles.sectionLabel}>API base URL</Text>
-            <Text style={styles.mono}>{getApiBaseUrl() || "(unset)"}</Text>
-            <Text style={styles.hint}>
-              In dev this is the LAN URL of your Next dev server (port 3000).
-              Make sure the Next server is running with `npm run dev:mobile`
-              so it binds to 0.0.0.0 and the phone can reach it.
-            </Text>
-          </View>
         </ScrollView>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -92,15 +107,14 @@ export default function AuthDebugScreen() {
 }
 
 // ---------------------------------------------------------------------------
-// Signed-out view: email + password sign-in / sign-up forms
+// Signed-out: hero + OAuth buttons + email form
 // ---------------------------------------------------------------------------
 
 function SignedOutView() {
   const [mode, setMode] = useState<"sign-in" | "sign-up">("sign-in");
 
-  // Warm up / cool down the browser session so the OAuth handoff doesn't
-  // need to spin up a cold Safari View Controller / Chrome Custom Tab on
-  // first tap. Clerk's docs recommend this; harmless if it errors.
+  // Warm up the in-app browser so the first OAuth tap doesn't pay the
+  // Safari View Controller cold-start.
   useEffect(() => {
     void WebBrowser.warmUpAsync().catch(() => {});
     return () => {
@@ -109,60 +123,72 @@ function SignedOutView() {
   }, []);
 
   return (
-    <View style={{ gap: spacing.md }}>
-      <OAuthButtons />
-
-      <View style={styles.divider}>
-        <View style={styles.dividerLine} />
-        <Text style={styles.dividerLabel}>OR EMAIL</Text>
-        <View style={styles.dividerLine} />
+    <View style={{ gap: spacing.lg }}>
+      <View style={styles.heroBlock}>
+        <Eyebrow tone="accent">Welcome</Eyebrow>
+        <Text style={styles.heroTitle}>Sign in to Theosis</Text>
+        <Text style={styles.heroSubtitle}>
+          Keep your highlights, notes, reading list, and prayer rule across
+          devices. Continue with Apple, Google, or email.
+        </Text>
       </View>
 
-      <View style={styles.modeRow}>
-        <Pressable
-          onPress={() => setMode("sign-in")}
-          style={[
-            styles.modeButton,
-            mode === "sign-in" && styles.modeButtonActive,
-          ]}
-        >
-          <Text
-            style={[
-              styles.modeButtonText,
-              mode === "sign-in" && styles.modeButtonTextActive,
-            ]}
-          >
-            Sign in
-          </Text>
-        </Pressable>
-        <Pressable
-          onPress={() => setMode("sign-up")}
-          style={[
-            styles.modeButton,
-            mode === "sign-up" && styles.modeButtonActive,
-          ]}
-        >
-          <Text
-            style={[
-              styles.modeButtonText,
-              mode === "sign-up" && styles.modeButtonTextActive,
-            ]}
-          >
-            Sign up
-          </Text>
-        </Pressable>
-      </View>
+      <Card>
+        <View style={{ gap: spacing.md }}>
+          <OAuthButtons />
 
-      {mode === "sign-in" ? <SignInForm /> : <SignUpForm />}
+          <View style={styles.divider}>
+            <View style={styles.dividerLine} />
+            <Text style={styles.dividerLabel}>OR WITH EMAIL</Text>
+            <View style={styles.dividerLine} />
+          </View>
+
+          <View style={styles.modeRow}>
+            <Pressable
+              onPress={() => setMode("sign-in")}
+              style={[
+                styles.modeButton,
+                mode === "sign-in" && styles.modeButtonActive,
+              ]}
+              accessibilityRole="tab"
+              accessibilityState={{ selected: mode === "sign-in" }}
+            >
+              <Text
+                style={[
+                  styles.modeButtonText,
+                  mode === "sign-in" && styles.modeButtonTextActive,
+                ]}
+              >
+                Sign in
+              </Text>
+            </Pressable>
+            <Pressable
+              onPress={() => setMode("sign-up")}
+              style={[
+                styles.modeButton,
+                mode === "sign-up" && styles.modeButtonActive,
+              ]}
+              accessibilityRole="tab"
+              accessibilityState={{ selected: mode === "sign-up" }}
+            >
+              <Text
+                style={[
+                  styles.modeButtonText,
+                  mode === "sign-up" && styles.modeButtonTextActive,
+                ]}
+              >
+                Create account
+              </Text>
+            </Pressable>
+          </View>
+
+          {mode === "sign-in" ? <SignInForm /> : <SignUpForm />}
+        </View>
+      </Card>
     </View>
   );
 }
 
-// Apple + Google sign-in via Clerk's useSSO. Each tap opens the system
-// browser (or in-app Safari View on iOS) at Clerk's OAuth start URL,
-// returns the session, and setActive flips the local Clerk session.
-// The redirect URL `mobile://oauth-native-callback` is configured in
-// the Clerk dashboard for this instance.
 function OAuthButtons() {
   const { startSSOFlow } = useSSO();
   const [busyProvider, setBusyProvider] = useState<
@@ -186,7 +212,7 @@ function OAuthButtons() {
         result.authSessionResult &&
         result.authSessionResult.type === "dismiss"
       ) {
-        // User closed the browser — silent no-op.
+        // User backed out; silent.
       } else {
         Alert.alert(
           "Sign-in incomplete",
@@ -198,7 +224,10 @@ function OAuthButtons() {
         err && typeof err === "object" && "errors" in err
           ? JSON.stringify((err as { errors: unknown }).errors)
           : String(err);
-      Alert.alert(`${provider} sign-in failed`, message);
+      Alert.alert(
+        `${provider === "apple" ? "Apple" : "Google"} sign-in failed`,
+        message,
+      );
     } finally {
       setBusyProvider(null);
     }
@@ -219,8 +248,14 @@ function OAuthButtons() {
           accessibilityRole="button"
           accessibilityLabel="Continue with Apple"
         >
+          <Feather
+            name="moon"
+            size={16}
+            color="#ffffff"
+            style={{ marginRight: 8 }}
+          />
           <Text style={styles.oauthButtonAppleLabel}>
-            {busyProvider === "apple" ? "Opening…" : " Continue with Apple"}
+            {busyProvider === "apple" ? "Opening…" : "Continue with Apple"}
           </Text>
         </Pressable>
       ) : null}
@@ -236,6 +271,12 @@ function OAuthButtons() {
         accessibilityRole="button"
         accessibilityLabel="Continue with Google"
       >
+        <Feather
+          name="globe"
+          size={16}
+          color={colors.ink}
+          style={{ marginRight: 8 }}
+        />
         <Text style={styles.oauthButtonGoogleLabel}>
           {busyProvider === "google" ? "Opening…" : "Continue with Google"}
         </Text>
@@ -272,22 +313,23 @@ function SignInForm() {
   }
 
   return (
-    <View style={styles.card}>
-      <Text style={styles.sectionLabel}>Sign in</Text>
+    <View style={{ gap: spacing.sm }}>
+      <FieldLabel label="Email" />
       <TextInput
         value={email}
         onChangeText={setEmail}
-        placeholder="email"
+        placeholder="you@example.com"
         placeholderTextColor={colors.inkSoft}
         autoCapitalize="none"
         autoComplete="email"
         keyboardType="email-address"
         style={styles.input}
       />
+      <FieldLabel label="Password" />
       <TextInput
         value={password}
         onChangeText={setPassword}
-        placeholder="password"
+        placeholder="••••••••"
         placeholderTextColor={colors.inkSoft}
         secureTextEntry
         autoCapitalize="none"
@@ -358,86 +400,90 @@ function SignUpForm() {
     }
   }
 
-  return (
-    <View style={styles.card}>
-      <Text style={styles.sectionLabel}>Sign up</Text>
-      {!pendingVerification ? (
-        <>
-          <TextInput
-            value={email}
-            onChangeText={setEmail}
-            placeholder="email"
-            placeholderTextColor={colors.inkSoft}
-            autoCapitalize="none"
-            autoComplete="email"
-            keyboardType="email-address"
-            style={styles.input}
-          />
-          <TextInput
-            value={password}
-            onChangeText={setPassword}
-            placeholder="password (8+ chars)"
-            placeholderTextColor={colors.inkSoft}
-            secureTextEntry
-            autoCapitalize="none"
-            autoComplete="new-password"
-            style={styles.input}
-          />
-          <Pressable
-            onPress={handleSignUp}
-            disabled={busy || !email || !password}
-            style={({ pressed }) => [
-              styles.primaryButton,
-              (busy || !email || !password) && styles.buttonDisabled,
-              pressed && styles.buttonPressed,
-            ]}
-          >
-            <Text style={styles.primaryButtonText}>
-              {busy ? "Creating…" : "Sign up"}
-            </Text>
-          </Pressable>
-        </>
-      ) : (
-        <>
-          <Text style={styles.body}>
-            Check your email for the 6-digit code. Paste it below.
+  if (pendingVerification) {
+    return (
+      <View style={{ gap: spacing.sm }}>
+        <Text style={styles.helpText}>
+          Check your email for a 6-digit code. Paste it below.
+        </Text>
+        <FieldLabel label="Verification code" />
+        <TextInput
+          value={code}
+          onChangeText={setCode}
+          placeholder="123456"
+          placeholderTextColor={colors.inkSoft}
+          keyboardType="number-pad"
+          autoComplete="one-time-code"
+          style={styles.input}
+        />
+        <Pressable
+          onPress={handleVerify}
+          disabled={busy || code.length < 6}
+          style={({ pressed }) => [
+            styles.primaryButton,
+            (busy || code.length < 6) && styles.buttonDisabled,
+            pressed && styles.buttonPressed,
+          ]}
+        >
+          <Text style={styles.primaryButtonText}>
+            {busy ? "Verifying…" : "Verify code"}
           </Text>
-          <TextInput
-            value={code}
-            onChangeText={setCode}
-            placeholder="123456"
-            placeholderTextColor={colors.inkSoft}
-            keyboardType="number-pad"
-            autoComplete="one-time-code"
-            style={styles.input}
-          />
-          <Pressable
-            onPress={handleVerify}
-            disabled={busy || code.length < 6}
-            style={({ pressed }) => [
-              styles.primaryButton,
-              (busy || code.length < 6) && styles.buttonDisabled,
-              pressed && styles.buttonPressed,
-            ]}
-          >
-            <Text style={styles.primaryButtonText}>
-              {busy ? "Verifying…" : "Verify code"}
-            </Text>
-          </Pressable>
-        </>
-      )}
+        </Pressable>
+      </View>
+    );
+  }
+
+  return (
+    <View style={{ gap: spacing.sm }}>
+      <FieldLabel label="Email" />
+      <TextInput
+        value={email}
+        onChangeText={setEmail}
+        placeholder="you@example.com"
+        placeholderTextColor={colors.inkSoft}
+        autoCapitalize="none"
+        autoComplete="email"
+        keyboardType="email-address"
+        style={styles.input}
+      />
+      <FieldLabel label="Password (8+ chars)" />
+      <TextInput
+        value={password}
+        onChangeText={setPassword}
+        placeholder="••••••••"
+        placeholderTextColor={colors.inkSoft}
+        secureTextEntry
+        autoCapitalize="none"
+        autoComplete="new-password"
+        style={styles.input}
+      />
+      <Pressable
+        onPress={handleSignUp}
+        disabled={busy || !email || !password}
+        style={({ pressed }) => [
+          styles.primaryButton,
+          (busy || !email || !password) && styles.buttonDisabled,
+          pressed && styles.buttonPressed,
+        ]}
+      >
+        <Text style={styles.primaryButtonText}>
+          {busy ? "Creating…" : "Create account"}
+        </Text>
+      </Pressable>
     </View>
   );
 }
 
 // ---------------------------------------------------------------------------
-// Signed-in view: sign-out, fetch /api/me, display result
+// Signed-in: identity card + /api/me round-trip diagnostic
 // ---------------------------------------------------------------------------
 
 function SignedInView({ email }: { email: string | undefined }) {
   const { signOut, getToken } = useAuth();
   const [result, setResult] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
+  const initial = (email ?? "?").charAt(0).toUpperCase();
 
   async function handleFetch() {
     setBusy(true);
@@ -466,101 +512,153 @@ function SignedInView({ email }: { email: string | undefined }) {
     }
   }
 
-  return (
-    <View style={{ gap: spacing.md }}>
-      <View style={styles.card}>
-        <Text style={styles.sectionLabel}>Signed in</Text>
-        <Text style={styles.body}>{email ?? "(no primary email)"}</Text>
-        <Pressable
-          onPress={() => signOut()}
-          style={({ pressed }) => [
-            styles.secondaryButton,
-            pressed && styles.buttonPressed,
-          ]}
-        >
-          <Text style={styles.secondaryButtonText}>Sign out</Text>
-        </Pressable>
-      </View>
+  async function handleSignOut() {
+    if (signingOut) return;
+    setSigningOut(true);
+    try {
+      await signOut();
+    } finally {
+      setSigningOut(false);
+    }
+  }
 
-      <View style={styles.card}>
-        <Text style={styles.sectionLabel}>GET /api/me</Text>
-        <Pressable
-          onPress={handleFetch}
-          disabled={busy}
-          style={({ pressed }) => [
-            styles.primaryButton,
-            busy && styles.buttonDisabled,
-            pressed && styles.buttonPressed,
-          ]}
-        >
-          <Text style={styles.primaryButtonText}>
-            {busy ? "Fetching…" : "Fetch snapshot"}
-          </Text>
-        </Pressable>
-        {result ? (
-          <View style={styles.resultBlock}>
-            <Text style={styles.mono} selectable>
-              {result}
+  return (
+    <View style={{ gap: spacing.lg }}>
+      <Card intent="hero" gradient>
+        <View style={styles.identityRow}>
+          <Halo size={56} glow>
+            <Text style={styles.identityInitial}>{initial}</Text>
+          </Halo>
+          <View style={{ flex: 1, gap: 4 }}>
+            <Eyebrow tone="accent">Signed in</Eyebrow>
+            <Text style={styles.identityEmail} numberOfLines={1}>
+              {email ?? "—"}
             </Text>
           </View>
-        ) : null}
-      </View>
+          <Pressable
+            onPress={handleSignOut}
+            disabled={signingOut}
+            hitSlop={8}
+            style={({ pressed }) => [
+              styles.signOutButton,
+              signingOut && styles.buttonDisabled,
+              pressed && styles.buttonPressed,
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Sign out"
+          >
+            <Text style={styles.signOutLabel}>
+              {signingOut ? "…" : "Sign out"}
+            </Text>
+          </Pressable>
+        </View>
+      </Card>
+
+      <Card>
+        <View style={{ gap: spacing.md }}>
+          <Eyebrow tone="soft">Connection check</Eyebrow>
+          <Text style={styles.body}>
+            Fetch the authenticated snapshot from the server and inspect the
+            result. Useful for confirming sync is working.
+          </Text>
+          <Pressable
+            onPress={handleFetch}
+            disabled={busy}
+            style={({ pressed }) => [
+              styles.primaryButton,
+              busy && styles.buttonDisabled,
+              pressed && styles.buttonPressed,
+            ]}
+          >
+            <Text style={styles.primaryButtonText}>
+              {busy ? "Fetching…" : "Fetch /api/me"}
+            </Text>
+          </Pressable>
+          {result ? (
+            <View style={styles.resultBlock}>
+              <Text style={styles.mono} selectable>
+                {result}
+              </Text>
+            </View>
+          ) : null}
+        </View>
+      </Card>
+
+      <Card>
+        <View style={{ gap: spacing.xs }}>
+          <Eyebrow tone="soft">API base URL</Eyebrow>
+          <Text style={styles.mono} selectable>
+            {getApiBaseUrl() || "(empty)"}
+          </Text>
+        </View>
+      </Card>
+    </View>
+  );
+}
+
+function FieldLabel({ label }: { label: string }) {
+  return (
+    <View style={styles.fieldLabelWrap}>
+      <Text style={styles.fieldLabel}>{label}</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.background },
+  masthead: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: spacing.xl,
+    paddingVertical: spacing.md,
+  },
+  backButton: {
+    width: 28,
+    height: 28,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  mastheadSpacer: { width: 28 },
   scroll: { flex: 1 },
   scrollContent: {
     paddingHorizontal: spacing.lg,
-    paddingTop: spacing.md,
+    paddingTop: spacing.xl,
     paddingBottom: spacing["4xl"],
     gap: spacing.lg,
   },
-  titleBlock: { gap: spacing.xs },
-  title: {
-    fontFamily: fonts.serif,
-    fontSize: 32,
+  heroBlock: { gap: spacing.xs, alignItems: "center" },
+  heroTitle: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 36,
     color: colors.ink,
-    letterSpacing: -0.5,
-    lineHeight: 36,
+    letterSpacing: -0.8,
+    lineHeight: 40,
+    textAlign: "center",
   },
-  subtitle: {
-    fontSize: 13,
+  heroSubtitle: {
+    fontSize: 14,
     color: colors.inkMuted,
-    lineHeight: 19,
-  },
-  card: {
-    borderRadius: radii.card,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.lg,
-    gap: spacing.md,
-  },
-  sectionLabel: {
-    fontFamily: fonts.serif,
-    fontSize: 18,
-    color: colors.accent,
-    letterSpacing: -0.2,
+    textAlign: "center",
+    lineHeight: 21,
+    paddingHorizontal: spacing.md,
   },
   body: {
     fontSize: 14,
-    lineHeight: 21,
     color: colors.inkMuted,
+    lineHeight: 21,
   },
-  hint: {
-    fontSize: 12,
-    color: colors.inkSoft,
-    lineHeight: 18,
+  helpText: {
+    fontSize: 13,
+    color: colors.inkMuted,
+    lineHeight: 19,
+    fontStyle: "italic",
   },
   mono: {
     fontFamily: fonts.mono,
-    fontSize: 12,
+    fontSize: 11.5,
     color: colors.ink,
-    lineHeight: 18,
+    lineHeight: 17,
   },
   divider: {
     flexDirection: "row",
@@ -571,25 +669,24 @@ const styles = StyleSheet.create({
   dividerLine: {
     flex: 1,
     height: StyleSheet.hairlineWidth,
-    backgroundColor: colors.line,
+    backgroundColor: colors.lineGilt,
   },
   dividerLabel: {
-    fontSize: 10,
-    color: colors.inkSoft,
-    letterSpacing: 1.8,
+    fontSize: 9.5,
+    color: colors.accent,
+    letterSpacing: 2.4,
     textTransform: "uppercase",
-    fontWeight: "600",
+    fontWeight: "700",
   },
   oauthButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.lg,
     borderRadius: radii.card,
-    alignItems: "center",
-    justifyContent: "center",
   },
-  oauthButtonApple: {
-    backgroundColor: "#000000",
-  },
+  oauthButtonApple: { backgroundColor: "#000000" },
   oauthButtonAppleLabel: {
     fontFamily: fonts.serif,
     fontSize: 16,
@@ -597,7 +694,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   oauthButtonGoogle: {
-    backgroundColor: colors.surface,
+    backgroundColor: colors.background,
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: colors.line,
   },
@@ -609,29 +706,36 @@ const styles = StyleSheet.create({
   },
   modeRow: {
     flexDirection: "row",
-    gap: spacing.sm,
+    gap: spacing.xs,
+    backgroundColor: colors.background,
+    padding: 3,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
   },
   modeButton: {
     flex: 1,
-    paddingVertical: spacing.sm,
+    paddingVertical: 8,
     paddingHorizontal: spacing.md,
-    borderRadius: radii.card,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    backgroundColor: colors.surface,
+    borderRadius: radii.pill,
     alignItems: "center",
   },
   modeButtonActive: {
-    borderColor: "rgba(212, 168, 87, 0.5)",
     backgroundColor: colors.accentSoft,
   },
   modeButtonText: {
     fontFamily: fonts.serif,
-    fontSize: 15,
+    fontSize: 14,
     color: colors.inkMuted,
   },
-  modeButtonTextActive: {
-    color: colors.accent,
+  modeButtonTextActive: { color: colors.accent, fontWeight: "600" },
+  fieldLabelWrap: { marginTop: 4 },
+  fieldLabel: {
+    fontSize: 10.4,
+    color: colors.inkSoft,
+    letterSpacing: 2.4,
+    textTransform: "uppercase",
+    fontWeight: "500",
   },
   input: {
     borderRadius: radii.card,
@@ -640,7 +744,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     color: colors.ink,
     paddingHorizontal: spacing.md,
-    paddingVertical: 10,
+    paddingVertical: 12,
     fontSize: 15,
     fontFamily: fonts.mono,
   },
@@ -654,24 +758,41 @@ const styles = StyleSheet.create({
     fontFamily: fonts.serif,
     fontSize: 16,
     color: colors.background,
+    fontWeight: "600",
     letterSpacing: 0.2,
   },
-  secondaryButton: {
-    borderRadius: radii.card,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    paddingVertical: spacing.md,
+  buttonDisabled: { opacity: 0.45 },
+  buttonPressed: { opacity: 0.75 },
+  identityRow: {
+    flexDirection: "row",
     alignItems: "center",
+    gap: spacing.md,
   },
-  secondaryButtonText: {
+  identityInitial: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 26,
+    color: colors.accent,
+  },
+  identityEmail: {
     fontFamily: fonts.serif,
-    fontSize: 15,
+    fontSize: 16,
     color: colors.ink,
+    letterSpacing: -0.2,
   },
-  buttonDisabled: { opacity: 0.4 },
-  buttonPressed: { opacity: 0.7 },
+  signOutButton: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: 7,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: "rgba(139, 58, 58, 0.4)",
+    backgroundColor: "rgba(139, 58, 58, 0.06)",
+  },
+  signOutLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 12,
+    color: colors.oxbloodInk,
+  },
   resultBlock: {
-    marginTop: spacing.sm,
     padding: spacing.md,
     borderRadius: radii.card,
     backgroundColor: colors.background,

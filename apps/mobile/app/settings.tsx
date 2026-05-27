@@ -14,6 +14,8 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import { SignedIn, SignedOut, useClerk, useUser } from "@clerk/clerk-expo";
+import Feather from "@expo/vector-icons/Feather";
 import {
   FASTING_OPTIONS,
   JURISDICTION_OPTIONS,
@@ -158,28 +160,11 @@ export default function SettingsScreen() {
           <Text style={styles.title}>Preferences</Text>
         </View>
 
-        {/* Account — Phase 1 verification entry point. Temporary; the proper
-            auth + onboarding UI lands in Phase 3. */}
+        {/* Account — Clerk session card. Shows the signed-in identity (or a
+            sign-in CTA), plus quick sign-out. */}
         <View style={styles.section}>
           <Text style={styles.sectionLabel}>Account</Text>
-          <Pressable
-            onPress={() => router.push("/auth-debug")}
-            style={({ pressed }) => [
-              styles.linkCard,
-              pressed && styles.linkCardPressed,
-            ]}
-            accessibilityRole="button"
-            accessibilityLabel="Open auth debug"
-          >
-            <View style={styles.linkCardMain}>
-              <Text style={styles.linkCardTitle}>Sign in / debug</Text>
-              <Text style={styles.linkCardSubtitle}>
-                Sign in with email + password and test the /api/me round-trip.
-                Temporary — the proper sign-in flow ships with Phase 3 onboarding.
-              </Text>
-            </View>
-            <Text style={styles.linkCardChevron}>›</Text>
-          </Pressable>
+          <AccountCard />
         </View>
 
         {/* Profile — name + status. */}
@@ -557,6 +542,103 @@ export default function SettingsScreen() {
   );
 }
 
+// Context-aware account card. Two states:
+//   - Signed out → "Sign in" CTA opens /auth-debug (Apple / Google / email).
+//   - Signed in  → shows the user's email + tap-to-sign-out, plus a "Manage"
+//     link to /auth-debug for sign-out, token inspection, etc.
+function AccountCard() {
+  const { user } = useUser();
+  const { signOut } = useClerk();
+  const [busy, setBusy] = useState(false);
+
+  async function handleSignOut() {
+    if (busy) return;
+    setBusy(true);
+    try {
+      await signOut();
+    } catch {
+      // Clerk surfaces its own error toasts; silent here.
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  const email = user?.primaryEmailAddress?.emailAddress ?? null;
+
+  return (
+    <>
+      <SignedOut>
+        <Pressable
+          onPress={() => router.push("/auth-debug")}
+          style={({ pressed }) => [
+            styles.accountCard,
+            pressed && styles.linkCardPressed,
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel="Sign in"
+        >
+          <View style={styles.accountCardMain}>
+            <Text style={styles.accountCardTitle}>Sign in to Theosis</Text>
+            <Text style={styles.accountCardSubtitle}>
+              Sync your highlights, notes, and reading list across devices.
+            </Text>
+          </View>
+          <Feather name="chevron-right" size={18} color={colors.inkSoft} />
+        </Pressable>
+      </SignedOut>
+
+      <SignedIn>
+        <View style={styles.accountCard}>
+          <View style={styles.accountIdentity}>
+            <View style={styles.accountAvatar}>
+              <Text style={styles.accountAvatarLetter}>
+                {(email ?? "?").charAt(0).toUpperCase()}
+              </Text>
+            </View>
+            <View style={styles.accountIdentityText}>
+              <Text style={styles.accountCardTitle}>Signed in</Text>
+              <Text style={styles.accountCardEmail} numberOfLines={1}>
+                {email ?? "—"}
+              </Text>
+            </View>
+          </View>
+          <View style={styles.accountActions}>
+            <Pressable
+              onPress={() => router.push("/auth-debug")}
+              hitSlop={6}
+              style={({ pressed }) => [
+                styles.accountButton,
+                pressed && { opacity: 0.7 },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Manage account"
+            >
+              <Text style={styles.accountButtonLabel}>Manage</Text>
+            </Pressable>
+            <Pressable
+              onPress={handleSignOut}
+              disabled={busy}
+              hitSlop={6}
+              style={({ pressed }) => [
+                styles.accountButton,
+                styles.accountButtonDanger,
+                pressed && { opacity: 0.7 },
+                busy && { opacity: 0.4 },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Sign out"
+            >
+              <Text style={styles.accountButtonDangerLabel}>
+                {busy ? "Signing out…" : "Sign out"}
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+      </SignedIn>
+    </>
+  );
+}
+
 function KeyValue({ label, value }: { label: string; value: string }) {
   return (
     <View style={styles.kvRow}>
@@ -628,6 +710,80 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
   linkCardChevron: { fontSize: 22, color: colors.inkSoft },
+  accountCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: colors.surface,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+  },
+  accountCardMain: { flex: 1, gap: 2 },
+  accountCardTitle: {
+    fontFamily: fonts.serif,
+    fontSize: 17,
+    color: colors.ink,
+    letterSpacing: -0.2,
+  },
+  accountCardSubtitle: {
+    fontSize: 12,
+    color: colors.inkMuted,
+    lineHeight: 17,
+  },
+  accountCardEmail: {
+    fontFamily: fonts.mono,
+    fontSize: 12,
+    color: colors.inkMuted,
+    letterSpacing: -0.2,
+  },
+  accountIdentity: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+  },
+  accountAvatar: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: colors.accentSoft,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  accountAvatarLetter: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 18,
+    color: colors.accent,
+  },
+  accountIdentityText: { flex: 1, gap: 2 },
+  accountActions: { flexDirection: "row", gap: spacing.xs },
+  accountButton: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: 8,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.background,
+  },
+  accountButtonLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 13,
+    color: colors.ink,
+  },
+  accountButtonDanger: {
+    borderColor: "rgba(139, 58, 58, 0.4)",
+    backgroundColor: "rgba(139, 58, 58, 0.05)",
+  },
+  accountButtonDangerLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 13,
+    color: colors.oxbloodInk,
+  },
   body: {
     fontSize: 14,
     lineHeight: 23,

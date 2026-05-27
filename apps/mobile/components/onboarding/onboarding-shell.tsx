@@ -1,8 +1,15 @@
-// Shared shell for mobile onboarding steps. Renders progress dots,
-// title/subtitle, children (the step-specific question + choices), and a
-// bottom back/continue row.
+// Shared shell for mobile onboarding steps. Composes from the same
+// theosis-theme primitives the rest of the app uses (Wordmark, GiltRule,
+// Eyebrow, Card) so the flow feels of-a-piece with Daily / Library /
+// You. A subtle LinearGradient bathes the top half in gilt + oxblood
+// (matches the You masthead).
+//
+// Each step file passes a title + subtitle + children (the question
+// content) and gets a polished step indicator, masthead, and a
+// back/continue footer with skip handling.
 
 import Feather from "@expo/vector-icons/Feather";
+import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
 import { type ReactNode } from "react";
 import {
@@ -20,6 +27,11 @@ import {
   visibleStepCount,
 } from "@theosis/core/onboarding";
 
+import {
+  Eyebrow,
+  GiltRule,
+  Wordmark,
+} from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { useOnboardingState } from "@/lib/use-onboarding-state";
 
@@ -81,39 +93,63 @@ export function OnboardingShell({
 
   return (
     <SafeAreaView style={styles.safe} edges={["top", "bottom"]}>
-      <View style={styles.progress}>
-        <View style={styles.dotsRow}>
-          {visibleSteps.map((s, i) => (
-            <View
-              key={s.id}
-              style={[
-                styles.dot,
-                i <= currentIndex ? styles.dotFilled : styles.dotEmpty,
-              ]}
-            />
-          ))}
-        </View>
-        <Text style={styles.stepCount}>
-          Step {currentIndex + 1} of {total}
-        </Text>
+      <LinearGradient
+        colors={[
+          "rgba(212, 168, 87, 0.14)",
+          "rgba(139, 58, 58, 0.04)",
+          colors.background,
+        ]}
+        locations={[0, 0.42, 1]}
+        style={StyleSheet.absoluteFill}
+        pointerEvents="none"
+      />
+
+      {/* Masthead — wordmark + step counter eyebrow */}
+      <View style={styles.masthead}>
+        <Wordmark size={16} subline="Setup" />
+        <Eyebrow tone="accent">
+          {String(currentIndex + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
+        </Eyebrow>
+      </View>
+      <GiltRule full style={{ marginHorizontal: spacing.xl }} />
+
+      {/* Progress dots — gilt-edged, sized to total step count */}
+      <View style={styles.dotsRow}>
+        {visibleSteps.map((s, i) => (
+          <View
+            key={s.id}
+            style={[
+              styles.dot,
+              i < currentIndex
+                ? styles.dotComplete
+                : i === currentIndex
+                  ? styles.dotActive
+                  : styles.dotEmpty,
+            ]}
+          />
+        ))}
       </View>
 
       <ScrollView
         contentContainerStyle={styles.scroll}
         keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
       >
         <View style={styles.header}>
           <Text style={styles.title}>{title}</Text>
           {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
+          <GiltRule style={{ alignSelf: "center", marginTop: spacing.sm }} />
         </View>
         <View style={styles.children}>{children}</View>
       </ScrollView>
 
+      {/* Footer — back / skip / continue */}
       <View style={styles.footer}>
         <Pressable
           onPress={handleBack}
           disabled={isFirst}
           style={({ pressed }) => [
+            styles.footerButton,
             styles.backButton,
             isFirst && { opacity: 0 },
             pressed && { opacity: 0.6 },
@@ -124,6 +160,7 @@ export function OnboardingShell({
           <Feather name="chevron-left" size={16} color={colors.inkMuted} />
           <Text style={styles.backLabel}>Back</Text>
         </Pressable>
+
         <View style={styles.rightActions}>
           {skipLabel ? (
             <Pressable
@@ -149,7 +186,11 @@ export function OnboardingShell({
               accessibilityLabel="Continue"
             >
               <Text style={styles.continueLabel}>Continue</Text>
-              <Feather name="chevron-right" size={16} color={colors.background} />
+              <Feather
+                name="chevron-right"
+                size={16}
+                color={colors.background}
+              />
             </Pressable>
           ) : null}
         </View>
@@ -158,6 +199,9 @@ export function OnboardingShell({
   );
 }
 
+// Choice tile reused by status / jurisdiction / fasting / calendar /
+// translation / prayer-rule steps. Looks like the radio cards on the
+// You-tab profile dialog — selected state lights up in accent.
 export function OnboardingChoice<T extends string>({
   value,
   label,
@@ -195,59 +239,67 @@ export function OnboardingChoice<T extends string>({
           <Text style={styles.choiceDesc}>{description}</Text>
         ) : null}
       </View>
-      {selected ? <Text style={styles.checkGlyph}>✓</Text> : null}
+      {selected ? (
+        <View style={styles.checkBadge}>
+          <Feather name="check" size={14} color={colors.background} />
+        </View>
+      ) : (
+        <View style={styles.checkBadgeEmpty} />
+      )}
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.background },
-  progress: {
-    paddingHorizontal: spacing.lg,
-    paddingTop: spacing.md,
-    paddingBottom: spacing.sm,
-    gap: spacing.xs,
+  masthead: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: spacing.xl,
+    paddingVertical: spacing.md,
   },
   dotsRow: {
     flexDirection: "row",
-    gap: 6,
+    gap: 5,
     alignItems: "center",
     justifyContent: "center",
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.md,
   },
   dot: {
     height: 4,
     flex: 1,
-    maxWidth: 40,
+    maxWidth: 28,
     borderRadius: 2,
   },
-  dotFilled: { backgroundColor: colors.accent },
   dotEmpty: { backgroundColor: colors.line },
-  stepCount: {
-    fontSize: 11,
-    color: colors.inkSoft,
-    letterSpacing: 1.8,
-    textTransform: "uppercase",
-    textAlign: "center",
+  dotComplete: { backgroundColor: colors.accent },
+  dotActive: {
+    backgroundColor: colors.accent,
+    height: 5,
+    maxWidth: 36,
   },
   scroll: {
     paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.lg,
-    gap: spacing.lg,
+    paddingVertical: spacing.xl,
+    gap: spacing.xl,
   },
-  header: { gap: spacing.xs, alignItems: "center" },
+  header: { gap: spacing.sm, alignItems: "center" },
   title: {
-    fontFamily: fonts.serif,
-    fontSize: 28,
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 32,
     color: colors.ink,
-    letterSpacing: -0.5,
+    letterSpacing: -0.7,
     textAlign: "center",
-    lineHeight: 34,
+    lineHeight: 36,
   },
   subtitle: {
     fontSize: 14,
     color: colors.inkMuted,
     textAlign: "center",
     lineHeight: 21,
+    paddingHorizontal: spacing.md,
   },
   children: { gap: spacing.sm },
   footer: {
@@ -258,16 +310,23 @@ const styles = StyleSheet.create({
     paddingTop: spacing.md,
     paddingBottom: spacing.md,
     borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: colors.line,
+    borderTopColor: colors.lineGilt,
+    backgroundColor: "rgba(245, 240, 230, 0.4)",
   },
-  backButton: {
+  footerButton: {
     flexDirection: "row",
     alignItems: "center",
     gap: 4,
+  },
+  backButton: {
     paddingHorizontal: spacing.sm,
     paddingVertical: spacing.xs,
   },
-  backLabel: { fontSize: 14, color: colors.inkMuted },
+  backLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 14,
+    color: colors.inkMuted,
+  },
   rightActions: {
     flexDirection: "row",
     alignItems: "center",
@@ -278,16 +337,17 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.xs,
   },
   skipLabel: {
+    fontFamily: fonts.serif,
     fontSize: 13,
     color: colors.inkSoft,
-    textDecorationLine: "underline",
+    fontStyle: "italic",
   },
   continueButton: {
     flexDirection: "row",
     alignItems: "center",
     gap: 4,
     paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.sm,
+    paddingVertical: 10,
     borderRadius: radii.pill,
     backgroundColor: colors.accent,
   },
@@ -297,10 +357,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.background,
     fontWeight: "600",
+    letterSpacing: 0.2,
   },
   choice: {
     flexDirection: "row",
-    alignItems: "flex-start",
+    alignItems: "center",
     gap: spacing.md,
     borderRadius: radii.card,
     borderWidth: StyleSheet.hairlineWidth,
@@ -310,7 +371,7 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
   },
   choiceSelected: {
-    borderColor: "rgba(212, 168, 87, 0.5)",
+    borderColor: "rgba(212, 168, 87, 0.55)",
     backgroundColor: colors.accentSoft,
   },
   choiceText: { flex: 1, gap: 4 },
@@ -318,16 +379,27 @@ const styles = StyleSheet.create({
     fontFamily: fonts.serif,
     fontSize: 16,
     color: colors.ink,
+    letterSpacing: -0.1,
   },
-  choiceLabelSelected: { color: colors.accent },
+  choiceLabelSelected: { color: colors.accent, fontWeight: "600" },
   choiceDesc: {
     fontSize: 12,
     color: colors.inkMuted,
     lineHeight: 18,
   },
-  checkGlyph: {
-    fontSize: 18,
-    color: colors.accent,
-    fontWeight: "700",
+  checkBadge: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: colors.accent,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  checkBadgeEmpty: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
   },
 });
