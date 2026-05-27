@@ -50,6 +50,18 @@ function buildBody(
   if (patch.primaryTranslationId !== undefined) {
     body.primaryTranslationId = patch.primaryTranslationId;
   }
+  if (patch.textSize !== undefined) {
+    body.textSize = patch.textSize;
+  }
+  // The commentary-fathers picker stores explicit ordering + hidden
+  // lists locally; the server schema names them preferredFatherIds /
+  // hiddenFatherIds. Translate both arrays here so the user's
+  // customization follows their account across devices.
+  if (patch.commentaryFathers !== undefined) {
+    body.preferredFatherIds =
+      patch.commentaryFathers.orderedSlugs ?? [];
+    body.hiddenFatherIds = patch.commentaryFathers.hiddenSlugs ?? [];
+  }
   return body;
 }
 

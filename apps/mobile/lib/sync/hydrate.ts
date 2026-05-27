@@ -70,11 +70,16 @@ function buildClientSnapshot(prefs: AppPreferences): ClientSnapshotDto {
       calendarPreference:
         p.calendarSystem === "julian" ? "old-calendar" : "new-calendar",
       patronSaintSlug: p.patronSaintSlug ?? null,
-      // Mobile doesn't have these fields yet (Phase 3 onboarding adds them);
-      // ship undefined so server keeps current value.
-      primaryTranslationId: undefined,
-      preferredFatherIds: undefined,
-      hiddenFatherIds: undefined,
+      // Every preference the user can set during onboarding or in
+      // Settings ships here so the server has the truth on first
+      // import. Omitting any of these means the user fills it in,
+      // signs up, and watches it vanish on the next device.
+      primaryTranslationId: p.primaryTranslationId ?? undefined,
+      textSize: p.textSize ?? undefined,
+      jurisdiction: p.jurisdiction ?? null,
+      fastingLevel: p.fastingLevel ?? undefined,
+      preferredFatherIds: p.commentaryFathers?.orderedSlugs ?? undefined,
+      hiddenFatherIds: p.commentaryFathers?.hiddenSlugs ?? undefined,
       location: undefined,
       status: (p.status === "christian"
         ? "orthodox"
@@ -99,8 +104,11 @@ function buildClientSnapshot(prefs: AppPreferences): ClientSnapshotDto {
       color: highlightColorToUnified(h.color),
       excerpt: undefined,
     })),
-    notes: [], // mobile has no notes yet
-    favoritePeople: [], // mobile has no favorites store yet
+    notes: [], // mobile has no notes UI yet
+    favoritePeople: (p.favoritePersonSlugs ?? []).map((slug) => ({
+      clientId: `favorite-${slug}`,
+      personId: slug,
+    })),
     readingList: (prefs.readingList ?? []).map((r) => ({
       clientId: r.id,
       workId: r.workSlug,
@@ -116,7 +124,10 @@ function buildClientSnapshot(prefs: AppPreferences): ClientSnapshotDto {
       evening: prefs.prayerRule?.evening ?? [],
     },
     activityDays: prefs.activityDays ?? [],
-    completions: [], // mobile has no completion-marks yet
+    completions: (prefs.completions ?? []).map((c) => ({
+      kind: c.kind,
+      slug: c.slug,
+    })),
   };
 }
 

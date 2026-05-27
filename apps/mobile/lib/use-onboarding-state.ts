@@ -61,6 +61,15 @@ export const useOnboardingState = create<OnboardingState>()(
         // Translate the unified onboarding draft → mobile's ProfilePrefs
         // shape. The unified server-side shape uses canonical names; mobile's
         // ProfilePrefs predates them.
+        //
+        // This block has to mention every field the onboarding flow can
+        // set — otherwise the user's answer is silently dropped after a
+        // 10-step walkthrough. Currently covered:
+        //   status, parish, patronSaintSlug, calendarPreference,
+        //   commentaryRanking, jurisdiction, fastingLevel,
+        //   primaryTranslationId, textSize.
+        // Prayer-rule choice is handled by the builder seeding logic
+        // (not a profile field).
         const patch: Parameters<typeof updateProfilePrefs>[0] = {};
         if (draft.status === "orthodox") patch.status = "christian";
         else if (draft.status === "catechumen") patch.status = "catechumen";
@@ -74,6 +83,13 @@ export const useOnboardingState = create<OnboardingState>()(
           patch.calendarSystem = "new";
         if (draft.commentaryRanking !== undefined)
           patch.commentaryRanking = draft.commentaryRanking;
+        if (draft.jurisdiction !== undefined)
+          patch.jurisdiction = draft.jurisdiction;
+        if (draft.fastingLevel !== undefined)
+          patch.fastingLevel = draft.fastingLevel;
+        if (draft.primaryTranslationId !== undefined)
+          patch.primaryTranslationId = draft.primaryTranslationId;
+        if (draft.textSize !== undefined) patch.textSize = draft.textSize;
         await updateProfilePrefs(patch);
         await setOnboardingStatus("complete");
         set({ currentStep: "welcome", draft: INITIAL_DRAFT });

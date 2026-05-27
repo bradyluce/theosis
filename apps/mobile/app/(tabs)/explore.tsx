@@ -113,12 +113,19 @@ export default function BibleReaderScreen() {
     };
   }, []);
 
-  // Re-read on focus so a Settings change reflects without re-mount.
+  // Re-read on focus so Settings changes reflect without re-mount.
+  // Both textSize and primaryTranslationId can change in the You
+  // tab / Settings; the Bible tab needs to honor them on next focus,
+  // not on next app restart.
   useFocusEffect(
     useCallback(() => {
       let canceled = false;
       void getProfilePrefs().then((p) => {
-        if (!canceled) setTextSize(p.textSize ?? "md");
+        if (canceled) return;
+        setTextSize(p.textSize ?? "md");
+        if (p.primaryTranslationId) {
+          setDefaultTranslation(p.primaryTranslationId);
+        }
       });
       return () => {
         canceled = true;

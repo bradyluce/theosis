@@ -472,13 +472,24 @@ export async function getDiptych(): Promise<Diptych> {
   };
 }
 
+// Random-ish ID generator that's collision-safe enough for AsyncStorage
+// items the user creates one at a time. Combines time, a 7-digit
+// random suffix, and a counter incremented per call — so even a user
+// who mashes "Add" can't produce duplicates within the same JS tick.
+let diptychIdCounter = 0;
+function generateDiptychId(category: string): string {
+  diptychIdCounter += 1;
+  const rand = Math.random().toString(36).slice(2, 9);
+  return `${category}-${Date.now()}-${rand}-${diptychIdCounter}`;
+}
+
 export async function addDiptychEntry(
   category: "living" | "departed",
   entry: Omit<DiptychEntry, "id" | "addedAt"> & { id?: string; addedAt?: string },
 ): Promise<Diptych> {
   const prefs = await loadPrefs();
   const current: Diptych = prefs.diptych ?? EMPTY_DIPTYCH;
-  const id = entry.id ?? `${category}-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+  const id = entry.id ?? generateDiptychId(category);
   const next: DiptychEntry = {
     ...entry,
     id,
