@@ -1,14 +1,12 @@
 "use client";
 
-import { SignedIn, SignedOut, SignInButton, useUser } from "@clerk/nextjs";
+import { SignedIn, SignedOut, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import {
   BookOpen,
   BookmarkSimple,
   Camera,
-  Gear,
   HandsPraying,
-  List,
   MapPin,
   NotePencil,
   Plus,
@@ -77,37 +75,10 @@ export function ProfileDashboard() {
 
   return (
     <div className="space-y-6 px-4 sm:px-6">
-      {/* Top icon row — sign-in (when out) / menu + settings */}
-      <div className="flex justify-end pt-2">
-        <div className="flex items-center gap-2">
-          <SignedOut>
-            <SignInButton mode="modal">
-              <button className="rounded-full border border-accent/40 bg-accent-soft px-4 py-1.5 text-sm font-medium text-accent transition-colors duration-200 hover:bg-accent hover:text-background">
-                Sign in
-              </button>
-            </SignInButton>
-          </SignedOut>
-          <div className="flex items-center gap-1 rounded-full border border-line/60 bg-surface px-2 py-1.5">
-            <Link
-              href="/you/settings"
-              aria-label="All sections"
-              className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
-            >
-              <List size={18} />
-            </Link>
-            <Link
-              href="/you/settings"
-              aria-label="Settings"
-              className="flex h-8 w-8 items-center justify-center rounded-full text-ink-muted transition-colors duration-200 hover:bg-surface-strong hover:text-ink"
-            >
-              <Gear size={18} />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Identity header */}
-      <header className="flex items-start justify-between gap-4">
+      {/* Identity header — right padding reserves space for the mobile
+          top-right profile avatar that floats above the AppShell.
+          Desktop uses the side rail instead, so no padding needed there. */}
+      <header className="flex items-start justify-between gap-4 pr-14 pt-2 sm:pr-16 lg:pr-0">
         <div className="space-y-3">
           <h1 className="font-serif text-4xl font-semibold tracking-tight text-ink">
             {personName}

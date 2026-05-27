@@ -81,8 +81,10 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6 px-4 sm:px-6">
-      {/* Greeting + streak chip */}
-      <header className="flex items-center justify-between pt-3">
+      {/* Greeting + streak chip. Right padding reserves space for the
+          mobile-only profile avatar that floats above the AppShell on small
+          screens. Desktop uses the side rail, so no padding needed there. */}
+      <header className="flex items-center justify-between pt-3 pr-14 sm:pr-16 lg:pr-0">
         <h1 className="font-serif text-3xl tracking-tight text-ink">
           {greetingText}, {PLACEHOLDER_NAME}
         </h1>

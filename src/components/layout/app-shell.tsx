@@ -1,8 +1,18 @@
 import type { ReactNode } from "react";
 import { BottomNav } from "@/components/layout/bottom-nav";
 import { DesktopRail } from "@/components/layout/desktop-rail";
+import {
+  ProfileAvatarButton,
+  type SaintIconMap,
+} from "@/components/layout/profile-avatar-button";
 
-export function AppShell({ children }: { children: ReactNode }) {
+export function AppShell({
+  children,
+  saintIcons,
+}: {
+  children: ReactNode;
+  saintIcons: SaintIconMap;
+}) {
   return (
     <div className="min-h-dvh bg-background">
       <div className="mx-auto flex min-h-dvh max-w-[1280px] flex-col lg:flex-row">
@@ -13,6 +23,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         </main>
       </div>
 
+      <ProfileAvatarButton saintIcons={saintIcons} />
       <BottomNav />
     </div>
   );
