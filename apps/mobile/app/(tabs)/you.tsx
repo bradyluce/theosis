@@ -33,6 +33,8 @@ import {
   type SavedDailyReading,
   type SavedNote,
   type SavedVerse,
+  type SavedWorkChapter,
+  type WorkParagraphHighlight,
   getBibleReadingHistory,
   getLibraryReadingHistory,
   getNotes,
@@ -41,6 +43,8 @@ import {
   getSavedCommentary,
   getSavedDailyReadings,
   getSavedVerses,
+  getSavedWorkChapters,
+  getWorkHighlights,
   recordActivityToday,
 } from "@/lib/preferences";
 import { peekQueue } from "@/lib/sync/queue";
@@ -74,6 +78,10 @@ export default function YouScreen() {
   const [libraryHistory, setLibraryHistory] = useState<LibraryHistoryEntry[]>(
     [],
   );
+  const [savedChapters, setSavedChapters] = useState<SavedWorkChapter[]>([]);
+  const [workHighlights, setWorkHighlights] = useState<
+    WorkParagraphHighlight[]
+  >([]);
   const [activityTab, setActivityTab] = useState<ActivityTab>("all");
   // Sync indicator — polls the pending-writes queue length so the user
   // can see when offline changes are still waiting to flush. Reads
@@ -104,6 +112,8 @@ export default function YouScreen() {
       getNotes(),
       getBibleReadingHistory(),
       getLibraryReadingHistory(),
+      getSavedWorkChapters(),
+      getWorkHighlights(),
     ]).then(
       ([
         activity,
@@ -114,6 +124,8 @@ export default function YouScreen() {
         noteList,
         bibleHist,
         libHist,
+        chapters,
+        workHl,
       ]) => {
         if (canceled) return;
         setStreak(activity.streak);
@@ -124,6 +136,8 @@ export default function YouScreen() {
         setNotes(noteList);
         setBibleHistory(bibleHist);
         setLibraryHistory(libHist);
+        setSavedChapters(chapters);
+        setWorkHighlights(workHl);
       },
     );
     return () => {
@@ -188,6 +202,25 @@ export default function YouScreen() {
       label: `${capitalize(v.book)} ${v.chapter}:${v.verse}`,
       sub: v.preview,
       href: `/explore?translation=${v.translation}&book=${v.book}&chapter=${v.chapter}&highlight=${v.verse}`,
+    })),
+    // Saved work chapters — fold into the "Saved" filter alongside
+    // verses so the user finds them in one place. Reading list stays
+    // its own kind because that flow is queue-based (read later).
+    ...savedChapters.map((c) => ({
+      id: `sc-${c.id}`,
+      kind: "saved" as const,
+      label: `${c.workTitle} — ${c.chapterLabel}`,
+      sub: "Saved chapter",
+      href: `/reading/${c.workId}/${c.order}` as string | undefined,
+    })),
+    // Work paragraph highlights — render under "Saved" too. The
+    // excerpt is the first ~140 chars saved at highlight time.
+    ...workHighlights.map((h) => ({
+      id: `wh-${h.id}`,
+      kind: "saved" as const,
+      label: `Highlight · ${h.color}`,
+      sub: h.excerpt ?? "",
+      href: `/reading/${h.workId}/${h.order}` as string | undefined,
     })),
     ...readingList.map((r) => ({
       id: `r-${r.id}`,

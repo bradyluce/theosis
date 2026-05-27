@@ -200,6 +200,33 @@ export type WorkReadingPosition = {
   lastReadAt: string;
 };
 
+// Bookmark for a whole work chapter — distinct from "Mark as read."
+// The user explicitly chose to keep this chapter in their saved list,
+// regardless of whether they've finished reading it.
+export type SavedWorkChapter = {
+  id: string;          // "<workId>::<order>"
+  workId: string;
+  order: number;
+  workTitle: string;
+  chapterLabel: string;
+  savedAt: string;
+};
+
+// Color highlight on a single paragraph inside a work chapter. Keyed
+// by (workId, order, sectionIdx, paragraphIdx) so highlights track
+// stable positions as long as the underlying chapter content doesn't
+// change.
+export type WorkParagraphHighlight = {
+  id: string;          // "<workId>::<order>::<sectionIdx>::<paragraphIdx>"
+  workId: string;
+  order: number;
+  sectionIdx: number;
+  paragraphIdx: number;
+  color: HighlightColor;
+  excerpt?: string;    // first ~120 chars for the You-tab preview
+  createdAt: string;
+};
+
 // Saved commentary entry. The user starred a specific entry on a
 // specific verse — keyed by both so highlighting "Augustine on Matt
 // 5:3" doesn't collide with "Augustine on John 1:1". `id` is the
@@ -308,6 +335,10 @@ export type AppPreferences = {
   // Per-chapter scroll positions inside work readers. Keyed by
   // workId::order. Restored on chapter mount.
   workReadingPositions?: WorkReadingPosition[];
+  // Bookmarked work chapters (the work-side analog of savedVerses).
+  savedWorkChapters?: SavedWorkChapter[];
+  // Color highlights on work paragraphs.
+  workHighlights?: WorkParagraphHighlight[];
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -898,6 +929,122 @@ export async function setWorkPosition(
     ...prefs,
     workReadingPositions: [next, ...others].slice(0, 60),
   });
+}
+
+// --- Saved work chapters ---------------------------------------------------
+
+function savedWorkChapterId(workId: string, order: number): string {
+  return `${workId}::${order}`;
+}
+
+export async function getSavedWorkChapters(): Promise<SavedWorkChapter[]> {
+  const prefs = await loadPrefs();
+  return prefs.savedWorkChapters ?? [];
+}
+
+export async function isWorkChapterSaved(
+  workId: string,
+  order: number,
+): Promise<boolean> {
+  const id = savedWorkChapterId(workId, order);
+  const all = await getSavedWorkChapters();
+  return all.some((c) => c.id === id);
+}
+
+export async function toggleSavedWorkChapter(opts: {
+  workId: string;
+  order: number;
+  workTitle: string;
+  chapterLabel: string;
+}): Promise<{ saved: boolean; list: SavedWorkChapter[] }> {
+  const id = savedWorkChapterId(opts.workId, opts.order);
+  const prefs = await loadPrefs();
+  const existing = prefs.savedWorkChapters ?? [];
+  const isSaved = existing.some((c) => c.id === id);
+  if (isSaved) {
+    const next = existing.filter((c) => c.id !== id);
+    await savePrefs({ ...prefs, savedWorkChapters: next });
+    return { saved: false, list: next };
+  }
+  const entry: SavedWorkChapter = {
+    id,
+    workId: opts.workId,
+    order: opts.order,
+    workTitle: opts.workTitle,
+    chapterLabel: opts.chapterLabel,
+    savedAt: new Date().toISOString(),
+  };
+  const next = [entry, ...existing];
+  await savePrefs({ ...prefs, savedWorkChapters: next });
+  return { saved: true, list: next };
+}
+
+// --- Work paragraph highlights --------------------------------------------
+
+function workHighlightId(
+  workId: string,
+  order: number,
+  sectionIdx: number,
+  paragraphIdx: number,
+): string {
+  return `${workId}::${order}::${sectionIdx}::${paragraphIdx}`;
+}
+
+export async function getWorkHighlights(): Promise<WorkParagraphHighlight[]> {
+  const prefs = await loadPrefs();
+  return prefs.workHighlights ?? [];
+}
+
+// Returns the subset of highlights that apply to a specific chapter
+// in the form of a Map keyed by "<sectionIdx>::<paragraphIdx>" so the
+// chapter reader can do O(1) lookups inside its render loop.
+export async function getWorkHighlightsFor(
+  workId: string,
+  order: number,
+): Promise<Map<string, HighlightColor>> {
+  const all = await getWorkHighlights();
+  const out = new Map<string, HighlightColor>();
+  for (const h of all) {
+    if (h.workId === workId && h.order === order) {
+      out.set(`${h.sectionIdx}::${h.paragraphIdx}`, h.color);
+    }
+  }
+  return out;
+}
+
+export async function setWorkParagraphHighlight(opts: {
+  workId: string;
+  order: number;
+  sectionIdx: number;
+  paragraphIdx: number;
+  color: HighlightColor | null;
+  excerpt?: string;
+}): Promise<WorkParagraphHighlight[]> {
+  const id = workHighlightId(
+    opts.workId,
+    opts.order,
+    opts.sectionIdx,
+    opts.paragraphIdx,
+  );
+  const prefs = await loadPrefs();
+  const without = (prefs.workHighlights ?? []).filter((h) => h.id !== id);
+  if (opts.color == null) {
+    await savePrefs({ ...prefs, workHighlights: without });
+    return without;
+  }
+  const next: WorkParagraphHighlight = {
+    id,
+    workId: opts.workId,
+    order: opts.order,
+    sectionIdx: opts.sectionIdx,
+    paragraphIdx: opts.paragraphIdx,
+    color: opts.color,
+    excerpt: opts.excerpt,
+    createdAt: new Date().toISOString(),
+  };
+  const list = [next, ...without];
+  await savePrefs({ ...prefs, workHighlights: list });
+  return list;
 }
 
 // --- Favorite persons ------------------------------------------------------

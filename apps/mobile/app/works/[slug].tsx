@@ -5,6 +5,7 @@ import { Stack, router, useFocusEffect, useLocalSearchParams } from "expo-router
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
+  Linking,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -75,10 +76,13 @@ export default function WorkDetailScreen() {
     [work, libraryQuery.data],
   );
 
+  const isReferenceOnly = work?.contentStatus === "reference-only";
   const chaptersQuery = useQuery({
     queryKey: ["work-chapters", work?.id],
     queryFn: () => api.fetchWorkChapters(work!.id),
-    enabled: Boolean(work),
+    // Reference-only works carry no chapter bodies — don't fire the request
+    // and don't render the loading spinner or empty-TOC card for them.
+    enabled: Boolean(work) && !isReferenceOnly,
     staleTime: 60 * 60 * 1000,
   });
 
@@ -194,9 +198,29 @@ export default function WorkDetailScreen() {
                   byline + era. The whole block reads like the recto
                   page of a printed book. */}
               <View style={styles.titlePage}>
-                <Eyebrow tone="accent">
-                  {work.workType} · {work.lengthLabel}
-                </Eyebrow>
+                <View style={styles.titleKickerRow}>
+                  <Eyebrow tone="accent">
+                    {work.workType} · {work.lengthLabel}
+                  </Eyebrow>
+                  {/* Whole-work Read badge — shows when every chapter
+                      has been marked. Sits next to the kicker so the
+                      user sees "you've read this" the moment they
+                      land on the title page. */}
+                  {chaptersQuery.data &&
+                  chaptersQuery.data.chapters.length > 0 &&
+                  chapterReadCount === chaptersQuery.data.chapters.length ? (
+                    <View style={styles.wholeWorkReadBadge}>
+                      <Feather
+                        name="check"
+                        size={11}
+                        color={colors.background}
+                      />
+                      <Text style={styles.wholeWorkReadLabel}>
+                        Whole work read
+                      </Text>
+                    </View>
+                  ) : null}
+                </View>
                 <Text style={styles.title}>{work.title}</Text>
 
                 {author && authorDisplay ? (
@@ -232,8 +256,64 @@ export default function WorkDetailScreen() {
                 </View>
               ) : null}
 
+              {/* Where-to-read card — shown in place of the full text for
+                  works whose body is not redistributed in-app. */}
+              {isReferenceOnly && work.availability ? (
+                <View style={styles.whereToReadCard}>
+                  <Eyebrow tone="accent">Where to read</Eyebrow>
+                  <Text style={styles.whereToReadBody}>
+                    The full text of{" "}
+                    <Text style={styles.whereToReadEm}>{work.title}</Text> is
+                    not redistributed in this app. It is published under
+                    copyright by{" "}
+                    <Text style={styles.whereToReadPublisher}>
+                      {work.availability.publisher ?? "its publisher"}
+                    </Text>
+                    {work.availability.isbn
+                      ? ` (ISBN ${work.availability.isbn})`
+                      : ""}
+                    .
+                  </Text>
+                  {work.availability.note ? (
+                    <Text style={styles.whereToReadNote}>
+                      {work.availability.note}
+                    </Text>
+                  ) : null}
+                  {(work.availability.affiliateUrl ||
+                    work.availability.purchaseUrl) ? (
+                    <Pressable
+                      onPress={() => {
+                        const link =
+                          work.availability!.affiliateUrl ??
+                          work.availability!.purchaseUrl;
+                        if (link) void Linking.openURL(link);
+                      }}
+                      style={({ pressed }) => [
+                        styles.whereToReadCta,
+                        pressed && { opacity: 0.7 },
+                      ]}
+                      accessibilityRole="link"
+                      accessibilityLabel="Open publisher page"
+                    >
+                      <Text style={styles.whereToReadCtaLabel}>
+                        Open publisher page
+                      </Text>
+                      <Feather
+                        name="external-link"
+                        size={14}
+                        color={colors.accent}
+                      />
+                    </Pressable>
+                  ) : null}
+                  <Text style={styles.whereToReadFootnote}>
+                    You can still save this work to your reading list, follow
+                    the author, and see which Scripture passages it engages.
+                  </Text>
+                </View>
+              ) : null}
+
               {/* Source attribution — small editorial fact card */}
-              {source ? (
+              {source && !isReferenceOnly ? (
                 <View style={styles.sourceCard}>
                   <Eyebrow tone="soft">Source</Eyebrow>
                   <Text style={styles.sourceCollection}>
@@ -311,6 +391,9 @@ export default function WorkDetailScreen() {
                               size={11}
                               color={colors.background}
                             />
+                            <Text style={styles.tocReadBadgeLabel}>
+                              Read
+                            </Text>
                           </View>
                         ) : null}
                         <Feather
@@ -324,7 +407,8 @@ export default function WorkDetailScreen() {
                 </View>
               ) : null}
 
-              {chaptersQuery.data &&
+              {!isReferenceOnly &&
+              chaptersQuery.data &&
               chaptersQuery.data.chapters.length === 0 ? (
                 <View style={styles.emptyTocCard}>
                   <Feather
@@ -401,6 +485,29 @@ const styles = StyleSheet.create({
 
   // Title page composition
   titlePage: { gap: spacing.sm },
+  titleKickerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    flexWrap: "wrap",
+    gap: spacing.sm,
+  },
+  wholeWorkReadBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accent,
+  },
+  wholeWorkReadLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10,
+    fontWeight: "700",
+    color: colors.background,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+  },
   title: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 38,
@@ -439,6 +546,64 @@ const styles = StyleSheet.create({
     color: colors.ink,
   },
 
+  // Where-to-read (reference-only) card
+  whereToReadCard: {
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.lg,
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: colors.accentSoft,
+    gap: spacing.sm,
+  },
+  whereToReadBody: {
+    fontFamily: fonts.serif,
+    fontSize: 15,
+    lineHeight: 24,
+    color: colors.ink,
+  },
+  whereToReadEm: {
+    fontFamily: fonts.serifItalic,
+  },
+  whereToReadPublisher: {
+    fontFamily: fonts.serifBoldItalic,
+    color: colors.ink,
+  },
+  whereToReadNote: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
+    lineHeight: 20,
+    color: colors.inkMuted,
+  },
+  whereToReadCta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    alignSelf: "flex-start",
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
+    borderRadius: radii.pill,
+    borderWidth: 1,
+    borderColor: colors.lineGilt,
+    backgroundColor: colors.background,
+    marginTop: spacing.xs,
+  },
+  whereToReadCtaLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+  },
+  whereToReadFootnote: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 12,
+    lineHeight: 18,
+    color: colors.inkSoft,
+    marginTop: spacing.xs,
+  },
+
   // Source card
   sourceCard: {
     paddingHorizontal: spacing.lg,
@@ -473,16 +638,25 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.line,
   },
   tocRowCompleted: {
-    opacity: 0.78,
+    opacity: 0.85,
   },
   tocReadBadge: {
-    width: 22,
-    height: 22,
-    borderRadius: 11,
-    backgroundColor: colors.accent,
+    flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accent,
     marginTop: 2,
+  },
+  tocReadBadgeLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10,
+    fontWeight: "700",
+    color: colors.background,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
   },
   tocIndex: {
     fontFamily: fonts.serifBoldItalic,

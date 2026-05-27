@@ -15,16 +15,23 @@ import {
 } from "react-native";
 
 import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
+import { ParagraphActionsSheet } from "@/components/theosis/paragraph-actions-sheet";
+import { HIGHLIGHT_BY_SLUG } from "@/constants/highlight-colors";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 import {
   addCompletion,
   getProfilePrefs,
+  getWorkHighlightsFor,
   getWorkPosition,
   isCompleted,
+  isWorkChapterSaved,
   removeCompletion,
+  setWorkParagraphHighlight,
   setWorkPosition,
   textSizeScale,
+  toggleSavedWorkChapter,
+  type HighlightColor,
   type ProfilePrefs,
 } from "@/lib/preferences";
 
@@ -47,6 +54,18 @@ export default function ChapterReaderScreen() {
     enabled: Boolean(workId) && Number.isFinite(order),
     staleTime: 60 * 60 * 1000,
   });
+  // Fetch the library catalog so we can resolve the work title for
+  // Save Chapter (the saved-list display needs more than the slug).
+  // Cached for an hour — usually already in cache from the works list.
+  const libraryQuery = useQuery({
+    queryKey: ["library-catalog"],
+    queryFn: () => api.fetchLibraryCatalog(),
+    staleTime: 60 * 60 * 1000,
+  });
+  const workTitle = useMemo(() => {
+    const work = libraryQuery.data?.works.find((w) => w.id === workId);
+    return work?.shortTitle ?? work?.title ?? workId;
+  }, [libraryQuery.data, workId]);
 
   // Composite slug for the completion mark — work + chapter order
   // uniquely identifies a chapter inside the corpus.
@@ -55,21 +74,37 @@ export default function ChapterReaderScreen() {
   const [busy, setBusy] = useState(false);
   const [textSize, setTextSize] = useState<ProfilePrefs["textSize"]>("md");
 
+  // Save-chapter state + per-paragraph highlight map.
+  const [chapterSaved, setChapterSaved] = useState(false);
+  const [saveBusy, setSaveBusy] = useState(false);
+  const [paragraphHighlights, setParagraphHighlights] = useState<
+    Map<string, HighlightColor>
+  >(new Map());
+  const [activeParagraph, setActiveParagraph] = useState<{
+    sectionIdx: number;
+    paragraphIdx: number;
+    text: string;
+  } | null>(null);
+
   useFocusEffect(
     useCallback(() => {
       let canceled = false;
       Promise.all([
         isCompleted("work-chapter", completionSlug),
         getProfilePrefs(),
-      ]).then(([isDone, p]) => {
+        isWorkChapterSaved(workId, order),
+        getWorkHighlightsFor(workId, order),
+      ]).then(([isDone, p, isSavedNow, highlightMap]) => {
         if (canceled) return;
         setCompleted(isDone);
         setTextSize(p.textSize ?? "md");
+        setChapterSaved(isSavedNow);
+        setParagraphHighlights(highlightMap);
       });
       return () => {
         canceled = true;
       };
-    }, [completionSlug]),
+    }, [completionSlug, workId, order]),
   );
 
   async function toggleCompleted() {
@@ -86,6 +121,47 @@ export default function ChapterReaderScreen() {
     } finally {
       setBusy(false);
     }
+  }
+
+  // Save / unsave the whole chapter. Chapters live as their own
+  // bookmarks (distinct from "marked as read") so a user can keep a
+  // pile of chapters they intend to return to without claiming
+  // they've finished them.
+  async function toggleSavedChapter() {
+    if (saveBusy || !chapterQuery.data) return;
+    setSaveBusy(true);
+    try {
+      const result = await toggleSavedWorkChapter({
+        workId,
+        order,
+        workTitle,
+        chapterLabel: chapterQuery.data.chapter.label,
+      });
+      setChapterSaved(result.saved);
+    } finally {
+      setSaveBusy(false);
+    }
+  }
+
+  // Apply a highlight color to the currently-active paragraph (the
+  // one whose action sheet is open). null clears the highlight.
+  async function applyParagraphHighlight(color: HighlightColor | null) {
+    if (!activeParagraph) return;
+    const key = `${activeParagraph.sectionIdx}::${activeParagraph.paragraphIdx}`;
+    setParagraphHighlights((prev) => {
+      const next = new Map(prev);
+      if (color) next.set(key, color);
+      else next.delete(key);
+      return next;
+    });
+    await setWorkParagraphHighlight({
+      workId,
+      order,
+      sectionIdx: activeParagraph.sectionIdx,
+      paragraphIdx: activeParagraph.paragraphIdx,
+      color,
+      excerpt: color ? activeParagraph.text.slice(0, 140) : undefined,
+    });
   }
 
   // Scale paragraph and section-heading fontSizes to honor the user's
@@ -153,6 +229,10 @@ export default function ChapterReaderScreen() {
     return () => clearTimeout(t);
   }, [chapterQuery.data, pendingRestore, restored]);
 
+  // Track the latest scroll Y so we can flush it on blur even if the
+  // debounce timer hasn't fired yet. Plain ref — no re-renders.
+  const currentYRef = useRef<number>(0);
+
   // Debounced scroll-position writer. 450ms after the user stops
   // scrolling, we commit the y to AsyncStorage. We skip writes that
   // are within 16px of the previous one to avoid recording every
@@ -160,6 +240,7 @@ export default function ChapterReaderScreen() {
   const handleScroll = useCallback(
     (e: NativeSyntheticEvent<NativeScrollEvent>) => {
       const y = e.nativeEvent.contentOffset.y;
+      currentYRef.current = y;
       if (Math.abs(y - lastWrittenRef.current) < 16) return;
       if (writeTimerRef.current) clearTimeout(writeTimerRef.current);
       writeTimerRef.current = setTimeout(() => {
@@ -170,8 +251,30 @@ export default function ChapterReaderScreen() {
     [workId, order],
   );
 
-  // Flush any pending position when the user leaves the chapter so we
-  // don't lose the very last scroll point.
+  // Flush on blur. The old version just cleared the timer; if the
+  // user scrolled and immediately tapped back, the 450ms timer never
+  // fired and the position was lost. Now we ALSO commit the most
+  // recent Y from currentYRef before the timer dies.
+  useFocusEffect(
+    useCallback(() => {
+      return () => {
+        if (writeTimerRef.current) {
+          clearTimeout(writeTimerRef.current);
+          writeTimerRef.current = null;
+        }
+        const y = currentYRef.current;
+        // setWorkPosition itself drops anything under ~4px as "top".
+        // Re-check the 16px change threshold so we don't bloat the
+        // store with no-op writes.
+        if (Math.abs(y - lastWrittenRef.current) >= 16) {
+          lastWrittenRef.current = y;
+          void setWorkPosition(workId, order, y);
+        }
+      };
+    }, [workId, order]),
+  );
+
+  // Belt-and-suspenders: on full unmount also clear any lingering timer.
   useEffect(() => {
     return () => {
       if (writeTimerRef.current) {
@@ -264,6 +367,17 @@ export default function ChapterReaderScreen() {
                   ) : null}
                   {section.paragraphs.map((paragraph, pIdx) => {
                     const isFirstParagraph = sectionIdx === 0 && pIdx === 0;
+                    const hlKey = `${sectionIdx}::${pIdx}`;
+                    const hlColor = paragraphHighlights.get(hlKey);
+                    const tint = hlColor
+                      ? HIGHLIGHT_BY_SLUG.get(hlColor)?.tint
+                      : undefined;
+                    const onPressParagraph = () =>
+                      setActiveParagraph({
+                        sectionIdx,
+                        paragraphIdx: pIdx,
+                        text: paragraph.text,
+                      });
                     // Drop cap on the very first paragraph of the
                     // chapter — oxblood illuminated initial, mirrors the
                     // Bible reader's verse-1 treatment.
@@ -273,7 +387,14 @@ export default function ChapterReaderScreen() {
                       return (
                         <Text
                           key={`p-${sectionIdx}-${pIdx}`}
-                          style={[styles.paragraph, scaledParagraph]}
+                          onPress={onPressParagraph}
+                          style={[
+                            styles.paragraph,
+                            scaledParagraph,
+                            tint ? { backgroundColor: tint } : null,
+                          ]}
+                          accessibilityRole="button"
+                          accessibilityLabel="Paragraph — tap to highlight, copy, or note"
                         >
                           {paragraph.number !== undefined ? (
                             <Text style={styles.paragraphNumber}>
@@ -289,7 +410,14 @@ export default function ChapterReaderScreen() {
                     return (
                       <Text
                         key={`p-${sectionIdx}-${pIdx}`}
-                        style={[styles.paragraph, scaledParagraph]}
+                        onPress={onPressParagraph}
+                        style={[
+                          styles.paragraph,
+                          scaledParagraph,
+                          tint ? { backgroundColor: tint } : null,
+                        ]}
+                        accessibilityRole="button"
+                        accessibilityLabel="Paragraph — tap to highlight, copy, or note"
                       >
                         {paragraph.number !== undefined ? (
                           <Text style={styles.paragraphNumber}>
@@ -304,12 +432,11 @@ export default function ChapterReaderScreen() {
                 </View>
               ))}
 
-              {/* Mark-as-read CTA — full-width gilt pill at the bottom of
-                  the chapter. Flips to a "✓ Marked as read" badge with a
-                  small undo affordance once tapped. The state is loaded
-                  on focus so re-entering the chapter shows the right
-                  completion status. */}
-              <View style={styles.markReadBlock}>
+              {/* Chapter actions — Mark as read + Save chapter side by
+                  side. Mark-as-read is the gilt-pill emphasis; Save is
+                  a quieter outline pill so it doesn't compete. Both
+                  reflect state loaded on focus. */}
+              <View style={styles.chapterActionsBlock}>
                 <Pressable
                   onPress={toggleCompleted}
                   disabled={busy}
@@ -341,6 +468,37 @@ export default function ChapterReaderScreen() {
                     {completed ? "Read · tap to unmark" : "Mark as read"}
                   </Text>
                 </Pressable>
+                <Pressable
+                  onPress={toggleSavedChapter}
+                  disabled={saveBusy}
+                  style={({ pressed }) => [
+                    styles.saveChapterButton,
+                    chapterSaved && styles.saveChapterButtonSaved,
+                    saveBusy && { opacity: 0.5 },
+                    pressed && { opacity: 0.85 },
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: chapterSaved }}
+                  accessibilityLabel={
+                    chapterSaved
+                      ? "Remove chapter from saved"
+                      : "Save chapter"
+                  }
+                >
+                  <Feather
+                    name="bookmark"
+                    size={15}
+                    color={chapterSaved ? colors.accent : colors.inkMuted}
+                  />
+                  <Text
+                    style={[
+                      styles.saveChapterLabel,
+                      chapterSaved && styles.saveChapterLabelSaved,
+                    ]}
+                  >
+                    {chapterSaved ? "Saved" : "Save chapter"}
+                  </Text>
+                </Pressable>
               </View>
 
               {/* Colophon — gilt rule + "End of <label>" in italic small caps */}
@@ -354,6 +512,34 @@ export default function ChapterReaderScreen() {
           ) : null}
         </ScrollView>
       </View>
+
+      {/* Paragraph actions sheet — appears when a paragraph is
+          tapped. Provides the 5-color highlight picker, copy, and a
+          Note shortcut. */}
+      <ParagraphActionsSheet
+        visible={activeParagraph !== null}
+        onClose={() => setActiveParagraph(null)}
+        paragraph={
+          activeParagraph && chapterQuery.data
+            ? {
+                workId,
+                order,
+                sectionIdx: activeParagraph.sectionIdx,
+                paragraphIdx: activeParagraph.paragraphIdx,
+                text: activeParagraph.text,
+                chapterLabel: chapterQuery.data.chapter.label,
+              }
+            : null
+        }
+        currentHighlight={
+          activeParagraph
+            ? paragraphHighlights.get(
+                `${activeParagraph.sectionIdx}::${activeParagraph.paragraphIdx}`,
+              ) ?? null
+            : null
+        }
+        onSetHighlight={applyParagraphHighlight}
+      />
     </>
   );
 }
@@ -412,14 +598,22 @@ const styles = StyleSheet.create({
 
   section: {
     gap: spacing.md,
-    paddingTop: spacing.sm,
+    // Generous top padding so the drop cap on the first paragraph
+    // can never crash into a section heading above. Was spacing.sm
+    // (~8px); bumped to spacing.lg so the descender of the heading
+    // and the ascender of the oxblood drop cap have visible breathing
+    // room.
+    paddingTop: spacing.lg,
   },
   sectionHeading: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 20,
     color: colors.accent,
     letterSpacing: -0.3,
-    lineHeight: 26,
+    // Generous lineHeight so the heading has its own clear band, with
+    // a comfortable gap below before the drop cap begins.
+    lineHeight: 30,
+    marginBottom: spacing.xs,
   },
   paragraph: {
     fontFamily: fonts.serif,
@@ -435,19 +629,29 @@ const styles = StyleSheet.create({
     letterSpacing: 0.4,
   },
   // Drop cap — oxblood illuminated initial on the opening paragraph.
+  // lineHeight must be >= fontSize so the glyph never overflows
+  // upward into the section heading above. Was 50 with fontSize 56,
+  // which caused the character ascender to overlap whatever sat
+  // above.
   dropCap: {
     fontFamily: fonts.serifBoldItalic,
-    fontSize: 56,
-    lineHeight: 50,
+    fontSize: 54,
+    lineHeight: 58,
     color: colors.oxbloodInk,
     letterSpacing: -2,
   },
 
-  // Mark-as-read CTA — full-width gilt pill at chapter end
-  markReadBlock: {
+  // Chapter actions — gilt pill for Mark as read, outline pill for
+  // Save chapter. Sit side-by-side at the bottom of the chapter.
+  chapterActionsBlock: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: spacing.sm,
     paddingTop: spacing.xl,
   },
   markReadButton: {
+    flex: 1,
+    minWidth: 180,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
@@ -459,6 +663,32 @@ const styles = StyleSheet.create({
     borderColor: "rgba(212, 168, 87, 0.55)",
     backgroundColor: colors.accentSoft,
   },
+  saveChapterButton: {
+    flex: 1,
+    minWidth: 140,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.sm,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.lg,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+  },
+  saveChapterButtonSaved: {
+    borderColor: "rgba(212, 168, 87, 0.55)",
+    backgroundColor: colors.accentSoft,
+  },
+  saveChapterLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 14,
+    color: colors.inkMuted,
+    fontWeight: "600",
+    letterSpacing: 0.4,
+  },
+  saveChapterLabelSaved: { color: colors.accent },
   markReadButtonDone: {
     backgroundColor: colors.accent,
     borderColor: colors.accent,
