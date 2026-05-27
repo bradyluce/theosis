@@ -1,24 +1,26 @@
 import Constants from "expo-constants";
 import { createTheosisApi, type TheosisApi } from "@theosis/core";
 
-// Resolve the API base URL based on runtime context:
+// Resolve the API base URL.
 //
-//   1. Local Metro development — `expoConfig.hostUri` is set to the dev
-//      machine's LAN IP:PORT, and __DEV__ is true. Strip the Metro port
-//      and target the Next dev server on :3000 (Next's `dev:mobile`
-//      script binds to 0.0.0.0 so the phone can reach it on the LAN).
-//   2. EAS Update / production bundle — fall through to the configured
-//      Vercel deploy. We check `expoConfig.extra`, `manifest2.extra`
-//      (the EAS Update manifest path on SDK 54), AND a hardcoded
-//      constant — belt-and-braces because Constants surfaces drift
-//      between Expo versions and a missing URL silently times every
-//      request out.
+// Default: the configured (Vercel) URL from app.json `extra.apiBaseUrl`,
+// even in `__DEV__`. This means `npx expo start` and a remote tester's
+// EAS Update both hit the same deployed backend — no second `dev:mobile`
+// terminal needed, and the experience matches what testers see.
 //
-// Gotcha: Expo Go populates `hostUri` even when you launch an EAS
-// Update from the dashboard (the value is the update host like
-// `u.expo.dev/...`, not a LAN IP). The check below tightens the dev
-// signal to BOTH `__DEV__ === true` AND a LAN-looking host so
-// production launches don't get misrouted to `http://u.expo.dev:3000`.
+// Opt-in: to run the mobile app against a local Next.js dev server on
+// your LAN (for testing unpushed backend changes), set
+// `EXPO_PUBLIC_USE_LAN_DEV=1` before launching Metro:
+//
+//     EXPO_PUBLIC_USE_LAN_DEV=1 npx expo start
+//
+// and run `npm run dev:mobile` from the repo root in another terminal.
+// The phone must be on the same Wi-Fi and Windows Firewall must allow
+// inbound 3000.
+//
+// EXPO_PUBLIC_* env vars are inlined by Metro at bundle time, so the
+// flag is fixed for the lifetime of that bundle — restart Metro after
+// toggling it.
 
 const HARDCODED_PROD_URL = "https://theosis-app-brady-luces-projects.vercel.app";
 
@@ -52,18 +54,22 @@ function readConfiguredUrl(): string | null {
 }
 
 function resolveApiBaseUrl(): string {
-  const dev =
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    typeof (globalThis as any).__DEV__ !== "undefined"
-      ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        Boolean((globalThis as any).__DEV__)
-      : false;
+  const useLanDev = process.env.EXPO_PUBLIC_USE_LAN_DEV === "1";
 
-  const hostUri = Constants.expoConfig?.hostUri;
-  if (dev && hostUri) {
-    const host = hostUri.split(":")[0];
-    if (isLanHost(host)) {
-      return `http://${host}:3000`;
+  if (useLanDev) {
+    const dev =
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      typeof (globalThis as any).__DEV__ !== "undefined"
+        ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          Boolean((globalThis as any).__DEV__)
+        : false;
+
+    const hostUri = Constants.expoConfig?.hostUri;
+    if (dev && hostUri) {
+      const host = hostUri.split(":")[0];
+      if (isLanHost(host)) {
+        return `http://${host}:3000`;
+      }
     }
   }
 
