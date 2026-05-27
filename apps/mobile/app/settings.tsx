@@ -371,7 +371,9 @@ export default function SettingsScreen() {
           </View>
         </Card>
 
-        <Text style={styles.footer}>Made with reverence.</Text>
+        <Text style={styles.footer}>
+          Made with reverence. · Build 2026-05-27-c
+        </Text>
       </ScrollView>
     </SafeAreaView>
   );
