@@ -8,6 +8,7 @@ import {
   Modal,
   Pressable,
   ScrollView,
+  Share,
   StyleSheet,
   Text,
   View,
@@ -18,7 +19,6 @@ import {
   HIGHLIGHT_BY_SLUG,
   HIGHLIGHT_COLORS,
 } from "@/constants/highlight-colors";
-import { QuoteCardModal } from "@/components/theosis/quote-card-modal";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import type { HighlightColor } from "@/lib/preferences";
 
@@ -62,7 +62,6 @@ export function VerseActionsSheet({
   const translateY = useRef(new Animated.Value(screenHeight)).current;
   const backdropOpacity = useRef(new Animated.Value(0)).current;
   const [copyFlash, setCopyFlash] = useState(false);
-  const [shareOpen, setShareOpen] = useState(false);
 
   useEffect(() => {
     Animated.parallel([
@@ -92,6 +91,25 @@ export function VerseActionsSheet({
     await Clipboard.setStringAsync(`"${verse.text}" — ${reference}`);
     setCopyFlash(true);
     setTimeout(() => setCopyFlash(false), 1500);
+  };
+
+  // Share opens the native OS share sheet with the verse as plain text.
+  // No image render — recipients get a copyable message that pastes into
+  // any app (Messages, Mail, Notes, X, etc.).
+  const onShare = async () => {
+    if (!verse) return;
+    const reference = `${verse.bookLabel} ${verse.chapter}:${verse.verseNumber}`;
+    const translation = verse.translation
+      ? ` (${verse.translation.toUpperCase()})`
+      : "";
+    const message = `“${verse.text}”\n— ${reference}${translation}\n\nvia Theosis`;
+    try {
+      await Share.share({ message });
+    } catch {
+      // User dismissal isn't a real error; ignore. Anything else falls
+      // back to clipboard so the gesture isn't wasted.
+      await Clipboard.setStringAsync(message);
+    }
   };
 
   const onOpenCommentary = () => {
@@ -231,7 +249,7 @@ export function VerseActionsSheet({
                 <ActionButton
                   icon="share-2"
                   label="Share"
-                  onPress={() => setShareOpen(true)}
+                  onPress={onShare}
                 />
                 <ActionButton
                   icon="edit-3"
@@ -250,17 +268,6 @@ export function VerseActionsSheet({
           ) : null}
         </Animated.View>
       </View>
-
-      {verse ? (
-        <QuoteCardModal
-          visible={shareOpen}
-          onClose={() => setShareOpen(false)}
-          text={verse.text}
-          attribution={`${verse.bookLabel} ${verse.chapter}:${verse.verseNumber}`}
-          reference={verse.translation.toUpperCase()}
-          kind="verse"
-        />
-      ) : null}
     </Modal>
   );
 }
