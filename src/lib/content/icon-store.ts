@@ -177,9 +177,16 @@ function getIconByNameInTitle(title: string): IconRef | undefined {
   return undefined;
 }
 
+// Universal fallback when the day commemorates a saint but no specific icon
+// has been curated yet. Christ Pantocrator stands in because every saint
+// conforms to His image — theologically the truest "any saint" placeholder.
+// Swap this id once an "All Saints" / "Synaxis" plate is curated.
+const FALLBACK_SAINT_ICON_ID = "icon-christ-pantocrator-sinai";
+
 // Resolve the lead icon for a day: prefer a feast/title pattern, then a
-// linked saint, and finally a slug-name match against the title (catches
-// menaion entries with empty saintIds).
+// linked saint, then a slug-name match against the title (catches menaion
+// entries with empty saintIds), and finally the universal fallback above so
+// every day with a primary commemoration has a visual anchor.
 export function getPrimaryIconForDay(
   daily: DailyCommemoration,
   saints: Person[],
@@ -196,10 +203,18 @@ export function getPrimaryIconForDay(
       .map((item) => item.saintId)
       .filter((id): id is string => Boolean(id)),
   );
-  for (const saint of saints) {
-    if (demotedIds.has(saint.id)) continue;
+  const undemoted = saints.filter((s) => !demotedIds.has(s.id));
+  for (const saint of undemoted) {
     const icon = getIconForPerson(saint);
     if (icon) return icon;
   }
-  return getIconByNameInTitle(daily.title);
+  const fromTitle = getIconByNameInTitle(daily.title);
+  if (fromTitle) return fromTitle;
+  // Final fallback: any day with a non-demoted saint gets the universal
+  // Pantocrator plate, which keeps the mobile FeastHero (and its "Read the
+  // life" CTA) wired up even for saints we haven't curated an icon for yet.
+  if (undemoted.length > 0) {
+    return getIconById(FALLBACK_SAINT_ICON_ID);
+  }
+  return undefined;
 }
