@@ -25,6 +25,7 @@ import { parseEvagriusPraktikos } from "./parse-evagrius-praktikos";
 import { parseIgnatius } from "./parse-ignatius";
 import { parseAphrahat } from "./parse-aphrahat";
 import { parseEphraimSyrian } from "./parse-ephraim-syrian";
+import { parseEphremCaveOfTreasures } from "./parse-ephrem-cave-of-treasures";
 import { parseJohnDamascus } from "./parse-john-damascus";
 import { parseJohnDamascusDivineImages } from "./parse-john-damascus-divine-images";
 import { parseCyrilJerusalem } from "./parse-cyril-jerusalem";
@@ -704,6 +705,27 @@ function main() {
   );
   console.log(
     `[ephraim-syrian] ${ephraimSyrian.works.length} works, ${ephraimSyrian.chapters.length} chapters, ${ephraimParagraphs} stanzas.`,
+  );
+
+  // ── Pseudo-Ephrem — The Book of the Cave of Treasures (Budge 1927) ──────────
+  const caveOfTreasures = parseEphremCaveOfTreasures({
+    rawDir: join(LIBRARY_DIRECTORY, "ephrem-cave-of-treasures"),
+  });
+  if (!caveOfTreasures.chapters || caveOfTreasures.chapters.length === 0) {
+    throw new Error("[ephrem-cave-of-treasures] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "ephrem-cave-of-treasures.json"),
+    `${JSON.stringify(caveOfTreasures, null, 2)}\n`,
+    "utf8",
+  );
+  const caveParagraphs = caveOfTreasures.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[ephrem-cave-of-treasures] ${caveOfTreasures.chapters.length} chapters, ${caveParagraphs} paragraphs.`,
   );
 
   // ── Irenaeus of Lyons — Adversus Haereses (ANF Vol. 1) ──────────────────────
