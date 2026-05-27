@@ -1,4 +1,7 @@
 import Feather from "@expo/vector-icons/Feather";
+import DateTimePicker, {
+  type DateTimePickerEvent,
+} from "@react-native-community/datetimepicker";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image } from "expo-image";
@@ -6,6 +9,7 @@ import { router } from "expo-router";
 import { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Platform,
   Pressable,
   RefreshControl,
   ScrollView,
@@ -123,6 +127,24 @@ function readingHref(
   return `/explore?translation=${translation}&book=${bookSlug}&chapter=${chapterNumber}&highlight=${range}`;
 }
 
+// Local-timezone "today" — matches what a human means by today. Used to
+// detect when the user has navigated away from today (shows the reset pill)
+// and to seed the picker.
+function todayIso(): string {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+function dateToIso(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
 // Format the date as a magazine-style masthead label: "Sunday · May 17"
 // — weekday and short month/day only.
 function formatMastheadDate(isoDate: string): string {
@@ -162,9 +184,16 @@ export default function DailyScreen() {
   );
   const [dailySaved, setDailySaved] = useState(false);
 
+  // Date navigation: undefined = today (the natural default). Selecting a
+  // different date both refetches /api/daily?date=... and surfaces a
+  // "Back to today" pill. The picker is a tap-toggle on the date label.
+  const [selectedIso, setSelectedIso] = useState<string | undefined>(undefined);
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const isToday = !selectedIso || selectedIso === todayIso();
+
   const { data, error, isLoading, refetch, isFetching } = useQuery({
-    queryKey: ["daily", "today"],
-    queryFn: () => api.fetchDaily(),
+    queryKey: ["daily", selectedIso ?? "today"],
+    queryFn: () => api.fetchDaily(selectedIso),
     staleTime: 5 * 60 * 1000,
   });
 
@@ -215,6 +244,33 @@ export default function DailyScreen() {
     setDailyCardOrder(next);
     setReorderHinted(true);
   }, []);
+
+  const onPickDate = (event: DateTimePickerEvent, picked?: Date) => {
+    // Android dismisses the picker on its own and fires "dismissed" / "set"
+    // events; iOS keeps the inline picker mounted until we close.
+    if (Platform.OS !== "ios") setPickerOpen(false);
+    if (event.type === "set" && picked) {
+      setSelectedIso(dateToIso(picked));
+    }
+  };
+
+  const resetToToday = () => {
+    setSelectedIso(undefined);
+    setPickerOpen(false);
+  };
+
+  // Shift the selected date by ±1 day. When the result lands on today,
+  // clear the override so the "back to today" pill hides.
+  const shiftDay = useCallback(
+    (delta: number) => {
+      const base = selectedIso ?? (data?.daily.isoDate ?? todayIso());
+      const d = new Date(`${base}T00:00:00Z`);
+      d.setUTCDate(d.getUTCDate() + delta);
+      const nextIso = dateToIso(d);
+      setSelectedIso(nextIso === todayIso() ? undefined : nextIso);
+    },
+    [selectedIso, data?.daily.isoDate],
+  );
 
   const hasFeast = Boolean(data?.daily.feastLabel || data?.primaryIcon);
 
@@ -293,16 +349,55 @@ export default function DailyScreen() {
           </Pressable>
         </View>
 
-        {/* Date label — read-only, today. The chevrons / picker / week
-            strip are gone; this is purely a magazine masthead now. The
-            bookmark icon next to the label saves the day to the user's
-            "Saved daily readings" list (filterable on the You tab). */}
+        {/* Date row — prev chevron, tappable date label (opens calendar
+            picker), next chevron, plus the bookmark for saving the day.
+            Tapping the date toggles an inline DateTimePicker for jumping
+            to any year/month/day in 1900–2099. */}
         <View style={styles.dateRow}>
-          <View style={styles.dateLineWrap}>
+          <Pressable
+            onPress={() => shiftDay(-1)}
+            hitSlop={10}
+            style={({ pressed }) => [
+              styles.dateArrow,
+              pressed && { opacity: 0.6 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Previous day"
+          >
+            <Feather name="chevron-left" size={16} color={colors.inkMuted} />
+          </Pressable>
+          <Pressable
+            onPress={() => setPickerOpen((open) => !open)}
+            style={({ pressed }) => [
+              styles.dateLineWrap,
+              pressed && { opacity: 0.7 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Open calendar picker"
+            hitSlop={6}
+          >
             <Text style={styles.dateLineLabel}>
               {data ? formatMastheadDate(data.daily.isoDate) : "Today"}
             </Text>
-          </View>
+            <Feather
+              name={pickerOpen ? "chevron-up" : "chevron-down"}
+              size={12}
+              color={colors.accent}
+              style={{ marginLeft: spacing.xs }}
+            />
+          </Pressable>
+          <Pressable
+            onPress={() => shiftDay(1)}
+            hitSlop={10}
+            style={({ pressed }) => [
+              styles.dateArrow,
+              pressed && { opacity: 0.6 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Next day"
+          >
+            <Feather name="chevron-right" size={16} color={colors.inkMuted} />
+          </Pressable>
           {data ? (
             <Pressable
               onPress={handleToggleDailySaved}
@@ -316,8 +411,8 @@ export default function DailyScreen() {
               accessibilityState={{ selected: dailySaved }}
               accessibilityLabel={
                 dailySaved
-                  ? "Remove today from saved daily readings"
-                  : "Save today's daily reading"
+                  ? "Remove this day from saved daily readings"
+                  : "Save this daily reading"
               }
             >
               <Feather
@@ -328,6 +423,37 @@ export default function DailyScreen() {
             </Pressable>
           ) : null}
         </View>
+
+        {!isToday ? (
+          <Pressable
+            onPress={resetToToday}
+            style={({ pressed }) => [
+              styles.todayResetButton,
+              pressed && { opacity: 0.6 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Back to today"
+          >
+            <Feather name="arrow-left" size={12} color={colors.accent} />
+            <Text style={styles.todayResetText}>Back to today</Text>
+          </Pressable>
+        ) : null}
+
+        {pickerOpen && data ? (
+          <View style={styles.pickerWrap}>
+            <DateTimePicker
+              value={new Date(`${data.daily.isoDate}T00:00:00`)}
+              mode="date"
+              display={Platform.OS === "ios" ? "inline" : "default"}
+              onChange={onPickDate}
+              themeVariant="dark"
+              textColor={colors.ink}
+              accentColor={colors.accent}
+              minimumDate={new Date("1900-01-01")}
+              maximumDate={new Date("2099-12-31")}
+            />
+          </View>
+        ) : null}
 
         {data ? (
           <View style={styles.dayStatusRow}>
@@ -896,12 +1022,47 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.sm,
   },
   dateLineWrap: {
+    flexDirection: "row",
+    alignItems: "center",
     paddingHorizontal: spacing.md,
     paddingVertical: 6,
     borderRadius: radii.pill,
     backgroundColor: "rgba(212, 168, 87, 0.06)",
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: colors.lineGilt,
+  },
+  dateArrow: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  todayResetButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignSelf: "center",
+    gap: spacing.xs,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 6,
+    marginTop: -spacing.xs,
+    marginBottom: spacing.xs,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+  },
+  todayResetText: {
+    fontFamily: fonts.sans,
+    fontSize: 10,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.6,
+    textTransform: "uppercase",
+  },
+  pickerWrap: {
+    paddingHorizontal: spacing.xl,
+    paddingBottom: spacing.sm,
   },
   bookmarkButton: {
     width: 26,
