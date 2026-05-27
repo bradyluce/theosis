@@ -25,12 +25,16 @@ import {
 import { ProfileDrawer } from "@/components/theosis/profile-drawer";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import {
+  type BibleHistoryEntry,
+  type LibraryHistoryEntry,
   type ProfilePrefs,
   type ReadingListItem,
   type SavedCommentary,
   type SavedDailyReading,
   type SavedNote,
   type SavedVerse,
+  getBibleReadingHistory,
+  getLibraryReadingHistory,
   getNotes,
   getProfilePrefs,
   getReadingList,
@@ -52,7 +56,9 @@ type ActivityTab =
   | "reading"
   | "commentary"
   | "daily"
-  | "notes";
+  | "notes"
+  | "bible"
+  | "library";
 
 export default function YouScreen() {
   const [prefs, setPrefs] = useState<ProfilePrefs>({});
@@ -64,6 +70,10 @@ export default function YouScreen() {
   const [savedCommentary, setSavedCommentary] = useState<SavedCommentary[]>([]);
   const [savedDaily, setSavedDaily] = useState<SavedDailyReading[]>([]);
   const [notes, setNotes] = useState<SavedNote[]>([]);
+  const [bibleHistory, setBibleHistory] = useState<BibleHistoryEntry[]>([]);
+  const [libraryHistory, setLibraryHistory] = useState<LibraryHistoryEntry[]>(
+    [],
+  );
   const [activityTab, setActivityTab] = useState<ActivityTab>("all");
   // Sync indicator — polls the pending-writes queue length so the user
   // can see when offline changes are still waiting to flush. Reads
@@ -92,8 +102,19 @@ export default function YouScreen() {
       getSavedCommentary(),
       getSavedDailyReadings(),
       getNotes(),
+      getBibleReadingHistory(),
+      getLibraryReadingHistory(),
     ]).then(
-      ([activity, savedVerses, list, commentary, daily, noteList]) => {
+      ([
+        activity,
+        savedVerses,
+        list,
+        commentary,
+        daily,
+        noteList,
+        bibleHist,
+        libHist,
+      ]) => {
         if (canceled) return;
         setStreak(activity.streak);
         setSaved(savedVerses);
@@ -101,6 +122,8 @@ export default function YouScreen() {
         setSavedCommentary(commentary);
         setSavedDaily(daily);
         setNotes(noteList);
+        setBibleHistory(bibleHist);
+        setLibraryHistory(libHist);
       },
     );
     return () => {
@@ -206,6 +229,33 @@ export default function YouScreen() {
           ? `On ${formatVerseKey(n.targetId)}`
           : `On ${n.targetType} · ${n.targetId}`,
       href: `/note/${n.targetType}/${encodeURIComponent(n.targetId)}` as string | undefined,
+    })),
+    // Bible reading history — separate from saved verses; tracks the
+    // chapters the user actually opened.
+    ...bibleHistory.map((h) => ({
+      id: `b-${h.id}`,
+      kind: "bible" as const,
+      label: h.label,
+      sub: `Read · ${h.translationId.toUpperCase()}`,
+      href: `/explore?translation=${h.translationId}&book=${h.bookSlug}&chapter=${h.chapter}` as
+        | string
+        | undefined,
+    })),
+    // Library reading history — people / works / guides / topics the
+    // user opened. Tap to revisit.
+    ...libraryHistory.map((h) => ({
+      id: `l-${h.id}`,
+      kind: "library" as const,
+      label: h.label,
+      sub: `Library · ${h.kind}`,
+      href:
+        h.kind === "person"
+          ? (`/people/${h.slug}` as string | undefined)
+          : h.kind === "work"
+            ? (`/works/${h.slug}` as string | undefined)
+            : h.kind === "guide"
+              ? (`/guides/${h.slug}` as string | undefined)
+              : (`/topics/${h.slug}` as string | undefined),
     })),
   ].filter((item) => activityTab === "all" || item.kind === activityTab);
 
@@ -408,9 +458,11 @@ export default function YouScreen() {
               [
                 "all",
                 "saved",
-                "reading",
-                "commentary",
                 "notes",
+                "commentary",
+                "bible",
+                "library",
+                "reading",
                 "daily",
               ] as ActivityTab[]
             ).map((tab) => {
@@ -426,7 +478,11 @@ export default function YouScreen() {
                         ? "Commentary"
                         : tab === "notes"
                           ? "Notes"
-                          : "Daily";
+                          : tab === "bible"
+                            ? "Bible"
+                            : tab === "library"
+                              ? "Library"
+                              : "Daily";
               return (
                 <Pressable
                   key={tab}
@@ -481,7 +537,11 @@ export default function YouScreen() {
                             ? "calendar"
                             : item.kind === "notes"
                               ? "edit-3"
-                              : "book-open"
+                              : item.kind === "bible"
+                                ? "book"
+                                : item.kind === "library"
+                                  ? "feather"
+                                  : "book-open"
                     }
                     size={14}
                     color={colors.accent}

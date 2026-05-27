@@ -2,9 +2,11 @@ import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router, useFocusEffect, useLocalSearchParams } from "expo-router";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ActivityIndicator,
+  type NativeScrollEvent,
+  type NativeSyntheticEvent,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -18,8 +20,10 @@ import { getApi } from "@/lib/api";
 import {
   addCompletion,
   getProfilePrefs,
+  getWorkPosition,
   isCompleted,
   removeCompletion,
+  setWorkPosition,
   textSizeScale,
   type ProfilePrefs,
 } from "@/lib/preferences";
@@ -97,6 +101,85 @@ export default function ChapterReaderScreen() {
     [scale],
   );
 
+  // Scroll restoration. When the user returns to a chapter they've
+  // already started, we jump them to the last saved scroll position
+  // instead of the top. The position is debounced-written on every
+  // scroll event so we don't thrash AsyncStorage.
+  const scrollRef = useRef<ScrollView>(null);
+  const lastWrittenRef = useRef<number>(0);
+  const writeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Track whether we've already attempted the restore — once, after
+  // the data loads. Otherwise we'd fight the user's manual scrolls.
+  const [pendingRestore, setPendingRestore] = useState<number | null>(null);
+  const [restored, setRestored] = useState(false);
+
+  // Load the saved position when the chapter ID changes. The actual
+  // scrollTo runs in a separate effect tied to chapter data being
+  // ready, so the ScrollView has rendered its content first.
+  useEffect(() => {
+    let canceled = false;
+    setRestored(false);
+    void getWorkPosition(workId, order).then((pos) => {
+      if (canceled) return;
+      // Tiny scroll positions aren't worth restoring; treat them as
+      // "start at the top" so the chapter title page is always
+      // visible on a quick second visit.
+      if (pos && pos.scrollY > 80) {
+        setPendingRestore(pos.scrollY);
+      } else {
+        setPendingRestore(null);
+      }
+    });
+    return () => {
+      canceled = true;
+    };
+  }, [workId, order]);
+
+  // Once the chapter data is in and we have a pending restore Y,
+  // scroll there. Setting restored:true prevents re-firing if the
+  // chapter data refetches.
+  useEffect(() => {
+    if (restored) return;
+    if (!chapterQuery.data) return;
+    if (pendingRestore === null) {
+      setRestored(true);
+      return;
+    }
+    // Defer one frame so the ScrollView has measured its content.
+    const t = setTimeout(() => {
+      scrollRef.current?.scrollTo({ y: pendingRestore, animated: false });
+      setRestored(true);
+    }, 60);
+    return () => clearTimeout(t);
+  }, [chapterQuery.data, pendingRestore, restored]);
+
+  // Debounced scroll-position writer. 450ms after the user stops
+  // scrolling, we commit the y to AsyncStorage. We skip writes that
+  // are within 16px of the previous one to avoid recording every
+  // tiny pixel shift.
+  const handleScroll = useCallback(
+    (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+      const y = e.nativeEvent.contentOffset.y;
+      if (Math.abs(y - lastWrittenRef.current) < 16) return;
+      if (writeTimerRef.current) clearTimeout(writeTimerRef.current);
+      writeTimerRef.current = setTimeout(() => {
+        lastWrittenRef.current = y;
+        void setWorkPosition(workId, order, y);
+      }, 450);
+    },
+    [workId, order],
+  );
+
+  // Flush any pending position when the user leaves the chapter so we
+  // don't lose the very last scroll point.
+  useEffect(() => {
+    return () => {
+      if (writeTimerRef.current) {
+        clearTimeout(writeTimerRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
       <Stack.Screen
@@ -122,9 +205,12 @@ export default function ChapterReaderScreen() {
           pointerEvents="none"
         />
         <ScrollView
+          ref={scrollRef}
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
+          onScroll={handleScroll}
+          scrollEventThrottle={120}
         >
           {chapterQuery.isLoading ? (
             <View style={styles.loading}>

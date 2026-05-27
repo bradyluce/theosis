@@ -1,8 +1,8 @@
 import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
-import { Stack, router, useLocalSearchParams } from "expo-router";
-import { useMemo } from "react";
+import { Stack, router, useFocusEffect, useLocalSearchParams } from "expo-router";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -19,6 +19,11 @@ import {
 } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import {
+  type CompletionMark,
+  getCompletions,
+  recordLibraryVisit,
+} from "@/lib/preferences";
 
 // Work detail — the editorial title page. Composed like the inside cover
 // of a printed volume: kind + length kicker, italic display title,
@@ -76,6 +81,48 @@ export default function WorkDetailScreen() {
     enabled: Boolean(work),
     staleTime: 60 * 60 * 1000,
   });
+
+  // Record a library visit once the work resolves. Drives the "where
+  // I've been reading" feed in the You tab.
+  useEffect(() => {
+    if (work && slug) {
+      void recordLibraryVisit({
+        kind: "work",
+        slug,
+        label: work.shortTitle ?? work.title,
+      });
+    }
+  }, [work, slug]);
+
+  // Pull the user's completion marks on focus so re-entering the work
+  // (e.g. after marking a chapter as read) refreshes the ✓ chips.
+  const [completions, setCompletions] = useState<CompletionMark[]>([]);
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getCompletions().then((all) => {
+        if (!canceled) setCompletions(all);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
+  const completedChapterIds = useMemo<Set<string>>(() => {
+    return new Set(
+      completions
+        .filter((c) => c.kind === "work-chapter")
+        .map((c) => c.slug),
+    );
+  }, [completions]);
+  // For the header progress badge — "N of M chapters read".
+  const chapterReadCount = useMemo(() => {
+    if (!work || !chaptersQuery.data) return 0;
+    return chaptersQuery.data.chapters.reduce((acc, ch) => {
+      const id = `${work.id}::${ch.order}`;
+      return acc + (completedChapterIds.has(id) ? 1 : 0);
+    }, 0);
+  }, [work, chaptersQuery.data, completedChapterIds]);
 
   const authorDisplay = author
     ? author.honorific
@@ -207,53 +254,73 @@ export default function WorkDetailScreen() {
               chaptersQuery.data.chapters.length > 0 ? (
                 <View style={styles.contentsSection}>
                   <SectionHeader
-                    eyebrow={`${chaptersQuery.data.chapters.length} ${
-                      chaptersQuery.data.chapters.length === 1
-                        ? "chapter"
-                        : "chapters"
-                    }`}
+                    eyebrow={
+                      chapterReadCount > 0
+                        ? `${chapterReadCount} of ${chaptersQuery.data.chapters.length} read`
+                        : `${chaptersQuery.data.chapters.length} ${
+                            chaptersQuery.data.chapters.length === 1
+                              ? "chapter"
+                              : "chapters"
+                          }`
+                    }
                     title="Contents"
                     rule
                   />
-                  {chaptersQuery.data.chapters.map((chapter) => (
-                    <Pressable
-                      key={chapter.id}
-                      onPress={() =>
-                        router.push(`/reading/${work.id}/${chapter.order}`)
-                      }
-                      style={({ pressed }) => [
-                        styles.tocRow,
-                        pressed && { opacity: 0.6 },
-                      ]}
-                      accessibilityRole="button"
-                      accessibilityLabel={`Read ${chapter.label}`}
-                    >
-                      <Text style={styles.tocIndex}>
-                        {String(chapter.order).padStart(2, "0")}
-                      </Text>
-                      <View style={styles.tocText}>
-                        <Text
-                          style={styles.tocLabel}
-                          numberOfLines={2}
-                        >
-                          {chapter.label}
+                  {chaptersQuery.data.chapters.map((chapter) => {
+                    const isCompleted = completedChapterIds.has(
+                      `${work.id}::${chapter.order}`,
+                    );
+                    return (
+                      <Pressable
+                        key={chapter.id}
+                        onPress={() =>
+                          router.push(`/reading/${work.id}/${chapter.order}`)
+                        }
+                        style={({ pressed }) => [
+                          styles.tocRow,
+                          isCompleted && styles.tocRowCompleted,
+                          pressed && { opacity: 0.6 },
+                        ]}
+                        accessibilityRole="button"
+                        accessibilityLabel={`Read ${chapter.label}`}
+                        accessibilityState={{ selected: isCompleted }}
+                      >
+                        <Text style={styles.tocIndex}>
+                          {String(chapter.order).padStart(2, "0")}
                         </Text>
-                        {chapter.title && chapter.title !== chapter.label ? (
+                        <View style={styles.tocText}>
                           <Text
-                            style={styles.tocTitle}
+                            style={styles.tocLabel}
                             numberOfLines={2}
                           >
-                            {chapter.title}
+                            {chapter.label}
                           </Text>
+                          {chapter.title && chapter.title !== chapter.label ? (
+                            <Text
+                              style={styles.tocTitle}
+                              numberOfLines={2}
+                            >
+                              {chapter.title}
+                            </Text>
+                          ) : null}
+                        </View>
+                        {isCompleted ? (
+                          <View style={styles.tocReadBadge}>
+                            <Feather
+                              name="check"
+                              size={11}
+                              color={colors.background}
+                            />
+                          </View>
                         ) : null}
-                      </View>
-                      <Feather
-                        name="chevron-right"
-                        size={14}
-                        color={colors.inkSoft}
-                      />
-                    </Pressable>
-                  ))}
+                        <Feather
+                          name="chevron-right"
+                          size={14}
+                          color={colors.inkSoft}
+                        />
+                      </Pressable>
+                    );
+                  })}
                 </View>
               ) : null}
 
@@ -404,6 +471,18 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: colors.line,
+  },
+  tocRowCompleted: {
+    opacity: 0.78,
+  },
+  tocReadBadge: {
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    backgroundColor: colors.accent,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 2,
   },
   tocIndex: {
     fontFamily: fonts.serifBoldItalic,

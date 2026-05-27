@@ -2,6 +2,7 @@ import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router, useLocalSearchParams } from "expo-router";
+import { useEffect } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -16,6 +17,7 @@ import type { GuideRelatedRef } from "@theosis/core";
 import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import { recordLibraryVisit } from "@/lib/preferences";
 
 // Orthodox-basics guide reader. Long-form catechetical / practical prose
 // authored by Theosis. Editorial chrome: eyebrow / display title / drop-cap
@@ -35,6 +37,18 @@ export default function GuideScreen() {
   });
 
   const guide = guideQuery.data?.guide;
+
+  // Record a library visit when the guide resolves. Surfaces in the
+  // You-tab "Library" history filter.
+  useEffect(() => {
+    if (guide && slug) {
+      void recordLibraryVisit({
+        kind: "guide",
+        slug,
+        label: guide.title,
+      });
+    }
+  }, [guide, slug]);
 
   return (
     <>

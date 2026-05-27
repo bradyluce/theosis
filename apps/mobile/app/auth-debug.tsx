@@ -47,7 +47,17 @@ import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { getApiBaseUrl } from "@/lib/api";
 
 export default function AuthDebugScreen() {
-  const { isLoaded: userLoaded, isSignedIn, user } = useUser();
+  const { isLoaded: userLoaded, isSignedIn } = useUser();
+
+  // The instant Clerk reports a session, leave this screen for the
+  // Daily tab. Previously we landed the signed-in user on the
+  // diagnostic page — "/api/me" output is great for debugging but
+  // confusing for actual users.
+  useEffect(() => {
+    if (userLoaded && isSignedIn) {
+      router.replace("/(tabs)");
+    }
+  }, [userLoaded, isSignedIn]);
 
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
@@ -76,7 +86,7 @@ export default function AuthDebugScreen() {
         >
           <Feather name="chevron-left" size={20} color={colors.inkMuted} />
         </Pressable>
-        <Wordmark size={18} subline="Account" />
+        <Wordmark size={18} subline="Sign in" />
         <View style={styles.mastheadSpacer} />
       </View>
       <GiltRule full style={{ marginHorizontal: spacing.xl }} />
@@ -91,12 +101,16 @@ export default function AuthDebugScreen() {
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}
         >
-          {!userLoaded ? (
-            <Card>
-              <Text style={styles.body}>Loading…</Text>
-            </Card>
-          ) : isSignedIn ? (
-            <SignedInView email={user?.primaryEmailAddress?.emailAddress} />
+          {!userLoaded || isSignedIn ? (
+            // userLoaded:false → waiting for Clerk to hydrate
+            // isSignedIn:true  → the redirect-effect is about to fire
+            // In either case we render a quiet loading placeholder so
+            // the user doesn't see the form for a frame.
+            <View style={styles.loadingBlock}>
+              <Text style={styles.loadingLabel}>
+                {isSignedIn ? "Welcome — opening Theosis…" : "Loading…"}
+              </Text>
+            </View>
           ) : (
             <SignedOutView />
           )}
@@ -127,12 +141,20 @@ function SignedOutView() {
   return (
     <View style={{ gap: spacing.lg }}>
       <View style={styles.heroBlock}>
-        <Eyebrow tone="accent">Welcome</Eyebrow>
-        <Text style={styles.heroTitle}>Sign in to Theosis</Text>
+        <Eyebrow tone="accent">A library of one</Eyebrow>
+        <Text style={styles.heroTitle}>Welcome home</Text>
         <Text style={styles.heroSubtitle}>
-          Keep your highlights, notes, reading list, and prayer rule across
-          devices. Continue with Apple, Google, or email.
+          Your highlights, notes, reading list, prayer rule, and diptych
+          travel with you. Sign in once — read on any device.
         </Text>
+      </View>
+
+      {/* Benefits row — three small reasons-to-sign-in chips above the
+          OAuth buttons. Quiet, not salesy; just the value props. */}
+      <View style={styles.benefitsRow}>
+        <BenefitChip glyph="bookmark" label="Synced highlights" />
+        <BenefitChip glyph="edit-3" label="Your notes" />
+        <BenefitChip glyph="feather" label="Prayer rule" />
       </View>
 
       <Card>
@@ -800,6 +822,23 @@ function FieldLabel({ label }: { label: string }) {
   );
 }
 
+// Small gilt chip with an icon + one-word label. Sits in a row of three
+// above the OAuth providers as the editorial reason to sign in.
+function BenefitChip({
+  glyph,
+  label,
+}: {
+  glyph: React.ComponentProps<typeof Feather>["name"];
+  label: string;
+}) {
+  return (
+    <View style={styles.benefitChip}>
+      <Feather name={glyph} size={11} color={colors.accent} />
+      <Text style={styles.benefitChipLabel}>{label}</Text>
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.background },
   masthead: {
@@ -822,6 +861,40 @@ const styles = StyleSheet.create({
     paddingTop: spacing.xl,
     paddingBottom: spacing["4xl"],
     gap: spacing.lg,
+  },
+  loadingBlock: {
+    paddingVertical: spacing["4xl"],
+    alignItems: "center",
+  },
+  loadingLabel: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 15,
+    color: colors.inkMuted,
+  },
+  benefitsRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    paddingHorizontal: spacing.sm,
+  },
+  benefitChip: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 6,
+    borderRadius: radii.pill,
+    backgroundColor: "rgba(212, 168, 87, 0.06)",
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+  },
+  benefitChipLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10.5,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.2,
+    textTransform: "uppercase",
   },
   heroBlock: { gap: spacing.xs, alignItems: "center" },
   heroTitle: {

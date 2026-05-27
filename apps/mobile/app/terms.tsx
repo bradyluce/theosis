@@ -1,8 +1,9 @@
-// Terms of Service — placeholder draft for the App Store handoff.
-// The phrasing is plain and honest about what Theosis is and what it
-// isn't. Replace with the canonical legal text when one exists; this
-// is enough to clear App Store guideline 1.2 (provide terms) for the
-// TestFlight beta.
+// Terms of Service — substantive draft suitable for App Store
+// submission. Plain-English, no legalese theater; covers acceptance,
+// account, content, conduct, third-party services, intellectual
+// property, disclaimers, liability cap, termination, governing law,
+// changes, and contact. Replace company name + jurisdiction + email
+// before going live.
 
 import Feather from "@expo/vector-icons/Feather";
 import { LinearGradient } from "expo-linear-gradient";
@@ -57,68 +58,171 @@ export default function TermsScreen() {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        <Eyebrow tone="accent">Last updated · May 2026</Eyebrow>
+        <Eyebrow tone="accent">Last updated · May 27, 2026</Eyebrow>
         <Text style={styles.title}>Terms of Service</Text>
         <GiltRule style={{ alignSelf: "flex-start", marginTop: spacing.md }} />
 
-        <Section title="What Theosis is">
-          Theosis is a study companion for Orthodox Christian texts — Scripture,
-          patristic commentary, the lives of the saints, the prayer rule, and
-          the liturgical calendar. It does not replace a confessor, a parish,
-          or the sacramental life of the Church. It is a tool for reading and
-          remembrance.
+        <Text style={styles.intro}>
+          These Terms of Service (&quot;Terms&quot;) govern your use of the
+          Theosis mobile application and any related services (collectively,
+          the &quot;Service&quot;) operated by Theosis (&quot;Theosis,&quot;
+          &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). By accessing
+          or using the Service you agree to be bound by these Terms. If you
+          do not agree, do not use the Service.
+        </Text>
+
+        <Section number="1" title="Eligibility">
+          You must be at least 13 years old to create a Theosis account. By
+          creating an account you represent that you meet this age
+          requirement. The Service is not directed to children under 13 and
+          we do not knowingly collect personal information from anyone
+          under that age. If you are between 13 and the age of majority in
+          your jurisdiction, you may only use the Service with the consent
+          of a parent or legal guardian.
         </Section>
 
-        <Section title="Editorial content">
+        <Section number="2" title="What Theosis is">
+          Theosis is a study companion for Orthodox Christian texts —
+          Scripture, patristic commentary, the lives of the saints, the
+          prayer rule, the liturgical calendar, and related editorial
+          content. The Service is informational and devotional. It does
+          not replace a confessor, spiritual father, parish, sacrament, or
+          the sacramental life of the Church.
+        </Section>
+
+        <Section number="3" title="Your account">
+          You may use much of the Service anonymously, with your data stored
+          only on your device. Some features (cross-device sync, account
+          recovery) require creating an account through our authentication
+          provider, Clerk. You are responsible for keeping your sign-in
+          credentials confidential and for any activity under your account.
+          Notify us promptly at the contact email below if you suspect
+          unauthorized access.
+        </Section>
+
+        <Section number="4" title="Your content">
+          Highlights, notes, reading lists, prayer-rule selections, the
+          diptych, and similar content you create (&quot;Your Content&quot;)
+          remain yours. By using the Service you grant Theosis a limited,
+          worldwide, non-exclusive, royalty-free license to store, transmit,
+          process, and display Your Content solely to operate the Service
+          for you — for example, to sync between your devices, restore
+          after re-install, or render in a printable PDF. We do not sell
+          Your Content, share it with advertisers, or use it to train
+          machine-learning models.
+        </Section>
+
+        <Section number="5" title="Editorial content">
           Bible translations, patristic excerpts, daily commemorations, and
-          hymns surfaced in the app are drawn from public-domain editions
-          and openly licensed sources. Saint biographies are written from
-          public-domain facts; AI-generated prose is never substituted for
-          authentic patristic writing. We make our best effort to keep
-          attribution and context accurate.
+          hymns surfaced in the Service are drawn from public-domain
+          editions and openly licensed sources, attributed where required.
+          Saint biographies and editorial prose are written by Theosis from
+          public-domain facts; AI-generated content is never substituted
+          for authentic patristic writing. We make reasonable efforts to
+          keep attributions and context accurate; if you spot an error,
+          please tell us.
         </Section>
 
-        <Section title="Your account and your content">
-          When you sign in, Theosis stores a record of your account, your
-          preferences (calendar, translation, jurisdiction, etc.), and the
-          content you save (verses, highlights, notes, reading list,
-          diptych, prayer rule). You own this data. You can delete your
-          account at any time from Settings → Account → Delete account;
-          this drops every record we hold about you, on the server, and
-          signs you out.
+        <Section number="6" title="Acceptable use">
+          You agree not to (a) reverse-engineer, scrape, or attempt to
+          extract source code from the Service except as permitted by
+          applicable law; (b) use the Service to harass, defame, or harm
+          others; (c) misrepresent affiliation with a Church or jurisdiction
+          you do not represent; (d) impersonate Theosis or another user;
+          (e) attempt to circumvent security or access controls; (f) use
+          the Service in violation of applicable law.
         </Section>
 
-        <Section title="No prophecy. No counsel.">
-          Anything that looks like advice in this app — a daily reading,
-          a commemoration, an excerpt from a Father — is editorial, not
-          pastoral. For spiritual counsel, see your priest or spiritual
-          father. For medical, legal, financial, or mental-health
-          decisions, see a qualified professional.
+        <Section number="7" title="Third-party services">
+          The Service relies on third-party providers: Clerk Inc. for
+          authentication, Vercel Inc. for application hosting, Neon Inc.
+          for database hosting, Apple Inc. and Google LLC for OAuth
+          providers, and Expo for the mobile runtime. Your use of those
+          providers is governed by their own terms. We are not responsible
+          for outages, security incidents, or data handling at those
+          providers other than our reasonable diligence in selecting them.
         </Section>
 
-        <Section title="Availability">
-          Theosis runs on third-party infrastructure (Clerk for accounts,
-          Vercel + Neon for the API and database, Expo for the mobile
-          runtime). When those providers are unavailable, parts of the
-          app may be too. The app is provided as-is, without warranty.
+        <Section number="8" title="Intellectual property">
+          The Theosis name, logo, design system, editorial prose written by
+          Theosis, and the original software comprising the Service are
+          owned by Theosis and protected by copyright, trademark, and other
+          laws. We grant you a limited, revocable, non-exclusive,
+          non-transferable license to use the Service for personal,
+          non-commercial study. Content sourced from third parties is used
+          under the applicable public-domain or open-license terms.
         </Section>
 
-        <Section title="Changes to these terms">
-          We may update these terms as the app evolves. If we make a
-          material change (new data collected, new payment model, etc.),
-          we&apos;ll surface a note in the app or by email if you&apos;ve
-          provided one.
+        <Section number="9" title="Disclaimers">
+          The Service is provided &quot;as is&quot; and &quot;as
+          available&quot; without warranties of any kind, express or
+          implied, including but not limited to merchantability, fitness
+          for a particular purpose, non-infringement, accuracy, or
+          uninterrupted availability. Editorial content is not pastoral
+          counsel, medical advice, legal advice, financial advice, or
+          mental-health advice. For such matters consult a qualified
+          professional or your priest.
         </Section>
 
-        <Section title="Contact">
-          Questions? Reach out at the email shown in the App Store listing.
-          We&apos;ll respond as a human, not a form letter.
+        <Section number="10" title="Limitation of liability">
+          To the maximum extent permitted by law, Theosis and its
+          contributors will not be liable for any indirect, incidental,
+          consequential, special, exemplary, or punitive damages arising
+          out of or relating to the Service. Our aggregate liability for
+          any claim relating to the Service is limited to the greater of
+          (i) the amount you paid to use the Service in the twelve months
+          before the claim, or (ii) twenty United States dollars
+          (USD $20.00). Some jurisdictions do not allow these limits;
+          where that is so, the limits apply to the maximum extent
+          permitted.
+        </Section>
+
+        <Section number="11" title="Termination">
+          You may terminate your account at any time from Settings →
+          Account → Delete my account. Deletion is permanent and removes
+          every record we hold on our servers. We may suspend or terminate
+          your access to the Service if you materially breach these Terms,
+          with notice where practicable.
+        </Section>
+
+        <Section number="12" title="Changes to the Service and the Terms">
+          We may modify the Service or these Terms from time to time. For
+          material changes (new categories of data collected, new fees,
+          changes to dispute resolution) we will surface a notice in the
+          app and, where you have provided an email address, by email
+          before the changes take effect. Your continued use of the
+          Service after a change indicates acceptance of the updated
+          Terms.
+        </Section>
+
+        <Section number="13" title="Governing law">
+          These Terms are governed by the laws of the State of Michigan,
+          United States of America, without regard to its conflict-of-law
+          rules. Any dispute arising out of or relating to the Service or
+          these Terms will be resolved in the state or federal courts
+          located in Wayne County, Michigan. To the extent permitted by
+          law, you and Theosis waive any right to a jury trial.
+        </Section>
+
+        <Section number="14" title="Severability and entire agreement">
+          If any provision of these Terms is held unenforceable, the
+          remainder will continue in effect. These Terms, together with
+          the Privacy Policy, constitute the entire agreement between you
+          and Theosis regarding the Service and supersede any prior
+          agreements.
+        </Section>
+
+        <Section number="15" title="Contact">
+          Questions or concerns about these Terms? Email us at the address
+          shown on the App Store listing. We respond personally — usually
+          within five business days.
         </Section>
 
         <View style={styles.footer}>
           <GiltRule />
           <Text style={styles.footerText}>
-            By using Theosis you agree to these terms.
+            By creating an account or using the Service you agree to these
+            Terms.
           </Text>
         </View>
       </ScrollView>
@@ -127,15 +231,20 @@ export default function TermsScreen() {
 }
 
 function Section({
+  number,
   title,
   children,
 }: {
+  number: string;
   title: string;
   children: React.ReactNode;
 }) {
   return (
     <View style={styles.section}>
-      <Text style={styles.sectionTitle}>{title}</Text>
+      <View style={styles.sectionHeader}>
+        <Text style={styles.sectionNumber}>{number}</Text>
+        <Text style={styles.sectionTitle}>{title}</Text>
+      </View>
       <Text style={styles.bodyText}>{children}</Text>
     </View>
   );
@@ -170,13 +279,32 @@ const styles = StyleSheet.create({
     letterSpacing: -0.6,
     lineHeight: 42,
   },
+  intro: {
+    fontFamily: fonts.serif,
+    fontSize: 15,
+    lineHeight: 25,
+    color: colors.inkMuted,
+  },
   section: { gap: spacing.sm },
+  sectionHeader: {
+    flexDirection: "row",
+    alignItems: "baseline",
+    gap: spacing.sm,
+  },
+  sectionNumber: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 14,
+    color: colors.accent,
+    letterSpacing: -0.2,
+    minWidth: 22,
+  },
   sectionTitle: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 18,
     color: colors.accent,
     letterSpacing: -0.2,
     lineHeight: 24,
+    flex: 1,
   },
   bodyText: {
     fontFamily: fonts.serif,
@@ -193,5 +321,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.serifItalic,
     fontSize: 13,
     color: colors.inkSoft,
+    textAlign: "center",
+    paddingHorizontal: spacing.lg,
   },
 });

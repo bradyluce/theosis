@@ -28,6 +28,7 @@ import {
   getProfilePrefs,
   getSavedVerses,
   highlightKey,
+  recordBibleVisit,
   removeSavedVerse,
   setLastReadLocation,
   setVerseHighlight,
@@ -198,12 +199,21 @@ export default function BibleReaderScreen() {
 
   // Persist on every (translation, book, chapter) change. Skip until
   // restore completes to avoid clobbering saved state with defaults.
+  // Also record a typed Bible-history entry so the You-tab feed can
+  // surface "where I've been reading" as a separate filter from saved
+  // verses or generic activity.
   useEffect(() => {
     if (!restored || !bookSlug || !chapterNumber) return;
     setLastReadLocation({
       translation,
       book: bookSlug,
       chapter: chapterNumber,
+    });
+    void recordBibleVisit({
+      translationId: translation,
+      bookSlug,
+      chapter: chapterNumber,
+      label: `${bookLabel(bookSlug)} ${chapterNumber}`,
     });
   }, [restored, translation, bookSlug, chapterNumber]);
 

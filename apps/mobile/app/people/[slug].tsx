@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router, useFocusEffect, useLocalSearchParams } from "expo-router";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -32,6 +32,7 @@ import { getApi } from "@/lib/api";
 import {
   getFavoritePersonSlugs,
   getProfilePrefs,
+  recordLibraryVisit,
   toggleFavoritePerson,
   updateProfilePrefs,
 } from "@/lib/preferences";
@@ -90,6 +91,18 @@ export default function PersonDetailScreen() {
       ? `${person.honorific} ${person.name.split(",")[0]}`
       : person.name.split(",")[0]
     : "";
+
+  // Record a library visit once the person row is loaded — drives the
+  // "where I've been reading" feed in the You tab.
+  useEffect(() => {
+    if (person && slug) {
+      void recordLibraryVisit({
+        kind: "person",
+        slug,
+        label: displayName,
+      });
+    }
+  }, [person, slug, displayName]);
 
   // Patron + favorite affordances. Both read from prefs on focus so
   // returning from settings or another person reflects updated state.

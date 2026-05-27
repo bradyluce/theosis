@@ -1,8 +1,8 @@
 import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
-import { Stack, router } from "expo-router";
-import { useMemo, useState } from "react";
+import { Stack, router, useFocusEffect } from "expo-router";
+import { useCallback, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   FlatList,
@@ -17,6 +17,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import { type CompletionMark, getCompletions } from "@/lib/preferences";
 
 // Searchable list of every Work with long-form chapters. Commentary-only
 // titles are excluded (they have no readable chapter body).
@@ -50,6 +51,46 @@ export default function WorksBrowseScreen() {
         w.workType.toLowerCase().includes(q),
     );
   }, [works, query]);
+
+  // Map of workId → number of chapters the user has marked read.
+  // Re-read on focus so newly-marked chapters update the badges
+  // without needing a fresh mount.
+  const [completions, setCompletions] = useState<CompletionMark[]>([]);
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getCompletions().then((all) => {
+        if (!canceled) setCompletions(all);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
+  const completedByWork = useMemo<Map<string, number>>(() => {
+    const map = new Map<string, number>();
+    for (const c of completions) {
+      if (c.kind !== "work-chapter") continue;
+      // slug shape is "<workId>::<order>" — extract workId.
+      const idx = c.slug.indexOf("::");
+      if (idx < 0) continue;
+      const workId = c.slug.slice(0, idx);
+      map.set(workId, (map.get(workId) ?? 0) + 1);
+    }
+    return map;
+  }, [completions]);
+  // chapter count per work, derived from the catalog index.
+  const totalChaptersByWork = useMemo<Map<string, number>>(() => {
+    const map = new Map<string, number>();
+    const byWork = catalogQuery.data?.index?.byWork;
+    if (!byWork) return map;
+    for (const [workId, entries] of Object.entries(byWork)) {
+      if (Array.isArray(entries)) {
+        map.set(workId, entries.length);
+      }
+    }
+    return map;
+  }, [catalogQuery.data]);
 
   return (
     <>
@@ -115,29 +156,65 @@ export default function WorksBrowseScreen() {
             data={filtered}
             keyExtractor={(item) => item.id}
             keyboardShouldPersistTaps="handled"
-            renderItem={({ item }) => (
-              <Pressable
-                onPress={() => router.push(`/works/${item.slug}`)}
-                style={({ pressed }) => [
-                  styles.workRow,
-                  pressed && styles.workRowPressed,
-                ]}
-                accessibilityRole="button"
-              >
-                <View style={styles.workIcon}>
-                  <Feather name="book" size={16} color={colors.accent} />
-                </View>
-                <View style={styles.workText}>
-                  <Text style={styles.workTitle} numberOfLines={2}>
-                    {item.title}
-                  </Text>
-                  <Text style={styles.workMeta} numberOfLines={1}>
-                    {item.workType} · {item.eraLabel} · {item.lengthLabel}
-                  </Text>
-                </View>
-                <Feather name="chevron-right" size={16} color={colors.inkSoft} />
-              </Pressable>
-            )}
+            renderItem={({ item }) => {
+              const read = completedByWork.get(item.id) ?? 0;
+              const total = totalChaptersByWork.get(item.id) ?? 0;
+              const fullyRead = total > 0 && read === total;
+              return (
+                <Pressable
+                  onPress={() => router.push(`/works/${item.slug}`)}
+                  style={({ pressed }) => [
+                    styles.workRow,
+                    pressed && styles.workRowPressed,
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityLabel={
+                    read > 0
+                      ? `${item.title} — ${read} of ${total} chapters read`
+                      : item.title
+                  }
+                >
+                  <View style={styles.workIcon}>
+                    <Feather name="book" size={16} color={colors.accent} />
+                  </View>
+                  <View style={styles.workText}>
+                    <Text style={styles.workTitle} numberOfLines={2}>
+                      {item.title}
+                    </Text>
+                    <Text style={styles.workMeta} numberOfLines={1}>
+                      {item.workType} · {item.eraLabel} · {item.lengthLabel}
+                    </Text>
+                  </View>
+                  {read > 0 ? (
+                    <View
+                      style={[
+                        styles.readBadge,
+                        fullyRead && styles.readBadgeFull,
+                      ]}
+                    >
+                      {fullyRead ? (
+                        <Feather
+                          name="check"
+                          size={10}
+                          color={colors.background}
+                        />
+                      ) : null}
+                      <Text
+                        style={[
+                          styles.readBadgeLabel,
+                          fullyRead && styles.readBadgeLabelFull,
+                        ]}
+                      >
+                        {fullyRead
+                          ? "Read"
+                          : `${read}/${total > 0 ? total : "?"}`}
+                      </Text>
+                    </View>
+                  ) : null}
+                  <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+                </Pressable>
+              );
+            }}
             ListEmptyComponent={
               query ? (
                 <View style={styles.emptyState}>
@@ -209,6 +286,30 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  readBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 3,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+  },
+  readBadgeFull: {
+    backgroundColor: colors.accent,
+    borderColor: colors.accent,
+  },
+  readBadgeLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 9.5,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.2,
+    textTransform: "uppercase",
+  },
+  readBadgeLabelFull: { color: colors.background },
   workText: { flex: 1, gap: 2 },
   workTitle: {
     fontFamily: fonts.serif,

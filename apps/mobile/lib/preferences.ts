@@ -165,6 +165,41 @@ export type SavedNote = {
   updatedAt: string;
 };
 
+// Typed visit log — one entry per chapter the user opened in the
+// Bible reader. Used by the You tab to show a "where I've been
+// reading" feed. Capped at MAX_HISTORY entries per kind.
+export type BibleHistoryEntry = {
+  id: string;          // composite "<translation>:<book>.<chapter>"
+  translationId: string;
+  bookSlug: string;
+  chapter: number;
+  label: string;       // pre-formatted "Matthew 5" for the activity row
+  visitedAt: string;
+};
+
+// Library visit log — one entry per Person / Work / Guide / Topic
+// page the user opened. Same shape as bible history but typed for
+// editorial content.
+export type LibraryHistoryKind = "person" | "work" | "guide" | "topic";
+
+export type LibraryHistoryEntry = {
+  id: string;          // composite "<kind>:<slug>"
+  kind: LibraryHistoryKind;
+  slug: string;
+  label: string;
+  visitedAt: string;
+};
+
+// Per-chapter scroll position. Used by the chapter reader to restore
+// the user back to where they stopped reading.
+export type WorkReadingPosition = {
+  id: string;          // composite "<workId>::<order>"
+  workId: string;
+  order: number;
+  scrollY: number;
+  lastReadAt: string;
+};
+
 // Saved commentary entry. The user starred a specific entry on a
 // specific verse — keyed by both so highlighting "Augustine on Matt
 // 5:3" doesn't collide with "Augustine on John 1:1". `id` is the
@@ -264,6 +299,15 @@ export type AppPreferences = {
   // persons. The note editor at /note/[targetType]/[targetId].tsx
   // creates/edits entries here.
   notes?: SavedNote[];
+  // Typed reading history — split into Bible (chapters opened in the
+  // reader) and Library (people / works / guides / topics opened). The
+  // legacy `activityDays` continues to drive the streak; these arrays
+  // give a richer "where I've been" feed.
+  bibleReadingHistory?: BibleHistoryEntry[];
+  libraryReadingHistory?: LibraryHistoryEntry[];
+  // Per-chapter scroll positions inside work readers. Keyed by
+  // workId::order. Restored on chapter mount.
+  workReadingPositions?: WorkReadingPosition[];
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -739,6 +783,121 @@ export async function deleteNote(
   const next = (prefs.notes ?? []).filter((n) => n.id !== id);
   await savePrefs({ ...prefs, notes: next });
   void enqueueWrite({ kind: "note.delete", clientId: id });
+}
+
+// --- Reading history (split) ----------------------------------------------
+
+// Trim per-kind history so an avid reader doesn't grow this to
+// thousands of entries. 40 is enough to scroll a long way back and
+// keeps the prefs blob small.
+const MAX_HISTORY_PER_KIND = 40;
+
+export async function getBibleReadingHistory(): Promise<BibleHistoryEntry[]> {
+  const prefs = await loadPrefs();
+  return prefs.bibleReadingHistory ?? [];
+}
+
+export async function recordBibleVisit(opts: {
+  translationId: string;
+  bookSlug: string;
+  chapter: number;
+  label: string;
+}): Promise<void> {
+  const id = `${opts.translationId}:${opts.bookSlug}.${opts.chapter}`;
+  const prefs = await loadPrefs();
+  const existing = prefs.bibleReadingHistory ?? [];
+  // Drop any prior visit to the same chapter so the freshest one
+  // floats to the top.
+  const dedup = existing.filter((e) => e.id !== id);
+  const next: BibleHistoryEntry = {
+    id,
+    translationId: opts.translationId,
+    bookSlug: opts.bookSlug,
+    chapter: opts.chapter,
+    label: opts.label,
+    visitedAt: new Date().toISOString(),
+  };
+  const list = [next, ...dedup].slice(0, MAX_HISTORY_PER_KIND);
+  await savePrefs({ ...prefs, bibleReadingHistory: list });
+}
+
+export async function getLibraryReadingHistory(): Promise<
+  LibraryHistoryEntry[]
+> {
+  const prefs = await loadPrefs();
+  return prefs.libraryReadingHistory ?? [];
+}
+
+export async function recordLibraryVisit(opts: {
+  kind: LibraryHistoryKind;
+  slug: string;
+  label: string;
+}): Promise<void> {
+  const id = `${opts.kind}:${opts.slug}`;
+  const prefs = await loadPrefs();
+  const existing = prefs.libraryReadingHistory ?? [];
+  const dedup = existing.filter((e) => e.id !== id);
+  const next: LibraryHistoryEntry = {
+    id,
+    kind: opts.kind,
+    slug: opts.slug,
+    label: opts.label,
+    visitedAt: new Date().toISOString(),
+  };
+  const list = [next, ...dedup].slice(0, MAX_HISTORY_PER_KIND);
+  await savePrefs({ ...prefs, libraryReadingHistory: list });
+}
+
+export async function clearReadingHistory(): Promise<void> {
+  const prefs = await loadPrefs();
+  await savePrefs({
+    ...prefs,
+    bibleReadingHistory: [],
+    libraryReadingHistory: [],
+  });
+}
+
+// --- Work reading positions ------------------------------------------------
+
+function workPositionId(workId: string, order: number): string {
+  return `${workId}::${order}`;
+}
+
+export async function getWorkPosition(
+  workId: string,
+  order: number,
+): Promise<WorkReadingPosition | undefined> {
+  const prefs = await loadPrefs();
+  const id = workPositionId(workId, order);
+  return (prefs.workReadingPositions ?? []).find((p) => p.id === id);
+}
+
+export async function setWorkPosition(
+  workId: string,
+  order: number,
+  scrollY: number,
+): Promise<void> {
+  const id = workPositionId(workId, order);
+  const prefs = await loadPrefs();
+  const others = (prefs.workReadingPositions ?? []).filter((p) => p.id !== id);
+  // Drop the entry entirely once the user scrolls back to the top —
+  // signals "reset, start fresh next time" rather than persisting 0.
+  if (scrollY <= 4) {
+    await savePrefs({ ...prefs, workReadingPositions: others });
+    return;
+  }
+  const next: WorkReadingPosition = {
+    id,
+    workId,
+    order,
+    scrollY,
+    lastReadAt: new Date().toISOString(),
+  };
+  // Cap at 60 most-recent positions to bound the blob size.
+  await savePrefs({
+    ...prefs,
+    workReadingPositions: [next, ...others].slice(0, 60),
+  });
 }
 
 // --- Favorite persons ------------------------------------------------------

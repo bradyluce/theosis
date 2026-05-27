@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router, useLocalSearchParams } from "expo-router";
+import { useEffect } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -21,6 +22,7 @@ import {
 } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import { recordLibraryVisit } from "@/lib/preferences";
 
 // Topic landing page — the Library tab's curated study-guide surface.
 // Editorial intro + Scripture rail + Fathers grid + Works list + related
@@ -41,6 +43,18 @@ export default function TopicScreen() {
 
   const data = topicQuery.data;
   const paragraphs = data?.topic.body.split("\n\n").filter((p) => p.trim()) ?? [];
+
+  // Record a library visit when the topic resolves; drives the
+  // "Library" filter in the You-tab activity feed.
+  useEffect(() => {
+    if (data && slug) {
+      void recordLibraryVisit({
+        kind: "topic",
+        slug,
+        label: data.topic.title,
+      });
+    }
+  }, [data, slug]);
 
   return (
     <>
