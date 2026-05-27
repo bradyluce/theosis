@@ -13,14 +13,16 @@ import {
   useAuth,
   useSignIn,
   useSignUp,
+  useSSO,
   useUser,
 } from "@clerk/clerk-expo";
 import { Stack } from "expo-router";
-import { useState } from "react";
+import * as WebBrowser from "expo-web-browser";
+import { Platform } from "react-native";
+import { useEffect, useState } from "react";
 import {
   Alert,
   KeyboardAvoidingView,
-  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -95,8 +97,27 @@ export default function AuthDebugScreen() {
 
 function SignedOutView() {
   const [mode, setMode] = useState<"sign-in" | "sign-up">("sign-in");
+
+  // Warm up / cool down the browser session so the OAuth handoff doesn't
+  // need to spin up a cold Safari View Controller / Chrome Custom Tab on
+  // first tap. Clerk's docs recommend this; harmless if it errors.
+  useEffect(() => {
+    void WebBrowser.warmUpAsync().catch(() => {});
+    return () => {
+      void WebBrowser.coolDownAsync().catch(() => {});
+    };
+  }, []);
+
   return (
     <View style={{ gap: spacing.md }}>
+      <OAuthButtons />
+
+      <View style={styles.divider}>
+        <View style={styles.dividerLine} />
+        <Text style={styles.dividerLabel}>OR EMAIL</Text>
+        <View style={styles.dividerLine} />
+      </View>
+
       <View style={styles.modeRow}>
         <Pressable
           onPress={() => setMode("sign-in")}
@@ -133,6 +154,92 @@ function SignedOutView() {
       </View>
 
       {mode === "sign-in" ? <SignInForm /> : <SignUpForm />}
+    </View>
+  );
+}
+
+// Apple + Google sign-in via Clerk's useSSO. Each tap opens the system
+// browser (or in-app Safari View on iOS) at Clerk's OAuth start URL,
+// returns the session, and setActive flips the local Clerk session.
+// The redirect URL `mobile://oauth-native-callback` is configured in
+// the Clerk dashboard for this instance.
+function OAuthButtons() {
+  const { startSSOFlow } = useSSO();
+  const [busyProvider, setBusyProvider] = useState<
+    "apple" | "google" | null
+  >(null);
+
+  async function handle(
+    provider: "apple" | "google",
+    strategy: "oauth_apple" | "oauth_google",
+  ) {
+    if (busyProvider) return;
+    setBusyProvider(provider);
+    try {
+      const result = await startSSOFlow({
+        strategy,
+        redirectUrl: "mobile://oauth-native-callback",
+      });
+      if (result.createdSessionId && result.setActive) {
+        await result.setActive({ session: result.createdSessionId });
+      } else if (
+        result.authSessionResult &&
+        result.authSessionResult.type === "dismiss"
+      ) {
+        // User closed the browser — silent no-op.
+      } else {
+        Alert.alert(
+          "Sign-in incomplete",
+          "The OAuth flow returned without a session. Try again, or use email.",
+        );
+      }
+    } catch (err: unknown) {
+      const message =
+        err && typeof err === "object" && "errors" in err
+          ? JSON.stringify((err as { errors: unknown }).errors)
+          : String(err);
+      Alert.alert(`${provider} sign-in failed`, message);
+    } finally {
+      setBusyProvider(null);
+    }
+  }
+
+  return (
+    <View style={{ gap: spacing.sm }}>
+      {Platform.OS === "ios" ? (
+        <Pressable
+          onPress={() => handle("apple", "oauth_apple")}
+          disabled={busyProvider !== null}
+          style={({ pressed }) => [
+            styles.oauthButton,
+            styles.oauthButtonApple,
+            busyProvider !== null && styles.buttonDisabled,
+            pressed && styles.buttonPressed,
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel="Continue with Apple"
+        >
+          <Text style={styles.oauthButtonAppleLabel}>
+            {busyProvider === "apple" ? "Opening…" : " Continue with Apple"}
+          </Text>
+        </Pressable>
+      ) : null}
+      <Pressable
+        onPress={() => handle("google", "oauth_google")}
+        disabled={busyProvider !== null}
+        style={({ pressed }) => [
+          styles.oauthButton,
+          styles.oauthButtonGoogle,
+          busyProvider !== null && styles.buttonDisabled,
+          pressed && styles.buttonPressed,
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel="Continue with Google"
+      >
+        <Text style={styles.oauthButtonGoogleLabel}>
+          {busyProvider === "google" ? "Opening…" : "Continue with Google"}
+        </Text>
+      </Pressable>
     </View>
   );
 }
@@ -454,6 +561,51 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: colors.ink,
     lineHeight: 18,
+  },
+  divider: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm,
+    paddingVertical: spacing.xs,
+  },
+  dividerLine: {
+    flex: 1,
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: colors.line,
+  },
+  dividerLabel: {
+    fontSize: 10,
+    color: colors.inkSoft,
+    letterSpacing: 1.8,
+    textTransform: "uppercase",
+    fontWeight: "600",
+  },
+  oauthButton: {
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.lg,
+    borderRadius: radii.card,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  oauthButtonApple: {
+    backgroundColor: "#000000",
+  },
+  oauthButtonAppleLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 16,
+    color: "#ffffff",
+    fontWeight: "600",
+  },
+  oauthButtonGoogle: {
+    backgroundColor: colors.surface,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+  },
+  oauthButtonGoogleLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 16,
+    color: colors.ink,
+    fontWeight: "600",
   },
   modeRow: {
     flexDirection: "row",
