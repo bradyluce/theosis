@@ -152,7 +152,13 @@ export default function RootLayout() {
           {/* Temporary Phase 1 verification screen. Reachable from
               Settings → Account; also used as the sign-in screen in
               Phase 3 onboarding step 10. */}
-          <Stack.Screen name="auth-debug" options={{ headerShown: true }} />
+          <Stack.Screen name="auth-debug" options={{ headerShown: false }} />
+          {/* Patron-saint searchable picker. Modal so we get the iOS
+              swipe-down dismiss + Settings/onboarding screen behind. */}
+          <Stack.Screen
+            name="saint-picker"
+            options={{ presentation: "modal", headerShown: false }}
+          />
           {/* Parish locator. parishes is the list/search entry, reachable
               from the You tab. parishes/[state]/[slug] is the per-parish
               detail screen pushed when a row in the list is tapped. */}
