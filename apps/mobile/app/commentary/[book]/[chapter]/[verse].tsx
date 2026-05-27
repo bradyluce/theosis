@@ -18,11 +18,13 @@ import { Pill } from "@/components/theosis/pill";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 import {
+  type ProfilePrefs,
   addSavedCommentary,
   getProfilePrefs,
   getSavedCommentary,
   removeSavedCommentary,
   savedCommentaryId,
+  textSizeScale,
 } from "@/lib/preferences";
 
 // Verse commentary modal. Presented modally from the Bible reader when the
@@ -115,9 +117,11 @@ export default function CommentaryModal() {
 
   // User's commentary-fathers config — hides certain Fathers entirely
   // and reorders the rest. Loaded on focus so changes from the picker
-  // route are reflected when the user comes back.
+  // route are reflected when the user comes back. textSize is loaded
+  // alongside so excerpt text scales with the Bible reader's setting.
   const [orderedSlugs, setOrderedSlugs] = useState<string[]>([]);
   const [hiddenSlugs, setHiddenSlugs] = useState<string[]>([]);
+  const [textSize, setTextSize] = useState<ProfilePrefs["textSize"]>("md");
   useFocusEffect(
     useCallback(() => {
       let canceled = false;
@@ -125,11 +129,24 @@ export default function CommentaryModal() {
         if (canceled) return;
         setOrderedSlugs(p.commentaryFathers?.orderedSlugs ?? []);
         setHiddenSlugs(p.commentaryFathers?.hiddenSlugs ?? []);
+        setTextSize(p.textSize ?? "md");
       });
       return () => {
         canceled = true;
       };
     }, []),
+  );
+
+  // Scaled font + line height for the commentary excerpt — uses the
+  // same multiplier as the Bible reader so the typographic relationship
+  // between verse and gloss stays proportional.
+  const scale = textSizeScale(textSize);
+  const scaledExcerpt = useMemo(
+    () => ({
+      fontSize: 15 * scale,
+      lineHeight: 25 * scale,
+    }),
+    [scale],
   );
 
   // Set of slugs the user has saved on this verse. Tracked separately
@@ -447,7 +464,9 @@ export default function CommentaryModal() {
                             />
                           </Pressable>
                         </View>
-                        <Text style={styles.entryExcerpt}>{entry.excerpt}</Text>
+                        <Text style={[styles.entryExcerpt, scaledExcerpt]}>
+                          {entry.excerpt}
+                        </Text>
                         {entry.tags.length > 0 ? (
                           <View style={styles.tagRow}>
                             {entry.tags.slice(0, 3).map((tag) => (

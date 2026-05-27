@@ -1,22 +1,21 @@
-// Commentary Fathers picker — customize which Fathers' commentary
-// appears under each verse, in what order, and which to hide.
+// Commentary Fathers picker — customize whose voices appear under
+// each verse, in what order, and which to silence.
 //
-// Data model in ProfilePrefs:
-//   commentaryFathers: {
-//     orderedSlugs?: string[]  // explicit display order, highest first
-//     hiddenSlugs?: string[]   // Fathers the user never wants to see
-//     quickFilter?: string     // remembered quick-filter for the picker UI
-//   }
+// 349 Fathers is a lot to scroll. The picker now leads with:
+//   - Common orderings — one-tap presets (Chrysostom & Cappadocians,
+//     Apostolic & Pre-Nicene, Desert & Hesychast, Liturgical Greats,
+//     Modern Russian, Scripture Commentators). Each sets orderedSlugs
+//     to a curated head followed by everyone else, so the user lands
+//     on the Fathers they recognize at the top.
+//   - Pinned at the top — chips showing the first 8 ordered Fathers
+//     with a quick × to remove from the explicit ordering.
+//   - Quick filters — All / Eastern / Pre-Nicene / Modern (mass-hide
+//     by era/region).
+//   - Search input — filters the long list by name.
 //
-// The verse commentary modal consults both lists at render time. When
-// `orderedSlugs` is empty the catalog's natural rank wins. When
-// `hiddenSlugs` is non-empty those Fathers vanish from every verse.
-//
-// Quick filters mass-hide Fathers based on era / region. "Pre-Nicene"
-// keeps Fathers whose era label includes "Apostolic", "2nd century",
-// or "3rd century"; "Eastern" hides the Western Latin Fathers; etc.
-// Filters are one-click *actions* — apply once, then the user can
-// further tweak.
+// Storage in ProfilePrefs.commentaryFathers stays the same:
+//   { orderedSlugs?: string[], hiddenSlugs?: string[], quickFilter?: string }
+// — the verse commentary modal reads both at render time.
 
 import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
@@ -30,6 +29,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TextInput,
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -47,17 +47,133 @@ import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 import { getProfilePrefs, updateProfilePrefs } from "@/lib/preferences";
 
-// Latin / Western Fathers — used by the "Eastern" quick filter to mass-
-// hide non-Eastern voices. The slugs match what ships in the commentary
-// catalog. New Latin Fathers should be added here when they ingest.
+// Common orderings — one-tap presets that pin the most-cited Fathers
+// to the top in a sensible group order. Slugs that don't exist in the
+// catalog are silently ignored when applied. The display order of
+// presets in the UI is the editorial order — Chrysostom & Cappadocians
+// first because that's what most Orthodox lay readers want.
+const PRESET_ORDERINGS = [
+  {
+    id: "chrysostom-cappadocian",
+    label: "Chrysostom & Cappadocians",
+    description:
+      "Golden-mouthed homilies and the great Trinitarian Fathers.",
+    slugs: [
+      "john-chrysostom",
+      "basil-the-great",
+      "gregory-of-nazianzus",
+      "gregory-of-nyssa",
+      "gregory-the-theologian",
+      "athanasius-the-great",
+      "cyril-of-jerusalem",
+      "cyril-of-alexandria",
+    ],
+  },
+  {
+    id: "apostolic-prenicene",
+    label: "Apostolic & Pre-Nicene",
+    description: "The earliest Fathers — disciples of the Apostles forward.",
+    slugs: [
+      "ignatius-of-antioch",
+      "polycarp-of-smyrna",
+      "clement-of-rome",
+      "justin-martyr",
+      "irenaeus-of-lyons",
+      "clement-of-alexandria",
+      "origen",
+      "hippolytus-of-rome",
+      "tertullian",
+      "cyprian-of-carthage",
+      "athanasius-the-great",
+    ],
+  },
+  {
+    id: "desert-hesychast",
+    label: "Desert & Hesychast",
+    description:
+      "Ascetical wisdom — the Desert Fathers and the Philokalic line.",
+    slugs: [
+      "anthony-the-great",
+      "antony-the-great",
+      "macarius-the-egyptian",
+      "pseudo-macarius",
+      "mark-the-ascetic",
+      "diadochos-of-photiki",
+      "isaac-of-nineveh",
+      "john-cassian",
+      "maximus-the-confessor",
+      "john-of-damascus",
+      "symeon-the-new-theologian",
+      "gregory-of-sinai",
+      "gregory-palamas",
+    ],
+  },
+  {
+    id: "liturgical-greats",
+    label: "Liturgical Greats",
+    description:
+      "Voices behind the Divine Liturgy and the great hymnographers.",
+    slugs: [
+      "john-chrysostom",
+      "basil-the-great",
+      "john-of-damascus",
+      "andrew-of-crete",
+      "romanos-the-melodist",
+      "ephraim-the-syrian",
+      "nicholas-cabasilas",
+    ],
+  },
+  {
+    id: "modern-russian",
+    label: "Modern Russian",
+    description:
+      "19th–20th century Russian and Greek voices — Theophan, Sophrony, Schmemann.",
+    slugs: [
+      "theophan-the-recluse",
+      "ignatius-brianchaninov",
+      "anthony-bloom",
+      "alexander-schmemann",
+      "justin-popovich",
+      "porphyrios-of-kafsokalivia",
+      "paisios-the-athonite",
+      "kallistos-ware",
+      "vladimir-lossky",
+      "silouan-the-athonite",
+      "sophrony-sakharov",
+    ],
+  },
+  {
+    id: "scripture-commentators",
+    label: "Scripture Commentators",
+    description:
+      "Verse-by-verse exegetes who built the Patristic Bible tradition.",
+    slugs: [
+      "john-chrysostom",
+      "theophylact-of-ohrid",
+      "cyril-of-alexandria",
+      "augustine",
+      "jerome",
+      "andreas-of-caesarea",
+      "ambrose-of-milan",
+      "origen",
+      "ephraim-the-syrian",
+      "bede",
+    ],
+  },
+];
+
+// Latin / Western Fathers — used by the "Eastern" quick filter to
+// mass-hide non-Eastern voices.
 const WESTERN_FATHER_SLUGS = new Set([
   "augustine",
+  "ambrose-of-milan",
   "ambrose",
   "tertullian",
   "cyprian",
+  "cyprian-of-carthage",
+  "hippolytus-of-rome",
   "hippolytus",
   "lactantius",
-  "methodius", // Methodius of Olympus — Greek but often grouped Western
   "leo-the-great",
   "leo-i",
   "novatian",
@@ -66,16 +182,20 @@ const WESTERN_FATHER_SLUGS = new Set([
   "arnobius",
   "venantius",
   "caius",
+  "caius-of-rome",
   "dionysius-of-rome",
   "malchion",
   "minucius-felix",
   "jerome",
+  "gregory-the-great",
+  "bede",
+  "alcuin",
+  "anselm-canterbury",
 ]);
 
 // Pre-Nicene era labels — matched as substrings against Person.eraLabel
-// when applying the "Pre-Nicene" filter. The seed data isn't perfectly
-// consistent (some say "2nd century", others "Apostolic Father") so we
-// match any of these phrases.
+// when applying the "Pre-Nicene" filter. Seed labels aren't perfectly
+// consistent so we match any of these phrases.
 const PRE_NICENE_LABEL_FRAGMENTS = [
   "apostolic",
   "1st century",
@@ -111,14 +231,16 @@ const QUICK_FILTERS: QuickFilter[] = [
   {
     id: "eastern",
     label: "Only Eastern",
-    description: "Hide Western Latin Fathers (Augustine, Tertullian, etc.).",
+    description: "Hide Western Latin Fathers.",
     apply: (people) =>
-      people.filter((p) => WESTERN_FATHER_SLUGS.has(p.slug)).map((p) => p.slug),
+      people
+        .filter((p) => WESTERN_FATHER_SLUGS.has(p.slug))
+        .map((p) => p.slug),
   },
   {
     id: "pre-nicene",
     label: "Only Pre-Nicene",
-    description: "Hide everyone after Nicaea I (325).",
+    description: "Hide Fathers after Nicaea I (325).",
     apply: (people) =>
       people
         .filter((p) => {
@@ -130,7 +252,7 @@ const QUICK_FILTERS: QuickFilter[] = [
   {
     id: "post-patristic-only",
     label: "Only Modern",
-    description: "Hide patristic-era Fathers; keep modern commentary.",
+    description: "Hide patristic-era Fathers.",
     apply: (people) =>
       people
         .filter((p) => {
@@ -140,6 +262,8 @@ const QUICK_FILTERS: QuickFilter[] = [
         .map((p) => p.slug),
   },
 ];
+
+const PINNED_PREVIEW_COUNT = 8;
 
 export default function CommentaryFathersScreen() {
   const api = getApi();
@@ -152,8 +276,8 @@ export default function CommentaryFathersScreen() {
   const [orderedSlugs, setOrderedSlugs] = useState<string[]>([]);
   const [hiddenSlugs, setHiddenSlugs] = useState<string[]>([]);
   const [quickFilterId, setQuickFilterId] = useState<QuickFilterId>("all");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  // Initial load — pull saved config and prime state.
   useEffect(() => {
     let canceled = false;
     void getProfilePrefs().then((p) => {
@@ -169,18 +293,26 @@ export default function CommentaryFathersScreen() {
     };
   }, []);
 
-  // Memoize allPeople against the query data so its identity is stable
-  // between renders — without this, every downstream useMemo recomputes
-  // on every render even when the catalog hasn't changed.
-  const allPeople = useMemo<Person[]>(
-    () => catalogQuery.data?.people ?? [],
-    [catalogQuery.data?.people],
-  );
+  // The commentary catalog occasionally has two Person rows with the
+  // same slug (e.g. "evagrius-ponticus" appears twice — once as a
+  // primary entry, once as a Catena cross-reference). React rejects
+  // duplicate `key` props on siblings, so we dedupe by slug here.
+  // First occurrence wins, which preserves the catalog's natural rank.
+  const allPeople = useMemo<Person[]>(() => {
+    const raw = catalogQuery.data?.people ?? [];
+    const seen = new Set<string>();
+    const unique: Person[] = [];
+    for (const p of raw) {
+      if (seen.has(p.slug)) continue;
+      seen.add(p.slug);
+      unique.push(p);
+    }
+    return unique;
+  }, [catalogQuery.data?.people]);
 
-  // The display list = orderedSlugs first (in user-set order), then any
-  // catalog people not yet in the order, alphabetical for stability.
-  // Hidden ones still render in this list — they just show in a muted
-  // state with an eye-off glyph so the user can unhide.
+  // Display list — orderedSlugs first (in user-set order), then
+  // alphabetical remainder. Hidden ones still render here so the user
+  // can find and unhide them.
   const displayList = useMemo<Person[]>(() => {
     const slugToPerson = new Map(allPeople.map((p) => [p.slug, p]));
     const ordered: Person[] = [];
@@ -198,8 +330,30 @@ export default function CommentaryFathersScreen() {
     return [...ordered, ...remaining];
   }, [allPeople, orderedSlugs]);
 
-  // Persist on every mutation — debounced via the call site (mutators
-  // wrapped in `commit()`). No need for a separate save button.
+  // Pinned preview — first N from the user's explicit ordering. When
+  // ordering is empty (default), this section hides; the presets above
+  // are the discovery path.
+  const pinned = useMemo<Person[]>(() => {
+    const slugToPerson = new Map(allPeople.map((p) => [p.slug, p]));
+    return orderedSlugs
+      .slice(0, PINNED_PREVIEW_COUNT)
+      .map((slug) => slugToPerson.get(slug))
+      .filter((p): p is Person => Boolean(p));
+  }, [allPeople, orderedSlugs]);
+
+  // Filtered + searched view of the long list. Search matches name +
+  // honorific; era label too so "cappadocian" finds the right group.
+  const filteredList = useMemo<Person[]>(() => {
+    const q = searchQuery.trim().toLowerCase();
+    if (!q) return displayList;
+    return displayList.filter((p) => {
+      const name = (p.honorific ? `${p.honorific} ${p.name}` : p.name)
+        .toLowerCase();
+      const era = p.eraLabel?.toLowerCase() ?? "";
+      return name.includes(q) || era.includes(q) || p.slug.includes(q);
+    });
+  }, [displayList, searchQuery]);
+
   async function commit(next: {
     orderedSlugs?: string[];
     hiddenSlugs?: string[];
@@ -224,8 +378,6 @@ export default function CommentaryFathersScreen() {
   }
 
   function moveUp(slug: string) {
-    // Promote into orderedSlugs if not yet explicitly ordered; move up
-    // one position in the explicit order otherwise.
     const baseOrder = orderedSlugs.length
       ? orderedSlugs
       : displayList.map((p) => p.slug);
@@ -256,6 +408,22 @@ export default function CommentaryFathersScreen() {
     void commit({ hiddenSlugs: toHide, quickFilter: filter.id });
   }
 
+  function applyPreset(preset: typeof PRESET_ORDERINGS[number]) {
+    const availableSlugs = new Set(allPeople.map((p) => p.slug));
+    // Keep only the preset slugs that exist in the catalog (silently
+    // ignore unknowns). The display-list useMemo above handles "the
+    // rest" — preserving alphabetical order for non-pinned fathers.
+    const validHead = preset.slugs.filter((s) => availableSlugs.has(s));
+    setOrderedSlugs(validHead);
+    void commit({ orderedSlugs: validHead });
+  }
+
+  function unpin(slug: string) {
+    const next = orderedSlugs.filter((s) => s !== slug);
+    setOrderedSlugs(next);
+    void commit({ orderedSlugs: next });
+  }
+
   function resetAll() {
     Alert.alert(
       "Reset commentary fathers?",
@@ -269,6 +437,7 @@ export default function CommentaryFathersScreen() {
             setOrderedSlugs([]);
             setHiddenSlugs([]);
             setQuickFilterId("all");
+            setSearchQuery("");
             await updateProfilePrefs({
               commentaryFathers: {
                 orderedSlugs: [],
@@ -285,6 +454,7 @@ export default function CommentaryFathersScreen() {
   const visibleCount = displayList.filter(
     (p) => !hiddenSlugs.includes(p.slug),
   ).length;
+  const totalCount = displayList.length;
 
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
@@ -321,6 +491,7 @@ export default function CommentaryFathersScreen() {
       <ScrollView
         style={styles.scroll}
         contentContainerStyle={styles.scrollContent}
+        keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
       >
         {/* Hero */}
@@ -329,16 +500,90 @@ export default function CommentaryFathersScreen() {
           <Text style={styles.title}>Fathers in commentary</Text>
           <Text style={styles.subtitle}>
             Choose whose voices appear under each verse, in what order, and
-            which to silence. Quick filters mass-hide by era or region —
-            then refine the list to taste.
+            which to silence. Start with a common ordering, then tune to
+            taste.
           </Text>
           <GiltRule style={{ alignSelf: "flex-start", marginTop: spacing.md }} />
         </View>
 
-        {/* Quick filters */}
+        {/* Common orderings — presets */}
         <Card>
           <SectionHeader
             eyebrow="One tap"
+            title="Common orderings"
+            rule
+          />
+          <Text style={styles.cardHint}>
+            Apply a curated head order. You can refine afterward.
+          </Text>
+          <View style={styles.presetGrid}>
+            {PRESET_ORDERINGS.map((preset) => (
+              <Pressable
+                key={preset.id}
+                onPress={() => applyPreset(preset)}
+                style={({ pressed }) => [
+                  styles.presetCard,
+                  pressed && { opacity: 0.85 },
+                ]}
+                accessibilityRole="button"
+                accessibilityLabel={`${preset.label}. ${preset.description}`}
+              >
+                <Text style={styles.presetLabel}>{preset.label}</Text>
+                <Text style={styles.presetDescription}>
+                  {preset.description}
+                </Text>
+              </Pressable>
+            ))}
+          </View>
+        </Card>
+
+        {/* Pinned chips — only when explicit ordering is set */}
+        {pinned.length > 0 ? (
+          <Card>
+            <SectionHeader
+              eyebrow="Pinned"
+              title="At the top of your list"
+              rule
+            />
+            <Text style={styles.cardHint}>
+              These appear first under every verse. Tap × to demote.
+            </Text>
+            <View style={styles.pinnedRow}>
+              {pinned.map((person, idx) => (
+                <View key={person.slug} style={styles.pinnedChip}>
+                  <Text style={styles.pinnedPosition}>
+                    {String(idx + 1).padStart(2, "0")}
+                  </Text>
+                  <Text
+                    style={styles.pinnedName}
+                    numberOfLines={1}
+                  >
+                    {person.honorific
+                      ? `${person.honorific} ${person.name.split(",")[0]}`
+                      : person.name.split(",")[0]}
+                  </Text>
+                  <Pressable
+                    onPress={() => unpin(person.slug)}
+                    hitSlop={6}
+                    style={({ pressed }) => [
+                      styles.pinnedRemove,
+                      pressed && { opacity: 0.6 },
+                    ]}
+                    accessibilityRole="button"
+                    accessibilityLabel={`Remove ${person.name} from pinned`}
+                  >
+                    <Feather name="x" size={11} color={colors.inkSoft} />
+                  </Pressable>
+                </View>
+              ))}
+            </View>
+          </Card>
+        ) : null}
+
+        {/* Quick filters */}
+        <Card>
+          <SectionHeader
+            eyebrow="Mass hide"
             title="Quick filters"
             rule
           />
@@ -375,17 +620,28 @@ export default function CommentaryFathersScreen() {
           </Text>
         </Card>
 
-        {/* Fathers list */}
+        {/* Fathers list with search */}
         <Card>
           <SectionHeader
-            eyebrow={`${visibleCount} of ${displayList.length} visible`}
+            eyebrow={`${visibleCount} of ${totalCount} visible`}
             title="The chorus"
             rule
           />
-          <Text style={styles.listHint}>
-            Tap the eye to hide a Father from every verse. Use the arrows
-            to reorder.
+          <Text style={styles.cardHint}>
+            349 fathers. Search to find a specific voice, or scroll. Tap
+            the eye to hide; arrows to reorder.
           </Text>
+
+          <TextInput
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+            placeholder="Search by name, era, or slug"
+            placeholderTextColor={colors.inkSoft}
+            style={styles.searchInput}
+            autoCorrect={false}
+            autoCapitalize="none"
+            returnKeyType="search"
+          />
 
           {catalogQuery.isLoading ? (
             <View style={styles.loading}>
@@ -399,11 +655,25 @@ export default function CommentaryFathersScreen() {
             </Text>
           ) : null}
 
+          {filteredList.length === 0 && !catalogQuery.isLoading ? (
+            <Text style={styles.emptySearch}>
+              No fathers match &quot;{searchQuery}&quot;.
+            </Text>
+          ) : null}
+
           <View style={styles.list}>
-            {displayList.map((person, index) => {
+            {filteredList.map((person, indexInFiltered) => {
               const isHidden = hiddenSlugs.includes(person.slug);
-              const isFirst = index === 0;
-              const isLast = index === displayList.length - 1;
+              // We compute up/down enabled-ness against the original
+              // display order, not the filtered view, so reordering
+              // still walks the full list rather than the search subset.
+              const fullIndex = displayList.findIndex(
+                (p) => p.slug === person.slug,
+              );
+              const isFirst = fullIndex === 0;
+              const isLast = fullIndex === displayList.length - 1;
+              // Unused but reserved for future tap-to-expand details.
+              void indexInFiltered;
               return (
                 <View
                   key={person.slug}
@@ -431,7 +701,7 @@ export default function CommentaryFathersScreen() {
                   <Pressable
                     onPress={() => moveUp(person.slug)}
                     disabled={isFirst}
-                    hitSlop={8}
+                    hitSlop={6}
                     style={({ pressed }) => [
                       styles.iconButton,
                       isFirst && styles.iconButtonDisabled,
@@ -449,7 +719,7 @@ export default function CommentaryFathersScreen() {
                   <Pressable
                     onPress={() => moveDown(person.slug)}
                     disabled={isLast}
-                    hitSlop={8}
+                    hitSlop={6}
                     style={({ pressed }) => [
                       styles.iconButton,
                       isLast && styles.iconButtonDisabled,
@@ -466,7 +736,7 @@ export default function CommentaryFathersScreen() {
                   </Pressable>
                   <Pressable
                     onPress={() => toggleHidden(person.slug)}
-                    hitSlop={8}
+                    hitSlop={6}
                     style={({ pressed }) => [
                       styles.iconButton,
                       isHidden && styles.iconButtonHidden,
@@ -491,7 +761,6 @@ export default function CommentaryFathersScreen() {
           </View>
         </Card>
 
-        {/* Reset */}
         <Pressable
           onPress={resetAll}
           style={({ pressed }) => [
@@ -546,7 +815,85 @@ const styles = StyleSheet.create({
     lineHeight: 21,
     marginTop: spacing.xs,
   },
+  cardHint: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
+    color: colors.inkSoft,
+    marginTop: spacing.sm,
+    lineHeight: 19,
+  },
 
+  // Preset cards
+  presetGrid: {
+    gap: spacing.sm,
+    marginTop: spacing.md,
+  },
+  presetCard: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.md,
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: "rgba(212, 168, 87, 0.4)",
+    backgroundColor: "rgba(212, 168, 87, 0.06)",
+    gap: 4,
+  },
+  presetLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 16,
+    color: colors.ink,
+    letterSpacing: -0.2,
+    fontWeight: "600",
+  },
+  presetDescription: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 12.5,
+    color: colors.inkMuted,
+    lineHeight: 18,
+  },
+
+  // Pinned chips
+  pinnedRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: spacing.xs,
+    marginTop: spacing.md,
+  },
+  pinnedChip: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    paddingLeft: 8,
+    paddingRight: 4,
+    paddingVertical: 6,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: "rgba(212, 168, 87, 0.55)",
+    backgroundColor: colors.accentSoft,
+  },
+  pinnedPosition: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 12,
+    color: colors.accent,
+    letterSpacing: -0.5,
+  },
+  pinnedName: {
+    fontFamily: fonts.serif,
+    fontSize: 13,
+    color: colors.ink,
+    maxWidth: 140,
+    letterSpacing: -0.1,
+  },
+  pinnedRemove: {
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: colors.surface,
+    marginLeft: 2,
+  },
+
+  // Quick filter chips
   filterRow: {
     flexDirection: "row",
     flexWrap: "wrap",
@@ -582,12 +929,17 @@ const styles = StyleSheet.create({
     lineHeight: 19,
   },
 
-  listHint: {
-    fontFamily: fonts.serifItalic,
-    fontSize: 12,
-    color: colors.inkSoft,
-    marginTop: spacing.sm,
-    lineHeight: 18,
+  searchInput: {
+    marginTop: spacing.md,
+    borderRadius: radii.card,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.background,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 10,
+    fontFamily: fonts.serif,
+    fontSize: 15,
+    color: colors.ink,
   },
   loading: { paddingVertical: spacing.xl, alignItems: "center" },
   error: {
@@ -595,6 +947,13 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.error,
     paddingVertical: spacing.md,
+  },
+  emptySearch: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 14,
+    color: colors.inkSoft,
+    textAlign: "center",
+    paddingVertical: spacing.lg,
   },
   list: { gap: spacing.xs, marginTop: spacing.md },
   personRow: {

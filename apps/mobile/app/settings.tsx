@@ -210,6 +210,28 @@ export default function SettingsScreen() {
                 );
               })}
             </FieldGroup>
+
+            <FieldGroup label="Text size">
+              {(
+                [
+                  { value: "sm", label: "Small", description: "Tighter prose, more on screen." },
+                  { value: "md", label: "Medium", description: "Default — comfortable for most." },
+                  { value: "lg", label: "Large", description: "Roomier for longer reading." },
+                  { value: "xl", label: "Extra large", description: "Generous — easy on the eyes." },
+                ] as const
+              ).map((opt) => {
+                const selected = (prefs.textSize ?? "md") === opt.value;
+                return (
+                  <ChoiceTile
+                    key={opt.value}
+                    label={opt.label}
+                    description={opt.description}
+                    selected={selected}
+                    onPress={() => update({ textSize: opt.value })}
+                  />
+                );
+              })}
+            </FieldGroup>
           </View>
         </Card>
 

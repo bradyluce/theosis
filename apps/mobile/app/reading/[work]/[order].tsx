@@ -1,6 +1,8 @@
+import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { LinearGradient } from "expo-linear-gradient";
-import { Stack, router, useLocalSearchParams } from "expo-router";
+import { Stack, router, useFocusEffect, useLocalSearchParams } from "expo-router";
+import { useCallback, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -13,6 +15,14 @@ import {
 import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import {
+  addCompletion,
+  getProfilePrefs,
+  isCompleted,
+  removeCompletion,
+  textSizeScale,
+  type ProfilePrefs,
+} from "@/lib/preferences";
 
 // Chapter reader — the full-screen prose page. Editorial treatment:
 // kicker eyebrow with the chapter label, italic display heading with
@@ -33,6 +43,59 @@ export default function ChapterReaderScreen() {
     enabled: Boolean(workId) && Number.isFinite(order),
     staleTime: 60 * 60 * 1000,
   });
+
+  // Composite slug for the completion mark — work + chapter order
+  // uniquely identifies a chapter inside the corpus.
+  const completionSlug = `${workId}::${order}`;
+  const [completed, setCompleted] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [textSize, setTextSize] = useState<ProfilePrefs["textSize"]>("md");
+
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      Promise.all([
+        isCompleted("work-chapter", completionSlug),
+        getProfilePrefs(),
+      ]).then(([isDone, p]) => {
+        if (canceled) return;
+        setCompleted(isDone);
+        setTextSize(p.textSize ?? "md");
+      });
+      return () => {
+        canceled = true;
+      };
+    }, [completionSlug]),
+  );
+
+  async function toggleCompleted() {
+    if (busy) return;
+    setBusy(true);
+    try {
+      if (completed) {
+        await removeCompletion("work-chapter", completionSlug);
+        setCompleted(false);
+      } else {
+        await addCompletion("work-chapter", completionSlug);
+        setCompleted(true);
+      }
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  // Scale paragraph and section-heading fontSizes to honor the user's
+  // textSize preference — the same multiplier used in the Bible reader
+  // so prose feels consistent across the app.
+  const scale = textSizeScale(textSize);
+  const scaledParagraph = useMemo(
+    () => ({ fontSize: 18 * scale, lineHeight: 32 * scale }),
+    [scale],
+  );
+  const scaledSectionHeading = useMemo(
+    () => ({ fontSize: 20 * scale, lineHeight: 26 * scale }),
+    [scale],
+  );
 
   return (
     <>
@@ -109,7 +172,9 @@ export default function ChapterReaderScreen() {
               {chapterQuery.data.chapter.sections.map((section, sectionIdx) => (
                 <View key={`section-${sectionIdx}`} style={styles.section}>
                   {section.heading ? (
-                    <Text style={styles.sectionHeading}>{section.heading}</Text>
+                    <Text style={[styles.sectionHeading, scaledSectionHeading]}>
+                      {section.heading}
+                    </Text>
                   ) : null}
                   {section.paragraphs.map((paragraph, pIdx) => {
                     const isFirstParagraph = sectionIdx === 0 && pIdx === 0;
@@ -122,7 +187,7 @@ export default function ChapterReaderScreen() {
                       return (
                         <Text
                           key={`p-${sectionIdx}-${pIdx}`}
-                          style={styles.paragraph}
+                          style={[styles.paragraph, scaledParagraph]}
                         >
                           {paragraph.number !== undefined ? (
                             <Text style={styles.paragraphNumber}>
@@ -138,7 +203,7 @@ export default function ChapterReaderScreen() {
                     return (
                       <Text
                         key={`p-${sectionIdx}-${pIdx}`}
-                        style={styles.paragraph}
+                        style={[styles.paragraph, scaledParagraph]}
                       >
                         {paragraph.number !== undefined ? (
                           <Text style={styles.paragraphNumber}>
@@ -152,6 +217,45 @@ export default function ChapterReaderScreen() {
                   })}
                 </View>
               ))}
+
+              {/* Mark-as-read CTA — full-width gilt pill at the bottom of
+                  the chapter. Flips to a "✓ Marked as read" badge with a
+                  small undo affordance once tapped. The state is loaded
+                  on focus so re-entering the chapter shows the right
+                  completion status. */}
+              <View style={styles.markReadBlock}>
+                <Pressable
+                  onPress={toggleCompleted}
+                  disabled={busy}
+                  style={({ pressed }) => [
+                    styles.markReadButton,
+                    completed && styles.markReadButtonDone,
+                    busy && { opacity: 0.5 },
+                    pressed && { opacity: 0.85 },
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: completed }}
+                  accessibilityLabel={
+                    completed
+                      ? "Unmark this chapter as read"
+                      : "Mark this chapter as read"
+                  }
+                >
+                  <Feather
+                    name="check"
+                    size={15}
+                    color={completed ? colors.background : colors.accent}
+                  />
+                  <Text
+                    style={[
+                      styles.markReadLabel,
+                      completed && styles.markReadLabelDone,
+                    ]}
+                  >
+                    {completed ? "Read · tap to unmark" : "Mark as read"}
+                  </Text>
+                </Pressable>
+              </View>
 
               {/* Colophon — gilt rule + "End of <label>" in italic small caps */}
               <View style={styles.colophon}>
@@ -252,6 +356,35 @@ const styles = StyleSheet.create({
     color: colors.oxbloodInk,
     letterSpacing: -2,
   },
+
+  // Mark-as-read CTA — full-width gilt pill at chapter end
+  markReadBlock: {
+    paddingTop: spacing.xl,
+  },
+  markReadButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.sm,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.lg,
+    borderRadius: radii.pill,
+    borderWidth: 1,
+    borderColor: "rgba(212, 168, 87, 0.55)",
+    backgroundColor: colors.accentSoft,
+  },
+  markReadButtonDone: {
+    backgroundColor: colors.accent,
+    borderColor: colors.accent,
+  },
+  markReadLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 14,
+    color: colors.accent,
+    fontWeight: "600",
+    letterSpacing: 0.4,
+  },
+  markReadLabelDone: { color: colors.background },
 
   // Colophon at the end of the chapter
   colophon: {

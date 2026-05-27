@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { router, useLocalSearchParams } from "expo-router";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { router, useFocusEffect, useLocalSearchParams } from "expo-router";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -20,6 +20,7 @@ import { VerseActionsSheet } from "@/components/theosis/verse-actions-sheet";
 import { getApi } from "@/lib/api";
 import {
   type HighlightColor,
+  type ProfilePrefs,
   type SavedVerse,
   addSavedVerse,
   getHighlights,
@@ -30,6 +31,8 @@ import {
   removeSavedVerse,
   setLastReadLocation,
   setVerseHighlight,
+  textSizeScale,
+  updateProfilePrefs,
 } from "@/lib/preferences";
 
 // Bible reader — mobile port of src/app/(shell)/bible/[translation]/[book]/[chapter]/page.tsx.
@@ -95,17 +98,51 @@ export default function BibleReaderScreen() {
   const [defaultTranslation, setDefaultTranslation] = useState<string | null>(
     null,
   );
+  const [textSize, setTextSize] = useState<ProfilePrefs["textSize"]>("md");
+  const [textSizeOpen, setTextSizeOpen] = useState(false);
   useEffect(() => {
     let canceled = false;
     void getProfilePrefs().then((p) => {
       if (canceled) return;
       if (p.primaryTranslationId) setDefaultTranslation(p.primaryTranslationId);
       else setDefaultTranslation(DEFAULT_TRANSLATION);
+      setTextSize(p.textSize ?? "md");
     });
     return () => {
       canceled = true;
     };
   }, []);
+
+  // Re-read on focus so a Settings change reflects without re-mount.
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      void getProfilePrefs().then((p) => {
+        if (!canceled) setTextSize(p.textSize ?? "md");
+      });
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
+
+  async function setTextSizeAndSave(next: NonNullable<ProfilePrefs["textSize"]>) {
+    setTextSize(next);
+    setTextSizeOpen(false);
+    await updateProfilePrefs({ textSize: next });
+  }
+
+  // Scale factors applied to verse prose. The base is 18pt; we keep
+  // the relationship between verseText and verseNumber so the small
+  // glyph stays proportional.
+  const scale = textSizeScale(textSize);
+  const scaledVerseText = useMemo(
+    () => ({
+      fontSize: 18 * scale,
+      lineHeight: 32 * scale,
+    }),
+    [scale],
+  );
 
   const translation =
     params.translation || defaultTranslation || DEFAULT_TRANSLATION;
@@ -419,8 +456,64 @@ export default function BibleReaderScreen() {
         >
           <Feather name="chevron-right" size={22} color={colors.inkMuted} />
         </Pressable>
+
+        {/* Aa text-size toggle — opens a small popover with the four
+            size choices. Pinned at the right edge so the chapter
+            chevrons stay in the natural reader position. */}
+        <Pressable
+          onPress={() => setTextSizeOpen((v) => !v)}
+          hitSlop={10}
+          style={({ pressed }) => [
+            styles.headerSizeButton,
+            textSizeOpen && styles.headerSizeButtonOpen,
+            pressed && { opacity: 0.6 },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel="Adjust text size"
+        >
+          <Text style={styles.headerSizeButtonLabel}>Aa</Text>
+        </Pressable>
       </View>
       <GiltRule full style={{ marginHorizontal: spacing.xl }} />
+
+      {textSizeOpen ? (
+        <View style={styles.textSizePopover}>
+          {(
+            [
+              { value: "sm", label: "Aa", display: 13 },
+              { value: "md", label: "Aa", display: 15 },
+              { value: "lg", label: "Aa", display: 17 },
+              { value: "xl", label: "Aa", display: 19 },
+            ] as const
+          ).map((opt) => {
+            const active = (textSize ?? "md") === opt.value;
+            return (
+              <Pressable
+                key={opt.value}
+                onPress={() => setTextSizeAndSave(opt.value)}
+                style={({ pressed }) => [
+                  styles.textSizeOption,
+                  active && styles.textSizeOptionActive,
+                  pressed && { opacity: 0.7 },
+                ]}
+                accessibilityRole="button"
+                accessibilityState={{ selected: active }}
+                accessibilityLabel={`Text size ${opt.value}`}
+              >
+                <Text
+                  style={[
+                    styles.textSizeOptionLabel,
+                    { fontSize: opt.display },
+                    active && styles.textSizeOptionLabelActive,
+                  ]}
+                >
+                  {opt.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      ) : null}
 
       <ScrollView
         ref={scrollRef}
@@ -515,7 +608,7 @@ export default function BibleReaderScreen() {
                   accessibilityLabel={`Verse 1${hasCommentary ? ", commentary available" : ""}`}
                 >
                   <Text style={styles.dropCap}>{firstChar}</Text>
-                  <Text style={styles.verseText}>{rest} </Text>
+                  <Text style={[styles.verseText, scaledVerseText]}>{rest} </Text>
                 </Text>
               );
             }
@@ -534,7 +627,7 @@ export default function BibleReaderScreen() {
                 accessibilityLabel={`Verse ${verse.verseNumber}${hasCommentary ? ", commentary available" : ""}${userHighlightColor ? `, highlighted ${userHighlightColor}` : ""}`}
               >
                 <Text style={styles.verseNumber}>{verse.verseNumber}</Text>
-                <Text style={styles.verseText}> {verse.text} </Text>
+                <Text style={[styles.verseText, scaledVerseText]}> {verse.text} </Text>
               </Text>
             );
           };
@@ -547,7 +640,7 @@ export default function BibleReaderScreen() {
                   the prose's screen position so the deep-link scroll effect
                   can land near the highlighted range. */}
               <Text
-                style={styles.verseProse}
+                style={[styles.verseProse, scaledVerseText]}
                 onLayout={(e) =>
                   setProseLayout({
                     y: e.nativeEvent.layout.y,
@@ -616,6 +709,61 @@ const styles = StyleSheet.create({
     height: 44,
     alignItems: "center",
     justifyContent: "center",
+  },
+  headerSizeButton: {
+    position: "absolute",
+    right: spacing.lg,
+    top: spacing.md,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: "rgba(212, 168, 87, 0.06)",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  headerSizeButtonOpen: {
+    backgroundColor: colors.accentSoft,
+    borderColor: "rgba(212, 168, 87, 0.55)",
+  },
+  headerSizeButtonLabel: {
+    fontFamily: fonts.serif,
+    fontSize: 13,
+    fontWeight: "600",
+    color: colors.accent,
+    letterSpacing: 0.3,
+  },
+  textSizePopover: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+    gap: spacing.xs,
+    marginHorizontal: spacing.xl,
+    marginTop: spacing.sm,
+    padding: 6,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: colors.surface,
+  },
+  textSizeOption: {
+    flex: 1,
+    paddingVertical: 8,
+    alignItems: "center",
+    borderRadius: radii.pill,
+  },
+  textSizeOptionActive: {
+    backgroundColor: colors.accentSoft,
+  },
+  textSizeOptionLabel: {
+    fontFamily: fonts.serif,
+    color: colors.inkMuted,
+    letterSpacing: -0.2,
+  },
+  textSizeOptionLabelActive: {
+    color: colors.accent,
+    fontWeight: "600",
   },
   headerCenter: { flex: 1, alignItems: "center", gap: 2 },
   headerEyebrow: {

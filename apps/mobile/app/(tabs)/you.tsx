@@ -26,10 +26,12 @@ import {
   type ProfilePrefs,
   type ReadingListItem,
   type SavedCommentary,
+  type SavedDailyReading,
   type SavedVerse,
   getProfilePrefs,
   getReadingList,
   getSavedCommentary,
+  getSavedDailyReadings,
   getSavedVerses,
   recordActivityToday,
 } from "@/lib/preferences";
@@ -38,7 +40,7 @@ import {
 // numerals (streak + saved), an editorial activity timeline, and quiet
 // navigation to settings & practice.
 
-type ActivityTab = "all" | "saved" | "reading" | "commentary";
+type ActivityTab = "all" | "saved" | "reading" | "commentary" | "daily";
 
 export default function YouScreen() {
   const [prefs, setPrefs] = useState<ProfilePrefs>({});
@@ -46,6 +48,7 @@ export default function YouScreen() {
   const [saved, setSaved] = useState<SavedVerse[]>([]);
   const [readingList, setReadingList] = useState<ReadingListItem[]>([]);
   const [savedCommentary, setSavedCommentary] = useState<SavedCommentary[]>([]);
+  const [savedDaily, setSavedDaily] = useState<SavedDailyReading[]>([]);
   const [activityTab, setActivityTab] = useState<ActivityTab>("all");
 
   useEffect(() => {
@@ -56,14 +59,18 @@ export default function YouScreen() {
       getSavedVerses(),
       getReadingList(),
       getSavedCommentary(),
-    ]).then(([activity, profile, savedVerses, list, commentary]) => {
-      if (canceled) return;
-      setStreak(activity.streak);
-      setPrefs(profile);
-      setSaved(savedVerses);
-      setReadingList(list);
-      setSavedCommentary(commentary);
-    });
+      getSavedDailyReadings(),
+    ]).then(
+      ([activity, profile, savedVerses, list, commentary, daily]) => {
+        if (canceled) return;
+        setStreak(activity.streak);
+        setPrefs(profile);
+        setSaved(savedVerses);
+        setReadingList(list);
+        setSavedCommentary(commentary);
+        setSavedDaily(daily);
+      },
+    );
     return () => {
       canceled = true;
     };
@@ -127,6 +134,20 @@ export default function YouScreen() {
         ? `${c.workTitle} — ${c.excerpt.slice(0, 80)}…`
         : `${c.excerpt.slice(0, 80)}…`,
       href: commentaryHref(c.verseKey),
+    })),
+    // Saved Daily readings — let users scroll back to a day they
+    // bookmarked. We don't yet have a per-day Daily route, so the link
+    // is decorative for now; tapping does nothing harmful.
+    ...savedDaily.map((d) => ({
+      id: `d-${d.isoDate}`,
+      kind: "daily" as const,
+      label: new Intl.DateTimeFormat("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+      }).format(new Date(`${d.isoDate}T00:00:00`)),
+      sub: `Saved daily — ${d.isoDate}`,
+      href: undefined as string | undefined,
     })),
   ].filter((item) => activityTab === "all" || item.kind === activityTab);
 
@@ -299,7 +320,7 @@ export default function YouScreen() {
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.activityTabs}
           >
-            {(["all", "saved", "reading", "commentary"] as ActivityTab[]).map((tab) => {
+            {(["all", "saved", "reading", "commentary", "daily"] as ActivityTab[]).map((tab) => {
               const active = tab === activityTab;
               const label =
                 tab === "all"
@@ -308,7 +329,9 @@ export default function YouScreen() {
                     ? "Saved"
                     : tab === "reading"
                       ? "Reading"
-                      : "Commentary";
+                      : tab === "commentary"
+                        ? "Commentary"
+                        : "Daily";
               return (
                 <Pressable
                   key={tab}
@@ -359,7 +382,9 @@ export default function YouScreen() {
                         ? "bookmark"
                         : item.kind === "commentary"
                           ? "message-square"
-                          : "book-open"
+                          : item.kind === "daily"
+                            ? "calendar"
+                            : "book-open"
                     }
                     size={14}
                     color={colors.accent}

@@ -2,8 +2,8 @@ import Feather from "@expo/vector-icons/Feather";
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
-import { Stack, router, useLocalSearchParams } from "expo-router";
-import { useMemo } from "react";
+import { Stack, router, useFocusEffect, useLocalSearchParams } from "expo-router";
+import { useCallback, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   Pressable,
@@ -29,6 +29,12 @@ import {
   text,
 } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
+import {
+  getFavoritePersonSlugs,
+  getProfilePrefs,
+  toggleFavoritePerson,
+  updateProfilePrefs,
+} from "@/lib/preferences";
 
 // Person detail — the saint's library entry. Composed like a magazine
 // profile: edge-bleed portrait, dramatic italic name overlay, then an
@@ -84,6 +90,43 @@ export default function PersonDetailScreen() {
       ? `${person.honorific} ${person.name.split(",")[0]}`
       : person.name.split(",")[0]
     : "";
+
+  // Patron + favorite affordances. Both read from prefs on focus so
+  // returning from settings or another person reflects updated state.
+  const [patronSlug, setPatronSlug] = useState<string | undefined>(undefined);
+  const [favorites, setFavorites] = useState<string[]>([]);
+  useFocusEffect(
+    useCallback(() => {
+      let canceled = false;
+      Promise.all([getProfilePrefs(), getFavoritePersonSlugs()]).then(
+        ([prefs, favs]) => {
+          if (canceled) return;
+          setPatronSlug(prefs.patronSaintSlug);
+          setFavorites(favs);
+        },
+      );
+      return () => {
+        canceled = true;
+      };
+    }, []),
+  );
+  const isMyPatron = Boolean(slug) && patronSlug === slug;
+  const isFavorite = Boolean(slug) && favorites.includes(slug);
+
+  async function handleSetPatron() {
+    if (!slug) return;
+    await updateProfilePrefs({ patronSaintSlug: slug });
+    setPatronSlug(slug);
+  }
+  async function handleUnsetPatron() {
+    await updateProfilePrefs({ patronSaintSlug: undefined });
+    setPatronSlug(undefined);
+  }
+  async function handleToggleFavorite() {
+    if (!slug) return;
+    const next = await toggleFavoritePerson(slug);
+    setFavorites(next);
+  }
 
   return (
     <>
@@ -180,6 +223,80 @@ export default function PersonDetailScreen() {
                   <Text style={styles.portraitName}>{displayName}</Text>
                   <Text style={styles.portraitEra}>{person.eraLabel}</Text>
                 </View>
+              </View>
+
+              {/* Action row — Patron + Favorite. Sits under the portrait
+                  before the lede so the actions are easy to find. Both
+                  toggle their saved state with a quiet visual flip
+                  (filled badge when active). */}
+              <View style={styles.actionRow}>
+                {isMyPatron ? (
+                  <Pressable
+                    onPress={handleUnsetPatron}
+                    style={({ pressed }) => [
+                      styles.actionPill,
+                      styles.actionPillActive,
+                      pressed && { opacity: 0.7 },
+                    ]}
+                    accessibilityRole="button"
+                    accessibilityLabel="Your patron — tap to unset"
+                  >
+                    <Feather
+                      name="award"
+                      size={13}
+                      color={colors.background}
+                    />
+                    <Text style={[styles.actionPillLabel, styles.actionPillLabelActive]}>
+                      Your patron
+                    </Text>
+                    <Feather
+                      name="x"
+                      size={11}
+                      color={colors.background}
+                      style={{ opacity: 0.7 }}
+                    />
+                  </Pressable>
+                ) : (
+                  <Pressable
+                    onPress={handleSetPatron}
+                    style={({ pressed }) => [
+                      styles.actionPill,
+                      pressed && { opacity: 0.7 },
+                    ]}
+                    accessibilityRole="button"
+                    accessibilityLabel="Set as my patron"
+                  >
+                    <Feather name="award" size={13} color={colors.accent} />
+                    <Text style={styles.actionPillLabel}>Set as patron</Text>
+                  </Pressable>
+                )}
+                <Pressable
+                  onPress={handleToggleFavorite}
+                  style={({ pressed }) => [
+                    styles.actionPill,
+                    isFavorite && styles.actionPillFavorite,
+                    pressed && { opacity: 0.7 },
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: isFavorite }}
+                  accessibilityLabel={
+                    isFavorite ? "Remove from favorites" : "Add to favorites"
+                  }
+                >
+                  <Feather
+                    name="heart"
+                    size={13}
+                    color={isFavorite ? colors.oxbloodInk : colors.inkMuted}
+                  />
+                  <Text
+                    style={[
+                      styles.actionPillLabel,
+                      isFavorite && styles.actionPillLabelFavorite,
+                    ]}
+                  >
+                    {isFavorite ? "Favorited" : "Favorite"}
+                  </Text>
+                </Pressable>
               </View>
 
               {/* Lede — short summary in serif body */}
@@ -389,6 +506,44 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.inkMuted,
   },
+
+  // Action row — patron + favorite under the portrait
+  actionRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: spacing.sm,
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.lg,
+  },
+  actionPill: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 8,
+    borderRadius: radii.pill,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: "rgba(212, 168, 87, 0.08)",
+  },
+  actionPillActive: {
+    backgroundColor: colors.accent,
+    borderColor: colors.accent,
+  },
+  actionPillFavorite: {
+    backgroundColor: "rgba(139, 58, 58, 0.08)",
+    borderColor: "rgba(139, 58, 58, 0.3)",
+  },
+  actionPillLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 11,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
+  },
+  actionPillLabelActive: { color: colors.background },
+  actionPillLabelFavorite: { color: colors.oxbloodInk },
 
   // Lede
   lede: {

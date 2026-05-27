@@ -41,26 +41,42 @@ import {
 import { getApi } from "@/lib/api";
 import {
   type DailyCardKey,
+  type LastReadLocation,
+  type ProfilePrefs,
   DEFAULT_DAILY_CARD_ORDER,
   getDailyCardOrder,
+  getLastReadLocation,
   getProfilePrefs,
   getSavedVerses,
+  isDailyReadingSaved,
   recordActivityToday,
   setDailyCardOrder,
+  toggleSavedDailyReading,
 } from "@/lib/preferences";
 
-// Resolve a fast label for the day. The API supplies one during Lent,
-// the Apostles' Fast, Dormition Fast, etc. For ordinary time we fall
-// back to the weekly rule — Wednesday + Friday are the standing fast
-// days; all other days are "Fast Free." So every Daily page has a
-// fast status visible, not just feast/season days.
+// Resolve a fast label for the day, respecting the user's fastingLevel
+// preference. The API supplies a label during seasonal fasts (Lent,
+// Apostles', Dormition, Nativity); we use it directly. For ordinary
+// time we fall back to the weekly rule.
+//
+// fastingLevel:
+//   strict   — every fast labeled prominently; Wed/Fri count as fasts.
+//   standard — Wed/Fri labeled (default behavior).
+//   relaxed  — show only seasonal fasts; on plain Wed/Fri render the
+//              soft "Fast Free" treatment (so the chip doesn't shout).
 function resolveFastLabel(
   isoDate: string,
   providedLabel: string | undefined,
+  fastingLevel: ProfilePrefs["fastingLevel"] | undefined,
 ): { label: string; isFastFree: boolean } {
   if (providedLabel) return { label: providedLabel, isFastFree: false };
   const d = new Date(`${isoDate}T00:00:00Z`);
   const dow = d.getUTCDay(); // 0=Sun … 3=Wed, 5=Fri, 6=Sat
+  if (fastingLevel === "relaxed") {
+    // No seasonal fast label and the user has opted out of weekly
+    // fasts — render the soft chip.
+    return { label: "Fast Free", isFastFree: true };
+  }
   if (dow === 3) return { label: "Wednesday Fast", isFastFree: false };
   if (dow === 5) return { label: "Friday Fast", isFastFree: false };
   return { label: "Fast Free", isFastFree: true };
@@ -137,10 +153,14 @@ export default function DailyScreen() {
   const [cardOrder, setCardOrderState] = useState<DailyCardKey[]>(
     DEFAULT_DAILY_CARD_ORDER,
   );
-  const [profile, setProfile] = useState<{ displayName?: string }>({});
+  const [profile, setProfile] = useState<ProfilePrefs>({});
   const [streak, setStreak] = useState(0);
   const [savedCount, setSavedCount] = useState(0);
   const [reorderHinted, setReorderHinted] = useState(false);
+  const [lastRead, setLastRead] = useState<LastReadLocation | undefined>(
+    undefined,
+  );
+  const [dailySaved, setDailySaved] = useState(false);
 
   const { data, error, isLoading, refetch, isFetching } = useQuery({
     queryKey: ["daily", "today"],
@@ -155,17 +175,40 @@ export default function DailyScreen() {
       getProfilePrefs(),
       recordActivityToday(),
       getSavedVerses(),
-    ]).then(([order, prof, activity, saved]) => {
+      getLastReadLocation(),
+    ]).then(([order, prof, activity, saved, loc]) => {
       if (canceled) return;
       setCardOrderState(order);
       setProfile(prof);
       setStreak(activity.streak);
       setSavedCount(saved.length);
+      setLastRead(loc);
     });
     return () => {
       canceled = true;
     };
   }, []);
+
+  // Watch the daily response's iso date to compute whether *that* day
+  // is currently bookmarked. We re-read on data change so the icon
+  // reflects the right state even if the user navigates back from
+  // saving on the same day.
+  useEffect(() => {
+    if (!data) return;
+    let canceled = false;
+    void isDailyReadingSaved(data.daily.isoDate).then((saved) => {
+      if (!canceled) setDailySaved(saved);
+    });
+    return () => {
+      canceled = true;
+    };
+  }, [data]);
+
+  async function handleToggleDailySaved() {
+    if (!data) return;
+    const next = await toggleSavedDailyReading(data.daily.isoDate);
+    setDailySaved(next.some((d) => d.isoDate === data.daily.isoDate));
+  }
 
   const onReorder = useCallback((next: DailyCardKey[]) => {
     setCardOrderState(next);
@@ -191,6 +234,11 @@ export default function DailyScreen() {
               // natural lead — no synthetic "verse of the day" needed,
               // since the appointed Gospel reading is the day's word.
               hasFeast ? <FeastHero data={data} /> : null
+            ) : item === "continue-reading" ? (
+              // Hides entirely when no lastRead is set (first launch
+              // before the user opens the Bible tab). After their first
+              // chapter, this card surfaces it on every Daily visit.
+              lastRead ? <ContinueReadingCard lastRead={lastRead} /> : null
             ) : item === "readings" ? (
               <ReadingsCard data={data} />
             ) : item === "commemoration" ? (
@@ -208,7 +256,7 @@ export default function DailyScreen() {
         </ScaleDecorator>
       );
     },
-    [data, hasFeast, streak],
+    [data, hasFeast, streak, lastRead],
   );
 
   return (
@@ -246,13 +294,39 @@ export default function DailyScreen() {
         </View>
 
         {/* Date label — read-only, today. The chevrons / picker / week
-            strip are gone; this is purely a magazine masthead now. */}
+            strip are gone; this is purely a magazine masthead now. The
+            bookmark icon next to the label saves the day to the user's
+            "Saved daily readings" list (filterable on the You tab). */}
         <View style={styles.dateRow}>
           <View style={styles.dateLineWrap}>
             <Text style={styles.dateLineLabel}>
               {data ? formatMastheadDate(data.daily.isoDate) : "Today"}
             </Text>
           </View>
+          {data ? (
+            <Pressable
+              onPress={handleToggleDailySaved}
+              hitSlop={10}
+              style={({ pressed }) => [
+                styles.bookmarkButton,
+                dailySaved && styles.bookmarkButtonActive,
+                pressed && { opacity: 0.6 },
+              ]}
+              accessibilityRole="button"
+              accessibilityState={{ selected: dailySaved }}
+              accessibilityLabel={
+                dailySaved
+                  ? "Remove today from saved daily readings"
+                  : "Save today's daily reading"
+              }
+            >
+              <Feather
+                name="bookmark"
+                size={12}
+                color={dailySaved ? colors.accent : colors.inkMuted}
+              />
+            </Pressable>
+          ) : null}
         </View>
 
         {data ? (
@@ -260,6 +334,7 @@ export default function DailyScreen() {
             <FastChip
               isoDate={data.daily.isoDate}
               providedLabel={data.daily.fastLabel}
+              fastingLevel={profile.fastingLevel}
             />
           </View>
         ) : null}
@@ -361,11 +436,17 @@ type DailyData = DailyResponse;
 function FastChip({
   isoDate,
   providedLabel,
+  fastingLevel,
 }: {
   isoDate: string;
   providedLabel?: string;
+  fastingLevel?: ProfilePrefs["fastingLevel"];
 }) {
-  const { label, isFastFree } = resolveFastLabel(isoDate, providedLabel);
+  const { label, isFastFree } = resolveFastLabel(
+    isoDate,
+    providedLabel,
+    fastingLevel,
+  );
   return (
     <View
       style={[styles.fastChip, isFastFree && styles.fastChipFree]}
@@ -478,6 +559,50 @@ function FeastHero({ data }: { data: DailyData }) {
     <Card intent="hero" style={elevation.giltGlow}>
       {inner}
     </Card>
+  );
+}
+
+// Continue reading — surfaces the user's last Bible location with a
+// CTA back to the reader. Quiet on first launch (no lastRead set);
+// becomes a regular feature once the user reads anything.
+function ContinueReadingCard({
+  lastRead,
+}: {
+  lastRead: LastReadLocation;
+}) {
+  const bookLabel = lastRead.book
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+  return (
+    <Pressable
+      onPress={() =>
+        router.push(
+          `/explore?translation=${lastRead.translation}&book=${lastRead.book}&chapter=${lastRead.chapter}`,
+        )
+      }
+      style={({ pressed }) => [pressed && { opacity: 0.92 }]}
+      accessibilityRole="button"
+      accessibilityLabel={`Continue reading ${bookLabel} chapter ${lastRead.chapter}`}
+    >
+      <Card>
+        <SectionHeader eyebrow="Where you left off" title="Continue reading" />
+        <View style={styles.continueRow}>
+          <View style={styles.continueText}>
+            <Text style={styles.continueBook}>{bookLabel}</Text>
+            <Text style={styles.continueChapter}>
+              Chapter {lastRead.chapter}
+              {lastRead.translation
+                ? ` · ${lastRead.translation.toUpperCase()}`
+                : ""}
+            </Text>
+          </View>
+          <View style={styles.continueCta}>
+            <Text style={styles.continueCtaLabel}>Open</Text>
+            <Feather name="arrow-right" size={14} color={colors.accent} />
+          </View>
+        </View>
+      </Card>
+    </Pressable>
   );
 }
 
@@ -760,11 +885,13 @@ const styles = StyleSheet.create({
     gap: spacing.md,
   },
   // Date pill — read-only "SUNDAY · MAY 17", centered. No chevrons or
-  // calendar overlay; Daily is always today.
+  // calendar overlay; Daily is always today. The bookmark sits next to
+  // the pill (also centered) so the user can save the day.
   dateRow: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
+    gap: spacing.sm,
     paddingHorizontal: spacing.xl,
     paddingVertical: spacing.sm,
   },
@@ -775,6 +902,20 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(212, 168, 87, 0.06)",
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: colors.lineGilt,
+  },
+  bookmarkButton: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surface,
+  },
+  bookmarkButtonActive: {
+    backgroundColor: colors.accentSoft,
+    borderColor: "rgba(212, 168, 87, 0.5)",
   },
   dateLineLabel: {
     fontFamily: fonts.sans,
@@ -906,6 +1047,46 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: colors.accent,
     letterSpacing: 2,
+    textTransform: "uppercase",
+  },
+
+  // Continue reading card
+  continueRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    marginTop: spacing.md,
+  },
+  continueText: { flex: 1, gap: 2 },
+  continueBook: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 22,
+    color: colors.ink,
+    letterSpacing: -0.3,
+    lineHeight: 26,
+  },
+  continueChapter: {
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
+    color: colors.inkSoft,
+  },
+  continueCta: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    paddingHorizontal: spacing.md,
+    paddingVertical: 8,
+    borderRadius: radii.pill,
+    backgroundColor: colors.accentSoft,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+  },
+  continueCtaLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 11,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.4,
     textTransform: "uppercase",
   },
 

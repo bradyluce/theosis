@@ -90,6 +90,57 @@ export type ProfilePrefs = {
     | "ukr" | "mos" | "bgr" | "alb" | "cpr" | "geo" | "other";
   fastingLevel?: "strict" | "standard" | "relaxed";
   primaryTranslationId?: string;
+  // Phase 4. textSize scales body text in the Bible reader + commentary
+  // modal. Default "md". The scale factors live in textSizeScale().
+  textSize?: "sm" | "md" | "lg" | "xl";
+  // Person slugs the user has favorited. Surfaced on the You tab and as
+  // a filter when browsing the library. Distinct from patronSaintSlug —
+  // patron is *the* one; favorites are everyone else worth keeping
+  // close.
+  favoritePersonSlugs?: string[];
+};
+
+// Scaling factor for the four textSize choices. Multiplied into the
+// base font size in the Bible reader and commentary modal. 1.0 is the
+// "md" default; users can shrink the prose to fit more on a page (sm)
+// or grow it for reading without glasses (xl).
+export function textSizeScale(
+  size: ProfilePrefs["textSize"] | undefined,
+): number {
+  switch (size) {
+    case "sm":
+      return 0.88;
+    case "lg":
+      return 1.15;
+    case "xl":
+      return 1.32;
+    case "md":
+    default:
+      return 1;
+  }
+}
+
+// Completion marks — "✓ read" stamps on guides, topics, and individual
+// work chapters. Persisted with the timestamp so we can surface a
+// "completed today" indicator in the future.
+export type CompletionKind = "guide" | "topic" | "work-chapter";
+
+export type CompletionMark = {
+  // Composite ID `${kind}::${slug}` — collisions are impossible because
+  // the three kinds live in separate namespaces.
+  id: string;
+  kind: CompletionKind;
+  slug: string;
+  completedAt: string;
+};
+
+// Bookmark on the Daily page — the user marked today (or another day)
+// as one to remember. Doesn't include the actual reading content
+// because that comes back via /api/daily on demand; we just remember
+// the date.
+export type SavedDailyReading = {
+  isoDate: string;     // YYYY-MM-DD
+  savedAt: string;
 };
 
 // Saved commentary entry. The user starred a specific entry on a
@@ -134,8 +185,12 @@ export type PrayerRule = {
 
 // Daily card order — strings matching the card type discriminator used
 // in app/(tabs)/index.tsx. Default order applies until the user reorders.
+// "continue-reading" is a new Phase-4 card: it surfaces the user's
+// last-read Bible location with a Continue CTA. It defaults to right
+// under the feast hero so it's easy to spot on cold start.
 export type DailyCardKey =
   | "primary"
+  | "continue-reading"
   | "readings"
   | "commemoration"
   | "prayer"
@@ -143,6 +198,7 @@ export type DailyCardKey =
 
 export const DEFAULT_DAILY_CARD_ORDER: DailyCardKey[] = [
   "primary",
+  "continue-reading",
   "readings",
   "commemoration",
   "prayer",
@@ -178,6 +234,10 @@ export type AppPreferences = {
   // Personal diptych — names the user prays for. Two-column shape so
   // living and departed never blur.
   diptych?: Diptych;
+  // "✓ read" stamps on guides, topics, and work chapters.
+  completions?: CompletionMark[];
+  // Bookmarks on the Daily page — dates the user wants to remember.
+  savedDailyReadings?: SavedDailyReading[];
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -472,6 +532,107 @@ export async function removeDiptychEntry(
   };
   await savePrefs({ ...prefs, diptych: updated });
   return updated;
+}
+
+// --- Completion marks -----------------------------------------------------
+
+function completionId(kind: CompletionKind, slug: string): string {
+  return `${kind}::${slug}`;
+}
+
+export async function getCompletions(): Promise<CompletionMark[]> {
+  const prefs = await loadPrefs();
+  return prefs.completions ?? [];
+}
+
+export async function isCompleted(
+  kind: CompletionKind,
+  slug: string,
+): Promise<boolean> {
+  const all = await getCompletions();
+  const id = completionId(kind, slug);
+  return all.some((c) => c.id === id);
+}
+
+export async function addCompletion(
+  kind: CompletionKind,
+  slug: string,
+): Promise<CompletionMark[]> {
+  const id = completionId(kind, slug);
+  const prefs = await loadPrefs();
+  const existing = prefs.completions ?? [];
+  if (existing.some((c) => c.id === id)) return existing;
+  const mark: CompletionMark = {
+    id,
+    kind,
+    slug,
+    completedAt: new Date().toISOString(),
+  };
+  const next = [mark, ...existing];
+  await savePrefs({ ...prefs, completions: next });
+  return next;
+}
+
+export async function removeCompletion(
+  kind: CompletionKind,
+  slug: string,
+): Promise<CompletionMark[]> {
+  const id = completionId(kind, slug);
+  const prefs = await loadPrefs();
+  const next = (prefs.completions ?? []).filter((c) => c.id !== id);
+  await savePrefs({ ...prefs, completions: next });
+  return next;
+}
+
+// --- Saved daily readings --------------------------------------------------
+
+export async function getSavedDailyReadings(): Promise<SavedDailyReading[]> {
+  const prefs = await loadPrefs();
+  return prefs.savedDailyReadings ?? [];
+}
+
+export async function isDailyReadingSaved(
+  isoDate: string,
+): Promise<boolean> {
+  const all = await getSavedDailyReadings();
+  return all.some((d) => d.isoDate === isoDate);
+}
+
+export async function toggleSavedDailyReading(
+  isoDate: string,
+): Promise<SavedDailyReading[]> {
+  const prefs = await loadPrefs();
+  const existing = prefs.savedDailyReadings ?? [];
+  const present = existing.some((d) => d.isoDate === isoDate);
+  const next = present
+    ? existing.filter((d) => d.isoDate !== isoDate)
+    : [
+        { isoDate, savedAt: new Date().toISOString() },
+        ...existing,
+      ];
+  await savePrefs({ ...prefs, savedDailyReadings: next });
+  return next;
+}
+
+// --- Favorite persons ------------------------------------------------------
+
+export async function getFavoritePersonSlugs(): Promise<string[]> {
+  const prefs = await loadPrefs();
+  return prefs.profile?.favoritePersonSlugs ?? [];
+}
+
+export async function isFavoritePerson(slug: string): Promise<boolean> {
+  const slugs = await getFavoritePersonSlugs();
+  return slugs.includes(slug);
+}
+
+export async function toggleFavoritePerson(slug: string): Promise<string[]> {
+  const slugs = await getFavoritePersonSlugs();
+  const next = slugs.includes(slug)
+    ? slugs.filter((s) => s !== slug)
+    : [slug, ...slugs];
+  await updateProfilePrefs({ favoritePersonSlugs: next });
+  return next;
 }
 
 export async function getReadingList(): Promise<ReadingListItem[]> {
