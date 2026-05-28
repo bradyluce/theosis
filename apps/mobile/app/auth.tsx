@@ -45,6 +45,7 @@ import {
 } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { getApiBaseUrl } from "@/lib/api";
+import { clearLocalUserData } from "@/lib/sync/sign-out";
 
 export default function AuthDebugScreen() {
   const { isLoaded: userLoaded, isSignedIn } = useUser();
@@ -734,6 +735,12 @@ function SignedInView({ email }: { email: string | undefined }) {
     if (signingOut) return;
     setSigningOut(true);
     try {
+      // Clear local prefs / pending writes / anonymous-id / in-memory
+      // caches BEFORE Clerk's signOut() so that, on a shared device,
+      // the next user who signs in doesn't inherit the previous
+      // session's data. The auth bridge effect in app/_layout.tsx
+      // re-fires on the signOut() side, so order matters here.
+      await clearLocalUserData();
       await signOut();
     } finally {
       setSigningOut(false);
@@ -772,44 +779,54 @@ function SignedInView({ email }: { email: string | undefined }) {
         </View>
       </Card>
 
-      <Card>
-        <View style={{ gap: spacing.md }}>
-          <Eyebrow tone="soft">Connection check</Eyebrow>
-          <Text style={styles.body}>
-            Fetch the authenticated snapshot from the server and inspect the
-            result. Useful for confirming sync is working.
-          </Text>
-          <Pressable
-            onPress={handleFetch}
-            disabled={busy}
-            style={({ pressed }) => [
-              styles.primaryButton,
-              busy && styles.buttonDisabled,
-              pressed && styles.buttonPressed,
-            ]}
-          >
-            <Text style={styles.primaryButtonText}>
-              {busy ? "Fetching…" : "Fetch /api/me"}
-            </Text>
-          </Pressable>
-          {result ? (
-            <View style={styles.resultBlock}>
+      {/* Debug surfaces — only mounted in dev. In production the
+          signed-in user sees just the identity hero card + Sign out.
+          The /api/me fetch panel and API base URL card were the
+          original Phase 1 diagnostics; they remain useful when
+          chasing sync bugs over Metro, but reviewers shouldn't see
+          raw server responses or backend URLs in the shipped app. */}
+      {__DEV__ ? (
+        <>
+          <Card>
+            <View style={{ gap: spacing.md }}>
+              <Eyebrow tone="soft">Connection check · DEV</Eyebrow>
+              <Text style={styles.body}>
+                Fetch the authenticated snapshot from the server and inspect
+                the result. Useful for confirming sync is working.
+              </Text>
+              <Pressable
+                onPress={handleFetch}
+                disabled={busy}
+                style={({ pressed }) => [
+                  styles.primaryButton,
+                  busy && styles.buttonDisabled,
+                  pressed && styles.buttonPressed,
+                ]}
+              >
+                <Text style={styles.primaryButtonText}>
+                  {busy ? "Fetching…" : "Fetch /api/me"}
+                </Text>
+              </Pressable>
+              {result ? (
+                <View style={styles.resultBlock}>
+                  <Text style={styles.mono} selectable>
+                    {result}
+                  </Text>
+                </View>
+              ) : null}
+            </View>
+          </Card>
+
+          <Card>
+            <View style={{ gap: spacing.xs }}>
+              <Eyebrow tone="soft">API base URL · DEV</Eyebrow>
               <Text style={styles.mono} selectable>
-                {result}
+                {getApiBaseUrl() || "(empty)"}
               </Text>
             </View>
-          ) : null}
-        </View>
-      </Card>
-
-      <Card>
-        <View style={{ gap: spacing.xs }}>
-          <Eyebrow tone="soft">API base URL</Eyebrow>
-          <Text style={styles.mono} selectable>
-            {getApiBaseUrl() || "(empty)"}
-          </Text>
-        </View>
-      </Card>
+          </Card>
+        </>
+      ) : null}
     </View>
   );
 }

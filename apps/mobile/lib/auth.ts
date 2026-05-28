@@ -31,6 +31,12 @@ export function getAuthedApi(): TheosisMeApi | null {
   if (cachedApi) return cachedApi;
   cachedApi = createTheosisMeApi({
     baseUrl: getApiBaseUrl(),
+    // RN's fetch ignores cookies on iOS, so the web-style "include" is
+    // dead weight at best and has caused intermittent header-stripping
+    // on some Hermes builds. Mobile authenticates exclusively via the
+    // Authorization bearer header attached below — opt out of cookie
+    // semantics entirely.
+    credentials: "omit",
     fetchImpl: async (input, init) => {
       const token = activeTokenGetter ? await activeTokenGetter() : null;
       const headers = new Headers(init?.headers);
@@ -39,4 +45,12 @@ export function getAuthedApi(): TheosisMeApi | null {
     },
   });
   return cachedApi;
+}
+
+// Drop the cached client so the next getAuthedApi() call rebuilds it
+// from scratch with whatever token getter is registered then. Called by
+// lib/sync/sign-out.ts so the next signed-in user doesn't get an API
+// client closed over the previous user's getToken closure.
+export function resetAuthedApi(): void {
+  cachedApi = null;
 }

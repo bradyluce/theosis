@@ -46,6 +46,7 @@ import {
   setOnboardingStatus,
   updateProfilePrefs,
 } from "@/lib/preferences";
+import { clearLocalUserData } from "@/lib/sync/sign-out";
 import { useOnboardingState } from "@/lib/use-onboarding-state";
 
 // ---------------------------------------------------------------------------
@@ -423,6 +424,11 @@ function AccountCard() {
     if (busy) return;
     setBusy(true);
     try {
+      // Wipe local prefs / pending writes / anonymous-id / in-memory
+      // caches before Clerk's signOut(). Without this, the next user
+      // who signs in on a shared device inherits the previous account's
+      // diptych names, notes, parish, patron, and offline write queue.
+      await clearLocalUserData();
       await signOut();
     } finally {
       setBusy(false);
@@ -481,9 +487,11 @@ function AccountCard() {
         );
         return;
       }
-      // Sign out clears the local Clerk session. The user's prefs
-      // blob in AsyncStorage stays — they may want it for an anon
-      // session afterward — but the server data is gone.
+      // Server data is gone — now wipe local data too. Account deletion
+      // is "I'm done with Theosis" semantics, not "switch users," so
+      // the prefs blob, pending writes, and anonymous-id all go with
+      // the server row. Then sign Clerk out.
+      await clearLocalUserData();
       await signOut();
     } catch (err) {
       Alert.alert(

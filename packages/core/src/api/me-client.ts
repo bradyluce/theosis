@@ -45,6 +45,12 @@ export type TheosisMeApiOptions = {
   // Inject auth header. Mobile passes a wrapper that reads the Clerk JWT
   // from secure storage and sets `Authorization: Bearer <token>`.
   fetchImpl?: typeof fetch;
+  // Credentials mode for the underlying fetch. Web uses "include" so the
+  // Clerk session cookie rides along. RN's fetch ignores cookies on iOS
+  // and has historically had intermittent issues when "include" is
+  // combined with a Bearer header on Hermes — mobile should pass "omit"
+  // and authenticate purely via the Authorization header.
+  credentials?: "omit" | "same-origin" | "include";
 };
 
 export type TheosisMeApi = {
@@ -122,6 +128,9 @@ export function createTheosisMeApi(
 ): TheosisMeApi {
   const baseUrl = opts.baseUrl ?? "";
   const fetchImpl = opts.fetchImpl ?? fetch;
+  // Default to "include" so existing web call sites continue sending the
+  // Clerk session cookie unchanged. Mobile explicitly passes "omit".
+  const credentials: "omit" | "same-origin" | "include" = opts.credentials ?? "include";
 
   async function request<T>(
     method: string,
@@ -131,7 +140,7 @@ export function createTheosisMeApi(
   ): Promise<T> {
     const init: RequestInit = {
       method,
-      credentials: "include",
+      credentials,
       headers: body !== undefined ? { "Content-Type": "application/json" } : {},
       body: body !== undefined ? JSON.stringify(body) : undefined,
     };

@@ -15,7 +15,7 @@ Product/architecture docs live in `docs/` (`product-plan.md`, `architecture.md`,
 | Surface | Path | Role |
 | --- | --- | --- |
 | **Mobile app** | `apps/mobile/` | The product. Expo SDK 54, expo-router 6, Clerk Expo, TanStack Query, Reanimated 4. Hits the deployed Vercel backend by default — no local web server needed. |
-| **Backend / web** | `src/` (root) | Next.js App Router on Vercel. Hosts the JSON API mobile reads (`/api/me/*`, `/api/bible/*`, `/api/commentary/*`, `/api/library/*`, `/api/calendar/*`, `/api/search/*`, `/api/parishes`, `/api/topics`, `/api/guides`, `/api/quote-card`, `/api/version`) and a still-maintained web reader. |
+| **Backend / web** | `src/` (root) | Next.js App Router on Vercel. Hosts the JSON API mobile reads (`/api/me/*`, `/api/bible/*`, `/api/commentary/*`, `/api/library/*`, `/api/calendar/*`, `/api/search/*`, `/api/parishes/*` — `near` / `geocode` / `[state]/[slug]`, `/api/topics`, `/api/guides`, `/api/daily`, `/api/reading-plans`, `/api/version`), the public `/privacy` and `/terms` pages, and a still-maintained web reader. |
 | **Shared core** | `packages/core/` (`@theosis/core`) | Platform-agnostic: domain types (`BibleVerse`, `CommentaryEntry`, `Person`, `Work`, `WorkChapter`, `DailyCommemoration`, …), typed API client (`createTheosisApi` in `api/client.ts`), Drizzle schema (`db/schema.ts`), onboarding state machine (`onboarding/`). Both apps import from here. |
 
 **The mobile app talks to the deployed Vercel backend (`https://theosis-app-brady-luces-projects.vercel.app`) by default**, even under `expo start`. To point mobile at a local Next.js server on your LAN (for testing unpushed backend changes), set `EXPO_PUBLIC_USE_LAN_DEV=1` before Metro and run `npm run dev:mobile` from the repo root. Resolution rules live in [apps/mobile/lib/api.ts](apps/mobile/lib/api.ts).
@@ -88,9 +88,9 @@ Commentary is indexed against one translation (usually `kjva`) but `verseLocatio
 
 `apps/mobile/` is expo-router 6 with file-based routes under `apps/mobile/app/`:
 
-- `(tabs)/` — bottom tab shell (Home, Daily, Bible, Library, Search, You/Profile).
-- Stack pushes: `reading/[work]/[order]`, `works/[slug]`, `people/[slug]`, `library/`, `topics/`, `guides/`, `parishes`, `parishes/[state]/[slug]`, `prayer`, `prayer-builder`, `diptych`, `settings`, `terms`, `privacy`, `auth-debug`, `commentary-fathers`.
-- Modals: `commentary/[book]/[chapter]/[verse]`, `book-picker`, `prayer-picker`, `saint-picker`, `modal`.
+- `(tabs)/` — bottom tab shell. Four tabs: Daily (`index.tsx`), Bible (`explore.tsx`), Library (`library.tsx`), You (`you.tsx`). Search is reached from inside the Library tab; the "Home" surface from earlier plans was merged into Daily.
+- Stack pushes: `reading/[work]/[order]`, `works/[slug]`, `people/[slug]`, `library/`, `topics/`, `guides/`, `parishes`, `parishes/[state]/[slug]`, `prayer`, `prayer-builder`, `diptych`, `settings`, `terms`, `privacy`, `auth`, `commentary-fathers`.
+- Modals: `commentary/[book]/[chapter]/[verse]`, `book-picker`, `prayer-picker`, `saint-picker`.
 - `onboarding/` — Phase 3 onboarding flow, gated by `OnboardingRedirect` in `app/_layout.tsx`.
 - `note/[targetType]/[targetId]` — notes anchored to verse/chapter/work/person.
 

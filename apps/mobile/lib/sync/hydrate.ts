@@ -169,17 +169,39 @@ async function adoptServerSnapshot(snapshot: MeSnapshotDto): Promise<void> {
   const next: AppPreferences = {
     ...current,
     profile: nextProfile,
-    savedVerses: snapshot.savedVerses.map((v) => {
-      // Unify verseKey "book.chapter.verse" back into discrete fields.
-      const [book, chapter, verse] = v.verseKey.split(".");
-      return {
-        id: v.clientId,
-        translation: v.translationId,
-        book,
-        chapter: Number(chapter),
-        verse: Number(verse),
-        savedAt: v.createdAt,
-      };
+    // Unify verseKey "book.chapter.verse" back into discrete fields.
+    // We validate the split because a malformed verseKey (legacy row,
+    // bad migration) would otherwise yield chapter: NaN / verse: NaN
+    // and corrupt the local list silently. Drop the row instead.
+    savedVerses: snapshot.savedVerses.flatMap((v) => {
+      const parts = v.verseKey.split(".");
+      if (parts.length !== 3) {
+        console.warn(
+          "[mobile sync] dropping savedVerse with malformed verseKey:",
+          v.verseKey,
+        );
+        return [];
+      }
+      const [book, chapterStr, verseStr] = parts;
+      const chapter = Number(chapterStr);
+      const verse = Number(verseStr);
+      if (!book || !Number.isFinite(chapter) || !Number.isFinite(verse)) {
+        console.warn(
+          "[mobile sync] dropping savedVerse with invalid parts:",
+          v.verseKey,
+        );
+        return [];
+      }
+      return [
+        {
+          id: v.clientId,
+          translation: v.translationId,
+          book,
+          chapter,
+          verse,
+          savedAt: v.createdAt,
+        },
+      ];
     }),
     highlights: snapshot.highlights
       .filter((h) => h.targetType === "verse")
@@ -213,6 +235,24 @@ async function adoptServerSnapshot(snapshot: MeSnapshotDto): Promise<void> {
     },
     dailyCardOrder: (p.dailyCardOrder as DailyCardKey[] | undefined) ?? current.dailyCardOrder,
   };
+
+  // Cross-device onboarding flag: if the server snapshot carries a real
+  // profile (status / patron / parish / jurisdiction set), the user
+  // already completed onboarding on another device. Mark it locally so
+  // the OnboardingRedirect guard at app/_layout.tsx doesn't push them
+  // back through the 10-step flow on first install of mobile after
+  // signing up on web (or vice versa). Only set "complete" — never
+  // overwrite an existing local value, in case the user explicitly hit
+  // "Restart setup" in Settings before the hydrate ran.
+  const serverHasProfile = Boolean(
+    nextProfile.status ||
+      nextProfile.patronSaintSlug ||
+      nextProfile.parish ||
+      nextProfile.jurisdiction,
+  );
+  if (serverHasProfile && !current.onboardingStatus) {
+    next.onboardingStatus = "complete";
+  }
 
   await writePrefs(next);
 }

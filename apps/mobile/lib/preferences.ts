@@ -352,6 +352,13 @@ const RECENT_SEARCHES_MAX = 8;
 
 let memoCache: AppPreferences | null = null;
 
+// Drop the in-memory prefs cache. Called by lib/sync/sign-out.ts after
+// the on-disk blob is removed, so the next call to any getter reads an
+// empty AppPreferences instead of serving the previous user's data.
+export function clearMemoCache(): void {
+  memoCache = null;
+}
+
 async function loadPrefs(): Promise<AppPreferences> {
   if (memoCache) return memoCache;
   try {

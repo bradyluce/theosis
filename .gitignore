@@ -44,7 +44,11 @@ next-env.d.ts
 # local ingestion artifacts / data (do not commit)
 /_tmp_*.html
 /get-diff.txt
+/get-log.txt
 /content/generated/
+
+# Obsidian per-developer editor state inside docs/
+/docs/.obsidian/
 # External patristic corpus mirrored on demand for ingest only
 /corpus/hcf-commentaries/
 # Raw source material: ignore everything inside, but keep the directory tree

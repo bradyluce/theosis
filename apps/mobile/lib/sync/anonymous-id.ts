@@ -8,6 +8,13 @@ const STORAGE_KEY = "theosis.anonymous-id";
 
 let cached: string | null = null;
 
+// Drop the in-memory cached id so the next ensureAnonymousId() call
+// regenerates from SecureStore (or generates a fresh UUID if cleared).
+// Called by lib/sync/sign-out.ts.
+export function clearAnonymousIdCache(): void {
+  cached = null;
+}
+
 export async function ensureAnonymousId(): Promise<string> {
   if (cached) return cached;
   try {
