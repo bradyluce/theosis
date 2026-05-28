@@ -12,8 +12,6 @@ import {
   Text,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-
 import {
   Card,
   Eyebrow,
@@ -26,7 +24,6 @@ import {
   fonts,
   radii,
   spacing,
-  text,
 } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 import {

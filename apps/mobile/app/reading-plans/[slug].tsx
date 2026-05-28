@@ -21,7 +21,6 @@ import type {
 import { Card, Eyebrow } from "@/components/theosis/primitives";
 import {
   colors,
-  fonts,
   radii,
   spacing,
   text,

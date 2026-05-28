@@ -80,8 +80,8 @@ export function ReadingListView({ works, peopleById }: Props) {
           My library queue
         </h1>
         <p className="text-sm text-ink-muted">
-          Works you've queued, are reading, or have finished. Move between
-          categories from each row's actions, or from the button on a work
+          Works you&apos;ve queued, are reading, or have finished. Move between
+          categories from each row&apos;s actions, or from the button on a work
           page.
         </p>
       </header>
@@ -90,7 +90,7 @@ export function ReadingListView({ works, peopleById }: Props) {
         <div className="rounded-[14px] border border-line/40 bg-surface px-4 py-10 text-center">
           <p className="font-serif text-lg text-ink">Nothing here yet</p>
           <p className="mt-1 text-sm text-ink-muted">
-            Open any work in the library and tap "Read Later" to add it.
+            Open any work in the library and tap &quot;Read Later&quot; to add it.
           </p>
           <Link
             href="/library"

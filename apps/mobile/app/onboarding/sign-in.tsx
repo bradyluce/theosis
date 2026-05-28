@@ -1,5 +1,5 @@
 // Last onboarding step. Two paths:
-//   - "Sign in / Sign up" → pushes /auth-debug, which holds the actual
+//   - "Sign in / Sign up" → pushes /auth, which holds the actual
 //     OAuth + email forms. When Clerk fires isSignedIn=true, we auto-
 //     commit the onboarding draft and replace the route into /(tabs)
 //     so the user never sees this screen again.
@@ -34,7 +34,7 @@ export default function SignInScreen() {
     router.replace("/(tabs)");
   }
 
-  // Auto-redirect when the user comes back from /auth-debug already
+  // Auto-redirect when the user comes back from /auth already
   // signed in. The dependency on isLoaded keeps us from triggering
   // during Clerk's initial hydration when isSignedIn is briefly
   // false-positive.
@@ -55,7 +55,7 @@ export default function SignInScreen() {
       >
         <View style={styles.choices}>
           <Pressable
-            onPress={() => router.push("/auth-debug")}
+            onPress={() => router.push("/auth")}
             style={({ pressed }) => [
               styles.primaryButton,
               pressed && { opacity: 0.9 },

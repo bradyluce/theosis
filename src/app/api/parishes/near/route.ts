@@ -2,6 +2,7 @@ import "server-only";
 
 import { NextResponse, type NextRequest } from "next/server";
 import { findParishesNear } from "@/lib/parishes/server-store";
+import { getClientIp, rateLimit } from "@/lib/rate-limit";
 
 // GET /api/parishes/near?lat=40.7128&lng=-74.006&radius=50&limit=25&jurisdictions=goa,oca
 //
@@ -13,6 +14,22 @@ import { findParishesNear } from "@/lib/parishes/server-store";
 const CACHE_CONTROL = "public, max-age=60, stale-while-revalidate=600";
 
 export async function GET(req: NextRequest) {
+  const rl = rateLimit(`parishes-near:${getClientIp(req)}`, {
+    limit: 30,
+    windowMs: 60_000,
+  });
+  if (!rl.ok) {
+    return NextResponse.json(
+      { error: "rate_limited" },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(Math.ceil((rl.resetAt - Date.now()) / 1000)),
+        },
+      },
+    );
+  }
+
   const params = req.nextUrl.searchParams;
   const lat = Number(params.get("lat"));
   const lng = Number(params.get("lng"));

@@ -61,6 +61,13 @@ next-env.d.ts
 # Claude Code internals (worktrees + preview launch config)
 .claude/
 
+# Claude Code agent workspace + skills lock (regenerated on demand)
+/.agents/
+/skills-lock.json
+
+# Stray sample files (e.g. corpus snippets dumped at root)
+/sample*.txt
+
 # Temp test files
 .tmp_*
 tmp_test.txt
@@ -91,3 +98,6 @@ tmp_test.txt
 
 # clerk configuration (can include secrets)
 /.clerk/
+
+# Short-form clip output (downloaded YT video + rendered TikTok clips)
+/content/clips/

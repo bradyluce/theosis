@@ -501,7 +501,7 @@ function AccountCard() {
     <>
       <SignedOut>
         <Pressable
-          onPress={() => router.push("/auth-debug")}
+          onPress={() => router.push("/auth")}
           style={({ pressed }) => [
             styles.linkRow,
             pressed && { backgroundColor: colors.surfaceStrong },
@@ -527,7 +527,7 @@ function AccountCard() {
           </Text>
           <View style={styles.accountActions}>
             <Pressable
-              onPress={() => router.push("/auth-debug")}
+              onPress={() => router.push("/auth")}
               style={({ pressed }) => [
                 styles.pillButton,
                 pressed && { opacity: 0.7 },

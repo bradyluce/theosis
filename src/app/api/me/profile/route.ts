@@ -104,6 +104,19 @@ export const PATCH = withUserResponse(async (dbUser, req) => {
         ),
       )
       .returning();
+    if (!row) {
+      // Race: the version check above passed at read-committed isolation
+      // but a concurrent PATCH committed between then and our UPDATE.
+      // Re-read and report the latest version so the client can decide
+      // whether to retry.
+      const latest = await tx.query.userProfiles.findFirst({
+        where: eq(userProfiles.userId, dbUser.id),
+      });
+      throw new ConflictError(
+        "version_mismatch",
+        latest ? rowToDto(latest) : null,
+      );
+    }
     return NextResponse.json({ data: rowToDto(row) });
   });
 });

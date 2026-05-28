@@ -206,9 +206,7 @@ export default function ParishesScreen() {
   // The effect synchronizes the OS-owned permission state with our React
   // state — exactly the cross-system bridge useEffect is meant for. The
   // setState calls inside are gated by a kind check so we never re-trigger
-  // unnecessarily; eslint's set-state-in-effect rule fires on the literal
-  // pattern but this is the correct shape here.
-  /* eslint-disable react-hooks/set-state-in-effect */
+  // unnecessarily.
   useEffect(() => {
     if (!permission) return;
     if (state.kind !== "idle" && state.kind !== "requesting" && state.kind !== "denied") {
@@ -222,7 +220,6 @@ export default function ParishesScreen() {
     }
     // status "undetermined" → stay idle, wait for user tap.
   }, [permission, acquireLocation, state.kind]);
-  /* eslint-enable react-hooks/set-state-in-effect */
 
   const handleEnableTap = useCallback(async () => {
     setState({ kind: "requesting" });

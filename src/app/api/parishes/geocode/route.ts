@@ -2,6 +2,8 @@ import "server-only";
 
 import { NextResponse, type NextRequest } from "next/server";
 
+import { getClientIp, rateLimit } from "@/lib/rate-limit";
+
 // GET /api/parishes/geocode?q=10001
 //
 // Forward-geocode a US/Canada/Mexico location string (ZIP, city, address)
@@ -34,6 +36,27 @@ type GeocodeResult = { lat: number; lng: number; label: string };
 const cache = new Map<string, GeocodeResult>();
 
 export async function GET(req: NextRequest) {
+  // Per-IP rate limit. Nominatim's policy is one request per second; we
+  // give each client 10 / minute to leave headroom for typos and retries
+  // while still keeping the total volume well inside the OSM ceiling.
+  const limit = rateLimit(`geocode:${getClientIp(req)}`, {
+    limit: 10,
+    windowMs: 60_000,
+  });
+  if (!limit.ok) {
+    return NextResponse.json(
+      { error: "rate_limited" },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(
+            Math.ceil((limit.resetAt - Date.now()) / 1000),
+          ),
+        },
+      },
+    );
+  }
+
   const q = req.nextUrl.searchParams.get("q")?.trim() ?? "";
   if (!q) {
     return NextResponse.json(
@@ -75,14 +98,24 @@ export async function GET(req: NextRequest) {
       },
     });
   } catch (err) {
+    // Log internal details, but don't surface `err.message` to the client —
+    // it can leak DNS, IP, and internal hostnames.
+    console.error(
+      "[/api/parishes/geocode] upstream unreachable:",
+      err instanceof Error ? err.message : err,
+    );
     return NextResponse.json(
-      { error: `geocoding upstream unreachable: ${(err as Error).message}` },
+      { error: "geocoder_unreachable" },
       { status: 502 },
     );
   }
   if (!upstream.ok) {
+    console.error(
+      "[/api/parishes/geocode] upstream non-ok status:",
+      upstream.status,
+    );
     return NextResponse.json(
-      { error: `geocoding upstream returned ${upstream.status}` },
+      { error: "geocoder_error" },
       { status: 502 },
     );
   }
@@ -96,8 +129,12 @@ export async function GET(req: NextRequest) {
   try {
     data = (await upstream.json()) as NominatimRecord[];
   } catch (err) {
+    console.error(
+      "[/api/parishes/geocode] upstream returned non-JSON:",
+      err instanceof Error ? err.message : err,
+    );
     return NextResponse.json(
-      { error: `geocoding upstream returned non-JSON: ${(err as Error).message}` },
+      { error: "geocoder_error" },
       { status: 502 },
     );
   }
@@ -105,7 +142,7 @@ export async function GET(req: NextRequest) {
   const first = data[0];
   if (!first) {
     return NextResponse.json(
-      { error: `No results for "${q}"` },
+      { error: "no_results" },
       { status: 404 },
     );
   }
@@ -113,8 +150,12 @@ export async function GET(req: NextRequest) {
   const lat = parseFloat(first.lat);
   const lng = parseFloat(first.lon);
   if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+    console.error(
+      "[/api/parishes/geocode] non-numeric coordinates from upstream:",
+      first,
+    );
     return NextResponse.json(
-      { error: `Geocoder returned non-numeric coordinates` },
+      { error: "geocoder_error" },
       { status: 502 },
     );
   }

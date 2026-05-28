@@ -1,9 +1,8 @@
-// Privacy Policy — substantive draft suitable for App Store
-// submission. Covers: what we collect, how we use it, who we share
-// with, retention, security, your rights (access/correction/deletion),
-// children's privacy, international transfers, third-party providers,
-// changes, contact. Replace company name + jurisdiction + email
-// before going live.
+// Privacy Policy — production text. Covers: what we collect, how we
+// use it, who we share with, retention, security, your rights
+// (access/correction/deletion), children's privacy, international
+// transfers, third-party providers, changes, contact. Update the
+// "Last updated" eyebrow below whenever substantive changes ship.
 
 import Feather from "@expo/vector-icons/Feather";
 import { LinearGradient } from "expo-linear-gradient";
@@ -173,8 +172,8 @@ export default function PrivacyScreen() {
           permanently removes every record we hold about you from our
           servers. This action is not reversible.
           {"\n"}
-          • Correction or portability: contact us at the email shown on
-          the App Store listing.
+          • Correction or portability: contact us at
+          contact.theosis@gmail.com.
         </Section>
 
         <Section number="9" title="Children">
@@ -220,10 +219,9 @@ export default function PrivacyScreen() {
 
         <Section number="14" title="Contact">
           Privacy questions, deletion requests, or rights requests should
-          be sent to the email shown on the App Store listing. We respond
-          personally, usually within five business days. For matters
-          governed by GDPR you may also contact your local data
-          protection authority.
+          be sent to contact.theosis@gmail.com. We respond personally,
+          usually within five business days. For matters governed by
+          GDPR you may also contact your local data protection authority.
         </Section>
 
         <View style={styles.footer}>

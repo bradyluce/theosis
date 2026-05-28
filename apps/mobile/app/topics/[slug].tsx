@@ -51,7 +51,7 @@ export default function TopicScreen() {
       void recordLibraryVisit({
         kind: "topic",
         slug,
-        label: data.topic.title,
+        label: data.topic.label,
       });
     }
   }, [data, slug]);

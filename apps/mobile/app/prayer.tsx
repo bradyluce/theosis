@@ -11,11 +11,10 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import Feather from "@expo/vector-icons/Feather";
 import { LinearGradient } from "expo-linear-gradient";
 import type { DailyResponse } from "@theosis/core";
 
-import { Card, Eyebrow, GiltRule } from "@/components/theosis/primitives";
+import { Eyebrow, GiltRule } from "@/components/theosis/primitives";
 import { Pill } from "@/components/theosis/pill";
 import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
@@ -193,8 +192,8 @@ export default function PrayerScreen() {
           ) : itemIds.length === 0 ? (
             <View style={styles.emptyState}>
               <Text style={[text.body, { textAlign: "center" }]}>
-                Your {slot} rule is empty. Tap "Add prayer" below to start
-                building it.
+                Your {slot} rule is empty. Tap &quot;Add prayer&quot; below to
+                start building it.
               </Text>
             </View>
           ) : (

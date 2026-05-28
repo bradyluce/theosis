@@ -5,6 +5,7 @@ import type { IconRef, Person } from "@theosis/core";
 import { getLibraryPeopleFromAll } from "@/lib/content/commentary-loader";
 import { getIconForPerson } from "@/lib/content/icon-store";
 import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
+import { resolveRequestOrigin } from "@/lib/request-origin";
 
 // List Library-worthy Persons (canonized saints OR authors of any
 // Work with a real title) with their resolved icon inlined. Mobile
@@ -21,11 +22,7 @@ const CACHE_CONTROL = "public, max-age=300, stale-while-revalidate=3600";
 export type LibraryPerson = Person & { icon: IconRef | null };
 
 export async function GET(request: NextRequest) {
-  const url = new URL(request.url);
-  const proto =
-    request.headers.get("x-forwarded-proto") ?? url.protocol.replace(":", "");
-  const host = request.headers.get("host") ?? url.host;
-  const origin = `${proto}://${host}`;
+  const origin = resolveRequestOrigin(request);
 
   const people = getLibraryPeopleFromAll();
   const enriched: LibraryPerson[] = people.map((person) => ({

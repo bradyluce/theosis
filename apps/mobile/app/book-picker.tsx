@@ -181,7 +181,7 @@ export default function BookPicker() {
 
         {catalogQuery.error ? (
           <View style={styles.errorCard}>
-            <Text style={text.eyebrow}>Couldn't load catalog</Text>
+            <Text style={text.eyebrow}>Couldn&apos;t load catalog</Text>
             <Text style={[text.body, { color: colors.error }]}>
               {catalogQuery.error instanceof Error
                 ? catalogQuery.error.message

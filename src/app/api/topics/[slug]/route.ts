@@ -9,6 +9,7 @@ import {
 import { getIconForPerson } from "@/lib/content/icon-store";
 import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
 import { getTopicPageBySlug } from "@/lib/content/queries";
+import { resolveRequestOrigin } from "@/lib/request-origin";
 
 // Full topic landing page. Resolves the curated Father IDs and Work slugs
 // against the live people/works catalog so the client gets enriched records
@@ -30,11 +31,7 @@ export async function GET(
     return NextResponse.json({ error: `Topic not found: ${slug}` }, { status: 404 });
   }
 
-  const url = new URL(request.url);
-  const proto =
-    request.headers.get("x-forwarded-proto") ?? url.protocol.replace(":", "");
-  const host = request.headers.get("host") ?? url.host;
-  const origin = `${proto}://${host}`;
+  const origin = resolveRequestOrigin(request);
 
   const allPeople = getAllPeopleFromAll();
   const peopleById = new Map(allPeople.map((p) => [p.id, p]));

@@ -18,7 +18,7 @@ import {
   GiltRule,
   SectionHeader,
 } from "@/components/theosis/primitives";
-import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
+import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { getApi } from "@/lib/api";
 import {
   type CompletionMark,

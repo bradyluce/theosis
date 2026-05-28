@@ -48,208 +48,230 @@ type SearchDocument = {
   searchText: string;
 };
 
-const primaryTranslation = getPrimaryTranslation();
-const translations = getAvailableTranslations();
-const people = getAllPeople();
-const works = getAllWorks();
-const topics = getAllTopics();
-const dailies = getAllDailyCommemorations();
-const primaryVerses = bibleVerses.filter(
-  (verse) => verse.translationId === primaryTranslation.id,
-);
+// Lazy-init container. Module load no longer eagerly walks every
+// person/work/topic/daily and constructs the fuse.js index — that
+// happens on first searchTheosis() call. Cuts ~250–400 ms off cold-start
+// time on Vercel, and avoids constructing the index at all on cold
+// starts that never hit /api/search.
 
-const verseDocuments: SearchDocument[] = primaryVerses.map((verse) => ({
-  id: `verse-${verse.id}`,
-  kind: "verse",
-  title: verse.referenceLabel,
-  href: `/bible/${verse.translationId}/${verse.bookSlug}/${verse.chapterNumber}#${verse.id}`,
-  kicker: primaryTranslation.abbreviation,
-  snippet: verse.text,
-  baseWeight: 72,
-  searchText: `${verse.referenceLabel} ${verse.text} ${verse.emphasisLabel ?? ""}`,
-}));
-
-const commentaryDocuments: SearchDocument[] = [];
-
-const commentaryIndexDocuments: SearchDocument[] = [
-  ...primaryVerses.flatMap((verse) => {
-    const direct = getDirectCommentaryForVerse(verse.id).map((entry) => {
-      const work = getWorkById(entry.workId);
-      const source = getSourceById(entry.sourceId);
-
-      return {
-        id: `commentary-${entry.id}`,
-        kind: "commentary" as const,
-        title: entry.title,
-        href: `/bible/${verse.translationId}/${verse.bookSlug}/${verse.chapterNumber}#${verse.id}`,
-        kicker: "Direct commentary",
-        snippet: entry.excerpt,
-        baseWeight: 96,
-        searchText: `${entry.title} ${entry.excerpt} ${entry.takeaway} ${
-          work?.title ?? ""
-        } ${source?.collection ?? ""}`,
-      };
-    });
-
-    const related = getRelatedEntriesForVerse(verse.id).map((entry) => {
-      const work = getWorkById(entry.workId);
-      const source = getSourceById(entry.sourceId);
-
-      return {
-        id: `commentary-${entry.id}`,
-        kind: "commentary" as const,
-        title: entry.title,
-        href: `/bible/${verse.translationId}/${verse.bookSlug}/${verse.chapterNumber}#${verse.id}`,
-        kicker: "Related writing",
-        snippet: entry.excerpt,
-        baseWeight: 78,
-        searchText: `${entry.title} ${entry.excerpt} ${entry.takeaway} ${
-          work?.title ?? ""
-        } ${source?.collection ?? ""}`,
-      };
-    });
-
-    return [...direct, ...related];
-  }),
-];
-
-const personDocuments: SearchDocument[] = people.map((person) => ({
-  id: `person-${person.id}`,
-  kind: "person",
-  title: person.honorific ? `${person.honorific} ${person.name}` : person.name,
-  href: `/library/people/${person.slug}`,
-  kicker: person.kind,
-  snippet: person.summary,
-  baseWeight: 70,
-  searchText: `${person.name} ${person.summary} ${person.eraLabel} ${person.topicSlugs.join(" ")}`,
-}));
-
-// Group every chapter-search entry by workId. Each parent Work needs:
-// (a) its chapter text folded into searchText so keyword hits inside
-// (say) Confessions Book VIII surface Confessions as a single result,
-// and (b) at least one stable Work record if it's only present in the
-// ingested catalog (not in seed/library.ts). Previously each chapter was
-// indexed as its own SearchDocument, which made a search for
-// "confessions" return 13 stacked "Books".
-type WorkChapterAggregate = {
-  workSlug: string;
-  workTitle: string;
-  personName: string;
-  topicSlugs: Set<string>;
-  text: string;
+type SearchEngine = {
+  fuse: Fuse<SearchDocument>;
+  primaryTranslation: ReturnType<typeof getPrimaryTranslation>;
+  translations: ReturnType<typeof getAvailableTranslations>;
 };
-const chaptersByWorkId = new Map<string, WorkChapterAggregate>();
-for (const entry of libraryChapters) {
-  let agg = chaptersByWorkId.get(entry.workId);
-  if (!agg) {
-    agg = {
-      workSlug: entry.workSlug,
-      workTitle: entry.workTitle,
-      personName: entry.personName,
-      topicSlugs: new Set(),
-      text: "",
-    };
-    chaptersByWorkId.set(entry.workId, agg);
-  }
-  for (const slug of entry.topicSlugs) agg.topicSlugs.add(slug);
-  agg.text += ` ${entry.chapterLabel} ${entry.chapterTitle} ${entry.excerpt}`;
-}
 
-// Seed Works carry richer metadata (workType, summary, sourceId). For
-// those, fold chapter text into searchText. For ingested-only works
-// (the 2,500+ in content/normalized/library/catalog.json that aren't in
-// seed/library.ts — Confessions, Banquet of the Ten Virgins, Contra
-// Celsum, etc.), synthesize a Work document from the chapter aggregate
-// so they actually appear in search results.
-const seededWorkIds = new Set(works.map((work) => work.id));
+let engineCache: SearchEngine | null = null;
 
-const seededWorkDocuments: SearchDocument[] = works.map((work) => {
-  const author = people.find((person) => person.id === work.personId);
-  const source = getSourceById(work.sourceId);
-  const agg = chaptersByWorkId.get(work.id);
+function getEngine(): SearchEngine {
+  if (engineCache) return engineCache;
 
-  return {
-    id: `work-${work.id}`,
-    kind: "work" as const,
-    title: work.title,
-    href: `/library/works/${work.slug}`,
-    kicker: work.workType,
-    snippet: `${author?.name ?? "Unknown author"} / ${source?.collection ?? "Seeded source"}`,
-    baseWeight: 66,
-    searchText: `${work.title} ${work.summary} ${author?.name ?? ""} ${
-      source?.collection ?? ""
-    } ${work.topicSlugs.join(" ")} ${agg?.text ?? ""}`,
+  const primaryTranslation = getPrimaryTranslation();
+  const translations = getAvailableTranslations();
+  const people = getAllPeople();
+  const works = getAllWorks();
+  const topics = getAllTopics();
+  const dailies = getAllDailyCommemorations();
+  const primaryVerses = bibleVerses.filter(
+    (verse) => verse.translationId === primaryTranslation.id,
+  );
+
+  const verseDocuments: SearchDocument[] = primaryVerses.map((verse) => ({
+    id: `verse-${verse.id}`,
+    kind: "verse",
+    title: verse.referenceLabel,
+    href: `/bible/${verse.translationId}/${verse.bookSlug}/${verse.chapterNumber}#${verse.id}`,
+    kicker: primaryTranslation.abbreviation,
+    snippet: verse.text,
+    baseWeight: 72,
+    searchText: `${verse.referenceLabel} ${verse.text} ${verse.emphasisLabel ?? ""}`,
+  }));
+
+  const commentaryDocuments: SearchDocument[] = [];
+
+  const commentaryIndexDocuments: SearchDocument[] = [
+    ...primaryVerses.flatMap((verse) => {
+      const direct = getDirectCommentaryForVerse(verse.id).map((entry) => {
+        const work = getWorkById(entry.workId);
+        const source = getSourceById(entry.sourceId);
+
+        return {
+          id: `commentary-${entry.id}`,
+          kind: "commentary" as const,
+          title: entry.title,
+          href: `/bible/${verse.translationId}/${verse.bookSlug}/${verse.chapterNumber}#${verse.id}`,
+          kicker: "Direct commentary",
+          snippet: entry.excerpt,
+          baseWeight: 96,
+          searchText: `${entry.title} ${entry.excerpt} ${entry.takeaway} ${
+            work?.title ?? ""
+          } ${source?.collection ?? ""}`,
+        };
+      });
+
+      const related = getRelatedEntriesForVerse(verse.id).map((entry) => {
+        const work = getWorkById(entry.workId);
+        const source = getSourceById(entry.sourceId);
+
+        return {
+          id: `commentary-${entry.id}`,
+          kind: "commentary" as const,
+          title: entry.title,
+          href: `/bible/${verse.translationId}/${verse.bookSlug}/${verse.chapterNumber}#${verse.id}`,
+          kicker: "Related writing",
+          snippet: entry.excerpt,
+          baseWeight: 78,
+          searchText: `${entry.title} ${entry.excerpt} ${entry.takeaway} ${
+            work?.title ?? ""
+          } ${source?.collection ?? ""}`,
+        };
+      });
+
+      return [...direct, ...related];
+    }),
+  ];
+
+  const personDocuments: SearchDocument[] = people.map((person) => ({
+    id: `person-${person.id}`,
+    kind: "person",
+    title: person.honorific ? `${person.honorific} ${person.name}` : person.name,
+    href: `/library/people/${person.slug}`,
+    kicker: person.kind,
+    snippet: person.summary,
+    baseWeight: 70,
+    searchText: `${person.name} ${person.summary} ${person.eraLabel} ${person.topicSlugs.join(" ")}`,
+  }));
+
+  // Group every chapter-search entry by workId. Each parent Work needs:
+  // (a) its chapter text folded into searchText so keyword hits inside
+  // (say) Confessions Book VIII surface Confessions as a single result,
+  // and (b) at least one stable Work record if it's only present in the
+  // ingested catalog (not in seed/library.ts). Previously each chapter was
+  // indexed as its own SearchDocument, which made a search for
+  // "confessions" return 13 stacked "Books".
+  type WorkChapterAggregate = {
+    workSlug: string;
+    workTitle: string;
+    personName: string;
+    topicSlugs: Set<string>;
+    text: string;
   };
-});
+  const chaptersByWorkId = new Map<string, WorkChapterAggregate>();
+  for (const entry of libraryChapters) {
+    let agg = chaptersByWorkId.get(entry.workId);
+    if (!agg) {
+      agg = {
+        workSlug: entry.workSlug,
+        workTitle: entry.workTitle,
+        personName: entry.personName,
+        topicSlugs: new Set(),
+        text: "",
+      };
+      chaptersByWorkId.set(entry.workId, agg);
+    }
+    for (const slug of entry.topicSlugs) agg.topicSlugs.add(slug);
+    agg.text += ` ${entry.chapterLabel} ${entry.chapterTitle} ${entry.excerpt}`;
+  }
 
-const ingestedWorkDocuments: SearchDocument[] = [];
-for (const [workId, agg] of chaptersByWorkId) {
-  if (seededWorkIds.has(workId)) continue;
-  ingestedWorkDocuments.push({
-    id: `work-${workId}`,
-    kind: "work",
-    title: agg.workTitle,
-    href: `/library/works/${agg.workSlug}`,
-    kicker: agg.personName,
-    snippet: agg.personName,
-    baseWeight: 66,
-    searchText: `${agg.workTitle} ${agg.personName} ${[...agg.topicSlugs].join(" ")} ${agg.text}`,
+  // Seed Works carry richer metadata (workType, summary, sourceId). For
+  // those, fold chapter text into searchText. For ingested-only works
+  // (the 2,500+ in content/normalized/library/catalog.json that aren't in
+  // seed/library.ts — Confessions, Banquet of the Ten Virgins, Contra
+  // Celsum, etc.), synthesize a Work document from the chapter aggregate
+  // so they actually appear in search results.
+  const seededWorkIds = new Set(works.map((work) => work.id));
+
+  const seededWorkDocuments: SearchDocument[] = works.map((work) => {
+    const author = people.find((person) => person.id === work.personId);
+    const source = getSourceById(work.sourceId);
+    const agg = chaptersByWorkId.get(work.id);
+
+    return {
+      id: `work-${work.id}`,
+      kind: "work" as const,
+      title: work.title,
+      href: `/library/works/${work.slug}`,
+      kicker: work.workType,
+      snippet: `${author?.name ?? "Unknown author"} / ${source?.collection ?? "Seeded source"}`,
+      baseWeight: 66,
+      searchText: `${work.title} ${work.summary} ${author?.name ?? ""} ${
+        source?.collection ?? ""
+      } ${work.topicSlugs.join(" ")} ${agg?.text ?? ""}`,
+    };
   });
+
+  const ingestedWorkDocuments: SearchDocument[] = [];
+  for (const [workId, agg] of chaptersByWorkId) {
+    if (seededWorkIds.has(workId)) continue;
+    ingestedWorkDocuments.push({
+      id: `work-${workId}`,
+      kind: "work",
+      title: agg.workTitle,
+      href: `/library/works/${agg.workSlug}`,
+      kicker: agg.personName,
+      snippet: agg.personName,
+      baseWeight: 66,
+      searchText: `${agg.workTitle} ${agg.personName} ${[...agg.topicSlugs].join(" ")} ${agg.text}`,
+    });
+  }
+
+  const workDocuments: SearchDocument[] = [
+    ...seededWorkDocuments,
+    ...ingestedWorkDocuments,
+  ];
+
+  const topicDocuments: SearchDocument[] = topics.map((topic) => ({
+    id: `topic-${topic.slug}`,
+    kind: "topic",
+    title: topic.label,
+    href: `/library#topic-${topic.slug}`,
+    kicker: "Topic",
+    snippet: topic.summary,
+    baseWeight: 58,
+    searchText: `${topic.label} ${topic.summary}`,
+  }));
+
+  const dailyDocuments: SearchDocument[] = dailies.map((daily) => ({
+    id: `daily-${daily.id}`,
+    kind: "daily",
+    title: daily.title,
+    href: "/daily",
+    kicker: "Daily",
+    snippet: daily.summary,
+    baseWeight: 54,
+    searchText: `${daily.title} ${daily.summary}`,
+  }));
+
+  // Per-chapter documents were dropped — their text is now folded into
+  // each parent Work's searchText (see chapterTextByWorkId above). Each
+  // Work surfaces as a single search result regardless of how many
+  // chapters/books it has.
+
+  const documents = [
+    ...verseDocuments,
+    ...commentaryDocuments,
+    ...commentaryIndexDocuments,
+    ...personDocuments,
+    ...workDocuments,
+    ...topicDocuments,
+    ...dailyDocuments,
+  ];
+
+  const fuse = new Fuse(documents, {
+    includeScore: true,
+    ignoreLocation: true,
+    threshold: 0.38,
+    keys: [
+      { name: "title", weight: 0.35 },
+      { name: "searchText", weight: 0.65 },
+    ],
+  });
+
+  engineCache = { fuse, primaryTranslation, translations };
+  return engineCache;
 }
-
-const workDocuments: SearchDocument[] = [
-  ...seededWorkDocuments,
-  ...ingestedWorkDocuments,
-];
-
-const topicDocuments: SearchDocument[] = topics.map((topic) => ({
-  id: `topic-${topic.slug}`,
-  kind: "topic",
-  title: topic.label,
-  href: `/library#topic-${topic.slug}`,
-  kicker: "Topic",
-  snippet: topic.summary,
-  baseWeight: 58,
-  searchText: `${topic.label} ${topic.summary}`,
-}));
-
-const dailyDocuments: SearchDocument[] = dailies.map((daily) => ({
-  id: `daily-${daily.id}`,
-  kind: "daily",
-  title: daily.title,
-  href: "/daily",
-  kicker: "Daily",
-  snippet: daily.summary,
-  baseWeight: 54,
-  searchText: `${daily.title} ${daily.summary}`,
-}));
-
-// Per-chapter documents were dropped — their text is now folded into
-// each parent Work's searchText (see chapterTextByWorkId above). Each
-// Work surfaces as a single search result regardless of how many
-// chapters/books it has.
-
-const documents = [
-  ...verseDocuments,
-  ...commentaryDocuments,
-  ...commentaryIndexDocuments,
-  ...personDocuments,
-  ...workDocuments,
-  ...topicDocuments,
-  ...dailyDocuments,
-];
-
-const fuse = new Fuse(documents, {
-  includeScore: true,
-  ignoreLocation: true,
-  threshold: 0.38,
-  keys: [
-    { name: "title", weight: 0.35 },
-    { name: "searchText", weight: 0.65 },
-  ],
-});
 
 function createReferenceResults(intent: Extract<SearchIntent, { kind: "reference" }>) {
+  const { primaryTranslation, translations } = getEngine();
   const verseId = `${primaryTranslation.id}:${intent.reference.bookSlug}.${intent.reference.chapterNumber}.${intent.reference.verseStart}`;
   const verse = getVerseById(verseId);
 
@@ -347,6 +369,7 @@ export function searchTheosis(query: string): {
     }
   }
 
+  const { fuse } = getEngine();
   for (const match of fuse.search(trimmedQuery, { limit: 12 })) {
     const document = match.item;
     const score = typeof match.score === "number" ? 1 - match.score : 0.5;

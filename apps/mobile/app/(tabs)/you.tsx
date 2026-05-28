@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo";
+import { SignedOut, useUser } from "@clerk/clerk-expo";
 import Feather from "@expo/vector-icons/Feather";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
@@ -14,16 +14,14 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import {
-  Card,
   DisplayNumeral,
-  Eyebrow,
   GiltRule,
   Halo,
   SectionHeader,
   Wordmark,
 } from "@/components/theosis/primitives";
 import { ProfileDrawer } from "@/components/theosis/profile-drawer";
-import { colors, fonts, radii, spacing, text } from "@/constants/theosis-theme";
+import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import {
   type BibleHistoryEntry,
   type LibraryHistoryEntry,
@@ -191,7 +189,14 @@ export default function YouScreen() {
 
   const activityItems: {
     id: string;
-    kind: "saved" | "reading" | "commentary";
+    kind:
+      | "saved"
+      | "reading"
+      | "commentary"
+      | "daily"
+      | "notes"
+      | "bible"
+      | "library";
     label: string;
     sub?: string;
     href?: string;
@@ -361,7 +366,7 @@ export default function YouScreen() {
           <Text style={styles.displayName}>{displayName}</Text>
           <SignedOut>
             <Pressable
-              onPress={() => router.push("/auth-debug")}
+              onPress={() => router.push("/auth")}
               accessibilityRole="button"
               accessibilityLabel="Sign in to sync"
               style={({ pressed }) => [

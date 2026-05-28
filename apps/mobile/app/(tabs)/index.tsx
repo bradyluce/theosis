@@ -113,6 +113,8 @@ function readingPriority(label: string): number {
 // liturgical life; if you want a different day, the calendar lives
 // elsewhere.
 
+// Reading-row tap target. Returns a typed-router object so the Daily
+// readings open the Bible reader at the right verse range.
 function readingHref(
   translation: string,
   scripture: {
@@ -121,13 +123,21 @@ function readingHref(
     verseStart: number;
     verseEnd?: number;
   },
-): string {
+) {
   const { bookSlug, chapterNumber, verseStart, verseEnd } = scripture;
   const range =
     verseEnd && verseEnd !== verseStart
       ? `${verseStart}-${verseEnd}`
       : `${verseStart}`;
-  return `/explore?translation=${translation}&book=${bookSlug}&chapter=${chapterNumber}&highlight=${range}`;
+  return {
+    pathname: "/explore" as const,
+    params: {
+      translation,
+      book: bookSlug,
+      chapter: String(chapterNumber),
+      highlight: range,
+    },
+  };
 }
 
 // Local-timezone "today" — matches what a human means by today. Used to

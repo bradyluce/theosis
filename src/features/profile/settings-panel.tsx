@@ -13,7 +13,7 @@ import {
   MapPin,
   Trophy,
 } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useStudyState } from "@/lib/user/use-study-state";
 
 // Settings hub on /you/settings — surfaces the editable location plus the
@@ -33,14 +33,20 @@ export function SettingsPanel() {
   const readingHistory = useStudyState((state) => state.readingHistory);
   const readingList = useStudyState((state) => state.readingList ?? []);
 
+  // Seed the input from the stored value AND update it when the persisted
+  // store hydrates after first paint. We track the last storedLocation
+  // via state (not a ref — the rules-of-refs lint rule flags ref mutation
+  // during render) and re-sync the input when it changes. setState during
+  // render is the React-blessed pattern for this "adjust state based on
+  // props change" case; React schedules a re-render with the new state
+  // before yielding to the browser.
+  const [lastStored, setLastStored] = useState(storedLocation);
   const [locationInput, setLocationInput] = useState(storedLocation);
   const [locationSaved, setLocationSaved] = useState(false);
-
-  // Keep local state in sync when the persisted store hydrates after first
-  // paint — without this, the input shows empty until the user edits.
-  useEffect(() => {
+  if (lastStored !== storedLocation) {
+    setLastStored(storedLocation);
     setLocationInput(storedLocation);
-  }, [storedLocation]);
+  }
 
   function handleLocationBlur() {
     if (locationInput.trim() === storedLocation) return;

@@ -2,13 +2,14 @@ import "server-only";
 
 // Lazy provisioning of the Postgres `users` row. The first authenticated
 // request for a Clerk user creates the row; subsequent requests just look
-// it up. We chose lazy over webhooks for Phase 1 because:
-//   - No webhook endpoint to provision (one less moving part)
+// it up. We chose lazy over webhooks because:
 //   - Idempotent by construction (INSERT ... ON CONFLICT DO NOTHING)
 //   - The first authed request always precedes any destructive action,
 //     so by the time the user can do something with their account, the
 //     row exists.
-// Webhooks (for `user.deleted` cleanup) come later in Phase 3.
+// Deletion is handled both in-app (DELETE /api/me, which cascades) and
+// via the Clerk `user.deleted` webhook (src/app/api/webhooks/clerk/route.ts)
+// for the case where a user deletes their Clerk account out-of-band.
 
 import { eq } from "drizzle-orm";
 

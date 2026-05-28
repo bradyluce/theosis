@@ -4,6 +4,7 @@ import {
   CaretRight,
   Flame,
 } from "@phosphor-icons/react/dist/ssr";
+import { currentUser } from "@clerk/nextjs/server";
 import {
   getChapterVerses,
   getPrimaryTranslation,
@@ -23,10 +24,18 @@ import {
   getPrimaryIconForDay,
 } from "@/lib/content/icon-store";
 
-// Placeholder name until auth is wired in. The user mentioned wanting a
-// toggle to display the patron-saint name instead of the personal name —
-// that lives in profile settings (TODO once auth exists).
-const PLACEHOLDER_NAME = "Brady";
+// Display name for the home greeting. When signed in, prefer the Clerk
+// firstName, then the username, then the email's local part. Falls back
+// to "Friend" when signed out — the web Home is public, so anonymous
+// browsers see "Good Morning, Friend".
+function resolveDisplayName(user: Awaited<ReturnType<typeof currentUser>>): string {
+  if (!user) return "Friend";
+  if (user.firstName) return user.firstName;
+  if (user.username) return user.username;
+  const email = user.emailAddresses?.[0]?.emailAddress;
+  if (email) return email.split("@")[0] ?? "Friend";
+  return "Friend";
+}
 
 function greeting(date: Date): string {
   const hour = date.getHours();
@@ -35,9 +44,11 @@ function greeting(date: Date): string {
   return "Good Evening";
 }
 
-export default function HomePage() {
+export default async function HomePage() {
   const today = new Date();
   const greetingText = greeting(today);
+  const user = await currentUser();
+  const displayName = resolveDisplayName(user);
 
   const primaryTranslation = getPrimaryTranslation();
   const daily = getDailyCommemoration();
@@ -89,7 +100,7 @@ export default function HomePage() {
           screens. Desktop uses the side rail, so no padding needed there. */}
       <header className="flex items-center justify-between pt-3 pr-14 sm:pr-16 lg:pr-0">
         <h1 className="font-serif text-3xl tracking-tight text-ink">
-          {greetingText}, {PLACEHOLDER_NAME}
+          {greetingText}, {displayName}
         </h1>
         <button
           aria-label="Streak"

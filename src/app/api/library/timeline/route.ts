@@ -5,6 +5,7 @@ import { parseEra, type TimelineEntry } from "@theosis/core";
 import { getAllPeopleFromAll } from "@/lib/content/commentary-loader";
 import { getIconForPerson } from "@/lib/content/icon-store";
 import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
+import { resolveRequestOrigin } from "@/lib/request-origin";
 
 // Patristic timeline — every catalogued Person with a parseable era,
 // already bucketed (year resolved, icon URL absolute). Mobile clients
@@ -15,11 +16,7 @@ import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
 const CACHE_CONTROL = "public, max-age=600, stale-while-revalidate=3600";
 
 export async function GET(request: NextRequest) {
-  const url = new URL(request.url);
-  const proto =
-    request.headers.get("x-forwarded-proto") ?? url.protocol.replace(":", "");
-  const host = request.headers.get("host") ?? url.host;
-  const origin = `${proto}://${host}`;
+  const origin = resolveRequestOrigin(request);
 
   // Same union as the web /library/timeline page used — seed + ingested +
   // calendar — so the mobile gets every Person with any catalog presence.

@@ -14,7 +14,7 @@ import "server-only";
 //      one. The only "blend" is on profile preferences: missing server
 //      fields fall back to whatever the client provided.
 
-import { eq, and } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 
 import { db } from "@/lib/db";
 import {
@@ -298,6 +298,3 @@ export async function importSnapshot(opts: {
   });
 }
 
-// Silences the unused-import warning in code paths that only use `and`
-// transiently.
-void and;

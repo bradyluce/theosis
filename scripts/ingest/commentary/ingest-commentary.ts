@@ -26,6 +26,7 @@ import { parseIgnatius } from "./parse-ignatius";
 import { parseAphrahat } from "./parse-aphrahat";
 import { parseEphraimSyrian } from "./parse-ephraim-syrian";
 import { parseEphremCaveOfTreasures } from "./parse-ephrem-cave-of-treasures";
+import { parseEphremGenesis } from "./parse-ephrem-genesis";
 import { parseJohnDamascus } from "./parse-john-damascus";
 import { parseJohnDamascusDivineImages } from "./parse-john-damascus-divine-images";
 import { parseCyrilJerusalem } from "./parse-cyril-jerusalem";
@@ -726,6 +727,27 @@ function main() {
   );
   console.log(
     `[ephrem-cave-of-treasures] ${caveOfTreasures.chapters.length} chapters, ${caveParagraphs} paragraphs.`,
+  );
+
+  // ── Ephraim the Syrian — Commentary on Genesis (Russian → English) ──────────
+  const ephremGenesis = parseEphremGenesis({
+    rawDir: join(LIBRARY_DIRECTORY, "ephrem-genesis"),
+  });
+  if (!ephremGenesis.chapters || ephremGenesis.chapters.length === 0) {
+    throw new Error("[ephraim-commentary-genesis] No chapters parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "ephraim-commentary-genesis.json"),
+    `${JSON.stringify(ephremGenesis, null, 2)}\n`,
+    "utf8",
+  );
+  const ephremGenesisParagraphs = ephremGenesis.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[ephraim-commentary-genesis] ${ephremGenesis.chapters.length} chapters, ${ephremGenesisParagraphs} paragraphs, ${ephremGenesis.entries.length} verse-keyed entries.`,
   );
 
   // ── Irenaeus of Lyons — Adversus Haereses (ANF Vol. 1) ──────────────────────

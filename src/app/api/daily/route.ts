@@ -13,6 +13,7 @@ import {
   getPrimaryIconForDay,
 } from "@/lib/content/icon-store";
 import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
+import { resolveRequestOrigin } from "@/lib/request-origin";
 import type { IconRef } from "@theosis/core";
 
 // Serve a pre-composed snapshot of "today's daily commemoration" for the
@@ -57,15 +58,10 @@ export async function GET(request: NextRequest) {
   );
   const fastDetail = composeDailyFastDetail(date ?? todayUtc) ?? null;
 
-  // Derive the origin from the Host header rather than url.origin, which
-  // returns the server's bind address ("0.0.0.0" in `next dev -H 0.0.0.0`)
-  // — unreachable from a real device. The Host header carries whatever the
-  // client actually asked for (e.g. "192.168.1.10:3000" or the Vercel URL),
-  // which is what the icons need to be addressable under.
-  const proto =
-    request.headers.get("x-forwarded-proto") ?? url.protocol.replace(":", "");
-  const host = request.headers.get("host") ?? url.host;
-  const origin = `${proto}://${host}`;
+  // Resolve via PUBLIC_ORIGIN if pinned (prod / preview), falling back to
+  // the request's Host header for local dev. See resolveRequestOrigin for
+  // details on why this matters (Host header injection).
+  const origin = resolveRequestOrigin(request);
   const primaryIcon = toAbsoluteIconUrl(
     getPrimaryIconForDay(daily, saints),
     origin,

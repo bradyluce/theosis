@@ -1,9 +1,8 @@
-// Terms of Service — substantive draft suitable for App Store
-// submission. Plain-English, no legalese theater; covers acceptance,
-// account, content, conduct, third-party services, intellectual
-// property, disclaimers, liability cap, termination, governing law,
-// changes, and contact. Replace company name + jurisdiction + email
-// before going live.
+// Terms of Service — production text. Plain-English, no legalese
+// theater; covers acceptance, account, content, conduct, third-party
+// services, intellectual property, disclaimers, liability cap,
+// termination, governing law, changes, and contact. Update the
+// "Last updated" eyebrow below whenever substantive changes ship.
 
 import Feather from "@expo/vector-icons/Feather";
 import { LinearGradient } from "expo-linear-gradient";
@@ -196,12 +195,12 @@ export default function TermsScreen() {
         </Section>
 
         <Section number="13" title="Governing law">
-          These Terms are governed by the laws of the State of Michigan,
+          These Terms are governed by the laws of the State of Texas,
           United States of America, without regard to its conflict-of-law
           rules. Any dispute arising out of or relating to the Service or
           these Terms will be resolved in the state or federal courts
-          located in Wayne County, Michigan. To the extent permitted by
-          law, you and Theosis waive any right to a jury trial.
+          located in the State of Texas. To the extent permitted by law,
+          you and Theosis waive any right to a jury trial.
         </Section>
 
         <Section number="14" title="Severability and entire agreement">
@@ -213,8 +212,8 @@ export default function TermsScreen() {
         </Section>
 
         <Section number="15" title="Contact">
-          Questions or concerns about these Terms? Email us at the address
-          shown on the App Store listing. We respond personally — usually
+          Questions or concerns about these Terms? Email us at
+          contact.theosis@gmail.com. We respond personally — usually
           within five business days.
         </Section>
 

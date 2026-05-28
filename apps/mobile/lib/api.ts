@@ -81,13 +81,20 @@ function resolveApiBaseUrl(): string {
 let cached: TheosisApi | null = null;
 let didLogOnce = false;
 
+// Whether we're running under Metro dev (vs. an EAS Update / production
+// build). __DEV__ is injected by the React Native runtime; in non-RN
+// environments (tests) it's undefined and we treat that as production.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const isDev = Boolean((globalThis as any).__DEV__);
+
 export function getApi(): TheosisApi {
   if (!cached) {
     const baseUrl = resolveApiBaseUrl();
-    if (!didLogOnce) {
+    if (isDev && !didLogOnce) {
       // Single log to confirm which URL the runtime actually picked. If
       // you see "(empty)" or a LAN IP when you expected the Vercel URL,
-      // the routing is wrong.
+      // the routing is wrong. Gated on __DEV__ so production TestFlight /
+      // App Store builds don't echo the URL to the Xcode console.
       console.log("[theosis] API base URL:", baseUrl || "(empty)");
       didLogOnce = true;
     }

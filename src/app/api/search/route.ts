@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import type { SearchResult } from "@/domain/search/types";
 import { searchTheosis } from "@/features/search/search-engine";
 import { searchAllCommentary } from "@/lib/search/commentary-server-index";
+import { getClientIp, rateLimit } from "@/lib/rate-limit";
 
 // Server-side search entry point. Combines two engines:
 //   1. searchTheosis() — fuse.js across seed data (verses, people, works,
@@ -31,6 +32,28 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       { intent: null, results: [] },
       { headers: { "Cache-Control": "no-store" } },
+    );
+  }
+
+  // Per-IP rate limit. Search is the most CPU-expensive public endpoint
+  // (deep commentary scan over 100k entries). 60 queries / minute is
+  // generous for human typing — the mobile client also debounces via
+  // useDeferredValue. Bots that scrape will hit the wall quickly.
+  const limit = rateLimit(`search:${getClientIp(request)}`, {
+    limit: 60,
+    windowMs: 60_000,
+  });
+  if (!limit.ok) {
+    return NextResponse.json(
+      { error: "rate_limited" },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(
+            Math.ceil((limit.resetAt - Date.now()) / 1000),
+          ),
+        },
+      },
     );
   }
 

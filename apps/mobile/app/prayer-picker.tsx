@@ -157,7 +157,7 @@ export default function PrayerPickerScreen() {
           {sections.length === 0 ? (
             <View style={styles.emptyState}>
               <Text style={[text.body, { textAlign: "center" }]}>
-                No prayers match "{query}".
+                No prayers match &quot;{query}&quot;.
               </Text>
             </View>
           ) : (

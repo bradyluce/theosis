@@ -88,10 +88,17 @@ export class ConflictError extends Error {
 
 function handleError(err: unknown): NextResponse {
   if (err instanceof BadRequestError) {
-    return NextResponse.json(
-      { error: err.code, details: err.details },
-      { status: 400 },
-    );
+    // Log full Zod issues server-side for debugging, but don't echo them
+    // back to the client — they enumerate the schema (required fields,
+    // valid enum values, etc.) and aid attackers shaping malicious
+    // payloads. The mobile client never read `details` anyway.
+    if (err.details !== undefined) {
+      console.warn(
+        `[/api/me] bad_request ${err.code}:`,
+        JSON.stringify(err.details),
+      );
+    }
+    return NextResponse.json({ error: err.code }, { status: 400 });
   }
   if (err instanceof ConflictError) {
     return NextResponse.json(

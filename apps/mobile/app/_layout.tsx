@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
+import { ErrorBoundary } from '@/components/theosis/error-boundary';
 import { navigationTheme } from '@/constants/theosis-theme';
 import { setActiveTokenGetter } from '@/lib/auth';
 import { getOnboardingStatus } from '@/lib/preferences';
@@ -22,20 +23,33 @@ import { drainQueue } from '@/lib/sync/queue';
 // session JWT under whichever key it likes; we just bridge get/save/clear
 // through SecureStore so the token survives across cold starts but isn't
 // in plain AsyncStorage.
+//
+// Failure mode: if SecureStore is unavailable (rare — sandboxed simulators,
+// rooted devices with broken Keychain), token reads return null and the
+// app behaves as if signed-out. Writes are silently dropped; the user will
+// have to sign in again on every cold start. We log warnings so the
+// degradation is visible in Xcode / adb logcat instead of being a black
+// box, but there's no recovery short of re-installing the app.
 const tokenCache = {
   async getToken(key: string) {
     try {
       return await SecureStore.getItemAsync(key);
-    } catch {
+    } catch (err) {
+      console.warn(
+        "[theosis] SecureStore.getItemAsync failed; treating as unauthenticated:",
+        err,
+      );
       return null;
     }
   },
   async saveToken(key: string, value: string) {
     try {
       await SecureStore.setItemAsync(key, value);
-    } catch {
-      // Keychain/Keystore unavailable — fall through silently. Clerk will
-      // re-issue the token on next sign-in.
+    } catch (err) {
+      console.warn(
+        "[theosis] SecureStore.setItemAsync failed; session will not survive a cold start:",
+        err,
+      );
     }
   },
 };
@@ -63,15 +77,15 @@ const publishableKey =
 //   600 italic — display headings, drop caps, hero titles
 // Adding new weights is +~50 KB each; keep this list minimal.
 const FONT_ASSETS = {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
+   
   Newsreader_400Regular: require('@expo-google-fonts/newsreader/400Regular/Newsreader_400Regular.ttf'),
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
+   
   Newsreader_400Regular_Italic: require('@expo-google-fonts/newsreader/400Regular_Italic/Newsreader_400Regular_Italic.ttf'),
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
+   
   Newsreader_500Medium: require('@expo-google-fonts/newsreader/500Medium/Newsreader_500Medium.ttf'),
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
+   
   Newsreader_600SemiBold: require('@expo-google-fonts/newsreader/600SemiBold/Newsreader_600SemiBold.ttf'),
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
+   
   Newsreader_600SemiBold_Italic: require('@expo-google-fonts/newsreader/600SemiBold_Italic/Newsreader_600SemiBold_Italic.ttf'),
 };
 
@@ -108,6 +122,7 @@ export default function RootLayout() {
   }
 
   return (
+    <ErrorBoundary>
     <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
     <ClerkTokenBridge />
     <OnboardingRedirect />
@@ -149,10 +164,9 @@ export default function RootLayout() {
             name="onboarding"
             options={{ headerShown: false, gestureEnabled: false }}
           />
-          {/* Temporary Phase 1 verification screen. Reachable from
-              Settings → Account; also used as the sign-in screen in
-              Phase 3 onboarding step 10. */}
-          <Stack.Screen name="auth-debug" options={{ headerShown: false }} />
+          {/* Sign-in / sign-up screen. Reachable from Settings → Account
+              and from the Phase 3 onboarding "Sign in / Sign up" step. */}
+          <Stack.Screen name="auth" options={{ headerShown: false }} />
           {/* Patron-saint searchable picker. Modal so we get the iOS
               swipe-down dismiss + Settings/onboarding screen behind. */}
           <Stack.Screen
@@ -184,6 +198,7 @@ export default function RootLayout() {
     </QueryClientProvider>
     </GestureHandlerRootView>
     </ClerkProvider>
+    </ErrorBoundary>
   );
 }
 

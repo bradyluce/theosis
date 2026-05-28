@@ -11,8 +11,7 @@ import {
   Text,
   TextInput,
   View,
-} from "react-native";
-import { FlatList } from "react-native";
+ FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { Eyebrow, GiltRule, Halo } from "@/components/theosis/primitives";

@@ -22,8 +22,17 @@ if (typeof globalThis.WebSocket === "undefined") {
   neonConfig.webSocketConstructor = ws;
 }
 
-const connectionString =
-  process.env.POSTGRES_URL ?? process.env.DATABASE_URL ?? "";
+const connectionString = process.env.POSTGRES_URL ?? process.env.DATABASE_URL;
+if (!connectionString) {
+  // Fail loudly at module load rather than silently constructing a pool
+  // with an empty string — the Neon driver would otherwise emit cryptic
+  // "ENOTFOUND ''" errors on the first query. This message is what shows
+  // up in Vercel build / function logs if someone forgets to wire the
+  // Postgres integration on a new environment.
+  throw new Error(
+    "[db] Missing POSTGRES_URL / DATABASE_URL — set the Vercel Postgres integration on this environment (Vercel dashboard → Project → Storage), or run `vercel env pull .env.local` for local dev.",
+  );
+}
 
 // Module-scoped pool — survives function warm starts on Vercel.
 const pool = new Pool({ connectionString });
