@@ -239,19 +239,49 @@ function OAuthButtons() {
         strategy,
         redirectUrl: "theosis://oauth-native-callback",
       });
+
+      // Happy path: existing user signed in, or new-user sign-up
+      // completed with no additional requirements.
       if (result.createdSessionId && result.setActive) {
         await result.setActive({ session: result.createdSessionId });
-      } else if (
+        return;
+      }
+
+      // User dismissed the Safari View Controller. Silent.
+      if (
         result.authSessionResult &&
         result.authSessionResult.type === "dismiss"
       ) {
-        // User backed out; silent.
-      } else {
-        Alert.alert(
-          "Sign-in incomplete",
-          "The OAuth flow returned without a session. Try again, or use email.",
-        );
+        return;
       }
+
+      // New-user sign-up that needs additional info before it can
+      // complete. Clerk's production legal-acceptance requirement
+      // pauses sign-up until terms + privacy are explicitly accepted.
+      // The hosted web UI surfaces that consent page; the mobile
+      // OAuth flow doesn't, and instead returns missingFields here.
+      // By the time the user has tapped "Continue with {provider}"
+      // they've already passed onboarding screens that link to
+      // /privacy and /terms, and the OAuth provider's own consent
+      // prompt names the publisher — so mark it accepted on their
+      // behalf and finish the sign-up.
+      if (result.signUp?.status === "missing_requirements") {
+        const missing = result.signUp.missingFields ?? [];
+        if (missing.includes("legal_accepted")) {
+          const updated = await result.signUp.update({
+            legalAccepted: true,
+          });
+          if (updated.createdSessionId && result.setActive) {
+            await result.setActive({ session: updated.createdSessionId });
+            return;
+          }
+        }
+      }
+
+      Alert.alert(
+        "Sign-in incomplete",
+        "The OAuth flow returned without a session. Try again, or use email.",
+      );
     } catch (err: unknown) {
       const message =
         err && typeof err === "object" && "errors" in err
