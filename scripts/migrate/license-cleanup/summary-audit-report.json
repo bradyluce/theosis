@@ -1,0 +1,346 @@
+{
+  "summary": {
+    "totalAudited": 30,
+    "clean": 19,
+    "flagged": 10,
+    "skipped": 1,
+    "ngramSize": 6
+  },
+  "findings": [
+    {
+      "workId": "aimilianos-angelic-life",
+      "workSlug": "aimilianos-angelic-life",
+      "rawSlug": "aimilianos-angelic-life",
+      "summaryLength": 451,
+      "ngramCount": 69,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "aimilianos-divine-liturgy",
+      "workSlug": "aimilianos-divine-liturgy",
+      "rawSlug": "aimilianos-divine-liturgy",
+      "summaryLength": 297,
+      "ngramCount": 48,
+      "matches": [
+        {
+          "phrase": "in the church of st nicholas"
+        },
+        {
+          "phrase": "taken from the booklet the church"
+        },
+        {
+          "phrase": "from the booklet the church at"
+        }
+      ],
+      "totalMatches": 10
+    },
+    {
+      "workId": "aimilianos-on-prayer",
+      "workSlug": "aimilianos-on-prayer",
+      "rawSlug": "aimilianos-on-prayer",
+      "summaryLength": 310,
+      "ngramCount": 50,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "azkoul-teachings-vol-1",
+      "workSlug": "teachings-of-the-holy-orthodox-church-vol-1",
+      "rawSlug": "(not found)",
+      "summaryLength": 138,
+      "ngramCount": 0,
+      "matches": [],
+      "totalMatches": 0,
+      "warning": "no raw/library dir found — cannot audit"
+    },
+    {
+      "workId": "bloom-beginning-to-pray",
+      "workSlug": "bloom-beginning-to-pray",
+      "rawSlug": "bloom-beginning-to-pray",
+      "summaryLength": 331,
+      "ngramCount": 52,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "constantinou-thinking-orthodox",
+      "workSlug": "constantinou-thinking-orthodox",
+      "rawSlug": "constantinou-thinking-orthodox",
+      "summaryLength": 286,
+      "ngramCount": 36,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "hierotheos-night-in-desert",
+      "workSlug": "hierotheos-night-in-desert",
+      "rawSlug": "hierotheos-night-in-desert",
+      "summaryLength": 356,
+      "ngramCount": 50,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "hierotheos-picture-of-modern-world",
+      "workSlug": "hierotheos-picture-of-modern-world",
+      "rawSlug": "hierotheos-picture-of-modern-world",
+      "summaryLength": 341,
+      "ngramCount": 46,
+      "matches": [
+        {
+          "phrase": "the purpose of christ s incarnation"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "workId": "lossky-mystical-theology",
+      "workSlug": "lossky-mystical-theology",
+      "rawSlug": "lossky-mystical-theology",
+      "summaryLength": 534,
+      "ngramCount": 71,
+      "matches": [
+        {
+          "phrase": "the church the way of union"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "workId": "paisios-spiritual-awakening",
+      "workSlug": "paisios-spiritual-awakening",
+      "rawSlug": "paisios-spiritual-awakening",
+      "summaryLength": 366,
+      "ngramCount": 52,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "popovich-orthodox-faith-life-in-christ",
+      "workSlug": "popovich-orthodox-faith-life-in-christ",
+      "rawSlug": "popovich-orthodox-faith-life-in-christ",
+      "summaryLength": 340,
+      "ngramCount": 49,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "porphyrios-wounded-by-love",
+      "workSlug": "porphyrios-wounded-by-love",
+      "rawSlug": "porphyrios-wounded-by-love",
+      "summaryLength": 357,
+      "ngramCount": 49,
+      "matches": [
+        {
+          "phrase": "of the transfiguration of the saviour"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "workId": "rose-religion-of-the-future",
+      "workSlug": "rose-religion-of-the-future",
+      "rawSlug": "rose-religion-of-the-future",
+      "summaryLength": 429,
+      "ngramCount": 62,
+      "matches": [
+        {
+          "phrase": "in the second half of the"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "workId": "rose-soul-after-death",
+      "workSlug": "rose-soul-after-death",
+      "rawSlug": "rose-soul-after-death",
+      "summaryLength": 328,
+      "ngramCount": 49,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "schmemann-for-the-life-of-the-world",
+      "workSlug": "schmemann-for-the-life-of-the-world",
+      "rawSlug": "schmemann-for-the-life-of-the-world",
+      "summaryLength": 359,
+      "ngramCount": 49,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "shevkunov-everyday-saints",
+      "workSlug": "shevkunov-everyday-saints",
+      "rawSlug": "shevkunov-everyday-saints",
+      "summaryLength": 438,
+      "ngramCount": 69,
+      "matches": [
+        {
+          "phrase": "of the pskov caves monastery in"
+        },
+        {
+          "phrase": "the pskov caves monastery in the"
+        }
+      ],
+      "totalMatches": 2
+    },
+    {
+      "workId": "sophrony-silouan-the-athonite",
+      "workSlug": "sophrony-silouan-the-athonite",
+      "rawSlug": "sophrony-silouan-the-athonite",
+      "summaryLength": 429,
+      "ngramCount": 64,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "ware-the-orthodox-way",
+      "workSlug": "ware-the-orthodox-way",
+      "rawSlug": "ware-the-orthodox-way",
+      "summaryLength": 352,
+      "ngramCount": 48,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "zizioulas-being-as-communion",
+      "workSlug": "zizioulas-being-as-communion",
+      "rawSlug": "zizioulas-being-as-communion",
+      "summaryLength": 293,
+      "ngramCount": 35,
+      "matches": [
+        {
+          "phrase": "that being is constituted as communion"
+        }
+      ],
+      "totalMatches": 1
+    },
+    {
+      "workId": "unseen-warfare",
+      "workSlug": "unseen-warfare",
+      "rawSlug": "unseen-warfare",
+      "summaryLength": 324,
+      "ngramCount": 42,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "symeon-ethical-discourses-vol-1",
+      "workSlug": "symeon-ethical-discourses-vol-1",
+      "rawSlug": "symeon-ethical-discourses-vol-1",
+      "summaryLength": 458,
+      "ngramCount": 68,
+      "matches": [
+        {
+          "phrase": "the fearful day of the lord"
+        },
+        {
+          "phrase": "fearful day of the lord and"
+        },
+        {
+          "phrase": "day of the lord and the"
+        }
+      ],
+      "totalMatches": 8
+    },
+    {
+      "workId": "symeon-ethical-discourses-vol-2",
+      "workSlug": "symeon-ethical-discourses-vol-2",
+      "rawSlug": "symeon-ethical-discourses-vol-2",
+      "summaryLength": 323,
+      "ngramCount": 46,
+      "matches": [
+        {
+          "phrase": "translated from the greek and introduced"
+        },
+        {
+          "phrase": "from the greek and introduced by"
+        },
+        {
+          "phrase": "the greek and introduced by alexander"
+        }
+      ],
+      "totalMatches": 4
+    },
+    {
+      "workId": "symeon-ethical-discourses-vol-3",
+      "workSlug": "symeon-ethical-discourses-vol-3",
+      "rawSlug": "symeon-ethical-discourses-vol-3",
+      "summaryLength": 371,
+      "ngramCount": 57,
+      "matches": [
+        {
+          "phrase": "of st symeon the new theologian"
+        },
+        {
+          "phrase": "st symeon the new theologian s"
+        }
+      ],
+      "totalMatches": 2
+    },
+    {
+      "workId": "cabasilas-life-in-christ",
+      "workSlug": "cabasilas-life-in-christ",
+      "rawSlug": "cabasilas-life-in-christ",
+      "summaryLength": 613,
+      "ngramCount": 90,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "cyril-alexandria-unity-of-christ",
+      "workSlug": "cyril-alexandria-unity-of-christ",
+      "rawSlug": "cyril-alexandria-unity-of-christ",
+      "summaryLength": 582,
+      "ngramCount": 86,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "maximus-ambigua-to-thomas",
+      "workSlug": "maximus-ambigua-to-thomas",
+      "rawSlug": "maximus-ambigua-to-thomas",
+      "summaryLength": 466,
+      "ngramCount": 64,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "climacus-ladder",
+      "workSlug": "climacus-ladder",
+      "rawSlug": "climacus-ladder",
+      "summaryLength": 251,
+      "ngramCount": 36,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "theophan-path-to-salvation",
+      "workSlug": "theophan-path-to-salvation",
+      "rawSlug": "theophan-path-to-salvation",
+      "summaryLength": 478,
+      "ngramCount": 73,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "theophan-spiritual-life",
+      "workSlug": "theophan-spiritual-life",
+      "rawSlug": "theophan-spiritual-life",
+      "summaryLength": 312,
+      "ngramCount": 50,
+      "matches": [],
+      "totalMatches": 0
+    },
+    {
+      "workId": "theophan-on-saving-your-soul",
+      "workSlug": "theophan-on-saving-your-soul",
+      "rawSlug": "theophan-on-saving-your-soul",
+      "summaryLength": 287,
+      "ngramCount": 41,
+      "matches": [],
+      "totalMatches": 0
+    }
+  ]
+}

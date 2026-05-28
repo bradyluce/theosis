@@ -32,6 +32,7 @@ import {
   mkdirSync,
   readFileSync,
   readdirSync,
+  rmSync,
   unlinkSync,
   writeFileSync,
 } from "node:fs";
@@ -42,12 +43,23 @@ import type {
   ScriptureReference,
   SourceRecord,
   Work,
+  WorkAvailability,
   WorkChapter,
   WorkChapterSummary,
 } from "@theosis/core";
 import { verseLocationKey } from "../../src/lib/content/reference";
 import { resolveBookSlug } from "../ingest/commentary/shared";
 import { dedupeEntries } from "../ingest/commentary/hcf/dedup";
+// Licensing safety net: every re-normalize consults the Tier-1 manifest so
+// copyrighted works can't sneak back into the shipped tree after a content
+// regeneration. If you're adding a copyrighted work to the catalog, add it
+// to the manifest first and re-run normalize — the body will be discarded
+// and the catalog entry will carry contentStatus + availability.
+import {
+  TIER1_WORKS,
+  COPYRIGHTED_COMMENTARY_PERSON_IDS,
+  PHILOKALIA_SUBWORK_PREFIX,
+} from "../migrate/license-cleanup/manifest";
 
 type CommentaryBundleV1 = {
   version: "1";
@@ -480,6 +492,44 @@ function main() {
     `[normalize-commentary] dedup: in=${dedupEntriesIn} out=${dedupEntriesOut} merged=${dedupMerges}`,
   );
 
+  // ── License safety pass ────────────────────────────────────────────────
+  // Strip every commentary entry whose personId is in the copyrighted set
+  // (currently Azkoul). The body of these works is not redistributed; we
+  // keep the catalog Person/Work records but drop the verse-keyed excerpts.
+  const copyrightedPersonIds = new Set(COPYRIGHTED_COMMENTARY_PERSON_IDS);
+  let copyrightedEntriesDropped = 0;
+  for (const [location, entries] of byVerseBuckets) {
+    const filtered = entries.filter((e) => !copyrightedPersonIds.has(e.personId));
+    copyrightedEntriesDropped += entries.length - filtered.length;
+    if (filtered.length === 0) {
+      byVerseBuckets.delete(location);
+    } else if (filtered.length !== entries.length) {
+      byVerseBuckets.set(location, filtered);
+    }
+  }
+  for (const [location, entries] of byChapterBuckets) {
+    const filtered = entries.filter((e) => !copyrightedPersonIds.has(e.personId));
+    copyrightedEntriesDropped += entries.length - filtered.length;
+    if (filtered.length === 0) {
+      byChapterBuckets.delete(location);
+    } else if (filtered.length !== entries.length) {
+      byChapterBuckets.set(location, filtered);
+    }
+  }
+  if (copyrightedEntriesDropped > 0) {
+    console.log(
+      `[normalize-commentary] dropped ${copyrightedEntriesDropped} entries from copyrighted authors (Tier-1 manifest)`,
+    );
+  }
+
+  // Build the Tier-1 work lookup. Catalog work records for these IDs will
+  // be flipped to contentStatus: "reference-only" + availability, and their
+  // bodies will be skipped/deleted in the by-work write loop below.
+  const tier1AvailabilityByWorkId = new Map<string, WorkAvailability>();
+  for (const entry of TIER1_WORKS) {
+    tier1AvailabilityByWorkId.set(entry.workId, entry.availability);
+  }
+
   // Write commentary/by-verse files. Sort entries within a bucket by rank desc
   // to match the loader's loadChapterCommentary post-sort.
   const byVerseIndex: Record<string, Record<string, number[]>> = {};
@@ -570,7 +620,27 @@ function main() {
     { chapterCount: number; chapters: WorkChapterSummary[] }
   > = {};
   let workFilesWritten = 0;
+  let tier1WorkBodiesSkipped = 0;
   for (const [workId, byOrder] of chaptersByWork) {
+    // Tier-1 licensing gate: never write body prose for works whose text is
+    // not licensed for redistribution. The catalog still gets a record for
+    // these (flipped to contentStatus: "reference-only" further down) so the
+    // library reader can render its "Where to read" card. Covers the manual
+    // Tier-1 list plus any work whose ID starts with the Philokalia prefix
+    // (auto-discovered Faber Palmer/Sherrard/Ware sub-works).
+    const isTier1 =
+      tier1AvailabilityByWorkId.has(workId) ||
+      workId === "philokalia" ||
+      workId.startsWith(PHILOKALIA_SUBWORK_PREFIX);
+    if (isTier1) {
+      const workDir = join(LIBRARY_DIR, "by-work", workId);
+      if (existsSync(workDir)) {
+        rmSync(workDir, { recursive: true, force: true });
+      }
+      tier1WorkBodiesSkipped++;
+      continue;
+    }
+
     const ordered = [...byOrder.values()].sort((a, b) => a.order - b.order);
     if (ordered.length === 0) continue;
     // Remove stale chapter files from a prior run before writing the
@@ -599,6 +669,11 @@ function main() {
       chapterCount: ordered.length,
       chapters: ordered.map(({ sections: _sections, ...summary }) => summary),
     };
+  }
+  if (tier1WorkBodiesSkipped > 0) {
+    console.log(
+      `[normalize-commentary] skipped body output for ${tier1WorkBodiesSkipped} Tier-1 work(s) (license-restricted; see scripts/migrate/license-cleanup/manifest.ts)`,
+    );
   }
 
   // ── verseRefs population ────────────────────────────────────────────────
@@ -649,7 +724,37 @@ function main() {
 
   // Sort catalog arrays by id for stable diffs across re-runs.
   const peopleSorted = [...peopleById.values()].sort((a, b) => a.id.localeCompare(b.id));
-  const worksSorted = [...worksById.values()].sort((a, b) => a.id.localeCompare(b.id));
+  const worksSortedRaw = [...worksById.values()].sort((a, b) => a.id.localeCompare(b.id));
+  // Tag every Tier-1 work in the catalog as reference-only with its
+  // availability record. Philokalia sub-works (auto-discovered by id prefix)
+  // share the same Faber availability surface; named entries in the manifest
+  // win over the prefix default when both apply.
+  const philokaliaAvailability: WorkAvailability = {
+    publisher: "Faber & Faber",
+    purchaseUrl: "https://www.faber.co.uk/series/the-philokalia/",
+    status: "in-print",
+    note: "English translation by G. E. H. Palmer, Philip Sherrard, and Kallistos Ware.",
+  };
+  const worksSorted = worksSortedRaw.map((work) => {
+    const namedAvailability = tier1AvailabilityByWorkId.get(work.id);
+    const isPhilokaliaPrefixed =
+      work.id === "philokalia" || work.id.startsWith(PHILOKALIA_SUBWORK_PREFIX);
+    if (namedAvailability) {
+      return {
+        ...work,
+        contentStatus: "reference-only" as const,
+        availability: namedAvailability,
+      };
+    }
+    if (isPhilokaliaPrefixed) {
+      return {
+        ...work,
+        contentStatus: "reference-only" as const,
+        availability: philokaliaAvailability,
+      };
+    }
+    return work;
+  });
   const sourcesSorted = [...sourcesById.values()].sort((a, b) => a.id.localeCompare(b.id));
 
   const commentaryCatalog: CommentaryCatalog = {
