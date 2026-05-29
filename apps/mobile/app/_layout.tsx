@@ -7,6 +7,7 @@ import { Stack, router } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
+import * as Updates from 'expo-updates';
 import { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
@@ -112,6 +113,33 @@ export default function RootLayout() {
       });
     }
   }, [fontsLoaded]);
+
+  // Apply EAS Updates eagerly on cold start. The default expo-updates
+  // behavior downloads a new update on one launch but only *applies* it on
+  // the NEXT launch — so a freshly published fix appears a relaunch late,
+  // which made it look like fixes "weren't working." Here we check, fetch,
+  // and reload in one go so the latest published JS is live on this launch.
+  // Gated on Updates.isEnabled: false in Expo Go and while running from the
+  // Metro dev server, true only in builds that actually consume a channel.
+  useEffect(() => {
+    if (!Updates.isEnabled) return;
+    let canceled = false;
+    void (async () => {
+      try {
+        const check = await Updates.checkForUpdateAsync();
+        if (canceled || !check.isAvailable) return;
+        await Updates.fetchUpdateAsync();
+        if (canceled) return;
+        await Updates.reloadAsync();
+      } catch {
+        // Offline, no channel, or check failed — keep running the bundle
+        // we have. The update will apply on a later launch.
+      }
+    })();
+    return () => {
+      canceled = true;
+    };
+  }, []);
 
   if (!fontsLoaded) {
     // Returning null keeps the splash screen visible (we deferred autohide).
