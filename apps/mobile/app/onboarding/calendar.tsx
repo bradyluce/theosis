@@ -17,6 +17,7 @@ export default function CalendarScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="calendar"
+        illustration={require("../../assets/images/onboarding/whichcalendar.jpg")}
         title="Which calendar?"
         subtitle="Most North American parishes use the New Calendar. ROCOR, Athonite, and many Slavic traditions keep the Old."
       >

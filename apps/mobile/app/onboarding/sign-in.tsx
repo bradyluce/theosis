@@ -50,6 +50,7 @@ export default function SignInScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="sign-in"
+        illustration={require("../../assets/images/onboarding/saveyourprogress.jpg")}
         title="Save your progress?"
         subtitle="Sign in to keep your highlights, notes, and reading list across devices. Or continue as a guest — you can sign in any time."
       >

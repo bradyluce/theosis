@@ -19,6 +19,7 @@ export default function TranslationScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="translation"
+        illustration={require("../../assets/images/onboarding/primarytranslation.jpg")}
         title="Primary translation?"
         subtitle="The text the Bible tab opens to by default. You can still swap to any other translation from the reader."
       >

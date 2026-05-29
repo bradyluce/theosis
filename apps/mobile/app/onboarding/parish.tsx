@@ -35,6 +35,7 @@ export default function ParishScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="parish"
+        illustration={require("../../assets/images/onboarding/yourparish.jpg")}
         title="Your parish?"
         subtitle="Where you worship on Sundays. Pick from the locator — search by ZIP or jurisdiction. Skip and add it later from Settings."
         skipLabel="Skip — I'll add it later"

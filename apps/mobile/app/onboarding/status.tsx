@@ -16,6 +16,7 @@ export default function StatusScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="status"
+        illustration={require("../../assets/images/onboarding/whereareyouinthefaith.jpg")}
         title="Where are you in the Faith?"
         subtitle="Helps us tailor your daily rhythm and what you see first."
         skipLabel="I'd rather not say"

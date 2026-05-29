@@ -16,6 +16,7 @@ export default function PrayerRuleScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="prayer-rule"
+        illustration={require("../../assets/images/onboarding/prayerrule.jpg")}
         title="A prayer rule?"
         subtitle="A morning and evening order, ready to pray. Edit anything from the Prayer screen later."
       >

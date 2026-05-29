@@ -50,6 +50,7 @@ export default function PatronScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="patron"
+        illustration={require("../../assets/images/onboarding/patronsaint.jpg")}
         title="A patron saint?"
         subtitle="The saint whose name you bear or whose intercession you've sought. Highlighted on Daily; ranks first in commentary."
         skipLabel="Skip — I'll choose later"

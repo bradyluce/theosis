@@ -9,9 +9,10 @@
 // back/continue footer with skip handling.
 
 import Feather from "@expo/vector-icons/Feather";
+import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { router } from "expo-router";
-import { type ReactNode } from "react";
+import { type ComponentProps, type ReactNode } from "react";
 import {
   Pressable,
   ScrollView,
@@ -43,6 +44,9 @@ export type OnboardingShellProps = {
   skipLabel?: string;
   onContinue?: () => void;
   onSkip?: () => void;
+  // Optional illustration rendered above the title. Pass a require()'d
+  // asset; it's shown contained (never cropped) in a fixed band.
+  illustration?: ComponentProps<typeof Image>["source"];
   children: ReactNode;
 };
 
@@ -54,6 +58,7 @@ export function OnboardingShell({
   skipLabel,
   onContinue,
   onSkip,
+  illustration,
   children,
 }: OnboardingShellProps) {
   const draft = useOnboardingState((s) => s.draft);
@@ -135,6 +140,14 @@ export function OnboardingShell({
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
       >
+        {illustration ? (
+          <Image
+            source={illustration}
+            style={styles.illustration}
+            contentFit="contain"
+            transition={200}
+          />
+        ) : null}
         <View style={styles.header}>
           <Text style={styles.title}>{title}</Text>
           {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
@@ -284,6 +297,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.xl,
     gap: spacing.xl,
+  },
+  illustration: {
+    width: "100%",
+    height: 190,
+    borderRadius: radii.card,
   },
   header: { gap: spacing.sm, alignItems: "center" },
   title: {

@@ -18,6 +18,7 @@ export default function FastingScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <OnboardingShell
         step="fasting"
+        illustration={require("../../assets/images/onboarding/fasting.webp")}
         title="Fasting practice?"
         subtitle="Affects what the Daily page shows about fast and feast days. Display preference — your priest is the authority on what to keep."
       >
