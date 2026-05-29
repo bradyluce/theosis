@@ -44,10 +44,12 @@ import { getApi, getApiBaseUrl } from "@/lib/api";
 import {
   type ProfilePrefs,
   getProfilePrefs,
+  setOnboardingStatus,
   updateProfilePrefs,
 } from "@/lib/preferences";
 import { clearLocalUserData, signOutWithFlush } from "@/lib/sync/sign-out";
 import { usePatronIcon } from "@/lib/use-patron-icon";
+import { useOnboardingState } from "@/lib/use-onboarding-state";
 
 // ---------------------------------------------------------------------------
 // Option lists used only here. The other option arrays come from
@@ -325,6 +327,7 @@ export default function SettingsScreen() {
           <SectionHeader eyebrow="Account" title="Your session" rule />
           <View style={{ gap: spacing.md, marginTop: spacing.md }}>
             <AccountCard />
+            <RestartSetupRow />
           </View>
         </Card>
 
@@ -645,6 +648,53 @@ function AccountCard() {
         </Pressable>
       </SignedIn>
     </>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Restart setup row — clears onboarding draft + status, redirects to welcome
+// ---------------------------------------------------------------------------
+
+function RestartSetupRow() {
+  const reset = useOnboardingState((s) => s.reset);
+
+  function handleRestart() {
+    Alert.alert(
+      "Walk through setup again?",
+      "Your existing preferences stay until you confirm new ones. You can back out at any step.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Start over",
+          onPress: async () => {
+            reset();
+            await setOnboardingStatus("needs_onboarding");
+            router.replace("/onboarding/welcome");
+          },
+        },
+      ],
+    );
+  }
+
+  return (
+    <Pressable
+      onPress={handleRestart}
+      style={({ pressed }) => [
+        styles.linkRow,
+        pressed && { backgroundColor: colors.surfaceStrong },
+      ]}
+      accessibilityRole="button"
+      accessibilityLabel="Walk through setup again"
+    >
+      <View style={styles.linkRowMain}>
+        <Text style={styles.linkRowLabel}>Walk through setup again</Text>
+        <Text style={styles.linkRowDescription}>
+          Re-run the onboarding flow. Your existing answers are preserved
+          until you confirm new ones.
+        </Text>
+      </View>
+      <Feather name="rotate-cw" size={15} color={colors.inkSoft} />
+    </Pressable>
   );
 }
 

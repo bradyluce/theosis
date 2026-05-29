@@ -44,7 +44,21 @@ const SYNC_TARGETS: Array<{ localDir: string; s3Prefix: string }> = [
 
 const PARALLEL_UPLOADS = 8;
 
-const s3 = new S3Client({ region: REGION });
+// Honor BIBLE_S3_ENDPOINT so this script targets the SAME store the API
+// routes read from. Production serves content from Cloudflare R2 (endpoint
+// set in Vercel); without this the sync would silently write to AWS S3
+// while the live API reads R2 — uploads land in the wrong bucket and the
+// deployed app never sees the change. Mirrors src/lib/storage/s3.ts.
+const ENDPOINT = process.env.BIBLE_S3_ENDPOINT;
+
+const s3 = new S3Client({
+  region: REGION,
+  ...(ENDPOINT ? { endpoint: ENDPOINT, forcePathStyle: true } : {}),
+});
+
+if (ENDPOINT) {
+  console.log(`[push] using custom endpoint: ${ENDPOINT}`);
+}
 
 function md5Hex(buffer: Buffer): string {
   return createHash("md5").update(buffer).digest("hex");

@@ -392,10 +392,14 @@ export default function LibraryScreen() {
   }, [libraryCatalogQuery.data]);
 
   const featuredWork = useMemo(() => {
-    const pool = worksWithChapters.filter((w) =>
-      FEATURED_WORK_SLUGS.has(w.slug),
+    // Never feature a reference-only work — its text isn't in the app
+    // (copyright), so "Featured Work" with no body to read is a dead end.
+    // Those works still have their own page with a purchase link.
+    const featurable = worksWithChapters.filter(
+      (w) => w.contentStatus !== "reference-only",
     );
-    const source = pool.length > 0 ? pool : worksWithChapters;
+    const pool = featurable.filter((w) => FEATURED_WORK_SLUGS.has(w.slug));
+    const source = pool.length > 0 ? pool : featurable;
     if (source.length === 0) return null;
     const now = new Date();
     const start = new Date(now.getFullYear(), 0, 0);

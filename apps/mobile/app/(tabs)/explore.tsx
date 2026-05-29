@@ -20,6 +20,7 @@ import { VerseActionsSheet } from "@/components/theosis/verse-actions-sheet";
 import { getApi } from "@/lib/api";
 import {
   type HighlightColor,
+  type LastReadLocation,
   type ProfilePrefs,
   type SavedVerse,
   addSavedVerse,
@@ -152,70 +153,58 @@ export default function BibleReaderScreen() {
     [scale],
   );
 
-  const translation =
-    params.translation || defaultTranslation || DEFAULT_TRANSLATION;
-  const bookSlug = params.book ?? null;
-  const chapterNumber = params.chapter
-    ? Number.parseInt(params.chapter, 10) || null
-    : null;
   const highlight = parseHighlight(
     Array.isArray(params.highlight) ? params.highlight[0] : params.highlight,
   );
 
-  // First-launch last-read restore. If the URL has no params (cold start
-  // on this tab, no deep-linking from Daily), look up the persisted
-  // location and replace params with it. If there's no saved location
-  // either, we fall through to the empty-state view below, which prompts
-  // the user to pick a book — rather than dropping them into Matthew 5.
-  //
-  // Note we still consult getLastReadLocation even when the user has a
-  // primaryTranslationId set — the saved location preserves which
-  // book+chapter they were on, but we override its translation with
-  // their current primary preference when the URL doesn't pin one.
-  const noParamsPresent = !params.book && !params.chapter;
-  const [restored, setRestored] = useState(false);
-  // Whether the user has a persisted reading location. Drives the
-  // first-launch picker auto-open below: a returning reader always has
-  // one (so we restore silently), a brand-new user doesn't (so we offer
-  // the book picker).
-  const [hadSavedLocation, setHadSavedLocation] = useState(false);
-  // Restore on every focus, not just mount: switching to another tab can
-  // drop the reader's route params, and the user expects to come back to
-  // the chapter they were reading (Genesis 1), not the book picker.
+  // Last-read restore. The floating tab bar navigates to /explore with no
+  // params on every tab switch, so route params don't survive leaving and
+  // returning to the Bible tab. Rather than try to re-pin params (which
+  // races the first render), we resolve the reader's location from state:
+  // explicit params win, otherwise we fall back to the persisted last-read
+  // location. This way returning to the tab reopens the chapter directly
+  // (Genesis 1), not the book picker.
+  const paramsHaveSelection = Boolean(params.book && params.chapter);
+  const [restoredLoc, setRestoredLoc] = useState<LastReadLocation | null>(null);
+  const [restoreChecked, setRestoreChecked] = useState(false);
   useFocusEffect(
     useCallback(() => {
-      if (!noParamsPresent) {
-        setHadSavedLocation(true);
-        setRestored(true);
+      if (paramsHaveSelection) {
+        setRestoreChecked(true);
         return;
       }
-      if (defaultTranslation === null) return; // wait for prefs
       let canceled = false;
       getLastReadLocation().then((loc) => {
         if (canceled) return;
-        if (loc) {
-          setHadSavedLocation(true);
-          router.setParams({
-            translation: defaultTranslation || loc.translation,
-            book: loc.book,
-            chapter: String(loc.chapter),
-          });
-        }
-        setRestored(true);
+        setRestoredLoc(loc ?? null);
+        setRestoreChecked(true);
       });
       return () => {
         canceled = true;
       };
-    }, [noParamsPresent, defaultTranslation]),
+    }, [paramsHaveSelection]),
   );
 
-  // Persist on every (translation, book, chapter) change. Skip until
-  // restore completes to avoid clobbering saved state with defaults.
-  // Also record a typed Bible-history entry so the You-tab feed can
-  // surface "where I've been reading" as a separate filter from saved
-  // verses or generic activity.
+  // Resolved location: explicit params (deep-link from Daily, prev/next,
+  // book-picker) take priority; otherwise restore where the user left off.
+  const bookSlug = params.book ?? restoredLoc?.book ?? null;
+  const chapterNumber = params.chapter
+    ? Number.parseInt(params.chapter, 10) || null
+    : restoredLoc?.chapter ?? null;
+  const translation =
+    params.translation ||
+    defaultTranslation ||
+    restoredLoc?.translation ||
+    DEFAULT_TRANSLATION;
+
+  const hasSelection = Boolean(bookSlug && chapterNumber);
+
+  // Persist on every resolved (translation, book, chapter) change, and
+  // record a typed Bible-history entry for the You-tab "where I've been
+  // reading" feed. Gated on restoreChecked so we don't clobber saved
+  // state before the first resolve.
   useEffect(() => {
-    if (!restored || !bookSlug || !chapterNumber) return;
+    if (!restoreChecked || !bookSlug || !chapterNumber) return;
     setLastReadLocation({
       translation,
       book: bookSlug,
@@ -227,23 +216,18 @@ export default function BibleReaderScreen() {
       chapter: chapterNumber,
       label: `${bookLabel(bookSlug)} ${chapterNumber}`,
     });
-  }, [restored, translation, bookSlug, chapterNumber]);
+  }, [restoreChecked, translation, bookSlug, chapterNumber]);
 
-  const hasSelection = Boolean(bookSlug && chapterNumber);
-
-  // First launch: once restore resolves and there's still no selection,
-  // open the picker automatically so the user lands directly in the
-  // "choose a book" experience instead of an empty screen.
+  // First launch only: once we've checked and there's genuinely no
+  // location (no params and no saved last-read), open the picker so a new
+  // reader lands directly in "choose a book" instead of an empty screen.
   const [autoPushed, setAutoPushed] = useState(false);
   useEffect(() => {
-    // Only auto-open the picker for a genuinely new reader (no saved
-    // location). A returning reader's chapter is restored above, so we
-    // never yank them back into the picker on tab return.
-    if (restored && !hasSelection && !autoPushed && !hadSavedLocation) {
+    if (restoreChecked && !hasSelection && !autoPushed) {
       setAutoPushed(true);
       router.push(`/book-picker?translation=${translation}`);
     }
-  }, [restored, hasSelection, autoPushed, hadSavedLocation, translation]);
+  }, [restoreChecked, hasSelection, autoPushed, translation]);
 
   const chapterQuery = useQuery({
     queryKey: ["bible-chapter", translation, bookSlug, chapterNumber],
@@ -407,7 +391,7 @@ export default function BibleReaderScreen() {
   // Empty state — no book selected. Editorial invitation rather than a
   // bald "tap to choose" — the page reads like the inside cover of a
   // leather-bound book.
-  if (restored && !hasSelection) {
+  if (restoreChecked && !hasSelection) {
     return (
       <SafeAreaView style={styles.safe} edges={["top"]}>
         <View style={styles.emptyWrap}>
