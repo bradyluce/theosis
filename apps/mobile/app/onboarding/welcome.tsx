@@ -1,8 +1,12 @@
+import { Image } from "expo-image";
 import { Stack } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 import { OnboardingShell } from "@/components/onboarding/onboarding-shell";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
+
+// Bundled at build time so the opening screen renders instantly offline.
+const WELCOME_IMAGE = require("../../assets/images/onboarding-welcome.webp");
 
 export default function WelcomeScreen() {
   return (
@@ -21,6 +25,16 @@ export default function WelcomeScreen() {
             You can skip any step and revisit later in Settings.
           </Text>
         </View>
+
+        {/* Resurrection icon — fills the opening screen and sets the tone
+            before the questions begin. */}
+        <Image
+          source={WELCOME_IMAGE}
+          style={styles.icon}
+          contentFit="cover"
+          transition={260}
+          accessibilityLabel="Icon of the Resurrection of Christ"
+        />
       </OnboardingShell>
     </>
   );
@@ -47,5 +61,14 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: colors.inkMuted,
     textAlign: "center",
+  },
+  icon: {
+    width: "100%",
+    aspectRatio: 2000 / 2800,
+    borderRadius: radii.card,
+    marginTop: spacing.lg,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    backgroundColor: colors.surface,
   },
 });

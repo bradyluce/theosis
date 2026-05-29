@@ -1,4 +1,6 @@
 import Feather from "@expo/vector-icons/Feather";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import { type ReactNode } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { router } from "expo-router";
 import type { DailyFastDetail, FastSeverity } from "@theosis/core";
@@ -24,9 +26,19 @@ import {
 type FastBannerProps = {
   detail: DailyFastDetail | null | undefined;
   fastingLevel: FastSeverity | undefined;
+  // Collapse the feature card down to its one-line header (icon + name +
+  // chevron). Owned by the Daily screen so the choice persists across
+  // visits. When onToggleCollapsed is omitted, the card isn't collapsible.
+  collapsed?: boolean;
+  onToggleCollapsed?: () => void;
 };
 
-export function FastBanner({ detail, fastingLevel }: FastBannerProps) {
+export function FastBanner({
+  detail,
+  fastingLevel,
+  collapsed = false,
+  onToggleCollapsed,
+}: FastBannerProps) {
   const severity: FastSeverity = fastingLevel ?? "standard";
 
   if (!detail) {
@@ -34,7 +46,14 @@ export function FastBanner({ detail, fastingLevel }: FastBannerProps) {
   }
 
   if (detail.kind === "fast-free") {
-    return <FastFreeFeature name={detail.name} reason={detail.reason} />;
+    return (
+      <FastFreeFeature
+        name={detail.name}
+        reason={detail.reason}
+        collapsed={collapsed}
+        onToggleCollapsed={onToggleCollapsed}
+      />
+    );
   }
 
   // Both seasonal fasts and the weekly Wed/Fri fast get the full feature
@@ -47,6 +66,8 @@ export function FastBanner({ detail, fastingLevel }: FastBannerProps) {
       totalDays={detail.totalDays}
       guidance={detail.guidance[severity]}
       severity={severity}
+      collapsed={collapsed}
+      onToggleCollapsed={onToggleCollapsed}
     />
   );
 }
@@ -84,18 +105,77 @@ function CompactRow({
   );
 }
 
+// Header shared by both feature variants. When onToggleCollapsed is
+// provided it becomes a tappable row with a chevron that expands/collapses
+// the card; otherwise it's a plain static header.
+function FeatureHeader({
+  icon,
+  eyebrow,
+  name,
+  trailing,
+  collapsed,
+  onToggleCollapsed,
+}: {
+  icon: "leaf" | "white-balance-sunny";
+  eyebrow: string;
+  name: string;
+  trailing?: ReactNode;
+  collapsed: boolean;
+  onToggleCollapsed?: () => void;
+}) {
+  const inner = (
+    <>
+      <View style={styles.featureIconWrap}>
+        <MaterialCommunityIcons name={icon} size={16} color={colors.accent} />
+      </View>
+      <View style={{ flex: 1 }}>
+        <Text style={styles.featureEyebrow}>{eyebrow}</Text>
+        <Text style={styles.featureTitle}>{name}</Text>
+      </View>
+      {trailing ?? null}
+      {onToggleCollapsed ? (
+        <Feather
+          name={collapsed ? "chevron-down" : "chevron-up"}
+          size={18}
+          color={colors.inkSoft}
+        />
+      ) : null}
+    </>
+  );
+
+  if (!onToggleCollapsed) {
+    return <View style={styles.featureHeader}>{inner}</View>;
+  }
+  return (
+    <Pressable
+      onPress={onToggleCollapsed}
+      style={({ pressed }) => [styles.featureHeader, pressed && { opacity: 0.7 }]}
+      hitSlop={6}
+      accessibilityRole="button"
+      accessibilityState={{ expanded: !collapsed }}
+      accessibilityLabel={`${name} — ${collapsed ? "expand" : "collapse"} details`}
+    >
+      {inner}
+    </Pressable>
+  );
+}
+
 function FastFeature({
   name,
   dayOfFast,
   totalDays,
   guidance,
   severity,
+  collapsed,
+  onToggleCollapsed,
 }: {
   name: string;
   dayOfFast?: number;
   totalDays?: number;
   guidance: string;
   severity: FastSeverity;
+  collapsed: boolean;
+  onToggleCollapsed?: () => void;
 }) {
   const hasProgress =
     typeof dayOfFast === "number" &&
@@ -107,41 +187,45 @@ function FastFeature({
 
   return (
     <View style={styles.feature}>
-      <View style={styles.featureHeader}>
-        <View style={styles.featureIconWrap}>
-          <Feather name="moon" size={16} color={colors.accent} />
-        </View>
-        <View style={{ flex: 1 }}>
-          <Text style={styles.featureEyebrow}>Fasting season</Text>
-          <Text style={styles.featureTitle}>{name}</Text>
-        </View>
-        {hasProgress ? (
-          <Text style={styles.featureDay}>
-            Day <Text style={styles.featureDayNum}>{dayOfFast}</Text>
-            <Text style={styles.featureDaySoft}> / {totalDays}</Text>
-          </Text>
-        ) : null}
-      </View>
+      <FeatureHeader
+        icon="leaf"
+        eyebrow="Fasting season"
+        name={name}
+        collapsed={collapsed}
+        onToggleCollapsed={onToggleCollapsed}
+        trailing={
+          hasProgress ? (
+            <Text style={styles.featureDay}>
+              Day <Text style={styles.featureDayNum}>{dayOfFast}</Text>
+              <Text style={styles.featureDaySoft}> / {totalDays}</Text>
+            </Text>
+          ) : undefined
+        }
+      />
 
-      {hasProgress ? (
-        <View style={styles.progressTrack}>
-          <View style={[styles.progressFill, { width: `${percent}%` }]} />
-        </View>
-      ) : null}
+      {collapsed ? null : (
+        <>
+          {hasProgress ? (
+            <View style={styles.progressTrack}>
+              <View style={[styles.progressFill, { width: `${percent}%` }]} />
+            </View>
+          ) : null}
 
-      <Text style={styles.guidance}>{guidance}</Text>
+          <Text style={styles.guidance}>{guidance}</Text>
 
-      <View style={styles.featureFooter}>
-        <Text style={styles.footerLabel}>Your rule: {severity}</Text>
-        <Pressable
-          onPress={() => router.push("/settings")}
-          hitSlop={8}
-          accessibilityRole="button"
-          accessibilityLabel="Adjust your fasting level"
-        >
-          <Text style={styles.footerLink}>Adjust</Text>
-        </Pressable>
-      </View>
+          <View style={styles.featureFooter}>
+            <Text style={styles.footerLabel}>Your rule: {severity}</Text>
+            <Pressable
+              onPress={() => router.push("/settings")}
+              hitSlop={8}
+              accessibilityRole="button"
+              accessibilityLabel="Adjust your fasting level"
+            >
+              <Text style={styles.footerLink}>Adjust</Text>
+            </Pressable>
+          </View>
+        </>
+      )}
     </View>
   );
 }
@@ -149,22 +233,24 @@ function FastFeature({
 function FastFreeFeature({
   name,
   reason,
+  collapsed,
+  onToggleCollapsed,
 }: {
   name: string;
   reason: string;
+  collapsed: boolean;
+  onToggleCollapsed?: () => void;
 }) {
   return (
     <View style={styles.feature}>
-      <View style={styles.featureHeader}>
-        <View style={styles.featureIconWrap}>
-          <Feather name="sun" size={16} color={colors.accent} />
-        </View>
-        <View style={{ flex: 1 }}>
-          <Text style={styles.featureEyebrow}>Fast-free</Text>
-          <Text style={styles.featureTitle}>{name}</Text>
-        </View>
-      </View>
-      <Text style={styles.guidance}>{reason}</Text>
+      <FeatureHeader
+        icon="white-balance-sunny"
+        eyebrow="Fast-free"
+        name={name}
+        collapsed={collapsed}
+        onToggleCollapsed={onToggleCollapsed}
+      />
+      {collapsed ? null : <Text style={styles.guidance}>{reason}</Text>}
     </View>
   );
 }

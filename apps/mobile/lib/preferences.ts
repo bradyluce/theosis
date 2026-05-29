@@ -346,6 +346,9 @@ export type AppPreferences = {
   // plan progress doesn't yet round-trip through /api/me/...; the plan
   // corpus is static so all the user contributes is a couple counters.
   readingPlanProgress?: ReadingPlanProgress[];
+  // Whether the Daily fast banner is collapsed to its one-line summary.
+  // Local-only UI preference; persists the user's last choice across visits.
+  fastBannerCollapsed?: boolean;
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -1087,6 +1090,53 @@ export async function getReadingList(): Promise<ReadingListItem[]> {
   return prefs.readingList ?? [];
 }
 
+// Stable per-work reading-list id. Derived from the workId so toggling is
+// idempotent and the same item round-trips through the sync upsert/delete
+// (clientId === this id).
+export function readingListId(workId: string): string {
+  return `reading-list:${workId}`;
+}
+
+export async function isInReadingList(workId: string): Promise<boolean> {
+  const prefs = await loadPrefs();
+  const id = readingListId(workId);
+  return (prefs.readingList ?? []).some((r) => r.id === id);
+}
+
+// Add or remove a work from the reading list. Local-first: writes prefs
+// immediately and enqueues the server sync (upsert/delete) fire-and-forget.
+export async function toggleReadingList(opts: {
+  workId: string;
+  workSlug: string;
+  title: string;
+}): Promise<{ saved: boolean; list: ReadingListItem[] }> {
+  const id = readingListId(opts.workId);
+  const prefs = await loadPrefs();
+  const existing = prefs.readingList ?? [];
+  const already = existing.some((r) => r.id === id);
+  if (already) {
+    const next = existing.filter((r) => r.id !== id);
+    await savePrefs({ ...prefs, readingList: next });
+    void enqueueWrite({ kind: "readingList.delete", clientId: id });
+    return { saved: false, list: next };
+  }
+  const entry: ReadingListItem = {
+    id,
+    workSlug: opts.workSlug,
+    title: opts.title,
+    addedAt: new Date().toISOString(),
+  };
+  const next = [entry, ...existing];
+  await savePrefs({ ...prefs, readingList: next });
+  void enqueueWrite({
+    kind: "readingList.upsert",
+    clientId: id,
+    workId: opts.workId,
+    status: "read-later",
+  });
+  return { saved: true, list: next };
+}
+
 // Streak counts the longest consecutive run of "app opened" days ending
 // today (or yesterday — opening yesterday and not yet today still counts).
 // Called from screens that count as a "session": Daily and You tabs.
@@ -1189,6 +1239,18 @@ export async function getDailyCardOrder(): Promise<DailyCardKey[]> {
 export async function setDailyCardOrder(order: DailyCardKey[]): Promise<void> {
   const prefs = await loadPrefs();
   await savePrefs({ ...prefs, dailyCardOrder: order });
+}
+
+// --- Daily fast banner collapse (local-only UI pref) -----------------------
+
+export async function getFastBannerCollapsed(): Promise<boolean> {
+  const prefs = await loadPrefs();
+  return prefs.fastBannerCollapsed ?? false;
+}
+
+export async function setFastBannerCollapsed(collapsed: boolean): Promise<void> {
+  const prefs = await loadPrefs();
+  await savePrefs({ ...prefs, fastBannerCollapsed: collapsed });
 }
 
 // --- Onboarding status -----------------------------------------------------

@@ -325,15 +325,36 @@ export default function SettingsScreen() {
           <SectionHeader eyebrow="Account" title="Your session" rule />
           <View style={{ gap: spacing.md, marginTop: spacing.md }}>
             <AccountCard />
-            <RestartSetupRow />
           </View>
         </Card>
 
         {/* About — legal pages required for the App Store and useful
             for any user who wants to know what we collect. */}
         <Card>
-          <SectionHeader eyebrow="About" title="Legal" rule />
+          <SectionHeader eyebrow="About" title="Help & legal" rule />
           <View style={{ gap: spacing.sm, marginTop: spacing.md }}>
+            <Pressable
+              onPress={() =>
+                Linking.openURL(
+                  "mailto:contact.theosis@gmail.com?subject=Theosis%20feedback",
+                )
+              }
+              style={({ pressed }) => [
+                styles.linkRow,
+                pressed && { backgroundColor: colors.surfaceStrong },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Contact us"
+            >
+              <View style={styles.linkRowMain}>
+                <Text style={styles.linkRowLabel}>Contact us</Text>
+                <Text style={styles.linkRowDescription}>
+                  Questions, feature ideas, or something not working? We&apos;d
+                  love to hear from you.
+                </Text>
+              </View>
+              <Feather name="mail" size={15} color={colors.inkSoft} />
+            </Pressable>
             <Pressable
               onPress={() => router.push("/terms")}
               style={({ pressed }) => [
@@ -372,9 +393,7 @@ export default function SettingsScreen() {
           </View>
         </Card>
 
-        <Text style={styles.footer}>
-          Made with reverence. · Build 2026-05-27-d
-        </Text>
+        <Text style={styles.footer}>Made with reverence.</Text>
       </ScrollView>
     </SafeAreaView>
   );
@@ -626,53 +645,6 @@ function AccountCard() {
         </Pressable>
       </SignedIn>
     </>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Restart setup row — clears onboarding draft + status, redirects to welcome
-// ---------------------------------------------------------------------------
-
-function RestartSetupRow() {
-  const reset = useOnboardingState((s) => s.reset);
-
-  function handleRestart() {
-    Alert.alert(
-      "Walk through setup again?",
-      "Your existing preferences stay until you confirm new ones. You can back out at any step.",
-      [
-        { text: "Cancel", style: "cancel" },
-        {
-          text: "Start over",
-          onPress: async () => {
-            reset();
-            await setOnboardingStatus("needs_onboarding");
-            router.replace("/onboarding/welcome");
-          },
-        },
-      ],
-    );
-  }
-
-  return (
-    <Pressable
-      onPress={handleRestart}
-      style={({ pressed }) => [
-        styles.linkRow,
-        pressed && { backgroundColor: colors.surfaceStrong },
-      ]}
-      accessibilityRole="button"
-      accessibilityLabel="Walk through setup again"
-    >
-      <View style={styles.linkRowMain}>
-        <Text style={styles.linkRowLabel}>Walk through setup again</Text>
-        <Text style={styles.linkRowDescription}>
-          Re-run the onboarding flow. Your existing answers are preserved
-          until you confirm new ones.
-        </Text>
-      </View>
-      <Feather name="rotate-cw" size={15} color={colors.inkSoft} />
-    </Pressable>
   );
 }
 
@@ -935,6 +907,7 @@ const styles = StyleSheet.create({
     fontSize: 38,
     color: colors.accent,
   },
+  heroAvatarImage: { width: "100%", height: "100%" },
   heroText: { flex: 1, gap: 4 },
   heroName: {
     fontFamily: fonts.serifBoldItalic,

@@ -23,7 +23,9 @@ import { getApi } from "@/lib/api";
 import {
   type CompletionMark,
   getCompletions,
+  isInReadingList,
   recordLibraryVisit,
+  toggleReadingList,
 } from "@/lib/preferences";
 
 // Work detail — the editorial title page. Composed like the inside cover
@@ -119,6 +121,34 @@ export default function WorkDetailScreen() {
         .map((c) => c.slug),
     );
   }, [completions]);
+
+  // Reading-list membership for this work. Refreshed on focus so the
+  // button reflects changes made on the You tab. Toggled optimistically.
+  const [inReadingList, setInReadingList] = useState(false);
+  useFocusEffect(
+    useCallback(() => {
+      if (!work?.id) return;
+      let canceled = false;
+      void isInReadingList(work.id).then((v) => {
+        if (!canceled) setInReadingList(v);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, [work?.id]),
+  );
+
+  async function handleToggleReadingList() {
+    if (!work) return;
+    // Optimistic flip; toggleReadingList persists + enqueues the sync.
+    setInReadingList((v) => !v);
+    const res = await toggleReadingList({
+      workId: work.id,
+      workSlug: slug,
+      title: work.shortTitle ?? work.title,
+    });
+    setInReadingList(res.saved);
+  }
   // For the header progress badge — "N of M chapters read".
   const chapterReadCount = useMemo(() => {
     if (!work || !chaptersQuery.data) return 0;
@@ -246,6 +276,34 @@ export default function WorkDetailScreen() {
                 ) : null}
 
                 <Text style={styles.era}>{work.eraLabel}</Text>
+
+                <Pressable
+                  onPress={handleToggleReadingList}
+                  style={({ pressed }) => [
+                    styles.readingListButton,
+                    inReadingList && styles.readingListButtonActive,
+                    pressed && { opacity: 0.7 },
+                  ]}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: inReadingList }}
+                  accessibilityLabel={
+                    inReadingList
+                      ? "Remove from your reading list"
+                      : "Add to your reading list"
+                  }
+                >
+                  <Feather
+                    name={inReadingList ? "check" : "bookmark"}
+                    size={14}
+                    color={colors.accent}
+                  />
+                  <Text style={styles.readingListButtonLabel}>
+                    {inReadingList
+                      ? "In your reading list"
+                      : "Add to reading list"}
+                  </Text>
+                </Pressable>
+
                 <GiltRule style={{ marginTop: spacing.md }} />
               </View>
 
@@ -535,6 +593,30 @@ const styles = StyleSheet.create({
     fontFamily: fonts.serifItalic,
     fontSize: 13,
     color: colors.inkSoft,
+  },
+  readingListButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    alignSelf: "flex-start",
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
+    borderRadius: radii.pill,
+    borderWidth: 1,
+    borderColor: colors.lineGilt,
+    backgroundColor: colors.accentSoft,
+    marginTop: spacing.md,
+  },
+  readingListButtonActive: {
+    borderColor: "rgba(212, 168, 87, 0.55)",
+  },
+  readingListButtonLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.accent,
+    letterSpacing: 1.4,
+    textTransform: "uppercase",
   },
 
   // Lede / summary

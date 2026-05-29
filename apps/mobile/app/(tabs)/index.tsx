@@ -51,8 +51,10 @@ import {
   type ProfilePrefs,
   DEFAULT_DAILY_CARD_ORDER,
   getDailyCardOrder,
+  getFastBannerCollapsed,
   getLastReadLocation,
   getProfilePrefs,
+  setFastBannerCollapsed,
   getReadingPlanProgress,
   getSavedVerses,
   isDailyReadingSaved,
@@ -197,6 +199,7 @@ export default function DailyScreen() {
     undefined,
   );
   const [dailySaved, setDailySaved] = useState(false);
+  const [fastCollapsed, setFastCollapsed] = useState(false);
 
   // Date navigation: undefined = today (the natural default). Selecting a
   // different date both refetches /api/daily?date=... and surfaces a
@@ -218,12 +221,14 @@ export default function DailyScreen() {
       recordActivityToday(),
       getSavedVerses(),
       getLastReadLocation(),
-    ]).then(([order, activity, saved, loc]) => {
+      getFastBannerCollapsed(),
+    ]).then(([order, activity, saved, loc, fastCollapsedPref]) => {
       if (canceled) return;
       setCardOrderState(order);
       setStreak(activity.streak);
       setSavedCount(saved.length);
       setLastRead(loc);
+      setFastCollapsed(fastCollapsedPref);
     });
     return () => {
       canceled = true;
@@ -498,6 +503,12 @@ export default function DailyScreen() {
             <FastBanner
               detail={data.fastDetail}
               fastingLevel={profile.fastingLevel}
+              collapsed={fastCollapsed}
+              onToggleCollapsed={() => {
+                const next = !fastCollapsed;
+                setFastCollapsed(next);
+                void setFastBannerCollapsed(next);
+              }}
             />
           </View>
         ) : null}

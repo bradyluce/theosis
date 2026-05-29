@@ -953,7 +953,9 @@ function BenefitChip({
   return (
     <View style={styles.benefitChip}>
       <Feather name={glyph} size={11} color={colors.accent} />
-      <Text style={styles.benefitChipLabel}>{label}</Text>
+      <Text style={styles.benefitChipLabel} numberOfLines={1}>
+        {label}
+      </Text>
     </View>
   );
 }
@@ -992,15 +994,18 @@ const styles = StyleSheet.create({
   },
   benefitsRow: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    flexWrap: "wrap",
+    justifyContent: "center",
     alignItems: "center",
+    gap: spacing.sm,
     paddingHorizontal: spacing.sm,
   },
   benefitChip: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 6,
-    paddingHorizontal: spacing.md,
+    flexShrink: 1,
+    gap: 5,
+    paddingHorizontal: spacing.sm,
     paddingVertical: 6,
     borderRadius: radii.pill,
     backgroundColor: "rgba(212, 168, 87, 0.06)",
@@ -1009,10 +1014,10 @@ const styles = StyleSheet.create({
   },
   benefitChipLabel: {
     fontFamily: fonts.sans,
-    fontSize: 10.5,
+    fontSize: 10,
     fontWeight: "700",
     color: colors.accent,
-    letterSpacing: 1.2,
+    letterSpacing: 0.6,
     textTransform: "uppercase",
   },
   heroBlock: { gap: spacing.xs, alignItems: "center" },

@@ -306,6 +306,9 @@ function ActionButton({
     >
       <Feather name={icon} size={18} color={iconColor} />
       <Text
+        numberOfLines={1}
+        adjustsFontSizeToFit
+        minimumFontScale={0.7}
         style={[
           styles.actionLabel,
           accent && styles.actionLabelAccent,
@@ -431,12 +434,13 @@ const styles = StyleSheet.create({
   actionDisabled: { opacity: 0.4 },
   actionLabel: {
     fontFamily: fonts.sans,
-    fontSize: 10.5,
+    fontSize: 10,
     fontWeight: "700",
     color: colors.inkMuted,
-    letterSpacing: 1.6,
+    letterSpacing: 0.6,
     textTransform: "uppercase",
     marginTop: 4,
+    textAlign: "center",
   },
   actionLabelAccent: { color: colors.accent },
   actionLabelDisabled: { color: colors.inkSoft },

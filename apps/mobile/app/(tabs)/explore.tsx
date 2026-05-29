@@ -174,28 +174,40 @@ export default function BibleReaderScreen() {
   // their current primary preference when the URL doesn't pin one.
   const noParamsPresent = !params.book && !params.chapter;
   const [restored, setRestored] = useState(false);
-  useEffect(() => {
-    if (!noParamsPresent) {
-      setRestored(true);
-      return;
-    }
-    if (defaultTranslation === null) return; // wait for prefs
-    let canceled = false;
-    getLastReadLocation().then((loc) => {
-      if (canceled) return;
-      if (loc) {
-        router.setParams({
-          translation: defaultTranslation || loc.translation,
-          book: loc.book,
-          chapter: String(loc.chapter),
-        });
+  // Whether the user has a persisted reading location. Drives the
+  // first-launch picker auto-open below: a returning reader always has
+  // one (so we restore silently), a brand-new user doesn't (so we offer
+  // the book picker).
+  const [hadSavedLocation, setHadSavedLocation] = useState(false);
+  // Restore on every focus, not just mount: switching to another tab can
+  // drop the reader's route params, and the user expects to come back to
+  // the chapter they were reading (Genesis 1), not the book picker.
+  useFocusEffect(
+    useCallback(() => {
+      if (!noParamsPresent) {
+        setHadSavedLocation(true);
+        setRestored(true);
+        return;
       }
-      setRestored(true);
-    });
-    return () => {
-      canceled = true;
-    };
-  }, [noParamsPresent, defaultTranslation]);
+      if (defaultTranslation === null) return; // wait for prefs
+      let canceled = false;
+      getLastReadLocation().then((loc) => {
+        if (canceled) return;
+        if (loc) {
+          setHadSavedLocation(true);
+          router.setParams({
+            translation: defaultTranslation || loc.translation,
+            book: loc.book,
+            chapter: String(loc.chapter),
+          });
+        }
+        setRestored(true);
+      });
+      return () => {
+        canceled = true;
+      };
+    }, [noParamsPresent, defaultTranslation]),
+  );
 
   // Persist on every (translation, book, chapter) change. Skip until
   // restore completes to avoid clobbering saved state with defaults.
@@ -224,11 +236,14 @@ export default function BibleReaderScreen() {
   // "choose a book" experience instead of an empty screen.
   const [autoPushed, setAutoPushed] = useState(false);
   useEffect(() => {
-    if (restored && !hasSelection && !autoPushed) {
+    // Only auto-open the picker for a genuinely new reader (no saved
+    // location). A returning reader's chapter is restored above, so we
+    // never yank them back into the picker on tab return.
+    if (restored && !hasSelection && !autoPushed && !hadSavedLocation) {
       setAutoPushed(true);
       router.push(`/book-picker?translation=${translation}`);
     }
-  }, [restored, hasSelection, autoPushed, translation]);
+  }, [restored, hasSelection, autoPushed, hadSavedLocation, translation]);
 
   const chapterQuery = useQuery({
     queryKey: ["bible-chapter", translation, bookSlug, chapterNumber],

@@ -21,7 +21,6 @@ import { getApi } from "@/lib/api";
 import {
   type PrayerRule,
   getPrayerRule,
-  removePrayerFromRule,
   setPrayerRule,
 } from "@/lib/preferences";
 import {
@@ -32,15 +31,15 @@ import {
   type PrayerEntry,
 } from "@/lib/prayer-corpus";
 
-// Prayer Rule — Morning / Evening tabs, read or edit mode.
+// Prayer Rule — Morning / Evening tabs. Read-only view.
 //
-// Read mode (default) renders the configured prayers as a top-to-bottom
-// list. Dynamic items (gospel-of-day, epistle-of-day, appointed psalm)
-// pull live from /api/daily, which the user can do once per day.
+// Renders the configured prayers as a top-to-bottom list. Dynamic items
+// (gospel-of-day, epistle-of-day, appointed psalm) pull live from
+// /api/daily, which the user can do once per day.
 //
-// Edit mode lets the user remove prayers from the rule and tap "Add prayer"
-// to navigate to the picker (app/prayer-picker.tsx). The picker pushes
-// items back here via the rule storage, so we re-read on focus.
+// Editing is unified through the full builder at /prayer-builder — the
+// same screen Settings opens — so there's a single place to add, remove,
+// reorder, and export the rule. The "Edit" action here just routes there.
 //
 // First launch: if the saved rule has !initialized, we write the
 // STARTER_RULE so the user opens to a working compact rule (Trisagion,
@@ -49,12 +48,9 @@ import {
 type Slot = "morning" | "evening";
 
 export default function PrayerScreen() {
-  const params = useLocalSearchParams<{ slot?: string; mode?: string }>();
+  const params = useLocalSearchParams<{ slot?: string }>();
   const initialSlot: Slot = params.slot === "evening" ? "evening" : "morning";
   const [slot, setSlot] = useState<Slot>(initialSlot);
-  const [mode, setMode] = useState<"read" | "edit">(
-    params.mode === "edit" ? "edit" : "read",
-  );
   const [rule, setRule] = useState<PrayerRule | null>(null);
 
   const api = getApi();
@@ -88,17 +84,8 @@ export default function PrayerScreen() {
 
   const itemIds = rule ? rule[slot] : [];
 
-  const handleRemove = async (itemId: string) => {
-    const next = await removePrayerFromRule(slot, itemId);
-    setRule(next);
-  };
-
-  const handleAdd = () => {
-    router.push(`/prayer-picker?slot=${slot}`);
-  };
-
   // Re-read the rule whenever the screen comes into focus (e.g. after a
-  // round-trip to the picker). Lightweight — single AsyncStorage read.
+  // round-trip to the builder). Lightweight — single AsyncStorage read.
   useEffect(() => {
     const interval = setInterval(refreshRule, 1500);
     return () => clearInterval(interval);
@@ -116,16 +103,15 @@ export default function PrayerScreen() {
           headerShadowVisible: false,
           headerRight: () => (
             <Pressable
-              onPress={() => setMode((m) => (m === "edit" ? "read" : "edit"))}
+              onPress={() => router.push("/prayer-builder")}
               style={({ pressed }) => [
                 styles.modeButton,
                 pressed && { opacity: 0.6 },
               ]}
               accessibilityRole="button"
+              accessibilityLabel="Edit your prayer rule"
             >
-              <Text style={styles.modeButtonText}>
-                {mode === "edit" ? "Done" : "Edit"}
-              </Text>
+              <Text style={styles.modeButtonText}>Edit</Text>
             </Pressable>
           ),
         }}
@@ -207,8 +193,6 @@ export default function PrayerScreen() {
                       item={dyn}
                       daily={dailyQuery.data}
                       loading={dailyQuery.isLoading}
-                      editing={mode === "edit"}
-                      onRemove={() => handleRemove(id)}
                     />
                   );
                 }
@@ -219,60 +203,32 @@ export default function PrayerScreen() {
                   return null;
                 }
                 return (
-                  <PrayerCard
-                    key={`${id}-${index}`}
-                    prayer={prayer}
-                    editing={mode === "edit"}
-                    onRemove={() => handleRemove(id)}
-                  />
+                  <PrayerCard key={`${id}-${index}`} prayer={prayer} />
                 );
               })}
             </View>
           )}
 
-          {/* Add prayer button — only visible in edit mode. */}
-          {mode === "edit" ? (
-            <Pressable
-              onPress={handleAdd}
-              style={({ pressed }) => [
-                styles.addButton,
-                pressed && { opacity: 0.8 },
-              ]}
-              accessibilityRole="button"
-              accessibilityLabel="Add a prayer"
-            >
-              <Text style={styles.addButtonPlus}>+</Text>
-              <Text style={styles.addButtonLabel}>Add prayer</Text>
-            </Pressable>
-          ) : (
-            <Pressable
-              onPress={() => setMode("edit")}
-              style={({ pressed }) => [
-                styles.editHint,
-                pressed && { opacity: 0.7 },
-              ]}
-              accessibilityRole="button"
-            >
-              <Text style={styles.editHintText}>
-                Tap Edit to customize this rule
-              </Text>
-            </Pressable>
-          )}
+          {/* Customize — routes to the full builder (same as Settings). */}
+          <Pressable
+            onPress={() => router.push("/prayer-builder")}
+            style={({ pressed }) => [
+              styles.addButton,
+              pressed && { opacity: 0.8 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Customize your prayer rule"
+          >
+            <Text style={styles.addButtonPlus}>+</Text>
+            <Text style={styles.addButtonLabel}>Add or edit prayers</Text>
+          </Pressable>
         </ScrollView>
       </SafeAreaView>
     </>
   );
 }
 
-function PrayerCard({
-  prayer,
-  editing,
-  onRemove,
-}: {
-  prayer: PrayerEntry;
-  editing: boolean;
-  onRemove: () => void;
-}) {
+function PrayerCard({ prayer }: { prayer: PrayerEntry }) {
   const paragraphs = prayer.body.split("\n\n");
   return (
     <View style={styles.card}>
@@ -283,20 +239,6 @@ function PrayerCard({
           ) : null}
           <Text style={styles.cardTitle}>{prayer.title}</Text>
         </View>
-        {editing ? (
-          <Pressable
-            onPress={onRemove}
-            hitSlop={10}
-            style={({ pressed }) => [
-              styles.removeButton,
-              pressed && { opacity: 0.6 },
-            ]}
-            accessibilityRole="button"
-            accessibilityLabel={`Remove ${prayer.title}`}
-          >
-            <Text style={styles.removeGlyph}>×</Text>
-          </Pressable>
-        ) : null}
       </View>
       <View style={styles.cardBody}>
         {paragraphs.map((paragraph, i) => (
@@ -316,14 +258,10 @@ function DynamicItemCard({
   item,
   daily,
   loading,
-  editing,
-  onRemove,
 }: {
   item: DynamicItem;
   daily: DailyResponse | undefined;
   loading: boolean;
-  editing: boolean;
-  onRemove: () => void;
 }) {
   // Find the matching reading from the daily payload. The lectionary
   // labels readings via `label` ("Gospel" / "Epistle") and `category`.
@@ -368,20 +306,6 @@ function DynamicItemCard({
           <Text style={styles.cardSubtitle}>{item.subtitle}</Text>
           <Text style={styles.cardTitle}>{item.title}</Text>
         </View>
-        {editing ? (
-          <Pressable
-            onPress={onRemove}
-            hitSlop={10}
-            style={({ pressed }) => [
-              styles.removeButton,
-              pressed && { opacity: 0.6 },
-            ]}
-            accessibilityRole="button"
-            accessibilityLabel={`Remove ${item.title}`}
-          >
-            <Text style={styles.removeGlyph}>×</Text>
-          </Pressable>
-        ) : null}
       </View>
       {loading ? (
         <ActivityIndicator color={colors.accent} />
@@ -520,23 +444,6 @@ const styles = StyleSheet.create({
     letterSpacing: 0.4,
   },
 
-  removeButton: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
-    backgroundColor: colors.background,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.line,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  removeGlyph: {
-    fontSize: 18,
-    color: colors.error,
-    lineHeight: 18,
-    fontWeight: "300",
-  },
-
   dynLink: {
     flexDirection: "row",
     alignItems: "center",
@@ -580,15 +487,5 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: colors.accent,
     letterSpacing: 0.6,
-  },
-
-  editHint: {
-    paddingVertical: spacing.md,
-    alignItems: "center",
-  },
-  editHintText: {
-    fontSize: 12,
-    color: colors.inkSoft,
-    fontStyle: "italic",
   },
 });
