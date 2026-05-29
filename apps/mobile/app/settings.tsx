@@ -15,6 +15,7 @@ import { Stack, router, useFocusEffect } from "expo-router";
 import { useCallback, useState } from "react";
 import {
   Alert,
+  Linking,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -43,11 +44,10 @@ import { getApi, getApiBaseUrl } from "@/lib/api";
 import {
   type ProfilePrefs,
   getProfilePrefs,
-  setOnboardingStatus,
   updateProfilePrefs,
 } from "@/lib/preferences";
-import { clearLocalUserData } from "@/lib/sync/sign-out";
-import { useOnboardingState } from "@/lib/use-onboarding-state";
+import { clearLocalUserData, signOutWithFlush } from "@/lib/sync/sign-out";
+import { usePatronIcon } from "@/lib/use-patron-icon";
 
 // ---------------------------------------------------------------------------
 // Option lists used only here. The other option arrays come from
@@ -146,7 +146,7 @@ export default function SettingsScreen() {
         keyboardShouldPersistTaps="handled"
       >
         {/* Identity hero */}
-        <IdentityHero />
+        <IdentityHero patronSlug={prefs.patronSaintSlug} />
 
         {/* Identity: Status, Jurisdiction, Parish */}
         <Card>
@@ -384,8 +384,9 @@ export default function SettingsScreen() {
 // Identity hero — Halo'd avatar + Clerk display name
 // ---------------------------------------------------------------------------
 
-function IdentityHero() {
+function IdentityHero({ patronSlug }: { patronSlug: string | undefined }) {
   const { user, isSignedIn } = useUser();
+  const patronIcon = usePatronIcon(patronSlug);
   const displayName = isSignedIn
     ? user?.firstName ??
       user?.fullName ??
@@ -397,7 +398,17 @@ function IdentityHero() {
   return (
     <View style={styles.hero}>
       <Halo size={84} glow>
-        <Text style={styles.heroInitial}>{initial}</Text>
+        {patronIcon ? (
+          <Image
+            source={{ uri: patronIcon.src }}
+            accessibilityLabel={patronIcon.alt}
+            style={styles.heroAvatarImage}
+            contentFit="cover"
+            transition={140}
+          />
+        ) : (
+          <Text style={styles.heroInitial}>{initial}</Text>
+        )}
       </Halo>
       <View style={styles.heroText}>
         <Eyebrow tone="accent">
@@ -424,12 +435,35 @@ function AccountCard() {
     if (busy) return;
     setBusy(true);
     try {
-      // Wipe local prefs / pending writes / anonymous-id / in-memory
-      // caches before Clerk's signOut(). Without this, the next user
-      // who signs in on a shared device inherits the previous account's
-      // diptych names, notes, parish, patron, and offline write queue.
-      await clearLocalUserData();
-      await signOut();
+      // Flush in-flight writes (profile + queue) to the server BEFORE
+      // wiping local data — otherwise unsynced notes/highlights/patron
+      // are lost (clearLocalUserData drops the queue, and profile patches
+      // are fire-and-forget). If anything is still pending after the
+      // flush, warn before discarding. signOutWithFlush also ensures the
+      // local clear lands before Clerk's signOut() (the auth bridge in
+      // _layout.tsx re-fires on signOut, so order matters).
+      await signOutWithFlush({
+        signOut,
+        confirmDiscard: (count) =>
+          new Promise<boolean>((resolve) => {
+            Alert.alert(
+              "Unsynced changes",
+              `${count} change${count === 1 ? "" : "s"} haven't finished syncing. If you sign out now they'll be lost. Sign out anyway?`,
+              [
+                {
+                  text: "Cancel",
+                  style: "cancel",
+                  onPress: () => resolve(false),
+                },
+                {
+                  text: "Sign out anyway",
+                  style: "destructive",
+                  onPress: () => resolve(true),
+                },
+              ],
+            );
+          }),
+      });
     } finally {
       setBusy(false);
     }

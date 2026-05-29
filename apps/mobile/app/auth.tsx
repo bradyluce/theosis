@@ -49,7 +49,7 @@ import {
 } from "@/components/theosis/primitives";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import { getApiBaseUrl } from "@/lib/api";
-import { clearLocalUserData } from "@/lib/sync/sign-out";
+import { signOutWithFlush } from "@/lib/sync/sign-out";
 
 export default function AuthDebugScreen() {
   const { isLoaded: userLoaded, isSignedIn } = useUser();
@@ -815,13 +815,35 @@ function SignedInView({ email }: { email: string | undefined }) {
     if (signingOut) return;
     setSigningOut(true);
     try {
-      // Clear local prefs / pending writes / anonymous-id / in-memory
-      // caches BEFORE Clerk's signOut() so that, on a shared device,
-      // the next user who signs in doesn't inherit the previous
-      // session's data. The auth bridge effect in app/_layout.tsx
-      // re-fires on the signOut() side, so order matters here.
-      await clearLocalUserData();
-      await signOut();
+      // Flush in-flight writes (profile + queue) to the server BEFORE
+      // signOut wipes local data — otherwise unsynced notes/highlights/
+      // patron are lost forever (clearLocalUserData drops the queue).
+      // If writes are still pending after the flush, warn before
+      // discarding. signOutWithFlush handles the clear + signOut order
+      // (the auth bridge in _layout.tsx re-fires on signOut, so the
+      // clear must land first).
+      await signOutWithFlush({
+        signOut,
+        confirmDiscard: (count) =>
+          new Promise<boolean>((resolve) => {
+            Alert.alert(
+              "Unsynced changes",
+              `${count} change${count === 1 ? "" : "s"} haven't finished syncing. If you sign out now they'll be lost. Sign out anyway?`,
+              [
+                {
+                  text: "Cancel",
+                  style: "cancel",
+                  onPress: () => resolve(false),
+                },
+                {
+                  text: "Sign out anyway",
+                  style: "destructive",
+                  onPress: () => resolve(true),
+                },
+              ],
+            );
+          }),
+      });
     } finally {
       setSigningOut(false);
     }
