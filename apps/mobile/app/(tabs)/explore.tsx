@@ -165,19 +165,26 @@ export default function BibleReaderScreen() {
   // location. This way returning to the tab reopens the chapter directly
   // (Genesis 1), not the book picker.
   const paramsHaveSelection = Boolean(params.book && params.chapter);
-  const [restoredLoc, setRestoredLoc] = useState<LastReadLocation | null>(null);
-  const [restoreChecked, setRestoreChecked] = useState(false);
+  // Three states: `undefined` = still loading the saved location for the
+  // current (param-less) view; `null` = loaded, nothing saved (a brand-new
+  // reader); an object = the saved location. The `undefined` window is what
+  // lets us avoid flashing the book picker on every tab return — the
+  // floating tab bar drops route params on tab switch, so we re-resolve from
+  // the persisted last-read each time the tab regains focus.
+  const [restoredLoc, setRestoredLoc] = useState<
+    LastReadLocation | null | undefined
+  >(undefined);
   useFocusEffect(
     useCallback(() => {
-      if (paramsHaveSelection) {
-        setRestoreChecked(true);
-        return;
-      }
+      // A pinned chapter in the URL (deep-link from Daily, prev/next,
+      // book-picker) always wins; no need to consult the cache.
+      if (paramsHaveSelection) return;
       let canceled = false;
+      // Re-enter the loading state on each focus so we never render the
+      // empty "choose a book" screen against a stale value mid-resolve.
+      setRestoredLoc(undefined);
       getLastReadLocation().then((loc) => {
-        if (canceled) return;
-        setRestoredLoc(loc ?? null);
-        setRestoreChecked(true);
+        if (!canceled) setRestoredLoc(loc ?? null);
       });
       return () => {
         canceled = true;
@@ -185,8 +192,8 @@ export default function BibleReaderScreen() {
     }, [paramsHaveSelection]),
   );
 
-  // Resolved location: explicit params (deep-link from Daily, prev/next,
-  // book-picker) take priority; otherwise restore where the user left off.
+  // Resolved location: explicit params take priority; otherwise restore
+  // where the user left off.
   const bookSlug = params.book ?? restoredLoc?.book ?? null;
   const chapterNumber = params.chapter
     ? Number.parseInt(params.chapter, 10) || null
@@ -198,13 +205,15 @@ export default function BibleReaderScreen() {
     DEFAULT_TRANSLATION;
 
   const hasSelection = Boolean(bookSlug && chapterNumber);
+  // No params yet AND the saved location hasn't resolved — show a quiet
+  // loader rather than the empty state (which would flash the picker CTA).
+  const resolvingLocation = !paramsHaveSelection && restoredLoc === undefined;
 
   // Persist on every resolved (translation, book, chapter) change, and
   // record a typed Bible-history entry for the You-tab "where I've been
-  // reading" feed. Gated on restoreChecked so we don't clobber saved
-  // state before the first resolve.
+  // reading" feed.
   useEffect(() => {
-    if (!restoreChecked || !bookSlug || !chapterNumber) return;
+    if (!bookSlug || !chapterNumber) return;
     setLastReadLocation({
       translation,
       book: bookSlug,
@@ -216,18 +225,7 @@ export default function BibleReaderScreen() {
       chapter: chapterNumber,
       label: `${bookLabel(bookSlug)} ${chapterNumber}`,
     });
-  }, [restoreChecked, translation, bookSlug, chapterNumber]);
-
-  // First launch only: once we've checked and there's genuinely no
-  // location (no params and no saved last-read), open the picker so a new
-  // reader lands directly in "choose a book" instead of an empty screen.
-  const [autoPushed, setAutoPushed] = useState(false);
-  useEffect(() => {
-    if (restoreChecked && !hasSelection && !autoPushed) {
-      setAutoPushed(true);
-      router.push(`/book-picker?translation=${translation}`);
-    }
-  }, [restoreChecked, hasSelection, autoPushed, translation]);
+  }, [translation, bookSlug, chapterNumber]);
 
   const chapterQuery = useQuery({
     queryKey: ["bible-chapter", translation, bookSlug, chapterNumber],
@@ -388,10 +386,22 @@ export default function BibleReaderScreen() {
     setActiveVerse(verse);
   };
 
-  // Empty state — no book selected. Editorial invitation rather than a
-  // bald "tap to choose" — the page reads like the inside cover of a
-  // leather-bound book.
-  if (restoreChecked && !hasSelection) {
+  // Still resolving the saved location on a param-less focus — quiet loader,
+  // never the picker CTA (which would flash on every tab return).
+  if (resolvingLocation) {
+    return (
+      <SafeAreaView style={styles.safe} edges={["top"]}>
+        <View style={styles.loading}>
+          <ActivityIndicator color={colors.accent} />
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  // Empty state — no book selected and nothing saved (a new reader).
+  // Editorial invitation rather than a bald "tap to choose" — the page
+  // reads like the inside cover of a leather-bound book.
+  if (!hasSelection) {
     return (
       <SafeAreaView style={styles.safe} edges={["top"]}>
         <View style={styles.emptyWrap}>
