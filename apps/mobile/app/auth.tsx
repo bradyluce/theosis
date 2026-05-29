@@ -1,7 +1,9 @@
 // Sign-in screen. Reached from the onboarding "Sign in / Sign up" step
 // and from the You tab / Settings Account card. Hosts:
-//   - Apple + Google OAuth (via Clerk's useSSO — opens Safari View /
-//     Chrome Custom Tab and returns a session)
+//   - Apple sign-in: native on iOS (useSignInWithApple → the system
+//     Sign in with Apple sheet, no browser), which is what App Store
+//     review expects. Google: web OAuth via Clerk's useSSO (opens a
+//     Safari View / Chrome Custom Tab and returns a session).
 //   - Email + password sign-in and sign-up (the latter walks through a
 //     6-digit email verification code)
 //   - When already signed in: a Halo'd identity card with sign-out and
@@ -14,6 +16,7 @@
 import {
   useAuth,
   useSignIn,
+  useSignInWithApple,
   useSignUp,
   useSSO,
   useUser,
@@ -224,19 +227,87 @@ function SignedOutView() {
 
 function OAuthButtons() {
   const { startSSOFlow } = useSSO();
+  // Native Apple sign-in (iOS only). On other platforms the hook returns
+  // a stub that throws — but the Apple button itself is gated to iOS
+  // below, so the stub is never invoked.
+  const { startAppleAuthenticationFlow } = useSignInWithApple();
   const [busyProvider, setBusyProvider] = useState<
     "apple" | "google" | null
   >(null);
 
-  async function handle(
-    provider: "apple" | "google",
-    strategy: "oauth_apple" | "oauth_google",
-  ) {
+  // Clerk's production legal-acceptance requirement pauses sign-up until
+  // terms + privacy are explicitly accepted. The hosted web UI surfaces a
+  // consent page; the native/OAuth flows don't, and instead return a
+  // signUp in `missing_requirements`. By the time the user has tapped
+  // "Continue with {provider}" they've passed onboarding screens linking
+  // to /privacy and /terms, and the provider's own consent prompt names
+  // the publisher — so mark it accepted on their behalf and finish.
+  // Returns true if a session was established.
+  async function finishWithLegalAccepted(
+    signUp: { status: string | null; missingFields?: string[]; update: (p: { legalAccepted: boolean }) => Promise<{ createdSessionId: string | null }> } | undefined,
+    setActive: ((p: { session: string }) => Promise<unknown>) | undefined,
+  ): Promise<boolean> {
+    if (signUp?.status === "missing_requirements") {
+      const missing = signUp.missingFields ?? [];
+      if (missing.includes("legal_accepted")) {
+        const updated = await signUp.update({ legalAccepted: true });
+        if (updated.createdSessionId && setActive) {
+          await setActive({ session: updated.createdSessionId });
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  // Native Apple sign-in via expo-apple-authentication. The hook presents
+  // the system Sign in with Apple sheet, exchanges the identity token with
+  // Clerk, and transparently transfers a new identity into a sign-up. User
+  // cancellation comes back as a null session (no throw), which we treat
+  // as a silent no-op.
+  async function handleApple() {
     if (busyProvider) return;
-    setBusyProvider(provider);
+    setBusyProvider("apple");
+    try {
+      const result = await startAppleAuthenticationFlow();
+
+      if (result.createdSessionId && result.setActive) {
+        await result.setActive({ session: result.createdSessionId });
+        return;
+      }
+
+      // Cancelled sheet → null session, nothing to do.
+      if (!result.signUp && !result.signIn) return;
+
+      if (await finishWithLegalAccepted(result.signUp, result.setActive)) {
+        return;
+      }
+
+      // A null session with no pending sign-up usually means the user
+      // backed out of the sheet. Stay silent rather than alarm them.
+      if (!result.signUp) return;
+
+      Alert.alert(
+        "Sign-in incomplete",
+        "Apple sign-in returned without a session. Try again, or use email.",
+      );
+    } catch (err: unknown) {
+      const message =
+        err && typeof err === "object" && "errors" in err
+          ? JSON.stringify((err as { errors: unknown }).errors)
+          : String(err);
+      Alert.alert("Apple sign-in failed", message);
+    } finally {
+      setBusyProvider(null);
+    }
+  }
+
+  async function handleGoogle() {
+    if (busyProvider) return;
+    setBusyProvider("google");
     try {
       const result = await startSSOFlow({
-        strategy,
+        strategy: "oauth_google",
         redirectUrl: "theosis://oauth-native-callback",
       });
 
@@ -255,27 +326,8 @@ function OAuthButtons() {
         return;
       }
 
-      // New-user sign-up that needs additional info before it can
-      // complete. Clerk's production legal-acceptance requirement
-      // pauses sign-up until terms + privacy are explicitly accepted.
-      // The hosted web UI surfaces that consent page; the mobile
-      // OAuth flow doesn't, and instead returns missingFields here.
-      // By the time the user has tapped "Continue with {provider}"
-      // they've already passed onboarding screens that link to
-      // /privacy and /terms, and the OAuth provider's own consent
-      // prompt names the publisher — so mark it accepted on their
-      // behalf and finish the sign-up.
-      if (result.signUp?.status === "missing_requirements") {
-        const missing = result.signUp.missingFields ?? [];
-        if (missing.includes("legal_accepted")) {
-          const updated = await result.signUp.update({
-            legalAccepted: true,
-          });
-          if (updated.createdSessionId && result.setActive) {
-            await result.setActive({ session: updated.createdSessionId });
-            return;
-          }
-        }
+      if (await finishWithLegalAccepted(result.signUp, result.setActive)) {
+        return;
       }
 
       Alert.alert(
@@ -287,10 +339,7 @@ function OAuthButtons() {
         err && typeof err === "object" && "errors" in err
           ? JSON.stringify((err as { errors: unknown }).errors)
           : String(err);
-      Alert.alert(
-        `${provider === "apple" ? "Apple" : "Google"} sign-in failed`,
-        message,
-      );
+      Alert.alert("Google sign-in failed", message);
     } finally {
       setBusyProvider(null);
     }
@@ -300,7 +349,7 @@ function OAuthButtons() {
     <View style={{ gap: spacing.sm }}>
       {Platform.OS === "ios" ? (
         <Pressable
-          onPress={() => handle("apple", "oauth_apple")}
+          onPress={handleApple}
           disabled={busyProvider !== null}
           style={({ pressed }) => [
             styles.oauthButton,
@@ -323,7 +372,7 @@ function OAuthButtons() {
         </Pressable>
       ) : null}
       <Pressable
-        onPress={() => handle("google", "oauth_google")}
+        onPress={handleGoogle}
         disabled={busyProvider !== null}
         style={({ pressed }) => [
           styles.oauthButton,
