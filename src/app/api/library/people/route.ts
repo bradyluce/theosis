@@ -5,6 +5,7 @@ import type { IconRef, Person } from "@theosis/core";
 import { getLibraryPeopleFromAll } from "@/lib/content/commentary-loader";
 import { getIconForPerson } from "@/lib/content/icon-store";
 import { toAbsoluteIconUrl } from "@/lib/content/icon-url";
+import { filterPickerPeople } from "@/lib/content/picker-cleanup";
 import { resolveRequestOrigin } from "@/lib/request-origin";
 
 // List Library-worthy Persons (canonized saints OR authors of any
@@ -30,11 +31,17 @@ export async function GET(request: NextRequest) {
     icon: toAbsoluteIconUrl(getIconForPerson(person), origin),
   }));
 
+  // Drop calendar-corpus clutter (event/feast rows, parser artifacts, and bare
+  // stub duplicates of curated saints) so the Library grid and the mobile
+  // patron picker stay browsable. Icon-aware: a record with a resolved icon is
+  // always kept, so no real, venerable saint is ever hidden. See picker-cleanup.
+  const cleaned = filterPickerPeople(enriched, (p) => p.icon !== null);
+
   // Sort by name for the Library list. Stable, predictable.
-  enriched.sort((a, b) => a.name.localeCompare(b.name));
+  cleaned.sort((a, b) => a.name.localeCompare(b.name));
 
   return NextResponse.json(
-    { people: enriched },
+    { people: cleaned },
     { headers: { "Cache-Control": CACHE_CONTROL } },
   );
 }

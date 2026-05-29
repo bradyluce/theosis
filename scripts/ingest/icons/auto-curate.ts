@@ -446,8 +446,25 @@ function writeMisses(misses: Set<string>) {
 }
 
 async function main() {
-  const saints = people.filter((p) => p.kind === "saint" || p.kind === "father");
+  // Optional allowlist: when PATRON_IDS is set (comma-separated person ids),
+  // only curate those ids. Lets a focused run target the patron set instead of
+  // scanning every iconless saint in the corpus. Also re-tries ids even if
+  // they're in the misses file, so a previously-missed patron gets another look.
+  const allowlist = (process.env.PATRON_IDS ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const allowSet = allowlist.length > 0 ? new Set(allowlist) : null;
+
+  let saints = people.filter((p) => p.kind === "saint" || p.kind === "father");
+  if (allowSet) {
+    saints = saints.filter((p) => allowSet.has(p.id));
+    console.log(`PATRON_IDS allowlist active: ${saints.length} of ${allowlist.length} requested ids matched a library person.`);
+  }
   const { entries, misses } = readExisting();
+  // When an allowlist is active, drop its ids from the misses set so they get
+  // re-searched rather than skipped as a prior miss.
+  if (allowSet) for (const id of allowSet) misses.delete(id);
 
   // Personas already covered: previous auto entries, known misses, or already
   // in catalog.json with an "icon-{personId}" entry (this catches both manual
