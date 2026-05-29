@@ -214,17 +214,26 @@ export default function BibleReaderScreen() {
   // reading" feed.
   useEffect(() => {
     if (!bookSlug || !chapterNumber) return;
-    setLastReadLocation({
-      translation,
-      book: bookSlug,
-      chapter: chapterNumber,
-    });
-    void recordBibleVisit({
-      translationId: translation,
-      bookSlug,
-      chapter: chapterNumber,
-      label: `${bookLabel(bookSlug)} ${chapterNumber}`,
-    });
+    // These two writes BOTH read-modify-write the shared prefs blob. Firing
+    // them concurrently let recordBibleVisit read prefs before
+    // setLastReadLocation's write landed, then write its stale snapshot back
+    // — silently erasing the lastRead we just saved (the in-memory prefs
+    // cache races). That's why the reader "never remembered" the spot.
+    // Awaiting in sequence makes the history write merge on top of the saved
+    // location instead of clobbering it.
+    void (async () => {
+      await setLastReadLocation({
+        translation,
+        book: bookSlug,
+        chapter: chapterNumber,
+      });
+      await recordBibleVisit({
+        translationId: translation,
+        bookSlug,
+        chapter: chapterNumber,
+        label: `${bookLabel(bookSlug)} ${chapterNumber}`,
+      });
+    })();
   }, [translation, bookSlug, chapterNumber]);
 
   const chapterQuery = useQuery({
