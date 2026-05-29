@@ -310,6 +310,11 @@ export type AppPreferences = {
   // DailyCardKey; the renderer falls back to DEFAULT_DAILY_CARD_ORDER for
   // any key missing here (e.g. a key added in a later release).
   dailyCardOrder?: DailyCardKey[];
+  // Cards the user has chosen to hide from the Daily home page. Keys stay
+  // in dailyCardOrder (so they keep their slot if unhidden) — they're just
+  // filtered out of the rendered list. Local-only UI pref, like
+  // fastBannerCollapsed; it doesn't round-trip through the profile snapshot.
+  dailyHiddenCards?: DailyCardKey[];
   highlights?: VerseHighlight[];
   // Onboarding state. Absent = first launch (treat as needs_onboarding).
   // Flipped to "complete" when the user finishes the onboarding flow or
@@ -1239,6 +1244,34 @@ export async function getDailyCardOrder(): Promise<DailyCardKey[]> {
 export async function setDailyCardOrder(order: DailyCardKey[]): Promise<void> {
   const prefs = await loadPrefs();
   await savePrefs({ ...prefs, dailyCardOrder: order });
+}
+
+export async function getDailyHiddenCards(): Promise<DailyCardKey[]> {
+  const prefs = await loadPrefs();
+  const stored = prefs.dailyHiddenCards ?? [];
+  return stored.filter((k) =>
+    (DEFAULT_DAILY_CARD_ORDER as string[]).includes(k),
+  );
+}
+
+export async function setDailyHiddenCards(
+  hidden: DailyCardKey[],
+): Promise<void> {
+  const prefs = await loadPrefs();
+  await savePrefs({ ...prefs, dailyHiddenCards: hidden });
+}
+
+// Flip one card's hidden state and persist. Returns the new hidden list so
+// callers can update local state without a re-read.
+export async function toggleDailyCardHidden(
+  key: DailyCardKey,
+): Promise<DailyCardKey[]> {
+  const hidden = await getDailyHiddenCards();
+  const next = hidden.includes(key)
+    ? hidden.filter((k) => k !== key)
+    : [...hidden, key];
+  await setDailyHiddenCards(next);
+  return next;
 }
 
 // --- Daily fast banner collapse (local-only UI pref) -----------------------

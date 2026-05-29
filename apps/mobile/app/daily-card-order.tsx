@@ -15,7 +15,9 @@ import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import {
   type DailyCardKey,
   getDailyCardOrder,
+  getDailyHiddenCards,
   setDailyCardOrder,
+  toggleDailyCardHidden,
 } from "@/lib/preferences";
 
 // Settings → "Customize daily page order". A plain draggable list of the
@@ -57,12 +59,17 @@ const CARD_LABELS: Record<DailyCardKey, { title: string; desc: string }> = {
 
 export default function DailyCardOrderScreen() {
   const [order, setOrder] = useState<DailyCardKey[]>([]);
+  const [hidden, setHidden] = useState<DailyCardKey[]>([]);
 
   useEffect(() => {
     let canceled = false;
-    void getDailyCardOrder().then((o) => {
-      if (!canceled) setOrder(o);
-    });
+    void Promise.all([getDailyCardOrder(), getDailyHiddenCards()]).then(
+      ([o, h]) => {
+        if (canceled) return;
+        setOrder(o);
+        setHidden(h);
+      },
+    );
     return () => {
       canceled = true;
     };
@@ -73,6 +80,14 @@ export default function DailyCardOrderScreen() {
     void setDailyCardOrder(next);
   }
 
+  function onToggleHidden(key: DailyCardKey) {
+    // Optimistic flip; persist returns the authoritative list.
+    setHidden((prev) =>
+      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
+    );
+    void toggleDailyCardHidden(key).then(setHidden);
+  }
+
   const renderItem = ({
     item,
     drag,
@@ -81,23 +96,52 @@ export default function DailyCardOrderScreen() {
   }: RenderItemParams<DailyCardKey>) => {
     const meta = CARD_LABELS[item];
     const position = (getIndex() ?? 0) + 1;
+    const isHidden = hidden.includes(item);
     return (
       <ScaleDecorator>
         <Pressable
           onLongPress={drag}
           delayLongPress={180}
           disabled={isActive}
-          style={[styles.row, isActive && styles.rowActive]}
+          style={[
+            styles.row,
+            isActive && styles.rowActive,
+            isHidden && styles.rowHidden,
+          ]}
           accessibilityRole="button"
-          accessibilityLabel={`${meta.title}, position ${position}. Hold and drag to reorder.`}
+          accessibilityLabel={`${meta.title}, position ${position}.${
+            isHidden ? " Hidden." : ""
+          } Hold and drag to reorder.`}
         >
-          <Text style={styles.position}>
+          <Text style={[styles.position, isHidden && styles.positionHidden]}>
             {String(position).padStart(2, "0")}
           </Text>
           <View style={styles.rowText}>
-            <Text style={styles.rowTitle}>{meta.title}</Text>
-            <Text style={styles.rowDesc}>{meta.desc}</Text>
+            <Text style={[styles.rowTitle, isHidden && styles.textHidden]}>
+              {meta.title}
+            </Text>
+            <Text style={styles.rowDesc}>
+              {isHidden ? "Hidden from your Daily page." : meta.desc}
+            </Text>
           </View>
+          <Pressable
+            onPress={() => onToggleHidden(item)}
+            hitSlop={10}
+            style={({ pressed }) => [
+              styles.eyeButton,
+              pressed && { opacity: 0.6 },
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel={
+              isHidden ? `Show ${meta.title}` : `Hide ${meta.title}`
+            }
+          >
+            <Feather
+              name={isHidden ? "eye-off" : "eye"}
+              size={18}
+              color={isHidden ? colors.inkSoft : colors.inkMuted}
+            />
+          </Pressable>
           <Feather name="menu" size={18} color={colors.inkSoft} />
         </Pressable>
       </ScaleDecorator>
@@ -138,8 +182,9 @@ export default function DailyCardOrderScreen() {
 
       <View style={styles.intro}>
         <Text style={styles.introText}>
-          Drag to set the order cards appear on your Daily page. Hidden cards
-          (like the feast hero on ordinary days) keep their place in the list.
+          Drag to set the order cards appear on your Daily page. Tap the eye to
+          hide a card you don't want to see — it stays here so you can bring it
+          back anytime.
         </Text>
       </View>
 
@@ -211,6 +256,11 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 6 },
     elevation: 12,
   },
+  rowHidden: {
+    opacity: 0.55,
+    backgroundColor: "transparent",
+    borderStyle: "dashed",
+  },
   position: {
     fontFamily: fonts.serifBoldItalic,
     fontSize: 20,
@@ -218,6 +268,18 @@ const styles = StyleSheet.create({
     letterSpacing: -0.5,
     width: 28,
     opacity: 0.85,
+  },
+  positionHidden: {
+    color: colors.inkSoft,
+  },
+  textHidden: {
+    color: colors.inkMuted,
+  },
+  eyeButton: {
+    width: 32,
+    height: 32,
+    alignItems: "center",
+    justifyContent: "center",
   },
   rowText: { flex: 1, gap: 2 },
   rowTitle: {

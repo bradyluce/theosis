@@ -51,6 +51,7 @@ import {
   type ProfilePrefs,
   DEFAULT_DAILY_CARD_ORDER,
   getDailyCardOrder,
+  getDailyHiddenCards,
   getFastBannerCollapsed,
   getLastReadLocation,
   getProfilePrefs,
@@ -190,6 +191,9 @@ export default function DailyScreen() {
   const [cardOrder, setCardOrderState] = useState<DailyCardKey[]>(
     DEFAULT_DAILY_CARD_ORDER,
   );
+  // Cards the user hid in Settings → daily page order. Kept in cardOrder so
+  // they retain their slot; just filtered out of the rendered list.
+  const [hiddenCards, setHiddenCards] = useState<DailyCardKey[]>([]);
   const [profile, setProfile] = useState<ProfilePrefs>({});
   const patronIcon = usePatronIcon(profile.patronSaintSlug);
   const [streak, setStreak] = useState(0);
@@ -222,13 +226,15 @@ export default function DailyScreen() {
       getSavedVerses(),
       getLastReadLocation(),
       getFastBannerCollapsed(),
-    ]).then(([order, activity, saved, loc, fastCollapsedPref]) => {
+      getDailyHiddenCards(),
+    ]).then(([order, activity, saved, loc, fastCollapsedPref, hidden]) => {
       if (canceled) return;
       setCardOrderState(order);
       setStreak(activity.streak);
       setSavedCount(saved.length);
       setLastRead(loc);
       setFastCollapsed(fastCollapsedPref);
+      setHiddenCards(hidden);
     });
     return () => {
       canceled = true;
@@ -244,6 +250,15 @@ export default function DailyScreen() {
       void getProfilePrefs().then((p) => {
         if (!canceled) setProfile(p);
       });
+      // Re-read card order + hidden cards so changes made in the Settings
+      // reorder screen (drag order, eye toggle) show up on return.
+      void Promise.all([getDailyCardOrder(), getDailyHiddenCards()]).then(
+        ([order, hidden]) => {
+          if (canceled) return;
+          setCardOrderState(order);
+          setHiddenCards(hidden);
+        },
+      );
       return () => {
         canceled = true;
       };
@@ -271,11 +286,28 @@ export default function DailyScreen() {
     setDailySaved(next.some((d) => d.isoDate === data.daily.isoDate));
   }
 
-  const onReorder = useCallback((next: DailyCardKey[]) => {
-    setCardOrderState(next);
-    setDailyCardOrder(next);
-    setReorderHinted(true);
-  }, []);
+  // The list only shows visible (non-hidden) cards, so a reorder hands us the
+  // visible subset. Splice it back into the full order, keeping hidden cards
+  // pinned to their original slots so they reappear in place if unhidden.
+  const onReorder = useCallback(
+    (visibleNext: DailyCardKey[]) => {
+      setCardOrderState((full) => {
+        const merged = [...full];
+        let v = 0;
+        for (let i = 0; i < merged.length; i++) {
+          if (!hiddenCards.includes(merged[i])) {
+            merged[i] = visibleNext[v++];
+          }
+        }
+        void setDailyCardOrder(merged);
+        return merged;
+      });
+      setReorderHinted(true);
+    },
+    [hiddenCards],
+  );
+
+  const visibleOrder = cardOrder.filter((k) => !hiddenCards.includes(k));
 
   const onPickDate = (event: DateTimePickerEvent, picked?: Date) => {
     // Android dismisses the picker on its own and fires "dismissed" / "set"
@@ -568,7 +600,7 @@ export default function DailyScreen() {
           // bounded height for the virtualization.
           <View style={{ flex: 1 }}>
             <DraggableFlatList
-              data={cardOrder}
+              data={visibleOrder}
               keyExtractor={(key) => key}
               onDragEnd={({ data: next }) => onReorder(next)}
               activationDistance={8}
