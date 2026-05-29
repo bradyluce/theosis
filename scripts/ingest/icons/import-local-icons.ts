@@ -982,6 +982,18 @@ const MAPPINGS: Array<{
     caption: "Saint Paul of Thebes",
     alt: "Icon of Saint Paul of Thebes, the First Hermit.",
   },
+  {
+    sourceFile: "src-anatoly-of-optina.jpg",
+    personId: "anatoly-of-optina",
+    caption: "Saint Anatoly of Optina",
+    alt: "Icon of Saint Anatoly (Zertsalov) of Optina, Elder of the Optina Hermitage.",
+  },
+  {
+    sourceFile: "src-barsanuphius-of-optina.jpg",
+    personId: "barsanuphius-of-optina",
+    caption: "Saint Barsanuphius of Optina",
+    alt: "Icon of Saint Barsanuphius of Optina, Elder of the Optina Hermitage.",
+  },
 ];
 
 type CatalogShape = {
