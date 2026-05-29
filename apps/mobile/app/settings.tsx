@@ -319,6 +319,24 @@ export default function SettingsScreen() {
               </View>
               <Feather name="chevron-right" size={16} color={colors.inkSoft} />
             </Pressable>
+
+            <Pressable
+              onPress={() => router.push("/daily-card-order")}
+              style={({ pressed }) => [
+                styles.linkRow,
+                pressed && { backgroundColor: colors.surfaceStrong },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Customize daily page order"
+            >
+              <View style={styles.linkRowMain}>
+                <Text style={styles.linkRowLabel}>Daily page order</Text>
+                <Text style={styles.linkRowDescription}>
+                  Drag to set the order cards appear on your Daily page.
+                </Text>
+              </View>
+              <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+            </Pressable>
           </View>
         </Card>
 

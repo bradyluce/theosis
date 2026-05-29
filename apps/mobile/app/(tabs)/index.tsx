@@ -309,6 +309,33 @@ export default function DailyScreen() {
   const renderCard = useCallback(
     ({ item, drag, isActive }: RenderItemParams<DailyCardKey>) => {
       if (!data) return null;
+      // Compute the card body first so we can skip the wrapper (and its
+      // drag handle) entirely for cards that render nothing today — e.g.
+      // the feast hero on an ordinary day, or continue-reading before the
+      // user has opened the Bible.
+      const content =
+        item === "primary" ? (
+          hasFeast ? <FeastHero data={data} /> : null
+        ) : item === "continue-reading" ? (
+          lastRead ? <ContinueReadingCard lastRead={lastRead} /> : null
+        ) : item === "reading-plan" ? (
+          <ReadingPlanCard />
+        ) : item === "readings" ? (
+          <ReadingsCard data={data} />
+        ) : item === "commemoration" ? (
+          hasFeast ? (
+            <CommemorationCard data={data} />
+          ) : (
+            <NoFeastCommemorationCard data={data} />
+          )
+        ) : item === "prayer" ? (
+          <DailyPrayerCard streak={streak} />
+        ) : item === "hymns" ? (
+          <HymnsCard data={data} />
+        ) : null;
+
+      if (!content) return null;
+
       return (
         <ScaleDecorator>
           <Pressable
@@ -316,32 +343,24 @@ export default function DailyScreen() {
             delayLongPress={240}
             style={[styles.cardWrap, isActive && styles.cardWrapActive]}
           >
-            {item === "primary" ? (
-              // Only render the primary hero card on feast days. On plain
-              // days the readings card (next in the order) becomes the
-              // natural lead — no synthetic "verse of the day" needed,
-              // since the appointed Gospel reading is the day's word.
-              hasFeast ? <FeastHero data={data} /> : null
-            ) : item === "continue-reading" ? (
-              // Hides entirely when no lastRead is set (first launch
-              // before the user opens the Bible tab). After their first
-              // chapter, this card surfaces it on every Daily visit.
-              lastRead ? <ContinueReadingCard lastRead={lastRead} /> : null
-            ) : item === "reading-plan" ? (
-              <ReadingPlanCard />
-            ) : item === "readings" ? (
-              <ReadingsCard data={data} />
-            ) : item === "commemoration" ? (
-              hasFeast ? (
-                <CommemorationCard data={data} />
-              ) : (
-                <NoFeastCommemorationCard data={data} />
-              )
-            ) : item === "prayer" ? (
-              <DailyPrayerCard streak={streak} />
-            ) : item === "hymns" ? (
-              <HymnsCard data={data} />
-            ) : null}
+            {content}
+            {/* Dedicated drag handle. Many cards are themselves tappable
+                (reading plan, feast hero) or contain tappable rows
+                (commemoration), so a long-press on the card body gets
+                captured by those and never starts a drag. This grip sits
+                on top in the corner and reliably initiates the drag for
+                every card. The full Settings reorder list is the other
+                way to do this. */}
+            <Pressable
+              onLongPress={drag}
+              delayLongPress={180}
+              hitSlop={10}
+              style={styles.dragHandle}
+              accessibilityRole="button"
+              accessibilityLabel="Hold and drag to reorder this card"
+            >
+              <Feather name="menu" size={14} color={colors.inkSoft} />
+            </Pressable>
           </Pressable>
         </ScaleDecorator>
       );
@@ -568,7 +587,8 @@ export default function DailyScreen() {
                         color={colors.accent}
                       />
                       <Text style={styles.reorderHintText}>
-                        Long-press any card to reorder
+                        Hold the grip on a card to reorder · or set the order
+                        in Settings
                       </Text>
                     </View>
                   ) : null}
@@ -1284,6 +1304,21 @@ const styles = StyleSheet.create({
     gap: spacing.lg,
   },
   cardWrap: { marginBottom: spacing.lg },
+  dragHandle: {
+    position: "absolute",
+    top: spacing.sm,
+    right: spacing.sm,
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: colors.surface,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    opacity: 0.9,
+    zIndex: 10,
+  },
   cardWrapActive: {
     shadowColor: colors.accent,
     shadowOpacity: 0.55,
