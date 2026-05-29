@@ -21,6 +21,7 @@ import {
   useSSO,
   useUser,
 } from "@clerk/clerk-expo";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 import Feather from "@expo/vector-icons/Feather";
 import { LinearGradient } from "expo-linear-gradient";
 import { Stack, router } from "expo-router";
@@ -360,11 +361,11 @@ function OAuthButtons() {
           accessibilityRole="button"
           accessibilityLabel="Continue with Apple"
         >
-          <Feather
-            name="moon"
-            size={16}
+          <FontAwesome
+            name="apple"
+            size={18}
             color="#ffffff"
-            style={{ marginRight: 8 }}
+            style={{ marginRight: 8, marginTop: -2 }}
           />
           <Text style={styles.oauthButtonAppleLabel}>
             {busyProvider === "apple" ? "Opening…" : "Continue with Apple"}
@@ -383,10 +384,10 @@ function OAuthButtons() {
         accessibilityRole="button"
         accessibilityLabel="Continue with Google"
       >
-        <Feather
-          name="globe"
+        <FontAwesome
+          name="google"
           size={16}
-          color={colors.ink}
+          color="#4285F4"
           style={{ marginRight: 8 }}
         />
         <Text style={styles.oauthButtonGoogleLabel}>
