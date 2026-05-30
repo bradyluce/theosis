@@ -46,7 +46,16 @@ export async function GET(request: NextRequest) {
   const date = parseDateParam(url.searchParams.get("date"));
 
   const daily = getDailyCommemoration(date);
-  const saints = getPeopleByIds(daily.saintIds);
+  // Primary saints drive the hero icon (getPrimaryIconForDay reasons about
+  // demotion against these). The full set additionally includes every linked
+  // co-commemoration so the client can show + link their icons too.
+  const primarySaints = getPeopleByIds(daily.saintIds);
+  const commemorationSaintIds = daily.additionalCommemorations
+    .map((item) => item.saintId)
+    .filter((id): id is string => Boolean(id));
+  const saints = getPeopleByIds([
+    ...new Set([...daily.saintIds, ...commemorationSaintIds]),
+  ]);
   const readings = getDailyReadings(date);
   const hymns = getDailyHymns(date);
   const translationSlug = getPrimaryTranslation()?.slug ?? "kjva";
@@ -63,10 +72,12 @@ export async function GET(request: NextRequest) {
   // details on why this matters (Host header injection).
   const origin = resolveRequestOrigin(request);
   const primaryIcon = toAbsoluteIconUrl(
-    getPrimaryIconForDay(daily, saints),
+    getPrimaryIconForDay(daily, primarySaints),
     origin,
   );
 
+  // Icons keyed by person id, covering primary AND co-commemoration saints so
+  // the "Also commemorated" list can render each saint's icon.
   const saintIcons: Record<string, IconRef | null> = {};
   for (const saint of saints) {
     saintIcons[saint.id] = toAbsoluteIconUrl(getIconForPerson(saint), origin);

@@ -183,6 +183,21 @@ function getIconByNameInTitle(title: string): IconRef | undefined {
 // Swap this id once an "All Saints" / "Synaxis" plate is curated.
 const FALLBACK_SAINT_ICON_ID = "icon-christ-pantocrator-sinai";
 
+// Does the day's title name this person? Mirrors the mobile FeastHero's
+// findPrimarySaint heuristic: match the pre-comma name's significant words
+// against the title. Used to recognize a primary saint who is ALSO self-listed
+// in the Menaion `also` array (and thus swept into additionalCommemorations) so
+// we don't mistake them for a demoted co-commemoration.
+function titleNamesPerson(title: string, person: Person): boolean {
+  const normalized = title.toLowerCase();
+  const words = person.name
+    .split(",")[0]
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((w) => w.length > 3 && w !== "saint" && w !== "the");
+  return words.some((w) => normalized.includes(w));
+}
+
 // Resolve the lead icon for a day: prefer a feast/title pattern, then a
 // linked saint, then a slug-name match against the title (catches menaion
 // entries with empty saintIds), and finally the universal fallback above so
@@ -194,6 +209,12 @@ export function getPrimaryIconForDay(
   const fromFeast =
     getIconForFeastTitle(daily.feastLabel) ?? getIconForFeastTitle(daily.title);
   if (fromFeast) return fromFeast;
+  // A saint named in the day's title IS the primary commemoration, even if the
+  // Menaion entry redundantly self-lists them under `also` (which sweeps them
+  // into additionalCommemorations). Never demote those.
+  const titleSaintIds = new Set(
+    saints.filter((s) => titleNamesPerson(daily.title, s)).map((s) => s.id),
+  );
   // When a movable feast wins primary, the Menaion saint is demoted into
   // additionalCommemorations (composer.ts) — but their id stays in
   // daily.saintIds for the chip list below. Skip those here so the top icon
@@ -201,7 +222,8 @@ export function getPrimaryIconForDay(
   const demotedIds = new Set(
     daily.additionalCommemorations
       .map((item) => item.saintId)
-      .filter((id): id is string => Boolean(id)),
+      .filter((id): id is string => Boolean(id))
+      .filter((id) => !titleSaintIds.has(id)),
   );
   const undemoted = saints.filter((s) => !demotedIds.has(s.id));
   for (const saint of undemoted) {
@@ -210,10 +232,19 @@ export function getPrimaryIconForDay(
   }
   const fromTitle = getIconByNameInTitle(daily.title);
   if (fromTitle) return fromTitle;
-  // Final fallback: any day with a non-demoted saint gets the universal
+  // No feast icon and no undemoted saint icon resolved. Before the generic
+  // placeholder, fall back to ANY commemorated saint with a curated icon —
+  // better the day's actual saint than a stand-in. Covers movable-feast days
+  // whose feast has no curated icon yet (e.g. Sunday of the Prodigal Son,
+  // where Great-martyr Theodore the General is demoted but does have an icon).
+  for (const saint of saints) {
+    const icon = getIconForPerson(saint);
+    if (icon) return icon;
+  }
+  // Final fallback: any day with a commemorated saint gets the universal
   // Pantocrator plate, which keeps the mobile FeastHero (and its "Read the
   // life" CTA) wired up even for saints we haven't curated an icon for yet.
-  if (undemoted.length > 0) {
+  if (saints.length > 0) {
     return getIconById(FALLBACK_SAINT_ICON_ID);
   }
   return undefined;
