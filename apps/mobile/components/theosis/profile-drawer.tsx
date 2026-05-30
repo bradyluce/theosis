@@ -23,6 +23,8 @@ import {
   Halo,
   Wordmark,
 } from "@/components/theosis/primitives";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import type { ProfilePrefs } from "@/lib/preferences";
 import { usePatronIcon } from "@/lib/use-patron-icon";
@@ -48,6 +50,7 @@ export function ProfileDrawer({
   streak,
   savedCount,
 }: ProfileDrawerProps) {
+  const insets = useSafeAreaInsets();
   const translateX = useRef(new Animated.Value(-DRAWER_WIDTH)).current;
   const backdropOpacity = useRef(new Animated.Value(0)).current;
 
@@ -115,7 +118,17 @@ export function ProfileDrawer({
         </Animated.View>
 
         <Animated.View
-          style={[styles.drawer, { transform: [{ translateX }] }]}
+          style={[
+            styles.drawer,
+            {
+              // Real safe-area insets instead of a hardcoded paddingTop: 64 —
+              // aligns with the status bar / Dynamic Island across devices and
+              // keeps the bottom Close button clear of the home indicator.
+              paddingTop: insets.top + spacing.lg,
+              paddingBottom: insets.bottom + spacing.lg,
+              transform: [{ translateX }],
+            },
+          ]}
         >
           {/* Warm gradient backdrop inside the drawer — soft candlelight
               top, settling to the deep ground at the bottom. */}
@@ -292,8 +305,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     borderRightWidth: StyleSheet.hairlineWidth,
     borderRightColor: colors.lineGilt,
-    paddingTop: 64,
-    paddingBottom: spacing.lg,
+    // paddingTop / paddingBottom applied inline from safe-area insets.
     overflow: "hidden",
   },
   wordmarkWrap: {

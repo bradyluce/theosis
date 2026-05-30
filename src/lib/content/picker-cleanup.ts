@@ -113,11 +113,18 @@ export function filterPickerPeople<T extends PickerCandidate>(
   items: T[],
   hasIcon: (item: T) => boolean,
 ): T[] {
-  const rich = buildRichNameSet(items);
   return items.filter((item) => {
-    if (hasIcon(item)) return true; // never hide a record with a real icon
+    // Content-less placeholder records — whose entire summary is
+    // "Commemorated on <Month> <day>." or "Commemorated in the Orthodox
+    // Synaxarion." — are dropped from the picker and Library grid even when
+    // they carry an icon. Surfacing a pickable patron whose whole biography is
+    // "Commemorated on January 3" reads as filler. (Previously any icon kept a
+    // record unconditionally, leaking ~1,100 bio-less calendar/seed stubs.)
+    // The records aren't deleted: daily commemorations still resolve every
+    // person by id through getPersonByIdFromAll.
+    if (isStubSummary(item)) return false;
+    if (hasIcon(item)) return true; // keep any real (non-stub) record with an icon
     if (isPickerClutter(item.name)) return false;
-    if (isStubDuplicate(item, rich)) return false;
     return true;
   });
 }

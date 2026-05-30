@@ -56,9 +56,11 @@ const nextConfig: NextConfig = {
   },
   outputFileTracingIncludes: {
     "/api/bible/catalog": ["./content/normalized/bibles/catalog.json"],
-    "/api/bible/[translation]/[book]/[chapter]": [
-      "./content/normalized/bibles/**/*.json",
-    ],
+    // NOTE: the bible chapter route is R2-first (see its getChapterFromS3),
+    // so production serves bibles from R2. The 171 MB / ~13k-file normalized
+    // bibles tree is intentionally NOT bundled here — it would push this one
+    // function toward Vercel's 250 MB unzipped cap as a fallback that almost
+    // never fires. The local-file fallback remains a dev convenience only.
     "/api/commentary/catalog": [
       "./content/normalized/commentary/catalog.json",
     ],
@@ -79,6 +81,17 @@ const nextConfig: NextConfig = {
     "/api/library/by-work/[work]/chapters": [
       "./content/normalized/library/catalog.json",
     ],
+    // The by-work prose tree is excluded above; the chapter-serving route
+    // still needs the small reference-only denylist so it can refuse to serve
+    // a body for a copyright-restricted work even if a body file reappears.
+    "/api/library/by-work/[work]/[order]": [
+      "./content/normalized/library/reference-only.json",
+    ],
+    // The deep-commentary search index (~56 MB) is read at runtime by
+    // src/lib/search/commentary-server-index.ts via a static path. Trace it
+    // explicitly so a future tracer change can't silently drop it and degrade
+    // search to seed-only.
+    "/api/search": ["./content/normalized/search/commentary.json"],
     // Parish routes read out of content/normalized/parishes via
     // src/lib/parishes/store.ts.
     "/api/parishes/near": ["./content/normalized/parishes/**/*.json"],

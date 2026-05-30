@@ -2,7 +2,7 @@
   "_meta": {
     "description": "Orthodox lectionary readings for the Daily Office and Divine Liturgy. Two indexed cycles: 'movable' is keyed by paschal-day offset (pdist), 'fixed' is keyed by canonical Menaion month-day (MM-DD). The composer applies a precedence rule (Great-Feast movable overrides Menaion; otherwise both layer).",
     "license": "Reading references (book + chapter + verse) are scriptural pointers — not copyrightable. Verse text comes from Theosis's own Bible content.",
-    "coverage": "Movable cycle: principal named days (Pascha through All Saints). Fixed cycle: major feasts within May. Weekday cycles outside named days are deferred to a later slice."
+    "coverage": "Movable cycle: ~292 pdist-keyed reading sets. Fixed cycle: 365 MM-DD-keyed reading sets across all 12 months. Some ordinary weekday cycles outside named days remain to be filled in."
   },
   "movable": {
     "0": [

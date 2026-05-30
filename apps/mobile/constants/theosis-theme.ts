@@ -30,7 +30,12 @@ export const colors = {
   // Ink scale — for text. `ink` is parchment ivory, never pure white.
   ink: "#f4ecd8",
   inkMuted: "#b8ad95",
-  inkSoft: "#75706a",
+  // inkSoft lightened from #75706a so small muted text (eyebrows, captions,
+  // bylines — ~83 usages) clears WCAG AA 4.5:1 against all four dark surfaces;
+  // the old value sat at 3.2–4.1:1. Still clearly muted, just legible.
+  inkSoft: "#948e84",
+  // inkFaint stays a decorative faint tone; it must NOT be used for text (it
+  // fails even the 3:1 large-text floor). The one text usage moved to inkSoft.
   inkFaint: "#4a4843",
 
   // Hairlines

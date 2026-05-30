@@ -215,8 +215,13 @@ export default function ReadingPlanDetailScreen() {
               canMark={Boolean(progress)}
               onToggle={() => onToggleDay(day.day)}
               onOpen={(reading) => {
+                // Bible readings open in the Bible reader (explore tab). The
+                // old target /reading/[work]/[order] is the patristic library
+                // prose reader — a ReadingPlanReading carries only bookSlug +
+                // chapterNumber (no workId/order), so it 404'd onto the error
+                // card. Match every other Scripture link in the app.
                 router.push(
-                  `/reading/${reading.bookSlug}/${reading.chapterNumber}` as never,
+                  `/explore?book=${reading.bookSlug}&chapter=${reading.chapterNumber}`,
                 );
               }}
             />

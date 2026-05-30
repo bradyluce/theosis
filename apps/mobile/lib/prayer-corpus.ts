@@ -1,8 +1,12 @@
-// Orthodox prayer corpus — public-domain texts (English) drawn from the
-// Jordanville prayer book and other standard sources. Bundled at build
-// time so the prayer rule works offline. New prayers go here; the rule
-// engine references them by id, and the user's chosen rule is just a
-// list of ids in AsyncStorage.
+// Orthodox prayer corpus — the traditional Orthodox prayers in their common
+// received English form (the Trisagion prayers, the Creed, the Psalms, and the
+// prayers of Ss. Macarius, Ephraim, John of Damascus, the Optina elders, etc.).
+// These are long-standing translations in widespread public use; an attribution
+// naming a familiar prayer book identifies the customary arrangement, not a
+// claim on any specific copyrighted edition's text. Bundled at build time so
+// the prayer rule works offline. New prayers go here; the rule engine
+// references them by id, and the user's chosen rule is a list of ids in
+// AsyncStorage.
 
 export type PrayerCategory =
   | "essential"
@@ -78,7 +82,7 @@ export const PRAYER_CORPUS: PrayerEntry[] = [
       "O Most Holy Trinity, have mercy on us. O Lord, cleanse us from our sins. O Master, pardon our iniquities. O Holy One, visit and heal our infirmities for Thy Name's sake.\n\n" +
       "Lord, have mercy. (Thrice)\n\n" +
       "Glory to the Father, and to the Son, and to the Holy Spirit, both now and ever, and unto the ages of ages. Amen.",
-    attribution: "Jordanville Prayer Book",
+    attribution: "Traditional Orthodox prayer",
   },
   {
     id: "our-father",
@@ -197,7 +201,7 @@ export const PRAYER_CORPUS: PrayerEntry[] = [
     body:
       "Having risen from sleep, I thank Thee, O Holy Trinity, because of the abundance of Thy goodness and long-suffering Thou wast not wroth with me, slothful and sinful as I am; neither hast Thou destroyed me in mine iniquities; but in Thy compassion raised me up, as I lay in despair, that at dawn I might sing the glories of Thy Majesty.\n\n" +
       "Do Thou now enlighten the eyes of mine understanding, open my mouth to receive Thy words, teach me Thy commandments, help me to do Thy will, confessing Thee from my heart, singing and praising Thine all-holy Name: of the Father, and of the Son, and of the Holy Spirit, now and ever, and unto the ages of ages. Amen.",
-    attribution: "Jordanville Prayer Book — Morning Prayers",
+    attribution: "Morning Prayers (traditional)",
   },
   {
     id: "morning-macarius-1",
@@ -225,7 +229,7 @@ export const PRAYER_CORPUS: PrayerEntry[] = [
     body:
       "O my most holy Lady Theotokos, through thy holy and all-powerful prayers banish from me, thy lowly and wretched servant, despondency, forgetfulness, folly, carelessness, and all filthy, evil, and blasphemous thoughts out of my wretched heart and from my darkened mind.\n\n" +
       "And quench the flame of my passions, for I am poor and wretched, and deliver me from many cruel memories and deeds, and free me from all their evil effects. For blessed art thou by all generations, and glorified is thy most honorable name, unto the ages of ages. Amen.",
-    attribution: "Jordanville Prayer Book",
+    attribution: "Traditional Orthodox prayer",
   },
   {
     id: "morning-guardian-angel",
@@ -245,7 +249,7 @@ export const PRAYER_CORPUS: PrayerEntry[] = [
       "Arising from sleep, I fall down before Thee, O Good One, and sing to Thee, O Mighty One, the angelic hymn: Holy, Holy, Holy art Thou, O God; through the Theotokos, have mercy on me.\n\n" +
       "Thou hast raised me from my bed and from sleep, O Lord: enlighten my mind and my heart, and open my lips, that I may praise Thee, O Holy Trinity: Holy, Holy, Holy art Thou, O God; through the Theotokos, have mercy on me.\n\n" +
       "Suddenly the Judge shall come, and the deeds of each shall be laid bare; but with fear we cry in the middle of the night: Holy, Holy, Holy art Thou, O God; through the Theotokos, have mercy on me.",
-    attribution: "Jordanville Prayer Book — Morning Prayers",
+    attribution: "Morning Prayers (traditional)",
   },
   {
     id: "morning-optina",
@@ -269,7 +273,7 @@ export const PRAYER_CORPUS: PrayerEntry[] = [
     suggestedFor: ["evening"],
     body:
       "O Lord our God, in that Thou art good and lovest mankind, forgive me wherein I have sinned today in word, deed, and thought. Grant me peaceful and undisturbed sleep. Send Thy Guardian Angel to protect and keep me from every evil. For Thou art the Guardian of our souls and bodies, and unto Thee do we send up glory: to the Father, and to the Son, and to the Holy Spirit, now and ever, and unto the ages of ages. Amen.",
-    attribution: "Jordanville Prayer Book — Evening Prayers",
+    attribution: "Evening Prayers (traditional)",
   },
   {
     id: "evening-john-damascene",
@@ -289,7 +293,7 @@ export const PRAYER_CORPUS: PrayerEntry[] = [
     body:
       "I confess unto Thee, O Lord my God and Creator, in the Holy Trinity, the One glorified and worshipped Father, and Son, and Holy Spirit: all my sins which I have committed all the days of my life, and at every hour, in the present and in the past day and night, in deeds, words, thoughts, gluttony, drunkenness, secret eating, idle talking, despondency, sloth, contradiction, disobedience, slander, judging, neglect, self-love, greed, rapacity, untruthfulness, dishonesty, money-loving, avarice, jealousy, envy, anger, remembering wrongs, hatred, taking bribes, and in all my senses—sight, hearing, smell, taste, touch—and in other sins, spiritual and physical, by which I have angered Thee my God and Creator, and wronged my neighbor.\n\n" +
       "Sorrowing for this but having no excuse, I repent and pray: help me, O Lord my God, that with tears I may humbly confess my sins, and may be vouchsafed Thy mercy and forgiveness, unto the ages of ages. Amen.",
-    attribution: "Jordanville Prayer Book",
+    attribution: "Traditional Orthodox prayer",
   },
   {
     id: "evening-simeon",
@@ -319,7 +323,7 @@ export const PRAYER_CORPUS: PrayerEntry[] = [
     suggestedFor: ["evening"],
     body:
       "O good Mother of the good King, most pure and blessed Theotokos Mary: pour out the mercy of thy Son and our God upon my passioned soul, and by thine intercessions guide me unto good works, that I may pass the remaining time of my life without blemish, and through thee attain Paradise, O Virgin Theotokos, who alone art pure and blessed.",
-    attribution: "Jordanville Prayer Book — Evening Prayers",
+    attribution: "Evening Prayers (traditional)",
   },
   {
     id: "evening-chrysostom-hours",

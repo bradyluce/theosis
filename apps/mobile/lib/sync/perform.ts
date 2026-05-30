@@ -4,6 +4,7 @@
 import type { PendingWrite } from "@theosis/core/sync";
 
 import { getAuthedApi } from "@/lib/auth";
+import { extractCurrentVersion } from "./sync-profile";
 
 export async function performWrite(write: PendingWrite): Promise<void> {
   const api = getAuthedApi();
@@ -35,14 +36,31 @@ export async function performWrite(write: PendingWrite): Promise<void> {
       await api.deleteHighlight(write.clientId);
       return;
     case "note.upsert":
-      await api.upsertNote({
-        clientId: write.clientId,
-        targetType: write.targetType,
-        targetId: write.targetId,
-        title: write.title,
-        body: write.body,
-        expectedVersion: write.version,
-      });
+      try {
+        await api.upsertNote({
+          clientId: write.clientId,
+          targetType: write.targetType,
+          targetId: write.targetId,
+          title: write.title,
+          body: write.body,
+          expectedVersion: write.version,
+        });
+      } catch (err) {
+        // Optimistic-concurrency 409: another device bumped this note's version
+        // since the edit was queued. Retry once with the server's current
+        // version so an offline edit isn't silently dropped after MAX_ATTEMPTS
+        // (mirrors the profile-patch retry in sync-profile.ts).
+        const freshVersion = extractCurrentVersion(err);
+        if (freshVersion == null) throw err;
+        await api.upsertNote({
+          clientId: write.clientId,
+          targetType: write.targetType,
+          targetId: write.targetId,
+          title: write.title,
+          body: write.body,
+          expectedVersion: freshVersion,
+        });
+      }
       return;
     case "note.delete":
       await api.deleteNote(write.clientId);

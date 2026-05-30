@@ -138,6 +138,10 @@ export default function PrivacyScreen() {
           {"\n"}
           • Expo (expo.dev) — mobile runtime. Receives application
           updates and crash data limited to the JavaScript bundle.
+          {"\n"}
+          • OpenStreetMap Foundation (nominatim.openstreetmap.org) —
+          geocoding. When you search parishes by ZIP, city, or address,
+          that text is sent to look up coordinates. We do not retain it.
           {"\n\n"}
           We share only the minimum data required for each provider to
           deliver its function.

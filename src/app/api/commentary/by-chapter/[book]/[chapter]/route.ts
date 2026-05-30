@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
 import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 import type { CommentaryEntry } from "@theosis/core";
+import { isSafeSlug } from "@/lib/api/safe-segment";
 
 // Serve one per-chapter (chapter-level commentary) file. Most chapters
 // have no by-chapter file — only those where a Father wrote on the
@@ -55,7 +56,7 @@ export async function GET(
   const { book, chapter } = await context.params;
   const chapterNumber = Number.parseInt(chapter, 10);
 
-  if (!book || Number.isNaN(chapterNumber)) {
+  if (!isSafeSlug(book) || Number.isNaN(chapterNumber)) {
     return NextResponse.json({ error: "Invalid parameters" }, { status: 400 });
   }
 

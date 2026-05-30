@@ -393,6 +393,89 @@ export const TIER1_WORKS: Tier1Entry[] = [
       status: "in-print",
     },
   },
+
+  // --- Ancient/older authors in copyrighted modern translation ----------
+  // Added after the pre-submission audit found these seven works still
+  // shipping full body prose despite copyrighted modern English editions
+  // (the author is public domain; the specific translation is not). The
+  // first license-cleanup pass omitted them from the manifest.
+  {
+    workId: "moschos-spiritual-meadow",
+    workSlug: "moschos-spiritual-meadow",
+    personId: "john-moschos",
+    availability: {
+      publisher: "Cistercian Publications (Liturgical Press)",
+      purchaseUrl: "https://litpress.org/",
+      status: "in-print",
+      note: "The Spiritual Meadow, trans. John Wortley (Cistercian Studies 139, © 1992).",
+    },
+  },
+  {
+    workId: "cabasilas-divine-liturgy-commentary",
+    workSlug: "cabasilas-divine-liturgy-commentary",
+    personId: "nicholas-cabasilas",
+    availability: {
+      publisher: "St. Vladimir's Seminary Press",
+      purchaseUrl: "https://svspress.com/",
+      status: "in-print",
+      note: "A Commentary on the Divine Liturgy, trans. J. M. Hussey & P. A. McNulty (© 1960).",
+    },
+  },
+  {
+    workId: "brianchaninov-the-arena",
+    workSlug: "brianchaninov-the-arena",
+    personId: "ignatius-brianchaninov",
+    availability: {
+      publisher: "Holy Trinity Publications (Jordanville)",
+      purchaseUrl: "https://htpbookstore.com/",
+      status: "in-print",
+      note: "The Arena, trans. Archimandrite Lazarus Moore; © Holy Trinity Publications.",
+    },
+  },
+  {
+    workId: "cyril-alexandria-festal-letters-1-12",
+    workSlug: "cyril-alexandria-festal-letters-1-12",
+    personId: "cyril-of-alexandria",
+    availability: {
+      publisher: "The Catholic University of America Press",
+      purchaseUrl: "https://cuapress.org/",
+      status: "in-print",
+      note: "Festal Letters 1–12, trans. Philip R. Amidon (Fathers of the Church 118, © 2009).",
+    },
+  },
+  {
+    workId: "paisius-little-russian-philokalia",
+    workSlug: "paisius-little-russian-philokalia",
+    personId: "paisius-velichkovsky",
+    availability: {
+      publisher: "St. Herman of Alaska Brotherhood",
+      purchaseUrl: "https://sainthermanpress.com/",
+      status: "in-print",
+      note: "Little Russian Philokalia, Vol. IV (© 1994 St. Herman of Alaska Brotherhood).",
+    },
+  },
+  {
+    workId: "tikhon-zadonsk-journey-to-heaven",
+    workSlug: "tikhon-zadonsk-journey-to-heaven",
+    personId: "tikhon-of-zadonsk",
+    availability: {
+      publisher: "Holy Trinity Publications (Jordanville)",
+      purchaseUrl: "https://htpbookstore.com/",
+      status: "in-print",
+      note: "Journey to Heaven; © Holy Trinity Monastery (1991).",
+    },
+  },
+  {
+    workId: "andrew-crete-great-canon",
+    workSlug: "andrew-crete-great-canon",
+    personId: "andrew-of-crete",
+    availability: {
+      publisher: "Various liturgical publishers",
+      purchaseUrl: "https://store.ancientfaith.com/",
+      status: "in-print",
+      note: "The Great Canon of St. Andrew of Crete — available in print Lenten Triodion / Great Canon editions.",
+    },
+  },
 ];
 
 // Verse-keyed commentary entries whose `excerpt` is direct quotation from a

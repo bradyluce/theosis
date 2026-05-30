@@ -399,6 +399,31 @@ async function savePrefs(prefs: AppPreferences): Promise<void> {
   }
 }
 
+// Serialize a read-modify-write against prefs. The common mutator pattern
+//   const prefs = await loadPrefs(); await savePrefs({ ...prefs, field });
+// is last-writer-wins: two mutators that run concurrently both read the same
+// snapshot and the second save silently drops the first's field. mutatePrefs()
+// chains each read-modify-write onto a single promise so they apply one at a
+// time against the freshest prefs. Use it for any mutator that can run
+// alongside another (fired together in a Promise.all, or from concurrent
+// screen effects). The `fn` receives the latest prefs and returns the next
+// prefs plus the value to resolve with.
+let prefsWriteChain: Promise<unknown> = Promise.resolve();
+function mutatePrefs<T>(
+  fn: (prefs: AppPreferences) => { next: AppPreferences; result: T },
+): Promise<T> {
+  const run = prefsWriteChain.then(async () => {
+    const prefs = await loadPrefs();
+    const { next, result } = fn(prefs);
+    await savePrefs(next);
+    return result;
+  });
+  // Keep the chain alive even if one mutation throws, so a single failure
+  // doesn't wedge every future write.
+  prefsWriteChain = run.catch(() => undefined);
+  return run;
+}
+
 export async function getLastReadLocation(): Promise<LastReadLocation | undefined> {
   const prefs = await loadPrefs();
   return prefs.lastRead;
@@ -407,8 +432,12 @@ export async function getLastReadLocation(): Promise<LastReadLocation | undefine
 export async function setLastReadLocation(
   location: LastReadLocation,
 ): Promise<void> {
-  const prefs = await loadPrefs();
-  await savePrefs({ ...prefs, lastRead: location });
+  // Serialized: the Bible last-read write races the Daily/You mount writes
+  // (activity day) on cold start; an unserialized RMW dropped whichever lost.
+  await mutatePrefs((prefs) => ({
+    next: { ...prefs, lastRead: location },
+    result: undefined,
+  }));
 }
 
 export async function getRecentSearches(): Promise<string[]> {
@@ -707,6 +736,10 @@ export async function addCompletion(
   };
   const next = [mark, ...existing];
   await savePrefs({ ...prefs, completions: next });
+  // Sync the "mark as read" to the server so it round-trips across devices.
+  // (The queue has no completion.delete kind — completions are additive on the
+  // server — so removeCompletion stays local-only by design.)
+  void enqueueWrite({ kind: "completion.create", kind_: kind, slug });
   return next;
 }
 
@@ -812,7 +845,10 @@ export async function upsertNote(
         targetId,
         title,
         body,
-        version: 0,
+        // New notes start at version 1 to match the server's insert default.
+        // Starting at 0 caused the first edit to send expectedVersion 0 against
+        // a server row already at 1 → a 409 that dropped the edit.
+        version: 1,
         createdAt: now,
         updatedAt: now,
       };
@@ -825,7 +861,10 @@ export async function upsertNote(
     targetId,
     title,
     body,
-    version: existing?.version ?? 0,
+    // expectedVersion = the note's version BEFORE this write. For a brand-new
+    // note that's the server's post-insert default (1); for an edit it's the
+    // current stored version.
+    version: existing?.version ?? 1,
   });
   return updated;
 }
@@ -1085,11 +1124,25 @@ export async function isFavoritePerson(slug: string): Promise<boolean> {
 }
 
 export async function toggleFavoritePerson(slug: string): Promise<string[]> {
-  const slugs = await getFavoritePersonSlugs();
-  const next = slugs.includes(slug)
-    ? slugs.filter((s) => s !== slug)
-    : [slug, ...slugs];
-  await updateProfilePrefs({ favoritePersonSlugs: next });
+  const prefs = await loadPrefs();
+  const slugs = prefs.profile?.favoritePersonSlugs ?? [];
+  const isFavorited = slugs.includes(slug);
+  const next = isFavorited ? slugs.filter((s) => s !== slug) : [slug, ...slugs];
+  await savePrefs({
+    ...prefs,
+    profile: { ...(prefs.profile ?? {}), favoritePersonSlugs: next },
+  });
+  // Favorites live in their own server table (favorite_people), NOT a column
+  // on the profile row — so the profile PATCH (updateProfilePrefs) silently
+  // drops favoritePersonSlugs. Enqueue the dedicated favoritePerson write
+  // instead, matching the web client and the perform.ts handler. clientId
+  // matches buildClientSnapshot's `favorite-<slug>` so the one-time import and
+  // live toggles converge on the same server row.
+  void enqueueWrite(
+    isFavorited
+      ? { kind: "favoritePerson.delete", clientId: `favorite-${slug}` }
+      : { kind: "favoritePerson.create", clientId: `favorite-${slug}`, personId: slug },
+  );
   return next;
 }
 
@@ -1139,7 +1192,12 @@ export async function toggleReadingList(opts: {
   void enqueueWrite({
     kind: "readingList.upsert",
     clientId: id,
-    workId: opts.workId,
+    // Send the work SLUG as the server work_id, matching buildClientSnapshot's
+    // import path and adoptServerSnapshot's restore (workSlug: r.workId).
+    // Previously this sent the internal work.id while import sent the slug,
+    // which let the same work land as two server rows and broke navigation
+    // (a restored item linked to /works/<work.id>, which doesn't resolve).
+    workId: opts.workSlug,
     status: "read-later",
   });
   return { saved: true, list: next };
@@ -1152,16 +1210,19 @@ export async function recordActivityToday(): Promise<{
   streak: number;
   days: string[];
 }> {
-  const prefs = await loadPrefs();
   const today = new Date();
   const iso = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
-  const existing = prefs.activityDays ?? [];
-  const days = existing.includes(iso) ? existing : [...existing, iso].sort();
-  if (days !== existing) {
-    await savePrefs({ ...prefs, activityDays: days });
-    void enqueueWrite({ kind: "activityDay.record", day: iso });
-  }
-  return { streak: computeStreak(days), days };
+  // Serialized read-modify-write — this runs inside a Promise.all on the Daily
+  // and You tabs alongside other prefs writers; an unserialized RMW could drop
+  // a co-running write (the last-read clobber the audit flagged).
+  return mutatePrefs((prefs) => {
+    const existing = prefs.activityDays ?? [];
+    const days = existing.includes(iso) ? existing : [...existing, iso].sort();
+    if (days !== existing) {
+      void enqueueWrite({ kind: "activityDay.record", day: iso });
+    }
+    return { next: { ...prefs, activityDays: days }, result: { streak: computeStreak(days), days } };
+  });
 }
 
 export async function getActivityStreak(): Promise<number> {

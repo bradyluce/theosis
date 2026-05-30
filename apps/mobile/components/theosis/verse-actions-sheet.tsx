@@ -19,6 +19,7 @@ import {
   HIGHLIGHT_BY_SLUG,
   HIGHLIGHT_COLORS,
 } from "@/constants/highlight-colors";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { colors, fonts, radii, spacing } from "@/constants/theosis-theme";
 import type { HighlightColor } from "@/lib/preferences";
 
@@ -59,6 +60,7 @@ export function VerseActionsSheet({
   onSetHighlight,
 }: VerseActionsSheetProps) {
   const { height: screenHeight } = useWindowDimensions();
+  const insets = useSafeAreaInsets();
   const translateY = useRef(new Animated.Value(screenHeight)).current;
   const backdropOpacity = useRef(new Animated.Value(0)).current;
   const [copyFlash, setCopyFlash] = useState(false);
@@ -158,7 +160,12 @@ export function VerseActionsSheet({
         </Animated.View>
 
         <Animated.View
-          style={[styles.sheet, { transform: [{ translateY }] }]}
+          style={[
+            styles.sheet,
+            // Clear the home indicator on notched iPhones (the bottom action
+            // row sat ~20px from the edge with only the static padding).
+            { paddingBottom: insets.bottom + spacing.lg, transform: [{ translateY }] },
+          ]}
         >
           <View style={styles.handle} />
 

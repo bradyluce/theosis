@@ -8,7 +8,6 @@ import {
 import type {
   CalendarData,
   CalendarSystem,
-  Jurisdiction,
   MenaionEntry,
   MovableCycleEntry,
 } from "@/lib/calendar/types";
@@ -17,9 +16,27 @@ const PASCHAL_CYCLE_MIN_PDIST = -77; // Sunday of Zacchaeus
 const PASCHAL_CYCLE_MAX_PDIST = 56; // Sunday of All Saints
 
 export type ComposeOptions = {
-  jurisdiction?: Jurisdiction;
   calendarSystem?: CalendarSystem;
+  // Display label for the user's jurisdiction (e.g. "ROCOR"), folded into the
+  // composed `calendarLabel`. The Menaion is pan-Orthodox, so jurisdiction
+  // does not by itself change which saints are commemorated — `calendarSystem`
+  // is what shifts the fixed-feast dates (New = civil Gregorian; Old = Julian,
+  // 13 days later on the civil calendar). jurisdictionLabel only annotates the
+  // calendar the day was reckoned on so the UI can name it honestly.
+  jurisdictionLabel?: string;
 };
+
+// Build the human-readable calendar label surfaced on the Daily screen.
+function buildCalendarLabel(
+  calendarSystem: CalendarSystem,
+  jurisdictionLabel?: string,
+): string {
+  const system =
+    calendarSystem === "old"
+      ? "Old Calendar (Julian)"
+      : "New Calendar (Revised Julian)";
+  return jurisdictionLabel ? `${system} · ${jurisdictionLabel}` : system;
+}
 
 // Compose the day's commemoration from the normalized calendar data.
 // Defaults: New Calendar + OCA jurisdiction (the US English mainstream).
@@ -79,6 +96,7 @@ export function composeDailyCommemoration(
     hymnIds: [], // Hymns are composed separately via composeDailyHymns.
     lifeExcerpt,
     sourceId: "source-calendar-normalized",
+    calendarLabel: buildCalendarLabel(calendarSystem, options.jurisdictionLabel),
   };
 }
 
@@ -87,12 +105,15 @@ function lookupMenaion(
   calendarSystem: CalendarSystem,
   data: CalendarData,
 ): MenaionEntry | undefined {
-  // For New Calendar (OCA/GOARCH/Antiochian), today's civil Gregorian MM-DD is
-  // the Menaion lookup key directly — they kept the Menaion date numbers when
-  // they adopted the Gregorian for daily reckoning.
+  // New Calendar (OCA/GOARCH/Antiochian): today's civil Gregorian MM-DD is the
+  // Menaion lookup key directly — these jurisdictions kept the Menaion date
+  // numbers when they adopted the Gregorian for daily reckoning.
   //
-  // Old Calendar mode (deferred) would subtract 13 days first via
-  // `julianMonthDay(date)`. The data shape is identical either way.
+  // Old Calendar (ROCOR/Serbian/Georgian/Moscow): the fixed feast falls 13 days
+  // later on the civil calendar, so we look up the Menaion key for `date − 13
+  // days` (computeJulianKey). The Menaion data is identical either way — only
+  // the lookup key shifts. The movable (Paschal) cycle is unaffected because
+  // the app already reckons Pascha on the Julian computus for every system.
   const key =
     calendarSystem === "new"
       ? gregorianMonthDay(date)
@@ -191,7 +212,11 @@ function formatIso(date: Date): string {
 
 // Inline the Julian-key computation to avoid a circular import path back through
 // the public paschalion surface; this is the same arithmetic as
-// `paschalion.julianMonthDay()`.
+// `paschalion.julianMonthDay()`. The Julian calendar runs exactly 13 days behind
+// the Gregorian across the app's entire supported range (the daily route and the
+// Paschalion both clamp to 1900–2099, well inside the 1 Mar 1900 – 28 Feb 2100
+// window where the offset is 13 days), so the constant is exact for every date
+// this app composes.
 function computeJulianKey(date: Date): string {
   const MS_PER_DAY = 86_400_000;
   const julian = new Date(

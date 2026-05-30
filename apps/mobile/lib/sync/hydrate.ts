@@ -17,6 +17,7 @@ import type {
 
 import { getAuthedApi } from "@/lib/auth";
 import {
+  clearMemoCache,
   type AppPreferences,
   type DailyCardKey,
   type ProfilePrefs,
@@ -166,6 +167,9 @@ async function adoptServerSnapshot(snapshot: MeSnapshotDto): Promise<void> {
       p.commentaryRanking === "modern-first"
         ? p.commentaryRanking
         : undefined,
+    // Restore favorites from the server (their own table) so the You-tab
+    // favorites survive sign-in on a new device. Previously never restored.
+    favoritePersonSlugs: snapshot.favoritePeople.map((f) => f.personId),
   };
 
   const next: AppPreferences = {
@@ -236,6 +240,14 @@ async function adoptServerSnapshot(snapshot: MeSnapshotDto): Promise<void> {
       initialized: snapshot.prayerRule.morning.length > 0 || snapshot.prayerRule.evening.length > 0,
     },
     dailyCardOrder: (p.dailyCardOrder as DailyCardKey[] | undefined) ?? current.dailyCardOrder,
+    // Restore content completions ("mark as read") so they round-trip across
+    // devices. id format matches preferences.ts completionId(kind, slug).
+    completions: snapshot.completions.map((c) => ({
+      id: `${c.kind}::${c.slug}`,
+      kind: c.kind,
+      slug: c.slug,
+      completedAt: c.completedAt,
+    })),
   };
 
   // Cross-device onboarding flag: if the server snapshot carries a real
@@ -281,11 +293,21 @@ export async function hydrateAndClaim(opts: {
   }
 
   const prefs = await readPrefs();
+  // Anything the user could have created anonymously must count as "local data"
+  // so it gets uploaded on first claim. Notes, favorites, completions, and the
+  // prayer rule were previously omitted — a user who only wrote notes (or only
+  // built a prayer rule) took the fetch branch, never uploaded, and then had
+  // their local notes overwritten by the empty server snapshot (data loss).
   const hasLocal =
     (prefs.savedVerses ?? []).length > 0 ||
     (prefs.highlights ?? []).length > 0 ||
     (prefs.readingList ?? []).length > 0 ||
     (prefs.recentSearches ?? []).length > 0 ||
+    (prefs.notes ?? []).length > 0 ||
+    (prefs.completions ?? []).length > 0 ||
+    (prefs.profile?.favoritePersonSlugs ?? []).length > 0 ||
+    (prefs.prayerRule?.morning ?? []).length > 0 ||
+    (prefs.prayerRule?.evening ?? []).length > 0 ||
     !!prefs.profile?.patronSaintSlug ||
     !!prefs.profile?.parish ||
     !!prefs.profile?.status ||
@@ -328,4 +350,10 @@ export async function hydrateAndClaim(opts: {
   }
 
   await adoptServerSnapshot(snapshot);
+  // adoptServerSnapshot wrote AsyncStorage via this module's own writePrefs, so
+  // preferences.ts still holds a stale in-memory memoCache (warmed by getters
+  // that ran on the same cold start as hydrate). Drop it so the next read
+  // serves the freshly-hydrated server snapshot — and so the next in-app
+  // mutator doesn't read stale prefs and clobber the synced data.
+  clearMemoCache();
 }

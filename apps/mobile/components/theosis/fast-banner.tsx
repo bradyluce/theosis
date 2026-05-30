@@ -326,7 +326,9 @@ const styles = StyleSheet.create({
     color: colors.ink,
   },
   featureDaySoft: {
-    color: colors.inkFaint,
+    // inkSoft (AA-legible muted), not inkFaint — the faint tone failed even the
+    // 3:1 floor, making de-emphasized fast-day numbers effectively invisible.
+    color: colors.inkSoft,
   },
   progressTrack: {
     height: 3,

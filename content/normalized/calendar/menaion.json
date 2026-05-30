@@ -2,7 +2,7 @@
   "_meta": {
     "description": "Orthodox Menaion (fixed-cycle commemorations). Keyed by canonical Menaion month-day (MM-DD). New Calendar jurisdictions observe each entry on its corresponding Gregorian date; Old Calendar jurisdictions observe it 13 days later in civil terms (1900-2099). The Menaion entries themselves are universal.",
     "license": "Theosis-owned editorial content. Names and dates are historical/liturgical facts; summary prose is original.",
-    "coverage": "May (full month) — first implementation slice. Other months populated incrementally."
+    "coverage": "Full year — all 12 months, 366 fixed-feast day-keys (MM-DD)."
   },
   "entries": {
     "05-01": {

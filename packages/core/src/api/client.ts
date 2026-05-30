@@ -59,8 +59,13 @@ export type TheosisApiOptions = {
 export type TheosisApi = {
   fetchVersion: () => Promise<VersionResponse>;
   // `isoDate` is optional — omit for today, pass "YYYY-MM-DD" for a specific
-  // calendar date (e.g. peeking at a feast next week).
-  fetchDaily: (isoDate?: string) => Promise<DailyResponse>;
+  // calendar date (e.g. peeking at a feast next week). `options.calendarSystem`
+  // ("new" = Revised Julian default, "old" = Julian) shifts fixed-feast dates;
+  // `options.jurisdiction` is an Assembly code used only to label the result.
+  fetchDaily: (
+    isoDate?: string,
+    options?: { calendarSystem?: "new" | "old"; jurisdiction?: string },
+  ) => Promise<DailyResponse>;
   fetchCommentaryCatalog: () => Promise<CommentaryCatalog>;
   fetchLibraryCatalog: () => Promise<LibraryCatalog>;
   fetchLibraryPeople: () => Promise<LibraryPeopleResponse>;
@@ -136,12 +141,14 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
 
   return {
     fetchVersion: () => getJson<VersionResponse>("/api/version"),
-    fetchDaily: (isoDate) =>
-      getJson<DailyResponse>(
-        isoDate
-          ? `/api/daily?date=${encodeURIComponent(isoDate)}`
-          : "/api/daily",
-      ),
+    fetchDaily: (isoDate, options) => {
+      const params = new URLSearchParams();
+      if (isoDate) params.set("date", isoDate);
+      if (options?.calendarSystem) params.set("calendar", options.calendarSystem);
+      if (options?.jurisdiction) params.set("jurisdiction", options.jurisdiction);
+      const query = params.toString();
+      return getJson<DailyResponse>(query ? `/api/daily?${query}` : "/api/daily");
+    },
     fetchCommentaryCatalog: () =>
       getJson<CommentaryCatalog>("/api/commentary/catalog"),
     fetchLibraryCatalog: () => getJson<LibraryCatalog>("/api/library/catalog"),

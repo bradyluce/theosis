@@ -8,7 +8,7 @@ import * as SecureStore from 'expo-secure-store';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import * as Updates from 'expo-updates';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
@@ -55,10 +55,13 @@ const tokenCache = {
   },
 };
 
-// Publishable key comes from app.json `extra.clerkPublishableKey` (set per
-// build via EAS env vars). Missing key in production is a config error,
-// but we don't want to crash dev builds — pass an empty string and let
-// Clerk error loudly at the first auth attempt instead.
+// Publishable key comes from app.json `extra.clerkPublishableKey`. Clerk
+// publishable keys are embeddable-by-design — they identify the instance and
+// cannot mint sessions — so committing it is safe; it is NOT a secret. The
+// value is currently hardcoded in app.json; to rotate it or stage a different
+// instance, edit app.json (or wire up app.config.* to read an EAS env var).
+// Missing key in production is a config error, but we don't want to crash dev
+// builds — pass an empty string and let Clerk error loudly at first auth.
 const publishableKey =
   (Constants.expoConfig?.extra?.clerkPublishableKey as string | undefined) ??
   '';
@@ -105,14 +108,25 @@ export default function RootLayout() {
   // FONT_ASSETS above if a specific screen ever needs them; each adds
   // ~50 KB to the bundle.
   const [fontsLoaded] = useFonts(FONT_ASSETS);
+  // Escape hatch for the splash gate. The fonts are bundled .ttf files, so the
+  // realistic failure is a corrupted asset decode that leaves useFonts() at
+  // [false] forever — which would otherwise strand the user on the native
+  // splash indefinitely. After a timeout we proceed anyway with the system
+  // serif fallback; Newsreader swaps in later if it ever resolves.
+  const [fontTimedOut, setFontTimedOut] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setFontTimedOut(true), 4000);
+    return () => clearTimeout(timer);
+  }, []);
+  const splashReady = fontsLoaded || fontTimedOut;
 
   useEffect(() => {
-    if (fontsLoaded) {
+    if (splashReady) {
       SplashScreen.hideAsync().catch(() => {
         // Splash already hidden — no-op.
       });
     }
-  }, [fontsLoaded]);
+  }, [splashReady]);
 
   // Apply EAS Updates eagerly on cold start. The default expo-updates
   // behavior downloads a new update on one launch but only *applies* it on
@@ -141,11 +155,10 @@ export default function RootLayout() {
     };
   }, []);
 
-  if (!fontsLoaded) {
-    // Returning null keeps the splash screen visible (we deferred autohide).
-    // If a font CDN ever fails, the catch above won't trigger here — the
-    // useFonts hook returns [false] indefinitely; that's acceptable for a
-    // first-launch failure mode (manifests as the splash staying up).
+  if (!splashReady) {
+    // Returning null keeps the splash screen visible (we deferred autohide)
+    // until fonts load OR the 4s timeout above fires — so a corrupted font
+    // asset degrades to the system fallback instead of an infinite splash.
     return null;
   }
 
@@ -239,10 +252,13 @@ function ClerkTokenBridge() {
   useEffect(() => {
     if (isSignedIn && userId) {
       setActiveTokenGetter(() => getToken());
-      // Order matters: claim + hydrate first (writes are server-wins on
-      // natural keys), then drain anything that was queued before the
-      // most recent sign-out.
-      void hydrateAndClaim({ clerkUserId: userId }).then(() => drainQueue());
+      // Drain queued offline writes BEFORE hydrating. hydrate's
+      // adoptServerSnapshot replaces local synced collections with the server
+      // state, so draining first pushes any pending local edits to the server
+      // and then adopts the merged result — instead of overwriting un-flushed
+      // edits with a stale server snapshot. The import path is idempotent
+      // (ON CONFLICT DO NOTHING), so a first-claim re-send is harmless.
+      void drainQueue().then(() => hydrateAndClaim({ clerkUserId: userId }));
     } else {
       setActiveTokenGetter(null);
     }

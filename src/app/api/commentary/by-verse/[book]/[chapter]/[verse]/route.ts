@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
 import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 import type { CommentaryEntry } from "@theosis/core";
+import { isSafeSlug } from "@/lib/api/safe-segment";
 
 // Serve one per-verse commentary file. Tries S3 first (so production
 // deploys can update commentary without redeploying the bundle); falls
@@ -65,7 +66,7 @@ export async function GET(
   const chapterNumber = Number.parseInt(chapter, 10);
   const verseNumber = Number.parseInt(verse, 10);
 
-  if (!book || Number.isNaN(chapterNumber) || Number.isNaN(verseNumber)) {
+  if (!isSafeSlug(book) || Number.isNaN(chapterNumber) || Number.isNaN(verseNumber)) {
     return NextResponse.json({ error: "Invalid parameters" }, { status: 400 });
   }
 

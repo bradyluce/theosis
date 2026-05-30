@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Stack, router, useLocalSearchParams } from "expo-router";
+import { Stack, router, useFocusEffect, useLocalSearchParams } from "expo-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
@@ -84,12 +84,15 @@ export default function PrayerScreen() {
 
   const itemIds = rule ? rule[slot] : [];
 
-  // Re-read the rule whenever the screen comes into focus (e.g. after a
-  // round-trip to the builder). Lightweight — single AsyncStorage read.
-  useEffect(() => {
-    const interval = setInterval(refreshRule, 1500);
-    return () => clearInterval(interval);
-  }, [refreshRule]);
+  // Re-read the rule whenever the screen regains focus (e.g. after a
+  // round-trip to the builder). A focus refresh — not a 1.5s polling interval
+  // that kept firing AsyncStorage reads for the screen's whole lifetime (even
+  // while /prayer-builder was pushed on top), draining battery and IO.
+  useFocusEffect(
+    useCallback(() => {
+      refreshRule();
+    }, [refreshRule]),
+  );
 
   return (
     <>

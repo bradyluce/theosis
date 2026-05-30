@@ -215,9 +215,18 @@ export default function DailyScreen() {
   const [pickerOpen, setPickerOpen] = useState(false);
   const isToday = !selectedIso || selectedIso === todayIso();
 
+  // The user's calendar system drives which fixed-feast saints/readings/fasts
+  // the day resolves to (New = civil Gregorian; Old/Julian = 13 days later).
+  // The mobile pref stores "julian"; the API speaks "old". Jurisdiction is
+  // sent so the response can label itself (e.g. "Old Calendar (Julian) · ROCOR").
+  // Both are in the query key so switching in Settings refetches the right day.
+  const calendarSystem: "new" | "old" =
+    profile.calendarSystem === "julian" ? "old" : "new";
+  const jurisdiction = profile.jurisdiction;
+
   const { data, error, isLoading, refetch, isFetching } = useQuery({
-    queryKey: ["daily", selectedIso ?? "today"],
-    queryFn: () => api.fetchDaily(selectedIso),
+    queryKey: ["daily", selectedIso ?? "today", calendarSystem, jurisdiction ?? "none"],
+    queryFn: () => api.fetchDaily(selectedIso, { calendarSystem, jurisdiction }),
     staleTime: 5 * 60 * 1000,
   });
 
@@ -530,6 +539,12 @@ export default function DailyScreen() {
             </Pressable>
           ) : null}
         </View>
+
+        {data?.daily.calendarLabel ? (
+          <Text style={styles.calendarSystemLabel}>
+            {data.daily.calendarLabel}
+          </Text>
+        ) : null}
 
         {!isToday ? (
           <Pressable
@@ -1340,6 +1355,17 @@ const styles = StyleSheet.create({
     color: colors.accent,
     letterSpacing: 2.8,
     textTransform: "uppercase",
+  },
+  // Names the calendar system (and jurisdiction) the day was reckoned on, so
+  // the commemoration is never presented as the single universal Orthodox
+  // calendar. Centered caption directly under the date.
+  calendarSystemLabel: {
+    fontFamily: fonts.sans,
+    fontSize: 10,
+    color: colors.inkMuted,
+    letterSpacing: 0.4,
+    textAlign: "center",
+    marginTop: spacing.xs,
   },
   avatarInitial: {
     fontFamily: fonts.serifBoldItalic,

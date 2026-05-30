@@ -347,64 +347,93 @@ export type MeSnapshotDto = z.infer<typeof meSnapshotDto>;
 // Import endpoint — anonymous-to-authenticated claim
 // ---------------------------------------------------------------------------
 
+// Per-collection caps on the import body. These are far above any real user's
+// data (a power user won't approach them) but bound the single bulk-insert
+// transaction so an authenticated client can't POST an arbitrarily large
+// snapshot and force unbounded row growth / a huge transaction.
+const IMPORT_MAX = {
+  savedVerses: 10000,
+  highlights: 10000,
+  notes: 5000,
+  favoritePeople: 2000,
+  readingList: 5000,
+  recentSearches: 200,
+  readingHistory: 10000,
+  prayerItems: 500,
+  activityDays: 5000,
+  completions: 10000,
+} as const;
+
 export const clientSnapshotDto = z.object({
   preferences: userProfileDto
     .partial()
     .omit({ version: true, createdAt: true, updatedAt: true }),
-  savedVerses: z.array(
-    z.object({
-      clientId: z.string(),
-      verseKey: z.string(),
-      translationId: z.string(),
-    }),
-  ),
-  highlights: z.array(
-    z.object({
-      clientId: z.string(),
-      targetType: highlightTargetTypeSchema,
-      targetId: z.string(),
-      color: highlightColorSchema,
-      excerpt: z.string().optional(),
-    }),
-  ),
-  notes: z.array(
-    z.object({
-      clientId: z.string(),
-      targetType: noteTargetTypeSchema,
-      targetId: z.string(),
-      title: z.string(),
-      body: z.string(),
-    }),
-  ),
-  favoritePeople: z.array(
-    z.object({ clientId: z.string(), personId: z.string() }),
-  ),
-  readingList: z.array(
-    z.object({
-      clientId: z.string(),
-      workId: z.string(),
-      status: readingListStatusSchema,
-      positionChapterOrder: z.number().int().optional(),
-    }),
-  ),
-  recentSearches: z.array(
-    z.object({ clientId: z.string(), query: z.string() }),
-  ),
-  readingHistory: z.array(
-    z.object({
-      clientId: z.string(),
-      href: z.string(),
-      label: z.string(),
-    }),
-  ),
+  savedVerses: z
+    .array(
+      z.object({
+        clientId: z.string(),
+        verseKey: z.string(),
+        translationId: z.string(),
+      }),
+    )
+    .max(IMPORT_MAX.savedVerses),
+  highlights: z
+    .array(
+      z.object({
+        clientId: z.string(),
+        targetType: highlightTargetTypeSchema,
+        targetId: z.string(),
+        color: highlightColorSchema,
+        excerpt: z.string().optional(),
+      }),
+    )
+    .max(IMPORT_MAX.highlights),
+  notes: z
+    .array(
+      z.object({
+        clientId: z.string(),
+        targetType: noteTargetTypeSchema,
+        targetId: z.string(),
+        title: z.string(),
+        body: z.string(),
+      }),
+    )
+    .max(IMPORT_MAX.notes),
+  favoritePeople: z
+    .array(z.object({ clientId: z.string(), personId: z.string() }))
+    .max(IMPORT_MAX.favoritePeople),
+  readingList: z
+    .array(
+      z.object({
+        clientId: z.string(),
+        workId: z.string(),
+        status: readingListStatusSchema,
+        positionChapterOrder: z.number().int().optional(),
+      }),
+    )
+    .max(IMPORT_MAX.readingList),
+  recentSearches: z
+    .array(z.object({ clientId: z.string(), query: z.string() }))
+    .max(IMPORT_MAX.recentSearches),
+  readingHistory: z
+    .array(
+      z.object({
+        clientId: z.string(),
+        href: z.string(),
+        label: z.string(),
+      }),
+    )
+    .max(IMPORT_MAX.readingHistory),
   prayerRule: z.object({
-    morning: z.array(z.string()),
-    evening: z.array(z.string()),
+    morning: z.array(z.string()).max(IMPORT_MAX.prayerItems),
+    evening: z.array(z.string()).max(IMPORT_MAX.prayerItems),
   }),
-  activityDays: z.array(z.string().regex(/^\d{4}-\d{2}-\d{2}$/)),
-  completions: z.array(
-    z.object({ kind: completionKindSchema, slug: z.string() }),
-  ),
+  activityDays: z
+    .array(z.string().regex(/^\d{4}-\d{2}-\d{2}$/))
+    .max(IMPORT_MAX.activityDays),
+  completions: z
+    .array(z.object({ kind: completionKindSchema, slug: z.string() }))
+    .max(IMPORT_MAX.completions),
 });
 export type ClientSnapshotDto = z.infer<typeof clientSnapshotDto>;
 

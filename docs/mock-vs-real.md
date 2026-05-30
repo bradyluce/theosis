@@ -1,5 +1,14 @@
 # Mocked vs Real
 
+> **⚠️ Outdated (as of 2026-05).** This document describes the early Phase 1/2
+> prototype and materially understates what now ships. Authenticated user data
+> is fully Drizzle/Neon-backed; the full Bible corpus and patristic library
+> serve from R2 (with committed normalized fallbacks); the calendar has
+> full-year Menaion/lectionary/hymn coverage. The one genuinely narrow area is
+> the free-text **search verse index**, which is still seed-only (see
+> `src/features/search/search-engine.ts`). Treat the sections below as
+> historical, not current status.
+
 ## Phase 1 and 2
 
 The app uses seeded content that is designed to resemble the final product:

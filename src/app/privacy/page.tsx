@@ -114,6 +114,12 @@ export default function PrivacyPage() {
             application updates and crash data limited to the JavaScript
             bundle.
           </li>
+          <li>
+            <strong>OpenStreetMap Foundation</strong>{" "}
+            (nominatim.openstreetmap.org) — geocoding. When you search
+            parishes by ZIP, city, or address, that text is sent to look up
+            coordinates. We don&apos;t retain it.
+          </li>
         </ul>
         <p className="mt-3">
           We share only the minimum data required for each provider to

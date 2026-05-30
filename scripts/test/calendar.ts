@@ -198,8 +198,9 @@ assertEqual("May 19 2026 -> has at least 1 hymn after mass-fill", may19Hymns.len
 assertEqual("Bright Monday 2026 -> no fast", composeDailyFast(utc(2026, 3, 13)), undefined);
 // Pentecost week (pdist 50-56) = fast-free.
 assertEqual("Day after Pentecost 2026 -> no fast", composeDailyFast(utc(2026, 5, 1)), undefined);
-// Wednesday in ordinary time = weekly Wed fast.
-assertEqual("Sept 16 2026 (Wed) -> weekly fast", composeDailyFast(utc(2026, 8, 16)), "Wednesday and Friday Fast");
+// Wednesday in ordinary time = weekly Wed fast. The label is day-specific
+// ("Wednesday Fast" / "Friday Fast"), not the combined phrase.
+assertEqual("Sept 16 2026 (Wed) -> weekly fast", composeDailyFast(utc(2026, 8, 16)), "Wednesday Fast");
 // Friday during Bright Week = fast-free overrides weekly Wed/Fri.
 assertEqual("Bright Friday 2026 -> no fast (overrides weekly)", composeDailyFast(utc(2026, 3, 17)), undefined);
 // Aug 5 2026 -> Dormition Fast
@@ -459,9 +460,25 @@ assertEqual(
   ["apostle-peter", "apostle-paul"],
 );
 
-// A day without a Person link returns empty saintIds (does not crash).
+// May 19 (St. Patrick of Prusa) gained a linked Person after the menaion
+// enrichment — verify the fixed-feast saintId now surfaces from the composer.
 const mayNineteen = composeDailyCommemoration(utc(2026, 4, 19), data);
-assertEqual("May 19 (no linked Person) -> saintIds empty", mayNineteen.saintIds, []);
+assertEqual("May 19 -> saintIds = [patrick-of-prusa]", mayNineteen.saintIds, ["patrick-of-prusa"]);
+
+// --- Old Calendar (Julian) fixed-feast shift ---
+// A fixed feast on civil MM-DD for New Calendar falls 13 days later on the
+// civil calendar for Old-Calendar (Julian) jurisdictions. The Nativity of the
+// Theotokos (Menaion 09-08) sits well outside the paschal cycle, so it's a
+// clean probe: Old-Calendar civil Sept 21 must resolve to the same feast as
+// New-Calendar civil Sept 8, and differ from New-Calendar civil Sept 21.
+const newSep8 = composeDailyCommemoration(utc(2026, 8, 8), data, { calendarSystem: "new" });
+const oldSep21 = composeDailyCommemoration(utc(2026, 8, 21), data, { calendarSystem: "old" });
+const newSep21 = composeDailyCommemoration(utc(2026, 8, 21), data, { calendarSystem: "new" });
+assertEqual("Sept 8 has a Menaion entry (not quiet-day)", newSep8.title !== "A quiet day in the Church year", true);
+assertEqual("Old-Calendar Sept 21 resolves to New-Calendar Sept 8 feast", oldSep21.title, newSep8.title);
+assertEqual("Old vs New Calendar differ on civil Sept 21", oldSep21.title !== newSep21.title, true);
+assertEqual("Old-Calendar label is surfaced", oldSep21.calendarLabel, "Old Calendar (Julian)");
+assertEqual("New-Calendar label is surfaced", newSep8.calendarLabel, "New Calendar (Revised Julian)");
 
 // --- Multi-saint days surface additionalCommemorations ---
 

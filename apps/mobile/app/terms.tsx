@@ -113,12 +113,15 @@ export default function TermsScreen() {
 
         <Section number="5" title="Editorial content">
           Bible translations, patristic excerpts, daily commemorations, and
-          hymns surfaced in the Service are drawn from public-domain
-          editions and openly licensed sources, attributed where required.
-          Saint biographies and editorial prose are written by Theosis from
-          public-domain facts; AI-generated content is never substituted
-          for authentic patristic writing. We make reasonable efforts to
-          keep attributions and context accurate; if you spot an error,
+          hymns surfaced in the Service are drawn from public-domain editions
+          and from sources used under their applicable licenses, attributed
+          where required. Works whose modern translation remains under
+          copyright are presented as reference-only — a bibliographic entry
+          pointing to the publisher — rather than reproduced in full. Saint
+          biographies and editorial prose are written by Theosis from
+          public-domain facts; AI-generated content is never substituted for
+          authentic patristic writing. We make reasonable efforts to keep
+          attributions, licensing, and context accurate; if you spot an error,
           please tell us.
         </Section>
 
@@ -149,7 +152,10 @@ export default function TermsScreen() {
           laws. We grant you a limited, revocable, non-exclusive,
           non-transferable license to use the Service for personal,
           non-commercial study. Content sourced from third parties is used
-          under the applicable public-domain or open-license terms.
+          under its applicable public-domain, open-license, or other
+          permitted terms; where a work's modern translation is under
+          copyright, the Service links to the publisher instead of
+          reproducing it.
         </Section>
 
         <Section number="9" title="Disclaimers">

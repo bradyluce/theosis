@@ -18,7 +18,7 @@ import { buildReadingHref } from "@/lib/content/reading-href";
 import { DatePicker } from "@/app/(shell)/daily/date-picker";
 
 type DailyPageProps = {
-  searchParams: Promise<{ date?: string }>;
+  searchParams: Promise<{ date?: string; calendar?: string }>;
 };
 
 // Parse a `?date=YYYY-MM-DD` query param into a UTC Date. Returns undefined
@@ -47,17 +47,23 @@ function todayIso(): string {
 }
 
 export default async function DailyPage({ searchParams }: DailyPageProps) {
-  const { date: rawDate } = await searchParams;
+  const { date: rawDate, calendar: rawCalendar } = await searchParams;
   const date = parseDateParam(rawDate);
+  // Honor an explicit ?calendar=old (Julian); default to New Calendar. Passing
+  // the option (instead of letting every composer silently default to "new")
+  // keeps this secondary web surface consistent with the mobile Daily tab.
+  const calendarOptions = {
+    calendarSystem: rawCalendar === "old" ? ("old" as const) : ("new" as const),
+  };
 
-  const daily = getDailyCommemoration(date);
+  const daily = getDailyCommemoration(date, calendarOptions);
   // Match the composer's "today" idiom: local Y/M/D at UTC midnight.
   const now = new Date();
   const todayUtc = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
-  const fastDetail = composeDailyFastDetail(date ?? todayUtc);
+  const fastDetail = composeDailyFastDetail(date ?? todayUtc, calendarOptions);
   const saints = getPeopleByIds(daily.saintIds);
-  const readings = getDailyReadings(date);
-  const hymns = getDailyHymns(date);
+  const readings = getDailyReadings(date, calendarOptions);
+  const hymns = getDailyHymns(date, calendarOptions);
   const translationSlug = getPrimaryTranslation().slug;
   const primaryIcon = getPrimaryIconForDay(daily, saints);
   const saintIcons = new Map(

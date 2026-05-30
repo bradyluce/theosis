@@ -71,7 +71,7 @@ function buildBody(
 // Parse the server's 409 body and pull out the latest version. The
 // shape is { error: "version_mismatch", current: { version: N, ... } }.
 // Returns null if the error message can't be parsed.
-function extractCurrentVersion(err: unknown): number | null {
+export function extractCurrentVersion(err: unknown): number | null {
   if (!(err instanceof Error)) return null;
   const message = err.message ?? "";
   // The Theosis client throws errors of the form

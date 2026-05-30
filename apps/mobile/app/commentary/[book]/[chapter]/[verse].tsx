@@ -55,6 +55,24 @@ function bookLabel(slug: string) {
   );
 }
 
+// Contributors outside the Eastern Orthodox tradition carry a `traditions`
+// tag (set by scripts/migrate/father-traditions). The verse modal badges them
+// so post-schism Latin and non-Chalcedonian authors are not presented as
+// undifferentiated "Fathers." (Condemned heresiarchs are stripped from the
+// data entirely, so they never reach this screen.)
+const TRADITION_BADGES: Record<string, string> = {
+  "roman-catholic": "Roman Catholic",
+  "non-chalcedonian": "Non-Chalcedonian",
+  "council-condemned": "Condemned by Council",
+};
+function traditionBadgeLabel(traditions?: string[]): string | null {
+  if (!traditions) return null;
+  for (const tradition of traditions) {
+    if (TRADITION_BADGES[tradition]) return TRADITION_BADGES[tradition];
+  }
+  return null;
+}
+
 export default function CommentaryModal() {
   const params = useLocalSearchParams<{
     book: string;
@@ -90,7 +108,7 @@ export default function CommentaryModal() {
   const lookups = useMemo(() => {
     const peopleById = new Map<
       string,
-      { name: string; honorific?: string; slug: string }
+      { name: string; honorific?: string; slug: string; traditions?: string[] }
     >();
     const worksById = new Map<
       string,
@@ -102,6 +120,7 @@ export default function CommentaryModal() {
           name: person.name,
           honorific: person.honorific,
           slug: person.slug,
+          traditions: person.traditions,
         });
       }
       for (const work of catalogQuery.data.works) {
@@ -355,6 +374,7 @@ export default function CommentaryModal() {
               ? `${person.honorific} ${person.name.split(",")[0]}`
               : person.name.split(",")[0]
             : group.personId;
+          const traditionBadge = traditionBadgeLabel(person?.traditions);
           return (
             <View key={group.personId} style={styles.authorBlock}>
               <Pressable
@@ -371,7 +391,12 @@ export default function CommentaryModal() {
                 }, ${isOpen ? "expanded" : "collapsed"}`}
               >
                 <View style={styles.authorHeaderText}>
-                  <Text style={styles.authorName}>{personLabel}</Text>
+                  <View style={styles.authorNameRow}>
+                    <Text style={styles.authorName}>{personLabel}</Text>
+                    {traditionBadge ? (
+                      <Text style={styles.traditionBadge}>{traditionBadge}</Text>
+                    ) : null}
+                  </View>
                   <Text style={styles.authorCount}>
                     {group.entries.length}{" "}
                     {group.entries.length === 1 ? "entry" : "entries"}
@@ -571,12 +596,34 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(212, 168, 87, 0.04)",
   },
   authorHeaderText: { flex: 1, gap: 2 },
+  authorNameRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    flexWrap: "wrap",
+    gap: spacing.sm,
+  },
   authorName: {
     fontFamily: fonts.serif,
     fontSize: 18,
     color: colors.ink,
     letterSpacing: -0.2,
     lineHeight: 22,
+  },
+  // Badge for contributors outside the Eastern Orthodox tradition (Roman
+  // Catholic / non-Chalcedonian / council-condemned) so they are not shown as
+  // undifferentiated "Fathers."
+  traditionBadge: {
+    fontFamily: fonts.sans,
+    fontSize: 9,
+    fontWeight: "700",
+    letterSpacing: 0.8,
+    textTransform: "uppercase",
+    color: colors.oxbloodInk,
+    backgroundColor: colors.oxbloodSoft,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+    overflow: "hidden",
   },
   authorCount: {
     fontFamily: fonts.serifItalic,

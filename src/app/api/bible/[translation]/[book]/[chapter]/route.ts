@@ -5,6 +5,7 @@ import { GetObjectCommand } from "@aws-sdk/client-s3";
 import { storageClient, STORAGE_BUCKET } from "@/lib/storage/s3";
 import type { NormalizedChapterFile } from "@/lib/bible/server-store";
 import { getNormalizedChapter } from "@/lib/bible/server-store";
+import { isSafeSlug } from "@/lib/api/safe-segment";
 
 const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
 
@@ -41,7 +42,7 @@ export async function GET(
   const { translation, book, chapter } = await context.params;
   const chapterNumber = Number.parseInt(chapter, 10);
 
-  if (!translation || !book || Number.isNaN(chapterNumber)) {
+  if (!isSafeSlug(translation) || !isSafeSlug(book) || Number.isNaN(chapterNumber)) {
     return NextResponse.json({ error: "Invalid parameters" }, { status: 400 });
   }
 

@@ -87,6 +87,14 @@ export type SourceRecord = {
   url: string;
   note: string;
   isSeeded: boolean;
+  // Structured provenance (all optional for back-compat with existing records).
+  // Prefer these over free-text `note` for anything queryable. `license` is an
+  // SPDX-style id or short phrase ("public-domain", "CC0", "reference-only");
+  // `dateFetched` is an ISO date; `jurisdiction` names the church body a
+  // liturgical source reflects (e.g. "oca") when that matters.
+  license?: string;
+  dateFetched?: string;
+  jurisdiction?: string;
 };
 
 export type TopicTag = {
@@ -485,6 +493,12 @@ export type DailyCommemoration = {
   hymnIds: string[];
   lifeExcerpt: string;
   sourceId: string;
+  // Human label for the calendar system (and jurisdiction) this day was
+  // composed for — e.g. "New Calendar (Revised Julian)" or
+  // "Old Calendar (Julian) · ROCOR". Surfaced on the Daily screen so the
+  // commemoration is never silently presented as jurisdiction-neutral "the"
+  // Orthodox calendar (fixed-feast dates differ by 13 days between systems).
+  calendarLabel?: string;
   // Primary icon for the day — usually a feast icon when feastLabel is set,
   // or the lead saint's icon otherwise. The reader page may also show
   // per-saint icons via DailyCommemorationItem.iconId / Person.iconId.
