@@ -180,13 +180,17 @@ function useDebounced<T>(value: T, delayMs: number): T {
   return debounced;
 }
 
+// Display order for the grouped search results. Works lead, then people
+// (Fathers & Saints), then the secondary axes, and commentary is intentionally
+// pinned to the bottom — it's the noisiest, lowest-signal group when you're
+// trying to find a work or a person.
 const SEARCH_KIND_ORDER: SearchResultKind[] = [
-  "verse",
-  "person",
-  "commentary",
   "work",
+  "person",
+  "verse",
   "topic",
   "daily",
+  "commentary",
 ];
 
 const SEARCH_KIND_LABELS: Record<SearchResultKind, string> = {
