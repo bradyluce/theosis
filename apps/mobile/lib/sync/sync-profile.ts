@@ -25,6 +25,9 @@ function buildBody(
   if (patch.patronSaintSlug !== undefined) {
     body.patronSaintSlug = patch.patronSaintSlug || null;
   }
+  if (patch.birthday !== undefined) {
+    body.birthday = patch.birthday || null;
+  }
   if (patch.parish !== undefined) {
     body.parish = patch.parish || null;
   }

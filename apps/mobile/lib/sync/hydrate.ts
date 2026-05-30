@@ -70,6 +70,7 @@ function buildClientSnapshot(prefs: AppPreferences): ClientSnapshotDto {
       calendarPreference:
         p.calendarSystem === "julian" ? "old-calendar" : "new-calendar",
       patronSaintSlug: p.patronSaintSlug ?? null,
+      birthday: p.birthday ?? null,
       // Every preference the user can set during onboarding or in
       // Settings ships here so the server has the truth on first
       // import. Omitting any of these means the user fills it in,
@@ -148,6 +149,7 @@ async function adoptServerSnapshot(snapshot: MeSnapshotDto): Promise<void> {
   const nextProfile: ProfilePrefs = {
     ...(current.profile ?? {}),
     patronSaintSlug: p.patronSaintSlug ?? undefined,
+    birthday: p.birthday ?? undefined,
     calendarSystem: p.calendarPreference === "old-calendar" ? "julian" : "new",
     parish: p.parish ?? undefined,
     status:

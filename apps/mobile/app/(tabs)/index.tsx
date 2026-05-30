@@ -33,9 +33,11 @@ import {
   SectionHeader,
   Wordmark,
 } from "@/components/theosis/primitives";
+import { CelebrationBanner } from "@/components/theosis/celebration-banner";
 import { FastBanner } from "@/components/theosis/fast-banner";
 import { ProfileDrawer } from "@/components/theosis/profile-drawer";
-import { usePatronIcon } from "@/lib/use-patron-icon";
+import { useCelebration } from "@/lib/celebration";
+import { usePatronPerson } from "@/lib/use-patron-icon";
 import {
   colors,
   elevation,
@@ -195,7 +197,8 @@ export default function DailyScreen() {
   // they retain their slot; just filtered out of the rendered list.
   const [hiddenCards, setHiddenCards] = useState<DailyCardKey[]>([]);
   const [profile, setProfile] = useState<ProfilePrefs>({});
-  const patronIcon = usePatronIcon(profile.patronSaintSlug);
+  const patron = usePatronPerson(profile.patronSaintSlug);
+  const patronIcon = patron?.icon ?? null;
   const [streak, setStreak] = useState(0);
   const [savedCount, setSavedCount] = useState(0);
   const [reorderHinted, setReorderHinted] = useState(false);
@@ -337,6 +340,16 @@ export default function DailyScreen() {
   );
 
   const hasFeast = Boolean(data?.daily.feastLabel || data?.primaryIcon);
+
+  // Name day (patron's feast) / birthday for the day currently shown. Keys
+  // off the displayed date, so it also surfaces when browsing to that date.
+  const shownIso = data?.daily.isoDate ?? selectedIso ?? todayIso();
+  const celebration = useCelebration({
+    dateIso: shownIso,
+    patron,
+    daily: data,
+    birthday: profile.birthday,
+  });
 
   const renderCard = useCallback(
     ({ item, drag, isActive }: RenderItemParams<DailyCardKey>) => {
@@ -560,6 +573,21 @@ export default function DailyScreen() {
                 setFastCollapsed(next);
                 void setFastBannerCollapsed(next);
               }}
+            />
+          </View>
+        ) : null}
+
+        {celebration.isNameDay || celebration.isBirthday ? (
+          <View style={styles.celebrationRow}>
+            <CelebrationBanner
+              isNameDay={celebration.isNameDay}
+              isBirthday={celebration.isBirthday}
+              patronName={celebration.patronName}
+              onPress={
+                celebration.isNameDay && profile.patronSaintSlug
+                  ? () => router.push(`/people/${profile.patronSaintSlug}`)
+                  : undefined
+              }
             />
           </View>
         ) : null}
@@ -897,6 +925,59 @@ function ReadingRow({
   );
 }
 
+// A single "also commemorated" row. Shows the saint's icon as a small portrait
+// thumbnail when one exists (linkable saints with a curated icon), otherwise
+// the quiet bullet. Shared by the feast and no-feast commemoration cards.
+function AlsoCommemorationRow({
+  item,
+  iconRef,
+  linkedSaint,
+  showChevron,
+}: {
+  item: DailyData["daily"]["additionalCommemorations"][number];
+  iconRef: DailyData["saintIcons"][string] | undefined;
+  linkedSaint: DailyData["saints"][number] | undefined;
+  showChevron: boolean;
+}) {
+  return (
+    <Pressable
+      onPress={
+        linkedSaint ? () => router.push(`/people/${linkedSaint.slug}`) : undefined
+      }
+      style={({ pressed }) => [
+        styles.alsoRow,
+        pressed && linkedSaint && { opacity: 0.6 },
+      ]}
+    >
+      {iconRef ? (
+        <Image
+          source={{ uri: iconRef.src }}
+          style={styles.alsoIcon}
+          contentFit="cover"
+          transition={160}
+          accessibilityLabel={iconRef.alt}
+        />
+      ) : (
+        <View
+          style={[
+            styles.alsoBullet,
+            linkedSaint && { backgroundColor: colors.accent },
+          ]}
+        />
+      )}
+      <View style={{ flex: 1 }}>
+        <Text style={styles.alsoName}>{item.name}</Text>
+        {item.summary ? (
+          <Text style={styles.alsoSummary}>{item.summary}</Text>
+        ) : null}
+      </View>
+      {showChevron && linkedSaint ? (
+        <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+      ) : null}
+    </Pressable>
+  );
+}
+
 function CommemorationCard({ data }: { data: DailyData }) {
   if (data.daily.additionalCommemorations.length === 0) {
     return null;
@@ -905,45 +986,19 @@ function CommemorationCard({ data }: { data: DailyData }) {
     <Card>
       <SectionHeader eyebrow="Synaxis" title="Also commemorated" rule />
       <View style={styles.alsoList}>
-        {data.daily.additionalCommemorations.map((item, index) => {
-          const linkedSaint = item.saintId
-            ? data.saints.find((s) => s.id === item.saintId)
-            : undefined;
-          return (
-            <Pressable
-              key={`${item.name}-${index}`}
-              onPress={
-                linkedSaint
-                  ? () => router.push(`/people/${linkedSaint.slug}`)
-                  : undefined
-              }
-              style={({ pressed }) => [
-                styles.alsoRow,
-                pressed && linkedSaint && { opacity: 0.6 },
-              ]}
-            >
-              <View
-                style={[
-                  styles.alsoBullet,
-                  linkedSaint && { backgroundColor: colors.accent },
-                ]}
-              />
-              <View style={{ flex: 1 }}>
-                <Text style={styles.alsoName}>{item.name}</Text>
-                {item.summary ? (
-                  <Text style={styles.alsoSummary}>{item.summary}</Text>
-                ) : null}
-              </View>
-              {linkedSaint ? (
-                <Feather
-                  name="chevron-right"
-                  size={16}
-                  color={colors.inkSoft}
-                />
-              ) : null}
-            </Pressable>
-          );
-        })}
+        {data.daily.additionalCommemorations.map((item, index) => (
+          <AlsoCommemorationRow
+            key={`${item.name}-${index}`}
+            item={item}
+            iconRef={item.saintId ? data.saintIcons[item.saintId] : null}
+            linkedSaint={
+              item.saintId
+                ? data.saints.find((s) => s.id === item.saintId)
+                : undefined
+            }
+            showChevron
+          />
+        ))}
       </View>
     </Card>
   );
@@ -973,38 +1028,19 @@ function NoFeastCommemorationCard({ data }: { data: DailyData }) {
         <>
           <GiltRule style={{ marginVertical: spacing.lg }} />
           <View style={styles.alsoList}>
-            {data.daily.additionalCommemorations.slice(0, 4).map((item, index) => {
-              const linkedSaint = item.saintId
-                ? data.saints.find((s) => s.id === item.saintId)
-                : undefined;
-              return (
-                <Pressable
-                  key={`${item.name}-${index}`}
-                  onPress={
-                    linkedSaint
-                      ? () => router.push(`/people/${linkedSaint.slug}`)
-                      : undefined
-                  }
-                  style={({ pressed }) => [
-                    styles.alsoRow,
-                    pressed && linkedSaint && { opacity: 0.6 },
-                  ]}
-                >
-                  <View
-                    style={[
-                      styles.alsoBullet,
-                      linkedSaint && { backgroundColor: colors.accent },
-                    ]}
-                  />
-                  <View style={{ flex: 1 }}>
-                    <Text style={styles.alsoName}>{item.name}</Text>
-                    {item.summary ? (
-                      <Text style={styles.alsoSummary}>{item.summary}</Text>
-                    ) : null}
-                  </View>
-                </Pressable>
-              );
-            })}
+            {data.daily.additionalCommemorations.slice(0, 4).map((item, index) => (
+              <AlsoCommemorationRow
+                key={`${item.name}-${index}`}
+                item={item}
+                iconRef={item.saintId ? data.saintIcons[item.saintId] : null}
+                linkedSaint={
+                  item.saintId
+                    ? data.saints.find((s) => s.id === item.saintId)
+                    : undefined
+                }
+                showChevron={false}
+              />
+            ))}
           </View>
         </>
       ) : null}
@@ -1423,6 +1459,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.xl,
     paddingBottom: spacing.md,
   },
+  // Celebration banner (name day / birthday) — full-width card under the
+  // fast status, flush with the same horizontal inset.
+  celebrationRow: {
+    paddingHorizontal: spacing.xl,
+    paddingBottom: spacing.md,
+  },
   heroIconWrap: {
     alignItems: "center",
     justifyContent: "center",
@@ -1533,6 +1575,14 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     backgroundColor: colors.inkSoft,
     marginTop: 8,
+  },
+  alsoIcon: {
+    width: 34,
+    height: 42,
+    borderRadius: 3,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    backgroundColor: colors.surfaceStrong,
   },
   alsoName: {
     fontFamily: fonts.serif,

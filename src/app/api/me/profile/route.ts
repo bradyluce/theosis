@@ -23,6 +23,7 @@ function rowToDto(row: DbUserProfile) {
     parish: row.parish,
     parishId: row.parishId,
     location: row.location,
+    birthday: row.birthday,
     patronSaintSlug: row.patronSaintSlug,
     preferredFatherIds: row.preferredFatherIds,
     hiddenFatherIds: row.hiddenFatherIds,
@@ -81,6 +82,7 @@ export const PATCH = withUserResponse(async (dbUser, req) => {
     if (input.parish !== undefined) updates.parish = input.parish;
     if (input.parishId !== undefined) updates.parishId = input.parishId;
     if (input.location !== undefined) updates.location = input.location;
+    if (input.birthday !== undefined) updates.birthday = input.birthday;
     if (input.patronSaintSlug !== undefined)
       updates.patronSaintSlug = input.patronSaintSlug;
     if (input.preferredFatherIds !== undefined)

@@ -96,6 +96,7 @@ export async function importSnapshot(opts: {
       if (p.parish !== undefined) updates.parish = p.parish;
       if (p.parishId !== undefined) updates.parishId = p.parishId;
       if (p.location !== undefined) updates.location = p.location;
+      if (p.birthday !== undefined) updates.birthday = p.birthday;
       if (p.patronSaintSlug !== undefined)
         updates.patronSaintSlug = p.patronSaintSlug;
       if (p.preferredFatherIds !== undefined)

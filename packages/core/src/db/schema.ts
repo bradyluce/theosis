@@ -156,6 +156,9 @@ export const userProfiles = pgTable("user_profiles", {
   parish: text("parish"),
   parishId: text("parish_id"),
   location: text("location"),
+  // ISO "YYYY-MM-DD". Only month/day is surfaced (the Daily birthday banner);
+  // the stored year is never displayed.
+  birthday: text("birthday"),
 
   // Patron + father preferences
   patronSaintSlug: text("patron_saint_slug"),

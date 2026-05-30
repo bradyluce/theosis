@@ -77,6 +77,8 @@ export const userProfileDto = z.object({
   parish: z.string().nullable(),
   parishId: z.string().nullable(),
   location: z.string().nullable(),
+  // ISO "YYYY-MM-DD" or null. Surfaced as month/day only on the client.
+  birthday: z.string().nullable(),
   patronSaintSlug: z.string().nullable(),
   preferredFatherIds: z.array(z.string()),
   hiddenFatherIds: z.array(z.string()),

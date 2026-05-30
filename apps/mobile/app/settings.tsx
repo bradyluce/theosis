@@ -8,6 +8,9 @@
 
 import { SignedIn, SignedOut, useAuth, useClerk, useUser } from "@clerk/clerk-expo";
 import Feather from "@expo/vector-icons/Feather";
+import DateTimePicker, {
+  type DateTimePickerEvent,
+} from "@react-native-community/datetimepicker";
 import { useQuery } from "@tanstack/react-query";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
@@ -16,6 +19,7 @@ import { useCallback, useState } from "react";
 import {
   Alert,
   Linking,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -172,6 +176,11 @@ export default function SettingsScreen() {
             />
 
             <ParishField parish={prefs.parish} />
+
+            <BirthdayField
+              birthday={prefs.birthday}
+              onChange={(v) => update({ birthday: v })}
+            />
           </View>
         </Card>
 
@@ -874,6 +883,120 @@ function ParishField({ parish }: { parish: string | undefined }) {
         </View>
         <Feather name="chevron-right" size={16} color={colors.inkSoft} />
       </Pressable>
+    </FieldGroup>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Birthday field — tap-to-toggle date picker. Stored as ISO "YYYY-MM-DD";
+// only the month + day are shown (and used for the Daily celebration banner),
+// never the year.
+// ---------------------------------------------------------------------------
+
+const MONTH_NAMES = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+// Date → "YYYY-MM-DD" from local parts (toISOString would shift to UTC and
+// can roll the date back a day for users west of UTC).
+function toIsoDate(d: Date): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+// "YYYY-MM-DD" → "June 15" (no year). Returns null for empty / malformed.
+function formatMonthDay(iso: string | undefined): string | null {
+  if (!iso) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  if (!m) return null;
+  const name = MONTH_NAMES[Number(m[2]) - 1];
+  if (!name) return null;
+  return `${name} ${Number(m[3])}`;
+}
+
+function BirthdayField({
+  birthday,
+  onChange,
+}: {
+  birthday: string | undefined;
+  // "" clears it (mirrors the patron-slug convention so the sync layer
+  // sends null rather than skipping the field).
+  onChange: (v: string) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const label = formatMonthDay(birthday);
+
+  const onPick = (event: DateTimePickerEvent, picked?: Date) => {
+    // Android closes the picker itself and fires "set" / "dismissed"; iOS
+    // keeps the inline picker mounted until we toggle it closed.
+    if (Platform.OS !== "ios") setOpen(false);
+    if (event.type === "set" && picked) {
+      onChange(toIsoDate(picked));
+    }
+  };
+
+  return (
+    <FieldGroup label="Birthday">
+      <Pressable
+        onPress={() => setOpen((v) => !v)}
+        style={({ pressed }) => [
+          styles.tile,
+          pressed && { backgroundColor: colors.surfaceStrong },
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel="Set your birthday"
+      >
+        <View style={styles.tileMain}>
+          <Text style={styles.tileLabel}>{label ?? "Add your birthday"}</Text>
+          <Text style={styles.tileDescription}>
+            {label
+              ? "Celebrated on your Daily page each year. Tap to change."
+              : "We'll greet you on your Daily page each year."}
+          </Text>
+        </View>
+        {label ? (
+          <Pressable
+            onPress={() => {
+              setOpen(false);
+              onChange("");
+            }}
+            hitSlop={10}
+            accessibilityRole="button"
+            accessibilityLabel="Remove birthday"
+          >
+            <Feather name="x" size={16} color={colors.inkSoft} />
+          </Pressable>
+        ) : (
+          <Feather name="gift" size={16} color={colors.inkSoft} />
+        )}
+      </Pressable>
+      {open ? (
+        <DateTimePicker
+          value={
+            birthday ? new Date(`${birthday}T00:00:00`) : new Date(2000, 0, 1)
+          }
+          mode="date"
+          display={Platform.OS === "ios" ? "inline" : "default"}
+          onChange={onPick}
+          textColor={colors.ink}
+          accentColor={colors.accent}
+          minimumDate={new Date(1900, 0, 1)}
+          maximumDate={new Date()}
+        />
+      ) : null}
     </FieldGroup>
   );
 }

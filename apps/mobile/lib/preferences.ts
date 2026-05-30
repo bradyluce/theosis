@@ -66,6 +66,9 @@ export type ProfilePrefs = {
   status?: "christian" | "catechumen" | "inquirer";
   parish?: string;
   patronSaintSlug?: string;
+  // Birthday as ISO "YYYY-MM-DD". Only the month/day drives the Daily
+  // celebration banner; the year is stored but never shown.
+  birthday?: string;
   calendarSystem?: "new" | "julian";
   // Legacy 3-radio commentary ranking. Still respected when the user
   // hasn't customized the new per-Father picker, but the picker's

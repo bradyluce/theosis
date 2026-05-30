@@ -38,6 +38,7 @@ function profileRowToDto(
     parish: row.parish,
     parishId: row.parishId,
     location: row.location,
+    birthday: row.birthday,
     patronSaintSlug: row.patronSaintSlug,
     preferredFatherIds: row.preferredFatherIds,
     hiddenFatherIds: row.hiddenFatherIds,
