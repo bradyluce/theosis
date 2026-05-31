@@ -1,5 +1,5 @@
-// Sync content/normalized/{commentary,library}/ → s3://theosis-content/
-// {commentary,library}/ with aws-s3-sync-equivalent semantics: only upload
+// Sync content/normalized/{bibles,commentary,library}/ → s3://theosis-content/
+// {bibles,commentary,library}/ with aws-s3-sync-equivalent semantics: only upload
 // new or changed files (compare local MD5 vs remote ETag). Idempotent — a
 // second run on an unchanged tree uploads nothing.
 //
@@ -31,13 +31,22 @@ import {
   S3Client,
 } from "@aws-sdk/client-s3";
 
-const REGION = process.env.BIBLE_S3_REGION ?? process.env.AWS_REGION ?? "us-east-1";
-const BUCKET = process.env.BIBLE_S3_BUCKET ?? "theosis-content";
+// Use `||` not `??`: when these are sourced from a pulled Vercel env they
+// arrive as empty strings (not undefined), and `??` would keep the empty
+// value — crashing the S3 client ("Region is missing") or pointing at an
+// empty bucket. `||` falls back through to the defaults the API routes use.
+const REGION = process.env.BIBLE_S3_REGION || process.env.AWS_REGION || "us-east-1";
+const BUCKET = process.env.BIBLE_S3_BUCKET || "theosis-content";
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes("--dry-run");
 
+// Bibles included: the bible chapter API route is S3-first (key
+// bibles/<tr>/<book>/<ch>.json), so verse content edits must be pushed to R2
+// or they never reach the app. (The bible CATALOG route stays local-first by
+// design, so this never overrides fresh local translation listings.)
 const SYNC_TARGETS: Array<{ localDir: string; s3Prefix: string }> = [
+  { localDir: "content/normalized/bibles", s3Prefix: "bibles" },
   { localDir: "content/normalized/commentary", s3Prefix: "commentary" },
   { localDir: "content/normalized/library", s3Prefix: "library" },
 ];
@@ -54,6 +63,15 @@ const ENDPOINT = process.env.BIBLE_S3_ENDPOINT;
 const s3 = new S3Client({
   region: REGION,
   ...(ENDPOINT ? { endpoint: ENDPOINT, forcePathStyle: true } : {}),
+  // Cloudflare R2 rejects requests that carry more than one checksum. Newer
+  // AWS SDK v3 versions add a default CRC32 checksum to every PutObject via
+  // the flexible-checksums middleware; combined with our explicit
+  // Content-MD5 header that yields R2's "You can only specify one non-default
+  // checksum at a time" (HTTP 400) and every upload fails. WHEN_REQUIRED
+  // stops the SDK from adding its own checksum unless the operation demands
+  // one, leaving Content-MD5 as the sole integrity check.
+  requestChecksumCalculation: "WHEN_REQUIRED",
+  responseChecksumValidation: "WHEN_REQUIRED",
 });
 
 if (ENDPOINT) {
