@@ -623,6 +623,91 @@ export type ParishCatalog = {
   parishes: ParishCatalogEntry[];
 };
 
+// --- Monasteries -----------------------------------------------------------
+// Monastic communities, sourced from the Assembly of Bishops monasteries
+// directory. Mirrors the Parish shape (same near-me query + by-state slice
+// pattern) with monastic-specific additions: `communityType` (the Assembly
+// splits its listings into Male / Female communities) and optional
+// `superior` (abbot/abbess) for when a richer source fills it in.
+
+// Men's, women's, or mixed/other community. Derived from the Assembly's
+// "Male Monastic Communities" / "Female Monastic Communities" section split.
+export type MonasteryCommunityType = "male" | "female" | "mixed";
+
+export type MonasteryAddress = {
+  street: string;
+  city: string;
+  // Two-letter US state code, two-letter Canadian province code, or
+  // ISO 3166-2 subdivision code for Mexico. The directory is US-first.
+  state: string;
+  zip: string;
+  // ISO 3166-1 alpha-2 country code. Defaults to "US" when absent.
+  country: "US" | "CA" | "MX";
+};
+
+export type Monastery = {
+  // Stable id: "<jurisdiction>:<state>-<slug>"
+  // e.g. "goa:az-st-anthony-monastery-florence".
+  id: string;
+  slug: string;
+  name: string;
+  // Canonical jurisdiction the community belongs to. Reuses the parish
+  // Jurisdiction axis so the same ethnic/jurisdictional filter works.
+  jurisdiction: Jurisdiction;
+  // Display label for the jurisdiction, denormalized for cheap UI.
+  jurisdictionLabel: string;
+  // Men's / women's / mixed community.
+  communityType: MonasteryCommunityType;
+  // Optional diocese / metropolis within the jurisdiction.
+  diocese?: string;
+  address: MonasteryAddress;
+  // Coordinates. Always present — communities without geocodes are dropped
+  // at the normalize step (we can't serve them from /api/monasteries/near).
+  geo: { lat: number; lng: number };
+  contact: {
+    phone?: string;
+    email?: string;
+    website?: string;
+  };
+  // Abbot / abbess when known. The Assembly grid doesn't expose it; a
+  // richer source or hand-curation can fill it in later.
+  superior?: string;
+  // Patron / dedication (e.g. "Holy Transfiguration") when known.
+  dedication?: string;
+  foundedYear?: number;
+  // Source attribution — list of source IDs that contributed to this
+  // record (e.g. ["assembly-of-bishops"]).
+  sources: string[];
+  // ISO timestamp of the latest scrape that touched this record.
+  fetchedAt: string;
+};
+
+// Compact entry used in catalog.json — drops free-form prose, keeps the
+// minimum needed for "find a monastery near me" queries and list rendering.
+// The full Monastery record lives in by-state/<state>/<slug>.json.
+export type MonasteryCatalogEntry = {
+  id: string;
+  slug: string;
+  name: string;
+  jurisdiction: Jurisdiction;
+  jurisdictionLabel: string;
+  communityType: MonasteryCommunityType;
+  city: string;
+  state: string;
+  country: "US" | "CA" | "MX";
+  lat: number;
+  lng: number;
+};
+
+export type MonasteryCatalog = {
+  version: 1;
+  generatedAt: string;
+  monasteryCount: number;
+  jurisdictions: { code: Jurisdiction; label: string; count: number }[];
+  communityTypes: { type: MonasteryCommunityType; count: number }[];
+  monasteries: MonasteryCatalogEntry[];
+};
+
 // --- Fast detail -----------------------------------------------------------
 // Per-day fast snapshot computed server-side and shipped to clients. Pairs
 // with DailyCommemoration.fastLabel — `fastLabel` is a short string for

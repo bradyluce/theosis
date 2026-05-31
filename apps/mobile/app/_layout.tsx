@@ -3,6 +3,7 @@ import { ThemeProvider } from '@react-navigation/native';
 import { QueryClientProvider } from '@tanstack/react-query';
 import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
+import * as Notifications from 'expo-notifications';
 import { Stack, router } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 import * as SplashScreen from 'expo-splash-screen';
@@ -15,7 +16,11 @@ import 'react-native-reanimated';
 import { ErrorBoundary } from '@/components/theosis/error-boundary';
 import { navigationTheme } from '@/constants/theosis-theme';
 import { setActiveTokenGetter } from '@/lib/auth';
-import { getOnboardingStatus } from '@/lib/preferences';
+import { getNotificationPrefs, getOnboardingStatus } from '@/lib/preferences';
+import {
+  configureNotificationHandler,
+  rescheduleAll,
+} from '@/lib/notifications';
 import { queryClient } from '@/lib/query-client';
 import { hydrateAndClaim } from '@/lib/sync/hydrate';
 import { drainQueue } from '@/lib/sync/queue';
@@ -98,6 +103,11 @@ const FONT_ASSETS = {
 // the moment Newsreader becomes available — distracting on cold start.
 SplashScreen.preventAutoHideAsync();
 
+// Register the foreground notification handler once, at module load. It only
+// sets a handler (how a notification renders while the app is open) — no
+// permission prompt, no scheduling.
+configureNotificationHandler();
+
 export const unstable_settings = {
   anchor: '(tabs)',
 };
@@ -155,6 +165,44 @@ export default function RootLayout() {
     };
   }, []);
 
+  // Notification tap → bring the user to the Daily tab.
+  useEffect(() => {
+    let sub: { remove: () => void } | undefined;
+    try {
+      sub = Notifications.addNotificationResponseReceivedListener(() => {
+        try {
+          router.navigate('/');
+        } catch {
+          // Navigator not ready / route missing — ignore.
+        }
+      });
+    } catch (err) {
+      // Native module absent on a pre-notifications OTA binary — skip quietly.
+      console.warn('[notifications] response listener skipped:', err);
+    }
+    return () => sub?.remove();
+  }, []);
+
+  // Lay down the on-device notification schedule once per day on cold start.
+  // Guarded on scheduledThrough so we don't refetch the daily window on every
+  // launch; rescheduleAll() itself re-checks the enabled flag + OS permission
+  // and is a no-op when notifications are off.
+  useEffect(() => {
+    if (!splashReady) return;
+    let canceled = false;
+    void (async () => {
+      const prefs = await getNotificationPrefs();
+      if (canceled || !prefs.enabled) return;
+      const now = new Date();
+      const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+      if (prefs.scheduledThrough === today) return;
+      await rescheduleAll();
+    })();
+    return () => {
+      canceled = true;
+    };
+  }, [splashReady]);
+
   if (!splashReady) {
     // Returning null keeps the splash screen visible (we deferred autohide)
     // until fonts load OR the 4s timeout above fires — so a corrupted font
@@ -193,6 +241,8 @@ export default function RootLayout() {
             options={{ presentation: "modal", headerShown: true }}
           />
           <Stack.Screen name="settings" />
+          <Stack.Screen name="notifications" />
+          <Stack.Screen name="ask-fathers" />
           {/* Phase 3 onboarding flow. Each step is its own file under
               app/onboarding/; the index screen redirects to the user's
               current step. Header hidden — the OnboardingShell renders

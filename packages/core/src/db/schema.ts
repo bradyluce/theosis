@@ -25,6 +25,7 @@ import {
   timestamp,
   uniqueIndex,
   uuid,
+  vector,
 } from "drizzle-orm/pg-core";
 
 // ---------------------------------------------------------------------------
@@ -486,6 +487,41 @@ export const contentCompletions = pgTable(
 );
 
 // ---------------------------------------------------------------------------
+// Content embeddings — semantic-search vectors for "Ask the Fathers"
+// ---------------------------------------------------------------------------
+
+// Derived index (NOT user data): one row per searchable patristic snippet,
+// built by scripts/search/build-embeddings.ts from the same corpus the keyword
+// index walks. `embedding` is a 384-dim BGE-small vector; the HNSW cosine index
+// makes nearest-neighbour lookup fast. Display fields (title/href/kicker/
+// snippet) are denormalized so a single vector query returns everything a
+// result row needs — no second read of the content tree.
+//
+// The migration that creates this table must first run
+//   CREATE EXTENSION IF NOT EXISTS vector;
+// drizzle-kit doesn't emit that, so it's hand-added to the generated migration.
+export const contentEmbeddings = pgTable(
+  "content_embeddings",
+  {
+    // Stable doc id (e.g. "commentary-deep-<entryId>") — matches the keyword
+    // index ids so the two systems can dedupe if ever merged.
+    id: text("id").primaryKey(),
+    kind: text("kind").notNull(),
+    title: text("title").notNull(),
+    href: text("href").notNull(),
+    kicker: text("kicker").notNull(),
+    snippet: text("snippet").notNull(),
+    embedding: vector("embedding", { dimensions: 384 }).notNull(),
+  },
+  (t) => [
+    index("content_embeddings_embedding_hnsw").using(
+      "hnsw",
+      t.embedding.op("vector_cosine_ops"),
+    ),
+  ],
+);
+
+// ---------------------------------------------------------------------------
 // Type exports (for Drizzle-aware code; safe to import in server code only)
 // ---------------------------------------------------------------------------
 
@@ -501,3 +537,4 @@ export type DbReadingHistoryEntry = typeof readingHistory.$inferSelect;
 export type DbPrayerRuleItem = typeof prayerRuleItems.$inferSelect;
 export type DbActivityDay = typeof activityDays.$inferSelect;
 export type DbContentCompletion = typeof contentCompletions.$inferSelect;
+export type DbContentEmbedding = typeof contentEmbeddings.$inferSelect;

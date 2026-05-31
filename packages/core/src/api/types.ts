@@ -179,6 +179,16 @@ export type SearchResponse = {
   results: SearchResult[];
 };
 
+// --- /api/search/fathers ---------------------------------------------------
+
+// "Ask the Fathers" — semantic (embedding) retrieval over the patristic
+// corpus. Retrieval-only: results are real catalogued writings ranked by
+// meaning similarity; there is no generated answer. Reuses SearchResult so the
+// mobile result rows render identically to keyword search.
+export type FathersSearchResponse = {
+  results: SearchResult[];
+};
+
 // --- /api/topics -----------------------------------------------------------
 
 // Lightweight summary used by the topics index. Excludes the full body and

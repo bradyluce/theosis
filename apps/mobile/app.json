@@ -113,7 +113,15 @@
           "isAndroidBackgroundLocationEnabled": false
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/android-icon-monochrome.png",
+          "color": "#D4A857",
+          "defaultChannel": "daily"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

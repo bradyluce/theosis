@@ -484,6 +484,29 @@ export default function YouScreen() {
           <Feather name="chevron-right" size={16} color={colors.inkSoft} />
         </Pressable>
 
+        {/* Find-a-monastery card — same shape as the parish card, routes to
+            the monasteries near-me screen (jurisdiction + men's/women's). */}
+        <Pressable
+          onPress={() => router.push("/monasteries" as never)}
+          style={({ pressed }) => [
+            styles.findParishCard,
+            pressed && { opacity: 0.85 },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel="Find an Orthodox monastery near you"
+        >
+          <View style={styles.findParishIcon}>
+            <Feather name="compass" size={20} color={colors.accent} />
+          </View>
+          <View style={styles.findParishText}>
+            <Text style={styles.findParishLabel}>Find a monastery near you</Text>
+            <Text style={styles.findParishSub}>
+              Search Orthodox monasteries by jurisdiction &amp; community
+            </Text>
+          </View>
+          <Feather name="chevron-right" size={16} color={colors.inkSoft} />
+        </Pressable>
+
         {/* Activity */}
         <View style={styles.activityWrap}>
           <SectionHeader eyebrow="Recently" title="Activity" rule />

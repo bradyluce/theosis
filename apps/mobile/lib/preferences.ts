@@ -271,6 +271,40 @@ export type PrayerRule = {
   initialized?: boolean;
 };
 
+// On-device notification settings. A single recurring DAILY trigger per
+// prayer slot plus a window of dated content notifications are laid down by
+// lib/notifications.ts. Local-only — like fastBannerCollapsed, this never
+// round-trips through the profile snapshot.
+export type PrayerReminderPref = {
+  enabled: boolean;
+  hour: number; // 0–23, device-local time
+  minute: number; // 0–59
+};
+
+export type NotificationPrefs = {
+  // Master switch. We keep our own flag alongside the OS permission so the
+  // user can silence Theosis without revoking the OS grant, and so the
+  // launch scheduler knows whether to lay anything down.
+  enabled: boolean;
+  feastSaint: boolean; // today's commemoration / feast
+  fastReminder: boolean; // what the Church fasts today
+  personalOccasions: boolean; // name-day, birthday, streak-at-risk
+  morningPrayer: PrayerReminderPref;
+  eveningPrayer: PrayerReminderPref;
+  // ISO "YYYY-MM-DD" the dated window was last laid through, so the launch
+  // scheduler can skip a redundant reschedule within the same day.
+  scheduledThrough?: string;
+};
+
+export const DEFAULT_NOTIFICATION_PREFS: NotificationPrefs = {
+  enabled: false,
+  feastSaint: true,
+  fastReminder: true,
+  personalOccasions: true,
+  morningPrayer: { enabled: true, hour: 7, minute: 0 },
+  eveningPrayer: { enabled: false, hour: 20, minute: 30 },
+};
+
 // Daily card order — strings matching the card type discriminator used
 // in app/(tabs)/index.tsx. Default order applies until the user reorders.
 // "continue-reading" is a new Phase-4 card: it surfaces the user's
@@ -357,6 +391,9 @@ export type AppPreferences = {
   // Whether the Daily fast banner is collapsed to its one-line summary.
   // Local-only UI preference; persists the user's last choice across visits.
   fastBannerCollapsed?: boolean;
+  // On-device notification settings. Local-only (like fastBannerCollapsed) —
+  // never round-trips through the profile snapshot.
+  notifications?: NotificationPrefs;
 };
 
 const RECENT_SEARCHES_MAX = 8;
@@ -1348,6 +1385,41 @@ export async function getFastBannerCollapsed(): Promise<boolean> {
 export async function setFastBannerCollapsed(collapsed: boolean): Promise<void> {
   const prefs = await loadPrefs();
   await savePrefs({ ...prefs, fastBannerCollapsed: collapsed });
+}
+
+// --- Notification settings (local-only) ------------------------------------
+
+export async function getNotificationPrefs(): Promise<NotificationPrefs> {
+  const prefs = await loadPrefs();
+  const stored = prefs.notifications;
+  if (!stored) return { ...DEFAULT_NOTIFICATION_PREFS };
+  // Merge over defaults so fields added in a later release rehydrate with a
+  // sane value instead of undefined.
+  return {
+    ...DEFAULT_NOTIFICATION_PREFS,
+    ...stored,
+    morningPrayer: {
+      ...DEFAULT_NOTIFICATION_PREFS.morningPrayer,
+      ...stored.morningPrayer,
+    },
+    eveningPrayer: {
+      ...DEFAULT_NOTIFICATION_PREFS.eveningPrayer,
+      ...stored.eveningPrayer,
+    },
+  };
+}
+
+// Serialized read-modify-write — settings edits and the launch reschedule
+// (which stamps scheduledThrough) can fire close together; mutatePrefs keeps
+// them from clobbering each other.
+export async function setNotificationPrefs(
+  patch: Partial<NotificationPrefs>,
+): Promise<NotificationPrefs> {
+  return mutatePrefs((prefs) => {
+    const current = prefs.notifications ?? DEFAULT_NOTIFICATION_PREFS;
+    const next: NotificationPrefs = { ...current, ...patch };
+    return { next: { ...prefs, notifications: next }, result: next };
+  });
 }
 
 // --- Onboarding status -----------------------------------------------------

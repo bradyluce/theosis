@@ -21,7 +21,16 @@ const nextConfig: NextConfig = {
   },
   // Drizzle's native pg bindings don't tree-shake cleanly in the serverless
   // bundle; mark it external so Next.js doesn't try to inline it.
-  serverExternalPackages: ["drizzle-orm"],
+  //
+  // @huggingface/transformers + onnxruntime-node power the "Ask the Fathers"
+  // semantic-search query embedding (src/lib/search/embeddings.ts). They ship
+  // native binaries that must NOT be bundled — keep them external so Vercel's
+  // tracer includes the prebuilt .node artifacts instead.
+  serverExternalPackages: [
+    "drizzle-orm",
+    "@huggingface/transformers",
+    "onnxruntime-node",
+  ],
   // Vercel serverless functions only bundle files Next.js can statically
   // trace. Many routes read JSON via dynamic `path.join(process.cwd(), ...)`
   // calls — those don't get traced automatically, so without this declaration

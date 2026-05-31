@@ -21,6 +21,7 @@ import type {
   ByWorkFile,
   CommentaryCatalog,
   DailyResponse,
+  FathersSearchResponse,
   GeocodeResponse,
   GuidePageResponse,
   GuidesResponse,
@@ -93,6 +94,9 @@ export type TheosisApi = {
   // `month` is 1-12.
   fetchMenaionMonth: (month: number) => Promise<MenaionMonthResponse>;
   search: (query: string) => Promise<SearchResponse>;
+  // "Ask the Fathers" — semantic retrieval over the patristic corpus.
+  // Retrieval-only: ranked real writings, never a generated answer.
+  searchFathers: (query: string) => Promise<FathersSearchResponse>;
   // Parishes within `radiusMi` (default 50) of (lat, lng), sorted by
   // distance ascending. Optional `jurisdictions` is a list of codes
   // (goa, oca, ant, ...) — when set, only matches are returned.
@@ -185,6 +189,10 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
       getJson<MenaionMonthResponse>(`/api/calendar/menaion-month/${month}`),
     search: (query) =>
       getJson<SearchResponse>(`/api/search?q=${encodeURIComponent(query)}`),
+    searchFathers: (query) =>
+      getJson<FathersSearchResponse>(
+        `/api/search/fathers?q=${encodeURIComponent(query)}`,
+      ),
     fetchParishesNear: ({ lat, lng, radiusMi, limit, jurisdictions }) => {
       const params = new URLSearchParams({
         lat: String(lat),

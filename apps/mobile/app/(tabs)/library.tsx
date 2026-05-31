@@ -45,6 +45,7 @@ import {
   getSavedVerses,
 } from "@/lib/preferences";
 import { usePatronIcon } from "@/lib/use-patron-icon";
+import { resolveMobileTarget } from "@/lib/search-target";
 
 // Library — the consolidated discover-and-browse tab. Persistent search at
 // the top; when the query is empty the page renders the editorial spreads
@@ -202,33 +203,8 @@ const SEARCH_KIND_LABELS: Record<SearchResultKind, string> = {
   daily: "Daily",
 };
 
-// Map a search result's web href to a mobile route. Returns null when there
-// is no corresponding mobile destination.
-function resolveMobileTarget(result: SearchResult): string | null {
-  const personMatch = result.href.match(/^\/library\/people\/([^/?#]+)/);
-  if (personMatch) return `/people/${personMatch[1]}`;
-
-  const workMatch = result.href.match(/^\/library\/works\/([^/?#]+)/);
-  if (workMatch) return `/works/${workMatch[1]}`;
-
-  const bibleMatch = result.href.match(
-    /^\/bible\/([^/]+)\/([^/]+)\/(\d+)(?:#[^:]+:[^.]+\.\d+\.(\d+))?/,
-  );
-  if (bibleMatch) {
-    const [, translation, book, chapter, verse] = bibleMatch;
-    const highlight = verse ? `&highlight=${verse}` : "";
-    return `/explore?translation=${translation}&book=${book}&chapter=${chapter}${highlight}`;
-  }
-
-  if (result.href === "/daily") return "/";
-
-  // Topic results from the search engine point at the legacy /library#topic-X
-  // anchor. We now have first-class topic landing pages — map there directly.
-  const topicMatch = result.href.match(/^\/library#topic-([^/?#]+)/);
-  if (topicMatch) return `/topics/${topicMatch[1]}`;
-
-  return null;
-}
+// resolveMobileTarget now lives in @/lib/search-target (imported above) so the
+// Ask-the-Fathers screen can reuse the same web-href → mobile-route mapping.
 
 type SectionKey = "featured" | "topics" | "basics" | "browse";
 
@@ -725,6 +701,28 @@ function EditorialContent({
 }) {
   return (
     <>
+      {/* Ask the Fathers — semantic-search entry. Marquee feature, so it gets
+          the top slot above the editorial spread. */}
+      <Pressable
+        onPress={() => router.push("/ask-fathers")}
+        style={({ pressed }) => [styles.askCard, pressed && { opacity: 0.9 }]}
+        accessibilityRole="button"
+        accessibilityLabel="Ask the Fathers"
+      >
+        <View style={styles.askIconWrap}>
+          <Feather name="message-circle" size={20} color={colors.accent} />
+        </View>
+        <View style={styles.askText}>
+          <Eyebrow tone="accent">Ask the Fathers</Eyebrow>
+          <Text style={styles.askTitle}>Search the Fathers by meaning</Text>
+          <Text style={styles.askSub} numberOfLines={2}>
+            Pose a question — grief, prayer, doubt — and find what the Fathers
+            wrote on it.
+          </Text>
+        </View>
+        <Feather name="arrow-right" size={16} color={colors.accent} />
+      </Pressable>
+
       {/* Today's commemoration — small editorial banner that ties the Library
           to the Daily tab. Tappable when a primary saint can be matched from
           the day's title; otherwise informational. */}
@@ -1677,5 +1675,42 @@ const styles = StyleSheet.create({
     fontSize: 13,
     lineHeight: 20,
     color: colors.inkSoft,
+  },
+
+  // Ask the Fathers callout
+  askCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md,
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.lg,
+    borderRadius: radii.large,
+    borderWidth: 1,
+    borderColor: colors.lineGilt,
+    backgroundColor: "rgba(212, 168, 87, 0.07)",
+  },
+  askIconWrap: {
+    width: 44,
+    height: 44,
+    borderRadius: radii.card,
+    backgroundColor: "rgba(212, 168, 87, 0.10)",
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.lineGilt,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  askText: { flex: 1, gap: 3 },
+  askTitle: {
+    fontFamily: fonts.serifBoldItalic,
+    fontSize: 20,
+    color: colors.ink,
+    letterSpacing: -0.3,
+    lineHeight: 24,
+  },
+  askSub: {
+    fontFamily: fonts.serif,
+    fontSize: 13,
+    lineHeight: 19,
+    color: colors.inkMuted,
   },
 });

@@ -349,6 +349,31 @@ export default function SettingsScreen() {
           </View>
         </Card>
 
+        {/* Notifications — on-device daily reminders */}
+        <Card>
+          <SectionHeader eyebrow="Notifications" title="Stay in rhythm" rule />
+          <View style={{ gap: spacing.md, marginTop: spacing.md }}>
+            <Pressable
+              onPress={() => router.push("/notifications")}
+              style={({ pressed }) => [
+                styles.linkRow,
+                pressed && { backgroundColor: colors.surfaceStrong },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Notification settings"
+            >
+              <View style={styles.linkRowMain}>
+                <Text style={styles.linkRowLabel}>Daily notifications</Text>
+                <Text style={styles.linkRowDescription}>
+                  Today&apos;s feast &amp; fast, prayer reminders, and name-day
+                  greetings — delivered on your device.
+                </Text>
+              </View>
+              <Feather name="bell" size={15} color={colors.inkSoft} />
+            </Pressable>
+          </View>
+        </Card>
+
         {/* Account: sign-in card + restart setup */}
         <Card>
           <SectionHeader eyebrow="Account" title="Your session" rule />
