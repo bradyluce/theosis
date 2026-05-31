@@ -14,6 +14,8 @@ import type {
   DailyFastDetail,
   HymnText,
   IconRef,
+  Monastery,
+  MonasteryCatalogEntry,
   OrthodoxGuide,
   Parish,
   ParishCatalogEntry,
@@ -269,6 +271,8 @@ export type ParishesNearResponse = {
 export type ParishDetailResponse = Parish;
 
 // --- /api/parishes/geocode -------------------------------------------------
+// Shared geocoder — also used by the monasteries screen. There is no
+// separate /api/monasteries/geocode; the client points both at this route.
 
 export type GeocodeResponse = {
   lat: number;
@@ -277,6 +281,21 @@ export type GeocodeResponse = {
   // "10001, Manhattan, New York County, New York, United States".
   label: string;
 };
+
+// --- /api/monasteries/near -------------------------------------------------
+
+export type NearbyMonastery = MonasteryCatalogEntry & { distanceMi: number };
+
+export type MonasteriesNearResponse = {
+  origin: { lat: number; lng: number };
+  radiusMi: number;
+  count: number;
+  monasteries: NearbyMonastery[];
+};
+
+// --- /api/monasteries/[state]/[slug] ---------------------------------------
+
+export type MonasteryDetailResponse = Monastery;
 
 // --- /api/version ----------------------------------------------------------
 

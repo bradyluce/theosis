@@ -29,6 +29,8 @@ import type {
   LibraryPeopleResponse,
   LibraryTimelineResponse,
   MenaionMonthResponse,
+  MonasteriesNearResponse,
+  MonasteryDetailResponse,
   ParishDetailResponse,
   ParishesNearResponse,
   ReadingPlanResponse,
@@ -110,8 +112,24 @@ export type TheosisApi = {
   // Full parish detail by state code (2-letter, e.g. "ny") + slug.
   fetchParishDetail: (state: string, slug: string) => Promise<ParishDetailResponse>;
   // Forward-geocode a ZIP, city, or address to lat/lng. Used as a manual
-  // fallback on the parishes screen when location permission is denied.
+  // fallback on the parishes/monasteries screens when location is denied.
   geocode: (query: string) => Promise<GeocodeResponse>;
+  // Monasteries within `radiusMi` (default 50) of (lat, lng), sorted by
+  // distance ascending. Optional `jurisdictions` (goa, oca, ...) and
+  // `communityTypes` (male, female, mixed) narrow the results when set.
+  fetchMonasteriesNear: (params: {
+    lat: number;
+    lng: number;
+    radiusMi?: number;
+    limit?: number;
+    jurisdictions?: string[];
+    communityTypes?: string[];
+  }) => Promise<MonasteriesNearResponse>;
+  // Full monastery detail by state code (2-letter) + slug.
+  fetchMonasteryDetail: (
+    state: string,
+    slug: string,
+  ) => Promise<MonasteryDetailResponse>;
   // Reading plans — static editorial content, no per-user data here.
   // Progress lives in the client's profile store.
   fetchReadingPlans: () => Promise<ReadingPlansResponse>;
@@ -212,6 +230,34 @@ export function createTheosisApi(options: TheosisApiOptions): TheosisApi {
     geocode: (query) =>
       getJson<GeocodeResponse>(
         `/api/parishes/geocode?q=${encodeURIComponent(query)}`,
+      ),
+    fetchMonasteriesNear: ({
+      lat,
+      lng,
+      radiusMi,
+      limit,
+      jurisdictions,
+      communityTypes,
+    }) => {
+      const params = new URLSearchParams({
+        lat: String(lat),
+        lng: String(lng),
+      });
+      if (radiusMi !== undefined) params.set("radius", String(radiusMi));
+      if (limit !== undefined) params.set("limit", String(limit));
+      if (jurisdictions && jurisdictions.length > 0) {
+        params.set("jurisdictions", jurisdictions.join(","));
+      }
+      if (communityTypes && communityTypes.length > 0) {
+        params.set("community", communityTypes.join(","));
+      }
+      return getJson<MonasteriesNearResponse>(
+        `/api/monasteries/near?${params.toString()}`,
+      );
+    },
+    fetchMonasteryDetail: (state, slug) =>
+      getJson<MonasteryDetailResponse>(
+        `/api/monasteries/${encodeURIComponent(state.toLowerCase())}/${encodeURIComponent(slug)}`,
       ),
     fetchReadingPlans: () =>
       getJson<ReadingPlansResponse>("/api/reading-plans"),
