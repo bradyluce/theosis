@@ -14,12 +14,24 @@ type VerseOptions = {
 };
 
 const NAMED_ENTITIES: Record<string, string> = {
-  amp: "&",
-  lt: "<",
-  gt: ">",
-  quot: '"',
-  apos: "'",
-  nbsp: " ",
+  amp: "&", lt: "<", gt: ">", quot: '"', apos: "'",
+  nbsp: " ", ensp: " ", emsp: " ", thinsp: " ", shy: "",
+  // Ligatures + accented letters that leaked undecoded into rendered text.
+  oelig: "œ", OElig: "Œ", aelig: "æ", AElig: "Æ", szlig: "ß",
+  iuml: "ï", euml: "ë", uuml: "ü", ouml: "ö", auml: "ä", yuml: "ÿ",
+  Iuml: "Ï", Euml: "Ë", Uuml: "Ü", Ouml: "Ö", Auml: "Ä",
+  eacute: "é", egrave: "è", ecirc: "ê", agrave: "à", acirc: "â", aacute: "á",
+  ocirc: "ô", ograve: "ò", oacute: "ó", icirc: "î", igrave: "ì", iacute: "í",
+  ucirc: "û", ugrave: "ù", uacute: "ú", ccedil: "ç", ntilde: "ñ", atilde: "ã", otilde: "õ",
+  Eacute: "É", Egrave: "È", Ecirc: "Ê", Agrave: "À", Acirc: "Â",
+  Ocirc: "Ô", Ccedil: "Ç", Ntilde: "Ñ",
+  sect: "§", para: "¶", deg: "°", micro: "µ", pound: "£", cent: "¢", euro: "€",
+  copy: "©", reg: "®", trade: "™", dagger: "†", Dagger: "‡",
+  mdash: "—", ndash: "–", hellip: "…", horbar: "―",
+  lsquo: "‘", rsquo: "’", ldquo: "“", rdquo: "”", sbquo: "‚", bdquo: "„",
+  laquo: "«", raquo: "»", lsaquo: "‹", rsaquo: "›",
+  middot: "·", bull: "•", prime: "′", Prime: "″",
+  frac12: "½", frac14: "¼", frac34: "¾", times: "×", divide: "÷", plusmn: "±",
 };
 
 const BYZANTINE_TRANSLITERATION: Record<string, string> = {
@@ -166,6 +178,12 @@ export function cleanVerseText(value: string) {
     .replace(/\s+([,.;:!?])/g, "$1")
     .replace(/([([{])\s+/g, "$1")
     .replace(/\s+([)\]}])/g, "$1")
+    // Stray spaces around apostrophes/quotes left when inline tags (e.g. WEB's
+    // USFX <wj> words-of-Jesus markup) are stripped to spaces \u2014 "God \u2019s" /
+    // "Don\u2019 t" / "\u201c Lord" / "word \u201d". Only fires when a space is actually present.
+    .replace(/(\w)(?:\s+['\u2019]\s*|['\u2019]\s+)(s|t|ll|ve|re|d|m)\b/g, "$1\u2019$2")
+    .replace(/([\u201c\u2018])\s+(?=\S)/g, "$1")
+    .replace(/\s+([\u201d])/g, "$1")
     .trim();
 }
 

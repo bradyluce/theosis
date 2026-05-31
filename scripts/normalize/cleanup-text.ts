@@ -184,11 +184,58 @@ function applyOcrWordFixes(text: string, stats: Stats): string {
   return out;
 }
 
+// Complete HTML entity decode (named + numeric + hex + cp1252). Backstops the
+// per-parser allowlists (e.g. new-advent-html.ts) that left &oelig;/&sect; etc.
+const NAMED_ENTITY: Record<string, string> = {
+  oelig: "œ", OElig: "Œ", aelig: "æ", AElig: "Æ", szlig: "ß",
+  iuml: "ï", euml: "ë", uuml: "ü", ouml: "ö", auml: "ä", yuml: "ÿ",
+  Iuml: "Ï", Euml: "Ë", Uuml: "Ü", Ouml: "Ö", Auml: "Ä",
+  eacute: "é", egrave: "è", ecirc: "ê", agrave: "à", acirc: "â", aacute: "á",
+  ocirc: "ô", ograve: "ò", oacute: "ó", icirc: "î", igrave: "ì", iacute: "í",
+  ucirc: "û", ugrave: "ù", uacute: "ú", ccedil: "ç", ntilde: "ñ", atilde: "ã", otilde: "õ",
+  Eacute: "É", Egrave: "È", Ecirc: "Ê", Agrave: "À", Acirc: "Â", Ocirc: "Ô", Ccedil: "Ç", Ntilde: "Ñ",
+  sect: "§", para: "¶", deg: "°", micro: "µ", pound: "£", cent: "¢", euro: "€",
+  copy: "©", reg: "®", trade: "™", dagger: "†", Dagger: "‡",
+  mdash: "—", ndash: "–", hellip: "…", horbar: "―",
+  lsquo: "‘", rsquo: "’", ldquo: "“", rdquo: "”", sbquo: "‚", bdquo: "„",
+  laquo: "«", raquo: "»", lsaquo: "‹", rsaquo: "›",
+  middot: "·", bull: "•", prime: "′", Prime: "″",
+  frac12: "½", frac14: "¼", frac34: "¾", times: "×", divide: "÷", plusmn: "±",
+  nbsp: " ", ensp: " ", emsp: " ", thinsp: " ", shy: "",
+  lt: "<", gt: ">", quot: '"', apos: "'",
+};
+const CP1252_NUM: Record<number, string> = {
+  133: "…", 145: "‘", 146: "’", 147: "“", 148: "”", 149: "•", 150: "–", 151: "—", 153: "™",
+};
+function decodeHtmlEntities(text: string, stats: Stats): string {
+  if (!/&[a-zA-Z#]/.test(text)) return text;
+  const out = text
+    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => { try { return String.fromCodePoint(parseInt(h, 16)); } catch { return m; } })
+    .replace(/&#(\d+);/g, (m, d) => { const n = Number(d); return CP1252_NUM[n] ?? (() => { try { return String.fromCodePoint(n); } catch { return m; } })(); })
+    .replace(/&([a-zA-Z][a-zA-Z0-9]{1,9});/g, (m, name) => (name in NAMED_ENTITY ? NAMED_ENTITY[name] : m))
+    .replace(/&amp;/g, "&");
+  if (out !== text) incStat(stats, "decode-entities");
+  return out;
+}
+// Strip leaked source chrome: scraper copyright footers, HTML comments / New
+// Advent template residue, and any residual HTML tags (keeping inner text).
+function stripSourceChrome(text: string, stats: Stats): string {
+  let out = text
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/\]?\s*\}\}--+>\s*/g, " ")
+    .replace(/\s*Copyright\s*©?\s*\d{4}\s*-\s*\d{4}[\s\S]*?saintjoe\.com[\s\S]*?all rights reserved\s*\|?\s*/gi, " ")
+    .replace(/<\/?(?:i|b|em|strong|q|span|h[1-6]|sup|sub|note|title|u|font|small|big|tt|cite|abbr|blockquote)\b[^>]*>/gi, "");
+  if (out !== text) incStat(stats, "strip-source-chrome");
+  return out;
+}
+
 // ── Master cleanup function ────────────────────────────────────────────────
 
 export function cleanupText(text: string, stats: Stats): string {
   if (typeof text !== "string") return text;
   let out = text;
+  out = decodeHtmlEntities(out, stats);
+  out = stripSourceChrome(out, stats);
   out = stripStrayGlyphs(out, stats);
   out = dehyphenate(out, stats);
   out = fixSpaceBeforePunct(out, stats);
