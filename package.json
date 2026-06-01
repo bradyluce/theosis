@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:mobile": "next dev -H 0.0.0.0",
-    "build": "next build",
+    "build": "node scripts/vercel-prune-onnx.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "ingest:bibles": "tsx scripts/ingest/ingest.ts",

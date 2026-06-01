@@ -62,20 +62,17 @@ const nextConfig: NextConfig = {
     // through to an empty array in production, which is fine.
     "/dev/icons": ["./public/icons/**/*"],
     "/dev/icons/replace": ["./public/icons/**/*"],
-    // Ask-the-Fathers runs the embedding model via onnxruntime-NODE (native).
-    // But @huggingface/transformers' node build also references onnxruntime-web,
-    // so the tracer drags in its ~125 MB of WASM + source maps — dead weight
-    // that pushes this single function past Vercel's 250 MB cap. The .wasm is
-    // never loaded (we use the node execution provider), so strip it, the
-    // source maps, and the other-platform onnxruntime-node binaries from this
-    // function. The linux/x64 .so it actually needs is re-added via
-    // outputFileTracingIncludes below.
+    // Ask-the-Fathers queries Neon (pgvector) — it does NOT read the keyword
+    // search index, but it inherits the /api/search include below, which drags
+    // the ~56 MB commentary.json into this function. Strip it here.
+    //
+    // The real bloat — onnxruntime-node's ~335 MB multi-platform bin — can NOT
+    // be trimmed with trace excludes: onnxruntime-node is a serverExternalPackage,
+    // so Next copies the whole package verbatim. It's instead pruned to the one
+    // platform Vercel runs (linux/x64) at build time by
+    // scripts/vercel-prune-onnx.mjs (wired into the `build` script).
     "/api/search/fathers": [
-      "./node_modules/onnxruntime-web/dist/**/*.wasm",
-      "./node_modules/onnxruntime-web/dist/**/*.map",
-      "./node_modules/onnxruntime-node/bin/napi-v6/win32/**/*",
-      "./node_modules/onnxruntime-node/bin/napi-v6/darwin/**/*",
-      "./node_modules/onnxruntime-node/bin/napi-v6/linux/arm64/**/*",
+      "./content/normalized/search/**/*",
     ],
   },
   outputFileTracingIncludes: {
