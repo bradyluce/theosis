@@ -22,7 +22,7 @@ import DraggableFlatList, {
   ScaleDecorator,
 } from "react-native-draggable-flatlist";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import type { DailyResponse, ReadingPlanProgress } from "@theosis/core";
 
 import {
@@ -183,6 +183,10 @@ export default function DailyScreen() {
   );
   const [dailySaved, setDailySaved] = useState(false);
   const [fastCollapsed, setFastCollapsed] = useState(false);
+  // Measured height of the floating header (masthead + date row, plus the
+  // open date-picker / "back to today" pill). The card list is padded by this
+  // so its first row clears the header, then scrolls up underneath the scrim.
+  const [headerHeight, setHeaderHeight] = useState(insets.top + 108);
 
   // Date navigation: undefined = today (the natural default). Selecting a
   // different date both refetches /api/daily?date=... and surfaces a
@@ -399,7 +403,7 @@ export default function DailyScreen() {
   );
 
   return (
-    <SafeAreaView style={styles.safe} edges={["top"]}>
+    <View style={styles.safe}>
       {/* Three-stop backdrop: candlelight at the top fading through a warm
           midtone to the deep ground. The third stop ensures cards don't
           look washed out against the gradient. */}
@@ -415,6 +419,21 @@ export default function DailyScreen() {
       />
 
       <GestureHandlerRootView style={{ flex: 1 }}>
+        {/* Floating header — masthead + date row over a candlelight→clear
+            scrim. Absolute + box-none so the card list fills the full height
+            and scrolls up beneath it, instead of being clipped low under a
+            tall fixed header. onLayout feeds its height to the list padding. */}
+        <View
+          style={[styles.headerFloat, { paddingTop: insets.top }]}
+          onLayout={(e) => setHeaderHeight(e.nativeEvent.layout.height)}
+          pointerEvents="box-none"
+        >
+          <LinearGradient
+            colors={[colors.background, colors.background, "rgba(10, 9, 8, 0)"]}
+            locations={[0, 0.8, 1]}
+            style={StyleSheet.absoluteFill}
+            pointerEvents="none"
+          />
         {/* Masthead — wordmark on the left, halo avatar on the right. */}
         <View style={styles.masthead}>
           <Wordmark size={20} />
@@ -516,12 +535,6 @@ export default function DailyScreen() {
           ) : null}
         </View>
 
-        {data?.daily.calendarLabel ? (
-          <Text style={styles.calendarSystemLabel}>
-            {data.daily.calendarLabel}
-          </Text>
-        ) : null}
-
         {!isToday ? (
           <Pressable
             onPress={resetToToday}
@@ -552,45 +565,21 @@ export default function DailyScreen() {
             />
           </View>
         ) : null}
-
-        {data ? (
-          <View style={styles.dayStatusRow}>
-            <FastBanner
-              detail={data.fastDetail}
-              fastingLevel={profile.fastingLevel}
-              collapsed={fastCollapsed}
-              onToggleCollapsed={() => {
-                const next = !fastCollapsed;
-                setFastCollapsed(next);
-                void setFastBannerCollapsed(next);
-              }}
-            />
-          </View>
-        ) : null}
-
-        {celebration.isNameDay || celebration.isBirthday ? (
-          <View style={styles.celebrationRow}>
-            <CelebrationBanner
-              isNameDay={celebration.isNameDay}
-              isBirthday={celebration.isBirthday}
-              patronName={celebration.patronName}
-              onPress={
-                celebration.isNameDay && profile.patronSaintSlug
-                  ? () => router.push(`/people/${profile.patronSaintSlug}`)
-                  : undefined
-              }
-            />
-          </View>
-        ) : null}
+        </View>
 
         {isLoading ? (
-          <View style={styles.loading}>
+          <View style={[styles.loading, { paddingTop: headerHeight }]}>
             <ActivityIndicator color={colors.accent} />
           </View>
         ) : null}
 
         {error ? (
-          <ScrollView contentContainerStyle={styles.errorWrap}>
+          <ScrollView
+            contentContainerStyle={[
+              styles.errorWrap,
+              { paddingTop: headerHeight + spacing.lg },
+            ]}
+          >
             <Card>
               <Eyebrow tone="oxblood">Couldn&apos;t load today</Eyebrow>
               <Text style={[text.body, { color: colors.error, marginTop: spacing.sm }]}>
@@ -625,7 +614,43 @@ export default function DailyScreen() {
               activationDistance={8}
               renderItem={renderCard}
               containerStyle={{ flex: 1 }}
-              contentContainerStyle={styles.listContent}
+              contentContainerStyle={[
+                styles.listContent,
+                { paddingTop: headerHeight + spacing.sm },
+              ]}
+              // Day-status header lives inside the scroll so the fast card and
+              // name-day banner scroll away and the cards reclaim the full
+              // page height beneath the floating masthead.
+              ListHeaderComponent={
+                <View>
+                  <View style={styles.dayStatusRow}>
+                    <FastBanner
+                      detail={data.fastDetail}
+                      fastingLevel={profile.fastingLevel}
+                      collapsed={fastCollapsed}
+                      onToggleCollapsed={() => {
+                        const next = !fastCollapsed;
+                        setFastCollapsed(next);
+                        void setFastBannerCollapsed(next);
+                      }}
+                    />
+                  </View>
+                  {celebration.isNameDay || celebration.isBirthday ? (
+                    <View style={styles.celebrationRow}>
+                      <CelebrationBanner
+                        isNameDay={celebration.isNameDay}
+                        isBirthday={celebration.isBirthday}
+                        patronName={celebration.patronName}
+                        onPress={
+                          celebration.isNameDay && profile.patronSaintSlug
+                            ? () => router.push(`/people/${profile.patronSaintSlug}`)
+                            : undefined
+                        }
+                      />
+                    </View>
+                  ) : null}
+                </View>
+              }
               // Footer: reorder hint + bottom clearance for the floating
               // tab bar. The hint disappears once the user reorders.
               ListFooterComponent={
@@ -653,6 +678,7 @@ export default function DailyScreen() {
                   onRefresh={() => refetch()}
                   tintColor={colors.accent}
                   colors={[colors.accent]}
+                  progressViewOffset={headerHeight}
                 />
               }
             />
@@ -667,7 +693,7 @@ export default function DailyScreen() {
         streak={streak}
         savedCount={savedCount}
       />
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -1246,6 +1272,18 @@ function HymnsCard({ data }: { data: DailyData }) {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.background },
 
+  // Floating header overlay — masthead + date row sit above the scrolling
+  // card list on a candlelight→clear scrim, so content scrolls up beneath it
+  // rather than being clipped below a tall fixed header. box-none lets taps
+  // outside the wordmark/date controls fall through to the list.
+  headerFloat: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 10,
+  },
+
   // Masthead: magazine cover bar — wordmark, halo avatar.
   masthead: {
     flexDirection: "row",
@@ -1331,17 +1369,6 @@ const styles = StyleSheet.create({
     color: colors.accent,
     letterSpacing: 2.8,
     textTransform: "uppercase",
-  },
-  // Names the calendar system (and jurisdiction) the day was reckoned on, so
-  // the commemoration is never presented as the single universal Orthodox
-  // calendar. Centered caption directly under the date.
-  calendarSystemLabel: {
-    fontFamily: fonts.sans,
-    fontSize: 10,
-    color: colors.inkMuted,
-    letterSpacing: 0.4,
-    textAlign: "center",
-    marginTop: spacing.xs,
   },
   avatarInitial: {
     fontFamily: fonts.serifBoldItalic,
@@ -1453,18 +1480,17 @@ const styles = StyleSheet.create({
     color: colors.inkMuted,
   },
 
-  // DayStatus row — appears under the date pill; always shows today's
-  // fast status so the user knows even on plain days.
+  // DayStatus row — first row of the scrolling list (under the floating
+  // header); always shows today's fast status so the user knows even on
+  // plain days. Horizontal inset comes from the list content container.
   dayStatusRow: {
     flexDirection: "row",
     justifyContent: "center",
-    paddingHorizontal: spacing.xl,
     paddingBottom: spacing.md,
   },
   // Celebration banner (name day / birthday) — full-width card under the
-  // fast status, flush with the same horizontal inset.
+  // fast status. Horizontal inset comes from the list content container.
   celebrationRow: {
-    paddingHorizontal: spacing.xl,
     paddingBottom: spacing.md,
   },
   heroIconWrap: {

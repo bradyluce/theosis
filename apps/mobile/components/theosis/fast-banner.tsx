@@ -129,8 +129,14 @@ function FeatureHeader({
         <MaterialCommunityIcons name={icon} size={16} color={colors.accent} />
       </View>
       <View style={{ flex: 1 }}>
-        <Text style={styles.featureEyebrow}>{eyebrow}</Text>
-        <Text style={styles.featureTitle}>{name}</Text>
+        {collapsed ? null : (
+          <Text style={styles.featureEyebrow}>{eyebrow}</Text>
+        )}
+        <Text
+          style={[styles.featureTitle, collapsed && styles.featureTitleCollapsed]}
+        >
+          {name}
+        </Text>
       </View>
       {trailing ?? null}
       {onToggleCollapsed ? (
@@ -186,7 +192,7 @@ function FastFeature({
     : 0;
 
   return (
-    <View style={styles.feature}>
+    <View style={[styles.feature, collapsed && styles.featureCollapsed]}>
       <FeatureHeader
         icon="leaf"
         eyebrow="Fasting season"
@@ -242,7 +248,7 @@ function FastFreeFeature({
   onToggleCollapsed?: () => void;
 }) {
   return (
-    <View style={styles.feature}>
+    <View style={[styles.feature, collapsed && styles.featureCollapsed]}>
       <FeatureHeader
         icon="white-balance-sunny"
         eyebrow="Fast-free"
@@ -287,6 +293,12 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
     gap: spacing.sm,
   },
+  // Collapsed: trim the vertical padding so the header reads as a slim
+  // horizontal bar (icon · name · day counter · chevron) instead of a tall
+  // card. Horizontal padding stays for comfortable insets.
+  featureCollapsed: {
+    paddingVertical: spacing.sm,
+  },
   featureHeader: {
     flexDirection: "row",
     alignItems: "center",
@@ -313,6 +325,11 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     letterSpacing: -0.2,
     marginTop: 2,
+  },
+  // No eyebrow above the name when collapsed — drop the gap so the name sits
+  // centered against the icon on a single line.
+  featureTitleCollapsed: {
+    marginTop: 0,
   },
   featureDay: {
     fontFamily: fonts.sans,
