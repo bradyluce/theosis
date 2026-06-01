@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:mobile": "next dev -H 0.0.0.0",
+    "postinstall": "node scripts/vercel-prune-onnx.mjs",
     "build": "node scripts/vercel-prune-onnx.mjs && next build",
     "start": "next start",
     "lint": "eslint",
