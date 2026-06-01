@@ -306,6 +306,9 @@ export function DisplayNumeral({
   align = "left",
   size = 64,
   tone = "ink",
+  // "caps" — the original small-caps tracked sans label. "serif" — a softer
+  // Newsreader italic, sentence case, that reads like the Library's bylines.
+  labelVariant = "caps",
   style,
 }: {
   value: string | number;
@@ -313,6 +316,7 @@ export function DisplayNumeral({
   align?: "left" | "center" | "right";
   size?: number;
   tone?: "ink" | "accent" | "oxblood";
+  labelVariant?: "caps" | "serif";
   style?: StyleProp<ViewStyle>;
 }) {
   const color =
@@ -336,15 +340,24 @@ export function DisplayNumeral({
       </Text>
       {label ? (
         <Text
-          style={{
-            fontFamily: fonts.sans,
-            fontSize: 10.5,
-            fontWeight: "600",
-            color: colors.inkSoft,
-            letterSpacing: 2.4,
-            textTransform: "uppercase",
-            marginTop: spacing.xs,
-          }}
+          style={
+            labelVariant === "serif"
+              ? {
+                  fontFamily: fonts.serifItalic,
+                  fontSize: 13,
+                  color: colors.inkMuted,
+                  marginTop: spacing.xs + 1,
+                }
+              : {
+                  fontFamily: fonts.sans,
+                  fontSize: 10.5,
+                  fontWeight: "600",
+                  color: colors.inkSoft,
+                  letterSpacing: 2.4,
+                  textTransform: "uppercase",
+                  marginTop: spacing.xs,
+                }
+          }
         >
           {label}
         </Text>

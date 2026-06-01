@@ -23,6 +23,7 @@ export type OnboardingStepId =
   | "fasting"
   | "patron"
   | "prayer-rule"
+  | "notifications"
   | "sign-in";
 
 export type OnboardingDraft = {
@@ -57,6 +58,19 @@ export type OnboardingStep = {
   skipWhen?: (draft: OnboardingDraft) => boolean;
 };
 
+// Device-only capability flag. The "notifications" step configures on-device
+// local reminders (expo-notifications), which only exist in the mobile app.
+// Mobile calls setDeviceNotificationsSupported(true) at startup; web never
+// does, so the step's skipWhen leaves it out of the web flow entirely — no
+// orphan route, correct dot count, correct next/prev. Module-level mutable
+// state is intentional here: it's a one-time platform capability switch, not
+// per-user data, and reads the same on a given platform across SSR + client.
+let deviceNotificationsSupported = false;
+
+export function setDeviceNotificationsSupported(supported: boolean): void {
+  deviceNotificationsSupported = supported;
+}
+
 export const ONBOARDING_STEPS: readonly OnboardingStep[] = [
   { id: "welcome", index: 1 },
   { id: "status", index: 2 },
@@ -77,11 +91,18 @@ export const ONBOARDING_STEPS: readonly OnboardingStep[] = [
   { id: "fasting", index: 7 },
   { id: "patron", index: 8 },
   { id: "prayer-rule", index: 9 },
-  { id: "sign-in", index: 10 },
+  {
+    id: "notifications",
+    index: 10,
+    // Mobile-only — see setDeviceNotificationsSupported above.
+    skipWhen: () => !deviceNotificationsSupported,
+  },
+  { id: "sign-in", index: 11 },
 ];
 
-// Total visible steps given a draft. For an orthodox/catechumen: 10.
-// For an inquirer: 8 (jurisdiction + parish are skipped).
+// Total visible steps given a draft. Web (no device notifications): 10 for an
+// orthodox/catechumen, 8 for an inquirer (jurisdiction + parish skipped).
+// Mobile adds the notifications step (+1 to each).
 export function visibleStepCount(draft: OnboardingDraft): number {
   return ONBOARDING_STEPS.filter((s) => !s.skipWhen?.(draft)).length;
 }

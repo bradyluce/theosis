@@ -365,8 +365,9 @@ export default function SettingsScreen() {
               <View style={styles.linkRowMain}>
                 <Text style={styles.linkRowLabel}>Daily notifications</Text>
                 <Text style={styles.linkRowDescription}>
-                  Today&apos;s feast &amp; fast, prayer reminders, and name-day
-                  greetings — delivered on your device.
+                  Today&apos;s feast, scripture readings, fasts, prayer
+                  reminders, and name-day greetings — on your device, each at
+                  the time you choose.
                 </Text>
               </View>
               <Feather name="bell" size={15} color={colors.inkSoft} />

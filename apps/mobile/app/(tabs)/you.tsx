@@ -404,19 +404,21 @@ export default function YouScreen() {
           )}
         </View>
 
-        {/* Numerical stats — display italic numerals */}
+        {/* Numerical stats — display italic numerals, serif labels */}
         <View style={styles.statRow}>
           <DisplayNumeral
             value={streak}
             label="Day streak"
             size={56}
             tone="accent"
+            labelVariant="serif"
           />
           <View style={styles.statDivider} />
           <DisplayNumeral
             value={saved.length}
             label="Saved verses"
             size={56}
+            labelVariant="serif"
           />
         </View>
 
@@ -800,12 +802,9 @@ const styles = StyleSheet.create({
     marginTop: spacing.xs,
   },
   parishCtaLabel: {
-    fontFamily: fonts.sans,
-    fontSize: 11,
-    fontWeight: "700",
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
     color: colors.accent,
-    letterSpacing: 1.4,
-    textTransform: "uppercase",
   },
 
   statRow: {
@@ -838,18 +837,16 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
   },
   practiceTileLabel: {
-    fontFamily: fonts.serif,
-    fontSize: 14,
+    fontFamily: fonts.serifBold,
+    fontSize: 15,
     color: colors.ink,
-    letterSpacing: -0.1,
+    letterSpacing: -0.2,
   },
   practiceTileSub: {
-    fontFamily: fonts.sans,
-    fontSize: 9.5,
-    fontWeight: "600",
+    fontFamily: fonts.serifItalic,
+    fontSize: 12,
     color: colors.inkSoft,
-    letterSpacing: 1.6,
-    textTransform: "uppercase",
+    letterSpacing: -0.1,
   },
 
   // Find-a-parish card
@@ -875,16 +872,16 @@ const styles = StyleSheet.create({
   },
   findParishText: { flex: 1, gap: 2 },
   findParishLabel: {
-    fontFamily: fonts.serif,
-    fontSize: 16,
+    fontFamily: fonts.serifBold,
+    fontSize: 17,
     color: colors.ink,
-    letterSpacing: -0.1,
+    letterSpacing: -0.3,
   },
   findParishSub: {
-    fontFamily: fonts.sans,
-    fontSize: 12,
+    fontFamily: fonts.serifItalic,
+    fontSize: 13,
     color: colors.inkMuted,
-    lineHeight: 16,
+    lineHeight: 18,
   },
 
   // Activity

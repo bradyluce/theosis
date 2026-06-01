@@ -215,26 +215,71 @@ export default function NotificationsScreen() {
             rule
           />
           <View style={{ gap: spacing.md, marginTop: spacing.md }}>
-            <ToggleRow
+            <ReminderRow
               label="Today's feast & saint"
-              description="The day's commemoration, each morning."
-              value={prefs.feastSaint}
-              onValueChange={(v) => void apply({ feastSaint: v })}
+              description="The day's commemoration."
+              slot={prefs.feastSaint}
               disabled={subDisabled}
+              onToggle={(v) =>
+                void apply({ feastSaint: { ...prefs.feastSaint, enabled: v } })
+              }
+              onTime={(hour, minute) =>
+                void apply({
+                  feastSaint: { ...prefs.feastSaint, hour, minute },
+                })
+              }
             />
-            <ToggleRow
+            <ReminderRow
+              label="Daily scripture readings"
+              description="The appointed Epistle & Gospel."
+              slot={prefs.dailyReadings}
+              disabled={subDisabled}
+              onToggle={(v) =>
+                void apply({
+                  dailyReadings: { ...prefs.dailyReadings, enabled: v },
+                })
+              }
+              onTime={(hour, minute) =>
+                void apply({
+                  dailyReadings: { ...prefs.dailyReadings, hour, minute },
+                })
+              }
+            />
+            <ReminderRow
               label="Fast-day reminders"
               description="When the Church fasts — matched to your fasting level."
-              value={prefs.fastReminder}
-              onValueChange={(v) => void apply({ fastReminder: v })}
+              slot={prefs.fastReminder}
               disabled={subDisabled}
+              onToggle={(v) =>
+                void apply({
+                  fastReminder: { ...prefs.fastReminder, enabled: v },
+                })
+              }
+              onTime={(hour, minute) =>
+                void apply({
+                  fastReminder: { ...prefs.fastReminder, hour, minute },
+                })
+              }
             />
-            <ToggleRow
+            <ReminderRow
               label="Name-day & birthday"
               description="A greeting on your patron's feast and your birthday."
-              value={prefs.personalOccasions}
-              onValueChange={(v) => void apply({ personalOccasions: v })}
+              slot={prefs.personalOccasions}
               disabled={subDisabled}
+              onToggle={(v) =>
+                void apply({
+                  personalOccasions: { ...prefs.personalOccasions, enabled: v },
+                })
+              }
+              onTime={(hour, minute) =>
+                void apply({
+                  personalOccasions: {
+                    ...prefs.personalOccasions,
+                    hour,
+                    minute,
+                  },
+                })
+              }
             />
           </View>
         </Card>
@@ -243,8 +288,9 @@ export default function NotificationsScreen() {
         <Card>
           <SectionHeader eyebrow="Prayer" title="Morning & evening" rule />
           <View style={{ gap: spacing.md, marginTop: spacing.md }}>
-            <PrayerRow
+            <ReminderRow
               label="Morning prayers"
+              description="Begin the day with your rule."
               slot={prefs.morningPrayer}
               disabled={subDisabled}
               onToggle={(v) =>
@@ -258,8 +304,9 @@ export default function NotificationsScreen() {
                 })
               }
             />
-            <PrayerRow
+            <ReminderRow
               label="Evening prayers"
+              description="Close the day in prayer."
               slot={prefs.eveningPrayer}
               disabled={subDisabled}
               onToggle={(v) =>
@@ -318,14 +365,20 @@ function ToggleRow({
   );
 }
 
-function PrayerRow({
+// A toggleable reminder with its own time of day. Used for every kind now —
+// the day's feast, scripture readings, fast reminders, name-day greetings,
+// and the morning / evening prayer slots. The chip shows (and edits) the
+// time; the description explains the kind, replaced by "Off" when disabled.
+function ReminderRow({
   label,
+  description,
   slot,
   disabled,
   onToggle,
   onTime,
 }: {
   label: string;
+  description?: string;
   slot: PrayerReminderPref;
   disabled?: boolean;
   onToggle: (v: boolean) => void;
@@ -349,7 +402,8 @@ function PrayerRow({
           <Text style={styles.rowLabel}>{label}</Text>
           <Text style={styles.rowDesc}>
             {slot.enabled
-              ? `Remind me at ${formatTime(slot.hour, slot.minute)}`
+              ? (description ??
+                `Remind me at ${formatTime(slot.hour, slot.minute)}`)
               : "Off"}
           </Text>
         </View>

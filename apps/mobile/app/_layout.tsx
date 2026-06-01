@@ -13,6 +13,8 @@ import { useEffect, useState } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
+import { setDeviceNotificationsSupported } from '@theosis/core/onboarding';
+
 import { ErrorBoundary } from '@/components/theosis/error-boundary';
 import { navigationTheme } from '@/constants/theosis-theme';
 import { setActiveTokenGetter } from '@/lib/auth';
@@ -107,6 +109,11 @@ SplashScreen.preventAutoHideAsync();
 // sets a handler (how a notification renders while the app is open) — no
 // permission prompt, no scheduling.
 configureNotificationHandler();
+
+// This is the mobile app — local on-device notifications exist here, so the
+// onboarding "notifications" step is part of the flow. (Web never calls this,
+// so the shared step machine skips that step on web.)
+setDeviceNotificationsSupported(true);
 
 export const unstable_settings = {
   anchor: '(tabs)',

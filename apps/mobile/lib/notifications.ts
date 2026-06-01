@@ -20,13 +20,18 @@
 
 import * as Notifications from "expo-notifications";
 import { Platform } from "react-native";
-import type { DailyResponse, LibraryPerson } from "@theosis/core";
+import type {
+  DailyResponse,
+  LibraryPerson,
+  ReadingAssignment,
+} from "@theosis/core";
 
 import { getApi } from "./api";
 import { resolveFastLabel } from "./fasting";
 import { monthDayFromIso, parseFeastDayLabel, type MonthDay } from "./celebration";
 import {
   type NotificationPrefs,
+  type PrayerReminderPref,
   type ProfilePrefs,
   getNotificationPrefs,
   getProfilePrefs,
@@ -168,7 +173,12 @@ async function runReschedule(): Promise<void> {
   }
 
   // 2) Dated content window.
-  if (prefs.feastSaint || prefs.fastReminder || prefs.personalOccasions) {
+  if (
+    prefs.feastSaint.enabled ||
+    prefs.fastReminder.enabled ||
+    prefs.personalOccasions.enabled ||
+    prefs.dailyReadings.enabled
+  ) {
     await scheduleContentWindow(prefs);
   }
 
@@ -186,7 +196,7 @@ async function scheduleContentWindow(prefs: NotificationPrefs): Promise<void> {
 
   // Patron, for name-day detection — fetched once for the whole window.
   let patron: LibraryPerson | null = null;
-  if (prefs.personalOccasions && profile.patronSaintSlug) {
+  if (prefs.personalOccasions.enabled && profile.patronSaintSlug) {
     try {
       const res = await api.fetchLibraryPeople();
       patron =
@@ -197,22 +207,21 @@ async function scheduleContentWindow(prefs: NotificationPrefs): Promise<void> {
   }
 
   const now = new Date();
-  const { hour, minute } = prefs.morningPrayer; // content rides the morning slot
 
   for (let offset = 0; offset < CONTENT_WINDOW_DAYS; offset++) {
-    const fireAt = new Date(
+    // The calendar day we're scheduling for (local midnight + offset). Each
+    // enabled content kind then fires at its own configured time on this day.
+    const day = new Date(
       now.getFullYear(),
       now.getMonth(),
       now.getDate() + offset,
-      hour,
-      minute,
+      0,
+      0,
       0,
       0,
     );
-    // Skip a slot already past (e.g. it's 9am and the morning slot is 7am).
-    if (fireAt.getTime() <= Date.now() + 5_000) continue;
+    const iso = localIso(day);
 
-    const iso = localIso(fireAt);
     let daily: DailyResponse | undefined;
     try {
       daily = await api.fetchDaily(iso, { calendarSystem, jurisdiction });
@@ -221,7 +230,8 @@ async function scheduleContentWindow(prefs: NotificationPrefs): Promise<void> {
     }
     if (!daily) continue;
 
-    const composed = composeDailyNotification({
+    // One piece per enabled kind that actually has something to say today.
+    const pieces = collectPieces({
       iso,
       daily,
       prefs,
@@ -229,87 +239,218 @@ async function scheduleContentWindow(prefs: NotificationPrefs): Promise<void> {
       birthday: profile.birthday,
       fastingLevel: profile.fastingLevel,
     });
-    if (!composed) continue;
+    if (pieces.length === 0) continue;
 
-    await Notifications.scheduleNotificationAsync({
-      content: { title: composed.title, body: composed.body },
-      trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: fireAt },
-    });
+    // Group pieces that share a time so same-time kinds arrive as ONE
+    // notification (the default, when the user hasn't staggered them) rather
+    // than a burst of banners. Different times fan out into separate slots.
+    const slots = new Map<string, ContentPiece[]>();
+    for (const piece of pieces) {
+      const key = `${piece.time.hour}:${piece.time.minute}`;
+      const bucket = slots.get(key);
+      if (bucket) bucket.push(piece);
+      else slots.set(key, [piece]);
+    }
+
+    for (const bucket of slots.values()) {
+      const { hour, minute } = bucket[0].time;
+      const fireAt = new Date(
+        day.getFullYear(),
+        day.getMonth(),
+        day.getDate(),
+        hour,
+        minute,
+        0,
+        0,
+      );
+      // Skip a slot already past (e.g. it's 9am and this slot is 8am today).
+      if (fireAt.getTime() <= Date.now() + 5_000) continue;
+
+      const composed = composeSlot(bucket);
+      if (!composed) continue;
+
+      await Notifications.scheduleNotificationAsync({
+        content: { title: composed.title, body: composed.body },
+        trigger: {
+          type: Notifications.SchedulableTriggerInputTypes.DATE,
+          date: fireAt,
+        },
+      });
+    }
   }
 }
 
-function composeDailyNotification(args: {
+// One scheduled "line" of the day's content, tagged with the time it fires.
+type ContentPiece = {
+  kind: "personal" | "feast" | "fast" | "readings";
+  time: PrayerReminderPref;
+  // Title-worthy phrasing when this piece leads its slot.
+  headline: string;
+  // Longer descriptive line for the notification body.
+  detail?: string;
+};
+
+// Title precedence when several kinds share a slot.
+const PIECE_ORDER: Record<ContentPiece["kind"], number> = {
+  personal: 0,
+  feast: 1,
+  fast: 2,
+  readings: 3,
+};
+
+function collectPieces(args: {
   iso: string;
   daily: DailyResponse;
   prefs: NotificationPrefs;
   patron: LibraryPerson | null;
   birthday: string | undefined;
   fastingLevel: ProfilePrefs["fastingLevel"] | undefined;
-}): { title: string; body: string } | null {
+}): ContentPiece[] {
   const { iso, daily, prefs, patron, birthday, fastingLevel } = args;
   const d = daily.daily;
   const today = monthDayFromIso(iso);
+  const pieces: ContentPiece[] = [];
 
-  // --- Personal occasions: name-day / birthday greeting --------------------
-  let greeting: string | null = null;
-  if (prefs.personalOccasions && today) {
-    const isBirthday = sameMonthDay(monthDayFromIso(birthday ?? null), today);
-    let isNameDay = false;
-    if (patron) {
-      // Signal A — patron appears in this date's composed commemoration.
-      const ids = new Set<string>();
-      for (const id of d.saintIds ?? []) ids.add(id);
-      for (const c of d.additionalCommemorations ?? []) {
-        if (c.saintId) ids.add(c.saintId);
-      }
-      for (const s of daily.saints ?? []) ids.add(s.id);
-      const signalA = ids.has(patron.id) || ids.has(patron.slug);
-      // Signal B — patron's fixed feast-day label matches this date.
-      const signalB = parseFeastDayLabel(patron.feastDayLabel).some((md) =>
-        sameMonthDay(md, today),
-      );
-      isNameDay = signalA || signalB;
-    }
-    if (isNameDay && patron) {
-      const name = patron.honorific
-        ? `${patron.honorific} ${patron.name.split(",")[0]}`
-        : patron.name.split(",")[0];
-      greeting = `Many years! Today the Church commemorates your patron, ${name}.`;
-    } else if (isBirthday) {
-      greeting = "Many years on your birthday! 🎂";
+  // Personal — name-day / birthday greeting.
+  if (prefs.personalOccasions.enabled && today) {
+    const greeting = composeGreeting({ daily, today, patron, birthday });
+    if (greeting) {
+      pieces.push({
+        kind: "personal",
+        time: prefs.personalOccasions,
+        headline: greeting,
+      });
     }
   }
 
-  // --- Feast / commemoration ----------------------------------------------
-  const feastTitle = prefs.feastSaint ? d.feastLabel || d.title : null;
+  // Feast / commemoration.
+  if (prefs.feastSaint.enabled) {
+    const feastTitle = d.feastLabel || d.title;
+    if (feastTitle) {
+      pieces.push({
+        kind: "feast",
+        time: prefs.feastSaint,
+        headline: feastTitle,
+        detail: d.summary ? truncate(d.summary, 140) : undefined,
+      });
+    }
+  }
 
-  // --- Fast ----------------------------------------------------------------
-  // Only announce actual fasts; "Fast Free" days don't warrant a push.
-  let fastLine: string | null = null;
-  if (prefs.fastReminder) {
+  // Fast — only announce actual fasts; "Fast Free" days don't warrant a push.
+  if (prefs.fastReminder.enabled) {
     const { label, isFastFree } = resolveFastLabel(iso, d.fastLabel, fastingLevel);
-    if (!isFastFree) fastLine = label;
+    if (!isFastFree) {
+      pieces.push({ kind: "fast", time: prefs.fastReminder, headline: label });
+    }
   }
 
-  // --- Assemble (priority: greeting → feast → fast) ------------------------
+  // Daily scripture readings — the appointed Epistle & Gospel.
+  if (prefs.dailyReadings.enabled) {
+    const refs = composeReadings(daily.readings);
+    if (refs) {
+      pieces.push({
+        kind: "readings",
+        time: prefs.dailyReadings,
+        headline: "Today's readings",
+        detail: refs,
+      });
+    }
+  }
+
+  return pieces;
+}
+
+// Build one notification from the pieces sharing a single time slot. Title
+// precedence: greeting → feast → fast → readings; the rest fold into the body.
+function composeSlot(
+  pieces: ContentPiece[],
+): { title: string; body: string } | null {
+  if (pieces.length === 0) return null;
+  const sorted = [...pieces].sort(
+    (a, b) => PIECE_ORDER[a.kind] - PIECE_ORDER[b.kind],
+  );
+  const find = (k: ContentPiece["kind"]) => sorted.find((p) => p.kind === k);
+  const personal = find("personal");
+  const feast = find("feast");
+  const fast = find("fast");
+  const readings = find("readings");
+
   const bodyParts: string[] = [];
   let title: string;
-  if (greeting) {
+  if (personal) {
     title = "Theosis";
-    bodyParts.push(greeting);
-    if (feastTitle) bodyParts.push(feastTitle);
-    if (fastLine) bodyParts.push(fastLine);
-  } else if (feastTitle) {
-    title = feastTitle;
-    if (fastLine) bodyParts.push(fastLine);
-    else if (d.summary) bodyParts.push(truncate(d.summary, 140));
-  } else if (fastLine) {
-    title = fastLine;
+    bodyParts.push(personal.headline);
+    if (feast) bodyParts.push(feast.headline);
+    if (fast) bodyParts.push(fast.headline);
+    if (readings?.detail) bodyParts.push(readings.detail);
+  } else if (feast) {
+    title = feast.headline;
+    if (fast) bodyParts.push(fast.headline);
+    if (readings?.detail) bodyParts.push(readings.detail);
+    else if (!fast && feast.detail) bodyParts.push(feast.detail);
+  } else if (fast) {
+    title = fast.headline;
+    if (readings?.detail) bodyParts.push(readings.detail);
+  } else if (readings) {
+    title = readings.headline;
+    if (readings.detail) bodyParts.push(readings.detail);
   } else {
-    return null; // nothing worth sending this day
+    return null;
   }
 
   return { title, body: bodyParts.join(" · ") };
+}
+
+// Name-day / birthday greeting for the day, or null.
+function composeGreeting(args: {
+  daily: DailyResponse;
+  today: MonthDay;
+  patron: LibraryPerson | null;
+  birthday: string | undefined;
+}): string | null {
+  const { daily, today, patron, birthday } = args;
+  const d = daily.daily;
+  const isBirthday = sameMonthDay(monthDayFromIso(birthday ?? null), today);
+  let isNameDay = false;
+  if (patron) {
+    // Signal A — patron appears in this date's composed commemoration.
+    const ids = new Set<string>();
+    for (const id of d.saintIds ?? []) ids.add(id);
+    for (const c of d.additionalCommemorations ?? []) {
+      if (c.saintId) ids.add(c.saintId);
+    }
+    for (const s of daily.saints ?? []) ids.add(s.id);
+    const signalA = ids.has(patron.id) || ids.has(patron.slug);
+    // Signal B — patron's fixed feast-day label matches this date.
+    const signalB = parseFeastDayLabel(patron.feastDayLabel).some((md) =>
+      sameMonthDay(md, today),
+    );
+    isNameDay = signalA || signalB;
+  }
+  if (isNameDay && patron) {
+    const name = patron.honorific
+      ? `${patron.honorific} ${patron.name.split(",")[0]}`
+      : patron.name.split(",")[0];
+    return `Many years! Today the Church commemorates your patron, ${name}.`;
+  }
+  if (isBirthday) return "Many years on your birthday! 🎂";
+  return null;
+}
+
+// Condense the day's lectionary into one line, e.g.
+// "Epistle: Rom 5:1–10 · Gospel: John 1:1–17". Caps at three references.
+function composeReadings(readings: ReadingAssignment[]): string | null {
+  if (!readings || readings.length === 0) return null;
+  const parts: string[] = [];
+  for (const r of readings) {
+    const ref = r.scripture?.label?.trim();
+    if (!ref) continue;
+    const label = r.label?.trim();
+    parts.push(label ? `${label}: ${ref}` : ref);
+    if (parts.length === 3) break;
+  }
+  if (parts.length === 0) return null;
+  return truncate(parts.join(" · "), 150);
 }
 
 // Fire an immediate preview notification — used by the "Send a test" row in

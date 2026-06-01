@@ -19,6 +19,7 @@ import {
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
+import { rescheduleAll } from "./notifications";
 import { setOnboardingStatus, updateProfilePrefs } from "./preferences";
 
 type OnboardingState = {
@@ -92,6 +93,13 @@ export const useOnboardingState = create<OnboardingState>()(
         if (draft.textSize !== undefined) patch.textSize = draft.textSize;
         await updateProfilePrefs(patch);
         await setOnboardingStatus("complete");
+        // Lay down the notification schedule now that the profile (calendar,
+        // jurisdiction, patron, birthday, fasting level) is committed — the
+        // notifications onboarding step only persisted the user's choices.
+        // Fire-and-forget: it fetches the daily window over the network and
+        // swallows its own errors, so it must not block the redirect into
+        // the app. A no-op if the user left notifications off.
+        void rescheduleAll();
         set({ currentStep: "welcome", draft: INITIAL_DRAFT });
       },
     }),

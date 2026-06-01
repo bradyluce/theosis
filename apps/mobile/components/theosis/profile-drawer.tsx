@@ -151,8 +151,17 @@ export function ProfileDrawer({
             contentContainerStyle={styles.scrollContent}
             showsVerticalScrollIndicator={false}
           >
-            {/* Identity — halo avatar with glow, name in display italic */}
-            <View style={styles.identity}>
+            {/* Identity — tap through to the You tab. Halo avatar with glow,
+                name in display italic. */}
+            <Pressable
+              onPress={() => navigate("/you")}
+              style={({ pressed }) => [
+                styles.identity,
+                pressed && { opacity: 0.7 },
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel="Open your profile"
+            >
               <Halo size={72} glow>
                 {patronIcon ? (
                   <Image
@@ -165,7 +174,14 @@ export function ProfileDrawer({
                   <Text style={styles.avatarLetter}>{initial}</Text>
                 )}
               </Halo>
-              <Text style={styles.displayName}>{displayName}</Text>
+              <View style={styles.identityNameRow}>
+                <Text style={styles.displayName}>{displayName}</Text>
+                <Feather
+                  name="chevron-right"
+                  size={16}
+                  color={colors.inkSoft}
+                />
+              </View>
               {statusLabel ? (
                 <View style={styles.statusPill}>
                   <Text style={styles.statusPillLabel}>{statusLabel}</Text>
@@ -177,7 +193,7 @@ export function ProfileDrawer({
                   <Text style={styles.parish}>{profile.parish}</Text>
                 </View>
               ) : null}
-            </View>
+            </Pressable>
 
             <GiltRule full style={styles.divider} />
 
@@ -188,13 +204,15 @@ export function ProfileDrawer({
                 label="Day streak"
                 size={42}
                 tone="accent"
+                labelVariant="serif"
               />
               <View style={styles.statSeparator} />
               <DisplayNumeral
                 value={savedCount}
-                label="Saved"
+                label="Saved verses"
                 size={42}
                 align="right"
+                labelVariant="serif"
               />
             </View>
 
@@ -205,25 +223,41 @@ export function ProfileDrawer({
                 Practice
               </Eyebrow>
               <DrawerLink
-                glyph="user"
-                label="Profile"
-                onPress={() => navigate("/you")}
-              />
-              <DrawerLink
                 glyph="feather"
                 label="Prayer Rule"
                 onPress={() => navigate("/prayer")}
               />
               <DrawerLink
-                glyph="bookmark"
-                label="Library"
-                onPress={() => navigate("/library")}
+                glyph="users"
+                label="Diptych"
+                onPress={() => navigate("/diptych")}
+              />
+              <DrawerLink
+                glyph="book-open"
+                label="Reading plans"
+                onPress={() => navigate("/reading-plans")}
               />
             </View>
 
             <View style={styles.linkSection}>
               <Eyebrow tone="soft" style={styles.linkSectionLabel}>
-                Devotion
+                Nearby
+              </Eyebrow>
+              <DrawerLink
+                glyph="map-pin"
+                label="Find a parish"
+                onPress={() => navigate("/parishes")}
+              />
+              <DrawerLink
+                glyph="compass"
+                label="Find a monastery"
+                onPress={() => navigate("/monasteries")}
+              />
+            </View>
+
+            <View style={styles.linkSection}>
+              <Eyebrow tone="soft" style={styles.linkSectionLabel}>
+                You
               </Eyebrow>
               <DrawerLink
                 glyph="award"
@@ -232,8 +266,13 @@ export function ProfileDrawer({
                 onPress={() =>
                   profile.patronSaintSlug
                     ? navigate(`/people/${profile.patronSaintSlug}`)
-                    : navigate("/settings")
+                    : navigate("/saint-picker")
                 }
+              />
+              <DrawerLink
+                glyph="bell"
+                label="Notifications"
+                onPress={() => navigate("/notifications")}
               />
               <DrawerLink
                 glyph="settings"
@@ -321,6 +360,11 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     gap: spacing.md,
     paddingVertical: spacing.md,
+  },
+  identityNameRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
   },
   avatarLetter: {
     fontFamily: fonts.serifBoldItalic,

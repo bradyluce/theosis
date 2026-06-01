@@ -286,9 +286,14 @@ export type NotificationPrefs = {
   // user can silence Theosis without revoking the OS grant, and so the
   // launch scheduler knows whether to lay anything down.
   enabled: boolean;
-  feastSaint: boolean; // today's commemoration / feast
-  fastReminder: boolean; // what the Church fasts today
-  personalOccasions: boolean; // name-day, birthday, streak-at-risk
+  // Every reminder kind now carries its own enabled flag + time of day, so
+  // the user can stagger the day's feast, readings, fast, and greetings
+  // independently of the prayer reminders. (These four were plain booleans
+  // before — normalizeNotificationPrefs migrates the old shape on read.)
+  feastSaint: PrayerReminderPref; // today's commemoration / feast
+  fastReminder: PrayerReminderPref; // what the Church fasts today
+  personalOccasions: PrayerReminderPref; // name-day, birthday
+  dailyReadings: PrayerReminderPref; // the appointed Epistle & Gospel
   morningPrayer: PrayerReminderPref;
   eveningPrayer: PrayerReminderPref;
   // ISO "YYYY-MM-DD" the dated window was last laid through, so the launch
@@ -298,9 +303,10 @@ export type NotificationPrefs = {
 
 export const DEFAULT_NOTIFICATION_PREFS: NotificationPrefs = {
   enabled: false,
-  feastSaint: true,
-  fastReminder: true,
-  personalOccasions: true,
+  feastSaint: { enabled: true, hour: 8, minute: 0 },
+  fastReminder: { enabled: true, hour: 8, minute: 0 },
+  personalOccasions: { enabled: true, hour: 8, minute: 0 },
+  dailyReadings: { enabled: true, hour: 8, minute: 0 },
   morningPrayer: { enabled: true, hour: 7, minute: 0 },
   eveningPrayer: { enabled: false, hour: 20, minute: 30 },
 };
@@ -1389,34 +1395,78 @@ export async function setFastBannerCollapsed(collapsed: boolean): Promise<void> 
 
 // --- Notification settings (local-only) ------------------------------------
 
+// Coerce one stored reminder slot into the current { enabled, hour, minute }
+// shape. Handles three cases: the legacy plain boolean (feast/fast/personal
+// predate per-type times), a partial/complete object, and missing/garbage.
+function coerceReminder(
+  value: unknown,
+  fallback: PrayerReminderPref,
+): PrayerReminderPref {
+  if (typeof value === "boolean") return { ...fallback, enabled: value };
+  if (value && typeof value === "object") {
+    const o = value as Partial<PrayerReminderPref>;
+    return {
+      enabled: typeof o.enabled === "boolean" ? o.enabled : fallback.enabled,
+      hour: typeof o.hour === "number" ? o.hour : fallback.hour,
+      minute: typeof o.minute === "number" ? o.minute : fallback.minute,
+    };
+  }
+  return { ...fallback };
+}
+
+// Normalize the persisted blob (any historical shape) into a complete,
+// current NotificationPrefs. Used by BOTH read and write so the stored value
+// converges to the new shape and the UI never sees a stray boolean.
+function normalizeNotificationPrefs(stored: unknown): NotificationPrefs {
+  if (!stored || typeof stored !== "object") {
+    return { ...DEFAULT_NOTIFICATION_PREFS };
+  }
+  const s = stored as Record<string, unknown>;
+  return {
+    enabled:
+      typeof s.enabled === "boolean"
+        ? s.enabled
+        : DEFAULT_NOTIFICATION_PREFS.enabled,
+    feastSaint: coerceReminder(s.feastSaint, DEFAULT_NOTIFICATION_PREFS.feastSaint),
+    fastReminder: coerceReminder(
+      s.fastReminder,
+      DEFAULT_NOTIFICATION_PREFS.fastReminder,
+    ),
+    personalOccasions: coerceReminder(
+      s.personalOccasions,
+      DEFAULT_NOTIFICATION_PREFS.personalOccasions,
+    ),
+    dailyReadings: coerceReminder(
+      s.dailyReadings,
+      DEFAULT_NOTIFICATION_PREFS.dailyReadings,
+    ),
+    morningPrayer: coerceReminder(
+      s.morningPrayer,
+      DEFAULT_NOTIFICATION_PREFS.morningPrayer,
+    ),
+    eveningPrayer: coerceReminder(
+      s.eveningPrayer,
+      DEFAULT_NOTIFICATION_PREFS.eveningPrayer,
+    ),
+    scheduledThrough:
+      typeof s.scheduledThrough === "string" ? s.scheduledThrough : undefined,
+  };
+}
+
 export async function getNotificationPrefs(): Promise<NotificationPrefs> {
   const prefs = await loadPrefs();
-  const stored = prefs.notifications;
-  if (!stored) return { ...DEFAULT_NOTIFICATION_PREFS };
-  // Merge over defaults so fields added in a later release rehydrate with a
-  // sane value instead of undefined.
-  return {
-    ...DEFAULT_NOTIFICATION_PREFS,
-    ...stored,
-    morningPrayer: {
-      ...DEFAULT_NOTIFICATION_PREFS.morningPrayer,
-      ...stored.morningPrayer,
-    },
-    eveningPrayer: {
-      ...DEFAULT_NOTIFICATION_PREFS.eveningPrayer,
-      ...stored.eveningPrayer,
-    },
-  };
+  return normalizeNotificationPrefs(prefs.notifications);
 }
 
 // Serialized read-modify-write — settings edits and the launch reschedule
 // (which stamps scheduledThrough) can fire close together; mutatePrefs keeps
-// them from clobbering each other.
+// them from clobbering each other. `current` is normalized first so a patch
+// that touches one slot doesn't leave the others in a legacy boolean shape.
 export async function setNotificationPrefs(
   patch: Partial<NotificationPrefs>,
 ): Promise<NotificationPrefs> {
   return mutatePrefs((prefs) => {
-    const current = prefs.notifications ?? DEFAULT_NOTIFICATION_PREFS;
+    const current = normalizeNotificationPrefs(prefs.notifications);
     const next: NotificationPrefs = { ...current, ...patch };
     return { next: { ...prefs, notifications: next }, result: next };
   });
