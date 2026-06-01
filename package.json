@@ -22,6 +22,7 @@
     "normalize:bibles:demo": "tsx scripts/ingest/slice-generated-bibles.ts",
     "normalize:commentary": "tsx scripts/normalize/normalize-commentary.ts",
     "build:search-index": "tsx scripts/build-search-commentary-index.ts",
+    "build:library-chunks": "tsx scripts/search/build-library-chunks.ts",
     "embed:content": "tsx scripts/search/build-embeddings.ts",
     "normalize:menaion-people": "tsx scripts/normalize/normalize-menaion-people.ts",
     "push:commentary:s3": "tsx scripts/push/push-commentary-to-s3.ts",

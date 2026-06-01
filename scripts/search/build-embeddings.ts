@@ -44,6 +44,7 @@ type CompactDoc = { id: string; t: string; h: string; k: string; s: string };
 type CommentaryIndex = { version: string; docs: CompactDoc[] };
 
 type LibraryEntry = {
+  id?: string;
   workId: string;
   workSlug: string;
   workTitle: string;
@@ -96,11 +97,17 @@ function loadCommentaryRows(): Row[] {
 }
 
 function loadLibraryRows(): Row[] {
-  const p = join(SEARCH_DIR, "library.json");
+  // Prefer the chunked index (focused per-passage rows; see
+  // scripts/search/build-library-chunks.ts). Fall back to the chapter-level
+  // library.json if chunks haven't been built yet.
+  const chunked = join(SEARCH_DIR, "library-chunks.json");
+  const p = existsSync(chunked) ? chunked : join(SEARCH_DIR, "library.json");
   if (!existsSync(p)) return [];
   const idx = JSON.parse(readFileSync(p, "utf8")) as LibraryIndex;
   return idx.entries.map((e) => ({
-    id: `library-${e.chapterId}`,
+    // Chunk ids are `library-<chapterId>#<i>`; chapter-level ids are
+    // `library-<chapterId>`. The route dedups work rows back to one per chapter.
+    id: e.id ?? `library-${e.chapterId}`,
     kind: "work",
     title: e.chapterTitle
       ? `${e.workTitle} — ${e.chapterTitle}`
