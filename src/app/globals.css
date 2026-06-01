@@ -16,6 +16,13 @@
   --accent: #d4a857;
   --accent-soft: rgba(212, 168, 87, 0.14);
   --accent-strong: #e6b966;
+
+  /* Secondary accents shared with the mobile app (apps/mobile/constants/
+     theosis-theme.ts). Defined globally so Tailwind can mint utilities;
+     only the marketing surface actually uses them. */
+  --oxblood: #8b3a3a;
+  --oxblood-ink: #c97a7a;
+  --line-gilt: rgba(212, 168, 87, 0.28);
 }
 
 @theme inline {
@@ -31,6 +38,9 @@
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-accent-strong: var(--accent-strong);
+  --color-oxblood: var(--oxblood);
+  --color-oxblood-ink: var(--oxblood-ink);
+  --color-line-gilt: var(--line-gilt);
   --font-sans: var(--font-instrument-sans);
   --font-serif: var(--font-newsreader);
   --font-mono: var(--font-ibm-plex-mono);
@@ -113,6 +123,103 @@
 
   @media (prefers-reduced-motion: reduce) {
     .verse-glow {
+      animation: none;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Marketing surface — the public landing + legal pages.
+
+   The mobile app runs a warmer palette than the web reader ("candlelit gilt
+   on dark wood"): a warm near-black canvas and parchment-ivory ink rather than
+   the reader's cool graphite/white. We re-bind the palette CSS variables on
+   this wrapper only, so every existing color utility (text-ink, bg-surface,
+   border-line, …) re-resolves to the warm value INSIDE marketing without
+   touching the reader. `accent` is identical in both systems, so it's omitted.
+--------------------------------------------------------------------------- */
+.marketing-surface {
+  --background: #0a0908;
+  --surface: #131210;
+  --surface-strong: #1c1a18;
+  --surface-elevated: #252220;
+  --ink: #f4ecd8;
+  --ink-muted: #b8ad95;
+  --ink-soft: #948e84;
+  --line: rgba(244, 236, 216, 0.07);
+  --line-strong: rgba(244, 236, 216, 0.14);
+}
+
+@layer components {
+  /* Gilt gradient lettering — for the emphasized clause in display headlines.
+     Reads like gold leaf catching candlelight. */
+  .text-gilt {
+    background: linear-gradient(178deg, #f0cd84 0%, #e6b966 38%, #d4a857 64%, #b9893c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Hairline that fades gilt → transparent, for section rules and underlines. */
+  .rule-gilt {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--line-gilt), transparent);
+  }
+
+  /* Scroll-reveal: start dropped + faded, snap into place when .in-view is
+     toggled on by the IntersectionObserver in reveal.tsx. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity 0.9s ease,
+      transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Candlelight — a soft radial glow that slowly breathes behind the hero
+     cross. Pair with a radial-gradient background on the element. */
+  .candle-breathe {
+    animation: candleBreathe 7s ease-in-out infinite;
+  }
+  @keyframes candleBreathe {
+    0%,
+    100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.82;
+      transform: scale(1.05);
+    }
+  }
+
+  /* A single drifting glint for the hero cross sheen. */
+  .gilt-sheen {
+    animation: giltSheen 9s ease-in-out infinite;
+  }
+  @keyframes giltSheen {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .candle-breathe,
+    .gilt-sheen {
       animation: none;
     }
   }

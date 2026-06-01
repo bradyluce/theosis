@@ -15,6 +15,9 @@ const instrumentSans = Instrument_Sans({
 const newsreader = Newsreader({
   variable: "--font-newsreader",
   subsets: ["latin"],
+  // Newsreader is a variable font (weights 200–800); load italic too — the
+  // marketing headlines and the legal pages lean on italic display type.
+  style: ["normal", "italic"],
   display: "swap",
 });
 
