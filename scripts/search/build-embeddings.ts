@@ -167,7 +167,7 @@ async function main() {
     );
     const values = chunk.map(
       (r, j) =>
-        sql`(${r.id}, ${r.kind}, ${r.title}, ${r.href}, ${r.kicker}, ${r.snippet}, ${toVectorLiteral(vectors[j])}::vector)`,
+        sql`(${r.id}, ${r.kind}, ${r.title}, ${r.href}, ${r.kicker}, ${r.snippet}, ${toVectorLiteral(vectors[j])}::halfvec)`,
     );
     await db.execute(sql`
       INSERT INTO content_embeddings (id, kind, title, href, kicker, snippet, embedding)

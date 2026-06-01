@@ -25,7 +25,7 @@ import {
   timestamp,
   uniqueIndex,
   uuid,
-  vector,
+  halfvec,
 } from "drizzle-orm/pg-core";
 
 // ---------------------------------------------------------------------------
@@ -511,12 +511,15 @@ export const contentEmbeddings = pgTable(
     href: text("href").notNull(),
     kicker: text("kicker").notNull(),
     snippet: text("snippet").notNull(),
-    embedding: vector("embedding", { dimensions: 384 }).notNull(),
+    // halfvec (2 bytes/dim vs 4 for vector) — halves storage + index size so
+    // the full ~156k-row corpus fits under Neon's 512 MB project cap, with
+    // negligible recall loss at 384 dims.
+    embedding: halfvec("embedding", { dimensions: 384 }).notNull(),
   },
   (t) => [
     index("content_embeddings_embedding_hnsw").using(
       "hnsw",
-      t.embedding.op("vector_cosine_ops"),
+      t.embedding.op("halfvec_cosine_ops"),
     ),
   ],
 );

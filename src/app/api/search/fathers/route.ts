@@ -63,9 +63,9 @@ export async function GET(request: NextRequest) {
     // <=> is cosine distance (vector_cosine_ops); score = 1 - distance.
     const res = await db.execute(sql`
       SELECT id, kind, title, href, kicker, snippet,
-             1 - (embedding <=> ${vec}::vector) AS score
+             1 - (embedding <=> ${vec}::halfvec) AS score
       FROM content_embeddings
-      ORDER BY embedding <=> ${vec}::vector
+      ORDER BY embedding <=> ${vec}::halfvec
       LIMIT ${RESULT_LIMIT}
     `);
     const rows = (res as { rows?: Record<string, unknown>[] }).rows ?? [];
