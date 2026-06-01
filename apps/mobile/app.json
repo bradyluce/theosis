@@ -127,7 +127,7 @@
       "typedRoutes": true
     },
     "runtimeVersion": {
-      "policy": "sdkVersion"
+      "policy": "fingerprint"
     },
     "extra": {
       "apiBaseUrl": "https://theosis-app-brady-luces-projects.vercel.app",
