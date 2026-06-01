@@ -65,6 +65,7 @@ import { parseMinorAnteNicene } from "./parse-minor-ante-nicene";
 import { parseApocrypha } from "./parse-apocrypha";
 import { parseReferenceWorks } from "./parse-reference-works";
 import { parseEarlyLiturgies } from "./parse-early-liturgies";
+import { parseHapgoodLiturgies } from "./parse-hapgood-liturgies";
 import { parseJerome } from "./parse-jerome";
 import { parseAmbrose } from "./parse-ambrose";
 import { parseChurchHistorians } from "./parse-church-historians";
@@ -959,6 +960,27 @@ function main() {
   );
   console.log(
     `[early-liturgies] ${earlyLiturgies.works.length} liturgies, ${earlyLiturgies.chapters.length} chapters, ${liturgyParagraphs} prayers/paragraphs.`,
+  );
+
+  // ── Hapgood Service Book — Chrysostom / Basil / Presanctified (1906) ─────────
+  const hapgoodLiturgies = parseHapgoodLiturgies({
+    rawRoot: join(REPO_ROOT, "content/raw/liturgy"),
+  });
+  if (!hapgoodLiturgies.chapters || hapgoodLiturgies.chapters.length === 0) {
+    throw new Error("[hapgood-liturgies] No liturgies parsed.");
+  }
+  writeFileSync(
+    join(OUTPUT_DIRECTORY, "hapgood-liturgies.json"),
+    `${JSON.stringify(hapgoodLiturgies, null, 2)}\n`,
+    "utf8",
+  );
+  const hapgoodParagraphs = hapgoodLiturgies.chapters.reduce(
+    (sum, chapter) =>
+      sum + chapter.sections.reduce((s, sec) => s + sec.paragraphs.length, 0),
+    0,
+  );
+  console.log(
+    `[hapgood-liturgies] ${hapgoodLiturgies.works.length} liturgies, ${hapgoodParagraphs} prayers/paragraphs.`,
   );
 
   // ── Jerome — NPNF Series II, Vol. 6 ─────────────────────────────────────────

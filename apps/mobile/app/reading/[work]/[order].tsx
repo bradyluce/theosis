@@ -42,6 +42,28 @@ import {
 // typographic gravitas so reading the Fathers feels of-a-piece with
 // reading Scripture.
 
+// --- Liturgy speaker voices ------------------------------------------------
+// The early-liturgy works (St. James, St. Mark, the Liturgy of the Blessed
+// Apostles) carry their rubrics as short italic paragraphs — "The Priest.",
+// "The Deacon.", "The People." — followed by the spoken/sung text. We don't
+// store a speaker on each spoken line, so we derive it at render time: a
+// rubric that names a voice sets the "current speaker," and every line after
+// it inherits that voice until the next naming rubric. Priest reads bold,
+// Deacon italic, People (and Singers/Readers) regular.
+type SpeakerRole = "priest" | "deacon" | "people" | null;
+
+// Pull the speaker out of a rubric's text. Rubrics that don't name anyone
+// ("(Aloud.)", "Prayer of the veil.", "And again.") return null, which leaves
+// the current voice unchanged — the priest keeps speaking through his prayer.
+function speakerFromRubric(rubricText: string): SpeakerRole {
+  const t = rubricText.toLowerCase();
+  if (t.includes("priest") || t.includes("bishop")) return "priest";
+  if (t.includes("deacon")) return "deacon"; // also sub-deacon, archdeacon
+  if (t.includes("people")) return "people";
+  if (/\b(singer|reader|choir|chanter)/.test(t)) return "people";
+  return null;
+}
+
 export default function ChapterReaderScreen() {
   const params = useLocalSearchParams<{ work: string; order: string }>();
   const workId = params.work;
@@ -176,6 +198,35 @@ export default function ChapterReaderScreen() {
     () => ({ fontSize: 20 * scale, lineHeight: 26 * scale }),
     [scale],
   );
+  // Rubrics (stage directions) sit a touch smaller than the spoken body.
+  const scaledRubric = useMemo(
+    () => ({ fontSize: 14 * scale, lineHeight: 22 * scale }),
+    [scale],
+  );
+
+  // Liturgy works style their paragraphs by speaker; everything else renders
+  // as plain prose. Detected by the `liturgy-` work-id prefix (James, Mark,
+  // Apostles today; the canonical Chrysostom/Basil/Presanctified later). The
+  // memo walks the chapter once, threading the current speaker forward, and
+  // returns a per-paragraph voice map. null for non-liturgy works leaves the
+  // prose path below completely unchanged.
+  const isLiturgy = typeof workId === "string" && workId.startsWith("liturgy-");
+  const liturgyRoles = useMemo(() => {
+    if (!isLiturgy || !chapterQuery.data) return null;
+    const roles = new Map<string, { isRubric: boolean; role: SpeakerRole }>();
+    let current: SpeakerRole = null;
+    chapterQuery.data.chapter.sections.forEach((section, sIdx) => {
+      section.paragraphs.forEach((paragraph, pIdx) => {
+        const isRubric = Boolean(paragraph.html);
+        if (isRubric) {
+          const named = speakerFromRubric(paragraph.text);
+          if (named) current = named;
+        }
+        roles.set(`${sIdx}::${pIdx}`, { isRubric, role: current });
+      });
+    });
+    return roles;
+  }, [isLiturgy, chapterQuery.data]);
 
   // Scroll restoration. When the user returns to a chapter they've
   // already started, we jump them to the last saved scroll position
@@ -383,6 +434,7 @@ export default function ChapterReaderScreen() {
                     const tint = hlColor
                       ? HIGHLIGHT_BY_SLUG.get(hlColor)?.tint
                       : undefined;
+                    const liturgyRole = liturgyRoles?.get(hlKey) ?? null;
                     const onPressParagraph = () =>
                       setActiveParagraph({
                         sectionIdx,
@@ -399,6 +451,7 @@ export default function ChapterReaderScreen() {
                     if (
                       isFirstParagraph &&
                       !section.heading &&
+                      !isLiturgy &&
                       paragraph.text.length > 0
                     ) {
                       const firstChar = paragraph.text.charAt(0);
@@ -443,13 +496,29 @@ export default function ChapterReaderScreen() {
                         </View>
                       );
                     }
+                    // Liturgy voice styling. Rubrics → muted oxblood italic
+                    // (the printed service book's red stage directions);
+                    // Priest → semibold, Deacon → italic, People → regular.
+                    const roleStyle =
+                      liturgyRole === null
+                        ? null
+                        : liturgyRole.isRubric
+                          ? styles.rubric
+                          : liturgyRole.role === "priest"
+                            ? styles.spokenPriest
+                            : liturgyRole.role === "deacon"
+                              ? styles.spokenDeacon
+                              : styles.spokenPeople;
                     return (
                       <Text
                         key={`p-${sectionIdx}-${pIdx}`}
                         onPress={onPressParagraph}
                         style={[
                           styles.paragraph,
-                          scaledParagraph,
+                          roleStyle,
+                          liturgyRole?.isRubric
+                            ? scaledRubric
+                            : scaledParagraph,
                           tint ? { backgroundColor: tint } : null,
                         ]}
                         accessibilityRole="button"
@@ -664,6 +733,21 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     letterSpacing: 0.4,
   },
+
+  // Liturgy speaker voices. Priest in semibold (the dominant praying voice),
+  // Deacon in italic, People/Singers/Readers in regular. Rubrics — the "The
+  // Priest." / "The Deacon." stage directions — render as muted oxblood
+  // italics, echoing the red rubrics of a printed service book. These override
+  // only fontFamily/color on top of styles.paragraph; size comes from the
+  // scaled* style applied after.
+  rubric: {
+    fontFamily: fonts.serifItalic,
+    color: colors.oxbloodInk,
+    letterSpacing: 0.2,
+  },
+  spokenPriest: { fontFamily: fonts.serifBold, color: colors.ink },
+  spokenDeacon: { fontFamily: fonts.serifItalic, color: colors.ink },
+  spokenPeople: { fontFamily: fonts.serif, color: colors.ink },
   // Legacy inline drop-cap style — kept only for reference if we
   // ever need to render a small inline initial.
   dropCap: {
