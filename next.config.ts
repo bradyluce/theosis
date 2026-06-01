@@ -101,6 +101,17 @@ const nextConfig: NextConfig = {
     // explicitly so a future tracer change can't silently drop it and degrade
     // search to seed-only.
     "/api/search": ["./content/normalized/search/commentary.json"],
+    // "Ask the Fathers" embeds the query with @huggingface/transformers, whose
+    // node build loads onnxruntime-node's native binding at import. Vercel's
+    // tracer follows the require()d onnxruntime_binding.node but MISSES the
+    // libonnxruntime.so.1 it dlopen()s at load time (linked RPATH=$ORIGIN, same
+    // dir) — so the function 500s with "libonnxruntime.so.1: cannot open shared
+    // object file". Trace the Linux x64 native libs (~34 MB; Vercel functions
+    // run linux/x64) so the .so ships alongside the .node. Other platforms'
+    // binaries (win32/darwin/linux-arm64, ~175 MB) are intentionally not bundled.
+    "/api/search/fathers": [
+      "./node_modules/onnxruntime-node/bin/napi-v6/linux/x64/**/*",
+    ],
     // Parish routes read out of content/normalized/parishes via
     // src/lib/parishes/store.ts.
     "/api/parishes/near": ["./content/normalized/parishes/**/*.json"],
