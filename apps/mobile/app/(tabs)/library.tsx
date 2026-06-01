@@ -172,6 +172,26 @@ const FEATURED_WORK_SLUGS = new Set([
   "desert-fathers-sayings",
 ]);
 
+// Compose "Honorific Name" without doubling a prefix the name already carries.
+// Some ingested catalog records (e.g. the Philokalia Fathers) bake the
+// honorific into the name field — "St. Gregory of Sinai" — so a naive
+// `${honorific} ${name}` renders "St. St. Gregory of Sinai". Tolerates
+// "St." / "St" / "Saint" equivalence before deciding to prepend.
+function formatPersonName(person: {
+  name: string;
+  honorific?: string | null;
+}): string {
+  const base = person.name.split(",")[0].trim();
+  const honorific = person.honorific?.trim();
+  if (!honorific) return base;
+  const synonyms: Record<string, string> = { st: "saint", saint: "saint" };
+  const norm = (w: string) => synonyms[w] ?? w;
+  const firstWord = base.split(/\s+/)[0]?.toLowerCase().replace(/\.$/, "") ?? "";
+  const honWord = honorific.toLowerCase().replace(/\.$/, "");
+  if (norm(firstWord) === norm(honWord)) return base;
+  return `${honorific} ${base}`;
+}
+
 function useDebounced<T>(value: T, delayMs: number): T {
   const [debounced, setDebounced] = useState(value);
   useEffect(() => {
@@ -350,9 +370,15 @@ export default function LibraryScreen() {
 
   const featuredPerson = useMemo(() => {
     const people = peopleQuery.data?.people ?? [];
-    const pool = people.filter((p) => FEATURED_PERSON_IDS.has(p.id));
+    // Only feature someone we can show a real icon for. A placeholder letter
+    // in the hero slot reads as broken, and several modern Fathers and
+    // non-canonized theologians (Schmemann, Lossky, Ware, Tertullian, Gregory
+    // of Sinai, …) have no public-domain icon. Mirrors the reference-only
+    // guard on Featured Work below.
+    const withIcon = people.filter((p) => p.icon != null);
+    const pool = withIcon.filter((p) => FEATURED_PERSON_IDS.has(p.id));
     const source =
-      pool.length > 0 ? pool : people.filter((p) => p.kind === "father");
+      pool.length > 0 ? pool : withIcon.filter((p) => p.kind === "father");
     if (source.length === 0) return undefined;
     const now = new Date();
     const start = new Date(now.getFullYear(), 0, 0);
@@ -771,9 +797,7 @@ function EditorialContent({
                   Featured · {featuredPerson.kind}
                 </Eyebrow>
                 <Text style={styles.fatherName}>
-                  {featuredPerson.honorific
-                    ? `${featuredPerson.honorific} ${featuredPerson.name.split(",")[0]}`
-                    : featuredPerson.name.split(",")[0]}
+                  {formatPersonName(featuredPerson)}
                 </Text>
                 <Text style={styles.fatherEra}>{featuredPerson.eraLabel}</Text>
               </View>
@@ -808,10 +832,7 @@ function EditorialContent({
               <Text style={styles.workTitle}>{featuredWork.title}</Text>
               {featuredWorkAuthor ? (
                 <Text style={styles.workByline}>
-                  by{" "}
-                  {featuredWorkAuthor.honorific
-                    ? `${featuredWorkAuthor.honorific} ${featuredWorkAuthor.name.split(",")[0]}`
-                    : featuredWorkAuthor.name.split(",")[0]}
+                  by {formatPersonName(featuredWorkAuthor)}
                   {" — "}
                   {featuredWork.eraLabel}
                 </Text>
