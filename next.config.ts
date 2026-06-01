@@ -22,15 +22,12 @@ const nextConfig: NextConfig = {
   // Drizzle's native pg bindings don't tree-shake cleanly in the serverless
   // bundle; mark it external so Next.js doesn't try to inline it.
   //
-  // @huggingface/transformers + onnxruntime-node power the "Ask the Fathers"
-  // semantic-search query embedding (src/lib/search/embeddings.ts). They ship
-  // native binaries that must NOT be bundled — keep them external so Vercel's
-  // tracer includes the prebuilt .node artifacts instead.
-  serverExternalPackages: [
-    "drizzle-orm",
-    "@huggingface/transformers",
-    "onnxruntime-node",
-  ],
+  // ("Ask the Fathers" used to embed queries with @huggingface/transformers +
+  // onnxruntime-node in-process; that ~335 MB native stack blew Vercel's 250 MB
+  // function cap, so query embedding moved to a hosted Cloudflare Workers AI
+  // call — see src/lib/search/embed-query-hosted.ts. No route imports the local
+  // model now; it survives only in the build script, which runs off-Vercel.)
+  serverExternalPackages: ["drizzle-orm"],
   // Vercel serverless functions only bundle files Next.js can statically
   // trace. Many routes read JSON via dynamic `path.join(process.cwd(), ...)`
   // calls — those don't get traced automatically, so without this declaration
@@ -62,15 +59,10 @@ const nextConfig: NextConfig = {
     // through to an empty array in production, which is fine.
     "/dev/icons": ["./public/icons/**/*"],
     "/dev/icons/replace": ["./public/icons/**/*"],
-    // Ask-the-Fathers queries Neon (pgvector) — it does NOT read the keyword
-    // search index, but it inherits the /api/search include below, which drags
-    // the ~56 MB commentary.json into this function. Strip it here.
-    //
-    // The real bloat — onnxruntime-node's ~335 MB multi-platform bin — can NOT
-    // be trimmed with trace excludes: onnxruntime-node is a serverExternalPackage,
-    // so Next copies the whole package verbatim. It's instead pruned to the one
-    // platform Vercel runs (linux/x64) at build time by
-    // scripts/vercel-prune-onnx.mjs (wired into the `build` script).
+    // Ask-the-Fathers embeds the query via a hosted call (Cloudflare Workers AI,
+    // see src/lib/search/embed-query-hosted.ts) and queries Neon (pgvector) — it
+    // does NOT read the keyword search index. Guard against the /api/search
+    // include below leaking the ~56 MB commentary.json into this function.
     "/api/search/fathers": [
       "./content/normalized/search/**/*",
     ],
@@ -113,17 +105,6 @@ const nextConfig: NextConfig = {
     // explicitly so a future tracer change can't silently drop it and degrade
     // search to seed-only.
     "/api/search": ["./content/normalized/search/commentary.json"],
-    // "Ask the Fathers" embeds the query with @huggingface/transformers, whose
-    // node build loads onnxruntime-node's native binding at import. Vercel's
-    // tracer follows the require()d onnxruntime_binding.node but MISSES the
-    // libonnxruntime.so.1 it dlopen()s at load time (linked RPATH=$ORIGIN, same
-    // dir) — so the function 500s with "libonnxruntime.so.1: cannot open shared
-    // object file". Trace the Linux x64 native libs (~34 MB; Vercel functions
-    // run linux/x64) so the .so ships alongside the .node. Other platforms'
-    // binaries (win32/darwin/linux-arm64, ~175 MB) are intentionally not bundled.
-    "/api/search/fathers": [
-      "./node_modules/onnxruntime-node/bin/napi-v6/linux/x64/**/*",
-    ],
     // Parish routes read out of content/normalized/parishes via
     // src/lib/parishes/store.ts.
     "/api/parishes/near": ["./content/normalized/parishes/**/*.json"],

@@ -8,23 +8,27 @@ import type {
   SearchResultKind,
 } from "@theosis/core";
 import { db } from "@/lib/db";
-import { embedQuery, toVectorLiteral } from "@/lib/search/embeddings";
+import { embedQueryHosted, toVectorLiteral } from "@/lib/search/embed-query-hosted";
 import { getClientIp, rateLimit } from "@/lib/rate-limit";
 
-// "Ask the Fathers" — semantic retrieval over the patristic corpus. We embed
-// the query with the local BGE-small model (no third-party AI, no generated
-// text) and return the nearest catalogued writings by cosine similarity,
-// reusing the SearchResult shape so the mobile rows render like keyword search.
+// "Ask the Fathers" — semantic retrieval over the patristic corpus. We embed the
+// query with a hosted call to the SAME bge-small model the corpus was built with
+// (Cloudflare Workers AI, mean pooling — see embed-query-hosted.ts) and return
+// the nearest catalogued writings by cosine similarity, reusing the SearchResult
+// shape so the mobile rows render like keyword search. Retrieval-only: no
+// third-party AI generates text, and the corpus stays in our infra — only the
+// short query string leaves, to be vectorized.
 //
 // Requires the content_embeddings table (pgvector) to be populated — see
-// scripts/search/build-embeddings.ts. If the table is empty or the model can't
-// load, we degrade to an empty result set rather than erroring the client.
+// scripts/search/build-embeddings.ts — plus CLOUDFLARE_ACCOUNT_ID and
+// CLOUDFLARE_WORKERS_AI_TOKEN. If the table is empty or the embed call fails, we
+// degrade to an empty result set rather than erroring the client.
 
-// onnxruntime-node is native — force the Node runtime (never Edge). Allow up to
-// 60s so a cold start that downloads + warms the model doesn't time out.
+// The Neon serverless pg driver needs the Node runtime (never Edge). The query
+// embed is a fast hosted fetch now (no model cold-start), so keep a modest cap.
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-export const maxDuration = 60;
+export const maxDuration = 30;
 
 const RESULT_LIMIT = 24;
 
@@ -59,7 +63,7 @@ export async function GET(request: NextRequest) {
 
   let results: SearchResult[] = [];
   try {
-    const vec = toVectorLiteral(await embedQuery(query));
+    const vec = toVectorLiteral(await embedQueryHosted(query));
     // <=> is cosine distance (vector_cosine_ops); score = 1 - distance.
     const res = await db.execute(sql`
       SELECT id, kind, title, href, kicker, snippet,
@@ -82,7 +86,7 @@ export async function GET(request: NextRequest) {
         typeof r.score === "number" ? Math.round(r.score * 1000) / 10 : 0,
     }));
   } catch (err) {
-    // Missing table / model load failure shouldn't 500 the client — log and
+    // Missing table / embed-call failure shouldn't 500 the client — log and
     // return empty so the UI shows a graceful "no results" state.
     console.error("[search/fathers] failed", err);
     return NextResponse.json({ results: [] } satisfies FathersSearchResponse, {
