@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type {
   CommentaryEntry,
@@ -424,6 +424,128 @@ function buildChapter(
   };
 }
 
+// ── Editorial corrections overlay ────────────────────────────────────────────
+// Hand-verified fixes (from a multi-agent review of the raw OCR) for the
+// defects best-effort parsing can't catch: two-column cut-offs, narrow-column
+// prayer fragmentation, wrong speaker labels, mis-classified rubrics. Stored as
+// text-anchored span replacements in hapgood-liturgy-corrections.json and
+// re-applied on every build, so they survive `normalize:commentary` instead of
+// being patched into (and clobbered from) the normalized output.
+type CorrectionParagraph = {
+  kind: "rubric" | "spoken";
+  speaker?: string;
+  text: string;
+};
+type LiturgyCorrection = {
+  issueType?: string;
+  anchorStartText: string;
+  anchorEndText: string;
+  correctedParagraphs: CorrectionParagraph[];
+  note?: string;
+};
+
+function loadCorrections(rawRoot: string): LiturgyCorrection[] {
+  // rawRoot is <repo>/content/raw/liturgy → repo root is three levels up.
+  const path = join(
+    rawRoot,
+    "..",
+    "..",
+    "..",
+    "scripts",
+    "ingest",
+    "commentary",
+    "hapgood-liturgy-corrections.json",
+  );
+  if (!existsSync(path)) return [];
+  try {
+    const data = JSON.parse(readFileSync(path, "utf8"));
+    const arr = Array.isArray(data) ? data : data.corrections;
+    return Array.isArray(arr) ? arr : [];
+  } catch {
+    return [];
+  }
+}
+
+function normalizeForMatch(s: string): string {
+  return s.replace(/\s+/g, " ").trim();
+}
+
+function spanEnd(ps: WorkChapterParagraph[], start: number, endKey: string): number {
+  // Cap the look-ahead so a non-unique end anchor matching far downstream can't
+  // form a runaway span (the worst defects span well under this).
+  const limit = Math.min(ps.length, start + 36);
+  for (let k = start; k < limit; k += 1) {
+    const key = normalizeForMatch(ps[k].text);
+    if (
+      key === endKey ||
+      (endKey.length >= 40 && key.startsWith(endKey.slice(0, 40))) ||
+      (key.length >= 40 && endKey.startsWith(key.slice(0, 40)))
+    ) {
+      return k;
+    }
+  }
+  return -1;
+}
+
+type CorrSpan = { sectionIdx: number; start: number; end: number; corr: LiturgyCorrection };
+
+// Apply text-anchored span replacements to a chapter's sections, in place.
+// Returns how many corrections matched. Safeguards against the failure modes of
+// OCR-derived anchors:
+//   - the START anchor must be UNIQUE across the whole chapter, so an ambiguous
+//     anchor (e.g. a bare "Then the Priest saith:") is skipped rather than
+//     matched to the wrong occurrence;
+//   - the END anchor is searched only a short way downstream (spanEnd), so a
+//     far, accidental match can't swallow a runaway span;
+//   - spans are resolved against the ORIGINAL list, overlaps drop the smaller
+//     span (largest/most-complete fix wins), and we splice high-index-first so
+//     corrections never shift or corrupt each other.
+function applyCorrections(
+  sections: WorkChapterSection[],
+  corrections: LiturgyCorrection[],
+): number {
+  const perSection: CorrSpan[][] = sections.map(() => []);
+  for (const corr of corrections) {
+    const startKey = normalizeForMatch(corr.anchorStartText);
+    const matches: { sectionIdx: number; start: number }[] = [];
+    sections.forEach((section, sectionIdx) => {
+      section.paragraphs.forEach((p, i) => {
+        if (normalizeForMatch(p.text) === startKey) matches.push({ sectionIdx, start: i });
+      });
+    });
+    if (matches.length !== 1) continue; // 0 = not in this work; >1 = ambiguous
+    const { sectionIdx, start } = matches[0];
+    const end = spanEnd(
+      sections[sectionIdx].paragraphs,
+      start,
+      normalizeForMatch(corr.anchorEndText),
+    );
+    if (end < 0) continue;
+    perSection[sectionIdx].push({ sectionIdx, start, end, corr });
+  }
+
+  let applied = 0;
+  sections.forEach((section, sectionIdx) => {
+    const ps = section.paragraphs;
+    const spans = perSection[sectionIdx];
+    spans.sort((a, b) => b.end - b.start - (a.end - a.start));
+    const kept: CorrSpan[] = [];
+    for (const s of spans) {
+      if (kept.some((k) => s.start <= k.end && s.end >= k.start)) continue;
+      kept.push(s);
+    }
+    kept.sort((a, b) => b.start - a.start);
+    for (const s of kept) {
+      const replacement = s.corr.correctedParagraphs.map((p) =>
+        p.kind === "rubric" ? rubricParagraph(p.text) : { text: p.text },
+      );
+      ps.splice(s.start, s.end - s.start + 1, ...replacement);
+      applied += 1;
+    }
+  });
+  return applied;
+}
+
 // ── Entry point ──────────────────────────────────────────────────────────────
 
 export function parseHapgoodLiturgies(config: { rawRoot: string }): CommentaryBundleV2 {
@@ -457,6 +579,18 @@ export function parseHapgoodLiturgies(config: { rawRoot: string }): CommentaryBu
   const chrysostomSections = buildSections(combinedTagged, "chrysostom");
   const basilSections = buildSections(combinedTagged, "basil");
   const presanctSections = buildSections(presanctTagged, "plain");
+
+  // Re-apply hand-verified OCR corrections every build (text-anchored, so the
+  // same shared-structure fix lands in both Chrysostom and Basil).
+  const corrections = loadCorrections(config.rawRoot);
+  if (corrections.length > 0) {
+    const a = applyCorrections(chrysostomSections, corrections);
+    const b = applyCorrections(basilSections, corrections);
+    const c = applyCorrections(presanctSections, corrections);
+    console.log(
+      `[hapgood-liturgies] applied corrections — chrysostom ${a}, basil ${b}, presanctified ${c} (of ${corrections.length})`,
+    );
+  }
 
   const works = [buildWork(CHRYSOSTOM), buildWork(BASIL), buildWork(PRESANCTIFIED)];
   const chapters = [
