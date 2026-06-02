@@ -40,6 +40,7 @@ const BUCKET = process.env.BIBLE_S3_BUCKET || "theosis-content";
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes("--dry-run");
+const FORCE = args.includes("--force");
 
 // Bibles included: the bible chapter API route is S3-first (key
 // bibles/<tr>/<book>/<ch>.json), so verse content edits must be pushed to R2
@@ -124,6 +125,23 @@ type UploadJob = {
   reason: "new" | "changed";
 };
 
+type TargetPlan = {
+  localDir: string;
+  s3Prefix: string;
+  jobs: UploadJob[];
+  localCount: number;
+  remoteCount: number;
+  newCount: number;
+  changedCount: number;
+  skipped: number;
+};
+
+// Overwriting more than this many EXISTING R2 objects under a single prefix in
+// one run is treated as a likely downgrade (the tree was rebuilt from a stale
+// state, or R2 was updated elsewhere and this checkout is behind). New uploads
+// — content R2 doesn't have yet — never count against this and are always safe.
+const MAX_SAFE_OVERWRITES = 500;
+
 async function uploadJob(job: UploadJob): Promise<{ ok: boolean; error?: unknown }> {
   try {
     await s3.send(
@@ -141,28 +159,29 @@ async function uploadJob(job: UploadJob): Promise<{ ok: boolean; error?: unknown
   }
 }
 
-async function syncTarget(localDir: string, s3Prefix: string): Promise<void> {
+async function planTarget(
+  localDir: string,
+  s3Prefix: string,
+): Promise<TargetPlan | null> {
   const absDir = join(process.cwd(), localDir);
   if (!existsSync(absDir)) {
     console.log(`[push] ${localDir} does not exist; skipping`);
-    return;
+    return null;
   }
-
-  console.log(`[push] ${localDir} → s3://${BUCKET}/${s3Prefix}/`);
 
   let remote: Map<string, string>;
   if (DRY_RUN) {
     // Skip the network round-trip in dry-run mode so the script also works
     // offline / without credentials.
     remote = new Map();
-    console.log("[push]   (dry-run: skipping S3 listing; treating bucket as empty)");
+    console.log(
+      `[push] ${localDir}: (dry-run) skipping S3 listing; treating bucket as empty`,
+    );
   } else {
     remote = await listBucketByPrefix(s3Prefix);
-    console.log(`[push]   remote has ${remote.size} objects under ${s3Prefix}/`);
   }
 
   const files = walk(absDir).sort();
-  console.log(`[push]   local has ${files.length} files`);
 
   const jobs: UploadJob[] = [];
   let skipped = 0;
@@ -185,21 +204,24 @@ async function syncTarget(localDir: string, s3Prefix: string): Promise<void> {
     });
   }
 
-  if (DRY_RUN) {
-    let newCount = 0;
-    let changedCount = 0;
-    for (const job of jobs) {
-      if (job.reason === "new") newCount++;
-      else changedCount++;
-    }
-    console.log(
-      `[push]   would upload ${jobs.length} (${newCount} new, ${changedCount} changed), skip ${skipped}`,
-    );
-    // Print the first handful of paths for sanity.
-    for (const job of jobs.slice(0, 10)) {
-      console.log(`[push]     ${job.reason.padEnd(7)} ${job.key}`);
-    }
-    if (jobs.length > 10) console.log(`[push]     ... (+${jobs.length - 10} more)`);
+  const changedCount = jobs.filter((j) => j.reason === "changed").length;
+  return {
+    localDir,
+    s3Prefix,
+    jobs,
+    localCount: files.length,
+    remoteCount: remote.size,
+    newCount: jobs.length - changedCount,
+    changedCount,
+    skipped,
+  };
+}
+
+async function executePlan(plan: TargetPlan): Promise<void> {
+  const { jobs, localDir, s3Prefix } = plan;
+  console.log(`[push] ${localDir} → s3://${BUCKET}/${s3Prefix}/`);
+  if (jobs.length === 0) {
+    console.log(`[push]   nothing to upload (${plan.skipped} unchanged)`);
     return;
   }
 
@@ -232,16 +254,88 @@ async function syncTarget(localDir: string, s3Prefix: string): Promise<void> {
   await Promise.all(workers);
 
   console.log(
-    `[push]   done: ${uploaded} uploaded, ${skipped} unchanged, ${failed} failed`,
+    `[push]   done: ${uploaded} uploaded, ${plan.skipped} unchanged, ${failed} failed`,
   );
 }
 
 async function main() {
   console.log(`[push] target: s3://${BUCKET}/  (region ${REGION})`);
   if (DRY_RUN) console.log("[push] DRY RUN — no uploads will happen");
+  if (FORCE) console.log("[push] --force: downgrade guard disabled");
 
+  // Plan every target first (list remote + diff local) so the downgrade guard
+  // can veto the WHOLE run before a single object is overwritten — rather than
+  // discovering the problem only after the first prefix has been clobbered.
+  const plans: TargetPlan[] = [];
   for (const target of SYNC_TARGETS) {
-    await syncTarget(target.localDir, target.s3Prefix);
+    const plan = await planTarget(target.localDir, target.s3Prefix);
+    if (plan) plans.push(plan);
+  }
+
+  for (const plan of plans) {
+    console.log(
+      `[push] plan ${plan.s3Prefix}/: local ${plan.localCount} files, remote ${plan.remoteCount} objects — ${plan.newCount} new, ${plan.changedCount} overwrite, ${plan.skipped} unchanged`,
+    );
+  }
+
+  if (DRY_RUN) {
+    for (const plan of plans) {
+      for (const job of plan.jobs.slice(0, 10)) {
+        console.log(`[push]   ${job.reason.padEnd(7)} ${job.key}`);
+      }
+      if (plan.jobs.length > 10) {
+        console.log(
+          `[push]   ... (+${plan.jobs.length - 10} more under ${plan.s3Prefix}/)`,
+        );
+      }
+    }
+    return;
+  }
+
+  // ── Downgrade guard ──────────────────────────────────────────────────────
+  // The documented footgun: pushing from a stale/committed checkout when R2 is
+  // AHEAD overwrites good live content with old content. A push that only ADDS
+  // new objects is always safe; the danger is OVERWRITING many existing ones.
+  // So veto a run that would overwrite more than MAX_SAFE_OVERWRITES objects in
+  // any prefix unless --force. Normal incremental updates (a handful of changed
+  // files) pass straight through; a "rebuilt-the-world-from-stale" mass
+  // overwrite is stopped. Pair with --dry-run to inspect first.
+  if (!FORCE) {
+    const suspects = plans.filter((p) => p.changedCount > MAX_SAFE_OVERWRITES);
+    if (suspects.length > 0) {
+      console.error("");
+      console.error(
+        "[push] ABORTING — this push would overwrite a large amount of EXISTING content on R2,",
+      );
+      console.error(
+        "       which is how a stale checkout silently downgrades the live app:",
+      );
+      for (const p of suspects) {
+        console.error(
+          `  • ${p.s3Prefix}/: ${p.changedCount} existing objects would be overwritten (limit ${MAX_SAFE_OVERWRITES})`,
+        );
+      }
+      console.error("");
+      console.error(
+        "  R2 is the source of truth the app reads. If R2 was updated from another checkout and",
+      );
+      console.error(
+        "  this local tree is older, pushing now replaces fresh content with stale content.",
+      );
+      console.error("");
+      console.error("  Inspect exactly what would change first:");
+      console.error("      npm run push:commentary:s3 -- --dry-run");
+      console.error(
+        "  If you are certain this local tree is authoritative, re-run with --force:",
+      );
+      console.error("      npm run push:commentary:s3 -- --force");
+      console.error("");
+      process.exit(1);
+    }
+  }
+
+  for (const plan of plans) {
+    await executePlan(plan);
   }
 }
 

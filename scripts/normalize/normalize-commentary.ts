@@ -134,6 +134,14 @@ const COMMENTARY_DIR = join(ROOT, "content", "normalized", "commentary");
 const LIBRARY_DIR = join(ROOT, "content", "normalized", "library");
 const SEARCH_DIR = join(ROOT, "content", "normalized", "search");
 
+// `--force` (alias `--allow-shrink`) bypasses the content-loss safety guard
+// that runs after the bundle-read loop. Without it, a run that would drop
+// works or people from the already-shipped catalog aborts instead of silently
+// shrinking the tree the app serves.
+const FORCE = process.argv
+  .slice(2)
+  .some((a) => a === "--force" || a === "--allow-shrink");
+
 function readJsonFile<T>(absolutePath: string): T {
   return JSON.parse(readFileSync(absolutePath, "utf8")) as T;
 }
@@ -437,6 +445,76 @@ function main() {
         continue;
       }
       inner.set(chapter.order, chapter);
+    }
+  }
+
+  // ── Safety guard: refuse to silently shrink shipped content ──────────────
+  // normalize rebuilds the entire tree from whatever bundles happen to be in
+  // content/generated/commentary/. If that directory is incomplete — a partial
+  // re-ingest, or a fresh checkout missing most raw sources — the rebuilt
+  // catalog DROPS works and people that are still live in the committed tree,
+  // and the app loses that content the moment this output ships or is pushed
+  // to R2. Compare the about-to-be-written catalog against the existing
+  // committed one and abort on any net loss of works/people unless --force.
+  // (worksById/peopleById are fully populated by here; the later license and
+  // Tier-1 passes drop entries/bodies but never remove catalog works/people.)
+  {
+    const existingIds = (catalogPath: string) => {
+      if (!existsSync(catalogPath)) {
+        return { works: new Set<string>(), people: new Set<string>() };
+      }
+      try {
+        const prev = readJsonFile<{
+          works?: { id: string }[];
+          people?: { id: string }[];
+        }>(catalogPath);
+        return {
+          works: new Set((prev.works ?? []).map((w) => w.id)),
+          people: new Set((prev.people ?? []).map((p) => p.id)),
+        };
+      } catch {
+        return { works: new Set<string>(), people: new Set<string>() };
+      }
+    };
+    const prev = existingIds(join(COMMENTARY_DIR, "catalog.json"));
+    const nextWorks = new Set(worksById.keys());
+    const nextPeople = new Set(peopleById.keys());
+    const droppedWorks = [...prev.works].filter((id) => !nextWorks.has(id));
+    const droppedPeople = [...prev.people].filter((id) => !nextPeople.has(id));
+    console.log(
+      `[normalize-commentary] catalog delta: works ${prev.works.size} → ${nextWorks.size}, people ${prev.people.size} → ${nextPeople.size}`,
+    );
+    if ((droppedWorks.length > 0 || droppedPeople.length > 0) && !FORCE) {
+      console.error("");
+      console.error(
+        "[normalize-commentary] ABORTING — this run would REMOVE content that is currently shipped:",
+      );
+      if (droppedWorks.length > 0) {
+        console.error(
+          `  • ${droppedWorks.length} work(s) would disappear: ${droppedWorks.slice(0, 12).join(", ")}${droppedWorks.length > 12 ? ", …" : ""}`,
+        );
+      }
+      if (droppedPeople.length > 0) {
+        console.error(
+          `  • ${droppedPeople.length} person(s) would disappear: ${droppedPeople.slice(0, 12).join(", ")}${droppedPeople.length > 12 ? ", …" : ""}`,
+        );
+      }
+      console.error("");
+      console.error(
+        "  This almost always means content/generated/commentary/ is incomplete — e.g. you",
+      );
+      console.error(
+        "  re-ingested only some sources, or this is a fresh checkout missing raw inputs. The",
+      );
+      console.error(
+        "  committed normalized tree is what the app serves; overwriting it with a partial",
+      );
+      console.error("  rebuild makes that content vanish.");
+      console.error("");
+      console.error("  If this removal is intentional, re-run with --force:");
+      console.error("      npm run normalize:commentary -- --force");
+      console.error("");
+      process.exit(1);
     }
   }
 

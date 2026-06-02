@@ -76,6 +76,17 @@ next-env.d.ts
 
 # Stray sample files (e.g. corpus snippets dumped at root)
 /sample*.txt
+# Stray root-level images dumped by tooling (e.g. an EAS/Expo screenshot, or a
+# duplicated onboarding asset). Real images live under public/ or apps/mobile/;
+# force-add with `git add -f` if a root-level image is ever genuinely needed.
+/*.jpg
+/*.jpeg
+/*.png
+/*.webp
+# Accidental root-level Expo config stub: running `expo`/`eas` from the repo
+# root (instead of apps/mobile/) drops a `{"expo":{}}` app.json here that can
+# shadow the real config. The real Expo config lives at apps/mobile/app.json.
+/app.json
 
 # Temp test files
 .tmp_*
